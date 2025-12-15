@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -138,6 +138,26 @@
             color: #666;
         }
 
+        .manual-link {
+            position: absolute;
+            bottom: 3rem;
+            left: 3rem;
+            z-index: 1;
+        }
+
+        .manual-link a {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 1.2rem;
+            color: #ffffff;
+            text-decoration: none;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            transition: text-shadow 0.3s;
+        }
+
+        .manual-link a:hover {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
         @media (max-width: 900px) {
             .title {
                 font-size: 120px;
@@ -205,11 +225,17 @@
     <div class="packs">
         <h3>Language Packs</h3>
         <ul class="pack-list">
-            <li>German Core</li>
+            <li class="free">German Core — Included Free</li>
+            <li class="free">Esperanto Core — Included Free</li>
             <li>German Pareto 1</li>
             <li>German Pareto 2</li>
-            <li class="free">Esperanto Core — Included Free</li>
+            <li>Esperanto Pareto 1</li>
+            <li>Esperanto Pareto 2</li>
         </ul>
+    </div>
+
+    <div class="manual-link">
+        <a href="manual/">MANUAL</a>
     </div>
 
     <div class="footer">

@@ -1,4 +1,5 @@
 /* FlashBoss Manual - Dark Moon Theme */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
     margin: 0;
@@ -14,6 +15,7 @@
     --moon-yellow: #ffff5f;
     --grey: #8a8a8a;
     --link-blue: #87afff;
+    --font-pixel: 'Press Start 2P', cursive;
 }
 
 body {
@@ -39,14 +41,19 @@ header {
 }
 
 header h1 {
-    font-size: 2.5rem;
-    color: var(--coral);
-    margin-bottom: 0.5rem;
+    font-family: var(--font-pixel);
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    line-height: 1.4;
 }
 
 header .tagline {
-    font-style: italic;
-    color: var(--grey);
+    font-family: var(--font-pixel);
+    font-size: 0.6rem;
+    font-style: normal;
+    color: var(--moon-cream);
+    letter-spacing: 0.1em;
 }
 
 /* Navigation */
@@ -172,13 +179,17 @@ footer a {
 }
 
 .chapter-card h3 {
-    margin: 0 0 0.5rem;
+    font-family: var(--font-pixel);
+    font-size: 0.7rem;
+    margin: 0 0 0.75rem;
+    line-height: 1.5;
 }
 
 .chapter-card p {
     color: var(--grey);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     margin: 0;
+    line-height: 1.5;
 }
 
 .chapter-card a {
