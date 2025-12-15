@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troubleshooting - FlashBoss Manual</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="../icon.png">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">&larr; Back to Manual</a>
+
+        <div class="content">
+            <h2>Troubleshooting</h2>
+
+            <h3>Windows: Emojis display as boxes or question marks</h3>
+            <p>Install Windows Terminal for proper emoji support:</p>
+            <ol>
+                <li>Open Microsoft Store</li>
+                <li>Search for "Windows Terminal"</li>
+                <li>Click Install</li>
+            </ol>
+            <p>Alternatively, run in PowerShell: <code>winget install Microsoft.WindowsTerminal</code></p>
+
+            <h3>macOS: Colors look wrong or text is invisible</h3>
+            <p>FlashBoss is designed for dark terminal themes. To change your terminal theme:</p>
+            <ol>
+                <li>Open Terminal</li>
+                <li>Go to Terminal &rarr; Settings (or Preferences)</li>
+                <li>Click the Profiles tab</li>
+                <li>Select a dark theme like "Pro" or "Homebrew"</li>
+            </ol>
+
+            <h3>macOS Apple Silicon: Audio not working</h3>
+            <p>Apple Silicon Macs (M1/M2/M3/M4) require Rosetta 2 for the audio engine. Install it by running:</p>
+            <p><code>softwareupdate --install-rosetta</code></p>
+            <p>Then restart FlashBoss.</p>
+
+            <h3>macOS: "Cannot be opened" or "Unidentified developer"</h3>
+            <p>If installing outside Steam:</p>
+            <ol>
+                <li>Right-click (or Control+click) on FlashBoss</li>
+                <li>Select "Open"</li>
+                <li>Click "Open" in the dialog that appears</li>
+            </ol>
+            <p>Or go to System Settings &rarr; Privacy &amp; Security and click "Open Anyway".</p>
+
+            <h3>Audio plays but sounds wrong</h3>
+            <p>The audio system will automatically fall back to simpler engines if the neural TTS fails. If audio quality is poor, check that all files were downloaded correctly.</p>
+
+            <h3>Progress not saving</h3>
+            <p>FlashBoss saves automatically. If progress isn't saving:</p>
+            <ul>
+                <li>Make sure you have write permissions in the install directory</li>
+                <li>Check that the <code>local_db</code> folder exists and is writable</li>
+                <li>Don't force-quit the application - exit normally</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p><a href="index.html">Back to Manual</a> | <a href="../index.html">FlashBoss Home</a></p>
+        </footer>
+    </div>
+</body>
+</html>
