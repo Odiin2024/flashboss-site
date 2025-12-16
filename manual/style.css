@@ -200,3 +200,101 @@ footer a {
 .chapter-card a:hover h3 {
     color: var(--coral);
 }
+
+/* Setup cards - three column grid for platform requirements */
+.setup-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.setup-card {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-top: 4px solid var(--coral);
+}
+
+.setup-card h3 {
+    font-family: var(--font-pixel);
+    font-size: 0.8rem;
+    color: #ffffff;
+    margin: 0 0 1rem;
+    text-align: center;
+}
+
+.setup-card ul {
+    list-style: none;
+    margin: 0 0 1rem;
+    padding: 0;
+}
+
+.setup-card li {
+    color: var(--moon-cream);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.setup-card li::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    color: var(--coral);
+}
+
+.setup-card code {
+    font-size: 0.75rem;
+    padding: 0.15rem 0.4rem;
+}
+
+.setup-card details {
+    margin-top: 1rem;
+}
+
+.setup-card summary {
+    font-family: var(--font-pixel);
+    font-size: 0.55rem;
+    color: var(--moon-yellow);
+    cursor: pointer;
+    padding: 0.5rem;
+    background: rgba(255, 255, 95, 0.1);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.setup-card summary:hover {
+    background: rgba(255, 255, 95, 0.2);
+}
+
+.tips-content {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--grey);
+}
+
+.tips-content p {
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+}
+
+.tips-content h4 {
+    font-family: var(--font-pixel);
+    font-size: 0.5rem;
+    color: var(--moon-yellow);
+    margin: 1rem 0 0.5rem;
+}
+
+.tips-content code {
+    display: inline-block;
+    margin: 0.25rem 0;
+}
+
+/* Responsive: stack on mobile */
+@media (max-width: 768px) {
+    .setup-grid {
+        grid-template-columns: 1fr;
+    }
+}
