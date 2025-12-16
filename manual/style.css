@@ -100,15 +100,27 @@ nav a:hover {
 }
 
 h2 {
+    font-family: var(--font-pixel);
+    font-size: 1.2rem;
     color: var(--coral);
     border-bottom: 1px solid var(--coral);
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
+    line-height: 1.4;
 }
 
 h3 {
+    font-family: var(--font-pixel);
+    font-size: 1.125rem;
     color: var(--moon-yellow);
     margin: 1.5rem 0 0.5rem;
+    line-height: 1.5;
+}
+
+h4 {
+    font-family: var(--font-pixel);
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 p {
@@ -214,6 +226,14 @@ footer a {
     padding: 1.5rem;
     border-radius: 8px;
     border-top: 4px solid var(--coral);
+    text-decoration: none;
+    display: block;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.setup-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--moon-yellow);
 }
 
 .setup-card h3 {
@@ -292,9 +312,104 @@ footer a {
     margin: 0.25rem 0;
 }
 
+.setup-card-link {
+    font-family: var(--font-pixel);
+    font-size: 0.5rem;
+    color: var(--moon-yellow);
+    text-align: center;
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(255, 255, 95, 0.3);
+}
+
+.setup-card:hover .setup-card-link {
+    color: #ffffff;
+}
+
 /* Responsive: stack on mobile */
 @media (max-width: 768px) {
     .setup-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Setup guide pages */
+.setup-guide .reassurance {
+    background: rgba(255, 135, 95, 0.1);
+    border-left: 4px solid var(--coral);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0 8px 8px 0;
+}
+
+.setup-guide .reassurance p:first-child {
+    font-family: var(--font-pixel);
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.setup-guide .reassurance p:last-child {
+    margin-bottom: 0;
+    color: var(--moon-cream);
+}
+
+.setup-guide h3 {
+    margin-top: 2rem;
+}
+
+.setup-guide h4 {
+    color: var(--moon-cream);
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+}
+
+.setup-guide .command-block {
+    background: #2a2440;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+.setup-guide .command-block code {
+    background: none;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.setup-guide .pros-cons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.setup-guide .pros-cons h4 {
+    font-family: var(--font-pixel);
+    font-size: 0.6rem;
+    margin: 0 0 0.75rem;
+}
+
+.setup-guide .pros h4 {
+    color: #7ecc7e;
+}
+
+.setup-guide .cons h4 {
+    color: var(--coral);
+}
+
+.setup-guide .pros-cons ul {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.setup-guide .pros-cons li {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+}
+
+@media (max-width: 600px) {
+    .setup-guide .pros-cons {
         grid-template-columns: 1fr;
     }
 }

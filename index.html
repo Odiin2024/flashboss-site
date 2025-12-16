@@ -25,7 +25,6 @@
             color: #f0e6d3;
             min-height: 100vh;
             position: relative;
-            overflow: hidden;
         }
 
         body::before {
@@ -173,38 +172,79 @@
         }
 
         @media (max-width: 600px) {
-            .title {
-                font-size: 70px;
+            body {
+                overflow-y: auto;
             }
 
             .title-area {
-                top: 20%;
+                position: relative;
+                top: auto;
+                left: auto;
+                transform: none;
+                padding-top: 2rem;
+            }
+
+            .title {
+                font-size: 50px;
             }
 
             .center-content {
-                top: 40%;
+                position: relative;
+                top: auto;
+                left: auto;
+                transform: none;
+                padding: 1.5rem 1rem;
             }
 
             .tagline {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
 
             .coming-soon {
-                font-size: 1rem;
-                padding: 0.6rem 1.5rem;
+                font-size: 0.9rem;
+                padding: 0.5rem 1rem;
             }
 
-            .packs {
-                bottom: 2rem;
-                right: 1.5rem;
-            }
-
-            .packs h3 {
+            .contact a {
                 font-size: 0.9rem;
             }
 
-            .pack-list {
+            .packs {
+                position: relative;
+                bottom: auto;
+                right: auto;
+                text-align: center;
+                padding: 1.5rem 1rem;
+            }
+
+            .packs h3 {
                 font-size: 0.85rem;
+            }
+
+            .pack-list {
+                font-size: 0.8rem;
+                line-height: 1.6;
+            }
+
+            .manual-link {
+                position: relative;
+                bottom: auto;
+                left: auto;
+                text-align: center;
+                padding: 1.5rem 1rem;
+            }
+
+            .manual-link a {
+                font-size: 1rem;
+            }
+
+            .footer {
+                position: relative;
+                bottom: auto;
+                left: auto;
+                transform: none;
+                text-align: center;
+                padding: 1.5rem 1rem 2rem;
             }
         }
     </style>
@@ -225,12 +265,12 @@
     <div class="packs">
         <h3>Language Packs</h3>
         <ul class="pack-list">
-            <li class="free">German Core — Included Free</li>
-            <li class="free">Esperanto Core — Included Free</li>
             <li>German Pareto 1</li>
             <li>German Pareto 2</li>
             <li>Esperanto Pareto 1</li>
             <li>Esperanto Pareto 2</li>
+            <li class="free">German Core — Free</li>
+            <li class="free">Esperanto Core — Free</li>
         </ul>
     </div>
 
