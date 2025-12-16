@@ -100,27 +100,15 @@ nav a:hover {
 }
 
 h2 {
-    font-family: var(--font-pixel);
-    font-size: 1.2rem;
     color: var(--coral);
     border-bottom: 1px solid var(--coral);
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
-    line-height: 1.4;
 }
 
 h3 {
-    font-family: var(--font-pixel);
-    font-size: 1.125rem;
     color: var(--moon-yellow);
     margin: 1.5rem 0 0.5rem;
-    line-height: 1.5;
-}
-
-h4 {
-    font-family: var(--font-pixel);
-    font-size: 0.9rem;
-    line-height: 1.5;
 }
 
 p {
@@ -165,8 +153,16 @@ footer {
 }
 
 footer a {
+    font-family: var(--font-pixel);
+    font-size: 0.6rem;
     color: var(--link-blue);
     text-decoration: none;
+}
+
+footer p:last-child {
+    font-family: var(--font-pixel);
+    font-size: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 /* Chapter cards for index page */
@@ -211,6 +207,21 @@ footer a {
 
 .chapter-card a:hover h3 {
     color: var(--coral);
+}
+
+/* Section headings and dividers */
+.section-heading {
+    font-family: var(--font-pixel);
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 1.5rem 0;
+    line-height: 1.5;
+}
+
+.section-divider {
+    border: none;
+    border-top: 1px solid var(--coral);
+    margin: 2rem 0;
 }
 
 /* Setup cards - three column grid for platform requirements */
