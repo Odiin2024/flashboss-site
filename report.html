@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report an Issue - FlashBoss</title>
+    <link rel="stylesheet" href="manual/style.css">
+    <link rel="icon" type="image/png" href="icon.png">
+    <style>
+        /* Light theme override for report page */
+        body {
+            background-color: #ffffd7;
+            color: #171421;
+        }
+
+        /* Warm tint overlay - sepia tone */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(180, 150, 100, 0.5);
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        .container {
+            max-width: 61.8%;
+            min-width: 600px;
+        }
+
+        header {
+            border-bottom-color: var(--coral);
+        }
+
+        header h1 {
+            color: #171421;
+            font-size: 2.2rem;
+        }
+
+        header .tagline {
+            color: #000;
+            font-size: 0.75rem;
+        }
+
+        .report-intro {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--coral);
+            box-shadow: 0 2px 8px rgba(23, 20, 33, 0.1);
+            text-align: center;
+        }
+
+        .report-intro h2 {
+            font-family: var(--font-pixel);
+            font-size: 1.1rem;
+            color: #171421;
+            border: none;
+            padding: 0;
+            margin: 0 0 1rem;
+        }
+
+        .report-intro p {
+            color: #171421;
+            margin-bottom: 0.75rem;
+        }
+
+        .report-intro p:last-child {
+            margin-bottom: 0;
+        }
+
+        .form-container {
+            background: #fff;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(23, 20, 33, 0.1);
+        }
+
+        .form-container h3 {
+            font-family: var(--font-pixel);
+            font-size: 1rem;
+            color: #171421;
+            margin: 0 0 1.5rem;
+            text-align: center;
+        }
+
+        /* Google Form embed */
+        .form-embed {
+            position: relative;
+            width: 100%;
+            min-height: 800px;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .form-embed iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
+        }
+
+        /* Fallback link */
+        .form-fallback {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(255, 135, 95, 0.15);
+            border-radius: 4px;
+            margin-top: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .form-fallback p {
+            margin: 0;
+            color: #4a4560;
+        }
+
+        .form-fallback a {
+            color: var(--coral);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .form-fallback a:hover {
+            text-decoration: underline;
+        }
+
+        .field-guide {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .field-guide h4 {
+            font-family: var(--font-pixel);
+            font-size: 1rem;
+            color: #171421;
+            margin-bottom: 2.5rem;
+        }
+
+        .field-guide dl {
+            display: inline-grid;
+            grid-template-columns: auto auto;
+            gap: 0.75rem 15rem;
+            text-align: left;
+        }
+
+        .field-guide dt {
+            color: var(--coral);
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .field-guide dd {
+            color: #4a4560;
+            margin: 0;
+            line-height: 1.5;
+            font-weight: bold;
+        }
+
+        footer {
+            border-top: 1px solid #ddd;
+            padding-top: 1.5rem;
+            text-align: center;
+        }
+
+        footer p {
+            color: #4a4560;
+        }
+
+        footer a {
+            color: var(--coral);
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .field-guide dl {
+                grid-template-columns: 1fr;
+            }
+
+            .field-guide dt {
+                margin-top: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Report an Issue</h1>
+            <p class="tagline">help us improve</p>
+        </header>
+
+        <div class="report-intro">
+            <h2>Found a problem with a flashcard?</h2>
+            <p>Wrong translation, typo, audio glitch, or grammar error? Let us know and we'll fix it.</p>
+            <p>Your reports help make FlashBoss better for everyone learning with us.</p>
+        </div>
+
+        <div class="form-container">
+            <h3>Submit a Report</h3>
+
+            <div class="form-embed">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScLEpmVOUQOBVsorwajQsWHuMbFR6VeDssrYvDSsR1aCDlNYQ/viewform?embedded=true"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0"
+                    loading="lazy">
+                    Loading form...
+                </iframe>
+            </div>
+
+            <div class="form-fallback">
+                <p>Form not loading? <a href="https://docs.google.com/forms/d/e/1FAIpQLScLEpmVOUQOBVsorwajQsWHuMbFR6VeDssrYvDSsR1aCDlNYQ/viewform" target="_blank">Open in new tab</a></p>
+            </div>
+
+            <div class="field-guide">
+                <h4>What to include in your report</h4>
+                <dl>
+                    <dt>Card / Word</dt>
+                    <dd>The word or phrase with the issue</dd>
+
+                    <dt>Issue Type</dt>
+                    <dd>Wrong translation, typo, audio problem, wrong example sentence, or other</dd>
+
+                    <dt>What's wrong?</dt>
+                    <dd>Describe the problem. Be specific.</dd>
+
+                    <dt>Suggested correction</dt>
+                    <dd>Optional - if you know the fix, tell us!</dd>
+
+                    <dt>Email</dt>
+                    <dd>Optional - only if you want a response</dd>
+                </dl>
+            </div>
+        </div>
+
+        <footer>
+            <p><a href="index.html">Back to FlashBoss Home</a> | <a href="manual/index.html">Manual</a></p>
+            <p>&copy; 2025 FlashBoss</p>
+        </footer>
+    </div>
+</body>
+</html>
