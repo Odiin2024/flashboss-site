@@ -456,9 +456,9 @@
             }
         });
 
-        // Fullscreen button - scroll to anchor to hide URL bar
+        // Fullscreen button - scroll to trigger URL bar hide
         document.getElementById('fullscreenBtn').addEventListener('click', function() {
-            document.getElementById('fullscreen-anchor').scrollIntoView({ behavior: 'smooth' });
+            window.scrollTo(0, window.innerHeight * 0.02);
             this.classList.add('used');
         });
     </script>
