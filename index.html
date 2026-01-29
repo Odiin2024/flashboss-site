@@ -212,6 +212,36 @@
         */
 
         /* ============================================
+           FULLSCREEN BUTTON (mobile only)
+           ============================================ */
+
+        .fullscreen-btn {
+            position: absolute;
+            top: 0.75rem;
+            right: 0.75rem;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            padding: 0.4rem 0.6rem;
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.7rem;
+            font-family: inherit;
+            cursor: pointer;
+            transition: opacity 0.3s, color 0.3s;
+        }
+
+        .fullscreen-btn:hover {
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .fullscreen-btn.used {
+            color: rgba(150, 130, 170, 0.6);
+            border-color: rgba(150, 130, 170, 0.3);
+            pointer-events: none;
+        }
+
+        /* ============================================
            PHONE LANDSCAPE (width < 768px OR short height)
            Catches phones rotated to landscape
            ============================================ */
@@ -275,6 +305,10 @@
            ============================================ */
 
         @media (min-width: 768px) and (min-height: 500px) {
+            .fullscreen-btn {
+                display: none;
+            }
+
             .content {
                 max-width: 500px;
             }
@@ -384,6 +418,8 @@
     </style>
 </head>
 <body>
+    <button class="fullscreen-btn" id="fullscreenBtn">Full Screen</button>
+
     <div class="content">
         <h1 class="title">FlashBoss</h1>
         <p class="descriptor">Flashcards with Boss Fights</p>
@@ -407,6 +443,9 @@
         <img src="Enter.png" alt="Enter" class="door-img">
     </a>
 
+    <!-- Anchor for fullscreen scroll -->
+    <div id="fullscreen-anchor" style="position: absolute; bottom: 0;"></div>
+
     <script>
         // Auto-hide URL bar on mobile landscape by scrolling
         window.addEventListener('load', function() {
@@ -415,6 +454,12 @@
                     window.scrollTo(0, 1);
                 }, 100);
             }
+        });
+
+        // Fullscreen button - scroll to anchor to hide URL bar
+        document.getElementById('fullscreenBtn').addEventListener('click', function() {
+            document.getElementById('fullscreen-anchor').scrollIntoView({ behavior: 'smooth' });
+            this.classList.add('used');
         });
     </script>
 </body>
