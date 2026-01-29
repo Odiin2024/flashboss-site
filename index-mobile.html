@@ -225,6 +225,10 @@
            ============================================ */
 
         @media (max-height: 500px) and (orientation: landscape) {
+            body {
+                min-height: 102vh; /* Create scroll room to trigger URL bar hide */
+            }
+
             .content {
                 max-width: 500px;
             }

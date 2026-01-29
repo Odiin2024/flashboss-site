@@ -215,7 +215,9 @@
 
         @media (min-width: 400px) and (max-width: 899px) and (orientation: portrait) {
             .door-img {
-                width: 55%;
+                position: absolute;
+                bottom: 18%;
+                width: 45%;
                 max-width: 14rem;
             }
         }
@@ -225,6 +227,10 @@
            ============================================ */
 
         @media (max-height: 500px) and (orientation: landscape) {
+            body {
+                min-height: 102vh; /* Create scroll room to trigger URL bar hide */
+            }
+
             .content {
                 max-width: 500px;
             }
