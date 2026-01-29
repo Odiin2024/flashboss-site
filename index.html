@@ -465,10 +465,12 @@
             }
         });
 
-        // Hide swipe hint after user scrolls
-        window.addEventListener('scroll', function() {
-            document.getElementById('swipeHint').classList.add('hidden');
-        }, { once: true });
+        // Hide swipe hint after user scrolls (delay to ignore auto-scroll on load)
+        setTimeout(function() {
+            window.addEventListener('scroll', function() {
+                document.getElementById('swipeHint').classList.add('hidden');
+            }, { once: true });
+        }, 500);
     </script>
 </body>
 </html>
