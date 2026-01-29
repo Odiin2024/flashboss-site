@@ -2,27 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlashBoss - Scientia Est Potentia</title>
-    <meta name="description" content="FlashBoss - A flashcard game for language learning. German and Esperanto available on Steam.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>FlashBoss - Flashcards with Boss Fights</title>
+    <meta name="description" content="FlashBoss - Spaced repetition flashcards with boss fights. Learn German and Esperanto. Coming to Steam 2026.">
 
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="FlashBoss - Scientia Est Potentia">
-    <meta property="og:description" content="A flashcard game for language learning. German and Esperanto available on Steam.">
+    <meta property="og:title" content="FlashBoss - Flashcards with Boss Fights">
+    <meta property="og:description" content="Spaced repetition flashcards with boss fights. Learn German and Esperanto. Coming to Steam 2026.">
     <meta property="og:image" content="https://odiin2024.github.io/flashboss-site/website_image.png">
     <meta property="og:url" content="https://odiin2024.github.io/flashboss-site/">
 
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="FlashBoss - Scientia Est Potentia">
-    <meta name="twitter:description" content="A flashcard game for language learning. German and Esperanto available on Steam.">
+    <meta name="twitter:title" content="FlashBoss - Flashcards with Boss Fights">
+    <meta name="twitter:description" content="Spaced repetition flashcards with boss fights. Learn German and Esperanto. Coming to Steam 2026.">
     <meta name="twitter:image" content="https://odiin2024.github.io/flashboss-site/website_image.png">
 
     <link rel="icon" type="image/png" href="icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -32,13 +30,14 @@
 
         html, body {
             height: 100%;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background: url('background.png') center center / cover no-repeat fixed;
             color: #f0e6d3;
             min-height: 100vh;
+            min-height: 100dvh;
             position: relative;
         }
 
@@ -49,261 +48,313 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(10, 10, 25, 0.35);
-            z-index: 0;
+            background: rgba(10, 10, 25, 0.2);
+            pointer-events: none;
         }
 
-        .title-area {
+        /* ============================================
+           MOBILE-FIRST LAYOUT
+           ============================================ */
+
+        .content {
             position: absolute;
-            top: 28%;
-            left: 50%;
-            transform: translateX(-50%);
             z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             text-align: center;
+            width: 90%;
+            max-width: 400px;
         }
 
         .title {
             font-family: 'Jaro', sans-serif;
-            font-size: 140px;
+            font-size: 4.5rem;
             font-weight: 400;
             color: #7ec8ff;
-            text-shadow: 0 0 40px rgba(100, 180, 255, 0.6), 3px 3px 6px rgba(0, 0, 0, 0.9);
-            letter-spacing: 0.02em;
-            line-height: 1;
+            text-shadow:
+                0 0 60px rgba(100, 180, 255, 0.5),
+                0 4px 12px rgba(0, 0, 0, 0.8);
+            letter-spacing: -0.01em;
+            line-height: 0.9;
+            margin-bottom: 0.5rem;
         }
 
-        .center-content {
-            position: absolute;
-            top: 52%;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1;
-            text-align: center;
-        }
-
-        .tagline {
-            font-size: 1.8rem;
-            font-style: italic;
-            color: #a0c4ff;
-            margin-bottom: 1.5rem;
-            letter-spacing: 0.15em;
-            text-transform: lowercase;
-        }
-
-        .coming-soon {
-            background: linear-gradient(135deg, #1a3a5c 0%, #0d1f33 100%);
-            border: 2px solid #4a9eff;
-            padding: 0.8rem 2.5rem;
-            font-size: 1.3rem;
-            font-weight: bold;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: #7ec8ff;
-            margin-bottom: 1.5rem;
-            display: inline-block;
-            box-shadow: 0 0 20px rgba(74, 158, 255, 0.3);
-        }
-
-        .contact a {
-            color: #a0c4ff;
-            text-decoration: none;
+        .descriptor {
             font-size: 1.1rem;
-            transition: color 0.3s;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.95);
+            letter-spacing: 0.02em;
         }
 
-        .contact a:hover {
-            color: #ffffff;
-        }
-
-        .packs {
-            position: absolute;
-            bottom: 3rem;
-            right: 3rem;
-            z-index: 1;
-            text-align: right;
-        }
-
-        .packs h3 {
-            font-size: 1rem;
-            color: #c9a227;
-            margin-bottom: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-
-        .pack-list {
-            list-style: none;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: #d4c5a9;
-        }
-
-        .pack-list .free {
-            color: #7ecc7e;
-        }
+        /* ============================================
+           FOOTER
+           ============================================ */
 
         .footer {
             position: absolute;
-            bottom: 1rem;
-            left: 50%;
-            transform: translateX(-50%);
+            bottom: 0;
+            left: 0;
+            right: 0;
             z-index: 1;
-            font-size: 0.85rem;
-            color: #666;
-        }
-
-        .manual-link {
-            position: absolute;
-            bottom: 3rem;
-            left: 3rem;
-            z-index: 1;
-        }
-
-        .manual-link {
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 1.5rem;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
         }
 
-        .manual-link a {
-            font-family: 'Press Start 2P', cursive;
-            font-size: 1.2rem;
-            color: #ffffff;
+        .footer .languages {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.7);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+        }
+
+        .footer .divider {
+            width: 1px;
+            height: 0.9rem;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .footer .steam-link,
+        .footer .contact-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.7);
+            letter-spacing: 0.02em;
             text-decoration: none;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-            transition: text-shadow 0.3s;
-            line-height: 1.6;
+            transition: color 0.2s;
         }
 
-        .manual-link a:hover {
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 2px 2px 4px rgba(0, 0, 0, 0.8);
+        .footer .steam-link:hover,
+        .footer .contact-link:hover {
+            color: #ffffff;
         }
 
-        @media (max-width: 900px) {
+        /* ============================================
+           CORNER NAV - Manual, Report, FlashCards
+           ============================================ */
+
+        .corner-nav {
+            position: absolute;
+            z-index: 1;
+            bottom: 4rem;
+            left: 1.5rem;
+            display: none;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .corner-nav a {
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            line-height: 1.8;
+            transition: color 0.2s;
+        }
+
+        .corner-nav a:hover {
+            color: #ffffff;
+        }
+
+        /* ============================================
+           DOOR BUTTON - positioned over castle door
+           ============================================ */
+
+        .door-btn {
+            position: absolute;
+            z-index: 2;
+            /* Position roughly over door - tweak as needed */
+            bottom: 13%;
+            left: 52%;
+            transform: translateX(-50%);
+
+            /* Size in rem for consistency */
+            width: 6.75rem;
+            height: 8.75rem;
+
+            /* Fully transparent */
+            background: none;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 0.25rem;
+        }
+
+        .door-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            opacity: 1;
+            transition: filter 0.3s, transform 0.3s;
+            background: none;
+        }
+
+        .door-btn:hover .door-img {
+            filter: drop-shadow(0 0 8px rgba(126, 200, 255, 0.8)) drop-shadow(0 0 20px rgba(126, 200, 255, 0.5));
+            transform: scale(1.05);
+        }
+
+        /* Debug: uncomment to see hit area */
+        /*
+        .door-btn {
+            background: rgba(255, 0, 0, 0.3);
+        }
+        */
+
+        /* ============================================
+           LARGER PHONES (414px+)
+           ============================================ */
+
+        @media (min-width: 400px) and (max-width: 899px) and (orientation: portrait) {
+            .door-btn {
+                bottom: 11%;
+                left: 52%;
+                width: 7.3rem;
+                height: 9.5rem;
+            }
+
+            .door-img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        /* ============================================
+           LANDSCAPE MOBILE
+           ============================================ */
+
+        @media (max-height: 500px) and (orientation: landscape) {
+            .content {
+                max-width: 500px;
+            }
+
             .title {
-                font-size: 120px;
+                font-size: 3rem;
+                margin-bottom: 0.25rem;
             }
 
-            .title-area {
-                top: 25%;
-            }
-
-            .center-content {
-                top: 48%;
-            }
-        }
-
-        @media (max-width: 600px) {
-            body {
-                overflow-y: auto;
-            }
-
-            .title-area {
-                position: relative;
-                top: auto;
-                left: auto;
-                transform: none;
-                padding-top: 2rem;
-            }
-
-            .title {
-                font-size: 50px;
-            }
-
-            .center-content {
-                position: relative;
-                top: auto;
-                left: auto;
-                transform: none;
-                padding: 1.5rem 1rem;
-            }
-
-            .tagline {
-                font-size: 1rem;
-            }
-
-            .coming-soon {
-                font-size: 0.9rem;
-                padding: 0.5rem 1rem;
-            }
-
-            .contact a {
-                font-size: 0.9rem;
-            }
-
-            .packs {
-                position: relative;
-                bottom: auto;
-                right: auto;
-                text-align: center;
-                padding: 1.5rem 1rem;
-            }
-
-            .packs h3 {
-                font-size: 0.85rem;
-            }
-
-            .pack-list {
-                font-size: 0.8rem;
-                line-height: 1.6;
-            }
-
-            .manual-link {
-                position: relative;
-                bottom: auto;
-                left: auto;
-                text-align: center;
-                padding: 1.5rem 1rem;
-            }
-
-            .manual-link a {
-                font-size: 1rem;
+            .descriptor {
+                font-size: 0.95rem;
             }
 
             .footer {
-                position: relative;
-                bottom: auto;
-                left: auto;
-                transform: none;
-                text-align: center;
-                padding: 1.5rem 1rem 2rem;
+                padding: 0.6rem 1rem;
+                gap: 0.75rem;
             }
+
+            .footer .languages,
+            .footer .steam-link {
+                font-size: 0.65rem;
+            }
+
+            .door-btn {
+                bottom: 2%;
+                left: 50%;
+                width: 5.7rem;
+                height: 6.7rem;
+            }
+
+            .corner-nav {
+                display: flex;
+                bottom: 3rem;
+                left: 1rem;
+            }
+
+            .corner-nav a {
+                font-size: 0.7rem;
+            }
+
+        }
+
+        /* ============================================
+           DESKTOP
+           ============================================ */
+
+        @media (min-width: 900px) {
+            .content {
+                max-width: none;
+                width: auto;
+                top: 48%;
+            }
+
+            .title {
+                font-size: 9rem;
+                text-shadow:
+                    0 0 50px rgba(100, 180, 255, 0.6),
+                    3px 3px 6px rgba(0, 0, 0, 0.9);
+                margin-bottom: 0.4rem;
+            }
+
+            .descriptor {
+                font-size: 1.6rem;
+            }
+
+            .footer {
+                padding: 1.25rem;
+                gap: 1.5rem;
+            }
+
+            .footer .languages,
+            .footer .steam-link {
+                font-size: 0.85rem;
+            }
+
+            .footer .divider {
+                height: 1rem;
+            }
+
+            .door-btn {
+                bottom: 9%;
+                left: 50%;
+                width: 8.5rem;
+                height: 9.4rem;
+            }
+
+            .corner-nav {
+                display: flex;
+                bottom: 4rem;
+                left: 2.5rem;
+            }
+
+            .corner-nav a {
+                font-size: 0.85rem;
+            }
+
         }
     </style>
 </head>
 <body>
-    <div class="title-area">
+    <div class="content">
         <h1 class="title">FlashBoss</h1>
+        <p class="descriptor">Flashcards with Boss Fights</p>
     </div>
 
-    <div class="center-content">
-        <p class="tagline">scientia est potentia</p>
-        <div class="coming-soon">Coming Soon to Steam</div>
-        <div class="contact">
-            <a href="mailto:flashbosscontact@gmail.com">flashbosscontact@gmail.com</a>
-        </div>
-    </div>
+    <footer class="footer">
+        <a href="https://store.steampowered.com/app/4134440/FlashBoss/" class="steam-link">Coming to Steam Feb 3rd</a>
+        <span class="divider"></span>
+        <a href="mailto:flashbosscontact@gmail.com" class="contact-link">Contact</a>
+    </footer>
 
-    <div class="packs">
-        <h3>Language Packs</h3>
-        <ul class="pack-list">
-            <li>German Pareto 1</li>
-            <li>German Pareto 2</li>
-            <li>Esperanto Pareto 1</li>
-            <li>Esperanto Pareto 2</li>
-            <li class="free">German Core — Free</li>
-            <li class="free">Esperanto Core — Free</li>
-        </ul>
-    </div>
+    <nav class="corner-nav">
+        <a href="manual/getting-started.html">Quick Start</a>
+        <a href="manual/">Manual</a>
+        <a href="report.html">Report Errors</a>
+        <a href="manual/language-packs.html">Packs</a>
+    </nav>
 
-    <div class="manual-link">
-        <a href="report.html">REPORT<br>ERRORS</a>
-        <a href="manual/">MANUAL</a>
-    </div>
-
-    <div class="footer">
-        © 2025 FlashBoss
-    </div>
+    <!-- Door button - positioned over castle door -->
+    <a href="manual/" class="door-btn" aria-label="Enter - Manual">
+        <img src="Enter.png" alt="Enter" class="door-img">
+    </a>
 </body>
 </html>
