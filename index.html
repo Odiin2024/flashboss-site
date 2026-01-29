@@ -456,21 +456,10 @@
     </a>
 
     <script>
-        // Auto-hide URL bar on mobile landscape by scrolling
-        window.addEventListener('load', function() {
-            if (window.innerWidth > window.innerHeight) {
-                setTimeout(function() {
-                    window.scrollTo(0, 1);
-                }, 100);
-            }
-        });
-
-        // Hide swipe hint after user scrolls (delay to ignore auto-scroll on load)
-        setTimeout(function() {
-            window.addEventListener('scroll', function() {
-                document.getElementById('swipeHint').classList.add('hidden');
-            }, { once: true });
-        }, 500);
+        // Hide swipe hint after user scrolls
+        window.addEventListener('scroll', function() {
+            document.getElementById('swipeHint').classList.add('hidden');
+        }, { once: true });
     </script>
 </body>
 </html>
