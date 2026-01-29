@@ -257,7 +257,9 @@
             }
 
             .door-img {
-                width: 40%;
+                position: absolute;
+                bottom: 1%;
+                width: 50%;
                 max-width: 8rem;
             }
 
@@ -359,5 +361,16 @@
     <a href="manual/" class="door-btn" aria-label="Enter - Manual">
         <img src="Enter.png" alt="Enter" class="door-img">
     </a>
+
+    <script>
+        // Auto-hide URL bar on mobile landscape by scrolling
+        window.addEventListener('load', function() {
+            if (window.innerWidth > window.innerHeight) {
+                setTimeout(function() {
+                    window.scrollTo(0, 1);
+                }, 100);
+            }
+        });
+    </script>
 </body>
 </html>
