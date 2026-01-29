@@ -217,7 +217,8 @@
             .door-img {
                 position: absolute;
                 bottom: 18%;
-                width: 50%;
+                width: 35vw;
+                max-width: none;  /* override base cap */
             }
         }
 
@@ -263,9 +264,9 @@
 
             .door-img {
                 position: absolute;
-                bottom: 1%;
-                width: 40%;
-                max-width: 10rem;
+                bottom: 88%;
+                width: 80%;
+
             }
 
             .corner-nav {
@@ -278,6 +279,28 @@
                 font-size: 0.7rem;
             }
 
+        }
+
+        /* ============================================
+           LARGE PHONE LANDSCAPE (892x414 etc)
+           Edit these values directly for your Pixel 7 Pro
+           ============================================ */
+
+        @media (min-width: 800px) and (max-height: 500px) and (orientation: landscape) {
+            .title {
+                font-size: 18vh;
+            }
+
+            .descriptor {
+                font-size: 4.6vh;
+            }
+
+            .door-img {
+                position: absolute;
+                bottom: 10%;      /* tweak vertical position */
+                width: 12vw;      /* tweak size */
+                max-width: none;
+            }
         }
 
         /* ============================================

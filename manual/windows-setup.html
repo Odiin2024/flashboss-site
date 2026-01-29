@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Windows 10 Setup - FlashBoss Manual</title>
+    <title>Windows Setup - FlashBoss Manual</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="../icon.png">
 </head>
@@ -12,95 +12,21 @@
         <a href="index.html" class="back-link">&larr; Back to Manual</a>
 
         <div class="content setup-guide">
-            <h2>Windows 10 Setup</h2>
+            <h2>Windows Setup</h2>
 
-            <div class="reassurance">
-                <p>Hello. Has something gone wrong?</p>
-                <p>Don't worry. This page will walk you through everything step by step. Take your time. By the end, you'll have FlashBoss running beautifully.</p>
-            </div>
+            <h3>You Need Windows Terminal</h3>
+            <p>FlashBoss requires Windows Terminal for proper emoji and color support.</p>
 
-            <h3>What Even Is a Terminal?</h3>
-            <p>A terminal is a text-based way to talk to your computer. Instead of clicking icons, you type commands. It looks like something from an 80s hacker movie, but it's actually quite friendly once you get the hang of it.</p>
-            <p>FlashBoss runs in a terminal because it allows backward compatibility to otherwise useless computers. The project is designed to take price out of the equation for language education. Using terminal gives us complete control over colors, sounds, and that retro aesthetic you're about to experience.</p>
+            <p><strong>Windows 11:</strong> Already installed. You're good.</p>
 
-            <h3>Opening a Terminal on Windows</h3>
-            <p>The classic way:</p>
+            <p><strong>Windows 10:</strong> Get it free from the Microsoft Store:</p>
             <ol>
-                <li>Press <code>Windows + R</code> on your keyboard</li>
-                <li>A small "Run" dialog appears</li>
-                <li>Type <code>cmd</code> and press Enter</li>
+                <li>Open Microsoft Store</li>
+                <li>Search "Windows Terminal"</li>
+                <li>Click Install</li>
             </ol>
-            <p>This opens the Command Prompt - Windows' original terminal from the DOS era. It works, but it's showing its age. The colors are limited, emojis don't display properly, and it's a generally unpleasant experience all around.</p>
-            <p>Once Windows Terminal is installed, you can type <code>wt</code> into the "Run" dialogue (small box with text field).</p>
 
-            <h3>Why Windows Terminal?</h3>
-            <p>Windows Terminal is Microsoft's modern terminal app. It fixes everything wrong with the old ones:</p>
-            <ul>
-                <li>Full emoji support (essential for FlashBoss)</li>
-                <li>Proper Unicode characters</li>
-                <li>256-color palette</li>
-                <li>Tabs (run multiple terminals at once)</li>
-                <li>Fully customizable appearance</li>
-            </ul>
-            <p><strong>Windows 11 users:</strong> Good news - Windows Terminal is already installed. You're done with this step.</p>
-            <p><strong>Windows 10 users:</strong> You need to install it from the Microsoft Store. It's free.</p>
-
-            <h3>Installing Windows Terminal</h3>
-            <p><strong>Option 1: Microsoft Store</strong></p>
-            <ol>
-                <li>Open the Microsoft Store (search for it in the Start menu)</li>
-                <li>Search for "Windows Terminal"</li>
-                <li>Click "Get" or "Install"</li>
-                <li>Wait for it to download</li>
-            </ol>
-            <p><strong>Option 2: Using winget (command line)</strong></p>
-            <p>If you already have a terminal open, you can install with:</p>
-            <div class="command-block">
-                <code>winget install Microsoft.WindowsTerminal</code>
-            </div>
-            <p>Once installed, Windows Terminal becomes the default. When Steam launches FlashBoss, it will automatically use Windows Terminal instead of the old Command Prompt.</p>
-
-            <h3>Customizing Your Terminal</h3>
-            <p>Here's the fun part. Windows Terminal is fully adjustable. You can make it look exactly how you want.</p>
-            <p>To open Settings: click the small down arrow next to the tabs at the top of the window, then click "Settings".</p>
-
-            <h4>Background Color</h4>
-            <p>For the authentic FlashBoss experience, set your background to:</p>
-            <div class="color-sample" style="background: #171421; padding: 1rem; border-radius: 4px; margin: 1rem 0;">
-                <code style="color: #ffffd7;">#171421</code>
-                <span style="color: #8a8a8a;"> — the same dark purple we use in the game</span>
-            </div>
-            <p>In Settings: Profiles > Defaults > Appearance > Background color</p>
-
-            <h4>Fonts</h4>
-            <p>The terminal uses monospace fonts by default. Here are some we recommend:</p>
-            <ul>
-                <li><strong>Press Start 2P</strong> — chunky pixel font, very retro</li>
-                <li><strong>Fantasque Sans Mono</strong> — playful but readable</li>
-                <li><strong>VT323</strong> — classic terminal aesthetic</li>
-                <li><strong>Victor Mono</strong> — modern with nice italics</li>
-            </ul>
-            <p>You'll need to <a href="https://support.microsoft.com/en-us/office/add-a-font-b7c5f17c-4426-4b53-967f-455339c564c1" target="_blank">install these fonts on your system first</a> (download from Google Fonts), then select them in Windows Terminal settings.</p>
-            <p>Start with <strong>14pt font size</strong> and adjust from there.</p>
-            <p><em>Note: Non-monospace fonts might look odd in some terminals, but Windows Terminal handles them surprisingly well. Experiment and see what you like.</em></p>
-
-            <h3>Basic Commands</h3>
-            <p>Once you're in the terminal, here's how to navigate:</p>
-            <p><code>cd</code> stands for "change directory". The syntax is <code>cd</code> then a space, then the desired directory name. To navigate to the FlashBoss directory with the absolute filepath:</p>
-            <div class="command-block">
-                <code>cd C:\Program Files\Steam\steamapps\common\FlashBoss</code>
-            </div>
-            <p>Or you can dig down one folder at a time from where you are by entering an available folder. Check available directories with <code>ls</code> or <code>dir</code> command. <code>cd ..</code> climbs back up a layer.</p>
-            <p>Once you're in the right folder:</p>
-            <p><code>.\FlashBoss.exe</code> — run the game</p>
-            <p><code>.\FlashBoss.exe --hierarchyaudio</code> — test audio playback</p>
-            <p>Note: Windows uses backslashes <code>\</code> for file paths, unlike Mac/Linux which use forward slashes <code>/</code>. Because of course it does.</p>
-            <p>For more terminal knowledge, see this <a href="https://dev.to/iam_prashanth_ks/list-of-essential-terminal-commands-for-windows-users-command-prompt-powershell-1cg3" target="_blank">list of essential terminal commands for Windows</a>.</p>
-
-            <h3>You're Ready</h3>
-            <p>That's it. Windows Terminal is installed, you know how to use it, and FlashBoss is waiting for you.</p>
-            <p>If you launched from Steam, everything should just work. If you're running FlashBoss on the terminal, navigate to the FlashBoss folder and run <code>.\FlashBoss.exe</code>.</p>
-            <p>Good luck, hero.</p>
+            <p>That's it. Launch FlashBoss from Steam and it will use Windows Terminal automatically.</p>
         </div>
 
         <footer>
