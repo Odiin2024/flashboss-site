@@ -212,33 +212,40 @@
         */
 
         /* ============================================
-           FULLSCREEN BUTTON (mobile only)
+           SWIPE UP HINT (mobile only)
            ============================================ */
 
-        .fullscreen-btn {
+        .swipe-hint {
             position: absolute;
-            top: 0.75rem;
-            right: 0.75rem;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
             z-index: 10;
-            background: rgba(0, 0, 0, 0.4);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 4px;
-            padding: 0.4rem 0.6rem;
-            color: rgba(255, 255, 255, 0.85);
-            font-size: 0.7rem;
-            font-family: inherit;
-            cursor: pointer;
-            transition: opacity 0.3s, color 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.3rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: opacity 0.5s;
         }
 
-        .fullscreen-btn:hover {
-            background: rgba(0, 0, 0, 0.6);
-        }
-
-        .fullscreen-btn.used {
-            color: rgba(150, 130, 170, 0.6);
-            border-color: rgba(150, 130, 170, 0.3);
+        .swipe-hint.hidden {
+            opacity: 0;
             pointer-events: none;
+        }
+
+        .swipe-hint .arrow {
+            font-size: 1.5rem;
+            line-height: 1;
+            animation: bounce 1.5s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
         }
 
         /* ============================================
@@ -305,7 +312,7 @@
            ============================================ */
 
         @media (min-width: 768px) and (min-height: 500px) {
-            .fullscreen-btn {
+            .swipe-hint {
                 display: none;
             }
 
@@ -367,15 +374,15 @@
             }
 
             .title {
-                font-size: 10vw;
+                font-size: 8vw;
                 text-shadow:
                     0 0 50px rgba(100, 180, 255, 0.6),
                     3px 3px 6px rgba(0, 0, 0, 0.9);
-                margin-bottom: 0.4rem;
+                margin-bottom: 0.2rem;
             }
 
             .descriptor {
-                font-size: 1.8vw;
+                font-size: 2.0vw;
             }
 
             .footer {
@@ -401,6 +408,8 @@
             }
 
             .door-img {
+                position: absolute;
+                bottom: 13%;
                 width: 30%;
                 max-width: 12rem;
             }
@@ -418,7 +427,10 @@
     </style>
 </head>
 <body>
-    <button class="fullscreen-btn" id="fullscreenBtn">Full Screen</button>
+    <div class="swipe-hint" id="swipeHint">
+        <span class="arrow">&#8593;</span>
+        <span>Swipe</span>
+    </div>
 
     <div class="content">
         <h1 class="title">FlashBoss</h1>
@@ -426,7 +438,7 @@
     </div>
 
     <footer class="footer">
-        <a href="https://store.steampowered.com/app/4134440/FlashBoss/" class="steam-link">Coming to Steam Feb 3rd</a>
+        <a href="https://store.steampowered.com/app/4134440/FlashBoss/" class="steam-link">Coming to Steam Feb 17th</a>
         <span class="divider"></span>
         <a href="mailto:flashbosscontact@gmail.com" class="contact-link">Contact</a>
     </footer>
@@ -443,9 +455,6 @@
         <img src="Enter.png" alt="Enter" class="door-img">
     </a>
 
-    <!-- Anchor for fullscreen scroll -->
-    <div id="fullscreen-anchor" style="position: absolute; bottom: 0;"></div>
-
     <script>
         // Auto-hide URL bar on mobile landscape by scrolling
         window.addEventListener('load', function() {
@@ -456,11 +465,10 @@
             }
         });
 
-        // Fullscreen button - scroll to trigger URL bar hide
-        document.getElementById('fullscreenBtn').addEventListener('click', function() {
-            window.scrollTo(0, window.innerHeight * 0.02);
-            this.classList.add('used');
-        });
+        // Hide swipe hint after user scrolls
+        window.addEventListener('scroll', function() {
+            document.getElementById('swipeHint').classList.add('hidden');
+        }, { once: true });
     </script>
 </body>
 </html>
