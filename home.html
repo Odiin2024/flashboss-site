@@ -10,7 +10,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/fantasque-sans@1.8.0/FantasqueSansMono-Regular.css" rel="stylesheet">
+    <!-- Self-host Fantasque Sans Mono: place .woff2 in fonts/ folder -->
+    <style>
+        @font-face {
+            font-family: 'Fantasque Sans Mono';
+            src: url('fonts/FantasqueSansMono-Bold.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
     <style>
         * {
             margin: 0;
@@ -60,7 +69,7 @@
 
         .header h1 {
             font-family: 'Fantasque Sans Mono', monospace;
-            font-size: 1.4rem;
+            font-size: 4.2rem;
             font-weight: 700;
             color: #ff66ff;
             text-transform: uppercase;
@@ -187,7 +196,7 @@
         /* Tablet and up */
         @media (min-width: 768px) {
             .header h1 {
-                font-size: 1.6rem;
+                font-size: 4.8rem;
             }
 
             .beta-section {
@@ -215,7 +224,7 @@
         /* Desktop */
         @media (min-width: 1024px) {
             .header h1 {
-                font-size: 1.8rem;
+                font-size: 5.4rem;
             }
 
             .container {
