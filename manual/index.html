@@ -33,7 +33,7 @@
             gap: 1rem;
         }
 
-        /* Horizontal navigation flow: parent -> focus -> children */
+        /* Horizontal navigation flow: parent -> focus */
         .nav-flow {
             display: flex;
             align-items: center;
@@ -47,7 +47,7 @@
             font-size: 1.2rem;
         }
 
-        /* Parent thumbnail */
+        /* Parent thumbnails */
         .parent-thumb {
             width: 50px;
             height: 55px;
@@ -57,15 +57,17 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.5rem;
+            font-size: 0.45rem;
             color: var(--grey);
             text-decoration: none;
-            transition: border-color 0.2s;
+            cursor: pointer;
+            transition: border-color 0.2s, transform 0.2s;
             overflow: hidden;
         }
 
         .parent-thumb:hover {
             border-color: var(--coral);
+            transform: scale(1.05);
         }
 
         .parent-thumb img {
@@ -91,6 +93,7 @@
             padding: 0.5rem;
             overflow: hidden;
             text-decoration: none;
+            cursor: pointer;
             transition: border-color 0.2s, transform 0.2s;
         }
 
@@ -121,6 +124,7 @@
             align-items: center;
             gap: 0.25rem;
             text-decoration: none;
+            cursor: pointer;
             transition: transform 0.2s;
         }
 
@@ -143,9 +147,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.5rem;
+            font-size: 0.4rem;
             color: var(--grey);
             overflow: hidden;
+        }
+
+        .child-thumb:hover .thumb-box {
+            border-color: var(--moon-yellow);
         }
 
         .child-thumb .thumb-box img {
@@ -154,15 +162,12 @@
             object-fit: cover;
         }
 
-        .child-thumb:hover .thumb-box {
-            border-color: var(--moon-yellow);
-        }
-
         .child-thumb .thumb-label {
-            font-size: 0.65rem;
+            font-size: 0.6rem;
             color: var(--grey);
-            max-width: 60px;
+            max-width: 55px;
             text-align: center;
+            line-height: 1.2;
         }
 
         /* Right page - description */
@@ -240,58 +245,17 @@
         <!-- Book layout tutorial splash -->
         <section class="book-section">
             <div class="book-layout">
-                <!-- Left page: navigation tree -->
-                <div class="book-left">
-                    <!-- Horizontal flow: parent -> focus -->
-                    <div class="nav-flow">
-                        <a href="../home.html" class="parent-thumb">
-                            <img src="screenshots/common/entrance.png" alt="Entrance">
-                        </a>
-                        <span class="nav-arrow">&rarr;</span>
-                        <a href="walkthrough/profile-select.html" class="focus-thumb">
-                            <img src="screenshots/common/profile-select.png" alt="Profile Select">
-                        </a>
-                    </div>
-
-                    <!-- Children: menu options from profile-select -->
-                    <div class="nav-children">
-                        <a href="walkthrough/create-username.html" class="child-thumb">
-                            <span class="menu-num">1</span>
-                            <div class="thumb-box">
-                                <img src="screenshots/common/create-username.png" alt="Create">
-                            </div>
-                            <span class="thumb-label">Create Hero</span>
-                        </a>
-                        <a href="walkthrough/sanctum.html" class="child-thumb">
-                            <span class="menu-num">2-5</span>
-                            <div class="thumb-box">Sanctum</div>
-                            <span class="thumb-label">Select Hero</span>
-                        </a>
-                        <a href="walkthrough/vault.html" class="child-thumb">
-                            <span class="menu-num">6</span>
-                            <div class="thumb-box">Vault</div>
-                            <span class="thumb-label">Backup Vault</span>
-                        </a>
-                        <a href="walkthrough/leaderboard.html" class="child-thumb">
-                            <span class="menu-num">7</span>
-                            <div class="thumb-box">Links</div>
-                            <span class="thumb-label">Leaderboard</span>
-                        </a>
-                        <a href="walkthrough/about.html" class="child-thumb">
-                            <span class="menu-num">8</span>
-                            <div class="thumb-box">About</div>
-                            <span class="thumb-label">About & Help</span>
-                        </a>
-                    </div>
+                <!-- Left page: navigation tree (rendered by JS) -->
+                <div class="book-left" id="cladogramLeft">
+                    <div class="nav-flow" id="navFlow"></div>
+                    <div class="nav-children" id="navChildren"></div>
                 </div>
 
-                <!-- Right page: description -->
-                <div class="book-right">
-                    <h2>Profile Selection</h2>
-                    <p>FlashBoss supports up to 5 user profiles. Each slot shows the user's avatar, name, and chosen master.</p>
-                    <p>Empty slots display "Create New Hero" - selecting one begins character creation. Selecting an existing profile logs you in.</p>
-                    <p>System options at the bottom: Backup Vault (6), Leaderboard & Links (7), About & Help (8), and Exit (9).</p>
-                    <p class="hint">Click a child thumbnail to explore that path, or click the focus image to view the full page.</p>
+                <!-- Right page: description (rendered by JS) -->
+                <div class="book-right" id="cladogramRight">
+                    <h2 id="focusTitle">Loading...</h2>
+                    <div id="focusDescription"></div>
+                    <p class="hint">Click a parent or child to shift focus. Click the focus image to open that page.</p>
                 </div>
             </div>
         </section>
@@ -383,7 +347,6 @@
                     <p>Frequently asked questions</p>
                 </a>
             </div>
-
         </div>
 
         <footer>
@@ -391,5 +354,113 @@
             <p>&copy; 2025 FlashBoss</p>
         </footer>
     </div>
+
+    <script>
+        let screens = {};
+        let currentFocus = 'profile-select';
+
+        // Load screen data
+        fetch('screens.json')
+            .then(response => response.json())
+            .then(data => {
+                screens = data;
+                renderCladogram();
+            })
+            .catch(err => {
+                console.error('Failed to load screens.json:', err);
+                document.getElementById('focusTitle').textContent = 'Error loading data';
+            });
+
+        function renderCladogram() {
+            const focus = screens[currentFocus];
+            if (!focus) return;
+
+            // Render navigation flow (parents -> focus)
+            const navFlow = document.getElementById('navFlow');
+            navFlow.innerHTML = '';
+
+            // Add parents
+            focus.parents.forEach((parentId, index) => {
+                const parent = screens[parentId];
+                if (!parent) return;
+
+                const parentEl = document.createElement('div');
+                parentEl.className = 'parent-thumb';
+                parentEl.onclick = () => setFocus(parentId);
+
+                if (parent.image) {
+                    parentEl.innerHTML = `<img src="${parent.image}" alt="${parent.title}">`;
+                } else {
+                    parentEl.textContent = parent.title;
+                }
+                navFlow.appendChild(parentEl);
+
+                // Add arrow after parent
+                const arrow = document.createElement('span');
+                arrow.className = 'nav-arrow';
+                arrow.innerHTML = '&rarr;';
+                navFlow.appendChild(arrow);
+            });
+
+            // Add focus
+            const focusEl = document.createElement('a');
+            focusEl.className = 'focus-thumb';
+            focusEl.href = focus.page;
+            if (focus.image) {
+                focusEl.innerHTML = `<img src="${focus.image}" alt="${focus.title}">`;
+            } else {
+                focusEl.textContent = focus.title;
+            }
+            navFlow.appendChild(focusEl);
+
+            // Render children
+            const navChildren = document.getElementById('navChildren');
+            navChildren.innerHTML = '';
+
+            focus.children.forEach(childId => {
+                const child = screens[childId];
+                if (!child) return;
+
+                const childEl = document.createElement('div');
+                childEl.className = 'child-thumb';
+                childEl.onclick = () => setFocus(childId);
+
+                // Get menu number label if exists
+                const menuNum = focus.childLabels ? focus.childLabels[childId] : '';
+
+                let thumbContent;
+                if (child.image) {
+                    thumbContent = `<img src="${child.image}" alt="${child.title}">`;
+                } else {
+                    thumbContent = child.title.substring(0, 8);
+                }
+
+                childEl.innerHTML = `
+                    <span class="menu-num">${menuNum}</span>
+                    <div class="thumb-box">${thumbContent}</div>
+                    <span class="thumb-label">${child.title}</span>
+                `;
+                navChildren.appendChild(childEl);
+            });
+
+            // Render description
+            document.getElementById('focusTitle').textContent = focus.title;
+
+            const descDiv = document.getElementById('focusDescription');
+            descDiv.innerHTML = '';
+            focus.description.split('\n\n').forEach(para => {
+                const p = document.createElement('p');
+                p.textContent = para;
+                descDiv.appendChild(p);
+            });
+        }
+
+        function setFocus(screenId) {
+            if (screens[screenId]) {
+                currentFocus = screenId;
+                renderCladogram();
+            }
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,99 @@
+{
+  "entrance": {
+    "id": "entrance",
+    "title": "Entrance",
+    "image": "screenshots/common/entrance.png",
+    "page": "walkthrough/index.html",
+    "parents": [],
+    "children": ["profile-select"],
+    "description": "The FlashBoss title screen. Press any key to continue to profile selection."
+  },
+  "profile-select": {
+    "id": "profile-select",
+    "title": "Profile Selection",
+    "image": "screenshots/common/profile-select.png",
+    "page": "walkthrough/profile-select.html",
+    "parents": ["entrance"],
+    "children": ["create-username", "sanctum", "vault", "leaderboard", "about"],
+    "childLabels": {
+      "create-username": "1",
+      "sanctum": "2-5",
+      "vault": "6",
+      "leaderboard": "7",
+      "about": "8"
+    },
+    "description": "FlashBoss supports up to 5 user profiles. Each slot shows the user's avatar, name, and chosen master.\n\nEmpty slots display \"Create New Hero\" - selecting one begins character creation. Selecting an existing profile logs you in.\n\nSystem options at the bottom: Backup Vault (6), Leaderboard & Links (7), About & Help (8), and Exit (9)."
+  },
+  "create-username": {
+    "id": "create-username",
+    "title": "Create Username",
+    "image": "screenshots/common/create-username.png",
+    "page": "walkthrough/create-username.html",
+    "parents": ["profile-select"],
+    "children": ["create-avatar"],
+    "description": "Enter a username for your new hero. This name will appear on your profile and leaderboards."
+  },
+  "create-avatar": {
+    "id": "create-avatar",
+    "title": "Create Avatar",
+    "image": "screenshots/common/create avatar.png",
+    "page": "walkthrough/create-avatar.html",
+    "parents": ["create-username"],
+    "children": ["create-master"],
+    "description": "Choose an avatar to represent your hero. Pick from a variety of pixel art characters."
+  },
+  "create-master": {
+    "id": "create-master",
+    "title": "Choose Master",
+    "image": "screenshots/common/create-master1.png",
+    "page": "walkthrough/create-master.html",
+    "parents": ["create-avatar"],
+    "children": ["create-pack"],
+    "description": "Select your guide: Luna, Claude, Odiin, Shen, Kitsune, or Aquila. Each master has their own personality and teaching style."
+  },
+  "create-pack": {
+    "id": "create-pack",
+    "title": "Choose Language Pack",
+    "image": "screenshots/common/create-pack.png",
+    "page": "walkthrough/create-pack.html",
+    "parents": ["create-master"],
+    "children": ["sanctum"],
+    "description": "Select your language pack. German Core and Esperanto are included. More packs available as DLC."
+  },
+  "sanctum": {
+    "id": "sanctum",
+    "title": "The Sanctum",
+    "image": null,
+    "page": "walkthrough/sanctum.html",
+    "parents": ["profile-select", "create-pack"],
+    "children": [],
+    "description": "Your home base. From here you can access daily practice, lessons, boss fights, the grimoire, and more."
+  },
+  "vault": {
+    "id": "vault",
+    "title": "Backup Vault",
+    "image": null,
+    "page": "walkthrough/vault.html",
+    "parents": ["profile-select"],
+    "children": [],
+    "description": "Manage your save backups. Create, restore, and delete backup files."
+  },
+  "leaderboard": {
+    "id": "leaderboard",
+    "title": "Leaderboard & Links",
+    "image": null,
+    "page": "walkthrough/leaderboard.html",
+    "parents": ["profile-select"],
+    "children": [],
+    "description": "View leaderboards and access external links and resources."
+  },
+  "about": {
+    "id": "about",
+    "title": "About & Help",
+    "image": null,
+    "page": "walkthrough/about.html",
+    "parents": ["profile-select"],
+    "children": [],
+    "description": "Credits, version info, and help resources. Links to tutorials and documentation."
+  }
+}
