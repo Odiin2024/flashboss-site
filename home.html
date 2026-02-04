@@ -9,7 +9,8 @@
     <link rel="icon" type="image/png" href="icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/fantasque-sans@1.8.0/FantasqueSansMono-Regular.css" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -54,18 +55,17 @@
         /* Header */
         .header {
             text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
 
         .header h1 {
-            font-family: 'Jaro', sans-serif;
-            font-size: 12vw;
-            font-weight: 400;
-            color: #7ec8ff;
-            text-shadow:
-                0 0 40px rgba(100, 180, 255, 0.5),
-                0 3px 8px rgba(0, 0, 0, 0.8);
-            line-height: 1;
+            font-family: 'Fantasque Sans Mono', monospace;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #ff66ff;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
         }
 
         /* Main content */
@@ -187,7 +187,7 @@
         /* Tablet and up */
         @media (min-width: 768px) {
             .header h1 {
-                font-size: 6vw;
+                font-size: 1.6rem;
             }
 
             .beta-section {
@@ -215,7 +215,7 @@
         /* Desktop */
         @media (min-width: 1024px) {
             .header h1 {
-                font-size: 4vw;
+                font-size: 1.8rem;
             }
 
             .container {
@@ -227,7 +227,7 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1>FlashBoss</h1>
+            <h1>Welcome Home</h1>
         </header>
 
         <main class="main">
