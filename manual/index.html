@@ -6,6 +6,214 @@
     <title>FlashBoss Manual</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="../icon.png">
+    <style>
+        /* Book layout for tutorial splash */
+        .book-section {
+            min-height: calc(100vh - 200px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .book-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            flex: 1;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Left page - navigation tree */
+        .book-left {
+            padding: 1.5rem;
+            border-right: 2px solid var(--coral);
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        /* Parent thumbnails */
+        .nav-parents {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .nav-parents .label {
+            font-size: 0.7rem;
+            color: var(--grey);
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            transform: rotate(180deg);
+        }
+
+        .parent-thumb {
+            width: 60px;
+            height: 40px;
+            background: var(--bg-dark);
+            border: 2px solid var(--grey);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.6rem;
+            color: var(--grey);
+            text-decoration: none;
+            transition: border-color 0.2s;
+        }
+
+        .parent-thumb:hover {
+            border-color: var(--coral);
+        }
+
+        .parent-thumb.none {
+            opacity: 0.4;
+            pointer-events: none;
+        }
+
+        /* Main page display */
+        .nav-main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-page-thumb {
+            width: 100%;
+            max-width: 280px;
+            aspect-ratio: 4/3;
+            background: var(--bg-dark);
+            border: 3px solid var(--moon-yellow);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--moon-cream);
+            font-family: var(--font-pixel);
+            font-size: 0.7rem;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .main-page-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        /* Child thumbnails */
+        .nav-children {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            justify-content: center;
+        }
+
+        .child-thumb {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.25rem;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+
+        .child-thumb:hover {
+            transform: translateY(-2px);
+        }
+
+        .child-thumb .menu-num {
+            font-family: var(--font-pixel);
+            font-size: 0.6rem;
+            color: var(--coral);
+        }
+
+        .child-thumb .thumb-box {
+            width: 50px;
+            height: 35px;
+            background: var(--bg-dark);
+            border: 2px solid var(--link-blue);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.5rem;
+            color: var(--grey);
+        }
+
+        .child-thumb:hover .thumb-box {
+            border-color: var(--moon-yellow);
+        }
+
+        .child-thumb .thumb-label {
+            font-size: 0.65rem;
+            color: var(--grey);
+            max-width: 60px;
+            text-align: center;
+        }
+
+        /* Right page - description */
+        .book-right {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .book-right h2 {
+            font-family: var(--font-pixel);
+            font-size: 0.9rem;
+            color: var(--moon-yellow);
+            border: none;
+            margin-bottom: 1rem;
+        }
+
+        .book-right p {
+            color: var(--moon-cream);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .book-right .hint {
+            font-size: 0.85rem;
+            color: var(--grey);
+            font-style: italic;
+        }
+
+        /* Mobile: stack vertically */
+        @media (max-width: 768px) {
+            .book-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .book-left {
+                border-right: none;
+                border-bottom: 2px solid var(--coral);
+            }
+
+            .nav-parents .label {
+                writing-mode: horizontal-tb;
+                transform: none;
+            }
+
+            .main-page-thumb {
+                max-width: 200px;
+            }
+        }
+
+        /* Chapter grid section heading */
+        .chapters-heading {
+            font-family: var(--font-pixel);
+            font-size: 0.9rem;
+            text-align: center;
+            margin: 3rem 0 1.5rem;
+            color: var(--moon-yellow);
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -14,11 +222,67 @@
             <p class="tagline">scientia est potentia</p>
         </header>
 
-        <div class="intro-section">
-            <p>Welcome to the FlashBoss tutorial. Select a child icon to explore that topic. Each section walks you through the game with screenshots and explanations.</p>
-        </div>
+        <!-- Book layout tutorial splash -->
+        <section class="book-section">
+            <div class="book-layout">
+                <!-- Left page: navigation tree -->
+                <div class="book-left">
+                    <div class="nav-parents">
+                        <span class="label">Parent</span>
+                        <a href="../home.html" class="parent-thumb">Home</a>
+                    </div>
 
-        <h3 class="section-heading">Game Mechanics</h3>
+                    <div class="nav-main">
+                        <div class="main-page-thumb">
+                            Splash Page<br>(You are here)
+                        </div>
+                    </div>
+
+                    <div class="nav-children">
+                        <a href="getting-started.html" class="child-thumb">
+                            <span class="menu-num">1</span>
+                            <div class="thumb-box">img</div>
+                            <span class="thumb-label">Getting Started</span>
+                        </a>
+                        <a href="masters.html" class="child-thumb">
+                            <span class="menu-num">2</span>
+                            <div class="thumb-box">img</div>
+                            <span class="thumb-label">Masters</span>
+                        </a>
+                        <a href="daily-practice.html" class="child-thumb">
+                            <span class="menu-num">3</span>
+                            <div class="thumb-box">img</div>
+                            <span class="thumb-label">Daily</span>
+                        </a>
+                        <a href="lessons.html" class="child-thumb">
+                            <span class="menu-num">4</span>
+                            <div class="thumb-box">img</div>
+                            <span class="thumb-label">Lessons</span>
+                        </a>
+                        <a href="boss-fights.html" class="child-thumb">
+                            <span class="menu-num">5</span>
+                            <div class="thumb-box">img</div>
+                            <span class="thumb-label">Bosses</span>
+                        </a>
+                        <a href="grimoire.html" class="child-thumb">
+                            <span class="menu-num">6</span>
+                            <div class="thumb-box">img</div>
+                            <span class="thumb-label">Grimoire</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right page: description -->
+                <div class="book-right">
+                    <h2>Welcome to the Tutorial</h2>
+                    <p>Welcome to the FlashBoss tutorial. Select a child icon to explore that topic. Each section walks you through the game with screenshots and explanations.</p>
+                    <p class="hint">Press the numbered icons on the left to navigate, or scroll down for a quick-reference chapter list.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter grid - alternative entry point -->
+        <h3 class="chapters-heading">Quick Reference</h3>
 
         <div class="chapter-grid">
             <div class="chapter-card">
@@ -108,7 +372,7 @@
         </div>
 
         <footer>
-            <p><a href="../index.html">Back to FlashBoss Home</a></p>
+            <p><a href="../home.html">Back to FlashBoss Home</a></p>
             <p>&copy; 2025 FlashBoss</p>
         </footer>
     </div>

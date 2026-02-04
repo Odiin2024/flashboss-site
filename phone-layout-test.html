@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlashBoss Phone Layout Test - Print on A4</title>
+    <style>
+        @page {
+            size: A4 landscape;
+            margin: 10mm;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 20px;
+            background: #fff;
+        }
+
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: 14pt;
+            margin-bottom: 5px;
+            color: #000;
+        }
+
+        p.info {
+            font-family: Arial, sans-serif;
+            font-size: 10pt;
+            color: #333;
+            margin: 5px 0 15px 0;
+        }
+
+        .test-container {
+            page-break-after: always;
+            background: white;
+            padding: 10mm;
+            margin-bottom: 20px;
+        }
+
+        .test-container:last-child {
+            page-break-after: avoid;
+        }
+
+        /* Test 1: Landscape phone simulation - buttons on right */
+        .landscape-phone {
+            display: flex;
+            border: 2px solid #333;
+            background: #fff;
+            width: 277mm;
+            height: 190mm;
+        }
+
+        .landscape-phone .display {
+            flex: 1;
+            padding: 5mm;
+            color: #000;
+            font-size: 17pt;
+            line-height: 1.0;
+            white-space: pre;
+            overflow: hidden;
+        }
+
+        .landscape-phone .buttons {
+            width: 40mm;
+            background: #eee;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 3mm;
+            padding: 5mm;
+        }
+
+        .landscape-phone .btn {
+            background: #ddd;
+            color: #006;
+            border: 1px solid #006;
+            padding: 8mm 0;
+            text-align: center;
+            font-family: 'Courier New', monospace;
+            font-size: 14pt;
+        }
+
+        /* Test 2: Portrait phone simulation - buttons on bottom */
+        .portrait-phone {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #333;
+            background: #fff;
+            width: 190mm;
+            height: 277mm;
+        }
+
+        .portrait-phone .display {
+            flex: 1;
+            padding: 5mm;
+            color: #000;
+            font-size: 9pt;
+            line-height: 1.0;
+            white-space: pre;
+            overflow: hidden;
+        }
+
+        .portrait-phone .buttons {
+            height: 35mm;
+            background: #eee;
+            display: flex;
+            justify-content: center;
+            gap: 3mm;
+            padding: 5mm;
+        }
+
+        .portrait-phone .btn {
+            background: #ddd;
+            color: #006;
+            border: 1px solid #006;
+            padding: 0 6mm;
+            text-align: center;
+            font-family: 'Courier New', monospace;
+            font-size: 12pt;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Test 3: Worst case small phone landscape */
+        .small-phone-landscape {
+            display: flex;
+            border: 2px solid #333;
+            background: #fff;
+            width: 224mm;
+            height: 126mm;
+        }
+
+        .small-phone-landscape .display {
+            flex: 1;
+            padding: 3mm;
+            color: #000;
+            font-size: 11pt;
+            line-height: 1.0;
+            white-space: pre;
+            overflow: hidden;
+        }
+
+        .small-phone-landscape .buttons {
+            width: 30mm;
+            background: #eee;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2mm;
+            padding: 3mm;
+        }
+
+        .small-phone-landscape .btn {
+            background: #ddd;
+            color: #006;
+            border: 1px solid #006;
+            padding: 4mm 0;
+            text-align: center;
+            font-family: 'Courier New', monospace;
+            font-size: 10pt;
+        }
+
+        /* Dark text colors for printing */
+        .cyan { color: #006080; }
+        .yellow { color: #806000; font-weight: bold; }
+        .magenta { color: #800080; font-weight: bold; }
+        .red { color: #a00; }
+        .green { color: #060; }
+        .blue { color: #008; }
+        .grey { color: #666; }
+    </style>
+</head>
+<body>
+
+<!-- PAGE 1: Landscape - Comfortable -->
+<div class="test-container">
+    <h1>TEST 1: A4 Landscape - Full Size (Tablet / Comfortable Phone)</h1>
+    <p class="info">17pt font, 28 rows, 52 chars. Buttons on right. Print on A4 Landscape.</p>
+
+    <div class="landscape-phone">
+        <div class="display">╔══════════════════════════════════════════════════╗
+║                                                  ║
+║   W              <span class="magenta">BOSS FIGHT</span>                M    ║
+║                                                  ║
+╠══════════════════════════════════════════════════╣
+║                                                  ║
+║   Match the translation to the German word       ║
+║                                                  ║
+║   X  Translate: <span class="yellow">the house</span>!                       ║
+║                                                  ║
+║   O  As in, "The house is big."                  ║
+║                                                  ║
+╠══════════════════════════════════════════════════╣
+║                                                  ║
+║  <span class="cyan">1</span>. Haus                 <span class="cyan">2</span>. Hund                 ║
+║  <span class="cyan">3</span>. Katze               <span class="cyan">4</span>. Baum                 ║
+║  <span class="cyan">5</span>. Frau                <span class="cyan">6</span>. Mann                 ║
+║  <span class="cyan">7</span>. Kind                <span class="cyan">8</span>. Auto                 ║
+║                                                  ║
+╠══════════════════════════════════════════════════╣
+║                                                  ║
+║           W    <span class="red">X</span>                               ║
+║           <span class="blue">TTTTTTTTTTTTTTTTTTTTTTT</span>               ║
+║              <span class="green">Advancing... Position 2</span>             ║
+║                                                  ║
+╠══════════════════════════════════════════════════╣
+║          <span class="green">Choose 1-8 / 9 to retreat</span>             ║
+╚══════════════════════════════════════════════════╝</div>
+        <div class="buttons">
+            <div class="btn">1</div>
+            <div class="btn">2</div>
+            <div class="btn">3</div>
+            <div class="btn">4</div>
+            <div class="btn">5</div>
+            <div class="btn">6</div>
+            <div class="btn">7</div>
+            <div class="btn">8</div>
+        </div>
+    </div>
+</div>
+
+<!-- PAGE 2: Portrait - Cramped -->
+<div class="test-container">
+    <h1>TEST 2: A4 Portrait - 52 chars wide (TOO SMALL)</h1>
+    <p class="info">9pt font to fit 52 chars. This demonstrates why portrait won't work well. Print on A4 Portrait.</p>
+
+    <div class="portrait-phone">
+        <div class="display">╔══════════════════════════════════════════════════╗
+║                                                  ║
+║   W              <span class="magenta">BOSS FIGHT</span>                M    ║
+║                                                  ║
+╠══════════════════════════════════════════════════╣
+║                                                  ║
+║   Match the translation to the German word       ║
+║                                                  ║
+║   X  Translate: <span class="yellow">the house</span>!                       ║
+║                                                  ║
+║   O  As in, "The house is big."                  ║
+║                                                  ║
+╠══════════════════════════════════════════════════╣
+║                                                  ║
+║  <span class="cyan">1</span>. Haus                 <span class="cyan">2</span>. Hund                 ║
+║  <span class="cyan">3</span>. Katze               <span class="cyan">4</span>. Baum                 ║
+║  <span class="cyan">5</span>. Frau                <span class="cyan">6</span>. Mann                 ║
+║  <span class="cyan">7</span>. Kind                <span class="cyan">8</span>. Auto                 ║
+║                                                  ║
+╠══════════════════════════════════════════════════╣
+║                                                  ║
+║           W    <span class="red">X</span>                               ║
+║           <span class="blue">TTTTTTTTTTTTTTTTTTTTTTT</span>               ║
+║              <span class="green">Advancing... Position 2</span>             ║
+║                                                  ║
+╠══════════════════════════════════════════════════╣
+║          <span class="green">Choose 1-8 / 9 to retreat</span>             ║
+╚══════════════════════════════════════════════════╝</div>
+        <div class="buttons">
+            <div class="btn">1</div>
+            <div class="btn">2</div>
+            <div class="btn">3</div>
+            <div class="btn">4</div>
+            <div class="btn">5</div>
+            <div class="btn">6</div>
+            <div class="btn">7</div>
+            <div class="btn">8</div>
+        </div>
+    </div>
+</div>
+
+<!-- PAGE 3: Small phone landscape - worst case -->
+<div class="test-container">
+    <h1>TEST 3: Small Phone Landscape - WORST CASE (360x640pt phone)</h1>
+    <p class="info">11pt font, tight but readable. This is what a budget Android phone would show. Print on A4 Landscape.</p>
+
+    <div class="small-phone-landscape">
+        <div class="display">╔══════════════════════════════════════════════════╗
+║                                                  ║
+║   W              <span class="magenta">BOSS FIGHT</span>                M    ║
+║                                                  ║
+╠══════════════════════════════════════════════════╣
+║                                                  ║
+║   X  Translate: <span class="yellow">the house</span>!                       ║
+║                                                  ║
+║   O  As in, "The house is big."                  ║
+║                                                  ║
+╠══════════════════════════════════════════════════╣
+║                                                  ║
+║  <span class="cyan">1</span>. Haus                 <span class="cyan">2</span>. Hund                 ║
+║  <span class="cyan">3</span>. Katze               <span class="cyan">4</span>. Baum                 ║
+║  <span class="cyan">5</span>. Frau                <span class="cyan">6</span>. Mann                 ║
+║  <span class="cyan">7</span>. Kind                <span class="cyan">8</span>. Auto                 ║
+║                                                  ║
+╠══════════════════════════════════════════════════╣
+║           W    <span class="red">X</span>                               ║
+║           <span class="blue">TTTTTTTTTTTTTTTTTTTTTTT</span>               ║
+║              <span class="green">Position 2 of 4</span>                   ║
+╠══════════════════════════════════════════════════╣
+║          <span class="green">Choose 1-8 / 9 to retreat</span>             ║
+╚══════════════════════════════════════════════════╝</div>
+        <div class="buttons">
+            <div class="btn">1</div>
+            <div class="btn">2</div>
+            <div class="btn">3</div>
+            <div class="btn">4</div>
+            <div class="btn">5</div>
+            <div class="btn">6</div>
+            <div class="btn">7</div>
+            <div class="btn">8</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
