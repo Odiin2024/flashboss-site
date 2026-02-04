@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>FlashBoss - Welcome</title>
+    <meta name="description" content="FlashBoss - Spaced repetition flashcards with boss fights. Get a free beta key.">
+
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: url('home.png') center center / cover no-repeat fixed;
+            color: #f0e6d3;
+            min-height: 100vh;
+            min-height: 100dvh;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(10, 10, 25, 0.4);
+            pointer-events: none;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .header h1 {
+            font-family: 'Jaro', sans-serif;
+            font-size: 12vw;
+            font-weight: 400;
+            color: #7ec8ff;
+            text-shadow:
+                0 0 40px rgba(100, 180, 255, 0.5),
+                0 3px 8px rgba(0, 0, 0, 0.8);
+            line-height: 1;
+        }
+
+        /* Main content */
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* Beta section */
+        .beta-section {
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(126, 200, 255, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .beta-section h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #7ec8ff;
+            margin-bottom: 1rem;
+        }
+
+        .beta-section p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .beta-section .email-link {
+            display: inline-block;
+            background: rgba(126, 200, 255, 0.2);
+            border: 1px solid rgba(126, 200, 255, 0.5);
+            border-radius: 4px;
+            padding: 0.6rem 1rem;
+            color: #7ec8ff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .beta-section .email-link:hover {
+            background: rgba(126, 200, 255, 0.3);
+            border-color: rgba(126, 200, 255, 0.7);
+        }
+
+        .beta-section .note {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 1rem;
+            font-style: italic;
+        }
+
+        /* Navigation links */
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .nav-links a {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+            padding: 0.8rem 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .nav-links a:hover {
+            background: rgba(0, 0, 0, 0.6);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 2rem;
+        }
+
+        .footer a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: color 0.2s;
+        }
+
+        .footer a:hover {
+            color: #ffffff;
+        }
+
+        /* Tablet and up */
+        @media (min-width: 768px) {
+            .header h1 {
+                font-size: 6vw;
+            }
+
+            .beta-section {
+                padding: 2rem;
+            }
+
+            .beta-section h2 {
+                font-size: 1.4rem;
+            }
+
+            .beta-section p {
+                font-size: 1rem;
+            }
+
+            .nav-links a {
+                padding: 1rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+
+        /* Desktop */
+        @media (min-width: 1024px) {
+            .header h1 {
+                font-size: 4vw;
+            }
+
+            .container {
+                padding: 2rem 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>FlashBoss</h1>
+        </header>
+
+        <main class="main">
+            <section class="beta-section">
+                <h2>Free Beta Keys</h2>
+                <p>Want to try FlashBoss before launch? Email us for a free beta key. Full ownership of the game for life.</p>
+                <p>Tell us what you're learning, how far you've come, and why you'd like to try FlashBoss. Teachers and content creators welcome.</p>
+                <a href="mailto:flashbosscontact@gmail.com?subject=Beta Key Request" class="email-link">flashbosscontact@gmail.com</a>
+                <p class="note">Keys are given out selectively based on your request.</p>
+            </section>
+
+            <nav class="nav-links">
+                <a href="manual/">Manual</a>
+                <a href="https://store.steampowered.com/app/4134440/FlashBoss/">Steam</a>
+                <a href="about.html">About</a>
+            </nav>
+        </main>
+
+        <footer class="footer">
+            <a href="index.html">Back to Front</a>
+        </footer>
+    </div>
+</body>
+</html>
