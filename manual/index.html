@@ -30,79 +30,80 @@
             border-right: 2px solid var(--coral);
             display: flex;
             flex-direction: column;
-            gap: 1.5rem;
+            gap: 1rem;
         }
 
-        /* Parent thumbnails */
-        .nav-parents {
+        /* Horizontal navigation flow: parent -> focus -> children */
+        .nav-flow {
             display: flex;
-            gap: 0.5rem;
             align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
         }
 
-        .nav-parents .label {
-            font-size: 0.7rem;
-            color: var(--grey);
-            writing-mode: vertical-rl;
-            text-orientation: mixed;
-            transform: rotate(180deg);
+        .nav-arrow {
+            color: var(--coral);
+            font-size: 1.2rem;
         }
 
+        /* Parent thumbnail */
         .parent-thumb {
-            width: 60px;
-            height: 40px;
+            width: 50px;
+            height: 55px;
             background: var(--bg-dark);
             border: 2px solid var(--grey);
             border-radius: 4px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.6rem;
+            font-size: 0.5rem;
             color: var(--grey);
             text-decoration: none;
             transition: border-color 0.2s;
+            overflow: hidden;
         }
 
         .parent-thumb:hover {
             border-color: var(--coral);
         }
 
-        .parent-thumb.none {
-            opacity: 0.4;
-            pointer-events: none;
-        }
-
-        /* Main page display */
-        .nav-main {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .main-page-thumb {
+        .parent-thumb img {
             width: 100%;
-            max-width: 280px;
-            aspect-ratio: 4/3;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Main/focus page display */
+        .focus-thumb {
+            width: 120px;
+            height: 130px;
             background: var(--bg-dark);
             border: 3px solid var(--moon-yellow);
-            border-radius: 8px;
+            border-radius: 6px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: var(--moon-cream);
             font-family: var(--font-pixel);
-            font-size: 0.7rem;
+            font-size: 0.55rem;
             text-align: center;
-            padding: 1rem;
+            padding: 0.5rem;
+            overflow: hidden;
+            text-decoration: none;
+            transition: border-color 0.2s, transform 0.2s;
         }
 
-        .main-page-thumb img {
+        .focus-thumb:hover {
+            border-color: var(--coral);
+            transform: scale(1.02);
+        }
+
+        .focus-thumb img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 4px;
+            border-radius: 2px;
         }
 
         /* Child thumbnails */
@@ -111,6 +112,7 @@
             flex-wrap: wrap;
             gap: 0.75rem;
             justify-content: center;
+            margin-top: 0.5rem;
         }
 
         .child-thumb {
@@ -133,8 +135,8 @@
         }
 
         .child-thumb .thumb-box {
-            width: 50px;
-            height: 35px;
+            width: 45px;
+            height: 50px;
             background: var(--bg-dark);
             border: 2px solid var(--link-blue);
             border-radius: 4px;
@@ -143,6 +145,13 @@
             justify-content: center;
             font-size: 0.5rem;
             color: var(--grey);
+            overflow: hidden;
+        }
+
+        .child-thumb .thumb-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .child-thumb:hover .thumb-box {
@@ -195,13 +204,19 @@
                 border-bottom: 2px solid var(--coral);
             }
 
-            .nav-parents .label {
-                writing-mode: horizontal-tb;
-                transform: none;
+            .nav-flow {
+                flex-direction: row;
+                gap: 0.5rem;
             }
 
-            .main-page-thumb {
-                max-width: 200px;
+            .focus-thumb {
+                width: 100px;
+                height: 110px;
+            }
+
+            .parent-thumb {
+                width: 40px;
+                height: 45px;
             }
         }
 
@@ -227,56 +242,56 @@
             <div class="book-layout">
                 <!-- Left page: navigation tree -->
                 <div class="book-left">
-                    <div class="nav-parents">
-                        <span class="label">Parent</span>
-                        <a href="../home.html" class="parent-thumb">Home</a>
+                    <!-- Horizontal flow: parent -> focus -->
+                    <div class="nav-flow">
+                        <a href="../home.html" class="parent-thumb">
+                            <img src="screenshots/common/entrance.png" alt="Entrance">
+                        </a>
+                        <span class="nav-arrow">&rarr;</span>
+                        <a href="walkthrough/profile-select.html" class="focus-thumb">
+                            <img src="screenshots/common/profile-select.png" alt="Profile Select">
+                        </a>
                     </div>
 
-                    <div class="nav-main">
-                        <div class="main-page-thumb">
-                            Splash Page<br>(You are here)
-                        </div>
-                    </div>
-
+                    <!-- Children: menu options from profile-select -->
                     <div class="nav-children">
-                        <a href="getting-started.html" class="child-thumb">
+                        <a href="walkthrough/create-username.html" class="child-thumb">
                             <span class="menu-num">1</span>
-                            <div class="thumb-box">img</div>
-                            <span class="thumb-label">Getting Started</span>
+                            <div class="thumb-box">
+                                <img src="screenshots/common/create-username.png" alt="Create">
+                            </div>
+                            <span class="thumb-label">Create Hero</span>
                         </a>
-                        <a href="masters.html" class="child-thumb">
-                            <span class="menu-num">2</span>
-                            <div class="thumb-box">img</div>
-                            <span class="thumb-label">Masters</span>
+                        <a href="walkthrough/sanctum.html" class="child-thumb">
+                            <span class="menu-num">2-5</span>
+                            <div class="thumb-box">Sanctum</div>
+                            <span class="thumb-label">Select Hero</span>
                         </a>
-                        <a href="daily-practice.html" class="child-thumb">
-                            <span class="menu-num">3</span>
-                            <div class="thumb-box">img</div>
-                            <span class="thumb-label">Daily</span>
-                        </a>
-                        <a href="lessons.html" class="child-thumb">
-                            <span class="menu-num">4</span>
-                            <div class="thumb-box">img</div>
-                            <span class="thumb-label">Lessons</span>
-                        </a>
-                        <a href="boss-fights.html" class="child-thumb">
-                            <span class="menu-num">5</span>
-                            <div class="thumb-box">img</div>
-                            <span class="thumb-label">Bosses</span>
-                        </a>
-                        <a href="grimoire.html" class="child-thumb">
+                        <a href="walkthrough/vault.html" class="child-thumb">
                             <span class="menu-num">6</span>
-                            <div class="thumb-box">img</div>
-                            <span class="thumb-label">Grimoire</span>
+                            <div class="thumb-box">Vault</div>
+                            <span class="thumb-label">Backup Vault</span>
+                        </a>
+                        <a href="walkthrough/leaderboard.html" class="child-thumb">
+                            <span class="menu-num">7</span>
+                            <div class="thumb-box">Links</div>
+                            <span class="thumb-label">Leaderboard</span>
+                        </a>
+                        <a href="walkthrough/about.html" class="child-thumb">
+                            <span class="menu-num">8</span>
+                            <div class="thumb-box">About</div>
+                            <span class="thumb-label">About & Help</span>
                         </a>
                     </div>
                 </div>
 
                 <!-- Right page: description -->
                 <div class="book-right">
-                    <h2>Welcome to the Tutorial</h2>
-                    <p>Welcome to the FlashBoss tutorial. Select a child icon to explore that topic. Each section walks you through the game with screenshots and explanations.</p>
-                    <p class="hint">Press the numbered icons on the left to navigate, or scroll down for a quick-reference chapter list.</p>
+                    <h2>Profile Selection</h2>
+                    <p>FlashBoss supports up to 5 user profiles. Each slot shows the user's avatar, name, and chosen master.</p>
+                    <p>Empty slots display "Create New Hero" - selecting one begins character creation. Selecting an existing profile logs you in.</p>
+                    <p>System options at the bottom: Backup Vault (6), Leaderboard & Links (7), About & Help (8), and Exit (9).</p>
+                    <p class="hint">Click a child thumbnail to explore that path, or click the focus image to view the full page.</p>
                 </div>
             </div>
         </section>
