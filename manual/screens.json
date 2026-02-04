@@ -14,15 +14,14 @@
     "image": "screenshots/common/profile-select.png",
     "page": "walkthrough/profile-select.html",
     "parents": ["entrance"],
-    "children": ["create-username", "sanctum", "vault", "leaderboard", "about"],
+    "children": ["create-username", "profile-data", "vault", "about-1"],
     "childLabels": {
       "create-username": "1",
-      "sanctum": "2-5",
+      "profile-data": "2-5",
       "vault": "6",
-      "leaderboard": "7",
-      "about": "8"
+      "about-1": "8"
     },
-    "description": "FlashBoss supports up to 5 user profiles. Each slot shows the user's avatar, name, and chosen master.\n\nEmpty slots display \"Create New Hero\" - selecting one begins character creation. Selecting an existing profile logs you in.\n\nSystem options at the bottom: Backup Vault (6), Leaderboard & Links (7), About & Help (8), and Exit (9)."
+    "description": "FlashBoss supports up to 5 user profiles. Each slot shows the user's avatar, name, and chosen master.\n\nEmpty slots display \"Create New Hero\" - selecting one begins character creation. Selecting an existing profile opens Profile Data.\n\nSystem options: Backup Vault (6), About & Help (8), Exit (9)."
   },
   "create-username": {
     "id": "create-username",
@@ -31,7 +30,7 @@
     "page": "walkthrough/create-username.html",
     "parents": ["profile-select"],
     "children": ["create-avatar"],
-    "description": "Enter a username for your new hero. This name will appear on your profile and leaderboards."
+    "description": "Enter a username for your new hero. This name will appear on your profile and leaderboards.\n\nType your desired name and press Enter to continue."
   },
   "create-avatar": {
     "id": "create-avatar",
@@ -40,7 +39,7 @@
     "page": "walkthrough/create-avatar.html",
     "parents": ["create-username"],
     "children": ["create-master"],
-    "description": "Choose an avatar to represent your hero. Pick from a variety of pixel art characters."
+    "description": "Choose an avatar to represent your hero. Pick from a variety of pixel art characters.\n\nUse number keys to select your avatar."
   },
   "create-master": {
     "id": "create-master",
@@ -49,7 +48,7 @@
     "page": "walkthrough/create-master.html",
     "parents": ["create-avatar"],
     "children": ["create-pack"],
-    "description": "Select your guide: Luna, Claude, Odiin, Shen, Kitsune, or Aquila. Each master has their own personality and teaching style."
+    "description": "Select your guide: Luna, Claude, Odiin, Shen, Kitsune, or Aquila. Each master has their own personality and teaching style.\n\nYour master provides encouragement and guidance throughout your journey."
   },
   "create-pack": {
     "id": "create-pack",
@@ -58,42 +57,185 @@
     "page": "walkthrough/create-pack.html",
     "parents": ["create-master"],
     "children": ["sanctum"],
-    "description": "Select your language pack. German Core and Esperanto are included. More packs available as DLC."
+    "description": "Select your language pack. German Core and Esperanto are included. More packs available as DLC.\n\nEach pack contains vocabulary organized into tiers and clusters."
+  },
+  "profile-data": {
+    "id": "profile-data",
+    "title": "Profile Data",
+    "image": "screenshots/common/profile-data.png",
+    "page": "walkthrough/profile-data.html",
+    "parents": ["profile-select"],
+    "children": ["sanctum", "tier-skip", "achievements", "export-progress", "meet-masters"],
+    "childLabels": {
+      "sanctum": "Enter",
+      "tier-skip": "5",
+      "achievements": "6",
+      "export-progress": "7",
+      "meet-masters": "8"
+    },
+    "description": "View your hero's stats: language pack, tier progress, streak, velocity, and trajectory.\n\nFrom here you can enter the Sanctum, take the Tier Skip Challenge, view achievements, export your progress, or change your master."
   },
   "sanctum": {
     "id": "sanctum",
     "title": "The Sanctum",
     "image": null,
     "page": "walkthrough/sanctum.html",
-    "parents": ["profile-select", "create-pack"],
+    "parents": ["profile-data", "create-pack"],
     "children": [],
-    "description": "Your home base. From here you can access daily practice, lessons, boss fights, the grimoire, and more."
+    "description": "Your home base. From here you can access daily practice, lessons, boss fights, the grimoire, and more.\n\nThe Sanctum is where your language learning journey unfolds."
+  },
+  "tier-skip": {
+    "id": "tier-skip",
+    "title": "Tier Skip Challenge",
+    "image": null,
+    "page": "walkthrough/tier-skip.html",
+    "parents": ["profile-data"],
+    "children": [],
+    "description": "Test out of content you already know. Survive the BossRun to skip ahead.\n\nIf you already have vocabulary knowledge, this lets you jump to an appropriate tier."
+  },
+  "achievements": {
+    "id": "achievements",
+    "title": "Achievements & Statistics",
+    "image": null,
+    "page": "walkthrough/achievements.html",
+    "parents": ["profile-data"],
+    "children": [],
+    "description": "View your progress, unlocked achievements, and detailed statistics about your learning journey."
+  },
+  "export-progress": {
+    "id": "export-progress",
+    "title": "Export Progress",
+    "image": null,
+    "page": "walkthrough/export-progress.html",
+    "parents": ["profile-data"],
+    "children": [],
+    "description": "Save your profile to the Backup Vault. Creates a backup that can be restored later."
+  },
+  "meet-masters": {
+    "id": "meet-masters",
+    "title": "Meet the Masters",
+    "image": null,
+    "page": "walkthrough/meet-masters.html",
+    "parents": ["profile-data"],
+    "children": [],
+    "description": "Change your guide. Each master has their own personality and teaching style."
   },
   "vault": {
     "id": "vault",
     "title": "Backup Vault",
-    "image": null,
+    "image": "screenshots/common/vault-empty.png",
     "page": "walkthrough/vault.html",
     "parents": ["profile-select"],
-    "children": [],
-    "description": "Manage your save backups. Create, restore, and delete backup files."
+    "children": ["vault-heroes"],
+    "description": "This vault contains records of past students. Select a profile to pick up where you left off.\n\nIf you have 5 active users, backup one first to create a vacant slot for restoration."
   },
-  "leaderboard": {
-    "id": "leaderboard",
-    "title": "Leaderboard & Links",
-    "image": null,
-    "page": "walkthrough/leaderboard.html",
-    "parents": ["profile-select"],
-    "children": [],
-    "description": "View leaderboards and access external links and resources."
+  "vault-heroes": {
+    "id": "vault-heroes",
+    "title": "Preserved Heroes",
+    "image": "screenshots/common/vault-heroes.png",
+    "page": "walkthrough/vault-heroes.html",
+    "parents": ["vault"],
+    "children": ["profile-data-vault"],
+    "description": "Heroes that have been backed up appear here for restoration.\n\nSelect a preserved hero to view their data and restore them."
   },
-  "about": {
-    "id": "about",
-    "title": "About & Help",
-    "image": null,
+  "profile-data-vault": {
+    "id": "profile-data-vault",
+    "title": "Profile Data (Vault)",
+    "image": "screenshots/common/profile-data-vault.png",
+    "page": "walkthrough/profile-data-vault.html",
+    "parents": ["vault-heroes"],
+    "children": [],
+    "childLabels": {
+      "restore": "7"
+    },
+    "description": "View data for a preserved hero. Profile is inactive - data frozen at backup.\n\nOptions: Delete Permanently (5), Achievements (6), Restore This Profile (7), Meet the Masters (8)."
+  },
+  "about-1": {
+    "id": "about-1",
+    "title": "About FlashBoss",
+    "image": "screenshots/common/about-1.png",
     "page": "walkthrough/about.html",
     "parents": ["profile-select"],
+    "children": ["about-2", "hints-tips"],
+    "childLabels": {
+      "about-2": "6",
+      "hints-tips": "1"
+    },
+    "description": "FlashBoss is collaborative language learning software built through conversation between a teacher who can't code and an AI who can.\n\nCore Principles: Fibonacci-based spaced repetition, engagement through gamification, graded language progression, complex mechanics → simple interface."
+  },
+  "about-2": {
+    "id": "about-2",
+    "title": "Coming Soon",
+    "image": "screenshots/common/about-2.png",
+    "page": "walkthrough/about-2.html",
+    "parents": ["about-1"],
+    "children": ["about-3"],
+    "childLabels": {
+      "about-3": "6"
+    },
+    "description": "Language packs in development: French Core, French Pareto 1 & 2, Italian Core, Spanish Core.\n\nEnglish Expansion: Vocabulary Builder, German Roots, Latin Roots, Medical Terminology, Legal Terminology."
+  },
+  "about-3": {
+    "id": "about-3",
+    "title": "Links & Contact",
+    "image": "screenshots/common/about-3.png",
+    "page": "walkthrough/about-3.html",
+    "parents": ["about-2"],
+    "children": ["about-4"],
+    "childLabels": {
+      "about-4": "6"
+    },
+    "description": "Steam App ID: 4134440\nCommunity Hub: steamcommunity.com/app/4134440\n\nContact: flashbosscontact@gmail.com\nWebsite: odiin2024.github.io/flashboss-site"
+  },
+  "about-4": {
+    "id": "about-4",
+    "title": "Third-Party Software",
+    "image": "screenshots/common/about-4.png",
+    "page": "walkthrough/about-4.html",
+    "parents": ["about-3"],
     "children": [],
-    "description": "Credits, version info, and help resources. Links to tutorials and documentation."
+    "description": "Text-to-Speech powered by Piper TTS (MIT License) and eSpeak-ng (GPL v3).\n\nVoice Models: German (Thorsten Mueller, CC0), Polish (Darkman, CC0)."
+  },
+  "hints-tips": {
+    "id": "hints-tips",
+    "title": "Hints & Tips",
+    "image": "screenshots/common/hints-tips.png",
+    "page": "walkthrough/hints-tips.html",
+    "parents": ["about-1"],
+    "children": ["lesson-pack-select"],
+    "childLabels": {
+      "lesson-pack-select": "1"
+    },
+    "description": "FlashBoss is built around a simple principal: 5 leads you forward, and 9 takes you back.\n\nFocus on streak completion. Grimoire completion earns you a 1 day streak buffer.\n\nUseful shortcuts: 555 (Review Cards), 568 (Change Master), 54 (Boss Fights), 5661 (Achievements), 567 (Backup Profile)."
+  },
+  "lesson-pack-select": {
+    "id": "lesson-pack-select",
+    "title": "Select Lesson Pack",
+    "image": "screenshots/common/lesson-pack-select.png",
+    "page": "walkthrough/lesson-pack-select.html",
+    "parents": ["hints-tips"],
+    "children": ["german-lessons"],
+    "childLabels": {
+      "german-lessons": "2"
+    },
+    "description": "Access all lessons for any installed language pack.\n\n1. Esperanto - 69 Lessons, 3 sets, 15 tiers\n2. German - 67 Lessons, 3 sets, 15 tiers"
+  },
+  "german-lessons": {
+    "id": "german-lessons",
+    "title": "German Core Lessons",
+    "image": "screenshots/common/german-lessons.png",
+    "page": "walkthrough/german-lessons.html",
+    "parents": ["lesson-pack-select"],
+    "children": ["lesson-content"],
+    "description": "Browse all German Core lessons organized by tier.\n\nTier 1: pronunciation, modal verbs, question words, gender & articles, numbers, present tense, negation.\n\nPress 1-8 to view a lesson, arrow keys to navigate pages."
+  },
+  "lesson-content": {
+    "id": "lesson-content",
+    "title": "Lesson Content",
+    "image": "screenshots/common/lesson-content.png",
+    "page": "walkthrough/lesson-content.html",
+    "parents": ["german-lessons"],
+    "children": [],
+    "description": "Example: Lesson 2 - Modal Verbs.\n\nModal verbs express ability, permission, obligation, or desire: können (can), dürfen (may), sollen (should), müssen (must), wollen (want to), möchten (would like).\n\nStructure: Modal + infinitive at the END."
   }
 }
