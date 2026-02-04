@@ -209,6 +209,21 @@ footer p:last-child {
     color: var(--coral);
 }
 
+/* Intro section */
+.intro-section {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--moon-yellow);
+}
+
+.intro-section p {
+    margin: 0;
+    color: var(--moon-cream);
+    line-height: 1.7;
+}
+
 /* Section headings and dividers */
 .section-heading {
     font-family: var(--font-pixel);
