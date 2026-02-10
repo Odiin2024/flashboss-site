@@ -7,30 +7,220 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="../icon.png">
     <style>
-        /* Book layout for tutorial splash */
-        .book-section {
-            min-height: calc(100vh - 200px);
+        /* Manual header bar */
+        .manual-header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .manual-header-inner {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: #2a1f3d;
+            padding: 0.4rem 0.5rem 0.4rem 0.75rem;
+            border-radius: 4px;
+        }
+
+        .manual-title {
+            font-family: var(--font-pixel);
+            font-size: 1.1rem;
+            color: var(--grey);
+            letter-spacing: 0.05em;
+            line-height: 1;
+        }
+
+        /* Toggle button */
+        .view-toggle {
+            background: transparent;
+            border: 1px solid var(--grey);
+            border-radius: 3px;
+            color: var(--moon-cream);
+            width: 1.3rem;
+            height: 1.3rem;
+            cursor: pointer;
+            transition: border-color 0.2s, background 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .view-toggle:hover {
+            border-color: var(--moon-yellow);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .toggle-icon {
+            font-size: 0.7rem;
+        }
+
+        /* Book cover frame */
+        .book-cover {
+            flex: 1;
+            display: flex;
+            background: #2a1f3d;
+            border-radius: 8px;
+            padding: 0.75rem;
+            box-shadow:
+                0 4px 20px rgba(0, 0, 0, 0.5),
+                inset 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .book-cover .book-pages {
+            flex: 1;
+            box-shadow: none;
+            position: relative;
+        }
+
+        /* Page header styling */
+        .page-header-area {
+            padding: 1rem 1.5rem 0.75rem;
+            border-bottom: 1px solid rgba(255, 255, 215, 0.2);
+            margin-bottom: 1rem;
+        }
+
+        .page-instruction {
+            font-size: 0.8rem;
+            color: var(--grey);
+            text-align: center;
+            margin: 0;
+            font-style: italic;
+        }
+
+        .page-title {
+            font-size: 0.8rem;
+            color: var(--grey);
+            text-align: center;
+            margin: 0;
+            font-style: italic;
+            border: none;
+            padding: 0;
+        }
+
+        /* Tile cover frame */
+        .tile-cover {
+            flex: 1;
+            display: flex;
+            background: #2a1f3d;
+            border-radius: 8px;
+            padding: 0.75rem;
+            box-shadow:
+                0 4px 20px rgba(0, 0, 0, 0.5),
+                inset 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Tile view - book layout */
+        .tile-pages {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background: #3d3552;
+            border-radius: 4px;
+        }
+
+        .tile-page {
             display: flex;
             flex-direction: column;
         }
 
-        .book-layout {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
+        .tile-page-left {
+            border-right: 3px solid #2a1f3d;
+        }
+
+        .tile-grid {
             flex: 1;
-            background: var(--bg-card);
-            border-radius: 8px;
-            overflow: hidden;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 0.75rem;
+            padding: 0.75rem;
+        }
+
+        .tile {
+            background: var(--bg-dark);
+            border: 2px solid var(--grey);
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem;
+            cursor: pointer;
+            transition: border-color 0.2s, transform 0.2s;
+        }
+
+        .tile:hover {
+            border-color: var(--moon-yellow);
+            transform: scale(1.02);
+        }
+
+        .tile-title {
+            font-family: var(--font-pixel);
+            font-size: 0.55rem;
+            color: var(--moon-cream);
+            text-align: center;
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+
+        .tile-desc {
+            font-size: 0.75rem;
+            color: var(--grey);
+            text-align: center;
         }
 
         /* Left page - navigation tree */
         .book-left {
-            padding: 1.5rem;
-            border-right: 2px solid var(--coral);
+            border-right: 3px solid #2a1f3d;
             display: flex;
             flex-direction: column;
+            background: #3d3552;
+        }
+
+        /* Page content area */
+        .page-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             gap: 1rem;
+            padding: 1rem 1.5rem;
+        }
+
+        /* Page footer */
+        .page-footer {
+            padding: 0.75rem 1.5rem;
+        }
+
+        .page-footer .hint {
+            font-size: 0.8rem;
+            color: var(--grey);
+            font-style: italic;
+            text-align: center;
+            margin: 0;
+        }
+
+        .page-footer .footer-link {
+            font-size: 0.8rem;
+            color: var(--grey);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .page-footer .footer-link:hover {
+            color: var(--moon-cream);
+        }
+
+        .page-footer .footer-divider {
+            color: var(--grey);
+            margin: 0 0.5rem;
+        }
+
+        .book-right .page-footer {
+            text-align: center;
         }
 
         /* Horizontal navigation flow: parent -> focus */
@@ -49,15 +239,15 @@
 
         /* Parent thumbnails */
         .parent-thumb {
-            width: 50px;
-            height: 55px;
+            width: 80px;
+            height: 88px;
             background: var(--bg-dark);
             border: 2px solid var(--grey);
             border-radius: 4px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.45rem;
+            font-size: 0.5rem;
             color: var(--grey);
             text-decoration: none;
             cursor: pointer;
@@ -78,8 +268,8 @@
 
         /* Main/focus page display */
         .focus-thumb {
-            width: 120px;
-            height: 130px;
+            width: 180px;
+            height: 195px;
             background: var(--bg-dark);
             border: 3px solid var(--moon-yellow);
             border-radius: 6px;
@@ -88,7 +278,7 @@
             justify-content: center;
             color: var(--moon-cream);
             font-family: var(--font-pixel);
-            font-size: 0.55rem;
+            font-size: 0.6rem;
             text-align: center;
             padding: 0.5rem;
             overflow: hidden;
@@ -139,15 +329,15 @@
         }
 
         .child-thumb .thumb-box {
-            width: 45px;
-            height: 50px;
+            width: 70px;
+            height: 77px;
             background: var(--bg-dark);
             border: 2px solid var(--link-blue);
             border-radius: 4px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.4rem;
+            font-size: 0.45rem;
             color: var(--grey);
             overflow: hidden;
         }
@@ -163,27 +353,22 @@
         }
 
         .child-thumb .thumb-label {
-            font-size: 0.6rem;
+            font-size: 0.65rem;
             color: var(--grey);
-            max-width: 55px;
+            max-width: 80px;
             text-align: center;
             line-height: 1.2;
         }
 
         /* Right page - description */
         .book-right {
-            padding: 1.5rem;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            background: #3d3552;
         }
 
-        .book-right h2 {
-            font-family: var(--font-pixel);
-            font-size: 0.9rem;
-            color: var(--moon-yellow);
-            border: none;
-            margin-bottom: 1rem;
+        .book-right .page-content {
+            align-items: flex-start;
         }
 
         .book-right p {
@@ -192,21 +377,57 @@
             margin-bottom: 1rem;
         }
 
-        .book-right .hint {
-            font-size: 0.85rem;
-            color: var(--grey);
-            font-style: italic;
+        /* Zoom view */
+        .zoom-view {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #3d3552;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            padding: 1rem;
+        }
+
+        .zoom-view img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 4px;
+        }
+
+        /* Hidden state */
+        .book-cover.hidden,
+        .tile-cover.hidden,
+        .zoom-view.hidden {
+            display: none;
         }
 
         /* Mobile: stack vertically */
         @media (max-width: 768px) {
-            .book-layout {
+            .book-wrapper {
+                position: relative;
+                padding: 4vh 4vw;
+                height: auto;
+                min-height: 100vh;
+            }
+
+            .book-cover,
+            .tile-cover {
+                flex: none;
+            }
+
+            .book-pages {
                 grid-template-columns: 1fr;
             }
 
             .book-left {
                 border-right: none;
-                border-bottom: 2px solid var(--coral);
+                border-bottom: 3px solid #2a1f3d;
             }
 
             .nav-flow {
@@ -215,149 +436,221 @@
             }
 
             .focus-thumb {
-                width: 100px;
-                height: 110px;
+                width: 140px;
+                height: 154px;
             }
 
             .parent-thumb {
-                width: 40px;
-                height: 45px;
+                width: 60px;
+                height: 66px;
             }
-        }
 
-        /* Chapter grid section heading */
-        .chapters-heading {
-            font-family: var(--font-pixel);
-            font-size: 0.9rem;
-            text-align: center;
-            margin: 3rem 0 1.5rem;
-            color: var(--moon-yellow);
+            .child-thumb .thumb-box {
+                width: 55px;
+                height: 60px;
+            }
+
+            .tile-pages {
+                grid-template-columns: 1fr;
+            }
+
+            .tile-page-left {
+                border-right: none;
+                border-bottom: 3px solid #2a1f3d;
+            }
+
+            .tile-grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+            }
+
+            .tile-title {
+                font-size: 0.5rem;
+            }
+
+            .manual-header {
+                margin-bottom: 0.5rem;
+            }
+
+            .manual-title {
+                font-size: 0.8rem;
+            }
+
+            .manual-header-inner {
+                padding: 0.3rem 0.4rem 0.3rem 0.6rem;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>FlashBoss Manual</h1>
-            <p class="tagline">scientia est potentia</p>
-        </header>
-
-        <!-- Book layout tutorial splash -->
-        <section class="book-section">
-            <div class="book-layout">
-                <!-- Left page: navigation tree (rendered by JS) -->
-                <div class="book-left" id="cladogramLeft">
-                    <div class="nav-flow" id="navFlow"></div>
-                    <div class="nav-children" id="navChildren"></div>
-                </div>
-
-                <!-- Right page: description (rendered by JS) -->
-                <div class="book-right" id="cladogramRight">
-                    <h2 id="focusTitle">Loading...</h2>
-                    <div id="focusDescription"></div>
-                    <p class="hint">Click a parent or child to shift focus. Click the focus image to open that page.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Chapter grid - alternative entry point -->
-        <h3 class="chapters-heading">Quick Reference</h3>
-
-        <div class="chapter-grid">
-            <div class="chapter-card">
-                <a href="getting-started.html">
-                    <h3>Getting Started</h3>
-                    <p>Installation, first launch, and creating your hero</p>
-                </a>
-            </div>
-
-            <div class="chapter-card">
-                <a href="masters.html">
-                    <h3>Meet the Masters</h3>
-                    <p>Choose your guide: Luna, Claude, Odiin, Shen, Kitsune, or Aquila</p>
-                </a>
-            </div>
-
-            <div class="chapter-card">
-                <a href="daily-practice.html">
-                    <h3>Daily Practice</h3>
-                    <p>Streaks, card reviews, and maintaining your progress</p>
-                </a>
-            </div>
-
-            <div class="chapter-card">
-                <a href="lessons.html">
-                    <h3>Lessons</h3>
-                    <p>Learning new vocabulary through guided lessons</p>
-                </a>
-            </div>
-
-            <div class="chapter-card">
-                <a href="boss-fights.html">
-                    <h3>Boss Fights</h3>
-                    <p>Challenge cluster bosses to unlock new content</p>
-                </a>
-            </div>
-
-            <div class="chapter-card">
-                <a href="grimoire.html">
-                    <h3>The Grimoire</h3>
-                    <p>Powerdrive sessions and earning Drive</p>
-                </a>
-            </div>
-
-            <div class="chapter-card">
-                <a href="tiers.html">
-                    <h3>Tiers &amp; Clusters</h3>
-                    <p>Advancing through vocabulary tiers and defeating cluster bosses</p>
-                </a>
-            </div>
-
-            <div class="chapter-card">
-                <a href="language-packs.html">
-                    <h3>Language Packs</h3>
-                    <p>German Core, Esperanto, and DLC content</p>
-                </a>
-            </div>
-
-            <div class="chapter-card">
-                <a href="tier-skip.html">
-                    <h3>Tier Skip Challenge</h3>
-                    <p>Test out of content you already know</p>
-                </a>
-            </div>
-
-            <div class="chapter-card">
-                <a href="review-modes.html">
-                    <h3>Review Modes</h3>
-                    <p>Different ways to review and practice your cards</p>
-                </a>
-            </div>
-
-            <div class="chapter-card">
-                <a href="terminal-commands.html">
-                    <h3>Terminal Commands</h3>
-                    <p>Command reference for advanced users</p>
-                </a>
-            </div>
-
-            <div class="chapter-card">
-                <a href="faq.html">
-                    <h3>FAQ</h3>
-                    <p>Frequently asked questions</p>
-                </a>
+    <!-- Book-on-table layout -->
+    <div class="book-wrapper">
+        <!-- Header bar -->
+        <div class="manual-header">
+            <div class="manual-header-inner">
+                <span class="manual-title">Toggle View</span>
+                <button class="view-toggle" id="viewToggle" title="Switch view">
+                    <span class="toggle-icon" id="toggleIcon">&#9638;</span>
+                </button>
             </div>
         </div>
 
-        <footer>
-            <p><a href="../home.html">Back to FlashBoss Home</a></p>
-            <p>&copy; 2025 FlashBoss</p>
-        </footer>
+        <!-- BOOK VIEW -->
+        <div class="book-cover" id="bookView">
+            <div class="book-pages">
+                <!-- Left page: navigation tree -->
+                <div class="book-left" id="cladogramLeft">
+                    <div class="page-header-area">
+                        <p class="page-instruction">Select a screen to learn more</p>
+                    </div>
+                    <div class="page-content">
+                        <div class="nav-flow" id="navFlow"></div>
+                        <div class="nav-children" id="navChildren"></div>
+                    </div>
+                    <div class="page-footer">
+                        <p class="hint" id="leftHint">Click a thumbnail to shift focus. Click the center image to zoom in.</p>
+                    </div>
+                </div>
+
+                <!-- Right page: description -->
+                <div class="book-right" id="cladogramRight">
+                    <div class="page-header-area">
+                        <h2 class="page-title" id="focusTitle">Loading...</h2>
+                    </div>
+                    <div class="page-content">
+                        <div id="focusDescription"></div>
+                    </div>
+                    <div class="page-footer">
+                        <a href="index.html" class="footer-link">Manual Home</a>
+                        <span class="footer-divider">·</span>
+                        <a href="../home.html" class="footer-link">FlashBoss Hub</a>
+                    </div>
+                </div>
+
+                <!-- Zoom view (full page image) -->
+                <div class="zoom-view hidden" id="zoomView">
+                    <img id="zoomImage" src="" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- TILE VIEW -->
+        <div class="tile-cover hidden" id="tileView">
+            <div class="tile-pages">
+                <!-- Left page: How to Play -->
+                <div class="tile-page tile-page-left">
+                    <div class="page-header-area">
+                        <p class="page-instruction">How to Play the Game</p>
+                    </div>
+                    <div class="tile-grid">
+                        <div class="tile" onclick="selectTopic('profile-select')">
+                            <span class="tile-title">Getting Started</span>
+                            <span class="tile-desc">Installation & setup</span>
+                        </div>
+                        <div class="tile" onclick="selectTopic('tier-skip')">
+                            <span class="tile-title">Tier Skip</span>
+                            <span class="tile-desc">Test out of content</span>
+                        </div>
+                        <div class="tile" onclick="selectTopic('sanctum')">
+                            <span class="tile-title">Daily Practice</span>
+                            <span class="tile-desc">Streaks & reviews</span>
+                        </div>
+                        <div class="tile" onclick="selectTopic('sanctum')">
+                            <span class="tile-title">Boss Fights</span>
+                            <span class="tile-desc">Challenge clusters</span>
+                        </div>
+                        <div class="tile" onclick="selectTopic('sanctum')">
+                            <span class="tile-title">Grimoire</span>
+                            <span class="tile-desc">Powerdrive & Drive</span>
+                        </div>
+                        <div class="tile" onclick="selectTopic('sanctum')">
+                            <span class="tile-title">Review Modes</span>
+                            <span class="tile-desc">Practice options</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right page: About FlashBoss -->
+                <div class="tile-page tile-page-right">
+                    <div class="page-header-area">
+                        <p class="page-instruction">About FlashBoss ~ Learn More</p>
+                    </div>
+                    <div class="tile-grid">
+                        <div class="tile" onclick="selectTopic('create-master')">
+                            <span class="tile-title">Masters</span>
+                            <span class="tile-desc">Choose your guide</span>
+                        </div>
+                        <div class="tile" onclick="selectTopic('lesson-pack-select')">
+                            <span class="tile-title">Lessons</span>
+                            <span class="tile-desc">Learn new words</span>
+                        </div>
+                        <div class="tile" onclick="selectTopic('profile-data')">
+                            <span class="tile-title">Tiers</span>
+                            <span class="tile-desc">Progression system</span>
+                        </div>
+                        <div class="tile" onclick="selectTopic('create-pack')">
+                            <span class="tile-title">Language Packs</span>
+                            <span class="tile-desc">German, Esperanto</span>
+                        </div>
+                        <div class="tile" onclick="selectTopic('hints-tips')">
+                            <span class="tile-title">Terminal</span>
+                            <span class="tile-desc">Command reference</span>
+                        </div>
+                        <div class="tile" onclick="selectTopic('about-1')">
+                            <span class="tile-title">FAQ</span>
+                            <span class="tile-desc">Common questions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
         let screens = {};
         let currentFocus = 'profile-select';
+        let isBookView = true;
+
+        // Toggle between book and tile view
+        function setView(showBook) {
+            isBookView = showBook;
+            document.getElementById('bookView').classList.toggle('hidden', !isBookView);
+            document.getElementById('tileView').classList.toggle('hidden', isBookView);
+            document.getElementById('toggleIcon').innerHTML = isBookView ? '&#9638;' : '&#9776;';
+        }
+
+        document.getElementById('viewToggle').addEventListener('click', () => {
+            setView(!isBookView);
+        });
+
+        // Select topic from tile view - switches to book and sets focus
+        function selectTopic(screenId) {
+            if (screens[screenId]) {
+                currentFocus = screenId;
+                renderCladogram();
+                setView(true);
+            }
+        }
+
+        // Zoom in on the focus image
+        let isZoomed = false;
+        function zoomIn() {
+            const focus = screens[currentFocus];
+            if (!focus || !focus.image) return;
+
+            document.getElementById('zoomImage').src = focus.image;
+            document.getElementById('zoomView').classList.remove('hidden');
+            document.getElementById('leftHint').textContent = 'Click the image to zoom out.';
+            isZoomed = true;
+        }
+
+        function zoomOut() {
+            document.getElementById('zoomView').classList.add('hidden');
+            document.getElementById('leftHint').textContent = 'Click a thumbnail to shift focus. Click the center image to zoom in.';
+            isZoomed = false;
+        }
+
+        document.getElementById('zoomView').addEventListener('click', zoomOut);
 
         // Load screen data
         fetch('screens.json')
@@ -403,11 +696,11 @@
             });
 
             // Add focus
-            const focusEl = document.createElement('a');
+            const focusEl = document.createElement('div');
             focusEl.className = 'focus-thumb';
-            focusEl.href = focus.page;
             if (focus.image) {
                 focusEl.innerHTML = `<img src="${focus.image}" alt="${focus.title}">`;
+                focusEl.onclick = zoomIn;
             } else {
                 focusEl.textContent = focus.title;
             }

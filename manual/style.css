@@ -33,6 +33,31 @@ body {
     padding: 2rem;
 }
 
+/* Book-on-table layout for manual index */
+.book-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 8vh 8vw;
+    box-sizing: border-box;
+}
+
+.book-pages {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #3d3552;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, 0.4),
+        inset 0 0 60px rgba(0, 0, 0, 0.15);
+}
+
 /* Header */
 header {
     text-align: center;
