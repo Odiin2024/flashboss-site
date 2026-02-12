@@ -260,6 +260,34 @@
             font-size: 1.2rem;
         }
 
+        /* Back button */
+        .back-btn {
+            width: 50px;
+            height: 50px;
+            background: rgba(126, 200, 255, 0.15);
+            border: 2px solid var(--grey);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            color: var(--grey);
+            cursor: pointer;
+            transition: border-color 0.2s, color 0.2s, background 0.2s;
+        }
+
+        .back-btn:hover {
+            border-color: var(--link-blue);
+            color: var(--link-blue);
+            background: rgba(126, 200, 255, 0.25);
+        }
+
+        .back-btn.disabled {
+            opacity: 0.3;
+            cursor: default;
+            pointer-events: none;
+        }
+
         /* Hover-linked words in description */
         .hover-word {
             color: #7ec8ff;
@@ -652,6 +680,7 @@
     <script>
         let screens = {};
         let currentFocus = 'entrance';
+        let focusHistory = [];
         let isBookView = true;
 
         // Toggle between book and tile view
@@ -719,9 +748,17 @@
             const focus = screens[currentFocus];
             if (!focus) return;
 
-            // Render navigation flow (parents -> focus)
+            // Render navigation flow (back -> parents -> focus)
             const navFlow = document.getElementById('navFlow');
             navFlow.innerHTML = '';
+
+            // Add back button
+            const backBtn = document.createElement('div');
+            backBtn.className = 'back-btn' + (focusHistory.length === 0 ? ' disabled' : '');
+            backBtn.textContent = '↩';
+            backBtn.title = 'Go back';
+            backBtn.onclick = goBack;
+            navFlow.appendChild(backBtn);
 
             // Add parents
             focus.parents.forEach((parentId, index) => {
@@ -830,7 +867,16 @@
 
         function setFocus(screenId) {
             if (screens[screenId]) {
+                // Push current to history before changing
+                focusHistory.push(currentFocus);
                 currentFocus = screenId;
+                renderCladogram();
+            }
+        }
+
+        function goBack() {
+            if (focusHistory.length > 0) {
+                currentFocus = focusHistory.pop();
                 renderCladogram();
             }
         }
