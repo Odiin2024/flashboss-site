@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press Kit - FlashBoss</title>
+    <meta name="description" content="FlashBoss press kit. Screenshots, logos, copy templates, and promotional assets for affiliates and media.">
+
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0a0a19;
+            color: #f0e6d3;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header h1 {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ff66ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .header .tagline {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #7ec8ff;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(126, 200, 255, 0.3);
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Quick facts */
+        .facts-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .fact {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            padding: 1rem;
+        }
+
+        .fact .label {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.5);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+        }
+
+        .fact .value {
+            font-weight: 600;
+            color: #ff66ff;
+        }
+
+        /* Copy templates */
+        .copy-box {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .copy-box .copy-label {
+            font-size: 0.8rem;
+            color: #7ec8ff;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .copy-box .copy-text {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.95rem;
+        }
+
+        /* Screenshot grid */
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .screenshot-item {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .screenshot-item .caption {
+            padding: 0.75rem;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+        }
+
+        /* Download button */
+        .download-btn {
+            display: inline-block;
+            background: rgba(126, 200, 255, 0.2);
+            border: 1px solid rgba(126, 200, 255, 0.5);
+            border-radius: 4px;
+            padding: 0.75rem 1.5rem;
+            color: #7ec8ff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.2s, border-color 0.2s;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .download-btn:hover {
+            background: rgba(126, 200, 255, 0.3);
+            border-color: rgba(126, 200, 255, 0.7);
+            color: #ffffff;
+        }
+
+        /* FAQ */
+        .faq-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .faq-item .question {
+            font-weight: 600;
+            color: #ff66ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-item .answer {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Links */
+        a {
+            color: #7ec8ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            .header h1 {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .facts-grid,
+            .screenshot-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Press Kit</h1>
+            <p class="tagline">Everything you need to cover FlashBoss</p>
+        </header>
+
+        <section class="section">
+            <h2>Quick Facts</h2>
+            <div class="facts-grid">
+                <div class="fact">
+                    <p class="label">Release Date</p>
+                    <p class="value">February 17, 2026</p>
+                </div>
+                <div class="fact">
+                    <p class="label">Price</p>
+                    <p class="value">€4.99 (base game)</p>
+                </div>
+                <div class="fact">
+                    <p class="label">Platform</p>
+                    <p class="value">Steam (Win/Mac/Linux)</p>
+                </div>
+                <div class="fact">
+                    <p class="label">Developer</p>
+                    <p class="value">Solo (CELTA-certified teacher)</p>
+                </div>
+                <div class="fact">
+                    <p class="label">Genre</p>
+                    <p class="value">Educational / RPG</p>
+                </div>
+                <div class="fact">
+                    <p class="label">Languages</p>
+                    <p class="value">German, Esperanto (more coming)</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Copy Templates</h2>
+            <p>Feel free to use or adapt these for your content.</p>
+
+            <div class="copy-box">
+                <p class="copy-label">Hook (one-liner)</p>
+                <p class="copy-text">Learn German through boss fights - spaced repetition meets RPG.</p>
+            </div>
+
+            <div class="copy-box">
+                <p class="copy-label">Value Proposition</p>
+                <p class="copy-text">FREE German Core pack ($4.99 value) for everyone who buys during launch week. Full ownership, not a subscription.</p>
+            </div>
+
+            <div class="copy-box">
+                <p class="copy-label">Target Audience</p>
+                <p class="copy-text">Language learners tired of boring flashcards. Productivity enthusiasts who love spaced repetition. Retro gaming fans who appreciate terminal aesthetics.</p>
+            </div>
+
+            <div class="copy-box">
+                <p class="copy-label">Key Differentiator</p>
+                <p class="copy-text">Terminal-based, distraction-free, works on potato computers. Built by a CELTA-certified language teacher, not a tech company. Pedagogical rigor meets genuine gamification.</p>
+            </div>
+
+            <div class="copy-box">
+                <p class="copy-label">Pricing Breakdown</p>
+                <p class="copy-text">€4.99 base game (includes Esperanto Core + FREE German Core at launch). €4.99 per additional language pack (1,000 words each).</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Screenshots</h2>
+            <p>Right-click to save, or use the download link below for full resolution.</p>
+
+            <div class="screenshot-grid">
+                <div class="screenshot-item">
+                    <img src="manual/images/bossfight/19_screenshot.png" alt="Know Your Enemy - Cluster Selection">
+                    <p class="caption">Cluster Selection</p>
+                </div>
+                <div class="screenshot-item">
+                    <img src="manual/images/bossfight/25_screenshot.png" alt="Boss Fight in Action">
+                    <p class="caption">Boss Fight</p>
+                </div>
+                <div class="screenshot-item">
+                    <img src="manual/images/bossfight/32_screenshot.png" alt="Boss Defeated Victory Screen">
+                    <p class="caption">Victory!</p>
+                </div>
+                <div class="screenshot-item">
+                    <img src="manual/screenshots/common/create-master1.png" alt="Master Selection">
+                    <p class="caption">Choose Your Master</p>
+                </div>
+            </div>
+
+            <p style="margin-top: 1rem;">
+                <a href="manual/images/bossfight/" class="download-btn">Boss Fight Sequence (15 frames)</a>
+                <a href="manual/screenshots/common/" class="download-btn">All Screenshots</a>
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Logo & Assets</h2>
+            <p>
+                <a href="icon.png" class="download-btn">Icon (PNG)</a>
+            </p>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: rgba(255, 255, 255, 0.6);">
+                Need different sizes or formats? Email <a href="mailto:flashbosscontact@gmail.com">flashbosscontact@gmail.com</a>
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Affiliate FAQ</h2>
+
+            <div class="faq-item">
+                <p class="question">Can I get a review key?</p>
+                <p class="answer">Yes. Email <a href="mailto:flashbosscontact@gmail.com">flashbosscontact@gmail.com</a> with a link to your channel/platform.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="question">What's the commission rate?</p>
+                <p class="answer">€0.60 per confirmed sale, adjusted monthly based on refund rate. See <a href="affiliate-metrics.html">live metrics</a>.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="question">Who's the target audience?</p>
+                <p class="answer">Language learners ages 16-45, productivity enthusiasts, Anki users looking for gamification, retro/terminal aesthetic fans.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="question">What makes FlashBoss different?</p>
+                <p class="answer">Gamified spaced repetition with real pedagogical rigor. Built by a language teacher, not a tech company. Terminal-based means zero distractions and runs on anything.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="question">Is there a trailer?</p>
+                <p class="answer">Yes, on the <a href="https://store.steampowered.com/app/4134440/FlashBoss/">Steam page</a>. Contact us if you need the raw file.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Contact</h2>
+            <p>
+                <strong>Email:</strong> <a href="mailto:flashbosscontact@gmail.com">flashbosscontact@gmail.com</a><br>
+                <strong>Steam:</strong> <a href="https://store.steampowered.com/app/4134440/FlashBoss/">store.steampowered.com/app/4134440/FlashBoss</a>
+            </p>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="affiliate.html">Affiliate Program</a>
+                <a href="home.html">Hub</a>
+                <a href="https://store.steampowered.com/app/4134440/FlashBoss/">Steam</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

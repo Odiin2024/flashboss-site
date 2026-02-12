@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - FlashBoss</title>
+    <meta name="description" content="The story behind FlashBoss. Built by a CELTA-certified language teacher over 3 years of development.">
+
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0a0a19;
+            color: #f0e6d3;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header h1 {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ff66ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .header .tagline {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Content */
+        .content {
+            margin-bottom: 2.5rem;
+        }
+
+        .content h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #7ec8ff;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(126, 200, 255, 0.3);
+        }
+
+        .content h2:first-child {
+            margin-top: 0;
+        }
+
+        .content p {
+            margin-bottom: 1.25rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .highlight {
+            color: #ff66ff;
+            font-weight: 500;
+        }
+
+        .credential-box {
+            background: rgba(255, 102, 255, 0.1);
+            border: 1px solid rgba(255, 102, 255, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+
+        .credential-box .title {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 1.1rem;
+            color: #ff66ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .credential-box p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Quote */
+        blockquote {
+            border-left: 3px solid #7ec8ff;
+            padding-left: 1.25rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Links */
+        a {
+            color: #7ec8ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            .header h1 {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Why I Made This</h1>
+            <p class="tagline">A language teacher's obsession</p>
+        </header>
+
+        <div class="content">
+            <h2>The Engine</h2>
+            <p>I'm a <span class="highlight">CELTA-certified</span> English teacher and an active German learner. I downloaded a spaced repetition program and discovered it was random. So I learned how real spaced repetition programs actually work. <a href="https://docs.ankiweb.net/deck-options.html#ease-factor" target="_blank">Ease factor!</a> I realised the Fibonacci sequence could control interval calculation. It seemed like a better solution.</p>
+
+            <p>I built each flashcard with progressively graded language, example sentences using natural German speech patterns. Built for comprehension. It worked beautifully.</p>
+
+            <div class="credential-box">
+                <p class="title">CELTA-Certified Language Teacher</p>
+                <p>Cambridge Certificate in English Language Teaching to Adults</p>
+            </div>
+
+            <h2>The Interface</h2>
+            <p>When I tried to show it to anybody, my scrolling text running up the page made no sense to them. Then I learned how to flush the screen, and suddenly I had a picture book structure. Choose your own adventure.</p>
+
+            <p>I needed to purge cards to make it progressive, and that opened the door to boss fights. Beat a cluster, those cards leave your rotation. Not gamification slapped on top - actual victories. From there, everything fell into place.</p>
+
+            <p>Then Piper dropped from the heavens - neural text-to-speech that actually sounds human. Suddenly the whole thing could speak to you.</p>
+
+            <h2>The Build</h2>
+            <p>I can't code in the traditional sense. FlashBoss was built through conversation - me describing what I needed, AI helping me build it. Every feature exists because a teacher needed it, not because a developer thought it was clever.</p>
+
+            <blockquote>
+                "Collaborative language learning software built through conversation between a teacher who can't code and an AI who can."
+            </blockquote>
+
+            <h2>The Result</h2>
+            <p>FlashBoss runs on anything - even a potato computer. It works offline. It respects your time with focused daily sessions. And it turns vocabulary acquisition into something you actually want to do.</p>
+
+            <p>Six masters to guide you. Boss fights to challenge you. Real progress you can feel.</p>
+
+            <p>This is what happens when a language teacher builds exactly what they wish existed.</p>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="home.html">Hub</a>
+                <a href="manual/">Manual</a>
+                <a href="press.html">Press Kit</a>
+                <a href="https://store.steampowered.com/app/4134440/FlashBoss/">Steam</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
