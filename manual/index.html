@@ -260,6 +260,26 @@
             font-size: 1.2rem;
         }
 
+        /* Hover-linked words in description */
+        .hover-word {
+            color: #7ec8ff;
+            cursor: help;
+            transition: filter 0.2s, text-shadow 0.2s;
+        }
+
+        .hover-word:hover,
+        .hover-word.glow {
+            filter: drop-shadow(0 0 8px rgba(126, 200, 255, 0.8));
+            text-shadow: 0 0 8px rgba(126, 200, 255, 0.8), 0 0 20px rgba(126, 200, 255, 0.5);
+        }
+
+        /* Glowing state for thumbnails */
+        .parent-thumb.glow,
+        .focus-thumb.glow,
+        .child-thumb .thumb-box.glow {
+            filter: drop-shadow(0 0 8px rgba(126, 200, 255, 0.8)) drop-shadow(0 0 20px rgba(126, 200, 255, 0.5));
+        }
+
         /* Parent thumbnails */
         .parent-thumb {
             width: 80px;
@@ -631,7 +651,7 @@
 
     <script>
         let screens = {};
-        let currentFocus = 'profile-select';
+        let currentFocus = 'entrance';
         let isBookView = true;
 
         // Toggle between book and tile view
@@ -772,15 +792,39 @@
                 navChildren.appendChild(childEl);
             });
 
-            // Render description
+            // Render description with hover-linked words
             document.getElementById('focusTitle').textContent = focus.title;
 
             const descDiv = document.getElementById('focusDescription');
             descDiv.innerHTML = '';
             focus.description.split('\n\n').forEach(para => {
                 const p = document.createElement('p');
-                p.textContent = para;
+                // Wrap parent/focus/child in hover-word spans
+                let html = para
+                    .replace(/\bparent\b/gi, '<span class="hover-word" data-target="parent">parent</span>')
+                    .replace(/\bfocus\b/gi, '<span class="hover-word" data-target="focus">focus</span>')
+                    .replace(/\bchild\b/gi, '<span class="hover-word" data-target="child">child</span>');
+                p.innerHTML = html;
                 descDiv.appendChild(p);
+            });
+
+            // Add hover listeners for linked words
+            descDiv.querySelectorAll('.hover-word').forEach(word => {
+                word.addEventListener('mouseenter', () => {
+                    const target = word.dataset.target;
+                    word.classList.add('glow');
+                    if (target === 'parent') {
+                        document.querySelectorAll('.parent-thumb').forEach(el => el.classList.add('glow'));
+                    } else if (target === 'focus') {
+                        document.querySelectorAll('.focus-thumb').forEach(el => el.classList.add('glow'));
+                    } else if (target === 'child') {
+                        document.querySelectorAll('.child-thumb .thumb-box').forEach(el => el.classList.add('glow'));
+                    }
+                });
+                word.addEventListener('mouseleave', () => {
+                    word.classList.remove('glow');
+                    document.querySelectorAll('.parent-thumb, .focus-thumb, .child-thumb .thumb-box').forEach(el => el.classList.remove('glow'));
+                });
             });
         }
 

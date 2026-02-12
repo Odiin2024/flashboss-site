@@ -1,12 +1,12 @@
 {
   "entrance": {
     "id": "entrance",
-    "title": "Entrance",
+    "title": "Welcome to the Manual",
     "image": "screenshots/common/entrance.png",
-    "page": "walkthrough/index.html",
-    "parents": [],
+    "page": null,
+    "parents": ["terminal-flashboss"],
     "children": ["profile-select"],
-    "description": "The FlashBoss title screen. Press any key to continue to profile selection."
+    "description": "Welcome to the FlashBoss Manual.\n\nThis cladogram mirrors the game's navigation. Click a parent to go back, click the focus to zoom in, or click a child to go forward.\n\nEvery screen in the game has a page here. Explore at your own pace."
   },
   "profile-select": {
     "id": "profile-select",
@@ -274,10 +274,10 @@
   "terminal-flashboss": {
     "id": "terminal-flashboss",
     "title": "./FlashBoss",
-    "image": "images/03_screenshot.png",
-    "page": "walkthrough/index.html",
+    "image": "screenshots/common/entrance.png",
+    "page": null,
     "parents": ["terminal"],
     "children": ["entrance"],
-    "description": "Return to FlashBoss. Type ./FlashBoss (or FlashBoss.exe on Windows) to launch the game and return to the profile selection screen."
+    "description": "Return to FlashBoss. Type ./FlashBoss (or FlashBoss.exe on Windows) to launch the game."
   }
 }
