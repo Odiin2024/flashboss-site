@@ -14,12 +14,13 @@
     "image": "screenshots/common/profile-select.png",
     "page": "walkthrough/profile-select.html",
     "parents": ["entrance"],
-    "children": ["create-username", "profile-data", "vault", "about-1"],
+    "children": ["create-username", "profile-data", "vault", "about-1", "terminal"],
     "childLabels": {
       "create-username": "1",
       "profile-data": "2-5",
       "vault": "6",
-      "about-1": "8"
+      "about-1": "8",
+      "terminal": "9"
     },
     "description": "FlashBoss supports up to 5 user profiles. Each slot shows the user's avatar, name, and chosen master.\n\nEmpty slots display \"Create New Hero\" - selecting one begins character creation. Selecting an existing profile opens Profile Data.\n\nSystem options: Backup Vault (6), About & Help (8), Exit (9)."
   },
@@ -237,5 +238,46 @@
     "parents": ["german-lessons"],
     "children": [],
     "description": "Example: Lesson 2 - Modal Verbs.\n\nModal verbs express ability, permission, obligation, or desire: können (can), dürfen (may), sollen (should), müssen (must), wollen (want to), möchten (would like).\n\nStructure: Modal + infinitive at the END."
+  },
+  "terminal": {
+    "id": "terminal",
+    "title": "Terminal",
+    "image": "images/03_screenshot.png",
+    "page": "terminal.html",
+    "parents": ["profile-select"],
+    "children": ["terminal-audio", "terminal-workshop", "terminal-flashboss"],
+    "childLabels": {
+      "terminal-audio": "audio",
+      "terminal-workshop": "workshop",
+      "terminal-flashboss": "./FlashBoss"
+    },
+    "description": "Press 9 to exit and you'll land here - your terminal, in the FlashBoss directory. This is where the CLI commands live."
+  },
+  "terminal-audio": {
+    "id": "terminal-audio",
+    "title": "Audio Configuration",
+    "image": "images/FlashBoss audio.png",
+    "page": "terminal.html#audio",
+    "parents": ["terminal"],
+    "children": [],
+    "description": "TTS engine settings and cache management. Run ./FlashBoss audio to access.\n\nCommands: piper, espeak, reset, cache, cache -de, cache-delete, cache-delete -de, cache-delete --de"
+  },
+  "terminal-workshop": {
+    "id": "terminal-workshop",
+    "title": "Workshop",
+    "image": "images/workshop.png",
+    "page": "terminal.html#workshop",
+    "parents": ["terminal"],
+    "children": [],
+    "description": "Standalone tools for language learning. Run independently of the main program.\n\nTools: pronounce (Piper TTS Studio), cards (Card Viewer). More coming soon..."
+  },
+  "terminal-flashboss": {
+    "id": "terminal-flashboss",
+    "title": "./FlashBoss",
+    "image": "images/03_screenshot.png",
+    "page": "walkthrough/index.html",
+    "parents": ["terminal"],
+    "children": ["entrance"],
+    "description": "Return to FlashBoss. Type ./FlashBoss (or FlashBoss.exe on Windows) to launch the game and return to the profile selection screen."
   }
 }

@@ -238,6 +238,14 @@
             text-align: center;
         }
 
+        .page-footer .apply-link {
+            color: var(--moon-yellow);
+        }
+
+        .page-footer .apply-link:hover {
+            color: #ffffff;
+        }
+
         /* Horizontal navigation flow: parent -> focus */
         .nav-flow {
             display: flex;
@@ -536,9 +544,9 @@
                         <div id="focusDescription"></div>
                     </div>
                     <div class="page-footer">
-                        <a href="index.html" class="footer-link">Manual Home</a>
+                        <a href="mailto:flashbosscontact@gmail.com?subject=Beta Key - Curious Learner&body=I explored the manual and I'd choose [MASTER NAME] because..." class="footer-link apply-link">Ready for a beta key? →</a>
                         <span class="footer-divider">·</span>
-                        <a href="../home.html" class="footer-link">FlashBoss Hub</a>
+                        <a href="../home.html" class="footer-link">Hub</a>
                     </div>
                 </div>
 
@@ -607,9 +615,9 @@
                             <span class="tile-title">Language Packs</span>
                             <span class="tile-desc">German, Esperanto</span>
                         </div>
-                        <div class="tile" onclick="selectTopic('hints-tips')">
+                        <div class="tile" onclick="selectTopic('terminal')">
                             <span class="tile-title">Terminal</span>
-                            <span class="tile-desc">Command reference</span>
+                            <span class="tile-desc">CLI commands</span>
                         </div>
                         <div class="tile" onclick="selectTopic('about-1')">
                             <span class="tile-title">FAQ</span>
@@ -672,6 +680,14 @@
             .then(response => response.json())
             .then(data => {
                 screens = data;
+
+                // Check for URL parameter to set initial focus
+                const urlParams = new URLSearchParams(window.location.search);
+                const screenParam = urlParams.get('screen');
+                if (screenParam && screens[screenParam]) {
+                    currentFocus = screenParam;
+                }
+
                 renderCladogram();
             })
             .catch(err => {
@@ -715,7 +731,12 @@
             focusEl.className = 'focus-thumb';
             if (focus.image) {
                 focusEl.innerHTML = `<img src="${focus.image}" alt="${focus.title}">`;
-                focusEl.onclick = zoomIn;
+                // If the screen has a dedicated page (not a walkthrough), navigate there
+                if (focus.page && !focus.page.startsWith('walkthrough/')) {
+                    focusEl.onclick = () => window.location.href = focus.page;
+                } else {
+                    focusEl.onclick = zoomIn;
+                }
             } else {
                 focusEl.textContent = focus.title;
             }

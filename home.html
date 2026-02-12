@@ -79,77 +79,115 @@
             width: 100%;
         }
 
-        /* Beta section */
-        .beta-section {
-            position: relative;
+        /* Card sections */
+        .card-section {
             background: rgba(0, 0, 0, 0.5);
             border: 1px solid rgba(126, 200, 255, 0.3);
             border-radius: 8px;
             padding: 1.5rem;
-            transition: opacity 0.3s, transform 0.3s;
         }
 
-        .beta-section.hidden {
-            opacity: 0;
-            transform: scale(0.95);
-            pointer-events: none;
-            display: none;
-        }
-
-        .beta-section .close-btn {
-            position: absolute;
-            top: 0.75rem;
-            right: 0.75rem;
-            background: none;
-            border: none;
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 1.2rem;
-            cursor: pointer;
-            padding: 0.25rem 0.5rem;
-            line-height: 1;
-            transition: color 0.2s;
-        }
-
-        .beta-section .close-btn:hover {
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        .beta-section h2 {
+        .card-section h2 {
             font-size: 1.2rem;
             font-weight: 600;
             color: #7ec8ff;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
         }
 
-        .beta-section p {
-            font-size: 0.95rem;
+        .card-section .intro {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 1.25rem;
+        }
+
+        .card-section p {
+            font-size: 0.9rem;
             line-height: 1.6;
-            margin-bottom: 1rem;
             color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 0.75rem;
         }
 
-        .beta-section .email-link {
+        .card-section .note {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.5);
+            margin-top: 0.75rem;
+            font-style: italic;
+        }
+
+        /* Path grid - two columns */
+        .path-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .path-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            padding: 1rem;
+        }
+
+        .path-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #ff66ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .path-card p {
+            font-size: 0.85rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .path-link {
             display: inline-block;
-            background: rgba(126, 200, 255, 0.2);
-            border: 1px solid rgba(126, 200, 255, 0.5);
-            border-radius: 4px;
-            padding: 0.6rem 1rem;
+            font-size: 0.85rem;
+            font-weight: 500;
             color: #7ec8ff;
             text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .path-link:hover {
+            color: #ffffff;
+        }
+
+        /* Fallback / wishlist */
+        .fallback {
+            text-align: center;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .fallback p {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 0.75rem;
+        }
+
+        .steam-btn {
+            display: inline-block;
+            background: rgba(102, 192, 244, 0.2);
+            border: 1px solid rgba(102, 192, 244, 0.5);
+            border-radius: 4px;
+            padding: 0.5rem 1rem;
+            font-size: 0.85rem;
             font-weight: 500;
+            color: #66c0f4;
+            text-decoration: none;
             transition: background 0.2s, border-color 0.2s;
         }
 
-        .beta-section .email-link:hover {
-            background: rgba(126, 200, 255, 0.3);
-            border-color: rgba(126, 200, 255, 0.7);
+        .steam-btn:hover {
+            background: rgba(102, 192, 244, 0.3);
+            border-color: rgba(102, 192, 244, 0.7);
         }
 
-        .beta-section .note {
-            font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.7);
-            margin-top: 1rem;
-            font-style: italic;
+        /* Affiliate section */
+        .affiliate-section {
+            border-color: rgba(255, 102, 255, 0.3);
         }
 
         /* Footer */
@@ -189,16 +227,16 @@
                 font-size: 3.4rem;
             }
 
-            .beta-section {
+            .card-section {
                 padding: 2rem;
             }
 
-            .beta-section h2 {
+            .card-section h2 {
                 font-size: 1.4rem;
             }
 
-            .beta-section p {
-                font-size: 1rem;
+            .path-grid {
+                grid-template-columns: 1fr 1fr;
             }
 
             .footer {
@@ -220,6 +258,10 @@
             .container {
                 padding: 2rem 3rem;
             }
+
+            .main {
+                max-width: 700px;
+            }
         }
     </style>
 </head>
@@ -230,13 +272,37 @@
         </header>
 
         <main class="main">
-            <section class="beta-section" id="betaSection">
-                <button class="close-btn" id="closeBtn" aria-label="Close">&times;</button>
+            <!-- Beta Keys Section -->
+            <section class="card-section">
                 <h2>Free Beta Keys</h2>
-                <p>Want to try FlashBoss before launch? Email us for a free beta key. Full ownership of the game for life.</p>
-                <p>Tell us what you're learning, how far you've come, and why you'd like to try FlashBoss. Teachers and content creators welcome.</p>
-                <a href="mailto:flashbosscontact@gmail.com?subject=Beta Key Request" class="email-link">flashbosscontact@gmail.com</a>
-                <p class="note">Keys are given out selectively based on your request.</p>
+                <p class="intro">Full ownership of the game, forever. Limited keys available before launch.</p>
+
+                <div class="path-grid">
+                    <div class="path-card">
+                        <h3>Educators & Creators</h3>
+                        <p>Teachers, YouTubers, streamers, bloggers - if you have an audience or classroom, we want to hear from you.</p>
+                        <a href="mailto:flashbosscontact@gmail.com?subject=Beta Key - Educator/Creator" class="path-link">Apply with credentials →</a>
+                    </div>
+
+                    <div class="path-card">
+                        <h3>Curious Learners</h3>
+                        <p>Want to prove you're serious? Explore the manual, then tell us which Master you'd choose and why.</p>
+                        <a href="manual/" class="path-link">Explore the Manual →</a>
+                    </div>
+                </div>
+
+                <div class="fallback">
+                    <p>Rather not jump through hoops?</p>
+                    <a href="https://store.steampowered.com/app/4134440/FlashBoss/" class="steam-btn">Wishlist on Steam</a>
+                </div>
+            </section>
+
+            <!-- Affiliate Section -->
+            <section class="card-section affiliate-section">
+                <h2>Affiliate Program</h2>
+                <p class="intro">Earn €0.60 per sale you refer. Transparent tracking, monthly payouts.</p>
+                <p>Content creators, educators, and community members welcome. Get your unique tracking link and start earning.</p>
+                <a href="affiliate.html" class="path-link">View program details →</a>
             </section>
         </main>
 
@@ -245,16 +311,11 @@
             <span class="divider"></span>
             <a href="manual/">Manual</a>
             <span class="divider"></span>
-            <a href="https://store.steampowered.com/app/4134440/FlashBoss/">Steam</a>
+            <a href="affiliate.html">Affiliates</a>
             <span class="divider"></span>
-            <a href="about.html">About</a>
+            <a href="https://store.steampowered.com/app/4134440/FlashBoss/">Steam</a>
         </footer>
 
-        <script>
-            document.getElementById('closeBtn').addEventListener('click', function() {
-                document.getElementById('betaSection').classList.add('hidden');
-            });
-        </script>
     </div>
 </body>
 </html>

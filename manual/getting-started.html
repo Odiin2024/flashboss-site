@@ -3,50 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Getting Started - FlashBoss Manual</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Getting Started - FlashBoss</title>
+    <meta name="description" content="Get FlashBoss running in minutes. System requirements and first launch guide.">
+
     <link rel="icon" type="image/png" href="../icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0a0a19;
+            color: #f0e6d3;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header h1 {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ff66ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .header .tagline {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #7ec8ff;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(126, 200, 255, 0.3);
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Info box */
+        .info-box {
+            background: rgba(255, 102, 255, 0.1);
+            border: 1px solid rgba(255, 102, 255, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-box h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #ff66ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-box p {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+
+        /* Steps */
+        .steps {
+            counter-reset: step;
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        .steps li {
+            position: relative;
+            padding-left: 2.5rem;
+            margin-bottom: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .steps li::before {
+            counter-increment: step;
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 1.75rem;
+            height: 1.75rem;
+            background: rgba(126, 200, 255, 0.2);
+            border: 1px solid rgba(126, 200, 255, 0.5);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #7ec8ff;
+        }
+
+        .steps li strong {
+            color: #7ec8ff;
+        }
+
+        /* Highlight key */
+        .key {
+            display: inline-block;
+            background: rgba(126, 200, 255, 0.2);
+            border: 1px solid rgba(126, 200, 255, 0.5);
+            border-radius: 4px;
+            padding: 0.1rem 0.5rem;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.9rem;
+            color: #7ec8ff;
+        }
+
+        /* Links */
+        a {
+            color: #7ec8ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            .header h1 {
+                font-size: 3rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <a href="index.html" class="back-link">&larr; Back to Manual</a>
+        <header class="header">
+            <h1>Let's Get FlashBoss Running</h1>
+            <p class="tagline">You'll be learning in minutes</p>
+        </header>
 
-        <div class="content">
-            <h2>Getting Started</h2>
+        <section class="section">
+            <h2>System Requirements</h2>
+            <p>FlashBoss runs on mostly anything. One hiccup to look out for is Windows Terminal dependency.</p>
 
-            <h3>System Requirements</h3>
-            <ul>
-                <li><strong>Windows:</strong> Windows 10 or later. Windows Terminal recommended for best emoji display.</li>
-                <li><strong>macOS:</strong> macOS 11 or later. Dark terminal theme recommended. Apple Silicon Macs require Rosetta 2 for audio features.</li>
-                <li><strong>Linux:</strong> Most modern distributions with a terminal emulator.</li>
-            </ul>
+            <div class="info-box">
+                <h3>Windows Users</h3>
+                <p>For the best experience with emoji display, make sure you have <strong>Windows Terminal</strong> installed. It comes pre-installed on Windows 11. On Windows 10, grab it free from the Microsoft Store.</p>
+            </div>
 
-            <h3>Installation</h3>
-            <p>FlashBoss is available on Steam. Simply click Install and Steam will handle the rest.</p>
+            <p>macOS and Linux work out of the box. No special configuration needed.</p>
 
-            <h3>First Launch</h3>
-            <p>When you first launch FlashBoss, you'll be greeted by the Academy gates. From here you can:</p>
-            <ul>
-                <li>Create a new hero (slots 1-5)</li>
-                <li>Access the Backup Vault (slot 6)</li>
-                <li>Open Settings (cog icon)</li>
-            </ul>
+            <div class="info-box" style="background: rgba(126, 200, 255, 0.1); border-color: rgba(126, 200, 255, 0.3);">
+                <h3 style="color: #7ec8ff;">Running on Older Hardware?</h3>
+                <p>If your machine struggles, you can pre-generate the audio files. Launch the game once, then exit by pressing <span class="key">9</span> repeatedly until you're back at your terminal. From there, run <code style="background: rgba(126, 200, 255, 0.2); color: #7ec8ff; padding: 0.1rem 0.4rem; border-radius: 3px;">./FlashBoss cache -de</code> (or <code style="background: rgba(126, 200, 255, 0.2); color: #7ec8ff; padding: 0.1rem 0.4rem; border-radius: 3px;">FlashBoss.exe cache -de</code> on Windows) - the game will have dropped you in the right folder. A tier can take up to 10 minutes. 2 minutes is long enough for a session. Read the <a href="terminal.html">Terminal</a> section for more information.</p>
+            </div>
+        </section>
 
-            <h3>Creating Your Hero</h3>
-            <p>Character creation takes you through several steps:</p>
-            <ol>
-                <li><strong>Enter your name</strong> - Choose a hero name (up to 12 characters)</li>
-                <li><strong>Choose your avatar</strong> - Pick an animal companion</li>
-                <li><strong>Select your master</strong> - Each master offers different difficulty levels and teaching styles</li>
-                <li><strong>Select a language pack</strong> - If multiple packs are available</li>
+        <section class="section">
+            <h2>First Launch</h2>
+            <ol class="steps">
+                <li><strong>Create your profile</strong> - Pick a name and avatar for your hero</li>
+                <li><strong>Arrive at the gates</strong> - You'll see the Academy entrance with your options</li>
+                <li><strong>Choose your path</strong> - Press <span class="key">5</span> to start from the beginning, or <span class="key">8</span> to try the placement test</li>
             </ol>
+            <p>That's all you need to know. The game teaches you the rest.</p>
+        </section>
 
-            <h3>The Sanctum</h3>
-            <p>After character creation, you'll enter the Sanctum - your main hub for learning. Here you can access lessons, review cards, challenge bosses, and track your progress.</p>
-        </div>
-
-        <footer>
-            <p><a href="index.html">Back to Manual</a> | <a href="../index.html">FlashBoss Home</a></p>
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="index.html">Manual</a>
+                <a href="../home.html">Hub</a>
+                <a href="https://store.steampowered.com/app/4134440/FlashBoss/">Steam</a>
+                <a href="../index.html">Front</a>
+            </div>
         </footer>
     </div>
 </body>
