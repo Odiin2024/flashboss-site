@@ -49,6 +49,7 @@
             display: flex;
             flex-direction: column;
             padding: 1.5rem;
+            padding-bottom: 4rem;
         }
 
         /* Header */
@@ -67,16 +68,22 @@
             text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
         }
 
-        /* Main content */
+        /* Main content - two column layout */
         .main {
             flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 2rem;
-            max-width: 600px;
+            gap: 1.5rem;
+            max-width: 1000px;
             margin: 0 auto;
             width: 100%;
+        }
+
+        .landing-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
         }
 
         /* Card sections */
@@ -107,14 +114,48 @@
             margin-bottom: 0.75rem;
         }
 
-        .card-section .note {
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.5);
-            margin-top: 0.75rem;
-            font-style: italic;
+        /* About section (left) */
+        .about-section {
+            border-color: rgba(126, 200, 255, 0.3);
         }
 
-        /* Path grid - two columns */
+        .about-section .tagline {
+            font-size: 0.77rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .about-section .description {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 1.5rem;
+        }
+
+        .link-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .link-list a {
+            font-size: 0.9rem;
+            color: #7ec8ff;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .link-list a:hover {
+            color: #ffffff;
+        }
+
+        /* Beta keys section (right) */
+        .beta-section h2 .urgency {
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.6);
+            margin-left: 0.5rem;
+        }
+
         .path-grid {
             display: grid;
             grid-template-columns: 1fr;
@@ -134,6 +175,11 @@
             font-weight: 600;
             color: #ff66ff;
             margin-bottom: 0.5rem;
+        }
+
+        .path-card h3 .for {
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.6);
         }
 
         .path-card p {
@@ -227,12 +273,16 @@
                 font-size: 3.4rem;
             }
 
+            .landing-grid {
+                grid-template-columns: 35fr 65fr;
+            }
+
             .card-section {
-                padding: 2rem;
+                padding: 1.75rem;
             }
 
             .card-section h2 {
-                font-size: 1.4rem;
+                font-size: 1.3rem;
             }
 
             .path-grid {
@@ -257,10 +307,19 @@
 
             .container {
                 padding: 2rem 3rem;
+                padding-bottom: 4rem;
             }
 
             .main {
-                max-width: 700px;
+                max-width: 1100px;
+            }
+
+            .card-section {
+                padding: 2rem;
+            }
+
+            .card-section h2 {
+                font-size: 1.4rem;
             }
         }
     </style>
@@ -272,35 +331,50 @@
         </header>
 
         <main class="main">
-            <!-- Beta Keys Section -->
-            <section class="card-section">
-                <h2>Free Beta Keys</h2>
-                <p class="intro">Full ownership of the game, forever. Limited keys available before launch.</p>
+            <!-- Two-column landing -->
+            <div class="landing-grid">
+                <!-- Left: About -->
+                <section class="card-section about-section">
+                    <h2>What is FlashBoss?</h2>
+                    <p class="tagline">Flashcards with boss fights.</p>
+                    <p class="description">Learn German or Esperanto through spaced repetition - but instead of endless cards, you fight bosses. Built by a CELTA-certified teacher who got tired of boring flashcard apps.</p>
+                    <div class="link-list">
+                        <a href="about.html">Read the full story →</a>
+                        <a href="manual/">Browse the manual →</a>
+                        <a href="press.html">Press kit →</a>
+                    </div>
+                </section>
 
-                <div class="path-grid">
-                    <div class="path-card">
-                        <h3>Educators & Creators</h3>
-                        <p>Teachers, YouTubers, streamers, bloggers - if you have an audience or classroom, we want to hear from you.</p>
-                        <a href="beta-key-creator.html" class="path-link">Apply for a key →</a>
+                <!-- Right: Beta Keys -->
+                <section class="card-section beta-section">
+                    <h2>Free Beta Keys <span class="urgency">until Feb 17th</span></h2>
+                    <p class="intro">Full ownership of the game, forever. Limited keys available before launch.</p>
+
+                    <div class="path-grid">
+                        <div class="path-card">
+                            <h3><span class="for">for</span> Educators & Creators</h3>
+                            <p>Teachers, YouTubers, streamers, bloggers - if you have an audience or classroom, we want to hear from you.</p>
+                            <a href="beta-key-creator.html" class="path-link">Apply for a key →</a>
+                        </div>
+
+                        <div class="path-card">
+                            <h3><span class="for">for</span> Curious Learners</h3>
+                            <p>Want to prove you're serious? Explore the manual, then tell us which Master you'd choose and why.</p>
+                            <a href="manual/" class="path-link">Unlock your free key →</a>
+                        </div>
                     </div>
 
-                    <div class="path-card">
-                        <h3>Curious Learners</h3>
-                        <p>Want to prove you're serious? Explore the manual, then tell us which Master you'd choose and why.</p>
-                        <a href="manual/" class="path-link">Explore the Manual →</a>
+                    <div class="fallback">
+                        <p>Support the Game Directly</p>
+                        <a href="https://store.steampowered.com/app/4134440/FlashBoss/" class="steam-btn">Wishlist on Steam</a>
                     </div>
-                </div>
-
-                <div class="fallback">
-                    <p>Rather not jump through hoops?</p>
-                    <a href="https://store.steampowered.com/app/4134440/FlashBoss/" class="steam-btn">Wishlist on Steam</a>
-                </div>
-            </section>
+                </section>
+            </div>
 
             <!-- Affiliate Section -->
             <section class="card-section affiliate-section">
                 <h2>Affiliate Program</h2>
-                <p class="intro">Earn €0.60 per sale you refer. Transparent tracking, monthly payouts.</p>
+                <p class="intro">Earn $1.00 per sale you refer. Transparent tracking, monthly payouts.</p>
                 <p>Content creators, educators, and community members welcome. Get your unique tracking link and start earning.</p>
                 <a href="affiliate.html" class="path-link">View program details →</a>
             </section>
