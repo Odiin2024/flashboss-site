@@ -19,14 +19,29 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: linear-gradient(160deg, #0a0a19 0%, #12122a 40%, #0d1a24 100%);
-            background-attachment: fixed;
+            background: url('manual/images/fog.jpeg') center center / cover no-repeat fixed;
+            background-color: #0a0a19;
             color: #f0e6d3;
             min-height: 100vh;
             line-height: 1.6;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.1);
+            pointer-events: none;
+            z-index: 0;
         }
 
         .container {
+            position: relative;
+            z-index: 1;
             max-width: 800px;
             margin: 0 auto;
             padding: 2rem 1.5rem 4rem;
@@ -35,9 +50,7 @@
         /* Header */
         .header {
             text-align: center;
-            margin-bottom: 2rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 1.5rem;
         }
 
         .header h1 {
@@ -51,31 +64,6 @@
         .header .tagline {
             font-size: 1.1rem;
             color: rgba(255, 255, 255, 0.7);
-        }
-
-        /* Intro */
-        .intro {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
-        .intro p {
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 0.5rem;
-        }
-
-        .intro p:last-child {
-            margin-bottom: 0;
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 0.9rem;
-        }
-
-        .intro a {
-            color: #7ec8ff;
         }
 
         /* Form embed */
@@ -168,9 +156,9 @@
             <p class="tagline">Earn $1.00 for every student you bring in</p>
         </header>
 
-        <div class="intro">
-            <p>Not sure about the program? <a href="affiliate.html">Read the full details first →</a></p>
-        </div>
+        <p style="text-align: center; margin-bottom: 2rem; color: rgba(255, 255, 255, 0.7);">
+            <a href="affiliate.html">Details on the affiliate program can be found here →</a>
+        </p>
 
         <div class="form-section">
             <h2>Apply Now</h2>

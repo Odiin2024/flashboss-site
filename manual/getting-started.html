@@ -19,13 +19,29 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: #0a0a19;
+            background: url('images/fog.jpeg') center center / cover no-repeat fixed;
+            background-color: #0a0a19;
             color: #f0e6d3;
             min-height: 100vh;
             line-height: 1.6;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.1);
+            pointer-events: none;
+            z-index: 0;
         }
 
         .container {
+            position: relative;
+            z-index: 1;
             max-width: 800px;
             margin: 0 auto;
             padding: 2rem 1.5rem 4rem;
@@ -194,8 +210,8 @@
             <h2>System Requirements</h2>
             <p>FlashBoss runs on mostly anything. One hiccup to look out for is Windows Terminal dependency.</p>
 
-            <div class="info-box">
-                <h3>Windows Users</h3>
+            <div class="info-box" style="background: rgba(126, 200, 255, 0.1); border-color: rgba(126, 200, 255, 0.3);">
+                <h3 style="color: #7ec8ff;">Windows Users</h3>
                 <p>For the best experience with emoji display, make sure you have <strong>Windows Terminal</strong> installed. It comes pre-installed on Windows 11. On Windows 10, grab it free from the Microsoft Store.</p>
             </div>
 

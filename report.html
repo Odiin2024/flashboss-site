@@ -19,13 +19,29 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: #0a0a19;
+            background: url('manual/images/fog.jpeg') center center / cover no-repeat fixed;
+            background-color: #0a0a19;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.1);
+            pointer-events: none;
+            z-index: 0;
             color: #f0e6d3;
             min-height: 100vh;
             line-height: 1.6;
         }
 
         .container {
+            position: relative;
+            z-index: 1;
             max-width: 800px;
             margin: 0 auto;
             padding: 2rem 1.5rem 4rem;

@@ -19,14 +19,29 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: linear-gradient(160deg, #0a0a19 0%, #12122a 40%, #0d1a24 100%);
-            background-attachment: fixed;
+            background: url('manual/images/fog.jpeg') center center / cover no-repeat fixed;
+            background-color: #0a0a19;
             color: #f0e6d3;
             min-height: 100vh;
             line-height: 1.6;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.1);
+            pointer-events: none;
+            z-index: 0;
         }
 
         .container {
+            position: relative;
+            z-index: 1;
             max-width: 800px;
             margin: 0 auto;
             padding: 2rem 1.5rem 4rem;
@@ -83,7 +98,7 @@
 
         .deal-box .rate {
             font-family: 'Fredoka', sans-serif;
-            font-size: 2rem;
+            font-size: 1.4rem;
             color: #ff66ff;
             margin-bottom: 0.5rem;
         }
@@ -259,7 +274,7 @@
     <div class="container">
         <header class="header">
             <h1>Affiliate Program</h1>
-            <p class="tagline">Earn $1.00 for every student you bring in</p>
+            <p class="tagline">$1.00 per sale you refer</p>
         </header>
 
         <section class="section">
@@ -269,9 +284,10 @@
                 <p class="rate-note">Adjusted monthly based on total refund rate. If 10% of all sales refund, we deduct 10% from payouts.</p>
             </div>
             <ul>
-                <li><strong>Payment:</strong> Revolut (EU) or PayPal (international), Net-30</li>
+                <li><strong>Payment:</strong> Sales are tallied at month end. We take a month to calculate refunds, then pay out. February sales are paid end of March.</li>
+                <li><strong>Method:</strong> Revolut (EU) or PayPal (international). You'll need a compatible account.</li>
                 <li><strong>Minimum payout:</strong> €20 (rolls over if not met)</li>
-                <li><strong>Month-to-month:</strong> We review partnerships monthly. Either party can end the arrangement at any time.</li>
+                <li><strong>Month-to-month:</strong> Either party can end the arrangement at any time.</li>
             </ul>
         </section>
 
@@ -322,11 +338,11 @@
         </section>
 
         <section class="cta-section">
-            <h2>Join the Program</h2>
-            <p>Fill out the application form and we'll set you up with a tracking link.</p>
-            <a href="affiliate-apply.html" class="cta-btn">Apply Now</a>
+            <h2>Interested?</h2>
+            <p>Apply and we'll set you up with a tracking link.</p>
+            <a href="affiliate-apply.html" class="cta-btn">Apply</a>
             <br>
-            <a href="affiliate-metrics.html" class="metrics-link">View current metrics and leaderboard →</a>
+            <a href="affiliate-metrics.html" class="metrics-link">View current metrics →</a>
         </section>
 
         <footer class="footer">
