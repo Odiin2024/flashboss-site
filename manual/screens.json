@@ -2,6 +2,7 @@
   "entrance": {
     "id": "entrance",
     "title": "Welcome to the Manual",
+    "subheader": "Choose an Option to Progress",
     "image": "screenshots/common/entrance.png",
     "page": null,
     "parents": ["terminal-flashboss"],
@@ -25,7 +26,7 @@
       "about-1": "8",
       "terminal": "9"
     },
-    "description": "FlashBoss supports up to 5 user profiles. Each slot shows the user's avatar, name, and chosen master.\n\nEmpty slots display \"Create New Hero\" - selecting one begins character creation. Selecting an existing profile opens Profile Data.\n\nSystem options: Backup Vault (6), About & Help (8), Exit (9)."
+    "description": "FlashBoss supports up to 5 user profiles. Each slot shows the user's avatar, name, and chosen master.\n\nEmpty slots display \"Create New Hero\" - selecting one begins character creation. Selecting an existing profile opens Profile Data."
   },
   "create-username": {
     "id": "create-username",
