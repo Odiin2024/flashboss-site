@@ -3,42 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Grimoire - FlashBoss Manual</title>
-    <link rel="stylesheet" href="style.css">
+    <title>The Grimoire - FlashBoss</title>
+    <meta name="description" content="The Grimoire lets you do extra practice sessions and earn Drive - saved-up days off that protect your streak.">
+
     <link rel="icon" type="image/png" href="../icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: url('images/fog.jpeg') center center / cover no-repeat fixed;
+            background-color: #0a0a19;
+            color: #f0e6d3;
+            min-height: 100vh;
+            line-height: 1.6;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.1);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header h1 {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ff66ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .header .tagline {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #7ec8ff;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(126, 200, 255, 0.3);
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .section ul {
+            margin: 1rem 0 1rem 1.5rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .section li strong {
+            color: #ff66ff;
+        }
+
+        /* Highlight box */
+        .highlight-box {
+            background: rgba(255, 102, 255, 0.1);
+            border: 1px solid rgba(255, 102, 255, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            font-size: 1.1rem;
+            color: #ff66ff;
+            text-align: center;
+        }
+
+        /* Links */
+        a {
+            color: #7ec8ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            .header h1 {
+                font-size: 3rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <a href="index.html" class="back-link">&larr; Back to Manual</a>
+        <header class="header">
+            <h1>The Grimoire</h1>
+            <p class="tagline">Extra practice, earned protection</p>
+        </header>
 
-        <div class="content">
-            <h2>The Grimoire</h2>
-
-            <h3>What Is the Grimoire?</h3>
+        <section class="section">
+            <h2>What Is the Grimoire?</h2>
             <p>The Grimoire is a magical tome that allows you to do extra practice sessions after completing your daily requirements. Using the Grimoire earns you Drive.</p>
+        </section>
 
-            <h3>Powerdrive Sessions</h3>
+        <section class="section">
+            <h2>Powerdrive Sessions</h2>
             <p>After completing your daily streak requirement, the Grimoire becomes available. Each Powerdrive session lets you review additional cards beyond your daily minimum.</p>
+        </section>
 
-            <h3>Drive: Days Off Earned</h3>
+        <section class="section">
+            <h2>Drive: Days Off Earned</h2>
             <p>When you complete a Grimoire session, you pull time forward by a day within the sanctum. Drive is the mismatch between sanctum time and reality.</p>
-            <p><strong>In other words: Your Drive equals saved-up days off.</strong></p>
-            <p>If you miss a day of practice, Drive is consumed instead of breaking your streak. This protects dedicated learners who occasionally need a break.</p>
 
-            <h3>Session Limits</h3>
+            <div class="highlight-box">
+                <p>Your Drive equals saved-up days off.</p>
+            </div>
+
+            <p>If you miss a day of practice, Drive is consumed instead of breaking your streak. This protects dedicated learners who occasionally need a break.</p>
+        </section>
+
+        <section class="section">
+            <h2>Session Limits</h2>
             <p>Some masters limit how many Powerdrive sessions you can do per day:</p>
             <ul>
                 <li><strong>Luna, Shen, Aquila:</strong> Maximum 3 sessions per day</li>
                 <li><strong>Claude, Odiin, Kitsune:</strong> No daily limit</li>
             </ul>
             <p>Masters with limits celebrate your dedication but encourage rest. Masters without limits trust you to manage your own pace.</p>
+        </section>
 
-            <h3>Strategic Use</h3>
+        <section class="section">
+            <h2>Strategic Use</h2>
             <p>Build up Drive before vacations, busy periods, or times when you know you won't be able to practice. Your accumulated Drive will protect your streak.</p>
-        </div>
+        </section>
 
-        <footer>
-            <p><a href="index.html">Back to Manual</a> | <a href="../index.html">FlashBoss Home</a></p>
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="index.html">Back to Manual</a>
+                <a href="../home.html">Hub</a>
+                <a href="https://store.steampowered.com/app/4134440/FlashBoss/">Steam</a>
+            </div>
         </footer>
     </div>
 </body>
