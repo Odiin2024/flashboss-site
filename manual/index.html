@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlashBoss Manual</title>
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=3">
     <link rel="icon" type="image/png" href="../icon.png">
     <style>
         /* Manual header bar */
@@ -12,48 +12,26 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            margin-bottom: 0.75rem;
-        }
-
-        .manual-header-inner {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            background: #2a1f3d;
-            padding: 0.4rem 0.5rem 0.4rem 0.75rem;
-            border-radius: 4px;
-        }
-
-        .manual-title {
-            font-family: var(--font-pixel);
-            font-size: 1.1rem;
-            color: var(--grey);
-            letter-spacing: 0.05em;
-            line-height: 1;
+            margin-bottom: 0.4rem;
         }
 
         /* Toggle button */
         .view-toggle {
-            background: transparent;
-            border: 1px solid var(--grey);
-            border-radius: 3px;
-            color: var(--moon-cream);
-            width: 1.3rem;
-            height: 1.3rem;
+            background: rgba(10, 10, 25, 0.5);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 102, 255, 0.2);
+            border-radius: 4px;
+            color: var(--grey);
+            padding: 0.3rem 0.75rem;
             cursor: pointer;
-            transition: border-color 0.2s, background 0.2s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            transition: border-color 0.2s, color 0.2s;
+            font-size: 0.75rem;
         }
 
         .view-toggle:hover {
-            border-color: var(--moon-yellow);
-            background: rgba(255, 255, 255, 0.1);
-        }
-
-        .toggle-icon {
-            font-size: 0.7rem;
+            border-color: rgba(255, 102, 255, 0.4);
+            color: var(--moon-cream);
         }
 
         /* Book wrapper - ensure proper sizing */
@@ -65,20 +43,21 @@
             height: 100vh;
             display: flex;
             flex-direction: column;
-            padding: 8vh 8vw;
+            padding: 4vh 8vw;
             box-sizing: border-box;
         }
 
-        /* Book cover frame */
+        /* Book cover frame - magical glow */
         .book-cover {
             flex: 1;
             display: flex;
-            background: #2a1f3d;
+            background: transparent;
             border-radius: 8px;
-            padding: 0.75rem;
+            padding: 3px;
             box-shadow:
-                0 4px 20px rgba(0, 0, 0, 0.5),
-                inset 0 0 20px rgba(0, 0, 0, 0.3);
+                0 0 20px rgba(255, 102, 255, 0.3),
+                0 0 40px rgba(255, 102, 255, 0.15),
+                0 0 60px rgba(126, 200, 255, 0.1);
         }
 
         .book-cover .book-pages {
@@ -87,12 +66,17 @@
             grid-template-columns: 1fr 1fr;
             box-shadow: none;
             position: relative;
+            background: rgba(10, 10, 25, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 6px;
+            border: 1px solid rgba(255, 102, 255, 0.2);
         }
 
         /* Page header styling */
         .page-header-area {
             padding: 1rem 1.5rem 0.75rem;
-            border-bottom: 1px solid rgba(255, 255, 215, 0.2);
+            border-bottom: 1px solid rgba(255, 102, 255, 0.15);
             margin-bottom: 1rem;
         }
 
@@ -118,12 +102,13 @@
         .tile-cover {
             flex: 1;
             display: flex;
-            background: #2a1f3d;
+            background: transparent;
             border-radius: 8px;
-            padding: 0.75rem;
+            padding: 3px;
             box-shadow:
-                0 4px 20px rgba(0, 0, 0, 0.5),
-                inset 0 0 20px rgba(0, 0, 0, 0.3);
+                0 0 20px rgba(255, 102, 255, 0.3),
+                0 0 40px rgba(255, 102, 255, 0.15),
+                0 0 60px rgba(126, 200, 255, 0.1);
         }
 
         /* Tile view - book layout */
@@ -131,8 +116,11 @@
             flex: 1;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            background: #3d3552;
-            border-radius: 4px;
+            background: rgba(10, 10, 25, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 6px;
+            border: 1px solid rgba(255, 102, 255, 0.2);
         }
 
         .tile-page {
@@ -141,7 +129,7 @@
         }
 
         .tile-page-left {
-            border-right: 3px solid #2a1f3d;
+            border-right: 1px solid rgba(255, 102, 255, 0.15);
         }
 
         .tile-grid {
@@ -188,10 +176,10 @@
 
         /* Left page - navigation tree */
         .book-left {
-            border-right: 3px solid #2a1f3d;
+            border-right: 1px solid rgba(255, 102, 255, 0.15);
             display: flex;
             flex-direction: column;
-            background: #3d3552;
+            background: transparent;
         }
 
         /* Page content area */
@@ -199,10 +187,10 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
-            gap: 1rem;
-            padding: 1rem 1.5rem;
+            gap: 0.75rem;
+            padding: 0.75rem 1rem;
         }
 
         /* Page footer */
@@ -220,13 +208,13 @@
 
         .page-footer .footer-link {
             font-size: 0.8rem;
-            color: var(--grey);
+            color: var(--link-blue);
             text-decoration: none;
             transition: color 0.2s;
         }
 
         .page-footer .footer-link:hover {
-            color: var(--moon-cream);
+            color: #ffffff;
         }
 
         .page-footer .footer-divider {
@@ -238,33 +226,22 @@
             text-align: center;
         }
 
-        .page-footer .apply-link {
-            color: var(--moon-yellow);
-        }
 
-        .page-footer .apply-link:hover {
-            color: #ffffff;
-        }
-
-        /* Horizontal navigation flow: parent -> focus */
-        .nav-flow {
+        /* Navigation row: back + parents at top */
+        .nav-row {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 0.5rem;
             flex-wrap: wrap;
-        }
-
-        .nav-arrow {
-            color: var(--coral);
-            font-size: 1.2rem;
+            width: 100%;
         }
 
         /* Back button */
         .back-btn {
-            width: 50px;
-            height: 50px;
-            background: rgba(126, 200, 255, 0.15);
+            width: 44px;
+            height: 48px;
+            background: rgba(138, 180, 212, 0.15);
             border: 2px solid var(--grey);
             border-radius: 4px;
             display: flex;
@@ -279,7 +256,7 @@
         .back-btn:hover {
             border-color: var(--link-blue);
             color: var(--link-blue);
-            background: rgba(126, 200, 255, 0.25);
+            background: rgba(138, 180, 212, 0.25);
         }
 
         .back-btn.disabled {
@@ -288,37 +265,17 @@
             pointer-events: none;
         }
 
-        /* Hover-linked words in description */
-        .hover-word {
-            color: #7ec8ff;
-            cursor: help;
-            transition: filter 0.2s, text-shadow 0.2s;
-        }
-
-        .hover-word:hover,
-        .hover-word.glow {
-            filter: drop-shadow(0 0 8px rgba(126, 200, 255, 0.8));
-            text-shadow: 0 0 8px rgba(126, 200, 255, 0.8), 0 0 20px rgba(126, 200, 255, 0.5);
-        }
-
-        /* Glowing state for thumbnails */
-        .parent-thumb.glow,
-        .focus-thumb.glow,
-        .child-thumb .thumb-box.glow {
-            filter: drop-shadow(0 0 8px rgba(126, 200, 255, 0.8)) drop-shadow(0 0 20px rgba(126, 200, 255, 0.5));
-        }
-
         /* Parent thumbnails */
         .parent-thumb {
-            width: 80px;
-            height: 88px;
+            width: 55px;
+            height: 60px;
             background: var(--bg-dark);
             border: 2px solid var(--grey);
             border-radius: 4px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.5rem;
+            font-size: 0.4rem;
             color: var(--grey);
             text-decoration: none;
             cursor: pointer;
@@ -337,12 +294,22 @@
             object-fit: cover;
         }
 
-        /* Main/focus page display */
+        /* Main area: focus + children side by side */
+        .main-area {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 1rem;
+            flex: 1;
+            width: 100%;
+        }
+
+        /* Main/focus page display - larger */
         .focus-thumb {
-            width: 180px;
-            height: 195px;
+            width: 220px;
+            height: 240px;
             background: var(--bg-dark);
-            border: 3px solid var(--moon-yellow);
+            border: 2px solid rgba(255, 102, 255, 0.5);
             border-radius: 6px;
             display: flex;
             align-items: center;
@@ -355,11 +322,14 @@
             overflow: hidden;
             text-decoration: none;
             cursor: pointer;
-            transition: border-color 0.2s, transform 0.2s;
+            transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+            flex-shrink: 0;
+            box-shadow: 0 0 10px rgba(255, 102, 255, 0.2);
         }
 
         .focus-thumb:hover {
-            border-color: var(--coral);
+            border-color: var(--link-blue);
+            box-shadow: 0 0 15px rgba(126, 200, 255, 0.4), 0 0 25px rgba(126, 200, 255, 0.2);
             transform: scale(1.02);
         }
 
@@ -370,72 +340,50 @@
             border-radius: 2px;
         }
 
-        /* Child thumbnails */
+        /* Numbered children list - to the right of focus */
         .nav-children {
             display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            justify-content: center;
-            margin-top: 0.5rem;
-        }
-
-        .child-thumb {
-            display: flex;
             flex-direction: column;
-            align-items: center;
-            gap: 0.25rem;
-            text-decoration: none;
-            cursor: pointer;
-            transition: transform 0.2s;
+            gap: 0.35rem;
+            min-width: 140px;
+            max-width: 180px;
         }
 
-        .child-thumb:hover {
-            transform: translateY(-2px);
-        }
-
-        .child-thumb .menu-num {
-            font-family: var(--font-pixel);
-            font-size: 0.6rem;
-            color: var(--coral);
-        }
-
-        .child-thumb .thumb-box {
-            width: 70px;
-            height: 77px;
-            background: var(--bg-dark);
-            border: 2px solid var(--link-blue);
-            border-radius: 4px;
+        .child-item {
             display: flex;
             align-items: center;
-            justify-content: center;
-            font-size: 0.45rem;
-            color: var(--grey);
-            overflow: hidden;
+            gap: 0.5rem;
+            padding: 0.4rem 0.6rem;
+            background: rgba(138, 180, 212, 0.1);
+            border: 1px solid rgba(138, 180, 212, 0.3);
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s, border-color 0.2s;
+            text-decoration: none;
         }
 
-        .child-thumb:hover .thumb-box {
+        .child-item:hover {
+            background: rgba(138, 180, 212, 0.2);
             border-color: var(--moon-yellow);
         }
 
-        .child-thumb .thumb-box img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .child-num {
+            font-family: var(--font-pixel);
+            font-size: 0.5rem;
+            color: var(--coral);
+            min-width: 1.5rem;
         }
 
-        .child-thumb .thumb-label {
-            font-size: 0.65rem;
-            color: var(--grey);
-            max-width: 80px;
-            text-align: center;
-            line-height: 1.2;
+        .child-title {
+            font-size: 0.75rem;
+            color: var(--moon-cream);
         }
 
         /* Right page - description */
         .book-right {
             display: flex;
             flex-direction: column;
-            background: #3d3552;
+            background: transparent;
         }
 
         .book-right .page-content {
@@ -448,27 +396,154 @@
             margin-bottom: 1rem;
         }
 
-        /* Zoom view */
+        /* Zoom view - fullscreen overlay */
         .zoom-view {
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background: #3d3552;
+            background: rgba(10, 10, 25, 0.85);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
             border-radius: 4px;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            padding: 1rem;
+            flex-direction: column;
+            padding: 1.5rem;
+            overflow-y: auto;
         }
 
-        .zoom-view img {
+        .zoom-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid rgba(255, 102, 255, 0.15);
+        }
+
+        .zoom-title {
+            font-family: var(--font-pixel);
+            font-size: 0.9rem;
+            color: var(--moon-cream);
+        }
+
+        .zoom-close {
+            background: transparent;
+            border: 1px solid var(--grey);
+            border-radius: 4px;
+            color: var(--grey);
+            padding: 0.4rem 0.75rem;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .zoom-close:hover {
+            border-color: var(--coral);
+            color: var(--coral);
+        }
+
+        .zoom-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            flex: 1;
+        }
+
+        .zoom-image-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .zoom-image-area img {
             max-width: 100%;
-            max-height: 100%;
+            max-height: 60vh;
             object-fit: contain;
             border-radius: 4px;
+            border: 2px solid rgba(255, 102, 255, 0.5);
+            box-shadow: 0 0 15px rgba(255, 102, 255, 0.3);
+        }
+
+        .zoom-learn-more {
+            display: inline-block;
+            background: rgba(126, 200, 255, 0.15);
+            border: 1px solid var(--link-blue);
+            border-radius: 4px;
+            padding: 0.5rem 1rem;
+            color: var(--link-blue);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+
+        .zoom-learn-more:hover {
+            background: rgba(126, 200, 255, 0.25);
+            box-shadow: 0 0 10px rgba(126, 200, 255, 0.3);
+            color: #ffffff;
+        }
+
+        .zoom-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .zoom-description {
+            color: var(--moon-cream);
+            line-height: 1.8;
+        }
+
+        .zoom-description p {
+            margin-bottom: 1rem;
+        }
+
+        .zoom-children {
+            margin-top: 1rem;
+        }
+
+        .zoom-children-title {
+            font-size: 0.85rem;
+            color: var(--grey);
+            margin-bottom: 0.75rem;
+            font-style: italic;
+        }
+
+        .zoom-child-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .zoom-child-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.5rem 0.75rem;
+            background: rgba(138, 180, 212, 0.1);
+            border: 1px solid rgba(138, 180, 212, 0.3);
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .zoom-child-item:hover {
+            background: rgba(138, 180, 212, 0.2);
+            border-color: var(--moon-yellow);
+        }
+
+        .zoom-child-num {
+            font-family: var(--font-pixel);
+            font-size: 0.6rem;
+            color: var(--coral);
+            min-width: 2rem;
+        }
+
+        .zoom-child-title {
+            font-size: 0.85rem;
+            color: var(--moon-cream);
         }
 
         /* Hidden state */
@@ -482,7 +557,7 @@
         @media (max-width: 768px) {
             .book-wrapper {
                 position: relative;
-                padding: 4vh 4vw;
+                padding: 2vh 4vw;
                 height: auto;
                 min-height: 100vh;
             }
@@ -498,27 +573,27 @@
 
             .book-left {
                 border-right: none;
-                border-bottom: 3px solid #2a1f3d;
+                border-bottom: 1px solid rgba(255, 102, 255, 0.15);
             }
 
-            .nav-flow {
-                flex-direction: row;
-                gap: 0.5rem;
+            .main-area {
+                flex-direction: column;
+                align-items: center;
             }
 
             .focus-thumb {
-                width: 140px;
-                height: 154px;
+                width: 160px;
+                height: 175px;
             }
 
             .parent-thumb {
-                width: 60px;
-                height: 66px;
+                width: 45px;
+                height: 50px;
             }
 
-            .child-thumb .thumb-box {
-                width: 55px;
-                height: 60px;
+            .nav-children {
+                max-width: 100%;
+                min-width: auto;
             }
 
             .tile-pages {
@@ -527,7 +602,7 @@
 
             .tile-page-left {
                 border-right: none;
-                border-bottom: 3px solid #2a1f3d;
+                border-bottom: 1px solid rgba(255, 102, 255, 0.15);
             }
 
             .tile-grid {
@@ -540,15 +615,16 @@
             }
 
             .manual-header {
-                margin-bottom: 0.5rem;
+                margin-bottom: 0.3rem;
             }
 
-            .manual-title {
-                font-size: 0.8rem;
+            .view-toggle {
+                font-size: 0.65rem;
+                padding: 0.25rem 0.5rem;
             }
 
-            .manual-header-inner {
-                padding: 0.3rem 0.4rem 0.3rem 0.6rem;
+            .zoom-content {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -558,12 +634,7 @@
     <div class="book-wrapper">
         <!-- Header bar -->
         <div class="manual-header">
-            <div class="manual-header-inner">
-                <span class="manual-title">Toggle View</span>
-                <button class="view-toggle" id="viewToggle" title="Switch view">
-                    <span class="toggle-icon" id="toggleIcon">&#9638;</span>
-                </button>
-            </div>
+            <button class="view-toggle" id="viewToggle">Change to Tile View</button>
         </div>
 
         <!-- BOOK VIEW -->
@@ -575,11 +646,14 @@
                         <p class="page-instruction">Select a screen to learn more</p>
                     </div>
                     <div class="page-content">
-                        <div class="nav-flow" id="navFlow"></div>
-                        <div class="nav-children" id="navChildren"></div>
+                        <div class="nav-row" id="navRow"></div>
+                        <div class="main-area">
+                            <div class="focus-thumb" id="focusThumb"></div>
+                            <div class="nav-children" id="navChildren"></div>
+                        </div>
                     </div>
                     <div class="page-footer">
-                        <p class="hint" id="leftHint">Click a thumbnail to shift focus. Click the center image to zoom in.</p>
+                        <p class="hint" id="leftHint">Click the center image to expand</p>
                     </div>
                 </div>
 
@@ -592,15 +666,33 @@
                         <div id="focusDescription"></div>
                     </div>
                     <div class="page-footer">
-                        <a href="../beta-key.html" class="footer-link apply-link">Ready for a beta key? →</a>
-                        <span class="footer-divider">·</span>
+                        <a href="../beta-key.html" class="footer-link">Ready for a Beta Key?</a>
+                        <span class="footer-divider">&middot;</span>
                         <a href="../home.html" class="footer-link">Hub</a>
+                        <span class="footer-divider">&middot;</span>
+                        <a href="https://store.steampowered.com/app/4134440/FlashBoss/" class="footer-link">Visit Steam</a>
                     </div>
                 </div>
 
-                <!-- Zoom view (full page image) -->
+                <!-- Zoom view (fullscreen overlay) -->
                 <div class="zoom-view hidden" id="zoomView">
-                    <img id="zoomImage" src="" alt="">
+                    <div class="zoom-header">
+                        <span class="zoom-title" id="zoomTitle"></span>
+                        <button class="zoom-close" id="zoomClose">Close</button>
+                    </div>
+                    <div class="zoom-content">
+                        <div class="zoom-image-area">
+                            <img id="zoomImage" src="" alt="">
+                            <a id="zoomLearnMore" href="#" class="zoom-learn-more">Learn more &rarr;</a>
+                        </div>
+                        <div class="zoom-details">
+                            <div class="zoom-description" id="zoomDescription"></div>
+                            <div class="zoom-children" id="zoomChildrenArea">
+                                <p class="zoom-children-title">Navigate to:</p>
+                                <div class="zoom-child-list" id="zoomChildList"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -688,7 +780,7 @@
             isBookView = showBook;
             document.getElementById('bookView').classList.toggle('hidden', !isBookView);
             document.getElementById('tileView').classList.toggle('hidden', isBookView);
-            document.getElementById('toggleIcon').innerHTML = isBookView ? '&#9638;' : '&#9776;';
+            document.getElementById('viewToggle').textContent = isBookView ? 'Change to Tile View' : 'Change to Grimoire View';
         }
 
         document.getElementById('viewToggle').addEventListener('click', () => {
@@ -704,25 +796,78 @@
             }
         }
 
-        // Zoom in on the focus image
-        let isZoomed = false;
+        // Zoom in on the focus image - shows fullscreen overlay
         function zoomIn() {
             const focus = screens[currentFocus];
-            if (!focus || !focus.image) return;
+            if (!focus) return;
 
-            document.getElementById('zoomImage').src = focus.image;
+            // Set title
+            document.getElementById('zoomTitle').textContent = focus.title;
+
+            // Set image
+            const zoomImg = document.getElementById('zoomImage');
+            if (focus.image) {
+                zoomImg.src = focus.image;
+                zoomImg.style.display = 'block';
+            } else {
+                zoomImg.style.display = 'none';
+            }
+
+            // Set learn more link
+            const learnMoreLink = document.getElementById('zoomLearnMore');
+            if (focus.page) {
+                learnMoreLink.href = focus.page;
+                learnMoreLink.style.display = 'inline-block';
+            } else {
+                learnMoreLink.style.display = 'none';
+            }
+
+            // Set description
+            const descDiv = document.getElementById('zoomDescription');
+            descDiv.innerHTML = '';
+            focus.description.split('\n\n').forEach(para => {
+                const p = document.createElement('p');
+                p.textContent = para;
+                descDiv.appendChild(p);
+            });
+
+            // Set children
+            const childrenArea = document.getElementById('zoomChildrenArea');
+            const childList = document.getElementById('zoomChildList');
+            childList.innerHTML = '';
+
+            if (focus.children.length > 0) {
+                childrenArea.style.display = 'block';
+                focus.children.forEach(childId => {
+                    const child = screens[childId];
+                    if (!child) return;
+
+                    const menuNum = focus.childLabels ? (focus.childLabels[childId] || '') : '';
+
+                    const item = document.createElement('div');
+                    item.className = 'zoom-child-item';
+                    item.innerHTML = `
+                        <span class="zoom-child-num">${menuNum}</span>
+                        <span class="zoom-child-title">${child.title}</span>
+                    `;
+                    item.onclick = () => {
+                        zoomOut();
+                        setFocus(childId);
+                    };
+                    childList.appendChild(item);
+                });
+            } else {
+                childrenArea.style.display = 'none';
+            }
+
             document.getElementById('zoomView').classList.remove('hidden');
-            document.getElementById('leftHint').textContent = 'Click the image to zoom out.';
-            isZoomed = true;
         }
 
         function zoomOut() {
             document.getElementById('zoomView').classList.add('hidden');
-            document.getElementById('leftHint').textContent = 'Click a thumbnail to shift focus. Click the center image to zoom in.';
-            isZoomed = false;
         }
 
-        document.getElementById('zoomView').addEventListener('click', zoomOut);
+        document.getElementById('zoomClose').addEventListener('click', zoomOut);
 
         // Load screen data
         fetch('screens.json')
@@ -748,9 +893,9 @@
             const focus = screens[currentFocus];
             if (!focus) return;
 
-            // Render navigation flow (back -> parents -> focus)
-            const navFlow = document.getElementById('navFlow');
-            navFlow.innerHTML = '';
+            // Render navigation row (back + parents)
+            const navRow = document.getElementById('navRow');
+            navRow.innerHTML = '';
 
             // Add back button
             const backBtn = document.createElement('div');
@@ -758,10 +903,10 @@
             backBtn.textContent = '↩';
             backBtn.title = 'Go back';
             backBtn.onclick = goBack;
-            navFlow.appendChild(backBtn);
+            navRow.appendChild(backBtn);
 
             // Add parents
-            focus.parents.forEach((parentId, index) => {
+            focus.parents.forEach((parentId) => {
                 const parent = screens[parentId];
                 if (!parent) return;
 
@@ -774,32 +919,19 @@
                 } else {
                     parentEl.textContent = parent.title;
                 }
-                navFlow.appendChild(parentEl);
-
-                // Add arrow after parent
-                const arrow = document.createElement('span');
-                arrow.className = 'nav-arrow';
-                arrow.innerHTML = '&rarr;';
-                navFlow.appendChild(arrow);
+                navRow.appendChild(parentEl);
             });
 
-            // Add focus
-            const focusEl = document.createElement('div');
-            focusEl.className = 'focus-thumb';
+            // Update focus thumbnail
+            const focusThumb = document.getElementById('focusThumb');
             if (focus.image) {
-                focusEl.innerHTML = `<img src="${focus.image}" alt="${focus.title}">`;
-                // If the screen has a dedicated page (not a walkthrough), navigate there
-                if (focus.page && !focus.page.startsWith('walkthrough/')) {
-                    focusEl.onclick = () => window.location.href = focus.page;
-                } else {
-                    focusEl.onclick = zoomIn;
-                }
+                focusThumb.innerHTML = `<img src="${focus.image}" alt="${focus.title}">`;
             } else {
-                focusEl.textContent = focus.title;
+                focusThumb.textContent = focus.title;
             }
-            navFlow.appendChild(focusEl);
+            focusThumb.onclick = zoomIn;
 
-            // Render children
+            // Render numbered children list
             const navChildren = document.getElementById('navChildren');
             navChildren.innerHTML = '';
 
@@ -807,61 +939,28 @@
                 const child = screens[childId];
                 if (!child) return;
 
-                const childEl = document.createElement('div');
-                childEl.className = 'child-thumb';
-                childEl.onclick = () => setFocus(childId);
+                const menuNum = focus.childLabels ? (focus.childLabels[childId] || '') : '';
 
-                // Get menu number label if exists
-                const menuNum = focus.childLabels ? focus.childLabels[childId] : '';
+                const item = document.createElement('div');
+                item.className = 'child-item';
+                item.onclick = () => setFocus(childId);
 
-                let thumbContent;
-                if (child.image) {
-                    thumbContent = `<img src="${child.image}" alt="${child.title}">`;
-                } else {
-                    thumbContent = child.title.substring(0, 8);
-                }
-
-                childEl.innerHTML = `
-                    <span class="menu-num">${menuNum}</span>
-                    <div class="thumb-box">${thumbContent}</div>
-                    <span class="thumb-label">${child.title}</span>
+                item.innerHTML = `
+                    <span class="child-num">${menuNum}</span>
+                    <span class="child-title">${child.title}</span>
                 `;
-                navChildren.appendChild(childEl);
+                navChildren.appendChild(item);
             });
 
-            // Render description with hover-linked words
+            // Render description
             document.getElementById('focusTitle').textContent = focus.title;
 
             const descDiv = document.getElementById('focusDescription');
             descDiv.innerHTML = '';
             focus.description.split('\n\n').forEach(para => {
                 const p = document.createElement('p');
-                // Wrap parent/focus/child in hover-word spans
-                let html = para
-                    .replace(/\bparent\b/gi, '<span class="hover-word" data-target="parent">parent</span>')
-                    .replace(/\bfocus\b/gi, '<span class="hover-word" data-target="focus">focus</span>')
-                    .replace(/\bchild\b/gi, '<span class="hover-word" data-target="child">child</span>');
-                p.innerHTML = html;
+                p.textContent = para;
                 descDiv.appendChild(p);
-            });
-
-            // Add hover listeners for linked words
-            descDiv.querySelectorAll('.hover-word').forEach(word => {
-                word.addEventListener('mouseenter', () => {
-                    const target = word.dataset.target;
-                    word.classList.add('glow');
-                    if (target === 'parent') {
-                        document.querySelectorAll('.parent-thumb').forEach(el => el.classList.add('glow'));
-                    } else if (target === 'focus') {
-                        document.querySelectorAll('.focus-thumb').forEach(el => el.classList.add('glow'));
-                    } else if (target === 'child') {
-                        document.querySelectorAll('.child-thumb .thumb-box').forEach(el => el.classList.add('glow'));
-                    }
-                });
-                word.addEventListener('mouseleave', () => {
-                    word.classList.remove('glow');
-                    document.querySelectorAll('.parent-thumb, .focus-thumb, .child-thumb .thumb-box').forEach(el => el.classList.remove('glow'));
-                });
             });
         }
 

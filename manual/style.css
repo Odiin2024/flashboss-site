@@ -8,13 +8,15 @@
 }
 
 :root {
-    --bg-dark: #171421;
+    /* Magic book theme */
+    --bg-dark: #0a0a19;
     --bg-card: #1e1a2e;
-    --moon-cream: #ffffd7;
+    --moon-cream: #f0e6d3;
     --coral: #ff875f;
     --moon-yellow: #ffff5f;
+    --magic-pink: #ff66ff;
     --grey: #8a8a8a;
-    --link-blue: #87afff;
+    --link-blue: #7ec8ff;
     --font-pixel: 'Press Start 2P', cursive;
 }
 
@@ -50,12 +52,14 @@ body {
     flex: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: #3d3552;
+    background: rgba(10, 10, 25, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-radius: 6px;
     overflow: hidden;
     box-shadow:
-        0 4px 20px rgba(0, 0, 0, 0.4),
-        inset 0 0 60px rgba(0, 0, 0, 0.15);
+        0 0 20px rgba(255, 102, 255, 0.2),
+        0 0 40px rgba(255, 102, 255, 0.1);
 }
 
 /* Header */
@@ -151,7 +155,7 @@ li {
 
 /* Code/command styling */
 code {
-    background: #2a2440;
+    background: rgba(255, 102, 255, 0.15);
     padding: 0.2rem 0.5rem;
     border-radius: 4px;
     font-family: 'Consolas', 'Monaco', monospace;
@@ -417,7 +421,7 @@ footer p:last-child {
 }
 
 .setup-guide .command-block {
-    background: #2a2440;
+    background: rgba(255, 102, 255, 0.1);
     padding: 1rem;
     border-radius: 4px;
     margin: 1rem 0;

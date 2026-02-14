@@ -200,40 +200,40 @@
             color: #ffffff;
         }
 
-        /* Fallback / wishlist */
-        .fallback {
-            text-align: center;
-            padding-top: 1rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        /* Support row - subtle side by side options */
+        .support-row {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
-        .fallback p {
-            font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.6);
-            margin-bottom: 0.75rem;
-        }
-
-        .steam-btn {
-            display: inline-block;
-            background: rgba(102, 192, 244, 0.2);
-            border: 1px solid rgba(102, 192, 244, 0.5);
-            border-radius: 4px;
-            padding: 0.5rem 1rem;
-            font-size: 0.85rem;
-            font-weight: 500;
-            color: #66c0f4;
+        .support-option {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.25rem;
+            padding: 0.75rem 1.25rem;
             text-decoration: none;
-            transition: background 0.2s, border-color 0.2s;
+            transition: opacity 0.2s;
         }
 
-        .steam-btn:hover {
-            background: rgba(102, 192, 244, 0.3);
-            border-color: rgba(102, 192, 244, 0.7);
+        .support-option:hover {
+            opacity: 0.8;
         }
 
-        /* Affiliate section */
-        .affiliate-section {
-            border-color: rgba(255, 102, 255, 0.3);
+        .support-label {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .support-action {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .support-option:hover .support-action {
+            color: #ffffff;
         }
 
         /* Footer */
@@ -364,20 +364,20 @@
                         </div>
                     </div>
 
-                    <div class="fallback">
-                        <p>Support the Game Directly</p>
-                        <a href="https://store.steampowered.com/app/4134440/FlashBoss/" class="steam-btn">Wishlist on Steam</a>
-                    </div>
                 </section>
             </div>
 
-            <!-- Affiliate Section -->
-            <section class="card-section affiliate-section">
-                <h2>Affiliate Program</h2>
-                <p class="intro">Earn $1.00 per sale you refer. Transparent tracking, monthly payouts.</p>
-                <p>Content creators, educators, and community members welcome. Get your unique tracking link and start earning.</p>
-                <a href="affiliate.html" class="path-link">View program details →</a>
-            </section>
+            <!-- Support Options - subtle, side by side -->
+            <div class="support-row">
+                <a href="https://store.steampowered.com/app/4134440/FlashBoss/" class="support-option">
+                    <span class="support-label">Support the project</span>
+                    <span class="support-action">Wishlist on Steam →</span>
+                </a>
+                <a href="affiliate.html" class="support-option">
+                    <span class="support-label">Teacher or content creator?</span>
+                    <span class="support-action">Learn about our affiliate program →</span>
+                </a>
+            </div>
         </main>
 
         <footer class="footer">
