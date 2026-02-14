@@ -31,18 +31,18 @@
   "gates": {
     "id": "gates",
     "title": "The Gates",
+    "subheader": "Welcome back to FlashBoss",
     "image": "screenshots/common/gates.png",
     "page": "walkthrough/gates.html",
     "parents": ["profile-select"],
-    "children": ["sanctum", "profile-data", "export-progress", "about-1", "profile-select"],
+    "children": ["sanctum", "create-pack", "tier-skip", "profile-select"],
     "childLabels": {
       "sanctum": "5",
-      "profile-data": "6",
-      "export-progress": "7",
-      "about-1": "8",
+      "create-pack": "7",
+      "tier-skip": "8",
       "profile-select": "9"
     },
-    "description": "Welcome back to FlashBoss. Your master greets you at the gates.\n\nOptions: 5 Sanctum, 6 Profile Data, 7 Backup, 8 About, 9 Back."
+    "description": "Each day you enter the academy, your master meets you at the gates. What are you here for today?\n\nHave you come to study your flashcards, or are you looking to go to another class? If you would like to take a level placement test, you can prove your knowledge and skip tiers with the Tier Skip Challenge, Option 8."
   },
   "create-username": {
     "id": "create-username",
@@ -163,11 +163,12 @@
     "image": "screenshots/common/create-pack.png",
     "page": "walkthrough/create-pack.html",
     "layout": "terminal",
-    "parents": ["create-master"],
-    "children": ["sanctum-eo", "sanctum-de"],
+    "parents": ["create-master", "gates"],
+    "children": ["sanctum-eo", "sanctum-de", "gates"],
     "childLabels": {
       "sanctum-eo": "1",
-      "sanctum-de": "2"
+      "sanctum-de": "2",
+      "gates": "9"
     },
     "childDisplayNames": {
       "sanctum-eo": "The Sanctum (Esperanto)",
@@ -227,7 +228,10 @@
       "profile-data": "6",
       "profile-select": "9"
     },
-    "description": "The Sanctum is your desk. From here, you can study.\n\n4 allows you to see your word lists. 5 allows you to study your flashcards, and 6 lets you keep track of your progress.\n\nThere are many more options from there."
+    "childDisplayNames": {
+      "spaced-repetition": "Continue Your Studies"
+    },
+    "descriptionHTML": "The Sanctum is your desk in your master's chambers. This is where you conduct your daily studies.\n\n<span class=\"desc-link\" data-target=\"know-your-enemy\">Know Your Enemy</span> allows you to see your word lists, and challenge bosses. <span class=\"desc-link\" data-target=\"spaced-repetition\">Review Cards</span> begins your studies, and <span class=\"desc-link\" data-target=\"profile-data\">Your Records</span> lets you keep track of your progress."
   },
   "know-your-enemy": {
     "id": "know-your-enemy",
@@ -250,12 +254,46 @@
   },
   "spaced-repetition": {
     "id": "spaced-repetition",
-    "title": "Spaced Repetition",
-    "image": null,
+    "title": "Continue Your Studies",
+    "subheader": "Spaced Repetition",
+    "image": "screenshots/common/spaced-repetition/58_screenshot.png",
+    "layout": "slideshow",
+    "slideshowImages": [
+      "screenshots/common/spaced-repetition/58_screenshot.png",
+      "screenshots/common/spaced-repetition/59_screenshot.png",
+      "screenshots/common/spaced-repetition/60_screenshot.png",
+      "screenshots/common/spaced-repetition/61_screenshot.png",
+      "screenshots/common/spaced-repetition/62_screenshot.png",
+      "screenshots/common/spaced-repetition/63_screenshot.png",
+      "screenshots/common/spaced-repetition/62_screenshot.png",
+      "screenshots/common/spaced-repetition/64_screenshot.png",
+      "screenshots/common/spaced-repetition/01_screenshot.png",
+      "screenshots/common/spaced-repetition/02_screenshot.png",
+      "screenshots/common/spaced-repetition/03_screenshot.png",
+      "screenshots/common/spaced-repetition/04_screenshot.png",
+      "screenshots/common/spaced-repetition/05_screenshot.png",
+      "screenshots/common/spaced-repetition/06_screenshot.png",
+      "screenshots/common/spaced-repetition/07_screenshot.png",
+      "screenshots/common/spaced-repetition/08_screenshot.png",
+      "screenshots/common/spaced-repetition/09_screenshot.png",
+      "screenshots/common/spaced-repetition/10_screenshot.png",
+      "screenshots/common/spaced-repetition/11_screenshot.png",
+      "screenshots/common/spaced-repetition/12_screenshot.png",
+      "screenshots/common/spaced-repetition/13_screenshot.png",
+      "screenshots/common/spaced-repetition/14_screenshot.png"
+    ],
     "page": "walkthrough/spaced-repetition.html",
     "parents": ["sanctum"],
-    "children": [],
-    "description": "Your daily flashcard practice. Cards are scheduled based on how well you remember them.\n\nThe core learning loop of FlashBoss."
+    "children": ["sanctum"],
+    "childLabels": {
+      "sanctum": "*"
+    },
+    "disabledButtons": ["↵", "6"],
+    "disabledTooltips": {
+      "↵": "Repeat Word (audio disabled)",
+      "6": "Repeat Sentence (audio disabled)"
+    },
+    "description": "Your daily flashcard practice. Rate each card 0-5 based on how well you remember it.\n\nPress * to advance. Enter repeats the word, 6 repeats the sentence."
   },
   "tier-skip": {
     "id": "tier-skip",
@@ -266,7 +304,7 @@
       "screenshots/common/tierskip2.png"
     ],
     "page": "walkthrough/tier-skip.html",
-    "parents": ["profile-data"],
+    "parents": ["profile-data", "gates"],
     "children": ["bossfight", "gates"],
     "childLabels": {
       "bossfight": "*",

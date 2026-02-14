@@ -215,6 +215,56 @@
             margin-bottom: 1rem;
         }
 
+        .desc-link {
+            color: var(--magic-pink);
+            cursor: pointer;
+            transition: text-shadow 0.2s, color 0.2s;
+        }
+
+        .desc-link:hover,
+        .desc-link.glow {
+            text-shadow: 0 0 10px rgba(255, 102, 255, 0.8);
+        }
+
+        .nav-child.glow {
+            border-color: rgba(255, 102, 255, 0.8);
+            box-shadow: 0 0 15px rgba(255, 102, 255, 0.5);
+        }
+
+        .nav-child.glow .child-num {
+            text-shadow: 0 0 8px rgba(255, 102, 255, 0.8);
+        }
+
+        /* Slideshow */
+        .slideshow-container {
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        .slideshow-counter {
+            font-family: var(--font-pixel);
+            font-size: 0.6rem;
+            color: var(--magic-pink);
+            margin-bottom: 0.25rem;
+        }
+
+        .slideshow-hint {
+            font-size: 0.75rem;
+            color: var(--grey);
+            font-style: italic;
+        }
+
+        /* Disabled buttons */
+        .nav-child.disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .nav-child.disabled .child-num {
+            color: var(--grey);
+        }
+
         /* Navigate to section */
         .nav-section {
             margin-top: auto;
@@ -784,6 +834,12 @@
             });
 
         function renderScreen() {
+            // Clean up any slideshow keyboard handlers from previous screen
+            if (window.slideshowCleanup) {
+                window.slideshowCleanup();
+                window.slideshowCleanup = null;
+            }
+
             const focus = screens[currentFocus];
             if (!focus) return;
 
@@ -847,10 +903,35 @@
             // Description
             const descDiv = document.getElementById('descriptionText');
             descDiv.innerHTML = '';
-            focus.description.split('\n\n').forEach(para => {
+            const descSource = focus.descriptionHTML || focus.description;
+            descSource.split('\n\n').forEach(para => {
                 const p = document.createElement('p');
-                p.textContent = para;
+                if (focus.descriptionHTML) {
+                    p.innerHTML = para;
+                } else {
+                    p.textContent = para;
+                }
                 descDiv.appendChild(p);
+            });
+
+            // Set up desc-link hover syncing
+            descDiv.querySelectorAll('.desc-link').forEach(link => {
+                const targetId = link.dataset.target;
+                link.onclick = () => {
+                    const actualTarget = (focus.childTargets && focus.childTargets[targetId]) || targetId;
+                    currentFocus = actualTarget;
+                    renderScreen();
+                };
+                link.onmouseenter = () => {
+                    link.classList.add('glow');
+                    document.querySelectorAll(`.nav-child[data-target="${targetId}"]`).forEach(nav => {
+                        nav.classList.add('glow');
+                    });
+                };
+                link.onmouseleave = () => {
+                    link.classList.remove('glow');
+                    document.querySelectorAll('.nav-child.glow').forEach(nav => nav.classList.remove('glow'));
+                };
             });
 
             // Terminal layout - special image grid
@@ -914,6 +995,55 @@
                     };
                     terminalGrid.appendChild(thumb);
                 });
+            } else if (focus.layout === 'slideshow' && focus.slideshowImages) {
+                // Slideshow layout - click to advance through images
+                terminalGrid.innerHTML = '';
+                terminalGrid.classList.remove('hidden');
+
+                let currentSlide = 0;
+                const totalSlides = focus.slideshowImages.length;
+
+                const slideContainer = document.createElement('div');
+                slideContainer.className = 'slideshow-container';
+                slideContainer.innerHTML = `
+                    <div class="slideshow-counter">${currentSlide + 1} / ${totalSlides}</div>
+                    <div class="slideshow-hint">Click image or press * to advance</div>
+                `;
+                terminalGrid.appendChild(slideContainer);
+
+                const advanceSlide = () => {
+                    currentSlide++;
+                    if (currentSlide >= totalSlides) {
+                        // End of slideshow - return to sanctum
+                        window.removeEventListener('keydown', handleSlideshowKey);
+                        currentFocus = 'sanctum';
+                        renderScreen();
+                    } else {
+                        const focusImg = document.getElementById('focusImage');
+                        focusImg.src = focus.slideshowImages[currentSlide];
+                        slideContainer.querySelector('.slideshow-counter').textContent = `${currentSlide + 1} / ${totalSlides}`;
+                    }
+                };
+
+                // Make focus image clickable to advance
+                const focusImg = document.getElementById('focusImage');
+                const focusLink = document.getElementById('focusLink');
+                focusLink.style.cursor = 'pointer';
+                focusLink.onclick = (e) => {
+                    e.preventDefault();
+                    advanceSlide();
+                };
+
+                // Keyboard handler for * key
+                const handleSlideshowKey = (e) => {
+                    if (e.key === '*' || e.key === '8' && e.shiftKey) {
+                        e.preventDefault();
+                        advanceSlide();
+                    }
+                };
+                window.addEventListener('keydown', handleSlideshowKey);
+                // Store cleanup function for when we leave this screen
+                window.slideshowCleanup = () => window.removeEventListener('keydown', handleSlideshowKey);
             } else {
                 terminalGrid.classList.add('hidden');
                 terminalGrid.innerHTML = '';
@@ -926,10 +1056,11 @@
 
             const hasParents = focus.parents && focus.parents.length > 0;
             const hasChildren = focus.children && focus.children.length > 0;
+            const hasDisabledButtons = focus.disabledButtons && focus.disabledButtons.length > 0;
             // Hide parent buttons if "9" back option exists OR terminal layout
             const showParents = hasParents && !hasNineBack && focus.layout !== 'terminal';
 
-            if (showParents || hasChildren) {
+            if (showParents || hasChildren || hasDisabledButtons) {
                 navSection.style.display = 'block';
 
                 // Parents first (blue) - only if no "9" back option
@@ -953,6 +1084,8 @@
                 if (hasChildren) {
                     // Group children by their label number
                     const childGroups = {};
+                    // For slideshow layouts, skip * buttons (handled by image click/keyboard)
+                    const skipLabels = focus.layout === 'slideshow' ? ['*'] : [];
                     focus.children.forEach(childId => {
                         const hasSyntheticChild = focus.childDisplayNames && focus.childDisplayNames[childId];
                         const targetId = (focus.childTargets && focus.childTargets[childId]) || childId;
@@ -961,6 +1094,9 @@
 
                         const displayName = hasSyntheticChild ? focus.childDisplayNames[childId] : child.title;
                         const menuNum = focus.childLabels ? (focus.childLabels[childId] || '') : '';
+
+                        // Skip labels that should be hidden (e.g., * for slideshows)
+                        if (skipLabels.includes(menuNum)) return;
 
                         if (!childGroups[menuNum]) {
                             childGroups[menuNum] = [];
@@ -994,9 +1130,10 @@
 
                         if (group.length === 1) {
                             // Single item
-                            const { targetId, displayName } = group[0];
+                            const { childId, targetId, displayName } = group[0];
                             const item = document.createElement('a');
                             item.className = 'nav-child';
+                            item.dataset.target = childId;
                             item.innerHTML = `
                                 <span class="child-num${isBackBtn ? ' back-btn' : ''}">${displayNum}</span>
                                 <span class="child-title">${displayName}</span>
@@ -1004,6 +1141,17 @@
                             item.onclick = () => {
                                 currentFocus = targetId;
                                 renderScreen();
+                            };
+                            // Reverse hover - highlight desc-links when hovering nav
+                            item.onmouseenter = () => {
+                                item.classList.add('glow');
+                                document.querySelectorAll(`.desc-link[data-target="${childId}"]`).forEach(link => {
+                                    link.classList.add('glow');
+                                });
+                            };
+                            item.onmouseleave = () => {
+                                item.classList.remove('glow');
+                                document.querySelectorAll('.desc-link.glow').forEach(link => link.classList.remove('glow'));
                             };
                             navList.appendChild(item);
                         } else {
@@ -1025,6 +1173,23 @@
                             });
                             navList.appendChild(item);
                         }
+                    });
+                }
+
+                // Render disabled buttons (for slideshow audio buttons etc.)
+                if (focus.disabledButtons && focus.disabledButtons.length > 0) {
+                    focus.disabledButtons.forEach(btnLabel => {
+                        const tooltip = focus.disabledTooltips && focus.disabledTooltips[btnLabel]
+                            ? focus.disabledTooltips[btnLabel]
+                            : btnLabel;
+                        const item = document.createElement('div');
+                        item.className = 'nav-child disabled';
+                        item.title = tooltip;
+                        item.innerHTML = `
+                            <span class="child-num">${btnLabel}</span>
+                            <span class="child-title" style="color: var(--grey);">${tooltip}</span>
+                        `;
+                        navList.appendChild(item);
                     });
                 }
             } else {

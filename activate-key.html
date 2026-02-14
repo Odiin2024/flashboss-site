@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Use a Key - FlashBoss</title>
+    <meta name="description" content="How to activate your FlashBoss beta key on Steam.">
+
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: url('manual/images/fog.jpeg') center center / cover no-repeat fixed;
+            background-color: #0a0a19;
+            color: #f0e6d3;
+            min-height: 100vh;
+            line-height: 1.6;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.1);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 4rem;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .header h1 {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ff66ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .header .tagline {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Steps */
+        .steps {
+            list-style: none;
+            counter-reset: step;
+        }
+
+        .step {
+            background: rgba(10, 10, 25, 0.4);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-left: 4rem;
+        }
+
+        .step::before {
+            counter-increment: step;
+            content: counter(step);
+            position: absolute;
+            left: 1.5rem;
+            top: 1.5rem;
+            width: 2rem;
+            height: 2rem;
+            background: rgba(126, 200, 255, 0.2);
+            border: 1px solid rgba(126, 200, 255, 0.5);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Fredoka', sans-serif;
+            font-size: 1rem;
+            color: #7ec8ff;
+        }
+
+        .step h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #7ec8ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .step p {
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 0.75rem;
+        }
+
+        .step p:last-child {
+            margin-bottom: 0;
+        }
+
+        .step img {
+            max-width: 100%;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 102, 255, 0.3);
+            margin-top: 1rem;
+        }
+
+        .step code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            font-size: 0.9rem;
+            color: #ff66ff;
+        }
+
+        /* Placeholder for future image */
+        .image-placeholder {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px dashed rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+            padding: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.4);
+            font-style: italic;
+            margin-top: 1rem;
+        }
+
+        /* Links */
+        a {
+            color: #7ec8ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .step {
+                padding-left: 1.5rem;
+                padding-top: 3.5rem;
+            }
+
+            .step::before {
+                top: 1rem;
+                left: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>How to Use a Key</h1>
+            <p class="tagline">Activate your FlashBoss beta key on Steam</p>
+        </header>
+
+        <ol class="steps">
+            <li class="step">
+                <h2>Open Steam</h2>
+                <p>Launch the Steam client on your computer.</p>
+            </li>
+
+            <li class="step">
+                <h2>Go to Games > Activate a Product on Steam</h2>
+                <p>In the top menu bar, click <code>Games</code> then select <code>Activate a Product on Steam...</code></p>
+                <img src="manual/screenshots/common/activate.jpeg" alt="Steam menu showing Activate a Product option">
+            </li>
+
+            <li class="step">
+                <h2>Enter Your Key</h2>
+                <p>Follow the prompts and paste your beta key when asked.</p>
+                <p>Your key will look something like: <code>XXXXX-XXXXX-XXXXX</code></p>
+                <img src="manual/images/code.png" alt="Steam product code entry field">
+            </li>
+
+            <li class="step">
+                <h2>Download and Play</h2>
+                <p>FlashBoss will appear in your Steam library. Click Install, and you're ready to begin your studies.</p>
+                <img src="manual/images/steamplay.png" alt="FlashBoss in Steam library ready to play">
+            </li>
+        </ol>
+
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="beta-key.html">Get a Beta Key</a>
+                <a href="manual/">Manual</a>
+                <a href="home.html">Hub</a>
+                <a href="https://store.steampowered.com/app/4134440/FlashBoss/">Steam</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
