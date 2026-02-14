@@ -961,13 +961,6 @@
             if (focus.windowsNote) {
                 learnMoreHTML += `<p class="windows-note">${focus.windowsNote}</p>`;
             }
-            if (focus.flipbookLinks) {
-                learnMoreHTML += `<div class="flipbook-links">
-                    <p class="flipbook-label">Watch Walkthrough:</p>
-                    <a href="${focus.flipbookLinks.esperanto}" class="flipbook-btn">Esperanto Path</a>
-                    <a href="${focus.flipbookLinks.german}" class="flipbook-btn">German Path</a>
-                </div>`;
-            }
             learnMoreArea.innerHTML = learnMoreHTML;
         }
     </script>

@@ -201,12 +201,19 @@
     "title": "The Sanctum",
     "image": "screenshots/common/sanctum.png",
     "page": "walkthrough/sanctum.html",
-    "parents": ["profile-select", "create-pack"],
-    "children": ["profile-data"],
+    "parents": ["create-pack"],
+    "children": ["sanctum-placeholder", "profile-select"],
     "childLabels": {
-      "profile-data": "6"
+      "sanctum-placeholder": "*",
+      "profile-select": "9"
     },
-    "description": "Your home base. From here you can access daily practice, lessons, boss fights, the grimoire, and more.\n\nThe Sanctum is where your language learning journey unfolds."
+    "childDisplayNames": {
+      "sanctum-placeholder": "Enter the Sanctum"
+    },
+    "childTargets": {
+      "sanctum-placeholder": "sanctum"
+    },
+    "description": "Your home base. Options 1-5 lead deeper into the Sanctum: Lessons, Spaced Repetition, BossRun, Know Your Enemy, and more.\n\nOption 6 opens Profile Data. Press 9 to return to Profile Selection.\n\nMore detailed pages coming soon."
   },
   "tier-skip": {
     "id": "tier-skip",
