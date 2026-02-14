@@ -66,10 +66,23 @@
         .panel-left {
             display: flex;
             flex-direction: column;
+            border-right: 2px solid rgba(255, 102, 255, 0.6);
+            box-shadow: inset -8px 0 15px -10px rgba(255, 102, 255, 0.5);
         }
 
         .left-header {
             padding: 1rem 1.5rem 1rem 2.5rem;
+            position: relative;
+        }
+
+        .left-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 1.5rem;
+            right: 1.5rem;
+            height: 1px;
+            background: rgba(255, 102, 255, 0.3);
         }
 
         .screen-title {
@@ -104,7 +117,7 @@
 
         .focus-image {
             max-width: 100%;
-            max-height: 66vh;
+            max-height: 60vh;
             border-radius: 6px;
             border: 1px solid rgba(255, 102, 255, 0.3);
             box-shadow: 0 0 10px rgba(255, 102, 255, 0.2);
@@ -125,8 +138,8 @@
         }
 
         .left-footer {
-            padding: 1rem 1.5rem;
-            font-size: 0.8rem;
+            padding: 0.75rem 1.5rem;
+            font-size: 0.9rem;
             color: var(--grey);
             font-style: italic;
             text-align: center;
@@ -142,6 +155,17 @@
             padding: 1rem 1.5rem;
             display: flex;
             justify-content: flex-end;
+            position: relative;
+        }
+
+        .right-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 1.5rem;
+            right: 1.5rem;
+            height: 1px;
+            background: rgba(255, 102, 255, 0.3);
         }
 
         .back-btn {
@@ -172,12 +196,13 @@
             flex: 1;
             padding: 1.5rem;
             overflow-y: auto;
+            display: flex;
+            flex-direction: column;
         }
 
         .description-text {
             color: var(--moon-cream);
             line-height: 1.8;
-            margin-bottom: 1.5rem;
         }
 
         .description-text p {
@@ -186,7 +211,8 @@
 
         /* Navigate to section */
         .nav-section {
-            margin-bottom: 1.5rem;
+            margin-top: auto;
+            margin-bottom: 0.75rem;
         }
 
         .nav-title {
@@ -262,20 +288,14 @@
 
         /* Learn more link */
         .learn-more-link {
-            display: inline-block;
-            background: rgba(126, 200, 255, 0.15);
-            border: 1px solid var(--link-blue);
-            border-radius: 4px;
-            padding: 0.5rem 1rem;
             color: var(--link-blue);
             text-decoration: none;
             font-size: 0.85rem;
-            transition: background 0.2s, box-shadow 0.2s;
+            font-weight: 600;
+            transition: color 0.2s;
         }
 
         .learn-more-link:hover {
-            background: rgba(126, 200, 255, 0.25);
-            box-shadow: 0 0 10px rgba(126, 200, 255, 0.3);
             color: #ffffff;
         }
 
@@ -380,24 +400,103 @@
             display: none !important;
         }
 
-        /* Mobile */
-        @media (max-width: 768px) {
+        /* Mobile divider and title - hidden on desktop */
+        .mobile-divider {
+            display: none;
+        }
+
+        .mobile-title {
+            display: none;
+        }
+
+        .mobile-back {
+            display: none;
+        }
+
+        /* Mobile portrait */
+        @media (max-width: 768px) and (orientation: portrait) {
             .manual-wrapper {
+                position: relative;
+                height: auto;
+                min-height: 100vh;
                 padding: 2vh 4vw;
+                overflow-y: auto;
             }
 
             .manual-panel {
                 grid-template-columns: 1fr;
+                height: auto;
+                flex: none;
             }
 
             .panel-left {
+                min-height: auto;
+                border-right: none;
+                box-shadow: none;
+            }
+
+            .left-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .mobile-back {
+                display: block;
+            }
+
+            .mobile-divider {
+                display: block;
+                height: 1px;
+                background: linear-gradient(90deg, transparent, rgba(255, 102, 255, 0.4), transparent);
+                margin: 1.5rem 0;
+            }
+
+            .right-header {
+                display: none;
+            }
+
+            .mobile-title {
+                display: block;
+                font-family: var(--font-pixel);
+                font-size: 0.85rem;
+                color: var(--moon-cream);
+                margin-bottom: 1rem;
+            }
+
+            .right-content {
+                flex: none;
+            }
+
+            .nav-section {
+                margin-top: 1.5rem;
             }
 
             .tile-view {
                 grid-template-columns: 1fr;
+                height: auto;
             }
 
-            .tile-page-left {
+            .view-toggle {
+                font-size: 0.65rem;
+                padding: 0.25rem 0.5rem;
+            }
+        }
+
+        /* Mobile landscape */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .manual-wrapper {
+                position: relative;
+                height: auto;
+                min-height: 100vh;
+                padding: 2vh 4vw;
+                overflow-y: auto;
+            }
+
+            .manual-panel {
+                grid-template-columns: 1fr 1fr;
+                height: auto;
+                min-height: 80vh;
             }
 
             .view-toggle {
@@ -420,6 +519,7 @@
             <div class="panel-left">
                 <div class="left-header">
                     <h1 class="screen-title" id="screenTitle">Loading...</h1>
+                    <a class="back-btn mobile-back disabled" id="mobileBackBtn">Back</a>
                 </div>
                 <div class="left-content">
                     <a class="focus-image-link" id="focusLink" href="#">
@@ -431,12 +531,16 @@
                 </div>
             </div>
 
+            <!-- Mobile divider -->
+            <div class="mobile-divider"></div>
+
             <!-- Right column -->
             <div class="panel-right">
                 <div class="right-header">
                     <a class="back-btn disabled" id="backBtn">Back</a>
                 </div>
                 <div class="right-content">
+                    <h2 class="mobile-title" id="mobileTitle">Loading...</h2>
                     <div class="description-text" id="descriptionText"></div>
 
                     <div class="nav-section" id="navSection">
@@ -570,6 +674,7 @@
 
             // Title
             document.getElementById('screenTitle').textContent = focus.title;
+            document.getElementById('mobileTitle').textContent = focus.title;
 
             // Image
             const focusImage = document.getElementById('focusImage');
@@ -601,20 +706,27 @@
 
             // Back button - goes to primary parent
             const backBtn = document.getElementById('backBtn');
+            const mobileBackBtn = document.getElementById('mobileBackBtn');
             if (focus.parents && focus.parents.length > 0) {
                 const firstParent = screens[focus.parents[0]];
                 if (firstParent) {
                     backBtn.classList.remove('disabled');
+                    mobileBackBtn.classList.remove('disabled');
                     backBtn.textContent = 'Back';
-                    backBtn.onclick = () => {
+                    mobileBackBtn.textContent = 'Back';
+                    const goBack = () => {
                         currentFocus = focus.parents[0];
                         renderScreen();
                     };
+                    backBtn.onclick = goBack;
+                    mobileBackBtn.onclick = goBack;
                 } else {
                     backBtn.classList.add('disabled');
+                    mobileBackBtn.classList.add('disabled');
                 }
             } else {
                 backBtn.classList.add('disabled');
+                mobileBackBtn.classList.add('disabled');
             }
 
             // Description
@@ -695,7 +807,7 @@
             // Learn more link
             const learnMoreArea = document.getElementById('learnMoreArea');
             if (focus.page) {
-                learnMoreArea.innerHTML = `<a href="${focus.page}" class="learn-more-link">Learn more →</a>`;
+                learnMoreArea.innerHTML = `<a href="${focus.page}" class="learn-more-link">Learn more</a>`;
             } else {
                 learnMoreArea.innerHTML = '';
             }
