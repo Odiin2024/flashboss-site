@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashBoss Walkthrough</title>
+    <link rel="icon" type="image/png" href="../../icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@300;400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-dark: #0a0a19;
+            --moon-cream: #f0e6d3;
+            --magic-pink: #ff66ff;
+            --link-blue: #7ec8ff;
+            --grey: #8a8a8a;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: url('../images/fog.jpeg') center center / cover no-repeat fixed;
+            background-color: var(--bg-dark);
+            color: var(--moon-cream);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .flipbook-container {
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .title {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 2rem;
+            color: var(--magic-pink);
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--grey);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .image-container {
+            position: relative;
+            background: rgba(10, 10, 25, 0.6);
+            border: 2px solid rgba(255, 102, 255, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .image-container:hover {
+            border-color: var(--magic-pink);
+            box-shadow: 0 0 20px rgba(255, 102, 255, 0.3);
+        }
+
+        .image-container img {
+            max-width: 100%;
+            max-height: 65vh;
+            border-radius: 4px;
+        }
+
+        .key-badge {
+            position: absolute;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            background: rgba(10, 10, 25, 0.9);
+            border: 2px solid var(--magic-pink);
+            border-radius: 6px;
+            padding: 0.5rem 1rem;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.7rem;
+            color: var(--magic-pink);
+            box-shadow: 0 0 15px rgba(255, 102, 255, 0.4);
+        }
+
+        .key-badge::before {
+            content: 'Press ';
+            color: var(--grey);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.7rem;
+        }
+
+        .screen-title {
+            font-size: 1.1rem;
+            color: var(--moon-cream);
+            margin-bottom: 0.5rem;
+        }
+
+        .progress {
+            font-size: 0.8rem;
+            color: var(--grey);
+            margin-bottom: 1rem;
+        }
+
+        .hint {
+            font-size: 0.8rem;
+            color: var(--grey);
+            font-style: italic;
+        }
+
+        /* Fork screen */
+        .fork-container {
+            display: none;
+        }
+
+        .fork-container.active {
+            display: block;
+        }
+
+        .fork-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .fork-option {
+            background: rgba(10, 10, 25, 0.6);
+            border: 2px solid var(--grey);
+            border-radius: 8px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+            text-decoration: none;
+        }
+
+        .fork-option:hover {
+            border-color: var(--magic-pink);
+            box-shadow: 0 0 20px rgba(255, 102, 255, 0.3);
+            transform: translateY(-3px);
+        }
+
+        .fork-option h3 {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 1.3rem;
+            color: var(--link-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .fork-option p {
+            font-size: 0.85rem;
+            color: var(--grey);
+        }
+
+        /* End screen */
+        .end-container {
+            display: none;
+        }
+
+        .end-container.active {
+            display: block;
+        }
+
+        .end-options {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        .end-btn {
+            background: rgba(10, 10, 25, 0.6);
+            border: 1px solid var(--link-blue);
+            border-radius: 4px;
+            padding: 0.75rem 1.5rem;
+            color: var(--link-blue);
+            font-size: 0.9rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+
+        .end-btn:hover {
+            background: rgba(126, 200, 255, 0.15);
+            box-shadow: 0 0 10px rgba(126, 200, 255, 0.3);
+        }
+
+        .slideshow {
+            display: none;
+        }
+
+        .slideshow.active {
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            .fork-options {
+                grid-template-columns: 1fr;
+            }
+
+            .key-badge {
+                bottom: 0.75rem;
+                right: 0.75rem;
+                padding: 0.4rem 0.75rem;
+                font-size: 0.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flipbook-container">
+        <h1 class="title">FlashBoss Walkthrough</h1>
+        <p class="subtitle">Click or press any key to advance</p>
+
+        <!-- Slideshow view -->
+        <div class="slideshow active" id="slideshow">
+            <div class="image-container" id="imageContainer" onclick="advance()">
+                <img id="slideImage" src="" alt="">
+                <div class="key-badge" id="keyBadge"></div>
+            </div>
+            <p class="screen-title" id="screenTitle"></p>
+            <p class="progress" id="progress"></p>
+            <p class="hint">Click image or press any key to continue</p>
+        </div>
+
+        <!-- Fork choice -->
+        <div class="fork-container" id="forkContainer">
+            <div class="image-container">
+                <img id="forkImage" src="" alt="">
+            </div>
+            <p class="screen-title">Choose Your Path</p>
+            <div class="fork-options">
+                <div class="fork-option" onclick="choosePath('esperanto')">
+                    <h3>Esperanto</h3>
+                    <p>Follow the Esperanto learning path</p>
+                </div>
+                <div class="fork-option" onclick="choosePath('german')">
+                    <h3>German</h3>
+                    <p>Follow the German learning path</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- End screen -->
+        <div class="end-container" id="endContainer">
+            <div class="image-container">
+                <img id="endImage" src="" alt="">
+            </div>
+            <p class="screen-title" id="endTitle">Walkthrough Complete</p>
+            <div class="end-options">
+                <a href="flipbook.html" class="end-btn">Start Over</a>
+                <a href="../" class="end-btn">Back to Manual</a>
+                <div class="end-btn" onclick="tryOtherPath()">Try Other Path</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let data = null;
+        let currentBook = 'shared';
+        let currentIndex = 0;
+        let lastPath = null;
+
+        fetch('flipbook.json')
+            .then(res => res.json())
+            .then(json => {
+                data = json;
+                render();
+            });
+
+        function render() {
+            const slides = data[currentBook];
+            const slide = slides[currentIndex];
+
+            // Check for fork
+            if (slide.fork) {
+                document.getElementById('slideshow').classList.remove('active');
+                document.getElementById('forkContainer').classList.add('active');
+                document.getElementById('endContainer').classList.remove('active');
+                document.getElementById('forkImage').src = slide.image;
+                return;
+            }
+
+            // Check for end
+            if (slide.end) {
+                document.getElementById('slideshow').classList.remove('active');
+                document.getElementById('forkContainer').classList.remove('active');
+                document.getElementById('endContainer').classList.add('active');
+                document.getElementById('endImage').src = slide.image;
+                document.getElementById('endTitle').textContent = currentBook.charAt(0).toUpperCase() + currentBook.slice(1) + ' Path Complete';
+                lastPath = currentBook;
+                return;
+            }
+
+            // Normal slide
+            document.getElementById('slideshow').classList.add('active');
+            document.getElementById('forkContainer').classList.remove('active');
+            document.getElementById('endContainer').classList.remove('active');
+
+            document.getElementById('slideImage').src = slide.image;
+            document.getElementById('screenTitle').textContent = slide.title;
+            document.getElementById('progress').textContent = `${currentIndex + 1} / ${slides.length}`;
+
+            const keyBadge = document.getElementById('keyBadge');
+            if (slide.key) {
+                keyBadge.textContent = slide.key;
+                keyBadge.style.display = 'block';
+            } else {
+                keyBadge.style.display = 'none';
+            }
+        }
+
+        function advance() {
+            const slides = data[currentBook];
+            if (currentIndex < slides.length - 1) {
+                currentIndex++;
+                render();
+            }
+        }
+
+        function choosePath(path) {
+            currentBook = path;
+            currentIndex = 0;
+            render();
+        }
+
+        function tryOtherPath() {
+            const other = lastPath === 'esperanto' ? 'german' : 'esperanto';
+            currentBook = other;
+            currentIndex = 0;
+            render();
+        }
+
+        document.addEventListener('keydown', (e) => {
+            const forkActive = document.getElementById('forkContainer').classList.contains('active');
+            const endActive = document.getElementById('endContainer').classList.contains('active');
+
+            if (forkActive) {
+                if (e.key === '1') choosePath('esperanto');
+                if (e.key === '2') choosePath('german');
+            } else if (!endActive) {
+                advance();
+            }
+        });
+    </script>
+</body>
+</html>
