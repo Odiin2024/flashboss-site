@@ -383,7 +383,8 @@
             display: block;
         }
 
-        .terminal-thumb:hover {
+        .terminal-thumb:hover,
+        .terminal-thumb.glow {
             border-color: rgba(255, 102, 255, 0.7);
             box-shadow: 0 0 10px rgba(255, 102, 255, 0.4);
         }
@@ -961,10 +962,22 @@
                         if (!imgSrc) return;
                         const thumb = document.createElement('a');
                         thumb.className = 'terminal-thumb';
+                        thumb.dataset.target = childId;
                         thumb.innerHTML = `<img src="${imgSrc}" alt="${screens[childId]?.title || ''}">`;
                         thumb.onclick = () => {
                             currentFocus = childId;
                             renderScreen();
+                        };
+                        // Hover sync with nav buttons
+                        thumb.onmouseenter = () => {
+                            thumb.classList.add('glow');
+                            document.querySelectorAll(`.nav-child[data-target="${childId}"]`).forEach(btn => {
+                                btn.classList.add('glow');
+                            });
+                        };
+                        thumb.onmouseleave = () => {
+                            thumb.classList.remove('glow');
+                            document.querySelectorAll('.nav-child.glow').forEach(btn => btn.classList.remove('glow'));
                         };
                         terminalGrid.appendChild(thumb);
                     });
@@ -1142,16 +1155,20 @@
                                 currentFocus = targetId;
                                 renderScreen();
                             };
-                            // Reverse hover - highlight desc-links when hovering nav
+                            // Reverse hover - highlight desc-links and terminal thumbs when hovering nav
                             item.onmouseenter = () => {
                                 item.classList.add('glow');
                                 document.querySelectorAll(`.desc-link[data-target="${childId}"]`).forEach(link => {
                                     link.classList.add('glow');
                                 });
+                                document.querySelectorAll(`.terminal-thumb[data-target="${childId}"]`).forEach(thumb => {
+                                    thumb.classList.add('glow');
+                                });
                             };
                             item.onmouseleave = () => {
                                 item.classList.remove('glow');
                                 document.querySelectorAll('.desc-link.glow').forEach(link => link.classList.remove('glow'));
+                                document.querySelectorAll('.terminal-thumb.glow').forEach(thumb => thumb.classList.remove('glow'));
                             };
                             navList.appendChild(item);
                         } else {
