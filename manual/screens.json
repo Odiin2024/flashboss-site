@@ -5,20 +5,32 @@
     "subheader": "Choose an Option to Progress",
     "image": "screenshots/common/entrance.png",
     "page": null,
-    "parents": ["terminal-flashboss"],
-    "children": ["profile-select"],
+    "parents": [
+      "terminal-flashboss"
+    ],
+    "children": [
+      "profile-select"
+    ],
     "childLabels": {
       "profile-select": "*"
     },
-    "description": "The FlashBoss manual is built to mirror the game itself, with information pertaining to playing the game, and also with a link for more information. This page doesn't need such a link, as there isn't a lot to tell.\n\nPress the button below, \"Profile Selection\" to continue. * represents 'Any Key' and ↵ represents Enter.\n\nClick the blue parent buttons to go back, or choose a magenta option to go forward. Every screen in the game has a page here. Explore at your own pace."
+    "description": "The FlashBoss manual is built to mirror the game itself, with information pertaining to playing the game, and also with a link for more information. This page doesn't need such a link, as there isn't a lot to tell.\n\nPress the button below, \"Profile Selection\" to continue. * represents 'Any Key' and \u21b5 represents Enter.\n\nClick the blue parent buttons to go back, or choose a magenta option to go forward. Every screen in the game has a page here. Explore at your own pace."
   },
   "profile-select": {
     "id": "profile-select",
     "title": "Profile Selection",
     "image": "screenshots/common/profile-select.png",
     "page": "walkthrough/profile-select.html",
-    "parents": ["entrance"],
-    "children": ["create-username", "gates", "vault", "about-1", "terminal"],
+    "parents": [
+      "entrance"
+    ],
+    "children": [
+      "create-username",
+      "gates",
+      "vault",
+      "about-1",
+      "terminal"
+    ],
     "childLabels": {
       "create-username": "1",
       "gates": "2-5",
@@ -33,9 +45,15 @@
     "title": "The Gates",
     "subheader": "Welcome back to FlashBoss",
     "image": "screenshots/common/gates.png",
-    "page": "walkthrough/gates.html",
-    "parents": ["profile-select"],
-    "children": ["sanctum", "create-pack", "tier-skip", "profile-select"],
+    "parents": [
+      "profile-select"
+    ],
+    "children": [
+      "sanctum",
+      "create-pack",
+      "tier-skip",
+      "profile-select"
+    ],
     "childLabels": {
       "sanctum": "5",
       "create-pack": "7",
@@ -49,11 +67,16 @@
     "title": "Create Username",
     "image": "screenshots/common/create-username.png",
     "page": "walkthrough/create-username.html",
-    "parents": ["profile-select"],
-    "children": ["create-avatar", "profile-select"],
+    "parents": [
+      "profile-select"
+    ],
+    "children": [
+      "create-avatar",
+      "profile-select"
+    ],
     "childLabels": {
-      "create-avatar": "↵",
-      "profile-select": "9↵"
+      "create-avatar": "\u21b5",
+      "profile-select": "9\u21b5"
     },
     "description": "Enter a username for your new hero. This name will appear on your profile and leaderboards.\n\nType your desired name and press Enter to confirm. Press 9 then Enter to cancel."
   },
@@ -62,8 +85,12 @@
     "title": "Create Avatar",
     "image": "screenshots/common/create avatar.png",
     "page": "walkthrough/create-avatar.html",
-    "parents": ["create-username"],
-    "children": ["create-master"],
+    "parents": [
+      "create-username"
+    ],
+    "children": [
+      "create-master"
+    ],
     "description": "Choose an avatar to represent your hero. Pick from a variety of pixel art characters.\n\nUse number keys to select your avatar."
   },
   "create-master": {
@@ -71,8 +98,18 @@
     "title": "Choose Master",
     "image": "screenshots/common/create-master1.png",
     "page": "walkthrough/create-master.html",
-    "parents": ["create-avatar"],
-    "children": ["master-luna", "master-claude", "master-odiin", "master-shen", "master-kitsune", "master-aquila", "create-avatar"],
+    "parents": [
+      "create-avatar"
+    ],
+    "children": [
+      "master-luna",
+      "master-claude",
+      "master-odiin",
+      "master-shen",
+      "master-kitsune",
+      "master-aquila",
+      "create-avatar"
+    ],
     "childLabels": {
       "master-luna": "1",
       "master-claude": "2",
@@ -88,9 +125,12 @@
     "id": "master-luna",
     "title": "Luna",
     "image": "screenshots/common/Masters/01_screenshot.png",
-    "page": "walkthrough/masters/luna.html",
-    "parents": ["create-master"],
-    "children": ["create-pack"],
+    "parents": [
+      "create-master"
+    ],
+    "children": [
+      "create-pack"
+    ],
     "childLabels": {
       "create-pack": "5"
     },
@@ -100,9 +140,12 @@
     "id": "master-claude",
     "title": "Claude",
     "image": "screenshots/common/Masters/02_screenshot.png",
-    "page": "walkthrough/masters/claude.html",
-    "parents": ["create-master"],
-    "children": ["create-pack"],
+    "parents": [
+      "create-master"
+    ],
+    "children": [
+      "create-pack"
+    ],
     "childLabels": {
       "create-pack": "5"
     },
@@ -112,9 +155,12 @@
     "id": "master-odiin",
     "title": "Odiin",
     "image": "screenshots/common/Masters/03_screenshot.png",
-    "page": "walkthrough/masters/odiin.html",
-    "parents": ["create-master"],
-    "children": ["create-pack"],
+    "parents": [
+      "create-master"
+    ],
+    "children": [
+      "create-pack"
+    ],
     "childLabels": {
       "create-pack": "5"
     },
@@ -124,9 +170,12 @@
     "id": "master-shen",
     "title": "Shen",
     "image": "screenshots/common/Masters/04_screenshot.png",
-    "page": "walkthrough/masters/shen.html",
-    "parents": ["create-master"],
-    "children": ["create-pack"],
+    "parents": [
+      "create-master"
+    ],
+    "children": [
+      "create-pack"
+    ],
     "childLabels": {
       "create-pack": "5"
     },
@@ -136,9 +185,12 @@
     "id": "master-kitsune",
     "title": "Kitsune",
     "image": "screenshots/common/Masters/05_screenshot.png",
-    "page": "walkthrough/masters/kitsune.html",
-    "parents": ["create-master"],
-    "children": ["create-pack"],
+    "parents": [
+      "create-master"
+    ],
+    "children": [
+      "create-pack"
+    ],
     "childLabels": {
       "create-pack": "5"
     },
@@ -148,9 +200,12 @@
     "id": "master-aquila",
     "title": "Aquila",
     "image": "screenshots/common/Masters/06_screenshot.png",
-    "page": "walkthrough/masters/aquila.html",
-    "parents": ["create-master"],
-    "children": ["create-pack"],
+    "parents": [
+      "create-master"
+    ],
+    "children": [
+      "create-pack"
+    ],
     "childLabels": {
       "create-pack": "5"
     },
@@ -163,8 +218,15 @@
     "image": "screenshots/common/create-pack.png",
     "page": "walkthrough/create-pack.html",
     "layout": "terminal",
-    "parents": ["create-master", "gates"],
-    "children": ["sanctum-eo", "sanctum-de", "gates"],
+    "parents": [
+      "create-master",
+      "gates"
+    ],
+    "children": [
+      "sanctum-eo",
+      "sanctum-de",
+      "gates"
+    ],
     "childLabels": {
       "sanctum-eo": "1",
       "sanctum-de": "2",
@@ -191,13 +253,21 @@
   "profile-data": {
     "id": "profile-data",
     "title": "Profile Data",
+    "subheader": "Manage Your Profile",
     "image": "screenshots/common/profile-data.png",
-    "page": "walkthrough/profile-data.html",
-    "parents": ["gates"],
-    "children": ["tier-skip", "delete-profile", "achievements", "export-progress", "meet-masters", "back-sanctum", "back-vault"],
+    "parents": [
+      "gates"
+    ],
+    "children": [
+      "tier-skip",
+      "achievements",
+      "export-progress",
+      "meet-masters",
+      "back-sanctum",
+      "back-vault"
+    ],
     "childLabels": {
       "tier-skip": "5",
-      "delete-profile": "5",
       "achievements": "6",
       "export-progress": "7",
       "meet-masters": "8",
@@ -219,9 +289,15 @@
     "title": "The Sanctum",
     "subheader": "Your Home Base",
     "image": "screenshots/common/sanctum.png",
-    "page": "walkthrough/sanctum.html",
-    "parents": ["create-pack"],
-    "children": ["know-your-enemy", "spaced-repetition", "profile-data", "profile-select"],
+    "parents": [
+      "create-pack"
+    ],
+    "children": [
+      "know-your-enemy",
+      "spaced-repetition",
+      "profile-data",
+      "profile-select"
+    ],
     "childLabels": {
       "know-your-enemy": "4",
       "spaced-repetition": "5",
@@ -236,21 +312,143 @@
   "know-your-enemy": {
     "id": "know-your-enemy",
     "title": "Know Your Enemy",
+    "subheader": "Cluster Selection",
     "image": "screenshots/common/knowyourenemy.png",
-    "page": "walkthrough/know-your-enemy.html",
-    "parents": ["sanctum"],
-    "children": ["kye-placeholder", "sanctum"],
+    "parents": [
+      "sanctum"
+    ],
+    "children": [
+      "kye-page2",
+      "sanctum"
+    ],
     "childLabels": {
-      "kye-placeholder": "*",
+      "kye-page2": "6",
       "sanctum": "9"
     },
     "childDisplayNames": {
-      "kye-placeholder": "Study Words"
+      "kye-page2": "Next Page"
     },
-    "childTargets": {
-      "kye-placeholder": "know-your-enemy"
+    "description": "Study vocabulary before battle. Browse words by cluster and tier to prepare for the BossRun challenge.\n\nPress 1-8 to select a cluster, 6 (\u2192) for next page, or 9 to return to the Sanctum."
+  },
+  "kye-page2": {
+    "id": "kye-page2",
+    "title": "Know Your Enemy",
+    "subheader": "Page 2",
+    "image": "screenshots/common/know your enemy/page 2.png",
+    "parents": [
+      "know-your-enemy"
+    ],
+    "children": [
+      "know-your-enemy",
+      "kye-list",
+      "sanctum"
+    ],
+    "childLabels": {
+      "know-your-enemy": "4",
+      "kye-list": "1",
+      "sanctum": "9"
     },
-    "description": "Study vocabulary before battle. Browse words by cluster and tier to prepare for the BossRun challenge.\n\nPress any key to explore. Press 9 to return to the Sanctum."
+    "childDisplayNames": {
+      "know-your-enemy": "Previous Page",
+      "kye-list": "Food & Drink (Cluster 9)"
+    },
+    "description": "More clusters available on this page.\n\nPress 4 (\u2190) for previous page, 1 to view the Food & Drink cluster, or 9 to return."
+  },
+  "kye-list": {
+    "id": "kye-list",
+    "title": "Food & Drink",
+    "subheader": "Esperanto",
+    "image": "screenshots/common/know your enemy/list.png",
+    "parents": [
+      "kye-page2"
+    ],
+    "children": [
+      "kye-list2",
+      "kye-listeng",
+      "kye-page2"
+    ],
+    "childLabels": {
+      "kye-list2": "6",
+      "kye-listeng": "8",
+      "kye-page2": "9"
+    },
+    "childDisplayNames": {
+      "kye-list2": "Next Page",
+      "kye-listeng": "Toggle View (English)"
+    },
+    "description": "Word list for Cluster 9: Food & Drink in Esperanto.\n\nPress 6 for next page, 8 to toggle English view, or 9 to return."
+  },
+  "kye-list2": {
+    "id": "kye-list2",
+    "title": "Food & Drink",
+    "subheader": "Esperanto (Page 2)",
+    "image": "screenshots/common/know your enemy/list2.png",
+    "parents": [
+      "kye-list"
+    ],
+    "children": [
+      "kye-list",
+      "kye-list2eng",
+      "kye-page2"
+    ],
+    "childLabels": {
+      "kye-list": "4",
+      "kye-list2eng": "8",
+      "kye-page2": "9"
+    },
+    "childDisplayNames": {
+      "kye-list": "Previous Page",
+      "kye-list2eng": "Toggle View (English)"
+    },
+    "description": "Word list page 2 for Cluster 9: Food & Drink in Esperanto.\n\nPress 4 for previous page, 8 to toggle English view, or 9 to return."
+  },
+  "kye-listeng": {
+    "id": "kye-listeng",
+    "title": "Food & Drink",
+    "subheader": "English",
+    "image": "screenshots/common/know your enemy/listeng.png",
+    "parents": [
+      "kye-list"
+    ],
+    "children": [
+      "kye-list2eng",
+      "kye-list",
+      "kye-page2"
+    ],
+    "childLabels": {
+      "kye-list2eng": "6",
+      "kye-list": "8",
+      "kye-page2": "9"
+    },
+    "childDisplayNames": {
+      "kye-list2eng": "Next Page",
+      "kye-list": "Toggle View (Esperanto)"
+    },
+    "description": "Word list for Cluster 9: Food & Drink with English translations.\n\nPress 6 for next page, 8 to toggle Esperanto view, or 9 to return."
+  },
+  "kye-list2eng": {
+    "id": "kye-list2eng",
+    "title": "Food & Drink",
+    "subheader": "English (Page 2)",
+    "image": "screenshots/common/know your enemy/list2eng.png",
+    "parents": [
+      "kye-listeng"
+    ],
+    "children": [
+      "kye-listeng",
+      "kye-list2",
+      "kye-page2"
+    ],
+    "childLabels": {
+      "kye-listeng": "4",
+      "kye-list2": "8",
+      "kye-page2": "9"
+    },
+    "childDisplayNames": {
+      "kye-listeng": "Previous Page",
+      "kye-list2": "Toggle View (Esperanto)"
+    },
+    "description": "Word list page 2 for Cluster 9: Food & Drink with English translations.\n\nPress 4 for previous page, 8 to toggle Esperanto view, or 9 to return."
   },
   "spaced-repetition": {
     "id": "spaced-repetition",
@@ -282,15 +480,21 @@
       "screenshots/common/spaced-repetition/13_screenshot.png",
       "screenshots/common/spaced-repetition/14_screenshot.png"
     ],
-    "page": "walkthrough/spaced-repetition.html",
-    "parents": ["sanctum"],
-    "children": ["sanctum"],
+    "parents": [
+      "sanctum"
+    ],
+    "children": [
+      "sanctum"
+    ],
     "childLabels": {
       "sanctum": "*"
     },
-    "disabledButtons": ["↵", "6"],
+    "disabledButtons": [
+      "\u21b5",
+      "6"
+    ],
     "disabledTooltips": {
-      "↵": "Repeat Word (audio disabled)",
+      "\u21b5": "Repeat Word (audio disabled)",
       "6": "Repeat Sentence (audio disabled)"
     },
     "description": "Your daily flashcard practice. Rate each card 0-5 based on how well you remember it.\n\nPress * to advance. Enter repeats the word, 6 repeats the sentence."
@@ -300,8 +504,14 @@
     "title": "Tier Skip Challenge",
     "subheader": "Placement Test",
     "image": "screenshots/common/tierskip1.png",
-    "parents": ["profile-data", "gates"],
-    "children": ["bossrun-challenge", "gates"],
+    "parents": [
+      "profile-data",
+      "gates"
+    ],
+    "children": [
+      "bossrun-challenge",
+      "gates"
+    ],
     "childLabels": {
       "bossrun-challenge": "5",
       "gates": "9"
@@ -313,8 +523,13 @@
     "title": "BossRun Challenge",
     "subheader": "Prepare for Battle",
     "image": "screenshots/common/tierskip2.png",
-    "parents": ["tier-skip"],
-    "children": ["bossfight", "tier-skip"],
+    "parents": [
+      "tier-skip"
+    ],
+    "children": [
+      "bossfight",
+      "tier-skip"
+    ],
     "childLabels": {
       "bossfight": "5",
       "tier-skip": "9"
@@ -343,9 +558,12 @@
       "images/bossfight/32_screenshot.png",
       "images/bossfight/33_screenshot.png"
     ],
-    "page": "walkthrough/bossfight.html",
-    "parents": ["bossrun-challenge"],
-    "children": ["sanctum"],
+    "parents": [
+      "bossrun-challenge"
+    ],
+    "children": [
+      "sanctum"
+    ],
     "childLabels": {
       "sanctum": "9"
     },
@@ -356,11 +574,15 @@
   },
   "achievements": {
     "id": "achievements",
-    "title": "Journey Achievements",
+    "title": "Achievements: Journey",
     "image": "screenshots/common/achievements/journey.png",
-    "page": "walkthrough/achievements.html",
-    "parents": ["profile-data"],
-    "children": ["achievements-2", "profile-data"],
+    "parents": [
+      "profile-data"
+    ],
+    "children": [
+      "achievements-2",
+      "profile-data"
+    ],
     "childLabels": {
       "achievements-2": "6",
       "profile-data": "9"
@@ -369,11 +591,16 @@
   },
   "achievements-2": {
     "id": "achievements-2",
-    "title": "Mastery Achievements",
+    "title": "Achievements: Mastery",
     "image": "screenshots/common/achievements/mastery.png",
-    "page": "walkthrough/achievements-mastery.html",
-    "parents": ["achievements"],
-    "children": ["achievements", "achievements-3", "profile-data"],
+    "parents": [
+      "achievements"
+    ],
+    "children": [
+      "achievements",
+      "achievements-3",
+      "profile-data"
+    ],
     "childLabels": {
       "achievements": "4",
       "achievements-3": "6",
@@ -383,11 +610,16 @@
   },
   "achievements-3": {
     "id": "achievements-3",
-    "title": "Streaks Achievements",
+    "title": "Achievements: Streaks",
     "image": "screenshots/common/achievements/streaks.png",
-    "page": "walkthrough/achievements-streaks.html",
-    "parents": ["achievements-2"],
-    "children": ["achievements-2", "achievements-4", "profile-data"],
+    "parents": [
+      "achievements-2"
+    ],
+    "children": [
+      "achievements-2",
+      "achievements-4",
+      "profile-data"
+    ],
     "childLabels": {
       "achievements-2": "4",
       "achievements-4": "6",
@@ -397,11 +629,16 @@
   },
   "achievements-4": {
     "id": "achievements-4",
-    "title": "Combat Achievements",
+    "title": "Achievements: Combat",
     "image": "screenshots/common/achievements/combat.png",
-    "page": "walkthrough/achievements-combat.html",
-    "parents": ["achievements-3"],
-    "children": ["achievements-3", "achievements-5", "profile-data"],
+    "parents": [
+      "achievements-3"
+    ],
+    "children": [
+      "achievements-3",
+      "achievements-5",
+      "profile-data"
+    ],
     "childLabels": {
       "achievements-3": "4",
       "achievements-5": "6",
@@ -411,11 +648,15 @@
   },
   "achievements-5": {
     "id": "achievements-5",
-    "title": "Global Achievements",
+    "title": "Achievements: Global",
     "image": "screenshots/common/achievements/global.png",
-    "page": "walkthrough/achievements-global.html",
-    "parents": ["achievements-4"],
-    "children": ["achievements-4", "profile-data"],
+    "parents": [
+      "achievements-4"
+    ],
+    "children": [
+      "achievements-4",
+      "profile-data"
+    ],
     "childLabels": {
       "achievements-4": "4",
       "profile-data": "9"
@@ -426,9 +667,15 @@
     "id": "export-progress",
     "title": "Export Progress",
     "image": "screenshots/common/export.png",
-    "page": "walkthrough/export-progress.html",
-    "parents": ["profile-data"],
-    "children": ["delete-profile", "achievements", "profile-data-7", "profile-data"],
+    "parents": [
+      "profile-data"
+    ],
+    "children": [
+      "delete-profile",
+      "achievements",
+      "profile-data-7",
+      "profile-data"
+    ],
     "childLabels": {
       "delete-profile": "5",
       "achievements": "6",
@@ -441,7 +688,9 @@
     "childTargets": {
       "profile-data-7": "profile-data"
     },
-    "disabledButtons": ["8"],
+    "disabledButtons": [
+      "8"
+    ],
     "disabledTooltips": {
       "8": "Disabled"
     },
@@ -452,9 +701,18 @@
     "title": "Meet the Masters",
     "subheader": "Choose Wisely",
     "image": "screenshots/common/meetmasters.png",
-    "page": "walkthrough/meet-masters.html",
-    "parents": ["profile-data"],
-    "children": ["mm-luna", "mm-claude", "mm-odiin", "mm-shen", "mm-kitsune", "mm-aquila", "profile-data"],
+    "parents": [
+      "profile-data"
+    ],
+    "children": [
+      "mm-luna",
+      "mm-claude",
+      "mm-odiin",
+      "mm-shen",
+      "mm-kitsune",
+      "mm-aquila",
+      "profile-data"
+    ],
     "childLabels": {
       "mm-luna": "1",
       "mm-claude": "2",
@@ -470,8 +728,13 @@
     "id": "mm-luna",
     "title": "Luna",
     "image": "screenshots/common/Masters/01_screenshot.png",
-    "parents": ["meet-masters"],
-    "children": ["profile-data", "meet-masters"],
+    "parents": [
+      "meet-masters"
+    ],
+    "children": [
+      "profile-data",
+      "meet-masters"
+    ],
     "childLabels": {
       "profile-data": "5",
       "meet-masters": "9"
@@ -482,8 +745,13 @@
     "id": "mm-claude",
     "title": "Claude",
     "image": "screenshots/common/Masters/02_screenshot.png",
-    "parents": ["meet-masters"],
-    "children": ["profile-data", "meet-masters"],
+    "parents": [
+      "meet-masters"
+    ],
+    "children": [
+      "profile-data",
+      "meet-masters"
+    ],
     "childLabels": {
       "profile-data": "5",
       "meet-masters": "9"
@@ -494,8 +762,13 @@
     "id": "mm-odiin",
     "title": "Odiin",
     "image": "screenshots/common/Masters/03_screenshot.png",
-    "parents": ["meet-masters"],
-    "children": ["profile-data", "meet-masters"],
+    "parents": [
+      "meet-masters"
+    ],
+    "children": [
+      "profile-data",
+      "meet-masters"
+    ],
     "childLabels": {
       "profile-data": "5",
       "meet-masters": "9"
@@ -506,8 +779,13 @@
     "id": "mm-shen",
     "title": "Shen",
     "image": "screenshots/common/Masters/04_screenshot.png",
-    "parents": ["meet-masters"],
-    "children": ["profile-data", "meet-masters"],
+    "parents": [
+      "meet-masters"
+    ],
+    "children": [
+      "profile-data",
+      "meet-masters"
+    ],
     "childLabels": {
       "profile-data": "5",
       "meet-masters": "9"
@@ -518,8 +796,13 @@
     "id": "mm-kitsune",
     "title": "Kitsune",
     "image": "screenshots/common/Masters/05_screenshot.png",
-    "parents": ["meet-masters"],
-    "children": ["profile-data", "meet-masters"],
+    "parents": [
+      "meet-masters"
+    ],
+    "children": [
+      "profile-data",
+      "meet-masters"
+    ],
     "childLabels": {
       "profile-data": "5",
       "meet-masters": "9"
@@ -530,8 +813,13 @@
     "id": "mm-aquila",
     "title": "Aquila",
     "image": "screenshots/common/Masters/06_screenshot.png",
-    "parents": ["meet-masters"],
-    "children": ["profile-data", "meet-masters"],
+    "parents": [
+      "meet-masters"
+    ],
+    "children": [
+      "profile-data",
+      "meet-masters"
+    ],
     "childLabels": {
       "profile-data": "5",
       "meet-masters": "9"
@@ -543,9 +831,13 @@
     "title": "Backup Vault",
     "image": "screenshots/common/vault.png",
     "layout": "terminal",
-    "page": "walkthrough/vault.html",
-    "parents": ["profile-select"],
-    "children": ["profile-data-vault", "profile-select"],
+    "parents": [
+      "profile-select"
+    ],
+    "children": [
+      "profile-data-vault",
+      "profile-select"
+    ],
     "childLabels": {
       "profile-data-vault": "1",
       "profile-select": "9"
@@ -561,20 +853,30 @@
     "title": "Profile Data (Vault)",
     "subheader": "Frozen Profile",
     "image": "screenshots/common/profile-data-vault.png",
-    "page": "walkthrough/profile-data-vault.html",
-    "parents": ["vault"],
-    "children": ["delete-profile", "achievements", "back-vault", "back-profile-data"],
+    "parents": [
+      "vault"
+    ],
+    "children": [
+      "delete-profile",
+      "achievements",
+      "restore-profile",
+      "back-vault",
+      "back-profile-data"
+    ],
     "childLabels": {
       "delete-profile": "5",
       "achievements": "6",
+      "restore-profile": "7",
       "back-vault": "9",
       "back-profile-data": "9"
     },
     "childDisplayNames": {
+      "restore-profile": "Restore Profile",
       "back-vault": "Vault",
       "back-profile-data": "Profile Data"
     },
     "childTargets": {
+      "restore-profile": "profile-data",
       "back-vault": "vault",
       "back-profile-data": "profile-data"
     },
@@ -584,13 +886,19 @@
     "id": "delete-profile",
     "title": "Delete Profile",
     "image": "screenshots/common/delete.png",
-    "page": "walkthrough/delete-profile.html",
-    "parents": ["profile-data-vault", "profile-data"],
-    "children": ["profile-deleted", "back-vault-del", "back-profile-data-del"],
+    "parents": [
+      "profile-data-vault",
+      "profile-data"
+    ],
+    "children": [
+      "profile-deleted",
+      "back-vault-del",
+      "back-profile-data-del"
+    ],
     "childLabels": {
-      "profile-deleted": "↵",
-      "back-vault-del": "9↵",
-      "back-profile-data-del": "9↵"
+      "profile-deleted": "\u21b5",
+      "back-vault-del": "9\u21b5",
+      "back-profile-data-del": "9\u21b5"
     },
     "childDisplayNames": {
       "back-vault-del": "Vault",
@@ -606,9 +914,12 @@
     "id": "profile-deleted",
     "title": "Profile Deleted",
     "image": "screenshots/common/deleted.png",
-    "page": "walkthrough/profile-deleted.html",
-    "parents": ["delete-profile"],
-    "children": ["profile-select"],
+    "parents": [
+      "delete-profile"
+    ],
+    "children": [
+      "profile-select"
+    ],
     "childLabels": {
       "profile-select": "*"
     },
@@ -619,21 +930,31 @@
     "title": "About FlashBoss",
     "image": "screenshots/common/about-1.png",
     "page": "../about.html",
-    "parents": ["profile-select"],
-    "children": ["about-2", "profile-select"],
+    "parents": [
+      "profile-select"
+    ],
+    "children": [
+      "about-2",
+      "profile-select"
+    ],
     "childLabels": {
       "about-2": "6",
       "profile-select": "9"
     },
-    "description": "FlashBoss is collaborative language learning software built through conversation between a teacher who can't code and an AI who can.\n\nCore Principles: Fibonacci-based spaced repetition, engagement through gamification, graded language progression, complex mechanics → simple interface."
+    "description": "FlashBoss is collaborative language learning software built through conversation between a teacher who can't code and an AI who can.\n\nCore Principles: Fibonacci-based spaced repetition, engagement through gamification, graded language progression, complex mechanics \u2192 simple interface."
   },
   "about-2": {
     "id": "about-2",
     "title": "Coming Soon",
     "image": "screenshots/common/about-2.png",
-    "page": "walkthrough/about-2.html",
-    "parents": ["about-1"],
-    "children": ["about-1", "about-3", "profile-select"],
+    "parents": [
+      "about-1"
+    ],
+    "children": [
+      "about-1",
+      "about-3",
+      "profile-select"
+    ],
     "childLabels": {
       "about-1": "4",
       "about-3": "6",
@@ -645,9 +966,14 @@
     "id": "about-3",
     "title": "Links & Contact",
     "image": "screenshots/common/about-3.png",
-    "page": "walkthrough/about-3.html",
-    "parents": ["about-2"],
-    "children": ["about-2", "about-4", "profile-select"],
+    "parents": [
+      "about-2"
+    ],
+    "children": [
+      "about-2",
+      "about-4",
+      "profile-select"
+    ],
     "childLabels": {
       "about-2": "4",
       "about-4": "6",
@@ -659,9 +985,13 @@
     "id": "about-4",
     "title": "Third-Party Software",
     "image": "screenshots/common/about-4.png",
-    "page": "walkthrough/about-4.html",
-    "parents": ["about-3"],
-    "children": ["about-3", "profile-select"],
+    "parents": [
+      "about-3"
+    ],
+    "children": [
+      "about-3",
+      "profile-select"
+    ],
     "childLabels": {
       "about-3": "4",
       "profile-select": "9"
@@ -672,9 +1002,13 @@
     "id": "hints-tips",
     "title": "Hints & Tips",
     "image": "screenshots/common/hints-tips.png",
-    "page": "walkthrough/hints-tips.html",
-    "parents": ["about-1"],
-    "children": ["lesson-pack-select", "profile-select"],
+    "parents": [
+      "about-1"
+    ],
+    "children": [
+      "lesson-pack-select",
+      "profile-select"
+    ],
     "childLabels": {
       "lesson-pack-select": "1",
       "profile-select": "9"
@@ -685,9 +1019,13 @@
     "id": "lesson-pack-select",
     "title": "Select Lesson Pack",
     "image": "screenshots/common/lesson-pack-select.png",
-    "page": "walkthrough/lesson-pack-select.html",
-    "parents": ["hints-tips"],
-    "children": ["german-lessons", "hints-tips"],
+    "parents": [
+      "hints-tips"
+    ],
+    "children": [
+      "german-lessons",
+      "hints-tips"
+    ],
     "childLabels": {
       "german-lessons": "2",
       "hints-tips": "9"
@@ -698,9 +1036,13 @@
     "id": "german-lessons",
     "title": "German Core Lessons",
     "image": "screenshots/common/german-lessons.png",
-    "page": "walkthrough/german-lessons.html",
-    "parents": ["lesson-pack-select"],
-    "children": ["lesson-content", "lesson-pack-select"],
+    "parents": [
+      "lesson-pack-select"
+    ],
+    "children": [
+      "lesson-content",
+      "lesson-pack-select"
+    ],
     "childLabels": {
       "lesson-content": "1-8",
       "lesson-pack-select": "9"
@@ -711,13 +1053,16 @@
     "id": "lesson-content",
     "title": "Lesson Content",
     "image": "screenshots/common/lesson-content.png",
-    "page": "walkthrough/lesson-content.html",
-    "parents": ["german-lessons"],
-    "children": ["german-lessons"],
+    "parents": [
+      "german-lessons"
+    ],
+    "children": [
+      "german-lessons"
+    ],
     "childLabels": {
       "german-lessons": "9"
     },
-    "description": "Example: Lesson 2 - Modal Verbs.\n\nModal verbs express ability, permission, obligation, or desire: können (can), dürfen (may), sollen (should), müssen (must), wollen (want to), möchten (would like).\n\nStructure: Modal + infinitive at the END."
+    "description": "Example: Lesson 2 - Modal Verbs.\n\nModal verbs express ability, permission, obligation, or desire: k\u00f6nnen (can), d\u00fcrfen (may), sollen (should), m\u00fcssen (must), wollen (want to), m\u00f6chten (would like).\n\nStructure: Modal + infinitive at the END."
   },
   "terminal": {
     "id": "terminal",
@@ -726,8 +1071,14 @@
     "image": "images/terminal/03_screenshot.png",
     "page": "terminal.html",
     "layout": "terminal",
-    "parents": ["profile-select"],
-    "children": ["terminal-flashboss", "terminal-audio", "terminal-workshop"],
+    "parents": [
+      "profile-select"
+    ],
+    "children": [
+      "terminal-flashboss",
+      "terminal-audio",
+      "terminal-workshop"
+    ],
     "childLabels": {
       "terminal-flashboss": "./FlashBoss",
       "terminal-audio": "./FlashBoss audio",
@@ -747,7 +1098,9 @@
     "subheader": "./FlashBoss audio",
     "image": "images/terminal/FlashBoss audio.png",
     "page": "terminal.html#audio",
-    "parents": ["terminal"],
+    "parents": [
+      "terminal"
+    ],
     "children": [],
     "description": "TTS engine settings and cache management. Run ./FlashBoss audio to access.\n\nCommands: piper, espeak, reset, cache, cache -de, cache-delete, cache-delete -de, cache-delete --de\n\nWindows: Use backslash (\\) for paths. Commands take the form FlashBoss.exe audio."
   },
@@ -757,7 +1110,9 @@
     "subheader": "./FlashBoss workshop",
     "image": "images/terminal/workshop.png",
     "page": "terminal.html#workshop",
-    "parents": ["terminal"],
+    "parents": [
+      "terminal"
+    ],
     "children": [],
     "description": "Standalone tools for language learning. Run independently of the main program.\n\nTools: pronounce (Piper TTS Studio), cards (Card Viewer). More coming soon...\n\nWindows: Use backslash (\\) for paths. Commands take the form FlashBoss.exe workshop."
   },
@@ -767,8 +1122,12 @@
     "subheader": "FlashBoss.exe on Windows",
     "image": "images/terminal/FlashBoss.png",
     "page": null,
-    "parents": ["terminal"],
-    "children": ["entrance"],
+    "parents": [
+      "terminal"
+    ],
+    "children": [
+      "entrance"
+    ],
     "description": "Return to FlashBoss. Type ./FlashBoss (or FlashBoss.exe on Windows) to launch the game.\n\nWindows: Use backslash (\\) for paths. Executables don't need ./ prefix - just run FlashBoss.exe directly."
   }
 }
