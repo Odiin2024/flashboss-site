@@ -849,6 +849,32 @@
                         terminalGrid.appendChild(thumb);
                     });
                 }
+            } else if (focus.layout === 'gallery' && focus.galleryImages) {
+                // Gallery layout - clicking thumbnails swaps with focus image
+                terminalGrid.innerHTML = '';
+                terminalGrid.classList.remove('hidden');
+
+                focus.galleryImages.forEach((imgSrc, index) => {
+                    const thumb = document.createElement('a');
+                    thumb.className = 'terminal-thumb';
+                    thumb.innerHTML = `<img src="${imgSrc}" alt="Gallery image ${index + 1}">`;
+                    thumb.onclick = () => {
+                        // Swap this thumbnail with the focus image
+                        const focusImg = document.getElementById('focusImage');
+                        const currentFocusSrc = focusImg.src;
+                        const thumbImg = thumb.querySelector('img');
+
+                        // Update focus image
+                        focusImg.src = imgSrc;
+
+                        // Update thumbnail to show old focus image
+                        thumbImg.src = currentFocusSrc;
+
+                        // Update the galleryImages array and focus.image for consistency
+                        focus.galleryImages[index] = currentFocusSrc.replace(window.location.origin + '/', '').replace(/^.*\/manual\//, '');
+                    };
+                    terminalGrid.appendChild(thumb);
+                });
             } else {
                 terminalGrid.classList.add('hidden');
                 terminalGrid.innerHTML = '';

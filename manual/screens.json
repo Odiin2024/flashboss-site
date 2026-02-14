@@ -31,7 +31,7 @@
   "gates": {
     "id": "gates",
     "title": "The Gates",
-    "image": null,
+    "image": "screenshots/common/gates.png",
     "page": "walkthrough/gates.html",
     "parents": ["profile-select"],
     "children": ["sanctum", "profile-data"],
@@ -152,7 +152,7 @@
   "create-pack": {
     "id": "create-pack",
     "title": "Choose Language Pack",
-    "subheader": "Walkthrough Available",
+    "subheader": "Click on a Thumbnail for a Tour",
     "image": "screenshots/common/create-pack.png",
     "page": "walkthrough/create-pack.html",
     "layout": "terminal",
@@ -199,7 +199,7 @@
   "sanctum": {
     "id": "sanctum",
     "title": "The Sanctum",
-    "image": null,
+    "image": "screenshots/common/sanctum.png",
     "page": "walkthrough/sanctum.html",
     "parents": ["profile-select", "create-pack"],
     "children": ["profile-data"],
@@ -211,7 +211,7 @@
   "tier-skip": {
     "id": "tier-skip",
     "title": "Tier Skip Challenge",
-    "image": null,
+    "image": "screenshots/common/tierskip1.png",
     "page": "walkthrough/tier-skip.html",
     "parents": ["profile-data"],
     "children": [],
@@ -220,16 +220,23 @@
   "achievements": {
     "id": "achievements",
     "title": "Achievements & Statistics",
-    "image": null,
+    "image": "screenshots/common/achievements/journey.png",
+    "layout": "gallery",
+    "galleryImages": [
+      "screenshots/common/achievements/mastery.png",
+      "screenshots/common/achievements/streaks.png",
+      "screenshots/common/achievements/combat.png",
+      "screenshots/common/achievements/global.png"
+    ],
     "page": "walkthrough/achievements.html",
     "parents": ["profile-data"],
     "children": [],
-    "description": "View your progress, unlocked achievements, and detailed statistics about your learning journey."
+    "description": "View your progress, unlocked achievements, and detailed statistics about your learning journey.\n\nClick thumbnails below to preview each achievement category."
   },
   "export-progress": {
     "id": "export-progress",
     "title": "Export Progress",
-    "image": null,
+    "image": "screenshots/common/export.png",
     "page": "walkthrough/export-progress.html",
     "parents": ["profile-data"],
     "children": [],
@@ -238,7 +245,7 @@
   "meet-masters": {
     "id": "meet-masters",
     "title": "Meet the Masters",
-    "image": null,
+    "image": "screenshots/common/meetmasters.png",
     "page": "walkthrough/meet-masters.html",
     "parents": ["profile-data"],
     "children": [],
@@ -256,7 +263,7 @@
   "vault-heroes": {
     "id": "vault-heroes",
     "title": "Preserved Heroes",
-    "image": "screenshots/common/vault-heroes.png",
+    "image": "screenshots/common/vault.png",
     "page": "walkthrough/vault-heroes.html",
     "parents": ["vault"],
     "children": ["profile-data-vault"],
@@ -272,7 +279,7 @@
     "childLabels": {
       "restore": "7"
     },
-    "description": "View data for a preserved hero. Profile is inactive - data frozen at backup.\n\nOptions: Delete Permanently (5), Achievements (6), Restore This Profile (7), Meet the Masters (8)."
+    "description": "View data for a preserved hero. The screen appears frozen and grey to indicate the profile is inactive.\n\nPress 7 to toggle revival - the hero comes back to colour. The display is functional; visual polish is ongoing.\n\nOptions: Delete Permanently (5), Achievements (6), Restore/Toggle (7), Meet the Masters (8)."
   },
   "about-1": {
     "id": "about-1",
