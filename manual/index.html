@@ -4,18 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlashBoss Manual</title>
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css?v=4">
     <link rel="icon" type="image/png" href="../icon.png">
     <style>
-        /* Manual header bar */
-        .manual-header {
+        /* Manual wrapper */
+        .manual-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
             display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            margin-bottom: 0.4rem;
+            flex-direction: column;
+            padding: 3vh 8vw;
+            box-sizing: border-box;
         }
 
-        /* Toggle button */
+        /* Header bar */
+        .manual-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .back-link {
+            font-size: 0.8rem;
+            color: var(--link-blue);
+            text-decoration: none;
+            transition: color 0.2s;
+            cursor: pointer;
+        }
+
+        .back-link:hover {
+            color: #ffffff;
+        }
+
+        .back-link.disabled {
+            color: var(--grey);
+            cursor: default;
+            pointer-events: none;
+        }
+
         .view-toggle {
             background: rgba(10, 10, 25, 0.5);
             backdrop-filter: blur(8px);
@@ -34,129 +64,305 @@
             color: var(--moon-cream);
         }
 
-        /* Book wrapper - ensure proper sizing */
-        .book-wrapper {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            padding: 4vh 8vw;
-            box-sizing: border-box;
-        }
-
-        /* Book cover frame - magical glow */
-        .book-cover {
+        /* Main content area - frosted glass */
+        .manual-content {
             flex: 1;
-            display: flex;
-            background: transparent;
+            background: rgba(10, 10, 25, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             border-radius: 8px;
-            padding: 3px;
+            border: 1px solid rgba(255, 102, 255, 0.2);
             box-shadow:
                 0 0 20px rgba(255, 102, 255, 0.3),
                 0 0 40px rgba(255, 102, 255, 0.15),
                 0 0 60px rgba(126, 200, 255, 0.1);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
         }
 
-        .book-cover .book-pages {
+        /* Content header */
+        .content-header {
+            padding: 1rem 2rem;
+            border-bottom: 1px solid rgba(255, 102, 255, 0.15);
+            text-align: center;
+        }
+
+        .content-title {
+            font-family: var(--font-pixel);
+            font-size: 0.9rem;
+            color: var(--moon-cream);
+            margin: 0;
+        }
+
+        /* Main grid: image left, details right */
+        .content-main {
             flex: 1;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            box-shadow: none;
-            position: relative;
-            background: rgba(10, 10, 25, 0.4);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-radius: 6px;
-            border: 1px solid rgba(255, 102, 255, 0.2);
+            gap: 2rem;
+            padding: 1.5rem 2rem;
+            overflow-y: auto;
         }
 
-        /* Page header styling */
-        .page-header-area {
-            padding: 1rem 1.5rem 0.75rem;
-            border-bottom: 1px solid rgba(255, 102, 255, 0.15);
+        /* Left side: parents + image + children */
+        .content-left {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        /* Parent buttons - blue for going back */
+        .parents-row {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .parent-btn {
+            background: #171421;
+            border: 1px solid var(--link-blue);
+            border-radius: 4px;
+            padding: 0.4rem 0.75rem;
+            color: var(--link-blue);
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: border-color 0.2s, box-shadow 0.2s, color 0.2s;
+            text-decoration: none;
+        }
+
+        .parent-btn:hover {
+            border-color: var(--link-blue);
+            box-shadow: 0 0 10px rgba(126, 200, 255, 0.4);
+            color: #ffffff;
+        }
+
+        .focus-image-link {
+            display: block;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .focus-image-link:hover {
+            transform: scale(1.02);
+        }
+
+        .focus-image-link:hover .focus-image {
+            border-color: rgba(255, 102, 255, 0.5);
+            box-shadow: 0 0 20px rgba(255, 102, 255, 0.4), 0 0 35px rgba(255, 102, 255, 0.2);
+        }
+
+        .focus-image {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 102, 255, 0.2);
+            box-shadow: 0 0 10px rgba(255, 102, 255, 0.15);
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .focus-placeholder {
+            width: 100%;
+            max-width: 350px;
+            aspect-ratio: 16/9;
+            background: rgba(10, 10, 25, 0.5);
+            border-radius: 6px;
+            border: 1px solid rgba(255, 102, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--grey);
+            font-size: 0.9rem;
+        }
+
+        .learn-more-link {
+            display: inline-block;
+            background: rgba(126, 200, 255, 0.15);
+            border: 1px solid var(--link-blue);
+            border-radius: 4px;
+            padding: 0.5rem 1rem;
+            color: var(--link-blue);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: background 0.2s, box-shadow 0.2s;
+            margin-top: 0.5rem;
+        }
+
+        .learn-more-link:hover {
+            background: rgba(126, 200, 255, 0.25);
+            box-shadow: 0 0 10px rgba(126, 200, 255, 0.3);
+            color: #ffffff;
+        }
+
+        /* Children navigation */
+        .children-section {
+            margin-top: 1rem;
+        }
+
+        .children-title {
+            font-size: 0.8rem;
+            color: var(--grey);
+            margin-bottom: 0.75rem;
+            font-style: italic;
+        }
+
+        .children-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+
+        .child-item {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .child-item:hover .child-num-box {
+            border-color: rgba(255, 102, 255, 0.7);
+            box-shadow: 0 0 10px rgba(255, 102, 255, 0.4);
+        }
+
+        .child-item:hover .child-num {
+            text-shadow: 0 0 8px rgba(255, 102, 255, 0.6);
+        }
+
+        .child-num-box {
+            background: #171421;
+            border: 1px solid var(--grey);
+            border-radius: 3px;
+            padding: 0.3rem 0.5rem;
+            min-width: 2rem;
+            text-align: center;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .child-num {
+            font-family: var(--font-pixel);
+            font-size: 0.5rem;
+            color: #ff66ff;
+            line-height: 1.4;
+            white-space: pre-line;
+            transition: text-shadow 0.2s;
+        }
+
+        .child-title {
+            font-size: 0.8rem;
+            color: var(--moon-cream);
+        }
+
+        /* Right side: description */
+        .content-right {
+            display: flex;
+            flex-direction: column;
+            padding: 0 5%;
+        }
+
+        .description-text {
+            color: var(--moon-cream);
+            line-height: 1.8;
+        }
+
+        .description-text p {
             margin-bottom: 1rem;
         }
 
-        .page-instruction {
-            font-size: 0.8rem;
-            color: var(--grey);
-            text-align: center;
-            margin: 0;
-            font-style: italic;
-        }
-
-        .page-title {
-            font-size: 0.8rem;
-            color: var(--grey);
-            text-align: center;
-            margin: 0;
-            font-style: italic;
-            border: none;
-            padding: 0;
-        }
-
-        /* Tile cover frame */
-        .tile-cover {
-            flex: 1;
+        /* Footer */
+        .content-footer {
+            padding: 1rem 2rem;
+            border-top: 1px solid rgba(255, 102, 255, 0.15);
             display: flex;
-            background: transparent;
-            border-radius: 8px;
-            padding: 3px;
-            box-shadow:
-                0 0 20px rgba(255, 102, 255, 0.3),
-                0 0 40px rgba(255, 102, 255, 0.15),
-                0 0 60px rgba(126, 200, 255, 0.1);
+            justify-content: space-between;
+            align-items: center;
         }
 
-        /* Tile view - book layout */
-        .tile-pages {
+        .footer-left {
+            font-size: 0.8rem;
+            color: var(--grey);
+            font-style: italic;
+        }
+
+        .footer-right {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .footer-link {
+            font-size: 0.8rem;
+            color: var(--link-blue);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-link:hover {
+            color: #ffffff;
+        }
+
+        .footer-divider {
+            color: var(--grey);
+        }
+
+        /* Tile view */
+        .tile-view {
             flex: 1;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
             background: rgba(10, 10, 25, 0.4);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            border-radius: 6px;
+            border-radius: 8px;
             border: 1px solid rgba(255, 102, 255, 0.2);
+            box-shadow:
+                0 0 20px rgba(255, 102, 255, 0.3),
+                0 0 40px rgba(255, 102, 255, 0.15);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            overflow: hidden;
         }
 
         .tile-page {
             display: flex;
             flex-direction: column;
+            padding: 1.5rem;
         }
 
         .tile-page-left {
             border-right: 1px solid rgba(255, 102, 255, 0.15);
         }
 
+        .tile-page-title {
+            font-size: 0.85rem;
+            color: var(--grey);
+            text-align: center;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
         .tile-grid {
-            flex: 1;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 1fr);
             gap: 0.75rem;
-            padding: 0.75rem;
+            flex: 1;
         }
 
         .tile {
-            background: var(--bg-dark);
-            border: 2px solid var(--grey);
+            background: #171421;
+            border: 1px solid rgba(255, 102, 255, 0.3);
             border-radius: 6px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 0.75rem;
+            padding: 1rem;
             cursor: pointer;
-            transition: border-color 0.2s, transform 0.2s;
+            transition: border-color 0.2s, box-shadow 0.2s;
         }
 
         .tile:hover {
-            border-color: var(--moon-yellow);
-            transform: scale(1.02);
+            border-color: rgba(255, 102, 255, 0.6);
+            box-shadow: 0 0 15px rgba(255, 102, 255, 0.3);
         }
 
         .tile-title {
@@ -174,470 +380,23 @@
             text-align: center;
         }
 
-        /* Left page - navigation tree */
-        .book-left {
-            border-right: 1px solid rgba(255, 102, 255, 0.15);
-            display: flex;
-            flex-direction: column;
-            background: transparent;
-        }
-
-        /* Page content area */
-        .page-content {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 0.75rem 1rem;
-        }
-
-        /* Page footer */
-        .page-footer {
-            padding: 0.75rem 1.5rem;
-        }
-
-        .page-footer .hint {
-            font-size: 0.8rem;
-            color: var(--grey);
-            font-style: italic;
-            text-align: center;
-            margin: 0;
-        }
-
-        .page-footer .footer-link {
-            font-size: 0.8rem;
-            color: var(--link-blue);
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .page-footer .footer-link:hover {
-            color: #ffffff;
-        }
-
-        .page-footer .footer-divider {
-            color: var(--grey);
-            margin: 0 0.5rem;
-        }
-
-        .book-right .page-footer {
-            text-align: center;
-        }
-
-
-        /* Navigation row: back + parents at top */
-        .nav-row {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-            width: 100%;
-        }
-
-        /* Back button */
-        .back-btn {
-            width: 44px;
-            height: 48px;
-            background: rgba(138, 180, 212, 0.15);
-            border: 2px solid var(--grey);
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            color: var(--grey);
-            cursor: pointer;
-            transition: border-color 0.2s, color 0.2s, background 0.2s;
-        }
-
-        .back-btn:hover {
-            border-color: var(--link-blue);
-            color: var(--link-blue);
-            background: rgba(138, 180, 212, 0.25);
-        }
-
-        .back-btn.disabled {
-            opacity: 0.3;
-            cursor: default;
-            pointer-events: none;
-        }
-
-        /* Parent thumbnails */
-        .parent-thumb {
-            width: 55px;
-            height: 60px;
-            background: var(--bg-dark);
-            border: 2px solid var(--grey);
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.4rem;
-            color: var(--grey);
-            text-decoration: none;
-            cursor: pointer;
-            transition: border-color 0.2s, transform 0.2s;
-            overflow: hidden;
-        }
-
-        .parent-thumb:hover {
-            border-color: var(--coral);
-            transform: scale(1.05);
-        }
-
-        .parent-thumb img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* Main area: focus + branches + children */
-        .main-area {
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            gap: 0;
-            flex: 1;
-            width: 100%;
-            padding: 0 1rem;
-        }
-
-        /* Main/focus page display - larger, left side */
-        .focus-thumb {
-            width: 260px;
-            height: 285px;
-            background: rgba(10, 10, 25, 0.4);
-            border: 1px solid rgba(255, 102, 255, 0.2);
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--moon-cream);
-            font-family: var(--font-pixel);
-            font-size: 0.6rem;
-            text-align: center;
-            padding: 0.5rem;
-            overflow: hidden;
-            text-decoration: none;
-            cursor: pointer;
-            transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
-            flex-shrink: 0;
-            box-shadow: 0 0 10px rgba(255, 102, 255, 0.15);
-            margin-right: 0;
-        }
-
-        .focus-thumb:hover {
-            border-color: rgba(255, 102, 255, 0.5);
-            box-shadow: 0 0 20px rgba(255, 102, 255, 0.4), 0 0 35px rgba(255, 102, 255, 0.2);
-            transform: scale(1.02);
-        }
-
-        .focus-thumb img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 2px;
-        }
-
-        /* Branch connector from focus to children */
-        .branch-connector {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding-top: 20px;
-        }
-
-        .branch-line-h {
-            width: 30px;
-            height: 2px;
-            background: rgba(255, 102, 255, 0.4);
-        }
-
-        .branch-line-v {
-            width: 2px;
-            background: rgba(255, 102, 255, 0.4);
-            margin-left: 28px;
-        }
-
-        .branch-to-child {
-            display: flex;
-            align-items: center;
-        }
-
-        .branch-line-to {
-            width: 15px;
-            height: 2px;
-            background: rgba(255, 102, 255, 0.4);
-        }
-
-        /* Numbered children list - to the right */
-        .nav-children {
-            display: flex;
-            flex-direction: column;
-            gap: 0.3rem;
-            min-width: 160px;
-            max-width: 200px;
-        }
-
-        .child-item {
-            display: flex;
-            align-items: center;
-            gap: 0.6rem;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-        .child-item:hover .child-num-box {
-            border-color: rgba(255, 102, 255, 0.7);
-            box-shadow: 0 0 10px rgba(255, 102, 255, 0.4);
-        }
-
-        .child-num-box {
-            background: #171421;
-            border: 1px solid rgba(255, 102, 255, 0.4);
-            border-radius: 3px;
-            padding: 0.3rem 0.5rem;
-            min-width: 2rem;
-            text-align: center;
-            transition: border-color 0.2s, box-shadow 0.2s;
-        }
-
-        .child-num {
-            font-family: var(--font-pixel);
-            font-size: 0.5rem;
-            color: #ff66ff;
-            line-height: 1.4;
-            white-space: pre-line;
-        }
-
-        .child-title {
-            font-size: 0.75rem;
-            color: var(--moon-cream);
-        }
-
-        /* Right page - description */
-        .book-right {
-            display: flex;
-            flex-direction: column;
-            background: transparent;
-            padding: 0 5%;
-        }
-
-        .book-right .page-content {
-            align-items: flex-start;
-            padding: 0.75rem 1.5rem;
-        }
-
-        .book-right p {
-            color: var(--moon-cream);
-            line-height: 1.8;
-            margin-bottom: 1rem;
-        }
-
-        /* Zoom view - fullscreen overlay */
-        .zoom-view {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(10, 10, 25, 0.85);
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
-            border-radius: 4px;
-            display: flex;
-            flex-direction: column;
-            padding: 1.5rem;
-            overflow-y: auto;
-        }
-
-        .zoom-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1rem;
-            padding-bottom: 0.75rem;
-            border-bottom: 1px solid rgba(255, 102, 255, 0.15);
-        }
-
-        .zoom-title {
-            font-family: var(--font-pixel);
-            font-size: 0.9rem;
-            color: var(--moon-cream);
-        }
-
-        .zoom-close {
-            background: transparent;
-            border: 1px solid var(--grey);
-            border-radius: 4px;
-            color: var(--grey);
-            padding: 0.4rem 0.75rem;
-            cursor: pointer;
-            font-size: 0.8rem;
-            transition: border-color 0.2s, color 0.2s;
-        }
-
-        .zoom-close:hover {
-            border-color: var(--coral);
-            color: var(--coral);
-        }
-
-        .zoom-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            flex: 1;
-        }
-
-        .zoom-image-area {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .zoom-image-area img {
-            max-width: 100%;
-            max-height: 60vh;
-            object-fit: contain;
-            border-radius: 4px;
-            border: 2px solid rgba(255, 102, 255, 0.5);
-            box-shadow: 0 0 15px rgba(255, 102, 255, 0.3);
-        }
-
-        .zoom-learn-more {
-            display: inline-block;
-            background: rgba(126, 200, 255, 0.15);
-            border: 1px solid var(--link-blue);
-            border-radius: 4px;
-            padding: 0.5rem 1rem;
-            color: var(--link-blue);
-            text-decoration: none;
-            font-size: 0.85rem;
-            transition: background 0.2s, box-shadow 0.2s;
-        }
-
-        .zoom-learn-more:hover {
-            background: rgba(126, 200, 255, 0.25);
-            box-shadow: 0 0 10px rgba(126, 200, 255, 0.3);
-            color: #ffffff;
-        }
-
-        .zoom-details {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .zoom-description {
-            color: var(--moon-cream);
-            line-height: 1.8;
-        }
-
-        .zoom-description p {
-            margin-bottom: 1rem;
-        }
-
-        .zoom-children {
-            margin-top: 1rem;
-        }
-
-        .zoom-children-title {
-            font-size: 0.85rem;
-            color: var(--grey);
-            margin-bottom: 0.75rem;
-            font-style: italic;
-        }
-
-        .zoom-child-list {
-            display: flex;
-            flex-direction: column;
-            gap: 0.4rem;
-        }
-
-        .zoom-child-item {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 0.5rem 0.75rem;
-            background: rgba(138, 180, 212, 0.1);
-            border: 1px solid rgba(138, 180, 212, 0.3);
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background 0.2s, border-color 0.2s;
-        }
-
-        .zoom-child-item:hover {
-            background: rgba(138, 180, 212, 0.2);
-            border-color: var(--moon-yellow);
-        }
-
-        .zoom-child-num {
-            font-family: var(--font-pixel);
-            font-size: 0.6rem;
-            color: var(--coral);
-            min-width: 2rem;
-        }
-
-        .zoom-child-title {
-            font-size: 0.85rem;
-            color: var(--moon-cream);
-        }
-
         /* Hidden state */
-        .book-cover.hidden,
-        .tile-cover.hidden,
-        .zoom-view.hidden {
-            display: none;
+        .hidden {
+            display: none !important;
         }
 
-        /* Mobile: stack vertically */
+        /* Mobile */
         @media (max-width: 768px) {
-            .book-wrapper {
-                position: relative;
+            .manual-wrapper {
                 padding: 2vh 4vw;
-                height: auto;
-                min-height: 100vh;
             }
 
-            .book-cover,
-            .tile-cover {
-                flex: none;
-            }
-
-            .book-pages {
+            .content-main {
                 grid-template-columns: 1fr;
+                padding: 1rem;
             }
 
-            .book-left {
-                border-right: none;
-                border-bottom: 1px solid rgba(255, 102, 255, 0.15);
-            }
-
-            .main-area {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .focus-thumb {
-                width: 160px;
-                height: 175px;
-            }
-
-            .parent-thumb {
-                width: 45px;
-                height: 50px;
-            }
-
-            .nav-children {
-                max-width: 100%;
-                min-width: auto;
-            }
-
-            .tile-pages {
+            .tile-view {
                 grid-template-columns: 1fr;
             }
 
@@ -646,165 +405,122 @@
                 border-bottom: 1px solid rgba(255, 102, 255, 0.15);
             }
 
-            .tile-grid {
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(3, 1fr);
-            }
-
-            .tile-title {
-                font-size: 0.5rem;
-            }
-
-            .manual-header {
-                margin-bottom: 0.3rem;
+            .content-footer {
+                flex-direction: column;
+                gap: 0.75rem;
+                text-align: center;
             }
 
             .view-toggle {
                 font-size: 0.65rem;
                 padding: 0.25rem 0.5rem;
             }
-
-            .zoom-content {
-                grid-template-columns: 1fr;
-            }
         }
     </style>
 </head>
 <body>
-    <!-- Book-on-table layout -->
-    <div class="book-wrapper">
-        <!-- Header bar -->
+    <div class="manual-wrapper">
+        <!-- Header -->
         <div class="manual-header">
+            <a class="back-link disabled" id="backLink">Back to previous screen</a>
             <button class="view-toggle" id="viewToggle">Change to Tile View</button>
         </div>
 
-        <!-- BOOK VIEW -->
-        <div class="book-cover" id="bookView">
-            <div class="book-pages">
-                <!-- Left page: navigation tree -->
-                <div class="book-left" id="cladogramLeft">
-                    <div class="page-header-area">
-                        <h2 class="page-title">Click on a number option to progress</h2>
-                    </div>
-                    <div class="page-content">
-                        <div class="nav-row" id="navRow"></div>
-                        <div class="main-area">
-                            <div class="focus-thumb" id="focusThumb"></div>
-                            <div class="branch-connector" id="branchConnector"></div>
-                            <div class="nav-children" id="navChildren"></div>
-                        </div>
-                    </div>
-                    <div class="page-footer">
-                        <p class="hint" id="leftHint">Click the center image to expand</p>
+        <!-- Main content - Grimoire view (default) -->
+        <div class="manual-content" id="grimoireView">
+            <div class="content-header">
+                <h1 class="content-title" id="screenTitle">Loading...</h1>
+            </div>
+
+            <div class="content-main">
+                <div class="content-left">
+                    <div class="parents-row" id="parentsRow"></div>
+
+                    <a class="focus-image-link" id="focusLink" href="#">
+                        <img class="focus-image" id="focusImage" src="" alt="">
+                    </a>
+                    <div id="learnMoreArea"></div>
+
+                    <div class="children-section" id="childrenSection">
+                        <p class="children-title">Navigate to:</p>
+                        <div class="children-list" id="childrenList"></div>
                     </div>
                 </div>
 
-                <!-- Right page: description -->
-                <div class="book-right" id="cladogramRight">
-                    <div class="page-header-area">
-                        <h2 class="page-title" id="focusTitle">Loading...</h2>
-                    </div>
-                    <div class="page-content">
-                        <div id="focusDescription"></div>
-                    </div>
-                    <div class="page-footer">
-                        <a href="../beta-key.html" class="footer-link">Ready for a Beta Key?</a>
-                        <span class="footer-divider">&middot;</span>
-                        <a href="../home.html" class="footer-link">Hub</a>
-                        <span class="footer-divider">&middot;</span>
-                        <a href="https://store.steampowered.com/app/4134440/FlashBoss/" class="footer-link">Visit Steam</a>
-                    </div>
+                <div class="content-right">
+                    <div class="description-text" id="descriptionText"></div>
                 </div>
+            </div>
 
-                <!-- Zoom view (fullscreen overlay) -->
-                <div class="zoom-view hidden" id="zoomView">
-                    <div class="zoom-header">
-                        <span class="zoom-title" id="zoomTitle"></span>
-                        <button class="zoom-close" id="zoomClose">Close</button>
-                    </div>
-                    <div class="zoom-content">
-                        <div class="zoom-image-area">
-                            <img id="zoomImage" src="" alt="">
-                            <a id="zoomLearnMore" href="#" class="zoom-learn-more">Learn more &rarr;</a>
-                        </div>
-                        <div class="zoom-details">
-                            <div class="zoom-description" id="zoomDescription"></div>
-                            <div class="zoom-children" id="zoomChildrenArea">
-                                <p class="zoom-children-title">Navigate to:</p>
-                                <div class="zoom-child-list" id="zoomChildList"></div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="content-footer">
+                <span class="footer-left">Click the image or a number to navigate</span>
+                <div class="footer-right">
+                    <a href="../beta-key.html" class="footer-link">Ready for a Beta Key?</a>
+                    <span class="footer-divider">&middot;</span>
+                    <a href="../home.html" class="footer-link">Hub</a>
+                    <span class="footer-divider">&middot;</span>
+                    <a href="https://store.steampowered.com/app/4134440/FlashBoss/" class="footer-link">Visit Steam</a>
                 </div>
             </div>
         </div>
 
-        <!-- TILE VIEW -->
-        <div class="tile-cover hidden" id="tileView">
-            <div class="tile-pages">
-                <!-- Left page: How to Play -->
-                <div class="tile-page tile-page-left">
-                    <div class="page-header-area">
-                        <p class="page-instruction">How to Play the Game</p>
+        <!-- Tile view -->
+        <div class="tile-view hidden" id="tileView">
+            <div class="tile-page tile-page-left">
+                <p class="tile-page-title">How to Play</p>
+                <div class="tile-grid">
+                    <div class="tile" onclick="selectTopic('profile-select')">
+                        <span class="tile-title">Getting Started</span>
+                        <span class="tile-desc">Installation & setup</span>
                     </div>
-                    <div class="tile-grid">
-                        <div class="tile" onclick="selectTopic('profile-select')">
-                            <span class="tile-title">Getting Started</span>
-                            <span class="tile-desc">Installation & setup</span>
-                        </div>
-                        <div class="tile" onclick="selectTopic('tier-skip')">
-                            <span class="tile-title">Tier Skip</span>
-                            <span class="tile-desc">Test out of content</span>
-                        </div>
-                        <div class="tile" onclick="selectTopic('sanctum')">
-                            <span class="tile-title">Daily Practice</span>
-                            <span class="tile-desc">Streaks & reviews</span>
-                        </div>
-                        <div class="tile" onclick="selectTopic('sanctum')">
-                            <span class="tile-title">Boss Fights</span>
-                            <span class="tile-desc">Challenge clusters</span>
-                        </div>
-                        <div class="tile" onclick="selectTopic('sanctum')">
-                            <span class="tile-title">Grimoire</span>
-                            <span class="tile-desc">Powerdrive & Drive</span>
-                        </div>
-                        <div class="tile" onclick="selectTopic('sanctum')">
-                            <span class="tile-title">Review Modes</span>
-                            <span class="tile-desc">Practice options</span>
-                        </div>
+                    <div class="tile" onclick="selectTopic('tier-skip')">
+                        <span class="tile-title">Tier Skip</span>
+                        <span class="tile-desc">Test out of content</span>
+                    </div>
+                    <div class="tile" onclick="selectTopic('sanctum')">
+                        <span class="tile-title">Daily Practice</span>
+                        <span class="tile-desc">Streaks & reviews</span>
+                    </div>
+                    <div class="tile" onclick="selectTopic('sanctum')">
+                        <span class="tile-title">Boss Fights</span>
+                        <span class="tile-desc">Challenge clusters</span>
+                    </div>
+                    <div class="tile" onclick="selectTopic('sanctum')">
+                        <span class="tile-title">Grimoire</span>
+                        <span class="tile-desc">Powerdrive & Drive</span>
+                    </div>
+                    <div class="tile" onclick="selectTopic('sanctum')">
+                        <span class="tile-title">Review Modes</span>
+                        <span class="tile-desc">Practice options</span>
                     </div>
                 </div>
-
-                <!-- Right page: About FlashBoss -->
-                <div class="tile-page tile-page-right">
-                    <div class="page-header-area">
-                        <p class="page-instruction">About FlashBoss ~ Learn More</p>
+            </div>
+            <div class="tile-page">
+                <p class="tile-page-title">About FlashBoss</p>
+                <div class="tile-grid">
+                    <div class="tile" onclick="selectTopic('create-master')">
+                        <span class="tile-title">Masters</span>
+                        <span class="tile-desc">Choose your guide</span>
                     </div>
-                    <div class="tile-grid">
-                        <div class="tile" onclick="selectTopic('create-master')">
-                            <span class="tile-title">Masters</span>
-                            <span class="tile-desc">Choose your guide</span>
-                        </div>
-                        <div class="tile" onclick="selectTopic('lesson-pack-select')">
-                            <span class="tile-title">Lessons</span>
-                            <span class="tile-desc">Learn new words</span>
-                        </div>
-                        <div class="tile" onclick="selectTopic('profile-data')">
-                            <span class="tile-title">Tiers</span>
-                            <span class="tile-desc">Progression system</span>
-                        </div>
-                        <div class="tile" onclick="selectTopic('create-pack')">
-                            <span class="tile-title">Language Packs</span>
-                            <span class="tile-desc">German, Esperanto</span>
-                        </div>
-                        <div class="tile" onclick="selectTopic('terminal')">
-                            <span class="tile-title">Terminal</span>
-                            <span class="tile-desc">CLI commands</span>
-                        </div>
-                        <div class="tile" onclick="selectTopic('about-1')">
-                            <span class="tile-title">FAQ</span>
-                            <span class="tile-desc">Common questions</span>
-                        </div>
+                    <div class="tile" onclick="selectTopic('lesson-pack-select')">
+                        <span class="tile-title">Lessons</span>
+                        <span class="tile-desc">Learn new words</span>
+                    </div>
+                    <div class="tile" onclick="selectTopic('profile-data')">
+                        <span class="tile-title">Tiers</span>
+                        <span class="tile-desc">Progression system</span>
+                    </div>
+                    <div class="tile" onclick="selectTopic('create-pack')">
+                        <span class="tile-title">Language Packs</span>
+                        <span class="tile-desc">German, Esperanto</span>
+                    </div>
+                    <div class="tile" onclick="selectTopic('terminal')">
+                        <span class="tile-title">Terminal</span>
+                        <span class="tile-desc">CLI commands</span>
+                    </div>
+                    <div class="tile" onclick="selectTopic('about-1')">
+                        <span class="tile-title">FAQ</span>
+                        <span class="tile-desc">Common questions</span>
                     </div>
                 </div>
             </div>
@@ -815,101 +531,29 @@
         let screens = {};
         let currentFocus = 'entrance';
         let focusHistory = [];
-        let isBookView = true;
+        let isGrimoireView = true;
 
-        // Toggle between book and tile view
-        function setView(showBook) {
-            isBookView = showBook;
-            document.getElementById('bookView').classList.toggle('hidden', !isBookView);
-            document.getElementById('tileView').classList.toggle('hidden', isBookView);
-            document.getElementById('viewToggle').textContent = isBookView ? 'Change to Tile View' : 'Change to Grimoire View';
+        // Toggle between grimoire and tile view
+        function setView(showGrimoire) {
+            isGrimoireView = showGrimoire;
+            document.getElementById('grimoireView').classList.toggle('hidden', !isGrimoireView);
+            document.getElementById('tileView').classList.toggle('hidden', isGrimoireView);
+            document.getElementById('viewToggle').textContent = isGrimoireView ? 'Change to Tile View' : 'Change to Grimoire View';
         }
 
         document.getElementById('viewToggle').addEventListener('click', () => {
-            setView(!isBookView);
+            setView(!isGrimoireView);
         });
 
-        // Select topic from tile view - switches to book and sets focus
+        // Select topic from tile view
         function selectTopic(screenId) {
             if (screens[screenId]) {
+                focusHistory.push(currentFocus);
                 currentFocus = screenId;
-                renderCladogram();
+                renderScreen();
                 setView(true);
             }
         }
-
-        // Zoom in on the focus image - shows fullscreen overlay
-        function zoomIn() {
-            const focus = screens[currentFocus];
-            if (!focus) return;
-
-            // Set title
-            document.getElementById('zoomTitle').textContent = focus.title;
-
-            // Set image
-            const zoomImg = document.getElementById('zoomImage');
-            if (focus.image) {
-                zoomImg.src = focus.image;
-                zoomImg.style.display = 'block';
-            } else {
-                zoomImg.style.display = 'none';
-            }
-
-            // Set learn more link
-            const learnMoreLink = document.getElementById('zoomLearnMore');
-            if (focus.page) {
-                learnMoreLink.href = focus.page;
-                learnMoreLink.style.display = 'inline-block';
-            } else {
-                learnMoreLink.style.display = 'none';
-            }
-
-            // Set description
-            const descDiv = document.getElementById('zoomDescription');
-            descDiv.innerHTML = '';
-            focus.description.split('\n\n').forEach(para => {
-                const p = document.createElement('p');
-                p.textContent = para;
-                descDiv.appendChild(p);
-            });
-
-            // Set children
-            const childrenArea = document.getElementById('zoomChildrenArea');
-            const childList = document.getElementById('zoomChildList');
-            childList.innerHTML = '';
-
-            if (focus.children.length > 0) {
-                childrenArea.style.display = 'block';
-                focus.children.forEach(childId => {
-                    const child = screens[childId];
-                    if (!child) return;
-
-                    const menuNum = focus.childLabels ? (focus.childLabels[childId] || '') : '';
-
-                    const item = document.createElement('div');
-                    item.className = 'zoom-child-item';
-                    item.innerHTML = `
-                        <span class="zoom-child-num">${menuNum}</span>
-                        <span class="zoom-child-title">${child.title}</span>
-                    `;
-                    item.onclick = () => {
-                        zoomOut();
-                        setFocus(childId);
-                    };
-                    childList.appendChild(item);
-                });
-            } else {
-                childrenArea.style.display = 'none';
-            }
-
-            document.getElementById('zoomView').classList.remove('hidden');
-        }
-
-        function zoomOut() {
-            document.getElementById('zoomView').classList.add('hidden');
-        }
-
-        document.getElementById('zoomClose').addEventListener('click', zoomOut);
 
         // Load screen data
         fetch('screens.json')
@@ -917,141 +561,155 @@
             .then(data => {
                 screens = data;
 
-                // Check for URL parameter to set initial focus
+                // Check for URL parameter
                 const urlParams = new URLSearchParams(window.location.search);
                 const screenParam = urlParams.get('screen');
                 if (screenParam && screens[screenParam]) {
                     currentFocus = screenParam;
                 }
 
-                renderCladogram();
+                renderScreen();
             })
             .catch(err => {
                 console.error('Failed to load screens.json:', err);
-                document.getElementById('focusTitle').textContent = 'Error loading data';
+                document.getElementById('screenTitle').textContent = 'Error loading data';
             });
 
-        function renderCladogram() {
+        function renderScreen() {
             const focus = screens[currentFocus];
             if (!focus) return;
 
-            // Render navigation row (back + parents)
-            const navRow = document.getElementById('navRow');
-            navRow.innerHTML = '';
-
-            // Add back button
-            const backBtn = document.createElement('div');
-            backBtn.className = 'back-btn' + (focusHistory.length === 0 ? ' disabled' : '');
-            backBtn.textContent = '↩';
-            backBtn.title = 'Go back';
-            backBtn.onclick = goBack;
-            navRow.appendChild(backBtn);
-
-            // Add parents
-            focus.parents.forEach((parentId) => {
-                const parent = screens[parentId];
-                if (!parent) return;
-
-                const parentEl = document.createElement('div');
-                parentEl.className = 'parent-thumb';
-                parentEl.onclick = () => setFocus(parentId);
-
-                if (parent.image) {
-                    parentEl.innerHTML = `<img src="${parent.image}" alt="${parent.title}">`;
+            // Update back link - goes to first parent (default back path)
+            const backLink = document.getElementById('backLink');
+            if (focus.parents && focus.parents.length > 0) {
+                const firstParent = screens[focus.parents[0]];
+                if (firstParent) {
+                    backLink.classList.remove('disabled');
+                    backLink.textContent = 'Back to ' + firstParent.title;
+                    backLink.onclick = () => setFocus(focus.parents[0]);
                 } else {
-                    parentEl.textContent = parent.title;
+                    backLink.classList.add('disabled');
+                    backLink.textContent = 'Back';
+                    backLink.onclick = null;
                 }
-                navRow.appendChild(parentEl);
-            });
-
-            // Update focus thumbnail
-            const focusThumb = document.getElementById('focusThumb');
-            if (focus.image) {
-                focusThumb.innerHTML = `<img src="${focus.image}" alt="${focus.title}">`;
             } else {
-                focusThumb.textContent = focus.title;
-            }
-            focusThumb.onclick = zoomIn;
-
-            // Render branch connector and numbered children list
-            const branchConnector = document.getElementById('branchConnector');
-            const navChildren = document.getElementById('navChildren');
-            branchConnector.innerHTML = '';
-            navChildren.innerHTML = '';
-
-            if (focus.children.length > 0) {
-                // First horizontal line from focus
-                const hLine = document.createElement('div');
-                hLine.className = 'branch-line-h';
-                branchConnector.appendChild(hLine);
-
-                // Calculate vertical line height based on children count
-                const childCount = focus.children.length;
-                const vLine = document.createElement('div');
-                vLine.className = 'branch-line-v';
-                vLine.style.height = ((childCount - 1) * 32 + 10) + 'px';
-                if (childCount > 1) {
-                    branchConnector.appendChild(vLine);
-                }
+                backLink.classList.add('disabled');
+                backLink.textContent = 'Back';
+                backLink.onclick = null;
             }
 
-            focus.children.forEach((childId, index) => {
-                const child = screens[childId];
-                if (!child) return;
+            // Render parent buttons (blue)
+            const parentsRow = document.getElementById('parentsRow');
+            parentsRow.innerHTML = '';
+            if (focus.parents && focus.parents.length > 0) {
+                focus.parents.forEach(parentId => {
+                    const parent = screens[parentId];
+                    if (!parent) return;
 
-                const menuNum = focus.childLabels ? (focus.childLabels[childId] || '') : '';
+                    const btn = document.createElement('a');
+                    btn.className = 'parent-btn';
+                    btn.textContent = '← ' + parent.title;
+                    btn.onclick = () => setFocus(parentId);
+                    parentsRow.appendChild(btn);
+                });
+            }
 
-                // Expand ranges like "2-5" to multi-line "2\n3\n4\n5"
-                let displayNum = menuNum;
-                const rangeMatch = menuNum.match(/^(\d+)-(\d+)$/);
-                if (rangeMatch) {
-                    const start = parseInt(rangeMatch[1]);
-                    const end = parseInt(rangeMatch[2]);
-                    const nums = [];
-                    for (let i = start; i <= end; i++) {
-                        nums.push(i);
-                    }
-                    displayNum = nums.join('\n');
-                }
+            // Title
+            document.getElementById('screenTitle').textContent = focus.title;
 
-                const item = document.createElement('div');
-                item.className = 'child-item';
-                item.onclick = () => setFocus(childId);
+            // Image
+            const focusImage = document.getElementById('focusImage');
+            const focusLink = document.getElementById('focusLink');
+            if (focus.image) {
+                focusImage.src = focus.image;
+                focusImage.alt = focus.title;
+                focusImage.style.display = 'block';
+            } else {
+                focusImage.style.display = 'none';
+            }
 
-                item.innerHTML = `
-                    <div class="child-num-box">
-                        <span class="child-num">${displayNum}</span>
-                    </div>
-                    <span class="child-title">${child.title}</span>
-                `;
-                navChildren.appendChild(item);
-            });
+            // Focus link - goes to dedicated page if exists
+            if (focus.page) {
+                focusLink.href = focus.page;
+                focusLink.onclick = null;
+            } else {
+                focusLink.href = '#';
+                focusLink.onclick = (e) => e.preventDefault();
+            }
 
-            // Render description
-            document.getElementById('focusTitle').textContent = focus.title;
+            // Learn more link
+            const learnMoreArea = document.getElementById('learnMoreArea');
+            if (focus.page) {
+                learnMoreArea.innerHTML = `<a href="${focus.page}" class="learn-more-link">Learn more →</a>`;
+            } else {
+                learnMoreArea.innerHTML = '';
+            }
 
-            const descDiv = document.getElementById('focusDescription');
+            // Description
+            const descDiv = document.getElementById('descriptionText');
             descDiv.innerHTML = '';
             focus.description.split('\n\n').forEach(para => {
                 const p = document.createElement('p');
                 p.textContent = para;
                 descDiv.appendChild(p);
             });
+
+            // Children
+            const childrenSection = document.getElementById('childrenSection');
+            const childrenList = document.getElementById('childrenList');
+            childrenList.innerHTML = '';
+
+            if (focus.children.length > 0) {
+                childrenSection.style.display = 'block';
+
+                focus.children.forEach(childId => {
+                    const child = screens[childId];
+                    if (!child) return;
+
+                    const menuNum = focus.childLabels ? (focus.childLabels[childId] || '') : '';
+
+                    // Expand ranges like "2-5" to multi-line
+                    let displayNum = menuNum;
+                    const rangeMatch = menuNum.match(/^(\d+)-(\d+)$/);
+                    if (rangeMatch) {
+                        const start = parseInt(rangeMatch[1]);
+                        const end = parseInt(rangeMatch[2]);
+                        const nums = [];
+                        for (let i = start; i <= end; i++) {
+                            nums.push(i);
+                        }
+                        displayNum = nums.join('\n');
+                    }
+
+                    const item = document.createElement('div');
+                    item.className = 'child-item';
+                    item.onclick = () => setFocus(childId);
+
+                    item.innerHTML = `
+                        <div class="child-num-box">
+                            <span class="child-num">${displayNum}</span>
+                        </div>
+                        <span class="child-title">${child.title}</span>
+                    `;
+                    childrenList.appendChild(item);
+                });
+            } else {
+                childrenSection.style.display = 'none';
+            }
         }
 
         function setFocus(screenId) {
             if (screens[screenId]) {
-                // Push current to history before changing
                 focusHistory.push(currentFocus);
                 currentFocus = screenId;
-                renderCladogram();
+                renderScreen();
             }
         }
 
         function goBack() {
             if (focusHistory.length > 0) {
                 currentFocus = focusHistory.pop();
-                renderCladogram();
+                renderScreen();
             }
         }
     </script>
