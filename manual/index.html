@@ -300,6 +300,20 @@
             color: var(--moon-cream);
         }
 
+        .nav-child-split {
+            cursor: default;
+        }
+
+        .split-link {
+            color: var(--moon-cream);
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .split-link:hover {
+            color: var(--magic-pink);
+        }
+
         /* Terminal image grid */
         .terminal-grid {
             display: grid;
@@ -920,8 +934,9 @@
 
                 // Children (magenta with numbers)
                 if (hasChildren) {
+                    // Group children by their label number
+                    const childGroups = {};
                     focus.children.forEach(childId => {
-                        // Check for synthetic children with custom display names and targets
                         const hasSyntheticChild = focus.childDisplayNames && focus.childDisplayNames[childId];
                         const targetId = (focus.childTargets && focus.childTargets[childId]) || childId;
                         const child = screens[targetId];
@@ -929,6 +944,21 @@
 
                         const displayName = hasSyntheticChild ? focus.childDisplayNames[childId] : child.title;
                         const menuNum = focus.childLabels ? (focus.childLabels[childId] || '') : '';
+
+                        if (!childGroups[menuNum]) {
+                            childGroups[menuNum] = [];
+                        }
+                        childGroups[menuNum].push({ childId, targetId, displayName, menuNum });
+                    });
+
+                    // Render grouped children
+                    Object.keys(childGroups).sort((a, b) => {
+                        // Sort numerically, with * first
+                        if (a === '*') return -1;
+                        if (b === '*') return 1;
+                        return parseInt(a) - parseInt(b);
+                    }).forEach(menuNum => {
+                        const group = childGroups[menuNum];
 
                         // Expand ranges
                         let displayNum = menuNum;
@@ -943,18 +973,41 @@
                             displayNum = nums.join('\n');
                         }
 
-                        const item = document.createElement('a');
                         const isBackBtn = menuNum === '9';
-                        item.className = 'nav-child';
-                        item.innerHTML = `
-                            <span class="child-num${isBackBtn ? ' back-btn' : ''}">${displayNum}</span>
-                            <span class="child-title">${displayName}</span>
-                        `;
-                        item.onclick = () => {
-                            currentFocus = targetId;
-                            renderScreen();
-                        };
-                        navList.appendChild(item);
+
+                        if (group.length === 1) {
+                            // Single item
+                            const { targetId, displayName } = group[0];
+                            const item = document.createElement('a');
+                            item.className = 'nav-child';
+                            item.innerHTML = `
+                                <span class="child-num${isBackBtn ? ' back-btn' : ''}">${displayNum}</span>
+                                <span class="child-title">${displayName}</span>
+                            `;
+                            item.onclick = () => {
+                                currentFocus = targetId;
+                                renderScreen();
+                            };
+                            navList.appendChild(item);
+                        } else {
+                            // Multiple items with same number - render as split links
+                            const item = document.createElement('div');
+                            item.className = 'nav-child nav-child-split';
+                            const links = group.map(({ targetId, displayName }) => {
+                                return `<a class="split-link" data-target="${targetId}">${displayName}</a>`;
+                            }).join(' / ');
+                            item.innerHTML = `
+                                <span class="child-num${isBackBtn ? ' back-btn' : ''}">${displayNum}</span>
+                                <span class="child-title">${links}</span>
+                            `;
+                            item.querySelectorAll('.split-link').forEach(link => {
+                                link.onclick = () => {
+                                    currentFocus = link.dataset.target;
+                                    renderScreen();
+                                };
+                            });
+                            navList.appendChild(item);
+                        }
                     });
                 }
             } else {

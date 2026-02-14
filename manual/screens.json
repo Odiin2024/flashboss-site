@@ -47,8 +47,12 @@
     "image": "screenshots/common/create-username.png",
     "page": "walkthrough/create-username.html",
     "parents": ["profile-select"],
-    "children": ["create-avatar"],
-    "description": "Enter a username for your new hero. This name will appear on your profile and leaderboards.\n\nType your desired name and press Enter to continue."
+    "children": ["create-avatar", "profile-select"],
+    "childLabels": {
+      "create-avatar": "↵",
+      "profile-select": "9↵"
+    },
+    "description": "Enter a username for your new hero. This name will appear on your profile and leaderboards.\n\nType your desired name and press Enter to confirm. Press 9 then Enter to cancel."
   },
   "create-avatar": {
     "id": "create-avatar",
@@ -286,32 +290,69 @@
   "vault": {
     "id": "vault",
     "title": "Backup Vault",
-    "image": "screenshots/common/vault-empty.png",
+    "image": "screenshots/common/vault.png",
+    "layout": "terminal",
     "page": "walkthrough/vault.html",
     "parents": ["profile-select"],
-    "children": ["vault-heroes"],
-    "description": "This vault contains records of past students. Select a profile to pick up where you left off.\n\nIf you have 5 active users, backup one first to create a vacant slot for restoration."
-  },
-  "vault-heroes": {
-    "id": "vault-heroes",
-    "title": "Preserved Heroes",
-    "image": "screenshots/common/vault.png",
-    "page": "walkthrough/vault-heroes.html",
-    "parents": ["vault"],
-    "children": ["profile-data-vault"],
-    "description": "Heroes that have been backed up appear here for restoration.\n\nSelect a preserved hero to view their data and restore them."
+    "children": ["profile-data-vault", "profile-select"],
+    "childLabels": {
+      "profile-data-vault": "1",
+      "profile-select": "9"
+    },
+    "childImages": {
+      "empty-vault": "screenshots/common/vault-empty.png",
+      "first-time": "walkthrough/unsorted images/first.png"
+    },
+    "description": "The vault stores backed-up profiles for later restoration.\n\nPress 1 to view a preserved hero's frozen data. The thumbnails show screens that only appear when the database is empty.\n\nPress 9 to return to Profile Selection."
   },
   "profile-data-vault": {
     "id": "profile-data-vault",
     "title": "Profile Data (Vault)",
+    "subheader": "Frozen Profile",
     "image": "screenshots/common/profile-data-vault.png",
     "page": "walkthrough/profile-data-vault.html",
-    "parents": ["vault-heroes"],
-    "children": [],
+    "parents": ["vault"],
+    "children": ["delete-profile", "achievements", "back-vault", "back-profile-data"],
     "childLabels": {
-      "restore": "7"
+      "delete-profile": "5",
+      "achievements": "6",
+      "back-vault": "9",
+      "back-profile-data": "9"
     },
-    "description": "View data for a preserved hero. The screen appears frozen and grey to indicate the profile is inactive.\n\nPress 7 to toggle revival - the hero comes back to colour. The display is functional; visual polish is ongoing.\n\nOptions: Delete Permanently (5), Achievements (6), Restore/Toggle (7), Meet the Masters (8)."
+    "childDisplayNames": {
+      "back-vault": "Vault",
+      "back-profile-data": "Profile Data"
+    },
+    "childTargets": {
+      "back-vault": "vault",
+      "back-profile-data": "profile-data"
+    },
+    "description": "The screen appears frozen and grey to indicate the profile is inactive.\n\nOptions: Delete Permanently (5), Achievements (6), Restore/Toggle (7), Meet the Masters (8 - disabled while frozen).\n\nPress 7 to toggle revival - the hero comes back to colour. Press 9 to return (destination depends on where you came from)."
+  },
+  "delete-profile": {
+    "id": "delete-profile",
+    "title": "Delete Profile",
+    "image": "screenshots/common/delete.png",
+    "page": "walkthrough/delete-profile.html",
+    "parents": ["profile-data-vault"],
+    "children": ["profile-deleted", "profile-data-vault"],
+    "childLabels": {
+      "profile-deleted": "↵",
+      "profile-data-vault": "9↵"
+    },
+    "description": "Confirm permanent deletion of this profile. This action cannot be undone.\n\nPress Enter to confirm deletion. Press 9 then Enter to cancel and return."
+  },
+  "profile-deleted": {
+    "id": "profile-deleted",
+    "title": "Profile Deleted",
+    "image": "screenshots/common/deleted.png",
+    "page": "walkthrough/profile-deleted.html",
+    "parents": ["delete-profile"],
+    "children": ["profile-select"],
+    "childLabels": {
+      "profile-select": "*"
+    },
+    "description": "The profile has been permanently deleted.\n\nPress any key to return to Profile Selection."
   },
   "about-1": {
     "id": "about-1",
