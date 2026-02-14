@@ -273,6 +273,14 @@
             .then(res => res.json())
             .then(json => {
                 data = json;
+
+                // Check for path parameter
+                const urlParams = new URLSearchParams(window.location.search);
+                const pathParam = urlParams.get('path');
+                if (pathParam === 'esperanto' || pathParam === 'german') {
+                    currentBook = pathParam;
+                }
+
                 render();
             });
 

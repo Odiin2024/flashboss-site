@@ -18,15 +18,28 @@
     "image": "screenshots/common/profile-select.png",
     "page": "walkthrough/profile-select.html",
     "parents": ["entrance"],
-    "children": ["create-username", "profile-data", "vault", "about-1", "terminal"],
+    "children": ["create-username", "gates", "vault", "about-1", "terminal"],
     "childLabels": {
       "create-username": "1",
-      "profile-data": "2-5",
+      "gates": "2-5",
       "vault": "6",
       "about-1": "8",
       "terminal": "9"
     },
-    "description": "FlashBoss supports up to 5 user profiles. Each slot shows the user's avatar, name, and chosen master.\n\nEmpty slots display \"Create New Hero\" - selecting one begins character creation. Selecting an existing profile opens Profile Data."
+    "description": "FlashBoss supports up to 5 user profiles. Each slot shows the user's avatar, name, and chosen master.\n\nEmpty slots display \"Create New Hero\" - selecting one begins character creation. Selecting an existing profile enters the Gates."
+  },
+  "gates": {
+    "id": "gates",
+    "title": "The Gates",
+    "image": null,
+    "page": "walkthrough/gates.html",
+    "parents": ["profile-select"],
+    "children": ["sanctum", "profile-data"],
+    "childLabels": {
+      "sanctum": "5",
+      "profile-data": "6"
+    },
+    "description": "Welcome back to FlashBoss. Your master greets you at the gates.\n\nEnter the Sanctum to begin your daily practice, or view your Profile Data."
   },
   "create-username": {
     "id": "create-username",
@@ -71,7 +84,10 @@
     "page": "walkthrough/masters/luna.html",
     "parents": ["create-master"],
     "children": ["create-pack"],
-    "description": "Luna is your guide. Her personality and teaching style will accompany you throughout your journey.\n\nPress any key to confirm your choice and continue to language pack selection."
+    "childLabels": {
+      "create-pack": "5"
+    },
+    "description": "Luna is your guide. Her personality and teaching style will accompany you throughout your journey.\n\nPress 5 to confirm your choice and continue to language pack selection."
   },
   "master-claude": {
     "id": "master-claude",
@@ -80,7 +96,10 @@
     "page": "walkthrough/masters/claude.html",
     "parents": ["create-master"],
     "children": ["create-pack"],
-    "description": "Claude is your guide. His personality and teaching style will accompany you throughout your journey.\n\nPress any key to confirm your choice and continue to language pack selection."
+    "childLabels": {
+      "create-pack": "5"
+    },
+    "description": "Claude is your guide. His personality and teaching style will accompany you throughout your journey.\n\nPress 5 to confirm your choice and continue to language pack selection."
   },
   "master-odiin": {
     "id": "master-odiin",
@@ -89,7 +108,10 @@
     "page": "walkthrough/masters/odiin.html",
     "parents": ["create-master"],
     "children": ["create-pack"],
-    "description": "Odiin is your guide. His personality and teaching style will accompany you throughout your journey.\n\nPress any key to confirm your choice and continue to language pack selection."
+    "childLabels": {
+      "create-pack": "5"
+    },
+    "description": "Odiin is your guide. His personality and teaching style will accompany you throughout your journey.\n\nPress 5 to confirm your choice and continue to language pack selection."
   },
   "master-shen": {
     "id": "master-shen",
@@ -98,7 +120,10 @@
     "page": "walkthrough/masters/shen.html",
     "parents": ["create-master"],
     "children": ["create-pack"],
-    "description": "Shen is your guide. His personality and teaching style will accompany you throughout your journey.\n\nPress any key to confirm your choice and continue to language pack selection."
+    "childLabels": {
+      "create-pack": "5"
+    },
+    "description": "Shen is your guide. His personality and teaching style will accompany you throughout your journey.\n\nPress 5 to confirm your choice and continue to language pack selection."
   },
   "master-kitsune": {
     "id": "master-kitsune",
@@ -107,7 +132,10 @@
     "page": "walkthrough/masters/kitsune.html",
     "parents": ["create-master"],
     "children": ["create-pack"],
-    "description": "Kitsune is your guide. Her personality and teaching style will accompany you throughout your journey.\n\nPress any key to confirm your choice and continue to language pack selection."
+    "childLabels": {
+      "create-pack": "5"
+    },
+    "description": "Kitsune is your guide. Her personality and teaching style will accompany you throughout your journey.\n\nPress 5 to confirm your choice and continue to language pack selection."
   },
   "master-aquila": {
     "id": "master-aquila",
@@ -116,23 +144,48 @@
     "page": "walkthrough/masters/aquila.html",
     "parents": ["create-master"],
     "children": ["create-pack"],
-    "description": "Aquila is your guide. Her personality and teaching style will accompany you throughout your journey.\n\nPress any key to confirm your choice and continue to language pack selection."
+    "childLabels": {
+      "create-pack": "5"
+    },
+    "description": "Aquila is your guide. Her personality and teaching style will accompany you throughout your journey.\n\nPress 5 to confirm your choice and continue to language pack selection."
   },
   "create-pack": {
     "id": "create-pack",
     "title": "Choose Language Pack",
+    "subheader": "Walkthrough Available",
     "image": "screenshots/common/create-pack.png",
     "page": "walkthrough/create-pack.html",
+    "layout": "terminal",
     "parents": ["create-master"],
-    "children": ["sanctum"],
-    "description": "Select your language pack. German Core and Esperanto are included. More packs available as DLC.\n\nEach pack contains vocabulary organized into tiers and clusters."
+    "children": ["sanctum-eo", "sanctum-de"],
+    "childLabels": {
+      "sanctum-eo": "1",
+      "sanctum-de": "2"
+    },
+    "childDisplayNames": {
+      "sanctum-eo": "The Sanctum (Esperanto)",
+      "sanctum-de": "The Sanctum (German)"
+    },
+    "childTargets": {
+      "sanctum-eo": "sanctum",
+      "sanctum-de": "sanctum"
+    },
+    "childImages": {
+      "flipbook-esperanto": "walkthrough/unsorted images/11_screenshot.png",
+      "flipbook-german": "walkthrough/unsorted images/55_screenshot.png"
+    },
+    "flipbookLinks": {
+      "esperanto": "walkthrough/flipbook.html?path=esperanto",
+      "german": "walkthrough/flipbook.html?path=german"
+    },
+    "description": "Select your language pack. German Core and Esperanto are included. More packs available as DLC.\n\nEach pack contains vocabulary organized into tiers and clusters.\n\nWatch a full walkthrough of either path below."
   },
   "profile-data": {
     "id": "profile-data",
     "title": "Profile Data",
     "image": "screenshots/common/profile-data.png",
     "page": "walkthrough/profile-data.html",
-    "parents": ["profile-select"],
+    "parents": ["gates", "sanctum"],
     "children": ["sanctum", "tier-skip", "achievements", "export-progress", "meet-masters"],
     "childLabels": {
       "sanctum": "Enter",
@@ -148,8 +201,11 @@
     "title": "The Sanctum",
     "image": null,
     "page": "walkthrough/sanctum.html",
-    "parents": ["profile-data", "create-pack"],
-    "children": [],
+    "parents": ["profile-select", "create-pack"],
+    "children": ["profile-data"],
+    "childLabels": {
+      "profile-data": "6"
+    },
     "description": "Your home base. From here you can access daily practice, lessons, boss fights, the grimoire, and more.\n\nThe Sanctum is where your language learning journey unfolds."
   },
   "tier-skip": {

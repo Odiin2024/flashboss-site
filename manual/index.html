@@ -343,6 +343,36 @@
             margin-top: 0.5rem;
         }
 
+        .flipbook-links {
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .flipbook-label {
+            font-size: 0.85rem;
+            color: var(--grey);
+            margin: 0;
+        }
+
+        .flipbook-btn {
+            background: rgba(255, 102, 255, 0.15);
+            border: 1px solid rgba(255, 102, 255, 0.4);
+            border-radius: 4px;
+            padding: 0.4rem 0.75rem;
+            font-size: 0.8rem;
+            color: var(--magic-pink);
+            text-decoration: none;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .flipbook-btn:hover {
+            background: rgba(255, 102, 255, 0.25);
+            border-color: var(--magic-pink);
+        }
+
         .right-footer {
             padding: 1rem 1.5rem;
             display: flex;
@@ -789,18 +819,36 @@
             if (focus.layout === 'terminal' && focus.childImages) {
                 terminalGrid.innerHTML = '';
                 terminalGrid.classList.remove('hidden');
-                focus.children.forEach(childId => {
-                    const imgSrc = focus.childImages[childId];
-                    if (!imgSrc) return;
-                    const thumb = document.createElement('a');
-                    thumb.className = 'terminal-thumb';
-                    thumb.innerHTML = `<img src="${imgSrc}" alt="${screens[childId]?.title || ''}">`;
-                    thumb.onclick = () => {
-                        currentFocus = childId;
-                        renderScreen();
-                    };
-                    terminalGrid.appendChild(thumb);
-                });
+
+                // Check for flipbook thumbnails first
+                if (focus.flipbookLinks) {
+                    // Render flipbook thumbnails that link to walkthrough
+                    const flipbookKeys = Object.keys(focus.flipbookLinks);
+                    flipbookKeys.forEach(key => {
+                        const imgKey = 'flipbook-' + key;
+                        const imgSrc = focus.childImages[imgKey];
+                        if (!imgSrc) return;
+                        const thumb = document.createElement('a');
+                        thumb.className = 'terminal-thumb';
+                        thumb.href = focus.flipbookLinks[key];
+                        thumb.innerHTML = `<img src="${imgSrc}" alt="${key.charAt(0).toUpperCase() + key.slice(1)} Walkthrough">`;
+                        terminalGrid.appendChild(thumb);
+                    });
+                } else {
+                    // Normal terminal grid - navigate within manual
+                    focus.children.forEach(childId => {
+                        const imgSrc = focus.childImages[childId];
+                        if (!imgSrc) return;
+                        const thumb = document.createElement('a');
+                        thumb.className = 'terminal-thumb';
+                        thumb.innerHTML = `<img src="${imgSrc}" alt="${screens[childId]?.title || ''}">`;
+                        thumb.onclick = () => {
+                            currentFocus = childId;
+                            renderScreen();
+                        };
+                        terminalGrid.appendChild(thumb);
+                    });
+                }
             } else {
                 terminalGrid.classList.add('hidden');
                 terminalGrid.innerHTML = '';
@@ -839,9 +887,13 @@
                 // Children (magenta with numbers)
                 if (hasChildren) {
                     focus.children.forEach(childId => {
-                        const child = screens[childId];
-                        if (!child) return;
+                        // Check for synthetic children with custom display names and targets
+                        const hasSyntheticChild = focus.childDisplayNames && focus.childDisplayNames[childId];
+                        const targetId = (focus.childTargets && focus.childTargets[childId]) || childId;
+                        const child = screens[targetId];
+                        if (!child && !hasSyntheticChild) return;
 
+                        const displayName = hasSyntheticChild ? focus.childDisplayNames[childId] : child.title;
                         const menuNum = focus.childLabels ? (focus.childLabels[childId] || '') : '';
 
                         // Expand ranges
@@ -861,10 +913,10 @@
                         item.className = 'nav-child';
                         item.innerHTML = `
                             <span class="child-num">${displayNum}</span>
-                            <span class="child-title">${child.title}</span>
+                            <span class="child-title">${displayName}</span>
                         `;
                         item.onclick = () => {
-                            currentFocus = childId;
+                            currentFocus = targetId;
                             renderScreen();
                         };
                         navList.appendChild(item);
@@ -882,6 +934,13 @@
             }
             if (focus.windowsNote) {
                 learnMoreHTML += `<p class="windows-note">${focus.windowsNote}</p>`;
+            }
+            if (focus.flipbookLinks) {
+                learnMoreHTML += `<div class="flipbook-links">
+                    <p class="flipbook-label">Watch Walkthrough:</p>
+                    <a href="${focus.flipbookLinks.esperanto}" class="flipbook-btn">Esperanto Path</a>
+                    <a href="${focus.flipbookLinks.german}" class="flipbook-btn">German Path</a>
+                </div>`;
             }
             learnMoreArea.innerHTML = learnMoreHTML;
         }
