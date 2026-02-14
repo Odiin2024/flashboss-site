@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlashBoss Manual</title>
-    <link rel="stylesheet" href="style.css?v=4">
+    <link rel="stylesheet" href="style.css?v=5">
     <link rel="icon" type="image/png" href="../icon.png">
     <style>
         /* Manual wrapper */
@@ -20,30 +20,11 @@
             box-sizing: border-box;
         }
 
-        /* Header bar */
-        .manual-header {
+        /* Top bar */
+        .top-bar {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: flex-end;
             margin-bottom: 0.5rem;
-        }
-
-        .back-link {
-            font-size: 0.8rem;
-            color: var(--link-blue);
-            text-decoration: none;
-            transition: color 0.2s;
-            cursor: pointer;
-        }
-
-        .back-link:hover {
-            color: #ffffff;
-        }
-
-        .back-link.disabled {
-            color: var(--grey);
-            cursor: default;
-            pointer-events: none;
         }
 
         .view-toggle {
@@ -64,8 +45,8 @@
             color: var(--moon-cream);
         }
 
-        /* Main content area - frosted glass */
-        .manual-content {
+        /* Main content panel - frosted glass */
+        .manual-panel {
             flex: 1;
             background: rgba(10, 10, 25, 0.4);
             backdrop-filter: blur(12px);
@@ -76,72 +57,40 @@
                 0 0 20px rgba(255, 102, 255, 0.3),
                 0 0 40px rgba(255, 102, 255, 0.15),
                 0 0 60px rgba(126, 200, 255, 0.1);
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             overflow: hidden;
         }
 
-        /* Content header */
-        .content-header {
-            padding: 1rem 2rem;
-            border-bottom: 1px solid rgba(255, 102, 255, 0.15);
-            text-align: center;
+        /* Left column */
+        .panel-left {
+            display: flex;
+            flex-direction: column;
         }
 
-        .content-title {
+        .left-header {
+            padding: 1rem 1.5rem 1rem 2.5rem;
+        }
+
+        .screen-title {
             font-family: var(--font-pixel);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: var(--moon-cream);
             margin: 0;
         }
 
-        /* Main grid: image left, details right */
-        .content-main {
+        .left-content {
             flex: 1;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            padding: 1.5rem 2rem;
-            overflow-y: auto;
-        }
-
-        /* Left side: parents + image + children */
-        .content-left {
             display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        /* Parent buttons - blue for going back */
-        .parents-row {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
             align-items: center;
-        }
-
-        .parent-btn {
-            background: #171421;
-            border: 1px solid var(--link-blue);
-            border-radius: 4px;
-            padding: 0.4rem 0.75rem;
-            color: var(--link-blue);
-            font-size: 0.8rem;
-            cursor: pointer;
-            transition: border-color 0.2s, box-shadow 0.2s, color 0.2s;
-            text-decoration: none;
-        }
-
-        .parent-btn:hover {
-            border-color: var(--link-blue);
-            box-shadow: 0 0 10px rgba(126, 200, 255, 0.4);
-            color: #ffffff;
+            justify-content: center;
+            padding: 1.5rem;
         }
 
         .focus-image-link {
             display: block;
             text-decoration: none;
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: transform 0.2s;
         }
 
         .focus-image-link:hover {
@@ -154,18 +103,17 @@
         }
 
         .focus-image {
-            width: 100%;
-            max-width: 350px;
+            max-width: 100%;
+            max-height: 55vh;
             border-radius: 6px;
-            border: 1px solid rgba(255, 102, 255, 0.2);
-            box-shadow: 0 0 10px rgba(255, 102, 255, 0.15);
+            border: 1px solid rgba(255, 102, 255, 0.3);
+            box-shadow: 0 0 10px rgba(255, 102, 255, 0.2);
             transition: border-color 0.2s, box-shadow 0.2s;
         }
 
         .focus-placeholder {
-            width: 100%;
-            max-width: 350px;
-            aspect-ratio: 16/9;
+            width: 300px;
+            height: 200px;
             background: rgba(10, 10, 25, 0.5);
             border-radius: 6px;
             border: 1px solid rgba(255, 102, 255, 0.2);
@@ -176,6 +124,143 @@
             font-size: 0.9rem;
         }
 
+        .left-footer {
+            padding: 1rem 1.5rem;
+            font-size: 0.8rem;
+            color: var(--grey);
+            font-style: italic;
+            text-align: center;
+        }
+
+        /* Right column */
+        .panel-right {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right-header {
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .back-btn {
+            background: #171421;
+            border: 1px solid var(--grey);
+            border-radius: 4px;
+            padding: 0.4rem 0.75rem;
+            color: var(--grey);
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: border-color 0.2s, color 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+        }
+
+        .back-btn:hover {
+            border-color: var(--link-blue);
+            color: var(--link-blue);
+            box-shadow: 0 0 8px rgba(126, 200, 255, 0.3);
+        }
+
+        .back-btn.disabled {
+            opacity: 0.4;
+            cursor: default;
+            pointer-events: none;
+        }
+
+        .right-content {
+            flex: 1;
+            padding: 1.5rem;
+            overflow-y: auto;
+        }
+
+        .description-text {
+            color: var(--moon-cream);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .description-text p {
+            margin-bottom: 1rem;
+        }
+
+        /* Navigate to section */
+        .nav-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .nav-title {
+            font-size: 0.85rem;
+            color: var(--grey);
+            margin-bottom: 0.75rem;
+            font-style: italic;
+        }
+
+        .nav-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        /* Parent buttons - grey/blue */
+        .nav-parent {
+            display: flex;
+            align-items: center;
+            background: #171421;
+            border: 1px solid var(--grey);
+            border-radius: 4px;
+            padding: 0.5rem 0.75rem;
+            color: var(--link-blue);
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+        }
+
+        .nav-parent:hover {
+            border-color: var(--link-blue);
+            box-shadow: 0 0 10px rgba(126, 200, 255, 0.4);
+        }
+
+        /* Child buttons - grey/magenta with numbers */
+        .nav-child {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: #171421;
+            border: 1px solid var(--grey);
+            border-radius: 4px;
+            padding: 0.5rem 0.75rem;
+            cursor: pointer;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+        }
+
+        .nav-child:hover {
+            border-color: rgba(255, 102, 255, 0.7);
+            box-shadow: 0 0 10px rgba(255, 102, 255, 0.4);
+        }
+
+        .nav-child:hover .child-num {
+            text-shadow: 0 0 8px rgba(255, 102, 255, 0.6);
+        }
+
+        .child-num {
+            font-family: var(--font-pixel);
+            font-size: 0.5rem;
+            color: #ff66ff;
+            min-width: 1.5rem;
+            line-height: 1.4;
+            white-space: pre-line;
+            transition: text-shadow 0.2s;
+        }
+
+        .child-title {
+            font-size: 0.85rem;
+            color: var(--moon-cream);
+        }
+
+        /* Learn more link */
         .learn-more-link {
             display: inline-block;
             background: rgba(126, 200, 255, 0.15);
@@ -186,7 +271,6 @@
             text-decoration: none;
             font-size: 0.85rem;
             transition: background 0.2s, box-shadow 0.2s;
-            margin-top: 0.5rem;
         }
 
         .learn-more-link:hover {
@@ -195,100 +279,12 @@
             color: #ffffff;
         }
 
-        /* Children navigation */
-        .children-section {
-            margin-top: 1rem;
-        }
-
-        .children-title {
-            font-size: 0.8rem;
-            color: var(--grey);
-            margin-bottom: 0.75rem;
-            font-style: italic;
-        }
-
-        .children-list {
-            display: flex;
-            flex-direction: column;
-            gap: 0.35rem;
-        }
-
-        .child-item {
-            display: flex;
-            align-items: center;
-            gap: 0.6rem;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-        .child-item:hover .child-num-box {
-            border-color: rgba(255, 102, 255, 0.7);
-            box-shadow: 0 0 10px rgba(255, 102, 255, 0.4);
-        }
-
-        .child-item:hover .child-num {
-            text-shadow: 0 0 8px rgba(255, 102, 255, 0.6);
-        }
-
-        .child-num-box {
-            background: #171421;
-            border: 1px solid var(--grey);
-            border-radius: 3px;
-            padding: 0.3rem 0.5rem;
-            min-width: 2rem;
-            text-align: center;
-            transition: border-color 0.2s, box-shadow 0.2s;
-        }
-
-        .child-num {
-            font-family: var(--font-pixel);
-            font-size: 0.5rem;
-            color: #ff66ff;
-            line-height: 1.4;
-            white-space: pre-line;
-            transition: text-shadow 0.2s;
-        }
-
-        .child-title {
-            font-size: 0.8rem;
-            color: var(--moon-cream);
-        }
-
-        /* Right side: description */
-        .content-right {
-            display: flex;
-            flex-direction: column;
-            padding: 0 5%;
-        }
-
-        .description-text {
-            color: var(--moon-cream);
-            line-height: 1.8;
-        }
-
-        .description-text p {
-            margin-bottom: 1rem;
-        }
-
-        /* Footer */
-        .content-footer {
-            padding: 1rem 2rem;
-            border-top: 1px solid rgba(255, 102, 255, 0.15);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .footer-left {
-            font-size: 0.8rem;
-            color: var(--grey);
-            font-style: italic;
-        }
-
-        .footer-right {
+        .right-footer {
+            padding: 1rem 1.5rem;
             display: flex;
             gap: 0.5rem;
             align-items: center;
+            justify-content: center;
         }
 
         .footer-link {
@@ -329,7 +325,6 @@
         }
 
         .tile-page-left {
-            border-right: 1px solid rgba(255, 102, 255, 0.15);
         }
 
         .tile-page-title {
@@ -391,9 +386,11 @@
                 padding: 2vh 4vw;
             }
 
-            .content-main {
+            .manual-panel {
                 grid-template-columns: 1fr;
-                padding: 1rem;
+            }
+
+            .panel-left {
             }
 
             .tile-view {
@@ -401,14 +398,6 @@
             }
 
             .tile-page-left {
-                border-right: none;
-                border-bottom: 1px solid rgba(255, 102, 255, 0.15);
-            }
-
-            .content-footer {
-                flex-direction: column;
-                gap: 0.75rem;
-                text-align: center;
             }
 
             .view-toggle {
@@ -420,45 +409,48 @@
 </head>
 <body>
     <div class="manual-wrapper">
-        <!-- Header -->
-        <div class="manual-header">
-            <a class="back-link disabled" id="backLink">Back to previous screen</a>
+        <!-- Top bar -->
+        <div class="top-bar">
             <button class="view-toggle" id="viewToggle">Change to Tile View</button>
         </div>
 
-        <!-- Main content - Grimoire view (default) -->
-        <div class="manual-content" id="grimoireView">
-            <div class="content-header">
-                <h1 class="content-title" id="screenTitle">Loading...</h1>
-            </div>
-
-            <div class="content-main">
-                <div class="content-left">
-                    <div class="parents-row" id="parentsRow"></div>
-
+        <!-- Main panel - Grimoire view (default) -->
+        <div class="manual-panel" id="grimoireView">
+            <!-- Left column -->
+            <div class="panel-left">
+                <div class="left-header">
+                    <h1 class="screen-title" id="screenTitle">Loading...</h1>
+                </div>
+                <div class="left-content">
                     <a class="focus-image-link" id="focusLink" href="#">
                         <img class="focus-image" id="focusImage" src="" alt="">
                     </a>
-                    <div id="learnMoreArea"></div>
-
-                    <div class="children-section" id="childrenSection">
-                        <p class="children-title">Navigate to:</p>
-                        <div class="children-list" id="childrenList"></div>
-                    </div>
                 </div>
-
-                <div class="content-right">
-                    <div class="description-text" id="descriptionText"></div>
+                <div class="left-footer" id="leftFooter">
+                    Click image for more information
                 </div>
             </div>
 
-            <div class="content-footer">
-                <span class="footer-left">Click the image or a number to navigate</span>
-                <div class="footer-right">
+            <!-- Right column -->
+            <div class="panel-right">
+                <div class="right-header">
+                    <a class="back-btn disabled" id="backBtn">Back</a>
+                </div>
+                <div class="right-content">
+                    <div class="description-text" id="descriptionText"></div>
+
+                    <div class="nav-section" id="navSection">
+                        <p class="nav-title">Navigate to:</p>
+                        <div class="nav-list" id="navList"></div>
+                    </div>
+
+                    <div id="learnMoreArea"></div>
+                </div>
+                <div class="right-footer">
                     <a href="../beta-key.html" class="footer-link">Ready for a Beta Key?</a>
-                    <span class="footer-divider">&middot;</span>
+                    <span class="footer-divider">·</span>
                     <a href="../home.html" class="footer-link">Hub</a>
-                    <span class="footer-divider">&middot;</span>
+                    <span class="footer-divider">·</span>
                     <a href="https://store.steampowered.com/app/4134440/FlashBoss/" class="footer-link">Visit Steam</a>
                 </div>
             </div>
@@ -530,10 +522,9 @@
     <script>
         let screens = {};
         let currentFocus = 'entrance';
-        let focusHistory = [];
         let isGrimoireView = true;
 
-        // Toggle between grimoire and tile view
+        // Toggle views
         function setView(showGrimoire) {
             isGrimoireView = showGrimoire;
             document.getElementById('grimoireView').classList.toggle('hidden', !isGrimoireView);
@@ -545,23 +536,21 @@
             setView(!isGrimoireView);
         });
 
-        // Select topic from tile view
+        // Select from tile view
         function selectTopic(screenId) {
             if (screens[screenId]) {
-                focusHistory.push(currentFocus);
                 currentFocus = screenId;
                 renderScreen();
                 setView(true);
             }
         }
 
-        // Load screen data
+        // Load screens
         fetch('screens.json')
             .then(response => response.json())
             .then(data => {
                 screens = data;
 
-                // Check for URL parameter
                 const urlParams = new URLSearchParams(window.location.search);
                 const screenParam = urlParams.get('screen');
                 if (screenParam && screens[screenParam]) {
@@ -579,41 +568,6 @@
             const focus = screens[currentFocus];
             if (!focus) return;
 
-            // Update back link - goes to first parent (default back path)
-            const backLink = document.getElementById('backLink');
-            if (focus.parents && focus.parents.length > 0) {
-                const firstParent = screens[focus.parents[0]];
-                if (firstParent) {
-                    backLink.classList.remove('disabled');
-                    backLink.textContent = 'Back to ' + firstParent.title;
-                    backLink.onclick = () => setFocus(focus.parents[0]);
-                } else {
-                    backLink.classList.add('disabled');
-                    backLink.textContent = 'Back';
-                    backLink.onclick = null;
-                }
-            } else {
-                backLink.classList.add('disabled');
-                backLink.textContent = 'Back';
-                backLink.onclick = null;
-            }
-
-            // Render parent buttons (blue)
-            const parentsRow = document.getElementById('parentsRow');
-            parentsRow.innerHTML = '';
-            if (focus.parents && focus.parents.length > 0) {
-                focus.parents.forEach(parentId => {
-                    const parent = screens[parentId];
-                    if (!parent) return;
-
-                    const btn = document.createElement('a');
-                    btn.className = 'parent-btn';
-                    btn.textContent = '← ' + parent.title;
-                    btn.onclick = () => setFocus(parentId);
-                    parentsRow.appendChild(btn);
-                });
-            }
-
             // Title
             document.getElementById('screenTitle').textContent = focus.title;
 
@@ -628,7 +582,7 @@
                 focusImage.style.display = 'none';
             }
 
-            // Focus link - goes to dedicated page if exists
+            // Image link - goes to dedicated page
             if (focus.page) {
                 focusLink.href = focus.page;
                 focusLink.onclick = null;
@@ -637,12 +591,30 @@
                 focusLink.onclick = (e) => e.preventDefault();
             }
 
-            // Learn more link
-            const learnMoreArea = document.getElementById('learnMoreArea');
+            // Left footer - update based on whether page exists
+            const leftFooter = document.getElementById('leftFooter');
             if (focus.page) {
-                learnMoreArea.innerHTML = `<a href="${focus.page}" class="learn-more-link">Learn more →</a>`;
+                leftFooter.textContent = 'Click image for more information';
             } else {
-                learnMoreArea.innerHTML = '';
+                leftFooter.textContent = '';
+            }
+
+            // Back button - goes to primary parent
+            const backBtn = document.getElementById('backBtn');
+            if (focus.parents && focus.parents.length > 0) {
+                const firstParent = screens[focus.parents[0]];
+                if (firstParent) {
+                    backBtn.classList.remove('disabled');
+                    backBtn.textContent = 'Back';
+                    backBtn.onclick = () => {
+                        currentFocus = focus.parents[0];
+                        renderScreen();
+                    };
+                } else {
+                    backBtn.classList.add('disabled');
+                }
+            } else {
+                backBtn.classList.add('disabled');
             }
 
             // Description
@@ -654,62 +626,78 @@
                 descDiv.appendChild(p);
             });
 
-            // Children
-            const childrenSection = document.getElementById('childrenSection');
-            const childrenList = document.getElementById('childrenList');
-            childrenList.innerHTML = '';
+            // Navigation list - parents then children
+            const navSection = document.getElementById('navSection');
+            const navList = document.getElementById('navList');
+            navList.innerHTML = '';
 
-            if (focus.children.length > 0) {
-                childrenSection.style.display = 'block';
+            const hasParents = focus.parents && focus.parents.length > 0;
+            const hasChildren = focus.children && focus.children.length > 0;
 
-                focus.children.forEach(childId => {
-                    const child = screens[childId];
-                    if (!child) return;
+            if (hasParents || hasChildren) {
+                navSection.style.display = 'block';
 
-                    const menuNum = focus.childLabels ? (focus.childLabels[childId] || '') : '';
+                // Parents first (blue)
+                if (hasParents) {
+                    focus.parents.forEach(parentId => {
+                        const parent = screens[parentId];
+                        if (!parent) return;
 
-                    // Expand ranges like "2-5" to multi-line
-                    let displayNum = menuNum;
-                    const rangeMatch = menuNum.match(/^(\d+)-(\d+)$/);
-                    if (rangeMatch) {
-                        const start = parseInt(rangeMatch[1]);
-                        const end = parseInt(rangeMatch[2]);
-                        const nums = [];
-                        for (let i = start; i <= end; i++) {
-                            nums.push(i);
+                        const item = document.createElement('a');
+                        item.className = 'nav-parent';
+                        item.textContent = '← ' + parent.title;
+                        item.onclick = () => {
+                            currentFocus = parentId;
+                            renderScreen();
+                        };
+                        navList.appendChild(item);
+                    });
+                }
+
+                // Children (magenta with numbers)
+                if (hasChildren) {
+                    focus.children.forEach(childId => {
+                        const child = screens[childId];
+                        if (!child) return;
+
+                        const menuNum = focus.childLabels ? (focus.childLabels[childId] || '') : '';
+
+                        // Expand ranges
+                        let displayNum = menuNum;
+                        const rangeMatch = menuNum.match(/^(\d+)-(\d+)$/);
+                        if (rangeMatch) {
+                            const start = parseInt(rangeMatch[1]);
+                            const end = parseInt(rangeMatch[2]);
+                            const nums = [];
+                            for (let i = start; i <= end; i++) {
+                                nums.push(i);
+                            }
+                            displayNum = nums.join('\n');
                         }
-                        displayNum = nums.join('\n');
-                    }
 
-                    const item = document.createElement('div');
-                    item.className = 'child-item';
-                    item.onclick = () => setFocus(childId);
-
-                    item.innerHTML = `
-                        <div class="child-num-box">
+                        const item = document.createElement('a');
+                        item.className = 'nav-child';
+                        item.innerHTML = `
                             <span class="child-num">${displayNum}</span>
-                        </div>
-                        <span class="child-title">${child.title}</span>
-                    `;
-                    childrenList.appendChild(item);
-                });
+                            <span class="child-title">${child.title}</span>
+                        `;
+                        item.onclick = () => {
+                            currentFocus = childId;
+                            renderScreen();
+                        };
+                        navList.appendChild(item);
+                    });
+                }
             } else {
-                childrenSection.style.display = 'none';
+                navSection.style.display = 'none';
             }
-        }
 
-        function setFocus(screenId) {
-            if (screens[screenId]) {
-                focusHistory.push(currentFocus);
-                currentFocus = screenId;
-                renderScreen();
-            }
-        }
-
-        function goBack() {
-            if (focusHistory.length > 0) {
-                currentFocus = focusHistory.pop();
-                renderScreen();
+            // Learn more link
+            const learnMoreArea = document.getElementById('learnMoreArea');
+            if (focus.page) {
+                learnMoreArea.innerHTML = `<a href="${focus.page}" class="learn-more-link">Learn more →</a>`;
+            } else {
+                learnMoreArea.innerHTML = '';
             }
         }
     </script>
