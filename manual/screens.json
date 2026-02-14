@@ -189,16 +189,26 @@
     "title": "Profile Data",
     "image": "screenshots/common/profile-data.png",
     "page": "walkthrough/profile-data.html",
-    "parents": ["gates", "sanctum"],
-    "children": ["sanctum", "tier-skip", "achievements", "export-progress", "meet-masters"],
+    "parents": ["gates"],
+    "children": ["tier-skip", "delete-profile", "achievements", "export-progress", "meet-masters", "back-sanctum", "back-vault"],
     "childLabels": {
-      "sanctum": "Enter",
       "tier-skip": "5",
+      "delete-profile": "5",
       "achievements": "6",
       "export-progress": "7",
-      "meet-masters": "8"
+      "meet-masters": "8",
+      "back-sanctum": "9",
+      "back-vault": "9"
     },
-    "description": "View your hero's stats: language pack, tier progress, streak, velocity, and trajectory.\n\nFrom here you can enter the Sanctum, take the Tier Skip Challenge, view achievements, export your progress, or change your master."
+    "childDisplayNames": {
+      "back-sanctum": "Sanctum",
+      "back-vault": "Vault"
+    },
+    "childTargets": {
+      "back-sanctum": "sanctum",
+      "back-vault": "vault"
+    },
+    "description": "View your hero's stats: language pack, tier progress, streak, velocity, and trajectory.\n\nOption 7 toggles between active and frozen states. When active: 5 = Tier Skip, 8 = Meet Masters. When frozen: 5 = Delete, 8 = disabled.\n\nPress 9 to return (destination depends on where you came from)."
   },
   "sanctum": {
     "id": "sanctum",
@@ -219,7 +229,7 @@
   "know-your-enemy": {
     "id": "know-your-enemy",
     "title": "Know Your Enemy",
-    "image": null,
+    "image": "screenshots/common/knowyourenemy.png",
     "page": "walkthrough/know-your-enemy.html",
     "parents": ["sanctum"],
     "children": ["kye-placeholder", "sanctum"],
@@ -248,10 +258,27 @@
     "id": "tier-skip",
     "title": "Tier Skip Challenge",
     "image": "screenshots/common/tierskip1.png",
+    "layout": "gallery",
+    "galleryImages": [
+      "screenshots/common/tierskip2.png"
+    ],
     "page": "walkthrough/tier-skip.html",
     "parents": ["profile-data"],
+    "children": ["bossfight", "gates"],
+    "childLabels": {
+      "bossfight": "*",
+      "gates": "9"
+    },
+    "description": "Test out of content you already know. Survive the BossRun to skip ahead.\n\nIf you already have vocabulary knowledge, this lets you jump to an appropriate tier.\n\nPress any key to begin the BossRun. Press 9 to return to the Gates."
+  },
+  "bossfight": {
+    "id": "bossfight",
+    "title": "BossRun",
+    "image": null,
+    "page": "walkthrough/bossfight.html",
+    "parents": ["tier-skip"],
     "children": [],
-    "description": "Test out of content you already know. Survive the BossRun to skip ahead.\n\nIf you already have vocabulary knowledge, this lets you jump to an appropriate tier."
+    "description": "Face the BossRun challenge. Answer correctly to survive and prove your vocabulary knowledge.\n\nThis is a one-way path - complete the challenge to progress."
   },
   "achievements": {
     "id": "achievements",
@@ -334,11 +361,20 @@
     "title": "Delete Profile",
     "image": "screenshots/common/delete.png",
     "page": "walkthrough/delete-profile.html",
-    "parents": ["profile-data-vault"],
-    "children": ["profile-deleted", "profile-data-vault"],
+    "parents": ["profile-data-vault", "profile-data"],
+    "children": ["profile-deleted", "back-vault-del", "back-profile-data-del"],
     "childLabels": {
       "profile-deleted": "↵",
-      "profile-data-vault": "9↵"
+      "back-vault-del": "9↵",
+      "back-profile-data-del": "9↵"
+    },
+    "childDisplayNames": {
+      "back-vault-del": "Vault",
+      "back-profile-data-del": "Profile Data"
+    },
+    "childTargets": {
+      "back-vault-del": "vault",
+      "back-profile-data-del": "profile-data"
     },
     "description": "Confirm permanent deletion of this profile. This action cannot be undone.\n\nPress Enter to confirm deletion. Press 9 then Enter to cancel and return."
   },
