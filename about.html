@@ -128,6 +128,45 @@
             font-weight: 500;
         }
 
+        /* Home thumbnail */
+        .home-thumb {
+            float: right;
+            width: 120px;
+            margin: 0 0 1rem 1.5rem;
+            text-decoration: none;
+        }
+
+        .home-thumb-box {
+            background: rgba(0, 0, 0, 0.4);
+            border: 2px solid rgba(255, 102, 255, 0.3);
+            border-radius: 8px;
+            padding: 0.5rem;
+            text-align: center;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .home-thumb:hover .home-thumb-box {
+            border-color: #ff66ff;
+            box-shadow: 0 0 15px rgba(255, 102, 255, 0.3);
+        }
+
+        .home-thumb-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .home-thumb-caption {
+            margin-top: 0.4rem;
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.5);
+            font-style: italic;
+        }
+
+        .home-thumb:hover .home-thumb-caption {
+            color: #ff66ff;
+        }
+
         .credential-box {
             background: rgba(255, 102, 255, 0.1);
             border: 1px solid rgba(255, 102, 255, 0.3);
@@ -247,6 +286,12 @@
         </header>
 
         <div class="content">
+            <a href="home.html" class="home-thumb">
+                <div class="home-thumb-box">
+                    <img src="manual/screenshots/common/about-1.png" alt="Back to Hub">
+                    <p class="home-thumb-caption">Back to Hub</p>
+                </div>
+            </a>
             <div class="section-header">
                 <h2>Learning a Language</h2>
                 <a href="#recipe" class="skip-link">Skip to Recipe</a>

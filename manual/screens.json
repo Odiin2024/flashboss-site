@@ -7,7 +7,7 @@
     "parents": ["terminal-flashboss"],
     "children": ["profile-select"],
     "childLabels": {
-      "profile-select": "5"
+      "profile-select": "*"
     },
     "description": "The FlashBoss manual is built to mirror the game itself, with information pertaining to playing the game, and also with a link for more information. This page doesn't need such a link, as there isn't a lot to tell.\n\nPress the button below, \"Profile Selection\" to continue. * represents 'Any Key' and ↵ represents Enter.\n\nClick the blue parent buttons to go back, or choose a magenta option to go forward. Every screen in the game has a page here. Explore at your own pace."
   },
@@ -221,12 +221,20 @@
     "id": "about-1",
     "title": "About FlashBoss",
     "image": "screenshots/common/about-1.png",
-    "page": "walkthrough/about.html",
+    "page": "../about.html",
+    "layout": "terminal",
     "parents": ["profile-select"],
-    "children": ["about-2", "hints-tips"],
+    "children": ["about-2", "about-3", "about-4", "hints-tips"],
     "childLabels": {
       "about-2": "6",
+      "about-3": "66",
+      "about-4": "666",
       "hints-tips": "1"
+    },
+    "childImages": {
+      "about-2": "screenshots/common/about-2.png",
+      "about-3": "screenshots/common/about-3.png",
+      "about-4": "screenshots/common/about-4.png"
     },
     "description": "FlashBoss is collaborative language learning software built through conversation between a teacher who can't code and an AI who can.\n\nCore Principles: Fibonacci-based spaced repetition, engagement through gamification, graded language progression, complex mechanics → simple interface."
   },
@@ -320,7 +328,7 @@
       "terminal-workshop": "./FlashBoss workshop"
     },
     "childImages": {
-      "terminal-flashboss": "images/07_screenshot.png",
+      "terminal-flashboss": "images/FlashBoss.png",
       "terminal-audio": "images/FlashBoss audio.png",
       "terminal-workshop": "images/workshop.png"
     },
@@ -351,7 +359,7 @@
     "id": "terminal-flashboss",
     "title": "./FlashBoss",
     "subheader": "FlashBoss.exe on Windows",
-    "image": "images/07_screenshot.png",
+    "image": "images/FlashBoss.png",
     "page": null,
     "parents": ["terminal"],
     "children": ["entrance"],
