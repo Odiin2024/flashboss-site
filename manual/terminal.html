@@ -19,7 +19,8 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: #0a0a19;
+            background: url('images/fog.jpeg') center center / cover no-repeat fixed;
+            background-color: #0a0a19;
             color: #f0e6d3;
             min-height: 100vh;
             line-height: 1.6;
@@ -71,18 +72,20 @@
             color: rgba(255, 255, 255, 0.9);
         }
 
-        /* Screenshot display */
+        /* Screenshot display - floated left like news article */
         .screenshot-link {
             display: block;
             text-decoration: none;
-            margin-bottom: 1.5rem;
+            float: left;
+            width: 45%;
+            margin: 0 1.5rem 1rem 0;
         }
 
         .screenshot-box {
             background: rgba(0, 0, 0, 0.4);
             border: 2px solid rgba(255, 102, 255, 0.3);
             border-radius: 8px;
-            padding: 1rem;
+            padding: 0.75rem;
             text-align: center;
             transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
             cursor: pointer;
@@ -90,7 +93,7 @@
 
         .screenshot-link:hover .screenshot-box {
             border-color: #ff66ff;
-            transform: translateY(-3px);
+            transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(255, 102, 255, 0.2);
         }
 
@@ -101,8 +104,8 @@
         }
 
         .screenshot-caption {
-            margin-top: 0.75rem;
-            font-size: 0.85rem;
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
             color: rgba(255, 255, 255, 0.5);
             font-style: italic;
             transition: color 0.2s;
@@ -110,6 +113,13 @@
 
         .screenshot-link:hover .screenshot-caption {
             color: #ff66ff;
+        }
+
+        /* Clear float after section */
+        .section::after {
+            content: '';
+            display: table;
+            clear: both;
         }
 
         /* Command cards grid */
@@ -248,6 +258,12 @@
         @media (max-width: 600px) {
             .command-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .screenshot-link {
+                float: none;
+                width: 100%;
+                margin: 0 0 1.5rem 0;
             }
         }
     </style>
