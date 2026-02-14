@@ -287,6 +287,14 @@
             transition: text-shadow 0.2s;
         }
 
+        .child-num.back-btn {
+            color: #7ec8ff;
+        }
+
+        .nav-child:hover .child-num.back-btn {
+            text-shadow: 0 0 8px rgba(126, 200, 255, 0.6);
+        }
+
         .child-title {
             font-size: 0.85rem;
             color: var(--moon-cream);
@@ -936,9 +944,10 @@
                         }
 
                         const item = document.createElement('a');
+                        const isBackBtn = menuNum === '9';
                         item.className = 'nav-child';
                         item.innerHTML = `
-                            <span class="child-num">${displayNum}</span>
+                            <span class="child-num${isBackBtn ? ' back-btn' : ''}">${displayNum}</span>
                             <span class="child-title">${displayName}</span>
                         `;
                         item.onclick = () => {

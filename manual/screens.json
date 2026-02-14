@@ -199,21 +199,46 @@
   "sanctum": {
     "id": "sanctum",
     "title": "The Sanctum",
+    "subheader": "Your Home Base",
     "image": "screenshots/common/sanctum.png",
     "page": "walkthrough/sanctum.html",
     "parents": ["create-pack"],
-    "children": ["sanctum-placeholder", "profile-select"],
+    "children": ["know-your-enemy", "spaced-repetition", "profile-data", "profile-select"],
     "childLabels": {
-      "sanctum-placeholder": "*",
+      "know-your-enemy": "4",
+      "spaced-repetition": "5",
+      "profile-data": "6",
       "profile-select": "9"
     },
+    "description": "The Sanctum is your desk. From here, you can study.\n\n4 allows you to see your word lists. 5 allows you to study your flashcards, and 6 lets you keep track of your progress.\n\nThere are many more options from there."
+  },
+  "know-your-enemy": {
+    "id": "know-your-enemy",
+    "title": "Know Your Enemy",
+    "image": null,
+    "page": "walkthrough/know-your-enemy.html",
+    "parents": ["sanctum"],
+    "children": ["kye-placeholder", "sanctum"],
+    "childLabels": {
+      "kye-placeholder": "*",
+      "sanctum": "9"
+    },
     "childDisplayNames": {
-      "sanctum-placeholder": "Enter the Sanctum"
+      "kye-placeholder": "Study Words"
     },
     "childTargets": {
-      "sanctum-placeholder": "sanctum"
+      "kye-placeholder": "know-your-enemy"
     },
-    "description": "Your home base. Options 1-5 lead deeper into the Sanctum: Lessons, Spaced Repetition, BossRun, Know Your Enemy, and more.\n\nOption 6 opens Profile Data. Press 9 to return to Profile Selection.\n\nMore detailed pages coming soon."
+    "description": "Study vocabulary before battle. Browse words by cluster and tier to prepare for the BossRun challenge.\n\nPress any key to explore. Press 9 to return to the Sanctum."
+  },
+  "spaced-repetition": {
+    "id": "spaced-repetition",
+    "title": "Spaced Repetition",
+    "image": null,
+    "page": "walkthrough/spaced-repetition.html",
+    "parents": ["sanctum"],
+    "children": [],
+    "description": "Your daily flashcard practice. Cards are scheduled based on how well you remember them.\n\nThe core learning loop of FlashBoss."
   },
   "tier-skip": {
     "id": "tier-skip",
