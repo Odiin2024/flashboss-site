@@ -320,11 +320,12 @@
       "terminal-workshop": "./FlashBoss workshop"
     },
     "childImages": {
-      "terminal-flashboss": "screenshots/common/entrance.png",
+      "terminal-flashboss": "images/07_screenshot.png",
       "terminal-audio": "images/FlashBoss audio.png",
       "terminal-workshop": "images/workshop.png"
     },
-    "description": "Press 9 to exit and you'll land here - your terminal, in the FlashBoss directory. This is where the CLI commands live."
+    "description": "Press 9 to exit and you'll land here - your terminal, in the FlashBoss directory. This is where the CLI commands live.",
+    "windowsNote": "Windows commands: FlashBoss.exe, FlashBoss.exe audio, FlashBoss.exe workshop"
   },
   "terminal-audio": {
     "id": "terminal-audio",
@@ -334,7 +335,7 @@
     "page": "terminal.html#audio",
     "parents": ["terminal"],
     "children": [],
-    "description": "TTS engine settings and cache management. Run ./FlashBoss audio to access.\n\nCommands: piper, espeak, reset, cache, cache -de, cache-delete, cache-delete -de, cache-delete --de"
+    "description": "TTS engine settings and cache management. Run ./FlashBoss audio to access.\n\nCommands: piper, espeak, reset, cache, cache -de, cache-delete, cache-delete -de, cache-delete --de\n\nWindows: Use backslash (\\) for paths. Commands take the form FlashBoss.exe audio."
   },
   "terminal-workshop": {
     "id": "terminal-workshop",
@@ -344,16 +345,16 @@
     "page": "terminal.html#workshop",
     "parents": ["terminal"],
     "children": [],
-    "description": "Standalone tools for language learning. Run independently of the main program.\n\nTools: pronounce (Piper TTS Studio), cards (Card Viewer). More coming soon..."
+    "description": "Standalone tools for language learning. Run independently of the main program.\n\nTools: pronounce (Piper TTS Studio), cards (Card Viewer). More coming soon...\n\nWindows: Use backslash (\\) for paths. Commands take the form FlashBoss.exe workshop."
   },
   "terminal-flashboss": {
     "id": "terminal-flashboss",
     "title": "./FlashBoss",
     "subheader": "FlashBoss.exe on Windows",
-    "image": "screenshots/common/entrance.png",
+    "image": "images/07_screenshot.png",
     "page": null,
     "parents": ["terminal"],
     "children": ["entrance"],
-    "description": "Return to FlashBoss. Type ./FlashBoss (or FlashBoss.exe on Windows) to launch the game."
+    "description": "Return to FlashBoss. Type ./FlashBoss (or FlashBoss.exe on Windows) to launch the game.\n\nWindows: Use backslash (\\) for paths. Executables don't need ./ prefix - just run FlashBoss.exe directly."
   }
 }

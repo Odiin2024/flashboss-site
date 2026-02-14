@@ -336,6 +336,13 @@
             color: #ffffff;
         }
 
+        .windows-note {
+            font-size: 0.8rem;
+            color: var(--grey);
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
         .right-footer {
             padding: 1rem 1.5rem;
             display: flex;
@@ -867,13 +874,16 @@
                 navSection.style.display = 'none';
             }
 
-            // Learn more link
+            // Learn more link and windows note
             const learnMoreArea = document.getElementById('learnMoreArea');
+            let learnMoreHTML = '';
             if (focus.page) {
-                learnMoreArea.innerHTML = `<a href="${focus.page}" class="learn-more-link">Learn more</a>`;
-            } else {
-                learnMoreArea.innerHTML = '';
+                learnMoreHTML += `<a href="${focus.page}" class="learn-more-link">Learn more</a>`;
             }
+            if (focus.windowsNote) {
+                learnMoreHTML += `<p class="windows-note">${focus.windowsNote}</p>`;
+            }
+            learnMoreArea.innerHTML = learnMoreHTML;
         }
     </script>
 </body>
