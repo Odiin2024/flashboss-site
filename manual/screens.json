@@ -51,8 +51,71 @@
     "image": "screenshots/common/create-master1.png",
     "page": "walkthrough/create-master.html",
     "parents": ["create-avatar"],
-    "children": ["create-pack"],
+    "children": ["master-luna", "master-claude", "master-odiin", "master-shen", "master-kitsune", "master-aquila", "create-avatar"],
+    "childLabels": {
+      "master-luna": "1",
+      "master-claude": "2",
+      "master-odiin": "3",
+      "master-shen": "4",
+      "master-kitsune": "5",
+      "master-aquila": "6",
+      "create-avatar": "9"
+    },
     "description": "Select your guide: Luna, Claude, Odiin, Shen, Kitsune, or Aquila. Each master has their own personality and teaching style.\n\nYour master provides encouragement and guidance throughout your journey."
+  },
+  "master-luna": {
+    "id": "master-luna",
+    "title": "Luna",
+    "image": "screenshots/common/Masters/01_screenshot.png",
+    "page": "walkthrough/masters/luna.html",
+    "parents": ["create-master"],
+    "children": ["create-pack"],
+    "description": "Luna is your guide. Her personality and teaching style will accompany you throughout your journey.\n\nPress any key to confirm your choice and continue to language pack selection."
+  },
+  "master-claude": {
+    "id": "master-claude",
+    "title": "Claude",
+    "image": "screenshots/common/Masters/02_screenshot.png",
+    "page": "walkthrough/masters/claude.html",
+    "parents": ["create-master"],
+    "children": ["create-pack"],
+    "description": "Claude is your guide. His personality and teaching style will accompany you throughout your journey.\n\nPress any key to confirm your choice and continue to language pack selection."
+  },
+  "master-odiin": {
+    "id": "master-odiin",
+    "title": "Odiin",
+    "image": "screenshots/common/Masters/03_screenshot.png",
+    "page": "walkthrough/masters/odiin.html",
+    "parents": ["create-master"],
+    "children": ["create-pack"],
+    "description": "Odiin is your guide. His personality and teaching style will accompany you throughout your journey.\n\nPress any key to confirm your choice and continue to language pack selection."
+  },
+  "master-shen": {
+    "id": "master-shen",
+    "title": "Shen",
+    "image": "screenshots/common/Masters/04_screenshot.png",
+    "page": "walkthrough/masters/shen.html",
+    "parents": ["create-master"],
+    "children": ["create-pack"],
+    "description": "Shen is your guide. His personality and teaching style will accompany you throughout your journey.\n\nPress any key to confirm your choice and continue to language pack selection."
+  },
+  "master-kitsune": {
+    "id": "master-kitsune",
+    "title": "Kitsune",
+    "image": "screenshots/common/Masters/05_screenshot.png",
+    "page": "walkthrough/masters/kitsune.html",
+    "parents": ["create-master"],
+    "children": ["create-pack"],
+    "description": "Kitsune is your guide. Her personality and teaching style will accompany you throughout your journey.\n\nPress any key to confirm your choice and continue to language pack selection."
+  },
+  "master-aquila": {
+    "id": "master-aquila",
+    "title": "Aquila",
+    "image": "screenshots/common/Masters/06_screenshot.png",
+    "page": "walkthrough/masters/aquila.html",
+    "parents": ["create-master"],
+    "children": ["create-pack"],
+    "description": "Aquila is your guide. Her personality and teaching style will accompany you throughout your journey.\n\nPress any key to confirm your choice and continue to language pack selection."
   },
   "create-pack": {
     "id": "create-pack",
@@ -245,20 +308,28 @@
   "terminal": {
     "id": "terminal",
     "title": "Terminal",
+    "subheader": "CLI Commands",
     "image": "images/03_screenshot.png",
     "page": "terminal.html",
+    "layout": "terminal",
     "parents": ["profile-select"],
-    "children": ["terminal-audio", "terminal-workshop", "terminal-flashboss"],
+    "children": ["terminal-flashboss", "terminal-audio", "terminal-workshop"],
     "childLabels": {
-      "terminal-audio": "audio",
-      "terminal-workshop": "workshop",
-      "terminal-flashboss": "./FlashBoss"
+      "terminal-flashboss": "./FlashBoss",
+      "terminal-audio": "./FlashBoss audio",
+      "terminal-workshop": "./FlashBoss workshop"
+    },
+    "childImages": {
+      "terminal-flashboss": "screenshots/common/entrance.png",
+      "terminal-audio": "images/FlashBoss audio.png",
+      "terminal-workshop": "images/workshop.png"
     },
     "description": "Press 9 to exit and you'll land here - your terminal, in the FlashBoss directory. This is where the CLI commands live."
   },
   "terminal-audio": {
     "id": "terminal-audio",
     "title": "Audio Configuration",
+    "subheader": "./FlashBoss audio",
     "image": "images/FlashBoss audio.png",
     "page": "terminal.html#audio",
     "parents": ["terminal"],
@@ -268,6 +339,7 @@
   "terminal-workshop": {
     "id": "terminal-workshop",
     "title": "Workshop",
+    "subheader": "./FlashBoss workshop",
     "image": "images/workshop.png",
     "page": "terminal.html#workshop",
     "parents": ["terminal"],
@@ -277,6 +349,7 @@
   "terminal-flashboss": {
     "id": "terminal-flashboss",
     "title": "./FlashBoss",
+    "subheader": "FlashBoss.exe on Windows",
     "image": "screenshots/common/entrance.png",
     "page": null,
     "parents": ["terminal"],

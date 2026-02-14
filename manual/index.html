@@ -95,7 +95,7 @@
         .left-content {
             flex: 1;
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             justify-content: center;
             padding: 1rem 1.5rem;
         }
@@ -152,9 +152,7 @@
         }
 
         .right-header {
-            padding: 1rem 1.5rem;
-            display: flex;
-            justify-content: flex-end;
+            padding: 1rem 1.5rem 1rem 1.5rem;
             position: relative;
         }
 
@@ -168,6 +166,14 @@
             background: rgba(255, 102, 255, 0.3);
         }
 
+        .screen-subheader {
+            font-family: var(--font-pixel);
+            font-size: 0.85rem;
+            color: var(--link-blue);
+            margin: 0;
+        }
+
+        /* Mobile back button only */
         .back-btn {
             background: #171421;
             border: 1px solid var(--grey);
@@ -284,6 +290,37 @@
         .child-title {
             font-size: 0.85rem;
             color: var(--moon-cream);
+        }
+
+        /* Terminal image grid */
+        .terminal-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .terminal-thumb {
+            background: #171421;
+            border: 1px solid var(--grey);
+            border-radius: 4px;
+            padding: 0.5rem;
+            cursor: pointer;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            display: block;
+        }
+
+        .terminal-thumb:hover {
+            border-color: rgba(255, 102, 255, 0.7);
+            box-shadow: 0 0 10px rgba(255, 102, 255, 0.4);
+        }
+
+        .terminal-thumb img {
+            width: 100%;
+            height: auto;
+            border-radius: 2px;
+            display: block;
         }
 
         /* Learn more link */
@@ -537,11 +574,13 @@
             <!-- Right column -->
             <div class="panel-right">
                 <div class="right-header">
-                    <a class="back-btn disabled" id="backBtn">Back</a>
+                    <p class="screen-subheader" id="screenSubheader"></p>
                 </div>
                 <div class="right-content">
                     <h2 class="mobile-title" id="mobileTitle">Loading...</h2>
                     <div class="description-text" id="descriptionText"></div>
+
+                    <div class="terminal-grid hidden" id="terminalGrid"></div>
 
                     <div class="nav-section" id="navSection">
                         <p class="nav-title">Navigate to:</p>
@@ -704,30 +743,30 @@
                 leftFooter.textContent = '';
             }
 
-            // Back button - goes to primary parent
-            const backBtn = document.getElementById('backBtn');
+            // Subheader - from data or empty
+            const subheader = document.getElementById('screenSubheader');
+            subheader.textContent = focus.subheader || '';
+
+            // Mobile back button - goes to primary parent
             const mobileBackBtn = document.getElementById('mobileBackBtn');
             if (focus.parents && focus.parents.length > 0) {
                 const firstParent = screens[focus.parents[0]];
                 if (firstParent) {
-                    backBtn.classList.remove('disabled');
                     mobileBackBtn.classList.remove('disabled');
-                    backBtn.textContent = 'Back';
                     mobileBackBtn.textContent = 'Back';
-                    const goBack = () => {
+                    mobileBackBtn.onclick = () => {
                         currentFocus = focus.parents[0];
                         renderScreen();
                     };
-                    backBtn.onclick = goBack;
-                    mobileBackBtn.onclick = goBack;
                 } else {
-                    backBtn.classList.add('disabled');
                     mobileBackBtn.classList.add('disabled');
                 }
             } else {
-                backBtn.classList.add('disabled');
                 mobileBackBtn.classList.add('disabled');
             }
+
+            // Check if childLabels has a "9" (back via number)
+            const hasNineBack = focus.childLabels && Object.values(focus.childLabels).includes('9');
 
             // Description
             const descDiv = document.getElementById('descriptionText');
@@ -738,6 +777,28 @@
                 descDiv.appendChild(p);
             });
 
+            // Terminal layout - special image grid
+            const terminalGrid = document.getElementById('terminalGrid');
+            if (focus.layout === 'terminal' && focus.childImages) {
+                terminalGrid.innerHTML = '';
+                terminalGrid.classList.remove('hidden');
+                focus.children.forEach(childId => {
+                    const imgSrc = focus.childImages[childId];
+                    if (!imgSrc) return;
+                    const thumb = document.createElement('a');
+                    thumb.className = 'terminal-thumb';
+                    thumb.innerHTML = `<img src="${imgSrc}" alt="${screens[childId]?.title || ''}">`;
+                    thumb.onclick = () => {
+                        currentFocus = childId;
+                        renderScreen();
+                    };
+                    terminalGrid.appendChild(thumb);
+                });
+            } else {
+                terminalGrid.classList.add('hidden');
+                terminalGrid.innerHTML = '';
+            }
+
             // Navigation list - parents then children
             const navSection = document.getElementById('navSection');
             const navList = document.getElementById('navList');
@@ -745,12 +806,14 @@
 
             const hasParents = focus.parents && focus.parents.length > 0;
             const hasChildren = focus.children && focus.children.length > 0;
+            // Hide parent buttons if "9" back option exists OR terminal layout
+            const showParents = hasParents && !hasNineBack && focus.layout !== 'terminal';
 
-            if (hasParents || hasChildren) {
+            if (showParents || hasChildren) {
                 navSection.style.display = 'block';
 
-                // Parents first (blue)
-                if (hasParents) {
+                // Parents first (blue) - only if no "9" back option
+                if (showParents) {
                     focus.parents.forEach(parentId => {
                         const parent = screens[parentId];
                         if (!parent) return;
