@@ -318,7 +318,7 @@
     "id": "terminal",
     "title": "Terminal",
     "subheader": "CLI Commands",
-    "image": "images/03_screenshot.png",
+    "image": "images/terminal/03_screenshot.png",
     "page": "terminal.html",
     "layout": "terminal",
     "parents": ["profile-select"],
@@ -329,9 +329,9 @@
       "terminal-workshop": "./FlashBoss workshop"
     },
     "childImages": {
-      "terminal-flashboss": "images/FlashBoss.png",
-      "terminal-audio": "images/FlashBoss audio.png",
-      "terminal-workshop": "images/workshop.png"
+      "terminal-flashboss": "images/terminal/FlashBoss.png",
+      "terminal-audio": "images/terminal/FlashBoss audio.png",
+      "terminal-workshop": "images/terminal/workshop.png"
     },
     "description": "Press 9 to exit and you'll land here - your terminal, in the FlashBoss directory. This is where the CLI commands live.",
     "windowsNote": "Windows commands: FlashBoss.exe, FlashBoss.exe audio, FlashBoss.exe workshop"
@@ -340,7 +340,7 @@
     "id": "terminal-audio",
     "title": "Audio Configuration",
     "subheader": "./FlashBoss audio",
-    "image": "images/FlashBoss audio.png",
+    "image": "images/terminal/FlashBoss audio.png",
     "page": "terminal.html#audio",
     "parents": ["terminal"],
     "children": [],
@@ -350,7 +350,7 @@
     "id": "terminal-workshop",
     "title": "Workshop",
     "subheader": "./FlashBoss workshop",
-    "image": "images/workshop.png",
+    "image": "images/terminal/workshop.png",
     "page": "terminal.html#workshop",
     "parents": ["terminal"],
     "children": [],
@@ -360,7 +360,7 @@
     "id": "terminal-flashboss",
     "title": "./FlashBoss",
     "subheader": "FlashBoss.exe on Windows",
-    "image": "images/FlashBoss.png",
+    "image": "images/terminal/FlashBoss.png",
     "page": null,
     "parents": ["terminal"],
     "children": ["entrance"],
