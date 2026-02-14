@@ -305,21 +305,59 @@
     ],
     "page": "walkthrough/tier-skip.html",
     "parents": ["profile-data", "gates"],
-    "children": ["bossfight", "gates"],
+    "children": ["bossrun-challenge", "gates"],
     "childLabels": {
-      "bossfight": "*",
+      "bossrun-challenge": "5",
       "gates": "9"
     },
-    "description": "Test out of content you already know. Survive the BossRun to skip ahead.\n\nIf you already have vocabulary knowledge, this lets you jump to an appropriate tier.\n\nPress any key to begin the BossRun. Press 9 to return to the Gates."
+    "description": "Test out of content you already know. Survive the BossRun to skip ahead.\n\nIf you already have vocabulary knowledge, this lets you jump to an appropriate tier.\n\nPress 5 to begin the challenge. Press 9 to return to the Gates."
+  },
+  "bossrun-challenge": {
+    "id": "bossrun-challenge",
+    "title": "BossRun Challenge",
+    "subheader": "Prepare for Battle",
+    "image": "images/bossfight/23_screenshot.png",
+    "page": "walkthrough/bossfight.html",
+    "parents": ["tier-skip"],
+    "children": ["bossfight", "tier-skip"],
+    "childLabels": {
+      "bossfight": "5",
+      "tier-skip": "9"
+    },
+    "childDisplayNames": {
+      "bossfight": "Start the Bossfights!!"
+    },
+    "description": "You are about to face the BossRun challenge. Answer correctly to survive and prove your vocabulary knowledge.\n\nPress 5 to begin. Press 9 to return to Tier Skip."
   },
   "bossfight": {
     "id": "bossfight",
     "title": "BossRun",
-    "image": null,
+    "subheader": "Fight!",
+    "image": "images/bossfight/23_screenshot.png",
+    "layout": "slideshow",
+    "slideshowImages": [
+      "images/bossfight/23_screenshot.png",
+      "images/bossfight/24_screenshot.png",
+      "images/bossfight/25_screenshot.png",
+      "images/bossfight/26_screenshot.png",
+      "images/bossfight/27_screenshot.png",
+      "images/bossfight/28_screenshot.png",
+      "images/bossfight/29_screenshot.png",
+      "images/bossfight/30_screenshot.png",
+      "images/bossfight/31_screenshot.png",
+      "images/bossfight/32_screenshot.png",
+      "images/bossfight/33_screenshot.png"
+    ],
     "page": "walkthrough/bossfight.html",
-    "parents": ["tier-skip"],
-    "children": [],
-    "description": "Face the BossRun challenge. Answer correctly to survive and prove your vocabulary knowledge.\n\nThis is a one-way path - complete the challenge to progress."
+    "parents": ["bossrun-challenge"],
+    "children": ["sanctum"],
+    "childLabels": {
+      "sanctum": "9"
+    },
+    "childDisplayNames": {
+      "sanctum": "Skip to Sanctum"
+    },
+    "description": "Face the BossRun challenge! Answer correctly to survive and prove your vocabulary knowledge.\n\nClick the image or press * to advance through the battle. Press 9 to skip to the Sanctum."
   },
   "achievements": {
     "id": "achievements",
@@ -395,7 +433,23 @@
     "image": "screenshots/common/export.png",
     "page": "walkthrough/export-progress.html",
     "parents": ["profile-data"],
-    "children": [],
+    "children": ["delete-profile", "achievements", "profile-data-7", "profile-data"],
+    "childLabels": {
+      "delete-profile": "5",
+      "achievements": "6",
+      "profile-data-7": "7",
+      "profile-data": "9"
+    },
+    "childDisplayNames": {
+      "profile-data-7": "Profile Data"
+    },
+    "childTargets": {
+      "profile-data-7": "profile-data"
+    },
+    "disabledButtons": ["8"],
+    "disabledTooltips": {
+      "8": "Disabled"
+    },
     "description": "Save your profile to the Backup Vault. Creates a backup that can be restored later."
   },
   "meet-masters": {
