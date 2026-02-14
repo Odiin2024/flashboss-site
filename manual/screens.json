@@ -401,11 +401,93 @@
   "meet-masters": {
     "id": "meet-masters",
     "title": "Meet the Masters",
+    "subheader": "Choose Wisely",
     "image": "screenshots/common/meetmasters.png",
     "page": "walkthrough/meet-masters.html",
     "parents": ["profile-data"],
-    "children": [],
-    "description": "Change your guide. Each master has their own personality and teaching style."
+    "children": ["mm-luna", "mm-claude", "mm-odiin", "mm-shen", "mm-kitsune", "mm-aquila", "profile-data"],
+    "childLabels": {
+      "mm-luna": "1",
+      "mm-claude": "2",
+      "mm-odiin": "3",
+      "mm-shen": "4",
+      "mm-kitsune": "5",
+      "mm-aquila": "6",
+      "profile-data": "9"
+    },
+    "description": "You found it! This is the place to earn a beta key - the full game, free for life.\n\nSelecting a master takes you back to the Profile Data screen. In the game, you will now have your chosen master. Which master did you choose?"
+  },
+  "mm-luna": {
+    "id": "mm-luna",
+    "title": "Luna",
+    "image": "screenshots/common/Masters/01_screenshot.png",
+    "parents": ["meet-masters"],
+    "children": ["profile-data", "meet-masters"],
+    "childLabels": {
+      "profile-data": "5",
+      "meet-masters": "9"
+    },
+    "description": "You found it! This is the place to earn a beta key - the full game, free for life.\n\nSelecting a master takes you back to the Profile Data screen. In the game, you will now have your chosen master. Which master did you choose?"
+  },
+  "mm-claude": {
+    "id": "mm-claude",
+    "title": "Claude",
+    "image": "screenshots/common/Masters/02_screenshot.png",
+    "parents": ["meet-masters"],
+    "children": ["profile-data", "meet-masters"],
+    "childLabels": {
+      "profile-data": "5",
+      "meet-masters": "9"
+    },
+    "description": "You found it! This is the place to earn a beta key - the full game, free for life.\n\nSelecting a master takes you back to the Profile Data screen. In the game, you will now have your chosen master. Which master did you choose?"
+  },
+  "mm-odiin": {
+    "id": "mm-odiin",
+    "title": "Odiin",
+    "image": "screenshots/common/Masters/03_screenshot.png",
+    "parents": ["meet-masters"],
+    "children": ["profile-data", "meet-masters"],
+    "childLabels": {
+      "profile-data": "5",
+      "meet-masters": "9"
+    },
+    "description": "You found it! This is the place to earn a beta key - the full game, free for life.\n\nSelecting a master takes you back to the Profile Data screen. In the game, you will now have your chosen master. Which master did you choose?"
+  },
+  "mm-shen": {
+    "id": "mm-shen",
+    "title": "Shen",
+    "image": "screenshots/common/Masters/04_screenshot.png",
+    "parents": ["meet-masters"],
+    "children": ["profile-data", "meet-masters"],
+    "childLabels": {
+      "profile-data": "5",
+      "meet-masters": "9"
+    },
+    "description": "You found it! This is the place to earn a beta key - the full game, free for life.\n\nSelecting a master takes you back to the Profile Data screen. In the game, you will now have your chosen master. Which master did you choose?"
+  },
+  "mm-kitsune": {
+    "id": "mm-kitsune",
+    "title": "Kitsune",
+    "image": "screenshots/common/Masters/05_screenshot.png",
+    "parents": ["meet-masters"],
+    "children": ["profile-data", "meet-masters"],
+    "childLabels": {
+      "profile-data": "5",
+      "meet-masters": "9"
+    },
+    "description": "You found it! This is the place to earn a beta key - the full game, free for life.\n\nSelecting a master takes you back to the Profile Data screen. In the game, you will now have your chosen master. Which master did you choose?"
+  },
+  "mm-aquila": {
+    "id": "mm-aquila",
+    "title": "Aquila",
+    "image": "screenshots/common/Masters/06_screenshot.png",
+    "parents": ["meet-masters"],
+    "children": ["profile-data", "meet-masters"],
+    "childLabels": {
+      "profile-data": "5",
+      "meet-masters": "9"
+    },
+    "description": "You found it! This is the place to earn a beta key - the full game, free for life.\n\nSelecting a master takes you back to the Profile Data screen. In the game, you will now have your chosen master. Which master did you choose?"
   },
   "vault": {
     "id": "vault",
