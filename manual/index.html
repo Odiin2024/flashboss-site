@@ -596,15 +596,20 @@
             .manual-wrapper {
                 position: relative;
                 height: auto;
-                min-height: 100vh;
+                min-height: auto;
                 padding: 2vh 4vw;
-                overflow-y: auto;
+                overflow-y: visible;
             }
 
             .manual-panel {
                 grid-template-columns: 1fr 1fr;
                 height: auto;
-                min-height: 80vh;
+                min-height: auto;
+            }
+
+            .panel-left, .panel-right {
+                min-height: auto;
+                height: auto;
             }
 
             .view-toggle {

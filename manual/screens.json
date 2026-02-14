@@ -285,19 +285,71 @@
   },
   "achievements": {
     "id": "achievements",
-    "title": "Achievements & Statistics",
+    "title": "Journey Achievements",
     "image": "screenshots/common/achievements/journey.png",
-    "layout": "gallery",
-    "galleryImages": [
-      "screenshots/common/achievements/mastery.png",
-      "screenshots/common/achievements/streaks.png",
-      "screenshots/common/achievements/combat.png",
-      "screenshots/common/achievements/global.png"
-    ],
     "page": "walkthrough/achievements.html",
     "parents": ["profile-data"],
-    "children": [],
-    "description": "View your progress, unlocked achievements, and detailed statistics about your learning journey.\n\nClick thumbnails below to preview each achievement category."
+    "children": ["achievements-2", "profile-data"],
+    "childLabels": {
+      "achievements-2": "6",
+      "profile-data": "9"
+    },
+    "description": "Journey achievements track your overall progress through FlashBoss.\n\nPress 6 for next category. Press 9 to return to Profile Data."
+  },
+  "achievements-2": {
+    "id": "achievements-2",
+    "title": "Mastery Achievements",
+    "image": "screenshots/common/achievements/mastery.png",
+    "page": "walkthrough/achievements-mastery.html",
+    "parents": ["achievements"],
+    "children": ["achievements", "achievements-3", "profile-data"],
+    "childLabels": {
+      "achievements": "4",
+      "achievements-3": "6",
+      "profile-data": "9"
+    },
+    "description": "Mastery achievements track vocabulary completion and retention.\n\nPress 4 for previous, 6 for next. Press 9 to return to Profile Data."
+  },
+  "achievements-3": {
+    "id": "achievements-3",
+    "title": "Streaks Achievements",
+    "image": "screenshots/common/achievements/streaks.png",
+    "page": "walkthrough/achievements-streaks.html",
+    "parents": ["achievements-2"],
+    "children": ["achievements-2", "achievements-4", "profile-data"],
+    "childLabels": {
+      "achievements-2": "4",
+      "achievements-4": "6",
+      "profile-data": "9"
+    },
+    "description": "Streak achievements reward consistent daily practice.\n\nPress 4 for previous, 6 for next. Press 9 to return to Profile Data."
+  },
+  "achievements-4": {
+    "id": "achievements-4",
+    "title": "Combat Achievements",
+    "image": "screenshots/common/achievements/combat.png",
+    "page": "walkthrough/achievements-combat.html",
+    "parents": ["achievements-3"],
+    "children": ["achievements-3", "achievements-5", "profile-data"],
+    "childLabels": {
+      "achievements-3": "4",
+      "achievements-5": "6",
+      "profile-data": "9"
+    },
+    "description": "Combat achievements track BossRun victories and battles.\n\nPress 4 for previous, 6 for next. Press 9 to return to Profile Data."
+  },
+  "achievements-5": {
+    "id": "achievements-5",
+    "title": "Global Achievements",
+    "image": "screenshots/common/achievements/global.png",
+    "page": "walkthrough/achievements-global.html",
+    "parents": ["achievements-4"],
+    "children": ["achievements-4", "profile-data"],
+    "childLabels": {
+      "achievements-4": "4",
+      "profile-data": "9"
+    },
+    "description": "Global achievements are special milestones shared across all profiles.\n\nPress 4 for previous. Press 9 to return to Profile Data."
   },
   "export-progress": {
     "id": "export-progress",
