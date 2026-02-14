@@ -294,22 +294,23 @@
             object-fit: cover;
         }
 
-        /* Main area: focus + children side by side */
+        /* Main area: focus + branches + children */
         .main-area {
             display: flex;
             align-items: flex-start;
             justify-content: center;
-            gap: 1rem;
+            gap: 0;
             flex: 1;
             width: 100%;
+            padding: 0 1rem;
         }
 
-        /* Main/focus page display - larger */
+        /* Main/focus page display - larger, left side */
         .focus-thumb {
-            width: 220px;
-            height: 240px;
-            background: var(--bg-dark);
-            border: 2px solid rgba(255, 102, 255, 0.5);
+            width: 260px;
+            height: 285px;
+            background: rgba(10, 10, 25, 0.4);
+            border: 1px solid rgba(255, 102, 255, 0.2);
             border-radius: 6px;
             display: flex;
             align-items: center;
@@ -324,12 +325,13 @@
             cursor: pointer;
             transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
             flex-shrink: 0;
-            box-shadow: 0 0 10px rgba(255, 102, 255, 0.2);
+            box-shadow: 0 0 10px rgba(255, 102, 255, 0.15);
+            margin-right: 0;
         }
 
         .focus-thumb:hover {
-            border-color: var(--link-blue);
-            box-shadow: 0 0 15px rgba(126, 200, 255, 0.4), 0 0 25px rgba(126, 200, 255, 0.2);
+            border-color: rgba(255, 102, 255, 0.5);
+            box-shadow: 0 0 20px rgba(255, 102, 255, 0.4), 0 0 35px rgba(255, 102, 255, 0.2);
             transform: scale(1.02);
         }
 
@@ -340,38 +342,75 @@
             border-radius: 2px;
         }
 
-        /* Numbered children list - to the right of focus */
+        /* Branch connector from focus to children */
+        .branch-connector {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-top: 20px;
+        }
+
+        .branch-line-h {
+            width: 30px;
+            height: 2px;
+            background: rgba(255, 102, 255, 0.4);
+        }
+
+        .branch-line-v {
+            width: 2px;
+            background: rgba(255, 102, 255, 0.4);
+            margin-left: 28px;
+        }
+
+        .branch-to-child {
+            display: flex;
+            align-items: center;
+        }
+
+        .branch-line-to {
+            width: 15px;
+            height: 2px;
+            background: rgba(255, 102, 255, 0.4);
+        }
+
+        /* Numbered children list - to the right */
         .nav-children {
             display: flex;
             flex-direction: column;
-            gap: 0.35rem;
-            min-width: 140px;
-            max-width: 180px;
+            gap: 0.3rem;
+            min-width: 160px;
+            max-width: 200px;
         }
 
         .child-item {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-            padding: 0.4rem 0.6rem;
-            background: rgba(138, 180, 212, 0.1);
-            border: 1px solid rgba(138, 180, 212, 0.3);
-            border-radius: 4px;
+            gap: 0.6rem;
             cursor: pointer;
-            transition: background 0.2s, border-color 0.2s;
             text-decoration: none;
         }
 
-        .child-item:hover {
-            background: rgba(138, 180, 212, 0.2);
-            border-color: var(--moon-yellow);
+        .child-item:hover .child-num-box {
+            border-color: rgba(255, 102, 255, 0.7);
+            box-shadow: 0 0 10px rgba(255, 102, 255, 0.4);
+        }
+
+        .child-num-box {
+            background: #171421;
+            border: 1px solid rgba(255, 102, 255, 0.4);
+            border-radius: 3px;
+            padding: 0.3rem 0.5rem;
+            min-width: 2rem;
+            text-align: center;
+            transition: border-color 0.2s, box-shadow 0.2s;
         }
 
         .child-num {
             font-family: var(--font-pixel);
             font-size: 0.5rem;
-            color: var(--coral);
-            min-width: 1.5rem;
+            color: #ff66ff;
+            line-height: 1.4;
+            white-space: pre-line;
         }
 
         .child-title {
@@ -384,10 +423,12 @@
             display: flex;
             flex-direction: column;
             background: transparent;
+            padding: 0 5%;
         }
 
         .book-right .page-content {
             align-items: flex-start;
+            padding: 0.75rem 1.5rem;
         }
 
         .book-right p {
@@ -643,12 +684,13 @@
                 <!-- Left page: navigation tree -->
                 <div class="book-left" id="cladogramLeft">
                     <div class="page-header-area">
-                        <p class="page-instruction">Select a screen to learn more</p>
+                        <h2 class="page-title">Click on a number option to progress</h2>
                     </div>
                     <div class="page-content">
                         <div class="nav-row" id="navRow"></div>
                         <div class="main-area">
                             <div class="focus-thumb" id="focusThumb"></div>
+                            <div class="branch-connector" id="branchConnector"></div>
                             <div class="nav-children" id="navChildren"></div>
                         </div>
                     </div>
@@ -931,22 +973,55 @@
             }
             focusThumb.onclick = zoomIn;
 
-            // Render numbered children list
+            // Render branch connector and numbered children list
+            const branchConnector = document.getElementById('branchConnector');
             const navChildren = document.getElementById('navChildren');
+            branchConnector.innerHTML = '';
             navChildren.innerHTML = '';
 
-            focus.children.forEach(childId => {
+            if (focus.children.length > 0) {
+                // First horizontal line from focus
+                const hLine = document.createElement('div');
+                hLine.className = 'branch-line-h';
+                branchConnector.appendChild(hLine);
+
+                // Calculate vertical line height based on children count
+                const childCount = focus.children.length;
+                const vLine = document.createElement('div');
+                vLine.className = 'branch-line-v';
+                vLine.style.height = ((childCount - 1) * 32 + 10) + 'px';
+                if (childCount > 1) {
+                    branchConnector.appendChild(vLine);
+                }
+            }
+
+            focus.children.forEach((childId, index) => {
                 const child = screens[childId];
                 if (!child) return;
 
                 const menuNum = focus.childLabels ? (focus.childLabels[childId] || '') : '';
+
+                // Expand ranges like "2-5" to multi-line "2\n3\n4\n5"
+                let displayNum = menuNum;
+                const rangeMatch = menuNum.match(/^(\d+)-(\d+)$/);
+                if (rangeMatch) {
+                    const start = parseInt(rangeMatch[1]);
+                    const end = parseInt(rangeMatch[2]);
+                    const nums = [];
+                    for (let i = start; i <= end; i++) {
+                        nums.push(i);
+                    }
+                    displayNum = nums.join('\n');
+                }
 
                 const item = document.createElement('div');
                 item.className = 'child-item';
                 item.onclick = () => setFocus(childId);
 
                 item.innerHTML = `
-                    <span class="child-num">${menuNum}</span>
+                    <div class="child-num-box">
+                        <span class="child-num">${displayNum}</span>
+                    </div>
                     <span class="child-title">${child.title}</span>
                 `;
                 navChildren.appendChild(item);
