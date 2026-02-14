@@ -298,26 +298,21 @@
   "tier-skip": {
     "id": "tier-skip",
     "title": "Tier Skip Challenge",
+    "subheader": "Placement Test",
     "image": "screenshots/common/tierskip1.png",
-    "layout": "gallery",
-    "galleryImages": [
-      "screenshots/common/tierskip2.png"
-    ],
-    "page": "walkthrough/tier-skip.html",
     "parents": ["profile-data", "gates"],
     "children": ["bossrun-challenge", "gates"],
     "childLabels": {
       "bossrun-challenge": "5",
       "gates": "9"
     },
-    "description": "Test out of content you already know. Survive the BossRun to skip ahead.\n\nIf you already have vocabulary knowledge, this lets you jump to an appropriate tier.\n\nPress 5 to begin the challenge. Press 9 to return to the Gates."
+    "description": "Not everybody comes to FlashBoss at ground level. Try your hand at the tier skip challenge.\n\nIf you already have the knowledge you can skip ahead. But it never hurts to cover what you know. That's what the hard masters are for."
   },
   "bossrun-challenge": {
     "id": "bossrun-challenge",
     "title": "BossRun Challenge",
     "subheader": "Prepare for Battle",
-    "image": "images/bossfight/23_screenshot.png",
-    "page": "walkthrough/bossfight.html",
+    "image": "screenshots/common/tierskip2.png",
     "parents": ["tier-skip"],
     "children": ["bossfight", "tier-skip"],
     "childLabels": {

@@ -228,7 +228,7 @@
             </div>
             <p class="screen-title" id="screenTitle"></p>
             <p class="progress" id="progress"></p>
-            <p class="hint">Click image or press any key to continue</p>
+            <p class="hint">Click image or press any key to continue · Press 9 or Esc to skip</p>
         </div>
 
         <!-- Fork choice -->
@@ -347,9 +347,22 @@
             render();
         }
 
+        function skipToEnd() {
+            const slides = data[currentBook];
+            currentIndex = slides.length - 1;
+            render();
+        }
+
         document.addEventListener('keydown', (e) => {
             const forkActive = document.getElementById('forkContainer').classList.contains('active');
             const endActive = document.getElementById('endContainer').classList.contains('active');
+
+            // Skip to end with 9 or Escape
+            if (e.key === '9' || e.key === 'Escape') {
+                e.preventDefault();
+                skipToEnd();
+                return;
+            }
 
             if (forkActive) {
                 if (e.key === '1') choosePath('esperanto');
