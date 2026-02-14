@@ -553,19 +553,31 @@
             }
 
             .mobile-title {
-                display: block;
-                font-family: var(--font-pixel);
-                font-size: 0.85rem;
-                color: var(--moon-cream);
-                margin-bottom: 1rem;
+                display: none;
             }
 
             .right-content {
                 flex: none;
+                display: flex;
+                flex-direction: column;
             }
 
             .nav-section {
-                margin-top: 1.5rem;
+                order: -1;
+                margin-top: 0;
+                margin-bottom: 1.5rem;
+            }
+
+            .description-text {
+                order: 0;
+            }
+
+            .terminal-grid {
+                order: 1;
+            }
+
+            #learnMoreArea {
+                order: 2;
             }
 
             .tile-view {

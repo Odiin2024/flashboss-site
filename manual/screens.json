@@ -34,12 +34,15 @@
     "image": "screenshots/common/gates.png",
     "page": "walkthrough/gates.html",
     "parents": ["profile-select"],
-    "children": ["sanctum", "profile-data"],
+    "children": ["sanctum", "profile-data", "export-progress", "about-1", "profile-select"],
     "childLabels": {
       "sanctum": "5",
-      "profile-data": "6"
+      "profile-data": "6",
+      "export-progress": "7",
+      "about-1": "8",
+      "profile-select": "9"
     },
-    "description": "Welcome back to FlashBoss. Your master greets you at the gates.\n\nEnter the Sanctum to begin your daily practice, or view your Profile Data."
+    "description": "Welcome back to FlashBoss. Your master greets you at the gates.\n\nOptions: 5 Sanctum, 6 Profile Data, 7 Backup, 8 About, 9 Back."
   },
   "create-username": {
     "id": "create-username",
@@ -395,19 +398,11 @@
     "title": "About FlashBoss",
     "image": "screenshots/common/about-1.png",
     "page": "../about.html",
-    "layout": "terminal",
     "parents": ["profile-select"],
-    "children": ["about-2", "about-3", "about-4", "hints-tips"],
+    "children": ["about-2", "profile-select"],
     "childLabels": {
       "about-2": "6",
-      "about-3": "66",
-      "about-4": "666",
-      "hints-tips": "1"
-    },
-    "childImages": {
-      "about-2": "screenshots/common/about-2.png",
-      "about-3": "screenshots/common/about-3.png",
-      "about-4": "screenshots/common/about-4.png"
+      "profile-select": "9"
     },
     "description": "FlashBoss is collaborative language learning software built through conversation between a teacher who can't code and an AI who can.\n\nCore Principles: Fibonacci-based spaced repetition, engagement through gamification, graded language progression, complex mechanics → simple interface."
   },
@@ -417,9 +412,11 @@
     "image": "screenshots/common/about-2.png",
     "page": "walkthrough/about-2.html",
     "parents": ["about-1"],
-    "children": ["about-3"],
+    "children": ["about-1", "about-3", "profile-select"],
     "childLabels": {
-      "about-3": "6"
+      "about-1": "4",
+      "about-3": "6",
+      "profile-select": "9"
     },
     "description": "Language packs in development: French Core, French Pareto 1 & 2, Italian Core, Spanish Core.\n\nEnglish Expansion: Vocabulary Builder, German Roots, Latin Roots, Medical Terminology, Legal Terminology."
   },
@@ -429,9 +426,11 @@
     "image": "screenshots/common/about-3.png",
     "page": "walkthrough/about-3.html",
     "parents": ["about-2"],
-    "children": ["about-4"],
+    "children": ["about-2", "about-4", "profile-select"],
     "childLabels": {
-      "about-4": "6"
+      "about-2": "4",
+      "about-4": "6",
+      "profile-select": "9"
     },
     "description": "Steam App ID: 4134440\nCommunity Hub: steamcommunity.com/app/4134440\n\nContact: flashbosscontact@gmail.com\nWebsite: odiin2024.github.io/flashboss-site"
   },
@@ -441,7 +440,11 @@
     "image": "screenshots/common/about-4.png",
     "page": "walkthrough/about-4.html",
     "parents": ["about-3"],
-    "children": [],
+    "children": ["about-3", "profile-select"],
+    "childLabels": {
+      "about-3": "4",
+      "profile-select": "9"
+    },
     "description": "Text-to-Speech powered by Piper TTS (MIT License) and eSpeak-ng (GPL v3).\n\nVoice Models: German (Thorsten Mueller, CC0), Polish (Darkman, CC0)."
   },
   "hints-tips": {
@@ -450,9 +453,10 @@
     "image": "screenshots/common/hints-tips.png",
     "page": "walkthrough/hints-tips.html",
     "parents": ["about-1"],
-    "children": ["lesson-pack-select"],
+    "children": ["lesson-pack-select", "profile-select"],
     "childLabels": {
-      "lesson-pack-select": "1"
+      "lesson-pack-select": "1",
+      "profile-select": "9"
     },
     "description": "FlashBoss is built around a simple principal: 5 leads you forward, and 9 takes you back.\n\nFocus on streak completion. Grimoire completion earns you a 1 day streak buffer.\n\nUseful shortcuts: 555 (Review Cards), 568 (Change Master), 54 (Boss Fights), 5661 (Achievements), 567 (Backup Profile)."
   },
@@ -462,9 +466,10 @@
     "image": "screenshots/common/lesson-pack-select.png",
     "page": "walkthrough/lesson-pack-select.html",
     "parents": ["hints-tips"],
-    "children": ["german-lessons"],
+    "children": ["german-lessons", "hints-tips"],
     "childLabels": {
-      "german-lessons": "2"
+      "german-lessons": "2",
+      "hints-tips": "9"
     },
     "description": "Access all lessons for any installed language pack.\n\n1. Esperanto - 69 Lessons, 3 sets, 15 tiers\n2. German - 67 Lessons, 3 sets, 15 tiers"
   },
@@ -474,7 +479,11 @@
     "image": "screenshots/common/german-lessons.png",
     "page": "walkthrough/german-lessons.html",
     "parents": ["lesson-pack-select"],
-    "children": ["lesson-content"],
+    "children": ["lesson-content", "lesson-pack-select"],
+    "childLabels": {
+      "lesson-content": "1-8",
+      "lesson-pack-select": "9"
+    },
     "description": "Browse all German Core lessons organized by tier.\n\nTier 1: pronunciation, modal verbs, question words, gender & articles, numbers, present tense, negation.\n\nPress 1-8 to view a lesson, arrow keys to navigate pages."
   },
   "lesson-content": {
@@ -483,7 +492,10 @@
     "image": "screenshots/common/lesson-content.png",
     "page": "walkthrough/lesson-content.html",
     "parents": ["german-lessons"],
-    "children": [],
+    "children": ["german-lessons"],
+    "childLabels": {
+      "german-lessons": "9"
+    },
     "description": "Example: Lesson 2 - Modal Verbs.\n\nModal verbs express ability, permission, obligation, or desire: können (can), dürfen (may), sollen (should), müssen (must), wollen (want to), möchten (would like).\n\nStructure: Modal + infinitive at the END."
   },
   "terminal": {
