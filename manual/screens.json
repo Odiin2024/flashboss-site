@@ -49,15 +49,20 @@
     ],
     "children": [
       "sanctum",
+      "review-gates",
       "create-pack",
       "tier-skip",
       "profile-select"
     ],
     "childLabels": {
       "sanctum": "5",
+      "review-gates": "6",
       "create-pack": "7",
       "tier-skip": "8",
       "profile-select": "9"
+    },
+    "childDisplayNames": {
+      "review-gates": "Review Modes"
     },
     "description": "Each day you enter the academy, your master meets you at the gates. What are you here for today?\n\nHave you come to study your flashcards, or are you looking to go to another class? If you would like to take a level placement test, you can prove your knowledge and skip tiers with the Tier Skip Challenge, Option 8."
   },
@@ -291,19 +296,16 @@
       "know-your-enemy",
       "spaced-repetition",
       "profile-data",
-      "grimoire",
       "profile-select"
     ],
     "childLabels": {
       "know-your-enemy": "4",
       "spaced-repetition": "5",
       "profile-data": "6",
-      "grimoire": "0",
       "profile-select": "9"
     },
     "childDisplayNames": {
-      "spaced-repetition": "Continue Your Studies",
-      "grimoire": "Cards Remaining Today (Grimoire)"
+      "spaced-repetition": "Continue Your Studies"
     },
     "descriptionHTML": "The Sanctum is your desk in your master's chambers. This is where you conduct your daily studies.\n\n<span class=\"desc-link\" data-target=\"know-your-enemy\">Know Your Enemy</span> allows you to see your word lists, and challenge bosses. <span class=\"desc-link\" data-target=\"spaced-repetition\">Review Cards</span> begins your studies, and <span class=\"desc-link\" data-target=\"profile-data\">Your Records</span> lets you keep track of your progress."
   },
@@ -490,7 +492,7 @@
       "sanctum": "*"
     },
     "childDisplayNames": {
-      "grimoire": "0 Cards Left Today"
+      "grimoire": "0 Cards Left Today (Grimoire)"
     },
     "disabledButtons": [
       "\u21b5",
@@ -509,7 +511,6 @@
     "image": "images/grimoire/grimoire.png",
     "page": "grimoire.html",
     "parents": [
-      "sanctum",
       "spaced-repetition"
     ],
     "children": [
@@ -553,19 +554,19 @@
     "subheader": "German Training Options",
     "image": "images/review/reviewgates.png",
     "parents": [
-      "sanctum"
+      "gates"
     ],
     "children": [
       "review-srs",
       "review-ddd",
       "review-gauntlet",
-      "sanctum"
+      "gates"
     ],
     "childLabels": {
       "review-srs": "4",
       "review-ddd": "5",
       "review-gauntlet": "6",
-      "sanctum": "9"
+      "gates": "9"
     },
     "childDisplayNames": {
       "review-srs": "Spaced Repetition Training - Revision",
