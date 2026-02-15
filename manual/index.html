@@ -495,11 +495,19 @@
         }
 
         .tile-page-title {
-            font-size: 0.85rem;
-            color: var(--grey);
+            font-family: var(--font-pixel);
+            font-size: 0.6rem;
+            color: var(--link-blue);
             text-align: center;
             margin-bottom: 1rem;
-            font-style: italic;
+            text-decoration: none;
+            display: block;
+            transition: color 0.2s, text-shadow 0.2s;
+        }
+
+        a.tile-page-title:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(126, 200, 255, 0.6);
         }
 
         .tile-grid {
@@ -517,7 +525,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 1rem;
+            padding: 0.6rem 0.5rem;
             cursor: pointer;
             transition: border-color 0.2s, box-shadow 0.2s;
         }
@@ -537,9 +545,17 @@
         }
 
         .tile-desc {
+            font-size: 0.7rem;
+            color: var(--grey);
+            text-align: center;
+        }
+
+        .tile-page-footer {
             font-size: 0.75rem;
             color: var(--grey);
             text-align: center;
+            margin-top: 0.75rem;
+            font-style: italic;
         }
 
         /* Hidden state */
@@ -729,7 +745,7 @@
         <!-- Tile view -->
         <div class="tile-view hidden" id="tileView">
             <div class="tile-page tile-page-left">
-                <p class="tile-page-title">How to Play</p>
+                <a href="walkthrough/flipbook.html?path=german" class="tile-page-title" id="howToPlayLink">How to Play</a>
                 <div class="tile-grid">
                     <div class="tile" onclick="selectTopic('profile-select')">
                         <span class="tile-title">Getting Started</span>
@@ -743,22 +759,23 @@
                         <span class="tile-title">Daily Practice</span>
                         <span class="tile-desc">Streaks & reviews</span>
                     </div>
-                    <div class="tile" onclick="selectTopic('sanctum')">
+                    <div class="tile" onclick="selectTopic('bossfight')">
                         <span class="tile-title">Boss Fights</span>
                         <span class="tile-desc">Challenge clusters</span>
                     </div>
-                    <div class="tile" onclick="selectTopic('sanctum')">
+                    <div class="tile" onclick="selectTopic('grimoire')">
                         <span class="tile-title">Grimoire</span>
-                        <span class="tile-desc">Powerdrive & Drive</span>
+                        <span class="tile-desc">Streak buffer</span>
                     </div>
-                    <div class="tile" onclick="selectTopic('sanctum')">
+                    <div class="tile" onclick="selectTopic('review-gates')">
                         <span class="tile-title">Review Modes</span>
                         <span class="tile-desc">Practice options</span>
                     </div>
                 </div>
+                <p class="tile-page-footer">Select a tile to learn more</p>
             </div>
             <div class="tile-page">
-                <p class="tile-page-title">About FlashBoss</p>
+                <a href="#" class="tile-page-title" onclick="selectTopic('about-1'); return false;">About FlashBoss</a>
                 <div class="tile-grid">
                     <div class="tile" onclick="selectTopic('create-master')">
                         <span class="tile-title">Masters</span>
@@ -778,13 +795,18 @@
                     </div>
                     <div class="tile" onclick="selectTopic('terminal')">
                         <span class="tile-title">Terminal</span>
-                        <span class="tile-desc">CLI commands</span>
+                        <span class="tile-desc">Get uncomfortable</span>
                     </div>
                     <div class="tile" onclick="selectTopic('about-1')">
                         <span class="tile-title">FAQ</span>
                         <span class="tile-desc">Common questions</span>
                     </div>
                 </div>
+                <p class="tile-page-footer">
+                    <a href="../home.html" class="footer-link">Hub</a>
+                    <span class="footer-divider">·</span>
+                    <a href="https://store.steampowered.com/app/4134440/FlashBoss/" class="footer-link">Steam</a>
+                </p>
             </div>
         </div>
     </div>

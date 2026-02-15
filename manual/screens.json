@@ -547,6 +547,93 @@
     },
     "description": "Drive is the mismatch between sanctum time and reality. When you complete a Grimoire session, you pull time forward by a day.\n\nYour Drive equals saved-up days off. If you miss a day, Drive is consumed instead of breaking your streak.\n\nPress 9 to return to the Grimoire."
   },
+  "review-gates": {
+    "id": "review-gates",
+    "title": "Review Modes",
+    "subheader": "German Training Options",
+    "image": "images/review/reviewgates.png",
+    "parents": [
+      "sanctum"
+    ],
+    "children": [
+      "review-srs",
+      "review-ddd",
+      "review-gauntlet",
+      "sanctum"
+    ],
+    "childLabels": {
+      "review-srs": "4",
+      "review-ddd": "5",
+      "review-gauntlet": "6",
+      "sanctum": "9"
+    },
+    "childDisplayNames": {
+      "review-srs": "Spaced Repetition Training - Revision",
+      "review-ddd": "Der Die Das - Gender for German Nouns",
+      "review-gauntlet": "The Gauntlet - BOSSRUN!!"
+    },
+    "description": "Choose your training mode. Each mode offers a different way to practice your German vocabulary.\n\nPress 4 for SRS revision, 5 for gender practice, 6 for the Gauntlet, or 9 to return."
+  },
+  "review-srs": {
+    "id": "review-srs",
+    "title": "Spaced Repetition Training",
+    "subheader": "Revision",
+    "image": "images/review/srsreview.png",
+    "parents": [
+      "review-gates"
+    ],
+    "children": [
+      "review-gates"
+    ],
+    "childLabels": {
+      "review-gates": "9"
+    },
+    "description": "Practice your vocabulary using spaced repetition. Cards appear based on how well you've learned them.\n\nPress 9 to return to Review Modes."
+  },
+  "review-ddd": {
+    "id": "review-ddd",
+    "title": "Der Die Das",
+    "subheader": "Gender for German Nouns",
+    "image": "images/review/antedas.png",
+    "layout": "slideshow",
+    "slideshowImages": [
+      "images/review/antedas.png",
+      "images/review/das.png",
+      "images/review/dasfalsch.png",
+      "images/review/dasrunde.png"
+    ],
+    "parents": [
+      "review-gates"
+    ],
+    "children": [
+      "review-gates"
+    ],
+    "childLabels": {
+      "review-gates": "9"
+    },
+    "description": "Practice identifying the correct grammatical gender for German nouns. Der (masculine), Die (feminine), or Das (neuter)?\n\nClick or press * to advance. Press 9 to return to Review Modes."
+  },
+  "review-gauntlet": {
+    "id": "review-gauntlet",
+    "title": "The Gauntlet",
+    "subheader": "BOSSRUN!!",
+    "image": "images/review/bossrun1.png",
+    "layout": "slideshow",
+    "slideshowImages": [
+      "images/review/bossrun1.png",
+      "images/review/bossrun2.png"
+    ],
+    "parents": [
+      "review-gates"
+    ],
+    "children": [
+      "review-gates"
+    ],
+    "childLabels": {
+      "review-gates": "9"
+    },
+    "description": "Face the Gauntlet! A relentless BOSSRUN challenge to test your vocabulary mastery.\n\nClick or press * to advance. Press 9 to return to Review Modes."
+  },
   "tier-skip": {
     "id": "tier-skip",
     "title": "Tier Skip Challenge",
@@ -1115,7 +1202,7 @@
   "terminal": {
     "id": "terminal",
     "title": "Terminal",
-    "subheader": "CLI Commands",
+    "subheader": "Get Uncomfortable",
     "image": "images/terminal/03_screenshot.png",
     "page": "terminal.html",
     "layout": "terminal",
