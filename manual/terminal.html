@@ -72,13 +72,22 @@
             color: rgba(255, 255, 255, 0.9);
         }
 
-        /* Screenshot display - floated left like news article */
+        /* Two column intro layout */
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .intro-grid p {
+            margin-bottom: 0;
+        }
+
+        /* Screenshot display */
         .screenshot-link {
             display: block;
             text-decoration: none;
-            float: left;
-            width: 45%;
-            margin: 0 1.5rem 1rem 0;
         }
 
         .screenshot-box {
@@ -260,6 +269,10 @@
                 grid-template-columns: 1fr;
             }
 
+            .intro-grid {
+                grid-template-columns: 1fr;
+            }
+
             .screenshot-link {
                 float: none;
                 width: 100%;
@@ -277,15 +290,16 @@
 
         <section class="section">
             <h2>Welcome to the Raw Layer</h2>
-            <p>Press <strong>9</strong> from the gates and you'll land here - your terminal, in the FlashBoss directory. This is where the game's polished UI ends and the command line takes over.</p>
+            <div class="intro-grid">
+                <p>Press <strong>9</strong> from the gates and you'll land here - your terminal, in the FlashBoss directory. This is where the game's polished UI ends and the command line takes over.</p>
 
-            <a href="index.html?screen=terminal" class="screenshot-link">
-                <div class="screenshot-box">
-                    <img src="images/terminal/03_screenshot.png" alt="FlashBoss Profile Selection - press 9 to exit">
-                    <p class="screenshot-caption">Click to return to the Manual</p>
-                </div>
-            </a>
-
+                <a href="index.html?screen=terminal" class="screenshot-link">
+                    <div class="screenshot-box">
+                        <img src="images/terminal/03_screenshot.png" alt="FlashBoss Profile Selection - press 9 to exit">
+                        <p class="screenshot-caption">Click to return to the Manual</p>
+                    </div>
+                </a>
+            </div>
         </section>
 
         <section class="section">

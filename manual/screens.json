@@ -291,16 +291,19 @@
       "know-your-enemy",
       "spaced-repetition",
       "profile-data",
+      "grimoire",
       "profile-select"
     ],
     "childLabels": {
       "know-your-enemy": "4",
       "spaced-repetition": "5",
       "profile-data": "6",
+      "grimoire": "0",
       "profile-select": "9"
     },
     "childDisplayNames": {
-      "spaced-repetition": "Continue Your Studies"
+      "spaced-repetition": "Continue Your Studies",
+      "grimoire": "Cards Remaining Today (Grimoire)"
     },
     "descriptionHTML": "The Sanctum is your desk in your master's chambers. This is where you conduct your daily studies.\n\n<span class=\"desc-link\" data-target=\"know-your-enemy\">Know Your Enemy</span> allows you to see your word lists, and challenge bosses. <span class=\"desc-link\" data-target=\"spaced-repetition\">Review Cards</span> begins your studies, and <span class=\"desc-link\" data-target=\"profile-data\">Your Records</span> lets you keep track of your progress."
   },
@@ -502,10 +505,11 @@
   "grimoire": {
     "id": "grimoire",
     "title": "The Grimoire",
-    "subheader": "Powerdrive Session",
+    "subheader": "Grimoire Sessions",
     "image": "images/grimoire/grimoire.png",
     "page": "grimoire.html",
     "parents": [
+      "sanctum",
       "spaced-repetition"
     ],
     "children": [
@@ -519,9 +523,9 @@
       "sanctum": "9"
     },
     "childDisplayNames": {
-      "spaced-repetition": "Begin Powerdrive"
+      "spaced-repetition": "Open the Grimoire"
     },
-    "description": "The Grimoire allows extra practice after completing your daily cards. Each Powerdrive session earns you Drive - saved-up days off that protect your streak.\n\nPress 5 to begin a Powerdrive session, 8 for rules, or 9 to return."
+    "description": "The Grimoire allows extra practice after completing your daily cards. Each Grimoire session earns you Drive - saved-up days off that protect your streak.\n\nPress 5 to open the Grimoire, 8 for rules, or 9 to return."
   },
   "grimoire-rules": {
     "id": "grimoire-rules",
@@ -537,6 +541,9 @@
     ],
     "childLabels": {
       "grimoire": "9"
+    },
+    "childDisplayNames": {
+      "grimoire": "Back to the Grimoire"
     },
     "description": "Drive is the mismatch between sanctum time and reality. When you complete a Grimoire session, you pull time forward by a day.\n\nYour Drive equals saved-up days off. If you miss a day, Drive is consumed instead of breaking your streak.\n\nPress 9 to return to the Grimoire."
   },
