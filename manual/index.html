@@ -1049,9 +1049,9 @@
                 const advanceSlide = () => {
                     currentSlide++;
                     if (currentSlide >= totalSlides) {
-                        // End of slideshow - return to sanctum
+                        // End of slideshow - return to configured target or parent
                         window.removeEventListener('keydown', handleSlideshowKey);
-                        currentFocus = 'sanctum';
+                        currentFocus = focus.slideshowEndTarget || focus.parents[0] || 'sanctum';
                         renderScreen();
                     } else {
                         const focusImg = document.getElementById('focusImage');
