@@ -6,7 +6,7 @@
     "image": "screenshots/common/entrance.png",
     "page": null,
     "parents": [
-      "terminal-flashboss"
+      "terminal"
     ],
     "children": [
       "profile-select"
@@ -69,31 +69,44 @@
   "create-username": {
     "id": "create-username",
     "title": "Create Username",
+    "subheader": "What shall we call you?",
     "image": "screenshots/common/create-username.png",
     "parents": [
       "profile-select"
     ],
     "children": [
-      "create-avatar",
-      "profile-select"
+      "profile-select",
+      "create-avatar"
     ],
     "childLabels": {
-      "create-avatar": "\u21b5",
-      "profile-select": "9\u21b5"
+      "profile-select": "9",
+      "create-avatar": "\u21b5"
+    },
+    "childDisplayNames": {
+      "profile-select": "And Enter to cancel"
     },
     "description": "Enter a username for your new hero. This name will appear on your profile and leaderboards.\n\nType your desired name and press Enter to confirm. Press 9 then Enter to cancel."
   },
   "create-avatar": {
     "id": "create-avatar",
     "title": "Create Avatar",
+    "subheader": "Press 1-8 to Select",
     "image": "screenshots/common/create avatar.png",
     "parents": [
       "create-username"
     ],
     "children": [
+      "create-username",
       "create-master"
     ],
-    "description": "Choose an avatar to represent your hero. Pick from a variety of pixel art characters.\n\nUse number keys to select your avatar."
+    "childLabels": {
+      "create-username": "9",
+      "create-master": ""
+    },
+    "childDisplayNames": {
+      "create-master": "Choose Your Avatar to Continue"
+    },
+    "description": "Choose an avatar to represent your hero. Pick from a variety of pixel art characters.\n\nUse number keys 1-8 to select your avatar."
   },
   "create-master": {
     "id": "create-master",
@@ -1211,17 +1224,17 @@
       "profile-select"
     ],
     "children": [
-      "terminal-flashboss",
+      "entrance",
       "terminal-audio",
       "terminal-workshop"
     ],
     "childLabels": {
-      "terminal-flashboss": "./FlashBoss",
+      "entrance": "./FlashBoss",
       "terminal-audio": "./FlashBoss audio",
       "terminal-workshop": "./FlashBoss workshop"
     },
     "childImages": {
-      "terminal-flashboss": "images/terminal/FlashBoss.png",
+      "entrance": "images/terminal/FlashBoss.png",
       "terminal-audio": "images/terminal/FlashBoss audio.png",
       "terminal-workshop": "images/terminal/workshop.png"
     },
@@ -1251,19 +1264,5 @@
     ],
     "children": [],
     "description": "Standalone tools for language learning. Run independently of the main program.\n\nTools: pronounce (Piper TTS Studio), cards (Card Viewer). More coming soon...\n\nWindows: Use backslash (\\) for paths. Commands take the form FlashBoss.exe workshop."
-  },
-  "terminal-flashboss": {
-    "id": "terminal-flashboss",
-    "title": "./FlashBoss",
-    "subheader": "FlashBoss.exe on Windows",
-    "image": "images/terminal/FlashBoss.png",
-    "page": null,
-    "parents": [
-      "terminal"
-    ],
-    "children": [
-      "entrance"
-    ],
-    "description": "Return to FlashBoss. Type ./FlashBoss (or FlashBoss.exe on Windows) to launch the game.\n\nWindows: Use backslash (\\) for paths. Executables don't need ./ prefix - just run FlashBoss.exe directly."
   }
 }
