@@ -1250,7 +1250,14 @@
     "parents": [
       "terminal"
     ],
-    "children": [],
+    "children": [
+      "entrance",
+      "terminal-workshop"
+    ],
+    "childLabels": {
+      "entrance": "./FlashBoss",
+      "terminal-workshop": "./FlashBoss workshop"
+    },
     "description": "TTS engine settings and cache management. Run ./FlashBoss audio to access.\n\nCommands: piper, espeak, reset, cache, cache -de, cache-delete, cache-delete -de, cache-delete --de\n\nWindows: Use backslash (\\) for paths. Commands take the form FlashBoss.exe audio."
   },
   "terminal-workshop": {
@@ -1262,7 +1269,14 @@
     "parents": [
       "terminal"
     ],
-    "children": [],
+    "children": [
+      "entrance",
+      "terminal-audio"
+    ],
+    "childLabels": {
+      "entrance": "./FlashBoss",
+      "terminal-audio": "./FlashBoss audio"
+    },
     "description": "Standalone tools for language learning. Run independently of the main program.\n\nTools: pronounce (Piper TTS Studio), cards (Card Viewer). More coming soon...\n\nWindows: Use backslash (\\) for paths. Commands take the form FlashBoss.exe workshop."
   }
 }
