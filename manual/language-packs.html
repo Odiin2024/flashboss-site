@@ -3,53 +3,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Language Packs - FlashBoss Manual</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Language Packs - FlashBoss</title>
+    <meta name="description" content="FlashBoss language packs and DLC content. German, Esperanto, and more.">
+
     <link rel="icon" type="image/png" href="../icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: url('images/fog.jpeg') center center / cover no-repeat fixed;
+            background-color: #0a0a19;
+            color: #f0e6d3;
+            min-height: 100vh;
+            line-height: 1.6;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.1);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header h1 {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ff66ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .header .tagline {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #7ec8ff;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(126, 200, 255, 0.3);
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Lists */
+        ul {
+            margin: 1rem 0 1rem 1.5rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        li strong {
+            color: #7ec8ff;
+        }
+
+        /* Pack cards */
+        .pack-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .pack-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            padding: 1rem;
+        }
+
+        .pack-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #ff66ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .pack-card p {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+
+        .pack-card .included {
+            display: inline-block;
+            background: rgba(126, 200, 255, 0.2);
+            border: 1px solid rgba(126, 200, 255, 0.4);
+            border-radius: 4px;
+            padding: 0.15rem 0.5rem;
+            font-size: 0.75rem;
+            color: #7ec8ff;
+            margin-top: 0.5rem;
+        }
+
+        .pack-card .dlc {
+            display: inline-block;
+            background: rgba(255, 102, 255, 0.2);
+            border: 1px solid rgba(255, 102, 255, 0.4);
+            border-radius: 4px;
+            padding: 0.15rem 0.5rem;
+            font-size: 0.75rem;
+            color: #ff66ff;
+            margin-top: 0.5rem;
+        }
+
+        /* Info box */
+        .info-box {
+            background: rgba(126, 200, 255, 0.1);
+            border: 1px solid rgba(126, 200, 255, 0.3);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin: 1rem 0;
+        }
+
+        .info-box p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Links */
+        a {
+            color: #7ec8ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            .header h1 {
+                font-size: 3rem;
+            }
+
+            .pack-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <a href="index.html" class="back-link">&larr; Back to Manual</a>
+        <header class="header">
+            <h1>Language Packs</h1>
+            <p class="tagline">DLC content and available languages</p>
+        </header>
 
-        <div class="content">
-            <h2>Language Packs</h2>
-
-            <h3>Included Packs</h3>
+        <section class="section">
+            <h2>Included Packs</h2>
             <p>FlashBoss comes with the following language packs:</p>
-            <ul>
-                <li><strong>German Core:</strong> Essential German vocabulary across 5 tiers with full audio pronunciation</li>
-                <li><strong>Esperanto Core:</strong> Free introductory Esperanto vocabulary</li>
-            </ul>
+            <div class="pack-grid">
+                <div class="pack-card">
+                    <h3>German Core</h3>
+                    <p>Essential German vocabulary across 5 tiers with full audio pronunciation. 1,000 words.</p>
+                    <span class="included">Included</span>
+                </div>
+                <div class="pack-card">
+                    <h3>Esperanto Core</h3>
+                    <p>Introductory Esperanto vocabulary with audio. 1,000 words.</p>
+                    <span class="included">Included</span>
+                </div>
+            </div>
+        </section>
 
-            <h3>DLC Packs</h3>
-            <p>Additional content is available as downloadable content (DLC):</p>
-            <ul>
-                <li><strong>German Pareto 1:</strong> Extended German vocabulary</li>
-                <li><strong>German Pareto 2:</strong> Advanced German vocabulary</li>
-            </ul>
+        <section class="section">
+            <h2>DLC Packs</h2>
+            <p>Additional content available on Steam:</p>
+            <div class="pack-grid">
+                <div class="pack-card">
+                    <h3>German Pareto 1</h3>
+                    <p>Extended German vocabulary. 1,000 additional words.</p>
+                    <span class="dlc">€4.99</span>
+                </div>
+                <div class="pack-card">
+                    <h3>German Pareto 2</h3>
+                    <p>Advanced German vocabulary. 1,000 additional words.</p>
+                    <span class="dlc">€4.99</span>
+                </div>
+                <div class="pack-card">
+                    <h3>Esperanto Pareto 1</h3>
+                    <p>Extended Esperanto vocabulary. 1,000 additional words.</p>
+                    <span class="dlc">€4.99</span>
+                </div>
+                <div class="pack-card">
+                    <h3>Esperanto Pareto 2</h3>
+                    <p>Advanced Esperanto vocabulary. 1,000 additional words.</p>
+                    <span class="dlc">€4.99</span>
+                </div>
+            </div>
+            <div class="info-box">
+                <p>DLC packs are installed through Steam. Once purchased, the content will be automatically available in FlashBoss the next time you launch.</p>
+            </div>
+        </section>
 
-            <h3>Installing DLC</h3>
-            <p>DLC packs are installed through Steam. Once purchased, the content will be automatically available in FlashBoss the next time you launch.</p>
-
-            <h3>Switching Packs</h3>
+        <section class="section">
+            <h2>Switching Packs</h2>
             <p>If you have multiple language packs installed, you can switch between them from the Sanctum menu. Each pack tracks progress independently - switching packs won't affect your progress in other languages.</p>
+        </section>
 
-            <h3>Pack-Specific Progress</h3>
+        <section class="section">
+            <h2>Pack-Specific Progress</h2>
             <p>Your profile stores separate progress for each language pack:</p>
             <ul>
-                <li>Streak counts are per-pack</li>
-                <li>Drive is per-pack</li>
-                <li>Tier progress is per-pack</li>
-                <li>Boss victories are per-pack</li>
+                <li><strong>Streak counts</strong> are per-pack</li>
+                <li><strong>Drive</strong> is per-pack</li>
+                <li><strong>Tier progress</strong> is per-pack</li>
+                <li><strong>Boss victories</strong> are per-pack</li>
             </ul>
             <p>This means you can study multiple languages without them interfering with each other.</p>
+        </section>
 
-            <h3>Future Languages</h3>
-            <p>More language packs are planned for future releases. Check the Steam store page for announcements.</p>
-        </div>
+        <section class="section">
+            <h2>Future Languages</h2>
+            <p>More language packs are planned for future releases. Check the <a href="https://store.steampowered.com/app/4134440/FlashBoss/">Steam store page</a> for announcements.</p>
+        </section>
 
-        <footer>
-            <p><a href="index.html">Back to Manual</a> | <a href="../index.html">FlashBoss Home</a></p>
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="index.html">Manual</a>
+                <a href="../home.html">Hub</a>
+                <a href="https://store.steampowered.com/app/4134440/FlashBoss/">Steam</a>
+                <a href="../index.html">Entrance</a>
+            </div>
         </footer>
     </div>
 </body>

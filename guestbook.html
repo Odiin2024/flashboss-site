@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guestbook - FlashBoss</title>
+    <meta name="description" content="Leave a message in the FlashBoss guestbook. Share your impressions and feedback.">
+
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: url('manual/images/fog.jpeg') center center / cover no-repeat fixed;
+            background-color: #0a0a19;
+            color: #f0e6d3;
+            min-height: 100vh;
+            line-height: 1.6;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.1);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header h1 {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ff66ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .header .tagline {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #7ec8ff;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(126, 200, 255, 0.3);
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Form container */
+        .form-container {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 102, 255, 0.3);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .form-note {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Placeholder for Google Form embed */
+        .form-placeholder {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px dashed rgba(126, 200, 255, 0.3);
+            border-radius: 8px;
+            padding: 3rem 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .form-placeholder p {
+            margin-bottom: 0.5rem;
+        }
+
+        .form-placeholder code {
+            background: rgba(126, 200, 255, 0.2);
+            color: #7ec8ff;
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            font-size: 0.85rem;
+        }
+
+        /* Recent entries section */
+        .entries-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(126, 200, 255, 0.3);
+        }
+
+        .entries-header h2 {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .view-all-link {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .view-all-link:hover {
+            color: #7ec8ff;
+        }
+
+        /* Entry cards */
+        .entry {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+        }
+
+        .entry-name {
+            font-weight: 600;
+            color: #ff66ff;
+        }
+
+        .entry-date {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .entry-message {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.95rem;
+        }
+
+        /* Info box */
+        .info-box {
+            background: rgba(126, 200, 255, 0.1);
+            border: 1px solid rgba(126, 200, 255, 0.3);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin: 1.5rem 0;
+        }
+
+        .info-box p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Links */
+        a {
+            color: #7ec8ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        /* Steam link */
+        .steam-cta {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .steam-btn {
+            display: inline-block;
+            background: rgba(255, 102, 255, 0.2);
+            border: 1px solid rgba(255, 102, 255, 0.5);
+            border-radius: 4px;
+            padding: 0.75rem 1.5rem;
+            color: #ff66ff;
+            font-weight: 500;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .steam-btn:hover {
+            background: rgba(255, 102, 255, 0.3);
+            border-color: #ff66ff;
+            color: #ffffff;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            .header h1 {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Guestbook</h1>
+            <p class="tagline">Leave your mark on the academy walls</p>
+        </header>
+
+        <section class="section">
+            <h2>Sign the Guestbook</h2>
+            <p>Share your thoughts, impressions, or just say hello. All entries are welcome.</p>
+
+            <div class="form-container">
+                <p class="form-note">Your message will appear below after review</p>
+
+                <!-- Replace this placeholder with your Google Form embed -->
+                <div class="form-placeholder">
+                    <p>Google Form embed goes here</p>
+                    <p><code>&lt;iframe src="YOUR_GOOGLE_FORM_URL"&gt;</code></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="entries-header">
+                <h2>Recent Entries</h2>
+                <a href="#" class="view-all-link">View all entries</a>
+            </div>
+
+            <div class="info-box">
+                <p>Entries will appear here once you connect a Google Sheet. You can embed the sheet as a read-only view or manually curate featured messages.</p>
+            </div>
+
+            <!-- Sample entries - replace with actual data or Google Sheets embed -->
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-name">Sample Visitor</span>
+                    <span class="entry-date">Feb 17, 2026</span>
+                </div>
+                <p class="entry-message">This is a sample guestbook entry. Real entries will appear here once you set up the Google Form connection.</p>
+            </div>
+        </section>
+
+        <div class="steam-cta">
+            <p style="margin-bottom: 1rem; color: rgba(255, 255, 255, 0.7);">Enjoying FlashBoss? Leave a review on Steam!</p>
+            <a href="https://store.steampowered.com/app/4134440/FlashBoss/" class="steam-btn">Review on Steam</a>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="manual/">Manual</a>
+                <a href="home.html">Hub</a>
+                <a href="https://store.steampowered.com/app/4134440/FlashBoss/">Steam</a>
+                <a href="index.html">Entrance</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

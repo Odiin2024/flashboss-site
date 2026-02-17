@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiers and Clusters - FlashBoss</title>
+    <meta name="description" content="Understanding FlashBoss's spaced repetition system, tier progression, and cluster architecture.">
+
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: url('manual/images/fog.jpeg') center center / cover no-repeat fixed;
+            background-color: #0a0a19;
+            color: #f0e6d3;
+            min-height: 100vh;
+            line-height: 1.6;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.1);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header h1 {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ff66ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .header .tagline {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(126, 200, 255, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .toc h2 {
+            font-size: 1rem;
+            color: #7ec8ff;
+            margin-bottom: 1rem;
+        }
+
+        .toc ul {
+            list-style: none;
+            margin: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+        }
+
+        .toc a {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .toc a:hover {
+            color: #ff66ff;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #7ec8ff;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(126, 200, 255, 0.3);
+        }
+
+        .section h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #ff66ff;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Definition list */
+        .def-list {
+            margin: 1rem 0;
+        }
+
+        .def-item {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .def-term {
+            font-weight: 600;
+            color: #ff66ff;
+            margin-bottom: 0.25rem;
+        }
+
+        .def-desc {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        /* Hierarchy diagram */
+        .hierarchy {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 102, 255, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+
+        .hierarchy-title {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .hierarchy-chain {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 1.2rem;
+            color: #f0e6d3;
+        }
+
+        .hierarchy-chain .unit {
+            color: #7ec8ff;
+        }
+
+        .hierarchy-chain .arrow {
+            color: rgba(255, 255, 255, 0.4);
+            margin: 0 0.5rem;
+        }
+
+        /* Fibonacci box */
+        .fib-box {
+            background: rgba(126, 200, 255, 0.1);
+            border: 1px solid rgba(126, 200, 255, 0.3);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin: 1rem 0;
+        }
+
+        .fib-sequence {
+            font-family: monospace;
+            font-size: 1.1rem;
+            color: #7ec8ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .fib-note {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-style: italic;
+        }
+
+        /* Lists */
+        ul {
+            margin: 1rem 0 1rem 1.5rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        li strong {
+            color: #7ec8ff;
+        }
+
+        /* Links */
+        a {
+            color: #7ec8ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        .manual-link {
+            color: #ff66ff;
+        }
+
+        .manual-link:hover {
+            color: #ffffff;
+        }
+
+        /* Info callout */
+        .callout {
+            background: rgba(255, 102, 255, 0.1);
+            border-left: 3px solid #ff66ff;
+            padding: 1rem 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .callout p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            .header h1 {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .toc ul {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Tiers and Clusters</h1>
+            <p class="tagline">How FlashBoss organizes your learning</p>
+        </header>
+
+        <nav class="toc">
+            <h2>On This Page</h2>
+            <ul>
+                <li><a href="#architecture">Content Architecture</a></li>
+                <li><a href="#definitions">Definitions</a></li>
+                <li><a href="#srs">Spaced Repetition System</a></li>
+                <li><a href="#fibonacci">The Fibonacci Sequence</a></li>
+                <li><a href="#progression">Progression Flow</a></li>
+                <li><a href="#mastery">Mastery & Boss Fights</a></li>
+            </ul>
+        </nav>
+
+        <section class="section" id="architecture">
+            <h2>Content Architecture</h2>
+            <p>FlashBoss organizes vocabulary into a clear hierarchy. Understanding this structure helps you navigate your learning journey and track progress effectively.</p>
+
+            <div class="hierarchy">
+                <p class="hierarchy-title">From smallest to largest</p>
+                <p class="hierarchy-chain">
+                    <span class="unit">Cluster</span>
+                    <span class="arrow">&rarr;</span>
+                    <span class="unit">Tier</span>
+                    <span class="arrow">&rarr;</span>
+                    <span class="unit">Set</span>
+                    <span class="arrow">&rarr;</span>
+                    <span class="unit">Pack</span>
+                </p>
+            </div>
+
+            <p>Each level contains multiple units of the level below it. A <strong>Pack</strong> contains multiple <strong>Sets</strong>, each Set contains multiple <strong>Tiers</strong>, and each Tier contains multiple <strong>Clusters</strong>.</p>
+        </section>
+
+        <section class="section" id="definitions">
+            <h2>Definitions</h2>
+
+            <div class="def-list">
+                <div class="def-item">
+                    <p class="def-term">Cluster</p>
+                    <p class="def-desc">The most primary unit of the FlashBoss system. A cluster contains between 20-30 flashcards that are related by theme and difficulty. To purge a cluster from your active deck, you need 80% of your cards at mastery (13-day interval or higher) to challenge and defeat the <a href="manual/?screen=bossfight" class="manual-link">cluster boss</a>.</p>
+                </div>
+
+                <div class="def-item">
+                    <p class="def-term">Tier</p>
+                    <p class="def-desc">A collection of clusters at the same difficulty level. Each tier contains multiple clusters that progress in complexity. You unlock tiers by completing all clusters in the previous tier, or by passing the <a href="manual/?screen=tier-skip" class="manual-link">Tier Skip Challenge</a>.</p>
+                </div>
+
+                <div class="def-item">
+                    <p class="def-term">Set</p>
+                    <p class="def-desc">1,000 flashcards comprising 5 tiers. German Core is the first set of the German Pack, which also includes Pareto 1 and Pareto 2 - sets of 1,000 words in their own right. See <a href="manual/language-packs.html" class="manual-link">Language Packs</a> for available content.</p>
+                </div>
+
+                <div class="def-item">
+                    <p class="def-term">Pack</p>
+                    <p class="def-desc">A complete language course representing an entire syllabus. A language pack is comprised of three 1,000-word sets, uniformly named Core, Pareto 1, and Pareto 2. Each pack is a self-contained learning experience for a single language.</p>
+                </div>
+
+                <div class="def-item">
+                    <p class="def-term">Drive</p>
+                    <p class="def-desc">Earn drive by completing bonus sessions with the <a href="manual/?screen=grimoire" class="manual-link">Grimoire</a>. Each successful completion of a grimoire session awards you one unit of drive - or in more human terms, a day off.</p>
+                </div>
+
+                <div class="def-item">
+                    <p class="def-term">Streak</p>
+                    <p class="def-desc">A relaxed approach to consistency. The streak system is heavily impacted by the drive system. A grimoire session covers all cards due the next day in one session. If you're ahead of the average number of study periods per day, you're maintaining your streak.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="srs">
+            <h2>Spaced Repetition System</h2>
+            <p>FlashBoss uses <strong>Spaced Repetition</strong> (SRS) to optimize your memory retention. Instead of reviewing all cards equally, the system shows you cards just before you're likely to forget them.</p>
+
+            <h3>How It Works</h3>
+            <p>Each vocabulary item tracks how well you know it. When you answer correctly, the item's review interval increases. Answer incorrectly, and it comes back sooner. This creates an efficient review schedule that focuses your time where it matters most.</p>
+
+            <div class="callout">
+                <p>The best time to review is when you're about to forget. That's the sweet spot where memory is reinforced most effectively.</p>
+            </div>
+        </section>
+
+        <section class="section" id="fibonacci">
+            <h2>The Fibonacci Sequence</h2>
+            <p>Review intervals in FlashBoss follow the <strong>Fibonacci sequence</strong>, a mathematical pattern found throughout nature. Each interval is the sum of the two before it.</p>
+
+            <div class="fib-box">
+                <p class="fib-sequence">1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89...</p>
+                <p class="fib-note">The intervals increase at a ratio of φ: <strong style="color: #ffb020;">The Golden Ratio</strong></p>
+            </div>
+
+            <h3>Why Fibonacci?</h3>
+            <p>The Fibonacci sequence creates naturally expanding intervals that align with how human memory consolidates information. Early reviews are close together (1 day, 1 day, 2 days), then gradually space out as the memory solidifies (8 days, 13 days, 21 days...).</p>
+
+            <h3>The Rating System</h3>
+            <p>After each flashcard, you rate how well you knew it. Your rating determines the interval for that specific word - higher confidence means longer until you see it again, lower confidence means it comes back sooner.</p>
+            <p>Each word tracks its own interval independently. They filter back to you in the most useful order: words you're struggling with appear more often, while words you know well make space for the ones that need attention.</p>
+
+            <p>The upshot:</p>
+            <ul>
+                <li><strong>New words</strong> get reviewed frequently until they stick</li>
+                <li><strong>Familiar words</strong> gradually require less attention</li>
+                <li><strong>Difficult words</strong> reset to shorter intervals for more practice</li>
+                <li><strong>Mastered words</strong> show up once in a while to keep you fresh</li>
+            </ul>
+        </section>
+
+        <section class="section" id="progression">
+            <h2>Progression Flow</h2>
+            <p>Your journey through FlashBoss follows a structured path with flexibility built in.</p>
+
+            <h3>Standard Progression</h3>
+            <ul>
+                <li>Start at Tier 1, Cluster 1</li>
+                <li>Complete <a href="manual/?screen=lesson-pack-select" class="manual-link">Lessons</a> to learn new vocabulary in each cluster</li>
+                <li>Practice with daily <a href="manual/?screen=sanctum" class="manual-link">reviews</a></li>
+                <li>Defeat the <a href="manual/?screen=bossfight" class="manual-link">Boss</a> to prove cluster mastery</li>
+                <li>Unlock the next cluster</li>
+                <li>Complete all clusters in a tier to unlock the next tier</li>
+            </ul>
+
+            <h3>Accelerated Progression</h3>
+            <p>Already know some vocabulary? The <a href="manual/?screen=tier-skip" class="manual-link">Tier Skip Challenge</a> lets you test out of content. Pass the challenge to skip ahead without grinding through material you've already mastered.</p>
+
+            <div class="callout">
+                <p>The <a href="manual/?screen=sanctum" class="manual-link">Sanctum</a> is your home base. Return here daily to maintain your streak and keep your reviews current.</p>
+            </div>
+        </section>
+
+        <section class="section" id="mastery">
+            <h2>Mastery & Boss Fights</h2>
+            <p>Every cluster culminates in a <a href="manual/?screen=bossfight" class="manual-link">Boss Fight</a>. This isn't just a test - it's a battle that proves you've truly learned the material.</p>
+
+            <h3>Boss Fight Mechanics</h3>
+            <p>In a boss fight, you face vocabulary from the cluster in rapid succession. There's no health bar - instead, you make physical progress across tiles. Answer correctly and move forward one tile. Answer incorrectly and fall back two.</p>
+            <p>The first two tiles are easy, the second two are difficult. To claim victory, you must finish the two most difficult remaining cards in a row. Only by demonstrating consistent recall can you defeat the boss.</p>
+
+            <h3>What Victory Means</h3>
+            <ul>
+                <li><strong>Cluster purged</strong> - The cluster is removed from your active rotation</li>
+                <li><strong>Cards archived</strong> - Vocabulary moves to review mode for further study exercises</li>
+                <li><strong>Combat achievement</strong> - Level up your avatar as you progress</li>
+            </ul>
+
+            <h3>What Defeat Means</h3>
+            <p>Fail the challenge and you're locked out until the next day. When you return, you'll face the same word that defeated you - so make sure you learn it!</p>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="manual/">Manual</a>
+                <a href="home.html">Hub</a>
+                <a href="https://store.steampowered.com/app/4134440/FlashBoss/">Steam</a>
+                <a href="index.html">Entrance</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
