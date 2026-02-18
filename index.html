@@ -446,80 +446,6 @@
             .corner-nav a {
                 font-size: 0.85rem;
             }
-
-            .corner-cta {
-                bottom: 4rem;
-                right: 3rem;
-            }
-
-            .corner-cta .steam-btn {
-                font-size: 1.1rem;
-            }
-        }
-
-        /* ============================================
-           CORNER CTA - Steam button (right side)
-           ============================================ */
-
-        .corner-cta {
-            position: absolute;
-            z-index: 1;
-            bottom: 4rem;
-            right: 2rem;
-            display: none;
-            flex-direction: column;
-            align-items: flex-end;
-            gap: 0.6rem;
-            text-align: right;
-        }
-
-        .corner-cta .steam-btn {
-            display: inline-block;
-            background: rgba(126, 200, 255, 0.15);
-            border: 1px solid rgba(126, 200, 255, 0.6);
-            border-radius: 6px;
-            padding: 1.2rem 2.4rem;
-            color: #7ec8ff;
-            font-weight: 600;
-            font-size: 1.1rem;
-            line-height: 1.4;
-            text-align: center;
-            text-decoration: none;
-            box-shadow: 0 0 8px rgba(126, 200, 255, 0.6), 0 0 15px rgba(126, 200, 255, 0.4);
-            transition: background 0.2s, box-shadow 0.2s, color 0.2s;
-        }
-
-        .corner-cta .steam-btn:hover {
-            background: rgba(126, 200, 255, 0.25);
-            color: #ffffff;
-            box-shadow: 0 0 12px rgba(126, 200, 255, 0.8), 0 0 25px rgba(126, 200, 255, 0.5);
-        }
-
-        /* Show corner-cta in landscape phones */
-        @media (orientation: landscape) and (max-height: 500px) {
-            .corner-cta {
-                display: flex;
-                bottom: 3rem;
-                right: 1.5rem;
-            }
-
-            .corner-cta .steam-btn {
-                font-size: 0.9rem;
-                padding: 0.8rem 1.6rem;
-            }
-        }
-
-        /* Show corner-cta on tablet */
-        @media (min-width: 768px) and (min-height: 500px) {
-            .corner-cta {
-                display: flex;
-                bottom: 3.5rem;
-                right: 2.5rem;
-            }
-
-            .corner-cta .steam-btn {
-                font-size: 1rem;
-            }
         }
     </style>
 </head>
@@ -547,10 +473,6 @@
         <a href="manual/language-packs.html">DLC Content</a>
         <a href="affiliate.html">Affiliate Program</a>
     </nav>
-
-    <div class="corner-cta">
-        <a href="https://store.steampowered.com/app/4134440/FlashBoss/" class="steam-btn">German Core<br>Esperanto Core</a>
-    </div>
 
     <!-- Door button - positioned over castle door -->
     <a href="home.html" class="door-btn" aria-label="Enter">
