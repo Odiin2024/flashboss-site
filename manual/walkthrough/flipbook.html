@@ -132,6 +132,10 @@
             margin-top: 1.5rem;
         }
 
+        .fork-options-3 {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
         .fork-option {
             background: rgba(10, 10, 25, 0.6);
             border: 2px solid var(--grey);
@@ -215,7 +219,8 @@
         }
 
         @media (max-width: 600px) {
-            .fork-options {
+            .fork-options,
+            .fork-options-3 {
                 grid-template-columns: 1fr;
             }
 
@@ -245,7 +250,7 @@
             <p class="hint">Click image or press any key to continue · Press 9 or Esc to skip</p>
         </div>
 
-        <!-- Fork choice -->
+        <!-- Fork choice - Language -->
         <div class="fork-container" id="forkContainer">
             <div class="image-container">
                 <img id="forkImage" src="" alt="">
@@ -259,6 +264,28 @@
                 <div class="fork-option" onclick="choosePath('german')">
                     <h3>German</h3>
                     <p>Follow the German learning path</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fork choice - German Difficulty -->
+        <div class="fork-container" id="difficultyContainer">
+            <div class="image-container">
+                <img id="difficultyImage" src="" alt="">
+            </div>
+            <p class="screen-title">Choose Your Level</p>
+            <div class="fork-options fork-options-3">
+                <div class="fork-option" onclick="choosePath('german-core')">
+                    <h3>Core</h3>
+                    <p>1.2 Numbers & Time</p>
+                </div>
+                <div class="fork-option" onclick="choosePath('german-pareto1')">
+                    <h3>Pareto 1</h3>
+                    <p>7.3 Travel & Accommodation</p>
+                </div>
+                <div class="fork-option" onclick="choosePath('german-pareto2')">
+                    <h3>Pareto 2</h3>
+                    <p>13.7 Social Roles & People</p>
                 </div>
             </div>
         </div>
@@ -302,12 +329,23 @@
             const slides = data[currentBook];
             const slide = slides[currentIndex];
 
-            // Check for fork
-            if (slide.fork) {
+            // Check for language fork
+            if (slide.fork === true) {
                 document.getElementById('slideshow').classList.remove('active');
                 document.getElementById('forkContainer').classList.add('active');
+                document.getElementById('difficultyContainer').classList.remove('active');
                 document.getElementById('endContainer').classList.remove('active');
                 document.getElementById('forkImage').src = slide.image;
+                return;
+            }
+
+            // Check for difficulty fork
+            if (slide.fork === 'difficulty') {
+                document.getElementById('slideshow').classList.remove('active');
+                document.getElementById('forkContainer').classList.remove('active');
+                document.getElementById('difficultyContainer').classList.add('active');
+                document.getElementById('endContainer').classList.remove('active');
+                document.getElementById('difficultyImage').src = slide.image;
                 return;
             }
 
@@ -315,9 +353,10 @@
             if (slide.end) {
                 document.getElementById('slideshow').classList.remove('active');
                 document.getElementById('forkContainer').classList.remove('active');
+                document.getElementById('difficultyContainer').classList.remove('active');
                 document.getElementById('endContainer').classList.add('active');
                 document.getElementById('endImage').src = slide.image;
-                document.getElementById('endTitle').textContent = currentBook.charAt(0).toUpperCase() + currentBook.slice(1) + ' Path Complete';
+                document.getElementById('endTitle').textContent = slide.title || 'Walkthrough Complete';
                 lastPath = currentBook;
                 return;
             }
@@ -325,6 +364,7 @@
             // Normal slide
             document.getElementById('slideshow').classList.add('active');
             document.getElementById('forkContainer').classList.remove('active');
+            document.getElementById('difficultyContainer').classList.remove('active');
             document.getElementById('endContainer').classList.remove('active');
 
             document.getElementById('slideImage').src = slide.image;
@@ -355,8 +395,12 @@
         }
 
         function tryOtherPath() {
-            const other = lastPath === 'esperanto' ? 'german' : 'esperanto';
-            currentBook = other;
+            // If coming from a German difficulty path, go to Esperanto
+            if (lastPath.startsWith('german')) {
+                currentBook = 'esperanto';
+            } else {
+                currentBook = 'german';
+            }
             currentIndex = 0;
             render();
         }
@@ -369,6 +413,7 @@
 
         document.addEventListener('keydown', (e) => {
             const forkActive = document.getElementById('forkContainer').classList.contains('active');
+            const difficultyActive = document.getElementById('difficultyContainer').classList.contains('active');
             const endActive = document.getElementById('endContainer').classList.contains('active');
 
             // Skip to end with 9 or Escape
@@ -381,6 +426,10 @@
             if (forkActive) {
                 if (e.key === '1') choosePath('esperanto');
                 if (e.key === '2') choosePath('german');
+            } else if (difficultyActive) {
+                if (e.key === '1') choosePath('german-core');
+                if (e.key === '2') choosePath('german-pareto1');
+                if (e.key === '3') choosePath('german-pareto2');
             } else if (!endActive) {
                 advance();
             }
