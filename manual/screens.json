@@ -228,8 +228,8 @@
   "create-pack": {
     "id": "create-pack",
     "title": "Choose Language Pack",
-    "subheader": "Click on a Thumbnail for a Tour",
-    "image": "screenshots/common/create-pack.png",
+    "subheader": "Select the thumbnail to try out a session",
+    "image": "images/selection.png",
     "layout": "terminal",
     "parents": [
       "create-master",
@@ -246,22 +246,16 @@
       "gates": "9"
     },
     "childDisplayNames": {
-      "sanctum-eo": "The Sanctum (Esperanto)",
-      "sanctum-de": "The Sanctum (German)"
+      "sanctum-eo": "The Sanctum [All Roads Lead to Rome]",
+      "sanctum-de": "The Sanctum [All Roads Lead to Rome]"
     },
     "childTargets": {
       "sanctum-eo": "sanctum",
       "sanctum-de": "sanctum"
     },
-    "childImages": {
-      "flipbook-esperanto": "walkthrough/unsorted images/11_screenshot.png",
-      "flipbook-german": "walkthrough/unsorted images/55_screenshot.png"
-    },
-    "flipbookLinks": {
-      "esperanto": "walkthrough/flipbook.html?path=esperanto",
-      "german": "walkthrough/flipbook.html?path=german"
-    },
-    "description": "Select your language pack. German Core and Esperanto are included. More packs available as DLC.\n\nWatch a full walkthrough of either path below."
+    "walkthroughThumbnail": "images/selection.png",
+    "walkthroughLink": "walkthrough/select.html",
+    "description": "Select your language pack. German Core and Esperanto Core are included. More packs available as DLC."
   },
   "profile-data": {
     "id": "profile-data",
@@ -466,46 +460,28 @@
   "spaced-repetition": {
     "id": "spaced-repetition",
     "title": "Continue Your Studies",
-    "subheader": "Spaced Repetition",
-    "image": "screenshots/common/spaced-repetition/58_screenshot.png",
-    "layout": "slideshow",
-    "slideshowImages": [
-      "screenshots/common/spaced-repetition/58_screenshot.png",
-      "screenshots/common/spaced-repetition/59_screenshot.png",
-      "screenshots/common/spaced-repetition/60_screenshot.png",
-      "screenshots/common/spaced-repetition/61_screenshot.png",
-      "screenshots/common/spaced-repetition/62_screenshot.png",
-      "screenshots/common/spaced-repetition/63_screenshot.png",
-      "screenshots/common/spaced-repetition/62_screenshot.png",
-      "screenshots/common/spaced-repetition/64_screenshot.png",
-      "screenshots/common/spaced-repetition/01_screenshot.png",
-      "screenshots/common/spaced-repetition/02_screenshot.png",
-      "screenshots/common/spaced-repetition/03_screenshot.png",
-      "screenshots/common/spaced-repetition/04_screenshot.png",
-      "screenshots/common/spaced-repetition/05_screenshot.png",
-      "screenshots/common/spaced-repetition/06_screenshot.png",
-      "screenshots/common/spaced-repetition/07_screenshot.png",
-      "screenshots/common/spaced-repetition/08_screenshot.png",
-      "screenshots/common/spaced-repetition/09_screenshot.png",
-      "screenshots/common/spaced-repetition/10_screenshot.png",
-      "screenshots/common/spaced-repetition/11_screenshot.png",
-      "screenshots/common/spaced-repetition/12_screenshot.png",
-      "screenshots/common/spaced-repetition/13_screenshot.png",
-      "screenshots/common/spaced-repetition/14_screenshot.png"
-    ],
+    "subheader": "Click the image or press 7 to try a session",
+    "image": "images/selection.png",
+    "walkthroughLink": "walkthrough/select.html",
     "parents": [
       "sanctum"
     ],
     "children": [
+      "walkthrough-session",
       "grimoire",
       "sanctum"
     ],
     "childLabels": {
+      "walkthrough-session": "7",
       "grimoire": "0",
-      "sanctum": "*"
+      "sanctum": "9"
     },
     "childDisplayNames": {
+      "walkthrough-session": "Review All Cards",
       "grimoire": "0 Cards Left Today (Grimoire)"
+    },
+    "childExternalLinks": {
+      "walkthrough-session": "walkthrough/select.html"
     },
     "disabledButtons": [
       "\u21b5",

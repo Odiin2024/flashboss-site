@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Path - FlashBoss</title>
+    <link rel="icon" type="image/png" href="../../icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@300;400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-dark: #0a0a19;
+            --moon-cream: #f0e6d3;
+            --magic-pink: #ff66ff;
+            --link-blue: #7ec8ff;
+            --grey: #8a8a8a;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: url('../images/fog.jpeg') center center / cover no-repeat fixed;
+            background-color: var(--bg-dark);
+            color: var(--moon-cream);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--link-blue);
+            font-size: 0.85rem;
+            text-decoration: none;
+            margin-bottom: 1rem;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: #ffffff;
+        }
+
+        .title {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 2rem;
+            color: var(--magic-pink);
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--grey);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Selection screen with game window */
+        .selection-container {
+            position: relative;
+            background: url('../../background.png') center center / cover no-repeat;
+            border: 2px solid rgba(255, 102, 255, 0.3);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .selection-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .language-column {
+            text-align: center;
+        }
+
+        .language-header {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 1.5rem;
+            color: var(--link-blue);
+            margin-bottom: 1.5rem;
+        }
+
+        .pack-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .pack-btn {
+            background: rgba(10, 10, 25, 0.8);
+            border: 1px solid rgba(126, 200, 255, 0.4);
+            border-radius: 6px;
+            padding: 1rem 1.5rem;
+            color: var(--moon-cream);
+            font-size: 0.95rem;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.2s, border-color 0.2s, transform 0.2s;
+        }
+
+        .pack-btn:hover {
+            background: rgba(126, 200, 255, 0.15);
+            border-color: var(--link-blue);
+            transform: translateY(-2px);
+        }
+
+        .pack-btn .pack-name {
+            font-weight: 600;
+            color: var(--link-blue);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .pack-btn .pack-cluster {
+            font-size: 0.8rem;
+            color: var(--grey);
+        }
+
+        /* Divider */
+        .column-divider {
+            position: absolute;
+            top: 2rem;
+            bottom: 2rem;
+            left: 50%;
+            width: 1px;
+            background: rgba(255, 102, 255, 0.3);
+        }
+
+        /* Slideshow mode */
+        .slideshow-container {
+            display: none;
+        }
+
+        .slideshow-container.active {
+            display: block;
+        }
+
+        .selection-container.hidden {
+            display: none;
+        }
+
+        .image-container {
+            position: relative;
+            background: url('../../background.png') center center / cover no-repeat;
+            border: 2px solid rgba(255, 102, 255, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .image-container:hover {
+            border-color: var(--magic-pink);
+            box-shadow: 0 0 20px rgba(255, 102, 255, 0.3);
+        }
+
+        .image-container img {
+            max-width: 100%;
+            max-height: 65vh;
+            border-radius: 4px;
+        }
+
+        .key-badge {
+            position: absolute;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            background: rgba(10, 10, 25, 0.9);
+            border: 2px solid var(--magic-pink);
+            border-radius: 6px;
+            padding: 0.5rem 1rem;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.7rem;
+            color: var(--magic-pink);
+            box-shadow: 0 0 15px rgba(255, 102, 255, 0.4);
+        }
+
+        .key-badge::before {
+            content: 'Press ';
+            color: var(--grey);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.7rem;
+        }
+
+        .screen-title {
+            font-size: 1.1rem;
+            color: var(--moon-cream);
+            margin-bottom: 0.5rem;
+        }
+
+        .progress {
+            font-size: 0.8rem;
+            color: var(--grey);
+            margin-bottom: 1rem;
+        }
+
+        .hint {
+            font-size: 0.8rem;
+            color: var(--grey);
+            font-style: italic;
+        }
+
+        /* End screen */
+        .end-container {
+            display: none;
+        }
+
+        .end-container.active {
+            display: block;
+        }
+
+        .end-options {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        .end-btn {
+            background: rgba(10, 10, 25, 0.6);
+            border: 1px solid var(--link-blue);
+            border-radius: 4px;
+            padding: 0.75rem 1.5rem;
+            color: var(--link-blue);
+            font-size: 0.9rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+
+        .end-btn:hover {
+            background: rgba(126, 200, 255, 0.15);
+            box-shadow: 0 0 10px rgba(126, 200, 255, 0.3);
+        }
+
+        @media (max-width: 600px) {
+            .selection-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .column-divider {
+                display: none;
+            }
+
+            .key-badge {
+                bottom: 0.75rem;
+                right: 0.75rem;
+                padding: 0.4rem 0.75rem;
+                font-size: 0.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Manual</a>
+        <h1 class="title">Select Your Path</h1>
+        <p class="subtitle">Choose a language pack and cluster to explore</p>
+
+        <!-- Selection screen -->
+        <div class="selection-container" id="selectionContainer">
+            <div class="column-divider"></div>
+            <div class="selection-grid">
+                <div class="language-column">
+                    <h2 class="language-header">Esperanto</h2>
+                    <div class="pack-buttons">
+                        <a class="pack-btn" onclick="startPath('esperanto')">
+                            <span class="pack-name">Core</span>
+                            <span class="pack-cluster">1.2 Numbers & Time</span>
+                        </a>
+                        <a class="pack-btn" onclick="startPath('esperanto')">
+                            <span class="pack-name">Pareto 1</span>
+                            <span class="pack-cluster">7.3 Travel & Accommodation</span>
+                        </a>
+                        <a class="pack-btn" onclick="startPath('esperanto')">
+                            <span class="pack-name">Pareto 2</span>
+                            <span class="pack-cluster">13.7 Social Roles & People</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="language-column">
+                    <h2 class="language-header">German</h2>
+                    <div class="pack-buttons">
+                        <a class="pack-btn" onclick="startPath('german-core')">
+                            <span class="pack-name">Core</span>
+                            <span class="pack-cluster">1.2 Numbers & Time</span>
+                        </a>
+                        <a class="pack-btn" onclick="startPath('german-pareto1')">
+                            <span class="pack-name">Pareto 1</span>
+                            <span class="pack-cluster">7.3 Travel & Accommodation</span>
+                        </a>
+                        <a class="pack-btn" onclick="startPath('german-pareto2')">
+                            <span class="pack-name">Pareto 2</span>
+                            <span class="pack-cluster">13.7 Social Roles & People</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slideshow view -->
+        <div class="slideshow-container" id="slideshowContainer">
+            <div class="image-container" id="imageContainer" onclick="advance()">
+                <img id="slideImage" src="" alt="">
+                <div class="key-badge" id="keyBadge"></div>
+            </div>
+            <p class="screen-title" id="screenTitle"></p>
+            <p class="progress" id="progress"></p>
+            <p class="hint">Click image or press any key to continue</p>
+        </div>
+
+        <!-- End screen -->
+        <div class="end-container" id="endContainer">
+            <div class="image-container">
+                <img id="endImage" src="" alt="">
+            </div>
+            <p class="screen-title" id="endTitle">Session Complete</p>
+            <div class="end-options">
+                <a href="select.html" class="end-btn">Try Another</a>
+                <a href="../index.html?screen=sanctum" class="end-btn">Back to Sanctum</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const paths = {
+            "esperanto": [
+                {"image": "images/esperanto/01_screenshot.png", "key": "*", "title": "Esperanto Path"},
+                {"image": "images/esperanto/02_screenshot.png", "key": "*", "title": "Esperanto Path"},
+                {"image": "images/esperanto/03_screenshot.png", "key": "*", "title": "Esperanto Path"},
+                {"image": "images/esperanto/04_screenshot.png", "key": "*", "title": "Esperanto Path"},
+                {"image": "images/esperanto/05_screenshot.png", "key": "*", "title": "Esperanto Path"},
+                {"image": "images/esperanto/06_screenshot.png", "key": "*", "title": "Esperanto Path"},
+                {"image": "images/esperanto/07_screenshot.png", "key": "*", "title": "Esperanto Path"},
+                {"image": "images/esperanto/08_screenshot.png", "key": "*", "title": "Esperanto Path"},
+                {"image": "images/esperanto/09_screenshot.png", "key": "*", "title": "Esperanto Path"},
+                {"image": "images/esperanto/10_screenshot.png", "key": "*", "title": "Esperanto Path"},
+                {"image": "images/esperanto/11_screenshot.png", "key": "*", "title": "Esperanto Path"},
+                {"image": "images/esperanto/12_screenshot.png", "key": "*", "title": "Esperanto Path"},
+                {"image": "images/esperanto/13_screenshot.png", "key": "*", "title": "Esperanto Path"},
+                {"image": "images/esperanto/14_screenshot.png", "key": "*", "title": "Esperanto Path"},
+                {"image": "images/esperanto/15_screenshot.png", "key": "*", "title": "Esperanto Path"},
+                {"image": "images/esperanto/16_screenshot.png", "key": "*", "title": "Esperanto Path"},
+                {"image": "images/esperanto/17_screenshot.png", "key": "*", "title": "Esperanto Path"},
+                {"image": "images/esperanto/18_screenshot.png", "key": "*", "title": "Esperanto Path"},
+                {"image": "images/esperanto/19_screenshot.png", "key": "*", "title": "Esperanto Path"},
+                {"image": "images/esperanto/20_screenshot.png", "key": "*", "title": "Esperanto Path"},
+                {"image": "images/esperanto/21_screenshot.png", "key": "*", "title": "Esperanto Path"},
+                {"image": "images/esperanto/22_screenshot.png", "key": null, "title": "Session Complete", "end": true}
+            ],
+            "german-core": [
+                {"image": "german/promoDE1.2/03_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/04_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/05_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/06_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/07_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/08_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/09_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/10_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/11_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/12_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/13_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/14_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/15_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/16_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/17_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/18_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/19_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/20_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/21_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/22_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/23_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/24_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/25_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/26_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/27_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/28_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
+                {"image": "german/promoDE1.2/29_screenshot.png", "key": null, "title": "Session Complete", "end": true}
+            ],
+            "german-pareto1": [
+                {"image": "german/promoDE7.3/30_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/31_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/32_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/33_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/34_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/35_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/36_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/37_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/38_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/39_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/40_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/41_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/42_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/43_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/44_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/45_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/46_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/47_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/48_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/49_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/50_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/51_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/52_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/53_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/54_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/55_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/56_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/57_screenshot.png", "key": "*", "title": "Pareto 1 — 7.3 Travel & Accommodation"},
+                {"image": "german/promoDE7.3/58_screenshot.png", "key": null, "title": "Session Complete", "end": true}
+            ],
+            "german-pareto2": [
+                {"image": "german/promoDE13.7/59_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/60_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/61_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/62_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/63_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/64_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/65_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/66_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/67_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/68_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/69_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/70_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/71_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/72_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/73_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/74_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/75_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/76_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/77_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/78_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/79_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/80_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/81_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/82_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/83_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/84_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/85_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/86_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/87_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/88_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/89_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/90_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/91_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/92_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/93_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/94_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/95_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/96_screenshot.png", "key": "*", "title": "Pareto 2 — 13.7 Social Roles & People"},
+                {"image": "german/promoDE13.7/97_screenshot.png", "key": null, "title": "Session Complete", "end": true}
+            ]
+        };
+
+        let currentPath = null;
+        let currentIndex = 0;
+
+        function startPath(pathName) {
+            currentPath = pathName;
+            currentIndex = 0;
+            document.getElementById('selectionContainer').classList.add('hidden');
+            document.getElementById('slideshowContainer').classList.add('active');
+            render();
+        }
+
+        function render() {
+            const slides = paths[currentPath];
+            const slide = slides[currentIndex];
+
+            // Check for end
+            if (slide.end) {
+                document.getElementById('slideshowContainer').classList.remove('active');
+                document.getElementById('endContainer').classList.add('active');
+                document.getElementById('endImage').src = slide.image;
+                document.getElementById('endTitle').textContent = slide.title;
+                return;
+            }
+
+            document.getElementById('slideImage').src = slide.image;
+            document.getElementById('screenTitle').textContent = slide.title;
+            document.getElementById('progress').textContent = `${currentIndex + 1} / ${slides.length}`;
+
+            const keyBadge = document.getElementById('keyBadge');
+            if (slide.key) {
+                keyBadge.textContent = slide.key;
+                keyBadge.style.display = 'block';
+            } else {
+                keyBadge.style.display = 'none';
+            }
+        }
+
+        function advance() {
+            const slides = paths[currentPath];
+            if (currentIndex < slides.length - 1) {
+                currentIndex++;
+                render();
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            const slideshowActive = document.getElementById('slideshowContainer').classList.contains('active');
+            const endActive = document.getElementById('endContainer').classList.contains('active');
+
+            if (slideshowActive && !endActive) {
+                advance();
+            }
+        });
+    </script>
+</body>
+</html>

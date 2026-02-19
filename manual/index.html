@@ -889,8 +889,11 @@
                 focusImage.style.display = 'none';
             }
 
-            // Image link - goes to dedicated page
-            if (focus.page) {
+            // Image link - goes to dedicated page or walkthrough
+            if (focus.walkthroughLink) {
+                focusLink.href = focus.walkthroughLink;
+                focusLink.onclick = null;
+            } else if (focus.page) {
                 focusLink.href = focus.page;
                 focusLink.onclick = null;
             } else {
@@ -900,7 +903,9 @@
 
             // Left footer - update based on whether page exists
             const leftFooter = document.getElementById('leftFooter');
-            if (focus.page) {
+            if (focus.walkthroughLink) {
+                leftFooter.textContent = 'Click image to try a session';
+            } else if (focus.page) {
                 leftFooter.textContent = 'Click image for more information';
             } else {
                 leftFooter.textContent = '';
@@ -971,8 +976,17 @@
                 terminalGrid.innerHTML = '';
                 terminalGrid.classList.remove('hidden');
 
-                // Check for flipbook thumbnails first
-                if (focus.flipbookLinks) {
+                // Check for single walkthrough thumbnail (new style)
+                if (focus.walkthroughThumbnail && focus.walkthroughLink) {
+                    terminalGrid.style.justifyContent = 'center';
+                    const thumb = document.createElement('a');
+                    thumb.className = 'terminal-thumb';
+                    thumb.href = focus.walkthroughLink;
+                    thumb.innerHTML = `<img src="${focus.walkthroughThumbnail}" alt="Try a session">`;
+                    terminalGrid.appendChild(thumb);
+                }
+                // Check for flipbook thumbnails (old style)
+                else if (focus.flipbookLinks) {
                     // Render flipbook thumbnails that link to walkthrough
                     const flipbookKeys = Object.keys(focus.flipbookLinks);
                     flipbookKeys.forEach(key => {
@@ -1181,10 +1195,17 @@
                                 <span class="child-num${isBackBtn ? ' back-btn' : ''}">${displayNum}</span>
                                 <span class="child-title">${displayName}</span>
                             `;
-                            item.onclick = () => {
-                                currentFocus = targetId;
-                                renderScreen();
-                            };
+                            // Check for external link
+                            const externalLink = focus.childExternalLinks && focus.childExternalLinks[childId];
+                            if (externalLink) {
+                                item.href = externalLink;
+                                item.onclick = null;
+                            } else {
+                                item.onclick = () => {
+                                    currentFocus = targetId;
+                                    renderScreen();
+                                };
+                            }
                             // Reverse hover - highlight desc-links and terminal thumbs when hovering nav
                             item.onmouseenter = () => {
                                 item.classList.add('glow');
