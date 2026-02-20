@@ -5,20 +5,22 @@
     "subheader": "Choose an Option to Progress",
     "image": "screenshots/common/entrance.png",
     "page": null,
-    "parents": [
-      "terminal"
-    ],
+    "parents": [],
     "children": [
       "profile-select"
     ],
     "childLabels": {
       "profile-select": "*"
     },
-    "description": "The FlashBoss manual is built to mirror the game itself, with information pertaining to playing the game, and also with a link for more information. This page doesn't need such a link, as there isn't a lot to tell.\n\nClick the blue parent buttons to go back, or choose a magenta option to go forward. Every screen in the game has a page here. Explore at your own pace."
+    "childDisplayNames": {
+      "profile-select": "Press any key to continue"
+    },
+    "description": "The FlashBoss manual is built to mirror the game itself, with information pertaining to playing the game, and also with a link for more information.\n\nClick the blue parent buttons to go back, or choose a magenta option to go forward. Every screen in the game has a page here. Explore at your own pace."
   },
   "profile-select": {
     "id": "profile-select",
     "title": "Profile Selection",
+    "subheader": "System Menu",
     "image": "screenshots/common/profile-select.png",
     "parents": [
       "entrance"
@@ -32,17 +34,20 @@
     ],
     "childLabels": {
       "create-username": "1",
-      "gates": "2-5",
+      "gates": "N",
       "vault": "6",
       "about-1": "8",
       "terminal": "9"
+    },
+    "childDisplayNames": {
+      "gates": "Select Profile"
     },
     "description": "FlashBoss supports up to 5 user profiles. Each slot shows the user's avatar, name, and chosen master.\n\nEmpty slots display \"Create New Hero\" - selecting one begins character creation. Selecting an existing profile enters the Gates."
   },
   "gates": {
     "id": "gates",
     "title": "The Gates",
-    "subheader": "Welcome back to FlashBoss",
+    "subheader": "Entering the Academy",
     "image": "screenshots/common/gates.png",
     "parents": [
       "profile-select"
@@ -64,7 +69,7 @@
     "childDisplayNames": {
       "review-gates": "Review Modes"
     },
-    "description": "Each day you enter the academy, your master meets you at the gates. What are you here for today?\n\nHave you come to study your flashcards, or are you looking to go to another class? If you would like to take a level placement test, you can prove your knowledge and skip tiers with the Tier Skip Challenge, Option 8."
+    "description": "Each day you return, your master meets you at the gates.\n\nHave you come to study your flashcards, or are you looking to go to another class? If you would like to take a level placement test, you can prove your knowledge and skip tiers with the Tier Skip Challenge."
   },
   "create-username": {
     "id": "create-username",
@@ -319,7 +324,7 @@
   "know-your-enemy": {
     "id": "know-your-enemy",
     "title": "Know Your Enemy",
-    "subheader": "Cluster Selection",
+    "subheader": "View Your Clusters",
     "image": "images/bossfight/19_screenshot.png",
     "parents": [
       "sanctum"
@@ -335,12 +340,12 @@
     "childDisplayNames": {
       "cluster-select": "Select Cluster"
     },
-    "description": "The left column numbers are assigned keys in FlashBoss. Press the corresponding number to select a cluster.\n\nPress 1 to select a cluster, or 9 to return to the Sanctum."
+    "description": "The know your enemy page is your access to the information about the clusters in your current tier, and your progress through them. Choosing a cluster will allow you to access the word lists, and if you're ready, to fight!"
   },
   "cluster-select": {
     "id": "cluster-select",
-    "title": "Cluster Selection",
-    "subheader": "Choose Your Target",
+    "title": "Boss Fight Ready",
+    "subheader": "When You Choose",
     "image": "images/bossfight/20_screenshot.png",
     "parents": [
       "know-your-enemy"
@@ -356,42 +361,55 @@
     "childDisplayNames": {
       "cluster-detail": "View Cluster"
     },
-    "description": "View the selected cluster details and prepare for battle.\n\nPress 4 to view the cluster, or 9 to go back."
+    "description": "Had you selected a cluster in the game that was not ready for battle, you would have bypassed this screen. Press 4 to see where you would usually go.\n\nIf you are defeated in battle, you will be locked out of this bossfight until tomorrow."
   },
   "cluster-detail": {
     "id": "cluster-detail",
     "title": "Classroom Awakens",
-    "subheader": "Cluster Detail",
+    "subheader": "Wordlist",
     "image": "images/bossfight/21_screenshot.png",
-    "layout": "gallery",
-    "galleryImages": [
-      "images/bossfight/21_screenshot.png",
-      "images/bossfight/22_screenshot.png"
-    ],
     "parents": [
       "cluster-select"
     ],
     "children": [
       "boss-fight",
-      "cluster-detail-toggle",
+      "cluster-detail-2",
       "know-your-enemy"
     ],
     "childLabels": {
       "boss-fight": "5",
-      "cluster-detail-toggle": "8",
+      "cluster-detail-2": "8",
       "know-your-enemy": "9"
     },
     "childDisplayNames": {
       "boss-fight": "Fight",
-      "cluster-detail-toggle": "Toggle View"
+      "cluster-detail-2": "Toggle View"
     },
-    "disabledButtons": [
-      "6"
+    "description": "All imported clusters are available for inspection at any time in the program. The wordlists toggle between languages for quick reference.\n\nRedactions are present on clusters ready to fight. We wouldn't want you peeking."
+  },
+  "cluster-detail-2": {
+    "id": "cluster-detail-2",
+    "title": "Classroom Awakens",
+    "subheader": "Wordlist",
+    "image": "images/bossfight/22_screenshot.png",
+    "parents": [
+      "cluster-select"
     ],
-    "disabledTooltips": {
-      "6": "Next Screen"
+    "children": [
+      "boss-fight",
+      "cluster-detail",
+      "know-your-enemy"
+    ],
+    "childLabels": {
+      "boss-fight": "5",
+      "cluster-detail": "8",
+      "know-your-enemy": "9"
     },
-    "description": "Review the cluster vocabulary before challenging the boss.\n\nPress 5 to Fight, 8 to toggle view, or 9 to return."
+    "childDisplayNames": {
+      "boss-fight": "Fight",
+      "cluster-detail": "Toggle View"
+    },
+    "description": "All imported clusters are available for inspection at any time in the program. The wordlists toggle between languages for quick reference.\n\nRedactions are present on clusters ready to fight. We wouldn't want you peeking."
   },
   "boss-fight": {
     "id": "boss-fight",
