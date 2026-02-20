@@ -340,7 +340,11 @@
             min-width: 1.5rem;
             line-height: 1.4;
             white-space: pre-line;
-            transition: text-shadow 0.2s;
+            transition: text-shadow 0.2s, border-color 0.2s;
+            border: 1px solid #ff66ff;
+            border-radius: 3px;
+            padding: 0.25rem 0.4rem;
+            text-align: center;
         }
 
         .child-num:empty {
@@ -353,6 +357,7 @@
 
         .child-num.back-btn {
             color: #7ec8ff;
+            border-color: #7ec8ff;
         }
 
         .nav-child:hover .child-num.back-btn {
@@ -737,7 +742,9 @@
                     </a>
                 </div>
                 <div class="left-footer" id="leftFooter">
-                    Click image for more information
+                    <a href="index.html" class="footer-link">Manual Home</a>
+                    <span class="footer-divider">·</span>
+                    <a href="index.html?screen=boss-fight" class="footer-link">BossFight</a>
                 </div>
             </div>
 

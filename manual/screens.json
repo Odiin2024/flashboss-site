@@ -340,12 +340,12 @@
     "childDisplayNames": {
       "cluster-select": "Select Cluster"
     },
-    "description": "The know your enemy page is your access to the information about the clusters in your current tier, and your progress through them. Choosing a cluster will allow you to access the word lists, and if you're ready, to fight!"
+    "description": "The know your enemy page is your access to the information about the clusters in your current tier, and your progress through them. Choosing a cluster will allow you to access the word lists, and if you're ready, to fight!\n\nAll clusters may be selected in true gameplay. If there are more than 8 clusters, you will be able to navigate between pages."
   },
   "cluster-select": {
     "id": "cluster-select",
     "title": "Boss Fight Ready",
-    "subheader": "When You Choose",
+    "subheader": "Are You Ready?",
     "image": "images/bossfight/20_screenshot.png",
     "parents": [
       "know-your-enemy"
@@ -364,12 +364,12 @@
       "cluster-detail": "View Cluster",
       "boss-fight": "Fight"
     },
-    "description": "Had you selected a cluster in the game that was not ready for battle, you would have bypassed this screen. Press 4 to see where you would usually go.\n\nIf you are defeated in battle, you will be locked out of this bossfight until tomorrow."
+    "description": "This is your chance to put mastered content behind you. Choose the bossfight. Victory will purge the cards from your active deck. Defeat will lock you out of the bossfight until tomorrow.\n\nHad you have selected a cluster in training, or one that was mastered, you would have bypassed this screen and viewed the cluster list directly. Press 4 to go there now."
   },
   "cluster-detail": {
     "id": "cluster-detail",
     "title": "Classroom Awakens",
-    "subheader": "Wordlist",
+    "subheader": "Your Selected Cluster",
     "image": "images/bossfight/21_screenshot.png",
     "parents": [
       "cluster-select"
@@ -388,12 +388,12 @@
       "boss-fight": "Fight",
       "cluster-detail-2": "Toggle View"
     },
-    "description": "All imported clusters are available for inspection at any time in the program. The wordlists toggle between languages for quick reference.\n\nRedactions are present on clusters ready to fight. We wouldn't want you peeking."
+    "description": "All imported clusters are available for inspection at any time in the program. The wordlist toggles between languages for quick reference.\n\nWhen a cluster is ready for battle, the user's most challenging 4 words are hidden to prevent pretest cramming. Sorry."
   },
   "cluster-detail-2": {
     "id": "cluster-detail-2",
     "title": "Classroom Awakens",
-    "subheader": "Wordlist",
+    "subheader": "Your Selected Cluster",
     "image": "images/bossfight/22_screenshot.png",
     "parents": [
       "cluster-select"
@@ -412,7 +412,7 @@
       "boss-fight": "Fight",
       "cluster-detail": "Toggle View"
     },
-    "description": "All imported clusters are available for inspection at any time in the program. The wordlists toggle between languages for quick reference.\n\nRedactions are present on clusters ready to fight. We wouldn't want you peeking."
+    "description": "All imported clusters are available for inspection at any time in the program. The wordlist toggles between languages for quick reference.\n\nWhen a cluster is ready for battle, the user's most challenging 4 words are hidden to prevent pretest cramming. Sorry."
   },
   "boss-fight": {
     "id": "boss-fight",
