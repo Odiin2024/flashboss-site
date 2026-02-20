@@ -352,14 +352,17 @@
     ],
     "children": [
       "cluster-detail",
+      "boss-fight",
       "know-your-enemy"
     ],
     "childLabels": {
       "cluster-detail": "4",
+      "boss-fight": "5",
       "know-your-enemy": "9"
     },
     "childDisplayNames": {
-      "cluster-detail": "View Cluster"
+      "cluster-detail": "View Cluster",
+      "boss-fight": "Fight"
     },
     "description": "Had you selected a cluster in the game that was not ready for battle, you would have bypassed this screen. Press 4 to see where you would usually go.\n\nIf you are defeated in battle, you will be locked out of this bossfight until tomorrow."
   },
@@ -414,19 +417,34 @@
   "boss-fight": {
     "id": "boss-fight",
     "title": "Boss Fight",
-    "subheader": "Schatz",
+    "subheader": "The Prestige",
     "image": "images/bossfight/Schatz.gif",
     "layout": "gif",
     "parents": [
-      "cluster-detail"
+      "cluster-detail",
+      "cluster-select"
     ],
     "children": [
-      "cluster-detail"
+      "boss-victory",
+      "boss-defeat",
+      "boss-surrender"
     ],
     "childLabels": {
-      "cluster-detail": "9"
+      "boss-victory": "",
+      "boss-defeat": "",
+      "boss-surrender": ""
     },
-    "description": "The boss fight begins! Click to play the animation.\n\nPress 9 to return."
+    "childDisplayNames": {
+      "boss-victory": "Victory",
+      "boss-defeat": "Defeat",
+      "boss-surrender": "Surrender"
+    },
+    "childTargets": {
+      "boss-victory": "sanctum",
+      "boss-defeat": "sanctum",
+      "boss-surrender": "sanctum"
+    },
+    "description": "Before you may pass, you must defeat the challenge. The platform has 4 steps. Easy Easy Hard Hard. Complete each step to progress, but a false move will push you back 2 spaces!"
   },
   "kye-page2": {
     "id": "kye-page2",

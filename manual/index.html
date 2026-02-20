@@ -1205,10 +1205,12 @@
 
                     // Render grouped children
                     Object.keys(childGroups).sort((a, b) => {
-                        // Sort numerically, with * first
+                        // Sort numerically, with * first, N sorts as 2
                         if (a === '*') return -1;
                         if (b === '*') return 1;
-                        return parseInt(a) - parseInt(b);
+                        const aNum = a === 'N' ? 2 : parseInt(a);
+                        const bNum = b === 'N' ? 2 : parseInt(b);
+                        return aNum - bNum;
                     }).forEach(menuNum => {
                         const group = childGroups[menuNum];
 
