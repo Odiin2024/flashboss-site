@@ -417,13 +417,10 @@
   "boss-fight": {
     "id": "boss-fight",
     "title": "Boss Fight",
-    "subheader": "the prestige",
+    "subheader": "The Testing Function",
     "image": "images/bossfight/Schatz.gif",
     "layout": "gif",
-    "parents": [
-      "cluster-detail",
-      "cluster-select"
-    ],
+    "parents": [],
     "children": [
       "boss-victory",
       "boss-defeat",
@@ -442,7 +439,7 @@
     "childColors": {
       "boss-victory": "magenta",
       "boss-defeat": "magenta",
-      "boss-surrender": "blue"
+      "boss-surrender": "magenta"
     },
     "childTargets": {
       "boss-victory": "sanctum",
