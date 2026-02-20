@@ -460,7 +460,7 @@
   "spaced-repetition": {
     "id": "spaced-repetition",
     "title": "Continue Your Studies",
-    "subheader": "Click the image or press 7 to try a session",
+    "subheader": "Try Out a Cluster",
     "image": "images/selection.png",
     "walkthroughLink": "walkthrough/select.html",
     "parents": [
@@ -472,26 +472,18 @@
       "sanctum"
     ],
     "childLabels": {
-      "walkthrough-session": "7",
+      "walkthrough-session": "8",
       "grimoire": "0",
       "sanctum": "9"
     },
     "childDisplayNames": {
-      "walkthrough-session": "Review All Cards",
+      "walkthrough-session": "Cluster Training Mode",
       "grimoire": "0 Cards Left Today (Grimoire)"
     },
     "childExternalLinks": {
       "walkthrough-session": "walkthrough/select.html"
     },
-    "disabledButtons": [
-      "\u21b5",
-      "6"
-    ],
-    "disabledTooltips": {
-      "\u21b5": "Repeat Word (audio disabled)",
-      "6": "Repeat Sentence (audio disabled)"
-    },
-    "description": "Your daily flashcard practice. Rate each card 0-5 based on how well you remember it.\n\nPress * to advance. Enter repeats the word, 6 repeats the sentence."
+    "description": "On a regular day, your due cards will not exceed your streak requirement until your streak is completed. You can come in and out of the session as many times as you want throughout the day until it's finished. At that point, your remaining due cards become available. These are optional. This is not a true session, it is an example cluster.\n\nWhen you have completed all due cards for the day, you are offered additional study. All cards must be completed in one attempt for the spell to work correctly."
   },
   "grimoire": {
     "id": "grimoire",
@@ -503,19 +495,22 @@
       "spaced-repetition"
     ],
     "children": [
-      "spaced-repetition",
+      "grimoire-session",
       "grimoire-rules",
       "sanctum"
     ],
     "childLabels": {
-      "spaced-repetition": "5",
+      "grimoire-session": "5",
       "grimoire-rules": "8",
       "sanctum": "9"
     },
     "childDisplayNames": {
-      "spaced-repetition": "Open the Grimoire"
+      "grimoire-session": "Open the Grimoire"
     },
-    "description": "The Grimoire allows extra practice after completing your daily cards. Each Grimoire session earns you Drive - saved-up days off that protect your streak.\n\nPress 5 to open the Grimoire, 8 for rules, or 9 to return."
+    "childExternalLinks": {
+      "grimoire-session": "walkthrough/select.html"
+    },
+    "description": "The Grimoire allows extra practice after completing your daily cards. Each Grimoire session earns you Drive - saved-up days off that protect your streak."
   },
   "grimoire-rules": {
     "id": "grimoire-rules",

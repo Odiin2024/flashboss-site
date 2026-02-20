@@ -37,35 +37,9 @@
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 1200px;
             width: 100%;
             text-align: center;
-        }
-
-        .back-link {
-            display: inline-block;
-            color: var(--link-blue);
-            font-size: 0.85rem;
-            text-decoration: none;
-            margin-bottom: 1rem;
-            transition: color 0.2s;
-        }
-
-        .back-link:hover {
-            color: #ffffff;
-        }
-
-        .title {
-            font-family: 'Fredoka', sans-serif;
-            font-size: 2rem;
-            color: var(--magic-pink);
-            margin-bottom: 0.5rem;
-        }
-
-        .subtitle {
-            color: var(--grey);
-            font-size: 0.9rem;
-            margin-bottom: 2rem;
         }
 
         /* Selection screen with game window */
@@ -74,14 +48,15 @@
             background: url('../../background.png') center center / cover no-repeat;
             border: 2px solid rgba(255, 102, 255, 0.3);
             border-radius: 8px;
-            padding: 2rem;
+            padding: 1.5rem;
             margin-bottom: 1.5rem;
         }
 
         .selection-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
+            grid-template-columns: auto 1fr auto;
+            gap: 1.5rem;
+            align-items: center;
         }
 
         .language-column {
@@ -90,9 +65,22 @@
 
         .language-header {
             font-family: 'Fredoka', sans-serif;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             color: var(--link-blue);
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .center-image {
+            max-width: 100%;
+            max-height: 70vh;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .center-image:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(255, 102, 255, 0.4);
         }
 
         .pack-buttons {
@@ -129,16 +117,6 @@
         .pack-btn .pack-cluster {
             font-size: 0.8rem;
             color: var(--grey);
-        }
-
-        /* Divider */
-        .column-divider {
-            position: absolute;
-            top: 2rem;
-            bottom: 2rem;
-            left: 50%;
-            width: 1px;
-            background: rgba(255, 102, 255, 0.3);
         }
 
         /* Slideshow mode */
@@ -215,47 +193,18 @@
             font-style: italic;
         }
 
-        /* End screen */
-        .end-container {
-            display: none;
-        }
-
-        .end-container.active {
-            display: block;
-        }
-
-        .end-options {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            margin-top: 1.5rem;
-        }
-
-        .end-btn {
-            background: rgba(10, 10, 25, 0.6);
-            border: 1px solid var(--link-blue);
-            border-radius: 4px;
-            padding: 0.75rem 1.5rem;
-            color: var(--link-blue);
-            font-size: 0.9rem;
-            cursor: pointer;
-            text-decoration: none;
-            transition: background 0.2s, box-shadow 0.2s;
-        }
-
-        .end-btn:hover {
-            background: rgba(126, 200, 255, 0.15);
-            box-shadow: 0 0 10px rgba(126, 200, 255, 0.3);
-        }
-
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
             .selection-grid {
                 grid-template-columns: 1fr;
-                gap: 2rem;
+                gap: 1.5rem;
             }
 
-            .column-divider {
-                display: none;
+            .center-column {
+                order: -1;
+            }
+
+            .center-image {
+                max-height: 40vh;
             }
 
             .key-badge {
@@ -269,13 +218,8 @@
 </head>
 <body>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Manual</a>
-        <h1 class="title">Select Your Path</h1>
-        <p class="subtitle">Choose a language pack and cluster to explore</p>
-
         <!-- Selection screen -->
         <div class="selection-container" id="selectionContainer">
-            <div class="column-divider"></div>
             <div class="selection-grid">
                 <div class="language-column">
                     <h2 class="language-header">Esperanto</h2>
@@ -293,6 +237,11 @@
                             <span class="pack-cluster">13.7 Social Roles & People</span>
                         </a>
                     </div>
+                </div>
+                <div class="center-column">
+                    <a href="../index.html?screen=sanctum">
+                        <img src="../images/selection.png" alt="Selection" class="center-image">
+                    </a>
                 </div>
                 <div class="language-column">
                     <h2 class="language-header">German</h2>
@@ -325,17 +274,6 @@
             <p class="hint">Click image or press any key to continue</p>
         </div>
 
-        <!-- End screen -->
-        <div class="end-container" id="endContainer">
-            <div class="image-container">
-                <img id="endImage" src="" alt="">
-            </div>
-            <p class="screen-title" id="endTitle">Session Complete</p>
-            <div class="end-options">
-                <a href="select.html" class="end-btn">Try Another</a>
-                <a href="../index.html?screen=sanctum" class="end-btn">Back to Sanctum</a>
-            </div>
-        </div>
     </div>
 
     <script>
@@ -482,12 +420,9 @@
             const slides = paths[currentPath];
             const slide = slides[currentIndex];
 
-            // Check for end
+            // Check for end - redirect to sanctum
             if (slide.end) {
-                document.getElementById('slideshowContainer').classList.remove('active');
-                document.getElementById('endContainer').classList.add('active');
-                document.getElementById('endImage').src = slide.image;
-                document.getElementById('endTitle').textContent = slide.title;
+                window.location.href = '../index.html?screen=sanctum';
                 return;
             }
 
