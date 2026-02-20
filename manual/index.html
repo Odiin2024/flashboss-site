@@ -248,10 +248,16 @@
             margin-bottom: 0.25rem;
         }
 
-        .slideshow-hint {
+        .slideshow-hint,
+        .gif-hint {
             font-size: 0.75rem;
             color: var(--grey);
             font-style: italic;
+        }
+
+        .gif-container {
+            text-align: center;
+            padding: 0.5rem;
         }
 
         /* Disabled buttons */
@@ -1052,6 +1058,42 @@
                     };
                     terminalGrid.appendChild(thumb);
                 });
+            } else if (focus.layout === 'gif') {
+                // GIF layout - click to play/pause animation
+                terminalGrid.innerHTML = '';
+                terminalGrid.classList.remove('hidden');
+
+                const gifContainer = document.createElement('div');
+                gifContainer.className = 'gif-container';
+                gifContainer.innerHTML = `
+                    <div class="gif-hint">Click image to play</div>
+                `;
+                terminalGrid.appendChild(gifContainer);
+
+                // Control GIF playback via image swap
+                const focusImg = document.getElementById('focusImage');
+                const focusLink = document.getElementById('focusLink');
+                const gifSrc = focus.image;
+                let isPlaying = false;
+
+                // Start with static image (add timestamp to prevent caching)
+                focusImg.src = gifSrc + '?static=' + Date.now();
+
+                focusLink.style.cursor = 'pointer';
+                focusLink.onclick = (e) => {
+                    e.preventDefault();
+                    if (!isPlaying) {
+                        // Play - reload gif to start from beginning
+                        focusImg.src = gifSrc + '?play=' + Date.now();
+                        gifContainer.querySelector('.gif-hint').textContent = 'Playing...';
+                        isPlaying = true;
+                    } else {
+                        // Pause - reload to stop
+                        focusImg.src = gifSrc + '?pause=' + Date.now();
+                        gifContainer.querySelector('.gif-hint').textContent = 'Click image to play';
+                        isPlaying = false;
+                    }
+                };
             } else if (focus.layout === 'slideshow' && focus.slideshowImages) {
                 // Slideshow layout - click to advance through images
                 terminalGrid.innerHTML = '';
