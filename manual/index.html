@@ -364,6 +364,22 @@
             color: var(--moon-cream);
         }
 
+        .child-title.color-magenta {
+            color: #ff66ff;
+        }
+
+        .child-title.color-blue {
+            color: #7ec8ff;
+        }
+
+        .nav-child:hover .child-title.color-blue {
+            text-shadow: 0 0 8px rgba(126, 200, 255, 0.6);
+        }
+
+        .nav-child:hover .child-title.color-magenta {
+            text-shadow: 0 0 8px rgba(255, 102, 255, 0.6);
+        }
+
         .nav-child-split {
             cursor: default;
         }
@@ -1065,9 +1081,6 @@
 
                 const gifContainer = document.createElement('div');
                 gifContainer.className = 'gif-container';
-                gifContainer.innerHTML = `
-                    <div class="gif-hint">Click image to play</div>
-                `;
                 terminalGrid.appendChild(gifContainer);
 
                 // Control GIF playback via image swap
@@ -1085,12 +1098,10 @@
                     if (!isPlaying) {
                         // Play - reload gif to start from beginning
                         focusImg.src = gifSrc + '?play=' + Date.now();
-                        gifContainer.querySelector('.gif-hint').textContent = 'Playing...';
                         isPlaying = true;
                     } else {
                         // Pause - reload to stop
                         focusImg.src = gifSrc + '?pause=' + Date.now();
-                        gifContainer.querySelector('.gif-hint').textContent = 'Click image to play';
                         isPlaying = false;
                     }
                 };
@@ -1235,9 +1246,11 @@
                             const item = document.createElement('a');
                             item.className = 'nav-child';
                             item.dataset.target = childId;
+                            const childColor = focus.childColors && focus.childColors[childId];
+                            const titleColorClass = childColor ? ` color-${childColor}` : '';
                             item.innerHTML = `
                                 <span class="child-num${isBackBtn ? ' back-btn' : ''}">${displayNum}</span>
-                                <span class="child-title">${displayName}</span>
+                                <span class="child-title${titleColorClass}">${displayName}</span>
                             `;
                             // Check for external link
                             const externalLink = focus.childExternalLinks && focus.childExternalLinks[childId];

@@ -417,7 +417,7 @@
   "boss-fight": {
     "id": "boss-fight",
     "title": "Boss Fight",
-    "subheader": "The Prestige",
+    "subheader": "the prestige",
     "image": "images/bossfight/Schatz.gif",
     "layout": "gif",
     "parents": [
@@ -439,12 +439,17 @@
       "boss-defeat": "Defeat",
       "boss-surrender": "Surrender"
     },
+    "childColors": {
+      "boss-victory": "magenta",
+      "boss-defeat": "magenta",
+      "boss-surrender": "blue"
+    },
     "childTargets": {
       "boss-victory": "sanctum",
       "boss-defeat": "sanctum",
       "boss-surrender": "sanctum"
     },
-    "description": "Before you may pass, you must defeat the challenge. The platform has 4 steps. Easy Easy Hard Hard. Complete each step to progress, but a false move will push you back 2 spaces!"
+    "description": "Before you may pass, you must defeat the challenge. The platform has 4 steps. Easy Easy Hard Hard. Complete each step to progress, but a false move will push you back 2 spaces!\n\nThe cards are rated by the intervals until next viewing, which maps perfectly to difficulty. An incorrect difficult word becomes easy. Try again."
   },
   "kye-page2": {
     "id": "kye-page2",
