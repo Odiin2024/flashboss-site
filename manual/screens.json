@@ -15,7 +15,7 @@
     "childDisplayNames": {
       "profile-select": "Press any key to continue"
     },
-    "description": "The FlashBoss manual is built to mirror the game itself, with information pertaining to playing the game, and also with a link for more information.\n\nClick the blue parent buttons to go back, or choose a magenta option to go forward. Every screen in the game has a page here. Explore at your own pace."
+    "description": "The FlashBoss manual is built to mirror the game itself, with information pertaining to playing the game, and also with a link for more information.\n\nClick the blue parent buttons to go back, or choose a magenta option to go forward. FlashBoss is designed for numberpad navigation. Every action maps to a single key. A numberpad isn't required, but allows for distraction free operation."
   },
   "profile-select": {
     "id": "profile-select",
@@ -69,7 +69,11 @@
       "profile-select": "9"
     },
     "childDisplayNames": {
+      "sanctum": "Enter the Sanctum — continue studies",
       "review-gates": "Review Modes"
+    },
+    "childColors": {
+      "sanctum": "gold"
     },
     "description": "Each day you return, your master meets you at the gates.\n\nHave you come to study your flashcards, or are you looking to go to another class? If you would like to take a level placement test, you can prove your knowledge and skip tiers with the Tier Skip Challenge."
   },
@@ -1234,6 +1238,7 @@
   "hints-tips": {
     "id": "hints-tips",
     "title": "Hints & Tips",
+    "subheader": "Navigation and Appendix",
     "image": "screenshots/common/hints-tips.png",
     "parents": [
       "profile-select"
@@ -1246,7 +1251,7 @@
       "lesson-pack-select": "1",
       "profile-select": "9"
     },
-    "description": "FlashBoss is built around a simple principal: 5 leads you forward, and 9 takes you back.\n\nFocus on streak completion. Grimoire completion earns you a 1 day streak buffer.\n\nUseful shortcuts: 555 (Review Cards), 568 (Change Master), 54 (Boss Fights), 5661 (Achievements), 567 (Backup Profile)."
+    "description": "FlashBoss is designed to be intuitive. There aren't many places to go — it just takes a moment to learn the map. Think of shortcuts like phone numbers: dial 555 for your daily session, 54 for boss fights, 568 to change your master. Press 5 to go forward, 9 to go back. That's all you need to know."
   },
   "lesson-pack-select": {
     "id": "lesson-pack-select",

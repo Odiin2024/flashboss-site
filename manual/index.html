@@ -377,12 +377,25 @@
             color: #7ec8ff;
         }
 
+        .child-title.color-gold {
+            color: #ffcc00;
+        }
+
         .nav-child:hover .child-title.color-blue {
             text-shadow: 0 0 8px rgba(126, 200, 255, 0.6);
         }
 
         .nav-child:hover .child-title.color-magenta {
             text-shadow: 0 0 8px rgba(255, 102, 255, 0.6);
+        }
+
+        .nav-child:hover .child-title.color-gold {
+            text-shadow: 0 0 8px rgba(255, 204, 0, 0.6);
+        }
+
+        .child-num.color-gold {
+            color: #ffcc00;
+            border-color: #ffcc00;
         }
 
         .nav-child-split {
@@ -1254,10 +1267,11 @@
                             item.className = 'nav-child';
                             item.dataset.target = childId;
                             const childColor = focus.childColors && focus.childColors[childId];
-                            const titleColorClass = childColor ? ` color-${childColor}` : '';
+                            const colorClass = childColor ? ` color-${childColor}` : '';
+                            const numColorClass = childColor ? ` color-${childColor}` : (isBackBtn ? ' back-btn' : '');
                             item.innerHTML = `
-                                <span class="child-num${isBackBtn ? ' back-btn' : ''}">${displayNum}</span>
-                                <span class="child-title${titleColorClass}">${displayName}</span>
+                                <span class="child-num${numColorClass}">${displayNum}</span>
+                                <span class="child-title${colorClass}">${displayName}</span>
                             `;
                             // Check for external link
                             const externalLink = focus.childExternalLinks && focus.childExternalLinks[childId];
