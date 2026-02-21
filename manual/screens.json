@@ -15,7 +15,7 @@
     "childDisplayNames": {
       "profile-select": "Press any key to continue"
     },
-    "description": "The FlashBoss manual is built to mirror the game itself, with information pertaining to playing the game, and also with a link for more information.\n\nClick the blue parent buttons to go back, or choose a magenta option to go forward. FlashBoss is designed for numberpad navigation. Every action maps to a single key. A numberpad isn't required, but allows for distraction free operation."
+    "description": "The FlashBoss manual is built to mirror the game itself, with information pertaining to playing the game, and also with a link for more information.\n\nThis manual is an interactive guide to FlashBoss — not the game itself. Navigate using the blue buttons to go back or magenta buttons to go forward. The real game runs in your terminal with single-key numberpad controls for distraction-free learning, native audio, spaced repetition tracking, and boss fights. Think of this as the brochure. The experience is on Steam."
   },
   "profile-select": {
     "id": "profile-select",
@@ -794,19 +794,6 @@
       "images/bossfight/31_screenshot.png",
       "images/bossfight/32_screenshot.png",
       "images/bossfight/33_screenshot.png"
-    ],
-    "slideshowMeta": [
-      {"hint": "Press any key to begin"},
-      {"correctKey": "2", "correctWord": "wollen", "userKey": "2", "userWord": "wollen", "status": "correct"},
-      {"correctKey": "7", "correctWord": "Frage", "userKey": "7", "userWord": "Frage", "status": "correct"},
-      {"correctKey": "7", "correctWord": "wo.", "userKey": "7", "userWord": "wo.", "status": "correct"},
-      {"correctKey": "8", "correctWord": "wie", "userKey": "5", "userWord": "Sprache", "status": "incorrect"},
-      {"correctKey": "2", "correctWord": "wie", "userKey": "2", "userWord": "wie", "status": "correct"},
-      {"correctKey": "1", "correctWord": "wer", "userKey": "1", "userWord": "wer", "status": "correct"},
-      {"correctKey": "3", "correctWord": "was", "userKey": "3", "userWord": "was", "status": "correct"},
-      {"hint": "Press Enter"},
-      {"hint": "Press 8 to toggle"},
-      {"hint": "Press any key to finish"}
     ],
     "parents": [
       "bossrun-challenge"

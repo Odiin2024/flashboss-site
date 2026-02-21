@@ -255,46 +255,6 @@
             font-style: italic;
         }
 
-        /* Enhanced slideshow panel for BossRun */
-        .slideshow-enhanced {
-            border: 1px solid var(--grey);
-            border-radius: 4px;
-            padding: 0.75rem 1rem;
-            margin-top: 0.5rem;
-            text-align: center;
-            min-height: 5rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .slideshow-user-row {
-            font-size: 0.85rem;
-            margin-bottom: 0.25rem;
-        }
-
-        .slideshow-user-row .counter {
-            margin-right: 1.5rem;
-        }
-
-        .slideshow-correct-row {
-            font-size: 0.85rem;
-            color: #5555FF;
-            padding-left: 3.5rem;
-        }
-
-        .slideshow-user-row.correct {
-            color: #4CAF50;
-        }
-
-        .slideshow-user-row.incorrect {
-            color: #ff5555;
-        }
-
-        .slideshow-meta-hint {
-            font-size: 0.85rem;
-            color: #5555FF;
-        }
 
         .gif-container {
             text-align: center;
@@ -1181,39 +1141,10 @@
                 const slideContainer = document.createElement('div');
                 slideContainer.className = 'slideshow-container';
 
-                // Check if we have enhanced metadata
-                const hasMeta = focus.slideshowMeta && focus.slideshowMeta.length > 0;
-
-                const renderSlideInfo = (slideIndex) => {
-                    if (hasMeta && focus.slideshowMeta[slideIndex]) {
-                        const meta = focus.slideshowMeta[slideIndex];
-
-                        // If it's just a hint (no answer data)
-                        if (meta.hint && !meta.correctKey) {
-                            return `
-                                <div class="slideshow-enhanced">
-                                    <div class="slideshow-meta-hint">${slideIndex + 1}/${totalSlides}    ${meta.hint}</div>
-                                </div>
-                            `;
-                        }
-
-                        // Simple two-line display: user answer first, correct as legend
-                        const statusClass = meta.status || '';
-                        return `
-                            <div class="slideshow-enhanced">
-                                <div class="slideshow-user-row ${statusClass}"><span class="counter">${slideIndex + 1}/${totalSlides}</span>${meta.userKey} ${meta.userWord}</div>
-                                <div class="slideshow-correct-row">${meta.correctKey} ${meta.correctWord}</div>
-                            </div>
-                        `;
-                    } else {
-                        return `
-                            <div class="slideshow-counter">${slideIndex + 1} / ${totalSlides}</div>
-                            <div class="slideshow-hint">Click image or press * to advance</div>
-                        `;
-                    }
-                };
-
-                slideContainer.innerHTML = renderSlideInfo(currentSlide);
+                slideContainer.innerHTML = `
+                    <div class="slideshow-counter">${currentSlide + 1} / ${totalSlides}</div>
+                    <div class="slideshow-hint">Click image or press * to advance</div>
+                `;
                 terminalGrid.appendChild(slideContainer);
 
                 const advanceSlide = () => {
@@ -1226,7 +1157,7 @@
                     } else {
                         const focusImg = document.getElementById('focusImage');
                         focusImg.src = focus.slideshowImages[currentSlide];
-                        slideContainer.innerHTML = renderSlideInfo(currentSlide);
+                        slideContainer.querySelector('.slideshow-counter').textContent = `${currentSlide + 1} / ${totalSlides}`;
                     }
                 };
 
