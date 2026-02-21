@@ -795,6 +795,19 @@
       "images/bossfight/32_screenshot.png",
       "images/bossfight/33_screenshot.png"
     ],
+    "slideshowMeta": [
+      {"hint": "Press any key to begin"},
+      {"correctKey": "2", "correctWord": "wollen", "userKey": "2", "userWord": "wollen", "status": "correct"},
+      {"correctKey": "7", "correctWord": "Frage", "userKey": "7", "userWord": "Frage", "status": "correct"},
+      {"correctKey": "7", "correctWord": "wo.", "userKey": "7", "userWord": "wo.", "status": "correct"},
+      {"correctKey": "8", "correctWord": "wie", "userKey": "5", "userWord": "Sprache", "status": "incorrect"},
+      {"correctKey": "2", "correctWord": "wie", "userKey": "2", "userWord": "wie", "status": "correct"},
+      {"correctKey": "1", "correctWord": "wer", "userKey": "1", "userWord": "wer", "status": "correct"},
+      {"correctKey": "3", "correctWord": "was", "userKey": "3", "userWord": "was", "status": "correct"},
+      {"hint": "Press Enter"},
+      {"hint": "Press 8 to toggle"},
+      {"hint": "Press any key to finish"}
+    ],
     "parents": [
       "bossrun-challenge"
     ],

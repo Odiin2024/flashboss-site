@@ -255,6 +255,76 @@
             font-style: italic;
         }
 
+        /* Enhanced slideshow panel for BossRun */
+        .slideshow-enhanced {
+            background: rgba(10, 10, 25, 0.8);
+            border: 1px solid rgba(255, 102, 255, 0.4);
+            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+
+        .slideshow-frame-counter {
+            font-family: var(--font-pixel);
+            font-size: 1.2rem;
+            color: var(--magic-pink);
+            margin-bottom: 0.75rem;
+        }
+
+        .slideshow-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .slideshow-label {
+            font-size: 0.75rem;
+            color: var(--grey);
+            min-width: 4.5rem;
+            text-align: right;
+        }
+
+        .slideshow-key {
+            font-family: var(--font-pixel);
+            font-size: 1.1rem;
+            background: rgba(126, 200, 255, 0.1);
+            border: 2px solid var(--grey);
+            border-radius: 6px;
+            padding: 0.4rem 0.75rem;
+            min-width: 2.5rem;
+            color: var(--moon-cream);
+        }
+
+        .slideshow-word {
+            font-family: var(--font-pixel);
+            font-size: 1rem;
+            color: var(--moon-cream);
+            min-width: 6rem;
+            text-align: left;
+        }
+
+        .slideshow-row.correct .slideshow-key,
+        .slideshow-row.correct .slideshow-word {
+            color: #4CAF50;
+            border-color: #4CAF50;
+        }
+
+        .slideshow-row.incorrect .slideshow-key,
+        .slideshow-row.incorrect .slideshow-word {
+            color: #ff5555;
+            border-color: #ff5555;
+        }
+
+        .slideshow-meta-hint {
+            font-size: 0.9rem;
+            color: var(--grey);
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
         .gif-container {
             text-align: center;
             padding: 0.5rem;
@@ -1139,10 +1209,50 @@
 
                 const slideContainer = document.createElement('div');
                 slideContainer.className = 'slideshow-container';
-                slideContainer.innerHTML = `
-                    <div class="slideshow-counter">${currentSlide + 1} / ${totalSlides}</div>
-                    <div class="slideshow-hint">Click image or press * to advance</div>
-                `;
+
+                // Check if we have enhanced metadata
+                const hasMeta = focus.slideshowMeta && focus.slideshowMeta.length > 0;
+
+                const renderSlideInfo = (slideIndex) => {
+                    if (hasMeta && focus.slideshowMeta[slideIndex]) {
+                        const meta = focus.slideshowMeta[slideIndex];
+
+                        // If it's just a hint (no answer data)
+                        if (meta.hint && !meta.correctKey) {
+                            return `
+                                <div class="slideshow-enhanced">
+                                    <div class="slideshow-frame-counter">Frame ${slideIndex + 1} of ${totalSlides}</div>
+                                    <div class="slideshow-meta-hint">${meta.hint}</div>
+                                </div>
+                            `;
+                        }
+
+                        // Full answer display with correct and user rows
+                        const statusClass = meta.status || '';
+                        return `
+                            <div class="slideshow-enhanced">
+                                <div class="slideshow-frame-counter">Frame ${slideIndex + 1} of ${totalSlides}</div>
+                                <div class="slideshow-row">
+                                    <span class="slideshow-label">Correct:</span>
+                                    <span class="slideshow-key">${meta.correctKey}</span>
+                                    <span class="slideshow-word">${meta.correctWord}</span>
+                                </div>
+                                <div class="slideshow-row ${statusClass}">
+                                    <span class="slideshow-label">Entered:</span>
+                                    <span class="slideshow-key">${meta.userKey}</span>
+                                    <span class="slideshow-word">${meta.userWord}</span>
+                                </div>
+                            </div>
+                        `;
+                    } else {
+                        return `
+                            <div class="slideshow-counter">${slideIndex + 1} / ${totalSlides}</div>
+                            <div class="slideshow-hint">Click image or press * to advance</div>
+                        `;
+                    }
+                };
+
+                slideContainer.innerHTML = renderSlideInfo(currentSlide);
                 terminalGrid.appendChild(slideContainer);
 
                 const advanceSlide = () => {
@@ -1155,7 +1265,7 @@
                     } else {
                         const focusImg = document.getElementById('focusImage');
                         focusImg.src = focus.slideshowImages[currentSlide];
-                        slideContainer.querySelector('.slideshow-counter').textContent = `${currentSlide + 1} / ${totalSlides}`;
+                        slideContainer.innerHTML = renderSlideInfo(currentSlide);
                     }
                 };
 
