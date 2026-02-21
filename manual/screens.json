@@ -588,13 +588,13 @@
       "sanctum": "9"
     },
     "childDisplayNames": {
-      "walkthrough-session": "Cluster Training Mode",
-      "grimoire": "0 Cards Left Today (Grimoire)"
+      "walkthrough-session": "Sample a Cluster",
+      "grimoire": "All Cards Completed (Grimoire)"
     },
     "childExternalLinks": {
       "walkthrough-session": "walkthrough/select.html"
     },
-    "description": "On a regular day, your due cards will not exceed your streak requirement until your streak is completed. You can come in and out of the session as many times as you want throughout the day until it's finished. At that point, your remaining due cards become available. These are optional. This is not a true session, it is an example cluster.\n\nWhen you have completed all due cards for the day, you are offered additional study. All cards must be completed in one attempt for the spell to work correctly."
+    "description": "Each day, FlashBoss builds your session from two sources: review cards returning on schedule, and new cards introduced at a steady pace. Review cards come first — work through them until your streak target is met. After that, new cards and any remaining due cards open up. Complete them at your own pace, dipping in and out as many times as you need.\n\nIf you finish everything and want more, the Grimoire pulls tomorrow's cards forward by one day — a bonus session that advances your entire schedule. Progress on your own terms."
   },
   "grimoire": {
     "id": "grimoire",
@@ -616,12 +616,12 @@
       "sanctum": "9"
     },
     "childDisplayNames": {
-      "grimoire-session": "Open the Grimoire"
+      "grimoire-session": "Continue Your Studies (back)"
     },
-    "childExternalLinks": {
-      "grimoire-session": "walkthrough/select.html"
+    "childTargets": {
+      "grimoire-session": "spaced-repetition"
     },
-    "description": "The Grimoire allows extra practice after completing your daily cards. Each Grimoire session earns you Drive - saved-up days off that protect your streak."
+    "description": "The Grimoire advances your schedule by one day. This allows extra practice after completing your daily cards. Each Grimoire session earns you Drive - saved-up days off that protect your streak.\n\nTo sample flashcard clusters, return to the 'continue your studies' page."
   },
   "grimoire-rules": {
     "id": "grimoire-rules",
