@@ -238,9 +238,8 @@
   },
   "create-pack": {
     "id": "create-pack",
-    "title": "Choose Language Pack",
-    "subheader": "Select the thumbnail to try out a session",
-    "image": "images/selection.png",
+    "title": "Choose Your Path",
+    "image": "screenshots/common/create-pack.png",
     "layout": "terminal",
     "parents": [
       "create-master",
@@ -266,7 +265,7 @@
     },
     "walkthroughThumbnail": "images/selection.png",
     "walkthroughLink": "walkthrough/select.html",
-    "description": "Select your language pack. German Core and Esperanto Core are included. More packs available as DLC."
+    "description": "Each installed FlashBoss pack will appear on this screen. A single profile can study multiple packs by simply changing path at the end of the days session, but it's often a better idea to have a second profile if there is one to spare. Core, Pareto 1 and Pareto 2 are the three sets that make up each language packs. The core 1000 words, and the pareto principle at play: 10 percent of the vocabulary to understand 90 percent of the language."
   },
   "profile-data": {
     "id": "profile-data",
