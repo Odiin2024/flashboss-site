@@ -216,6 +216,41 @@
                 padding: 0.5rem 0.75rem;
                 font-size: 0.75rem;
             }
+
+            /* Collapsible headers in portrait */
+            .language-header {
+                cursor: pointer;
+                padding: 1rem;
+                background: rgba(10, 10, 25, 0.8);
+                border: 1px solid rgba(126, 200, 255, 0.4);
+                border-radius: 6px;
+                margin-bottom: 0;
+                transition: background 0.2s, border-color 0.2s;
+            }
+
+            .language-header:hover {
+                background: rgba(126, 200, 255, 0.15);
+                border-color: var(--link-blue);
+            }
+
+            .language-header::after {
+                content: ' ▼';
+                font-size: 0.8rem;
+                opacity: 0.6;
+            }
+
+            .language-header.expanded::after {
+                content: ' ▲';
+            }
+
+            .pack-buttons {
+                display: none;
+                margin-top: 0.75rem;
+            }
+
+            .pack-buttons.expanded {
+                display: flex;
+            }
         }
     </style>
 </head>
@@ -225,8 +260,8 @@
         <div class="selection-container" id="selectionContainer">
             <div class="selection-grid">
                 <div class="language-column">
-                    <h2 class="language-header">Esperanto</h2>
-                    <div class="pack-buttons">
+                    <h2 class="language-header" onclick="toggleLanguage('esperanto')">Esperanto</h2>
+                    <div class="pack-buttons" id="esperanto-buttons">
                         <a class="pack-btn" onclick="startPath('esperanto')">
                             <span class="pack-name">Core</span>
                             <span class="pack-cluster">1.2 Numbers & Time</span>
@@ -247,8 +282,8 @@
                     </a>
                 </div>
                 <div class="language-column">
-                    <h2 class="language-header">German</h2>
-                    <div class="pack-buttons">
+                    <h2 class="language-header" onclick="toggleLanguage('german')">German</h2>
+                    <div class="pack-buttons" id="german-buttons">
                         <a class="pack-btn" onclick="startPath('german-core')">
                             <span class="pack-name">Core</span>
                             <span class="pack-cluster">1.2 Numbers & Time</span>
@@ -410,6 +445,26 @@
 
         let currentPath = null;
         let currentIndex = 0;
+
+        function toggleLanguage(lang) {
+            // Only toggle in portrait mode
+            if (window.innerWidth > 768) return;
+
+            const buttons = document.getElementById(lang + '-buttons');
+            const header = buttons.previousElementSibling;
+
+            // Close other expanded sections
+            document.querySelectorAll('.pack-buttons.expanded').forEach(el => {
+                if (el.id !== lang + '-buttons') {
+                    el.classList.remove('expanded');
+                    el.previousElementSibling.classList.remove('expanded');
+                }
+            });
+
+            // Toggle this section
+            buttons.classList.toggle('expanded');
+            header.classList.toggle('expanded');
+        }
 
         function startPath(pathName) {
             currentPath = pathName;
