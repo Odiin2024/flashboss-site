@@ -30,13 +30,15 @@
       "gates",
       "vault",
       "about-1",
+      "hints-tips",
       "terminal"
     ],
     "childLabels": {
       "create-username": "1",
       "gates": "N",
       "vault": "6",
-      "about-1": "8",
+      "about-1": "7",
+      "hints-tips": "8",
       "terminal": "9"
     },
     "childDisplayNames": {
@@ -1232,9 +1234,9 @@
   "hints-tips": {
     "id": "hints-tips",
     "title": "Hints & Tips",
-    "image": "screenshots/common/hints-tips.png",
+    "image": "screenshots/hints-tips.png",
     "parents": [
-      "about-1"
+      "profile-select"
     ],
     "children": [
       "lesson-pack-select",
@@ -1249,6 +1251,7 @@
   "lesson-pack-select": {
     "id": "lesson-pack-select",
     "title": "Select Lesson Pack",
+    "subheader": "Search All Content",
     "image": "screenshots/common/lesson-pack-select.png",
     "parents": [
       "hints-tips"
@@ -1261,11 +1264,12 @@
       "german-lessons": "2",
       "hints-tips": "9"
     },
-    "description": "Access all lessons for any installed language pack.\n\n1. Esperanto - 69 Lessons, 3 sets, 15 tiers\n2. German - 67 Lessons, 3 sets, 15 tiers"
+    "description": "You can search any lesson from any FlashBoss pack through the help menu. Search by language > set > tier to find your lesson lists."
   },
   "german-lessons": {
     "id": "german-lessons",
     "title": "German Core Lessons",
+    "subheader": "Choose from the List",
     "image": "screenshots/common/german-lessons.png",
     "parents": [
       "lesson-pack-select"
@@ -1275,10 +1279,13 @@
       "lesson-pack-select"
     ],
     "childLabels": {
-      "lesson-content": "1-8",
+      "lesson-content": "2",
       "lesson-pack-select": "9"
     },
-    "description": "Browse all German Core lessons organized by tier.\n\nTier 1: pronunciation, modal verbs, question words, gender & articles, numbers, present tense, negation.\n\nPress 1-8 to view a lesson, arrow keys to navigate pages."
+    "childDisplayNames": {
+      "lesson-content": "Lesson 2: Modal Verbs"
+    },
+    "description": "Choose a lesson to review its content. Lessons are attached to trigger flashcards and repeat with the cards, but can be turned off. The lesson list allows you to access the lesson again."
   },
   "lesson-content": {
     "id": "lesson-content",
