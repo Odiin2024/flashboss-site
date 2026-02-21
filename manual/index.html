@@ -398,6 +398,10 @@
             border-color: #ffcc00;
         }
 
+        .gold-text {
+            color: #ffcc00;
+        }
+
         .nav-child-split {
             cursor: default;
         }
@@ -787,7 +791,7 @@
                     <span class="footer-divider">·</span>
                     <a href="../home.html" class="footer-link">Hub</a>
                     <span class="footer-divider">·</span>
-                    <a href="https://store.steampowered.com/app/4134440/FlashBoss/" class="footer-link">Visit Steam</a>
+                    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-manual" class="footer-link">Visit Steam</a>
                 </div>
             </div>
         </div>
@@ -855,7 +859,7 @@
                 <p class="tile-page-footer">
                     <a href="../home.html" class="footer-link">Hub</a>
                     <span class="footer-divider">·</span>
-                    <a href="https://store.steampowered.com/app/4134440/FlashBoss/" class="footer-link">Steam</a>
+                    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-manual" class="footer-link">Steam</a>
                 </p>
             </div>
         </div>
@@ -1267,7 +1271,8 @@
                             item.className = 'nav-child';
                             item.dataset.target = childId;
                             const childColor = focus.childColors && focus.childColors[childId];
-                            const colorClass = childColor ? ` color-${childColor}` : '';
+                            const hasHtmlInTitle = displayName.includes('<');
+                            const colorClass = (childColor && !hasHtmlInTitle) ? ` color-${childColor}` : '';
                             const numColorClass = childColor ? ` color-${childColor}` : (isBackBtn ? ' back-btn' : '');
                             item.innerHTML = `
                                 <span class="child-num${numColorClass}">${displayNum}</span>
