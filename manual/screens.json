@@ -464,7 +464,7 @@
       "boss-defeat": "sanctum",
       "boss-surrender": "sanctum"
     },
-    "description": "Before you may pass, you must defeat the challenge. The platform has 4 steps. Easy Easy Hard Hard. Complete each step to progress, but a false move will push you back 2 spaces!\n\nThe cards are rated by the intervals until next viewing, which maps perfectly to difficulty. An incorrect difficult word becomes easy. Try again."
+    "description": "Before you may pass, you must defeat the challenge. The platform has 4 steps. Easy Easy Hard Hard. Complete each step to progress, but a false move will push you back 2 spaces!\n\nThis is a simulated run through of how the bossfight works. One step forward, or two steps back for incorrect."
   },
   "kye-page2": {
     "id": "kye-page2",
@@ -612,7 +612,7 @@
     "childExternalLinks": {
       "walkthrough-session": "walkthrough/select.html"
     },
-    "description": "Each day, FlashBoss builds your session from two sources: review cards returning on schedule, and new cards introduced at a steady pace. Review cards come first — work through them until your streak target is met. After that, new cards and any remaining due cards open up. Complete them at your own pace, dipping in and out as many times as you need.\n\nIf you finish everything and want more, the Grimoire pulls tomorrow's cards forward by one day — a bonus session that advances your entire schedule. Progress on your own terms."
+    "description": "Each day, FlashBoss builds your session from two sources: review cards returning on schedule, and new cards introduced at a steady pace. Review cards come first — work through them until your streak target is met. After that, new cards and any remaining due cards open up. Complete them at your own pace, dipping in and out as many times as you need.\n\nIf you finish everything and want more, the Grimoire pulls tomorrow's cards forward by one day — a bonus session that advances your entire schedule. Sample a full FlashBoss cluster with 8."
   },
   "grimoire": {
     "id": "grimoire",
@@ -639,7 +639,7 @@
     "childTargets": {
       "grimoire-session": "spaced-repetition"
     },
-    "description": "The Grimoire advances your schedule by one day. This allows extra practice after completing your daily cards. Each Grimoire session earns you Drive - saved-up days off that protect your streak.\n\nTo sample flashcard clusters, return to the 'continue your studies' page."
+    "description": "The Grimoire advances your schedule by one day. This allows extra practice after completing your daily cards. Each Grimoire session earns you Drive - saved-up days off that protect your streak.\n\nA grimoire session is very similar to a daily session except you must do all available cards in one fell swoop. Example clusters are in the previous page (5 or 9 to 'Continue Your Studies'."
   },
   "grimoire-rules": {
     "id": "grimoire-rules",
@@ -819,7 +819,7 @@
     "childDisplayNames": {
       "sanctum": "Skip to Sanctum"
     },
-    "description": "Face the BossRun challenge! Answer correctly to survive and prove your vocabulary knowledge.\n\nClick the image or press * to advance through the battle. Press 9 to skip to the Sanctum."
+    "description": "The BossRun is a series of BossFights until you clear the whole tier, for level placement, or for revision.\n\nThis is a simulated run through of how the bossfight works. One step forward, or two steps back for incorrect."
   },
   "achievements": {
     "id": "achievements",
