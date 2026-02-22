@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Found Me - FlashBoss</title>
+    <meta name="description" content="The story behind FlashBoss and how you can help bring language learning to everyone.">
+
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: url('manual/images/fog.jpeg') center center / cover no-repeat fixed;
+            background-color: #0a0a19;
+            color: #f0e6d3;
+            min-height: 100vh;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 4rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Screens */
+        .screen {
+            display: none;
+        }
+
+        .screen.active {
+            display: block;
+        }
+
+        /* Owl image */
+        .owl-container {
+            float: right;
+            margin: 0 0 1rem 1.5rem;
+        }
+
+        .owl-image {
+            width: 120px;
+            height: auto;
+        }
+
+        /* Level header */
+        .level-tag {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: #ff66ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .screen-title {
+            font-family: 'Merriweather', serif;
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #5555FF;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Content */
+        .content p {
+            margin-bottom: 1.25rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .signature {
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 1.5rem;
+        }
+
+        /* Highlight text */
+        .highlight {
+            color: #7ec8ff;
+        }
+
+        /* Links section */
+        .links {
+            margin-top: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .link-btn {
+            display: block;
+            background: rgba(10, 10, 25, 0.6);
+            border: 1px solid rgba(126, 200, 255, 0.4);
+            border-radius: 6px;
+            padding: 1rem 1.25rem;
+            color: #7ec8ff;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: background 0.2s, border-color 0.2s, transform 0.2s;
+            cursor: pointer;
+        }
+
+        .link-btn:hover {
+            background: rgba(126, 200, 255, 0.1);
+            border-color: #7ec8ff;
+            transform: translateX(4px);
+        }
+
+        .link-btn.primary {
+            border-color: rgba(255, 102, 255, 0.5);
+            color: #ff66ff;
+        }
+
+        .link-btn.primary:hover {
+            background: rgba(255, 102, 255, 0.1);
+            border-color: #ff66ff;
+        }
+
+        /* List styling */
+        .content ol {
+            margin: 1.5rem 0;
+            padding-left: 0;
+            list-style: none;
+            counter-reset: item;
+        }
+
+        .content ol li {
+            counter-increment: item;
+            margin-bottom: 1.25rem;
+            padding-left: 2rem;
+            position: relative;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .content ol li::before {
+            content: counter(item) ".";
+            position: absolute;
+            left: 0;
+            color: #ff66ff;
+            font-weight: 600;
+        }
+
+        .content ol li strong {
+            color: #7ec8ff;
+        }
+
+        /* Back link */
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            .screen-title {
+                font-size: 2.2rem;
+            }
+
+            .owl-image {
+                width: 140px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Level 1 -->
+        <div class="screen active" id="level1">
+            <div class="owl-container">
+                <img src="odiin.png" alt="Odiin the owl" class="owl-image">
+            </div>
+            <h1 class="screen-title">You Found Me</h1>
+            <div class="content">
+                <p>I'm Odiin, a CELTA qualified language teacher, and now, a game designer. I built this game, and the academy within. It took me nine months making something I couldn't find anywhere else — a vocabulary tool and learning system that I like to use, and that works for me.</p>
+                <p>If you're just passing through, welcome. If you're curious about what this project is really about, keep reading.</p>
+            </div>
+            <div class="links">
+                <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website" class="link-btn primary">Get FlashBoss on Steam</a>
+                <a href="#" class="link-btn" onclick="showScreen('level2'); return false;">The Bigger Picture</a>
+            </div>
+        </div>
+
+        <!-- Level 2 -->
+        <div class="screen" id="level2">
+            <h1 class="screen-title">The Bigger Picture</h1>
+            <div class="content">
+                <p>FlashBoss wasn't built to make money. It was built to make language education available to everyone, everywhere.</p>
+                <p>The version on Steam right now is step one. It funds what comes next — a mobile version so anyone with a phone can learn, and building out more languages and interfaces in collaboration with native speakers. The ultimate plan is to make a professional version across all platforms, and that day, release this terminal release for free online, including language packs.</p>
+                <p>German and Esperanto are live. Spanish is in development. French follows. Every sale and every review moves the project closer to standing on its own.</p>
+                <p>But right now, it's week one. And week one needs pioneers.</p>
+            </div>
+            <div class="links">
+                <a href="#" class="link-btn primary" onclick="showScreen('level3'); return false;">How You Can Help</a>
+                <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website" class="link-btn">Get FlashBoss on Steam</a>
+            </div>
+            <a href="#" class="back-link" onclick="showScreen('level1'); return false;">&larr; Back</a>
+        </div>
+
+        <!-- Level 3 -->
+        <div class="screen" id="level3">
+            <h1 class="screen-title">Pioneers</h1>
+            <div class="content">
+                <p>This project doesn't need millions of users. It needs its first hundred.</p>
+                <p>If FlashBoss is working for you, here's what carries it forward — in order of impact:</p>
+                <ol>
+                    <li><strong>Leave a Steam review.</strong> This is the single most powerful thing you can do. Steam won't recommend FlashBoss to new players until enough people speak up. A sentence is enough.</li>
+                    <li><strong>Tell one person.</strong> Someone you know who's learning a language. A forum you're part of. A comment somewhere. Word of mouth is how small projects survive their first month.</li>
+                    <li><strong>Stick with it.</strong> Ten minutes a day. Let the spaced repetition build. The system is designed to prove itself over time — and every active player is evidence that this approach works.</li>
+                </ol>
+                <p>The long-term vision is a free, universal language tool funded by a commercial edition that earns its place. You're not just buying flashcards. You're funding a project that wants to give them away.</p>
+                <p>Thank you for being early. It matters more than you know.</p>
+                <p class="signature">— Odiin, CELTA-certified language teacher. Aussie in Deutschland</p>
+            </div>
+            <div class="links">
+                <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website" class="link-btn primary">Get FlashBoss on Steam</a>
+            </div>
+            <a href="#" class="back-link" onclick="showScreen('level2'); return false;">&larr; Back</a>
+        </div>
+    </div>
+
+    <script>
+        function showScreen(screenId) {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById(screenId).classList.add('active');
+            window.scrollTo(0, 0);
+        }
+
+        // Handle URL hash for direct linking
+        if (window.location.hash) {
+            const level = window.location.hash.substring(1);
+            if (document.getElementById(level)) {
+                showScreen(level);
+            }
+        }
+    </script>
+</body>
+</html>
