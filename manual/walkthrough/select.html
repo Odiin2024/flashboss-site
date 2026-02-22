@@ -262,17 +262,17 @@
                 <div class="language-column">
                     <h2 class="language-header" onclick="toggleLanguage('esperanto')">Esperanto</h2>
                     <div class="pack-buttons" id="esperanto-buttons">
-                        <a class="pack-btn" onclick="startPath('esperanto')">
+                        <a class="pack-btn" onclick="startPath('esperanto-core')">
                             <span class="pack-name">Core</span>
-                            <span class="pack-cluster">1.2 Numbers & Time</span>
+                            <span class="pack-cluster">1.4 Everyday Basics</span>
                         </a>
-                        <a class="pack-btn" onclick="startPath('esperanto')">
+                        <a class="pack-btn" onclick="startPath('esperanto-pareto1')">
                             <span class="pack-name">Pareto 1</span>
-                            <span class="pack-cluster">7.3 Travel & Accommodation</span>
+                            <span class="pack-cluster">6.2 The World Around Us</span>
                         </a>
-                        <a class="pack-btn" onclick="startPath('esperanto')">
+                        <a class="pack-btn" onclick="startPath('esperanto-pareto2')">
                             <span class="pack-name">Pareto 2</span>
-                            <span class="pack-cluster">13.7 Social Roles & People</span>
+                            <span class="pack-cluster">9.6 Advanced Topics</span>
                         </a>
                     </div>
                 </div>
@@ -316,29 +316,84 @@
 
     <script>
         const paths = {
-            "esperanto": [
-                {"image": "images/esperanto/01_screenshot.png", "key": "*", "title": "Esperanto Path"},
-                {"image": "images/esperanto/02_screenshot.png", "key": "*", "title": "Esperanto Path"},
-                {"image": "images/esperanto/03_screenshot.png", "key": "*", "title": "Esperanto Path"},
-                {"image": "images/esperanto/04_screenshot.png", "key": "*", "title": "Esperanto Path"},
-                {"image": "images/esperanto/05_screenshot.png", "key": "*", "title": "Esperanto Path"},
-                {"image": "images/esperanto/06_screenshot.png", "key": "*", "title": "Esperanto Path"},
-                {"image": "images/esperanto/07_screenshot.png", "key": "*", "title": "Esperanto Path"},
-                {"image": "images/esperanto/08_screenshot.png", "key": "*", "title": "Esperanto Path"},
-                {"image": "images/esperanto/09_screenshot.png", "key": "*", "title": "Esperanto Path"},
-                {"image": "images/esperanto/10_screenshot.png", "key": "*", "title": "Esperanto Path"},
-                {"image": "images/esperanto/11_screenshot.png", "key": "*", "title": "Esperanto Path"},
-                {"image": "images/esperanto/12_screenshot.png", "key": "*", "title": "Esperanto Path"},
-                {"image": "images/esperanto/13_screenshot.png", "key": "*", "title": "Esperanto Path"},
-                {"image": "images/esperanto/14_screenshot.png", "key": "*", "title": "Esperanto Path"},
-                {"image": "images/esperanto/15_screenshot.png", "key": "*", "title": "Esperanto Path"},
-                {"image": "images/esperanto/16_screenshot.png", "key": "*", "title": "Esperanto Path"},
-                {"image": "images/esperanto/17_screenshot.png", "key": "*", "title": "Esperanto Path"},
-                {"image": "images/esperanto/18_screenshot.png", "key": "*", "title": "Esperanto Path"},
-                {"image": "images/esperanto/19_screenshot.png", "key": "*", "title": "Esperanto Path"},
-                {"image": "images/esperanto/20_screenshot.png", "key": "*", "title": "Esperanto Path"},
-                {"image": "images/esperanto/21_screenshot.png", "key": "*", "title": "Esperanto Path"},
-                {"image": "images/esperanto/22_screenshot.png", "key": null, "title": "Session Complete", "end": true}
+            "esperanto-core": [
+                {"image": "esperanto/promoEO1.4/01_screenshot.png", "key": "*", "title": "Core — 1.4 Everyday Basics"},
+                {"image": "esperanto/promoEO1.4/02_screenshot.png", "key": "*", "title": "Core — 1.4 Everyday Basics"},
+                {"image": "esperanto/promoEO1.4/03_screenshot.png", "key": "*", "title": "Core — 1.4 Everyday Basics"},
+                {"image": "esperanto/promoEO1.4/04_screenshot.png", "key": "*", "title": "Core — 1.4 Everyday Basics"},
+                {"image": "esperanto/promoEO1.4/05_screenshot.png", "key": "*", "title": "Core — 1.4 Everyday Basics"},
+                {"image": "esperanto/promoEO1.4/06_screenshot.png", "key": "*", "title": "Core — 1.4 Everyday Basics"},
+                {"image": "esperanto/promoEO1.4/07_screenshot.png", "key": "*", "title": "Core — 1.4 Everyday Basics"},
+                {"image": "esperanto/promoEO1.4/08_screenshot.png", "key": "*", "title": "Core — 1.4 Everyday Basics"},
+                {"image": "esperanto/promoEO1.4/09_screenshot.png", "key": "*", "title": "Core — 1.4 Everyday Basics"},
+                {"image": "esperanto/promoEO1.4/10_screenshot.png", "key": "*", "title": "Core — 1.4 Everyday Basics"},
+                {"image": "esperanto/promoEO1.4/11_screenshot.png", "key": "*", "title": "Core — 1.4 Everyday Basics"},
+                {"image": "esperanto/promoEO1.4/12_screenshot.png", "key": "*", "title": "Core — 1.4 Everyday Basics"},
+                {"image": "esperanto/promoEO1.4/13_screenshot.png", "key": "*", "title": "Core — 1.4 Everyday Basics"},
+                {"image": "esperanto/promoEO1.4/14_screenshot.png", "key": "*", "title": "Core — 1.4 Everyday Basics"},
+                {"image": "esperanto/promoEO1.4/15_screenshot.png", "key": "*", "title": "Core — 1.4 Everyday Basics"},
+                {"image": "esperanto/promoEO1.4/16_screenshot.png", "key": "*", "title": "Core — 1.4 Everyday Basics"},
+                {"image": "esperanto/promoEO1.4/17_screenshot.png", "key": "*", "title": "Core — 1.4 Everyday Basics"},
+                {"image": "esperanto/promoEO1.4/18_screenshot.png", "key": "*", "title": "Core — 1.4 Everyday Basics"},
+                {"image": "esperanto/promoEO1.4/19_screenshot.png", "key": "*", "title": "Core — 1.4 Everyday Basics"},
+                {"image": "esperanto/promoEO1.4/20_screenshot.png", "key": "*", "title": "Core — 1.4 Everyday Basics"},
+                {"image": "esperanto/promoEO1.4/21_screenshot.png", "key": "*", "title": "Core — 1.4 Everyday Basics"},
+                {"image": "esperanto/promoEO1.4/22_screenshot.png", "key": "*", "title": "Core — 1.4 Everyday Basics"},
+                {"image": "esperanto/promoEO1.4/23_screenshot.png", "key": "*", "title": "Core — 1.4 Everyday Basics"},
+                {"image": "esperanto/promoEO1.4/24_screenshot.png", "key": "*", "title": "Core — 1.4 Everyday Basics"},
+                {"image": "esperanto/promoEO1.4/25_screenshot.png", "key": null, "title": "Session Complete", "end": true}
+            ],
+            "esperanto-pareto1": [
+                {"image": "esperanto/promoEO6.2/01_screenshot.png", "key": "*", "title": "Pareto 1 — 6.2 The World Around Us"},
+                {"image": "esperanto/promoEO6.2/02_screenshot.png", "key": "*", "title": "Pareto 1 — 6.2 The World Around Us"},
+                {"image": "esperanto/promoEO6.2/03_screenshot.png", "key": "*", "title": "Pareto 1 — 6.2 The World Around Us"},
+                {"image": "esperanto/promoEO6.2/04_screenshot.png", "key": "*", "title": "Pareto 1 — 6.2 The World Around Us"},
+                {"image": "esperanto/promoEO6.2/05_screenshot.png", "key": "*", "title": "Pareto 1 — 6.2 The World Around Us"},
+                {"image": "esperanto/promoEO6.2/06_screenshot.png", "key": "*", "title": "Pareto 1 — 6.2 The World Around Us"},
+                {"image": "esperanto/promoEO6.2/07_screenshot.png", "key": "*", "title": "Pareto 1 — 6.2 The World Around Us"},
+                {"image": "esperanto/promoEO6.2/08_screenshot.png", "key": "*", "title": "Pareto 1 — 6.2 The World Around Us"},
+                {"image": "esperanto/promoEO6.2/09_screenshot.png", "key": "*", "title": "Pareto 1 — 6.2 The World Around Us"},
+                {"image": "esperanto/promoEO6.2/10_screenshot.png", "key": "*", "title": "Pareto 1 — 6.2 The World Around Us"},
+                {"image": "esperanto/promoEO6.2/11_screenshot.png", "key": "*", "title": "Pareto 1 — 6.2 The World Around Us"},
+                {"image": "esperanto/promoEO6.2/12_screenshot.png", "key": "*", "title": "Pareto 1 — 6.2 The World Around Us"},
+                {"image": "esperanto/promoEO6.2/13_screenshot.png", "key": "*", "title": "Pareto 1 — 6.2 The World Around Us"},
+                {"image": "esperanto/promoEO6.2/14_screenshot.png", "key": "*", "title": "Pareto 1 — 6.2 The World Around Us"},
+                {"image": "esperanto/promoEO6.2/15_screenshot.png", "key": "*", "title": "Pareto 1 — 6.2 The World Around Us"},
+                {"image": "esperanto/promoEO6.2/16_screenshot.png", "key": "*", "title": "Pareto 1 — 6.2 The World Around Us"},
+                {"image": "esperanto/promoEO6.2/17_screenshot.png", "key": "*", "title": "Pareto 1 — 6.2 The World Around Us"},
+                {"image": "esperanto/promoEO6.2/18_screenshot.png", "key": "*", "title": "Pareto 1 — 6.2 The World Around Us"},
+                {"image": "esperanto/promoEO6.2/19_screenshot.png", "key": "*", "title": "Pareto 1 — 6.2 The World Around Us"},
+                {"image": "esperanto/promoEO6.2/20_screenshot.png", "key": null, "title": "Session Complete", "end": true}
+            ],
+            "esperanto-pareto2": [
+                {"image": "esperanto/promoEO9.6/21_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/22_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/23_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/24_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/25_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/26_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/27_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/28_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/29_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/30_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/31_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/32_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/33_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/34_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/35_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/36_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/37_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/38_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/39_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/40_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/41_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/42_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/43_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/44_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/45_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/46_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/47_screenshot.png", "key": "*", "title": "Pareto 2 — 9.6 Advanced Topics"},
+                {"image": "esperanto/promoEO9.6/48_screenshot.png", "key": null, "title": "Session Complete", "end": true}
             ],
             "german-core": [
                 {"image": "german/promoDE1.2/03_screenshot.png", "key": "*", "title": "Core — 1.2 Numbers & Time"},
