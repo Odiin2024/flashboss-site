@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esperanto on FlashBoss</title>
+    <meta name="description" content="Learn Esperanto with FlashBoss. 1000 words with audio, spaced repetition, and boss fights. The world's most learnable language.">
+
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: url('esperanto.png') center center / cover no-repeat fixed;
+            background-color: #0a0a19;
+            color: #f0e6d3;
+            min-height: 100vh;
+            line-height: 1.7;
+        }
+
+        /* Overlay for readability */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(10, 10, 25, 0.7);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .screen-title {
+            font-family: 'Merriweather', serif;
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: #5555FF;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+
+        .content p {
+            margin-bottom: 1.25rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .content p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Links section */
+        .links {
+            margin-top: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .link-btn {
+            display: block;
+            background: rgba(10, 10, 25, 0.7);
+            border: 1px solid rgba(126, 200, 255, 0.4);
+            border-radius: 6px;
+            padding: 1rem 1.25rem;
+            color: #7ec8ff;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: background 0.2s, border-color 0.2s, transform 0.2s;
+        }
+
+        .link-btn:hover {
+            background: rgba(126, 200, 255, 0.15);
+            border-color: #7ec8ff;
+            transform: translateX(4px);
+        }
+
+        .link-btn.primary {
+            border-color: rgba(255, 102, 255, 0.5);
+            color: #ff66ff;
+        }
+
+        .link-btn.primary:hover {
+            background: rgba(255, 102, 255, 0.15);
+            border-color: #ff66ff;
+        }
+
+        /* Footer links */
+        .footer-links {
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .back-link {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .link-divider {
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            .screen-title {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="screen-title">Esperanto on FlashBoss</h1>
+        <p class="tagline">The world's most learnable language, built into a system that won't let you forget it.</p>
+
+        <div class="content">
+            <p>Esperanto was designed from the ground up to be easy to learn. No irregular verbs. No gendered nouns. Logical, consistent, and beautiful. It's the perfect first language — and if you already speak one second language, Esperanto might be your fastest path to a third.</p>
+
+            <p>FlashBoss gives you 1000 Esperanto words with full audio, real sentences, and spaced repetition that adapts to how you learn. 2000 additional words available as DLC (Language Mastery for Esperanto). Cards you master graduate permanently. Cards you struggle with come back until they stick. And when you're ready, a boss fight proves you know them.</p>
+
+            <p>Ten minutes a day, for the cost of a good coffee. No subscriptions, a friendly learning environment, no ads. Available on Steam - Desktop only, for now.</p>
+        </div>
+
+        <div class="links">
+            <a href="manual/walkthrough/select.html" class="link-btn">Browse the Esperanto Clusters in the Manual &rarr;</a>
+            <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website" class="link-btn primary">Get FlashBoss on Steam &rarr;</a>
+        </div>
+
+        <div class="footer-links">
+            <a href="home.html" class="back-link">&larr; Back to Hub</a>
+            <span class="link-divider">·</span>
+            <a href="found-me.html#level2" class="back-link">The FlashBoss Vision</a>
+            <span class="link-divider">·</span>
+            <a href="manual/" class="back-link">Manual</a>
+        </div>
+    </div>
+</body>
+</html>
