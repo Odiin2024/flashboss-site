@@ -29,8 +29,59 @@
         }
 
         /* ============================================
+           LEFT HALF: FlashBoss hint area
+           Visible when terminal is behind this window
+           ============================================ */
+
+        .left-hint {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 50vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            background: #0a0a19;
+            user-select: none;
+        }
+
+        .left-hint .hint-keys {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .left-hint .key {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.4rem 0.75rem;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.5);
+            letter-spacing: 0.03em;
+            box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .left-hint .key-plus {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.25);
+        }
+
+        .left-hint .hint-text {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.25);
+            letter-spacing: 0.03em;
+        }
+
+        /* ============================================
            LAYOUT: Right-half panel (landscape default)
-           Left half stays empty for the terminal
            ============================================ */
 
         .resources-shell {
@@ -43,6 +94,12 @@
             flex-direction: column;
             background: #0d0d20;
             border-left: 1px solid rgba(126, 200, 255, 0.15);
+            transition: width 0.3s ease;
+        }
+
+        .resources-shell.expanded {
+            width: 100vw;
+            border-left: none;
         }
 
         /* ── Top bar ── */
@@ -68,14 +125,14 @@
             color: #d4a574;
         }
 
-        .return-btn {
+        .expand-btn {
             display: flex;
             align-items: center;
             gap: 0.4rem;
             background: rgba(126, 200, 255, 0.1);
             border: 1px solid rgba(126, 200, 255, 0.3);
             border-radius: 4px;
-            padding: 0.35rem 0.75rem;
+            padding: 0.35rem 0.6rem;
             color: #7ec8ff;
             font-family: 'Inter', sans-serif;
             font-size: 0.75rem;
@@ -85,14 +142,23 @@
             text-decoration: none;
         }
 
-        .return-btn:hover {
+        .expand-btn:hover {
             background: rgba(126, 200, 255, 0.2);
             border-color: rgba(126, 200, 255, 0.6);
         }
 
-        .return-btn::before {
-            content: '◂';
+        .expand-btn .icon-expand,
+        .expand-btn .icon-collapse {
             font-size: 0.85rem;
+            line-height: 1;
+        }
+
+        .resources-shell:not(.expanded) .expand-btn .icon-collapse {
+            display: none;
+        }
+
+        .resources-shell.expanded .expand-btn .icon-expand {
+            display: none;
         }
 
         /* ── Main area: sidebar + viewer ── */
@@ -258,7 +324,14 @@
             text-overflow: ellipsis;
         }
 
-        .download-btn {
+        .toolbar-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .download-btn,
+        .print-btn {
             display: flex;
             align-items: center;
             gap: 0.3rem;
@@ -274,13 +347,19 @@
             transition: background 0.15s, border-color 0.15s;
         }
 
-        .download-btn:hover {
+        .download-btn:hover,
+        .print-btn:hover {
             background: rgba(212, 165, 116, 0.1);
             border-color: rgba(212, 165, 116, 0.6);
         }
 
         .download-btn::before {
             content: '↓';
+            font-size: 0.8rem;
+        }
+
+        .print-btn::before {
+            content: '⎙';
             font-size: 0.8rem;
         }
 
@@ -323,11 +402,15 @@
                 border-left: none;
             }
 
+            .left-hint {
+                display: none;
+            }
+
             .sidebar {
                 width: 180px;
             }
 
-            .return-btn {
+            .expand-btn {
                 display: none;
             }
         }
@@ -346,7 +429,6 @@
                 overflow-y: visible;
             }
 
-            /* When viewing a PDF on mobile, hide the sidebar */
             .main-area.viewing-pdf .sidebar {
                 display: none;
             }
@@ -407,17 +489,33 @@
         .release-note strong {
             color: rgba(255, 255, 255, 0.6);
         }
+
+        /* Hide left hint when expanded */
+        .resources-shell.expanded ~ .left-hint {
+            display: none;
+        }
     </style>
 </head>
 <body>
 
-<div class="resources-shell">
+<!-- Left half: hint to return to FlashBoss -->
+<div class="left-hint" id="leftHint">
+    <div class="hint-keys">
+        <span class="key">Alt</span>
+        <span class="key-plus">+</span>
+        <span class="key">Tab</span>
+    </div>
+    <div class="hint-text">to return to FlashBoss</div>
+</div>
+
+<div class="resources-shell" id="resourcesShell">
 
     <!-- Top bar -->
     <div class="top-bar">
         <h1>FlashBoss <span>Resources</span></h1>
-        <button class="return-btn" onclick="window.blur();" title="Return focus to FlashBoss terminal">
-            Return to FlashBoss
+        <button class="expand-btn" id="expandBtn" title="Expand viewer">
+            <span class="icon-expand">⛶</span>
+            <span class="icon-collapse">⊏</span>
         </button>
     </div>
 
@@ -430,14 +528,9 @@
             <!-- Esperanto -->
             <div class="lang-group">
                 <div class="lang-header">Esperanto</div>
-                <a class="resource-item" data-pdf="correlative_table.pdf" data-title="Correlative Table">
+                <a class="resource-item" data-pdf="correlative_table.pdf" data-print-pdf="correlative_table_print.pdf" data-title="Correlative Table">
                     <span class="item-icon">◆</span>
                     <span class="item-label">Correlative Table</span>
-                    <span class="item-status status-available">PDF</span>
-                </a>
-                <a class="resource-item" data-pdf="correlative_table_print.pdf" data-title="Correlative Table (Print)">
-                    <span class="item-icon">◆</span>
-                    <span class="item-label">Correlative (Print)</span>
                     <span class="item-status status-available">PDF</span>
                 </a>
                 <a class="resource-item" data-pdf="" data-title="">
@@ -506,7 +599,10 @@
             <iframe id="pdfFrame" style="display:none;" title="PDF viewer"></iframe>
             <div class="viewer-toolbar" id="viewerToolbar" style="display:none;">
                 <span class="doc-title" id="docTitle"></span>
-                <a class="download-btn" id="downloadBtn" href="#" download>Download</a>
+                <div class="toolbar-actions">
+                    <a class="print-btn" id="printBtn" href="#" title="Print-friendly version">Print</a>
+                    <a class="download-btn" id="downloadBtn" href="#" download>Download</a>
+                </div>
             </div>
         </div>
 
@@ -532,15 +628,21 @@
     const viewerToolbar = document.getElementById('viewerToolbar');
     const docTitle = document.getElementById('docTitle');
     const downloadBtn = document.getElementById('downloadBtn');
+    const printBtn = document.getElementById('printBtn');
     const mainArea = document.getElementById('mainArea');
     const mobileBack = document.getElementById('mobileBack');
+    const expandBtn = document.getElementById('expandBtn');
+    const resourcesShell = document.getElementById('resourcesShell');
+    const leftHint = document.getElementById('leftHint');
 
-    function openPdf(pdfUrl, title) {
+    let currentPrintPdf = null;
+
+    function openPdf(pdfUrl, title, printPdf, clickedItem) {
         if (!pdfUrl) return;
 
         // Update active state
         items.forEach(i => i.classList.remove('active'));
-        event.currentTarget.classList.add('active');
+        clickedItem.classList.add('active');
 
         // Show PDF
         viewerEmpty.style.display = 'none';
@@ -549,6 +651,9 @@
         viewerToolbar.style.display = 'flex';
         docTitle.textContent = title;
         downloadBtn.href = pdfUrl;
+
+        // Store print version URL
+        currentPrintPdf = printPdf || pdfUrl;
 
         // Mobile: switch to viewer mode
         mainArea.classList.add('viewing-pdf');
@@ -559,10 +664,24 @@
             e.preventDefault();
             const pdf = this.dataset.pdf;
             const title = this.dataset.title;
+            const printPdf = this.dataset.printPdf;
             if (pdf) {
-                openPdf(pdf, title);
+                openPdf(pdf, title, printPdf, this);
             }
         });
+    });
+
+    // Print button: opens print-friendly PDF in new tab for printing
+    printBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (currentPrintPdf) {
+            const printWindow = window.open(currentPrintPdf, '_blank');
+            if (printWindow) {
+                printWindow.addEventListener('load', function() {
+                    printWindow.print();
+                });
+            }
+        }
     });
 
     // Mobile back button
@@ -575,11 +694,21 @@
         items.forEach(i => i.classList.remove('active'));
     });
 
-    // Return to FlashBoss: blur this window so the terminal comes forward
-    // Works on most OS/browser combos; worst case user Alt-Tabs
+    // Expand/collapse toggle
+    expandBtn.addEventListener('click', function() {
+        resourcesShell.classList.toggle('expanded');
+        if (resourcesShell.classList.contains('expanded')) {
+            leftHint.style.display = 'none';
+        } else {
+            leftHint.style.display = '';
+        }
+    });
+
+    // Keyboard: Escape to collapse if expanded
     window.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') {
-            window.blur();
+        if (e.key === 'Escape' && resourcesShell.classList.contains('expanded')) {
+            resourcesShell.classList.remove('expanded');
+            leftHint.style.display = '';
         }
     });
 </script>
