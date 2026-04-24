@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>FlashBoss - Welcome</title>
+    <meta name="description" content="FlashBoss - Spaced repetition flashcards with boss fights. Vocabulary packs in English, German, Spanish, Italian, and Esperanto.">
+
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@300;400;500;600&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: url('home.png') center center / cover no-repeat fixed;
+            color: #5555FF;
+            min-height: 100vh;
+            min-height: 100dvh;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(10, 10, 25, 0.4);
+            pointer-events: none;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+            padding-bottom: 4rem;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .header h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.9rem;
+            font-weight: 900;
+            color: #5555FF;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Main content - two column layout */
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.5rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+
+        .landing-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        /* Card sections */
+        .card-section {
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(126, 200, 255, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .card-section h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #7ec8ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-section .intro {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 1.25rem;
+        }
+
+        .card-section p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 0.75rem;
+        }
+
+        /* About section (left) */
+
+        .about-section .description {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 1.5rem;
+        }
+
+        .link-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .link-list a {
+            font-size: 0.9rem;
+            color: #7ec8ff;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .link-list a:hover {
+            color: #ffffff;
+        }
+
+        /* Focus Section - Launch Day */
+        .focus-section {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .dev-avatar {
+            position: absolute;
+            top: -65px;
+            right: 5.5rem;
+            width: 130px;
+            height: auto;
+            filter: drop-shadow(0 0 8px rgba(126, 200, 255, 0.6)) drop-shadow(0 0 15px rgba(126, 200, 255, 0.4));
+        }
+
+        .dev-avatar img {
+            width: 100%;
+            height: auto;
+        }
+
+        .focus-header {
+            color: #7ec8ff;
+            text-align: left;
+            margin-bottom: 0.25rem;
+        }
+
+        .focus-subheader {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+
+        .focus-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            flex: 1;
+            align-content: center;
+        }
+
+        .focus-card {
+            display: block;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(85, 85, 255, 0.4);
+            border-radius: 6px;
+            padding: 1.25rem;
+            text-align: center;
+            text-decoration: none;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .focus-card:hover {
+            background: rgba(85, 85, 255, 0.1);
+            border-color: rgba(85, 85, 255, 0.7);
+        }
+
+        .focus-card .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            line-height: 1.3;
+            color: #7ec8ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .focus-card .subtext {
+            font-size: 0.95rem;
+            color: #f0e6d3;
+            margin-bottom: 0.25rem;
+        }
+
+        .focus-card .subtext-small {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-style: italic;
+        }
+
+        .focus-card .card-link {
+            font-size: 0.85rem;
+            color: #7ec8ff;
+            margin-top: 0.75rem;
+            margin-bottom: 0;
+        }
+
+        /* Packs line */
+        .packs-banner {
+            text-align: center;
+            padding: 1rem 1rem 0.5rem;
+        }
+
+        .packs-line {
+            font-family: 'Merriweather', serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #d4a574;
+            letter-spacing: 0.04em;
+        }
+
+        /* Footer */
+        .footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+        }
+
+        .footer a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: color 0.2s;
+        }
+
+        .footer a:hover {
+            color: #ffffff;
+        }
+
+        .footer .divider {
+            width: 1px;
+            height: 0.9rem;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .linux-notice {
+            position: relative;
+            margin-top: 1rem;
+            text-align: center;
+            cursor: help;
+        }
+
+        .linux-notice a {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .linux-notice a:hover {
+            color: #7ec8ff;
+        }
+
+        .linux-notice .notice-text {
+            display: none;
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.9);
+            border: 1px solid rgba(255, 102, 255, 0.4);
+            border-radius: 6px;
+            padding: 0.75rem 1rem;
+            width: max-content;
+            max-width: 280px;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 0.5rem;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .linux-notice:hover .notice-text {
+            display: block;
+        }
+
+        /* Tablet and up */
+        @media (min-width: 768px) {
+            .header h1 {
+                font-size: 3.4rem;
+            }
+
+            .landing-grid {
+                grid-template-columns: 35fr 65fr;
+            }
+
+            .focus-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .card-section {
+                padding: 1.75rem;
+            }
+
+            .card-section h2 {
+                font-size: 1.3rem;
+            }
+
+            .footer {
+                padding: 1.25rem;
+                gap: 1.5rem;
+            }
+
+            .footer a {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Desktop */
+        @media (min-width: 1024px) {
+            .header h1 {
+                font-size: 3.8rem;
+            }
+
+            .container {
+                padding: 2rem 3rem;
+                padding-bottom: 4rem;
+            }
+
+            .main {
+                max-width: 1100px;
+            }
+
+            .card-section {
+                padding: 2rem;
+            }
+
+            .card-section h2 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-home" style="color: inherit; text-decoration: none;">FlashCards with <span style="color: #d4a574;">Bossfights</span></a></h1>
+        </header>
+
+        <main class="main">
+            <!-- Two-column landing -->
+            <div class="landing-grid">
+                <!-- Left: About -->
+                <section class="card-section about-section">
+                    <h2><a href="about.html" style="color: inherit; text-decoration: none;">What is FlashBoss?</a></h2>
+                    <p class="description">Build your vocabulary in English, German, Spanish, Italian, or Esperanto through spaced repetition and boss fights. Full text-to-speech on every target word and example sentence. Each course structured with reference lessons and themed clusters. Listen, read, repeat, rate, fight.</p>
+                    <div class="link-list">
+                        <a href="about.html">The about section →</a>
+                        <a href="manual/">Browse the manual →</a>
+                        <a href="press.html">Help FlashBoss grow →</a>
+                    </div>
+                </section>
+
+                <!-- Right: DLC Offer -->
+                <section class="card-section focus-section">
+                    <a href="found-me.html" class="dev-avatar">
+                        <img src="odiin.png" alt="Odiin">
+                    </a>
+                    <h2 class="focus-header">3 Free Packs Included</h2>
+                    <p class="focus-subheader">English Adept · German Core · Esperanto Core — 1,000 cards each</p>
+                    <div class="focus-grid">
+                        <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-home" class="focus-card">
+                            <p class="card-title">Now on Steam — $4.99</p>
+                            <p class="subtext">All Sales and Downloads</p>
+                            <p class="subtext-small">Managed on the Store Page</p>
+                            <p class="card-link">Get it on Steam →</p>
+                        </a>
+
+                        <a href="https://flashboss-demo.pages.dev/" class="focus-card">
+                            <p class="card-title">Try the Boss Fight</p>
+                            <p class="subtext">Playable in Your Browser</p>
+                            <p class="subtext-small">English Vocabulary Demo</p>
+                            <p class="card-link">Launch the Demo →</p>
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+
+        <div class="packs-banner">
+            <p class="packs-line">English · German · Spanish · Italian · Esperanto</p>
+        </div>
+
+        <footer class="footer">
+            <a href="index.html">Entrance</a>
+            <span class="divider"></span>
+            <a href="manual/">Manual</a>
+            <span class="divider"></span>
+            <a href="about.html">About</a>
+        </footer>
+
+    </div>
+</body>
+</html>

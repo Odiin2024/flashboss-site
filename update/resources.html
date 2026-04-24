@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>FlashBoss - Resources</title>
+    <meta name="description" content="FlashBoss downloadable resources — printable reference sheets, correlative tables, and supplementary materials for all language packs.">
+
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0a0a19;
+            color: #f0e6d3;
+        }
+
+        /* ============================================
+           LEFT HALF: FlashBoss hint area
+           Visible when terminal is behind this window
+           ============================================ */
+
+        .left-hint {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 50vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            background: #0a0a19;
+            user-select: none;
+        }
+
+        .left-hint .hint-keys {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .left-hint .key {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.4rem 0.75rem;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.5);
+            letter-spacing: 0.03em;
+            box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .left-hint .key-plus {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.25);
+        }
+
+        .left-hint .hint-text {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.25);
+            letter-spacing: 0.03em;
+        }
+
+        /* ============================================
+           LAYOUT: Right-half panel (landscape default)
+           ============================================ */
+
+        .resources-shell {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 50vw;
+            display: flex;
+            flex-direction: column;
+            background: #0d0d20;
+            border-left: 1px solid rgba(126, 200, 255, 0.15);
+            transition: width 0.3s ease;
+        }
+
+        .resources-shell.expanded {
+            width: 100vw;
+            border-left: none;
+        }
+
+        /* ── Top bar ── */
+        .top-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.6rem 1rem;
+            background: rgba(0, 0, 0, 0.4);
+            border-bottom: 1px solid rgba(126, 200, 255, 0.1);
+            flex-shrink: 0;
+        }
+
+        .top-bar h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #7ec8ff;
+            letter-spacing: 0.02em;
+        }
+
+        .top-bar h1 span {
+            color: #d4a574;
+        }
+
+        .expand-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: rgba(126, 200, 255, 0.1);
+            border: 1px solid rgba(126, 200, 255, 0.3);
+            border-radius: 4px;
+            padding: 0.35rem 0.6rem;
+            color: #7ec8ff;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s, border-color 0.2s;
+            text-decoration: none;
+        }
+
+        .expand-btn:hover {
+            background: rgba(126, 200, 255, 0.2);
+            border-color: rgba(126, 200, 255, 0.6);
+        }
+
+        .expand-btn .icon-expand,
+        .expand-btn .icon-collapse {
+            font-size: 0.85rem;
+            line-height: 1;
+        }
+
+        .resources-shell:not(.expanded) .expand-btn .icon-collapse {
+            display: none;
+        }
+
+        .resources-shell.expanded .expand-btn .icon-expand {
+            display: none;
+        }
+
+        /* ── Main area: sidebar + viewer ── */
+        .main-area {
+            flex: 1;
+            display: flex;
+            overflow: hidden;
+        }
+
+        /* ── Sidebar: language list ── */
+        .sidebar {
+            width: 220px;
+            flex-shrink: 0;
+            overflow-y: auto;
+            padding: 1rem 0;
+            border-right: 1px solid rgba(126, 200, 255, 0.08);
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .sidebar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .sidebar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .sidebar::-webkit-scrollbar-thumb {
+            background: rgba(126, 200, 255, 0.2);
+            border-radius: 2px;
+        }
+
+        .lang-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .lang-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 1rem;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .lang-header::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .resource-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.75);
+            cursor: pointer;
+            transition: background 0.15s, color 0.15s;
+            text-decoration: none;
+            border-left: 2px solid transparent;
+        }
+
+        .resource-item:hover {
+            background: rgba(126, 200, 255, 0.06);
+            color: #fff;
+        }
+
+        .resource-item.active {
+            background: rgba(126, 200, 255, 0.1);
+            border-left-color: #7ec8ff;
+            color: #7ec8ff;
+        }
+
+        .resource-item .item-icon {
+            font-size: 0.7rem;
+            opacity: 0.5;
+        }
+
+        .resource-item .item-label {
+            flex: 1;
+        }
+
+        .resource-item .item-status {
+            font-size: 0.6rem;
+            padding: 0.15rem 0.4rem;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        .status-available {
+            background: rgba(46, 204, 113, 0.15);
+            color: #2ecc71;
+        }
+
+        .status-coming {
+            background: rgba(241, 196, 15, 0.15);
+            color: #f1c40f;
+        }
+
+        .status-planned {
+            background: rgba(255, 255, 255, 0.06);
+            color: rgba(255, 255, 255, 0.35);
+        }
+
+        /* ── PDF Viewer ── */
+        .viewer {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            background: #111125;
+        }
+
+        .viewer-empty {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            color: rgba(255, 255, 255, 0.25);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .viewer-empty .empty-icon {
+            font-size: 2.5rem;
+            opacity: 0.4;
+        }
+
+        .viewer-empty p {
+            font-size: 0.85rem;
+            max-width: 240px;
+            line-height: 1.5;
+        }
+
+        .viewer iframe {
+            flex: 1;
+            width: 100%;
+            border: none;
+            background: #111125;
+        }
+
+        .viewer-toolbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.4rem 0.75rem;
+            background: rgba(0, 0, 0, 0.3);
+            border-top: 1px solid rgba(126, 200, 255, 0.08);
+            flex-shrink: 0;
+        }
+
+        .viewer-toolbar .doc-title {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.5);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .toolbar-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .download-btn,
+        .print-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            background: none;
+            border: 1px solid rgba(212, 165, 116, 0.3);
+            border-radius: 3px;
+            padding: 0.25rem 0.6rem;
+            color: #d4a574;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.7rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.15s, border-color 0.15s;
+        }
+
+        .download-btn:hover,
+        .print-btn:hover {
+            background: rgba(212, 165, 116, 0.1);
+            border-color: rgba(212, 165, 116, 0.6);
+        }
+
+        .download-btn::before {
+            content: '↓';
+            font-size: 0.8rem;
+        }
+
+        .print-btn::before {
+            content: '⎙';
+            font-size: 0.8rem;
+        }
+
+        /* ── Footer ── */
+        .bottom-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            padding: 0.5rem 1rem;
+            background: rgba(0, 0, 0, 0.3);
+            border-top: 1px solid rgba(126, 200, 255, 0.08);
+            flex-shrink: 0;
+        }
+
+        .bottom-bar a {
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.45);
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+
+        .bottom-bar a:hover {
+            color: #7ec8ff;
+        }
+
+        .bottom-bar .divider {
+            width: 1px;
+            height: 0.7rem;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        /* ============================================
+           PORTRAIT / MOBILE: full-width
+           ============================================ */
+
+        @media (orientation: portrait), (max-width: 900px) {
+            .resources-shell {
+                width: 100vw;
+                border-left: none;
+            }
+
+            .left-hint {
+                display: none;
+            }
+
+            .sidebar {
+                width: 180px;
+            }
+
+            .expand-btn {
+                display: none;
+            }
+        }
+
+        /* ── Very small screens: collapse sidebar ── */
+        @media (max-width: 600px) {
+            .main-area {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                max-height: none;
+                border-right: none;
+                border-bottom: 1px solid rgba(126, 200, 255, 0.08);
+                overflow-y: visible;
+            }
+
+            .main-area.viewing-pdf .sidebar {
+                display: none;
+            }
+
+            .main-area.viewing-pdf .viewer {
+                flex: 1;
+            }
+
+            .mobile-back-btn {
+                display: flex;
+                align-items: center;
+                gap: 0.3rem;
+                padding: 0.5rem 0.75rem;
+                font-size: 0.75rem;
+                color: #7ec8ff;
+                cursor: pointer;
+                background: rgba(0, 0, 0, 0.2);
+                border: none;
+                border-bottom: 1px solid rgba(126, 200, 255, 0.08);
+                width: 100%;
+                font-family: 'Inter', sans-serif;
+            }
+
+            .mobile-back-btn::before {
+                content: '◂';
+            }
+
+            .main-area:not(.viewing-pdf) .mobile-back-btn {
+                display: none;
+            }
+
+            .main-area:not(.viewing-pdf) .viewer {
+                display: none;
+            }
+        }
+
+        @media (min-width: 601px) {
+            .mobile-back-btn {
+                display: none !important;
+            }
+        }
+
+        /* ============================================
+           RELEASE CALENDAR (inline in sidebar)
+           ============================================ */
+
+        .release-note {
+            padding: 0.75rem 1rem;
+            margin: 0.5rem 0.75rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 4px;
+            font-size: 0.7rem;
+            line-height: 1.5;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .release-note strong {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Hide left hint when expanded */
+        .resources-shell.expanded ~ .left-hint {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Left half: hint to return to FlashBoss -->
+<div class="left-hint" id="leftHint">
+    <div class="hint-keys">
+        <span class="key">Alt</span>
+        <span class="key-plus">+</span>
+        <span class="key">Tab</span>
+    </div>
+    <div class="hint-text">to return to FlashBoss</div>
+</div>
+
+<div class="resources-shell" id="resourcesShell">
+
+    <!-- Top bar -->
+    <div class="top-bar">
+        <h1>FlashBoss <span>Resources</span></h1>
+        <button class="expand-btn" id="expandBtn" title="Expand viewer">
+            <span class="icon-expand">⛶</span>
+            <span class="icon-collapse">⊏</span>
+        </button>
+    </div>
+
+    <!-- Main area -->
+    <div class="main-area" id="mainArea">
+
+        <!-- Sidebar -->
+        <nav class="sidebar">
+
+            <!-- Esperanto -->
+            <div class="lang-group">
+                <div class="lang-header">Esperanto</div>
+                <a class="resource-item" data-pdf="correlative_table.pdf" data-print-pdf="correlative_table_print.pdf" data-title="Correlative Table">
+                    <span class="item-icon">◆</span>
+                    <span class="item-label">Correlative Table</span>
+                    <span class="item-status status-available">PDF</span>
+                </a>
+                <a class="resource-item" data-pdf="" data-title="">
+                    <span class="item-icon">◇</span>
+                    <span class="item-label">Affix Stacking Guide</span>
+                    <span class="item-status status-coming">Soon</span>
+                </a>
+            </div>
+
+            <!-- German -->
+            <div class="lang-group">
+                <div class="lang-header">German</div>
+                <a class="resource-item" data-pdf="" data-title="">
+                    <span class="item-icon">◇</span>
+                    <span class="item-label">Case Overview</span>
+                    <span class="item-status status-coming">Soon</span>
+                </a>
+                <a class="resource-item" data-pdf="" data-title="">
+                    <span class="item-icon">◇</span>
+                    <span class="item-label">Article Reference</span>
+                    <span class="item-status status-coming">Soon</span>
+                </a>
+            </div>
+
+            <!-- Spanish -->
+            <div class="lang-group">
+                <div class="lang-header">Spanish</div>
+                <a class="resource-item" data-pdf="" data-title="">
+                    <span class="item-icon">◇</span>
+                    <span class="item-label">Conjugation Cheatsheet</span>
+                    <span class="item-status status-planned">Planned</span>
+                </a>
+            </div>
+
+            <!-- English Roots -->
+            <div class="lang-group">
+                <div class="lang-header">English Roots</div>
+                <a class="resource-item" data-pdf="" data-title="">
+                    <span class="item-icon">◇</span>
+                    <span class="item-label">Latin Roots Reference</span>
+                    <span class="item-status status-planned">Planned</span>
+                </a>
+                <a class="resource-item" data-pdf="" data-title="">
+                    <span class="item-icon">◇</span>
+                    <span class="item-label">German Roots Reference</span>
+                    <span class="item-status status-planned">Planned</span>
+                </a>
+            </div>
+
+            <!-- Release note -->
+            <div class="release-note">
+                <strong>Coming next:</strong><br>
+                Spanish Core & Pareto 1 — Spring 2026<br>
+                Latin & German Roots — 2026
+            </div>
+
+        </nav>
+
+        <!-- Viewer -->
+        <div class="viewer" id="viewer">
+            <button class="mobile-back-btn" id="mobileBack">Back to resources</button>
+            <div class="viewer-empty" id="viewerEmpty">
+                <div class="empty-icon">◈</div>
+                <p>Select a resource from the list to preview it here</p>
+            </div>
+            <iframe id="pdfFrame" style="display:none;" title="PDF viewer"></iframe>
+            <div class="viewer-toolbar" id="viewerToolbar" style="display:none;">
+                <span class="doc-title" id="docTitle"></span>
+                <div class="toolbar-actions">
+                    <a class="print-btn" id="printBtn" href="#" title="Print-friendly version">Print</a>
+                    <a class="download-btn" id="downloadBtn" href="#" download>Download</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="bottom-bar">
+        <a href="home.html">Hub</a>
+        <span class="divider"></span>
+        <a href="manual/">Manual</a>
+        <span class="divider"></span>
+        <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-resources">Steam</a>
+        <span class="divider"></span>
+        <a href="index.html">Entrance</a>
+    </div>
+
+</div>
+
+<script>
+    const items = document.querySelectorAll('.resource-item');
+    const pdfFrame = document.getElementById('pdfFrame');
+    const viewerEmpty = document.getElementById('viewerEmpty');
+    const viewerToolbar = document.getElementById('viewerToolbar');
+    const docTitle = document.getElementById('docTitle');
+    const downloadBtn = document.getElementById('downloadBtn');
+    const printBtn = document.getElementById('printBtn');
+    const mainArea = document.getElementById('mainArea');
+    const mobileBack = document.getElementById('mobileBack');
+    const expandBtn = document.getElementById('expandBtn');
+    const resourcesShell = document.getElementById('resourcesShell');
+    const leftHint = document.getElementById('leftHint');
+
+    let currentPrintPdf = null;
+
+    function openPdf(pdfUrl, title, printPdf, clickedItem) {
+        if (!pdfUrl) return;
+
+        // Update active state
+        items.forEach(i => i.classList.remove('active'));
+        clickedItem.classList.add('active');
+
+        // Show PDF
+        viewerEmpty.style.display = 'none';
+        pdfFrame.style.display = 'block';
+        pdfFrame.src = pdfUrl;
+        viewerToolbar.style.display = 'flex';
+        docTitle.textContent = title;
+        downloadBtn.href = pdfUrl;
+
+        // Store print version URL
+        currentPrintPdf = printPdf || pdfUrl;
+
+        // Mobile: switch to viewer mode
+        mainArea.classList.add('viewing-pdf');
+    }
+
+    items.forEach(item => {
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+            const pdf = this.dataset.pdf;
+            const title = this.dataset.title;
+            const printPdf = this.dataset.printPdf;
+            if (pdf) {
+                openPdf(pdf, title, printPdf, this);
+            }
+        });
+    });
+
+    // Print button: opens print-friendly PDF in new tab for printing
+    printBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (currentPrintPdf) {
+            const printWindow = window.open(currentPrintPdf, '_blank');
+            if (printWindow) {
+                printWindow.addEventListener('load', function() {
+                    printWindow.print();
+                });
+            }
+        }
+    });
+
+    // Mobile back button
+    mobileBack.addEventListener('click', function() {
+        mainArea.classList.remove('viewing-pdf');
+        pdfFrame.style.display = 'none';
+        pdfFrame.src = '';
+        viewerEmpty.style.display = 'flex';
+        viewerToolbar.style.display = 'none';
+        items.forEach(i => i.classList.remove('active'));
+    });
+
+    // Expand/collapse toggle
+    expandBtn.addEventListener('click', function() {
+        resourcesShell.classList.toggle('expanded');
+        if (resourcesShell.classList.contains('expanded')) {
+            leftHint.style.display = 'none';
+        } else {
+            leftHint.style.display = '';
+        }
+    });
+
+    // Keyboard: Escape to collapse if expanded
+    window.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && resourcesShell.classList.contains('expanded')) {
+            resourcesShell.classList.remove('expanded');
+            leftHint.style.display = '';
+        }
+    });
+</script>
+
+</body>
+</html>

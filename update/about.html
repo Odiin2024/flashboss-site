@@ -501,22 +501,21 @@
                 <p>TTS replays the example sentence on demand. Repeat cycles are unlimited at this phase; the learner moves forward when ready.</p>
 
                 <h3>Rate</h3>
-                <p>The learner rates their recognition on a six-point scale (0 through 5). The rating shifts the card's position in a Fibonacci interval sequence (1, 2, 3, 5, 8, 13, 21… days), with a per-rating minimum interval applied as a floor. Rating 0 is a special case — a reset to 1 day regardless of the card's prior position.</p>
+                <p>The learner rates their recognition on a five-point scale. The rating determines the card's next scheduled interval along a Fibonacci sequence (1, 2, 3, 5, 8, 13, 21… days).</p>
                 <table class="spec-table">
                     <thead>
-                        <tr><th>Rating</th><th>Meaning</th><th>Interval change</th></tr>
+                        <tr><th>Rating</th><th>Effect on interval</th><th>Meaning</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td><code>0</code></td><td>Forgot completely.</td><td>Reset to 1 day.</td></tr>
-                        <tr><td><code>1</code></td><td>Very poor.</td><td>Position −3 (minimum 1 day).</td></tr>
-                        <tr><td><code>2</code></td><td>Poor.</td><td>Position −2 (minimum 2 days).</td></tr>
-                        <tr><td><code>3</code></td><td>Okay.</td><td>Position −1 (minimum 3 days).</td></tr>
-                        <tr><td><code>4</code></td><td>Good.</td><td>No change (minimum 5 days).</td></tr>
-                        <tr><td><code>5</code></td><td>Perfect.</td><td>Position +1 (minimum 8 days).</td></tr>
+                        <tr><td><code>1 · Miss</code></td><td>Drop three Fibonacci steps (floored at minimum).</td><td>Not recognised.</td></tr>
+                        <tr><td><code>2 · Hard</code></td><td>Drop two Fibonacci steps (floored).</td><td>Recognised with significant effort.</td></tr>
+                        <tr><td><code>3 · Okay</code></td><td>Drop one Fibonacci step (floored).</td><td>Recognised, slow.</td></tr>
+                        <tr><td><code>4 · Good</code></td><td>Hold at current interval.</td><td>Fluent recognition.</td></tr>
+                        <tr><td><code>5 · Perfect</code></td><td>Advance one Fibonacci step.</td><td>Immediate, effortless.</td></tr>
                     </tbody>
                 </table>
-                <p>The scale is calibrated to require aggressive rating for progress. Only a 5 advances a card; 4 holds position; 1 through 3 step the card backward through the Fibonacci schedule; 0 resets it to 1 day. The per-rating minimum intervals prevent a card's interval from collapsing on a bad rating, and they anchor the graduation rule.</p>
-                <p>A card is graduated on two consecutive 5 ratings. The mechanism is direct: a single 5 lifts the card's minimum interval to 8 days; a second 5 advances it to 13 days — the graduation threshold. From any starting position, two consecutive perfect recalls therefore carry a card to graduation. The two-5 rule filters out lucky moments: one effortless recall can be chance, but two in succession signal stable recall. A graduated card exits the active training pile and returns only at its scheduled Fibonacci interval.</p>
+                <p>The scale is calibrated to require aggressive rating for progress: only a 5 advances a card, a 4 holds, and ratings below 4 step the card backward through the interval schedule. A minimum-interval floor prevents the interval from collapsing below the base level. Cards therefore only advance when the learner truly nails them; the scheduler systematically re-surfaces cards that have not yet been mastered.</p>
+                <p>Two consecutive 5 ratings graduate a card — it exits the active training pile and enters long-term scheduled review. The two-5 threshold is deliberate: a single 5 can reflect a lucky moment; two in a row signal stable recall.</p>
 
                 <h3>Daily mix</h3>
                 <p>New cards are drawn into the deck one at a time in cluster order; cluster boundaries do not gate card introduction. Daily card volume follows a Fibonacci ratio — for a given day's session, review cards and new cards are drawn in proportion to consecutive Fibonacci numbers, so the mix approaches φ: the golden ratio. The learner does not configure this; pacing is scheduler-managed.</p>
