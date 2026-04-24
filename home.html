@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>FlashBoss - Welcome</title>
-    <meta name="description" content="FlashBoss - Spaced repetition flashcards with boss fights. German Core and Esperanto Core available now.">
+    <meta name="description" content="FlashBoss - Spaced repetition flashcards with boss fights. Vocabulary packs in English, German, Spanish, Italian, and Esperanto.">
 
     <link rel="icon" type="image/png" href="icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -117,13 +117,6 @@
 
         /* About section (left) */
 
-        .about-section .tagline {
-            font-size: 0.77rem;
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 1rem;
-            font-weight: 500;
-        }
-
         .about-section .description {
             color: rgba(255, 255, 255, 0.8);
             margin-bottom: 1.5rem;
@@ -231,22 +224,27 @@
             margin-bottom: 0;
         }
 
-        /* Esperanto link */
-        .esperanto-banner {
+        /* Packs line */
+        .packs-banner {
             text-align: center;
             padding: 1rem 1rem 0.5rem;
         }
 
-        .esperanto-link {
+        .packs-line {
             font-family: 'Merriweather', serif;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             font-weight: 700;
+            color: #d4a574;
+            letter-spacing: 0.04em;
+        }
+
+        .packs-line a {
             color: #d4a574;
             text-decoration: none;
             transition: color 0.2s;
         }
 
-        .esperanto-link:hover {
+        .packs-line a:hover {
             color: #e8c49a;
         }
 
@@ -391,12 +389,11 @@
                 <!-- Left: About -->
                 <section class="card-section about-section">
                     <h2><a href="about.html" style="color: inherit; text-decoration: none;">What is FlashBoss?</a></h2>
-                    <p class="tagline">Flashcards with boss fights.</p>
-                    <p class="description">Learn German and Esperanto vocabulary through spaced repetition, real sentences, and boss fights. Built by a CELTA-certified language teacher.</p>
+                    <p class="description">Build your vocabulary in English, German, Spanish, Italian, or Esperanto through spaced repetition and boss fights. Full text-to-speech on every target word and example sentence. Each course structured with reference lessons and themed clusters. Listen, read, repeat, rate, fight.</p>
                     <div class="link-list">
                         <a href="about.html">The about section →</a>
                         <a href="manual/">Browse the manual →</a>
-                        <a href="press.html">Promotional Material →</a>
+                        <a href="press.html">Help FlashBoss grow →</a>
                     </div>
                 </section>
 
@@ -405,8 +402,8 @@
                     <a href="found-me.html" class="dev-avatar">
                         <img src="odiin.png" alt="Odiin">
                     </a>
-                    <h2 class="focus-header">German Core and Esperanto Core Included</h2>
-                    <p class="focus-subheader">1000 Flashcards in Each Set</p>
+                    <h2 class="focus-header">3 Free Packs Included</h2>
+                    <p class="focus-subheader">English Adept · German Core · Esperanto Core — 1,000 cards each</p>
                     <div class="focus-grid">
                         <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-home" class="focus-card">
                             <p class="card-title">Now on Steam — $4.99</p>
@@ -415,11 +412,11 @@
                             <p class="card-link">Get it on Steam →</p>
                         </a>
 
-                        <a href="manual/" class="focus-card">
-                            <p class="card-title">Interactive Manual</p>
-                            <p class="subtext">See How FlashBoss Works</p>
-                            <p class="subtext-small">View Sample Clusters</p>
-                            <p class="card-link">Open the Manual →</p>
+                        <a href="https://flashboss-demo.pages.dev/" class="focus-card">
+                            <p class="card-title">Try the Boss Fight</p>
+                            <p class="subtext">Playable in Your Browser</p>
+                            <p class="subtext-small">English Vocabulary Demo</p>
+                            <p class="card-link">Launch the Demo →</p>
                         </a>
                     </div>
                 </section>
@@ -427,8 +424,8 @@
 
         </main>
 
-        <div class="esperanto-banner">
-            <a href="esperanto.html" class="esperanto-link">Curious about Esperanto - Learn More Here</a>
+        <div class="packs-banner">
+            <p class="packs-line"><a href="https://store.steampowered.com/app/4587720/FlashBoss__Norman_Roots/">English</a> · <a href="https://store.steampowered.com/app/4134850/FlashBoss__German_Pareto_1/">German</a> · <a href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/">Spanish</a> · <a href="https://store.steampowered.com/app/4475030/FlashBoss__Italian_Core/">Italian</a> · <a href="esperanto.html">Esperanto</a></p>
         </div>
 
         <footer class="footer">
