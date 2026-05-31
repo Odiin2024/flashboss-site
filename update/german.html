@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>German — FlashBoss</title>
+<meta name="description" content="FlashBoss German: a thousand words that grow up as you do. Songs of Innocence and of Experience — from 'Ich bin Student' to the letter from the Finanzamt. Spaced repetition, boss fights, gender colour-coding, and text-to-speech.">
+
+<!-- House font. If self-hosting, swap this for your local JetBrains Mono. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   FlashBoss — German page
+   Aesthetic: phosphor terminal. The page itself moves from
+   INNOCENCE (warm, open, gentle) to EXPERIENCE (cold, dense,
+   exacting) as you scroll — Blake's arc, enacted.
+
+   TUNE THESE FIRST:
+   --der / --die / --das  -> match your in-game gender colours.
+   --steam-url            -> set in the two CTA links below.
+   ============================================================ */
+:root{
+  --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
+
+  /* gender colour-coding — RETUNE to the game's exact palette */
+  --der:#6cb6ff;   /* masculine */
+  --die:#ff8fa3;   /* feminine  */
+  --das:#8fe388;   /* neuter    */
+
+  /* innocence palette (top of page) */
+  --inn-bg:#15120c;
+  --inn-ink:#ecdcb6;
+  --inn-dim:#b9a677;
+  --inn-accent:#e6b450;   /* warm amber */
+
+  /* experience palette (bottom of page) */
+  --exp-bg:#080b0a;
+  --exp-ink:#d6e6da;
+  --exp-dim:#7f968a;
+  --exp-accent:#5fd79a;   /* cold phosphor green */
+
+  /* mood: 0 = innocence, 1 = experience. Driven by scroll. */
+  --mood:0;
+
+  --line: color-mix(in oklab, #6a5a3a, #2a3a30 calc(var(--mood) * 100%));
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:var(--mono);
+  background:#0c0c0a; /* fallback */
+  background:
+    color-mix(in oklab, var(--inn-bg), var(--exp-bg) calc(var(--mood) * 100%));
+  color:
+    color-mix(in oklab, var(--inn-ink), var(--exp-ink) calc(var(--mood) * 100%));
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  transition:background 120ms linear, color 120ms linear;
+  overflow-x:hidden;
+}
+
+/* CRT scanline + grain overlay */
+.overlay{
+  position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(0,0,0,0) 0px,
+      rgba(0,0,0,0) 2px,
+      rgba(0,0,0,.045) 3px,
+      rgba(0,0,0,0) 4px);
+  mix-blend-mode:multiply;
+}
+.vignette{
+  position:fixed; inset:0; pointer-events:none; z-index:9998;
+  background:radial-gradient(120% 90% at 50% 35%, transparent 55%, rgba(0,0,0,.55) 100%);
+}
+
+.wrap{max-width:880px; margin:0 auto; padding:0 24px;}
+
+/* ---- nav (placeholder — splice in your site header) ---- */
+nav{
+  display:flex; justify-content:space-between; align-items:center;
+  padding:18px 24px; font-size:13px; letter-spacing:.04em;
+  border-bottom:1px solid var(--line);
+}
+nav .brand{font-weight:800; letter-spacing:.18em;}
+nav .links a{
+  color:inherit; text-decoration:none; opacity:.7; margin-left:22px;
+}
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+
+/* ---- reveal on scroll ---- */
+.reveal{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease;}
+.reveal.in{opacity:1; transform:none;}
+
+/* ---- HERO ---- */
+.hero{padding:90px 0 70px;}
+.kicker{
+  font-size:12px; letter-spacing:.32em; text-transform:uppercase;
+  color:var(--inn-accent); opacity:.85; margin-bottom:26px;
+}
+.hero h1{
+  font-size:clamp(44px, 11vw, 104px);
+  line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;
+}
+.hero h1 .small{display:block; font-size:.34em; letter-spacing:.42em; font-weight:500; opacity:.6; margin-top:18px;}
+.cursor{
+  display:inline-block; width:.6em; height:1em; vertical-align:-.08em;
+  background:var(--inn-accent); margin-left:.12em;
+  animation:blink 1.05s steps(1) infinite;
+}
+@keyframes blink{50%{opacity:0;}}
+.hero .tagline{
+  font-size:clamp(17px,2.7vw,23px); max-width:42ch; margin:30px 0 0;
+  color:var(--inn-ink); font-weight:500;
+}
+.hero .sig{
+  font-size:13px; letter-spacing:.24em; text-transform:uppercase;
+  color:var(--inn-accent); margin:14px 0 0; opacity:.9;
+}
+.hero .lede{
+  font-size:clamp(15px,2.2vw,18px); max-width:46ch; margin:24px 0 0;
+  color:var(--inn-dim);
+}
+.hero .lede b{color:var(--inn-ink); font-weight:700;}
+
+.btn{
+  display:inline-block; margin-top:40px;
+  font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.08em;
+  color:#15120c; background:var(--inn-accent);
+  padding:14px 26px; text-decoration:none; border:0;
+  box-shadow:6px 6px 0 color-mix(in oklab, var(--inn-accent), #000 60%);
+  transition:transform .12s ease, box-shadow .12s ease;
+}
+.btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--inn-accent), #000 60%);}
+.btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--inn-accent), #000 60%);}
+.btn.cold{color:#080b0a; background:var(--exp-accent); box-shadow-color:#000;
+  box-shadow:6px 6px 0 color-mix(in oklab, var(--exp-accent), #000 60%);}
+.btn.cold:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--exp-accent), #000 60%);}
+
+/* ---- section frame (box-drawing) ---- */
+section{padding:64px 0;}
+.frame{
+  border:1px solid var(--line);
+  position:relative;
+  padding:34px 30px 32px;
+}
+.frame > .tag{
+  position:absolute; top:-10px; left:22px;
+  background:color-mix(in oklab, var(--inn-bg), var(--exp-bg) calc(var(--mood)*100%));
+  padding:0 12px; font-size:11px; letter-spacing:.3em; text-transform:uppercase;
+  color:color-mix(in oklab, var(--inn-accent), var(--exp-accent) calc(var(--mood)*100%));
+}
+h2{
+  font-size:clamp(26px,5vw,40px); margin:0 0 8px; font-weight:800; letter-spacing:-.01em;
+}
+.sub{color:var(--inn-dim); font-size:14px; letter-spacing:.04em; margin:0 0 26px;}
+p.body{font-size:16px; max-width:62ch; margin:0 0 18px;
+  color:color-mix(in oklab, var(--inn-ink), var(--exp-ink) calc(var(--mood)*100%));}
+p.body b{color:var(--inn-accent);}
+.de{font-style:italic; opacity:.95;}
+
+/* ---- the two movements ---- */
+.movements{display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px solid var(--line);}
+.mv{padding:30px 26px;}
+.mv:first-child{border-right:1px solid var(--line); background:rgba(230,180,80,.04);}
+.mv:last-child{background:rgba(95,215,154,.04);}
+.mv .h{font-size:12px; letter-spacing:.3em; text-transform:uppercase; margin-bottom:14px;}
+.mv.inn .h{color:var(--inn-accent);}
+.mv.exp .h{color:var(--exp-accent);}
+.mv p{font-size:14.5px; margin:0;}
+@media(max-width:640px){
+  .movements{grid-template-columns:1fr;}
+  .mv:first-child{border-right:0; border-bottom:1px solid var(--line);}
+}
+
+/* ---- sentence ladder ---- */
+.ladder{list-style:none; margin:0; padding:0; counter-reset:tier;}
+.ladder li{
+  counter-increment:tier;
+  border-left:2px solid var(--line);
+  padding:18px 0 18px 26px; margin-left:8px;
+  position:relative;
+}
+.ladder li::before{
+  content:"T" counter(tier);
+  position:absolute; left:-15px; top:18px;
+  background:color-mix(in oklab, var(--inn-bg), var(--exp-bg) calc(var(--mood)*100%));
+  font-size:11px; font-weight:700; letter-spacing:.05em; padding:2px 0;
+  color:color-mix(in oklab, var(--inn-accent), var(--exp-accent) calc(var(--mood)*100%));
+}
+.ladder .ger{font-weight:500;}
+.ladder li:nth-child(1) .ger{font-size:15px;}
+.ladder li:nth-child(2) .ger{font-size:16px;}
+.ladder li:nth-child(3) .ger{font-size:17px;}
+.ladder li:nth-child(4) .ger{font-size:18px;}
+.ladder li:nth-child(5) .ger{font-size:19px; font-weight:700;}
+.ladder .en{display:block; color:var(--inn-dim); font-size:13px; margin-top:6px;}
+
+/* ---- card / gender colour demo ---- */
+.cards{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
+@media(max-width:640px){.cards{grid-template-columns:1fr;}}
+.card{
+  border:1px solid var(--line); padding:20px 18px; cursor:pointer;
+  background:rgba(255,255,255,.015); transition:border-color .15s ease, background .15s ease;
+  min-height:150px;
+}
+.card:hover{border-color:color-mix(in oklab, var(--inn-accent), var(--exp-accent) calc(var(--mood)*100%));}
+.card .art{font-size:13px; letter-spacing:.18em; text-transform:lowercase; font-weight:700;}
+.card.m .art{color:var(--der);} .card.f .art{color:var(--die);} .card.n .art{color:var(--das);}
+.card .word{font-size:22px; font-weight:800; margin:2px 0 12px;}
+.card .ex{font-size:13px; color:var(--inn-dim); font-style:italic;}
+.card .trans{font-size:12.5px; color:var(--inn-dim); margin-top:10px;
+  max-height:0; overflow:hidden; opacity:0; transition:max-height .3s ease, opacity .3s ease;}
+.card.flipped .trans{max-height:200px; opacity:1;}
+.card .hint{font-size:10px; letter-spacing:.2em; text-transform:uppercase; opacity:.45; margin-top:12px;}
+.legend{display:flex; gap:20px; flex-wrap:wrap; font-size:12px; margin:0 0 22px; color:var(--inn-dim);}
+.legend span{display:inline-flex; align-items:center; gap:7px;}
+.legend i{width:11px; height:11px; display:inline-block;}
+.legend .lm{background:var(--der);} .legend .lf{background:var(--die);} .legend .ln{background:var(--das);}
+
+/* ---- the form (experience) ---- */
+.form{
+  border:1px solid var(--exp-dim); font-size:13.5px;
+  background:rgba(95,215,154,.03);
+}
+.form .head{
+  display:flex; justify-content:space-between; padding:12px 18px;
+  border-bottom:1px solid var(--exp-dim); font-size:11px; letter-spacing:.18em; text-transform:uppercase;
+  color:var(--exp-accent);
+}
+.form .row{display:grid; grid-template-columns:1.1fr 1.5fr; border-bottom:1px dashed var(--line);}
+.form .row:last-child{border-bottom:0;}
+.form .row > div{padding:14px 18px;}
+.form .row .k{border-right:1px dashed var(--line);}
+.form .row .k .w{font-weight:700;}
+.form .row .k .w .a{font-weight:700; margin-right:.4em;}
+.form .row .k .w .a.m{color:var(--der);} .form .row .k .w .a.f{color:var(--die);} .form .row .k .w .a.n{color:var(--das);}
+.form .row .k small{display:block; color:var(--exp-dim); margin-top:3px;}
+.form .row .v{color:color-mix(in oklab, var(--inn-ink), var(--exp-ink) 80%); cursor:help;}
+.form .row .v .stamp{color:var(--exp-accent); font-weight:700; white-space:nowrap;}
+.form .row .v .en{
+  display:block; max-height:0; overflow:hidden; opacity:0; margin-top:0;
+  color:var(--exp-accent); font-size:12.5px; font-style:italic;
+  transition:max-height .3s ease, opacity .3s ease, margin-top .3s ease;
+}
+.form .row .v:hover .en,
+.form .row.show .v .en{max-height:140px; opacity:1; margin-top:8px;}
+@media(max-width:560px){
+  .form .row{grid-template-columns:1fr;}
+  .form .row .k{border-right:0; border-bottom:1px dashed var(--line);}
+}
+
+/* ---- packs ---- */
+.packs{display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid var(--line);}
+@media(max-width:640px){.packs{grid-template-columns:1fr;}}
+.pack{padding:24px 20px; border-right:1px solid var(--line);}
+.pack:last-child{border-right:0;}
+.pack .n{font-size:18px; font-weight:800;}
+.pack .lvl{font-size:12px; letter-spacing:.06em; color:var(--inn-dim); margin:4px 0 12px;}
+.pack .free{display:inline-block; font-size:10px; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--inn-accent); border:1px solid var(--inn-accent); padding:3px 8px; margin-top:6px;}
+.pack p{font-size:13px; color:var(--inn-dim); margin:0;}
+@media(max-width:640px){.pack{border-right:0; border-bottom:1px solid var(--line);} .pack:last-child{border-bottom:0;}}
+
+/* ---- method ---- */
+.method dl{display:grid; grid-template-columns:max-content 1fr; gap:14px 22px; margin:0;}
+.method dt{font-weight:700; color:var(--exp-accent); white-space:nowrap;}
+.method dd{margin:0; font-size:14.5px; color:var(--inn-dim);}
+@media(max-width:560px){.method dl{grid-template-columns:1fr; gap:4px 0;} .method dd{margin-bottom:14px;}}
+
+/* ---- final CTA ---- */
+.final{text-align:center; padding:90px 0 100px;}
+.final h2{font-size:clamp(28px,6vw,52px);}
+.final p{color:var(--exp-dim); max-width:46ch; margin:14px auto 0; font-size:15px;}
+
+footer{
+  border-top:1px solid var(--line); padding:28px 24px;
+  font-size:12px; color:var(--exp-dim); text-align:center; letter-spacing:.04em;
+}
+footer .blake{font-style:italic; opacity:.7; max-width:50ch; margin:0 auto 12px;}
+footer .footer-links{display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap;}
+footer .footer-links a{color:inherit; text-decoration:none; opacity:.75; letter-spacing:.04em;}
+footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+footer .footer-links .div{opacity:.4;}
+</style>
+</head>
+<body>
+<div class="overlay"></div>
+<div class="vignette"></div>
+
+<!-- Replace this nav with your shared site header -->
+<nav>
+  <span class="brand">FLASHBOSS</span>
+  <span class="links">
+    <a href="/">home</a>
+    <a href="/how-to-play">how to play</a>
+    <a href="/language-packs">languages</a>
+    <a href="STEAM_STORE_URL">steam</a>
+  </span>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <header class="hero wrap">
+    <div class="kicker reveal">Deutsch</div>
+    <h1 class="reveal">German<span class="cursor"></span></h1>
+    <p class="tagline reveal">Learn the language as you learn the culture with FlashBoss.</p>
+    <p class="sig reveal">Listen · Read · Repeat · Rate · Fight</p>
+    <p class="lede reveal">You begin saying <b class="de">Ich bin Student.</b> By the end you are reading the letter from the <b>Finanzamt</b> — and you know exactly what it wants. German Core carries you from arrival to belonging.</p>
+    <a class="btn reveal" href="STEAM_STORE_URL">Begin on Steam &rarr;</a>
+  </header>
+
+  <!-- THE ARGUMENT -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">The design</span>
+      <h2>Two movements, one ascent</h2>
+      <p class="sub">Songs of Innocence, and of Experience.</p>
+      <p class="body">German Core is sequenced on purpose. The first three tiers keep adult concerns out — deliberately. The market, the <span class="de">U-Bahn</span>, a first week's small talk: the Germany you pictured before you arrived, taught straight, without complication. The gentle part, gentle by design.</p>
+      <p class="body">Then you put childish things aside. Germany is a country built for high achievement, and it leaves little wiggle room — not for lateness, not for a missing stamp, not for the form completed in the wrong hand. The later tiers face that squarely. By the end of Core you are no longer reciting phrases; you are reading a rejection notice and noticing you have <b>four weeks</b> to file a <span class="de">Widerspruch</span>.</p>
+
+      <div class="movements reveal">
+        <div class="mv inn">
+          <div class="h">Tiers 1–3 · Innocence</div>
+          <p>Survival, daily life, the move from tourist to resident. Clean, direct, the Germany you imagined.</p>
+        </div>
+        <div class="mv exp">
+          <div class="h">Tiers 4–5 · Experience</div>
+          <p>Cultural integration and the real machinery — precision, paperwork, the standards a life here actually runs on.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SENTENCE LADDER -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Watch it grow up</span>
+      <h2>One idea, five tiers</h2>
+      <p class="sub">A single sentence, climbing the ladder FlashBoss teaches it on.</p>
+      <ol class="ladder">
+        <li class="reveal"><span class="ger de">Ich bin Student.</span><span class="en">I am a student.</span></li>
+        <li class="reveal"><span class="ger de">Ich kaufe frisches Obst auf dem Markt.</span><span class="en">I buy fresh fruit at the market.</span></li>
+        <li class="reveal"><span class="ger de">Könnten Sie mir bitte erklären, wo ich einen Fahrschein lösen kann?</span><span class="en">Could you please explain to me where I can buy a ticket?</span></li>
+        <li class="reveal"><span class="ger de">Mir liegt es am Herzen, dass wir diese Angelegenheit vertraulich behandeln.</span><span class="en">It matters deeply to me that we handle this matter confidentially.</span></li>
+        <li class="reveal"><span class="ger de">Die Implikationen dieser Entscheidung übersteigen bei Weitem unsere ursprünglichen Erwartungen.</span><span class="en">The implications of this decision far exceed our original expectations.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- GENDER COLOUR-CODING -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Read it by sight</span>
+      <h2>der · die · das, in colour</h2>
+      <p class="sub">Every noun carries its article colour-coded to gender. You remember it by sight, not by drill. Tap a card to flip it.</p>
+      <div class="legend">
+        <span><i class="lm"></i> der — masculine</span>
+        <span><i class="lf"></i> die — feminine</span>
+        <span><i class="ln"></i> das — neuter</span>
+      </div>
+      <div class="cards">
+        <div class="card m reveal">
+          <div class="art">der</div>
+          <div class="word">Personalausweis</div>
+          <div class="ex de">Ich brauche meinen gültigen Personalausweis für die Anmeldung.</div>
+          <div class="trans">identity card — “I need my valid identity card for the registration.” Casual: <i>Perso</i>.</div>
+          <div class="hint">tap to flip</div>
+        </div>
+        <div class="card f reveal">
+          <div class="art">die</div>
+          <div class="word">Anmeldung</div>
+          <div class="ex de">Innerhalb von zwei Wochen die Anmeldung beim Amt machen.</div>
+          <div class="trans">registration — “Do the registration at the office within two weeks.” Required within two weeks of moving.</div>
+          <div class="hint">tap to flip</div>
+        </div>
+        <div class="card n reveal">
+          <div class="art">das</div>
+          <div class="word">Bürgeramt</div>
+          <div class="ex de">Ich habe einen Termin beim Bürgeramt für die Anmeldung.</div>
+          <div class="trans">civic office — “I have an appointment at the civic office for the registration.” Also: <i>Bürgerbüro</i>.</div>
+          <div class="hint">tap to flip</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE: THE FORM -->
+  <section class="wrap">
+    <div class="reveal">
+      <h2>The Germany you live in</h2>
+      <p class="sub">A sample of the vocabulary nobody hands you at the airport — taught through the real machinery, not invented scenarios. Hover any line for the English.</p>
+      <div class="form">
+        <div class="head"><span>Wortschatz · Tier 4–5</span><span>Behördendeutsch</span></div>
+        <div class="row">
+          <div class="k"><div class="w"><span class="a f">die</span>Anmeldung</div><small>registration</small></div>
+          <div class="v">Nach dem Umzug muss ich die Anmeldung beim Amt machen. <span class="stamp">⟶ Frist: 2 Wochen</span><span class="en">After moving, I have to register at the office — required within two weeks.</span></div>
+        </div>
+        <div class="row">
+          <div class="k"><div class="w">ablehnen</div><small>to reject</small></div>
+          <div class="v">Lehnt die Behörde Ihren Antrag ab, können Sie Widerspruch einlegen. <span class="stamp">⟶ Frist: 4 Wochen</span><span class="en">If the authority rejects your application, you can file an objection — within four weeks.</span></div>
+        </div>
+        <div class="row">
+          <div class="k"><div class="w"><span class="a f">die</span>Steuererklärung</div><small>tax return</small></div>
+          <div class="v">Ich mache meine Steuererklärung online über das ELSTER-Portal.<span class="en">I do my tax return online through the ELSTER portal.</span></div>
+        </div>
+        <div class="row">
+          <div class="k"><div class="w"><span class="a f">die</span>Krankenversicherung</div><small>health insurance</small></div>
+          <div class="v">In Deutschland braucht jeder eine Krankenversicherung — <span class="stamp">obligatorisch.</span><span class="en">In Germany, everyone needs health insurance — it's mandatory.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKS -->
+  <section class="wrap">
+    <div class="reveal">
+      <h2>The Pareto Principle</h2>
+      <p class="sub">3 packs. 10% of the German vocabulary for 90% of German use cases.</p>
+      <div class="packs">
+        <div class="pack">
+          <div class="n">Core</div>
+          <div class="lvl">A1–A2 · 1,000 words</div>
+          <p>Arrival to belonging, in five tiers. Thorsten text-to-speech.</p>
+          <span class="free">Included free</span>
+        </div>
+        <div class="pack">
+          <div class="n">Pareto 1</div>
+          <div class="lvl">B1–B2 · 1,000 words</div>
+          <p>The next thousand, deepening work, services, and social life.</p>
+        </div>
+        <div class="pack">
+          <div class="n">Pareto 2</div>
+          <div class="lvl">B2–C1 · 1,000 words</div>
+          <p>Abstract, professional, and native-like range.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHOD -->
+  <section class="wrap method">
+    <div class="frame reveal">
+      <span class="tag">How it sticks</span>
+      <h2>Built so the work shrinks</h2>
+      <dl>
+        <dt>Fibonacci</dt><dd>Rate each card 0–5. The better you know a word, the longer before it returns.</dd>
+        <dt>Boss fights</dt><dd>Each cluster is gated by a duel you can't win until your weakest words are mastered.</dd>
+        <dt>Graduation</dt><dd>Beat a cluster and its cards leave your daily deck for good. The deck gets smaller as you learn.</dd>
+        <dt>Audio</dt><dd>Clean Thorsten Piper text-to-speech on every word and every sentence. MIT-licensed.</dd>
+        <dt>Lessons</dt><dd>Reference lessons fire at the point in the sequence where they unlock what you're about to read.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final wrap reveal">
+    <h2>Begin in innocence.</h2>
+    <p>German Core ships free with the base game. Start with <span class="de">Ich bin Student</span> — and grow up from there.</p>
+    <a class="btn cold" href="STEAM_STORE_URL">Get FlashBoss on Steam &rarr;</a>
+  </section>
+
+</main>
+
+<footer>
+  <p class="blake">“And all must love the human form, / In heathen, turk, or jew; / Where Mercy, Love, &amp; Pity dwell / There God is dwelling too.”</p>
+  <span class="footer-links">
+    <a href="home.html">&larr; Back to Hub</a>
+    <span class="div">·</span>
+    <a href="found-me.html#level2">The FlashBoss Vision</a>
+    <span class="div">·</span>
+    <a href="manual/">Manual</a>
+  </span>
+</footer>
+
+<script>
+// Staggered reveal on scroll
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in');}); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  }, {threshold:.12, rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){ io.observe(e); });
+})();
+
+// Tap-to-flip cards
+document.querySelectorAll('.card').forEach(function(c){
+  c.addEventListener('click', function(){ c.classList.toggle('flipped'); });
+});
+
+// Tap-to-reveal form translations (touch; CSS :hover handles desktop)
+document.querySelectorAll('.form .row').forEach(function(r){
+  r.addEventListener('click', function(){ r.classList.toggle('show'); });
+});
+
+// Innocence -> Experience: drive --mood from scroll position
+(function(){
+  var root = document.documentElement, ticking = false;
+  function update(){
+    var max = document.body.scrollHeight - window.innerHeight;
+    var p = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+    // ease slightly so the turn happens past the innocent opening
+    root.style.setProperty('--mood', (p*p*(3-2*p)).toFixed(3));
+    ticking = false;
+  }
+  window.addEventListener('scroll', function(){
+    if(!ticking){ requestAnimationFrame(update); ticking = true; }
+  }, {passive:true});
+  update();
+})();
+</script>
+</body>
+</html>

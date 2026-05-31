@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===== PER-LANGUAGE: title + description ===== -->
+    <title>Esperanto · FlashBoss</title>
+    <meta name="description" content="Learn Esperanto with FlashBoss: 3,000 of its most useful words with audio, spaced repetition, and boss fights. The language built to be learnable.">
+
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        /* =================================================================
+           PER-LANGUAGE TOKENS — swap these to mint a new language page
+           ================================================================= */
+        :root {
+            --accent: #5555FF;                  /* Esperanto signature */
+            --accent-glow: rgba(85, 85, 255, 0.16);
+            --hero: url('esperanto.png');       /* full-bleed background art */
+            --ink: #f3ecdc;
+            --ink-soft: rgba(255, 255, 255, 0.78);
+            --ink-faint: rgba(255, 255, 255, 0.5);
+            --panel: rgba(10, 10, 25, 0.55);
+            --line: rgba(255, 255, 255, 0.12);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--hero) center center / cover no-repeat fixed;
+            background-color: #0a0a19;
+            color: var(--ink);
+            min-height: 100vh;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Dark wash + a faint accent vignette for depth */
+        body::before {
+            content: '';
+            position: fixed; inset: 0;
+            background:
+                radial-gradient(120% 80% at 50% 0%, var(--accent-glow), transparent 60%),
+                linear-gradient(rgba(10,10,25,0.72), rgba(10,10,25,0.82));
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 4.5rem 1.5rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Staggered entrance */
+        .reveal { opacity: 0; transform: translateY(14px); animation: rise 0.7s cubic-bezier(.2,.7,.2,1) forwards; }
+        .reveal:nth-child(1) { animation-delay: .05s; }
+        .reveal:nth-child(2) { animation-delay: .14s; }
+        .reveal:nth-child(3) { animation-delay: .23s; }
+        .reveal:nth-child(4) { animation-delay: .32s; }
+        .reveal:nth-child(5) { animation-delay: .41s; }
+        .reveal:nth-child(6) { animation-delay: .50s; }
+        .reveal:nth-child(7) { animation-delay: .59s; }
+        .reveal:nth-child(8) { animation-delay: .68s; }
+        @keyframes rise { to { opacity: 1; transform: none; } }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { animation: none; opacity: 1; transform: none; }
+        }
+
+        .kicker {
+            font-size: 0.72rem;
+            letter-spacing: 0.28em;
+            text-transform: uppercase;
+            color: var(--ink-faint);
+            margin-bottom: 1rem;
+        }
+        .kicker b { color: var(--accent); font-weight: 600; }
+
+        .screen-title {
+            font-family: 'Merriweather', serif;
+            font-size: 2.6rem;
+            font-weight: 900;
+            color: var(--accent);
+            line-height: 1.1;
+            margin-bottom: 0.6rem;
+        }
+
+        .tagline {
+            font-size: 1.15rem;
+            color: var(--ink-soft);
+            font-style: italic;
+            margin-bottom: 1rem;
+            max-width: 40ch;
+        }
+
+        .signature {
+            font-size: 0.8rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 2.25rem;
+        }
+
+        .content p { margin-bottom: 1.2rem; color: var(--ink-soft); }
+        .content p:last-child { margin-bottom: 0; }
+
+        /* Pack ladder — rows are the per-set click targets for the resource pages */
+        .packs {
+            margin: 2.25rem 0 0.5rem;
+            border-top: 1px solid var(--line);
+        }
+        .pack {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 0.85rem 0;
+            border-bottom: 1px solid var(--line);
+        }
+        .pack-name { font-weight: 600; color: var(--ink); }
+        .pack-words { color: var(--ink-faint); font-size: 0.9rem; margin-left: 0.6rem; font-weight: 400; }
+        .pack-tag {
+            font-size: 0.72rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--ink-faint);
+            white-space: nowrap;
+        }
+        .pack-tag.free {
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            border-radius: 999px;
+            padding: 0.15rem 0.6rem;
+        }
+        .packs-note { margin-top: 0.9rem; font-size: 0.9rem; color: var(--ink-faint); }
+
+        .links {
+            margin-top: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+        }
+        .link-btn {
+            display: block;
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            color: var(--ink-soft);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: background .2s, border-color .2s, transform .2s;
+        }
+        .link-btn:hover {
+            background: var(--accent-glow);
+            border-color: var(--accent);
+            color: var(--ink);
+            transform: translateX(4px);
+        }
+        .link-btn.primary {
+            border-color: var(--accent);
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .link-btn.primary:hover { background: var(--accent-glow); }
+
+        .footer-links {
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+        .back-link { font-size: 0.85rem; color: var(--ink-faint); text-decoration: none; transition: color .2s; }
+        .back-link:hover { color: var(--ink-soft); }
+        .link-divider { color: rgba(255,255,255,0.25); }
+
+        @media (min-width: 768px) {
+            .screen-title { font-size: 3rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- ===== PER-LANGUAGE: kicker ===== -->
+        <p class="kicker reveal">FlashBoss · <b>Esperanto</b> · 3,000 words</p>
+
+        <!-- ===== PER-LANGUAGE: title ===== -->
+        <h1 class="screen-title reveal">Esperanto</h1>
+
+        <!-- ===== PER-LANGUAGE: tagline ===== -->
+        <p class="tagline reveal">Learn the world's most learnable language with FlashBoss.</p>
+
+        <!-- SHARED: the signature line -->
+        <p class="signature reveal">Listen · Read · Repeat · Rate · Fight</p>
+
+        <div class="content reveal">
+            <!-- PER-LANGUAGE: why this language -->
+            <p>Esperanto was designed from the ground up to be easy to learn. No irregular verbs. No gendered nouns. Logical, consistent, and beautiful. It's the perfect first language — and if you already speak a second, it might be your fastest path to a third.</p>
+
+            <!-- PER-LANGUAGE: what you get + how it works (free/paid split changes per language) -->
+            <p>FlashBoss starts you with 1,000 of the most useful Esperanto words, each with full audio, a real example sentence, and spaced repetition that bends to how fast you actually learn — that's the free Core pack. Words sit in themed clusters, each one guarded by a boss fight. Win, and those cards graduate out of your daily deck for good. The work shrinks as you learn, not the other way around.</p>
+
+            <!-- PER-LANGUAGE: where the language lives (community / events / resources) -->
+            <p>And unlike most invented languages, Esperanto is genuinely spoken. Estimates put the community somewhere between a hundred thousand and two million people scattered across the world, including a thousand or more children raised with it from birth. They gather every summer at the Universala Kongreso — the World Esperanto Congress, held almost without a break since 1905, with the 2026 meeting in Graz, Austria. Online it's easy to fall in with: free courses and a busy forum at lernu.net, over a million learners through the Duolingo course, the Amikumu app for finding speakers near you, and Pasporta Servo, a hospitality network where Esperantists host one another around the world for free. Learn it, and you don't just have a hobby — you have somewhere to use it.</p>
+        </div>
+
+        <!-- ===== PER-LANGUAGE: pack ladder (free badge moves by language) ===== -->
+        <div class="packs reveal">
+            <div class="pack">
+                <span><span class="pack-name">Esperanto Core</span><span class="pack-words">1,000 words · A1–A2</span></span>
+                <span class="pack-tag free">Free</span>
+            </div>
+            <div class="pack">
+                <span><span class="pack-name">Pareto 1</span><span class="pack-words">+1,000 words · B1–B2</span></span>
+                <span class="pack-tag">DLC</span>
+            </div>
+            <div class="pack">
+                <span><span class="pack-name">Pareto 2</span><span class="pack-words">+1,000 words · B2–C1</span></span>
+                <span class="pack-tag">DLC</span>
+            </div>
+        </div>
+
+        <div class="links reveal">
+            <a href="manual/walkthrough/select.html" class="link-btn">Browse the Esperanto clusters in the manual &rarr;</a>
+            <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website" class="link-btn primary">Get FlashBoss on Steam &rarr;</a>
+        </div>
+
+        <div class="footer-links reveal">
+            <a href="home.html" class="back-link">&larr; Back to Hub</a>
+            <span class="link-divider">·</span>
+            <a href="found-me.html#level2" class="back-link">The FlashBoss Vision</a>
+            <span class="link-divider">·</span>
+            <a href="manual/" class="back-link">Manual</a>
+        </div>
+    </div>
+</body>
+</html>
