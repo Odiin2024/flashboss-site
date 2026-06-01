@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Printable Word Lists — Italian, German, Spanish &amp; Esperanto Vocabulary | FlashBoss</title>
+<meta name="description" content="Free, printable vocabulary word lists for Italian, German, Spanish and Esperanto. The most useful 1,000–3,000 words per language, frequency-ranked and grouped by tier and theme, each with its English translation. Hide the translations to self-test, or print a cluster and cut your own flashcards.">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
+  --accent:#e0a93f; --line:#3a3120; --rule:#2a2417;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--mono); background:var(--bg); color:var(--ink); line-height:1.55; -webkit-font-smoothing:antialiased;}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.04) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.wrap{max-width:920px; margin:0 auto; padding:0 22px;}
+a{color:var(--accent);}
+
+nav{display:flex; justify-content:space-between; align-items:center; padding:16px 22px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line);}
+nav .brand{font-weight:800; letter-spacing:.18em; color:var(--ink);}
+nav .links a{color:var(--ink); text-decoration:none; opacity:.7; margin-left:20px;}
+nav .links a:hover{opacity:1; color:var(--accent);}
+
+header.page{padding:44px 0 8px;}
+.crumb{font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); opacity:.85;}
+header.page h1{font-size:clamp(34px,7vw,58px); margin:13px 0 12px; font-weight:800; letter-spacing:-.01em; color:var(--ink);}
+header.page p{max-width:66ch; color:var(--dim); font-size:15px; margin:0;}
+header.page p b{color:var(--ink);}
+
+.controls{position:sticky; top:0; z-index:50; background:color-mix(in oklab, var(--bg), transparent 5%); backdrop-filter:blur(4px);
+  border-bottom:1px solid var(--line); padding:14px 0; margin-top:28px;}
+.controls .row{display:flex; gap:14px; flex-wrap:wrap; align-items:center;}
+.field{display:flex; align-items:center; gap:8px;}
+.field label{font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--faint);}
+select, .btn{font-family:var(--mono); font-size:14px; color:var(--ink); background:var(--panel); border:1px solid var(--line); padding:8px 12px; cursor:pointer;}
+select:focus, .btn:focus{outline:1px solid var(--accent);}
+.spacer{flex:1;}
+.toggle{display:inline-flex; align-items:center; gap:9px; cursor:pointer; user-select:none; font-size:13px; color:var(--dim);}
+.switch{width:42px; height:22px; border:1px solid var(--line); background:var(--panel); position:relative; transition:.15s;}
+.switch::after{content:""; position:absolute; top:2px; left:2px; width:16px; height:16px; background:var(--faint); transition:.15s;}
+.toggle.on .switch{border-color:var(--accent);} .toggle.on .switch::after{left:22px; background:var(--accent);}
+.btn:hover{border-color:var(--accent); color:var(--accent);}
+
+.setmeta{display:flex; gap:18px; flex-wrap:wrap; align-items:baseline; padding:26px 0 6px; color:var(--dim); font-size:13px;}
+.setmeta .big{font-size:22px; font-weight:800; color:var(--ink); letter-spacing:-.01em;}
+
+.state{padding:60px 0; text-align:center; color:var(--faint); font-size:14px;}
+.state .ic{font-size:26px; opacity:.5; display:block; margin-bottom:12px;}
+
+.tier{border:1px solid var(--line); margin:16px 0; background:var(--panel);}
+.tier > .head{display:flex; align-items:center; gap:14px; padding:14px 18px; cursor:pointer; user-select:none;}
+.tier > .head:hover{background:rgba(224,169,63,.05);}
+.tier .tnum{font-size:11px; font-weight:700; letter-spacing:.1em; color:var(--accent); border:1px solid var(--accent); padding:3px 8px;}
+.tier .tlabel{font-weight:700; font-size:16px;}
+.tier .tmeta{margin-left:auto; font-size:12px; color:var(--faint); letter-spacing:.04em;}
+.tier .chev{transition:transform .2s; color:var(--faint);}
+.tier.collapsed .chev{transform:rotate(-90deg);}
+.tier-body{padding:4px 18px 18px;}
+.tier.collapsed .tier-body{display:none;}
+
+.cluster{border-top:1px solid var(--rule); padding:16px 0 6px;}
+.cluster:first-child{border-top:0;}
+.cluster .chead{display:flex; align-items:baseline; gap:12px; margin-bottom:10px;}
+.cluster .cid{font-size:11px; color:var(--faint); letter-spacing:.06em;}
+.cluster .cname{font-weight:700; color:var(--ink);}
+.cluster .ccount{margin-left:auto; font-size:11px; color:var(--faint);}
+
+.words{display:grid; grid-template-columns:1fr 1fr; gap:0 28px;}
+@media(max-width:620px){.words{grid-template-columns:1fr;}}
+.word{display:flex; justify-content:space-between; gap:14px; padding:6px 0; border-bottom:1px dotted var(--rule);}
+.word .w{font-weight:500;}
+.word .t{color:var(--dim); text-align:right;}
+.words.hide-trans .word{cursor:pointer;}
+.words.hide-trans .word .t{visibility:hidden;}
+.words.hide-trans .word.revealed .t{visibility:visible; color:var(--accent);}
+
+footer{border-top:1px solid var(--line); padding:26px 22px; font-size:12px; color:var(--faint); text-align:center; letter-spacing:.04em; margin-top:40px;}
+footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{color:var(--ink);}
+
+@media print{
+  nav,.controls,header.page p,.overlay,footer .nav,.printhide{display:none !important;}
+  body{background:#fff; color:#000; font-size:11pt;}
+  .wrap{max-width:none; padding:0;}
+  header.page{padding:0 0 8px;} header.page h1{font-size:20pt; margin:0;} .crumb{color:#000;}
+  .tier{border:1px solid #000; break-inside:avoid; margin:10px 0; background:#fff;}
+  .tier.collapsed .tier-body{display:block !important;} .tier .chev{display:none;} .tier .tnum{color:#000; border-color:#000;}
+  .cluster{break-inside:avoid; border-top:1px solid #999;}
+  .words.hide-trans .word .t{visibility:visible !important; color:#000 !important;}
+  .word .t{color:#000;} .word{border-bottom:1px solid #ccc;}
+}
+</style>
+</head>
+<body>
+<div class="overlay"></div>
+
+<nav>
+  <span class="brand">FLASHBOSS</span>
+  <span class="links">
+    <a href="home.html">home</a>
+    <a href="resources.html">resources</a>
+    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-wordlists">steam</a>
+  </span>
+</nav>
+
+<header class="page wrap">
+  <div class="crumb">FlashBoss · Free word lists</div>
+  <h1>Word Lists</h1>
+  <!-- Static, crawlable SEO copy: names the languages and what's offered. -->
+  <p>Free, printable vocabulary lists for every FlashBoss language — <b>Italian, German, Spanish, and Esperanto</b>. The most useful words in each language, frequency-ranked and grouped into thematic clusters across five tiers, each paired with its English translation. Hide the translations to test yourself, or print a cluster and cut your own flashcards. Free to use however you like.</p>
+</header>
+
+<div class="controls printhide">
+  <div class="wrap row">
+    <div class="field"><label for="packSel">Pack</label><select id="packSel"></select></div>
+    <div class="field"><label for="setSel">Set</label><select id="setSel"></select></div>
+    <div class="spacer"></div>
+    <div class="toggle on" id="transToggle" role="switch" aria-checked="true" tabindex="0"><span class="switch"></span><span>Translations</span></div>
+    <button class="btn" id="expandBtn">Expand all</button>
+    <button class="btn" id="printBtn">Print / cards</button>
+  </div>
+</div>
+
+<main class="wrap" id="view"></main>
+
+<footer>
+  <span class="nav"><a href="home.html">← Hub</a> · <a href="resources.html">Resources</a> · <a href="lessons.html">Lessons</a></span>
+  <div style="margin-top:8px;">FlashBoss · made by one teacher in Germany</div>
+</footer>
+
+<script>
+/* ============================================================
+   WHERE THE DATA LIVES — edit to match where Code places files.
+   Default convention: data/<language>/<SET>_FINAL.json
+     e.g. data/italian/CORE_FINAL.json, data/german/PARETO1_FINAL.json
+   Uses the FINAL.json (relative-numbered) per-set files. Numbering
+   is never displayed, so GLOBAL.json would also work unchanged.
+   ============================================================ */
+function dataUrl(lang, set){
+  const L = lang.toLowerCase();
+  const S = set.toUpperCase().replace(/\s+/g,'');     // "Pareto 1" -> "PARETO1"
+  return `data/${L}/${S}_FINAL.json`;
+}
+
+const LANGS = ["Italian","German","Spanish","Esperanto"];
+const SETS  = ["Core","Pareto 1","Pareto 2"];
+
+/* Preview-only fallback (used when fetch fails, e.g. in the artifact preview).
+   Safe to delete once the real JSON is hosted. Real German Core + Italian greetings. */
+const SAMPLE = {
+  "German|Core": { language:"German", set:"Core", level:"A1–A2", total:1000, clusters:[
+    { cluster_id:"T4-C2", tier:4, slug:"cluster4_2_education_learning", cards:[
+      ["Bachelor","bachelor's degree"],["Master","master's degree"],["Bibliothek","library"],["durch|fallen","to fail (an exam)"],
+      ["Professor/in","professor"],["bestehen","to pass (an exam)"],["Fakultät","faculty"],["Forschung","research"],
+      ["Hausarbeit","term paper"],["Klausur","written exam"],["Semester","semester"],["Seminar","seminar"],
+      ["Studiengang","degree program"],["Vorlesung","lecture"],["Theorie","theory"],["Praxis","practice"],
+      ["analysieren","to analyze"],["präsentieren","to present"],["recherchieren","to research"],["teil|nehmen","to participate"]
+    ].map(([w,t])=>({TargetWord:w,Translation:t})) },
+    { cluster_id:"T4-C4", tier:4, slug:"cluster4_4_legal_administrative", cards:[
+      ["Amt","office; authority"],["Behörde","authority; gov. office"],["Antrag","application; request"],["Formular","form"],
+      ["Dokument","document"],["Urkunde","certificate; deed"],["Ausweis","ID card"],["Bescheinigung","certificate"],
+      ["Geburtsurkunde","birth certificate"],["Staatsbürgerschaft","citizenship"],["Wohnsitz","residence"],["Bürgerbüro","citizens' office"],
+      ["Rathaus","city hall"],["Termin","appointment"],["Gültigkeit","validity"],["Stempel","stamp; seal"],["Kopie","copy"],
+      ["beantragen","to apply for"],["genehmigen","to approve"],["ablehnen","to reject"],["bestätigen","to confirm"],["nachweisen","to prove"]
+    ].map(([w,t])=>({TargetWord:w,Translation:t})) },
+    { cluster_id:"T5-C1", tier:5, slug:"cluster5_1_bureaucracy_paperwork", cards:[
+      ["aus|füllen","to fill out"],["Bürgeramt","civic office"],["Finanzamt","tax office"],["Beamte","civil servant"],
+      ["Personalausweis","identity card"],["Anmeldung","registration"],["Genehmigung","permit; approval"],["Krankenversicherung","health insurance"],
+      ["Meldebestätigung","registration confirmation"],["Sozialversicherung","social insurance"],["Steuererklärung","tax return"],["Unterlagen","documents"],
+      ["Vorschrift","regulation; rule"],["ein|reichen","to submit"],["sich an|melden","to register oneself"],["Bezirk","district"],
+      ["Gemeinde","municipality"],["Landkreis","county"],["Liste","list"],["Notiz","note"],["Titel","title"],["Text","text"],
+      ["Zettel","slip of paper"],["Zeichen","sign; symbol"]
+    ].map(([w,t])=>({TargetWord:w,Translation:t})) }
+  ]},
+  "Italian|Core": { language:"Italian", set:"Core", level:"A1–A2", total:1000, clusters:[
+    { cluster_id:"T1-C1", tier:1, slug:"cluster1_1_greetings_classroom", cards:[
+      ["ciao","hi; bye"],["buongiorno","good morning; hello"],["buonasera","good evening"],["grazie","thank you"],
+      ["prego","you're welcome; please"],["scusa","sorry; excuse me"],["per favore","please"],["cosa","what; thing"]
+    ].map(([w,t])=>({TargetWord:w,Translation:t})) }
+  ]}
+};
+
+/* ---------------- state + elements ---------------- */
+const packSel=document.getElementById('packSel'), setSel=document.getElementById('setSel'),
+      view=document.getElementById('view'), transToggle=document.getElementById('transToggle'),
+      expandBtn=document.getElementById('expandBtn'), printBtn=document.getElementById('printBtn');
+let showTrans=true, allExpanded=false;
+const cache={};
+
+function esc(s){return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+function humanize(slug){
+  if(!slug) return '';
+  return slug.replace(/^cluster\d+_\d+_?/,'').replace(/_/g,' ').replace(/\b\w/g,c=>c.toUpperCase()).trim() || slug;
+}
+function normCards(cluster){
+  // accept {cards:[{TargetWord,Translation}]} (real FINAL.json)
+  return (cluster.cards||[]).map(c=>[c.TargetWord, c.Translation]);
+}
+
+async function loadSet(lang,set){
+  const key=lang+'|'+set;
+  if(cache[key]!==undefined) return cache[key];
+  let data=null;
+  try{
+    const r=await fetch(dataUrl(lang,set), {cache:'no-store'});
+    if(r.ok) data=await r.json();
+  }catch(e){ /* fall through to sample */ }
+  if(!data) data = SAMPLE[key] || null;
+  cache[key]=data;
+  return data;
+}
+
+function fillPacks(){
+  packSel.innerHTML = LANGS.map(l=>`<option value="${l}">${l}</option>`).join('');
+  setSel.innerHTML  = SETS.map(s=>`<option value="${s}">${s}</option>`).join('');
+}
+
+function setURL(){
+  const p=new URLSearchParams(); p.set('lang',packSel.value); p.set('set',setSel.value);
+  history.replaceState(null,'', '?'+p.toString());
+}
+
+async function render(){
+  setURL();
+  const lang=packSel.value, set=setSel.value;
+  view.innerHTML = `<div class="state"><span class="ic">◴</span>Loading ${esc(lang)} ${esc(set)}…</div>`;
+  const data = await loadSet(lang,set);
+  if(packSel.value!==lang || setSel.value!==set) return; // selection changed mid-load
+
+  if(!data || !data.clusters || !data.clusters.length){
+    view.innerHTML = `<div class="state"><span class="ic">◈</span>${esc(lang)} ${esc(set)} isn't published yet — check back as packs ship.</div>`;
+    return;
+  }
+
+  let html = `<div class="setmeta"><span class="big">${esc(lang)} ${esc(set)}</span>
+    ${data.level?`<span>${esc(data.level)}</span>`:''}${data.total?`<span>${esc(data.total)} words</span>`:''}</div>`;
+
+  // group clusters by tier, preserving order
+  const tiers={};
+  data.clusters.forEach(c=>{ (tiers[c.tier]=tiers[c.tier]||[]).push(c); });
+  const tierNums=Object.keys(tiers).map(Number).sort((a,b)=>a-b);
+
+  tierNums.forEach((tn,i)=>{
+    const cls=tiers[tn];
+    const collapsed=(!allExpanded && i>0)?' collapsed':'';
+    html+=`<div class="tier${collapsed}"><div class="head" data-toggle="tier">
+      <span class="tnum">TIER ${tn}</span><span class="tlabel">Tier ${tn}</span>
+      <span class="tmeta">${cls.length} clusters<span class="chev"> ▾</span></span></div><div class="tier-body">`;
+    cls.forEach(c=>{
+      const words=normCards(c);
+      html+=`<div class="cluster"><div class="chead">
+        <span class="cid">${esc(c.cluster_id||'')}</span>
+        <span class="cname">${esc(humanize(c.slug)||c.cluster_id||'')}</span>
+        <span class="ccount">${words.length} words</span></div>
+        <div class="words${showTrans?'':' hide-trans'}">`+
+        words.map(([w,t])=>`<div class="word"><span class="w">${esc(w)}</span><span class="t">${esc(t)}</span></div>`).join('')+
+        `</div></div>`;
+    });
+    html+=`</div></div>`;
+  });
+
+  view.innerHTML=html;
+  view.querySelectorAll('[data-toggle="tier"]').forEach(h=>h.addEventListener('click',()=>h.parentElement.classList.toggle('collapsed')));
+  view.querySelectorAll('.words.hide-trans .word').forEach(row=>row.addEventListener('click',()=>row.classList.toggle('revealed')));
+}
+
+/* controls */
+packSel.addEventListener('change',render);
+setSel.addEventListener('change',render);
+transToggle.addEventListener('click',()=>{ showTrans=!showTrans; transToggle.classList.toggle('on',showTrans); transToggle.setAttribute('aria-checked',showTrans); render(); });
+transToggle.addEventListener('keydown',e=>{ if(e.key===' '||e.key==='Enter'){e.preventDefault(); transToggle.click();}});
+expandBtn.addEventListener('click',()=>{ allExpanded=!allExpanded; expandBtn.textContent=allExpanded?'Collapse all':'Expand all'; render(); });
+printBtn.addEventListener('click',()=>window.print());
+
+/* init — honour ?lang=&set= from the resources jump-links */
+fillPacks();
+const q=new URLSearchParams(location.search);
+const qL=q.get('lang'), qS=q.get('set');
+if(qL && LANGS.includes(qL)) packSel.value=qL;
+if(qS && SETS.includes(qS)) setSel.value=qS;
+render();
+</script>
+</body>
+</html>
