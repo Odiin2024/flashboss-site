@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Italian — FlashBoss</title>
+<meta name="description" content="FlashBoss Italian: the language of coming home. From 'Sono uno studente' to the nine o'clock train to your nonna's. 3,000 words, twenty reference lessons, spaced repetition, boss fights, gender colour-coding with elision, and text-to-speech.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   FlashBoss — Italian page.  Same chassis as the German page;
+   own soul. Palette warms from sunlit "visit" (dolce vita) to
+   terracotta "belong" (hearth) as you scroll.
+   TUNE: --masc/--fem to the game palette.
+   Pack buttons are placeholders — Code wires the three Steam links.
+   ============================================================ */
+:root{
+  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --masc:#5fb0ff; --fem:#ff7fb0;
+  --vis-bg:#14110a; --vis-ink:#f0e2c0; --vis-dim:#c2ac7d; --vis-accent:#e0a93f;
+  --bel-bg:#120a08; --bel-ink:#f1d9cf; --bel-dim:#b78f82; --bel-accent:#d9694a;
+  --mood:0;
+  --line:color-mix(in oklab, #6a553a, #4a2c24 calc(var(--mood) * 100%));
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0; font-family:var(--mono);
+  background:#14110a;
+  background:url('italian.png') center center / cover no-repeat fixed;
+  color:color-mix(in oklab, var(--vis-ink), var(--bel-ink) calc(var(--mood)*100%));
+  line-height:1.6; -webkit-font-smoothing:antialiased; transition:background .12s linear,color .12s linear; overflow-x:hidden;}
+body::before{content:''; position:fixed; inset:0; z-index:-1; pointer-events:none;
+  background:color-mix(in oklab, rgba(20,17,10,0.84), rgba(18,10,8,0.9) calc(var(--mood)*100%));
+  transition:background .12s linear;}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.045) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.vignette{position:fixed; inset:0; pointer-events:none; z-index:9998;
+  background:radial-gradient(120% 90% at 50% 35%, transparent 55%, rgba(0,0,0,.5) 100%);}
+.wrap{max-width:880px; margin:0 auto; padding:0 24px;}
+nav{display:flex; justify-content:space-between; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line);}
+nav .brand{font-weight:800; letter-spacing:.18em;}
+nav .links a{color:inherit; text-decoration:none; opacity:.7; margin-left:22px;}
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+.reveal{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease;}
+.reveal.in{opacity:1; transform:none;}
+
+.hero{padding:84px 0 66px;}
+.crumb{font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--vis-accent); opacity:.85;}
+.hero h1{font-size:clamp(46px,12vw,112px); line-height:.9; margin:14px 0 0; font-weight:800; letter-spacing:-.01em;}
+.cursor{display:inline-block; width:.58em; height:1em; vertical-align:-.08em; background:var(--vis-accent); margin-left:.1em; animation:blink 1.05s steps(1) infinite;}
+@keyframes blink{50%{opacity:0;}}
+.hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:46ch; margin:28px 0 0; color:var(--vis-ink); font-weight:500;}
+.hero .sig{font-size:13px; letter-spacing:.24em; text-transform:uppercase; color:var(--vis-accent); margin:14px 0 0; opacity:.9;}
+.hero .lede{font-size:clamp(15px,2.2vw,18px); max-width:48ch; margin:24px 0 0; color:var(--vis-dim);}
+.hero .lede b{color:var(--vis-ink); font-weight:700;}
+
+.btn{display:inline-block; margin-top:38px; font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.08em;
+  color:#14110a; background:var(--vis-accent); padding:14px 26px; text-decoration:none; border:0;
+  box-shadow:6px 6px 0 color-mix(in oklab, var(--vis-accent), #000 60%); transition:transform .12s ease, box-shadow .12s ease;}
+.btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--vis-accent), #000 60%);}
+.btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--vis-accent), #000 60%);}
+.btn.warm{color:#120a08; background:var(--bel-accent); box-shadow:6px 6px 0 color-mix(in oklab, var(--bel-accent), #000 60%);}
+.btn.warm:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--bel-accent), #000 60%);}
+
+section{padding:60px 0;}
+.frame{border:1px solid var(--line); position:relative; padding:34px 30px 32px;}
+.frame > .tag{position:absolute; top:-10px; left:22px;
+  background:color-mix(in oklab, var(--vis-bg), var(--bel-bg) calc(var(--mood)*100%));
+  padding:0 12px; font-size:11px; letter-spacing:.3em; text-transform:uppercase;
+  color:color-mix(in oklab, var(--vis-accent), var(--bel-accent) calc(var(--mood)*100%));}
+h2{font-size:clamp(26px,5vw,40px); margin:0 0 8px; font-weight:800; letter-spacing:-.01em;}
+.sub{color:var(--vis-dim); font-size:14px; letter-spacing:.04em; margin:0 0 26px;}
+.sub.it{font-style:italic; font-size:16px; opacity:.9;}
+p.body{font-size:16px; max-width:62ch; margin:0 0 18px; color:color-mix(in oklab, var(--vis-ink), var(--bel-ink) calc(var(--mood)*100%));}
+p.body b{color:var(--vis-accent);}
+.it{font-style:italic; opacity:.96;}
+
+.movements{display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px solid var(--line);}
+.mv{padding:30px 26px;}
+.mv:first-child{border-right:1px solid var(--line); background:rgba(224,169,63,.05);}
+.mv:last-child{background:rgba(217,105,74,.06);}
+.mv .h{font-size:12px; letter-spacing:.3em; text-transform:uppercase; margin-bottom:14px;}
+.mv.vis .h{color:var(--vis-accent);} .mv.bel .h{color:var(--bel-accent);}
+.mv p{font-size:14.5px; margin:0;}
+@media(max-width:640px){.movements{grid-template-columns:1fr;} .mv:first-child{border-right:0; border-bottom:1px solid var(--line);}}
+
+.ladder{list-style:none; margin:0; padding:0; counter-reset:tier;}
+.ladder li{counter-increment:tier; border-left:2px solid var(--line); padding:18px 0 18px 26px; margin-left:8px; position:relative;}
+.ladder li::before{content:"T" counter(tier); position:absolute; left:-15px; top:18px;
+  background:color-mix(in oklab, var(--vis-bg), var(--bel-bg) calc(var(--mood)*100%)); font-size:11px; font-weight:700; padding:2px 0;
+  color:color-mix(in oklab, var(--vis-accent), var(--bel-accent) calc(var(--mood)*100%));}
+.ladder .ger{font-weight:500;}
+.ladder li:nth-child(1) .ger{font-size:15px;} .ladder li:nth-child(2) .ger{font-size:16px;}
+.ladder li:nth-child(3) .ger{font-size:17px;} .ladder li:nth-child(4) .ger{font-size:18px;}
+.ladder li:nth-child(5) .ger{font-size:18.5px; font-weight:700;}
+.ladder .en{display:block; color:var(--vis-dim); font-size:13px; margin-top:6px;}
+
+.cards{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
+.cards.four{grid-template-columns:repeat(4,1fr);}
+@media(max-width:760px){.cards.four{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:640px){.cards{grid-template-columns:1fr;}}
+.card{border:1px solid var(--line); padding:20px 18px; cursor:pointer; background:rgba(255,255,255,.015); transition:border-color .15s ease; min-height:150px;}
+.card:hover{border-color:color-mix(in oklab, var(--vis-accent), var(--bel-accent) calc(var(--mood)*100%));}
+.card .art{font-size:14px; letter-spacing:.1em; font-weight:700;}
+.card.m .art{color:var(--masc);} .card.f .art{color:var(--fem);}
+.card .word{font-size:21px; font-weight:800; margin:2px 0 12px;}
+.card .ex{font-size:13px; color:var(--vis-dim); font-style:italic;}
+.card .trans{font-size:12.5px; color:var(--vis-dim); margin-top:10px; max-height:0; overflow:hidden; opacity:0; transition:max-height .3s ease, opacity .3s ease;}
+.card.flipped .trans{max-height:240px; opacity:1;}
+.card .hint{font-size:10px; letter-spacing:.2em; text-transform:uppercase; opacity:.45; margin-top:12px;}
+.card.idiom .word{font-size:19px;}
+.card.idiom .art{color:color-mix(in oklab, var(--vis-accent), var(--bel-accent) calc(var(--mood)*100%)); font-style:italic; font-weight:500; font-size:12px; letter-spacing:.04em;}
+.legend{display:flex; gap:20px; flex-wrap:wrap; font-size:12px; margin:0 0 14px; color:var(--vis-dim);}
+.legend span{display:inline-flex; align-items:center; gap:7px;}
+.legend i{width:11px; height:11px; display:inline-block;}
+.legend .lm{background:var(--masc);} .legend .lf{background:var(--fem);}
+.elision-note{font-size:13px; color:var(--vis-dim); margin:18px 0 0; max-width:60ch;}
+.elision-note b{color:var(--vis-ink);}
+
+/* lesson arc */
+.arc{display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px solid var(--line);}
+.arc .col{padding:26px 24px;}
+.arc .col:first-child{border-right:1px solid var(--line); background:rgba(224,169,63,.04);}
+.arc .col:last-child{background:rgba(217,105,74,.05);}
+.arc .h{font-size:12px; letter-spacing:.28em; text-transform:uppercase; margin-bottom:16px;}
+.arc .col.vis .h{color:var(--vis-accent);} .arc .col.bel .h{color:var(--bel-accent);}
+.arc ol{margin:0; padding:0; list-style:none; counter-reset:l;}
+.arc li{font-size:13.5px; padding:5px 0; color:var(--vis-dim); display:flex; gap:10px;}
+.arc li b{color:color-mix(in oklab, var(--vis-ink), var(--bel-ink) calc(var(--mood)*100%)); font-weight:600;}
+.arc li .num{color:var(--faint,#7a6c4d); min-width:2.2em; font-variant-numeric:tabular-nums;}
+@media(max-width:640px){.arc{grid-template-columns:1fr;} .arc .col:first-child{border-right:0; border-bottom:1px solid var(--line);}}
+
+/* three-pack buttons */
+.packs{display:grid; grid-template-columns:repeat(3,1fr); gap:14px;}
+@media(max-width:640px){.packs{grid-template-columns:1fr;}}
+.pack{border:1px solid var(--line); padding:24px 20px; display:flex; flex-direction:column; gap:6px; background:rgba(255,255,255,.015);}
+.pack .n{font-size:19px; font-weight:800;}
+.pack .lvl{font-size:12px; letter-spacing:.06em; color:var(--vis-dim);}
+.pack p{font-size:13px; color:var(--vis-dim); margin:6px 0 16px; flex:1;}
+.pack .pbtn{display:inline-block; text-align:center; font-family:var(--mono); font-size:12.5px; font-weight:700; letter-spacing:.08em;
+  text-transform:uppercase; text-decoration:none; padding:11px 14px;
+  color:color-mix(in oklab, var(--vis-accent), var(--bel-accent) calc(var(--mood)*100%));
+  border:1px solid color-mix(in oklab, var(--vis-accent), var(--bel-accent) calc(var(--mood)*100%));
+  cursor:pointer; transition:background .15s ease, color .15s ease;}
+.pack .pbtn:hover{background:color-mix(in oklab, var(--vis-accent), var(--bel-accent) calc(var(--mood)*100%)); color:#14110a;}
+
+.method dl{display:grid; grid-template-columns:max-content 1fr; gap:14px 22px; margin:0;}
+.method dt{font-weight:700; color:var(--bel-accent); white-space:nowrap;}
+.method dd{margin:0; font-size:14.5px; color:var(--vis-dim);}
+@media(max-width:560px){.method dl{grid-template-columns:1fr; gap:4px 0;} .method dd{margin-bottom:14px;}}
+
+.final{text-align:center; padding:88px 0 96px;}
+.final h2{font-size:clamp(28px,6vw,52px);}
+.final p{color:var(--bel-dim); max-width:48ch; margin:14px auto 0; font-size:15px;}
+footer{border-top:1px solid var(--line); padding:30px 24px; font-size:12px; color:var(--bel-dim); text-align:center; letter-spacing:.04em;}
+footer .dante{font-style:italic; opacity:.78; max-width:58ch; margin:0 auto 8px; line-height:1.7;}
+footer .dante .tr{font-style:normal; opacity:.85; display:block; margin-top:10px; font-size:11.5px;}
+footer .src{display:block; margin:6px auto 16px; opacity:.6; font-size:11px;}
+footer a{color:var(--bel-dim);}
+</style>
+</head>
+<body>
+<div class="overlay"></div>
+<div class="vignette"></div>
+
+<nav>
+  <span class="brand">FLASHBOSS</span>
+  <span class="links">
+    <a href="home.html">home</a>
+    <a href="manual/index.html?screen=profile-select">how to play</a>
+    <a href="resources.html">resources</a>
+    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">steam</a>
+  </span>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <header class="hero wrap">
+    <div class="crumb reveal">FlashBoss · Italian · 3,000 words</div>
+    <h1 class="reveal">Italiano<span class="cursor"></span></h1>
+    <p class="tagline reveal">Learn the language as you come home to the culture — with FlashBoss.</p>
+    <p class="sig reveal">Listen · Read · Repeat · Rate · Fight</p>
+    <p class="lede reveal">You begin with <b class="it">Sono uno studente.</b> By the end you're on the nine o'clock train to your <b>nonna</b>'s.</p>
+    <a class="btn reveal" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">Begin on Steam &rarr;</a>
+  </header>
+
+  <!-- DESIGN -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">The design</span>
+      <h2>From guest to family</h2>
+      <p class="sub it">Da ospite a famiglia.</p>
+      <p class="body">Italian Core is one thousand words across five tiers, sequenced as a homecoming. The first three tiers are the Italy you <b>visit</b> — the piazza, the table, the market at eight in the morning. Survival, daily life, then the first real conversations and the past tense to tell them in. <span class="it">La dolce vita</span>, taught straight.</p>
+      <p class="body">Then it turns inward. The later tiers are the Italy you <b>belong</b> to — the <span class="it">imperfetto</span> that lets you narrate your summers, the idioms nobody translates for an outsider, and the register that quietly sorts family from tourist.</p>
+      <div class="movements reveal">
+        <div class="mv vis">
+          <div class="h">Tiers 1–3 · Visit</div>
+          <p>Survival, daily life, getting around — then <span class="it">passato prossimo</span>, reflexives, modals and clitic pronouns. The Italy you came for.</p>
+        </div>
+        <div class="mv bel">
+          <div class="h">Tiers 4–5 · Belong</div>
+          <p>The <span class="it">tu</span>/<span class="it">Lei</span> register pivot, <span class="it">imperfetto</span>, idiom, then future, conditional and the first subjunctive. The Italy you stay for.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SENTENCE LADDER -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Watch it grow up</span>
+      <h2>Progress with FlashBoss</h2>
+      <p class="sub">One sentence from each tier, in the order FlashBoss teaches them.</p>
+      <ol class="ladder">
+        <li class="reveal"><span class="ger it">Sono uno studente.</span><span class="en">I am a student.</span></li>
+        <li class="reveal"><span class="ger it">Ogni mattina compro il pane fresco al mercato vicino a casa.</span><span class="en">Every morning I buy fresh bread at the market near home.</span></li>
+        <li class="reveal"><span class="ger it">Ieri ho preso il treno delle nove per andare a trovare mia nonna.</span><span class="en">Yesterday I took the nine o'clock train to go and visit my grandmother.</span></li>
+        <li class="reveal"><span class="ger it">Da bambino, passavo le estati al mare con i miei cugini in Sicilia.</span><span class="en">As a child, I spent the summers by the sea with my cousins in Sicily.</span></li>
+        <li class="reveal"><span class="ger it">Spero che tu possa venire alla festa, anche se so che sei molto impegnato.</span><span class="en">I hope you can come to the party, even though I know you're very busy.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- GENDER + ELISION -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Read it by sight</span>
+      <h2>il · la · l', in colour</h2>
+      <p class="sub">Every noun carries its article colour-coded to gender. Tap a card to flip it.</p>
+      <div class="legend">
+        <span><i class="lm"></i> blue — masculine (il, lo)</span>
+        <span><i class="lf"></i> rose — feminine (la)</span>
+      </div>
+      <div class="cards four">
+        <div class="card m reveal"><div class="art">il</div><div class="word">libro</div>
+          <div class="ex it">Il libro è sul tavolo.</div>
+          <div class="trans">the book — &ldquo;The book is on the table.&rdquo; Masculine, before a consonant.</div><div class="hint">tap to flip</div></div>
+        <div class="card f reveal"><div class="art">la</div><div class="word">casa</div>
+          <div class="ex it">La casa di mia nonna è in Sicilia.</div>
+          <div class="trans">the house — &ldquo;My grandmother's house is in Sicily.&rdquo; Feminine, before a consonant.</div><div class="hint">tap to flip</div></div>
+        <div class="card m reveal"><div class="art">l'</div><div class="word">amico</div>
+          <div class="ex it">L'amico di Marco abita a Roma.</div>
+          <div class="trans">the friend (m.) — &ldquo;Marco's friend lives in Rome.&rdquo; The article elides to <b>l'</b>, but its colour stays blue: still masculine.</div><div class="hint">tap to flip</div></div>
+        <div class="card f reveal"><div class="art">l'</div><div class="word">amica</div>
+          <div class="ex it">L'amica di Anna studia a Bologna.</div>
+          <div class="trans">the friend (f.) — &ldquo;Anna's friend studies in Bologna.&rdquo; Same <b>l'</b>, but rose: feminine.</div><div class="hint">tap to flip</div></div>
+      </div>
+      <p class="elision-note">Italian hides gender the moment an article meets a vowel: <span class="it">lo amico</span> and <span class="it">la amica</span> both collapse to <span class="it">l'</span>. FlashBoss keeps the cue alive by <b>colouring the apostrophe</b> — blue <span class="it">l'</span> is masculine, rose <span class="it">l'</span> is feminine — so the gender never disappears on you.</p>
+    </div>
+  </section>
+
+  <!-- CULTURAL CONCEPTS -->
+  <section class="wrap">
+    <div class="reveal">
+      <h2>The words that let you in</h2>
+      <p class="sub">Knowing these is the difference between a tourist and family. Tap to flip.</p>
+      <div class="cards reveal">
+        <div class="card idiom"><div class="art">idiom</div><div class="word">In bocca al lupo</div>
+          <div class="ex it">— In bocca al lupo! — Crepi!</div>
+          <div class="trans">Good luck — literally &ldquo;into the wolf's mouth.&rdquo; You answer <i>crepi (il lupo)</i> — may the wolf die. Italians almost never say <i>buona fortuna</i>.</div><div class="hint">tap to flip</div></div>
+        <div class="card idiom"><div class="art">verb · concept</div><div class="word">arrangiarsi</div>
+          <div class="ex it">Non preoccuparti, mi arrangio.</div>
+          <div class="trans">To get by, to make do — &ldquo;Don't worry, I'll manage.&rdquo; The central Italian art of solving it yourself, with whatever you've got.</div><div class="hint">tap to flip</div></div>
+        <div class="card idiom"><div class="art">marker</div><div class="word">magari</div>
+          <div class="ex it">— Vieni in Italia quest'estate? — Magari!</div>
+          <div class="trans">If only / I wish / maybe — one word that carries hope and longing at once. &ldquo;Magari!&rdquo; on its own means &ldquo;I wish!&rdquo;</div><div class="hint">tap to flip</div></div>
+        <div class="card idiom"><div class="art">false friend</div><div class="word">simpatico</div>
+          <div class="ex it">Tuo cugino è molto simpatico.</div>
+          <div class="trans">Likeable, good company — <b>not</b> &ldquo;sympathetic.&rdquo; &ldquo;Your cousin is great company.&rdquo; High praise, and a classic false friend.</div><div class="hint">tap to flip</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSE NOTE (expound on core) -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Not just a word list</span>
+      <h2>Reference lessons, fired in sequence</h2>
+      <p class="sub">FlashBoss Italian is a structured course, not just flashcards. Reference lessons unlock at the exact card where you first need them — and they're all free to read in <a href="resources.html" style="color:var(--vis-accent);">Resources</a>.</p>
+    </div>
+  </section>
+
+  <!-- PARETO / THREE BUTTONS -->
+  <section class="wrap">
+    <div class="reveal">
+      <h2>The Pareto Principle</h2>
+      <p class="sub">3 packs. 10% of the Italian vocabulary for 90% of Italian use cases.</p>
+      <!-- Code: wire each .pbtn href to its Italian Steam DLC page (Core / Pareto 1 / Pareto 2). -->
+      <div class="packs">
+        <div class="pack">
+          <div class="n">Core</div><div class="lvl">A1–A2 · 1,000 words</div>
+          <p>Survival to belonging, in five tiers, with twenty reference lessons. The road in.</p>
+          <a class="pbtn" href="#" data-pack="core">View on Steam</a>
+        </div>
+        <div class="pack">
+          <div class="n">Pareto 1</div><div class="lvl">B1–B2 · 1,000 words</div>
+          <p>Travel, work, and social life — enough to talk with your <span class="it">nonni</span> and mean it.</p>
+          <a class="pbtn" href="#" data-pack="pareto1">View on Steam</a>
+        </div>
+        <div class="pack">
+          <div class="n">Pareto 2</div><div class="lvl">B2–C1 · 1,000 words</div>
+          <p>Abstract, literary, and native-like range. The full three thousand.</p>
+          <a class="pbtn" href="#" data-pack="pareto2">View on Steam</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHOD -->
+  <section class="wrap method">
+    <div class="frame reveal">
+      <span class="tag">How it sticks</span>
+      <h2>Flashcards as an integrated system</h2>
+      <dl>
+        <dt>Fibonacci SRS</dt><dd>Rate each card 0–5. The better you know a word, the longer before it returns — spaced repetition on Fibonacci intervals.</dd>
+        <dt>Boss fights</dt><dd>Each cluster is gated by a duel you can't win without confronting and overcoming your most difficult words.</dd>
+        <dt>Graduation</dt><dd>Beat a cluster and its cards leave your daily deck for good. The deck gets smaller as you learn.</dd>
+        <dt>Audio</dt><dd>Clean Italian Piper text-to-speech on every word and every sentence.</dd>
+        <dt>Lessons</dt><dd>Twenty reference lessons fire at the point in the sequence where they unlock what you're about to read.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final wrap reveal">
+    <h2>Come home.</h2>
+    <p>Italian Core, Pareto 1, and Pareto 2 — three thousand words and the road back. Start with <span class="it">Sono uno studente.</span></p>
+    <a class="btn warm" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">Get FlashBoss on Steam &rarr;</a>
+  </section>
+
+</main>
+
+<footer>
+  <p class="dante">&ldquo;Tu proverai sì come sa di sale / lo pane altrui, e come è duro calle / lo scendere e 'l salir per l'altrui scale.&rdquo;
+    <span class="tr">You shall learn how salt is the taste of another's bread — and how hard the path, going down and climbing up another's stairs.</span>
+  </p>
+  <span class="src">— Dante, Paradiso XVII</span>
+  <span class="nav"><a href="home.html">← Back to Hub</a> · <a href="found-me.html#level2">The FlashBoss Vision</a> · <a href="manual/">Manual</a></span>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+document.querySelectorAll('.card').forEach(function(c){c.addEventListener('click',function(){c.classList.toggle('flipped');});});
+(function(){
+  var root=document.documentElement,ticking=false;
+  function update(){var max=document.body.scrollHeight-window.innerHeight;var p=max>0?Math.min(1,Math.max(0,window.scrollY/max)):0;root.style.setProperty('--mood',(p*p*(3-2*p)).toFixed(3));ticking=false;}
+  window.addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(update);ticking=true;}},{passive:true});update();
+})();
+</script>
+</body>
+</html>
