@@ -29,8 +29,10 @@ body{font-family:var(--mono); background:var(--bg); color:var(--ink); line-heigh
 a{color:var(--accent);}
 
 nav{display:flex; justify-content:space-between; align-items:center; padding:16px 22px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line);}
-nav .brand{font-weight:800; letter-spacing:.18em; color:var(--ink);}
-nav .brand .crumbpath{font-weight:500; letter-spacing:.08em; color:var(--dim);}
+nav .brand{font-weight:500; letter-spacing:.1em;}
+nav .brand a, nav .brand .sep{color:var(--dim); text-decoration:none;}
+nav .brand a:hover{color:var(--ink);}
+nav .brand .here{font-weight:800; color:var(--ink);}
 nav .links a{color:var(--ink); text-decoration:none; opacity:.7; margin-left:20px;}
 nav .links a:hover{opacity:1; color:var(--accent);}
 
@@ -122,7 +124,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
 <div class="overlay"></div>
 
 <nav>
-  <span class="brand">FlashBoss<span class="crumbpath"> · Resources · Word Lists</span></span>
+  <span class="brand"><a href="home.html">home</a><span class="sep"> · </span><a href="resources.html">resources</a><span class="sep"> · </span><span class="here">word lists</span></span>
   <span class="links">
     <a href="home.html">home</a>
     <a href="resources.html">resources</a>
