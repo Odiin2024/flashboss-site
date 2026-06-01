@@ -20,7 +20,7 @@
   --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
   --masc:#5fb0ff; --fem:#ff7fb0;
   --vis-bg:#14110a; --vis-ink:#f0e2c0; --vis-dim:#c2ac7d; --vis-accent:#e0a93f;
-  --bel-bg:#120a08; --bel-ink:#f1d9cf; --bel-dim:#b78f82; --bel-accent:#d9694a;
+  --bel-bg:#120a08; --bel-ink:#f1d9cf; --bel-dim:#7f968a; --bel-accent:#5fd79a;
   --mood:0;
   --line:color-mix(in oklab, #6a553a, #4a2c24 calc(var(--mood) * 100%));
 }
@@ -36,10 +36,13 @@ body{margin:0; font-family:var(--mono);
   background:radial-gradient(120% 90% at 50% 35%, transparent 55%, rgba(0,0,0,.5) 100%);}
 .wrap{max-width:880px; margin:0 auto; padding:0 24px;}
 nav{display:flex; justify-content:space-between; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line);}
-nav .brand{font-weight:800; letter-spacing:.18em;}
-nav .brand .crumbpath{font-weight:500; letter-spacing:.08em; color:var(--vis-dim);}
+nav .brand{font-weight:500; letter-spacing:.1em;}
+nav .brand a, nav .brand .sep{color:var(--vis-dim); text-decoration:none;}
+nav .brand a:hover{color:var(--vis-ink);}
+nav .brand .here{font-weight:800; color:var(--vis-ink);}
 nav .links a{color:inherit; text-decoration:none; opacity:.7; margin-left:22px;}
 nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+nav .links a.steam{font-weight:800; opacity:1; color:var(--vis-ink);}
 .reveal{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease;}
 .reveal.in{opacity:1; transform:none;}
 
@@ -69,6 +72,7 @@ nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4
 .btn.warm:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--bel-accent), #000 60%);}
 
 section{padding:60px 0;}
+.hero + section{padding-top:96px;}  /* buffer so the first frame's border-tag clears the hero */
 .frame{border:1px solid var(--line); position:relative; padding:34px 30px 32px;}
 .frame > .tag{position:absolute; top:-12px; left:22px;
   background:color-mix(in oklab, var(--vis-bg), var(--bel-bg) calc(var(--mood)*100%));
@@ -84,7 +88,7 @@ p.body b{color:var(--vis-accent);}
 .movements{display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px solid var(--line);}
 .mv{padding:30px 26px;}
 .mv:first-child{border-right:1px solid var(--line); background:rgba(224,169,63,.05);}
-.mv:last-child{background:rgba(217,105,74,.06);}
+.mv:last-child{background:rgba(95,215,154,.06);}
 .mv .h{font-size:12px; letter-spacing:.3em; text-transform:uppercase; margin-bottom:14px;}
 .mv.vis .h{color:var(--vis-accent);} .mv.bel .h{color:var(--bel-accent);}
 .mv p{font-size:14.5px; margin:0;}
@@ -127,7 +131,7 @@ p.body b{color:var(--vis-accent);}
 .arc{display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px solid var(--line);}
 .arc .col{padding:26px 24px;}
 .arc .col:first-child{border-right:1px solid var(--line); background:rgba(224,169,63,.04);}
-.arc .col:last-child{background:rgba(217,105,74,.05);}
+.arc .col:last-child{background:rgba(95,215,154,.05);}
 .arc .h{font-size:12px; letter-spacing:.28em; text-transform:uppercase; margin-bottom:16px;}
 .arc .col.vis .h{color:var(--vis-accent);} .arc .col.bel .h{color:var(--bel-accent);}
 .arc ol{margin:0; padding:0; list-style:none; counter-reset:l;}
@@ -170,12 +174,11 @@ footer a{color:var(--bel-dim);}
 <div class="vignette"></div>
 
 <nav>
-  <span class="brand">FlashBoss<span class="crumbpath"> · Packs · Italian</span></span>
+  <span class="brand"><a href="home.html">home</a><span class="sep"> · </span>packs<span class="sep"> · </span><span class="here">italian</span></span>
   <span class="links">
-    <a href="home.html">home</a>
     <a href="manual/index.html?screen=profile-select">how to play</a>
     <a href="resources.html">resources</a>
-    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">steam</a>
+    <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">steam</a>
   </span>
 </nav>
 
@@ -185,13 +188,12 @@ footer a{color:var(--bel-dim);}
   <header class="hero">
     <div class="wrap">
       <h1 class="reveal">Italiano<span class="cursor"></span></h1>
-      <p class="tagline reveal">Learn the language as you come home to the culture — with FlashBoss.</p>
+      <p class="tagline reveal">Learn the language you need to feel at home — with FlashBoss.</p>
       <p class="sig reveal">Listen · Read · Repeat · Rate · Fight</p>
       <p class="lede reveal">You begin with <b class="it">Sono uno studente.</b> By the end you're on the nine o'clock train to your <b>nonna</b>'s.</p>
       <div class="actions reveal">
         <a class="btn" href="wordlists.html?lang=Italian">Word Lists &rarr;</a>
         <a class="btn" href="lessons.html?lang=Italian">Lessons &rarr;</a>
-        <a class="btn" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">Visit Steam &rarr;</a>
       </div>
     </div>
   </header>
@@ -222,7 +224,7 @@ footer a{color:var(--bel-dim);}
     <div class="frame reveal">
       <span class="tag">Watch it grow up</span>
       <h2>Progress with FlashBoss</h2>
-      <p class="sub">One sentence from each tier, in the order FlashBoss teaches them.</p>
+      <p class="sub">The example sentences increase in complexity tier by tier.</p>
       <ol class="ladder">
         <li class="reveal"><span class="ger it">Sono uno studente.</span><span class="en">I am a student.</span></li>
         <li class="reveal"><span class="ger it">Ogni mattina compro il pane fresco al mercato vicino a casa.</span><span class="en">Every morning I buy fresh bread at the market near home.</span></li>
