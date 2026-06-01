@@ -27,13 +27,9 @@
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{margin:0; font-family:var(--mono);
-  background:#14110a;
-  background:url('italian.png') center center / cover no-repeat fixed;
+  background:color-mix(in oklab, var(--vis-bg), var(--bel-bg) calc(var(--mood)*100%));
   color:color-mix(in oklab, var(--vis-ink), var(--bel-ink) calc(var(--mood)*100%));
   line-height:1.6; -webkit-font-smoothing:antialiased; transition:background .12s linear,color .12s linear; overflow-x:hidden;}
-body::before{content:''; position:fixed; inset:0; z-index:-1; pointer-events:none;
-  background:color-mix(in oklab, rgba(20,17,10,0.84), rgba(18,10,8,0.9) calc(var(--mood)*100%));
-  transition:background .12s linear;}
 .overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
   background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.045) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
 .vignette{position:fixed; inset:0; pointer-events:none; z-index:9998;
@@ -41,12 +37,18 @@ body::before{content:''; position:fixed; inset:0; z-index:-1; pointer-events:non
 .wrap{max-width:880px; margin:0 auto; padding:0 24px;}
 nav{display:flex; justify-content:space-between; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line);}
 nav .brand{font-weight:800; letter-spacing:.18em;}
+nav .brand .crumbpath{font-weight:500; letter-spacing:.08em; color:var(--vis-dim);}
 nav .links a{color:inherit; text-decoration:none; opacity:.7; margin-left:22px;}
 nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
 .reveal{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease;}
 .reveal.in{opacity:1; transform:none;}
 
-.hero{padding:84px 0 66px;}
+.hero{position:relative; padding:96px 0 78px; overflow:hidden;}
+.hero::before{content:""; position:absolute; inset:0; z-index:0;
+  background:#0c0a06 url('italian.png') center 30% / cover no-repeat;}
+.hero::after{content:""; position:absolute; inset:0; z-index:1;
+  background:linear-gradient(180deg, rgba(23,20,33,.5) 0%, rgba(23,20,33,.78) 55%, #171421 100%);}
+.hero .wrap{position:relative; z-index:2;}
 .crumb{font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--vis-accent); opacity:.85;}
 .hero h1{font-size:clamp(46px,12vw,112px); line-height:.9; margin:14px 0 0; font-weight:800; letter-spacing:-.01em;}
 .cursor{display:inline-block; width:.58em; height:1em; vertical-align:-.08em; background:var(--vis-accent); margin-left:.1em; animation:blink 1.05s steps(1) infinite;}
@@ -61,14 +63,16 @@ nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4
   box-shadow:6px 6px 0 color-mix(in oklab, var(--vis-accent), #000 60%); transition:transform .12s ease, box-shadow .12s ease;}
 .btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--vis-accent), #000 60%);}
 .btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--vis-accent), #000 60%);}
+.hero .actions{display:flex; flex-wrap:wrap; gap:14px; margin-top:38px;}
+.hero .actions .btn{margin-top:0;}
 .btn.warm{color:#120a08; background:var(--bel-accent); box-shadow:6px 6px 0 color-mix(in oklab, var(--bel-accent), #000 60%);}
 .btn.warm:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--bel-accent), #000 60%);}
 
 section{padding:60px 0;}
 .frame{border:1px solid var(--line); position:relative; padding:34px 30px 32px;}
-.frame > .tag{position:absolute; top:-10px; left:22px;
+.frame > .tag{position:absolute; top:-12px; left:22px;
   background:color-mix(in oklab, var(--vis-bg), var(--bel-bg) calc(var(--mood)*100%));
-  padding:0 12px; font-size:11px; letter-spacing:.3em; text-transform:uppercase;
+  padding:4px 12px; line-height:1; font-size:11px; letter-spacing:.3em; text-transform:uppercase;
   color:color-mix(in oklab, var(--vis-accent), var(--bel-accent) calc(var(--mood)*100%));}
 h2{font-size:clamp(26px,5vw,40px); margin:0 0 8px; font-weight:800; letter-spacing:-.01em;}
 .sub{color:var(--vis-dim); font-size:14px; letter-spacing:.04em; margin:0 0 26px;}
@@ -166,7 +170,7 @@ footer a{color:var(--bel-dim);}
 <div class="vignette"></div>
 
 <nav>
-  <span class="brand">FLASHBOSS</span>
+  <span class="brand">FlashBoss<span class="crumbpath"> · Packs · Italian</span></span>
   <span class="links">
     <a href="home.html">home</a>
     <a href="manual/index.html?screen=profile-select">how to play</a>
@@ -178,13 +182,18 @@ footer a{color:var(--bel-dim);}
 <main>
 
   <!-- HERO -->
-  <header class="hero wrap">
-    <div class="crumb reveal">FlashBoss · Italian · 3,000 words</div>
-    <h1 class="reveal">Italiano<span class="cursor"></span></h1>
-    <p class="tagline reveal">Learn the language as you come home to the culture — with FlashBoss.</p>
-    <p class="sig reveal">Listen · Read · Repeat · Rate · Fight</p>
-    <p class="lede reveal">You begin with <b class="it">Sono uno studente.</b> By the end you're on the nine o'clock train to your <b>nonna</b>'s.</p>
-    <a class="btn reveal" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">Begin on Steam &rarr;</a>
+  <header class="hero">
+    <div class="wrap">
+      <h1 class="reveal">Italiano<span class="cursor"></span></h1>
+      <p class="tagline reveal">Learn the language as you come home to the culture — with FlashBoss.</p>
+      <p class="sig reveal">Listen · Read · Repeat · Rate · Fight</p>
+      <p class="lede reveal">You begin with <b class="it">Sono uno studente.</b> By the end you're on the nine o'clock train to your <b>nonna</b>'s.</p>
+      <div class="actions reveal">
+        <a class="btn" href="wordlists.html?lang=Italian">Word Lists &rarr;</a>
+        <a class="btn" href="lessons.html?lang=Italian">Lessons &rarr;</a>
+        <a class="btn" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">Visit Steam &rarr;</a>
+      </div>
+    </div>
   </header>
 
   <!-- DESIGN -->
