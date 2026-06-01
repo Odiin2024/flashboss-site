@@ -77,6 +77,10 @@ select:focus, .btn:focus{outline:1px solid var(--accent);}
 .cluster .cid{font-size:11px; color:var(--faint); letter-spacing:.06em;}
 .cluster .cname{font-weight:700; color:var(--ink);}
 .cluster .ccount{margin-left:auto; font-size:11px; color:var(--faint);}
+.cluster.solo{border:1px solid var(--line); background:var(--panel); padding:18px 20px; margin-top:18px;}
+.cluster.solo .chead{align-items:baseline; gap:12px; border-bottom:1px solid var(--rule); padding-bottom:10px; margin-bottom:14px;}
+.cluster.solo .tnum{font-size:11px; font-weight:700; letter-spacing:.1em; color:var(--accent); border:1px solid var(--accent); padding:3px 8px;}
+.cluster.solo .cname{font-weight:700; font-size:17px;}
 
 .words{display:grid; grid-template-columns:1fr 1fr; gap:0 28px;}
 @media(max-width:620px){.words{grid-template-columns:1fr;}}
@@ -94,12 +98,18 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
   nav,.controls,header.page p,.overlay,footer .nav,.printhide{display:none !important;}
   body{background:#fff; color:#000; font-size:11pt;}
   .wrap{max-width:none; padding:0;}
-  header.page{padding:0 0 8px; overflow:visible;} header.page::before,header.page::after{display:none !important;} header.page h1{font-size:20pt; margin:0;} .crumb{color:#000;}
-  .tier{border:1px solid #000; break-inside:avoid; margin:10px 0; background:#fff;}
-  .tier.collapsed .tier-body{display:block !important;} .tier .chev{display:none;} .tier .tnum{color:#000; border-color:#000;}
-  .cluster{break-inside:avoid; border-top:1px solid #999;}
-  .words.hide-trans .word .t{visibility:visible !important; color:#000 !important;}
-  .word .t{color:#000;} .word{border-bottom:1px solid #ccc;}
+  header.page{padding:0 0 6px; overflow:visible;} header.page::before,header.page::after{display:none !important;} header.page h1{font-size:18pt; margin:0;}
+  .setmeta{color:#000; padding:6px 0 4px;} .setmeta .big{color:#000;}
+  .cluster.solo{border:0; background:#fff; padding:0; margin:0;}
+  .cluster.solo .chead{border-bottom:1px solid #000; margin-bottom:8px;} .cluster.solo .tnum{color:#000; border-color:#000;} .cluster.solo .cname{color:#000;}
+  /* cut-out flashcards: one card per word, black grid with collapsed borders — cut along the lines */
+  .words, .words.hide-trans{display:grid !important; grid-template-columns:repeat(3,1fr); gap:0;
+    border-top:1px solid #000; border-left:1px solid #000;}
+  .word{border-right:1px solid #000; border-bottom:1px solid #000; padding:12px 10px; min-height:0.95in;
+    display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; break-inside:avoid;}
+  .word .w{font-weight:700; font-size:12.5pt; color:#000;}
+  .word .t{color:#000; font-size:10pt; margin-top:6px; text-align:center;}
+  .words.hide-trans .word .t{visibility:hidden;}  /* Translations off -> blank back, word-only test cards */
 }
 </style>
 </head>
@@ -127,9 +137,9 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
   <div class="wrap row">
     <div class="field"><label for="packSel">Pack</label><select id="packSel"></select></div>
     <div class="field"><label for="setSel">Set</label><select id="setSel"></select></div>
+    <div class="field"><label for="clusterSel">Cluster</label><select id="clusterSel"></select></div>
     <div class="spacer"></div>
     <div class="toggle on" id="transToggle" role="switch" aria-checked="true" tabindex="0"><span class="switch"></span><span>Translations</span></div>
-    <button class="btn" id="expandBtn">Expand all</button>
     <button class="btn" id="printBtn">Print / cards</button>
   </div>
 </div>
@@ -195,9 +205,10 @@ const SAMPLE = {
 
 /* ---------------- state + elements ---------------- */
 const packSel=document.getElementById('packSel'), setSel=document.getElementById('setSel'),
+      clusterSel=document.getElementById('clusterSel'),
       view=document.getElementById('view'), transToggle=document.getElementById('transToggle'),
-      expandBtn=document.getElementById('expandBtn'), printBtn=document.getElementById('printBtn');
-let showTrans=true, allExpanded=false;
+      printBtn=document.getElementById('printBtn');
+let showTrans=true;
 const cache={};
 
 function esc(s){return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
@@ -228,70 +239,80 @@ function fillPacks(){
   setSel.innerHTML  = SETS.map(s=>`<option value="${s}">${s}</option>`).join('');
 }
 
+function clusterLabel(c){ return humanize(c.slug) || c.cluster_id || 'Cluster'; }
+
+function buildClusterOptions(data){
+  const tiers={}, order=[];
+  data.clusters.forEach((c,i)=>{ if(!tiers[c.tier]){tiers[c.tier]=[]; order.push(c.tier);} tiers[c.tier].push({c,i}); });
+  return order.map(tn=>{
+    const opts=tiers[tn].map(({c,i})=>`<option value="${i}">${esc(clusterLabel(c))} · ${(c.cards||[]).length}</option>`).join('');
+    return `<optgroup label="Tier ${tn}">${opts}</optgroup>`;
+  }).join('');
+}
+
 function setURL(){
+  const data=cache[packSel.value+'|'+setSel.value];
+  const i=parseInt(clusterSel.value,10);
+  const cid=(data&&data.clusters&&data.clusters[i])?data.clusters[i].cluster_id:'';
   const p=new URLSearchParams(); p.set('lang',packSel.value); p.set('set',setSel.value);
+  if(cid) p.set('cluster',cid);
   history.replaceState(null,'', '?'+p.toString());
 }
 
-async function render(){
-  setURL();
+async function loadAndRender(opts){
+  opts=opts||{};
   const lang=packSel.value, set=setSel.value;
-  view.innerHTML = `<div class="state"><span class="ic">◴</span>Loading ${esc(lang)} ${esc(set)}…</div>`;
-  const data = await loadSet(lang,set);
-  if(packSel.value!==lang || setSel.value!==set) return; // selection changed mid-load
-
-  if(!data || !data.clusters || !data.clusters.length){
-    view.innerHTML = `<div class="state"><span class="ic">◈</span>${esc(lang)} ${esc(set)} isn't published yet — check back as packs ship.</div>`;
+  view.innerHTML=`<div class="state"><span class="ic">◴</span>Loading ${esc(lang)} ${esc(set)}…</div>`;
+  const data=await loadSet(lang,set);
+  if(packSel.value!==lang||setSel.value!==set) return; // selection changed mid-load
+  if(!data||!data.clusters||!data.clusters.length){
+    clusterSel.innerHTML='';
+    view.innerHTML=`<div class="state"><span class="ic">◈</span>${esc(lang)} ${esc(set)} isn't published yet — check back as packs ship.</div>`;
     return;
   }
+  clusterSel.innerHTML=buildClusterOptions(data);
+  let idx=0;
+  if(opts.clusterId){ const k=data.clusters.findIndex(c=>c.cluster_id===opts.clusterId); if(k>=0) idx=k; }
+  clusterSel.value=String(idx);
+  renderCluster();
+}
 
-  let html = `<div class="setmeta"><span class="big">${esc(lang)} ${esc(set)}</span>
-    ${data.level?`<span>${esc(data.level)}</span>`:''}${data.total?`<span>${esc(data.total)} words</span>`:''}</div>`;
-
-  // group clusters by tier, preserving order
-  const tiers={};
-  data.clusters.forEach(c=>{ (tiers[c.tier]=tiers[c.tier]||[]).push(c); });
-  const tierNums=Object.keys(tiers).map(Number).sort((a,b)=>a-b);
-
-  tierNums.forEach((tn,i)=>{
-    const cls=tiers[tn];
-    const collapsed=(!allExpanded && i>0)?' collapsed':'';
-    html+=`<div class="tier${collapsed}"><div class="head" data-toggle="tier">
-      <span class="tnum">TIER ${tn}</span><span class="tlabel">Tier ${tn}</span>
-      <span class="tmeta">${cls.length} clusters<span class="chev"> ▾</span></span></div><div class="tier-body">`;
-    cls.forEach(c=>{
-      const words=normCards(c);
-      html+=`<div class="cluster"><div class="chead">
-        <span class="cid">${esc(c.cluster_id||'')}</span>
-        <span class="cname">${esc(humanize(c.slug)||c.cluster_id||'')}</span>
-        <span class="ccount">${words.length} words</span></div>
-        <div class="words${showTrans?'':' hide-trans'}">`+
-        words.map(([w,t])=>`<div class="word"><span class="w">${esc(w)}</span><span class="t">${esc(t)}</span></div>`).join('')+
-        `</div></div>`;
-    });
-    html+=`</div></div>`;
-  });
-
+function renderCluster(){
+  const lang=packSel.value, set=setSel.value, data=cache[lang+'|'+set];
+  if(!data||!data.clusters||!data.clusters.length) return;
+  const c=data.clusters[parseInt(clusterSel.value||'0',10)]||data.clusters[0];
+  setURL();
+  const words=normCards(c);
+  let html=`<div class="setmeta"><span class="big">${esc(lang)} ${esc(set)}</span>`+
+    (data.level?`<span>${esc(data.level)}</span>`:'')+(data.total?`<span>${esc(data.total)} words</span>`:'')+
+    `<span>${data.clusters.length} clusters</span></div>`;
+  html+=`<div class="cluster solo"><div class="chead">
+    <span class="tnum">TIER ${esc(c.tier)}</span>
+    <span class="cname">${esc(clusterLabel(c))}</span>
+    <span class="cid">${esc(c.cluster_id||'')}</span>
+    <span class="ccount">${words.length} words</span></div>
+    <div class="words${showTrans?'':' hide-trans'}">`+
+    words.map(([w,t])=>`<div class="word"><span class="w">${esc(w)}</span><span class="t">${esc(t)}</span></div>`).join('')+
+    `</div></div>`;
   view.innerHTML=html;
-  view.querySelectorAll('[data-toggle="tier"]').forEach(h=>h.addEventListener('click',()=>h.parentElement.classList.toggle('collapsed')));
   view.querySelectorAll('.words.hide-trans .word').forEach(row=>row.addEventListener('click',()=>row.classList.toggle('revealed')));
 }
 
 /* controls */
-packSel.addEventListener('change',render);
-setSel.addEventListener('change',render);
-transToggle.addEventListener('click',()=>{ showTrans=!showTrans; transToggle.classList.toggle('on',showTrans); transToggle.setAttribute('aria-checked',showTrans); render(); });
+packSel.addEventListener('change',()=>loadAndRender());
+setSel.addEventListener('change',()=>loadAndRender());
+clusterSel.addEventListener('change',renderCluster);
+transToggle.addEventListener('click',()=>{ showTrans=!showTrans; transToggle.classList.toggle('on',showTrans); transToggle.setAttribute('aria-checked',showTrans); renderCluster(); });
 transToggle.addEventListener('keydown',e=>{ if(e.key===' '||e.key==='Enter'){e.preventDefault(); transToggle.click();}});
-expandBtn.addEventListener('click',()=>{ allExpanded=!allExpanded; expandBtn.textContent=allExpanded?'Collapse all':'Expand all'; render(); });
 printBtn.addEventListener('click',()=>window.print());
 
-/* init — honour ?lang=&set= from the resources jump-links */
+/* init — honour ?lang=&set=&cluster= from the resources jump-links */
 fillPacks();
 const q=new URLSearchParams(location.search);
-const qL=q.get('lang'), qS=q.get('set');
+const qL=q.get('lang'), qS=q.get('set'), qC=q.get('cluster');
 if(qL && LANGS.includes(qL)) packSel.value=qL;
 if(qS && SETS.includes(qS)) setSel.value=qS;
-render();
+loadAndRender({clusterId:qC});
 </script>
 </body>
 </html>
