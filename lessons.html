@@ -27,7 +27,12 @@ nav{display:flex; justify-content:space-between; align-items:center; padding:16p
 nav .brand{font-weight:800; letter-spacing:.18em; color:var(--ink);}
 nav .links a{color:var(--ink); text-decoration:none; opacity:.7; margin-left:20px;}
 nav .links a:hover{opacity:1; color:var(--accent);}
-header.page{padding:44px 0 8px;}
+header.page{position:relative; padding:90px 0 40px; overflow:hidden;}
+header.page::before{content:""; position:absolute; inset:0; z-index:0;
+  background:#0c0a06 url('home.png') center 30% / cover no-repeat;}
+header.page::after{content:""; position:absolute; inset:0; z-index:1;
+  background:linear-gradient(180deg, rgba(16,13,8,.5) 0%, rgba(16,13,8,.7) 55%, var(--bg) 100%);}
+header.page .wrap{position:relative; z-index:2;}
 .crumb{font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); opacity:.85;}
 header.page h1{font-size:clamp(34px,7vw,58px); margin:13px 0 12px; font-weight:800; letter-spacing:-.01em; color:var(--ink);}
 header.page p{max-width:66ch; color:var(--dim); font-size:15px; margin:0;} header.page p b{color:var(--ink);}
@@ -72,7 +77,7 @@ footer{border-top:1px solid var(--line); padding:26px 22px; font-size:12px; colo
 footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{color:var(--ink);}
 
 @media print{
-  nav,.bar,.rail,.scr-foot,.audio,.overlay,.pron,footer .nav,header.page p{display:none !important;}
+  nav,.bar,.rail,.scr-foot,.audio,.overlay,.pron,footer .nav,header.page p,header.page::before,header.page::after{display:none !important;}
   body{background:#fff; color:#000;}
   .screen{border:1px solid #000; break-inside:avoid;} .scr-head{color:#000; border-color:#000;} .press{color:#000; border:0;}
 }
@@ -88,11 +93,13 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
   </span>
 </nav>
 
-<header class="page wrap">
-  <div class="crumb">FlashBoss · Free reference lessons</div>
-  <h1>Lessons</h1>
-  <!-- Static, crawlable SEO copy -->
-  <p>Free reference lessons for every FlashBoss language — <b>Italian, German, Spanish, and Esperanto</b>. Pronunciation, articles, verb tenses, register and usage, rendered exactly as they appear inside the game and organised by tier. Read them free, and tap any <b>Press N</b> line to hear it.</p>
+<header class="page">
+  <div class="wrap">
+    <div class="crumb">FlashBoss · Free reference lessons</div>
+    <h1>Lessons</h1>
+    <!-- Static, crawlable SEO copy -->
+    <p>Free reference lessons for every FlashBoss language — <b>Italian, German, Spanish, and Esperanto</b>. Pronunciation, articles, verb tenses, register and usage, rendered exactly as they appear inside the game and organised by tier. Read them free, and tap any <b>Press N</b> line to hear it.</p>
+  </div>
 </header>
 
 <div class="wrap">

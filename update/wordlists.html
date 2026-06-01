@@ -28,7 +28,12 @@ nav .brand{font-weight:800; letter-spacing:.18em; color:var(--ink);}
 nav .links a{color:var(--ink); text-decoration:none; opacity:.7; margin-left:20px;}
 nav .links a:hover{opacity:1; color:var(--accent);}
 
-header.page{padding:44px 0 8px;}
+header.page{position:relative; padding:90px 0 40px; overflow:hidden;}
+header.page::before{content:""; position:absolute; inset:0; z-index:0;
+  background:#0c0a06 url('home.png') center 30% / cover no-repeat;}
+header.page::after{content:""; position:absolute; inset:0; z-index:1;
+  background:linear-gradient(180deg, rgba(16,13,8,.5) 0%, rgba(16,13,8,.7) 55%, var(--bg) 100%);}
+header.page .wrap{position:relative; z-index:2;}
 .crumb{font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); opacity:.85;}
 header.page h1{font-size:clamp(34px,7vw,58px); margin:13px 0 12px; font-weight:800; letter-spacing:-.01em; color:var(--ink);}
 header.page p{max-width:66ch; color:var(--dim); font-size:15px; margin:0;}
@@ -88,7 +93,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
   nav,.controls,header.page p,.overlay,footer .nav,.printhide{display:none !important;}
   body{background:#fff; color:#000; font-size:11pt;}
   .wrap{max-width:none; padding:0;}
-  header.page{padding:0 0 8px;} header.page h1{font-size:20pt; margin:0;} .crumb{color:#000;}
+  header.page{padding:0 0 8px; overflow:visible;} header.page::before,header.page::after{display:none !important;} header.page h1{font-size:20pt; margin:0;} .crumb{color:#000;}
   .tier{border:1px solid #000; break-inside:avoid; margin:10px 0; background:#fff;}
   .tier.collapsed .tier-body{display:block !important;} .tier .chev{display:none;} .tier .tnum{color:#000; border-color:#000;}
   .cluster{break-inside:avoid; border-top:1px solid #999;}
@@ -109,11 +114,13 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
   </span>
 </nav>
 
-<header class="page wrap">
-  <div class="crumb">FlashBoss · Free word lists</div>
-  <h1>Word Lists</h1>
-  <!-- Static, crawlable SEO copy: names the languages and what's offered. -->
-  <p>Free, printable vocabulary lists for every FlashBoss language — <b>Italian, German, Spanish, and Esperanto</b>. The most useful words in each language, frequency-ranked and grouped into thematic clusters across five tiers, each paired with its English translation. Hide the translations to test yourself, or print a cluster and cut your own flashcards. Free to use however you like.</p>
+<header class="page">
+  <div class="wrap">
+    <div class="crumb">FlashBoss · Free word lists</div>
+    <h1>Word Lists</h1>
+    <!-- Static, crawlable SEO copy: names the languages and what's offered. -->
+    <p>Free, printable vocabulary lists for every FlashBoss language — <b>Italian, German, Spanish, and Esperanto</b>. The most useful words in each language, frequency-ranked and grouped into thematic clusters across five tiers, each paired with its English translation. Hide the translations to test yourself, or print a cluster and cut your own flashcards. Free to use however you like.</p>
+  </div>
 </header>
 
 <div class="controls printhide">
