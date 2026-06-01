@@ -1,0 +1,415 @@
+[
+  {
+    "lesson_id": "001",
+    "trigger_word": "saluton",
+    "title": "LESSON 1: ESPERANTO SOUNDS",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "The pronunciation of Esperanto is regular.",
+          "That means each letter consistently makes",
+          "the same sounds. Here are the vowels:",
+          "",
+          "'A' as in father:             Press 1",
+          "   amiko, tablo, kato",
+          "",
+          "'E' as in bed:                Press 2",
+          "   espero, bela, tre",
+          "",
+          "'I' as in machine:            Press 3",
+          "   iri, amiko, mi",
+          "",
+          "'O' as in more:               Press 4",
+          "   oro, nova, horo",
+          "",
+          "'U' as in rule:               Press 5",
+          "   urbo, kultur, nu"
+        ],
+        "pronunciation": "Leciono unu",
+        "pronunciation_speed": 1.4,
+        "pronunciation_mappings": {
+          "1": "amiko, tablo, kato",
+          "2": "espero, bela, tre",
+          "3": "iri, amiko, mi",
+          "4": "oro, nova, horo",
+          "5": "urbo, kultur, nu"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "Some consonants have accent marks.",
+          "It looks imposing, but once you learn it,",
+          "it simplifies things!",
+          "",
+          "Ĉ = 'ch' as in church:        Press 1",
+          "   ĉambro, ĉokolado, ĉefo",
+          "",
+          "Ĝ = 'j' as in jump:           Press 2",
+          "   ĝardeno, oranĝo, ĝojo",
+          "",
+          "Ĵ = 'zh' as in pleasure:      Press 3",
+          "   ĵurnalo, ĵaŭdo, ĵazo",
+          "",
+          "Ŝ = 'sh' as in shop:          Press 4",
+          "   ŝipo, fiŝo, ŝranko",
+          "",
+          "Ŭ = 'w' as in dew:            Press 5",
+          "   aŭ → aŭto   eŭ → Eŭropo"
+        ],
+        "pronunciation_speed": 1.4,
+        "pronunciation_mappings": {
+          "1": "ĉambro, ĉokolado, ĉefo",
+          "2": "ĝardeno, oranĝo, ĝojo",
+          "3": "ĵurnalo, ĵaŭdo, ĵazo",
+          "4": "ŝipo, fiŝo, ŝranko",
+          "5": "aŭ, aŭto, eŭ, Eŭropo"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "002",
+    "trigger_word": "estas",
+    "title": "LESSON 2: PRESENT TENSE",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "In Esperanto, present tense is simple:",
+          "ALL verbs end in -as, no matter who is",
+          "doing the action.",
+          "",
+          "EXAMPLES WITH 'ESTI' (to be):",
+          "",
+          "mi estas      = I am",
+          "vi estas      = you are",
+          "li estas      = he is",
+          "ŝi estas      = she is",
+          "ni estas      = we are",
+          "ili estas     = they are",
+          "",
+          "EXAMPLES WITH 'PAROLI' (to speak):",
+          "mi parolas    = I speak",
+          "vi parolas    = you speak",
+          "li parolas    = he speaks",
+          "",
+          "The verb NEVER changes! One form for all."
+        ],
+        "pronunciation": "Leciono du"
+      }
+    ]
+  },
+  {
+    "lesson_id": "003",
+    "trigger_word": "alia",
+    "title": "LESSON 3: ADJECTIVES & PLURALS",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "Every adjective in Esperanto ends in -a.",
+          "This makes them easy to spot!",
+          "",
+          "COMMON ADJECTIVES:",
+          "",
+          "bona   = good        malbona   = bad",
+          "granda = big         malgranda = small",
+          "bela   = beautiful   nova      = new",
+          "",
+          "WORD ORDER - Both ways work:",
+          "",
+          "bona libro  = a good book",
+          "libro bona  = a good book (also OK!)",
+          "",
+          "TIP: If it describes a noun and ends in",
+          "-a, it's an adjective. Simple!"
+        ],
+        "pronunciation": "Leciono tri"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "PLURALS: Add -j to nouns AND adjectives.",
+          "",
+          "NOUNS (-o becomes -oj):",
+          "",
+          "amiko   → amikoj    = friend → friends",
+          "libro   → libroj    = book → books",
+          "hundo   → hundoj    = dog → dogs",
+          "",
+          "ADJECTIVES MUST MATCH:",
+          "bona amiko    → bonaj amikoj",
+          "granda libro  → grandaj libroj",
+          "",
+          "PRONUNCIATION:",
+          "The -j sounds like 'y' in 'boy'.",
+          "amikoj = ah-MEE-koy",
+          "",
+          "Both noun AND adjective get -j!",
+          "La grandaj hundoj kuras. = The big dogs run."
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": "004",
+    "trigger_word": "bone",
+    "title": "LESSON 4: ADVERBS END IN -E",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "Adverbs describe HOW something happens.",
+          "In Esperanto, they always end in -e.",
+          "",
+          "FROM ADJECTIVE TO ADVERB:",
+          "bona → bone       = good → well",
+          "rapida → rapide   = quick → quickly",
+          "facila → facile   = easy → easily",
+          "lenta → lente     = slow → slowly",
+          "",
+          "THE DIFFERENCE:",
+          "",
+          "Li estas bona.",
+          "(He is good. ← describes HIM)",
+          "",
+          "Li kantas bone.",
+          "(He sings well. ← describes HOW)",
+          "",
+          "Remember: -a for nouns, -e for actions!"
+        ],
+        "pronunciation": "Leciono kvar"
+      }
+    ]
+  },
+  {
+    "lesson_id": "005",
+    "trigger_word": "kio",
+    "title": "LESSON 5: QUESTION WORDS (KI-)",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "All question words in Esperanto start",
+          "with KI-. This is part of a beautiful",
+          "system you'll learn more about later!",
+          "",
+          "THE QUESTION WORDS:",
+          "kio   = what (thing)",
+          "kiu   = who / which one",
+          "kie   = where (place)",
+          "kiam  = when (time)",
+          "kial  = why (reason)",
+          "kiel  = how (manner)",
+          "kiom  = how much / how many",
+          "",
+          "EXAMPLES:",
+          "Kio estas tio?     = What is that?",
+          "Kiu vi estas?      = Who are you?",
+          "Kie vi loĝas?      = Where do you live?",
+          "Kiam vi venas?     = When are you coming?"
+        ],
+        "pronunciation": "Leciono kvin"
+      }
+    ]
+  },
+  {
+    "lesson_id": "006",
+    "trigger_word": "helpo",
+    "title": "LESSON 6: THE ARTICLE \"LA\"",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "Esperanto has ONE article: LA (the).",
+          "",
+          "WITH LA = specific, known thing:",
+          "Mi vidas la hundon. = I see the dog.",
+          "La libro relevanta estas sur la tablo.",
+          "= The relevant book is on the table.",
+          "",
+          "WITHOUT ARTICLE = general concept:",
+          "Mi amas muzikon. = I love music.",
+          "Akvo estas necesa. = Water is necessary.",
+          "Ŝi volas kafon. = She wants coffee.",
+          "",
+          "COMPARE:",
+          "Mi legas libron. = I'm reading a book.",
+          "Mi legas la libron. = I'm reading the book.",
+          "",
+          "No a/an in Esperanto - context tells you!",
+          "LA never changes: la viro, la viroj, la domo."
+        ],
+        "pronunciation": "Leciono ses"
+      }
+    ]
+  },
+  {
+    "lesson_id": "007",
+    "trigger_word": "ĉu",
+    "title": "LESSON 7: YES/NO QUESTIONS",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "To turn any statement into a yes/no",
+          "question, just add ĈU at the beginning.",
+          "The word order stays exactly the same!",
+          "",
+          "STATEMENT → QUESTION:",
+          "Vi parolas Esperanton.",
+          "(You speak Esperanto.)",
+          "  ↓",
+          "Ĉu vi parolas Esperanton?",
+          "(Do you speak Esperanto?)",
+          "",
+          "MORE EXAMPLES:",
+          "Ĉu estas problemo?  = Is there a problem?",
+          "Ĉu li venas?        = Is he coming?",
+          "Ĉu vi komprenas?    = Do you understand?",
+          "",
+          "ANSWERS: Jes = Yes  /  Ne = No"
+        ],
+        "pronunciation": "Leciono sep"
+      }
+    ]
+  },
+  {
+    "lesson_id": "008",
+    "trigger_word": "patrino",
+    "title": "LESSON 8: FEMININE SUFFIX -IN-",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "To make a word specifically female, add",
+          "-IN- after the root, before the ending.",
+          "",
+          "FAMILY MEMBERS:",
+          "patro → patrino    = father → mother",
+          "frato → fratino    = brother → sister",
+          "filo → filino      = son → daughter",
+          "",
+          "STRUCTURE:",
+          "patr-in-o  = mother (noun -o)",
+          "patr-in-a  = motherly (adjective -a)",
+          "",
+          "WORKS WITH ANYTHING:",
+          "knabo → knabino    = boy → girl",
+          "hundo → hundino    = dog → female dog",
+          "amiko → amikino    = friend → girlfriend"
+        ],
+        "pronunciation": "Leciono ok"
+      }
+    ]
+  },
+  {
+    "lesson_id": "009",
+    "trigger_word": "malbona",
+    "title": "LESSON 9: OPPOSITE PREFIX MAL-",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "MAL- is one of Esperanto's most powerful",
+          "tools. Put it in front of any word to",
+          "create the opposite meaning instantly!",
+          "",
+          "ADJECTIVES:",
+          "bona → malbona      = good → bad",
+          "granda → malgranda  = big → small",
+          "nova → malnova      = new → old",
+          "alta → malalta      = high → low",
+          "juna → maljuna      = young → old",
+          "",
+          "VERBS TOO:",
+          "fermi → malfermi    = close → open",
+          "ami → malami        = love → hate",
+          "",
+          "This cuts vocabulary learning in HALF!",
+          "Learn 'bona', get 'malbona' free!"
+        ],
+        "pronunciation": "Leciono naŭ"
+      }
+    ]
+  },
+  {
+    "lesson_id": "010",
+    "trigger_word": "unu",
+    "title": "LESSON 10: NUMBER SYSTEM",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "Esperanto numbers are completely regular.",
+          "Learn the basics, then combine them!",
+          "",
+          "BASIC NUMBERS:",
+          "",
+          "0 = nul    5 = kvin    10 = dek",
+          "1 = unu    6 = ses     11 = dek unu",
+          "2 = du     7 = sep     12 = dek du",
+          "3 = tri    8 = ok      13 = dek tri",
+          "4 = kvar   9 = naŭ     14 = dek kvar",
+          "",
+          "BUILD LARGER NUMBERS:",
+          "20 = dudek (du + dek = two tens)",
+          "30 = tridek, 40 = kvardek, etc.",
+          "100 = cent, 1000 = mil",
+          "",
+          "COMBINE: 23 = dudek tri. No exceptions!"
+        ],
+        "pronunciation": "Leciono dek"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "ORDINAL NUMBERS (first, second, third...)",
+          "Add -a to any number. They're adjectives!",
+          "",
+          "unua    = first       kvara   = fourth",
+          "dua     = second      kvina   = fifth",
+          "tria    = third       deka    = tenth",
+          "",
+          "LARGER ORDINALS:",
+          "dudek-unua = twenty-first",
+          "centa = hundredth",
+          "",
+          "IN SENTENCES:",
+          "Ĉi tiu estas mia unua leciono.",
+          "(This is my first lesson.)",
+          "",
+          "Li loĝas sur la tria etaĝo.",
+          "(He lives on the third floor.)",
+          "",
+          "Like adjectives: unuaj paŝoj = first steps"
+        ]
+      }
+    ]
+  }
+]
