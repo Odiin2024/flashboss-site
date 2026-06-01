@@ -63,6 +63,8 @@ section{padding:30px 0;}
 .go:hover{transform:translate(-2px,-2px); box-shadow:7px 7px 0 color-mix(in oklab, var(--accent), #000 60%);}
 .go.green{background:var(--green); box-shadow:5px 5px 0 color-mix(in oklab, var(--green), #000 60%);}
 .go.green:hover{box-shadow:7px 7px 0 color-mix(in oklab, var(--green), #000 60%);}
+.go.soon{background:var(--rule); color:var(--faint); box-shadow:none; cursor:default; pointer-events:none;}
+.go.soon:hover{transform:none; box-shadow:none;}
 .langs{margin-top:20px; display:flex; gap:9px; flex-wrap:wrap; align-items:center;}
 .langs .lbl{font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); margin-right:4px;}
 .langs a{font-size:13px; text-decoration:none; color:var(--dim); border:1px solid var(--line); padding:7px 13px;}
@@ -137,15 +139,8 @@ footer .made{margin-top:12px; opacity:.8;}
       <span class="tag">Print</span>
       <h2>Reference sheets</h2>
       <p class="lead">One-page references built to print and pin up. More arrive as each pack ships.</p>
-      <!-- Code: wire references.html (per-language reference index). Esperanto Correlative Table lives there: correlative_table.pdf / correlative_table_print.pdf -->
-      <a class="go" href="references.html">Open the reference sheets &rarr;</a>
-      <div class="langs">
-        <span class="lbl">Jump to</span>
-        <a href="references.html?lang=Italian">Italian</a>
-        <a href="references.html?lang=German">German</a>
-        <a href="references.html?lang=Spanish">Spanish</a>
-        <a href="references.html?lang=Esperanto">Esperanto</a>
-      </div>
+      <!-- Code: wire references.html (per-language reference index). Esperanto Correlative Table lives there: correlative_table.pdf / correlative_table_print.pdf. Swap the span below back to an <a href="references.html"> + .langs jump-links once built. -->
+      <span class="go soon" aria-disabled="true">Coming soon</span>
     </div>
   </section>
 

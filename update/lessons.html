@@ -116,12 +116,14 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
    Default convention: data/<language>/tier<N>_lessons.json
      e.g. data/italian/tier1_lessons.json ... tier5_lessons.json
    Each file is an ARRAY of lessons for that tier (the existing shape).
-   The page fetches tiers 1–5 for the chosen language and concatenates.
+   The page fetches all tiers (1–15: Core 1–5, Pareto 1 6–10,
+   Pareto 2 11–15) for the chosen language and concatenates.
+   Missing tiers are skipped silently.
    ============================================================ */
 function lessonUrl(lang, tier){ return `data/${lang.toLowerCase()}/tier${tier}_lessons.json`; }
 
 const LANGS=["Italian","German","Spanish","Esperanto"];
-const TIERS=[1,2,3,4,5];
+const TIERS=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
 const SPEECH_LANG={Italian:"it-IT",German:"de-DE",Spanish:"es-ES",Esperanto:"eo"};
 const COLORS={green:'--green',blue:'--blue',gold:'--gold',amber:'--gold',rose:'--rose',purple:'--purple',cyan:'--cyan'};
 
