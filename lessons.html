@@ -56,13 +56,14 @@ select{font-family:var(--mono); font-size:14px; color:var(--ink); background:var
 select:focus{outline:1px solid var(--accent);}
 .spacer{flex:1;}
 /* EO | EN locale toggle (only for bilingual lessons; dimmed otherwise) */
-.loctog{display:inline-flex; border:1px solid var(--line); user-select:none;}
-.loctog .seg{font-family:var(--mono); font-size:12px; letter-spacing:.08em; color:var(--dim); background:var(--panel); border:0; padding:7px 13px; cursor:pointer;}
-.loctog .seg + .seg{border-left:1px solid var(--line);}
-.loctog .seg.on{color:#0c0a06; background:var(--accent); font-weight:700;}
-.loctog .seg:not(.on):hover{color:var(--ink);}
-.loctog.disabled{opacity:.32; pointer-events:none;}
-.loctog.disabled .seg.on{background:transparent; color:var(--faint); font-weight:400;}
+/* EO | EN locale toggle — lives in the lesson footer, only for bilingual lessons */
+.scr-foot.has-tog{justify-content:space-between;}
+.scr-foot .pgnav{display:flex; align-items:center; gap:16px;}
+.scr-foot .loctog{display:inline-flex; border:1px solid var(--green); user-select:none;}
+.scr-foot .loctog .seg{font-family:var(--mono); font-size:1em; letter-spacing:.06em; color:var(--green); background:transparent; border:0; padding:2px 11px; cursor:pointer;}
+.scr-foot .loctog .seg + .seg{border-left:1px solid var(--green);}
+.scr-foot .loctog .seg.on{color:var(--screen); background:var(--green); font-weight:700;}
+.scr-foot .loctog .seg:not(.on):hover{filter:brightness(1.2);}
 
 .state{padding:60px 0; text-align:center; color:var(--faint); font-size:14px;}
 .state .ic{font-size:26px; opacity:.5; display:block; margin-bottom:12px;}
@@ -130,11 +131,6 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
     <div class="field"><label for="langSel">Language</label><select id="langSel"></select></div>
     <div class="field"><label id="setLbl" for="setSel">Set</label><select id="setSel"></select></div>
     <div class="field"><label for="lessonSel">Lesson</label><select id="lessonSel"></select></div>
-    <div class="spacer"></div>
-    <div class="loctog disabled" id="loctog" role="group" aria-label="Lesson display language">
-      <button type="button" class="seg on" id="segFor">EO</button>
-      <button type="button" class="seg" id="segEng">EN</button>
-    </div>
   </div>
   <div id="stage"></div>
 </div>
@@ -177,7 +173,6 @@ const SAMPLE = {"Italian": [{"lesson_id": "001", "trigger_word": "cosa", "trigge
 
 const $=id=>document.getElementById(id);
 const langSel=$('langSel'), setSel=$('setSel'), setLbl=$('setLbl'), lessonSel=$('lessonSel'), stage=$('stage');
-const loctog=$('loctog'), segFor=$('segFor'), segEng=$('segEng');
 let LESSONS=[], li=0, pi=0, loc='foreign', curSet="Core", voice=null, speechLang="it-IT";
 let curLines=[], CHAR16=null;
 const cache={};
@@ -280,16 +275,19 @@ function lineToHTML(line, allowPress){
 }
 
 function renderScreen(){
-  const lesson=LESSONS[li]; if(!lesson){ stage.innerHTML=''; curLines=[]; updateToggle(); return; }
+  const lesson=LESSONS[li]; if(!lesson){ stage.innerHTML=''; curLines=[]; return; }
   const page=lesson.pages[pi];
   const bi=isBilingual(page), allowPress=!bi;
   const lines=activeLines(page); curLines=lines.slice();
   const cv=colorVarFor(lesson,page);
+  // bilingual lessons get an EO|EN toggle in the footer; ordinary lessons don't
+  const fc=FOREIGN_CODE[langSel.value]||'—';
+  const tog = bi ? `<span class="loctog" role="group" aria-label="Lesson language"><button type="button" class="seg${loc==='foreign'?' on':''}" data-loc="foreign">${fc}</button><button type="button" class="seg${loc==='english'?' on':''}" data-loc="english">EN</button></span>` : '';
   stage.innerHTML = `<div class="screen" id="screen" style="--hc:var(${cv})">
     <div class="scr-head"><span class="books">📚</span><span class="ttl">${esc(lessonLabel(lesson))}</span><span class="moon" title="${MOON.name}" aria-label="Moon tonight: ${MOON.name}">${MOON.glyph}</span></div>
     <div class="scr-body" id="body">${lines.map(l=>lineToHTML(l,allowPress)).join('')}</div>
     <div class="say" id="say"></div>
-    <div class="scr-foot"><button id="prev">‹ prev</button><span class="pg">Page ${page.page} / ${page.total_pages}</span><button id="next">next ›</button></div>
+    <div class="scr-foot${bi?' has-tog':''}">${tog}<span class="pgnav"><button id="prev">‹ prev</button><span class="pg">Page ${page.page} / ${page.total_pages}</span><button id="next">next ›</button></span></div>
   </div>`;
   const body=$('body'), say=$('say');
   if(allowPress) body.querySelectorAll('.press').forEach(p=>p.addEventListener('click',()=>{
@@ -298,11 +296,11 @@ function renderScreen(){
     say.textContent='▶ '+txt;
     playClip(audioUrl(langSel.value, lesson.lesson_id, page.page, key), txt);
   }));
+  if(bi) stage.querySelectorAll('.scr-foot .seg').forEach(s=>s.addEventListener('click',()=>{ if(s.dataset.loc!==loc){ loc=s.dataset.loc; renderScreen(); } }));
   $('prev').disabled = (li===0 && pi===0);
   $('next').disabled = (li===LESSONS.length-1 && pi===lesson.pages.length-1);
   $('prev').addEventListener('click',gotoPrev);
   $('next').addEventListener('click',gotoNext);
-  updateToggle();
   fit();
 }
 
@@ -338,23 +336,6 @@ function fit(){
   body.style.fontSize=(FS*Math.min(1,46/maxLen)).toFixed(2)+'px';
 }
 
-/* ---------- EO | EN toggle ---------- */
-function updateToggle(){
-  const lesson=LESSONS[li], page=lesson&&lesson.pages[pi];
-  const bi=isBilingual(page);
-  loctog.classList.toggle('disabled', !bi);
-  loctog.setAttribute('aria-disabled', bi?'false':'true');
-  segFor.textContent=FOREIGN_CODE[langSel.value]||'—';
-  segFor.classList.toggle('on', !bi || loc==='foreign');
-  segEng.classList.toggle('on', bi && loc==='english');
-}
-function setLoc(next){
-  if(loctog.classList.contains('disabled') || loc===next) return;
-  loc=next; renderScreen();
-}
-segFor.addEventListener('click',()=>setLoc('foreign'));
-segEng.addEventListener('click',()=>setLoc('english'));
-
 /* ---------- selection ---------- */
 function setURL(){ const p=new URLSearchParams(); p.set('lang',langSel.value); if(LESSONS[li]) p.set('lesson',LESSONS[li].lesson_id); history.replaceState(null,'','?'+p.toString()); }
 
@@ -363,7 +344,7 @@ async function selectLang(lang, wantLesson){
   stage.innerHTML=`<div class="state"><span class="ic">◴</span>Loading ${esc(lang)} lessons…</div>`; lessonSel.innerHTML=''; setSel.innerHTML='';
   const data=await loadLang(lang);
   if(langSel.value!==lang) return;
-  if(!data || !data.length){ stage.innerHTML=`<div class="state"><span class="ic">◈</span>${esc(lang)} lessons aren't published yet — check back as packs ship.</div>`; updateToggle(); return; }
+  if(!data || !data.length){ stage.innerHTML=`<div class="state"><span class="ic">◈</span>${esc(lang)} lessons aren't published yet — check back as packs ship.</div>`; return; }
   LESSONS=data; pi=0; loc='foreign';
   const want = wantLesson ? LESSONS.findIndex(L=>L.lesson_id===wantLesson) : -1;
   if(want>=0){ li=want; curSet=tierSet(LESSONS[want]._tier); } else { curSet="Core"; }
