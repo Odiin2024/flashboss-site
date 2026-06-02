@@ -1,483 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How FlashBoss Teaches — Technical Reference</title>
-    <meta name="description" content="Technical reference for FlashBoss — content architecture, session mechanics, the boss-fight graduation system, and the pedagogical design that governs them.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>How FlashBoss Teaches — Technical Reference | FlashBoss</title>
+<meta name="description" content="Technical reference for FlashBoss — content architecture, session mechanics, the boss-fight graduation system, and the pedagogical design that governs them.">
 
-    <link rel="icon" type="image/png" href="icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta property="og:type" content="article">
+<meta property="og:title" content="How FlashBoss Teaches — Technical Reference">
+<meta property="og:description" content="Content architecture, session mechanics, the boss-fight graduation system, and the pedagogical design that governs them.">
+<meta property="og:image" content="https://odiin2024.github.io/flashboss-site/website_image.png">
+<meta property="og:url" content="https://odiin2024.github.io/flashboss-site/about.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How FlashBoss Teaches — Technical Reference">
+<meta name="twitter:description" content="The pedagogy and mechanics behind FlashBoss — comprehensible input, retrieval practice, spaced repetition, and the boss-fight graduation system.">
+<meta name="twitter:image" content="https://odiin2024.github.io/flashboss-site/website_image.png">
 
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: url('manual/images/fog.jpeg') center center / 120% auto no-repeat fixed;
-            background-color: #0a0a19;
-            color: #e8dfb8;
-            min-height: 100vh;
-            line-height: 1.65;
-            position: relative;
-        }
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   FlashBoss — How it teaches (about.html).
+   House terminal standard: home.png hero strip, neutral amber
+   terminal body. A long technical reference — TOC, spec tables,
+   ASCII diagrams, citations — in the same skin as the rest of
+   the site.
+   ============================================================ */
+:root{
+  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
+  --accent:#e0a93f; --green:#62d38a; --blue:#7ec8ff; --rose:#ff8fb0;
+  --line:#3a3120; --rule:#2a2417;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--mono); background:var(--bg); color:var(--ink); line-height:1.7; -webkit-font-smoothing:antialiased;}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.04) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.wrap{max-width:840px; margin:0 auto; padding:0 24px;}
+a{color:var(--accent);}
 
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(10, 10, 25, 0.55);
-            pointer-events: none;
-            z-index: 0;
-        }
+nav{display:flex; justify-content:space-between; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line); position:relative; z-index:3; background:var(--bg);}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--dim);}
+nav .brand a, nav .brand .sep{color:var(--dim); text-decoration:none;}
+nav .brand a:hover{color:var(--ink);}
+nav .brand .here{font-weight:800; color:var(--ink);}
+nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--ink);}
+nav .brand .logo:hover{color:var(--accent);}
+nav .brand .pipe{color:var(--dim); margin:0 11px;}
+.nav-mobile{display:none;}
+.nav-mobile a{color:inherit; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.08em; opacity:.85;}
+.nav-mobile a:hover{opacity:1; color:var(--accent);}
+@media(max-width:640px){ nav .brand, nav .links{display:none;} .nav-mobile{display:flex; flex:1; justify-content:space-between; align-items:center;} .nav-mobile .r{display:flex; gap:18px;} }
+nav .links a{color:var(--ink); text-decoration:none; opacity:.7; margin-left:22px;}
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+nav .links a.steam{font-weight:800; opacity:1;}
 
-        .container {
-            position: relative;
-            z-index: 1;
-            max-width: 820px;
-            margin: 0 auto;
-            padding: 2.5rem 1.5rem 4rem;
-        }
+/* HERO — home.png strip (matches resources / packs) */
+.hero{position:relative; padding:78px 0 60px; overflow:hidden;}
+.hero::before{content:""; position:absolute; inset:0; z-index:0; background:#0c0a06 url('home.png') center 30% / cover no-repeat;}
+.hero::after{content:""; position:absolute; inset:0; z-index:1; background:linear-gradient(180deg, rgba(16,13,8,.52) 0%, rgba(16,13,8,.74) 55%, var(--bg) 100%);}
+.hero .wrap{position:relative; z-index:2;}
+.hero .crumb{font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--accent);}
+.hero h1{font-size:clamp(34px,7vw,60px); margin:13px 0 12px; font-weight:800; letter-spacing:-.01em;}
+.hero .subtitle{max-width:62ch; color:var(--dim); font-size:15px;}
 
-        /* ─── Header ─── */
-        .header {
-            margin-bottom: 2rem;
-            padding-bottom: 1.25rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-        }
+/* TOC */
+.toc{border:1px solid var(--line); border-left:2px solid var(--accent); background:var(--panel); padding:18px 22px; margin:34px 0 12px;}
+.toc-title{font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--faint); margin-bottom:12px;}
+.toc ol{list-style:none; counter-reset:toc; columns:2; column-gap:36px;}
+@media(max-width:560px){.toc ol{columns:1;}}
+.toc li{counter-increment:toc; padding:3px 0; font-size:13.5px;}
+.toc li::before{content:"§" counter(toc) "  "; color:var(--faint);}
+.toc a{color:var(--dim); text-decoration:none;}
+.toc a:hover{color:var(--accent);}
 
-        .header .eyebrow {
-            font-family: 'IBM Plex Mono', ui-monospace, monospace;
-            font-size: 0.72rem;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: rgba(126, 200, 255, 0.6);
-            margin-bottom: 0.6rem;
-        }
+main{padding:18px 0 0; counter-reset:sec;}
+section{padding:30px 0; border-top:1px solid var(--rule);}
+section:first-child{border-top:0;}
+h2{counter-increment:sec; font-size:clamp(22px,4.5vw,30px); font-weight:800; letter-spacing:-.01em; color:var(--ink); margin-bottom:14px;}
+h2::before{content:"§" counter(sec) "  "; color:var(--accent); font-weight:800;}
+h3{font-size:15px; font-weight:700; color:var(--accent); margin:22px 0 6px; letter-spacing:.02em;}
+p{margin-bottom:14px; color:color-mix(in oklab, var(--ink), var(--dim) 30%); font-size:15px;}
+p:last-child{margin-bottom:0;}
+em{color:var(--ink); font-style:italic;}
+strong{color:var(--ink); font-weight:700;}
+code{font-family:var(--mono); font-size:.88em; color:var(--blue); background:rgba(126,200,255,.08); padding:1px 6px; border-radius:2px;}
+ul{margin:0 0 14px 0; padding-left:0; list-style:none;}
+ul li{position:relative; padding-left:20px; margin-bottom:6px; color:color-mix(in oklab, var(--ink), var(--dim) 30%); font-size:15px;}
+ul li::before{content:"·"; position:absolute; left:4px; color:var(--accent); font-weight:700;}
 
-        .header h1 {
-            font-family: 'Merriweather', serif;
-            font-size: 2.2rem;
-            font-weight: 900;
-            color: #5555FF;
-            line-height: 1.2;
-            margin-bottom: 0.4rem;
-        }
+/* callout: the simple rule, surfaced */
+.tldr{border:1px solid var(--green); background:rgba(98,211,138,.06); padding:16px 20px; margin:18px 0; font-size:15px;}
+.tldr .lbl{font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:var(--green); display:block; margin-bottom:7px;}
+.tldr b{color:var(--ink);}
 
-        .header .subtitle {
-            font-size: 0.98rem;
-            color: rgba(232, 223, 184, 0.7);
-        }
+/* spec tables */
+.spec-wrap{overflow-x:auto; margin:14px 0;}
+.spec-table{width:100%; border-collapse:collapse; font-size:13.5px; min-width:460px;}
+.spec-table th{text-align:left; font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--faint); font-weight:700; padding:9px 14px; border-bottom:1px solid var(--line);}
+.spec-table td{padding:10px 14px; border-bottom:1px solid var(--rule); color:var(--dim); vertical-align:top;}
+.spec-table td:first-child{white-space:nowrap;}
+.spec-table tr:last-child td{border-bottom:0;}
 
-        /* ─── Table of contents ─── */
-        .toc {
-            background: rgba(0, 0, 0, 0.35);
-            border-left: 2px solid rgba(126, 200, 255, 0.5);
-            padding: 1rem 1.25rem 1rem 1.4rem;
-            margin-bottom: 2.5rem;
-            font-size: 0.9rem;
-        }
+/* ASCII diagrams */
+.tech-block{font-family:var(--mono); font-size:12.5px; line-height:1.5; color:var(--green); background:#0b0a06; border:1px solid var(--line); padding:16px 18px; margin:16px 0; overflow-x:auto; white-space:pre;}
 
-        .toc-title {
-            font-family: 'IBM Plex Mono', ui-monospace, monospace;
-            font-size: 0.7rem;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.45);
-            margin-bottom: 0.6rem;
-        }
+/* figures */
+figure{margin:18px 0; border:1px solid var(--line); background:var(--panel); padding:0;}
+figure img{display:block; width:100%; height:auto;}
+figcaption{font-size:12.5px; color:var(--faint); font-style:italic; padding:12px 16px; border-top:1px solid var(--rule);}
+figure.diagram{padding:16px 18px;}
+figure.diagram figcaption{border-top:1px solid var(--rule); margin-top:14px; padding:12px 0 0;}
 
-        .toc ol {
-            list-style: none;
-            counter-reset: toc;
-            padding: 0;
-        }
+/* CTA buttons */
+.cta-row{display:flex; gap:14px; flex-wrap:wrap; margin:30px 0 6px;}
+.btn{display:inline-block; font-size:14px; font-weight:700; letter-spacing:.06em; text-decoration:none; padding:13px 24px; transition:transform .12s ease, box-shadow .12s ease;}
+.btn.manual{color:var(--ink); background:transparent; border:1px solid var(--line);}
+.btn.manual:hover{border-color:var(--accent); color:var(--accent);}
+.btn.steam{color:#14110a; background:var(--accent); border:1px solid var(--accent); box-shadow:5px 5px 0 color-mix(in oklab, var(--accent), #000 60%);}
+.btn.steam:hover{transform:translate(-2px,-2px); box-shadow:7px 7px 0 color-mix(in oklab, var(--accent), #000 60%);}
 
-        .toc li {
-            counter-increment: toc;
-            padding: 0.15rem 0;
-        }
+/* author note */
+.author-note{border:1px solid var(--line); border-left:2px solid var(--rose); background:var(--panel); padding:16px 20px; margin:30px 0; font-size:14px; color:var(--dim); font-style:italic;}
+.author-note a{color:var(--rose); text-decoration:none; font-style:normal;}
+.author-note a:hover{color:var(--ink);}
 
-        .toc li::before {
-            content: "§" counter(toc) ". ";
-            color: rgba(255, 255, 255, 0.4);
-            font-family: 'IBM Plex Mono', ui-monospace, monospace;
-            font-size: 0.85em;
-        }
+/* references */
+.references{margin-top:30px; padding-top:22px; border-top:1px solid var(--line); font-size:13px; color:var(--dim);}
+.references h3{color:var(--faint); margin-top:0;}
+.references ol{list-style:none; counter-reset:ref; padding:0;}
+.references li{counter-increment:ref; padding-left:30px; position:relative; margin-bottom:7px;}
+.references li::before{content:"[" counter(ref) "]"; position:absolute; left:0; color:var(--accent);}
 
-        .toc a {
-            color: rgba(232, 223, 184, 0.85);
-            text-decoration: none;
-            transition: color 0.15s;
-        }
-
-        .toc a:hover {
-            color: #ffffff;
-        }
-
-        /* ─── Content ─── */
-        .content {
-            counter-reset: section;
-        }
-
-        .content > section {
-            margin-bottom: 2.5rem;
-        }
-
-        .content h2 {
-            counter-increment: section;
-            font-family: 'Merriweather', serif;
-            font-size: 1.35rem;
-            font-weight: 700;
-            color: #7ec8ff;
-            margin-bottom: 1rem;
-            padding-bottom: 0.4rem;
-            border-bottom: 1px solid rgba(126, 200, 255, 0.15);
-        }
-
-        .content h2::before {
-            content: "§" counter(section) "  ";
-            color: rgba(126, 200, 255, 0.4);
-            font-family: 'IBM Plex Mono', ui-monospace, monospace;
-            font-weight: 400;
-            font-size: 0.9em;
-        }
-
-        .content h3 {
-            font-family: 'Inter', sans-serif;
-            font-size: 1rem;
-            font-weight: 600;
-            color: #f0e6d3;
-            margin-top: 1.5rem;
-            margin-bottom: 0.6rem;
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-        }
-
-        .content p {
-            margin-bottom: 1rem;
-            color: rgba(232, 223, 184, 0.92);
-        }
-
-        .content ul, .content ol {
-            margin: 0.5rem 0 1rem 1.25rem;
-            color: rgba(232, 223, 184, 0.9);
-        }
-
-        .content li {
-            margin-bottom: 0.35rem;
-        }
-
-        .content em { color: #f0e6d3; font-style: italic; }
-        .content strong { color: #ffffff; font-weight: 600; }
-
-        /* ─── Monospace blocks ─── */
-        p code, li code {
-            font-family: 'IBM Plex Mono', ui-monospace, 'Courier New', monospace;
-            font-size: 0.88em;
-            color: #7ec8ff;
-            padding: 0.08em 0.35em;
-            background: rgba(126, 200, 255, 0.08);
-            border-radius: 3px;
-        }
-
-        .tech-block {
-            background: rgba(0, 0, 0, 0.55);
-            border: 1px solid rgba(126, 200, 255, 0.2);
-            border-radius: 4px;
-            padding: 1.1rem 1.25rem;
-            margin: 1.25rem 0;
-            font-family: 'IBM Plex Mono', ui-monospace, 'Courier New', monospace;
-            font-size: 0.82rem;
-            line-height: 1.55;
-            color: #e8dfb8;
-            overflow-x: auto;
-            white-space: pre;
-        }
-
-        /* ─── Spec tables ─── */
-        .spec-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.25rem 0;
-            font-size: 0.9rem;
-        }
-
-        .spec-table th,
-        .spec-table td {
-            padding: 0.55rem 0.8rem;
-            text-align: left;
-            vertical-align: top;
-            border-bottom: 1px solid rgba(126, 200, 255, 0.12);
-        }
-
-        .spec-table th {
-            color: #7ec8ff;
-            font-weight: 600;
-            font-family: 'IBM Plex Mono', ui-monospace, monospace;
-            font-size: 0.72rem;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            border-bottom: 1px solid rgba(126, 200, 255, 0.35);
-        }
-
-        .spec-table td code {
-            font-family: 'IBM Plex Mono', ui-monospace, monospace;
-            font-size: 0.85em;
-            color: #e8dfb8;
-            background: none;
-            padding: 0;
-        }
-
-        /* ─── Figures ─── */
-        figure {
-            margin: 1.5rem 0;
-            text-align: center;
-        }
-
-        figure img {
-            max-width: 100%;
-            height: auto;
-            border: 1px solid rgba(126, 200, 255, 0.2);
-            border-radius: 4px;
-            background: rgba(0, 0, 0, 0.3);
-        }
-
-        figcaption {
-            font-family: 'IBM Plex Mono', ui-monospace, monospace;
-            font-size: 0.82rem;
-            color: rgba(232, 223, 184, 0.7);
-            margin-top: 0.6rem;
-            line-height: 1.55;
-            padding: 0 1rem;
-        }
-
-        /* ─── CTA row ─── */
-        .cta-row {
-            display: flex;
-            gap: 0.9rem;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 2rem 0 1rem;
-        }
-
-        .btn {
-            display: inline-block;
-            border-radius: 4px;
-            padding: 0.7rem 1.3rem;
-            font-size: 0.95rem;
-            font-weight: 500;
-            text-decoration: none;
-            transition: background 0.2s, border-color 0.2s;
-        }
-
-        .btn.steam {
-            background: rgba(102, 192, 244, 0.18);
-            border: 1px solid rgba(102, 192, 244, 0.5);
-            color: #66c0f4;
-        }
-        .btn.steam:hover {
-            background: rgba(102, 192, 244, 0.3);
-            border-color: rgba(102, 192, 244, 0.8);
-        }
-
-        .btn.manual {
-            background: rgba(255, 102, 255, 0.15);
-            border: 1px solid rgba(255, 102, 255, 0.45);
-            color: #ff66ff;
-        }
-        .btn.manual:hover {
-            background: rgba(255, 102, 255, 0.25);
-            border-color: rgba(255, 102, 255, 0.75);
-        }
-
-        /* ─── References ─── */
-        .references {
-            font-size: 0.85rem;
-            margin-top: 2rem;
-            padding-top: 1.25rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: rgba(232, 223, 184, 0.7);
-        }
-
-        .references h3 {
-            font-family: 'IBM Plex Mono', ui-monospace, monospace;
-            font-size: 0.72rem;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.45);
-            margin-bottom: 0.8rem;
-        }
-
-        .references ol {
-            list-style: none;
-            counter-reset: ref;
-            padding: 0;
-        }
-
-        .references li {
-            counter-increment: ref;
-            padding-left: 2rem;
-            position: relative;
-            margin-bottom: 0.45rem;
-        }
-
-        .references li::before {
-            content: "[" counter(ref) "]";
-            position: absolute;
-            left: 0;
-            color: rgba(126, 200, 255, 0.5);
-            font-family: 'IBM Plex Mono', ui-monospace, monospace;
-        }
-
-        /* ─── Author note ─── */
-        .author-note {
-            margin-top: 2rem;
-            padding: 1rem 1.2rem;
-            background: rgba(0, 0, 0, 0.3);
-            border-left: 2px solid rgba(255, 102, 255, 0.4);
-            font-size: 0.9rem;
-            color: rgba(232, 223, 184, 0.75);
-            font-style: italic;
-        }
-
-        .author-note a {
-            color: #ff66ff;
-            text-decoration: none;
-            font-style: normal;
-        }
-
-        .author-note a:hover { color: #ffffff; }
-
-        /* ─── Footer ─── */
-        .footer {
-            margin-top: 2.5rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
-            text-align: center;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-        }
-
-        .footer-links a {
-            font-size: 0.85rem;
-            color: rgba(232, 223, 184, 0.55);
-            text-decoration: none;
-        }
-
-        .footer-links a:hover { color: #ffffff; }
-
-        /* ─── Responsive ─── */
-        @media (min-width: 768px) {
-            .header h1 { font-size: 2.8rem; }
-            .header .subtitle { font-size: 1.05rem; }
-            .content h2 { font-size: 1.5rem; }
-            .container { padding: 3rem 2rem 4rem; }
-        }
-    </style>
+footer{border-top:1px solid var(--line); padding:28px 24px; margin-top:40px; text-align:center; font-size:12px; color:var(--faint); letter-spacing:.04em;}
+footer .footer-links{display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap;}
+footer .footer-links a{color:var(--dim); text-decoration:none;} footer .footer-links a:hover{color:var(--ink);}
+footer .footer-links .div{opacity:.4;}
+footer .made{margin-top:12px; opacity:.8;}
+</style>
 </head>
 <body>
-    <div class="container">
+<div class="overlay"></div>
 
-        <header class="header">
-            <div class="eyebrow">Technical Reference</div>
-            <h1>How FlashBoss Teaches</h1>
-            <p class="subtitle">Content architecture, session mechanics, the boss-fight graduation system, and the pedagogical design that governs them.</p>
-        </header>
+<nav>
+  <span class="brand"><a class="logo" href="index.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.html">home</a><span class="sep"> · </span><span class="here">about</span></span>
+  <span class="links">
+    <a href="manual/index.html?screen=profile-select">how to play</a>
+    <a href="packs.html">packs</a>
+    <a href="resources.html">resources</a>
+    <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-about">steam</a>
+  </span>
+  <span class="nav-mobile">
+    <a href="home.html">home</a>
+    <span class="r"><a href="packs.html">packs</a><a href="resources.html">resources</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-about">steam</a></span>
+  </span>
+</nav>
 
-        <nav class="toc" aria-label="Table of contents">
-            <div class="toc-title">Contents</div>
-            <ol>
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#architecture">Content architecture</a></li>
-                <li><a href="#packs">Pack structure</a></li>
-                <li><a href="#session">Session structure and scheduling</a></li>
-                <li><a href="#fight">The boss fight</a></li>
-                <li><a href="#pedagogy">Pedagogical design</a></li>
-                <li><a href="#scope">Scope</a></li>
-                <li><a href="#effective">Using FlashBoss effectively</a></li>
-            </ol>
-        </nav>
+<header class="hero">
+  <div class="wrap">
+    <div class="crumb">Technical Reference</div>
+    <h1>How FlashBoss Teaches</h1>
+    <p class="subtitle">Content architecture, session mechanics, the boss-fight graduation system, and the pedagogical design that governs them.</p>
+  </div>
+</header>
 
-        <main class="content">
+<div class="wrap">
 
-            <section id="overview">
-                <h2>Overview</h2>
-                <p>FlashBoss is a desktop terminal application for vocabulary acquisition. It combines a spaced-repetition scheduler, constructed example sentences with text-to-speech, themed content clusters, and a boss-fight graduation mechanic. The system is designed to develop receptive skills — reading, listening, and comprehension — in the target language. Productive skills (speaking, writing) are out of scope by design and are addressed in §7.</p>
-                <p>A single Core pack contains 1,000 cards and delivers approximately 10,000 words of target-language input in context. Pareto expansion packs add roughly 20,000 words each, structured around the highest-frequency vocabulary not already covered. Supported languages are English, German, Spanish, Italian, and Esperanto.</p>
-            </section>
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-title">Contents</div>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#architecture">Content architecture</a></li>
+      <li><a href="#packs">Pack structure</a></li>
+      <li><a href="#session">Session structure and scheduling</a></li>
+      <li><a href="#fight">The boss fight</a></li>
+      <li><a href="#pedagogy">Pedagogical design</a></li>
+      <li><a href="#scope">Scope</a></li>
+      <li><a href="#effective">Using FlashBoss effectively</a></li>
+    </ol>
+  </nav>
 
-            <section id="architecture">
-                <h2>Content architecture</h2>
-                <p>This section describes the internal structure common to FlashBoss packs. Pack-level organization — how packs combine, and how foreign-language packs differ from English packs — is documented in §3.</p>
+  <main>
 
-                <h3>Card</h3>
-                <p>Each card in the scheduler carries four fields and two audio assets:</p>
-                <table class="spec-table">
-                    <thead>
-                        <tr><th>Field</th><th>Content</th><th>TTS</th></tr>
-                    </thead>
-                    <tbody>
-                        <tr><td><code>TargetWord</code></td><td>The vocabulary item being trained.</td><td>Yes</td></tr>
-                        <tr><td><code>ExampleSentence</code></td><td>A constructed sentence placing the target word in context, using only vocabulary the scheduler has already introduced.</td><td>Yes</td></tr>
-                        <tr><td><code>Translation</code></td><td>An idiomatic rendering of the example sentence in the learner's native language.</td><td>No</td></tr>
-                        <tr><td><code>Notes</code></td><td>Etymology, grammatical note, a second worked example, or synonym set. Optional.</td><td>No</td></tr>
-                    </tbody>
-                </table>
-                <p>Text-to-speech is applied only to the target-language fields. This asymmetry is deliberate: the goal is to saturate the learner in the target language's phonology while keeping the native-language scaffolding silent and unintrusive.</p>
+    <section id="overview">
+      <h2>Overview</h2>
+      <p>FlashBoss is a desktop terminal application for vocabulary acquisition. It combines a spaced-repetition scheduler, constructed example sentences with text-to-speech, themed content clusters, and a boss-fight graduation mechanic. The system is designed to develop receptive skills — reading, listening, and comprehension — in the target language. Productive skills (speaking, writing) are out of scope by design and are addressed in §7.</p>
+      <p>A single Core pack contains 1,000 cards and delivers approximately 10,000 words of target-language input in context. Pareto expansion packs add roughly 20,000 words each, structured around the highest-frequency vocabulary not already covered. Supported languages are English, German, Spanish, Italian, and Esperanto.</p>
+    </section>
 
-                <h3>Cluster</h3>
-                <p>A cluster is a themed group of cards — the unit of progress in FlashBoss. Clusters are introduced together, trained together, and graduated together through a single boss fight. Cluster themes are concrete and narrow: <em>Numbers and time</em>, <em>Travel and accommodation</em>, <em>Regional cuisine</em>, <em>Social roles and people</em>.</p>
+    <section id="architecture">
+      <h2>Content architecture</h2>
+      <p>This section describes the internal structure common to FlashBoss packs. Pack-level organization — how packs combine, and how foreign-language packs differ from English packs — is documented in §3.</p>
 
-                <h3>Tier</h3>
-                <p>Clusters sit inside tiers. A Core pack contains five tiers, each typically comprising around eight clusters. In foreign-language packs, tier membership is a difficulty gate: it governs which grammar structures may appear in a cluster's example sentences. Tier 3 example sentences are restricted to present, imperative, and preterite; tier 4 adds imperfect and conditional; tier 5 opens full grammar including subjunctive. In English packs the tier system is used thematically rather than syntactically — tier membership reflects topical domain (e.g. <em>Forms and documents</em>, <em>Social and email</em>, <em>Confusables</em>) rather than grammatical complexity.</p>
+      <h3>Card</h3>
+      <p>Each card carries up to five text fields and two audio assets. Only the target-language fields are voiced:</p>
+      <div class="spec-wrap">
+      <table class="spec-table">
+        <thead><tr><th>Field</th><th>Content</th><th>TTS</th></tr></thead>
+        <tbody>
+          <tr><td><code>TargetWord</code></td><td>The vocabulary item being trained. In gendered languages it carries its article, colour-coded to gender.</td><td>Yes</td></tr>
+          <tr><td><code>Translation</code></td><td>The target word's meaning in the learner's native language.</td><td>No</td></tr>
+          <tr><td><code>ExampleSentence</code></td><td>A constructed sentence placing the target word in context, using only vocabulary the scheduler has already introduced.</td><td>Yes</td></tr>
+          <tr><td><code>ExampleTranslation</code></td><td>An idiomatic rendering of the example sentence in the learner's native language.</td><td>No</td></tr>
+          <tr><td><code>Notes</code></td><td>Etymology, grammatical note, a second worked example, or a synonym set. Optional.</td><td>No</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>Text-to-speech is applied only to the target-language fields. This asymmetry is deliberate: the goal is to saturate the learner in the target language's phonology while keeping the native-language scaffolding silent and unintrusive.</p>
 
-                <h3>Lesson</h3>
-                <p>Lessons are reference pages pinned to specific cards — checkpoint material that accompanies a card through training. When a card with an attached lesson first appears, the lesson appears alongside. Each time the card resurfaces under the spaced-repetition schedule, the lesson resurfaces with it. Lessons are therefore persistent reference, not one-time exposures. A learner who has internalized a lesson's content can deactivate it individually: the card continues training, the lesson stops appearing. Lesson pages are formatted to the game's terminal constraint of 46 characters per line, 18 lines per page.</p>
-            </section>
+      <h3>Cluster</h3>
+      <p>A cluster is a themed group of cards — the unit of progress in FlashBoss. Clusters are introduced together, trained together, and graduated together through a single boss fight. Cluster themes are concrete and narrow: <em>Numbers and time</em>, <em>Travel and accommodation</em>, <em>Regional cuisine</em>, <em>Social roles and people</em>.</p>
 
-            <section id="packs">
-                <h2>Pack structure</h2>
-                <p>A pack is FlashBoss's distribution unit: a standalone vocabulary set — typically 1,000 cards — with its own cluster structure, tier structure, and lesson library. Packs ship under two different paradigms depending on the language.</p>
+      <h3>Tier</h3>
+      <p>Clusters sit inside tiers. A Core pack contains five tiers, each typically comprising around eight clusters. In foreign-language packs, tier membership is a difficulty gate: it governs which grammar structures may appear in a cluster's example sentences. Tier 3 example sentences are restricted to present, imperative, and preterite; tier 4 adds imperfect and conditional; tier 5 opens full grammar including subjunctive. In English packs the tier system is used thematically rather than syntactically — tier membership reflects topical domain (e.g. <em>Forms and documents</em>, <em>Social and email</em>, <em>Confusables</em>) rather than grammatical complexity.</p>
 
-                <h3>Foreign-language packs: cumulative three-pack progression</h3>
-                <p>German, Spanish, Italian, and Esperanto each ship as a three-pack sequence: <strong>Core</strong>, <strong>Pareto 1</strong>, and <strong>Pareto 2</strong>. The progression is cumulative — each pack assumes the vocabulary introduced in previous packs and constructs new example sentences on top. Example sentences in Pareto 1 draw from Core vocabulary plus the new Pareto 1 target words; Pareto 2 assumes both prior packs. A learner completing all three reaches a 3,000-card receptive vocabulary in the target language.</p>
-                <p>Tier numbering is continuous across the sequence. Core covers tiers 1–5. Pareto 1 and Pareto 2 between them extend the sequence by ten further tiers: tier 6 is the first Pareto tier, tier 15 is the last.</p>
-                <p>CEFR targets by pack:</p>
-                <table class="spec-table">
-                    <thead>
-                        <tr><th>Pack</th><th>Cards</th><th>Target</th></tr>
-                    </thead>
-                    <tbody>
-                        <tr><td><code>Core</code></td><td>1,000</td><td>A1–A2 grammar exposure; prepares a learner for A2 immersion instruction.</td></tr>
-                        <tr><td><code>Pareto 1</code></td><td>1,000</td><td>High-frequency B1–B2 vocabulary; extends into registers absent from Core (travel, bureaucratic, social).</td></tr>
-                        <tr><td><code>Pareto 2</code></td><td>1,000</td><td>B2–C1 vocabulary; formal connectors, abstract registers, cultural content.</td></tr>
-                    </tbody>
-                </table>
+      <h3>Lesson</h3>
+      <p>Lessons are reference pages pinned to specific cards — checkpoint material that accompanies a card through training. When a card with an attached lesson first appears, the lesson appears alongside. Each time the card resurfaces under the spaced-repetition schedule, the lesson resurfaces with it. Lessons are therefore persistent reference, not one-time exposures. A learner who has internalized a lesson's content can deactivate it individually: the card continues training, the lesson stops appearing. Lesson pages are formatted to the game's terminal constraint of 46 characters per line, 18 lines per page.</p>
+    </section>
 
-                <h3>English packs: individual standalones</h3>
-                <p>English ships differently. Each English pack is a self-contained 1,000-word vocabulary set, and learners select packs based on level and interest rather than completing them in order. There is no cumulative progression — completing one English pack does not presuppose another. English packs fall into two structural families:</p>
-                <ul>
-                    <li><strong>Level packs</strong> — vocabulary pitched at a particular level. The current free hub pack is English Adept (C1-adjacent); English Advance provides a pre-C1 bridge for learners arriving with lower vocabulary; English Exceptional is forthcoming.</li>
-                    <li><strong>The Roots series</strong> — paid packs that drill English vocabulary through its three etymological strata: <em>German Roots</em> (Anglo-Saxon), <em>Norman Roots</em> (Norman-French), and <em>Latin Roots</em> (scholarly). Cross-references between the three surface the historical doublets that give English its register system.</li>
-                </ul>
-                <p>Specific pack catalogs, release dates, and acquisition paths are documented on each language's dedicated page.</p>
-            </section>
+    <section id="packs">
+      <h2>Pack structure</h2>
+      <p>A pack is FlashBoss's distribution unit: a standalone vocabulary set — typically 1,000 cards — with its own cluster structure, tier structure, and lesson library. Packs ship under two different paradigms depending on the language.</p>
 
-            <section id="session">
-                <h2>Session structure and scheduling</h2>
-                <p>A training session processes each card through five phases. The first four are per-card; the fifth is per-cluster.</p>
-                <div class="tech-block">┌─ SESSION LOOP ──────────────────────────────────────┐
+      <h3>Foreign-language packs: cumulative three-pack progression</h3>
+      <p>German, Spanish, Italian, and Esperanto each ship as a three-pack sequence: <strong>Core</strong>, <strong>Pareto 1</strong>, and <strong>Pareto 2</strong>. The progression is cumulative — each pack assumes the vocabulary introduced in previous packs and constructs new example sentences on top. Example sentences in Pareto 1 draw from Core vocabulary plus the new Pareto 1 target words; Pareto 2 assumes both prior packs. A learner completing all three reaches a 3,000-card receptive vocabulary in the target language.</p>
+      <p>Tier numbering is continuous across the sequence. Core covers tiers 1–5. Pareto 1 and Pareto 2 between them extend the sequence by ten further tiers: tier 6 is the first Pareto tier, tier 15 is the last.</p>
+      <p>CEFR targets by pack:</p>
+      <div class="spec-wrap">
+      <table class="spec-table">
+        <thead><tr><th>Pack</th><th>Cards</th><th>Target</th></tr></thead>
+        <tbody>
+          <tr><td><code>Core</code></td><td>1,000</td><td>A1–A2 grammar exposure; prepares a learner for A2 immersion instruction.</td></tr>
+          <tr><td><code>Pareto 1</code></td><td>1,000</td><td>High-frequency B1–B2 vocabulary; extends into registers absent from Core (travel, bureaucratic, social).</td></tr>
+          <tr><td><code>Pareto 2</code></td><td>1,000</td><td>B2–C1 vocabulary; formal connectors, abstract registers, cultural content.</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h3>English packs: individual standalones</h3>
+      <p>English ships differently. Each English pack is a self-contained 1,000-word vocabulary set, and learners select packs based on level and interest rather than completing them in order. There is no cumulative progression — completing one English pack does not presuppose another. English packs fall into two structural families:</p>
+      <ul>
+        <li><strong>Level packs</strong> — vocabulary that pulls a reader up a level and leaves them there. <em>English Adept</em>, the free hub pack, spans the longest climb: it onramps from below an eighth-grade reading level and carries the learner up to university readiness, terminating around C1. <em>English Advance</em> targets the practical English of functioning in society without limitation: the forms, letters, officialdom, and everyday documents adult life demands. The guiding principle is to do it once, properly, and you will never have to think about it again.</li>
+        <li><strong>The Roots series</strong> — paid packs that drill English vocabulary through its three etymological strata: <em>German Roots</em> (Anglo-Saxon), <em>Norman Roots</em> (Norman-French), and <em>Latin Roots</em> (scholarly). Cross-references between the three surface the historical doublets that give English its register system.</li>
+      </ul>
+      <p>Specific pack catalogs, release dates, and acquisition paths are documented on each language's dedicated page.</p>
+    </section>
+
+    <section id="session">
+      <h2>Session structure and scheduling</h2>
+      <p>A training session processes each card through five phases. The first four are per-card; the fifth is per-cluster.</p>
+      <div class="tech-block" role="img" aria-label="Session loop diagram. Each card cycles through Listen, Read, Repeat, then Rate, after which the scheduler selects the next card. Per cluster, training continues until the cluster becomes eligible for a boss fight, which results in either a pass or a retry.">┌─ SESSION LOOP ──────────────────────────────────────┐
 │                                                     │
 │   [ Listen ] ─► [ Read ] ─► [ Repeat ] ─► [ Rate ]  │
 │       ▲                                     │       │
@@ -491,145 +266,156 @@
 │                                                     │
 └─────────────────────────────────────────────────────┘</div>
 
-                <h3>Listen</h3>
-                <p>TTS plays the target word followed by the example sentence. Only the target word appears on screen. This is first exposure.</p>
+      <h3>Listen</h3>
+      <p>TTS plays the target word followed by the example sentence. Only the target word appears on screen. This is first exposure.</p>
 
-                <h3>Read</h3>
-                <p>The example sentence and its translation appear. The learner has time to parse the sentence, cross-reference the translation, and absorb the grammar in context.</p>
+      <h3>Read</h3>
+      <p>The example sentence and its translation appear. The learner has time to parse the sentence, cross-reference the translation, and absorb the grammar in context.</p>
 
-                <h3>Repeat</h3>
-                <p>TTS replays the example sentence on demand. Repeat cycles are unlimited at this phase; the learner moves forward when ready.</p>
+      <h3>Repeat</h3>
+      <p>TTS replays the example sentence on demand. Repeat cycles are unlimited at this phase; the learner moves forward when ready.</p>
 
-                <h3>Rate</h3>
-                <p>The learner rates their recognition on a five-point scale. The rating determines the card's next scheduled interval along a Fibonacci sequence (1, 2, 3, 5, 8, 13, 21… days).</p>
-                <table class="spec-table">
-                    <thead>
-                        <tr><th>Rating</th><th>Effect on interval</th><th>Meaning</th></tr>
-                    </thead>
-                    <tbody>
-                        <tr><td><code>1 · Miss</code></td><td>Drop three Fibonacci steps (floored at minimum).</td><td>Not recognised.</td></tr>
-                        <tr><td><code>2 · Hard</code></td><td>Drop two Fibonacci steps (floored).</td><td>Recognised with significant effort.</td></tr>
-                        <tr><td><code>3 · Okay</code></td><td>Drop one Fibonacci step (floored).</td><td>Recognised, slow.</td></tr>
-                        <tr><td><code>4 · Good</code></td><td>Hold at current interval.</td><td>Fluent recognition.</td></tr>
-                        <tr><td><code>5 · Perfect</code></td><td>Advance one Fibonacci step.</td><td>Immediate, effortless.</td></tr>
-                    </tbody>
-                </table>
-                <p>The scale is calibrated to require aggressive rating for progress: only a 5 advances a card, a 4 holds, and ratings below 4 step the card backward through the interval schedule. A minimum-interval floor prevents the interval from collapsing below the base level. Cards therefore only advance when the learner truly nails them; the scheduler systematically re-surfaces cards that have not yet been mastered.</p>
-                <p>Two consecutive 5 ratings graduate a card — it exits the active training pile and enters long-term scheduled review. The two-5 threshold is deliberate: a single 5 can reflect a lucky moment; two in a row signal stable recall.</p>
+      <h3>Rate</h3>
+      <p>The learner rates their recognition on a six-point scale (0 through 5). The rating shifts the card's position in a Fibonacci interval sequence (1, 2, 3, 5, 8, 13, 21… days), with a per-rating minimum interval applied as a floor. Rating 0 is a special case — a reset to 1 day regardless of the card's prior position.</p>
+      <div class="spec-wrap">
+      <table class="spec-table">
+        <thead><tr><th>Rating</th><th>Meaning</th><th>Interval change</th></tr></thead>
+        <tbody>
+          <tr><td><code>0</code></td><td>Forgot completely.</td><td>Reset to 1 day.</td></tr>
+          <tr><td><code>1</code></td><td>Very poor.</td><td>Position −3 (minimum 1 day).</td></tr>
+          <tr><td><code>2</code></td><td>Poor.</td><td>Position −2 (minimum 2 days).</td></tr>
+          <tr><td><code>3</code></td><td>Okay.</td><td>Position −1 (minimum 3 days).</td></tr>
+          <tr><td><code>4</code></td><td>Good.</td><td>No change (minimum 5 days).</td></tr>
+          <tr><td><code>5</code></td><td>Perfect.</td><td>Position +1 (minimum 8 days).</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>The scale is calibrated to require aggressive rating for progress. Only a 5 advances a card; 4 holds position; 1 through 3 step the card backward through the Fibonacci schedule; 0 resets it to 1 day. The per-rating minimum intervals prevent a card's interval from collapsing on a bad rating, and they anchor the mastery rule.</p>
 
-                <h3>Daily mix</h3>
-                <p>New cards are drawn into the deck one at a time in cluster order; cluster boundaries do not gate card introduction. Daily card volume follows a Fibonacci ratio — for a given day's session, review cards and new cards are drawn in proportion to consecutive Fibonacci numbers, so the mix approaches φ: the golden ratio. The learner does not configure this; pacing is scheduler-managed.</p>
+      <h3>Card mastery</h3>
+      <p>A card is mastered on two consecutive 5 ratings. The mechanism is direct: a single 5 lifts the card's minimum interval to 8 days; a second 5 advances it to 13 days — the mastery threshold. From any starting position, two consecutive perfect recalls therefore carry a card to mastery. The two-5 rule filters out lucky moments: one effortless recall can be chance, but two in succession signal stable recall.</p>
 
-                <h3>Fight</h3>
-                <p>A cluster becomes eligible for its boss fight when all of its cards have graduated — each having received two consecutive 5 ratings. Fight mechanics are detailed in §5.</p>
-            </section>
+      <h3>Daily mix</h3>
+      <p>New cards are drawn into the deck one at a time in cluster order; cluster boundaries do not gate card introduction. Daily card volume follows a Fibonacci ratio — for a given day's session, review cards and new cards are drawn in proportion to consecutive Fibonacci numbers, so the mix approaches φ, the golden ratio. The learner does not configure this; pacing is scheduler-managed.</p>
 
-            <section id="fight">
-                <h2>The boss fight</h2>
-                <p>The boss fight is the graduation mechanism for a cluster. It is the only way a cluster transitions out of active training. Unlike the Rate phase — which is self-assessed — the boss fight is adversarial and strictly multiple-choice. The learner and the boss share a single linear arena; the learner starts at the left, the boss stands further right. The task is to shove the boss off the far end. Sumo rules: only one remains on the platform.</p>
-                <p>Each turn presents one of the cluster's cards as a prompt, with eight possible answers on the number keys 1–8. A correct answer advances the learner one position along the track; the boss is simultaneously shoved one position closer to the far edge. A wrong answer slides the learner two positions back toward the near edge; the boss does not move. Pushed off the near edge, the learner is locked out of that cluster's fight until the next day. Shoved past the far edge, the boss is defeated and the cluster is conquered.</p>
-                <figure>
-                    <figcaption>The arena: a single horizontal track of tick-marked positions. The learner's avatar begins at the left; the boss stands further right; an ╳ marks the far edge. Fall off the left and the cluster locks until the next day; push the boss past the ╳ and the cluster is conquered.</figcaption>
-                </figure>
-                <p>Card ordering inside the fight is deliberate. Positions 1 and 2 pull from the cluster's easiest cards — a warm-up that lets the learner build a positional lead. Positions 3 and 4 pull from the cluster's hardest: the weakest words in the deck, delivered as soon as the learner has started to gain ground. A wrong answer at position 3 or 4 slides the learner two positions back — landing on position 1 or 2 — and the missed card is reclassified as the learner's easiest from that moment on. Unfortunately, that means it's waiting for them: the same card, now sitting in the easy slots where they've just landed. A cluster cannot be conquered until its weakest cards are mastered.</p>
-                <p>The design rationale is documented in §6. In brief: the boss fight injects a bounded, low-stakes stressor that produces genuine retrieval pressure without the consequences of a real-world language failure. It also provides a discrete success state — cluster conquered — that the open-ended rhythm of spaced repetition otherwise lacks.</p>
-            </section>
+      <h3>Fight</h3>
+      <div class="tldr"><span class="lbl">The short version</span>A cluster's boss fight unlocks once you've mastered <b>80% of its cards</b>. <b>A card is mastered with two perfect recalls in a row.</b> That's the whole rule — everything below is just the machinery underneath it.</div>
+      <p>A cluster becomes eligible for its boss fight when 80% of its cards are mastered — when 80% have reached the 13-day interval. You do not need every card mastered to fight: the boss is where the remaining handful are settled. Fight mechanics are detailed in §5.</p>
+    </section>
 
-            <section id="pedagogy">
-                <h2>Pedagogical design</h2>
-                <p>FlashBoss's architecture reflects established findings in second-language acquisition and cognitive psychology. The relevant foundations:</p>
+    <section id="fight">
+      <h2>The boss fight</h2>
+      <p>The boss fight is the graduation mechanism for a cluster. It is the only way a cluster transitions out of active training. Unlike the Rate phase — which is self-assessed — the boss fight is adversarial and strictly multiple-choice. The learner and the boss share a single linear arena; the learner starts at the left, the boss stands further right. The task is to shove the boss off the far end. Sumo rules: only one remains on the platform.</p>
+      <p>Each turn presents one of the cluster's cards as a prompt, with eight possible answers on the number keys 1–8. A correct answer advances the learner one position along the track; the boss is simultaneously shoved one position closer to the far edge. A wrong answer slides the learner two positions back toward the near edge; the boss does not move. Pushed off the near edge, the learner is locked out of that cluster's fight until the next day. Shoved past the far edge, the boss is defeated and the cluster is conquered.</p>
+      <figure class="diagram">
+<div class="tech-block" aria-hidden="true">  you                                      boss
+   ▣──┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──▣────╳
+   ▲  └ easy ┘        └ hardest ┘         ▲
+   │     1,2            3,4               │
+ fall off ◄── wrong −2      right +1 ──► push off ╳</div>
+        <figcaption>The arena: a single horizontal track of positions. The learner's avatar begins at the left; the boss stands further right; an ╳ marks the far edge. Fall off the left and the cluster locks until the next day; push the boss past the ╳ and the cluster is conquered.</figcaption>
+      </figure>
+      <p>Card ordering inside the fight is deliberate. Positions 1 and 2 pull from the cluster's easiest cards — a warm-up that lets the learner build a positional lead. Positions 3 and 4 pull from the cluster's hardest: the weakest words in the deck, delivered as soon as the learner has started to gain ground. A wrong answer at position 3 or 4 slides the learner two positions back — landing on position 1 or 2 — and the missed card is reclassified as the learner's easiest from that moment on. Unfortunately, that means it's waiting for them: the same card, now sitting in the easy slots where they've just landed. A cluster cannot be conquered until its weakest cards are mastered.</p>
+      <p>The design rationale is documented in §6. In brief: the boss fight injects a bounded, low-stakes stressor that produces genuine retrieval pressure without the consequences of a real-world language failure. It also provides a discrete success state — cluster conquered — that the open-ended rhythm of spaced repetition otherwise lacks.</p>
+    </section>
 
-                <h3>Comprehensible input</h3>
-                <p>Krashen's input hypothesis [1] holds that learners acquire language most effectively when input is slightly above current competence — comprehensible enough to parse, demanding enough to extend. Example sentences in FlashBoss are constructed so that the target word is typically the only unknown element; the surrounding sentence is drawn from vocabulary the scheduler has already introduced. This calibrates comprehensibility to roughly 80–95% for the trained learner, placing each sentence in the <em>i+1</em> zone.</p>
+    <section id="pedagogy">
+      <h2>Pedagogical design</h2>
+      <p>FlashBoss's architecture reflects established findings in second-language acquisition and cognitive psychology. The relevant foundations:</p>
 
-                <h3>Retrieval practice</h3>
-                <p>Active recall produces stronger long-term retention than re-reading [2]. The Rate phase forces retrieval <em>before</em> the translation is revealed, applying the testing effect to every card exposure. Cards are not passively shown; they are actively recalled and self-assessed.</p>
+      <h3>Comprehensible input</h3>
+      <p>Krashen's input hypothesis [1] holds that learners acquire language most effectively when input is slightly above current competence — comprehensible enough to parse, demanding enough to extend. Example sentences in FlashBoss are constructed so that the target word is typically the only unknown element; the surrounding sentence is drawn from vocabulary the scheduler has already introduced. This calibrates comprehensibility to roughly 80–95% for the trained learner, placing each sentence in the <em>i+1</em> zone.</p>
 
-                <h3>Spaced repetition</h3>
-                <p>Memory decays along a predictable curve [3]. Reviewing a card just before forgetting consolidates the memory trace more efficiently than massed repetition. The Fibonacci interval sequence is one of several schedules that approximate the forgetting curve; it is used here for its simplicity, stability, and intuitive progression for the learner.</p>
+      <h3>Retrieval practice</h3>
+      <p>Active recall produces stronger long-term retention than re-reading [2]. The Rate phase forces retrieval <em>before</em> the translation is revealed, applying the testing effect to every card exposure. Cards are not passively shown; they are actively recalled and self-assessed.</p>
 
-                <h3>Desirable difficulty</h3>
-                <p>Retention benefits from effort at the point of encoding and retrieval [4]. The Rate scale enacts desirable difficulty by making regression the default: ratings below 5 either hold a card in place or push it backward through the Fibonacci schedule. Only unambiguous recall earns forward motion, and graduation requires two such recalls in succession. The scale therefore prevents the common SRS failure mode in which generous self-assessment lets under-trained cards drift into long intervals and quietly fall out of recall.</p>
+      <h3>Spaced repetition</h3>
+      <p>Memory decays along a predictable curve [3]. Reviewing a card just before forgetting consolidates the memory trace more efficiently than massed repetition. The Fibonacci interval sequence is one of several schedules that approximate the forgetting curve; it is used here for its simplicity, stability, and intuitive progression for the learner.</p>
 
-                <h3>Affective framing</h3>
-                <p>High anxiety degrades acquisition [1]. The boss fight is designed to introduce pressure without raising the affective filter: stakes are bounded (a single failed fight costs a day, not standing in a conversation), the system is private, and no permanent record exists. The pressure is engineered to be sharp enough to focus retrieval and shallow enough to preserve the conditions acquisition requires.</p>
+      <h3>Desirable difficulty</h3>
+      <p>Retention benefits from effort at the point of encoding and retrieval [4]. The Rate scale enacts desirable difficulty by making regression the default: ratings below 5 either hold a card in place or push it backward through the Fibonacci schedule. Only unambiguous recall earns forward motion, and mastery requires two such recalls in succession. The scale therefore prevents the common SRS failure mode in which generous self-assessment lets under-trained cards drift into long intervals and quietly fall out of recall.</p>
 
-                <h3>Input before output</h3>
-                <p>Receptive skills develop asymmetrically faster than productive skills when trained alone. Saturating a learner in high-comprehension input before asking for production tracks how first-language acquisition proceeds in children, and allows the vocabulary and grammar to become parseable before they become deployable. FlashBoss is the input half of a complete learning pipeline; productive practice — speaking, writing, interaction — is the responsibility of tools FlashBoss does not attempt to replace.</p>
-            </section>
+      <h3>Affective framing</h3>
+      <p>High anxiety degrades acquisition [1]. The boss fight is designed to introduce pressure without raising the affective filter: stakes are bounded (a single failed fight costs a day, not standing in a conversation), the system is private, and no permanent record exists. The pressure is engineered to be sharp enough to focus retrieval and shallow enough to preserve the conditions acquisition requires.</p>
 
-            <section id="scope">
-                <h2>Scope</h2>
-                <p>FlashBoss trains:</p>
-                <ul>
-                    <li>Target-language vocabulary and recognition.</li>
-                    <li>Sentence-level reading comprehension.</li>
-                    <li>Listening comprehension via TTS.</li>
-                    <li>Incidental grammar acquisition through exposure in context.</li>
-                    <li>Reading fluency at the clause level.</li>
-                </ul>
-                <p>FlashBoss does not train:</p>
-                <ul>
-                    <li>Speaking or pronunciation production.</li>
-                    <li>Writing production.</li>
-                    <li>Conversational fluency.</li>
-                    <li>Interaction repair strategies.</li>
-                </ul>
-                <p>These require live interaction and direct feedback that a scheduler cannot provide. FlashBoss is designed to be the comprehension engine underneath a larger study plan — the engine that makes interaction profitable when it happens elsewhere.</p>
-            </section>
+      <h3>Input before output</h3>
+      <p>Receptive skills develop asymmetrically faster than productive skills when trained alone. Saturating a learner in high-comprehension input before asking for production tracks how first-language acquisition proceeds in children, and allows the vocabulary and grammar to become parseable before they become deployable. FlashBoss is the input half of a complete learning pipeline; productive practice — speaking, writing, interaction — is the responsibility of tools FlashBoss does not attempt to replace.</p>
+    </section>
 
-            <section id="effective">
-                <h2>Using FlashBoss effectively</h2>
+    <section id="scope">
+      <h2>Scope</h2>
+      <p>FlashBoss trains:</p>
+      <ul>
+        <li>Target-language vocabulary and recognition.</li>
+        <li>Sentence-level reading comprehension.</li>
+        <li>Listening comprehension via TTS.</li>
+        <li>Incidental grammar acquisition through exposure in context.</li>
+        <li>Reading fluency at the clause level.</li>
+      </ul>
+      <p>FlashBoss does not train:</p>
+      <ul>
+        <li>Speaking or pronunciation production.</li>
+        <li>Writing production.</li>
+        <li>Conversational fluency.</li>
+        <li>Interaction repair strategies.</li>
+      </ul>
+      <p>These require live interaction and direct feedback that a scheduler cannot provide. FlashBoss is designed to be the comprehension engine underneath a larger study plan — the engine that makes interaction profitable when it happens elsewhere.</p>
+    </section>
 
-                <h3>Cadence</h3>
-                <p>Ten to twenty minutes per day. The scheduler is calibrated for daily sessions; longer gaps degrade the interval calibration. Missed days are absorbed without permanent damage, but consistency is the primary variable separating learners who complete Core from learners who do not. New-card introduction is controlled by the scheduler's Fibonacci split (§4), not the learner — running multiple sessions in a day does not accelerate pacing.</p>
+    <section id="effective">
+      <h2>Using FlashBoss effectively</h2>
 
-                <h3>Failed fights</h3>
-                <p>A failed boss fight is an expected event, not a defect. A card missed in a fight's hard positions is reclassified as the learner's easiest card from that point forward, which means the same card will be waiting in the opening positions of the next fight attempt — exactly where the learner most needs a confidence-building correct answer. Most clusters are fought two or three times before they are conquered; difficult clusters may take more.</p>
+      <h3>Cadence</h3>
+      <p>Ten to twenty minutes per day. The scheduler is calibrated for daily sessions; longer gaps degrade the interval calibration. Missed days are absorbed without permanent damage, but consistency is the primary variable separating learners who complete Core from learners who do not. New-card introduction is controlled by the scheduler's Fibonacci split (§4), not the learner — running multiple sessions in a day does not accelerate pacing.</p>
 
-                <h3>Pairing with other material</h3>
-                <p>Complementary input accelerates acquisition. Appropriate pairings:</p>
-                <ul>
-                    <li>Listening input (podcasts, news segments) at or slightly below current tier.</li>
-                    <li>Reading material below current tier for extensive-reading practice.</li>
-                    <li>Interaction practice (tutor, language exchange) beginning roughly when Core is halfway complete.</li>
-                </ul>
-                <p>Avoid pairing with competing flashcard systems that reintroduce the same vocabulary on a different schedule — this creates scheduling interference and reduces the precision of the Rate phase's feedback.</p>
+      <h3>Failed fights</h3>
+      <p>A failed boss fight is an expected event, not a defect. A card missed in a fight's hard positions is reclassified as the learner's easiest card from that point forward, which means the same card will be waiting in the opening positions of the next fight attempt — exactly where the learner most needs a confidence-building correct answer. Most clusters are fought two or three times before they are conquered; difficult clusters may take more.</p>
 
-                <h3>Expected arc</h3>
-                <p>A consistent learner completes Core in two to six months. Passive reading comprehension accelerates noticeably around tier four or five (still within Core); cold recognition of spoken example sentences typically arrives around tier eight or nine (inside Pareto 1). Productive fluency does not emerge from FlashBoss alone and is not the system's claim.</p>
-            </section>
+      <h3>Pairing with other material</h3>
+      <p>Complementary input accelerates acquisition. Appropriate pairings:</p>
+      <ul>
+        <li>Listening input (podcasts, news segments) at or slightly below current tier.</li>
+        <li>Reading material below current tier for extensive-reading practice.</li>
+        <li>Interaction practice (tutor, language exchange) beginning roughly when Core is halfway complete.</li>
+      </ul>
+      <p>Avoid pairing with competing flashcard systems that reintroduce the same vocabulary on a different schedule — this creates scheduling interference and reduces the precision of the Rate phase's feedback.</p>
 
-            <div class="cta-row">
-                <a href="manual/" class="btn manual">Browse the Manual</a>
-                <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-about" class="btn steam">Get it on Steam</a>
-            </div>
+      <h3>Expected arc</h3>
+      <p>A consistent learner completes Core in two to six months. Passive reading comprehension accelerates noticeably around tier four or five (still within Core); cold recognition of spoken example sentences typically arrives around tier eight or nine (inside Pareto 1). Productive fluency does not emerge from FlashBoss alone and is not the system's claim.</p>
+    </section>
 
-            <aside class="author-note">
-                FlashBoss is built and maintained by Odiin, a CELTA-certified language teacher operating as Odiin Developments (Brandenburg, Germany). More on the project's origin and direction is on the <a href="found-me.html">background page</a>.
-            </aside>
-
-            <div class="references">
-                <h3>References</h3>
-                <ol>
-                    <li>Krashen, S. D. (1982). <em>Principles and Practice in Second Language Acquisition</em>. Pergamon. (Input hypothesis; affective filter.)</li>
-                    <li>Roediger, H. L., &amp; Karpicke, J. D. (2006). Test-enhanced learning: taking memory tests improves long-term retention. <em>Psychological Science</em>, 17(3), 249–255.</li>
-                    <li>Ebbinghaus, H. (1885). <em>Über das Gedächtnis</em>. Duncker &amp; Humblot. (Forgetting curve, precursor to spaced repetition; cf. Leitner, 1972.)</li>
-                    <li>Bjork, R. A. (1994). Memory and metamemory considerations in the training of human beings. In <em>Metacognition: Knowing about Knowing</em>. MIT Press. (Desirable difficulty.)</li>
-                </ol>
-            </div>
-
-        </main>
-
-        <footer class="footer">
-            <div class="footer-links">
-                <a href="home.html">Hub</a>
-                <a href="press.html">Help FlashBoss grow</a>
-                <a href="affiliate.html">Affiliate Program</a>
-                <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-about">Steam</a>
-            </div>
-        </footer>
-
+    <div class="cta-row">
+      <a href="manual/" class="btn manual">Browse the Manual</a>
+      <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-about" class="btn steam">Get it on Steam &rarr;</a>
     </div>
+
+    <aside class="author-note">
+      FlashBoss is built and maintained by Odiin, a CELTA-certified language teacher operating as Odiin Developments (Brandenburg, Germany). More on the project's origin and direction is on the <a href="found-me.html">background page</a>.
+    </aside>
+
+    <div class="references">
+      <h3>References</h3>
+      <ol>
+        <li>Krashen, S. D. (1982). <em>Principles and Practice in Second Language Acquisition</em>. Pergamon. (Input hypothesis; affective filter.)</li>
+        <li>Roediger, H. L., &amp; Karpicke, J. D. (2006). Test-enhanced learning: taking memory tests improves long-term retention. <em>Psychological Science</em>, 17(3), 249–255.</li>
+        <li>Ebbinghaus, H. (1885). <em>Über das Gedächtnis</em>. Duncker &amp; Humblot. (Forgetting curve, precursor to spaced repetition; cf. Leitner, 1972.)</li>
+        <li>Bjork, R. A. (1994). Memory and metamemory considerations in the training of human beings. In <em>Metacognition: Knowing about Knowing</em>. MIT Press. (Desirable difficulty.)</li>
+      </ol>
+    </div>
+
+  </main>
+</div>
+
+<footer>
+  <span class="footer-links">
+    <a href="home.html">home</a><span class="div">·</span>
+    <a href="packs.html">packs</a><span class="div">·</span>
+    <a href="resources.html">resources</a><span class="div">·</span>
+    <a href="manual/">manual</a><span class="div">·</span>
+    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-about">steam</a>
+  </span>
+  <div class="made">FlashBoss · From Master Odiin and Master Claude</div>
+</footer>
+
 </body>
 </html>
