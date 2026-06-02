@@ -66,22 +66,23 @@ select:focus{outline:1px solid var(--accent);}
    Lines: header = blank / title / blank (1-3), body = 23 lines (4-26), footer = 2 lines (27-28).
    Only the header is colour-coded; the body stays neutral ink. */
 .screen{width:52ch; max-width:100%; margin:6px auto 0; border:1px solid #fff; background:var(--screen);
-  font-family:var(--mono); font-size:15px; line-height:1.5; color:var(--ink);}
+  font-family:var(--mono); font-size:15px; line-height:1.5; color:var(--ink);
+  /* in-box palette — exact chalk shades from colors.py, scoped to the lesson mockup only */
+  --green:#82be82; --blue:#6487aa; --gold:#ffeb80; --cyan:#8cb4c8; --magenta:#b496af; --rose:#c88282; --purple:#b496af;}
 .scr-head{display:flex; align-items:center; gap:8px; padding:1.5em 3ch; border-bottom:1px solid #fff; color:var(--hc);}
 .scr-head .moon, .scr-head .books{flex:0 0 auto; font-size:1.05em;}
-.scr-head .ttl{flex:1; min-width:0; text-align:center; font-weight:800; letter-spacing:.02em; font-size:.95em;
+.scr-head .ttl{flex:1; min-width:0; text-align:center; font-weight:800; text-transform:uppercase; letter-spacing:.02em; font-size:.95em;
   white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
-.screen.eng .scr-head .ttl{text-transform:uppercase; font-weight:800;} /* English headers: magenta (via --hc), caps, bold */
 .scr-body{padding:1.5em 3ch 0; min-height:34.5em; color:var(--ink);} /* one blank line of top padding; 23-line field */
 .ln{white-space:pre; font-variant-ligatures:none;}
-.press{cursor:pointer; color:inherit; border-bottom:1px dotted currentColor;}
-.press:hover{color:var(--accent); border-bottom-color:var(--accent);}
+.press{cursor:pointer; color:var(--cyan); border-bottom:1px dotted currentColor;}
+.press:hover{background:color-mix(in oklab, var(--cyan), transparent 82%);}
 .say{min-height:1.4em; padding:0 3ch .7em; color:var(--accent); font-size:.82em; white-space:pre;} .say:empty{display:none;}
-.scr-foot{display:flex; align-items:center; justify-content:center; gap:16px; padding:.62em 3ch; border-top:1px solid #fff; color:var(--dim); font-size:.82em;}
-.scr-foot .pg{color:var(--faint);}
-.scr-foot button{font-family:var(--mono); font-size:1em; color:var(--ink); background:var(--panel); border:1px solid var(--line); padding:6px 14px; cursor:pointer;}
-.scr-foot button:hover:not(:disabled){border-color:var(--accent); color:var(--accent);}
-.scr-foot button:disabled{opacity:.3; cursor:default;}
+.scr-foot{display:flex; align-items:center; justify-content:center; gap:16px; padding:.62em 3ch; border-top:1px solid #fff; color:var(--green); font-size:.82em;}
+.scr-foot .pg{color:var(--green);}
+.scr-foot button{font-family:var(--mono); font-size:1em; color:var(--green); background:var(--panel); border:1px solid var(--green); padding:6px 14px; cursor:pointer;}
+.scr-foot button:hover:not(:disabled){filter:brightness(1.18);}
+.scr-foot button:disabled{opacity:.3; color:var(--faint); border-color:var(--line); cursor:default;} /* muted */
 
 footer{border-top:1px solid var(--line); padding:26px 22px; font-size:12px; color:var(--faint); text-align:center; letter-spacing:.04em; margin-top:40px;}
 footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{color:var(--ink);}
@@ -133,7 +134,6 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
 
 <footer>
   <span class="nav"><a href="home.html">home</a> · <a href="wordlists.html">word lists</a> · <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-lessons">steam</a></span>
-  <div style="margin-top:8px;">FlashBoss · From Master Odiin and Master Claude</div>
 </footer>
 
 <script>
@@ -185,11 +185,9 @@ function esc(s){return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>
 function niceTitle(t){ return String(t||'').toLowerCase().replace(/(^|[^a-z'])([a-z])/g,(m,p,c)=>p+c.toUpperCase()); }
 /* "Lesson N: Title" for every lesson — N from the (sequential) lesson_id, so milestone/
    resource pages that carry no number in their title get one too. */
-function lessonLabel(L){
-  const n=parseInt(L&&L.lesson_id,10);
-  const t=String((L&&L.title)||'').replace(/^\s*lesson\s+\d+\s*[:.–—-]\s*/i,'').trim();
-  return (isNaN(n)?'':'Lesson '+n+': ')+niceTitle(t);
-}
+function bareTitle(L){ return niceTitle(String((L&&L.title)||'').replace(/^\s*lesson\s+\d+\s*[:.–—-]\s*/i,'').trim()); }
+function lessonLabel(L){ const n=parseInt(L&&L.lesson_id,10); return (isNaN(n)?'':'Lesson '+n+': ')+bareTitle(L); }  // window header
+function optLabel(L){ const n=parseInt(L&&L.lesson_id,10); return (isNaN(n)?'':n+': ')+bareTitle(L); }              // dropdown (category is already "Lesson")
 function foreignKeyOf(page){ return Object.keys(page).find(k=>k!=='english' && Array.isArray(page[k])); }
 function isBilingual(page){ return !!page && Array.isArray(page.english) && !!foreignKeyOf(page); }
 function activeLines(page){
@@ -197,8 +195,9 @@ function activeLines(page){
   return page.content || [];
 }
 function colorVarFor(lesson,page){
-  if(isBilingual(page) && loc==='english') return '--magenta';
-  return COLORS[lesson.header_color] || '--gold';
+  // foreign-language pane keeps the lesson's designated colour; everything English is magenta
+  if(isBilingual(page) && loc==='foreign') return COLORS[lesson.header_color] || '--gold';
+  return '--magenta';
 }
 
 /* live moon-phase glyph for the header — synodic month from a known new moon (2000-01-06 18:14 UTC) */
@@ -230,7 +229,7 @@ function renderLessonSelect(){
   const groups={}, order=[];
   LESSONS.forEach((L,i)=>{ if(!groups[L._tier]){groups[L._tier]=[]; order.push(L._tier);} groups[L._tier].push(i); });
   lessonSel.innerHTML = order.sort((a,b)=>a-b).map(t=>{
-    const opts=groups[t].map(i=>`<option value="${i}"${i===li?' selected':''}>${esc(lessonLabel(LESSONS[i]))}</option>`).join('');
+    const opts=groups[t].map(i=>`<option value="${i}"${i===li?' selected':''}>${esc(optLabel(LESSONS[i]))}</option>`).join('');
     return `<optgroup label="Tier ${t}">${opts}</optgroup>`;
   }).join('');
 }
@@ -251,26 +250,34 @@ function renderScreen(){
   const bi=isBilingual(page), allowPress=!bi;
   const lines=activeLines(page); curLines=lines.slice();
   const cv=colorVarFor(lesson,page);
-  const eng=bi && loc==='english';
-  const multi=lesson.pages.length>1;
-  stage.innerHTML = `<div class="screen${eng?' eng':''}" id="screen" style="--hc:var(${cv})">
+  stage.innerHTML = `<div class="screen" id="screen" style="--hc:var(${cv})">
     <div class="scr-head"><span class="books">📚</span><span class="ttl">${esc(lessonLabel(lesson))}</span><span class="moon" title="${MOON.name}" aria-label="Moon tonight: ${MOON.name}">${MOON.glyph}</span></div>
     <div class="scr-body" id="body">${lines.map(l=>lineToHTML(l,allowPress)).join('')}</div>
     <div class="say" id="say"></div>
-    ${multi?`<div class="scr-foot"><button id="prev">‹ prev</button><span class="pg">Page ${page.page} / ${page.total_pages}</span><button id="next">next ›</button></div>`:''}
+    <div class="scr-foot"><button id="prev">‹ prev</button><span class="pg">Page ${page.page} / ${page.total_pages}</span><button id="next">next ›</button></div>
   </div>`;
   const body=$('body'), say=$('say');
   if(allowPress) body.querySelectorAll('.press').forEach(p=>p.addEventListener('click',()=>{
     const txt=(page.pronunciation_mappings||{})[p.dataset.key];
     if(txt){ say.textContent='▶ '+txt; speak(txt); }
   }));
-  if(multi){
-    $('prev').disabled=pi===0; $('next').disabled=pi===lesson.pages.length-1;
-    $('prev').addEventListener('click',()=>{ if(pi>0){pi--; renderScreen();}});
-    $('next').addEventListener('click',()=>{ if(pi<lesson.pages.length-1){pi++; renderScreen();}});
-  }
+  $('prev').disabled = (li===0 && pi===0);
+  $('next').disabled = (li===LESSONS.length-1 && pi===lesson.pages.length-1);
+  $('prev').addEventListener('click',gotoPrev);
+  $('next').addEventListener('click',gotoNext);
   updateToggle();
   fit();
+}
+
+/* page nav that rolls over lesson boundaries: next past the last page -> next lesson's first
+   page; prev before the first page -> previous lesson's last page */
+function gotoPrev(){
+  if(pi>0){ pi--; renderScreen(); return; }
+  if(li>0){ li--; pi=LESSONS[li].pages.length-1; loc='foreign'; renderLessonSelect(); renderScreen(); setURL(); }
+}
+function gotoNext(){
+  if(pi<LESSONS[li].pages.length-1){ pi++; renderScreen(); return; }
+  if(li<LESSONS.length-1){ li++; pi=0; loc='foreign'; renderLessonSelect(); renderScreen(); setURL(); }
 }
 
 /* size the fixed 52-char frame to the viewport, then shrink the body font
