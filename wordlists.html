@@ -53,9 +53,27 @@ header.page p b{color:var(--ink);}
 .field{display:flex; align-items:center; gap:8px;}
 .field label{font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--faint);}
 select, .btn{font-family:var(--mono); font-size:14px; color:var(--ink); background:var(--panel); border:1px solid var(--line); padding:8px 12px; cursor:pointer;}
-select[multiple]{padding:4px; height:130px; min-width:240px; overflow-y:auto;}
-select[multiple] option{padding:3px 8px;}
-select[multiple] optgroup{color:var(--faint); font-style:normal;}
+/* closable multi-select dropdown */
+.msel{position:relative;}
+.msel-trigger{font-family:var(--mono); font-size:14px; color:var(--ink); background:var(--panel); border:1px solid var(--line); padding:8px 12px; cursor:pointer; min-width:160px; text-align:left;}
+.msel-trigger::after{content:" \25BE"; color:var(--faint);}
+.msel-trigger:hover, .msel-trigger:focus{border-color:var(--accent); outline:none;}
+.msel-pop{position:absolute; top:calc(100% + 5px); left:0; z-index:60; background:var(--panel); border:1px solid var(--line); padding:7px; display:flex; flex-direction:column; gap:7px; box-shadow:0 10px 28px rgba(0,0,0,.55);}
+.msel-pop[hidden]{display:none;}
+.msel-pop select[multiple]{height:248px; min-width:250px; padding:4px; border-color:var(--rule); overflow-y:auto;}
+.msel-pop select[multiple] option{padding:3px 8px;}
+.msel-pop select[multiple] optgroup{color:var(--faint); font-style:normal;}
+.msel-foot{display:flex; align-items:center; justify-content:space-between; gap:14px;}
+.msel-hint{font-size:11px; color:var(--faint);}
+
+/* how-to modal */
+.modal{position:fixed; inset:0; z-index:200; background:rgba(8,6,3,.72); display:flex; align-items:center; justify-content:center; padding:24px;}
+.modal[hidden]{display:none;}
+.modal-card{background:var(--panel); border:1px solid var(--line); max-width:560px; padding:26px 28px; box-shadow:0 14px 44px rgba(0,0,0,.6);}
+.modal-card h3{font-size:18px; color:var(--accent); margin:0 0 14px; font-weight:800;}
+.modal-card ul{margin:0 0 18px; padding-left:18px; display:flex; flex-direction:column; gap:10px;}
+.modal-card li{font-size:14px; color:var(--dim); line-height:1.5;}
+.modal-card li b{color:var(--ink);}
 select:focus, .btn:focus{outline:1px solid var(--accent);}
 .spacer{flex:1;}
 .toggle{display:inline-flex; align-items:center; gap:9px; cursor:pointer; user-select:none; font-size:13px; color:var(--dim);}
@@ -149,10 +167,32 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
   <div class="wrap row">
     <div class="field"><label for="packSel">Pack</label><select id="packSel"></select></div>
     <div class="field"><label for="setSel">Set</label><select id="setSel"></select></div>
-    <div class="field"><label for="clusterSel">Clusters</label><select id="clusterSel" multiple size="6" title="Click a cluster. Shift-click another to select a contiguous range, then Print to put them on one sheet."></select></div>
+    <div class="field"><label for="clusterTrigger">Clusters</label>
+      <div class="msel" id="clusterMsel">
+        <button type="button" class="msel-trigger" id="clusterTrigger" aria-haspopup="true" aria-expanded="false">select cluster(s)</button>
+        <div class="msel-pop" id="clusterPop" hidden>
+          <select id="clusterSel" multiple size="9"></select>
+          <div class="msel-foot"><span class="msel-hint">Shift-click for a contiguous range</span><button type="button" class="btn" id="clusterOk">OK</button></div>
+        </div>
+      </div>
+    </div>
     <div class="spacer"></div>
     <div class="toggle on" id="transToggle" role="switch" aria-checked="true" tabindex="0"><span class="switch"></span><span>Translations</span></div>
+    <button class="btn" id="howBtn">How to</button>
     <button class="btn" id="printBtn">Print / cards</button>
+  </div>
+</div>
+
+<div class="modal printhide" id="howModal" hidden>
+  <div class="modal-card">
+    <h3>Using the word lists</h3>
+    <ul>
+      <li><b>Pick a language and set</b> with the Pack and Set menus.</li>
+      <li><b>Choose clusters:</b> open <i>Clusters</i>, click one, then <b>Shift-click</b> another to take a contiguous range (Ctrl / &#8984;-click adds single ones). Click <b>OK</b>, press <b>Enter</b>, or click outside to close.</li>
+      <li><b>Translations</b> toggle: on shows word + translation; off hides them so you can self-test — and prints word-only cards.</li>
+      <li><b>Print / cards:</b> the selected clusters print as cut-out, foldable flashcards — word and translation side by side with a centre fold line. Several clusters print together to save paper.</li>
+    </ul>
+    <button type="button" class="btn" id="howClose">Got it</button>
   </div>
 </div>
 
@@ -218,6 +258,9 @@ const SAMPLE = {
 /* ---------------- state + elements ---------------- */
 const packSel=document.getElementById('packSel'), setSel=document.getElementById('setSel'),
       clusterSel=document.getElementById('clusterSel'),
+      clusterTrigger=document.getElementById('clusterTrigger'), clusterPop=document.getElementById('clusterPop'),
+      clusterOk=document.getElementById('clusterOk'), clusterMsel=document.getElementById('clusterMsel'),
+      howBtn=document.getElementById('howBtn'), howModal=document.getElementById('howModal'), howClose=document.getElementById('howClose'),
       view=document.getElementById('view'), transToggle=document.getElementById('transToggle'),
       printBtn=document.getElementById('printBtn');
 let showTrans=true;
@@ -265,9 +308,17 @@ function buildClusterOptions(data){
 }
 
 function selectedIdxs(){
-  const idxs=Array.from(clusterSel.selectedOptions).map(o=>parseInt(o.value,10)).filter(n=>!isNaN(n));
-  return idxs.length?idxs.sort((a,b)=>a-b):[0];
+  return Array.from(clusterSel.selectedOptions).map(o=>parseInt(o.value,10)).filter(n=>!isNaN(n)).sort((a,b)=>a-b);
 }
+function clusterSummary(){
+  const data=cache[packSel.value+'|'+setSel.value], idxs=selectedIdxs();
+  if(!data||!idxs.length) return 'select cluster(s)';
+  const tc=i=>{const c=data.clusters[i]; return c?tcPrefix(c):'';};
+  if(idxs.length===1) return tc(idxs[0]);
+  const contiguous=(idxs[idxs.length-1]-idxs[0])===idxs.length-1;
+  return contiguous ? `${tc(idxs[0])} to ${tc(idxs[idxs.length-1])}` : `${tc(idxs[0])} et al`;
+}
+function updateTrigger(){ clusterTrigger.textContent=clusterSummary(); }
 function setURL(){
   const data=cache[packSel.value+'|'+setSel.value];
   const ids=selectedIdxs().map(i=>(data&&data.clusters&&data.clusters[i])?data.clusters[i].cluster_id:'').filter(Boolean);
@@ -289,9 +340,7 @@ async function loadAndRender(opts){
   }
   clusterSel.innerHTML=buildClusterOptions(data);
   const wanted=(opts.clusterId||'').split(',').filter(Boolean);
-  let any=false;
-  Array.from(clusterSel.options).forEach(o=>{ const c=data.clusters[parseInt(o.value,10)]; o.selected=!!(c && wanted.includes(c.cluster_id)); if(o.selected) any=true; });
-  if(!any && clusterSel.options.length) clusterSel.options[0].selected=true;
+  Array.from(clusterSel.options).forEach(o=>{ const c=data.clusters[parseInt(o.value,10)]; o.selected=!!(c && wanted.includes(c.cluster_id)); });
   renderSelected();
 }
 
@@ -299,7 +348,8 @@ function renderSelected(){
   const lang=packSel.value, set=setSel.value, data=cache[lang+'|'+set];
   if(!data||!data.clusters||!data.clusters.length) return;
   const idxs=selectedIdxs();
-  setURL();
+  setURL(); updateTrigger();
+  if(!idxs.length){ view.innerHTML=`<div class="state"><span class="ic">◧</span>Select one or more clusters above to view and print them.</div>`; return; }
   const totalCards=idxs.reduce((n,i)=>n+(data.clusters[i]?normCards(data.clusters[i]).length:0),0);
   let html=`<div class="setmeta"><span class="big">${esc(lang)} ${esc(set)}</span>`+
     (data.level?`<span>${esc(data.level)}</span>`:'')+(data.total?`<span>${esc(data.total)} words</span>`:'')+
@@ -327,6 +377,19 @@ clusterSel.addEventListener('change',renderSelected);
 transToggle.addEventListener('click',()=>{ showTrans=!showTrans; transToggle.classList.toggle('on',showTrans); transToggle.setAttribute('aria-checked',showTrans); renderSelected(); });
 transToggle.addEventListener('keydown',e=>{ if(e.key===' '||e.key==='Enter'){e.preventDefault(); transToggle.click();}});
 printBtn.addEventListener('click',()=>window.print());
+
+/* cluster dropdown open / close */
+function setPop(open){ clusterPop.hidden=!open; clusterTrigger.setAttribute('aria-expanded', open?'true':'false'); }
+clusterTrigger.addEventListener('click',e=>{ e.stopPropagation(); setPop(clusterPop.hidden); });
+clusterOk.addEventListener('click',()=>{ setPop(false); clusterTrigger.focus(); });
+clusterSel.addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); setPop(false); clusterTrigger.focus(); } });
+document.addEventListener('click',e=>{ if(!clusterMsel.contains(e.target)) setPop(false); });
+document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ setPop(false); howModal.hidden=true; } });
+
+/* how-to modal */
+howBtn.addEventListener('click',()=>{ howModal.hidden=false; });
+howClose.addEventListener('click',()=>{ howModal.hidden=true; });
+howModal.addEventListener('click',e=>{ if(e.target===howModal) howModal.hidden=true; });
 
 /* init — honour ?lang=&set=&cluster= from the resources jump-links */
 fillPacks();
