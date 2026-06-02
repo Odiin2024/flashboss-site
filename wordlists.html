@@ -38,6 +38,11 @@ nav .brand .logo:hover{color:var(--accent);}
 nav .brand .pipe{color:var(--faint); margin:0 11px;}
 nav .links a{color:var(--ink); text-decoration:none; opacity:.7; margin-left:20px;}
 nav .links a:hover{opacity:1; color:var(--accent);}
+/* collapsed left: breadcrumb -> simple "home" on narrow widths or short (landscape) viewports;
+   the right side (sister link + steam) is only two fields and stays put */
+.nav-home{display:none; color:var(--ink); text-decoration:none; font-weight:700; letter-spacing:.08em; opacity:.85;}
+.nav-home:hover{opacity:1; color:var(--accent);}
+@media(max-width:640px), (max-height:480px){ nav .brand{display:none;} .nav-home{display:inline;} }
 
 header.page{position:relative; padding:90px 0 40px; overflow:hidden;}
 header.page::before{content:""; position:absolute; inset:0; z-index:0;
@@ -86,6 +91,14 @@ select:focus, .btn:focus{outline:1px solid var(--accent);}
 .switch::after{content:""; position:absolute; top:2px; left:2px; width:16px; height:16px; background:var(--faint); transition:.15s;}
 .toggle.on .switch{border-color:var(--accent);} .toggle.on .switch::after{left:22px; background:var(--accent);}
 .btn:hover{border-color:var(--accent); color:var(--accent);}
+/* portrait: reorder so Print rides the top line with Pack & Set, and Clusters +
+   Translations wrap to a tidy second row (Pack·Set·Print / Clusters·Translations) */
+@media(max-width:560px){
+  .controls .spacer{display:none;}
+  .controls #printBtn{order:3;}
+  .controls .row > .field:nth-child(3){order:4;}  /* Clusters field */
+  .controls #transToggle{order:5;}
+}
 
 .setmeta{display:flex; gap:18px; flex-wrap:wrap; align-items:baseline; padding:26px 0 6px; color:var(--dim); font-size:13px;}
 .setmeta .big{font-size:22px; font-weight:800; color:var(--ink); letter-spacing:-.01em;}
@@ -154,9 +167,9 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
 
 <nav>
   <span class="brand"><a class="logo" href="index.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.html">home</a><span class="sep"> · </span><a href="resources.html">resources</a><span class="sep"> · </span><span class="here">word lists</span></span>
+  <a class="nav-home" href="home.html">home</a>
   <span class="links">
-    <a href="home.html">home</a>
-    <a href="resources.html">resources</a>
+    <a href="lessons.html">lessons</a>
     <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-wordlists">steam</a>
   </span>
 </nav>
@@ -172,7 +185,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
 <div class="controls printhide">
   <div class="wrap row">
     <div class="field"><label for="packSel">Pack</label><select id="packSel"></select></div>
-    <div class="field"><label for="setSel">Set</label><select id="setSel"></select></div>
+    <div class="field"><label id="setLbl" for="setSel">Set</label><select id="setSel"></select></div>
     <div class="field"><label for="clusterTrigger">Clusters</label>
       <div class="msel" id="clusterMsel">
         <button type="button" class="msel-trigger" id="clusterTrigger" aria-haspopup="true" aria-expanded="false">select cluster(s)</button>
@@ -261,7 +274,7 @@ const SAMPLE = {
 };
 
 /* ---------------- state + elements ---------------- */
-const packSel=document.getElementById('packSel'), setSel=document.getElementById('setSel'),
+const packSel=document.getElementById('packSel'), setSel=document.getElementById('setSel'), setLbl=document.getElementById('setLbl'),
       clusterSel=document.getElementById('clusterSel'),
       clusterTrigger=document.getElementById('clusterTrigger'), clusterPop=document.getElementById('clusterPop'),
       clusterOk=document.getElementById('clusterOk'), clusterMsel=document.getElementById('clusterMsel'),
@@ -378,7 +391,8 @@ function renderSelected(){
 }
 
 /* controls */
-packSel.addEventListener('change',()=>loadAndRender());
+function updateSetLabel(){ setLbl.textContent=(packSel.value==='English')?'Pack':'Set'; }  // English packs aren't Core/Pareto sets
+packSel.addEventListener('change',()=>{ updateSetLabel(); loadAndRender(); });
 setSel.addEventListener('change',()=>loadAndRender());
 clusterSel.addEventListener('change',()=>{
   // First-touch exception: while the auto-default (e.g. 1-1) is active, the first pick replaces it
@@ -411,6 +425,7 @@ fillPacks();
 const q=new URLSearchParams(location.search);
 const qL=q.get('lang'), qS=q.get('set'), qC=q.get('cluster');
 if(qL && LANGS.includes(qL)) packSel.value=qL;
+updateSetLabel();
 if(qS && SETS.includes(qS)) setSel.value=qS;
 loadAndRender({clusterId:qC});
 </script>

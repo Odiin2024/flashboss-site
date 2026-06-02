@@ -33,6 +33,11 @@ nav .brand .logo:hover{color:var(--accent);}
 nav .brand .pipe{color:var(--faint); margin:0 11px;}
 nav .links a{color:var(--ink); text-decoration:none; opacity:.7; margin-left:20px;}
 nav .links a:hover{opacity:1; color:var(--accent);}
+/* collapsed left: breadcrumb -> simple "home" on narrow widths or short (landscape) viewports;
+   the right side (sister link + steam) is only two fields and stays put */
+.nav-home{display:none; color:var(--ink); text-decoration:none; font-weight:700; letter-spacing:.08em; opacity:.85;}
+.nav-home:hover{opacity:1; color:var(--accent);}
+@media(max-width:640px), (max-height:480px){ nav .brand{display:none;} .nav-home{display:inline;} }
 header.page{position:relative; padding:90px 0 40px; overflow:hidden;}
 header.page::before{content:""; position:absolute; inset:0; z-index:0;
   background:#0c0a06 url('home.png') center 30% / cover no-repeat;}
@@ -73,7 +78,7 @@ select:focus{outline:1px solid var(--accent);}
 .scr-head .moon, .scr-head .books{flex:0 0 auto; font-size:1.05em;}
 .scr-head .ttl{flex:1; min-width:0; text-align:center; font-weight:800; text-transform:uppercase; letter-spacing:.02em; font-size:.95em;
   white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
-.scr-body{padding:1.5em 3ch 0; min-height:34.5em; color:var(--ink);} /* one blank line of top padding; 23-line field */
+.scr-body{padding:1.5em 3ch 0; min-height:31.5em; color:var(--ink);} /* one blank line of top padding; body/footer border lands at line 26 (28-line page incl. footer) */
 .ln{white-space:pre; font-variant-ligatures:none;}
 .press{cursor:pointer; color:var(--cyan); border-bottom:1px dotted currentColor;}
 .press:hover{background:color-mix(in oklab, var(--cyan), transparent 82%);}
@@ -99,8 +104,9 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
 <div class="overlay"></div>
 <nav>
   <span class="brand"><a class="logo" href="index.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.html">home</a><span class="sep"> · </span><a href="resources.html">resources</a><span class="sep"> · </span><span class="here">lessons</span></span>
+  <a class="nav-home" href="home.html">home</a>
   <span class="links">
-    <a href="home.html">home</a><a href="resources.html">resources</a>
+    <a href="wordlists.html">word lists</a>
     <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-lessons">steam</a>
   </span>
 </nav>
@@ -122,6 +128,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
 <div class="wrap">
   <div class="bar">
     <div class="field"><label for="langSel">Language</label><select id="langSel"></select></div>
+    <div class="field"><label id="setLbl" for="setSel">Set</label><select id="setSel"></select></div>
     <div class="field"><label for="lessonSel">Lesson</label><select id="lessonSel"></select></div>
     <div class="spacer"></div>
     <div class="loctog disabled" id="loctog" role="group" aria-label="Lesson display language">
@@ -159,6 +166,8 @@ function lessonUrl(lang, tier){ return `data/${lang.toLowerCase()}/tier${tier}_l
 
 const LANGS=["Italian","German","Spanish","Esperanto"];
 const TIERS=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+const SETS=["Core","Pareto 1","Pareto 2"];          // tier 1-5 / 6-10 / 11-15
+function tierSet(t){ return t<=5?"Core":t<=10?"Pareto 1":"Pareto 2"; }
 const SPEECH_LANG={Italian:"it-IT",German:"de-DE",Spanish:"es-ES",Esperanto:"eo"};
 const FOREIGN_CODE={Italian:"IT",German:"DE",Spanish:"ES",Esperanto:"EO"};
 const COLORS={green:'--green',blue:'--blue',gold:'--gold',amber:'--gold',rose:'--rose',purple:'--purple',cyan:'--cyan',magenta:'--magenta'};
@@ -167,9 +176,9 @@ const COLORS={green:'--green',blue:'--blue',gold:'--gold',amber:'--gold',rose:'-
 const SAMPLE = {"Italian": [{"lesson_id": "001", "trigger_word": "cosa", "trigger_card_number": 1, "title": "LESSON 1: ITALIAN PRONUNCIATION", "header_color": "green", "pages": [{"page": 1, "total_pages": 5, "content": ["Welcome! Italian is largely phonetic", "— letters almost always make the same", "sound. The five vowels are key:", "", "a = 'ah' as in father               Press 1", "   casa, mamma, gatto", "", "e = 'eh' as in bet                  Press 2", "   bene, sera, leggere", "", "i = 'ee' as in machine              Press 3", "   sì, vita, libro", "", "o = 'oh' as in no                   Press 4", "   sole, modo, otto", "", "u = 'oo' as in moon                 Press 5", "   tu, uno, frutto"], "pronunciation": "Lezione uno", "pronunciation_mappings": {"1": "casa. mamma. gatto", "2": "bene. sera. leggere", "3": "sì. vita. libro", "4": "sole. modo. otto", "5": "tu. uno. frutto"}}, {"page": 2, "total_pages": 5, "content": ["CONSONANTS that differ from English:", "", "   h = always SILENT               Press 1", "      hai, ho, hanno", "", "   c before a/o/u = HARD 'k'       Press 2", "      casa, come, cucina", "", "   c before e/i = SOFT 'ch'        Press 3", "      cena, città, dolce", "", "   g before a/o/u = HARD 'g'       Press 4", "      gatto, gusto, lago", "", "   g before e/i = SOFT 'j'         Press 5", "      gente, gelato, magia", "", "r is always rolled or tapped."], "pronunciation_mappings": {"1": "hai. ho. hanno", "2": "casa. come. cucina", "3": "cena. città. dolce", "4": "gatto. gusto. lago", "5": "gente. gelato. magia"}}, {"page": 3, "total_pages": 5, "content": ["DIGRAPHS — two letters make one sound:", "", "   ch = HARD 'k' before e/i         Press 1", "      chiave, perché, anche", "", "   gh = HARD 'g' before e/i         Press 2", "      spaghetti, ghiaccio, lunghi", "", "   gli = like 'lli' in million      Press 3", "      famiglia, figlio, gli", "", "   gn = like 'ny' in canyon         Press 4", "      gnocchi, lasagna, ogni", "", "   sc + e/i = SHH                   Press 5", "      sciare, pesce, scena", "", "Otherwise sc = 'sk' (scuola, scopo)."], "pronunciation_mappings": {"1": "chiave. perché. anche", "2": "spaghetti. ghiaccio. lunghi", "3": "famiglia. figlio. gli", "4": "gnocchi. lasagna. ogni", "5": "sciare. pesce. scena"}}, {"page": 4, "total_pages": 5, "content": ["GEMINATES — double consonants:", "", "Hold the sound longer. Italian", "distinguishes meaning by length:      Press 1", "", "   nono / nonno       (ninth / grandpa)", "   capello / cappello      (hair / hat)", "   casa / cassa      (house / cash box)", "", "STRESS PATTERNS:", "Most words stress the next-to-last", "syllable: CA-sa, MAM-ma, LI-bro.      Press 2", "", "Final stress is shown with an accent:", "città, perché, papà, lunedì.          Press 3", "", "One more thing before we start..."], "pronunciation_mappings": {"1": "nono. nonno. capello. cappello. casa. cassa", "2": "casa. mamma. libro", "3": "città. perché. papà. lunedì"}}, {"page": 5, "total_pages": 5, "content": ["HOW ITALIAN SENTENCES LOOK:", "", "Three things you'll notice right away:", "", "1. NO 'I' — Italian drops the pronoun.", "   The verb ending tells you who:", "   ho = I have, hai = you have.", "   So: 'Ho una cosa' = I have a thing.", "", "2. ADJECTIVES GO AFTER the noun:", "   caffè caldo = hot coffee            Press 1", "   parola nuova = new word", "   (some common ones go before — later)", "", "3. 'NON' GOES BEFORE the verb:", "   non capisco = I don't understand    Press 2", "   non ho = I don't have"], "pronunciation_mappings": {"1": "caffè. caldo. parola. nuova", "2": "non. capisco. non. ho"}}]}, {"lesson_id": "002", "trigger_word": "casa", "trigger_card_number": 65, "title": "LESSON 2: ARTICLES & ELISION", "header_color": "green", "pages": [{"page": 1, "total_pages": 2, "content": ["Italian articles change with sound,", "not just gender. It's phonological:", "", "MASCULINE SINGULAR:                  Press 1", "   il = before most consonants", "      il libro, il padre, il cane", "   lo = before z, gn, ps, s+consonant", "      lo zio, lo gnocco, lo stato", "", "FEMININE SINGULAR:                   Press 2", "   la = before any consonant", "      la casa, la madre, la zia", "", "PLURALS:                             Press 3", "   i, gli (m pl); le (f pl, always)", "      i libri, gli stati, le case"], "pronunciation": "Lezione due", "pronunciation_mappings": {"1": "il. libro. il. padre. il. cane. lo. stato. lo. zio. lo. gnocco", "2": "la. casa. la. madre. la. zia", "3": "i. libri. gli. stati. le. case"}}, {"page": 2, "total_pages": 2, "content": ["ELISION — the apostrophe rule:", "", "Before a vowel, singular articles", "drop their final letter and add ':    Press 1", "", "   il / la / lo + vowel → l'", "      l'amico (m), l'aria (f)", "      l'ora, l'uomo, l'occhio", "", "PLURALS DO NOT ELIDE:                Press 2", "   gli amici (NOT gl'amici)", "   le ore (NOT l'ore)", "", "GENDER STILL MATTERS:                Press 3", "   l'uomo (m) → un uomo, gli uomini", "   l'aria (f) → un'aria, le arie", "", "Cards show Elides: true on these."], "pronunciation_mappings": {"1": "l'amico. l'aria. l'ora. l'uomo. l'occhio", "2": "gli. amici. le. ore", "3": "l'uomo. un. uomo. gli. uomini. l'aria. un'aria. le. arie"}}]}]};
 
 const $=id=>document.getElementById(id);
-const langSel=$('langSel'), lessonSel=$('lessonSel'), stage=$('stage');
+const langSel=$('langSel'), setSel=$('setSel'), setLbl=$('setLbl'), lessonSel=$('lessonSel'), stage=$('stage');
 const loctog=$('loctog'), segFor=$('segFor'), segEng=$('segEng');
-let LESSONS=[], li=0, pi=0, loc='foreign', voice=null, speechLang="it-IT";
+let LESSONS=[], li=0, pi=0, loc='foreign', curSet="Core", voice=null, speechLang="it-IT";
 let curLines=[], CHAR16=null;
 const cache={};
 
@@ -227,12 +236,22 @@ async function loadLang(lang){
 /* ---------- lesson dropdown (single select, tier-grouped) ---------- */
 function renderLessonSelect(){
   const groups={}, order=[];
-  LESSONS.forEach((L,i)=>{ if(!groups[L._tier]){groups[L._tier]=[]; order.push(L._tier);} groups[L._tier].push(i); });
+  LESSONS.forEach((L,i)=>{ if(tierSet(L._tier)!==curSet) return;   // limit the list to the chosen set
+    if(!groups[L._tier]){groups[L._tier]=[]; order.push(L._tier);} groups[L._tier].push(i); });
   lessonSel.innerHTML = order.sort((a,b)=>a-b).map(t=>{
     const opts=groups[t].map(i=>`<option value="${i}"${i===li?' selected':''}>${esc(optLabel(LESSONS[i]))}</option>`).join('');
     return `<optgroup label="Tier ${t}">${opts}</optgroup>`;
   }).join('');
 }
+/* the set (pack) selector — only offer sets that actually have lessons */
+function renderSetSelect(){
+  const present=SETS.filter(s=>LESSONS.some(L=>tierSet(L._tier)===s));
+  if(!present.includes(curSet)) curSet=present[0]||"Core";
+  setSel.innerHTML=present.map(s=>`<option value="${s}"${s===curSet?' selected':''}>${s}</option>`).join('');
+}
+function firstLessonInSet(s){ for(let i=0;i<LESSONS.length;i++) if(tierSet(LESSONS[i]._tier)===s) return i; return 0; }
+function syncSetToLesson(){ curSet=tierSet(LESSONS[li]._tier); setSel.value=curSet; }
+function updateSetLabel(){ setLbl.textContent=(langSel.value==='English')?'Pack':'Set'; }  // English packs aren't Core/Pareto sets
 
 /* ---------- the window ---------- */
 function lineToHTML(line, allowPress){
@@ -273,11 +292,11 @@ function renderScreen(){
    page; prev before the first page -> previous lesson's last page */
 function gotoPrev(){
   if(pi>0){ pi--; renderScreen(); return; }
-  if(li>0){ li--; pi=LESSONS[li].pages.length-1; loc='foreign'; renderLessonSelect(); renderScreen(); setURL(); }
+  if(li>0){ li--; pi=LESSONS[li].pages.length-1; loc='foreign'; syncSetToLesson(); renderLessonSelect(); renderScreen(); setURL(); }
 }
 function gotoNext(){
   if(pi<LESSONS[li].pages.length-1){ pi++; renderScreen(); return; }
-  if(li<LESSONS.length-1){ li++; pi=0; loc='foreign'; renderLessonSelect(); renderScreen(); setURL(); }
+  if(li<LESSONS.length-1){ li++; pi=0; loc='foreign'; syncSetToLesson(); renderLessonSelect(); renderScreen(); setURL(); }
 }
 
 /* size the fixed 52-char frame to the viewport, then shrink the body font
@@ -322,18 +341,22 @@ segEng.addEventListener('click',()=>setLoc('english'));
 function setURL(){ const p=new URLSearchParams(); p.set('lang',langSel.value); if(LESSONS[li]) p.set('lesson',LESSONS[li].lesson_id); history.replaceState(null,'','?'+p.toString()); }
 
 async function selectLang(lang, wantLesson){
-  speechLang=SPEECH_LANG[lang]||'en-US'; pickVoice();
-  stage.innerHTML=`<div class="state"><span class="ic">◴</span>Loading ${esc(lang)} lessons…</div>`; lessonSel.innerHTML='';
+  speechLang=SPEECH_LANG[lang]||'en-US'; pickVoice(); updateSetLabel();
+  stage.innerHTML=`<div class="state"><span class="ic">◴</span>Loading ${esc(lang)} lessons…</div>`; lessonSel.innerHTML=''; setSel.innerHTML='';
   const data=await loadLang(lang);
   if(langSel.value!==lang) return;
   if(!data || !data.length){ stage.innerHTML=`<div class="state"><span class="ic">◈</span>${esc(lang)} lessons aren't published yet — check back as packs ship.</div>`; updateToggle(); return; }
-  LESSONS=data; li=0; pi=0; loc='foreign';
-  if(wantLesson){ const idx=LESSONS.findIndex(L=>L.lesson_id===wantLesson); if(idx>=0) li=idx; }
+  LESSONS=data; pi=0; loc='foreign';
+  const want = wantLesson ? LESSONS.findIndex(L=>L.lesson_id===wantLesson) : -1;
+  if(want>=0){ li=want; curSet=tierSet(LESSONS[want]._tier); } else { curSet="Core"; }
+  renderSetSelect();                                   // normalises curSet to an available set
+  if(want<0) li=firstLessonInSet(curSet);              // start at the first lesson of the set
   renderLessonSelect(); renderScreen(); setURL();
 }
 
 langSel.innerHTML=LANGS.map(l=>`<option value="${l}">${l}</option>`).join('');
 langSel.addEventListener('change',()=>selectLang(langSel.value));
+setSel.addEventListener('change',()=>{ curSet=setSel.value; pi=0; loc='foreign'; li=firstLessonInSet(curSet); renderLessonSelect(); renderScreen(); setURL(); });
 lessonSel.addEventListener('change',()=>{ li=+lessonSel.value; pi=0; loc='foreign'; renderScreen(); setURL(); });
 window.addEventListener('resize',fit);
 document.addEventListener('keydown',e=>{ const p=$('prev'),n=$('next'); if(e.key==='ArrowLeft'&&p)p.click(); if(e.key==='ArrowRight'&&n)n.click(); });

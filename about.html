@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>How FlashBoss Teaches — Technical Reference | FlashBoss</title>
-<meta name="description" content="Technical reference for FlashBoss — content architecture, session mechanics, the boss-fight graduation system, and the pedagogical design that governs them.">
+<meta name="description" content="Technical reference for FlashBoss — content architecture, session mechanics, the boss-fight graduation system, and the design elements at play.">
 
 <meta property="og:type" content="article">
 <meta property="og:title" content="How FlashBoss Teaches — Technical Reference">
-<meta property="og:description" content="Content architecture, session mechanics, the boss-fight graduation system, and the pedagogical design that governs them.">
+<meta property="og:description" content="Content architecture, session mechanics, the boss-fight graduation system, and the design elements at play.">
 <meta property="og:image" content="https://odiin2024.github.io/flashboss-site/website_image.png">
 <meta property="og:url" content="https://odiin2024.github.io/flashboss-site/about.html">
 <meta name="twitter:card" content="summary_large_image">
@@ -68,9 +68,10 @@ nav .links a.steam{font-weight:800; opacity:1;}
 .hero .subtitle{max-width:62ch; color:var(--dim); font-size:15px;}
 
 /* TOC */
-.toc{border:1px solid var(--line); border-left:2px solid var(--accent); background:var(--panel); padding:18px 22px; margin:34px 0 12px;}
-.toc-title{font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--faint); margin-bottom:12px;}
-.toc ol{list-style:none; counter-reset:toc; columns:2; column-gap:36px;}
+.toc{position:relative; border:1px solid var(--line); border-left:2px solid var(--accent); background:var(--panel); padding:20px 24px 18px; margin:42px 0 12px;}
+.toc-title{position:absolute; top:0; left:16px; transform:translateY(-50%); background:var(--bg); padding:0 9px;
+  font-size:11px; letter-spacing:.2em; text-transform:uppercase; font-weight:700; color:var(--faint);}
+.toc ol{list-style:none; counter-reset:toc; columns:2; column-gap:60px;}
 @media(max-width:560px){.toc ol{columns:1;}}
 .toc li{counter-increment:toc; padding:3px 0; font-size:13.5px;}
 .toc li::before{content:counter(toc) ".  "; color:var(--faint);}
@@ -154,7 +155,7 @@ footer .made{margin-top:12px; opacity:.8;}
   <div class="wrap">
     <div class="crumb">Technical Reference</div>
     <h1>How FlashBoss Teaches</h1>
-    <p class="subtitle">Content architecture, session mechanics, the boss-fight graduation system, and the pedagogical design that governs them.</p>
+    <p class="subtitle">Content architecture, session mechanics, the boss-fight graduation system, and the design elements at play.</p>
   </div>
 </header>
 
@@ -290,7 +291,7 @@ footer .made{margin-top:12px; opacity:.8;}
       <p>New cards are drawn into the deck one at a time in cluster order; cluster boundaries do not gate card introduction. Daily card volume follows a Fibonacci ratio — for a given day's session, review cards and new cards are drawn in proportion to consecutive Fibonacci numbers, so the mix approaches φ, the golden ratio. The learner does not configure this; pacing is scheduler-managed.</p>
 
       <h3>Bossfight ready?</h3>
-      <p>A cluster becomes eligible for its boss fight when 80% of its cards are mastered — when 80% have reached the 13-day interval. You do not need every card mastered to fight: the boss is where the remaining handful are settled. Fight mechanics are detailed in section 5.</p>
+      <p>A cluster becomes eligible for its boss fight when 80% of its cards are mastered — when 80% have reached the 13-day interval. You don't need to master every card to fight: but you do need to defeat your most challenging two cards in a row to win. Fight mechanics are discussed in detail in the following section.</p>
     </section>
 
     <section id="fight">
