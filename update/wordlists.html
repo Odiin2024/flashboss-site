@@ -84,6 +84,7 @@ select:focus, .btn:focus{outline:1px solid var(--accent);}
 
 .setmeta{display:flex; gap:18px; flex-wrap:wrap; align-items:baseline; padding:26px 0 6px; color:var(--dim); font-size:13px;}
 .setmeta .big{font-size:22px; font-weight:800; color:var(--ink); letter-spacing:-.01em;}
+.setmeta .sel{margin-left:auto;}
 
 .state{padding:60px 0; text-align:center; color:var(--faint); font-size:14px;}
 .state .ic{font-size:26px; opacity:.5; display:block; margin-bottom:12px;}
@@ -126,7 +127,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
   nav,.controls,header.page p,.overlay,footer .nav,.printhide{display:none !important;}
   body{background:#fff; color:#000; font-size:11pt;}
   .wrap{max-width:none; padding:0;}
-  header.page{padding:0 0 6px; overflow:visible;} header.page::before,header.page::after{display:none !important;} header.page h1{font-size:18pt; margin:0;}
+  header.page{padding:0 0 6px; overflow:visible;} header.page::before,header.page::after{display:none !important;} header.page h1{font-size:18pt; margin:0;} header.page h1::before{content:"FlashBoss ";}
   .setmeta{color:#000; padding:6px 0 4px;} .setmeta .big{color:#000;}
   .cluster.solo{border:0; background:#fff; padding:0; margin:0;}
   .cluster.solo .chead{border-bottom:1px solid #000; margin-bottom:8px;} .cluster.solo .tnum{color:#000; border-color:#000;} .cluster.solo .cname{color:#000;}
@@ -178,8 +179,8 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
     </div>
     <div class="spacer"></div>
     <div class="toggle on" id="transToggle" role="switch" aria-checked="true" tabindex="0"><span class="switch"></span><span>Translations</span></div>
-    <button class="btn" id="howBtn">How to</button>
     <button class="btn" id="printBtn">Print / cards</button>
+    <button class="btn" id="howBtn">How to</button>
   </div>
 </div>
 
@@ -200,7 +201,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
 
 <footer>
   <span class="nav"><a href="home.html">← Hub</a> · <a href="resources.html">Resources</a> · <a href="lessons.html">Lessons</a></span>
-  <div style="margin-top:8px;">FlashBoss · made by one teacher in Germany</div>
+  <div style="margin-top:8px;">FlashBoss · From Master Odiin and Master Claude</div>
 </footer>
 
 <script>
@@ -354,7 +355,7 @@ function renderSelected(){
   let html=`<div class="setmeta"><span class="big">${esc(lang)} ${esc(set)}</span>`+
     (data.level?`<span>${esc(data.level)}</span>`:'')+(data.total?`<span>${esc(data.total)} words</span>`:'')+
     `<span>${data.clusters.length} clusters</span>`+
-    (idxs.length>1?`<span>${idxs.length} selected · ${totalCards} cards</span>`:'')+`</div>`;
+    `<span class="sel">${idxs.length} cluster${idxs.length===1?'':'s'} selected · ${totalCards} cards</span></div>`;
   idxs.forEach(i=>{
     const c=data.clusters[i]; if(!c) return;
     const words=normCards(c);
