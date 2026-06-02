@@ -142,14 +142,18 @@
     .d1{animation-delay:.15s;} .d2{animation-delay:.42s;} .d3{animation-delay:.85s;} .d4{animation-delay:1.15s;}
     @keyframes introUp{to{opacity:1; filter:blur(0);}}
 
-    /* short / landscape screens: lift the door hotspot and shrink ENTER
-       so it never collides with the footer */
+    /* short / landscape screens: the frame IS the screen (no aspect
+       overflow), the image is pinned to its bottom so the door stays in
+       view, and title/ENTER position as a true % of the screen. Sizes
+       are height-based so they can't run away. */
     @media (max-height:560px){
-        :root{--enter-y:70%; --title-y:46%;}
-        /* short/landscape: size by HEIGHT, not width, so it can't run away */
+        .frame{top:0; left:0; transform:none; width:100%; height:100%;}
+        .bg{background-position:center bottom;}
+        :root{--title-y:34%; --enter-y:76%;}
         .title{font-size:clamp(1.5rem, 9vh, 3.5rem);}
         .descriptor{font-size:clamp(.78rem, 4.5vh, 1.2rem); margin-top:.55rem; padding:.4em 1.3em;}
         .enter img{width:clamp(64px, 20vh, 150px);}
+        footer{padding:.5rem 1rem calc(.35rem + env(safe-area-inset-bottom));}
     }
     @media (max-width:480px){
         footer{font-size:.72rem; gap:.5rem .8rem;}
@@ -203,11 +207,11 @@
         </div>
 
         <footer class="reveal d4">
-            <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-home">Live on Steam</a>
-            <span class="sep"></span>
             <a href="packs.html">Packs</a>
             <span class="sep"></span>
             <a href="manual/">Manual</a>
+            <span class="sep"></span>
+            <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-home">Live on Steam</a>
             <span class="sep"></span>
             <a href="resources.html">Resources</a>
             <span class="sep"></span>
