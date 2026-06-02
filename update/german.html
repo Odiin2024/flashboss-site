@@ -182,6 +182,8 @@ section{padding:64px 0;}
 h2{
   font-size:clamp(26px,5vw,40px); margin:0 0 8px; font-weight:800; letter-spacing:-.01em;
 }
+/* a little breathing room for the bare (non-framed) section headers */
+section > .reveal:not(.frame) > h2{margin-top:24px;}
 .sub{color:var(--inn-dim); font-size:14px; letter-spacing:.04em; margin:0 0 26px;}
 p.body{font-size:16px; max-width:62ch; margin:0 0 18px;
   color:color-mix(in oklab, var(--inn-ink), var(--exp-ink) calc(var(--mood)*100%));}
@@ -429,7 +431,7 @@ footer .footer-links .div{opacity:.4;}
   <!-- EXPERIENCE: THE FORM -->
   <section class="wrap">
     <div class="reveal">
-      <h2>The Germany you live in</h2>
+      <h2>Germany as your home</h2>
       <p class="sub">A sample of the vocabulary nobody hands you at the airport — taught through the real machinery, not invented scenarios. Hover any line for the English.</p>
       <div class="form">
         <div class="head"><span>Wortschatz · Tier 4–5</span><span>Behördendeutsch</span></div>
