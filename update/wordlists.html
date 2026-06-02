@@ -74,6 +74,8 @@ select, .btn{font-family:var(--mono); font-size:14px; color:var(--ink); backgrou
 .modal-card ul{margin:0 0 18px; padding-left:18px; display:flex; flex-direction:column; gap:10px;}
 .modal-card li{font-size:14px; color:var(--dim); line-height:1.5;}
 .modal-card li b{color:var(--ink);}
+.modal-note{font-size:12.5px; color:var(--faint); font-style:italic; margin:0 0 18px;}
+.howlink{white-space:nowrap;}
 select:focus, .btn:focus{outline:1px solid var(--accent);}
 .spacer{flex:1;}
 .toggle{display:inline-flex; align-items:center; gap:9px; cursor:pointer; user-select:none; font-size:13px; color:var(--dim);}
@@ -160,7 +162,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
   <div class="wrap">
     <h1>Word Lists</h1>
     <!-- Static, crawlable SEO copy: names the languages and what's offered. -->
-    <p>Free, printable vocabulary lists for every FlashBoss language — <b>Italian, German, Spanish, and Esperanto</b>. The most useful words in each language, frequency-ranked and grouped into thematic clusters across five tiers, each paired with its English translation. Hide the translations to test yourself, or print a cluster and cut your own flashcards. Free to use however you like.</p>
+    <p>Free, printable vocabulary lists for every FlashBoss language — <b>Italian, German, Spanish, and Esperanto</b>. The most useful words in each language, frequency-ranked and grouped into thematic clusters across five tiers, each paired with its English translation. Hide the translations to test yourself, or print a cluster and cut your own flashcards. Free to use however you like. <a href="#" class="howlink" id="howBtn">How it works &rarr;</a></p>
   </div>
 </header>
 
@@ -178,9 +180,8 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
       </div>
     </div>
     <div class="spacer"></div>
+    <button class="btn" id="printBtn">Print</button>
     <div class="toggle on" id="transToggle" role="switch" aria-checked="true" tabindex="0"><span class="switch"></span><span>Translations</span></div>
-    <button class="btn" id="printBtn">Print / cards</button>
-    <button class="btn" id="howBtn">How to</button>
   </div>
 </div>
 
@@ -193,6 +194,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
       <li><b>Translations</b> toggle: on shows word + translation; off hides them so you can self-test — and prints word-only cards.</li>
       <li><b>Print / cards:</b> the selected clusters print as cut-out, foldable flashcards — word and translation side by side with a centre fold line. Several clusters print together to save paper.</li>
     </ul>
+    <p class="modal-note">Card borders may not appear in your browser's print preview — they are present on the actual printout.</p>
     <button type="button" class="btn" id="howClose">Got it</button>
   </div>
 </div>
@@ -341,7 +343,9 @@ async function loadAndRender(opts){
   }
   clusterSel.innerHTML=buildClusterOptions(data);
   const wanted=(opts.clusterId||'').split(',').filter(Boolean);
-  Array.from(clusterSel.options).forEach(o=>{ const c=data.clusters[parseInt(o.value,10)]; o.selected=!!(c && wanted.includes(c.cluster_id)); });
+  let any=false;
+  Array.from(clusterSel.options).forEach(o=>{ const c=data.clusters[parseInt(o.value,10)]; o.selected=!!(c && wanted.includes(c.cluster_id)); if(o.selected) any=true; });
+  if(!any && clusterSel.options.length) clusterSel.options[0].selected=true;  // default: first cluster (e.g. Italian Core 1-1)
   renderSelected();
 }
 
@@ -388,7 +392,7 @@ document.addEventListener('click',e=>{ if(!clusterMsel.contains(e.target)) setPo
 document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ setPop(false); howModal.hidden=true; } });
 
 /* how-to modal */
-howBtn.addEventListener('click',()=>{ howModal.hidden=false; });
+howBtn.addEventListener('click',e=>{ e.preventDefault(); howModal.hidden=false; });
 howClose.addEventListener('click',()=>{ howModal.hidden=true; });
 howModal.addEventListener('click',e=>{ if(e.target===howModal) howModal.hidden=true; });
 
