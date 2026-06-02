@@ -179,7 +179,7 @@ footer .made{margin-top:12px; opacity:.8;}
 
     <section id="overview">
       <h2>Overview</h2>
-      <p>FlashBoss is a desktop terminal application for vocabulary acquisition. It combines a spaced-repetition scheduler, constructed example sentences with text-to-speech, themed content clusters, and a boss-fight graduation mechanic. The system is designed to develop receptive skills — reading, listening, and comprehension — in the target language. Productive skills (speaking, writing) are out of scope by design and are addressed in section 7.</p>
+      <p>FlashBoss is a desktop terminal application for vocabulary acquisition. It combines a spaced-repetition scheduler, constructed example sentences with text-to-speech, themed content clusters, and a boss-fight graduation mechanic. The system is designed to develop receptive skills — reading, listening, and comprehension — in the target language.</p>
       <p>A single Core pack contains 1,000 cards and delivers approximately 10,000 words of target-language input in context. Pareto expansion packs add roughly 20,000 words each, structured around the highest-frequency vocabulary not already covered. Supported languages are English, German, Spanish, Italian, and Esperanto.</p>
     </section>
 
@@ -210,7 +210,7 @@ footer .made{margin-top:12px; opacity:.8;}
       <p>Clusters sit inside tiers. A Core pack contains five tiers, each typically comprising around eight clusters. In foreign-language packs, tier membership is a difficulty gate: it governs which grammar structures may appear in a cluster's example sentences. Tier 3 example sentences are restricted to present, imperative, and preterite; tier 4 adds imperfect and conditional; tier 5 opens full grammar including subjunctive. In English packs the tier system is used thematically rather than syntactically — tier membership reflects topical domain (e.g. <em>Forms and documents</em>, <em>Social and email</em>, <em>Confusables</em>) rather than grammatical complexity.</p>
 
       <h3>Lesson</h3>
-      <p>Lessons are reference pages pinned to specific cards — checkpoint material that accompanies a card through training. When a card with an attached lesson first appears, the lesson appears alongside. Each time the card resurfaces under the spaced-repetition schedule, the lesson resurfaces with it. Lessons are therefore persistent reference, not one-time exposures. A learner who has internalized a lesson's content can deactivate it individually: the card continues training, the lesson stops appearing. Lesson pages are formatted to the game's terminal constraint of 46 characters per line, 18 lines per page.</p>
+      <p>Lessons are reference pages pinned to specific cards — checkpoint material that accompanies a card through training. When a card with an attached lesson first appears, the lesson appears alongside. Each time the card resurfaces under the spaced-repetition schedule, the lesson resurfaces with it. Lessons are therefore persistent reference, not one-time exposures. A learner who has internalized a lesson's content can deactivate it individually: the card continues training, the lesson stops appearing.</p>
     </section>
 
     <section id="packs">
@@ -238,7 +238,6 @@ footer .made{margin-top:12px; opacity:.8;}
         <li><strong>Level packs</strong> — vocabulary that pulls a reader up a level and leaves them there. <em>English Adept</em>, the free hub pack, spans the longest climb: it onramps from below an eighth-grade reading level and carries the learner up to university readiness, terminating around C1. <em>English Advance</em> targets the practical English of functioning in society without limitation: the forms, letters, officialdom, and everyday documents adult life demands. The guiding principle is to do it once, properly, and you will never have to think about it again.</li>
         <li><strong>The Roots series</strong> — paid packs that drill English vocabulary through its three etymological strata: <em>German Roots</em> (Anglo-Saxon), <em>Norman Roots</em> (Norman-French), and <em>Latin Roots</em> (scholarly). Cross-references between the three surface the historical doublets that give English its register system.</li>
       </ul>
-      <p>Specific pack catalogs, release dates, and acquisition paths are documented on each language's dedicated page.</p>
     </section>
 
     <section id="session">
@@ -285,10 +284,10 @@ footer .made{margin-top:12px; opacity:.8;}
       <p>The scale is calibrated to require aggressive rating for progress. Only a 5 advances a card; 4 holds position; 1 through 3 step the card backward through the Fibonacci schedule; 0 resets it to 1 day. The per-rating minimum intervals prevent a card's interval from collapsing on a bad rating, and they anchor the mastery rule.</p>
 
       <h3>Card mastery</h3>
-      <p>A card is mastered on two consecutive 5 ratings. The mechanism is direct: a single 5 lifts the card's minimum interval to 8 days; a second 5 advances it to 13 days — the mastery threshold. From any starting position, two consecutive perfect recalls therefore carry a card to mastery. The two-5 rule filters out lucky moments: one effortless recall can be chance, but two in succession signal stable recall.</p>
+      <p>A card is mastered on two consecutive 5 ratings. The mechanism is direct: a single 5 lifts the card's minimum interval to 8 days; a second 5 advances it to 13 days — the mastery threshold. From any starting position, two consecutive perfect recalls therefore carry a card to mastery.</p>
 
       <h3>Daily sessions</h3>
-      <p>New cards are drawn into the deck one at a time in cluster order; cluster boundaries do not gate card introduction. Daily card volume follows a Fibonacci ratio — for a given day's session, review cards and new cards are drawn in proportion to consecutive Fibonacci numbers, so the mix approaches φ, the golden ratio. The learner does not configure this; pacing is scheduler-managed.</p>
+      <p>New cards are drawn into the deck one at a time in cluster order; cluster boundaries do not gate card introduction. Daily card volume follows a Fibonacci ratio — for a given day's session, review cards and new cards are drawn in proportion to consecutive Fibonacci numbers, so the mix approaches φ, the golden ratio.</p>
 
       <h3>Bossfight ready?</h3>
       <p>A cluster becomes eligible for its boss fight when 80% of its cards are mastered — when 80% have reached the 13-day interval. You don't need to master every card to fight: but you do need to defeat your most challenging two cards in a row to win. Fight mechanics are discussed in detail in the following section.</p>
@@ -297,7 +296,7 @@ footer .made{margin-top:12px; opacity:.8;}
     <section id="fight">
       <h2>The boss fight</h2>
       <p>The boss fight is the graduation mechanism for a cluster. It is the only way a cluster transitions out of active training. Unlike the Rate phase — which is self-assessed — the boss fight is adversarial and strictly multiple-choice. The learner and the boss share a single linear arena; the learner starts at the left, the boss stands further right. The task is to shove the boss off the far end. Sumo rules: only one remains on the platform.</p>
-      <p>Each turn presents one of the cluster's cards as a prompt, with eight possible answers on the number keys 1–8. A correct answer advances the learner one position along the track; the boss is simultaneously shoved one position closer to the far edge. A wrong answer slides the learner two positions back toward the near edge; the boss does not move. Pushed off the near edge, the learner is locked out of that cluster's fight until the next day. Shoved past the far edge, the boss is defeated and the cluster is conquered.</p>
+      <p>Each turn presents one of the cluster's cards as a prompt, with eight possible answers on the number keys 1–8. A correct answer advances the learner one position along the track; the boss is simultaneously shoved one position closer to the far edge. A wrong answer slides the learner two positions back toward the near edge, or off of it. When pushed off the near edge, the learner is locked out of that cluster's fight until the next day. Shoved past the far edge, the boss is defeated and the cluster is conquered.</p>
       <figure class="shot">
         <img src="boss-arena.png" alt="The boss-fight arena: a horizontal track with the learner's avatar on the left, the boss to its right, and a marker at the far edge. Positions 1 and 2 are the easy opening slots.">
         <figcaption>The arena: a single horizontal track the learner (left) and the boss (right) share, with a marker at the far edge — the boss's exit. A correct answer advances the learner one position and shoves the boss one closer to that edge; a wrong answer slides the learner two positions back. Positions 1–2 draw the cluster's easiest cards, positions 3–4 its hardest. Fall off the near edge and the cluster locks until the next day; shove the boss past the far edge and the cluster is conquered.</figcaption>
@@ -341,7 +340,6 @@ footer .made{margin-top:12px; opacity:.8;}
       </ul>
       <p>FlashBoss does not train:</p>
       <ul>
-        <li>Speaking or pronunciation production.</li>
         <li>Writing production.</li>
         <li>Conversational fluency.</li>
         <li>Interaction repair strategies.</li>
