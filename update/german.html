@@ -98,6 +98,10 @@ nav .brand .here{font-weight:800; color:var(--inn-ink);}
 nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--inn-ink);}
 nav .brand .logo:hover{color:var(--inn-accent);}
 nav .brand .pipe{color:var(--inn-dim); margin:0 11px;}
+.nav-mobile{display:none;}
+.nav-mobile a{color:inherit; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.08em; opacity:.85;}
+.nav-mobile a:hover{opacity:1; color:var(--inn-accent);}
+@media(max-width:640px){ nav .brand, nav .links{display:none;} .nav-mobile{display:flex; flex:1; justify-content:space-between; align-items:center;} .nav-mobile .r{display:flex; gap:18px;} }
 nav .links a{
   color:inherit; text-decoration:none; opacity:.7; margin-left:22px;
 }
@@ -127,7 +131,7 @@ nav .links a.steam{font-weight:800; opacity:1; color:var(--inn-ink);}
 .hero h1 .small{display:block; font-size:.34em; letter-spacing:.42em; font-weight:500; opacity:.6; margin-top:18px;}
 .cursor{
   display:inline-block; width:.6em; height:1em; vertical-align:-.08em;
-  background:var(--inn-accent); margin-left:.12em;
+  background:color-mix(in oklab, var(--inn-accent), transparent 30%); margin-left:.12em;
   animation:blink 1.05s steps(1) infinite;
 }
 @keyframes blink{50%{opacity:0;}}
@@ -148,15 +152,15 @@ nav .links a.steam{font-weight:800; opacity:1; color:var(--inn-ink);}
 .btn{
   display:inline-block; margin-top:40px;
   font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.08em;
-  color:#15120c; background:var(--inn-accent);
+  color:#15120c; background:color-mix(in oklab, var(--inn-accent), transparent 30%);
   padding:14px 26px; text-decoration:none; border:0;
   box-shadow:6px 6px 0 color-mix(in oklab, var(--inn-accent), #000 60%);
   transition:transform .12s ease, box-shadow .12s ease;
 }
 .btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--inn-accent), #000 60%);}
 .btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--inn-accent), #000 60%);}
-.hero .actions{display:flex; flex-wrap:wrap; gap:14px; margin-top:40px;}
-.hero .actions .btn{margin-top:0;}
+.hero .actions{display:flex; gap:14px; margin-top:40px; max-width:46ch;}
+.hero .actions .btn{margin-top:0; flex:1; text-align:center;}
 .btn.cold{color:#080b0a; background:var(--exp-accent);
   box-shadow:6px 6px 0 color-mix(in oklab, var(--exp-accent), #000 60%);}
 .btn.cold:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--exp-accent), #000 60%);}
@@ -323,6 +327,10 @@ footer .footer-links .div{opacity:.4;}
     <a href="manual/index.html?screen=profile-select">how to play</a>
     <a href="resources.html">resources</a>
     <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">steam</a>
+  </span>
+  <span class="nav-mobile">
+    <a href="home.html">home</a>
+    <span class="r"><a href="resources.html">resources</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">steam</a></span>
   </span>
 </nav>
 
@@ -496,11 +504,11 @@ footer .footer-links .div{opacity:.4;}
 <footer>
   <p class="blake">“And all must love the human form, / In heathen, turk, or jew; / Where Mercy, Love, &amp; Pity dwell / There God is dwelling too.”<br><span class="blake-cite">— William Blake, “The Divine Image”</span></p>
   <span class="footer-links">
-    <a href="home.html">&larr; Back to Hub</a>
+    <a href="home.html">home</a>
     <span class="div">·</span>
-    <a href="found-me.html#level2">The FlashBoss Vision</a>
+    <a href="manual/">manual</a>
     <span class="div">·</span>
-    <a href="manual/">Manual</a>
+    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">steam</a>
   </span>
 </footer>
 
