@@ -73,7 +73,7 @@ nav .links a.steam{font-weight:800; opacity:1;}
 .toc ol{list-style:none; counter-reset:toc; columns:2; column-gap:36px;}
 @media(max-width:560px){.toc ol{columns:1;}}
 .toc li{counter-increment:toc; padding:3px 0; font-size:13.5px;}
-.toc li::before{content:"§" counter(toc) "  "; color:var(--faint);}
+.toc li::before{content:counter(toc) ".  "; color:var(--faint);}
 .toc a{color:var(--dim); text-decoration:none;}
 .toc a:hover{color:var(--accent);}
 
@@ -81,7 +81,7 @@ main{padding:18px 0 0; counter-reset:sec;}
 section{padding:30px 0; border-top:1px solid var(--rule);}
 section:first-child{border-top:0;}
 h2{counter-increment:sec; font-size:clamp(22px,4.5vw,30px); font-weight:800; letter-spacing:-.01em; color:var(--ink); margin-bottom:14px;}
-h2::before{content:"§" counter(sec) "  "; color:var(--accent); font-weight:800;}
+h2::before{content:counter(sec) ".  "; color:var(--accent); font-weight:800;}
 h3{font-size:15px; font-weight:700; color:var(--accent); margin:22px 0 6px; letter-spacing:.02em;}
 p{margin-bottom:14px; color:color-mix(in oklab, var(--ink), var(--dim) 30%); font-size:15px;}
 p:last-child{margin-bottom:0;}
@@ -91,11 +91,6 @@ code{font-family:var(--mono); font-size:.88em; color:var(--blue); background:rgb
 ul{margin:0 0 14px 0; padding-left:0; list-style:none;}
 ul li{position:relative; padding-left:20px; margin-bottom:6px; color:color-mix(in oklab, var(--ink), var(--dim) 30%); font-size:15px;}
 ul li::before{content:"·"; position:absolute; left:4px; color:var(--accent); font-weight:700;}
-
-/* callout: the simple rule, surfaced */
-.tldr{border:1px solid var(--green); background:rgba(98,211,138,.06); padding:16px 20px; margin:18px 0; font-size:15px;}
-.tldr .lbl{font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:var(--green); display:block; margin-bottom:7px;}
-.tldr b{color:var(--ink);}
 
 /* spec tables */
 .spec-wrap{overflow-x:auto; margin:14px 0;}
@@ -112,8 +107,9 @@ ul li::before{content:"·"; position:absolute; left:4px; color:var(--accent); fo
 figure{margin:18px 0; border:1px solid var(--line); background:var(--panel); padding:0;}
 figure img{display:block; width:100%; height:auto;}
 figcaption{font-size:12.5px; color:var(--faint); font-style:italic; padding:12px 16px; border-top:1px solid var(--rule);}
-figure.diagram{padding:16px 18px;}
-figure.diagram figcaption{border-top:1px solid var(--rule); margin-top:14px; padding:12px 0 0;}
+figure.shot{padding:18px; text-align:center;}
+figure.shot img{display:inline-block; width:100%; max-width:560px; height:auto; border:1px solid var(--rule);}
+figure.shot figcaption{border-top:1px solid var(--rule); margin-top:16px; padding:12px 0 0; text-align:left;}
 
 /* CTA buttons */
 .cta-row{display:flex; gap:14px; flex-wrap:wrap; margin:30px 0 6px;}
@@ -122,11 +118,6 @@ figure.diagram figcaption{border-top:1px solid var(--rule); margin-top:14px; pad
 .btn.manual:hover{border-color:var(--accent); color:var(--accent);}
 .btn.steam{color:#14110a; background:var(--accent); border:1px solid var(--accent); box-shadow:5px 5px 0 color-mix(in oklab, var(--accent), #000 60%);}
 .btn.steam:hover{transform:translate(-2px,-2px); box-shadow:7px 7px 0 color-mix(in oklab, var(--accent), #000 60%);}
-
-/* author note */
-.author-note{border:1px solid var(--line); border-left:2px solid var(--rose); background:var(--panel); padding:16px 20px; margin:30px 0; font-size:14px; color:var(--dim); font-style:italic;}
-.author-note a{color:var(--rose); text-decoration:none; font-style:normal;}
-.author-note a:hover{color:var(--ink);}
 
 /* references */
 .references{margin-top:30px; padding-top:22px; border-top:1px solid var(--line); font-size:13px; color:var(--dim);}
@@ -187,13 +178,13 @@ footer .made{margin-top:12px; opacity:.8;}
 
     <section id="overview">
       <h2>Overview</h2>
-      <p>FlashBoss is a desktop terminal application for vocabulary acquisition. It combines a spaced-repetition scheduler, constructed example sentences with text-to-speech, themed content clusters, and a boss-fight graduation mechanic. The system is designed to develop receptive skills — reading, listening, and comprehension — in the target language. Productive skills (speaking, writing) are out of scope by design and are addressed in §7.</p>
+      <p>FlashBoss is a desktop terminal application for vocabulary acquisition. It combines a spaced-repetition scheduler, constructed example sentences with text-to-speech, themed content clusters, and a boss-fight graduation mechanic. The system is designed to develop receptive skills — reading, listening, and comprehension — in the target language. Productive skills (speaking, writing) are out of scope by design and are addressed in section 7.</p>
       <p>A single Core pack contains 1,000 cards and delivers approximately 10,000 words of target-language input in context. Pareto expansion packs add roughly 20,000 words each, structured around the highest-frequency vocabulary not already covered. Supported languages are English, German, Spanish, Italian, and Esperanto.</p>
     </section>
 
     <section id="architecture">
       <h2>Content architecture</h2>
-      <p>This section describes the internal structure common to FlashBoss packs. Pack-level organization — how packs combine, and how foreign-language packs differ from English packs — is documented in §3.</p>
+      <p>This section describes the internal structure common to FlashBoss packs. Pack-level organization — how packs combine, and how foreign-language packs differ from English packs — is documented in section 3.</p>
 
       <h3>Card</h3>
       <p>Each card carries up to five text fields and two audio assets. Only the target-language fields are voiced:</p>
@@ -295,28 +286,23 @@ footer .made{margin-top:12px; opacity:.8;}
       <h3>Card mastery</h3>
       <p>A card is mastered on two consecutive 5 ratings. The mechanism is direct: a single 5 lifts the card's minimum interval to 8 days; a second 5 advances it to 13 days — the mastery threshold. From any starting position, two consecutive perfect recalls therefore carry a card to mastery. The two-5 rule filters out lucky moments: one effortless recall can be chance, but two in succession signal stable recall.</p>
 
-      <h3>Daily mix</h3>
+      <h3>Daily sessions</h3>
       <p>New cards are drawn into the deck one at a time in cluster order; cluster boundaries do not gate card introduction. Daily card volume follows a Fibonacci ratio — for a given day's session, review cards and new cards are drawn in proportion to consecutive Fibonacci numbers, so the mix approaches φ, the golden ratio. The learner does not configure this; pacing is scheduler-managed.</p>
 
-      <h3>Fight</h3>
-      <div class="tldr"><span class="lbl">The short version</span>A cluster's boss fight unlocks once you've mastered <b>80% of its cards</b>. <b>A card is mastered with two perfect recalls in a row.</b> That's the whole rule — everything below is just the machinery underneath it.</div>
-      <p>A cluster becomes eligible for its boss fight when 80% of its cards are mastered — when 80% have reached the 13-day interval. You do not need every card mastered to fight: the boss is where the remaining handful are settled. Fight mechanics are detailed in §5.</p>
+      <h3>Bossfight ready?</h3>
+      <p>A cluster becomes eligible for its boss fight when 80% of its cards are mastered — when 80% have reached the 13-day interval. You do not need every card mastered to fight: the boss is where the remaining handful are settled. Fight mechanics are detailed in section 5.</p>
     </section>
 
     <section id="fight">
       <h2>The boss fight</h2>
       <p>The boss fight is the graduation mechanism for a cluster. It is the only way a cluster transitions out of active training. Unlike the Rate phase — which is self-assessed — the boss fight is adversarial and strictly multiple-choice. The learner and the boss share a single linear arena; the learner starts at the left, the boss stands further right. The task is to shove the boss off the far end. Sumo rules: only one remains on the platform.</p>
       <p>Each turn presents one of the cluster's cards as a prompt, with eight possible answers on the number keys 1–8. A correct answer advances the learner one position along the track; the boss is simultaneously shoved one position closer to the far edge. A wrong answer slides the learner two positions back toward the near edge; the boss does not move. Pushed off the near edge, the learner is locked out of that cluster's fight until the next day. Shoved past the far edge, the boss is defeated and the cluster is conquered.</p>
-      <figure class="diagram">
-<div class="tech-block" aria-hidden="true">  you                                      boss
-   ▣──┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──▣────╳
-   ▲  └ easy ┘        └ hardest ┘         ▲
-   │     1,2            3,4               │
- fall off ◄── wrong −2      right +1 ──► push off ╳</div>
-        <figcaption>The arena: a single horizontal track of positions. The learner's avatar begins at the left; the boss stands further right; an ╳ marks the far edge. Fall off the left and the cluster locks until the next day; push the boss past the ╳ and the cluster is conquered.</figcaption>
+      <figure class="shot">
+        <img src="boss-arena.png" alt="The boss-fight arena: a horizontal track with the learner's avatar on the left, the boss to its right, and a marker at the far edge. Positions 1 and 2 are the easy opening slots.">
+        <figcaption>The arena: a single horizontal track the learner (left) and the boss (right) share, with a marker at the far edge — the boss's exit. A correct answer advances the learner one position and shoves the boss one closer to that edge; a wrong answer slides the learner two positions back. Positions 1–2 draw the cluster's easiest cards, positions 3–4 its hardest. Fall off the near edge and the cluster locks until the next day; shove the boss past the far edge and the cluster is conquered.</figcaption>
       </figure>
       <p>Card ordering inside the fight is deliberate. Positions 1 and 2 pull from the cluster's easiest cards — a warm-up that lets the learner build a positional lead. Positions 3 and 4 pull from the cluster's hardest: the weakest words in the deck, delivered as soon as the learner has started to gain ground. A wrong answer at position 3 or 4 slides the learner two positions back — landing on position 1 or 2 — and the missed card is reclassified as the learner's easiest from that moment on. Unfortunately, that means it's waiting for them: the same card, now sitting in the easy slots where they've just landed. A cluster cannot be conquered until its weakest cards are mastered.</p>
-      <p>The design rationale is documented in §6. In brief: the boss fight injects a bounded, low-stakes stressor that produces genuine retrieval pressure without the consequences of a real-world language failure. It also provides a discrete success state — cluster conquered — that the open-ended rhythm of spaced repetition otherwise lacks.</p>
+      <p>The design rationale is documented in section 6. In brief: the boss fight injects a bounded, low-stakes stressor that produces genuine retrieval pressure without the consequences of a real-world language failure. It also provides a discrete success state — cluster conquered — that the open-ended rhythm of spaced repetition otherwise lacks.</p>
     </section>
 
     <section id="pedagogy">
@@ -366,19 +352,10 @@ footer .made{margin-top:12px; opacity:.8;}
       <h2>Using FlashBoss effectively</h2>
 
       <h3>Cadence</h3>
-      <p>Ten to twenty minutes per day. The scheduler is calibrated for daily sessions; longer gaps degrade the interval calibration. Missed days are absorbed without permanent damage, but consistency is the primary variable separating learners who complete Core from learners who do not. New-card introduction is controlled by the scheduler's Fibonacci split (§4), not the learner — running multiple sessions in a day does not accelerate pacing.</p>
+      <p>Ten to twenty minutes per day. The scheduler is calibrated for daily sessions; longer gaps degrade the interval calibration. Missed days are absorbed without permanent damage, but consistency is the primary variable separating learners who complete Core from learners who do not. New-card introduction is controlled by the scheduler's Fibonacci split (section 4), not the learner — running multiple sessions in a day does not accelerate pacing.</p>
 
       <h3>Failed fights</h3>
-      <p>A failed boss fight is an expected event, not a defect. A card missed in a fight's hard positions is reclassified as the learner's easiest card from that point forward, which means the same card will be waiting in the opening positions of the next fight attempt — exactly where the learner most needs a confidence-building correct answer. Most clusters are fought two or three times before they are conquered; difficult clusters may take more.</p>
-
-      <h3>Pairing with other material</h3>
-      <p>Complementary input accelerates acquisition. Appropriate pairings:</p>
-      <ul>
-        <li>Listening input (podcasts, news segments) at or slightly below current tier.</li>
-        <li>Reading material below current tier for extensive-reading practice.</li>
-        <li>Interaction practice (tutor, language exchange) beginning roughly when Core is halfway complete.</li>
-      </ul>
-      <p>Avoid pairing with competing flashcard systems that reintroduce the same vocabulary on a different schedule — this creates scheduling interference and reduces the precision of the Rate phase's feedback.</p>
+      <p>A failed boss fight is expected, not a defect. A card missed in the hard positions (3–4) is reclassified as your easiest from that point on, so it returns in the opening positions of the next attempt. The cluster cannot be conquered until that card is answered correctly — the word that beat you becomes a gate you have to clear before the fight will end. Clusters can take multiple attempts, but there's always tomorrow.</p>
 
       <h3>Expected arc</h3>
       <p>A consistent learner completes Core in two to six months. Passive reading comprehension accelerates noticeably around tier four or five (still within Core); cold recognition of spoken example sentences typically arrives around tier eight or nine (inside Pareto 1). Productive fluency does not emerge from FlashBoss alone and is not the system's claim.</p>
@@ -388,10 +365,6 @@ footer .made{margin-top:12px; opacity:.8;}
       <a href="manual/" class="btn manual">Browse the Manual</a>
       <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-about" class="btn steam">Get it on Steam &rarr;</a>
     </div>
-
-    <aside class="author-note">
-      FlashBoss is built and maintained by Odiin, a CELTA-certified language teacher operating as Odiin Developments (Brandenburg, Germany). More on the project's origin and direction is on the <a href="found-me.html">background page</a>.
-    </aside>
 
     <div class="references">
       <h3>References</h3>
