@@ -3,488 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>FlashBoss - Flashcards with Boss Fights</title>
-    <meta name="description" content="FlashBoss - Spaced repetition flashcards with boss fights. Learn German and Esperanto. Coming to Steam 2026.">
+    <title>FlashBoss — Flashcards with Boss Fights</title>
+    <meta name="description" content="FlashBoss — spaced-repetition flashcards with real boss fights. Five language courses: English, German, Spanish, Italian, and Esperanto. Now live on Steam.">
+    <meta name="theme-color" content="#0a0a19">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="FlashBoss - Flashcards with Boss Fights">
-    <meta property="og:description" content="Spaced repetition flashcards with boss fights. Learn German and Esperanto. Coming to Steam 2026.">
+    <meta property="og:title" content="FlashBoss — Flashcards with Boss Fights">
+    <meta property="og:description" content="Spaced-repetition flashcards with real boss fights. Five language courses — English, German, Spanish, Italian, Esperanto. Now live on Steam.">
     <meta property="og:image" content="https://odiin2024.github.io/flashboss-site/website_image.png">
     <meta property="og:url" content="https://odiin2024.github.io/flashboss-site/">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="FlashBoss - Flashcards with Boss Fights">
-    <meta name="twitter:description" content="Spaced repetition flashcards with boss fights. Learn German and Esperanto. Coming to Steam 2026.">
+    <meta name="twitter:title" content="FlashBoss — Flashcards with Boss Fights">
+    <meta name="twitter:description" content="Spaced-repetition flashcards with real boss fights. Five language courses, now live on Steam.">
     <meta name="twitter:image" content="https://odiin2024.github.io/flashboss-site/website_image.png">
 
+    <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/">
     <link rel="icon" type="image/png" href="icon.png">
+    <link rel="preload" as="image" href="background.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html, body {
-            height: 100%;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: url('background.png') center center / cover no-repeat fixed;
-            color: #f0e6d3;
-            min-height: 100vh;
-            min-height: 100dvh;
-            position: relative;
-        }
-
-        body::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(10, 10, 25, 0.2);
-            pointer-events: none;
-        }
-
-        /* ============================================
-           MOBILE-FIRST LAYOUT
-           ============================================ */
-
-        .content {
-            position: absolute;
-            z-index: 1;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            width: 90%;
-            max-width: 400px;
-        }
-
-        .title {
-            font-family: 'Jaro', sans-serif;
-            font-size: 24vw;
-            font-weight: 400;
-            color: #7ec8ff;
-            text-shadow:
-                0 0 60px rgba(100, 180, 255, 0.5),
-                0 4px 12px rgba(0, 0, 0, 0.8);
-            letter-spacing: -0.01em;
-            line-height: 0.9;
-            margin-bottom: 0.5rem;
-        }
-
-        .descriptor {
-            font-size: 5.5vw;
-            font-weight: 500;
-            color: rgba(255, 255, 255, 0.95);
-            letter-spacing: 0.02em;
-        }
-
-        /* ============================================
-           FOOTER
-           ============================================ */
-
-        .footer {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-            padding: 1rem;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
-        }
-
-        .footer .languages {
-            font-size: 0.75rem;
-            font-weight: 500;
-            color: rgba(255, 255, 255, 0.7);
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-        }
-
-        .footer .divider {
-            width: 1px;
-            height: 0.9rem;
-            background: rgba(255, 255, 255, 0.3);
-        }
-
-        .footer .steam-link {
-            font-size: 0.75rem;
-            font-weight: 500;
-            color: #7ec8ff;
-            letter-spacing: 0.02em;
-            text-decoration: none;
-            text-shadow: 0 0 10px rgba(126, 200, 255, 0.8), 0 0 20px rgba(126, 200, 255, 0.6), 0 0 30px rgba(126, 200, 255, 0.4);
-            animation: bluePulse 2s ease-in-out infinite;
-            transition: color 0.2s, text-shadow 0.2s;
-        }
-
-        .footer .steam-link:hover {
-            color: #ffffff;
-            text-shadow: 0 0 15px rgba(126, 200, 255, 1), 0 0 30px rgba(126, 200, 255, 0.8), 0 0 45px rgba(126, 200, 255, 0.6);
-        }
-
-        @keyframes bluePulse {
-            0%, 100% { text-shadow: 0 0 10px rgba(126, 200, 255, 0.8), 0 0 20px rgba(126, 200, 255, 0.6), 0 0 30px rgba(126, 200, 255, 0.4); }
-            50% { text-shadow: 0 0 15px rgba(126, 200, 255, 1), 0 0 30px rgba(126, 200, 255, 0.8), 0 0 45px rgba(126, 200, 255, 0.5); }
-        }
-
-        .footer .contact-link {
-            font-size: 0.75rem;
-            font-weight: 400;
-            color: rgba(255, 255, 255, 0.7);
-            letter-spacing: 0.02em;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .footer .contact-link:hover {
-            color: #ffffff;
-        }
-
-        /* ============================================
-           CORNER NAV - Manual, Report, FlashCards
-           ============================================ */
-
-        .corner-nav {
-            position: absolute;
-            z-index: 1;
-            bottom: 4rem;
-            left: 1.5rem;
-            display: none;
-            flex-direction: column;
-            gap: 0.6rem;
-        }
-
-        .corner-nav a {
-            font-size: 0.8rem;
-            font-weight: 400;
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            line-height: 1.8;
-            transition: color 0.2s;
-        }
-
-        .corner-nav a:hover {
-            color: #ffffff;
-        }
-
-        /* ============================================
-           DOOR BUTTON - positioned over castle door
-           ============================================ */
-
-        .door-btn {
-            position: absolute;
-            z-index: 2;
-            /* Portrait mobile: almost full screen above footer */
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 3.5rem;
-            transform: none;
-
-            /* Fully transparent hit area */
-            background: none;
-            background-color: transparent;
-            border: none;
-            cursor: pointer;
-            text-decoration: none;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .door-img {
-            position: absolute;
-            bottom: calc(20% - 30px);
-            width: 50%;
-            max-width: 12rem;
-            height: auto;
-            object-fit: contain;
-            opacity: 1;
-            transition: filter 0.3s, transform 0.3s;
-            background: none;
-        }
-
-        .door-btn:hover .door-img {
-            filter: drop-shadow(0 0 8px rgba(126, 200, 255, 0.8)) drop-shadow(0 0 20px rgba(126, 200, 255, 0.5));
-            transform: scale(1.05);
-        }
-
-        /* Debug: uncomment to see hit area */
-        /*
-        .door-btn {
-            background: rgba(255, 0, 0, 0.3);
-        }
-        */
-
-        /* ============================================
-           SWIPE UP HINT (mobile only)
-           ============================================ */
-
-        .swipe-hint {
-            position: absolute;
-            right: 1rem;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 10;
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.3rem;
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.65rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            transition: opacity 0.5s;
-        }
-
-        .swipe-hint.hidden {
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        .swipe-hint .arrow {
-            font-size: 1.5rem;
-            line-height: 1;
-            animation: bounce 1.5s ease-in-out infinite;
-        }
-
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-6px); }
-        }
-
-        /* ============================================
-           PHONE LANDSCAPE (width < 768px OR short height)
-           Catches phones rotated to landscape
-           ============================================ */
-
-        @media (orientation: landscape) and (max-height: 500px) {
-            body {
-                min-height: 102vh; /* Create scroll room to trigger URL bar hide */
-            }
-
-            .content {
-                max-width: 500px;
-            }
-
-            .title {
-                font-size: 20vh;
-                margin-bottom: 0.5vh;
-            }
-
-            .descriptor {
-                font-size: 5.5vh;
-            }
-
-            .footer {
-                padding: 0.6rem 1rem 0.8rem;
-                gap: 0.75rem;
-            }
-
-            .footer .languages,
-            .footer .steam-link,
-            .footer .contact-link {
-                font-size: 0.85rem;
-            }
-
-            .door-btn {
-                top: 0;
-                bottom: 2.5rem;
-                left: 20%;
-                right: 20%;
-            }
-
-            .door-img {
-                position: absolute;
-                bottom: 8%;
-                width: 12vw;
-                max-width: none;
-            }
-
-            .swipe-hint {
-                display: flex;
-            }
-
-            .corner-nav {
-                display: flex;
-                bottom: 3rem;
-                left: 1rem;
-            }
-
-            .corner-nav a {
-                font-size: 0.7rem;
-            }
-        }
-
-        /* ============================================
-           TABLET (768px+, but not landscape phones)
-           ============================================ */
-
-        @media (min-width: 768px) and (min-height: 500px) {
-            .swipe-hint {
-                display: none;
-            }
-
-            .content {
-                max-width: 500px;
-            }
-
-            .title {
-                font-size: 12vw;
-            }
-
-            .descriptor {
-                font-size: 3vw;
-            }
-
-            .footer {
-                padding: 1rem;
-                gap: 1.25rem;
-            }
-
-            .footer .languages,
-            .footer .steam-link,
-            .footer .contact-link {
-                font-size: 0.8rem;
-            }
-
-            .door-btn {
-                top: 0;
-                bottom: 3.5rem;
-                left: 15%;
-                right: 15%;
-            }
-
-            .door-img {
-                width: 25%;
-                max-width: 10rem;
-            }
-
-            .corner-nav {
-                display: flex;
-                bottom: 3.5rem;
-                left: 2rem;
-            }
-
-            .corner-nav a {
-                font-size: 0.8rem;
-            }
-        }
-
-        /* ============================================
-           DESKTOP (1024px+)
-           ============================================ */
-
-        @media (min-width: 1024px) {
-            .content {
-                max-width: none;
-                width: auto;
-                top: 48%;
-            }
-
-            .title {
-                font-size: 8vw;
-                text-shadow:
-                    0 0 50px rgba(100, 180, 255, 0.6),
-                    3px 3px 6px rgba(0, 0, 0, 0.9);
-                margin-bottom: 0.2rem;
-            }
-
-            .descriptor {
-                font-size: 2.0vw;
-            }
-
-            .footer {
-                padding: 1.25rem;
-                gap: 1.5rem;
-            }
-
-            .footer .languages,
-            .footer .steam-link,
-            .footer .contact-link {
-                font-size: 0.85rem;
-            }
-
-            .footer .divider {
-                height: 1rem;
-            }
-
-            .door-btn {
-                top: 0;
-                bottom: 4rem;
-                left: 15%;
-                right: 15%;
-            }
-
-            .door-img {
-                position: absolute;
-                bottom: 13%;
-                width: 30%;
-                max-width: 12rem;
-            }
-
-            .corner-nav {
-                display: flex;
-                bottom: 4rem;
-                left: 2.5rem;
-            }
-
-            .corner-nav a {
-                font-size: 0.85rem;
-            }
-        }
+    /* ============================================================
+       FlashBoss — title screen (index.html). The front door:
+       canonical share URL + social cards + the atmospheric scene
+       you enter the site through.
+
+       Alignment model: the background image is 1344x768 (aspect 1.75).
+       A .frame box is sized to that exact aspect and locked to cover a
+       SINGLE screen (no zoom, no overscan). Foreground anchors (title,
+       ENTER) live inside an identically-sized .frame and are placed by
+       PERCENTAGE OF THE IMAGE — so "78% down" is always the door, on
+       every screen shape. That is what stops the ENTER from jumping.
+       Tunable hotspots: --title-y and --enter-y below.
+       ============================================================ */
+    :root{
+        --img-ar:1.75;          /* 1344 / 768                   */
+        --title-y:15%;          /* vertical hotspot: the moon    */
+        --enter-y:78%;          /* vertical hotspot: the door    */
+        --sky:#7ec8ff;          /* title glow — moonlit blue     */
+        --gold:#f0c45a;         /* ENTER / window light          */
+        --ink:#f0e6d3;          /* warm parchment text           */
+        --night:#0a0a19;        /* deep edge grade               */
+        --serif:'Jaro', system-ui, sans-serif;
+        --sans:'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    *{margin:0; padding:0; box-sizing:border-box;}
+    html,body{height:100%;}
+    body{
+        font-family:var(--sans); color:var(--ink); background:var(--night);
+        min-height:100vh; min-height:100dvh; overflow:hidden;
+        -webkit-font-smoothing:antialiased;
+    }
+    a{color:inherit; text-decoration:none;}
+
+    .scene{position:fixed; inset:0; overflow:hidden;}
+
+    /* a box with the image's exact aspect, sized to cover ONE screen,
+       centred. No scale, no overscan — a single screen, edge to edge. */
+    .frame{
+        position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+        width:max(100vw, calc(100vh * var(--img-ar)));
+        height:max(100vh, calc(100vw / var(--img-ar)));
+    }
+    .frame.scenery{z-index:0;}
+    .frame.ui{z-index:3; pointer-events:none;}
+    .frame.ui a{pointer-events:auto;}
+
+    .bg{position:absolute; inset:0; background:var(--night) url('background.png') center / cover no-repeat;}
+
+    /* atmospheric grading — vignette + sky lift + warm base glow */
+    .grade{position:absolute; inset:0; z-index:1; pointer-events:none;
+        background:
+            radial-gradient(120% 80% at 50% 18%, rgba(126,200,255,.10) 0%, transparent 45%),
+            radial-gradient(90% 60% at 50% 96%, rgba(240,180,90,.14) 0%, transparent 55%),
+            radial-gradient(140% 120% at 50% 50%, transparent 44%, rgba(8,8,22,.52) 100%),
+            linear-gradient(to bottom, rgba(8,8,22,.40) 0%, transparent 26% 60%, rgba(8,8,22,.60) 100%);
+    }
+
+    /* drifting embers (warm window-light motes rising past the castle) */
+    .embers{position:absolute; inset:0; z-index:2; pointer-events:none;}
+    .ember{position:absolute; bottom:-24px; left:var(--x); width:var(--s); height:var(--s);
+        border-radius:50%; opacity:0;
+        background:radial-gradient(circle, #ffe6ad 0%, rgba(255,196,110,.7) 38%, rgba(255,170,80,0) 70%);
+        animation:rise var(--t) ease-in var(--delay) infinite; will-change:transform,opacity;}
+    @keyframes rise{
+        0%{transform:translate(0,0) scale(.5); opacity:0;}
+        12%{opacity:.85;}
+        70%{opacity:.6;}
+        100%{transform:translate(var(--dx,12px), calc(-1 * var(--rise,72vh))) scale(1.15); opacity:0;}
+    }
+
+    /* ---------- foreground, pinned to image hotspots ---------- */
+    .title-block{position:absolute; top:var(--title-y); left:50%; transform:translate(-50%,-50%);
+        width:min(92vw, 1000px); text-align:center;}
+    .title{font-family:var(--serif); font-weight:400; color:var(--sky);
+        font-size:clamp(3.4rem, 16vw, 11rem); line-height:.9; letter-spacing:-.01em;
+        text-shadow:0 0 48px rgba(110,180,255,.55), 0 0 14px rgba(170,215,255,.4), 0 4px 16px rgba(0,0,0,.85);}
+    .descriptor{margin-top:.55rem; font-weight:500; letter-spacing:.04em;
+        font-size:clamp(.95rem, 3.4vw, 1.7rem); color:rgba(255,255,255,.94);
+        text-shadow:0 2px 12px rgba(0,0,0,.85);}
+
+    /* ENTER — the one deliberate call to action, pinned to the door */
+    .enter{position:absolute; top:var(--enter-y); left:50%; transform:translate(-50%,-50%);
+        display:flex; flex-direction:column; align-items:center; gap:.5rem; cursor:pointer;}
+    .enter img{display:block; width:clamp(150px, 30vw, 320px); height:auto;
+        filter:drop-shadow(0 0 6px rgba(240,196,90,.35)) drop-shadow(0 6px 14px rgba(0,0,0,.7));
+        animation:invite 3.6s ease-in-out infinite; transition:transform .35s ease, filter .35s ease; will-change:filter,transform;}
+    @keyframes invite{
+        0%,100%{filter:drop-shadow(0 0 6px rgba(240,196,90,.35)) drop-shadow(0 6px 14px rgba(0,0,0,.7));}
+        50%{filter:drop-shadow(0 0 20px rgba(255,210,120,.7)) drop-shadow(0 6px 14px rgba(0,0,0,.7));}
+    }
+    .enter:hover img, .enter:focus-visible img{transform:scale(1.06);
+        filter:drop-shadow(0 0 26px rgba(255,216,130,.95)) drop-shadow(0 0 50px rgba(255,190,90,.5)) drop-shadow(0 6px 14px rgba(0,0,0,.7));}
+    .enter .cue{font-size:.7rem; font-weight:500; letter-spacing:.34em; text-transform:uppercase;
+        color:rgba(255,255,255,.72); text-shadow:0 1px 8px rgba(0,0,0,.9); animation:cuefade 3.6s ease-in-out infinite;}
+    @keyframes cuefade{0%,100%{opacity:.45;} 50%{opacity:.9;}}
+    .enter:focus-visible{outline:none;}
+
+    /* footer — quiet secondary links, anchored to the screen bottom */
+    footer{position:absolute; left:0; right:0; bottom:0; z-index:4;
+        display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:.6rem 1.15rem;
+        padding:1rem 1.25rem calc(1rem + env(safe-area-inset-bottom));
+        font-size:.78rem; font-weight:500; letter-spacing:.04em;
+        background:linear-gradient(to top, rgba(6,6,18,.72) 0%, transparent 100%);}
+    footer a{color:rgba(255,255,255,.78); transition:color .2s, text-shadow .2s;}
+    footer a:hover{color:#fff;}
+    footer .sep{width:1px; height:.85rem; background:rgba(255,255,255,.22);}
+    footer .steam{color:var(--sky); font-weight:600; letter-spacing:.02em;
+        text-shadow:0 0 10px rgba(126,200,255,.7), 0 0 22px rgba(126,200,255,.35); animation:pulse 3s ease-in-out infinite;}
+    footer .steam:hover{color:#fff; text-shadow:0 0 14px rgba(126,200,255,1), 0 0 30px rgba(126,200,255,.7);}
+    @keyframes pulse{0%,100%{text-shadow:0 0 10px rgba(126,200,255,.65), 0 0 22px rgba(126,200,255,.3);} 50%{text-shadow:0 0 15px rgba(126,200,255,.95), 0 0 32px rgba(126,200,255,.55);}}
+
+    /* intro reveal — pure fade + blur, no transform (so it never fights
+       the centring transforms on the pinned title/ENTER) */
+    .reveal{opacity:0; filter:blur(8px); animation:introUp 1.15s cubic-bezier(.22,.61,.36,1) forwards;}
+    .d1{animation-delay:.15s;} .d2{animation-delay:.42s;} .d3{animation-delay:.85s;} .d4{animation-delay:1.15s;}
+    @keyframes introUp{to{opacity:1; filter:blur(0);}}
+
+    /* short / landscape screens: lift the door hotspot and shrink ENTER
+       so it never collides with the footer */
+    @media (max-height:560px){
+        :root{--enter-y:72%; --title-y:18%;}
+        .enter img{width:clamp(120px, 22vw, 220px);}
+    }
+    @media (max-width:480px){
+        footer{font-size:.72rem; gap:.5rem .8rem;}
+        .enter .cue{letter-spacing:.28em;}
+    }
+
+    /* respect reduced-motion */
+    @media (prefers-reduced-motion:reduce){
+        .ember{display:none;}
+        .enter img, .enter .cue, footer .steam{animation:none;}
+        .reveal{animation:none; opacity:1; filter:none;}
+        .title-block.reveal, .enter.reveal{transform:translate(-50%,-50%);}
+    }
     </style>
 </head>
 <body>
-    <div class="swipe-hint" id="swipeHint">
-        <span class="arrow">&#8593;</span>
-        <span>Swipe</span>
+    <div class="scene">
+        <!-- background, locked to one screen -->
+        <div class="frame scenery" aria-hidden="true">
+            <div class="bg"></div>
+        </div>
+        <div class="grade" aria-hidden="true"></div>
+        <div class="embers" aria-hidden="true">
+            <i class="ember" style="--x:14%;  --s:5px; --t:13s; --delay:0s;   --dx:18px;  --rise:74vh;"></i>
+            <i class="ember" style="--x:24%;  --s:3px; --t:17s; --delay:3s;   --dx:-14px; --rise:80vh;"></i>
+            <i class="ember" style="--x:33%;  --s:4px; --t:15s; --delay:6s;   --dx:10px;  --rise:70vh;"></i>
+            <i class="ember" style="--x:41%;  --s:6px; --t:19s; --delay:1.5s; --dx:-20px; --rise:78vh;"></i>
+            <i class="ember" style="--x:47%;  --s:3px; --t:12s; --delay:8s;   --dx:8px;   --rise:66vh;"></i>
+            <i class="ember" style="--x:50%;  --s:5px; --t:21s; --delay:4.5s; --dx:14px;  --rise:82vh;"></i>
+            <i class="ember" style="--x:55%;  --s:4px; --t:16s; --delay:9.5s; --dx:-10px; --rise:72vh;"></i>
+            <i class="ember" style="--x:60%;  --s:3px; --t:14s; --delay:2.5s; --dx:16px;  --rise:68vh;"></i>
+            <i class="ember" style="--x:67%;  --s:6px; --t:20s; --delay:6.5s; --dx:-18px; --rise:80vh;"></i>
+            <i class="ember" style="--x:74%;  --s:4px; --t:15s; --delay:11s;  --dx:12px;  --rise:70vh;"></i>
+            <i class="ember" style="--x:80%;  --s:3px; --t:18s; --delay:5s;   --dx:-12px; --rise:76vh;"></i>
+            <i class="ember" style="--x:86%;  --s:5px; --t:22s; --delay:8.5s; --dx:20px;  --rise:84vh;"></i>
+            <i class="ember" style="--x:20%;  --s:2px; --t:11s; --delay:7s;   --dx:9px;   --rise:62vh;"></i>
+            <i class="ember" style="--x:90%;  --s:2px; --t:13s; --delay:3.8s; --dx:-8px;  --rise:64vh;"></i>
+            <i class="ember" style="--x:37%;  --s:2px; --t:12s; --delay:10.5s;--dx:-7px;  --rise:60vh;"></i>
+            <i class="ember" style="--x:63%;  --s:2px; --t:14s; --delay:12s;  --dx:11px;  --rise:66vh;"></i>
+        </div>
+
+        <!-- foreground, pinned to the same frame so it tracks the art -->
+        <div class="frame ui">
+            <div class="title-block reveal d1">
+                <h1 class="title">FlashBoss</h1>
+                <p class="descriptor">Flashcards with Boss Fights</p>
+            </div>
+
+            <a href="home.html" class="enter reveal d3" aria-label="Enter FlashBoss">
+                <img src="NewEnter.png" alt="Enter">
+                <span class="cue">click to enter</span>
+            </a>
+        </div>
+
+        <footer class="reveal d4">
+            <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-home">Live on Steam</a>
+            <span class="sep"></span>
+            <a href="packs.html">Packs</a>
+            <span class="sep"></span>
+            <a href="manual/">Manual</a>
+            <span class="sep"></span>
+            <a href="resources.html">Resources</a>
+            <span class="sep"></span>
+            <a href="about.html">About</a>
+        </footer>
     </div>
-
-    <div class="content">
-        <h1 class="title">FlashBoss</h1>
-        <p class="descriptor">Flashcards with Boss Fights</p>
-    </div>
-
-    <footer class="footer">
-        <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-home" class="steam-link">Live on Steam</a>
-        <span class="divider"></span>
-        <a href="about.html" class="contact-link">About</a>
-    </footer>
-
-    <nav class="corner-nav">
-        <a href="manual/getting-started.html">Quick Start</a>
-        <a href="report.html">Report Errors</a>
-        <a href="manual/">Manual</a>
-        <a href="manual/language-packs.html">DLC Content</a>
-        <a href="affiliate.html">Affiliate Program</a>
-        <a href="resources.html">Resources</a>
-    </nav>
-
-    <!-- Door button - positioned over castle door -->
-    <a href="home.html" class="door-btn" aria-label="Enter">
-        <img src="NewEnter.png" alt="Enter" class="door-img">
-    </a>
-
-    <script>
-        // Hide swipe hint after user scrolls
-        window.addEventListener('scroll', function() {
-            document.getElementById('swipeHint').classList.add('hidden');
-        }, { once: true });
-    </script>
 </body>
 </html>
