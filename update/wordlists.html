@@ -205,7 +205,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
 <main class="wrap" id="view"></main>
 
 <footer>
-  <span class="nav"><a href="home.html">← Hub</a> · <a href="resources.html">Resources</a> · <a href="lessons.html">Lessons</a></span>
+  <span class="nav"><a href="home.html">home</a> · <a href="lessons.html">lessons</a> · <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-wordlists">steam</a></span>
   <div style="margin-top:8px;">FlashBoss · From Master Odiin and Master Claude</div>
 </footer>
 
@@ -269,7 +269,7 @@ const packSel=document.getElementById('packSel'), setSel=document.getElementById
       howBtn=document.getElementById('howBtn'), howModal=document.getElementById('howModal'), howClose=document.getElementById('howClose'),
       view=document.getElementById('view'), transToggle=document.getElementById('transToggle'),
       printBtn=document.getElementById('printBtn');
-let showTrans=true;
+let showTrans=true, autoDefault=false;
 const cache={};
 
 function esc(s){return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
@@ -348,7 +348,7 @@ async function loadAndRender(opts){
   const wanted=(opts.clusterId||'').split(',').filter(Boolean);
   let any=false;
   Array.from(clusterSel.options).forEach(o=>{ const c=data.clusters[parseInt(o.value,10)]; o.selected=!!(c && wanted.includes(c.cluster_id)); if(o.selected) any=true; });
-  if(!any && clusterSel.options.length) clusterSel.options[0].selected=true;  // default: first cluster (e.g. Italian Core 1-1)
+  if(!any && clusterSel.options.length){ clusterSel.options[0].selected=true; autoDefault=true; } else { autoDefault=false; }  // default: first cluster (e.g. Italian Core 1-1)
   renderSelected();
 }
 
@@ -381,7 +381,15 @@ function renderSelected(){
 /* controls */
 packSel.addEventListener('change',()=>loadAndRender());
 setSel.addEventListener('change',()=>loadAndRender());
-clusterSel.addEventListener('change',renderSelected);
+clusterSel.addEventListener('change',()=>{
+  // First-touch exception: while the auto-default (e.g. 1-1) is active, the first pick replaces it
+  // (on mobile a tap otherwise just adds to it). Subsequent taps multi-select normally.
+  if(autoDefault){
+    autoDefault=false;
+    if(clusterSel.selectedOptions.length>1 && clusterSel.options[0].selected) clusterSel.options[0].selected=false;
+  }
+  renderSelected();
+});
 transToggle.addEventListener('click',()=>{ showTrans=!showTrans; transToggle.classList.toggle('on',showTrans); transToggle.setAttribute('aria-checked',showTrans); renderSelected(); });
 transToggle.addEventListener('keydown',e=>{ if(e.key===' '||e.key==='Enter'){e.preventDefault(); transToggle.click();}});
 printBtn.addEventListener('click',()=>window.print());
