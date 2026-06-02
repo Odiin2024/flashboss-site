@@ -1,249 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ===== PER-LANGUAGE: title + description ===== -->
-    <title>Esperanto · FlashBoss</title>
-    <meta name="description" content="Learn Esperanto with FlashBoss: 3,000 of its most useful words with audio, spaced repetition, and boss fights. The language built to be learnable.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Esperanto — FlashBoss</title>
+<meta name="description" content="FlashBoss Esperanto: the language built to be learned. Perfectly regular — no irregular verbs, no genders, no exceptions — and built around the worldwide community you join. From 'Saluton' to writing, meeting, and belonging across borders. Spaced repetition, boss fights, and text-to-speech.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   FlashBoss — Esperanto page
+   Mirrors the Spanish page chassis: one smooth single-arc run,
+   scroll-driven palette. Esperanto's own soul: regularity as a
+   feature (NO gender section — it has none), destination is the
+   worldwide community. Palette: dawn green -> deep starlit indigo
+   (the verda stelo, the global night of speakers).
 
-    <link rel="icon" type="image/png" href="icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
-    <style>
-        /* =================================================================
-           PER-LANGUAGE TOKENS — swap these to mint a new language page
-           ================================================================= */
-        :root {
-            --accent: #5555FF;                  /* Esperanto signature */
-            --accent-glow: rgba(85, 85, 255, 0.16);
-            --hero: url('esperanto.png');       /* full-bleed background art */
-            --ink: #f3ecdc;
-            --ink-soft: rgba(255, 255, 255, 0.78);
-            --ink-faint: rgba(255, 255, 255, 0.5);
-            --panel: rgba(10, 10, 25, 0.55);
-            --line: rgba(255, 255, 255, 0.12);
-        }
+   TUNE: esperanto.png -> hero banner (site root).
+   ============================================================ */
+:root{
+  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+  /* word-building demo colours (roots/affixes), not gender */
+  --root:#7ee0a8;    /* root */
+  --affix:#ffc861;   /* affix / ending */
 
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: var(--hero) center center / cover no-repeat fixed;
-            background-color: #0a0a19;
-            color: var(--ink);
-            min-height: 100vh;
-            line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
-        }
+  /* dawn palette (top — fresh green, the verda stelo) */
+  --d-bg:#0c160f;
+  --d-ink:#e3f3df;
+  --d-dim:#9fc6a8;
+  --d-accent:#5fd79a;   /* Esperanto green */
 
-        /* Dark wash + a faint accent vignette for depth */
-        body::before {
-            content: '';
-            position: fixed; inset: 0;
-            background:
-                radial-gradient(120% 80% at 50% 0%, var(--accent-glow), transparent 60%),
-                linear-gradient(rgba(10,10,25,0.72), rgba(10,10,25,0.82));
-            pointer-events: none;
-            z-index: 0;
-        }
+  /* dusk palette (bottom — deep starlit indigo, the global community at night) */
+  --u-bg:#0c1020;
+  --u-ink:#dde6f6;
+  --u-dim:#8e9cc0;
+  --u-accent:#7aa2ff;   /* star blue */
 
-        .container {
-            position: relative;
-            z-index: 1;
-            max-width: 680px;
-            margin: 0 auto;
-            padding: 4.5rem 1.5rem;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+  --mood:0;  /* 0 = dawn green, 1 = starlit blue. ONE smooth ramp. */
+  --line:color-mix(in oklab, #2f5a40, #2a3560 calc(var(--mood) * 100%));
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0; font-family:var(--mono);
+  background:#0c160f;
+  background:color-mix(in oklab, var(--d-bg), var(--u-bg) calc(var(--mood)*100%));
+  color:color-mix(in oklab, var(--d-ink), var(--u-ink) calc(var(--mood)*100%));
+  line-height:1.6; -webkit-font-smoothing:antialiased;
+  transition:background 120ms linear, color 120ms linear; overflow-x:hidden;
+}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.045) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.vignette{position:fixed; inset:0; pointer-events:none; z-index:9998;
+  background:radial-gradient(120% 90% at 50% 35%, transparent 55%, rgba(0,0,0,.5) 100%);}
+.wrap{max-width:880px; margin:0 auto; padding:0 24px;}
 
-        /* Staggered entrance */
-        .reveal { opacity: 0; transform: translateY(14px); animation: rise 0.7s cubic-bezier(.2,.7,.2,1) forwards; }
-        .reveal:nth-child(1) { animation-delay: .05s; }
-        .reveal:nth-child(2) { animation-delay: .14s; }
-        .reveal:nth-child(3) { animation-delay: .23s; }
-        .reveal:nth-child(4) { animation-delay: .32s; }
-        .reveal:nth-child(5) { animation-delay: .41s; }
-        .reveal:nth-child(6) { animation-delay: .50s; }
-        .reveal:nth-child(7) { animation-delay: .59s; }
-        .reveal:nth-child(8) { animation-delay: .68s; }
-        @keyframes rise { to { opacity: 1; transform: none; } }
-        @media (prefers-reduced-motion: reduce) {
-            .reveal { animation: none; opacity: 1; transform: none; }
-        }
+nav{display:flex; justify-content:space-between; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line);}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--d-dim);}
+nav .brand a, nav .brand .sep{color:var(--d-dim); text-decoration:none;}
+nav .brand a:hover{color:var(--d-ink);}
+nav .brand .here{font-weight:800; color:var(--d-ink);}
+nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--d-ink);}
+nav .brand .logo:hover{color:var(--d-accent);}
+nav .brand .pipe{color:var(--d-dim); margin:0 11px;}
+.nav-mobile{display:none;}
+.nav-mobile a{color:inherit; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.08em; opacity:.85;}
+.nav-mobile a:hover{opacity:1; color:var(--d-accent);}
+@media(max-width:640px){ nav .brand, nav .links{display:none;} .nav-mobile{display:flex; flex:1; justify-content:space-between; align-items:center;} .nav-mobile .r{display:flex; gap:18px;} }
+nav .links a{color:inherit; text-decoration:none; opacity:.7; margin-left:22px;}
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+nav .links a.steam{font-weight:800; opacity:1; color:var(--d-ink);}
 
-        .kicker {
-            font-size: 0.72rem;
-            letter-spacing: 0.28em;
-            text-transform: uppercase;
-            color: var(--ink-faint);
-            margin-bottom: 1rem;
-        }
-        .kicker b { color: var(--accent); font-weight: 600; }
+.reveal{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease;}
+.reveal.in{opacity:1; transform:none;}
 
-        .screen-title {
-            font-family: 'Merriweather', serif;
-            font-size: 2.6rem;
-            font-weight: 900;
-            color: var(--accent);
-            line-height: 1.1;
-            margin-bottom: 0.6rem;
-        }
+/* HERO — image band */
+.hero{position:relative; padding:84px 0 36px; overflow:hidden;}
+.hero::before{content:""; position:absolute; inset:0; z-index:0; background:#0c160f url('esperanto.png') center 30% / cover no-repeat;}
+.hero::after{content:""; position:absolute; inset:0; z-index:1;
+  background:linear-gradient(180deg, rgba(12,22,15,.5) 0%, rgba(12,22,15,.78) 55%, var(--d-bg) 100%);}
+.hero .wrap{position:relative; z-index:2;}
+.kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--d-dim); opacity:.9; margin-bottom:26px;}
+.kicker b{color:var(--d-accent); font-weight:700;}
+.hero h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
+.cursor{display:inline-block; width:.6em; height:1em; vertical-align:-.08em; background:color-mix(in oklab, var(--d-accent), transparent 30%); margin-left:.12em; animation:blink 1.05s steps(1) infinite;}
+@keyframes blink{50%{opacity:0;}}
+.hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:30px 0 0; color:var(--d-ink); font-weight:500;}
+.hero .sig{font-size:13px; letter-spacing:.24em; text-transform:uppercase; color:var(--d-accent); margin:14px 0 0; opacity:.9;}
+.hero .lede{font-size:clamp(15px,2.2vw,18px); max-width:48ch; margin:24px 0 0; color:var(--d-dim);}
+.hero .lede b{color:var(--d-ink); font-weight:700;}
+.btn{display:inline-block; font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.08em; color:#0c160f; background:color-mix(in oklab, var(--d-accent), transparent 30%);
+  padding:14px 26px; text-decoration:none; border:0; box-shadow:6px 6px 0 color-mix(in oklab, var(--d-accent), #000 60%); transition:transform .12s ease, box-shadow .12s ease;}
+.btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--d-accent), #000 60%);}
+.btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--d-accent), #000 60%);}
+.hero .actions{display:flex; gap:14px; margin-top:40px; max-width:48ch;}
+.hero .actions .btn{flex:1; text-align:center;}
+.btn.hot{color:#0c1020; background:var(--u-accent); box-shadow:6px 6px 0 color-mix(in oklab, var(--u-accent), #000 60%);}
+.btn.hot:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--u-accent), #000 60%);}
 
-        .tagline {
-            font-size: 1.15rem;
-            color: var(--ink-soft);
-            font-style: italic;
-            margin-bottom: 1rem;
-            max-width: 40ch;
-        }
+section{padding:64px 0;}
+.hero + section{padding-top:48px;}
+.frame{border:1px solid var(--line); position:relative; padding:34px 30px 32px;}
+.frame > .tag{position:absolute; top:-12px; left:22px;
+  background:color-mix(in oklab, var(--d-bg), var(--u-bg) calc(var(--mood)*100%));
+  padding:4px 12px; line-height:1; font-size:11px; letter-spacing:.3em; text-transform:uppercase;
+  color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+h2{font-size:clamp(26px,5vw,40px); margin:0 0 8px; font-weight:800; letter-spacing:-.01em;}
+section > .reveal:not(.frame) > h2{margin-top:24px;}  /* breathing room for bare (non-framed) section headers */
+.sub{color:var(--d-dim); font-size:14px; letter-spacing:.04em; margin:0 0 26px;}
+.sub.eo{font-style:italic; font-size:16px; opacity:.92;}
+p.body{font-size:16px; max-width:62ch; margin:0 0 18px; color:color-mix(in oklab, var(--d-ink), var(--u-ink) calc(var(--mood)*100%));}
+p.body b{color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+.eo{font-style:italic; opacity:.96;}
 
-        .signature {
-            font-size: 0.8rem;
-            letter-spacing: 0.18em;
-            text-transform: uppercase;
-            color: var(--accent);
-            font-weight: 500;
-            margin-bottom: 2.25rem;
-        }
+/* gradient run */
+.run{border:1px solid var(--line); display:grid; grid-template-columns:repeat(5,1fr); overflow:hidden;}
+.run .step{padding:22px 16px; border-right:1px solid var(--line); position:relative;}
+.run .step:last-child{border-right:0;}
+.run .step:nth-child(1){background:color-mix(in oklab, transparent, var(--d-accent) 7%);}
+.run .step:nth-child(2){background:color-mix(in oklab, transparent, var(--d-accent) 10%);}
+.run .step:nth-child(3){background:color-mix(in oklab, transparent, var(--u-accent) 8%);}
+.run .step:nth-child(4){background:color-mix(in oklab, transparent, var(--u-accent) 12%);}
+.run .step:nth-child(5){background:color-mix(in oklab, transparent, var(--u-accent) 17%);}
+.run .t{font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%)); margin-bottom:10px; font-weight:700;}
+.run .step p{font-size:12.5px; margin:0; color:color-mix(in oklab, var(--d-dim), var(--u-dim) calc(var(--mood)*100%));}
+@media(max-width:640px){.run{grid-template-columns:1fr;} .run .step{border-right:0; border-bottom:1px solid var(--line);} .run .step:last-child{border-bottom:0;}}
 
-        .content p { margin-bottom: 1.2rem; color: var(--ink-soft); }
-        .content p:last-child { margin-bottom: 0; }
+/* sentence ladder */
+.ladder{list-style:none; margin:0; padding:0; counter-reset:tier;}
+.ladder li{counter-increment:tier; border-left:2px solid var(--line); padding:18px 0 18px 26px; margin-left:8px; position:relative;}
+.ladder li::before{content:"T" counter(tier); position:absolute; left:-15px; top:18px;
+  background:color-mix(in oklab, var(--d-bg), var(--u-bg) calc(var(--mood)*100%)); font-size:11px; font-weight:700; letter-spacing:.05em; padding:2px 0;
+  color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+.ladder .ger{font-weight:500;}
+.ladder li:nth-child(1) .ger{font-size:15px;} .ladder li:nth-child(2) .ger{font-size:16px;}
+.ladder li:nth-child(3) .ger{font-size:17px;} .ladder li:nth-child(4) .ger{font-size:18px;}
+.ladder li:nth-child(5) .ger{font-size:19px; font-weight:700;}
+.ladder .en{display:block; color:color-mix(in oklab, var(--d-dim), var(--u-dim) calc(var(--mood)*100%)); font-size:13px; margin-top:6px;}
 
-        /* Pack ladder — rows are the per-set click targets for the resource pages */
-        .packs {
-            margin: 2.25rem 0 0.5rem;
-            border-top: 1px solid var(--line);
-        }
-        .pack {
-            display: flex;
-            align-items: baseline;
-            justify-content: space-between;
-            gap: 1rem;
-            padding: 0.85rem 0;
-            border-bottom: 1px solid var(--line);
-        }
-        .pack-name { font-weight: 600; color: var(--ink); }
-        .pack-words { color: var(--ink-faint); font-size: 0.9rem; margin-left: 0.6rem; font-weight: 400; }
-        .pack-tag {
-            font-size: 0.72rem;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: var(--ink-faint);
-            white-space: nowrap;
-        }
-        .pack-tag.free {
-            color: var(--accent);
-            border: 1px solid var(--accent);
-            border-radius: 999px;
-            padding: 0.15rem 0.6rem;
-        }
-        .packs-note { margin-top: 0.9rem; font-size: 0.9rem; color: var(--ink-faint); }
+/* word-building demo (replaces gender cards) */
+.build{border:1px solid var(--line); padding:6px 0;}
+.build .row{display:grid; grid-template-columns:1.1fr 1.4fr; gap:0; border-bottom:1px dashed var(--line); align-items:center;}
+.build .row:last-child{border-bottom:0;}
+.build .row > div{padding:15px 20px;}
+.build .k{border-right:1px dashed var(--line);}
+.build .build-word{font-size:18px; font-weight:700;}
+.build .build-word .r{color:var(--root);}
+.build .build-word .a{color:var(--affix);}
+.build .build-word .o{opacity:.55;}
+.build .gloss{font-size:13.5px; color:color-mix(in oklab, var(--d-dim), var(--u-dim) calc(var(--mood)*100%));}
+.build .gloss b{color:color-mix(in oklab, var(--d-ink), var(--u-ink) calc(var(--mood)*100%));}
+@media(max-width:560px){.build .row{grid-template-columns:1fr;} .build .k{border-right:0; border-bottom:1px dashed var(--line);}}
+.legend{display:flex; gap:20px; flex-wrap:wrap; font-size:12px; margin:0 0 22px; color:var(--d-dim);}
+.legend span{display:inline-flex; align-items:center; gap:7px;}
+.legend i{width:11px; height:11px; display:inline-block;}
+.legend .lr{background:var(--root);} .legend .la{background:var(--affix);}
 
-        .links {
-            margin-top: 2.5rem;
-            display: flex;
-            flex-direction: column;
-            gap: 0.7rem;
-        }
-        .link-btn {
-            display: block;
-            background: var(--panel);
-            border: 1px solid var(--line);
-            border-radius: 8px;
-            padding: 1rem 1.25rem;
-            color: var(--ink-soft);
-            text-decoration: none;
-            font-size: 0.95rem;
-            transition: background .2s, border-color .2s, transform .2s;
-        }
-        .link-btn:hover {
-            background: var(--accent-glow);
-            border-color: var(--accent);
-            color: var(--ink);
-            transform: translateX(4px);
-        }
-        .link-btn.primary {
-            border-color: var(--accent);
-            color: var(--accent);
-            font-weight: 500;
-        }
-        .link-btn.primary:hover { background: var(--accent-glow); }
+/* concept cards */
+.cards{display:grid; grid-template-columns:repeat(2,1fr); gap:16px;}
+@media(max-width:640px){.cards{grid-template-columns:1fr;}}
+.card{border:1px solid var(--line); padding:20px 18px; cursor:pointer; background:rgba(255,255,255,.015); transition:border-color .15s ease; min-height:150px;}
+.card:hover{border-color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+.card .art{font-style:italic; font-weight:500; font-size:12px; letter-spacing:.04em; color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+.card .word{font-size:21px; font-weight:800; margin:2px 0 12px;}
+.card .ex{font-size:13px; color:var(--d-dim); font-style:italic;}
+.card .trans{font-size:12.5px; color:var(--d-dim); margin-top:10px; max-height:0; overflow:hidden; opacity:0; transition:max-height .3s ease, opacity .3s ease;}
+.card.flipped .trans{max-height:240px; opacity:1;}
+.card .hint{font-size:10px; letter-spacing:.2em; text-transform:uppercase; opacity:.45; margin-top:12px;}
 
-        .footer-links {
-            margin-top: 2rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            flex-wrap: wrap;
-        }
-        .back-link { font-size: 0.85rem; color: var(--ink-faint); text-decoration: none; transition: color .2s; }
-        .back-link:hover { color: var(--ink-soft); }
-        .link-divider { color: rgba(255,255,255,0.25); }
+/* packs */
+.packs{display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid var(--line);}
+@media(max-width:640px){.packs{grid-template-columns:1fr;}}
+.pack{padding:24px 20px; border-right:1px solid var(--line);}
+.pack:last-child{border-right:0;}
+.pack .n{font-size:18px; font-weight:800;}
+.pack .lvl{font-size:12px; letter-spacing:.06em; color:var(--d-dim); margin:4px 0 12px;}
+.pack p{font-size:13px; color:var(--d-dim); margin:0;}
+.pack .free{display:inline-block; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--d-accent); border:1px solid var(--d-accent); padding:3px 8px; margin-top:10px;}
+a.pack{text-decoration:none; color:inherit; display:block; transition:background .15s ease, border-color .15s ease;}
+a.pack:hover{background:rgba(122,162,255,.06); border-color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+@media(max-width:640px){.pack{border-right:0; border-bottom:1px solid var(--line);} .pack:last-child{border-bottom:0;}}
 
-        @media (min-width: 768px) {
-            .screen-title { font-size: 3rem; }
-        }
-    </style>
+.method dl{display:grid; grid-template-columns:max-content 1fr; gap:14px 22px; margin:0;}
+.method dt{font-weight:700; color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%)); white-space:nowrap;}
+.method .frame > .tag{color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+.method dd{margin:0; font-size:14.5px; color:var(--d-dim);}
+@media(max-width:560px){.method dl{grid-template-columns:1fr; gap:4px 0;} .method dd{margin-bottom:14px;}}
+
+.final{text-align:center; padding:90px 0 100px;}
+.final h2{font-size:clamp(28px,6vw,52px);}
+.final p{color:var(--u-dim); max-width:46ch; margin:14px auto 0; font-size:15px;}
+
+footer{border-top:1px solid var(--line); padding:28px 24px; font-size:12px; color:var(--u-dim); text-align:center; letter-spacing:.04em;}
+footer .epi{font-style:italic; opacity:.78; max-width:54ch; margin:0 auto 12px; line-height:1.7;}
+footer .epi .tr{font-style:normal; opacity:.85; display:block; margin-top:8px; font-size:11.5px;}
+footer .epi-cite{font-style:normal; font-size:11px; letter-spacing:.12em; text-transform:uppercase; opacity:.75; display:block; margin-top:10px;}
+footer .footer-links{display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap; margin-top:14px;}
+footer .footer-links a{color:inherit; text-decoration:none; opacity:.75; letter-spacing:.04em;}
+footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+footer .footer-links .div{opacity:.4;}
+</style>
 </head>
 <body>
-    <div class="container">
+<div class="overlay"></div>
+<div class="vignette"></div>
 
-        <!-- ===== PER-LANGUAGE: kicker ===== -->
-        <p class="kicker reveal">FlashBoss · <b>Esperanto</b> · 3,000 words</p>
+<nav>
+  <span class="brand"><a class="logo" href="index.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.html">home</a><span class="sep"> · </span>packs<span class="sep"> · </span><span class="here">Esperanto</span></span>
+  <span class="links">
+    <a href="manual/index.html?screen=profile-select">how to play</a>
+    <a href="resources.html">resources</a>
+    <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">steam</a>
+  </span>
+  <span class="nav-mobile">
+    <a href="home.html">home</a>
+    <span class="r"><a href="resources.html">resources</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">steam</a></span>
+  </span>
+</nav>
 
-        <!-- ===== PER-LANGUAGE: title ===== -->
-        <h1 class="screen-title reveal">Esperanto</h1>
+<main>
 
-        <!-- ===== PER-LANGUAGE: tagline ===== -->
-        <p class="tagline reveal">Learn the world's most learnable language with FlashBoss.</p>
-
-        <!-- SHARED: the signature line -->
-        <p class="signature reveal">Listen · Read · Repeat · Rate · Fight</p>
-
-        <div class="content reveal">
-            <!-- PER-LANGUAGE: why this language -->
-            <p>Esperanto was designed from the ground up to be easy to learn. No irregular verbs. No gendered nouns. Logical, consistent, and beautiful. It's the perfect first language — and if you already speak a second, it might be your fastest path to a third.</p>
-
-            <!-- PER-LANGUAGE: what you get + how it works (free/paid split changes per language) -->
-            <p>FlashBoss starts you with 1,000 of the most useful Esperanto words, each with full audio, a real example sentence, and spaced repetition that bends to how fast you actually learn — that's the free Core pack. Words sit in themed clusters, each one guarded by a boss fight. Win, and those cards graduate out of your daily deck for good. The work shrinks as you learn, not the other way around.</p>
-
-            <!-- PER-LANGUAGE: where the language lives (community / events / resources) -->
-            <p>And unlike most invented languages, Esperanto is genuinely spoken. Estimates put the community somewhere between a hundred thousand and two million people scattered across the world, including a thousand or more children raised with it from birth. They gather every summer at the Universala Kongreso — the World Esperanto Congress, held almost without a break since 1905, with the 2026 meeting in Graz, Austria. Online it's easy to fall in with: free courses and a busy forum at lernu.net, over a million learners through the Duolingo course, the Amikumu app for finding speakers near you, and Pasporta Servo, a hospitality network where Esperantists host one another around the world for free. Learn it, and you don't just have a hobby — you have somewhere to use it.</p>
-        </div>
-
-        <!-- ===== PER-LANGUAGE: pack ladder (free badge moves by language) ===== -->
-        <div class="packs reveal">
-            <div class="pack">
-                <span><span class="pack-name">Esperanto Core</span><span class="pack-words">1,000 words · A1–A2</span></span>
-                <span class="pack-tag free">Free</span>
-            </div>
-            <div class="pack">
-                <span><span class="pack-name">Pareto 1</span><span class="pack-words">+1,000 words · B1–B2</span></span>
-                <span class="pack-tag">DLC</span>
-            </div>
-            <div class="pack">
-                <span><span class="pack-name">Pareto 2</span><span class="pack-words">+1,000 words · B2–C1</span></span>
-                <span class="pack-tag">DLC</span>
-            </div>
-        </div>
-
-        <div class="links reveal">
-            <a href="manual/walkthrough/select.html" class="link-btn">Browse the Esperanto clusters in the manual &rarr;</a>
-            <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website" class="link-btn primary">Get FlashBoss on Steam &rarr;</a>
-        </div>
-
-        <div class="footer-links reveal">
-            <a href="home.html" class="back-link">&larr; Back to Hub</a>
-            <span class="link-divider">·</span>
-            <a href="found-me.html#level2" class="back-link">The FlashBoss Vision</a>
-            <span class="link-divider">·</span>
-            <a href="manual/" class="back-link">Manual</a>
-        </div>
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap">
+      <h1 class="reveal">Esperanto<span class="cursor"></span></h1>
+      <p class="tagline reveal">Learn the language built to be learned.</p>
+      <p class="sig reveal">Listen · Read · Repeat · Rate · Fight</p>
+      <p class="lede reveal">You begin with <b class="eo">Saluton.</b> Within weeks you're reading it, because nothing is irregular and nothing is hidden.</p>
+      <div class="actions reveal">
+        <a class="btn" href="wordlists.html?lang=Esperanto">Word Lists &rarr;</a>
+        <a class="btn" href="lessons.html?lang=Esperanto">Lessons &rarr;</a>
+      </div>
     </div>
+  </header>
+
+  <!-- THE ARGUMENT -->
+  <section class="wrap">
+    <div class="frame">
+      <span class="tag">Esperanto core design</span>
+      <h2>The language that rewards you fastest</h2>
+      <p class="sub eo">La interna ideo — the inner idea.</p>
+      <p class="body">Esperanto was designed, not inherited — built to be learnable. There are no irregular verbs, no noun genders, no silent letters, no exceptions waiting to trip you. Every word is spelled as it sounds and every ending means exactly one thing. So the FlashBoss method works almost immediately here: progress is visible week over week, in a way no natural language can match.</p>
+      <p class="body">And the destination is different. You don't learn Esperanto to survive a trip or follow a country's television — you learn it to <b>join its people</b>. Core runs from first words and the regular grammar engine, through writing and messaging online, to the thing Esperanto is really for: correspondence, meetups, and a community spread across every continent and no homeland. It's the most welcoming room on earth, and 1,000 words gets you through the door.</p>
+
+      <div class="run reveal">
+        <div class="step"><div class="t">Tier 1</div><p>Survival words and the regular verb system — the engine, learned once.</p></div>
+        <div class="step"><div class="t">Tier 2</div><p>Family, feelings, opinions, polite discourse — talking with people.</p></div>
+        <div class="step"><div class="t">Tier 3</div><p>Devices, the internet, social media, writing online — the modern channels.</p></div>
+        <div class="step"><div class="t">Tier 4</div><p>Letters, email, sharing news, making plans — real correspondence.</p></div>
+        <div class="step"><div class="t">Tier 5</div><p>The community, meetups, cultures, the world — belonging, across borders.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SENTENCE LADDER -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Watch it grow up</span>
+      <h2>Progressively more challenging</h2>
+      <p class="sub">The example sentences increase in complexity tier by tier.</p>
+      <ol class="ladder">
+        <li class="reveal"><span class="ger eo">Saluton, mi nomiĝas Maria.</span><span class="en">Hello, my name is Maria.</span></li>
+        <li class="reveal"><span class="ger eo">Mi loĝas en granda urbo kun mia familio.</span><span class="en">I live in a big city with my family.</span></li>
+        <li class="reveal"><span class="ger eo">Hieraŭ mi skribis mesaĝon al amiko en alia lando.</span><span class="en">Yesterday I wrote a message to a friend in another country.</span></li>
+        <li class="reveal"><span class="ger eo">Kvankam ni neniam renkontiĝis, ni interparolas ĉiusemajne en la reto.</span><span class="en">Although we've never met, we talk every week online.</span></li>
+        <li class="reveal"><span class="ger eo">Mi esperas partopreni la kongreson, kie homoj el la tuta mondo kunvenas.</span><span class="en">I hope to take part in the congress, where people from all over the world come together.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- WORD-BUILDING (replaces gender) -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Build it from parts</span>
+      <h2>One root, a dozen words</h2>
+      <p class="sub">Esperanto has no genders to memorise — so FlashBoss shows you the thing that actually matters: how words are built. Roots stay the same; regular affixes do the rest.</p>
+      <div class="legend">
+        <span><i class="lr"></i> root — the meaning</span>
+        <span><i class="la"></i> affix &amp; ending — the regular machinery</span>
+      </div>
+      <div class="build">
+        <div class="row"><div class="k"><span class="build-word"><span class="r">san</span><span class="a o">-</span><span class="a">a</span></span></div><div class="gloss"><b>healthy</b> — root <i>san-</i> + adjective ending <i>-a</i></div></div>
+        <div class="row"><div class="k"><span class="build-word"><span class="r">san</span><span class="a">eco</span></span></div><div class="gloss"><b>health</b> — <i>-ec-</i> makes an abstract quality, <i>-o</i> a noun</div></div>
+        <div class="row"><div class="k"><span class="build-word"><span class="r">mal</span><span class="r">san</span><span class="a">a</span></span></div><div class="gloss"><b>ill</b> — <i>mal-</i> reverses any root: the exact opposite</div></div>
+        <div class="row"><div class="k"><span class="build-word"><span class="r">mal</span><span class="r">san</span><span class="a">ulejo</span></span></div><div class="gloss"><b>hospital</b> — ill + <i>-ul-</i> (person) + <i>-ej-</i> (place): a place for ill people</div></div>
+        <div class="row"><div class="k"><span class="build-word"><span class="r">re</span><span class="r">san</span><span class="a">iĝi</span></span></div><div class="gloss"><b>to recover</b> — <i>re-</i> (again) + <i>-iĝ-</i> (become): to become healthy again</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONCEPT CARDS -->
+  <section class="wrap">
+    <div class="reveal">
+      <h2>The words of a movement</h2>
+      <p class="sub">Esperanto carries its own culture in a handful of words. Tap to flip.</p>
+      <div class="cards reveal">
+        <div class="card"><div class="art">community</div><div class="word">samideano</div>
+          <div class="ex eo">Mi renkontis multajn samideanojn.</div>
+          <div class="trans">a fellow Esperantist — literally &ldquo;same-idea-person.&rdquo; What speakers call one another: not a stranger, but someone who shares the idea.</div><div class="hint">tap to flip</div></div>
+        <div class="card"><div class="art">tradition</div><div class="word">Pasporta Servo</div>
+          <div class="ex eo">Mi vojaĝis per Pasporta Servo.</div>
+          <div class="trans">&ldquo;Passport Service&rdquo; — a global network where Esperantists host each other for free. A language that gives you a place to stay on every continent.</div><div class="hint">tap to flip</div></div>
+        <div class="card"><div class="art">event</div><div class="word">kongreso</div>
+          <div class="ex eo">La Universala Kongreso okazas ĉiujare.</div>
+          <div class="trans">congress — the yearly world gathering where thousands meet and the only shared language in the room is the one everybody chose.</div><div class="hint">tap to flip</div></div>
+        <div class="card"><div class="art">spirit</div><div class="word">interna ideo</div>
+          <div class="ex eo">La interna ideo unuigas nin.</div>
+          <div class="trans">&ldquo;the inner idea&rdquo; — Zamenhof's name for the hope behind the language: people meeting as equals, on neutral ground.</div><div class="hint">tap to flip</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKS -->
+  <section class="wrap">
+    <div class="reveal">
+      <h2>The Pareto Principle</h2>
+      <p class="sub">3 packs. 10% of the Esperanto vocabulary for 90% of Esperanto use cases.</p>
+      <!-- Code: wire Pareto 1 / Pareto 2 hrefs to their Esperanto Steam DLC pages. Core is free. -->
+      <div class="packs">
+        <a class="pack" href="wordlists.html?lang=Esperanto&amp;set=Core">
+          <div class="n">Core</div>
+          <div class="lvl">A1–A2 · 1,000 words</div>
+          <p>First words to the community, in five tiers. The road in.</p>
+          <span class="free">Included free</span>
+        </a>
+        <a class="pack" href="wordlists.html?lang=Esperanto&amp;set=Pareto%201">
+          <div class="n">Pareto 1</div>
+          <div class="lvl">B1–B2 · 1,000 words</div>
+          <p>The next thousand — deeper conversation, writing, and community life.</p>
+        </a>
+        <a class="pack" href="wordlists.html?lang=Esperanto&amp;set=Pareto%202">
+          <div class="n">Pareto 2</div>
+          <div class="lvl">B2–C1 · 1,000 words</div>
+          <p>Abstract, literary, and fluent range. The full three thousand.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHOD -->
+  <section class="wrap method">
+    <div class="frame reveal">
+      <span class="tag">How it sticks</span>
+      <h2>Flashcards as an integrated system</h2>
+      <dl>
+        <dt>Fibonacci SRS</dt><dd>Rate each card 0–5. The better you know a word, the longer before it returns — spaced repetition on Fibonacci intervals.</dd>
+        <dt>Boss fights</dt><dd>Each cluster is gated by a duel you can't win without confronting and overcoming your most difficult words.</dd>
+        <dt>Graduation</dt><dd>Beat a cluster and its cards leave your daily deck for good. The deck gets smaller as you learn.</dd>
+        <dt>Regularity</dt><dd>Because Esperanto is perfectly regular, every word you learn multiplies — affixes turn one root into a dozen words you can already read.</dd>
+        <dt>Lessons</dt><dd>Reference lessons fire at the point in the sequence where they unlock what you're about to read.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final wrap reveal">
+    <a class="btn hot" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">Get FlashBoss on Steam &rarr;</a>
+  </section>
+
+</main>
+
+<footer>
+  <p class="epi">&ldquo;Ĉu ne kunvenis ni por reciproke nin kompreni?&rdquo;<span class="tr">Did we not come together to understand one another?</span><span class="epi-cite">&mdash; L. L. Zamenhof</span></p>
+  <span class="footer-links">
+    <a href="home.html">home</a>
+    <span class="div">·</span>
+    <a href="wordlists.html?lang=Esperanto">word lists</a>
+    <span class="div">·</span>
+    <a href="lessons.html?lang=Esperanto">lessons</a>
+    <span class="div">·</span>
+    <a href="manual/">manual</a>
+    <span class="div">·</span>
+    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">steam</a>
+  </span>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+document.querySelectorAll('.card').forEach(function(c){c.addEventListener('click',function(){c.classList.toggle('flipped');});});
+(function(){
+  var root=document.documentElement,ticking=false;
+  function update(){var max=document.body.scrollHeight-window.innerHeight;var p=max>0?Math.min(1,Math.max(0,window.scrollY/max)):0;root.style.setProperty('--mood',(p*p*(3-2*p)).toFixed(3));ticking=false;}
+  window.addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(update);ticking=true;}},{passive:true});update();
+})();
+</script>
 </body>
 </html>
