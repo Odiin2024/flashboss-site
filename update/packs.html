@@ -96,6 +96,7 @@ section{padding:24px 0;}
 .lang .name{font-size:18px; font-weight:800; color:var(--ink);}
 .lang .name .native{font-size:13px; font-weight:500; color:var(--faint); margin-left:9px; letter-spacing:.04em;}
 .lang .free-inline{font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--green); border:1px solid var(--green); padding:2px 7px; margin-left:10px;}
+.lang .dlc-inline{font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); border:1px solid var(--faint); padding:2px 7px; margin-left:10px;}
 .lang p{font-size:13px; color:var(--dim); margin:5px 0 0;}
 .lang .acts{display:flex; gap:14px 16px; align-items:center; flex-wrap:wrap;}
 .mini{font-size:11.5px; letter-spacing:.06em; text-decoration:none; color:var(--dim); border:1px solid var(--line); padding:7px 12px; white-space:nowrap;}
@@ -127,7 +128,6 @@ footer .made{margin-top:12px; opacity:.8;}
 
 <header class="hero">
   <div class="wrap">
-    <div class="crumb">FlashBoss · Packs</div>
     <h1>Current Pack List</h1>
     <p class="lede">This page is a catalogue of currently available material. To learn what's on the way, visit our <a href="in-development.html">In Development</a> page.</p>
   </div>
@@ -140,52 +140,69 @@ footer .made{margin-top:12px; opacity:.8;}
     <div class="sec-head"><h2>English Language Packs</h2></div>
 
     <div class="subhead">Build on the English you have</div>
-    <!-- Code: repoint each href to its specific Steam DLC page. Base store linked for now. -->
-    <div class="grid three reveal">
-      <div class="pk">
-        <div class="top"><span class="n">English Advance</span><span class="badge free">Free</span></div>
+    <div class="lang reveal">
+      <div class="body">
+        <div class="name">English Advance<span class="free-inline">Free</span></div>
         <p>The practical English of adult life — forms, emails, official letters, and the small print nobody explains. 500 words.</p>
-        <div class="acts-row">
-          <a class="act primary" href="english-advance.html">Learn more &rarr;</a>
-          <a class="act secondary" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-packs">View on Steam &rarr;</a>
-        </div>
       </div>
-      <div class="pk">
-        <div class="top"><span class="n">English Adept</span><span class="badge free">Free</span></div>
+      <div class="acts">
+        <a class="act primary" href="english-advance.html">Learn more &rarr;</a>
+        <span class="chip-div"></span>
+        <a class="mini" href="#">Word Lists</a>
+        <a class="mini" href="#">Lessons</a>
+      </div>
+    </div>
+
+    <div class="lang reveal">
+      <div class="body">
+        <div class="name">English Adept<span class="free-inline">Free</span></div>
         <p>Precision English — the difference between stubborn and obstinate, agreement and consensus. 1,000 words to sharpen how you write and think.</p>
-        <div class="acts-row">
-          <a class="act primary" href="english-adept.html">Learn more &rarr;</a>
-          <a class="act secondary" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-packs">View on Steam &rarr;</a>
-        </div>
+      </div>
+      <div class="acts">
+        <a class="act primary" href="english-adept.html">Learn more &rarr;</a>
+        <span class="chip-div"></span>
+        <a class="mini" href="#">Word Lists</a>
+        <a class="mini" href="#">Lessons</a>
       </div>
     </div>
 
     <div class="subhead">The Roots Series — where English came from</div>
-    <!-- Code: repoint each href to its specific Steam DLC page. -->
-    <div class="grid three reveal">
-      <div class="pk">
-        <div class="top"><span class="n">German Roots</span><span class="badge">DLC</span></div>
+    <div class="lang reveal">
+      <div class="body">
+        <div class="name">German Roots<span class="dlc-inline">DLC</span></div>
         <p>The Germanic backbone of everyday English — the words you already half-know.</p>
-        <div class="acts-row">
-          <a class="act primary" href="german-roots.html">Learn more &rarr;</a>
-          <a class="act secondary" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-packs">View on Steam &rarr;</a>
-        </div>
       </div>
-      <div class="pk">
-        <div class="top"><span class="n">Norman Roots</span><span class="badge">DLC</span></div>
+      <div class="acts">
+        <a class="act primary" href="german-roots.html">Learn more &rarr;</a>
+        <span class="chip-div"></span>
+        <a class="mini" href="#">Word Lists</a>
+        <a class="mini" href="#">Lessons</a>
+      </div>
+    </div>
+
+    <div class="lang reveal">
+      <div class="body">
+        <div class="name">Norman Roots<span class="dlc-inline">DLC</span></div>
         <p>The second English — 1066 and the French that came with it.</p>
-        <div class="acts-row">
-          <a class="act primary" href="norman-roots.html">Learn more &rarr;</a>
-          <a class="act secondary" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-packs">View on Steam &rarr;</a>
-        </div>
       </div>
-      <div class="pk">
-        <div class="top"><span class="n">Latin Roots</span><span class="badge new">New</span></div>
+      <div class="acts">
+        <a class="act primary" href="norman-roots.html">Learn more &rarr;</a>
+        <span class="chip-div"></span>
+        <a class="mini" href="#">Word Lists</a>
+        <a class="mini" href="#">Lessons</a>
+      </div>
+    </div>
+
+    <div class="lang reveal">
+      <div class="body">
+        <div class="name">Latin Roots<span class="dlc-inline">DLC</span></div>
         <p>English built from its parts — the classical and scientific layer, assembled rather than memorised.</p>
-        <div class="acts-row">
-          <a class="act primary" href="latin-roots.html">Learn more &rarr;</a>
-          <a class="act secondary" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-packs">View on Steam &rarr;</a>
-        </div>
+      </div>
+      <div class="acts">
+        <a class="act primary" href="latin-roots.html">Learn more &rarr;</a>
+        <span class="chip-div"></span>
+        <a class="mini" href="#">Word Lists</a>
+        <a class="mini" href="#">Lessons</a>
       </div>
     </div>
   </section>
@@ -202,7 +219,6 @@ footer .made{margin-top:12px; opacity:.8;}
       </div>
       <div class="acts">
         <a class="act primary" href="german.html">Learn more &rarr;</a>
-        <a class="act secondary" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-packs">View on Steam &rarr;</a>
         <span class="chip-div"></span>
         <a class="mini" href="wordlists.html?lang=German">Word Lists</a>
         <a class="mini" href="lessons.html?lang=German">Lessons</a>
@@ -216,7 +232,6 @@ footer .made{margin-top:12px; opacity:.8;}
       </div>
       <div class="acts">
         <a class="act primary" href="italian.html">Learn more &rarr;</a>
-        <a class="act secondary" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-packs">View on Steam &rarr;</a>
         <span class="chip-div"></span>
         <a class="mini" href="wordlists.html?lang=Italian">Word Lists</a>
         <a class="mini" href="lessons.html?lang=Italian">Lessons</a>
@@ -230,7 +245,6 @@ footer .made{margin-top:12px; opacity:.8;}
       </div>
       <div class="acts">
         <a class="act primary" href="spanish.html">Learn more &rarr;</a>
-        <a class="act secondary" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-packs">View on Steam &rarr;</a>
         <span class="chip-div"></span>
         <a class="mini" href="wordlists.html?lang=Spanish">Word Lists</a>
         <a class="mini" href="lessons.html?lang=Spanish">Lessons</a>
@@ -244,7 +258,6 @@ footer .made{margin-top:12px; opacity:.8;}
       </div>
       <div class="acts">
         <a class="act primary" href="esperanto.html">Learn more &rarr;</a>
-        <a class="act secondary" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-packs">View on Steam &rarr;</a>
         <span class="chip-div"></span>
         <a class="mini" href="wordlists.html?lang=Esperanto">Word Lists</a>
         <a class="mini" href="lessons.html?lang=Esperanto">Lessons</a>
