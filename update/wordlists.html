@@ -53,6 +53,9 @@ header.page p b{color:var(--ink);}
 .field{display:flex; align-items:center; gap:8px;}
 .field label{font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--faint);}
 select, .btn{font-family:var(--mono); font-size:14px; color:var(--ink); background:var(--panel); border:1px solid var(--line); padding:8px 12px; cursor:pointer;}
+select[multiple]{padding:4px; height:130px; min-width:240px; overflow-y:auto;}
+select[multiple] option{padding:3px 8px;}
+select[multiple] optgroup{color:var(--faint); font-style:normal;}
 select:focus, .btn:focus{outline:1px solid var(--accent);}
 .spacer{flex:1;}
 .toggle{display:inline-flex; align-items:center; gap:9px; cursor:pointer; user-select:none; font-size:13px; color:var(--dim);}
@@ -109,14 +112,16 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
   .setmeta{color:#000; padding:6px 0 4px;} .setmeta .big{color:#000;}
   .cluster.solo{border:0; background:#fff; padding:0; margin:0;}
   .cluster.solo .chead{border-bottom:1px solid #000; margin-bottom:8px;} .cluster.solo .tnum{color:#000; border-color:#000;} .cluster.solo .cname{color:#000;}
-  /* cut-out flashcards: one card per word, black grid with collapsed borders — cut along the lines */
-  .words, .words.hide-trans{display:grid !important; grid-template-columns:repeat(3,1fr); gap:0;
+  /* foldable flashcards: word | translation side by side, solid border per card, dashed centre = fold line.
+     Cut along the solid lines, fold along the dashed centre — both faces point up. */
+  .words, .words.hide-trans{display:grid !important; grid-template-columns:repeat(2,1fr); gap:0;
     border-top:1px solid #000; border-left:1px solid #000;}
-  .word{font-family:'Fantasque Sans Mono', var(--mono); border-right:1px solid #000; border-bottom:1px solid #000; padding:12px 10px; min-height:0.95in;
-    display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; break-inside:avoid;}
-  .word .w{font-weight:700; font-size:12.5pt; color:#000;}
-  .word .t{color:#000; font-size:10pt; margin-top:6px; text-align:center;}
-  .words.hide-trans .word .t{visibility:hidden;}  /* Translations off -> blank back, word-only test cards */
+  .word{font-family:'Fantasque Sans Mono', var(--mono); border-right:1px solid #000; border-bottom:1px solid #000;
+    min-height:0.72in; display:flex; align-items:stretch; padding:0; break-inside:avoid;}
+  .word .w, .word .t{flex:1; display:flex; align-items:center; justify-content:center; text-align:center; padding:8px 8px; color:#000;}
+  .word .w{border-right:1px dashed #000; font-weight:700; font-size:12pt;}
+  .word .t{font-size:10.5pt;}
+  .words.hide-trans .word .t{visibility:hidden;}  /* Translations off -> blank fold face, word-only test cards */
 }
 </style>
 </head>
@@ -144,7 +149,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
   <div class="wrap row">
     <div class="field"><label for="packSel">Pack</label><select id="packSel"></select></div>
     <div class="field"><label for="setSel">Set</label><select id="setSel"></select></div>
-    <div class="field"><label for="clusterSel">Cluster</label><select id="clusterSel"></select></div>
+    <div class="field"><label for="clusterSel">Clusters</label><select id="clusterSel" multiple size="6" title="Click a cluster. Shift-click another to select a contiguous range, then Print to put them on one sheet."></select></div>
     <div class="spacer"></div>
     <div class="toggle on" id="transToggle" role="switch" aria-checked="true" tabindex="0"><span class="switch"></span><span>Translations</span></div>
     <button class="btn" id="printBtn">Print / cards</button>
@@ -247,22 +252,27 @@ function fillPacks(){
 }
 
 function clusterLabel(c){ return humanize(c.slug) || c.cluster_id || 'Cluster'; }
+function tcPrefix(c){ const m=/^T(\d+)-C(\d+)$/.exec(c.cluster_id||''); return m?`${m[1]}-${m[2]}`:(c.cluster_id||''); }
+function clusterTitle(c){ const p=tcPrefix(c); return (p?p+' ':'')+clusterLabel(c); }
 
 function buildClusterOptions(data){
   const tiers={}, order=[];
   data.clusters.forEach((c,i)=>{ if(!tiers[c.tier]){tiers[c.tier]=[]; order.push(c.tier);} tiers[c.tier].push({c,i}); });
   return order.map(tn=>{
-    const opts=tiers[tn].map(({c,i})=>`<option value="${i}">${esc(clusterLabel(c))} · ${(c.cards||[]).length}</option>`).join('');
+    const opts=tiers[tn].map(({c,i})=>`<option value="${i}">${esc(clusterTitle(c))}</option>`).join('');
     return `<optgroup label="Tier ${tn}">${opts}</optgroup>`;
   }).join('');
 }
 
+function selectedIdxs(){
+  const idxs=Array.from(clusterSel.selectedOptions).map(o=>parseInt(o.value,10)).filter(n=>!isNaN(n));
+  return idxs.length?idxs.sort((a,b)=>a-b):[0];
+}
 function setURL(){
   const data=cache[packSel.value+'|'+setSel.value];
-  const i=parseInt(clusterSel.value,10);
-  const cid=(data&&data.clusters&&data.clusters[i])?data.clusters[i].cluster_id:'';
+  const ids=selectedIdxs().map(i=>(data&&data.clusters&&data.clusters[i])?data.clusters[i].cluster_id:'').filter(Boolean);
   const p=new URLSearchParams(); p.set('lang',packSel.value); p.set('set',setSel.value);
-  if(cid) p.set('cluster',cid);
+  if(ids.length) p.set('cluster',ids.join(','));
   history.replaceState(null,'', '?'+p.toString());
 }
 
@@ -278,29 +288,34 @@ async function loadAndRender(opts){
     return;
   }
   clusterSel.innerHTML=buildClusterOptions(data);
-  let idx=0;
-  if(opts.clusterId){ const k=data.clusters.findIndex(c=>c.cluster_id===opts.clusterId); if(k>=0) idx=k; }
-  clusterSel.value=String(idx);
-  renderCluster();
+  const wanted=(opts.clusterId||'').split(',').filter(Boolean);
+  let any=false;
+  Array.from(clusterSel.options).forEach(o=>{ const c=data.clusters[parseInt(o.value,10)]; o.selected=!!(c && wanted.includes(c.cluster_id)); if(o.selected) any=true; });
+  if(!any && clusterSel.options.length) clusterSel.options[0].selected=true;
+  renderSelected();
 }
 
-function renderCluster(){
+function renderSelected(){
   const lang=packSel.value, set=setSel.value, data=cache[lang+'|'+set];
   if(!data||!data.clusters||!data.clusters.length) return;
-  const c=data.clusters[parseInt(clusterSel.value||'0',10)]||data.clusters[0];
+  const idxs=selectedIdxs();
   setURL();
-  const words=normCards(c);
+  const totalCards=idxs.reduce((n,i)=>n+(data.clusters[i]?normCards(data.clusters[i]).length:0),0);
   let html=`<div class="setmeta"><span class="big">${esc(lang)} ${esc(set)}</span>`+
     (data.level?`<span>${esc(data.level)}</span>`:'')+(data.total?`<span>${esc(data.total)} words</span>`:'')+
-    `<span>${data.clusters.length} clusters</span></div>`;
-  html+=`<div class="cluster solo"><div class="chead">
-    <span class="tnum">TIER ${esc(c.tier)}</span>
-    <span class="cname">${esc(clusterLabel(c))}</span>
-    <span class="cid">${esc(c.cluster_id||'')}</span>
-    <span class="ccount">${words.length} words</span></div>
-    <div class="words${showTrans?'':' hide-trans'}">`+
-    words.map(([w,t])=>`<div class="word"><span class="w">${esc(w)}</span><span class="t">${esc(t)}</span></div>`).join('')+
-    `</div></div>`;
+    `<span>${data.clusters.length} clusters</span>`+
+    (idxs.length>1?`<span>${idxs.length} selected · ${totalCards} cards</span>`:'')+`</div>`;
+  idxs.forEach(i=>{
+    const c=data.clusters[i]; if(!c) return;
+    const words=normCards(c);
+    html+=`<div class="cluster solo"><div class="chead">
+      <span class="tnum">TIER ${esc(c.tier)}</span>
+      <span class="cname">${esc(clusterTitle(c))}</span>
+      <span class="ccount">${words.length} words</span></div>
+      <div class="words${showTrans?'':' hide-trans'}">`+
+      words.map(([w,t])=>`<div class="word"><span class="w">${esc(w)}</span><span class="t">${esc(t)}</span></div>`).join('')+
+      `</div></div>`;
+  });
   view.innerHTML=html;
   view.querySelectorAll('.words.hide-trans .word').forEach(row=>row.addEventListener('click',()=>row.classList.toggle('revealed')));
 }
@@ -308,8 +323,8 @@ function renderCluster(){
 /* controls */
 packSel.addEventListener('change',()=>loadAndRender());
 setSel.addEventListener('change',()=>loadAndRender());
-clusterSel.addEventListener('change',renderCluster);
-transToggle.addEventListener('click',()=>{ showTrans=!showTrans; transToggle.classList.toggle('on',showTrans); transToggle.setAttribute('aria-checked',showTrans); renderCluster(); });
+clusterSel.addEventListener('change',renderSelected);
+transToggle.addEventListener('click',()=>{ showTrans=!showTrans; transToggle.classList.toggle('on',showTrans); transToggle.setAttribute('aria-checked',showTrans); renderSelected(); });
 transToggle.addEventListener('keydown',e=>{ if(e.key===' '||e.key==='Enter'){e.preventDefault(); transToggle.click();}});
 printBtn.addEventListener('click',()=>window.print());
 
