@@ -121,7 +121,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
   <div class="wrap">
     <h1>Lessons</h1>
     <!-- Static, crawlable SEO copy -->
-    <p>Free reference lessons for every FlashBoss language — <b>Italian, German, Spanish, and Esperanto</b>. Pronunciation, articles, verb tenses, register and usage, rendered exactly as they appear inside the game and organised by tier. Read them free, and tap any <b>▶</b> line to hear it.</p>
+    <p>Free reference lessons for every FlashBoss language — <b>Italian, German, Spanish, and Esperanto</b>. Pronunciation, articles, verb tenses, register and usage, rendered exactly as they appear inside the game and organised by tier. Read them free, and tap any <b>▶</b> symbol for Piper text-to-speech pronunciation.</p>
   </div>
 </header>
 
@@ -188,6 +188,21 @@ function pickVoice(){ if(!('speechSynthesis'in window))return; const vs=speechSy
 if('speechSynthesis'in window){ pickVoice(); speechSynthesis.onvoiceschanged=pickVoice; }
 function speak(t){ if(!('speechSynthesis'in window))return; speechSynthesis.cancel();
   const u=new SpeechSynthesisUtterance(t.replace(/\./g,', ')); u.lang=speechLang; if(voice)u.voice=voice; u.rate=.92; speechSynthesis.speak(u); }
+
+/* hosted pronunciation audio — pre-generate one clip per ▶ cue with Piper, named:
+     audio/<language>/<lesson_id>_<page>_<key>.<ext>   e.g. audio/esperanto/001_1_1.opus
+   Play the file if it exists; otherwise fall back to the browser's speech synth. */
+const AUDIO_DIR='audio', AUDIO_EXT='opus';   // swap EXT to 'mp3' if you upload MP3s instead
+function audioUrl(lang, lessonId, pageNum, key){ return `${AUDIO_DIR}/${String(lang).toLowerCase()}/${lessonId}_${pageNum}_${key}.${AUDIO_EXT}`; }
+let curAudio=null;
+function playClip(url, fallbackText){
+  if('speechSynthesis'in window) speechSynthesis.cancel();
+  if(curAudio){ try{ curAudio.pause(); }catch(e){} curAudio=null; }
+  const a=new Audio(url); curAudio=a; let handled=false;
+  a.addEventListener('playing',()=>{ handled=true; }, {once:true});               // hosted file works
+  a.addEventListener('error',()=>{ if(!handled){ handled=true; speak(fallbackText); } }, {once:true}); // not uploaded yet -> TTS
+  a.play().catch(()=>{ if(!handled){ handled=true; speak(fallbackText); } });
+}
 
 /* ---------- helpers ---------- */
 function esc(s){return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
@@ -278,8 +293,10 @@ function renderScreen(){
   </div>`;
   const body=$('body'), say=$('say');
   if(allowPress) body.querySelectorAll('.press').forEach(p=>p.addEventListener('click',()=>{
-    const txt=(page.pronunciation_mappings||{})[p.dataset.key];
-    if(txt){ say.textContent='▶ '+txt; speak(txt); }
+    const key=p.dataset.key, txt=(page.pronunciation_mappings||{})[key];
+    if(!txt) return;
+    say.textContent='▶ '+txt;
+    playClip(audioUrl(langSel.value, lesson.lesson_id, page.page, key), txt);
   }));
   $('prev').disabled = (li===0 && pi===0);
   $('next').disabled = (li===LESSONS.length-1 && pi===lesson.pages.length-1);
