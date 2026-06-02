@@ -145,8 +145,11 @@
     /* short / landscape screens: lift the door hotspot and shrink ENTER
        so it never collides with the footer */
     @media (max-height:560px){
-        :root{--enter-y:67%; --title-y:42%;}
-        .enter img{width:clamp(120px, 22vw, 220px);}
+        :root{--enter-y:70%; --title-y:46%;}
+        /* short/landscape: size by HEIGHT, not width, so it can't run away */
+        .title{font-size:clamp(2rem, 13vh, 5rem);}
+        .descriptor{font-size:clamp(.78rem, 4.5vh, 1.2rem); margin-top:.55rem; padding:.4em 1.3em;}
+        .enter img{width:clamp(96px, 28vh, 180px);}
     }
     @media (max-width:480px){
         footer{font-size:.72rem; gap:.5rem .8rem;}
