@@ -121,7 +121,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
   <div class="wrap">
     <h1>Lessons</h1>
     <!-- Static, crawlable SEO copy -->
-    <p>Free reference lessons for every FlashBoss language — <b>Italian, German, Spanish, and Esperanto</b>. Pronunciation, articles, verb tenses, register and usage, rendered exactly as they appear inside the game and organised by tier. Read them free, and tap any <b>Press N</b> line to hear it.</p>
+    <p>Free reference lessons for every FlashBoss language — <b>Italian, German, Spanish, and Esperanto</b>. Pronunciation, articles, verb tenses, register and usage, rendered exactly as they appear inside the game and organised by tier. Read them free, and tap any <b>▶</b> line to hear it.</p>
   </div>
 </header>
 
@@ -260,7 +260,8 @@ function lineToHTML(line, allowPress){
   const m=line.match(/Press (\d)/);
   if(!m) return `<div class="ln">${esc(line)}</div>`;
   const idx=line.indexOf(m[0]);
-  return `<div class="ln"><span>${esc(line.slice(0,idx))}</span><span class="press" data-key="${m[1]}">${esc(m[0])}</span><span>${esc(line.slice(idx+m[0].length))}</span></div>`;
+  // it's a click/tap, not a keypress — show a play cue instead of "Press N" (the digit stays the audio key)
+  return `<div class="ln"><span>${esc(line.slice(0,idx))}</span><span class="press" data-key="${m[1]}" role="button" title="play">▶</span><span>${esc(line.slice(idx+m[0].length))}</span></div>`;
 }
 
 function renderScreen(){
