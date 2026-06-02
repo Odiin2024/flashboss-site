@@ -71,7 +71,8 @@ select:focus{outline:1px solid var(--accent);}
 .scr-head .moon, .scr-head .books{flex:0 0 auto; font-size:1.05em;}
 .scr-head .ttl{flex:1; min-width:0; text-align:center; font-weight:800; letter-spacing:.02em; font-size:.95em;
   white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
-.scr-body{padding:0 3ch; min-height:34.5em; color:var(--ink);} /* 23 lines × 1.5 line-height */
+.screen.eng .scr-head .ttl{text-transform:uppercase; font-weight:800;} /* English headers: magenta (via --hc), caps, bold */
+.scr-body{padding:1.5em 3ch 0; min-height:34.5em; color:var(--ink);} /* one blank line of top padding; 23-line field */
 .ln{white-space:pre; font-variant-ligatures:none;}
 .press{cursor:pointer; color:inherit; border-bottom:1px dotted currentColor;}
 .press:hover{color:var(--accent); border-bottom-color:var(--accent);}
@@ -250,8 +251,9 @@ function renderScreen(){
   const bi=isBilingual(page), allowPress=!bi;
   const lines=activeLines(page); curLines=lines.slice();
   const cv=colorVarFor(lesson,page);
+  const eng=bi && loc==='english';
   const multi=lesson.pages.length>1;
-  stage.innerHTML = `<div class="screen" id="screen" style="--hc:var(${cv})">
+  stage.innerHTML = `<div class="screen${eng?' eng':''}" id="screen" style="--hc:var(${cv})">
     <div class="scr-head"><span class="books">📚</span><span class="ttl">${esc(lessonLabel(lesson))}</span><span class="moon" title="${MOON.name}" aria-label="Moon tonight: ${MOON.name}">${MOON.glyph}</span></div>
     <div class="scr-body" id="body">${lines.map(l=>lineToHTML(l,allowPress)).join('')}</div>
     <div class="say" id="say"></div>
