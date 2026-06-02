@@ -151,6 +151,8 @@ p.body b{color:var(--vis-accent);}
 .packs{display:grid; grid-template-columns:repeat(3,1fr); gap:14px;}
 @media(max-width:640px){.packs{grid-template-columns:1fr;}}
 .pack{border:1px solid var(--line); padding:24px 20px; display:flex; flex-direction:column; gap:6px; background:rgba(255,255,255,.015);}
+a.pack{text-decoration:none; color:inherit; transition:border-color .15s ease, background .15s ease;}
+a.pack:hover{border-color:color-mix(in oklab, var(--vis-accent), var(--bel-accent) calc(var(--mood)*100%)); background:rgba(255,255,255,.03);}
 .pack .n{font-size:19px; font-weight:800;}
 .pack .lvl{font-size:12px; letter-spacing:.06em; color:var(--vis-dim);}
 .pack p{font-size:13px; color:var(--vis-dim); margin:6px 0 16px; flex:1;}
@@ -310,23 +312,19 @@ footer a{color:var(--bel-dim);}
     <div class="reveal">
       <h2>The Pareto Principle</h2>
       <p class="sub">3 packs. 10% of the Italian vocabulary for 90% of Italian use cases.</p>
-      <!-- Code: wire each .pbtn href to its Italian Steam DLC page (Core / Pareto 1 / Pareto 2). -->
       <div class="packs">
-        <div class="pack">
+        <a class="pack" href="wordlists.html?lang=Italian&amp;set=Core">
           <div class="n">Core</div><div class="lvl">A1–A2 · 1,000 words</div>
           <p>Survival to belonging, in five tiers, with twenty reference lessons. The road in.</p>
-          <a class="pbtn" href="https://store.steampowered.com/app/4475030/FlashBoss__Italian_Core/" data-pack="core">View on Steam</a>
-        </div>
-        <div class="pack">
+        </a>
+        <a class="pack" href="wordlists.html?lang=Italian&amp;set=Pareto%201">
           <div class="n">Pareto 1</div><div class="lvl">B1–B2 · 1,000 words</div>
           <p>Travel, work, and social life — enough to talk with your <span class="it">nonni</span> and mean it.</p>
-          <a class="pbtn" href="https://store.steampowered.com/app/4475040/FlashBoss__Italian_Pareto_1/" data-pack="pareto1">View on Steam</a>
-        </div>
-        <div class="pack">
+        </a>
+        <a class="pack" href="wordlists.html?lang=Italian&amp;set=Pareto%202">
           <div class="n">Pareto 2</div><div class="lvl">B2–C1 · 1,000 words</div>
           <p>Abstract, literary, and native-like range. The full three thousand.</p>
-          <a class="pbtn" href="https://store.steampowered.com/app/4475050/FlashBoss__Italian_Pareto_2/" data-pack="pareto2">View on Steam</a>
-        </div>
+        </a>
       </div>
     </div>
   </section>
