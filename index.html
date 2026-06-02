@@ -40,8 +40,8 @@
        ============================================================ */
     :root{
         --img-ar:1.75;          /* 1344 / 768                   */
-        --title-y:15%;          /* vertical hotspot: the moon    */
-        --enter-y:78%;          /* vertical hotspot: the door    */
+        --title-y:53%;          /* vertical hotspot: screen centre */
+        --enter-y:74%;          /* vertical hotspot: the door    */
         --sky:#7ec8ff;          /* title glow — moonlit blue     */
         --gold:#f0c45a;         /* ENTER / window light          */
         --ink:#f0e6d3;          /* warm parchment text           */
@@ -101,9 +101,12 @@
     .title{font-family:var(--serif); font-weight:400; color:var(--sky);
         font-size:clamp(3.4rem, 16vw, 11rem); line-height:.9; letter-spacing:-.01em;
         text-shadow:0 0 48px rgba(110,180,255,.55), 0 0 14px rgba(170,215,255,.4), 0 4px 16px rgba(0,0,0,.85);}
-    .descriptor{margin-top:.55rem; font-weight:500; letter-spacing:.04em;
-        font-size:clamp(.95rem, 3.4vw, 1.7rem); color:rgba(255,255,255,.94);
-        text-shadow:0 2px 12px rgba(0,0,0,.85);}
+    .descriptor{display:inline-block; margin-top:1.05rem; padding:.55em 1.7em;
+        font-weight:500; letter-spacing:.05em;
+        font-size:clamp(.95rem, 3.4vw, 1.7rem); color:rgba(255,255,255,.96);
+        border-radius:3px;
+        background:radial-gradient(ellipse at center, rgba(23,20,33,.6) 0%, rgba(23,20,33,.4) 46%, rgba(23,20,33,0) 72%);
+        text-shadow:0 1px 6px rgba(0,0,0,.55);}
 
     /* ENTER — the one deliberate call to action, pinned to the door */
     .enter{position:absolute; top:var(--enter-y); left:50%; transform:translate(-50%,-50%);
@@ -117,9 +120,6 @@
     }
     .enter:hover img, .enter:focus-visible img{transform:scale(1.06);
         filter:drop-shadow(0 0 26px rgba(255,216,130,.95)) drop-shadow(0 0 50px rgba(255,190,90,.5)) drop-shadow(0 6px 14px rgba(0,0,0,.7));}
-    .enter .cue{font-size:.7rem; font-weight:500; letter-spacing:.34em; text-transform:uppercase;
-        color:rgba(255,255,255,.72); text-shadow:0 1px 8px rgba(0,0,0,.9); animation:cuefade 3.6s ease-in-out infinite;}
-    @keyframes cuefade{0%,100%{opacity:.45;} 50%{opacity:.9;}}
     .enter:focus-visible{outline:none;}
 
     /* footer — quiet secondary links, anchored to the screen bottom */
@@ -145,18 +145,17 @@
     /* short / landscape screens: lift the door hotspot and shrink ENTER
        so it never collides with the footer */
     @media (max-height:560px){
-        :root{--enter-y:72%; --title-y:18%;}
+        :root{--enter-y:67%; --title-y:42%;}
         .enter img{width:clamp(120px, 22vw, 220px);}
     }
     @media (max-width:480px){
         footer{font-size:.72rem; gap:.5rem .8rem;}
-        .enter .cue{letter-spacing:.28em;}
     }
 
     /* respect reduced-motion */
     @media (prefers-reduced-motion:reduce){
         .ember{display:none;}
-        .enter img, .enter .cue, footer .steam{animation:none;}
+        .enter img, footer .steam{animation:none;}
         .reveal{animation:none; opacity:1; filter:none;}
         .title-block.reveal, .enter.reveal{transform:translate(-50%,-50%);}
     }
@@ -197,7 +196,6 @@
 
             <a href="home.html" class="enter reveal d3" aria-label="Enter FlashBoss">
                 <img src="NewEnter.png" alt="Enter">
-                <span class="cue">click to enter</span>
             </a>
         </div>
 
