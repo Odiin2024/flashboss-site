@@ -176,13 +176,23 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
    so only the embedded SAMPLE (Italian) appears. Over GitHub Pages — or any
    http server, e.g. `python3 -m http.server` — every language loads for real.
    ============================================================ */
-function lessonUrl(lang, tier){ return `data/${lang.toLowerCase()}/tier${tier}_lessons.json`; }
-
-const LANGS=["Italian","German","Spanish","Esperanto"];
+const LANGS=["Italian","German","Spanish","Esperanto","English"];
 const TIERS=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
-const SETS=["Core","Pareto 1","Pareto 2"];          // tier 1-5 / 6-10 / 11-15
+const SETS=["Core","Pareto 1","Pareto 2"];          // foreign languages: tier 1-5 / 6-10 / 11-15
 function tierSet(t){ return t<=5?"Core":t<=10?"Pareto 1":"Pareto 2"; }
-const SPEECH_LANG={Italian:"it-IT",German:"de-DE",Spanish:"es-ES",Esperanto:"eo"};
+/* English ships as named packs, each its own folder with one Core set (tiers 1-5);
+   the "set" selector picks the pack, so changing it reloads from a different folder */
+const ENGLISH_PACKS=[["Adept","ad"],["Advance","adv"],["German Roots","gr"],["Norman Roots","nr"],["Latin Roots","lr"]];
+function isEng(lang){ return (lang||langSel.value)==='English'; }
+function engCode(set){ return (ENGLISH_PACKS.find(p=>p[0]===set)||[])[1] || String(set).toLowerCase(); }
+function setsFor(lang){ return lang==='English' ? ENGLISH_PACKS.map(p=>p[0]) : SETS; }
+function tiersFor(lang){ return lang==='English' ? [1,2,3,4,5] : TIERS; }
+function lessonUrl(lang, set, tier){
+  return lang==='English'
+    ? `data/english/${engCode(set)}/tier${tier}_lessons.json`
+    : `data/${lang.toLowerCase()}/tier${tier}_lessons.json`;
+}
+const SPEECH_LANG={Italian:"it-IT",German:"de-DE",Spanish:"es-ES",Esperanto:"eo",English:"en-US"};
 const FOREIGN_CODE={Italian:"IT",German:"DE",Spanish:"ES",Esperanto:"EO"};
 const COLORS={green:'--green',blue:'--blue',gold:'--gold',amber:'--gold',rose:'--rose',purple:'--purple',cyan:'--cyan',magenta:'--magenta'};
 
@@ -204,10 +214,14 @@ function speak(t){ if(!('speechSynthesis'in window))return; speechSynthesis.canc
   const u=new SpeechSynthesisUtterance(t.replace(/\./g,', ')); u.lang=speechLang; if(voice)u.voice=voice; u.rate=.92; speechSynthesis.speak(u); }
 
 /* hosted pronunciation audio — pre-generate one clip per ▶ cue with Piper, named:
-     audio/<language>/<lesson_id>_<page>_<key>.<ext>   e.g. audio/esperanto/001_1_1.opus
+     audio/<language>/<lesson_id>_<page>_<key>.<ext>      e.g. audio/esperanto/001_1_1.opus
+     audio/english/<pack>/<lesson_id>_<page>_<key>.<ext>  e.g. audio/english/ad/001_1_1.opus
    Play the file if it exists; otherwise fall back to the browser's speech synth. */
 const AUDIO_DIR='audio', AUDIO_EXT='opus';   // swap EXT to 'mp3' if you upload MP3s instead
-function audioUrl(lang, lessonId, pageNum, key){ return `${AUDIO_DIR}/${String(lang).toLowerCase()}/${lessonId}_${pageNum}_${key}.${AUDIO_EXT}`; }
+function audioUrl(lang, lessonId, pageNum, key){
+  const dir = lang==='English' ? `${AUDIO_DIR}/english/${engCode(curSet)}` : `${AUDIO_DIR}/${String(lang).toLowerCase()}`;
+  return `${dir}/${lessonId}_${pageNum}_${key}.${AUDIO_EXT}`;
+}
 let curAudio=null;
 function playClip(url, fallbackText){
   if('speechSynthesis'in window) speechSynthesis.cancel();
@@ -250,36 +264,37 @@ function moonPhase(d){
 }
 const MOON=moonPhase();
 
-async function loadLang(lang){
-  if(cache[lang]!==undefined) return cache[lang];
+async function loadLessons(lang, set){
+  const key = lang==='English' ? lang+'|'+set : lang;       // English caches per pack
+  if(cache[key]!==undefined) return cache[key];
   let all=[];
-  for(const t of TIERS){
-    try{ const r=await fetch(lessonUrl(lang,t),{cache:'no-store'});
+  for(const t of tiersFor(lang)){
+    try{ const r=await fetch(lessonUrl(lang,set,t),{cache:'no-store'});
       if(r.ok){ const arr=await r.json(); (arr||[]).forEach(L=>L._tier=t); all=all.concat(arr); } }catch(e){}
   }
-  if(!all.length && SAMPLE[lang]) all = SAMPLE[lang].map(L=>Object.assign({_tier:1},L));
-  cache[lang]= all.length? all : null;
-  return cache[lang];
+  if(!all.length && lang!=='English' && SAMPLE[lang]) all = SAMPLE[lang].map(L=>Object.assign({_tier:1},L));
+  cache[key]= all.length? all : null;
+  return cache[key];
 }
 
 /* ---------- lesson dropdown (single select, tier-grouped) ---------- */
 function renderLessonSelect(){
-  const groups={}, order=[];
-  LESSONS.forEach((L,i)=>{ if(tierSet(L._tier)!==curSet) return;   // limit the list to the chosen set
+  const eng=isEng(), groups={}, order=[];
+  LESSONS.forEach((L,i)=>{ if(!eng && tierSet(L._tier)!==curSet) return;   // foreign: limit to the set; English: the pack IS the set
     if(!groups[L._tier]){groups[L._tier]=[]; order.push(L._tier);} groups[L._tier].push(i); });
   lessonSel.innerHTML = order.sort((a,b)=>a-b).map(t=>{
     const opts=groups[t].map(i=>`<option value="${i}"${i===li?' selected':''}>${esc(optLabel(LESSONS[i]))}</option>`).join('');
     return `<optgroup label="Tier ${t}">${opts}</optgroup>`;
   }).join('');
 }
-/* the set (pack) selector — only offer sets that actually have lessons */
+/* the set/pack selector — English lists every pack; foreign lists the sets present in the data */
 function renderSetSelect(){
-  const present=SETS.filter(s=>LESSONS.some(L=>tierSet(L._tier)===s));
-  if(!present.includes(curSet)) curSet=present[0]||"Core";
+  const present = isEng() ? setsFor('English') : SETS.filter(s=>LESSONS.some(L=>tierSet(L._tier)===s));
+  if(!present.includes(curSet)) curSet=present[0]||(isEng()?'Adept':'Core');
   setSel.innerHTML=present.map(s=>`<option value="${s}"${s===curSet?' selected':''}>${s}</option>`).join('');
 }
-function firstLessonInSet(s){ for(let i=0;i<LESSONS.length;i++) if(tierSet(LESSONS[i]._tier)===s) return i; return 0; }
-function syncSetToLesson(){ curSet=tierSet(LESSONS[li]._tier); setSel.value=curSet; }
+function firstLessonInSet(s){ if(isEng()) return 0; for(let i=0;i<LESSONS.length;i++) if(tierSet(LESSONS[i]._tier)===s) return i; return 0; }
+function syncSetToLesson(){ if(isEng()){ setSel.value=curSet; return; } curSet=tierSet(LESSONS[li]._tier); setSel.value=curSet; }
 function updateSetLabel(){ setLbl.textContent=(langSel.value==='English')?'Pack':'Set'; }  // English packs aren't Core/Pareto sets
 
 /* ---------- the window ---------- */
@@ -370,25 +385,43 @@ segFor.addEventListener('click',()=>setLoc('foreign'));
 segEng.addEventListener('click',()=>setLoc('english'));
 
 /* ---------- selection ---------- */
-function setURL(){ const p=new URLSearchParams(); p.set('lang',langSel.value); if(LESSONS[li]) p.set('lesson',LESSONS[li].lesson_id); history.replaceState(null,'','?'+p.toString()); }
+function setURL(){ const p=new URLSearchParams(); p.set('lang',langSel.value); p.set('set',curSet); if(LESSONS[li]) p.set('lesson',LESSONS[li].lesson_id); history.replaceState(null,'','?'+p.toString()); }
+function notPublished(label){ return `<div class="state"><span class="ic">◈</span>${esc(label)} lessons aren't published yet — check back as packs ship.</div>`; }
 
-async function selectLang(lang, wantLesson){
+async function selectLang(lang, wantLesson, wantSet){
   speechLang=SPEECH_LANG[lang]||'en-US'; pickVoice(); updateSetLabel();
   stage.innerHTML=`<div class="state"><span class="ic">◴</span>Loading ${esc(lang)} lessons…</div>`; lessonSel.innerHTML=''; setSel.innerHTML='';
-  const data=await loadLang(lang);
+  const sets=setsFor(lang);
+  curSet = (wantSet && sets.includes(wantSet)) ? wantSet : sets[0];   // English: a pack; foreign: 'Core' (set ignored on load)
+  const data=await loadLessons(lang, curSet);
   if(langSel.value!==lang) return;
-  if(!data || !data.length){ stage.innerHTML=`<div class="state"><span class="ic">◈</span>${esc(lang)} lessons aren't published yet — check back as packs ship.</div>`; updateToggle(); return; }
-  LESSONS=data; pi=0; loc='foreign';
+  LESSONS = data || [];                                 // set before renderSetSelect (foreign derives its sets from the tiers)
+  renderSetSelect();
+  if(!LESSONS.length){ stage.innerHTML=notPublished(lang+(isEng(lang)?' '+curSet:'')); lessonSel.innerHTML=''; updateToggle(); return; }
+  pi=0; loc='foreign';
   const want = wantLesson ? LESSONS.findIndex(L=>L.lesson_id===wantLesson) : -1;
-  if(want>=0){ li=want; curSet=tierSet(LESSONS[want]._tier); } else { curSet="Core"; }
-  renderSetSelect();                                   // normalises curSet to an available set
-  if(want<0) li=firstLessonInSet(curSet);              // start at the first lesson of the set
+  if(want>=0){ li=want; if(!isEng(lang)) curSet=tierSet(LESSONS[want]._tier); } else { li=firstLessonInSet(curSet); }
+  setSel.value=curSet;
+  renderLessonSelect(); renderScreen(); setURL();
+}
+
+/* changing the set: English reloads the pack's folder; foreign just refilters the loaded data */
+async function selectSet(){
+  curSet=setSel.value; pi=0; loc='foreign';
+  if(isEng()){
+    stage.innerHTML=`<div class="state"><span class="ic">◴</span>Loading English ${esc(curSet)} lessons…</div>`; lessonSel.innerHTML='';
+    const data=await loadLessons('English', curSet);
+    if(setSel.value!==curSet) return;
+    LESSONS = data || [];
+    if(!LESSONS.length){ stage.innerHTML=notPublished('English '+curSet); lessonSel.innerHTML=''; updateToggle(); return; }
+    li=0;
+  } else { li=firstLessonInSet(curSet); }
   renderLessonSelect(); renderScreen(); setURL();
 }
 
 langSel.innerHTML=LANGS.map(l=>`<option value="${l}">${l}</option>`).join('');
 langSel.addEventListener('change',()=>selectLang(langSel.value));
-setSel.addEventListener('change',()=>{ curSet=setSel.value; pi=0; loc='foreign'; li=firstLessonInSet(curSet); renderLessonSelect(); renderScreen(); setURL(); });
+setSel.addEventListener('change',selectSet);
 lessonSel.addEventListener('change',()=>{ li=+lessonSel.value; pi=0; loc='foreign'; renderScreen(); setURL(); });
 window.addEventListener('resize',fit);
 document.addEventListener('keydown',e=>{ const p=$('prev'),n=$('next'); if(e.key==='ArrowLeft'&&p)p.click(); if(e.key==='ArrowRight'&&n)n.click(); });
@@ -396,7 +429,7 @@ document.addEventListener('keydown',e=>{ const p=$('prev'),n=$('next'); if(e.key
 /* init — honour ?lang= (from resources) and optional ?lesson= */
 const q=new URLSearchParams(location.search);
 const qL=q.get('lang'); if(qL && LANGS.includes(qL)) langSel.value=qL;
-selectLang(langSel.value, q.get('lesson'));
+selectLang(langSel.value, q.get('lesson'), q.get('set'));
 </script>
 </body>
 </html>
