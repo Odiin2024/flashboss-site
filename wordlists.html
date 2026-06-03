@@ -143,6 +143,7 @@ select:focus, .btn:focus{outline:1px solid var(--accent);}
 .def{display:grid; grid-template-columns:minmax(96px,max-content) 1fr; gap:4px 18px; align-items:baseline; padding:8px 0; border-bottom:1px dotted var(--rule);}
 .def:last-child{border-bottom:0;}
 .def .dw{font-weight:700; color:var(--ink);}
+.def .dw .sa{display:none;}   /* syn/ant ride the printed card's front face only */
 .def .dd{color:var(--dim); font-size:10px; line-height:1.55;}
 .defs.hide-trans .def{cursor:pointer;}
 .defs.hide-trans .def .dd{visibility:hidden;}
@@ -170,11 +171,15 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
   .word .w{border-right:1px dashed #000; font-weight:700; font-size:12pt;}
   .word .t{font-size:10.5pt;}
   .words.hide-trans .word .t{visibility:hidden;}  /* Translations off -> blank fold face, word-only test cards */
-  /* English definition packs print as a plain dictionary list (definitions are too long to fold into cards) */
-  .defs{display:block;}
-  .def{display:grid; grid-template-columns:minmax(80px,max-content) 1fr; gap:2px 12px; align-items:baseline; padding:4px 0; border-bottom:1px solid #ccc; break-inside:avoid; color:#000;}
-  .def .dw{font-weight:700; color:#000; font-size:11pt;}
-  .def .dd{color:#000; font-size:9pt;}
+  /* English packs print as fold cards: FRONT = big word + small (syn : ant); BACK = small 2-line definition.
+     A different font on each face; ~15 cards/page. Cut the rows out, fold along the dashed centre. */
+  .defs{display:block; border-top:1px solid #000; border-left:1px solid #000; border-right:1px solid #000;}
+  .def{display:grid; grid-template-columns:1fr 1fr; gap:0; min-height:0.62in; padding:0; border-bottom:1px solid #000; break-inside:avoid; color:#000;}
+  .def .dw{font-family:Georgia,'Times New Roman',serif; font-size:17pt; font-weight:700; color:#000; border-right:1px dashed #000;
+    padding:6px 8px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:3px;}
+  .def .dw .sa{display:block; font-family:'Helvetica Neue',Arial,sans-serif; font-weight:400; font-size:8pt; color:#333;}
+  .def .dd{font-family:'Helvetica Neue',Arial,sans-serif; font-size:8.5pt; line-height:1.25; color:#000;
+    display:flex; align-items:center; padding:6px 10px;}
   .defs.hide-trans .def .dd{visibility:hidden;}
 }
 </style>
@@ -312,9 +317,14 @@ function humanize(slug){
   if(!slug) return '';
   return slug.replace(/^cluster\d+_\d+_?/,'').replace(/_/g,' ').replace(/\b\w/g,c=>c.toUpperCase()).trim() || slug;
 }
+function asList(v){ return Array.isArray(v)?v.join(', '):String(v==null?'':v); }
+function synOf(c){ if(c.syn!=null)return asList(c.syn); if(c.synonyms!=null)return asList(c.synonyms); const m=/syn[:\s]\s*([^|]+)/i.exec(c.Notes||''); return m?m[1].trim():''; }
+function antOf(c){ if(c.ant!=null)return asList(c.ant); if(c.antonyms!=null)return asList(c.antonyms); const m=/ant[:\s]\s*([^|]+)/i.exec(c.Notes||''); return m?m[1].trim():''; }
 function normCards(cluster){
-  // {TargetWord,Translation} (foreign packs) or {TargetWord,definition} (English packs)
-  return (cluster.cards||[]).map(c=>[c.TargetWord, c.Translation!=null?c.Translation:(c.definition!=null?c.definition:'')]);
+  // foreign: {TargetWord,Translation}; English: {TargetWord,definition[,syn,ant]}
+  return (cluster.cards||[]).map(c=>({ w:c.TargetWord,
+    t: c.definition!=null?c.definition:(c.Translation!=null?c.Translation:''),
+    syn:synOf(c), ant:antOf(c) }));
 }
 
 async function loadSet(lang,set){
@@ -407,8 +417,11 @@ function renderSelected(){
     const c=data.clusters[i]; if(!c) return;
     const words=normCards(c);
     const rows = defMode
-      ? words.map(([w,t])=>`<div class="def"><span class="dw">${esc(w)}</span><span class="dd">${esc(t)}</span></div>`).join('')
-      : words.map(([w,t])=>`<div class="word"><span class="w">${esc(w)}</span><span class="t">${esc(t)}</span></div>`).join('');
+      ? words.map(({w,t,syn,ant})=>{
+          const sa = (syn&&ant) ? `(${esc(syn)} : ${esc(ant)})` : (syn?`(${esc(syn)})`:(ant?`(${esc(ant)})`:''));
+          return `<div class="def"><span class="dw">${esc(w)}${sa?`<span class="sa">${sa}</span>`:''}</span><span class="dd">${esc(t)}</span></div>`;
+        }).join('')
+      : words.map(({w,t})=>`<div class="word"><span class="w">${esc(w)}</span><span class="t">${esc(t)}</span></div>`).join('');
     html+=`<div class="cluster solo"><div class="chead">
       <span class="tnum">TIER ${esc(c.tier)}</span>
       <span class="cname">${esc(clusterTitle(c))}</span>
