@@ -425,7 +425,7 @@ document.addEventListener('keydown',e=>{ const p=$('prev'),n=$('next'); if(e.key
 
 /* init — honour ?lang= (from resources) and optional ?lesson= */
 const q=new URLSearchParams(location.search);
-const qL=q.get('lang'); if(qL && LANGS.includes(qL)) langSel.value=qL;
+const qL=q.get('lang'); langSel.value = (qL && LANGS.includes(qL)) ? qL : 'English';   // no ?lang -> default landing is English Adept
 selectLang(langSel.value, q.get('lesson'), q.get('set'));
 </script>
 </body>

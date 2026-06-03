@@ -471,7 +471,7 @@ howModal.addEventListener('click',e=>{ if(e.target===howModal) howModal.hidden=t
 fillPacks();
 const q=new URLSearchParams(location.search);
 const qL=q.get('lang'), qS=q.get('set'), qC=q.get('cluster');
-if(qL && LANGS.includes(qL)) packSel.value=qL;
+packSel.value = (qL && LANGS.includes(qL)) ? qL : 'English';   // no ?lang -> default landing is English Adept
 fillSets(); updateSetLabel();
 if(qS && setsFor(packSel.value).includes(qS)) setSel.value=qS;
 loadAndRender({clusterId:qC});
