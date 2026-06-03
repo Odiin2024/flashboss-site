@@ -138,6 +138,17 @@ select:focus, .btn:focus{outline:1px solid var(--accent);}
 .words.hide-trans .word .t{visibility:hidden;}
 .words.hide-trans .word.revealed .t{visibility:visible; color:var(--accent);}
 
+/* English definition packs: word + a wrapping definition, single column (not a flashcard grid) */
+.defs{display:flex; flex-direction:column;}
+.def{display:grid; grid-template-columns:minmax(96px,max-content) 1fr; gap:4px 18px; align-items:baseline; padding:8px 0; border-bottom:1px dotted var(--rule);}
+.def:last-child{border-bottom:0;}
+.def .dw{font-weight:700; color:var(--ink);}
+.def .dd{color:var(--dim); font-size:10px; line-height:1.55;}
+.defs.hide-trans .def{cursor:pointer;}
+.defs.hide-trans .def .dd{visibility:hidden;}
+.defs.hide-trans .def.revealed .dd{visibility:visible; color:var(--accent);}
+@media(max-width:620px){.def{grid-template-columns:1fr; gap:2px;}}
+
 footer{border-top:1px solid var(--line); padding:26px 22px; font-size:12px; color:var(--faint); text-align:center; letter-spacing:.04em; margin-top:40px;}
 footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{color:var(--ink);}
 
@@ -159,6 +170,12 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
   .word .w{border-right:1px dashed #000; font-weight:700; font-size:12pt;}
   .word .t{font-size:10.5pt;}
   .words.hide-trans .word .t{visibility:hidden;}  /* Translations off -> blank fold face, word-only test cards */
+  /* English definition packs print as a plain dictionary list (definitions are too long to fold into cards) */
+  .defs{display:block;}
+  .def{display:grid; grid-template-columns:minmax(80px,max-content) 1fr; gap:2px 12px; align-items:baseline; padding:4px 0; border-bottom:1px solid #ccc; break-inside:avoid; color:#000;}
+  .def .dw{font-weight:700; color:#000; font-size:11pt;}
+  .def .dd{color:#000; font-size:9pt;}
+  .defs.hide-trans .def .dd{visibility:hidden;}
 }
 </style>
 </head>
@@ -229,14 +246,20 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
    Uses the FINAL.json (relative-numbered) per-set files. Numbering
    is never displayed, so GLOBAL.json would also work unchanged.
    ============================================================ */
+const LANGS = ["Italian","German","Spanish","Esperanto","English"];
+const SETS  = ["Core","Pareto 1","Pareto 2"];
+/* English ships as named packs, each in its own folder, with a single CORE_FINAL.json */
+const ENGLISH_PACKS = [["Adept","ad"],["Advance","adv"],["German Roots","gr"],["Norman Roots","nr"],["Latin Roots","lr"]];
+function setsFor(lang){ return lang==='English' ? ENGLISH_PACKS.map(p=>p[0]) : SETS; }
 function dataUrl(lang, set){
+  if(lang==='English'){
+    const code=(ENGLISH_PACKS.find(p=>p[0]===set)||[])[1] || set.toLowerCase();
+    return `data/english/${code}/CORE_FINAL.json`;
+  }
   const L = lang.toLowerCase();
   const S = set.toUpperCase().replace(/\s+/g,'');     // "Pareto 1" -> "PARETO1"
   return `data/${L}/${S}_FINAL.json`;
 }
-
-const LANGS = ["Italian","German","Spanish","Esperanto"];
-const SETS  = ["Core","Pareto 1","Pareto 2"];
 
 /* Preview-only fallback (used when fetch fails, e.g. in the artifact preview).
    Safe to delete once the real JSON is hosted. Real German Core + Italian greetings. */
@@ -290,8 +313,8 @@ function humanize(slug){
   return slug.replace(/^cluster\d+_\d+_?/,'').replace(/_/g,' ').replace(/\b\w/g,c=>c.toUpperCase()).trim() || slug;
 }
 function normCards(cluster){
-  // accept {cards:[{TargetWord,Translation}]} (real FINAL.json)
-  return (cluster.cards||[]).map(c=>[c.TargetWord, c.Translation]);
+  // {TargetWord,Translation} (foreign packs) or {TargetWord,definition} (English packs)
+  return (cluster.cards||[]).map(c=>[c.TargetWord, c.Translation!=null?c.Translation:(c.definition!=null?c.definition:'')]);
 }
 
 async function loadSet(lang,set){
@@ -309,7 +332,10 @@ async function loadSet(lang,set){
 
 function fillPacks(){
   packSel.innerHTML = LANGS.map(l=>`<option value="${l}">${l}</option>`).join('');
-  setSel.innerHTML  = SETS.map(s=>`<option value="${s}">${s}</option>`).join('');
+  fillSets();
+}
+function fillSets(){
+  setSel.innerHTML = setsFor(packSel.value).map(s=>`<option value="${s}">${s}</option>`).join('');
 }
 
 function clusterLabel(c){ return humanize(c.slug) || c.cluster_id || 'Cluster'; }
@@ -370,29 +396,32 @@ function renderSelected(){
   const idxs=selectedIdxs();
   setURL(); updateTrigger();
   if(!idxs.length){ view.innerHTML=`<div class="state"><span class="ic">◧</span>Select one or more clusters above to view and print them.</div>`; return; }
+  const defMode = data.clusters.some(c=>(c.cards||[]).some(k=>k.definition!=null));   // English = word + definition
   const totalCards=idxs.reduce((n,i)=>n+(data.clusters[i]?normCards(data.clusters[i]).length:0),0);
-  let html=`<div class="setmeta"><span class="big">${esc(lang)} ${esc(set)}</span>`+
+  const bigLabel = (lang==='English') ? (data.language||set) : (lang+' '+set);
+  let html=`<div class="setmeta"><span class="big">${esc(bigLabel)}</span>`+
     (data.level?`<span>${esc(data.level)}</span>`:'')+(data.total?`<span>${esc(data.total)} words</span>`:'')+
     `<span>${data.clusters.length} clusters</span>`+
     `<span class="sel">${idxs.length} cluster${idxs.length===1?'':'s'} selected · ${totalCards} cards</span></div>`;
   idxs.forEach(i=>{
     const c=data.clusters[i]; if(!c) return;
     const words=normCards(c);
+    const rows = defMode
+      ? words.map(([w,t])=>`<div class="def"><span class="dw">${esc(w)}</span><span class="dd">${esc(t)}</span></div>`).join('')
+      : words.map(([w,t])=>`<div class="word"><span class="w">${esc(w)}</span><span class="t">${esc(t)}</span></div>`).join('');
     html+=`<div class="cluster solo"><div class="chead">
       <span class="tnum">TIER ${esc(c.tier)}</span>
       <span class="cname">${esc(clusterTitle(c))}</span>
       <span class="ccount">${words.length} words</span></div>
-      <div class="words${showTrans?'':' hide-trans'}">`+
-      words.map(([w,t])=>`<div class="word"><span class="w">${esc(w)}</span><span class="t">${esc(t)}</span></div>`).join('')+
-      `</div></div>`;
+      <div class="${defMode?'defs':'words'}${showTrans?'':' hide-trans'}">`+rows+`</div></div>`;
   });
   view.innerHTML=html;
-  view.querySelectorAll('.words.hide-trans .word').forEach(row=>row.addEventListener('click',()=>row.classList.toggle('revealed')));
+  view.querySelectorAll('.hide-trans .word, .hide-trans .def').forEach(row=>row.addEventListener('click',()=>row.classList.toggle('revealed')));
 }
 
 /* controls */
 function updateSetLabel(){ setLbl.textContent=(packSel.value==='English')?'Pack':'Set'; }  // English packs aren't Core/Pareto sets
-packSel.addEventListener('change',()=>{ updateSetLabel(); loadAndRender(); });
+packSel.addEventListener('change',()=>{ updateSetLabel(); fillSets(); loadAndRender(); });
 setSel.addEventListener('change',()=>loadAndRender());
 clusterSel.addEventListener('change',()=>{
   // First-touch exception: while the auto-default (e.g. 1-1) is active, the first pick replaces it
@@ -425,8 +454,8 @@ fillPacks();
 const q=new URLSearchParams(location.search);
 const qL=q.get('lang'), qS=q.get('set'), qC=q.get('cluster');
 if(qL && LANGS.includes(qL)) packSel.value=qL;
-updateSetLabel();
-if(qS && SETS.includes(qS)) setSel.value=qS;
+fillSets(); updateSetLabel();
+if(qS && setsFor(packSel.value).includes(qS)) setSel.value=qS;
 loadAndRender({clusterId:qC});
 </script>
 </body>

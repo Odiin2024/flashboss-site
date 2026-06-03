@@ -1,0 +1,758 @@
+{
+  "language": "Latin Roots",
+  "set": "Core",
+  "total": 500,
+  "offset": 0,
+  "clusters": [
+    {
+      "cluster_id": "T1-C1", "tier": 1, "slug": "cluster1_1_prefixes_direction_position",
+      "cards": [
+        {"n": 1, "TargetWord": "ex-", "definition": "'out of' or 'away from,' indicating movement outward or removal", "TriggerLesson": "001"},
+        {"n": 2, "TargetWord": "in-", "definition": "'into' or 'not,' indicating either inward movement or negation"},
+        {"n": 3, "TargetWord": "con-", "definition": "'with' or 'together,' indicating union, completeness, or joint action"},
+        {"n": 4, "TargetWord": "trans-", "definition": "'across' or 'beyond,' indicating movement from one side or state to another"},
+        {"n": 5, "TargetWord": "sub-", "definition": "'under' or 'below,' indicating lower position, secondary rank, or concealment"},
+        {"n": 6, "TargetWord": "super-", "definition": "'above' or 'beyond,' indicating higher position, excess, or superiority"},
+        {"n": 7, "TargetWord": "inter-", "definition": "'between' or 'among,' indicating position in the middle or mutual action"},
+        {"n": 8, "TargetWord": "pre-", "definition": "'before,' indicating priority in time, position, or rank"},
+        {"n": 9, "TargetWord": "post-", "definition": "'after' or 'behind,' indicating later occurrence in time or secondary position"},
+        {"n": 10, "TargetWord": "pro-", "definition": "'forward' or 'in favor of,' indicating forward motion, advocacy, or substitution"}
+      ]
+    },
+    {
+      "cluster_id": "T1-C2", "tier": 1, "slug": "cluster1_2_prefixes_opposition_reversal",
+      "cards": [
+        {"n": 11, "TargetWord": "re-", "definition": "'back' or 'again,' indicating return, repetition, or restoration to a former state"},
+        {"n": 12, "TargetWord": "de-", "definition": "'down,' 'away from,' or 'completely,' indicating removal, descent, or reversal"},
+        {"n": 13, "TargetWord": "dis-", "definition": "'apart,' 'away,' or 'not,' indicating separation, negation, or reversal"},
+        {"n": 14, "TargetWord": "ob-", "definition": "'against' or 'in the way of,' indicating resistance, confrontation, or blockage"},
+        {"n": 15, "TargetWord": "per-", "definition": "'through' or 'thoroughly,' indicating passage, completion, or doing something to the fullest extent"},
+        {"n": 16, "TargetWord": "circum-", "definition": "'around,' indicating movement or position encircling something"},
+        {"n": 17, "TargetWord": "contra-", "definition": "'against' or 'opposite,' indicating opposition, contrast, or counteraction"},
+        {"n": 18, "TargetWord": "ab-", "definition": "'away from' or 'off,' indicating separation, departure, or removal"},
+        {"n": 19, "TargetWord": "ad-", "definition": "'toward' or 'to,' indicating approach, addition, or nearness"},
+        {"n": 20, "TargetWord": "se-", "definition": "'apart' or 'aside,' indicating withdrawal, division, or setting something away"}
+      ]
+    },
+    {
+      "cluster_id": "T1-C3", "tier": 1, "slug": "cluster1_3_root_port_carry",
+      "cards": [
+        {"n": 21, "TargetWord": "transport", "definition": "to carry something from one place to another", "TriggerLesson": "002"},
+        {"n": 22, "TargetWord": "export", "definition": "to send goods or services to another country for sale", "TriggerLesson": "NR"},
+        {"n": 23, "TargetWord": "import", "definition": "to bring goods or services into a country from abroad", "TriggerLesson": "NR"},
+        {"n": 24, "TargetWord": "portable", "definition": "light or small enough to be easily carried or moved", "TriggerLesson": "NR"},
+        {"n": 25, "TargetWord": "deport", "definition": "to expel a person from a country, typically by official order", "TriggerLesson": "NR"},
+        {"n": 26, "TargetWord": "report", "definition": "to give a spoken or written account of something observed or investigated", "TriggerLesson": "NR"},
+        {"n": 27, "TargetWord": "support", "definition": "to bear the weight of something, or to give assistance or approval", "TriggerLesson": "NR"},
+        {"n": 28, "TargetWord": "portfolio", "definition": "a case for carrying documents, or a collection of work or investments", "TriggerLesson": "NR"},
+        {"n": 29, "TargetWord": "porter", "definition": "a person employed to carry luggage or goods", "TriggerLesson": "NR"},
+        {"n": 30, "TargetWord": "purport", "definition": "to claim or appear to be something, often falsely", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T1-C4", "tier": 1, "slug": "cluster1_4_root_dict_say",
+      "cards": [
+        {"n": 31, "TargetWord": "predict", "definition": "to say in advance what will happen", "TriggerLesson": "NR"},
+        {"n": 32, "TargetWord": "dictate", "definition": "to say aloud for someone else to write down, or to give authoritative orders", "TriggerLesson": "NR"},
+        {"n": 33, "TargetWord": "contradict", "definition": "to assert the opposite of what someone has said", "TriggerLesson": "NR"},
+        {"n": 34, "TargetWord": "verdict", "definition": "a decision reached by a jury or judge in a trial", "TriggerLesson": "NR"},
+        {"n": 35, "TargetWord": "edict", "definition": "an official order or decree issued by a person in authority", "TriggerLesson": "NR"},
+        {"n": 36, "TargetWord": "jurisdiction", "definition": "the official power to make legal decisions, or the territory where that power applies", "TriggerLesson": "NR"},
+        {"n": 37, "TargetWord": "diction", "definition": "the choice and use of words in speech or writing", "TriggerLesson": "NR"},
+        {"n": 38, "TargetWord": "indict", "definition": "to formally charge someone with a serious crime", "TriggerLesson": "NR"},
+        {"n": 39, "TargetWord": "benediction", "definition": "a spoken blessing, especially at the end of a religious service", "TriggerLesson": "NR"},
+        {"n": 40, "TargetWord": "malediction", "definition": "a curse or expression of ill will spoken against someone", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T1-C5", "tier": 1, "slug": "cluster1_5_root_scrib_write",
+      "cards": [
+        {"n": 41, "TargetWord": "describe", "definition": "to give a detailed account of something in words", "TriggerLesson": "NR"},
+        {"n": 42, "TargetWord": "prescribe", "definition": "to recommend or authorize the use of a medicine or treatment", "TriggerLesson": "NR"},
+        {"n": 43, "TargetWord": "transcribe", "definition": "to put spoken words or music into written or printed form", "TriggerLesson": "NR"},
+        {"n": 44, "TargetWord": "inscribe", "definition": "to write or carve words on a surface, especially as a lasting record", "TriggerLesson": "NR"},
+        {"n": 45, "TargetWord": "subscribe", "definition": "to arrange to receive something regularly, or to express agreement with an idea", "TriggerLesson": "NR"},
+        {"n": 46, "TargetWord": "manuscript", "definition": "a book, document, or piece of music written by hand or typed before printing", "TriggerLesson": "NR"},
+        {"n": 47, "TargetWord": "scripture", "definition": "the sacred writings of a religion", "TriggerLesson": "NR"},
+        {"n": 48, "TargetWord": "conscript", "definition": "to enlist someone compulsorily into military service", "TriggerLesson": "NR"},
+        {"n": 49, "TargetWord": "postscript", "definition": "an additional remark added at the end of a letter after the signature"},
+        {"n": 50, "TargetWord": "proscribe", "definition": "to officially forbid or condemn something", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T1-C6", "tier": 1, "slug": "cluster1_6_root_duc_lead",
+      "cards": [
+        {"n": 51, "TargetWord": "produce", "definition": "to make, create, or bring into existence", "TriggerLesson": "NR"},
+        {"n": 52, "TargetWord": "reduce", "definition": "to make something smaller in size, amount, or degree", "TriggerLesson": "NR"},
+        {"n": 53, "TargetWord": "induce", "definition": "to bring about or persuade someone to do something", "TriggerLesson": "NR"},
+        {"n": 54, "TargetWord": "deduce", "definition": "to reach a conclusion by reasoning from evidence or general principles", "TriggerLesson": "NR"},
+        {"n": 55, "TargetWord": "conduct", "definition": "to organize and carry out an activity, or to direct a group", "TriggerLesson": "NR"},
+        {"n": 56, "TargetWord": "educate", "definition": "to teach or train someone, especially through formal instruction", "TriggerLesson": "NR"},
+        {"n": 57, "TargetWord": "aqueduct", "definition": "a bridge-like structure built to carry water across a valley or gap"},
+        {"n": 58, "TargetWord": "abduct", "definition": "to take someone away by force or deception", "TriggerLesson": "NR"},
+        {"n": 59, "TargetWord": "seduce", "definition": "to lead someone astray or entice them into unwise behavior", "TriggerLesson": "NR"},
+        {"n": 60, "TargetWord": "introduce", "definition": "to bring something into use for the first time, or to present one person to another", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T1-C7", "tier": 1, "slug": "cluster1_7_root_vert_turn",
+      "cards": [
+        {"n": 61, "TargetWord": "convert", "definition": "to change something from one form, purpose, or system to another", "TriggerLesson": "NR"},
+        {"n": 62, "TargetWord": "revert", "definition": "to return to a previous state, condition, or practice", "TriggerLesson": "NR"},
+        {"n": 63, "TargetWord": "divert", "definition": "to cause something to change course or direction", "TriggerLesson": "NR"},
+        {"n": 64, "TargetWord": "invert", "definition": "to turn something upside down or reverse its position or order"},
+        {"n": 65, "TargetWord": "subvert", "definition": "to undermine the power or authority of an established system", "TriggerLesson": "NR"},
+        {"n": 66, "TargetWord": "avert", "definition": "to turn away or prevent something undesirable from happening", "TriggerLesson": "NR"},
+        {"n": 67, "TargetWord": "diverse", "definition": "showing a great deal of variety or difference", "TriggerLesson": "NR"},
+        {"n": 68, "TargetWord": "universe", "definition": "all existing matter, space, and energy considered as a whole", "TriggerLesson": "NR"},
+        {"n": 69, "TargetWord": "adverse", "definition": "preventing success or development; harmful or unfavorable", "TriggerLesson": "NR"},
+        {"n": 70, "TargetWord": "controversy", "definition": "a prolonged public disagreement or heated discussion", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T1-C8", "tier": 1, "slug": "cluster1_8_root_mit_send",
+      "cards": [
+        {"n": 71, "TargetWord": "transmit", "definition": "to send or pass something from one place or person to another", "TriggerLesson": "NR"},
+        {"n": 72, "TargetWord": "submit", "definition": "to present something for consideration, or to yield to authority", "TriggerLesson": "NR"},
+        {"n": 73, "TargetWord": "remit", "definition": "to send a payment, or to cancel a debt or punishment", "TriggerLesson": "NR"},
+        {"n": 74, "TargetWord": "omit", "definition": "to leave out or exclude something, whether by accident or design", "TriggerLesson": "NR"},
+        {"n": 75, "TargetWord": "emit", "definition": "to send out or give off light, heat, gas, or sound", "TriggerLesson": "NR"},
+        {"n": 76, "TargetWord": "commit", "definition": "to pledge or devote oneself to something, or to carry out a wrongful act", "TriggerLesson": "NR"},
+        {"n": 77, "TargetWord": "permit", "definition": "to give authorization or consent for something to happen", "TriggerLesson": "NR"},
+        {"n": 78, "TargetWord": "mission", "definition": "an important assignment or task, especially one involving travel or purpose", "TriggerLesson": "NR"},
+        {"n": 79, "TargetWord": "commission", "definition": "an official order to produce something, or a group given formal authority", "TriggerLesson": "NR"},
+        {"n": 80, "TargetWord": "admission", "definition": "the act of being allowed to enter a place, or a confession of truth", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T1-C9", "tier": 1, "slug": "cluster1_9_suffixes_nouns",
+      "cards": [
+        {"n": 81, "TargetWord": "-ion", "definition": "Turns verbs into nouns, indicating the act, process, or result of an action"},
+        {"n": 82, "TargetWord": "-ment", "definition": "Turns verbs into nouns, indicating the result, means, or state of an action"},
+        {"n": 83, "TargetWord": "-ance", "definition": "Nouns that indicate a state, quality, or ongoing process"},
+        {"n": 84, "TargetWord": "-ity", "definition": "Nouns that indicate a quality, state, or condition"},
+        {"n": 85, "TargetWord": "-or", "definition": "Nouns that indicate a person or thing performing an action"},
+        {"n": 86, "TargetWord": "-ory", "definition": "Nouns indicating a place for an action, or adjectives meaning 'relating to'"}
+      ]
+    },
+    {
+      "cluster_id": "T1-C10", "tier": 1, "slug": "cluster1_10_suffixes_adjectives_verbs",
+      "cards": [
+        {"n": 87, "TargetWord": "-able", "definition": "'capable of being' or 'worthy of,' turning verbs into adjectives"},
+        {"n": 88, "TargetWord": "-ive", "definition": "'tending to' or 'having the quality of,' forming adjectives and some nouns"},
+        {"n": 89, "TargetWord": "-al", "definition": "'relating to' or 'of the nature of,' forming adjectives from nouns"},
+        {"n": 90, "TargetWord": "-ous", "definition": "'full of' or 'having the quality of,' forming adjectives"},
+        {"n": 91, "TargetWord": "-ate", "definition": "Verbs meaning 'to make or cause,' and adjectives meaning 'having or possessing'"},
+        {"n": 92, "TargetWord": "-ify", "definition": "'to make' or 'to cause to become,' forming verbs from adjectives or nouns"},
+        {"n": 93, "TargetWord": "-escent", "definition": "'becoming' or 'beginning to,' indicating a process of gradual change"}
+      ]
+    },
+    {
+      "cluster_id": "T2-C1", "tier": 2, "slug": "cluster2_1_root_spec_see",
+      "cards": [
+        {"n": 94, "TargetWord": "inspect", "definition": "to look at something closely and carefully, especially to assess its condition", "TriggerLesson": "003"},
+        {"n": 95, "TargetWord": "respect", "definition": "a feeling of admiration for someone based on their qualities or achievements", "TriggerLesson": "NR"},
+        {"n": 96, "TargetWord": "spectacle", "definition": "a visually striking performance, event, or display", "TriggerLesson": "NR"},
+        {"n": 97, "TargetWord": "speculate", "definition": "to form a theory without firm evidence, or to invest in risky ventures", "TriggerLesson": "NR"},
+        {"n": 98, "TargetWord": "conspicuous", "definition": "clearly visible or attracting notice, often unwelcomely", "TriggerLesson": "NR"},
+        {"n": 99, "TargetWord": "perspicacious", "definition": "having a keen ability to notice and understand things that are not obvious"},
+        {"n": 100, "TargetWord": "aspect", "definition": "a particular part, feature, or way of thinking about something", "TriggerLesson": "NR"},
+        {"n": 101, "TargetWord": "prospect", "definition": "the possibility of something happening, or a person regarded as a potential customer or candidate", "TriggerLesson": "NR"},
+        {"n": 102, "TargetWord": "suspect", "definition": "to believe something to be true without certain proof, or a person believed guilty", "TriggerLesson": "NR"},
+        {"n": 103, "TargetWord": "circumspect", "definition": "wary and unwilling to take risks; carefully considering all circumstances"}
+      ]
+    },
+    {
+      "cluster_id": "T2-C2", "tier": 2, "slug": "cluster2_2_root_fract_break",
+      "cards": [
+        {"n": 104, "TargetWord": "fracture", "definition": "a crack or break, especially in a bone or hard material", "TriggerLesson": "NR"},
+        {"n": 105, "TargetWord": "fragment", "definition": "a small piece broken off from something larger", "TriggerLesson": "NR"},
+        {"n": 106, "TargetWord": "fraction", "definition": "a small or tiny part of something, or a number expressed as parts of a whole", "TriggerLesson": "NR"},
+        {"n": 107, "TargetWord": "fragile", "definition": "easily broken, damaged, or destroyed; delicate", "TriggerLesson": "NR"},
+        {"n": 108, "TargetWord": "infraction", "definition": "a violation or breach of a law, rule, or agreement", "TriggerLesson": "NR"},
+        {"n": 109, "TargetWord": "refract", "definition": "to bend or deflect light, sound, or heat as it passes from one medium to another"},
+        {"n": 110, "TargetWord": "diffraction", "definition": "the bending of waves around obstacles or through narrow openings"},
+        {"n": 111, "TargetWord": "infringe", "definition": "to violate or act against a law, right, or agreement", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T2-C3", "tier": 2, "slug": "cluster2_3_root_pon_place",
+      "cards": [
+        {"n": 112, "TargetWord": "compose", "definition": "to create a work of music, writing, or art by arranging elements together", "TriggerLesson": "NR"},
+        {"n": 113, "TargetWord": "depose", "definition": "to remove someone from power, especially a ruler or official", "TriggerLesson": "NR"},
+        {"n": 114, "TargetWord": "expose", "definition": "to uncover or make visible something that was hidden or protected", "TriggerLesson": "NR"},
+        {"n": 115, "TargetWord": "impose", "definition": "to force something to be accepted or to establish authority over someone", "TriggerLesson": "NR"},
+        {"n": 116, "TargetWord": "oppose", "definition": "to actively resist or disagree with a plan, policy, or person", "TriggerLesson": "NR"},
+        {"n": 117, "TargetWord": "propose", "definition": "to put forward a plan or suggestion for consideration by others", "TriggerLesson": "NR"},
+        {"n": 118, "TargetWord": "transpose", "definition": "to cause two or more things to change places, or to shift something to a new key"},
+        {"n": 119, "TargetWord": "deposit", "definition": "to place something in a specific location for safekeeping or as a payment", "TriggerLesson": "NR"},
+        {"n": 120, "TargetWord": "postpone", "definition": "to arrange for something to take place at a later time than originally planned", "TriggerLesson": "NR"},
+        {"n": 121, "TargetWord": "component", "definition": "a part or element of a larger whole, especially of a machine or system", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T2-C4", "tier": 2, "slug": "cluster2_4_root_grad_step",
+      "cards": [
+        {"n": 122, "TargetWord": "progress", "definition": "forward or onward movement toward a destination or goal", "TriggerLesson": "NR"},
+        {"n": 123, "TargetWord": "regress", "definition": "to return to a less developed or earlier state", "TriggerLesson": "NR"},
+        {"n": 124, "TargetWord": "digress", "definition": "to temporarily leave the main subject in speech or writing"},
+        {"n": 125, "TargetWord": "transgress", "definition": "to go beyond the bounds of a moral principle, law, or accepted standard", "TriggerLesson": "NR"},
+        {"n": 126, "TargetWord": "aggressive", "definition": "ready to attack or confront; pursuing goals with forceful determination", "TriggerLesson": "NR"},
+        {"n": 127, "TargetWord": "gradual", "definition": "happening or developing slowly over a period of time", "TriggerLesson": "NR"},
+        {"n": 128, "TargetWord": "gradient", "definition": "the rate of change in a slope, temperature, or other physical quantity", "TriggerLesson": "NR"},
+        {"n": 129, "TargetWord": "degrade", "definition": "to lower in quality, status, or condition; to treat with disrespect", "TriggerLesson": "NR"},
+        {"n": 130, "TargetWord": "congress", "definition": "a formal meeting or assembly of representatives, or a national legislative body", "TriggerLesson": "NR"},
+        {"n": 131, "TargetWord": "egress", "definition": "the act of going out, or an exit or way out of a place"}
+      ]
+    },
+    {
+      "cluster_id": "T2-C5", "tier": 2, "slug": "cluster2_5_root_tract_pull",
+      "cards": [
+        {"n": 132, "TargetWord": "attract", "definition": "to draw someone's attention or interest, or to pull something closer by force", "TriggerLesson": "NR"},
+        {"n": 133, "TargetWord": "distract", "definition": "to draw someone's attention away from what they were doing or thinking", "TriggerLesson": "NR"},
+        {"n": 134, "TargetWord": "extract", "definition": "to remove or take out something, often with effort or by force", "TriggerLesson": "NR"},
+        {"n": 135, "TargetWord": "retract", "definition": "to withdraw a statement or opinion, or to draw something back in", "TriggerLesson": "NR"},
+        {"n": 136, "TargetWord": "contract", "definition": "a binding legal agreement, or to decrease in size or become shorter", "TriggerLesson": "NR"},
+        {"n": 137, "TargetWord": "abstract", "definition": "existing as an idea rather than a physical thing, or a summary of a text", "TriggerLesson": "NR"},
+        {"n": 138, "TargetWord": "protract", "definition": "to extend the duration of something, often beyond what is desirable"},
+        {"n": 139, "TargetWord": "subtract", "definition": "to take away a number or amount from another"},
+        {"n": 140, "TargetWord": "tractable", "definition": "easy to control, manage, or influence; willing to be led", "TriggerLesson": "NR"},
+        {"n": 141, "TargetWord": "intractable", "definition": "hard to control, manage, or resolve; stubbornly resistant"}
+      ]
+    },
+    {
+      "cluster_id": "T2-C6", "tier": 2, "slug": "cluster2_6_root_cede_go",
+      "cards": [
+        {"n": 142, "TargetWord": "precede", "definition": "to come before something in time, order, or position", "TriggerLesson": "NR"},
+        {"n": 143, "TargetWord": "recede", "definition": "to move back or withdraw from a previous position", "TriggerLesson": "NR"},
+        {"n": 144, "TargetWord": "concede", "definition": "to admit that something is true, or to surrender a right or position", "TriggerLesson": "NR"},
+        {"n": 145, "TargetWord": "exceed", "definition": "to go beyond what is expected, permitted, or thought possible", "TriggerLesson": "NR"},
+        {"n": 146, "TargetWord": "proceed", "definition": "to begin or continue a course of action", "TriggerLesson": "NR"},
+        {"n": 147, "TargetWord": "accede", "definition": "to agree to a demand or request, or to assume a position of authority", "TriggerLesson": "NR"},
+        {"n": 148, "TargetWord": "secede", "definition": "to formally withdraw from membership of a political federation or alliance"},
+        {"n": 149, "TargetWord": "access", "definition": "the means or right to approach, enter, or use something", "TriggerLesson": "NR"},
+        {"n": 150, "TargetWord": "excess", "definition": "an amount that is more than necessary, permitted, or desirable", "TriggerLesson": "NR"},
+        {"n": 151, "TargetWord": "recess", "definition": "a temporary pause in proceedings, or a small space set back in a wall", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T2-C7", "tier": 2, "slug": "cluster2_7_root_rupt_break",
+      "cards": [
+        {"n": 152, "TargetWord": "erupt", "definition": "to burst out suddenly and violently, as a volcano or conflict", "TriggerLesson": "NR"},
+        {"n": 153, "TargetWord": "disrupt", "definition": "to interrupt the normal course or unity of something", "TriggerLesson": "NR"},
+        {"n": 154, "TargetWord": "interrupt", "definition": "to stop something by breaking in, or to break the continuity of an action", "TriggerLesson": "NR"},
+        {"n": 155, "TargetWord": "corrupt", "definition": "willing to act dishonestly for personal gain, or to degrade or contaminate", "TriggerLesson": "NR"},
+        {"n": 156, "TargetWord": "abrupt", "definition": "sudden and unexpected, or brief and unfriendly in manner", "TriggerLesson": "NR"},
+        {"n": 157, "TargetWord": "bankrupt", "definition": "declared legally unable to pay one's debts", "TriggerLesson": "NR"},
+        {"n": 158, "TargetWord": "rupture", "definition": "a sudden breaking or bursting, especially of an organ, tissue, or relationship", "TriggerLesson": "NR"},
+        {"n": 159, "TargetWord": "incorruptible", "definition": "too honest to be influenced by bribery; not subject to decay"}
+      ]
+    },
+    {
+      "cluster_id": "T2-C8", "tier": 2, "slug": "cluster2_8_root_pend_hang",
+      "cards": [
+        {"n": 160, "TargetWord": "depend", "definition": "to rely on someone or something for support or survival", "TriggerLesson": "NR"},
+        {"n": 161, "TargetWord": "suspend", "definition": "to temporarily stop something, or to hang something from above", "TriggerLesson": "NR"},
+        {"n": 162, "TargetWord": "append", "definition": "to add something as an attachment or supplement to the end of a document", "TriggerLesson": "NR"},
+        {"n": 163, "TargetWord": "expend", "definition": "to spend or use up a resource, especially money, time, or energy", "TriggerLesson": "NR"},
+        {"n": 164, "TargetWord": "compensate", "definition": "to give something in recognition of loss, suffering, or effort; to offset a disadvantage", "TriggerLesson": "NR"},
+        {"n": 165, "TargetWord": "pension", "definition": "a regular payment made to a retired person from a fund to which they contributed", "TriggerLesson": "NR"},
+        {"n": 166, "TargetWord": "impending", "definition": "about to happen, especially something threatening or significant", "TriggerLesson": "NR"},
+        {"n": 167, "TargetWord": "dispense", "definition": "to distribute or provide a service or product, or to do away with something", "TriggerLesson": "NR"},
+        {"n": 168, "TargetWord": "propensity", "definition": "a natural tendency or inclination to behave in a particular way"},
+        {"n": 169, "TargetWord": "indispensable", "definition": "absolutely necessary; too important to be done without", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T2-C9", "tier": 2, "slug": "cluster2_9_root_vide_see",
+      "cards": [
+        {"n": 170, "TargetWord": "provide", "definition": "to make something available for use; to supply what is needed", "TriggerLesson": "NR"},
+        {"n": 171, "TargetWord": "divide", "definition": "to separate something into parts, or to cause disagreement between groups", "TriggerLesson": "NR"},
+        {"n": 172, "TargetWord": "evident", "definition": "clearly seen or understood; obvious", "TriggerLesson": "NR"},
+        {"n": 173, "TargetWord": "supervise", "definition": "to observe and direct the work or performance of others", "TriggerLesson": "NR"},
+        {"n": 174, "TargetWord": "revise", "definition": "to examine and alter something in order to improve or correct it", "TriggerLesson": "NR"},
+        {"n": 175, "TargetWord": "vision", "definition": "the ability to see, or a mental image of what the future could be", "TriggerLesson": "NR"},
+        {"n": 176, "TargetWord": "visual", "definition": "relating to seeing or to what can be seen"},
+        {"n": 177, "TargetWord": "advisor", "definition": "a person who gives guidance or recommendations, especially in a professional capacity", "TriggerLesson": "NR"},
+        {"n": 178, "TargetWord": "invisible", "definition": "unable to be seen, either by nature or by concealment"},
+        {"n": 179, "TargetWord": "visa", "definition": "an official endorsement on a passport permitting entry to a country", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T2-C10", "tier": 2, "slug": "cluster2_10_root_loqu_speak",
+      "cards": [
+        {"n": 180, "TargetWord": "eloquent", "definition": "fluent, persuasive, and moving in speech or writing", "TriggerLesson": "NR"},
+        {"n": 181, "TargetWord": "loquacious", "definition": "tending to talk a great deal; extremely talkative"},
+        {"n": 182, "TargetWord": "colloquial", "definition": "used in ordinary or informal conversation rather than formal speech or writing", "TriggerLesson": "NR"},
+        {"n": 183, "TargetWord": "circumlocution", "definition": "the use of unnecessarily many words to express an idea; talking around a point"},
+        {"n": 184, "TargetWord": "elocution", "definition": "the skill of clear and expressive speech, especially of pronunciation and delivery"},
+        {"n": 185, "TargetWord": "soliloquy", "definition": "a speech in a play in which a character speaks their thoughts aloud while alone", "TriggerLesson": "NR"},
+        {"n": 186, "TargetWord": "ventriloquist", "definition": "a performer who makes their voice appear to come from a puppet or other source"},
+        {"n": 187, "TargetWord": "interlocutor", "definition": "a person who takes part in a dialogue or conversation", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T3-C1", "tier": 3, "slug": "cluster3_1_root_plic_fold",
+      "cards": [
+        {"n": 188, "TargetWord": "explicit", "definition": "stated clearly and in detail, leaving nothing to implication or guesswork", "TriggerLesson": "004"},
+        {"n": 189, "TargetWord": "implicit", "definition": "suggested but not directly expressed; understood without being stated", "TriggerLesson": "NR"},
+        {"n": 190, "TargetWord": "implicate", "definition": "to show someone to be involved in a crime or wrongdoing", "TriggerLesson": "NR"},
+        {"n": 191, "TargetWord": "complicate", "definition": "to make something more difficult or confusing by adding complexity", "TriggerLesson": "NR"},
+        {"n": 192, "TargetWord": "duplicate", "definition": "to make an exact copy of something, or one of two identical items", "TriggerLesson": "NR"},
+        {"n": 193, "TargetWord": "supplicate", "definition": "to ask for something earnestly and humbly, especially from a person in power", "TriggerLesson": "NR"},
+        {"n": 194, "TargetWord": "perplex", "definition": "to cause someone to feel baffled or puzzled by something complicated"},
+        {"n": 195, "TargetWord": "complex", "definition": "consisting of many interconnected parts; not easy to analyse or understand", "TriggerLesson": "NR"},
+        {"n": 196, "TargetWord": "replica", "definition": "an exact copy or reproduction, especially of a work of art", "TriggerLesson": "NR"},
+        {"n": 197, "TargetWord": "accomplice", "definition": "a person who helps another commit a crime or wrongful act", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T3-C2", "tier": 3, "slug": "cluster3_2_root_tend_stretch",
+      "cards": [
+        {"n": 198, "TargetWord": "extend", "definition": "to make something larger in area, scope, or duration", "TriggerLesson": "NR"},
+        {"n": 199, "TargetWord": "intend", "definition": "to have a plan or purpose in mind when doing something", "TriggerLesson": "NR"},
+        {"n": 200, "TargetWord": "contend", "definition": "to struggle or compete with others, or to assert something as a position", "TriggerLesson": "NR"},
+        {"n": 201, "TargetWord": "pretend", "definition": "to act as if something is the case when it is not", "TriggerLesson": "NR"},
+        {"n": 202, "TargetWord": "tension", "definition": "the state of being stretched tight, or mental and emotional strain", "TriggerLesson": "NR"},
+        {"n": 203, "TargetWord": "attention", "definition": "the act of directing the mind carefully toward something", "TriggerLesson": "NR"},
+        {"n": 204, "TargetWord": "tenacious", "definition": "holding firmly to a position, purpose, or object; persistent"},
+        {"n": 205, "TargetWord": "intense", "definition": "of extreme force, degree, or strength; deeply felt", "TriggerLesson": "NR"},
+        {"n": 206, "TargetWord": "ostentation", "definition": "a showy display intended to impress others with one's wealth or importance"},
+        {"n": 207, "TargetWord": "contentious", "definition": "causing or likely to cause heated disagreement", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T3-C3", "tier": 3, "slug": "cluster3_3_root_voc_voice",
+      "cards": [
+        {"n": 208, "TargetWord": "vocal", "definition": "relating to the voice, or expressing opinions freely and openly", "TriggerLesson": "NR"},
+        {"n": 209, "TargetWord": "advocate", "definition": "a person who publicly supports a cause, or to speak in favour of something", "TriggerLesson": "NR"},
+        {"n": 210, "TargetWord": "invoke", "definition": "to call on a higher power, authority, or principle for support or justification", "TriggerLesson": "NR"},
+        {"n": 211, "TargetWord": "evoke", "definition": "to bring a feeling, memory, or image strongly to mind", "TriggerLesson": "NR"},
+        {"n": 212, "TargetWord": "provoke", "definition": "to deliberately stimulate a strong reaction, especially anger or hostility", "TriggerLesson": "NR"},
+        {"n": 213, "TargetWord": "revoke", "definition": "to officially cancel or withdraw a decision, licence, or right", "TriggerLesson": "NR"},
+        {"n": 214, "TargetWord": "equivocal", "definition": "open to more than one interpretation; deliberately ambiguous"},
+        {"n": 215, "TargetWord": "convocation", "definition": "a large formal assembly of people, especially for a ceremony or meeting", "TriggerLesson": "NR"},
+        {"n": 216, "TargetWord": "vocation", "definition": "a strong feeling of suitability for a particular occupation or way of life", "TriggerLesson": "NR"},
+        {"n": 217, "TargetWord": "vocabulary", "definition": "the body of words known and used by a person or within a language", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T3-C4", "tier": 3, "slug": "cluster3_4_root_capit_head",
+      "cards": [
+        {"n": 218, "TargetWord": "capital", "definition": "the most important city of a country, or wealth used to generate more wealth", "TriggerLesson": "NR"},
+        {"n": 219, "TargetWord": "captain", "definition": "the person in command of a ship, aircraft, or team", "TriggerLesson": "NR"},
+        {"n": 220, "TargetWord": "capture", "definition": "to take someone or something into one's possession by force or skill", "TriggerLesson": "NR"},
+        {"n": 221, "TargetWord": "capable", "definition": "having the ability or qualities necessary to do something effectively", "TriggerLesson": "NR"},
+        {"n": 222, "TargetWord": "precipitate", "definition": "to cause something to happen suddenly and often prematurely"},
+        {"n": 223, "TargetWord": "decapitate", "definition": "to cut off the head of a person or thing"},
+        {"n": 224, "TargetWord": "recapitulate", "definition": "to summarize and restate the main points of something"},
+        {"n": 225, "TargetWord": "chapter", "definition": "a main division of a book, or a distinct period or sequence of events", "TriggerLesson": "NR"},
+        {"n": 226, "TargetWord": "per capita", "definition": "for each person; in relation to the number of people in a population"}
+      ]
+    },
+    {
+      "cluster_id": "T3-C5", "tier": 3, "slug": "cluster3_5_root_fid_faith",
+      "cards": [
+        {"n": 227, "TargetWord": "confident", "definition": "feeling certain about one's own abilities or the truth of something", "TriggerLesson": "NR"},
+        {"n": 228, "TargetWord": "fidelity", "definition": "faithfulness to a person, cause, or belief; accuracy in reproduction", "TriggerLesson": "NR"},
+        {"n": 229, "TargetWord": "infidel", "definition": "a person who does not believe in a particular religion, especially the dominant one", "TriggerLesson": "005"},
+        {"n": 230, "TargetWord": "fiduciary", "definition": "involving trust, especially regarding the management of money or property on behalf of another"},
+        {"n": 231, "TargetWord": "perfidious", "definition": "deliberately deceitful and untrustworthy; treacherous"},
+        {"n": 232, "TargetWord": "bona fide", "definition": "genuine and sincere; carried out in good faith without intention to deceive"},
+        {"n": 233, "TargetWord": "affidavit", "definition": "a written statement confirmed by oath or affirmation, used as evidence in court", "TriggerLesson": "NR"},
+        {"n": 234, "TargetWord": "diffident", "definition": "modest and shy, lacking confidence in one's own abilities or worth"},
+        {"n": 235, "TargetWord": "perfidy", "definition": "deliberate betrayal of trust; treachery"}
+      ]
+    },
+    {
+      "cluster_id": "T3-C6", "tier": 3, "slug": "cluster3_6_root_temp_time",
+      "cards": [
+        {"n": 236, "TargetWord": "temporary", "definition": "lasting for a limited period of time; not permanent", "TriggerLesson": "NR"},
+        {"n": 237, "TargetWord": "contemporary", "definition": "living or occurring at the same time, or belonging to the present period", "TriggerLesson": "NR"},
+        {"n": 238, "TargetWord": "temporal", "definition": "relating to time, or relating to worldly rather than spiritual matters"},
+        {"n": 239, "TargetWord": "extemporaneous", "definition": "spoken or performed without preparation; improvised"},
+        {"n": 240, "TargetWord": "temperament", "definition": "a person's characteristic way of thinking, behaving, and reacting emotionally", "TriggerLesson": "NR"},
+        {"n": 241, "TargetWord": "temper", "definition": "a person's state of mind in terms of calmness or anger, or to moderate by mixing", "TriggerLesson": "NR"},
+        {"n": 242, "TargetWord": "contretemps", "definition": "an unexpected and unfortunate occurrence; a minor clash or embarrassing disagreement", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T3-C7", "tier": 3, "slug": "cluster3_7_root_greg_flock",
+      "cards": [
+        {"n": 243, "TargetWord": "congregate", "definition": "to gather together in a crowd or group", "TriggerLesson": "NR"},
+        {"n": 244, "TargetWord": "segregate", "definition": "to set apart from the rest; to separate people or things by group or category", "TriggerLesson": "NR"},
+        {"n": 245, "TargetWord": "aggregate", "definition": "a whole formed by combining several elements; to collect into a single total", "TriggerLesson": "NR"},
+        {"n": 246, "TargetWord": "egregious", "definition": "outstandingly bad; shockingly terrible"},
+        {"n": 247, "TargetWord": "gregarious", "definition": "fond of company; enjoying and seeking the company of others"},
+        {"n": 248, "TargetWord": "disaggregate", "definition": "to separate something into its component parts for analysis"},
+        {"n": 249, "TargetWord": "congregation", "definition": "a group of people assembled for religious worship, or any gathered body", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T3-C8", "tier": 3, "slug": "cluster3_8_root_solv_loosen",
+      "cards": [
+        {"n": 250, "TargetWord": "solve", "definition": "to find an answer to or explanation for a problem or mystery", "TriggerLesson": "NR"},
+        {"n": 251, "TargetWord": "resolve", "definition": "to settle a problem or dispute decisively, or firm determination to do something", "TriggerLesson": "NR"},
+        {"n": 252, "TargetWord": "dissolve", "definition": "to cause a solid to merge into a liquid, or to formally end an institution or agreement", "TriggerLesson": "NR"},
+        {"n": 253, "TargetWord": "absolute", "definition": "complete and total; not qualified or diminished in any way", "TriggerLesson": "NR"},
+        {"n": 254, "TargetWord": "absolution", "definition": "formal release from guilt, obligation, or punishment", "TriggerLesson": "NR"},
+        {"n": 255, "TargetWord": "solvent", "definition": "having enough money to pay all debts, or a liquid that can dissolve other substances", "TriggerLesson": "NR"},
+        {"n": 256, "TargetWord": "dissolute", "definition": "lacking moral restraint; indulging excessively in sensual pleasures"},
+        {"n": 257, "TargetWord": "resolution", "definition": "a firm decision to do something, or the solving of a problem or dispute", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T3-C9", "tier": 3, "slug": "cluster3_9_suffixes_diminutives_degree",
+      "cards": [
+        {"n": 258, "TargetWord": "-ule", "definition": "Nouns indicating something very small; a diminutive"},
+        {"n": 259, "TargetWord": "-cle", "definition": "Nouns indicating something small or a result of an action"},
+        {"n": 260, "TargetWord": "-ulous", "definition": "Adjectives meaning 'full of' or 'tending to,' often with an intensifying or diminutive shade"},
+        {"n": 261, "TargetWord": "-escence", "definition": "Abstract nouns indicating a process of becoming or a state of gradual transition"},
+        {"n": 262, "TargetWord": "-itude", "definition": "Abstract nouns indicating a quality or state of being"}
+      ]
+    },
+    {
+      "cluster_id": "T3-C10", "tier": 3, "slug": "cluster3_10_root_corp_body",
+      "cards": [
+        {"n": 263, "TargetWord": "corpse", "definition": "the dead body of a human being", "TriggerLesson": "NR"},
+        {"n": 264, "TargetWord": "corporation", "definition": "a large company or group recognized in law as a single entity", "TriggerLesson": "NR"},
+        {"n": 265, "TargetWord": "corporal", "definition": "relating to the physical body rather than the mind or spirit", "TriggerLesson": "NR"},
+        {"n": 266, "TargetWord": "incorporate", "definition": "to include something as part of a whole, or to form into a legal corporation", "TriggerLesson": "NR"},
+        {"n": 267, "TargetWord": "corpus", "definition": "a large collection of written texts used for linguistic analysis, or the main body of a work"},
+        {"n": 268, "TargetWord": "corpulent", "definition": "having a large, heavy body; excessively fat"},
+        {"n": 269, "TargetWord": "corsage", "definition": "a small bouquet of flowers worn on the bodice of a dress or on the wrist", "TriggerLesson": "NR"},
+        {"n": 270, "TargetWord": "corporeal", "definition": "having a physical body; tangible and material rather than spiritual"}
+      ]
+    },
+    {
+      "cluster_id": "T4-C1", "tier": 4, "slug": "cluster4_1_root_sequ_follow",
+      "cards": [
+        {"n": 271, "TargetWord": "sequence", "definition": "a particular order in which related things follow each other", "TriggerLesson": "006"},
+        {"n": 272, "TargetWord": "consequence", "definition": "a result or effect of an action or condition, especially one that is unwelcome", "TriggerLesson": "NR"},
+        {"n": 273, "TargetWord": "subsequent", "definition": "coming after something in time or order", "TriggerLesson": "NR"},
+        {"n": 274, "TargetWord": "prosecute", "definition": "to institute legal proceedings against someone, or to continue a course of action", "TriggerLesson": "NR"},
+        {"n": 275, "TargetWord": "persecute", "definition": "to subject someone to cruel or unfair treatment, especially because of their beliefs or identity", "TriggerLesson": "NR"},
+        {"n": 276, "TargetWord": "execute", "definition": "to carry out a plan or order, or to put a condemned person to death", "TriggerLesson": "NR"},
+        {"n": 277, "TargetWord": "non sequitur", "definition": "a conclusion or statement that does not logically follow from what preceded it"},
+        {"n": 278, "TargetWord": "obsequious", "definition": "excessively obedient or attentive to someone in a way that is servile"},
+        {"n": 279, "TargetWord": "sect", "definition": "a small religious or political group that has separated from a larger body", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T4-C2", "tier": 4, "slug": "cluster4_2_root_tang_touch",
+      "cards": [
+        {"n": 280, "TargetWord": "tangent", "definition": "a line that touches a curve at a single point, or a completely different line of thought"},
+        {"n": 281, "TargetWord": "tangible", "definition": "clear and definite enough to be perceived by touch or understood with certainty", "TriggerLesson": "NR"},
+        {"n": 282, "TargetWord": "contact", "definition": "the state of physical touching, or communication or a meeting between people", "TriggerLesson": "NR"},
+        {"n": 283, "TargetWord": "contagious", "definition": "spread from one person or organism to another by direct or indirect contact", "TriggerLesson": "NR"},
+        {"n": 284, "TargetWord": "contiguous", "definition": "sharing a common border; touching or connected throughout in an unbroken sequence"},
+        {"n": 285, "TargetWord": "intact", "definition": "not damaged or impaired in any way; complete and whole", "TriggerLesson": "NR"},
+        {"n": 286, "TargetWord": "tact", "definition": "a keen sense of what to say or do to avoid giving offence; diplomatic sensitivity", "TriggerLesson": "NR"},
+        {"n": 287, "TargetWord": "contaminate", "definition": "to make something impure or unsuitable by contact with a polluting substance", "TriggerLesson": "NR"},
+        {"n": 288, "TargetWord": "tactile", "definition": "relating to the sense of touch; perceptible by touch"}
+      ]
+    },
+    {
+      "cluster_id": "T4-C3", "tier": 4, "slug": "cluster4_3_root_sent_feel",
+      "cards": [
+        {"n": 289, "TargetWord": "sense", "definition": "a faculty by which the body perceives the external world, or a feeling that something is the case", "TriggerLesson": "NR"},
+        {"n": 290, "TargetWord": "sentiment", "definition": "a view or attitude based on feeling rather than reason, or a refined sensitivity", "TriggerLesson": "NR"},
+        {"n": 291, "TargetWord": "consent", "definition": "to give permission or agree to something, or the permission itself", "TriggerLesson": "NR"},
+        {"n": 292, "TargetWord": "resent", "definition": "to feel bitter indignation at having been treated unfairly", "TriggerLesson": "NR"},
+        {"n": 293, "TargetWord": "dissent", "definition": "the holding or expression of opinions that differ from those officially held", "TriggerLesson": "NR"},
+        {"n": 294, "TargetWord": "sentence", "definition": "a set of words forming a complete statement, or a punishment assigned by a court", "TriggerLesson": "NR"},
+        {"n": 295, "TargetWord": "sensitive", "definition": "quick to detect or respond to slight changes, signals, or influences", "TriggerLesson": "NR"},
+        {"n": 296, "TargetWord": "presentiment", "definition": "a feeling that something unpleasant is about to happen; a premonition"},
+        {"n": 297, "TargetWord": "sentimental", "definition": "prompted by feelings of tenderness or nostalgia, sometimes excessively so", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T4-C4", "tier": 4, "slug": "cluster4_4_root_cred_believe",
+      "cards": [
+        {"n": 298, "TargetWord": "credible", "definition": "able to be believed; convincing and trustworthy", "TriggerLesson": "NR"},
+        {"n": 299, "TargetWord": "credit", "definition": "trust in a person's ability to pay in the future, or acknowledgment of merit", "TriggerLesson": "NR"},
+        {"n": 300, "TargetWord": "incredible", "definition": "impossible or very difficult to believe, or extraordinarily great", "TriggerLesson": "NR"},
+        {"n": 301, "TargetWord": "credentials", "definition": "qualifications or achievements that indicate a person's suitability for something", "TriggerLesson": "NR"},
+        {"n": 302, "TargetWord": "creed", "definition": "a set of beliefs or principles that guide a person's actions or worldview", "TriggerLesson": "NR"},
+        {"n": 303, "TargetWord": "discredit", "definition": "to harm the reputation of someone or something, or to cause disbelief in", "TriggerLesson": "NR"},
+        {"n": 304, "TargetWord": "accreditation", "definition": "the formal recognition that a person or institution meets required standards", "TriggerLesson": "NR"},
+        {"n": 305, "TargetWord": "miscreant", "definition": "a person whose behaviour is criminal or morally wrong", "TriggerLesson": "NR"},
+        {"n": 306, "TargetWord": "credo", "definition": "a statement of the beliefs or aims that guide someone's actions"}
+      ]
+    },
+    {
+      "cluster_id": "T4-C5", "tier": 4, "slug": "cluster4_5_root_terr_land",
+      "cards": [
+        {"n": 307, "TargetWord": "territory", "definition": "an area of land under the jurisdiction of a ruler, state, or defined entity", "TriggerLesson": "NR"},
+        {"n": 308, "TargetWord": "terrain", "definition": "a stretch of land with regard to its physical features", "TriggerLesson": "NR"},
+        {"n": 309, "TargetWord": "terrestrial", "definition": "relating to the earth or to land as opposed to water or air"},
+        {"n": 310, "TargetWord": "terrace", "definition": "a level area cut into a slope, or a paved outdoor area adjoining a building", "TriggerLesson": "NR"},
+        {"n": 311, "TargetWord": "inter", "definition": "to place a dead body in the earth; to bury", "TriggerLesson": "NR"},
+        {"n": 312, "TargetWord": "subterranean", "definition": "existing, occurring, or done beneath the surface of the earth"},
+        {"n": 313, "TargetWord": "Mediterranean", "definition": "the large inland sea between Europe and Africa, or the region surrounding it", "TriggerLesson": "NR"},
+        {"n": 314, "TargetWord": "extraterrestrial", "definition": "originating or existing outside the earth or its atmosphere"}
+      ]
+    },
+    {
+      "cluster_id": "T4-C6", "tier": 4, "slug": "cluster4_6_root_mort_death",
+      "cards": [
+        {"n": 315, "TargetWord": "mortal", "definition": "subject to death; causing or liable to cause death", "TriggerLesson": "NR"},
+        {"n": 316, "TargetWord": "immortal", "definition": "living forever; never dying or decaying; remembered for all time", "TriggerLesson": "NR"},
+        {"n": 317, "TargetWord": "mortgage", "definition": "a legal agreement by which a bank lends money for property purchase, secured against the property itself", "TriggerLesson": "NR"},
+        {"n": 318, "TargetWord": "mortify", "definition": "to cause someone to feel extremely embarrassed or ashamed", "TriggerLesson": "NR"},
+        {"n": 319, "TargetWord": "moribund", "definition": "at the point of death, or in terminal decline; no longer effective"},
+        {"n": 320, "TargetWord": "morbid", "definition": "having an unhealthy interest in unpleasant subjects, especially death and disease"},
+        {"n": 321, "TargetWord": "mortuary", "definition": "a room or building where dead bodies are kept before burial or cremation"},
+        {"n": 322, "TargetWord": "post-mortem", "definition": "an examination of a dead body to determine the cause of death, or an analysis after the fact"}
+      ]
+    },
+    {
+      "cluster_id": "T4-C7", "tier": 4, "slug": "cluster4_7_root_leg_read",
+      "cards": [
+        {"n": 323, "TargetWord": "legal", "definition": "relating to the law, or permitted by law", "TriggerLesson": "NR"},
+        {"n": 324, "TargetWord": "legislate", "definition": "to make or enact laws", "TriggerLesson": "NR"},
+        {"n": 325, "TargetWord": "elect", "definition": "to choose someone to hold a position by voting", "TriggerLesson": "NR"},
+        {"n": 326, "TargetWord": "select", "definition": "to carefully choose from a number of alternatives", "TriggerLesson": "NR"},
+        {"n": 327, "TargetWord": "collect", "definition": "to bring or gather things together from various sources", "TriggerLesson": "NR"},
+        {"n": 328, "TargetWord": "neglect", "definition": "to fail to care for properly, or the state of being uncared for", "TriggerLesson": "NR"},
+        {"n": 329, "TargetWord": "eligible", "definition": "having the right to do or obtain something; meeting the required conditions", "TriggerLesson": "NR"},
+        {"n": 330, "TargetWord": "lecture", "definition": "an educational talk to an audience, or a long serious reprimand", "TriggerLesson": "NR"},
+        {"n": 331, "TargetWord": "legend", "definition": "a traditional story sometimes popularly regarded as historical, or someone famous and admired", "TriggerLesson": "NR"},
+        {"n": 332, "TargetWord": "diligent", "definition": "showing careful and persistent effort in one's work or duties", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T4-C8", "tier": 4, "slug": "cluster4_8_root_junct_join",
+      "cards": [
+        {"n": 333, "TargetWord": "junction", "definition": "a point where two or more things are joined, or a place where roads or railway lines meet", "TriggerLesson": "NR"},
+        {"n": 334, "TargetWord": "conjunction", "definition": "a combination of events, or a word used to connect clauses or sentences", "TriggerLesson": "NR"},
+        {"n": 335, "TargetWord": "injunction", "definition": "an authoritative order, especially a court order requiring someone to do or refrain from something", "TriggerLesson": "NR"},
+        {"n": 336, "TargetWord": "adjunct", "definition": "a thing added to something else as a supplement rather than an essential part", "TriggerLesson": "NR"},
+        {"n": 337, "TargetWord": "subjugate", "definition": "to bring under control or domination, especially by force", "TriggerLesson": "NR"},
+        {"n": 338, "TargetWord": "conjugate", "definition": "to give the different forms of a verb, or to join together"},
+        {"n": 339, "TargetWord": "jugular", "definition": "relating to the throat or neck, especially the large veins carrying blood from the head"},
+        {"n": 340, "TargetWord": "rejoinder", "definition": "a sharp or witty reply, especially in argument", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T4-C9", "tier": 4, "slug": "cluster4_9_root_flect_bend",
+      "cards": [
+        {"n": 341, "TargetWord": "reflect", "definition": "to throw back light, heat, or sound, or to think deeply and carefully about something", "TriggerLesson": "NR"},
+        {"n": 342, "TargetWord": "deflect", "definition": "to cause something to change direction, or to turn aside criticism or blame", "TriggerLesson": "NR"},
+        {"n": 343, "TargetWord": "inflect", "definition": "to change the form of a word to express tense, number, or mood, or to vary pitch in speech"},
+        {"n": 344, "TargetWord": "genuflect", "definition": "to lower the body briefly by bending one knee to the ground, especially in worship"},
+        {"n": 345, "TargetWord": "flexible", "definition": "capable of bending easily without breaking, or willing to change and adapt", "TriggerLesson": "NR"},
+        {"n": 346, "TargetWord": "reflex", "definition": "an automatic, involuntary response to a stimulus", "TriggerLesson": "NR"},
+        {"n": 347, "TargetWord": "inflexible", "definition": "unwilling or unable to change or be adapted; rigid", "TriggerLesson": "NR"},
+        {"n": 348, "TargetWord": "circumflex", "definition": "a diacritical mark (ˆ) placed over a vowel, or bending around something"}
+      ]
+    },
+    {
+      "cluster_id": "T4-C10", "tier": 4, "slug": "cluster4_10_root_vit_life",
+      "cards": [
+        {"n": 349, "TargetWord": "vital", "definition": "absolutely necessary or essential; relating to life", "TriggerLesson": "NR"},
+        {"n": 350, "TargetWord": "vitality", "definition": "the state of being strong, active, and full of energy; the power to live and grow", "TriggerLesson": "NR"},
+        {"n": 351, "TargetWord": "vivid", "definition": "producing powerful feelings or clear images in the mind; intensely deep or bright in colour", "TriggerLesson": "NR"},
+        {"n": 352, "TargetWord": "vivacious", "definition": "attractively lively and animated in personality"},
+        {"n": 353, "TargetWord": "revive", "definition": "to restore to life, consciousness, or strength after decline", "TriggerLesson": "NR"},
+        {"n": 354, "TargetWord": "survive", "definition": "to continue to live or exist in spite of danger, hardship, or adversity", "TriggerLesson": "NR"},
+        {"n": 355, "TargetWord": "convivial", "definition": "friendly and lively in atmosphere; enjoying good company and festivity"},
+        {"n": 356, "TargetWord": "vitamin", "definition": "an organic compound essential in small quantities for normal growth and nutrition"},
+        {"n": 357, "TargetWord": "viable", "definition": "capable of working successfully; able to survive or live", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T5-C1", "tier": 5, "slug": "cluster5_1_root_string_bind",
+      "cards": [
+        {"n": 358, "TargetWord": "strict", "definition": "demanding that rules be obeyed; precise and exact", "TriggerLesson": "007"},
+        {"n": 359, "TargetWord": "restrict", "definition": "to put a limit on; to keep under control", "TriggerLesson": "NR"},
+        {"n": 360, "TargetWord": "constrict", "definition": "to make narrower or tighter, especially by encircling pressure", "TriggerLesson": "NR"},
+        {"n": 361, "TargetWord": "stringent", "definition": "of regulations or conditions: strict, precise, and exacting"},
+        {"n": 362, "TargetWord": "astringent", "definition": "causing the contraction of body tissues; sharp or severe in manner"},
+        {"n": 363, "TargetWord": "district", "definition": "an area of a city or country defined for administrative or other purposes", "TriggerLesson": "NR"},
+        {"n": 364, "TargetWord": "strait", "definition": "a narrow passage of water connecting two seas, or a situation of great difficulty", "TriggerLesson": "NR"},
+        {"n": 365, "TargetWord": "stress", "definition": "pressure or tension exerted on a material or person; emphasis placed on a word or point", "TriggerLesson": "NR"},
+        {"n": 366, "TargetWord": "distress", "definition": "extreme anxiety, sorrow, or suffering; a state of danger or urgent need", "TriggerLesson": "NR"},
+        {"n": 367, "TargetWord": "prestige", "definition": "widespread respect and admiration earned through achievement, quality, or status", "TriggerLesson": "NR"},
+        {"n": 368, "TargetWord": "constrain", "definition": "to compel or force someone to follow a particular course of action", "TriggerLesson": "NR"},
+        {"n": 369, "TargetWord": "restrain", "definition": "to hold back from action; to keep under control", "TriggerLesson": "NR"},
+        {"n": 370, "TargetWord": "strain", "definition": "a force tending to pull or stretch something to an extreme degree; a severe demand on resources", "TriggerLesson": "NR"},
+        {"n": 371, "TargetWord": "stringendo", "definition": "a musical direction meaning to play with increasing speed and tension"}
+      ]
+    },
+    {
+      "cluster_id": "T5-C2", "tier": 5, "slug": "cluster5_2_root_vent_come",
+      "cards": [
+        {"n": 372, "TargetWord": "convention", "definition": "a large formal assembly, or an accepted way of behaving or doing things", "TriggerLesson": "NR"},
+        {"n": 373, "TargetWord": "intervention", "definition": "the act of becoming involved in a situation to alter its course or outcome", "TriggerLesson": "NR"},
+        {"n": 374, "TargetWord": "prevention", "definition": "the act of stopping something from happening or arising", "TriggerLesson": "NR"},
+        {"n": 375, "TargetWord": "adventure", "definition": "an unusual, exciting, and potentially hazardous experience or undertaking", "TriggerLesson": "NR"},
+        {"n": 376, "TargetWord": "revenue", "definition": "income generated by a business or government, especially from taxes or investments", "TriggerLesson": "NR"},
+        {"n": 377, "TargetWord": "avenue", "definition": "a broad road or path, or a way of approaching a problem or objective", "TriggerLesson": "NR"},
+        {"n": 378, "TargetWord": "circumvent", "definition": "to find a way around an obstacle, rule, or difficulty"},
+        {"n": 379, "TargetWord": "invent", "definition": "to create or design something that has not existed before", "TriggerLesson": "NR"},
+        {"n": 380, "TargetWord": "supervene", "definition": "to occur as an additional or unexpected development that changes the situation"},
+        {"n": 381, "TargetWord": "contravene", "definition": "to act in violation of a law, rule, or treaty", "TriggerLesson": "NR"},
+        {"n": 382, "TargetWord": "venture", "definition": "a risky or daring undertaking, especially in business", "TriggerLesson": "NR"},
+        {"n": 383, "TargetWord": "event", "definition": "a thing that happens or takes place, especially one of significance", "TriggerLesson": "NR"},
+        {"n": 384, "TargetWord": "convene", "definition": "to come together for a formal meeting or assembly", "TriggerLesson": "NR"},
+        {"n": 385, "TargetWord": "provenance", "definition": "the place of origin or earliest known history of something, especially a work of art", "TriggerLesson": "NR"},
+        {"n": 386, "TargetWord": "souvenir", "definition": "a thing that is kept as a reminder of a place, person, or event", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T5-C3", "tier": 5, "slug": "cluster5_3_root_cap_take",
+      "cards": [
+        {"n": 387, "TargetWord": "receive", "definition": "to be given, presented with, or paid something", "TriggerLesson": "NR"},
+        {"n": 388, "TargetWord": "conceive", "definition": "to form an idea or plan in the mind, or to become pregnant", "TriggerLesson": "NR"},
+        {"n": 389, "TargetWord": "deceive", "definition": "to deliberately cause someone to believe something that is not true", "TriggerLesson": "NR"},
+        {"n": 390, "TargetWord": "perceive", "definition": "to become aware of something through the senses or the mind", "TriggerLesson": "NR"},
+        {"n": 391, "TargetWord": "intercept", "definition": "to stop, catch, or seize something or someone on the way from one place to another", "TriggerLesson": "NR"},
+        {"n": 392, "TargetWord": "anticipate", "definition": "to expect and prepare for something before it happens", "TriggerLesson": "NR"},
+        {"n": 393, "TargetWord": "participate", "definition": "to take part in an activity or event", "TriggerLesson": "NR"},
+        {"n": 394, "TargetWord": "emancipate", "definition": "to set free from legal, social, or political restrictions", "TriggerLesson": "NR"},
+        {"n": 395, "TargetWord": "recuperate", "definition": "to recover from illness, exertion, or loss"},
+        {"n": 396, "TargetWord": "susceptible", "definition": "likely to be influenced or harmed by a particular thing"},
+        {"n": 397, "TargetWord": "precept", "definition": "a general rule intended to regulate behaviour or thought"},
+        {"n": 398, "TargetWord": "inception", "definition": "the establishment or starting point of something"},
+        {"n": 399, "TargetWord": "ceptive", "definition": "relating to or capable of receiving or taking in", "TriggerLesson": "NR"},
+        {"n": 400, "TargetWord": "except", "definition": "not including; other than", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T5-C4", "tier": 5, "slug": "cluster5_4_root_cad_fall",
+      "cards": [
+        {"n": 401, "TargetWord": "accident", "definition": "an unfortunate event that happens unexpectedly and without deliberate cause", "TriggerLesson": "NR"},
+        {"n": 402, "TargetWord": "coincidence", "definition": "a remarkable concurrence of events without apparent causal connection"},
+        {"n": 403, "TargetWord": "occasion", "definition": "a particular event, or the time at which it takes place; a reason or cause", "TriggerLesson": "NR"},
+        {"n": 404, "TargetWord": "decadent", "definition": "characterized by or reflecting moral or cultural decline; luxuriously self-indulgent"},
+        {"n": 405, "TargetWord": "cascade", "definition": "a waterfall, or a succession of events each caused by the preceding one"},
+        {"n": 406, "TargetWord": "casualty", "definition": "a person killed or injured in a war or accident, or something destroyed or badly affected", "TriggerLesson": "NR"},
+        {"n": 407, "TargetWord": "incident", "definition": "an event or occurrence, especially one that is notable, unpleasant, or violent", "TriggerLesson": "NR"},
+        {"n": 408, "TargetWord": "occidental", "definition": "relating to the countries of the West, especially Europe and the Americas"},
+        {"n": 409, "TargetWord": "deciduous", "definition": "of a tree or shrub: shedding its leaves annually"},
+        {"n": 410, "TargetWord": "cadence", "definition": "the rise and fall of the voice in speech, or the closing sequence of notes in a musical phrase", "TriggerLesson": "NR"},
+        {"n": 411, "TargetWord": "case", "definition": "an instance of a situation, or a matter investigated by police or decided in court", "TriggerLesson": "NR"},
+        {"n": 412, "TargetWord": "decay", "definition": "the gradual destruction of something through natural processes, or moral decline", "TriggerLesson": "NR"},
+        {"n": 413, "TargetWord": "recidivism", "definition": "the tendency of a convicted criminal to reoffend"},
+        {"n": 414, "TargetWord": "cadaver", "definition": "a dead human body, especially one intended for medical study"}
+      ]
+    },
+    {
+      "cluster_id": "T5-C5", "tier": 5, "slug": "cluster5_5_root_pel_drive",
+      "cards": [
+        {"n": 415, "TargetWord": "compel", "definition": "to force or oblige someone to do something", "TriggerLesson": "NR"},
+        {"n": 416, "TargetWord": "expel", "definition": "to force someone to leave a place, organization, or country", "TriggerLesson": "NR"},
+        {"n": 417, "TargetWord": "repel", "definition": "to drive back by force, or to cause strong dislike or disgust", "TriggerLesson": "NR"},
+        {"n": 418, "TargetWord": "impel", "definition": "to drive or urge someone to action through strong moral pressure or conviction", "TriggerLesson": "NR"},
+        {"n": 419, "TargetWord": "dispel", "definition": "to make a doubt, feeling, or belief disappear"},
+        {"n": 420, "TargetWord": "compulsion", "definition": "an irresistible urge to behave in a certain way, or the action of forcing compliance", "TriggerLesson": "NR"},
+        {"n": 421, "TargetWord": "repulsion", "definition": "a feeling of intense distaste, or a force that drives two things apart", "TriggerLesson": "NR"},
+        {"n": 422, "TargetWord": "pulse", "definition": "the rhythmic throbbing of arteries as blood is pumped through them, or a single vibration of energy", "TriggerLesson": "NR"},
+        {"n": 423, "TargetWord": "propulsion", "definition": "the action of driving or pushing something forward"},
+        {"n": 424, "TargetWord": "catapult", "definition": "a device for hurling objects, or to hurl or launch something with great force", "TriggerLesson": "NR"},
+        {"n": 425, "TargetWord": "appeal", "definition": "a serious or urgent request, or an application to a higher court to reverse a decision", "TriggerLesson": "NR"},
+        {"n": 426, "TargetWord": "propel", "definition": "to drive or push something forward with force"},
+        {"n": 427, "TargetWord": "expulsion", "definition": "the act of forcing someone or something out of a place or organization", "TriggerLesson": "NR"},
+        {"n": 428, "TargetWord": "pelt", "definition": "to throw things repeatedly at someone, or an animal skin with the fur still on it", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T5-C6", "tier": 5, "slug": "cluster5_6_root_gen_beget",
+      "cards": [
+        {"n": 429, "TargetWord": "generate", "definition": "to produce or create something, especially energy, ideas, or revenue", "TriggerLesson": "NR"},
+        {"n": 430, "TargetWord": "regenerate", "definition": "to grow or be grown anew; to restore to a better condition", "TriggerLesson": "NR"},
+        {"n": 431, "TargetWord": "degenerate", "definition": "to decline in quality or character; to deteriorate from a former or original state"},
+        {"n": 432, "TargetWord": "gender", "definition": "the state of being male or female, or the social and cultural distinctions associated with sex", "TriggerLesson": "NR"},
+        {"n": 433, "TargetWord": "general", "definition": "affecting or concerning all or most people, places, or things; not specific", "TriggerLesson": "NR"},
+        {"n": 434, "TargetWord": "generous", "definition": "willing to give more than is necessary or expected; showing kindness", "TriggerLesson": "NR"},
+        {"n": 435, "TargetWord": "genre", "definition": "a category of artistic composition characterized by style, form, or subject matter", "TriggerLesson": "NR"},
+        {"n": 436, "TargetWord": "ingenious", "definition": "clever, original, and inventive in conception or execution"},
+        {"n": 437, "TargetWord": "genuine", "definition": "truly what something is said to be; authentic and sincere", "TriggerLesson": "NR"},
+        {"n": 438, "TargetWord": "progeny", "definition": "a descendant or descendants; offspring"},
+        {"n": 439, "TargetWord": "genesis", "definition": "the origin or coming into being of something"},
+        {"n": 440, "TargetWord": "indigenous", "definition": "originating or occurring naturally in a particular place; native"},
+        {"n": 441, "TargetWord": "congenital", "definition": "of a condition or trait: present from birth"},
+        {"n": 442, "TargetWord": "engender", "definition": "to cause or give rise to a feeling, situation, or condition", "TriggerLesson": "NR"},
+        {"n": 443, "TargetWord": "genocide", "definition": "the deliberate killing of a large group of people, especially of a particular ethnic or national group"}
+      ]
+    },
+    {
+      "cluster_id": "T5-C7", "tier": 5, "slug": "cluster5_7_root_par_prepare",
+      "cards": [
+        {"n": 444, "TargetWord": "prepare", "definition": "to make ready for use or consideration; to put things in order before an event", "TriggerLesson": "NR"},
+        {"n": 445, "TargetWord": "repair", "definition": "to restore something damaged or broken to good condition", "TriggerLesson": "NR"},
+        {"n": 446, "TargetWord": "separate", "definition": "to cause to move or be apart; to divide into distinct parts or groups", "TriggerLesson": "NR"},
+        {"n": 447, "TargetWord": "apparatus", "definition": "the equipment or system needed for a particular activity or purpose"},
+        {"n": 448, "TargetWord": "disparate", "definition": "essentially different in kind; not able to be compared"},
+        {"n": 449, "TargetWord": "compare", "definition": "to estimate or note the similarity or dissimilarity between things", "TriggerLesson": "NR"},
+        {"n": 450, "TargetWord": "disparage", "definition": "to regard or represent as being of little worth; to belittle", "TriggerLesson": "NR"},
+        {"n": 451, "TargetWord": "emperor", "definition": "the sovereign ruler of an empire", "TriggerLesson": "NR"},
+        {"n": 452, "TargetWord": "parade", "definition": "a public procession, or a display made for show", "TriggerLesson": "NR"},
+        {"n": 453, "TargetWord": "parity", "definition": "the state or condition of being equal, especially in status or pay"},
+        {"n": 454, "TargetWord": "peer", "definition": "a person of the same age, status, or ability as another", "TriggerLesson": "NR"},
+        {"n": 455, "TargetWord": "rampart", "definition": "a defensive wall of a castle or fortified city, or something that serves as a defence", "TriggerLesson": "NR"},
+        {"n": 456, "TargetWord": "sever", "definition": "to divide by cutting or slicing; to put an end to a connection or relationship", "TriggerLesson": "NR"},
+        {"n": 457, "TargetWord": "impair", "definition": "to weaken or damage something, especially in terms of quality or function", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T5-C8", "tier": 5, "slug": "cluster5_8_root_hab_have",
+      "cards": [
+        {"n": 458, "TargetWord": "habit", "definition": "a settled tendency or usual manner of behaviour; a regular practice", "TriggerLesson": "NR"},
+        {"n": 459, "TargetWord": "inhibit", "definition": "to hinder, restrain, or prevent an action or process", "TriggerLesson": "NR"},
+        {"n": 460, "TargetWord": "prohibit", "definition": "to formally forbid something by law, rule, or authority", "TriggerLesson": "NR"},
+        {"n": 461, "TargetWord": "exhibit", "definition": "to publicly display a work of art or item, or to show a quality or behaviour", "TriggerLesson": "NR"},
+        {"n": 462, "TargetWord": "habitat", "definition": "the natural environment in which an organism lives"},
+        {"n": 463, "TargetWord": "cohabit", "definition": "to live together in the same dwelling, especially as an unmarried couple"},
+        {"n": 464, "TargetWord": "ability", "definition": "the possession of the means or skill to do something", "TriggerLesson": "NR"},
+        {"n": 465, "TargetWord": "inhabit", "definition": "to live in or occupy a place as one's permanent home", "TriggerLesson": "NR"},
+        {"n": 466, "TargetWord": "debilitate", "definition": "to make someone or something very weak and infirm", "TriggerLesson": "NR"},
+        {"n": 467, "TargetWord": "rehabilitate", "definition": "to restore to health or normal life through training and therapy; to restore to good repute", "TriggerLesson": "NR"},
+        {"n": 468, "TargetWord": "malady", "definition": "a disease or ailment; a serious problem or undesirable condition", "TriggerLesson": "NR"},
+        {"n": 469, "TargetWord": "habituate", "definition": "to make or become accustomed to something through prolonged exposure"},
+        {"n": 470, "TargetWord": "aver", "definition": "to state or assert to be the case, especially in formal or legal contexts"},
+        {"n": 471, "TargetWord": "debt", "definition": "something owed, especially money, or a feeling of gratitude for a favour", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T5-C9", "tier": 5, "slug": "cluster5_9_root_plic_fold_extended",
+      "cards": [
+        {"n": 472, "TargetWord": "display", "definition": "to show or exhibit something publicly; to make visible", "TriggerLesson": "NR"},
+        {"n": 473, "TargetWord": "splay", "definition": "to spread out or turn outward; to open wide"},
+        {"n": 474, "TargetWord": "pliant", "definition": "easily bent or flexible; yielding readily to influence", "TriggerLesson": "NR"},
+        {"n": 475, "TargetWord": "deploy", "definition": "to move into position for military action, or to bring resources into effective use", "TriggerLesson": "NR"},
+        {"n": 476, "TargetWord": "imply", "definition": "to suggest something without stating it directly", "TriggerLesson": "NR"},
+        {"n": 477, "TargetWord": "reply", "definition": "to say or write something in response to a question or statement", "TriggerLesson": "NR"},
+        {"n": 478, "TargetWord": "supply", "definition": "to make available something that is needed or wanted; a stock of resources", "TriggerLesson": "NR"},
+        {"n": 479, "TargetWord": "comply", "definition": "to act in accordance with a wish, command, rule, or requirement", "TriggerLesson": "NR"},
+        {"n": 480, "TargetWord": "pliable", "definition": "easily bent or shaped; readily influenced or persuaded", "TriggerLesson": "NR"},
+        {"n": 481, "TargetWord": "supple", "definition": "bending and moving easily and gracefully; flexible", "TriggerLesson": "NR"},
+        {"n": 482, "TargetWord": "employ", "definition": "to give work to someone in return for payment, or to make use of something", "TriggerLesson": "NR"},
+        {"n": 483, "TargetWord": "exploit", "definition": "to use a situation or person selfishly or unethically, or a bold and notable achievement", "TriggerLesson": "NR"},
+        {"n": 484, "TargetWord": "simple", "definition": "easily understood or done; not complex or elaborate", "TriggerLesson": "NR"},
+        {"n": 485, "TargetWord": "appliqué", "definition": "ornamental needlework in which fabric shapes are sewn or fixed onto a larger piece", "TriggerLesson": "NR"},
+        {"n": 486, "TargetWord": "apply", "definition": "to put something into operation, or to make a formal request", "TriggerLesson": "NR"}
+      ]
+    },
+    {
+      "cluster_id": "T5-C10", "tier": 5, "slug": "cluster5_10_root_nomen_name",
+      "cards": [
+        {"n": 487, "TargetWord": "nominate", "definition": "to formally propose someone for a position, honour, or award", "TriggerLesson": "NR"},
+        {"n": 488, "TargetWord": "nominal", "definition": "existing in name only; very small or token in amount", "TriggerLesson": "NR"},
+        {"n": 489, "TargetWord": "denomination", "definition": "a recognized branch of a church or religion, or the face value of a banknote or coin", "TriggerLesson": "NR"},
+        {"n": 490, "TargetWord": "nomenclature", "definition": "a system of names or terms used in a particular science, discipline, or art"},
+        {"n": 491, "TargetWord": "ignominy", "definition": "public shame or disgrace"},
+        {"n": 492, "TargetWord": "misnomer", "definition": "a wrong or inaccurate name or designation", "TriggerLesson": "NR"},
+        {"n": 493, "TargetWord": "cognomen", "definition": "a surname or nickname, especially the third name of a Roman citizen indicating their branch or family"},
+        {"n": 494, "TargetWord": "renown", "definition": "the state of being widely known and highly regarded; fame", "TriggerLesson": "NR"},
+        {"n": 495, "TargetWord": "noun", "definition": "a word that represents a person, place, thing, or idea"},
+        {"n": 496, "TargetWord": "anonymous", "definition": "of unknown name or authorship; not identified by name"},
+        {"n": 497, "TargetWord": "synonym", "definition": "a word or phrase that means the same or nearly the same as another"},
+        {"n": 498, "TargetWord": "denominate", "definition": "to give a name or title to; to express a sum of money in a particular currency", "TriggerLesson": "NR"},
+        {"n": 499, "TargetWord": "innominate", "definition": "having no name; unnamed"},
+        {"n": 500, "TargetWord": "nomenclator", "definition": "a person who assigns names; historically, a Roman slave who whispered the names of approaching citizens to their master", "TriggerLesson": "008"}
+      ]
+    }
+  ]
+}
