@@ -217,7 +217,7 @@ function speak(t){ if(!('speechSynthesis'in window))return; speechSynthesis.canc
      audio/<language>/<lesson_id>_<page>_<key>.<ext>      e.g. audio/esperanto/001_1_1.opus
      audio/english/<pack>/<lesson_id>_<page>_<key>.<ext>  e.g. audio/english/ad/001_1_1.opus
    Play the file if it exists; otherwise fall back to the browser's speech synth. */
-const AUDIO_DIR='audio', AUDIO_EXT='opus';   // swap EXT to 'mp3' if you upload MP3s instead
+const AUDIO_DIR='audio', AUDIO_EXT='ogg';   // Opus-in-Ogg clips; swap EXT to 'mp3' if you upload MP3s instead
 function audioUrl(lang, lessonId, pageNum, key){
   const dir = lang==='English' ? `${AUDIO_DIR}/english/${engCode(curSet)}` : `${AUDIO_DIR}/${String(lang).toLowerCase()}`;
   return `${dir}/${lessonId}_${pageNum}_${key}.${AUDIO_EXT}`;
