@@ -41,6 +41,11 @@ nav .brand .pipe{color:var(--faint); margin:0 11px;}
 nav .links a{color:inherit; text-decoration:none; opacity:.7; margin-left:22px;}
 nav .links a:hover, nav .links a.on{opacity:1; color:var(--accent);}
 nav .links a.steam{font-weight:800; opacity:1; color:var(--ink);}
+/* portrait: collapse to a simple home (left) + about · vision (right) */
+.nav-mobile{display:none;}
+.nav-mobile a{color:inherit; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.08em; opacity:.85;}
+.nav-mobile a:hover{opacity:1; color:var(--accent);}
+@media(max-width:640px){ nav .brand, nav .links{display:none;} .nav-mobile{display:flex; flex:1; justify-content:space-between; align-items:center;} .nav-mobile .r{display:flex; gap:18px;} }
 
 /* HERO banner — home.png, darkened */
 .hero{position:relative; padding:96px 0 78px; overflow:hidden;}
@@ -92,8 +97,12 @@ footer .made{margin-top:12px; opacity:.8;}
   <span class="brand"><a class="logo" href="index.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.html">home</a><span class="sep"> · </span><span class="here">resources</span></span>
   <span class="links">
     <a href="found-me.html#level2">vision</a>
-    <a href="manual/index.html?screen=profile-select">how to play</a>
+    <a href="manual/index.html?screen=profile-select">manual</a>
     <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-resources">steam</a>
+  </span>
+  <span class="nav-mobile">
+    <a href="home.html">home</a>
+    <span class="r"><a href="about.html">about</a><a href="found-me.html#level2">vision</a></span>
   </span>
 </nav>
 
