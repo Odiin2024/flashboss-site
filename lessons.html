@@ -97,7 +97,6 @@ select:focus{outline:1px solid var(--accent);}
 .ln{white-space:pre; font-variant-ligatures:none;}
 .press{cursor:pointer; color:var(--cyan); border-bottom:1px dotted currentColor;}
 .press:hover{background:color-mix(in oklab, var(--cyan), transparent 82%);}
-.say{min-height:1.4em; padding:0 3ch .7em; color:var(--accent); font-size:.82em; white-space:pre;} .say:empty{display:none;}
 .scr-foot{display:flex; align-items:center; justify-content:center; gap:16px; padding:.62em 3ch; border-top:1px solid #fff; color:var(--green); font-size:.82em;}
 .scr-foot .pg{color:var(--green);}
 .scr-foot button{font-family:var(--mono); font-size:1em; color:var(--green); background:var(--panel); border:1px solid var(--green); padding:6px 14px; cursor:pointer;}
@@ -108,7 +107,7 @@ footer{border-top:1px solid var(--line); padding:26px 22px; font-size:12px; colo
 footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{color:var(--ink);}
 
 @media print{
-  nav,.bar,.say,.scr-foot,.overlay,footer .nav,header.page p,header.page::before,header.page::after{display:none !important;}
+  nav,.bar,.scr-foot,.overlay,footer .nav,header.page p,header.page::before,header.page::after{display:none !important;}
   body{background:#fff; color:#000;}
   .screen{border:1px solid #000; color:#000; break-inside:avoid;} .scr-head{color:#000; border-color:#000;}
   .scr-body{color:#000;} .press{border-bottom:0;}
@@ -317,14 +316,12 @@ function renderScreen(){
   stage.innerHTML = `<div class="screen" id="screen" style="--hc:var(${cv})">
     <div class="scr-head"><span class="books">📚</span><span class="ttl">${esc(lessonLabel(lesson))}</span><span class="moon" title="${MOON.name}" aria-label="Moon tonight: ${MOON.name}">${MOON.glyph}</span></div>
     <div class="scr-body" id="body">${lines.map(l=>lineToHTML(l,allowPress)).join('')}</div>
-    <div class="say" id="say"></div>
     <div class="scr-foot"><button id="prev">‹ prev</button><span class="pg">Page ${page.page} / ${page.total_pages}</span><button id="next">next ›</button></div>
   </div>`;
-  const body=$('body'), say=$('say');
+  const body=$('body');
   if(allowPress) body.querySelectorAll('.press').forEach(p=>p.addEventListener('click',()=>{
     const key=p.dataset.key, txt=(page.pronunciation_mappings||{})[key];
     if(!txt) return;
-    say.textContent='▶ '+txt;
     playClip(audioUrl(langSel.value, lesson.lesson_id, page.page, key), txt);
   }));
   $('prev').disabled = (li===0 && pi===0);
