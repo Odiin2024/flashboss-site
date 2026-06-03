@@ -51,6 +51,10 @@ header.page p{max-width:66ch; color:var(--dim); font-size:15px; margin:0;} heade
 /* selection bar — one line: language, lesson (tier-grouped), and the EO|EN toggle */
 .bar{display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin:26px 0 18px;}
 .field{display:flex; align-items:center; gap:8px; min-width:0;}
+/* the Lesson select absorbs the slack and shrinks (truncating long titles) instead of growing,
+   so the toggle stays pinned on one line at any landscape width regardless of language/title length */
+.bar > .field:nth-child(3){flex:1 1 0; min-width:0;}
+.bar > .field:nth-child(3) select{width:100%; min-width:0; max-width:none; text-overflow:ellipsis;}
 .field label{font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--faint);}
 select{font-family:var(--mono); font-size:14px; color:var(--ink); background:var(--panel); border:1px solid var(--line); padding:8px 12px; cursor:pointer; max-width:62vw;}
 select:focus{outline:1px solid var(--accent);}
