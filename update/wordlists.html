@@ -320,11 +320,12 @@ function humanize(slug){
 function asList(v){ return Array.isArray(v)?v.join(', '):String(v==null?'':v); }
 function synOf(c){ if(c.syn!=null)return asList(c.syn); if(c.synonyms!=null)return asList(c.synonyms); const m=/syn[:\s]\s*([^|]+)/i.exec(c.Notes||''); return m?m[1].trim():''; }
 function antOf(c){ if(c.ant!=null)return asList(c.ant); if(c.antonyms!=null)return asList(c.antonyms); const m=/ant[:\s]\s*([^|]+)/i.exec(c.Notes||''); return m?m[1].trim():''; }
+function posOf(c){ if(c.pos!=null)return asList(c.pos); const m=/^([a-z]+(?:\/[a-z]+)*)/.exec((c.Notes||'').trim()); return m?m[1]:''; }  // part of speech (front-face fallback)
 function normCards(cluster){
-  // foreign: {TargetWord,Translation}; English: {TargetWord,definition[,syn,ant]}
+  // foreign: {TargetWord,Translation}; English: {TargetWord,definition[,syn,ant,pos]}
   return (cluster.cards||[]).map(c=>({ w:c.TargetWord,
     t: c.definition!=null?c.definition:(c.Translation!=null?c.Translation:''),
-    syn:synOf(c), ant:antOf(c) }));
+    syn:synOf(c), ant:antOf(c), pos:posOf(c) }));
 }
 
 async function loadSet(lang,set){
@@ -417,8 +418,12 @@ function renderSelected(){
     const c=data.clusters[i]; if(!c) return;
     const words=normCards(c);
     const rows = defMode
-      ? words.map(({w,t,syn,ant})=>{
-          const sa = (syn&&ant) ? `(${esc(syn)} : ${esc(ant)})` : (syn?`(${esc(syn)})`:(ant?`(${esc(ant)})`:''));
+      ? words.map(({w,t,syn,ant,pos})=>{
+          const sa = (syn&&ant) ? `(${esc(syn)} : ${esc(ant)})`
+                   : syn ? `(${esc(syn)})`
+                   : ant ? `(ant: ${esc(ant)})`      // antonyms only -> label them so they don't read as synonyms
+                   : pos ? `(${esc(pos)})`           // no syn/ant -> fall back to part of speech
+                   : '';
           return `<div class="def"><span class="dw">${esc(w)}${sa?`<span class="sa">${sa}</span>`:''}</span><span class="dd">${esc(t)}</span></div>`;
         }).join('')
       : words.map(({w,t})=>`<div class="word"><span class="w">${esc(w)}</span><span class="t">${esc(t)}</span></div>`).join('');
