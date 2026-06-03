@@ -67,10 +67,12 @@ select:focus{outline:1px solid var(--accent);}
 /* portrait: row 1 = Language + Set + toggle (labels hidden, selects flex to fit); row 2 = Lesson full width */
 @media(max-width:560px){
   .bar{gap:8px;}
-  .bar .field label{display:none;}
+  .bar .field label{display:none;}                       /* hide Language/Set labels */
   .bar > .field{flex:1 1 0; min-width:0;}
   .bar > .field select{width:100%; max-width:none;}
-  .bar > .field:nth-child(3){flex-basis:100%; order:9;}
+  .bar > .field:nth-child(3){flex-basis:100%; order:9;}  /* Lesson -> its own full-width row */
+  .bar > .field:nth-child(3) label{display:inline;}      /* keep the "Lesson" title on that row */
+  .bar > .field:nth-child(3) select{flex:1 1 auto; width:auto; min-width:0;}  /* dropdown fills the rest */
 }
 
 .state{padding:60px 0; text-align:center; color:var(--faint); font-size:14px;}
@@ -130,7 +132,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
   <div class="wrap">
     <h1>Lessons</h1>
     <!-- Static, crawlable SEO copy -->
-    <p>Free reference lessons for every FlashBoss language — <b>Italian, German, Spanish, and Esperanto</b>. Pronunciation, articles, verb tenses, register and usage, rendered exactly as they appear inside the game and organised by tier. Read them free, and tap any <b>▶</b> symbol for Piper text-to-speech pronunciation.</p>
+    <p>Free reference lessons for every FlashBoss language — <b>Italian, German, Spanish, and Esperanto</b>. Pronunciation, articles, verb tenses, register and usage, rendered exactly as they appear inside the game and organised by tier. Read them free, and tap any <b>LISTEN</b> cue for Piper text-to-speech pronunciation.</p>
   </div>
 </header>
 
@@ -283,8 +285,8 @@ function lineToHTML(line, allowPress){
   const m=line.match(/Press (\d)/);
   if(!m) return `<div class="ln">${esc(line)}</div>`;
   const idx=line.indexOf(m[0]);
-  // it's a click/tap, not a keypress — show a play cue instead of "Press N" (the digit stays the audio key)
-  return `<div class="ln"><span>${esc(line.slice(0,idx))}</span><span class="press" data-key="${m[1]}" role="button" title="play">▶</span><span>${esc(line.slice(idx+m[0].length))}</span></div>`;
+  // it's a click/tap, not a keypress — show a LISTEN cue instead of "Press N" (the digit stays the audio key)
+  return `<div class="ln"><span>${esc(line.slice(0,idx))}</span><span class="press" data-key="${m[1]}" role="button" title="listen">LISTEN</span><span>${esc(line.slice(idx+m[0].length))}</span></div>`;
 }
 
 function renderScreen(){
