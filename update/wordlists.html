@@ -55,6 +55,8 @@ header.page .wrap{position:relative; z-index:2;}
 header.page h1{font-size:clamp(34px,7vw,58px); margin:13px 0 12px; font-weight:800; letter-spacing:-.01em; color:var(--ink);}
 header.page p{max-width:66ch; color:var(--dim); font-size:15px; margin:0;}
 header.page p b{color:var(--ink);}
+header.page p b a, .howlink{color:var(--ink); text-decoration:none; font-weight:700;}
+header.page p b a:hover, .howlink:hover{color:#fff; text-decoration:none;}
 
 .controls{position:sticky; top:0; z-index:50; background:color-mix(in oklab, var(--bg), transparent 5%); backdrop-filter:blur(4px);
   border-bottom:1px solid var(--line); padding:14px 0; margin-top:28px;}
@@ -101,13 +103,10 @@ select:focus, .btn:focus{outline:1px solid var(--accent);}
 @media(max-width:560px){
   .controls .spacer{display:none;}
   .controls #printBtn{order:3;}
-  .controls .row > .field:nth-child(3){order:4;}  /* Clusters field */
-  /* toggle: switch on the top line, its state caption directly beneath, colour tracking the switch */
-  .controls #transToggle{order:5; flex-direction:column; align-items:center; gap:5px; line-height:1.1;}
-  #transToggle .tcap{color:var(--faint);}
-  #transToggle .tcap::after{content:"Translation OFF";}
-  #transToggle.on .tcap{color:var(--accent);}
-  #transToggle.on .tcap::after{content:"Translation ON";}
+  .controls .row > .field:nth-child(3){order:4;}              /* Clusters field -> row 2 */
+  .controls .row > .field:nth-child(3) label{display:none;}   /* drop the "Clusters" label — the trigger text labels it */
+  .msel-trigger{min-width:0;}                                  /* trim the Clusters box so the toggle fits beside it */
+  .controls #transToggle{order:5;}                             /* keep the toggle horizontal (switch + Translations) */
 }
 
 .setmeta{display:flex; gap:18px; flex-wrap:wrap; align-items:baseline; padding:26px 0 6px; color:var(--dim); font-size:13px;}
