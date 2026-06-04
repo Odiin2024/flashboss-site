@@ -22,7 +22,7 @@
 :root{
   --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
   --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
-  --accent:#7ec8ff; --steel:#6487aa; --gold:#e0a93f; --green:#62d38a; --blue:#7ec8ff; --line:#3a3120; --rule:#2a2417;
+  --accent:#83b6dd; --steel:#6487aa; --gold:#e0a93f; --green:#62d38a; --blue:#7ec8ff; --line:#3a3120; --rule:#2a2417;
 }
 *{box-sizing:border-box; margin:0; padding:0;}
 html{scroll-behavior:smooth;}
@@ -63,7 +63,7 @@ nav .links a.steam{font-weight:800; opacity:1;}
    actually has. Full -12vw on wide landscape; eases to 0 by 900px so mobile
    portrait never pushes the title off-screen (clipped by overflow-x:hidden). */
 .hero .wrap{position:relative; z-index:2; transform:translateX(max(-12vw, min(0px, (900px - 100vw) / 2)));}
-.hero h1{font-size:clamp(44px,10vw,96px); line-height:.96; margin:0; font-weight:800; letter-spacing:-.02em; color:var(--ink);}
+.hero h1{font-size:clamp(44px,14.5vw,96px); line-height:.96; margin:0; font-weight:800; letter-spacing:-.02em; color:var(--ink);}
 .cursor{display:inline-block; width:.55em; height:.92em; vertical-align:-.06em; background:color-mix(in oklab, var(--accent), transparent 25%); margin-left:.1em; animation:blink 1.05s steps(1) infinite;}
 @keyframes blink{50%{opacity:0;}}
 .hero .sig{font-size:13px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent); margin:18px 0 0; opacity:.92;}
