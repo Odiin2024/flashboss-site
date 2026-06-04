@@ -26,7 +26,7 @@
 }
 *{box-sizing:border-box; margin:0; padding:0;}
 html{scroll-behavior:smooth;}
-body{font-family:var(--mono); background:var(--bg); color:var(--ink); line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden;}
+body{font-family:var(--mono); background:linear-gradient(180deg, var(--bg) 0%, #171421 100%); background-color:var(--bg); color:var(--ink); line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden;}
 .overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
   background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.045) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
 .vignette{position:fixed; inset:0; pointer-events:none; z-index:9998;
@@ -117,10 +117,10 @@ p.body b{color:var(--accent);}
 .give .g-link:hover{text-decoration:underline; text-underline-offset:3px;}
 
 /* ---- final CTA ---- */
-.final{text-align:center; padding:84px 0 96px;}
+.final{text-align:center; padding:84px 0 70px;}
 .final h2{font-size:clamp(26px,6vw,48px);}
 .final p{color:var(--dim); max-width:50ch; margin:14px auto 30px; font-size:15px;}
-.epi{font-style:italic; color:var(--faint); max-width:46ch; margin:60px auto 0; font-size:13.5px; line-height:1.7; opacity:.9;}
+.epi{font-style:italic; color:var(--faint); max-width:46ch; margin:90px auto 0; font-size:13.5px; line-height:1.7; opacity:.9;}
 .epi-cite{display:block; font-style:normal; font-size:11px; letter-spacing:.12em; text-transform:uppercase; opacity:.8; margin-top:10px;}
 
 footer{border-top:1px solid var(--line); padding:30px 24px; margin-top:20px; text-align:center; font-size:12px; color:var(--faint); letter-spacing:.04em;}
@@ -166,8 +166,8 @@ footer .footer-links .div{opacity:.4;}
     <div class="frame reveal">
       <span class="tag">Listen · read · repeat · rate · fight</span>
       <h2>The FlashBoss approach</h2>
-      <p class="body">The target vocabulary is grouped into thematic clusters with progressively longer, and more complex example sentences and explanatory notes. Learn the material with cascading display flashcards, with audio pronunciation of each new word and example sentence. Each cluster ends in a boss fight.</p>
-      <p class="body">Before you can defeat the boss, you must answer to the words you found most challenging. Win, and those cards graduate out of your deck for good, into optional revision sessions and other challenges.</p>
+      <p class="body">The target vocabulary is grouped into thematic clusters with progressively longer, and more complex example sentences and explanatory notes. Each cluster ends in a boss fight.</p>
+      <p class="body">Before you can defeat the boss, you must answer to the words you found most challenging. Win, and those cards graduate.</p>
       <a class="btn boss-cta" href="https://flashboss-demo.pages.dev/">Try out a boss fight &rarr;</a>
     </div>
   </section>
@@ -184,7 +184,7 @@ footer .footer-links .div{opacity:.4;}
         </div>
         <div class="give">
           <div class="g-h">The Roots Series</div>
-          <p>German, Norman, and Latin Roots — the history English was built from.</p>
+          <p>German, Norman, and Latin Roots — the history English is built from.</p>
         </div>
         <div class="give">
           <div class="g-h">Full language courses</div>
