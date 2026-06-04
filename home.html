@@ -22,7 +22,7 @@
 :root{
   --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
   --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
-  --accent:#e0a93f; --green:#62d38a; --blue:#7ec8ff; --line:#3a3120; --rule:#2a2417;
+  --accent:#7ec8ff; --steel:#6487aa; --gold:#e0a93f; --green:#62d38a; --blue:#7ec8ff; --line:#3a3120; --rule:#2a2417;
 }
 *{box-sizing:border-box; margin:0; padding:0;}
 html{scroll-behavior:smooth;}
@@ -80,7 +80,8 @@ nav .links a.steam{font-weight:800; opacity:1;}
 .btn.ghost{color:var(--accent); background:transparent; border:1px solid var(--accent); box-shadow:none; padding:13px 23px;}
 .btn.ghost:hover{transform:translate(-2px,-2px); color:var(--ink); border-color:var(--ink); box-shadow:none;}
 .actions{display:flex; gap:14px; margin-top:32px; flex-wrap:wrap;}
-.hero .actions{margin-top:56px;}
+.hero .actions{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:54px; max-width:520px;}
+.hero .actions .btn{width:100%; padding:13px 7px; text-align:center; font-size:13.5px; letter-spacing:.02em; white-space:nowrap;}
 
 /* ---- sections / frame ---- */
 section{padding:60px 0;}
@@ -101,7 +102,7 @@ p.body b{color:var(--accent);}
 /* ---- what you get ---- */
 .gives{display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid var(--line); border-top:0; position:relative; overflow:hidden;}
 .gives::after{content:""; position:absolute; left:0; right:0; top:0; height:3px;
-  background:linear-gradient(90deg, var(--accent), var(--green) 52%, var(--blue));}
+  background:linear-gradient(90deg, var(--gold), var(--green) 52%, var(--blue));}
 @media(max-width:680px){.gives{grid-template-columns:1fr;}}
 .give{padding:30px 22px 26px; border-right:1px solid var(--line); display:flex; flex-direction:column;}
 .give:nth-child(1){background:linear-gradient(180deg, rgba(224,169,63,.08), transparent 58%);}
@@ -110,14 +111,14 @@ p.body b{color:var(--accent);}
 .give:last-child{border-right:0;}
 @media(max-width:680px){.give{border-right:0; border-bottom:1px solid var(--line);} .give:last-child{border-bottom:0;}}
 .give .g-h{font-size:12px; letter-spacing:.16em; text-transform:uppercase; font-weight:700; margin-bottom:12px;}
-.give:nth-child(1) .g-h{color:var(--accent);}
+.give:nth-child(1) .g-h{color:var(--gold);}
 .give:nth-child(2) .g-h{color:var(--green);}
 .give:nth-child(3) .g-h{color:var(--blue);}
 .give p{font-size:13.5px; color:var(--dim); margin:0; line-height:1.65;}
 .give p a{font-weight:700; text-decoration:none; color:var(--blue);}
 .give p a:hover{text-decoration:underline; text-underline-offset:3px;}
 .give .g-link{margin-top:auto; padding-top:16px; font-size:13px; font-weight:700; text-decoration:none;}
-.give:nth-child(1) .g-link{color:var(--accent);}
+.give:nth-child(1) .g-link{color:var(--gold);}
 .give:nth-child(2) .g-link{color:var(--green);}
 .give .g-link:hover{text-decoration:underline; text-underline-offset:3px;}
 
@@ -125,7 +126,7 @@ p.body b{color:var(--accent);}
 .final{text-align:center; padding:84px 0 90px;}
 .final h2{font-size:clamp(26px,6vw,48px);}
 .final p{color:var(--dim); max-width:50ch; margin:14px auto 30px; font-size:15px;}
-.epi{font-style:italic; color:var(--faint); max-width:46ch; margin:110px auto 0; font-size:13.5px; line-height:1.7; opacity:.9;}
+.epi{font-style:italic; color:var(--steel); max-width:46ch; margin:110px auto 0; font-size:13.5px; line-height:1.7; opacity:.95;}
 .epi-cite{display:block; font-style:normal; font-size:11px; letter-spacing:.12em; text-transform:uppercase; opacity:.8; margin-top:10px;}
 
 footer{border-top:1px solid var(--line); padding:30px 24px; margin-top:20px; text-align:center; font-size:12px; color:var(--faint); letter-spacing:.04em;}
@@ -163,7 +164,6 @@ footer .footer-links .div{opacity:.4;}
       <div class="actions reveal">
         <a class="btn" href="wordlists.html">word lists</a>
         <a class="btn" href="lessons.html">lessons</a>
-        <a class="btn" href="packs.html">packs</a>
         <a class="btn" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-home">steam</a>
       </div>
     </div>
