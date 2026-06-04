@@ -80,6 +80,7 @@ nav .links a.steam{font-weight:800; opacity:1;}
 
 /* ---- sections / frame ---- */
 section{padding:60px 0;}
+.hero + section{padding-top:84px;}  /* clearance so THE HOOK isn't crowded under the splash */
 .frame{border:1px solid var(--line); position:relative; padding:34px 30px 32px;}
 .frame > .tag{position:absolute; top:-12px; left:22px; background:var(--bg);
   padding:4px 12px; line-height:1; font-size:11px; letter-spacing:.3em; text-transform:uppercase; color:var(--accent);}
@@ -93,15 +94,27 @@ p.body b{color:var(--accent);}
 .boss-cta{margin-top:28px;}
 
 /* ---- what you get ---- */
-.gives{display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid var(--line);}
+.gives{display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid var(--line); border-top:0; position:relative; overflow:hidden;}
+.gives::after{content:""; position:absolute; left:0; right:0; top:0; height:3px;
+  background:linear-gradient(90deg, var(--accent), var(--green) 52%, var(--blue));}
 @media(max-width:680px){.gives{grid-template-columns:1fr;}}
-.give{padding:22px 20px; border-right:1px solid var(--line);}
+.give{padding:30px 22px 26px; border-right:1px solid var(--line); display:flex; flex-direction:column;}
+.give:nth-child(1){background:linear-gradient(180deg, rgba(224,169,63,.08), transparent 58%);}
+.give:nth-child(2){background:linear-gradient(180deg, rgba(98,211,138,.08), transparent 58%);}
+.give:nth-child(3){background:linear-gradient(180deg, rgba(126,200,255,.08), transparent 58%);}
 .give:last-child{border-right:0;}
-.give .g-h{font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); margin-bottom:10px;}
-.give p{font-size:13px; color:var(--dim); margin:0;}
-.give p a{color:var(--blue); font-weight:700; text-decoration:none;}
-.give p a:hover{text-decoration:underline; text-underline-offset:3px;}
 @media(max-width:680px){.give{border-right:0; border-bottom:1px solid var(--line);} .give:last-child{border-bottom:0;}}
+.give .g-h{font-size:12px; letter-spacing:.16em; text-transform:uppercase; font-weight:700; margin-bottom:12px;}
+.give:nth-child(1) .g-h{color:var(--accent);}
+.give:nth-child(2) .g-h{color:var(--green);}
+.give:nth-child(3) .g-h{color:var(--blue);}
+.give p{font-size:13.5px; color:var(--dim); margin:0; line-height:1.65;}
+.give p a{font-weight:700; text-decoration:none; color:var(--blue);}
+.give p a:hover{text-decoration:underline; text-underline-offset:3px;}
+.give .g-link{margin-top:auto; padding-top:16px; font-size:13px; font-weight:700; text-decoration:none;}
+.give:nth-child(1) .g-link{color:var(--accent);}
+.give:nth-child(2) .g-link{color:var(--green);}
+.give .g-link:hover{text-decoration:underline; text-underline-offset:3px;}
 
 /* ---- final CTA ---- */
 .final{text-align:center; padding:84px 0 96px;}
@@ -168,10 +181,12 @@ footer .footer-links .div{opacity:.4;}
         <div class="give">
           <div class="g-h">Free in the base game</div>
           <p>English Advance · English Adept · German Core · Esperanto Core.</p>
+          <a class="g-link" href="packs.html">See all packs →</a>
         </div>
         <div class="give">
           <div class="g-h">The Roots Series</div>
-          <p>German, Norman, and Latin Roots — the parts English is built from. <a href="latin-roots.html">See Latin Roots →</a></p>
+          <p>German, Norman, and Latin Roots — the parts English is built from.</p>
+          <a class="g-link" href="latin-roots.html">See Latin Roots →</a>
         </div>
         <div class="give">
           <div class="g-h">Full language courses</div>
