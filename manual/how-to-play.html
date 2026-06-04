@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Play - FlashBoss</title>
+    <meta name="description" content="A FlashBoss session in five steps — Listen, Read, Repeat, Rate, Fight. The whole loop, in three minutes of reading.">
+
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: url('manual/images/fog.jpeg') center center / 120% auto no-repeat fixed;
+            background-color: #0a0a19;
+            color: #f0e6d3;
+            min-height: 100vh;
+            line-height: 1.6;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(10, 10, 25, 0.55);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem 3rem;
+        }
+
+        /* ─── Header ─── */
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.4rem;
+            font-weight: 900;
+            color: #5555FF;
+            margin-bottom: 0.4rem;
+            letter-spacing: -0.01em;
+        }
+
+        .header .tagline {
+            font-size: 1rem;
+            color: rgba(240, 230, 211, 0.7);
+        }
+
+        /* ─── The pentameter strip ─── */
+        .pentameter {
+            display: flex;
+            justify-content: center;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+            margin-bottom: 2.5rem;
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: 0.95rem;
+            letter-spacing: 0.04em;
+        }
+
+        .pentameter span {
+            color: #ff66ff;
+        }
+
+        .pentameter .sep {
+            color: rgba(240, 230, 211, 0.35);
+        }
+
+        /* ─── Step blocks ─── */
+        .steps {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .step {
+            display: grid;
+            grid-template-columns: 60px 1fr;
+            gap: 1.25rem;
+            align-items: start;
+            padding: 1.1rem 1.25rem;
+            background: rgba(10, 10, 25, 0.45);
+            border: 1px solid rgba(126, 200, 255, 0.15);
+            border-radius: 8px;
+            transition: border-color 0.2s, background 0.2s;
+        }
+
+        .step:hover {
+            border-color: rgba(126, 200, 255, 0.35);
+            background: rgba(10, 10, 25, 0.6);
+        }
+
+        .step .verb {
+            font-family: 'Merriweather', serif;
+            font-size: 1.05rem;
+            font-weight: 900;
+            color: #ff66ff;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            padding-top: 0.15rem;
+        }
+
+        .step .body {
+            color: rgba(240, 230, 211, 0.92);
+            font-size: 0.95rem;
+        }
+
+        .step .body strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        /* ─── The Fight step (clickable, glow on hover) ─── */
+        .step-fight {
+            display: grid;
+            grid-template-columns: 60px 1fr;
+            gap: 1.25rem;
+            align-items: start;
+            padding: 1.1rem 1.25rem;
+            background: rgba(255, 102, 255, 0.06);
+            border: 1px solid rgba(255, 102, 255, 0.4);
+            border-radius: 8px;
+            text-decoration: none;
+            transition: border-color 0.2s, background 0.2s, box-shadow 0.25s, transform 0.1s;
+        }
+
+        .step-fight:hover,
+        .step-fight:focus {
+            border-color: rgba(255, 102, 255, 0.85);
+            background: rgba(255, 102, 255, 0.1);
+            box-shadow: 0 0 24px rgba(255, 102, 255, 0.3), 0 0 48px rgba(255, 102, 255, 0.12);
+            outline: none;
+        }
+
+        .step-fight:active {
+            transform: scale(0.995);
+        }
+
+        .step-fight .verb {
+            color: #ff66ff;
+        }
+
+        .step-fight .fight-body {
+            color: rgba(240, 230, 211, 0.92);
+            font-size: 0.95rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .step-fight .fight-body em {
+            color: #f0e6d3;
+            font-style: italic;
+        }
+
+        /* ─── The ledger note ─── */
+        .ledger-note {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            padding: 1rem;
+            font-size: 0.95rem;
+            color: rgba(240, 230, 211, 0.8);
+            font-style: italic;
+        }
+
+        .ledger-note strong {
+            color: #f0e6d3;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        /* ─── CTA ─── */
+        .cta-row {
+            display: flex;
+            justify-content: center;
+            gap: 0.9rem;
+            flex-wrap: wrap;
+            margin: 2rem 0 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            border-radius: 4px;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background 0.2s, border-color 0.2s, transform 0.1s;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn.demo {
+            background: rgba(255, 102, 255, 0.18);
+            border: 1px solid rgba(255, 102, 255, 0.5);
+            color: #ff66ff;
+        }
+
+        .btn.demo:hover {
+            background: rgba(255, 102, 255, 0.3);
+            border-color: rgba(255, 102, 255, 0.8);
+        }
+
+        .btn.steam {
+            background: rgba(102, 192, 244, 0.18);
+            border: 1px solid rgba(102, 192, 244, 0.5);
+            color: #66c0f4;
+        }
+
+        .btn.steam:hover {
+            background: rgba(102, 192, 244, 0.3);
+            border-color: rgba(102, 192, 244, 0.8);
+        }
+
+        /* ─── Quiet curiosity link ─── */
+        .deeper-link {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: rgba(240, 230, 211, 0.65);
+        }
+
+        .deeper-link a {
+            color: #7ec8ff;
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+
+        .deeper-link a:hover { color: #ffffff; }
+
+        /* ─── Footer ─── */
+        .footer {
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            font-size: 0.85rem;
+            color: rgba(240, 230, 211, 0.55);
+            text-decoration: none;
+        }
+
+        .footer-links a:hover { color: #ffffff; }
+
+        /* ─── Responsive ─── */
+        @media (min-width: 768px) {
+            .header h1 { font-size: 2.9rem; }
+            .header .tagline { font-size: 1.1rem; }
+
+            .step,
+            .step-fight {
+                grid-template-columns: 90px 1fr;
+                padding: 1.25rem 1.5rem;
+            }
+
+            .step .verb,
+            .step-fight .verb {
+                font-size: 1.15rem;
+            }
+
+            .container {
+                padding: 3rem 2rem 4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header class="header">
+            <h1>How to Play</h1>
+            <p class="tagline">A FlashBoss session, beginning to end.</p>
+        </header>
+
+        <p class="pentameter">
+            <span>Listen</span><span class="sep">·</span>
+            <span>Read</span><span class="sep">·</span>
+            <span>Repeat</span><span class="sep">·</span>
+            <span>Rate</span><span class="sep">·</span>
+            <span>Fight</span>
+        </p>
+
+        <div class="steps">
+
+            <div class="step">
+                <div class="verb">Listen</div>
+                <div class="body">A new word and an example sentence are spoken aloud. The word appears on screen; the sentence does not. <strong>First exposure.</strong></div>
+            </div>
+
+            <div class="step">
+                <div class="verb">Read</div>
+                <div class="body">The example sentence appears, and beneath it a translation. Built from words you've already learned. You read both, in your own time.</div>
+            </div>
+
+            <div class="step">
+                <div class="verb">Repeat</div>
+                <div class="body">Replay the audio as many times as you want. Move on when you're ready.</div>
+            </div>
+
+            <div class="step">
+                <div class="verb">Rate</div>
+                <div class="body">Score your recognition from 0 to 5. Be honest — only a 5 advances a card. Two 5s in a row and the card graduates.</div>
+            </div>
+
+            <a href="https://flashboss-demo.pages.dev/?utm_source=website&utm_medium=howtoplay&utm_campaign=fight-card" class="step step-fight">
+                <div class="verb">Fight</div>
+                <div class="body">
+                    <p class="fight-body">When a cluster is ready, a boss fight begins. Eight multiple-choice answers. Correct, you advance. Wrong, you slide back. Easy cards open the fight; the hardest arrive in the middle, when the stakes are highest.</p>
+                    <p class="fight-body">Miss a hard card and it becomes your <em>easiest</em> next time — waiting for you, in the slot where you most need a win. You can't conquer a cluster until your weakest words are mastered. Try it now.</p>
+                </div>
+            </a>
+
+        </div>
+
+        <p class="ledger-note">Each cluster you conquer joins your trophy list.<br><strong>Vanquish them all. Finish the language.</strong></p>
+
+        <div class="cta-row">
+            <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-howtoplay" class="btn steam">Get it on Steam</a>
+        </div>
+
+        <p class="deeper-link">Curious about the system underneath? <a href="about.html">How FlashBoss teaches →</a></p>
+
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="home.html">Hub</a>
+                <a href="manual/">Manual</a>
+                <a href="language-packs.html">Languages</a>
+                <a href="press.html">Press</a>
+                <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-howtoplay">Steam</a>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
