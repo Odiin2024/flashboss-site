@@ -59,7 +59,10 @@ nav .links a.steam{font-weight:800; opacity:1;}
 .hero{position:relative; min-height:calc(100vh - 56px); min-height:calc(100dvh - 56px); display:flex; align-items:center; padding:40px 0 120px; overflow:hidden;}
 .hero::before{content:""; position:absolute; inset:0; z-index:0; background:#0c0a06 url('home.png') center 32% / cover no-repeat;}
 .hero::after{content:""; position:absolute; inset:0; z-index:1; background:linear-gradient(180deg, rgba(16,13,8,.52) 0%, rgba(16,13,8,.78) 58%, var(--bg) 100%);}
-.hero .wrap{position:relative; z-index:2; transform:translateX(-12vw);}
+/* Shift the splash left, but only into the slack the centered .wrap (max 900px)
+   actually has. Full -12vw on wide landscape; eases to 0 by 900px so mobile
+   portrait never pushes the title off-screen (clipped by overflow-x:hidden). */
+.hero .wrap{position:relative; z-index:2; transform:translateX(max(-12vw, min(0px, (900px - 100vw) / 2)));}
 .hero h1{font-size:clamp(44px,10vw,96px); line-height:.96; margin:0; font-weight:800; letter-spacing:-.02em; color:var(--ink);}
 .cursor{display:inline-block; width:.55em; height:.92em; vertical-align:-.06em; background:color-mix(in oklab, var(--accent), transparent 25%); margin-left:.1em; animation:blink 1.05s steps(1) infinite;}
 @keyframes blink{50%{opacity:0;}}
