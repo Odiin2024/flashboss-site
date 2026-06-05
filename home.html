@@ -87,8 +87,8 @@ nav .links a.steam{font-weight:800; opacity:1;}
 
 /* ---- sections / frame ---- */
 section{padding:60px 0;}
-.hero + section{padding-top:84px;}  /* clearance so THE HOOK isn't crowded under the splash */
-.hero + section + section{padding-top:104px;}  /* space below the FlashBoss-approach frame */
+.hero + section{padding-top:84px;}  /* clearance so the boss-fight card isn't crowded under the splash */
+.gap-top{padding-top:104px;}  /* space below the FlashBoss-approach frame, before "Four packs" */
 .frame{border:1px solid var(--line); position:relative; padding:34px 30px 32px;}
 .frame > .tag{position:absolute; top:-12px; left:22px; background:var(--bg);
   padding:4px 12px; line-height:1; font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent);}
@@ -100,6 +100,14 @@ p.body b{color:var(--accent);}
 
 /* ---- boss-fight feature ---- */
 .boss-cta{margin-top:28px;}
+.bossfight{display:block; max-width:600px; margin:0 auto; text-decoration:none; line-height:0;
+  border:1px solid var(--line); background:#11101a;
+  box-shadow:6px 6px 0 color-mix(in oklab, var(--accent), #000 68%);
+  transition:transform .14s ease, box-shadow .14s ease;}
+.bossfight:hover{transform:translate(-3px,-3px); box-shadow:9px 9px 0 color-mix(in oklab, var(--accent), #000 68%);}
+.bossfight img{display:block; width:100%; height:auto;}
+.bf-cta{display:block; text-align:center; background:var(--accent); color:#15120c;
+  font-weight:800; letter-spacing:.05em; font-size:14px; padding:12px 16px; line-height:1;}
 
 /* ---- what you get ---- */
 .gives{display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid var(--line); border-top:0; position:relative; overflow:hidden;}
@@ -171,6 +179,14 @@ footer .footer-links .div{opacity:.4;}
     </div>
   </header>
 
+  <!-- BOSS FIGHT: the hook visual -->
+  <section class="wrap">
+    <a class="bossfight reveal" href="https://flashboss-demo.pages.dev/">
+      <img src="boss-arena.png" alt="A FlashBoss boss fight in the terminal — Correct! Advancing...">
+      <span class="bf-cta">Try the BossFight &rarr;</span>
+    </a>
+  </section>
+
   <!-- THE HOOK: boss fights -->
   <section class="wrap">
     <div class="frame reveal">
@@ -183,7 +199,7 @@ footer .footer-links .div{opacity:.4;}
   </section>
 
   <!-- WHAT YOU GET -->
-  <section class="wrap">
+  <section class="wrap gap-top">
     <div class="reveal">
       <h2>Four packs ship free</h2>
       <p class="sub">Add additional decks as you go.</p>
