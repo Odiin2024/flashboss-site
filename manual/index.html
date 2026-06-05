@@ -958,9 +958,13 @@
             const subheader = document.getElementById('screenSubheader');
             subheader.textContent = focus.subheader || '';
 
-            // Mobile back button - goes to primary parent
+            // Mobile back button - goes to primary parent (the manual home screen exits to the site)
             const mobileBackBtn = document.getElementById('mobileBackBtn');
-            if (focus.parents && focus.parents.length > 0) {
+            if (currentFocus === 'profile-select') {
+                mobileBackBtn.classList.remove('disabled');
+                mobileBackBtn.textContent = 'Back';
+                mobileBackBtn.onclick = () => { window.location.href = '../home.html'; };
+            } else if (focus.parents && focus.parents.length > 0) {
                 const firstParent = screens[focus.parents[0]];
                 if (firstParent) {
                     mobileBackBtn.classList.remove('disabled');

@@ -30,17 +30,23 @@
       "gates",
       "vault",
       "about-1",
-      "hints-tips"
+      "hints-tips",
+      "website-home"
     ],
     "childLabels": {
       "create-username": "1",
       "gates": "N",
       "vault": "6",
       "about-1": "7",
-      "hints-tips": "8"
+      "hints-tips": "8",
+      "website-home": "9"
     },
     "childDisplayNames": {
-      "gates": "Select Profile"
+      "gates": "Select Profile",
+      "website-home": "Home Page"
+    },
+    "childExternalLinks": {
+      "website-home": "../home.html"
     },
     "description": "FlashBoss supports up to 5 user profiles. Each slot shows the user's avatar, name, and chosen master.\n\nEmpty slots display \"Create New Hero\" - selecting one begins character creation. Selecting an existing profile enters the Gates."
   },
