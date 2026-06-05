@@ -712,11 +712,13 @@
         }
 
         /* Mobile landscape */
-        @media (max-width: 768px) and (orientation: landscape) {
+        /* Landscape phones: target by height so wide landscape phones (width > 768) are
+           caught too. Drop the fixed full-height layout so nothing clips; let it scroll. */
+        @media (orientation: landscape) and (max-height: 600px) {
             .manual-wrapper {
                 position: relative;
                 height: auto;
-                min-height: auto;
+                min-height: 100vh;
                 padding: 2vh 4vw;
                 overflow-y: visible;
             }
@@ -730,6 +732,10 @@
             .panel-left, .panel-right {
                 min-height: auto;
                 height: auto;
+            }
+
+            .focus-image {
+                max-height: 50vh;
             }
 
             .view-toggle {
