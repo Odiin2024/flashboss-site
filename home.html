@@ -104,7 +104,7 @@ p.body b{color:var(--accent);}
 .bf-text h2{margin:0 0 14px;}
 .bf-text p{font-size:16px; color:color-mix(in oklab, var(--ink), #fff 6%); margin:0 0 12px; max-width:32ch;}
 .bf-text p:last-child{margin-bottom:0;}
-.bf-box{flex:0 0 auto; width:260px; display:block; position:relative; line-height:0; border:1px solid var(--line); transition:border-color .14s ease;}
+.bf-box{flex:0 0 auto; width:500px; max-width:100%; display:block; position:relative; line-height:0; border:1px solid var(--line); transition:border-color .14s ease;}
 .bf-box:hover{border-color:var(--accent);}
 .bf-box img{display:block; width:100%; height:auto;}
 .bf-hint{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
@@ -114,7 +114,7 @@ p.body b{color:var(--accent);}
 .bf-box:hover .bf-hint{opacity:1;}
 @media(max-width:640px){
   .bf-row{flex-direction:column; align-items:stretch; gap:26px;}
-  .bf-box{width:100%; max-width:300px; margin:0 auto;}
+  .bf-box{width:100%; max-width:420px; margin:0 auto;}
 }
 
 /* ---- what you get ---- */
@@ -214,7 +214,8 @@ footer .footer-links .div{opacity:.4;}
           <h2>How we test</h2>
           <p>One step forward with a correct answer.</p>
           <p>Two steps back with each mistake.</p>
-          <p>Don't fall off.</p>
+          <p>Don't fall.</p>
+          <p>Your easiest cards on positions 1 &amp; 2, and your most difficult on positions 3 &amp; 4.</p>
         </div>
         <a class="bf-box" href="https://flashboss-demo.pages.dev/">
           <img src="bossfight-poster.png" data-gif="bossfight.gif" alt="A FlashBoss German boss fight: match the translation, advance or get pushed back.">
