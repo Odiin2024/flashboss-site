@@ -161,6 +161,19 @@ select:focus, .btn:focus{outline:1px solid var(--accent);}
 
 footer{border-top:1px solid var(--line); padding:26px 22px; font-size:12px; color:var(--faint); text-align:center; letter-spacing:.04em; margin-top:40px;}
 footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{color:var(--ink);}
+.share-toggle{font:inherit; letter-spacing:inherit; color:var(--dim); background:none; border:0; margin:0 8px; padding:0; cursor:pointer;}
+.share-toggle:hover{color:var(--ink);}
+.share-modal{position:fixed; inset:0; z-index:200; display:flex; align-items:center; justify-content:center; padding:24px; background:rgba(0,0,0,.55); opacity:0; transition:opacity .18s ease;}
+.share-modal.open{opacity:1;}
+.share-modal[hidden]{display:none;}
+.share-card{position:relative; width:100%; max-width:380px; background:var(--panel); border:1px solid var(--line); padding:28px 24px 24px; text-align:center; box-shadow:0 24px 70px rgba(0,0,0,.6); transform:scale(.88); transition:transform .18s ease;}
+.share-modal.open .share-card{transform:scale(1);}
+.share-card-title{font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); margin-bottom:18px;}
+.share-close{position:absolute; top:8px; right:12px; background:none; border:0; color:var(--dim); font-size:24px; line-height:1; cursor:pointer; padding:4px;}
+.share-close:hover{color:var(--ink);}
+.share-btns{display:flex; flex-wrap:wrap; justify-content:center; gap:8px;}
+.share-btn{font-family:var(--mono); font-size:12px; letter-spacing:.04em; color:var(--ink); text-decoration:none; background:transparent; border:1px solid var(--line); padding:9px 14px; cursor:pointer; transition:border-color .14s ease, color .14s ease;}
+.share-btn:hover{border-color:var(--accent); color:var(--accent);}
 
 @media print{
   nav,.controls,header.page p,.overlay,footer .nav,.printhide{display:none !important;}
@@ -250,8 +263,22 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
 <main class="wrap" id="view"></main>
 
 <footer>
-  <span class="nav"><a href="home.html">home</a> · <a href="lessons.html">lessons</a> · <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-wordlists">steam</a></span>
+  <span class="nav"><a href="home.html">home</a> · <a href="lessons.html">lessons</a> · <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-wordlists">steam</a> · <button class="share-toggle" type="button" aria-expanded="false">share</button></span>
 </footer>
+<div class="share-modal" id="shareModal" hidden>
+  <div class="share-card" role="dialog" aria-label="Share">
+    <button class="share-close" type="button" aria-label="Close">&times;</button>
+    <div class="share-card-title">Share</div>
+    <div class="share-btns">
+      <button class="share-btn" data-share="copy" type="button">copy link</button>
+      <a class="share-btn" data-share="x" target="_blank" rel="noopener">post on X</a>
+      <a class="share-btn" data-share="facebook" target="_blank" rel="noopener">facebook</a>
+      <a class="share-btn" data-share="reddit" target="_blank" rel="noopener">reddit</a>
+      <a class="share-btn" data-share="whatsapp" target="_blank" rel="noopener">whatsapp</a>
+      <a class="share-btn" data-share="messenger" target="_blank" rel="noopener">messenger</a>
+    </div>
+  </div>
+</div>
 
 <script>
 /* ============================================================
@@ -490,6 +517,33 @@ packSel.value = (qL && LANGS.includes(qL)) ? qL : 'English';   // no ?lang -> de
 fillSets(); updateSetLabel();
 if(qS && setsFor(packSel.value).includes(qS)) setSel.value=qS;
 loadAndRender({clusterId:qC});
+// share widget: footer "share" opens a centered modal that shares THIS page
+(function(){
+  var toggle=document.querySelector('.share-toggle');
+  var modal=document.getElementById('shareModal');
+  if(!toggle||!modal) return;
+  var url=location.href.split('#')[0];
+  var text='FlashBoss — spaced-repetition flashcards with boss fights.';
+  var U=encodeURIComponent(url), T=encodeURIComponent(text);
+  var links={ x:'https://twitter.com/intent/tweet?url='+U+'&text='+T,
+    facebook:'https://www.facebook.com/sharer/sharer.php?u='+U,
+    reddit:'https://www.reddit.com/submit?url='+U+'&title='+T,
+    whatsapp:'https://wa.me/?text='+encodeURIComponent(text+' '+url),
+    messenger:'fb-messenger://share/?link='+U };
+  modal.querySelectorAll('a[data-share]').forEach(function(a){ var k=a.getAttribute('data-share'); if(links[k]) a.href=links[k]; });
+  function open(){ modal.hidden=false; requestAnimationFrame(function(){ modal.classList.add('open'); }); toggle.setAttribute('aria-expanded','true'); }
+  function close(){ modal.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); setTimeout(function(){ modal.hidden=true; },200); }
+  toggle.addEventListener('click', function(e){ e.stopPropagation(); if(modal.hidden) open(); else close(); });
+  modal.addEventListener('click', function(e){ if(e.target===modal) close(); });
+  var closeBtn=modal.querySelector('.share-close'); if(closeBtn) closeBtn.addEventListener('click', close);
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape' && !modal.hidden) close(); });
+  var copyBtn=modal.querySelector('[data-share="copy"]');
+  if(copyBtn) copyBtn.addEventListener('click', function(){
+    function done(){ copyBtn.textContent='copied!'; setTimeout(function(){ copyBtn.textContent='copy link'; },1400); }
+    function fb(){ var t=document.createElement('textarea'); t.value=url; t.style.position='fixed'; t.style.opacity='0'; document.body.appendChild(t); t.select(); try{document.execCommand('copy');}catch(e){} document.body.removeChild(t); done(); }
+    if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done,fb); else fb();
+  });
+})();
 </script>
 </body>
 </html>

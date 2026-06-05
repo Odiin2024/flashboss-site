@@ -189,10 +189,11 @@ footer .made{margin-top:12px; opacity:.8;}
       <div class="share-card-title">Share</div>
       <div class="share-btns">
         <button class="share-btn" data-share="copy" type="button">copy link</button>
-        <a class="share-btn" data-share="x" target="_blank" rel="noopener">X</a>
+        <a class="share-btn" data-share="x" target="_blank" rel="noopener">post on X</a>
         <a class="share-btn" data-share="facebook" target="_blank" rel="noopener">facebook</a>
         <a class="share-btn" data-share="reddit" target="_blank" rel="noopener">reddit</a>
-        <a class="share-btn" data-share="email">email</a>
+        <a class="share-btn" data-share="whatsapp" target="_blank" rel="noopener">whatsapp</a>
+        <a class="share-btn" data-share="messenger" target="_blank" rel="noopener">messenger</a>
       </div>
     </div>
   </div>
@@ -210,7 +211,8 @@ footer .made{margin-top:12px; opacity:.8;}
   var links={ x:'https://twitter.com/intent/tweet?url='+U+'&text='+T,
     facebook:'https://www.facebook.com/sharer/sharer.php?u='+U,
     reddit:'https://www.reddit.com/submit?url='+U+'&title='+T,
-    email:'mailto:?subject='+T+'&body='+U };
+    whatsapp:'https://wa.me/?text='+encodeURIComponent(text+' '+url),
+    messenger:'fb-messenger://share/?link='+U };
   modal.querySelectorAll('a[data-share]').forEach(function(a){ var k=a.getAttribute('data-share'); if(links[k]) a.href=links[k]; });
   function open(){ modal.hidden=false; requestAnimationFrame(function(){ modal.classList.add('open'); }); toggle.setAttribute('aria-expanded','true'); }
   function close(){ modal.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); setTimeout(function(){ modal.hidden=true; },200); }
