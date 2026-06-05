@@ -101,6 +101,7 @@ p.body b{color:var(--accent);}
 /* ---- boss-fight: rules text + demo gif, inside a titled .frame ---- */
 .bf-row{display:flex; align-items:center; gap:40px;}
 .bf-text{flex:1; min-width:0;}
+.bf-text h2{margin:0 0 14px;}
 .bf-text p{font-size:16px; color:color-mix(in oklab, var(--ink), #fff 6%); margin:0 0 12px; max-width:32ch;}
 .bf-text p:last-child{margin-bottom:0;}
 .bf-box{flex:0 0 auto; width:260px; display:block; line-height:0; border:1px solid var(--line); transition:border-color .14s ease;}
@@ -181,30 +182,31 @@ footer .footer-links .div{opacity:.4;}
     </div>
   </header>
 
-  <!-- BOSS FIGHT: rules + demo, inside a titled frame -->
-  <section class="wrap">
-    <div class="frame reveal">
-      <span class="tag">The Bossfight</span>
-      <div class="bf-row">
-        <div class="bf-text">
-          <p>One step forward with a correct answer.</p>
-          <p>Two steps back with each mistake.</p>
-          <p>Don't fall off.</p>
-        </div>
-        <a class="bf-box" href="https://flashboss-demo.pages.dev/">
-          <img src="bossfight.gif" alt="A FlashBoss German boss fight: match the translation, advance or get pushed back.">
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- THE HOOK: boss fights -->
+  <!-- THE HOOK: the approach -->
   <section class="wrap">
     <div class="frame reveal">
       <span class="tag">Listen · read · repeat · rate · fight</span>
       <h2>The FlashBoss approach</h2>
       <p class="body">The target vocabulary is grouped into thematic clusters with progressively longer, and more complex example sentences and explanatory notes. Each cluster ends in a boss fight.</p>
       <p class="body">Before you can defeat the boss, you must answer to the words you found most challenging. Win, and those cards graduate.</p>
+    </div>
+  </section>
+
+  <!-- BOSS FIGHT: how we test -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">The Bossfight</span>
+      <div class="bf-row">
+        <div class="bf-text">
+          <h2>How we test</h2>
+          <p>One step forward with a correct answer.</p>
+          <p>Two steps back with each mistake.</p>
+          <p>Don't fall off.</p>
+        </div>
+        <a class="bf-box" href="https://flashboss-demo.pages.dev/">
+          <img src="bossfight-poster.png" data-gif="bossfight.gif" alt="A FlashBoss German boss fight: match the translation, advance or get pushed back.">
+        </a>
+      </div>
     </div>
   </section>
 
@@ -254,6 +256,14 @@ footer .footer-links .div{opacity:.4;}
   if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
   var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
   els.forEach(function(e){io.observe(e);});
+})();
+// start the boss-fight gif from frame 0 the moment its box scrolls into view
+(function(){
+  var imgs=document.querySelectorAll('img[data-gif]');
+  if(!imgs.length) return;
+  if(!('IntersectionObserver' in window)){imgs.forEach(function(im){im.src=im.dataset.gif;});return;}
+  var gio=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.src=x.target.dataset.gif; gio.unobserve(x.target);}});},{threshold:.35});
+  imgs.forEach(function(im){gio.observe(im);});
 })();
 </script>
 </body>
