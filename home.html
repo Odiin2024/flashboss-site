@@ -153,6 +153,13 @@ footer .footer-links{display:flex; justify-content:center; align-items:center; g
 footer .footer-links a{color:var(--dim); text-decoration:none;}
 footer .footer-links a:hover{color:var(--ink);}
 footer .footer-links .div{opacity:.4;}
+/* share widget */
+.share-toggle{font:inherit; letter-spacing:inherit; color:var(--dim); background:none; border:0; padding:0; cursor:pointer;}
+.share-toggle:hover{color:var(--ink);}
+.share-pop{display:flex; justify-content:center; flex-wrap:wrap; gap:8px; margin:16px auto 0; max-width:440px;}
+.share-pop[hidden]{display:none;}
+.share-btn{font-family:var(--mono); font-size:12px; letter-spacing:.04em; color:var(--ink); text-decoration:none; background:transparent; border:1px solid var(--line); padding:7px 12px; cursor:pointer; transition:border-color .14s ease, color .14s ease;}
+.share-btn:hover{border-color:var(--accent); color:var(--accent);}
 </style>
 </head>
 <body>
@@ -253,8 +260,16 @@ footer .footer-links .div{opacity:.4;}
   <span class="footer-links">
     <a href="index.html">entrance</a><span class="div">·</span>
     <a href="packs.html">packs</a><span class="div">·</span>
-    <a href="about.html">about</a>
+    <a href="about.html">about</a><span class="div">·</span>
+    <button class="share-toggle" type="button" aria-expanded="false">share</button>
   </span>
+  <div class="share-pop" hidden>
+    <button class="share-btn" data-share="copy" type="button">copy link</button>
+    <a class="share-btn" data-share="x" target="_blank" rel="noopener">X</a>
+    <a class="share-btn" data-share="facebook" target="_blank" rel="noopener">facebook</a>
+    <a class="share-btn" data-share="reddit" target="_blank" rel="noopener">reddit</a>
+    <a class="share-btn" data-share="email">email</a>
+  </div>
 </footer>
 
 <script>
@@ -299,6 +314,29 @@ footer .footer-links .div{opacity:.4;}
   window.addEventListener('scroll', onScroll, {passive:true});
   window.addEventListener('resize', onScroll, {passive:true});
   update();
+})();
+// share widget: footer "share" toggles a popover of copy-link / social options
+(function(){
+  var toggle=document.querySelector('.share-toggle'), pop=document.querySelector('.share-pop');
+  if(!toggle||!pop) return;
+  var url=location.href.split('#')[0];
+  var text='FlashBoss — spaced-repetition flashcards with boss fights.';
+  var U=encodeURIComponent(url), T=encodeURIComponent(text);
+  var links={ x:'https://twitter.com/intent/tweet?url='+U+'&text='+T,
+    facebook:'https://www.facebook.com/sharer/sharer.php?u='+U,
+    reddit:'https://www.reddit.com/submit?url='+U+'&title='+T,
+    email:'mailto:?subject='+T+'&body='+U };
+  pop.querySelectorAll('a[data-share]').forEach(function(a){ var k=a.getAttribute('data-share'); if(links[k]) a.href=links[k]; });
+  function close(){ pop.hidden=true; toggle.setAttribute('aria-expanded','false'); }
+  toggle.addEventListener('click', function(e){ e.stopPropagation(); if(pop.hidden){ pop.hidden=false; toggle.setAttribute('aria-expanded','true'); } else close(); });
+  document.addEventListener('click', function(e){ if(!pop.hidden && !pop.contains(e.target) && e.target!==toggle) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+  var copyBtn=pop.querySelector('[data-share="copy"]');
+  if(copyBtn) copyBtn.addEventListener('click', function(){
+    function done(){ copyBtn.textContent='copied!'; setTimeout(function(){ copyBtn.textContent='copy link'; },1400); }
+    function fb(){ var t=document.createElement('textarea'); t.value=url; t.style.position='fixed'; t.style.opacity='0'; document.body.appendChild(t); t.select(); try{document.execCommand('copy');}catch(e){} document.body.removeChild(t); done(); }
+    if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done,fb); else fb();
+  });
 })();
 </script>
 </body>
