@@ -257,13 +257,27 @@ footer .footer-links .div{opacity:.4;}
   var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
   els.forEach(function(e){io.observe(e);});
 })();
-// start the boss-fight gif from frame 0 the moment its box scrolls into view
+// boss-fight gif: play only while its box is fully in view (top AND bottom borders
+// inside the viewport); reset to frame 0 (the poster) whenever it leaves that band.
 (function(){
-  var imgs=document.querySelectorAll('img[data-gif]');
-  if(!imgs.length) return;
-  if(!('IntersectionObserver' in window)){imgs.forEach(function(im){im.src=im.dataset.gif;});return;}
-  var gio=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.src=x.target.dataset.gif; gio.unobserve(x.target);}});},{threshold:.35});
-  imgs.forEach(function(im){gio.observe(im);});
+  var img=document.querySelector('img[data-gif]');
+  if(!img) return;
+  var poster=img.getAttribute('src'), gif=img.getAttribute('data-gif'), playing=false;
+  function fullyInView(){
+    var r=img.getBoundingClientRect();
+    var vh=window.innerHeight||document.documentElement.clientHeight;
+    return r.height>0 && r.top>=0 && r.bottom<=vh;
+  }
+  function update(){
+    var v=fullyInView();
+    if(v && !playing){ playing=true; img.src=gif; }          // (re)start from frame 0
+    else if(!v && playing){ playing=false; img.src=poster; }  // out of focus -> reset to start
+  }
+  var ticking=false;
+  function onScroll(){ if(!ticking){ ticking=true; requestAnimationFrame(function(){ ticking=false; update(); }); } }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll, {passive:true});
+  update();
 })();
 </script>
 </body>
