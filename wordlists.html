@@ -66,7 +66,7 @@ header.page p b a:hover, .howlink:hover{color:#fff; text-decoration:none;}
 select, .btn{font-family:var(--mono); font-size:14px; color:var(--ink); background:var(--panel); border:1px solid var(--line); padding:8px 12px; cursor:pointer;}
 /* closable multi-select dropdown */
 .msel{position:relative;}
-.msel-trigger{font-family:var(--mono); font-size:14px; color:var(--ink); background:var(--panel); border:1px solid var(--line); padding:8px 12px; cursor:pointer; min-width:160px; text-align:left;}
+.msel-trigger{font-family:var(--mono); font-size:14px; color:var(--ink); background:var(--panel); border:1px solid var(--line); padding:8px 12px; cursor:pointer; min-width:160px; text-align:left; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 .msel-trigger::after{content:" \25BE"; color:var(--faint);}
 .msel-trigger:hover, .msel-trigger:focus{border-color:var(--accent); outline:none;}
 .msel-pop{position:absolute; top:calc(100% + 5px); left:0; z-index:60; background:var(--panel); border:1px solid var(--line); padding:7px; display:flex; flex-direction:column; gap:7px; box-shadow:0 10px 28px rgba(0,0,0,.55);}
@@ -103,9 +103,8 @@ select:focus, .btn:focus{outline:1px solid var(--accent);}
 @media(max-width:560px){
   .controls .spacer{display:none;}
   .controls #printBtn{order:3;}
-  .controls .row > .field:nth-child(3){order:4;}              /* Clusters field -> row 2 */
-  .controls .row > .field:nth-child(3) label{display:none;}   /* drop the "Clusters" label — the trigger text labels it */
-  .msel-trigger{min-width:0;}                                  /* trim the Clusters box so the toggle fits beside it */
+  .controls .row > .field:nth-child(3){order:4; min-width:0;}  /* Clusters field -> row 2; can shrink so its "Clusters" label fits */
+  .msel-trigger{min-width:0;}                                  /* trim the Clusters box so label + toggle fit beside it */
   .controls #transToggle{order:5;}                             /* keep the toggle horizontal (switch + Translations) */
 }
 
