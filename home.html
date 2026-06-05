@@ -104,9 +104,14 @@ p.body b{color:var(--accent);}
 .bf-text h2{margin:0 0 14px;}
 .bf-text p{font-size:16px; color:color-mix(in oklab, var(--ink), #fff 6%); margin:0 0 12px; max-width:32ch;}
 .bf-text p:last-child{margin-bottom:0;}
-.bf-box{flex:0 0 auto; width:260px; display:block; line-height:0; border:1px solid var(--line); transition:border-color .14s ease;}
+.bf-box{flex:0 0 auto; width:260px; display:block; position:relative; line-height:0; border:1px solid var(--line); transition:border-color .14s ease;}
 .bf-box:hover{border-color:var(--accent);}
 .bf-box img{display:block; width:100%; height:auto;}
+.bf-hint{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+  font-size:12px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; line-height:1; white-space:nowrap;
+  color:var(--ink); background:rgba(17,16,26,.42); border:1px solid var(--accent); padding:8px 16px;
+  opacity:0; transition:opacity .15s ease; pointer-events:none;}
+.bf-box:hover .bf-hint{opacity:1;}
 @media(max-width:640px){
   .bf-row{flex-direction:column; align-items:stretch; gap:26px;}
   .bf-box{width:100%; max-width:300px; margin:0 auto;}
@@ -205,6 +210,7 @@ footer .footer-links .div{opacity:.4;}
         </div>
         <a class="bf-box" href="https://flashboss-demo.pages.dev/">
           <img src="bossfight-poster.png" data-gif="bossfight.gif" alt="A FlashBoss German boss fight: match the translation, advance or get pushed back.">
+          <span class="bf-hint">try the demo</span>
         </a>
       </div>
     </div>
@@ -258,20 +264,34 @@ footer .footer-links .div{opacity:.4;}
   els.forEach(function(e){io.observe(e);});
 })();
 // boss-fight gif: play only while its box is fully in view (top AND bottom borders
-// inside the viewport); reset to frame 0 (the poster) whenever it leaves that band.
+// inside the viewport), and ALWAYS from frame 0 — never resuming mid-loop.
+// Trick: a cached gif shares one animation timeline, so re-using its URL resumes
+// where it was. We fetch the bytes once, then mint a fresh object URL on each entry
+// so the browser decodes it anew (frame 0). Out of view -> show the static poster.
 (function(){
   var img=document.querySelector('img[data-gif]');
   if(!img) return;
-  var poster=img.getAttribute('src'), gif=img.getAttribute('data-gif'), playing=false;
+  var poster=img.getAttribute('src'), gifUrl=img.getAttribute('data-gif');
+  var gifBlob=null, objUrl=null, playing=false;
+  fetch(gifUrl).then(function(r){return r.blob();}).then(function(b){ gifBlob=b; update(); }).catch(function(){});
   function fullyInView(){
     var r=img.getBoundingClientRect();
     var vh=window.innerHeight||document.documentElement.clientHeight;
     return r.height>0 && r.top>=0 && r.bottom<=vh;
   }
+  function play(){
+    if(objUrl) URL.revokeObjectURL(objUrl);
+    if(gifBlob){ objUrl=URL.createObjectURL(gifBlob); img.src=objUrl; }
+    else { img.src=gifUrl+'?_='+Date.now(); }   // fallback until the blob is ready
+  }
+  function reset(){
+    if(objUrl){ URL.revokeObjectURL(objUrl); objUrl=null; }
+    img.src=poster;
+  }
   function update(){
     var v=fullyInView();
-    if(v && !playing){ playing=true; img.src=gif; }          // (re)start from frame 0
-    else if(!v && playing){ playing=false; img.src=poster; }  // out of focus -> reset to start
+    if(v && !playing){ playing=true; play(); }
+    else if(!v && playing){ playing=false; reset(); }
   }
   var ticking=false;
   function onScroll(){ if(!ticking){ ticking=true; requestAnimationFrame(function(){ ticking=false; update(); }); } }
