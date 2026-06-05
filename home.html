@@ -98,16 +98,25 @@ section > .reveal:not(.frame) > h2{margin-top:8px;}
 p.body{font-size:15.5px; max-width:60ch; margin:0 0 16px; color:color-mix(in oklab, var(--ink), #fff 6%);}
 p.body b{color:var(--accent);}
 
-/* ---- boss-fight feature ---- */
-.boss-cta{margin-top:28px;}
-.bossfight{display:block; max-width:600px; margin:0 auto; text-decoration:none; line-height:0;
+/* ---- boss-fight: rules text + small bordered demo box ---- */
+.bf-row{display:flex; align-items:center; gap:40px;}
+.bf-text{flex:1; min-width:0;}
+.bf-text p{font-size:16px; color:color-mix(in oklab, var(--ink), #fff 6%); margin:0 0 12px; max-width:32ch;}
+.bf-text p:last-child{margin-bottom:0;}
+.bf-box{flex:0 0 auto; width:260px; position:relative; display:block; text-decoration:none; line-height:0;
   border:1px solid var(--line); background:#11101a;
-  box-shadow:6px 6px 0 color-mix(in oklab, var(--accent), #000 68%);
+  box-shadow:5px 5px 0 color-mix(in oklab, var(--accent), #000 68%);
   transition:transform .14s ease, box-shadow .14s ease;}
-.bossfight:hover{transform:translate(-3px,-3px); box-shadow:9px 9px 0 color-mix(in oklab, var(--accent), #000 68%);}
-.bossfight img{display:block; width:100%; height:auto;}
+.bf-box:hover{transform:translate(-2px,-2px); box-shadow:7px 7px 0 color-mix(in oklab, var(--accent), #000 68%);}
+.bf-box .tag{position:absolute; top:-12px; left:16px; z-index:2; background:var(--bg);
+  padding:4px 12px; line-height:1; font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent);}
+.bf-box img{display:block; width:100%; height:auto;}
 .bf-cta{display:block; text-align:center; background:var(--accent); color:#15120c;
-  font-weight:800; letter-spacing:.05em; font-size:14px; padding:12px 16px; line-height:1;}
+  font-weight:800; letter-spacing:.05em; font-size:13px; padding:9px 14px; line-height:1;}
+@media(max-width:640px){
+  .bf-row{flex-direction:column; align-items:stretch; gap:26px;}
+  .bf-box{width:100%; max-width:300px; margin:0 auto;}
+}
 
 /* ---- what you get ---- */
 .gives{display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid var(--line); border-top:0; position:relative; overflow:hidden;}
@@ -179,12 +188,20 @@ footer .footer-links .div{opacity:.4;}
     </div>
   </header>
 
-  <!-- BOSS FIGHT: the hook visual -->
+  <!-- BOSS FIGHT: rules + demo box -->
   <section class="wrap">
-    <a class="bossfight reveal" href="https://flashboss-demo.pages.dev/">
-      <img src="boss-arena.png" alt="A FlashBoss boss fight in the terminal — Correct! Advancing...">
-      <span class="bf-cta">Try the BossFight &rarr;</span>
-    </a>
+    <div class="bf-row reveal">
+      <div class="bf-text">
+        <p>One step forward with a correct answer.</p>
+        <p>Two steps back with each mistake.</p>
+        <p>Don't fall off.</p>
+      </div>
+      <a class="bf-box" href="https://flashboss-demo.pages.dev/">
+        <span class="tag">The Bossfight</span>
+        <img src="bossfight.gif" alt="A FlashBoss German boss fight: match the translation, advance or get pushed back.">
+        <span class="bf-cta">Try it live &rarr;</span>
+      </a>
+    </div>
   </section>
 
   <!-- THE HOOK: boss fights -->
