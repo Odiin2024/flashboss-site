@@ -103,6 +103,10 @@ ul li::before{content:"·"; position:absolute; left:4px; color:var(--accent); fo
 
 /* ASCII diagrams */
 .tech-block{font-family:var(--mono); font-size:12.5px; line-height:1.5; color:var(--green); background:#0b0a06; border:1px solid var(--line); padding:16px 18px; margin:16px 0; overflow-x:auto; white-space:pre;}
+/* session-loop diagram: two cropped panels in one block; capped (~30% smaller) on desktop, full-width on mobile */
+.flowshots{max-width:560px; margin:16px 0;}
+.flowshots img{display:block; width:100%; height:auto; border:1px solid var(--line); background:#000;}
+.flowshots img + img{margin-top:14px;}
 
 /* figures */
 figure{margin:18px 0; border:1px solid var(--line); background:var(--panel); padding:0;}
@@ -273,19 +277,10 @@ footer .made{margin-top:12px; opacity:.8;}
     <section id="session">
       <h2>Session structure and scheduling</h2>
       <p>A training session processes each card through five phases. The first four are per-card; the fifth is per-cluster.</p>
-      <div class="tech-block" role="img" aria-label="Session loop diagram. Each card cycles through Listen, Read, Repeat, then Rate, after which the scheduler selects the next card. Per cluster, training continues until the cluster becomes eligible for a boss fight, which results in either a pass or a retry.">┌─ SESSION LOOP ──────────────────────────────────────┐
-│                                                     │
-│   [ Listen ] ─► [ Read ] ─► [ Repeat ] ─► [ Rate ]  │
-│       ▲                                     │       │
-│       └───── next card ◄── scheduler ◄──────┘       │
-│                                                     │
-│   Per cluster:                                      │
-│                                                     │
-│   training... ─► eligible ─► [ Fight ] ─┬─► pass    │
-│                                         │           │
-│                                         └─► retry   │
-│                                                     │
-└─────────────────────────────────────────────────────┘</div>
+      <div class="flowshots">
+        <img src="session_loop.png" alt="Session loop: each card cycles through Listen, Read, Repeat, then Rate; the scheduler then selects the next card and the cycle repeats.">
+        <img src="cluster_selection.png" alt="Per cluster: training continues until the cluster becomes eligible for a boss fight, which results in either a pass or a retry.">
+      </div>
 
       <h3>Listen</h3>
       <p>Piper text-to-speech audio plays the target word as it appears on screen. When the learner is ready, a key press displays and pronounces the example sentence. This is first exposure.</p>

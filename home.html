@@ -60,6 +60,8 @@ nav .links a.steam{font-weight:800; opacity:1;}
 .topbanner b{font-weight:800;}
 .topbanner a{color:var(--ink); font-weight:800; text-decoration:underline; text-underline-offset:2px;}
 .topbanner a:hover{color:#fff;}
+.topbanner .bn-c{display:none;}  /* desktop-only Steam/platforms line */
+@media(min-width:1024px){ .topbanner .bn-c{display:inline;} }
 @media(max-width:640px){ .topbanner{text-align:center;} .topbanner .bn-dash{display:none;} .topbanner .bn-a, .topbanner .bn-b{display:block;} }
 
 /* ---- HERO (home.png strip, darkened) ---- */
@@ -191,7 +193,7 @@ footer .footer-links .div{opacity:.4;}
   </span>
 </nav>
 
-<div class="topbanner"><span class="bn-a"><b>Italian Pareto 2</b> launches June&nbsp;11</span><span class="bn-dash"> &mdash; </span><span class="bn-b"><a href="https://apps.microsoft.com/detail/9n0dx20hk701" target="_blank" rel="noopener">Windows&nbsp;Terminal</a> required for Windows&nbsp;10</span></div>
+<div class="topbanner"><span class="bn-a"><b>Italian Pareto 2</b> launches June&nbsp;11</span><span class="bn-dash"> &mdash; </span><span class="bn-b"><a href="https://apps.microsoft.com/detail/9n0dx20hk701" target="_blank" rel="noopener">Windows&nbsp;Terminal</a> required for Windows&nbsp;10</span><span class="bn-c"> &mdash; Available on Steam &mdash; Windows&nbsp;&middot;&nbsp;Mac&nbsp;&middot;&nbsp;Linux</span></div>
 
 <main>
 
