@@ -174,6 +174,7 @@ footer .made{margin-top:12px; opacity:.8;}
     <ol>
       <li><a href="#overview">Overview</a></li>
       <li><a href="#architecture">Content architecture</a></li>
+      <li><a href="#masters">Masters</a></li>
       <li><a href="#packs">Pack structure</a></li>
       <li><a href="#session">Session structure and scheduling</a></li>
       <li><a href="#fight">The boss fight</a></li>
@@ -193,7 +194,7 @@ footer .made{margin-top:12px; opacity:.8;}
 
     <section id="architecture">
       <h2>Content architecture</h2>
-      <p>This section describes the internal structure common to FlashBoss packs. Pack-level organization — how packs combine, and how foreign-language packs differ from English packs — is documented in section 3.</p>
+      <p>This section describes the internal structure common to FlashBoss packs. Pack-level organization — how packs combine, and how foreign-language packs differ from English packs — is documented in section 4.</p>
 
       <h3>Card</h3>
       <p>Each card carries up to five text fields and two audio assets. Only the target-language fields are voiced:</p>
@@ -219,6 +220,26 @@ footer .made{margin-top:12px; opacity:.8;}
 
       <h3>Lesson</h3>
       <p>Lessons are reference pages pinned to specific cards — checkpoint material that accompanies a card through training. When a card with an attached lesson first appears, the lesson appears alongside. Each time the card resurfaces under the spaced-repetition schedule, the lesson resurfaces with it. Lessons are therefore persistent reference, not one-time exposures. A learner who has internalized a lesson's content can deactivate it individually: the card continues training, the lesson stops appearing.</p>
+    </section>
+
+    <section id="masters">
+      <h2>Masters</h2>
+      <p>Before training begins, the learner chooses a master — the guide who sets the daily pace. A master fixes the <em>streak requirement</em>: the number of cards owed each day to keep the streak alive, ranging from 8 to 34 cards, roughly 5 to 30 minutes of work. Pace and temperament are selected together, but they are independent properties.</p>
+      <div class="spec-wrap">
+      <table class="spec-table">
+        <thead><tr><th>Master</th><th>Temperament</th><th>Cards / day</th></tr></thead>
+        <tbody>
+          <tr><td>🐺 Luna — gentle, encouraging</td><td>Bossy</td><td>8</td></tr>
+          <tr><td>⚫ Claude — analytical, precise</td><td>Advisory</td><td>13</td></tr>
+          <tr><td>🐉 Shen — stern, direct</td><td>Bossy</td><td>13</td></tr>
+          <tr><td>🦉 Odiin — master and founder</td><td>Advisory</td><td>21</td></tr>
+          <tr><td>🦊 Kitsune — playful trickster</td><td>Advisory</td><td>34</td></tr>
+          <tr><td>🦅 Aquila — noble, disciplined</td><td>Bossy</td><td>34</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>Temperament governs the boss fight, and nothing else. A <strong>bossy</strong> master caps boss fights at three per day — a hard limit that guards against burnout. An <strong>advisory</strong> master warns that a further fight is unwise, then steps aside and permits it. The two are otherwise identical.</p>
+      <p>The pairing is uneven. The two busier paces each offer both temperaments — 13 cards a day under Claude (advisory) or Shen (bossy), 34 under Kitsune (advisory) or Aquila (bossy) — so at those paces, style and speed are chosen separately. The gentlest pace belongs to Luna alone (8, bossy), and the founder's pace to Odiin alone (21, advisory).</p>
     </section>
 
     <section id="packs">
@@ -311,7 +332,7 @@ footer .made{margin-top:12px; opacity:.8;}
         <span class="bf-hint">click to fight</span>
       </a>
       <p>Card ordering inside the fight is deliberate. Positions 1 and 2 pull from the cluster's easiest cards — a warm-up that lets the learner build a positional lead. Positions 3 and 4 pull from the cluster's hardest: the weakest words in the deck, delivered as soon as the learner has started to gain ground. A wrong answer at position 3 or 4 slides the learner two positions back — landing on position 1 or 2 — and the missed card is reclassified as the learner's easiest from that moment on. Unfortunately, that means it's waiting for them: the same card, now sitting in the easy slots where they've just landed. A cluster cannot be conquered until its weakest cards are mastered.</p>
-      <p>The design rationale is documented in section 6. In brief: the boss fight injects a bounded, low-stakes stressor that produces genuine retrieval pressure without the consequences of a real-world language failure. It also provides a discrete success state — cluster conquered — that the open-ended rhythm of spaced repetition otherwise lacks.</p>
+      <p>The design rationale is documented in section 7. In brief: the boss fight injects a bounded, low-stakes stressor that produces genuine retrieval pressure without the consequences of a real-world language failure. It also provides a discrete success state — cluster conquered — that the open-ended rhythm of spaced repetition otherwise lacks.</p>
     </section>
 
     <section id="pedagogy">
@@ -360,8 +381,8 @@ footer .made{margin-top:12px; opacity:.8;}
       <h2>Using FlashBoss effectively</h2>
 
       <h3>Controlling your workload</h3>
-      <p>You control your daily workload in three primary ways: your choice of master; pushing past your streak requirement to claim the daily <strong>EPIC</strong> award (recommended); and, third, a contract — once epic is claimed, you may elect to study an additional day in exchange for a <em>drive</em> token. But be careful when you play with magic.</p>
-      <p><strong>Your master (daily streak).</strong> The master you train under sets your daily requirement — the streak quota of review and new cards. A gentle master clears in under ten minutes; a hard one runs half an hour or more. Doing only the minimum always holds your streak and keeps you moving forward, and there is no ceiling: an hour or more a day is yours if you want it.</p>
+      <p>You control your daily workload in three primary ways: your choice of master; pushing past your streak requirement to claim the daily <strong>EPIC</strong> award (recommended); and, thirdly, a contract — once epic is claimed, you may elect to study an additional day in exchange for a <em>drive</em> token. But be careful when you play with magic.</p>
+      <p><strong>Your master (daily streak).</strong> Your chosen master sets the daily requirement — from 8 to 34 cards a day (the masters are detailed in section 3). Meeting only the minimum always holds your streak and keeps you moving forward, with the option to do more.</p>
       <p><strong>Epic.</strong> On the first day of a tier — its foundation day — an epic session offers up to three times your daily requirement in new cards. This is the ideal opening: it loads enough vocabulary into rotation for spaced repetition to do its work. Run epic each day and the session keeps going until every card due for review, plus the day's new cards, has been seen; how many are available rises and falls day to day.</p>
       <p><strong>Grimoire (the contract).</strong> A grimoire session pulls the next day forward — tomorrow's reviews and a further allocation of new cards, finished today. It is, literally, tomorrow's work done now, and completing it earns a <em>drive</em> token: a day off, banked for when you need it.</p>
 
