@@ -111,11 +111,12 @@ figcaption{font-size:12.5px; color:var(--faint); font-style:italic; padding:12px
 figure.shot{padding:18px; text-align:center;}
 figure.shot img{display:inline-block; width:100%; max-width:560px; height:auto; border:1px solid var(--rule);}
 figure.shot figcaption{border-top:1px solid var(--rule); margin-top:16px; padding:12px 0 0; text-align:left;}
-/* the arena description, carried as a giant clickable bossfight button */
-.bossfight{display:block; position:relative; margin:24px 0; padding:30px 32px; border:1px solid var(--line); background:var(--panel); text-decoration:none; transition:border-color .14s ease;}
+/* arena image + description, all inside one clickable bossfight button */
+.bossfight{display:block; position:relative; margin:24px 0; padding:18px; border:1px solid var(--line); background:var(--panel); text-decoration:none; transition:border-color .14s ease;}
 .bossfight:hover{border-color:var(--accent);}
-.bossfight .bf-text{margin:0; font-size:13px; font-style:italic; line-height:1.65; color:var(--faint); transition:opacity .15s ease;}
-.bossfight:hover .bf-text{opacity:.28;}
+.bossfight .bf-img{display:block; width:100%; max-width:560px; margin:0 auto; height:auto; border:1px solid var(--rule); transition:opacity .15s ease;}
+.bossfight .bf-text{margin:14px 0 0; font-size:13px; font-style:italic; line-height:1.65; color:var(--faint); transition:opacity .15s ease;}
+.bossfight:hover .bf-img, .bossfight:hover .bf-text{opacity:.3;}
 .bf-hint{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); font-size:15px; font-weight:800; letter-spacing:.16em; text-transform:uppercase; white-space:nowrap; color:var(--accent); background:rgba(11,10,6,.72); border:1px solid var(--accent); padding:13px 26px; opacity:0; transition:opacity .15s ease; pointer-events:none;}
 .bossfight:hover .bf-hint{opacity:1;}
 
@@ -305,6 +306,7 @@ footer .made{margin-top:12px; opacity:.8;}
       <p>The boss fight is the graduation mechanism for a cluster. It is the only way a cluster transitions out of active training. Unlike the Rate phase — which is self-assessed — the boss fight is adversarial and strictly multiple-choice. The learner and the boss share a single linear arena; the learner starts at the left, the boss stands further right. The task is to shove the boss off the far end. Sumo rules: only one remains on the platform.</p>
       <p>Each turn presents one of the cluster's cards as a prompt, with eight possible answers on the number keys 1–8. A correct answer advances the learner one position along the track; the boss is simultaneously shoved one position closer to the far edge. A wrong answer slides the learner two positions back toward the near edge, or off of it. When pushed off the near edge, the learner is locked out of that cluster's fight until the next day. Shoved past the far edge, the boss is defeated and the cluster is conquered.</p>
       <a class="bossfight" href="https://flashboss-demo.pages.dev/">
+        <img class="bf-img" src="boss-arena.png" alt="The boss-fight arena: a horizontal track the learner and the boss share, with a marker at the far edge.">
         <p class="bf-text">The arena: a single horizontal track the learner (left) and the boss (right) share, with a marker at the far edge — the boss's exit. A correct answer advances the learner one position and shoves the boss one closer to that edge; a wrong answer slides the learner two positions back. Positions 1–2 draw the cluster's easiest cards, positions 3–4 its hardest. Fall off the near edge and the cluster locks until the next day; shove the boss past the far edge and the cluster is conquered.</p>
         <span class="bf-hint">click to fight</span>
       </a>
@@ -352,6 +354,7 @@ footer .made{margin-top:12px; opacity:.8;}
         <li>Interaction repair strategies.</li>
       </ul>
       <p>These require live interaction and direct feedback that a scheduler cannot provide. FlashBoss is designed to be the comprehension engine underneath a larger study plan — the engine that makes interaction profitable when it happens elsewhere.</p>
+      <p>The strongest way to learn to speak and use a new language is a conversational immersion class — the company of peers pursuing the same goal, with a knowledgeable teacher to guide the way. Where geography puts that out of reach, online tutoring services and conversation classes do the same work; and where cost is the obstacle, even a chatbot can stand in — a place to practice speaking, and to ask the questions a FlashBoss session raises.</p>
     </section>
 
     <section id="effective">
@@ -359,6 +362,15 @@ footer .made{margin-top:12px; opacity:.8;}
 
       <h3>Cadence</h3>
       <p>Ten to twenty minutes per day. The scheduler is calibrated for daily sessions; longer gaps degrade the interval calibration. Missed days are absorbed without permanent damage, but consistency is the primary variable separating learners who complete Core from learners who do not. New-card introduction is controlled by the scheduler's Fibonacci split (section 4), not the learner — running multiple sessions in a day does not accelerate pacing.</p>
+
+      <h3>Controlling your workload</h3>
+      <p>Three levers decide how hard a pack pushes on a given day, and you set each pack independently.</p>
+      <p><strong>Your master.</strong> The master you train under sets your daily requirement — the streak quota of review and new cards. A gentle master clears in under ten minutes; a hard one runs half an hour or more. Doing only the minimum always holds your streak and keeps you moving forward, and there is no ceiling: an hour or more a day is yours if you want it.</p>
+      <p><strong>Epic.</strong> On the first day of a tier — its foundation day — an epic session offers up to three times your daily requirement in new cards. This is the ideal opening: it loads enough vocabulary into rotation for spaced repetition to do its work. Run epic each day and the session keeps going until every card due for review, plus the day's new cards, has been seen; how many are available rises and falls day to day.</p>
+      <p><strong>Grimoire.</strong> A grimoire session pulls the next day forward — tomorrow's reviews and a further allocation of new cards, finished today. It is, literally, tomorrow's work done now, and completing it earns drive: a day off, banked for when you need it.</p>
+
+      <h3>Read aloud</h3>
+      <p>Speak every prompt aloud as it plays. Producing the words does more than drill pronunciation: forming a sentence in your mouth recruits motor and auditory memory alongside the visual, so each card is encoded across several channels at once — a richer, more durable trace than silent reading leaves. Generating the language rather than only recognizing it is itself an act of retrieval, which is what cements a memory; the speaking confidence it builds is a bonus that compounds.</p>
 
       <h3>Failed fights</h3>
       <p>A failed boss fight is expected, not a defect. A card missed in the hard positions (3–4) is reclassified as your easiest from that point on, so it returns in the opening positions of the next attempt. The cluster cannot be conquered until that card is answered correctly — the word that beat you becomes a gate you have to clear before the fight will end. Clusters can take multiple attempts, but there's always tomorrow.</p>
