@@ -35,8 +35,10 @@ body{font-family:var(--mono); background:linear-gradient(180deg, var(--bg) 0%, #
 a{color:var(--accent);}
 
 /* ---- nav ---- */
-nav{display:flex; justify-content:space-between; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line); position:relative; z-index:3; background:var(--bg);}
-nav .brand{font-weight:500; letter-spacing:.1em; color:var(--dim);}
+nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line); position:relative; z-index:3; background:var(--bg);}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--dim); margin-right:auto;}
+nav .lang-toggle{flex:none; margin-left:22px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--ink); background:#000; border:1px solid var(--ink); padding:5px 8px; line-height:1; text-decoration:none; cursor:pointer;}
+nav .lang-toggle:hover{background:var(--ink); color:#000;}
 nav .brand a, nav .brand .sep{color:var(--dim); text-decoration:none;}
 nav .brand a:hover{color:var(--ink);}
 nav .brand .here{font-weight:800; color:var(--ink);}
@@ -204,6 +206,7 @@ footer .footer-links .div{opacity:.4;}
   <span class="nav-mobile">
     <a href="resources.html">resources</a>
   </span>
+  <button class="lang-toggle" type="button" aria-label="Language: English">EN</button>
 </nav>
 
 <div class="topbanner"><span class="bn-a"><b>Italian Pareto 2</b> launches June&nbsp;11</span><span class="bn-dash"> &mdash; </span><span class="bn-b"><a href="https://apps.microsoft.com/detail/9n0dx20hk701" target="_blank" rel="noopener">Windows&nbsp;Terminal</a> required for Windows&nbsp;10</span><span class="bn-c"> &mdash; Available on Steam &mdash; Windows&nbsp;&middot;&nbsp;Mac&nbsp;&middot;&nbsp;Linux</span></div>
