@@ -37,8 +37,18 @@ a{color:var(--accent);}
 /* ---- nav ---- */
 nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line); position:relative; z-index:3; background:var(--bg);}
 nav .brand{font-weight:500; letter-spacing:.1em; color:var(--dim); margin-right:auto;}
-nav .lang-toggle{flex:none; margin-left:22px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--ink); background:#000; border:1px solid var(--ink); padding:5px 8px; line-height:1; text-decoration:none; cursor:pointer;}
-nav .lang-toggle:hover{background:var(--ink); color:#000;}
+nav .lang-switch{flex:none; margin-left:22px; position:relative;}
+nav .lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--ink); background:#000; border:1px solid var(--ink); padding:5px 8px; line-height:1; cursor:pointer;}
+nav .lang-toggle:hover, nav .lang-toggle[aria-expanded="true"]{background:var(--ink); color:#000;}
+nav .lang-caret{font-size:8px; line-height:1; transition:transform .15s ease;}
+nav .lang-toggle[aria-expanded="true"] .lang-caret{transform:rotate(180deg);}
+nav .lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:#000; border:1px solid var(--ink); min-width:120px; z-index:50;}
+nav .lang-menu[hidden]{display:none;}
+nav .lang-menu li{margin:0;}
+nav .lang-menu a{display:block; font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--ink); text-decoration:none; padding:7px 10px; white-space:nowrap;}
+nav .lang-menu a:hover{background:var(--ink); color:#000;}
+nav .lang-menu a[aria-current="true"]{color:var(--accent);}
+nav .lang-menu a[aria-current="true"]:hover{color:#000;}
 nav .brand a, nav .brand .sep{color:var(--dim); text-decoration:none;}
 nav .brand a:hover{color:var(--ink);}
 nav .brand .here{font-weight:800; color:var(--ink);}
@@ -208,10 +218,16 @@ footer .footer-links .div{opacity:.4;}
   <span class="nav-mobile">
     <a href="resources.html">Ressourcen</a>
   </span>
-  <a class="lang-toggle" href="home.html" aria-label="Zu Englisch wechseln — switch to English">DE</a>
+  <div class="lang-switch">
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Sprache wählen">DE<span class="lang-caret">▾</span></button>
+    <ul class="lang-menu" hidden>
+      <li><a href="home.html">English</a></li>
+      <li><a href="home.de.html" aria-current="true">Deutsch</a></li>
+    </ul>
+  </div>
 </nav>
 
-<div class="topbanner"><span class="bn-a"><b>Italian Pareto 2</b> erscheint am 11.&nbsp;Juni</span><span class="bn-dash"> &mdash; </span><span class="bn-b"><a href="https://apps.microsoft.com/detail/9n0dx20hk701" target="_blank" rel="noopener">Windows&nbsp;Terminal</a> für Windows&nbsp;10 erforderlich</span><span class="bn-c"> &mdash; Auf Steam erhältlich &mdash; Windows&nbsp;&middot;&nbsp;Mac&nbsp;&middot;&nbsp;Linux</span></div>
+<div class="topbanner"><span class="bn-b"><a href="https://apps.microsoft.com/detail/9n0dx20hk701" target="_blank" rel="noopener">Windows&nbsp;Terminal</a> für Windows&nbsp;10 erforderlich</span><span class="bn-dash"> &mdash; </span><span class="bn-a"><b>Italian Pareto 2</b> erscheint am 11.&nbsp;Juni</span><span class="bn-c"> &mdash; Auf Steam erhältlich &mdash; Windows&nbsp;&middot;&nbsp;Mac&nbsp;&middot;&nbsp;Linux</span></div>
 
 <main>
 
@@ -346,6 +362,15 @@ footer .footer-links .div{opacity:.4;}
 </footer>
 
 <script>
+// language dropdown: button toggles the menu; click-away / Esc closes it
+(function(){
+  var sw=document.querySelector('.lang-switch'); if(!sw) return;
+  var btn=sw.querySelector('.lang-toggle'), menu=sw.querySelector('.lang-menu');
+  function close(){ menu.hidden=true; btn.setAttribute('aria-expanded','false'); }
+  btn.addEventListener('click', function(e){ e.stopPropagation(); var willOpen=menu.hidden; menu.hidden=!willOpen; btn.setAttribute('aria-expanded', String(willOpen)); });
+  document.addEventListener('click', function(e){ if(!sw.contains(e.target)) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
 (function(){
   var els=document.querySelectorAll('.reveal');
   if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}

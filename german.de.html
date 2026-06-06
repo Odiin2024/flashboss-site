@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>German — FlashBoss</title>
-<meta name="description" content="FlashBoss German: a thousand words that grow up as you do. From 'Ich bin Student' to the letter from the Finanzamt. Spaced repetition, boss fights, gender colour-coding, and text-to-speech.">
+<title>Deutsch — FlashBoss</title>
+<meta name="description" content="FlashBoss Deutsch: 1.000 Kernwörter für das Leben in Deutschland — von „Ich bin Student“ bis zum Brief vom Finanzamt. Spaced Repetition, Bossfights, Genus-Farbcodierung und Thorsten-Sprachausgabe.">
 
 <!-- House font. If self-hosting, swap this for your local JetBrains Mono. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,9 +14,9 @@
 <style>
 /* ============================================================
    FlashBoss — German page
-   Aesthetic: phosphor terminal. The page itself moves from
-   INNOCENCE (warm, open, gentle) to EXPERIENCE (cold, dense,
-   exacting) as you scroll — Blake's arc, enacted.
+   Aesthetic: phosphor terminal. The page warms-to-cools as
+   you scroll: an open, welcoming top settling into a denser,
+   more exacting bottom — arrival giving way to everyday life.
 
    TUNE THESE FIRST:
    --der / --die / --das  -> match your in-game gender colours.
@@ -30,13 +30,13 @@
   --die:#ff8fa3;   /* feminine  */
   --das:#8fe388;   /* neuter    */
 
-  /* innocence palette (top of page) */
+  /* top palette (warm, open) */
   --inn-bg:#15120c;
   --inn-ink:#ecdcb6;
   --inn-dim:#b9a677;
   --inn-accent:#e6b450;   /* warm amber */
 
-  /* experience palette (bottom of page) */
+  /* bottom palette (cool, exacting) */
   --exp-bg:#171421;       /* midnight mauve — the end of the mood shift */
   --exp-ink:#dcd8e6;      /* lower-half text, de-greened toward mauve */
   --exp-dim:#7f968a;      /* below-the-fold dim (green-grey) — quotation, borders */
@@ -45,7 +45,7 @@
   /* FlashBoss blue — the manual's link/button accent (--link-blue) */
   --fb-blue:#7ec8ff;
 
-  /* mood: 0 = innocence, 1 = experience. Driven by scroll. */
+  /* mood: 0 = top, 1 = bottom. Driven by scroll. */
   --mood:0;
 
   --line: color-mix(in oklab, #6a5a3a, #2a3a30 calc(var(--mood) * 100%));
@@ -311,8 +311,8 @@ footer{
   border-top:1px solid var(--line); padding:28px 24px;
   font-size:12px; color:var(--exp-dim); text-align:center; letter-spacing:.04em;
 }
-footer .blake{font-style:italic; opacity:.7; max-width:50ch; margin:0 auto 12px;}
-footer .blake-cite{font-style:normal; font-size:11px; letter-spacing:.12em; text-transform:uppercase; opacity:.75; display:inline-block; margin-top:8px;}
+footer .epi{font-style:italic; opacity:.7; max-width:50ch; margin:0 auto 12px;}
+footer .epi-cite{font-style:normal; font-size:11px; letter-spacing:.12em; text-transform:uppercase; opacity:.75; display:inline-block; margin-top:8px;}
 footer .footer-links{display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap;}
 footer .footer-links a{color:inherit; text-decoration:none; opacity:.75; letter-spacing:.04em;}
 footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
@@ -324,15 +324,15 @@ footer .footer-links .div{opacity:.4;}
 <div class="vignette"></div>
 
 <nav>
-  <span class="brand"><a class="logo" href="index.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.html">home</a><span class="sep"> · </span><a href="packs.html">packs</a><span class="sep"> · </span><span class="here">German</span></span>
+  <span class="brand"><a class="logo" href="index.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.html">Start</a><span class="sep"> · </span><a href="packs.html">Packs</a><span class="sep"> · </span><span class="here">Deutsch</span></span>
   <span class="links">
-    <a href="manual/index.html">walkthrough (beta)</a>
-    <a href="resources.html">resources</a>
+    <a href="manual/index.html">Anleitung (Beta)</a>
+    <a href="resources.html">Ressourcen</a>
     <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">steam</a>
   </span>
   <span class="nav-mobile">
-    <a href="home.html">home</a>
-    <span class="r"><a href="resources.html">resources</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">steam</a></span>
+    <a href="home.html">Start</a>
+    <span class="r"><a href="resources.html">Ressourcen</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">steam</a></span>
   </span>
 </nav>
 
@@ -342,12 +342,12 @@ footer .footer-links .div{opacity:.4;}
   <header class="hero">
     <div class="wrap">
       <h1 class="reveal">Deutsch<span class="cursor"></span></h1>
-      <p class="tagline reveal">Learn the language as you learn the culture.</p>
-      <p class="sig reveal">Listen · Read · Repeat · Rate · Fight</p>
-      <p class="lede reveal">You begin saying <b class="de">Ich bin Student.</b> By the end you are reading the letter from the <b>Finanzamt</b> — and you know exactly what it wants. German Core carries you from arrival to survival.</p>
+      <p class="tagline reveal">Lerne die Sprache, während du die Kultur kennenlernst.</p>
+      <p class="sig reveal">Hören · Lesen · Wiederholen · Bewerten · Kämpfen</p>
+      <p class="lede reveal">Du beginnst mit <b class="de">„Ich bin Student.“</b> Am Ende liest du den Brief vom <b>Finanzamt</b> — und weißt genau, was er will. German Core bringt dich von den ersten Tagen bis dorthin.</p>
       <div class="actions reveal">
-        <a class="btn" href="wordlists.html?lang=German">Word Lists &rarr;</a>
-        <a class="btn" href="lessons.html?lang=German">Lessons &rarr;</a>
+        <a class="btn" href="wordlists.html?lang=German">Wortlisten &rarr;</a>
+        <a class="btn" href="lessons.html?lang=German">Lektionen &rarr;</a>
       </div>
     </div>
   </header>
@@ -356,19 +356,19 @@ footer .footer-links .div{opacity:.4;}
   <section class="wrap">
     <div class="frame">
       <span class="tag">German Core</span>
-      <h2>Get talking</h2>
-      <p class="sub">A thousand words across five tiers — the foundation of everyday German.</p>
-      <p class="body">German Core ships free with FlashBoss — built as flashcards with reference lessons that unlock as you go — greetings, daily life, getting around, your first real conversations.</p>
-      <p class="body">Tiers four and five take a short detour into life in Germany — the language for its formidable bureaucracy, and for anyone aspiring to work or study in Germany or nearby. The Pareto packs continue on from where German Core leaves off. The grammar and vocabulary ramp continually, all the way to full C1 complexity.</p>
+      <h2>Sprich los</h2>
+      <p class="sub">Tausend Wörter in fünf Stufen — die Grundlage für dein Alltagsdeutsch.</p>
+      <p class="body">German Core ist bei FlashBoss kostenlos dabei — aufgebaut als Karteikarten mit Referenzlektionen, die sich nach und nach freischalten — Begrüßungen, Alltag, sich zurechtfinden, deine ersten echten Gespräche.</p>
+      <p class="body">Die Stufen vier und fünf machen einen kurzen Abstecher ins Leben in Deutschland — die Sprache für die berühmt-berüchtigte deutsche Bürokratie und für alle, die in Deutschland oder Umgebung arbeiten oder studieren möchten. Die Pareto-Packs machen dort weiter, wo German Core aufhört. Grammatik und Wortschatz steigern sich stetig, bis hinauf zum vollen C1-Niveau.</p>
 
       <div class="movements reveal">
         <div class="mv found">
-          <div class="h">Tiers 1–3 · Foundations</div>
-          <p>Greetings, daily life, getting around, your first conversations. Standard beginner ground.</p>
+          <div class="h">Stufen 1–3 · Grundlagen</div>
+          <p>Begrüßungen, Alltag, sich zurechtfinden, deine ersten Gespräche. Solider Anfängerstoff.</p>
         </div>
         <div class="mv integ">
-          <div class="h">Tiers 4–5 · Integration</div>
-          <p>German bureaucracy, work, and study: the practical language for life in Germany.</p>
+          <div class="h">Stufen 4–5 · Integration</div>
+          <p>Deutsche Bürokratie, Beruf und Studium: die praktische Sprache für das Leben in Deutschland.</p>
         </div>
       </div>
     </div>
@@ -377,9 +377,9 @@ footer .footer-links .div{opacity:.4;}
   <!-- SENTENCE LADDER -->
   <section class="wrap">
     <div class="frame reveal">
-      <span class="tag">Watch it grow up</span>
-      <h2>Progressively more challenging</h2>
-      <p class="sub">The example sentences increase in complexity tier by tier.</p>
+      <span class="tag">Stufe für Stufe</span>
+      <h2>Fortschritt mit FlashBoss</h2>
+      <p class="sub">Die Beispielsätze werden zunehmend komplexer.</p>
       <ol class="ladder">
         <li class="reveal"><span class="ger de">Ich bin Student.</span><span class="en">I am a student.</span></li>
         <li class="reveal"><span class="ger de">Ich kaufe frisches Obst auf dem Markt.</span><span class="en">I buy fresh fruit at the market.</span></li>
@@ -393,13 +393,13 @@ footer .footer-links .div{opacity:.4;}
   <!-- GENDER COLOUR-CODING -->
   <section class="wrap">
     <div class="frame reveal">
-      <span class="tag">Read it by sight</span>
-      <h2>der · die · das, in colour</h2>
-      <p class="sub">Every noun carries its article colour-coded to gender. You remember it by sight, not by drill. Tap a card to flip it.</p>
+      <span class="tag">Auf einen Blick</span>
+      <h2>der · die · das, in Farbe</h2>
+      <p class="sub">Jedes Nomen trägt seinen Artikel farbcodiert nach Genus. Du merkst es dir über das Sehen, nicht über das Pauken. Tippe eine Karte zum Umdrehen.</p>
       <div class="legend">
-        <span><i class="lm"></i> der — masculine</span>
-        <span><i class="lf"></i> die — feminine</span>
-        <span><i class="ln"></i> das — neuter</span>
+        <span><i class="lm"></i> der — maskulin</span>
+        <span><i class="lf"></i> die — feminin</span>
+        <span><i class="ln"></i> das — neutrum</span>
       </div>
       <div class="cards">
         <div class="card m reveal">
@@ -407,33 +407,33 @@ footer .footer-links .div{opacity:.4;}
           <div class="word">Personalausweis</div>
           <div class="ex de">Ich brauche meinen gültigen Personalausweis für die Anmeldung.</div>
           <div class="trans">identity card — “I need my valid identity card for the registration.” Casual: <i>Perso</i>.</div>
-          <div class="hint">tap to flip</div>
+          <div class="hint">Tippen zum Umdrehen</div>
         </div>
         <div class="card f reveal">
           <div class="art">die</div>
           <div class="word">Anmeldung</div>
           <div class="ex de">Innerhalb von zwei Wochen die Anmeldung beim Amt machen.</div>
           <div class="trans">registration — “Do the registration at the office within two weeks.” Required within two weeks of moving.</div>
-          <div class="hint">tap to flip</div>
+          <div class="hint">Tippen zum Umdrehen</div>
         </div>
         <div class="card n reveal">
           <div class="art">das</div>
           <div class="word">Bürgeramt</div>
           <div class="ex de">Ich habe einen Termin beim Bürgeramt für die Anmeldung.</div>
           <div class="trans">civic office — “I have an appointment at the civic office for the registration.” Also: <i>Bürgerbüro</i>.</div>
-          <div class="hint">tap to flip</div>
+          <div class="hint">Tippen zum Umdrehen</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- EXPERIENCE: THE FORM -->
+  <!-- THE FORM -->
   <section class="wrap">
     <div class="reveal">
-      <h2>Germany as your home</h2>
-      <p class="sub">The language of bureaucracy is a common part of German life. Hover any line for the English.</p>
+      <h2>Deutschland als Zuhause</h2>
+      <p class="sub">Behördensprache gehört zum deutschen Alltag. Für die englische Übersetzung über eine Zeile fahren.</p>
       <div class="form">
-        <div class="head"><span>Wortschatz · Tier 4–5</span><span>Behördendeutsch</span></div>
+        <div class="head"><span>Wortschatz · Stufe 4–5</span><span>Behördendeutsch</span></div>
         <div class="row">
           <div class="k"><div class="w"><span class="a f">die</span>Anmeldung</div><small>registration</small></div>
           <div class="v">Nach dem Umzug muss ich die Anmeldung beim Amt machen. <span class="stamp">⟶ Frist: 2 Wochen</span><span class="en">After moving, I have to register at the office — required within two weeks.</span></div>
@@ -457,24 +457,24 @@ footer .footer-links .div{opacity:.4;}
   <!-- PACKS -->
   <section class="wrap">
     <div class="reveal">
-      <h2>The Pareto Principle</h2>
-      <p class="sub">3 packs. 10% of the German vocabulary for 90% of German use cases.</p>
+      <h2>Das Pareto-Prinzip</h2>
+      <p class="sub">3 Packs. 10 % des deutschen Wortschatzes für 90 % der Situationen.</p>
       <div class="packs">
         <a class="pack" href="wordlists.html?lang=German&amp;set=Core">
           <div class="n">Core</div>
-          <div class="lvl">A1–A2 · 1,000 words</div>
-          <p>Arrival to belonging, in five tiers. Thorsten text-to-speech.</p>
-          <span class="free">Included free</span>
+          <div class="lvl">A1–A2 · 1.000 Wörter</div>
+          <p>Von der Ankunft zum Alltag, in fünf Stufen. Thorsten-Sprachausgabe.</p>
+          <span class="free">Kostenlos enthalten</span>
         </a>
         <a class="pack" href="wordlists.html?lang=German&amp;set=Pareto%201">
           <div class="n">Pareto 1</div>
-          <div class="lvl">B1–B2 · 1,000 words</div>
-          <p>The next thousand, deepening work, services, and social life.</p>
+          <div class="lvl">B1–B2 · 1.000 Wörter</div>
+          <p>Die nächsten tausend — Arbeit, Behörden und soziales Leben, vertieft.</p>
         </a>
         <a class="pack" href="wordlists.html?lang=German&amp;set=Pareto%202">
           <div class="n">Pareto 2</div>
-          <div class="lvl">B2–C1 · 1,000 words</div>
-          <p>Abstract, professional, and native-like range.</p>
+          <div class="lvl">B2–C1 · 1.000 Wörter</div>
+          <p>Abstrakt, beruflich und auf muttersprachlichem Niveau.</p>
         </a>
       </div>
     </div>
@@ -483,31 +483,31 @@ footer .footer-links .div{opacity:.4;}
   <!-- METHOD -->
   <section class="wrap method">
     <div class="frame reveal">
-      <span class="tag">How it sticks</span>
-      <h2>Flashcards as an integrated system</h2>
+      <span class="tag">So bleibt es hängen</span>
+      <h2>Karteikarten als integriertes System</h2>
       <dl>
-        <dt>Fibonacci SRS</dt><dd>Rate each card 0–5. The better you know a word, the longer before it returns — spaced repetition on Fibonacci intervals.</dd>
-        <dt>Boss fights</dt><dd>Each cluster is gated by a duel you can't win without confronting and overcoming your most difficult words.</dd>
-        <dt>Graduation</dt><dd>Beat a cluster and its cards leave your daily deck for good. The deck gets smaller as you learn.</dd>
-        <dt>Audio</dt><dd>Clean Thorsten Piper text-to-speech on every word and every sentence. MIT-licensed.</dd>
-        <dt>Lessons</dt><dd>Reference lessons fire at the point in the sequence where they unlock what you're about to read.</dd>
+        <dt>Fibonacci-SRS</dt><dd>Bewerte jede Karte von 0 bis 5. Je besser du ein Wort kennst, desto später kommt es zurück — Spaced Repetition in Fibonacci-Intervallen.</dd>
+        <dt>Bossfights</dt><dd>Jedes Cluster endet in einem Duell, das du nur gewinnst, wenn du dich deinen schwersten Wörtern stellst und sie überwindest.</dd>
+        <dt>Abschluss</dt><dd>Besiege ein Cluster, und seine Karten verlassen dein tägliches Deck für immer. Das Deck wird kleiner, je mehr du lernst.</dd>
+        <dt>Audio</dt><dd>Saubere Thorsten-Piper-Sprachausgabe für jedes Wort und jeden Satz. MIT-lizenziert.</dd>
+        <dt>Lektionen</dt><dd>Referenzlektionen erscheinen genau an der Stelle, an der sie das freischalten, was du als Nächstes liest.</dd>
       </dl>
     </div>
   </section>
 
   <!-- FINAL CTA -->
   <section class="final wrap reveal">
-    <a class="btn cold" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">Get FlashBoss on Steam &rarr;</a>
+    <a class="btn cold" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">FlashBoss auf Steam holen &rarr;</a>
   </section>
 
 </main>
 
 <footer>
-  <p class="blake">„Die Grenzen meiner Sprache bedeuten die Grenzen meiner Welt.“<br><span class="blake-cite">— Ludwig Wittgenstein</span></p>
+  <p class="epi">„Die Grenzen meiner Sprache bedeuten die Grenzen meiner Welt.“<br><span class="epi-cite">— Ludwig Wittgenstein</span></p>
   <span class="footer-links">
-    <a href="home.html">home</a>
+    <a href="home.html">Start</a>
     <span class="div">·</span>
-    <a href="manual/">walkthrough (beta)</a>
+    <a href="manual/">Anleitung (Beta)</a>
     <span class="div">·</span>
     <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">steam</a>
   </span>
@@ -536,7 +536,7 @@ document.querySelectorAll('.form .row').forEach(function(r){
   r.addEventListener('click', function(){ r.classList.toggle('show'); });
 });
 
-// Innocence -> Experience: drive --mood from scroll position
+// drive --mood from scroll position (top -> bottom)
 (function(){
   var root = document.documentElement, ticking = false;
   function update(){
