@@ -126,6 +126,19 @@ p.body b{color:var(--accent);}
   .bf-box{width:100%; max-width:420px; margin:0 auto;}
 }
 
+/* ---- the card: field anatomy beside a card screenshot (sized like the gif) ---- */
+.card-row{display:flex; align-items:stretch; gap:40px;}
+.card-anatomy{flex:1; min-width:0; display:flex; flex-direction:column; justify-content:space-between; padding:48px 0 36px;}
+.card-anatomy p{font-size:15px; color:var(--dim); margin:0; max-width:36ch; line-height:1.5;}
+.card-anatomy p b{color:var(--ink); font-weight:700;}
+.card-shot{flex:0 0 auto; align-self:flex-start; width:400px; max-width:100%; display:block; line-height:0; border:1px solid var(--line);}
+.card-shot img{display:block; width:100%; height:auto;}
+@media(max-width:680px){
+  .card-row{flex-direction:column; align-items:stretch; gap:24px;}
+  .card-anatomy{gap:16px; padding:0; justify-content:flex-start;}
+  .card-shot{width:100%; max-width:420px; margin:0 auto;}
+}
+
 /* ---- what you get ---- */
 .gives{display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid var(--line); border-top:0; position:relative; overflow:hidden;}
 .gives::after{content:""; position:absolute; left:0; right:0; top:0; height:3px;
@@ -218,6 +231,26 @@ footer .footer-links .div{opacity:.4;}
       <h2>The FlashBoss approach</h2>
       <p class="body">The target vocabulary is grouped into thematic clusters with progressively longer, and more complex example sentences and explanatory notes. Each cluster ends in a boss fight.</p>
       <p class="body">Before you can defeat the boss, you must answer to the words you found most challenging. Win, and those cards graduate.</p>
+    </div>
+  </section>
+
+  <!-- THE CARD: what a card holds -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">The card</span>
+      <h2>What a card holds</h2>
+      <div class="card-row">
+        <div class="card-anatomy">
+          <p><b>Target word</b> — the vocabulary item, its article colour-coded to gender, with mastery stars.</p>
+          <p><b>Example sentence</b> — built only from words already introduced.</p>
+          <p><b>Example translation</b> — an idiomatic rendering of the sentence.</p>
+          <p><b>Translation</b> — the word's plain meaning.</p>
+          <p><b>Notes</b> — etymology, grammar, and register.</p>
+        </div>
+        <div class="card-shot">
+          <img src="ehefrau.png" alt="A FlashBoss flashcard for the German word die Ehefrau (wife): a colour-coded target word with mastery stars, an example sentence and its translation, the plain translation, and notes.">
+        </div>
+      </div>
     </div>
   </section>
 
