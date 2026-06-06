@@ -111,6 +111,12 @@ figcaption{font-size:12.5px; color:var(--faint); font-style:italic; padding:12px
 figure.shot{padding:18px; text-align:center;}
 figure.shot img{display:inline-block; width:100%; max-width:560px; height:auto; border:1px solid var(--rule);}
 figure.shot figcaption{border-top:1px solid var(--rule); margin-top:16px; padding:12px 0 0; text-align:left;}
+/* giant bossfight demo button (same treatment as home.html) */
+.bossfight{display:block; position:relative; max-width:560px; margin:24px auto; line-height:0; border:1px solid var(--line); text-decoration:none; transition:border-color .14s ease;}
+.bossfight:hover{border-color:var(--accent);}
+.bossfight img{display:block; width:100%; height:auto;}
+.bf-hint{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); font-size:13px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; line-height:1; white-space:nowrap; color:var(--ink); background:rgba(11,10,6,.5); border:1px solid var(--accent); padding:11px 20px; opacity:0; transition:opacity .15s ease; pointer-events:none;}
+.bossfight:hover .bf-hint{opacity:1;}
 
 /* CTA buttons */
 .cta-row{display:flex; gap:14px; flex-wrap:wrap; margin:30px 0 6px;}
@@ -258,13 +264,13 @@ footer .made{margin-top:12px; opacity:.8;}
 └─────────────────────────────────────────────────────┘</div>
 
       <h3>Listen</h3>
-      <p>TTS plays the target word followed by the example sentence. Only the target word appears on screen. This is first exposure.</p>
+      <p>Piper text-to-speech audio plays the target word as it appears on the screen, and when you are ready, press any key to have the example sentence displayed and pronounced for you. This is first exposure.</p>
 
       <h3>Read</h3>
-      <p>The example sentence and its translation appear. The learner has time to parse the sentence, cross-reference the translation, and absorb the grammar in context.</p>
+      <p>At each step, reading the pronounced material aloud consolidates memory, as well as improves your pronunciation and confidence speaking German. Then, the learner has time to parse the sentence, cross-reference the translation, and absorb the grammar in context.</p>
 
       <h3>Repeat</h3>
-      <p>TTS replays the example sentence on demand. Repeat cycles are unlimited at this phase; the learner moves forward when ready.</p>
+      <p>On the presentation of the English translation, the user is presented with options to hear the material repeated. <code>Enter</code> replays the target word, and <code>6</code> replays the example sentence. Repeat cycles are unlimited at this phase; the learner moves forward when ready.</p>
 
       <h3>Rate</h3>
       <p>The learner rates their recognition on a six-point scale (0 through 5). The rating shifts the card's position in a Fibonacci interval sequence (1, 2, 3, 5, 8, 13, 21… days), with a per-rating minimum interval applied as a floor. Rating 0 is a special case — a reset to 1 day regardless of the card's prior position.</p>
@@ -297,10 +303,10 @@ footer .made{margin-top:12px; opacity:.8;}
       <h2>The boss fight</h2>
       <p>The boss fight is the graduation mechanism for a cluster. It is the only way a cluster transitions out of active training. Unlike the Rate phase — which is self-assessed — the boss fight is adversarial and strictly multiple-choice. The learner and the boss share a single linear arena; the learner starts at the left, the boss stands further right. The task is to shove the boss off the far end. Sumo rules: only one remains on the platform.</p>
       <p>Each turn presents one of the cluster's cards as a prompt, with eight possible answers on the number keys 1–8. A correct answer advances the learner one position along the track; the boss is simultaneously shoved one position closer to the far edge. A wrong answer slides the learner two positions back toward the near edge, or off of it. When pushed off the near edge, the learner is locked out of that cluster's fight until the next day. Shoved past the far edge, the boss is defeated and the cluster is conquered.</p>
-      <figure class="shot">
-        <img src="boss-arena.png" alt="The boss-fight arena: a horizontal track with the learner's avatar on the left, the boss to its right, and a marker at the far edge. Positions 1 and 2 are the easy opening slots.">
-        <figcaption>The arena: a single horizontal track the learner (left) and the boss (right) share, with a marker at the far edge — the boss's exit. A correct answer advances the learner one position and shoves the boss one closer to that edge; a wrong answer slides the learner two positions back. Positions 1–2 draw the cluster's easiest cards, positions 3–4 its hardest. Fall off the near edge and the cluster locks until the next day; shove the boss past the far edge and the cluster is conquered.</figcaption>
-      </figure>
+      <a class="bossfight" href="https://flashboss-demo.pages.dev/">
+        <img src="bossfight-poster.png" data-gif="bossfight.gif" alt="A FlashBoss boss fight in the terminal: match the translation to advance, miss and get pushed back.">
+        <span class="bf-hint">press to fight</span>
+      </a>
       <p>Card ordering inside the fight is deliberate. Positions 1 and 2 pull from the cluster's easiest cards — a warm-up that lets the learner build a positional lead. Positions 3 and 4 pull from the cluster's hardest: the weakest words in the deck, delivered as soon as the learner has started to gain ground. A wrong answer at position 3 or 4 slides the learner two positions back — landing on position 1 or 2 — and the missed card is reclassified as the learner's easiest from that moment on. Unfortunately, that means it's waiting for them: the same card, now sitting in the easy slots where they've just landed. A cluster cannot be conquered until its weakest cards are mastered.</p>
       <p>The design rationale is documented in section 6. In brief: the boss fight injects a bounded, low-stakes stressor that produces genuine retrieval pressure without the consequences of a real-world language failure. It also provides a discrete success state — cluster conquered — that the open-ended rhythm of spaced repetition otherwise lacks.</p>
     </section>
@@ -383,5 +389,17 @@ footer .made{margin-top:12px; opacity:.8;}
   </span>
 </footer>
 
+<script>
+// boss-fight gif: swap the poster for the animation (from frame 0) once it scrolls into view
+(function(){
+  var img=document.querySelector('img[data-gif]');
+  if(!img) return;
+  var gif=img.getAttribute('data-gif');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(en){en.forEach(function(x){ if(x.isIntersecting){ img.src=gif; io.disconnect(); } });},{threshold:.25});
+    io.observe(img);
+  } else { img.src=gif; }
+})();
+</script>
 </body>
 </html>
