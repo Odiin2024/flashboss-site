@@ -87,11 +87,11 @@ body{
 
 /* ---- nav (placeholder — splice in your site header) ---- */
 nav{
-  display:flex; justify-content:space-between; align-items:center;
+  display:flex; align-items:center;
   padding:18px 24px; font-size:13px; letter-spacing:.04em;
   border-bottom:1px solid var(--line);
 }
-nav .brand{font-weight:500; letter-spacing:.1em; color:var(--inn-dim);}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--inn-dim); margin-right:auto;}
 nav .brand a, nav .brand .sep{color:var(--inn-dim); text-decoration:none;}
 nav .brand a:hover{color:var(--inn-ink);}
 nav .brand .here{font-weight:800; color:var(--inn-ink);}
@@ -107,6 +107,18 @@ nav .links a{
 }
 nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
 nav .links a.steam{font-weight:800; opacity:1; color:var(--inn-ink);}
+nav .lang-switch{position:relative; margin-left:22px;}
+nav .lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--inn-ink); background:var(--inn-bg); border:1px solid var(--inn-dim); padding:5px 8px; line-height:1; cursor:pointer;}
+nav .lang-toggle:hover, nav .lang-toggle[aria-expanded="true"]{background:var(--inn-ink); color:var(--inn-bg);}
+nav .lang-caret{font-size:8px; line-height:1; transition:transform .15s ease;}
+nav .lang-toggle[aria-expanded="true"] .lang-caret{transform:rotate(180deg);}
+nav .lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--inn-bg); border:1px solid var(--inn-dim); min-width:120px; z-index:50;}
+nav .lang-menu[hidden]{display:none;}
+nav .lang-menu li{margin:0;}
+nav .lang-menu a{display:block; font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--inn-ink); text-decoration:none; padding:7px 10px; white-space:nowrap; opacity:1; margin:0;}
+nav .lang-menu a:hover{background:var(--inn-ink); color:var(--inn-bg); text-decoration:none;}
+nav .lang-menu a[aria-current="true"]{color:var(--inn-accent);}
+nav .lang-menu a[aria-current="true"]:hover{color:var(--inn-bg);}
 
 /* ---- reveal on scroll ---- */
 .reveal{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease;}
@@ -334,6 +346,13 @@ footer .footer-links .div{opacity:.4;}
     <a href="home.html">home</a>
     <span class="r"><a href="resources.html">resources</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">steam</a></span>
   </span>
+  <div class="lang-switch">
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Choose language">EN<span class="lang-caret">▾</span></button>
+    <ul class="lang-menu" hidden>
+      <li><a href="german.html" aria-current="true">English</a></li>
+      <li><a href="german.de.html">Deutsch</a></li>
+    </ul>
+  </div>
 </nav>
 
 <main>
@@ -514,6 +533,15 @@ footer .footer-links .div{opacity:.4;}
 </footer>
 
 <script>
+// language dropdown: button toggles the menu; click-away / Esc closes it
+(function(){
+  var sw=document.querySelector('.lang-switch'); if(!sw) return;
+  var btn=sw.querySelector('.lang-toggle'), menu=sw.querySelector('.lang-menu');
+  function close(){ menu.hidden=true; btn.setAttribute('aria-expanded','false'); }
+  btn.addEventListener('click', function(e){ e.stopPropagation(); var willOpen=menu.hidden; menu.hidden=!willOpen; btn.setAttribute('aria-expanded', String(willOpen)); });
+  document.addEventListener('click', function(e){ if(!sw.contains(e.target)) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
 // Staggered reveal on scroll
 (function(){
   var els = document.querySelectorAll('.reveal');
