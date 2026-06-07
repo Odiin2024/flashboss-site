@@ -743,6 +743,16 @@
                 padding: 0.25rem 0.5rem;
             }
         }
+        /* ===== responsive guardrails (structure pass): content can't break the layout ===== */
+        .panel-left, .panel-right { min-width: 0; }                 /* grid columns may shrink, not overflow */
+        .nav-child, .nav-parent { min-width: 0; overflow-wrap: break-word; }
+        .child-title { min-width: 0; overflow-wrap: anywhere; }     /* long/HTML labels wrap, not push */
+        .child-num { flex: 0 0 auto; }                              /* key badge fixed; title takes the slack */
+        .tile { min-width: 0; }
+        .tile-title, .tile-desc { overflow-wrap: anywhere; max-width: 100%; }
+        .screen-title, .screen-subheader, .mobile-title { overflow-wrap: anywhere; }  /* pixel-font headings wrap */
+        .description-text, .left-footer, .nav-title, .tile-page-footer { overflow-wrap: break-word; }
+        .manual-panel img { max-width: 100%; height: auto; }        /* no image exceeds its box */
     </style>
 </head>
 <body>
