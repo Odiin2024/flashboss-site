@@ -945,6 +945,29 @@
             }
         });
 
+        // Keyboard navigation: a displayed key label (1-9, N, *, ...) activates its button.
+        // Reads the live nav on each press, so it always matches the current screen and
+        // needs no per-render listener. Slideshow '*' is handled separately (those buttons
+        // aren't rendered on slideshow screens, so this finds nothing and stays out of the way).
+        window.addEventListener('keydown', (e) => {
+            if (!isGrimoireView) return;
+            if (e.metaKey || e.ctrlKey || e.altKey) return;
+            const tag = (e.target.tagName || '').toLowerCase();
+            if (tag === 'input' || tag === 'textarea' || e.target.isContentEditable) return;
+            const key = e.key.toUpperCase();
+            const buttons = document.querySelectorAll('#navList .nav-child, #navList .nav-parent');
+            for (const btn of buttons) {
+                const numEl = btn.querySelector('.child-num');
+                if (!numEl) continue;
+                const labels = numEl.textContent.split('\n').map(s => s.trim().toUpperCase()).filter(Boolean);
+                if (labels.includes(key)) {
+                    e.preventDefault();
+                    btn.click();
+                    return;
+                }
+            }
+        });
+
         function renderScreen() {
             // Clean up any slideshow keyboard handlers from previous screen
             if (window.slideshowCleanup) {
