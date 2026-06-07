@@ -890,6 +890,7 @@
         let screens = {};
         let currentFocus = 'entrance';
         let isGrimoireView = true;
+        let suppressHistory = false;   // true only during popstate, so we don't re-push
 
         // Toggle views
         function setView(showGrimoire) {
@@ -931,6 +932,19 @@
                 document.getElementById('screenTitle').textContent = 'Error loading data';
             });
 
+        // Browser Back/Forward → walk the screen graph instead of leaving the manual
+        window.addEventListener('popstate', (e) => {
+            const id = (e.state && e.state.screen) ||
+                       new URLSearchParams(location.search).get('screen') || 'entrance';
+            if (screens[id]) {
+                currentFocus = id;
+                suppressHistory = true;
+                renderScreen();
+                suppressHistory = false;
+                if (!isGrimoireView) setView(true);
+            }
+        });
+
         function renderScreen() {
             // Clean up any slideshow keyboard handlers from previous screen
             if (window.slideshowCleanup) {
@@ -940,6 +954,17 @@
 
             const focus = screens[currentFocus];
             if (!focus) return;
+
+            // Keep browser history in sync so Back walks the screen trail instead of
+            // exiting the manual. (suppressHistory is on only during a popstate restore.)
+            if (!suppressHistory) {
+                const stateScreen = history.state && history.state.screen;
+                if (stateScreen !== currentFocus) {
+                    const url = '?screen=' + currentFocus;
+                    if (stateScreen == null) history.replaceState({ screen: currentFocus }, '', url);
+                    else history.pushState({ screen: currentFocus }, '', url);
+                }
+            }
 
             // Title
             document.getElementById('screenTitle').textContent = focus.title;
