@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Free Printable Word Lists — Italian, German, Spanish &amp; Esperanto Vocabulary | FlashBoss</title>
-<meta name="description" content="Free, printable vocabulary word lists for Italian, German, Spanish and Esperanto. The most useful 1,000–3,000 words per language, frequency-ranked and grouped by tier and theme, each with its English translation. Hide the translations to self-test, or print a cluster and cut your own flashcards.">
+<title>Kostenlose druckbare Wortlisten — Italienisch, Deutsch, Spanisch &amp; Esperanto | FlashBoss</title>
+<meta name="description" content="Kostenlose, druckbare Vokabellisten für Italienisch, Deutsch, Spanisch und Esperanto. Die nützlichsten 1.000–3.000 Wörter pro Sprache, nach Häufigkeit geordnet und nach Stufe und Thema gruppiert, jeweils mit englischer Übersetzung. Blende die Übersetzungen aus, um dich selbst zu testen, oder drucke ein Cluster und schneide dir deine eigenen Karteikarten.">
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -107,7 +107,7 @@ select:focus, .btn:focus{outline:1px solid var(--accent);}
 .switch{width:42px; height:22px; border:1px solid var(--line); background:var(--panel); position:relative; transition:.15s;}
 .switch::after{content:""; position:absolute; top:2px; left:2px; width:16px; height:16px; background:var(--faint); transition:.15s;}
 .toggle.on .switch{border-color:var(--accent);} .toggle.on .switch::after{left:22px; background:var(--accent);}
-.toggle .tcap::after{content:"Translations";}
+.toggle .tcap::after{content:"Übersetzungen";}
 /* English: drop the duplicate "Pack" set-label and widen the set dropdown into the freed space */
 .controls.eng #setLbl{display:none;}
 .controls.eng #setSel{min-width:8em;}
@@ -223,26 +223,26 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
 <div class="overlay"></div>
 
 <nav>
-  <span class="brand"><a class="logo" href="index.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.html">home</a><span class="sep"> · </span><a href="resources.html">resources</a><span class="sep"> · </span><span class="here">word lists</span></span>
-  <a class="nav-home" href="home.html">home</a>
+  <span class="brand"><a class="logo" href="index.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.de.html">Start</a><span class="sep"> · </span><a href="resources.de.html">Ressourcen</a><span class="sep"> · </span><span class="here">Wortlisten</span></span>
+  <a class="nav-home" href="home.de.html">Start</a>
   <span class="links">
-    <a href="lessons.html">lessons</a>
+    <a href="lessons.html">Lektionen</a>
     <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-wordlists">steam</a>
   </span>
   <div class="lang-switch">
-    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Choose language">EN<span class="lang-caret">▾</span></button>
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Sprache wählen">DE<span class="lang-caret">▾</span></button>
     <ul class="lang-menu" hidden>
-      <li><a href="wordlists.html" aria-current="true">English</a></li>
-      <li><a href="wordlists.de.html">Deutsch</a></li>
+      <li><a href="wordlists.html">English</a></li>
+      <li><a href="wordlists.de.html" aria-current="true">Deutsch</a></li>
     </ul>
   </div>
 </nav>
 
 <header class="page">
   <div class="wrap">
-    <h1>Word Lists</h1>
+    <h1>Wortlisten</h1>
     <!-- Static, crawlable SEO copy: names the languages and what's offered. -->
-    <p>Free, printable vocabulary lists for every FlashBoss language — <b><a href="packs.html">English</a>, <a href="italian.html">Italian</a>, <a href="german.html">German</a>, <a href="spanish.html">Spanish</a>, and <a href="esperanto.html">Esperanto</a></b>. The most useful words in each language, frequency-ranked and grouped into thematic clusters across five tiers, each paired with its English translation. Hide the translations to test yourself, or print a cluster and cut your own flashcards. Free to use however you like. <a href="#" class="howlink" id="howBtn">How it works &rarr;</a></p>
+    <p>Kostenlose, druckbare Wortlisten für jede FlashBoss-Sprache — <b><a href="packs.de.html">Englisch</a>, <a href="italian.html">Italienisch</a>, <a href="german.de.html">Deutsch</a>, <a href="spanish.html">Spanisch</a> und <a href="esperanto.html">Esperanto</a></b>. Die nützlichsten Wörter jeder Sprache, nach Häufigkeit geordnet und in thematische Cluster über fünf Stufen gruppiert, jeweils mit englischer Übersetzung. Blende die Übersetzungen aus, um dich selbst zu testen, oder drucke ein Cluster und schneide dir deine eigenen Karteikarten. Frei nach Belieben zu nutzen. <a href="#" class="howlink" id="howBtn">Wie es funktioniert &rarr;</a></p>
   </div>
 </header>
 
@@ -250,47 +250,47 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
   <div class="wrap row">
     <div class="field"><label for="packSel">Pack</label><select id="packSel"></select></div>
     <div class="field"><label id="setLbl" for="setSel">Set</label><select id="setSel"></select></div>
-    <div class="field"><label for="clusterTrigger">Clusters</label>
+    <div class="field"><label for="clusterTrigger">Cluster</label>
       <div class="msel" id="clusterMsel">
-        <button type="button" class="msel-trigger" id="clusterTrigger" aria-haspopup="true" aria-expanded="false">select cluster(s)</button>
+        <button type="button" class="msel-trigger" id="clusterTrigger" aria-haspopup="true" aria-expanded="false">Cluster auswählen</button>
         <div class="msel-pop" id="clusterPop" hidden>
           <select id="clusterSel" multiple size="9"></select>
-          <div class="msel-foot"><span class="msel-hint">Shift-click for a contiguous range</span><button type="button" class="btn" id="clusterOk">OK</button></div>
+          <div class="msel-foot"><span class="msel-hint">Shift-Klick für einen zusammenhängenden Bereich</span><button type="button" class="btn" id="clusterOk">OK</button></div>
         </div>
       </div>
     </div>
     <div class="spacer"></div>
-    <button class="btn" id="printBtn">Print</button>
-    <div class="toggle on" id="transToggle" role="switch" aria-checked="true" aria-label="Translations" tabindex="0"><span class="switch"></span><span class="tcap"></span></div>
+    <button class="btn" id="printBtn">Drucken</button>
+    <div class="toggle on" id="transToggle" role="switch" aria-checked="true" aria-label="Übersetzungen" tabindex="0"><span class="switch"></span><span class="tcap"></span></div>
   </div>
 </div>
 
 <div class="modal printhide" id="howModal" hidden>
   <div class="modal-card">
-    <h3>Using the word lists</h3>
+    <h3>Die Wortlisten nutzen</h3>
     <ul>
-      <li><b>Pick a language and set</b> with the Pack and Set menus.</li>
-      <li><b>Choose clusters:</b> open <i>Clusters</i>, click one, then <b>Shift-click</b> another to take a contiguous range (Ctrl / &#8984;-click adds single ones). Click <b>OK</b>, press <b>Enter</b>, or click outside to close.</li>
-      <li><b>Translations</b> toggle: on shows word + translation; off hides them so you can self-test — and prints word-only cards.</li>
-      <li><b>Print:</b> the selected clusters print as cut-out, foldable flashcards — word and translation side by side with a centre fold line. Several clusters print together to save paper.</li>
+      <li><b>Wähle eine Sprache und ein Set</b> mit den Menüs Pack und Set.</li>
+      <li><b>Cluster auswählen:</b> öffne <i>Cluster</i>, klicke eins an, dann <b>Shift-Klick</b> auf ein weiteres für einen zusammenhängenden Bereich (Strg / &#8984;-Klick fügt einzelne hinzu). Klicke <b>OK</b>, drücke <b>Enter</b> oder klicke daneben zum Schließen.</li>
+      <li><b>Übersetzungen</b>-Schalter: an zeigt Wort + Übersetzung; aus blendet sie aus, damit du dich selbst testen kannst — und druckt Karten nur mit dem Wort.</li>
+      <li><b>Drucken:</b> die gewählten Cluster werden als ausschneidbare, faltbare Karteikarten gedruckt — Wort und Übersetzung nebeneinander mit einer Faltlinie in der Mitte. Mehrere Cluster werden zusammen gedruckt, um Papier zu sparen.</li>
     </ul>
-    <p class="modal-note">Card borders may not appear in your browser's print preview — they are present on the actual printout.</p>
-    <button type="button" class="btn" id="howClose">Got it</button>
+    <p class="modal-note">Die Kartenränder erscheinen womöglich nicht in der Druckvorschau deines Browsers — auf dem tatsächlichen Ausdruck sind sie vorhanden.</p>
+    <button type="button" class="btn" id="howClose">Verstanden</button>
   </div>
 </div>
 
 <main class="wrap" id="view"></main>
 
 <footer>
-  <span class="nav"><a href="home.html">home</a> · <a href="lessons.html">lessons</a> · <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-wordlists">steam</a> · <button class="share-toggle" type="button" aria-expanded="false">share</button></span>
+  <span class="nav"><a href="home.de.html">Start</a> · <a href="lessons.html">Lektionen</a> · <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-wordlists">steam</a> · <button class="share-toggle" type="button" aria-expanded="false">teilen</button></span>
 </footer>
 <div class="share-modal" id="shareModal" hidden>
-  <div class="share-card" role="dialog" aria-label="Share">
-    <button class="share-close" type="button" aria-label="Close">&times;</button>
-    <div class="share-card-title">Share</div>
+  <div class="share-card" role="dialog" aria-label="Teilen">
+    <button class="share-close" type="button" aria-label="Schließen">&times;</button>
+    <div class="share-card-title">Teilen</div>
     <div class="share-btns">
-      <button class="share-btn" data-share="copy" type="button">copy link</button>
-      <a class="share-btn" data-share="x" target="_blank" rel="noopener">post on X</a>
+      <button class="share-btn" data-share="copy" type="button">Link kopieren</button>
+      <a class="share-btn" data-share="x" target="_blank" rel="noopener">auf X posten</a>
       <a class="share-btn" data-share="facebook" target="_blank" rel="noopener">facebook</a>
       <a class="share-btn" data-share="reddit" target="_blank" rel="noopener">reddit</a>
       <a class="share-btn" data-share="whatsapp" target="_blank" rel="noopener">whatsapp</a>
@@ -308,6 +308,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
    is never displayed, so GLOBAL.json would also work unchanged.
    ============================================================ */
 const LANGS = ["Italian","German","Spanish","Esperanto","English"];
+const LANG_LABELS = {Italian:"Italienisch", German:"Deutsch", Spanish:"Spanisch", Esperanto:"Esperanto", English:"Englisch"};
 const SETS  = ["Core","Pareto 1","Pareto 2"];
 /* English ships as named packs, each in its own folder, with a single CORE_FINAL.json */
 const ENGLISH_PACKS = [["Adept","ad"],["Advance","adv"],["German Roots","gr"],["Norman Roots","nr"],["Latin Roots","lr"]];
@@ -398,7 +399,7 @@ async function loadSet(lang,set){
 }
 
 function fillPacks(){
-  packSel.innerHTML = LANGS.map(l=>`<option value="${l}">${l}</option>`).join('');
+  packSel.innerHTML = LANGS.map(l=>`<option value="${l}">${LANG_LABELS[l]||l}</option>`).join('');
   fillSets();
 }
 function fillSets(){
@@ -414,7 +415,7 @@ function buildClusterOptions(data){
   data.clusters.forEach((c,i)=>{ if(!tiers[c.tier]){tiers[c.tier]=[]; order.push(c.tier);} tiers[c.tier].push({c,i}); });
   return order.map(tn=>{
     const opts=tiers[tn].map(({c,i})=>`<option value="${i}">${esc(clusterTitle(c))}</option>`).join('');
-    return `<optgroup label="Tier ${tn}">${opts}</optgroup>`;
+    return `<optgroup label="Stufe ${tn}">${opts}</optgroup>`;
   }).join('');
 }
 
@@ -423,11 +424,11 @@ function selectedIdxs(){
 }
 function clusterSummary(){
   const data=cache[packSel.value+'|'+setSel.value], idxs=selectedIdxs();
-  if(!data||!idxs.length) return 'select cluster(s)';
+  if(!data||!idxs.length) return 'Cluster auswählen';
   const tc=i=>{const c=data.clusters[i]; return c?tcPrefix(c):'';};
   if(idxs.length===1) return tc(idxs[0]);
   const contiguous=(idxs[idxs.length-1]-idxs[0])===idxs.length-1;
-  return contiguous ? `${tc(idxs[0])} to ${tc(idxs[idxs.length-1])}` : `${tc(idxs[0])} et al`;
+  return contiguous ? `${tc(idxs[0])} bis ${tc(idxs[idxs.length-1])}` : `${tc(idxs[0])} u. a.`;
 }
 function updateTrigger(){ clusterTrigger.textContent=clusterSummary(); }
 function setURL(){
@@ -441,12 +442,12 @@ function setURL(){
 async function loadAndRender(opts){
   opts=opts||{};
   const lang=packSel.value, set=setSel.value;
-  view.innerHTML=`<div class="state"><span class="ic">◴</span>Loading ${esc(lang)} ${esc(set)}…</div>`;
+  view.innerHTML=`<div class="state"><span class="ic">◴</span>Lade ${esc(LANG_LABELS[lang]||lang)} ${esc(set)} …</div>`;
   const data=await loadSet(lang,set);
   if(packSel.value!==lang||setSel.value!==set) return; // selection changed mid-load
   if(!data||!data.clusters||!data.clusters.length){
     clusterSel.innerHTML='';
-    view.innerHTML=`<div class="state"><span class="ic">◈</span>${esc(lang)} ${esc(set)} isn't published yet — check back as packs ship.</div>`;
+    view.innerHTML=`<div class="state"><span class="ic">◈</span>${esc(LANG_LABELS[lang]||lang)} ${esc(set)} ist noch nicht veröffentlicht — schau wieder vorbei, sobald neue Packs erscheinen.</div>`;
     return;
   }
   clusterSel.innerHTML=buildClusterOptions(data);
@@ -462,14 +463,14 @@ function renderSelected(){
   if(!data||!data.clusters||!data.clusters.length) return;
   const idxs=selectedIdxs();
   setURL(); updateTrigger();
-  if(!idxs.length){ view.innerHTML=`<div class="state"><span class="ic">◧</span>Select one or more clusters above to view and print them.</div>`; return; }
+  if(!idxs.length){ view.innerHTML=`<div class="state"><span class="ic">◧</span>Wähle oben ein oder mehrere Cluster aus, um sie anzusehen und zu drucken.</div>`; return; }
   const defMode = data.clusters.some(c=>(c.cards||[]).some(k=>k.definition!=null));   // English = word + definition
   const totalCards=idxs.reduce((n,i)=>n+(data.clusters[i]?normCards(data.clusters[i]).length:0),0);
-  const bigLabel = (lang==='English') ? (data.language||set) : (lang+' '+set);
+  const bigLabel = (lang==='English') ? (data.language||set) : ((LANG_LABELS[lang]||lang)+' '+set);
   let html=`<div class="setmeta"><span class="big">${esc(bigLabel)}</span>`+
-    (data.level?`<span>${esc(data.level)}</span>`:'')+(data.total?`<span>${esc(data.total)} words</span>`:'')+
-    `<span>${data.clusters.length} clusters</span>`+
-    `<span class="sel">${idxs.length} cluster${idxs.length===1?'':'s'} selected · ${totalCards} cards</span></div>`;
+    (data.level?`<span>${esc(data.level)}</span>`:'')+(data.total?`<span>${esc(data.total)} Wörter</span>`:'')+
+    `<span>${data.clusters.length} Cluster</span>`+
+    `<span class="sel">${idxs.length} Cluster ausgewählt · ${totalCards} Karten</span></div>`;
   idxs.forEach(i=>{
     const c=data.clusters[i]; if(!c) return;
     const words=normCards(c);
@@ -484,9 +485,9 @@ function renderSelected(){
         }).join('')
       : words.map(({w,t})=>`<div class="word"><span class="w">${esc(w)}</span><span class="t">${esc(t)}</span></div>`).join('');
     html+=`<div class="cluster solo"><div class="chead">
-      <span class="tnum">TIER ${esc(c.tier)}</span>
+      <span class="tnum">STUFE ${esc(c.tier)}</span>
       <span class="cname">${esc(clusterTitle(c))}</span>
-      <span class="ccount">${words.length} words</span></div>
+      <span class="ccount">${words.length} Wörter</span></div>
       <div class="${defMode?'defs':'words'}${showTrans?'':' hide-trans'}">`+rows+`</div></div>`;
   });
   view.innerHTML=html;
@@ -542,7 +543,7 @@ loadAndRender({clusterId:qC});
   var modal=document.getElementById('shareModal');
   if(!toggle||!modal) return;
   var url=location.href.split('#')[0];
-  var text='FlashBoss — spaced-repetition flashcards with boss fights.';
+  var text='FlashBoss — Spaced-Repetition-Karteikarten mit Bossfights.';
   var U=encodeURIComponent(url), T=encodeURIComponent(text);
   var links={ x:'https://twitter.com/intent/tweet?url='+U+'&text='+T,
     facebook:'https://www.facebook.com/sharer/sharer.php?u='+U,
@@ -558,7 +559,7 @@ loadAndRender({clusterId:qC});
   document.addEventListener('keydown', function(e){ if(e.key==='Escape' && !modal.hidden) close(); });
   var copyBtn=modal.querySelector('[data-share="copy"]');
   if(copyBtn) copyBtn.addEventListener('click', function(){
-    function done(){ copyBtn.textContent='copied!'; setTimeout(function(){ copyBtn.textContent='copy link'; },1400); }
+    function done(){ copyBtn.textContent='kopiert!'; setTimeout(function(){ copyBtn.textContent='Link kopieren'; },1400); }
     function fb(){ var t=document.createElement('textarea'); t.value=url; t.style.position='fixed'; t.style.opacity='0'; document.body.appendChild(t); t.select(); try{document.execCommand('copy');}catch(e){} document.body.removeChild(t); done(); }
     if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done,fb); else fb();
   });
