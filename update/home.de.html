@@ -35,20 +35,20 @@ body{font-family:var(--mono); background:linear-gradient(180deg, var(--bg) 0%, #
 a{color:var(--accent);}
 
 /* ---- nav ---- */
-nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line); position:relative; z-index:3; background:var(--bg);}
+nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line); position:relative; z-index:5; background:var(--bg);}
 nav .brand{font-weight:500; letter-spacing:.1em; color:var(--dim); margin-right:auto;}
 nav .lang-switch{flex:none; margin-left:22px; position:relative;}
-nav .lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--ink); background:#000; border:1px solid var(--ink); padding:5px 8px; line-height:1; cursor:pointer;}
-nav .lang-toggle:hover, nav .lang-toggle[aria-expanded="true"]{background:var(--ink); color:#000;}
+nav .lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--ink); background:var(--bg); border:1px solid var(--dim); padding:5px 8px; line-height:1; cursor:pointer;}
+nav .lang-toggle:hover, nav .lang-toggle[aria-expanded="true"]{background:var(--ink); color:var(--bg);}
 nav .lang-caret{font-size:8px; line-height:1; transition:transform .15s ease;}
 nav .lang-toggle[aria-expanded="true"] .lang-caret{transform:rotate(180deg);}
-nav .lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:#000; border:1px solid var(--ink); min-width:120px; z-index:50;}
+nav .lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--bg); border:1px solid var(--dim); min-width:120px; z-index:50;}
 nav .lang-menu[hidden]{display:none;}
 nav .lang-menu li{margin:0;}
 nav .lang-menu a{display:block; font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--ink); text-decoration:none; padding:7px 10px; white-space:nowrap;}
-nav .lang-menu a:hover{background:var(--ink); color:#000;}
+nav .lang-menu a:hover{background:var(--ink); color:var(--bg);}
 nav .lang-menu a[aria-current="true"]{color:var(--accent);}
-nav .lang-menu a[aria-current="true"]:hover{color:#000;}
+nav .lang-menu a[aria-current="true"]:hover{color:var(--bg);}
 nav .brand a, nav .brand .sep{color:var(--dim); text-decoration:none;}
 nav .brand a:hover{color:var(--ink);}
 nav .brand .here{font-weight:800; color:var(--ink);}
@@ -213,10 +213,10 @@ footer .footer-links .div{opacity:.4;}
   <span class="brand"><a class="logo" href="index.html">FLASHBOSS</a><span class="pipe">|</span><span class="here">Start</span></span>
   <span class="links">
     <a href="manual/index.html">Anleitung (Beta)</a>
-    <a href="resources.html">Ressourcen</a>
+    <a href="resources.de.html">Ressourcen</a>
   </span>
   <span class="nav-mobile">
-    <a href="resources.html">Ressourcen</a>
+    <a href="resources.de.html">Ressourcen</a>
   </span>
   <div class="lang-switch">
     <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Sprache wählen">DE<span class="lang-caret">▾</span></button>
@@ -236,7 +236,7 @@ footer .footer-links .div{opacity:.4;}
     <div class="wrap">
       <h1 class="reveal">FlashBoss<span class="cursor"></span></h1>
       <p class="sig reveal">Spaced Repetition mit Bossfights</p>
-      <p class="lede reveal">Bau dir einen echten Wortschatz auf — in <b><a href="packs.html">Englisch</a>, <a href="german.html">Deutsch</a>, <a href="spanish.html">Spanisch</a>, <a href="italian.html">Italienisch</a> oder <a href="esperanto.html">Esperanto</a></b> — und stell ihn im Duell auf die Probe.</p>
+      <p class="lede reveal">Bau dir einen echten Wortschatz auf — in <b><a href="packs.html">Englisch</a>, <a href="german.de.html">Deutsch</a>, <a href="spanish.html">Spanisch</a>, <a href="italian.html">Italienisch</a> oder <a href="esperanto.html">Esperanto</a></b> — und stell ihn im Duell auf die Probe.</p>
       <div class="actions reveal">
         <a class="btn" href="wordlists.html">Wortlisten</a>
         <a class="btn" href="lessons.html">Lektionen</a>
@@ -301,7 +301,7 @@ footer .footer-links .div{opacity:.4;}
     <div class="frame reveal">
       <span class="tag">Englisch &amp; mehr</span>
       <h2>FlashBoss für Deutschsprachige</h2>
-      <p class="body"><a class="lng" href="german.html">Deutsch</a> geht im Bossfight in beide Richtungen. Leichte Wiederholung für Englischlernende ab 12.</p>
+      <p class="body"><a class="lng" href="german.de.html">Deutsch</a> geht im Bossfight in beide Richtungen. Leichte Wiederholung für Englischlernende ab 12.</p>
       <p class="body"><a class="lng" href="packs.html">Englisch</a>-Packs von A2 bis C1, Advance und Adept gratis. Obendrein <a class="lng" href="spanish.html">Spanisch</a>, <a class="lng" href="italian.html">Italienisch</a> und <a class="lng" href="esperanto.html">Esperanto</a> mit Englisch als Brücke — Zielwort und Beispielsatz in beiden Sprachen. Du schärfst also dein Englisch, während eine neue Sprache wächst.</p>
     </div>
   </section>
@@ -322,7 +322,7 @@ footer .footer-links .div{opacity:.4;}
         </div>
         <div class="give">
           <div class="g-h">Komplette Sprachkurse</div>
-          <p>Lerne <a href="german.html">Deutsch</a>, <a href="italian.html">Italienisch</a>, <a href="spanish.html">Spanisch</a> oder <a href="esperanto.html">Esperanto</a> mit FlashBoss. Je 3.000 Wörter.</p>
+          <p>Lerne <a href="german.de.html">Deutsch</a>, <a href="italian.html">Italienisch</a>, <a href="spanish.html">Spanisch</a> oder <a href="esperanto.html">Esperanto</a> mit FlashBoss. Je 3.000 Wörter.</p>
         </div>
       </div>
     </div>
@@ -340,8 +340,8 @@ footer .footer-links .div{opacity:.4;}
 
 <footer>
   <span class="footer-links">
-    <a href="resources.html">Ressourcen</a><span class="div">·</span>
-    <a href="about.html">so funktioniert's</a><span class="div">·</span>
+    <a href="resources.de.html">Ressourcen</a><span class="div">·</span>
+    <a href="about.de.html">so funktioniert's</a><span class="div">·</span>
     <button class="share-toggle" type="button" aria-expanded="false">teilen</button><span class="div">·</span>
     <a href="affiliate.html">bewerben</a>
   </span>
