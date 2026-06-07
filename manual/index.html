@@ -16,7 +16,7 @@
             height: 100vh;
             display: flex;
             flex-direction: column;
-            padding: 3vh 8vw;
+            padding: 3vh clamp(1rem, 6vw, 6rem);   /* margins give way fast on narrow windows */
             box-sizing: border-box;
         }
 
@@ -630,7 +630,10 @@
         }
 
         /* Mobile portrait */
-        @media (max-width: 768px) and (orientation: portrait) {
+        /* Stack image-over-text whenever two columns get cramped — width-based so it
+           catches a narrowed *landscape* desktop window too, not just portrait phones.
+           The image then gets the full width (big) instead of a strangled half-column. */
+        @media (max-width: 900px) {
             .manual-wrapper {
                 position: relative;
                 height: auto;
@@ -714,7 +717,8 @@
         /* Mobile landscape */
         /* Landscape phones: target by height so wide landscape phones (width > 768) are
            caught too. Drop the fixed full-height layout so nothing clips; let it scroll. */
-        @media (orientation: landscape) and (max-height: 600px) {
+        /* Wide-but-short windows only (min-width:901 so it never fights the stack above) */
+        @media (orientation: landscape) and (max-height: 600px) and (min-width: 901px) {
             .manual-wrapper {
                 position: relative;
                 height: auto;
