@@ -29,8 +29,8 @@ body{font-family:var(--mono); background:var(--bg); color:var(--ink); line-heigh
 .wrap{max-width:900px; margin:0 auto; padding:0 24px;}
 a{color:var(--accent);}
 
-nav{display:flex; justify-content:space-between; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line); position:relative; z-index:3; background:var(--bg);}
-nav .brand{font-weight:500; letter-spacing:.1em; color:var(--dim);}
+nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line); position:relative; z-index:3; background:var(--bg);}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--dim); margin-right:auto;}
 nav .brand a, nav .brand .sep{color:var(--dim); text-decoration:none;}
 nav .brand a:hover{color:var(--ink);}
 nav .brand .here{font-weight:800; color:var(--ink);}
@@ -44,6 +44,19 @@ nav .brand .pipe{color:var(--dim); margin:0 11px;}
 nav .links a{color:var(--ink); text-decoration:none; opacity:.7; margin-left:22px;}
 nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
 nav .links a.steam{font-weight:800; opacity:1;}
+nav .lang-switch{position:relative; margin-left:22px;}
+nav .lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--ink); background:var(--bg); border:1px solid var(--dim); padding:5px 8px; line-height:1; cursor:pointer;}
+nav .lang-toggle:hover, nav .lang-toggle[aria-expanded="true"]{background:var(--ink); color:var(--bg);}
+nav .lang-caret{font-size:8px; line-height:1; transition:transform .15s ease;}
+nav .lang-toggle[aria-expanded="true"] .lang-caret{transform:rotate(180deg);}
+nav .lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--bg); border:1px solid var(--dim); min-width:120px; z-index:50;}
+nav .lang-menu[hidden]{display:none;}
+nav .lang-menu li{margin:0; padding-left:0; position:static;}
+nav .lang-menu li::before{content:none;}
+nav .lang-menu a{display:block; font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--ink); text-decoration:none; padding:7px 10px; white-space:nowrap; opacity:1; margin:0;}
+nav .lang-menu a:hover{background:var(--ink); color:var(--bg); text-decoration:none;}
+nav .lang-menu a[aria-current="true"]{color:var(--accent);}
+nav .lang-menu a[aria-current="true"]:hover{color:var(--bg);}
 
 .reveal{opacity:0; transform:translateY(12px); transition:opacity .6s ease, transform .6s ease;}
 .reveal.in{opacity:1; transform:none;}
@@ -126,6 +139,13 @@ footer .made{margin-top:12px; opacity:.8;}
     <a href="home.html">home</a>
     <span class="r"><a href="resources.html">resources</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-packs">steam</a></span>
   </span>
+  <div class="lang-switch">
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Choose language">EN<span class="lang-caret">▾</span></button>
+    <ul class="lang-menu" hidden>
+      <li><a href="packs.html" aria-current="true">English</a></li>
+      <li><a href="packs.de.html">Deutsch</a></li>
+    </ul>
+  </div>
 </nav>
 
 <header class="hero">
@@ -279,6 +299,15 @@ footer .made{margin-top:12px; opacity:.8;}
 </footer>
 
 <script>
+// language dropdown: button toggles the menu; click-away / Esc closes it
+(function(){
+  var sw=document.querySelector('.lang-switch'); if(!sw) return;
+  var btn=sw.querySelector('.lang-toggle'), menu=sw.querySelector('.lang-menu');
+  function close(){ menu.hidden=true; btn.setAttribute('aria-expanded','false'); }
+  btn.addEventListener('click', function(e){ e.stopPropagation(); var willOpen=menu.hidden; menu.hidden=!willOpen; btn.setAttribute('aria-expanded', String(willOpen)); });
+  document.addEventListener('click', function(e){ if(!sw.contains(e.target)) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
 (function(){
   var els=document.querySelectorAll('.reveal');
   if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
