@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>In Development — FlashBoss</title>
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{ --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --accent:#e0a93f; --blue:#7ec8ff; --line:#3a3120; --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+*{box-sizing:border-box; margin:0; padding:0;}
+body{ font-family:var(--mono); background:var(--bg); color:var(--ink); min-height:100vh; min-height:100dvh; display:flex; align-items:center; justify-content:center; padding:24px; line-height:1.6; -webkit-font-smoothing:antialiased; }
+.card{ width:100%; max-width:520px; border:1px solid var(--line); background:var(--panel); padding:36px 30px 30px; position:relative; box-shadow:0 0 40px rgba(0,0,0,.5); }
+.tag{ position:absolute; top:-10px; left:20px; background:var(--bg); padding:0 8px; font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--dim); }
+h1{ font-size:clamp(26px,7vw,40px); font-weight:800; letter-spacing:.04em; color:var(--accent); margin:2px 0 22px; }
+.cursor{ display:inline-block; width:.5em; height:.92em; background:var(--accent); vertical-align:-.06em; margin-left:.1em; animation:blink 1.05s steps(1) infinite; }
+@keyframes blink{ 50%{opacity:0;} }
+.rows{ font-size:13px; margin:0 0 16px; }
+.rows>div{ display:flex; gap:12px; padding:5px 0; border-bottom:1px dotted var(--line); }
+.rows .k{ color:var(--dim); min-width:92px; text-transform:lowercase; }
+.rows .v{ color:var(--ink); }
+.bar{ height:12px; border:1px solid var(--line); background:#0c0a06; margin:4px 0 22px; }
+.bar i{ display:block; height:100%; width:11%; background:var(--accent); opacity:.65; }
+.joke{ font-size:13.5px; color:var(--ink); opacity:.92; margin:0 0 26px; }
+.back{ font-size:13px; color:var(--blue); text-decoration:none; }
+.back:hover{ text-decoration:underline; }
+.lang-switch{ position:fixed; top:14px; right:16px; z-index:20; }
+.lang-toggle{ display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--ink); background:var(--panel); border:1px solid var(--line); padding:5px 8px; line-height:1; cursor:pointer; }
+.lang-toggle:hover, .lang-toggle[aria-expanded="true"]{ background:var(--ink); color:var(--bg); }
+.lang-caret{ font-size:8px; line-height:1; transition:transform .15s ease; }
+.lang-toggle[aria-expanded="true"] .lang-caret{ transform:rotate(180deg); }
+.lang-menu{ position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--panel); border:1px solid var(--line); min-width:120px; }
+.lang-menu[hidden]{ display:none; }
+.lang-menu li{ margin:0; }
+.lang-menu a{ display:block; font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--ink); text-decoration:none; padding:7px 10px; white-space:nowrap; }
+.lang-menu a:hover{ background:var(--ink); color:var(--bg); }
+.lang-menu a[aria-current="true"]{ color:var(--accent); }
+.lang-menu a[aria-current="true"]:hover{ color:var(--bg); }
+</style>
+</head>
+<body>
+  <div class="lang-switch">
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Choose language">EN<span class="lang-caret">&#9662;</span></button>
+    <ul class="lang-menu" hidden>
+      <li><a href="in-development.html" aria-current="true">English</a></li>
+      <li><a href="in-development.de.html">Deutsch</a></li>
+      <li><a href="in-development.es.html">Español</a></li>
+    </ul>
+  </div>
+  <main class="card">
+    <span class="tag">FlashBoss · admin</span>
+    <h1>In Development<span class="cursor"></span></h1>
+    <div class="rows">
+      <div><span class="k">page</span><span class="v">in-development.html</span></div>
+      <div><span class="k">status</span><span class="v">in development</span></div>
+      <div><span class="k">eta</span><span class="v">soon™</span></div>
+    </div>
+    <div class="bar"><i></i></div>
+    <p class="joke">Yes — the page that lists what's in development is, itself, in development.</p>
+    <a class="back" href="packs.html">← back to packs</a>
+  </main>
+<script>
+(function(){
+  var sw=document.querySelector('.lang-switch'); if(!sw) return;
+  var btn=sw.querySelector('.lang-toggle'), menu=sw.querySelector('.lang-menu');
+  function close(){ menu.hidden=true; btn.setAttribute('aria-expanded','false'); }
+  btn.addEventListener('click', function(e){ e.stopPropagation(); var o=menu.hidden; menu.hidden=!o; btn.setAttribute('aria-expanded', String(o)); });
+  document.addEventListener('click', function(e){ if(!sw.contains(e.target)) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
+</script>
+</body>
+</html>

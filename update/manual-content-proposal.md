@@ -32,7 +32,7 @@
 
 ### `create-master` — Choose Master
 - **Now (197):** select guide; each has personality/style; provides encouragement.
-- **Proposed:** Choose your master — your guide for the journey. Each sets a different daily pace and temperament.
+- **Proposed:** Choose your master — your guide for the journey. Each sets a different daily pace.
 - **Learn more:** `masters`
 
 ---
@@ -45,18 +45,18 @@
 - **Learn more:** `session`
 
 ### `review-gates` — Review Modes
-- **Now (181):** choose training mode; SRS / gender / Gauntlet.
-- **Proposed:** Extra practice: spaced-repetition revision, German gender drills, or the Gauntlet.
+- **Now (181):** choose training mode; SRS / Gauntlet / .
+- **Proposed:** Extra practice: spaced-repetition revision for conquered cards, plus the Gauntlet.
 - **Learn more:** `session`
 
 ### `create-pack` — Choose Your Path
 - **Now (442):** installed packs; multi-pack per profile; Core/Pareto1/Pareto2; pareto principle.
-- **Proposed:** Every installed pack appears here. A pack is three sets — Core (the 1,000 essential words) plus Pareto 1 and 2.
+- **Proposed:** Every installed pack appears here. A regular pack is three sets — Core (the 1,000 essential words) plus Pareto 1 and 2. English Packs are standalone. 
 - **Learn more:** `packs`
 
 ### `tier-skip` — Tier Skip Challenge
 - **Now (227):** not everyone starts at zero; skip ahead if you know it; hard masters.
-- **Proposed:** Already know some? Prove it and skip ahead — though covering known ground never hurts.
+- **Proposed:** Not a beginner? Keep fighting until you find your level.
 - **Learn more:** `fight`
 
 ### `bossrun-challenge` — BossRun Challenge
@@ -75,12 +75,12 @@
 
 ### `know-your-enemy` — Know Your Enemy
 - **Now (349):** cluster info + progress; open cluster → word lists + fight; pagination past 8.
-- **Proposed:** Your clusters for this tier, and your progress through them. Open one to see its words — or to fight it.
+- **Proposed:** Full wordlists for each cluster of your current tier. Select a cluster for wordlists, or to fight. 
 - **Learn more:** `architecture`
 
 ### `spaced-repetition` — Continue Your Studies
 - **Now (540):** session = review + new cards; review to streak target; then new/due at own pace; grimoire pulls tomorrow forward.
-- **Proposed:** Your daily session: review cards first, until your streak target — then new cards at your own pace, in and out as you like.
+- **Proposed:** Your first task is your streak requirement. Once that is completed, further session options are available. 
 - **Learn more:** `session`
 
 ### `cluster-select` — Boss Fight Ready
@@ -119,7 +119,7 @@
 
 ### `review-srs` — Spaced Repetition Training
 - **Now (137):** cards appear by how well learned.
-- **Proposed:** Revision by spaced repetition — cards return based on how well you know them.
+- **Proposed:** Each card is individually set to return when needed.
 - **Learn more:** `session`
 
 ### `review-ddd` — Der Die Das _(slideshow)_
@@ -129,7 +129,7 @@
 
 ### `review-gauntlet` — The Gauntlet _(slideshow)_
 - **Now (147):** relentless BossRun.
-- **Proposed:** A relentless BossRun — pure vocabulary endurance.
+- **Proposed:** A relentless BossRun — your best performances stand.
 - **Learn more:** `fight`
 
 ---
