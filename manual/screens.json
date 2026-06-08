@@ -15,7 +15,7 @@
     "childDisplayNames": {
       "profile-select": "Press any key to continue"
     },
-    "description": "The FlashBoss manual is built to mirror the game itself, with each game screen featured, with explanatory notes. Try the tile view (top right).\n\nThis manual is an interactive guide to FlashBoss — not the game itself. Navigate using the blue buttons to go back or magenta buttons to go forward. The real game runs in your terminal with single-key numberpad controls for distraction-free learning, text-to-speech audio pronunciation, spaced repetition tracking, and boss fights. Think of this as the brochure. The experience is on Steam."
+    "description": "An interactive guide to FlashBoss — one game screen at a time. Magenta = forward, blue = back (or just press the number). Try Tile view, top-right."
   },
   "profile-select": {
     "id": "profile-select",
@@ -48,7 +48,7 @@
     "childExternalLinks": {
       "website-home": "../home.html"
     },
-    "description": "FlashBoss supports up to 5 user profiles. Each slot shows the user's avatar, name, and chosen master.\n\nEmpty slots display \"Create New Hero\" - selecting one begins character creation. Selecting an existing profile enters the Gates."
+    "description": "Up to five heroes. Pick an empty slot to create one, or an existing hero to enter the Gates."
   },
   "gates": {
     "id": "gates",
@@ -79,7 +79,8 @@
     "childColors": {
       "sanctum": "gold"
     },
-    "description": "Each day you return, your master meets you at the gates.\n\nHave you come to study your flashcards, or are you looking to go to another class? If you would like to take a level placement test, you can prove your knowledge and skip tiers with the Tier Skip Challenge."
+    "description": "Each day your master meets you here. Head in to study, branch to another class, or take the Tier Skip placement test.",
+    "learnMore": "session"
   },
   "create-username": {
     "id": "create-username",
@@ -95,12 +96,12 @@
     ],
     "childLabels": {
       "profile-select": "9",
-      "create-avatar": "\u21b5"
+      "create-avatar": "↵"
     },
     "childDisplayNames": {
       "profile-select": "And Enter to cancel"
     },
-    "description": "Enter a username for your new hero. This name will appear on your profile and leaderboards.\n\nType your desired name and press Enter to confirm. Press 9 then Enter to cancel."
+    "description": "Name your hero — it shows on your profile and the leaderboards."
   },
   "create-avatar": {
     "id": "create-avatar",
@@ -121,7 +122,7 @@
     "childDisplayNames": {
       "create-master": "Choose Your Avatar to Continue"
     },
-    "description": "Choose an avatar to represent your hero. Pick from a variety of pixel art characters.\n\nUse number keys 1-8 to select your avatar."
+    "description": "Pick a pixel-art avatar for your hero."
   },
   "create-master": {
     "id": "create-master",
@@ -148,7 +149,8 @@
       "master-aquila": "6",
       "create-avatar": "9"
     },
-    "description": "Select your guide: Luna, Claude, Odiin, Shen, Kitsune, or Aquila. Each master has their own personality and teaching style.\n\nYour master provides encouragement and guidance throughout your journey."
+    "description": "Choose your master — your guide for the journey. Each sets a different daily pace.",
+    "learnMore": "masters"
   },
   "master-luna": {
     "id": "master-luna",
@@ -163,7 +165,8 @@
     "childLabels": {
       "create-pack": "5"
     },
-    "description": "Luna is your guide. Her personality and teaching style will accompany you throughout your journey.\n\nPress 5 to confirm your choice and continue to language pack selection."
+    "descriptionHTML": "<b>Luna</b> — your master from here on.",
+    "learnMore": "masters"
   },
   "master-claude": {
     "id": "master-claude",
@@ -178,7 +181,8 @@
     "childLabels": {
       "create-pack": "5"
     },
-    "description": "Claude is your guide. His personality and teaching style will accompany you throughout your journey.\n\nPress 5 to confirm your choice and continue to language pack selection."
+    "descriptionHTML": "<b>Claude</b> — your master from here on.",
+    "learnMore": "masters"
   },
   "master-odiin": {
     "id": "master-odiin",
@@ -193,7 +197,8 @@
     "childLabels": {
       "create-pack": "5"
     },
-    "description": "Odiin is your guide. His personality and teaching style will accompany you throughout your journey.\n\nPress 5 to confirm your choice and continue to language pack selection."
+    "descriptionHTML": "<b>Odiin</b> — your master from here on.",
+    "learnMore": "masters"
   },
   "master-shen": {
     "id": "master-shen",
@@ -208,7 +213,8 @@
     "childLabels": {
       "create-pack": "5"
     },
-    "description": "Shen is your guide. His personality and teaching style will accompany you throughout your journey.\n\nPress 5 to confirm your choice and continue to language pack selection."
+    "descriptionHTML": "<b>Shen</b> — your master from here on.",
+    "learnMore": "masters"
   },
   "master-kitsune": {
     "id": "master-kitsune",
@@ -223,7 +229,8 @@
     "childLabels": {
       "create-pack": "5"
     },
-    "description": "Kitsune is your guide. Her personality and teaching style will accompany you throughout your journey.\n\nPress 5 to confirm your choice and continue to language pack selection."
+    "descriptionHTML": "<b>Kitsune</b> — your master from here on.",
+    "learnMore": "masters"
   },
   "master-aquila": {
     "id": "master-aquila",
@@ -238,7 +245,8 @@
     "childLabels": {
       "create-pack": "5"
     },
-    "description": "Aquila is your guide. Her personality and teaching style will accompany you throughout your journey.\n\nPress 5 to confirm your choice and continue to language pack selection."
+    "descriptionHTML": "<b>Aquila</b> — your master from here on.",
+    "learnMore": "masters"
   },
   "create-pack": {
     "id": "create-pack",
@@ -269,7 +277,8 @@
     },
     "walkthroughThumbnail": "images/selection.png",
     "walkthroughLink": "walkthrough/select.html",
-    "description": "Each installed FlashBoss pack will appear on this screen. A single profile can study multiple packs by simply changing path at the end of the days session, but it's often a better idea to have a second profile if there is one to spare. Core, Pareto 1 and Pareto 2 are the three sets that make up each language packs. The core 1000 words, and the pareto principle at play: 10 percent of the vocabulary to understand 90 percent of the language."
+    "description": "Every installed pack appears here. A regular pack is three sets — Core (the 1,000 essential words) plus Pareto 1 and 2. English Packs are standalone.",
+    "learnMore": "packs"
   },
   "profile-data": {
     "id": "profile-data",
@@ -303,7 +312,7 @@
       "back-sanctum": "sanctum",
       "back-vault": "vault"
     },
-    "description": "View your hero's stats: language pack, tier progress, streak, velocity, and trajectory.\n\nOption 7 toggles between active and frozen states. When active: 5 = Tier Skip, 8 = Meet Masters. When frozen: 5 = Delete, 8 = disabled.\n\nPress 9 to return (destination depends on where you came from)."
+    "descriptionHTML": "Your hero's stats — pack, tier, streak, velocity, trajectory. Toggle frozen/active with <b>7</b>; the other options shift to match."
   },
   "sanctum": {
     "id": "sanctum",
@@ -328,7 +337,8 @@
     "childDisplayNames": {
       "spaced-repetition": "Continue Your Studies"
     },
-    "descriptionHTML": "The Sanctum is your desk in your master's chambers. This is where you conduct your daily studies.\n\n<span class=\"desc-link\" data-target=\"know-your-enemy\">Know Your Enemy</span> allows you to see your word lists, and challenge bosses. <span class=\"desc-link\" data-target=\"spaced-repetition\">Review Cards</span> begins your studies, and <span class=\"desc-link\" data-target=\"profile-data\">Your Records</span> lets you keep track of your progress."
+    "description": "Your desk — where daily study happens. Choose an option below.",
+    "learnMore": "session"
   },
   "know-your-enemy": {
     "id": "know-your-enemy",
@@ -349,7 +359,8 @@
     "childDisplayNames": {
       "cluster-select": "Select Cluster"
     },
-    "description": "The know your enemy page is your access to the information about the clusters in your current tier, and your progress through them. Choosing a cluster will allow you to access the word lists, and if you're ready, to fight!\n\nAll clusters may be selected in true gameplay. If there are more than 8 clusters, you will be able to navigate between pages."
+    "description": "Full wordlists for each cluster of your current tier. Select a cluster for wordlists, or to fight.",
+    "learnMore": "architecture"
   },
   "cluster-select": {
     "id": "cluster-select",
@@ -373,7 +384,8 @@
       "cluster-detail": "View Cluster",
       "boss-fight": "Fight"
     },
-    "description": "This is your chance to put mastered content behind you. Choose the bossfight. Victory will purge the cards from your active deck. Defeat will lock you out of the bossfight until tomorrow.\n\nThis version of the page is available when you choose a cluster that is adequately prepared for battle. 80% of the cards in the cluster are functionally 'mastered' with an interval of 13 days or more until they are due again. A less battle ready hero would see the word list directly. Press 4 to see that list now."
+    "description": "This cluster is battle-ready. Win and its cards leave your deck for good; lose and the fight's locked until tomorrow.",
+    "learnMore": "fight"
   },
   "cluster-detail": {
     "id": "cluster-detail",
@@ -397,7 +409,8 @@
       "boss-fight": "Fight",
       "cluster-detail-2": "Toggle View"
     },
-    "description": "All imported clusters are available for inspection at any time in the program. The wordlist toggles between languages for quick reference.\n\nWhen a cluster is ready for battle, the user's most challenging 4 words are hidden to prevent pretest cramming. Sorry."
+    "description": "The cluster's word list — toggle languages for reference. Battle-ready clusters hide your four hardest words, to stop pre-fight cramming.",
+    "learnMore": "architecture"
   },
   "cluster-detail-2": {
     "id": "cluster-detail-2",
@@ -421,7 +434,8 @@
       "boss-fight": "Fight",
       "cluster-detail": "Toggle View"
     },
-    "description": "All imported clusters are available for inspection at any time in the program. The wordlist toggles between languages for quick reference.\n\nWhen a cluster is ready for battle, the user's most challenging 4 words are hidden to prevent pretest cramming. Sorry."
+    "description": "The cluster's word list — toggle languages for reference. Battle-ready clusters hide your four hardest words, to stop pre-fight cramming.",
+    "learnMore": "architecture"
   },
   "boss-fight": {
     "id": "boss-fight",
@@ -468,7 +482,8 @@
       "boss-defeat": "sanctum",
       "boss-surrender": "sanctum"
     },
-    "description": "Before you may pass, you must defeat the challenge. The platform has 4 steps. Easy Easy Hard Hard. Complete each step to progress, but a false move will push you back 2 spaces!\n\nThis is a simulated run through of how the bossfight works. One step forward, or two steps back for incorrect."
+    "description": "Four steps — easy, easy, hard, hard. Each correct answer advances you; a wrong one drops you back two.",
+    "learnMore": "fight"
   },
   "kye-page2": {
     "id": "kye-page2",
@@ -492,7 +507,7 @@
       "know-your-enemy": "Previous Page",
       "kye-list": "Food & Drink (Cluster 9)"
     },
-    "description": "More clusters available on this page.\n\nPress 4 (\u2190) for previous page, 1 to view the Food & Drink cluster, or 9 to return."
+    "description": "More clusters available on this page.\n\nPress 4 (←) for previous page, 1 to view the Food & Drink cluster, or 9 to return."
   },
   "kye-list": {
     "id": "kye-list",
@@ -615,7 +630,8 @@
     "childExternalLinks": {
       "walkthrough-session": "walkthrough/select.html"
     },
-    "description": "Each day, FlashBoss builds your session from two sources: review cards returning on schedule, and new cards introduced at a steady pace. Review cards come first — work through them until your streak target is met. After that, new cards and any remaining due cards open up. Complete them at your own pace, dipping in and out as many times as you need.\n\nIf you finish everything and want more, the Grimoire pulls tomorrow's cards forward by one day — a bonus session that advances your entire schedule. Sample a full FlashBoss cluster with 8."
+    "description": "Your first task is your streak requirement. Once that is completed, further session options are available.",
+    "learnMore": "session"
   },
   "grimoire": {
     "id": "grimoire",
@@ -642,7 +658,8 @@
     "childTargets": {
       "grimoire-session": "spaced-repetition"
     },
-    "description": "The Grimoire advances your schedule by one day. This allows extra practice after completing your daily cards. Each Grimoire session earns you Drive - saved-up days off that protect your streak.\n\nA grimoire session is very similar to a daily session except you must do all available cards in one fell swoop. Example clusters are in the previous page. Press 5 or 9 to continue your studies."
+    "description": "A bonus session that pulls tomorrow's cards forward and banks Drive. You clear all available cards in one sitting.",
+    "learnMore": "effective"
   },
   "grimoire-rules": {
     "id": "grimoire-rules",
@@ -662,7 +679,8 @@
     "childDisplayNames": {
       "grimoire": "Back to the Grimoire"
     },
-    "description": "Drive is the mismatch between sanctum time and reality. When you complete a Grimoire session, you pull time forward by a day.\n\nYour Drive equals saved-up days off. If you miss a day, Drive is consumed instead of breaking your streak.\n\nPress 9 to return to the Grimoire."
+    "description": "Drive is your buffer: each Grimoire session banks a day off. Miss a day and Drive is spent instead of your streak.",
+    "learnMore": "effective"
   },
   "review-gates": {
     "id": "review-gates",
@@ -689,7 +707,8 @@
       "review-ddd": "Der Die Das - Gender for German Nouns",
       "review-gauntlet": "The Gauntlet - BOSSRUN!!"
     },
-    "description": "Choose your training mode. Each mode offers a different way to practice your German vocabulary.\n\nPress 4 for SRS revision, 5 for gender practice, 6 for the Gauntlet, or 9 to return."
+    "description": "Extra practice: spaced-repetition revision for conquered cards, plus the Gauntlet.",
+    "learnMore": "session"
   },
   "review-srs": {
     "id": "review-srs",
@@ -705,7 +724,8 @@
     "childLabels": {
       "review-gates": "9"
     },
-    "description": "Practice your vocabulary using spaced repetition. Cards appear based on how well you've learned them.\n\nPress 9 to return to Review Modes."
+    "description": "Each card is individually set to return when needed.",
+    "learnMore": "session"
   },
   "review-ddd": {
     "id": "review-ddd",
@@ -728,7 +748,7 @@
     "childLabels": {
       "review-gates": "9"
     },
-    "description": "Practice identifying the correct grammatical gender for German nouns. Der (masculine), Die (feminine), or Das (neuter)?\n\nClick or press * to advance. Press 9 to return to Review Modes."
+    "description": "Drill German noun gender — der, die, or das?"
   },
   "review-gauntlet": {
     "id": "review-gauntlet",
@@ -749,7 +769,8 @@
     "childLabels": {
       "review-gates": "9"
     },
-    "description": "Face the Gauntlet! A relentless BOSSRUN challenge to test your vocabulary mastery.\n\nClick or press * to advance. Press 9 to return to Review Modes."
+    "description": "A relentless BossRun — your best performances stand.",
+    "learnMore": "fight"
   },
   "tier-skip": {
     "id": "tier-skip",
@@ -768,7 +789,8 @@
       "bossrun-challenge": "5",
       "gates": "9"
     },
-    "description": "Not everybody comes to FlashBoss at ground level. Try your hand at the tier skip challenge.\n\nIf you already have the knowledge you can skip ahead. But it never hurts to cover what you know. That's what the hard masters are for."
+    "description": "Not a beginner? Keep fighting until you find your level.",
+    "learnMore": "fight"
   },
   "bossrun-challenge": {
     "id": "bossrun-challenge",
@@ -789,7 +811,8 @@
     "childDisplayNames": {
       "bossfight": "Start the Bossfights!!"
     },
-    "description": "You are about to face the BossRun challenge. Answer correctly to survive and prove your vocabulary knowledge.\n\nPress 5 to begin. Press 9 to return to Tier Skip."
+    "description": "Placement battle — clear it to skip the tier.",
+    "learnMore": "fight"
   },
   "bossfight": {
     "id": "bossfight",
@@ -822,7 +845,8 @@
     "childDisplayNames": {
       "sanctum": "Skip to Sanctum"
     },
-    "description": "The BossRun is a series of BossFights until you clear the whole tier, for level placement, or for revision.\n\nThis is a simulated run through of how the bossfight works. One step forward, or two steps back for incorrect."
+    "description": "Back-to-back fights until the tier's clear — for placement or revision. Right answer steps you forward; wrong steps you back two.",
+    "learnMore": "fight"
   },
   "achievements": {
     "id": "achievements",
@@ -839,7 +863,7 @@
       "achievements-2": "6",
       "profile-data": "9"
     },
-    "description": "Journey achievements track your overall progress through FlashBoss.\n\nPress 6 for next category. Press 9 to return to Profile Data."
+    "description": "Your overall progress through FlashBoss."
   },
   "achievements-2": {
     "id": "achievements-2",
@@ -858,7 +882,7 @@
       "achievements-3": "6",
       "profile-data": "9"
     },
-    "description": "Mastery achievements track vocabulary completion and retention.\n\nPress 4 for previous, 6 for next. Press 9 to return to Profile Data."
+    "description": "Vocabulary completion and retention."
   },
   "achievements-3": {
     "id": "achievements-3",
@@ -877,7 +901,7 @@
       "achievements-4": "6",
       "profile-data": "9"
     },
-    "description": "Streak achievements reward consistent daily practice.\n\nPress 4 for previous, 6 for next. Press 9 to return to Profile Data."
+    "description": "Rewards for consistent daily practice."
   },
   "achievements-4": {
     "id": "achievements-4",
@@ -896,7 +920,7 @@
       "achievements-5": "6",
       "profile-data": "9"
     },
-    "description": "Combat achievements track BossRun victories and battles.\n\nPress 4 for previous, 6 for next. Press 9 to return to Profile Data."
+    "description": "BossRun victories and battles."
   },
   "achievements-5": {
     "id": "achievements-5",
@@ -913,7 +937,7 @@
       "achievements-4": "4",
       "profile-data": "9"
     },
-    "description": "Global achievements are special milestones shared across all profiles.\n\nPress 4 for previous. Press 9 to return to Profile Data."
+    "description": "Special milestones, shared across all your heroes."
   },
   "export-progress": {
     "id": "export-progress",
@@ -946,7 +970,7 @@
     "disabledTooltips": {
       "8": "Disabled"
     },
-    "description": "Save your profile to the Backup Vault. Creates a backup that can be restored later."
+    "description": "Back this hero up to the Vault — restorable any time."
   },
   "meet-masters": {
     "id": "meet-masters",
@@ -974,7 +998,8 @@
       "mm-aquila": "6",
       "profile-data": "9"
     },
-    "description": "You found it! This is the place to earn a beta key - the full game, free for life.\n\nSelecting a master takes you back to the Profile Data screen. In the game, you will now have your chosen master. Which master did you choose?"
+    "description": "You found it — the beta-key screen (the full game, free for life). Pick the master you'd play with.",
+    "learnMore": "masters"
   },
   "mm-luna": {
     "id": "mm-luna",
@@ -991,7 +1016,8 @@
       "profile-data": "5",
       "meet-masters": "9"
     },
-    "description": "You found it! This is the place to earn a beta key - the full game, free for life.\n\nSelecting a master takes you back to the Profile Data screen. In the game, you will now have your chosen master. Which master did you choose?"
+    "descriptionHTML": "<b>Luna</b> — confirm to claim your beta key and return.",
+    "learnMore": "masters"
   },
   "mm-claude": {
     "id": "mm-claude",
@@ -1008,7 +1034,8 @@
       "profile-data": "5",
       "meet-masters": "9"
     },
-    "description": "You found it! This is the place to earn a beta key - the full game, free for life.\n\nSelecting a master takes you back to the Profile Data screen. In the game, you will now have your chosen master. Which master did you choose?"
+    "descriptionHTML": "<b>Claude</b> — confirm to claim your beta key and return.",
+    "learnMore": "masters"
   },
   "mm-odiin": {
     "id": "mm-odiin",
@@ -1025,7 +1052,8 @@
       "profile-data": "5",
       "meet-masters": "9"
     },
-    "description": "You found it! This is the place to earn a beta key - the full game, free for life.\n\nSelecting a master takes you back to the Profile Data screen. In the game, you will now have your chosen master. Which master did you choose?"
+    "descriptionHTML": "<b>Odiin</b> — confirm to claim your beta key and return.",
+    "learnMore": "masters"
   },
   "mm-shen": {
     "id": "mm-shen",
@@ -1042,7 +1070,8 @@
       "profile-data": "5",
       "meet-masters": "9"
     },
-    "description": "You found it! This is the place to earn a beta key - the full game, free for life.\n\nSelecting a master takes you back to the Profile Data screen. In the game, you will now have your chosen master. Which master did you choose?"
+    "descriptionHTML": "<b>Shen</b> — confirm to claim your beta key and return.",
+    "learnMore": "masters"
   },
   "mm-kitsune": {
     "id": "mm-kitsune",
@@ -1059,7 +1088,8 @@
       "profile-data": "5",
       "meet-masters": "9"
     },
-    "description": "You found it! This is the place to earn a beta key - the full game, free for life.\n\nSelecting a master takes you back to the Profile Data screen. In the game, you will now have your chosen master. Which master did you choose?"
+    "descriptionHTML": "<b>Kitsune</b> — confirm to claim your beta key and return.",
+    "learnMore": "masters"
   },
   "mm-aquila": {
     "id": "mm-aquila",
@@ -1076,7 +1106,8 @@
       "profile-data": "5",
       "meet-masters": "9"
     },
-    "description": "You found it! This is the place to earn a beta key - the full game, free for life.\n\nSelecting a master takes you back to the Profile Data screen. In the game, you will now have your chosen master. Which master did you choose?"
+    "descriptionHTML": "<b>Aquila</b> — confirm to claim your beta key and return.",
+    "learnMore": "masters"
   },
   "vault": {
     "id": "vault",
@@ -1098,7 +1129,7 @@
       "empty-vault": "screenshots/common/vault-empty.png",
       "first-time": "walkthrough/unsorted images/first.png"
     },
-    "description": "The vault stores backed-up profiles for later restoration.\n\nPress 1 to view a preserved hero's frozen data. The thumbnails show screens that only appear when the database is empty.\n\nPress 9 to return to Profile Selection."
+    "description": "Backed-up heroes, kept safe for later restoration."
   },
   "profile-data-vault": {
     "id": "profile-data-vault",
@@ -1132,7 +1163,7 @@
       "back-vault": "vault",
       "back-profile-data": "profile-data"
     },
-    "description": "The screen appears frozen and grey to indicate the profile is inactive.\n\nOptions: Delete Permanently (5), Achievements (6), Restore/Toggle (7), Meet the Masters (8 - disabled while frozen).\n\nPress 7 to toggle revival - the hero comes back to colour. Press 9 to return (destination depends on where you came from)."
+    "descriptionHTML": "A frozen, backed-up hero — grey until you restore them. Toggle revival with <b>7</b>."
   },
   "delete-profile": {
     "id": "delete-profile",
@@ -1148,9 +1179,9 @@
       "back-profile-data-del"
     ],
     "childLabels": {
-      "profile-deleted": "\u21b5",
-      "back-vault-del": "9\u21b5",
-      "back-profile-data-del": "9\u21b5"
+      "profile-deleted": "↵",
+      "back-vault-del": "9↵",
+      "back-profile-data-del": "9↵"
     },
     "childDisplayNames": {
       "back-vault-del": "Vault",
@@ -1160,7 +1191,7 @@
       "back-vault-del": "vault",
       "back-profile-data-del": "profile-data"
     },
-    "description": "Confirm permanent deletion of this profile. This action cannot be undone.\n\nPress Enter to confirm deletion. Press 9 then Enter to cancel and return."
+    "description": "Permanently delete this hero. This can't be undone."
   },
   "profile-deleted": {
     "id": "profile-deleted",
@@ -1175,7 +1206,7 @@
     "childLabels": {
       "profile-select": "*"
     },
-    "description": "The profile has been permanently deleted.\n\nPress any key to return to Profile Selection."
+    "description": "Done — the hero has been deleted."
   },
   "about-1": {
     "id": "about-1",
@@ -1193,7 +1224,8 @@
       "about-2": "6",
       "profile-select": "9"
     },
-    "description": "FlashBoss is collaborative language learning software built through conversation between a teacher who can't code and an AI who can.\n\nCore Principles: Fibonacci-based spaced repetition, engagement through gamification, graded language progression, complex mechanics \u2192 simple interface."
+    "description": "FlashBoss in brief — collaborative language software: a teacher who can't code and an AI who can.",
+    "learnMore": "pedagogy"
   },
   "about-2": {
     "id": "about-2",
@@ -1212,7 +1244,7 @@
       "about-3": "6",
       "profile-select": "9"
     },
-    "description": "Language packs in development: French Core, French Pareto 1 & 2, Italian Core, Spanish Core.\n\nEnglish Expansion: Vocabulary Builder, German Roots, Latin Roots, Medical Terminology, Legal Terminology."
+    "description": "In development: French, Italian and Spanish Core; English expansions (roots and terminology packs)."
   },
   "about-3": {
     "id": "about-3",
@@ -1266,7 +1298,7 @@
       "lesson-pack-select": "1",
       "profile-select": "9"
     },
-    "description": "FlashBoss is designed to be intuitive. There aren't many places to go — it just takes a moment to learn the map. Think of shortcuts like phone numbers: dial 555 for your daily session, 54 for boss fights, 568 to change your master. Press 5 to go forward, 9 to go back. That's all you need to know."
+    "descriptionHTML": "FlashBoss is a small map. Think of shortcuts as phone numbers — <b>555</b> for your daily session, <b>54</b> for boss fights. 5 forward, 9 back."
   },
   "lesson-pack-select": {
     "id": "lesson-pack-select",
@@ -1284,7 +1316,7 @@
       "german-lessons": "2",
       "hints-tips": "9"
     },
-    "description": "You can search any lesson from any FlashBoss pack through the help menu. Search by language > set > tier to find your lesson lists."
+    "description": "Search any lesson from any pack — by language, then set, then tier."
   },
   "german-lessons": {
     "id": "german-lessons",
@@ -1305,7 +1337,7 @@
     "childDisplayNames": {
       "lesson-content": "Lesson 2: Modal Verbs"
     },
-    "description": "Choose a lesson to review its content. Lessons are attached to trigger flashcards and repeat with the cards, but can be turned off. The lesson list allows you to access the lesson again."
+    "description": "Pick a lesson to review. Lessons surface with their flashcards (and can be switched off)."
   },
   "lesson-content": {
     "id": "lesson-content",
@@ -1320,7 +1352,7 @@
     "childLabels": {
       "german-lessons": "9"
     },
-    "description": "Example: Lesson 2 - Modal Verbs.\n\nModal verbs express ability, permission, obligation, or desire: k\u00f6nnen (can), d\u00fcrfen (may), sollen (should), m\u00fcssen (must), wollen (want to), m\u00f6chten (would like).\n\nStructure: Modal + infinitive at the END."
+    "description": "Example: Lesson 2 - Modal Verbs.\n\nModal verbs express ability, permission, obligation, or desire: können (can), dürfen (may), sollen (should), müssen (must), wollen (want to), möchten (would like).\n\nStructure: Modal + infinitive at the END."
   },
   "terminal": {
     "id": "terminal",
