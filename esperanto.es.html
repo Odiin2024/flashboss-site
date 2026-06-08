@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Esperanto — FlashBoss</title>
-<meta name="description" content="FlashBoss Esperanto: the language built to be learned. Perfectly regular — no irregular verbs, no genders, no exceptions — and built around the worldwide community you join. From 'Saluton' to writing, meeting, and belonging across borders. Spaced repetition, boss fights, and text-to-speech.">
+<meta name="description" content="FlashBoss Esperanto: el idioma diseñado para aprenderse. Perfectamente regular — sin verbos irregulares, sin géneros, sin excepciones — y construido en torno a la comunidad mundial a la que te unes. De 'Saluton' a escribir, conocer gente y pertenecer más allá de las fronteras. Repetición espaciada, boss fights y síntesis de voz.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
@@ -144,7 +144,7 @@ p.body b{color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--m
 /* sentence ladder */
 .ladder{list-style:none; margin:0; padding:0; counter-reset:tier;}
 .ladder li{counter-increment:tier; border-left:2px solid var(--line); padding:18px 0 18px 26px; margin-left:8px; position:relative;}
-.ladder li::before{content:"T" counter(tier); position:absolute; left:-15px; top:18px;
+.ladder li::before{content:"E" counter(tier); position:absolute; left:-15px; top:18px;
   background:color-mix(in oklab, var(--d-bg), var(--u-bg) calc(var(--mood)*100%)); font-size:11px; font-weight:700; letter-spacing:.05em; padding:2px 0;
   color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
 .ladder .ger{font-weight:500;}
@@ -214,6 +214,9 @@ footer .footer-links{display:flex; justify-content:center; align-items:center; g
 footer .footer-links a{color:inherit; text-decoration:none; opacity:.75; letter-spacing:.04em;}
 footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
 footer .footer-links .div{opacity:.4;}
+
+.bridge-banner{font-family:var(--mono); font-size:12.5px; line-height:1.55; text-align:center; padding:11px 24px; color:#f0e6d3; background:rgba(126,200,255,.12); border-top:1px solid rgba(126,200,255,.28); border-bottom:1px solid rgba(126,200,255,.28);}
+.bridge-banner b{color:#7ec8ff; font-weight:700;}
 </style>
 </head>
 <body>
@@ -221,25 +224,26 @@ footer .footer-links .div{opacity:.4;}
 <div class="vignette"></div>
 
 <nav>
-  <span class="brand"><a class="logo" href="index.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.html">home</a><span class="sep"> · </span><a href="packs.html">packs</a><span class="sep"> · </span><span class="here">Esperanto</span></span>
+  <span class="brand"><a class="logo" href="index.es.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.es.html">inicio</a><span class="sep"> · </span><a href="packs.es.html">paquetes</a><span class="sep"> · </span><span class="here">esperanto</span></span>
   <span class="links">
-    <a href="manual/index.html">walkthrough (beta)</a>
-    <a href="resources.html">resources</a>
+    <a href="manual/index.html">guía completa (beta)</a>
+    <a href="resources.es.html">recursos</a>
     <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">steam</a>
   </span>
   <span class="nav-mobile">
-    <a href="home.html">home</a>
-    <span class="r"><a href="resources.html">resources</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">steam</a></span>
+    <a href="home.es.html">inicio</a>
+    <span class="r"><a href="resources.es.html">recursos</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">steam</a></span>
   </span>
   <div class="lang-switch">
-    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Choose language">EN<span class="lang-caret">▾</span></button>
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Elegir idioma">ES<span class="lang-caret">▾</span></button>
     <ul class="lang-menu" hidden>
-      <li><a href="esperanto.html" aria-current="true">English</a></li>
+      <li><a href="esperanto.html">English</a></li>
       <li><a href="esperanto.de.html">Deutsch</a></li>
-      <li><a href="esperanto.es.html">Español</a></li>
+      <li><a href="esperanto.es.html" aria-current="true">Español</a></li>
     </ul>
   </div>
 </nav>
+<div class="bridge-banner">FlashBoss enseña con el <b>inglés</b> como puente — se requieren conocimientos de inglés. La interfaz y las traducciones están en inglés.</div>
 
 <main>
 
@@ -247,12 +251,12 @@ footer .footer-links .div{opacity:.4;}
   <header class="hero">
     <div class="wrap">
       <h1 class="reveal">Esperanto<span class="cursor"></span></h1>
-      <p class="tagline reveal">Learn the language built to be learned.</p>
-      <p class="sig reveal">Listen · Read · Repeat · Rate · Fight</p>
-      <p class="lede reveal">You begin with <b class="eo">Saluton.</b> Within weeks you're reading it, because nothing is irregular and nothing is hidden.</p>
+      <p class="tagline reveal">Aprende el idioma diseñado para aprenderse.</p>
+      <p class="sig reveal">Escuchar · Leer · Repetir · Calificar · Luchar</p>
+      <p class="lede reveal">Empiezas con <b class="eo">Saluton.</b> En unas semanas ya lo lees, porque nada es irregular y nada está oculto.</p>
       <div class="actions reveal">
-        <a class="btn" href="wordlists.html?lang=Esperanto">Word Lists &rarr;</a>
-        <a class="btn" href="lessons.html?lang=Esperanto">Lessons &rarr;</a>
+        <a class="btn" href="wordlists.es.html?lang=Esperanto">Listas de vocabulario &rarr;</a>
+        <a class="btn" href="lessons.es.html?lang=Esperanto">Lecciones &rarr;</a>
       </div>
     </div>
   </header>
@@ -260,18 +264,18 @@ footer .footer-links .div{opacity:.4;}
   <!-- THE ARGUMENT -->
   <section class="wrap">
     <div class="frame">
-      <span class="tag">Esperanto core design</span>
-      <h2>The language that rewards you fastest</h2>
+      <span class="tag">Diseño de Esperanto Core</span>
+      <h2>El idioma que más rápido te recompensa</h2>
       <p class="sub eo">La interna ideo — the inner idea.</p>
-      <p class="body">Esperanto was intentionally and intelligently designed — built to be learnable. There are no irregular verbs, no noun genders, no silent letters, no exceptions waiting to trip you. Every word is spelled as it sounds and every ending means exactly one thing. So the FlashBoss method works almost immediately here: progress is visible week over week, in a way no natural language can match.</p>
-      <p class="body">And the destination is different. You don't learn Esperanto to survive a trip or consume the media — you learn it to <b>join its people</b>. Core runs from first words and the regular grammar engine, through writing and messaging online, to the thing Esperanto is really for: correspondence, meetups, and a community spread across every continent and no homeland. It's the most welcoming room on earth, and 1,000 words gets you through the door.</p>
+      <p class="body">El esperanto se diseñó de forma intencionada e inteligente — construido para poder aprenderse. No hay verbos irregulares, ni géneros, ni letras mudas, ni excepciones esperando para hacerte tropezar. Cada palabra se escribe como suena y cada terminación significa exactamente una cosa. Así que el método de FlashBoss funciona casi de inmediato aquí: el progreso se ve semana a semana, de un modo que ninguna lengua natural puede igualar.</p>
+      <p class="body">Y el destino es distinto. No aprendes esperanto para sobrevivir a un viaje o consumir los medios — lo aprendes para <b>unirte a su gente</b>. Core va desde las primeras palabras y el motor gramatical regular, pasando por escribir y mensajear en línea, hasta aquello para lo que el esperanto existe de verdad: la correspondencia, los encuentros y una comunidad repartida por todos los continentes y sin patria. Es la sala más acogedora de la tierra, y 1.000 palabras te hacen cruzar la puerta.</p>
 
       <div class="run reveal">
-        <div class="step"><div class="t">Tier 1</div><p>Survival words and the regular verb system — the engine, learned once.</p></div>
-        <div class="step"><div class="t">Tier 2</div><p>Family, feelings, opinions, polite discourse — talking with people.</p></div>
-        <div class="step"><div class="t">Tier 3</div><p>Devices, the internet, social media, writing online — the modern channels.</p></div>
-        <div class="step"><div class="t">Tier 4</div><p>Letters, email, sharing news, making plans — real correspondence.</p></div>
-        <div class="step"><div class="t">Tier 5</div><p>The community, meetups, cultures, the world — belonging, across borders.</p></div>
+        <div class="step"><div class="t">Etapa 1</div><p>Palabras de supervivencia y el sistema verbal regular — el motor, aprendido una vez.</p></div>
+        <div class="step"><div class="t">Etapa 2</div><p>Familia, sentimientos, opiniones, trato cortés — hablar con la gente.</p></div>
+        <div class="step"><div class="t">Etapa 3</div><p>Dispositivos, internet, redes sociales, escribir en línea — los canales modernos.</p></div>
+        <div class="step"><div class="t">Etapa 4</div><p>Cartas, correo, compartir noticias, hacer planes — correspondencia de verdad.</p></div>
+        <div class="step"><div class="t">Etapa 5</div><p>La comunidad, los encuentros, las culturas, el mundo — pertenencia, más allá de las fronteras.</p></div>
       </div>
     </div>
   </section>
@@ -279,9 +283,9 @@ footer .footer-links .div{opacity:.4;}
   <!-- SENTENCE LADDER -->
   <section class="wrap">
     <div class="frame reveal">
-      <span class="tag">Watch it grow up</span>
-      <h2>Progressively more challenging</h2>
-      <p class="sub">The example sentences increase in complexity tier by tier.</p>
+      <span class="tag">Míralo crecer</span>
+      <h2>Cada vez más exigente</h2>
+      <p class="sub">Las frases de ejemplo se vuelven más complejas etapa a etapa.</p>
       <ol class="ladder">
         <li class="reveal"><span class="ger eo">Saluton, mi nomiĝas Maria.</span><span class="en">Hello, my name is Maria.</span></li>
         <li class="reveal"><span class="ger eo">Mi loĝas en granda urbo kun mia familio.</span><span class="en">I live in a big city with my family.</span></li>
@@ -295,12 +299,12 @@ footer .footer-links .div{opacity:.4;}
   <!-- WORD-BUILDING (replaces gender) -->
   <section class="wrap">
     <div class="frame reveal">
-      <span class="tag">Build it from parts</span>
-      <h2>One root, a dozen words</h2>
-      <p class="sub">Esperanto has no genders to memorise — so FlashBoss shows you the thing that actually matters: how words are built. Roots stay the same; regular affixes do the rest.</p>
+      <span class="tag">Constrúyelo por partes</span>
+      <h2>Una raíz, una docena de palabras</h2>
+      <p class="sub">El esperanto no tiene géneros que memorizar — así que FlashBoss te muestra lo que de verdad importa: cómo se construyen las palabras. Las raíces no cambian; los afijos regulares hacen el resto.</p>
       <div class="legend">
-        <span><i class="lr"></i> root — the meaning</span>
-        <span><i class="la"></i> affix &amp; ending — the regular machinery</span>
+        <span><i class="lr"></i> raíz — el significado</span>
+        <span><i class="la"></i> afijo y terminación — la maquinaria regular</span>
       </div>
       <div class="build">
         <div class="row"><div class="k"><span class="build-word"><span class="r">san</span><span class="a o">-</span><span class="a">a</span></span></div><div class="gloss"><b>healthy</b> — root <i>san-</i> + adjective ending <i>-a</i></div></div>
@@ -315,21 +319,21 @@ footer .footer-links .div{opacity:.4;}
   <!-- CONCEPT CARDS -->
   <section class="wrap">
     <div class="reveal">
-      <h2>The words of a movement</h2>
-      <p class="sub">Esperanto carries its own culture in a handful of words. Tap to flip.</p>
+      <h2>Las palabras de un movimiento</h2>
+      <p class="sub">El esperanto lleva su propia cultura en un puñado de palabras. Toca para girar.</p>
       <div class="cards reveal">
-        <div class="card"><div class="art">community</div><div class="word">samideano</div>
+        <div class="card"><div class="art">comunidad</div><div class="word">samideano</div>
           <div class="ex eo">Mi renkontis multajn samideanojn.</div>
-          <div class="trans">a fellow Esperantist — literally &ldquo;same-idea-person.&rdquo; What speakers call one another: not a stranger, but someone who shares the idea.</div><div class="hint">tap to flip</div></div>
-        <div class="card"><div class="art">tradition</div><div class="word">Pasporta Servo</div>
+          <div class="trans">a fellow Esperantist — literally &ldquo;same-idea-person.&rdquo; What speakers call one another: not a stranger, but someone who shares the idea.</div><div class="hint">toca para girar</div></div>
+        <div class="card"><div class="art">tradición</div><div class="word">Pasporta Servo</div>
           <div class="ex eo">Mi vojaĝis per Pasporta Servo.</div>
-          <div class="trans">&ldquo;Passport Service&rdquo; — a global network where Esperantists host each other for free. A language that gives you a place to stay on every continent.</div><div class="hint">tap to flip</div></div>
-        <div class="card"><div class="art">event</div><div class="word">kongreso</div>
+          <div class="trans">&ldquo;Passport Service&rdquo; — a global network where Esperantists host each other for free. A language that gives you a place to stay on every continent.</div><div class="hint">toca para girar</div></div>
+        <div class="card"><div class="art">evento</div><div class="word">kongreso</div>
           <div class="ex eo">La Universala Kongreso okazas ĉiujare.</div>
-          <div class="trans">congress — the yearly world gathering where thousands meet and the only shared language in the room is the one everybody chose.</div><div class="hint">tap to flip</div></div>
-        <div class="card"><div class="art">spirit</div><div class="word">interna ideo</div>
+          <div class="trans">congress — the yearly world gathering where thousands meet and the only shared language in the room is the one everybody chose.</div><div class="hint">toca para girar</div></div>
+        <div class="card"><div class="art">espíritu</div><div class="word">interna ideo</div>
           <div class="ex eo">La interna ideo unuigas nin.</div>
-          <div class="trans">&ldquo;the inner idea&rdquo; — Zamenhof's name for the hope behind the language: people meeting as equals, on neutral ground.</div><div class="hint">tap to flip</div></div>
+          <div class="trans">&ldquo;the inner idea&rdquo; — Zamenhof's name for the hope behind the language: people meeting as equals, on neutral ground.</div><div class="hint">toca para girar</div></div>
       </div>
     </div>
   </section>
@@ -337,25 +341,25 @@ footer .footer-links .div{opacity:.4;}
   <!-- PACKS -->
   <section class="wrap">
     <div class="reveal">
-      <h2>The Pareto Principle</h2>
-      <p class="sub">3 packs. 10% of the Esperanto vocabulary for 90% of Esperanto use cases.</p>
+      <h2>El principio de Pareto</h2>
+      <p class="sub">3 paquetes. El 10 % del vocabulario de esperanto para el 90 % de los usos.</p>
       <!-- Code: wire Pareto 1 / Pareto 2 hrefs to their Esperanto Steam DLC pages. Core is free. -->
       <div class="packs">
-        <a class="pack" href="wordlists.html?lang=Esperanto&amp;set=Core">
+        <a class="pack" href="wordlists.es.html?lang=Esperanto&amp;set=Core">
           <div class="n">Core</div>
-          <div class="lvl">A1–A2 · 1,000 words</div>
-          <p>First words to the community, in five tiers. The road in.</p>
-          <span class="free">Included free</span>
+          <div class="lvl">A1–A2 · 1.000 palabras</div>
+          <p>De las primeras palabras a la comunidad, en cinco etapas. El camino de entrada.</p>
+          <span class="free">Incluido gratis</span>
         </a>
-        <a class="pack" href="wordlists.html?lang=Esperanto&amp;set=Pareto%201">
+        <a class="pack" href="wordlists.es.html?lang=Esperanto&amp;set=Pareto%201">
           <div class="n">Pareto 1</div>
-          <div class="lvl">B1–B2 · 1,000 words</div>
-          <p>The next thousand — deeper conversation, writing, and community life.</p>
+          <div class="lvl">B1–B2 · 1.000 palabras</div>
+          <p>Las siguientes mil — conversación más profunda, escritura y vida en comunidad.</p>
         </a>
-        <a class="pack" href="wordlists.html?lang=Esperanto&amp;set=Pareto%202">
+        <a class="pack" href="wordlists.es.html?lang=Esperanto&amp;set=Pareto%202">
           <div class="n">Pareto 2</div>
-          <div class="lvl">B2–C1 · 1,000 words</div>
-          <p>Abstract, literary, and fluent range. The full three thousand.</p>
+          <div class="lvl">B2–C1 · 1.000 palabras</div>
+          <p>Rango abstracto, literario y fluido. Las tres mil completas.</p>
         </a>
       </div>
     </div>
@@ -364,21 +368,21 @@ footer .footer-links .div{opacity:.4;}
   <!-- METHOD -->
   <section class="wrap method">
     <div class="frame reveal">
-      <span class="tag">How it sticks</span>
-      <h2>Flashcards as an integrated system</h2>
+      <span class="tag">Cómo se fija</span>
+      <h2>Las tarjetas como sistema integrado</h2>
       <dl>
-        <dt>Fibonacci SRS</dt><dd>Rate each card 0–5. The better you know a word, the longer before it returns — spaced repetition on Fibonacci intervals.</dd>
-        <dt>Boss fights</dt><dd>Each cluster is gated by a duel you can't win without confronting and overcoming your most difficult words.</dd>
-        <dt>Graduation</dt><dd>Beat a cluster and its cards leave your daily deck for good. The deck gets smaller as you learn.</dd>
-        <dt>Regularity</dt><dd>Because Esperanto is perfectly regular, every word you learn multiplies — affixes turn one root into a dozen words you can already read.</dd>
-        <dt>Lessons</dt><dd>Reference lessons fire at the point in the sequence where they unlock what you're about to read.</dd>
+        <dt>SRS de Fibonacci</dt><dd>Califica cada carta de 0 a 5. Cuanto mejor conoces una palabra, más tarda en volver — repetición espaciada en intervalos de Fibonacci.</dd>
+        <dt>Boss fights</dt><dd>Cada cluster está protegido por un duelo que no puedes ganar sin enfrentarte a tus palabras más difíciles y superarlas.</dd>
+        <dt>Graduación</dt><dd>Vence un cluster y sus cartas dejan tu mazo diario para siempre. El mazo se hace más pequeño a medida que aprendes.</dd>
+        <dt>Regularidad</dt><dd>Como el esperanto es perfectamente regular, cada palabra que aprendes se multiplica — los afijos convierten una raíz en una docena de palabras que ya puedes leer.</dd>
+        <dt>Lecciones</dt><dd>Las lecciones de referencia aparecen en el punto de la secuencia donde desbloquean lo que estás a punto de leer.</dd>
       </dl>
     </div>
   </section>
 
   <!-- FINAL CTA -->
   <section class="final wrap reveal">
-    <a class="btn hot" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">Get FlashBoss on Steam &rarr;</a>
+    <a class="btn hot" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">Consigue FlashBoss en Steam &rarr;</a>
   </section>
 
 </main>
@@ -386,9 +390,9 @@ footer .footer-links .div{opacity:.4;}
 <footer>
   <p class="epi">&ldquo;Ĉu ne kunvenis ni por reciproke nin kompreni?&rdquo;<span class="tr">Did we not come together to understand one another?</span><span class="epi-cite">&mdash; L. L. Zamenhof</span></p>
   <span class="footer-links">
-    <a href="home.html">home</a>
+    <a href="home.es.html">inicio</a>
     <span class="div">·</span>
-    <a href="manual/">walkthrough (beta)</a>
+    <a href="manual/">guía completa (beta)</a>
     <span class="div">·</span>
     <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">steam</a>
   </span>
