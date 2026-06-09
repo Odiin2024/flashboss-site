@@ -125,8 +125,10 @@ p.body b{color:var(--accent);}
 .bf-text h2{margin:0 0 14px;}
 .bf-text p{font-size:16px; color:color-mix(in oklab, var(--ink), #fff 6%); margin:0 0 12px; max-width:32ch;}
 .bf-text p:last-child{margin-bottom:0;}
-.bf-box{flex:0 0 auto; align-self:flex-start; width:400px; max-width:100%; display:block; position:relative; line-height:0; border:1px solid var(--line); transition:border-color .14s ease;}
-.bf-box:hover{border-color:var(--accent);}
+.bf-text a{color:var(--accent); font-weight:700; text-decoration:none;}
+.bf-text a:hover{text-decoration:underline; text-underline-offset:3px;}
+.bf-box{flex:0 0 auto; align-self:flex-start; width:400px; max-width:100%; display:block; position:relative; line-height:0; border:1px solid var(--line); transition:border-color .14s ease, box-shadow .16s ease, transform .16s ease;}
+.bf-box:hover{border-color:var(--accent); box-shadow:0 0 18px color-mix(in oklab, var(--accent), transparent 55%), 0 0 40px color-mix(in oklab, var(--accent), transparent 78%); transform:scale(1.015);}
 .bf-box img{display:block; width:100%; height:auto;}
 .bf-hint{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
   font-size:12px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; line-height:1; white-space:nowrap;
@@ -285,7 +287,7 @@ footer .footer-links .div{opacity:.4;}
           <p>Two steps back with each mistake.</p>
           <p>Your easiest cards on positions 1 &amp; 2.</p>
           <p>Your most difficult on positions 3 &amp; 4.</p>
-          <p>Don't fall.</p>
+          <p><a href="https://flashboss-demo.pages.dev/">Try the live demo &rarr;</a></p>
         </div>
         <a class="bf-box" href="https://flashboss-demo.pages.dev/">
           <img src="bossfight-poster.png" data-gif="bossfight.gif" alt="A FlashBoss German boss fight: match the translation, advance or get pushed back.">
