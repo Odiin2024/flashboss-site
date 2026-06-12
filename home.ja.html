@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ja">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>FlashBoss — Tarjetas con boss fights</title>
-<meta name="description" content="FlashBoss: tarjetas de repetición espaciada con boss fights. Construye un vocabulario real en inglés, alemán, español, italiano o esperanto. Cuatro paquetes gratis, el resto en Steam. Escucha, lee, repite, califica, combate.">
+<title>FlashBoss — ボス戦つきフラッシュカード</title>
+<meta name="description" content="FlashBoss：間隔反復とボス戦のフラッシュカード。英語・ドイツ語・スペイン語・イタリア語・エスペラント語で本物の語彙力を。スターターパック4種は無料、追加パックはSteamで。聞く・読む・繰り返す・評価する・戦う。">
 <link rel="icon" type="image/png" href="icon.png">
 <!-- TODO: hreflang URLs should be absolute (production domain) -->
 <link rel="alternate" hreflang="en" href="home.html">
@@ -15,6 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
    FlashBoss — home (home.html). The front door.
@@ -26,13 +27,13 @@
    screenshot is boss-fight.png (drop 27_screenshot.png there).
    ============================================================ */
 :root{
-  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --mono:'JetBrains Mono','M PLUS 1 Code', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
   --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
   --accent:#83b6dd; --steel:#6487aa; --gold:#e0a93f; --green:#62d38a; --blue:#7ec8ff; --line:#3a3120; --rule:#2a2417;
 }
 *{box-sizing:border-box; margin:0; padding:0;}
 html{scroll-behavior:smooth;}
-body{font-family:var(--mono); background:linear-gradient(180deg, var(--bg) 0%, #171421 100%); background-color:var(--bg); color:var(--ink); line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden;}
+body{font-family:var(--mono); background:linear-gradient(180deg, var(--bg) 0%, #171421 100%); background-color:var(--bg); color:var(--ink); line-height:1.75; -webkit-font-smoothing:antialiased; overflow-x:hidden;}
 .overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
   background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.045) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
 .vignette{position:fixed; inset:0; pointer-events:none; z-index:9998;
@@ -216,26 +217,26 @@ footer .footer-links .div{opacity:.4;}
 <div class="vignette"></div>
 
 <nav>
-  <span class="brand"><a class="logo" href="index.es.html">FLASHBOSS</a><span class="pipe">|</span><span class="here">inicio</span></span>
+  <span class="brand"><a class="logo" href="home.ja.html">FLASHBOSS</a><span class="pipe">|</span><span class="here">ホーム</span></span>
   <span class="links">
-    <a href="manual/index.html">guía completa (beta)</a>
-    <a href="resources.es.html">recursos</a>
+    <a href="manual/index.html">攻略ガイド（β）</a>
+    <a href="resources.html">リソース</a>
   </span>
   <span class="nav-mobile">
-    <a href="resources.es.html">recursos</a>
+    <a href="resources.html">リソース</a>
   </span>
   <div class="lang-switch">
-    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Elegir idioma">ES<span class="lang-caret">▾</span></button>
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="言語を選択">JA<span class="lang-caret">▾</span></button>
     <ul class="lang-menu" hidden>
       <li><a href="home.html">English</a></li>
       <li><a href="home.de.html">Deutsch</a></li>
-      <li><a href="home.es.html" aria-current="true">Español</a></li>
-      <li><a href="home.ja.html">日本語</a></li>
+      <li><a href="home.es.html">Español</a></li>
+      <li><a href="home.ja.html" aria-current="true">日本語</a></li>
     </ul>
   </div>
 </nav>
 
-<div class="topbanner"><span class="bn-b"><a href="https://apps.microsoft.com/detail/9n0dx20hk701" target="_blank" rel="noopener">Windows&nbsp;Terminal</a> necesario para Windows&nbsp;10</span><span class="bn-dash"> &mdash; </span><span class="bn-a"><b>Italian Pareto 2</b> se lanza el 11 de junio</span><span class="bn-c"> &mdash; Disponible en Steam &mdash; Windows&nbsp;&middot;&nbsp;Mac&nbsp;&middot;&nbsp;Linux</span></div>
+<div class="topbanner"><span class="bn-b">Windows&nbsp;10では<a href="https://apps.microsoft.com/detail/9n0dx20hk701" target="_blank" rel="noopener">Windows&nbsp;Terminal</a>が必須</span><span class="bn-dash"> &mdash; </span><span class="bn-a"><b>英語を架け橋に</b>学ぶ設計です（英語の知識が必要）</span><span class="bn-c"> &mdash; Steamで発売中 &mdash; Windows&nbsp;&middot;&nbsp;Mac&nbsp;&middot;&nbsp;Linux</span></div>
 
 <main>
 
@@ -243,12 +244,12 @@ footer .footer-links .div{opacity:.4;}
   <header class="hero">
     <div class="wrap">
       <h1 class="reveal">FlashBoss<span class="cursor"></span></h1>
-      <p class="sig reveal">repetición espaciada con boss fights</p>
-      <p class="lede reveal">Construye un vocabulario real en <b><a href="packs.es.html">inglés</a>, <a href="german.es.html">alemán</a>, <a href="spanish.es.html">español</a>, <a href="italian.es.html">italiano</a> o <a href="esperanto.es.html">esperanto</a></b> — y luego demuéstralo en un duelo.</p>
+      <p class="sig reveal">間隔反復 × ボス戦</p>
+      <p class="lede reveal"><b><a href="packs.ja.html">英語</a>・<a href="german.html">ドイツ語</a>・<a href="spanish.html">スペイン語</a>・<a href="italian.html">イタリア語</a>・<a href="esperanto.html">エスペラント語</a></b>の本物の語彙力を築き、決闘で証明せよ。</p>
       <div class="actions reveal">
-        <a class="btn" href="wordlists.es.html">vocabulario</a>
-        <a class="btn" href="lessons.es.html">lecciones</a>
-        <a class="btn" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-home">steam</a>
+        <a class="btn" href="wordlists.ja.html">単語リスト</a>
+        <a class="btn" href="lessons.ja.html">レッスン</a>
+        <a class="btn" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-home-ja">Steam</a>
       </div>
     </div>
   </header>
@@ -256,28 +257,28 @@ footer .footer-links .div{opacity:.4;}
   <!-- THE HOOK: the approach -->
   <section class="wrap">
     <div class="frame reveal">
-      <span class="tag">Escucha · lee · repite · califica · combate</span>
-      <h2>El método FlashBoss</h2>
-      <p class="body">El vocabulario objetivo se agrupa en clusters temáticos, con frases de ejemplo y notas explicativas cada vez más largas y complejas. Cada cluster termina en un boss fight.</p>
-      <p class="body">Antes de vencer al jefe, debes responder a las palabras que te resultaron más difíciles. Gana y esas cartas se gradúan.</p>
+      <span class="tag">聞く・読む・繰り返す・評価する・戦う</span>
+      <h2>FlashBoss式学習法</h2>
+      <p class="body">目標語彙はテーマ別のクラスターに分かれ、例文は少しずつ長く、複雑になっていきます（解説ノートつき）。各クラスターの最後に待つのは、ボス戦。</p>
+      <p class="body">ボスを倒すには、最も苦戦した単語に答えなければなりません。勝てば、そのカードは卒業です。</p>
     </div>
   </section>
 
   <!-- THE CARD: what a card holds -->
   <section class="wrap">
     <div class="frame reveal">
-      <span class="tag">Las cartas en sí</span>
-      <h2>Visualización en cascada</h2>
+      <span class="tag">カードの中身</span>
+      <h2>カスケード表示</h2>
       <div class="card-row">
         <div class="card-anatomy">
-          <p><b>Palabra objetivo</b> — presentada con pistas visuales para ayudar a la retención. Los intervalos de repaso actuales se muestran en estrellas.</p>
-          <p><b>Frase de ejemplo</b> — alrededor del 90% construida con lenguaje ya aprendido.</p>
-          <p><b>Traducción del ejemplo</b> — una versión idiomática de la frase.</p>
-          <p><b>Traducción</b> — califica la palabra, consulta tus notas, <b>7</b> para ver las opciones de calificación.</p>
-          <p><b>Notas</b> — gramática, etimología, lenguaje relacionado y ejemplos. Pulsa <b>8</b> para ver las notas. Son opcionales.</p>
+          <p><b>目標語</b> — 記憶を助ける視覚的な手がかりとともに表示。現在の復習間隔は★で示されます。</p>
+          <p><b>例文</b> — 約90%は、すでに学んだ語彙だけで組み立てられています。</p>
+          <p><b>例文の訳</b> — 例文を自然な英語に訳した一文。</p>
+          <p><b>訳語</b> — ここで単語を評価し、ノートを確認。<b>7</b>で評価の選択肢を表示。</p>
+          <p><b>ノート</b> — 文法・語源・関連語と用例。<b>8</b>で表示。読むかどうかは自由です。</p>
         </div>
         <div class="card-shot">
-          <img src="ehefrau.png" alt="Una tarjeta de FlashBoss para la palabra alemana die Ehefrau (esposa): una palabra objetivo con código de color y estrellas de dominio, una frase de ejemplo y su traducción, la traducción simple y las notas.">
+          <img src="ehefrau.png" alt="FlashBossのカード例：ドイツ語の die Ehefrau（妻）。色分けされた目標語と習熟度の星、例文とその英訳、訳語、ノート。">
         </div>
       </div>
     </div>
@@ -286,51 +287,41 @@ footer .footer-links .div{opacity:.4;}
   <!-- BOSS FIGHT: how we test -->
   <section class="wrap">
     <div class="frame reveal">
-      <span class="tag">El boss fight</span>
+      <span class="tag">ボス戦</span>
       <div class="bf-row">
         <div class="bf-text">
-          <h2>Cómo evaluamos</h2>
-          <p>Un paso adelante con cada respuesta correcta.</p>
-          <p>Dos pasos atrás con cada error.</p>
-          <p>Tus cartas más fáciles en las posiciones 1 y 2.</p>
-          <p>Las más difíciles en las posiciones 3 y 4.</p>
-          <p><a href="https://flashboss-demo.pages.dev/">Prueba la demo en vivo &rarr;</a></p>
+          <h2>腕試しの流儀</h2>
+          <p>正解で一歩前進。</p>
+          <p>間違いで二歩後退。</p>
+          <p>マス1・2には、最も易しいカード。</p>
+          <p>マス3・4には、最も難しいカード。</p>
+          <p><a href="https://flashboss-demo.pages.dev/">デモをプレイ &rarr;</a></p>
         </div>
         <a class="bf-box" href="https://flashboss-demo.pages.dev/">
-          <img src="bossfight-poster.png" data-gif="bossfight.gif" alt="Un boss fight de alemán en FlashBoss: empareja la traducción, avanza o retrocede.">
-          <span class="bf-hint">prueba la demo</span>
+          <img src="bossfight-poster.png" data-gif="bossfight.gif" alt="FlashBossのドイツ語ボス戦：訳語を当てて前進、間違えれば後退。">
+          <span class="bf-hint">デモで腕試し</span>
         </a>
       </div>
-    </div>
-  </section>
-
-  <!-- BOTH WAYS: a Spanish boss-run doubles as English revision -->
-  <section class="wrap">
-    <div class="frame reveal">
-      <span class="tag">También repasas inglés</span>
-      <h2>El inglés, en cada boss fight</h2>
-      <p class="body">Cada curso de FlashBoss se enseña desde el inglés: la traducción y las notas de cada carta están en inglés. Mientras aprendes un idioma nuevo, tu inglés sigue en forma — y cada boss fight lo pone a prueba.</p>
-      <p class="body">Con el paquete de español es aún más directo: ya sabes el español, así que un boss fight se vuelve repaso de inglés puro. Y si buscas el inglés sin rodeos, <a href="packs.es.html">English Advance y Adept</a> son gratis.</p>
     </div>
   </section>
 
   <!-- WHAT YOU GET -->
   <section class="wrap gap-top">
     <div class="reveal">
-      <h2>Cuatro paquetes gratis</h2>
-      <p class="sub">Añade mazos adicionales a medida que avanzas.</p>
+      <h2>スターターパック4種は無料</h2>
+      <p class="sub">追加のデッキは、進めながら少しずつ。</p>
       <div class="gives">
         <div class="give">
-          <div class="g-h">Gratis en el juego base</div>
+          <div class="g-h">本体に無料同梱</div>
           <p>English Advance &amp; Adept<br>German Core<br>Esperanto Core</p>
         </div>
         <div class="give">
-          <div class="g-h">La serie Roots</div>
-          <p>German, Norman y Latin Roots — la historia de la que está construido el <a href="packs.es.html">inglés</a>.</p>
+          <div class="g-h">Rootsシリーズ</div>
+          <p>German・Norman・Latin Roots — <a href="packs.ja.html">英語</a>という言語を築いた歴史そのもの。</p>
         </div>
         <div class="give">
-          <div class="g-h">Cursos completos de idiomas</div>
-          <p>Aprende <a href="german.es.html">alemán</a>, <a href="italian.es.html">italiano</a>, <a href="spanish.es.html">español</a> o <a href="esperanto.es.html">esperanto</a> con FlashBoss. 3.000 palabras cada uno.</p>
+          <div class="g-h">語学フルコース</div>
+          <p>FlashBossで<a href="german.html">ドイツ語</a>・<a href="italian.html">イタリア語</a>・<a href="spanish.html">スペイン語</a>・<a href="esperanto.html">エスペラント語</a>を学ぶ。各3,000語。</p>
         </div>
       </div>
     </div>
@@ -339,31 +330,31 @@ footer .footer-links .div{opacity:.4;}
   <!-- FINAL CTA -->
   <section class="final wrap reveal">
     <div class="actions" style="justify-content:center;">
-      <a class="btn" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-home">Consigue FlashBoss en Steam &rarr;</a>
+      <a class="btn" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-home-ja">SteamでFlashBossを手に入れる &rarr;</a>
     </div>
-    <p class="epi">Scientia est Potentia.<span class="epi-cite">El conocimiento es poder</span></p>
+    <p class="epi">Scientia est Potentia.<span class="epi-cite">知は力なり</span></p>
   </section>
 
 </main>
 
 <footer>
   <span class="footer-links">
-    <a href="resources.es.html">recursos</a><span class="div">·</span>
-    <a href="about.es.html">cómo funciona</a><span class="div">·</span>
-    <button class="share-toggle" type="button" aria-expanded="false">compartir</button><span class="div">·</span>
-    <a href="affiliate.es.html">promocionar</a>
+    <a href="resources.html">リソース</a><span class="div">·</span>
+    <a href="about.ja.html">仕組み</a><span class="div">·</span>
+    <button class="share-toggle" type="button" aria-expanded="false">シェア</button><span class="div">·</span>
+    <a href="affiliate.html">紹介</a>
   </span>
   <div class="share-modal" id="shareModal" hidden>
-    <div class="share-card" role="dialog" aria-label="Compartir">
-      <button class="share-close" type="button" aria-label="Cerrar">&times;</button>
-      <div class="share-card-title">Compartir</div>
+    <div class="share-card" role="dialog" aria-label="シェア">
+      <button class="share-close" type="button" aria-label="閉じる">&times;</button>
+      <div class="share-card-title">シェア</div>
       <div class="share-btns">
-        <button class="share-btn" data-share="copy" type="button">copiar enlace</button>
-        <a class="share-btn" data-share="x" target="_blank" rel="noopener">publicar en X</a>
-        <a class="share-btn" data-share="facebook" target="_blank" rel="noopener">facebook</a>
-        <a class="share-btn" data-share="reddit" target="_blank" rel="noopener">reddit</a>
-        <a class="share-btn" data-share="whatsapp" target="_blank" rel="noopener">whatsapp</a>
-        <a class="share-btn" data-share="messenger" target="_blank" rel="noopener">messenger</a>
+        <button class="share-btn" data-share="copy" type="button">リンクをコピー</button>
+        <a class="share-btn" data-share="x" target="_blank" rel="noopener">Xでポスト</a>
+        <a class="share-btn" data-share="facebook" target="_blank" rel="noopener">Facebook</a>
+        <a class="share-btn" data-share="reddit" target="_blank" rel="noopener">Reddit</a>
+        <a class="share-btn" data-share="whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="share-btn" data-share="messenger" target="_blank" rel="noopener">Messenger</a>
       </div>
     </div>
   </div>
@@ -427,7 +418,7 @@ footer .footer-links .div{opacity:.4;}
   var modal=document.getElementById('shareModal');
   if(!toggle||!modal) return;
   var url=location.href.split('#')[0];
-  var text='FlashBoss — tarjetas de repetición espaciada con boss fights.';
+  var text='FlashBoss — 間隔反復とボス戦のフラッシュカード。';
   var U=encodeURIComponent(url), T=encodeURIComponent(text);
   var links={ x:'https://twitter.com/intent/tweet?url='+U+'&text='+T,
     facebook:'https://www.facebook.com/sharer/sharer.php?u='+U,
@@ -443,7 +434,7 @@ footer .footer-links .div{opacity:.4;}
   document.addEventListener('keydown', function(e){ if(e.key==='Escape' && !modal.hidden) close(); });
   var copyBtn=modal.querySelector('[data-share="copy"]');
   if(copyBtn) copyBtn.addEventListener('click', function(){
-    function done(){ copyBtn.textContent='¡copiado!'; setTimeout(function(){ copyBtn.textContent='copiar enlace'; },1400); }
+    function done(){ copyBtn.textContent='コピーしました！'; setTimeout(function(){ copyBtn.textContent='リンクをコピー'; },1400); }
     function fb(){ var t=document.createElement('textarea'); t.value=url; t.style.position='fixed'; t.style.opacity='0'; document.body.appendChild(t); t.select(); try{document.execCommand('copy');}catch(e){} document.body.removeChild(t); done(); }
     if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done,fb); else fb();
   });
