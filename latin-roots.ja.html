@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ja">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Latin Roots — FlashBoss</title>
-<meta name="description" content="FlashBoss Latin Roots: deja de aprender inglés palabra por palabra. Los prefijos, sufijos y raíces que construyen miles de palabras — aprende las partes, y descompón una palabra desconocida. 1.000 palabras, 500 tarjetas, repetición espaciada, boss fights y síntesis de voz.">
+<title>Latin Roots — 語源で増やす英単語 | FlashBoss</title>
+<meta name="description" content="FlashBoss Latin Roots：英単語を1語ずつ覚えるのは、もう終わり。何千もの単語を組み立てる接頭辞・接尾辞・語根 — 部品を学べば、初見の単語も分解して読めます。1,000語、カード500枚、間隔反復、ボス戦、TTS音声。">
 
 <!-- House font. If self-hosting, swap this for your local JetBrains Mono. -->
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/latin-roots.html">
@@ -15,6 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@400;500;700;800&display=swap" rel="stylesheet">
 
 <style>
 /* ============================================================
@@ -33,7 +34,7 @@
    English-pack screenshot, darkened by the ::after wash).
    ============================================================ */
 :root{
-  --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
+  --mono: 'JetBrains Mono','M PLUS 1 Code', ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
 
   /* morpheme colour-coding — the page's teaching legend.
      RETUNE to the game's exact palette. */
@@ -310,7 +311,7 @@ p.body b{color:color-mix(in oklab, var(--op-accent), var(--leg-accent) calc(var(
   position:relative;
 }
 .ladder li::before{
-  content:"E" counter(tier);
+  content:"T" counter(tier);
   position:absolute; left:-15px; top:16px;
   background:color-mix(in oklab, var(--op-bg), var(--leg-bg) calc(var(--mood)*100%));
   font-size:11px; font-weight:700; letter-spacing:.05em; padding:2px 0;
@@ -364,29 +365,30 @@ footer .footer-links a{color:inherit; text-decoration:none; opacity:.75; letter-
 footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
 footer .footer-links .div{opacity:.4;}
 </style>
+<style>body{line-height:1.75;}</style>
 </head>
 <body>
 <div class="overlay"></div>
 <div class="vignette"></div>
 
 <nav>
-  <span class="brand"><a class="logo" href="index.es.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.es.html">inicio</a><span class="sep"> · </span><a href="packs.es.html">paquetes</a><span class="sep"> · </span><span class="here">Latin Roots</span></span>
+  <span class="brand"><a class="logo" href="home.ja.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.ja.html">ホーム</a><span class="sep"> · </span><a href="packs.ja.html">パック</a><span class="sep"> · </span><span class="here">Latin Roots</span></span>
   <span class="links">
-    <a href="manual/index.html">guía completa (beta)</a>
-    <a href="resources.es.html">recursos</a>
-    <a class="steam" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website">steam</a>
+    <a href="manual/index.html">攻略ガイド（β）</a>
+    <a href="resources.ja.html">リソース</a>
+    <a class="steam" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website-ja">Steam</a>
   </span>
   <span class="nav-mobile">
-    <a href="home.es.html">inicio</a>
-    <span class="r"><a href="resources.es.html">recursos</a><a href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website">steam</a></span>
+    <a href="home.ja.html">ホーム</a>
+    <span class="r"><a href="resources.ja.html">リソース</a><a href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website-ja">Steam</a></span>
   </span>
   <div class="lang-switch">
-    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Elegir idioma">ES<span class="lang-caret">▾</span></button>
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="言語を選択">JA<span class="lang-caret">▾</span></button>
     <ul class="lang-menu" hidden>
       <li><a href="latin-roots.html">English</a></li>
       <li><a href="latin-roots.de.html">Deutsch</a></li>
-      <li><a href="latin-roots.es.html" aria-current="true">Español</a></li>
-      <li><a href="latin-roots.ja.html">日本語</a></li>
+      <li><a href="latin-roots.es.html">Español</a></li>
+      <li><a href="latin-roots.ja.html" aria-current="true">日本語</a></li>
     </ul>
   </div>
 </nav>
@@ -396,14 +398,14 @@ footer .footer-links .div{opacity:.4;}
   <!-- HERO -->
   <header class="hero">
     <div class="wrap">
-      <p class="kicker reveal">La serie Roots · <b>Latín</b></p>
+      <p class="kicker reveal">Rootsシリーズ · <b>ラテン語</b></p>
       <h1 class="reveal">Latin Roots<span class="cursor"></span></h1>
-      <p class="tagline reveal">Deja de aprender inglés palabra por palabra.</p>
-      <p class="sig reveal">Escuchar · Leer · Repetir · Calificar · Luchar</p>
-      <p class="lede reveal">Nadie con un vocabulario amplio lo construyó palabra por palabra. Aprendieron a leer las partes. Encuentras <b class="lat">irreparable</b> y puedes descomponerla a simple vista — <span class="pre">ir</span>·<span class="pre">re</span>·<span class="rt">par</span>·<span class="suf">able</span>, «not able to be made ready again» — y lees su significado directamente en la superficie.</p>
+      <p class="tagline reveal">英単語を1語ずつ覚えるのは、もう終わり。</p>
+      <p class="sig reveal">聞く・読む・繰り返す・評価する・戦う</p>
+      <p class="lede reveal">大きな語彙を持つ人は、1語ずつ覚えたのではありません。部品の読み方を身につけたのです。<b class="lat">irreparable</b>に出会っても、見た瞬間に分解できる — <span class="pre">ir</span>·<span class="pre">re</span>·<span class="rt">par</span>·<span class="suf">able</span>、「再び・整えることが・できない」— 意味は表面から読み取れます。</p>
       <div class="actions reveal">
-        <a class="btn" href="wordlists.es.html?lang=English&amp;set=Latin%20Roots">Lista de vocabulario &rarr;</a>
-        <a class="btn" href="lessons.es.html?lang=English&amp;set=Latin%20Roots">Lecciones &rarr;</a>
+        <a class="btn" href="wordlists.ja.html?lang=English&amp;set=Latin%20Roots">単語リスト &rarr;</a>
+        <a class="btn" href="lessons.ja.html?lang=English&amp;set=Latin%20Roots">レッスン &rarr;</a>
       </div>
     </div>
   </header>
@@ -411,20 +413,20 @@ footer .footer-links .div{opacity:.4;}
   <!-- THE ARGUMENT -->
   <section class="wrap">
     <div class="frame">
-      <span class="tag">cómo crece el vocabulario</span>
-      <h2>La suma de sus partes</h2>
-      <p class="sub">Aprende las partes, y las palabras se ensamblan solas.</p>
-      <p class="body">Aprende una sola raíz — <b>par</b>: to make ready, to make equal — y una docena de palabras se abren de golpe. Prepare, repair, separate, compare, parity, peer, disparage, parade — e incluso emperor y rampart derivan de esta raíz. La siguiente palabra con <span class="lat">par-</span> que te encuentres entrega su significado sin diccionario.</p>
-      <p class="body">Este es el vocabulario del inglés serio: la lengua del razonamiento, el derecho, la historia y las ciencias. La distancia entre <b>nominal</b> y <b>token</b>, <b>renown</b> y <b>fame</b>, y entre <b>thinking</b> y <b>cogitating</b>. Las palabras precisas hacen pensamientos precisos — y las raíces son las partes con las que se construyen las palabras precisas.</p>
+      <span class="tag">語彙はこう育つ</span>
+      <h2>部分の総和</h2>
+      <p class="sub">部品を学べば、単語はひとりでに組み上がる。</p>
+      <p class="body">語根をひとつ — <b>par</b>：整える、等しくする — 学ぶだけで、十数語が一度に開きます。prepare、repair、separate、compare、parity、peer、disparage、parade — さらにemperorやrampartまで、この語根の子孫です。次に出会う<span class="lat">par-</span>の単語は、辞書なしで意味を明け渡します。</p>
+      <p class="body">これは本格的な英語の語彙です：議論、法律、歴史、科学のことば。<b>nominal</b>と<b>token</b>、<b>renown</b>と<b>fame</b>、<b>thinking</b>と<b>cogitating</b>のあいだの差。精密な単語が精密な思考をつくる — そして語根こそ、精密な単語を組み立てる部品です。</p>
 
       <div class="movements reveal">
         <div class="mv parts">
-          <div class="h">Las partes</div>
-          <p>Unas pocas docenas de prefijos, raíces y sufijos — las piezas que se acoplan a casi todo.</p>
+          <div class="h">部品</div>
+          <p>数十個の接頭辞・語根・接尾辞 — ほぼすべてに取り付く建材。</p>
         </div>
         <div class="mv whole">
-          <div class="h">El todo</div>
-          <p>Descompón una palabra desconocida en sus partes, y su significado ya está ahí esperándote.</p>
+          <div class="h">全体</div>
+          <p>初見の単語を部品に読みほどけば、意味はもうそこで待っています。</p>
         </div>
       </div>
     </div>
@@ -433,58 +435,58 @@ footer .footer-links .div{opacity:.4;}
   <!-- DECOMPOSITION DEMO -->
   <section class="wrap">
     <div class="frame reveal">
-      <span class="tag">Descomponla</span>
-      <h2>Una palabra es un ensamblaje</h2>
-      <p class="sub">Cada palabra aquí está codificada por color según sus partes. Toca una para desarmarla.</p>
+      <span class="tag">分解せよ</span>
+      <h2>単語は組立品</h2>
+      <p class="sub">どの単語も部品ごとに色分け。タップで分解。</p>
       <div class="legend">
-        <span><i class="lp"></i> prefijo — dirección y posición</span>
-        <span><i class="lr"></i> raíz — el significado que carga</span>
-        <span><i class="ls"></i> sufijo — categoría gramatical</span>
+        <span><i class="lp"></i> 接頭辞 — 方向と位置</span>
+        <span><i class="lr"></i> 語根 — 意味の本体</span>
+        <span><i class="ls"></i> 接尾辞 — 品詞</span>
       </div>
       <div class="decomps">
         <div class="decomp reveal">
           <div class="whole">transport</div>
-          <div class="gloss-top">to carry from one place to another</div>
+          <div class="gloss-top">ある場所から別の場所へ運ぶ</div>
           <div class="parts">
-            <span class="m pre">trans<i>across</i></span>
-            <span class="m rt">port<i>carry</i></span>
+            <span class="m pre">trans<i>横切って</i></span>
+            <span class="m rt">port<i>運ぶ</i></span>
           </div>
-          <div class="sum">across + carry → to carry across</div>
-          <div class="hint">toca para desarmar</div>
+          <div class="sum">横切って + 運ぶ → 向こうへ運ぶ</div>
+          <div class="hint">タップで分解</div>
         </div>
 
         <div class="decomp reveal">
           <div class="whole">predict</div>
-          <div class="gloss-top">to say in advance what will happen</div>
+          <div class="gloss-top">これから起きることを前もって言う</div>
           <div class="parts">
-            <span class="m pre">pre<i>before</i></span>
-            <span class="m rt">dict<i>say</i></span>
+            <span class="m pre">pre<i>前に</i></span>
+            <span class="m rt">dict<i>言う</i></span>
           </div>
-          <div class="sum">before + say → to say beforehand</div>
-          <div class="hint">toca para desarmar</div>
+          <div class="sum">前に + 言う → 前もって言う</div>
+          <div class="hint">タップで分解</div>
         </div>
 
         <div class="decomp reveal">
           <div class="whole">inspect</div>
-          <div class="gloss-top">to look at something closely</div>
+          <div class="gloss-top">対象を間近でよく見る</div>
           <div class="parts">
-            <span class="m pre">in<i>into</i></span>
-            <span class="m rt">spec<i>look</i></span>
-            <span class="m suf">t<i>act of</i></span>
+            <span class="m pre">in<i>中へ</i></span>
+            <span class="m rt">spec<i>見る</i></span>
+            <span class="m suf">t<i>行為</i></span>
           </div>
-          <div class="sum">into + look → to look into</div>
-          <div class="hint">toca para desarmar</div>
+          <div class="sum">中へ + 見る → 中をのぞき込む</div>
+          <div class="hint">タップで分解</div>
         </div>
 
         <div class="decomp reveal">
           <div class="whole">interrupt</div>
-          <div class="gloss-top">to break in on something in progress</div>
+          <div class="gloss-top">進行中のものに割り込む</div>
           <div class="parts">
-            <span class="m pre">inter<i>between</i></span>
-            <span class="m rt">rupt<i>break</i></span>
+            <span class="m pre">inter<i>間に</i></span>
+            <span class="m rt">rupt<i>壊す</i></span>
           </div>
-          <div class="sum">between + break → to break in between</div>
-          <div class="hint">toca para desarmar</div>
+          <div class="sum">間に + 壊す → 間に割って入る</div>
+          <div class="hint">タップで分解</div>
         </div>
       </div>
     </div>
@@ -493,20 +495,20 @@ footer .footer-links .div{opacity:.4;}
   <!-- THE PREFIX TOOLKIT -->
   <section class="wrap">
     <div class="reveal">
-      <h2>El kit con el que empiezas</h2>
-      <p class="sub">El paquete abre con los prefijos — las direcciones y posiciones que se acoplan a cualquier raíz.</p>
+      <h2>最初に手にする道具箱</h2>
+      <p class="sub">パックの始まりは接頭辞 — どの語根にも取り付く、方向と位置。</p>
       <div class="console">
-        <div class="head"><span>Prefijo · Etapa 1</span><span>Dirección y posición</span></div>
-        <div class="row"><div class="k">ex-</div><div class="v"><b>out of, away from</b> — export, extract, eject</div></div>
-        <div class="row"><div class="k">in-</div><div class="v"><b>into, or not</b> — inspect, induct; invalid, inert</div></div>
-        <div class="row"><div class="k">con-</div><div class="v"><b>with, together</b> — connect, conspire, convene</div></div>
-        <div class="row"><div class="k">trans-</div><div class="v"><b>across, beyond</b> — transport, translate, transcend</div></div>
-        <div class="row"><div class="k">sub-</div><div class="v"><b>under, below</b> — submit, subvert, subterfuge</div></div>
-        <div class="row"><div class="k">super-</div><div class="v"><b>above, beyond</b> — superior, supervise, supersede</div></div>
-        <div class="row"><div class="k">inter-</div><div class="v"><b>between, among</b> — intervene, interject, interrupt</div></div>
-        <div class="row"><div class="k">pre-</div><div class="v"><b>before</b> — predict, prepare, precede</div></div>
-        <div class="row"><div class="k">post-</div><div class="v"><b>after, behind</b> — postpone, postscript, posterity</div></div>
-        <div class="row"><div class="k">pro-</div><div class="v"><b>forward, in favour of</b> — promote, propel, proponent</div></div>
+        <div class="head"><span>接頭辞 · ティア1</span><span>方向と位置</span></div>
+        <div class="row"><div class="k">ex-</div><div class="v"><b>外へ、離れて</b> — export, extract, eject</div></div>
+        <div class="row"><div class="k">in-</div><div class="v"><b>中へ、または否定</b> — inspect, induct; invalid, inert</div></div>
+        <div class="row"><div class="k">con-</div><div class="v"><b>共に、一緒に</b> — connect, conspire, convene</div></div>
+        <div class="row"><div class="k">trans-</div><div class="v"><b>横切って、越えて</b> — transport, translate, transcend</div></div>
+        <div class="row"><div class="k">sub-</div><div class="v"><b>下に、下から</b> — submit, subvert, subterfuge</div></div>
+        <div class="row"><div class="k">super-</div><div class="v"><b>上に、超えて</b> — superior, supervise, supersede</div></div>
+        <div class="row"><div class="k">inter-</div><div class="v"><b>間に、相互に</b> — intervene, interject, interrupt</div></div>
+        <div class="row"><div class="k">pre-</div><div class="v"><b>前に</b> — predict, prepare, precede</div></div>
+        <div class="row"><div class="k">post-</div><div class="v"><b>後に、後ろに</b> — postpone, postscript, posterity</div></div>
+        <div class="row"><div class="k">pro-</div><div class="v"><b>前へ、味方して</b> — promote, propel, proponent</div></div>
       </div>
     </div>
   </section>
@@ -514,13 +516,13 @@ footer .footer-links .div{opacity:.4;}
   <!-- ROOT FAMILY -->
   <section class="wrap">
     <div class="reveal">
-      <h2>Una raíz, toda una familia</h2>
-      <p class="sub">Cada cluster es una sola raíz latina y las palabras inglesas que descienden de ella. Apréndela una vez.</p>
+      <h2>ひとつの語根、まるごと一族</h2>
+      <p class="sub">各クラスターは、ひとつのラテン語根とその英語の子孫たち。覚えるのは一度だけ。</p>
       <div class="family">
         <div class="stem">
           <span class="glyph">par</span>
-          <span class="mean">to make ready · to make equal</span>
-          <span class="src">from Latin <i>parāre</i> &amp; <i>pār</i></span>
+          <span class="mean">整える · 等しくする</span>
+          <span class="src">ラテン語 <i>parāre</i> と <i>pār</i> から</span>
         </div>
         <div class="fan">
           <span class="w">pre<span class="r">par</span>e</span>
@@ -537,7 +539,7 @@ footer .footer-links .div{opacity:.4;}
           <span class="w">em<span class="r">per</span>or</span>
           <span class="w">ram<span class="r">part</span></span>
         </div>
-        <p class="note">Trece palabras, una raíz. Una vez que ves el <span class="r" style="color:var(--root); font-weight:700;">par</span> en cada una, no vuelves a memorizarlas por separado nunca más — y la siguiente que te encuentres se abre igual.</p>
+        <p class="note">13語、語根はひとつ。それぞれの中の<span class="r" style="color:var(--root); font-weight:700;">par</span>が見えるようになれば、二度と別々に暗記することはありません — 次に出会う1語も、同じように開きます。</p>
       </div>
     </div>
   </section>
@@ -545,15 +547,15 @@ footer .footer-links .div{opacity:.4;}
   <!-- REGISTER LADDER -->
   <section class="wrap">
     <div class="frame reveal">
-      <span class="tag">Mira subir el registro</span>
-      <h2>De lo llano a lo formidable</h2>
-      <p class="sub">El paquete tiene cinco etapas, de la E1 a la E5 — y las palabras maduran contigo.</p>
+      <span class="tag">レジスターの階段</span>
+      <h2>平易から強面まで</h2>
+      <p class="sub">パックはティアT1〜T5の5段 — あなたの成長とともに、単語も大人になります。</p>
       <ol class="ladder">
-        <li class="reveal"><span class="wd">transport</span><span class="df">to carry from one place to another</span></li>
-        <li class="reveal"><span class="wd">conspicuous</span><span class="df">clearly visible; attracting notice, often unwelcomely</span></li>
-        <li class="reveal"><span class="wd">perfidious</span><span class="df">deliberately deceitful and untrustworthy; treacherous</span></li>
-        <li class="reveal"><span class="wd">miscreant</span><span class="df">a person whose behaviour is criminal or morally wrong</span></li>
-        <li class="reveal"><span class="wd">stringent</span><span class="df">strict, precise, and exacting</span></li>
+        <li class="reveal"><span class="wd">transport</span><span class="df">ある場所から別の場所へ運ぶ</span></li>
+        <li class="reveal"><span class="wd">conspicuous</span><span class="df">はっきり目につく；しばしば望まれない形で注意を引く</span></li>
+        <li class="reveal"><span class="wd">perfidious</span><span class="df">意図的に欺く、信用ならない；不実な</span></li>
+        <li class="reveal"><span class="wd">miscreant</span><span class="df">行いが犯罪的・倫理的に誤った人物</span></li>
+        <li class="reveal"><span class="wd">stringent</span><span class="df">厳格で精密、要求の厳しい</span></li>
       </ol>
     </div>
   </section>
@@ -561,16 +563,16 @@ footer .footer-links .div{opacity:.4;}
   <!-- METHOD -->
   <section class="wrap method">
     <div class="frame reveal">
-      <span class="tag">Cómo se fija</span>
-      <h2>Las tarjetas como sistema integrado</h2>
+      <span class="tag">定着のしくみ</span>
+      <h2>統合システムとしてのフラッシュカード</h2>
       <dl>
-        <dt>Tarjetas emparejadas</dt><dd>500 tarjetas, 1.000 palabras — cada tarjeta empareja una palabra principal con un pariente de la misma familia, así la palabra y su parentela llegan juntas.</dd>
-        <dt>SRS de Fibonacci</dt><dd>Califica cada tarjeta de 0 a 5. Cuanto mejor conoces una palabra, más tarda en volver — repetición espaciada en intervalos de Fibonacci.</dd>
-        <dt>Boss fights</dt><dd>Cada familia de raíz está protegida por un duelo que no puedes ganar sin enfrentarte a sus miembros más difíciles y superarlos.</dd>
-        <dt>Graduación</dt><dd>Vence una familia y sus tarjetas dejan tu mazo diario para siempre. El mazo se hace más pequeño a medida que aprendes.</dd>
-        <dt>Etimología</dt><dd>Cada tarjeta muestra la raíz, su origen latino, y exactamente cómo se ensamblan las partes — además de sinónimos y antónimos para situar cada palabra con precisión.</dd>
-        <dt>Audio</dt><dd>Síntesis de voz Piper, limpia, en cada palabra y frase de ejemplo. Voces con licencia CC&nbsp;BY / MIT / Apache.</dd>
-        <dt>Lecciones</dt><dd>Las lecciones de referencia aparecen en el punto de la secuencia donde desbloquean lo que estás a punto de leer.</dd>
+        <dt>ペアカード</dt><dd>500枚で1,000語 — 各カードは見出し語と同族の親戚語をペアで収録。単語は一族そろって届きます。</dd>
+        <dt>フィボナッチSRS</dt><dd>各カードを0〜5で評価。よく知っている単語ほど、戻ってくるまでが長い — フィボナッチ間隔の間隔反復です。</dd>
+        <dt>ボス戦</dt><dd>各語根ファミリーの関門は決闘。最難関のメンバーと向き合い、打ち倒さない限り勝てません。</dd>
+        <dt>卒業</dt><dd>ファミリーを倒せば、そのカードは毎日のデッキから永久に去ります。学ぶほどデッキは小さく。</dd>
+        <dt>語源</dt><dd>全カードに語根、ラテン語の出典、部品の組み立て方を明記 — さらに類義語と反意語で、各単語の位置を精密に。</dd>
+        <dt>音声</dt><dd>全単語・全例文にクリーンなPiper TTS。CC&nbsp;BY / MIT / Apacheライセンスの音声。</dd>
+        <dt>レッスン</dt><dd>参照レッスンは、これから読むものを解錠するちょうどその地点で発火します。</dd>
       </dl>
     </div>
   </section>
@@ -578,30 +580,30 @@ footer .footer-links .div{opacity:.4;}
   <!-- ROOTS SERIES -->
   <section class="wrap">
     <div class="reveal">
-      <h2>Parte de la serie Roots</h2>
-      <p class="sub">La forma del inglés y sus vecinos, hecha visible.</p>
+      <h2>Rootsシリーズの一員</h2>
+      <p class="sub">英語と隣人たちの形を、見えるようにする。</p>
       <div class="packs">
-        <a class="pack" href="https://store.steampowered.com/app/4475060/?utm_source=website">
+        <a class="pack" href="https://store.steampowered.com/app/4475060/?utm_source=website-ja">
           <div class="n">German Roots</div>
-          <div class="lvl">1.000 palabras</div>
-          <p>La columna germánica del inglés cotidiano — las palabras que ya conoces a medias.</p>
+          <div class="lvl">1,000語</div>
+          <p>日常英語を支えるゲルマン語の背骨 — 半分はもう知っている単語たち。</p>
         </a>
-        <a class="pack" href="https://store.steampowered.com/app/4587720/?utm_source=website">
+        <a class="pack" href="https://store.steampowered.com/app/4587720/?utm_source=website-ja">
           <div class="n">Norman Roots</div>
-          <div class="lvl">1.000 palabras</div>
-          <p>El segundo inglés — 1066 y el francés que vino con él.</p>
+          <div class="lvl">1,000語</div>
+          <p>もうひとつの英語 — 1066年、フランス語とともにやって来た層。</p>
         </a>
-        <a class="pack" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website">
+        <a class="pack" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website-ja">
           <div class="n">Latin Roots</div>
-          <div class="lvl">1.000 palabras</div>
-          <p>El inglés construido a partir de sus piezas — la capa clásica y científica, ensamblada.</p>
-          <span class="here">Estás aquí</span>
+          <div class="lvl">1,000語</div>
+          <p>部品から組み立てる英語 — 古典と学術の層を、組み立てて。</p>
+          <span class="here">現在地</span>
         </a>
         <div class="pack">
           <div class="n">Greek Roots</div>
-          <div class="lvl">En desarrollo</div>
-          <p>El vocabulario de la ciencia, la medicina y la abstracción — la capa por encima del latín.</p>
-          <span class="soon">Próximamente</span>
+          <div class="lvl">開発中</div>
+          <p>科学・医学・抽象のことば — ラテンの上の層。</p>
+          <span class="soon">近日公開</span>
         </div>
       </div>
     </div>
@@ -609,23 +611,23 @@ footer .footer-links .div{opacity:.4;}
 
   <!-- FINAL CTA -->
   <section class="final wrap reveal">
-    <h2>Lee la siguiente palabra por partes.</h2>
-    <p>500 tarjetas · 1.000 palabras · el kit completo de prefijos y sufijos · etimología en cada tarjeta. La lista de vocabulario completa, todas las lecciones de referencia y una demo jugable de boss fight están en la web.</p>
-    <a class="btn warm" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website">Consigue Latin Roots en Steam &rarr;</a>
+    <h2>次の単語は、分解して読め。</h2>
+    <p>カード500枚 · 1,000語 · 接頭辞＆接尾辞の道具箱一式 · 全カードに語源。完全な単語リスト、全参照レッスン、プレイ可能なボス戦デモはウェブサイトに。</p>
+    <a class="btn warm" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website-ja">SteamでLatin Rootsを手に入れる &rarr;</a>
   </section>
 
 </main>
 
 <footer>
-  <p class="epi">“Litterarum radices amarae, fructus dulces.”<br>The roots of learning are bitter; the fruit is sweet.<br><span class="epi-cite">— proverbio latino, a partir de Aristóteles</span></p>
+  <p class="epi">“Litterarum radices amarae, fructus dulces.”<br>学問の根は苦く、その実は甘い。<br><span class="epi-cite">— ラテン語のことわざ、アリストテレスに由来</span></p>
   <span class="footer-links">
-    <a href="home.es.html">inicio</a>
+    <a href="home.ja.html">ホーム</a>
     <span class="div">·</span>
-    <a href="packs.es.html">paquetes</a>
+    <a href="packs.ja.html">パック</a>
     <span class="div">·</span>
-    <a href="manual/">guía completa (beta)</a>
+    <a href="manual/">攻略ガイド（β）</a>
     <span class="div">·</span>
-    <a href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website">steam</a>
+    <a href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website-ja">Steam</a>
   </span>
 </footer>
 

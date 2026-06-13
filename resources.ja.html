@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Resources — FlashBoss</title>
-<meta name="description" content="Free FlashBoss resources for every language: browsable and printable word lists, the in-game reference lessons rendered to read online, and printable reference sheets. Free to read, print, and learn from — game or no game.">
+<title>リソース — FlashBoss</title>
+<meta name="description" content="FlashBossの無料リソース：閲覧・印刷できる単語リスト、ゲーム内の参照レッスンのオンライン版、印刷用リファレンスシート。読むのも、印刷するのも、学ぶのも自由 — ゲームがなくても。">
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/resources.html">
 <link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/resources.de.html">
@@ -14,6 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
    FlashBoss — Resources hub (The Public Library).
@@ -23,7 +24,7 @@
    (rename/wire those). PDFs live inside references.html.
    ============================================================ */
 :root{
-  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --mono:'JetBrains Mono','M PLUS 1 Code', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
   --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
   --accent:#e0a93f; --green:#62d38a; --line:#3a3120; --rule:#2a2417;
 }
@@ -121,84 +122,85 @@ footer .made{margin-top:12px; opacity:.8;}
 .share-btn{font-family:var(--mono); font-size:12px; letter-spacing:.04em; color:var(--ink); text-decoration:none; background:transparent; border:1px solid var(--line); padding:9px 14px; cursor:pointer; transition:border-color .14s ease, color .14s ease;}
 .share-btn:hover{border-color:var(--accent); color:var(--ink);}
 </style>
+<style>body{line-height:1.75;}</style>
 </head>
 <body>
 <div class="overlay"></div>
 
 <nav>
-  <span class="brand"><a class="logo" href="index.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.html">home</a><span class="sep"> · </span><span class="here">resources</span></span>
+  <span class="brand"><a class="logo" href="home.ja.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.ja.html">ホーム</a><span class="sep"> · </span><span class="here">リソース</span></span>
   <span class="links">
-    <a href="about.html">about</a>
-    <a href="packs.html">packs</a>
-    <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-resources">steam</a>
+    <a href="about.ja.html">仕組み</a>
+    <a href="packs.ja.html">パック</a>
+    <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-resources-ja">Steam</a>
   </span>
   <span class="nav-mobile">
-    <a href="home.html">home</a>
-    <span class="r"><a href="about.html">about</a></span>
+    <a href="home.ja.html">ホーム</a>
+    <span class="r"><a href="about.ja.html">仕組み</a></span>
   </span>
   <div class="lang-switch">
-    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Choose language">EN<span class="lang-caret">▾</span></button>
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="言語を選択">JA<span class="lang-caret">▾</span></button>
     <ul class="lang-menu" hidden>
-      <li><a href="resources.html" aria-current="true">English</a></li>
+      <li><a href="resources.html">English</a></li>
       <li><a href="resources.de.html">Deutsch</a></li>
       <li><a href="resources.es.html">Español</a></li>
-      <li><a href="resources.ja.html">日本語</a></li>
+      <li><a href="resources.ja.html" aria-current="true">日本語</a></li>
     </ul>
   </div>
 </nav>
 
 <header class="hero">
   <div class="wrap">
-    <h1>The Public Library</h1>
-    <p class="hero-quote">&ldquo;A library is not a luxury but one of the necessities of life.&rdquo;<br><span class="qcite">&mdash; Henry Ward Beecher</span></p>
+    <h1>公共図書館</h1>
+    <p class="hero-quote">「図書館は贅沢品ではない。生活の必需品である。」<br><span class="qcite">— ヘンリー・ウォード・ビーチャー</span></p>
   </div>
 </header>
 
 <main class="wrap">
 
   <section class="intro">
-    <p>Every FlashBoss pack is built from two things: a <b>word list</b> and a set of <b>reference lessons</b>. Available here — free to read, free to print, or to use as you like without restriction.</p>
-    <p>FlashBoss is the structured learning system that combines them: Fibonacci-derived spaced repetition for adaptive study sessions, a choice of master guides and difficulty, boss fights, audio, and a structured, distraction-free learning environment.</p>
+    <p>FlashBossのどのパックも、2つの素材からできています：<b>単語リスト</b>と<b>参照レッスン</b>。その両方をここで公開 — 読むのも、印刷するのも、使い方も自由です。</p>
+    <p>FlashBossは、その2つを束ねる学習システムです：フィボナッチ数列に基づく間隔反復、師範と難易度の選択、ボス戦、音声、そして雑念のない学習環境。</p>
   </section>
 
   <section>
     <!-- WORD LISTS -->
     <div class="block">
-      <span class="tag">Study &amp; print</span>
-      <h2>Word lists</h2>
-      <p class="lead">Every word in every pack, laid out by tier and cluster — <b>target word and translation, nothing in the way</b>. Hide the translations to quiz yourself, or print a cluster and cut your own flashcards.</p>
-      <a class="go" href="wordlists.html?lang=English&amp;set=Adept">Open the word directory &rarr;</a>
+      <span class="tag">学ぶ・印刷する</span>
+      <h2>単語リスト</h2>
+      <p class="lead">全パックの全単語を、ティアとクラスター順に — <b>目標語と訳だけ、余計なものなし</b>。訳を隠して自己テストするもよし、クラスターごと印刷して自作の単語カードにするもよし。</p>
+      <a class="go" href="wordlists.html?lang=English&amp;set=Adept">単語リストを開く &rarr;</a>
       <div class="langs">
-        <span class="lbl">Jump to</span>
-        <a href="wordlists.html?lang=Italian">Italian</a>
-        <a href="wordlists.html?lang=German">German</a>
-        <a href="wordlists.html?lang=Spanish">Spanish</a>
-        <a href="wordlists.html?lang=Esperanto">Esperanto</a>
+        <span class="lbl">言語別</span>
+        <a href="wordlists.ja.html?lang=Italian">イタリア語</a>
+        <a href="wordlists.ja.html?lang=German">ドイツ語</a>
+        <a href="wordlists.ja.html?lang=Spanish">スペイン語</a>
+        <a href="wordlists.ja.html?lang=Esperanto">エスペラント語</a>
       </div>
     </div>
 
     <!-- LESSONS -->
     <div class="block">
-      <span class="tag">Read &amp; learn</span>
-      <h2>Lessons</h2>
-      <p class="lead">The reference lessons that fire inside FlashBoss — <b>pronunciation, grammar, usage</b> — rendered exactly as they appear in the terminal. Organised by language and tier, each one unlocking what you're about to read. Tap any line to hear it.</p>
-      <a class="go green" href="lessons.html?lang=English&amp;set=Adept">Open the lessons &rarr;</a>
+      <span class="tag">読む・学ぶ</span>
+      <h2>レッスン</h2>
+      <p class="lead">FlashBossの中で発火する参照レッスン — <b>発音・文法・語法</b> — をターミナル表示そのままに再現。言語別・ティア順に並び、それぞれが、これから読むものを解錠します。行をタップすると音声が流れます。</p>
+      <a class="go green" href="lessons.html?lang=English&amp;set=Adept">レッスンを開く &rarr;</a>
       <div class="langs">
-        <span class="lbl">Jump to</span>
-        <a href="lessons.html?lang=Italian">Italian</a>
-        <a href="lessons.html?lang=German">German</a>
-        <a href="lessons.html?lang=Spanish">Spanish</a>
-        <a href="lessons.html?lang=Esperanto">Esperanto</a>
+        <span class="lbl">言語別</span>
+        <a href="lessons.ja.html?lang=Italian">イタリア語</a>
+        <a href="lessons.ja.html?lang=German">ドイツ語</a>
+        <a href="lessons.ja.html?lang=Spanish">スペイン語</a>
+        <a href="lessons.ja.html?lang=Esperanto">エスペラント語</a>
       </div>
     </div>
 
     <!-- PRINTABLE REFERENCES -->
     <div class="block">
-      <span class="tag">Print</span>
-      <h2>Reference sheets</h2>
-      <p class="lead">One-page references built to print and pin up. More arrive as each pack ships.</p>
+      <span class="tag">印刷</span>
+      <h2>リファレンスシート</h2>
+      <p class="lead">印刷して貼っておける1枚もののリファレンス。パックの発売とともに増えていきます。</p>
       <!-- Code: wire references.html (per-language reference index). Esperanto Correlative Table lives there: correlative_table.pdf / correlative_table_print.pdf. Swap the span below back to an <a href="references.html"> + .langs jump-links once built. -->
-      <span class="go soon" aria-disabled="true">Coming soon</span>
+      <span class="go soon" aria-disabled="true">近日公開</span>
     </div>
   </section>
 
@@ -206,21 +208,21 @@ footer .made{margin-top:12px; opacity:.8;}
 
 <footer>
   <div class="links">
-    <a href="home.html">Home</a> · <a href="about.html">About</a> ·
-    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-resources">Steam</a> ·
-    <button class="share-toggle" type="button" aria-expanded="false">Share</button>
+    <a href="home.ja.html">ホーム</a> · <a href="about.ja.html">仕組み</a> ·
+    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-resources-ja">Steam</a> ·
+    <button class="share-toggle" type="button" aria-expanded="false">シェア</button>
   </div>
   <div class="share-modal" id="shareModal" hidden>
-    <div class="share-card" role="dialog" aria-label="Share">
-      <button class="share-close" type="button" aria-label="Close">&times;</button>
-      <div class="share-card-title">Share</div>
+    <div class="share-card" role="dialog" aria-label="シェア">
+      <button class="share-close" type="button" aria-label="閉じる">&times;</button>
+      <div class="share-card-title">シェア</div>
       <div class="share-btns">
-        <button class="share-btn" data-share="copy" type="button">copy link</button>
-        <a class="share-btn" data-share="x" target="_blank" rel="noopener">post on X</a>
-        <a class="share-btn" data-share="facebook" target="_blank" rel="noopener">facebook</a>
-        <a class="share-btn" data-share="reddit" target="_blank" rel="noopener">reddit</a>
-        <a class="share-btn" data-share="whatsapp" target="_blank" rel="noopener">whatsapp</a>
-        <a class="share-btn" data-share="messenger" target="_blank" rel="noopener">messenger</a>
+        <button class="share-btn" data-share="copy" type="button">リンクをコピー</button>
+        <a class="share-btn" data-share="x" target="_blank" rel="noopener">Xでポスト</a>
+        <a class="share-btn" data-share="facebook" target="_blank" rel="noopener">Facebook</a>
+        <a class="share-btn" data-share="reddit" target="_blank" rel="noopener">Reddit</a>
+        <a class="share-btn" data-share="whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="share-btn" data-share="messenger" target="_blank" rel="noopener">Messenger</a>
       </div>
     </div>
   </div>
@@ -242,7 +244,7 @@ footer .made{margin-top:12px; opacity:.8;}
   var modal=document.getElementById('shareModal');
   if(!toggle||!modal) return;
   var url=location.href.split('#')[0];
-  var text='FlashBoss — spaced-repetition flashcards with boss fights.';
+  var text='FlashBoss — 間隔反復とボス戦のフラッシュカード。';
   var U=encodeURIComponent(url), T=encodeURIComponent(text);
   var links={ x:'https://twitter.com/intent/tweet?url='+U+'&text='+T,
     facebook:'https://www.facebook.com/sharer/sharer.php?u='+U,
@@ -258,7 +260,7 @@ footer .made{margin-top:12px; opacity:.8;}
   document.addEventListener('keydown', function(e){ if(e.key==='Escape' && !modal.hidden) close(); });
   var copyBtn=modal.querySelector('[data-share="copy"]');
   if(copyBtn) copyBtn.addEventListener('click', function(){
-    function done(){ copyBtn.textContent='copied!'; setTimeout(function(){ copyBtn.textContent='copy link'; },1400); }
+    function done(){ copyBtn.textContent='コピーしました！'; setTimeout(function(){ copyBtn.textContent='リンクをコピー'; },1400); }
     function fb(){ var t=document.createElement('textarea'); t.value=url; t.style.position='fixed'; t.style.opacity='0'; document.body.appendChild(t); t.select(); try{document.execCommand('copy');}catch(e){} document.body.removeChild(t); done(); }
     if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done,fb); else fb();
   });
