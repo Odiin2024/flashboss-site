@@ -185,8 +185,8 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--op-bg);}
 }
 .btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--op-accent), #000 60%);}
 .btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--op-accent), #000 60%);}
-.hero .actions{display:flex; gap:14px; margin-top:40px; max-width:46ch;}
-.hero .actions .btn{margin-top:0; flex:1; text-align:center;}
+.hero .actions{display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:40px; max-width:520px;}
+.hero .actions .btn{margin-top:0; width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
 .btn.warm{color:#15120c; background:var(--leg-accent);
   box-shadow:6px 6px 0 color-mix(in oklab, var(--leg-accent), #000 60%);}
 .btn.warm:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--leg-accent), #000 60%);}
@@ -374,11 +374,11 @@ footer .footer-links .div{opacity:.4;}
   <span class="links">
     <a href="manual/index.html">guía completa (beta)</a>
     <a href="resources.es.html">recursos</a>
-    <a class="steam" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website">steam</a>
+    <a class="steam" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website&l=spanish">steam</a>
   </span>
   <span class="nav-mobile">
     <a href="home.es.html">inicio</a>
-    <span class="r"><a href="resources.es.html">recursos</a><a href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website">steam</a></span>
+    <span class="r"><a href="resources.es.html">recursos</a><a href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website&l=spanish">steam</a></span>
   </span>
   <div class="lang-switch">
     <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Elegir idioma">ES<span class="lang-caret">▾</span></button>
@@ -402,8 +402,9 @@ footer .footer-links .div{opacity:.4;}
       <p class="sig reveal">Escuchar · Leer · Repetir · Calificar · Luchar</p>
       <p class="lede reveal">Nadie con un vocabulario amplio lo construyó palabra por palabra. Aprendieron a leer las partes. Encuentras <b class="lat">irreparable</b> y puedes descomponerla a simple vista — <span class="pre">ir</span>·<span class="pre">re</span>·<span class="rt">par</span>·<span class="suf">able</span>, «not able to be made ready again» — y lees su significado directamente en la superficie.</p>
       <div class="actions reveal">
-        <a class="btn" href="wordlists.es.html?lang=English&amp;set=Latin%20Roots">Lista de vocabulario &rarr;</a>
-        <a class="btn" href="lessons.es.html?lang=English&amp;set=Latin%20Roots">Lecciones &rarr;</a>
+        <a class="btn" href="wordlists.es.html?lang=English&amp;set=Latin%20Roots">Vocabulario</a>
+        <a class="btn" href="lessons.es.html?lang=English&amp;set=Latin%20Roots">Lecciones</a>
+        <a class="btn" href="https://flashboss-demo.pages.dev/">Probar demo</a>
       </div>
     </div>
   </header>
@@ -581,17 +582,17 @@ footer .footer-links .div{opacity:.4;}
       <h2>Parte de la serie Roots</h2>
       <p class="sub">La forma del inglés y sus vecinos, hecha visible.</p>
       <div class="packs">
-        <a class="pack" href="https://store.steampowered.com/app/4475060/?utm_source=website">
+        <a class="pack" href="https://store.steampowered.com/app/4475060/FlashBoss__German_Roots/?utm_source=website&l=spanish">
           <div class="n">German Roots</div>
           <div class="lvl">1.000 palabras</div>
           <p>La columna germánica del inglés cotidiano — las palabras que ya conoces a medias.</p>
         </a>
-        <a class="pack" href="https://store.steampowered.com/app/4587720/?utm_source=website">
+        <a class="pack" href="https://store.steampowered.com/app/4587720/FlashBoss__Norman_Roots/?utm_source=website&l=spanish">
           <div class="n">Norman Roots</div>
           <div class="lvl">1.000 palabras</div>
           <p>El segundo inglés — 1066 y el francés que vino con él.</p>
         </a>
-        <a class="pack" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website">
+        <a class="pack" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website&l=spanish">
           <div class="n">Latin Roots</div>
           <div class="lvl">1.000 palabras</div>
           <p>El inglés construido a partir de sus piezas — la capa clásica y científica, ensamblada.</p>
@@ -611,7 +612,7 @@ footer .footer-links .div{opacity:.4;}
   <section class="final wrap reveal">
     <h2>Lee la siguiente palabra por partes.</h2>
     <p>500 tarjetas · 1.000 palabras · el kit completo de prefijos y sufijos · etimología en cada tarjeta. La lista de vocabulario completa, todas las lecciones de referencia y una demo jugable de boss fight están en la web.</p>
-    <a class="btn warm" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website">Consigue Latin Roots en Steam &rarr;</a>
+    <a class="btn warm" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website&l=spanish">Consigue Latin Roots en Steam &rarr;</a>
   </section>
 
 </main>
@@ -625,7 +626,7 @@ footer .footer-links .div{opacity:.4;}
     <span class="div">·</span>
     <a href="manual/">guía completa (beta)</a>
     <span class="div">·</span>
-    <a href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website">steam</a>
+    <a href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website&l=spanish">steam</a>
   </span>
 </footer>
 

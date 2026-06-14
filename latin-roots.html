@@ -185,8 +185,8 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--op-bg);}
 }
 .btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--op-accent), #000 60%);}
 .btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--op-accent), #000 60%);}
-.hero .actions{display:flex; gap:14px; margin-top:40px; max-width:46ch;}
-.hero .actions .btn{margin-top:0; flex:1; text-align:center;}
+.hero .actions{display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:40px; max-width:520px;}
+.hero .actions .btn{margin-top:0; width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
 .btn.warm{color:#15120c; background:var(--leg-accent);
   box-shadow:6px 6px 0 color-mix(in oklab, var(--leg-accent), #000 60%);}
 .btn.warm:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--leg-accent), #000 60%);}
@@ -364,6 +364,7 @@ footer .footer-links a{color:inherit; text-decoration:none; opacity:.75; letter-
 footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
 footer .footer-links .div{opacity:.4;}
 </style>
+<script src="lang-redirect.js"></script>
 </head>
 <body>
 <div class="overlay"></div>
@@ -402,8 +403,9 @@ footer .footer-links .div{opacity:.4;}
       <p class="sig reveal">Listen · Read · Repeat · Rate · Fight</p>
       <p class="lede reveal">Nobody with a large vocabulary built it word by word. They learned to read the parts. Meet <b class="lat">irreparable</b> and you can take it to pieces on sight — <span class="pre">ir</span>·<span class="pre">re</span>·<span class="rt">par</span>·<span class="suf">able</span>, "not able to be made ready again" — and read its meaning straight off the surface.</p>
       <div class="actions reveal">
-        <a class="btn" href="wordlists.html?lang=English&amp;set=Latin%20Roots">Word List &rarr;</a>
-        <a class="btn" href="lessons.html?lang=English&amp;set=Latin%20Roots">Lessons &rarr;</a>
+        <a class="btn" href="wordlists.html?lang=English&amp;set=Latin%20Roots">Word List</a>
+        <a class="btn" href="lessons.html?lang=English&amp;set=Latin%20Roots">Lessons</a>
+        <a class="btn" href="https://flashboss-demo.pages.dev/">Try the demo</a>
       </div>
     </div>
   </header>
@@ -581,12 +583,12 @@ footer .footer-links .div{opacity:.4;}
       <h2>Part of the Roots Series</h2>
       <p class="sub">The shape of English and its neighbours, made visible.</p>
       <div class="packs">
-        <a class="pack" href="https://store.steampowered.com/app/4475060/?utm_source=website">
+        <a class="pack" href="https://store.steampowered.com/app/4475060/FlashBoss__German_Roots/?utm_source=website">
           <div class="n">German Roots</div>
           <div class="lvl">1,000 words</div>
           <p>The Germanic backbone of everyday English — the words you already half-know.</p>
         </a>
-        <a class="pack" href="https://store.steampowered.com/app/4587720/?utm_source=website">
+        <a class="pack" href="https://store.steampowered.com/app/4587720/FlashBoss__Norman_Roots/?utm_source=website">
           <div class="n">Norman Roots</div>
           <div class="lvl">1,000 words</div>
           <p>The second English — 1066 and the French that came with it.</p>

@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Spanisch — FlashBoss</title>
 <meta name="description" content="FlashBoss Spanisch: das lateinamerikanische Spanisch, das wirklich gesprochen wird — aus einem riesigen Untertitel-Korpus und akademischen Häufigkeitsdaten. Von „Hola, me llamo…“ bis dahin, dem Film, dem Lied und dem ganzen Gespräch ohne Untertitel zu folgen. Spaced Repetition, Bossfights und Sprachausgabe.">
+<link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/spanish.html">
+<link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/spanish.de.html">
+<link rel="alternate" hreflang="es" href="https://odiin2024.github.io/flashboss-site/spanish.es.html">
+<link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/spanish.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
@@ -111,8 +115,8 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--d-bg);}
   padding:14px 26px; text-decoration:none; border:0; box-shadow:6px 6px 0 color-mix(in oklab, var(--d-accent), #000 60%); transition:transform .12s ease, box-shadow .12s ease;}
 .btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--d-accent), #000 60%);}
 .btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--d-accent), #000 60%);}
-.hero .actions{display:flex; gap:14px; margin-top:40px; max-width:48ch;}
-.hero .actions .btn{flex:1; text-align:center;}
+.hero .actions{display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:40px; max-width:520px;}
+.hero .actions .btn{margin-top:0; width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
 .btn.hot{color:#1d0f1a; background:var(--u-accent); box-shadow:6px 6px 0 color-mix(in oklab, var(--u-accent), #000 60%);}
 .btn.hot:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--u-accent), #000 60%);}
 
@@ -220,11 +224,11 @@ footer .footer-links .div{opacity:.4;}
   <span class="links">
     <a href="manual/index.html">Komplettlösung (Beta)</a>
     <a href="resources.de.html">Ressourcen</a>
-    <a class="steam" href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website">steam</a>
+    <a class="steam" href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website&l=german">steam</a>
   </span>
   <span class="nav-mobile">
     <a href="home.de.html">Start</a>
-    <span class="r"><a href="resources.de.html">Ressourcen</a><a href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website">steam</a></span>
+    <span class="r"><a href="resources.de.html">Ressourcen</a><a href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website&l=german">steam</a></span>
   </span>
   <div class="lang-switch">
     <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Sprache wählen">DE<span class="lang-caret">▾</span></button>
@@ -247,8 +251,9 @@ footer .footer-links .div{opacity:.4;}
       <p class="sig reveal">Hören · Lesen · Wiederholen · Bewerten · Kämpfen</p>
       <p class="lede reveal">Du beginnst mit <b class="es">Hola, me llamo…</b> Am Ende sind die Untertitel aus — der Film, das Lied, das ganze Gespräch, verstanden. <b>Lateinamerikanisches Spanisch</b>, so wie es wirklich gesprochen wird.</p>
       <div class="actions reveal">
-        <a class="btn" href="wordlists.de.html?lang=Spanish">Wortlisten &rarr;</a>
-        <a class="btn" href="lessons.de.html?lang=Spanish">Lektionen &rarr;</a>
+        <a class="btn" href="wordlists.de.html?lang=Spanish">Wortlisten</a>
+        <a class="btn" href="lessons.de.html?lang=Spanish">Lektionen</a>
+        <a class="btn" href="https://flashboss-demo.pages.dev/">Demo testen</a>
       </div>
     </div>
   </header>
@@ -389,7 +394,7 @@ footer .footer-links .div{opacity:.4;}
 
   <!-- FINAL CTA -->
   <section class="final wrap reveal">
-    <a class="btn hot" href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website">FlashBoss auf Steam holen &rarr;</a>
+    <a class="btn hot" href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website&l=german">FlashBoss auf Steam holen &rarr;</a>
   </section>
 
 </main>
@@ -401,7 +406,7 @@ footer .footer-links .div{opacity:.4;}
     <span class="div">·</span>
     <a href="manual/">Komplettlösung (Beta)</a>
     <span class="div">·</span>
-    <a href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website">steam</a>
+    <a href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website&l=german">steam</a>
   </span>
 </footer>
 

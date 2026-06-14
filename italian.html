@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Italian — FlashBoss</title>
 <meta name="description" content="FlashBoss Italian: the language of coming home. From 'Sono uno studente' to the nine o'clock train to your nonna's. 3,000 words, twenty reference lessons, spaced repetition, boss fights, gender colour-coding with elision, and text-to-speech.">
+<link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/italian.html">
+<link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/italian.de.html">
+<link rel="alternate" hreflang="es" href="https://odiin2024.github.io/flashboss-site/italian.es.html">
+<link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/italian.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
@@ -86,8 +90,8 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--vis-bg);}
   box-shadow:6px 6px 0 color-mix(in oklab, var(--vis-accent), #000 60%); transition:transform .12s ease, box-shadow .12s ease;}
 .btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--vis-accent), #000 60%);}
 .btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--vis-accent), #000 60%);}
-.hero .actions{display:flex; gap:14px; margin-top:38px; max-width:48ch;}
-.hero .actions .btn{margin-top:0; flex:1; text-align:center;}
+.hero .actions{display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:38px; max-width:520px;}
+.hero .actions .btn{margin-top:0; width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
 .btn.warm{color:#120a08; background:var(--bel-accent); box-shadow:6px 6px 0 color-mix(in oklab, var(--bel-accent), #000 60%);}
 .btn.warm:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--bel-accent), #000 60%);}
 
@@ -190,6 +194,7 @@ footer .dante .tr{font-style:normal; opacity:.85; display:block; margin-top:10px
 footer .src{display:block; margin:6px auto 16px; opacity:.6; font-size:11px;}
 footer a{color:var(--bel-dim);}
 </style>
+<script src="lang-redirect.js"></script>
 </head>
 <body>
 <div class="overlay"></div>
@@ -226,8 +231,9 @@ footer a{color:var(--bel-dim);}
       <p class="sig reveal">Listen · Read · Repeat · Rate · Fight</p>
       <p class="lede reveal">You begin with <b class="it">Sono uno studente.</b> By the end you're on the nine o'clock train to your <b>nonna</b>'s.</p>
       <div class="actions reveal">
-        <a class="btn" href="wordlists.html?lang=Italian">Word Lists &rarr;</a>
-        <a class="btn" href="lessons.html?lang=Italian">Lessons &rarr;</a>
+        <a class="btn" href="wordlists.html?lang=Italian">Word Lists</a>
+        <a class="btn" href="lessons.html?lang=Italian">Lessons</a>
+        <a class="btn" href="https://flashboss-demo.pages.dev/">Try the demo</a>
       </div>
     </div>
   </header>

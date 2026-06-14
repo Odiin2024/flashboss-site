@@ -7,6 +7,10 @@
 <meta name="description" content="FlashBoss Alemán: mil palabras que crecen contigo. De 'Ich bin Student' a la carta del Finanzamt. Repetición espaciada, boss fights, codificación de género por color y síntesis de voz.">
 
 <!-- House font. If self-hosting, swap this for your local JetBrains Mono. -->
+<link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/german.html">
+<link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/german.de.html">
+<link rel="alternate" hreflang="es" href="https://odiin2024.github.io/flashboss-site/german.es.html">
+<link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/german.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
@@ -171,8 +175,8 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--inn-bg);}
 }
 .btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--inn-accent), #000 60%);}
 .btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--inn-accent), #000 60%);}
-.hero .actions{display:flex; gap:14px; margin-top:40px; max-width:46ch;}
-.hero .actions .btn{margin-top:0; flex:1; text-align:center;}
+.hero .actions{display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:40px; max-width:520px;}
+.hero .actions .btn{margin-top:0; width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
 .btn.cold{color:#080b0a; background:var(--exp-accent);
   box-shadow:6px 6px 0 color-mix(in oklab, var(--exp-accent), #000 60%);}
 .btn.cold:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--exp-accent), #000 60%);}
@@ -343,11 +347,11 @@ footer .footer-links .div{opacity:.4;}
   <span class="links">
     <a href="manual/index.html">guía completa (beta)</a>
     <a href="resources.es.html">recursos</a>
-    <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">steam</a>
+    <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website&l=spanish">steam</a>
   </span>
   <span class="nav-mobile">
     <a href="home.es.html">inicio</a>
-    <span class="r"><a href="resources.es.html">recursos</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">steam</a></span>
+    <span class="r"><a href="resources.es.html">recursos</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website&l=spanish">steam</a></span>
   </span>
   <div class="lang-switch">
     <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Elegir idioma">ES<span class="lang-caret">▾</span></button>
@@ -370,8 +374,9 @@ footer .footer-links .div{opacity:.4;}
       <p class="sig reveal">Escuchar · Leer · Repetir · Calificar · Luchar</p>
       <p class="lede reveal">Empiezas diciendo <b class="de">Ich bin Student.</b> Al final lees la carta del <b>Finanzamt</b> — y sabes exactamente qué quiere. German Core te lleva desde la llegada hasta saber desenvolverte.</p>
       <div class="actions reveal">
-        <a class="btn" href="wordlists.es.html?lang=German">Listas de vocabulario &rarr;</a>
-        <a class="btn" href="lessons.es.html?lang=German">Lecciones &rarr;</a>
+        <a class="btn" href="wordlists.es.html?lang=German">Vocabulario</a>
+        <a class="btn" href="lessons.es.html?lang=German">Lecciones</a>
+        <a class="btn" href="https://flashboss-demo.pages.dev/">Probar demo</a>
       </div>
     </div>
   </header>
@@ -521,7 +526,7 @@ footer .footer-links .div{opacity:.4;}
 
   <!-- FINAL CTA -->
   <section class="final wrap reveal">
-    <a class="btn cold" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">Consigue FlashBoss en Steam &rarr;</a>
+    <a class="btn cold" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website&l=spanish">Consigue FlashBoss en Steam &rarr;</a>
   </section>
 
 </main>
@@ -533,7 +538,7 @@ footer .footer-links .div{opacity:.4;}
     <span class="div">·</span>
     <a href="manual/">guía completa (beta)</a>
     <span class="div">·</span>
-    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">steam</a>
+    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website&l=spanish">steam</a>
   </span>
 </footer>
 

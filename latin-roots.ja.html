@@ -186,8 +186,8 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--op-bg);}
 }
 .btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--op-accent), #000 60%);}
 .btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--op-accent), #000 60%);}
-.hero .actions{display:flex; gap:14px; margin-top:40px; max-width:46ch;}
-.hero .actions .btn{margin-top:0; flex:1; text-align:center;}
+.hero .actions{display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:40px; max-width:520px;}
+.hero .actions .btn{margin-top:0; width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
 .btn.warm{color:#15120c; background:var(--leg-accent);
   box-shadow:6px 6px 0 color-mix(in oklab, var(--leg-accent), #000 60%);}
 .btn.warm:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--leg-accent), #000 60%);}
@@ -376,11 +376,11 @@ footer .footer-links .div{opacity:.4;}
   <span class="links">
     <a href="manual/index.html">攻略ガイド（β）</a>
     <a href="resources.ja.html">リソース</a>
-    <a class="steam" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website-ja">Steam</a>
+    <a class="steam" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website-ja&l=japanese">Steam</a>
   </span>
   <span class="nav-mobile">
     <a href="home.ja.html">ホーム</a>
-    <span class="r"><a href="resources.ja.html">リソース</a><a href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website-ja">Steam</a></span>
+    <span class="r"><a href="resources.ja.html">リソース</a><a href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website-ja&l=japanese">Steam</a></span>
   </span>
   <div class="lang-switch">
     <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="言語を選択">JA<span class="lang-caret">▾</span></button>
@@ -404,8 +404,9 @@ footer .footer-links .div{opacity:.4;}
       <p class="sig reveal">聞く・読む・繰り返す・評価する・戦う</p>
       <p class="lede reveal">大きな語彙を持つ人は、1語ずつ覚えたのではありません。部品の読み方を身につけたのです。<b class="lat">irreparable</b>に出会っても、見た瞬間に分解できる — <span class="pre">ir</span>·<span class="pre">re</span>·<span class="rt">par</span>·<span class="suf">able</span>、「再び・整えることが・できない」— 意味は表面から読み取れます。</p>
       <div class="actions reveal">
-        <a class="btn" href="wordlists.ja.html?lang=English&amp;set=Latin%20Roots">単語リスト &rarr;</a>
-        <a class="btn" href="lessons.ja.html?lang=English&amp;set=Latin%20Roots">レッスン &rarr;</a>
+        <a class="btn" href="wordlists.ja.html?lang=English&amp;set=Latin%20Roots">単語リスト</a>
+        <a class="btn" href="lessons.ja.html?lang=English&amp;set=Latin%20Roots">レッスン</a>
+        <a class="btn" href="https://flashboss-demo.pages.dev/">デモを試す</a>
       </div>
     </div>
   </header>
@@ -583,17 +584,17 @@ footer .footer-links .div{opacity:.4;}
       <h2>Rootsシリーズの一員</h2>
       <p class="sub">英語と隣人たちの形を、見えるようにする。</p>
       <div class="packs">
-        <a class="pack" href="https://store.steampowered.com/app/4475060/?utm_source=website-ja">
+        <a class="pack" href="https://store.steampowered.com/app/4475060/FlashBoss__German_Roots/?utm_source=website-ja&l=japanese">
           <div class="n">German Roots</div>
           <div class="lvl">1,000語</div>
           <p>日常英語を支えるゲルマン語の背骨 — 半分はもう知っている単語たち。</p>
         </a>
-        <a class="pack" href="https://store.steampowered.com/app/4587720/?utm_source=website-ja">
+        <a class="pack" href="https://store.steampowered.com/app/4587720/FlashBoss__Norman_Roots/?utm_source=website-ja&l=japanese">
           <div class="n">Norman Roots</div>
           <div class="lvl">1,000語</div>
           <p>もうひとつの英語 — 1066年、フランス語とともにやって来た層。</p>
         </a>
-        <a class="pack" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website-ja">
+        <a class="pack" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website-ja&l=japanese">
           <div class="n">Latin Roots</div>
           <div class="lvl">1,000語</div>
           <p>部品から組み立てる英語 — 古典と学術の層を、組み立てて。</p>
@@ -613,7 +614,7 @@ footer .footer-links .div{opacity:.4;}
   <section class="final wrap reveal">
     <h2>次の単語は、分解して読め。</h2>
     <p>カード500枚 · 1,000語 · 接頭辞＆接尾辞の道具箱一式 · 全カードに語源。完全な単語リスト、全参照レッスン、プレイ可能なボス戦デモはウェブサイトに。</p>
-    <a class="btn warm" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website-ja">SteamでLatin Rootsを手に入れる &rarr;</a>
+    <a class="btn warm" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website-ja&l=japanese">SteamでLatin Rootsを手に入れる &rarr;</a>
   </section>
 
 </main>
@@ -627,7 +628,7 @@ footer .footer-links .div{opacity:.4;}
     <span class="div">·</span>
     <a href="manual/">攻略ガイド（β）</a>
     <span class="div">·</span>
-    <a href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website-ja">Steam</a>
+    <a href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website-ja&l=japanese">Steam</a>
   </span>
 </footer>
 

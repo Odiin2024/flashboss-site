@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Norman Roots — die zweite Schicht des Englischen | FlashBoss</title>
+<meta name="description" content="FlashBoss Norman Roots: die zweite Schicht des Englischen. 1066 brachten die Normannen einen ganzen neuen Wortschatz — Recht, Regierung, Küche und das förmliche Register — und das Englische behielt beide Schichten. 1.000 Wörter, 49 Cluster, Spaced Repetition, Bosskämpfe und Sprachausgabe.">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/norman-roots.html">
+<link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/norman-roots.de.html">
+<link rel="alternate" hreflang="es" href="https://odiin2024.github.io/flashboss-site/norman-roots.es.html">
+<link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/norman-roots.html">
+
+<!-- House font. If self-hosting, swap this for your local JetBrains Mono. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   FlashBoss — Norman Roots page
+   Sibling to latin-roots.html / german.html. Same phosphor-
+   terminal chrome. The German page enacts INNOCENCE -> EXPERIENCE;
+   the Latin page enacts OPAQUE -> LEGIBLE. This one enacts
+   GROUND -> COURT: the page opens on the warm Anglo-Saxon ground
+   — the hearth, the field, the plain word — and climbs as you
+   descend into the cool, gilded Norman court — law, rule, the
+   formal register. The register rises; the room cools and gilds.
+   "Dieu et mon droit."
+
+   TUNE THESE FIRST:
+   --saxon / --norman  -> the two-layer legend colours.
+   --steam-url         -> set in the CTA links below (app 4587720).
+   Hero background: home.png (the house lamplit-classroom splash,
+   shared with home / packs / resources, darkened by the ::after
+   wash). Falls back to a warm solid if that file is absent.
+   ============================================================ */
+:root{
+  --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
+
+  /* two-layer colour-coding — the page's teaching legend.
+     The plain layer reads warm (the ground); the formal layer
+     reads cool (the court). RETUNE to the game's palette. */
+  --saxon:#e0954a;    /* warm amber  — the plain Anglo-Saxon word */
+  --norman:#9db4ff;   /* cool royal  — the formal Norman word     */
+
+  /* GROUND palette (top of page) — warm, plain, the hearth & field */
+  --gr-bg:#17110b;
+  --gr-ink:#eddcbf;
+  --gr-dim:#a48d68;
+  --gr-accent:#e0954a;   /* hearth amber — the common tongue */
+
+  /* COURT palette (bottom of page) — cool, gilded, the Norman hall */
+  --ct-bg:#0b0f1c;
+  --ct-ink:#dde3f5;
+  --ct-dim:#828fb4;
+  --ct-accent:#9db4ff;   /* royal periwinkle — the conquerors' register */
+
+  /* FlashBoss blue — the manual's link/button accent */
+  --fb-blue:#7ec8ff;
+
+  /* mood: 0 = ground, 1 = court. Driven by scroll. */
+  --mood:0;
+
+  --line: color-mix(in oklab, #4a3a25, #2c3450 calc(var(--mood) * 100%));
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:var(--mono);
+  background:#17110b; /* fallback */
+  background:color-mix(in oklab, var(--gr-bg), var(--ct-bg) calc(var(--mood) * 100%));
+  color:
+    color-mix(in oklab, var(--gr-ink), var(--ct-ink) calc(var(--mood) * 100%));
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  transition:background 120ms linear, color 120ms linear;
+  overflow-x:hidden;
+}
+
+/* CRT scanline + grain overlay */
+.overlay{
+  position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(0,0,0,0) 0px,
+      rgba(0,0,0,0) 2px,
+      rgba(0,0,0,.045) 3px,
+      rgba(0,0,0,0) 4px);
+  mix-blend-mode:multiply;
+}
+.vignette{
+  position:fixed; inset:0; pointer-events:none; z-index:9998;
+  background:radial-gradient(120% 90% at 50% 35%, transparent 55%, rgba(0,0,0,.55) 100%);
+}
+
+.wrap{max-width:880px; margin:0 auto; padding:0 24px;}
+.accent{color:color-mix(in oklab, var(--gr-accent), var(--ct-accent) calc(var(--mood)*100%));}
+
+/* ---- nav ---- */
+nav{
+  display:flex; align-items:center;
+  padding:18px 24px; font-size:13px; letter-spacing:.04em;
+  border-bottom:1px solid var(--line);
+}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--gr-dim); margin-right:auto;}
+nav .brand a, nav .brand .sep{color:var(--gr-dim); text-decoration:none;}
+nav .brand a:hover{color:var(--gr-ink);}
+nav .brand .here{font-weight:800; color:var(--gr-ink);}
+nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--gr-ink);}
+nav .brand .logo:hover{color:var(--gr-accent);}
+nav .brand .pipe{color:var(--gr-dim); margin:0 11px;}
+.nav-mobile{display:none;}
+.nav-mobile a{color:inherit; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.08em; opacity:.85;}
+.nav-mobile a:hover{opacity:1; color:var(--gr-accent);}
+@media(max-width:640px){ nav .brand, nav .links{display:none;} .nav-mobile{display:flex; flex:1; justify-content:space-between; align-items:center;} .nav-mobile .r{display:flex; gap:18px;} }
+nav .links a{ color:inherit; text-decoration:none; opacity:.7; margin-left:22px; }
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+nav .links a.steam{font-weight:800; opacity:1; color:var(--gr-ink);}
+nav .lang-switch{position:relative; margin-left:22px;}
+nav .lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--gr-ink); background:var(--gr-bg); border:1px solid var(--gr-dim); padding:5px 8px; line-height:1; cursor:pointer;}
+nav .lang-toggle:hover, nav .lang-toggle[aria-expanded="true"]{background:var(--gr-ink); color:var(--gr-bg);}
+nav .lang-caret{font-size:8px; line-height:1; transition:transform .15s ease;}
+nav .lang-toggle[aria-expanded="true"] .lang-caret{transform:rotate(180deg);}
+nav .lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--gr-bg); border:1px solid var(--gr-dim); min-width:120px; z-index:50;}
+nav .lang-menu[hidden]{display:none;}
+nav .lang-menu li{margin:0; padding-left:0; position:static;}
+nav .lang-menu li::before{content:none;}
+nav .lang-menu a{display:block; font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--gr-ink); text-decoration:none; padding:7px 10px; white-space:nowrap; opacity:1; margin:0;}
+nav .lang-menu a:hover{background:var(--gr-ink); color:var(--gr-bg); text-decoration:none;}
+nav .lang-menu a[aria-current="true"]{color:var(--gr-accent);}
+nav .lang-menu a[aria-current="true"]:hover{color:var(--gr-bg);}
+
+/* ---- reveal on scroll ---- */
+.reveal{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease;}
+.reveal.in{opacity:1; transform:none;}
+
+/* ---- HERO ---- */
+.hero{position:relative; padding:84px 0 36px; overflow:hidden;}
+.hero::before{content:""; position:absolute; inset:0; z-index:0;
+  background:#0f0b07 url('home.png') center 30% / cover no-repeat;}
+.hero::after{content:""; position:absolute; inset:0; z-index:1;
+  background:linear-gradient(180deg, rgba(23,17,11,.58) 0%, rgba(23,17,11,.82) 55%, #17110b 100%);}
+.hero .wrap{position:relative; z-index:2;}
+.kicker{
+  font-size:12px; letter-spacing:.32em; text-transform:uppercase;
+  color:var(--gr-dim); opacity:.9; margin-bottom:26px;
+}
+.kicker b{color:var(--gr-accent); font-weight:700;}
+.hero h1{
+  font-size:clamp(44px, 11vw, 104px);
+  line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;
+}
+.hero h1 .small{display:block; font-size:.30em; letter-spacing:.42em; font-weight:500; opacity:.6; margin-top:18px;}
+.cursor{
+  display:inline-block; width:.6em; height:1em; vertical-align:-.08em;
+  background:color-mix(in oklab, var(--gr-accent), transparent 30%); margin-left:.12em;
+  animation:blink 1.05s steps(1) infinite;
+}
+@keyframes blink{50%{opacity:0;}}
+.hero .tagline{
+  font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:30px 0 0;
+  color:var(--gr-ink); font-weight:500;
+}
+.hero .sig{
+  font-size:13px; letter-spacing:.24em; text-transform:uppercase;
+  color:var(--gr-accent); margin:14px 0 0; opacity:.9;
+}
+.hero .lede{
+  font-size:clamp(15px,2.2vw,18px); max-width:52ch; margin:24px 0 0;
+  color:var(--gr-dim);
+}
+.hero .lede b{color:var(--gr-ink); font-weight:700;}
+.hero .lede .sax{color:var(--saxon); font-weight:700;}
+.hero .lede .nor{color:var(--norman); font-weight:700;}
+
+.btn{
+  display:inline-block; margin-top:40px;
+  font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.08em;
+  color:#17110b; background:color-mix(in oklab, var(--gr-accent), transparent 25%);
+  padding:14px 26px; text-decoration:none; border:0;
+  box-shadow:6px 6px 0 color-mix(in oklab, var(--gr-accent), #000 60%);
+  transition:transform .12s ease, box-shadow .12s ease;
+}
+.btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--gr-accent), #000 60%);}
+.btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--gr-accent), #000 60%);}
+.hero .actions{display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:40px; max-width:520px;}
+.hero .actions .btn{margin-top:0; width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
+.btn.warm{color:#0b0f1c; background:var(--ct-accent);
+  box-shadow:6px 6px 0 color-mix(in oklab, var(--ct-accent), #000 60%);}
+.btn.warm:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--ct-accent), #000 60%);}
+
+/* ---- section frame (box-drawing) ---- */
+section{padding:64px 0;}
+.hero + section{padding-top:48px;}
+.frame{
+  border:1px solid var(--line);
+  position:relative;
+  padding:34px 30px 32px;
+}
+.frame > .tag{
+  position:absolute; top:-12px; left:22px;
+  background:color-mix(in oklab, var(--gr-bg), var(--ct-bg) calc(var(--mood)*100%));
+  padding:4px 12px; line-height:1; font-size:11px; letter-spacing:.3em; text-transform:uppercase;
+  color:color-mix(in oklab, var(--gr-accent), var(--ct-accent) calc(var(--mood)*100%));
+}
+h2{
+  font-size:clamp(26px,5vw,40px); margin:0 0 8px; font-weight:800; letter-spacing:-.01em;
+}
+section > .reveal:not(.frame) > h2{margin-top:24px;}
+.sub{color:var(--gr-dim); font-size:14px; letter-spacing:.04em; margin:0 0 26px;}
+p.body{font-size:16px; max-width:62ch; margin:0 0 18px;
+  color:color-mix(in oklab, var(--gr-ink), var(--ct-ink) calc(var(--mood)*100%));}
+p.body b{color:color-mix(in oklab, var(--gr-accent), var(--ct-accent) calc(var(--mood)*100%));}
+p.body .sax{color:var(--saxon); font-weight:700;}
+p.body .nor{color:var(--norman); font-weight:700;}
+.fr{font-style:italic; opacity:.95;}
+
+/* ---- the two movements: ground floor / upper floor ---- */
+.movements{display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px solid var(--line);}
+.mv{padding:30px 26px;}
+.mv:first-child{border-right:1px solid var(--line); background:rgba(224,149,74,.05);}
+.mv:last-child{background:rgba(157,180,255,.05);}
+.mv .h{font-size:12px; letter-spacing:.3em; text-transform:uppercase; margin-bottom:14px;}
+.mv.ground .h{color:var(--saxon);}
+.mv.upper .h{color:var(--norman);}
+.mv p{font-size:14.5px; margin:0;}
+@media(max-width:640px){
+  .movements{grid-template-columns:1fr;}
+  .mv:first-child{border-right:0; border-bottom:1px solid var(--line);}
+}
+
+/* ---- DOUBLET demo: tap a pair, the story opens ---- */
+.legend{display:flex; gap:20px; flex-wrap:wrap; font-size:12px; margin:0 0 24px; color:var(--gr-dim);}
+.legend span{display:inline-flex; align-items:center; gap:7px;}
+.legend i{width:11px; height:11px; display:inline-block;}
+.legend .lsax{background:var(--saxon);} .legend .lnor{background:var(--norman);}
+
+.decomps{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+@media(max-width:640px){.decomps{grid-template-columns:1fr;}}
+.decomp{
+  border:1px solid var(--line); padding:22px 20px 18px; cursor:pointer;
+  background:rgba(255,255,255,.015); transition:border-color .15s ease, background .15s ease;
+}
+.decomp:hover{border-color:color-mix(in oklab, var(--gr-accent), var(--ct-accent) calc(var(--mood)*100%));}
+.decomp .whole{font-size:26px; font-weight:800; letter-spacing:.01em; transition:opacity .25s ease;}
+.decomp .whole .sax{color:var(--saxon);} .decomp .whole .nor{color:var(--norman);}
+.decomp .whole .vs{color:var(--gr-dim); font-weight:400; margin:0 .18em;}
+.decomp .gloss-top{font-size:12.5px; color:var(--gr-dim); margin-top:4px; font-style:italic;}
+.decomp .parts{
+  display:flex; flex-wrap:wrap; gap:6px; margin-top:14px;
+  max-height:0; overflow:hidden; opacity:0;
+  transition:max-height .35s ease, opacity .3s ease, margin-top .3s ease;
+}
+.decomp.split .parts{max-height:260px; opacity:1;}
+.decomp.split .whole{opacity:.28;}
+.decomp .m{
+  display:inline-flex; flex-direction:column; align-items:flex-start;
+  border:1px solid currentColor; padding:6px 9px; line-height:1.2;
+  font-weight:800; font-size:16px;
+}
+.decomp .m i{font-style:normal; font-weight:500; font-size:10.5px; letter-spacing:.04em; opacity:.85; margin-top:3px;}
+.decomp .m.sax{color:var(--saxon);} .decomp .m.nor{color:var(--norman);}
+.decomp .sum{
+  font-size:13px; color:var(--ct-accent); margin-top:14px; font-weight:500;
+  max-height:0; overflow:hidden; opacity:0; transition:max-height .35s ease, opacity .3s ease, margin-top .3s ease;
+}
+.decomp.split .sum{max-height:140px; opacity:1; margin-top:14px;}
+.decomp .hint{font-size:10px; letter-spacing:.2em; text-transform:uppercase; opacity:.45; margin-top:14px;}
+.decomp.split .hint{opacity:0;}
+
+/* ---- the doublet console (table: plain -> formal) ---- */
+.console{
+  border:1px solid var(--line); font-size:13.5px;
+  background:rgba(157,180,255,.03);
+}
+.console .head{
+  display:flex; justify-content:space-between; padding:12px 18px;
+  border-bottom:1px solid var(--line); font-size:11px; letter-spacing:.18em; text-transform:uppercase;
+}
+.console .head .hs{color:var(--saxon);} .console .head .hn{color:var(--norman);}
+.console .row{display:grid; grid-template-columns:max-content 1fr; border-bottom:1px dashed var(--line);}
+.console .row:last-child{border-bottom:0;}
+.console .row > div{padding:11px 18px;}
+.console .row .k{border-right:1px dashed var(--line); color:var(--saxon); font-weight:800; min-width:8ch;}
+.console .row .v{color:color-mix(in oklab, var(--gr-ink), var(--ct-ink) 60%);}
+.console .row .v b{color:var(--norman); font-weight:800;}
+@media(max-width:560px){
+  .console .row{grid-template-columns:1fr;}
+  .console .row .k{border-right:0; border-bottom:1px dashed var(--line);}
+}
+
+/* ---- sound-seams: one Latin word, two roads into English ---- */
+.family{border:1px solid var(--line); background:rgba(157,180,255,.03); padding:26px 24px;}
+.family + .family{margin-top:16px;}
+.family .stem{display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; margin-bottom:6px;}
+.family .stem .glyph{font-size:30px; font-weight:800; letter-spacing:.02em;
+  color:color-mix(in oklab, var(--gr-accent), var(--ct-accent) calc(var(--mood)*100%));}
+.family .stem .mean{font-size:14px; color:var(--gr-dim); letter-spacing:.02em;}
+.family .stem .mean .sax{color:var(--saxon); font-weight:700; font-style:normal;}
+.family .stem .mean .nor{color:var(--norman); font-weight:700; font-style:normal;}
+.family .fan{display:flex; flex-wrap:wrap; gap:10px; margin-top:18px;}
+.pair{display:inline-flex; align-items:center; border:1px solid var(--line);}
+.pair .w{padding:6px 11px; font-size:13.5px; font-weight:800;}
+.pair .w.sax{color:var(--saxon);}
+.pair .w.nor{color:var(--norman);}
+.pair .arr{padding:0 2px; font-size:11px; color:var(--gr-dim); opacity:.7;}
+.family .note{font-size:13px; color:var(--gr-dim); margin:18px 0 0; max-width:62ch;}
+.family .note b{color:color-mix(in oklab, var(--gr-ink), var(--ct-ink) calc(var(--mood)*100%)); font-weight:700;}
+
+/* ---- register ladder ---- */
+.ladder{list-style:none; margin:0; padding:0; counter-reset:tier;}
+.ladder li{
+  counter-increment:tier;
+  border-left:2px solid var(--line);
+  padding:16px 0 16px 26px; margin-left:8px;
+  position:relative;
+}
+.ladder li::before{
+  content:"T" counter(tier);
+  position:absolute; left:-15px; top:16px;
+  background:color-mix(in oklab, var(--gr-bg), var(--ct-bg) calc(var(--mood)*100%));
+  font-size:11px; font-weight:700; letter-spacing:.05em; padding:2px 0;
+  color:color-mix(in oklab, var(--gr-accent), var(--ct-accent) calc(var(--mood)*100%));
+}
+.ladder .wd{font-weight:700;}
+.ladder li:nth-child(1) .wd{font-size:15px;}
+.ladder li:nth-child(2) .wd{font-size:16px;}
+.ladder li:nth-child(3) .wd{font-size:17px;}
+.ladder li:nth-child(4) .wd{font-size:18px;}
+.ladder li:nth-child(5) .wd{font-size:19px; font-weight:800;}
+.ladder .df{display:block; color:var(--gr-dim); font-size:13px; margin-top:5px;}
+
+/* ---- packs (Roots Series) ---- */
+.packs{display:grid; grid-template-columns:repeat(4,1fr); gap:0; border:1px solid var(--line);}
+@media(max-width:720px){.packs{grid-template-columns:1fr 1fr;}}
+@media(max-width:460px){.packs{grid-template-columns:1fr;}}
+.pack{padding:22px 18px; border-right:1px solid var(--line);}
+.pack:last-child{border-right:0;}
+.pack .n{font-size:16px; font-weight:800;}
+.pack .lvl{font-size:11px; letter-spacing:.04em; color:var(--gr-dim); margin:4px 0 10px;}
+.pack p{font-size:12.5px; color:var(--gr-dim); margin:0;}
+.pack .here{display:inline-block; font-size:10px; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ct-accent); border:1px solid var(--ct-accent); padding:3px 8px; margin-top:10px;}
+.pack .soon{display:inline-block; font-size:10px; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--gr-dim); border:1px solid var(--gr-dim); padding:3px 8px; margin-top:10px;}
+a.pack{text-decoration:none; color:inherit; display:block; transition:background .15s ease, border-color .15s ease;}
+a.pack:hover{background:rgba(157,180,255,.06); border-color:var(--ct-accent);}
+@media(max-width:720px){.pack{border-bottom:1px solid var(--line);} }
+
+/* ---- method ---- */
+.method dl{display:grid; grid-template-columns:max-content 1fr; gap:14px 22px; margin:0;}
+.method dt{font-weight:700; color:var(--ct-accent); white-space:nowrap;}
+.method .frame > .tag{color:var(--ct-accent);}
+.method dd{margin:0; font-size:14.5px; color:var(--gr-dim);}
+@media(max-width:560px){.method dl{grid-template-columns:1fr; gap:4px 0;} .method dd{margin-bottom:14px;}}
+
+/* ---- final CTA ---- */
+.final{text-align:center; padding:90px 0 100px;}
+.final h2{font-size:clamp(28px,6vw,52px);}
+.final p{color:var(--ct-dim); max-width:48ch; margin:14px auto 30px; font-size:15px;}
+
+footer{
+  border-top:1px solid var(--line); padding:28px 24px;
+  font-size:12px; color:var(--ct-dim); text-align:center; letter-spacing:.04em;
+}
+footer .epi{font-style:italic; opacity:.78; max-width:52ch; margin:0 auto 12px;}
+footer .epi-cite{font-style:normal; font-size:11px; letter-spacing:.12em; text-transform:uppercase; opacity:.75; display:inline-block; margin-top:8px;}
+footer .footer-links{display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap;}
+footer .footer-links a{color:inherit; text-decoration:none; opacity:.75; letter-spacing:.04em;}
+footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+footer .footer-links .div{opacity:.4;}
+</style>
+</head>
+<body>
+<div class="overlay"></div>
+<div class="vignette"></div>
+
+<nav>
+  <span class="brand"><a class="logo" href="home.de.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.de.html">Start</a><span class="sep"> · </span><a href="packs.de.html">Packs</a><span class="sep"> · </span><span class="here">Norman Roots</span></span>
+  <span class="links">
+    <a href="manual/index.html">Komplettlösung (Beta)</a>
+    <a href="resources.de.html">Ressourcen</a>
+    <a class="steam" href="https://store.steampowered.com/app/4587720/FlashBoss__Norman_Roots/?utm_source=website-de&l=german">Steam</a>
+  </span>
+  <span class="nav-mobile">
+    <a href="home.de.html">Start</a>
+    <span class="r"><a href="resources.de.html">Ressourcen</a><a href="https://store.steampowered.com/app/4587720/FlashBoss__Norman_Roots/?utm_source=website-de&l=german">Steam</a></span>
+  </span>
+  <div class="lang-switch">
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Sprache wählen">DE<span class="lang-caret">▾</span></button>
+    <ul class="lang-menu" hidden>
+      <li><a href="norman-roots.html">English</a></li>
+      <li><a href="norman-roots.de.html" aria-current="true">Deutsch</a></li>
+      <li><a href="norman-roots.es.html">Español</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap">
+      <p class="kicker reveal">Die Roots-Serie · <b>Norman</b></p>
+      <h1 class="reveal">Norman Roots<span class="cursor"></span></h1>
+      <p class="tagline reveal">Warum das Englische für alles zwei Wörter hat.</p>
+      <p class="sig reveal">Hören · Lesen · Wiederholen · Bewerten · Kämpfen</p>
+      <p class="lede reveal">Dein Deutsch schenkt dir den schlichten Kern des Englischen fast umsonst — Haus und house, trinken und drink. Aber das Englische behielt für fast alles ein zweites Wort, ein förmliches, das 1066 mit den Normannen kam. So ziehst du auf dem Feld eine <span class="sax">cow</span> auf, isst am Tisch aber <span class="nor">beef</span>; unter Freunden hast du einen <span class="sax">wish</span>, im Gedicht ein <span class="nor">desire</span>. Dieselbe Bedeutung, ein anderes Register, achthundert Jahre auseinander — und genau diese zweite Hälfte erreicht dein germanischer Wortschatz nicht.</p>
+      <div class="actions reveal">
+        <a class="btn" href="wordlists.de.html?lang=English&amp;set=Norman%20Roots">Wortliste</a>
+        <a class="btn" href="lessons.de.html?lang=English&amp;set=Norman%20Roots">Lektionen</a>
+        <a class="btn" href="https://flashboss-demo.pages.dev/">Demo testen</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- THE ARGUMENT -->
+  <section class="wrap">
+    <div class="frame">
+      <span class="tag">1066 und danach</span>
+      <h2>Das zweite Englisch</h2>
+      <p class="sub">Eine Sprache, erobert und überschichtet mit der Zunge ihrer Eroberer.</p>
+      <p class="body">1066 überquerten die Normannen den Ärmelkanal und eroberten England. Dreihundert Jahre lang war Französisch die Sprache der Macht — das Volk behielt Englisch, der Hof behielt Französisch, und als die beiden schließlich verschmolzen, blieb dem Englischen etwas, das keine andere große Sprache besitzt: ein vollständiger <b>zweiter Wortschatz</b>, über den ersten gelegt.</p>
+      <p class="body">Deshalb hat das Englische <span class="sax">begin</span> und <span class="nor">commence</span>, <span class="sax">ask</span> und <span class="nor">demand</span>, <span class="sax">kingly</span> und <span class="nor">royal</span>. Je ein Wort aus jeder Schicht, nebeneinander, mit fast derselben Bedeutung — aber nie ganz. Das normannische Wort trägt ein Gewicht, das das schlichte nicht hat: eine <span class="nor">mansion</span> übertrifft ein <span class="sax">house</span>; du ziehst eine <span class="sax">cow</span> auf, isst aber <span class="nor">beef</span>. Dieselbe Eroberung hinterließ einen Satz wiederverwendbarer Bausteine — die Suffixe <span class="fr">-tion, -ment, -age, -ance</span>, die Tausende Wörter bilden — und Lautspaltungen, die du noch heute hörst.</p>
+
+      <div class="movements reveal">
+        <div class="mv ground">
+          <div class="h">Das Erdgeschoss — angelsächsisch</div>
+          <p>house, drink, fight, begin. Kurz, körperlich, die Wörter, die deinem Deutsch am nächsten stehen — die Hälfte, die dir längst gehört.</p>
+        </div>
+        <div class="mv upper">
+          <div class="h">Das Obergeschoss — normannisch</div>
+          <p>govern, justice, cuisine, commence. Förmlich, institutionell, das Register von Recht und Hof — die Hälfte, die dein Deutsch nicht erreicht und ein Kurs aufbauen muss.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOUBLET DEMO -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Zwei Wörter, eine Bedeutung</span>
+      <h2>Die Dublette</h2>
+      <p class="sub">Jedes Paar ist nach Schicht eingefärbt. Tippe eines an für die Geschichte hinter der Spaltung.</p>
+      <div class="legend">
+        <span><i class="lsax"></i> Angelsächsisch — das schlichte Wort</span>
+        <span><i class="lnor"></i> Normannisch-Französisch — das förmliche Wort</span>
+      </div>
+      <div class="decomps">
+        <div class="decomp reveal">
+          <div class="whole"><span class="sax">cow</span><span class="vs">/</span><span class="nor">beef</span></div>
+          <div class="gloss-top">das Tier und das Fleisch</div>
+          <div class="parts">
+            <span class="m sax">cow<i>angelsächsisch · das Feld</i></span>
+            <span class="m nor">beef<i>normannisch · der Tisch</i></span>
+          </div>
+          <div class="sum">Der Sachse hütete das Tier; der Normanne aß das Gericht. Dieselbe Spaltung läuft durch calf/veal und deer/venison — lebendig auf jeder Speisekarte.</div>
+          <div class="hint">tippen für die Geschichte</div>
+        </div>
+
+        <div class="decomp reveal">
+          <div class="whole"><span class="sax">begin</span><span class="vs">/</span><span class="nor">commence</span></div>
+          <div class="gloss-top">etwas anfangen</div>
+          <div class="parts">
+            <span class="m sax">begin<i>schlicht · für alles</i></span>
+            <span class="m nor">commence<i>förmlich · Zeremonie &amp; Recht</i></span>
+          </div>
+          <div class="sum">„Let's begin." / „The proceedings shall commence." Dieselbe Handlung — aber commence legt eine Robe an.</div>
+          <div class="hint">tippen für die Geschichte</div>
+        </div>
+
+        <div class="decomp reveal">
+          <div class="whole"><span class="sax">wish</span><span class="vs">/</span><span class="nor">desire</span></div>
+          <div class="gloss-top">etwas wollen</div>
+          <div class="parts">
+            <span class="m sax">wish<i>schlicht · warm</i></span>
+            <span class="m nor">desire<i>förmlich · intensiv</i></span>
+          </div>
+          <div class="sum">Der normannische Zwilling dreht Register und Hitze zugleich auf — ein birthday wish, aber das heart's desire.</div>
+          <div class="hint">tippen für die Geschichte</div>
+        </div>
+
+        <div class="decomp reveal">
+          <div class="whole"><span class="sax">hide</span><span class="vs">/</span><span class="nor">conceal</span></div>
+          <div class="gloss-top">aus dem Blick halten</div>
+          <div class="parts">
+            <span class="m sax">hide<i>schlicht · alltäglich</i></span>
+            <span class="m nor">conceal<i>förmlich · bewusst</i></span>
+          </div>
+          <div class="sum">Du versteckst deine Schlüssel (hide); ein Zeuge verbirgt Beweise (conceal). Das normannische Wort ist das, das in der Anklageschrift auftaucht.</div>
+          <div class="hint">tippen für die Geschichte</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE DOUBLET CONSOLE -->
+  <section class="wrap">
+    <div class="reveal">
+      <h2>Dieselbe Idee, zweimal</h2>
+      <p class="sub">Das Englische warf das alte Wort selten weg. Es behielt beide — und gab dir einen Regler fürs Register.</p>
+      <div class="console">
+        <div class="head"><span class="hs">Angelsächsisch · schlicht</span><span class="hn">Normannisch-Französisch · förmlich</span></div>
+        <div class="row"><div class="k">cow</div><div class="v">&rarr; <b>beef</b> — aus dem Tier auf dem Feld wird das Gericht</div></div>
+        <div class="row"><div class="k">calf</div><div class="v">&rarr; <b>veal</b> — derselbe Hof, französische Speisekarte</div></div>
+        <div class="row"><div class="k">deer</div><div class="v">&rarr; <b>venison</b> — die Jagd, dann das Festmahl</div></div>
+        <div class="row"><div class="k">buy</div><div class="v">&rarr; <b>purchase</b> — der Ladentisch gegen den Vertrag</div></div>
+        <div class="row"><div class="k">freedom</div><div class="v">&rarr; <b>liberty</b> — das schlichte Recht, das erhabene Ideal</div></div>
+        <div class="row"><div class="k">deep</div><div class="v">&rarr; <b>profound</b> — ein deep lake, ein profound silence</div></div>
+        <div class="row"><div class="k">die</div><div class="v">&rarr; <b>perish</b> — die schlichte Tatsache, das ernste Register</div></div>
+        <div class="row"><div class="k">hearty</div><div class="v">&rarr; <b>cordial</b> — ein hearty welcome, eine cordial reply</div></div>
+        <div class="row"><div class="k">house</div><div class="v">&rarr; <b>mansion</b> — das Dach und die Miete</div></div>
+        <div class="row"><div class="k">begin</div><div class="v">&rarr; <b>commence</b> — das Alltägliche gegen das Zeremonielle</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOUND SEAMS -->
+  <section class="wrap">
+    <div class="reveal">
+      <h2>Die Naht, die du noch hörst</h2>
+      <p class="sub">Zweimal erreichte dasselbe lateinische Wort das Englische auf zwei Wegen — über die Normandie und über Paris — und das Englische, diese Elster, behielt beide.</p>
+
+      <div class="family">
+        <div class="stem">
+          <span class="glyph">w · gu</span>
+          <span class="mean">Die Normandie behielt das germanische <span class="sax">w-</span>; Paris machte daraus <span class="nor">gu-</span></span>
+        </div>
+        <div class="fan">
+          <span class="pair"><span class="w sax">ward</span><span class="arr">↔</span><span class="w nor">guard</span></span>
+          <span class="pair"><span class="w sax">warden</span><span class="arr">↔</span><span class="w nor">guardian</span></span>
+          <span class="pair"><span class="w sax">warranty</span><span class="arr">↔</span><span class="w nor">guarantee</span></span>
+          <span class="pair"><span class="w sax">wile</span><span class="arr">↔</span><span class="w nor">guile</span></span>
+          <span class="pair"><span class="w sax">reward</span><span class="arr">↔</span><span class="w nor">regard</span></span>
+        </div>
+        <p class="note">Jedes Paar war einst ein einziges Wort. Ein <b>ward</b> und ein <b>guard</b> halten beide Wache; eine <b>warranty</b> und eine <b>guarantee</b> sind dasselbe Versprechen — das eine kam früh über die Normandie, das andere später über Paris.</p>
+      </div>
+
+      <div class="family">
+        <div class="stem">
+          <span class="glyph">ca · ch</span>
+          <span class="mean">Die Normandie behielt das harte <span class="sax">c-</span>; Paris erweichte es zu <span class="nor">ch-</span></span>
+        </div>
+        <div class="fan">
+          <span class="pair"><span class="w sax">cattle</span><span class="arr">↔</span><span class="w nor">chattel</span></span>
+          <span class="pair"><span class="w sax">catch</span><span class="arr">↔</span><span class="w nor">chase</span></span>
+          <span class="pair"><span class="w sax">castle</span><span class="arr">↔</span><span class="w nor">château</span></span>
+          <span class="pair"><span class="w sax">car</span><span class="arr">↔</span><span class="w nor">chariot</span></span>
+          <span class="pair"><span class="w sax">candle</span><span class="arr">↔</span><span class="w nor">chandelier</span></span>
+        </div>
+        <p class="note"><b>Cattle</b> und <b>chattel</b> waren einst genau dasselbe Wort — Besitz, den man auf dem Huf treiben konnte. Ebenso <b>catch</b> und <b>chase</b>. Das harte normannische <i>c</i> und das weiche Pariser <i>ch</i> sind die Fingerabdrücke zweier verschiedener Frankreichs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REGISTER LADDER -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Sieh das Register steigen</span>
+      <h2>Vom Schlichten zum Höfischen</h2>
+      <p class="sub">Das Pack läuft über fünf Stufen, T1 bis T5 — die Wörter werden förmlicher und französischer, je höher du steigst.</p>
+      <ol class="ladder">
+        <li class="reveal"><span class="wd">change</span><span class="df">verändern — so eingebürgert, dass niemand das Französische darin hört</span></li>
+        <li class="reveal"><span class="wd">counsel</span><span class="df">förmlich erteilter Rat; im Recht der Anwalt, der ihn gibt</span></li>
+        <li class="reveal"><span class="wd">profound</span><span class="df">tief, intensiv, weitreichend; von großer Einsicht</span></li>
+        <li class="reveal"><span class="wd">perseverance</span><span class="df">beharrliches Festhalten an einem Vorhaben trotz Schwierigkeiten</span></li>
+        <li class="reveal"><span class="wd">sang-froid</span><span class="df">Gelassenheit unter Druck — und immer noch, unverkennbar, Französisch für „kaltes Blut"</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- METHOD -->
+  <section class="wrap method">
+    <div class="frame reveal">
+      <span class="tag">Warum es haften bleibt</span>
+      <h2>Karteikarten als geschlossenes System</h2>
+      <dl>
+        <dt>Karten</dt><dd>1.000 Wörter in 49 Clustern — jede Karte trägt eine Definition, einen Beispielsatz und einen Hinweis zu Gebrauch oder Register, der das Wort genau verortet.</dd>
+        <dt>Fibonacci-SRS</dt><dd>Bewerte jede Karte mit 0–5. Je besser du ein Wort kennst, desto später kehrt es zurück — Spaced Repetition auf Fibonacci-Intervallen.</dd>
+        <dt>Bosskämpfe</dt><dd>Jeder Cluster — ein Bereich der Eroberung, vom Gerichtssaal bis zur Küche — ist durch ein Duell verriegelt, das du nur gewinnst, wenn du dich seinen schwersten Wörtern stellst.</dd>
+        <dt>Ausgelernt</dt><dd>Besiege einen Cluster, und seine Karten verlassen dein tägliches Deck für immer. Das Deck wird kleiner, während du lernst.</dd>
+        <dt>Registerhinweise</dt><dd>Wo ein normannisches Wort einen schlichteren angelsächsischen Zwilling beschattet, sagt dir der Hinweis, zu welchem du greifst und wann — der Unterschied zwischen begin und commence.</dd>
+        <dt>Audio</dt><dd>Klare Piper-Sprachausgabe zu jedem Wort und Beispielsatz. Stimmen unter CC&nbsp;BY / MIT / Apache.</dd>
+        <dt>Lektionen</dt><dd>Referenzlektionen erscheinen genau an der Stelle der Sequenz, an der sie freischalten, was du als Nächstes liest.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ROOTS SERIES -->
+  <section class="wrap">
+    <div class="reveal">
+      <h2>Teil der Roots-Serie</h2>
+      <p class="sub">Die Gestalt des Englischen und seiner Nachbarn, sichtbar gemacht.</p>
+      <div class="packs">
+        <a class="pack" href="https://store.steampowered.com/app/4475060/FlashBoss__German_Roots/?utm_source=website-de&l=german">
+          <div class="n">German Roots</div>
+          <div class="lvl">1.000 Wörter</div>
+          <p>Das germanische Rückgrat des Alltagsenglisch — die Wörter, die du halb schon kennst.</p>
+        </a>
+        <a class="pack" href="https://store.steampowered.com/app/4587720/FlashBoss__Norman_Roots/?utm_source=website-de&l=german">
+          <div class="n">Norman Roots</div>
+          <div class="lvl">1.000 Wörter</div>
+          <p>Das zweite Englisch — 1066 und das Französisch, das damit kam.</p>
+          <span class="here">Du bist hier</span>
+        </a>
+        <a class="pack" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website-de&l=german">
+          <div class="n">Latin Roots</div>
+          <div class="lvl">1.000 Wörter</div>
+          <p>Englisch aus seinen Teilen gebaut — die klassische und wissenschaftliche Schicht, zusammengesetzt.</p>
+        </a>
+        <div class="pack">
+          <div class="n">Greek Roots</div>
+          <div class="lvl">In Entwicklung</div>
+          <p>Der Wortschatz von Wissenschaft, Medizin und Abstraktion — die Schicht über dem Lateinischen.</p>
+          <span class="soon">Bald verfügbar</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final wrap reveal">
+    <h2>Lerne das zweite Englisch.</h2>
+    <p>1.000 Wörter · 49 Cluster · jede Dublette, jedes Suffix, jede Lautspaltung · ein Registerhinweis auf jeder Karte. Die vollständige Wortliste, alle Referenzlektionen und eine spielbare Bosskampf-Demo findest du auf der Website.</p>
+    <a class="btn warm" href="https://store.steampowered.com/app/4587720/FlashBoss__Norman_Roots/?utm_source=website-de&l=german">Norman Roots auf Steam holen &rarr;</a>
+  </section>
+
+</main>
+
+<footer>
+  <p class="epi">„Dieu et mon droit."<br>Gott und mein Recht.<br><span class="epi-cite">— Wahlspruch der englischen Krone, im Französisch der Eroberer, seit dem 12. Jahrhundert</span></p>
+  <span class="footer-links">
+    <a href="home.de.html">Start</a>
+    <span class="div">·</span>
+    <a href="packs.de.html">Packs</a>
+    <span class="div">·</span>
+    <a href="manual/">Komplettlösung (Beta)</a>
+    <span class="div">·</span>
+    <a href="https://store.steampowered.com/app/4587720/FlashBoss__Norman_Roots/?utm_source=website-de&l=german">Steam</a>
+  </span>
+</footer>
+
+<script>
+// Staggered reveal on scroll
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in');}); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  }, {threshold:.12, rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){ io.observe(e); });
+})();
+
+// Tap-to-open doublet cards
+document.querySelectorAll('.decomp').forEach(function(d){
+  d.addEventListener('click', function(){ d.classList.toggle('split'); });
+});
+
+// Ground -> Court: drive --mood from scroll position
+(function(){
+  var root = document.documentElement, ticking = false;
+  function update(){
+    var max = document.body.scrollHeight - window.innerHeight;
+    var p = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+    root.style.setProperty('--mood', (p*p*(3-2*p)).toFixed(3));
+    ticking = false;
+  }
+  window.addEventListener('scroll', function(){
+    if(!ticking){ requestAnimationFrame(update); ticking = true; }
+  }, {passive:true});
+  update();
+})();
+</script>
+<script>
+// language dropdown: button toggles the menu; click-away / Esc closes it
+(function(){
+  var sw=document.querySelector('.lang-switch'); if(!sw) return;
+  var btn=sw.querySelector('.lang-toggle'), menu=sw.querySelector('.lang-menu');
+  function close(){ menu.hidden=true; btn.setAttribute('aria-expanded','false'); }
+  btn.addEventListener('click', function(e){ e.stopPropagation(); var willOpen=menu.hidden; menu.hidden=!willOpen; btn.setAttribute('aria-expanded', String(willOpen)); });
+  document.addEventListener('click', function(e){ if(!sw.contains(e.target)) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
+</script>
+</body>
+</html>

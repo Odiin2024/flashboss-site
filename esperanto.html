@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Esperanto — FlashBoss</title>
 <meta name="description" content="FlashBoss Esperanto: the language built to be learned. Perfectly regular — no irregular verbs, no genders, no exceptions — and built around the worldwide community you join. From 'Saluton' to writing, meeting, and belonging across borders. Spaced repetition, boss fights, and text-to-speech.">
+<link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/esperanto.html">
+<link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/esperanto.de.html">
+<link rel="alternate" hreflang="es" href="https://odiin2024.github.io/flashboss-site/esperanto.es.html">
+<link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/esperanto.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
@@ -108,8 +112,8 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--d-bg);}
   padding:14px 26px; text-decoration:none; border:0; box-shadow:6px 6px 0 color-mix(in oklab, var(--d-accent), #000 60%); transition:transform .12s ease, box-shadow .12s ease;}
 .btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--d-accent), #000 60%);}
 .btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--d-accent), #000 60%);}
-.hero .actions{display:flex; gap:14px; margin-top:40px; max-width:48ch;}
-.hero .actions .btn{flex:1; text-align:center;}
+.hero .actions{display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:40px; max-width:520px;}
+.hero .actions .btn{margin-top:0; width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
 .btn.hot{color:#0c1020; background:var(--u-accent); box-shadow:6px 6px 0 color-mix(in oklab, var(--u-accent), #000 60%);}
 .btn.hot:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--u-accent), #000 60%);}
 
@@ -215,6 +219,7 @@ footer .footer-links a{color:inherit; text-decoration:none; opacity:.75; letter-
 footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
 footer .footer-links .div{opacity:.4;}
 </style>
+<script src="lang-redirect.js"></script>
 </head>
 <body>
 <div class="overlay"></div>
@@ -251,8 +256,9 @@ footer .footer-links .div{opacity:.4;}
       <p class="sig reveal">Listen · Read · Repeat · Rate · Fight</p>
       <p class="lede reveal">You begin with <b class="eo">Saluton.</b> Within weeks you're reading it, because nothing is irregular and nothing is hidden.</p>
       <div class="actions reveal">
-        <a class="btn" href="wordlists.html?lang=Esperanto">Word Lists &rarr;</a>
-        <a class="btn" href="lessons.html?lang=Esperanto">Lessons &rarr;</a>
+        <a class="btn" href="wordlists.html?lang=Esperanto">Word Lists</a>
+        <a class="btn" href="lessons.html?lang=Esperanto">Lessons</a>
+        <a class="btn" href="https://flashboss-demo.pages.dev/">Try the demo</a>
       </div>
     </div>
   </header>

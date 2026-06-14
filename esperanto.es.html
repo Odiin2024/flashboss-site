@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Esperanto — FlashBoss</title>
 <meta name="description" content="FlashBoss Esperanto: el idioma diseñado para aprenderse. Perfectamente regular — sin verbos irregulares, sin géneros, sin excepciones — y construido en torno a la comunidad mundial a la que te unes. De 'Saluton' a escribir, conocer gente y pertenecer más allá de las fronteras. Repetición espaciada, boss fights y síntesis de voz.">
+<link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/esperanto.html">
+<link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/esperanto.de.html">
+<link rel="alternate" hreflang="es" href="https://odiin2024.github.io/flashboss-site/esperanto.es.html">
+<link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/esperanto.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
@@ -108,8 +112,8 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--d-bg);}
   padding:14px 26px; text-decoration:none; border:0; box-shadow:6px 6px 0 color-mix(in oklab, var(--d-accent), #000 60%); transition:transform .12s ease, box-shadow .12s ease;}
 .btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--d-accent), #000 60%);}
 .btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--d-accent), #000 60%);}
-.hero .actions{display:flex; gap:14px; margin-top:40px; max-width:48ch;}
-.hero .actions .btn{flex:1; text-align:center;}
+.hero .actions{display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:40px; max-width:520px;}
+.hero .actions .btn{margin-top:0; width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
 .btn.hot{color:#0c1020; background:var(--u-accent); box-shadow:6px 6px 0 color-mix(in oklab, var(--u-accent), #000 60%);}
 .btn.hot:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--u-accent), #000 60%);}
 
@@ -228,11 +232,11 @@ footer .footer-links .div{opacity:.4;}
   <span class="links">
     <a href="manual/index.html">guía completa (beta)</a>
     <a href="resources.es.html">recursos</a>
-    <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">steam</a>
+    <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website&l=spanish">steam</a>
   </span>
   <span class="nav-mobile">
     <a href="home.es.html">inicio</a>
-    <span class="r"><a href="resources.es.html">recursos</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">steam</a></span>
+    <span class="r"><a href="resources.es.html">recursos</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website&l=spanish">steam</a></span>
   </span>
   <div class="lang-switch">
     <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Elegir idioma">ES<span class="lang-caret">▾</span></button>
@@ -255,8 +259,9 @@ footer .footer-links .div{opacity:.4;}
       <p class="sig reveal">Escuchar · Leer · Repetir · Calificar · Luchar</p>
       <p class="lede reveal">Empiezas con <b class="eo">Saluton.</b> En unas semanas ya lo lees, porque nada es irregular y nada está oculto.</p>
       <div class="actions reveal">
-        <a class="btn" href="wordlists.es.html?lang=Esperanto">Listas de vocabulario &rarr;</a>
-        <a class="btn" href="lessons.es.html?lang=Esperanto">Lecciones &rarr;</a>
+        <a class="btn" href="wordlists.es.html?lang=Esperanto">Vocabulario</a>
+        <a class="btn" href="lessons.es.html?lang=Esperanto">Lecciones</a>
+        <a class="btn" href="https://flashboss-demo.pages.dev/">Probar demo</a>
       </div>
     </div>
   </header>
@@ -382,7 +387,7 @@ footer .footer-links .div{opacity:.4;}
 
   <!-- FINAL CTA -->
   <section class="final wrap reveal">
-    <a class="btn hot" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">Consigue FlashBoss en Steam &rarr;</a>
+    <a class="btn hot" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website&l=spanish">Consigue FlashBoss en Steam &rarr;</a>
   </section>
 
 </main>
@@ -394,7 +399,7 @@ footer .footer-links .div{opacity:.4;}
     <span class="div">·</span>
     <a href="manual/">guía completa (beta)</a>
     <span class="div">·</span>
-    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website">steam</a>
+    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website&l=spanish">steam</a>
   </span>
 </footer>
 
