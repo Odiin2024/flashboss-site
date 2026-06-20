@@ -9,6 +9,18 @@
 </script>
 <!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
 <!-- End Reddit Pixel -->
+<!-- Reddit Pixel — custom events: ClickedSteam, Engaged30s -->
+<script>
+(function(){
+  function rt(name){ if(window.rdt) rdt('track','Custom',{customEventName:name}); }
+  setTimeout(function(){ rt('Engaged30s'); }, 30000);
+  function wire(){
+    var links=document.querySelectorAll('a[href*="store.steampowered.com"]');
+    for(var i=0;i<links.length;i++){ links[i].addEventListener('click', function(){ rt('ClickedSteam'); }); }
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', wire); else wire();
+})();
+</script>
 <title>Spanish — FlashBoss</title>
 <meta name="description" content="FlashBoss Spanish: the Latin American Spanish people actually speak — drawn from a vast subtitle corpus and academic frequency data. From 'Hola, me llamo…' to following the film, the song, and the whole conversation without subtitles. Spaced repetition, boss fights, and text-to-speech.">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/spanish.html">
@@ -228,11 +240,11 @@ footer .footer-links .div{opacity:.4;}
   <span class="links">
     <a href="manual/index.html">walkthrough (beta)</a>
     <a href="resources.html">resources</a>
-    <a class="steam" href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website">steam</a>
+    <a class="steam" href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website" target="_blank" rel="noopener">steam</a>
   </span>
   <span class="nav-mobile">
     <a href="home.html">home</a>
-    <span class="r"><a href="resources.html">resources</a><a href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website">steam</a></span>
+    <span class="r"><a href="resources.html">resources</a><a href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website" target="_blank" rel="noopener">steam</a></span>
   </span>
   <div class="lang-switch">
     <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Choose language">EN<span class="lang-caret">▾</span></button>
@@ -397,7 +409,7 @@ footer .footer-links .div{opacity:.4;}
 
   <!-- FINAL CTA -->
   <section class="final wrap reveal">
-    <a class="btn hot" href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website">Get FlashBoss on Steam &rarr;</a>
+    <a class="btn hot" href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website" target="_blank" rel="noopener">Get FlashBoss on Steam &rarr;</a>
   </section>
 
 </main>
@@ -409,7 +421,7 @@ footer .footer-links .div{opacity:.4;}
     <span class="div">·</span>
     <a href="manual/">walkthrough (beta)</a>
     <span class="div">·</span>
-    <a href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website">steam</a>
+    <a href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website" target="_blank" rel="noopener">steam</a>
   </span>
 </footer>
 

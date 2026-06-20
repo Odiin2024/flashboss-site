@@ -3,6 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Reddit Pixel -->
+<script>
+!function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js?pixel_id=a2_ijrvgbcmsu06",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_ijrvgbcmsu06');rdt('track', 'PageVisit');
+</script>
+<!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
+<!-- End Reddit Pixel -->
+<!-- Reddit Pixel — custom events: ClickedSteam, Engaged30s -->
+<script>
+(function(){
+  function rt(name){ if(window.rdt) rdt('track','Custom',{customEventName:name}); }
+  setTimeout(function(){ rt('Engaged30s'); }, 30000);
+  function wire(){
+    var links=document.querySelectorAll('a[href*="store.steampowered.com"]');
+    for(var i=0;i<links.length;i++){ links[i].addEventListener('click', function(){ rt('ClickedSteam'); }); }
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', wire); else wire();
+})();
+</script>
 <title>Español — FlashBoss</title>
 <meta name="description" content="FlashBoss Español: el español latinoamericano que la gente habla de verdad — extraído de un vasto corpus de subtítulos y datos académicos de frecuencia. De 'Hola, me llamo…' a seguir la película, la canción y la conversación entera sin subtítulos. Repetición espaciada, boss fights y síntesis de voz.">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/spanish.html">
@@ -224,11 +242,11 @@ footer .footer-links .div{opacity:.4;}
   <span class="links">
     <a href="manual/index.html">guía completa (beta)</a>
     <a href="resources.es.html">recursos</a>
-    <a class="steam" href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website&l=spanish">steam</a>
+    <a class="steam" href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website&l=spanish" target="_blank" rel="noopener">steam</a>
   </span>
   <span class="nav-mobile">
     <a href="home.es.html">inicio</a>
-    <span class="r"><a href="resources.es.html">recursos</a><a href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website&l=spanish">steam</a></span>
+    <span class="r"><a href="resources.es.html">recursos</a><a href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website&l=spanish" target="_blank" rel="noopener">steam</a></span>
   </span>
   <div class="lang-switch">
     <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Elegir idioma">ES<span class="lang-caret">▾</span></button>
@@ -394,7 +412,7 @@ footer .footer-links .div{opacity:.4;}
 
   <!-- FINAL CTA -->
   <section class="final wrap reveal">
-    <a class="btn hot" href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website&l=spanish">Consigue FlashBoss en Steam &rarr;</a>
+    <a class="btn hot" href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website&l=spanish" target="_blank" rel="noopener">Consigue FlashBoss en Steam &rarr;</a>
   </section>
 
 </main>
@@ -406,7 +424,7 @@ footer .footer-links .div{opacity:.4;}
     <span class="div">·</span>
     <a href="manual/">guía completa (beta)</a>
     <span class="div">·</span>
-    <a href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website&l=spanish">steam</a>
+    <a href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website&l=spanish" target="_blank" rel="noopener">steam</a>
   </span>
 </footer>
 

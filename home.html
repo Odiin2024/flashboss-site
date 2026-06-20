@@ -9,6 +9,18 @@
 </script>
 <!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
 <!-- End Reddit Pixel -->
+<!-- Reddit Pixel — custom events: ClickedSteam, Engaged30s -->
+<script>
+(function(){
+  function rt(name){ if(window.rdt) rdt('track','Custom',{customEventName:name}); }
+  setTimeout(function(){ rt('Engaged30s'); }, 30000);
+  function wire(){
+    var links=document.querySelectorAll('a[href*="store.steampowered.com"]');
+    for(var i=0;i<links.length;i++){ links[i].addEventListener('click', function(){ rt('ClickedSteam'); }); }
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', wire); else wire();
+})();
+</script>
 <title>FlashBoss — Flashcards with Boss Fights</title>
 <meta name="description" content="FlashBoss: spaced-repetition flashcards with boss fights. Build a real vocabulary in English, German, Spanish, Italian, or Esperanto. Four packs free, the rest on Steam. Listen, read, repeat, rate, fight.">
 <link rel="icon" type="image/png" href="icon.png">
@@ -255,7 +267,7 @@ footer .footer-links .div{opacity:.4;}
       <div class="actions reveal">
         <a class="btn" href="wordlists.html">word lists</a>
         <a class="btn" href="lessons.html">lessons</a>
-        <a class="btn" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-home">steam</a>
+        <a class="btn" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-home" target="_blank" rel="noopener">steam</a>
       </div>
     </div>
   </header>
@@ -336,7 +348,7 @@ footer .footer-links .div{opacity:.4;}
   <!-- FINAL CTA -->
   <section class="final wrap reveal">
     <div class="actions" style="justify-content:center;">
-      <a class="btn" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-home">Get FlashBoss on Steam &rarr;</a>
+      <a class="btn" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-home" target="_blank" rel="noopener">Get FlashBoss on Steam &rarr;</a>
     </div>
     <p class="epi">Scientia est Potentia.<span class="epi-cite">Knowledge is power</span></p>
   </section>
