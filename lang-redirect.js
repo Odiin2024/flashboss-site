@@ -37,7 +37,7 @@
     'spanish':        ['de', 'es'],
     'italian':        ['de', 'es'],
     'esperanto':      ['de', 'es'],
-    'index':          ['de', 'es'],
+    'index':          ['de', 'es', 'ja'],
     'affiliate':      ['de', 'es'],
     'in-development':  ['de', 'es']
   };
