@@ -1,0 +1,281 @@
+[
+  {
+    "lesson_id": "000",
+    "trigger_word": "toki",
+    "trigger_card_number": 1,
+    "title": "WELCOME TO TOKI PONA",
+    "header_color": "blue",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "Toki Pona is a complete language of",
+          "around 140 words. This pack teaches",
+          "all of it, from the first card to",
+          "the last.",
+          "",
+          "With so few words, meaning is built",
+          "by combining simple ones. tomo tawa,",
+          "a moving structure, is a car.",
+          "ilo toki, a talking tool, is a",
+          "telephone.",
+          "",
+          "Most languages are too big to finish.",
+          "This one isn't. Every word you meet",
+          "here is a piece of the whole — and",
+          "the whole is within reach."
+        ],
+        "pronunciation": "Toki Pona"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "HOW THE COURSE TEACHES",
+          "",
+          "Content words come first. From the",
+          "very first cards, you build meaning",
+          "by combining them.",
+          "",
+          "The grammar particles — li, e, pi, o,",
+          "la, and the rest — arrive as lessons,",
+          "each at the exact card where it first",
+          "appears. Play in order, and the",
+          "grammar meets you right on time.",
+          "",
+          "Spelling is phonetic: say what you",
+          "see, and you've said it right.",
+          "",
+          "500 cards. One whole language.",
+          "Let's begin."
+        ],
+        "pronunciation": ""
+      }
+    ]
+  },
+  {
+    "lesson_id": "001",
+    "trigger_word": "mi pona",
+    "title": "LESSON 1: MI/SINA NEED NO 'TO BE'",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "Toki Pona has no word for 'to be' —",
+          "the doing or being word just",
+          "follows who or what it's about.",
+          "",
+          "A bare mi or sina goes one step",
+          "further and skips li too - the little link",
+          "word every other subject needs:",
+          "",
+          "mi pona.    = I am good. I'm fine.",
+          "sina pona.  = You are good.",
+          "",
+          "THE CATCH: this only works for the",
+          "pronoun alone. Add any modifier and",
+          "li comes right back:",
+          "",
+          "mi mute li pona. = We are good.",
+          "(mi mute = 'I' plus mute = 'we',",
+          "no longer a bare mi — li returns)"
+        ],
+        "pronunciation": "mi pona"
+      }
+    ]
+  },
+  {
+    "lesson_id": "002",
+    "trigger_word": "jan",
+    "title": "LESSON 2: LI — THE 'IS/DOES' LINK",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "Every subject EXCEPT a lone mi or",
+          "sina needs li right before the word",
+          "that says what it does or is —",
+          "jan, ona, ni, or any longer phrase:",
+          "",
+          "ni li pona ala pona?",
+          "= Is this good or not? Is this OK?",
+          "",
+          "jan li pona.  = The person is good.",
+          "",
+          "li also chains a second predicate",
+          "onto the SAME subject, no repeat:",
+          "",
+          "jan li moku li lape.",
+          "= The person eats and sleeps.",
+          "(one jan, two li's, and no word",
+          "for 'and' needed at all)"
+        ],
+        "pronunciation": "ni li pona ala pona"
+      }
+    ]
+  },
+  {
+    "lesson_id": "003",
+    "trigger_word": "o",
+    "title": "LESSON 3: O — COMMANDS AND CALLS",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "o has two jobs, both about telling",
+          "or calling someone directly.",
+          "",
+          "1. COMMAND (imperative): o stands",
+          "   where li would go, right before",
+          "   the verb.",
+          "o kama! = Come!",
+          "sina o pali. = You should work.",
+          "",
+          "2. VOCATIVE: o follows whoever you",
+          "   are calling out to — no li needed.",
+          "jan pona o! = Hey, good friend!",
+          "",
+          "o is NOT the same word as a — that",
+          "other particle marks emotion and",
+          "emphasis, not commands."
+        ],
+        "pronunciation": "o kama"
+      }
+    ]
+  },
+  {
+    "lesson_id": "004",
+    "trigger_word": "pi",
+    "title": "LESSON 4: PI — GROUPING MODIFIERS",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "pi bundles the describing words",
+          "after it into ONE group, so they",
+          "describe an earlier word together",
+          "instead of each stacking on alone.",
+          "",
+          "WITHOUT pi, everything just stacks",
+          "flat onto the first word:",
+          "tomo pona lili = a small, good house",
+          "",
+          "WITH pi, bundle a describing group:",
+          "jan pi toki pona",
+          "= person OF Toki Pona (a tokiponist)",
+          "(toki pona = one bracketed unit describing jan)",
+          "",
+          "jan pi ma ante",
+          "= person of another land, foreigner",
+          "",
+          "Modern usage: pi only regroups, not possession."
+        ],
+        "pronunciation": "jan pi toki pona"
+      }
+    ]
+  },
+  {
+    "lesson_id": "005",
+    "trigger_word": "jan pona",
+    "title": "LESSON 5: MODIFIERS COME AFTER",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "Toki Pona word order is head-first:",
+          "the main word leads, its modifiers",
+          "stack on afterward, in order:",
+          "",
+          "jan pona   = good person, friend",
+          "tomo suli  = big building",
+          "",
+          "Modifiers can stack on each other",
+          "too. mute after one means 'very':",
+          "",
+          "jan pona mute = a very good friend",
+          "tomo suli mute = a huge building",
+          "",
+          "English puts adjectives BEFORE the",
+          "noun (a good friend) — Toki Pona",
+          "always puts them AFTER (jan pona)."
+        ],
+        "pronunciation": "jan pona"
+      }
+    ]
+  },
+  {
+    "lesson_id": "006",
+    "trigger_word": "seme",
+    "title": "LESSON 6: ASKING QUESTIONS",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "CONTENT QUESTIONS: put seme exactly",
+          "where the missing answer goes:",
+          "",
+          "ni li seme?    = What is this?",
+          "sina lon seme? = Where are you?",
+          "",
+          "YES/NO QUESTIONS: repeat the word",
+          "around ala, 'not':",
+          "",
+          "sina pona ala pona?",
+          "= Are you good, or not? (the",
+          "classic way to ask how you are)",
+          "",
+          "anu seme tags a guess, like English",
+          "'...or what?':",
+          "",
+          "sina mute li kama anu seme?",
+          "= Are you all coming, or what?"
+        ],
+        "pronunciation": "ni li seme"
+      }
+    ]
+  },
+  {
+    "lesson_id": "007",
+    "trigger_word": "wile",
+    "title": "LESSON 7: PREVERBS TINT THE VERB",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "A preverb sits BEFORE the main verb",
+          "and colors its meaning:",
+          "",
+          "wile = want/need to   ken = can/may",
+          "kama = become, come to",
+          "sona = know how to",
+          "alasa = try to       awen = keep on",
+          "",
+          "mi wile moku.  = I want to eat.",
+          "",
+          "mi wile e ni: sina kama pona.",
+          "= I want this: for you to get well.",
+          "",
+          "Stack the plain verb right after the",
+          "preverb — no separate conjugation,",
+          "just one extra word does the job."
+        ],
+        "pronunciation": "mi wile moku"
+      }
+    ]
+  }
+]

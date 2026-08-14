@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>トキポナ — 無料同梱パック | FlashBoss</title>
+<meta name="description" content="FlashBossのトキポナ：およそ140語で完結するひとつの言語を、基本ゲームに無料同梱。カード500枚、22クラスター、5ティア、文法レッスン13本。全カードに日本語の訳と解説、全レッスンも日本語 — 英語なしで遊べます。間隔反復、ボス戦、TTS音声。">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/toki-pona.html">
+<link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/toki-pona.de.html">
+<link rel="alternate" hreflang="es" href="https://odiin2024.github.io/flashboss-site/toki-pona.es.html">
+<link rel="alternate" hreflang="ja" href="https://odiin2024.github.io/flashboss-site/toki-pona.ja.html">
+<link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/toki-pona.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   FlashBoss — Toki Pona page (JA sibling of toki-pona.html)
+   Same phosphor-terminal chassis as spanish.html / esperanto.html:
+   one smooth scroll-driven arc, no hard turn.
+
+   Toki Pona's own soul: SMALL. The page runs suno -> telo,
+   sun to water — the pack's own two elemental words — and the
+   whole argument is subtraction: around 140 words, and you have
+   the lot. No gender section (there is none), no Pareto ladder
+   (there is one pack, and it is free).
+
+   TUNE THESE FIRST:
+   --head / --mod  -> compound colours; match the game's palette.
+   toki-pona-hero.png -> hero banner image (sits at site root).
+   ============================================================ */
+:root{
+  --mono:'JetBrains Mono','M PLUS 1 Code', ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
+  --mono-cjk:'JetBrains Mono','M PLUS 1 Code', 'Hiragino Sans', 'Noto Sans JP', 'Yu Gothic', 'Meiryo', ui-monospace, monospace;
+
+  /* compound colour-coding — the page's teaching legend.
+     RETUNE to the game's exact palette. */
+  --head:#f5cf72;    /* the head word — what the thing is */
+  --mod:#6fd9c8;     /* the modifier — what kind of thing it is */
+
+  /* dawn palette (top — suno: sun, light, the first words) */
+  --d-bg:#171205;
+  --d-ink:#f2e8cf;
+  --d-dim:#c3ad7e;
+  --d-accent:#f0c23c;
+
+  /* dusk palette (bottom — telo: water, the language settled and flowing) */
+  --u-bg:#07161a;
+  --u-ink:#d9eef1;
+  --u-dim:#87b3ba;
+  --u-accent:#57cfc0;
+
+  /* mood: 0 = sun, 1 = water. Driven by scroll. ONE smooth ramp. */
+  --mood:0;
+
+  --line:color-mix(in oklab, #5a4a1f, #1e4a4f calc(var(--mood) * 100%));
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0; font-family:var(--mono);
+  background:#171205;
+  background:color-mix(in oklab, var(--d-bg), var(--u-bg) calc(var(--mood)*100%));
+  color:color-mix(in oklab, var(--d-ink), var(--u-ink) calc(var(--mood)*100%));
+  line-height:1.6; -webkit-font-smoothing:antialiased;
+  transition:background 120ms linear, color 120ms linear; overflow-x:hidden;
+}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.045) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.vignette{position:fixed; inset:0; pointer-events:none; z-index:9998;
+  background:radial-gradient(120% 90% at 50% 35%, transparent 55%, rgba(0,0,0,.5) 100%);}
+.wrap{max-width:880px; margin:0 auto; padding:0 24px;}
+
+nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line);}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--d-dim); margin-right:auto;}
+nav .brand a, nav .brand .sep{color:var(--d-dim); text-decoration:none;}
+nav .brand a:hover{color:var(--d-ink);}
+nav .brand .here{font-weight:800; color:var(--d-ink);}
+nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--d-ink);}
+nav .brand .logo:hover{color:var(--d-accent);}
+nav .brand .pipe{color:var(--d-dim); margin:0 11px;}
+.nav-mobile{display:none;}
+.nav-mobile a{color:inherit; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.08em; opacity:.85;}
+.nav-mobile a:hover{opacity:1; color:var(--d-accent);}
+@media(max-width:640px){ nav .brand, nav .links{display:none;} .nav-mobile{display:flex; flex:1; justify-content:space-between; align-items:center;} .nav-mobile .r{display:flex; gap:18px;} }
+nav .links a{color:inherit; text-decoration:none; opacity:.7; margin-left:22px;}
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+nav .links a.steam{font-weight:800; opacity:1; color:var(--d-ink);}
+nav .lang-switch{position:relative; margin-left:22px;}
+nav .lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--d-ink); background:var(--d-bg); border:1px solid var(--d-dim); padding:5px 8px; line-height:1; cursor:pointer;}
+nav .lang-toggle:hover, nav .lang-toggle[aria-expanded="true"]{background:var(--d-ink); color:var(--d-bg);}
+nav .lang-caret{font-size:8px; line-height:1; transition:transform .15s ease;}
+nav .lang-toggle[aria-expanded="true"] .lang-caret{transform:rotate(180deg);}
+nav .lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--d-bg); border:1px solid var(--d-dim); min-width:120px; z-index:50;}
+nav .lang-menu[hidden]{display:none;}
+nav .lang-menu li{margin:0; padding-left:0; position:static;}
+nav .lang-menu li::before{content:none;}
+nav .lang-menu a{display:block; font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--d-ink); text-decoration:none; padding:7px 10px; white-space:nowrap; opacity:1; margin:0;}
+nav .lang-menu a:hover{background:var(--d-ink); color:var(--d-bg); text-decoration:none;}
+nav .lang-menu a[aria-current="true"]{color:var(--d-accent);}
+nav .lang-menu a[aria-current="true"]:hover{color:var(--d-bg);}
+
+.reveal{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease;}
+.reveal.in{opacity:1; transform:none;}
+
+/* HERO — image band */
+.hero{position:relative; padding:84px 0 36px; overflow:hidden; background:#171205;}
+.hero .hero-bg{position:absolute; inset:0; z-index:0; width:100%; height:100%; object-fit:cover; object-position:center 32%;}
+.hero::after{content:""; position:absolute; inset:0; z-index:1;
+  background:linear-gradient(180deg, rgba(20,17,10,.60) 0%, rgba(17,20,20,.84) 55%, #111414 100%);}
+.hero .wrap{position:relative; z-index:2;}
+.kicker{font-size:12px; letter-spacing:.32em; color:var(--d-dim); opacity:.9; margin:0 0 26px;}
+.kicker b{color:var(--d-accent); font-weight:700;}
+.hero h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
+.cursor{display:inline-block; width:.6em; height:1em; vertical-align:-.08em; background:color-mix(in oklab, var(--d-accent), transparent 30%); margin-left:.12em; animation:blink 1.05s steps(1) infinite;}
+@keyframes blink{50%{opacity:0;}}
+.hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:30px 0 0; color:var(--d-ink); font-weight:500;}
+.hero .sig{font-size:13px; letter-spacing:.24em; color:var(--d-accent); margin:14px 0 0; opacity:.9;}
+.hero .lede{font-size:clamp(15px,2.2vw,18px); max-width:48ch; margin:24px 0 0; color:var(--d-dim);}
+.hero .lede b{color:var(--d-ink); font-weight:700;}
+.btn{display:inline-block; font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.08em; color:#171205; background:color-mix(in oklab, var(--d-accent), transparent 30%);
+  padding:14px 26px; text-decoration:none; border:0; box-shadow:6px 6px 0 color-mix(in oklab, var(--d-accent), #000 60%); transition:transform .12s ease, box-shadow .12s ease;}
+.btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--d-accent), #000 60%);}
+.btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--d-accent), #000 60%);}
+.hero .actions{display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:40px; max-width:520px;}
+.hero .actions .btn{margin-top:0; width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
+.btn.hot{color:#07161a; background:var(--u-accent); box-shadow:6px 6px 0 color-mix(in oklab, var(--u-accent), #000 60%);}
+.btn.hot:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--u-accent), #000 60%);}
+
+section{padding:64px 0;}
+.hero + section{padding-top:48px;}
+.frame{border:1px solid var(--line); position:relative; padding:34px 30px 32px;}
+.frame > .tag{position:absolute; top:-12px; left:22px;
+  background:color-mix(in oklab, var(--d-bg), var(--u-bg) calc(var(--mood)*100%));
+  padding:4px 12px; line-height:1; font-size:11px; letter-spacing:.3em;
+  color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+h2{font-size:clamp(24px,4.6vw,38px); margin:0 0 8px; font-weight:800; letter-spacing:-.01em;}
+section > .reveal:not(.frame) > h2{margin-top:24px;}  /* breathing room for bare (non-framed) section headers */
+.sub{color:var(--d-dim); font-size:14px; letter-spacing:.04em; margin:0 0 26px;}
+.sub.tp{font-style:italic; font-size:16px; opacity:.92;}
+p.body{font-size:16px; max-width:52ch; margin:0 0 18px; color:color-mix(in oklab, var(--d-ink), var(--u-ink) calc(var(--mood)*100%));}
+p.body b{color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+.tp{font-style:italic; opacity:.96;}
+
+/* the locale headline band — the one thing a Japanese reader needs first */
+.jaband{border:1px solid var(--line); padding:28px 26px;
+  background:color-mix(in oklab, transparent, var(--u-accent) 7%);}
+.jaband h2{margin:0 0 10px;}
+.jaband p{margin:0 0 18px; font-size:15px; max-width:56ch;
+  color:color-mix(in oklab, var(--d-ink), var(--u-ink) calc(var(--mood)*100%));}
+.jaband ul{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(2,1fr); gap:0;}
+@media(max-width:640px){.jaband ul{grid-template-columns:1fr;}}
+.jaband li{font-size:13.5px; padding:11px 0 11px 22px; position:relative;
+  color:color-mix(in oklab, var(--d-dim), var(--u-dim) calc(var(--mood)*100%));}
+.jaband li::before{content:"▸"; position:absolute; left:0; top:11px; font-size:11px;
+  color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+.jaband li b{color:color-mix(in oklab, var(--d-ink), var(--u-ink) calc(var(--mood)*100%)); font-weight:700;}
+
+/* gradient run */
+.run{border:1px solid var(--line); display:grid; grid-template-columns:repeat(5,1fr); overflow:hidden;}
+.run .step{padding:22px 16px; border-right:1px solid var(--line); position:relative;}
+.run .step:last-child{border-right:0;}
+.run .step:nth-child(1){background:color-mix(in oklab, transparent, var(--d-accent) 7%);}
+.run .step:nth-child(2){background:color-mix(in oklab, transparent, var(--d-accent) 10%);}
+.run .step:nth-child(3){background:color-mix(in oklab, transparent, var(--u-accent) 8%);}
+.run .step:nth-child(4){background:color-mix(in oklab, transparent, var(--u-accent) 12%);}
+.run .step:nth-child(5){background:color-mix(in oklab, transparent, var(--u-accent) 17%);}
+.run .t{font-size:11px; letter-spacing:.16em; color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%)); margin-bottom:10px; font-weight:700;}
+.run .step p{font-size:12.5px; margin:0; color:color-mix(in oklab, var(--d-dim), var(--u-dim) calc(var(--mood)*100%));}
+@media(max-width:640px){.run{grid-template-columns:1fr;} .run .step{border-right:0; border-bottom:1px solid var(--line);} .run .step:last-child{border-bottom:0;}}
+
+/* tier table */
+.table-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+table.tiers{width:100%; min-width:560px; border-collapse:collapse; border:1px solid var(--line); font-size:13.5px;}
+table.tiers th, table.tiers td{border-bottom:1px solid var(--line); padding:12px 14px; text-align:left; vertical-align:top;}
+table.tiers thead th{font-size:11px; letter-spacing:.16em; font-weight:700;
+  color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+table.tiers td.t{font-weight:700; white-space:nowrap;}
+table.tiers td.n{font-variant-numeric:tabular-nums; white-space:nowrap; text-align:right;
+  color:color-mix(in oklab, var(--d-ink), var(--u-ink) calc(var(--mood)*100%));}
+table.tiers th.n{text-align:right;}
+table.tiers td.w{color:color-mix(in oklab, var(--d-dim), var(--u-dim) calc(var(--mood)*100%));}
+table.tiers tfoot td{border-bottom:0; font-weight:800;
+  background:color-mix(in oklab, transparent, var(--u-accent) 8%);}
+
+/* sentence ladder */
+.ladder{list-style:none; margin:0; padding:0; counter-reset:tier;}
+.ladder li{counter-increment:tier; border-left:2px solid var(--line); padding:18px 0 18px 26px; margin-left:8px; position:relative;}
+.ladder li::before{content:"T" counter(tier); position:absolute; left:-15px; top:18px;
+  background:color-mix(in oklab, var(--d-bg), var(--u-bg) calc(var(--mood)*100%)); font-size:11px; font-weight:700; letter-spacing:.05em; padding:2px 0;
+  color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+.ladder .tgt{font-weight:500;}
+.ladder li:nth-child(1) .tgt{font-size:15px;} .ladder li:nth-child(2) .tgt{font-size:16px;}
+.ladder li:nth-child(3) .tgt{font-size:17px;} .ladder li:nth-child(4) .tgt{font-size:18px;}
+.ladder li:nth-child(5) .tgt{font-size:19px; font-weight:700;}
+.ladder .ja{display:block; color:color-mix(in oklab, var(--d-dim), var(--u-dim) calc(var(--mood)*100%)); font-size:13px; margin-top:6px;}
+
+/* compounding demo (this language's replacement for a gender section) */
+.build{border:1px solid var(--line); padding:6px 0;}
+.build .row{display:grid; grid-template-columns:1.1fr 1.4fr; gap:0; border-bottom:1px dashed var(--line); align-items:center;}
+.build .row:last-child{border-bottom:0;}
+.build .row > div{padding:15px 20px;}
+.build .k{border-right:1px dashed var(--line);}
+.build .build-word{font-size:18px; font-weight:700;}
+.build .build-word .h{color:var(--head);}
+.build .build-word .m{color:var(--mod);}
+.build .gloss{font-size:13.5px; color:color-mix(in oklab, var(--d-dim), var(--u-dim) calc(var(--mood)*100%));}
+.build .gloss b{color:color-mix(in oklab, var(--d-ink), var(--u-ink) calc(var(--mood)*100%));}
+@media(max-width:560px){.build .row{grid-template-columns:1fr;} .build .k{border-right:0; border-bottom:1px dashed var(--line);}}
+.legend{display:flex; gap:20px; flex-wrap:wrap; font-size:12px; margin:0 0 22px; color:var(--d-dim);}
+.legend span{display:inline-flex; align-items:center; gap:7px;}
+.legend i{width:11px; height:11px; display:inline-block;}
+.legend .lh{background:var(--head);} .legend .lm{background:var(--mod);}
+
+/* concept cards */
+.cards{display:grid; grid-template-columns:repeat(2,1fr); gap:16px;}
+@media(max-width:640px){.cards{grid-template-columns:1fr;}}
+.card{border:1px solid var(--line); padding:20px 18px; cursor:pointer; background:rgba(255,255,255,.015); transition:border-color .15s ease; min-height:150px;}
+.card:hover{border-color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+.card .art{font-weight:500; font-size:12px; letter-spacing:.04em; color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+.card .word{font-size:21px; font-weight:800; margin:2px 0 12px;}
+.card .ex{font-size:13px; color:var(--d-dim); font-style:italic;}
+.card .trans{font-size:12.5px; color:var(--d-dim); margin-top:10px; max-height:0; overflow:hidden; opacity:0; transition:max-height .3s ease, opacity .3s ease;}
+.card.flipped .trans{max-height:300px; opacity:1;}
+.card .hint{font-size:10px; letter-spacing:.2em; opacity:.45; margin-top:12px;}
+
+/* lesson roster */
+.lessons{display:grid; grid-template-columns:repeat(2,1fr); gap:0 0; border:1px solid var(--line); list-style:none; margin:0; padding:0;}
+@media(max-width:640px){.lessons{grid-template-columns:1fr;}}
+.lessons li{padding:13px 18px; border-bottom:1px dashed var(--line); font-size:13px;}
+.lessons li:nth-child(odd){border-right:1px dashed var(--line);}
+@media(max-width:640px){.lessons li:nth-child(odd){border-right:0;}}
+.lessons .no{color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%)); font-weight:700; margin-right:9px; font-variant-numeric:tabular-nums;}
+.lessons .fire{display:block; font-size:11.5px; opacity:.72; margin-top:3px; color:color-mix(in oklab, var(--d-dim), var(--u-dim) calc(var(--mood)*100%));}
+
+/* quadrilingual demo */
+.quad{border:1px solid var(--line);}
+.quad .head{padding:18px 20px; border-bottom:1px solid var(--line);}
+.quad .head .w{font-size:26px; font-weight:800;}
+.quad .head .ex{font-size:13.5px; font-style:italic; color:var(--d-dim); margin-top:4px;}
+.quad .row{display:grid; grid-template-columns:120px 1fr; border-bottom:1px dashed var(--line);}
+.quad .row:last-child{border-bottom:0;}
+.quad .row > div{padding:12px 20px;}
+.quad .lab{font-size:11px; letter-spacing:.14em; border-right:1px dashed var(--line);
+  color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+.quad .val{font-size:14px; color:color-mix(in oklab, var(--d-ink), var(--u-ink) calc(var(--mood)*100%));}
+.quad .val.cjk{font-family:var(--mono-cjk);}
+.quad .row.self{background:color-mix(in oklab, transparent, var(--u-accent) 8%);}
+@media(max-width:560px){.quad .row{grid-template-columns:1fr;} .quad .lab{border-right:0; padding-bottom:0;}}
+
+/* free pack banner */
+.free-band{border:1px solid var(--line); padding:26px 24px; display:flex; gap:22px; align-items:center; flex-wrap:wrap;
+  background:color-mix(in oklab, transparent, var(--u-accent) 6%);}
+.free-band .badge{font-size:11px; letter-spacing:.2em; font-weight:700; padding:7px 12px; white-space:nowrap;
+  color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));
+  border:1px solid color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+.free-band p{margin:0; font-size:14.5px; flex:1 1 320px; color:color-mix(in oklab, var(--d-dim), var(--u-dim) calc(var(--mood)*100%));}
+.free-band p b{color:color-mix(in oklab, var(--d-ink), var(--u-ink) calc(var(--mood)*100%));}
+
+.method dl{display:grid; grid-template-columns:max-content 1fr; gap:14px 22px; margin:0;}
+.method dt{font-weight:700; color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%)); white-space:nowrap;}
+.method .frame > .tag{color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+.method dd{margin:0; font-size:14.5px; color:var(--d-dim);}
+@media(max-width:560px){.method dl{grid-template-columns:1fr; gap:4px 0;} .method dd{margin-bottom:14px;}}
+
+/* FAQ */
+.faq{margin:0;}
+.faq .qa{border-top:1px solid var(--line); padding:20px 0;}
+.faq .qa:first-child{border-top:0; padding-top:4px;}
+.faq .q{font-size:16px; font-weight:700; margin:0 0 8px;
+  color:color-mix(in oklab, var(--d-ink), var(--u-ink) calc(var(--mood)*100%));}
+.faq .a{font-size:14.5px; margin:0; max-width:58ch;
+  color:color-mix(in oklab, var(--d-dim), var(--u-dim) calc(var(--mood)*100%));}
+.faq .a a{color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%)); text-decoration:none; border-bottom:1px solid currentColor;}
+.faq .a a:hover{color:color-mix(in oklab, var(--d-ink), var(--u-ink) calc(var(--mood)*100%));}
+
+.final{text-align:center; padding:90px 0 100px;}
+.final h2{font-size:clamp(26px,5.4vw,48px);}
+.final p{color:var(--u-dim); max-width:46ch; margin:14px auto 26px; font-size:15px;}
+
+footer{border-top:1px solid var(--line); padding:28px 24px; font-size:12px; color:var(--u-dim); text-align:center; letter-spacing:.04em;}
+footer .epi{font-style:italic; opacity:.78; max-width:54ch; margin:0 auto 12px; line-height:1.7;}
+footer .epi .tr{font-style:normal; opacity:.85; display:block; margin-top:8px; font-size:11.5px;}
+footer .footer-links{display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap; margin-top:14px;}
+footer .footer-links a{color:inherit; text-decoration:none; opacity:.75; letter-spacing:.04em;}
+footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+footer .footer-links .div{opacity:.4;}
+</style>
+<style>body{line-height:1.75;}</style>
+</head>
+<body>
+<div class="overlay"></div>
+<div class="vignette"></div>
+
+<nav>
+  <span class="brand"><a class="logo" href="index.ja.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.ja.html">ホーム</a><span class="sep"> · </span><a href="packs.ja.html">パック</a><span class="sep"> · </span><span class="here">トキポナ</span></span>
+  <span class="links">
+    <a href="manual/index.html">攻略ガイド（β）</a>
+    <a href="resources.ja.html">リソース</a>
+    <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-toki-pona-ja&l=japanese">Steam</a>
+  </span>
+  <span class="nav-mobile">
+    <a href="home.ja.html">ホーム</a>
+    <span class="r"><a href="resources.ja.html">リソース</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-toki-pona-ja&l=japanese">Steam</a></span>
+  </span>
+  <div class="lang-switch">
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="言語を選択">JA<span class="lang-caret">▾</span></button>
+    <ul class="lang-menu" hidden>
+      <li><a href="toki-pona.html">English</a></li>
+      <li><a href="toki-pona.de.html">Deutsch</a></li>
+      <li><a href="toki-pona.es.html">Español</a></li>
+      <li><a href="toki-pona.ja.html" aria-current="true">日本語</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <header class="hero">
+    <img class="hero-bg" src="toki-pona-hero.png" alt="ターミナル画面に表示されたFlashBossのトキポナのカード — 目標語、例文とその訳、その下に解説">
+    <div class="wrap">
+      <p class="kicker reveal">基本ゲーム · <b>無料同梱</b> · 完全日本語対応</p>
+      <h1 class="reveal">toki pona<span class="cursor"></span></h1>
+      <p class="tagline reveal">ひとつの言語まるごと。およそ140語。</p>
+      <p class="sig reveal">聞く・読む・繰り返す・評価する・戦う</p>
+      <p class="lede reveal">始まりは <b class="tp" lang="tok">toki!</b> — こんにちは。カード500枚のあと、この言語にはもう、初めて出会う場所が残っていません。基本ゲームに<b>無料</b>で同梱されています。</p>
+      <div class="actions reveal">
+        <a class="btn" href="wordlists.ja.html?lang=Toki%20Pona">単語リスト</a>
+        <a class="btn" href="lessons.ja.html?lang=Toki%20Pona">レッスン</a>
+        <a class="btn" href="https://flashboss-demo.pages.dev/">デモを試す</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- JAPANESE HEADLINE -->
+  <section class="wrap">
+    <div class="jaband reveal">
+      <h2>日本語で完全にプレイ可能</h2>
+      <p>全カードに日本語の訳と解説、全13レッスンも日本語、インターフェースも日本語対応、英語不要。トキポナと日本語だけで、1枚目から最後まで通せます。</p>
+      <ul>
+        <li><b>500枚すべて</b>に日本語の訳・例文訳・解説（Notes）</li>
+        <li><b>文法レッスン13本すべて</b>に日本語版</li>
+        <li><b>インターフェース</b>は英語・ドイツ語・スペイン語・日本語の4言語</li>
+        <li>設定は一度だけ。パック全体がそれに従います</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- THE ARGUMENT -->
+  <section class="wrap">
+    <div class="frame">
+      <span class="tag">トキポナの設計</span>
+      <h2>切れ端ではなく、言語まるごと</h2>
+      <p class="sub tp" lang="tok">toki pona — 良い言語。</p>
+      <p class="body">トキポナは、ミニマリズムの実験として作られた人工言語です。およそ140語、そしてその下に一つの問い — ほとんど何もない状態で、どこまで言えるのか。活用する時制もなく、覚えるべき性もなく、不規則なものは何一つありません。綴りは表音的で、見たとおりに読めば、それで正しく言えています。</p>
+      <p class="body">残るのは組み合わせです。<b class="tp" lang="tok">tomo tawa</b>、動く建物は、車。<b class="tp" lang="tok">ilo toki</b>、話す道具は、電話。語彙がこれほど小さいので、一語一語が伸びなければなりません。<b class="tp" lang="tok">pona</b> は、良い・単純・役立つ・親切をいっぺんに引き受けます。正確な語を探すのをやめて、自分が本当は何を言いたかったのかを決めるようになる — それがこの試みの眼目です。</p>
+      <p class="body">たいていの言語は、終わらせるには大きすぎます。この言語はそうではありません。FlashBossはその全部を、<b>カード500枚</b>・<b>22クラスター</b>・<b>5ティア</b>で教えます。単語エントリは178 — コースが扱う内容語と文法助詞のすべて、つまり書籍の語彙に、その隣に並ぶだけの資格を得たコミュニティ語を加えたもの — そこに複合表現250、それらで組み立てた文が72。</p>
+
+      <div class="run reveal">
+        <div class="step"><div class="t">ティア1</div><p>最初の言葉、人と代名詞、善と悪、望みと訪れ。</p></div>
+        <div class="step"><div class="t">ティア2</div><p>仕事と出自、感情と食、家と道具、贈ると遊ぶ。</p></div>
+        <div class="step"><div class="t">ティア3</div><p>眠りと日ざし、道と書物、数と金、音と共同体。</p></div>
+        <div class="step"><div class="t">ティア4</div><p>死と巡り、空と大気、体と闇、熱と草木、果実と家族。</p></div>
+        <div class="step"><div class="t">ティア5</div><p>月と衣、色と生き物、鳥と獣 — そして追加の語。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIER TABLE -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">パック全体を、数で</span>
+      <h2>5ティア、22クラスター</h2>
+      <p class="sub">どのクラスターも最後はボス戦です。倒せば、そのカードは日々の山から永久に抜けます。</p>
+      <div class="table-scroll">
+        <table class="tiers">
+          <thead>
+            <tr><th scope="col">ティア</th><th scope="col" class="n">クラスター</th><th scope="col" class="n">カード</th><th scope="col">出会うもの</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="t">ティア1</td><td class="n">4</td><td class="n">86</td><td class="w">最初の言葉、人と代名詞、善と悪、望みと訪れ。文法レッスン7本がここに落ちてきます — 初日から文を作ることになります。</td></tr>
+            <tr><td class="t">ティア2</td><td class="n">4</td><td class="n">91</td><td class="w">仕事と出自、感情と食、家と道具、贈ると遊ぶ。</td></tr>
+            <tr><td class="t">ティア3</td><td class="n">4</td><td class="n">91</td><td class="w">眠りと日ざし、道と書物、数と金、音と共同体。</td></tr>
+            <tr><td class="t">ティア4</td><td class="n">5</td><td class="n">114</td><td class="w">死と巡り、空と大気、体と闇、熱と草木、果実と家族。</td></tr>
+            <tr><td class="t">ティア5</td><td class="n">5</td><td class="n">118</td><td class="w">月と衣、色と生き物、鳥と獣、そして書籍の外から来た追加語彙のクラスターが2つ。</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><td class="t">合計</td><td class="n">22</td><td class="n">500</td><td class="w">パックはひとつ。言語はそれで全部です。</td></tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SENTENCE LADDER -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">育っていく例文</span>
+      <h2>少しずつ、難しく</h2>
+      <p class="sub">例文はティアごとに複雑になります。</p>
+      <ol class="ladder">
+        <li class="reveal"><span class="tgt tp" lang="tok">mi jan pona sina.</span><span class="ja">わたしはあなたの友だちです。</span></li>
+        <li class="reveal"><span class="tgt tp" lang="tok">sina wile e pona la, sina o pali.</span><span class="ja">良いものが欲しいなら、そのために働くべし。</span></li>
+        <li class="reveal"><span class="tgt tp" lang="tok">jan pi sona pona li toki e nasin pona tawa jan lili.</span><span class="ja">賢い人は子どもたちに良い道を説きます。</span></li>
+        <li class="reveal"><span class="tgt tp" lang="tok">jan sona li sona e ni: ona li sona ala e ale.</span><span class="ja">賢者はこれを知っています：自分がすべてを知らないことを。</span></li>
+        <li class="reveal"><span class="tgt tp" lang="tok">telo li tawa anpa lon nasin ale.</span><span class="ja">水はどの道でも下へ流れます。</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- COMPOUNDING -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">部品から組み立てる</span>
+      <h2>小さな語を二つで、新しい語を一つ</h2>
+      <p class="sub">ここには色分けすべき性がありません — そこでFlashBossは、本当に効くものを見せます。修飾語はつねに修飾される語のあとに続き、その組は、どちらの半分も単独では持たない意味になります。このパックの250枚は、まさにそれです。</p>
+      <div class="legend">
+        <span><i class="lh"></i> 主要語 — それが何であるか</span>
+        <span><i class="lm"></i> 修飾語 — どんな種類のものか</span>
+      </div>
+      <div class="build">
+        <div class="row"><div class="k"><span class="build-word" lang="tok"><span class="h">tomo</span> <span class="m">tawa</span></span></div><div class="gloss"><b>車</b> — <i>tomo</i>（家、建物、屋内の空間）+ <i>tawa</i>（動く）：動く部屋</div></div>
+        <div class="row"><div class="k"><span class="build-word" lang="tok"><span class="h">ilo</span> <span class="m">toki</span></span></div><div class="gloss"><b>電話</b> — <i>ilo</i>（道具、器具）+ <i>toki</i>（話す）：話す道具</div></div>
+        <div class="row"><div class="k"><span class="build-word" lang="tok"><span class="h">ilo</span> <span class="m">nanpa</span></span></div><div class="gloss"><b>コンピュータ</b> — <i>ilo</i>（道具）+ <i>nanpa</i>（数）：数の機械</div></div>
+        <div class="row"><div class="k"><span class="build-word" lang="tok"><span class="h">tomo</span> <span class="m">lipu</span></span></div><div class="gloss"><b>図書館</b> — <i>tomo</i>（建物）+ <i>lipu</i>（紙、本、書類）：書類の建物</div></div>
+        <div class="row"><div class="k"><span class="build-word" lang="tok"><span class="h">telo</span> <span class="m">nasa</span></span></div><div class="gloss"><b>酒</b> — <i>telo</i>（水、液体）+ <i>nasa</i>（奇妙な、酔わせる）：人を変にする液体</div></div>
+        <div class="row"><div class="k"><span class="build-word" lang="tok"><span class="h">kasi</span> <span class="m">suli</span></span></div><div class="gloss"><b>木</b> — <i>kasi</i>（植物、葉）+ <i>suli</i>（大きい、高い）：大きい植物</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONCEPT CARDS -->
+  <section class="wrap">
+    <div class="reveal">
+      <h2>残りを背負う、ひと握りの語</h2>
+      <p class="sub">パックから4枚。タップでめくれます。</p>
+      <div class="cards reveal">
+        <div class="card"><div class="art">世界観そのもの</div><div class="word" lang="tok">pona</div>
+          <div class="ex tp" lang="tok">pona!</div>
+          <div class="trans">良い、単純な、役立つ、親切な；良さ、単純さ。単独では「いいね！」「ありがとう！」。この言語で最もよく使う語のひとつで、言語名の半分でもあります。</div><div class="hint">タップでめくる</div></div>
+        <div class="card"><div class="art">助詞</div><div class="word" lang="tok">pi</div>
+          <div class="ex tp" lang="tok">ni li jan pi toki pona.</div>
+          <div class="trans">続く語をひとまとまりに束ね、あとの修飾語が最後の一語だけでなく群全体にかかるようにします — <i>jan pi toki pona</i> は「トキポナ<i>の</i>人」。「この人はトキポナを話す人です。」</div><div class="hint">タップでめくる</div></div>
+        <div class="card"><div class="art">助詞</div><div class="word" lang="tok">la</div>
+          <div class="ex tp" lang="tok">mi la, mi pona.</div>
+          <div class="trans">場面を整えます：<i>la</i> の前はすべて、後ろの文にとっての「いつ・もし・〜については」。この言語の万能な文脈の印です。「わたしはと言えば、元気です。」</div><div class="hint">タップでめくる</div></div>
+        <div class="card"><div class="art">コミュニティ語</div><div class="word" lang="tok">kijetesantakalu</div>
+          <div class="ex tp" lang="tok">kijetesantakalu li moku e kala.</div>
+          <div class="trans">アライグマ、またはアライグマ・イタチのたぐいの動物。2009年のエイプリルフールの冗談として作られた語 — 短さの上に建てられた言語で、いちばん長い語です。それがそのまま定着し、いまやコミュニティ屈指の愛され語になりました。</div><div class="hint">タップでめくる</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LESSONS -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">文法は、必要なときに</span>
+      <h2>13のレッスンが、それぞれの扉で</h2>
+      <p class="sub">先に読み通すべき文法の章はありません。どの助詞にもレッスンがあり、そのレッスンは、その助詞が初めて現れるカードちょうどで発火します — 必要になったその瞬間に規則を読み、それより前には読みません。</p>
+      <ul class="lessons">
+        <li><span class="no">00</span>トキポナへようこそ<span class="fire">発火：<i lang="tok">toki</i> — 1枚目</span></li>
+        <li><span class="no">01</span><i lang="tok">mi</i> / <i lang="tok">sina</i> に「です」は不要<span class="fire">発火：<i lang="tok">mi pona</i></span></li>
+        <li><span class="no">02</span><i lang="tok">li</i> — 主語と述語の橋<span class="fire">発火：<i lang="tok">jan</i></span></li>
+        <li><span class="no">03</span><i lang="tok">o</i> — 命令と呼びかけ<span class="fire">発火：<i lang="tok">o</i></span></li>
+        <li><span class="no">04</span><i lang="tok">pi</i> — 修飾語を束ねる<span class="fire">発火：<i lang="tok">pi</i></span></li>
+        <li><span class="no">05</span>修飾語は後ろに続く<span class="fire">発火：<i lang="tok">jan pona</i></span></li>
+        <li><span class="no">06</span>質問のしかた<span class="fire">発火：<i lang="tok">seme</i></span></li>
+        <li><span class="no">07</span>前動詞が動詞を彩る<span class="fire">発火：<i lang="tok">wile</i></span></li>
+        <li><span class="no">08</span><i lang="tok">la</i> — 場面を整える<span class="fire">発火：<i lang="tok">ken la</i></span></li>
+        <li><span class="no">09</span><i lang="tok">e</i> — 目的語の印<span class="fire">発火：ティア2</span></li>
+        <li><span class="no">10</span>数と、少しの色<span class="fire">発火：<i lang="tok">wan</i></span></li>
+        <li><span class="no">11</span>六つの小さな前置詞<span class="fire">発火：<i lang="tok">poka</i></span></li>
+        <li><span class="no">12</span><i lang="tok">nasin</i>、<i lang="tok">pu</i>、そして <i lang="tok">ku</i><span class="fire">発火：<i lang="tok">ku</i></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- QUADRILINGUAL -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">四言語で</span>
+      <h2>英語を経由する必要はありません</h2>
+      <p class="sub">どのカードも、訳・例文訳・解説を4言語すべてで持っています — 13本のレッスンページも、その周りのインターフェースも同じです。言語を一度設定すれば、パック全体がそれに従います。</p>
+      <div class="quad">
+        <div class="head">
+          <div class="w" lang="tok">toki</div>
+          <div class="ex" lang="tok">toki!</div>
+        </div>
+        <div class="row self"><div class="lab">日本語</div><div class="val cjk" lang="ja">話す、語る、考える；言語、会話</div></div>
+        <div class="row"><div class="lab">English</div><div class="val" lang="en">to speak, talk, communicate, think; language, a conversation</div></div>
+        <div class="row"><div class="lab">Deutsch</div><div class="val" lang="de">sprechen, reden, denken; Sprache, Gespräch</div></div>
+        <div class="row"><div class="lab">Español</div><div class="val" lang="es">hablar, conversar, comunicar, pensar; lengua, una conversación</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FREE -->
+  <section class="wrap">
+    <div class="reveal">
+      <h2>費用はかかりません</h2>
+      <p class="sub">トキポナのDLCは存在しません。カートに入れるものが何もないのです。</p>
+      <div class="free-band">
+        <span class="badge">無料同梱</span>
+        <p>トキポナは、ほかの無料パックと並んで<b>基本ゲームの中に</b>入っています。FlashBossをインストールし、言語一覧から選んで、始めるだけ。前提となるパックもありません — 本命の言語と並走させても、単独で走らせてもかまいません。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHOD -->
+  <section class="wrap method">
+    <div class="frame reveal">
+      <span class="tag">なぜ定着するのか</span>
+      <h2>単語カードを、ひとつの仕組みに</h2>
+      <dl>
+        <dt>フィボナッチ間隔反復</dt><dd>カードごとに0〜5で自己評価。よく覚えているほど、次に出るまでの間隔が延びます — フィボナッチ数列にもとづく間隔反復です。</dd>
+        <dt>ボス戦</dt><dd>22クラスターそれぞれの関門は決闘。いちばん苦手な単語と向き合い、打ち倒さない限り勝てません。</dd>
+        <dt>卒業</dt><dd>クラスターを攻略すると、そのカードは日々の山から永久に抜けます。学ぶほど、山は小さくなります。</dd>
+        <dt>複合の力</dt><dd>パックの半分は複合表現です。覚えた内容語は掛け算になります — 続く250枚は、すでに手にした語で組み立てられているからです。</dd>
+        <dt>レッスン</dt><dd>参照レッスン13本が、その助詞の初出カードちょうどで発火します。</dd>
+        <dt>あなたの言語</dt><dd>500枚すべてが訳<i>と</i>解説を日本語・ドイツ語・スペイン語で持ち、レッスン13本すべてに日本語版があります。インターフェースも同じ4言語です。</dd>
+        <dt>TTS音声</dt><dd>カードは音で聞けます。トキポナを読み上げるのは、ゲームのニューラルTTSエンジンpiper1-gplと、このパック指定のエスペラント語ボイス — このボイスはトキポナが使う音素そのもので学習されているため、14の音がすべてそのままの姿で出て、この言語が求める後ろから2番目の音節の強勢も保たれます。合成音声であり、話者の録音ではありません。</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">質問</span>
+      <h2>始める前に</h2>
+      <div class="faq">
+        <div class="qa">
+          <p class="q">トキポナは本当に無料ですか?</p>
+          <p class="a">はい。基本ゲームに入っているパックのひとつで、買うべきトキポナDLCはなく、後半のティアの先に課金もありません。カード500枚もレッスン13本も、初回起動の時点でそろっています。</p>
+        </div>
+        <div class="qa">
+          <p class="q">日本語だけで遊べますか?</p>
+          <p class="a">完全に遊べます。500枚すべてに日本語の訳・例文訳・解説（Notes）があり、レッスン13本すべてに日本語版があります。ゲームのインターフェースも英語・ドイツ語・スペイン語・日本語に対応しています。英語は必要ありません。</p>
+        </div>
+        <div class="qa">
+          <p class="q">パックには具体的に何が入っていますか?</p>
+          <p class="a">22クラスター・5ティアにわたるカード500枚です。単語エントリ178 — コースが扱う内容語と文法助詞のすべて — に、複合表現250と、まるごとの文72。始める前に単語をすべて読んでおくこともできます：<a href="wordlists.ja.html?lang=Toki%20Pona">単語リストのページ</a>へどうぞ。</p>
+        </div>
+        <div class="qa">
+          <p class="q">書籍だけでなく、コミュニティの語彙も扱いますか?</p>
+          <p class="a">扱います。背骨は書籍の語彙で、ティア5には後から定着した語 — <i lang="tok">kijetesantakalu</i>、<i lang="tok">tonsi</i>、<i lang="tok">misikeke</i> — が並び、最後はさらに外側から来た追加語彙のクラスター2つで閉じます：<i lang="tok">majuna</i>（古い）、<i lang="tok">linluwi</i>（ネットワーク）、<i lang="tok">isipin</i>（じっくり考える）、<i lang="tok">nimisin</i>（新しい語・冗談の語）。最終レッスンが <i lang="tok">pu</i> と <i lang="tok">ku</i> の違いを説明するので、自分がいまどちらの部屋に立っているかは、つねに分かります。</p>
+        </div>
+        <div class="qa">
+          <p class="q">文法はどこで出てきますか?</p>
+          <p class="a">扉のところで出てきます。レッスンは13本あり、それぞれ、その助詞が初めて現れるカードちょうどで発火します — <i lang="tok">li</i> は <i lang="tok">jan</i> とともに、<i lang="tok">pi</i> は <i lang="tok">pi</i> とともに、<i lang="tok">la</i> は <i lang="tok">ken la</i> とともに。うち8本はティア1に落ちてきます。先に全部読んでおきたい方は<a href="lessons.ja.html?lang=Toki%20Pona">レッスンのページ</a>へ。</p>
+        </div>
+        <div class="qa">
+          <p class="q">音で聞けますか?</p>
+          <p class="a">聞けます — ただし録音された声ではなく、TTS（音声合成）です。トキポナの音は14。このパックはそれをFlashBossのエスペラント語ボイスで話します。このボイスの音素セットは14の音をちょうど覆っていて、この言語が求める後ろから2番目の音節の強勢も保たれます。</p>
+        </div>
+        <div class="qa">
+          <p class="q">先に別のパックを終わらせる必要はありますか?</p>
+          <p class="a">ありません。トキポナに前提パックはありません。単独で成立するコースで、いま学んでいる言語の隣に置いても場所を取らないだけの小ささです。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final wrap reveal">
+    <h2>言語をまるごと、持って行こう</h2>
+    <p>トキポナは基本ゲームに同梱されています。買うものも、解錠するものもありません。</p>
+    <a class="btn hot" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-toki-pona-ja&l=japanese">SteamでFlashBossを手に入れる &rarr;</a>
+  </section>
+
+</main>
+
+<footer>
+  <p class="epi" lang="tok">&ldquo;jan sona li sona e ni: ona li sona ala e ale.&rdquo;<span class="tr" lang="ja">賢者はこれを知っています：自分がすべてを知らないことを。</span></p>
+  <span class="footer-links">
+    <a href="home.ja.html">ホーム</a>
+    <span class="div">·</span>
+    <a href="packs.ja.html">パック</a>
+    <span class="div">·</span>
+    <a href="manual/">攻略ガイド（β）</a>
+    <span class="div">·</span>
+    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-toki-pona-ja&l=japanese">Steam</a>
+  </span>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+document.querySelectorAll('.card').forEach(function(c){c.addEventListener('click',function(){c.classList.toggle('flipped');});});
+(function(){
+  var root=document.documentElement,ticking=false;
+  function update(){var max=document.body.scrollHeight-window.innerHeight;var p=max>0?Math.min(1,Math.max(0,window.scrollY/max)):0;root.style.setProperty('--mood',(p*p*(3-2*p)).toFixed(3));ticking=false;}
+  window.addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(update);ticking=true;}},{passive:true});update();
+})();
+// hero banner: if the image isn't in place yet, fall back to the flat hero ground
+(function(){
+  var img=document.querySelector('.hero-bg'); if(!img) return;
+  img.addEventListener('error', function(){ img.style.display='none'; });
+  if(img.complete && img.naturalWidth===0) img.style.display='none';
+})();
+</script>
+<script>
+// language dropdown: button toggles the menu; click-away / Esc closes it
+(function(){
+  var sw=document.querySelector('.lang-switch'); if(!sw) return;
+  var btn=sw.querySelector('.lang-toggle'), menu=sw.querySelector('.lang-menu');
+  function close(){ menu.hidden=true; btn.setAttribute('aria-expanded','false'); }
+  btn.addEventListener('click', function(e){ e.stopPropagation(); var willOpen=menu.hidden; menu.hidden=!willOpen; btn.setAttribute('aria-expanded', String(willOpen)); });
+  document.addEventListener('click', function(e){ if(!sw.contains(e.target)) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
+</script>
+</body>
+</html>

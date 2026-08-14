@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toki Pona — FlashBoss</title>
+<meta name="description" content="FlashBoss Toki Pona: a complete language of around 140 words — free inside the base game. 500 cards across 22 clusters and 5 tiers, 13 grammar lessons, cards and lessons in English, German, Japanese and Spanish. Spaced repetition, boss fights, and text-to-speech.">
+<link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/toki-pona.html">
+<link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/toki-pona.de.html">
+<link rel="alternate" hreflang="es" href="https://odiin2024.github.io/flashboss-site/toki-pona.es.html">
+<link rel="alternate" hreflang="ja" href="https://odiin2024.github.io/flashboss-site/toki-pona.ja.html">
+<link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/toki-pona.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   FlashBoss — Toki Pona page
+   Same phosphor-terminal chassis as spanish.html / esperanto.html:
+   one smooth scroll-driven arc, no hard turn.
+
+   Toki Pona's own soul: SMALL. The page runs suno -> telo,
+   sun to water — the pack's own two elemental words — and the
+   whole argument is subtraction: around 140 words, and you have
+   the lot. No gender section (there is none), no Pareto ladder
+   (there is one pack, and it is free).
+
+   TUNE THESE FIRST:
+   --head / --mod  -> compound colours; match the game's palette.
+   toki-pona-hero.png -> hero banner image (sits at site root).
+   ============================================================ */
+:root{
+  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
+  --mono-cjk:'JetBrains Mono', 'Hiragino Sans', 'Noto Sans JP', 'Yu Gothic', 'Meiryo', ui-monospace, monospace;
+
+  /* compound colour-coding — the page's teaching legend.
+     RETUNE to the game's exact palette. */
+  --head:#f5cf72;    /* the head word — what the thing is */
+  --mod:#6fd9c8;     /* the modifier — what kind of thing it is */
+
+  /* dawn palette (top — suno: sun, light, the first words) */
+  --d-bg:#171205;
+  --d-ink:#f2e8cf;
+  --d-dim:#c3ad7e;
+  --d-accent:#f0c23c;
+
+  /* dusk palette (bottom — telo: water, the language settled and flowing) */
+  --u-bg:#07161a;
+  --u-ink:#d9eef1;
+  --u-dim:#87b3ba;
+  --u-accent:#57cfc0;
+
+  /* mood: 0 = sun, 1 = water. Driven by scroll. ONE smooth ramp. */
+  --mood:0;
+
+  --line:color-mix(in oklab, #5a4a1f, #1e4a4f calc(var(--mood) * 100%));
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0; font-family:var(--mono);
+  background:#171205;
+  background:color-mix(in oklab, var(--d-bg), var(--u-bg) calc(var(--mood)*100%));
+  color:color-mix(in oklab, var(--d-ink), var(--u-ink) calc(var(--mood)*100%));
+  line-height:1.6; -webkit-font-smoothing:antialiased;
+  transition:background 120ms linear, color 120ms linear; overflow-x:hidden;
+}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.045) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.vignette{position:fixed; inset:0; pointer-events:none; z-index:9998;
+  background:radial-gradient(120% 90% at 50% 35%, transparent 55%, rgba(0,0,0,.5) 100%);}
+.wrap{max-width:880px; margin:0 auto; padding:0 24px;}
+
+nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line);}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--d-dim); margin-right:auto;}
+nav .brand a, nav .brand .sep{color:var(--d-dim); text-decoration:none;}
+nav .brand a:hover{color:var(--d-ink);}
+nav .brand .here{font-weight:800; color:var(--d-ink);}
+nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--d-ink);}
+nav .brand .logo:hover{color:var(--d-accent);}
+nav .brand .pipe{color:var(--d-dim); margin:0 11px;}
+.nav-mobile{display:none;}
+.nav-mobile a{color:inherit; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.08em; opacity:.85;}
+.nav-mobile a:hover{opacity:1; color:var(--d-accent);}
+@media(max-width:640px){ nav .brand, nav .links{display:none;} .nav-mobile{display:flex; flex:1; justify-content:space-between; align-items:center;} .nav-mobile .r{display:flex; gap:18px;} }
+nav .links a{color:inherit; text-decoration:none; opacity:.7; margin-left:22px;}
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+nav .links a.steam{font-weight:800; opacity:1; color:var(--d-ink);}
+nav .lang-switch{position:relative; margin-left:22px;}
+nav .lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--d-ink); background:var(--d-bg); border:1px solid var(--d-dim); padding:5px 8px; line-height:1; cursor:pointer;}
+nav .lang-toggle:hover, nav .lang-toggle[aria-expanded="true"]{background:var(--d-ink); color:var(--d-bg);}
+nav .lang-caret{font-size:8px; line-height:1; transition:transform .15s ease;}
+nav .lang-toggle[aria-expanded="true"] .lang-caret{transform:rotate(180deg);}
+nav .lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--d-bg); border:1px solid var(--d-dim); min-width:120px; z-index:50;}
+nav .lang-menu[hidden]{display:none;}
+nav .lang-menu li{margin:0; padding-left:0; position:static;}
+nav .lang-menu li::before{content:none;}
+nav .lang-menu a{display:block; font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--d-ink); text-decoration:none; padding:7px 10px; white-space:nowrap; opacity:1; margin:0;}
+nav .lang-menu a:hover{background:var(--d-ink); color:var(--d-bg); text-decoration:none;}
+nav .lang-menu a[aria-current="true"]{color:var(--d-accent);}
+nav .lang-menu a[aria-current="true"]:hover{color:var(--d-bg);}
+
+.reveal{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease;}
+.reveal.in{opacity:1; transform:none;}
+
+/* HERO — image band */
+.hero{position:relative; padding:84px 0 36px; overflow:hidden; background:#171205;}
+.hero .hero-bg{position:absolute; inset:0; z-index:0; width:100%; height:100%; object-fit:cover; object-position:center 32%;}
+.hero::after{content:""; position:absolute; inset:0; z-index:1;
+  background:linear-gradient(180deg, rgba(20,17,10,.60) 0%, rgba(17,20,20,.84) 55%, #111414 100%);}
+.hero .wrap{position:relative; z-index:2;}
+.kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--d-dim); opacity:.9; margin:0 0 26px;}
+.kicker b{color:var(--d-accent); font-weight:700;}
+.hero h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
+.cursor{display:inline-block; width:.6em; height:1em; vertical-align:-.08em; background:color-mix(in oklab, var(--d-accent), transparent 30%); margin-left:.12em; animation:blink 1.05s steps(1) infinite;}
+@keyframes blink{50%{opacity:0;}}
+.hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:30px 0 0; color:var(--d-ink); font-weight:500;}
+.hero .sig{font-size:13px; letter-spacing:.24em; text-transform:uppercase; color:var(--d-accent); margin:14px 0 0; opacity:.9;}
+.hero .lede{font-size:clamp(15px,2.2vw,18px); max-width:48ch; margin:24px 0 0; color:var(--d-dim);}
+.hero .lede b{color:var(--d-ink); font-weight:700;}
+.btn{display:inline-block; font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.08em; color:#171205; background:color-mix(in oklab, var(--d-accent), transparent 30%);
+  padding:14px 26px; text-decoration:none; border:0; box-shadow:6px 6px 0 color-mix(in oklab, var(--d-accent), #000 60%); transition:transform .12s ease, box-shadow .12s ease;}
+.btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--d-accent), #000 60%);}
+.btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--d-accent), #000 60%);}
+.hero .actions{display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:40px; max-width:520px;}
+.hero .actions .btn{margin-top:0; width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
+.btn.hot{color:#07161a; background:var(--u-accent); box-shadow:6px 6px 0 color-mix(in oklab, var(--u-accent), #000 60%);}
+.btn.hot:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--u-accent), #000 60%);}
+
+section{padding:64px 0;}
+.hero + section{padding-top:48px;}
+.frame{border:1px solid var(--line); position:relative; padding:34px 30px 32px;}
+.frame > .tag{position:absolute; top:-12px; left:22px;
+  background:color-mix(in oklab, var(--d-bg), var(--u-bg) calc(var(--mood)*100%));
+  padding:4px 12px; line-height:1; font-size:11px; letter-spacing:.3em; text-transform:uppercase;
+  color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+h2{font-size:clamp(26px,5vw,40px); margin:0 0 8px; font-weight:800; letter-spacing:-.01em;}
+section > .reveal:not(.frame) > h2{margin-top:24px;}  /* breathing room for bare (non-framed) section headers */
+.sub{color:var(--d-dim); font-size:14px; letter-spacing:.04em; margin:0 0 26px;}
+.sub.tp{font-style:italic; font-size:16px; opacity:.92;}
+p.body{font-size:16px; max-width:62ch; margin:0 0 18px; color:color-mix(in oklab, var(--d-ink), var(--u-ink) calc(var(--mood)*100%));}
+p.body b{color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+.tp{font-style:italic; opacity:.96;}
+
+/* gradient run */
+.run{border:1px solid var(--line); display:grid; grid-template-columns:repeat(5,1fr); overflow:hidden;}
+.run .step{padding:22px 16px; border-right:1px solid var(--line); position:relative;}
+.run .step:last-child{border-right:0;}
+.run .step:nth-child(1){background:color-mix(in oklab, transparent, var(--d-accent) 7%);}
+.run .step:nth-child(2){background:color-mix(in oklab, transparent, var(--d-accent) 10%);}
+.run .step:nth-child(3){background:color-mix(in oklab, transparent, var(--u-accent) 8%);}
+.run .step:nth-child(4){background:color-mix(in oklab, transparent, var(--u-accent) 12%);}
+.run .step:nth-child(5){background:color-mix(in oklab, transparent, var(--u-accent) 17%);}
+.run .t{font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%)); margin-bottom:10px; font-weight:700;}
+.run .step p{font-size:12.5px; margin:0; color:color-mix(in oklab, var(--d-dim), var(--u-dim) calc(var(--mood)*100%));}
+@media(max-width:640px){.run{grid-template-columns:1fr;} .run .step{border-right:0; border-bottom:1px solid var(--line);} .run .step:last-child{border-bottom:0;}}
+
+/* tier table */
+.table-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+table.tiers{width:100%; min-width:560px; border-collapse:collapse; border:1px solid var(--line); font-size:13.5px;}
+table.tiers th, table.tiers td{border-bottom:1px solid var(--line); padding:12px 14px; text-align:left; vertical-align:top;}
+table.tiers thead th{font-size:11px; letter-spacing:.16em; text-transform:uppercase; font-weight:700;
+  color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+table.tiers td.t{font-weight:700; white-space:nowrap;}
+table.tiers td.n{font-variant-numeric:tabular-nums; white-space:nowrap; text-align:right;
+  color:color-mix(in oklab, var(--d-ink), var(--u-ink) calc(var(--mood)*100%));}
+table.tiers th.n{text-align:right;}
+table.tiers td.w{color:color-mix(in oklab, var(--d-dim), var(--u-dim) calc(var(--mood)*100%));}
+table.tiers tfoot td{border-bottom:0; font-weight:800;
+  background:color-mix(in oklab, transparent, var(--u-accent) 8%);}
+
+/* sentence ladder */
+.ladder{list-style:none; margin:0; padding:0; counter-reset:tier;}
+.ladder li{counter-increment:tier; border-left:2px solid var(--line); padding:18px 0 18px 26px; margin-left:8px; position:relative;}
+.ladder li::before{content:"T" counter(tier); position:absolute; left:-15px; top:18px;
+  background:color-mix(in oklab, var(--d-bg), var(--u-bg) calc(var(--mood)*100%)); font-size:11px; font-weight:700; letter-spacing:.05em; padding:2px 0;
+  color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+.ladder .ger{font-weight:500;}
+.ladder li:nth-child(1) .ger{font-size:15px;} .ladder li:nth-child(2) .ger{font-size:16px;}
+.ladder li:nth-child(3) .ger{font-size:17px;} .ladder li:nth-child(4) .ger{font-size:18px;}
+.ladder li:nth-child(5) .ger{font-size:19px; font-weight:700;}
+.ladder .en{display:block; color:color-mix(in oklab, var(--d-dim), var(--u-dim) calc(var(--mood)*100%)); font-size:13px; margin-top:6px;}
+
+/* compounding demo (this language's replacement for a gender section) */
+.build{border:1px solid var(--line); padding:6px 0;}
+.build .row{display:grid; grid-template-columns:1.1fr 1.4fr; gap:0; border-bottom:1px dashed var(--line); align-items:center;}
+.build .row:last-child{border-bottom:0;}
+.build .row > div{padding:15px 20px;}
+.build .k{border-right:1px dashed var(--line);}
+.build .build-word{font-size:18px; font-weight:700;}
+.build .build-word .h{color:var(--head);}
+.build .build-word .m{color:var(--mod);}
+.build .gloss{font-size:13.5px; color:color-mix(in oklab, var(--d-dim), var(--u-dim) calc(var(--mood)*100%));}
+.build .gloss b{color:color-mix(in oklab, var(--d-ink), var(--u-ink) calc(var(--mood)*100%));}
+@media(max-width:560px){.build .row{grid-template-columns:1fr;} .build .k{border-right:0; border-bottom:1px dashed var(--line);}}
+.legend{display:flex; gap:20px; flex-wrap:wrap; font-size:12px; margin:0 0 22px; color:var(--d-dim);}
+.legend span{display:inline-flex; align-items:center; gap:7px;}
+.legend i{width:11px; height:11px; display:inline-block;}
+.legend .lh{background:var(--head);} .legend .lm{background:var(--mod);}
+
+/* concept cards */
+.cards{display:grid; grid-template-columns:repeat(2,1fr); gap:16px;}
+@media(max-width:640px){.cards{grid-template-columns:1fr;}}
+.card{border:1px solid var(--line); padding:20px 18px; cursor:pointer; background:rgba(255,255,255,.015); transition:border-color .15s ease; min-height:150px;}
+.card:hover{border-color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+.card .art{font-style:italic; font-weight:500; font-size:12px; letter-spacing:.04em; color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+.card .word{font-size:21px; font-weight:800; margin:2px 0 12px;}
+.card .ex{font-size:13px; color:var(--d-dim); font-style:italic;}
+.card .trans{font-size:12.5px; color:var(--d-dim); margin-top:10px; max-height:0; overflow:hidden; opacity:0; transition:max-height .3s ease, opacity .3s ease;}
+.card.flipped .trans{max-height:260px; opacity:1;}
+.card .hint{font-size:10px; letter-spacing:.2em; text-transform:uppercase; opacity:.45; margin-top:12px;}
+
+/* lesson roster */
+.lessons{display:grid; grid-template-columns:repeat(2,1fr); gap:0 0; border:1px solid var(--line); list-style:none; margin:0; padding:0;}
+@media(max-width:640px){.lessons{grid-template-columns:1fr;}}
+.lessons li{padding:13px 18px; border-bottom:1px dashed var(--line); font-size:13px;}
+.lessons li:nth-child(odd){border-right:1px dashed var(--line);}
+@media(max-width:640px){.lessons li:nth-child(odd){border-right:0;}}
+.lessons .no{color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%)); font-weight:700; margin-right:9px; font-variant-numeric:tabular-nums;}
+.lessons .fire{display:block; font-size:11.5px; opacity:.72; margin-top:3px; color:color-mix(in oklab, var(--d-dim), var(--u-dim) calc(var(--mood)*100%));}
+
+/* quadrilingual demo */
+.quad{border:1px solid var(--line);}
+.quad .head{padding:18px 20px; border-bottom:1px solid var(--line);}
+.quad .head .w{font-size:26px; font-weight:800;}
+.quad .head .ex{font-size:13.5px; font-style:italic; color:var(--d-dim); margin-top:4px;}
+.quad .row{display:grid; grid-template-columns:120px 1fr; border-bottom:1px dashed var(--line);}
+.quad .row:last-child{border-bottom:0;}
+.quad .row > div{padding:12px 20px;}
+.quad .lab{font-size:11px; letter-spacing:.14em; text-transform:uppercase; border-right:1px dashed var(--line);
+  color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+.quad .val{font-size:14px; color:color-mix(in oklab, var(--d-ink), var(--u-ink) calc(var(--mood)*100%));}
+.quad .val.cjk{font-family:var(--mono-cjk);}
+@media(max-width:560px){.quad .row{grid-template-columns:1fr;} .quad .lab{border-right:0; padding-bottom:0;}}
+
+/* free pack banner */
+.free-band{border:1px solid var(--line); padding:26px 24px; display:flex; gap:22px; align-items:center; flex-wrap:wrap;
+  background:color-mix(in oklab, transparent, var(--u-accent) 6%);}
+.free-band .badge{font-size:11px; letter-spacing:.2em; text-transform:uppercase; font-weight:700; padding:7px 12px; white-space:nowrap;
+  color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));
+  border:1px solid color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+.free-band p{margin:0; font-size:14.5px; flex:1 1 320px; color:color-mix(in oklab, var(--d-dim), var(--u-dim) calc(var(--mood)*100%));}
+.free-band p b{color:color-mix(in oklab, var(--d-ink), var(--u-ink) calc(var(--mood)*100%));}
+
+.method dl{display:grid; grid-template-columns:max-content 1fr; gap:14px 22px; margin:0;}
+.method dt{font-weight:700; color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%)); white-space:nowrap;}
+.method .frame > .tag{color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
+.method dd{margin:0; font-size:14.5px; color:var(--d-dim);}
+@media(max-width:560px){.method dl{grid-template-columns:1fr; gap:4px 0;} .method dd{margin-bottom:14px;}}
+
+/* FAQ */
+.faq{margin:0;}
+.faq .qa{border-top:1px solid var(--line); padding:20px 0;}
+.faq .qa:first-child{border-top:0; padding-top:4px;}
+.faq .q{font-size:16px; font-weight:700; margin:0 0 8px;
+  color:color-mix(in oklab, var(--d-ink), var(--u-ink) calc(var(--mood)*100%));}
+.faq .a{font-size:14.5px; margin:0; max-width:64ch;
+  color:color-mix(in oklab, var(--d-dim), var(--u-dim) calc(var(--mood)*100%));}
+.faq .a a{color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%)); text-decoration:none; border-bottom:1px solid currentColor;}
+.faq .a a:hover{color:color-mix(in oklab, var(--d-ink), var(--u-ink) calc(var(--mood)*100%));}
+
+.final{text-align:center; padding:90px 0 100px;}
+.final h2{font-size:clamp(28px,6vw,52px);}
+.final p{color:var(--u-dim); max-width:46ch; margin:14px auto 26px; font-size:15px;}
+
+footer{border-top:1px solid var(--line); padding:28px 24px; font-size:12px; color:var(--u-dim); text-align:center; letter-spacing:.04em;}
+footer .epi{font-style:italic; opacity:.78; max-width:54ch; margin:0 auto 12px; line-height:1.7;}
+footer .epi .tr{font-style:normal; opacity:.85; display:block; margin-top:8px; font-size:11.5px;}
+footer .footer-links{display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap; margin-top:14px;}
+footer .footer-links a{color:inherit; text-decoration:none; opacity:.75; letter-spacing:.04em;}
+footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+footer .footer-links .div{opacity:.4;}
+</style>
+<script src="lang-redirect.js"></script>
+</head>
+<body>
+<div class="overlay"></div>
+<div class="vignette"></div>
+
+<nav>
+  <span class="brand"><a class="logo" href="index.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.html">home</a><span class="sep"> · </span><a href="packs.html">packs</a><span class="sep"> · </span><span class="here">Toki Pona</span></span>
+  <span class="links">
+    <a href="manual/index.html">walkthrough (beta)</a>
+    <a href="resources.html">resources</a>
+    <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-toki-pona">steam</a>
+  </span>
+  <span class="nav-mobile">
+    <a href="home.html">home</a>
+    <span class="r"><a href="resources.html">resources</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-toki-pona">steam</a></span>
+  </span>
+  <div class="lang-switch">
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Choose language">EN<span class="lang-caret">▾</span></button>
+    <ul class="lang-menu" hidden>
+      <li><a href="toki-pona.html" aria-current="true">English</a></li>
+      <li><a href="toki-pona.de.html">Deutsch</a></li>
+      <li><a href="toki-pona.es.html">Español</a></li>
+      <li><a href="toki-pona.ja.html">日本語</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <header class="hero">
+    <img class="hero-bg" src="toki-pona-hero.png" alt="A FlashBoss Toki Pona flashcard on the terminal screen: the target word, an example sentence with its translation, and the notes beneath.">
+    <div class="wrap">
+      <p class="kicker reveal">Base game · <b>included free</b></p>
+      <h1 class="reveal">toki pona<span class="cursor"></span></h1>
+      <p class="tagline reveal">A whole language. Around 140 words.</p>
+      <p class="sig reveal">Listen · Read · Repeat · Rate · Fight</p>
+      <p class="lede reveal">You begin with <b class="tp" lang="tok">toki!</b> — hello. Five hundred cards later there is nothing left of the language to meet. <b>Free</b>, inside the base game.</p>
+      <div class="actions reveal">
+        <a class="btn" href="wordlists.html?lang=Toki%20Pona">Word Lists</a>
+        <a class="btn" href="lessons.html?lang=Toki%20Pona">Lessons</a>
+        <a class="btn" href="https://flashboss-demo.pages.dev/">Try the demo</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- THE ARGUMENT -->
+  <section class="wrap">
+    <div class="frame">
+      <span class="tag">Toki Pona core design</span>
+      <h2>The whole language, not a slice</h2>
+      <p class="sub tp" lang="tok">toki pona — the language of good.</p>
+      <p class="body">Toki Pona is a constructed language built as an experiment in minimalism: around 140 words, and a question underneath them — how much can you say with almost nothing? There are no tenses to conjugate, no genders to memorise, no irregular anything. Spelling is phonetic: say what you see, and you have said it right.</p>
+      <p class="body">What is left is combination. <b class="tp" lang="tok">tomo tawa</b>, a moving structure, is a car. <b class="tp" lang="tok">ilo toki</b>, a talking tool, is a telephone. And because the vocabulary is so small, each word has to stretch: <b class="tp" lang="tok">pona</b> is good, simple, useful and kind at once. You stop reaching for the exact word and start deciding what you actually meant — which is the point of the whole exercise.</p>
+      <p class="body">Most languages are too big to finish. This one is not. FlashBoss teaches all of it in <b>500 cards</b> across <b>22 clusters</b> and <b>5 tiers</b>: 178 single-word entries — every content word and every grammar particle the course teaches, the book vocabulary plus the community words that have earned their place beside it — 250 compound phrases, and 72 sentences built from them.</p>
+
+      <div class="run reveal">
+        <div class="step"><div class="t">Tier 1</div><p>First words, people and pronouns, good and bad, wanting and coming.</p></div>
+        <div class="step"><div class="t">Tier 2</div><p>Work and origins, feelings and food, home and tools, giving and playing.</p></div>
+        <div class="step"><div class="t">Tier 3</div><p>Sleep and sunlight, ways and books, numbers and money, sound and community.</p></div>
+        <div class="step"><div class="t">Tier 4</div><p>Death and cycles, sky and air, body and darkness, heat and plants, fruit and family.</p></div>
+        <div class="step"><div class="t">Tier 5</div><p>Moons and clothing, colours and creatures, birds and beasts — and the bonus words.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIER TABLE -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">The whole pack, counted</span>
+      <h2>Five tiers, twenty-two clusters</h2>
+      <p class="sub">Each cluster ends in a boss fight. Beat it and those cards leave your daily deck for good.</p>
+      <div class="table-scroll">
+        <table class="tiers">
+          <thead>
+            <tr><th scope="col">Tier</th><th scope="col" class="n">Clusters</th><th scope="col" class="n">Cards</th><th scope="col">What you meet</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="t">Tier 1</td><td class="n">4</td><td class="n">86</td><td class="w">The first words, people and pronouns, good and bad, wanting and coming. Seven grammar lessons land here — you are making sentences on day one.</td></tr>
+            <tr><td class="t">Tier 2</td><td class="n">4</td><td class="n">91</td><td class="w">Work and origins, feelings and food, home and tools, giving and playing.</td></tr>
+            <tr><td class="t">Tier 3</td><td class="n">4</td><td class="n">91</td><td class="w">Sleep and sunlight, ways and books, numbers and money, sound and community.</td></tr>
+            <tr><td class="t">Tier 4</td><td class="n">5</td><td class="n">114</td><td class="w">Death and cycles, sky and air, body and darkness, heat and plants, fruit and family.</td></tr>
+            <tr><td class="t">Tier 5</td><td class="n">5</td><td class="n">118</td><td class="w">Moons and clothing, colours and creatures, birds and beasts, and two clusters of bonus words from beyond the book.</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><td class="t">Total</td><td class="n">22</td><td class="n">500</td><td class="w">One pack. The complete language.</td></tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SENTENCE LADDER -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Watch it grow up</span>
+      <h2>Progressively more challenging</h2>
+      <p class="sub">The example sentences increase in complexity tier by tier.</p>
+      <ol class="ladder">
+        <li class="reveal"><span class="ger tp" lang="tok">mi jan pona sina.</span><span class="en">I am your friend.</span></li>
+        <li class="reveal"><span class="ger tp" lang="tok">sina wile e pona la, sina o pali.</span><span class="en">If you want good things, you should work for them.</span></li>
+        <li class="reveal"><span class="ger tp" lang="tok">jan pi sona pona li toki e nasin pona tawa jan lili.</span><span class="en">The wise person teaches the good way to children.</span></li>
+        <li class="reveal"><span class="ger tp" lang="tok">jan sona li sona e ni: ona li sona ala e ale.</span><span class="en">A wise person knows this: they don't know everything.</span></li>
+        <li class="reveal"><span class="ger tp" lang="tok">telo li tawa anpa lon nasin ale.</span><span class="en">Water always flows downward, whatever the path.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- COMPOUNDING -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Build it from parts</span>
+      <h2>Two small words, one new one</h2>
+      <p class="sub">There are no genders to colour-code here — so FlashBoss shows you the thing that actually matters. A modifier always follows the word it modifies, and the pair means something neither half does alone. Two hundred and fifty cards in this pack are exactly that.</p>
+      <div class="legend">
+        <span><i class="lh"></i> head — what the thing is</span>
+        <span><i class="lm"></i> modifier — what kind of thing it is</span>
+      </div>
+      <div class="build">
+        <div class="row"><div class="k"><span class="build-word" lang="tok"><span class="h">tomo</span> <span class="m">tawa</span></span></div><div class="gloss"><b>car</b> — <i>tomo</i> (house, building, indoor space) + <i>tawa</i> (moving): a room that moves</div></div>
+        <div class="row"><div class="k"><span class="build-word" lang="tok"><span class="h">ilo</span> <span class="m">toki</span></span></div><div class="gloss"><b>telephone</b> — <i>ilo</i> (tool, device) + <i>toki</i> (to speak): a talking tool</div></div>
+        <div class="row"><div class="k"><span class="build-word" lang="tok"><span class="h">ilo</span> <span class="m">nanpa</span></span></div><div class="gloss"><b>computer</b> — <i>ilo</i> (tool) + <i>nanpa</i> (number): the number machine</div></div>
+        <div class="row"><div class="k"><span class="build-word" lang="tok"><span class="h">tomo</span> <span class="m">lipu</span></span></div><div class="gloss"><b>library</b> — <i>tomo</i> (building) + <i>lipu</i> (paper, book, document): the building of documents</div></div>
+        <div class="row"><div class="k"><span class="build-word" lang="tok"><span class="h">telo</span> <span class="m">nasa</span></span></div><div class="gloss"><b>alcohol</b> — <i>telo</i> (water, liquid) + <i>nasa</i> (strange, intoxicated): the liquid that makes you strange</div></div>
+        <div class="row"><div class="k"><span class="build-word" lang="tok"><span class="h">kasi</span> <span class="m">suli</span></span></div><div class="gloss"><b>tree</b> — <i>kasi</i> (plant, leaf) + <i>suli</i> (big, tall): the big plant</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONCEPT CARDS -->
+  <section class="wrap">
+    <div class="reveal">
+      <h2>A handful of words that carry the rest</h2>
+      <p class="sub">Four cards from the pack. Tap to flip.</p>
+      <div class="cards reveal">
+        <div class="card"><div class="art">the whole worldview</div><div class="word" lang="tok">pona</div>
+          <div class="ex tp" lang="tok">pona!</div>
+          <div class="trans">good, simple, useful, kind, friendly; goodness, simplicity. On its own it means &ldquo;great!&rdquo; or &ldquo;thanks!&rdquo; One of the most-used words in the language, and half of its name.</div><div class="hint">tap to flip</div></div>
+        <div class="card"><div class="art">particle</div><div class="word" lang="tok">pi</div>
+          <div class="ex tp" lang="tok">ni li jan pi toki pona.</div>
+          <div class="trans">Regroups the words after it into one bunch, so a later describing word sticks to the whole group rather than only the last word — <i>jan pi toki pona</i> is a person <i>of</i> Toki Pona. &ldquo;This is a Toki Pona speaker.&rdquo;</div><div class="hint">tap to flip</div></div>
+        <div class="card"><div class="art">particle</div><div class="word" lang="tok">la</div>
+          <div class="ex tp" lang="tok">mi la, mi pona.</div>
+          <div class="trans">Sets the scene: everything before <i>la</i> is the when, the if, or the as-for of what follows. The language's all-purpose context marker. &ldquo;As for me, I'm fine.&rdquo;</div><div class="hint">tap to flip</div></div>
+        <div class="card"><div class="art">community</div><div class="word" lang="tok">kijetesantakalu</div>
+          <div class="ex tp" lang="tok">kijetesantakalu li moku e kala.</div>
+          <div class="trans">A raccoon, or a related animal in the raccoon and weasel family. Coined as an April Fools' joke in 2009 — the longest word in a language built on shortness. It stuck, and it is now one of the community's best-loved words.</div><div class="hint">tap to flip</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LESSONS -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Grammar, on time</span>
+      <h2>Thirteen lessons, each at its own door</h2>
+      <p class="sub">No grammar chapter to wade through first. Every particle gets a lesson, and that lesson fires at the exact card where the particle first appears — so you read the rule the moment you need it, and never before.</p>
+      <ul class="lessons">
+        <li><span class="no">00</span>Welcome to Toki Pona<span class="fire">fires at <i lang="tok">toki</i> — card one</span></li>
+        <li><span class="no">01</span><i lang="tok">mi</i> / <i lang="tok">sina</i> need no &lsquo;to be&rsquo;<span class="fire">fires at <i lang="tok">mi pona</i></span></li>
+        <li><span class="no">02</span><i lang="tok">li</i> — the is/does link<span class="fire">fires at <i lang="tok">jan</i></span></li>
+        <li><span class="no">03</span><i lang="tok">o</i> — commands and calls<span class="fire">fires at <i lang="tok">o</i></span></li>
+        <li><span class="no">04</span><i lang="tok">pi</i> — grouping modifiers<span class="fire">fires at <i lang="tok">pi</i></span></li>
+        <li><span class="no">05</span>Modifiers come after<span class="fire">fires at <i lang="tok">jan pona</i></span></li>
+        <li><span class="no">06</span>Asking questions<span class="fire">fires at <i lang="tok">seme</i></span></li>
+        <li><span class="no">07</span>Preverbs tint the verb<span class="fire">fires at <i lang="tok">wile</i></span></li>
+        <li><span class="no">08</span><i lang="tok">la</i> — setting the scene<span class="fire">fires at <i lang="tok">ken la</i></span></li>
+        <li><span class="no">09</span><i lang="tok">e</i> — marking the object<span class="fire">fires in tier 2</span></li>
+        <li><span class="no">10</span>Numbers, few colours<span class="fire">fires at <i lang="tok">wan</i></span></li>
+        <li><span class="no">11</span>Six small prepositions<span class="fire">fires at <i lang="tok">poka</i></span></li>
+        <li><span class="no">12</span><i lang="tok">nasin</i>, <i lang="tok">pu</i> and <i lang="tok">ku</i><span class="fire">fires at <i lang="tok">ku</i></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- QUADRILINGUAL -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Four languages in</span>
+      <h2>You don't have to come through English</h2>
+      <p class="sub">Every card carries its translation, its example translation and its notes in all four languages — and so does every one of the 13 lesson pages, and the interface around them. Set your language once, and the whole pack follows.</p>
+      <div class="quad">
+        <div class="head">
+          <div class="w" lang="tok">toki</div>
+          <div class="ex" lang="tok">toki!</div>
+        </div>
+        <div class="row"><div class="lab">English</div><div class="val">to speak, talk, communicate, think; language, a conversation</div></div>
+        <div class="row"><div class="lab">Deutsch</div><div class="val" lang="de">sprechen, reden, denken; Sprache, Gespräch</div></div>
+        <div class="row"><div class="lab">日本語</div><div class="val cjk" lang="ja">話す、語る、考える；言語、会話</div></div>
+        <div class="row"><div class="lab">Español</div><div class="val" lang="es">hablar, conversar, comunicar, pensar; lengua, una conversación</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FREE -->
+  <section class="wrap">
+    <div class="reveal">
+      <h2>It costs nothing</h2>
+      <p class="sub">There is no Toki Pona DLC. There is nothing to add to a basket.</p>
+      <div class="free-band">
+        <span class="badge">Included free</span>
+        <p>Toki Pona ships <b>inside the base game</b>, alongside the other free packs. Install FlashBoss, choose it from the language list, and start. It has no prerequisite pack either — run it beside your main language, or on its own.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHOD -->
+  <section class="wrap method">
+    <div class="frame reveal">
+      <span class="tag">How it sticks</span>
+      <h2>Flashcards as an integrated system</h2>
+      <dl>
+        <dt>Fibonacci SRS</dt><dd>Rate each card 0–5. The better you know a word, the longer before it returns — spaced repetition on Fibonacci intervals.</dd>
+        <dt>Boss fights</dt><dd>Each of the 22 clusters is gated by a duel you can't win without confronting and overcoming your most difficult words.</dd>
+        <dt>Graduation</dt><dd>Beat a cluster and its cards leave your daily deck for good. The deck gets smaller as you learn.</dd>
+        <dt>Compounding</dt><dd>Half the pack is compounds. Every content word you learn multiplies, because the next 250 cards are built out of words you already have.</dd>
+        <dt>Lessons</dt><dd>Thirteen reference lessons, each triggered at the card where its particle first appears.</dd>
+        <dt>Text-to-speech</dt><dd>Cards can be heard. Toki Pona is spoken by the game's neural text-to-speech engine, piper1-gpl, using the pack's native Esperanto voice — chosen because that voice was trained on exactly the phonemes Toki Pona uses, so all fourteen of its sounds come out as themselves, with the penultimate stress the language expects. It is synthesised speech, not a recording of a speaker.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Questions</span>
+      <h2>Before you start</h2>
+      <div class="faq">
+        <div class="qa">
+          <p class="q">Is Toki Pona really free?</p>
+          <p class="a">Yes. It is one of the packs inside the base game — there is no Toki Pona DLC to buy, and no upgrade behind the later tiers. All 500 cards and all 13 lessons are there from the first launch.</p>
+        </div>
+        <div class="qa">
+          <p class="q">What exactly is in the pack?</p>
+          <p class="a">500 cards over 22 clusters and 5 tiers: 178 single-word entries — every content word and every grammar particle the course teaches — plus 250 compound phrases and 72 whole sentences. You can read the entire word list before you start, on the <a href="wordlists.html?lang=Toki%20Pona">word lists page</a>.</p>
+        </div>
+        <div class="qa">
+          <p class="q">Does it cover the community vocabulary as well as the book?</p>
+          <p class="a">It does. The spine is the book vocabulary, and tier 5 carries the later words that stuck — <i lang="tok">kijetesantakalu</i>, <i lang="tok">tonsi</i>, <i lang="tok">misikeke</i> — before closing on two clusters of bonus vocabulary from further out still: <i lang="tok">majuna</i> (old), <i lang="tok">linluwi</i> (a network), <i lang="tok">isipin</i> (to ponder), <i lang="tok">nimisin</i> (a new or joke word). The final lesson explains the difference between <i lang="tok">pu</i> and <i lang="tok">ku</i>, so you always know which room you are standing in.</p>
+        </div>
+        <div class="qa">
+          <p class="q">Do I need to know English to use it?</p>
+          <p class="a">No. Cards, lessons and the interface all run in English, German, Japanese and Spanish. Every one of the 500 cards carries its translation, its example translation and its notes in all four, and all 13 lessons exist in all four.</p>
+        </div>
+        <div class="qa">
+          <p class="q">Where does the grammar come in?</p>
+          <p class="a">At the door. There are 13 lessons and each one fires at the exact card where its particle first turns up — <i lang="tok">li</i> arrives with <i lang="tok">jan</i>, <i lang="tok">pi</i> with <i lang="tok">pi</i>, <i lang="tok">la</i> with <i lang="tok">ken la</i>. Eight of them land in tier 1. You can also read them all in advance on the <a href="lessons.html?lang=Toki%20Pona">lessons page</a>.</p>
+        </div>
+        <div class="qa">
+          <p class="q">Can I hear it?</p>
+          <p class="a">Yes — through text-to-speech, not a recorded voice. Toki Pona has fourteen sounds and the pack speaks them through FlashBoss's native Esperanto voice, whose phoneme set covers all fourteen exactly, with the penultimate stress the language expects.</p>
+        </div>
+        <div class="qa">
+          <p class="q">Do I have to finish another pack first?</p>
+          <p class="a">No. Toki Pona has no prerequisite. It is a standalone course, and small enough to sit alongside whatever you are already learning without taking the room.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final wrap reveal">
+    <h2>Take the whole language</h2>
+    <p>Toki Pona is included in the base game. Nothing to buy, nothing to unlock.</p>
+    <a class="btn hot" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-toki-pona">Get FlashBoss on Steam &rarr;</a>
+  </section>
+
+</main>
+
+<footer>
+  <p class="epi" lang="tok">&ldquo;jan sona li sona e ni: ona li sona ala e ale.&rdquo;<span class="tr" lang="en">A wise person knows this: they don't know everything.</span></p>
+  <span class="footer-links">
+    <a href="home.html">home</a>
+    <span class="div">·</span>
+    <a href="manual/">walkthrough (beta)</a>
+    <span class="div">·</span>
+    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-toki-pona">steam</a>
+  </span>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+document.querySelectorAll('.card').forEach(function(c){c.addEventListener('click',function(){c.classList.toggle('flipped');});});
+(function(){
+  var root=document.documentElement,ticking=false;
+  function update(){var max=document.body.scrollHeight-window.innerHeight;var p=max>0?Math.min(1,Math.max(0,window.scrollY/max)):0;root.style.setProperty('--mood',(p*p*(3-2*p)).toFixed(3));ticking=false;}
+  window.addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(update);ticking=true;}},{passive:true});update();
+})();
+// hero banner: if the image isn't in place yet, fall back to the flat hero ground
+(function(){
+  var img=document.querySelector('.hero-bg'); if(!img) return;
+  img.addEventListener('error', function(){ img.style.display='none'; });
+  if(img.complete && img.naturalWidth===0) img.style.display='none';
+})();
+</script>
+<script>
+// language dropdown: button toggles the menu; click-away / Esc closes it
+(function(){
+  var sw=document.querySelector('.lang-switch'); if(!sw) return;
+  var btn=sw.querySelector('.lang-toggle'), menu=sw.querySelector('.lang-menu');
+  function close(){ menu.hidden=true; btn.setAttribute('aria-expanded','false'); }
+  btn.addEventListener('click', function(e){ e.stopPropagation(); var willOpen=menu.hidden; menu.hidden=!willOpen; btn.setAttribute('aria-expanded', String(willOpen)); });
+  document.addEventListener('click', function(e){ if(!sw.contains(e.target)) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
+</script>
+</body>
+</html>
