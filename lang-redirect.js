@@ -31,6 +31,8 @@
     'wordlists':      ['de', 'es', 'ja'],
     'lessons':        ['de', 'es', 'ja'],
     'latin-roots':    ['de', 'es', 'ja'],
+    'french':         ['de', 'es', 'ja'],
+    'toki-pona':      ['de', 'es', 'ja'],
     'german-roots':   ['de', 'es'],
     'norman-roots':   ['de', 'es'],
     'german':         ['de', 'es'],

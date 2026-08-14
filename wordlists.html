@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Free Printable Word Lists — Italian, German, Spanish &amp; Esperanto Vocabulary | FlashBoss</title>
-<meta name="description" content="Free, printable vocabulary word lists for Italian, German, Spanish and Esperanto. The most useful 1,000–3,000 words per language, frequency-ranked and grouped by tier and theme, each with its English translation. Hide the translations to self-test, or print a cluster and cut your own flashcards.">
+<title>Free Printable Word Lists — Italian, German, Spanish, French, Esperanto &amp; Toki Pona Vocabulary | FlashBoss</title>
+<meta name="description" content="Free, printable vocabulary word lists for Italian, German, Spanish, French, Esperanto and Toki Pona. The most useful words in each language, frequency-ranked and grouped by tier and theme, each with its English translation. Hide the translations to self-test, or print a cluster and cut your own flashcards.">
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/wordlists.html">
 <link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/wordlists.de.html">
@@ -250,7 +250,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
   <div class="wrap">
     <h1>Word Lists</h1>
     <!-- Static, crawlable SEO copy: names the languages and what's offered. -->
-    <p>Free, printable vocabulary lists for every FlashBoss language — <b><a href="packs.html">English</a>, <a href="italian.html">Italian</a>, <a href="german.html">German</a>, <a href="spanish.html">Spanish</a>, and <a href="esperanto.html">Esperanto</a></b>. The most useful words in each language, frequency-ranked and grouped into thematic clusters across five tiers, each paired with its English translation. Hide the translations to test yourself, or print a cluster and cut your own flashcards. Free to use however you like. <a href="#" class="howlink" id="howBtn">How it works &rarr;</a></p>
+    <p>Free, printable vocabulary lists for every FlashBoss language — <b><a href="packs.html">English</a>, <a href="italian.html">Italian</a>, <a href="german.html">German</a>, <a href="spanish.html">Spanish</a>, <a href="french.html">French</a>, <a href="esperanto.html">Esperanto</a>, and <a href="toki-pona.html">Toki Pona</a></b>. The most useful words in each language, frequency-ranked and grouped into thematic clusters across five tiers, each paired with its English translation. Hide the translations to test yourself, or print a cluster and cut your own flashcards. Free to use however you like. <a href="#" class="howlink" id="howBtn">How it works &rarr;</a></p>
   </div>
 </header>
 
@@ -315,17 +315,18 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
    Uses the FINAL.json (relative-numbered) per-set files. Numbering
    is never displayed, so GLOBAL.json would also work unchanged.
    ============================================================ */
-const LANGS = ["Italian","German","Spanish","Esperanto","English"];
+const LANGS = ["Italian","German","Spanish","French","Esperanto","Toki Pona","English"];
 const SETS  = ["Core","Pareto 1","Pareto 2"];
+const CORE_ONLY = ["Toki Pona", "French"];   // complete in one Core set — no Pareto extensions published
 /* English ships as named packs, each in its own folder, with a single CORE_FINAL.json */
-const ENGLISH_PACKS = [["Adept","ad"],["Advance","adv"],["German Roots","gr"],["Norman Roots","nr"],["Latin Roots","lr"]];
-function setsFor(lang){ return lang==='English' ? ENGLISH_PACKS.map(p=>p[0]) : SETS; }
+const ENGLISH_PACKS = [["Adept","ad"],["Advance","adv"],["German Roots","gr"],["Greek Roots","gkr"],["Norman Roots","nr"],["Latin Roots","lr"]];
+function setsFor(lang){ return lang==='English' ? ENGLISH_PACKS.map(p=>p[0]) : (CORE_ONLY.includes(lang) ? ["Core"] : SETS); }
 function dataUrl(lang, set){
   if(lang==='English'){
     const code=(ENGLISH_PACKS.find(p=>p[0]===set)||[])[1] || set.toLowerCase();
     return `data/english/${code}/CORE_FINAL.json`;
   }
-  const L = lang.toLowerCase();
+  const L = lang.toLowerCase().replace(/\s+/g,'_');    // "Toki Pona" -> data/toki_pona/
   const S = set.toUpperCase().replace(/\s+/g,'');     // "Pareto 1" -> "PARETO1"
   return `data/${L}/${S}_FINAL.json`;
 }
