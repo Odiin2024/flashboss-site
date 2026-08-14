@@ -1,401 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Press Kit - FlashBoss</title>
-    <meta name="description" content="FlashBoss press kit. Screenshots, logos, copy templates, and promotional assets for affiliates and media.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Press Kit — FlashBoss</title>
+<meta name="description" content="FlashBoss press kit — factsheet, catalogue, copy templates, screenshots and contact. A terminal vocabulary trainer with spaced repetition and boss fights, by solo developer Odiin.">
 
-    <link rel="icon" type="image/png" href="icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@300;400;500;600&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta property="og:type" content="article">
+<meta property="og:title" content="FlashBoss — Press Kit">
+<meta property="og:description" content="Factsheet, catalogue, copy templates, screenshots and contact for FlashBoss — spaced repetition with boss fights.">
+<meta property="og:image" content="https://odiin2024.github.io/flashboss-site/website_image.png">
+<meta property="og:url" content="https://odiin2024.github.io/flashboss-site/press.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FlashBoss — Press Kit">
+<meta name="twitter:description" content="Factsheet, catalogue, copy templates, screenshots and contact for FlashBoss — spaced repetition with boss fights.">
+<meta name="twitter:image" content="https://odiin2024.github.io/flashboss-site/website_image.png">
 
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: url('manual/images/fog.jpeg') center center / cover no-repeat fixed;
-            background-color: #0a0a19;
-        }
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   FlashBoss — Press kit (press.html).
+   House terminal standard, same skin as about.html: home.png hero
+   strip, neutral amber terminal body, spec tables. A factsheet for
+   press and affiliates — every count here is checked against the
+   shipped pack data, not against marketing copy.
+   ============================================================ */
+:root{
+  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
+  --accent:#e0a93f; --green:#62d38a; --blue:#7ec8ff; --rose:#ff8fb0;
+  --line:#3a3120; --rule:#2a2417;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--mono); background:var(--bg); color:var(--ink); line-height:1.7; -webkit-font-smoothing:antialiased;}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.04) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.wrap{max-width:840px; margin:0 auto; padding:0 24px;}
+a{color:var(--accent);}
 
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(255, 255, 255, 0.1);
-            pointer-events: none;
-            z-index: 0;
-            color: #f0e6d3;
-            min-height: 100vh;
-            line-height: 1.6;
-        }
+nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line); position:relative; z-index:3; background:var(--bg);}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--dim); margin-right:auto;}
+nav .brand a, nav .brand .sep{color:var(--dim); text-decoration:none;}
+nav .brand a:hover{color:var(--ink);}
+nav .brand .here{font-weight:800; color:var(--ink);}
+nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--ink);}
+nav .brand .logo:hover{color:var(--accent);}
+nav .brand .pipe{color:var(--dim); margin:0 11px;}
+.nav-mobile{display:none;}
+.nav-mobile a{color:inherit; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.08em; opacity:.85;}
+.nav-mobile a:hover{opacity:1; color:var(--accent);}
+@media(max-width:640px){ nav .brand, nav .links{display:none;} .nav-mobile{display:flex; flex:1; justify-content:space-between; align-items:center;} .nav-mobile .r{display:flex; gap:18px;} }
+nav .links a{color:var(--ink); text-decoration:none; opacity:.7; margin-left:22px;}
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+nav .links a.steam{font-weight:800; opacity:1;}
 
-        .container {
-            position: relative;
-            z-index: 1;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem 1.5rem 4rem;
-        }
+/* HERO — home.png strip (matches about / resources / packs) */
+.hero{position:relative; padding:78px 0 60px; overflow:hidden;}
+.hero::before{content:""; position:absolute; inset:0; z-index:0; background:#0c0a06 url('home.png') center 30% / cover no-repeat;}
+.hero::after{content:""; position:absolute; inset:0; z-index:1; background:linear-gradient(180deg, rgba(16,13,8,.52) 0%, rgba(16,13,8,.74) 55%, var(--bg) 100%);}
+.hero .wrap{position:relative; z-index:2;}
+.hero .crumb{font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--accent);}
+.hero h1{font-size:clamp(34px,7vw,60px); margin:13px 0 12px; font-weight:800; letter-spacing:-.01em;}
+.hero .subtitle{max-width:62ch; color:var(--dim); font-size:15px;}
+.hero .stamp{margin-top:14px; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--faint);}
 
-        /* Header */
-        .header {
-            text-align: center;
-            margin-bottom: 3rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
+/* TOC */
+.toc{position:relative; border:1px solid var(--line); border-left:2px solid var(--accent); background:var(--panel); padding:20px 24px 18px; margin:42px 0 12px;}
+.toc-title{position:absolute; top:0; left:16px; transform:translateY(-50%); background:var(--bg); padding:0 9px;
+  font-size:11px; letter-spacing:.2em; text-transform:uppercase; font-weight:700; color:var(--faint);}
+.toc ol{list-style:none; counter-reset:toc; columns:2; column-gap:60px;}
+@media(max-width:560px){.toc ol{columns:1;}}
+.toc li{counter-increment:toc; padding:3px 0; font-size:13.5px;}
+.toc li::before{content:counter(toc) ".  "; color:var(--faint);}
+.toc a{color:var(--dim); text-decoration:none;}
+.toc a:hover{color:var(--accent);}
 
-        .header h1 {
-            font-family: 'Merriweather', serif;
-            font-size: 2.5rem;
-            font-weight: 900;
-            color: #5555FF;
-            margin-bottom: 0.5rem;
-        }
+main{padding:18px 0 0; counter-reset:sec;}
+section{padding:30px 0; border-top:1px solid var(--rule);}
+section:first-child{border-top:0;}
+h2{counter-increment:sec; font-size:clamp(22px,4.5vw,30px); font-weight:800; letter-spacing:-.01em; color:var(--ink); margin-bottom:14px;}
+h2::before{content:counter(sec) ".  "; color:var(--accent); font-weight:800;}
+h3{font-size:15px; font-weight:700; color:var(--accent); margin:22px 0 6px; letter-spacing:.02em;}
+p{margin-bottom:14px; color:color-mix(in oklab, var(--ink), var(--dim) 30%); font-size:15px;}
+p:last-child{margin-bottom:0;}
+em{color:var(--ink); font-style:italic;}
+strong{color:var(--ink); font-weight:700;}
+code{font-family:var(--mono); font-size:.88em; color:var(--blue); background:rgba(126,200,255,.08); padding:1px 6px; border-radius:2px;}
+ul{margin:0 0 14px 0; padding-left:0; list-style:none;}
+ul li{position:relative; padding-left:20px; margin-bottom:6px; color:color-mix(in oklab, var(--ink), var(--dim) 30%); font-size:15px;}
+ul li::before{content:"·"; position:absolute; left:4px; color:var(--accent); font-weight:700;}
 
-        .header .tagline {
-            font-size: 1.1rem;
-            color: rgba(255, 255, 255, 0.7);
-        }
+/* factsheet grid */
+.facts{display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--line); border:1px solid var(--line); margin:16px 0 8px;}
+@media(max-width:600px){.facts{grid-template-columns:1fr;}}
+.fact{background:var(--panel); padding:14px 16px;}
+.fact .k{font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--faint); font-weight:700;}
+.fact .v{font-size:14px; color:var(--ink); font-weight:700; margin-top:3px; line-height:1.5;}
+.fact .v span{display:block; font-weight:400; font-size:12.5px; color:var(--dim);}
 
-        /* Sections */
-        .section {
-            margin-bottom: 2.5rem;
-        }
+/* spec tables */
+.spec-wrap{overflow-x:auto; margin:14px 0;}
+.spec-table{width:100%; border-collapse:collapse; font-size:13.5px; min-width:460px;}
+.spec-table th{text-align:left; font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--faint); font-weight:700; padding:9px 14px; border-bottom:1px solid var(--line);}
+.spec-table td{padding:10px 14px; border-bottom:1px solid var(--rule); color:var(--dim); vertical-align:top;}
+.spec-table td:first-child{white-space:nowrap; color:var(--ink);}
+.spec-table td.num{white-space:nowrap; text-align:right; color:var(--ink);}
+.spec-table tr:last-child td{border-bottom:0;}
+.spec-table .free{color:var(--green); font-weight:700;}
+.spec-table .new{color:var(--rose); font-weight:700;}
 
-        .section h2 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: #7ec8ff;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid rgba(126, 200, 255, 0.3);
-        }
+/* copy templates */
+.copy{border:1px solid var(--line); border-left:2px solid var(--accent); background:var(--panel); padding:16px 18px; margin:14px 0;}
+.copy .lbl{font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--faint); font-weight:700; margin-bottom:7px;}
+.copy p{margin:0; font-size:14px; color:var(--ink);}
+.copy p + p{margin-top:10px;}
 
-        .section p {
-            margin-bottom: 1rem;
-            color: rgba(255, 255, 255, 0.9);
-        }
+/* screenshots */
+.shots{display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin:16px 0;}
+@media(max-width:600px){.shots{grid-template-columns:1fr;}}
+.shots figure{border:1px solid var(--line); background:var(--panel); margin:0;}
+.shots img{display:block; width:100%; height:auto;}
+.shots figcaption{font-size:12.5px; color:var(--faint); font-style:italic; padding:11px 14px; border-top:1px solid var(--rule);}
 
-        /* Quick facts */
-        .facts-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-            margin: 1rem 0;
-        }
+/* CTA buttons */
+.cta-row{display:flex; gap:14px; flex-wrap:wrap; margin:22px 0 6px;}
+.btn{display:inline-block; font-size:14px; font-weight:700; letter-spacing:.06em; text-decoration:none; padding:13px 24px; transition:transform .12s ease, box-shadow .12s ease;}
+.btn.manual{color:var(--ink); background:transparent; border:1px solid var(--line);}
+.btn.manual:hover{border-color:var(--accent); color:var(--accent);}
+.btn.steam{color:#14110a; background:var(--accent); border:1px solid var(--accent); box-shadow:5px 5px 0 color-mix(in oklab, var(--accent), #000 60%);}
+.btn.steam:hover{transform:translate(-2px,-2px); box-shadow:7px 7px 0 color-mix(in oklab, var(--accent), #000 60%);}
 
-        .fact {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 6px;
-            padding: 1rem;
-        }
+/* FAQ */
+.qa{margin-bottom:18px;}
+.qa .q{font-weight:700; color:var(--accent); font-size:14.5px; margin-bottom:4px;}
+.qa .a{margin:0; font-size:14.5px;}
 
-        .fact .label {
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.5);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: 0.25rem;
-        }
-
-        .fact .value {
-            font-weight: 600;
-            color: #ff66ff;
-        }
-
-        /* Copy templates */
-        .copy-box {
-            background: rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 6px;
-            padding: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        .copy-box .copy-label {
-            font-size: 0.8rem;
-            color: #7ec8ff;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .copy-box .copy-text {
-            color: rgba(255, 255, 255, 0.9);
-            font-size: 0.95rem;
-        }
-
-        /* Screenshot grid */
-        .screenshot-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-            margin: 1rem 0;
-        }
-
-        .screenshot-item {
-            background: rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 6px;
-            overflow: hidden;
-        }
-
-        .screenshot-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .screenshot-item .caption {
-            padding: 0.75rem;
-            font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.7);
-            text-align: center;
-        }
-
-        /* Download button */
-        .download-btn {
-            display: inline-block;
-            background: rgba(126, 200, 255, 0.2);
-            border: 1px solid rgba(126, 200, 255, 0.5);
-            border-radius: 4px;
-            padding: 0.75rem 1.5rem;
-            color: #7ec8ff;
-            text-decoration: none;
-            font-weight: 500;
-            transition: background 0.2s, border-color 0.2s;
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .download-btn:hover {
-            background: rgba(126, 200, 255, 0.3);
-            border-color: rgba(126, 200, 255, 0.7);
-            color: #ffffff;
-        }
-
-        /* FAQ */
-        .faq-item {
-            margin-bottom: 1.5rem;
-        }
-
-        .faq-item .question {
-            font-weight: 600;
-            color: #ff66ff;
-            margin-bottom: 0.5rem;
-        }
-
-        .faq-item .answer {
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        /* Links */
-        a {
-            color: #7ec8ff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: #ffffff;
-        }
-
-        /* Footer */
-        .footer {
-            margin-top: 3rem;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            text-align: center;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-        }
-
-        .footer-links a {
-            font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.6);
-        }
-
-        .footer-links a:hover {
-            color: #ffffff;
-        }
-
-        /* Responsive */
-        @media (min-width: 768px) {
-            .header h1 {
-                font-size: 3rem;
-            }
-        }
-
-        @media (max-width: 500px) {
-            .facts-grid,
-            .screenshot-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+footer{border-top:1px solid var(--line); padding:28px 24px; margin-top:40px; text-align:center; font-size:12px; color:var(--faint); letter-spacing:.04em;}
+footer .footer-links{display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap;}
+footer .footer-links a{color:var(--dim); text-decoration:none;} footer .footer-links a:hover{color:var(--ink);}
+footer .footer-links .div{opacity:.4;}
+footer .made{margin-top:12px; opacity:.8;}
+</style>
+<script src="lang-redirect.js"></script>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <h1>Press Kit</h1>
-            <p class="tagline">Everything you need to cover FlashBoss</p>
-        </header>
+<div class="overlay"></div>
 
-        <section class="section">
-            <h2>Quick Facts</h2>
-            <div class="facts-grid">
-                <div class="fact">
-                    <p class="label">Release Date</p>
-                    <p class="value">February 17, 2026</p>
-                </div>
-                <div class="fact">
-                    <p class="label">Price</p>
-                    <p class="value">€4.99 (base game)</p>
-                </div>
-                <div class="fact">
-                    <p class="label">Platform</p>
-                    <p class="value">Steam (Win/Mac/Linux)</p>
-                </div>
-                <div class="fact">
-                    <p class="label">Developer</p>
-                    <p class="value">Solo (CELTA-certified teacher)</p>
-                </div>
-                <div class="fact">
-                    <p class="label">Genre</p>
-                    <p class="value">Educational / RPG</p>
-                </div>
-                <div class="fact">
-                    <p class="label">Languages</p>
-                    <p class="value">German, Esperanto (more coming)</p>
-                </div>
-            </div>
-        </section>
+<nav>
+  <span class="brand"><a class="logo" href="index.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.html">home</a><span class="sep"> · </span><span class="here">press</span></span>
+  <span class="links">
+    <a href="about.html">how it teaches</a>
+    <a href="packs.html">packs</a>
+    <a href="resources.html">resources</a>
+    <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-press">steam</a>
+  </span>
+  <span class="nav-mobile">
+    <a href="home.html">home</a>
+    <span class="r"><a href="packs.html">packs</a><a href="resources.html">resources</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-press">steam</a></span>
+  </span>
+</nav>
 
-        <section class="section">
-            <h2>Copy Templates</h2>
-            <p>Feel free to use or adapt these for your content.</p>
+<header class="hero">
+  <div class="wrap">
+    <div class="crumb">Press &amp; Media Kit</div>
+    <h1>Press Kit</h1>
+    <p class="subtitle">Factsheet, catalogue, copy you are free to lift, screenshots, and who to email. Everything here is checked against the shipped pack data — please do use it as written.</p>
+    <p class="stamp">Updated 14 August 2026</p>
+  </div>
+</header>
 
-            <div class="copy-box">
-                <p class="copy-label">Hook (one-liner)</p>
-                <p class="copy-text">Learn German through boss fights - spaced repetition meets RPG.</p>
-            </div>
+<div class="wrap">
 
-            <div class="copy-box">
-                <p class="copy-label">Value Proposition</p>
-                <p class="copy-text">FREE German Core pack ($4.99 value) for early buyers. Full ownership, not a subscription.</p>
-            </div>
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-title">Contents</div>
+    <ol>
+      <li><a href="#facts">Factsheet</a></li>
+      <li><a href="#what">What FlashBoss is</a></li>
+      <li><a href="#catalogue">The catalogue</a></li>
+      <li><a href="#interface">Interface and audio</a></li>
+      <li><a href="#copy">Copy templates</a></li>
+      <li><a href="#shots">Screenshots and assets</a></li>
+      <li><a href="#faq">Press and affiliate FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
 
-            <div class="copy-box">
-                <p class="copy-label">Target Audience</p>
-                <p class="copy-text">Language learners tired of boring flashcards. Productivity enthusiasts who love spaced repetition. Retro gaming fans who appreciate terminal aesthetics.</p>
-            </div>
+  <main>
 
-            <div class="copy-box">
-                <p class="copy-label">Key Differentiator</p>
-                <p class="copy-text">Terminal-based, distraction-free, works on potato computers. Built by a CELTA-certified language teacher, not a tech company. Pedagogical rigor meets genuine gamification.</p>
-            </div>
+    <section id="facts">
+      <h2>Factsheet</h2>
+      <div class="facts">
+        <div class="fact">
+          <div class="k">Title</div>
+          <div class="v">FlashBoss</div>
+        </div>
+        <div class="fact">
+          <div class="k">Developer &amp; publisher</div>
+          <div class="v">Odiin<span>Solo developer, based in Germany</span></div>
+        </div>
+        <div class="fact">
+          <div class="k">Released</div>
+          <div class="v">17 February 2026<span>Updating continuously; new releases on Thursdays</span></div>
+        </div>
+        <div class="fact">
+          <div class="k">Platforms</div>
+          <div class="v">Windows · macOS · Linux<span>Steam app 4134440</span></div>
+        </div>
+        <div class="fact">
+          <div class="k">Genre</div>
+          <div class="v">Educational — vocabulary trainer<span>Terminal application with RPG progression</span></div>
+        </div>
+        <div class="fact">
+          <div class="k">Interface languages</div>
+          <div class="v">English · German · Japanese · Spanish<span>Ctrl+L switches instantly, on any screen</span></div>
+        </div>
+        <div class="fact">
+          <div class="k">Released catalogue</div>
+          <div class="v">20 packs · 18,500 cards<span>5 free in the base game, 15 paid DLC</span></div>
+        </div>
+        <div class="fact">
+          <div class="k">Model</div>
+          <div class="v">One-time purchase<span>No subscription, no accounts. Current pricing on Steam.</span></div>
+        </div>
+      </div>
+      <div class="cta-row">
+        <a class="btn steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-press">Steam store page &rarr;</a>
+        <a class="btn manual" href="https://flashboss-demo.pages.dev/">Playable boss-fight demo</a>
+      </div>
+    </section>
 
-            <div class="copy-box">
-                <p class="copy-label">Pricing Breakdown</p>
-                <p class="copy-text">€4.99 base game (includes Esperanto Core + FREE German Core at launch). €4.99 per additional language pack (1,000 words each).</p>
-            </div>
-        </section>
+    <section id="what">
+      <h2>What FlashBoss is</h2>
+      <p>FlashBoss is a desktop terminal application for vocabulary acquisition. A spaced-repetition scheduler deals cards; each card carries a target word, a constructed example sentence built only from vocabulary already introduced, translations, optional study notes, and text-to-speech on the target-language fields. Cards are grouped into themed clusters, and no cluster leaves rotation until it is beaten in a boss fight.</p>
+      <p>The boss fight is the graduation mechanic and the part worth filming. Learner and boss share one linear track: a correct answer advances the learner a step and shoves the boss a step toward the far edge, a wrong answer slides the learner two steps back. Positions 1 and 2 deal the cluster's easiest cards; positions 3 and 4 deal its hardest — so a cluster cannot be conquered until its weakest words are answered.</p>
+      <p>Six masters set the daily pace, from 8 cards a day to 34 — roughly five to thirty minutes. Ratings move cards along a Fibonacci interval sequence, and a cluster becomes eligible for its fight once 80% of its cards reach the 13-day interval. The full mechanical reference, with citations, is on the <a href="about.html">How FlashBoss Teaches</a> page.</p>
+    </section>
 
-        <section class="section">
-            <h2>Screenshots</h2>
-            <p>Right-click to save, or use the download link below for full resolution.</p>
+    <section id="catalogue">
+      <h2>The catalogue</h2>
+      <p>Twenty packs are released and playable today. Card counts below are the shipped totals.</p>
 
-            <div class="screenshot-grid">
-                <div class="screenshot-item">
-                    <img src="manual/images/bossfight/19_screenshot.png" alt="Know Your Enemy - Cluster Selection">
-                    <p class="caption">Cluster Selection</p>
-                </div>
-                <div class="screenshot-item">
-                    <img src="manual/images/bossfight/25_screenshot.png" alt="Boss Fight in Action">
-                    <p class="caption">Boss Fight</p>
-                </div>
-                <div class="screenshot-item">
-                    <img src="manual/images/bossfight/32_screenshot.png" alt="Boss Defeated Victory Screen">
-                    <p class="caption">Victory!</p>
-                </div>
-                <div class="screenshot-item">
-                    <img src="manual/screenshots/common/create-master1.png" alt="Master Selection">
-                    <p class="caption">Choose Your Master</p>
-                </div>
-            </div>
+      <h3>Free in the base game</h3>
+      <div class="spec-wrap">
+      <table class="spec-table">
+        <thead><tr><th>Pack</th><th>Cards</th><th>What it teaches</th></tr></thead>
+        <tbody>
+          <tr><td>English Advance</td><td class="num">500</td><td>The practical English of adult life — forms, letters, officialdom, the small print.</td></tr>
+          <tr><td>English Adept</td><td class="num">1,000</td><td>Precision English, from below eighth-grade reading level up to roughly C1.</td></tr>
+          <tr><td>German Core</td><td class="num">1,000</td><td>The first 1,000 words of German, with a cultural integration section.</td></tr>
+          <tr><td>Esperanto Core</td><td class="num">1,000</td><td>The first 1,000 words of Esperanto.</td></tr>
+          <tr><td>Toki Pona</td><td class="num">500</td><td>The complete course in the world's smallest language.</td></tr>
+        </tbody>
+      </table>
+      </div>
 
-            <p style="margin-top: 1rem; font-size: 0.9rem; color: rgba(255, 255, 255, 0.6);">
-                Need the full boss fight sequence (15 frames) or additional screenshots? Email <a href="mailto:flashbosscontact@gmail.com">flashbosscontact@gmail.com</a>
-            </p>
-        </section>
+      <h3>The Roots series — English vocabulary through etymology</h3>
+      <p>Paid DLC, taught entirely in English, five tiers each. Cards give a definition and worked examples rather than a translation.</p>
+      <div class="spec-wrap">
+      <table class="spec-table">
+        <thead><tr><th>Pack</th><th>Cards</th><th>What it teaches</th></tr></thead>
+        <tbody>
+          <tr><td>German Roots</td><td class="num">1,000</td><td>The Germanic backbone of everyday English.</td></tr>
+          <tr><td>Norman Roots</td><td class="num">1,000</td><td>The French that arrived in 1066 and stayed.</td></tr>
+          <tr><td>Latin Roots</td><td class="num">500</td><td>The classical and scientific layer, assembled from its parts.</td></tr>
+          <tr><td><a href="https://store.steampowered.com/app/4992480/FlashBoss__Greek_Roots/?utm_source=website-press">Greek Roots</a> <span class="new">new</span></td><td class="num">1,000</td><td>The vocabulary of science, medicine and philosophy. Released 6 August 2026.</td></tr>
+        </tbody>
+      </table>
+      </div>
 
-        <section class="section">
-            <h2>Logo & Assets</h2>
-            <p>
-                <a href="icon.png" class="download-btn">Icon (PNG)</a>
-            </p>
-            <p style="margin-top: 1rem; font-size: 0.9rem; color: rgba(255, 255, 255, 0.6);">
-                Need different sizes or formats? Email <a href="mailto:flashbosscontact@gmail.com">flashbosscontact@gmail.com</a>
-            </p>
-        </section>
+      <h3>Foreign-language courses</h3>
+      <p>Each full course runs Core → Pareto 1 → Pareto 2, cumulatively: 3,000 cards across tiers 1–15, an A1–C1 arc. Example sentences in each pack are built from the vocabulary of the packs before it.</p>
+      <div class="spec-wrap">
+      <table class="spec-table">
+        <thead><tr><th>Course</th><th>Cards</th><th>Released packs</th></tr></thead>
+        <tbody>
+          <tr><td><a href="german.html">German</a></td><td class="num">3,000</td><td><span class="free">Core free</span> · Pareto 1 · Pareto 2</td></tr>
+          <tr><td><a href="spanish.html">Spanish</a></td><td class="num">3,000</td><td>Core · Pareto 1 · Pareto 2 — Latin American</td></tr>
+          <tr><td><a href="italian.html">Italian</a></td><td class="num">3,000</td><td>Core · Pareto 1 · Pareto 2</td></tr>
+          <tr><td><a href="esperanto.html">Esperanto</a></td><td class="num">3,000</td><td><span class="free">Core free</span> · Pareto 1 · Pareto 2</td></tr>
+          <tr><td><a href="https://store.steampowered.com/app/4475080/FlashBoss__French_Core/?utm_source=website-press">French</a> <span class="new">new</span></td><td class="num">1,000</td><td>Core, released 13 August 2026 — expansions to follow</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>French Core ships reading in all four interface languages from day one. Latin and Ancient Greek reading courses, an English Core course written for German, Japanese and Spanish speakers, and dialect voice packs are in production; the <a href="in-development.html">In Development</a> page tracks what is coming.</p>
+    </section>
 
-        <section class="section">
-            <h2>Affiliate FAQ</h2>
+    <section id="interface">
+      <h2>Interface and audio</h2>
+      <h3>Four interface languages</h3>
+      <p>The whole game — menus, lessons, boss fights, achievements, the masters' own dialogue — runs in <strong>English, German, Japanese and Spanish</strong>. The first launch asks which; <code>Ctrl+L</code> switches at any moment, from any screen. Interface language and card language are chosen independently, so the German course can be studied through Japanese while the menus stay in Spanish.</p>
+      <p>English text is American by default, with a per-hero British spelling layer covering cards, lessons, cluster names and answer checking.</p>
 
-            <div class="faq-item">
-                <p class="question">Can I get a review key?</p>
-                <p class="answer">Yes. Email <a href="mailto:flashbosscontact@gmail.com">flashbosscontact@gmail.com</a> with a link to your channel/platform.</p>
-            </div>
+      <h3>Text-to-speech</h3>
+      <p>Audio is generated by the neural text-to-speech engine the game ships with (piper1-gpl, GPL v3; the corresponding source is included with the game). It is not recorded human voice, and it is not locked to the cards: <code>Ctrl+P</code> opens a pronounce window that will speak or save any text you paste into it, in any installed language.</p>
 
-            <div class="faq-item">
-                <p class="question">What's the commission rate?</p>
-                <p class="answer">$1.00 per sale, adjusted monthly based on total refund rate. See <a href="affiliate-metrics.html">live metrics</a>.</p>
-            </div>
+      <h3>Accessibility — please report these accurately</h3>
+      <ul>
+        <li>Type size is not adjustable in-game; it follows the terminal.</li>
+        <li>The game does not support screen readers.</li>
+        <li>The pronounce window is mouse-driven.</li>
+        <li>Windows 10 needs Windows Terminal (a free Microsoft Store download). A numeric keypad is recommended on every platform.</li>
+      </ul>
+    </section>
 
-            <div class="faq-item">
-                <p class="question">Who's the target audience?</p>
-                <p class="answer">Language learners ages 16-45, productivity enthusiasts, Anki users looking for gamification, retro/terminal aesthetic fans.</p>
-            </div>
+    <section id="copy">
+      <h2>Copy templates</h2>
+      <p>Lift these verbatim or adapt them — no attribution needed.</p>
 
-            <div class="faq-item">
-                <p class="question">What makes FlashBoss different?</p>
-                <p class="answer">Gamified spaced repetition with real pedagogical rigor. Built by a language teacher, not a tech company. Terminal-based means zero distractions and runs on anything.</p>
-            </div>
+      <div class="copy">
+        <div class="lbl">One-liner</div>
+        <p>Spaced repetition with boss fights — a vocabulary course that fights back.</p>
+      </div>
 
-            <div class="faq-item">
-                <p class="question">Is there a trailer?</p>
-                <p class="answer">Yes, on the <a href="https://store.steampowered.com/app/4134440/FlashBoss/">Steam page</a>. Contact us if you need the raw file.</p>
-            </div>
-        </section>
+      <div class="copy">
+        <div class="lbl">Short description (approx. 40 words)</div>
+        <p>FlashBoss is a terminal vocabulary trainer: spaced repetition, example sentences built only from words you already know, text-to-speech on every target word, and a boss fight at the end of every cluster. Five packs ship free. One-time purchase, no subscription.</p>
+      </div>
 
-        <section class="section affiliate-cta">
-            <h2>Join the Affiliate Program</h2>
-            <p>Earn commission on every sale you refer. Transparent tracking, monthly payouts.</p>
-            <a href="affiliate.html" class="download-btn" style="margin-top: 0.5rem;">Learn More →</a>
-        </section>
+      <div class="copy">
+        <div class="lbl">Boilerplate (approx. 90 words)</div>
+        <p>FlashBoss is a desktop vocabulary trainer that hides a serious spaced-repetition course inside RPG armour. Cards arrive in themed clusters, each target word set in a sentence built only from vocabulary already taught, spoken aloud by the game's neural text-to-speech engine. No cluster leaves rotation until you beat its boss — and the fight deals your weakest words first. Twenty packs are out, from full 3,000-word courses in German, Spanish, Italian, Esperanto and French to English etymology through its Germanic, Norman, Latin and Greek roots. It runs in English, German, Japanese and Spanish.</p>
+      </div>
 
-        <footer class="footer">
-            <div class="footer-links">
-                <a href="about.html">About</a>
-                <a href="affiliate.html">Affiliate Program</a>
-                <a href="home.html">Hub</a>
-                <a href="https://store.steampowered.com/app/4134440/FlashBoss/">Steam</a>
-            </div>
-        </footer>
-    </div>
+      <div class="copy">
+        <div class="lbl">Developer boilerplate</div>
+        <p>FlashBoss is made by Odiin, a solo developer based in Germany, who built it out of his own frustration at knowing thousands of German words he could not use with confidence. It runs on Windows, macOS and Linux via Steam.</p>
+      </div>
+
+      <div class="copy">
+        <div class="lbl">Who it is for</div>
+        <p>Self-directed language learners; Anki users who want structure, a syllabus and a reason to come back; readers building English vocabulary for study or work; and anyone who likes a terminal and a low-distraction study tool that runs on almost any machine.</p>
+      </div>
+
+      <div class="copy">
+        <div class="lbl">What makes it different</div>
+        <p>Every example sentence is constructed, not scraped, so the target word is usually the only unknown on the card. Progress is gated: a cluster is conquered by defeating a boss with your hardest cards, not by clicking through a queue. And the whole thing runs in four languages, so the course does not have to be studied through English.</p>
+      </div>
+    </section>
+
+    <section id="shots">
+      <h2>Screenshots and assets</h2>
+      <p>Right-click to save. These are the current build; for the full boss-fight sequence, localized screens, or anything at a different size or format, email and ask.</p>
+
+      <div class="shots">
+        <figure>
+          <img src="manual/images/bossfight/19_screenshot.png" alt="The Know Your Enemy screen: eight clusters listed with mastery percentages, four marked ready to fight.">
+          <figcaption>Know Your Enemy — cluster selection and readiness.</figcaption>
+        </figure>
+        <figure>
+          <img src="manual/images/bossfight/25_screenshot.png" alt="A German boss fight: match the translation to the target word, eight options on the number keys, with the arena track below.">
+          <figcaption>Boss fight — eight options, one track, two steps back for a mistake.</figcaption>
+        </figure>
+        <figure>
+          <img src="manual/images/bossfight/32_screenshot.png" alt="Victory screen: boss defeated, cluster conquered, with the eight most challenging words listed.">
+          <figcaption>Cluster conquered — the cards leave rotation.</figcaption>
+        </figure>
+        <figure>
+          <img src="manual/screenshots/common/create-master1.png" alt="Choose Your Master Guide: six masters listed by difficulty, from Luna at 8 cards a day to Aquila at 34.">
+          <figcaption>Choosing a master — 8 to 34 cards a day.</figcaption>
+        </figure>
+        <figure>
+          <img src="ehefrau.png" alt="A FlashBoss card for the German word die Ehefrau: colour-coded target word with mastery stars, example sentence and translation, and notes.">
+          <figcaption>A card, fully revealed — target word, example, translation, notes.</figcaption>
+        </figure>
+        <figure>
+          <img src="boss-arena.png" alt="The boss-fight arena: a horizontal track shared by the learner and the boss, with a marker at the far edge.">
+          <figcaption>The arena — the boss's exit is the far edge.</figcaption>
+        </figure>
+      </div>
+
+      <div class="cta-row">
+        <a class="btn manual" href="icon.png">Icon (PNG)</a>
+        <a class="btn manual" href="bossfight.gif">Boss fight (GIF)</a>
+        <a class="btn manual" href="website_image.png">Key art (PNG)</a>
+      </div>
+      <p style="margin-top:14px;">Free to browse and equally free to screenshot: the complete <a href="wordlists.html">word lists</a> and every <a href="lessons.html">reference lesson</a> for all packs, DLC included, plus the <a href="https://flashboss-demo.pages.dev/">playable boss-fight demo</a>, which runs in a phone browser.</p>
+    </section>
+
+    <section id="faq">
+      <h2>Press and affiliate FAQ</h2>
+
+      <div class="qa">
+        <div class="q">Can I get a review key?</div>
+        <p class="a">Yes. Email <a href="mailto:flashbosscontact@gmail.com">flashbosscontact@gmail.com</a> with a link to your channel, publication or platform.</p>
+      </div>
+
+      <div class="qa">
+        <div class="q">Is there a trailer?</div>
+        <p class="a">Yes, on the <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-press">Steam page</a>. Ask if you need the raw file.</p>
+      </div>
+
+      <div class="qa">
+        <div class="q">Can my readers try it before buying?</div>
+        <p class="a">The boss-fight <a href="https://flashboss-demo.pages.dev/">demo</a> is playable in any browser, and the full word lists and lessons for every pack are published on this site. Five packs are also free inside the base game.</p>
+      </div>
+
+      <div class="qa">
+        <div class="q">How do I promote it as an affiliate?</div>
+        <p class="a">Register a Steam UTM link and you are paid a flat $0.50 (USD) on every sale Steam attributes to it. Full terms, thresholds and payout timing are on the <a href="affiliate.html">promote</a> page.</p>
+      </div>
+
+      <div class="qa">
+        <div class="q">Is it a subscription?</div>
+        <p class="a">No. The base game is bought once and the packs are bought once. There are no accounts and no recurring charges.</p>
+      </div>
+
+      <div class="qa">
+        <div class="q">Does it teach speaking?</div>
+        <p class="a">No, and the developer says so on the record. FlashBoss trains reading, listening and recognition — the input half. Speaking and writing practice is left to conversation classes, tutors and other tools.</p>
+      </div>
+
+      <div class="qa">
+        <div class="q">Is the audio recorded by native speakers?</div>
+        <p class="a">No. All audio is text-to-speech, generated by the neural engine bundled with the game. Please do not describe it as native or recorded voice.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Review keys, interviews, asset requests, fact-checks, corrections: <a href="mailto:flashbosscontact@gmail.com">flashbosscontact@gmail.com</a>.</p>
+      <p>If a number in your piece needs confirming before it goes out, ask — a wrong count is worse for both of us than a slow reply.</p>
+      <div class="cta-row">
+        <a class="btn steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-press">FlashBoss on Steam &rarr;</a>
+        <a class="btn manual" href="about.html">How it teaches</a>
+        <a class="btn manual" href="packs.html">Pack list</a>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  <span class="footer-links">
+    <a href="home.html">home</a><span class="div">·</span>
+    <a href="about.html">about</a><span class="div">·</span>
+    <a href="packs.html">packs</a><span class="div">·</span>
+    <a href="resources.html">resources</a><span class="div">·</span>
+    <a href="affiliate.html">promote</a><span class="div">·</span>
+    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-press">steam</a>
+  </span>
+  <div class="made">© 2025–2026 Odiin. Press are welcome to reproduce the copy and screenshots on this page.</div>
+</footer>
+
 </body>
 </html>
