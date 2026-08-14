@@ -1,0 +1,511 @@
+[
+  {
+    "lesson_id": "001",
+    "trigger_word": "bonjour",
+    "trigger_card_number": 1,
+    "title": "LESSON 1: FRENCH PRONUNCIATION",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 4,
+        "content": [
+          "Bienvenue! French spelling looks tricky",
+          "but the sounds are very consistent.",
+          "",
+          "a = 'ah' as in father                Press 1",
+          "   la, ça, table",
+          "",
+          "é = 'ay' as in day (closed, sharp)   Press 2",
+          "   café, été, désolé",
+          "",
+          "è/ê = 'eh' as in bet (open, softer)  Press 3",
+          "   mère, père, être",
+          "",
+          "i = 'ee' as in machine               Press 4",
+          "   ici, midi, merci",
+          "",
+          "o/ô = 'oh' as in note                Press 5",
+          "   mot, vélo, hôtel"
+        ],
+        "pronunciation": "Leçon un",
+        "pronunciation_mappings": {
+          "1": "La. Ça. Table.",
+          "2": "Café. Été. Désolé.",
+          "3": "Mère. Père. Être.",
+          "4": "Ici. Midi. Merci.",
+          "5": "Mot. Vélo. Hôtel."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 4,
+        "content": [
+          "NASAL VOWELS — air through the nose,",
+          "say the vowel but don't finish the n/m:",
+          "",
+          "an/en = nasal 'ah'                   Press 1",
+          "   France, enfant, dans",
+          "",
+          "in/ain/ein = nasal 'eh'              Press 2",
+          "   vin, pain, main",
+          "",
+          "on = nasal 'oh'                      Press 3",
+          "   bon, maison, non",
+          "",
+          "un = nasal 'uh' (merges with 'in'    Press 4",
+          "for many speakers)",
+          "   un, lundi, parfum",
+          "",
+          "RULE: after a vowel, n/m usually isn't",
+          "pronounced — it just nasalizes the vowel."
+        ],
+        "pronunciation_mappings": {
+          "1": "France. Enfant. Dans.",
+          "2": "Vin. Pain. Main.",
+          "3": "Bon. Maison. Non.",
+          "4": "Un. Lundi. Parfum."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 4,
+        "content": [
+          "CONSONANTS that differ from English:",
+          "",
+          "h = always SILENT                    Press 1",
+          "   habiter, homme, heure",
+          "",
+          "c before e/i/y = soft 's'            Press 2",
+          "   ici, cinéma, merci",
+          "c before a/o/u = hard 'k'            Press 3",
+          "   café, comme, cousin",
+          "ç = always soft 's' (any vowel)      Press 4",
+          "   ça, français, garçon",
+          "",
+          "g before e/i/y = soft (like 'zh')    Press 5",
+          "   âge, manger, gilet",
+          "g before a/o/u = hard 'g' in 'go'    Press 6",
+          "   gauche, gomme, légume",
+          "gn = like 'ny' in canyon             Press 7",
+          "   montagne, gagner, ligne"
+        ],
+        "pronunciation_mappings": {
+          "1": "Habiter. Homme. Heure.",
+          "2": "Ici. Cinéma. Merci.",
+          "3": "Café. Comme. Cousin.",
+          "4": "Ça. Français. Garçon.",
+          "5": "Âge. Manger. Gilet.",
+          "6": "Gauche. Gomme. Légume.",
+          "7": "Montagne. Gagner. Ligne."
+        }
+      },
+      {
+        "page": 4,
+        "total_pages": 4,
+        "content": [
+          "SILENT FINAL CONSONANTS — most word-",
+          "final consonants are NOT pronounced:",
+          "",
+          "trop, beaucoup, nez, gros            Press 1",
+          "(final p, p, z, s = silent)",
+          "",
+          "EXCEPTION — 'CaReFuL' letters ARE     Press 2",
+          "pronounced at the end of a word:",
+          "c, r, f, l → avec, professeur, chef,",
+          "animal",
+          "",
+          "STRESS: always falls on the LAST",
+          "syllable of the word or phrase —",
+          "much simpler than Spanish or English.",
+          "",
+          "Two more sounds get their own lessons",
+          "later: ÉLISION (l'ami) and LIAISON",
+          "(les amis), on the cards that need them."
+        ],
+        "pronunciation_mappings": {
+          "1": "Trop. Beaucoup. Nez. Gros.",
+          "2": "Avec. Professeur. Chef. Animal."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "002",
+    "trigger_word": "âge",
+    "trigger_card_number": 8,
+    "title": "LESSON 2: READING A CARD",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "Every French card shows the article",
+          "color-coded by gender — glance,",
+          "don't guess:",
+          "",
+          "le = masculine (shown in BLUE)       Press 1",
+          "   le nom, le pays, le métier",
+          "",
+          "la = feminine (shown in MAGENTA)     Press 2",
+          "   la nationalité, la famille",
+          "",
+          "STRATEGY: never learn a noun alone —",
+          "always learn it WITH its colored",
+          "article. The color is the fastest",
+          "way to know le vs la at a glance."
+        ],
+        "pronunciation": "Leçon deux",
+        "pronunciation_mappings": {
+          "1": "le nom, le pays, le métier",
+          "2": "la nationalité, la famille"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "ÉLISION — before a vowel sound, le/la",
+          "drop their vowel and become l':",
+          "",
+          "le âge  →  l'âge                     Press 1",
+          "la adresse → l'adresse",
+          "",
+          "The apostrophe keeps the gender",
+          "color underneath — l'âge shows",
+          "BLUE, l'adresse shows MAGENTA — so",
+          "you still know the gender at a glance.",
+          "",
+          "Cards flag this with Elides: true.",
+          "Elides: false means the article",
+          "stays whole: le héros, la honte",
+          "(more on those later — some words",
+          "starting with h block élision)."
+        ],
+        "pronunciation_mappings": {
+          "1": "l'âge, l'adresse"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "003",
+    "trigger_word": "madame",
+    "trigger_card_number": 18,
+    "title": "LESSON 3: TU VS VOUS",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "French has TWO words for 'you':",
+          "",
+          "TU = informal — friends, family,     Press 1",
+          "children, people your own age",
+          "   Tu es prêt ? (Are you ready?)",
+          "",
+          "VOUS = formal AND plural —           Press 2",
+          "strangers, elders, work, or more",
+          "than one person",
+          "   Vous êtes prêt ? (Are you ready?)",
+          "",
+          "You already used vous in 's'il vous",
+          "plaît' — the formal 'please', really",
+          "'if it pleases you (formal)'.",
+          "",
+          "VOUS reuses the verb form you'd use",
+          "for a GROUP — no new conjugation to",
+          "learn, just a new use for it."
+        ],
+        "pronunciation": "Leçon trois",
+        "pronunciation_mappings": {
+          "1": "tu es prêt",
+          "2": "vous êtes prêt, s'il vous plaît"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "WHEN IN DOUBT, USE VOUS:",
+          "",
+          "Starting with vous is always safe.   Press 1",
+          "Someone may invite you to switch:",
+          "'On peut se tutoyer' (We can use tu)",
+          "",
+          "Address strangers with a title:      Press 2",
+          "Bonjour, madame. / Bonjour, monsieur.",
+          "",
+          "Switching tu→vous mid-conversation",
+          "can sound cold; vous→tu is the normal",
+          "direction, usually offered, not",
+          "assumed."
+        ],
+        "pronunciation_mappings": {
+          "1": "on peut se tutoyer",
+          "2": "bonjour madame, bonjour monsieur"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "004",
+    "trigger_word": "être",
+    "trigger_card_number": 76,
+    "title": "LESSON 4: PRESENT TENSE",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "French verbs come in 3 families:",
+          "-ER (parler)  -IR (finir)  -RE (vendre)",
+          "",
+          "-ER is the biggest family — most new",
+          "verbs are -ER. Drop -er, add:",
+          "",
+          "je parle            = I speak        Press 1",
+          "tu parles           = you speak",
+          "il/elle parle       = he/she speaks",
+          "nous parlons        = we speak",
+          "vous parlez         = you speak (fml/pl.)",
+          "ils/elles parlent   = they speak",
+          "",
+          "parle/parles/parle/parlent all SOUND",
+          "the same — only nous and vous change",
+          "the sound. Listen for the ending."
+        ],
+        "pronunciation": "Leçon quatre",
+        "pronunciation_mappings": {
+          "1": "je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "-IR verbs (finir = to finish):       Press 1",
+          "",
+          "je finis            = I finish",
+          "tu finis            = you finish",
+          "il/elle finit       = he/she finishes",
+          "nous finissons      = we finish",
+          "vous finissez       = you finish",
+          "ils/elles finissent = they finish",
+          "",
+          "-RE verbs (vendre = to sell):        Press 2",
+          "",
+          "je vends            = I sell",
+          "tu vends            = you sell",
+          "il/elle vend        = he/she sells",
+          "nous vendons        = we sell",
+          "ils/elles vendent   = they sell"
+        ],
+        "pronunciation_mappings": {
+          "1": "je finis, tu finis, il finit, nous finissons, vous finissez, ils finissent",
+          "2": "je vends, tu vends, il vend, nous vendons, ils vendent"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "THE BIG 4 — irregular, and used",
+          "constantly. Memorize these cold:",
+          "",
+          "ÊTRE (to be):                        Press 1",
+          "suis, es, est, sommes, êtes, sont",
+          "",
+          "AVOIR (to have):                     Press 2",
+          "ai, as, a, avons, avez, ont",
+          "",
+          "ALLER (to go):                       Press 3",
+          "vais, vas, va, allons, allez, vont",
+          "",
+          "FAIRE (to do/make):                  Press 4",
+          "fais, fais, fait, faisons, faites, font",
+          "",
+          "These four also build other tenses",
+          "later (futur proche, passé composé)",
+          "— learn them well now."
+        ],
+        "pronunciation_mappings": {
+          "1": "suis, es, est, sommes, êtes, sont",
+          "2": "ai, as, a, avons, avez, ont",
+          "3": "vais, vas, va, allons, allez, vont",
+          "4": "fais, fais, fait, faisons, faites, font"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "005",
+    "trigger_word": "essayer",
+    "trigger_card_number": 99,
+    "title": "LESSON 5: NEGATION",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "NE...PAS wraps AROUND the verb —",
+          "it's a sandwich, not a single word:",
+          "",
+          "Je ne parle pas.                     Press 1",
+          "(I don't speak / I'm not speaking.)",
+          "",
+          "Je ne suis pas prêt.                 Press 2",
+          "(I'm not ready.)",
+          "",
+          "In casual spoken French, 'ne' is",
+          "often dropped: 'Je parle pas' — but",
+          "always write both parts in Core.",
+          "",
+          "With an infinitive, both pieces move",
+          "together, right before it:            Press 3",
+          "Je préfère ne pas essayer.",
+          "(I prefer not to try.)"
+        ],
+        "pronunciation": "Leçon cinq",
+        "pronunciation_mappings": {
+          "1": "je ne parle pas",
+          "2": "je ne suis pas prêt",
+          "3": "je préfère ne pas essayer"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "OTHER NEGATIONS use the same",
+          "ne...___ sandwich, different word:",
+          "",
+          "ne...plus = no more/not anymore      Press 1",
+          "   Je n'ai plus faim.",
+          "",
+          "ne...jamais = never                  Press 2",
+          "   Je ne mange jamais de viande.",
+          "",
+          "ne...rien = nothing                  Press 3",
+          "   Je ne vois rien.",
+          "",
+          "ne...personne = nobody               Press 4",
+          "   Je ne connais personne ici.",
+          "",
+          "Notice: ne elides to n' before a",
+          "vowel sound — n'ai, n'aime, n'est."
+        ],
+        "pronunciation_mappings": {
+          "1": "je n'ai plus faim",
+          "2": "je ne mange jamais de viande",
+          "3": "je ne vois rien",
+          "4": "je ne connais personne ici"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "006",
+    "trigger_word": "heure",
+    "trigger_card_number": 151,
+    "title": "LESSON 6: IL Y A & TELLING TIME",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "IL Y A = there is / there are —",
+          "one phrase, doesn't change for",
+          "singular or plural:",
+          "",
+          "Il y a un problème.                  Press 1",
+          "(There's a problem.)",
+          "Il y a des livres.                   Press 2",
+          "(There are books.)",
+          "",
+          "QUESTION — just flip the tone up,",
+          "or add est-ce que:",
+          "Il y a un problème ?                 Press 3",
+          "(Is there a problem?)",
+          "",
+          "NEGATIVE — the usual ne...pas",
+          "sandwich around 'a':",
+          "Il n'y a pas de problème.            Press 4",
+          "(There's no problem.)"
+        ],
+        "pronunciation": "Leçon six",
+        "pronunciation_mappings": {
+          "1": "il y a un problème",
+          "2": "il y a des livres",
+          "3": "il y a un problème ?",
+          "4": "il n'y a pas de problème"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "TELLING TIME uses il est + heure(s):",
+          "",
+          "Il est une heure.                    Press 1",
+          "(It's one o'clock.)",
+          "Il est deux heures.                  Press 2",
+          "(It's two o'clock.)",
+          "",
+          "'Une heure' is singular, so no s.",
+          "From deux heures on, heure takes -s.",
+          "",
+          "Il est midi. / Il est minuit.        Press 3",
+          "(It's noon. / It's midnight.)",
+          "",
+          "Il est deux heures dix.              Press 4",
+          "(2:10)",
+          "Il est trois heures moins dix.       Press 5",
+          "(2:50)"
+        ],
+        "pronunciation_mappings": {
+          "1": "il est une heure",
+          "2": "il est deux heures",
+          "3": "il est midi, il est minuit",
+          "4": "il est deux heures dix",
+          "5": "il est trois heures moins dix"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "LIAISON — a silent final consonant",
+          "wakes up before the next vowel:",
+          "",
+          "deux heures → deux_heures [z]        Press 1",
+          "trois heures → trois_heures [z]      Press 2",
+          "six heures → six_heures [z]          Press 3",
+          "dix heures → dix_heures [z]          Press 4",
+          "",
+          "Beyond numbers, the same thing:",
+          "",
+          "un an → un_an [n]                    Press 5",
+          "les amis → les_amis [z]              Press 6",
+          "très utile → très_utile [z]          Press 7",
+          "",
+          "Lesson 8 returns to liaison in full."
+        ],
+        "pronunciation_mappings": {
+          "1": "deux heures",
+          "2": "trois heures",
+          "3": "six heures",
+          "4": "dix heures",
+          "5": "un an",
+          "6": "les amis",
+          "7": "très utile"
+        }
+      }
+    ]
+  }
+]

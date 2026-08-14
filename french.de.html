@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Französisch — FlashBoss</title>
+<meta name="description" content="FlashBoss French Core: 1.000 Wörter metropolitanes Französisch über fünf Stufen und vierzig Cluster, mit 20 Referenzlektionen, farbcodiertem Genus samt Elision und Sprachausgabe. Komplett auf Deutsch spielbar — jede Karte, jede Lektion. Jetzt auf Steam.">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/french.html">
+<link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/french.de.html">
+<link rel="alternate" hreflang="es" href="https://odiin2024.github.io/flashboss-site/french.es.html">
+<link rel="alternate" hreflang="ja" href="https://odiin2024.github.io/flashboss-site/french.ja.html">
+<link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/french.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   FlashBoss — French page · DE-Lokalisierung
+   Aesthetic: phosphor terminal. The through-line is the pack's
+   own Lesson 3: VOUS -> TU — auf Deutsch: vom Sie zum Du.
+   The page opens cool, formal, zinc — the polite stranger — and
+   warms as you scroll until it is the friend across the table.
+   ONE smooth ramp, no hard turn.
+
+   TUNE THESE FIRST:
+   --masc / --fem   -> match the game's gender colours (le / la).
+   french-hero.png  -> hero banner image (sits at site root).
+   ============================================================ */
+:root{
+  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
+  --mono-cjk:'JetBrains Mono', 'Hiragino Sans', 'Noto Sans JP', 'Yu Gothic', 'Meiryo', ui-monospace, monospace;
+
+  /* gender colour-coding — RETUNE to the game's exact palette */
+  --masc:#6cb6ff;   /* le */
+  --fem:#ff8fa3;    /* la */
+
+  /* VOUS palette (top — cool, formal, Paris zinc under morning cloud) */
+  --v-bg:#0e131b;
+  --v-ink:#e6ecf4;
+  --v-dim:#93a3b6;
+  --v-accent:#b8c8dc;   /* zinc silver — the polite distance */
+
+  /* TU palette (bottom — warm, close, the lamp over the table) */
+  --t-bg:#1a0e0c;
+  --t-ink:#f7e7df;
+  --t-dim:#c39a8c;
+  --t-accent:#e2694a;   /* copper ember — the language gone familiar */
+
+  /* mood: 0 = vous, 1 = tu. Driven by scroll. ONE smooth ramp. */
+  --mood:0;
+
+  --line:color-mix(in oklab, #3d4a5c, #4e2c22 calc(var(--mood) * 100%));
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0; font-family:var(--mono);
+  background:#0b0f16;
+  background:color-mix(in oklab, var(--v-bg), var(--t-bg) calc(var(--mood)*100%));
+  color:color-mix(in oklab, var(--v-ink), var(--t-ink) calc(var(--mood)*100%));
+  line-height:1.6; -webkit-font-smoothing:antialiased;
+  transition:background 120ms linear, color 120ms linear; overflow-x:hidden;
+}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.045) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.vignette{position:fixed; inset:0; pointer-events:none; z-index:9998;
+  background:radial-gradient(120% 90% at 50% 35%, transparent 55%, rgba(0,0,0,.5) 100%);}
+.wrap{max-width:880px; margin:0 auto; padding:0 24px;}
+
+nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line);}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--v-dim); margin-right:auto;}
+nav .brand a, nav .brand .sep{color:var(--v-dim); text-decoration:none;}
+nav .brand a:hover{color:var(--v-ink);}
+nav .brand .here{font-weight:800; color:var(--v-ink);}
+nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--v-ink);}
+nav .brand .logo:hover{color:var(--v-accent);}
+nav .brand .pipe{color:var(--v-dim); margin:0 11px;}
+.nav-mobile{display:none;}
+.nav-mobile a{color:inherit; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.08em; opacity:.85;}
+.nav-mobile a:hover{opacity:1; color:var(--v-accent);}
+@media(max-width:640px){ nav .brand, nav .links{display:none;} .nav-mobile{display:flex; flex:1; justify-content:space-between; align-items:center;} .nav-mobile .r{display:flex; gap:18px;} }
+nav .links a{color:inherit; text-decoration:none; opacity:.7; margin-left:22px;}
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+nav .links a.steam{font-weight:800; opacity:1; color:var(--v-ink);}
+nav .lang-switch{position:relative; margin-left:22px;}
+nav .lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--v-ink); background:var(--v-bg); border:1px solid var(--v-dim); padding:5px 8px; line-height:1; cursor:pointer;}
+nav .lang-toggle:hover, nav .lang-toggle[aria-expanded="true"]{background:var(--v-ink); color:var(--v-bg);}
+nav .lang-caret{font-size:8px; line-height:1; transition:transform .15s ease;}
+nav .lang-toggle[aria-expanded="true"] .lang-caret{transform:rotate(180deg);}
+nav .lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--v-bg); border:1px solid var(--v-dim); min-width:120px; z-index:50;}
+nav .lang-menu[hidden]{display:none;}
+nav .lang-menu li{margin:0; padding-left:0; position:static;}
+nav .lang-menu li::before{content:none;}
+nav .lang-menu a{display:block; font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--v-ink); text-decoration:none; padding:7px 10px; white-space:nowrap; opacity:1; margin:0;}
+nav .lang-menu a:hover{background:var(--v-ink); color:var(--v-bg); text-decoration:none;}
+nav .lang-menu a[aria-current="true"]{color:var(--v-accent);}
+nav .lang-menu a[aria-current="true"]:hover{color:var(--v-bg);}
+
+.reveal{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease;}
+.reveal.in{opacity:1; transform:none;}
+
+/* HERO — image band. The <img> carries the alt text; the gradient
+   sits over it so the type stays legible whatever the art is. */
+.hero{position:relative; padding:84px 0 36px; overflow:hidden; background:#0b0f16;}
+.hero .hero-img{position:absolute; inset:0; z-index:0; width:100%; height:100%; object-fit:cover; object-position:center 30%;}
+.hero::after{content:""; position:absolute; inset:0; z-index:1;
+  background:linear-gradient(180deg, rgba(14,19,27,.60) 0%, rgba(14,19,27,.84) 55%, #0e131b 100%);}
+.hero .wrap{position:relative; z-index:2;}
+.kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--v-dim); opacity:.9; margin-bottom:26px;}
+.kicker b{color:var(--v-accent); font-weight:700;}
+.hero h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
+.cursor{display:inline-block; width:.6em; height:1em; vertical-align:-.08em; background:color-mix(in oklab, var(--v-accent), transparent 30%); margin-left:.12em; animation:blink 1.05s steps(1) infinite;}
+@keyframes blink{50%{opacity:0;}}
+.hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:30px 0 0; color:var(--v-ink); font-weight:500;}
+.hero .sig{font-size:13px; letter-spacing:.24em; text-transform:uppercase; color:var(--v-accent); margin:14px 0 0; opacity:.9;}
+.hero .lede{font-size:clamp(15px,2.2vw,18px); max-width:50ch; margin:24px 0 0; color:var(--v-dim);}
+.hero .lede b{color:var(--v-ink); font-weight:700;}
+.btn{display:inline-block; font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.08em; color:#0e131b; background:color-mix(in oklab, var(--v-accent), transparent 22%);
+  padding:14px 26px; text-decoration:none; border:0; box-shadow:6px 6px 0 color-mix(in oklab, var(--v-accent), #000 62%); transition:transform .12s ease, box-shadow .12s ease;}
+.btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--v-accent), #000 62%);}
+.btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--v-accent), #000 62%);}
+.btn.hot{color:#1a0e0c; background:var(--t-accent); box-shadow:6px 6px 0 color-mix(in oklab, var(--t-accent), #000 60%);}
+.btn.hot:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--t-accent), #000 60%);}
+.hero .steamcta{margin-top:40px;}
+.hero .actions{display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:14px; max-width:520px;}
+.hero .actions .btn{margin-top:0; width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
+
+section{padding:64px 0;}
+.hero + section{padding-top:48px;}
+.frame{border:1px solid var(--line); position:relative; padding:34px 30px 32px;}
+.frame > .tag{position:absolute; top:-12px; left:22px;
+  background:color-mix(in oklab, var(--v-bg), var(--t-bg) calc(var(--mood)*100%));
+  padding:4px 12px; line-height:1; font-size:11px; letter-spacing:.3em; text-transform:uppercase;
+  color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+h2{font-size:clamp(26px,5vw,40px); margin:0 0 8px; font-weight:800; letter-spacing:-.01em;}
+.sub{color:var(--v-dim); font-size:14px; letter-spacing:.04em; margin:0 0 26px;}
+.sub.fr{font-style:italic; font-size:16px; opacity:.92;}
+.sub a{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%)); text-decoration:none; border-bottom:1px solid currentColor;}
+p.body{font-size:16px; max-width:62ch; margin:0 0 18px; color:color-mix(in oklab, var(--v-ink), var(--t-ink) calc(var(--mood)*100%));}
+p.body b{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+.fr{font-style:italic; opacity:.96;}
+
+/* gradient run — the five tiers as one movement, vous -> tu */
+.run{border:1px solid var(--line); display:grid; grid-template-columns:repeat(5,1fr); overflow:hidden;}
+.run .step{padding:22px 16px; border-right:1px solid var(--line); position:relative;}
+.run .step:last-child{border-right:0;}
+.run .step:nth-child(1){background:color-mix(in oklab, transparent, var(--v-accent) 6%);}
+.run .step:nth-child(2){background:color-mix(in oklab, transparent, var(--v-accent) 9%);}
+.run .step:nth-child(3){background:color-mix(in oklab, transparent, var(--t-accent) 8%);}
+.run .step:nth-child(4){background:color-mix(in oklab, transparent, var(--t-accent) 12%);}
+.run .step:nth-child(5){background:color-mix(in oklab, transparent, var(--t-accent) 17%);}
+.run .t{font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%)); margin-bottom:10px; font-weight:700;}
+.run .step p{font-size:12.5px; margin:0; color:color-mix(in oklab, var(--v-dim), var(--t-dim) calc(var(--mood)*100%));}
+@media(max-width:640px){.run{grid-template-columns:1fr;} .run .step{border-right:0; border-bottom:1px solid var(--line);} .run .step:last-child{border-bottom:0;}}
+
+/* tier & cluster ledger — straight off the pack manifest */
+.tiers{border:1px solid var(--line);}
+.tierrow{display:grid; grid-template-columns:max-content 1fr max-content; gap:0 22px; align-items:baseline; padding:18px 20px; border-bottom:1px solid var(--line);}
+.tierrow:last-child{border-bottom:0;}
+.tierrow .tno{font-size:12px; font-weight:800; letter-spacing:.16em; text-transform:uppercase; white-space:nowrap;
+  color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+.tierrow .tcl{font-size:13px; color:color-mix(in oklab, var(--v-ink), var(--t-ink) calc(var(--mood)*100%));}
+.tierrow .tct{font-size:11.5px; letter-spacing:.04em; white-space:nowrap; color:color-mix(in oklab, var(--v-dim), var(--t-dim) calc(var(--mood)*100%));}
+.tierfoot{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; font-size:12px; letter-spacing:.06em; text-transform:uppercase; margin-top:14px; color:color-mix(in oklab, var(--v-dim), var(--t-dim) calc(var(--mood)*100%));}
+.tierfoot b{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+@media(max-width:640px){.tierrow{grid-template-columns:1fr; gap:8px 0;}}
+
+/* sentence ladder */
+.ladder{list-style:none; margin:0; padding:0; counter-reset:tier;}
+.ladder li{counter-increment:tier; border-left:2px solid var(--line); padding:18px 0 18px 26px; margin-left:8px; position:relative;}
+.ladder li::before{content:"S" counter(tier); position:absolute; left:-15px; top:18px;
+  background:color-mix(in oklab, var(--v-bg), var(--t-bg) calc(var(--mood)*100%)); font-size:11px; font-weight:700; letter-spacing:.05em; padding:2px 0;
+  color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+.ladder .tgt{font-weight:500;}
+.ladder li:nth-child(1) .tgt{font-size:15px;} .ladder li:nth-child(2) .tgt{font-size:16px;}
+.ladder li:nth-child(3) .tgt{font-size:17px;} .ladder li:nth-child(4) .tgt{font-size:18px;}
+.ladder li:nth-child(5) .tgt{font-size:19px; font-weight:700;}
+.ladder .en{display:block; color:color-mix(in oklab, var(--v-dim), var(--t-dim) calc(var(--mood)*100%)); font-size:13px; margin-top:6px;}
+
+/* gender cards */
+.cards{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
+@media(max-width:640px){.cards{grid-template-columns:1fr;}}
+.card{border:1px solid var(--line); padding:20px 18px; cursor:pointer; background:rgba(255,255,255,.015); transition:border-color .15s ease; min-height:150px;}
+.card:hover{border-color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+.card .art{font-size:13px; letter-spacing:.18em; text-transform:lowercase; font-weight:700;}
+.card.m .art{color:var(--masc);} .card.f .art{color:var(--fem);}
+.card .word{font-size:22px; font-weight:800; margin:2px 0 12px;}
+.card .ex{font-size:13px; color:var(--v-dim); font-style:italic;}
+.card .trans{font-size:12.5px; color:var(--v-dim); margin-top:10px; max-height:0; overflow:hidden; opacity:0; transition:max-height .3s ease, opacity .3s ease;}
+.card.flipped .trans{max-height:260px; opacity:1;}
+.card .hint{font-size:10px; letter-spacing:.2em; text-transform:uppercase; opacity:.45; margin-top:12px;}
+.card.idiom .art{font-style:italic; font-weight:500; font-size:12px; letter-spacing:.04em; color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%)); text-transform:none;}
+.card.idiom .word{font-size:18px;}
+.legend{display:flex; gap:20px; flex-wrap:wrap; font-size:12px; margin:0 0 22px; color:var(--v-dim);}
+.legend span{display:inline-flex; align-items:center; gap:7px;}
+.legend i{width:11px; height:11px; display:inline-block;}
+.legend .lm{background:var(--masc);} .legend .lf{background:var(--fem);}
+
+/* elision demo — l' keeps the gender colour underneath */
+.elide{display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-top:22px;}
+@media(max-width:560px){.elide{grid-template-columns:1fr;}}
+.el{border:1px dashed var(--line); padding:18px; text-align:center;}
+.el .big{font-size:26px; font-weight:800; letter-spacing:.01em;}
+.el.m .big .a{color:var(--masc);} .el.f .big .a{color:var(--fem);}
+.el .from{font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; opacity:.6; margin-bottom:8px;}
+.el .gloss{font-size:12.5px; margin-top:8px; color:color-mix(in oklab, var(--v-dim), var(--t-dim) calc(var(--mood)*100%));}
+.elide-note{font-size:13px; margin:16px 0 0; color:color-mix(in oklab, var(--v-dim), var(--t-dim) calc(var(--mood)*100%)); max-width:62ch;}
+
+/* lessons list */
+.lessons{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(2,1fr); gap:0 26px;}
+@media(max-width:640px){.lessons{grid-template-columns:1fr;}}
+.lessons li{border-top:1px solid var(--line); padding:13px 0; font-size:13.5px;}
+.lessons li .no{font-size:11px; font-weight:700; letter-spacing:.12em; margin-right:10px;
+  color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+.lessons li span.d{display:block; font-size:12.5px; margin-top:3px; color:color-mix(in oklab, var(--v-dim), var(--t-dim) calc(var(--mood)*100%));}
+
+/* packs */
+.packs{display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid var(--line);}
+@media(max-width:640px){.packs{grid-template-columns:1fr;}}
+.pack{padding:24px 20px; border-right:1px solid var(--line);}
+.pack:last-child{border-right:0;}
+.pack .n{font-size:18px; font-weight:800;}
+.pack .lvl{font-size:12px; letter-spacing:.06em; color:var(--v-dim); margin:4px 0 12px;}
+.pack p{font-size:13px; color:var(--v-dim); margin:0;}
+.pack .soon{display:inline-block; font-size:10px; letter-spacing:.2em; text-transform:uppercase; margin-top:12px; padding:3px 8px; border:1px solid var(--line);
+  color:color-mix(in oklab, var(--v-dim), var(--t-dim) calc(var(--mood)*100%));}
+a.pack{text-decoration:none; color:inherit; display:block; transition:background .15s ease, border-color .15s ease;}
+a.pack:hover{background:rgba(226,105,74,.07); border-color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+.pack.locked{opacity:.66;}
+@media(max-width:640px){.pack{border-right:0; border-bottom:1px solid var(--line);} .pack:last-child{border-bottom:0;}}
+
+/* quadrilingual proof — the DE headline block */
+.quad{border:1px solid var(--line); margin-top:24px;}
+.quad .head{padding:18px 20px; border-bottom:1px solid var(--line);}
+.quad .head .w{font-size:26px; font-weight:800;}
+.quad .head .w .a{color:var(--fem);}
+.quad .head .ex{font-size:13.5px; font-style:italic; color:var(--v-dim); margin-top:4px;}
+.quad .row{display:grid; grid-template-columns:120px 1fr; border-bottom:1px dashed var(--line);}
+.quad .row:last-child{border-bottom:0;}
+.quad .row > div{padding:12px 20px;}
+.quad .lab{font-size:11px; letter-spacing:.14em; text-transform:uppercase; border-right:1px dashed var(--line);
+  color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+.quad .val{font-size:14px; color:color-mix(in oklab, var(--v-ink), var(--t-ink) calc(var(--mood)*100%));}
+.quad .val.cjk{font-family:var(--mono-cjk);}
+.quad .row.self{background:color-mix(in oklab, transparent, var(--t-accent) 9%);}
+.quad .row.self .lab{font-weight:700;}
+@media(max-width:560px){.quad .row{grid-template-columns:1fr;} .quad .lab{border-right:0; padding-bottom:0;}}
+.de-list{list-style:none; margin:22px 0 0; padding:0; display:grid; grid-template-columns:repeat(2,1fr); gap:0;}
+@media(max-width:640px){.de-list{grid-template-columns:1fr;}}
+.de-list li{padding:13px 18px; border:1px solid var(--line); margin:-1px 0 0 -1px; font-size:13.5px;
+  color:color-mix(in oklab, var(--v-ink), var(--t-ink) calc(var(--mood)*100%));}
+.de-list li b{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+
+.method dl{display:grid; grid-template-columns:max-content 1fr; gap:14px 22px; margin:0;}
+.method dt{font-weight:700; color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%)); white-space:nowrap;}
+.method .frame > .tag{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+.method dd{margin:0; font-size:14.5px; color:var(--v-dim);}
+@media(max-width:560px){.method dl{grid-template-columns:1fr; gap:4px 0;} .method dd{margin-bottom:14px;}}
+
+/* FAQ */
+.faq details{border-top:1px solid var(--line);}
+.faq details:last-of-type{border-bottom:1px solid var(--line);}
+.faq summary{list-style:none; cursor:pointer; padding:16px 30px 16px 0; font-size:15px; font-weight:700; position:relative;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"+"; position:absolute; right:4px; top:14px; font-size:18px; font-weight:400;
+  color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+.faq details[open] summary::after{content:"\2212";}
+.faq summary:hover{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+.faq .a{font-size:14px; margin:0 0 20px; max-width:64ch; color:color-mix(in oklab, var(--v-dim), var(--t-dim) calc(var(--mood)*100%));}
+.faq .a a{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%)); text-decoration:none; border-bottom:1px solid currentColor;}
+
+.final{text-align:center; padding:90px 0 100px;}
+.final h2{font-size:clamp(28px,6vw,52px);}
+.final p{color:var(--t-dim); max-width:48ch; margin:14px auto 0; font-size:15px;}
+.final .also{margin-top:22px; font-size:13px;}
+.final .also a{color:var(--t-dim); text-decoration:none; border-bottom:1px solid currentColor;}
+.final .also a:hover{color:var(--t-ink);}
+
+footer{border-top:1px solid var(--line); padding:28px 24px; font-size:12px; color:var(--t-dim); text-align:center; letter-spacing:.04em;}
+footer .epi{font-style:italic; opacity:.78; max-width:54ch; margin:0 auto 12px; line-height:1.7;}
+footer .epi .tr{font-style:normal; opacity:.85; display:block; margin-top:8px; font-size:11.5px;}
+footer .epi-cite{font-style:normal; font-size:11px; letter-spacing:.12em; text-transform:uppercase; opacity:.75; display:inline-block; margin-top:8px;}
+footer .footer-links{display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap; margin-top:14px;}
+footer .footer-links a{color:inherit; text-decoration:none; opacity:.75; letter-spacing:.04em;}
+footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+footer .footer-links .div{opacity:.4;}
+
+.bridge-banner{font-family:var(--mono); font-size:12.5px; line-height:1.55; text-align:center; padding:11px 24px; color:#f0e6d3; background:rgba(126,200,255,.12); border-top:1px solid rgba(126,200,255,.28); border-bottom:1px solid rgba(126,200,255,.28);}
+.bridge-banner b{color:#7ec8ff; font-weight:700;}
+</style>
+</head>
+<body>
+<div class="overlay"></div>
+<div class="vignette"></div>
+
+<nav>
+  <span class="brand"><a class="logo" href="index.de.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.de.html">Start</a><span class="sep"> · </span><a href="packs.de.html">Pakete</a><span class="sep"> · </span><span class="here">Französisch</span></span>
+  <span class="links">
+    <a href="manual/index.html">Komplettlösung (Beta)</a>
+    <a href="resources.de.html">Ressourcen</a>
+    <a class="steam" href="https://store.steampowered.com/app/4475080/FlashBoss__French_Core/?utm_source=website-french&l=german" target="_blank" rel="noopener">steam</a>
+  </span>
+  <span class="nav-mobile">
+    <a href="home.de.html">Start</a>
+    <span class="r"><a href="resources.de.html">Ressourcen</a><a href="https://store.steampowered.com/app/4475080/FlashBoss__French_Core/?utm_source=website-french&l=german" target="_blank" rel="noopener">steam</a></span>
+  </span>
+  <div class="lang-switch">
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Sprache wählen">DE<span class="lang-caret">▾</span></button>
+    <ul class="lang-menu" hidden>
+      <li><a href="french.html">English</a></li>
+      <li><a href="french.de.html" aria-current="true">Deutsch</a></li>
+      <li><a href="french.es.html">Español</a></li>
+      <li><a href="french.ja.html">日本語</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="bridge-banner">French Core ist <b>vollständig auf Deutsch spielbar</b> — jede Karte, jede Lektion, die ganze Oberfläche. Kein Englisch nötig.</div>
+
+<main>
+
+  <!-- HERO -->
+  <header class="hero">
+    <!-- Odiin supplies french-hero.png at the site root. Until it lands the
+         onerror hides the broken image and the hero falls back to flat ink. -->
+    <img class="hero-img" src="french-hero.png" alt="FlashBoss French Core — eine französische Lernkarte im Terminal-Kartenrahmen, der Artikel des Substantivs nach Genus farbcodiert" loading="eager" decoding="async" onerror="this.style.display='none'">
+    <div class="wrap">
+      <p class="kicker reveal">Jetzt auf Steam · <b>1.000 Wörter</b> · 40 Cluster · 20 Lektionen</p>
+      <h1 class="reveal">Français<span class="cursor"></span></h1>
+      <p class="tagline reveal">Vom Sie zum Du.</p>
+      <p class="sig reveal">Hören · Lesen · Wiederholen · Bewerten · Kämpfen</p>
+      <p class="lede reveal">Du beginnst auf sicherem Abstand — <b class="fr">Bonjour, comment allez-vous&nbsp;?</b> Tausend Wörter später sagt jemand <b class="fr">on peut se tutoyer</b>, und der ganze Ton ändert sich. <b>Metropolitanes Französisch</b>, ausgewählt danach, wie oft es dir wirklich begegnet.</p>
+      <div class="steamcta reveal">
+        <a class="btn hot" href="https://store.steampowered.com/app/4475080/FlashBoss__French_Core/?utm_source=website-french&l=german" target="_blank" rel="noopener">French Core auf Steam holen &rarr;</a>
+      </div>
+      <div class="actions reveal">
+        <a class="btn" href="wordlists.de.html?lang=French&amp;set=Core">Wortlisten</a>
+        <a class="btn" href="lessons.de.html?lang=French">Lektionen</a>
+        <a class="btn" href="https://flashboss-demo.pages.dev/">Demo testen</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- DIE DEUTSCHE SCHLAGZEILE -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Für deutschsprachige Lernende</span>
+      <h2>Französisch, komplett auf Deutsch</h2>
+      <p class="sub">Kein Umweg über eine dritte Sprache. Du lernst Französisch aus dem Deutschen heraus — so, wie du es aus einem Lehrbuch gewohnt bist, nur dass es zurückkämpft.</p>
+      <p class="body">Bei den meisten Vokabeltrainern ist Englisch die Brücke: Du liest die französische Karte, und die Erklärung darunter steht auf Englisch. Bei French Core nicht. Alle <b>1.000 Karten</b> tragen ihre deutsche Übersetzung <i>und</i> ihre deutschen Anmerkungen — Genus, Plural, Konjugationstyp, falsche Freunde, Registerhinweise. Alle <b>20 Referenzlektionen</b> gibt es als vollständige deutsche Fassung. Und die Oberfläche des Spiels selbst spricht Deutsch.</p>
+      <ul class="de-list">
+        <li><b>Jede Karte</b> — Übersetzung und Anmerkungen auf Deutsch, nicht maschinell übertragen, sondern für den Karten-Rahmen geschrieben.</li>
+        <li><b>Jeder Beispielsatz</b> — mit deutscher Übersetzung, alle 1.000.</li>
+        <li><b>Alle 20 Lektionen</b> — deutsche Geschwisterseiten, von der Aussprache bis zum Subjonctif.</li>
+        <li><b>Die Oberfläche</b> — Menüs, Meister, Bossfights: auf Deutsch. Auch Englisch, Japanisch und Spanisch stehen bereit.</li>
+      </ul>
+      <div class="quad">
+        <div class="head">
+          <div class="w"><span class="a">la</span> monnaie</div>
+          <div class="ex fr">Est-ce que vous avez de la monnaie, monsieur&nbsp;?</div>
+        </div>
+        <div class="row self"><div class="lab">Deutsch</div><div class="val" lang="de">das Wechselgeld; die Währung — „Haben Sie Kleingeld, mein Herr?“</div></div>
+        <div class="row"><div class="lab">English</div><div class="val" lang="en">change (money); currency</div></div>
+        <div class="row"><div class="lab">日本語</div><div class="val cjk" lang="ja">釣り銭、小銭；通貨</div></div>
+        <div class="row"><div class="lab">Español</div><div class="val" lang="es">cambio (vuelto); moneda (de un país)</div></div>
+      </div>
+      <p class="elide-note">Dieselbe Karte, viermal. Du stellst deine Sprache einmal ein, und das ganze Paket folgt.</p>
+    </div>
+  </section>
+
+  <!-- THE ARGUMENT -->
+  <section class="wrap">
+    <div class="frame">
+      <span class="tag">Aufbau des Kurses</span>
+      <h2>Vom Sie zum Du</h2>
+      <p class="sub fr">Bonne continuation — mach weiter so.</p>
+      <p class="body">French Core ist ein Weg hinein, in fünf Stufen gegangen. Du beginnst da, wo alle beginnen: Begrüßungen, die Menschen vor dir, der Körper, die ersten Verben, Essen, Zahlen, die Uhr. Dann weitet sich der Tag — Aufwachen, die Stadt, der Markt, der Kalender, die Menschen, die dir am nächsten stehen. In der fünften Stufe liest du über Verwaltung und Recht, Medien, digitales Leben, Feste und die feinen Schattierungen, die <span class="fr">joli</span> von <span class="fr">magnifique</span> trennen.</p>
+      <p class="body">Jedes Wort stammt aus Häufigkeitsdaten von Untertitel-Korpora — das Französisch, das dir in Film, Fernsehen und Gespräch wirklich ans Ohr kommt, gewichtet nach dem, was für das Verstehen am meisten zählt. Die Grammatik kommt Stufe für Stufe hinzu, und die Beispielsätze bleiben im Rahmen dessen, was du schon gelernt hast — nichts auf einer Karte läuft dir davon. Wenn du Core abgeschlossen hast, hast du <b>über 7.000 Wörter Französisch im Kontext</b> gelesen.</p>
+
+      <div class="run reveal">
+        <div class="step"><div class="t">Stufe 1</div><p>Erster Kontakt, Familie, der Körper, Grundverben, Essen, Zählen, die Uhr.</p></div>
+        <div class="step"><div class="t">Stufe 2</div><p>Aufwachen, in der Stadt, der Markt, der Kalender, enge Bande, Alltag.</p></div>
+        <div class="step"><div class="t">Stufe 3</div><p>Sich fertig machen, zu Hause, Wetter, Läden und Geld, Stimmungen, Vergangenheit.</p></div>
+        <div class="step"><div class="t">Stufe 4</div><p>Arbeit, Reisen, Schule, die wilde Welt, Geist und Meinung, Charakter.</p></div>
+        <div class="step"><div class="t">Stufe 5</div><p>Verwaltung und Recht, Medien und Kunst, digitales Leben, Feste, große Ideen, feine Nuancen.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIER & CLUSTER LEDGER -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Die ganze Karte</span>
+      <h2>Fünf Stufen, vierzig Cluster</h2>
+      <p class="sub">Jedes Cluster umfasst 25 Karten und endet in einem Bossfight. Nichts ist versteckt — die vollständige Liste steht auf der <a href="wordlists.de.html?lang=French&amp;set=Core">Wortlisten-Seite</a>, frei lesbar vor dem Kauf.</p>
+      <div class="tiers">
+        <div class="tierrow">
+          <div class="tno">Stufe 1</div>
+          <div class="tcl">Erster Kontakt · Menschen &amp; Familie · Der Körper · Grundverben · Essen &amp; Mahlzeiten · Zählen &amp; Farbe · Zeit &amp; Kalender · Erste Landung</div>
+          <div class="tct">8 Cluster · 200 Karten</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">Stufe 2</div>
+          <div class="tcl">Aufwachen · In der Stadt · Markt &amp; Mahlzeiten · Monate &amp; Daten · Enge Bande · Alltag · Dinge tun · Sichere Landung</div>
+          <div class="tct">8 Cluster · 200 Karten</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">Stufe 3</div>
+          <div class="tcl">Sich fertig machen · Zu Hause · Wind &amp; Regen · Läden &amp; Geld · Menschen &amp; Stimmungen · Unterwegs · Vergangenes · Ruhig bleiben</div>
+          <div class="tct">8 Cluster · 200 Karten</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">Stufe 4</div>
+          <div class="tcl">Die Arbeitswelt · Reisen · In der Schule · Die wilde Welt · Getier &amp; Spaß · Geist &amp; Meinung · Viele Eigenschaften · Abheben</div>
+          <div class="tct">8 Cluster · 200 Karten</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">Stufe 5</div>
+          <div class="tcl">Verwaltung &amp; Recht · Medien &amp; Kunst · Digitales Leben · Feste · Große Ideen · Feine Nuancen · Verben des Denkens · Der Gipfel</div>
+          <div class="tct">8 Cluster · 200 Karten</div>
+        </div>
+      </div>
+      <p class="tierfoot"><span>5 Stufen · 40 Cluster · <b>1.000 Karten</b></span><span>20 Referenzlektionen</span><span>A1–A2-Grundlage</span></p>
+    </div>
+  </section>
+
+  <!-- SENTENCE LADDER -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Sieh, wie es wächst</span>
+      <h2>Zunehmend anspruchsvoller</h2>
+      <p class="sub">Die Beispielsätze werden Stufe für Stufe komplexer — und benutzen nie Grammatik, die du noch nicht kennst.</p>
+      <ol class="ladder">
+        <li class="reveal"><span class="tgt fr">J'ai deux frères et une sœur.</span><span class="en">Ich habe zwei Brüder und eine Schwester.</span></li>
+        <li class="reveal"><span class="tgt fr">Le week-end je cours, mais le matin je marche.</span><span class="en">Am Wochenende renne ich, aber morgens gehe ich.</span></li>
+        <li class="reveal"><span class="tgt fr">Elle couche son fils chaque soir à huit heures.</span><span class="en">Sie bringt ihren Sohn jeden Abend um acht Uhr ins Bett.</span></li>
+        <li class="reveal"><span class="tgt fr">Il pleuvait beaucoup&nbsp;; ainsi, nous sommes restés à la maison.</span><span class="en">Es regnete viel; so sind wir zu Hause geblieben.</span></li>
+        <li class="reveal"><span class="tgt fr">Pourriez-vous m'expliquer pourquoi vous êtes encore en retard aujourd'hui&nbsp;?</span><span class="en">Könnten Sie mir erklären, warum Sie heute schon wieder zu spät sind?</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- GENDER COLOUR-CODING -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Auf einen Blick</span>
+      <h2>le · la, in Farbe</h2>
+      <p class="sub">Jedes Substantiv trägt seinen Artikel, farblich nach Genus codiert — so lernst du das Genus <i>mit</i> dem Wort statt hinterher. Tippe auf eine Karte, um sie umzudrehen.</p>
+      <div class="legend">
+        <span><i class="lm"></i> le — maskulin</span>
+        <span><i class="lf"></i> la — feminin</span>
+      </div>
+      <div class="cards">
+        <div class="card m reveal">
+          <div class="art">le</div>
+          <div class="word">travail</div>
+          <div class="ex fr">Il va au travail à quelle heure&nbsp;?</div>
+          <div class="trans">die Arbeit — „Um wie viel Uhr geht er zur Arbeit?“ Maskulin. Unregelmäßiger Plural: <i>travaux</i>. Umgangssprachlich: <i>le boulot</i>.</div>
+          <div class="hint">zum Umdrehen tippen</div>
+        </div>
+        <div class="card f reveal">
+          <div class="art">la</div>
+          <div class="word">maison</div>
+          <div class="ex fr">Notre maison est blanche et nouvelle.</div>
+          <div class="trans">das Haus — „Unser Haus ist weiß und neu.“ Feminin. <i>À la maison</i> = zu Hause, eine der häufigsten Wendungen der Sprache.</div>
+          <div class="hint">zum Umdrehen tippen</div>
+        </div>
+        <div class="card f reveal">
+          <div class="art">la</div>
+          <div class="word">eau</div>
+          <div class="ex fr">Je bois de l'eau.</div>
+          <div class="trans">das Wasser — „Ich trinke Wasser.“ Feminin, gegen das Muster <i>-eau</i>, das <i>le couteau</i> maskulin macht. Auf der Karte elidiert es zu <i>l'eau</i> — und bleibt magenta.</div>
+          <div class="hint">zum Umdrehen tippen</div>
+        </div>
+      </div>
+
+      <div class="elide reveal">
+        <div class="el m">
+          <div class="from">le ami</div>
+          <div class="big"><span class="a">l'</span>ami</div>
+          <div class="gloss">der Freund — immer noch <b>blau</b>, immer noch maskulin.</div>
+        </div>
+        <div class="el f">
+          <div class="from">la eau</div>
+          <div class="big"><span class="a">l'</span>eau</div>
+          <div class="gloss">das Wasser — immer noch <b>magenta</b>, immer noch feminin.</div>
+        </div>
+      </div>
+      <p class="elide-note">An der Élision verlieren die meisten Lernenden das Genus: Vor einem Vokal fallen <i>le</i> und <i>la</i> beide zu <i>l'</i> zusammen, und der Hinweis verschwindet. FlashBoss behält die Farbe unter dem Apostroph, damit <i>l'ami</i> auf einen Blick maskulin und <i>l'eau</i> feminin liest. Die Wörter mit h aspiré, die sich der Elision <i>verweigern</i> — <i>le héros</i>, <i>la honte</i> —, bekommen ihre eigene Lektion.</p>
+    </div>
+  </section>
+
+  <!-- REFERENCE LESSONS -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Mehr als eine Wortliste</span>
+      <h2>Zwanzig Lektionen, der Reihe nach</h2>
+      <p class="sub">Eine Referenzlektion schaltet genau an der Karte frei, an der du sie zuerst brauchst, und bleibt danach verfügbar. Alle zwanzig sind auf der <a href="lessons.de.html?lang=French">Lektionen-Seite</a> frei lesbar — auf Deutsch.</p>
+      <ul class="lessons">
+        <li><span class="no">01</span>Französische Aussprache<span class="d">Vokale, die Nasale, die stummen Endungen und die CaReFuL-Konsonanten, die am Wortende überleben.</span></li>
+        <li><span class="no">03</span>Tu und vous<span class="d">Wer was bekommt, warum <i>vous</i> immer die sichere Eröffnung ist, und was <i>on peut se tutoyer</i> bedeutet, wenn es dir jemand anbietet.</span></li>
+        <li><span class="no">06</span>Il y a &amp; Uhrzeit<span class="d">Die zwei Strukturen, die du brauchst, bevor du mit irgendwem irgendetwas verabreden kannst.</span></li>
+        <li><span class="no">08</span>Liaison &amp; Élision<span class="d">Warum <i>l'hôtel</i> den Vokal verliert und <i>aux hôtels</i> ein [z] dazugewinnt.</span></li>
+        <li><span class="no">12</span>Wörter mit h aspiré<span class="d">Die kurze, geschlossene Liste, bei der das stumme h die Elision trotzdem blockiert: <i>la honte</i>, niemals <i>l'honte</i>.</span></li>
+        <li><span class="no">13</span>Avoir oder être?<span class="d">Welches Hilfsverb das passé composé nimmt — und die Verben, die auf <i>être</i> bestehen.</span></li>
+        <li><span class="no">14</span>Est — ein Homograph<span class="d">Eine Schreibung, zwei Wörter, zwei Aussprachen: <i>il est</i> [ɛ] gegen <i>l'est</i> [ɛst].</span></li>
+        <li><span class="no">17</span>Einstieg in den Subjonctif<span class="d">Der Modus, den das Deutsche im Konjunktiv noch kennt — hier genau da, wo die Karten ihn zu brauchen beginnen.</span></li>
+      </ul>
+      <p class="sub" style="margin:22px 0 0;">Außerdem enthalten: eine Karte lesen, das Präsens, die Verneinung, der Impératif, futur proche, passé composé, reflexive Verben, imparfait, conditionnel présent, futur simple, <i>héros</i> gegen <i>héroïne</i> — und eine Abschlusslektion darüber, wie es weitergeht.</p>
+    </div>
+  </section>
+
+  <!-- FALSE FRIENDS -->
+  <section class="wrap">
+    <div class="reveal">
+      <h2>Die Wörter, die dir bekannt vorkommen</h2>
+      <p class="sub">Französisch teilt tausende Wörter mit dem Englischen und dem Deutschen — und einige davon lügen dich an. Die Karten sagen es dazu. Zum Umdrehen tippen.</p>
+      <div class="cards reveal">
+        <div class="card idiom"><div class="art">falscher Freund</div><div class="word">rester</div>
+          <div class="ex fr">Reste ici avec moi&nbsp;!</div>
+          <div class="trans">bleiben, verbleiben — <b>nicht</b> „ausruhen“ (engl. <i>to rest</i>). „Bleib hier bei mir!“ Ausruhen heißt <i>se reposer</i>.</div><div class="hint">zum Umdrehen tippen</div></div>
+        <div class="card idiom"><div class="art">falscher Freund</div><div class="word">la monnaie</div>
+          <div class="ex fr">Est-ce que vous avez de la monnaie, monsieur&nbsp;?</div>
+          <div class="trans">das Wechselgeld, Münzen; eine Währung — <b>nicht</b> Geld im Allgemeinen, das ist <i>l'argent</i>. „Haben Sie Kleingeld, mein Herr?“</div><div class="hint">zum Umdrehen tippen</div></div>
+        <div class="card idiom"><div class="art">falscher Freund</div><div class="word">le coin</div>
+          <div class="ex fr">Le café est juste au coin de la rue, à droite.</div>
+          <div class="trans">die Ecke — <b>keine</b> Münze (engl. <i>coin</i>), das wäre <i>une pièce</i>. „Das Café ist gleich an der Straßenecke, rechts.“</div><div class="hint">zum Umdrehen tippen</div></div>
+        <div class="card idiom"><div class="art">Register · falscher Freund</div><div class="word">sympa</div>
+          <div class="ex fr">Ton nouveau collègue a l'air vraiment sympa.</div>
+          <div class="trans">nett, freundlich — <b>nicht</b> „mitfühlend“. „Dein neuer Kollege wirkt wirklich nett.“ Umgangssprachlich, und die Karte markiert es als <i>tu</i>-Register, damit du weißt, wohin es gehört.</div><div class="hint">zum Umdrehen tippen</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKS -->
+  <section class="wrap">
+    <div class="reveal">
+      <h2>Das Pareto-Prinzip</h2>
+      <p class="sub">3 Pakete. 10 % des französischen Wortschatzes für 90 % der französischen Anwendungsfälle. Core ist draußen; die anderen beiden folgen der Reihe nach.</p>
+      <div class="packs">
+        <a class="pack" href="wordlists.de.html?lang=French&amp;set=Core">
+          <div class="n">Core</div>
+          <div class="lvl">A1–A2 · 1.000 Wörter</div>
+          <p>Vom ersten Kontakt bis zur Zugehörigkeit, in fünf Stufen, mit zwanzig Referenzlektionen. Der Weg hinein.</p>
+          <span class="soon">jetzt erhältlich</span>
+        </a>
+        <div class="pack locked">
+          <div class="n">Pareto 1</div>
+          <div class="lvl">B1–B2 · 1.000 Wörter</div>
+          <p>Die nächsten tausend — Alltagsfranzösisch im Tempo, und das lockere gesprochene Register. Setzt Core voraus.</p>
+          <span class="soon">folgt der Reihe nach</span>
+        </div>
+        <div class="pack locked">
+          <div class="n">Pareto 2</div>
+          <div class="lvl">B2–C1 · 1.000 Wörter</div>
+          <p>Der gebildete Standard: förmliches Register, strukturierte Argumentation, die Presse. Setzt Pareto 1 voraus.</p>
+          <span class="soon">folgt der Reihe nach</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHOD -->
+  <section class="wrap method">
+    <div class="frame reveal">
+      <span class="tag">So bleibt es hängen</span>
+      <h2>Karteikarten als integriertes System</h2>
+      <dl>
+        <dt>Fibonacci-SRS</dt><dd>Bewerte jede Karte mit 0–5. Je besser du ein Wort kennst, desto länger dauert es, bis es wiederkommt — Spaced Repetition auf Fibonacci-Intervallen.</dd>
+        <dt>Bossfights</dt><dd>Jedes der vierzig Cluster ist durch ein Duell gesperrt, das du nur gewinnst, wenn du dich deinen schwierigsten Wörtern stellst und sie überwindest.</dd>
+        <dt>Abschluss</dt><dd>Besiege ein Cluster, und seine Karten verlassen dein tägliches Deck für immer. Das Deck wird kleiner, während du lernst.</dd>
+        <dt>Sprachausgabe</dt><dd>Klares französisches Piper-Text-to-Speech auf jedem Zielwort und jedem Beispielsatz — die Stimme <i>siwis</i> (fr_FR), metropolitanes Französisch. Es ist Synthese, keine Aufnahme einer sprechenden Person.</dd>
+        <dt>Deine Sprache</dt><dd>Alle 1.000 Karten tragen ihre Übersetzung <i>und</i> ihre Anmerkungen auf Deutsch, Japanisch und Spanisch ebenso wie auf Englisch, und alle 20 Referenzlektionen haben deutsche, spanische und japanische Geschwisterseiten. Die Oberfläche spricht dieselben vier. French Core ist ohne ein Wort Englisch vollständig spielbar.</dd>
+        <dt>Genus auf einen Blick</dt><dd>Blau für <i>le</i>, magenta für <i>la</i>, auf jedem Substantiv — und die Farbe überlebt die Elision zu <i>l'</i>.</dd>
+        <dt>Häufigkeit</dt><dd>Die Wortliste ist aus Häufigkeitsdaten von Untertitel-Korpora gebaut — das Französisch, das du wirklich hörst, zuerst.</dd>
+        <dt>Lektionen</dt><dd>Zwanzig Referenzlektionen erscheinen genau an der Stelle der Abfolge, an der sie freischalten, was du als Nächstes liest.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="wrap faq">
+    <div class="reveal">
+      <h2>Fragen</h2>
+      <p class="sub">Was Leute vor dem Kauf wissen wollen.</p>
+
+      <details>
+        <summary>Kann ich den Kurs auf Deutsch spielen?</summary>
+        <p class="a">Vollständig. Alle 1.000 Karten tragen ihre deutsche Übersetzung <i>und</i> ihre deutschen Anmerkungen, jeder Beispielsatz hat seine deutsche Übersetzung, alle 20 Referenzlektionen gibt es als deutsche Fassung, und die Oberfläche des Spiels ist auf Deutsch. Du brauchst kein Englisch. Dasselbe gilt für Spanisch und Japanisch.</p>
+      </details>
+
+      <details>
+        <summary>Welches Französisch ist das?</summary>
+        <p class="a">Metropolitanes Französisch — das Französisch Frankreichs — von der ersten bis zur letzten Karte, im Wortschatz, in den Beispielsätzen und in der Stimme.</p>
+      </details>
+
+      <details>
+        <summary>Brauche ich noch etwas, um es zu spielen?</summary>
+        <p class="a">Ja. French Core ist ein DLC für das FlashBoss-Grundspiel, du brauchst also auch das Grundspiel. Alles andere — die Lektionen, die Sprachausgabe, die Bossfights — steckt im Paket.</p>
+      </details>
+
+      <details>
+        <summary>Ist die Sprachausgabe von einer muttersprachlichen Person aufgenommen?</summary>
+        <p class="a">Nein, und wir behaupten nichts anderes. Jedes Zielwort und jeder Beispielsatz wird von einer neuronalen Text-to-Speech-Stimme gesprochen — der Piper-Stimme <i>siwis</i> (fr_FR), trainiert auf einem Datensatz aus Frankreich. Sie ist klar und gleichmäßig, und sie ist Synthese, kein Mensch.</p>
+      </details>
+
+      <details>
+        <summary>Auf welches Niveau bringt mich Core?</summary>
+        <p class="a">Auf eine A1–A2-Grundlage: 1.000 hochfrequente Wörter und zwanzig Grammatiklektionen zu présent, passé composé, imparfait, conditionnel und futur, dazu ein Einstieg in den Subjonctif. Am Ende kannst du einfaches Französisch lesen und einem A2-Kurs folgen — und hast unterwegs über 7.000 Wörter Französisch im Kontext gelesen.</p>
+      </details>
+
+      <details>
+        <summary>Was ist mit Pareto 1 und Pareto 2?</summary>
+        <p class="a">Beide sind geschrieben — je 1.000 Wörter — und sie kommen der Reihe nach. Pareto 1 baut auf Core auf, mit den nächsten tausend hochfrequenten Wörtern und dem lockeren gesprochenen Register; Pareto 2 greift nach dem gebildeten Standard. Noch keine Termine.</p>
+      </details>
+
+      <details>
+        <summary>Kann ich die Wörter vor dem Kauf sehen?</summary>
+        <p class="a">Alle. Die komplette Core-Wortliste steht auf der <a href="wordlists.de.html?lang=French&amp;set=Core">Wortlisten-Seite</a>, und alle zwanzig Referenzlektionen auf der <a href="lessons.de.html?lang=French">Lektionen-Seite</a> — kostenlos, druckbar, ohne Konto.</p>
+      </details>
+
+      <details>
+        <summary>Gibt es eine Demo?</summary>
+        <p class="a">Es gibt einen spielbaren Bossfight im Browser, falls du wissen willst, wie sich der Kampf anfühlt, bevor du dich festlegst: <a href="https://flashboss-demo.pages.dev/">Demo testen</a>.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final wrap reveal">
+    <h2>Fang beim Sie an.</h2>
+    <p>Tausend Wörter, vierzig Bossfights und zwanzig Lektionen liegen zwischen dir und dem Moment, in dem dir jemand das <i>tu</i> anbietet.</p>
+    <p style="margin-top:26px;"><a class="btn hot" href="https://store.steampowered.com/app/4475080/FlashBoss__French_Core/?utm_source=website-french&l=german" target="_blank" rel="noopener">FlashBoss auf Steam holen &rarr;</a></p>
+    <p class="also">oder lies zuerst die <a href="wordlists.de.html?lang=French&amp;set=Core">Wortliste</a> und die <a href="lessons.de.html?lang=French">Lektionen</a> — beide kostenlos.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p class="epi">&ldquo;Tout le monde est content de te voir.&rdquo;<span class="tr">Alle freuen sich, dich zu sehen.</span><span class="epi-cite">French Core · Stufe 2</span></p>
+  <span class="footer-links">
+    <a href="home.de.html">Start</a>
+    <span class="div">·</span>
+    <a href="packs.de.html">Pakete</a>
+    <span class="div">·</span>
+    <a href="manual/">Komplettlösung (Beta)</a>
+    <span class="div">·</span>
+    <a href="https://store.steampowered.com/app/4475080/FlashBoss__French_Core/?utm_source=website-french&l=german" target="_blank" rel="noopener">steam</a>
+  </span>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+document.querySelectorAll('.card').forEach(function(c){c.addEventListener('click',function(){c.classList.toggle('flipped');});});
+(function(){
+  var root=document.documentElement,ticking=false;
+  function update(){var max=document.body.scrollHeight-window.innerHeight;var p=max>0?Math.min(1,Math.max(0,window.scrollY/max)):0;root.style.setProperty('--mood',(p*p*(3-2*p)).toFixed(3));ticking=false;}
+  window.addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(update);ticking=true;}},{passive:true});update();
+})();
+</script>
+<script>
+// language dropdown: button toggles the menu; click-away / Esc closes it
+(function(){
+  var sw=document.querySelector('.lang-switch'); if(!sw) return;
+  var btn=sw.querySelector('.lang-toggle'), menu=sw.querySelector('.lang-menu');
+  function close(){ menu.hidden=true; btn.setAttribute('aria-expanded','false'); }
+  btn.addEventListener('click', function(e){ e.stopPropagation(); var willOpen=menu.hidden; menu.hidden=!willOpen; btn.setAttribute('aria-expanded', String(willOpen)); });
+  document.addEventListener('click', function(e){ if(!sw.contains(e.target)) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
+</script>
+</body>
+</html>
