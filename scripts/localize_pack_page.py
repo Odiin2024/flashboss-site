@@ -27,11 +27,11 @@ A page with no hero ".actions reveal" block (e.g. home, about) just gets the
 import re, sys
 
 DEMO_URL = "https://flashboss-demo.pages.dev/"
-DEMO_LABEL = {"en": "Try the demo", "de": "Demo testen", "es": "Probar demo", "ja": "デモを試す"}
-STEAM_LANG = {"de": "german", "es": "spanish", "ja": "japanese"}
+DEMO_LABEL = {"en": "Try the demo", "de": "Demo testen", "es": "Probar demo", "ja": "デモを試す", "zh": "试玩演示"}
+STEAM_LANG = {"de": "german", "es": "spanish", "ja": "japanese", "zh": "schinese"}
 
 def lang_of(fn):
-    for suf, code in (("de", "de"), ("es", "es"), ("ja", "ja")):
+    for suf, code in (("de", "de"), ("es", "es"), ("ja", "ja"), ("zh", "zh")):
         if fn.endswith(f".{suf}.html"):
             return code
     return "en"
