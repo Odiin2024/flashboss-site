@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ja">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>En desarrollo — FlashBoss</title>
+<title>開発中 — FlashBoss</title>
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/in-development.html">
 <link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/in-development.de.html">
@@ -13,8 +13,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
-:root{ --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --accent:#e0a93f; --blue:#7ec8ff; --line:#3a3120; --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+:root{ --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --accent:#e0a93f; --blue:#7ec8ff; --line:#3a3120; --mono:'JetBrains Mono','M PLUS 1 Code', ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
 *{box-sizing:border-box; margin:0; padding:0;}
 body{ font-family:var(--mono); background:var(--bg); color:var(--ink); min-height:100vh; min-height:100dvh; display:flex; align-items:center; justify-content:center; padding:24px; line-height:1.6; -webkit-font-smoothing:antialiased; }
 .card{ width:100%; max-width:520px; border:1px solid var(--line); background:var(--panel); padding:36px 30px 30px; position:relative; box-shadow:0 0 40px rgba(0,0,0,.5); }
@@ -44,28 +45,29 @@ h1{ font-size:clamp(26px,7vw,40px); font-weight:800; letter-spacing:.04em; color
 .lang-menu a[aria-current="true"]{ color:var(--accent); }
 .lang-menu a[aria-current="true"]:hover{ color:var(--bg); }
 </style>
+<style>body{line-height:1.75;}</style>
 </head>
 <body>
   <div class="lang-switch">
-    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Elegir idioma">ES<span class="lang-caret">&#9662;</span></button>
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="言語を選択">JA<span class="lang-caret">&#9662;</span></button>
     <ul class="lang-menu" hidden>
       <li><a href="in-development.html">English</a></li>
       <li><a href="in-development.de.html">Deutsch</a></li>
-      <li><a href="in-development.es.html" aria-current="true">Español</a></li>
-      <li><a href="in-development.ja.html">日本語</a></li>
+      <li><a href="in-development.es.html">Español</a></li>
+      <li><a href="in-development.ja.html" aria-current="true">日本語</a></li>
     </ul>
   </div>
   <main class="card">
     <span class="tag">FlashBoss · admin</span>
-    <h1>En desarrollo<span class="cursor"></span></h1>
+    <h1>開発中<span class="cursor"></span></h1>
     <div class="rows">
-      <div><span class="k">página</span><span class="v">in-development.es.html</span></div>
-      <div><span class="k">estado</span><span class="v">en desarrollo</span></div>
-      <div><span class="k">eta</span><span class="v">pronto™</span></div>
+      <div><span class="k">ページ</span><span class="v">in-development.ja.html</span></div>
+      <div><span class="k">状態</span><span class="v">開発中</span></div>
+      <div><span class="k">eta</span><span class="v">近日™</span></div>
     </div>
     <div class="bar"><i></i></div>
-    <p class="joke">Sí — la página que enumera lo que está en desarrollo está, ella misma, en desarrollo.</p>
-    <a class="back" href="packs.es.html">← volver a los paquetes</a>
+    <p class="joke">はい — 開発中のものを一覧にするこのページが、それ自体まだ開発中です。</p>
+    <a class="back" href="packs.ja.html">← パックへ戻る</a>
   </main>
 <script>
 (function(){
