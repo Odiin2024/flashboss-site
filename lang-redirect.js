@@ -24,24 +24,24 @@
    ============================================================ */
 (function () {
   var AVAIL = {
-    'home':           ['de', 'es', 'ja'],
-    'packs':          ['de', 'es', 'ja'],
-    'about':          ['de', 'es', 'ja'],
-    'resources':      ['de', 'es', 'ja'],
-    'wordlists':      ['de', 'es', 'ja'],
-    'lessons':        ['de', 'es', 'ja'],
-    'latin-roots':    ['de', 'es', 'ja'],
-    'french':         ['de', 'es', 'ja'],
-    'toki-pona':      ['de', 'es', 'ja'],
-    'german-roots':   ['de', 'es', 'ja'],
-    'norman-roots':   ['de', 'es', 'ja'],
-    'german':         ['de', 'es', 'ja'],
-    'spanish':        ['de', 'es', 'ja'],
-    'italian':        ['de', 'es', 'ja'],
-    'esperanto':      ['de', 'es', 'ja'],
-    'index':          ['de', 'es', 'ja'],
-    'affiliate':      ['de', 'es', 'ja'],
-    'in-development':  ['de', 'es', 'ja']
+    'home':           ['de', 'es', 'ja', 'zh'],
+    'packs':          ['de', 'es', 'ja', 'zh'],
+    'about':          ['de', 'es', 'ja', 'zh'],
+    'resources':      ['de', 'es', 'ja', 'zh'],
+    'wordlists':      ['de', 'es', 'ja', 'zh'],
+    'lessons':        ['de', 'es', 'ja', 'zh'],
+    'latin-roots':    ['de', 'es', 'ja', 'zh'],
+    'french':         ['de', 'es', 'ja', 'zh'],
+    'toki-pona':      ['de', 'es', 'ja', 'zh'],
+    'german-roots':   ['de', 'es', 'ja', 'zh'],
+    'norman-roots':   ['de', 'es', 'ja', 'zh'],
+    'german':         ['de', 'es', 'ja', 'zh'],
+    'spanish':        ['de', 'es', 'ja', 'zh'],
+    'italian':        ['de', 'es', 'ja', 'zh'],
+    'esperanto':      ['de', 'es', 'ja', 'zh'],
+    'index':          ['de', 'es', 'ja', 'zh'],
+    'affiliate':      ['de', 'es', 'ja', 'zh'],
+    'in-development':  ['de', 'es', 'ja', 'zh']
   };
   try {
     var file = location.pathname.split('/').pop();
