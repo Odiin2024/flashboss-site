@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="zh-Hans">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Italiano — FlashBoss</title>
-<meta name="description" content="FlashBoss Italiano: el idioma de volver a casa. De 'Sono uno studente' al tren de las nueve a casa de tu nonna. 3.000 palabras, veinte lecciones de referencia, repetición espaciada, boss fights, codificación de género por color con elisión, y síntesis de voz.">
+<title>Italian — 意大利语课程 | FlashBoss</title>
+<meta name="description" content="FlashBoss Italian：一门归乡的语言。从「Sono uno studente」到开往奶奶家的 9 点火车。3,000 个单词、20 节参考课程、间隔重复、头目战、兼顾省音的词性颜色标记、TTS 语音。">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/italian.html">
 <link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/italian.de.html">
 <link rel="alternate" hreflang="es" href="https://odiin2024.github.io/flashboss-site/italian.es.html">
@@ -14,6 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
    FlashBoss — Italian page.  Same chassis as the German page;
@@ -23,7 +24,7 @@
    Pack buttons are placeholders — Code wires the three Steam links.
    ============================================================ */
 :root{
-  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --mono:'JetBrains Mono','Noto Sans SC', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
   --masc:#5fb0ff; --fem:#ff7fb0;
   --vis-bg:#14110a; --vis-ink:#f0e2c0; --vis-dim:#c2ac7d; --vis-accent:#e0a93f;
   --bel-bg:#120a08; --bel-ink:#f1d9cf; --bel-dim:#7f968a; --bel-accent:#5fd79a;
@@ -122,7 +123,7 @@ p.body b{color:var(--vis-accent);}
 
 .ladder{list-style:none; margin:0; padding:0; counter-reset:tier;}
 .ladder li{counter-increment:tier; border-left:2px solid var(--line); padding:18px 0 18px 26px; margin-left:8px; position:relative;}
-.ladder li::before{content:"E" counter(tier); position:absolute; left:-15px; top:18px;
+.ladder li::before{content:"T" counter(tier); position:absolute; left:-15px; top:18px;
   background:color-mix(in oklab, var(--vis-bg), var(--bel-bg) calc(var(--mood)*100%)); font-size:11px; font-weight:700; padding:2px 0;
   color:color-mix(in oklab, var(--vis-accent), var(--bel-accent) calc(var(--mood)*100%));}
 .ladder .ger{font-weight:500;}
@@ -195,38 +196,35 @@ footer .dante{font-style:italic; opacity:.78; max-width:58ch; margin:0 auto 8px;
 footer .dante .tr{font-style:normal; opacity:.85; display:block; margin-top:10px; font-size:11.5px;}
 footer .src{display:block; margin:6px auto 16px; opacity:.6; font-size:11px;}
 footer a{color:var(--bel-dim);}
-
-.bridge-banner{font-family:var(--mono); font-size:12.5px; line-height:1.55; text-align:center; padding:11px 24px; color:#f0e6d3; background:rgba(126,200,255,.12); border-top:1px solid rgba(126,200,255,.28); border-bottom:1px solid rgba(126,200,255,.28);}
-.bridge-banner b{color:#7ec8ff; font-weight:700;}
 </style>
+<style>body{line-height:1.75;}</style>
 </head>
 <body>
 <div class="overlay"></div>
 <div class="vignette"></div>
 
 <nav>
-  <span class="brand"><a class="logo" href="index.es.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.es.html">inicio</a><span class="sep"> · </span><a href="packs.es.html">paquetes</a><span class="sep"> · </span><span class="here">italiano</span></span>
+  <span class="brand"><a class="logo" href="index.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.html">首页</a><span class="sep"> · </span><a href="packs.html">卡包</a><span class="sep"> · </span><span class="here">Italian</span></span>
   <span class="links">
-    <a href="manual/index.html">guía completa (beta)</a>
-    <a href="resources.es.html">recursos</a>
-    <a class="steam" href="https://store.steampowered.com/app/4475030/FlashBoss__Italian_Core/?utm_source=website&l=spanish">steam</a>
+    <a href="manual/index.html">攻略指南（Beta）</a>
+    <a href="resources.html">资源</a>
+    <a class="steam" href="https://store.steampowered.com/app/4475030/FlashBoss__Italian_Core/?utm_source=website&l=schinese" target="_blank" rel="noopener">Steam</a>
   </span>
   <span class="nav-mobile">
-    <a href="home.es.html">inicio</a>
-    <span class="r"><a href="resources.es.html">recursos</a><a href="https://store.steampowered.com/app/4475030/FlashBoss__Italian_Core/?utm_source=website&l=spanish">steam</a></span>
+    <a href="home.html">首页</a>
+    <span class="r"><a href="resources.html">资源</a><a href="https://store.steampowered.com/app/4475030/FlashBoss__Italian_Core/?utm_source=website&l=schinese" target="_blank" rel="noopener">Steam</a></span>
   </span>
   <div class="lang-switch">
-    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Elegir idioma">ES<span class="lang-caret">▾</span></button>
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="选择语言">ZH<span class="lang-caret">▾</span></button>
     <ul class="lang-menu" hidden>
       <li><a href="italian.html">English</a></li>
       <li><a href="italian.de.html">Deutsch</a></li>
-      <li><a href="italian.es.html" aria-current="true">Español</a></li>
+      <li><a href="italian.es.html">Español</a></li>
       <li><a href="italian.ja.html">日本語</a></li>
-      <li><a href="italian.zh.html">简体中文</a></li>
+      <li><a href="italian.zh.html" aria-current="true">简体中文</a></li>
     </ul>
   </div>
 </nav>
-<div class="bridge-banner">La interfaz de FlashBoss ya está completamente en <b>español</b>. Las traducciones de las cartas de este curso están en inglés. <br>Ya en español: el curso de alemán (cada carta y todas las lecciones), Esperanto (Core), Toki Pona, Francés (Core). En curso: Inglés (Core), Francés Pareto 1. En preparación: Francés Pareto 2, Latín, griego antiguo.</div>
 
 <main>
 
@@ -234,13 +232,13 @@ footer a{color:var(--bel-dim);}
   <header class="hero">
     <div class="wrap">
       <h1 class="reveal">Italiano<span class="cursor"></span></h1>
-      <p class="tagline reveal">Aprende el idioma que necesitas para sentirte en casa.</p>
-      <p class="sig reveal">Escuchar · Leer · Repetir · Calificar · Luchar</p>
-      <p class="lede reveal">Empiezas con <b class="it">Sono uno studente.</b> Al final vas en el tren de las nueve a casa de tu <b>nonna</b>.</p>
+      <p class="tagline reveal">学会这门语言，找到家的感觉。</p>
+      <p class="sig reveal">听 · 读 · 重复 · 评分 · 战斗</p>
+      <p class="lede reveal">起点是一句 <b class="it">Sono uno studente.</b>（我是学生）。到最后，你已坐上开往 <b>nonna</b>（奶奶）家的 9 点火车。</p>
       <div class="actions reveal">
-        <a class="btn" href="wordlists.es.html?lang=Italian">Vocabulario</a>
-        <a class="btn" href="lessons.es.html?lang=Italian">Lecciones</a>
-        <a class="btn" href="https://flashboss-demo.pages.dev/">Probar demo</a>
+        <a class="btn" href="wordlists.html?lang=Italian">单词表</a>
+        <a class="btn" href="lessons.html?lang=Italian">课程</a>
+        <a class="btn" href="https://flashboss-demo.pages.dev/">试玩演示</a>
       </div>
     </div>
   </header>
@@ -248,19 +246,19 @@ footer a{color:var(--bel-dim);}
   <!-- DESIGN -->
   <section class="wrap">
     <div class="frame">
-      <span class="tag">Diseño de Italian Core</span>
-      <h2>De invitado a familia</h2>
+      <span class="tag">Italian Core 的设计</span>
+      <h2>从客人到家人</h2>
       <p class="sub it">Da ospite a famiglia.</p>
-      <p class="body">Italian Core son mil palabras en cinco etapas, secuenciadas como un regreso a casa. Las primeras tres etapas son la Italia que <b>visitas</b> — la piazza, la mesa, el mercado a las ocho de la mañana. Supervivencia, vida diaria, y luego las primeras conversaciones de verdad y el pasado para contarlas. <span class="it">La dolce vita</span>, enseñada sin rodeos.</p>
-      <p class="body">Luego se vuelve hacia dentro. Las etapas posteriores son la Italia a la que <b>perteneces</b> — el <span class="it">imperfetto</span> que te deja narrar tus veranos, los modismos que nadie le traduce a un forastero, y el registro que separa en voz baja a la familia del turista.</p>
+      <p class="body">Italian Core 是五个层级、1,000 个单词，按一场归乡之旅的顺序编排。前三个层级是你<b>造访</b>的意大利——广场、餐桌、早上 8 点的市场。先是应急用语、日常生活，然后是第一次真正的对话，以及讲述它们所需的过去时。<span class="it">La dolce vita</span>（甜美的生活），原原本本地教给你。</p>
+      <p class="body">然后转向内里。后面的层级是你<b>归属</b>的意大利——让你能讲述那些夏天的 <span class="it">imperfetto</span>（未完成过去时），没有人会替外人翻译的习语，以及悄悄把家人与游客区分开来的语体。</p>
       <div class="movements reveal">
         <div class="mv vis">
-          <div class="h">Etapas 1–3 · Visita</div>
-          <p>Supervivencia, vida diaria, moverte — luego el <span class="it">passato prossimo</span>, reflexivos, modales y pronombres clíticos. La Italia a la que viniste.</p>
+          <div class="h">层级 1–3 · 造访</div>
+          <p>应急用语、日常生活、出行往来——接着是 <span class="it">passato prossimo</span>（近过去时）、自反动词、情态动词与附着代词。你为之而来的意大利。</p>
         </div>
         <div class="mv bel">
-          <div class="h">Etapas 4–5 · Pertenecer</div>
-          <p>El giro de registro <span class="it">tu</span>/<span class="it">Lei</span>, el <span class="it">imperfetto</span>, modismos, luego futuro, condicional y el primer subjuntivo. La Italia por la que te quedas.</p>
+          <div class="h">层级 4–5 · 归属</div>
+          <p><span class="it">tu</span>／<span class="it">Lei</span> 的语体转换、<span class="it">imperfetto</span>、习语，然后是将来时、条件式与最初的虚拟式。你为之留下的意大利。</p>
         </div>
       </div>
     </div>
@@ -269,15 +267,15 @@ footer a{color:var(--bel-dim);}
   <!-- SENTENCE LADDER -->
   <section class="wrap">
     <div class="frame reveal">
-      <span class="tag">Míralo crecer</span>
-      <h2>Avanza con FlashBoss</h2>
-      <p class="sub">Las frases de ejemplo se vuelven más complejas etapa a etapa.</p>
+      <span class="tag">看例句成长</span>
+      <h2>与 FlashBoss 一同进步</h2>
+      <p class="sub">例句的复杂度随层级逐级上升。</p>
       <ol class="ladder">
-        <li class="reveal"><span class="ger it">Sono uno studente.</span><span class="en">I am a student.</span></li>
-        <li class="reveal"><span class="ger it">Ogni mattina compro il pane fresco al mercato vicino a casa.</span><span class="en">Every morning I buy fresh bread at the market near home.</span></li>
-        <li class="reveal"><span class="ger it">Ieri ho preso il treno delle nove per andare a trovare mia nonna.</span><span class="en">Yesterday I took the nine o'clock train to go and visit my grandmother.</span></li>
-        <li class="reveal"><span class="ger it">Da bambino, passavo le estati al mare con i miei cugini in Sicilia.</span><span class="en">As a child, I spent the summers by the sea with my cousins in Sicily.</span></li>
-        <li class="reveal"><span class="ger it">Spero che tu possa venire alla festa, anche se so che sei molto impegnato.</span><span class="en">I hope you can come to the party, even though I know you're very busy.</span></li>
+        <li class="reveal"><span class="ger it">Sono uno studente.</span><span class="en">我是学生。</span></li>
+        <li class="reveal"><span class="ger it">Ogni mattina compro il pane fresco al mercato vicino a casa.</span><span class="en">每天早上，我都在家附近的市场买新鲜面包。</span></li>
+        <li class="reveal"><span class="ger it">Ieri ho preso il treno delle nove per andare a trovare mia nonna.</span><span class="en">昨天我坐 9 点的火车去看望奶奶。</span></li>
+        <li class="reveal"><span class="ger it">Da bambino, passavo le estati al mare con i miei cugini in Sicilia.</span><span class="en">小时候，夏天我都和表兄弟姐妹们在西西里的海边度过。</span></li>
+        <li class="reveal"><span class="ger it">Spero che tu possa venire alla festa, anche se so che sei molto impegnato.</span><span class="en">希望你能来参加聚会，虽然我知道你很忙。</span></li>
       </ol>
     </div>
   </section>
@@ -285,49 +283,49 @@ footer a{color:var(--bel-dim);}
   <!-- GENDER + ELISION -->
   <section class="wrap">
     <div class="frame reveal">
-      <span class="tag">Léelo de un vistazo</span>
-      <h2>il · la · l', en color</h2>
-      <p class="sub">Cada sustantivo lleva su artículo codificado por color según el género. Toca una carta para girarla.</p>
+      <span class="tag">一眼认出</span>
+      <h2>il · la · l'，用颜色区分</h2>
+      <p class="sub">每个名词都带着冠词，并按词性以颜色标记。点击卡片即可翻面。</p>
       <div class="legend">
-        <span><i class="lm"></i> azul — masculino (il, lo)</span>
-        <span><i class="lf"></i> rosa — femenino (la)</span>
+        <span><i class="lm"></i> 蓝色 — 阳性（il、lo）</span>
+        <span><i class="lf"></i> 玫红 — 阴性（la）</span>
       </div>
       <div class="cards four">
         <div class="card m reveal"><div class="art">il</div><div class="word">libro</div>
           <div class="ex it">Il libro è sul tavolo.</div>
-          <div class="trans">the book — &ldquo;The book is on the table.&rdquo; Masculino, ante consonante.</div><div class="hint">toca para girar</div></div>
+          <div class="trans">书——「书在桌子上。」阳性，用于辅音之前。</div><div class="hint">点击翻面</div></div>
         <div class="card f reveal"><div class="art">la</div><div class="word">casa</div>
           <div class="ex it">La casa di mia nonna è in Sicilia.</div>
-          <div class="trans">the house — &ldquo;My grandmother's house is in Sicily.&rdquo; Femenino, ante consonante.</div><div class="hint">toca para girar</div></div>
+          <div class="trans">房子——「我奶奶的房子在西西里。」阴性，用于辅音之前。</div><div class="hint">点击翻面</div></div>
         <div class="card m reveal"><div class="art">l'</div><div class="word">amico</div>
           <div class="ex it">L'amico di Marco abita a Roma.</div>
-          <div class="trans">the friend (m.) — &ldquo;Marco's friend lives in Rome.&rdquo; El artículo se elide a <b>l'</b>, pero su color sigue siendo azul: sigue siendo masculino.</div><div class="hint">toca para girar</div></div>
+          <div class="trans">朋友（阳性）——「马可的朋友住在罗马。」冠词省音为 <b>l'</b>，颜色却仍是蓝色：依旧是阳性。</div><div class="hint">点击翻面</div></div>
         <div class="card f reveal"><div class="art">l'</div><div class="word">amica</div>
           <div class="ex it">L'amica di Anna studia a Bologna.</div>
-          <div class="trans">the friend (f.) — &ldquo;Anna's friend studies in Bologna.&rdquo; El mismo <b>l'</b>, pero rosa: femenino.</div><div class="hint">toca para girar</div></div>
+          <div class="trans">朋友（阴性）——「安娜的朋友在博洛尼亚上学。」同样的 <b>l'</b>，却是玫红：阴性。</div><div class="hint">点击翻面</div></div>
       </div>
-      <p class="elision-note">El italiano esconde el género en el momento en que un artículo se encuentra con una vocal: <span class="it">lo amico</span> y <span class="it">la amica</span> se reducen ambos a <span class="it">l'</span>. FlashBoss mantiene vivo el indicio <b>coloreando el apóstrofo</b> — un <span class="it">l'</span> azul es masculino, un <span class="it">l'</span> rosa es femenino — para que el género no te desaparezca nunca.</p>
+      <p class="elision-note">冠词一遇到元音，意大利语就把词性藏了起来：<span class="it">lo amico</span> 和 <span class="it">la amica</span> 都缩成了同一个 <span class="it">l'</span>。FlashBoss 通过<b>给撇号上色</b>让线索保持鲜活——蓝色的 <span class="it">l'</span> 是阳性，玫红的 <span class="it">l'</span> 是阴性——词性永远不会在你眼前消失。</p>
     </div>
   </section>
 
   <!-- CULTURAL CONCEPTS -->
   <section class="wrap">
     <div class="reveal">
-      <h2>El idioma de la cultura</h2>
-      <p class="sub">Repetir el idioma en contextos nuevos es clave. Toca para girar.</p>
+      <h2>文化的语言</h2>
+      <p class="sub">在新语境中反复接触语言是关键。点击翻面。</p>
       <div class="cards reveal">
-        <div class="card idiom"><div class="art">modismo</div><div class="word">In bocca al lupo</div>
+        <div class="card idiom"><div class="art">习语</div><div class="word">In bocca al lupo</div>
           <div class="ex it">— In bocca al lupo! — Crepi!</div>
-          <div class="trans">Good luck — literally &ldquo;into the wolf's mouth.&rdquo; Respondes <i>crepi (il lupo)</i> — que muera el lobo. Los italianos casi nunca dicen <i>buona fortuna</i>.</div><div class="hint">toca para girar</div></div>
-        <div class="card idiom"><div class="art">verbo · concepto</div><div class="word">arrangiarsi</div>
+          <div class="trans">祝好运——字面意思是「进狼口里去」。回答是 <i>crepi (il lupo)</i>——「让狼死掉」。意大利人几乎从不说 <i>buona fortuna</i>。</div><div class="hint">点击翻面</div></div>
+        <div class="card idiom"><div class="art">动词 · 概念</div><div class="word">arrangiarsi</div>
           <div class="ex it">Non preoccuparti, mi arrangio.</div>
-          <div class="trans">To get by, to make do — &ldquo;Don't worry, I'll manage.&rdquo; El arte italiano por excelencia de arreglártelas tú solo, con lo que tengas.</div><div class="hint">toca para girar</div></div>
-        <div class="card idiom"><div class="art">marcador</div><div class="word">magari</div>
+          <div class="trans">想办法应付、将就着办——「别担心，我自己能搞定。」用手头现有的东西自己解决问题，是意大利人核心的生活艺术。</div><div class="hint">点击翻面</div></div>
+        <div class="card idiom"><div class="art">话语标记</div><div class="word">magari</div>
           <div class="ex it">— Vieni in Italia quest'estate? — Magari!</div>
-          <div class="trans">If only / I wish / maybe — una sola palabra que carga esperanza y anhelo a la vez. &ldquo;Magari!&rdquo; por sí sola significa &ldquo;¡Ojalá!&rdquo;</div><div class="hint">toca para girar</div></div>
-        <div class="card idiom"><div class="art">falso amigo</div><div class="word">simpatico</div>
+          <div class="trans">要是就好了／但愿／也许——一个词同时装着希望与渴望。单独一句「Magari!」意思是「要是真的就好了！」</div><div class="hint">点击翻面</div></div>
+        <div class="card idiom"><div class="art">假朋友</div><div class="word">simpatico</div>
           <div class="ex it">Tuo cugino è molto simpatico.</div>
-          <div class="trans">Likeable, good company — <b>not</b> &ldquo;sympathetic.&rdquo; &ldquo;Your cousin is great company.&rdquo; Un gran elogio, y un falso amigo clásico.</div><div class="hint">toca para girar</div></div>
+          <div class="trans">讨人喜欢、相处愉快——<b>不是</b>英语的 &ldquo;sympathetic&rdquo;（有同情心的）。「你表哥真是个好相处的人。」这是很高的称赞，也是典型的假朋友。</div><div class="hint">点击翻面</div></div>
       </div>
     </div>
   </section>
@@ -335,29 +333,29 @@ footer a{color:var(--bel-dim);}
   <!-- COURSE NOTE (expound on core) -->
   <section class="wrap">
     <div class="frame reveal">
-      <span class="tag">Más que una lista de vocabulario</span>
-      <h2>Lecciones de referencia, en secuencia</h2>
-      <p class="sub">FlashBoss Italiano es un curso estructurado, no solo tarjetas. Las lecciones de referencia se desbloquean en la carta exacta donde las necesitas por primera vez — y todas son gratis de leer en <a href="resources.es.html" style="color:var(--vis-accent);">Recursos</a>.</p>
+      <span class="tag">不只是单词表</span>
+      <h2>参考课程，依序触发</h2>
+      <p class="sub">FlashBoss Italian 是一门结构完整的课程，而不只是闪卡。参考课程恰好在你第一次需要它的那张卡片处解锁——而且全部可以在<a href="resources.html" style="color:var(--vis-accent);">资源</a>页免费阅读。</p>
     </div>
   </section>
 
   <!-- PARETO / THREE BUTTONS -->
   <section class="wrap">
     <div class="reveal">
-      <h2>El principio de Pareto</h2>
-      <p class="sub">3 paquetes. El 10 % del vocabulario italiano para el 90 % de los usos.</p>
+      <h2>帕累托法则</h2>
+      <p class="sub">3 个卡包。用 10% 的意大利语词汇，覆盖 90% 的意大利语使用场景。</p>
       <div class="packs">
-        <a class="pack" href="wordlists.es.html?lang=Italian&amp;set=Core">
-          <div class="n">Core</div><div class="lvl">A1–A2 · 1.000 palabras</div>
-          <p>De la supervivencia a la pertenencia, en cinco etapas, con veinte lecciones de referencia. El camino de entrada.</p>
+        <a class="pack" href="wordlists.html?lang=Italian&amp;set=Core">
+          <div class="n">Core</div><div class="lvl">A1–A2 · 1,000 单词</div>
+          <p>从应急到归属，历经五个层级，配 20 节参考课程。这是进门的路。</p>
         </a>
-        <a class="pack" href="wordlists.es.html?lang=Italian&amp;set=Pareto%201">
-          <div class="n">Pareto 1</div><div class="lvl">B1–B2 · 1.000 palabras</div>
-          <p>Viajes, trabajo y vida social — suficiente para hablar con tus <span class="it">nonni</span> y decirlo en serio.</p>
+        <a class="pack" href="wordlists.html?lang=Italian&amp;set=Pareto%201">
+          <div class="n">Pareto 1</div><div class="lvl">B1–B2 · 1,000 单词</div>
+          <p>旅行、工作与社交生活——足以和 <span class="it">nonni</span>（祖父母）真心交谈。</p>
         </a>
-        <a class="pack" href="wordlists.es.html?lang=Italian&amp;set=Pareto%202">
-          <div class="n">Pareto 2</div><div class="lvl">B2–C1 · 1.000 palabras</div>
-          <p>Rango abstracto, literario y casi nativo. Las tres mil completas.</p>
+        <a class="pack" href="wordlists.html?lang=Italian&amp;set=Pareto%202">
+          <div class="n">Pareto 2</div><div class="lvl">B2–C1 · 1,000 单词</div>
+          <p>抽象词汇、文学词汇，直至接近母语者的广度。凑满全部 3,000 词。</p>
         </a>
       </div>
     </div>
@@ -366,31 +364,31 @@ footer a{color:var(--bel-dim);}
   <!-- METHOD -->
   <section class="wrap method">
     <div class="frame reveal">
-      <span class="tag">Cómo se fija</span>
-      <h2>Las tarjetas como sistema integrado</h2>
+      <span class="tag">为何记得住</span>
+      <h2>闪卡组成的完整系统</h2>
       <dl>
-        <dt>SRS de Fibonacci</dt><dd>Califica cada carta de 0 a 5. Cuanto mejor conoces una palabra, más tarda en volver — repetición espaciada en intervalos de Fibonacci.</dd>
-        <dt>Boss fights</dt><dd>Cada cluster está protegido por un duelo que no puedes ganar sin enfrentarte a tus palabras más difíciles y superarlas.</dd>
-        <dt>Graduación</dt><dd>Vence un cluster y sus cartas dejan tu mazo diario para siempre. El mazo se hace más pequeño a medida que aprendes.</dd>
-        <dt>Audio</dt><dd>Síntesis de voz Piper en italiano, limpia, en cada palabra y cada frase.</dd>
-        <dt>Lecciones</dt><dd>Veinte lecciones de referencia aparecen en el punto de la secuencia donde desbloquean lo que estás a punto de leer.</dd>
+        <dt>斐波那契间隔重复</dt><dd>每张卡片按 0–5 评分。一个单词记得越牢，它再次出现的间隔就越长——基于斐波那契数列的间隔重复。</dd>
+        <dt>头目战</dt><dd>每个集群都由一场决斗把守。不直面并战胜你最棘手的单词，就无法取胜。</dd>
+        <dt>毕业</dt><dd>击败一个集群，它的卡片就永远退出你的每日复习。学得越多，卡组就越小。</dd>
+        <dt>语音</dt><dd>每个单词、每个例句都配有清晰的意大利语 Piper 语音朗读。</dd>
+        <dt>课程</dt><dd>20 节参考课程在序列中的恰当节点出现——恰好为你即将读到的内容解锁铺垫。</dd>
       </dl>
     </div>
   </section>
 
   <!-- FINAL CTA -->
   <section class="final wrap reveal">
-    <a class="btn warm" href="https://store.steampowered.com/app/4475030/FlashBoss__Italian_Core/?utm_source=website&l=spanish">Consigue FlashBoss en Steam &rarr;</a>
+    <a class="btn warm" href="https://store.steampowered.com/app/4475030/FlashBoss__Italian_Core/?utm_source=website&l=schinese" target="_blank" rel="noopener">在 Steam 上获取 FlashBoss &rarr;</a>
   </section>
 
 </main>
 
 <footer>
   <p class="dante">&ldquo;Tu proverai sì come sa di sale / lo pane altrui, e come è duro calle / lo scendere e 'l salir per l'altrui scale.&rdquo;
-    <span class="tr">You shall learn how salt is the taste of another's bread — and how hard the path, going down and climbing up another's stairs.</span>
+    <span class="tr">你将体会到，他人的面包是多么咸涩；在他人的楼梯上下攀行，又是多么艰辛的路。</span>
   </p>
-  <span class="src">— Dante, Paradiso XVII</span>
-  <span class="nav"><a href="home.es.html">inicio</a> · <a href="manual/">guía completa (beta)</a> · <a href="https://store.steampowered.com/app/4475030/FlashBoss__Italian_Core/?utm_source=website&l=spanish">steam</a></span>
+  <span class="src">— 但丁《天堂篇》第 17 歌</span>
+  <span class="nav"><a href="home.html">首页</a> · <a href="manual/">攻略指南（Beta）</a> · <a href="https://store.steampowered.com/app/4475030/FlashBoss__Italian_Core/?utm_source=website&l=schinese" target="_blank" rel="noopener">Steam</a></span>
 </footer>
 
 <script>
