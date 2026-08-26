@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inglés — FlashBoss</title>
+<meta name="description" content="FlashBoss Inglés: aprende inglés completamente en español. English Core, Pareto 1 y Pareto 2 — 1.000 palabras cada uno, cada tarjeta con traducción al español, oración de ejemplo traducida y notas de estudio, con repetición espaciada, boss fights y síntesis de voz.">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/english.html">
+<link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/english.de.html">
+<link rel="alternate" hreflang="es" href="https://odiin2024.github.io/flashboss-site/english.es.html">
+<link rel="alternate" hreflang="ja" href="https://odiin2024.github.io/flashboss-site/english.ja.html">
+<link rel="alternate" hreflang="zh" href="https://odiin2024.github.io/flashboss-site/english.zh.html">
+<link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/english.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   FlashBoss — English program page
+   Aesthetic: phosphor terminal, sibling to french.html.
+   The through-line is the program's own store ruling: this
+   course is NOT available in English — the page you read in
+   English is a signpost for somebody else. The page opens in
+   SIGNAL (cold procedural blue — the language of forms,
+   airports, error messages) and warms into SPOKEN (amber —
+   the same language, finally yours across a table).
+
+   NOTE: the de/es/ja/zh siblings are the real sales pages;
+   this English page is deliberately written over the reader's
+   shoulder, at the learner behind them.
+
+   Hero: background.png (the site's root backdrop) — English has
+   no flag asset by convention; pattern B <img> + onerror.
+   ============================================================ */
+:root{
+  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
+
+  /* SIGNAL palette (top — the cold English of forms and airports) */
+  --v-bg:#0d1117;
+  --v-ink:#dbe6ee;
+  --v-dim:#8ba2b4;
+  --v-accent:#7ec8ff;   /* phosphor blue — the FlashBoss signal */
+
+  /* SPOKEN palette (bottom — the same language, warmed to yours) */
+  --t-bg:#14110b;
+  --t-ink:#efe2c2;
+  --t-dim:#b5a67e;
+  --t-accent:#e0a93f;   /* amber — the lamp over the table */
+
+  /* mood: 0 = signal, 1 = spoken. Driven by scroll. */
+  --mood:0;
+
+  --line:color-mix(in oklab, #33414f, #4a3f22 calc(var(--mood) * 100%));
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0; font-family:var(--mono);
+  background:#0d1117;
+  background:color-mix(in oklab, var(--v-bg), var(--t-bg) calc(var(--mood)*100%));
+  color:color-mix(in oklab, var(--v-ink), var(--t-ink) calc(var(--mood)*100%));
+  line-height:1.6; -webkit-font-smoothing:antialiased;
+  transition:background 120ms linear, color 120ms linear; overflow-x:hidden;
+}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.045) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.vignette{position:fixed; inset:0; pointer-events:none; z-index:9998;
+  background:radial-gradient(120% 90% at 50% 35%, transparent 55%, rgba(0,0,0,.5) 100%);}
+.wrap{max-width:880px; margin:0 auto; padding:0 24px;}
+
+nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line);}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--v-dim); margin-right:auto;}
+nav .brand a, nav .brand .sep{color:var(--v-dim); text-decoration:none;}
+nav .brand a:hover{color:var(--v-ink);}
+nav .brand .here{font-weight:800; color:var(--v-ink);}
+nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--v-ink);}
+nav .brand .logo:hover{color:var(--v-accent);}
+nav .brand .pipe{color:var(--v-dim); margin:0 11px;}
+.nav-mobile{display:none;}
+.nav-mobile a{color:inherit; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.08em; opacity:.85;}
+.nav-mobile a:hover{opacity:1; color:var(--v-accent);}
+@media(max-width:640px){ nav .brand, nav .links{display:none;} .nav-mobile{display:flex; flex:1; justify-content:space-between; align-items:center;} .nav-mobile .r{display:flex; gap:18px;} }
+nav .links a{color:inherit; text-decoration:none; opacity:.7; margin-left:22px;}
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+nav .links a.steam{font-weight:800; opacity:1; color:var(--v-ink);}
+nav .lang-switch{position:relative; margin-left:22px;}
+nav .lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--v-ink); background:var(--v-bg); border:1px solid var(--v-dim); padding:5px 8px; line-height:1; cursor:pointer;}
+nav .lang-toggle:hover, nav .lang-toggle[aria-expanded="true"]{background:var(--v-ink); color:var(--v-bg);}
+nav .lang-caret{font-size:8px; line-height:1; transition:transform .15s ease;}
+nav .lang-toggle[aria-expanded="true"] .lang-caret{transform:rotate(180deg);}
+nav .lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--v-bg); border:1px solid var(--v-dim); min-width:120px; z-index:50;}
+nav .lang-menu[hidden]{display:none;}
+nav .lang-menu li{margin:0; padding-left:0; position:static;}
+nav .lang-menu li::before{content:none;}
+nav .lang-menu a{display:block; font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--v-ink); text-decoration:none; padding:7px 10px; white-space:nowrap; opacity:1; margin:0;}
+nav .lang-menu a:hover{background:var(--v-ink); color:var(--v-bg); text-decoration:none;}
+nav .lang-menu a[aria-current="true"]{color:var(--v-accent);}
+nav .lang-menu a[aria-current="true"]:hover{color:var(--v-bg);}
+
+.reveal{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease;}
+.reveal.in{opacity:1; transform:none;}
+
+/* HERO — image band. The <img> carries the alt text; the gradient
+   sits over it so the type stays legible whatever the art is. */
+.hero{position:relative; padding:84px 0 36px; overflow:hidden; background:#0d1117;}
+.hero .hero-img{position:absolute; inset:0; z-index:0; width:100%; height:100%; object-fit:cover; object-position:center 30%;}
+.hero::after{content:""; position:absolute; inset:0; z-index:1;
+  background:linear-gradient(180deg, rgba(13,17,23,.62) 0%, rgba(13,17,23,.84) 55%, #0d1117 100%);}
+.hero .wrap{position:relative; z-index:2;}
+.kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--v-dim); opacity:.9; margin-bottom:26px;}
+.kicker b{color:var(--v-accent); font-weight:700;}
+.hero h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
+.cursor{display:inline-block; width:.6em; height:1em; vertical-align:-.08em; background:color-mix(in oklab, var(--v-accent), transparent 30%); margin-left:.12em; animation:blink 1.05s steps(1) infinite;}
+@keyframes blink{50%{opacity:0;}}
+.hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:30px 0 0; color:var(--v-ink); font-weight:500;}
+.hero .sig{font-size:13px; letter-spacing:.24em; text-transform:uppercase; color:var(--v-accent); margin:14px 0 0; opacity:.9;}
+.hero .lede{font-size:clamp(15px,2.2vw,18px); max-width:52ch; margin:24px 0 0; color:var(--v-dim);}
+.hero .lede b{color:var(--v-ink); font-weight:700;}
+.hero .handoff{font-size:13.5px; letter-spacing:.05em; margin:20px 0 0; color:var(--v-dim);}
+.hero .handoff a{color:var(--v-accent); font-weight:700; text-decoration:none; border-bottom:1px solid color-mix(in oklab, var(--v-accent), transparent 55%);}
+.hero .handoff a:hover{border-bottom-color:currentColor;}
+.btn{display:inline-block; font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.08em; color:#0d1117; background:color-mix(in oklab, var(--v-accent), transparent 22%);
+  padding:14px 26px; text-decoration:none; border:0; box-shadow:6px 6px 0 color-mix(in oklab, var(--v-accent), #000 62%); transition:transform .12s ease, box-shadow .12s ease;}
+.btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--v-accent), #000 62%);}
+.btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--v-accent), #000 62%);}
+.btn.hot{color:#15100a; background:var(--t-accent); box-shadow:6px 6px 0 color-mix(in oklab, var(--t-accent), #000 60%);}
+.btn.hot:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--t-accent), #000 60%);}
+.hero .steamcta{margin-top:40px;}
+.hero .actions{display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:14px; max-width:520px;}
+.hero .actions .btn{margin-top:0; width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
+
+section{padding:64px 0;}
+.hero + section{padding-top:48px;}
+.frame{border:1px solid var(--line); position:relative; padding:34px 30px 32px;}
+.frame > .tag{position:absolute; top:-12px; left:22px;
+  background:color-mix(in oklab, var(--v-bg), var(--t-bg) calc(var(--mood)*100%));
+  padding:4px 12px; line-height:1; font-size:11px; letter-spacing:.3em; text-transform:uppercase;
+  color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+h2{font-size:clamp(26px,5vw,40px); margin:0 0 8px; font-weight:800; letter-spacing:-.01em;}
+.sub{color:var(--v-dim); font-size:14px; letter-spacing:.04em; margin:0 0 26px;}
+.sub a{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%)); text-decoration:none; border-bottom:1px solid currentColor;}
+p.body{font-size:16px; max-width:62ch; margin:0 0 18px; color:color-mix(in oklab, var(--v-ink), var(--t-ink) calc(var(--mood)*100%));}
+p.body b{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+p.body a{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%)); text-decoration:none; border-bottom:1px solid currentColor;}
+
+/* the two movements — learner vs native */
+.movements{display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px solid var(--line);}
+.mv{padding:30px 26px;}
+.mv:first-child{border-right:1px solid var(--line); background:rgba(126,200,255,.045);}
+.mv:last-child{background:rgba(224,169,63,.045);}
+.mv .h{font-size:12px; letter-spacing:.3em; text-transform:uppercase; margin-bottom:14px;}
+.mv.learner .h{color:var(--v-accent);}
+.mv.native .h{color:var(--t-accent);}
+.mv p{font-size:14.5px; margin:0;}
+.mv p a{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%)); text-decoration:none; border-bottom:1px solid currentColor;}
+@media(max-width:640px){
+  .movements{grid-template-columns:1fr;}
+  .mv:first-child{border-right:0; border-bottom:1px solid var(--line);}
+}
+
+/* gradient run — the five tiers as one movement */
+.run{border:1px solid var(--line); display:grid; grid-template-columns:repeat(5,1fr); overflow:hidden;}
+.run .step{padding:22px 16px; border-right:1px solid var(--line); position:relative;}
+.run .step:last-child{border-right:0;}
+.run .step:nth-child(1){background:color-mix(in oklab, transparent, var(--v-accent) 6%);}
+.run .step:nth-child(2){background:color-mix(in oklab, transparent, var(--v-accent) 9%);}
+.run .step:nth-child(3){background:color-mix(in oklab, transparent, var(--t-accent) 8%);}
+.run .step:nth-child(4){background:color-mix(in oklab, transparent, var(--t-accent) 12%);}
+.run .step:nth-child(5){background:color-mix(in oklab, transparent, var(--t-accent) 17%);}
+.run .t{font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%)); margin-bottom:10px; font-weight:700;}
+.run .step p{font-size:12.5px; margin:0; color:color-mix(in oklab, var(--v-dim), var(--t-dim) calc(var(--mood)*100%));}
+@media(max-width:640px){.run{grid-template-columns:1fr;} .run .step{border-right:0; border-bottom:1px solid var(--line);} .run .step:last-child{border-bottom:0;}}
+
+/* one card, four languages — the meta-layer proof */
+.quad{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+@media(max-width:640px){.quad{grid-template-columns:1fr;}}
+.qcard{border:1px solid var(--line); padding:20px 18px; background:rgba(255,255,255,.015);}
+.qcard .lang{font-size:11px; letter-spacing:.2em; text-transform:uppercase; font-weight:700; color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+.qcard .word{font-size:24px; font-weight:800; margin:4px 0 2px;}
+.qcard .tr{font-size:14.5px; font-weight:700; color:color-mix(in oklab, var(--v-ink), var(--t-ink) calc(var(--mood)*100%)); margin-bottom:12px;}
+.qcard .ex{font-size:13px; color:var(--v-dim);}
+.qcard .ex .en{font-style:italic;}
+.qcard .ex .arrow{opacity:.6; margin:0 4px;}
+.qcard .notes{font-size:12px; color:var(--v-dim); border-top:1px dashed var(--line); margin-top:12px; padding-top:10px;}
+.quad-note{font-size:13px; margin:18px 0 0; max-width:62ch; color:color-mix(in oklab, var(--v-dim), var(--t-dim) calc(var(--mood)*100%));}
+
+/* packs */
+.packs{display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid var(--line);}
+@media(max-width:640px){.packs{grid-template-columns:1fr;}}
+.pack{padding:24px 20px; border-right:1px solid var(--line);}
+.pack:last-child{border-right:0;}
+.pack .n{font-size:18px; font-weight:800;}
+.pack .lvl{font-size:12px; letter-spacing:.06em; color:var(--v-dim); margin:4px 0 12px;}
+.pack p{font-size:13px; color:var(--v-dim); margin:0;}
+.pack .soon{display:inline-block; font-size:10px; letter-spacing:.2em; text-transform:uppercase; margin-top:12px; padding:3px 8px; border:1px solid var(--line);
+  color:color-mix(in oklab, var(--v-dim), var(--t-dim) calc(var(--mood)*100%));}
+.pack .now{display:inline-block; font-size:10px; letter-spacing:.2em; text-transform:uppercase; margin-top:12px; padding:3px 8px;
+  border:1px solid var(--t-accent); color:var(--t-accent);}
+.pack.locked{opacity:.66;}
+@media(max-width:640px){.pack{border-right:0; border-bottom:1px solid var(--line);} .pack:last-child{border-bottom:0;}}
+
+.method dl{display:grid; grid-template-columns:max-content 1fr; gap:14px 22px; margin:0;}
+.method dt{font-weight:700; color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%)); white-space:nowrap;}
+.method .frame > .tag{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+.method dd{margin:0; font-size:14.5px; color:var(--v-dim);}
+@media(max-width:560px){.method dl{grid-template-columns:1fr; gap:4px 0;} .method dd{margin-bottom:14px;}}
+
+/* FAQ */
+.faq details{border-top:1px solid var(--line);}
+.faq details:last-of-type{border-bottom:1px solid var(--line);}
+.faq summary{list-style:none; cursor:pointer; padding:16px 30px 16px 0; font-size:15px; font-weight:700; position:relative;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"+"; position:absolute; right:4px; top:14px; font-size:18px; font-weight:400;
+  color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+.faq details[open] summary::after{content:"\2212";}
+.faq summary:hover{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+.faq .a{font-size:14px; margin:0 0 20px; max-width:64ch; color:color-mix(in oklab, var(--v-dim), var(--t-dim) calc(var(--mood)*100%));}
+.faq .a a{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%)); text-decoration:none; border-bottom:1px solid currentColor;}
+
+.final{text-align:center; padding:90px 0 100px;}
+.final h2{font-size:clamp(28px,6vw,52px);}
+.final p{color:var(--t-dim); max-width:48ch; margin:14px auto 0; font-size:15px;}
+.final .also{margin-top:22px; font-size:13px;}
+.final .also a{color:var(--t-dim); text-decoration:none; border-bottom:1px solid currentColor;}
+.final .also a:hover{color:var(--t-ink);}
+
+footer{border-top:1px solid var(--line); padding:28px 24px; font-size:12px; color:var(--t-dim); text-align:center; letter-spacing:.04em;}
+footer .epi{font-style:italic; opacity:.78; max-width:54ch; margin:0 auto 12px; line-height:1.7;}
+footer .epi .tr{font-style:normal; opacity:.85; display:block; margin-top:8px; font-size:11.5px;}
+footer .epi-cite{font-style:normal; font-size:11px; letter-spacing:.12em; text-transform:uppercase; opacity:.75; display:inline-block; margin-top:8px;}
+footer .footer-links{display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap; margin-top:14px;}
+footer .footer-links a{color:inherit; text-decoration:none; opacity:.75; letter-spacing:.04em;}
+footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+footer .footer-links .div{opacity:.4;}
+</style>
+</head>
+<body>
+<div class="overlay"></div>
+<div class="vignette"></div>
+
+<nav>
+  <span class="brand"><a class="logo" href="index.es.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.es.html">inicio</a><span class="sep"> · </span><a href="packs.es.html">paquetes</a><span class="sep"> · </span><span class="here">Inglés</span></span>
+  <span class="links">
+    <a href="manual/index.html">guía completa (beta)</a>
+    <a href="resources.es.html">recursos</a>
+    <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-english&l=spanish" target="_blank" rel="noopener">steam</a>
+  </span>
+  <span class="nav-mobile">
+    <a href="home.es.html">inicio</a>
+    <span class="r"><a href="resources.es.html">recursos</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-english&l=spanish" target="_blank" rel="noopener">steam</a></span>
+  </span>
+  <div class="lang-switch">
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Elegir idioma">ES<span class="lang-caret">▾</span></button>
+    <ul class="lang-menu" hidden>
+      <li><a href="english.html">English</a></li>
+      <li><a href="english.de.html">Deutsch</a></li>
+      <li><a href="english.es.html" aria-current="true">Español</a></li>
+      <li><a href="english.ja.html">日本語</a></li>
+      <li><a href="english.zh.html">简体中文</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <header class="hero">
+    <img class="hero-img" src="background.png" alt="FlashBoss — el aula de terminal de fósforo donde se juega el programa de inglés" loading="eager" decoding="async" onerror="this.style.display='none'">
+    <div class="wrap">
+      <p class="kicker reveal">English Core ya disponible · <b>1.000 palabras</b> · 40 clusters · 38 lecciones</p>
+      <h1 class="reveal">English<span class="cursor"></span></h1>
+      <p class="tagline reveal">Aprende inglés sin necesitar ni una palabra de inglés.</p>
+      <p class="sig reveal">Escuchar · Leer · Repetir · Calificar · Luchar</p>
+      <p class="lede reveal">Cada tarjeta enseña una palabra inglesa — con su <b>traducción al español</b>, la <b>oración de ejemplo traducida</b> y <b>notas de estudio en español</b>. Toda la interfaz del juego también habla español. English Core empieza por las primeras 1.000 palabras; Pareto 1 y 2 siguen el camino hasta las 3.000.</p>
+      <div class="steamcta reveal">
+        <a class="btn hot" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-english&l=spanish" target="_blank" rel="noopener">Consigue FlashBoss en Steam &rarr;</a>
+      </div>
+      <div class="actions reveal">
+        <a class="btn" href="https://flashboss-demo.pages.dev/">Probar demo</a>
+        <a class="btn" href="packs.es.html">Todos los paquetes</a>
+        <a class="btn" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-english&l=spanish">Steam</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- THE RULING -->
+  <section class="wrap">
+    <div class="frame">
+      <span class="tag">la página de la tienda lo dice sin rodeos</span>
+      <h2>Completamente jugable en español</h2>
+      <p class="sub">No es una nota al pie en la tabla de idiomas. Es el diseño.</p>
+      <p class="body">Desde la primera tarjeta, el inglés es lo que se aprende — nunca lo que explica. La traducción, la oración de ejemplo traducida y las notas están en español en cada tarjeta, y los menús, las lecciones y los boss fights te hablan en español. No necesitas un diccionario junto al teclado ni una segunda lengua extranjera para aprender la primera.</p>
+      <p class="body">El curso está construido para quien empieza por las primeras mil palabras — no para hablantes nativos. Por eso ni siquiera existe en inglés: la página en inglés de este programa es solo una señal que apunta hacia aquí.</p>
+
+      <div class="movements reveal">
+        <div class="mv learner">
+          <div class="h">En cada tarjeta</div>
+          <p>Traducción al español, oración de ejemplo traducida, notas de estudio en español — 1.000 tarjetas por paquete, sin huecos.</p>
+        </div>
+        <div class="mv native">
+          <div class="h">En todo el juego</div>
+          <p>Menús, lecciones, boss fights: en español. La interfaz también existe en alemán, japonés, chino simplificado e inglés.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE ROAD -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">el diseño de English Core</span>
+      <h2>Las primeras mil palabras</h2>
+      <p class="sub">Cinco etapas, cuarenta clusters de 25 tarjetas, cada cluster protegido por un boss fight.</p>
+      <p class="body">English Core es el millar de mayor frecuencia, recorrido en orden: los verbos-motor y las palabritas que impulsan cada oración inglesa, luego la gente y la casa, la ciudad y la jornada de trabajo — y en la quinta etapa la lengua del derecho, el estado y el ancho mundo. Las oraciones de ejemplo crecen contigo y nunca se te adelantan.</p>
+      <div class="run reveal">
+        <div class="step"><div class="t">Etapa 1</div><p>El motor central — have, go, las palabritas — primeros pasos, gente y casa, cómo se siente.</p></div>
+        <div class="step"><div class="t">Etapa 2</div><p>Cuerpo y corazón, tiempo y medida, familia y amigos, hacer las cosas, ciudad y mesa.</p></div>
+        <div class="step"><div class="t">Etapa 3</div><p>Trabajo, verbos en movimiento, tiempo y lugar, ley y orden, fuera en el mundo.</p></div>
+        <div class="step"><div class="t">Etapa 4</div><p>Crimen y tribunal, gente y sentimiento, escuela y trabajo, tierra y lugar, tomando ritmo.</p></div>
+        <div class="step"><div class="t">Etapa 5</div><p>Conflicto y ley, estado y ley, escenas cotidianas, subiendo la apuesta — hasta la última página.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ONE CARD, FOUR LANGUAGES -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">una tarjeta, cuatro idiomas</span>
+      <h2>Tu idioma, en cada tarjeta</h2>
+      <p class="sub">La tarjeta 1 de English Core — la palabra <b style="color:inherit;">have</b> — exactamente como se entrega.</p>
+      <div class="quad">
+        <div class="qcard reveal">
+          <div class="lang">Español</div>
+          <div class="word">have</div>
+          <div class="tr">tener</div>
+          <div class="ex"><span class="en">I have time now.</span><span class="arrow">→</span>Ahora tengo tiempo.</div>
+          <div class="notes">verbo | tener, poseer. 'have got' es lo mismo. Formas: has, had.</div>
+        </div>
+        <div class="qcard reveal">
+          <div class="lang">Deutsch</div>
+          <div class="word">have</div>
+          <div class="tr">haben</div>
+          <div class="ex"><span class="en">I have time now.</span><span class="arrow">→</span>Ich habe jetzt Zeit.</div>
+          <div class="notes">Verb | besitzen, haben. 'have got' heißt dasselbe. Formen: has, had.</div>
+        </div>
+        <div class="qcard reveal">
+          <div class="lang">日本語</div>
+          <div class="word">have</div>
+          <div class="tr">持っている、所有する</div>
+          <div class="ex"><span class="en">I have time now.</span><span class="arrow">→</span>今は時間があります。</div>
+          <div class="notes">動詞 | 持つ、所有する。'have got' も同義。活用: has, had。</div>
+        </div>
+        <div class="qcard reveal">
+          <div class="lang">简体中文</div>
+          <div class="word">have</div>
+          <div class="tr">有；拥有</div>
+          <div class="ex"><span class="en">I have time now.</span><span class="arrow">→</span>我现在有时间。</div>
+          <div class="notes">动词｜拥有、持有。「have got」意思相同。形式：has, had。</div>
+        </div>
+      </div>
+      <p class="quad-note">Son traducciones automáticas, y lo decimos sin rodeos — después, cada tarjeta se verifica dos veces con sistemas independientes, y lo que falla se corrige a mano antes de entregarse. Las 3.000 tarjetas del programa llevan los cuatro idiomas, sin huecos.</p>
+    </div>
+  </section>
+
+  <!-- THE ROAD TO 3,000 -->
+  <section class="wrap">
+    <div class="reveal">
+      <h2>El camino hasta las 3.000</h2>
+      <p class="sub">Tres paquetes, 1.000 palabras cada uno, en secuencia. Core ya está; las páginas de tienda de las dos extensiones ya están arriba.</p>
+      <div class="packs">
+        <a class="pack" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-english&l=spanish">
+          <div class="n">English Core</div>
+          <div class="lvl">A1–A2 · 1.000 palabras · 38 lecciones</div>
+          <p>El millar de mayor frecuencia, en cinco etapas — el cimiento sobre el que se apoya todo lo demás. Requiere el juego base.</p>
+          <span class="now">ya disponible</span>
+        </a>
+        <div class="pack locked">
+          <div class="n">English Pareto 1</div>
+          <div class="lvl">1.000 palabras</div>
+          <p>El siguiente millar por frecuencia — el mismo método, un piso más arriba. Requiere Core.</p>
+          <span class="soon">siguiente en secuencia</span>
+        </div>
+        <div class="pack locked">
+          <div class="n">English Pareto 2</div>
+          <div class="lvl">1.000 palabras</div>
+          <p>El tercer millar del viaje — la cola larga que se lee como fluidez. Requiere Pareto 1.</p>
+          <span class="soon">siguiente en secuencia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHOD -->
+  <section class="wrap method">
+    <div class="frame reveal">
+      <span class="tag">Cómo se fija</span>
+      <h2>Las tarjetas como sistema integrado</h2>
+      <dl>
+        <dt>SRS de Fibonacci</dt><dd>Califica cada tarjeta de 0 a 5. Cuanto mejor conoces una palabra, más tarda en volver — repetición espaciada en intervalos de Fibonacci.</dd>
+        <dt>Boss fights</dt><dd>Cada uno de los cuarenta clusters está protegido por un duelo que solo ganas enfrentándote a tus palabras más difíciles y superándolas.</dd>
+        <dt>Graduación</dt><dd>Vence un cluster y sus tarjetas dejan tu mazo diario para siempre. El mazo se hace más pequeño a medida que aprendes.</dd>
+        <dt>Tu idioma</dt><dd>Traducción, oración de ejemplo traducida y notas de estudio en español en cada tarjeta — y la interfaz habla español, además de alemán, japonés, chino simplificado e inglés.</dd>
+        <dt>Audio</dt><dd>Síntesis de voz Piper, limpia, en cada palabra y cada oración de ejemplo. Es síntesis, no la grabación de una persona — y lo decimos.</dd>
+        <dt>Dos ortografías</dt><dd>Inglés americano como base, con opción completa de ortografía británica — colour o color, con un ajuste.</dd>
+        <dt>Lecciones</dt><dd>38 lecciones de referencia — orden de palabras, artículos, tiempos verbales — cada una aparece justo en la tarjeta donde la necesitas por primera vez, legibles en español.</dd>
+        <dt>Frecuencia</dt><dd>Las palabras llegan según cuánto las usa realmente el inglés: primero el millar que carga con más lengua.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="wrap faq">
+    <div class="reveal">
+      <h2>Preguntas</h2>
+      <p class="sub">Lo que la gente pregunta antes de comprar.</p>
+
+      <details>
+        <summary>¿De verdad puedo empezar sin saber nada de inglés?</summary>
+        <p class="a">Sí — para eso está construido el curso. English Core empieza por las primerísimas palabras, y todo lo que explica está en español: las traducciones, las notas, las lecciones y toda la interfaz.</p>
+      </details>
+
+      <details>
+        <summary>¿Necesito algo más para jugarlo?</summary>
+        <p class="a">Sí. English Core es un DLC del juego base de FlashBoss, así que necesitas también el juego base. Pareto 1 requiere Core y Pareto 2 requiere Pareto 1 — los paquetes se construyen uno sobre otro, en orden.</p>
+      </details>
+
+      <details>
+        <summary>¿El audio está grabado por una persona nativa?</summary>
+        <p class="a">No, y no vamos a fingir lo contrario. Cada palabra y cada oración de ejemplo la pronuncia una voz neuronal de texto a voz — clara, consistente y sintética. Inglés americano como base, con opción completa de ortografía británica en el texto.</p>
+      </details>
+
+      <details>
+        <summary>¿Qué calidad tienen las traducciones?</summary>
+        <p class="a">Son traducciones automáticas, declaradas como tales. Cada tarjeta del programa se verificó después dos veces con sistemas independientes y pasó por revisión humana: lo que fallaba se corrigió antes de entregarse. La meta es una tarjeta en la que puedas confiar en A1 — llana, correcta, nunca decorativa.</p>
+      </details>
+
+      <details>
+        <summary>¿A qué nivel me lleva Core?</summary>
+        <p class="a">Un cimiento A1–A2: las 1.000 palabras más frecuentes y 38 lecciones de referencia sobre orden de palabras, artículos y tiempos verbales. Después, Pareto 1 y 2 siguen el camino hasta las 3.000 palabras.</p>
+      </details>
+
+      <details>
+        <summary>¿Puedo ver las palabras antes de comprar?</summary>
+        <p class="a">Las listas de vocabulario del programa de inglés todavía no están en la web — se están preparando. Mientras tanto, hay un boss fight jugable en el navegador: <a href="https://flashboss-demo.pages.dev/">probar demo</a>.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final wrap reveal">
+    <h2>Empieza por la palabra uno.</h2>
+    <p>Mil palabras como cimiento, tres mil en secuencia — acompañadas por completo en español.</p>
+    <p style="margin-top:26px;"><a class="btn hot" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-english&l=spanish" target="_blank" rel="noopener">Consigue FlashBoss en Steam &rarr;</a></p>
+    <p class="also">o prueba antes la <a href="https://flashboss-demo.pages.dev/">demo</a> — es gratis.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p class="epi">&ldquo;A whole world of books lies beyond the last page you have just read.&rdquo;<span class="tr">Todo un mundo de libros está más allá de la última página que acabas de leer.</span><span class="epi-cite">English Core · Etapa 5 · la última tarjeta</span></p>
+  <span class="footer-links">
+    <a href="home.es.html">inicio</a>
+    <span class="div">·</span>
+    <a href="packs.es.html">paquetes</a>
+    <span class="div">·</span>
+    <a href="manual/">guía completa (beta)</a>
+    <span class="div">·</span>
+    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-english&l=spanish" target="_blank" rel="noopener">steam</a>
+  </span>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+(function(){
+  var root=document.documentElement,ticking=false;
+  function update(){var max=document.body.scrollHeight-window.innerHeight;var p=max>0?Math.min(1,Math.max(0,window.scrollY/max)):0;root.style.setProperty('--mood',(p*p*(3-2*p)).toFixed(3));ticking=false;}
+  window.addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(update);ticking=true;}},{passive:true});update();
+})();
+</script>
+<script>
+// language dropdown: button toggles the menu; click-away / Esc closes it
+(function(){
+  var sw=document.querySelector('.lang-switch'); if(!sw) return;
+  var btn=sw.querySelector('.lang-toggle'), menu=sw.querySelector('.lang-menu');
+  function close(){ menu.hidden=true; btn.setAttribute('aria-expanded','false'); }
+  btn.addEventListener('click', function(e){ e.stopPropagation(); var willOpen=menu.hidden; menu.hidden=!willOpen; btn.setAttribute('aria-expanded', String(willOpen)); });
+  document.addEventListener('click', function(e){ if(!sw.contains(e.target)) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
+</script>
+</body>
+</html>
