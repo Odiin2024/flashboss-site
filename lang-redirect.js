@@ -40,6 +40,8 @@
     'italian':        ['de', 'es', 'ja', 'zh'],
     'esperanto':      ['de', 'es', 'ja', 'zh'],
     'index':          ['de', 'es', 'ja', 'zh'],
+    'greek-roots':    ['de', 'es', 'ja', 'zh'],
+    'english':        ['de', 'es', 'ja', 'zh'],
     'affiliate':      ['de', 'es', 'ja', 'zh'],
     'in-development':  ['de', 'es', 'ja', 'zh']
   };
