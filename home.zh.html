@@ -1,28 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="zh-Hans">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<!-- Reddit Pixel -->
-<script>
-!function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js?pixel_id=a2_ijrvgbcmsu06",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_ijrvgbcmsu06');rdt('track', 'PageVisit');
-</script>
-<!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
-<!-- End Reddit Pixel -->
-<!-- Reddit Pixel — custom events: ClickedSteam, Engaged30s -->
-<script>
-(function(){
-  function rt(name){ if(window.rdt) rdt('track','Custom',{customEventName:name}); }
-  setTimeout(function(){ rt('Engaged30s'); }, 30000);
-  function wire(){
-    var links=document.querySelectorAll('a[href*="store.steampowered.com"]');
-    for(var i=0;i<links.length;i++){ links[i].addEventListener('click', function(){ rt('ClickedSteam'); }); }
-  }
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', wire); else wire();
-})();
-</script>
-<title>FlashBoss — Tarjetas con boss fights</title>
-<meta name="description" content="FlashBoss: tarjetas de repetición espaciada con boss fights. Construye un vocabulario real: inglés, alemán, español, italiano, francés, esperanto o toki pona. Cinco paquetes gratis, el resto en Steam. Escucha, lee, repite, califica, combate.">
+<title>FlashBoss — 带头目战的闪卡</title>
+<meta name="description" content="FlashBoss：间隔重复闪卡，配上头目战。打造真正的词汇量：英语、德语、西班牙语、意大利语、法语、世界语或 Toki Pona。5 个卡包免费，其余在 Steam 上。听、读、重复、评分、战斗。">
 <link rel="icon" type="image/png" href="icon.png">
 <!-- TODO: hreflang URLs should be absolute (production domain) -->
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/home.html">
@@ -34,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
    FlashBoss — home (home.html). The front door.
@@ -45,13 +28,13 @@
    screenshot is boss-fight.png (drop 27_screenshot.png there).
    ============================================================ */
 :root{
-  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --mono:'JetBrains Mono','Noto Sans SC', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
   --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
   --accent:#83b6dd; --steel:#6487aa; --gold:#e0a93f; --green:#62d38a; --blue:#7ec8ff; --line:#3a3120; --rule:#2a2417;
 }
 *{box-sizing:border-box; margin:0; padding:0;}
 html{scroll-behavior:smooth;}
-body{font-family:var(--mono); background:linear-gradient(180deg, var(--bg) 0%, #171421 100%); background-color:var(--bg); color:var(--ink); line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden;}
+body{font-family:var(--mono); background:linear-gradient(180deg, var(--bg) 0%, #171421 100%); background-color:var(--bg); color:var(--ink); line-height:1.75; -webkit-font-smoothing:antialiased; overflow-x:hidden;}
 .overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
   background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.045) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
 .vignette{position:fixed; inset:0; pointer-events:none; z-index:9998;
@@ -235,27 +218,27 @@ footer .footer-links .div{opacity:.4;}
 <div class="vignette"></div>
 
 <nav>
-  <span class="brand"><a class="logo" href="index.es.html">FLASHBOSS</a><span class="pipe">|</span><span class="here">inicio</span></span>
+  <span class="brand"><a class="logo" href="index.zh.html">FLASHBOSS</a><span class="pipe">|</span><span class="here">主页</span></span>
   <span class="links">
-    <a href="manual/index.html">guía completa (beta)</a>
-    <a href="resources.es.html">recursos</a>
+    <a href="manual/index.html">攻略手册（beta）</a>
+    <a href="resources.zh.html">资源</a>
   </span>
   <span class="nav-mobile">
-    <a href="resources.es.html">recursos</a>
+    <a href="resources.zh.html">资源</a>
   </span>
   <div class="lang-switch">
-    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Elegir idioma">ES<span class="lang-caret">▾</span></button>
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="选择语言">ZH<span class="lang-caret">▾</span></button>
     <ul class="lang-menu" hidden>
       <li><a href="home.html">English</a></li>
       <li><a href="home.de.html">Deutsch</a></li>
-      <li><a href="home.es.html" aria-current="true">Español</a></li>
+      <li><a href="home.es.html">Español</a></li>
       <li><a href="home.ja.html">日本語</a></li>
-      <li><a href="home.zh.html">简体中文</a></li>
+      <li><a href="home.zh.html" aria-current="true">简体中文</a></li>
     </ul>
   </div>
 </nav>
 
-<div class="topbanner"><span class="bn-b"><a href="https://apps.microsoft.com/detail/9n0dx20hk701" target="_blank" rel="noopener">Windows&nbsp;Terminal</a> necesario para Windows&nbsp;10</span><span class="bn-c"> &mdash; Disponible en Steam &mdash; Windows&nbsp;&middot;&nbsp;Mac&nbsp;&middot;&nbsp;Linux</span></div>
+<div class="topbanner"><span class="bn-b">Windows&nbsp;10 需要 <a href="https://apps.microsoft.com/detail/9n0dx20hk701" target="_blank" rel="noopener">Windows&nbsp;Terminal</a></span><span class="bn-dash"> &mdash; </span><span class="bn-a">FlashBoss 界面已全面支持<b>简体中文</b>。可用简体中文学习：德语（Core）、世界语（Core）、Toki Pona、法语（Core、Pareto 1、Pareto 2）、英语（Core、Pareto 1、Pareto 2）。即将推出：西班牙语、意大利语。</span><span class="bn-c"> &mdash; 已在 Steam 发售 &mdash; Windows&nbsp;&middot;&nbsp;Mac&nbsp;&middot;&nbsp;Linux</span></div>
 
 <main>
 
@@ -263,12 +246,12 @@ footer .footer-links .div{opacity:.4;}
   <header class="hero">
     <div class="wrap">
       <h1 class="reveal">FlashBoss<span class="cursor"></span></h1>
-      <p class="sig reveal">repetición espaciada con boss fights</p>
-      <p class="lede reveal">Construye un vocabulario real: <b><a href="packs.es.html">inglés</a>, <a href="german.es.html">alemán</a>, <a href="spanish.es.html">español</a>, <a href="italian.es.html">italiano</a>, <a href="french.es.html">francés</a>, <a href="esperanto.es.html">esperanto</a> o <a href="toki-pona.es.html">toki pona</a></b> — y luego demuéstralo en un duelo.</p>
+      <p class="sig reveal">间隔重复 × 头目战</p>
+      <p class="lede reveal">打造真正的词汇量：<b><a href="packs.zh.html">英语</a>、<a href="german.zh.html">德语</a>、<a href="spanish.zh.html">西班牙语</a>、<a href="italian.zh.html">意大利语</a>、<a href="french.zh.html">法语</a>、<a href="esperanto.zh.html">世界语</a>或 <a href="toki-pona.zh.html">Toki Pona</a></b>——然后在决斗中证明它。</p>
       <div class="actions reveal">
-        <a class="btn" href="wordlists.es.html">vocabulario</a>
-        <a class="btn" href="lessons.es.html">lecciones</a>
-        <a class="btn" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-home&l=spanish" target="_blank" rel="noopener">steam</a>
+        <a class="btn" href="wordlists.zh.html">单词列表</a>
+        <a class="btn" href="lessons.zh.html">课程</a>
+        <a class="btn" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-home-zh&l=schinese">Steam</a>
       </div>
     </div>
   </header>
@@ -276,28 +259,28 @@ footer .footer-links .div{opacity:.4;}
   <!-- THE HOOK: the approach -->
   <section class="wrap">
     <div class="frame reveal">
-      <span class="tag">Escucha · lee · repite · califica · combate</span>
-      <h2>El método FlashBoss</h2>
-      <p class="body">El vocabulario objetivo se agrupa en clusters temáticos, con frases de ejemplo y notas explicativas cada vez más largas y complejas. Cada cluster termina en un boss fight.</p>
-      <p class="body">Antes de vencer al jefe, debes responder a las palabras que te resultaron más difíciles. Gana y esas cartas se gradúan.</p>
+      <span class="tag">听 · 读 · 重复 · 评分 · 战斗</span>
+      <h2>FlashBoss 学习法</h2>
+      <p class="body">目标词汇按主题划分为一个个集群，例句逐步变长、变复杂，并配有讲解笔记。每个集群的终点，是一场头目战。</p>
+      <p class="body">要击败头目，你必须先答出那些让你最头疼的单词。获胜后，这些卡片便宣告毕业。</p>
     </div>
   </section>
 
   <!-- THE CARD: what a card holds -->
   <section class="wrap">
     <div class="frame reveal">
-      <span class="tag">Las cartas en sí</span>
-      <h2>Visualización en cascada</h2>
+      <span class="tag">卡片本身</span>
+      <h2>层叠显示</h2>
       <div class="card-row">
         <div class="card-anatomy">
-          <p><b>Palabra objetivo</b> — presentada con pistas visuales para ayudar a la retención. Los intervalos de repaso actuales se muestran en estrellas.</p>
-          <p><b>Frase de ejemplo</b> — alrededor del 90% construida con lenguaje ya aprendido.</p>
-          <p><b>Traducción del ejemplo</b> — una versión idiomática de la frase.</p>
-          <p><b>Traducción</b> — califica la palabra, consulta tus notas, <b>7</b> para ver las opciones de calificación.</p>
-          <p><b>Notas</b> — gramática, etimología, lenguaje relacionado y ejemplos. Pulsa <b>8</b> para ver las notas. Son opcionales.</p>
+          <p><b>目标单词</b> — 配有帮助记忆的视觉提示，当前的复习间隔以星星显示。</p>
+          <p><b>例句</b> — 约 90% 由你已学过的词汇构成。</p>
+          <p><b>例句翻译</b> — 例句的地道译文。</p>
+          <p><b>翻译</b> — 在这里给单词评分、查看笔记，按 <b>7</b> 查看评分选项。</p>
+          <p><b>笔记</b> — 语法、词源、相关语言与示例。按 <b>8</b> 查看笔记。读不读，由你决定。</p>
         </div>
         <div class="card-shot">
-          <img src="ehefrau.png" alt="Una tarjeta de FlashBoss para la palabra alemana die Ehefrau (esposa): una palabra objetivo con código de color y estrellas de dominio, una frase de ejemplo y su traducción, la traducción simple y las notas.">
+          <img src="ehefrau.png" alt="FlashBoss 卡片示例：德语单词 die Ehefrau（妻子）——带掌握星标的彩色目标单词、例句及其翻译、单词翻译和笔记。">
         </div>
       </div>
     </div>
@@ -306,51 +289,41 @@ footer .footer-links .div{opacity:.4;}
   <!-- BOSS FIGHT: how we test -->
   <section class="wrap">
     <div class="frame reveal">
-      <span class="tag">El boss fight</span>
+      <span class="tag">头目战</span>
       <div class="bf-row">
         <div class="bf-text">
-          <h2>Cómo evaluamos</h2>
-          <p>Un paso adelante con cada respuesta correcta.</p>
-          <p>Dos pasos atrás con cada error.</p>
-          <p>Tus cartas más fáciles en las posiciones 1 y 2.</p>
-          <p>Las más difíciles en las posiciones 3 y 4.</p>
-          <p><a href="https://flashboss-demo.pages.dev/">Prueba la demo en vivo &rarr;</a></p>
+          <h2>考核方式</h2>
+          <p>答对一题，前进一步。</p>
+          <p>答错一题，后退两步。</p>
+          <p>位置 1、2 放你最容易的卡片。</p>
+          <p>位置 3、4 放你最难的卡片。</p>
+          <p><a href="https://flashboss-demo.pages.dev/">试玩在线演示 &rarr;</a></p>
         </div>
         <a class="bf-box" href="https://flashboss-demo.pages.dev/">
-          <img src="bossfight-poster.png" data-gif="bossfight.gif" alt="Un boss fight de alemán en FlashBoss: empareja la traducción, avanza o retrocede.">
-          <span class="bf-hint">prueba la demo</span>
+          <img src="bossfight-poster.png" data-gif="bossfight.gif" alt="FlashBoss 德语头目战：选对翻译就前进，选错就被击退。">
+          <span class="bf-hint">试玩演示</span>
         </a>
       </div>
-    </div>
-  </section>
-
-  <!-- BOTH WAYS: a Spanish boss-run doubles as English revision -->
-  <section class="wrap">
-    <div class="frame reveal">
-      <span class="tag">También repasas inglés</span>
-      <h2>El inglés, en cada boss fight</h2>
-      <p class="body">Cada curso de FlashBoss se enseña desde el inglés: la traducción y las notas de cada carta están en inglés. Mientras aprendes un idioma nuevo, tu inglés sigue en forma — y cada boss fight lo pone a prueba.</p>
-      <p class="body">Con el paquete de español es aún más directo: ya sabes el español, así que un boss fight se vuelve repaso de inglés puro. Y si buscas el inglés sin rodeos, <a href="packs.es.html">English Advance y Adept</a> son gratis.</p>
     </div>
   </section>
 
   <!-- WHAT YOU GET -->
   <section class="wrap gap-top">
     <div class="reveal">
-      <h2>Cinco paquetes gratis</h2>
-      <p class="sub">Añade mazos adicionales a medida que avanzas.</p>
+      <h2>5 个卡包免费附赠</h2>
+      <p class="sub">更多卡组，随学随加。</p>
       <div class="gives">
         <div class="give">
-          <div class="g-h">Gratis en el juego base</div>
-          <p>English Advance &amp; Adept<br>German Core<br>Esperanto Core<br><a href="toki-pona.es.html">Toki Pona</a></p>
+          <div class="g-h">基础版免费附赠</div>
+          <p>English Advance &amp; Adept<br>German Core<br>Esperanto Core<br><a href="toki-pona.zh.html">Toki Pona</a></p>
         </div>
         <div class="give">
-          <div class="g-h">La serie Roots</div>
-          <p>German, Norman, Latin y <a href="https://store.steampowered.com/app/4992480?utm_source=website-home&amp;l=spanish">Greek Roots</a> — la historia de la que está construido el <a href="packs.es.html">inglés</a>.</p>
+          <div class="g-h">Roots 系列</div>
+          <p>German、Norman、Latin 与 <a href="https://store.steampowered.com/app/4992480?utm_source=website-home&l=schinese">Greek Roots</a>——<a href="packs.zh.html">英语</a>正是由这段历史铸成。</p>
         </div>
         <div class="give">
-          <div class="g-h">Cursos completos de idiomas</div>
-          <p>Aprende <a href="german.es.html">alemán</a>, <a href="italian.es.html">italiano</a>, <a href="spanish.es.html">español</a>, <a href="french.es.html">francés</a> o <a href="esperanto.es.html">esperanto</a> con FlashBoss. 3.000 palabras cada uno — el francés abre con 1.000, y siguen más.</p>
+          <div class="g-h">完整语言课程</div>
+          <p>用 FlashBoss 学习<a href="german.zh.html">德语</a>、<a href="italian.zh.html">意大利语</a>、<a href="spanish.zh.html">西班牙语</a>、<a href="french.zh.html">法语</a>或<a href="esperanto.zh.html">世界语</a>。每门 3,000 词——法语先开放 1,000 词，更多正在路上。</p>
         </div>
       </div>
     </div>
@@ -359,31 +332,31 @@ footer .footer-links .div{opacity:.4;}
   <!-- FINAL CTA -->
   <section class="final wrap reveal">
     <div class="actions" style="justify-content:center;">
-      <a class="btn" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-home&l=spanish" target="_blank" rel="noopener">Consigue FlashBoss en Steam &rarr;</a>
+      <a class="btn" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-home-zh&l=schinese">在 Steam 上获取 FlashBoss &rarr;</a>
     </div>
-    <p class="epi">Scientia est Potentia.<span class="epi-cite">El conocimiento es poder</span></p>
+    <p class="epi">Scientia est Potentia.<span class="epi-cite">知识就是力量</span></p>
   </section>
 
 </main>
 
 <footer>
   <span class="footer-links">
-    <a href="resources.es.html">recursos</a><span class="div">·</span>
-    <a href="about.es.html">cómo funciona</a><span class="div">·</span>
-    <button class="share-toggle" type="button" aria-expanded="false">compartir</button><span class="div">·</span>
-    <a href="affiliate.es.html">promocionar</a>
+    <a href="resources.zh.html">资源</a><span class="div">·</span>
+    <a href="about.zh.html">运作原理</a><span class="div">·</span>
+    <button class="share-toggle" type="button" aria-expanded="false">分享</button><span class="div">·</span>
+    <a href="affiliate.zh.html">推广</a>
   </span>
   <div class="share-modal" id="shareModal" hidden>
-    <div class="share-card" role="dialog" aria-label="Compartir">
-      <button class="share-close" type="button" aria-label="Cerrar">&times;</button>
-      <div class="share-card-title">Compartir</div>
+    <div class="share-card" role="dialog" aria-label="分享">
+      <button class="share-close" type="button" aria-label="关闭">&times;</button>
+      <div class="share-card-title">分享</div>
       <div class="share-btns">
-        <button class="share-btn" data-share="copy" type="button">copiar enlace</button>
-        <a class="share-btn" data-share="x" target="_blank" rel="noopener">publicar en X</a>
-        <a class="share-btn" data-share="facebook" target="_blank" rel="noopener">facebook</a>
-        <a class="share-btn" data-share="reddit" target="_blank" rel="noopener">reddit</a>
-        <a class="share-btn" data-share="whatsapp" target="_blank" rel="noopener">whatsapp</a>
-        <a class="share-btn" data-share="messenger" target="_blank" rel="noopener">messenger</a>
+        <button class="share-btn" data-share="copy" type="button">复制链接</button>
+        <a class="share-btn" data-share="x" target="_blank" rel="noopener">在 X 上分享</a>
+        <a class="share-btn" data-share="facebook" target="_blank" rel="noopener">Facebook</a>
+        <a class="share-btn" data-share="reddit" target="_blank" rel="noopener">Reddit</a>
+        <a class="share-btn" data-share="whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="share-btn" data-share="messenger" target="_blank" rel="noopener">Messenger</a>
       </div>
     </div>
   </div>
@@ -447,7 +420,7 @@ footer .footer-links .div{opacity:.4;}
   var modal=document.getElementById('shareModal');
   if(!toggle||!modal) return;
   var url=location.href.split('#')[0];
-  var text='FlashBoss — tarjetas de repetición espaciada con boss fights.';
+  var text='FlashBoss — 间隔重复闪卡，配上头目战。';
   var U=encodeURIComponent(url), T=encodeURIComponent(text);
   var links={ x:'https://twitter.com/intent/tweet?url='+U+'&text='+T,
     facebook:'https://www.facebook.com/sharer/sharer.php?u='+U,
@@ -463,7 +436,7 @@ footer .footer-links .div{opacity:.4;}
   document.addEventListener('keydown', function(e){ if(e.key==='Escape' && !modal.hidden) close(); });
   var copyBtn=modal.querySelector('[data-share="copy"]');
   if(copyBtn) copyBtn.addEventListener('click', function(){
-    function done(){ copyBtn.textContent='¡copiado!'; setTimeout(function(){ copyBtn.textContent='copiar enlace'; },1400); }
+    function done(){ copyBtn.textContent='已复制！'; setTimeout(function(){ copyBtn.textContent='复制链接'; },1400); }
     function fb(){ var t=document.createElement('textarea'); t.value=url; t.style.position='fixed'; t.style.opacity='0'; document.body.appendChild(t); t.select(); try{document.execCommand('copy');}catch(e){} document.body.removeChild(t); done(); }
     if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done,fb); else fb();
   });
