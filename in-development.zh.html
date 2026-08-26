@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="zh-Hans">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>In Entwicklung — FlashBoss</title>
+<title>开发中 — FlashBoss</title>
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/in-development.html">
 <link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/in-development.de.html">
@@ -14,8 +14,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
-:root{ --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --accent:#e0a93f; --blue:#7ec8ff; --line:#3a3120; --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+:root{ --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --accent:#e0a93f; --blue:#7ec8ff; --line:#3a3120; --mono:'JetBrains Mono','Noto Sans SC', ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
 *{box-sizing:border-box; margin:0; padding:0;}
 body{ font-family:var(--mono); background:var(--bg); color:var(--ink); min-height:100vh; min-height:100dvh; display:flex; align-items:center; justify-content:center; padding:24px; line-height:1.6; -webkit-font-smoothing:antialiased; }
 .card{ width:100%; max-width:520px; border:1px solid var(--line); background:var(--panel); padding:36px 30px 30px; position:relative; box-shadow:0 0 40px rgba(0,0,0,.5); }
@@ -45,29 +46,30 @@ h1{ font-size:clamp(26px,7vw,40px); font-weight:800; letter-spacing:.04em; color
 .lang-menu a[aria-current="true"]{ color:var(--accent); }
 .lang-menu a[aria-current="true"]:hover{ color:var(--bg); }
 </style>
+<style>body{line-height:1.75;}</style>
 </head>
 <body>
   <div class="lang-switch">
-    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Sprache wählen">DE<span class="lang-caret">&#9662;</span></button>
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="选择语言">ZH<span class="lang-caret">&#9662;</span></button>
     <ul class="lang-menu" hidden>
       <li><a href="in-development.html">English</a></li>
-      <li><a href="in-development.de.html" aria-current="true">Deutsch</a></li>
+      <li><a href="in-development.de.html">Deutsch</a></li>
       <li><a href="in-development.es.html">Español</a></li>
       <li><a href="in-development.ja.html">日本語</a></li>
-      <li><a href="in-development.zh.html">简体中文</a></li>
+      <li><a href="in-development.zh.html" aria-current="true">简体中文</a></li>
     </ul>
   </div>
   <main class="card">
     <span class="tag">FlashBoss · admin</span>
-    <h1>In Entwicklung<span class="cursor"></span></h1>
+    <h1>开发中<span class="cursor"></span></h1>
     <div class="rows">
-      <div><span class="k">seite</span><span class="v">in-development.de.html</span></div>
-      <div><span class="k">status</span><span class="v">in Entwicklung</span></div>
-      <div><span class="k">eta</span><span class="v">bald™</span></div>
+      <div><span class="k">页面</span><span class="v">in-development.zh.html</span></div>
+      <div><span class="k">状态</span><span class="v">开发中</span></div>
+      <div><span class="k">eta</span><span class="v">即将上线™</span></div>
     </div>
     <div class="bar"><i></i></div>
-    <p class="joke">Ja — die Seite, die auflistet, was in Entwicklung ist, ist selbst noch in Entwicklung.</p>
-    <a class="back" href="packs.de.html">← zurück zu den Packs</a>
+    <p class="joke">是的——罗列开发中内容的这个页面，本身也还在开发中。</p>
+    <a class="back" href="packs.html">← 返回卡包</a>
   </main>
 <script>
 (function(){
