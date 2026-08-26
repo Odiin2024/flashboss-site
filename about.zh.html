@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FlashBoss 的教学原理 — 技术参考 | FlashBoss</title>
+<meta name="description" content="FlashBoss 技术参考——内容架构、训练环节机制、以头目战为毕业考验的体系，以及背后的设计要素。">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="FlashBoss 的教学原理 — 技术参考">
+<meta property="og:description" content="内容架构、训练环节机制、以头目战为毕业考验的体系，以及背后的设计要素。">
+<meta property="og:image" content="https://odiin2024.github.io/flashboss-site/website_image.png">
+<meta property="og:url" content="https://odiin2024.github.io/flashboss-site/about.zh.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FlashBoss 的教学原理 — 技术参考">
+<meta name="twitter:description" content="FlashBoss 背后的教学法与机制——可理解输入、提取练习、间隔重复，以及头目战毕业体系。">
+<meta name="twitter:image" content="https://odiin2024.github.io/flashboss-site/website_image.png">
+
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/about.html">
+<link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/about.de.html">
+<link rel="alternate" hreflang="es" href="https://odiin2024.github.io/flashboss-site/about.es.html">
+<link rel="alternate" hreflang="ja" href="https://odiin2024.github.io/flashboss-site/about.ja.html">
+<link rel="alternate" hreflang="zh" href="https://odiin2024.github.io/flashboss-site/about.zh.html">
+<link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/about.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   FlashBoss — How it teaches (about.html).
+   House terminal standard: home.png hero strip, neutral amber
+   terminal body. A long technical reference — TOC, spec tables,
+   ASCII diagrams, citations — in the same skin as the rest of
+   the site.
+   ============================================================ */
+:root{
+  --mono:'JetBrains Mono','Noto Sans SC', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
+  --accent:#e0a93f; --green:#62d38a; --blue:#7ec8ff; --rose:#ff8fb0;
+  --line:#3a3120; --rule:#2a2417;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--mono); background:var(--bg); color:var(--ink); line-height:1.7; -webkit-font-smoothing:antialiased;}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.04) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.wrap{max-width:840px; margin:0 auto; padding:0 24px;}
+a{color:var(--accent);}
+
+nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line); position:relative; z-index:3; background:var(--bg);}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--dim); margin-right:auto;}
+nav .brand a, nav .brand .sep{color:var(--dim); text-decoration:none;}
+nav .brand a:hover{color:var(--ink);}
+nav .brand .here{font-weight:800; color:var(--ink);}
+nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--ink);}
+nav .brand .logo:hover{color:var(--accent);}
+nav .brand .pipe{color:var(--dim); margin:0 11px;}
+.nav-mobile{display:none;}
+.nav-mobile a{color:inherit; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.08em; opacity:.85;}
+.nav-mobile a:hover{opacity:1; color:var(--accent);}
+@media(max-width:640px){ nav .brand, nav .links{display:none;} .nav-mobile{display:flex; flex:1; justify-content:space-between; align-items:center;} .nav-mobile .r{display:flex; gap:18px;} }
+nav .links a{color:var(--ink); text-decoration:none; opacity:.7; margin-left:22px;}
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+nav .links a.steam{font-weight:800; opacity:1;}
+nav .lang-switch{position:relative; margin-left:22px;}
+nav .lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--ink); background:var(--bg); border:1px solid var(--dim); padding:5px 8px; line-height:1; cursor:pointer;}
+nav .lang-toggle:hover, nav .lang-toggle[aria-expanded="true"]{background:var(--ink); color:var(--bg);}
+nav .lang-caret{font-size:8px; line-height:1; transition:transform .15s ease;}
+nav .lang-toggle[aria-expanded="true"] .lang-caret{transform:rotate(180deg);}
+nav .lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--bg); border:1px solid var(--dim); min-width:120px; z-index:50;}
+nav .lang-menu[hidden]{display:none;}
+nav .lang-menu li{margin:0; padding-left:0; position:static;}
+nav .lang-menu li::before{content:none;}
+nav .lang-menu a{display:block; font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--ink); text-decoration:none; padding:7px 10px; white-space:nowrap; opacity:1; margin:0;}
+nav .lang-menu a:hover{background:var(--ink); color:var(--bg); text-decoration:none;}
+nav .lang-menu a[aria-current="true"]{color:var(--accent);}
+nav .lang-menu a[aria-current="true"]:hover{color:var(--bg);}
+
+/* HERO — home.png strip (matches resources / packs) */
+.hero{position:relative; padding:78px 0 60px; overflow:hidden;}
+.hero::before{content:""; position:absolute; inset:0; z-index:0; background:#0c0a06 url('home.png') center 30% / cover no-repeat;}
+.hero::after{content:""; position:absolute; inset:0; z-index:1; background:linear-gradient(180deg, rgba(16,13,8,.52) 0%, rgba(16,13,8,.74) 55%, var(--bg) 100%);}
+.hero .wrap{position:relative; z-index:2;}
+.hero .crumb{font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--accent);}
+.hero h1{font-size:clamp(34px,7vw,60px); margin:13px 0 12px; font-weight:800; letter-spacing:-.01em;}
+.hero .subtitle{max-width:62ch; color:var(--dim); font-size:15px;}
+
+/* TOC */
+.toc{position:relative; border:1px solid var(--line); border-left:2px solid var(--accent); background:var(--panel); padding:20px 24px 18px; margin:42px 0 12px;}
+.toc-title{position:absolute; top:0; left:16px; transform:translateY(-50%); background:var(--bg); padding:0 9px;
+  font-size:11px; letter-spacing:.2em; text-transform:uppercase; font-weight:700; color:var(--faint);}
+.toc ol{list-style:none; counter-reset:toc; columns:2; column-gap:60px;}
+@media(max-width:560px){.toc ol{columns:1;}}
+.toc li{counter-increment:toc; padding:3px 0; font-size:13.5px;}
+.toc li::before{content:counter(toc) ".  "; color:var(--faint);}
+.toc a{color:var(--dim); text-decoration:none;}
+.toc a:hover{color:var(--accent);}
+
+main{padding:18px 0 0; counter-reset:sec;}
+section{padding:30px 0; border-top:1px solid var(--rule);}
+section:first-child{border-top:0;}
+h2{counter-increment:sec; font-size:clamp(22px,4.5vw,30px); font-weight:800; letter-spacing:-.01em; color:var(--ink); margin-bottom:14px;}
+h2::before{content:counter(sec) ".  "; color:var(--accent); font-weight:800;}
+h3{font-size:15px; font-weight:700; color:var(--accent); margin:22px 0 6px; letter-spacing:.02em;}
+p{margin-bottom:14px; color:color-mix(in oklab, var(--ink), var(--dim) 30%); font-size:15px;}
+p:last-child{margin-bottom:0;}
+em{color:var(--ink); font-style:italic;}
+strong{color:var(--ink); font-weight:700;}
+code{font-family:var(--mono); font-size:.88em; color:var(--blue); background:rgba(126,200,255,.08); padding:1px 6px; border-radius:2px;}
+ul{margin:0 0 14px 0; padding-left:0; list-style:none;}
+ul li{position:relative; padding-left:20px; margin-bottom:6px; color:color-mix(in oklab, var(--ink), var(--dim) 30%); font-size:15px;}
+ul li::before{content:"·"; position:absolute; left:4px; color:var(--accent); font-weight:700;}
+
+/* spec tables */
+.spec-wrap{overflow-x:auto; margin:14px 0;}
+.spec-table{width:100%; border-collapse:collapse; font-size:13.5px; min-width:460px;}
+.spec-table th{text-align:left; font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--faint); font-weight:700; padding:9px 14px; border-bottom:1px solid var(--line);}
+.spec-table td{padding:10px 14px; border-bottom:1px solid var(--rule); color:var(--dim); vertical-align:top;}
+.spec-table td:first-child{white-space:nowrap;}
+.spec-table tr:last-child td{border-bottom:0;}
+
+/* ASCII diagrams */
+.tech-block{font-family:var(--mono); font-size:12.5px; line-height:1.5; color:var(--green); background:#0b0a06; border:1px solid var(--line); padding:16px 18px; margin:16px 0; overflow-x:auto; white-space:pre;}
+/* session-loop diagram: two cropped panels in one block; capped (~30% smaller) on desktop, full-width on mobile */
+.flowshots{max-width:560px; margin:16px 0;}
+.flowshots img{display:block; width:100%; height:auto; border:1px solid var(--line); background:#000;}
+.flowshots img + img{margin-top:14px;}
+
+/* figures */
+figure{margin:18px 0; border:1px solid var(--line); background:var(--panel); padding:0;}
+figure img{display:block; width:100%; height:auto;}
+figcaption{font-size:12.5px; color:var(--faint); font-style:italic; padding:12px 16px; border-top:1px solid var(--rule);}
+figure.shot{padding:18px; text-align:center;}
+figure.shot img{display:inline-block; width:100%; max-width:560px; height:auto; border:1px solid var(--rule);}
+figure.shot figcaption{border-top:1px solid var(--rule); margin-top:16px; padding:12px 0 0; text-align:left;}
+/* arena image + description, all inside one clickable bossfight button */
+.bossfight{display:block; position:relative; margin:24px 0; padding:18px; border:1px solid var(--line); background:var(--panel); text-decoration:none; transition:border-color .14s ease;}
+.bossfight:hover{border-color:var(--accent);}
+.bossfight .bf-img{display:block; width:100%; max-width:560px; margin:0 auto; height:auto; border:1px solid var(--rule); transition:opacity .15s ease;}
+.bossfight .bf-text{margin:14px 0 0; font-size:13px; font-style:italic; line-height:1.65; color:var(--faint); transition:opacity .15s ease;}
+.bossfight:hover .bf-img, .bossfight:hover .bf-text{opacity:.3;}
+.bf-hint{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); font-size:15px; font-weight:800; letter-spacing:.16em; text-transform:uppercase; white-space:nowrap; color:var(--accent); background:rgba(11,10,6,.72); border:1px solid var(--accent); padding:13px 26px; opacity:0; transition:opacity .15s ease; pointer-events:none;}
+.bossfight:hover .bf-hint{opacity:1;}
+
+/* CTA buttons */
+.cta-row{display:flex; gap:14px; flex-wrap:wrap; margin:30px 0 6px;}
+.btn{display:inline-block; font-size:14px; font-weight:700; letter-spacing:.06em; text-decoration:none; padding:13px 24px; transition:transform .12s ease, box-shadow .12s ease;}
+.btn.manual{color:var(--ink); background:transparent; border:1px solid var(--line);}
+.btn.manual:hover{border-color:var(--accent); color:var(--accent);}
+.btn.steam{color:#14110a; background:var(--accent); border:1px solid var(--accent); box-shadow:5px 5px 0 color-mix(in oklab, var(--accent), #000 60%);}
+.btn.steam:hover{transform:translate(-2px,-2px); box-shadow:7px 7px 0 color-mix(in oklab, var(--accent), #000 60%);}
+
+/* references */
+.references{margin-top:30px; padding-top:22px; border-top:1px solid var(--line); font-size:13px; color:var(--dim);}
+.references h3{color:var(--faint); margin-top:0;}
+.references ol{list-style:none; counter-reset:ref; padding:0;}
+.references li{counter-increment:ref; padding-left:30px; position:relative; margin-bottom:7px;}
+.references li::before{content:"[" counter(ref) "]"; position:absolute; left:0; color:var(--accent);}
+
+footer{border-top:1px solid var(--line); padding:28px 24px; margin-top:40px; text-align:center; font-size:12px; color:var(--faint); letter-spacing:.04em;}
+footer .footer-links{display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap;}
+footer .footer-links a{color:var(--dim); text-decoration:none;} footer .footer-links a:hover{color:var(--ink);}
+footer .footer-links .div{opacity:.4;}
+footer .made{margin-top:12px; opacity:.8;}
+</style>
+<style>body{line-height:1.75;}</style>
+</head>
+<body>
+<div class="overlay"></div>
+
+<nav>
+  <span class="brand"><a class="logo" href="index.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.html">首页</a><span class="sep"> · </span><span class="here">关于</span></span>
+  <span class="links">
+    <a href="manual/index.html">攻略指南（beta）</a>
+    <a href="packs.html">卡包</a>
+    <a href="resources.html">资源</a>
+    <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-about&l=schinese">steam</a>
+  </span>
+  <span class="nav-mobile">
+    <a href="home.html">首页</a>
+    <span class="r"><a href="packs.html">卡包</a><a href="resources.html">资源</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-about&l=schinese">steam</a></span>
+  </span>
+  <div class="lang-switch">
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="选择语言">ZH<span class="lang-caret">▾</span></button>
+    <ul class="lang-menu" hidden>
+      <li><a href="about.html">English</a></li>
+      <li><a href="about.de.html">Deutsch</a></li>
+      <li><a href="about.es.html">Español</a></li>
+      <li><a href="about.ja.html">日本語</a></li>
+      <li><a href="about.zh.html" aria-current="true">简体中文</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="crumb">技术参考</div>
+    <h1>FlashBoss 的教学原理</h1>
+    <p class="subtitle">内容架构、训练环节机制、以头目战为毕业考验的体系，以及背后的设计要素。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <nav class="toc" aria-label="目录">
+    <div class="toc-title">目录</div>
+    <ol>
+      <li><a href="#overview">概述</a></li>
+      <li><a href="#architecture">内容架构</a></li>
+      <li><a href="#masters">师父</a></li>
+      <li><a href="#packs">卡包结构</a></li>
+      <li><a href="#session">训练环节与调度</a></li>
+      <li><a href="#fight">头目战</a></li>
+      <li><a href="#pedagogy">教学设计</a></li>
+      <li><a href="#scope">训练范围</a></li>
+      <li><a href="#effective">高效使用 FlashBoss</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <section id="overview">
+      <h2>概述</h2>
+      <p>FlashBoss 是一款用于词汇习得的桌面终端应用。它把间隔重复调度器、配有文本转语音的精构例句、按主题组织的内容集群，以及头目战毕业机制结合在一起。整个系统旨在培养目标语言的接受性技能——阅读、听力与理解。</p>
+      <p>一个 Core 卡包包含 1,000 张卡片，在语境中提供约 10,000 词的目标语言输入。Pareto 扩展包各自再增加约 20,000 词，围绕尚未覆盖的最高频词汇构建。支持的学习语言为英语、德语、西班牙语、意大利语和世界语。</p>
+    </section>
+
+    <section id="architecture">
+      <h2>内容架构</h2>
+      <p>本节介绍 FlashBoss 各卡包共有的内部结构。卡包层面的组织方式——卡包如何组合、外语卡包与英语卡包有何不同——见第 4 节。</p>
+
+      <h3>卡片</h3>
+      <p>每张卡片最多承载五个文本字段和两条音频资产。只有目标语言字段会被朗读：</p>
+      <div class="spec-wrap">
+      <table class="spec-table">
+        <thead><tr><th>字段</th><th>内容</th><th>TTS</th></tr></thead>
+        <tbody>
+          <tr><td><code>TargetWord</code></td><td>所训练的词汇项。在有性属的语言中带冠词，并按语法性别着色。</td><td>朗读</td></tr>
+          <tr><td><code>Translation</code></td><td>目标单词在学习者母语中的释义。</td><td>—</td></tr>
+          <tr><td><code>ExampleSentence</code></td><td>把目标单词置于语境中的精构句子，只使用调度器已经引入的词汇。</td><td>朗读</td></tr>
+          <tr><td><code>ExampleTranslation</code></td><td>例句在学习者母语中的地道译文。</td><td>—</td></tr>
+          <tr><td><code>Notes</code></td><td>词源、语法说明、第二个用例或一组同义词。可选。</td><td>—</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>文本转语音只应用于目标语言字段。这种不对称是有意为之：目标是让学习者浸润在目标语言的语音系统里，同时让母语的辅助信息保持沉默、不喧宾夺主。</p>
+
+      <h3>集群</h3>
+      <p>集群是按主题分组的一批卡片——FlashBoss 的进度单位。同一集群的卡片一起引入、一起训练，并通过同一场头目战一起毕业。集群的主题具体而集中：<em>数字与时间</em>、<em>旅行与住宿</em>、<em>地方美食</em>、<em>社会角色与人物</em>。</p>
+
+      <h3>层级</h3>
+      <p>集群隶属于层级。一个 Core 卡包包含五个层级，每个层级通常约有八个集群。在外语卡包中，层级是难度门槛：它决定该层集群的例句可以出现哪些语法结构。第 3 层级的例句仅限一般现在时、命令式和简单过去时；第 4 层级加入未完成过去时和条件式；第 5 层级开放包括虚拟式在内的全部语法。在英语卡包中，层级按主题而非句法使用——层级归属反映的是话题领域（如<em>表格与文件</em>、<em>社交与电子邮件</em>、<em>易混词</em>），而非语法复杂度。</p>
+
+      <h3>课程</h3>
+      <p>课程是钉在特定卡片上的参考页——伴随卡片走完训练全程的检查点材料。带课程的卡片首次出现时，课程随之出现。此后卡片每次按间隔重复日程重新浮现，课程也随之重现。因此课程是持续存在的参考资料，而非一次性的展示。已经内化课程内容的学习者可以单独停用它：卡片继续训练，课程不再出现。</p>
+    </section>
+
+    <section id="masters">
+      <h2>师父</h2>
+      <p>训练开始之前，学习者要选择一位师父——设定每日节奏的引路人。师父决定<em>连击要求</em>：每天为保住连击而必须完成的卡片数，从 8 张到 34 张不等，约合 5 到 30 分钟的学习。</p>
+      <div class="spec-wrap">
+      <table class="spec-table">
+        <thead><tr><th>师父</th><th>性情</th><th>每日卡片</th></tr></thead>
+        <tbody>
+          <tr><td>🐺 Luna — 温柔鼓励</td><td>管束型</td><td>8</td></tr>
+          <tr><td>⚫ Claude — 分析精确</td><td>建议型</td><td>13</td></tr>
+          <tr><td>🐉 Shen — 严厉直接</td><td>管束型</td><td>13</td></tr>
+          <tr><td>🦉 Odiin — 鼓励友善</td><td>建议型</td><td>21</td></tr>
+          <tr><td>🦊 Kitsune — 顽皮的捣蛋鬼</td><td>建议型</td><td>34</td></tr>
+          <tr><td>🦅 Aquila — 高贵自律</td><td>管束型</td><td>34</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>一位师父有多严格，就体现在这个每日数量上。Odiin 的每日 21 张，是推荐给新学习者的最高强度——一条高标准之路。两位 34 张的师父 Kitsune 和 Aquila 在此之上：那是留给复习轮，以及想要极限强度的少数人的节奏。</p>
+      <p>师父的<em>性情</em>是另一回事，它只管一件事——魔典。<strong>管束型</strong>师父会限制魔典环节，防止你冲得太远而倦怠。<strong>建议型</strong>师父会提醒你再来一场并不明智，然后退到一旁，任你去做。除此之外，两者完全相同。</p>
+      <p>两者的搭配并不均衡。13 张与 34 张的节奏各有两种性情可选——13 张是 Claude（建议型）或 Shen（管束型），34 张是 Kitsune（建议型）或 Aquila（管束型）——在这两档，节奏与风格可以分开挑选。8 张的节奏只属于 Luna（管束型），21 张只属于 Odiin（建议型）。</p>
+    </section>
+
+    <section id="packs">
+      <h2>卡包结构</h2>
+      <p>卡包是 FlashBoss 的发行单位：一个独立的词汇集——通常为 1,000 张卡片——拥有自己的集群结构、层级结构和课程库。依语言不同，卡包按两种不同的范式发行。</p>
+
+      <h3>外语卡包：累进式三包序列</h3>
+      <p>德语、西班牙语、意大利语和世界语各以三个卡包的序列发行：<strong>Core</strong>、<strong>Pareto 1</strong> 与 <strong>Pareto 2</strong>。这一进程是累进的——每个卡包都以之前卡包引入的词汇为前提，并在其上构建新的例句。Pareto 1 的例句取材于 Core 词汇加上 Pareto 1 的新目标单词；Pareto 2 则以前两个卡包为前提。完成全部三包的学习者，将在目标语言中获得 3,000 张卡片的接受性词汇量。</p>
+      <p>层级编号在整个序列中连续。Core 覆盖第 1–5 层级。Pareto 1 与 Pareto 2 共同把序列再延伸十个层级：第 6 层级是第一个 Pareto 层级，第 15 层级是最后一个。</p>
+      <p>各卡包的 CEFR 目标：</p>
+      <div class="spec-wrap">
+      <table class="spec-table">
+        <thead><tr><th>卡包</th><th>卡片数</th><th>目标</th></tr></thead>
+        <tbody>
+          <tr><td><code>Core</code></td><td>1,000</td><td>A1–A2 语法接触；为学习者进入 A2 沉浸式教学做好准备。</td></tr>
+          <tr><td><code>Pareto 1</code></td><td>1,000</td><td>高频 B1–B2 词汇；延伸到 Core 未涉及的语域（旅行、公文、社交）。</td></tr>
+          <tr><td><code>Pareto 2</code></td><td>1,000</td><td>B2–C1 词汇；正式连接词、抽象语域、文化内容。</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h3>英语卡包：独立单包</h3>
+      <p>英语的发行方式不同。每个英语卡包都是自成一体的 1,000 词词汇集，学习者按水平和兴趣挑选卡包，而不是按顺序完成。这里没有累进进程——完成一个英语卡包并不以另一个为前提。英语卡包分为两个结构类别：</p>
+      <ul>
+        <li><strong>水平包</strong>——把读者拉上一个台阶、并让其在那里站稳的词汇。免费的枢纽卡包《English Adept》跨越最长的攀升：从八年级以下的阅读水平接入，一路把学习者带到大学就绪，终点约在 C1。《English Advance》瞄准在社会中畅行无阻的实用英语：成年生活绕不开的表格、书信、公文与日常文件。它的指导原则是：一次做好、做彻底，此后再也不必为此费心。</li>
+        <li><strong>Roots 系列</strong>——付费卡包，沿英语的三个词源地层钻研英语词汇：《German Roots》（盎格鲁-撒克逊层）、《Norman Roots》（诺曼法语层）、《Latin Roots》（学术层）。三者之间的交叉引用，让赋予英语语域体系的历史同源对词一一浮现。</li>
+      </ul>
+    </section>
+
+    <section id="session">
+      <h2>训练环节与调度</h2>
+      <p>一次训练环节让每张卡片经过五个阶段。前四个以卡片为单位；第五个以集群为单位。</p>
+      <div class="flowshots">
+        <img src="session_loop.png" alt="环节循环：每张卡片依次经过「听」「读」「重复」「评分」，随后调度器选出下一张卡片，循环继续。">
+        <img src="cluster_selection.png" alt="以集群为单位：训练持续进行，直到集群获得头目战资格；战斗的结果或为通过，或为再战。">
+      </div>
+
+      <h3>听</h3>
+      <p>目标单词出现在屏幕上的同时，Piper 文本转语音将它朗读出来。学习者准备好后，按键即可显示并朗读例句。这是首次接触。</p>
+
+      <h3>读</h3>
+      <p>在每一步，把朗读过的内容自己大声读出来，既能巩固记忆，也能提升发音和开口的信心。随后学习者有时间解析句子、对照译文，并在语境中吸收语法。</p>
+
+      <h3>重复</h3>
+      <p>译文显示后，重播控制随之可用：<code>Enter</code> 重播目标单词，<code>6</code> 重播例句。此阶段重复次数不限；学习者准备好了再前进。</p>
+
+      <h3>评分</h3>
+      <p>学习者在六级量表（0 到 5）上为自己的识记程度评分。评分会移动卡片在斐波那契间隔序列（1、2、3、5、8、13、21…天）中的位置，并以每档评分的最短间隔作为下限。评分 0 是特例——无论卡片先前处于什么位置，一律重置为 1 天。</p>
+      <div class="spec-wrap">
+      <table class="spec-table">
+        <thead><tr><th>评分</th><th>含义</th><th>间隔变化</th></tr></thead>
+        <tbody>
+          <tr><td><code>0</code></td><td>完全忘记。</td><td>重置为 1 天。</td></tr>
+          <tr><td><code>1</code></td><td>很差。</td><td>位置 −3（最短 1 天）。</td></tr>
+          <tr><td><code>2</code></td><td>较差。</td><td>位置 −2（最短 2 天）。</td></tr>
+          <tr><td><code>3</code></td><td>一般。</td><td>位置 −1（最短 3 天）。</td></tr>
+          <tr><td><code>4</code></td><td>良好。</td><td>位置不变（最短 5 天）。</td></tr>
+          <tr><td><code>5</code></td><td>完美。</td><td>位置 +1（最短 8 天）。</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>这个量表经过校准，只有苛刻的评分才能换来推进。只有 5 分能让卡片前进；4 分原地保持；1 到 3 分让卡片沿斐波那契日程后退；0 分把它重置为 1 天。每档评分的最短间隔防止卡片间隔因一次差评而崩塌，也为掌握规则提供了锚点。</p>
+
+      <h3>卡片掌握</h3>
+      <p>连续两个 5 分，卡片即告掌握。机制很直接：一个 5 分把卡片的最短间隔提升到 8 天；第二个 5 分把它推进到 13 天——掌握门槛。因此无论起点在哪里，连续两次完美回忆都能把一张卡片带到掌握。</p>
+
+      <h3>每日环节</h3>
+      <p>新卡片按集群顺序一次一张进入卡组；集群边界不会阻挡卡片的引入。每日卡片量遵循斐波那契比例——在一天的环节里，复习卡片与新卡片按相邻斐波那契数的比例抽取，两者之比趋近黄金分割率 φ。</p>
+
+      <h3>头目战，准备好了吗？</h3>
+      <p>当集群 80% 的卡片被掌握——即 80% 达到 13 天间隔——集群便获得头目战资格。开战并不要求掌握每一张卡片：但要获胜，你必须接连答对自己最难对付的两张卡片。战斗机制在下一节详述。</p>
+    </section>
+
+    <section id="fight">
+      <h2>头目战</h2>
+      <p>头目战是集群的毕业机制，也是集群退出活跃训练的唯一途径。与由自己打分的评分阶段不同，头目战是对抗性的，并且严格采用选择题。学习者与头目共处一条线性擂台；学习者从左端出发，头目站在更靠右的位置。任务是把头目推下擂台远端。相扑规则：台上只能留下一个。</p>
+      <p>每回合以集群中的一张卡片为题，数字键 1–8 上给出八个候选答案。答对，学习者沿赛道前进一格，头目同时被推得离远端更近一格。答错，学习者向近端倒滑两格，甚至跌落台下。学习者被推下近端后，当天将无法再挑战该集群的头目战，须待次日。头目被推过远端，即被击败，这个集群也随之被你击败。</p>
+      <a class="bossfight" href="https://flashboss-demo.pages.dev/">
+        <img class="bf-img" src="boss-arena.png" alt="头目战擂台：学习者与头目共享的一条水平赛道，远端设有标记。">
+        <p class="bf-text">擂台：学习者（左）与头目（右）共享的一条水平赛道，远端设有标记——头目的出口。答对一题，学习者前进一格，头目被推得离那一端更近一格；答错一题，学习者倒退两格。第 1–2 格抽取集群中最简单的卡片，第 3–4 格抽取最难的。跌下近端，集群当日锁定，次日方可再战；把头目推过远端，集群即被击败。</p>
+        <span class="bf-hint">点击开战</span>
+      </a>
+      <p>战斗中的卡片排序是有意设计的。第 1、2 格从集群最简单的卡片中抽取——一段热身，让学习者先建立位置优势。第 3、4 格抽取集群最难的：卡组里最薄弱的词，在学习者刚刚站稳脚跟时立即送上。在第 3 或第 4 格答错，学习者倒退两格——落回第 1 或第 2 格——而且从那一刻起，答错的卡片会被重新归类为该学习者最容易的卡片。不巧的是，这意味着它正等在那里：同一张卡片，此刻就守在学习者刚刚落回的简单格位上。集群最薄弱的卡片未被掌握之前，这个集群就无法被击败。</p>
+      <p>设计依据见第 7 节。简而言之：头目战注入一种有边界、低代价的压力源，制造真实的提取压力，却没有现实语言失败的后果。它还提供了一个明确的成功状态——击败集群——这是间隔重复本身那种没有终点的节奏所缺少的。</p>
+    </section>
+
+    <section id="pedagogy">
+      <h2>教学设计</h2>
+      <p>FlashBoss 的架构建立在二语习得与认知心理学的既有研究之上。相关基础如下：</p>
+
+      <h3>可理解输入</h3>
+      <p>Krashen 的输入假说 [1] 认为，当输入略高于当前水平——既足以读懂、又足以拓展——语言习得最为有效。FlashBoss 的例句经过精心构造，目标单词通常是句中唯一的未知成分；句子的其余部分取自调度器已经引入的词汇。对处于训练中的学习者，这把可理解度校准在约 80–95%，让每个句子落在 <em>i+1</em> 区间。</p>
+
+      <h3>提取练习</h3>
+      <p>主动回忆比重复阅读带来更牢固的长期记忆 [2]。评分阶段强制学习者在译文揭晓<em>之前</em>完成提取，让测试效应作用于每一次卡片曝光。卡片不是被动展示的；它们被主动回忆、自我评估。</p>
+
+      <h3>间隔重复</h3>
+      <p>记忆沿一条可预测的曲线衰减 [3]。在即将遗忘之际复习一张卡片，比集中重复更高效地巩固记忆痕迹。斐波那契间隔序列是逼近遗忘曲线的若干种日程之一；此处选用它，是因为它简单、稳定，而且进程对学习者来说一目了然。</p>
+
+      <h3>合意困难</h3>
+      <p>在编码与提取时付出的努力，会转化为更牢固的记忆 [4]。评分量表把后退设为默认，从而落实合意困难：低于 5 的评分要么让卡片原地不动，要么把它沿斐波那契日程向后推。只有毫不含糊的回忆才赢得前进，而掌握需要连续两次这样的回忆。在集群完成显著多数之前，集群的全部卡片都留在流通中，但已经熟知的词不会与更值得练习的材料争夺注意力。</p>
+
+      <h3>情感层面的设计</h3>
+      <p>高焦虑会削弱习得 [1]。头目战的设计是在不抬高情感过滤器的前提下引入压力：代价有边界（一场败仗只损失一天，而不是在真实对话中失去立足之地），系统是私密的，也不存在任何永久记录。这种压力的火候经过刻意拿捏：锋利到足以聚焦提取，又浅到足以保全习得所需的条件。</p>
+
+      <h3>先输入，后输出</h3>
+      <p>单独训练时，接受性技能的发展天然快于产出性技能。在要求产出之前，先让学习者浸润在高理解度的输入里，与儿童习得母语的路径一致，也让词汇和语法先变得可解析，再变得可调用。FlashBoss 是完整学习管线中输入的那一半；产出练习——口语、写作、互动——交给 FlashBoss 无意取代的工具去完成。</p>
+    </section>
+
+    <section id="scope">
+      <h2>训练范围</h2>
+      <p>FlashBoss 训练：</p>
+      <ul>
+        <li>目标语言的词汇与识别。</li>
+        <li>句子层面的阅读理解。</li>
+        <li>通过 TTS 的听力理解。</li>
+        <li>在语境接触中附带习得的语法。</li>
+        <li>小句层面的阅读流利度。</li>
+      </ul>
+      <p>FlashBoss 不训练：</p>
+      <ul>
+        <li>书面产出。</li>
+        <li>会话流利度。</li>
+        <li>交流中的修补策略。</li>
+      </ul>
+      <p>学会开口使用一门新语言，最有力的方式是会话式沉浸课堂——与追求同一目标的同伴为伍，由懂行的老师引路。地理条件让它遥不可及时，在线辅导与会话课程能完成同样的工作；成本成为障碍时，哪怕一个聊天机器人也能顶上——一个练习开口的地方，也是提出 FlashBoss 学习途中冒出的问题的地方。</p>
+    </section>
+
+    <section id="effective">
+      <h2>高效使用 FlashBoss</h2>
+
+      <h3>掌控你的学习量</h3>
+      <p>你可以通过三种主要方式控制每日学习量：选择师父；越过连击要求，去争取每日 <strong>EPIC</strong> 奖励（推荐）；第三，一纸契约——EPIC 到手之后，你可以选择再多学一天，换取一枚<em>驱动</em>（drive）令牌。但与魔法打交道，务必小心。</p>
+      <p><strong>你的师父（每日连击）。</strong>你选择的师父设定每日要求——每天 8 到 34 张卡片（师父详见第 3 节）。只完成最低要求也始终保得住连击、走得动进度，想多学随时可以。</p>
+      <p><strong>EPIC。</strong>在层级的第一天——它的奠基日——EPIC 环节最多提供你每日要求三倍的新卡片。这是理想的开局：它把足够的词汇装进循环，让间隔重复得以运转。可领取的卡片数逐日起伏。</p>
+      <p><strong>魔典（那纸契约）。</strong>魔典环节把下一天提前——明天的复习加上一批新分配的卡片，今天做完。它就是字面意义上的「今天干完明天的活」，完成后赢得一枚<em>驱动</em>令牌：一天假期，存起来，留到你需要的时候。</p>
+
+      <h3>大声读出来</h3>
+      <p>每条提示播放时，都跟着说出来。开口产出不只是练发音：让句子在你口中成形，会在视觉之外同时调用运动记忆与听觉记忆，于是每张卡片同时刻进多条通道——比默读留下的痕迹更丰富、更持久。生成语言而不只是识别语言，本身就是一次提取，而提取正是记忆得以凝固的机制；由此建立的开口信心，则是不断复利的额外收获。</p>
+
+      <h3>战败之后</h3>
+      <p>一场失败的头目战只是小小的挫折。战败画面会列出你答错的词，并可按 <code>8</code> 在目标语言与译文语言之间切换。在困难格位（3–4）答错的卡片，从那时起被重新归类为你最容易的卡片，因此它会出现在下次挑战的开局格位。那张卡片没有被答对之前，集群无法被击败——曾经击倒你的词，成了战斗结束前你必须跨过的门。一个集群可能要打上好几次，但明天总会到来。</p>
+
+      <h3>预期进程</h3>
+      <p>坚持的学习者会在两到六个月内完成 Core。FlashBoss 会制造一种「懂得比实际多」的错觉，因为它让你待在一个由你认识的语言构成的气泡里，以受控的方式向外扩张。你的理解会有很大的空缺，但只要坚持下去，空缺终会合拢。而在此期间，你每天都比昨天多懂一点。祝你的语言之旅一路顺利——Odiin 师父与 Claude 师父。</p>
+    </section>
+
+    <div class="references">
+      <h3>参考文献</h3>
+      <ol>
+        <li>Krashen, S. D. (1982). <em>Principles and Practice in Second Language Acquisition</em>. Pergamon. (Input hypothesis; affective filter.)</li>
+        <li>Roediger, H. L., &amp; Karpicke, J. D. (2006). Test-enhanced learning: taking memory tests improves long-term retention. <em>Psychological Science</em>, 17(3), 249–255.</li>
+        <li>Ebbinghaus, H. (1885). <em>Über das Gedächtnis</em>. Duncker &amp; Humblot. (Forgetting curve, precursor to spaced repetition; cf. Leitner, 1972.)</li>
+        <li>Bjork, R. A. (1994). Memory and metamemory considerations in the training of human beings. In <em>Metacognition: Knowing about Knowing</em>. MIT Press. (Desirable difficulty.)</li>
+      </ol>
+    </div>
+
+  </main>
+</div>
+
+<footer>
+  <span class="footer-links">
+    <a href="home.html">首页</a><span class="div">·</span>
+    <a href="packs.html">卡包</a><span class="div">·</span>
+    <a href="resources.html">资源</a><span class="div">·</span>
+    <a href="manual/">攻略指南（beta）</a><span class="div">·</span>
+    <a href="press.html">媒体资料</a><span class="div">·</span>
+    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-about&l=schinese">steam</a>
+  </span>
+</footer>
+
+<script>
+// language dropdown: button toggles the menu; click-away / Esc closes it
+(function(){
+  var sw=document.querySelector('.lang-switch'); if(!sw) return;
+  var btn=sw.querySelector('.lang-toggle'), menu=sw.querySelector('.lang-menu');
+  function close(){ menu.hidden=true; btn.setAttribute('aria-expanded','false'); }
+  btn.addEventListener('click', function(e){ e.stopPropagation(); var willOpen=menu.hidden; menu.hidden=!willOpen; btn.setAttribute('aria-expanded', String(willOpen)); });
+  document.addEventListener('click', function(e){ if(!sw.contains(e.target)) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
+</script>
+</body>
+</html>
