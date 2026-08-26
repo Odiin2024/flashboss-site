@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="zh-Hans">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>French Core — フランス語1,000語 | FlashBoss</title>
-<meta name="description" content="FlashBoss French Core：本土フランス語の1,000語を5ティア・40クラスターで。参照レッスン20本、性を色で示す冠詞表示（エリジオンにも対応）、TTS音声。全カードに日本語の訳と解説、全レッスンも日本語 — 英語なしで遊べます。Steamで発売中。">
+<title>French Core — 法语 1,000 词 | FlashBoss</title>
+<meta name="description" content="FlashBoss French Core：1,000 个法国本土法语单词，分五个层级、四十个集群。20 节参考课程、按词性着色的冠词（省音后依旧保留）、TTS 语音。每张卡片都有简体中文翻译与注释，全部课程亦有中文版——无需英语即可游玩。已在 Steam 发售。">
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/french.html">
 <link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/french.de.html">
@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
    FlashBoss — French page (JA sibling of french.html)
@@ -29,7 +29,7 @@
    french-hero.png  -> hero banner image (sits at site root).
    ============================================================ */
 :root{
-  --mono:'JetBrains Mono','M PLUS 1 Code', ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
+  --mono:'JetBrains Mono','Noto Sans SC', ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
 
   /* gender colour-coding — RETUNE to the game's exact palette */
   --masc:#6cb6ff;   /* le */
@@ -142,18 +142,18 @@ p.body b{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--m
 .fr{font-style:italic; opacity:.96;}
 
 /* the locale headline band — the one thing a Japanese reader needs first */
-.jaband{border:1px solid var(--line); padding:28px 26px;
+.zhband{border:1px solid var(--line); padding:28px 26px;
   background:color-mix(in oklab, transparent, var(--t-accent) 6%);}
-.jaband h2{margin:0 0 10px;}
-.jaband p{margin:0 0 18px; font-size:15px; max-width:56ch;
+.zhband h2{margin:0 0 10px;}
+.zhband p{margin:0 0 18px; font-size:15px; max-width:56ch;
   color:color-mix(in oklab, var(--v-ink), var(--t-ink) calc(var(--mood)*100%));}
-.jaband ul{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(2,1fr); gap:0;}
-@media(max-width:640px){.jaband ul{grid-template-columns:1fr;}}
-.jaband li{font-size:13.5px; padding:11px 0 11px 22px; position:relative;
+.zhband ul{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(2,1fr); gap:0;}
+@media(max-width:640px){.zhband ul{grid-template-columns:1fr;}}
+.zhband li{font-size:13.5px; padding:11px 0 11px 22px; position:relative;
   color:color-mix(in oklab, var(--v-dim), var(--t-dim) calc(var(--mood)*100%));}
-.jaband li::before{content:"▸"; position:absolute; left:0; top:11px; font-size:11px;
+.zhband li::before{content:"▸"; position:absolute; left:0; top:11px; font-size:11px;
   color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
-.jaband li b{color:color-mix(in oklab, var(--v-ink), var(--t-ink) calc(var(--mood)*100%)); font-weight:700;}
+.zhband li b{color:color-mix(in oklab, var(--v-ink), var(--t-ink) calc(var(--mood)*100%)); font-weight:700;}
 
 /* gradient run — the five tiers as one movement, vous -> tu */
 .run{border:1px solid var(--line); display:grid; grid-template-columns:repeat(5,1fr); overflow:hidden;}
@@ -190,7 +190,7 @@ p.body b{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--m
 .ladder li:nth-child(1) .tgt{font-size:15px;} .ladder li:nth-child(2) .tgt{font-size:16px;}
 .ladder li:nth-child(3) .tgt{font-size:17px;} .ladder li:nth-child(4) .tgt{font-size:18px;}
 .ladder li:nth-child(5) .tgt{font-size:19px; font-weight:700;}
-.ladder .ja{display:block; color:color-mix(in oklab, var(--v-dim), var(--t-dim) calc(var(--mood)*100%)); font-size:13px; margin-top:6px;}
+.ladder .zh{display:block; color:color-mix(in oklab, var(--v-dim), var(--t-dim) calc(var(--mood)*100%)); font-size:13px; margin-top:6px;}
 
 /* gender cards */
 .cards{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
@@ -285,24 +285,24 @@ footer .footer-links .div{opacity:.4;}
 <div class="vignette"></div>
 
 <nav>
-  <span class="brand"><a class="logo" href="index.ja.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.ja.html">ホーム</a><span class="sep"> · </span><a href="packs.ja.html">パック</a><span class="sep"> · </span><span class="here">French</span></span>
+  <span class="brand"><a class="logo" href="index.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.html">首页</a><span class="sep"> · </span><a href="packs.html">卡包</a><span class="sep"> · </span><span class="here">French</span></span>
   <span class="links">
-    <a href="manual/index.html">攻略ガイド（β）</a>
-    <a href="resources.ja.html">リソース</a>
-    <a class="steam" href="https://store.steampowered.com/app/4475080/FlashBoss__French_Core/?utm_source=website-french-ja&l=japanese" target="_blank" rel="noopener">Steam</a>
+    <a href="manual/index.html">攻略指南（Beta）</a>
+    <a href="resources.html">资源</a>
+    <a class="steam" href="https://store.steampowered.com/app/4475080/FlashBoss__French_Core/?utm_source=website-french-zh&l=schinese" target="_blank" rel="noopener">Steam</a>
   </span>
   <span class="nav-mobile">
-    <a href="home.ja.html">ホーム</a>
-    <span class="r"><a href="resources.ja.html">リソース</a><a href="https://store.steampowered.com/app/4475080/FlashBoss__French_Core/?utm_source=website-french-ja&l=japanese" target="_blank" rel="noopener">Steam</a></span>
+    <a href="home.html">首页</a>
+    <span class="r"><a href="resources.html">资源</a><a href="https://store.steampowered.com/app/4475080/FlashBoss__French_Core/?utm_source=website-french-zh&l=schinese" target="_blank" rel="noopener">Steam</a></span>
   </span>
   <div class="lang-switch">
-    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="言語を選択">JA<span class="lang-caret">▾</span></button>
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="选择语言">ZH<span class="lang-caret">▾</span></button>
     <ul class="lang-menu" hidden>
       <li><a href="french.html">English</a></li>
       <li><a href="french.de.html">Deutsch</a></li>
       <li><a href="french.es.html">Español</a></li>
-      <li><a href="french.ja.html" aria-current="true">日本語</a></li>
-      <li><a href="french.zh.html">简体中文</a></li>
+      <li><a href="french.ja.html">日本語</a></li>
+      <li><a href="french.zh.html" aria-current="true">简体中文</a></li>
     </ul>
   </div>
 </nav>
@@ -313,34 +313,34 @@ footer .footer-links .div{opacity:.4;}
   <header class="hero">
     <!-- Odiin supplies french-hero.png at the site root. Until it lands the
          onerror hides the broken image and the hero falls back to flat ink. -->
-    <img class="hero-img" src="french-hero.png" alt="FlashBoss French Core — ターミナル調のカード枠に表示されたフランス語のカード。名詞の冠詞は性ごとに色分けされています" loading="eager" decoding="async" onerror="this.style.display='none'">
+    <img class="hero-img" src="french-hero.png" alt="FlashBoss French Core——终端风格卡片框中的一张法语闪卡，名词的冠词按词性着色" loading="eager" decoding="async" onerror="this.style.display='none'">
     <div class="wrap">
-      <p class="kicker reveal">Steamで発売中 · <b>1,000語</b> · 40クラスター · 20レッスン · 完全日本語対応</p>
+      <p class="kicker reveal">已在 Steam 发售 · <b>1,000 单词</b> · 40 集群 · 20 节课程 · 完整简体中文支持</p>
       <h1 class="reveal">Français<span class="cursor"></span></h1>
-      <p class="tagline reveal">丁寧な他人が、友人に変わるまで。</p>
-      <p class="sig reveal">聞く・読む・繰り返す・評価する・戦う</p>
-      <p class="lede reveal">出発点は、安全な距離から — <b class="fr">Bonjour, comment allez-vous&nbsp;?</b> 1,000語のあと、誰かが <b class="fr">on peut se tutoyer</b>（もう tu で話しませんか）と言い、語調がまるごと変わります。<b>本土フランス語</b>を、実際に出会う頻度の順に。</p>
+      <p class="tagline reveal">彬彬有礼的陌生人，终成挚友。</p>
+      <p class="sig reveal">听 · 读 · 重复 · 评分 · 战斗</p>
+      <p class="lede reveal">你从安全的距离开始——<b class="fr">Bonjour, comment allez-vous&nbsp;?</b> 一千个单词之后，有人对你说 <b class="fr">on peut se tutoyer</b>（我们可以用 tu 相称了），整个语域随之一变。<b>法国本土法语</b>，按你实际遇到它的频率精选。</p>
       <div class="steamcta reveal">
-        <a class="btn hot" href="https://store.steampowered.com/app/4475080/FlashBoss__French_Core/?utm_source=website-french-ja&l=japanese" target="_blank" rel="noopener">SteamでFrench Coreを手に入れる &rarr;</a>
+        <a class="btn hot" href="https://store.steampowered.com/app/4475080/FlashBoss__French_Core/?utm_source=website-french-zh&l=schinese" target="_blank" rel="noopener">在 Steam 上获取 French Core &rarr;</a>
       </div>
       <div class="actions reveal">
-        <a class="btn" href="wordlists.ja.html?lang=French&amp;set=Core">単語リスト</a>
-        <a class="btn" href="lessons.ja.html?lang=French">レッスン</a>
-        <a class="btn" href="https://flashboss-demo.pages.dev/">デモを試す</a>
+        <a class="btn" href="wordlists.html?lang=French&amp;set=Core">单词表</a>
+        <a class="btn" href="lessons.html?lang=French">课程</a>
+        <a class="btn" href="https://flashboss-demo.pages.dev/">试玩演示</a>
       </div>
     </div>
   </header>
 
-  <!-- JAPANESE HEADLINE -->
+  <!-- CHINESE HEADLINE -->
   <section class="wrap">
-    <div class="jaband reveal">
-      <h2>日本語で完全にプレイ可能</h2>
-      <p>全カードに日本語の訳と解説、全20レッスンも日本語、インターフェースも日本語対応、英語不要。橋渡しの言語としての英語は、もう要りません。フランス語と日本語だけで、最初のカードから最後まで通せます。</p>
+    <div class="zhband reveal">
+      <h2>完整支持简体中文</h2>
+      <p>每张卡片都有中文翻译与注释，全部 20 节课程亦有中文版，游戏界面同样提供简体中文——不再需要英语作桥梁。从第一张卡到最后一张，只用法语和中文即可走完全程。</p>
       <ul>
-        <li><b>1,000枚すべて</b>に日本語の訳・例文訳・解説（Notes）</li>
-        <li><b>参照レッスン20本すべて</b>に日本語版</li>
-        <li><b>インターフェース</b>は英語・ドイツ語・スペイン語・日本語の4言語</li>
-        <li>設定は一度だけ。パック全体がそれに従います</li>
+        <li><b>1,000 张卡片全部</b>配有中文翻译、例句翻译与注释（Notes）</li>
+        <li><b>20 节参考课程全部</b>提供中文版</li>
+        <li><b>游戏界面</b>同样提供简体中文</li>
+        <li>设置一次，整个卡包随之生效</li>
       </ul>
     </div>
   </section>
@@ -348,18 +348,18 @@ footer .footer-links .div{opacity:.4;}
   <!-- THE ARGUMENT -->
   <section class="wrap">
     <div class="frame">
-      <span class="tag">French Coreの設計</span>
-      <h2>vous から tu へ</h2>
-      <p class="sub fr">Bonne continuation — その調子で。</p>
-      <p class="body">French Coreは、5つのティアで歩く一本道です。出発点は誰もが通る場所 — あいさつ、目の前にいる人、体、最初の動詞、食べもの、数、時計。そこから一日が広がります — 朝の目覚め、街、市場、暦、いちばん近い人たち。第5ティアでは、行政と法、メディア、デジタルの暮らし、祝祭、そして <span class="fr">joli</span> と <span class="fr">magnifique</span> を分ける形容詞の細かな陰翳までを読むことになります。</p>
-      <p class="body">単語はすべて字幕コーパスの頻度データから選ばれています — 映画・テレビ・会話であなたの耳に実際に届くフランス語を、理解に効く順に重みづけしたものです。文法はティアごとに姿を現し、例文は既習の範囲を出ません。カードの上に、あなたの先を行くものは何もありません。Coreを終えるころには、文脈の中で<b>7,000語を超えるフランス語</b>を読んだことになります。</p>
+      <span class="tag">French Core 的设计</span>
+      <h2>从 vous 到 tu</h2>
+      <p class="sub fr">Bonne continuation — 继续加油。</p>
+      <p class="body">French Core 是一条走进法语的路，分五个层级走完。起点人人相同：问候、眼前的人、身体、最初的动词、食物、数字、时钟。随后一天渐渐展开——起床、城镇、市场、日历、你最亲近的人。到第五层级，你已在阅读法律与行政、媒体、数字生活、节庆，以及把 <span class="fr">joli</span> 与 <span class="fr">magnifique</span> 区分开来的形容词的细微色差。</p>
+      <p class="body">每个单词都取自字幕语料库的词频数据——也就是在电影、电视与对话中真正传进你耳朵的法语，并按对理解最重要的程度加权。语法逐层级登场，例句始终不越出你已学过的范围，卡片上没有任何东西跑在你前面。修完 Core，你已在语境中读过 <b>7,000 多个法语单词</b>。</p>
 
       <div class="run reveal">
-        <div class="step"><div class="t">ティア1</div><p>はじめの接触、人と家族、体、基本の動詞、食と食事、数と色、時と暦。</p></div>
-        <div class="step"><div class="t">ティア2</div><p>目覚め、街なか、市場と食事、月と日付、近しい絆、日常。</p></div>
-        <div class="step"><div class="t">ティア3</div><p>身支度、家にて、風と雨、店と金、人と気分、そして過去形。</p></div>
-        <div class="step"><div class="t">ティア4</div><p>仕事の世界、旅路、学校にて、荒野の世界、心と意見、性質。</p></div>
-        <div class="step"><div class="t">ティア5</div><p>行政と法、媒体と芸術、デジタルの暮らし、祝い、大きな思想、細かな陰翳。</p></div>
+        <div class="step"><div class="t">层级 1</div><p>初次接触、家人、身体、核心动词、食物、数数、时钟。</p></div>
+        <div class="step"><div class="t">层级 2</div><p>清晨醒来、城镇四处、市场、日历、亲密的关系、日常生活。</p></div>
+        <div class="step"><div class="t">层级 3</div><p>梳洗准备、居家、天气、商店与钱、心情，以及过去时。</p></div>
+        <div class="step"><div class="t">层级 4</div><p>工作、旅途、学校、野外世界、思想与观点、性格。</p></div>
+        <div class="step"><div class="t">层级 5</div><p>行政与法律、媒体与艺术、数字生活、节庆、宏大观念、细微色差。</p></div>
       </div>
     </div>
   </section>
@@ -367,52 +367,52 @@ footer .footer-links .div{opacity:.4;}
   <!-- TIER & CLUSTER LEDGER -->
   <section class="wrap">
     <div class="frame reveal">
-      <span class="tag">全体図</span>
-      <h2>5ティア、40クラスター</h2>
-      <p class="sub">どのクラスターも25枚、最後はボス戦です。隠しごとはありません — 全リストは<a href="wordlists.ja.html?lang=French&amp;set=Core">単語リストのページ</a>にあり、購入前に無料で読めます。</p>
+      <span class="tag">全景地图</span>
+      <h2>五个层级，四十个集群</h2>
+      <p class="sub">每个集群 25 张卡片，以一场头目战收尾。没有任何隐藏——完整列表就在<a href="wordlists.html?lang=French&amp;set=Core">单词表页面</a>，购买前即可免费阅读。</p>
       <div class="tiers">
         <div class="tierrow">
-          <div class="tno">ティア1</div>
-          <div class="tcl">はじめの接触 · 人と家族 · 体 · 基本の動詞 · 食と食事 · 数と色 · 時と暦 · 最初の着地</div>
-          <div class="tct">8クラスター · 200枚</div>
+          <div class="tno">层级 1</div>
+          <div class="tcl">初次接触 · 人与家庭 · 身体 · 核心动词 · 食物与三餐 · 数字与颜色 · 时间与日历 · 初次着陆</div>
+          <div class="tct">8 集群 · 200 张卡片</div>
         </div>
         <div class="tierrow">
-          <div class="tno">ティア2</div>
-          <div class="tcl">目覚め · 街なか · 市場と食事 · 月と日付 · 近しい絆 · 日常 · 物事をする · 無事の着地</div>
-          <div class="tct">8クラスター · 200枚</div>
+          <div class="tno">层级 2</div>
+          <div class="tcl">清晨醒来 · 城镇四处 · 市场与三餐 · 月份与日期 · 亲密纽带 · 日常生活 · 动手做事 · 平稳着陆</div>
+          <div class="tct">8 集群 · 200 张卡片</div>
         </div>
         <div class="tierrow">
-          <div class="tno">ティア3</div>
-          <div class="tcl">身支度 · 家にて · 風と雨 · 店と金 · 人と気分 · 移動中 · 過ぎた行い · 落ち着いて</div>
-          <div class="tct">8クラスター · 200枚</div>
+          <div class="tno">层级 3</div>
+          <div class="tcl">梳洗准备 · 居家 · 风与雨 · 商店与钱 · 人与心情 · 出行途中 · 过去的行动 · 站稳脚跟</div>
+          <div class="tct">8 集群 · 200 张卡片</div>
         </div>
         <div class="tierrow">
-          <div class="tno">ティア4</div>
-          <div class="tcl">仕事の世界 · 旅路 · 学校にて · 荒野の世界 · 生き物と遊び · 心と意見 · さまざまな性質 · 飛び立つ</div>
-          <div class="tct">8クラスター · 200枚</div>
+          <div class="tno">层级 4</div>
+          <div class="tcl">工作的世界 · 旅途 · 在学校 · 野外世界 · 生灵与趣味 · 思想与观点 · 种种性格 · 展翅起飞</div>
+          <div class="tct">8 集群 · 200 张卡片</div>
         </div>
         <div class="tierrow">
-          <div class="tno">ティア5</div>
-          <div class="tcl">行政と法 · 媒体と芸術 · デジタルの暮らし · 祝い · 大きな思想 · 細かな陰翳 · 心の動詞 · 頂</div>
-          <div class="tct">8クラスター · 200枚</div>
+          <div class="tno">层级 5</div>
+          <div class="tcl">行政与法律 · 媒体与艺术 · 数字生活 · 节庆 · 宏大观念 · 细微色差 · 心智动词 · 顶峰</div>
+          <div class="tct">8 集群 · 200 张卡片</div>
         </div>
       </div>
-      <p class="tierfoot"><span>5ティア · 40クラスター · <b>1,000枚</b></span><span>参照レッスン20本</span><span>A1〜A2の土台</span></p>
+      <p class="tierfoot"><span>5 层级 · 40 集群 · <b>1,000 张卡片</b></span><span>20 节参考课程</span><span>A1–A2 基础</span></p>
     </div>
   </section>
 
   <!-- SENTENCE LADDER -->
   <section class="wrap">
     <div class="frame reveal">
-      <span class="tag">育っていく例文</span>
-      <h2>少しずつ、難しく</h2>
-      <p class="sub">例文はティアごとに複雑になります — そして、まだ習っていない文法は決して使いません。</p>
+      <span class="tag">看例句成长</span>
+      <h2>难度层层递进</h2>
+      <p class="sub">例句的复杂度随层级逐级上升——并且绝不使用你尚未学过的语法。</p>
       <ol class="ladder">
-        <li class="reveal"><span class="tgt fr">J'ai deux frères et une sœur.</span><span class="ja">私には兄弟が二人と姉妹が一人います。</span></li>
-        <li class="reveal"><span class="tgt fr">Le week-end je cours, mais le matin je marche.</span><span class="ja">週末は走りますが、朝は歩きます。</span></li>
-        <li class="reveal"><span class="tgt fr">Elle couche son fils chaque soir à huit heures.</span><span class="ja">彼女は毎晩八時に息子を寝かせます。</span></li>
-        <li class="reveal"><span class="tgt fr">Il pleuvait beaucoup&nbsp;; ainsi, nous sommes restés à la maison.</span><span class="ja">雨がたくさん降っていたので、私たちは家にいました。</span></li>
-        <li class="reveal"><span class="tgt fr">Pourriez-vous m'expliquer pourquoi vous êtes encore en retard aujourd'hui&nbsp;?</span><span class="ja">なぜ今日もまた遅刻しているのか説明していただけますか。</span></li>
+        <li class="reveal"><span class="tgt fr">J'ai deux frères et une sœur.</span><span class="zh">我有两个兄弟和一个姐妹。</span></li>
+        <li class="reveal"><span class="tgt fr">Le week-end je cours, mais le matin je marche.</span><span class="zh">周末我跑步，早晨则散步。</span></li>
+        <li class="reveal"><span class="tgt fr">Elle couche son fils chaque soir à huit heures.</span><span class="zh">她每晚八点哄儿子上床睡觉。</span></li>
+        <li class="reveal"><span class="tgt fr">Il pleuvait beaucoup&nbsp;; ainsi, nous sommes restés à la maison.</span><span class="zh">雨下得很大，于是我们待在了家里。</span></li>
+        <li class="reveal"><span class="tgt fr">Pourriez-vous m'expliquer pourquoi vous êtes encore en retard aujourd'hui&nbsp;?</span><span class="zh">您能向我解释一下，为什么您今天又迟到了吗？（正式语体）</span></li>
       </ol>
     </div>
   </section>
@@ -420,34 +420,34 @@ footer .footer-links .div{opacity:.4;}
   <!-- GENDER COLOUR-CODING -->
   <section class="wrap">
     <div class="frame reveal">
-      <span class="tag">見ただけで分かる</span>
-      <h2>le・la を、色で</h2>
-      <p class="sub">名詞にはつねに冠詞が付き、性ごとに色分けされています。性は単語のあとで覚えるものではなく、単語と一緒に入ってきます。カードをタップするとめくれます。</p>
+      <span class="tag">一眼认出</span>
+      <h2>le · la，用颜色区分</h2>
+      <p class="sub">每个名词都带着冠词，并按词性以颜色标记——词性随单词一起记住，而不是事后补课。点击卡片即可翻面。</p>
       <div class="legend">
-        <span><i class="lm"></i> le — 男性名詞</span>
-        <span><i class="lf"></i> la — 女性名詞</span>
+        <span><i class="lm"></i> le — 阳性</span>
+        <span><i class="lf"></i> la — 阴性</span>
       </div>
       <div class="cards">
         <div class="card m reveal">
           <div class="art">le</div>
           <div class="word">travail</div>
           <div class="ex fr">Il va au travail à quelle heure&nbsp;?</div>
-          <div class="trans">仕事、労働 —「彼は何時に仕事に行きますか。」男性名詞。複数は不規則で <i>travaux</i>（-ail→-aux）。くだけた語は <i>le boulot</i>。</div>
-          <div class="hint">タップでめくる</div>
+          <div class="trans">工作——「他几点去上班？」阳性。复数不规则：<i>travaux</i>。口语常说 <i>le boulot</i>。</div>
+          <div class="hint">点击翻面</div>
         </div>
         <div class="card f reveal">
           <div class="art">la</div>
           <div class="word">maison</div>
           <div class="ex fr">Notre maison est blanche et nouvelle.</div>
-          <div class="trans">家 —「私たちの家は白くて新しいです。」女性名詞。<i>à la maison</i> は「家で、自宅で」。この言語で最もよく使う表現のひとつです。</div>
-          <div class="hint">タップでめくる</div>
+          <div class="trans">房子——「我们的房子又白又新。」阴性。<i>À la maison</i> 意为「在家」，是这门语言中最常用的短语之一。</div>
+          <div class="hint">点击翻面</div>
         </div>
         <div class="card f reveal">
           <div class="art">la</div>
           <div class="word">eau</div>
           <div class="ex fr">Je bois de l'eau.</div>
-          <div class="trans">水 —「私は水を飲みます。」女性名詞。<i>-eau</i> は <i>le couteau</i> のように男性が型ですが、eau はその例外。カード上では <i>l'eau</i> とエリジオンしますが、色はマゼンタのままです。</div>
-          <div class="hint">タップでめくる</div>
+          <div class="trans">水——「我喝水。」阴性，有别于让 <i>le couteau</i> 为阳性的 <i>-eau</i> 规律。卡片上它省音为 <i>l'eau</i>——颜色仍是品红。</div>
+          <div class="hint">点击翻面</div>
         </div>
       </div>
 
@@ -455,56 +455,56 @@ footer .footer-links .div{opacity:.4;}
         <div class="el m">
           <div class="from">le ami</div>
           <div class="big"><span class="a">l'</span>ami</div>
-          <div class="gloss">友人 — 色は<b>青</b>のまま、男性名詞のまま。</div>
+          <div class="gloss">朋友——依旧是<b>蓝色</b>，依旧是阳性。</div>
         </div>
         <div class="el f">
           <div class="from">la eau</div>
           <div class="big"><span class="a">l'</span>eau</div>
-          <div class="gloss">水 — 色は<b>マゼンタ</b>のまま、女性名詞のまま。</div>
+          <div class="gloss">水——依旧是<b>品红</b>，依旧是阴性。</div>
         </div>
       </div>
-      <p class="elide-note">多くの学習者が性を見失うのは、まさにエリジオンの場面です。母音の前では <i>le</i> も <i>la</i> も <i>l'</i> に潰れ、手がかりが消えます。FlashBossはアポストロフィの下に色を残すので、<i>l'ami</i> は男性、<i>l'eau</i> は女性と、ひと目で読めます。エリジオンを<i>拒む</i>有音の h の語 — <i>le héros</i>、<i>la honte</i> — には専用のレッスンがあります。</p>
+      <p class="elide-note">省音正是多数学习者丢失词性的地方：在元音前，<i>le</i> 和 <i>la</i> 都塌缩成 <i>l'</i>，线索随之消失。FlashBoss 把颜色留在撇号之下，于是 <i>l'ami</i> 一眼读出阳性，<i>l'eau</i> 一眼读出阴性。那些<i>拒绝</i>省音的嘘音 h 单词——<i>le héros</i>、<i>la honte</i>——有专门的一节课程。</p>
     </div>
   </section>
 
   <!-- REFERENCE LESSONS -->
   <section class="wrap">
     <div class="frame reveal">
-      <span class="tag">単語リストでは終わらない</span>
-      <h2>20のレッスンが、順に発火する</h2>
-      <p class="sub">参照レッスンは、それが必要になるちょうどそのカードで解錠され、以後はいつでも読み返せます。20本すべて日本語で、<a href="lessons.ja.html?lang=French">レッスンのページ</a>で無料で読めます。</p>
+      <span class="tag">不只是一份单词表</span>
+      <h2>二十节课程，依序触发</h2>
+      <p class="sub">参考课程恰在你第一次需要它的那张卡片处解锁，此后随时可以回看。全部二十节都可在<a href="lessons.html?lang=French">课程页面</a>免费阅读。</p>
       <ul class="lessons">
-        <li><span class="no">01</span>フランス語の発音<span class="d">母音、鼻母音、語末の無音、そして語尾でも生き残る CaReFuL の子音。</span></li>
-        <li><span class="no">03</span>tu と vous<span class="d">誰にどちらを使うのか。なぜ <i>vous</i> がつねに安全な出だしなのか。<i>on peut se tutoyer</i> と差し出されたとき、何が起きているのか。</span></li>
-        <li><span class="no">06</span>il y a と時刻の言い方<span class="d">誰かと何かを約束する前に、どうしても要る二つの構文。</span></li>
-        <li><span class="no">08</span>リエゾンとエリジオン<span class="d">なぜ <i>l'hôtel</i> は母音を落とし、<i>aux hôtels</i> は [z] を得るのか。</span></li>
-        <li><span class="no">12</span>有音の h<span class="d">無音の h がなおエリジオンを阻む、短く閉じたリスト：<i>la honte</i> であって <i>l'honte</i> ではありません。</span></li>
-        <li><span class="no">13</span>avoir か être か?<span class="d">複合過去がどちらの助動詞を取るか、そして <i>être</i> を譲らない動詞たち。</span></li>
-        <li><span class="no">14</span>est という同形異義語<span class="d">一つの綴りに二つの語、二つの発音：<i>il est</i> [ɛ] と <i>l'est</i> [ɛst]。</span></li>
-        <li><span class="no">17</span>接続法入門<span class="d">英語が失った法を、カードがそれを必要とし始める地点で。</span></li>
+        <li><span class="no">01</span>法语发音<span class="d">元音、鼻化元音、词尾的哑音，以及在词尾也能存活下来的 CaReFuL 辅音。</span></li>
+        <li><span class="no">03</span>tu 与 vous<span class="d">谁用哪个、为什么 <i>vous</i> 永远是稳妥的开场，以及当有人向你提出 <i>on peut se tutoyer</i> 时，这意味着什么。</span></li>
+        <li><span class="no">06</span>il y a 与报时<span class="d">在能与任何人约定任何事之前，你必须掌握的两个句型。</span></li>
+        <li><span class="no">08</span>联诵与省音<span class="d">为什么 <i>l'hôtel</i> 丢掉了元音，而 <i>aux hôtels</i> 多出一个 [z]。</span></li>
+        <li><span class="no">12</span>嘘音 h 单词<span class="d">一份简短的封闭清单：不发音的 h 依然挡住省音——是 <i>la honte</i>，绝不是 <i>l'honte</i>。</span></li>
+        <li><span class="no">13</span>avoir 还是 être？<span class="d">复合过去时选哪个助动词，以及那些非 <i>être</i> 不可的动词。</span></li>
+        <li><span class="no">14</span>est——同形异义词<span class="d">一个拼写，两个单词，两种发音：<i>il est</i> [ɛ] 对 <i>l'est</i> [ɛst]。</span></li>
+        <li><span class="no">17</span>虚拟式入门<span class="d">英语已经失落的语式，在卡片开始需要它的地方与你相遇。</span></li>
       </ul>
-      <p class="sub" style="margin:22px 0 0;">ほかに収録：カードの読み方、現在形、否定、命令形、近接未来、複合過去、代名動詞、半過去、条件法現在、単純未来、<i>héros</i> と <i>héroïne</i>、そして次に向かう先を示す最終レッスン。</p>
+      <p class="sub" style="margin:22px 0 0;">另有收录：如何读卡片、现在时、否定、命令式、近将来时、复合过去时、代词式动词、未完成过去时、条件式现在时、简单将来时、<i>héros</i> 与 <i>héroïne</i>，以及指明下一步去向的结业课程。</p>
     </div>
   </section>
 
   <!-- FALSE FRIENDS -->
   <section class="wrap">
     <div class="reveal">
-      <h2>見た目が英語に似ている語</h2>
-      <p class="sub">フランス語は英語と何千もの語を共有しています — そのうちの何語かは、嘘をついています。カードはそれを明記します。タップでめくれます。</p>
+      <h2>那些看着像英语的单词</h2>
+      <p class="sub">法语与英语共享成千上万个单词——其中有一小撮在骗你。卡片会明说。点击翻面。</p>
       <div class="cards reveal">
-        <div class="card idiom"><div class="art">空似言葉</div><div class="word">rester</div>
+        <div class="card idiom"><div class="art">假朋友</div><div class="word">rester</div>
           <div class="ex fr">Reste ici avec moi&nbsp;!</div>
-          <div class="trans">とどまる、残る — 英語の &ldquo;to rest&rdquo;では<b>ありません</b>。「ここで私と一緒にいてください！」「休む」は <i>se reposer</i>。</div><div class="hint">タップでめくる</div></div>
-        <div class="card idiom"><div class="art">空似言葉</div><div class="word">la monnaie</div>
+          <div class="trans">停留、留下——<b>不是</b>英语的 &ldquo;to rest&rdquo;。「留在这儿陪我！」「休息」是 <i>se reposer</i>。</div><div class="hint">点击翻面</div></div>
+        <div class="card idiom"><div class="art">假朋友</div><div class="word">la monnaie</div>
           <div class="ex fr">Est-ce que vous avez de la monnaie, monsieur&nbsp;?</div>
-          <div class="trans">釣り銭、小銭；通貨 — 一般的な「お金」では<b>ありません</b>（それは <i>l'argent</i>）。「小銭はお持ちですか。」</div><div class="hint">タップでめくる</div></div>
-        <div class="card idiom"><div class="art">空似言葉</div><div class="word">le coin</div>
+          <div class="trans">零钱、硬币；货币——<b>不是</b>泛指的钱（那是 <i>l'argent</i>）。「先生，您有零钱吗？」</div><div class="hint">点击翻面</div></div>
+        <div class="card idiom"><div class="art">假朋友</div><div class="word">le coin</div>
           <div class="ex fr">Le café est juste au coin de la rue, à droite.</div>
-          <div class="trans">角、隅 — 英語の coin（硬貨）では<b>ありません</b>。硬貨は <i>une pièce</i>。「カフェはすぐそこ、通りの角の右手にあります。」</div><div class="hint">タップでめくる</div></div>
-        <div class="card idiom"><div class="art">語調 · 空似言葉</div><div class="word">sympa</div>
+          <div class="trans">角落、街角——<b>不是</b>英语的 coin（硬币），硬币是 <i>une pièce</i>。「咖啡馆就在街角右手边。」</div><div class="hint">点击翻面</div></div>
+        <div class="card idiom"><div class="art">语域 · 假朋友</div><div class="word">sympa</div>
           <div class="ex fr">Ton nouveau collègue a l'air vraiment sympa.</div>
-          <div class="trans">感じのいい、親切な — 「同情的な」では<b>ありません</b>。「新しい同僚は本当に感じがよさそうですね。」口語で、カードには <i>tu</i> の語調と明記されているので、使う場所を間違えません。</div><div class="hint">タップでめくる</div></div>
+          <div class="trans">友好的、讨人喜欢的——<b>不是</b>「同情的」。「你的新同事看起来人真不错。」口语词，卡片上标注为 <i>tu</i> 语域，你便知道它属于什么场合。</div><div class="hint">点击翻面</div></div>
       </div>
     </div>
   </section>
@@ -512,26 +512,26 @@ footer .footer-links .div{opacity:.4;}
   <!-- PACKS -->
   <section class="wrap">
     <div class="reveal">
-      <h2>パレートの法則</h2>
-      <p class="sub">3パック。フランス語彙の10%で、使用場面の90%を。Coreは発売中、残り2つは順に続きます。</p>
+      <h2>帕累托法则</h2>
+      <p class="sub">3 个卡包。用 10% 的法语词汇，覆盖 90% 的法语使用场景。Core 已发售，其余两个依序推出。</p>
       <div class="packs">
-        <a class="pack" href="wordlists.ja.html?lang=French&amp;set=Core">
+        <a class="pack" href="wordlists.html?lang=French&amp;set=Core">
           <div class="n">Core</div>
-          <div class="lvl">A1〜A2 · 1,000語</div>
-          <p>はじめの接触から、居場所を得るまで。5ティア、参照レッスン20本。入り口の一本道です。</p>
-          <span class="soon">発売中</span>
+          <div class="lvl">A1–A2 · 1,000 单词</div>
+          <p>从初次接触到融入其中：五个层级、二十节参考课程。这条路的入口。</p>
+          <span class="soon">已发售</span>
         </a>
         <div class="pack locked">
           <div class="n">Pareto 1</div>
-          <div class="lvl">B1〜B2 · 1,000語</div>
-          <p>次の1,000語 — 速度のある日常フランス語と、くだけた話し言葉の語調。Coreが前提です。</p>
-          <span class="soon">順次登場</span>
+          <div class="lvl">B1–B2 · 1,000 单词</div>
+          <p>下一个一千词——加速的日常法语，以及随意的口语语域。需要 Core。</p>
+          <span class="soon">依序推出</span>
         </div>
         <div class="pack locked">
           <div class="n">Pareto 2</div>
-          <div class="lvl">B2〜C1 · 1,000語</div>
-          <p>教養ある標準語へ：改まった語調、組み立てられた議論、報道のことば。Pareto 1が前提です。</p>
-          <span class="soon">順次登場</span>
+          <div class="lvl">B2–C1 · 1,000 单词</div>
+          <p>受过教育的标准语：正式语域、结构化的论述、报刊的语言。需要 Pareto 1。</p>
+          <span class="soon">依序推出</span>
         </div>
       </div>
     </div>
@@ -540,17 +540,17 @@ footer .footer-links .div{opacity:.4;}
   <!-- METHOD -->
   <section class="wrap method">
     <div class="frame reveal">
-      <span class="tag">なぜ定着するのか</span>
-      <h2>単語カードを、ひとつの仕組みに</h2>
+      <span class="tag">为何记得住</span>
+      <h2>闪卡组成的完整系统</h2>
       <dl>
-        <dt>フィボナッチ間隔反復</dt><dd>カードごとに0〜5で自己評価。よく覚えているほど、次に出るまでの間隔が延びます — フィボナッチ数列にもとづく間隔反復です。</dd>
-        <dt>ボス戦</dt><dd>40クラスターそれぞれの関門は決闘。いちばん苦手な単語と向き合い、打ち倒さない限り勝てません。</dd>
-        <dt>卒業</dt><dd>クラスターを攻略すると、そのカードは日々の山から永久に抜けます。学ぶほど、山は小さくなります。</dd>
-        <dt>音声</dt><dd>目標語にも例文にも、澄んだフランス語のPiper TTS音声 — 本土フランス語の <i>siwis</i> fr_FRボイス。合成音声であり、話者の録音ではありません。</dd>
-        <dt>あなたの言語</dt><dd>1,000枚すべてが訳<i>と</i>解説を日本語・ドイツ語・スペイン語で持ち、参照レッスン20本すべてに日本語・ドイツ語・スペイン語版があります。インターフェースも同じ4言語。French Coreは英語を一語も使わずに遊べます。</dd>
-        <dt>性を、視覚で</dt><dd><i>le</i> は青、<i>la</i> はマゼンタ。すべての名詞に。<i>l'</i> へのエリジオンのあとも色は残ります。</dd>
-        <dt>頻度</dt><dd>単語リストは字幕コーパスの頻度データから構築 — 実際に耳にするフランス語から順に。</dd>
-        <dt>レッスン</dt><dd>参照レッスン20本が、これから読むものを解錠する地点で発火します。</dd>
+        <dt>斐波那契间隔重复</dt><dd>每张卡片按 0–5 评分。一个单词记得越牢，它再次出现的间隔就越长——基于斐波那契数列的间隔重复。</dd>
+        <dt>头目战</dt><dd>四十个集群，每一个都由一场决斗把守。不直面并战胜你最棘手的单词，就无法取胜。</dd>
+        <dt>毕业</dt><dd>击败一个集群，它的卡片就永远退出你的每日复习。学得越多，卡组就越小。</dd>
+        <dt>语音</dt><dd>每个目标单词、每个例句都配有清晰的法语 Piper 语音——法国本土口音的 <i>siwis</i> fr_FR 声音。它是合成语音，不是真人录音。</dd>
+        <dt>你的语言</dt><dd>1,000 张卡片全部配有简体中文、德语、日语、西班牙语与英语的翻译<i>及</i>注释，20 节参考课程亦各有其版本。游戏界面同样提供简体中文。French Core 不需要一个英语单词也能游玩。</dd>
+        <dt>词性可视</dt><dd><i>le</i> 蓝色，<i>la</i> 品红，每个名词皆然——而且颜色在省音成 <i>l'</i> 之后依然保留。</dd>
+        <dt>词频</dt><dd>单词表基于字幕语料库的词频数据构建——你真正会听到的法语，排在最前。</dd>
+        <dt>课程</dt><dd>二十节参考课程在序列中的恰当节点触发——恰好为你即将读到的内容解锁铺垫。</dd>
       </dl>
     </div>
   </section>
@@ -558,71 +558,71 @@ footer .footer-links .div{opacity:.4;}
   <!-- FAQ -->
   <section class="wrap faq">
     <div class="reveal">
-      <h2>よくある質問</h2>
-      <p class="sub">買う前に、みなさんが尋ねること。</p>
+      <h2>常见问题</h2>
+      <p class="sub">人们在购买之前会问的事。</p>
 
       <details>
-        <summary>これはどのフランス語ですか?</summary>
-        <p class="a">本土フランス語 — フランスのフランス語です。最初のカードから最後まで、語彙も例文も音声もそれで統一されています。</p>
+        <summary>这是哪一种法语？</summary>
+        <p class="a">法国本土法语——法国的法语。从第一张卡到最后一张，词汇、例句与语音皆是如此。</p>
       </details>
 
       <details>
-        <summary>日本語だけで遊べますか?</summary>
-        <p class="a">完全に遊べます。1,000枚すべてに日本語の訳・例文訳・解説（Notes）があり、参照レッスン20本すべてに日本語版があります。ゲーム本体のインターフェースも英語・ドイツ語・スペイン語・日本語に対応しています。英語は必要ありません。</p>
+        <summary>可以只用中文游玩吗？</summary>
+        <p class="a">完全可以。1,000 张卡片全部配有中文翻译、例句翻译与注释（Notes），20 节参考课程也全部有中文版。游戏界面同样提供简体中文。不需要英语。</p>
       </details>
 
       <details>
-        <summary>遊ぶのに他に必要なものはありますか?</summary>
-        <p class="a">はい。French CoreはFlashBoss本体のDLCなので、本体も必要です。それ以外 — レッスン、音声、ボス戦 — はすべてパックの中に入っています。</p>
+        <summary>游玩还需要别的什么吗？</summary>
+        <p class="a">需要。French Core 是 FlashBoss 本体的 DLC，因此你还需要本体游戏。其余的一切——课程、语音、头目战——都在卡包之内。</p>
       </details>
 
       <details>
-        <summary>音声はネイティブ話者の録音ですか?</summary>
-        <p class="a">いいえ。そこを取り繕うつもりはありません。目標語も例文も、ニューラルTTS（音声合成）が読み上げます — フランス本国のデータセットで学習した <i>siwis</i> fr_FR Piperボイスです。明瞭で一貫していますが、人の声の録音ではありません。</p>
+        <summary>语音是母语者录制的吗？</summary>
+        <p class="a">不是，我们也不打算装作是。每个目标单词、每个例句都由神经网络语音合成朗读——在法国本土数据集上训练的 <i>siwis</i> fr_FR Piper 声音。它清晰而稳定，但它是合成语音，不是真人。</p>
       </details>
 
       <details>
-        <summary>Coreでどのレベルまで行けますか?</summary>
-        <p class="a">A1〜A2の土台です。高頻度語1,000語と、現在形・複合過去・半過去・条件法・単純未来をひととおり扱う20本の文法レッスン、そして接続法への入門。終えるころには簡単なフランス語が読め、A2の授業についていけます。その道中で、文脈の中の7,000語を超えるフランス語を読むことになります。</p>
+        <summary>Core 能把我带到什么水平？</summary>
+        <p class="a">A1–A2 的基础：1,000 个高频单词，二十节语法课程覆盖现在时、复合过去时、未完成过去时、条件式与将来时，外加虚拟式入门。修完之后，你能阅读简单的法语、跟上 A2 的课堂，途中已在语境里读过 7,000 多个法语单词。</p>
       </details>
 
       <details>
-        <summary>Pareto 1 と Pareto 2 は?</summary>
-        <p class="a">どちらも執筆済みで — それぞれ1,000語 — 順に登場します。Pareto 1はCoreの上に次の1,000語の高頻度語とくだけた話し言葉の語調を重ね、Pareto 2は教養ある標準語に届きます。日付はまだ未定です。</p>
+        <summary>Pareto 1 和 Pareto 2 呢？</summary>
+        <p class="a">两者都已写就——各 1,000 个单词——将依序推出。Pareto 1 在 Core 之上再加一千个高频单词与随意的口语语域；Pareto 2 伸向受过教育的标准语。日期尚未确定。</p>
       </details>
 
       <details>
-        <summary>買う前に単語を見られますか?</summary>
-        <p class="a">全部見られます。Coreの完全な単語リストは<a href="wordlists.ja.html?lang=French&amp;set=Core">単語リストのページ</a>に、参照レッスン20本は<a href="lessons.ja.html?lang=French">レッスンのページ</a>にあります — 無料、印刷可、アカウント不要です。</p>
+        <summary>买之前能看到单词吗？</summary>
+        <p class="a">全部都能。Core 的完整单词表在<a href="wordlists.html?lang=French&amp;set=Core">单词表页面</a>，二十节参考课程在<a href="lessons.html?lang=French">课程页面</a>——免费、可打印、无需账号。</p>
       </details>
 
       <details>
-        <summary>デモはありますか?</summary>
-        <p class="a">ブラウザで遊べるボス戦があります。決める前に戦いの手ざわりを知りたい方はこちらへ：<a href="https://flashboss-demo.pages.dev/">デモを試す</a>。</p>
+        <summary>有试玩吗？</summary>
+        <p class="a">浏览器里就有一场可玩的头目战，想在决定之前感受一下战斗的手感，就来：<a href="https://flashboss-demo.pages.dev/">试玩演示</a>。</p>
       </details>
     </div>
   </section>
 
   <!-- FINAL CTA -->
   <section class="final wrap reveal">
-    <h2>vous から始めよう。</h2>
-    <p>1,000語、40のボス戦、20のレッスン — その先に、誰かがあなたに <i>tu</i> を差し出す瞬間があります。</p>
-    <p style="margin-top:26px;"><a class="btn hot" href="https://store.steampowered.com/app/4475080/FlashBoss__French_Core/?utm_source=website-french-ja&l=japanese" target="_blank" rel="noopener">SteamでFlashBossを手に入れる &rarr;</a></p>
-    <p class="also">あるいは、まず<a href="wordlists.ja.html?lang=French&amp;set=Core">単語リスト</a>と<a href="lessons.ja.html?lang=French">レッスン</a>を — どちらも無料です。</p>
+    <h2>从 vous 开始。</h2>
+    <p>一千个单词、四十场头目战、二十节课程——走过它们，就是有人向你递来 <i>tu</i> 的那一刻。</p>
+    <p style="margin-top:26px;"><a class="btn hot" href="https://store.steampowered.com/app/4475080/FlashBoss__French_Core/?utm_source=website-french-zh&l=schinese" target="_blank" rel="noopener">在 Steam 上获取 FlashBoss &rarr;</a></p>
+    <p class="also">或者，先读读<a href="wordlists.html?lang=French&amp;set=Core">单词表</a>和<a href="lessons.html?lang=French">课程</a>——它们都是免费的。</p>
   </section>
 
 </main>
 
 <footer>
-  <p class="epi">&ldquo;Tout le monde est content de te voir.&rdquo;<span class="tr">みんな君に会えて喜んでいます。</span><span class="epi-cite">French Core · ティア2</span></p>
+  <p class="epi">&ldquo;Tout le monde est content de te voir.&rdquo;<span class="tr">大家见到你都很高兴。</span><span class="epi-cite">French Core · 层级 2</span></p>
   <span class="footer-links">
-    <a href="home.ja.html">ホーム</a>
+    <a href="home.html">首页</a>
     <span class="div">·</span>
-    <a href="packs.ja.html">パック</a>
+    <a href="packs.html">卡包</a>
     <span class="div">·</span>
-    <a href="manual/">攻略ガイド（β）</a>
+    <a href="manual/">攻略指南（Beta）</a>
     <span class="div">·</span>
-    <a href="https://store.steampowered.com/app/4475080/FlashBoss__French_Core/?utm_source=website-french-ja&l=japanese" target="_blank" rel="noopener">Steam</a>
+    <a href="https://store.steampowered.com/app/4475080/FlashBoss__French_Core/?utm_source=website-french-zh&l=schinese" target="_blank" rel="noopener">Steam</a>
   </span>
 </footer>
 
