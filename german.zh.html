@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="zh-Hans">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Alemán — FlashBoss</title>
-<meta name="description" content="FlashBoss Alemán: mil palabras que crecen contigo. De 'Ich bin Student' a la carta del Finanzamt. Repetición espaciada, boss fights, codificación de género por color y síntesis de voz.">
+<title>German — 德语课程 | FlashBoss</title>
+<meta name="description" content="FlashBoss German：1,000 个与你一同成长的德语单词。从「Ich bin Student」到 Finanzamt（税务局）的来信。间隔重复、头目战、名词词性颜色标记、TTS 语音。">
 
 <!-- House font. If self-hosting, swap this for your local JetBrains Mono. -->
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/german.html">
@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
 
 <style>
 /* ============================================================
@@ -29,7 +30,7 @@
    --steam-url            -> set in the two CTA links below.
    ============================================================ */
 :root{
-  --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
+  --mono:'JetBrains Mono','Noto Sans SC', ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
 
   /* gender colour-coding — RETUNE to the game's exact palette */
   --der:#6cb6ff;   /* masculine */
@@ -231,7 +232,7 @@ p.body b{color:var(--inn-accent);}
   position:relative;
 }
 .ladder li::before{
-  content:"E" counter(tier);
+  content:"T" counter(tier);
   position:absolute; left:-15px; top:18px;
   background:color-mix(in oklab, var(--inn-bg), var(--exp-bg) calc(var(--mood)*100%));
   font-size:11px; font-weight:700; letter-spacing:.05em; padding:2px 0;
@@ -335,38 +336,35 @@ footer .footer-links{display:flex; justify-content:center; align-items:center; g
 footer .footer-links a{color:inherit; text-decoration:none; opacity:.75; letter-spacing:.04em;}
 footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
 footer .footer-links .div{opacity:.4;}
-
-.bridge-banner{font-family:var(--mono); font-size:12.5px; line-height:1.55; text-align:center; padding:11px 24px; color:#f0e6d3; background:rgba(126,200,255,.12); border-top:1px solid rgba(126,200,255,.28); border-bottom:1px solid rgba(126,200,255,.28);}
-.bridge-banner b{color:#7ec8ff; font-weight:700;}
 </style>
+<style>body{line-height:1.75;}</style>
 </head>
 <body>
 <div class="overlay"></div>
 <div class="vignette"></div>
 
 <nav>
-  <span class="brand"><a class="logo" href="index.es.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.es.html">inicio</a><span class="sep"> · </span><a href="packs.es.html">paquetes</a><span class="sep"> · </span><span class="here">alemán</span></span>
+  <span class="brand"><a class="logo" href="index.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.html">首页</a><span class="sep"> · </span><a href="packs.html">卡包</a><span class="sep"> · </span><span class="here">German</span></span>
   <span class="links">
-    <a href="manual/index.html">guía completa (beta)</a>
-    <a href="resources.es.html">recursos</a>
-    <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website&l=spanish">steam</a>
+    <a href="manual/index.html">攻略指南（Beta）</a>
+    <a href="resources.html">资源</a>
+    <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website&l=schinese" target="_blank" rel="noopener">Steam</a>
   </span>
   <span class="nav-mobile">
-    <a href="home.es.html">inicio</a>
-    <span class="r"><a href="resources.es.html">recursos</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website&l=spanish">steam</a></span>
+    <a href="home.html">首页</a>
+    <span class="r"><a href="resources.html">资源</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website&l=schinese" target="_blank" rel="noopener">Steam</a></span>
   </span>
   <div class="lang-switch">
-    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Elegir idioma">ES<span class="lang-caret">▾</span></button>
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="选择语言">ZH<span class="lang-caret">▾</span></button>
     <ul class="lang-menu" hidden>
       <li><a href="german.html">English</a></li>
       <li><a href="german.de.html">Deutsch</a></li>
-      <li><a href="german.es.html" aria-current="true">Español</a></li>
+      <li><a href="german.es.html">Español</a></li>
       <li><a href="german.ja.html">日本語</a></li>
-      <li><a href="german.zh.html">简体中文</a></li>
+      <li><a href="german.zh.html" aria-current="true">简体中文</a></li>
     </ul>
   </div>
 </nav>
-<div class="bridge-banner">La interfaz de FlashBoss ya está completamente en <b>español</b>. El curso de alemán es totalmente jugable en español: traducción y notas en cada carta, y todas las lecciones en español. <br>Ya en español: el curso de alemán (cada carta y todas las lecciones), Esperanto (Core), Toki Pona, Francés (Core). En curso: Inglés (Core), Francés Pareto 1. En preparación: Francés Pareto 2, Latín, griego antiguo.</div>
 
 <main>
 
@@ -374,13 +372,13 @@ footer .footer-links .div{opacity:.4;}
   <header class="hero">
     <div class="wrap">
       <h1 class="reveal">Deutsch<span class="cursor"></span></h1>
-      <p class="tagline reveal">Aprende el idioma mientras conoces la cultura.</p>
-      <p class="sig reveal">Escuchar · Leer · Repetir · Calificar · Luchar</p>
-      <p class="lede reveal">Empiezas diciendo <b class="de">Ich bin Student.</b> Al final lees la carta del <b>Finanzamt</b> — y sabes exactamente qué quiere. German Core te lleva desde la llegada hasta saber desenvolverte.</p>
+      <p class="tagline reveal">了解文化，学会语言。</p>
+      <p class="sig reveal">听 · 读 · 重复 · 评分 · 战斗</p>
+      <p class="lede reveal">起点是一句 <b class="de">Ich bin Student.</b>（我是学生）。到最后，你已能读懂 <b>Finanzamt</b>（税务局）的来信——并且清楚地知道它要什么。German Core 带你从初来乍到走到站稳脚跟。</p>
       <div class="actions reveal">
-        <a class="btn" href="wordlists.es.html?lang=German">Vocabulario</a>
-        <a class="btn" href="lessons.es.html?lang=German">Lecciones</a>
-        <a class="btn" href="https://flashboss-demo.pages.dev/">Probar demo</a>
+        <a class="btn" href="wordlists.html?lang=German">单词表</a>
+        <a class="btn" href="lessons.html?lang=German">课程</a>
+        <a class="btn" href="https://flashboss-demo.pages.dev/">试玩演示</a>
       </div>
     </div>
   </header>
@@ -389,19 +387,19 @@ footer .footer-links .div{opacity:.4;}
   <section class="wrap">
     <div class="frame">
       <span class="tag">German Core</span>
-      <h2>Empieza a hablar</h2>
-      <p class="sub">Mil palabras en cinco etapas — la base del alemán cotidiano.</p>
-      <p class="body">German Core viene gratis con FlashBoss — construido como tarjetas con lecciones de referencia que se desbloquean a medida que avanzas — saludos, vida diaria, moverte por la ciudad, tus primeras conversaciones de verdad.</p>
-      <p class="body">Las etapas cuatro y cinco hacen un breve desvío por la vida en Alemania — el idioma de su formidable burocracia, y para quien aspire a trabajar o estudiar en Alemania o cerca. Los paquetes Pareto continúan desde donde lo deja German Core. La gramática y el vocabulario suben de forma continua, hasta la complejidad plena de C1.</p>
+      <h2>开口说话</h2>
+      <p class="sub">五个层级、1,000 个单词——日常德语的根基。</p>
+      <p class="body">German Core 随 FlashBoss 免费附带——以闪卡形式构建，配有随进度逐一解锁的参考课程——问候、日常生活、出行往来，以及你的第一次真正的对话。</p>
+      <p class="body">层级 4 与层级 5 稍作绕行，转向德国的现实生活——应对其令人生畏的官僚体系的语言，也为有志在德国及周边工作或求学的人准备。Pareto 卡包从 German Core 的终点继续前行。语法与词汇持续攀升，一路抵达完整的 C1 复杂度。</p>
 
       <div class="movements reveal">
         <div class="mv found">
-          <div class="h">Etapas 1–3 · Fundamentos</div>
-          <p>Saludos, vida diaria, moverte por la ciudad, tus primeras conversaciones. Terreno estándar de principiante.</p>
+          <div class="h">层级 1–3 · 基础</div>
+          <p>问候、日常生活、出行往来、最初的对话。标准的入门范围。</p>
         </div>
         <div class="mv integ">
-          <div class="h">Etapas 4–5 · Integración</div>
-          <p>Burocracia alemana, trabajo y estudios: el idioma práctico para la vida en Alemania.</p>
+          <div class="h">层级 4–5 · 融入</div>
+          <p>德国的官僚体系、工作与学业：在德国生活的实用语言。</p>
         </div>
       </div>
     </div>
@@ -410,15 +408,15 @@ footer .footer-links .div{opacity:.4;}
   <!-- SENTENCE LADDER -->
   <section class="wrap">
     <div class="frame reveal">
-      <span class="tag">Míralo crecer</span>
-      <h2>Cada vez más exigente</h2>
-      <p class="sub">Las frases de ejemplo se vuelven más complejas etapa a etapa.</p>
+      <span class="tag">看例句成长</span>
+      <h2>难度层层递进</h2>
+      <p class="sub">例句的复杂度随层级逐级上升。</p>
       <ol class="ladder">
-        <li class="reveal"><span class="ger de">Ich bin Student.</span><span class="en">I am a student.</span></li>
-        <li class="reveal"><span class="ger de">Ich kaufe frisches Obst auf dem Markt.</span><span class="en">I buy fresh fruit at the market.</span></li>
-        <li class="reveal"><span class="ger de">Könnten Sie mir bitte erklären, wo ich einen Fahrschein lösen kann?</span><span class="en">Could you please explain to me where I can buy a ticket?</span></li>
-        <li class="reveal"><span class="ger de">Mir liegt es am Herzen, dass wir diese Angelegenheit vertraulich behandeln.</span><span class="en">It matters deeply to me that we handle this matter confidentially.</span></li>
-        <li class="reveal"><span class="ger de">Die Implikationen dieser Entscheidung übersteigen bei Weitem unsere ursprünglichen Erwartungen.</span><span class="en">The implications of this decision far exceed our original expectations.</span></li>
+        <li class="reveal"><span class="ger de">Ich bin Student.</span><span class="en">我是学生。</span></li>
+        <li class="reveal"><span class="ger de">Ich kaufe frisches Obst auf dem Markt.</span><span class="en">我在市场上买新鲜水果。</span></li>
+        <li class="reveal"><span class="ger de">Könnten Sie mir bitte erklären, wo ich einen Fahrschein lösen kann?</span><span class="en">您能给我讲一下在哪里可以买到车票吗？</span></li>
+        <li class="reveal"><span class="ger de">Mir liegt es am Herzen, dass wir diese Angelegenheit vertraulich behandeln.</span><span class="en">我由衷希望我们能对此事保密处理。</span></li>
+        <li class="reveal"><span class="ger de">Die Implikationen dieser Entscheidung übersteigen bei Weitem unsere ursprünglichen Erwartungen.</span><span class="en">这一决定的影响远远超出了我们最初的预期。</span></li>
       </ol>
     </div>
   </section>
@@ -426,35 +424,35 @@ footer .footer-links .div{opacity:.4;}
   <!-- GENDER COLOUR-CODING -->
   <section class="wrap">
     <div class="frame reveal">
-      <span class="tag">Léelo de un vistazo</span>
-      <h2>der · die · das, en color</h2>
-      <p class="sub">Cada sustantivo lleva su artículo codificado por color según el género. Lo recuerdas de vista, no a base de repetir. Toca una carta para girarla.</p>
+      <span class="tag">一眼认出</span>
+      <h2>der · die · das，用颜色区分</h2>
+      <p class="sub">每个名词都带着冠词，并按词性以颜色标记。靠眼睛记住，而不是靠反复背诵。点击卡片即可翻面。</p>
       <div class="legend">
-        <span><i class="lm"></i> der — masculino</span>
-        <span><i class="lf"></i> die — femenino</span>
-        <span><i class="ln"></i> das — neutro</span>
+        <span><i class="lm"></i> der — 阳性</span>
+        <span><i class="lf"></i> die — 阴性</span>
+        <span><i class="ln"></i> das — 中性</span>
       </div>
       <div class="cards">
         <div class="card m reveal">
           <div class="art">der</div>
           <div class="word">Personalausweis</div>
           <div class="ex de">Ich brauche meinen gültigen Personalausweis für die Anmeldung.</div>
-          <div class="trans">identity card — “I need my valid identity card for the registration.” Casual: <i>Perso</i>.</div>
-          <div class="hint">toca para girar</div>
+          <div class="trans">身份证——「办理住址登记需要我的有效身份证。」口语常说 <i>Perso</i>。</div>
+          <div class="hint">点击翻面</div>
         </div>
         <div class="card f reveal">
           <div class="art">die</div>
           <div class="word">Anmeldung</div>
           <div class="ex de">Innerhalb von zwei Wochen die Anmeldung beim Amt machen.</div>
-          <div class="trans">registration — “Do the registration at the office within two weeks.” Required within two weeks of moving.</div>
-          <div class="hint">toca para girar</div>
+          <div class="trans">住址登记——「两周内到政府部门办理住址登记。」搬家后两周内必须办理。</div>
+          <div class="hint">点击翻面</div>
         </div>
         <div class="card n reveal">
           <div class="art">das</div>
           <div class="word">Bürgeramt</div>
           <div class="ex de">Ich habe einen Termin beim Bürgeramt für die Anmeldung.</div>
-          <div class="trans">civic office — “I have an appointment at the civic office for the registration.” Also: <i>Bürgerbüro</i>.</div>
-          <div class="hint">toca para girar</div>
+          <div class="trans">市民事务局——「我预约了去市民事务局办理住址登记。」也叫 <i>Bürgerbüro</i>。</div>
+          <div class="hint">点击翻面</div>
         </div>
       </div>
     </div>
@@ -463,25 +461,25 @@ footer .footer-links .div{opacity:.4;}
   <!-- EXPERIENCE: THE FORM -->
   <section class="wrap">
     <div class="reveal">
-      <h2>Alemania como tu hogar</h2>
-      <p class="sub">El lenguaje burocrático es parte habitual de la vida en Alemania. Pasa el ratón por cualquier línea para ver el inglés.</p>
+      <h2>让德国成为你的家</h2>
+      <p class="sub">公文语言是德国日常生活寻常的一部分。悬停或点击任意一行，即可显示中文翻译。</p>
       <div class="form">
-        <div class="head"><span>Wortschatz · Etapa 4–5</span><span>Behördendeutsch</span></div>
+        <div class="head"><span>Wortschatz · 层级 4–5</span><span>Behördendeutsch</span></div>
         <div class="row">
-          <div class="k"><div class="w"><span class="a f">die</span>Anmeldung</div><small>registration</small></div>
-          <div class="v">Nach dem Umzug muss ich die Anmeldung beim Amt machen. <span class="stamp">⟶ Frist: 2 Wochen</span><span class="en">After moving, I have to register at the office — required within two weeks.</span></div>
+          <div class="k"><div class="w"><span class="a f">die</span>Anmeldung</div><small>住址登记</small></div>
+          <div class="v">Nach dem Umzug muss ich die Anmeldung beim Amt machen. <span class="stamp">⟶ Frist: 2 Wochen</span><span class="en">搬家后必须到政府部门办理住址登记——限期两周之内。</span></div>
         </div>
         <div class="row">
-          <div class="k"><div class="w">ablehnen</div><small>to reject</small></div>
-          <div class="v">Lehnt die Behörde Ihren Antrag ab, können Sie Widerspruch einlegen. <span class="stamp">⟶ Frist: 4 Wochen</span><span class="en">If the authority rejects your application, you can file an objection — within four weeks.</span></div>
+          <div class="k"><div class="w">ablehnen</div><small>驳回</small></div>
+          <div class="v">Lehnt die Behörde Ihren Antrag ab, können Sie Widerspruch einlegen. <span class="stamp">⟶ Frist: 4 Wochen</span><span class="en">如果部门驳回了你的申请，你可以提出异议——期限为四周。</span></div>
         </div>
         <div class="row">
-          <div class="k"><div class="w"><span class="a f">die</span>Steuererklärung</div><small>tax return</small></div>
-          <div class="v">Ich mache meine Steuererklärung online über das ELSTER-Portal.<span class="en">I do my tax return online through the ELSTER portal.</span></div>
+          <div class="k"><div class="w"><span class="a f">die</span>Steuererklärung</div><small>纳税申报</small></div>
+          <div class="v">Ich mache meine Steuererklärung online über das ELSTER-Portal.<span class="en">我通过 ELSTER 门户网站在线完成纳税申报。</span></div>
         </div>
         <div class="row">
-          <div class="k"><div class="w"><span class="a f">die</span>Krankenversicherung</div><small>health insurance</small></div>
-          <div class="v">In Deutschland braucht jeder eine Krankenversicherung — <span class="stamp">obligatorisch.</span><span class="en">In Germany, everyone needs health insurance — it's mandatory.</span></div>
+          <div class="k"><div class="w"><span class="a f">die</span>Krankenversicherung</div><small>医疗保险</small></div>
+          <div class="v">In Deutschland braucht jeder eine Krankenversicherung — <span class="stamp">obligatorisch.</span><span class="en">在德国，人人都需要医疗保险——这是强制性的。</span></div>
         </div>
       </div>
     </div>
@@ -490,24 +488,24 @@ footer .footer-links .div{opacity:.4;}
   <!-- PACKS -->
   <section class="wrap">
     <div class="reveal">
-      <h2>El principio de Pareto</h2>
-      <p class="sub">3 paquetes. El 10 % del vocabulario alemán para el 90 % de los usos.</p>
+      <h2>帕累托法则</h2>
+      <p class="sub">3 个卡包。用 10% 的德语词汇，覆盖 90% 的德语使用场景。</p>
       <div class="packs">
-        <a class="pack" href="wordlists.es.html?lang=German&amp;set=Core">
+        <a class="pack" href="wordlists.html?lang=German&amp;set=Core">
           <div class="n">Core</div>
-          <div class="lvl">A1–A2 · 1.000 palabras</div>
-          <p>De la llegada a la pertenencia, en cinco etapas. Síntesis de voz Thorsten.</p>
-          <span class="free">Incluido gratis</span>
+          <div class="lvl">A1–A2 · 1,000 单词</div>
+          <p>从初来乍到到安身立命，历经五个层级。Thorsten 语音朗读。</p>
+          <span class="free">免费附带</span>
         </a>
-        <a class="pack" href="wordlists.es.html?lang=German&amp;set=Pareto%201">
+        <a class="pack" href="wordlists.html?lang=German&amp;set=Pareto%201">
           <div class="n">Pareto 1</div>
-          <div class="lvl">B1–B2 · 1.000 palabras</div>
-          <p>Las siguientes mil, profundizando en el trabajo, los servicios y la vida social.</p>
+          <div class="lvl">B1–B2 · 1,000 单词</div>
+          <p>下一个一千词——深入工作、公共服务与社交生活。</p>
         </a>
-        <a class="pack" href="wordlists.es.html?lang=German&amp;set=Pareto%202">
+        <a class="pack" href="wordlists.html?lang=German&amp;set=Pareto%202">
           <div class="n">Pareto 2</div>
-          <div class="lvl">B2–C1 · 1.000 palabras</div>
-          <p>Rango abstracto, profesional y casi nativo.</p>
+          <div class="lvl">B2–C1 · 1,000 单词</div>
+          <p>抽象词汇、职业词汇，直至接近母语者的广度。</p>
         </a>
       </div>
     </div>
@@ -516,33 +514,33 @@ footer .footer-links .div{opacity:.4;}
   <!-- METHOD -->
   <section class="wrap method">
     <div class="frame reveal">
-      <span class="tag">Cómo se fija</span>
-      <h2>Las tarjetas como sistema integrado</h2>
+      <span class="tag">为何记得住</span>
+      <h2>闪卡组成的完整系统</h2>
       <dl>
-        <dt>SRS de Fibonacci</dt><dd>Califica cada carta de 0 a 5. Cuanto mejor conoces una palabra, más tarda en volver — repetición espaciada en intervalos de Fibonacci.</dd>
-        <dt>Boss fights</dt><dd>Cada cluster está protegido por un duelo que no puedes ganar sin enfrentarte a tus palabras más difíciles y superarlas.</dd>
-        <dt>Graduación</dt><dd>Vence un cluster y sus cartas dejan tu mazo diario para siempre. El mazo se hace más pequeño a medida que aprendes.</dd>
-        <dt>Audio</dt><dd>Síntesis de voz Thorsten Piper, limpia, en cada palabra y cada frase.</dd>
-        <dt>Lecciones</dt><dd>Las lecciones de referencia aparecen en el punto de la secuencia donde desbloquean lo que estás a punto de leer.</dd>
+        <dt>斐波那契间隔重复</dt><dd>每张卡片按 0–5 评分。一个单词记得越牢，它再次出现的间隔就越长——基于斐波那契数列的间隔重复。</dd>
+        <dt>头目战</dt><dd>每个集群都由一场决斗把守。不直面并战胜你最棘手的单词，就无法取胜。</dd>
+        <dt>毕业</dt><dd>击败一个集群，它的卡片就永远退出你的每日复习。学得越多，卡组就越小。</dd>
+        <dt>语音</dt><dd>每个单词、每个例句都配有清晰的 Thorsten Piper 语音朗读。</dd>
+        <dt>课程</dt><dd>参考课程在序列中的恰当节点出现——恰好为你即将读到的内容解锁铺垫。</dd>
       </dl>
     </div>
   </section>
 
   <!-- FINAL CTA -->
   <section class="final wrap reveal">
-    <a class="btn cold" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website&l=spanish">Consigue FlashBoss en Steam &rarr;</a>
+    <a class="btn cold" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website&l=schinese" target="_blank" rel="noopener">在 Steam 上获取 FlashBoss &rarr;</a>
   </section>
 
 </main>
 
 <footer>
-  <p class="blake">„Die Grenzen meiner Sprache bedeuten die Grenzen meiner Welt.“<br><span class="blake-cite">— Ludwig Wittgenstein</span></p>
+  <p class="blake">„Die Grenzen meiner Sprache bedeuten die Grenzen meiner Welt.“<br>我的语言的界限，意味着我的世界的界限。<br><span class="blake-cite">— 路德维希·维特根斯坦</span></p>
   <span class="footer-links">
-    <a href="home.es.html">inicio</a>
+    <a href="home.html">首页</a>
     <span class="div">·</span>
-    <a href="manual/">guía completa (beta)</a>
+    <a href="manual/">攻略指南（Beta）</a>
     <span class="div">·</span>
-    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website&l=spanish">steam</a>
+    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website&l=schinese" target="_blank" rel="noopener">Steam</a>
   </span>
 </footer>
 
