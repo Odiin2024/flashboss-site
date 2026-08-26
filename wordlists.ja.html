@@ -388,10 +388,12 @@ function asList(v){ return Array.isArray(v)?v.join(', '):String(v==null?'':v); }
 function synOf(c){ if(c.syn!=null)return asList(c.syn); if(c.synonyms!=null)return asList(c.synonyms); const m=/syn[:\s]\s*([^|]+)/i.exec(c.Notes||''); return m?m[1].trim():''; }
 function antOf(c){ if(c.ant!=null)return asList(c.ant); if(c.antonyms!=null)return asList(c.antonyms); const m=/ant[:\s]\s*([^|]+)/i.exec(c.Notes||''); return m?m[1].trim():''; }
 function posOf(c){ if(c.pos!=null)return asList(c.pos); const m=/^([a-z]+(?:\/[a-z]+)*)/.exec((c.Notes||'').trim()); return m?m[1]:''; }  // part of speech (front-face fallback)
+function gloss(c){ if(c.Translation_ja!=null&&c.Translation_ja!=='')return c.Translation_ja;   // page locale first; English packs carry no localized glosses (immersion ruling) and fall through
+  return c.definition!=null?c.definition:(c.Translation!=null?c.Translation:''); }
 function normCards(cluster){
-  // foreign: {TargetWord,Translation}; English: {TargetWord,definition[,syn,ant,pos]}
+  // foreign: {TargetWord,Translation[,Translation_ja]}; English: {TargetWord,definition[,syn,ant,pos]}
   return (cluster.cards||[]).map(c=>({ w:c.TargetWord,
-    t: c.definition!=null?c.definition:(c.Translation!=null?c.Translation:''),
+    t: gloss(c),
     syn:synOf(c), ant:antOf(c), pos:posOf(c) }));
 }
 
