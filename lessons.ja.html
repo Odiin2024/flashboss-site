@@ -237,7 +237,8 @@ const ENGLISH_PACKS=[["Adept","ad"],["Advance","adv"],["German Roots","gr"],["Gr
 function isEng(lang){ return (lang||langSel.value)==='English'; }
 function engCode(set){ return (ENGLISH_PACKS.find(p=>p[0]===set)||[])[1] || String(set).toLowerCase(); }
 function setsFor(lang){ return lang==='English' ? ENGLISH_PACKS.map(p=>p[0]) : SETS; }
-function tiersFor(lang){ return lang==='English' ? [1,2,3,4,5] : TIERS; }
+const TIER_AVAIL={"Toki Pona":[1,2,3,4,5], English:[1,2,3,4,5]};   // published tiers per pack — everything else has all 15; keeps us from fetching tiers that would 404
+function tiersFor(lang){ return TIER_AVAIL[lang] || TIERS; }
 function lessonUrl(lang, set, tier){
   return lang==='English'
     ? `data/english/${engCode(set)}/tier${tier}_lessons.json`

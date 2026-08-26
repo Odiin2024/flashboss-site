@@ -317,7 +317,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
 const LANGS = ["Italian","German","Spanish","French","Esperanto","Toki Pona","English"];
 const LANG_LABELS = {Italian:"Italienisch", German:"Deutsch", Spanish:"Spanisch", French:"Französisch", Esperanto:"Esperanto", "Toki Pona":"Toki Pona", English:"Englisch"};
 const SETS  = ["Core","Pareto 1","Pareto 2"];
-const CORE_ONLY = ["Toki Pona", "French"];   // complete in one Core set — no Pareto extensions published
+const CORE_ONLY = ["Toki Pona"];   // complete in one Core set — no Pareto extensions published
 /* English ships as named packs, each in its own folder, with a single CORE_FINAL.json */
 const ENGLISH_PACKS = [["Adept","ad"],["Advance","adv"],["German Roots","gr"],["Greek Roots","gkr"],["Norman Roots","nr"],["Latin Roots","lr"]];
 function setsFor(lang){ return lang==='English' ? ENGLISH_PACKS.map(p=>p[0]) : (CORE_ONLY.includes(lang) ? ["Core"] : SETS); }
