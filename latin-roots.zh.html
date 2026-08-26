@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="zh-Hans">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Latin Roots — FlashBoss</title>
-<meta name="description" content="FlashBoss Latin Roots: Hör auf, Englisch Wort für Wort zu lernen. Die Vorsilben, Nachsilben und Wurzeln, aus denen sich Tausende Wörter zusammensetzen — lerne die Teile und lies ein unbekanntes Wort auseinander. 1.000 Wörter, 500 Karten, Spaced Repetition, Bossfights und Sprachausgabe.">
+<meta name="description" content="FlashBoss《Latin Roots》：别再一个词一个词地学英语。构成成千上万个单词的前缀、后缀与词根——学会部件，生词一拆即懂。1,000 个单词、500 张卡片、间隔重复、头目战与文本转语音。">
 
 <!-- House font. If self-hosting, swap this for your local JetBrains Mono. -->
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/latin-roots.html">
@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
 
 <style>
 /* ============================================================
@@ -34,7 +35,7 @@
    English-pack screenshot, darkened by the ::after wash).
    ============================================================ */
 :root{
-  --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
+  --mono: 'JetBrains Mono', 'Noto Sans SC', ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
 
   /* morpheme colour-coding — the page's teaching legend.
      RETUNE to the game's exact palette. */
@@ -365,30 +366,31 @@ footer .footer-links a{color:inherit; text-decoration:none; opacity:.75; letter-
 footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
 footer .footer-links .div{opacity:.4;}
 </style>
+<style>body{line-height:1.75;}</style>
 </head>
 <body>
 <div class="overlay"></div>
 <div class="vignette"></div>
 
 <nav>
-  <span class="brand"><a class="logo" href="index.de.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.de.html">Start</a><span class="sep"> · </span><a href="packs.de.html">Packs</a><span class="sep"> · </span><span class="here">Latin Roots</span></span>
+  <span class="brand"><a class="logo" href="index.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.html">首页</a><span class="sep"> · </span><a href="packs.html">卡包</a><span class="sep"> · </span><span class="here">Latin Roots</span></span>
   <span class="links">
-    <a href="manual/index.html">Anleitung (Beta)</a>
-    <a href="resources.de.html">Ressourcen</a>
-    <a class="steam" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website&l=german">steam</a>
+    <a href="manual/index.html">攻略指南（beta）</a>
+    <a href="resources.html">资源</a>
+    <a class="steam" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website&l=schinese">steam</a>
   </span>
   <span class="nav-mobile">
-    <a href="home.de.html">Start</a>
-    <span class="r"><a href="resources.de.html">Ressourcen</a><a href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website&l=german">steam</a></span>
+    <a href="home.html">首页</a>
+    <span class="r"><a href="resources.html">资源</a><a href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website&l=schinese">steam</a></span>
   </span>
   <div class="lang-switch">
-    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Sprache wählen">DE<span class="lang-caret">▾</span></button>
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="选择语言">ZH<span class="lang-caret">▾</span></button>
     <ul class="lang-menu" hidden>
       <li><a href="latin-roots.html">English</a></li>
-      <li><a href="latin-roots.de.html" aria-current="true">Deutsch</a></li>
+      <li><a href="latin-roots.de.html">Deutsch</a></li>
       <li><a href="latin-roots.es.html">Español</a></li>
       <li><a href="latin-roots.ja.html">日本語</a></li>
-      <li><a href="latin-roots.zh.html">简体中文</a></li>
+      <li><a href="latin-roots.zh.html" aria-current="true">简体中文</a></li>
     </ul>
   </div>
 </nav>
@@ -398,15 +400,15 @@ footer .footer-links .div{opacity:.4;}
   <!-- HERO -->
   <header class="hero">
     <div class="wrap">
-      <p class="kicker reveal">Die Roots Series · <b>Latein</b></p>
+      <p class="kicker reveal">Roots 系列 · <b>拉丁语</b></p>
       <h1 class="reveal">Latin Roots<span class="cursor"></span></h1>
-      <p class="tagline reveal">Hör auf, Englisch Wort für Wort zu lernen.</p>
-      <p class="sig reveal">Hören · Lesen · Wiederholen · Bewerten · Kämpfen</p>
-      <p class="lede reveal">Niemand mit großem Wortschatz hat ihn Wort für Wort aufgebaut. Sie haben gelernt, die Teile zu lesen. Begegne <b class="lat">irreparable</b> und du kannst es auf den ersten Blick zerlegen — <span class="pre">ir</span>·<span class="pre">re</span>·<span class="rt">par</span>·<span class="suf">able</span>, „nicht wieder instand setzbar“ — und liest seine Bedeutung direkt von der Oberfläche ab.</p>
+      <p class="tagline reveal">别再一个词一个词地学英语。</p>
+      <p class="sig reveal">听 · 读 · 重复 · 评分 · 战斗</p>
+      <p class="lede reveal">词汇量大的人，没有一个是逐词背出来的。他们学会的是读懂部件。遇到 <b class="lat">irreparable</b>，你一眼就能把它拆开——<span class="pre">ir</span>·<span class="pre">re</span>·<span class="rt">par</span>·<span class="suf">able</span>，「不能・再次・整备・的」——意思直接从词的表面读出来。</p>
       <div class="actions reveal">
-        <a class="btn" href="wordlists.de.html?lang=English&amp;set=Latin%20Roots">Wortliste</a>
-        <a class="btn" href="lessons.de.html?lang=English&amp;set=Latin%20Roots">Lektionen</a>
-        <a class="btn" href="https://flashboss-demo.pages.dev/">Demo testen</a>
+        <a class="btn" href="wordlists.html?lang=English&amp;set=Latin%20Roots">单词表</a>
+        <a class="btn" href="lessons.html?lang=English&amp;set=Latin%20Roots">课程</a>
+        <a class="btn" href="https://flashboss-demo.pages.dev/">试玩演示</a>
       </div>
     </div>
   </header>
@@ -414,20 +416,20 @@ footer .footer-links .div{opacity:.4;}
   <!-- THE ARGUMENT -->
   <section class="wrap">
     <div class="frame">
-      <span class="tag">wie Wortschatz wächst</span>
-      <h2>Die Summe seiner Teile</h2>
-      <p class="sub">Lerne die Teile, und die Wörter setzen sich von selbst zusammen.</p>
-      <p class="body">Lerne eine einzige Wurzel — <b>par</b>: bereit machen, gleich machen — und ein Dutzend Wörter öffnen sich auf einmal. Prepare, repair, separate, compare, parity, peer, disparage, parade — und sogar emperor und rampart stammen von dieser Wurzel. Das nächste <span class="lat">par-</span>-Wort, dem du begegnest, gibt seine Bedeutung ohne Wörterbuch preis.</p>
-      <p class="body">Das ist der Wortschatz des anspruchsvollen Englisch: die Sprache der Argumentation, des Rechts, der Geschichte und der Wissenschaften. Die Kluft zwischen <b>nominal</b> und <b>token</b>, <b>renown</b> und <b>fame</b>, zwischen <b>thinking</b> und <b>cogitating</b>. Präzise Wörter ergeben präzise Gedanken — und Wurzeln sind die Teile, aus denen präzise Wörter gebaut sind.</p>
+      <span class="tag">词汇如何生长</span>
+      <h2>部件之和</h2>
+      <p class="sub">学会部件，单词便自行组装。</p>
+      <p class="body">只学一个词根——<b>par</b>：整备、使相等——十几个词便一齐打开。prepare、repair、separate、compare、parity、peer、disparage、parade——连 emperor 和 rampart 也源出此根。下次遇到 <span class="lat">par-</span> 的词，不用词典它就会交出自己的意思。</p>
+      <p class="body">这是严肃英语的词汇：论证、法律、历史与科学的语言。<b>nominal</b> 与 <b>token</b>、<b>renown</b> 与 <b>fame</b>、<b>thinking</b> 与 <b>cogitating</b> 之间的差距。精确的词造就精确的思想——而词根正是构成精确词汇的部件。</p>
 
       <div class="movements reveal">
         <div class="mv parts">
-          <div class="h">Die Teile</div>
-          <p>Ein paar Dutzend Vorsilben, Wurzeln und Nachsilben — die Bausteine, die sich an fast alles anhängen.</p>
+          <div class="h">部件</div>
+          <p>数十个前缀、词根与后缀——几乎能装配到一切之上的构件。</p>
         </div>
         <div class="mv whole">
-          <div class="h">Das Ganze</div>
-          <p>Zerlege ein unbekanntes Wort in seine Teile, und seine Bedeutung wartet schon dort auf dich.</p>
+          <div class="h">整体</div>
+          <p>把生词拆读成部件，它的意思早已在那里等你。</p>
         </div>
       </div>
     </div>
@@ -436,58 +438,58 @@ footer .footer-links .div{opacity:.4;}
   <!-- DECOMPOSITION DEMO -->
   <section class="wrap">
     <div class="frame reveal">
-      <span class="tag">Zerleg es</span>
-      <h2>Ein Wort ist ein Bausatz</h2>
-      <p class="sub">Jedes Wort hier ist nach Teilen farbcodiert. Tippe eins an, um es zu zerlegen.</p>
+      <span class="tag">拆开来看</span>
+      <h2>单词是一件组装品</h2>
+      <p class="sub">这里的每个词都按部件着色。点按一个，把它拆成零件。</p>
       <div class="legend">
-        <span><i class="lp"></i> Vorsilbe — Richtung &amp; Position</span>
-        <span><i class="lr"></i> Wurzel — die getragene Bedeutung</span>
-        <span><i class="ls"></i> Nachsilbe — Wortart</span>
+        <span><i class="lp"></i> 前缀 — 方向与位置</span>
+        <span><i class="lr"></i> 词根 — 承载的意义</span>
+        <span><i class="ls"></i> 后缀 — 词性</span>
       </div>
       <div class="decomps">
         <div class="decomp reveal">
           <div class="whole">transport</div>
-          <div class="gloss-top">etwas von einem Ort zum anderen tragen</div>
+          <div class="gloss-top">从一地运到另一地</div>
           <div class="parts">
-            <span class="m pre">trans<i>hinüber</i></span>
-            <span class="m rt">port<i>tragen</i></span>
+            <span class="m pre">trans<i>横越</i></span>
+            <span class="m rt">port<i>运载</i></span>
           </div>
-          <div class="sum">hinüber + tragen → hinübertragen</div>
-          <div class="hint">zum Zerlegen tippen</div>
+          <div class="sum">横越 + 运载 → 运过去</div>
+          <div class="hint">点按拆解</div>
         </div>
 
         <div class="decomp reveal">
           <div class="whole">predict</div>
-          <div class="gloss-top">im Voraus sagen, was geschehen wird</div>
+          <div class="gloss-top">提前说出将要发生的事</div>
           <div class="parts">
-            <span class="m pre">pre<i>vor</i></span>
-            <span class="m rt">dict<i>sagen</i></span>
+            <span class="m pre">pre<i>在前</i></span>
+            <span class="m rt">dict<i>说</i></span>
           </div>
-          <div class="sum">vor + sagen → vorhersagen</div>
-          <div class="hint">zum Zerlegen tippen</div>
+          <div class="sum">在前 + 说 → 预先说出</div>
+          <div class="hint">点按拆解</div>
         </div>
 
         <div class="decomp reveal">
           <div class="whole">inspect</div>
-          <div class="gloss-top">etwas genau betrachten</div>
+          <div class="gloss-top">近距离仔细察看</div>
           <div class="parts">
-            <span class="m pre">in<i>hinein</i></span>
-            <span class="m rt">spec<i>schauen</i></span>
-            <span class="m suf">t<i>Handlung</i></span>
+            <span class="m pre">in<i>向内</i></span>
+            <span class="m rt">spec<i>看</i></span>
+            <span class="m suf">t<i>行为</i></span>
           </div>
-          <div class="sum">hinein + schauen → hineinschauen</div>
-          <div class="hint">zum Zerlegen tippen</div>
+          <div class="sum">向内 + 看 → 深入察看</div>
+          <div class="hint">点按拆解</div>
         </div>
 
         <div class="decomp reveal">
           <div class="whole">interrupt</div>
-          <div class="gloss-top">etwas Laufendes unterbrechen</div>
+          <div class="gloss-top">打断正在进行的事</div>
           <div class="parts">
-            <span class="m pre">inter<i>dazwischen</i></span>
-            <span class="m rt">rupt<i>brechen</i></span>
+            <span class="m pre">inter<i>在其间</i></span>
+            <span class="m rt">rupt<i>断裂</i></span>
           </div>
-          <div class="sum">dazwischen + brechen → dazwischenbrechen</div>
-          <div class="hint">zum Zerlegen tippen</div>
+          <div class="sum">在其间 + 断裂 → 从中打断</div>
+          <div class="hint">点按拆解</div>
         </div>
       </div>
     </div>
@@ -496,20 +498,20 @@ footer .footer-links .div{opacity:.4;}
   <!-- THE PREFIX TOOLKIT -->
   <section class="wrap">
     <div class="reveal">
-      <h2>Der Werkzeugkasten, mit dem du beginnst</h2>
-      <p class="sub">Das Pack beginnt mit den Vorsilben — den Richtungen und Positionen, die sich an jede Wurzel anfügen.</p>
+      <h2>你起步的工具箱</h2>
+      <p class="sub">卡包从前缀开讲——能扣到任何词根上的方向与位置。</p>
       <div class="console">
-        <div class="head"><span>Vorsilbe · Stufe 1</span><span>Richtung &amp; Position</span></div>
-        <div class="row"><div class="k">ex-</div><div class="v"><b>aus, weg von</b> — export, extract, eject</div></div>
-        <div class="row"><div class="k">in-</div><div class="v"><b>hinein, oder nicht</b> — inspect, induct; invalid, inert</div></div>
-        <div class="row"><div class="k">con-</div><div class="v"><b>mit, zusammen</b> — connect, conspire, convene</div></div>
-        <div class="row"><div class="k">trans-</div><div class="v"><b>hinüber, jenseits</b> — transport, translate, transcend</div></div>
-        <div class="row"><div class="k">sub-</div><div class="v"><b>unter, unterhalb</b> — submit, subvert, subterfuge</div></div>
-        <div class="row"><div class="k">super-</div><div class="v"><b>über, jenseits</b> — superior, supervise, supersede</div></div>
-        <div class="row"><div class="k">inter-</div><div class="v"><b>zwischen, unter</b> — intervene, interject, interrupt</div></div>
-        <div class="row"><div class="k">pre-</div><div class="v"><b>vor</b> — predict, prepare, precede</div></div>
-        <div class="row"><div class="k">post-</div><div class="v"><b>nach, hinter</b> — postpone, postscript, posterity</div></div>
-        <div class="row"><div class="k">pro-</div><div class="v"><b>vorwärts, zugunsten</b> — promote, propel, proponent</div></div>
+        <div class="head"><span>前缀 · 第 1 层级</span><span>方向与位置</span></div>
+        <div class="row"><div class="k">ex-</div><div class="v"><b>向外、离开</b> — export, extract, eject</div></div>
+        <div class="row"><div class="k">in-</div><div class="v"><b>向内，或表否定</b> — inspect, induct; invalid, inert</div></div>
+        <div class="row"><div class="k">con-</div><div class="v"><b>共同、一起</b> — connect, conspire, convene</div></div>
+        <div class="row"><div class="k">trans-</div><div class="v"><b>横越、超出</b> — transport, translate, transcend</div></div>
+        <div class="row"><div class="k">sub-</div><div class="v"><b>在下、向下</b> — submit, subvert, subterfuge</div></div>
+        <div class="row"><div class="k">super-</div><div class="v"><b>在上、超越</b> — superior, supervise, supersede</div></div>
+        <div class="row"><div class="k">inter-</div><div class="v"><b>之间、相互</b> — intervene, interject, interrupt</div></div>
+        <div class="row"><div class="k">pre-</div><div class="v"><b>在前</b> — predict, prepare, precede</div></div>
+        <div class="row"><div class="k">post-</div><div class="v"><b>在后、其后</b> — postpone, postscript, posterity</div></div>
+        <div class="row"><div class="k">pro-</div><div class="v"><b>向前、拥护</b> — promote, propel, proponent</div></div>
       </div>
     </div>
   </section>
@@ -517,13 +519,13 @@ footer .footer-links .div{opacity:.4;}
   <!-- ROOT FAMILY -->
   <section class="wrap">
     <div class="reveal">
-      <h2>Eine Wurzel, eine ganze Familie</h2>
-      <p class="sub">Jedes Cluster ist eine einzige lateinische Wurzel und die englischen Wörter, die von ihr abstammen. Lern sie einmal.</p>
+      <h2>一个词根，一整个家族</h2>
+      <p class="sub">每个集群是一个拉丁词根和它繁衍出的英语后代。学一次就够。</p>
       <div class="family">
         <div class="stem">
           <span class="glyph">par</span>
-          <span class="mean">bereit machen · gleich machen</span>
-          <span class="src">aus dem Lateinischen <i>parāre</i> &amp; <i>pār</i></span>
+          <span class="mean">整备 · 使相等</span>
+          <span class="src">源自拉丁语 <i>parāre</i> 与 <i>pār</i></span>
         </div>
         <div class="fan">
           <span class="w">pre<span class="r">par</span>e</span>
@@ -540,7 +542,7 @@ footer .footer-links .div{opacity:.4;}
           <span class="w">em<span class="r">per</span>or</span>
           <span class="w">ram<span class="r">part</span></span>
         </div>
-        <p class="note">Dreizehn Wörter, eine Wurzel. Sobald du das <span class="r" style="color:var(--root); font-weight:700;">par</span> in jedem siehst, musst du sie nie wieder einzeln auswendig lernen — und das nächste, dem du begegnest, öffnet sich genauso.</p>
+        <p class="note">十三个词，一个词根。一旦你能在每个词里看见 <span class="r" style="color:var(--root); font-weight:700;">par</span>，就再也不必把它们分开死记——下次遇到的新词，也会以同样的方式向你敞开。</p>
       </div>
     </div>
   </section>
@@ -548,15 +550,15 @@ footer .footer-links .div{opacity:.4;}
   <!-- REGISTER LADDER -->
   <section class="wrap">
     <div class="frame reveal">
-      <span class="tag">Sieh das Register steigen</span>
-      <h2>From plain to formidable</h2>
-      <p class="sub">Das Pack umfasst fünf Stufen, T1 bis T5 — und die Wörter werden erwachsen, so wie du.</p>
+      <span class="tag">看语域步步攀升</span>
+      <h2>从平实到威严</h2>
+      <p class="sub">卡包共五个层级，T1 到 T5——你在成长，词也随你长大。</p>
       <ol class="ladder">
-        <li class="reveal"><span class="wd">transport</span><span class="df">etwas von einem Ort zum anderen tragen</span></li>
-        <li class="reveal"><span class="wd">conspicuous</span><span class="df">deutlich sichtbar; Aufmerksamkeit erregend, oft auf unerwünschte Weise</span></li>
-        <li class="reveal"><span class="wd">perfidious</span><span class="df">absichtlich hinterlistig und nicht vertrauenswürdig; verräterisch</span></li>
-        <li class="reveal"><span class="wd">miscreant</span><span class="df">eine Person, deren Verhalten kriminell oder moralisch verwerflich ist</span></li>
-        <li class="reveal"><span class="wd">stringent</span><span class="df">streng, präzise und fordernd</span></li>
+        <li class="reveal"><span class="wd">transport</span><span class="df">从一地运到另一地</span></li>
+        <li class="reveal"><span class="wd">conspicuous</span><span class="df">清晰可见；引人注目，且往往不受欢迎</span></li>
+        <li class="reveal"><span class="wd">perfidious</span><span class="df">蓄意欺骗、不可信任；背信弃义</span></li>
+        <li class="reveal"><span class="wd">miscreant</span><span class="df">行为犯罪或道德败坏之人</span></li>
+        <li class="reveal"><span class="wd">stringent</span><span class="df">严格、精确、要求苛刻</span></li>
       </ol>
     </div>
   </section>
@@ -564,16 +566,16 @@ footer .footer-links .div{opacity:.4;}
   <!-- METHOD -->
   <section class="wrap method">
     <div class="frame reveal">
-      <span class="tag">Wie es hängen bleibt</span>
-      <h2>Karteikarten als integriertes System</h2>
+      <span class="tag">记忆如何扎根</span>
+      <h2>作为一套集成系统的抽认卡</h2>
       <dl>
-        <dt>Gepaarte Karten</dt><dd>500 Karten, 1.000 Wörter — jede Karte paart ein Stichwort mit einem Verwandten aus derselben Familie, sodass das Wort und seine Verwandten zusammen ankommen.</dd>
-        <dt>Fibonacci-SRS</dt><dd>Bewerte jede Karte 0–5. Je besser du ein Wort kennst, desto länger dauert es bis zur Wiederkehr — Spaced Repetition in Fibonacci-Intervallen.</dd>
-        <dt>Bossfights</dt><dd>Jede Wurzelfamilie ist durch ein Duell verriegelt, das du nicht gewinnst, ohne dich ihren schwersten Mitgliedern zu stellen und sie zu überwinden.</dd>
-        <dt>Abschluss</dt><dd>Besiege eine Familie, und ihre Karten verlassen dein tägliches Deck für immer. Das Deck wird kleiner, während du lernst.</dd>
-        <dt>Etymologie</dt><dd>Jede Karte zeigt die Wurzel, ihren lateinischen Ursprung und genau, wie sich die Teile zusammensetzen — plus Synonyme und Antonyme, um jedes Wort präzise einzuordnen.</dd>
-        <dt>Audio</dt><dd>Saubere Piper-Sprachausgabe für jedes Wort und jeden Beispielsatz. Stimmen unter CC&nbsp;BY / MIT / Apache-Lizenz.</dd>
-        <dt>Lektionen</dt><dd>Referenzlektionen erscheinen an der Stelle der Abfolge, an der sie freischalten, was du als Nächstes liest.</dd>
+        <dt>成对卡片</dt><dd>500 张卡片，1,000 个单词——每张卡片把一个词条与它的同族亲缘词配成一对，单词与亲族一同抵达。</dd>
+        <dt>斐波那契 SRS</dt><dd>给每张卡片打 0–5 分。一个词掌握得越好，它回来得越晚——基于斐波那契间隔的间隔重复。</dd>
+        <dt>头目战</dt><dd>每个词根家族都由一场决斗把守——不直面并战胜其中最难的成员，就赢不下来。</dd>
+        <dt>毕业</dt><dd>击败一个家族，它的卡片就永远离开你的每日卡组。越学，卡组越小。</dd>
+        <dt>词源</dt><dd>每张卡片都标明词根、它的拉丁语出处，以及部件如何组装——外加同义词与反义词，为每个词精确定位。</dd>
+        <dt>语音</dt><dd>每个单词、每个例句都配有干净的 Piper 文本转语音。</dd>
+        <dt>课程</dt><dd>参考课程会在序列中的恰当节点触发——正好解锁你即将读到的内容。</dd>
       </dl>
     </div>
   </section>
@@ -581,30 +583,29 @@ footer .footer-links .div{opacity:.4;}
   <!-- ROOTS SERIES -->
   <section class="wrap">
     <div class="reveal">
-      <h2>Teil der Roots Series</h2>
-      <p class="sub">Die Gestalt des Englischen und seiner Nachbarn, sichtbar gemacht.</p>
+      <h2>Roots 系列的一员</h2>
+      <p class="sub">让英语及其近邻的形状，变得可见。</p>
       <div class="packs">
-        <a class="pack" href="https://store.steampowered.com/app/4475060/FlashBoss__German_Roots/?utm_source=website&l=german">
+        <a class="pack" href="https://store.steampowered.com/app/4475060/FlashBoss__German_Roots/?utm_source=website&l=schinese">
           <div class="n">German Roots</div>
-          <div class="lvl">1.000 Wörter</div>
-          <p>Das germanische Rückgrat des Alltagsenglischen — die Wörter, die du schon halb kennst.</p>
+          <div class="lvl">1,000 个单词</div>
+          <p>日常英语的日耳曼语骨干——那些你已经半懂的词。</p>
         </a>
-        <a class="pack" href="https://store.steampowered.com/app/4587720/FlashBoss__Norman_Roots/?utm_source=website&l=german">
+        <a class="pack" href="https://store.steampowered.com/app/4587720/FlashBoss__Norman_Roots/?utm_source=website&l=schinese">
           <div class="n">Norman Roots</div>
-          <div class="lvl">1.000 Wörter</div>
-          <p>Das zweite Englisch — 1066 und das Französisch, das damit kam.</p>
+          <div class="lvl">1,000 个单词</div>
+          <p>第二种英语——1066 年，以及随之而来的法语。</p>
         </a>
-        <a class="pack" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website&l=german">
+        <a class="pack" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website&l=schinese">
           <div class="n">Latin Roots</div>
-          <div class="lvl">1.000 Wörter</div>
-          <p>Englisch aus seinen Bausteinen — die klassische und wissenschaftliche Schicht, zusammengesetzt.</p>
-          <span class="here">Du bist hier</span>
+          <div class="lvl">1,000 个单词</div>
+          <p>用部件组装起来的英语——古典与科学的那一层，装配完成。</p>
+          <span class="here">当前位置</span>
         </a>
-        <a class="pack" href="https://store.steampowered.com/app/4992480?utm_source=website-latin-roots&l=german">
+        <a class="pack" href="https://store.steampowered.com/app/4992480?utm_source=website-latin-roots&l=schinese">
           <div class="n">Greek Roots</div>
-          <div class="lvl">1.000 Wörter</div>
-          <p>Der Wortschatz der Wissenschaft, Medizin und Abstraktion — die Schicht über dem Lateinischen.</p>
-          <span class="soon">Jetzt erhältlich</span>
+          <div class="lvl">1,000 个单词</div>
+          <p>科学、医学与抽象的词汇——拉丁语之上的那一层。</p>
         </a>
       </div>
     </div>
@@ -612,23 +613,23 @@ footer .footer-links .div{opacity:.4;}
 
   <!-- FINAL CTA -->
   <section class="final wrap reveal">
-    <h2>Lies das nächste Wort auseinander.</h2>
-    <p>500 Karten · 1.000 Wörter · das komplette Vorsilben- &amp; Nachsilben-Werkzeug · Etymologie auf jeder Karte. Die vollständige Wortliste, jede Referenzlektion und eine spielbare Bossfight-Demo gibt es auf der Website.</p>
-    <a class="btn warm" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website&l=german">Latin Roots auf Steam holen &rarr;</a>
+    <h2>把下一个生词拆开来读。</h2>
+    <p>500 张卡片 · 1,000 个单词 · 完整的前缀与后缀工具箱 · 每张卡片都有词源。完整单词表、全部参考课程和可试玩的头目战演示就在本站。游戏界面提供简体中文；卡包教授的词汇是英语本身——那正是你要学的。</p>
+    <a class="btn warm" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website&l=schinese">在 Steam 上入手 Latin Roots &rarr;</a>
   </section>
 
 </main>
 
 <footer>
-  <p class="epi">“Litterarum radices amarae, fructus dulces.”<br>Die Wurzeln des Lernens sind bitter, die Frucht ist süß.<br><span class="epi-cite">— Lateinisches Sprichwort, nach Aristoteles</span></p>
+  <p class="epi">“Litterarum radices amarae, fructus dulces.”<br>学问之根苦，其果实甜。<br><span class="epi-cite">— 拉丁谚语，源自亚里士多德</span></p>
   <span class="footer-links">
-    <a href="home.de.html">Start</a>
+    <a href="home.html">首页</a>
     <span class="div">·</span>
-    <a href="packs.de.html">Packs</a>
+    <a href="packs.html">卡包</a>
     <span class="div">·</span>
-    <a href="manual/">Anleitung (Beta)</a>
+    <a href="manual/">攻略指南（beta）</a>
     <span class="div">·</span>
-    <a href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website&l=german">steam</a>
+    <a href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website&l=schinese">steam</a>
   </span>
 </footer>
 
