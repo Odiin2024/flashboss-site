@@ -1,0 +1,390 @@
+[
+  {
+    "lesson_id": "001",
+    "trigger_word": "cosa",
+    "trigger_card_number": 1,
+    "title": "第1课：意大利语发音",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 5,
+        "content": [
+          "欢迎！意大利语基本是拼音文字，",
+          "——字母几乎总是发相同的音。",
+          "五个元音是关键：",
+          "",
+          "a = 「啊」如 father                按 1",
+          "   casa, mamma, gatto",
+          "",
+          "e = 「诶」如 bet                   按 2",
+          "   bene, sera, leggere",
+          "",
+          "i = 「衣」如 machine               按 3",
+          "   sì, vita, libro",
+          "",
+          "o = 「哦」如 no                    按 4",
+          "   sole, modo, otto",
+          "",
+          "u = 「乌」如 moon                  按 5",
+          "   tu, uno, frutto"
+        ],
+        "pronunciation": "Lezione uno",
+        "pronunciation_mappings": {
+          "1": "casa. mamma. gatto",
+          "2": "bene. sera. leggere",
+          "3": "sì. vita. libro",
+          "4": "sole. modo. otto",
+          "5": "tu. uno. frutto"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 5,
+        "content": [
+          "与英语不同的辅音：",
+          "",
+          "   h = 始终不发音                   按 1",
+          "      hai, ho, hanno",
+          "",
+          "   c 在 a/o/u 前 = 硬「k」音        按 2",
+          "      casa, come, cucina",
+          "",
+          "   c 在 e/i 前 = 软「ch」音         按 3",
+          "      cena, città, dolce",
+          "",
+          "   g 在 a/o/u 前 = 硬「g」音        按 4",
+          "      gatto, gusto, lago",
+          "",
+          "   g 在 e/i 前 = 软「j」音          按 5",
+          "      gente, gelato, magia",
+          "",
+          "r 总是颤音或轻弹音。"
+        ],
+        "pronunciation_mappings": {
+          "1": "hai. ho. hanno",
+          "2": "casa. come. cucina",
+          "3": "cena. città. dolce",
+          "4": "gatto. gusto. lago",
+          "5": "gente. gelato. magia"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 5,
+        "content": [
+          "二合字母 —— 两个字母发一个音：",
+          "",
+          "   ch = 在 e/i 前发硬「k」音        按 1",
+          "      chiave, perché, anche",
+          "",
+          "   gh = 在 e/i 前发硬「g」音        按 2",
+          "      spaghetti, ghiaccio, lunghi",
+          "",
+          "   gli = 类似 million 中的「lli」   按 3",
+          "      famiglia, figlio, gli",
+          "",
+          "   gn = 类似 canyon 中的「ny」      按 4",
+          "      gnocchi, lasagna, ogni",
+          "",
+          "   sc + e/i = 「sh」音              按 5",
+          "      sciare, pesce, scena",
+          "",
+          "其他情况 sc = 「sk」音（如 scuola, scopo）。"
+        ],
+        "pronunciation_mappings": {
+          "1": "chiave. perché. anche",
+          "2": "spaghetti. ghiaccio. lunghi",
+          "3": "famiglia. figlio. gli",
+          "4": "gnocchi. lasagna. ogni",
+          "5": "sciare. pesce. scena"
+        }
+      },
+      {
+        "page": 4,
+        "total_pages": 5,
+        "content": [
+          "双写辅音：",
+          "",
+          "延长发音时长。意大利语",
+          "通过长度区分词义：                 按 1",
+          "",
+          "   nono / nonno       （第九 / 爷爷）",
+          "   capello / cappello      （头发 / 帽子）",
+          "   casa / cassa      （房子 / 钱箱）",
+          "",
+          "重音规则：",
+          "多数单词重音在倒数第二音节：",
+          "CA-sa, MAM-ma, LI-bro。             按 2",
+          "",
+          "词尾重音用重音符号标出：",
+          "città, perché, papà, lunedì。        按 3",
+          "",
+          "开始前还有一件事……"
+        ],
+        "pronunciation_mappings": {
+          "1": "nono. nonno. capello. cappello. casa. cassa",
+          "2": "casa. mamma. libro",
+          "3": "città. perché. papà. lunedì"
+        }
+      },
+      {
+        "page": 5,
+        "total_pages": 5,
+        "content": [
+          "意大利语句子长什么样：",
+          "",
+          "你会立刻注意到三点：",
+          "",
+          "1. 无「我」——意大利语省略主语代词。",
+          "   动词词尾已表明人称：",
+          "   ho = 我有，hai = 你有。",
+          "   所以：「Ho una cosa」= 我有一样东西。",
+          "",
+          "2. 形容词放在名词之后：",
+          "   caffè caldo = 热咖啡               按 1",
+          "   parola nuova = 新单词",
+          "   （部分常用形容词前置——稍后讲解）",
+          "",
+          "3. 「NON」放在动词之前：",
+          "   non capisco = 我不懂               按 2",
+          "   non ho = 我没有"
+        ],
+        "pronunciation_mappings": {
+          "1": "caffè. caldo. parola. nuova",
+          "2": "non. capisco. non. ho"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "002",
+    "trigger_word": "casa",
+    "trigger_card_number": 65,
+    "title": "第2课：冠词与省音",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "意大利语冠词随发音变化，",
+          "不仅看性别，更看语音规则：",
+          "",
+          "阳性单数：                    按 1",
+          "   il = 多数辅音前",
+          "      il libro, il padre, il cane",
+          "   lo = z、gn、ps、s+辅音前",
+          "      lo zio, lo gnocco, lo stato",
+          "",
+          "阴性单数：                    按 2",
+          "   la = 任何辅音前",
+          "      la casa, la madre, la zia",
+          "",
+          "复数形式：                    按 3",
+          "   i、gli（阳性）；le（阴性，始终不变）",
+          "      i libri, gli stati, le case"
+        ],
+        "pronunciation": "Lezione due",
+        "pronunciation_mappings": {
+          "1": "il. libro. il. padre. il. cane. lo. stato. lo. zio. lo. gnocco",
+          "2": "la. casa. la. madre. la. zia",
+          "3": "i. libri. gli. stati. le. case"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "省音规则 —— 省略撇号法则：",
+          "",
+          "单数冠词在元音前",
+          "需省去末字母并加 '：         按 1",
+          "",
+          "   il / la / lo + 元音 → l'",
+          "      l'amico（阳），l'aria（阴）",
+          "      l'ora, l'uomo, l'occhio",
+          "",
+          "复数形式不省音：              按 2",
+          "   gli amici（非 gl'amici）",
+          "   le ore（非 l'ore）",
+          "",
+          "性别依然重要：                按 3",
+          "   l'uomo（阳）→ un uomo, gli uomini",
+          "   l'aria（阴）→ un'aria, le arie",
+          "",
+          "卡片上会标注「Elides: true」。"
+        ],
+        "pronunciation_mappings": {
+          "1": "l'amico. l'aria. l'ora. l'uomo. l'occhio",
+          "2": "gli. amici. le. ore",
+          "3": "l'uomo. un. uomo. gli. uomini. l'aria. un'aria. le. arie"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "003",
+    "trigger_word": "acqua",
+    "trigger_card_number": 85,
+    "title": "第3课：ESSERE、AVERE 与 C'È",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "ESSERE =「to be」（是）",
+          "",
+          "最常用的不规则动词。",
+          "熟记全部六种变位：                按 1",
+          "",
+          "   io       sono     我是",
+          "   tu       sei      你是",
+          "   lui/lei  è        他／她是",
+          "   noi      siamo    我们是",
+          "   voi      siete    你们是",
+          "   loro     sono     他们是",
+          "",
+          "用法：                              按 2",
+          "   身份：       sono Marco",
+          "   地点：       è a casa",
+          "   描述：       è bello",
+          "   国籍：       sono italiano"
+        ],
+        "pronunciation": "Lezione tre",
+        "pronunciation_mappings": {
+          "1": "io. sono. tu. sei. lui. è. lei. è. noi. siamo. voi. siete. loro. sono",
+          "2": "sono. Marco. è. a. casa. è. bello. sono. italiano"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "AVERE =「to have」（有）（h 不发音！）：",
+          "",
+          "io       ho       我有             按 1",
+          "tu       hai      你有             按 2",
+          "lui/lei  ha       他／她有         按 3",
+          "noi      abbiamo  我们有           按 4",
+          "voi      avete    你们有           按 5",
+          "loro     hanno    他们有",
+          "",
+          "h 始终不发音。因此：",
+          "   ho =「oh」    hai =「eye」",
+          "   ha =「ah」    hanno =「AHN-no」",
+          "",
+          "意大利语用 AVERE 表达年龄：",
+          "   ho 30 anni = 我 30 岁",
+          "   （字面意思为「我有 30 年」）"
+        ],
+        "pronunciation_mappings": {
+          "1": "io. ho",
+          "2": "tu. hai",
+          "3": "lui. ha. lei. ha",
+          "4": "noi. abbiamo",
+          "5": "voi. avete"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "C'È / CI SONO = there is / there are（有）",
+          "",
+          "意大利语的存在句式。",
+          "可理解为「那里有它」：            按 1",
+          "",
+          "   c'è  （单数）= 有",
+          "      c'è un libro sul tavolo",
+          "      c'è qualcuno alla porta",
+          "",
+          "   ci sono（复数）= 有              按 2",
+          "      ci sono molti libri",
+          "      ci sono due persone",
+          "",
+          "否定形式：                          按 3",
+          "   non c'è / non ci sono",
+          "      non c'è tempo",
+          "      non ci sono problemi"
+        ],
+        "pronunciation_mappings": {
+          "1": "c'è. un. libro. sul. tavolo. c'è. qualcuno. alla. porta",
+          "2": "ci. sono. molti. libri. ci. sono. due. persone",
+          "3": "non. c'è. tempo. non. ci. sono. problemi"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "004",
+    "trigger_word": "fare",
+    "trigger_card_number": 186,
+    "title": "第4课：课堂指令",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "基本疑问词：",
+          "",
+          "   chi?    = 谁？                    按 1",
+          "      chi è? chi sei?",
+          "   cosa?   = 什么？                  按 2",
+          "      cosa fai? cos'è?（省音）",
+          "   dove?   = 哪里？                  按 3",
+          "      dove sei? dov'è?（省音）",
+          "   quando? = 何时？                  按 4",
+          "      quando arrivi?",
+          "   come?   = 怎样？                  按 5",
+          "      come stai? come ti chiami?",
+          "   perché? = 为什么？                按 6",
+          "      perché piangi? perché no?",
+          "   quanto? = 多少？                  按 7",
+          "      quanto costa? quanti anni hai?"
+        ],
+        "pronunciation": "Lezione quattro",
+        "pronunciation_mappings": {
+          "1": "chi. è? chi. sei?",
+          "2": "cosa. fai? cos'è?",
+          "3": "dove. sei? dov'è?",
+          "4": "quando. arrivi?",
+          "5": "come. stai? come. ti. chiami?",
+          "6": "perché. piangi? perché. no?",
+          "7": "quanto. costa? quanti. anni. hai?"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "礼貌请求与课堂用语：               按 1",
+          "",
+          "   per favore  = 请",
+          "   grazie      = 谢谢",
+          "   prego       = 不客气",
+          "   scusa       = 对不起／劳驾",
+          "",
+          "课堂中：                          按 2",
+          "   non capisco      = 我不懂",
+          "   puoi ripetere?   = 能重复一下吗？",
+          "   più lentamente   = 再慢一点",
+          "   come si dice?    = 这个怎么说？",
+          "",
+          "问候语：                          按 3",
+          "   ciao   = 你好／再见（非正式）",
+          "   salve  = 您好（中性）",
+          "   buongiorno = 日安",
+          "   buonasera  = 晚安"
+        ],
+        "pronunciation_mappings": {
+          "1": "per. favore. grazie. prego. scusa",
+          "2": "non. capisco. puoi. ripetere? più. lentamente. come. si. dice?",
+          "3": "ciao. salve. buongiorno. buonasera"
+        }
+      }
+    ]
+  }
+]
