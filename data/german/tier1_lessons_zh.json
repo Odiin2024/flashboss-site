@@ -1,0 +1,482 @@
+[
+  {
+    "lesson_id": "001",
+    "trigger_word": "bitte",
+    "trigger_card_number": 1,
+    "title": "第1课：德语发音",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 7,
+        "content": [
+          "欢迎！德语发音规则一致",
+          "且合乎逻辑。我们先从元音开始。",
+          "",
+          "a → 如英语 bard 中的 a                按 1",
+          "   Mann, Tag, alt",
+          "",
+          "e → 如英语 bet 中的 e                 按 2",
+          "   essen, Bett, zehn",
+          "",
+          "i → 如英语 machine 中的 i             按 3",
+          "   vier, Kino, Kind",
+          "",
+          "o → 如英语 over 中的 o                按 4",
+          "   Sohn, rot, Ort",
+          "",
+          "u → 如英语 moon 中的 u                按 5",
+          "   Uhr, Mut, Buch"
+        ],
+        "pronunciation": "Lektion eins",
+        "pronunciation_mappings": {
+          "1": "Mann, Tag, alt",
+          "2": "essen, Bett, zehn",
+          "3": "vier, Kino, Kind",
+          "4": "Sohn, rot, Ort",
+          "5": "Uhr, Mut, Buch"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 7,
+        "content": [
+          "变音符号（两点）会改变元音：",
+          "",
+          "ä → 类似 bed 中的 e                   按 1",
+          "   Käse, Mädchen, Männer",
+          "",
+          "ö → 嘴唇呈「吹哨」状                  按 2",
+          "   schön, hören, können",
+          "",
+          "ü → 嘴唇撮圆：如 boo 中的 oo          按 3",
+          "   über, Tür, Übung",
+          "",
+          "提示：无法输入变音？可用 ae、oe、ue 代替",
+          "（Käse = Kaese，schön = schoen，Tür = Tuer）",
+          "",
+          "ß（Eszett）→ 发音同 ss                按 4",
+          "   Straße, groß, Fuß"
+        ],
+        "pronunciation_mappings": {
+          "1": "Käse, Mädchen, Männer",
+          "2": "schön, hören, können",
+          "3": "über, Tür, Übung",
+          "4": "Straße, groß, Fuß"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 7,
+        "content": [
+          "部分辅音与英语拼写相同，",
+          "但发音不同：",
+          "",
+          "w → 如英语 v                          按 1",
+          "   Wasser, Wein, wir",
+          "",
+          "v → 如英语 f                          按 2",
+          "   Vater, vier, von",
+          "",
+          "j → 如英语 y                          按 3",
+          "   ja, Jahr, jetzt",
+          "",
+          "z → 如 ts                             按 4",
+          "   Zeit, zehn, zu",
+          "",
+          "ch → 介于 chorus 与 chime 之间         按 5",
+          "   ich, acht, auch"
+        ],
+        "pronunciation_mappings": {
+          "1": "Wasser, Wein, wir",
+          "2": "Vater, vier, von",
+          "3": "ja, Jahr, jetzt",
+          "4": "Zeit, zehn, zu",
+          "5": "ich, acht, auch"
+        }
+      },
+      {
+        "page": 4,
+        "total_pages": 7,
+        "content": [
+          "德语元音组合：",
+          "",
+          "au = 如 COW 中的 ow                   按 1",
+          "   braun, Haus, Auto",
+          "",
+          "ei / ai = 如 eye 或 I                  按 2",
+          "   ein, mein, Mai",
+          "",
+          "eu / äu = 如 BOY 中的 oy              按 3",
+          "   neu, heute, Deutsch",
+          "",
+          "ie = 如 beer 中的 ee                   按 4",
+          "   Bier, Tier, Spiel",
+          "",
+          "较难组合：                            按 5",
+          "aue: Frauen, bauen, klauen",
+          "eue: teuer, Steuer, Abenteuer"
+        ],
+        "pronunciation_mappings": {
+          "1": "braun, Haus, Auto",
+          "2": "ein, mein, Mai",
+          "3": "neu, heute, Deutsch",
+          "4": "Bier, Tier, Spiel",
+          "5": "Frauen, bauen, klauen, teuer, Steuer, Abenteuer"
+        }
+      },
+      {
+        "page": 5,
+        "total_pages": 7,
+        "content": [
+          "自然语流中的词尾变化：",
+          "",
+          "-en 词尾 → 弱读：                     按 1",
+          "   sprechen → 'sprech'n'",
+          "   haben → 'hab'n'",
+          "",
+          "-e 词尾 → 如 soft th'e 中的 e         按 2",
+          "   Katze → 'Katz'e'",
+          "   bitte → 'bitt'e'",
+          "",
+          "-er 词尾 → r 音弱化：                 按 3",
+          "   Vater → 'Vata'",
+          "   Mutter → 'Mutta'",
+          "",
+          "词尾清化（Auslautverhärtung）：",
+          "   b → p： gab, Urlaub, halb",
+          "   d → t： Rad, Kind, Hund",
+          "   g → k： Tag, Zug, weg               按 4"
+        ],
+        "pronunciation_mappings": {
+          "1": "sprechen, haben",
+          "2": "Katze, bitte",
+          "3": "Vater, Mutter",
+          "4": "gab, Urlaub, halb, Rad, Kind, Hund, Tag, Zug, weg"
+        }
+      },
+      {
+        "page": 6,
+        "total_pages": 7,
+        "content": [
+          "音节划分方式与英语不同。",
+          "最明显的例子是 'sh' 和 'th'：",
+          "",
+          "s + h = ..s + h..（非 'sh' 音！）      按 1",
+          "   Bisher → bis-her（非 'bi-sher'）",
+          "   Gasheizung → gas-heizung",
+          "",
+          "t + h = ..t + h..（非 'th' 音！）      按 2",
+          "   Rathaus → Rat-haus（非 'Ra-thaus'）",
+          "   Mathilde → Mat-hilde",
+          "",
+          "辅音丛（两个音都要发出！）：",
+          "",
+          "pf： Pferd, Apfel, Kopf               按 3",
+          "",
+          "kn： Knie, Knabe, Knopf               按 4",
+          "",
+          "ng： singen, lang, Finger             按 5"
+        ],
+        "pronunciation_mappings": {
+          "1": "Bisher, Gasheizung",
+          "2": "Rathaus, Mathilde",
+          "3": "Pferd, Apfel, Kopf",
+          "4": "Knie, Knabe, Knopf",
+          "5": "singen, lang, Finger"
+        }
+      },
+      {
+        "page": 7,
+        "total_pages": 7,
+        "content": [
+          "特殊组合：",
+          "",
+          "词首 sp/st = 'shp'/'sht'：            按 1",
+          "   spielen → 'shpielen'",
+          "   Straße → 'shtraße'，Student → 'shtudent'",
+          "",
+          "两种 'CH' 音：",
+          "a/o/u/au 后 → 'ach'（喉后部）：        按 2",
+          "   Buch, auch, Dach, noch",
+          "e/i/ä/ö/ü/eu 后 → 'ich'（舌前部）：    按 3",
+          "   ich, nicht, Bücher, Mädchen",
+          "",
+          "德语 'R' 音：                         按 4",
+          "词首/词中：小舌音（喉后部）",
+          "   rot, Brot, Frage",
+          "词尾（-er）：弱化为 'ah' 音",
+          "   Vater → 'Vatah'，Mutter → 'Muttah'"
+        ],
+        "pronunciation_mappings": {
+          "1": "spielen, Straße, Student",
+          "2": "Buch, auch, Dach, noch",
+          "3": "ich, nicht, Bücher, Mädchen",
+          "4": "rot, Brot, Frage, Vater, Mutter"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "002",
+    "trigger_word": "müssen",
+    "trigger_card_number": 12,
+    "title": "第2课：情态动词",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "情态动词表示能力、许可、",
+          "义务或意愿：",
+          "",
+          "können  = 能        müssen  = 必须",
+          "dürfen  = 可以      wollen  = 想要",
+          "sollen  = 应该      möchten = 想要（礼貌）",
+          "",
+          "结构：情态动词 + 动词原形放句末",
+          "",
+          "Ich kann Deutsch sprechen.",
+          "（我会说德语）",
+          "",
+          "Du musst heute arbeiten.",
+          "（你今天必须工作）",
+          "",
+          "注意：主动词（sprechen、arbeiten）",
+          "保持原形，并置于句末！"
+        ],
+        "pronunciation": "Lektion zwei"
+      }
+    ]
+  },
+  {
+    "lesson_id": "003",
+    "trigger_word": "warum",
+    "trigger_card_number": 19,
+    "title": "第3课：疑问词",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "德语疑问词都以 W 开头",
+          "（发音类似英语 vase 中的 'v'）：",
+          "",
+          "wer    ＝ 谁       was    ＝ 什么",
+          "wann   ＝ 何时      wo     ＝ 哪里",
+          "warum  ＝ 为何      wie    ＝ 如何",
+          "welche ＝ 哪个",
+          "",
+          "语序：疑问词 → 动词 → 主语",
+          "",
+          "Was machst du heute？",
+          "（你今天在做什么？）",
+          "",
+          "是非问句：以动词开头！",
+          "Gehst du nach Hause？"
+        ],
+        "pronunciation": "Lektion drei"
+      }
+    ]
+  },
+  {
+    "lesson_id": "004",
+    "trigger_word": "Minute",
+    "trigger_card_number": 30,
+    "title": "第4课：性别与冠词",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "每个德语名词都有一个「性别」：",
+          "",
+          "der = 阳性    （der Mann，der Tisch）",
+          "die = 阴性     （die Frau，die Minute）",
+          "das = 中性       （das Kind，das Haus）",
+          "",
+          "复数 = die",
+          "",
+          "注意：性别常常是随机的！",
+          "“女孩”（das Mädchen）这个词居然是中性！",
+          "",
+          "策略：一定要连同「冠词」一起记忆名词。",
+          "不要只记“Minute”，而要记",
+          "“die Minute”。每次都要一起说！",
+          "",
+          "你会逐渐发现规律，但现在请记住：",
+          "把每个冠词当作单词的一部分来背。"
+        ],
+        "pronunciation": "Lektion vier"
+      }
+    ]
+  },
+  {
+    "lesson_id": "005",
+    "trigger_word": "zwanzig",
+    "trigger_card_number": 51,
+    "title": "第5课：德语数字",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "基础数字（1-12）：",
+          "",
+          "1 = eins      4 = vier               按 1",
+          "2 = zwei      5 = fünf",
+          "3 = drei      6 = sechs",
+          "",
+          "7 = sieben    10 = zehn              按 2",
+          "8 = acht      11 = elf",
+          "9 = neun      12 = zwölf",
+          "",
+          "DREIZEHN 与 DREIZIG：                按 3",
+          "",
+          "drei + zehn = 13   drei + zig = 30",
+          "14 = vierzehn  →  40 = vierzig",
+          "17 = siebzehn  →  70 = siebzig",
+          "",
+          "注意：17 = siebzehn，70 = siebzig",
+          "而非 siebenzehn 和 siebenzig"
+        ],
+        "pronunciation": "Lektion fünf",
+        "pronunciation_mappings": {
+          "1": "eins, zwei, drei, vier, fünf, sechs",
+          "2": "sieben, acht, neun, zehn, elf, zwölf",
+          "3": "drei plus zehn ist dreizehn, drei plus zick ist dreißig, vierzehn, vierzig, siebzehn, siebzig, und nicht sieben zehn und sieben zick"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "发音提示：",
+          "",
+          "zwei 与 drei：很难区分！           按 1",
+          "电话中为清晰起见，请说「zwo」：",
+          "   Mein PIN ist 2284",
+          "",
+          "报时表达：                        按 2",
+          "Es ist drei Uhr.（现在三点整）",
+          "Es ist halb vier.（现在三点半）",
+          "注意：halb vier =「差一半到四点」= 3:30！",
+          "",
+          "更大的数字：                      按 3",
+          "20 = zwanzig，40 = vierzig",
+          "100 = hundert，6000 = sechstausend",
+          "2.628 = zweitausendsechshundertachtundzwanzig",
+          "",
+          "德语用句点表示千位分隔符（2.628）",
+          "用逗号表示小数（3,50€）！"
+        ],
+        "pronunciation_mappings": {
+          "1": "Mein PIN ist zwo zwo acht vier",
+          "2": "Es ist drei Uhr. Es ist halb vier.",
+          "3": "zwanzig, vierzig, hundert, sechstausend, zweitausendsechshundertachtundzwanzig"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "序数词（第一、第二、第三……）：",
+          "",
+          "1-19：在数字后加 -te：               按 1",
+          "erste（第1）    vierte（第4）   siebte（第7）",
+          "zweite（第2）   fünfte（第5）   achte（第8）",
+          "dritte（第3）   sechste（第6）  neunte（第9）",
+          "",
+          "20及以上：在数字后加 -ste：          按 2",
+          "zwanzigste（第20），einundzwanzigste（第21）",
+          "dreißigste（第30），hundertste（第100）",
+          "",
+          "作形容词时（需变格！）：             按 3",
+          "der erste Mann（第一个男人）",
+          "die zweite Frau（第二个女人）",
+          "das dritte Kind（第三个孩子）",
+          "",
+          "日期使用序数词：                   按 4",
+          "Am dritten Mai.（五月三日）"
+        ],
+        "pronunciation_mappings": {
+          "1": "erste, zweite, dritte, vierte, fünfte, sechste, siebte, achte, neunte",
+          "2": "zwanzigste, einundzwanzigste, dreißigste, hundertste",
+          "3": "der erste Mann, die zweite Frau, das dritte Kind",
+          "4": "Am dritten Mai"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "006",
+    "trigger_word": "antworten",
+    "trigger_card_number": 62,
+    "title": "第6课：现在时动词",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "德语动词根据动作的执行者",
+          "而变化：",
+          "",
+          "示例：antworten（回答）",
+          "",
+          "ich antworte       = 我回答",
+          "du antwortest      = 你回答（非正式）",
+          "er antwortet       = 他回答",
+          "sie antwortet      = 她回答",
+          "es antwortet       = 它回答",
+          "wir antworten      = 我们回答",
+          "ihr antwortet      = 你们回答",
+          "sie/Sie antworten  = 他们/您回答",
+          "",
+          "规律：-e，-st，-t，-en，-t，-en",
+          "",
+          "大多数规则动词都遵循此规律！",
+          "注意：不规则动词（如 sein、haben）形式不同。"
+        ],
+        "pronunciation": "Lektion sechs"
+      }
+    ]
+  },
+  {
+    "lesson_id": "007",
+    "trigger_word": "Geld",
+    "trigger_card_number": 184,
+    "title": "第7课：否定",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "德语有两种表达“不／没有”的方式：",
+          "",
+          "nicht = 不（否定动词和形容词）",
+          "kein  = 没有（否定名词）",
+          "",
+          "NICHT — 位置可变：",
+          "Ich verstehe nicht.（我不明白）",
+          "Das ist nicht gut.（那不好）",
+          "",
+          "KEIN — 替换冠词：",
+          "",
+          "Ich habe einen Hund.",
+          "→ Ich habe keinen Hund.",
+          "（我有一只狗 → 我没有狗）",
+          "",
+          "规则：名词用 kein，",
+          "　　　其他一律用 nicht！"
+        ],
+        "pronunciation": "Lektion sieben"
+      }
+    ]
+  }
+]

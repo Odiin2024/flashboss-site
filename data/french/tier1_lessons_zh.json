@@ -1,0 +1,508 @@
+[
+  {
+    "lesson_id": "001",
+    "trigger_word": "bonjour",
+    "trigger_card_number": 1,
+    "title": "第1课：法语发音",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 4,
+        "content": [
+          "欢迎！法语拼写看似复杂，",
+          "但发音规则非常一致。",
+          "",
+          "a = 「ah」如 father                按 1",
+          "   la, ça, table",
+          "",
+          "é = 「ay」如 day（闭口、清晰）     按 2",
+          "   café, été, désolé",
+          "",
+          "è/ê = 「eh」如 bet（开口、柔和）   按 3",
+          "   mère, père, être",
+          "",
+          "i = 「ee」如 machine              按 4",
+          "   ici, midi, merci",
+          "",
+          "o/ô = 「oh」如 note               按 5",
+          "   mot, vélo, hôtel"
+        ],
+        "pronunciation": "Leçon un",
+        "pronunciation_mappings": {
+          "1": "La. Ça. Table.",
+          "2": "Café. Été. Désolé.",
+          "3": "Mère. Père. Être.",
+          "4": "Ici. Midi. Merci.",
+          "5": "Mot. Vélo. Hôtel."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 4,
+        "content": [
+          "鼻化元音——气流从鼻腔通过，",
+          "发出元音但不要读出后面的 n/m：",
+          "",
+          "an/en = 鼻化的「ah」               按 1",
+          "   France, enfant, dans",
+          "",
+          "in/ain/ein = 鼻化的「eh」          按 2",
+          "   vin, pain, main",
+          "",
+          "on = 鼻化的「oh」                  按 3",
+          "   bon, maison, non",
+          "",
+          "un = 鼻化的「uh」（许多说话者已与  按 4",
+          "「in」合并）",
+          "   un, lundi, parfum",
+          "",
+          "规则：元音后的 n/m 通常不发音——",
+          "仅用于鼻化前面的元音。"
+        ],
+        "pronunciation_mappings": {
+          "1": "France. Enfant. Dans.",
+          "2": "Vin. Pain. Main.",
+          "3": "Bon. Maison. Non.",
+          "4": "Un. Lundi. Parfum."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 4,
+        "content": [
+          "与英语不同的辅音：",
+          "",
+          "h = 始终不发音                    按 1",
+          "   habiter, homme, heure",
+          "",
+          "c 在 e/i/y 前 = 软音「s」          按 2",
+          "   ici, cinéma, merci",
+          "c 在 a/o/u 前 = 硬音「k」          按 3",
+          "   café, comme, cousin",
+          "ç = 始终发软音「s」（任何元音前）  按 4",
+          "   ça, français, garçon",
+          "",
+          "g 在 e/i/y 前 = 软音（类似「zh」） 按 5",
+          "   âge, manger, gilet",
+          "g 在 a/o/u 前 = 硬音如「go」中的 g 按 6",
+          "   gauche, gomme, légume",
+          "gn = 如 canyon 中的「ny」         按 7",
+          "   montagne, gagner, ligne"
+        ],
+        "pronunciation_mappings": {
+          "1": "Habiter. Homme. Heure.",
+          "2": "Ici. Cinéma. Merci.",
+          "3": "Café. Comme. Cousin.",
+          "4": "Ça. Français. Garçon.",
+          "5": "Âge. Manger. Gilet.",
+          "6": "Gauche. Gomme. Légume.",
+          "7": "Montagne. Gagner. Ligne."
+        }
+      },
+      {
+        "page": 4,
+        "total_pages": 4,
+        "content": [
+          "词尾辅音通常不发音：",
+          "",
+          "trop, beaucoup, nez, gros         按 1",
+          "（词尾 p, p, z, s 均不发音）",
+          "",
+          "例外——「CaReFuL」字母在词尾时       按 2",
+          "需要发音：",
+          "c, r, f, l → avec, professeur, chef,",
+          "animal",
+          "",
+          "重音：始终落在单词或短语的",
+          "最后一个音节上——",
+          "比西班牙语或英语简单得多。",
+          "",
+          "还有两个发音现象将在后续课程",
+          "单独讲解：省音（l'ami）和连音",
+          "（les amis），出现在相关卡片中。"
+        ],
+        "pronunciation_mappings": {
+          "1": "Trop. Beaucoup. Nez. Gros.",
+          "2": "Avec. Professeur. Chef. Animal."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "002",
+    "trigger_word": "âge",
+    "trigger_card_number": 8,
+    "title": "第2课：阅读卡片",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "每张法语卡片都会显示冠词，",
+          "按性别用颜色编码——一眼看清，",
+          "不要猜测：",
+          "",
+          "le = 阳性（显示为蓝色）　　　　　按 1",
+          "　　le nom，le pays，le métier",
+          "",
+          "la = 阴性（显示为品红色）　　　　按 2",
+          "　　la nationalité，la famille",
+          "",
+          "策略：永远不要单独记名词——",
+          "一定要连同它的彩色",
+          "冠词一起记忆。颜色是快速",
+          "区分 le 和 la 的最直观方式。"
+        ],
+        "pronunciation": "Leçon deux",
+        "pronunciation_mappings": {
+          "1": "le nom, le pays, le métier",
+          "2": "la nationalité, la famille"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "省音（Élision）——在元音前，",
+          "le/la 会省去元音，变成 l'：",
+          "",
+          "le âge → l'âge　　　　　　　　　按 1",
+          "la adresse → l'adresse",
+          "",
+          "撇号下方仍保留性别颜色——",
+          "l'âge 显示为蓝色，",
+          "l'adresse 显示为品红色，",
+          "因此你仍能一眼看出性别。",
+          "",
+          "卡片会以 Elides: true 标注此现象。",
+          "Elides: false 表示冠词保持完整：",
+          "le héros，la honte",
+          "（稍后会详细介绍——某些",
+          "以 h 开头的单词会阻止省音）。"
+        ],
+        "pronunciation_mappings": {
+          "1": "l'âge, l'adresse"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "003",
+    "trigger_word": "madame",
+    "trigger_card_number": 18,
+    "title": "第3课：TU VS VOUS",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "法语中“你”有两个说法：",
+          "",
+          "TU = 非正式 —— 朋友、家人、       按 1",
+          "孩子、同龄人",
+          "   Tu es prêt ?（你准备好了吗？）",
+          "",
+          "VOUS = 正式 且 复数 ——             按 2",
+          "陌生人、长辈、职场，或多人时",
+          "   Vous êtes prêt ?（您准备好了吗？）",
+          "",
+          "你已在「s'il vous plaît」中用过",
+          "vous —— 这是正式的“请”，字面意",
+          "思是“如果您愿意（正式）”。",
+          "",
+          "VOUS 直接沿用复数的动词变位 ——",
+          "无需学习新变位，只需记住新用法。"
+        ],
+        "pronunciation": "Leçon trois",
+        "pronunciation_mappings": {
+          "1": "tu es prêt",
+          "2": "vous êtes prêt, s'il vous plaît"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "拿不准时，请用 VOUS：",
+          "",
+          "从 vous 开始总是安全的。         按 1",
+          "对方可能会邀请你改用 tu：",
+          "「On peut se tutoyer」（我们可以用 tu）",
+          "",
+          "称呼陌生人时加上头衔：           按 2",
+          "Bonjour, madame. / Bonjour, monsieur.",
+          "",
+          "对话中途从 tu 改回 vous",
+          "会显得冷淡；而 vous → tu 才是",
+          "常规方向，通常由对方主动提出，",
+          "不要自行假设。"
+        ],
+        "pronunciation_mappings": {
+          "1": "on peut se tutoyer",
+          "2": "bonjour madame, bonjour monsieur"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "004",
+    "trigger_word": "être",
+    "trigger_card_number": 76,
+    "title": "第4课：现在时",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "法语动词分为三大类：",
+          "-ER（parler）  -IR（finir）  -RE（vendre）",
+          "",
+          "-ER 是最大的一类——大多数新学的",
+          "动词都属于 -ER 类。去掉 -er，加上：",
+          "",
+          "je parle            = 我说              按 1",
+          "tu parles           = 你说",
+          "il/elle parle       = 他／她说",
+          "nous parlons        = 我们说",
+          "vous parlez         = 您／你们说（正式或复数）",
+          "ils/elles parlent   = 他们／她们说",
+          "",
+          "parle／parles／parle／parlent 的发音",
+          "完全相同——只有 nous 和 vous 的发音",
+          "发生变化。注意听词尾。"
+        ],
+        "pronunciation": "Leçon quatre",
+        "pronunciation_mappings": {
+          "1": "je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "-IR 动词（finir = 完成）：             按 1",
+          "",
+          "je finis            = 我完成",
+          "tu finis            = 你完成",
+          "il/elle finit       = 他／她完成",
+          "nous finissons      = 我们完成",
+          "vous finissez       = 您／你们完成",
+          "ils/elles finissent = 他们／她们完成",
+          "",
+          "-RE 动词（vendre = 出售）：            按 2",
+          "",
+          "je vends            = 我出售",
+          "tu vends            = 你出售",
+          "il/elle vend        = 他／她出售",
+          "nous vendons        = 我们出售",
+          "ils/elles vendent   = 他们／她们出售"
+        ],
+        "pronunciation_mappings": {
+          "1": "je finis, tu finis, il finit, nous finissons, vous finissez, ils finissent",
+          "2": "je vends, tu vends, il vend, nous vendons, ils vendent"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "四大高频不规则动词，使用极其频繁。",
+          "务必彻底牢记：",
+          "",
+          "ÊTRE（是）：                          按 1",
+          "suis, es, est, sommes, êtes, sont",
+          "",
+          "AVOIR（有）：                         按 2",
+          "ai, as, a, avons, avez, ont",
+          "",
+          "ALLER（去）：                         按 3",
+          "vais, vas, va, allons, allez, vont",
+          "",
+          "FAIRE（做／制作）：                   按 4",
+          "fais, fais, fait, faisons, faites, font",
+          "",
+          "这四个动词还会用于构建其他时态",
+          "（如最近将来时、复合过去时等）",
+          "——现在就扎实掌握它们！"
+        ],
+        "pronunciation_mappings": {
+          "1": "suis, es, est, sommes, êtes, sont",
+          "2": "ai, as, a, avons, avez, ont",
+          "3": "vais, vas, va, allons, allez, vont",
+          "4": "fais, fais, fait, faisons, faites, font"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "005",
+    "trigger_word": "essayer",
+    "trigger_card_number": 99,
+    "title": "第5课：否定",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "ne...pas 包裹动词——",
+          "它像三明治，不是单个词：",
+          "",
+          "Je ne parle pas.                     按 1",
+          "（我不说话／我没在说话。）",
+          "",
+          "Je ne suis pas prêt.                 按 2",
+          "（我还没准备好。）",
+          "",
+          "在法语口语中，「ne」常被省略：",
+          "比如「Je parle pas」——但在 Core",
+          "卡包中务必写出完整形式。",
+          "",
+          "接不定式时，两部分一起移到",
+          "不定式前：                          按 3",
+          "Je préfère ne pas essayer.",
+          "（我宁愿不去尝试。）"
+        ],
+        "pronunciation": "Leçon cinq",
+        "pronunciation_mappings": {
+          "1": "je ne parle pas",
+          "2": "je ne suis pas prêt",
+          "3": "je préfère ne pas essayer"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "其他否定形式也用同样的",
+          "ne...___ 三明治结构，只是中间词不同：",
+          "",
+          "ne...plus = 不再／没有了           按 1",
+          "   Je n'ai plus faim.",
+          "",
+          "ne...jamais = 从不                  按 2",
+          "   Je ne mange jamais de viande.",
+          "",
+          "ne...rien = 什么也不                按 3",
+          "   Je ne vois rien.",
+          "",
+          "ne...personne = 没有人              按 4",
+          "   Je ne connais personne ici.",
+          "",
+          "注意：元音开头时，ne 缩合为 n' ——",
+          "如 n'ai、n'aime、n'est。"
+        ],
+        "pronunciation_mappings": {
+          "1": "je n'ai plus faim",
+          "2": "je ne mange jamais de viande",
+          "3": "je ne vois rien",
+          "4": "je ne connais personne ici"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "006",
+    "trigger_word": "heure",
+    "trigger_card_number": 151,
+    "title": "第6课：IL Y A 与报时",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "IL Y A = 有……（表示存在）——",
+          "这是一个固定短语，",
+          "单复数形式不变：",
+          "",
+          "Il y a un problème.                按 1",
+          "（有个问题。）",
+          "Il y a des livres.                 按 2",
+          "（有一些书。）",
+          "",
+          "疑问句——只需提高语调，",
+          "或加上 est-ce que：",
+          "Il y a un problème ?               按 3",
+          "（有问题吗？）",
+          "",
+          "否定句——用常见的 ne...pas",
+          "把 'a' 夹在中间：",
+          "Il n'y a pas de problème.          按 4",
+          "（没问题。）"
+        ],
+        "pronunciation": "Leçon six",
+        "pronunciation_mappings": {
+          "1": "il y a un problème",
+          "2": "il y a des livres",
+          "3": "il y a un problème ?",
+          "4": "il n'y a pas de problème"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "报时使用 il est + heure(s)：",
+          "",
+          "Il est une heure.                  按 1",
+          "（一点钟。）",
+          "Il est deux heures.                按 2",
+          "（两点钟。）",
+          "",
+          "「une heure」是单数，所以不加 s。",
+          "从「deux heures」开始，heure 要加 -s。",
+          "",
+          "Il est midi. / Il est minuit.      按 3",
+          "（中午了。/ 午夜了。）",
+          "",
+          "Il est deux heures dix.            按 4",
+          "（2:10）",
+          "Il est trois heures moins dix.     按 5",
+          "（2:50）"
+        ],
+        "pronunciation_mappings": {
+          "1": "il est une heure",
+          "2": "il est deux heures",
+          "3": "il est midi, il est minuit",
+          "4": "il est deux heures dix",
+          "5": "il est trois heures moins dix"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "联诵（Liaison）——词尾原本不发音的辅音",
+          "在下一个元音前会“苏醒”：",
+          "",
+          "deux heures → deux_heures [z]      按 1",
+          "trois heures → trois_heures [z]    按 2",
+          "six heures → six_heures [z]        按 3",
+          "dix heures → dix_heures [z]        按 4",
+          "",
+          "不只是数字，其他情况也一样：",
+          "",
+          "un an → un_an [n]                  按 5",
+          "les amis → les_amis [z]            按 6",
+          "très utile → très_utile [z]        按 7",
+          "",
+          "第8课将全面讲解联诵规则。"
+        ],
+        "pronunciation_mappings": {
+          "1": "deux heures",
+          "2": "trois heures",
+          "3": "six heures",
+          "4": "dix heures",
+          "5": "un an",
+          "6": "les amis",
+          "7": "très utile"
+        }
+      }
+    ]
+  }
+]

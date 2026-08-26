@@ -1,0 +1,413 @@
+[
+  {
+    "lesson_id": "001",
+    "trigger_word": "saluton",
+    "title": "第1课：世界语发音",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "世界语的发音非常规则。",
+          "这意味着每个字母的发音始终一致。",
+          "以下是元音：",
+          "",
+          "「A」如 father 中的 a：         按 1",
+          "   amiko, tablo, kato",
+          "",
+          "「E」如 bed 中的 e：            按 2",
+          "   espero, bela, tre",
+          "",
+          "「I」如 machine 中的 i：        按 3",
+          "   iri, amiko, mi",
+          "",
+          "「O」如 more 中的 o：           按 4",
+          "   oro, nova, horo",
+          "",
+          "「U」如 rule 中的 u：           按 5",
+          "   urbo, kultur, nu"
+        ],
+        "pronunciation": "Leciono unu",
+        "pronunciation_speed": 1.4,
+        "pronunciation_mappings": {
+          "1": "amiko, tablo, kato",
+          "2": "espero, bela, tre",
+          "3": "iri, amiko, mi",
+          "4": "oro, nova, horo",
+          "5": "urbo, kultur, nu"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "部分辅音带有变音符号。",
+          "看起来有点吓人，但一旦掌握，",
+          "反而让事情变得更简单！",
+          "",
+          "Ĉ = 如 church 中的 ch：       按 1",
+          "   ĉambro, ĉokolado, ĉefo",
+          "",
+          "Ĝ = 如 jump 中的 j：          按 2",
+          "   ĝardeno, oranĝo, ĝojo",
+          "",
+          "Ĵ = 如 pleasure 中的 zh：     按 3",
+          "   ĵurnalo, ĵaŭdo, ĵazo",
+          "",
+          "Ŝ = 如 shop 中的 sh：         按 4",
+          "   ŝipo, fiŝo, ŝranko",
+          "",
+          "Ŭ = 如 dew 中的 w：           按 5",
+          "   aŭ → aŭto   eŭ → Eŭropo"
+        ],
+        "pronunciation_speed": 1.4,
+        "pronunciation_mappings": {
+          "1": "ĉambro, ĉokolado, ĉefo",
+          "2": "ĝardeno, oranĝo, ĝojo",
+          "3": "ĵurnalo, ĵaŭdo, ĵazo",
+          "4": "ŝipo, fiŝo, ŝranko",
+          "5": "aŭ, aŭto, eŭ, Eŭropo"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "002",
+    "trigger_word": "estas",
+    "title": "第2课：现在时",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "世界语的现在时很简单：",
+          "所有动词都以 -as 结尾，无论主语是谁。",
+          "",
+          "「ESTI」（是）的例句：",
+          "",
+          "mi estas      = 我是",
+          "vi estas      = 你是",
+          "li estas      = 他是",
+          "ŝi estas      = 她是",
+          "ni estas      = 我们是",
+          "ili estas     = 他们是",
+          "",
+          "「PAROLI」（说）的例句：",
+          "mi parolas    = 我说",
+          "vi parolas    = 你说",
+          "li parolas    = 他说",
+          "",
+          "动词形式永不变化！所有人称都用同一形式。"
+        ],
+        "pronunciation": "Leciono du"
+      }
+    ]
+  },
+  {
+    "lesson_id": "003",
+    "trigger_word": "alia",
+    "title": "第3课：形容词与复数",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "世界语中每个形容词都以 -a 结尾。",
+          "这样很容易识别！",
+          "",
+          "常用形容词：",
+          "",
+          "bona   = 好的        malbona   = 坏的",
+          "granda = 大的         malgranda = 小的",
+          "bela   = 美丽的       nova      = 新的",
+          "",
+          "词序 — 两种顺序都可以：",
+          "",
+          "bona libro  = 一本好书",
+          "libro bona  = 一本好书（也可以！）",
+          "",
+          "提示：如果一个词修饰名词，",
+          "且以 -a 结尾，那它就是形容词。很简单！"
+        ],
+        "pronunciation": "Leciono tri"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "复数：在名词和形容词后加 -j。",
+          "",
+          "名词（-o 变为 -oj）：",
+          "",
+          "amiko   → amikoj    = 朋友 → 朋友们",
+          "libro   → libroj    = 书 → 书们",
+          "hundo   → hundoj    = 狗 → 狗们",
+          "",
+          "形容词必须与之保持一致：",
+          "bona amiko    → bonaj amikoj",
+          "granda libro  → grandaj libroj",
+          "",
+          "发音：",
+          "-j 的发音类似英文 'boy' 中的 'y'。",
+          "amikoj = ah-MEE-koy",
+          "",
+          "名词和形容词都要加 -j！",
+          "La grandaj hundoj kuras. = 那些大狗在跑。"
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": "004",
+    "trigger_word": "bone",
+    "title": "第4课：副词以 -e 结尾",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "副词描述某事「如何」发生。",
+          "在世界语中，副词始终以 -e 结尾。",
+          "",
+          "从形容词到副词：",
+          "bona → bone       = 好 → 好地",
+          "rapida → rapide   = 快 → 快速地",
+          "facila → facile   = 容易 → 轻松地",
+          "lenta → lente     = 慢 → 缓慢地",
+          "",
+          "区别如下：",
+          "",
+          "Li estas bona.",
+          "（他是个好人。← 描述「他」）",
+          "",
+          "Li kantas bone.",
+          "（他唱得好。← 描述「如何唱」）",
+          "",
+          "记住：名词用 -a，动作用 -e！"
+        ],
+        "pronunciation": "Leciono kvar"
+      }
+    ]
+  },
+  {
+    "lesson_id": "005",
+    "trigger_word": "kio",
+    "title": "第5课：疑问词（KI-）",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "世界语的所有疑问词都以",
+          "KI- 开头。这是个优美的系统，",
+          "你以后会学到更多！",
+          "",
+          "疑问词如下：",
+          "kio   ＝ 什么（事物）",
+          "kiu   ＝ 谁／哪一个",
+          "kie   ＝ 哪里（地点）",
+          "kiam  ＝ 何时（时间）",
+          "kial  ＝ 为何（原因）",
+          "kiel  ＝ 如何（方式）",
+          "kiom  ＝ 多少（数量）",
+          "",
+          "例句：",
+          "Kio estas tio?     ＝ 那是什么？",
+          "Kiu vi estas?      ＝ 你是谁？",
+          "Kie vi loĝas?      ＝ 你住在哪里？",
+          "Kiam vi venas?     ＝ 你什么时候来？"
+        ],
+        "pronunciation": "Leciono kvin"
+      }
+    ]
+  },
+  {
+    "lesson_id": "006",
+    "trigger_word": "helpo",
+    "title": "第6课：定冠词「LA」",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "世界语只有一个冠词：LA（the）。",
+          "",
+          "带 LA = 特指、已知的事物：",
+          "Mi vidas la hundon. = 我看见那条狗。",
+          "La libro relevanta estas sur la tablo.",
+          "= 那本相关的书在桌上。",
+          "",
+          "不带冠词 = 泛指概念：",
+          "Mi amas muzikon. = 我热爱音乐。",
+          "Akvo estas necesa. = 水是必需的。",
+          "Ŝi volas kafon. = 她想要咖啡。",
+          "",
+          "对比：",
+          "Mi legas libron. = 我正在读一本书。",
+          "Mi legas la libron. = 我正在读那本书。",
+          "",
+          "世界语中没有 a/an —— 上下文会告诉你！",
+          "LA 永远不变：la viro，la viroj，la domo。"
+        ],
+        "pronunciation": "Leciono ses"
+      }
+    ]
+  },
+  {
+    "lesson_id": "007",
+    "trigger_word": "ĉu",
+    "title": "第7课：是非疑问句",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "只需在句首加上 ĈU，",
+          "就能把任何陈述句变成是非疑问句。",
+          "语序完全保持不变！",
+          "",
+          "陈述句 → 疑问句：",
+          "Vi parolas Esperanton.",
+          "（你会说世界语。）",
+          "  ↓",
+          "Ĉu vi parolas Esperanton?",
+          "（你会说世界语吗？）",
+          "",
+          "更多例句：",
+          "Ĉu estas problemo?  = 有问题吗？",
+          "Ĉu li venas?        = 他来吗？",
+          "Ĉu vi komprenas?    = 你明白吗？",
+          "",
+          "回答：Jes = 是  /  Ne = 否"
+        ],
+        "pronunciation": "Leciono sep"
+      }
+    ]
+  },
+  {
+    "lesson_id": "008",
+    "trigger_word": "patrino",
+    "title": "第8课：阴性后缀 -IN-",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "要使一个词特指女性，",
+          "在词根后、词尾前加上 -IN-。",
+          "",
+          "家庭成员：",
+          "patro → patrino    = 父亲 → 母亲",
+          "frato → fratino    = 兄弟 → 姐妹",
+          "filo → filino      = 儿子 → 女儿",
+          "",
+          "结构：",
+          "patr-in-o  = 母亲（名词 -o）",
+          "patr-in-a  = 母性的（形容词 -a）",
+          "",
+          "适用于任何词：",
+          "knabo → knabino    = 男孩 → 女孩",
+          "hundo → hundino    = 狗 → 母狗",
+          "amiko → amikino    = 朋友 → 女朋友"
+        ],
+        "pronunciation": "Leciono ok"
+      }
+    ]
+  },
+  {
+    "lesson_id": "009",
+    "trigger_word": "malbona",
+    "title": "第9课：反义前缀 MAL-",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "MAL- 是世界语最强大的工具之一。",
+          "把它加在任何单词前面，",
+          "就能立刻生成反义词！",
+          "",
+          "形容词：",
+          "bona → malbona      = 好 → 坏",
+          "granda → malgranda  = 大 → 小",
+          "nova → malnova      = 新 → 旧",
+          "alta → malalta      = 高 → 低",
+          "juna → maljuna      = 年轻 → 年老",
+          "",
+          "动词也适用：",
+          "fermi → malfermi    = 关闭 → 打开",
+          "ami → malami        = 爱 → 恨",
+          "",
+          "这能让词汇量学习减半！",
+          "学会「bona」，「malbona」就免费到手！"
+        ],
+        "pronunciation": "Leciono naŭ"
+      }
+    ]
+  },
+  {
+    "lesson_id": "010",
+    "trigger_word": "unu",
+    "title": "第10课：数字系统",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "世界语的数字完全规则。",
+          "先掌握基础，再组合使用！",
+          "",
+          "基本数字：",
+          "",
+          "0 = nul    5 = kvin    10 = dek",
+          "1 = unu    6 = ses     11 = dek unu",
+          "2 = du     7 = sep     12 = dek du",
+          "3 = tri    8 = ok      13 = dek tri",
+          "4 = kvar   9 = naŭ     14 = dek kvar",
+          "",
+          "构建更大的数字：",
+          "20 = dudek（du + dek = 两个十）",
+          "30 = tridek，40 = kvardek，依此类推。",
+          "100 = cent，1000 = mil",
+          "",
+          "组合示例：23 = dudek tri。毫无例外！"
+        ],
+        "pronunciation": "Leciono dek"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "序数词（第一、第二、第三……）",
+          "在任何数字后加 -a。它们是形容词！",
+          "",
+          "unua    = 第一       kvara   = 第四",
+          "dua     = 第二       kvina   = 第五",
+          "tria    = 第三       deka    = 第十",
+          "",
+          "更大的序数词：",
+          "dudek-unua = 第二十一",
+          "centa = 第一百",
+          "",
+          "在句子中：",
+          "Ĉi tiu estas mia unua leciono。",
+          "（这是我的第一课。）",
+          "Li loĝas sur la tria etaĝo。",
+          "（他住在三楼。）",
+          "",
+          "像形容词一样：unuaj paŝoj = 最初的几步"
+        ]
+      }
+    ]
+  }
+]

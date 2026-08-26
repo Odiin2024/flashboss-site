@@ -1,0 +1,189 @@
+[
+  {
+    "lesson_id": "011",
+    "trigger_word": "lever",
+    "trigger_card_number": 401,
+    "title": "第11課：代名動詞",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "代名動詞は、動作が主語に返ってくる動詞です。",
+          "動詞の前に再帰代名詞を置きます:",
+          "",
+          "se lever(起きる):                 1を押す",
+          "je me lève       tu te lèves",
+          "il/elle se lève",
+          "nous nous levons",
+          "vous vous levez",
+          "elles se lèvent",
+          "",
+          "再帰代名詞は必ず主語と対応します:",
+          "je↔me、tu↔te、il/on↔se、",
+          "nous↔nous、vous↔vous、ils↔se。",
+          "",
+          "母音の前では縮約が起きます:       2を押す",
+          "me/te/se → m'/t'/s'",
+          "s'habiller, s'appeler, s'endormir"
+        ],
+        "pronunciation": "Leçon onze",
+        "pronunciation_mappings": {
+          "1": "Je me lève. Tu te lèves. Il se lève. Nous nous levons. Vous vous levez. Elles se lèvent.",
+          "2": "S'habiller. S'appeler. S'endormir."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "代名動詞の複合過去は、必ず être を使います。",
+          "例外はありません。次に学ぶ avoir と être の",
+          "使い分けより、かえって簡単です:",
+          "",
+          "je me suis levé(e)               1を押す",
+          "(起きました)",
+          "elle s'est habillée              2を押す",
+          "(彼女は服を着ました)",
+          "",
+          "過去分詞は形容詞のように主語と性・数を",
+          "一致させます。女性なら -e(levée, habillée)、",
+          "複数なら -s、女性複数なら -es を付けます。"
+        ],
+        "pronunciation_mappings": {
+          "1": "je me suis levé",
+          "2": "elle s'est habillée"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "012",
+    "trigger_word": "honte",
+    "trigger_card_number": 514,
+    "title": "第12課：有音の h",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "有音の h(h aspiré)は数が限られた語群です。",
+          "h 自体は発音しませんが、エリジオンと",
+          "リエゾンをブロックします:",
+          "",
+          "la honte(恥)は l'honte になりません:",
+          "le héros, le haricot, le hasard  1を押す",
+          "",
+          "一方、多くの h は無音の h(h muet)で、",
+          "ふつうにエリジオンします:         2を押す",
+          "l'heure, l'homme, l'hôtel, l'hiver",
+          "",
+          "見た目では区別できず、語ごとに覚えるしか",
+          "ありません。カードでは h aspiré の語に",
+          "Elides: false と表示されます。"
+        ],
+        "pronunciation": "Leçon douze",
+        "pronunciation_mappings": {
+          "1": "la honte, le héros, le haricot, le hasard",
+          "2": "l'heure, l'homme, l'hôtel, l'hiver"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "013",
+    "trigger_word": "arriver",
+    "trigger_card_number": 526,
+    "title": "第13課：avoir か être か?",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "複合過去(passé composé)がいよいよ本格化",
+          "します。ほとんどの動詞は avoir を使います:",
+          "",
+          "j'ai fini(終えました)             1を押す",
+          "j'ai vendu(売りました)",
+          "j'ai perdu(なくしました)",
+          "",
+          "覚えるべき不規則な過去分詞:       2を押す",
+          "faire → fait      voir → vu",
+          "prendre → pris    mettre → mis",
+          "dire → dit        avoir → eu",
+          "être → été",
+          "",
+          "どれも頻繁に出てきます。動詞そのものと",
+          "セットで覚えましょう。"
+        ],
+        "pronunciation": "Leçon treize",
+        "pronunciation_mappings": {
+          "1": "j'ai fini, j'ai vendu, j'ai perdu",
+          "2": "fait, vu, pris, mis, dit, eu, été"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "少数の動詞は être を使います。多くは移動や",
+          "状態変化を表す動詞です。DR & MRS",
+          "VANDERTRAMP で覚えましょう:       1を押す",
+          "",
+          "Devenir, Revenir, Monter, Rester,",
+          "Sortir, Venir, Aller, Naître,",
+          "Descendre, Entrer, Rentrer, Tomber,",
+          "Retourner, Arriver, Mourir, Partir,",
+          "Passer",
+          "",
+          "je suis arrivé(e)(着きました)    2を押す",
+          "elle est partie(彼女は出発しました)",
+          "",
+          "過去分詞は主語と一致します。これは代名動詞と",
+          "同じ規則で、代名動詞も必ず être を取ります。"
+        ],
+        "pronunciation_mappings": {
+          "1": "devenir, revenir, monter, rester, sortir, venir, aller, naître, descendre, entrer, rentrer, tomber, retourner, arriver, mourir, partir, passer",
+          "2": "je suis arrivé, elle est partie"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "014",
+    "trigger_word": "est",
+    "trigger_card_number": 534,
+    "title": "第14課：est という同形異義語",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "est はつづりが同じでも、まったく別の語が",
+          "2つあり、発音も異なります:",
+          "",
+          "il est(動詞「être」)= [ɛ]        1を押す",
+          "語末の -st は発音しません",
+          "   Il est ici.(彼はここにいます)",
+          "",
+          "l'est(名詞「東」)= [ɛst]          2を押す",
+          "語末の -st を発音します",
+          "   Il habite à l'est.",
+          "   (彼は東部に住んでいます)",
+          "",
+          "文脈で必ず見分けられます。名詞の est が",
+          "主語人称代名詞の直後に来ることはありません。"
+        ],
+        "pronunciation": "Leçon quatorze",
+        "pronunciation_mappings": {
+          "1": "il est ici",
+          "2": "il habite à l'est"
+        }
+      }
+    ]
+  }
+]

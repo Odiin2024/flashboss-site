@@ -237,10 +237,12 @@ function engCode(set){ return (ENGLISH_PACKS.find(p=>p[0]===set)||[])[1] || Stri
 function setsFor(lang){ return lang==='English' ? ENGLISH_PACKS.map(p=>p[0]) : SETS; }
 const TIER_AVAIL={"Toki Pona":[1,2,3,4,5], English:[1,2,3,4,5]};   // published tiers per pack — everything else has all 15; keeps us from fetching tiers that would 404
 function tiersFor(lang){ return TIER_AVAIL[lang] || TIERS; }
-function lessonUrl(lang, set, tier){
+const LESSON_LOC='de';   // this page's locale — its lesson twin is tried first, the English file is the fallback
+function lessonUrl(lang, set, tier, loc){
+  const suf=loc?`_${loc}`:'';
   return lang==='English'
-    ? `data/english/${engCode(set)}/tier${tier}_lessons.json`
-    : `data/${lang.toLowerCase().replace(/\s+/g,'_')}/tier${tier}_lessons.json`;   // "Toki Pona" -> data/toki_pona/
+    ? `data/english/${engCode(set)}/tier${tier}_lessons${suf}.json`
+    : `data/${lang.toLowerCase().replace(/\s+/g,'_')}/tier${tier}_lessons${suf}.json`;   // "Toki Pona" -> data/toki_pona/
 }
 /* Toki Pona has no system voice; in-game it speaks through the Esperanto voice, so "eo" here too */
 const SPEECH_LANG={Italian:"it-IT",German:"de-DE",Spanish:"es-ES",French:"fr-FR",Esperanto:"eo","Toki Pona":"eo",English:"en-US"};
@@ -320,7 +322,9 @@ async function loadLessons(lang, set){
   if(cache[key]!==undefined) return cache[key];
   let all=[];
   for(const t of tiersFor(lang)){
-    try{ const r=await fetch(lessonUrl(lang,set,t),{cache:'no-store'});
+    try{
+      let r = lang==='English' ? null : await fetch(lessonUrl(lang,set,t,LESSON_LOC),{cache:'no-store'});
+      if(!r||!r.ok) r=await fetch(lessonUrl(lang,set,t),{cache:'no-store'});   // no localized twin for this tier — English lessons
       if(r.ok){ const arr=await r.json(); (arr||[]).forEach(L=>L._tier=t); all=all.concat(arr); } }catch(e){}
   }
   if(!all.length && lang!=='English' && SAMPLE[lang]) all = SAMPLE[lang].map(L=>Object.assign({_tier:1},L));

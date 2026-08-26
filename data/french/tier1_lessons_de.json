@@ -1,0 +1,511 @@
+[
+  {
+    "lesson_id": "001",
+    "trigger_word": "bonjour",
+    "trigger_card_number": 1,
+    "title": "LEKTION 1: FRANZÖSISCHE AUSSPRACHE",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 4,
+        "content": [
+          "Bienvenue! Die französische Schreibung wirkt",
+          "knifflig, aber die Laute sind sehr regelmäßig.",
+          "",
+          "a = 'ah' wie in Vater               Drücke 1",
+          "   la, ça, table",
+          "",
+          "é = geschlossenes 'e' wie in See    Drücke 2",
+          "   café, été, désolé",
+          "",
+          "è/ê = offenes 'ä' wie in Bett       Drücke 3",
+          "   mère, père, être",
+          "",
+          "i = 'ih' wie in Maschine            Drücke 4",
+          "   ici, midi, merci",
+          "",
+          "o/ô = 'oh' wie in Boot              Drücke 5",
+          "   mot, vélo, hôtel"
+        ],
+        "pronunciation": "Leçon un",
+        "pronunciation_mappings": {
+          "1": "La. Ça. Table.",
+          "2": "Café. Été. Désolé.",
+          "3": "Mère. Père. Être.",
+          "4": "Ici. Midi. Merci.",
+          "5": "Mot. Vélo. Hôtel."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 4,
+        "content": [
+          "NASALVOKALE — die Luft geht durch die Nase,",
+          "sprich den Vokal, aber vollende das n/m nicht:",
+          "",
+          "an/en = nasales 'ah'                Drücke 1",
+          "   France, enfant, dans",
+          "",
+          "in/ain/ein = nasales 'ä'            Drücke 2",
+          "   vin, pain, main",
+          "",
+          "on = nasales 'oh'                   Drücke 3",
+          "   bon, maison, non",
+          "",
+          "un = nasales 'ö' (fällt bei vielen  Drücke 4",
+          "Sprechern mit 'in' zusammen)",
+          "   un, lundi, parfum",
+          "",
+          "REGEL: Nach einem Vokal spricht man n/m",
+          "meist nicht — es nasaliert nur den Vokal."
+        ],
+        "pronunciation_mappings": {
+          "1": "France. Enfant. Dans.",
+          "2": "Vin. Pain. Main.",
+          "3": "Bon. Maison. Non.",
+          "4": "Un. Lundi. Parfum."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 4,
+        "content": [
+          "KONSONANTEN, die anders sind als im Deutschen:",
+          "",
+          "h = immer STUMM                      Drücke 1",
+          "   habiter, homme, heure",
+          "",
+          "c vor e/i/y = weiches 's'            Drücke 2",
+          "   ici, cinéma, merci",
+          "c vor a/o/u = hartes 'k'             Drücke 3",
+          "   café, comme, cousin",
+          "ç = immer weiches 's' (jeder Vokal)  Drücke 4",
+          "   ça, français, garçon",
+          "",
+          "g vor e/i/y = weich wie in Journal   Drücke 5",
+          "   âge, manger, gilet",
+          "g vor a/o/u = hartes 'g' wie in gut  Drücke 6",
+          "   gauche, gomme, légume",
+          "gn = wie 'nj' in Champignon          Drücke 7",
+          "   montagne, gagner, ligne"
+        ],
+        "pronunciation_mappings": {
+          "1": "Habiter. Homme. Heure.",
+          "2": "Ici. Cinéma. Merci.",
+          "3": "Café. Comme. Cousin.",
+          "4": "Ça. Français. Garçon.",
+          "5": "Âge. Manger. Gilet.",
+          "6": "Gauche. Gomme. Légume.",
+          "7": "Montagne. Gagner. Ligne."
+        }
+      },
+      {
+        "page": 4,
+        "total_pages": 4,
+        "content": [
+          "STUMME ENDKONSONANTEN — die meisten",
+          "Konsonanten am Wortende bleiben STUMM:",
+          "",
+          "trop, beaucoup, nez, gros           Drücke 1",
+          "(das p, p, z, s am Ende = stumm)",
+          "",
+          "AUSNAHME — die Buchstaben           Drücke 2",
+          "'CaReFuL' werden am Wortende gesprochen:",
+          "c, r, f, l → avec, professeur, chef,",
+          "animal",
+          "",
+          "BETONUNG: Sie liegt immer auf der LETZTEN",
+          "Silbe des Wortes oder der Wortgruppe —",
+          "viel einfacher als im Deutschen.",
+          "",
+          "Zwei weitere Lauterscheinungen kommen",
+          "später dran: ÉLISION (l'ami) und LIAISON",
+          "(les amis), auf den Karten, die sie brauchen."
+        ],
+        "pronunciation_mappings": {
+          "1": "Trop. Beaucoup. Nez. Gros.",
+          "2": "Avec. Professeur. Chef. Animal."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "002",
+    "trigger_word": "âge",
+    "trigger_card_number": 8,
+    "title": "LEKTION 2: EINE KARTE LESEN",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "Jede französische Karte zeigt den Artikel",
+          "farbig nach Geschlecht — hinschauen,",
+          "nicht raten:",
+          "",
+          "le = männlich (in BLAU)             Drücke 1",
+          "   le nom, le pays, le métier",
+          "",
+          "la = weiblich (in MAGENTA)          Drücke 2",
+          "   la nationalité, la famille",
+          "",
+          "STRATEGIE: Lern ein Substantiv nie allein —",
+          "lern es immer MIT seinem farbigen Artikel.",
+          "Die Farbe ist der schnellste Weg, le und la",
+          "auf einen Blick zu unterscheiden."
+        ],
+        "pronunciation": "Leçon deux",
+        "pronunciation_mappings": {
+          "1": "le nom, le pays, le métier",
+          "2": "la nationalité, la famille"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "ÉLISION — vor einem Vokallaut verlieren",
+          "le/la ihren Vokal und werden zu l':",
+          "",
+          "le âge  →  l'âge                    Drücke 1",
+          "la adresse → l'adresse",
+          "",
+          "Der Apostroph behält die Farbe des",
+          "Geschlechts darunter — l'âge erscheint",
+          "BLAU, l'adresse MAGENTA — du erkennst",
+          "das Geschlecht also weiter auf einen Blick.",
+          "",
+          "Karten markieren das mit Elides: true.",
+          "Elides: false heißt, der Artikel bleibt",
+          "ganz: le héros, la honte (mehr dazu",
+          "später — manche Wörter mit h blockieren",
+          "die élision)."
+        ],
+        "pronunciation_mappings": {
+          "1": "l'âge, l'adresse"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "003",
+    "trigger_word": "madame",
+    "trigger_card_number": 18,
+    "title": "LEKTION 3: TU UND VOUS",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "Französisch hat ZWEI Wörter für 'du/Sie':",
+          "",
+          "TU = vertraut — Freunde, Familie,   Drücke 1",
+          "Kinder, Gleichaltrige",
+          "   Tu es prêt ? (Bist du bereit?)",
+          "",
+          "VOUS = höflich UND Mehrzahl —       Drücke 2",
+          "Fremde, Ältere, Arbeit oder mehr",
+          "als eine Person",
+          "   Vous êtes prêt ? (Sind Sie bereit?)",
+          "",
+          "Du hast vous schon in 's'il vous plaît'",
+          "benutzt — das höfliche 'bitte', wörtlich",
+          "'wenn es Ihnen gefällt'.",
+          "",
+          "VOUS nutzt dieselbe Verbform wie für eine",
+          "GRUPPE — keine neue Konjugation, nur ein",
+          "neuer Gebrauch dafür."
+        ],
+        "pronunciation": "Leçon trois",
+        "pronunciation_mappings": {
+          "1": "tu es prêt",
+          "2": "vous êtes prêt, s'il vous plaît"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "IM ZWEIFEL NIMM VOUS:",
+          "",
+          "vous ist immer die sichere Wahl.    Drücke 1",
+          "Jemand kann dir das Du anbieten:",
+          "'On peut se tutoyer' (Wir können uns duzen)",
+          "",
+          "Sprich Fremde mit Titel an:         Drücke 2",
+          "Bonjour, madame. / Bonjour, monsieur.",
+          "",
+          "Mitten im Gespräch von tu zu vous zu",
+          "wechseln wirkt kalt; vous→tu ist die",
+          "normale Richtung — sie wird angeboten,",
+          "nicht vorausgesetzt."
+        ],
+        "pronunciation_mappings": {
+          "1": "on peut se tutoyer",
+          "2": "bonjour madame, bonjour monsieur"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "004",
+    "trigger_word": "être",
+    "trigger_card_number": 76,
+    "title": "LEKTION 4: PRÄSENS",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "Französische Verben gibt es in 3 Familien:",
+          "-ER (parler)  -IR (finir)  -RE (vendre)",
+          "",
+          "-ER ist die größte Familie — fast jedes",
+          "neue Verb ist -ER. Streich -er, häng an:",
+          "",
+          "je parle            = ich spreche   Drücke 1",
+          "tu parles           = du sprichst",
+          "il/elle parle       = er/sie spricht",
+          "nous parlons        = wir sprechen",
+          "vous parlez         = ihr sprecht (höfl./Pl.)",
+          "ils/elles parlent   = sie sprechen",
+          "",
+          "parle/parles/parle/parlent KLINGEN alle",
+          "gleich — nur nous und vous ändern den",
+          "Klang. Achte auf die Endung."
+        ],
+        "pronunciation": "Leçon quatre",
+        "pronunciation_mappings": {
+          "1": "je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "-IR-Verben (finir = beenden):       Drücke 1",
+          "",
+          "je finis            = ich beende",
+          "tu finis            = du beendest",
+          "il/elle finit       = er/sie beendet",
+          "nous finissons      = wir beenden",
+          "vous finissez       = ihr beendet",
+          "ils/elles finissent = sie beenden",
+          "",
+          "-RE-Verben (vendre = verkaufen):    Drücke 2",
+          "",
+          "je vends            = ich verkaufe",
+          "tu vends            = du verkaufst",
+          "il/elle vend        = er/sie verkauft",
+          "nous vendons        = wir verkaufen",
+          "ils/elles vendent   = sie verkaufen"
+        ],
+        "pronunciation_mappings": {
+          "1": "je finis, tu finis, il finit, nous finissons, vous finissez, ils finissent",
+          "2": "je vends, tu vends, il vend, nous vendons, ils vendent"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "DIE GROSSEN 4 — unregelmäßig und ständig",
+          "im Gebrauch. Lern sie auswendig:",
+          "",
+          "ÊTRE (sein):                        Drücke 1",
+          "suis, es, est, sommes, êtes, sont",
+          "",
+          "AVOIR (haben):                      Drücke 2",
+          "ai, as, a, avons, avez, ont",
+          "",
+          "ALLER (gehen):                      Drücke 3",
+          "vais, vas, va, allons, allez, vont",
+          "",
+          "FAIRE (tun/machen):                 Drücke 4",
+          "fais, fais, fait, faisons, faites, font",
+          "",
+          "Diese vier bauen später auch andere",
+          "Zeiten (futur proche, passé composé)",
+          "— lern sie jetzt richtig."
+        ],
+        "pronunciation_mappings": {
+          "1": "suis, es, est, sommes, êtes, sont",
+          "2": "ai, as, a, avons, avez, ont",
+          "3": "vais, vas, va, allons, allez, vont",
+          "4": "fais, fais, fait, faisons, faites, font"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "005",
+    "trigger_word": "essayer",
+    "trigger_card_number": 99,
+    "title": "LEKTION 5: VERNEINUNG",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "NE...PAS legt sich UM das Verb —",
+          "es ist eine Klammer, kein einzelnes Wort:",
+          "",
+          "Je ne parle pas.                    Drücke 1",
+          "(Ich spreche nicht.)",
+          "",
+          "Je ne suis pas prêt.                Drücke 2",
+          "(Ich bin nicht bereit.)",
+          "",
+          "Im lockeren gesprochenen Französisch",
+          "fällt 'ne' oft weg: 'Je parle pas' —",
+          "im Core schreibst du immer beide Teile.",
+          "",
+          "Vor einem Infinitiv wandern beide Teile",
+          "zusammen direkt davor:              Drücke 3",
+          "Je préfère ne pas essayer.",
+          "(Ich versuche es lieber nicht.)"
+        ],
+        "pronunciation": "Leçon cinq",
+        "pronunciation_mappings": {
+          "1": "je ne parle pas",
+          "2": "je ne suis pas prêt",
+          "3": "je préfère ne pas essayer"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "ANDERE VERNEINUNGEN nutzen dieselbe",
+          "ne...___ Klammer, nur ein anderes Wort:",
+          "",
+          "ne...plus = nicht mehr              Drücke 1",
+          "   Je n'ai plus faim.",
+          "",
+          "ne...jamais = nie                   Drücke 2",
+          "   Je ne mange jamais de viande.",
+          "",
+          "ne...rien = nichts                  Drücke 3",
+          "   Je ne vois rien.",
+          "",
+          "ne...personne = niemand             Drücke 4",
+          "   Je ne connais personne ici.",
+          "",
+          "Achtung: ne wird vor einem Vokallaut",
+          "zu n' — n'ai, n'aime, n'est."
+        ],
+        "pronunciation_mappings": {
+          "1": "je n'ai plus faim",
+          "2": "je ne mange jamais de viande",
+          "3": "je ne vois rien",
+          "4": "je ne connais personne ici"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "006",
+    "trigger_word": "heure",
+    "trigger_card_number": 151,
+    "title": "LEKTION 6: IL Y A & UHRZEIT",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "IL Y A = es gibt — ein einziger",
+          "Ausdruck, er ändert sich weder im",
+          "Singular noch im Plural:",
+          "",
+          "Il y a un problème.                 Drücke 1",
+          "(Es gibt ein Problem.)",
+          "Il y a des livres.                  Drücke 2",
+          "(Es gibt Bücher.)",
+          "",
+          "FRAGE — heb einfach die Stimme,",
+          "oder setz est-ce que davor:",
+          "Il y a un problème ?                Drücke 3",
+          "(Gibt es ein Problem?)",
+          "",
+          "VERNEINUNG — die übliche ne...pas-",
+          "Klammer um das 'a':",
+          "Il n'y a pas de problème.           Drücke 4",
+          "(Es gibt kein Problem.)"
+        ],
+        "pronunciation": "Leçon six",
+        "pronunciation_mappings": {
+          "1": "il y a un problème",
+          "2": "il y a des livres",
+          "3": "il y a un problème ?",
+          "4": "il n'y a pas de problème"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "DIE UHRZEIT bildest du mit il est + heure(s):",
+          "",
+          "Il est une heure.                   Drücke 1",
+          "(Es ist ein Uhr.)",
+          "Il est deux heures.                 Drücke 2",
+          "(Es ist zwei Uhr.)",
+          "",
+          "'Une heure' ist Singular, also ohne s.",
+          "Ab deux heures bekommt heure ein -s.",
+          "",
+          "Il est midi. / Il est minuit.       Drücke 3",
+          "(Es ist Mittag. / Es ist Mitternacht.)",
+          "",
+          "Il est deux heures dix.             Drücke 4",
+          "(2:10)",
+          "Il est trois heures moins dix.      Drücke 5",
+          "(2:50)"
+        ],
+        "pronunciation_mappings": {
+          "1": "il est une heure",
+          "2": "il est deux heures",
+          "3": "il est midi, il est minuit",
+          "4": "il est deux heures dix",
+          "5": "il est trois heures moins dix"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "LIAISON — ein stummer Endkonsonant",
+          "erwacht vor dem nächsten Vokal:",
+          "",
+          "deux heures → deux_heures [z]       Drücke 1",
+          "trois heures → trois_heures [z]     Drücke 2",
+          "six heures → six_heures [z]         Drücke 3",
+          "dix heures → dix_heures [z]         Drücke 4",
+          "",
+          "Nicht nur bei Zahlen:",
+          "",
+          "un an → un_an [n]                   Drücke 5",
+          "les amis → les_amis [z]             Drücke 6",
+          "très utile → très_utile [z]         Drücke 7",
+          "",
+          "Lektion 8 nimmt die Liaison ganz durch."
+        ],
+        "pronunciation_mappings": {
+          "1": "deux heures",
+          "2": "trois heures",
+          "3": "six heures",
+          "4": "dix heures",
+          "5": "un an",
+          "6": "les amis",
+          "7": "très utile"
+        }
+      }
+    ]
+  }
+]

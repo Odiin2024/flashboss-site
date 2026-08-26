@@ -1,0 +1,511 @@
+[
+  {
+    "lesson_id": "001",
+    "trigger_word": "bonjour",
+    "trigger_card_number": 1,
+    "title": "第1課：フランス語の発音",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 4,
+        "content": [
+          "Bienvenue!フランス語はつづりが難しく",
+          "見えますが、音の規則はとても一貫しています。",
+          "",
+          "a =「ア」の音。口を大きく開く     1を押す",
+          "   la, ça, table",
+          "",
+          "é = 口を狭めた鋭い「エ」          2を押す",
+          "   café, été, désolé",
+          "",
+          "è/ê = 口を開いたやわらかい「エ」  3を押す",
+          "   mère, père, être",
+          "",
+          "i =「イ」の音。日本語のイと同じ   4を押す",
+          "   ici, midi, merci",
+          "",
+          "o/ô =「オ」の音。唇を丸く         5を押す",
+          "   mot, vélo, hôtel"
+        ],
+        "pronunciation": "Leçon un",
+        "pronunciation_mappings": {
+          "1": "La. Ça. Table.",
+          "2": "Café. Été. Désolé.",
+          "3": "Mère. Père. Être.",
+          "4": "Ici. Midi. Merci.",
+          "5": "Mot. Vélo. Hôtel."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 4,
+        "content": [
+          "鼻母音:息を鼻から抜き、母音を言ったら",
+          "n/m は最後まで発音しません:",
+          "",
+          "an/en = 鼻にかけた「ア」          1を押す",
+          "   France, enfant, dans",
+          "",
+          "in/ain/ein = 鼻にかけた「エ」     2を押す",
+          "   vin, pain, main",
+          "",
+          "on = 鼻にかけた「オ」             3を押す",
+          "   bon, maison, non",
+          "",
+          "un = 鼻にかけた「ア」             4を押す",
+          "   多くの話者は in と同じ音になります",
+          "   un, lundi, parfum",
+          "",
+          "規則:母音の後の n/m はふつう発音せず、",
+          "その母音を鼻音化するだけです。"
+        ],
+        "pronunciation_mappings": {
+          "1": "France. Enfant. Dans.",
+          "2": "Vin. Pain. Main.",
+          "3": "Bon. Maison. Non.",
+          "4": "Un. Lundi. Parfum."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 4,
+        "content": [
+          "英語とちがう読み方をする子音:",
+          "",
+          "h = つねに無音。読みません        1を押す",
+          "   habiter, homme, heure",
+          "",
+          "c + e/i/y =「ス」の音             2を押す",
+          "   ici, cinéma, merci",
+          "c + a/o/u =「ク」の音             3を押す",
+          "   café, comme, cousin",
+          "ç = どの母音の前でも「ス」の音    4を押す",
+          "   ça, français, garçon",
+          "",
+          "g + e/i/y = 濁った「ジュ」の音    5を押す",
+          "   âge, manger, gilet",
+          "g + a/o/u = 硬い「グ」の音        6を押す",
+          "   gauche, gomme, légume",
+          "gn =「ニャ行」の子音              7を押す",
+          "   montagne, gagner, ligne"
+        ],
+        "pronunciation_mappings": {
+          "1": "Habiter. Homme. Heure.",
+          "2": "Ici. Cinéma. Merci.",
+          "3": "Café. Comme. Cousin.",
+          "4": "Ça. Français. Garçon.",
+          "5": "Âge. Manger. Gilet.",
+          "6": "Gauche. Gomme. Légume.",
+          "7": "Montagne. Gagner. Ligne."
+        }
+      },
+      {
+        "page": 4,
+        "total_pages": 4,
+        "content": [
+          "語末の子音は無音です。語の最後の子音は",
+          "ほとんど発音しません:",
+          "",
+          "trop, beaucoup, nez, gros         1を押す",
+          "(語末の p, p, z, s は読まない)",
+          "",
+          "例外:「CaReFuL」の文字は          2を押す",
+          "語末でも発音します:",
+          "c, r, f, l → avec, professeur, chef,",
+          "animal",
+          "",
+          "アクセント:つねに語や句の最後の音節に",
+          "置かれます。スペイン語や英語より",
+          "ずっと単純です。",
+          "",
+          "あと2つの音は後の課で学びます:",
+          "エリジオン(l'ami)とリエゾン(les amis)。",
+          "必要なカードで説明します。"
+        ],
+        "pronunciation_mappings": {
+          "1": "Trop. Beaucoup. Nez. Gros.",
+          "2": "Avec. Professeur. Chef. Animal."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "002",
+    "trigger_word": "âge",
+    "trigger_card_number": 8,
+    "title": "第2課：カードの読み方",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "フランス語のカードでは、冠詞が性ごとに",
+          "色分けされています。推測せず、色を",
+          "見てください:",
+          "",
+          "le = 男性名詞(青で表示)           1を押す",
+          "   le nom, le pays, le métier",
+          "",
+          "la = 女性名詞(マゼンタで表示)     2を押す",
+          "   la nationalité, la famille",
+          "",
+          "コツ:名詞だけで覚えないこと。",
+          "かならず色つきの冠詞といっしょに",
+          "覚えます。色は le か la かを一目で",
+          "見分ける、いちばん速い手がかりです。"
+        ],
+        "pronunciation": "Leçon deux",
+        "pronunciation_mappings": {
+          "1": "le nom, le pays, le métier",
+          "2": "la nationalité, la famille"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "エリジオン:母音の音の前では le/la は",
+          "母音を落として l' になります:",
+          "",
+          "le âge  →  l'âge                  1を押す",
+          "la adresse → l'adresse",
+          "",
+          "アポストロフィの下でも性の色は",
+          "残ります。l'âge は青、l'adresse は",
+          "マゼンタで表示されるので、性は",
+          "やはり一目でわかります。",
+          "",
+          "カードでは Elides: true と示されます。",
+          "Elides: false なら冠詞はそのままです:",
+          "le héros, la honte",
+          "(くわしくは後の課で。h で始まる語の",
+          "一部はエリジオンを妨げます)"
+        ],
+        "pronunciation_mappings": {
+          "1": "l'âge, l'adresse"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "003",
+    "trigger_word": "madame",
+    "trigger_card_number": 18,
+    "title": "第3課：tu と vous",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "フランス語には「あなた」が2つあります:",
+          "",
+          "tu = 親しい相手に。友人・家族・   1を押す",
+          "子ども・同年代の人",
+          "   Tu es prêt ?(準備はいい?)",
+          "",
+          "vous = ていねい、かつ複数形。     2を押す",
+          "初対面の人・目上の人・仕事相手、",
+          "または2人以上",
+          "   Vous êtes prêt ?(準備はいいですか?)",
+          "",
+          "s'il vous plaît にもう vous が入って",
+          "います。ていねいな「お願いします」で、",
+          "もとは「あなたが良ければ」の意味です。",
+          "",
+          "vous は複数の相手に使う動詞の形を",
+          "そのまま使います。新しい活用を覚える",
+          "必要はなく、使い道が増えるだけです。"
+        ],
+        "pronunciation": "Leçon trois",
+        "pronunciation_mappings": {
+          "1": "tu es prêt",
+          "2": "vous êtes prêt, s'il vous plaît"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "迷ったら vous を使いましょう:",
+          "",
+          "vous で始めればいつでも安全です。 1を押す",
+          "相手のほうから切りかえを誘うことも:",
+          "「On peut se tutoyer」(tu で話そう)",
+          "",
+          "知らない人には敬称をつけて:       2を押す",
+          "Bonjour, madame. / Bonjour, monsieur.",
+          "",
+          "会話の途中で tu→vous に変えると",
+          "冷たく響くことがあります。ふつうは",
+          "vous→tu の向きで、たいていは相手から",
+          "誘われてから変えます。"
+        ],
+        "pronunciation_mappings": {
+          "1": "on peut se tutoyer",
+          "2": "bonjour madame, bonjour monsieur"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "004",
+    "trigger_word": "être",
+    "trigger_card_number": 76,
+    "title": "第4課：動詞の現在形",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "フランス語の動詞は3つのグループ:",
+          "-ER(parler)  -IR(finir)  -RE(vendre)",
+          "",
+          "-ER が最大のグループで、新しい動詞は",
+          "ほとんど -ER です。-er を取って付けます:",
+          "",
+          "je parle          = わたしは話す  1を押す",
+          "tu parles         = 君は話す",
+          "il/elle parle     = 彼/彼女は話す",
+          "nous parlons      = わたしたちは話す",
+          "vous parlez       = あなた(方)は話す",
+          "ils/elles parlent = 彼らは話す",
+          "",
+          "parle/parles/parle/parlent の音は",
+          "すべて同じです。nous と vous だけが音を",
+          "変えます。語尾をよく聞きましょう。"
+        ],
+        "pronunciation": "Leçon quatre",
+        "pronunciation_mappings": {
+          "1": "je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "-IR 型の動詞(finir = 終える):     1を押す",
+          "",
+          "je finis            = わたしは終える",
+          "tu finis            = 君は終える",
+          "il/elle finit       = 彼/彼女は終える",
+          "nous finissons      = わたしたちは終える",
+          "vous finissez       = あなた(方)は終える",
+          "ils/elles finissent = 彼らは終える",
+          "",
+          "-RE 型の動詞(vendre = 売る):      2を押す",
+          "",
+          "je vends            = わたしは売る",
+          "tu vends            = 君は売る",
+          "il/elle vend        = 彼/彼女は売る",
+          "nous vendons        = わたしたちは売る",
+          "ils/elles vendent   = 彼らは売る"
+        ],
+        "pronunciation_mappings": {
+          "1": "je finis, tu finis, il finit, nous finissons, vous finissez, ils finissent",
+          "2": "je vends, tu vends, il vend, nous vendons, ils vendent"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "最重要の4つ。不規則ですが、",
+          "使う頻度は最高です。完全に覚えましょう:",
+          "",
+          "ÊTRE(である):                     1を押す",
+          "suis, es, est, sommes, êtes, sont",
+          "",
+          "AVOIR(持つ):                      2を押す",
+          "ai, as, a, avons, avez, ont",
+          "",
+          "ALLER(行く):                      3を押す",
+          "vais, vas, va, allons, allez, vont",
+          "",
+          "FAIRE(する・作る):                4を押す",
+          "fais, fais, fait, faisons, faites, font",
+          "",
+          "この4つは後で他の時制も作ります",
+          "(futur proche, passé composé)。",
+          "今のうちにしっかり覚えましょう。"
+        ],
+        "pronunciation_mappings": {
+          "1": "suis, es, est, sommes, êtes, sont",
+          "2": "ai, as, a, avons, avez, ont",
+          "3": "vais, vas, va, allons, allez, vont",
+          "4": "fais, fais, fait, faisons, faites, font"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "005",
+    "trigger_word": "essayer",
+    "trigger_card_number": 99,
+    "title": "第5課：否定",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "ne...pas は動詞をはさみこみます。",
+          "1語ではなく、サンドイッチです:",
+          "",
+          "Je ne parle pas.                  1を押す",
+          "(わたしは話しません)",
+          "",
+          "Je ne suis pas prêt.              2を押す",
+          "(準備ができていません)",
+          "",
+          "くだけた話し言葉では ne はよく",
+          "落とされます(Je parle pas)。でも",
+          "Core では両方とも書きましょう。",
+          "",
+          "不定詞を否定するときは、2語がそろって",
+          "その直前に移ります:               3を押す",
+          "Je préfère ne pas essayer.",
+          "(試さないほうを選びます)"
+        ],
+        "pronunciation": "Leçon cinq",
+        "pronunciation_mappings": {
+          "1": "je ne parle pas",
+          "2": "je ne suis pas prêt",
+          "3": "je préfère ne pas essayer"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "ほかの否定も同じ ne...___ の",
+          "はさみこみで、間の語が変わるだけです:",
+          "",
+          "ne...plus = もう〜ない            1を押す",
+          "   Je n'ai plus faim.",
+          "",
+          "ne...jamais = 決して〜ない        2を押す",
+          "   Je ne mange jamais de viande.",
+          "",
+          "ne...rien = 何も〜ない            3を押す",
+          "   Je ne vois rien.",
+          "",
+          "ne...personne = 誰も〜ない        4を押す",
+          "   Je ne connais personne ici.",
+          "",
+          "注意:母音の音の前では ne は n' に",
+          "エリジオンします(n'ai, n'aime, n'est)。"
+        ],
+        "pronunciation_mappings": {
+          "1": "je n'ai plus faim",
+          "2": "je ne mange jamais de viande",
+          "3": "je ne vois rien",
+          "4": "je ne connais personne ici"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "006",
+    "trigger_word": "heure",
+    "trigger_card_number": 151,
+    "title": "第6課：il y a と時刻の言い方",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "il y a =「〜がある/いる」。この1つの",
+          "形だけで、単数でも複数でも",
+          "変わりません:",
+          "",
+          "Il y a un problème.               1を押す",
+          "(問題があります)",
+          "Il y a des livres.                2を押す",
+          "(本があります)",
+          "",
+          "疑問文:語尾を上げるだけ、",
+          "または est-ce que を付けます:",
+          "Il y a un problème ?              3を押す",
+          "(問題がありますか?)",
+          "",
+          "否定文:いつもの ne...pas のはさみこみで",
+          "a をはさみます:",
+          "Il n'y a pas de problème.         4を押す",
+          "(問題はありません)"
+        ],
+        "pronunciation": "Leçon six",
+        "pronunciation_mappings": {
+          "1": "il y a un problème",
+          "2": "il y a des livres",
+          "3": "il y a un problème ?",
+          "4": "il n'y a pas de problème"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "時刻は il est + heure(s) で表します:",
+          "",
+          "Il est une heure.                 1を押す",
+          "(1時です)",
+          "Il est deux heures.               2を押す",
+          "(2時です)",
+          "",
+          "une heure は単数なので s は付きません。",
+          "deux heures から heure に -s が付きます。",
+          "",
+          "Il est midi. / Il est minuit.     3を押す",
+          "(正午です/午前0時です)",
+          "",
+          "Il est deux heures dix.           4を押す",
+          "(2:10)",
+          "Il est trois heures moins dix.    5を押す",
+          "(2:50)"
+        ],
+        "pronunciation_mappings": {
+          "1": "il est une heure",
+          "2": "il est deux heures",
+          "3": "il est midi, il est minuit",
+          "4": "il est deux heures dix",
+          "5": "il est trois heures moins dix"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "リエゾン:語末の読まない子音が、",
+          "次の母音の前で目を覚まします:",
+          "",
+          "deux heures → deux_heures [z]     1を押す",
+          "trois heures → trois_heures [z]   2を押す",
+          "six heures → six_heures [z]       3を押す",
+          "dix heures → dix_heures [z]       4を押す",
+          "",
+          "数詞以外でも同じです:",
+          "",
+          "un an → un_an [n]                 5を押す",
+          "les amis → les_amis [z]           6を押す",
+          "très utile → très_utile [z]       7を押す",
+          "",
+          "第8課でリエゾンを本格的に扱います。"
+        ],
+        "pronunciation_mappings": {
+          "1": "deux heures",
+          "2": "trois heures",
+          "3": "six heures",
+          "4": "dix heures",
+          "5": "un an",
+          "6": "les amis",
+          "7": "très utile"
+        }
+      }
+    ]
+  }
+]

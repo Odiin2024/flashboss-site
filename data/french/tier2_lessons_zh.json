@@ -1,0 +1,172 @@
+[
+  {
+    "lesson_id": "007",
+    "trigger_word": "parler",
+    "trigger_card_number": 201,
+    "title": "第7课：命令式",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "命令式（L'IMPÉRATIF）用于发出指令——",
+          "只需从现在时中去掉主语人称代词。",
+          "共有三种形式：tu、nous、vous。",
+          "",
+          "-ER 动词在 tu 形式中去掉词尾 -s：   按 1",
+          "tu parles  → Parle !  （说！）",
+          "nous parlons → Parlons !  （咱们说吧！）",
+          "vous parlez → Parlez !  （请说！）",
+          "",
+          "-IR / -RE 动词保留词尾 -s：            按 2",
+          "tu finis → Finis !  （完成！）",
+          "tu vends → Vends !  （卖！）"
+        ],
+        "pronunciation": "Leçon sept",
+        "pronunciation_mappings": {
+          "1": "parle, parlons, parlez",
+          "2": "finis, vends"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "需牢记四个不规则命令式——",
+          "它们不能简单地去掉人称代词：",
+          "",
+          "ÊTRE：                                按 1",
+          "sois, soyons, soyez",
+          "",
+          "AVOIR：                               按 2",
+          "aie, ayons, ayez",
+          "",
+          "SAVOIR：                              按 3",
+          "sache, sachons, sachez",
+          "",
+          "ALLER：                               按 4",
+          "va, allons, allez",
+          "",
+          "Ferme la porte ! （关上门！）",
+          "Écoute ! （听！）"
+        ],
+        "pronunciation_mappings": {
+          "1": "sois, soyons, soyez",
+          "2": "aie, ayons, ayez",
+          "3": "sache, sachons, sachez",
+          "4": "va, allons, allez"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "008",
+    "trigger_word": "hôtel",
+    "trigger_card_number": 232,
+    "title": "第8课：联诵与省音",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "更多省音练习 —— 哑音h单词",
+          "完全按元音规则省音：",
+          "",
+          "le école → l'école                   按 1",
+          "（h不发音，因此école",
+          "以元音音素开头，触发省音）",
+          "",
+          "le hôpital → l'hôpital               按 2",
+          "le hôtel → l'hôtel                   按 3",
+          "",
+          "联诵亦然：aux hôtels              按 4",
+          "→ aux_hôtels [z] — aux词尾的",
+          "哑音x在hôtel的元音音素前",
+          "发[z]音。"
+        ],
+        "pronunciation": "Leçon huit",
+        "pronunciation_mappings": {
+          "1": "l'école",
+          "2": "l'hôpital",
+          "3": "l'hôtel",
+          "4": "aux hôtels"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "009",
+    "trigger_word": "commander",
+    "trigger_card_number": 256,
+    "title": "第9课：最近将来时",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "最近将来时（FUTUR PROCHE）——",
+          "谈论未来最简单的方式，",
+          "就像英语中的 'going to'：",
+          "",
+          "aller（现在时）+ 动词原形：",
+          "",
+          "Je vais commander.                   按 1",
+          "（我要点单了。）",
+          "Tu vas payer.                        按 2",
+          "（你要付钱了。）",
+          "Nous allons acheter des légumes.     按 3",
+          "（我们要去买蔬菜了。）",
+          "",
+          "否定形式 —— ne...pas 只包围",
+          "'aller' 本身：",
+          "Je ne vais pas commander.            按 4",
+          "（我不打算点单。）"
+        ],
+        "pronunciation": "Leçon neuf",
+        "pronunciation_mappings": {
+          "1": "je vais commander",
+          "2": "tu vas payer",
+          "3": "nous allons acheter des légumes",
+          "4": "je ne vais pas commander"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "010",
+    "trigger_word": "fermer",
+    "trigger_card_number": 208,
+    "title": "第10课：复合过去时入门",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "复合过去时（PASSÉ COMPOSÉ）——一种由",
+          "两部分构成的过去时态：avoir（现在时）＋过去",
+          "分词。现阶段，只需识别即可：",
+          "",
+          "-ER 动词 → 过去分词以 -é 结尾：       按 1",
+          "fermer → fermé",
+          "j'ai fermé = 我关上了",
+          "",
+          "il a parlé = 他讲了                 按 2",
+          "nous avons mangé = 我们吃了",
+          "",
+          "结构规律：avoir ＋ [动词]-é。你将在",
+          "第三层级接触到 -ir/-re 动词的分词，",
+          "以及 avoir/être 的用法区分。"
+        ],
+        "pronunciation": "Leçon dix",
+        "pronunciation_mappings": {
+          "1": "j'ai fermé",
+          "2": "il a parlé, nous avons mangé"
+        }
+      }
+    ]
+  }
+]

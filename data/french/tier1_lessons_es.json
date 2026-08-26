@@ -1,0 +1,510 @@
+[
+  {
+    "lesson_id": "001",
+    "trigger_word": "bonjour",
+    "trigger_card_number": 1,
+    "title": "LECCIÓN 1: PRONUNCIACIÓN FRANCESA",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 4,
+        "content": [
+          "Bienvenue! La ortografía francesa parece",
+          "difícil, pero los sonidos son muy regulares.",
+          "",
+          "a = 'a' como en casa               Presiona 1",
+          "   la, ça, table",
+          "",
+          "é = 'e' cerrada y tensa            Presiona 2",
+          "   café, été, désolé",
+          "",
+          "è/ê = 'e' abierta y más suave      Presiona 3",
+          "   mère, père, être",
+          "",
+          "i = 'i' como en mí                 Presiona 4",
+          "   ici, midi, merci",
+          "",
+          "o/ô = 'o' como en todo             Presiona 5",
+          "   mot, vélo, hôtel"
+        ],
+        "pronunciation": "Leçon un",
+        "pronunciation_mappings": {
+          "1": "La. Ça. Table.",
+          "2": "Café. Été. Désolé.",
+          "3": "Mère. Père. Être.",
+          "4": "Ici. Midi. Merci.",
+          "5": "Mot. Vélo. Hôtel."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 4,
+        "content": [
+          "VOCALES NASALES — el aire sale por la nariz:",
+          "di la vocal, pero no cierres la n/m:",
+          "",
+          "an/en = 'a' nasal                  Presiona 1",
+          "   France, enfant, dans",
+          "",
+          "in/ain/ein = 'e' nasal             Presiona 2",
+          "   vin, pain, main",
+          "",
+          "on = 'o' nasal                     Presiona 3",
+          "   bon, maison, non",
+          "",
+          "un = 'u' nasal (se funde con       Presiona 4",
+          "'in' para mucha gente)",
+          "   un, lundi, parfum",
+          "",
+          "REGLA: tras una vocal, la n/m casi nunca",
+          "se pronuncia — solo nasaliza la vocal."
+        ],
+        "pronunciation_mappings": {
+          "1": "France. Enfant. Dans.",
+          "2": "Vin. Pain. Main.",
+          "3": "Bon. Maison. Non.",
+          "4": "Un. Lundi. Parfum."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 4,
+        "content": [
+          "CONSONANTES que difieren del español:",
+          "",
+          "h = siempre MUDA                   Presiona 1",
+          "   habiter, homme, heure",
+          "",
+          "c ante e/i/y = 's' suave           Presiona 2",
+          "   ici, cinéma, merci",
+          "c ante a/o/u = 'k' fuerte          Presiona 3",
+          "   café, comme, cousin",
+          "ç = 's' suave ante toda vocal      Presiona 4",
+          "   ça, français, garçon",
+          "",
+          "g ante e/i/y = suave (como 'zh')   Presiona 5",
+          "   âge, manger, gilet",
+          "g ante a/o/u = 'g' de 'gato'       Presiona 6",
+          "   gauche, gomme, légume",
+          "gn = como la 'ñ' de 'año'          Presiona 7",
+          "   montagne, gagner, ligne"
+        ],
+        "pronunciation_mappings": {
+          "1": "Habiter. Homme. Heure.",
+          "2": "Ici. Cinéma. Merci.",
+          "3": "Café. Comme. Cousin.",
+          "4": "Ça. Français. Garçon.",
+          "5": "Âge. Manger. Gilet.",
+          "6": "Gauche. Gomme. Légume.",
+          "7": "Montagne. Gagner. Ligne."
+        }
+      },
+      {
+        "page": 4,
+        "total_pages": 4,
+        "content": [
+          "CONSONANTES FINALES MUDAS — casi ninguna",
+          "consonante al final de palabra se pronuncia:",
+          "",
+          "trop, beaucoup, nez, gros          Presiona 1",
+          "(la p, la p, la z y la s finales son mudas)",
+          "",
+          "EXCEPCIÓN — las letras 'CaReFuL'   Presiona 2",
+          "SÍ se pronuncian al final de la palabra:",
+          "c, r, f, l → avec, professeur, chef, animal",
+          "",
+          "ACENTO: siempre cae en la ÚLTIMA sílaba",
+          "de la palabra o de la frase — mucho más",
+          "simple que en español o en inglés.",
+          "",
+          "Otros dos sonidos tienen su propia lección",
+          "más adelante: la ÉLISION (l'ami) y la",
+          "LIAISON (les amis), en las tarjetas que las",
+          "necesitan."
+        ],
+        "pronunciation_mappings": {
+          "1": "Trop. Beaucoup. Nez. Gros.",
+          "2": "Avec. Professeur. Chef. Animal."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "002",
+    "trigger_word": "âge",
+    "trigger_card_number": 8,
+    "title": "LECCIÓN 2: LEER UNA TARJETA",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "Cada tarjeta francesa muestra el artículo",
+          "con un color según el género — míralo,",
+          "no lo adivines:",
+          "",
+          "le = masculino (en AZUL)           Presiona 1",
+          "   le nom, le pays, le métier",
+          "",
+          "la = femenino (en MAGENTA)         Presiona 2",
+          "   la nationalité, la famille",
+          "",
+          "ESTRATEGIA: nunca aprendas un sustantivo",
+          "solo — apréndelo SIEMPRE con su artículo",
+          "de color. El color es la forma más rápida",
+          "de saber le o la de un vistazo."
+        ],
+        "pronunciation": "Leçon deux",
+        "pronunciation_mappings": {
+          "1": "le nom, le pays, le métier",
+          "2": "la nationalité, la famille"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "ÉLISION — ante un sonido vocálico, le/la",
+          "pierden su vocal y se vuelven l':",
+          "",
+          "le âge  →  l'âge                   Presiona 1",
+          "la adresse → l'adresse",
+          "",
+          "El apóstrofo conserva debajo el color del",
+          "género — l'âge se ve AZUL y l'adresse se",
+          "ve MAGENTA — así sigues sabiendo el género",
+          "de un vistazo.",
+          "",
+          "Las tarjetas lo marcan con Elides: true.",
+          "Elides: false significa que el artículo",
+          "queda entero: le héros, la honte",
+          "(más sobre eso luego — algunas palabras",
+          "que empiezan con h bloquean la élision)."
+        ],
+        "pronunciation_mappings": {
+          "1": "l'âge, l'adresse"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "003",
+    "trigger_word": "madame",
+    "trigger_card_number": 18,
+    "title": "LECCIÓN 3: TU VS VOUS",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "El francés tiene DOS palabras para 'tú':",
+          "",
+          "TU = informal — amigos, familia,   Presiona 1",
+          "niños, gente de tu edad",
+          "   Tu es prêt ? (¿Estás listo?)",
+          "",
+          "VOUS = formal Y plural —           Presiona 2",
+          "desconocidos, mayores, el trabajo,",
+          "o más de una persona",
+          "   Vous êtes prêt ? (¿Está listo?)",
+          "",
+          "Ya usaste vous en 's'il vous plaît': el",
+          "'por favor' formal, que en realidad dice",
+          "'si a usted le place'.",
+          "",
+          "VOUS reutiliza la forma verbal que usarías",
+          "para un GRUPO — no hay conjugación nueva",
+          "que aprender, solo un uso nuevo para ella."
+        ],
+        "pronunciation": "Leçon trois",
+        "pronunciation_mappings": {
+          "1": "tu es prêt",
+          "2": "vous êtes prêt, s'il vous plaît"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "ANTE LA DUDA, USA VOUS:",
+          "",
+          "Empezar con vous siempre va bien.  Presiona 1",
+          "Puede que te inviten a cambiar:",
+          "'On peut se tutoyer' (Podemos tutearnos)",
+          "",
+          "Usa un título con desconocidos:    Presiona 2",
+          "Bonjour, madame. / Bonjour, monsieur.",
+          "",
+          "Pasar de tu a vous a media conversación",
+          "puede sonar frío; de vous a tu es la",
+          "dirección normal, y casi siempre se ofrece,",
+          "no se da por hecho."
+        ],
+        "pronunciation_mappings": {
+          "1": "on peut se tutoyer",
+          "2": "bonjour madame, bonjour monsieur"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "004",
+    "trigger_word": "être",
+    "trigger_card_number": 76,
+    "title": "LECCIÓN 4: EL PRESENTE",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "Los verbos franceses vienen en 3 familias:",
+          "-ER (parler)  -IR (finir)  -RE (vendre)",
+          "",
+          "-ER es la familia más grande — casi todo",
+          "verbo nuevo es -ER. Quita -er y agrega:",
+          "",
+          "je parle            = yo hablo     Presiona 1",
+          "tu parles           = tú hablas",
+          "il/elle parle       = él/ella habla",
+          "nous parlons        = nosotros hablamos",
+          "vous parlez         = usted(es) habla(n)",
+          "ils/elles parlent   = ellos/ellas hablan",
+          "",
+          "parle/parles/parle/parlent SUENAN todas",
+          "igual — solo nous y vous cambian el sonido.",
+          "Escucha la terminación."
+        ],
+        "pronunciation": "Leçon quatre",
+        "pronunciation_mappings": {
+          "1": "je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "Verbos -IR (finir = terminar):     Presiona 1",
+          "",
+          "je finis            = yo termino",
+          "tu finis            = tú terminas",
+          "il/elle finit       = él/ella termina",
+          "nous finissons      = nosotros terminamos",
+          "vous finissez       = usted(es) termina(n)",
+          "ils/elles finissent = ellos terminan",
+          "",
+          "Verbos -RE (vendre = vender):      Presiona 2",
+          "",
+          "je vends            = yo vendo",
+          "tu vends            = tú vendes",
+          "il/elle vend        = él/ella vende",
+          "nous vendons        = nosotros vendemos",
+          "ils/elles vendent   = ellos venden"
+        ],
+        "pronunciation_mappings": {
+          "1": "je finis, tu finis, il finit, nous finissons, vous finissez, ils finissent",
+          "2": "je vends, tu vends, il vend, nous vendons, ils vendent"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "LOS 4 GRANDES — irregulares y de uso",
+          "constante. Apréndetelos de memoria:",
+          "",
+          "ÊTRE (ser/estar):                  Presiona 1",
+          "suis, es, est, sommes, êtes, sont",
+          "",
+          "AVOIR (tener/haber):               Presiona 2",
+          "ai, as, a, avons, avez, ont",
+          "",
+          "ALLER (ir):                        Presiona 3",
+          "vais, vas, va, allons, allez, vont",
+          "",
+          "FAIRE (hacer):                     Presiona 4",
+          "fais, fais, fait, faisons, faites, font",
+          "",
+          "Estos cuatro también arman otros tiempos",
+          "más adelante (futur proche, passé composé)",
+          "— apréndelos bien desde ya."
+        ],
+        "pronunciation_mappings": {
+          "1": "suis, es, est, sommes, êtes, sont",
+          "2": "ai, as, a, avons, avez, ont",
+          "3": "vais, vas, va, allons, allez, vont",
+          "4": "fais, fais, fait, faisons, faites, font"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "005",
+    "trigger_word": "essayer",
+    "trigger_card_number": 99,
+    "title": "LECCIÓN 5: LA NEGACIÓN",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "NE...PAS envuelve al verbo — es un",
+          "sándwich, no una sola palabra:",
+          "",
+          "Je ne parle pas.                   Presiona 1",
+          "(No hablo. / No estoy hablando.)",
+          "",
+          "Je ne suis pas prêt.               Presiona 2",
+          "(No estoy listo.)",
+          "",
+          "En el francés hablado informal se suele",
+          "soltar el 'ne': 'Je parle pas' — pero en",
+          "Core escribe siempre las dos partes.",
+          "",
+          "Con un infinitivo, las dos piezas se mueven",
+          "juntas, justo antes de él:         Presiona 3",
+          "Je préfère ne pas essayer.",
+          "(Prefiero no intentarlo.)"
+        ],
+        "pronunciation": "Leçon cinq",
+        "pronunciation_mappings": {
+          "1": "je ne parle pas",
+          "2": "je ne suis pas prêt",
+          "3": "je préfère ne pas essayer"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "OTRAS NEGACIONES usan el mismo sándwich",
+          "ne...___, con otra palabra adentro:",
+          "",
+          "ne...plus = ya no / no más         Presiona 1",
+          "   Je n'ai plus faim.",
+          "",
+          "ne...jamais = nunca                Presiona 2",
+          "   Je ne mange jamais de viande.",
+          "",
+          "ne...rien = nada                   Presiona 3",
+          "   Je ne vois rien.",
+          "",
+          "ne...personne = nadie              Presiona 4",
+          "   Je ne connais personne ici.",
+          "",
+          "Fíjate: ne se elide en n' ante un sonido",
+          "vocálico — n'ai, n'aime, n'est."
+        ],
+        "pronunciation_mappings": {
+          "1": "je n'ai plus faim",
+          "2": "je ne mange jamais de viande",
+          "3": "je ne vois rien",
+          "4": "je ne connais personne ici"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "006",
+    "trigger_word": "heure",
+    "trigger_card_number": 151,
+    "title": "LECCIÓN 6: IL Y A Y LA HORA",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "IL Y A = hay — una sola frase, no cambia",
+          "entre singular y plural:",
+          "",
+          "Il y a un problème.                Presiona 1",
+          "(Hay un problema.)",
+          "Il y a des livres.                 Presiona 2",
+          "(Hay libros.)",
+          "",
+          "PREGUNTA — solo sube el tono",
+          "o agrega est-ce que:",
+          "Il y a un problème ?               Presiona 3",
+          "(¿Hay un problema?)",
+          "",
+          "NEGATIVO — el sándwich ne...pas de siempre",
+          "alrededor de 'a':",
+          "Il n'y a pas de problème.          Presiona 4",
+          "(No hay ningún problema.)"
+        ],
+        "pronunciation": "Leçon six",
+        "pronunciation_mappings": {
+          "1": "il y a un problème",
+          "2": "il y a des livres",
+          "3": "il y a un problème ?",
+          "4": "il n'y a pas de problème"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "LA HORA se dice con il est + heure(s):",
+          "",
+          "Il est une heure.                  Presiona 1",
+          "(Es la una.)",
+          "Il est deux heures.                Presiona 2",
+          "(Son las dos.)",
+          "",
+          "'Une heure' es singular, así que no lleva s.",
+          "Desde deux heures, heure toma la -s.",
+          "",
+          "Il est midi. / Il est minuit.      Presiona 3",
+          "(Es mediodía. / Es medianoche.)",
+          "",
+          "Il est deux heures dix.            Presiona 4",
+          "(2:10)",
+          "Il est trois heures moins dix.     Presiona 5",
+          "(2:50)"
+        ],
+        "pronunciation_mappings": {
+          "1": "il est une heure",
+          "2": "il est deux heures",
+          "3": "il est midi, il est minuit",
+          "4": "il est deux heures dix",
+          "5": "il est trois heures moins dix"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "LIAISON — una consonante final muda",
+          "despierta ante la vocal siguiente:",
+          "",
+          "deux heures → deux_heures [z]      Presiona 1",
+          "trois heures → trois_heures [z]    Presiona 2",
+          "six heures → six_heures [z]        Presiona 3",
+          "dix heures → dix_heures [z]        Presiona 4",
+          "",
+          "No solo con números:",
+          "",
+          "un an → un_an [n]                  Presiona 5",
+          "les amis → les_amis [z]            Presiona 6",
+          "très utile → très_utile [z]        Presiona 7",
+          "",
+          "La lección 8 retoma la liaison a fondo."
+        ],
+        "pronunciation_mappings": {
+          "1": "deux heures",
+          "2": "trois heures",
+          "3": "six heures",
+          "4": "dix heures",
+          "5": "un an",
+          "6": "les amis",
+          "7": "très utile"
+        }
+      }
+    ]
+  }
+]
