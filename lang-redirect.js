@@ -33,15 +33,15 @@
     'latin-roots':    ['de', 'es', 'ja'],
     'french':         ['de', 'es', 'ja'],
     'toki-pona':      ['de', 'es', 'ja'],
-    'german-roots':   ['de', 'es'],
-    'norman-roots':   ['de', 'es'],
-    'german':         ['de', 'es'],
-    'spanish':        ['de', 'es'],
-    'italian':        ['de', 'es'],
-    'esperanto':      ['de', 'es'],
+    'german-roots':   ['de', 'es', 'ja'],
+    'norman-roots':   ['de', 'es', 'ja'],
+    'german':         ['de', 'es', 'ja'],
+    'spanish':        ['de', 'es', 'ja'],
+    'italian':        ['de', 'es', 'ja'],
+    'esperanto':      ['de', 'es', 'ja'],
     'index':          ['de', 'es', 'ja'],
-    'affiliate':      ['de', 'es'],
-    'in-development':  ['de', 'es']
+    'affiliate':      ['de', 'es', 'ja'],
+    'in-development':  ['de', 'es', 'ja']
   };
   try {
     var file = location.pathname.split('/').pop();
