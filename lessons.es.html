@@ -333,8 +333,13 @@ const MOON=moonPhase();
    in either place moves the other. Lesson text has a British twin on only a few
    tiers; where none exists the base file is served, which is correct. */
 const SPELL_KEY='fb_spelling';
+/* UI PARKED 2026-08-28 at Odiin's request. The control is not rendered and the
+   choice is pinned to US, so no stored 'gb' can strand a reader in a spelling
+   they cannot change. Everything else is intact — the _gb twins are in the data
+   and sv()/fetchTier still read them. Flip SPELL_UI to true to bring it back. */
+const SPELL_UI=false;
 let spelling='us';
-try{ if(localStorage.getItem(SPELL_KEY)==='gb') spelling='gb'; }catch(e){}
+try{ if(SPELL_UI && localStorage.getItem(SPELL_KEY)==='gb') spelling='gb'; }catch(e){}
 function paintSpell(){ const t=document.getElementById('spellTog'); if(!t) return;
   t.querySelectorAll('.seg').forEach(b=>b.classList.toggle('on', b.dataset.sp===spelling)); }
 async function fetchTier(lang, set, t){
@@ -378,7 +383,7 @@ function renderSetSelect(){
 function firstLessonInSet(s){ if(isEng()) return 0; for(let i=0;i<LESSONS.length;i++) if(tierSet(LESSONS[i]._tier)===s) return i; return 0; }
 function syncSetToLesson(){ if(isEng()){ setSel.value=curSet; return; } curSet=tierSet(LESSONS[li]._tier); setSel.value=curSet; }
 function updateSetLabel(){ setLbl.textContent=(langSel.value==='English')?'Paquete':'Conjunto'; 
-  const sf=document.getElementById('spellField'); if(sf) sf.hidden=(langSel.value!=='English'); }  // English packs aren't Core/Pareto sets
+  const sf=document.getElementById('spellField'); if(sf) sf.hidden=!(SPELL_UI && langSel.value==='English'); }  // English packs aren't Core/Pareto sets
 
 /* ---------- the window ---------- */
 function lineToHTML(line, allowPress){

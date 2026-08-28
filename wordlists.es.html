@@ -404,8 +404,13 @@ function gloss(c){ if(c.Translation_es!=null&&c.Translation_es!=='')return c.Tra
    ~500 cards that differ, so the toggle is a field swap, not a refetch. The
    choice is shared with the lessons page through localStorage. */
 const SPELL_KEY='fb_spelling';
+/* UI PARKED 2026-08-28 at Odiin's request. The control is not rendered and the
+   choice is pinned to US, so no stored 'gb' can strand a reader in a spelling
+   they cannot change. Everything else is intact — the _gb twins are in the data
+   and sv()/fetchTier still read them. Flip SPELL_UI to true to bring it back. */
+const SPELL_UI=false;
 let spelling='us';
-try{ if(localStorage.getItem(SPELL_KEY)==='gb') spelling='gb'; }catch(e){}
+try{ if(SPELL_UI && localStorage.getItem(SPELL_KEY)==='gb') spelling='gb'; }catch(e){}
 function sv(c,k){ return (spelling==='gb' && c[k+'_gb']) ? c[k+'_gb'] : c[k]; }
 function paintSpell(){ const t=document.getElementById('spellTog'); if(!t) return;
   t.querySelectorAll('.sp').forEach(b=>b.classList.toggle('on', b.dataset.sp===spelling)); }
@@ -531,7 +536,7 @@ function updateSetLabel(){
   setLbl.textContent = eng?'Paquete':'Conjunto';
   setSel.setAttribute('aria-label', eng?'Paquete':'Conjunto');
   document.querySelector('.controls').classList.toggle('eng', eng);
-  const sf=document.getElementById('spellField'); if(sf) sf.hidden=!eng;   // only English has a spelling twin   // English: 'Pack' already labels the language selector
+  const sf=document.getElementById('spellField'); if(sf) sf.hidden=!(SPELL_UI && eng);   // only English has a spelling twin   // English: 'Pack' already labels the language selector
 }
 (function(){ const t=document.getElementById('spellTog'); if(!t) return;
   t.addEventListener('click', e=>{ const b=e.target.closest('.sp'); if(!b) return;
