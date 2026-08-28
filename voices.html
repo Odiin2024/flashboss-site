@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Voices — Hear Every FlashBoss Language | FlashBoss</title>
+<meta name="description" content="Hear the voices that speak FlashBoss. Every clip is a real card sentence read by the exact neural voice the game uses — English (American and British), German, Spanish (Latin American and Castilian), French, Italian, Esperanto, Latin, Greek and Toki Pona. Text-to-speech runs offline on your own machine.">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/voices.html">
+<link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/voices.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   FlashBoss — Voices (voices.html). The palette: one real card
+   sentence per voice, spoken by the exact model and length_scale
+   the game ships. Paired voices say the SAME sentence so the
+   base/DLC difference is audible rather than described.
+   Clips: audio/voices/<id>.ogg, built by audio/build_voice_palette.py
+   ============================================================ */
+:root{
+  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
+  --accent:#e0a93f; --green:#62d38a; --line:#3a3120; --rule:#2a2417;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--mono); background:var(--bg); color:var(--ink); line-height:1.6; -webkit-font-smoothing:antialiased;}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.04) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.wrap{max-width:900px; margin:0 auto; padding:0 24px;}
+a{color:var(--accent);}
+
+nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line); position:relative; z-index:3; background:var(--bg);}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--dim); margin-right:auto;}
+nav .brand a, nav .brand .sep{color:var(--dim); text-decoration:none;}
+nav .brand a:hover{color:var(--ink);}
+nav .brand .here{font-weight:800; color:var(--ink);}
+nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--ink);}
+nav .brand .logo:hover{color:var(--accent);}
+nav .brand .pipe{color:var(--dim); margin:0 11px;}
+.nav-mobile{display:none;}
+.nav-mobile a{color:inherit; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.08em; opacity:.85;}
+.nav-mobile a:hover{opacity:1; color:var(--accent);}
+@media(max-width:640px){ nav .brand, nav .links{display:none;} .nav-mobile{display:flex; flex:1; justify-content:space-between; align-items:center;} .nav-mobile .r{display:flex; gap:18px;} }
+nav .links a{color:var(--ink); text-decoration:none; opacity:.7; margin-left:22px;}
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+nav .links a.steam{font-weight:800; opacity:1;}
+
+.reveal{opacity:0; transform:translateY(12px); transition:opacity .6s ease, transform .6s ease;}
+.reveal.in{opacity:1; transform:none;}
+
+.hero{position:relative; padding:78px 0 60px; overflow:hidden;}
+.hero::before{content:""; position:absolute; inset:0; z-index:0; background:#0c0a06 url('home.png') center 30% / cover no-repeat;}
+.hero::after{content:""; position:absolute; inset:0; z-index:1; background:linear-gradient(180deg, rgba(16,13,8,.5) 0%, rgba(16,13,8,.72) 55%, var(--bg) 100%);}
+.hero .wrap{position:relative; z-index:2;}
+.hero .crumb{font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--accent);}
+.hero h1{font-size:clamp(38px,8vw,74px); margin:14px 0 0; font-weight:800; letter-spacing:-.01em;}
+.hero .lede{font-size:clamp(15px,2.2vw,18px); max-width:58ch; margin:22px 0 0; color:var(--dim);}
+.hero .lede b{color:var(--ink); font-weight:700;}
+
+section{padding:24px 0;}
+.sec-head{display:flex; align-items:baseline; gap:14px; margin:38px 0 10px; flex-wrap:wrap;}
+.sec-head h2{font-size:clamp(21px,4.2vw,30px); font-weight:800; letter-spacing:-.01em;}
+.sec-head .note{font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--faint);}
+.sec-intro{color:var(--dim); max-width:64ch; margin-bottom:20px; font-size:14px;}
+
+/* ---- voice cards ---------------------------------------- */
+.grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:14px;}
+.pair{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+@media(max-width:640px){ .pair{grid-template-columns:1fr;} }
+
+.vcard{background:var(--panel); border:1px solid var(--line); padding:16px 16px 14px; position:relative;}
+.vcard.playing{border-color:var(--accent);}
+.vcard .top{display:flex; align-items:flex-start; gap:12px;}
+.vcard .name{font-weight:800; font-size:16px; letter-spacing:.01em; line-height:1.3;}
+.vcard .meta{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--faint); margin-top:3px;}
+.vcard .role{display:inline-block; font-size:10px; letter-spacing:.14em; text-transform:uppercase; padding:2px 6px; border:1px solid var(--line); color:var(--dim); margin-top:9px;}
+.vcard .role.dlc{border-color:var(--accent); color:var(--accent);}
+.vcard .role-note{font-size:12px; color:var(--dim); margin-top:9px;}
+.vcard .say{margin-top:13px; padding-top:12px; border-top:1px solid var(--rule); font-size:13.5px; color:var(--ink);}
+.vcard .gloss{font-size:12px; color:var(--faint); margin-top:6px; font-style:italic;}
+.vcard .credit{font-size:10.5px; color:var(--faint); margin-top:12px; letter-spacing:.03em;}
+
+.play{flex:0 0 auto; width:44px; height:44px; border-radius:50%; border:1px solid var(--dim); background:transparent;
+  color:var(--ink); font-family:var(--mono); font-size:14px; line-height:1; cursor:pointer; display:grid; place-items:center;
+  transition:background .18s ease, color .18s ease, border-color .18s ease;}
+.play:hover{background:var(--ink); color:var(--bg); border-color:var(--ink);}
+.play[data-state="playing"]{background:var(--accent); border-color:var(--accent); color:#100d08;}
+.play:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+.bar{height:2px; background:var(--rule); margin-top:12px; overflow:hidden;}
+.bar i{display:block; height:100%; width:0; background:var(--accent); transition:width .12s linear;}
+
+.tip{border-left:2px solid var(--accent); padding:12px 0 12px 16px; margin:26px 0; color:var(--dim); font-size:13.5px; max-width:66ch;}
+.tip b{color:var(--ink);}
+.kbd{border:1px solid var(--line); padding:1px 6px; font-size:12px; color:var(--ink); background:var(--bg);}
+
+footer{border-top:1px solid var(--line); padding:28px 24px; margin-top:48px; text-align:center; font-size:12px; color:var(--faint); letter-spacing:.04em;}
+footer .footer-links{display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap;}
+footer .footer-links a{color:var(--dim); text-decoration:none;} footer .footer-links a:hover{color:var(--ink);}
+footer .footer-links .div{opacity:.4;}
+footer .made{margin-top:12px; opacity:.8;}
+</style>
+<script src="lang-redirect.js"></script>
+</head>
+<body>
+<div class="overlay"></div>
+
+<nav>
+  <span class="brand"><a class="logo" href="index.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.html">home</a><span class="sep"> · </span><a href="packs.html">packs</a><span class="sep"> · </span><span class="here">voices</span></span>
+  <span class="links">
+    <a href="manual/index.html">walkthrough (beta)</a>
+    <a href="resources.html">resources</a>
+    <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-voices">steam</a>
+  </span>
+  <span class="nav-mobile">
+    <a href="home.html">home</a>
+    <span class="r"><a href="packs.html">packs</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-voices">steam</a></span>
+  </span>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="crumb">Voices</div>
+    <h1>What it sounds like</h1>
+    <p class="lede">Every card in FlashBoss can speak. These are the actual voices — not demo recordings.
+    Each clip below is a <b>real sentence from a real card</b>, read by the exact neural voice, at the exact
+    speed, the game uses for that pack. The speech runs <b>offline, on your own machine</b>: no account,
+    no server, no internet.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="reveal">
+    <div class="sec-head"><h2>English, twice</h2><span class="note">same sentence · two voices</span></div>
+    <p class="sec-intro">FlashBoss ships with an American voice. The English voice DLC replaces it everywhere —
+    every English pack, every card, every lesson. Both read the same two cards here, so you can hear exactly
+    what changes before you buy anything.</p>
+    <div class="pair">
+
+      <article class="vcard" data-clip="english_us">
+        <div class="top">
+          <button class="play" type="button" aria-label="Play the American English sample">▶</button>
+          <div>
+            <div class="name">American English</div>
+            <div class="meta">United States · female</div>
+            <span class="role">Included</span>
+          </div>
+        </div>
+        <div class="role-note">Ships with FlashBoss. Speaks every English pack.</div>
+        <div class="say">“She has filled the glass bottle with fresh cold water. If you eat a good breakfast, you will feel better all morning.”</div>
+        <div class="gloss">Two cards from English Core.</div>
+        <div class="bar"><i></i></div>
+        <div class="credit">LibriTTS · CC BY 4.0</div>
+      </article>
+
+      <article class="vcard" data-clip="english_gb">
+        <div class="top">
+          <button class="play" type="button" aria-label="Play the British English sample">▶</button>
+          <div>
+            <div class="name">British English (F)</div>
+            <div class="meta">Southern England · female</div>
+            <span class="role dlc">Voice DLC</span>
+          </div>
+        </div>
+        <div class="role-note">Replaces the American voice across every English pack. Reversible any time.</div>
+        <div class="say">“She has filled the glass bottle with fresh cold water. If you eat a good breakfast, you will feel better all morning.”</div>
+        <div class="gloss">The same two cards — listen to bottle, glass, water.</div>
+        <div class="bar"><i></i></div>
+        <div class="credit">British English Female · CC0 1.0</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="sec-head"><h2>Spanish, twice</h2><span class="note">same sentence · two voices</span></div>
+    <p class="sec-intro">The Spanish packs ship with a Latin American voice. The Castilian DLC swaps in European
+    Spanish — the clearest single difference is what happens to <i>gracias</i> and <i>perseverancia</i>.</p>
+    <div class="pair">
+
+      <article class="vcard" data-clip="spanish_mx">
+        <div class="top">
+          <button class="play" type="button" aria-label="Play the Latin American Spanish sample">▶</button>
+          <div>
+            <div class="name">Español</div>
+            <div class="meta">Latin America · female</div>
+            <span class="role">Included</span>
+          </div>
+        </div>
+        <div class="role-note">Ships with Spanish Core and both Pareto courses.</div>
+        <div class="say">“Logró superar todos los obstáculos gracias a su perseverancia y esfuerzo.”</div>
+        <div class="gloss">She managed to overcome all obstacles thanks to her perseverance and effort.</div>
+        <div class="bar"><i></i></div>
+        <div class="credit">es_MX-claude · Piper voices</div>
+      </article>
+
+      <article class="vcard" data-clip="spanish_es">
+        <div class="top">
+          <button class="play" type="button" aria-label="Play the Castilian Spanish sample">▶</button>
+          <div>
+            <div class="name">Castellano</div>
+            <div class="meta">Spain · male</div>
+            <span class="role dlc">Voice DLC</span>
+          </div>
+        </div>
+        <div class="role-note">European Spanish across every Spanish pack. Reversible any time.</div>
+        <div class="say">“Logró superar todos los obstáculos gracias a su perseverancia y esfuerzo.”</div>
+        <div class="gloss">The same sentence, said in Spain.</div>
+        <div class="bar"><i></i></div>
+        <div class="credit">davefx · CC0</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="sec-head"><h2>The other languages</h2><span class="note">one real card each</span></div>
+    <p class="sec-intro">Each of these is the voice that comes with the pack. Nothing to configure, nothing to
+    download separately — install the pack and it speaks.</p>
+    <div class="grid">
+
+      <article class="vcard" data-clip="german">
+        <div class="top">
+          <button class="play" type="button" aria-label="Play the German sample">▶</button>
+          <div><div class="name">Deutsch</div><div class="meta">Germany · male</div></div>
+        </div>
+        <div class="say">“Ihre Gesundheit ist das Wichtigste im Leben, passen Sie bitte immer gut auf sich auf!”</div>
+        <div class="gloss">Your health is the most important thing in life — please always take good care of yourself.</div>
+        <div class="bar"><i></i></div>
+        <div class="credit">Thorsten Müller · CC0 1.0</div>
+      </article>
+
+      <article class="vcard" data-clip="french">
+        <div class="top">
+          <button class="play" type="button" aria-label="Play the French sample">▶</button>
+          <div><div class="name">Français</div><div class="meta">France · female</div></div>
+        </div>
+        <div class="say">“Il y a des marchés partout dans le pays, et le sel et le poivre sont sur la table.”</div>
+        <div class="gloss">There are markets everywhere in the country, and the salt and pepper are on the table.</div>
+        <div class="bar"><i></i></div>
+        <div class="credit">SIWIS · Piper voices</div>
+      </article>
+
+      <article class="vcard" data-clip="italian">
+        <div class="top">
+          <button class="play" type="button" aria-label="Play the Italian sample">▶</button>
+          <div><div class="name">Italiano</div><div class="meta">Italy · female</div></div>
+        </div>
+        <div class="say">“Ogni mattina faccio colazione con mia madre in cucina.”</div>
+        <div class="gloss">Every morning I have breakfast with my mother in the kitchen.</div>
+        <div class="bar"><i></i></div>
+        <div class="credit">paola · Piper voices</div>
+      </article>
+
+      <article class="vcard" data-clip="esperanto">
+        <div class="top">
+          <button class="play" type="button" aria-label="Play the Esperanto sample">▶</button>
+          <div><div class="name">Esperanto (F)</div><div class="meta">no country · female</div></div>
+        </div>
+        <div class="role-note">Trained for FlashBoss, because no good Esperanto voice existed.</div>
+        <div class="say">“La prezo de tiu libro estas tre malalta, do mi aĉetos ĝin.”</div>
+        <div class="gloss">The price of that book is very low, so I will buy it.</div>
+        <div class="bar"><i></i></div>
+        <div class="credit">FlashBoss · CC0 1.0 · trained on Mozilla Common Voice</div>
+      </article>
+
+      <article class="vcard" data-clip="latin">
+        <div class="top">
+          <button class="play" type="button" aria-label="Play the Latin sample">▶</button>
+          <div><div class="name">Latina</div><div class="meta">classical · male</div></div>
+        </div>
+        <div class="role-note">Trained for FlashBoss. Restored classical pronunciation.</div>
+        <div class="say">“Prima luce hostium equitatus ad castra accedit.”</div>
+        <div class="gloss">At first light the enemy’s cavalry approaches the camp. (after Caesar)</div>
+        <div class="bar"><i></i></div>
+        <div class="credit">FlashBoss · CC0 1.0</div>
+      </article>
+
+      <article class="vcard" data-clip="greek">
+        <div class="top">
+          <button class="play" type="button" aria-label="Play the Greek sample">▶</button>
+          <div><div class="name">Ελληνικά</div><div class="meta">Greece · female</div></div>
+        </div>
+        <div class="say">“Θα μένουμε σε ένα μικρό ξενοδοχείο κοντά στην πλατεία.”</div>
+        <div class="gloss">We will be staying at a small hotel near the square.</div>
+        <div class="bar"><i></i></div>
+        <div class="credit">rapunzelina · Piper voices</div>
+      </article>
+
+      <article class="vcard" data-clip="toki_pona">
+        <div class="top">
+          <button class="play" type="button" aria-label="Play the Toki Pona sample">▶</button>
+          <div><div class="name">toki pona</div><div class="meta">free in the base game</div></div>
+        </div>
+        <div class="role-note">Spoken by the Esperanto voice — Toki Pona’s sounds are all in Esperanto.</div>
+        <div class="say">“tenpo kama la, mi wile kama sona e toki pona.”</div>
+        <div class="gloss">In the future, I want to learn Toki Pona.</div>
+        <div class="bar"><i></i></div>
+        <div class="credit">FlashBoss · CC0 1.0</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="sec-head"><h2>It will read anything you give it</h2></div>
+    <div class="tip">
+      <b>Press <span class="kbd">Ctrl</span> + <span class="kbd">P</span> anywhere in the game</b> and a pronunciation
+      window opens. Paste in a word, a sentence, a paragraph from something you are reading — it speaks it in the
+      voice you are learning with, and saves it to a file if you want to keep it. It works while a card is on
+      screen, in the menus, in the middle of a boss fight.
+    </div>
+    <p class="sec-intro">Card audio is cached the first time it plays, so a session you have run before speaks
+    instantly and works with no connection at all.</p>
+  </section>
+
+</div>
+
+<footer>
+  <span class="footer-links">
+    <a href="home.html">home</a><span class="div">·</span>
+    <a href="packs.html">packs</a><span class="div">·</span>
+    <a href="resources.html">resources</a><span class="div">·</span>
+    <a href="manual/">walkthrough (beta)</a><span class="div">·</span>
+    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-voices">steam</a>
+  </span>
+  <div class="made">Voices run locally with Piper. Clips on this page are unedited output from the shipping models.</div>
+</footer>
+
+<script>
+// One player, many cards: starting a clip stops whatever else is going.
+(function(){
+  var current = null;
+  // Ogg Opus only reached Safari in 17.4 — fall back to AAC rather than
+  // hand anyone a page of dead play buttons.
+  var probe = document.createElement('audio');
+  var EXT = probe.canPlayType && probe.canPlayType('audio/ogg; codecs=opus') ? '.ogg' : '.m4a';
+  document.querySelectorAll('.vcard[data-clip]').forEach(function(card){
+    var btn  = card.querySelector('.play');
+    var fill = card.querySelector('.bar i');
+    var audio = new Audio('audio/voices/' + card.dataset.clip + EXT);
+    audio.preload = 'none';
+
+    function reset(){
+      card.classList.remove('playing');
+      btn.textContent = '▶'; btn.dataset.state = '';
+      fill.style.width = '0';
+    }
+    audio.addEventListener('timeupdate', function(){
+      if(audio.duration) fill.style.width = (audio.currentTime / audio.duration * 100) + '%';
+    });
+    audio.addEventListener('ended', reset);
+    audio.addEventListener('error', function(){
+      btn.textContent = '—'; btn.disabled = true;
+      btn.setAttribute('aria-label', 'This clip could not be loaded');
+    });
+
+    btn.addEventListener('click', function(){
+      if(current && current.audio !== audio){ current.audio.pause(); current.reset(); }
+      if(audio.paused){
+        audio.currentTime = 0;
+        audio.play().then(function(){
+          card.classList.add('playing');
+          btn.textContent = '■'; btn.dataset.state = 'playing';
+          current = {audio: audio, reset: reset};
+        }).catch(function(){ /* autoplay policy or missing file: leave the button alone */ });
+      } else {
+        audio.pause(); reset(); current = null;
+      }
+    });
+  });
+})();
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+</body>
+</html>
