@@ -1,5 +1,5 @@
 {
-  "_note": "Voice sample palette. Every sample is a REAL card sentence from the pack that voice serves, spoken by the exact model and length_scale the game uses. Paired voices (same 'pair' key) speak the SAME sentence so the base/DLC difference is audible. Render with build_voice_palette.py; page is ../voices.html.",
+  "_note": "Voice sample palette. Every sample is a REAL card sentence from the pack that voice serves, spoken by the exact model and length_scale the game uses. A DLC voice and the voice it replaces speak the SAME sentence so the difference is audible on the page. Render with build_voice_palette.py; page is ../voices.html. NOTE: 'greek' is rendered but deliberately NOT shown on the page — the Modern Greek pack is not released, so advertising its voice would promise something nobody can buy. Put the card back when the pack ships.",
   "voices": [
     {
       "id": "english_us",
@@ -130,7 +130,8 @@
       "length_scale": 1.0,
       "credit": "FlashBoss (CC0 1.0)",
       "text": "Prima luce hostium equitatus ad castra accedit.",
-      "gloss": "At first light the enemy's cavalry approaches the camp. (adapted from Caesar)"
+      "gloss": "At first light the enemy's cavalry approaches the camp. (adapted from Caesar)",
+      "status": "coming soon — Latin Core releasing shortly"
     },
     {
       "id": "greek",
@@ -144,7 +145,8 @@
       "length_scale": 1.1,
       "credit": "rapunzelina (Piper voices)",
       "text": "Θα μένουμε σε ένα μικρό ξενοδοχείο κοντά στην πλατεία.",
-      "gloss": "We will be staying at a small hotel near the square."
+      "gloss": "We will be staying at a small hotel near the square.",
+      "status": "held — pack unreleased"
     },
     {
       "id": "toki_pona",
