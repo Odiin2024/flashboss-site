@@ -82,15 +82,16 @@ nav .lang-menu a:hover{background:var(--panel); opacity:1;}
 .hero .lede{font-size:clamp(15px,2.2vw,18px); max-width:58ch; margin:20px 0 0; color:var(--dim);}
 .hero .lede b{color:var(--ink); font-weight:700;}
 
-.doors{display:flex; gap:12px; flex-wrap:wrap; margin-top:30px;}
-.door{display:inline-flex; align-items:center; gap:10px; padding:13px 20px; text-decoration:none;
-  font-weight:800; font-size:14px; letter-spacing:.04em; border:1px solid var(--dim); color:var(--ink);
-  background:rgba(16,13,8,.55); transition:background .18s ease, color .18s ease, border-color .18s ease, transform .18s ease;}
-.door:hover{background:var(--ink); color:var(--bg); border-color:var(--ink); transform:translateY(-1px);}
-.door.primary{border-color:var(--accent); color:var(--accent);}
-.door.primary:hover{background:var(--accent); color:#100d08;}
-.door .arrow{font-size:12px; opacity:.75;}
-.door-note{margin-top:12px; font-size:12.5px; color:var(--faint);}
+/* buttons in home.html's format: solid accent, hard offset shadow */
+.doors{display:flex; gap:14px; flex-wrap:wrap; margin-top:32px;}
+.btn{display:inline-block; font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.06em;
+  color:#15120c; background:var(--accent); padding:14px 24px; text-decoration:none; border:0;
+  box-shadow:6px 6px 0 color-mix(in oklab, var(--accent), #000 62%);
+  transition:transform .12s ease, box-shadow .12s ease;}
+.btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--accent), #000 62%);}
+.btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--accent), #000 62%);}
+.btn.ghost{color:var(--accent); background:transparent; border:1px solid var(--accent); box-shadow:none; padding:13px 23px;}
+.btn.ghost:hover{transform:translate(-2px,-2px); color:var(--ink); border-color:var(--ink); box-shadow:none;}
 
 /* ---- sections ------------------------------------------- */
 section{padding:22px 0;}
@@ -173,9 +174,8 @@ footer .made{margin-top:12px; opacity:.8;}
 <header class="hero">
   <div class="wrap"> <div class="crumb">Stimmen</div>
     <h1>So klingt es</h1>
-    <p class="lede">Jede Karte in FlashBoss kann sprechen — und alles, was du sonst hineinkopierst, liest sie auch vor. Die Hörproben unten sind <b>echte Sätze aus echten Karten</b>, gelesen von genau den Stimmen, die das Spiel mitliefert, und sie laufen <b>offline auf deinem eigenen Rechner</b>. Kein Konto, kein Server, kein Internet.</p>
-    <div class="doors"> <a class="door primary" href="manual/index.html">Weiter zur Anleitung <span class="arrow">→</span></a> <a class="door" href="about.de.html">So funktioniert FlashBoss <span class="arrow">→</span></a> </div>
-    <p class="door-note">Zum ersten Mal hier? Die Anleitung führt dich durch die erste Sitzung. Auf dieser Seite geht es nur um den Klang.</p>
+    <p class="lede">Das eingebaute PiperTTS-Fenster (im Spiel mit <b>Strg + P</b> öffnen) liest jeden Text vor, den du eintippst oder einfügst — in deiner Zielsprache. Weiter unten gibt es Hörproben für jede Stimme.</p>
+    <div class="doors"> <a class="btn" href="manual/index.html">Spielanleitung</a> <a class="btn ghost" href="about.de.html">Technisches Handbuch</a> </div>
   </div>
 </header>
 
@@ -307,7 +307,7 @@ footer .made{margin-top:12px; opacity:.8;}
     <div class="sec-head"><h2>Es liest alles vor, was du ihm gibst</h2></div>
     <div class="tip"> <b>Drücke im Spiel jederzeit <span class="kbd">Strg</span> + <span class="kbd">P</span></b>, und ein Aussprachefenster geht auf. Füge ein Wort ein, einen Satz, einen Absatz aus etwas, das du gerade liest — es spricht ihn in der Stimme, mit der du lernst, und speichert ihn auf Wunsch als Datei. Das geht mitten in einer Karte, in den Menüs und mitten im Bossfight. </div>
     <p class="sec-intro">Karten-Audio wird beim ersten Abspielen zwischengespeichert: Eine Sitzung, die du schon einmal gemacht hast, spricht sofort — und ganz ohne Verbindung.</p>
-    <div class="doors"> <a class="door primary" href="manual/index.html">Weiter zur Anleitung <span class="arrow">→</span></a> <a class="door" href="packs.de.html">Zu den Packs <span class="arrow">→</span></a> </div>
+    <div class="doors"> <a class="btn" href="manual/index.html">Spielanleitung</a> <a class="btn ghost" href="packs.de.html">Zu den Packs</a> </div>
   </section>
 
 </div>
