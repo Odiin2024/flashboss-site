@@ -278,14 +278,14 @@
         {"n": 224, "TargetWord": "streichen", "TargetArticle": "", "Translation": "to paint, to spread, to stroke", "Translation_es": "pintar (con brocha)", "Translation_ja": "塗る、なでる", "Translation_zh": "粉刷；涂抹；轻抚", "Translation_ru": "to paint, to spread, to stroke"},
         {"n": 225, "TargetWord": "Tomate", "TargetArticle": "die", "Translation": "tomato", "Translation_es": "tomate", "Translation_ja": "トマト", "Translation_zh": "番茄", "Translation_ru": "tomato"},
         {"n": 226, "TargetWord": "würzen", "TargetArticle": "", "Translation": "to season, to spice", "Translation_es": "sazonar, condimentar", "Translation_ja": "味付けする", "Translation_zh": "调味；加香料", "Translation_ru": "to season, to spice"},
-        {"n": 227, "TargetWord": "abbiegen", "TargetArticle": "", "Translation": "to turn (direction)", "Translation_es": "girar (en una calle)", "Translation_ja": "曲がる（方向転換）", "Translation_zh": "转弯（改变方向）", "Translation_ru": "to turn (direction)"},
+        {"n": 227, "TargetWord": "ab|biegen", "TargetArticle": "", "Translation": "to turn (direction)", "Translation_es": "girar (en una calle)", "Translation_ja": "曲がる（方向転換）", "Translation_zh": "转弯（改变方向）", "Translation_ru": "to turn (direction)"},
         {"n": 228, "TargetWord": "backen", "TargetArticle": "", "Translation": "to bake", "Translation_es": "hornear", "Translation_ja": "（パン・菓子を）焼く", "Translation_zh": "烘烤", "Translation_ru": "to bake"},
         {"n": 229, "TargetWord": "bremsen", "TargetArticle": "", "Translation": "to brake", "Translation_es": "frenar", "Translation_ja": "ブレーキをかける", "Translation_zh": "刹车", "Translation_ru": "to brake"},
         {"n": 230, "TargetWord": "drucken", "TargetArticle": "", "Translation": "to print", "Translation_es": "imprimir", "Translation_ja": "印刷する", "Translation_zh": "打印", "Translation_ru": "to print"},
-        {"n": 231, "TargetWord": "einkaufen", "TargetArticle": "", "Translation": "to shop", "Translation_es": "hacer las compras", "Translation_ja": "買い物をする", "Translation_zh": "购物", "Translation_ru": "to shop"},
-        {"n": 232, "TargetWord": "erledigen", "TargetArticle": "", "Translation": "to take care of", "Translation_es": "resolver (tareas)", "Translation_ja": "片づける、処理する", "Translation_zh": "完成，办妥", "Translation_ru": "to get done, to achieve"},
+        {"n": 231, "TargetWord": "ein|kaufen", "TargetArticle": "", "Translation": "to shop", "Translation_es": "hacer las compras", "Translation_ja": "買い物をする", "Translation_zh": "购物", "Translation_ru": "to shop"},
+        {"n": 232, "TargetWord": "erledigen", "TargetArticle": "", "Translation": "to get done, to achieve", "Translation_es": "resolver (tareas)", "Translation_ja": "片づける、処理する", "Translation_zh": "完成，办妥", "Translation_ru": "to get done, to achieve"},
         {"n": 233, "TargetWord": "führen", "TargetArticle": "", "Translation": "to lead", "Translation_es": "guiar, dirigir", "Translation_ja": "導く、案内する", "Translation_zh": "带领，引导", "Translation_ru": "to lead"},
-        {"n": 234, "TargetWord": "fühlen", "TargetArticle": "", "Translation": "to feel", "Translation_ru": "to feel"}
+        {"n": 234, "TargetWord": "kleben", "TargetArticle": "", "Translation": "to glue, to stick", "Translation_es": "pegar", "Translation_ja": "貼る、接着する", "Translation_zh": "粘贴，胶合", "Translation_ru": "to glue, to stick"}
       ]
     },
     {
@@ -314,7 +314,7 @@
         {"n": 255, "TargetWord": "Tankstelle", "TargetArticle": "die", "Translation": "gas station", "Translation_es": "gasolinera", "Translation_ja": "ガソリンスタンド", "Translation_zh": "加油站", "Translation_ru": "gas station"},
         {"n": 256, "TargetWord": "Taxi", "TargetArticle": "das", "Translation": "taxi", "Translation_es": "taxi", "Translation_ja": "タクシー", "Translation_zh": "出租车", "Translation_ru": "taxi"},
         {"n": 257, "TargetWord": "Tour", "TargetArticle": "die", "Translation": "tour", "Translation_es": "tour", "Translation_ja": "ツアー、周遊", "Translation_zh": "游览；巡演", "Translation_ru": "tour"},
-        {"n": 258, "TargetWord": "Tourist", "TargetArticle": "der", "Translation": "tourist", "Translation_ru": "tourist"},
+        {"n": 258, "TargetWord": "Kauffrau", "TargetArticle": "die", "Translation": "merchant, businesswoman", "Translation_es": "comerciante (mujer)", "Translation_ja": "女性商人、女性事務職員", "Translation_zh": "女商人；女职员", "Translation_ru": "merchant, businesswoman"},
         {"n": 259, "TargetWord": "Umweg", "TargetArticle": "der", "Translation": "detour", "Translation_es": "desvío", "Translation_ja": "回り道、迂回路", "Translation_zh": "绕行；绕道", "Translation_ru": "detour"},
         {"n": 260, "TargetWord": "Unterkunft", "TargetArticle": "die", "Translation": "accommodation", "Translation_es": "alojamiento", "Translation_ja": "宿泊先（総称）", "Translation_zh": "住宿", "Translation_ru": "accommodation"},
         {"n": 261, "TargetWord": "Wagen", "TargetArticle": "der", "Translation": "car", "Translation_es": "auto", "Translation_ja": "車（乗用車）", "Translation_zh": "汽车；车厢", "Translation_ru": "car"},
@@ -332,10 +332,10 @@
         {"n": 268, "TargetWord": "Bewerber/in", "TargetArticle": "der/die", "Translation": "applicant, candidate", "Translation_es": "postulante, candidato", "Translation_ja": "応募者、志願者", "Translation_zh": "申请人，候选人", "Translation_ru": "applicant, candidate"},
         {"n": 269, "TargetWord": "Elektriker/in", "TargetArticle": "der/die", "Translation": "electrician", "Translation_es": "electricista", "Translation_ja": "電気技師", "Translation_zh": "电工", "Translation_ru": "electrician"},
         {"n": 270, "TargetWord": "Handwerker/in", "TargetArticle": "der/die", "Translation": "craftsman, tradesperson", "Translation_es": "artesano, trabajador de oficio", "Translation_ja": "職人", "Translation_zh": "工匠，技工", "Translation_ru": "craftsman, tradesperson"},
-        {"n": 271, "TargetWord": "Kaufmann/Kauffrau", "TargetArticle": "der/die", "Translation": "merchant", "Translation_ru": "merchant"},
+        {"n": 271, "TargetWord": "Kaufmann", "TargetArticle": "der", "Translation": "merchant, businessman", "Translation_es": "comerciante, empresario", "Translation_ja": "商人、実業家", "Translation_zh": "商人，生意人", "Translation_ru": "merchant, businessman"},
         {"n": 272, "TargetWord": "Kellner/in", "TargetArticle": "der/die", "Translation": "waiter", "Translation_es": "mesero, mesera", "Translation_ja": "ウェイター、給仕", "Translation_zh": "服务员（男女通用）", "Translation_ru": "waiter"},
         {"n": 273, "TargetWord": "Klempner/in", "TargetArticle": "der/die", "Translation": "plumber", "Translation_es": "plomero, plomera", "Translation_ja": "配管工", "Translation_zh": "水管工", "Translation_ru": "plumber"},
-        {"n": 274, "TargetWord": "Kollege/in", "TargetArticle": "der/die", "Translation": "colleague", "TriggerLesson": "044", "Translation_ru": "colleague"},
+        {"n": 274, "TargetWord": "Erzieherin", "TargetArticle": "die", "Translation": "preschool teacher (female), educator", "TriggerLesson": "044", "Translation_es": "educadora de preescolar (mujer)", "Translation_ja": "保育士（女性）、幼児教育者", "Translation_zh": "幼儿园教师（女性），教育工作者", "Translation_ru": "preschool teacher (female), educator"},
         {"n": 275, "TargetWord": "Lehrling", "TargetArticle": "der", "Translation": "apprentice, trainee", "Translation_es": "aprendiz", "Translation_ja": "見習い、徒弟", "Translation_zh": "学徒，实习生", "Translation_ru": "apprentice, trainee"},
         {"n": 276, "TargetWord": "Lohn", "TargetArticle": "der", "Translation": "wage", "Translation_es": "salario (por hora o semana)", "Translation_ja": "賃金（時給・週給）", "Translation_zh": "工资（通常指按小时或周计）", "Translation_ru": "wage"},
         {"n": 277, "TargetWord": "Maler/in", "TargetArticle": "der/die", "Translation": "painter", "Translation_es": "pintor, pintora", "Translation_ja": "画家、塗装工", "Translation_zh": "油漆工；画家", "Translation_ru": "painter"},
@@ -357,7 +357,7 @@
         {"n": 288, "TargetWord": "Account", "TargetArticle": "der", "Translation": "account", "Translation_es": "cuenta (en línea)", "Translation_ja": "アカウント", "Translation_zh": "账户", "Translation_ru": "account"},
         {"n": 289, "TargetWord": "Anzahl", "TargetArticle": "die", "Translation": "number", "Translation_es": "cantidad, número", "Translation_ja": "数、個数", "Translation_zh": "数量", "Translation_ru": "number"},
         {"n": 290, "TargetWord": "Auswahl", "TargetArticle": "die", "Translation": "selection", "Translation_es": "selección, surtido", "Translation_ja": "選択、品ぞろえ", "Translation_zh": "选择；可选范围", "Translation_ru": "selection"},
-        {"n": 291, "TargetWord": "Auszahlung", "TargetArticle": "die", "Translation": "withdrawal", "Translation_es": "desembolso, pago", "Translation_ja": "払い出し、支払い", "Translation_zh": "支付；发放（尤指工资等）", "Translation_ru": "payout, paying out"},
+        {"n": 291, "TargetWord": "Auszahlung", "TargetArticle": "die", "Translation": "payout, paying out", "Translation_es": "desembolso, pago", "Translation_ja": "払い出し、支払い", "Translation_zh": "支付；发放（尤指工资等）", "Translation_ru": "payout, paying out"},
         {"n": 292, "TargetWord": "Bank", "TargetArticle": "die", "Translation": "bank", "Translation_es": "banco", "Translation_ja": "銀行", "Translation_zh": "银行", "Translation_ru": "bank"},
         {"n": 293, "TargetWord": "Bankleitzahl", "TargetArticle": "die", "Translation": "bank code", "Translation_es": "código bancario", "Translation_ja": "銀行コード", "Translation_zh": "银行代码", "Translation_ru": "bank code"},
         {"n": 294, "TargetWord": "Benutzer/in", "TargetArticle": "der/die", "Translation": "user", "Translation_es": "usuario/usuaria", "Translation_ja": "利用者、ユーザー", "Translation_zh": "用户", "Translation_ru": "user"},
@@ -378,7 +378,7 @@
         {"n": 309, "TargetWord": "buchen", "TargetArticle": "", "Translation": "to book, to reserve", "Translation_es": "reservar", "Translation_ja": "予約する", "Translation_zh": "预订，预约", "Translation_ru": "to book, to reserve"},
         {"n": 310, "TargetWord": "ein|zahlen", "TargetArticle": "", "Translation": "to deposit, to pay in", "Translation_es": "depositar (dinero)", "Translation_ja": "入金する、預け入れる", "Translation_zh": "存入（账户）", "Translation_ru": "to deposit, to pay in"},
         {"n": 311, "TargetWord": "aus|zahlen", "TargetArticle": "", "Translation": "to pay out, to withdraw", "Translation_es": "desembolsar, pagar", "Translation_ja": "払い出す、支払う", "Translation_zh": "支付，取出（款项）", "Translation_ru": "to pay out, to withdraw"},
-        {"n": 312, "TargetWord": "umtauschen", "TargetArticle": "", "Translation": "to exchange, to return", "Translation_es": "cambiar, devolver", "Translation_ja": "交換する、返品する", "Translation_zh": "退换；更换", "Translation_ru": "to exchange, to return"}
+        {"n": 312, "TargetWord": "um|tauschen", "TargetArticle": "", "Translation": "to exchange, to return", "Translation_es": "cambiar, devolver", "Translation_ja": "交換する、返品する", "Translation_zh": "退换；更换", "Translation_ru": "to exchange, to return"}
       ]
     },
     {
@@ -393,7 +393,7 @@
         {"n": 319, "TargetWord": "Krach", "TargetArticle": "der", "Translation": "noise", "Translation_es": "alboroto (ruido o pelea)", "Translation_ja": "大きな物音、口論", "Translation_zh": "吵闹声；争吵", "Translation_ru": "noise"},
         {"n": 320, "TargetWord": "Lärm", "TargetArticle": "der", "Translation": "noise", "Translation_es": "ruido", "Translation_ja": "騒音、やかましさ", "Translation_zh": "噪音", "Translation_ru": "noise"},
         {"n": 321, "TargetWord": "Narbe", "TargetArticle": "die", "Translation": "scar", "Translation_es": "cicatriz", "Translation_ja": "傷跡", "Translation_zh": "疤痕", "Translation_ru": "scar"},
-        {"n": 322, "TargetWord": "Schwindel", "TargetArticle": "der", "Translation": "dizziness, fraud", "Translation_es": "mareo", "Translation_ja": "めまい", "Translation_zh": "头晕；眩晕", "Translation_ru": "lightheadedness, dizziness"},
+        {"n": 322, "TargetWord": "Schwindel", "TargetArticle": "der", "Translation": "lightheadedness, dizziness", "Translation_es": "mareo", "Translation_ja": "めまい", "Translation_zh": "头晕；眩晕", "Translation_ru": "lightheadedness, dizziness"},
         {"n": 323, "TargetWord": "Übelkeit", "TargetArticle": "die", "Translation": "nausea", "Translation_es": "náuseas", "Translation_ja": "吐き気", "Translation_zh": "恶心", "Translation_ru": "nausea"},
         {"n": 324, "TargetWord": "Wunde", "TargetArticle": "die", "Translation": "wound", "Translation_es": "herida", "Translation_ja": "傷、傷口", "Translation_zh": "伤口", "Translation_ru": "wound"},
         {"n": 325, "TargetWord": "behandeln", "TargetArticle": "", "Translation": "to treat, to handle", "Translation_es": "tratar", "Translation_ja": "治療する、扱う", "Translation_zh": "治疗；对待", "Translation_ru": "to treat, to handle"},
@@ -511,7 +511,7 @@
         {"n": 417, "TargetWord": "Bekannte", "TargetArticle": "der/die", "Translation": "acquaintance", "Translation_es": "conocido/a (persona)", "Translation_ja": "知人（人）", "Translation_zh": "熟人", "Translation_ru": "acquaintance"},
         {"n": 418, "TargetWord": "Besuch", "TargetArticle": "der", "Translation": "visit, visitor", "Translation_es": "visita", "Translation_ja": "訪問、来客", "Translation_zh": "来访；访客", "Translation_ru": "visit, visitor"},
         {"n": 419, "TargetWord": "Eltern", "TargetArticle": "die", "Translation": "parents", "Translation_es": "padres", "Translation_ja": "両親", "Translation_zh": "父母", "Translation_ru": "parents"},
-        {"n": 420, "TargetWord": "Freund/in", "TargetArticle": "der/die", "Translation": "friend", "TriggerLesson": "034", "Translation_ru": "friend"}
+        {"n": 420, "TargetWord": "Bekanntschaft", "TargetArticle": "die", "Translation": "acquaintance, acquaintanceship", "TriggerLesson": "034", "Translation_es": "trato, relación (conocer a alguien)", "Translation_ja": "面識、知り合いになること", "Translation_zh": "相识；结识", "Translation_ru": "acquaintance, acquaintanceship"}
       ]
     },
     {
@@ -613,10 +613,10 @@
         {"n": 499, "TargetWord": "um herum", "TargetArticle": "", "Translation": "around", "Translation_es": "alrededor de", "Translation_ja": "〜の周りを", "Translation_zh": "围绕，绕……周围", "Translation_ru": "around"},
         {"n": 500, "TargetWord": "vorwärts", "TargetArticle": "", "Translation": "forward", "Translation_es": "hacia adelante", "Translation_ja": "前へ", "Translation_zh": "向前", "Translation_ru": "forward"},
         {"n": 501, "TargetWord": "zurück", "TargetArticle": "", "Translation": "back", "Translation_es": "de vuelta, atrás", "Translation_ja": "戻って、後ろへ", "Translation_zh": "回，返回", "Translation_ru": "back"},
-        {"n": 502, "TargetWord": "annehmen", "TargetArticle": "", "Translation": "to assume", "Translation_es": "suponer", "Translation_ja": "想定する、受け入れる", "Translation_zh": "假设，认为", "Translation_ru": "to assume"},
+        {"n": 502, "TargetWord": "an|nehmen", "TargetArticle": "", "Translation": "to assume", "Translation_es": "suponer", "Translation_ja": "想定する、受け入れる", "Translation_zh": "假设，认为", "Translation_ru": "to assume"},
         {"n": 503, "TargetWord": "begreifen", "TargetArticle": "", "Translation": "to understand", "Translation_es": "comprender", "Translation_ja": "理解する、把握する", "Translation_zh": "理解，领悟", "Translation_ru": "to understand"},
         {"n": 504, "TargetWord": "behaupten", "TargetArticle": "", "Translation": "to claim", "Translation_es": "afirmar", "Translation_ja": "主張する", "Translation_zh": "声称", "Translation_ru": "to claim"},
-        {"n": 505, "TargetWord": "bestehen", "TargetArticle": "", "Translation": "to pass", "Translation_ru": "to pass"},
+        {"n": 505, "TargetWord": "vermuten", "TargetArticle": "", "Translation": "to suppose, to presume", "Translation_es": "sospechar", "Translation_ja": "推測する、推察する", "Translation_zh": "推测，假定", "Translation_ru": "to suppose, to presume"},
         {"n": 506, "TargetWord": "betonen", "TargetArticle": "", "Translation": "to emphasize", "Translation_es": "enfatizar", "Translation_ja": "強調する", "Translation_zh": "强调", "Translation_ru": "to emphasize"},
         {"n": 507, "TargetWord": "bezweifeln", "TargetArticle": "", "Translation": "to doubt", "Translation_es": "poner en duda", "Translation_ja": "疑う、疑問視する", "Translation_zh": "怀疑", "Translation_ru": "to doubt"},
         {"n": 508, "TargetWord": "empfangen", "TargetArticle": "", "Translation": "to receive", "Translation_es": "recibir", "Translation_ja": "迎える、受け取る", "Translation_zh": "接待，收到", "Translation_ru": "to receive"},
@@ -624,7 +624,7 @@
         {"n": 510, "TargetWord": "erwägen", "TargetArticle": "", "Translation": "to weigh up", "Translation_es": "sopesar", "Translation_ja": "比較検討する、熟慮する", "Translation_zh": "认真考虑", "Translation_ru": "to weigh up"},
         {"n": 511, "TargetWord": "erwähnen", "TargetArticle": "", "Translation": "to mention", "Translation_es": "mencionar", "Translation_ja": "言及する", "Translation_zh": "提及", "Translation_ru": "to mention"},
         {"n": 512, "TargetWord": "halten für", "TargetArticle": "", "Translation": "to regard as", "Translation_es": "considerar (como)", "Translation_ja": "〜とみなす", "Translation_zh": "认为……是", "Translation_ru": "to regard as"},
-        {"n": 513, "TargetWord": "nachdenken", "TargetArticle": "", "Translation": "to consider", "Translation_es": "reflexionar", "Translation_ja": "よく考える、思案する", "Translation_zh": "考虑，思考", "Translation_ru": "to consider"},
+        {"n": 513, "TargetWord": "nach|denken", "TargetArticle": "", "Translation": "to consider", "Translation_es": "reflexionar", "Translation_ja": "よく考える、思案する", "Translation_zh": "考虑，思考", "Translation_ru": "to consider"},
         {"n": 514, "TargetWord": "sich entschließen", "TargetArticle": "", "Translation": "to decide", "Translation_es": "decidirse", "Translation_ja": "決心する", "Translation_zh": "下定决心", "Translation_ru": "to decide"}
       ]
     },
@@ -710,8 +710,8 @@
         {"n": 581, "TargetWord": "chatten", "TargetArticle": "", "Translation": "to chat", "Translation_es": "chatear", "Translation_ja": "チャットする", "Translation_zh": "聊天", "Translation_ru": "to chat"},
         {"n": 582, "TargetWord": "digital", "TargetArticle": "", "Translation": "digital", "Translation_es": "digital", "Translation_ja": "デジタルの", "Translation_zh": "数字的", "Translation_ru": "digital"},
         {"n": 583, "TargetWord": "googeln", "TargetArticle": "", "Translation": "to google", "Translation_es": "googlear", "Translation_ja": "グーグルで調べる", "Translation_zh": "用谷歌搜索", "Translation_ru": "to google"},
-        {"n": 584, "TargetWord": "herunterladen", "TargetArticle": "", "Translation": "to download", "TriggerLesson": "045", "Translation_es": "descargar", "Translation_ja": "ダウンロードする", "Translation_zh": "下载", "Translation_ru": "to download"},
-        {"n": 585, "TargetWord": "hochladen", "TargetArticle": "", "Translation": "to upload", "Translation_es": "subir (archivos)", "Translation_ja": "アップロードする", "Translation_zh": "上传", "Translation_ru": "to upload"},
+        {"n": 584, "TargetWord": "herunter|laden", "TargetArticle": "", "Translation": "to download", "TriggerLesson": "045", "Translation_es": "descargar", "Translation_ja": "ダウンロードする", "Translation_zh": "下载", "Translation_ru": "to download"},
+        {"n": 585, "TargetWord": "hoch|laden", "TargetArticle": "", "Translation": "to upload", "Translation_es": "subir (archivos)", "Translation_ja": "アップロードする", "Translation_zh": "上传", "Translation_ru": "to upload"},
         {"n": 586, "TargetWord": "installieren", "TargetArticle": "", "Translation": "to install", "Translation_es": "instalar", "Translation_ja": "インストールする", "Translation_zh": "安装", "Translation_ru": "to install"},
         {"n": 587, "TargetWord": "löschen", "TargetArticle": "", "Translation": "to delete", "Translation_es": "borrar", "Translation_ja": "削除する、消す", "Translation_zh": "删除", "Translation_ru": "to delete"},
         {"n": 588, "TargetWord": "offline", "TargetArticle": "", "Translation": "offline", "Translation_es": "fuera de línea", "Translation_ja": "オフラインの", "Translation_zh": "离线", "Translation_ru": "offline"},
@@ -726,7 +726,7 @@
         {"n": 597, "TargetWord": "Eingang", "TargetArticle": "der", "Translation": "entrance", "Translation_es": "entrada", "Translation_ja": "入口", "Translation_zh": "入口", "Translation_ru": "entrance"},
         {"n": 598, "TargetWord": "Festung", "TargetArticle": "die", "Translation": "fortress", "Translation_es": "fortaleza", "Translation_ja": "要塞、とりで", "Translation_zh": "要塞", "Translation_ru": "fortress"},
         {"n": 599, "TargetWord": "Galerie", "TargetArticle": "die", "Translation": "gallery", "Translation_es": "galería", "Translation_ja": "画廊、ギャラリー", "Translation_zh": "画廊", "Translation_ru": "gallery"},
-        {"n": 600, "TargetWord": "Gang", "TargetArticle": "der", "Translation": "corridor", "Translation_es": "pasillo", "Translation_ja": "廊下、通路", "Translation_zh": "走廊；通道", "Translation_ru": "the way; corridor"}
+        {"n": 600, "TargetWord": "Gang", "TargetArticle": "der", "Translation": "the way; corridor", "Translation_es": "pasillo", "Translation_ja": "廊下、通路", "Translation_zh": "走廊；通道", "Translation_ru": "the way; corridor"}
       ]
     },
     {
@@ -734,7 +734,7 @@
       "cards": [
         {"n": 601, "TargetWord": "sich gewöhnen", "TargetArticle": "", "Translation": "to get used to", "TriggerLesson": "051", "Translation_es": "acostumbrarse", "Translation_ja": "慣れる", "Translation_zh": "习惯；适应", "Translation_ru": "to get used to"},
         {"n": 602, "TargetWord": "sich interessieren", "TargetArticle": "", "Translation": "to be interested", "Translation_es": "interesarse", "Translation_ja": "興味を持つ", "Translation_zh": "感兴趣", "Translation_ru": "to be interested"},
-        {"n": 603, "TargetWord": "sich vorbereiten", "TargetArticle": "", "Translation": "to prepare oneself", "Translation_es": "prepararse", "Translation_ja": "準備をする", "Translation_zh": "做准备", "Translation_ru": "to prepare oneself"},
+        {"n": 603, "TargetWord": "sich vor|bereiten", "TargetArticle": "", "Translation": "to prepare oneself", "Translation_es": "prepararse", "Translation_ja": "準備をする", "Translation_zh": "做准备", "Translation_ru": "to prepare oneself"},
         {"n": 604, "TargetWord": "sich äußern", "TargetArticle": "", "Translation": "to express oneself", "Translation_es": "expresarse", "Translation_ja": "意見を述べる", "Translation_zh": "表达意见", "Translation_ru": "to express oneself"},
         {"n": 605, "TargetWord": "widersprechen", "TargetArticle": "", "Translation": "to contradict", "TriggerLesson": "046", "Translation_es": "contradecir", "Translation_ja": "反論する", "Translation_zh": "反驳；表示异议", "Translation_ru": "to contradict"},
         {"n": 606, "TargetWord": "wiederholen", "TargetArticle": "", "Translation": "to repeat", "Translation_es": "repetir", "Translation_ja": "繰り返す", "Translation_zh": "重复", "Translation_ru": "to repeat"},
@@ -805,7 +805,7 @@
         {"n": 661, "TargetWord": "länger", "TargetArticle": "", "Translation": "longer", "Translation_es": "más largo", "Translation_ja": "より長い", "Translation_zh": "更长的", "Translation_ru": "longer"},
         {"n": 662, "TargetWord": "niedrig", "TargetArticle": "", "Translation": "low", "Translation_es": "bajo", "Translation_ja": "低い", "Translation_zh": "低的", "Translation_ru": "low"},
         {"n": 663, "TargetWord": "tief", "TargetArticle": "", "Translation": "deep", "Translation_es": "profundo", "Translation_ja": "深い", "Translation_zh": "深的", "Translation_ru": "deep"},
-        {"n": 664, "TargetWord": "bloß", "TargetArticle": "", "Translation": "merely", "TriggerLesson": "039", "Translation_es": "nada más, meramente", "Translation_ja": "ほんの〜にすぎない、単に", "Translation_zh": "仅仅，只不过", "Translation_ru": "merely, simply"},
+        {"n": 664, "TargetWord": "bloß", "TargetArticle": "", "Translation": "merely, simply", "TriggerLesson": "039", "Translation_es": "nada más, meramente", "Translation_ja": "ほんの〜にすぎない、単に", "Translation_zh": "仅仅，只不过", "Translation_ru": "merely, simply"},
         {"n": 665, "TargetWord": "eben", "TargetArticle": "", "Translation": "just", "Translation_es": "justamente, precisamente", "Translation_ja": "まさに、やはり", "Translation_zh": "就是，恰恰", "Translation_ru": "just"},
         {"n": 666, "TargetWord": "erst", "TargetArticle": "", "Translation": "first", "Translation_es": "recién, primero", "Translation_ja": "まず、ようやく", "Translation_zh": "才，刚刚", "Translation_ru": "first"},
         {"n": 667, "TargetWord": "etliche", "TargetArticle": "", "Translation": "several", "Translation_es": "varios, unos cuantos", "Translation_ja": "かなりの数の、いくつもの", "Translation_zh": "若干，数个", "Translation_ru": "several"},
@@ -827,7 +827,7 @@
     {
       "cluster_id": "T9-C5", "tier": 9, "slug": "cluster9_5_negative_adjectives",
       "cards": [
-        {"n": 681, "TargetWord": "lästig", "TargetArticle": "", "Translation": "annoying", "Translation_es": "fastidioso", "Translation_ja": "煩わしい、厄介な", "Translation_zh": "烦人的；令人讨厌的", "Translation_ru": "burdensome, annoying"},
+        {"n": 681, "TargetWord": "lästig", "TargetArticle": "", "Translation": "burdensome, annoying", "Translation_es": "fastidioso", "Translation_ja": "煩わしい、厄介な", "Translation_zh": "烦人的；令人讨厌的", "Translation_ru": "burdensome, annoying"},
         {"n": 682, "TargetWord": "nachteilig", "TargetArticle": "", "Translation": "disadvantageous", "Translation_es": "perjudicial", "Translation_ja": "不利な、悪影響のある", "Translation_zh": "不利的", "Translation_ru": "disadvantageous"},
         {"n": 683, "TargetWord": "negativ", "TargetArticle": "", "Translation": "negative", "Translation_es": "negativo", "Translation_ja": "否定的な、マイナスの", "Translation_zh": "消极的；负面的", "Translation_ru": "negative"},
         {"n": 684, "TargetWord": "riskant", "TargetArticle": "", "Translation": "risky", "Translation_es": "arriesgado", "Translation_ja": "危険な、リスクの高い", "Translation_zh": "有风险的", "Translation_ru": "risky"},
@@ -868,15 +868,15 @@
       "cluster_id": "T9-C6", "tier": 9, "slug": "cluster9_6_mixed_action_verbs",
       "cards": [
         {"n": 716, "TargetWord": "campen", "TargetArticle": "", "Translation": "to camp", "Translation_es": "acampar", "Translation_ja": "キャンプをする", "Translation_zh": "露营", "Translation_ru": "to camp"},
-        {"n": 717, "TargetWord": "einchecken", "TargetArticle": "", "Translation": "to check in", "Translation_es": "hacer el check-in", "Translation_ja": "チェックインする", "Translation_zh": "办理登机手续", "Translation_ru": "to check in"},
-        {"n": 718, "TargetWord": "einloggen", "TargetArticle": "", "Translation": "to log in", "Translation_es": "iniciar sesión", "Translation_ja": "ログインする", "Translation_zh": "登录", "Translation_ru": "to log in"},
-        {"n": 719, "TargetWord": "einnehmen", "TargetArticle": "", "Translation": "to take", "Translation_es": "tomar (medicamento)", "Translation_ja": "（薬を）服用する", "Translation_zh": "服用；占据", "Translation_ru": "to take"},
+        {"n": 717, "TargetWord": "ein|checken", "TargetArticle": "", "Translation": "to check in", "Translation_es": "hacer el check-in", "Translation_ja": "チェックインする", "Translation_zh": "办理登机手续", "Translation_ru": "to check in"},
+        {"n": 718, "TargetWord": "sich ein|loggen", "TargetArticle": "", "Translation": "to log in", "Translation_es": "iniciar sesión", "Translation_ja": "ログインする", "Translation_zh": "登录", "Translation_ru": "to log in"},
+        {"n": 719, "TargetWord": "ein|nehmen", "TargetArticle": "", "Translation": "to take", "Translation_es": "tomar (medicamento)", "Translation_ja": "（薬を）服用する", "Translation_zh": "服用；占据", "Translation_ru": "to take"},
         {"n": 720, "TargetWord": "ein|stellen", "TargetArticle": "", "Translation": "to hire", "Translation_es": "contratar", "Translation_ja": "雇う、採用する", "Translation_zh": "聘用，雇用", "Translation_ru": "to hire"},
         {"n": 721, "TargetWord": "erfreulich", "TargetArticle": "", "Translation": "pleasing", "Translation_es": "grato", "Translation_ja": "喜ばしい", "Translation_zh": "令人愉快的", "Translation_ru": "pleasing"},
         {"n": 722, "TargetWord": "planen", "TargetArticle": "", "Translation": "to plan", "Translation_es": "planear", "Translation_ja": "計画する", "Translation_zh": "计划", "Translation_ru": "to plan"},
         {"n": 723, "TargetWord": "verlieren", "TargetArticle": "", "Translation": "to lose", "Translation_es": "perder", "Translation_ja": "失う、なくす", "Translation_zh": "丢失，失去", "Translation_ru": "to lose"},
         {"n": 724, "TargetWord": "versprechen", "TargetArticle": "", "Translation": "to promise", "Translation_es": "prometer", "Translation_ja": "約束する", "Translation_zh": "承诺，答应", "Translation_ru": "to promise"},
-        {"n": 725, "TargetWord": "vorhersagen", "TargetArticle": "", "Translation": "to predict", "Translation_es": "predecir", "Translation_ja": "予測する、予報する", "Translation_zh": "预测", "Translation_ru": "to predict"},
+        {"n": 725, "TargetWord": "vorher|sagen", "TargetArticle": "", "Translation": "to predict", "Translation_es": "predecir", "Translation_ja": "予測する、予報する", "Translation_zh": "预测", "Translation_ru": "to predict"},
         {"n": 726, "TargetWord": "vorteilhaft", "TargetArticle": "", "Translation": "advantageous", "Translation_es": "ventajoso", "Translation_ja": "有利な", "Translation_zh": "有利的", "Translation_ru": "advantageous"},
         {"n": 727, "TargetWord": "Aufführung", "TargetArticle": "die", "Translation": "performance", "Translation_es": "representación", "Translation_ja": "上演、公演", "Translation_zh": "演出", "Translation_ru": "performance"},
         {"n": 728, "TargetWord": "Ausstattung", "TargetArticle": "die", "Translation": "equipment", "Translation_es": "equipamiento", "Translation_ja": "設備、備品", "Translation_zh": "设备；装备", "Translation_ru": "equipment"},
@@ -965,7 +965,7 @@
         {"n": 796, "TargetWord": "Belohnung", "TargetArticle": "die", "Translation": "reward", "Translation_es": "recompensa", "Translation_ja": "報酬、褒美", "Translation_zh": "奖励", "Translation_ru": "reward"},
         {"n": 797, "TargetWord": "Bemerkung", "TargetArticle": "die", "Translation": "remark", "Translation_es": "observación", "Translation_ja": "所見、ひとこと", "Translation_zh": "评论；意见", "Translation_ru": "remark"},
         {"n": 798, "TargetWord": "Beratung", "TargetArticle": "die", "Translation": "consultation", "Translation_es": "asesoramiento", "Translation_ja": "相談、助言", "Translation_zh": "咨询", "Translation_ru": "consultation"},
-        {"n": 799, "TargetWord": "Besprechung", "TargetArticle": "die", "Translation": "meeting", "Translation_ru": "meeting"},
+        {"n": 799, "TargetWord": "Einwand", "TargetArticle": "der", "Translation": "objection", "Translation_es": "objeción", "Translation_ja": "異議、反論", "Translation_zh": "异议", "Translation_ru": "objection"},
         {"n": 800, "TargetWord": "Betonung", "TargetArticle": "die", "Translation": "emphasis", "Translation_es": "énfasis, acento", "Translation_ja": "強調、アクセント", "Translation_zh": "重音；强调", "Translation_ru": "emphasis"},
         {"n": 801, "TargetWord": "Diskussion", "TargetArticle": "die", "Translation": "discussion", "Translation_es": "discusión", "Translation_ja": "議論、討論", "Translation_zh": "讨论", "Translation_ru": "discussion"},
         {"n": 802, "TargetWord": "Empfehlung", "TargetArticle": "die", "Translation": "recommendation", "Translation_es": "recomendación", "Translation_ja": "推薦、勧め", "Translation_zh": "推荐；建议", "Translation_ru": "recommendation"},
@@ -1060,7 +1060,7 @@
       "cluster_id": "T10-C4", "tier": 10, "slug": "cluster10_4_time_adverbs",
       "cards": [
         {"n": 878, "TargetWord": "vorübergehend", "TargetArticle": "", "Translation": "temporary", "Translation_es": "temporal", "Translation_ja": "一時的な、当面の", "Translation_zh": "暂时的；临时地", "Translation_ru": "temporary"},
-        {"n": 879, "TargetWord": "zeitweise", "TargetArticle": "", "Translation": "temporarily", "Translation_es": "por momentos", "Translation_ja": "時折、断続的に", "Translation_zh": "有时；间歇地；断断续续地", "Translation_ru": "at times, intermittently, on and off"},
+        {"n": 879, "TargetWord": "zeitweise", "TargetArticle": "", "Translation": "at times, intermittently, on and off", "Translation_es": "por momentos", "Translation_ja": "時折、断続的に", "Translation_zh": "有时；间歇地；断断续续地", "Translation_ru": "at times, intermittently, on and off"},
         {"n": 880, "TargetWord": "aufgrund", "TargetArticle": "", "Translation": "due to", "Translation_es": "debido a", "Translation_ja": "〜のために（原因）", "Translation_zh": "由于", "Translation_ru": "due to"},
         {"n": 881, "TargetWord": "außerhalb", "TargetArticle": "", "Translation": "outside", "Translation_es": "fuera de", "Translation_ja": "〜の外に、〜の外で", "Translation_zh": "在……之外", "Translation_ru": "outside"},
         {"n": 882, "TargetWord": "diesseits", "TargetArticle": "", "Translation": "on this side of", "Translation_es": "de este lado de", "Translation_ja": "〜のこちら側に", "Translation_zh": "在……此侧", "Translation_ru": "on this side of"},
@@ -1078,12 +1078,12 @@
         {"n": 894, "TargetWord": "ohnehin", "TargetArticle": "", "Translation": "anyway", "Translation_es": "de por sí", "Translation_ja": "もともと、いずれにせよ", "Translation_zh": "反正，无论如何", "Translation_ru": "anyway"},
         {"n": 895, "TargetWord": "sowieso", "TargetArticle": "", "Translation": "anyway", "Translation_es": "de todos modos", "Translation_ja": "どうせ、どのみち", "Translation_zh": "反正，无论如何", "Translation_ru": "anyway"},
         {"n": 896, "TargetWord": "ab|schließen", "TargetArticle": "", "Translation": "to finish", "Translation_es": "concluir, terminar", "Translation_ja": "終える、完了する", "Translation_zh": "完成，结束", "Translation_ru": "to finish"},
-        {"n": 897, "TargetWord": "abmelden", "TargetArticle": "", "Translation": "to unregister", "Translation_es": "darse de baja", "Translation_ja": "登録を抹消する", "Translation_zh": "注销，退订", "Translation_ru": "to unregister"},
-        {"n": 898, "TargetWord": "anmelden", "TargetArticle": "", "Translation": "to register", "Translation_es": "inscribirse", "Translation_ja": "登録する、申し込む", "Translation_zh": "注册，报名", "Translation_ru": "to register"},
-        {"n": 899, "TargetWord": "anstehen", "TargetArticle": "", "Translation": "to stand in line", "Translation_es": "hacer fila", "Translation_ja": "列に並ぶ", "Translation_zh": "排队", "Translation_ru": "to stand in line"},
-        {"n": 900, "TargetWord": "auschecken", "TargetArticle": "", "Translation": "to check out", "Translation_es": "hacer el check-out", "Translation_ja": "チェックアウトする", "Translation_zh": "退房", "Translation_ru": "to check out"},
-        {"n": 901, "TargetWord": "ausloggen", "TargetArticle": "", "Translation": "to log out", "Translation_es": "cerrar sesión", "Translation_ja": "ログアウトする", "Translation_zh": "登出", "Translation_ru": "to log out"},
-        {"n": 902, "TargetWord": "beitreten", "TargetArticle": "", "Translation": "to join", "Translation_es": "afiliarse a", "Translation_ja": "加入する、入会する", "Translation_zh": "加入", "Translation_ru": "to join"},
+        {"n": 897, "TargetWord": "ab|melden", "TargetArticle": "", "Translation": "to unregister", "Translation_es": "darse de baja", "Translation_ja": "登録を抹消する", "Translation_zh": "注销，退订", "Translation_ru": "to unregister"},
+        {"n": 898, "TargetWord": "an|melden", "TargetArticle": "", "Translation": "to register", "Translation_es": "inscribirse", "Translation_ja": "登録する、申し込む", "Translation_zh": "注册，报名", "Translation_ru": "to register"},
+        {"n": 899, "TargetWord": "an|stehen", "TargetArticle": "", "Translation": "to stand in line", "Translation_es": "hacer fila", "Translation_ja": "列に並ぶ", "Translation_zh": "排队", "Translation_ru": "to stand in line"},
+        {"n": 900, "TargetWord": "aus|checken", "TargetArticle": "", "Translation": "to check out", "Translation_es": "hacer el check-out", "Translation_ja": "チェックアウトする", "Translation_zh": "退房", "Translation_ru": "to check out"},
+        {"n": 901, "TargetWord": "aus|loggen", "TargetArticle": "", "Translation": "to log out", "Translation_es": "cerrar sesión", "Translation_ja": "ログアウトする", "Translation_zh": "登出", "Translation_ru": "to log out"},
+        {"n": 902, "TargetWord": "bei|treten", "TargetArticle": "", "Translation": "to join", "Translation_es": "afiliarse a", "Translation_ja": "加入する、入会する", "Translation_zh": "加入", "Translation_ru": "to join"},
         {"n": 903, "TargetWord": "beschleunigen", "TargetArticle": "", "Translation": "to accelerate", "Translation_es": "acelerar", "Translation_ja": "加速する、速める", "Translation_zh": "加速", "Translation_ru": "to accelerate"}
       ]
     },
@@ -1095,7 +1095,7 @@
         {"n": 906, "TargetWord": "Staat", "TargetArticle": "der", "Translation": "state", "Translation_es": "Estado", "Translation_ja": "国家", "Translation_zh": "国家", "Translation_ru": "state"},
         {"n": 907, "TargetWord": "Verwaltung", "TargetArticle": "die", "Translation": "administration", "TriggerLesson": "041", "Translation_es": "administración", "Translation_ja": "行政、管理部門", "Translation_zh": "行政部门", "Translation_ru": "administration"},
         {"n": 908, "TargetWord": "Wahl", "TargetArticle": "die", "Translation": "election", "Translation_es": "elección", "Translation_ja": "選挙", "Translation_zh": "选举", "Translation_ru": "election"},
-        {"n": 909, "TargetWord": "abstimmen", "TargetArticle": "", "Translation": "to vote", "Translation_es": "votar", "Translation_ja": "投票する、採決する", "Translation_zh": "投票", "Translation_ru": "to vote"},
+        {"n": 909, "TargetWord": "ab|stimmen", "TargetArticle": "", "Translation": "to vote", "Translation_es": "votar", "Translation_ja": "投票する、採決する", "Translation_zh": "投票", "Translation_ru": "to vote"},
         {"n": 910, "TargetWord": "administrativ", "TargetArticle": "", "Translation": "administrative", "Translation_es": "administrativo", "Translation_ja": "事務的な、管理上の", "Translation_zh": "行政的", "Translation_ru": "administrative"},
         {"n": 911, "TargetWord": "amtlich", "TargetArticle": "", "Translation": "official", "Translation_es": "oficial", "Translation_ja": "公的な、公式の", "Translation_zh": "官方的", "Translation_ru": "official"},
         {"n": 912, "TargetWord": "behördlich", "TargetArticle": "", "Translation": "official, by the authorities", "Translation_es": "de las autoridades", "Translation_ja": "当局の、官庁による", "Translation_zh": "官方的，当局的", "Translation_ru": "official, by the authorities"},
@@ -1130,11 +1130,11 @@
         {"n": 936, "TargetWord": "Politiker/in", "TargetArticle": "der/die", "Translation": "politician", "Translation_es": "político", "Translation_ja": "政治家", "Translation_zh": "政治家", "Translation_ru": "politician"},
         {"n": 937, "TargetWord": "Soziologe/in", "TargetArticle": "der/die", "Translation": "sociologist", "Translation_es": "sociólogo", "Translation_ja": "社会学者", "Translation_zh": "社会学家", "Translation_ru": "sociologist"},
         {"n": 938, "TargetWord": "Spezialist/in", "TargetArticle": "der/die", "Translation": "specialist", "Translation_es": "especialista", "Translation_ja": "スペシャリスト、（特定分野の）専門家", "Translation_zh": "专家", "Translation_ru": "specialist"},
-        {"n": 939, "TargetWord": "Verwaltungsbeamte/r", "TargetArticle": "der/die", "Translation": "administrative officer", "Translation_ru": "administrative officer"},
+        {"n": 939, "TargetWord": "Verwaltungsbeamte/in", "TargetArticle": "der/die", "Translation": "administrative officer", "Translation_es": "funcionario administrativo", "Translation_ja": "行政官、行政職員", "Translation_zh": "行政官员", "Translation_ru": "administrative officer"},
         {"n": 940, "TargetWord": "Akademie", "TargetArticle": "die", "Translation": "academy", "Translation_es": "academia", "Translation_ja": "アカデミー、学院", "Translation_zh": "学院", "Translation_ru": "academy"},
         {"n": 941, "TargetWord": "Expertise", "TargetArticle": "die", "Translation": "expertise", "Translation_es": "pericia", "Translation_ja": "専門知識", "Translation_zh": "专业知识", "Translation_ru": "expertise"},
         {"n": 942, "TargetWord": "akademisch", "TargetArticle": "", "Translation": "academic", "Translation_es": "académico (adj.)", "Translation_ja": "学問的な、大学の", "Translation_zh": "学术的", "Translation_ru": "academic"},
-        {"n": 943, "TargetWord": "Besuchzeit", "TargetArticle": "die", "Translation": "visiting hours", "Translation_ru": "visiting hours"},
+        {"n": 943, "TargetWord": "Besuchszeit", "TargetArticle": "die", "Translation": "visiting hours", "Translation_es": "horario de visitas", "Translation_ja": "面会時間", "Translation_zh": "探视时间", "Translation_ru": "visiting hours"},
         {"n": 944, "TargetWord": "Folge", "TargetArticle": "die", "Translation": "consequence", "Translation_es": "consecuencia", "Translation_ja": "結果、帰結", "Translation_zh": "后果", "Translation_ru": "consequence"}
       ]
     },
@@ -1166,7 +1166,7 @@
         {"n": 967, "TargetWord": "einig", "TargetArticle": "", "Translation": "agreed", "Translation_es": "de acuerdo", "Translation_ja": "意見が一致した", "Translation_zh": "意见一致的", "Translation_ru": "agreed"},
         {"n": 968, "TargetWord": "normal", "TargetArticle": "", "Translation": "normal", "Translation_es": "normal", "Translation_ja": "普通の、正常な", "Translation_zh": "正常的", "Translation_ru": "normal"},
         {"n": 969, "TargetWord": "normalisieren", "TargetArticle": "", "Translation": "to normalize", "Translation_es": "normalizar", "Translation_ja": "正常化する", "Translation_zh": "使正常化", "Translation_ru": "to normalize"},
-        {"n": 970, "TargetWord": "zusammenarbeiten", "TargetArticle": "", "Translation": "to cooperate", "Translation_es": "cooperar", "Translation_ja": "協力する、共同で働く", "Translation_zh": "合作", "Translation_ru": "to cooperate"},
+        {"n": 970, "TargetWord": "zusammen|arbeiten", "TargetArticle": "", "Translation": "to cooperate", "Translation_es": "cooperar", "Translation_ja": "協力する、共同で働く", "Translation_zh": "合作", "Translation_ru": "to cooperate"},
         {"n": 971, "TargetWord": "Lied", "TargetArticle": "das", "Translation": "song", "Translation_es": "canción", "Translation_ja": "歌、楽曲", "Translation_zh": "歌曲", "Translation_ru": "song"},
         {"n": 972, "TargetWord": "Scherz", "TargetArticle": "der", "Translation": "joke", "Translation_es": "broma", "Translation_ja": "冗談、たわむれ", "Translation_zh": "玩笑", "Translation_ru": "joke"}
       ]

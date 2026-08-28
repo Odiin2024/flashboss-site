@@ -323,7 +323,7 @@ const LANGS = ["Italian","German","Spanish","French","Esperanto","Toki Pona","En
 const SETS  = ["Core","Pareto 1","Pareto 2"];
 const CORE_ONLY = ["Toki Pona"];   // complete in one Core set — no Pareto extensions published
 /* English ships as named packs, each in its own folder, with a single CORE_FINAL.json */
-const ENGLISH_PACKS = [["Adept","ad"],["Advance","adv"],["German Roots","gr"],["Greek Roots","gkr"],["Norman Roots","nr"],["Latin Roots","lr"]];
+const ENGLISH_PACKS = [["Core","core"],["Pareto 1","p1"],["Pareto 2","p2"],["Adept","ad"],["Advance","adv"],["German Roots","gr"],["Greek Roots","gkr"],["Norman Roots","nr"],["Latin Roots","lr"]];
 function setsFor(lang){ return lang==='English' ? ENGLISH_PACKS.map(p=>p[0]) : (CORE_ONLY.includes(lang) ? ["Core"] : SETS); }
 function dataUrl(lang, set){
   if(lang==='English'){
