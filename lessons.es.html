@@ -88,6 +88,8 @@ select:focus{outline:1px solid var(--accent);}
 .loctog .seg.on{color:#0c0a06; background:var(--accent); font-weight:700;}
 .loctog .seg:not(.on):hover{color:var(--ink);}
 .loctog.disabled{opacity:.32; pointer-events:none;}
+#spellField[hidden]{display:none;}
+#spellTog .seg{font-size:11px; padding:0 9px;}
 .loctog.disabled .seg.on{background:transparent; color:var(--faint); font-weight:400;}
 /* portrait: row 1 = Language + Set + toggle (labels hidden, selects flex to fit); row 2 = Lesson full width */
 @media(max-width:560px){
@@ -181,6 +183,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
 <div class="wrap">
   <div class="bar">
     <div class="field"><label for="langSel">Idioma</label><select id="langSel" aria-label="Idioma"></select></div>
+    <div class="field" id="spellField" hidden><label for="spellTog">Ortografía</label><div class="loctog" id="spellTog" role="group" aria-label="Ortografía"><button type="button" class="seg" data-sp="us">US</button><button type="button" class="seg" data-sp="gb">UK</button></div></div>
     <div class="field"><label id="setLbl" for="setSel">Conjunto</label><select id="setSel" aria-label="Conjunto"></select></div>
     <div class="field"><label for="lessonSel">Lección</label><select id="lessonSel" aria-label="Lección"></select></div>
     <div class="loctog disabled" id="loctog" role="group" aria-label="Idioma de visualización de la lección">
@@ -228,7 +231,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
    so only the embedded SAMPLE (Italian) appears. Over GitHub Pages — or any
    http server, e.g. `python3 -m http.server` — every language loads for real.
    ============================================================ */
-const LANGS=["Italian","German","Spanish","French","Esperanto","Toki Pona","English"];
+const LANGS=["Italian","German","Spanish","French","Latin","Esperanto","Toki Pona","English"];
 const LANG_LABEL={Italian:"Italiano",German:"Alemán",Spanish:"Español",French:"Francés",Esperanto:"Esperanto","Toki Pona":"Toki Pona",English:"Inglés"};
 function langLabel(l){return LANG_LABEL[l]||l;}
 const TIERS=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
@@ -236,12 +239,16 @@ const SETS=["Core","Pareto 1","Pareto 2"];          // foreign languages: tier 1
 function tierSet(t){ return t<=5?"Core":t<=10?"Pareto 1":"Pareto 2"; }
 /* English ships as named packs, each its own folder with one Core set (tiers 1-5);
    the "set" selector picks the pack, so changing it reloads from a different folder */
-const ENGLISH_PACKS=[["Adept","ad"],["Advance","adv"],["German Roots","gr"],["Greek Roots","gkr"],["Norman Roots","nr"],["Latin Roots","lr"]];
+const ENGLISH_PACKS=[["Core","core"],["Pareto 1","p1"],["Pareto 2","p2"],["Adept","ad"],["Advance","adv"],["German Roots","gr"],["Greek Roots","gkr"],["Norman Roots","nr"],["Latin Roots","lr"]];
 function isEng(lang){ return (lang||langSel.value)==='English'; }
 function engCode(set){ return (ENGLISH_PACKS.find(p=>p[0]===set)||[])[1] || String(set).toLowerCase(); }
-function setsFor(lang){ return lang==='English' ? ENGLISH_PACKS.map(p=>p[0]) : SETS; }
-const TIER_AVAIL={"Toki Pona":[1,2,3,4,5], English:[1,2,3,4,5]};   // published tiers per pack — everything else has all 15; keeps us from fetching tiers that would 404
-function tiersFor(lang){ return TIER_AVAIL[lang] || TIERS; }
+const SETS_BY_LANG={"Latin":["Core","Pareto 1"]};   // Latin has no Pareto 2
+function setsFor(lang){ return lang==='English' ? ENGLISH_PACKS.map(p=>p[0]) : (SETS_BY_LANG[lang] || SETS); }
+const TIER_AVAIL={"Toki Pona":[1,2,3,4,5], Latin:[1,2,3,4,5,6,7,8,9,10]};   // published tiers per language — everything else has all 15; keeps us from fetching tiers that would 404
+/* English is per PACK, not per language: Core is tiers 1-5, Pareto 1 is 6-10,
+   Pareto 2 is 11-15, and the standalone packs are all 1-5. */
+const ENG_TIERS={"Core":[1,2,3,4,5],"Pareto 1":[6,7,8,9,10],"Pareto 2":[11,12,13,14,15]};
+function tiersFor(lang, set){ return lang==='English' ? (ENG_TIERS[set] || [1,2,3,4,5]) : (TIER_AVAIL[lang] || TIERS); }
 const LESSON_LOC='es';   // this page's locale — its lesson twin is tried first, the English file is the fallback
 function lessonUrl(lang, set, tier, loc){
   const suf=loc?`_${loc}`:'';
@@ -250,8 +257,8 @@ function lessonUrl(lang, set, tier, loc){
     : `data/${lang.toLowerCase().replace(/\s+/g,'_')}/tier${tier}_lessons${suf}.json`;   // "Toki Pona" -> data/toki_pona/
 }
 /* Toki Pona has no system voice; in-game it speaks through the Esperanto voice, so "eo" here too */
-const SPEECH_LANG={Italian:"it-IT",German:"de-DE",Spanish:"es-ES",French:"fr-FR",Esperanto:"eo","Toki Pona":"eo",English:"en-US"};
-const FOREIGN_CODE={Italian:"IT",German:"DE",Spanish:"ES",French:"FR",Esperanto:"EO","Toki Pona":"TP"};
+const SPEECH_LANG={Italian:"it-IT",German:"de-DE",Spanish:"es-ES",French:"fr-FR",Esperanto:"eo","Toki Pona":"eo",English:"en-US",Latin:"it-IT"};   // no browser voice speaks Latin; Italian vowels are the closest fallback
+const FOREIGN_CODE={Italian:"IT",German:"DE",Spanish:"ES",French:"FR",Esperanto:"EO","Toki Pona":"TP",Latin:"LA"};
 const COLORS={green:'--green',blue:'--blue',gold:'--gold',amber:'--gold',rose:'--rose',purple:'--purple',cyan:'--cyan',magenta:'--magenta'};
 
 /* Preview-only fallback (used when fetch fails, e.g. file:// preview). Delete once data is hosted. */
@@ -322,14 +329,29 @@ function moonPhase(d){
 }
 const MOON=moonPhase();
 
+/* UK/US spelling — shares localStorage with the word lists page, so flipping it
+   in either place moves the other. Lesson text has a British twin on only a few
+   tiers; where none exists the base file is served, which is correct. */
+const SPELL_KEY='fb_spelling';
+let spelling='us';
+try{ if(localStorage.getItem(SPELL_KEY)==='gb') spelling='gb'; }catch(e){}
+function paintSpell(){ const t=document.getElementById('spellTog'); if(!t) return;
+  t.querySelectorAll('.seg').forEach(b=>b.classList.toggle('on', b.dataset.sp===spelling)); }
+async function fetchTier(lang, set, t){
+  const base=lessonUrl(lang,set,t);
+  if(spelling==='gb'){
+    try{ const g=await fetch(base.replace(/\.json$/,'_gb.json'),{cache:'no-store'}); if(g.ok) return g; }catch(e){}
+  }
+  return fetch(base,{cache:'no-store'});
+}
 async function loadLessons(lang, set){
-  const key = lang==='English' ? lang+'|'+set : lang;       // English caches per pack
+  const key = (lang==='English' ? lang+'|'+set : lang)+'|'+spelling;   // English caches per pack; spelling picks a different file
   if(cache[key]!==undefined) return cache[key];
   let all=[];
-  for(const t of tiersFor(lang)){
+  for(const t of tiersFor(lang, set)){
     try{
       let r = lang==='English' ? null : await fetch(lessonUrl(lang,set,t,LESSON_LOC),{cache:'no-store'});
-      if(!r||!r.ok) r=await fetch(lessonUrl(lang,set,t),{cache:'no-store'});   // no localized twin for this tier — English lessons
+      if(!r||!r.ok) r=await fetchTier(lang,set,t);   // no localized twin for this tier — English lessons (UK twin first when chosen)
       if(r.ok){ const arr=await r.json(); (arr||[]).forEach(L=>L._tier=t); all=all.concat(arr); } }catch(e){}
   }
   if(!all.length && lang!=='English' && SAMPLE[lang]) all = SAMPLE[lang].map(L=>Object.assign({_tier:1},L));
@@ -355,7 +377,8 @@ function renderSetSelect(){
 }
 function firstLessonInSet(s){ if(isEng()) return 0; for(let i=0;i<LESSONS.length;i++) if(tierSet(LESSONS[i]._tier)===s) return i; return 0; }
 function syncSetToLesson(){ if(isEng()){ setSel.value=curSet; return; } curSet=tierSet(LESSONS[li]._tier); setSel.value=curSet; }
-function updateSetLabel(){ setLbl.textContent=(langSel.value==='English')?'Paquete':'Conjunto'; }  // English packs aren't Core/Pareto sets
+function updateSetLabel(){ setLbl.textContent=(langSel.value==='English')?'Paquete':'Conjunto'; 
+  const sf=document.getElementById('spellField'); if(sf) sf.hidden=(langSel.value!=='English'); }  // English packs aren't Core/Pareto sets
 
 /* ---------- the window ---------- */
 function lineToHTML(line, allowPress){
@@ -477,6 +500,11 @@ async function selectSet(){
   renderLessonSelect(); renderScreen(); setURL();
 }
 
+(function(){ const t=document.getElementById('spellTog'); if(!t) return;
+  t.addEventListener('click', e=>{ const b=e.target.closest('.seg'); if(!b) return;
+    spelling=b.dataset.sp; try{ localStorage.setItem(SPELL_KEY, spelling); }catch(e){}
+    paintSpell(); load(); });
+  paintSpell(); })();
 langSel.innerHTML=LANGS.map(l=>`<option value="${l}">${l}</option>`).join('');
 langSel.addEventListener('change',()=>selectLang(langSel.value));
 setSel.addEventListener('change',selectSet);

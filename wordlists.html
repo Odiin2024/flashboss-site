@@ -224,6 +224,12 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
     display:flex; align-items:center; padding:6px 10px;}
   .defs.hide-trans .def .dd{visibility:hidden;}
 }
+.spell{display:inline-flex; border:1px solid var(--line); user-select:none; align-self:stretch;}
+.spell .sp{font-family:var(--mono); font-size:11px; letter-spacing:.08em; color:var(--dim); background:var(--panel); border:0; padding:0 9px; cursor:pointer;}
+.spell .sp + .sp{border-left:1px solid var(--line);}
+.spell .sp.on{color:var(--bg); background:var(--accent); font-weight:700;}
+.spell .sp:not(.on):hover{color:var(--ink);}
+#spellField[hidden]{display:none;}
 </style>
 <script src="lang-redirect.js"></script>
 </head>
@@ -261,6 +267,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
 <div class="controls printhide">
   <div class="wrap row">
     <div class="field"><label for="packSel">Pack</label><select id="packSel"></select></div>
+    <div class="field" id="spellField" hidden><label for="spellTog">Spelling</label><div class="spell" id="spellTog" role="group" aria-label="Spelling"><button type="button" class="sp" data-sp="us">US</button><button type="button" class="sp" data-sp="gb">UK</button></div></div>
     <div class="field"><label id="setLbl" for="setSel">Set</label><select id="setSel"></select></div>
     <div class="field"><label for="clusterTrigger">Clusters</label>
       <div class="msel" id="clusterMsel">
@@ -319,12 +326,12 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
    Uses the FINAL.json (relative-numbered) per-set files. Numbering
    is never displayed, so GLOBAL.json would also work unchanged.
    ============================================================ */
-const LANGS = ["Italian","German","Spanish","French","Esperanto","Toki Pona","English"];
+const LANGS = ["Italian","German","Spanish","French","Latin","Esperanto","Toki Pona","English"];
 const SETS  = ["Core","Pareto 1","Pareto 2"];
-const CORE_ONLY = ["Toki Pona"];   // complete in one Core set — no Pareto extensions published
+const SETS_BY_LANG = {"Toki Pona":["Core"], "Latin":["Core","Pareto 1"]};   // published sets per language; everything else has all three
 /* English ships as named packs, each in its own folder, with a single CORE_FINAL.json */
 const ENGLISH_PACKS = [["Core","core"],["Pareto 1","p1"],["Pareto 2","p2"],["Adept","ad"],["Advance","adv"],["German Roots","gr"],["Greek Roots","gkr"],["Norman Roots","nr"],["Latin Roots","lr"]];
-function setsFor(lang){ return lang==='English' ? ENGLISH_PACKS.map(p=>p[0]) : (CORE_ONLY.includes(lang) ? ["Core"] : SETS); }
+function setsFor(lang){ return lang==='English' ? ENGLISH_PACKS.map(p=>p[0]) : (SETS_BY_LANG[lang] || SETS); }
 function dataUrl(lang, set){
   if(lang==='English'){
     const code=(ENGLISH_PACKS.find(p=>p[0]===set)||[])[1] || set.toLowerCase();
@@ -390,10 +397,19 @@ function asList(v){ return Array.isArray(v)?v.join(', '):String(v==null?'':v); }
 function synOf(c){ if(c.syn!=null)return asList(c.syn); if(c.synonyms!=null)return asList(c.synonyms); const m=/syn[:\s]\s*([^|]+)/i.exec(c.Notes||''); return m?m[1].trim():''; }
 function antOf(c){ if(c.ant!=null)return asList(c.ant); if(c.antonyms!=null)return asList(c.antonyms); const m=/ant[:\s]\s*([^|]+)/i.exec(c.Notes||''); return m?m[1].trim():''; }
 function posOf(c){ if(c.pos!=null)return asList(c.pos); const m=/^([a-z]+(?:\/[a-z]+)*)/.exec((c.Notes||'').trim()); return m?m[1]:''; }  // part of speech (front-face fallback)
+/* UK/US spelling. The data ships American with the British twin inline on the
+   ~500 cards that differ, so the toggle is a field swap, not a refetch. The
+   choice is shared with the lessons page through localStorage. */
+const SPELL_KEY='fb_spelling';
+let spelling='us';
+try{ if(localStorage.getItem(SPELL_KEY)==='gb') spelling='gb'; }catch(e){}
+function sv(c,k){ return (spelling==='gb' && c[k+'_gb']) ? c[k+'_gb'] : c[k]; }
+function paintSpell(){ const t=document.getElementById('spellTog'); if(!t) return;
+  t.querySelectorAll('.sp').forEach(b=>b.classList.toggle('on', b.dataset.sp===spelling)); }
 function normCards(cluster){
   // foreign: {TargetWord,Translation}; English: {TargetWord,definition[,syn,ant,pos]}
-  return (cluster.cards||[]).map(c=>({ w:c.TargetWord,
-    t: c.definition!=null?c.definition:(c.Translation!=null?c.Translation:''),
+  return (cluster.cards||[]).map(c=>({ w:sv(c,'TargetWord'),
+    t: c.definition!=null?sv(c,'definition'):(c.Translation!=null?sv(c,'Translation'):''),
     syn:synOf(c), ant:antOf(c), pos:posOf(c) }));
 }
 
@@ -511,8 +527,14 @@ function updateSetLabel(){
   const eng=packSel.value==='English';
   setLbl.textContent = eng?'Pack':'Set';
   setSel.setAttribute('aria-label', eng?'Pack':'Set');
-  document.querySelector('.controls').classList.toggle('eng', eng);   // English: 'Pack' already labels the language selector
+  document.querySelector('.controls').classList.toggle('eng', eng);
+  const sf=document.getElementById('spellField'); if(sf) sf.hidden=!eng;   // only English has a spelling twin   // English: 'Pack' already labels the language selector
 }
+(function(){ const t=document.getElementById('spellTog'); if(!t) return;
+  t.addEventListener('click', e=>{ const b=e.target.closest('.sp'); if(!b) return;
+    spelling=b.dataset.sp; try{ localStorage.setItem(SPELL_KEY, spelling); }catch(e){}
+    paintSpell(); loadAndRender(); });
+  paintSpell(); })();
 packSel.addEventListener('change',()=>{ updateSetLabel(); fillSets(); loadAndRender(); });
 setSel.addEventListener('change',()=>loadAndRender());
 clusterSel.addEventListener('change',()=>{
