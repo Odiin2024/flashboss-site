@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Inject localized gloss fields (Translation_de/_es/_ja/_zh) into the site's
+"""Inject localized gloss fields (Translation_de/_es/_ja/_zh/_ru) into the site's
 word-list data files, sourced from the game repo's per-cluster card files.
 
 One source of truth: flashcard_sets/<Pack>/{core|pareto1|pareto2}/tier_N/<slug>/<slug>.json
@@ -23,7 +23,14 @@ import sys
 SITE_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_REPO = "/home/odiin/Documents/Bootcamp/knight/flashcard_sets"
 
-LOCALES = ("de", "es", "ja", "zh")
+LOCALES = ("de", "es", "ja", "zh", "ru")
+
+# Russian has no gloss layer upstream yet. Per Odiin's ruling it DEFAULTS TO
+# ENGLISH: Translation_ru takes the card's English Translation verbatim, so the
+# Russian word lists read English until a real ru layer is authored. English
+# packs are untouched — they are English-to-English already, through the site's
+# definition field (the Roots/Adept immersion ruling).
+SOURCE_KEY = {"ru": "Translation"}
 
 # site data file (relative to site root) -> repo set dir (relative to flashcard_sets)
 MAPPING = [
@@ -87,6 +94,23 @@ def build_set_index(repo_set_dir):
                 for c in cards:
                     index.setdefault(c.get("TargetWord"), []).append(c)
     return index
+
+
+def ru_self_fill(c, patched, stats):
+    """Give an unmatched site card its Translation_ru anyway.
+
+    Russian defaults to English, and this card's own English Translation IS
+    that value, so writing it is a visual no-op — the page would have fallen
+    back to Translation regardless. It keeps the ru layer complete instead of
+    ragged, so "does this card have Russian?" stays a straight yes/no.
+    """
+    if c.get("Translation_ru"):
+        return
+    v = c.get("Translation")
+    if isinstance(v, str) and v.strip():
+        c["Translation_ru"] = v
+        patched[id(c)] = True
+        stats["added"]["ru"] = stats["added"].get("ru", 0) + 1
 
 
 def unique(cands):
@@ -163,6 +187,7 @@ def process_file(site_path, repo_set_dir):
                 doc_cards.append(c)
                 stats["cards"] += 1
                 stats["unmatched"] += 1
+                ru_self_fill(c, patched, stats)
                 if len(stats["unmatched_words"]) < 8:
                     stats["unmatched_words"].append(c.get("TargetWord"))
             continue
@@ -175,6 +200,7 @@ def process_file(site_path, repo_set_dir):
             rc, rule = match_repo_card(c, i, repo_cards, by_word, set_index)
             if rc is None:
                 stats["unmatched"] += 1
+                ru_self_fill(c, patched, stats)
                 if len(stats["unmatched_words"]) < 12:
                     stats["unmatched_words"].append(c.get("TargetWord"))
                 continue
@@ -186,7 +212,7 @@ def process_file(site_path, repo_set_dir):
                     f"{c.get('TargetWord')}→{rc.get('TargetWord')} [{rule}]")
             for loc in LOCALES:
                 key = f"Translation_{loc}"
-                val = rc.get(key)
+                val = rc.get(SOURCE_KEY.get(loc, key))
                 if not isinstance(val, str) or not val.strip():
                     continue
                 if key not in c:
