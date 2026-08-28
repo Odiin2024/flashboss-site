@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Как FlashBoss обучает — техническая справка | FlashBoss</title>
+<meta name="description" content="Техническая справка для FlashBoss — архитектура контента, механика сессий, система босс-файтов для освоения и используемые элементы дизайна.">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Как FlashBoss обучает — техническая справка">
+<meta property="og:description" content="Архитектура контента, механика сессий, система босс-файтов для освоения и используемые элементы дизайна.">
+<meta property="og:image" content="https://odiin2024.github.io/flashboss-site/website_image.png">
+<meta property="og:url" content="https://odiin2024.github.io/flashboss-site/about.ru.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Как FlashBoss обучает — техническая справка">
+<meta name="twitter:description" content="Педагогика и механика FlashBoss — понятный ввод, практика извлечения, интервальное повторение и система босс-файтов для освоения.">
+<meta name="twitter:image" content="https://odiin2024.github.io/flashboss-site/website_image.png">
+
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/about.html">
+<link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/about.de.html">
+<link rel="alternate" hreflang="es" href="https://odiin2024.github.io/flashboss-site/about.es.html">
+<link rel="alternate" hreflang="ja" href="https://odiin2024.github.io/flashboss-site/about.ja.html">
+<link rel="alternate" hreflang="zh" href="https://odiin2024.github.io/flashboss-site/about.zh.html">
+<link rel="alternate" hreflang="ru" href="https://odiin2024.github.io/flashboss-site/about.ru.html">
+<link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/about.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   FlashBoss — How it teaches (about.html).
+   House terminal standard: home.png hero strip, neutral amber
+   terminal body. A long technical reference — TOC, spec tables,
+   ASCII diagrams, citations — in the same skin as the rest of
+   the site.
+   ============================================================ */
+:root{
+  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
+  --accent:#e0a93f; --green:#62d38a; --blue:#7ec8ff; --rose:#ff8fb0;
+  --line:#3a3120; --rule:#2a2417;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--mono); background:var(--bg); color:var(--ink); line-height:1.7; -webkit-font-smoothing:antialiased;}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.04) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.wrap{max-width:840px; margin:0 auto; padding:0 24px;}
+a{color:var(--accent);}
+
+nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line); position:relative; z-index:3; background:var(--bg);}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--dim); margin-right:auto;}
+nav .brand a, nav .brand .sep{color:var(--dim); text-decoration:none;}
+nav .brand a:hover{color:var(--ink);}
+nav .brand .here{font-weight:800; color:var(--ink);}
+nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--ink);}
+nav .brand .logo:hover{color:var(--accent);}
+nav .brand .pipe{color:var(--dim); margin:0 11px;}
+.nav-mobile{display:none;}
+.nav-mobile a{color:inherit; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.08em; opacity:.85;}
+.nav-mobile a:hover{opacity:1; color:var(--accent);}
+@media(max-width:640px){ nav .brand, nav .links{display:none;} .nav-mobile{display:flex; flex:1; justify-content:space-between; align-items:center;} .nav-mobile .r{display:flex; gap:18px;} }
+nav .links a{color:var(--ink); text-decoration:none; opacity:.7; margin-left:22px;}
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+nav .links a.steam{font-weight:800; opacity:1;}
+nav .lang-switch{position:relative; margin-left:22px;}
+nav .lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--ink); background:var(--bg); border:1px solid var(--dim); padding:5px 8px; line-height:1; cursor:pointer;}
+nav .lang-toggle:hover, nav .lang-toggle[aria-expanded="true"]{background:var(--ink); color:var(--bg);}
+nav .lang-caret{font-size:8px; line-height:1; transition:transform .15s ease;}
+nav .lang-toggle[aria-expanded="true"] .lang-caret{transform:rotate(180deg);}
+nav .lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--bg); border:1px solid var(--dim); min-width:120px; z-index:50;}
+nav .lang-menu[hidden]{display:none;}
+nav .lang-menu li{margin:0; padding-left:0; position:static;}
+nav .lang-menu li::before{content:none;}
+nav .lang-menu a{display:block; font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--ink); text-decoration:none; padding:7px 10px; white-space:nowrap; opacity:1; margin:0;}
+nav .lang-menu a:hover{background:var(--ink); color:var(--bg); text-decoration:none;}
+nav .lang-menu a[aria-current="true"]{color:var(--accent);}
+nav .lang-menu a[aria-current="true"]:hover{color:var(--bg);}
+
+/* HERO — home.png strip (matches resources / packs) */
+.hero{position:relative; padding:78px 0 60px; overflow:hidden;}
+.hero::before{content:""; position:absolute; inset:0; z-index:0; background:#0c0a06 url('home.png') center 30% / cover no-repeat;}
+.hero::after{content:""; position:absolute; inset:0; z-index:1; background:linear-gradient(180deg, rgba(16,13,8,.52) 0%, rgba(16,13,8,.74) 55%, var(--bg) 100%);}
+.hero .wrap{position:relative; z-index:2;}
+.hero .crumb{font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--accent);}
+.hero h1{font-size:clamp(34px,7vw,60px); margin:13px 0 12px; font-weight:800; letter-spacing:-.01em;}
+.hero .subtitle{max-width:62ch; color:var(--dim); font-size:15px;}
+
+/* TOC */
+.toc{position:relative; border:1px solid var(--line); border-left:2px solid var(--accent); background:var(--panel); padding:20px 24px 18px; margin:42px 0 12px;}
+.toc-title{position:absolute; top:0; left:16px; transform:translateY(-50%); background:var(--bg); padding:0 9px;
+  font-size:11px; letter-spacing:.2em; text-transform:uppercase; font-weight:700; color:var(--faint);}
+.toc ol{list-style:none; counter-reset:toc; columns:2; column-gap:60px;}
+@media(max-width:560px){.toc ol{columns:1;}}
+.toc li{counter-increment:toc; padding:3px 0; font-size:13.5px;}
+.toc li::before{content:counter(toc) ".  "; color:var(--faint);}
+.toc a{color:var(--dim); text-decoration:none;}
+.toc a:hover{color:var(--accent);}
+
+main{padding:18px 0 0; counter-reset:sec;}
+section{padding:30px 0; border-top:1px solid var(--rule);}
+section:first-child{border-top:0;}
+h2{counter-increment:sec; font-size:clamp(22px,4.5vw,30px); font-weight:800; letter-spacing:-.01em; color:var(--ink); margin-bottom:14px;}
+h2::before{content:counter(sec) ".  "; color:var(--accent); font-weight:800;}
+h3{font-size:15px; font-weight:700; color:var(--accent); margin:22px 0 6px; letter-spacing:.02em;}
+p{margin-bottom:14px; color:color-mix(in oklab, var(--ink), var(--dim) 30%); font-size:15px;}
+p:last-child{margin-bottom:0;}
+em{color:var(--ink); font-style:italic;}
+strong{color:var(--ink); font-weight:700;}
+code{font-family:var(--mono); font-size:.88em; color:var(--blue); background:rgba(126,200,255,.08); padding:1px 6px; border-radius:2px;}
+ul{margin:0 0 14px 0; padding-left:0; list-style:none;}
+ul li{position:relative; padding-left:20px; margin-bottom:6px; color:color-mix(in oklab, var(--ink), var(--dim) 30%); font-size:15px;}
+ul li::before{content:"·"; position:absolute; left:4px; color:var(--accent); font-weight:700;}
+
+/* spec tables */
+.spec-wrap{overflow-x:auto; margin:14px 0;}
+.spec-table{width:100%; border-collapse:collapse; font-size:13.5px; min-width:460px;}
+.spec-table th{text-align:left; font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--faint); font-weight:700; padding:9px 14px; border-bottom:1px solid var(--line);}
+.spec-table td{padding:10px 14px; border-bottom:1px solid var(--rule); color:var(--dim); vertical-align:top;}
+.spec-table td:first-child{white-space:nowrap;}
+.spec-table tr:last-child td{border-bottom:0;}
+
+/* ASCII diagrams */
+.tech-block{font-family:var(--mono); font-size:12.5px; line-height:1.5; color:var(--green); background:#0b0a06; border:1px solid var(--line); padding:16px 18px; margin:16px 0; overflow-x:auto; white-space:pre;}
+/* session-loop diagram: two cropped panels in one block; capped (~30% smaller) on desktop, full-width on mobile */
+.flowshots{max-width:560px; margin:16px 0;}
+.flowshots img{display:block; width:100%; height:auto; border:1px solid var(--line); background:#000;}
+.flowshots img + img{margin-top:14px;}
+
+/* figures */
+figure{margin:18px 0; border:1px solid var(--line); background:var(--panel); padding:0;}
+figure img{display:block; width:100%; height:auto;}
+figcaption{font-size:12.5px; color:var(--faint); font-style:italic; padding:12px 16px; border-top:1px solid var(--rule);}
+figure.shot{padding:18px; text-align:center;}
+figure.shot img{display:inline-block; width:100%; max-width:560px; height:auto; border:1px solid var(--rule);}
+figure.shot figcaption{border-top:1px solid var(--rule); margin-top:16px; padding:12px 0 0; text-align:left;}
+/* arena image + description, all inside one clickable bossfight button */
+.bossfight{display:block; position:relative; margin:24px 0; padding:18px; border:1px solid var(--line); background:var(--panel); text-decoration:none; transition:border-color .14s ease;}
+.bossfight:hover{border-color:var(--accent);}
+.bossfight .bf-img{display:block; width:100%; max-width:560px; margin:0 auto; height:auto; border:1px solid var(--rule); transition:opacity .15s ease;}
+.bossfight .bf-text{margin:14px 0 0; font-size:13px; font-style:italic; line-height:1.65; color:var(--faint); transition:opacity .15s ease;}
+.bossfight:hover .bf-img, .bossfight:hover .bf-text{opacity:.3;}
+.bf-hint{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); font-size:15px; font-weight:800; letter-spacing:.16em; text-transform:uppercase; white-space:nowrap; color:var(--accent); background:rgba(11,10,6,.72); border:1px solid var(--accent); padding:13px 26px; opacity:0; transition:opacity .15s ease; pointer-events:none;}
+.bossfight:hover .bf-hint{opacity:1;}
+
+/* CTA buttons */
+.cta-row{display:flex; gap:14px; flex-wrap:wrap; margin:30px 0 6px;}
+.btn{display:inline-block; font-size:14px; font-weight:700; letter-spacing:.06em; text-decoration:none; padding:13px 24px; transition:transform .12s ease, box-shadow .12s ease;}
+.btn.manual{color:var(--ink); background:transparent; border:1px solid var(--line);}
+.btn.manual:hover{border-color:var(--accent); color:var(--accent);}
+.btn.steam{color:#14110a; background:var(--accent); border:1px solid var(--accent); box-shadow:5px 5px 0 color-mix(in oklab, var(--accent), #000 60%);}
+.btn.steam:hover{transform:translate(-2px,-2px); box-shadow:7px 7px 0 color-mix(in oklab, var(--accent), #000 60%);}
+
+/* references */
+.references{margin-top:30px; padding-top:22px; border-top:1px solid var(--line); font-size:13px; color:var(--dim);}
+.references h3{color:var(--faint); margin-top:0;}
+.references ol{list-style:none; counter-reset:ref; padding:0;}
+.references li{counter-increment:ref; padding-left:30px; position:relative; margin-bottom:7px;}
+.references li::before{content:"[" counter(ref) "]"; position:absolute; left:0; color:var(--accent);}
+
+footer{border-top:1px solid var(--line); padding:28px 24px; margin-top:40px; text-align:center; font-size:12px; color:var(--faint); letter-spacing:.04em;}
+footer .footer-links{display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap;}
+footer .footer-links a{color:var(--dim); text-decoration:none;} footer .footer-links a:hover{color:var(--ink);}
+footer .footer-links .div{opacity:.4;}
+footer .made{margin-top:12px; opacity:.8;}
+.beta-note{background:#1b1508; border-bottom:1px solid #6b5a2a; color:#e8d9b0; font:500 12.5px/1.55 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; text-align:center; padding:9px 16px; margin:0;}
+.beta-note b{color:#e0a93f; font-weight:700; letter-spacing:.09em;}
+.beta-note a{color:#e0a93f; text-decoration:underline; text-underline-offset:2px;}
+</style>
+</head>
+<body>
+<div class="beta-note" role="status"><b>БЕТА-ПЕРЕВОД</b> — русская версия сайта черновая и ещё не прошла редактуру. Нашли ошибку в тексте? <a href="report.html">Сообщите нам</a> · <a href="about.html">Read in English</a></div>
+<div class="overlay"></div>
+
+<nav>
+  <span class="brand"><a class="logo" href="index.ru.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.ru.html">главная</a><span class="sep"> · </span><span class="here">о проекте</span></span>
+  <span class="links">
+    <a href="manual/index.html">руководство (бета)</a>
+    <a href="packs.ru.html">наборы</a>
+    <a href="resources.ru.html">материалы</a>
+    <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-about&l=russian">steam</a>
+  </span>
+  <span class="nav-mobile">
+    <a href="home.ru.html">главная</a>
+    <span class="r"><a href="packs.ru.html">наборы</a><a href="resources.ru.html">материалы</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-about&l=russian">steam</a></span>
+  </span>
+  <div class="lang-switch">
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Выбрать язык">RU<span class="lang-caret">▾</span></button>
+    <ul class="lang-menu" hidden>
+      <li><a href="about.html">English</a></li>
+      <li><a href="about.de.html">Deutsch</a></li>
+      <li><a href="about.es.html">Español</a></li>
+      <li><a href="about.ja.html">日本語</a></li>
+      <li><a href="about.zh.html">简体中文</a></li>
+            <li><a href="about.ru.html" aria-current="true">Русский</a></li>
+        </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="crumb">Технический справочник</div>
+    <h1>Как FlashBoss учит</h1>
+    <p class="subtitle">Архитектура контента, механика сессий, система освоения через босс-файт и используемые элементы дизайна.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <nav class="toc" aria-label="Содержание">
+    <div class="toc-title">Содержание</div>
+    <ol>
+      <li><a href="#overview">Обзор</a></li>
+      <li><a href="#architecture">Архитектура контента</a></li>
+      <li><a href="#masters">Мастера</a></li>
+      <li><a href="#packs">Структура набора</a></li>
+      <li><a href="#session">Структура сессии и расписание</a></li>
+      <li><a href="#fight">Босс-файт</a></li>
+      <li><a href="#pedagogy">Педагогический дизайн</a></li>
+      <li><a href="#scope">Объем</a></li>
+      <li><a href="#effective">Эффективное использование FlashBoss</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <section id="overview">
+      <h2>Обзор</h2>
+      <p>FlashBoss — это настольное терминальное приложение для изучения словарного запаса. Оно объединяет планировщик интервального повторения, составленные примеры предложений с синтезом речи, тематические блоки контента и механику освоения через босс-файты. Система предназначена для развития рецептивных навыков — чтения, аудирования и понимания — в изучаемом языке.</p>
+      <p>Один набор Core содержит 1000 карточек и обеспечивает примерно 10000 слов изучаемого языка в контексте. Наборы расширения Pareto добавляют каждый примерно по 20000 слов, построенные вокруг наиболее частотной лексики, ещё не охваченной. Поддерживаемые языки: английский, немецкий, испанский, итальянский и эсперанто.</p>
+    </section>
+
+    <section id="architecture">
+      <h2>Архитектура контента</h2>
+      <p>В этом разделе описывается внутренняя структура, общая для наборов FlashBoss. Организация на уровне наборов — как наборы объединяются и чем наборы для иностранных языков отличаются от наборов для английского — описана в разделе 4.</p>
+
+      <h3>Карточка</h3>
+      <p>Каждая карточка содержит до пяти текстовых полей и два аудиофайла. Озвучиваются только поля на изучаемом языке:</p>
+      <div class="spec-wrap">
+      <table class="spec-table">
+        <thead><tr><th>Поле</th><th>Содержание</th><th>TTS</th></tr></thead>
+        <tbody>
+          <tr><td><code>TargetWord</code></td><td>Словарная единица, которая тренируется. В языках с грамматическим родом она сопровождается артиклем, цветом обозначающим род.</td><td>Да</td></tr>
+          <tr><td><code>Translation</code></td><td>Значение целевого слова на родном языке учащегося.</td><td>Нет</td></tr>
+          <tr><td><code>ExampleSentence</code></td><td>Построенное предложение, помещающее целевое слово в контекст, используя только лексику, уже введённую планировщиком.</td><td>Да</td></tr>
+          <tr><td><code>ExampleTranslation</code></td><td>Идиоматический перевод примера предложения на родной язык учащегося.</td><td>Нет</td></tr>
+          <tr><td><code>Notes</code></td><td>Этимология, грамматическое примечание, второй проработанный пример или набор синонимов. Опционально.</td><td>Нет</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>Преобразование текста в речь применяется только к полям на целевом языке. Эта асимметрия намеренна: цель — насытить учащегося фонологией целевого языка, оставляя родноязычную опору беззвучной и ненавязчивой.</p>
+
+      <h3>Блок</h3>
+      <p>Блок — это тематическая группа карточек — единица прогресса в FlashBoss. Блоки вводятся вместе, тренируются вместе и осваиваются вместе через один босс-файт. Темы блоков конкретны и узки: <em>Числа и время</em>, <em>Путешествия и размещение</em>, <em>Региональная кухня</em>, <em>Социальные роли и люди</em>.</p>
+
+      <h3>Уровень</h3>
+      <p>Блоки находятся внутри уровней. Набор Core содержит пять уровней, каждый из которых обычно включает около восьми блоков. В наборах иностранных языков принадлежность к уровню является порогом сложности: она определяет, какие грамматические структуры могут появляться в примерах предложений блока. Примеры предложений уровня 3 ограничены настоящим, повелительным и претеритом; уровень 4 добавляет имперфект и условное наклонение; уровень 5 открывает полную грамматику, включая сослагательное наклонение. В английских наборах система уровней используется тематически, а не синтаксически — принадлежность к уровню отражает тематическую область (например, <em>Формы и документы</em>, <em>Социальное и email</em>, <em>Путаницы</em>), а не грамматическую сложность.</p>
+
+      <h3>Урок</h3>
+      <p>Уроки — это справочные страницы, прикреплённые к конкретным карточкам — справочный материал, который сопровождает карточку во время тренировки. Когда карточка с прикреплённым уроком появляется впервые, урок появляется рядом. Каждый раз, когда карточка снова появляется по расписанию интервального повторения, урок появляется вместе с ней. Таким образом, уроки являются постоянным справочным материалом, а не однократным показом. Ученик, который усвоил содержание урока, может отключить его индивидуально: карточка продолжает тренировку, урок перестаёт появляться.</p>
+    </section>
+
+    <section id="masters">
+      <h2>Мастера</h2>
+      <p>Перед началом тренировки ученик выбирает мастера — наставника, который задаёт ежедневный темп. Мастер устанавливает <em>требование к серии</em>: количество карточек, которые нужно выполнять каждый день, чтобы сохранить серию, от 8 до 34 карточек, что составляет примерно от 5 до 30 минут занятий.</p>
+      <div class="spec-wrap">
+      <table class="spec-table">
+        <thead><tr><th>Мастер</th><th>Темперамент</th><th>Карточек / день</th></tr></thead>
+        <tbody>
+          <tr><td>🐺 Luna — нежная, ободряющая</td><td>Командирный</td><td>8</td></tr>
+          <tr><td>⚫ Claude — аналитичный, точный</td><td>Консультативный</td><td>13</td></tr>
+          <tr><td>🐉 Шэнь — строгий, прямой</td><td>Командирный</td><td>13</td></tr>
+          <tr><td>🦉 Odiin — ободряющий, добрый</td><td>Консультативный</td><td>21</td></tr>
+          <tr><td>🦊 Кицунэ — игривый трикстер</td><td>Консультативный</td><td>34</td></tr>
+          <tr><td>🦅 Аквила — благородный, дисциплинированный</td><td>Командирный</td><td>34</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>Насколько требователен мастер, сводится к этому ежедневному количеству. Одиин, с двадцатью одной карточкой, — самый требовательный мастер, рекомендованный новому ученику — трудный путь. Два мастера с тридцатью четырьмя карточками, Кицунэ и Аквила, находятся за ним: темп для проходов повторения и для выбросов, желающих максимума.</p>
+      <p><em>Темперамент</em> мастера — это отдельный вопрос, и он управляет одной вещью — гримуаром. <strong>Властный</strong> мастер ограничивает сеансы гримуара, защита от забегания вперед и выгорания. <strong>Советующий</strong> мастер предупреждает, что другой неразумен, затем отступает в сторону и позволяет этому случиться. В остальном они идентичны.</p>
+      <p>Пары неравны. Темпы на тринадцать и тридцать четыре карточки доступны в любом темпераменте — Клод (советующий) или Шен (властный) на тринадцать, Кицунэ (советующая) или Аквила (властный) на тридцать четыре — так что там темп и стиль выбираются отдельно. Темп на восемь карточек принадлежит только Луне (властная), а на двадцать один — только Одину (советующий).</p>
+    </section>
+
+    <section id="packs">
+      <h2>Структура набора</h2>
+      <p>Набор — это единица распространения FlashBoss: автономный набор лексики — обычно 1000 карточек — со своей структурой блоков, уровней и библиотекой уроков. Наборы поставляются по двум разным парадигмам в зависимости от языка.</p>
+
+      <h3>Наборы для иностранных языков: кумулятивная прогрессия из трех наборов</h3>
+      <p>Немецкий, испанский, итальянский и эсперанто поставляются как последовательность из трех наборов: <strong>Core</strong>, <strong>Pareto 1</strong> и <strong>Pareto 2</strong>. Прогрессия накопительная — каждый набор предполагает лексику, введенную в предыдущих наборах, и строит на их основе новые примеры предложений. Примеры в Pareto 1 используют лексику Core плюс новые целевые слова Pareto 1; Pareto 2 предполагает оба предыдущих набора. Учащийся, завершивший все три, достигает пассивного словарного запаса в 3000 карточек на целевом языке.</p>
+      <p>Нумерация уровней непрерывна по всей последовательности. Core охватывает уровни 1–5. Pareto 1 и Pareto 2 вместе продлевают последовательность еще на десять уровней: уровень 6 — первый уровень Pareto, уровень 15 — последний.</p>
+      <p>Цели CEFR по наборам:</p>
+      <div class="spec-wrap">
+      <table class="spec-table">
+        <thead><tr><th>Набор</th><th>Карточки</th><th>Цель</th></tr></thead>
+        <tbody>
+          <tr><td><code>Core</code></td><td>1,000</td><td>Ознакомление с грамматикой A1–A2; готовит учащегося к обучению в условиях погружения на уровне A2.</td></tr>
+          <tr><td><code>Pareto 1</code></td><td>1,000</td><td>Высокочастотная лексика уровней B1–B2; расширяется за счёт регистров, отсутствующих в Core (путешествия, бюрократия, общение).</td></tr>
+          <tr><td><code>Pareto 2</code></td><td>1,000</td><td>Лексика B2–C1; формальные связки, абстрактные регистры, культурный контент.</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h3>Наборы английского: отдельные самостоятельные наборы</h3>
+      <p>Английский распространяется иначе. Каждый набор английского — это самостоятельный лексический набор из 1000 слов, и учащиеся выбирают наборы по уровню и интересу, а не проходят их по порядку. Нет кумулятивного прогресса — завершение одного набора английского не предполагает другого. Наборы английского делятся на две структурные семьи:</p>
+      <ul>
+        <li><strong>Уровневые наборы</strong> — лексика, которая поднимает читателя на уровень и оставляет его там. <em>English Adept</em>, бесплатный центральный набор, охватывает самый длинный подъём: он начинается с уровня чтения ниже восьмого класса и ведёт учащегося до готовности к университету, заканчивая примерно на C1. <em>English Advance</em> нацелен на практический английский для полноценной жизни в обществе без ограничений: формы, письма, бюрократию и повседневные документы, которые требует взрослая жизнь. Руководящий принцип — сделать это один раз правильно, и вам больше никогда не придётся об этом думать.</li>
+        <li><strong>Серия Roots</strong> — платные наборы, которые тренируют английскую лексику через три её этимологических слоя: <em>German Roots</em> (англосаксонский), <em>Norman Roots</em> (нормандско-французский), и <em>Latin Roots</em> (учёный). Перекрёстные ссылки между ними выявляют исторические дублеты, которые формируют регистровую систему английского.</li>
+      </ul>
+    </section>
+
+    <section id="session">
+      <h2>Структура сеанса и планирование</h2>
+      <p>Тренировочный сеанс обрабатывает каждую карточку через пять фаз. Первые четыре — на каждую карточку, пятая — на каждый блок.</p>
+      <div class="flowshots">
+        <img src="session_loop.png" alt="Цикл сессии: каждая карточка проходит через этапы Слушай, Читай, Повторяй, затем Оценивай; после этого планировщик выбирает следующую карточку, и цикл повторяется.">
+        <img src="cluster_selection.png" alt="Для каждого блока: тренировка продолжается, пока блок не станет доступным для босс-файта, который завершается либо проходом, либо повтором.">
+      </div>
+
+      <h3>Слушай</h3>
+      <p>Аудио Piper (текст-в-речь) воспроизводит целевое слово, когда оно появляется на экране. Когда учащийся готов, нажатие клавиши отображает и произносит пример предложения. Это первое знакомство.</p>
+
+      <h3>Читай</h3>
+      <p>На каждом шаге чтение произносимого материала вслух закрепляет память и улучшает произношение и уверенность в речи учащегося. Затем учащийся имеет время разобрать предложение, сверить перевод и усвоить грамматику в контексте.</p>
+
+      <h3>Повторяй</h3>
+      <p>Когда представлен английский перевод, становятся доступны элементы управления воспроизведением: <code>Enter</code> воспроизводит заново целевое слово, а <code>6</code> воспроизводит заново пример предложения. Циклы повторения на этой фазе неограниченны; учащийся продолжает, когда готов.</p>
+
+      <h3>Оценивай</h3>
+      <p>Учащийся оценивает своё узнавание по шестибалльной шкале (от 0 до 5). Оценка сдвигает позицию карточки в последовательности интервалов Фибоначчи (1, 2, 3, 5, 8, 13, 21… дней), при этом для каждой оценки применяется минимальный интервал в качестве нижней границы. Оценка 0 — особый случай: сброс до 1 дня независимо от предыдущей позиции карточки.</p>
+      <div class="spec-wrap">
+      <table class="spec-table">
+        <thead><tr><th>Оценка</th><th>Значение</th><th>Изменение интервала</th></tr></thead>
+        <tbody>
+          <tr><td><code>0</code></td><td>Полностью забыл.</td><td>Сброс до 1 дня.</td></tr>
+          <tr><td><code>1</code></td><td>Очень плохо.</td><td>Позиция −3 (минимум 1 день).</td></tr>
+          <tr><td><code>2</code></td><td>Плохо.</td><td>Позиция −2 (минимум 2 дня).</td></tr>
+          <tr><td><code>3</code></td><td>Нормально.</td><td>Позиция −1 (минимум 3 дня).</td></tr>
+          <tr><td><code>4</code></td><td>Хорошо.</td><td>Без изменений (минимум 5 дней).</td></tr>
+          <tr><td><code>5</code></td><td>Отлично.</td><td>Позиция +1 (минимум 8 дней).</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>Шкала откалибрована так, чтобы для прогресса требовалась агрессивная оценка. Только 5 продвигает карточку; 4 сохраняет позицию; 1–3 отодвигают карточку назад по расписанию Фибоначчи; 0 сбрасывает её на 1 день. Минимальные интервалы для каждой оценки предотвращают обвал интервала карточки при плохой оценке и закрепляют правило освоения.</p>
+
+      <h3>Освоение карточки</h3>
+      <p>Карточка считается освоенной после двух последовательных оценок 5. Механизм прост: одна оценка 5 поднимает минимальный интервал карточки до 8 дней; вторая оценка 5 продвигает его до 13 дней — порога освоения. Таким образом, с любой начальной позиции два последовательных идеальных припоминания доводят карточку до освоения.</p>
+
+      <h3>Ежедневные занятия</h3>
+      <p>Новые карточки добавляются в колоду по одной в порядке блоков; границы блоков не ограничивают ввод карточек. Ежедневное количество карточек следует соотношению Фибоначчи — для сессии данного дня карточки для повторения и новые карточки добавляются пропорционально последовательным числам Фибоначчи, так что смесь стремится к φ, золотому сечению.</p>
+
+      <h3>Готов к босс-файту?</h3>
+      <p>Блок становится доступным для своего босс-файта, когда 80% его карточек освоены — когда 80% достигли интервала в 13 дней. Вам не нужно осваивать каждую карточку, чтобы сражаться: но вам нужно победить две самые сложные карточки подряд, чтобы выиграть. Механика боя подробно обсуждается в следующем разделе.</p>
+    </section>
+
+    <section id="fight">
+      <h2>Босс-файт</h2>
+      <p>Босс-файт — это механизм завершения блока. Это единственный способ, которым блок выходит из активного обучения. В отличие от фазы «Оценивай» — где вы оцениваете себя сами, — босс-файт состязательный и строго множественного выбора. Ученик и босс находятся на одной линейной арене; ученик начинает слева, босс стоит правее. Задача — столкнуть босса с дальнего конца. Правила сумо: на платформе остаётся только один.</p>
+      <p>Каждый ход предъявляет одну из карточек кластера в качестве подсказки, с восемью возможными ответами на клавишах с цифрами 1–8. Правильный ответ продвигает ученика на одну позицию по дорожке; босса одновременно сдвигают на одну позицию ближе к дальнему краю. Неправильный ответ отодвигает ученика на две позиции назад к ближнему краю или за его пределы. Когда ученик выталкивается за ближний край, он блокируется в бою этого кластера до следующего дня. Если босс вытолкнут за дальний край, он побеждён, и кластер считается освоенным.</p>
+      <a class="bossfight" href="https://flashboss-demo.pages.dev/">
+        <img class="bf-img" src="boss-arena.png" alt="Арена босс-файта: горизонтальная дорожка, которую разделяют учащийся и босс, с маркером на дальнем краю.">
+        <p class="bf-text">Арена: одна горизонтальная дорожка, которую делят ученик (слева) и босс (справа), с отметкой на дальнем краю — выход босса. Правильный ответ продвигает ученика на одну позицию и сдвигает босса на одну ближе к этому краю; неправильный ответ отодвигает ученика на две позиции назад. Позиции 1–2 берут самые лёгкие карточки кластера, позиции 3–4 — самые сложные. Падение за ближний край блокирует кластер до следующего дня; столкните босса за дальний край — и кластер считается освоенным.</p>
+        <span class="bf-hint">нажмите, чтобы сразиться</span>
+      </a>
+      <p>Порядок карточек внутри боя продуман. Позиции 1 и 2 берут самые лёгкие карточки кластера — разминка, позволяющая ученику набрать позиционное преимущество. Позиции 3 и 4 берут самые сложные карточки кластера: самые слабые слова в колоде, которые появляются, как только ученик начал продвигаться. Неправильный ответ на позиции 3 или 4 отодвигает ученика на две позиции назад — оказываясь на позиции 1 или 2 — и пропущенная карточка переклассифицируется как самая лёгкая для ученика с этого момента. К сожалению, это означает, что она ждёт его: та же карточка, теперь находящаяся в лёгких слотах, куда он только что попал. Кластер не может быть освоен, пока его самые слабые карточки не будут освоены.</p>
+      <p>Обоснование дизайна описано в разделе 7. Вкратце: босс-файт вводит ограниченный стресс-фактор с низкими ставками, который создаёт реальное давление на извлечение из памяти без последствий реальной языковой неудачи. Он также обеспечивает дискретное состояние успеха — «кластер освоен» — которого иначе не хватает в открытом ритме интервального повторения.</p>
+    </section>
+
+    <section id="pedagogy">
+      <h2>Педагогический дизайн</h2>
+      <p>Архитектура FlashBoss отражает установленные результаты исследований в области усвоения второго языка и когнитивной психологии. Соответствующие основы:</p>
+
+      <h3>Понятный ввод</h3>
+      <p>Гипотеза ввода Крашена [1] утверждает, что учащиеся усваивают язык наиболее эффективно, когда ввод немного выше текущего уровня компетенции — достаточно понятный, чтобы его можно было разобрать, и достаточно сложный, чтобы расширять границы. Примеры предложений в FlashBoss построены так, что целевое слово, как правило, является единственным неизвестным элементом; окружающее предложение составлено из лексики, которую планировщик уже ввел. Это настраивает понятность примерно до 80–95% для обученного учащегося, помещая каждое предложение в зону <em>i+1</em>.</p>
+
+      <h3>Практика извлечения</h3>
+      <p>Активное припоминание обеспечивает более прочное долговременное запоминание, чем повторное чтение [2]. Фаза «Оценивай» заставляет извлекать информацию <em>до</em> того, как будет показан перевод, применяя эффект тестирования к каждому показу карточки. Карточки не показываются пассивно; они активно припоминаются и самостоятельно оцениваются.</p>
+
+      <h3>Интервальное повторение</h3>
+      <p>Память угасает по предсказуемой кривой [3]. Повторение карточки прямо перед забыванием закрепляет след памяти более эффективно, чем массированное повторение. Последовательность интервалов Фибоначчи — один из нескольких графиков, которые аппроксимируют кривую забывания; она используется здесь из-за своей простоты, стабильности и интуитивно понятной прогрессии для учащегося.</p>
+
+      <h3>Желательная трудность</h3>
+      <p>Запоминание выигрывает от усилий в момент кодирования и извлечения [4]. Шкала оценки реализует желаемую сложность, делая регресс стандартным поведением: оценки ниже 5 либо оставляют карточку на месте, либо отодвигают её назад по расписанию Фибоначчи. Только однозначное припоминание даёт движение вперёд, а освоение требует двух таких припоминаний подряд. Пока значительное большинство блока не завершено, все карточки блока остаются в обороте, но слова, которые хорошо известны, не конкурируют за внимание с более достойным материалом.</p>
+
+      <h3>Аффективное обрамление</h3>
+      <p>Высокая тревожность ухудшает усвоение [1]. Босс-файт предназначен для введения давления без повышения аффективного фильтра: ставки ограничены (один неудачный бой стоит дня, а не положения в разговоре), система приватна, и постоянной записи не существует. Давление сконструировано так, чтобы быть достаточно острым для фокусировки извлечения и достаточно поверхностным, чтобы сохранить условия, необходимые для усвоения.</p>
+
+      <h3>Ввод до вывода</h3>
+      <p>Рецептивные навыки развиваются асимметрично быстрее продуктивных при самостоятельной тренировке. Насыщение учащегося высокопонятным вводом перед требованием продукции повторяет то, как происходит усвоение первого языка у детей, и позволяет лексике и грамматике стать разбираемыми до того, как они станут применимыми. FlashBoss — это половина ввода полного образовательного конвейера; продуктивная практика — говорение, письмо, взаимодействие — является обязанностью инструментов, которые FlashBoss не пытается заменить.</p>
+    </section>
+
+    <section id="scope">
+      <h2>Область применения</h2>
+      <p>FlashBoss обучает:</p>
+      <ul>
+        <li>Словарный запас и распознавание на целевом языке.</li>
+        <li>Понимание прочитанного на уровне предложений.</li>
+        <li>Понимание на слух через TTS.</li>
+        <li>Непреднамеренное усвоение грамматики через контекст.</li>
+        <li>Беглость чтения на уровне клауз.</li>
+      </ul>
+      <p>FlashBoss не тренирует:</p>
+      <ul>
+        <li>Письменное продуцирование.</li>
+        <li>Разговорная беглость.</li>
+        <li>Стратегии исправления взаимодействия.</li>
+      </ul>
+      <p>Самый эффективный способ научиться говорить и использовать новый язык — это разговорный иммерсивный класс: компания единомышленников, преследующих одну цель, с опытным преподавателем, который направляет процесс. Если география не позволяет, онлайн-репетиторы и разговорные классы выполняют ту же работу; а если препятствие — стоимость, то даже чат-бот может заменить их — место для практики речи и вопросов, возникающих во время сессии FlashBoss.</p>
+    </section>
+
+    <section id="effective">
+      <h2>Эффективное использование FlashBoss</h2>
+
+      <h3>Управление нагрузкой</h3>
+      <p>Вы контролируете свою ежедневную нагрузку тремя основными способами: выбором мастера; превышением требования серии для получения ежедневной награды <strong>EPIC</strong> (рекомендуется); и, в-третьих, контрактом — после получения эпика вы можете выбрать дополнительный день обучения в обмен на жетон <em>drive</em>. Но будьте осторожны, когда играете с магией.</p>
+      <p><strong>Ваш мастер (ежедневная серия).</strong> Выбранный вами мастер устанавливает ежедневное требование — от 8 до 34 карточек в день (мастера описаны в разделе 3). Выполнение только минимума всегда сохраняет вашу серию и позволяет двигаться вперед, с возможностью сделать больше.</p>
+      <p><strong>Эпик.</strong> В первый день уровня — его день основания — эпическая сессия предлагает до трехкратного ежедневного требования по новым карточкам. Это идеальное начало: оно загружает в ротацию достаточно лексики, чтобы интервальное повторение заработало. Количество доступных карточек меняется день ото дня.</p>
+      <p><strong>Гримуар (контракт).</strong> Сессия гримуара переносит следующий день вперед — завтрашние повторения и дополнительное выделение новых карточек, завершенные сегодня. Это буквально завтрашняя работа, выполненная сейчас, и ее завершение приносит жетон <em>drive</em>: выходной, накопленный на случай, когда он понадобится.</p>
+
+      <h3>Читайте вслух</h3>
+      <p>Произносите вслух каждую подсказку, когда она звучит. Воспроизведение слов не только тренирует произношение: формирование предложения вслух задействует моторную и слуховую память наряду со зрительной, поэтому каждая карточка кодируется сразу по нескольким каналам — это дает более богатый и устойчивый след, чем молчаливое чтение. Создание языка, а не только его распознавание — это само по себе акт извлечения, который и закрепляет память; уверенность в речи, которую это дает, — бонус, который усиливает эффект.</p>
+
+      <h3>Проваленные бои</h3>
+      <p>Неудачный босс-файт — это небольшая неудача. Экран поражения покажет вам слова, на которые вы ответили неправильно, с возможностью нажать <code>8</code>, чтобы переключиться между изучаемым языком и английским. Карточка, пропущенная в сложных позициях (3–4), переклассифицируется как ваша самая легкая начиная с этого момента, так что она возвращается в начальные позиции при следующей попытке. Блок нельзя победить, пока эта карточка не будет отвечена правильно — слово, которое вас победило, становится воротами, которые нужно пройти, прежде чем бой закончится. Блоки могут потребовать нескольких попыток, но всегда есть завтра.</p>
+
+      <h3>Ожидаемая траектория</h3>
+      <p>Постоянный ученик завершает Core за два-шесть месяцев. FlashBoss создает иллюзию, что вы знаете больше, чем на самом деле, потому что держит вас в пузыре известного языка, расширяясь контролируемым образом. В вашем понимании будут большие пробелы, но если вы продолжите, эти пробелы закроются. А тем временем вы понимаете все больше с каждым днем. Мы желаем вам удачи в вашем языковом путешествии — Мастера Одиин и Клод.</p>
+    </section>
+
+    <div class="references">
+      <h3>Источники</h3>
+      <ol>
+        <li>Krashen, S. D. (1982). <em>Principles and Practice in Second Language Acquisition</em>. Pergamon. (Гипотеза входного материала; аффективный фильтр.)</li>
+        <li>Roediger, H. L., &amp; Karpicke, J. D. (2006). Тест-усиленное обучение: прохождение тестов на память улучшает долговременное запоминание. <em>Psychological Science</em>, 17(3), 249–255.</li>
+        <li>Эббингауз, Г. (1885). <em>Über das Gedächtnis</em>. Duncker &amp; Humblot. (Кривая забывания, предшественник интервального повторения; ср. Лейтнер, 1972.)</li>
+        <li>Бьорк, Р. А. (1994). Memory and metamemory considerations in the training of human beings. В <em>Metacognition: Knowing about Knowing</em>. MIT Press. (Желательная трудность.)</li>
+      </ol>
+    </div>
+
+  </main>
+</div>
+
+<footer>
+  <span class="footer-links">
+    <a href="home.ru.html">главная</a><span class="div">·</span>
+    <a href="packs.ru.html">наборы</a><span class="div">·</span>
+    <a href="resources.ru.html">материалы</a><span class="div">·</span>
+    <a href="manual/">руководство (бета)</a><span class="div">·</span>
+    <a href="press.html">пресса</a><span class="div">·</span>
+    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-about&l=russian">Steam</a>
+  </span>
+</footer>
+
+<script>
+// language dropdown: button toggles the menu; click-away / Esc closes it
+(function(){
+  var sw=document.querySelector('.lang-switch'); if(!sw) return;
+  var btn=sw.querySelector('.lang-toggle'), menu=sw.querySelector('.lang-menu');
+  function close(){ menu.hidden=true; btn.setAttribute('aria-expanded','false'); }
+  btn.addEventListener('click', function(e){ e.stopPropagation(); var willOpen=menu.hidden; menu.hidden=!willOpen; btn.setAttribute('aria-expanded', String(willOpen)); });
+  document.addEventListener('click', function(e){ if(!sw.contains(e.target)) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
+</script>
+</body>
+</html>

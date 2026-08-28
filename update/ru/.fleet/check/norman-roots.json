@@ -1,0 +1,265 @@
+{
+ "3": {
+  "id": 3,
+  "severity": "medium",
+  "issue": "'Roots' should remain untranslated as it is part of the official pack name 'Norman Roots', per house conventions",
+  "fix": "<p class=\"kicker reveal\">Серия Norman Roots · <b>Norman</b></p>"
+ },
+ "4": {
+  "id": 4,
+  "severity": "high",
+  "issue": "'Norman Roots' is a registered pack name and must be kept exactly as-is, not translated",
+  "fix": "<h1 class=\"reveal\">Norman Roots<span class=\"cursor\"></span></h1>"
+ },
+ "14": {
+  "id": 14,
+  "severity": "medium",
+  "issue": "‘Ground floor’ was translated as ‘первый этаж’, which is factually incorrect in the British English context implied by the historical narrative (1066, Normans). In British usage, ‘ground floor’ is the floor at street level, called ‘первый этаж’ in American English but ‘нулевой этаж’ or simply ‘ground floor’ in British-influenced contexts. More importantly, the metaphor contrasts ‘ground floor’ vs ‘upper floor’; translating ‘ground floor’ as ‘первый этаж’ breaks the spatial metaphor because ‘верхний этаж’ then no longer clearly contrasts with it in Russian convention.",
+  "fix": "<div class=\"h\">Цокольный этаж — англосаксонский</div>"
+ },
+ "16": {
+  "id": 16,
+  "severity": "high",
+  "issue": "‘Norman’ was left untranslated, violating the instruction to translate English gloss/explanations while keeping only teaching material (i.e., words being taught) in original language. Here ‘Norman’ is part of descriptive text, not a word being taught, so it must be translated.",
+  "fix": "<div class=\"h\">Верхний этаж — нормандский</div>"
+ },
+ "17": {
+  "id": 17,
+  "severity": "high",
+  "issue": "The phrase ‘the half a course has to build’ was mistranslated as ‘половину курса нужно построить’, which changes meaning: the English says that this Norman layer is the half that a (language) course must construct (i.e., teach), not that the student must build half a course. The current translation implies building a course, not learning vocabulary.",
+  "fix": "<p>govern, justice, cuisine, commence. Формальный, институциональный, регистр закона и суда — та половина, которую курсу предстоит построить.</p>"
+ },
+ "20": {
+  "id": 20,
+  "severity": "medium",
+  "issue": "Unnatural Russian phrasing: 'цветом кодируется по слою' is a calque and awkward. Standard phrasing would be 'каждая пара выделена цветом в зависимости от слоя' or similar.",
+  "fix": "<p class=\"sub\">Каждая пара выделена цветом в зависимости от слоя. Нажмите на одну, чтобы узнать историю расхождения.</p>"
+ },
+ "24": {
+  "id": 24,
+  "severity": "medium",
+  "issue": "The English terms 'cow' and 'beef' are part of the teaching material (they illustrate the Saxon vs. Norman split) and should remain untranslated per house rules. The Russian translation incorrectly leaves them in English while translating the glosses, but the words themselves must stay as-is because they are the target vocabulary being taught.",
+  "fix": "<div class=\"parts\">\n            <span class=\"m sax\">cow<i>Англосаксонское · поле</i></span>\n            <span class=\"m nor\">beef<i>Норманнское · стол</i></span>\n          </div>"
+ },
+ "25": {
+  "id": 25,
+  "severity": "high",
+  "issue": "The phrase 'calf/veal and deer/venison' consists of English word pairs being taught; per house rules, these must remain in English. The Russian translation leaves them untranslated (correctly), but the phrase 'живо в каждом меню' misrepresents 'alive on every menu'. 'Alive' here is a pun—referring to the animal (calf, deer) being alive vs. the meat (veal, venison) on the menu. 'Живо' means 'lively' or 'vividly', which distorts the meaning. The correct rendering should preserve the pun: 'животное — в стаде, блюдо — в меню' or similar, but at minimum must not mistranslate 'alive'. However, since the instruction says never to add information, the safest fix is to render 'alive' accurately in context. But crucially, the English does not say 'живо', so this is a meaning change.",
+  "fix": "<div class=\"sum\">Сакс пас животное; Норманн ел блюдо. То же разделение проходит через calf/veal и deer/venison — одно живое, другое в меню.</div>"
+ },
+ "27": {
+  "id": 27,
+  "severity": "high",
+  "issue": "The words 'begin' and 'commence' are the vocabulary being taught (illustrating Saxon vs. Norman roots). Per house rules, words in the language being taught must remain in English. However, this is English vocabulary for native English speakers learning etymology, so these are still considered teaching material and must not be translated. The Russian version correctly leaves them in English, so this is actually OK. Wait—rechecking: the user instruction says 'Any word or sentence in a language BEING TAUGHT [...] — those are teaching material. Translate only the English gloss/explanation around them.' Here, the language being taught is English etymology to English speakers, so 'begin' and 'commence' are the subject matter and must remain. So #27 is correct. No defect."
+ },
+ "29": {
+  "id": 29,
+  "severity": "medium",
+  "issue": "Same as #24: 'begin' and 'commence' are teaching material and must remain in English (which they do), but the glosses are translated. However, 'что угодно' is too informal and imprecise for 'anything' in this context; 'всё что угодно' or just 'всё' would be better, but more importantly, the original says 'plain · anything' vs 'formal · ceremony & law'. The Russian uses 'обычный', but the conventional linguistic term contrasting 'formal' is 'нейтральный' or 'просторечный', though 'plain' here likely means 'common, everyday'. However, 'обычный' is acceptable. Bigger issue: '&amp;' is preserved correctly, but 'закон' for 'law' is okay. However, the main defect is that 'begin' and 'commence' are correctly left in English, so no issue there. But wait—the instruction says: 'Any word or sentence in a language BEING TAUGHT [...] — those are teaching material.' Since this is about English vocabulary, those words are the material, so leaving them in English is correct. So #29 is actually fine. Re-evaluate: the real issue is in #24 and #25 only."
+ },
+ "30": {
+  "id": 30,
+  "severity": "medium",
+  "issue": "The English sentence uses 'commence' as a verb, but the Russian translation treats it as a proper noun or personified agent ('commence надевает мантию'), which is unnatural and misleading. The intended meaning is that using the word 'commence' adds formality (like putting on a robe), not that the word itself literally puts on a robe.",
+  "fix": "<div class=\"sum\">«Let's begin.» / «The proceedings shall commence.» То же действие — но слово <i>commence</i> надевает мантию.</div>"
+ },
+ "31": {
+  "id": 31,
+  "severity": "high",
+  "issue": "The words 'wish' and 'desire' are part of the teaching material (English vocabulary being contrasted), so they must remain in English per house rules. However, the Russian translation leaves them untranslated, which is correct—but the surrounding context (glosses in #32–33) shows these are English words being taught, so this is actually acceptable. Wait: rechecking—house rule says: 'Any word or sentence in a language BEING TAUGHT [...] — those are teaching material. Translate only the English gloss/explanation around them.' Since this is a comparison of two English synonyms, both 'wish' and 'desire' are English teaching material and must stay in English. The current RU keeps them in English, so this is CORRECT. No error.",
+  "fix": ""
+ },
+ "33": {
+  "id": 33,
+  "severity": "medium",
+  "issue": "The English labels are 'plain · warm' and 'formal · intense'. The Russian renders 'warm' as 'тёплый', which is a literal calque and unnatural in this stylistic context. In Russian descriptions of register/tone, 'warm' as a stylistic marker is not typically rendered as 'тёплый'—it’s either omitted or adapted (e.g., 'дружелюбный', 'неформальный с оттенком теплоты'). However, given the terse style and parallelism, this may be acceptable. But more critically: 'intense' is translated as 'сильный', which is too vague; 'интенсивный' or 'страстный' would better match 'intense' in emotional weight. Also, 'формальный' should agree in case/gender with an implied noun like 'стиль', but here it's used as a standalone descriptor—still, 'формальный' is acceptable. The main issue is 'тёплый' and 'сильный' being imprecise calques.",
+  "fix": "<div class=\"parts\">\n            <span class=\"m sax\">wish<i>простой · тёплый</i></span>\n            <span class=\"m nor\">desire<i>формальный · страстный</i></span>\n          </div>"
+ },
+ "34": {
+  "id": 34,
+  "severity": "medium",
+  "issue": "The phrase 'the heart's desire' is rendered as 'заветное желание', which is idiomatic and acceptable. However, the English uses 'desire' (the Norman twin) to contrast with 'wish' (Saxon). The Russian translation uses 'пожелание' (from 'wish') and 'желание' (from 'desire'), which correctly reflects the distinction. BUT: the original English says 'a birthday wish, but the heart's desire' — implying the first is casual (Saxon), the second profound (Norman). The Russian 'пожелание на день рождения, но заветное желание' slightly blurs the lexical contrast because both now use derivatives of 'желать'. Ideally, preserve 'wish' as something lighter (maybe 'пожелание') and 'desire' as 'желание' or 'стремление'. However, 'заветное желание' is a fixed phrase, so this may be unavoidable. Still, the translation loses the explicit link to the word 'desire' from the pair. Not a critical error, but a subtle loss of parallelism.",
+  "fix": "<div class=\"sum\">Норманский близнец повышает и регистр, и накал одновременно — пожелание на день рождения, но желание сердца.</div>"
+ },
+ "36": {
+  "id": 36,
+  "severity": "high",
+  "issue": "The Russian translation 'скрывать из виду' is unidiomatic and incorrect. The correct phrasing for 'to keep out of sight' would be 'держать вне поля зрения' or 'прятать от глаз', but more naturally in this context: 'держать в укрытии' or simply 'прятать'. However, the bigger issue is that 'скрывать из виду' is not a valid collocation in Russian — 'скрывать' takes a direct object (что?), not 'из виду'. The phrase 'держать подальше от глаз' or 'не показывать' would fit better. But given the parallel structure with #37–38, the intended meaning is likely 'to hide (something) so it’s not seen', and the verb should match the register contrast shown later.",
+  "fix": "<div class=\"gloss-top\">держать вне поля зрения</div>"
+ },
+ "37": {
+  "id": 37,
+  "severity": "medium",
+  "issue": "The translation of 'hide' as 'прятать' is acceptable, but 'conceal' as 'скрывать' reverses the nuance established in English. In English, 'hide' is plain/everyday, 'conceal' is formal/deliberate. In Russian, 'прятать' is indeed more colloquial, but 'скрывать' is not necessarily more formal—it's standard neutral. More importantly, in legal/formal contexts (as in #38), 'conceal evidence' is typically translated as 'скрывать улики', which is correct, but the register labels may mislead. However, the real defect is in consistency with #36: if #36 uses 'скрывать из виду' (which is wrong), and here 'скрывать' is assigned to 'conceal', then the gloss in #36 should not use 'скрывать' at all. But the main issue is that 'обдуманный' is an inaccurate gloss for 'deliberate' in this context. 'Deliberate' here means intentional, purposeful—not 'thought-out'. The correct term is 'умышленный' or 'намеренный'.",
+  "fix": "<div class=\"parts\">\n            <span class=\"m sax\">прятать<i>простой · повседневный</i></span>\n            <span class=\"m nor\">скрывать<i>формальный · умышленный</i></span>\n          </div>"
+ },
+ "38": {
+  "id": 38,
+  "severity": "low",
+  "issue": "The phrase 'в обвинительном заключении' is slightly off. In legal Russian, 'charge sheet' (UK) or 'indictment' is usually 'обвинительное заключение' (for prosecutors in civil law systems like Russia), but 'charge sheet' in a common-law context might be better rendered as 'акт обвинения' or 'обвинительный акт'. However, 'обвинительное заключение' is widely understood. The bigger issue is consistency: if 'conceal' is used for evidence in formal/legal contexts, and 'скрывать улики' is correct, then this sentence is acceptable. But given that 'conceal' was mistranslated in register nuance in #37, this propagates a subtle mismatch. Still, the sentence itself is natural and factually aligned.",
+  "fix": ""
+ },
+ "48": {
+  "id": 48,
+  "severity": "high",
+  "issue": "The word 'buy' should be translated as it is not a brand token, teaching material, or house term; it is part of explanatory content.",
+  "fix": "<div class=\"k\">покупать</div>"
+ },
+ "49": {
+  "id": 49,
+  "severity": "high",
+  "issue": "The English gloss explains 'purchase' by contrasting 'the counter vs the contract', but the Russian mistranslates 'counter' as 'прилавок' (shop counter), which distorts meaning. In this context, 'counter' likely refers to 'consideration' in legal terms (as in 'quid pro quo'), but even if taken literally, the phrase is idiomatic and should reflect the intended contrast. More critically, 'purchase' is left untranslated though it's part of the explanation—not teaching material.",
+  "fix": "<div class=\"v\">&rarr; <b>покупка</b> — встречное предложение против контракта</div>"
+ },
+ "50": {
+  "id": 50,
+  "severity": "high",
+  "issue": "The word 'freedom' should be translated; it is not protected content.",
+  "fix": "<div class=\"k\">свобода</div>"
+ },
+ "51": {
+  "id": 51,
+  "severity": "medium",
+  "issue": "The term 'liberty' is left in English but should be translated as 'вольность' or 'свобода' depending on nuance; here, given the contrast with 'freedom', 'liberty' as 'вольность' may be intended, but at minimum it must be rendered in Russian since it's part of explanatory gloss, not target-language teaching material.",
+  "fix": "<div class=\"v\">&rarr; <b>вольность</b> — простое право, возвышенный идеал</div>"
+ },
+ "52": {
+  "id": 52,
+  "severity": "high",
+  "issue": "The word 'deep' should be translated; it is not protected content.",
+  "fix": "<div class=\"k\">глубокий</div>"
+ },
+ "53": {
+  "id": 53,
+  "severity": "medium",
+  "issue": "The English uses 'profound' to show a more elevated synonym for 'deep', but the Russian translation renders both examples as 'глубокая/глубокое', losing the distinction. The point is that 'profound silence' is not just 'глубокая тишина' (which is unnatural in Russian) but rather 'пронзительная', 'глубокая' (in figurative sense), or better 'могильная тишина'—but crucially, the adjective should differ from the literal 'deep lake'. However, the main defect is that 'profound' itself is left in English when it should be translated as it's part of the explanation.",
+  "fix": "<div class=\"v\">&rarr; <b>глубокий</b> — глубокое озеро, глубокое молчание</div>"
+ },
+ "54": {
+  "id": 54,
+  "severity": "high",
+  "issue": "The word 'die' is part of the teaching material (English vocabulary being taught) and must remain in English per house rules, but the surrounding context suggests this is a glossary entry where the key term should be presented as-is. However, in this format, if 'die' is the target English word being explained, it should stay. But given that other entries like 'hearty' and 'house' are also left untranslated, this appears consistent. However, #55 reveals the issue: the explanation incorrectly translates descriptive labels that are part of the English teaching content.",
+  "fix": "<div class=\"k\">die</div>"
+ },
+ "55": {
+  "id": 55,
+  "severity": "high",
+  "issue": "The phrase 'the plain fact, the grave register' is an English-language stylistic annotation explaining the nuance of 'perish' and is part of the teaching material. Per house rules, any sentence or phrase in the language being taught (here, English) must NOT be translated. The Russian translation incorrectly renders it into Russian.",
+  "fix": "<div class=\"v\">&rarr; <b>perish</b> — the plain fact, the grave register</div>"
+ },
+ "56": {
+  "id": 56,
+  "severity": "high",
+  "issue": "Same as #54: 'hearty' is an English word being taught and must remain in English. This is correct as-is, but only if consistent with the pattern. However, the real defect is in #57’s explanation.",
+  "fix": "<div class=\"k\">hearty</div>"
+ },
+ "57": {
+  "id": 57,
+  "severity": "high",
+  "issue": "The phrase 'a hearty welcome, a cordial reply' is English example usage and part of the teaching material. It must NOT be translated into Russian. The current translation replaces it with Russian equivalents, violating the rule to keep teaching-language content in original form.",
+  "fix": "<div class=\"v\">&rarr; <b>cordial</b> — a hearty welcome, a cordial reply</div>"
+ },
+ "58": {
+  "id": 58,
+  "severity": "high",
+  "issue": "'house' is an English word being taught and correctly left in English. No defect here, but included for consistency check. Actual defect is in #59.",
+  "fix": "<div class=\"k\">house</div>"
+ },
+ "59": {
+  "id": 59,
+  "severity": "high",
+  "issue": "The phrase 'the roof, and the rent' is English illustrative text explaining the connotation of 'mansion' and is part of the teaching material. It must remain in English. Translating it to 'крыша, и аренда' violates the house rule.",
+  "fix": "<div class=\"v\">&rarr; <b>mansion</b> — the roof, and the rent</div>"
+ },
+ "66": {
+  "id": 66,
+  "severity": "medium",
+  "issue": "The English uses 'ward' and 'guard' as examples of words that were once a single word; however, in Russian, these are left untranslated as <b>ward</b> and <b>guard</b>. According to house rules, words in a language BEING TAUGHT should remain as-is, but here English is the source language being explained—not taught—so these should be translated or glossed. However, since this is etymological content about English itself (not teaching English as a foreign language), leaving them in English may be acceptable. But the phrase 'оба несут стражу' is unnatural: 'ward' in this context does not mean 'несёт стражу'; 'ward' historically meant 'guardian' or 'protector', but modern Russian readers will not associate 'ward' with guarding. This creates a misleading impression. Better to clarify or translate.",
+  "fix": "<p class=\"note\">Каждая пара когда-то была одним словом. <b>Ward</b> и <b>guard</b> оба означали «страж»; <b>warranty</b> и <b>guarantee</b> — одно и то же обещание: одно пришло рано через Нормандию, другое позже через Париж.</p>"
+ },
+ "69": {
+  "id": 69,
+  "severity": "medium",
+  "issue": "Same issue as #66: <b>Cattle</b> and <b>chattel</b> are left in English without explanation. Since the site teaches languages, but here it's discussing English etymology for native or advanced learners, house rules say: 'Any word or sentence in a language BEING TAUGHT — those are teaching material. Translate only the English gloss/explanation around them.' But English is not being taught here—it's the medium. Thus, these English words should either be translated or kept with clear context. The phrase 'имущество, которое можно было гнать на копытах' is awkward: 'гнать на копытах' is not idiomatic Russian. Correct idiom is 'гнать стадом' or 'гнать по земле', but 'на копытах' sounds like riding *on* hooves. Also, 'Франций' is incorrect—should be 'Франций' only in poetic/archaic use; standard plural is 'Франций' not used; better: 'двух разных Франций' → 'двух разных версий Франции' or 'двух разных Французий' (though rare). Best: 'отпечатки пальцев двух разных эпох Франции' or similar. However, minimal fix per house style: keep close to original but correct idiom.",
+  "fix": "<p class=\"note\"><b>Cattle</b> и <b>chattel</b> когда-то были одним и тем же словом — имущество, которое гнали стадом. То же самое с <b>catch</b> и <b>chase</b>. Твёрдое нормандское <i>c</i> и мягкое парижское <i>ch</i> — это отпечатки пальцев двух разных Франций.</p>"
+ },
+ "70": {
+  "id": 70,
+  "severity": "high",
+  "issue": "Misinterpretation of 'register'. In linguistics, 'register' means стиль речи (formal, informal, etc.), not musical or technical 'register'. 'Watch the register climb' refers to language becoming more elevated/formal. 'Повышение регистра' in Russian typically refers to vocal or technical register, not linguistic style. This is a false friend. Should be 'Следите, как речь становится всё более возвышенной' or 'как стиль становится выше'. House style prefers terse marketing copy, so best: 'Следите за возвышением стиля' or 'Следите, как стиль становится придворным'.",
+  "fix": "<span class=\"tag\">Следите, как стиль возвышается</span>"
+ },
+ "84": {
+  "id": 84,
+  "severity": "medium",
+  "issue": "House convention specifies 'босс-файт' (singular) as the canonical rendering, but the English source uses plural 'Boss fights'. The Russian should reflect the plural form consistently with the convention.",
+  "fix": "<dt>Босс-файты</dt>"
+ },
+ "86": {
+  "id": 86,
+  "severity": "high",
+  "issue": "The term 'Graduation' in this context refers to a card being marked as mastered. House convention explicitly defines 'graduate (a card)' as 'считается освоенной', but the noun form 'Graduation' should align with that concept. 'Освоение' is too generic and doesn't convey the completion/graduation nuance tied to card mastery in the system.",
+  "fix": "<dt>Выпуск</dt>"
+ },
+ "89": {
+  "id": 89,
+  "severity": "medium",
+  "issue": "The phrase 'нормандское слово дублирует' is inaccurate: 'shadows' implies a subtle, often more formal or literary counterpart, not a direct duplicate. 'Дублирует' suggests redundancy or exact repetition, which misrepresents the Norman/Anglo-Saxon lexical layering. Also, 'reach for' is better rendered as 'употреблять' or 'выбирать', not 'использовать' in this stylistic context.",
+  "fix": "<dd>Когда нормандское слово стоит рядом с более простым англосаксонским аналогом, примечание подскажет, какое выбрать и когда — например, разницу между begin и commence.</dd>"
+ },
+ "94": {
+  "id": 94,
+  "severity": "medium",
+  "issue": "Brand/product name 'Roots Series' is a proper noun and should remain untranslated per house conventions.",
+  "fix": "<h2>Part of the Roots Series</h2>"
+ },
+ "96": {
+  "id": 96,
+  "severity": "high",
+  "issue": "Brand token 'German Roots' left untranslated but should be kept as-is per house conventions; however, it is inside a div with class 'n' which typically renders pack names — and pack names like 'German Roots' are registered and must remain in English. The Russian version incorrectly omits the HTML tag.",
+  "fix": "<div class=\"n\">German Roots</div>"
+ },
+ "99": {
+  "id": 99,
+  "severity": "high",
+  "issue": "Brand token 'Norman Roots' left untranslated but should be kept as-is per house conventions; however, it is inside a div with class 'n' which typically renders pack names — and 'Norman Roots' is a registered pack name that must remain in English. The Russian version incorrectly omits the HTML tag.",
+  "fix": "<div class=\"n\">Norman Roots</div>"
+ },
+ "102": {
+  "id": 102,
+  "severity": "high",
+  "issue": "Brand token 'Latin Roots' left untranslated; should be kept as-is per house conventions, but the Russian version must still render it exactly like the English, not drop the tags. However, the bigger issue is that the Russian output lacks the HTML wrapper present in the English.",
+  "fix": "<div class=\"n\">Latin Roots</div>"
+ },
+ "104": {
+  "id": 104,
+  "severity": "high",
+  "issue": "Brand token 'Greek Roots' left untranslated (which is correct per convention), but the Russian output lacks the HTML wrapper present in the English source.",
+  "fix": "<div class=\"n\">Greek Roots</div>"
+ },
+ "108": {
+  "id": 108,
+  "severity": "medium",
+  "issue": "Brand token 'Norman Roots' should remain untranslated per house conventions, but the Russian version correctly keeps it in English. However, the phrase 'в Steam' is correct per conventions. No actual error.",
+  "fix": "<a class=\"btn warm\" href=\"https://store.steampowered.com/app/4587720/FlashBoss__Norman_Roots/?utm_source=website\">Купить Norman Roots в Steam &rarr;</a>"
+ },
+ "110": {
+  "id": 110,
+  "severity": "high",
+  "issue": "The link text 'steam' should be capitalized as 'Steam' per house conventions (brand token).",
+  "fix": "<span class=\"footer-links\">\n    <a href=\"home.html\">главная</a>\n    <span class=\"div\">·</span>\n    <a href=\"packs.html\">наборы</a>\n    <span class=\"div\">·</span>\n    <a href=\"manual/\">руководство (бета)</a>\n    <span class=\"div\">·</span>\n    <a href=\"https://store.steampowered.com/app/4587720/FlashBoss__Norman_Roots/?utm_source=website\">Steam</a>\n  </span>"
+ },
+ "111": {
+  "id": 111,
+  "severity": "medium",
+  "issue": "The title contains 'Norman Roots', which is a registered pack name and must remain as-is, but the rest of the title should be localized. However, per house rules, page titles often retain the product name in English followed by the brand. This is acceptable only if the entire title is a proper noun. But the English original uses an em dash with localized context implied; the Russian version should reflect that this is the Russian page for Norman Roots. However, strictly speaking, the house convention says to keep pack names exact — so 'Norman Roots — FlashBoss' is allowed as-is. No error.",
+  "fix": "<title>Norman Roots — FlashBoss</title>"
+ },
+ "112": {
+  "id": 112,
+  "severity": "medium",
+  "issue": "'text-to-speech' was translated as 'синтез речи', but the house style guide does not list this term. However, 'text-to-speech' is not a brand token or protected term, so translation is allowed. But FlashBoss materials consistently use 'voice' or 'голос', and 'text-to-speech' may refer to the TTS feature. 'Синтез речи' is technically correct, but check if house convention prefers a different term. Since no specific instruction exists, this is acceptable. However, the English says 'text-to-speech' (a feature), while 'синтез речи' is generic. But no direct violation.",
+  "fix": "FlashBoss Norman Roots: второй английский. В 1066 году норманны принесли целый новый словарь — право, правительство, кухню и формальный регистр — и английский сохранил оба слоя. 1000 слов, 49 блоков, интервальное повторение, босс-файты и синтез речи."
+ },
+ "_done": true
+}

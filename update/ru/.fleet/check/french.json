@@ -1,0 +1,243 @@
+{
+ "16": {
+  "id": 16,
+  "severity": "high",
+  "issue": "The phrase 'French core design' should not be partially translated; 'French Core' is a registered pack name and must remain exactly as-is per house conventions.",
+  "fix": "<span class=\"tag\">French Core design</span>"
+ },
+ "48": {
+  "id": 48,
+  "severity": "medium",
+  "issue": "The class attribute 'en' is incorrect for Russian content; it should reflect the target language or be neutral.",
+  "fix": "<span class=\"ru\">Шёл сильный дождь, поэтому мы остались дома.</span>"
+ },
+ "49": {
+  "id": 49,
+  "severity": "medium",
+  "issue": "The class attribute 'en' is incorrect for Russian content; it should reflect the target language or be neutral.",
+  "fix": "<span class=\"ru\">Не могли бы вы объяснить, почему вы сегодня снова опоздали? (вежливая форма)</span>"
+ },
+ "50": {
+  "id": 50,
+  "severity": "high",
+  "issue": "The translation 'видно с первого взгляда' is incorrect. 'Read it by sight' in a language-learning context means to read aloud or recognize instantly without decoding—closer to 'прочитайте с листа' or 'узнайте на глаз'. Also, the class 'tag' should not contain translatable instructional text if it's UI, but assuming it is meant to be translated, the current rendering is misleading.",
+  "fix": "<span class=\"tag\">прочитайте с листа</span>"
+ },
+ "51": {
+  "id": 51,
+  "severity": "low",
+  "issue": "The phrase 'le · la, в цвете' is ambiguous and loses the didactic intent. The English implies that the articles 'le' and 'la' are presented with color coding. A clearer rendering would specify that they are shown 'с цветовой маркировкой' or similar. However, this may be acceptable in context. Still, 'в цвете' usually means 'in color' as opposed to black-and-white, not 'color-coded'.",
+  "fix": "<h2>le · la, с цветовой маркировкой</h2>"
+ },
+ "52": {
+  "id": 52,
+  "severity": "medium",
+  "issue": "The class attribute 'sub' is fine, but the phrase 'род запоминается вместе со словом, а не после него' slightly distorts meaning. The English says 'you learn the gender with the word instead of after it', emphasizing active learning timing. The Russian passive 'запоминается' removes the learner agency. Better: 'вы усваиваете род сразу вместе со словом, а не позже.' Also, 'нажмите' is imperative singular, but FlashBoss uses 'вы' form consistently—should be 'Нажмите' (which is actually correct for formal/plural вы). So that part is OK.",
+  "fix": "<p class=\"sub\">У каждого существительного артикль окрашен по роду, так что вы усваиваете род сразу вместе со словом, а не позже. Нажмите на карточку, чтобы перевернуть её.</p>"
+ },
+ "53": {
+  "id": 53,
+  "severity": "medium",
+  "issue": "The class attribute is missing or assumed neutral, but more importantly, the house convention requires that teaching material in the target language (here French 'le') remains as-is, which is correct. However, the explanation 'мужской род' is acceptable, but the pattern in #52 uses 'по роду', and consistency might prefer just 'мужской' (as gender label), though 'мужской род' isn't wrong. Minor. But the bigger issue: the <i class=\"lm\"></i> is likely a gender icon; if 'lm' stands for 'le masculine', it's fine. No defect in meaning, but the span lacks a language class. Assuming all spans with translatable content should have proper lang tagging, but per instructions only HTML damage counts. Since no HTML is broken, this may be OK. However, comparing to #48–49, inconsistent class usage ('en' on RU) is a pattern. Here, no class is given—might be acceptable. On balance, possibly no defect. But given #48–49 misuse, this one is actually better. So maybe no issue. However, re-evaluating: the instruction says 'KEEP EXACTLY AS-IS' for HTML. The original EN has <span><i class=\"lm\"></i> le — masculine</span>. The RU version changes 'masculine' to 'мужской род'—that’s correct. HTML structure preserved. So actually #53 is fine. Therefore, remove from list.",
+  "fix": ""
+ },
+ "54": {
+  "id": 54,
+  "severity": "medium",
+  "issue": "The French article 'la' is being glossed as 'feminine', but in Russian this should specify 'article' to avoid ambiguity; as written, it may misleadingly imply that 'la' itself is a feminine noun.",
+  "fix": "<span><i class=\"lf\"></i> la — женский артикль</span>"
+ },
+ "55": {
+  "id": 55,
+  "severity": "high",
+  "issue": "The original English says 'Masculine', but the Russian translation incorrectly assigns masculine gender to 'работа', which is actually feminine in Russian. However, the point of the English is that the *French* word (implied to be 'travail') is masculine. The translation fails to clarify that the gender refers to the French word, not the Russian gloss, leading to factual inaccuracy.",
+  "fix": "<div class=\"trans\">работа — «Во сколько он идёт на работу?» Слово во французском мужского рода. Неправильное множественное: <i>travaux</i>. Разговорно — <i>le boulot</i>.</div>"
+ },
+ "56": {
+  "id": 56,
+  "severity": "high",
+  "issue": "Same issue as #55: the English states 'Feminine' referring to the French word 'maison', but the Russian translation says 'Женский род' right after the Russian word 'дом', which is masculine in Russian. This creates confusion, implying 'дом' is feminine, which is false. The gender must be explicitly tied to the French word.",
+  "fix": "<div class=\"trans\">дом — «Наш дом белый и новый.» Слово во французском женского рода. <i>À la maison</i> = дома, одно из самых частых выражений языка.</div>"
+ },
+ "57": {
+  "id": 57,
+  "severity": "high",
+  "issue": "Same core problem: 'вода' in Russian is feminine, so saying 'Женский род' after it is correct for Russian, but the context is explaining the gender of the *French* word 'eau'. However, the bigger issue is that the sentence says 'вопреки модели -eau, из-за которой le couteau мужского рода' — this implies the -eau pattern usually yields masculine, so 'eau' is an exception. But the phrasing 'Женский род' right after 'вода' blurs whether this describes the Russian or French word. More critically, the color 'magenta' is rendered as 'пурпурный', but FlashBoss house convention uses 'пурпурный' inconsistently — however, the real defect is ambiguity of gender attribution.",
+  "fix": "<div class=\"trans\">вода — «Я пью воду.» Слово во французском женского рода, вопреки модели <i>-eau</i>, из-за которой <i>le couteau</i> мужского рода. На карточке слово сокращается до <i>l'eau</i> — и остаётся пурпурным.</div>"
+ },
+ "59": {
+  "id": 59,
+  "severity": "high",
+  "issue": "The phrase 'still masculine' refers to the French word 'ami' (implied by context), but the Russian translation says 'по-прежнему мужского рода' right after 'друг', which in Russian is indeed masculine — but the user might think the system is stating a fact about Russian, not French. More importantly, the color 'blue' indicates grammatical gender in the app (blue = masculine), so the point is that the card remains blue because the French word is masculine. The current translation fails to link the gender to the French word, creating ambiguity.",
+  "fix": "<div class=\"gloss\">друг — по-прежнему <b>синий</b>, так как слово во французском мужского рода.</div>"
+ },
+ "60": {
+  "id": 60,
+  "severity": "medium",
+  "issue": "The English uses 'magenta', but the Russian translation renders it as 'пурпурная' (purple). Magenta and purple are distinct colors; this is a meaning shift.",
+  "fix": "<div class=\"gloss\">вода — по-прежнему <b>magenta</b>, по-прежнему женского рода.</div>"
+ },
+ "62": {
+  "id": 62,
+  "severity": "low",
+  "issue": "Capitalization inconsistency: the English has title case ('Not just a word list'), while the Russian uses lowercase ('не просто список слов'). Although Russian often uses sentence case in such contexts, the house style requires matching the source's register and punctuation rhythm. Since the source is marketing copy with title-case emphasis, the Russian should capitalize the first letter.",
+  "fix": "<span class=\"tag\">Не просто список слов</span>"
+ },
+ "63": {
+  "id": 63,
+  "severity": "medium",
+  "issue": "'fired in sequence' is idiomatically rendered as 'срабатывающих по порядку', which is unnatural and possibly misleading. 'Fired in sequence' here implies lessons are activated or delivered one after another in a fixed order. A more accurate and natural phrasing would be 'идущих подряд' or 'проходимых последовательно'. 'Срабатывающих' suggests triggering like a mechanism, which distorts the intended meaning.",
+  "fix": "<h2>Двадцать уроков, идущих подряд</h2>"
+ },
+ "65": {
+  "id": 65,
+  "severity": "high",
+  "issue": "The term 'CaReFuL consonants' is teaching material (a mnemonic in English for French final consonants: C, R, F, L). Per house rules, words/sentences in the language being taught must remain untranslated, but 'CaReFuL' is an English mnemonic about French pronunciation and should not be translated or altered. However, the Russian translation keeps 'CaReFuL' as-is, which is correct—but the surrounding explanation 'которые выживают в конце слова' misrepresents the mnemonic. The original says these consonants 'survive' (i.e., are pronounced) at the end of a word. 'Выживают' is a calque that sounds odd in Russian; the standard pedagogical term is 'произносятся' or 'сохраняются'. More critically, the mnemonic itself should be explained as a proper noun or kept with clarification. However, the main defect is the unnatural calque 'выживают'.",
+  "fix": "<li><span class=\"no\">01</span>Французское произношение<span class=\"d\">Гласные, носовые, немые окончания и согласные CaReFuL, которые произносятся в конце слова.</span></li>"
+ },
+ "72": {
+  "id": 72,
+  "severity": "medium",
+  "issue": "The French term 'subjonctif' should remain untranslated per house convention (teaching material in the target language must not be translated).",
+  "fix": "<li><span class=\"no\">17</span>Subjonctif intro<span class=\"d\">Наклонение, которое английский потерял, — встречается там, где карточки впервые его требуют.</span></li>"
+ },
+ "73": {
+  "id": 73,
+  "severity": "medium",
+  "issue": "French grammatical terms (futur proche, passé composé, imparfait, conditionnel présent, futur simple) must remain untranslated as they are part of the teaching material.",
+  "fix": "<p class=\"sub\" style=\"margin:22px 0 0;\">Внутри также: как читать карточку, настоящее время, отрицание, повелительное наклонение, futur proche, passé composé, возвратные глаголы, imparfait, conditionnel présent, futur simple, <i>héros</i> против <i>héroïne</i> — и заключительный урок о том, куда двигаться дальше.</p>"
+ },
+ "78": {
+  "id": 78,
+  "severity": "medium",
+  "issue": "The Russian uses «оставаться, задерживаться», but the English only says 'to stay, to remain'. 'Задерживаться' adds a nuance of temporary delay not present in the original.",
+  "fix": "<div class=\"trans\">оставаться — <b>не</b> «отдыхать». «Останься здесь со мной!» Отдыхать — <i>se reposer</i>.</div>"
+ },
+ "80": {
+  "id": 80,
+  "severity": "low",
+  "issue": "The Russian repeats 'монета' twice ('угол — не монета, монета — une pièce'), which is redundant and not mirrored in the English. The English uses 'a coin' only once.",
+  "fix": "<div class=\"trans\">угол — <b>не</b> монета, это <i>une pièce</i>. «Кафе прямо на углу улицы, справа.»</div>"
+ },
+ "81": {
+  "id": 81,
+  "severity": "medium",
+  "issue": "The English says 'nice, friendly', but the Russian translates as 'милый, приятный'. 'Милый' can imply 'cute' or 'sweet' and may not fully capture 'friendly'; also, 'приятный' is more 'pleasant' than 'friendly'. A better pair would be 'приятный, дружелюбный'.",
+  "fix": "<div class=\"trans\">приятный, дружелюбный — <b>не</b> «сочувствующий». «Твой новый коллега кажется очень приятным.» Разговорное; карточка помечает его регистром <i>tu</i>, чтобы вы знали, где ему место.</div>"
+ },
+ "90": {
+  "id": 90,
+  "severity": "medium",
+  "issue": "The class name 'soon' contradicts the content 'out now' / 'уже вышел'. If something is 'soon', it is not yet out. This is a semantic inconsistency in the source, but since the task is to review the translation, and the Russian correctly renders 'out now' as 'уже вышел', the defect lies in the mismatch between the HTML class and the text. However, per instructions, we must keep HTML exactly as-is and only flag translation issues. But note: the English itself is contradictory. Since the Russian accurately reflects the English wording despite the odd class, this may seem acceptable. Yet 'soon' typically implies 'coming soon', so rendering 'out now' inside <span class=\"soon\"> is misleading. However, the translator isn't responsible for the class name. Therefore, strictly speaking, the translation is correct. BUT: house conventions say 'out now -> уже вышел', which is followed. So no error.",
+  "fix": null
+ },
+ "91": {
+  "id": 91,
+  "severity": "high",
+  "issue": "Brand token 'French Core' must be kept exactly as-is per house conventions, but in Russian context, it should remain untranslated — which it is. However, the issue is that the HTML is malformed: the string starts with '>French Core</a> · ', meaning the opening <a> tag is missing. But the instruction says to keep HTML exactly as-is, and we are only reviewing the translation. Since the English unit also has the same malformed fragment, and the Russian preserves it identically, this is not a translation error. However, per house rules, brand tokens like 'French Core' must not be translated — and they aren't. So this appears correct. BUT: wait — the instruction says 'KEEP EXACTLY AS-IS' all HTML and brand tokens. The Russian version correctly leaves 'French Core' in English. So no error.",
+  "fix": null
+ },
+ "94": {
+  "id": 94,
+  "severity": "medium",
+  "issue": "The English 'How it sticks' is rendered as 'почему это запоминается'. However, 'How it sticks' refers to the mechanism of retention (how the memory sticks), not the reason ('why'). 'Почему' means 'why', whereas 'как' would mean 'how'. This changes the meaning from 'how' to 'why'.",
+  "fix": "<span class=\"tag\">как это запоминается</span>"
+ },
+ "96": {
+  "id": 96,
+  "severity": "medium",
+  "issue": "The English term 'Fibonacci SRS' was translated as 'Интервалы по Фибоначчи', but per house conventions, key feature names like this should likely retain recognisable branding or standard phrasing. However, more critically, 'spaced repetition on Fibonacci intervals' is rendered as 'интервальное повторение по числам Фибоначчи', which is acceptable, but the original dt 'Fibonacci SRS' is a proper name of a system — and while not a brand token, the translation changes the technical label. But the real issue: 'the longer before it returns' is translated as 'тем позже оно вернётся', which reverses causality — in SRS, better rating = longer interval = later return, which is correct, so meaning is preserved. No defect here.",
+  "fix": null
+ },
+ "97": {
+  "id": 97,
+  "severity": "low",
+  "issue": "The phrase 'confronting and overcoming your most difficult words' is translated as 'не встретившись лицом к лицу с самыми трудными для вас словами', which omits 'overcoming' (преодолев их). The Russian only includes 'встретившись', missing the second part of the requirement to win the duel.",
+  "fix": "<dt>Босс-файты</dt><dd>Каждый из 120 блоков закрыт дуэлью, которую не выиграть, не встретившись лицом к лицу и не преодолев свои самые трудные слова.</dd>"
+ },
+ "98": {
+  "id": 98,
+  "severity": "medium",
+  "issue": "'Beat a cluster' is translated as 'Пройдите блок', which is acceptable, but 'cards leave your daily deck for good' becomes 'навсегда покидают вашу ежедневную колоду' — correct. However, 'The deck gets smaller as you learn' is rendered as 'Чем больше вы знаете, тем меньше колода.' This subtly shifts meaning: the original ties deck size to *graduating cards* (i.e., completing clusters), not general knowledge. The Russian implies any learning shrinks the deck, which isn't accurate — only graduated cards are removed. This adds a claim not in the English.",
+  "fix": "<dt>Выпуск</dt><dd>Пройдите блок — и его карточки навсегда покидают вашу ежедневную колоду. Колодa уменьшается по мере освоения материала.</dd>"
+ },
+ "99": {
+  "id": 99,
+  "severity": "high",
+  "issue": "The English specifies 'Clean French Piper text-to-speech... the <i>siwis</i> fr_FR voice, Metropolitan French.' The Russian says 'голос <i>siwis</i> fr_FR, столичный французский.' However, 'Metropolitan French' is a technical term referring to standard European French (as opposed to Canadian, African, etc.). 'Столичный французский' is a calque that sounds unnatural in Russian; the standard term is 'метрополитенский французский' or more commonly 'европейский вариант французского' or simply 'стандартный французский'. 'Столичный' incorrectly suggests 'of the capital city' in a vague way and is not the accepted linguistic term.",
+  "fix": "<dt>Озвучка</dt><dd>Чистый французский синтез речи Piper для каждого изучаемого слова и каждого примера — голос <i>siwis</i> fr_FR, стандартный европейский французский. Это синтез, а не запись диктора.</dd>"
+ },
+ "100": {
+  "id": 100,
+  "severity": "medium",
+  "issue": "The English says 'All 3,000 cards carry their translation <i>and</i> their notes in German, Spanish, Japanese and Simplified Chinese as well as English'. The Russian uses 'пояснения' for 'notes', which is acceptable. But then: 'every reference lesson has siblings in the same four.' The Russian says 'у каждого справочного урока есть версии на тех же четырёх.' However, the English says 'the same four' — meaning the four non-English languages (German, Spanish, Japanese, Chinese). The Russian 'тех же четырёх' could ambiguously include English or not, but contextually it's okay. More importantly: 'French is fully playable without a word of English.' The Russian: 'Французский полностью проходится без единого английского слова.' This is mostly fine, but 'проходится' is informal/colloquial; 'можно полностью изучать' or 'полностью доступен' would be more standard. However, register matches source ('playable' → 'проходится') so may be acceptable. But critical defect: the English says 'as well as English' — meaning cards have content in 5 languages total. The Russian correctly lists five. However, the phrase 'Интерфейс говорит на всех пяти' is unnatural: interfaces don't 'speak' languages; they are 'локализованы' or 'доступны'. 'Говорит' is a calque. Per house style, match register, but this is awkward Russian.",
+  "fix": "<dt>Ваш язык</dt><dd>Все 3000 карточек содержат перевод <i>и</i> пояснения на немецком, испанском, японском и упрощённом китайском, а также на английском, и каждый справочный урок доступен на тех же четырёх языках. Интерфейс локализован на всех пяти. Французский можно полностью изучать, не зная ни слова по-английски.</dd>"
+ },
+ "101": {
+  "id": 101,
+  "severity": "medium",
+  "issue": "'Magenta' is translated as 'пурпурный', but in UI/design contexts, 'magenta' is often kept as 'маджента' or rendered as 'пурпурный' — acceptable. However, 'the colour survives the elision to <i>l'</i>' is translated as 'цвет переживает сокращение до <i>l'</i>'. 'Переживает' is anthropomorphic and odd here; better: 'сохраняется даже при сокращении до <i>l'</i>' or 'цвет остаётся и после сокращения до <i>l'</i>'. 'Переживает' implies the color endures hardship, which is stylistically off.",
+  "fix": "<dt>Род с первого взгляда</dt><dd>Синий для <i>le</i>, пурпурный для <i>la</i>, на каждом существительном — и цвет сохраняется даже при сокращении до <i>l'</i>.</dd>"
+ },
+ "102": {
+  "id": 102,
+  "severity": "medium",
+  "issue": "The Russian translation reverses the emphasis of 'first' — in English, it modifies 'the French you'll actually hear', implying priority in selection; in Russian, 'сначала' suggests a temporal sequence ('first you'll hear this, then something else'), which distorts the original meaning.",
+  "fix": "<dt>Частотность</dt><dd>Список слов построен на частотных данных корпуса субтитров — французский, который вы действительно услышите, в первую очередь.</dd>"
+ },
+ "103": {
+  "id": 103,
+  "severity": "high",
+  "issue": "The phrase 'fire at the point in the sequence' is rendered as 'срабатывают ровно там', which is unnatural and misleading. 'Fire' here metaphorically means the lessons are triggered or presented at that point; 'срабатывают' implies mechanical activation (like a trap or alarm), which is incorrect. Also, 'unlock what you're about to read' is inaccurately translated as 'открывают то, что вы вот-вот прочтёте' — the lessons don't 'open' the content; they become available or are introduced when you’re about to encounter related material.",
+  "fix": "<dt>Уроки</dt><dd>Тридцать семь справочных уроков из трёх наборов появляются в той точке последовательности, где дают ключ к тому, что вы вот-вот прочтёте.</dd>"
+ },
+ "107": {
+  "id": 107,
+  "severity": "medium",
+  "issue": "The term 'Metropolitan French' is translated as 'Столичный французский', which is incorrect. In linguistic contexts, 'Metropolitan French' refers to the variety spoken in mainland France (as opposed to Canadian, African, etc.), not literally 'capital city' French. The correct term is 'метрополитенский французский' or more naturally in Russian pedagogical context: 'французский Франции' is acceptable, but 'столичный' wrongly implies Paris-only usage. Additionally, 'озвучке' is too narrow; 'голос' (per house convention) should be used for 'voice'.",
+  "fix": "<p class=\"a\">Французский Франции — от первой карточки до последней: в лексике, в примерах и в голосе.</p>"
+ },
+ "109": {
+  "id": 109,
+  "severity": "medium",
+  "issue": "The Russian uses 'она' to refer to the base game, but 'базовая игра FlashBoss' is feminine, so 'она' is grammatically correct; however, the phrase 'поэтому нужна и она' is ambiguous and slightly unnatural. Better: 'поэтому вам также понадобится базовая игра.' Additionally, the colon after 'Pareto 1' should be an em dash or comma to match the English structure more naturally in Russian.",
+  "fix": "<p class=\"a\">Да. French Core — это DLC к базовой игре FlashBoss, поэтому вам также понадобится базовая игра. Pareto 1 требует Core, а Pareto 2 — Pareto 1 — наборы надстраиваются друг над другом по порядку. Всё остальное — уроки, озвучка, босс-файты — уже внутри набора.</p>"
+ },
+ "111": {
+  "id": 111,
+  "severity": "medium",
+  "issue": "The phrase 'французского Франции' is not standard Russian terminology. The conventional term is 'французского языка, на котором говорят во Франции' or simply 'французского (Франция)'. However, house conventions require keeping teaching-language terms intact, but 'французского Франции' is neither standard nor a direct quote—it’s a calque. Better: 'французского языка из Франции' or 'французского (Франция)'. Also, 'нейросетевой синтезатор речи' is acceptable, but the original says 'neural text-to-speech voice', and house style prefers 'голос' for 'voice'. So it should be 'нейросетевой голос синтеза речи' or similar.",
+  "fix": "<p class=\"a\">Нет, и мы не будем делать вид, что это не так. Каждое изучаемое слово и каждый пример произносит нейросетевой голос синтеза речи — голос Piper <i>siwis</i> fr_FR, обученный на данных французского языка из Франции. Он чистый и ровный, и это синтез, а не человек.</p>"
+ },
+ "113": {
+  "id": 113,
+  "severity": "medium",
+  "issue": "The phrase 'держитесь на занятии уровня A2' is unnatural. Native phrasing would be 'следить за ходом занятия уровня A2' or 'понимать происходящее на уроке уровня A2'. Also, 'прочитав по дороге' is colloquial but acceptable; however, 'в процессе вы прочитаете более 7000 слов...' would be clearer. More importantly, house style drops thousands commas, which is correctly done (7000), but the phrase '1000 высокочастотных слов' should arguably be '1000 самых употребительных слов'—though 'высокочастотных' is technically correct, it's less common in learner contexts. However, the main issue is 'держитесь', which implies coping under pressure, not comprehension.",
+  "fix": "<p class=\"a\">До основы A1–A2: 1000 высокочастотных слов и двадцать уроков грамматики, охватывающих présent, passé composé, imparfait, conditionnel и futur, плюс введение в subjonctif. К концу вы сможете читать простые французские тексты и понимать происходящее на уроке уровня A2, прочитав в процессе более 7000 слов французского в контексте.</p>"
+ },
+ "115": {
+  "id": 115,
+  "severity": "medium",
+  "issue": "The phrase 'надстраивает Core' is a calque and unnatural in Russian; it should use house terminology 'основан на Core' or similar. Also, 'тянется к образованному стандарту' is awkward phrasing.",
+  "fix": "<p class=\"a\">Оба уже вышли — по 1000 слов. Pareto 1 основан на Core и добавляет следующую тысячу высокочастотных слов и разговорный регистр; Pareto 2 охватывает образованный стандарт: официальный регистр, стройную аргументацию, прессу. Pareto 1 требует Core, а Pareto 2 — Pareto 1.</p>"
+ },
+ "117": {
+  "id": 117,
+  "severity": "low",
+  "issue": "The phrase 'лежат на странице' is colloquial and slightly informal for this context; 'доступны на странице' would be more neutral and standard.",
+  "fix": "<p class=\"a\">Все до одного. Полные списки слов для Core, Pareto 1 и Pareto 2 доступны на <a href=\"wordlists.html?lang=French&amp;set=Core\">странице списков слов</a>, а все тридцать семь справочных уроков — на <a href=\"lessons.html?lang=French\">странице уроков</a>: бесплатно, для печати, без регистрации.</p>"
+ },
+ "120": {
+  "id": 120,
+  "severity": "high",
+  "issue": "The French word 'vous' is part of the teaching material and must not be translated or altered. However, the Russian sentence uses 'с vous', which mixes a preposition from Russian with an uninflected foreign pronoun, creating unnatural phrasing. In Russian instructional contexts, it's standard to keep the foreign term but frame it properly—e.g., 'Начните с “vous”' (with quotes) or treat it as a quoted lexical item. More critically, the English 'Start at vous.' implies beginning one's learning journey at the concept or usage of 'vous', but the Russian 'Начните с vous' without quotes or typographic distinction may confuse readers, as 'vous' isn't a Russian word and lacks context. However, per house rules: 'Any word or sentence in a language BEING TAUGHT [...] — those are teaching material. Translate only the English gloss/explanation around them.' So 'vous' must remain exactly as-is, which it does. The real issue is register and naturalness: native Russian instructional text would typically use quotation marks or italics for such foreign lexical items when embedded in commands. But since the English doesn’t use quotes either, and HTML <i> isn’t used here, this might be acceptable. However, there's a deeper problem: the verb form. The English uses imperative 'Start', addressed to the user. The Russian uses 'Начните', which is formal/plural вы-form. But the surrounding context (e.g., #124 uses 'тебя') suggests informal ты-address. In #121, the Russian correctly uses 'вами/вам' (formal/plural dative), matching the English 'you' in a general sense. But #124 uses informal 'тебя'. This inconsistency isn't the translator's fault per se, but in #120, if the product addresses learners informally elsewhere, 'Начни с vous.' would be expected. However, house style mandates 'Address the reader as вы (lowercase, not capitalised).' So formal вы is required. Thus 'Начните' is correct. So actually, no error? Wait—re-examining: the English says 'Start at vous.'—this is idiomatic English marketing copy implying your journey begins with mastering 'vous'. The Russian 'Начните с vous' is grammatically odd because 'с' + [foreign pronoun] isn't how Russian expresses this. Normally, you'd say 'Начните с изучения “vous”' or 'Начните с “vous”', but the English is deliberately terse. Given the instruction 'Match the source's register: terse marketing copy stays terse', the translation tries to mirror that. However, 'с vous' is not idiomatic Russian even in terse copy. A more natural terse version would be 'Начните с “vous”.'—adding quotes for clarity, which is conventional in Russian for foreign words in such contexts. But the English has no quotes. House rules don't require adding punctuation not in the source, but Russian orthography often requires quotes for foreign lexical items used as examples. This is a gray area. However, looking at #125: 'French Core · Уровень 2'—the pack name 'French Core' is kept in English per house rules, which is correct. Back to #120: the main defect is that 'vous' should be treated as a quoted term or set off, but since the source doesn't, and house rules say 'KEEP EXACTLY AS-IS' for teaching material, perhaps it's acceptable. But wait—another angle: in French, 'vous' is both formal singular and plural 'you'. The phrase 'Start at vous' plays on the idea that French social interaction begins with formal address. The Russian translation preserves 'vous' correctly. So maybe it's fine. However, upon checking all points, the actual error is in #124.",
+  "fix": "<h2>Начните с vous.</h2>"
+ },
+ "124": {
+  "id": 124,
+  "severity": "high",
+  "issue": "The house style mandates addressing the reader as 'вы' (formal or plural), not 'ты'. The English 'Everyone is happy to see you.' uses generic 'you', which in Russian should be rendered with the formal/plural form to match the established register. The translation uses 'тебя' (informal singular accusative), violating the 'Address the reader as вы' rule. It should be 'Все рады вас видеть.'",
+  "fix": "<span class=\"tr\">Все рады вас видеть.</span>"
+ },
+ "_done": true
+}

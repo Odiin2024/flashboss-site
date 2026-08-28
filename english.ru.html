@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Английский — FlashBoss</title>
+<meta name="description" content="FlashBoss English: английский как иностранный, с учебным интерфейсом на немецком, испанском, японском или упрощённом китайском. English Core, Pareto 1 и Pareto 2 — по 1000 слов, каждая карточка с переводом и пояснениями на языке учащегося, с интервальным повторением, босс-файтами и озвучкой.">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/english.html">
+<link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/english.de.html">
+<link rel="alternate" hreflang="es" href="https://odiin2024.github.io/flashboss-site/english.es.html">
+<link rel="alternate" hreflang="ja" href="https://odiin2024.github.io/flashboss-site/english.ja.html">
+<link rel="alternate" hreflang="zh" href="https://odiin2024.github.io/flashboss-site/english.zh.html">
+<link rel="alternate" hreflang="ru" href="https://odiin2024.github.io/flashboss-site/english.ru.html">
+<link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/english.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   FlashBoss — English program page
+   Aesthetic: phosphor terminal, sibling to french.html.
+   The through-line is the program's own store ruling: this
+   course is NOT available in English — the page you read in
+   English is a signpost for somebody else. The page opens in
+   SIGNAL (cold procedural blue — the language of forms,
+   airports, error messages) and warms into SPOKEN (amber —
+   the same language, finally yours across a table).
+
+   NOTE: the de/es/ja/zh siblings are the real sales pages;
+   this English page is deliberately written over the reader's
+   shoulder, at the learner behind them.
+
+   Hero: background.png (the site's root backdrop) — English has
+   no flag asset by convention; pattern B <img> + onerror.
+   ============================================================ */
+:root{
+  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
+
+  /* SIGNAL palette (top — the cold English of forms and airports) */
+  --v-bg:#0d1117;
+  --v-ink:#dbe6ee;
+  --v-dim:#8ba2b4;
+  --v-accent:#7ec8ff;   /* phosphor blue — the FlashBoss signal */
+
+  /* SPOKEN palette (bottom — the same language, warmed to yours) */
+  --t-bg:#14110b;
+  --t-ink:#efe2c2;
+  --t-dim:#b5a67e;
+  --t-accent:#e0a93f;   /* amber — the lamp over the table */
+
+  /* mood: 0 = signal, 1 = spoken. Driven by scroll. */
+  --mood:0;
+
+  --line:color-mix(in oklab, #33414f, #4a3f22 calc(var(--mood) * 100%));
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0; font-family:var(--mono);
+  background:#0d1117;
+  background:color-mix(in oklab, var(--v-bg), var(--t-bg) calc(var(--mood)*100%));
+  color:color-mix(in oklab, var(--v-ink), var(--t-ink) calc(var(--mood)*100%));
+  line-height:1.6; -webkit-font-smoothing:antialiased;
+  transition:background 120ms linear, color 120ms linear; overflow-x:hidden;
+}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.045) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.vignette{position:fixed; inset:0; pointer-events:none; z-index:9998;
+  background:radial-gradient(120% 90% at 50% 35%, transparent 55%, rgba(0,0,0,.5) 100%);}
+.wrap{max-width:880px; margin:0 auto; padding:0 24px;}
+
+nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line);}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--v-dim); margin-right:auto;}
+nav .brand a, nav .brand .sep{color:var(--v-dim); text-decoration:none;}
+nav .brand a:hover{color:var(--v-ink);}
+nav .brand .here{font-weight:800; color:var(--v-ink);}
+nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--v-ink);}
+nav .brand .logo:hover{color:var(--v-accent);}
+nav .brand .pipe{color:var(--v-dim); margin:0 11px;}
+.nav-mobile{display:none;}
+.nav-mobile a{color:inherit; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.08em; opacity:.85;}
+.nav-mobile a:hover{opacity:1; color:var(--v-accent);}
+@media(max-width:640px){ nav .brand, nav .links{display:none;} .nav-mobile{display:flex; flex:1; justify-content:space-between; align-items:center;} .nav-mobile .r{display:flex; gap:18px;} }
+nav .links a{color:inherit; text-decoration:none; opacity:.7; margin-left:22px;}
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+nav .links a.steam{font-weight:800; opacity:1; color:var(--v-ink);}
+nav .lang-switch{position:relative; margin-left:22px;}
+nav .lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--v-ink); background:var(--v-bg); border:1px solid var(--v-dim); padding:5px 8px; line-height:1; cursor:pointer;}
+nav .lang-toggle:hover, nav .lang-toggle[aria-expanded="true"]{background:var(--v-ink); color:var(--v-bg);}
+nav .lang-caret{font-size:8px; line-height:1; transition:transform .15s ease;}
+nav .lang-toggle[aria-expanded="true"] .lang-caret{transform:rotate(180deg);}
+nav .lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--v-bg); border:1px solid var(--v-dim); min-width:120px; z-index:50;}
+nav .lang-menu[hidden]{display:none;}
+nav .lang-menu li{margin:0; padding-left:0; position:static;}
+nav .lang-menu li::before{content:none;}
+nav .lang-menu a{display:block; font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--v-ink); text-decoration:none; padding:7px 10px; white-space:nowrap; opacity:1; margin:0;}
+nav .lang-menu a:hover{background:var(--v-ink); color:var(--v-bg); text-decoration:none;}
+nav .lang-menu a[aria-current="true"]{color:var(--v-accent);}
+nav .lang-menu a[aria-current="true"]:hover{color:var(--v-bg);}
+
+.reveal{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease;}
+.reveal.in{opacity:1; transform:none;}
+
+/* HERO — image band. The <img> carries the alt text; the gradient
+   sits over it so the type stays legible whatever the art is. */
+.hero{position:relative; padding:84px 0 36px; overflow:hidden; background:#0d1117;}
+.hero .hero-img{position:absolute; inset:0; z-index:0; width:100%; height:100%; object-fit:cover; object-position:center 30%;}
+.hero::after{content:""; position:absolute; inset:0; z-index:1;
+  background:linear-gradient(180deg, rgba(13,17,23,.62) 0%, rgba(13,17,23,.84) 55%, #0d1117 100%);}
+.hero .wrap{position:relative; z-index:2;}
+.kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--v-dim); opacity:.9; margin-bottom:26px;}
+.kicker b{color:var(--v-accent); font-weight:700;}
+.hero h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
+.cursor{display:inline-block; width:.6em; height:1em; vertical-align:-.08em; background:color-mix(in oklab, var(--v-accent), transparent 30%); margin-left:.12em; animation:blink 1.05s steps(1) infinite;}
+@keyframes blink{50%{opacity:0;}}
+.hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:30px 0 0; color:var(--v-ink); font-weight:500;}
+.hero .sig{font-size:13px; letter-spacing:.24em; text-transform:uppercase; color:var(--v-accent); margin:14px 0 0; opacity:.9;}
+.hero .lede{font-size:clamp(15px,2.2vw,18px); max-width:52ch; margin:24px 0 0; color:var(--v-dim);}
+.hero .lede b{color:var(--v-ink); font-weight:700;}
+.hero .handoff{font-size:13.5px; letter-spacing:.05em; margin:20px 0 0; color:var(--v-dim);}
+.hero .handoff a{color:var(--v-accent); font-weight:700; text-decoration:none; border-bottom:1px solid color-mix(in oklab, var(--v-accent), transparent 55%);}
+.hero .handoff a:hover{border-bottom-color:currentColor;}
+.btn{display:inline-block; font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.08em; color:#0d1117; background:color-mix(in oklab, var(--v-accent), transparent 22%);
+  padding:14px 26px; text-decoration:none; border:0; box-shadow:6px 6px 0 color-mix(in oklab, var(--v-accent), #000 62%); transition:transform .12s ease, box-shadow .12s ease;}
+.btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--v-accent), #000 62%);}
+.btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--v-accent), #000 62%);}
+.btn.hot{color:#15100a; background:var(--t-accent); box-shadow:6px 6px 0 color-mix(in oklab, var(--t-accent), #000 60%);}
+.btn.hot:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--t-accent), #000 60%);}
+.hero .steamcta{margin-top:40px;}
+.hero .actions{display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:14px; max-width:520px;}
+.hero .actions .btn{margin-top:0; width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
+
+section{padding:64px 0;}
+.hero + section{padding-top:48px;}
+.frame{border:1px solid var(--line); position:relative; padding:34px 30px 32px;}
+.frame > .tag{position:absolute; top:-12px; left:22px;
+  background:color-mix(in oklab, var(--v-bg), var(--t-bg) calc(var(--mood)*100%));
+  padding:4px 12px; line-height:1; font-size:11px; letter-spacing:.3em; text-transform:uppercase;
+  color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+h2{font-size:clamp(26px,5vw,40px); margin:0 0 8px; font-weight:800; letter-spacing:-.01em;}
+.sub{color:var(--v-dim); font-size:14px; letter-spacing:.04em; margin:0 0 26px;}
+.sub a{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%)); text-decoration:none; border-bottom:1px solid currentColor;}
+p.body{font-size:16px; max-width:62ch; margin:0 0 18px; color:color-mix(in oklab, var(--v-ink), var(--t-ink) calc(var(--mood)*100%));}
+p.body b{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+p.body a{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%)); text-decoration:none; border-bottom:1px solid currentColor;}
+
+/* the two movements — learner vs native */
+.movements{display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px solid var(--line);}
+.mv{padding:30px 26px;}
+.mv:first-child{border-right:1px solid var(--line); background:rgba(126,200,255,.045);}
+.mv:last-child{background:rgba(224,169,63,.045);}
+.mv .h{font-size:12px; letter-spacing:.3em; text-transform:uppercase; margin-bottom:14px;}
+.mv.learner .h{color:var(--v-accent);}
+.mv.native .h{color:var(--t-accent);}
+.mv p{font-size:14.5px; margin:0;}
+.mv p a{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%)); text-decoration:none; border-bottom:1px solid currentColor;}
+@media(max-width:640px){
+  .movements{grid-template-columns:1fr;}
+  .mv:first-child{border-right:0; border-bottom:1px solid var(--line);}
+}
+
+/* gradient run — the five tiers as one movement */
+.run{border:1px solid var(--line); display:grid; grid-template-columns:repeat(5,1fr); overflow:hidden;}
+.run .step{padding:22px 16px; border-right:1px solid var(--line); position:relative;}
+.run .step:last-child{border-right:0;}
+.run .step:nth-child(1){background:color-mix(in oklab, transparent, var(--v-accent) 6%);}
+.run .step:nth-child(2){background:color-mix(in oklab, transparent, var(--v-accent) 9%);}
+.run .step:nth-child(3){background:color-mix(in oklab, transparent, var(--t-accent) 8%);}
+.run .step:nth-child(4){background:color-mix(in oklab, transparent, var(--t-accent) 12%);}
+.run .step:nth-child(5){background:color-mix(in oklab, transparent, var(--t-accent) 17%);}
+.run .t{font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%)); margin-bottom:10px; font-weight:700;}
+.run .step p{font-size:12.5px; margin:0; color:color-mix(in oklab, var(--v-dim), var(--t-dim) calc(var(--mood)*100%));}
+@media(max-width:640px){.run{grid-template-columns:1fr;} .run .step{border-right:0; border-bottom:1px solid var(--line);} .run .step:last-child{border-bottom:0;}}
+
+/* one card, four languages — the meta-layer proof */
+.quad{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+@media(max-width:640px){.quad{grid-template-columns:1fr;}}
+.qcard{border:1px solid var(--line); padding:20px 18px; background:rgba(255,255,255,.015);}
+.qcard .lang{font-size:11px; letter-spacing:.2em; text-transform:uppercase; font-weight:700; color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+.qcard .word{font-size:24px; font-weight:800; margin:4px 0 2px;}
+.qcard .tr{font-size:14.5px; font-weight:700; color:color-mix(in oklab, var(--v-ink), var(--t-ink) calc(var(--mood)*100%)); margin-bottom:12px;}
+.qcard .ex{font-size:13px; color:var(--v-dim);}
+.qcard .ex .en{font-style:italic;}
+.qcard .ex .arrow{opacity:.6; margin:0 4px;}
+.qcard .notes{font-size:12px; color:var(--v-dim); border-top:1px dashed var(--line); margin-top:12px; padding-top:10px;}
+.quad-note{font-size:13px; margin:18px 0 0; max-width:62ch; color:color-mix(in oklab, var(--v-dim), var(--t-dim) calc(var(--mood)*100%));}
+
+/* packs */
+.packs{display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid var(--line);}
+@media(max-width:640px){.packs{grid-template-columns:1fr;}}
+.pack{padding:24px 20px; border-right:1px solid var(--line);}
+.pack:last-child{border-right:0;}
+.pack .n{font-size:18px; font-weight:800;}
+.pack .lvl{font-size:12px; letter-spacing:.06em; color:var(--v-dim); margin:4px 0 12px;}
+.pack p{font-size:13px; color:var(--v-dim); margin:0;}
+.pack .soon{display:inline-block; font-size:10px; letter-spacing:.2em; text-transform:uppercase; margin-top:12px; padding:3px 8px; border:1px solid var(--line);
+  color:color-mix(in oklab, var(--v-dim), var(--t-dim) calc(var(--mood)*100%));}
+.pack .now{display:inline-block; font-size:10px; letter-spacing:.2em; text-transform:uppercase; margin-top:12px; padding:3px 8px;
+  border:1px solid var(--t-accent); color:var(--t-accent);}
+.pack.locked{opacity:.66;}
+@media(max-width:640px){.pack{border-right:0; border-bottom:1px solid var(--line);} .pack:last-child{border-bottom:0;}}
+
+.method dl{display:grid; grid-template-columns:max-content 1fr; gap:14px 22px; margin:0;}
+.method dt{font-weight:700; color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%)); white-space:nowrap;}
+.method .frame > .tag{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+.method dd{margin:0; font-size:14.5px; color:var(--v-dim);}
+@media(max-width:560px){.method dl{grid-template-columns:1fr; gap:4px 0;} .method dd{margin-bottom:14px;}}
+
+/* FAQ */
+.faq details{border-top:1px solid var(--line);}
+.faq details:last-of-type{border-bottom:1px solid var(--line);}
+.faq summary{list-style:none; cursor:pointer; padding:16px 30px 16px 0; font-size:15px; font-weight:700; position:relative;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"+"; position:absolute; right:4px; top:14px; font-size:18px; font-weight:400;
+  color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+.faq details[open] summary::after{content:"\2212";}
+.faq summary:hover{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+.faq .a{font-size:14px; margin:0 0 20px; max-width:64ch; color:color-mix(in oklab, var(--v-dim), var(--t-dim) calc(var(--mood)*100%));}
+.faq .a a{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%)); text-decoration:none; border-bottom:1px solid currentColor;}
+
+.final{text-align:center; padding:90px 0 100px;}
+.final h2{font-size:clamp(28px,6vw,52px);}
+.final p{color:var(--t-dim); max-width:48ch; margin:14px auto 0; font-size:15px;}
+.final .also{margin-top:22px; font-size:13px;}
+.final .also a{color:var(--t-dim); text-decoration:none; border-bottom:1px solid currentColor;}
+.final .also a:hover{color:var(--t-ink);}
+
+footer{border-top:1px solid var(--line); padding:28px 24px; font-size:12px; color:var(--t-dim); text-align:center; letter-spacing:.04em;}
+footer .epi{font-style:italic; opacity:.78; max-width:54ch; margin:0 auto 12px; line-height:1.7;}
+footer .epi .tr{font-style:normal; opacity:.85; display:block; margin-top:8px; font-size:11.5px;}
+footer .epi-cite{font-style:normal; font-size:11px; letter-spacing:.12em; text-transform:uppercase; opacity:.75; display:inline-block; margin-top:8px;}
+footer .footer-links{display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap; margin-top:14px;}
+footer .footer-links a{color:inherit; text-decoration:none; opacity:.75; letter-spacing:.04em;}
+footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+footer .footer-links .div{opacity:.4;}
+.beta-note{background:#1b1508; border-bottom:1px solid #6b5a2a; color:#e8d9b0; font:500 12.5px/1.55 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; text-align:center; padding:9px 16px; margin:0;}
+.beta-note b{color:#e0a93f; font-weight:700; letter-spacing:.09em;}
+.beta-note a{color:#e0a93f; text-decoration:underline; text-underline-offset:2px;}
+</style>
+</head>
+<body>
+<div class="beta-note" role="status"><b>БЕТА-ПЕРЕВОД</b> — русская версия сайта черновая и ещё не прошла редактуру. Нашли ошибку в тексте? <a href="report.html">Сообщите нам</a> · <a href="english.html">Read in English</a></div>
+<div class="overlay"></div>
+<div class="vignette"></div>
+
+<nav>
+  <span class="brand"><a class="logo" href="index.ru.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.ru.html">главная</a><span class="sep"> · </span><a href="packs.ru.html">наборы</a><span class="sep"> · </span><span class="here">английский</span></span>
+  <span class="links">
+    <a href="manual/index.html">руководство (бета)</a>
+    <a href="resources.ru.html">материалы</a>
+    <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-english&l=russian" target="_blank" rel="noopener">steam</a>
+  </span>
+  <span class="nav-mobile">
+    <a href="home.ru.html">главная</a>
+    <span class="r"><a href="resources.ru.html">материалы</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-english&l=russian" target="_blank" rel="noopener">steam</a></span>
+  </span>
+  <div class="lang-switch">
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Выбрать язык">RU<span class="lang-caret">▾</span></button>
+    <ul class="lang-menu" hidden>
+      <li><a href="english.html">English</a></li>
+      <li><a href="english.de.html">Deutsch</a></li>
+      <li><a href="english.es.html">Español</a></li>
+      <li><a href="english.ja.html">日本語</a></li>
+      <li><a href="english.zh.html">简体中文</a></li>
+            <li><a href="english.ru.html" aria-current="true">Русский</a></li>
+        </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <header class="hero">
+    <img class="hero-img" src="background.png" alt="FlashBoss — класс на люминофорном терминале, где проходит английская программа" loading="eager" decoding="async" onerror="this.style.display='none'">
+    <div class="wrap">
+      <p class="kicker reveal">English Core уже вышел · <b>1000 слов</b> · 40 блоков · 38 уроков</p>
+      <h1 class="reveal">Английский<span class="cursor"></span></h1>
+      <p class="tagline reveal">Второй язык всего мира — и преподаётся он именно так.</p>
+      <p class="sig reveal">Слушай · Читай · Повторяй · Оценивай · Сражайся</p>
+      <p class="lede reveal">Курс учит <b>английскому как иностранному</b> и никогда не объясняет английский по-английски. Учебный интерфейс есть на немецком, испанском, японском и упрощённом китайском — <b>русского среди них нет</b>. Эта страница на русском; сам курс — нет.</p>
+      <p class="handoff reveal">Знаете, кому это нужно? Передайте нужную страницу: <a href="english.de.html">Deutsch</a> · <a href="english.es.html">Español</a> · <a href="english.ja.html">日本語</a> · <a href="english.zh.html">简体中文</a></p>
+      <div class="steamcta reveal">
+        <p style="margin:0; padding:13px 16px; border:1px solid currentColor; border-radius:4px; opacity:.85; font-size:14px; line-height:1.6;">Этот курс пока не для русскоязычных: учебного интерфейса на русском у него нет. Он преподаётся на немецком, испанском, японском или упрощённом китайском — страницы на этих языках ниже.</p>
+      </div>
+      <div class="actions reveal">
+        <a class="btn" href="https://flashboss-demo.pages.dev/">Попробовать демо</a>
+        <a class="btn" href="packs.ru.html">Все наборы</a>
+        <a class="btn" href="latin-roots.ru.html">Серия Roots</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- THE RULING -->
+  <section class="wrap">
+    <div class="frame">
+      <span class="tag">на странице магазина сказано прямо</span>
+      <h2>Недоступно на английском</h2>
+      <p class="sub">Это не дыра в таблице локализации. Это замысел.</p>
+      <p class="body">Каждая карточка учит одному английскому слову — с <b>переводом</b>, <b>переведённым примером</b> и <b>пояснениями</b> на языке учащегося. На этом же языке говорит и вся игра — от меню до босс-файтов. С первой карточки английский — то, чему учат, а не то, чем объясняют.</p>
+      <p class="body">Если английский — ваш родной язык, эта программа учит словам, которые вы и так знаете. Ваши английские наборы — <b>Adept</b> и <b>Advance</b>, они уже бесплатны в базовой игре, а <a href="latin-roots.ru.html">серия Roots</a> — то, куда двигаться дальше.</p>
+
+      <div class="movements reveal">
+        <div class="mv learner">
+          <div class="h">Тем, кто учится</div>
+          <p>Первые 3000 английских слов в трёх наборах — целиком на немецком, испанском, японском или упрощённом китайском.</p>
+        </div>
+        <div class="mv native">
+          <div class="h">Носителям языка</div>
+          <p>Страница, которую стоит передать дальше, — и <a href="packs.ru.html">Adept, Advance и серия Roots</a> для того английского, которого у вас ещё нет.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE ROAD -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">устройство English Core</span>
+      <h2>Первая тысяча слов</h2>
+      <p class="sub">Пять уровней, сорок блоков по 25 карточек, и каждый блок закрыт босс-файтом.</p>
+      <p class="body">English Core — это тысяча самых частотных слов, пройденная по порядку: сначала базовые глаголы и служебные слова, на которых держится любое английское предложение, затем люди и дом, город и рабочий день, а к пятому уровню — язык права, государства и большого мира. Примеры растут вместе с вами и никогда не забегают вперёд пройденного.</p>
+      <div class="run reveal">
+        <div class="step"><div class="t">Уровень 1</div><p>Основа основ — have, go, служебные слова — первая опора, люди и дом, чувства.</p></div>
+        <div class="step"><div class="t">Уровень 2</div><p>Тело и душа, время и мера, родня и близкие, дела, город и стол.</p></div>
+        <div class="step"><div class="t">Уровень 3</div><p>Работа, глаголы движения, время и место, закон и порядок, выход в мир.</p></div>
+        <div class="step"><div class="t">Уровень 4</div><p>Преступление и суд, люди и чувства, школа и работа, земля и место, набор скорости.</p></div>
+        <div class="step"><div class="t">Уровень 5</div><p>Споры и право, государство и закон, повседневные сцены, рост ставок — до последней страницы.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ONE CARD, FOUR LANGUAGES -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">одна карточка, четыре языка</span>
+      <h2>Язык учащегося — на каждой карточке</h2>
+      <p class="sub">Первая карточка English Core — слово <b style="color:inherit;">have</b> — ровно в том виде, в каком она выходит, на каждом из четырёх языков.</p>
+      <div class="quad">
+        <div class="qcard reveal">
+          <div class="lang">Deutsch</div>
+          <div class="word">have</div>
+          <div class="tr">haben</div>
+          <div class="ex"><span class="en">I have time now.</span><span class="arrow">→</span>Ich habe jetzt Zeit.</div>
+          <div class="notes">Verb | besitzen, haben. 'have got' heißt dasselbe. Formen: has, had.</div>
+        </div>
+        <div class="qcard reveal">
+          <div class="lang">Español</div>
+          <div class="word">have</div>
+          <div class="tr">tener</div>
+          <div class="ex"><span class="en">I have time now.</span><span class="arrow">→</span>Ahora tengo tiempo.</div>
+          <div class="notes">verbo | tener, poseer. 'have got' es lo mismo. Formas: has, had.</div>
+        </div>
+        <div class="qcard reveal">
+          <div class="lang">日本語</div>
+          <div class="word">have</div>
+          <div class="tr">持っている、所有する</div>
+          <div class="ex"><span class="en">I have time now.</span><span class="arrow">→</span>今は時間があります。</div>
+          <div class="notes">動詞 | 持つ、所有する。'have got' も同義。活用: has, had。</div>
+        </div>
+        <div class="qcard reveal">
+          <div class="lang">简体中文</div>
+          <div class="word">have</div>
+          <div class="tr">有；拥有</div>
+          <div class="ex"><span class="en">I have time now.</span><span class="arrow">→</span>我现在有时间。</div>
+          <div class="notes">动词｜拥有、持有。「have got」意思相同。形式：has, had。</div>
+        </div>
+      </div>
+      <p class="quad-note">Это машинный перевод, и мы говорим об этом прямо — но затем каждая карточка дважды проверяется независимыми системами, а всё, что проверку не прошло, правится вручную до выпуска. Все 3000 карточек программы содержат все четыре языка, без пропусков.</p>
+    </div>
+  </section>
+
+  <!-- THE ROAD TO 3,000 -->
+  <section class="wrap">
+    <div class="reveal">
+      <h2>Путь к 3000</h2>
+      <p class="sub">Три набора по 1000 слов, один за другим. Core уже вышел; страницы обоих продолжений в магазине уже открыты.</p>
+      <div class="packs">
+        <div class="pack locked">
+          <div class="n">English Core</div>
+          <div class="lvl">A1–A2 · 1000 слов · 38 уроков</div>
+          <p>Тысяча самых частотных слов на пяти уровнях — фундамент, на котором держится всё остальное. Требуется базовая игра.</p>
+          <span class="soon">без русского интерфейса</span>
+        </div>
+        <div class="pack locked">
+          <div class="n">English Pareto 1</div>
+          <div class="lvl">1000 слов</div>
+          <p>Следующая тысяча по частотности — тот же метод, на уровень выше. Требуется Core.</p>
+          <span class="soon">следующий по порядку</span>
+        </div>
+        <div class="pack locked">
+          <div class="n">English Pareto 2</div>
+          <div class="lvl">1000 слов</div>
+          <p>Третья тысяча пути — длинный хвост, который уже читается как свободное владение. Требуется Pareto 1.</p>
+          <span class="soon">следующий по порядку</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHOD -->
+  <section class="wrap method">
+    <div class="frame reveal">
+      <span class="tag">как это запоминается</span>
+      <h2>Карточки как единая система</h2>
+      <dl>
+        <dt>Интервалы по Фибоначчи</dt><dd>Оценивайте каждую карточку от 0 до 5. Чем лучше вы знаете слово, тем позже оно вернётся — интервальное повторение по числам Фибоначчи.</dd>
+        <dt>Босс-файты</dt><dd>Каждый из сорока блоков закрыт дуэлью, которую не выиграть, не встретившись лицом к лицу со своими самыми трудными словами и не одолев их.</dd>
+        <dt>Выпуск</dt><dd>Пройдите блок — и его карточки навсегда покидают вашу ежедневную колоду. Чем больше вы знаете, тем меньше колода.</dd>
+        <dt>Ваш язык</dt><dd>Перевод, переведённый пример и пояснения на немецком, испанском, японском и упрощённом китайском на каждой карточке — и интерфейс говорит на всех четырёх плюс английском.</dd>
+        <dt>Озвучка</dt><dd>Чистый английский синтез речи Piper для каждого слова и каждого примера. Это синтез, а не запись диктора, — и мы об этом говорим.</dd>
+        <dt>Две орфографии</dt><dd>За основу взят американский английский, британское написание включается целиком одной настройкой — colour или color.</dd>
+        <dt>Уроки</dt><dd>38 справочных уроков — порядок слов, артикли, времена — каждый срабатывает на той карточке, где он впервые нужен, и читается на языке учащегося.</dd>
+        <dt>Частотность</dt><dd>Слова приходят в порядке того, насколько часто английский их реально использует: первой идёт та тысяча, которая несёт больше всего языка.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="wrap faq">
+    <div class="reveal">
+      <h2>Вопросы</h2>
+      <p class="sub">То, о чём спрашивают перед покупкой.</p>
+
+      <details>
+        <summary>Английский — мой родной язык. Стоит ли покупать?</summary>
+        <p class="a">Нет. Курс учит первым тысячам английских слов — тем, которые вы и так знаете. Ваши английские наборы — <b>Adept</b> и <b>Advance</b>, они бесплатны в базовой игре, а <a href="latin-roots.ru.html">серия Roots</a> рассказывает, откуда ваш язык вообще взялся.</p>
+      </details>
+
+      <details>
+        <summary>С каких языков можно учить английский?</summary>
+        <p class="a">С немецкого, испанского, японского и упрощённого китайского. <b>Русского учебного интерфейса нет.</b> На каждой карточке есть перевод, переведённый пример и пояснения на всех четырёх языках, и интерфейс игры говорит на каждом из них. Английский для игры не требуется.</p>
+      </details>
+
+      <details>
+        <summary>Нужно ли что-то ещё, чтобы играть?</summary>
+        <p class="a">Да. English Core — это DLC к базовой игре FlashBoss, поэтому нужна и она. Pareto 1 требует Core, а Pareto 2 — Pareto 1: наборы надстраиваются друг над другом по порядку.</p>
+      </details>
+
+      <details>
+        <summary>Озвучка записана носителем языка?</summary>
+        <p class="a">Нет, и мы не будем делать вид, что это не так. Каждое слово и каждый пример произносит нейросетевой синтезатор речи — чисто, ровно и синтетически. За основу взят американский английский, в тексте доступно британское написание.</p>
+      </details>
+
+      <details>
+        <summary>Насколько хороши переводы?</summary>
+        <p class="a">Это машинный перевод, и мы об этом говорим прямо. Затем каждая карточка программы дважды проверялась независимыми системами и проходила ручной контроль: всё, что не прошло проверку, исправлялось до выпуска. Цель — карточка, которой можно доверять на уровне A1: простая, верная и никогда не декоративная.</p>
+      </details>
+
+      <details>
+        <summary>Можно ли посмотреть списки слов до покупки?</summary>
+        <p class="a">Списков слов английской программы на сайте пока нет — они готовятся. А пока в браузере доступна играбельная демоверсия босс-файта: <a href="https://flashboss-demo.pages.dev/">попробовать демо</a>.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final wrap reveal">
+    <h2>Передайте дальше.</h2>
+    <p>Тысяча слов, на которые можно опереться, и три тысячи по порядку — и всё это на родном языке учащегося.</p>
+    <p style="margin-top:26px;"><a class="btn hot" href="packs.ru.html">Посмотреть наборы, которые уже работают по-русски &rarr;</a></p>
+    <p class="also">или передайте учащемуся его страницу: <a href="english.de.html">Deutsch</a> · <a href="english.es.html">Español</a> · <a href="english.ja.html">日本語</a> · <a href="english.zh.html">简体中文</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <p class="epi">&ldquo;A whole world of books lies beyond the last page you have just read.&rdquo;<span class="epi-cite">Целый мир книг лежит за последней страницей, которую вы только что прочли. · English Core · Уровень 5 · последняя карточка</span></p>
+  <span class="footer-links">
+    <a href="home.ru.html">главная</a>
+    <span class="div">·</span>
+    <a href="packs.ru.html">наборы</a>
+    <span class="div">·</span>
+    <a href="manual/">руководство (бета)</a>
+    <span class="div">·</span>
+    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-english&l=russian" target="_blank" rel="noopener">steam</a>
+  </span>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+(function(){
+  var root=document.documentElement,ticking=false;
+  function update(){var max=document.body.scrollHeight-window.innerHeight;var p=max>0?Math.min(1,Math.max(0,window.scrollY/max)):0;root.style.setProperty('--mood',(p*p*(3-2*p)).toFixed(3));ticking=false;}
+  window.addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(update);ticking=true;}},{passive:true});update();
+})();
+</script>
+<script>
+// language dropdown: button toggles the menu; click-away / Esc closes it
+(function(){
+  var sw=document.querySelector('.lang-switch'); if(!sw) return;
+  var btn=sw.querySelector('.lang-toggle'), menu=sw.querySelector('.lang-menu');
+  function close(){ menu.hidden=true; btn.setAttribute('aria-expanded','false'); }
+  btn.addEventListener('click', function(e){ e.stopPropagation(); var willOpen=menu.hidden; menu.hidden=!willOpen; btn.setAttribute('aria-expanded', String(willOpen)); });
+  document.addEventListener('click', function(e){ if(!sw.contains(e.target)) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
+</script>
+</body>
+</html>

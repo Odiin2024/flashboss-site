@@ -1,0 +1,117 @@
+{
+ "12": {
+  "id": 12,
+  "severity": "high",
+  "issue": "The Russian translation adds information not present in the original: 'русского среди них нет' (Russian is not among them). The English text never mentions Russian at all—it only states the course uses German, Spanish, Japanese, or Simplified Chinese interfaces and that this page (in English) is not part of the course. By inserting 'русского среди них нет', the translation falsely implies the course was expected to support Russian or that its absence is noteworthy, which the original does not claim.",
+  "fix": "<p class=\"lede reveal\">Вы читаете эту страницу на английском — значит, курс, вероятно, не для вас. Он учит <b>английскому как иностранному</b>, используя обучающий интерфейс на немецком, испанском, японском или упрощённом китайском, и никогда не объясняет английский по-английски. Эта страница на английском. Сам курс — никогда.</p>"
+ },
+ "21": {
+  "id": 21,
+  "severity": "medium",
+  "issue": "Brand tokens 'Adept' and 'Advance' should remain as registered pack names 'English Adept' and 'English Advance', not reduced to just 'Adept' and 'Advance'. Also, 'Roots Series' is a branded series and should be kept as 'Roots Series' or rendered per house convention if defined; currently it's translated as 'серия Roots', mixing English and Russian inconsistently.",
+  "fix": "<p class=\"body\">Если английский — ваш родной язык, эта программа учит словам, которые вы и так знаете. Ваши английские наборы — <b>English Adept</b> и <b>English Advance</b>, они уже бесплатны в базовой игре, а <a href=\"latin-roots.html\">Roots Series</a> — то, куда двигаться дальше.</p>"
+ },
+ "24": {
+  "id": 24,
+  "severity": "medium",
+  "issue": "The English phrase 'For the native speaker' is singular and generic, implying a section addressed to any native speaker. The Russian translation 'Носителям языка' is plural dative, which subtly shifts meaning to 'for native speakers (in general, as a group)' and may sound less direct or slightly off-register in this heading context.",
+  "fix": "<div class=\"h\">Носителю языка</div>"
+ },
+ "25": {
+  "id": 25,
+  "severity": "high",
+  "issue": "Brand tokens 'Adept' and 'Advance' should remain untranslated per house conventions, but 'Roots Series' was partially translated as 'серия Roots'. The correct rendering must keep the full proper name as in English: 'the Roots Series' → 'Roots Series', not 'серия Roots'.",
+  "fix": "<p>Страница, которую стоит передать дальше, — и <a href=\"packs.html\">Adept, Advance и Roots Series</a> для того английского, которого у вас ещё нет.</p>"
+ },
+ "26": {
+  "id": 26,
+  "severity": "high",
+  "issue": "'English Core' is a registered pack name and must be kept exactly as-is. The word 'design' was translated as 'устройство', which is incorrect both semantically (design ≠ устройство) and by convention—brand tokens like 'English Core' should not be altered or have surrounding words freely translated if they are part of the product terminology. However, in this case, 'English Core design' likely refers to the structure or layout of the pack, but 'design' here is not a brand token. Still, 'устройство' is a poor calque; better would be 'структура' or 'оформление', but more critically, the phrase may be intended as a label where 'design' is part of marketing copy. However, the main defect is that 'English Core' is correctly preserved, but 'design' is mistranslated. Yet upon closer look: the bigger issue is that 'English Core design' might be a proper title or tagline, and translating 'design' at all may violate the spirit of keeping product-related terms intact. But the clearest error is lexical: 'устройство' means 'device' or 'mechanism', not 'design'. This is unnatural and misleading.",
+  "fix": "<span class=\"tag\">дизайн English Core</span>"
+ },
+ "30": {
+  "id": 30,
+  "severity": "medium",
+  "issue": "The phrase 'how it feels' is rendered as 'чувства', which shifts meaning from subjective experience ('how it feels') to abstract 'feelings/emotions'. Also, 'first footing' is translated as 'первая опора', which is unnatural; 'первые шаги' or 'первое основание' would better convey the intended sense of initial grounding.",
+  "fix": "<div class=\"t\">Уровень 1</div><p>Основа основ — have, go, служебные слова — первые шаги, люди и дом, как это ощущается.</p>"
+ },
+ "31": {
+  "id": 31,
+  "severity": "medium",
+  "issue": "'Kith & kin' is idiomatically rendered as 'родня и близкие', but 'kith' (acquaintances, community) is lost—'близкие' only covers 'kin'. A more accurate rendering would include both family and social circle. Also, 'getting it done' becomes just 'дела', which is too vague; it should convey completion or accomplishment.",
+  "fix": "<div class=\"t\">Уровень 2</div><p>Тело и душа, время и мера, друзья и родня, доведение дел до конца, город и стол.</p>"
+ },
+ "32": {
+  "id": 32,
+  "severity": "low",
+  "issue": "'Out in the world' translated as 'выход в мир' sounds like a literal exit rather than engaging with the wider world. A more natural phrase would be 'жизнь в большом мире' or 'выйти в мир' (as an infinitive phrase matching the style).",
+  "fix": "<div class=\"t\">Уровень 3</div><p>Работа, глаголы движения, время и место, закон и порядок, жизнь в большом мире.</p>"
+ },
+ "33": {
+  "id": 33,
+  "severity": "medium",
+  "issue": "'Folk & feeling' becomes 'люди и чувства', but 'folk' here likely means 'ordinary people' or 'the folk', not generic 'люди'; 'feeling' may refer to collective sentiment. Also, 'gathering pace' as 'набор скорости' is a calque; the idiomatic Russian is 'набирать обороты' or 'ускорение'.",
+  "fix": "<div class=\"t\">Уровень 4</div><p>Преступление и суд, простые люди и настроения, школа и работа, земля и место, набирая обороты.</p>"
+ },
+ "34": {
+  "id": 34,
+  "severity": "high",
+  "issue": "Repetition of 'law': 'Strife & law, state & law' becomes 'Споры и право, государство и закон' — but English uses 'law' both times, so Russian should consistently use either 'закон' or 'право'. Mixing them implies a distinction not present in the original. Also, 'raising the stakes' as 'рост ставок' is acceptable, but 'до последней страницы' adds 'page' (книжная метафора) not clearly implied by 'to the last page' in a language-learning context—could be misleading.",
+  "fix": "<div class=\"t\">Уровень 5</div><p>Конфликты и закон, государство и закон, повседневные сцены, повышение ставок — до самого конца.</p>"
+ },
+ "37": {
+  "id": 37,
+  "severity": "high",
+  "issue": "The English says 'in each of the four' referring to four versions or languages on the card, but the Russian incorrectly states 'на каждом из четырёх языков', implying the word 'have' appears in four different languages. However, 'have' is an English word being taught; it does not appear in four languages. The phrase 'in each of the four' refers to four language versions of the app/interface (e.g., EN, FR, DE, ES), not that the word itself is in four languages.",
+  "fix": "<p class=\"sub\">Первая карточка English Core — слово <b style=\"color:inherit;\">have</b> — ровно в том виде, в каком она выходит, в каждой из четырёх версий.</p>"
+ },
+ "38": {
+  "id": 38,
+  "severity": "medium",
+  "issue": "The English says 'All 3,000 cards across the program carry all four languages, with no gaps.' The Russian translation 'Все 3000 карточек программы содержат все четыре языка, без пропусков' is ambiguous and could be misread as each card containing content in four languages simultaneously. However, per FlashBoss conventions, each card teaches one target language, but the interface supports four learner languages. The original English likely means that for every card, translations/glosses are available in all four learner languages — which is acceptable — but the phrasing in Russian may mislead. However, given house conventions and context, this might be acceptable. But more critically: the English says 'machine translations' (plural), but Russian uses singular 'машинный перевод'. Should be plural to match.",
+  "fix": "<p class=\"quad-note\">Это машинные переводы, и мы говорим об этом прямо — но затем каждая карточка дважды проверяется независимыми системами, а всё, что проверку не прошло, правится вручную до выпуска. Все 3000 карточек программы содержат все четыре языка, без пропусков.</p>"
+ },
+ "48": {
+  "id": 48,
+  "severity": "medium",
+  "issue": "The English 'How it sticks' is idiomatic and refers to the mechanism of retention; the Russian translation 'почему это запоминается' shifts meaning to 'why it is remembered', implying causation rather than process. A more accurate rendering per house style would preserve the how.",
+  "fix": "<span class=\"tag\">Как это запоминается</span>"
+ },
+ "53": {
+  "id": 53,
+  "severity": "high",
+  "issue": "The English specifies 'Simplified Chinese', but the Russian uses 'упрощённом китайском', which is acceptable, however the phrase 'интерфейс говорит на всех четырёх плюс английском' incorrectly implies the interface speaks five languages (the four listed + English), while the original says the interface supports those four *plus* English — i.e., five total. However, the bigger issue: Japanese and Simplified Chinese are not among FlashBoss's officially supported languages per house conventions (only EN, EO, FR, DE, ES, IT, LA, GR, TP are referenced as taught or supported). Including Japanese and Simplified Chinese here makes a false claim about product features not present in the English source's actual offering. But since the task is to check translation fidelity *to the given English*, and the English explicitly lists them, the translation must reflect that. However, 'говорит на... языках' is unnatural Russian for UI language support; standard phrasing is 'интерфейс доступен на...' or 'поддерживает эти языки'. More critically, 'переведённый пример' is a calque; natural Russian would be 'пример с переводом' or 'переведённое примерное предложение'. But the main defect is register and naturalness: 'говорит на всех четырёх плюс английском' is awkward and anthropomorphizes the interface excessively.",
+  "fix": "<dt>Ваш язык</dt><dd>Перевод, пример с переводом и пояснения на немецком, испанском, японском и упрощённом китайском на каждой карточке — а интерфейс доступен на всех этих языках, а также на английском.</dd>"
+ },
+ "61": {
+  "id": 61,
+  "severity": "medium",
+  "issue": "Brand tokens 'Adept' and 'Advance' should be rendered as 'English Adept' and 'English Advance' per house conventions, but the Russian omits 'English'. Also, 'базовая игра' is acceptable, but the phrase 'free inside the base game' is slightly weakened to 'они бесплатны в базовой игре' — acceptable, but the bigger issue is missing 'English' in pack names.",
+  "fix": "<p class=\"a\">Нет. Курс учит первым тысячам английских слов — тем, которые вы и так знаете. Ваши английские наборы — <b>English Adept</b> и <b>English Advance</b>, они бесплатны в базовой игре, а <a href=\"latin-roots.html\">серия Roots</a> рассказывает, откуда ваш язык вообще взялся.</p>"
+ },
+ "63": {
+  "id": 63,
+  "severity": "high",
+  "issue": "The Russian adds a sentence not present in the English: '<b>Русского учебного интерфейса нет.</b>' This is a false claim not made in the source and violates the rule against adding information.",
+  "fix": "<p class=\"a\">С немецкого, испанского, японского и упрощённого китайского. На каждой карточке есть перевод, переведённый пример и пояснения на всех четырёх языках, и интерфейс игры говорит на каждом из них. Английский для игры не требуется.</p>"
+ },
+ "72": {
+  "id": 72,
+  "severity": "medium",
+  "issue": "Imperative 'Передайте' (formal/plural) mismatches the informal, inclusive tone of the original 'Pass it on.' and house style addressing the reader as 'вы' in lowercase (informal singular). Should use informal imperative.",
+  "fix": "<h2>Передай дальше.</h2>"
+ },
+ "74": {
+  "id": 74,
+  "severity": "medium",
+  "issue": "Uses formal/plural 'учащемуся' and possessive 'его', which is inconsistent with the house convention of addressing the reader as informal 'вы'. Should refer to the learner as 'учащемуся' (grammatically fine) but use 'его' only if gender-neutral; however, more natural Russian in this context would use 'его/её' or rephrase. But main issue: 'his page' translated as 'его страницу' assumes male gender. Better to use neutral phrasing.",
+  "fix": "<p class=\"also\">или передайте учащемуся его или её страницу: "
+ },
+ "75": {
+  "id": 75,
+  "severity": "high",
+  "issue": "The English quotation is left untranslated inside the &ldquo;...&rdquo;, but according to house rules, only words/sentences *in the language being taught* should remain untranslated. This quote is in English and serves as illustrative content from the pack, so it must be translated. The current Russian mixes untranslated English quote with a Russian translation inside the same quotes, which is incorrect.",
+  "fix": "<p class=\"epi\">&ldquo;Целый мир книг лежит за последней страницей, которую вы только что прочли.&rdquo;<span class=\"epi-cite\">English Core · Уровень 5 · последняя карточка</span></p>"
+ },
+ "_done": true
+}

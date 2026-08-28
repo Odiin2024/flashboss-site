@@ -1,0 +1,218 @@
+{
+ "33": {
+  "id": 33,
+  "severity": "medium",
+  "issue": "Missing <td> tags around the Russian translation, unlike all other rows which preserve the <td> wrapper.",
+  "fix": "<td>Построенное предложение, помещающее целевое слово в контекст, используя только лексику, уже введённую планировщиком.</td>"
+ },
+ "35": {
+  "id": 35,
+  "severity": "medium",
+  "issue": "Missing <td> tags around the Russian translation, unlike all other rows which preserve the <td> wrapper.",
+  "fix": "<td>Идиоматический перевод примера предложения на родной язык учащегося.</td>"
+ },
+ "36": {
+  "id": 36,
+  "severity": "high",
+  "issue": "The English word 'Notes' should be translated into Russian as 'Примечания' per house conventions; leaving it untranslated violates the rule to translate UI labels unless explicitly exempt.",
+  "fix": "<td><code>Примечания</code></td>"
+ },
+ "51": {
+  "id": 51,
+  "severity": "medium",
+  "issue": "The English 'Bossy' is an adjective describing a personality trait (domineering, assertive), but the Russian 'Командирный' is not a standard or natural adjective in this context. It sounds like a calque or awkward coinage; native Russian would use 'властный', 'доминирующий', or 'любит командовать'.",
+  "fix": "<td>Властный</td>"
+ },
+ "53": {
+  "id": 53,
+  "severity": "medium",
+  "issue": "'Advisory' here likely describes a supportive or guiding temperament (as in 'advisory role'), but 'Консультативный' in Russian primarily refers to formal advisory bodies or committees, not personal demeanor. This is a register and meaning mismatch.",
+  "fix": "<td>Наставнический</td>"
+ },
+ "58": {
+  "id": 58,
+  "severity": "medium",
+  "issue": "The Russian translation uses 'выбросов' for 'outliers', which is incorrect in this context. 'Выбросы' typically means statistical outliers or anomalies, but here 'outliers' refers to exceptional or atypical learners. A better term would be 'необычных учеников', 'особенных учеников', or simply 'тех, кто хочет максимума' without misrepresenting 'outliers' as 'выбросов'.",
+  "fix": "<p>Насколько требователен мастер, сводится к этому ежедневному количеству. Одиин, с двадцатью одной карточкой, — самый требовательный мастер, рекомендованный новому ученику — трудный путь. Два мастера с тридцатью четырьмя карточками, Кицунэ и Аквила, находятся за ним: темп для проходов повторения и для необычных учеников, желающих максимума.</p>"
+ },
+ "59": {
+  "id": 59,
+  "severity": "medium",
+  "issue": "The phrase 'другой неразумен' is ambiguous and unnatural. The English says 'warns that another [master choice] is unwise', but the Russian implies 'another person is unwise'. It should clarify that choosing another master (or path) is unwise. Also, 'отступает в сторону' is a calque; more natural Russian would be 'делает шаг назад' or 'уступает'.",
+  "fix": "<p><em>Темперамент</em> мастера — это отдельный вопрос, и он управляет одной вещью — гримуаром. <strong>Властный</strong> мастер ограничивает сеансы гримуара, защита от забегания вперед и выгорания. <strong>Советующий</strong> мастер предупреждает, что другой выбор неразумен, а затем уступает и позволяет поступить так. В остальном они идентичны.</p>"
+ },
+ "60": {
+  "id": 60,
+  "severity": "medium",
+  "issue": "Gender agreement error: 'Кицунэ (советующая)' uses feminine form, but the original English does not specify gender, and house convention treats voice names as proper nouns without grammatical gender adaptation. Similarly, 'Луне (властная)' and 'Одину (советующий)' impose gender where none is indicated in source. House style keeps descriptors aligned with original presentation — advisory/bossy are roles, not adjectives requiring gender agreement in Russian.",
+  "fix": "<p>Пары неравны. Темпы на тринадцать и тридцать четыре карточки доступны в любом темпераменте — Клод (advisory) или Шен (bossy) на тринадцать, Кицунэ (advisory) или Аквила (bossy) на тридцать четыре — так что там темп и стиль выбираются отдельно. Темп на восемь карточек принадлежит только Луне (bossy), а на двадцать один — только Одину (advisory).</p>"
+ },
+ "76": {
+  "id": 76,
+  "severity": "medium",
+  "issue": "The Russian translation 'отдельные самостоятельные' is grammatically incomplete — it lacks a noun. The English says 'individual standalones', where 'standalones' functions as a noun. The current rendering sounds like an adjective phrase without a head noun.",
+  "fix": "<h3>Наборы английского: отдельные самостоятельные наборы</h3>"
+ },
+ "77": {
+  "id": 77,
+  "severity": "medium",
+  "issue": "The phrase 'Английский распространяется иначе' is a calque and unnatural in this context. 'Ships differently' refers to how the product is packaged/delivered, not literal distribution. A more natural phrasing would convey that the English packs are structured or offered differently.",
+  "fix": "<p>Английские наборы устроены иначе. Каждый набор английского — это самостоятельный лексический набор из 1000 слов, и учащиеся выбирают наборы по уровню и интересу, а не проходят их по порядку. Нет кумулятивного прогресса — завершение одного набора английского не предполагает другого. Наборы английского делятся на две структурные семьи:</p>"
+ },
+ "78": {
+  "id": 78,
+  "severity": "medium",
+  "issue": "The phrase 'free hub pack' is translated as 'бесплатный центральный набор', but according to house conventions, 'hub pack' should likely be rendered more precisely. However, the bigger issue is that 'English Adept' and 'English Advance' are proper pack names and must remain untranslated per house rules — which they do — but the surrounding phrasing 'охватывает самый длинный подъём' slightly distorts 'spans the longest climb'. More critically, 'terminating around C1' becomes 'заканчивая примерно на C1', which is acceptable, but 'он начинается с уровня чтения ниже восьмого класса' adds 'уровня чтения' not explicitly in the original ('below an eighth-grade reading level' → 'ниже восьмого класса' would suffice). However, the main defect is stylistic drift: 'ведёт учащегося до готовности к университету' implies active guidance, while the English says 'carries the learner up to university readiness' — acceptable. But the real breach is: 'free hub pack' → 'бесплатный центральный набор' introduces 'центральный', which is not in the English. The English says 'the free hub pack' — 'hub' here is a specific term; house conventions don't define it, but adding 'центральный' is an unwarranted interpretation. Better: 'бесплатный хаб-набор' or just 'бесплатный набор-хаб', but since house rules say never translate brand/pack context loosely, and 'hub pack' isn't defined, safest is to avoid adding 'центральный'. However, upon second look, the bigger issue is register: 'оставляет его там' uses masculine 'его', but 'читателя' is masculine, so that's fine. Actually, the critical error is: 'English Adept' is described as 'the free hub pack' — but in house conventions, 'English Adept' is a registered pack name, and the description must not misrepresent its status. However, the translation is factually aligned. Wait — rechecking house rules: 'KEEP EXACTLY AS-IS... Registered pack names: ... English Adept, English Advance...' — those are kept, which they are. So maybe no error? But 'hub pack' is not a registered term. However, the Russian adds 'центральный', which is an interpretive addition not in the source. The English doesn't say 'central', it says 'hub'. In tech contexts, 'hub' is often left as-is or transliterated. But house rules don't specify. However, the instruction says: 'Never add or drop information.' Adding 'центральный' adds information — the English doesn't call it 'central', just 'hub'. So this is a medium-severity addition.",
+  "fix": "<li><strong>Уровневые наборы</strong> — лексика, которая поднимает читателя на уровень и оставляет его там. <em>English Adept</em>, бесплатный хаб-набор, охватывает самый длинный подъём: он начинается ниже уровня чтения восьмого класса и ведёт учащегося до готовности к университету, заканчивая примерно на C1. <em>English Advance</em> нацелен на практический английский для полноценной жизни в обществе без ограничений: формы, письма, официальные документы и повседневные бумаги, которые требует взрослая жизнь. Руководящий принцип — сделать это один раз правильно, и вам больше никогда не придётся об этом думать.</li>"
+ },
+ "79": {
+  "id": 79,
+  "severity": "high",
+  "issue": "The phrase 'scholarly' is translated as 'учёный', but 'Latin Roots (scholarly)' refers to academic or learned vocabulary, not 'учёный' (which means 'scientist' or 'scholar' as a person). The correct rendering should be 'учёная лексика' or 'академическая', but as a label, it should match the style of the others. More importantly, house conventions require that teaching material (like language being taught) remain untranslated — but here, the descriptors in parentheses are explanations, not teaching content. However, 'учёный' is grammatically incorrect as an adjective for 'слой'; it should be 'учёный слой' is awkward. But the real issue: 'register system' is translated as 'регистровую систему', but in linguistics, 'register' in English is often transliterated as 'регистр' in Russian academic usage, so this may be acceptable. However, the critical error is: 'Cross-references between the three surface the historical doublets...' is rendered as 'Перекрёстные ссылки между ними выявляют...', but 'between the three' becomes 'между ними' (between them), which drops the specificity of 'three'. This is a minor omission. But the main defect is 'учёный' — it’s the wrong lexical choice. Should be 'латинские корни (академические)' or similar. However, house rules don’t specify, but accuracy matters. Also, 'формирует регистровую систему' implies it creates the system, while English says 'give English its register system' — so 'придают английском его регистровую систему' would be better. But the current version changes meaning: 'form' vs 'give'. So meaning altered.",
+  "fix": "<li><strong>Серия Roots</strong> — платные наборы, которые тренируют английскую лексику через три её этимологических слоя: <em>German Roots</em> (англосаксонский), <em>Norman Roots</em> (нормандско-французский) и <em>Latin Roots</em> (академический). Перекрёстные ссылки между тремя слоями раскрывают исторические дублеты, благодаря которым английский обладает своей регистровой системой.</li>"
+ },
+ "80": {
+  "id": 80,
+  "severity": "low",
+  "issue": "'Session structure and scheduling' translated as 'Структура сеанса и расписание' — 'session' in learning context is often 'сессия' or 'занятие', but 'сеанс' is used in gaming/tech (e.g., Steam session). However, house conventions don't specify. But in educational software, 'сеанс' is acceptable. However, 'scheduling' as 'расписание' implies a fixed timetable, whereas 'scheduling' here likely refers to algorithmic timing (spaced repetition scheduling). 'Расписание' is too rigid; better: 'планирование' or 'график'. This is a meaning shift.",
+  "fix": "<h2>Структура сеанса и планирование</h2>"
+ },
+ "83": {
+  "id": 83,
+  "severity": "medium",
+  "issue": "'Piper text-to-speech audio' is translated as 'Аудио Piper (текст-в-речь)', but house conventions require brand tokens like 'Piper' to be kept as-is, which they are. However, the phrase 'воспроизводит целевое слово, когда оно появляется на экране' implies the audio plays *when* the word appears, but the English says 'as it appears on screen', meaning simultaneously with display — acceptable. But the bigger issue: 'нажатие клавиши отображает и произносит пример предложения' — the English says 'a key press displays and pronounces the example sentence', but the Russian uses 'пример предложения', which is unnatural; should be 'пример с предложением' or just 'примерное предложение', but standard term is 'пример предложения' is actually acceptable. However, 'first exposure' as 'первое знакомство' is correct. But wait: house conventions say 'LISTEN' is an in-game audio cue and must be kept as-is, but here it's not mentioned. No issue there. However, 'Piper' is a brand, and the translation adds '(текст-в-речь)' which is explanatory — allowed? The English includes 'text-to-speech', so translating that part is correct. So maybe no error? But the phrase 'когда оно появляется на экране' slightly misrepresents: the audio plays the word *as shown*, not triggered by appearance. But it's minor. However, the real defect: the English says 'the target word as it appears on screen' — meaning the exact form displayed. The Russian captures that. So perhaps no error. But rechecking: all seems okay. However, in #82, 'Listen' is correctly translated as 'Слушай' per house convention (part of 'Слушай · Читай · ...'). So #83 is likely fine. But wait — in #83, 'Piper text-to-speech audio plays the target word...' — the translation says 'Аудио Piper (текст-в-речь) воспроизводит...', which is correct. So maybe no defect. But earlier units have issues. So #83 might be clean. Therefore, only #78, #79, #80 have defects."
+ },
+ "98": {
+  "id": 98,
+  "severity": "medium",
+  "issue": "Grammatical agreement error: '2 дня' is incorrect after 'минимум'. After 'минимум', the noun should be in genitive plural, which for 'день' is 'дней'.",
+  "fix": "<td>Позиция −2 (минимум 2 дней).</td>"
+ },
+ "100": {
+  "id": 100,
+  "severity": "medium",
+  "issue": "Grammatical agreement error: '3 дня' is incorrect after 'минимум'. After 'минимум', the noun should be in genitive plural: 'дней'.",
+  "fix": "<td>Позиция −1 (минимум 3 дней).</td>"
+ },
+ "109": {
+  "id": 109,
+  "severity": "medium",
+  "issue": "The phrase 'card introduction' was translated as 'ввод карточек', which is unnatural in Russian educational context. A more accurate and natural rendering would be 'появление новых карточек' or 'добавление карточек'. Additionally, 'daily card volume' as 'ежедневное количество карточек' is acceptable but slightly imprecise; the original refers to the *number* of cards presented per day, not just 'quantity'. However, the main issue is 'ввод карточек', which sounds like a technical input rather than pedagogical introduction.",
+  "fix": "<p>Новые карточки добавляются в колоду по одной в порядке блоков; границы блоков не ограничивают появление новых карточек. Ежедневный объём карточек следует соотношению Фибоначчи — для сессии данного дня карточки для повторения и новые карточки добавляются пропорционально последовательным числам Фибоначчи, так что смесь стремится к φ, золотому сечению.</p>"
+ },
+ "110": {
+  "id": 110,
+  "severity": "high",
+  "issue": "The house convention specifies that 'boss fight' must be rendered as 'босс-файт', but the translation uses 'Готов к босс-файту?' — which incorrectly declines 'босс-файт' as if it were a native Russian noun. According to FlashBoss conventions, brand-specific terms like 'босс-файт' are kept invariant (not declined). The correct form is 'Готов к босс-файт?'",
+  "fix": "<h3>Готов к босс-файт?</h3>"
+ },
+ "111": {
+  "id": 111,
+  "severity": "high",
+  "issue": "Same declension error: 'доступным для своего босс-файта' incorrectly declines 'босс-файт' into the genitive case ('босс-файта'). Per house rules, 'босс-файт' is invariant and should not be declined. Also, 'освоены' is acceptable per house term 'graduate (a card) -> считается освоенной', but the phrasing 'когда 80% достигли интервала в 13 дней' is slightly ambiguous — better to say 'когда 80% из них достигли...' for clarity, though this is minor. The critical error is the declined 'босс-файта'.",
+  "fix": "<p>Блок становится доступным для своего босс-файт, когда 80% его карточек освоены — когда 80% достигли интервала в 13 дней. Вам не нужно осваивать каждую карточку, чтобы сражаться: но вам нужно победить две самые сложные карточки подряд, чтобы выиграть. Механика боя подробно обсуждается в следующем разделе.</p>"
+ },
+ "113": {
+  "id": 113,
+  "severity": "high",
+  "issue": "Again, 'босс-файт' is used correctly in nominative, but later the phrase 'фазы «Оценка»' should follow house terminology: the canonical term is 'Оценивай', but when referring to the phase name, the English source says 'Rate phase', and house convention maps 'Rate' to 'Оценивай'. However, in descriptive text, it's acceptable to use 'фаза оценки' or 'фаза «Оценка»'. More critically, the phrase 'строго множественного выбора' is a calque; natural Russian would say 'представляет собой строгий тест с множественным выбором' or 'использует строгий формат множественного выбора'. But the main defect is inconsistency with house style: the five core actions are 'Слушай · Читай · Повторяй · Оценивай · Сражайся', so the phase should be called 'фаза Оценивай' (without quotes, capitalized as a proper phase name) or described as 'фаза «Оценивай»'. However, the bigger issue is that 'босс-файт' appears correctly here (nominative), so no declension error in this unit. But wait — the real problem is elsewhere: the phrase 'the only way a cluster transitions out of active training' is rendered as 'единственный способ, которым кластер выходит из активного обучения'. However, house convention uses 'блок', not 'кластер', in Russian. The English uses 'cluster', but per house rules, 'cluster -> блок'. In #111, it was correctly translated as 'блок', but here it's 'кластер' — a direct violation of house terminology.",
+  "fix": "<p>Босс-файт — это механизм завершения блока. Это единственный способ, которым блок выходит из активного обучения. В отличие от фазы «Оценивай» — где вы оцениваете себя сами, — босс-файт состязательный и строго множественного выбора. Ученик и босс находятся на одной линейной арене; ученик начинает слева, босс стоит правее. Задача — столкнуть босса с дальнего конца. Правила сумо: на платформе остаётся только один.</p>"
+ },
+ "132": {
+  "id": 132,
+  "severity": "medium",
+  "issue": "The phrase 'high-comprehension input' is mistranslated as 'высокопонятным вводом', which is unnatural and unclear in Russian. The standard term in SLA (second language acquisition) discourse would be 'ввод с высоким уровнем понимания' or similar. Additionally, 'продукции' is an incorrect calque; the correct term is 'продуктивной речи' or simply 'речевого вывода'.",
+  "fix": "<p>Рецептивные навыки развиваются асимметрично быстрее продуктивных при самостоятельной тренировке. Насыщение учащегося входящей речью с высоким уровнем понимания до того, как от него потребуется речевой вывод, повторяет путь усвоения первого языка у детей и позволяет лексике и грамматике стать разбираемыми до того, как они станут применимыми. FlashBoss — это входная половина полного образовательного конвейера; продуктивная практика — говорение, письмо, взаимодействие — является задачей других инструментов, которые FlashBoss не пытается заменить.</p>"
+ },
+ "134": {
+  "id": 134,
+  "severity": "medium",
+  "issue": "FlashBoss does not 'обучать' (teach/train someone); it trains skills or provides training. The verb 'обучает' incorrectly implies FlashBoss teaches a person directly, whereas the English says 'FlashBoss trains:', listing skills. Should use 'тренирует' or 'предназначен для тренировки'.",
+  "fix": "<p>FlashBoss тренирует:</p>"
+ },
+ "138": {
+  "id": 138,
+  "severity": "medium",
+  "issue": "‘Incidental’ is rendered as ‘непреднамеренное’, which implies lack of intent by the learner, whereas ‘incidental acquisition’ in SLA refers to subconscious or implicit learning through exposure, not necessarily ‘unintended’. A more accurate term would be ‘непрямое’ or ‘пассивное’.",
+  "fix": "<li>Непрямое усвоение грамматики через контекст.</li>"
+ },
+ "139": {
+  "id": 139,
+  "severity": "high",
+  "issue": "‘Clause’ is a technical linguistic term; in Russian linguistics, ‘клауза’ is a calque rarely used outside narrow academic contexts. The standard term is ‘предложение’ or ‘синтагма’, but for clause-level fluency, ‘предложение’ is more natural and widely understood.",
+  "fix": "<li>Беглость чтения на уровне предложения.</li>"
+ },
+ "141": {
+  "id": 141,
+  "severity": "medium",
+  "issue": "‘Письменное продуцирование’ is a direct calque from English ‘writing production’. In Russian educational or linguistic discourse, this is unnatural. Standard phrasing would be ‘навыки письма’ or ‘умение писать’.",
+  "fix": "<li>Навыки письма.</li>"
+ },
+ "143": {
+  "id": 143,
+  "severity": "high",
+  "issue": "‘Стратегии исправления взаимодействия’ is a mistranslation. ‘Interaction repair strategies’ refers to conversational strategies for resolving misunderstandings (e.g., clarification requests), not ‘fixing interaction’ as a whole. Correct term in applied linguistics is ‘стратегии восстановления взаимопонимания’ or ‘стратегии ремонта коммуникации’.",
+  "fix": "<li>Стратегии ремонта коммуникации.</li>"
+ },
+ "144": {
+  "id": 144,
+  "severity": "medium",
+  "issue": "The phrase 'разговорный иммерсивный класс' is unnatural in Russian; 'класс' here is a calque from English. In Russian educational context, 'занятие' or 'курс' would be more appropriate than 'класс'. Also, 'иммерсивный' is a direct borrowing; while sometimes used, 'погружение' or 'метод погружения' is more conventional.",
+  "fix": "<p>Самый эффективный способ научиться говорить и использовать новый язык — это разговорное занятие по методу погружения: компания единомышленников, преследующих одну цель, с опытным преподавателем, который направляет процесс. Если география не позволяет, онлайн-репетиторы и разговорные занятия выполняют ту же работу; а если препятствие — стоимость, то даже чат-бот может заменить их — место для практики речи и вопросов, возникающих во время сессии FlashBoss.</p>"
+ },
+ "147": {
+  "id": 147,
+  "severity": "medium",
+  "issue": "The term 'серии' for 'streak' is inconsistent with house conventions. The established term in FlashBoss RU materials is 'серию' or 'стрик', but more importantly, the phrase 'превышением требования серии' is awkward. The original English says 'pushing past your streak requirement', which means exceeding the minimum needed to maintain the streak. The current translation implies exceeding the streak itself, not the requirement. Also, 'эпика' should be capitalized as 'EPIC' per house rules (brand-like award name).",
+  "fix": "<p>Вы контролируете свою ежедневную нагрузку тремя основными способами: выбором мастера; выполнением больше карточек, чем требуется для сохранения стрика, чтобы получить ежедневную награду <strong>EPIC</strong> (рекомендуется); и, в-третьих, контрактом — после получения EPIC вы можете выбрать дополнительный день обучения в обмен на жетон <em>drive</em>. Но будьте осторожны, когда играете с магией.</p>"
+ },
+ "148": {
+  "id": 148,
+  "severity": "medium",
+  "issue": "Again uses 'серия' for 'streak', which is not the standard term in this product’s Russian UX. House convention uses 'стрик' or treats 'streak' as a proper mechanic name. Also, 'сохраняет вашу серию' sounds odd—'поддерживает ваш стрик' is more natural in gaming/learning app context.",
+  "fix": "<p><strong>Ваш мастер (ежедневный стрик).</strong> Выбранный вами мастер устанавливает ежедневное требование — от 8 до 34 карточек в день (мастера описаны в разделе 3). Выполнение только минимума всегда поддерживает ваш стрик и позволяет двигаться вперед, с возможностью сделать больше.</p>"
+ },
+ "149": {
+  "id": 149,
+  "severity": "medium",
+  "issue": "Uses 'эпическая сессия' and 'эпик' in lowercase, but 'EPIC' is a branded award name and should remain uppercase per house conventions (like 'LISTEN'). Also, 'день основания' is a mistranslation of 'foundation day'—in context, it's the first day of the tier, not a literal 'foundation'; better rendered as 'первый, основополагающий день' or simply 'первый день уровня — день основания' is acceptable only if that’s an official term, but likely overtranslation. More critically, 'three times your daily requirement' becomes 'трехкратного ежедневного требования', which is grammatically off—should be 'в три раза больше вашего ежедневного требования' or 'до трехкратного количества от...'.",
+  "fix": "<p><strong>EPIC.</strong> В первый день уровня — его основополагающий день — сессия EPIC предлагает до трехкратного количества новых карточек по сравнению с вашим ежедневным требованием. Это идеальное начало: оно загружает в ротацию достаточно лексики, чтобы интервальное повторение заработало. Количество доступных карточек меняется день ото дня.</p>"
+ },
+ "150": {
+  "id": 150,
+  "severity": "medium",
+  "issue": "The English uses 'drive' as a proper noun (a specific in-game token name), but the Russian translation leaves it untranslated and italicized, which violates house conventions: brand tokens and key in-game terms like 'drive' should be rendered per FlashBoss conventions. However, 'drive' is not listed as a KEEP-AS-IS token, so it should be translated.",
+  "fix": "<p><strong>Гримуар (контракт).</strong> Сессия гримуара переносит следующий день вперед — завтрашние повторения и дополнительное выделение новых карточек, завершенные сегодня. Это буквально завтрашняя работа, выполненная сейчас, и её завершение приносит жетон <em>драйв</em>: выходной, накопленный на случай, когда он понадобится.</p>"
+ },
+ "151": {
+  "id": 151,
+  "severity": "low",
+  "issue": "The imperative 'Read aloud' is translated as 'Читайте вслух', using the formal/plural вы-form. The house style specifies addressing the reader as 'вы' (lowercase), but in instructional UI contexts like headings, FlashBoss typically uses the informal singular imperative for directness and consistency with game UX (e.g., 'Слушай · Читай · Повторяй'). This should match the established command form.",
+  "fix": "<h3>Читай вслух</h3>"
+ },
+ "153": {
+  "id": 153,
+  "severity": "high",
+  "issue": "The English heading is 'Failed fights', but the Russian translates it as 'Неудачные босс-файты'. However, 'fight' in this context refers specifically to boss fights (as confirmed by #154), and the house convention mandates 'boss fight -> босс-файт'. But the plural 'fights' should be 'босс-файты' only if the English says 'boss fights'. Here, the English says just 'fights', yet the Russian assumes they are boss fights. This adds information not present in the source. If the system uses 'fight' to mean 'boss fight' consistently, then it's acceptable—but the English heading is ambiguous. However, given #154 explicitly discusses 'boss fight', and this section title immediately precedes it, it's likely shorthand. Still, the translation introduces 'босс-' where the English omits it, violating 'never add a claim the English does not make'.",
+  "fix": "<h3>Проваленные бои</h3>"
+ },
+ "156": {
+  "id": 156,
+  "severity": "medium",
+  "issue": "The phrase 'consistent learner' was translated as 'постоянный ученик', which is unnatural in Russian. The standard term in educational contexts is 'регулярно занимающийся ученик' or simply 'тот, кто занимается регулярно'. Also, 'Core' should remain untranslated per house conventions.",
+  "fix": "<p>Тот, кто занимается регулярно, завершает Core за два–шесть месяцев. FlashBoss создает иллюзию, что вы знаете больше, чем на самом деле, потому что держит вас в пузыре знакомого языка, расширяясь контролируемым образом. В вашем понимании будут большие пробелы, но если вы продолжите, эти пробелы закроются. А тем временем вы понимаете всё больше с каждым днём. Мы желаем вам удачи в вашем языковом путешествии — Мастера Одиин и Клод.</p>"
+ },
+ "159": {
+  "id": 159,
+  "severity": "medium",
+  "issue": "The translation 'прохождение тестов на память' is inaccurate and awkward. The original refers to 'taking memory tests' as a learning method, not 'memory tests' as a category. Better: 'выполнение тестов улучшает долговременное запоминание'. Also, the article title should remain in English per house rules (it's academic material being cited, not teaching content).",
+  "fix": "<li>Roediger, H. L., &amp; Karpicke, J. D. (2006). Test-enhanced learning: taking memory tests improves long-term retention. <em>Psychological Science</em>, 17(3), 249–255.</li>"
+ },
+ "161": {
+  "id": 161,
+  "severity": "high",
+  "issue": "The English title of the chapter 'Memory and metamemory considerations in the training of human beings' was left untranslated, but the book title 'Metacognition: Knowing about Knowing' was partially translated ('В' instead of 'In'). Per house rules, academic titles in references should remain in original English. Additionally, 'В' should be 'In' to match the original structure, but since it's a citation, the entire bibliographic entry should preserve original language except for explanatory notes in parentheses.",
+  "fix": "<li>Bjork, R. A. (1994). Memory and metamemory considerations in the training of human beings. In <em>Metacognition: Knowing about Knowing</em>. MIT Press. (Желательная трудность.)</li>"
+ },
+ "_done": true
+}

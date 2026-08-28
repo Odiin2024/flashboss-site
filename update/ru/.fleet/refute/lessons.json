@@ -1,0 +1,28 @@
+{
+ "21": {
+  "id": 21,
+  "verdict": "upheld",
+  "why": "The RU_NAME object translates \"Core\" to \"Основа\", violating the house rule that registered pack names must remain exactly as-is in English."
+ },
+ "26": {
+  "id": 26,
+  "verdict": "refuted",
+  "why": "The use of \"Раздел\" for \"Set\" is a stylistic choice not prohibited by house conventions; the translation does not break any rule."
+ },
+ "27": {
+  "id": 27,
+  "verdict": "upheld",
+  "why": "The Russian adds \"постепенно\" (gradually) which is not present in the English source, adding information not in the original."
+ },
+ "28": {
+  "id": 28,
+  "verdict": "refuted",
+  "why": "The house conventions do not forbid localizing language names in UI messages; only words in the language being taught and specific brand tokens must be kept as-is."
+ },
+ "29": {
+  "id": 29,
+  "verdict": "upheld",
+  "why": "The function ruName(curSet) translates \"Core\" to \"Основа\", which violates the rule that registered pack names must remain untranslated."
+ },
+ "_done": true
+}

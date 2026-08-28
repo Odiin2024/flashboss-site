@@ -20,31 +20,31 @@
    MAINTENANCE: AVAIL maps each page's base name -> the locales that
    have a translated file. When a localized page ships (or a locale
    is dropped), update the one line here. Keep it in sync with the
-   hreflang blocks. Locale codes: de, es, ja.
+   hreflang blocks. Locale codes: de, es, ja, zh, ru.
    ============================================================ */
 (function () {
   var AVAIL = {
-    'home':           ['de', 'es', 'ja', 'zh'],
-    'packs':          ['de', 'es', 'ja', 'zh'],
-    'voices':         ['de', 'es', 'ja', 'zh'],
-    'about':          ['de', 'es', 'ja', 'zh'],
-    'resources':      ['de', 'es', 'ja', 'zh'],
-    'wordlists':      ['de', 'es', 'ja', 'zh'],
-    'lessons':        ['de', 'es', 'ja', 'zh'],
-    'latin-roots':    ['de', 'es', 'ja', 'zh'],
-    'french':         ['de', 'es', 'ja', 'zh'],
-    'toki-pona':      ['de', 'es', 'ja', 'zh'],
-    'german-roots':   ['de', 'es', 'ja', 'zh'],
-    'norman-roots':   ['de', 'es', 'ja', 'zh'],
-    'german':         ['de', 'es', 'ja', 'zh'],
-    'spanish':        ['de', 'es', 'ja', 'zh'],
-    'italian':        ['de', 'es', 'ja', 'zh'],
-    'esperanto':      ['de', 'es', 'ja', 'zh'],
-    'index':          ['de', 'es', 'ja', 'zh'],
-    'greek-roots':    ['de', 'es', 'ja', 'zh'],
-    'english':        ['de', 'es', 'ja', 'zh'],
-    'affiliate':      ['de', 'es', 'ja', 'zh'],
-    'in-development':  ['de', 'es', 'ja', 'zh']
+    'home':           ['de', 'es', 'ja', 'zh', 'ru'],
+    'packs':          ['de', 'es', 'ja', 'zh', 'ru'],
+    'voices':         ['de', 'es', 'ja', 'zh', 'ru'],
+    'about':          ['de', 'es', 'ja', 'zh', 'ru'],
+    'resources':      ['de', 'es', 'ja', 'zh', 'ru'],
+    'wordlists':      ['de', 'es', 'ja', 'zh', 'ru'],
+    'lessons':        ['de', 'es', 'ja', 'zh', 'ru'],
+    'latin-roots':    ['de', 'es', 'ja', 'zh', 'ru'],
+    'french':         ['de', 'es', 'ja', 'zh', 'ru'],
+    'toki-pona':      ['de', 'es', 'ja', 'zh', 'ru'],
+    'german-roots':   ['de', 'es', 'ja', 'zh', 'ru'],
+    'norman-roots':   ['de', 'es', 'ja', 'zh', 'ru'],
+    'german':         ['de', 'es', 'ja', 'zh', 'ru'],
+    'spanish':        ['de', 'es', 'ja', 'zh', 'ru'],
+    'italian':        ['de', 'es', 'ja', 'zh', 'ru'],
+    'esperanto':      ['de', 'es', 'ja', 'zh', 'ru'],
+    'index':          ['de', 'es', 'ja', 'zh', 'ru'],
+    'greek-roots':    ['de', 'es', 'ja', 'zh', 'ru'],
+    'english':        ['de', 'es', 'ja', 'zh', 'ru'],
+    'affiliate':      ['de', 'es', 'ja', 'zh', 'ru'],
+    'in-development':  ['de', 'es', 'ja', 'zh', 'ru']
   };
   try {
     var file = location.pathname.split('/').pop();

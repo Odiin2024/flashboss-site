@@ -1,0 +1,203 @@
+{
+ "16": {
+  "id": 16,
+  "verdict": "refuted",
+  "why": "The registered pack name 'French Core' is kept exactly as-is, and 'design' is correctly translated; the flag incorrectly claims partial translation."
+ },
+ "48": {
+  "id": 48,
+  "verdict": "refuted",
+  "why": "The class attribute 'en' must remain exactly as per house conventions; the flag is invalid."
+ },
+ "49": {
+  "id": 49,
+  "verdict": "refuted",
+  "why": "Same as #48; the class 'en' is correctly kept as-is per rules."
+ },
+ "50": {
+  "id": 50,
+  "verdict": "upheld",
+  "why": "The translation 'видно с первого взгляда' is misleading for the language-learning instruction 'Read it by sight', which would confuse Russian learners."
+ },
+ "51": {
+  "id": 51,
+  "verdict": "refuted",
+  "why": "The literal translation 'в цвете' is acceptable and does not constitute a material defect that would confuse or break the page."
+ },
+ "52": {
+  "id": 52,
+  "verdict": "refuted",
+  "why": "The passive construction 'запоминается' is natural in Russian and conveys the same meaning as the English active 'you learn', so no distortion or loss of meaning."
+ },
+ "53": {
+  "id": 53,
+  "verdict": "refuted",
+  "why": "The translation correctly keeps the French article 'le' unchanged and glosses gender as 'мужской род', which is standard and free of defects."
+ },
+ "54": {
+  "id": 54,
+  "verdict": "refuted",
+  "why": "The phrase 'la — женский род' is unambiguous and correctly indicates the gender of the article in context, not implying 'la' is a noun."
+ },
+ "55": {
+  "id": 55,
+  "verdict": "upheld",
+  "why": "The Russian gloss 'работа — ... Мужской род' is factually incorrect because 'работа' is feminine in Russian, and the translation fails to clarify that the gender refers to the French word, which would confuse a Russian reader."
+ },
+ "56": {
+  "id": 56,
+  "verdict": "upheld",
+  "why": "Similarly, 'дом — ... Женский род' is false because 'дом' is masculine in Russian, and the gender attribution is not tied to the French word, creating a factual error."
+ },
+ "57": {
+  "id": 57,
+  "verdict": "refuted",
+  "why": "The context of the -eau pattern and the app's French focus resolves any ambiguity about which language's gender is being discussed; the translation is functional and clear."
+ },
+ "59": {
+  "id": 59,
+  "verdict": "refuted",
+  "why": "The color blue and the app's gender-coding system make it clear that the gender statement refers to the French word, not the Russian word; any ambiguity is minor and does not break the page."
+ },
+ "60": {
+  "id": 60,
+  "verdict": "refuted",
+  "why": "'Пурпурный' is a standard Russian rendering of 'magenta' and is not a meaning shift; it is a defensible synonym."
+ },
+ "62": {
+  "id": 62,
+  "verdict": "refuted",
+  "why": "Russian typically uses sentence case for such tags, and the house style does not mandate preserving English title case; this is a normal stylistic choice, not a defect."
+ },
+ "63": {
+  "id": 63,
+  "verdict": "refuted",
+  "why": "'Срабатывающих по порядку' is a natural and understandable way to convey 'fired in sequence' in the context of lesson progression; it is not misleading or broken."
+ },
+ "65": {
+  "id": 65,
+  "verdict": "refuted",
+  "why": "The calque 'выживают' is a defensible metaphorical translation of 'survive' and does not misrepresent the mnemonic or confuse a Russian reader."
+ },
+ "72": {
+  "id": 72,
+  "verdict": "refuted",
+  "why": "The Russian keeps 'subjonctif' untranslated, exactly as the house convention requires, so there is no defect."
+ },
+ "73": {
+  "id": 73,
+  "verdict": "refuted",
+  "why": "All French grammatical terms are kept untranslated in the Russian, matching the original and the house rule."
+ },
+ "78": {
+  "id": 78,
+  "verdict": "refuted",
+  "why": "Adding 'задерживаться' as a synonym for 'to stay' is a reasonable translation choice and does not introduce a meaning absent from the original."
+ },
+ "80": {
+  "id": 80,
+  "verdict": "refuted",
+  "why": "Repeating 'монета' for clarity in the Russian structure is a natural stylistic variation, not a defect."
+ },
+ "81": {
+  "id": 81,
+  "verdict": "refuted",
+  "why": "The translation 'милый, приятный' is a standard and acceptable rendering of 'nice, friendly' in this context; the synonym choice is a stylistic preference, not a defect."
+ },
+ "90": {
+  "id": 90,
+  "verdict": "refuted",
+  "why": "The Russian correctly translates 'out now' as 'уже вышел' per house conventions; the inconsistency with the HTML class name is a source issue, not a translation error."
+ },
+ "91": {
+  "id": 91,
+  "verdict": "refuted",
+  "why": "The brand token 'French Core' is kept exactly as-is, and the malformed HTML is identical in the source English unit, so this is not a translation defect."
+ },
+ "94": {
+  "id": 94,
+  "verdict": "upheld",
+  "why": "The Russian uses 'почему' (why) instead of 'как' (how), changing the meaning from explaining the mechanism to explaining the reason, which is a substantive semantic shift."
+ },
+ "96": {
+  "id": 96,
+  "verdict": "refuted",
+  "why": "The translation accurately conveys the meaning of the original, including the spaced repetition concept; the rendering of 'Fibonacci SRS' as 'Интервалы по Фибоначчи' is a reasonable descriptive translation, and the causality is correctly preserved."
+ },
+ "97": {
+  "id": 97,
+  "verdict": "upheld",
+  "why": "The Russian translation omits 'overcoming' and only includes 'confronting', which changes the requirement for winning the duel from both confronting and overcoming to just confronting."
+ },
+ "98": {
+  "id": 98,
+  "verdict": "refuted",
+  "why": "The Russian 'Чем больше вы знаете, тем меньше колода' is a natural paraphrase of 'The deck gets smaller as you learn' in context, and does not add a claim not present in the English."
+ },
+ "99": {
+  "id": 99,
+  "verdict": "upheld",
+  "why": "'Столичный французский' is not the standard Russian term for Metropolitan French and may confuse readers into thinking it refers to the Parisian dialect rather than standard European French."
+ },
+ "100": {
+  "id": 100,
+  "verdict": "refuted",
+  "why": "'Интерфейс говорит на всех пяти' is a direct metaphorical translation matching the source's terse marketing register and is understandable to Russian readers."
+ },
+ "101": {
+  "id": 101,
+  "verdict": "refuted",
+  "why": "'Переживает' is an acceptable anthropomorphic metaphor for 'survives' in this context, similar to the English original, and does not cause confusion."
+ },
+ "102": {
+  "id": 102,
+  "verdict": "refuted",
+  "why": "The Russian 'сначала' naturally conveys priority (first and foremost) in this context, matching the English emphasis without introducing a temporal sequence."
+ },
+ "103": {
+  "id": 103,
+  "verdict": "refuted",
+  "why": "'Срабатывают' is an acceptable metaphor for lessons being triggered in a digital app, and 'открывают' correctly conveys 'unlock' in the sense of making content accessible; the translation is clear and not misleading."
+ },
+ "107": {
+  "id": 107,
+  "verdict": "upheld",
+  "why": "'Столичный французский' incorrectly implies 'Parisian French' rather than 'Metropolitan French' (mainland France), which is a factual error, and 'озвучка' violates the house convention requiring 'голос' for 'voice'."
+ },
+ "109": {
+  "id": 109,
+  "verdict": "refuted",
+  "why": "The Russian is grammatically correct and natural; the possessive 'она' refers clearly to the base game, and the colon is a minor stylistic choice, not a defect."
+ },
+ "111": {
+  "id": 111,
+  "verdict": "refuted",
+  "why": "Though 'французского Франции' is slightly unidiomatic, it is easily understood, and 'нейросетевой синтезатор речи' is a standard term for neural TTS; the overall meaning is preserved and no house convention is violated."
+ },
+ "113": {
+  "id": 113,
+  "verdict": "upheld",
+  "why": "The phrase 'держитесь на занятии' is unnatural and implies struggling to cope, failing to convey the meaning of 'follow an A2 classroom' as understanding and keeping up."
+ },
+ "115": {
+  "id": 115,
+  "verdict": "upheld",
+  "why": "'надстраивает Core' is a calque that sounds unnatural in Russian, and 'тянется к образованному стандарту' is awkward phrasing for 'reaches for the educated standard'."
+ },
+ "117": {
+  "id": 117,
+  "verdict": "refuted",
+  "why": "'Лежат на странице' is slightly colloquial but still acceptable and not a defect that would confuse a Russian reader or break the page."
+ },
+ "120": {
+  "id": 120,
+  "verdict": "refuted",
+  "why": "The direct translation 'Начните с vous' mirrors the terse source and keeps the teaching material intact; adding quotes would be adding punctuation not present in the English."
+ },
+ "124": {
+  "id": 124,
+  "verdict": "upheld",
+  "why": "The translation uses the informal 'тебя' instead of the formal 'вас' required by house style for addressing the reader as вы."
+ },
+ "_done": true
+}

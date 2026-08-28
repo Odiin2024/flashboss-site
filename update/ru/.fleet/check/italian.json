@@ -1,0 +1,135 @@
+{
+ "8": {
+  "id": 8,
+  "severity": "high",
+  "issue": "House convention breach: 'Italian Core' is a registered pack name and must be kept exactly as-is, not translated or partially translated.",
+  "fix": "<span class=\"tag\">Italian Core</span>"
+ },
+ "12": {
+  "id": 12,
+  "severity": "medium",
+  "issue": "The Russian translation uses 'которой вы принадлежите', which implies belonging *to* Italy as a possession or entity, whereas the English 'the Italy you belong to' conveys emotional/cultural belonging. The phrasing is grammatically correct but subtly shifts nuance.",
+  "fix": "<p class=\"body\">Затем она обращается внутрь. Более поздние уровни — это Италия, к которой вы <b>принадлежите</b> — <span class=\"it\">imperfetto</span>, которое позволяет рассказывать о ваших летних каникулах, идиомы, которые никто не переводит для постороннего, и регистр, который незаметно отделяет семью от туриста.</p>"
+ },
+ "17": {
+  "id": 17,
+  "severity": "high",
+  "issue": "The English 'Watch it grow up' refers to the course/pack (neuter), but the Russian uses masculine 'он', implying a male person. This is a gender agreement error and misrepresents the referent.",
+  "fix": "<span class=\"tag\">Смотрите, как оно растёт</span>"
+ },
+ "18": {
+  "id": 18,
+  "severity": "medium",
+  "issue": "Preposition 'с' is unnatural in this context; Russian typically uses 'в FlashBoss' or 'с помощью FlashBoss' for progress with a system.",
+  "fix": "<h2>Прогресс в FlashBoss</h2>"
+ },
+ "19": {
+  "id": 19,
+  "severity": "medium",
+  "issue": "The phrase 'уровень за уровнем' is acceptable but does not reflect the house convention 'tier -> уровень' consistently; more importantly, 'tier by tier' refers to structured curriculum levels, so 'от уровня к уровню' better conveys progression through defined tiers.",
+  "fix": "<p class=\"sub\">Примеры предложений усложняются от уровня к уровню.</p>"
+ },
+ "20": {
+  "id": 20,
+  "severity": "low",
+  "issue": "The English original uses 'I am a student' (indefinite article), while the Russian translation 'Я студент' omits the article, which is grammatically correct—but in teaching contexts, especially when mirroring structure, it's often preferable to preserve the indefinite sense if relevant. However, Russian doesn't use articles, so this is acceptable. BUT: the span class is 'ger it', which is misleading—this sentence is Italian, not German. This is an HTML/data error carried over, but since the task is to review the RU translation and HTML must be kept as-is, this isn't a translation defect. No fix needed for translation itself. However, note that 'ger it' is incorrect labeling, but per instructions, we don't alter HTML. So actually, no defect in translation.",
+  "fix": null
+ },
+ "22": {
+  "id": 22,
+  "severity": "medium",
+  "issue": "The phrase 'девятичасовой поезд' is ambiguous in Russian—it could mean a train that takes nine hours, not one departing at 9 o’clock. The correct rendering is 'поезд в девять часов' or 'девятичасовой поезд' (rare) but standard usage prefers 'поезд на девять часов' or 'поезд в девять'. The original English specifies 'nine o'clock train', so the translation is inaccurate.",
+  "fix": "<li class=\"reveal\"><span class=\"ger it\">Ieri ho preso il treno delle nove per andare a trovare mia nonna.</span><span class=\"en\">Вчера я сел на поезд в девять часов, чтобы поехать навестить мою бабушку.</span></li>"
+ },
+ "23": {
+  "id": 23,
+  "severity": "low",
+  "issue": "The translation adds 'братьями и сестрами' (brothers and sisters), while the original says 'cousins', which in English is gender-neutral plural. Russian 'двоюродные братья и сестры' is more precise than just 'двоюродные', but it's slightly verbose. However, 'моими двоюродными' alone would be vague. This is acceptable. But note: the Italian original uses 'cugini', which is masculine plural but can be generic. The translation is accurate and natural. No real defect.",
+  "fix": null
+ },
+ "25": {
+  "id": 25,
+  "severity": "medium",
+  "issue": "The phrase 'Read it by sight' is mistranslated. 'Читай на глаз' is unnatural and incorrect in this context. The correct rendering should reflect the established house terminology 'Читай', as part of the fixed sequence 'Слушай · Читай · Повторяй · Оценивай · Сражайся'. Moreover, 'by sight' here refers to reading without translation or decoding—i.e., fluent recognition—not 'на глаз' (which implies estimation or approximation).",
+  "fix": "<span class=\"tag\">Читай</span>"
+ },
+ "27": {
+  "id": 27,
+  "severity": "medium",
+  "issue": "Inconsistent use of pronoun/register: 'Нажми' (informal singular) clashes with the site-wide convention of addressing the user as 'вы' (formal or plural). Should use 'Нажмите'.",
+  "fix": "<p class=\"sub\">Каждое существительное имеет артикль, цветом обозначающий род. Нажмите на карточку, чтобы перевернуть её.</p>"
+ },
+ "37": {
+  "id": 37,
+  "severity": "medium",
+  "issue": "The phrase 'Женский род, перед согласным' incorrectly describes the grammatical context. The original English refers to the gender and phonetic environment of the Italian word 'casa' (feminine, before a consonant), but in Russian this phrasing misleadingly suggests that 'дом' is feminine, which it is not. This creates confusion because 'дом' is masculine in Russian, while the note actually pertains to the Italian noun 'casa'.",
+  "fix": "<div class=\"trans\">дом — &ldquo;Дом моей бабушки в Сицилии.&rdquo; (Итальянское слово <i>casa</i> — женского рода и стоит перед согласным.)</div>"
+ },
+ "40": {
+  "id": 40,
+  "severity": "medium",
+  "issue": "The phrase 'всё ещё мужской род' may mislead Russian readers into thinking the discussion is about Russian grammar, whereas it actually explains Italian article elision and gender. The note should clarify that the gender reference applies to the Italian word, not the Russian translation.",
+  "fix": "<div class=\"trans\">друг (м.р.) — &ldquo;Друг Марко живёт в Риме.&rdquo; Артикль стягивается до <b>l'</b>, но его цвет остаётся синим: в итальянском это всё ещё существительное мужского рода.</div>"
+ },
+ "43": {
+  "id": 43,
+  "severity": "medium",
+  "issue": "The English says 'Same l', but rose: feminine.' The Russian translation renders 'rose' as 'розовый', which is a literal color translation, but the original uses 'rose' as a shorthand for 'rose-colored' or 'pink cue'. However, more critically, the phrase 'То же l'' is ambiguous—it could imply the form is the same (which it is), but the English emphasizes that despite identical surface form, gender is marked via color. The bigger issue is register and clarity: 'розовый: женский род' sounds like a label, not an explanation. More importantly, house conventions require that teaching material in the target language (Italian) remain untranslated—which is respected—but the gloss must be accurate. The main defect is that 'rose' refers to the color cue used by FlashBoss, and while 'розовый' is technically correct, in context #44 clarifies it as 'розовый l' — женский', so consistency is okay. However, the real issue is that the English says 'Same l'', meaning the written form is identical, and the Russian 'То же l''' correctly conveys that. On second look, this may be acceptable. But wait: the English uses 'rose' as an adjective modifying an implied 'cue' or 'color', not as a noun. The Russian 'розовый' is fine. However, there's a deeper problem: the English says 'Same l'', but rose: feminine.'—meaning the l' is the same in spelling, but its color (rose) signals feminine. The Russian says 'То же l'', но розовый: женский род.' This incorrectly suggests that l' itself is pink, rather than the apostrophe being colored pink. This misattributes the coloring to the entire l' instead of specifically the apostrophe, contradicting #44 which says 'окрашивая апостроф'. Thus, this is a meaning distortion.",
+  "fix": "<div class=\"trans\">подруга (ж.р.) — &ldquo;Подруга Анны учится в Болонье.&rdquo; Та же <b>l'</b>, но с розовым апострофом: женский род.</div>"
+ },
+ "44": {
+  "id": 44,
+  "severity": "medium",
+  "issue": "The phrase 'окрашивая апостроф' is correct per the English 'colouring the apostrophe'. However, the sentence ends with 'так что род никогда не исчезает для вас.' The English says 'so the gender never disappears on you.' The Russian 'для вас' is a calque; natural Russian would use 'перед вами' or better yet, 'вы никогда не теряете из виду род' or similar. But more precisely, 'never disappears on you' is an idiomatic English expression meaning 'you never lose track of it'. The current translation 'никогда не исчезает для вас' is awkward and unnatural—it literally means 'never disappears for you', which is not idiomatic Russian. A more natural rendering would be 'так что вы никогда не теряете из виду род' or 'так что род всегда остаётся на виду'. This is a register and naturalness issue.",
+  "fix": "<p class=\"elision-note\">Итальянский скрывает род, как только артикль встречается с гласной: <span class=\"it\">lo amico</span> и <span class=\"it\">la amica</span> оба стягиваются до <span class=\"it\">l'</span>. FlashBoss сохраняет подсказку, <b>окрашивая апостроф</b> — синий <span class=\"it\">l'</span> означает мужской род, розовый — женский, так что вы никогда не теряете род из виду.</p>"
+ },
+ "64": {
+  "id": 64,
+  "severity": "medium",
+  "issue": "The English phrase 'fired in sequence' is idiomatic and implies automatic, timely triggering (like bullets or events), but the Russian translation 'последовательно показываемые' ('sequentially displayed') is too literal and passive, losing the dynamic connotation of being automatically triggered at the right moment.",
+  "fix": "<h2>Справочные уроки, запускаемые поочерёдно</h2>"
+ },
+ "73": {
+  "id": 73,
+  "severity": "medium",
+  "issue": "The phrase 'mean it' is idiomatically rendered as 'говорить по делу', which is unnatural and misses the emotional sincerity implied by 'mean it'. A more accurate rendering would convey genuine intent or feeling.",
+  "fix": "<p>Путешествия, работа и общественная жизнь — достаточно, чтобы поговорить с вашими <span class=\"it\">nonni</span> и быть искренним.</p>"
+ },
+ "76": {
+  "id": 76,
+  "severity": "medium",
+  "issue": "The phrase 'native-like range' is translated as 'близкий к носительскому диапазон', which is a calque and sounds unnatural in Russian. In language-learning contexts, 'диапазон' is not typically used this way; 'лексика' or 'словарный запас' would be more appropriate. Also, 'Полные три тысячи' lacks context—it’s unclear what 'three thousand' refers to without specifying 'слов' (words), which the English implies via prior context but Russian requires for clarity.",
+  "fix": "<p>Абстрактная, литературная лексика и словарный запас на уровне носителя. Все три тысячи слов.</p>"
+ },
+ "79": {
+  "id": 79,
+  "severity": "medium",
+  "issue": "Fibonacci SRS should be translated per house conventions; 'SRS' stands for 'spaced repetition system', and the term 'spaced repetition' is rendered as 'интервальное повторение'. The proper Russian rendering should reflect this.",
+  "fix": "<dt>Интервальное повторение по Фибоначчи</dt>"
+ },
+ "83": {
+  "id": 83,
+  "severity": "medium",
+  "issue": "The term 'Graduation' in the context of a card being mastered is defined in house conventions as 'считается освоенной', so the noun form should align with that terminology. 'Освоение' is acceptable but less precise; however, more critically, the English uses a proper noun heading 'Graduation' which in FlashBoss context specifically means the card is graduated (i.e., mastered). The standard house rendering for this concept is 'Освоение карточки' or just 'Освоение' may be acceptable—but checking consistency: other official materials use 'Освоение' for 'Graduation'. However, given that the English says 'Graduation' (a system feature name), and house style keeps feature names consistent, this might actually be correct. On second look, no direct convention specifies the exact translation of the heading 'Graduation', and 'Освоение' is a reasonable and conventional translation. Therefore, this may not be an error. But 'Graduation' as a system term might be better rendered to match the verb form used elsewhere ('считается освоенной'), yet headings are often nominalized. Given ambiguity and lack of explicit convention breach, this might be acceptable. However, comparing to #82 and #80, all other terms are fully translated. Since 'Graduation' is a defined system concept, and the house style does not list it as a keep-as-is token, it should be translated. 'Освоение' is correct. So perhaps no error here. Re-evaluate: actually, no defect in #83.",
+  "fix": null
+ },
+ "84": {
+  "id": 84,
+  "severity": "medium",
+  "issue": "The English uses imperative 'Beat a cluster', but the Russian uses plural imperative 'Победите', which addresses multiple people. The game UI conventionally uses singular imperative or infinitive for instructions; also, 'beat' here is part of gameplay action phrasing and should match house style (e.g., 'Сражайся'). However, more critically, 'beat a cluster' is a game-specific action that in FlashBoss context aligns with 'Fight' from the core loop 'Listen · Read · Repeat · Rate · Fight'. The verb 'победить' implies completing a boss fight, but the original says 'beat a cluster', not 'beat a boss'. In FlashBoss terminology, clusters are graduated by fighting bosses, so the phrasing may be acceptable—but the bigger issue is register: the Russian uses formal/plural imperative where the English is bare imperative (game command style). House style prefers concise, direct commands consistent with UI tone.",
+  "fix": "<dd>Победи блок — и его карточки навсегда покинут вашу ежедневную колоду. Колода становится меньше по мере обучения.</dd>"
+ },
+ "86": {
+  "id": 86,
+  "severity": "high",
+  "issue": "Violates house convention: 'Italian Piper' is a brand/token and must remain exactly as-is. The translation renders it as 'Italian Piper' inside a descriptive phrase but labels it as 'синтезатор речи Italian Piper', which is acceptable per se—however, the English says 'Clean Italian Piper text-to-speech', meaning the TTS voice is provided by the 'Italian Piper' system. The Russian says 'Чистый синтезатор речи Italian Piper', which incorrectly implies 'Italian Piper' is an adjective modifying 'TTS', rather than a proper name of the voice system. More importantly, house rules state: 'Brand tokens: FlashBoss, Pareto, Master Odiin, Steam, Piper, Windows, Mac, Linux, DLC.' Note: 'Piper' is a brand token, and 'Italian Piper' is likely a specific voice pack name. But critically, the English does not say 'Italian Piper TTS'—it says 'Clean Italian Piper text-to-speech', where 'Italian Piper' is the name of the voice. However, the bigger error: the house convention says to KEEP BRAND TOKENS AS-IS, but also: 'Any word or sentence in a language BEING TAUGHT [...] — those are teaching material. Translate only the English gloss/explanation around them.' Here, 'Italian' is part of the pack name 'Italian Core', but 'Italian Piper' is not a registered pack name. However, 'Piper' is a brand token, so 'Italian Piper' should arguably stay untranslated. But the real defect: the English says 'Clean Italian Piper text-to-speech', and the Russian translates 'Clean' as 'Чистый', which is a subjective claim not present in the source. The word 'clean' here refers to audio quality (clear, noise-free), but 'чистый' in Russian can mean 'pure' or 'unprocessed', which may misrepresent. However, the main issue is that 'Italian Piper' is a proper name and should not be embedded in a translated noun phrase like this. But actually, upon closer look: the house rules say 'KEEP EXACTLY AS-IS' brand tokens. 'Piper' is listed as a brand token, so 'Italian Piper' should appear verbatim. The current translation does keep 'Italian Piper' intact, so that’s okay. However, the deeper problem: the English says 'on every word and every sentence' — the Russian says 'для каждого слова и каждого предложения', which is correct. So maybe no error? Wait—re-examining: the term 'text-to-speech' is technical, and 'синтезатор речи' is correct. But the house style doesn’t require keeping 'text-to-speech' untranslated. So perhaps this is acceptable. BUT: the English says 'Clean Italian Piper text-to-speech', and the Russian adds 'синтезатор речи', which is explanatory, but that’s normal in translation. However, there's a more subtle breach: the house convention says 'voice -> голос', and 'voices -> голоса'. Here, it's about TTS output, which is referred to as 'voice' in other contexts (e.g., 'Choose your voice'). Using 'синтезатор речи' instead of 'голос' may contradict house terminology. In FlashBoss, TTS outputs are called 'voices' (e.g., 'Italian Piper voice'). Therefore, it should be 'Чистый голос Italian Piper для каждого слова и каждого предложения.' This aligns with house term 'voice -> голос'.",
+  "fix": "<dd>Чистый голос Italian Piper для каждого слова и каждого предложения.</dd>"
+ },
+ "88": {
+  "id": 88,
+  "severity": "medium",
+  "issue": "The English says 'fire at the point in the sequence where they unlock what you're about to read.' The Russian translates 'fire' as 'появляются' (appear), which loses the active, dynamic connotation of 'fire' (as in trigger or activate). While 'появляются' is understandable, it softens the intended immediacy. More importantly, 'unlock what you're about to read' is rendered as 'открывают то, что вы собираетесь прочитать', which is mostly correct, but 'unlock' in gaming context usually translates as 'открывают доступ к...' or simply 'открывают', but here it's acceptable. However, the phrase 'в тот момент последовательности' is awkward—'в последовательности' would suffice, or 'в нужный момент последовательности'. But the main issue is fidelity: 'fire' is not just 'appear'—it implies automatic triggering. A better rendering might use 'запускаются' or 'активируются'. However, this is borderline. But note: the English says 'fire at the point in the sequence', and the Russian says 'появляются в тот момент последовательности'—the preposition 'в' with 'момент' is slightly off; 'в тот момент, когда...' would be better, but the current phrasing is acceptable. However, the bigger concern: the English uses 'reference lessons', translated as 'справочных уроков'—correct. But the phrase 'they unlock what you're about to read' suggests the lessons unlock upcoming content. The Russian says 'они открывают то, что вы собираетесь прочитать'—which is literal and correct. So maybe no error? But wait—the English says 'fire at the point... where they unlock...', implying simultaneity. The Russian captures that. However, 'fire' as a verb for lessons is metaphorical; 'появляются' is a safe choice. Given house style prioritizes clarity over metaphor, this may be acceptable. But upon second thought: in gaming/UI context, 'fire' often means 'trigger automatically', and 'появляются' only covers visibility, not activation. However, without stronger evidence of defect, this might be low severity. But let's compare to house style: terse, direct. The current translation is natural. So perhaps no error. BUT—rechecking: the English says 'Twenty reference lessons fire at the point in the sequence where they unlock what you're about to read.' The Russian: 'Двадцать справочных уроков появляются в тот момент последовательности, когда они открывают то, что вы собираетесь прочитать.' This is grammatically correct and faithful. So maybe no defect. However, initial assessment flagged it, but on review, it seems okay. So remove this entry.",
+  "fix": null
+ },
+ "_done": true
+}

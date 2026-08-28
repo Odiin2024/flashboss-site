@@ -1,0 +1,57 @@
+{
+ "18": {
+  "id": 18,
+  "severity": "medium",
+  "issue": "The phrase 'Current review intervals are shown in stars' is inaccurately translated. The original refers to 'review intervals' (time periods until next review), but the Russian says 'интервалы повторения', which could be misinterpreted as the SRS intervals themselves, not their visual representation. More critically, 'shown in stars' is rendered as 'показаны звёздами', which is unnatural; the intended meaning is that mastery level (not intervals) is indicated by stars — a common UI pattern in FlashBoss.",
+  "fix": "<p><b>Изучаемое слово</b> — с визуальными подсказками, которые помогают запоминанию. Уровень освоения отображается звёздами.</p>"
+ },
+ "20": {
+  "id": 20,
+  "severity": "low",
+  "issue": "The English specifies 'an idiomatic rendering of the sentence', but the Russian adds 'а не дословный' (‘not literal’), which is not stated in the original. While often true, this addition introduces a contrast not present in the source.",
+  "fix": "<p><b>Перевод примера</b> — идиоматичный перевод предложения.</p>"
+ },
+ "21": {
+  "id": 21,
+  "severity": "medium",
+  "issue": "The English says 'rate the word, view your notes, <b>7</b> to check the rating options.' The Russian uses a semicolon and rephrases it as two separate instructions, but omits the parallel structure. More importantly, 'check the rating options' is about accessing the key legend (what 1–7 mean), but 'покажет варианты оценки' sounds like pressing 7 will display choices to select from, rather than explain what the keys do. Also, the original lists three actions: (1) rate, (2) view notes, (3) press 7 for info — but the Russian merges (1) and (2) and then adds (3) as a separate clause, slightly distorting the intent.",
+  "fix": "<p><b>Перевод</b> — оцените слово, просмотрите заметки; нажмите <b>7</b>, чтобы узнать о вариантах оценки.</p>"
+ },
+ "23": {
+  "id": 23,
+  "severity": "medium",
+  "issue": "The English alt text says 'mastery stars', which aligns with house terminology ('звёзды освоения' is acceptable), but 'plain translation' is rendered as 'обычный перевод', which is vague. House convention uses 'перевод' for 'translation', but 'plain translation' here contrasts with 'example translation' — it means the direct word gloss (e.g., 'wife'), not a full sentence. 'Обычный' is misleading; better: 'прямой перевод' or 'глосса'. Additionally, 'выделенное цветом изучаемое слово' is awkward; the English says 'colour-coded target word', implying semantic colouring (e.g., gender in German), not just highlighting.",
+  "fix": "<p>alt=\"Карточка FlashBoss для немецкого слова die Ehefrau (жена): цветовая маркировка изучаемого слова со звёздами освоения, пример предложения с переводом, прямой перевод и заметки.\"</p>"
+ },
+ "32": {
+  "id": 32,
+  "severity": "medium",
+  "issue": "The English original uses imperative 'match the translation', while the Russian uses subjunctive/instructional 'подберите перевод'. Also, 'advance or get pushed back' is rendered as 'продвигайтесь вперёд или откатывайтесь назад', which introduces a reflexive nuance not present in the original. The original describes game mechanics objectively ('advance or get pushed back'), not as instructions to the player.",
+  "fix": "alt=\"Босс-файт FlashBoss по немецкому: сопоставьте перевод, продвигайтесь вперёд или откатывайтесь назад.\""
+ },
+ "36": {
+  "id": 36,
+  "severity": "high",
+  "issue": "Brand tokens 'English Advance', 'Adept', 'German Core', and 'Esperanto Core' must be kept exactly as-is per house conventions, not translated or altered.",
+  "fix": "<p>English Advance &amp; Adept<br>German Core<br>Esperanto Core<br><a href=\"toki-pona.html\">Toki Pona</a></p>"
+ },
+ "37": {
+  "id": 37,
+  "severity": "medium",
+  "issue": "The brand token 'Roots' in 'The Roots Series' is part of registered pack names (e.g., German Roots) and should remain untranslated per house conventions.",
+  "fix": "<div class=\"g-h\">The Roots Series</div>"
+ },
+ "38": {
+  "id": 38,
+  "severity": "high",
+  "issue": "Language names 'German', 'Norman', 'Latin' must remain in English as they are part of official pack names (e.g., German Roots). Only the surrounding explanation should be translated.",
+  "fix": "<p>German, Norman, Latin и <a href=\"https://store.steampowered.com/app/4992480?utm_source=website-home\">Greek Roots</a> — история, из которой вырос <a href=\"packs.html\">английский</a>.</p>"
+ },
+ "45": {
+  "id": 45,
+  "severity": "high",
+  "issue": "Meaning changed: 'promote' was translated as 'партнёрам' (partners) instead of a verb like 'продвигать' or 'рекламировать', which alters the intended action.",
+  "fix": ">продвигать</a>"
+ },
+ "_done": true
+}

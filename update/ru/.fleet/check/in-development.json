@@ -1,0 +1,9 @@
+{
+ "4": {
+  "id": 4,
+  "severity": "medium",
+  "issue": "The key 'eta' should remain in English as per house conventions for key names and technical terms, but it was translated to 'ETA' (which is also an English acronym). However, the original uses lowercase 'eta', and the Russian version capitalizes it. More importantly, 'eta' here is a label/key and should be kept exactly as-is per convention: never translate keys/labels like this unless explicitly allowed. The correct rendering should keep 'eta' unchanged.",
+  "fix": "<div><span class=\"k\">eta</span><span class=\"v\">скоро™</span></div>"
+ },
+ "_done": true
+}

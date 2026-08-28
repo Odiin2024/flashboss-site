@@ -1,0 +1,200 @@
+{
+ "6": {
+  "id": 6,
+  "severity": "medium",
+  "issue": "The phrase 'German Core' should be kept as-is per house conventions, but it is translated as 'German Core ведёт вас...' which implies translation of the product name. However, 'German Core' is a registered pack name and must remain untranslated.",
+  "fix": "<p class=\"lede reveal\">Вы начинаете с фразы <b class=\"de\">Ich bin Student.</b> В конце вы уже читаете письмо из <b>Finanzamt</b> — и точно знаете, что оно хочет. <b>German Core</b> ведёт вас от прибытия к выживанию.</p>"
+ },
+ "8": {
+  "id": 8,
+  "severity": "high",
+  "issue": "The registered pack name 'German Core' must be kept exactly as-is, but according to house conventions, it should not be translated — however, the current Russian version leaves it in English, which is correct. But the tag should match the exact casing and form: 'German Core' is correct, so this is actually fine. Wait — rechecking: the instruction says 'KEEP EXACTLY AS-IS' for registered pack names, and 'German Core' is one. So leaving it in English is correct. Therefore, no error here.",
+  "fix": null
+ },
+ "11": {
+  "id": 11,
+  "severity": "medium",
+  "issue": "Same issue as #6: 'German Core' is translated implicitly by using it in a Russian sentence without marking it as a proper noun/product name. While it's not rendered in Cyrillic, it should ideally be wrapped or treated consistently. However, the bigger issue is that the English says 'ships free with FlashBoss', which means it's included at no extra cost when you get FlashBoss. The Russian 'поставляется бесплатно с FlashBoss' could be misread as 'is distributed for free alongside FlashBoss' (i.e., standalone), rather than 'included free with'. But more critically, per house style, 'German Core' should appear exactly as 'German Core' — which it does — so that part is okay. However, the phrase 'создан в виде карточек' slightly misrepresents 'built as flashcards' — it's not just 'in the form of', but literally structured as flashcards. That’s acceptable. The real defect is missing emphasis or clarity that it’s a pack name. But actually, upon strict reading, the only breach is in #6 and #11 where 'German Core' is used in a Russian sentence without being set apart (e.g., quotes or bold), but the English doesn’t do that either. So maybe no error? However, house convention says: 'Registered pack names: ... German Roots, ...' — note: it lists 'German Roots', not 'German Core'. Wait! Critical point: Is 'German Core' a registered pack name? The list says: 'English Core, English Advance, English Adept, Core, Pareto 1, Pareto 2, German Roots, Norman Roots...'. It does NOT list 'German Core' explicitly. It lists 'Core' and 'German Roots'. So 'German Core' may not be a protected token! Re-examining: the English text uses 'German Core' as a product name. But according to the provided list, only 'Core' (standalone) and 'German Roots' are listed. Therefore, 'German Core' is likely a descriptive name, not a registered pack name, and SHOULD be translated. But wait — the website clearly treats 'German Core' as a pack title (like 'French Core', 'Spanish Core'), and those are mentioned in the list indirectly? Actually, the list includes 'French Core, Spanish Core, Italian Core' — yes! The list says: 'French Core, Spanish Core, Italian Core'. So by pattern, 'German Core' is also a registered pack name, even if not explicitly spelled out, because the pattern is established. And the instruction says: 'Registered pack names: ... French Core, Spanish Core, Italian Core...' — so German Core belongs to that series and must be kept as-is. Therefore, using 'German Core' in Russian text without translation is correct, BUT in sentences like #6 and #11, it's grammatically awkward to leave an English noun as subject in a Russian sentence without typographic distinction. However, the house rules say: 'KEEP EXACTLY AS-IS' — so it must remain 'German Core', even in the middle of a Russian sentence. The current rendering does that. So actually, #6 and #11 are correct. Then why flag? Let's double-check the original list: 'Registered pack names: English Core, English Advance, English Adept, Core, Pareto 1, Pareto 2, German Roots, Norman Roots, Latin Roots, Greek Roots, French Core, Spanish Core, Italian Core, Toki Pona.' — Note: 'German Core' is NOT listed, but 'French Core', 'Spanish Core', 'Italian Core' are. This strongly implies 'German Core' is part of the same naming scheme and should be treated identically — i.e., kept in English. So it's a protected token by extension. Therefore, leaving it as 'German Core' is correct. So no error in #6 or #11 on that count. But then what about #8? It correctly leaves it as 'German Core'. So all are fine? However, in #6, the Russian says 'German Core ведёт вас...' — this is acceptable per house rules. So perhaps there are no errors. But wait: in #10, '1000 слов на пяти уровнях' — the English says 'A thousand words across five tiers'. House style says: 'Russian prose drops the thousands comma: 1,000 -> 1000' — which is followed. Also, 'tier' is rendered as 'уровень', and 'five tiers' as 'пяти уровнях' — correct. In #9, 'Начинайте говорить' — matches 'Get talking' appropriately. In #7, 'Списки слов', 'Уроки', 'Попробовать демо' — all correct per house terms ('word list -> список слов', 'lesson -> урок', 'Try the demo -> Попробовать демо'). So after careful review, there are no actual defects. The initial concern about 'German Core' was unfounded because it is indeed a protected pack name by pattern, and it is kept in English as required."
+ },
+ "12": {
+  "id": 12,
+  "severity": "medium",
+  "issue": "The phrase 'formidable bureaucracy' was translated as 'грозной бюрократии', which carries a negative connotation ('грозный' = fearsome/threatening). The English 'formidable' here implies impressively powerful or efficient, not necessarily negative. This shifts the tone.",
+  "fix": "<p class=\"body\">Уровни четыре и пять совершают короткое отклонение в жизнь в Германии — язык для её внушительной бюрократии и для всех, кто стремится работать или учиться в Германии или поблизости. Наборы Pareto продолжаются с того места, где остановился German Core. Грамматика и словарный запас постоянно нарастают, вплоть до полной сложности C1.</p>"
+ },
+ "17": {
+  "id": 17,
+  "severity": "medium",
+  "issue": "The English 'Watch it grow up' uses 'it' (referring to the course/pack), but the Russian translation uses 'он' ('Смотрите, как он растёт'), implying a masculine animate subject. The correct pronoun should be neuter 'оно' to match an inanimate object like a course or system.",
+  "fix": "<span class=\"tag\">Смотрите, как оно растёт</span>"
+ },
+ "30": {
+  "id": 30,
+  "severity": "medium",
+  "issue": "The German word 'Personalausweis' should remain as-is per house rules (it is teaching material), but the Russian translation lacks a gloss or explanation. However, since this is just the word display in a flashcard, it is acceptable to leave it untranslated. No defect.",
+  "fix": null
+ },
+ "31": {
+  "id": 31,
+  "severity": "high",
+  "issue": "The German example sentence is left untranslated in the Russian version, but according to house conventions, only the language being taught (German here) stays in original; the surrounding UI and explanations must be in Russian. However, this <div class=\"ex de\"> contains a German sentence that is part of the teaching material — so it should remain in German. Thus, no defect.",
+  "fix": null
+ },
+ "32": {
+  "id": 32,
+  "severity": "low",
+  "issue": "The English uses 'identity card', while Russian uses 'удостоверение личности'. This is acceptable as a correct translation. The German colloquial form 'Perso' is correctly kept. However, the English has a period inside the quotes after 'registration', but the Russian places the period inside the closing quotation mark as well — which is correct in Russian typography. No defect.",
+  "fix": null
+ },
+ "33": {
+  "id": 33,
+  "severity": "medium",
+  "issue": "The phrase 'tap to flip' is translated as 'нажмите, чтобы перевернуть'. On touch devices, 'tap' is often rendered as 'тапните' or 'коснитесь' in modern app UIs. 'Нажмите' is more associated with mouse clicks. While not strictly wrong, it's slightly unnatural for a mobile-first flashcard interface. However, this is a style preference, not a rule violation.",
+  "fix": null
+ },
+ "34": {
+  "id": 34,
+  "severity": "none",
+  "issue": "The German article 'die' is correctly left untranslated as it is part of the teaching material.",
+  "fix": null
+ },
+ "35": {
+  "id": 35,
+  "severity": "none",
+  "issue": "The German word 'Anmeldung' is correctly left untranslated per house rules.",
+  "fix": null
+ },
+ "36": {
+  "id": 36,
+  "severity": "high",
+  "issue": "German example sentence left untranslated; should remain in German as it is teaching material, but the Russian translation incorrectly copies the German instead of providing a Russian gloss or leaving it as-is with proper context. However, per house rules, sentences in the language being taught (German) must be kept exactly as-is. The issue is that this is correctly kept in German, so actually no error. Wait — reviewing again: the EN side shows the German sentence as teaching material, and RU must preserve it verbatim. It does. So no error here.",
+  "fix": null
+ },
+ "37": {
+  "id": 37,
+  "severity": "medium",
+  "issue": "The English uses 'registration' as a gloss for the German concept, and the Russian renders it as 'регистрация', which is correct. However, the quoted instruction in English is 'Do the registration at the office within two weeks.' The Russian translation says 'Сделайте регистрацию в офисе...' which is unnatural: in Russian administrative context, one does not 'сделать регистрацию' — the standard phrase is 'встать на регистрационный учёт' or simply 'зарегистрироваться'. 'Сделать регистрацию' is a calque from English/German and sounds non-idiomatic.",
+  "fix": "<div class=\"trans\">регистрация — «Зарегистрируйтесь в учреждении в течение двух недель.» Требуется в течение двух недель после переезда.</div>"
+ },
+ "38": {
+  "id": 38,
+  "severity": "high",
+  "issue": "The German definite article 'das' is part of the teaching material and must be kept as-is per house rules. It is correctly preserved. No error.",
+  "fix": null
+ },
+ "39": {
+  "id": 39,
+  "severity": "high",
+  "issue": "The German word 'Bürgeramt' is teaching material and must remain in German. It is correctly preserved. No error.",
+  "fix": null
+ },
+ "40": {
+  "id": 40,
+  "severity": "high",
+  "issue": "German example sentence correctly preserved as teaching material. No error.",
+  "fix": null
+ },
+ "41": {
+  "id": 41,
+  "severity": "medium",
+  "issue": "The English gloss 'civic office' is translated as 'гражданское бюро', which is a misleading calque. In Russian administrative terminology, 'Bürgeramt' is commonly referred to as 'офис по работе с гражданами', 'администрация района', or often left as 'Бюргерамт' with explanation, but 'гражданское бюро' is not a standard term and may confuse learners. Additionally, the phrase 'У меня назначена встреча' is slightly off — 'назначена встреча' is passive and awkward; natural Russian would be 'У меня есть запись на приём' or 'У меня назначена встреча' is acceptable but less common than 'У меня приём'. However, the main issue is the incorrect gloss 'гражданское бюро'.",
+  "fix": "<div class=\"trans\">Бюргерамт — «У меня приём в Бюргерамте для регистрации.» Также: <i>Bürgerbüro</i>.</div>"
+ },
+ "46": {
+  "id": 46,
+  "severity": "medium",
+  "issue": "The Russian translation uses 'я должен', which implies male gender; the original English 'I have to' is gender-neutral. In Russian, a gender-neutral phrasing like 'мне нужно' or 'нужно зарегистрироваться' would be more accurate.",
+  "fix": "<div class=\"v\">Nach dem Umzug muss ich die Anmeldung beim Amt machen. <span class=\"stamp\">⟶ Frist: 2 Wochen</span><span class=\"en\">После переезда мне нужно зарегистрироваться в бюро — требуется в течение двух недель.</span></div>"
+ },
+ "48": {
+  "id": 48,
+  "severity": "medium",
+  "issue": "The German teaching sentence is left untranslated in the Russian version, but per house conventions, only the language being taught (German) should remain in original; however, the surrounding instructional context (including stamps like 'Frist') should be localized. Here, '⟶ Frist: 4 Wochen' was correctly changed to '⟶ Срок: 4 недели', which is acceptable. However, the main issue is that the German sentence itself appears in the RU version as-is, which is correct per convention (since it's the target language being taught). But the English gloss inside <span class=\"en\"> is translated into Russian — this violates the rule: 'Any word or sentence in a language BEING TAUGHT [...] — those are teaching material. Translate only the English gloss/explanation around them.' Wait — correction: the <span class=\"en\"> contains the English source, and in the RU version, it should show the Russian translation of that English gloss. That is actually correct. So no error here.",
+  "fix": null
+ },
+ "49": {
+  "id": 49,
+  "severity": "high",
+  "issue": "The entire content 'dieSteuererklärung' should be kept as-is because it's German (language being taught), but the lack of space between 'die' and 'Steuererklärung' matches the EN source. However, in proper German orthography, there should be a space: 'die Steuererklärung'. But since the source HTML has it without a space, and house rules say 'KEEP EXACTLY AS-IS' for teaching material, we must preserve the exact string. Yet the EN source already has it wrong? Actually, looking closely: EN shows '<span class=\"a f\">die</span>Steuererklärung' — this is intentional formatting (article separated for grammatical highlighting). The RU version correctly preserves this exact structure. So no error.",
+  "fix": null
+ },
+ "50": {
+  "id": 50,
+  "severity": "medium",
+  "issue": "The German sentence 'Ich mache meine Steuererklärung online über das ELSTER-Portal.' is correctly left untranslated (as it's the language being taught). The English gloss is properly translated into Russian in <span class=\"en\">. However, 'ELSTER-Portal' contains a capital 'P' in 'Portal' in the German sentence. In German, all nouns are capitalized, so 'Portal' is correct. The Russian translation of the gloss uses 'портал ELSTER' — correct. No breach.",
+  "fix": null
+ },
+ "51": {
+  "id": 51,
+  "severity": "low",
+  "issue": "Same as #49 — the format '<span class=\"a f\">die</span>Krankenversicherung' is preserved exactly. This is correct per house rules.",
+  "fix": null
+ },
+ "52": {
+  "id": 52,
+  "severity": "medium",
+  "issue": "The stamp '<span class=\"stamp\">obligatorisch.</span>' in EN is a German word (part of the teaching context), but in the RU version it's translated to 'обязательно.' — this is incorrect. Per house conventions: 'Any word or sentence in a language BEING TAUGHT [...] — those are teaching material' and should NOT be translated. Since 'obligatorisch' is German (the language being taught), it must remain as 'obligatorisch.', not translated into Russian. The stamp is part of the German-language example, so it should stay in German.",
+  "fix": "<div class=\"v\">In Deutschland braucht jeder eine Krankenversicherung — <span class=\"stamp\">obligatorisch.</span><span class=\"en\">В Германии каждому нужна медицинская страховка — это обязательно.</span></div>"
+ },
+ "53": {
+  "id": 53,
+  "severity": "low",
+  "issue": "'The Pareto Principle' is translated as 'Принцип Парето'. However, 'Pareto' is a brand token? No — 'Pareto' refers to the economic principle and also matches the registered pack name 'Pareto 1', 'Pareto 2'. House rules say: 'Brand tokens: FlashBoss, Pareto, Master Odiin...' — so 'Pareto' should NOT be translated or declined. But 'Принцип Парето' is the standard Russian rendering and does not decline 'Pareto'; it's a proper noun used as-is. This is acceptable. No error.",
+  "fix": null
+ },
+ "57": {
+  "id": 57,
+  "severity": "medium",
+  "issue": "The phrase 'Thorsten text-to-speech' is a proper name + feature description; 'Текст-в-речь Торстена' incorrectly implies possession ('Thorsten's TTS') rather than identifying the voice actor. House conventions specify that voice names like 'Thorsten' should remain as-is with minimal adaptation, and 'text-to-speech' should be rendered consistently. The current translation sounds unnatural and misrepresents the original meaning.",
+  "fix": "<p>От прибытия к принадлежности, пять уровней. Голос Торстен (текст в речь).</p>"
+ },
+ "61": {
+  "id": 61,
+  "severity": "medium",
+  "issue": "Misleading translation: 'deepening work, services, and social life' is rendered as if 'work, services, and social life' are being deepened, but the original implies these are thematic domains covered by the next 1000 words.",
+  "fix": "<p>Следующая тысяча слов — углубление в темы работы, услуг и социальной жизни.</p>"
+ },
+ "64": {
+  "id": 64,
+  "severity": "medium",
+  "issue": "Unnatural phrasing: 'близкий к носителю диапазон' is awkward; 'диапазон' doesn't collocate well here in Russian. The intended meaning is lexical range that sounds native-like.",
+  "fix": "<p>Абстрактная, профессиональная лексика и словарный запас на уровне носителя.</p>"
+ },
+ "67": {
+  "id": 67,
+  "severity": "medium",
+  "issue": "Fibonacci SRS should be translated or adapted per house conventions; leaving it fully in English violates the rule to translate explanatory content while keeping only teaching material and brand tokens untranslated.",
+  "fix": "<dt>СИП по Фибоначчи</dt>"
+ },
+ "71": {
+  "id": 71,
+  "severity": "medium",
+  "issue": "The term 'Graduation' in this context refers to a card being marked as mastered. House convention specifies to use 'считается освоенной' for 'graduate (a card)', so the noun form 'Освоение' is an inaccurate rendering of the feature name.",
+  "fix": "<dt>Освоение карточки</dt>"
+ },
+ "78": {
+  "id": 78,
+  "severity": "high",
+  "issue": "The German quote and author name should remain untranslated as they are teaching material, but the surrounding HTML is correct. However, according to house rules, any sentence in a language being taught (here German) must be kept exactly as-is — which it is — so this is actually correct. Wait: the issue is that the Russian page contains a German quote, which is fine, BUT the citation format uses English-style opening double quotation mark „ which is acceptable in Russian typography for foreign quotes. However, the bigger issue: the house convention says 'Any word or sentence in a language BEING TAUGHT [...] — those are teaching material. Translate only the English gloss/explanation around them.' Here, there is no English gloss; the entire content is the German quote + attribution. Since the page is for German, keeping the quote in German is correct. So no error? But wait — the Russian version did not translate anything, which is correct. So #78 is actually fine.",
+  "fix": null
+ },
+ "79": {
+  "id": 79,
+  "severity": "medium",
+  "issue": "The link text 'steam' should be capitalised as 'Steam' per house conventions: 'Brand tokens: [...] Steam'. The Russian version leaves it lowercase 'steam', violating the convention to keep brand tokens exactly as-is.",
+  "fix": "<span class=\"footer-links\">\n    <a href=\"home.html\">главная</a>\n    <span class=\"div\">·</span>\n    <a href=\"manual/\">руководство (бета)</a>\n    <span class=\"div\">·</span>\n    <a href=\"https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website\" target=\"_blank\" rel=\"noopener\">Steam</a>\n  </span>"
+ },
+ "80": {
+  "id": 80,
+  "severity": "low",
+  "issue": "The title 'Немецкий — FlashBoss' is correct per house rules: language names are translated ('German' → 'Немецкий'), and 'FlashBoss' is kept as-is. No error.",
+  "fix": null
+ },
+ "81": {
+  "id": 81,
+  "severity": "medium",
+  "issue": "The phrase 'синтез речи' is a calque and not the standard Russian term for 'text-to-speech'. The industry-standard term is 'преобразование текста в речь' or commonly 'TTS', but more naturally in this context, 'озвучка' or 'синтезатор речи'. However, the bigger issue: the house convention requires that feature names like 'text-to-speech' be rendered appropriately. But more critically, 'Finanzamt' is a German word being taught, so it must remain as-is — which it does — so that's correct. However, 'цветовая маркировка рода' is acceptable. The real defect: the English says 'a thousand words', and Russian says 'тысяча слов' — correct. But note: the English uses 'that grow up as you do', Russian 'которые растут вместе с вами' — acceptable. However, the phrase 'босс-файты' should be 'босс-файт' (singular) to match the house convention 'boss fight -> босс-файт', but the English uses plural 'boss fights'. House convention gives the singular form as the canonical rendering, but in context, plural may be acceptable if consistent. However, the convention says 'boss fight -> босс-файт', implying the base form; plural would be 'босс-файты' by regular Russian morphology, which is what was used. So that's acceptable. The actual error is 'синтез речи' — while understandable, it's not the standard term. But is it wrong enough? Alternatively, check if 'text-to-speech' is a branded feature. However, the main clear error is in #79. For #81, another issue: the English has 'the letter from the Finanzamt' — Russian says 'письма из Finanzamt'. In German, it's 'vom Finanzamt', so 'из' is incorrect; should be 'от Finanzamt'. But 'Finanzamt' is an institution, and in Russian, letters are 'от кого?', so 'от Finanzamt' is correct. 'Из' implies physical origin. So 'из Finanzamt' is a preposition error. This changes meaning slightly — it's a grammatical error in Russian.",
+  "fix": "content=\"FlashBoss Немецкий: тысяча слов, которые растут вместе с вами. От «Ich bin Student» до письма от Finanzamt. Интервальное повторение, босс-файты, цветовая маркировка рода и синтез речи.\""
+ },
+ "_done": true
+}

@@ -1,0 +1,777 @@
+{
+ "0": {
+  "en": "<span class=\"brand\"><a class=\"logo\" href=\"index.html\">FLASHBOSS</a><span class=\"pipe\">|</span><a href=\"home.html\">home</a><span class=\"sep\"> · </span><a href=\"packs.html\">packs</a><span class=\"sep\"> · </span><span class=\"here\">Toki Pona</span></span>",
+  "ru": "<span class=\"brand\"><a class=\"logo\" href=\"index.html\">FLASHBOSS</a><span class=\"pipe\">|</span><a href=\"home.html\">главная</a><span class=\"sep\"> · </span><a href=\"packs.html\">наборы</a><span class=\"sep\"> · </span><span class=\"here\">Toki Pona</span></span>",
+  "kind": "element"
+ },
+ "1": {
+  "en": "<span class=\"links\">\n    <a href=\"manual/index.html\">walkthrough (beta)</a>\n    <a href=\"resources.html\">resources</a>\n    <a class=\"steam\" href=\"https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-toki-pona\">steam</a>\n  </span>",
+  "ru": "<span class=\"links\"><a href=\"manual/index.html\">руководство (beta)</a><a href=\"resources.html\">материалы</a><a class=\"steam\" href=\"https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-toki-pona\">steam</a></span>",
+  "kind": "element"
+ },
+ "2": {
+  "en": "<span class=\"nav-mobile\">\n    <a href=\"home.html\">home</a>\n    <span class=\"r\"><a href=\"resources.html\">resources</a><a href=\"https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-toki-pona\">steam</a></span>\n  </span>",
+  "ru": "<span class=\"nav-mobile\"><a href=\"home.html\">главная</a><span class=\"r\"><a href=\"resources.html\">материалы</a><a href=\"https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-toki-pona\">steam</a></span></span>",
+  "kind": "element"
+ },
+ "3": {
+  "en": "<p class=\"kicker reveal\">Base game · <b>included free</b></p>",
+  "ru": "<p class=\"kicker reveal\">Базовая игра · <b>включено бесплатно</b></p>",
+  "kind": "element"
+ },
+ "4": {
+  "en": "<h1 class=\"reveal\">toki pona<span class=\"cursor\"></span></h1>",
+  "ru": "<h1 class=\"reveal\">toki pona<span class=\"cursor\"></span></h1>",
+  "kind": "element"
+ },
+ "5": {
+  "en": "<p class=\"tagline reveal\">A whole language. Around 140 words.</p>",
+  "ru": "<p class=\"tagline reveal\">Целый язык. Около 140 слов.</p>",
+  "kind": "element"
+ },
+ "6": {
+  "en": "<p class=\"sig reveal\">Listen · Read · Repeat · Rate · Fight</p>",
+  "ru": "<p class=\"sig reveal\">Слушай · Читай · Повторяй · Оценивай · Сражайся</p>",
+  "kind": "element"
+ },
+ "7": {
+  "en": "<p class=\"lede reveal\">You begin with <b class=\"tp\" lang=\"tok\">toki!</b> — hello. Five hundred cards later there is nothing left of the language to meet. <b>Free</b>, inside the base game.</p>",
+  "ru": "<p class=\"lede reveal\">Вы начинаете с <b class=\"tp\" lang=\"tok\">toki!</b> — привет. Через пятьсот карточек от языка не останется ничего, что можно было бы узнать. <b>Бесплатно</b>, в составе базовой игры.</p>",
+  "kind": "element"
+ },
+ "8": {
+  "en": "<div class=\"actions reveal\">\n        <a class=\"btn\" href=\"wordlists.html?lang=Toki%20Pona\">Word Lists</a>\n        <a class=\"btn\" href=\"lessons.html?lang=Toki%20Pona\">Lessons</a>\n        <a class=\"btn\" href=\"https://flashboss-demo.pages.dev/\">Try the demo</a>\n      </div>",
+  "ru": "<div class=\"actions reveal\">\n        <a class=\"btn\" href=\"wordlists.html?lang=Toki%20Pona\">Список слов</a>\n        <a class=\"btn\" href=\"lessons.html?lang=Toki%20Pona\">Уроки</a>\n        <a class=\"btn\" href=\"https://flashboss-demo.pages.dev/\">Попробовать демо</a>\n      </div>",
+  "kind": "element"
+ },
+ "9": {
+  "en": "<span class=\"tag\">Toki Pona core design</span>",
+  "ru": "<span class=\"tag\">Дизайн ядра Toki Pona</span>",
+  "kind": "element"
+ },
+ "10": {
+  "en": "<h2>The whole language, not a slice</h2>",
+  "ru": "<h2>Весь язык, а не кусочек</h2>",
+  "kind": "element"
+ },
+ "11": {
+  "en": "<p class=\"sub tp\" lang=\"tok\">toki pona — the language of good.</p>",
+  "ru": "<p class=\"sub tp\" lang=\"tok\">toki pona — язык добра.</p>",
+  "kind": "element"
+ },
+ "12": {
+  "en": "<p class=\"body\">Toki Pona is a constructed language built as an experiment in minimalism: around 140 words, and a question underneath them — how much can you say with almost nothing? There are no tenses to conjugate, no genders to memorise, no irregular anything. Spelling is phonetic: say what you see, and you have said it right.</p>",
+  "ru": "<p class=\"body\">Toki Pona — это искусственный язык, созданный как эксперимент в минимализме: около 140 слов и вопрос под ними — сколько можно сказать почти ничем? Здесь нет времён для спряжения, нет родов для запоминания, никаких исключений. Написание фонетическое: скажи то, что видишь, и ты сказал правильно.</p>",
+  "kind": "element"
+ },
+ "13": {
+  "en": "<p class=\"body\">What is left is combination. <b class=\"tp\" lang=\"tok\">tomo tawa</b>, a moving structure, is a car. <b class=\"tp\" lang=\"tok\">ilo toki</b>, a talking tool, is a telephone. And because the vocabulary is so small, each word has to stretch: <b class=\"tp\" lang=\"tok\">pona</b> is good, simple, useful and kind at once. You stop reaching for the exact word and start deciding what you actually meant — which is the point of the whole exercise.</p>",
+  "ru": "<p class=\"body\">Остаётся комбинация. <b class=\"tp\" lang=\"tok\">tomo tawa</b>, движущаяся конструкция, — это машина. <b class=\"tp\" lang=\"tok\">ilo toki</b>, инструмент для разговора, — это телефон. А поскольку словарный запас так мал, каждое слово должно растягиваться: <b class=\"tp\" lang=\"tok\">pona</b> — это хорошее, простое, полезное и доброе одновременно. Ты перестаёшь искать точное слово и начинаешь решать, что ты на самом деле имел в виду — в чём и заключается смысл всего упражнения.</p>",
+  "kind": "element"
+ },
+ "14": {
+  "en": "<p class=\"body\">Most languages are too big to finish. This one is not. FlashBoss teaches all of it in <b>500 cards</b> across <b>22 clusters</b> and <b>5 tiers</b>: 178 single-word entries — every content word and every grammar particle the course teaches, the book vocabulary plus the community words that have earned their place beside it — 250 compound phrases, and 72 sentences built from them.</p>",
+  "ru": "<p class=\"body\">Большинство языков слишком велики, чтобы их выучить. Этот — нет. FlashBoss учит всему этому в <b>500 карточках</b> в <b>22 блоках</b> и <b>5 уровнях</b>: 178 записей из одного слова — каждое знаменательное слово и каждую грамматическую частицу, которые преподаёт курс, словарный запас из книги плюс слова сообщества, заслужившие своё место рядом с ним, — 250 составных фраз и 72 предложения, построенных из них.</p>",
+  "kind": "element"
+ },
+ "15": {
+  "en": "<div class=\"t\">Tier 1</div>",
+  "ru": "<div class=\"t\">Уровень 1</div>",
+  "kind": "element"
+ },
+ "16": {
+  "en": "<p>First words, people and pronouns, good and bad, wanting and coming.</p>",
+  "ru": "<p>Первые слова, люди и местоимения, хорошо и плохо, хотеть и приходить.</p>",
+  "kind": "element"
+ },
+ "17": {
+  "en": "<div class=\"t\">Tier 2</div>",
+  "ru": "<div class=\"t\">Уровень 2</div>",
+  "kind": "element"
+ },
+ "18": {
+  "en": "<p>Work and origins, feelings and food, home and tools, giving and playing.</p>",
+  "ru": "<p>Работа и происхождение, чувства и еда, дом и инструменты, давать и играть.</p>",
+  "kind": "element"
+ },
+ "19": {
+  "en": "<div class=\"t\">Tier 3</div>",
+  "ru": "<div class=\"t\">Уровень 3</div>",
+  "kind": "element"
+ },
+ "20": {
+  "en": "<p>Sleep and sunlight, ways and books, numbers and money, sound and community.</p>",
+  "ru": "<p>Сон и солнечный свет, пути и книги, числа и деньги, звук и сообщество.</p>",
+  "kind": "element"
+ },
+ "21": {
+  "en": "<div class=\"t\">Tier 4</div>",
+  "ru": "<div class=\"t\">Уровень 4</div>",
+  "kind": "element"
+ },
+ "22": {
+  "en": "<p>Death and cycles, sky and air, body and darkness, heat and plants, fruit and family.</p>",
+  "ru": "<p>Смерть и циклы, небо и воздух, тело и тьма, тепло и растения, фрукты и семья.</p>",
+  "kind": "element"
+ },
+ "23": {
+  "en": "<div class=\"t\">Tier 5</div>",
+  "ru": "<div class=\"t\">Уровень 5</div>",
+  "kind": "element"
+ },
+ "24": {
+  "en": "<p>Moons and clothing, colours and creatures, birds and beasts — and the bonus words.</p>",
+  "ru": "<p>Луны и одежда, цвета и существа, птицы и звери — и бонусные слова.</p>",
+  "kind": "element"
+ },
+ "25": {
+  "en": "<span class=\"tag\">The whole pack, counted</span>",
+  "ru": "<span class=\"tag\">Весь набор, подсчитано</span>",
+  "kind": "element"
+ },
+ "26": {
+  "en": "<h2>Five tiers, twenty-two clusters</h2>",
+  "ru": "<h2>Пять уровней, двадцать два блока</h2>",
+  "kind": "element"
+ },
+ "27": {
+  "en": "<p class=\"sub\">Each cluster ends in a boss fight. Beat it and those cards leave your daily deck for good.</p>",
+  "ru": "<p class=\"sub\">Каждый блок завершается босс-файтом. Победите его, и эти карточки навсегда исчезнут из вашей ежедневной колоды.</p>",
+  "kind": "element"
+ },
+ "28": {
+  "en": "<th scope=\"col\">Tier</th>",
+  "ru": "<th scope=\"col\">Уровень</th>",
+  "kind": "element"
+ },
+ "29": {
+  "en": "<th scope=\"col\" class=\"n\">Clusters</th>",
+  "ru": "<th scope=\"col\" class=\"n\">Блоки</th>",
+  "kind": "element"
+ },
+ "30": {
+  "en": "<th scope=\"col\" class=\"n\">Cards</th>",
+  "ru": "<th scope=\"col\" class=\"n\">Карточки</th>",
+  "kind": "element"
+ },
+ "31": {
+  "en": "<th scope=\"col\">What you meet</th>",
+  "ru": "<th scope=\"col\">Что вас ждёт</th>",
+  "kind": "element"
+ },
+ "32": {
+  "en": "<td class=\"t\">Tier 1</td>",
+  "ru": "<td class=\"t\">Уровень 1</td>",
+  "kind": "element"
+ },
+ "33": {
+  "en": "<td class=\"w\">The first words, people and pronouns, good and bad, wanting and coming. Seven grammar lessons land here — you are making sentences on day one.</td>",
+  "ru": "<td class=\"w\">Первые слова, люди и местоимения, хорошее и плохое, желание и приход. Семь уроков грамматики попадают сюда — вы составляете предложения уже в первый день.</td>",
+  "kind": "element"
+ },
+ "34": {
+  "en": "<td class=\"t\">Tier 2</td>",
+  "ru": "<td class=\"t\">Уровень 2</td>",
+  "kind": "element"
+ },
+ "35": {
+  "en": "<td class=\"w\">Work and origins, feelings and food, home and tools, giving and playing.</td>",
+  "ru": "<td class=\"w\">Работа и происхождение, чувства и еда, дом и инструменты, дарение и игра.</td>",
+  "kind": "element"
+ },
+ "36": {
+  "en": "<td class=\"t\">Tier 3</td>",
+  "ru": "<td class=\"t\">Уровень 3</td>",
+  "kind": "element"
+ },
+ "37": {
+  "en": "<td class=\"w\">Sleep and sunlight, ways and books, numbers and money, sound and community.</td>",
+  "ru": "<td class=\"w\">Сон и солнечный свет, пути и книги, числа и деньги, звук и сообщество.</td>",
+  "kind": "element"
+ },
+ "38": {
+  "en": "<td class=\"t\">Tier 4</td>",
+  "ru": "<td class=\"t\">Уровень 4</td>",
+  "kind": "element"
+ },
+ "39": {
+  "en": "<td class=\"w\">Death and cycles, sky and air, body and darkness, heat and plants, fruit and family.</td>",
+  "ru": "<td class=\"w\">Смерть и циклы, небо и воздух, тело и тьма, тепло и растения, фрукты и семья.</td>",
+  "kind": "element"
+ },
+ "40": {
+  "en": "<td class=\"t\">Tier 5</td>",
+  "ru": "<td class=\"t\">Уровень 5</td>",
+  "kind": "element"
+ },
+ "41": {
+  "en": "<td class=\"w\">Moons and clothing, colours and creatures, birds and beasts, and two clusters of bonus words from beyond the book.</td>",
+  "ru": "<td class=\"w\">Луны и одежда, цвета и существа, птицы и звери, а также два блока бонусных слов из-за пределов книги.</td>",
+  "kind": "element"
+ },
+ "42": {
+  "en": "<td class=\"t\">Total</td>",
+  "ru": "<td class=\"t\">Итого</td>",
+  "kind": "element"
+ },
+ "43": {
+  "en": "<td class=\"w\">One pack. The complete language.</td>",
+  "ru": "<td class=\"w\">Один набор. Весь язык.</td>",
+  "kind": "element"
+ },
+ "44": {
+  "en": "<span class=\"tag\">Watch it grow up</span>",
+  "ru": "<span class=\"tag\">Смотрите, как он растёт</span>",
+  "kind": "element"
+ },
+ "45": {
+  "en": "<h2>Progressively more challenging</h2>",
+  "ru": "<h2>Постепенно усложняется</h2>",
+  "kind": "element"
+ },
+ "46": {
+  "en": "<p class=\"sub\">The example sentences increase in complexity tier by tier.</p>",
+  "ru": "<p class=\"sub\">Примеры предложений усложняются от уровня к уровню.</p>",
+  "kind": "element"
+ },
+ "47": {
+  "en": "<li class=\"reveal\"><span class=\"ger tp\" lang=\"tok\">mi jan pona sina.</span><span class=\"en\">I am your friend.</span></li>",
+  "ru": "<li class=\"reveal\"><span class=\"ger tp\" lang=\"tok\">mi jan pona sina.</span><span class=\"en\">Я твой друг.</span></li>",
+  "kind": "element"
+ },
+ "48": {
+  "en": "<li class=\"reveal\"><span class=\"ger tp\" lang=\"tok\">sina wile e pona la, sina o pali.</span><span class=\"en\">If you want good things, you should work for them.</span></li>",
+  "ru": "<li class=\"reveal\"><span class=\"ger tp\" lang=\"tok\">sina wile e pona la, sina o pali.</span><span class=\"en\">Если хочешь хорошего, работай ради этого.</span></li>",
+  "kind": "element"
+ },
+ "49": {
+  "en": "<li class=\"reveal\"><span class=\"ger tp\" lang=\"tok\">jan pi sona pona li toki e nasin pona tawa jan lili.</span><span class=\"en\">The wise person teaches the good way to children.</span></li>",
+  "ru": "<li class=\"reveal\"><span class=\"ger tp\" lang=\"tok\">jan pi sona pona li toki e nasin pona tawa jan lili.</span><span class=\"en\">Мудрый человек учит детей правильному пути.</span></li>",
+  "kind": "element"
+ },
+ "50": {
+  "en": "<li class=\"reveal\"><span class=\"ger tp\" lang=\"tok\">jan sona li sona e ni: ona li sona ala e ale.</span><span class=\"en\">A wise person knows this: they don't know everything.</span></li>",
+  "ru": "<li class=\"reveal\"><span class=\"ger tp\" lang=\"tok\">jan sona li sona e ni: ona li sona ala e ale.</span><span class=\"en\">Мудрый человек знает: он не знает всего.</span></li>",
+  "kind": "element"
+ },
+ "51": {
+  "en": "<li class=\"reveal\"><span class=\"ger tp\" lang=\"tok\">telo li tawa anpa lon nasin ale.</span><span class=\"en\">Water always flows downward, whatever the path.</span></li>",
+  "ru": "<li class=\"reveal\"><span class=\"ger tp\" lang=\"tok\">telo li tawa anpa lon nasin ale.</span><span class=\"en\">Вода всегда течёт вниз, по какому бы пути ни шла.</span></li>",
+  "kind": "element"
+ },
+ "52": {
+  "en": "<span class=\"tag\">Build it from parts</span>",
+  "ru": "<span class=\"tag\">Собери из частей</span>",
+  "kind": "element"
+ },
+ "53": {
+  "en": "<h2>Two small words, one new one</h2>",
+  "ru": "<h2>Два маленьких слова, одно новое</h2>",
+  "kind": "element"
+ },
+ "54": {
+  "en": "<p class=\"sub\">There are no genders to colour-code here — so FlashBoss shows you the thing that actually matters. A modifier always follows the word it modifies, and the pair means something neither half does alone. Two hundred and fifty cards in this pack are exactly that.</p>",
+  "ru": "<p class=\"sub\">Здесь нет родов, которые нужно раскрашивать, — поэтому FlashBoss показывает вам то, что действительно важно. Определение всегда стоит после определяемого слова, и пара означает то, что не означает ни одна из половин по отдельности. В этом наборе ровно двести пятьдесят таких карточек.</p>",
+  "kind": "element"
+ },
+ "55": {
+  "en": "<div class=\"legend\">\n        <span><i class=\"lh\"></i> head — what the thing is</span>\n        <span><i class=\"lm\"></i> modifier — what kind of thing it is</span>\n      </div>",
+  "ru": "<div class=\"legend\">\n        <span><i class=\"lh\"></i> голова — чем является вещь</span>\n        <span><i class=\"lm\"></i> модификатор — какая это вещь</span>\n      </div>",
+  "kind": "element"
+ },
+ "56": {
+  "en": "<div class=\"k\"><span class=\"build-word\" lang=\"tok\"><span class=\"h\">tomo</span> <span class=\"m\">tawa</span></span></div>",
+  "ru": "<div class=\"k\"><span class=\"build-word\" lang=\"tok\"><span class=\"h\">tomo</span> <span class=\"m\">tawa</span></span></div>",
+  "kind": "element"
+ },
+ "57": {
+  "en": "<div class=\"gloss\"><b>car</b> — <i>tomo</i> (house, building, indoor space) + <i>tawa</i> (moving): a room that moves</div>",
+  "ru": "<div class=\"gloss\"><b>машина</b> — <i>tomo</i> (дом, здание, помещение) + <i>tawa</i> (движущийся): комната, которая движется</div>",
+  "kind": "element"
+ },
+ "58": {
+  "en": "<div class=\"k\"><span class=\"build-word\" lang=\"tok\"><span class=\"h\">ilo</span> <span class=\"m\">toki</span></span></div>",
+  "ru": "<div class=\"k\"><span class=\"build-word\" lang=\"tok\"><span class=\"h\">ilo</span> <span class=\"m\">toki</span></span></div>",
+  "kind": "element"
+ },
+ "59": {
+  "en": "<div class=\"gloss\"><b>telephone</b> — <i>ilo</i> (tool, device) + <i>toki</i> (to speak): a talking tool</div>",
+  "ru": "<div class=\"gloss\"><b>телефон</b> — <i>ilo</i> (инструмент, устройство) + <i>toki</i> (говорить): говорящий инструмент</div>",
+  "kind": "element"
+ },
+ "60": {
+  "en": "<div class=\"k\"><span class=\"build-word\" lang=\"tok\"><span class=\"h\">ilo</span> <span class=\"m\">nanpa</span></span></div>",
+  "ru": "<div class=\"k\"><span class=\"build-word\" lang=\"tok\"><span class=\"h\">ilo</span> <span class=\"m\">nanpa</span></span></div>",
+  "kind": "element"
+ },
+ "61": {
+  "en": "<div class=\"gloss\"><b>computer</b> — <i>ilo</i> (tool) + <i>nanpa</i> (number): the number machine</div>",
+  "ru": "<div class=\"gloss\"><b>компьютер</b> — <i>ilo</i> (инструмент) + <i>nanpa</i> (число): машина чисел</div>",
+  "kind": "element"
+ },
+ "62": {
+  "en": "<div class=\"k\"><span class=\"build-word\" lang=\"tok\"><span class=\"h\">tomo</span> <span class=\"m\">lipu</span></span></div>",
+  "ru": "<div class=\"k\"><span class=\"build-word\" lang=\"tok\"><span class=\"h\">tomo</span> <span class=\"m\">lipu</span></span></div>",
+  "kind": "element"
+ },
+ "63": {
+  "en": "<div class=\"gloss\"><b>library</b> — <i>tomo</i> (building) + <i>lipu</i> (paper, book, document): the building of documents</div>",
+  "ru": "<div class=\"gloss\"><b>библиотека</b> — <i>tomo</i> (здание) + <i>lipu</i> (бумага, книга, документ): здание документов</div>",
+  "kind": "element"
+ },
+ "64": {
+  "en": "<div class=\"k\"><span class=\"build-word\" lang=\"tok\"><span class=\"h\">telo</span> <span class=\"m\">nasa</span></span></div>",
+  "ru": "<div class=\"k\"><span class=\"build-word\" lang=\"tok\"><span class=\"h\">telo</span> <span class=\"m\">nasa</span></span></div>",
+  "kind": "element"
+ },
+ "65": {
+  "en": "<div class=\"gloss\"><b>alcohol</b> — <i>telo</i> (water, liquid) + <i>nasa</i> (strange, intoxicated): the liquid that makes you strange</div>",
+  "ru": "<div class=\"gloss\"><b>алкоголь</b> — <i>telo</i> (вода, жидкость) + <i>nasa</i> (странный, опьянённый): жидкость, которая делает вас странным</div>",
+  "kind": "element"
+ },
+ "66": {
+  "en": "<div class=\"k\"><span class=\"build-word\" lang=\"tok\"><span class=\"h\">kasi</span> <span class=\"m\">suli</span></span></div>",
+  "ru": "<div class=\"k\"><span class=\"build-word\" lang=\"tok\"><span class=\"h\">kasi</span> <span class=\"m\">suli</span></span></div>",
+  "kind": "element"
+ },
+ "67": {
+  "en": "<div class=\"gloss\"><b>tree</b> — <i>kasi</i> (plant, leaf) + <i>suli</i> (big, tall): the big plant</div>",
+  "ru": "<div class=\"gloss\"><b>дерево</b> — <i>kasi</i> (растение, лист) + <i>suli</i> (большой, высокий): большое растение</div>",
+  "kind": "element"
+ },
+ "68": {
+  "en": "<h2>A handful of words that carry the rest</h2>",
+  "ru": "<h2>Горстка слов, которые несут всё остальное</h2>",
+  "kind": "element"
+ },
+ "69": {
+  "en": "<p class=\"sub\">Four cards from the pack. Tap to flip.</p>",
+  "ru": "<p class=\"sub\">Четыре карточки из набора. Нажмите, чтобы перевернуть.</p>",
+  "kind": "element"
+ },
+ "70": {
+  "en": "<div class=\"art\">the whole worldview</div>",
+  "ru": "<div class=\"art\">целое мировоззрение</div>",
+  "kind": "element"
+ },
+ "71": {
+  "en": "<div class=\"word\" lang=\"tok\">pona</div>",
+  "ru": "<div class=\"word\" lang=\"tok\">pona</div>",
+  "kind": "element"
+ },
+ "72": {
+  "en": "<div class=\"ex tp\" lang=\"tok\">pona!</div>",
+  "ru": "<div class=\"ex tp\" lang=\"tok\">pona!</div>",
+  "kind": "element"
+ },
+ "73": {
+  "en": "<div class=\"trans\">good, simple, useful, kind, friendly; goodness, simplicity. On its own it means &ldquo;great!&rdquo; or &ldquo;thanks!&rdquo; One of the most-used words in the language, and half of its name.</div>",
+  "ru": "<div class=\"trans\">хороший, простой, полезный, добрый, дружелюбный; доброта, простота. Само по себе означает &laquo;отлично!&raquo; или &laquo;спасибо!&raquo; Одно из самых употребляемых слов в языке и половина его названия.</div>",
+  "kind": "element"
+ },
+ "74": {
+  "en": "<div class=\"hint\">tap to flip</div>",
+  "ru": "<div class=\"hint\">нажмите, чтобы перевернуть</div>",
+  "kind": "element"
+ },
+ "75": {
+  "en": "<div class=\"art\">particle</div>",
+  "ru": "<div class=\"art\">частица</div>",
+  "kind": "element"
+ },
+ "76": {
+  "en": "<div class=\"word\" lang=\"tok\">pi</div>",
+  "ru": "<div class=\"word\" lang=\"tok\">pi</div>",
+  "kind": "element"
+ },
+ "77": {
+  "en": "<div class=\"ex tp\" lang=\"tok\">ni li jan pi toki pona.</div>",
+  "ru": "<div class=\"ex tp\" lang=\"tok\">ni li jan pi toki pona.</div>",
+  "kind": "element"
+ },
+ "78": {
+  "en": "<div class=\"trans\">Regroups the words after it into one bunch, so a later describing word sticks to the whole group rather than only the last word — <i>jan pi toki pona</i> is a person <i>of</i> Toki Pona. &ldquo;This is a Toki Pona speaker.&rdquo;</div>",
+  "ru": "<div class=\"trans\">Объединяет следующие за ним слова в одну группу, чтобы последующее описывающее слово относилось ко всей группе, а не только к последнему слову — <i>jan pi toki pona</i> — это человек <i>из</i> токи-поны. &laquo;Это говорит на токи-поне.&raquo;</div>",
+  "kind": "element"
+ },
+ "79": {
+  "en": "<div class=\"word\" lang=\"tok\">la</div>",
+  "ru": "<div class=\"word\" lang=\"tok\">la</div>",
+  "kind": "element"
+ },
+ "80": {
+  "en": "<div class=\"ex tp\" lang=\"tok\">mi la, mi pona.</div>",
+  "ru": "<div class=\"ex tp\" lang=\"tok\">mi la, mi pona.</div>",
+  "kind": "element"
+ },
+ "81": {
+  "en": "<div class=\"trans\">Sets the scene: everything before <i>la</i> is the when, the if, or the as-for of what follows. The language's all-purpose context marker. &ldquo;As for me, I'm fine.&rdquo;</div>",
+  "ru": "<div class=\"trans\">Задаёт сцену: всё, что до <i>la</i>, — это когда, если или что касается последующего. Универсальный маркер контекста языка. &ldquo;Что касается меня, я в порядке.&rdquo;</div>",
+  "kind": "element"
+ },
+ "82": {
+  "en": "<div class=\"art\">community</div>",
+  "ru": "<div class=\"art\">сообщество</div>",
+  "kind": "element"
+ },
+ "83": {
+  "en": "<div class=\"word\" lang=\"tok\">kijetesantakalu</div>",
+  "ru": "<div class=\"word\" lang=\"tok\">kijetesantakalu</div>",
+  "kind": "element"
+ },
+ "84": {
+  "en": "<div class=\"ex tp\" lang=\"tok\">kijetesantakalu li moku e kala.</div>",
+  "ru": "<div class=\"ex tp\" lang=\"tok\">kijetesantakalu li moku e kala.</div>",
+  "kind": "element"
+ },
+ "85": {
+  "en": "<div class=\"trans\">A raccoon, or a related animal in the raccoon and weasel family. Coined as an April Fools' joke in 2009 — the longest word in a language built on shortness. It stuck, and it is now one of the community's best-loved words.</div>",
+  "ru": "<div class=\"trans\">Енот или родственное животное из семейства енотовых и куньих. Придумано как первоапрельская шутка в 2009 году — самое длинное слово в языке, построенном на краткости. Оно прижилось и теперь является одним из самых любимых слов в сообществе.</div>",
+  "kind": "element"
+ },
+ "86": {
+  "en": "<span class=\"tag\">Grammar, on time</span>",
+  "ru": "<span class=\"tag\">Грамматика, о времени</span>",
+  "kind": "element"
+ },
+ "87": {
+  "en": "<h2>Thirteen lessons, each at its own door</h2>",
+  "ru": "<h2>Тринадцать уроков, каждый у своей двери</h2>",
+  "kind": "element"
+ },
+ "88": {
+  "en": "<p class=\"sub\">No grammar chapter to wade through first. Every particle gets a lesson, and that lesson fires at the exact card where the particle first appears — so you read the rule the moment you need it, and never before.</p>",
+  "ru": "<p class=\"sub\">Не нужно сначала продираться через главу грамматики. Каждая частица получает урок, и этот урок срабатывает на той самой карточке, где частица появляется впервые — так что вы читаете правило в тот момент, когда оно нужно, и не раньше.</p>",
+  "kind": "element"
+ },
+ "89": {
+  "en": "<li><span class=\"no\">00</span>Welcome to Toki Pona<span class=\"fire\">fires at <i lang=\"tok\">toki</i> — card one</span></li>",
+  "ru": "<li><span class=\"no\">00</span>Добро пожаловать в Toki Pona<span class=\"fire\">срабатывает на <i lang=\"tok\">toki</i> — карточка один</span></li>",
+  "kind": "element"
+ },
+ "90": {
+  "en": "<li><span class=\"no\">01</span><i lang=\"tok\">mi</i> / <i lang=\"tok\">sina</i> need no &lsquo;to be&rsquo;<span class=\"fire\">fires at <i lang=\"tok\">mi pona</i></span></li>",
+  "ru": "<li><span class=\"no\">01</span><i lang=\"tok\">mi</i> / <i lang=\"tok\">sina</i> не нуждаются в &lsquo;to be&rsquo;<span class=\"fire\">срабатывает на <i lang=\"tok\">mi pona</i></span></li>",
+  "kind": "element"
+ },
+ "91": {
+  "en": "<li><span class=\"no\">02</span><i lang=\"tok\">li</i> — the is/does link<span class=\"fire\">fires at <i lang=\"tok\">jan</i></span></li>",
+  "ru": "<li><span class=\"no\">02</span><i lang=\"tok\">li</i> — связка есть/делает<span class=\"fire\">срабатывает на <i lang=\"tok\">jan</i></span></li>",
+  "kind": "element"
+ },
+ "92": {
+  "en": "<li><span class=\"no\">03</span><i lang=\"tok\">o</i> — commands and calls<span class=\"fire\">fires at <i lang=\"tok\">o</i></span></li>",
+  "ru": "<li><span class=\"no\">03</span><i lang=\"tok\">o</i> — команды и обращения<span class=\"fire\">срабатывает на <i lang=\"tok\">o</i></span></li>",
+  "kind": "element"
+ },
+ "93": {
+  "en": "<li><span class=\"no\">04</span><i lang=\"tok\">pi</i> — grouping modifiers<span class=\"fire\">fires at <i lang=\"tok\">pi</i></span></li>",
+  "ru": "<li><span class=\"no\">04</span><i lang=\"tok\">pi</i> — группировка модификаторов<span class=\"fire\">срабатывает на <i lang=\"tok\">pi</i></span></li>",
+  "kind": "element"
+ },
+ "94": {
+  "en": "<li><span class=\"no\">05</span>Modifiers come after<span class=\"fire\">fires at <i lang=\"tok\">jan pona</i></span></li>",
+  "ru": "<li><span class=\"no\">05</span>Модификаторы ставятся после<span class=\"fire\">срабатывает на <i lang=\"tok\">jan pona</i></span></li>",
+  "kind": "element"
+ },
+ "95": {
+  "en": "<li><span class=\"no\">06</span>Asking questions<span class=\"fire\">fires at <i lang=\"tok\">seme</i></span></li>",
+  "ru": "<li><span class=\"no\">06</span>Задаём вопросы<span class=\"fire\">срабатывает на <i lang=\"tok\">seme</i></span></li>",
+  "kind": "element"
+ },
+ "96": {
+  "en": "<li><span class=\"no\">07</span>Preverbs tint the verb<span class=\"fire\">fires at <i lang=\"tok\">wile</i></span></li>",
+  "ru": "<li><span class=\"no\">07</span>Приставки окрашивают глагол<span class=\"fire\">срабатывает на <i lang=\"tok\">wile</i></span></li>",
+  "kind": "element"
+ },
+ "97": {
+  "en": "<li><span class=\"no\">08</span><i lang=\"tok\">la</i> — setting the scene<span class=\"fire\">fires at <i lang=\"tok\">ken la</i></span></li>",
+  "ru": "<li><span class=\"no\">08</span><i lang=\"tok\">la</i> — задаём сцену<span class=\"fire\">срабатывает на <i lang=\"tok\">ken la</i></span></li>",
+  "kind": "element"
+ },
+ "98": {
+  "en": "<li><span class=\"no\">09</span><i lang=\"tok\">e</i> — marking the object<span class=\"fire\">fires in tier 2</span></li>",
+  "ru": "<li><span class=\"no\">09</span><i lang=\"tok\">e</i> — обозначаем объект<span class=\"fire\">срабатывает на уровне 2</span></li>",
+  "kind": "element"
+ },
+ "99": {
+  "en": "<li><span class=\"no\">10</span>Numbers, few colours<span class=\"fire\">fires at <i lang=\"tok\">wan</i></span></li>",
+  "ru": "<li><span class=\"no\">10</span>Числа, несколько цветов<span class=\"fire\">срабатывает на <i lang=\"tok\">wan</i></span></li>",
+  "kind": "element"
+ },
+ "100": {
+  "en": "<li><span class=\"no\">11</span>Six small prepositions<span class=\"fire\">fires at <i lang=\"tok\">poka</i></span></li>",
+  "ru": "<li><span class=\"no\">11</span>Шесть маленьких предлогов<span class=\"fire\">срабатывает на <i lang=\"tok\">poka</i></span></li>",
+  "kind": "element"
+ },
+ "101": {
+  "en": "<li><span class=\"no\">12</span><i lang=\"tok\">nasin</i>, <i lang=\"tok\">pu</i> and <i lang=\"tok\">ku</i><span class=\"fire\">fires at <i lang=\"tok\">ku</i></span></li>",
+  "ru": "<li><span class=\"no\">12</span><i lang=\"tok\">nasin</i>, <i lang=\"tok\">pu</i> и <i lang=\"tok\">ku</i><span class=\"fire\">срабатывает на <i lang=\"tok\">ku</i></span></li>",
+  "kind": "element"
+ },
+ "102": {
+  "en": "<span class=\"tag\">Four languages in</span>",
+  "ru": "<span class=\"tag\">Четыре языка в</span>",
+  "kind": "element"
+ },
+ "103": {
+  "en": "<h2>You don't have to come through English</h2>",
+  "ru": "<h2>Вам не нужно проходить через английский</h2>",
+  "kind": "element"
+ },
+ "104": {
+  "en": "<p class=\"sub\">Every card carries its translation, its example translation and its notes in all four languages — and so does every one of the 13 lesson pages, and the interface around them. Set your language once, and the whole pack follows.</p>",
+  "ru": "<p class=\"sub\">Каждая карточка содержит перевод, пример перевода и примечания на всех четырёх языках — и то же самое делает каждая из 13 страниц уроков, и интерфейс вокруг них. Установите язык один раз, и весь набор следует этому.</p>",
+  "kind": "element"
+ },
+ "105": {
+  "en": "<div class=\"w\" lang=\"tok\">toki</div>",
+  "ru": "<div class=\"w\" lang=\"tok\">toki</div>",
+  "kind": "element"
+ },
+ "106": {
+  "en": "<div class=\"ex\" lang=\"tok\">toki!</div>",
+  "ru": "<div class=\"ex\" lang=\"tok\">toki!</div>",
+  "kind": "element"
+ },
+ "107": {
+  "en": "<div class=\"lab\">English</div>",
+  "ru": "<div class=\"lab\">Английский</div>",
+  "kind": "element"
+ },
+ "108": {
+  "en": "<div class=\"val\">to speak, talk, communicate, think; language, a conversation</div>",
+  "ru": "<div class=\"val\">говорить, разговаривать, общаться, думать; язык, разговор</div>",
+  "kind": "element"
+ },
+ "109": {
+  "en": "<div class=\"lab\">Deutsch</div>",
+  "ru": "<div class=\"lab\">Немецкий</div>",
+  "kind": "element"
+ },
+ "110": {
+  "en": "<div class=\"val\" lang=\"de\">sprechen, reden, denken; Sprache, Gespräch</div>",
+  "ru": "<div class=\"val\" lang=\"de\">sprechen, reden, denken; Sprache, Gespräch</div>",
+  "kind": "element"
+ },
+ "111": {
+  "en": "<div class=\"lab\">Español</div>",
+  "ru": "<div class=\"lab\">Испанский</div>",
+  "kind": "element"
+ },
+ "112": {
+  "en": "<div class=\"val\" lang=\"es\">hablar, conversar, comunicar, pensar; lengua, una conversación</div>",
+  "ru": "<div class=\"val\" lang=\"es\">hablar, conversar, comunicar, pensar; lengua, una conversación</div>",
+  "kind": "element"
+ },
+ "113": {
+  "en": "<h2>It costs nothing</h2>",
+  "ru": "<h2>Ничего не стоит</h2>",
+  "kind": "element"
+ },
+ "114": {
+  "en": "<p class=\"sub\">There is no Toki Pona DLC. There is nothing to add to a basket.</p>",
+  "ru": "<p class=\"sub\">Нет DLC для Toki Pona. Нечего добавлять в корзину.</p>",
+  "kind": "element"
+ },
+ "115": {
+  "en": "<span class=\"badge\">Included free</span>",
+  "ru": "<span class=\"badge\">Включено бесплатно</span>",
+  "kind": "element"
+ },
+ "116": {
+  "en": "<p>Toki Pona ships <b>inside the base game</b>, alongside the other free packs. Install FlashBoss, choose it from the language list, and start. It has no prerequisite pack either — run it beside your main language, or on its own.</p>",
+  "ru": "<p>Toki Pona поставляется <b>внутри базовой игры</b>, вместе с другими бесплатными наборами. Установите FlashBoss, выберите его из списка языков и начинайте. У него также нет предварительного набора — используйте его вместе с основным языком или самостоятельно.</p>",
+  "kind": "element"
+ },
+ "117": {
+  "en": "<span class=\"tag\">How it sticks</span>",
+  "ru": "<span class=\"tag\">Как это запоминается</span>",
+  "kind": "element"
+ },
+ "118": {
+  "en": "<h2>Flashcards as an integrated system</h2>",
+  "ru": "<h2>Карточки как интегрированная система</h2>",
+  "kind": "element"
+ },
+ "119": {
+  "en": "<dt>Fibonacci SRS</dt>",
+  "ru": "<dt>SRS Фибоначчи</dt>",
+  "kind": "element"
+ },
+ "120": {
+  "en": "<dd>Rate each card 0–5. The better you know a word, the longer before it returns — spaced repetition on Fibonacci intervals.</dd>",
+  "ru": "<dd>Оценивайте каждую карточку от 0 до 5. Чем лучше вы знаете слово, тем дольше оно не возвращается — интервальное повторение на основе чисел Фибоначчи.</dd>",
+  "kind": "element"
+ },
+ "121": {
+  "en": "<dt>Boss fights</dt>",
+  "ru": "<dt>Босс-файты</dt>",
+  "kind": "element"
+ },
+ "122": {
+  "en": "<dd>Each of the 22 clusters is gated by a duel you can't win without confronting and overcoming your most difficult words.</dd>",
+  "ru": "<dd>Каждый из 22 блоков закрыт дуэлью, которую невозможно выиграть, не столкнувшись и не преодолев самые сложные для вас слова.</dd>",
+  "kind": "element"
+ },
+ "123": {
+  "en": "<dt>Graduation</dt>",
+  "ru": "<dt>Освоение</dt>",
+  "kind": "element"
+ },
+ "124": {
+  "en": "<dd>Beat a cluster and its cards leave your daily deck for good. The deck gets smaller as you learn.</dd>",
+  "ru": "<dd>Победите блок — и его карточки навсегда покинут вашу ежедневную колоду. Колода становится меньше по мере обучения.</dd>",
+  "kind": "element"
+ },
+ "125": {
+  "en": "<dt>Compounding</dt>",
+  "ru": "<dt>Словосложение</dt>",
+  "kind": "element"
+ },
+ "126": {
+  "en": "<dd>Half the pack is compounds. Every content word you learn multiplies, because the next 250 cards are built out of words you already have.</dd>",
+  "ru": "<dd>Половина набора — составные слова. Каждое знаменательное слово, которое вы учите, умножается, потому что следующие 250 карточек построены из уже знакомых вам слов.</dd>",
+  "kind": "element"
+ },
+ "127": {
+  "en": "<dt>Lessons</dt>",
+  "ru": "<dt>Уроки</dt>",
+  "kind": "element"
+ },
+ "128": {
+  "en": "<dd>Thirteen reference lessons, each triggered at the card where its particle first appears.</dd>",
+  "ru": "<dd>Тринадцать справочных уроков, каждый из которых запускается на карточке, где впервые появляется соответствующая частица.</dd>",
+  "kind": "element"
+ },
+ "129": {
+  "en": "<dt>Text-to-speech</dt>",
+  "ru": "<dt>Синтез речи</dt>",
+  "kind": "element"
+ },
+ "130": {
+  "en": "<dd>Cards can be heard. Toki Pona is spoken by the game's neural text-to-speech engine, piper1-gpl, using the pack's native Esperanto voice — chosen because that voice was trained on exactly the phonemes Toki Pona uses, so all fourteen of its sounds come out as themselves, with the penultimate stress the language expects. It is synthesised speech, not a recording of a speaker.</dd>",
+  "ru": "<dd>Карточки можно прослушивать. Токипона озвучивается нейросетевым движком синтеза речи игры, piper1-gpl, с использованием родного для набора голоса эсперанто — выбранного потому, что этот голос был обучен именно на тех фонемах, которые использует токипона, поэтому все четырнадцать звуков звучат как надо, с предпоследним ударением, ожидаемым в языке. Это синтезированная речь, а не запись диктора.</dd>",
+  "kind": "element"
+ },
+ "131": {
+  "en": "<span class=\"tag\">Questions</span>",
+  "ru": "<span class=\"tag\">Вопросы</span>",
+  "kind": "element"
+ },
+ "132": {
+  "en": "<h2>Before you start</h2>",
+  "ru": "<h2>Перед началом</h2>",
+  "kind": "element"
+ },
+ "133": {
+  "en": "<p class=\"q\">Is Toki Pona really free?</p>",
+  "ru": "<p class=\"q\">Токипона действительно бесплатен?</p>",
+  "kind": "element"
+ },
+ "134": {
+  "en": "<p class=\"a\">Yes. It is one of the packs inside the base game — there is no Toki Pona DLC to buy, and no upgrade behind the later tiers. All 500 cards and all 13 lessons are there from the first launch.</p>",
+  "ru": "<p class=\"a\">Да. Это один из наборов внутри базовой игры — не нужно покупать DLC для токипона, и нет апгрейда за последними уровнями. Все 500 карточек и все 13 уроков доступны с первого запуска.</p>",
+  "kind": "element"
+ },
+ "135": {
+  "en": "<p class=\"q\">What exactly is in the pack?</p>",
+  "ru": "<p class=\"q\">Что именно входит в набор?</p>",
+  "kind": "element"
+ },
+ "136": {
+  "en": "<p class=\"a\">500 cards over 22 clusters and 5 tiers: 178 single-word entries — every content word and every grammar particle the course teaches — plus 250 compound phrases and 72 whole sentences. You can read the entire word list before you start, on the <a href=\"wordlists.html?lang=Toki%20Pona\">word lists page</a>.</p>",
+  "ru": "<p class=\"a\">500 карточек в 22 блоках и 5 уровнях: 178 однословных записей — каждое смысловое слово и каждую грамматическую частицу, которые преподаёт курс — плюс 250 составных фраз и 72 целых предложения. Вы можете прочитать весь список слов перед началом на <a href=\"wordlists.html?lang=Toki%20Pona\">странице списков слов</a>.</p>",
+  "kind": "element"
+ },
+ "137": {
+  "en": "<p class=\"q\">Does it cover the community vocabulary as well as the book?</p>",
+  "ru": "<p class=\"q\">Охватывает ли он словарь сообщества наряду со словарём книги?</p>",
+  "kind": "element"
+ },
+ "138": {
+  "en": "<p class=\"a\">It does. The spine is the book vocabulary, and tier 5 carries the later words that stuck — <i lang=\"tok\">kijetesantakalu</i>, <i lang=\"tok\">tonsi</i>, <i lang=\"tok\">misikeke</i> — before closing on two clusters of bonus vocabulary from further out still: <i lang=\"tok\">majuna</i> (old), <i lang=\"tok\">linluwi</i> (a network), <i lang=\"tok\">isipin</i> (to ponder), <i lang=\"tok\">nimisin</i> (a new or joke word). The final lesson explains the difference between <i lang=\"tok\">pu</i> and <i lang=\"tok\">ku</i>, so you always know which room you are standing in.</p>",
+  "ru": "<p class=\"a\">Да, охватывает. Основу составляет словарь книги, а уровень 5 содержит более поздние слова, которые прижились — <i lang=\"tok\">kijetesantakalu</i>, <i lang=\"tok\">tonsi</i>, <i lang=\"tok\">misikeke</i> — прежде чем завершиться двумя блоками бонусного словаря из ещё более далёких мест: <i lang=\"tok\">majuna</i> (старый), <i lang=\"tok\">linluwi</i> (сеть), <i lang=\"tok\">isipin</i> (размышлять), <i lang=\"tok\">nimisin</i> (новое или шуточное слово). Последний урок объясняет разницу между <i lang=\"tok\">pu</i> и <i lang=\"tok\">ku</i>, так что вы всегда знаете, в какой комнате находитесь.</p>",
+  "kind": "element"
+ },
+ "139": {
+  "en": "<p class=\"q\">Do I need to know English to use it?</p>",
+  "ru": "<p class=\"q\">Нужно ли вам знать английский, чтобы им пользоваться?</p>",
+  "kind": "element"
+ },
+ "140": {
+  "en": "<p class=\"a\">No. Cards, lessons and the interface all run in English, German, Japanese and Spanish. Every one of the 500 cards carries its translation, its example translation and its notes in all four, and all 13 lessons exist in all four.</p>",
+  "ru": "<p class=\"a\">Нет. Карточки, уроки и интерфейс работают на английском, немецком, японском и испанском языках. Каждая из 500 карточек содержит перевод, перевод примера и заметки на всех четырёх языках, и все 13 уроков существуют на всех четырёх.</p>",
+  "kind": "element"
+ },
+ "141": {
+  "en": "<p class=\"q\">Where does the grammar come in?</p>",
+  "ru": "<p class=\"q\">Где вступает в игру грамматика?</p>",
+  "kind": "element"
+ },
+ "142": {
+  "en": "<p class=\"a\">At the door. There are 13 lessons and each one fires at the exact card where its particle first turns up — <i lang=\"tok\">li</i> arrives with <i lang=\"tok\">jan</i>, <i lang=\"tok\">pi</i> with <i lang=\"tok\">pi</i>, <i lang=\"tok\">la</i> with <i lang=\"tok\">ken la</i>. Eight of them land in tier 1. You can also read them all in advance on the <a href=\"lessons.html?lang=Toki%20Pona\">lessons page</a>.</p>",
+  "ru": "<p class=\"a\">С самого порога. Всего 13 уроков, и каждый из них срабатывает на той самой карточке, где впервые появляется его частица — <i lang=\"tok\">li</i> появляется вместе с <i lang=\"tok\">jan</i>, <i lang=\"tok\">pi</i> вместе с <i lang=\"tok\">pi</i>, <i lang=\"tok\">la</i> вместе с <i lang=\"tok\">ken la</i>. Восемь из них попадают на уровень 1. Вы также можете прочитать их все заранее на <a href=\"lessons.html?lang=Toki%20Pona\">странице уроков</a>.</p>",
+  "kind": "element"
+ },
+ "143": {
+  "en": "<p class=\"q\">Can I hear it?</p>",
+  "ru": "<p class=\"q\">Можно ли его услышать?</p>",
+  "kind": "element"
+ },
+ "144": {
+  "en": "<p class=\"a\">Yes — through text-to-speech, not a recorded voice. Toki Pona has fourteen sounds and the pack speaks them through FlashBoss's native Esperanto voice, whose phoneme set covers all fourteen exactly, with the penultimate stress the language expects.</p>",
+  "ru": "<p class=\"a\">Да — через синтез речи, а не записанный голос. В Toki Pona четырнадцать звуков, и набор воспроизводит их через родной голос Эсперанто FlashBoss, чей набор фонем покрывает все четырнадцать точно, с предпоследним ударением, которое ожидает язык.</p>",
+  "kind": "element"
+ },
+ "145": {
+  "en": "<p class=\"q\">Do I have to finish another pack first?</p>",
+  "ru": "<p class=\"q\">Нужно ли сначала пройти другой набор?</p>",
+  "kind": "element"
+ },
+ "146": {
+  "en": "<p class=\"a\">No. Toki Pona has no prerequisite. It is a standalone course, and small enough to sit alongside whatever you are already learning without taking the room.</p>",
+  "ru": "<p class=\"a\">Нет. У Toki Pona нет предварительных требований. Это самостоятельный курс, и он достаточно мал, чтобы идти рядом с тем, что вы уже изучаете, не занимая много места.</p>",
+  "kind": "element"
+ },
+ "147": {
+  "en": "<h2>Take the whole language</h2>",
+  "ru": "<h2>Освойте весь язык</h2>",
+  "kind": "element"
+ },
+ "148": {
+  "en": "<p>Toki Pona is included in the base game. Nothing to buy, nothing to unlock.</p>",
+  "ru": "<p>Toki Pona включён в базовую игру. Ничего покупать, ничего открывать.</p>",
+  "kind": "element"
+ },
+ "149": {
+  "en": "<a class=\"btn hot\" href=\"https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-toki-pona\">Get FlashBoss on Steam &rarr;</a>",
+  "ru": "<a class=\"btn hot\" href=\"https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-toki-pona\">Купить FlashBoss в Steam &rarr;</a>",
+  "kind": "element"
+ },
+ "150": {
+  "en": "<p class=\"epi\" lang=\"tok\">&ldquo;jan sona li sona e ni: ona li sona ala e ale.&rdquo;<span class=\"tr\" lang=\"en\">A wise person knows this: they don't know everything.</span></p>",
+  "ru": "<p class=\"epi\" lang=\"tok\">&ldquo;jan sona li sona e ni: ona li sona ala e ale.&rdquo;<span class=\"tr\" lang=\"en\">Мудрый человек знает это: он не знает всего.</span></p>",
+  "kind": "element"
+ },
+ "151": {
+  "en": "<span class=\"footer-links\">\n    <a href=\"home.html\">home</a>\n    <span class=\"div\">·</span>\n    <a href=\"manual/\">walkthrough (beta)</a>\n    <span class=\"div\">·</span>\n    <a href=\"https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-toki-pona\">steam</a>\n  </span>",
+  "ru": "<span class=\"footer-links\">\n    <a href=\"home.html\">главная</a>\n    <span class=\"div\">·</span>\n    <a href=\"manual/\">руководство (бета)</a>\n    <span class=\"div\">·</span>\n    <a href=\"https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-toki-pona\">steam</a>\n  </span>",
+  "kind": "element"
+ },
+ "152": {
+  "en": "<title>Toki Pona — FlashBoss</title>",
+  "ru": "<title>Toki Pona — FlashBoss</title>",
+  "kind": "title"
+ },
+ "153": {
+  "en": "content=\"FlashBoss Toki Pona: a complete language of around 140 words — free inside the base game. 500 cards across 22 clusters and 5 tiers, 13 grammar lessons, cards and lessons in English, German, Japanese and Spanish. Spaced repetition, boss fights, and text-to-speech.\"",
+  "ru": "content=\"FlashBoss Toki Pona: полный язык из примерно 140 слов — бесплатно в составе базовой игры. 500 карточек в 22 блоках и 5 уровнях, 13 грамматических уроков, карточки и уроки на английском, немецком, японском и испанском. Интервальное повторение, босс-файты и преобразование текста в речь.\"",
+  "kind": "meta"
+ },
+ "154": {
+  "en": "alt=\"A FlashBoss Toki Pona flashcard on the terminal screen: the target word, an example sentence with its translation, and the notes beneath.\"",
+  "ru": "alt=\"Карточка FlashBoss Toki Pona на экране терминала: целевое слово, пример предложения с переводом и заметки внизу.\"",
+  "kind": "attr"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "17": {
+  "id": 17,
+  "severity": "medium",
+  "issue": "The English says 'Pack and Set menus', but the Russian translates 'Set' as «Раздел», which is not a house term. The correct house term for 'set' in this context is 'блок' (cluster), but more importantly, the UI labels should match the actual in-app terminology. However, based on provided house conventions, 'set' isn't explicitly defined—but 'cluster' is consistently rendered as 'блок'. Yet the bigger issue: the English uses 'Pack and Set', implying two distinct UI menu names. The Russian renders them as «Набор» и «Раздел», but 'Set' in FlashBoss UI actually refers to 'Cluster' (i.e., блок), not 'Раздел'. Thus 'Раздел' is an incorrect and non-standard term.",
+  "fix": "<li><b>Выберите язык и блок</b> в меню «Набор» и «Блок».</li>"
+ },
+ "18": {
+  "id": 18,
+  "severity": "medium",
+  "issue": "The Russian uses 'Shift+клик' and '&#8984;+клик', but house conventions require key names to be kept exactly as in English (e.g., Shift-click, not Shift+клик). Also, the symbol &#8984; (U+2318, PLACE OF INTEREST SIGN) is used in English for Mac Command key; it must be preserved as-is, not replaced with a plus sign.",
+  "fix": "<li><b>Выберите блоки:</b> откройте <i>Блоки</i>, щёлкните по одному, затем <b>Shift-click</b> по другому — возьмётся весь диапазон (Ctrl / &#8984;-click добавляет по одному). Нажмите <b>OK</b> или <b>Enter</b> либо щёлкните мимо, чтобы закрыть.</li>"
+ },
+ "19": {
+  "id": 19,
+  "severity": "low",
+  "issue": "The phrase 'на печать идут карточки только со словами' slightly misrepresents 'prints word-only cards' by implying an ongoing process ('идут') rather than a direct result. More precise: 'печатаются карточки только со словами'. However, this is borderline. But more importantly, the structure drops the parallelism of 'on shows...; off hides...' — acceptable stylistically, but the bigger issue is missing the em dash before 'and prints...', which in English links the consequence of being off. The Russian uses a comma, weakening the causal link.",
+  "fix": "<li>Переключатель <b>«Переводы»</b>: включён — показывает слово и перевод; выключен — скрывает их, чтобы вы могли проверить себя, — и печатает карточки только со словами.</li>"
+ },
+ "23": {
+  "id": 23,
+  "severity": "high",
+  "issue": "The English fragment '>share</button>' appears to be part of a larger tag (likely <button>share</button>), but the leading '>' suggests malformed HTML. However, assuming the '>' is a typo in the prompt and the intended unit is just 'share</button>', then 'поделиться' violates the house rule: brand/interface tokens like button labels that are part of the product UI should follow house style. But 'share' here is generic. However, the real defect is that the English has no angle bracket before 'share', yet the Russian adds none either — but the bigger issue is that if this is meant to be innerHTML of a button, it should just be 'share' -> 'поделиться'. Yet the presence of '>' suggests possible HTML corruption. However, given the data, the main problem is that the English says 'share' (lowercase), and the Russian correctly translates it, BUT the house convention says: 'KEEP EXACTLY AS-IS... inline markup'. There is no markup here, so translation is allowed. However, the actual defect is that the English unit is malformed ('>share</button>') — but since we're reviewing the RU against EN as given, and the RU mirrors the structure (just translating 'share'), it's acceptable. Wait — re-evaluating: the English unit is likely a mistake, but the Russian renders only the text content. However, the instruction says: 'KEEP EXACTLY AS-IS... HTML tags...'. Here, the English includes a stray '>', which is not valid HTML. But the Russian also includes '>', so it preserves the (erroneous) structure. That’s correct per instructions. So actually, #23 may be fine. But wait: the English is '>share</button>' — this implies the full tag might be something like '<button ...>share</button>', and the '>' is a copy-paste error. Since the task is to review the given pair, and the Russian has '>поделиться</button>', it matches the English structure. So no defect. Therefore, #23 is OK."
+ },
+ "38": {
+  "id": 38,
+  "severity": "medium",
+  "issue": "The English source uses 'Loading ${lang} ${set}…' while the Russian adds a colon after 'Загружаем', which is not present in the original and changes punctuation rhythm.",
+  "fix": "view.innerHTML=`<div class=\"state\"><span class=\"ic\">◴</span>Загружаем ${esc(ruName(lang))} ${esc(ruName(set))}…</div>`;"
+ },
+ "39": {
+  "id": 39,
+  "severity": "medium",
+  "issue": "The English says 'isn't published yet — check back as packs ship.' The Russian translates this as 'ещё не опубликован — загляните позже, наборы выходят постепенно.' The phrase 'наборы выходят постепенно' adds an interpretation ('gradually') not present in the original, which only states that packs will ship (without specifying manner).",
+  "fix": "view.innerHTML=`<div class=\"state\"><span class=\"ic\">◈</span>${esc(ruName(lang))} ${esc(ruName(set))} ещё не опубликован — загляните позже, когда выйдут наборы.</div>`;"
+ },
+ "45": {
+  "id": 45,
+  "severity": "high",
+  "issue": "The English source uses 'Pack' and 'Set' as two language variants of the same term, but the Russian translation renders them as 'Набор' and 'Раздел', which are not equivalent. According to house conventions, 'pack' must always be translated as 'набор'. Using 'Раздел' for 'Set' introduces a meaning change and violates terminology consistency.",
+  "fix": "  setLbl.textContent = eng?'Набор':'Набор';\n  setSel.setAttribute('aria-label', eng?'Набор':'Набор');"
+ },
+ "_done": true
+}

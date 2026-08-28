@@ -1,0 +1,213 @@
+{
+ "3": {
+  "id": 3,
+  "severity": "medium",
+  "issue": "Upon rechecking: 'The Roots Series' is not a registered pack name, but 'Latin Roots' is. The phrase 'The Roots Series · Latin' mixes a generic descriptor with a language name. Per house rules, 'Latin' here refers to the language being taught, but since it's part of a branded series title and adjacent to a registered pack name, it may be considered branding. However, the English uses 'Latin' not as teaching material but as a label. House rules say: 'KEEP EXACTLY AS-IS' only for registered pack names. 'The Roots Series' is not listed, so it should be translated. 'Latin' in this context is not a word being taught but a proper noun modifier. But house rules also say: 'Any word or sentence in a language BEING TAUGHT [...] — those are teaching material. Translate only the English gloss/explanation around them.' Here, 'Latin' is not presented as teaching content but as part of a title. However, since 'Latin Roots' is a registered pack name, and this is 'The Roots Series · Latin', it's likely shorthand for 'Latin Roots'. To stay safe, per precedent, such labels should be translated. 'Latin' as a language name in metadata should be translated to 'латинские' (agreeing with 'корни'). So original issue stands.",
+  "fix": "<p class=\"kicker reveal\">Серия корней · <b>Латинские</b></p>"
+ },
+ "4": {
+  "id": 4,
+  "severity": "high",
+  "issue": "'Latin Roots' is a registered pack name and must remain as-is per house conventions. However, on standalone headings like this, the convention requires using the exact English name only if it's a proper noun of a pack. Since 'Latin Roots' is a registered pack name, it should NOT be translated — but the current Russian version leaves it in English, which is correct. Wait: checking house rules: 'Registered pack names: ... Latin Roots' — so it must be kept exactly as-is. Therefore, no error here. Re-evaluate.",
+  "fix": null
+ },
+ "7": {
+  "id": 7,
+  "severity": "medium",
+  "issue": "The Russian translation renders the English gloss \"not able to be made ready again\" as \"не может быть снова сделан готовым\", which is unnatural and awkward. The phrase should convey the meaning more idiomatically in Russian while preserving the explanatory intent.",
+  "fix": "<p class=\"lede reveal\">Никто не строил свой большой словарный запас слово за словом. Они научились читать части. Встретьте <b class=\"lat\">irreparable</b> и вы сможете разобрать его на части с ходу — <span class=\"pre\">ir</span>·<span class=\"pre\">re</span>·<span class=\"rt\">par</span>·<span class=\"suf\">able</span>, «нельзя снова сделать пригодным» — и прочитать его значение прямо с поверхности.</p>"
+ },
+ "10": {
+  "id": 10,
+  "severity": "low",
+  "issue": "«Сумма его частей» is a literal calque of 'The sum of its parts' but sounds unnatural in Russian in this context. A more idiomatic rendering would better match the rhetorical tone.",
+  "fix": "<h2>Целое из частей</h2>"
+ },
+ "12": {
+  "id": 12,
+  "severity": "medium",
+  "issue": "The English words 'Prepare, repair, ...' should not be left in English; they are part of the teaching material and must remain as-is per house rules. However, the Russian translation incorrectly leaves them untranslated but also fails to mark them as language-being-taught (which they are — English examples). According to conventions, words in the language being taught (here, English) must be kept exactly as-is. So this is actually correct. BUT: the phrase 'сдастся без словаря' is a calque and unnatural. The English says 'surrenders its meaning without a dictionary' — the Russian 'сдастся' implies the word itself surrenders, which is odd. Better: 'раскроет своё значение без словаря'. However, this is style. Wait — another issue: 'дюжина слов' is acceptable, but the original says 'a dozen words open at once' — 'откроется дюжина слов' is passive and slightly off. But main defect: 'emperor и rampart' — these are English words being cited as examples, so per house rules they must remain in English, which they do. So that's fine. However, the gloss for the root: 'готовить, уравнивать' — the English gives two senses: 'to make ready, to make equal'. 'Готовить' is okay for 'make ready', but 'уравнивать' means 'to equalize', which is close but not exact for 'make equal'. However, this is acceptable approximation. No high defect. But wait: the phrase 'сразу откроется дюжина слов' — 'open' here is metaphorical ('become accessible'), but 'откроется' is reflexive and sounds like the words open by themselves. The English uses active voice implied: 'you gain access'. But again, style. However, there is a real defect: the English says 'a dozen words open at once' — meaning you immediately understand them. The Russian 'откроется дюжина слов' is grammatically singular subject with plural predicate? No, 'дюжина' is singular, so 'откроется' is correct. So maybe no defect. BUT: re-read house rule: 'Any word or sentence in a language BEING TAUGHT [...] — those are teaching material. Translate only the English gloss/explanation around them.' Here, the list 'Prepare, repair...' is English vocabulary being taught, so must remain in English — which it does. So that’s correct. However, the Russian translation says 'и даже emperor и rampart происходят от этого корня' — but 'emperor' does NOT derive from 'par'. This is a factual error in the source? But we are not to judge source accuracy, only translation fidelity. The English claims it, so Russian must too. So no issue. Final verdict: the phrase 'сдастся без словаря' is unnatural and misleading — words don't 'surrender' in Russian idiomatically. This is a medium defect in naturalness and meaning.",
+  "fix": "<p class=\"body\">Выучите один корень — <b>par</b>: готовить, уравнивать — и сразу откроется дюжина слов. Prepare, repair, separate, compare, parity, peer, disparage, parade — и даже emperor и rampart происходят от этого корня. Следующее слово с <span class=\"lat\">par-</span>, которое вы встретите, раскроет своё значение без словаря.</p>"
+ },
+ "13": {
+  "id": 13,
+  "severity": "high",
+  "issue": "The words 'nominal', 'token', 'renown', 'fame', 'thinking', 'cogitating' are English words being taught or contrasted as part of English vocabulary. Per house rules, any word in the language being taught (English) must remain in English. The Russian translation correctly leaves them in English with <b> tags — that’s good. BUT: the phrase 'словарный запас серьёзного английского' is incorrect. The English says 'the vocabulary of serious English', meaning advanced or formal English register. 'Серьёзного английского' sounds like 'serious English' as if English were a person. Better: 'продвинутого английского' or 'формального английского'. However, more critically: 'язык дискуссий' — the English says 'language of argument', and 'argument' here means reasoned debate, not just 'дискуссий' (which is weaker). But main defect: the phrase 'Разница между... и между...' has a grammatical agreement error. In Russian, after 'между' you need instrumental case, but the nouns are in nominative because they’re English loanwords in <b> tags. However, that’s unavoidable. But the real issue: the English contrasts pairs: nominal/token, renown/fame, thinking/cogitating — implying nuanced differences. The Russian says 'Разница между A и B, C и D, и между E и F' — the extra 'и' before the last pair is redundant and ungrammatical in Russian. It should be: 'между A и B, C и D и E и F' or better structured. But more importantly, 'thinking' and 'cogitating' are presented as English words, so keeping them in English is correct. However, the bigger problem: the phrase 'Точные слова порождают точные мысли' is a mistranslation. The English says 'Precise words make precise thoughts' — 'make' here means 'enable' or 'constitute', not 'порождают' (which means 'generate' or 'produce'). This changes the philosophical nuance. A better rendering: 'Точные слова дают точные мысли' or 'Из точных слов складываются точные мысли'. 'Порождают' is too strong and inaccurate. This is a meaning shift.",
+  "fix": "<p class=\"body\">Это словарный запас продвинутого английского: язык аргументации, права, истории и наук. Разница между <b>nominal</b> и <b>token</b>, <b>renown</b> и <b>fame</b> и между <b>thinking</b> и <b>cogitating</b>. Точные слова дают точные мысли — и корни — это части, из которых строятся точные слова.</p>"
+ },
+ "18": {
+  "id": 18,
+  "severity": "medium",
+  "issue": "Imperative form 'Разберите' is formal or plural, but the interface likely addresses a single user informally. Should use informal imperative 'Разберите' → 'Разбери' to match house style addressing reader as 'вы' (informal).",
+  "fix": "<span class=\"tag\">Разбери</span>"
+ },
+ "19": {
+  "id": 19,
+  "severity": "medium",
+  "issue": "'Сборка' is a calque; in Russian linguistic context, 'слово — это конструкция' or 'слово состоит из частей' would be more natural. 'Сборка' typically refers to mechanical assembly or software builds, not morphological structure.",
+  "fix": "<h2>Слово — это конструкция</h2>"
+ },
+ "22": {
+  "id": 22,
+  "severity": "high",
+  "issue": "The word 'transport' is part of the teaching material (English word being analyzed), so per house rules it must remain in English. However, the surrounding UI implies this is a morpheme breakdown example, and the English word should indeed stay. But the issue is that in RU context, if this is presented as a foreign word under study, it's correct—but the gloss (#23) translates it, so 'transport' here is the target lexical item. According to house rules: 'Any word or sentence in a language BEING TAUGHT [...] — those are teaching material. Translate only the English gloss/explanation around them.' Since English is being taught, 'transport' must remain. So this is actually correct. Wait—rechecking: the EN source has <div class=\"whole\">transport</div>, and RU keeps it as 'transport'. That is correct per house rules. So no error here.",
+  "fix": null
+ },
+ "27": {
+  "id": 27,
+  "severity": "high",
+  "issue": "The word 'predict' is left in English, but it is part of the teaching material (an English word being analyzed morphologically) and should remain as-is per house rules. However, the surrounding context shows this is a morpheme breakdown exercise for an English word, so the whole word 'predict' should indeed stay in English. But according to the instruction: 'Any word or sentence in a language BEING TAUGHT [...] — those are teaching material. Translate only the English gloss/explanation around them.' Since English is the language being taught here (as seen in packs like English Core), the word 'predict' must NOT be translated — which the Russian version correctly does by leaving it as 'predict'. So actually, this is correct. Wait — but #24 and #25 treat 'transport' as English being taught, and break it into Latin roots with Russian glosses. Similarly, 'predict' is an English word being deconstructed, so the full word should remain in English. Therefore, #27 is CORRECT.",
+  "fix": null
+ },
+ "31": {
+  "id": 31,
+  "severity": "high",
+  "issue": "The English word 'inspect' should be translated into Russian as it is part of the teaching material explanation, not left in English.",
+  "fix": "<div class=\"whole\">осматривать</div>"
+ },
+ "35": {
+  "id": 35,
+  "severity": "high",
+  "issue": "The English word 'interrupt' should be translated into Russian as it is part of the teaching material explanation, not left in English.",
+  "fix": "<div class=\"whole\">прерывать</div>"
+ },
+ "36": {
+  "id": 36,
+  "severity": "medium",
+  "issue": "The Russian translation 'прервать что-то, находящееся в процессе' is overly literal and slightly unnatural. The English phrase 'to break in on something in progress' implies interrupting an ongoing activity (e.g., a conversation or event), not just any abstract 'process'. A more idiomatic rendering would reflect this nuance.",
+  "fix": "<div class=\"gloss-top\">вмешаться во что-то происходящее</div>"
+ },
+ "37": {
+  "id": 37,
+  "severity": "medium",
+  "issue": "The gloss for 'rupt' as 'ломать' is inaccurate in this morphological context. While 'rupt' relates to 'breaking', in English etymology (especially in words like 'interrupt', 'disrupt'), it conveys a sense of 'bursting' or 'breaking apart', not the general verb 'ломать' (which means to break physically, like an object). A more precise gloss would be 'разрывать' or 'прерывать', but per house rules, since 'rupt' is teaching material, it should remain as-is only if the English says 'break'. However, the English here explicitly glosses 'rupt' as 'break', so 'ломать' is acceptable—but note that 'break' in this context is better rendered as 'прерывать' or 'разрывать'. Still, because the source uses 'break' generically, and house rules say not to translate teaching material, this may be defensible. However, 'ломать' is misleading here because it doesn't align with the actual meaning of 'rupt' in 'interrupt'.",
+  "fix": "<div class=\"parts\">\n            <span class=\"m pre\">inter<i>между</i></span>\n            <span class=\"m rt\">rupt<i>прерывать</i></span>\n          </div>"
+ },
+ "38": {
+  "id": 38,
+  "severity": "high",
+  "issue": "The Russian 'ломать между' is nonsensical and misrepresents the English 'to break in between'. The phrase 'to break in between' is already a loose mnemonic; translating it literally as 'ломать между' produces ungrammatical and meaningless Russian. Moreover, the English implies 'to break into (something) from between', but the Russian must convey intelligible meaning. More importantly, per house conventions, the explanatory gloss around teaching material should be natural Russian. 'Ломать между' fails this.",
+  "fix": "<div class=\"sum\">между + прерывать → вмешаться, прервав течение</div>"
+ },
+ "45": {
+  "id": 45,
+  "severity": "medium",
+  "issue": "The English gloss 'into, or not' is ambiguous but correctly reflects the dual meanings of the prefix 'in-' (as in 'inspect' vs. 'invalid'). The Russian translation 'в, или не' is a literal calque that sounds unnatural and fails to convey that 'not' here represents a negative meaning (un-, im-, il-, ir-), not the word 'не'. This misleads the learner.",
+  "fix": "<div class=\"v\"><b>в; или отрицание</b> — осматривать, вводить в должность; недействительный, инертный</div>"
+ },
+ "61": {
+  "id": 61,
+  "severity": "medium",
+  "issue": "The English gloss 'forward, in favour of' is a semantic explanation of the prefix 'pro-', not a direct translation. The Russian rendering 'вперёд, в пользу' is too literal and fails to convey that this is the meaning of the prefix as used in English derivatives (e.g., promote = to move forward, proponent = someone in favour of). It should reflect the functional meaning in word formation, not standalone dictionary definitions.",
+  "fix": "<div class=\"v\"><b>впереди, в поддержку</b> — promote, propel, proponent</div>"
+ },
+ "64": {
+  "id": 64,
+  "severity": "medium",
+  "issue": "The phrase 'Выучите его один раз' uses the imperative plural/formal 'выучите', which breaks the house style of addressing the user as 'вы' in prose but using consistent second-person singular or neutral instructional tone. More natural and aligned with educational context would be 'Выучите его один раз' → 'Выучивайте его один раз' or better: 'Достаточно выучить его один раз.' However, the bigger issue is register: the English 'Learn it once.' is concise and idiomatic; the Russian version sounds like a command rather than a benefit statement.",
+  "fix": "<p class=\"sub\">Каждый блок — это один латинский корень и произошедшие от него английские слова. Достаточно выучить его один раз.</p>"
+ },
+ "65": {
+  "id": 65,
+  "severity": "low",
+  "issue": "The word 'emperor' is misspelled as 'emperor' with an extra 'r' in both EN and RU, but since the task is to review the Russian translation against the English source, and the English source itself contains the typo ('em<span class=\"r\">per</span>or' should be 'em<span class=\"r\">per</span>or' only if 'per' is the root—but 'emperor' comes from Latin 'imperare', so the root is 'imper', not 'emper'), this may be a source error. However, the Russian preserves the English typo exactly, which is correct per instructions. BUT: 'ram<span class=\"r\">part</span>' — 'rampart' does not derive from 'par' (it comes from French 'rempart', ultimately from Old High German). Including it in this fan misrepresents etymology. However, since the Russian matches the English faithfully, and we are only reviewing translation accuracy, not factual correctness of the source, this is not a translation defect. Therefore, no issue. Wait—rechecking: the actual defect is in #65 RU: the word 'peer' is included as derived from 'par', which is correct (from Latin 'par' = equal), but in Russian it's left in English. Per house rules: 'Any word or sentence in a language BEING TAUGHT [...] — those are teaching material. Translate only the English gloss/explanation around them.' Here, the words in the fan (prepare, repair, etc.) are English vocabulary being taught, so they must remain in English. So leaving 'peer', 'parity', etc. in English is correct. Thus, no error in #65.",
+  "fix": ""
+ },
+ "67": {
+  "id": 67,
+  "severity": "high",
+  "issue": "Misinterpretation of 'register' — in this context it refers to a cumulative count or tally (e.g., of recognized words), not a 'register' as in a technical or formal record. The phrase 'watch the register climb' is idiomatic marketing language meaning 'see your progress accumulate.' Translating it as 'регистр' is a false friend and misleading.",
+  "fix": "<span class=\"tag\">Смотрите, как растёт счёт</span>"
+ },
+ "68": {
+  "id": 68,
+  "severity": "medium",
+  "issue": "'Formidable' is better rendered as 'грозный', 'мощный' or 'внушающий уважение' in this context; 'внушительный' leans toward physical size or visual impressiveness, which doesn't fully capture the sense of growing strength or capability implied by 'formidable'.",
+  "fix": "<h2>От простого к грозному</h2>"
+ },
+ "78": {
+  "id": 78,
+  "severity": "medium",
+  "issue": "The phrase 'заглавное слово' is a calque and not the standard term used in FlashBoss conventions; 'headword' should be rendered as 'основное слово' or similar, but more importantly, 'родня' is too informal and anthropomorphic for this context.",
+  "fix": "<dd>500 карточек, 1000 слов — каждая карточка объединяет основное слово с родственным из того же семейства, так что слово и его родственные формы приходят вместе.</dd>"
+ },
+ "79": {
+  "id": 79,
+  "severity": "high",
+  "issue": "House convention requires keeping brand and technical terms like 'Fibonacci SRS' exactly as-is if they are proper names or established terms. However, 'SRS' stands for 'spaced repetition system', which in-house is translated as 'интервальное повторение'. But 'Fibonacci SRS' appears to be a proprietary feature name—per conventions, if it's a branded algorithm name, it should remain untranslated. Yet the English uses 'Fibonacci SRS' as a label, and the Russian reverses word order unnecessarily. The correct approach per house style is to keep 'Fibonacci SRS' untranslated because it's a proper noun / feature name (like 'Pareto'), but the current translation localizes it incorrectly.",
+  "fix": "<dt>Fibonacci SRS</dt>"
+ },
+ "83": {
+  "id": 83,
+  "severity": "high",
+  "issue": "The term 'Graduation' in FlashBoss context refers to a card being marked as mastered. House convention explicitly defines 'graduate (a card)' as 'считается освоенной', so the noun form 'Graduation' should align with that terminology. 'Освоение' is a generic noun meaning 'mastery process', but the UI label should reflect the system's specific term. However, looking at house conventions, there is no explicit rendering for 'Graduation' as a heading. But given that 'graduate (a card)' → 'считается освоенной', the closest accurate and conventional heading would be 'Освоение карточки' or simply 'Освоено'. Yet the bigger issue: in the source, 'Graduation' is a feature name (like Boss fights, Fibonacci SRS), and may be intended as a proper label. However, unlike 'Fibonacci SRS', 'Graduation' is a common noun and should be translated. But 'Освоение' is grammatically neuter and vague. A better fit per style would be 'Карточка освоена' or 'Освоенные карточки', but as a dt, it should be a noun phrase. Given conventions, 'Освоение' is acceptable—but wait: checking consistency with #82 and others, the system uses concise labels. However, the real defect is that 'Graduation' here refers to the event/state when a card graduates, and house style says 'graduate (a card) -> считается освоенной', so the heading should reflect that outcome. 'Освоение' implies process, not completion. Better: 'Освоено' or 'Завершение'. But strictly speaking, this may be borderline. However, compared to official materials, FlashBoss uses 'Graduation' to mean the card is done, so 'Освоение' is misleading. This is a meaning shift.",
+  "fix": "<dt>Освоено</dt>"
+ },
+ "91": {
+  "id": 91,
+  "severity": "medium",
+  "issue": "Brand token 'Roots' should be kept as-is per house conventions, but it is translated as 'серии Roots', which mixes Russian and English incorrectly. The correct rendering should treat 'Roots Series' as a proper name and keep 'Roots' untranslated while translating only the generic part.",
+  "fix": "<h2>Часть серии Roots</h2>"
+ },
+ "93": {
+  "id": 93,
+  "severity": "high",
+  "issue": "The registered pack name 'German Roots' must be kept exactly as-is per house conventions, but it is left entirely in English inside a Russian context where it should still appear as the official name — however, the current rendering is actually correct per the rule: 'Registered pack names: German Roots... KEEP EXACTLY AS-IS'. So this is NOT an error. Re-evaluating: no defect here.",
+  "fix": null
+ },
+ "96": {
+  "id": 96,
+  "severity": "high",
+  "issue": "'Norman Roots' is a registered pack name and must be kept as-is per house conventions, but it should not be translated; however, the convention says to KEEP EXACTLY AS-IS, so leaving it in English is correct. No error.",
+  "fix": ""
+ },
+ "98": {
+  "id": 98,
+  "severity": "high",
+  "issue": "'Latin Roots' is a registered pack name and must be kept exactly as-is. The Russian version incorrectly leaves it untranslated—but according to house rules, registered pack names are NOT translated, so this is actually correct. No error.",
+  "fix": ""
+ },
+ "100": {
+  "id": 100,
+  "severity": "medium",
+  "issue": "The phrase 'вы здесь' should be capitalised as 'Вы здесь' because it's a standalone UI label or indicator, and while the style guide says to use lowercase 'вы' when addressing the reader in prose, this is a fixed UI string where standard Russian capitalisation applies. However, the house style explicitly says: 'Address the reader as вы (lowercase, not capitalised)' — and this is a direct address, so lowercase may be intentional. But 'You are here' is not a direct address; it's a status indicator. In Russian UIs, such labels are typically capitalised. This is a borderline case, but given the explicit instruction to keep 'вы' lowercase even in UI ('address the reader as вы'), and this is phrased as 'you are here', it's acceptable. No clear violation.",
+  "fix": ""
+ },
+ "101": {
+  "id": 101,
+  "severity": "high",
+  "issue": "'Greek Roots' is a registered pack name and must be kept exactly as-is per house conventions. The Russian version leaves it in English, which is correct per instructions. No error.",
+  "fix": ""
+ },
+ "102": {
+  "id": 102,
+  "severity": "medium",
+  "issue": "The phrase 'the layer above Latin' is ambiguous in English, but the Russian translation 'слой над латынью' incorrectly implies Latin is a lower layer beneath science/medicine vocabulary. In reality, Latin *is* the source layer; the intended meaning is likely that this vocabulary forms a layer built *upon* Latin roots — so 'над' misrepresents the relationship.",
+  "fix": "<p>Лексика науки, медицины и абстракции — слой, построенный на латыни.</p>"
+ },
+ "103": {
+  "id": 103,
+  "severity": "high",
+  "issue": "Violates house convention: imperative verbs in UI/marketing should address the reader as 'вы', not use informal 'ты' form. 'Читай' is ты-form; should be 'Читайте'.",
+  "fix": "<h2>Читайте следующее слово отдельно.</h2>"
+ },
+ "105": {
+  "id": 105,
+  "severity": "high",
+  "issue": "Violates house convention: registered pack names must be kept exactly as-is. 'Latin Roots' is a registered pack name and should not be translated or partially rendered in Russian. The correct rendering is 'Get Latin Roots on Steam' → 'Купить Latin Roots в Steam', which is actually correct per conventions — wait, rechecking... Yes, brand/pack names are NOT translated. So this is actually CORRECT. No error.",
+  "fix": ""
+ },
+ "106": {
+  "id": 106,
+  "severity": "low",
+  "issue": "The English says 'after Aristotle', implying the proverb is Latin but inspired by or attributed posthumously to Aristotle. The Russian 'приписываемая Аристотелю' means 'attributed to Aristotle', which shifts nuance: it suggests Aristotle may have said it, whereas 'after Aristotle' means it came later in his tradition. However, this is a common and acceptable rendering in Russian for such citations, and the house rules allow natural phrasing for glosses. Not a clear defect.",
+  "fix": ""
+ },
+ "109": {
+  "id": 109,
+  "severity": "medium",
+  "issue": "The phrase 'read an unfamiliar word apart' was mistranslated as 'разбирайте незнакомые слова', which suggests analyzing or breaking down words generally, but the original specifically conveys the ability to decipher or understand an unfamiliar word by its parts. Additionally, 'text-to-speech' is a house term that should be rendered per conventions; however, the current translation uses 'синтез речи', which is acceptable but not explicitly listed—yet more critically, the English says 'read an unfamiliar word apart', implying deconstruction for comprehension, not just analysis.",
+  "fix": "FlashBoss Latin Roots: перестаньте учить английский по одному слову. Приставки, суффиксы и корни, из которых строятся тысячи слов — выучите части и читайте незнакомое слово по частям. 1000 слов, 500 карточек, интервальное повторение, босс-файты и синтез речи."
+ },
+ "_done": true
+}

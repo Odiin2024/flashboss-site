@@ -1,0 +1,236 @@
+{
+ "12": {
+  "id": 12,
+  "severity": "medium",
+  "issue": "The phrase 'the words you think in' is mistranslated as 'слова, на которых вы думаете', which is unnatural and incorrect Russian. The correct phrasing should be 'слова, на которых вы думаете' → 'слова, на которых вы думаете' is a calque; proper Russian would be 'слова, на которых вы думаете' → actually, the standard expression is 'слова, на которых вы думаете' is wrong; it should be 'слова, которыми вы думаете' or more idiomatically 'слова, на которых строится ваше мышление' — but given the style, best is 'слова, которыми вы думаете'. However, even better and more natural in this context: 'слова, на которых вы думаете' is a direct calque from English 'think in words'; correct Russian is 'думать на языке', so 'слова, на которых вы думаете' is ungrammatical. Should be 'слова, на которых вы думаете' → no, the verb 'думать' doesn't take 'на' with words. Correct: 'слова, которыми вы думаете' is archaic/poetic. Standard modern Russian: 'слова, на которых строится ваша речь' or simply 'слова, которые приходят вам в голову первыми'. But the original English says 'the words you think in' — meaning the language of thought. In Russian, we say 'думать на [языке]', but for individual words, it's better rendered as 'слова, которыми вы оперируете в мыслях' — but that's too heavy. Given the poetic tone, acceptable fix: 'слова, которыми вы думаете' is tolerable in literary context, though slightly off. However, the bigger issue: the English list includes 'house, drink, eat, fight, begin, understand' — these are teaching material (English words being taught), so per house rules they must NOT be translated. The Russian version correctly leaves them in English. So that’s fine. Main defect is 'на которых вы думаете' — unnatural collocation.",
+  "fix": "<p class=\"body\">До 1066 года английский был германским языком, и слова, которые от него сохранились, — это те, к которым вы обращаетесь в первую очередь: <b>house, drink, eat, fight, begin, understand</b>. Короткие. Конкретные. Слова, которые дети учат, слова, которыми вы думаете, слова, которые несут вес без усилий.</p>"
+ },
+ "17": {
+  "id": 17,
+  "severity": "medium",
+  "issue": "The verb 'щелкните' (click) is an unnatural metaphorical translation of 'click them together'. In English, 'click together' is idiomatic for snapping parts into place (like Lego). In Russian, 'щёлкать' implies a sound or mouse-clicking, not assembling. Better verb: 'соединяйте', 'составляйте', or 'складывайте'. Also, 'throws off half the dictionary' is rendered as 'выдает половину словаря', which is too literal; 'выдает' suggests outputting or revealing, not generating/producing. More idiomatic: 'порождает', 'даёт', or 'образует'. Given the poetic tone, 'даёт' fits best.",
+  "fix": "<p>Соединяйте их вместе, прикрепляйте родные окончания, добавляйте частицу — и маленькое старое ядро даёт половину словаря.</p>"
+ },
+ "26": {
+  "id": 26,
+  "severity": "medium",
+  "issue": "Uses informal 'нажми' (imperative singular) instead of expected neutral/formal 'нажмите' consistent with site-wide 'вы' address convention.",
+  "fix": "<div class=\"hint\">нажмите, чтобы разобрать</div>"
+ },
+ "30": {
+  "id": 30,
+  "severity": "medium",
+  "issue": "The English phrase 'To throw your sight ahead' is an explanatory gloss, not a direct instruction; the Russian translation renders it as an imperative ('Бросить...'), which changes the register and meaning. It should be descriptive, e.g., 'Означает бросать взгляд вперёд' or similar. Also, the morpheme 'fore-' is part of English teaching material and must remain untranslated per house rules — this is correct — but the surrounding explanation should not sound like a command.",
+  "fix": "<div class=\"sum\">Означает бросать взгляд вперёд. Тот же fore- образует foresee, foreword, foreboding.</div>"
+ },
+ "31": {
+  "id": 31,
+  "severity": "high",
+  "issue": "The content inside <span class=\"rt\"> and <span class=\"af\"> consists of English morphemes being taught (king, dom). Per house rules, any word or sentence in a language BEING TAUGHT must remain in the original language. However, the Russian translation left them in English, which is correct — BUT the issue is that this is labeled as a Russian translation unit, yet no Russian gloss or adaptation appears anywhere. However, upon closer inspection: this is acceptable because 'king' and 'dom' are teaching material (parts of English words), so they must NOT be translated. So actually this is correct. Wait — rechecking: yes, rule says 'Any word or sentence in a language BEING TAUGHT [...] — those are teaching material. Translate only the English gloss/explanation around them.' Here, there is no gloss inside the spans beyond the embedded <i> in #33. In #31, it's just raw morphemes. So leaving 'king' and 'dom' in English is CORRECT. Therefore, no error.",
+  "fix": null
+ },
+ "33": {
+  "id": 33,
+  "severity": "medium",
+  "issue": "The English gloss for 'king' is 'the ruler', which is a definite description. The Russian translation uses 'правитель', which is accurate, but 'король' would be more precise since 'king' specifically means 'король', not just any ruler. However, in morphological breakdowns, 'king' as a root may be generalized. But the bigger issue: the English says 'domain, condition' for -dom. 'Domain' here refers to 'realm' or 'sphere of control', and 'область' can mean 'region' or 'field', but in this morphological context, 'владения' or 'царство' might be better for 'domain' when paired with monarchy. However, 'область' is acceptable in abstract use. Still, 'condition' as 'состояние' is correct. But note: in #32, 'a land ruled by a king' is correctly translated as 'земля, которой правит король'. So consistency suggests that 'king' should be associated with 'король', yet in #33 it's glossed as 'правитель', which is overly generic and loses the semantic link to monarchy. This weakens the pedagogical point.",
+  "fix": "<div class=\"parts\">\n            <span class=\"m rt\">king<i>король</i></span>\n            <span class=\"m af\">-dom<i>владения, состояние</i></span>\n          </div>"
+ },
+ "34": {
+  "id": 34,
+  "severity": "low",
+  "issue": "The phrase 'целая полка существительных' is a calque of 'whole shelf of nouns'. While understandable, 'полка' sounds odd in Russian in this metaphorical context. Native phrasing would be 'целый ряд' or 'множество', but 'полка' is used in English idiomatically. However, FlashBoss sometimes preserves vivid metaphors. But per style: 'Match the source's register... Do not pad.' If the metaphor is kept, it's acceptable. However, 'shelf' here implies abundance via physical stacking — 'полка' does convey that. So possibly acceptable. But 'состояние или область чего-либо' reverses the English order 'state or realm'. More importantly, 'realm' is better translated as 'царство' or 'владения' in this context (cf. kingdom), not 'область', which is too generic. This weakens the connection to words like 'kingdom', 'stardom'.",
+  "fix": "<div class=\"sum\">Одно окончание, целая полка существительных: freedom, wisdom, boredom, stardom — состояние или царство чего-либо.</div>"
+ },
+ "35": {
+  "id": 35,
+  "severity": "high",
+  "issue": "The phrase 'give up' is an English phrasal verb being taught. Per house rules, it must remain in English as it is teaching material. The current Russian version correctly leaves 'give' and 'up' in English. So this appears correct. However, note that in #31 and #35, the structure is identical and both are handled the same way. Since 'give up' is English teaching content, not translating it is correct. Therefore, no error.",
+  "fix": null
+ },
+ "38": {
+  "id": 38,
+  "severity": "medium",
+  "issue": "The English uses 'surrenders' metaphorically to mean 'acts of surrender', but the Russian 'сдачи' is ambiguous and can primarily mean 'handovers' or 'deliveries'; in the context of phrasal verbs like 'give up', 'сдача' is not the standard lexical choice. The more natural and precise rendering would be 'три разных способа сдаться' or 'три разных значения сдачи' — but as written, 'три разных сдачи' sounds unnatural and potentially misleading.",
+  "fix": "<div class=\"sum\">Фразовый глагол — простой глагол плюс маленькое слово, и значение поворачивается на шарнире. give in, give out, give up: три разных способа сдаться.</div>"
+ },
+ "39": {
+  "id": 39,
+  "severity": "high",
+  "issue": "The English 'The native bolts' uses 'bolts' metaphorically (likely referring to quick, forceful movements or linguistic elements), but 'болты' in Russian means literal mechanical bolts/screws. This is a false friend. Without context, this translation is nonsensical. Given the surrounding content about prefixes and phrasal verbs, 'bolts' likely refers to swift, native English morphological elements — perhaps better rendered as 'вспышки', 'рывки', or even kept metaphorical with explanation. However, 'болты' is a clear mistranslation.",
+  "fix": "<h2>Родные рывки</h2>"
+ },
+ "55": {
+  "id": 55,
+  "severity": "medium",
+  "issue": "The English gloss 'thoroughly; make into' is an oversimplification of the prefix 'be-' which often intensifies or causes a state, not literally 'make into'. However, the bigger issue is that the Russian translation 'превращать в' (to transform into) is misleading and inaccurate for most 'be-' words listed (e.g., befriend ≠ 'make into a friend' in a literal transformative sense). The standard linguistic explanation in Russian pedagogical contexts would use 'придавать состояние' or similar, but more critically, house rules require that teaching material (the English words) remain untranslated — which is correctly done — but the gloss itself is factually flawed. However, since the task is to review translation fidelity, not linguistic accuracy, this may be acceptable if the English is equally flawed. But note: the English says 'make into', which is already a simplification; the Russian renders it literally as 'превращать в', which is a calque that sounds unnatural in Russian for this context.",
+  "fix": "<div class=\"v\"><b>тщательно; придавать состояние</b> — befriend, behold, bewitch, bewilder</div>"
+ },
+ "57": {
+  "id": 57,
+  "severity": "high",
+  "issue": "The phrase 'into being' is rendered as 'в бытие', which is a philosophical calque (from German 'ins Dasein treten') and unnatural in Russian when explaining the prefix 'up-'. In native Russian linguistic description, 'up-' in words like 'upheaval' or 'uprising' conveys emergence, appearance, or intensification — not 'в бытие', which sounds like a mistranslation of Heidegger. This violates natural Russian usage.",
+  "fix": "<div class=\"v\"><b>вверх; вызывать появление или усиление</b> — uphold, upgrade, upheaval, uprising</div>"
+ },
+ "59": {
+  "id": 59,
+  "severity": "medium",
+  "issue": "The word 'кузен' is masculine, but in Russian, when referring to a male cousin generically in such a metaphorical context, it's acceptable. However, 'кузен' is somewhat bookish; 'двоюродный брат' would be more natural, but 'кузен' is not incorrect. More importantly, the English uses 'cousin' (gender-neutral), while Russian defaults to masculine. This is acceptable per convention. However, the phrase 'с которым вас ещё не познакомили' uses formal plural 'вас', which matches the house rule (вы lowercase, formal address). So no error here. Wait — rechecking: actually, no defect. The translation is accurate and natural enough. Therefore, this entry should NOT be flagged."
+ },
+ "62": {
+  "id": 62,
+  "severity": "medium",
+  "issue": "The phrase 'скандинавский' is too vague; the English specifies 'a Nordic tongue', which refers to North Germanic languages (e.g., Swedish, Danish, Norwegian). 'Скандинавский' in Russian typically refers only to Scandinavian languages (excluding Finnish, but still narrower than 'Nordic'). More importantly, 'кузенов' is a calque: 'cousins' here metaphorically means cognates or related words, not family members. The correct term should be 'родственные слова' or similar.",
+  "fix": "<p class=\"note\">Если ваш родной язык — немецкий, нидерландский или один из северогерманских языков, большая часть этого набора <b>уже ваша</b> — вам нужно лишь увидеть шов. Набор делает родственные слова явными и превращает общего предка в несправедливое преимущество.</p>"
+ },
+ "63": {
+  "id": 63,
+  "severity": "medium",
+  "issue": "Grimm's Law should remain untranslated per house conventions as it is a proper noun (a named linguistic law). Also, 'отделивший германские языки от латыни' is inaccurate: Grimm's Law describes a sound shift within Proto-Indo-European that affected Proto-Germanic, distinguishing it from other branches (like Italic, which includes Latin)—not a direct split 'from Latin'.",
+  "fix": "<div class=\"stem\">\n          <span class=\"glyph\"><span class=\"af\">p</span> &rarr; <span class=\"rt\">f</span></span>\n          <span class=\"mean\">Grimm's Law — звуковой сдвиг, отделивший германские языки от других индоевропейских (включая латынь)</span>\n        </div>"
+ },
+ "64": {
+  "id": 64,
+  "severity": "high",
+  "issue": "Words in the language being taught (here, English) must NOT be translated. The right-hand side (class=\"rt\") contains English words like 'father', 'fish', etc., which are part of the teaching material and must remain in English per house rules. Translating them into Russian ('отец', 'рыба', etc.) violates this core convention.",
+  "fix": "<div class=\"fan\">\n          <span class=\"pair\"><span class=\"w af\">pater</span><span class=\"arr\">→</span><span class=\"w rt\">father</span></span>\n          <span class=\"pair\"><span class=\"w af\">piscis</span><span class=\"arr\">→</span><span class=\"w rt\">fish</span></span>\n          <span class=\"pair\"><span class=\"w af\">ped-</span><span class=\"arr\">→</span><span class=\"w rt\">foot</span></span>\n          <span class=\"pair\"><span class=\"w af\">tres</span><span class=\"arr\">→</span><span class=\"w rt\">three</span></span>\n          <span class=\"pair\"><span class=\"w af\">cornu</span><span class=\"arr\">→</span><span class=\"w rt\">horn</span></span>\n          <span class=\"pair\"><span class=\"w af\">canis</span><span class=\"arr\">→</span><span class=\"w rt\">hound</span></span>\n        </div>"
+ },
+ "65": {
+  "id": 65,
+  "severity": "medium",
+  "issue": "The phrase 'набор Latin Roots начнёт рифмоваться с этим' is unnatural. 'Rhyme' here is metaphorical (meaning 'align' or 'resonate'), but 'рифмоваться' is too literal and odd in Russian. Also, 'Latin Roots' is a registered pack name and must remain untranslated per house conventions.",
+  "fix": "<p class=\"note\">Одно правило лежит в основе всех родственных слов. Латинское <b>p</b> — это английское <b>f</b>; латинское <b>t</b> — это английское <b>th</b>; твёрдое латинское <b>c</b> — это английское <b>h</b>. Как только вы услышите этот сдвиг, всё генеалогическое дерево встанет на свои места — и набор Latin Roots начнёт гармонировать с этим.</p>"
+ },
+ "66": {
+  "id": 66,
+  "severity": "medium",
+  "issue": "The English uses imperative 'Watch', but the Russian uses informal singular imperative 'Смотри', which mismatches the site's convention of addressing the reader as 'вы'. Should be 'Смотрите'.",
+  "fix": "<span class=\"tag\">Смотрите, как слой уходит вглубь</span>"
+ },
+ "67": {
+  "id": 67,
+  "severity": "medium",
+  "issue": "The phrase 'deep tongue' is rendered as 'глубинного языка', which is an unnatural and misleading calque. 'Deep tongue' here poetically refers to deep linguistic roots or foundational language layers, not a literal 'tongue'. A more accurate rendering would reflect 'глубинные основы языка' or similar.",
+  "fix": "<h2>От первого слова до глубинных основ языка</h2>"
+ },
+ "69": {
+  "id": 69,
+  "severity": "high",
+  "issue": "The English shows the word 'sunlight' as a single lexical item being analyzed morphologically (sun + light), but the Russian translates it as a phrase 'солнечный свет', which is not a direct equivalent of the compound noun 'sunlight' and breaks the morphological illustration. The teaching example requires the actual word corresponding to 'sunlight'—which in Russian is 'солнечный свет' as a phrase—but this undermines the point about transparent compounding. However, since Russian doesn't have a true single-word compound like 'sunlight', this may be acceptable. But more critically: the English keeps 'sun + light' in English (as teaching material), while the Russian translates them to 'солнце + свет'—which violates the house rule: 'Any word or sentence in a language BEING TAUGHT [...] — those are teaching material. Translate only the English gloss/explanation around them.' Here, English is being taught, so 'sun + light' must remain untranslated.",
+  "fix": "<li class=\"reveal\"><span class=\"wd\">sunlight</span><span class=\"df\">sun + light — простейшее сложное слово, прозрачное для пятилетнего ребёнка</span></li>"
+ },
+ "70": {
+  "id": 70,
+  "severity": "high",
+  "issue": "Same issue as #69: 'under + stand' is part of the English teaching material and must remain in English per house rules. The Russian translation changes it to Cyrillic, which breaks the convention.",
+  "fix": "<li class=\"reveal\"><span class=\"wd\">understand</span><span class=\"df\">under + stand — повседневное слово со стёртой метафорой внутри</span></li>"
+ },
+ "71": {
+  "id": 71,
+  "severity": "high",
+  "issue": "Same issue: 'free + dom' is English morphological analysis and must remain in English. Translating 'free' and 'dom' into Russian violates the house rule about not translating teaching material in the target language (here, English is being taught).",
+  "fix": "<li class=\"reveal\"><span class=\"wd\">freedom</span><span class=\"df\">free + dom — абстракция, построенная на старом окончании, означающем «область, состояние»</span></li>"
+ },
+ "73": {
+  "id": 73,
+  "severity": "medium",
+  "issue": "The term 'kenning' is a specific poetic device in Old English and Old Norse; translating it as 'кеннинг' without explanation may be unclear to Russian readers. However, the bigger issue is that 'wordhord' was left untranslated in Latin script, while according to house rules, words in the language being taught should remain as-is—but here, Old English is not a taught language (FlashBoss teaches modern languages like French, Spanish, etc.), so 'wordhord' should either be transliterated or explained. More critically, the phrase 'древнеанглийская кеннинг' is grammatically incorrect: 'кеннинг' is masculine, so it should be 'древнеанглийский кеннинг'.",
+  "fix": "<li class=\"reveal\"><span class=\"wd\">word-hoard</span><span class=\"df\">wordhord — древнеанглийский кеннинг для запаса слов, который вы носите внутри себя</span></li>"
+ },
+ "77": {
+  "id": 77,
+  "severity": "low",
+  "issue": "The phrase 'точно помещает слово' is unnatural Russian. 'Places the word precisely' refers to contextualizing or specifying exact usage, not physically 'placing'. A more natural rendering would be 'которое точно определяет употребление слова' or 'которое точно характеризует слово'.",
+  "fix": "<dd>1000 слов в 48 блоках — каждая карточка содержит определение, пример предложения и примечание об употреблении, которое точно характеризует слово.</dd>"
+ },
+ "78": {
+  "id": 78,
+  "severity": "medium",
+  "issue": "House convention requires 'Fibonacci SRS' to remain in English as a proper name of a specific SRS algorithm, similar to how 'Pareto' or pack names are kept untranslated.",
+  "fix": "<dt>Fibonacci SRS</dt>"
+ },
+ "79": {
+  "id": 79,
+  "severity": "medium",
+  "issue": "Because 'Fibonacci SRS' is a branded/technical term kept in English per house rules, the phrase 'по интервалам Фибоначчи' incorrectly translates part of it. Should refer to 'Fibonacci intervals' as an unlocalized term.",
+  "fix": "<dd>Оценивайте каждую карточку от 0 до 5. Чем лучше вы знаете слово, тем дольше оно не возвращается — интервальное повторение с интервалами Fibonacci.</dd>"
+ },
+ "82": {
+  "id": 82,
+  "severity": "high",
+  "issue": "'Graduation' in FlashBoss context specifically means a card is 'считается освоенной' (per house terminology). Using 'Освоение' as a noun here misrepresents the feature; the English term refers to the event/state of a card graduating, not the abstract process.",
+  "fix": "<dt>Считается освоенной</dt>"
+ },
+ "85": {
+  "id": 85,
+  "severity": "medium",
+  "issue": "The phrase 'родной префикс или окончание' is misleading. 'Native prefix or ending' refers to affixes that are native to English (as opposed to borrowed), but 'родной' in Russian typically means 'native speaker' or 'one's own language', not 'inherent to the language’s morphology'. This could confuse readers.",
+  "fix": "<dd>Если слово является сложным или содержит исконный английский префикс или окончание, заметка показывает части — так что understand распадается на under + stand.</dd>"
+ },
+ "87": {
+  "id": 87,
+  "severity": "low",
+  "issue": "While 'Аудио' is commonly used in Russian tech contexts, FlashBoss house style prefers full naturalisation where possible. However, 'Audio' as a UI label is often left as 'Аудио'—so this may be acceptable. But note: in #87 EN uses 'Audio' as a heading for TTS description, and RU uses 'Аудио', which is fine per common usage. No actual violation. On second thought—this is acceptable per industry norm and no house rule forbids it. So no defect.",
+  "fix": ""
+ },
+ "89": {
+  "id": 89,
+  "severity": "medium",
+  "issue": "The translation 'запускаются' (are launched) is too literal. The English 'fire' here is metaphorical (as in 'trigger'), but 'запускаются' suggests active execution like a program starting. More natural Russian would be 'становятся доступны' or 'открываются'. Also, 'в точке последовательности' is awkward; 'в нужный момент последовательности' or 'в тот момент последовательности' flows better.",
+  "fix": "<dd>Справочные уроки становятся доступны в тот момент последовательности, когда они открывают то, что вы собираетесь прочитать.</dd>"
+ },
+ "90": {
+  "id": 90,
+  "severity": "medium",
+  "issue": "Violates house convention: 'Roots Series' is a registered series name and must be kept in English as-is.",
+  "fix": "<h2>Part of the Roots Series</h2>"
+ },
+ "92": {
+  "id": 92,
+  "severity": "high",
+  "issue": "Violates house convention: 'German Roots' is a registered pack name and must not be translated, but it was left in English while the surrounding context expects consistent handling; however, per conventions, it should remain exactly as 'German Roots'. The current Russian version correctly leaves it untranslated, so this is actually correct. No error.",
+  "fix": null
+ },
+ "96": {
+  "id": 96,
+  "severity": "high",
+  "issue": "'Norman Roots' is a registered pack name and must be kept as-is per house conventions, but it should not be left in English if it's not on the exception list. However, 'Norman Roots' is explicitly listed as a registered pack name, so it must remain untranslated. The current Russian keeps it in English, which is correct. No error.",
+  "fix": ""
+ },
+ "98": {
+  "id": 98,
+  "severity": "high",
+  "issue": "'Latin Roots' is a registered pack name and must be kept exactly as-is. The Russian version leaves it in English, which is correct per house rules. No error.",
+  "fix": ""
+ },
+ "100": {
+  "id": 100,
+  "severity": "high",
+  "issue": "'Greek Roots' is a registered pack name and must be kept exactly as-is. The Russian version correctly leaves it in English. No error.",
+  "fix": ""
+ },
+ "102": {
+  "id": 102,
+  "severity": "medium",
+  "issue": "Unnatural phrasing: 'на которых вы думаете' is a calque; native Russian would say 'словами, на которых вы думаете' or better 'словами, которыми вы мыслите'. However, the intended meaning is 'the words you think in', i.e., your mental vocabulary. A more natural rendering is 'Учите слова, на которых строится ваша речь' or simply 'Учите слова, которыми вы думаете.' The current version is grammatically odd.",
+  "fix": "<h2>Учите слова, которыми вы думаете.</h2>"
+ },
+ "104": {
+  "id": 104,
+  "severity": "high",
+  "issue": "House convention breach: 'German Roots' is a registered pack name and must be kept exactly as-is, but the English original says 'Get German Roots on Steam', while the Russian renders it as 'Купить German Roots в Steam'. This is acceptable per house rules—brand/pack names are not translated. However, the issue is that the arrow entity &rarr; is preserved correctly, and the structure matches. Wait—rechecking: house rules say 'KEEP EXACTLY AS-IS... Registered pack names: ... German Roots'. So 'German Roots' must remain untranslated, which it does. So this is actually correct. No error.",
+  "fix": null
+ },
+ "107": {
+  "id": 107,
+  "severity": "medium",
+  "issue": "The title contains 'German Roots', which is a registered pack name and should remain in English per house rules—which it does. However, the entire <title> tag is left untranslated. While page titles often keep product names, the descriptive part ('German Roots — FlashBoss') is entirely in English. House conventions do not explicitly require translating <title>, but typical practice (and SEO/user expectation) would localize the descriptive portion unless it's a pure brand. But the instructions say: 'KEEP EXACTLY AS-IS... Brand tokens... Registered pack names...'. Since 'German Roots' is a registered pack name and 'FlashBoss' is a brand token, both stay. There is no English gloss to translate here—it's just two proper nouns. So this is acceptable.",
+  "fix": null
+ },
+ "108": {
+  "id": 108,
+  "severity": "medium",
+  "issue": "The term 'text-to-speech' is incorrectly translated as 'текст-в-речь', which is a calque and not standard Russian. The conventional and natural rendering in Russian software/UI contexts is 'синтез речи' or 'озвучка'. However, per FlashBoss house conventions, if the English term is a feature name that must be kept as-is, it should remain untranslated—but here it's clearly being translated, so it should follow standard Russian usage.",
+  "fix": "FlashBoss German Roots: древнейший слой английского. Англосаксонское ядро, на котором вы уже мыслите — исконные префиксы, сложные слова, фразовые глаголы и слова, общие с немецким, нидерландским и скандинавскими языками. 1000 слов, 48 блоков, интервальное повторение, босс-файты и синтез речи."
+ },
+ "_done": true
+}

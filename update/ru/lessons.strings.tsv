@@ -1,0 +1,36 @@
+# lessons.html — en<TAB>ru. Multi-line values use \n.
+<title>Free Language Lessons — Italian, German, Spanish, French, Esperanto &amp; Toki Pona Grammar &amp; Pronunciation | FlashBoss</title>	<title>Бесплатные уроки языка — грамматика и произношение: итальянский, немецкий, испанский, французский, эсперанто и токи пона | FlashBoss</title>
+content="Free reference lessons for Italian, German, Spanish, French, Esperanto and Toki Pona: pronunciation, articles, verb tenses, register and usage — the in-game FlashBoss lessons, rendered to read online. Tap any line to hear it. Free to read and learn from."	content="Бесплатные справочные уроки по итальянскому, немецкому, испанскому, французскому, эсперанто и токи пона: произношение, артикли, времена глагола, регистр и употребление — те же уроки, что и в игре FlashBoss, только для чтения онлайн. Нажмите на строку, чтобы её услышать. Читайте и учитесь бесплатно."
+<span class="here">lessons</span>	<span class="here">уроки</span>
+<a href="home.html">home</a>	<a href="home.html">главная</a>
+<a class="nav-home" href="home.html">home</a>	<a class="nav-home" href="home.html">главная</a>
+>resources</a>	>материалы</a>
+>word lists</a>	>списки слов</a>
+<h1>Lessons</h1>	<h1>Уроки</h1>
+<p>Free reference lessons for every FlashBoss language — <b>Italian, German, Spanish, French, Esperanto, and Toki Pona</b>. Pronunciation, articles, verb tenses, register and usage, rendered exactly as they appear inside the game and organised by tier. Read them free, and tap any <b>LISTEN</b> cue for Piper text-to-speech pronunciation.</p>	<p>Бесплатные справочные уроки по каждому языку FlashBoss — <b>итальянскому, немецкому, испанскому, французскому, эсперанто и токи пона</b>. Произношение, артикли, времена глагола, регистр и употребление — ровно в том виде, в каком они выводятся в игре, и разложенные по уровням. Читайте бесплатно и нажимайте на <b>LISTEN</b>, чтобы услышать произношение через синтезатор Piper.</p>\n    <p class="ru-note" style="margin-top:10px; font-size:13px; opacity:.75;">Сами уроки, как и в других языковых версиях сайта, показаны на английском и на изучаемом языке.</p>
+<label for="langSel">Language</label><select id="langSel" aria-label="Language"></select>	<label for="langSel">Язык</label><select id="langSel" aria-label="Язык"></select>
+<label id="setLbl" for="setSel">Set</label><select id="setSel" aria-label="Set"></select>	<label id="setLbl" for="setSel">Раздел</label><select id="setSel" aria-label="Раздел"></select>
+<label for="lessonSel">Lesson</label><select id="lessonSel" aria-label="Lesson"></select>	<label for="lessonSel">Урок</label><select id="lessonSel" aria-label="Урок"></select>
+aria-label="Lesson display language"	aria-label="Язык отображения урока"
+>share</button>	>поделиться</button>
+aria-label="Share"	aria-label="Поделиться"
+aria-label="Close"	aria-label="Закрыть"
+<div class="share-card-title">Share</div>	<div class="share-card-title">Поделиться</div>
+>copy link</button>	>скопировать ссылку</button>
+>post on X</a>	>опубликовать в X</a>
+copyBtn.textContent='copied!'	copyBtn.textContent='скопировано!'
+copyBtn.textContent='copy link'	copyBtn.textContent='скопировать ссылку'
+/* ---------- helpers ---------- */	/* Display-only Russian labels. VALUES stay English: LANGS/SETS index the data\n   files (data/<lang>/tier<N>_lessons.json) and the audio directories. */\nconst RU_NAME = {\n  "Italian":"Итальянский","German":"Немецкий","Spanish":"Испанский","French":"Французский",\n  "Esperanto":"Эсперанто","Toki Pona":"Токи пона","English":"Английский",\n  "Core":"Core","Pareto 1":"Pareto 1","Pareto 2":"Pareto 2",\n  "Adept":"Adept","Advance":"Advance","German Roots":"German Roots","Greek Roots":"Greek Roots",\n  "Norman Roots":"Norman Roots","Latin Roots":"Latin Roots"\n};\nfunction ruName(x){ return RU_NAME[x] || x; }\n/* ---------- helpers ---------- */
+function lessonLabel(L){ const n=parseInt(L&&L.lesson_id,10); return (isNaN(n)?'':'Lesson '+n+': ')+bareTitle(L); }  // window header	function lessonLabel(L){ const n=parseInt(L&&L.lesson_id,10); return (isNaN(n)?'':'Урок '+n+': ')+bareTitle(L); }  // window header
+    return `<optgroup label="Tier ${t}">${opts}</optgroup>`;	    return `<optgroup label="Уровень ${t}">${opts}</optgroup>`;
+  setSel.innerHTML=present.map(s=>`<option value="${s}"${s===curSet?' selected':''}>${s}</option>`).join('');	  setSel.innerHTML=present.map(s=>`<option value="${s}"${s===curSet?' selected':''}>${ruName(s)}</option>`).join('');
+langSel.innerHTML=LANGS.map(l=>`<option value="${l}">${l}</option>`).join('');	langSel.innerHTML=LANGS.map(l=>`<option value="${l}">${ruName(l)}</option>`).join('');
+function updateSetLabel(){ setLbl.textContent=(langSel.value==='English')?'Pack':'Set'; }	function updateSetLabel(){ setLbl.textContent=(langSel.value==='English')?'Набор':'Раздел'; }
+function notPublished(label){ return `<div class="state"><span class="ic">◈</span>${esc(label)} lessons aren't published yet — check back as packs ship.</div>`; }	function notPublished(label){ return `<div class="state"><span class="ic">◈</span>Уроки «${esc(label)}» ещё не опубликованы — загляните позже, наборы ещё выходят.</div>`; }
+  stage.innerHTML=`<div class="state"><span class="ic">◴</span>Loading ${esc(lang)} lessons…</div>`; lessonSel.innerHTML=''; setSel.innerHTML='';	  stage.innerHTML=`<div class="state"><span class="ic">◴</span>Загружаем уроки: ${esc(ruName(lang))}…</div>`; lessonSel.innerHTML=''; setSel.innerHTML='';
+  if(!LESSONS.length){ stage.innerHTML=notPublished(lang+(isEng(lang)?' '+curSet:'')); lessonSel.innerHTML=''; updateToggle(); return; }	  if(!LESSONS.length){ stage.innerHTML=notPublished(ruName(lang)+(isEng(lang)?' '+ruName(curSet):'')); lessonSel.innerHTML=''; updateToggle(); return; }
+    stage.innerHTML=`<div class="state"><span class="ic">◴</span>Loading English ${esc(curSet)} lessons…</div>`; lessonSel.innerHTML='';	    stage.innerHTML=`<div class="state"><span class="ic">◴</span>Загружаем уроки: Английский ${esc(ruName(curSet))}…</div>`; lessonSel.innerHTML='';
+    if(!LESSONS.length){ stage.innerHTML=notPublished('English '+curSet); lessonSel.innerHTML=''; updateToggle(); return; }	    if(!LESSONS.length){ stage.innerHTML=notPublished('Английский '+ruName(curSet)); lessonSel.innerHTML=''; updateToggle(); return; }
+const MOON_NAMES=['New moon','Waxing crescent','First quarter','Waxing gibbous','Full moon','Waning gibbous','Last quarter','Waning crescent'];	const MOON_NAMES=['Новолуние','Растущий серп','Первая четверть','Растущая луна','Полнолуние','Убывающая луна','Последняя четверть','Убывающий серп'];
+aria-label="Moon tonight: ${MOON.name}"	aria-label="Луна сегодня: ${MOON.name}"
+role="button" title="listen">LISTEN</span>	role="button" title="слушать">LISTEN</span>

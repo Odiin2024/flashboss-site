@@ -1,0 +1,177 @@
+{
+ "0": {
+  "en": "<title>Free Language Lessons — Italian, German, Spanish, French, Esperanto &amp; Toki Pona Grammar &amp; Pronunciation | FlashBoss</title>",
+  "ru": "<title>Бесплатные уроки языка — грамматика и произношение: итальянский, немецкий, испанский, французский, эсперанто и токи пона | FlashBoss</title>",
+  "kind": "claude"
+ },
+ "1": {
+  "en": "content=\"Free reference lessons for Italian, German, Spanish, French, Esperanto and Toki Pona: pronunciation, articles, verb tenses, register and usage — the in-game FlashBoss lessons, rendered to read online. Tap any line to hear it. Free to read and learn from.\"",
+  "ru": "content=\"Бесплатные справочные уроки по итальянскому, немецкому, испанскому, французскому, эсперанто и токи пона: произношение, артикли, времена глагола, регистр и употребление — те же уроки, что и в игре FlashBoss, только для чтения онлайн. Нажмите на строку, чтобы её услышать. Читайте и учитесь бесплатно.\"",
+  "kind": "claude"
+ },
+ "2": {
+  "en": "<span class=\"here\">lessons</span>",
+  "ru": "<span class=\"here\">уроки</span>",
+  "kind": "claude"
+ },
+ "3": {
+  "en": "<a href=\"home.html\">home</a>",
+  "ru": "<a href=\"home.html\">главная</a>",
+  "kind": "claude"
+ },
+ "4": {
+  "en": "<a class=\"nav-home\" href=\"home.html\">home</a>",
+  "ru": "<a class=\"nav-home\" href=\"home.html\">главная</a>",
+  "kind": "claude"
+ },
+ "5": {
+  "en": ">resources</a>",
+  "ru": ">материалы</a>",
+  "kind": "claude"
+ },
+ "6": {
+  "en": ">word lists</a>",
+  "ru": ">списки слов</a>",
+  "kind": "claude"
+ },
+ "7": {
+  "en": "<h1>Lessons</h1>",
+  "ru": "<h1>Уроки</h1>",
+  "kind": "claude"
+ },
+ "8": {
+  "en": "<p>Free reference lessons for every FlashBoss language — <b>Italian, German, Spanish, French, Esperanto, and Toki Pona</b>. Pronunciation, articles, verb tenses, register and usage, rendered exactly as they appear inside the game and organised by tier. Read them free, and tap any <b>LISTEN</b> cue for Piper text-to-speech pronunciation.</p>",
+  "ru": "<p>Бесплатные справочные уроки по каждому языку FlashBoss — <b>итальянскому, немецкому, испанскому, французскому, эсперанто и токи пона</b>. Произношение, артикли, времена глагола, регистр и употребление — ровно в том виде, в каком они выводятся в игре, и разложенные по уровням. Читайте бесплатно и нажимайте на <b>LISTEN</b>, чтобы услышать произношение через синтезатор Piper.</p>\n    <p class=\"ru-note\" style=\"margin-top:10px; font-size:13px; opacity:.75;\">Сами уроки, как и в других языковых версиях сайта, показаны на английском и на изучаемом языке.</p>",
+  "kind": "claude"
+ },
+ "9": {
+  "en": "<label for=\"langSel\">Language</label><select id=\"langSel\" aria-label=\"Language\"></select>",
+  "ru": "<label for=\"langSel\">Язык</label><select id=\"langSel\" aria-label=\"Язык\"></select>",
+  "kind": "claude"
+ },
+ "10": {
+  "en": "<label id=\"setLbl\" for=\"setSel\">Set</label><select id=\"setSel\" aria-label=\"Set\"></select>",
+  "ru": "<label id=\"setLbl\" for=\"setSel\">Раздел</label><select id=\"setSel\" aria-label=\"Раздел\"></select>",
+  "kind": "claude"
+ },
+ "11": {
+  "en": "<label for=\"lessonSel\">Lesson</label><select id=\"lessonSel\" aria-label=\"Lesson\"></select>",
+  "ru": "<label for=\"lessonSel\">Урок</label><select id=\"lessonSel\" aria-label=\"Урок\"></select>",
+  "kind": "claude"
+ },
+ "12": {
+  "en": "aria-label=\"Lesson display language\"",
+  "ru": "aria-label=\"Язык отображения урока\"",
+  "kind": "claude"
+ },
+ "13": {
+  "en": ">share</button>",
+  "ru": ">поделиться</button>",
+  "kind": "claude"
+ },
+ "14": {
+  "en": "aria-label=\"Share\"",
+  "ru": "aria-label=\"Поделиться\"",
+  "kind": "claude"
+ },
+ "15": {
+  "en": "aria-label=\"Close\"",
+  "ru": "aria-label=\"Закрыть\"",
+  "kind": "claude"
+ },
+ "16": {
+  "en": "<div class=\"share-card-title\">Share</div>",
+  "ru": "<div class=\"share-card-title\">Поделиться</div>",
+  "kind": "claude"
+ },
+ "17": {
+  "en": ">copy link</button>",
+  "ru": ">скопировать ссылку</button>",
+  "kind": "claude"
+ },
+ "18": {
+  "en": ">post on X</a>",
+  "ru": ">опубликовать в X</a>",
+  "kind": "claude"
+ },
+ "19": {
+  "en": "copyBtn.textContent='copied!'",
+  "ru": "copyBtn.textContent='скопировано!'",
+  "kind": "claude"
+ },
+ "20": {
+  "en": "copyBtn.textContent='copy link'",
+  "ru": "copyBtn.textContent='скопировать ссылку'",
+  "kind": "claude"
+ },
+ "21": {
+  "en": "/* ---------- helpers ---------- */",
+  "ru": "/* Display-only Russian labels. VALUES stay English: LANGS/SETS index the data\n   files (data/<lang>/tier<N>_lessons.json) and the audio directories. */\nconst RU_NAME = {\n  \"Italian\":\"Итальянский\",\"German\":\"Немецкий\",\"Spanish\":\"Испанский\",\"French\":\"Французский\",\n  \"Esperanto\":\"Эсперанто\",\"Toki Pona\":\"Токи пона\",\"English\":\"Английский\",\n  \"Core\":\"Основа\",\"Pareto 1\":\"Pareto 1\",\"Pareto 2\":\"Pareto 2\",\n  \"Adept\":\"Adept\",\"Advance\":\"Advance\",\"German Roots\":\"German Roots\",\"Greek Roots\":\"Greek Roots\",\n  \"Norman Roots\":\"Norman Roots\",\"Latin Roots\":\"Latin Roots\"\n};\nfunction ruName(x){ return RU_NAME[x] || x; }\n/* ---------- helpers ---------- */",
+  "kind": "claude"
+ },
+ "22": {
+  "en": "function lessonLabel(L){ const n=parseInt(L&&L.lesson_id,10); return (isNaN(n)?'':'Lesson '+n+': ')+bareTitle(L); }  // window header",
+  "ru": "function lessonLabel(L){ const n=parseInt(L&&L.lesson_id,10); return (isNaN(n)?'':'Урок '+n+': ')+bareTitle(L); }  // window header",
+  "kind": "claude"
+ },
+ "23": {
+  "en": "    return `<optgroup label=\"Tier ${t}\">${opts}</optgroup>`;",
+  "ru": "    return `<optgroup label=\"Уровень ${t}\">${opts}</optgroup>`;",
+  "kind": "claude"
+ },
+ "24": {
+  "en": "  setSel.innerHTML=present.map(s=>`<option value=\"${s}\"${s===curSet?' selected':''}>${s}</option>`).join('');",
+  "ru": "  setSel.innerHTML=present.map(s=>`<option value=\"${s}\"${s===curSet?' selected':''}>${ruName(s)}</option>`).join('');",
+  "kind": "claude"
+ },
+ "25": {
+  "en": "langSel.innerHTML=LANGS.map(l=>`<option value=\"${l}\">${l}</option>`).join('');",
+  "ru": "langSel.innerHTML=LANGS.map(l=>`<option value=\"${l}\">${ruName(l)}</option>`).join('');",
+  "kind": "claude"
+ },
+ "26": {
+  "en": "function updateSetLabel(){ setLbl.textContent=(langSel.value==='English')?'Pack':'Set'; }",
+  "ru": "function updateSetLabel(){ setLbl.textContent=(langSel.value==='English')?'Набор':'Раздел'; }",
+  "kind": "claude"
+ },
+ "27": {
+  "en": "function notPublished(label){ return `<div class=\"state\"><span class=\"ic\">◈</span>${esc(label)} lessons aren't published yet — check back as packs ship.</div>`; }",
+  "ru": "function notPublished(label){ return `<div class=\"state\"><span class=\"ic\">◈</span>Уроки «${esc(label)}» ещё не опубликованы — загляните позже, наборы выходят постепенно.</div>`; }",
+  "kind": "claude"
+ },
+ "28": {
+  "en": "  stage.innerHTML=`<div class=\"state\"><span class=\"ic\">◴</span>Loading ${esc(lang)} lessons…</div>`; lessonSel.innerHTML=''; setSel.innerHTML='';",
+  "ru": "  stage.innerHTML=`<div class=\"state\"><span class=\"ic\">◴</span>Загружаем уроки: ${esc(ruName(lang))}…</div>`; lessonSel.innerHTML=''; setSel.innerHTML='';",
+  "kind": "claude"
+ },
+ "29": {
+  "en": "  if(!LESSONS.length){ stage.innerHTML=notPublished(lang+(isEng(lang)?' '+curSet:'')); lessonSel.innerHTML=''; updateToggle(); return; }",
+  "ru": "  if(!LESSONS.length){ stage.innerHTML=notPublished(ruName(lang)+(isEng(lang)?' '+ruName(curSet):'')); lessonSel.innerHTML=''; updateToggle(); return; }",
+  "kind": "claude"
+ },
+ "30": {
+  "en": "    stage.innerHTML=`<div class=\"state\"><span class=\"ic\">◴</span>Loading English ${esc(curSet)} lessons…</div>`; lessonSel.innerHTML='';",
+  "ru": "    stage.innerHTML=`<div class=\"state\"><span class=\"ic\">◴</span>Загружаем уроки: Английский ${esc(ruName(curSet))}…</div>`; lessonSel.innerHTML='';",
+  "kind": "claude"
+ },
+ "31": {
+  "en": "    if(!LESSONS.length){ stage.innerHTML=notPublished('English '+curSet); lessonSel.innerHTML=''; updateToggle(); return; }",
+  "ru": "    if(!LESSONS.length){ stage.innerHTML=notPublished('Английский '+ruName(curSet)); lessonSel.innerHTML=''; updateToggle(); return; }",
+  "kind": "claude"
+ },
+ "32": {
+  "en": "const MOON_NAMES=['New moon','Waxing crescent','First quarter','Waxing gibbous','Full moon','Waning gibbous','Last quarter','Waning crescent'];",
+  "ru": "const MOON_NAMES=['Новолуние','Растущий серп','Первая четверть','Растущая луна','Полнолуние','Убывающая луна','Последняя четверть','Убывающий серп'];",
+  "kind": "claude"
+ },
+ "33": {
+  "en": "aria-label=\"Moon tonight: ${MOON.name}\"",
+  "ru": "aria-label=\"Луна сегодня: ${MOON.name}\"",
+  "kind": "claude"
+ },
+ "34": {
+  "en": "role=\"button\" title=\"listen\">LISTEN</span>",
+  "ru": "role=\"button\" title=\"слушать\">LISTEN</span>",
+  "kind": "claude"
+ }
+}

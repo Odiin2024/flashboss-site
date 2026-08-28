@@ -1,0 +1,862 @@
+{
+ "0": {
+  "en": "<span class=\"brand\"><a class=\"logo\" href=\"index.html\">FLASHBOSS</a><span class=\"pipe\">|</span><a href=\"home.html\">home</a><span class=\"sep\"> · </span><span class=\"here\">about</span></span>",
+  "ru": "<span class=\"brand\"><a class=\"logo\" href=\"index.html\">FLASHBOSS</a><span class=\"pipe\">|</span><a href=\"home.html\">главная</a><span class=\"sep\"> · </span><span class=\"here\">о проекте</span></span>",
+  "kind": "element"
+ },
+ "1": {
+  "en": "<span class=\"links\">\n    <a href=\"manual/index.html\">walkthrough (beta)</a>\n    <a href=\"packs.html\">packs</a>\n    <a href=\"resources.html\">resources</a>\n    <a class=\"steam\" href=\"https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-about\">steam</a>\n  </span>",
+  "ru": "<span class=\"links\">\n    <a href=\"manual/index.html\">руководство (бета)</a>\n    <a href=\"packs.html\">наборы</a>\n    <a href=\"resources.html\">материалы</a>\n    <a class=\"steam\" href=\"https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-about\">steam</a>\n  </span>",
+  "kind": "element"
+ },
+ "2": {
+  "en": "<span class=\"nav-mobile\">\n    <a href=\"home.html\">home</a>\n    <span class=\"r\"><a href=\"packs.html\">packs</a><a href=\"resources.html\">resources</a><a href=\"https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-about\">steam</a></span>\n  </span>",
+  "ru": "<span class=\"nav-mobile\">\n    <a href=\"home.html\">главная</a>\n    <span class=\"r\"><a href=\"packs.html\">наборы</a><a href=\"resources.html\">материалы</a><a href=\"https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-about\">steam</a></span>\n  </span>",
+  "kind": "element"
+ },
+ "3": {
+  "en": "<div class=\"crumb\">Technical Reference</div>",
+  "ru": "<div class=\"crumb\">Технический справочник</div>",
+  "kind": "element"
+ },
+ "4": {
+  "en": "<h1>How FlashBoss Teaches</h1>",
+  "ru": "<h1>Как FlashBoss учит</h1>",
+  "kind": "element"
+ },
+ "5": {
+  "en": "<p class=\"subtitle\">Content architecture, session mechanics, the boss-fight graduation system, and the design elements at play.</p>",
+  "ru": "<p class=\"subtitle\">Архитектура контента, механика сессий, система освоения через босс-файт и используемые элементы дизайна.</p>",
+  "kind": "element"
+ },
+ "6": {
+  "en": "<div class=\"toc-title\">Contents</div>",
+  "ru": "<div class=\"toc-title\">Содержание</div>",
+  "kind": "element"
+ },
+ "7": {
+  "en": "<li><a href=\"#overview\">Overview</a></li>",
+  "ru": "<li><a href=\"#overview\">Обзор</a></li>",
+  "kind": "element"
+ },
+ "8": {
+  "en": "<li><a href=\"#architecture\">Content architecture</a></li>",
+  "ru": "<li><a href=\"#architecture\">Архитектура контента</a></li>",
+  "kind": "element"
+ },
+ "9": {
+  "en": "<li><a href=\"#masters\">Masters</a></li>",
+  "ru": "<li><a href=\"#masters\">Мастера</a></li>",
+  "kind": "element"
+ },
+ "10": {
+  "en": "<li><a href=\"#packs\">Pack structure</a></li>",
+  "ru": "<li><a href=\"#packs\">Структура набора</a></li>",
+  "kind": "element"
+ },
+ "11": {
+  "en": "<li><a href=\"#session\">Session structure and scheduling</a></li>",
+  "ru": "<li><a href=\"#session\">Структура сессии и расписание</a></li>",
+  "kind": "element"
+ },
+ "12": {
+  "en": "<li><a href=\"#fight\">The boss fight</a></li>",
+  "ru": "<li><a href=\"#fight\">Босс-файт</a></li>",
+  "kind": "element"
+ },
+ "13": {
+  "en": "<li><a href=\"#pedagogy\">Pedagogical design</a></li>",
+  "ru": "<li><a href=\"#pedagogy\">Педагогический дизайн</a></li>",
+  "kind": "element"
+ },
+ "14": {
+  "en": "<li><a href=\"#scope\">Scope</a></li>",
+  "ru": "<li><a href=\"#scope\">Объем</a></li>",
+  "kind": "element"
+ },
+ "15": {
+  "en": "<li><a href=\"#effective\">Using FlashBoss effectively</a></li>",
+  "ru": "<li><a href=\"#effective\">Эффективное использование FlashBoss</a></li>",
+  "kind": "element"
+ },
+ "16": {
+  "en": "<h2>Overview</h2>",
+  "ru": "<h2>Обзор</h2>",
+  "kind": "element"
+ },
+ "17": {
+  "en": "<p>FlashBoss is a desktop terminal application for vocabulary acquisition. It combines a spaced-repetition scheduler, constructed example sentences with text-to-speech, themed content clusters, and a boss-fight graduation mechanic. The system is designed to develop receptive skills — reading, listening, and comprehension — in the target language.</p>",
+  "ru": "<p>FlashBoss — это настольное терминальное приложение для изучения словарного запаса. Оно объединяет планировщик интервального повторения, составленные примеры предложений с синтезом речи, тематические блоки контента и механику освоения через босс-файты. Система предназначена для развития рецептивных навыков — чтения, аудирования и понимания — в изучаемом языке.</p>",
+  "kind": "element"
+ },
+ "18": {
+  "en": "<p>A single Core pack contains 1,000 cards and delivers approximately 10,000 words of target-language input in context. Pareto expansion packs add roughly 20,000 words each, structured around the highest-frequency vocabulary not already covered. Supported languages are English, German, Spanish, Italian, and Esperanto.</p>",
+  "ru": "<p>Один набор Core содержит 1000 карточек и обеспечивает примерно 10000 слов изучаемого языка в контексте. Наборы расширения Pareto добавляют каждый примерно по 20000 слов, построенные вокруг наиболее частотной лексики, ещё не охваченной. Поддерживаемые языки: английский, немецкий, испанский, итальянский и эсперанто.</p>",
+  "kind": "element"
+ },
+ "19": {
+  "en": "<h2>Content architecture</h2>",
+  "ru": "<h2>Архитектура контента</h2>",
+  "kind": "element"
+ },
+ "20": {
+  "en": "<p>This section describes the internal structure common to FlashBoss packs. Pack-level organization — how packs combine, and how foreign-language packs differ from English packs — is documented in section 4.</p>",
+  "ru": "<p>В этом разделе описывается внутренняя структура, общая для наборов FlashBoss. Организация на уровне наборов — как наборы объединяются и чем наборы для иностранных языков отличаются от наборов для английского — описана в разделе 4.</p>",
+  "kind": "element"
+ },
+ "21": {
+  "en": "<h3>Card</h3>",
+  "ru": "<h3>Карточка</h3>",
+  "kind": "element"
+ },
+ "22": {
+  "en": "<p>Each card carries up to five text fields and two audio assets. Only the target-language fields are voiced:</p>",
+  "ru": "<p>Каждая карточка содержит до пяти текстовых полей и два аудиофайла. Озвучиваются только поля на изучаемом языке:</p>",
+  "kind": "element"
+ },
+ "23": {
+  "en": "<th>Field</th>",
+  "ru": "<th>Поле</th>",
+  "kind": "element"
+ },
+ "24": {
+  "en": "<th>Content</th>",
+  "ru": "<th>Содержание</th>",
+  "kind": "element"
+ },
+ "25": {
+  "en": "<th>TTS</th>",
+  "ru": "<th>TTS</th>",
+  "kind": "element"
+ },
+ "26": {
+  "en": "<td><code>TargetWord</code></td>",
+  "ru": "<td><code>TargetWord</code></td>",
+  "kind": "element"
+ },
+ "27": {
+  "en": "<td>The vocabulary item being trained. In gendered languages it carries its article, colour-coded to gender.</td>",
+  "ru": "<td>Словарная единица, которая тренируется. В языках с грамматическим родом она сопровождается артиклем, цветом обозначающим род.</td>",
+  "kind": "element"
+ },
+ "28": {
+  "en": "<td>Yes</td>",
+  "ru": "<td>Да</td>",
+  "kind": "element"
+ },
+ "29": {
+  "en": "<td><code>Translation</code></td>",
+  "ru": "<td><code>Translation</code></td>",
+  "kind": "element"
+ },
+ "30": {
+  "en": "<td>The target word's meaning in the learner's native language.</td>",
+  "ru": "<td>Значение целевого слова на родном языке учащегося.</td>",
+  "kind": "element"
+ },
+ "31": {
+  "en": "<td>No</td>",
+  "ru": "<td>Нет</td>",
+  "kind": "element"
+ },
+ "32": {
+  "en": "<td><code>ExampleSentence</code></td>",
+  "ru": "<td><code>ExampleSentence</code></td>",
+  "kind": "element"
+ },
+ "33": {
+  "en": "<td>A constructed sentence placing the target word in context, using only vocabulary the scheduler has already introduced.</td>",
+  "ru": "<td>Построенное предложение, помещающее целевое слово в контекст, используя только лексику, уже введённую планировщиком.</td>",
+  "kind": "element"
+ },
+ "34": {
+  "en": "<td><code>ExampleTranslation</code></td>",
+  "ru": "<td><code>ExampleTranslation</code></td>",
+  "kind": "element"
+ },
+ "35": {
+  "en": "<td>An idiomatic rendering of the example sentence in the learner's native language.</td>",
+  "ru": "<td>Идиоматический перевод примера предложения на родной язык учащегося.</td>",
+  "kind": "element"
+ },
+ "36": {
+  "en": "<td><code>Notes</code></td>",
+  "ru": "<td><code>Notes</code></td>",
+  "kind": "element"
+ },
+ "37": {
+  "en": "<td>Etymology, grammatical note, a second worked example, or a synonym set. Optional.</td>",
+  "ru": "<td>Этимология, грамматическое примечание, второй проработанный пример или набор синонимов. Опционально.</td>",
+  "kind": "element"
+ },
+ "38": {
+  "en": "<p>Text-to-speech is applied only to the target-language fields. This asymmetry is deliberate: the goal is to saturate the learner in the target language's phonology while keeping the native-language scaffolding silent and unintrusive.</p>",
+  "ru": "<p>Преобразование текста в речь применяется только к полям на целевом языке. Эта асимметрия намеренна: цель — насытить учащегося фонологией целевого языка, оставляя родноязычную опору беззвучной и ненавязчивой.</p>",
+  "kind": "element"
+ },
+ "39": {
+  "en": "<h3>Cluster</h3>",
+  "ru": "<h3>Блок</h3>",
+  "kind": "element"
+ },
+ "40": {
+  "en": "<p>A cluster is a themed group of cards — the unit of progress in FlashBoss. Clusters are introduced together, trained together, and graduated together through a single boss fight. Cluster themes are concrete and narrow: <em>Numbers and time</em>, <em>Travel and accommodation</em>, <em>Regional cuisine</em>, <em>Social roles and people</em>.</p>",
+  "ru": "<p>Блок — это тематическая группа карточек — единица прогресса в FlashBoss. Блоки вводятся вместе, тренируются вместе и осваиваются вместе через один босс-файт. Темы блоков конкретны и узки: <em>Числа и время</em>, <em>Путешествия и размещение</em>, <em>Региональная кухня</em>, <em>Социальные роли и люди</em>.</p>",
+  "kind": "element"
+ },
+ "41": {
+  "en": "<h3>Tier</h3>",
+  "ru": "<h3>Уровень</h3>",
+  "kind": "element"
+ },
+ "42": {
+  "en": "<p>Clusters sit inside tiers. A Core pack contains five tiers, each typically comprising around eight clusters. In foreign-language packs, tier membership is a difficulty gate: it governs which grammar structures may appear in a cluster's example sentences. Tier 3 example sentences are restricted to present, imperative, and preterite; tier 4 adds imperfect and conditional; tier 5 opens full grammar including subjunctive. In English packs the tier system is used thematically rather than syntactically — tier membership reflects topical domain (e.g. <em>Forms and documents</em>, <em>Social and email</em>, <em>Confusables</em>) rather than grammatical complexity.</p>",
+  "ru": "<p>Блоки находятся внутри уровней. Набор Core содержит пять уровней, каждый из которых обычно включает около восьми блоков. В наборах иностранных языков принадлежность к уровню является порогом сложности: она определяет, какие грамматические структуры могут появляться в примерах предложений блока. Примеры предложений уровня 3 ограничены настоящим, повелительным и претеритом; уровень 4 добавляет имперфект и условное наклонение; уровень 5 открывает полную грамматику, включая сослагательное наклонение. В английских наборах система уровней используется тематически, а не синтаксически — принадлежность к уровню отражает тематическую область (например, <em>Формы и документы</em>, <em>Социальное и email</em>, <em>Путаницы</em>), а не грамматическую сложность.</p>",
+  "kind": "element"
+ },
+ "43": {
+  "en": "<h3>Lesson</h3>",
+  "ru": "<h3>Урок</h3>",
+  "kind": "element"
+ },
+ "44": {
+  "en": "<p>Lessons are reference pages pinned to specific cards — checkpoint material that accompanies a card through training. When a card with an attached lesson first appears, the lesson appears alongside. Each time the card resurfaces under the spaced-repetition schedule, the lesson resurfaces with it. Lessons are therefore persistent reference, not one-time exposures. A learner who has internalized a lesson's content can deactivate it individually: the card continues training, the lesson stops appearing.</p>",
+  "ru": "<p>Уроки — это справочные страницы, прикреплённые к конкретным карточкам — справочный материал, который сопровождает карточку во время тренировки. Когда карточка с прикреплённым уроком появляется впервые, урок появляется рядом. Каждый раз, когда карточка снова появляется по расписанию интервального повторения, урок появляется вместе с ней. Таким образом, уроки являются постоянным справочным материалом, а не однократным показом. Ученик, который усвоил содержание урока, может отключить его индивидуально: карточка продолжает тренировку, урок перестаёт появляться.</p>",
+  "kind": "element"
+ },
+ "45": {
+  "en": "<h2>Masters</h2>",
+  "ru": "<h2>Мастера</h2>",
+  "kind": "element"
+ },
+ "46": {
+  "en": "<p>Before training begins, the learner chooses a master — the guide who sets the daily pace. A master fixes the <em>streak requirement</em>: the number of cards owed each day to keep the streak alive, ranging from 8 to 34 cards, roughly 5 to 30 minutes of study.</p>",
+  "ru": "<p>Перед началом тренировки ученик выбирает мастера — наставника, который задаёт ежедневный темп. Мастер устанавливает <em>требование к серии</em>: количество карточек, которые нужно выполнять каждый день, чтобы сохранить серию, от 8 до 34 карточек, что составляет примерно от 5 до 30 минут занятий.</p>",
+  "kind": "element"
+ },
+ "47": {
+  "en": "<th>Master</th>",
+  "ru": "<th>Мастер</th>",
+  "kind": "element"
+ },
+ "48": {
+  "en": "<th>Temperament</th>",
+  "ru": "<th>Темперамент</th>",
+  "kind": "element"
+ },
+ "49": {
+  "en": "<th>Cards / day</th>",
+  "ru": "<th>Карточек / день</th>",
+  "kind": "element"
+ },
+ "50": {
+  "en": "<td>🐺 Luna — gentle, encouraging</td>",
+  "ru": "<td>🐺 Luna — нежная, ободряющая</td>",
+  "kind": "element"
+ },
+ "51": {
+  "en": "<td>Bossy</td>",
+  "ru": "<td>Командирный</td>",
+  "kind": "element"
+ },
+ "52": {
+  "en": "<td>⚫ Claude — analytical, precise</td>",
+  "ru": "<td>⚫ Claude — аналитичный, точный</td>",
+  "kind": "element"
+ },
+ "53": {
+  "en": "<td>Advisory</td>",
+  "ru": "<td>Консультативный</td>",
+  "kind": "element"
+ },
+ "54": {
+  "en": "<td>🐉 Shen — stern, direct</td>",
+  "ru": "<td>🐉 Шэнь — строгий, прямой</td>",
+  "kind": "element"
+ },
+ "55": {
+  "en": "<td>🦉 Odiin — encouraging, kind</td>",
+  "ru": "<td>🦉 Odiin — ободряющий, добрый</td>",
+  "kind": "element"
+ },
+ "56": {
+  "en": "<td>🦊 Kitsune — playful trickster</td>",
+  "ru": "<td>🦊 Кицунэ — игривый трикстер</td>",
+  "kind": "element"
+ },
+ "57": {
+  "en": "<td>🦅 Aquila — noble, disciplined</td>",
+  "ru": "<td>🦅 Аквила — благородный, дисциплинированный</td>",
+  "kind": "element"
+ },
+ "58": {
+  "en": "<p>How demanding a master is comes down to that daily count. Odiin, at twenty-one cards, is the most demanding master recommended to a new learner — the high road. The two thirty-four-card masters, Kitsune and Aquila, sit beyond it: pacing for revision passes and for outliers who want the maximum.</p>",
+  "ru": "<p>Насколько требователен мастер, сводится к этому ежедневному количеству. Одиин, с двадцатью одной карточкой, — самый требовательный мастер, рекомендованный новому ученику — трудный путь. Два мастера с тридцатью четырьмя карточками, Кицунэ и Аквила, находятся за ним: темп для проходов повторения и для выбросов, желающих максимума.</p>",
+  "kind": "element"
+ },
+ "59": {
+  "en": "<p>A master's <em>temperament</em> is a separate matter, and it governs one thing — the grimoire. A <strong>bossy</strong> master limits grimoire sessions, a guard against running too far ahead and burning out. An <strong>advisory</strong> master warns that another is unwise, then steps aside and lets it happen. The two are otherwise identical.</p>",
+  "ru": "<p><em>Темперамент</em> мастера — это отдельный вопрос, и он управляет одной вещью — гримуаром. <strong>Властный</strong> мастер ограничивает сеансы гримуара, защита от забегания вперед и выгорания. <strong>Советующий</strong> мастер предупреждает, что другой неразумен, затем отступает в сторону и позволяет этому случиться. В остальном они идентичны.</p>",
+  "kind": "element"
+ },
+ "60": {
+  "en": "<p>The pairing is uneven. Both the thirteen- and thirty-four-card paces come in either temperament — Claude (advisory) or Shen (bossy) at thirteen, Kitsune (advisory) or Aquila (bossy) at thirty-four — so there, pace and style are chosen separately. The eight-card pace belongs to Luna alone (bossy) and the twenty-one to Odiin alone (advisory).</p>",
+  "ru": "<p>Пары неравны. Темпы на тринадцать и тридцать четыре карточки доступны в любом темпераменте — Клод (советующий) или Шен (властный) на тринадцать, Кицунэ (советующая) или Аквила (властный) на тридцать четыре — так что там темп и стиль выбираются отдельно. Темп на восемь карточек принадлежит только Луне (властная), а на двадцать один — только Одину (советующий).</p>",
+  "kind": "element"
+ },
+ "61": {
+  "en": "<h2>Pack structure</h2>",
+  "ru": "<h2>Структура набора</h2>",
+  "kind": "element"
+ },
+ "62": {
+  "en": "<p>A pack is FlashBoss's distribution unit: a standalone vocabulary set — typically 1,000 cards — with its own cluster structure, tier structure, and lesson library. Packs ship under two different paradigms depending on the language.</p>",
+  "ru": "<p>Набор — это единица распространения FlashBoss: автономный набор лексики — обычно 1000 карточек — со своей структурой блоков, уровней и библиотекой уроков. Наборы поставляются по двум разным парадигмам в зависимости от языка.</p>",
+  "kind": "element"
+ },
+ "63": {
+  "en": "<h3>Foreign-language packs: cumulative three-pack progression</h3>",
+  "ru": "<h3>Наборы для иностранных языков: кумулятивная прогрессия из трех наборов</h3>",
+  "kind": "element"
+ },
+ "64": {
+  "en": "<p>German, Spanish, Italian, and Esperanto each ship as a three-pack sequence: <strong>Core</strong>, <strong>Pareto 1</strong>, and <strong>Pareto 2</strong>. The progression is cumulative — each pack assumes the vocabulary introduced in previous packs and constructs new example sentences on top. Example sentences in Pareto 1 draw from Core vocabulary plus the new Pareto 1 target words; Pareto 2 assumes both prior packs. A learner completing all three reaches a 3,000-card receptive vocabulary in the target language.</p>",
+  "ru": "<p>Немецкий, испанский, итальянский и эсперанто поставляются как последовательность из трех наборов: <strong>Core</strong>, <strong>Pareto 1</strong> и <strong>Pareto 2</strong>. Прогрессия накопительная — каждый набор предполагает лексику, введенную в предыдущих наборах, и строит на их основе новые примеры предложений. Примеры в Pareto 1 используют лексику Core плюс новые целевые слова Pareto 1; Pareto 2 предполагает оба предыдущих набора. Учащийся, завершивший все три, достигает пассивного словарного запаса в 3000 карточек на целевом языке.</p>",
+  "kind": "element"
+ },
+ "65": {
+  "en": "<p>Tier numbering is continuous across the sequence. Core covers tiers 1–5. Pareto 1 and Pareto 2 between them extend the sequence by ten further tiers: tier 6 is the first Pareto tier, tier 15 is the last.</p>",
+  "ru": "<p>Нумерация уровней непрерывна по всей последовательности. Core охватывает уровни 1–5. Pareto 1 и Pareto 2 вместе продлевают последовательность еще на десять уровней: уровень 6 — первый уровень Pareto, уровень 15 — последний.</p>",
+  "kind": "element"
+ },
+ "66": {
+  "en": "<p>CEFR targets by pack:</p>",
+  "ru": "<p>Цели CEFR по наборам:</p>",
+  "kind": "element"
+ },
+ "67": {
+  "en": "<th>Pack</th>",
+  "ru": "<th>Набор</th>",
+  "kind": "element"
+ },
+ "68": {
+  "en": "<th>Cards</th>",
+  "ru": "<th>Карточки</th>",
+  "kind": "element"
+ },
+ "69": {
+  "en": "<th>Target</th>",
+  "ru": "<th>Цель</th>",
+  "kind": "element"
+ },
+ "70": {
+  "en": "<td><code>Core</code></td>",
+  "ru": "<td><code>Core</code></td>",
+  "kind": "element"
+ },
+ "71": {
+  "en": "<td>A1–A2 grammar exposure; prepares a learner for A2 immersion instruction.</td>",
+  "ru": "<td>Ознакомление с грамматикой A1–A2; готовит учащегося к обучению в условиях погружения на уровне A2.</td>",
+  "kind": "element"
+ },
+ "72": {
+  "en": "<td><code>Pareto 1</code></td>",
+  "ru": "<td><code>Pareto 1</code></td>",
+  "kind": "element"
+ },
+ "73": {
+  "en": "<td>High-frequency B1–B2 vocabulary; extends into registers absent from Core (travel, bureaucratic, social).</td>",
+  "ru": "<td>Высокочастотная лексика уровней B1–B2; расширяется за счёт регистров, отсутствующих в Core (путешествия, бюрократия, общение).</td>",
+  "kind": "element"
+ },
+ "74": {
+  "en": "<td><code>Pareto 2</code></td>",
+  "ru": "<td><code>Pareto 2</code></td>",
+  "kind": "element"
+ },
+ "75": {
+  "en": "<td>B2–C1 vocabulary; formal connectors, abstract registers, cultural content.</td>",
+  "ru": "<td>Лексика B2–C1; формальные связки, абстрактные регистры, культурный контент.</td>",
+  "kind": "element"
+ },
+ "76": {
+  "en": "<h3>English packs: individual standalones</h3>",
+  "ru": "<h3>Наборы английского: отдельные самостоятельные</h3>",
+  "kind": "element"
+ },
+ "77": {
+  "en": "<p>English ships differently. Each English pack is a self-contained 1,000-word vocabulary set, and learners select packs based on level and interest rather than completing them in order. There is no cumulative progression — completing one English pack does not presuppose another. English packs fall into two structural families:</p>",
+  "ru": "<p>Английский распространяется иначе. Каждый набор английского — это самостоятельный лексический набор из 1000 слов, и учащиеся выбирают наборы по уровню и интересу, а не проходят их по порядку. Нет кумулятивного прогресса — завершение одного набора английского не предполагает другого. Наборы английского делятся на две структурные семьи:</p>",
+  "kind": "element"
+ },
+ "78": {
+  "en": "<li><strong>Level packs</strong> — vocabulary that pulls a reader up a level and leaves them there. <em>English Adept</em>, the free hub pack, spans the longest climb: it onramps from below an eighth-grade reading level and carries the learner up to university readiness, terminating around C1. <em>English Advance</em> targets the practical English of functioning in society without limitation: the forms, letters, officialdom, and everyday documents adult life demands. The guiding principle is to do it once, properly, and you will never have to think about it again.</li>",
+  "ru": "<li><strong>Уровневые наборы</strong> — лексика, которая поднимает читателя на уровень и оставляет его там. <em>English Adept</em>, бесплатный центральный набор, охватывает самый длинный подъём: он начинается с уровня чтения ниже восьмого класса и ведёт учащегося до готовности к университету, заканчивая примерно на C1. <em>English Advance</em> нацелен на практический английский для полноценной жизни в обществе без ограничений: формы, письма, бюрократию и повседневные документы, которые требует взрослая жизнь. Руководящий принцип — сделать это один раз правильно, и вам больше никогда не придётся об этом думать.</li>",
+  "kind": "element"
+ },
+ "79": {
+  "en": "<li><strong>The Roots series</strong> — paid packs that drill English vocabulary through its three etymological strata: <em>German Roots</em> (Anglo-Saxon), <em>Norman Roots</em> (Norman-French), and <em>Latin Roots</em> (scholarly). Cross-references between the three surface the historical doublets that give English its register system.</li>",
+  "ru": "<li><strong>Серия Roots</strong> — платные наборы, которые тренируют английскую лексику через три её этимологических слоя: <em>German Roots</em> (англосаксонский), <em>Norman Roots</em> (нормандско-французский), и <em>Latin Roots</em> (учёный). Перекрёстные ссылки между ними выявляют исторические дублеты, которые формируют регистровую систему английского.</li>",
+  "kind": "element"
+ },
+ "80": {
+  "en": "<h2>Session structure and scheduling</h2>",
+  "ru": "<h2>Структура сеанса и расписание</h2>",
+  "kind": "element"
+ },
+ "81": {
+  "en": "<p>A training session processes each card through five phases. The first four are per-card; the fifth is per-cluster.</p>",
+  "ru": "<p>Тренировочный сеанс обрабатывает каждую карточку через пять фаз. Первые четыре — на каждую карточку, пятая — на каждый блок.</p>",
+  "kind": "element"
+ },
+ "82": {
+  "en": "<h3>Listen</h3>",
+  "ru": "<h3>Слушай</h3>",
+  "kind": "element"
+ },
+ "83": {
+  "en": "<p>Piper text-to-speech audio plays the target word as it appears on screen. When the learner is ready, a key press displays and pronounces the example sentence. This is first exposure.</p>",
+  "ru": "<p>Аудио Piper (текст-в-речь) воспроизводит целевое слово, когда оно появляется на экране. Когда учащийся готов, нажатие клавиши отображает и произносит пример предложения. Это первое знакомство.</p>",
+  "kind": "element"
+ },
+ "84": {
+  "en": "<h3>Read</h3>",
+  "ru": "<h3>Читай</h3>",
+  "kind": "element"
+ },
+ "85": {
+  "en": "<p>At each step, reading the pronounced material aloud consolidates memory and improves the learner's pronunciation and speaking confidence. The learner then has time to parse the sentence, cross-reference the translation, and absorb the grammar in context.</p>",
+  "ru": "<p>На каждом шаге чтение произносимого материала вслух закрепляет память и улучшает произношение и уверенность в речи учащегося. Затем учащийся имеет время разобрать предложение, сверить перевод и усвоить грамматику в контексте.</p>",
+  "kind": "element"
+ },
+ "86": {
+  "en": "<h3>Repeat</h3>",
+  "ru": "<h3>Повторяй</h3>",
+  "kind": "element"
+ },
+ "87": {
+  "en": "<p>When the English translation is presented, replay controls become available: <code>Enter</code> replays the target word, and <code>6</code> replays the example sentence. Repeat cycles are unlimited at this phase; the learner moves forward when ready.</p>",
+  "ru": "<p>Когда представлен английский перевод, становятся доступны элементы управления воспроизведением: <code>Enter</code> воспроизводит заново целевое слово, а <code>6</code> воспроизводит заново пример предложения. Циклы повторения на этой фазе неограниченны; учащийся продолжает, когда готов.</p>",
+  "kind": "element"
+ },
+ "88": {
+  "en": "<h3>Rate</h3>",
+  "ru": "<h3>Оценивай</h3>",
+  "kind": "element"
+ },
+ "89": {
+  "en": "<p>The learner rates their recognition on a six-point scale (0 through 5). The rating shifts the card's position in a Fibonacci interval sequence (1, 2, 3, 5, 8, 13, 21… days), with a per-rating minimum interval applied as a floor. Rating 0 is a special case — a reset to 1 day regardless of the card's prior position.</p>",
+  "ru": "<p>Учащийся оценивает своё узнавание по шестибалльной шкале (от 0 до 5). Оценка сдвигает позицию карточки в последовательности интервалов Фибоначчи (1, 2, 3, 5, 8, 13, 21… дней), при этом для каждой оценки применяется минимальный интервал в качестве нижней границы. Оценка 0 — особый случай: сброс до 1 дня независимо от предыдущей позиции карточки.</p>",
+  "kind": "element"
+ },
+ "90": {
+  "en": "<th>Rating</th>",
+  "ru": "<th>Оценка</th>",
+  "kind": "element"
+ },
+ "91": {
+  "en": "<th>Meaning</th>",
+  "ru": "<th>Значение</th>",
+  "kind": "element"
+ },
+ "92": {
+  "en": "<th>Interval change</th>",
+  "ru": "<th>Изменение интервала</th>",
+  "kind": "element"
+ },
+ "93": {
+  "en": "<td>Forgot completely.</td>",
+  "ru": "<td>Полностью забыл.</td>",
+  "kind": "element"
+ },
+ "94": {
+  "en": "<td>Reset to 1 day.</td>",
+  "ru": "<td>Сброс до 1 дня.</td>",
+  "kind": "element"
+ },
+ "95": {
+  "en": "<td>Very poor.</td>",
+  "ru": "<td>Очень плохо.</td>",
+  "kind": "element"
+ },
+ "96": {
+  "en": "<td>Position −3 (minimum 1 day).</td>",
+  "ru": "<td>Позиция −3 (минимум 1 день).</td>",
+  "kind": "element"
+ },
+ "97": {
+  "en": "<td>Poor.</td>",
+  "ru": "<td>Плохо.</td>",
+  "kind": "element"
+ },
+ "98": {
+  "en": "<td>Position −2 (minimum 2 days).</td>",
+  "ru": "<td>Позиция −2 (минимум 2 дня).</td>",
+  "kind": "element"
+ },
+ "99": {
+  "en": "<td>Okay.</td>",
+  "ru": "<td>Нормально.</td>",
+  "kind": "element"
+ },
+ "100": {
+  "en": "<td>Position −1 (minimum 3 days).</td>",
+  "ru": "<td>Позиция −1 (минимум 3 дня).</td>",
+  "kind": "element"
+ },
+ "101": {
+  "en": "<td>Good.</td>",
+  "ru": "<td>Хорошо.</td>",
+  "kind": "element"
+ },
+ "102": {
+  "en": "<td>No change (minimum 5 days).</td>",
+  "ru": "<td>Без изменений (минимум 5 дней).</td>",
+  "kind": "element"
+ },
+ "103": {
+  "en": "<td>Perfect.</td>",
+  "ru": "<td>Отлично.</td>",
+  "kind": "element"
+ },
+ "104": {
+  "en": "<td>Position +1 (minimum 8 days).</td>",
+  "ru": "<td>Позиция +1 (минимум 8 дней).</td>",
+  "kind": "element"
+ },
+ "105": {
+  "en": "<p>The scale is calibrated to require aggressive rating for progress. Only a 5 advances a card; 4 holds position; 1 through 3 step the card backward through the Fibonacci schedule; 0 resets it to 1 day. The per-rating minimum intervals prevent a card's interval from collapsing on a bad rating, and they anchor the mastery rule.</p>",
+  "ru": "<p>Шкала откалибрована так, чтобы для прогресса требовалась агрессивная оценка. Только 5 продвигает карточку; 4 сохраняет позицию; 1–3 отодвигают карточку назад по расписанию Фибоначчи; 0 сбрасывает её на 1 день. Минимальные интервалы для каждой оценки предотвращают обвал интервала карточки при плохой оценке и закрепляют правило освоения.</p>",
+  "kind": "element"
+ },
+ "106": {
+  "en": "<h3>Card mastery</h3>",
+  "ru": "<h3>Освоение карточки</h3>",
+  "kind": "element"
+ },
+ "107": {
+  "en": "<p>A card is mastered on two consecutive 5 ratings. The mechanism is direct: a single 5 lifts the card's minimum interval to 8 days; a second 5 advances it to 13 days — the mastery threshold. From any starting position, two consecutive perfect recalls therefore carry a card to mastery.</p>",
+  "ru": "<p>Карточка считается освоенной после двух последовательных оценок 5. Механизм прост: одна оценка 5 поднимает минимальный интервал карточки до 8 дней; вторая оценка 5 продвигает его до 13 дней — порога освоения. Таким образом, с любой начальной позиции два последовательных идеальных припоминания доводят карточку до освоения.</p>",
+  "kind": "element"
+ },
+ "108": {
+  "en": "<h3>Daily sessions</h3>",
+  "ru": "<h3>Ежедневные занятия</h3>",
+  "kind": "element"
+ },
+ "109": {
+  "en": "<p>New cards are drawn into the deck one at a time in cluster order; cluster boundaries do not gate card introduction. Daily card volume follows a Fibonacci ratio — for a given day's session, review cards and new cards are drawn in proportion to consecutive Fibonacci numbers, so the mix approaches φ, the golden ratio.</p>",
+  "ru": "<p>Новые карточки добавляются в колоду по одной в порядке блоков; границы блоков не ограничивают ввод карточек. Ежедневное количество карточек следует соотношению Фибоначчи — для сессии данного дня карточки для повторения и новые карточки добавляются пропорционально последовательным числам Фибоначчи, так что смесь стремится к φ, золотому сечению.</p>",
+  "kind": "element"
+ },
+ "110": {
+  "en": "<h3>Bossfight ready?</h3>",
+  "ru": "<h3>Готов к босс-файту?</h3>",
+  "kind": "element"
+ },
+ "111": {
+  "en": "<p>A cluster becomes eligible for its boss fight when 80% of its cards are mastered — when 80% have reached the 13-day interval. You don't need to master every card to fight: but you do need to defeat your most challenging two cards in a row to win. Fight mechanics are discussed in detail in the following section.</p>",
+  "ru": "<p>Блок становится доступным для своего босс-файта, когда 80% его карточек освоены — когда 80% достигли интервала в 13 дней. Вам не нужно осваивать каждую карточку, чтобы сражаться: но вам нужно победить две самые сложные карточки подряд, чтобы выиграть. Механика боя подробно обсуждается в следующем разделе.</p>",
+  "kind": "element"
+ },
+ "112": {
+  "en": "<h2>The boss fight</h2>",
+  "ru": "<h2>Босс-файт</h2>",
+  "kind": "element"
+ },
+ "113": {
+  "en": "<p>The boss fight is the graduation mechanism for a cluster. It is the only way a cluster transitions out of active training. Unlike the Rate phase — which is self-assessed — the boss fight is adversarial and strictly multiple-choice. The learner and the boss share a single linear arena; the learner starts at the left, the boss stands further right. The task is to shove the boss off the far end. Sumo rules: only one remains on the platform.</p>",
+  "ru": "<p>Босс-файт — это механизм завершения кластера. Это единственный способ, которым кластер выходит из активного обучения. В отличие от фазы «Оценка» — где вы оцениваете себя сами, — босс-файт состязательный и строго множественного выбора. Ученик и босс находятся на одной линейной арене; ученик начинает слева, босс стоит правее. Задача — столкнуть босса с дальнего конца. Правила сумо: на платформе остаётся только один.</p>",
+  "kind": "element"
+ },
+ "114": {
+  "en": "<p>Each turn presents one of the cluster's cards as a prompt, with eight possible answers on the number keys 1–8. A correct answer advances the learner one position along the track; the boss is simultaneously shoved one position closer to the far edge. A wrong answer slides the learner two positions back toward the near edge, or off of it. When pushed off the near edge, the learner is locked out of that cluster's fight until the next day. Shoved past the far edge, the boss is defeated and the cluster is conquered.</p>",
+  "ru": "<p>Каждый ход предъявляет одну из карточек кластера в качестве подсказки, с восемью возможными ответами на клавишах с цифрами 1–8. Правильный ответ продвигает ученика на одну позицию по дорожке; босса одновременно сдвигают на одну позицию ближе к дальнему краю. Неправильный ответ отодвигает ученика на две позиции назад к ближнему краю или за его пределы. Когда ученик выталкивается за ближний край, он блокируется в бою этого кластера до следующего дня. Если босс вытолкнут за дальний край, он побеждён, и кластер считается освоенным.</p>",
+  "kind": "element"
+ },
+ "115": {
+  "en": "<p class=\"bf-text\">The arena: a single horizontal track the learner (left) and the boss (right) share, with a marker at the far edge — the boss's exit. A correct answer advances the learner one position and shoves the boss one closer to that edge; a wrong answer slides the learner two positions back. Positions 1–2 draw the cluster's easiest cards, positions 3–4 its hardest. Fall off the near edge and the cluster locks until the next day; shove the boss past the far edge and the cluster is conquered.</p>",
+  "ru": "<p class=\"bf-text\">Арена: одна горизонтальная дорожка, которую делят ученик (слева) и босс (справа), с отметкой на дальнем краю — выход босса. Правильный ответ продвигает ученика на одну позицию и сдвигает босса на одну ближе к этому краю; неправильный ответ отодвигает ученика на две позиции назад. Позиции 1–2 берут самые лёгкие карточки кластера, позиции 3–4 — самые сложные. Падение за ближний край блокирует кластер до следующего дня; столкните босса за дальний край — и кластер считается освоенным.</p>",
+  "kind": "element"
+ },
+ "116": {
+  "en": "<span class=\"bf-hint\">click to fight</span>",
+  "ru": "<span class=\"bf-hint\">нажмите, чтобы сразиться</span>",
+  "kind": "element"
+ },
+ "117": {
+  "en": "<p>Card ordering inside the fight is deliberate. Positions 1 and 2 pull from the cluster's easiest cards — a warm-up that lets the learner build a positional lead. Positions 3 and 4 pull from the cluster's hardest: the weakest words in the deck, delivered as soon as the learner has started to gain ground. A wrong answer at position 3 or 4 slides the learner two positions back — landing on position 1 or 2 — and the missed card is reclassified as the learner's easiest from that moment on. Unfortunately, that means it's waiting for them: the same card, now sitting in the easy slots where they've just landed. A cluster cannot be conquered until its weakest cards are mastered.</p>",
+  "ru": "<p>Порядок карточек внутри боя продуман. Позиции 1 и 2 берут самые лёгкие карточки кластера — разминка, позволяющая ученику набрать позиционное преимущество. Позиции 3 и 4 берут самые сложные карточки кластера: самые слабые слова в колоде, которые появляются, как только ученик начал продвигаться. Неправильный ответ на позиции 3 или 4 отодвигает ученика на две позиции назад — оказываясь на позиции 1 или 2 — и пропущенная карточка переклассифицируется как самая лёгкая для ученика с этого момента. К сожалению, это означает, что она ждёт его: та же карточка, теперь находящаяся в лёгких слотах, куда он только что попал. Кластер не может быть освоен, пока его самые слабые карточки не будут освоены.</p>",
+  "kind": "element"
+ },
+ "118": {
+  "en": "<p>The design rationale is documented in section 7. In brief: the boss fight injects a bounded, low-stakes stressor that produces genuine retrieval pressure without the consequences of a real-world language failure. It also provides a discrete success state — cluster conquered — that the open-ended rhythm of spaced repetition otherwise lacks.</p>",
+  "ru": "<p>Обоснование дизайна описано в разделе 7. Вкратце: босс-файт вводит ограниченный стресс-фактор с низкими ставками, который создаёт реальное давление на извлечение из памяти без последствий реальной языковой неудачи. Он также обеспечивает дискретное состояние успеха — «кластер освоен» — которого иначе не хватает в открытом ритме интервального повторения.</p>",
+  "kind": "element"
+ },
+ "119": {
+  "en": "<h2>Pedagogical design</h2>",
+  "ru": "<h2>Педагогический дизайн</h2>",
+  "kind": "element"
+ },
+ "120": {
+  "en": "<p>FlashBoss's architecture reflects established findings in second-language acquisition and cognitive psychology. The relevant foundations:</p>",
+  "ru": "<p>Архитектура FlashBoss отражает установленные результаты исследований в области усвоения второго языка и когнитивной психологии. Соответствующие основы:</p>",
+  "kind": "element"
+ },
+ "121": {
+  "en": "<h3>Comprehensible input</h3>",
+  "ru": "<h3>Понятный ввод</h3>",
+  "kind": "element"
+ },
+ "122": {
+  "en": "<p>Krashen's input hypothesis [1] holds that learners acquire language most effectively when input is slightly above current competence — comprehensible enough to parse, demanding enough to extend. Example sentences in FlashBoss are constructed so that the target word is typically the only unknown element; the surrounding sentence is drawn from vocabulary the scheduler has already introduced. This calibrates comprehensibility to roughly 80–95% for the trained learner, placing each sentence in the <em>i+1</em> zone.</p>",
+  "ru": "<p>Гипотеза ввода Крашена [1] утверждает, что учащиеся усваивают язык наиболее эффективно, когда ввод немного выше текущего уровня компетенции — достаточно понятный, чтобы его можно было разобрать, и достаточно сложный, чтобы расширять границы. Примеры предложений в FlashBoss построены так, что целевое слово, как правило, является единственным неизвестным элементом; окружающее предложение составлено из лексики, которую планировщик уже ввел. Это настраивает понятность примерно до 80–95% для обученного учащегося, помещая каждое предложение в зону <em>i+1</em>.</p>",
+  "kind": "element"
+ },
+ "123": {
+  "en": "<h3>Retrieval practice</h3>",
+  "ru": "<h3>Практика извлечения</h3>",
+  "kind": "element"
+ },
+ "124": {
+  "en": "<p>Active recall produces stronger long-term retention than re-reading [2]. The Rate phase forces retrieval <em>before</em> the translation is revealed, applying the testing effect to every card exposure. Cards are not passively shown; they are actively recalled and self-assessed.</p>",
+  "ru": "<p>Активное припоминание обеспечивает более прочное долговременное запоминание, чем повторное чтение [2]. Фаза «Оценивай» заставляет извлекать информацию <em>до</em> того, как будет показан перевод, применяя эффект тестирования к каждому показу карточки. Карточки не показываются пассивно; они активно припоминаются и самостоятельно оцениваются.</p>",
+  "kind": "element"
+ },
+ "125": {
+  "en": "<h3>Spaced repetition</h3>",
+  "ru": "<h3>Интервальное повторение</h3>",
+  "kind": "element"
+ },
+ "126": {
+  "en": "<p>Memory decays along a predictable curve [3]. Reviewing a card just before forgetting consolidates the memory trace more efficiently than massed repetition. The Fibonacci interval sequence is one of several schedules that approximate the forgetting curve; it is used here for its simplicity, stability, and intuitive progression for the learner.</p>",
+  "ru": "<p>Память угасает по предсказуемой кривой [3]. Повторение карточки прямо перед забыванием закрепляет след памяти более эффективно, чем массированное повторение. Последовательность интервалов Фибоначчи — один из нескольких графиков, которые аппроксимируют кривую забывания; она используется здесь из-за своей простоты, стабильности и интуитивно понятной прогрессии для учащегося.</p>",
+  "kind": "element"
+ },
+ "127": {
+  "en": "<h3>Desirable difficulty</h3>",
+  "ru": "<h3>Желательная трудность</h3>",
+  "kind": "element"
+ },
+ "128": {
+  "en": "<p>Retention benefits from effort at the point of encoding and retrieval [4]. The Rate scale enacts desirable difficulty by making regression the default: ratings below 5 either hold a card in place or push it backward through the Fibonacci schedule. Only unambiguous recall earns forward motion, and mastery requires two such recalls in succession. Until a significant majority of a cluster is completed, all of a cluster's cards stay in circulation, but words that are known well do not compete for attention with more worthy material.</p>",
+  "ru": "<p>Запоминание выигрывает от усилий в момент кодирования и извлечения [4]. Шкала оценки реализует желаемую сложность, делая регресс стандартным поведением: оценки ниже 5 либо оставляют карточку на месте, либо отодвигают её назад по расписанию Фибоначчи. Только однозначное припоминание даёт движение вперёд, а освоение требует двух таких припоминаний подряд. Пока значительное большинство блока не завершено, все карточки блока остаются в обороте, но слова, которые хорошо известны, не конкурируют за внимание с более достойным материалом.</p>",
+  "kind": "element"
+ },
+ "129": {
+  "en": "<h3>Affective framing</h3>",
+  "ru": "<h3>Аффективное обрамление</h3>",
+  "kind": "element"
+ },
+ "130": {
+  "en": "<p>High anxiety degrades acquisition [1]. The boss fight is designed to introduce pressure without raising the affective filter: stakes are bounded (a single failed fight costs a day, not standing in a conversation), the system is private, and no permanent record exists. The pressure is engineered to be sharp enough to focus retrieval and shallow enough to preserve the conditions acquisition requires.</p>",
+  "ru": "<p>Высокая тревожность ухудшает усвоение [1]. Босс-файт предназначен для введения давления без повышения аффективного фильтра: ставки ограничены (один неудачный бой стоит дня, а не положения в разговоре), система приватна, и постоянной записи не существует. Давление сконструировано так, чтобы быть достаточно острым для фокусировки извлечения и достаточно поверхностным, чтобы сохранить условия, необходимые для усвоения.</p>",
+  "kind": "element"
+ },
+ "131": {
+  "en": "<h3>Input before output</h3>",
+  "ru": "<h3>Ввод до вывода</h3>",
+  "kind": "element"
+ },
+ "132": {
+  "en": "<p>Receptive skills develop asymmetrically faster than productive skills when trained alone. Saturating a learner in high-comprehension input before asking for production tracks how first-language acquisition proceeds in children, and allows the vocabulary and grammar to become parseable before they become deployable. FlashBoss is the input half of a complete learning pipeline; productive practice — speaking, writing, interaction — is the responsibility of tools FlashBoss does not attempt to replace.</p>",
+  "ru": "<p>Рецептивные навыки развиваются асимметрично быстрее продуктивных при самостоятельной тренировке. Насыщение учащегося высокопонятным вводом перед требованием продукции повторяет то, как происходит усвоение первого языка у детей, и позволяет лексике и грамматике стать разбираемыми до того, как они станут применимыми. FlashBoss — это половина ввода полного образовательного конвейера; продуктивная практика — говорение, письмо, взаимодействие — является обязанностью инструментов, которые FlashBoss не пытается заменить.</p>",
+  "kind": "element"
+ },
+ "133": {
+  "en": "<h2>Scope</h2>",
+  "ru": "<h2>Область применения</h2>",
+  "kind": "element"
+ },
+ "134": {
+  "en": "<p>FlashBoss trains:</p>",
+  "ru": "<p>FlashBoss обучает:</p>",
+  "kind": "element"
+ },
+ "135": {
+  "en": "<li>Target-language vocabulary and recognition.</li>",
+  "ru": "<li>Словарный запас и распознавание на целевом языке.</li>",
+  "kind": "element"
+ },
+ "136": {
+  "en": "<li>Sentence-level reading comprehension.</li>",
+  "ru": "<li>Понимание прочитанного на уровне предложений.</li>",
+  "kind": "element"
+ },
+ "137": {
+  "en": "<li>Listening comprehension via TTS.</li>",
+  "ru": "<li>Понимание на слух через TTS.</li>",
+  "kind": "element"
+ },
+ "138": {
+  "en": "<li>Incidental grammar acquisition through exposure in context.</li>",
+  "ru": "<li>Непреднамеренное усвоение грамматики через контекст.</li>",
+  "kind": "element"
+ },
+ "139": {
+  "en": "<li>Reading fluency at the clause level.</li>",
+  "ru": "<li>Беглость чтения на уровне клауз.</li>",
+  "kind": "element"
+ },
+ "140": {
+  "en": "<p>FlashBoss does not train:</p>",
+  "ru": "<p>FlashBoss не тренирует:</p>",
+  "kind": "element"
+ },
+ "141": {
+  "en": "<li>Writing production.</li>",
+  "ru": "<li>Письменное продуцирование.</li>",
+  "kind": "element"
+ },
+ "142": {
+  "en": "<li>Conversational fluency.</li>",
+  "ru": "<li>Разговорная беглость.</li>",
+  "kind": "element"
+ },
+ "143": {
+  "en": "<li>Interaction repair strategies.</li>",
+  "ru": "<li>Стратегии исправления взаимодействия.</li>",
+  "kind": "element"
+ },
+ "144": {
+  "en": "<p>The strongest way to learn to speak and use a new language is a conversational immersion class — the company of peers pursuing the same goal, with a knowledgeable teacher to guide the way. Where geography puts that out of reach, online tutoring services and conversation classes do the same work; and where cost is the obstacle, even a chatbot can stand in — a place to practice speaking, and to ask the questions that come up during a FlashBoss session.</p>",
+  "ru": "<p>Самый эффективный способ научиться говорить и использовать новый язык — это разговорный иммерсивный класс: компания единомышленников, преследующих одну цель, с опытным преподавателем, который направляет процесс. Если география не позволяет, онлайн-репетиторы и разговорные классы выполняют ту же работу; а если препятствие — стоимость, то даже чат-бот может заменить их — место для практики речи и вопросов, возникающих во время сессии FlashBoss.</p>",
+  "kind": "element"
+ },
+ "145": {
+  "en": "<h2>Using FlashBoss effectively</h2>",
+  "ru": "<h2>Эффективное использование FlashBoss</h2>",
+  "kind": "element"
+ },
+ "146": {
+  "en": "<h3>Controlling your workload</h3>",
+  "ru": "<h3>Управление нагрузкой</h3>",
+  "kind": "element"
+ },
+ "147": {
+  "en": "<p>You control your daily workload in three primary ways: your choice of master; pushing past your streak requirement to claim the daily <strong>EPIC</strong> award (recommended); and, thirdly, a contract — once epic is claimed, you may elect to study an additional day in exchange for a <em>drive</em> token. But be careful when you play with magic.</p>",
+  "ru": "<p>Вы контролируете свою ежедневную нагрузку тремя основными способами: выбором мастера; превышением требования серии для получения ежедневной награды <strong>EPIC</strong> (рекомендуется); и, в-третьих, контрактом — после получения эпика вы можете выбрать дополнительный день обучения в обмен на жетон <em>drive</em>. Но будьте осторожны, когда играете с магией.</p>",
+  "kind": "element"
+ },
+ "148": {
+  "en": "<p><strong>Your master (daily streak).</strong> Your chosen master sets the daily requirement — from 8 to 34 cards a day (the masters are detailed in section 3). Meeting only the minimum always holds your streak and keeps you moving forward, with the option to do more.</p>",
+  "ru": "<p><strong>Ваш мастер (ежедневная серия).</strong> Выбранный вами мастер устанавливает ежедневное требование — от 8 до 34 карточек в день (мастера описаны в разделе 3). Выполнение только минимума всегда сохраняет вашу серию и позволяет двигаться вперед, с возможностью сделать больше.</p>",
+  "kind": "element"
+ },
+ "149": {
+  "en": "<p><strong>Epic.</strong> On the first day of a tier — its foundation day — an epic session offers up to three times your daily requirement in new cards. This is the ideal opening: it loads enough vocabulary into rotation for spaced repetition to do its work. The number of cards available rises and falls day to day.</p>",
+  "ru": "<p><strong>Эпик.</strong> В первый день уровня — его день основания — эпическая сессия предлагает до трехкратного ежедневного требования по новым карточкам. Это идеальное начало: оно загружает в ротацию достаточно лексики, чтобы интервальное повторение заработало. Количество доступных карточек меняется день ото дня.</p>",
+  "kind": "element"
+ },
+ "150": {
+  "en": "<p><strong>Grimoire (the contract).</strong> A grimoire session pulls the next day forward — tomorrow's reviews and a further allocation of new cards, finished today. It is, literally, tomorrow's work done now, and completing it earns a <em>drive</em> token: a day off, banked for when you need it.</p>",
+  "ru": "<p><strong>Гримуар (контракт).</strong> Сессия гримуара переносит следующий день вперед — завтрашние повторения и дополнительное выделение новых карточек, завершенные сегодня. Это буквально завтрашняя работа, выполненная сейчас, и ее завершение приносит жетон <em>drive</em>: выходной, накопленный на случай, когда он понадобится.</p>",
+  "kind": "element"
+ },
+ "151": {
+  "en": "<h3>Read aloud</h3>",
+  "ru": "<h3>Читайте вслух</h3>",
+  "kind": "element"
+ },
+ "152": {
+  "en": "<p>Speak every prompt aloud as it plays. Producing the words does more than drill pronunciation: forming a sentence in your mouth recruits motor and auditory memory alongside the visual, so each card is encoded across several channels at once — a richer, more durable trace than silent reading leaves. Generating the language rather than only recognizing it is itself an act of retrieval, which is what cements a memory; the speaking confidence it builds is a bonus that compounds.</p>",
+  "ru": "<p>Произносите вслух каждую подсказку, когда она звучит. Воспроизведение слов не только тренирует произношение: формирование предложения вслух задействует моторную и слуховую память наряду со зрительной, поэтому каждая карточка кодируется сразу по нескольким каналам — это дает более богатый и устойчивый след, чем молчаливое чтение. Создание языка, а не только его распознавание — это само по себе акт извлечения, который и закрепляет память; уверенность в речи, которую это дает, — бонус, который усиливает эффект.</p>",
+  "kind": "element"
+ },
+ "153": {
+  "en": "<h3>Failed fights</h3>",
+  "ru": "<h3>Неудачные босс-файты</h3>",
+  "kind": "element"
+ },
+ "154": {
+  "en": "<p>A failed boss fight is a minor setback. The defeat screen will show you the words you answered incorrectly, with the option to press <code>8</code> to toggle between your target language and English. A card missed in the hard positions (3–4) is reclassified as your easiest from that point on, so it returns in the opening positions of the next attempt. The cluster cannot be conquered until that card is answered correctly — the word that beat you becomes a gate you have to clear before the fight will end. Clusters can take multiple attempts, but there's always tomorrow.</p>",
+  "ru": "<p>Неудачный босс-файт — это небольшая неудача. Экран поражения покажет вам слова, на которые вы ответили неправильно, с возможностью нажать <code>8</code>, чтобы переключиться между изучаемым языком и английским. Карточка, пропущенная в сложных позициях (3–4), переклассифицируется как ваша самая легкая начиная с этого момента, так что она возвращается в начальные позиции при следующей попытке. Блок нельзя победить, пока эта карточка не будет отвечена правильно — слово, которое вас победило, становится воротами, которые нужно пройти, прежде чем бой закончится. Блоки могут потребовать нескольких попыток, но всегда есть завтра.</p>",
+  "kind": "element"
+ },
+ "155": {
+  "en": "<h3>Expected arc</h3>",
+  "ru": "<h3>Ожидаемая траектория</h3>",
+  "kind": "element"
+ },
+ "156": {
+  "en": "<p>A consistent learner completes Core in two to six months. FlashBoss creates the illusion of knowing more than you do, because it keeps you in a bubble of language you know, expanding out in a controlled way. There will be big gaps in your comprehension, but if you keep going, those gaps will close. And in the meantime, you understand more every day. We wish you well on your language journey — Masters Odiin and Claude.</p>",
+  "ru": "<p>Постоянный ученик завершает Core за два-шесть месяцев. FlashBoss создает иллюзию, что вы знаете больше, чем на самом деле, потому что держит вас в пузыре известного языка, расширяясь контролируемым образом. В вашем понимании будут большие пробелы, но если вы продолжите, эти пробелы закроются. А тем временем вы понимаете все больше с каждым днем. Мы желаем вам удачи в вашем языковом путешествии — Мастера Одиин и Клод.</p>",
+  "kind": "element"
+ },
+ "157": {
+  "en": "<h3>References</h3>",
+  "ru": "<h3>Источники</h3>",
+  "kind": "element"
+ },
+ "158": {
+  "en": "<li>Krashen, S. D. (1982). <em>Principles and Practice in Second Language Acquisition</em>. Pergamon. (Input hypothesis; affective filter.)</li>",
+  "ru": "<li>Krashen, S. D. (1982). <em>Principles and Practice in Second Language Acquisition</em>. Pergamon. (Гипотеза входного материала; аффективный фильтр.)</li>",
+  "kind": "element"
+ },
+ "159": {
+  "en": "<li>Roediger, H. L., &amp; Karpicke, J. D. (2006). Test-enhanced learning: taking memory tests improves long-term retention. <em>Psychological Science</em>, 17(3), 249–255.</li>",
+  "ru": "<li>Roediger, H. L., &amp; Karpicke, J. D. (2006). Тест-усиленное обучение: прохождение тестов на память улучшает долговременное запоминание. <em>Psychological Science</em>, 17(3), 249–255.</li>",
+  "kind": "element"
+ },
+ "160": {
+  "en": "<li>Ebbinghaus, H. (1885). <em>Über das Gedächtnis</em>. Duncker &amp; Humblot. (Forgetting curve, precursor to spaced repetition; cf. Leitner, 1972.)</li>",
+  "ru": "<li>Эббингауз, Г. (1885). <em>Über das Gedächtnis</em>. Duncker &amp; Humblot. (Кривая забывания, предшественник интервального повторения; ср. Лейтнер, 1972.)</li>",
+  "kind": "element"
+ },
+ "161": {
+  "en": "<li>Bjork, R. A. (1994). Memory and metamemory considerations in the training of human beings. In <em>Metacognition: Knowing about Knowing</em>. MIT Press. (Desirable difficulty.)</li>",
+  "ru": "<li>Бьорк, Р. А. (1994). Memory and metamemory considerations in the training of human beings. В <em>Metacognition: Knowing about Knowing</em>. MIT Press. (Желательная трудность.)</li>",
+  "kind": "element"
+ },
+ "162": {
+  "en": "<span class=\"footer-links\">\n    <a href=\"home.html\">home</a><span class=\"div\">·</span>\n    <a href=\"packs.html\">packs</a><span class=\"div\">·</span>\n    <a href=\"resources.html\">resources</a><span class=\"div\">·</span>\n    <a href=\"manual/\">walkthrough (beta)</a><span class=\"div\">·</span>\n    <a href=\"press.html\">press</a><span class=\"div\">·</span>\n    <a href=\"https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-about\">steam</a>\n  </span>",
+  "ru": "<span class=\"footer-links\">\n    <a href=\"home.html\">главная</a><span class=\"div\">·</span>\n    <a href=\"packs.html\">наборы</a><span class=\"div\">·</span>\n    <a href=\"resources.html\">материалы</a><span class=\"div\">·</span>\n    <a href=\"manual/\">руководство (бета)</a><span class=\"div\">·</span>\n    <a href=\"press.html\">пресса</a><span class=\"div\">·</span>\n    <a href=\"https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-about\">Steam</a>\n  </span>",
+  "kind": "element"
+ },
+ "163": {
+  "en": "<title>How FlashBoss Teaches — Technical Reference | FlashBoss</title>",
+  "ru": "<title>Как FlashBoss обучает — техническая справка | FlashBoss</title>",
+  "kind": "title"
+ },
+ "164": {
+  "en": "content=\"Technical reference for FlashBoss — content architecture, session mechanics, the boss-fight graduation system, and the design elements at play.\"",
+  "ru": "content=\"Техническая справка для FlashBoss — архитектура контента, механика сессий, система босс-файтов для освоения и используемые элементы дизайна.\"",
+  "kind": "meta"
+ },
+ "165": {
+  "en": "content=\"How FlashBoss Teaches — Technical Reference\"",
+  "ru": "content=\"Как FlashBoss обучает — техническая справка\"",
+  "kind": "meta"
+ },
+ "166": {
+  "en": "content=\"Content architecture, session mechanics, the boss-fight graduation system, and the design elements at play.\"",
+  "ru": "content=\"Архитектура контента, механика сессий, система босс-файтов для освоения и используемые элементы дизайна.\"",
+  "kind": "meta"
+ },
+ "168": {
+  "en": "content=\"The pedagogy and mechanics behind FlashBoss — comprehensible input, retrieval practice, spaced repetition, and the boss-fight graduation system.\"",
+  "ru": "content=\"Педагогика и механика FlashBoss — понятный ввод, практика извлечения, интервальное повторение и система босс-файтов для освоения.\"",
+  "kind": "meta"
+ },
+ "169": {
+  "en": "alt=\"Session loop: each card cycles through Listen, Read, Repeat, then Rate; the scheduler then selects the next card and the cycle repeats.\"",
+  "ru": "alt=\"Цикл сессии: каждая карточка проходит через этапы Слушай, Читай, Повторяй, затем Оценивай; после этого планировщик выбирает следующую карточку, и цикл повторяется.\"",
+  "kind": "attr"
+ },
+ "170": {
+  "en": "alt=\"Per cluster: training continues until the cluster becomes eligible for a boss fight, which results in either a pass or a retry.\"",
+  "ru": "alt=\"Для каждого блока: тренировка продолжается, пока блок не станет доступным для босс-файта, который завершается либо проходом, либо повтором.\"",
+  "kind": "attr"
+ },
+ "171": {
+  "en": "alt=\"The boss-fight arena: a horizontal track the learner and the boss share, with a marker at the far edge.\"",
+  "ru": "alt=\"Арена босс-файта: горизонтальная дорожка, которую разделяют учащийся и босс, с маркером на дальнем краю.\"",
+  "kind": "attr"
+ },
+ "172": {
+  "en": "aria-label=\"Table of contents\"",
+  "ru": "aria-label=\"Содержание\"",
+  "kind": "attr"
+ }
+}

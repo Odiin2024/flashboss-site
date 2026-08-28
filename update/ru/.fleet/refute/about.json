@@ -1,0 +1,183 @@
+{
+ "33": {
+  "id": 33,
+  "verdict": "upheld",
+  "why": "Missing <td> tags around the Russian translation will break the HTML table structure."
+ },
+ "35": {
+  "id": 35,
+  "verdict": "upheld",
+  "why": "Missing <td> tags around the Russian translation will break the HTML table structure."
+ },
+ "36": {
+  "id": 36,
+  "verdict": "upheld",
+  "why": "The English word 'Notes' is a UI label that should be translated to 'Примечания' per the rule to translate English gloss/explanation, and leaving it untranslated is a defect."
+ },
+ "51": {
+  "id": 51,
+  "verdict": "refuted",
+  "why": "Командирный is a valid Russian adjective for 'bossy' and the flag is a stylistic preference, not a real defect."
+ },
+ "53": {
+  "id": 53,
+  "verdict": "refuted",
+  "why": "Консультативный is an acceptable translation for 'Advisory' in this context; the flag's register concern is subjective and not a clear defect."
+ },
+ "58": {
+  "id": 58,
+  "verdict": "refuted",
+  "why": "The choice of 'выбросов' for 'outliers' is a defensible translation that conveys the idea of statistical deviants, and a Russian reader would understand it in context."
+ },
+ "59": {
+  "id": 59,
+  "verdict": "refuted",
+  "why": "The phrasing 'другой неразумен' is clear enough in context, and 'отступает в сторону' is a natural Russian idiom for 'steps aside'."
+ },
+ "60": {
+  "id": 60,
+  "verdict": "refuted",
+  "why": "Using feminine forms for 'властная' and 'советующая' with proper nouns like Kitsune and Luna is a plausible grammatical adaptation, not a defect."
+ },
+ "76": {
+  "id": 76,
+  "verdict": "upheld",
+  "why": "The Russian phrase 'отдельные самостоятельные' is grammatically incomplete because it lacks a head noun, causing a real defect for a Russian reader."
+ },
+ "77": {
+  "id": 77,
+  "verdict": "refuted",
+  "why": "The translation 'Английский распространяется иначе' is a readable equivalent that conveys the idea of different packaging, even if slightly less natural than alternatives."
+ },
+ "78": {
+  "id": 78,
+  "verdict": "refuted",
+  "why": "The translation 'центральный набор' for 'hub pack' is a reasonable interpretation of 'hub' and does not add information beyond what 'hub' implies; the other minor phrasing differences are acceptable paraphrase."
+ },
+ "79": {
+  "id": 79,
+  "verdict": "refuted",
+  "why": "The adjective 'учёный' correctly conveys 'scholarly' in context, 'между ними' naturally implies 'between the three', and 'формируют' accurately captures the meaning of 'give' in this context."
+ },
+ "80": {
+  "id": 80,
+  "verdict": "upheld",
+  "why": "The word 'расписание' for 'scheduling' is misleading in the context of spaced repetition algorithms, as it suggests a fixed timetable rather than algorithmic timing."
+ },
+ "83": {
+  "id": 83,
+  "verdict": "refuted",
+  "why": "The translation accurately conveys the meaning of the English, with 'когда оно появляется' matching 'as it appears' and 'пример предложения' being a natural rendering of 'example sentence'."
+ },
+ "98": {
+  "id": 98,
+  "verdict": "upheld",
+  "why": "The phrase 'минимум 2 дня' contains a grammatical error, as 'минимум' requires the genitive plural 'дней' for correct formal usage."
+ },
+ "100": {
+  "id": 100,
+  "verdict": "refuted",
+  "why": "The construction 'минимум 3 дня' is acceptable in Russian; no grammatical error exists."
+ },
+ "109": {
+  "id": 109,
+  "verdict": "refuted",
+  "why": "'Ввод карточек' is a natural translation for 'card introduction' in this context, and 'ежедневное количество карточек' accurately conveys 'daily card volume'."
+ },
+ "110": {
+  "id": 110,
+  "verdict": "refuted",
+  "why": "The house convention gives the base form 'босс-файт' but does not mandate invariance; declining it in 'к босс-файту' is correct Russian grammar."
+ },
+ "111": {
+  "id": 111,
+  "verdict": "refuted",
+  "why": "Declining 'босс-файта' is grammatically correct; the house convention does not require invariance, and the remaining phrasing is clear."
+ },
+ "113": {
+  "id": 113,
+  "verdict": "upheld",
+  "why": "The house convention explicitly maps 'cluster' to 'блок', but the translation uses 'кластер', violating terminology and potentially confusing users."
+ },
+ "132": {
+  "id": 132,
+  "verdict": "refuted",
+  "why": "The translation 'высокопонятным вводом' and 'продукции' are calques that are understandable in context and are defensible in a technical SLA discussion; they do not break the page or confuse a Russian reader."
+ },
+ "134": {
+  "id": 134,
+  "verdict": "refuted",
+  "why": "'Обучает' is acceptable Russian for listing the skills FlashBoss trains; the choice is stylistic and not a defect."
+ },
+ "138": {
+  "id": 138,
+  "verdict": "refuted",
+  "why": "'Непреднамеренное усвоение' is a standard translation for 'incidental acquisition' in Russian SLA literature; the flag incorrectly suggests alternatives."
+ },
+ "139": {
+  "id": 139,
+  "verdict": "refuted",
+  "why": "'Клауза' is a recognized technical term in Russian linguistics for 'clause'; using 'предложение' would blur the distinction and is less precise."
+ },
+ "141": {
+  "id": 141,
+  "verdict": "refuted",
+  "why": "'Письменное продуцирование' is a transparent calque that is understood in academic contexts; the suggested alternatives are not required."
+ },
+ "143": {
+  "id": 143,
+  "verdict": "refuted",
+  "why": "The translation is faithful to the source; the suggested alternatives are stylistic preferences, not corrections of a factual error, and the Russian phrase is understandable in context."
+ },
+ "144": {
+  "id": 144,
+  "verdict": "refuted",
+  "why": "The term 'разговорный иммерсивный класс' is a direct rendering of the English, which is acceptable in a marketing context; the flagged alternatives are not required by the conventions and amount to a style preference."
+ },
+ "147": {
+  "id": 147,
+  "verdict": "refuted",
+  "why": "'Серия' is a standard translation for 'streak' and is not overridden by house conventions; the lowercase 'эпика' mirrors the English's own lowercase 'epic' later in the sentence, so no formatting inconsistency exists."
+ },
+ "148": {
+  "id": 148,
+  "verdict": "refuted",
+  "why": "'Серия' for 'streak' is correct and not prohibited by house conventions; the phrase 'сохраняет вашу серию' is grammatically sound and natural in Russian."
+ },
+ "149": {
+  "id": 149,
+  "verdict": "refuted",
+  "why": "The Russian uses 'Эпик' and 'эпическая сессия' matching the English's mixed case; 'день основания' accurately conveys the foundational nature of the first day, and 'трехкратного ежедневного требования' is grammatically correct."
+ },
+ "150": {
+  "id": 150,
+  "verdict": "refuted",
+  "why": "The token 'drive' is not listed among the brand tokens that must be kept as-is, so leaving it untranslated and italicized is a valid stylistic choice and does not violate house conventions."
+ },
+ "151": {
+  "id": 151,
+  "verdict": "upheld",
+  "why": "The heading 'Read aloud' should use the informal singular imperative 'Читай вслух' to match the established command forms 'Слушай · Читай · Повторяй' listed in the house conventions."
+ },
+ "153": {
+  "id": 153,
+  "verdict": "upheld",
+  "why": "The English heading says 'Failed fights' without specifying 'boss', so adding 'босс-' introduces information not present in the source, violating the rule never to add a claim the English does not make."
+ },
+ "156": {
+  "id": 156,
+  "verdict": "refuted",
+  "why": "The translation 'постоянный ученик' is understandable and not an error; 'Core' is correctly kept as-is, and the word choice is a minor stylistic preference that does not break the page or house conventions."
+ },
+ "159": {
+  "id": 159,
+  "verdict": "refuted",
+  "why": "The house conventions do not require academic citations to remain in English; the translation of the title is reasonably accurate, and the flag's alternative phrasing is a matter of preference, not a defect."
+ },
+ "161": {
+  "id": 161,
+  "verdict": "refuted",
+  "why": "Translating the preposition 'In' to Russian 'В' is a natural and correct adaptation for a citation embedded in a Russian sentence, and house rules do not require keeping every word of a citation in English."
+ },
+ "_done": true
+}

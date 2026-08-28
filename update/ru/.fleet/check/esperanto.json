@@ -1,0 +1,93 @@
+{
+ "8": {
+  "id": 8,
+  "severity": "medium",
+  "issue": "Misrendering of 'Esperanto core design': 'Core' is a registered pack name and must not be translated or rephrased as 'набора Core для эсперанто'. The original refers to the core design principles of Esperanto itself, not a FlashBoss pack.",
+  "fix": "<span class=\"tag\">Основной дизайн эсперанто</span>"
+ },
+ "22": {
+  "id": 22,
+  "severity": "medium",
+  "issue": "The phrase 'через границы' is an unnatural calque; the intended meaning is 'transcending borders' or 'across borders', but 'через границы' in Russian typically implies physical crossing, not abstract belonging beyond borders.",
+  "fix": "<p>Сообщество, встречи, культуры, мир — принадлежность без границ.</p>"
+ },
+ "23": {
+  "id": 23,
+  "severity": "medium",
+  "issue": "The imperative 'Смотри' is informal (ты-form), while the site convention uses вы-form for addressing the user. Also, 'это' is vague; the English 'it' refers to the app/community/pack, so a more natural rendering would use 'как он растёт' or rephrase slightly for fluency.",
+  "fix": "<span class=\"tag\">Наблюдайте, как он растёт</span>"
+ },
+ "24": {
+  "id": 24,
+  "severity": "medium",
+  "issue": "The English phrase 'Progressively more challenging' is an adjective phrase describing something that becomes increasingly difficult. The Russian translation 'Постепенно усложняющиеся' is a plural active participle that implies a subject (e.g., lessons or sentences) that are doing the action of becoming more complex. However, without a clear noun it modifies, it sounds incomplete or grammatically awkward in Russian as a standalone heading.",
+  "fix": "<h2>Постепенно усложняющийся</h2>"
+ },
+ "28": {
+  "id": 28,
+  "severity": "high",
+  "issue": "The Russian translation uses masculine past tense 'написал', which assumes the speaker is male. The original English 'I wrote' is gender-neutral. In Russian, when the gender is unspecified or the speaker could be any gender, the default in language-learning contexts is often feminine or neutral phrasing, but best practice is to use a form that doesn't assume gender—however, since past-tense verbs in Russian require gender, the convention in such teaching materials is typically to use feminine (as a neutral/default in modern pedagogical contexts) or rephrase. More importantly, FlashBoss house style requires fidelity to the original meaning without adding assumptions. Using masculine introduces information not present in the source.",
+  "fix": "<li class=\"reveal\"><span class=\"ger eo\">Hieraŭ mi skribis mesaĝon al amiko en alia lando.</span><span class=\"en\">Вчера я написала сообщение другу в другой стране.</span></li>"
+ },
+ "42": {
+  "id": 42,
+  "severity": "high",
+  "issue": "The English gloss explains 'hospital' as built from 'ill + -ul- (person) + -ej- (place)', implying an Esperanto-like word formation. However, the Russian translation uses 'больница', which is not analyzable into those morphemes in Russian. This misrepresents the etymology and breaks the pedagogical intent. The word being taught is likely the Esperanto 'malsanulejo', not the Russian 'больница'. According to house rules, words in the language being taught (here, Esperanto) must NOT be translated. The correct approach is to keep the original Esperanto term or the English headword if it's a gloss of an Esperanto construction.",
+  "fix": "<div class=\"gloss\"><b>hospital</b> — больной + <i>-ul-</i> (человек) + <i>-ej-</i> (место): место для больных людей</div>"
+ },
+ "44": {
+  "id": 44,
+  "severity": "medium",
+  "issue": "The English infinitive 'to recover' is glossed with the Russian imperfective verb 'выздоравливать', but the explanation 'снова стать здоровым' uses the perfective infinitive 'стать', creating a mismatch in aspect. The gloss should reflect the same aspect as the headword. Since 'to recover' here describes a process (aligned with Esperanto 'resaniĝi'), the explanation should use imperfective 'становиться здоровым снова' to match 'выздоравливать'. Alternatively, if the intent is perfective, the headword should be 'выздороветь'. However, given the Esperanto '-iĝi' form is inherently inchoative but not perfective, the better fix is to adjust the gloss to match the imperfective meaning.",
+  "fix": "<div class=\"gloss\"><b>выздоравливать</b> — <i>re-</i> (снова) + <i>-iĝ-</i> (становиться): становиться здоровым снова</div>"
+ },
+ "54": {
+  "id": 54,
+  "severity": "medium",
+  "issue": "The Esperanto example sentence should remain as-is per house rules, but the surrounding context implies it is part of a bilingual display where the Russian translation might be expected elsewhere. However, since the instruction says to never translate anything in the language being taught (Esperanto), and this is correctly left untranslated, there is no error here.",
+  "fix": "<div class=\"ex eo\">Mi vojaĝis per Pasporta Servo.</div>"
+ },
+ "55": {
+  "id": 55,
+  "severity": "high",
+  "issue": "‘Паспортная служба’ is a literal calque that misrepresents 'Pasporta Servo', which is a proper noun and a well-known Esperanto hospitality network. House conventions require that names of entities in the language being taught remain untranslated. 'Pasporta Servo' should not be translated into Russian at all.",
+  "fix": "<div class=\"trans\">&laquo;Pasporta Servo&raquo; — глобальная сеть, где эсперантисты бесплатно принимают друг друга. Язык, который даёт вам кров на каждом континенте.</div>"
+ },
+ "57": {
+  "id": 57,
+  "severity": "medium",
+  "issue": "However, if <div class=\"art\">event</div> is meant to represent the English lemma being taught (e.g., in an English-to-Esperanto pack), then translating it to Russian is incorrect—because the site teaches foreign languages *from* English, so English words should not be translated into Russian. The Russian version should still show 'event' if it's the source language term. This violates the principle that English teaching material remains in English.",
+  "fix": "<div class=\"art\">event</div>"
+ },
+ "59": {
+  "id": 59,
+  "severity": "medium",
+  "issue": "The phrase 'the one everybody chose' is rendered as 'тот, который выбрал каждый', which is grammatically correct but subtly changes meaning: 'everybody chose' implies collective voluntary adoption, while 'каждый... выбрал' emphasizes individual choice and may sound odd in Russian. More natural phrasing would be 'тот, который все выбрали' or 'тот, который каждый из них выбрал'. However, this is borderline style. More importantly, the English says 'the only shared language in the room is the one everybody chose' — implying a single common language by mutual agreement. The Russian 'в комнате' is too literal; 'в зале' or 'среди присутствующих' would be better, but 'в комнате' is acceptable. Not a high-severity issue.",
+  "fix": "<div class=\"trans\">конгресс — ежегодное мировое собрание, где встречаются тысячи людей, и единственный общий язык в зале — тот, который все выбрали.</div>"
+ },
+ "64": {
+  "id": 64,
+  "severity": "medium",
+  "issue": "Brand token 'Pareto' must be kept as-is per house conventions, but in Russian context the word 'Принцип' should not be capitalized unless it's a proper noun. However, the main issue is that 'Pareto' is a brand token and should remain untranslated, which it does — but the capitalization of 'Принцип' is unnecessary and stylistically inconsistent with typical Russian rendering of such headings.",
+  "fix": "<h2>Принцип Pareto</h2>"
+ },
+ "65": {
+  "id": 65,
+  "severity": "medium",
+  "issue": "The phrase 'случаев использования Esperanto' is a calque from English 'use cases'. In natural Russian, especially in this marketing context, it should be 'употребления' or 'использования языка', not 'случаев использования'. Also, 'Esperanto' is a language being taught, so per house rules it must remain in original form — which it does — but the phrasing around it is unnatural.",
+  "fix": "<p class=\"sub\">3 набора. 10% словарного запаса Esperanto покрывают 90% случаев употребления языка.</p>"
+ },
+ "78": {
+  "id": 78,
+  "severity": "medium",
+  "issue": "Fibonacci SRS should be translated or adapted per house conventions; leaving it fully in English violates the rule to translate descriptive terms while keeping only specified tokens untranslated.",
+  "fix": "<dt>Интервальное повторение по Фибоначчи</dt>"
+ },
+ "82": {
+  "id": 82,
+  "severity": "medium",
+  "issue": "‘Graduation’ is rendered as ‘Освоение’, but the house convention specifies that when a card graduates, it 'считается освоенной'. The noun form ‘Освоение’ does not match the established terminology and may confuse users expecting consistency with the verb-based phrasing used elsewhere.",
+  "fix": "<dt>Считается освоенной</dt>"
+ },
+ "_done": true
+}

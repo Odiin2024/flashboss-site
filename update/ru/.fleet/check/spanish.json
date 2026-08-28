@@ -1,0 +1,75 @@
+{
+ "4": {
+  "id": 4,
+  "severity": "medium",
+  "issue": "The Russian translation uses informal imperative 'Учи' while the English original uses neutral 'Learn'. The house style addresses the reader as 'вы', requiring formal or neutral phrasing, not informal imperative.",
+  "fix": "<p class=\"tagline reveal\">Изучайте язык, познавая культуру.</p>"
+ },
+ "8": {
+  "id": 8,
+  "severity": "high",
+  "issue": "Violates house convention: 'Spanish Core' is a registered pack name and must be kept in English as-is.",
+  "fix": "<span class=\"tag\">Spanish Core</span>"
+ },
+ "24": {
+  "id": 24,
+  "severity": "medium",
+  "issue": "The Russian translation 'Постепенное усложнение' is a noun phrase, while the English original 'Progressively more challenging' is an adjective phrase describing something (e.g., content). This changes the grammatical function and nuance.",
+  "fix": "<h2>Постепенно усложняется</h2>"
+ },
+ "28": {
+  "id": 28,
+  "severity": "medium",
+  "issue": "The English uses gender-neutral 'I talked with my brother', but the Russian translation uses masculine past tense 'поговорил', which assumes the speaker is male. Russian should use a gender-neutral form or match the source's neutrality. Since the source doesn't specify speaker gender, using feminine or neutral phrasing is safer; however, in practice, masculine is often default. But note: the bigger issue is that the relative clause 'he's looking for' refers to the brother, yet the Russian says 'работу, которую он ищет' — which is correct, but the verb 'поговорил' introduces unwarranted gender assumption about the speaker.",
+  "fix": "<li class=\"reveal\"><span class=\"ger es\">Ayer hablé con mi hermano sobre el trabajo que está buscando.</span><span class=\"en\">Вчера я поговорила с братом о работе, которую он ищет.</span></li>"
+ },
+ "31": {
+  "id": 31,
+  "severity": "medium",
+  "issue": "The phrase 'Read it by sight' is a set expression in language learning meaning to recognize and read words instantly without sounding them out. 'Читайте на глаз' is unnatural and misleading in Russian; the correct idiom is 'читать с листа' or, in this pedagogical context, 'узнавайте визуально'. However, per FlashBoss house conventions, the UI phrase 'Read' in the sequence 'Listen · Read · Repeat · Rate · Fight' must be rendered as 'Читай'. Since this is a standalone tag, not part of that exact sequence, it should still convey the intended meaning. 'Читайте на глаз' is incorrect.",
+  "fix": "<span class=\"tag\">Читайте визуально</span>"
+ },
+ "38": {
+  "id": 38,
+  "severity": "high",
+  "issue": "Incorrect translation of Spanish word 'trabajo': it should be rendered as 'работа, job' (keeping 'job' in English per house rules for teaching material), but both glosses were translated to Russian. Also, 'trabajo' is masculine, so the correct Russian gloss should reflect that the word means 'работа' (feminine in Russian) but corresponds to a masculine noun in Spanish — however, the bigger error is translating the English gloss 'job' into Russian, which violates the rule to never translate the language being taught or its immediate English gloss.",
+  "fix": "<div class=\"trans\">работа, job — &ldquo;Я ищу работу рядом с домом.&rdquo; Мужской род.</div>"
+ },
+ "43": {
+  "id": 43,
+  "severity": "medium",
+  "issue": "The Russian translation renders 'people' as 'люди', which is plural and masculine, contradicting the grammatical explanation that follows (that 'la gente' is feminine and singular). This creates a misleading gloss. The English uses 'people' loosely but clarifies the grammar; the Russian should avoid using a word that implies plurality and masculinity.",
+  "fix": "<div class=\"trans\">народ — &ldquo;Здешние люди очень добры.&rdquo; Женский род, всегда в единственном числе: <i>la gente es</i>, а не <i>son</i>.</div>"
+ },
+ "45": {
+  "id": 45,
+  "severity": "low",
+  "issue": "The phrase 'цветовая маркировка, чтобы вы никогда не забыли' is slightly unnatural and reads like a calque. More natural Russian would be 'выделено цветом, чтобы вы никогда не забыли' or 'цветовое выделение поможет вам запомнить'. However, this is a minor stylistic issue and may be acceptable per house style.",
+  "fix": "<div class=\"trans\">день — &ldquo;Каждый день я узнаю что-то новое.&rdquo; Мужской род, несмотря на окончание -a: классическое исключение, выделено цветом, чтобы вы никогда не забыли.</div>"
+ },
+ "55": {
+  "id": 55,
+  "severity": "medium",
+  "issue": "The English says 'the feeling at the heart of a continent of migration', but the Russian renders it as 'чувство, лежащее в основе континента миграций', which shifts meaning: 'at the heart of' is not equivalent to 'лежащее в основе'. The phrase 'continent of migration' is metaphorical and should retain its poetic nuance.",
+  "fix": "<div class=\"trans\">скучать (по кому-то) — &ldquo;Я скучаю по своей семье.&rdquo; Чувство, лежащее в сердце континента миграции.</div>"
+ },
+ "59": {
+  "id": 59,
+  "severity": "low",
+  "issue": "The translation 'делить жизнь' for 'share life' is unnatural in Russian in this context. A more idiomatic rendering would be 'вести общую жизнь' or simply 'жить вместе' without adding 'делить жизнь', which sounds literal and awkward.",
+  "fix": "<div class=\"trans\">жить вместе — &ldquo;Научиться жить вместе — это самое важное.&rdquo;</div>"
+ },
+ "74": {
+  "id": 74,
+  "severity": "medium",
+  "issue": "The phrase 'native-like range' is inaccurately translated as 'близкий к носителю диапазон', which sounds unnatural and ambiguous in Russian. The intended meaning is likely 'лексика, характерная для носителей языка' or similar. Additionally, 'Полные три тысячи' lacks context—full three thousand what? The English implies 'the full three thousand [words]', but the Russian omits the noun, making it vague.",
+  "fix": "<p>Абстрактная, выразительная лексика на уровне носителя. Все три тысячи слов.</p>"
+ },
+ "89": {
+  "id": 89,
+  "severity": "medium",
+  "issue": "The word 'steam' in the footer link should be capitalized as 'Steam' per house conventions, which specify that brand tokens like Steam must be kept exactly as-is (i.e., capitalized).",
+  "fix": "<span class=\"footer-links\">\n    <a href=\"home.html\">главная</a>\n    <span class=\"div\">·</span>\n    <a href=\"manual/\">руководство (бета)</a>\n    <span class=\"div\">·</span>\n    <a href=\"https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website\" target=\"_blank\" rel=\"noopener\">Steam</a>\n  </span>"
+ },
+ "_done": true
+}

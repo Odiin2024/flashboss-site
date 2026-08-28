@@ -14,7 +14,8 @@ idempotently:
      preserving any existing ?utm_source=.
 
 Locale is taken from the filename: *.de.html -> german, *.es.html -> spanish,
-*.ja.html -> japanese, anything else -> English (no l= added).
+*.ja.html -> japanese, *.zh.html -> schinese, *.ru.html -> russian,
+anything else -> English (no l= added).
 
 Usage:
     python3 scripts/localize_pack_page.py german-roots.de.html norman-roots.de.html
@@ -27,11 +28,11 @@ A page with no hero ".actions reveal" block (e.g. home, about) just gets the
 import re, sys
 
 DEMO_URL = "https://flashboss-demo.pages.dev/"
-DEMO_LABEL = {"en": "Try the demo", "de": "Demo testen", "es": "Probar demo", "ja": "デモを試す", "zh": "试玩演示"}
-STEAM_LANG = {"de": "german", "es": "spanish", "ja": "japanese", "zh": "schinese"}
+DEMO_LABEL = {"en": "Try the demo", "de": "Demo testen", "es": "Probar demo", "ja": "デモを試す", "zh": "试玩演示", "ru": "Попробовать демо"}
+STEAM_LANG = {"de": "german", "es": "spanish", "ja": "japanese", "zh": "schinese", "ru": "russian"}
 
 def lang_of(fn):
-    for suf, code in (("de", "de"), ("es", "es"), ("ja", "ja"), ("zh", "zh")):
+    for suf, code in (("de", "de"), ("es", "es"), ("ja", "ja"), ("zh", "zh"), ("ru", "ru")):
         if fn.endswith(f".{suf}.html"):
             return code
     return "en"

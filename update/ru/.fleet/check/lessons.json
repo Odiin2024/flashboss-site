@@ -1,0 +1,33 @@
+{
+ "21": {
+  "id": 21,
+  "severity": "high",
+  "issue": "House convention breach: pack names 'Pareto 1', 'Pareto 2', 'Adept', 'Advance', 'German Roots', 'Greek Roots', 'Norman Roots', 'Latin Roots' must be kept exactly as-is in English, but the Russian translation renders some of them in Cyrillic or leaves them untranslated inconsistently. According to house rules, these registered pack names are NEVER translated.",
+  "fix": "/* Display-only Russian labels. VALUES stay English: LANGS/SETS index the data\n   files (data/<lang>/tier<N>_lessons.json) and the audio directories. */\nconst RU_NAME = {\n  \"Italian\":\"Итальянский\",\"German\":\"Немецкий\",\"Spanish\":\"Испанский\",\"French\":\"Французский\",\n  \"Esperanto\":\"Эсперанто\",\"Toki Pona\":\"Токи пона\",\"English\":\"Английский\",\n  \"Core\":\"Core\",\"Pareto 1\":\"Pareto 1\",\"Pareto 2\":\"Pareto 2\",\n  \"Adept\":\"Adept\",\"Advance\":\"Advance\",\"German Roots\":\"German Roots\",\"Greek Roots\":\"Greek Roots\",\n  \"Norman Roots\":\"Norman Roots\",\"Latin Roots\":\"Latin Roots\"\n};\nfunction ruName(x){ return RU_NAME[x] || x; }\n/* ---------- helpers ---------- */"
+ },
+ "26": {
+  "id": 26,
+  "severity": "medium",
+  "issue": "The English source uses 'Pack' for English and 'Set' otherwise. The Russian translation uses 'Набор' for English and 'Раздел' otherwise. However, according to FlashBoss house conventions, the term 'набор' is the official rendering for 'pack', and there is no indication that 'set' should be translated as 'Раздел'. In fact, 'set' in this context likely refers to the same concept as 'pack' (e.g., a collection of lessons), so using two different terms introduces inconsistency and misrepresents the UI logic.",
+  "fix": "function updateSetLabel(){ setLbl.textContent='Набор'; }"
+ },
+ "27": {
+  "id": 27,
+  "severity": "low",
+  "issue": "The English says 'lessons aren't published yet — check back as packs ship.' The Russian adds 'наборы выходят постепенно' ('packs are released gradually'), which slightly amplifies the original message by implying a gradual rollout schedule not explicitly stated in English. While close, this adds nuance not present in the source.",
+  "fix": "function notPublished(label){ return `<div class=\"state\"><span class=\"ic\">◈</span>Уроки «${esc(label)}» ещё не опубликованы — загляните позже, когда выйдут наборы.</div>`; }"
+ },
+ "28": {
+  "id": 28,
+  "severity": "medium",
+  "issue": "The English displays 'Loading {lang} lessons…', where {lang} is the language name in English (e.g., 'French'). The Russian inserts ruName(lang), which localizes the language name (e.g., 'Французский'). However, per house rules: 'Language codes: EO, EN' are kept as-is, but more importantly, the teaching language names (like French, German, etc.) are part of the teaching material and must NOT be translated. The English gloss around them is translated, but the language name itself should remain in English as it appears in the product (e.g., pack names like 'French Core' are kept in English). Thus, ruName(lang) incorrectly translates the language name.",
+  "fix": "stage.innerHTML=`<div class=\"state\"><span class=\"ic\">◴</span>Загружаем уроки: ${esc(lang)}…</div>`; lessonSel.innerHTML=''; setSel.innerHTML='';"
+ },
+ "29": {
+  "id": 29,
+  "severity": "medium",
+  "issue": "Same issue as #28: ruName(lang) and ruName(curSet) are used. Language names (like 'French') and set/pack names (like 'Core', 'Pareto 1') are brand tokens or teaching material and must remain untranslated per house conventions. Wrapping them in ruName() violates this rule.",
+  "fix": "if(!LESSONS.length){ stage.innerHTML=notPublished(lang+(isEng(lang)?' '+curSet:'')); lessonSel.innerHTML=''; updateToggle(); return; }"
+ },
+ "_done": true
+}

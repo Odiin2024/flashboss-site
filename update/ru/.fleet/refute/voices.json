@@ -1,0 +1,138 @@
+{
+ "18": {
+  "id": 18,
+  "verdict": "refuted",
+  "why": "The Russian translation correctly conveys that the voice speaks Toki Pona and the Esperanto courses; the declension of Toki Pona with 'который' is acceptable in context and does not misrepresent the meaning."
+ },
+ "21": {
+  "id": 21,
+  "verdict": "refuted",
+  "why": "The phrase 'обучен на Mozilla Common Voice' is natural for a credit line, clearly refers to the voice model, and follows house conventions for brevity and brand token preservation."
+ },
+ "27": {
+  "id": 27,
+  "verdict": "refuted",
+  "why": "The Russian 'входит в' accurately reflects the same inclusion relationship as the English 'comes with'; the direction is not reversed."
+ },
+ "33": {
+  "id": 33,
+  "verdict": "refuted",
+  "why": "The Russian 'входит в состав' is synonymous with 'comes with' and does not reverse the product relationship; the translation is faithful."
+ },
+ "36": {
+  "id": 36,
+  "verdict": "upheld",
+  "why": "Per house conventions, 'voices' must be translated as 'голоса', so 'Piper voices' should be 'голоса Piper', but the current line keeps the English phrase."
+ },
+ "39": {
+  "id": 39,
+  "verdict": "refuted",
+  "why": "The translation uses 'курсов' for 'courses', which is a standard equivalent; house terminology does not mandate 'наборы' for 'courses', and the phrase 'French Pareto' is kept as in the English source, which is not a registered pack name but is correctly retained as a descriptive label."
+ },
+ "42": {
+  "id": 42,
+  "verdict": "refuted",
+  "why": "The translation correctly renders 'voices' as 'голоса' and keeps 'Piper' as a brand token; the word order 'Piper голоса' is acceptable in Russian tech contexts and does not break house conventions."
+ },
+ "43": {
+  "id": 43,
+  "verdict": "refuted",
+  "why": "Leaving 'Italiano' untranslated is correct per house rules, as it is the language name used in the teaching material and standard UI practice; no defect exists."
+ },
+ "45": {
+  "id": 45,
+  "verdict": "refuted",
+  "why": "The translation accurately conveys the English meaning, using 'курсов' for 'courses' and keeping 'Italian Core' and 'Italian Pareto' as in the source; no house terminology is violated and the meaning is clear."
+ },
+ "48": {
+  "id": 48,
+  "verdict": "refuted",
+  "why": "The translation 'голоса Piper' correctly follows house rules (voice → голос, brand token Piper left unchanged) and the word order is natural in Russian; no defect."
+ },
+ "49": {
+  "id": 49,
+  "verdict": "refuted",
+  "why": "The translation correctly leaves 'toki pona' unchanged as required by house rules for language names being taught."
+ },
+ "50": {
+  "id": 50,
+  "verdict": "refuted",
+  "why": "The translation 'бесплатно в базовой игре' correctly follows the house terminology for 'free' and 'base game'."
+ },
+ "51": {
+  "id": 51,
+  "verdict": "refuted",
+  "why": "The phrase 'Озвучено голосом Esperanto' is grammatically correct (instrumental case required by 'озвучено') and keeps 'Esperanto' untranslated as per house rules."
+ },
+ "52": {
+  "id": 52,
+  "verdict": "refuted",
+  "why": "The Toki Pona sentence is left unchanged, which is required for teaching material."
+ },
+ "53": {
+  "id": 53,
+  "verdict": "refuted",
+  "why": "The translation 'выучить Toki Pona' is natural and acceptable; 'выучить' is a common perfective for 'learn', and 'Toki Pona' is kept in Latin script as per house rules."
+ },
+ "55": {
+  "id": 55,
+  "verdict": "refuted",
+  "why": "The name 'Latina' is a proper noun and can remain in Latin script; the Russian translation is acceptable and not a defect."
+ },
+ "57": {
+  "id": 57,
+  "verdict": "refuted",
+  "why": "The pack names 'Latin Core' and 'Latin Pareto 1' follow the pattern of registered names, and 'Обучен для FlashBoss' is a minor calque that does not break the page or cause confusion."
+ },
+ "63": {
+  "id": 63,
+  "verdict": "refuted",
+  "why": "Abbreviating female voice as 'Ж' is a standard Russian convention and not a defect; it is a reasonable adaptation of the original '(F)'."
+ },
+ "66": {
+  "id": 66,
+  "verdict": "upheld",
+  "why": "The words 'bottle', 'glass', 'water' are English teaching material and must not be translated; the Russian translation incorrectly renders them as Russian words."
+ },
+ "67": {
+  "id": 67,
+  "verdict": "upheld",
+  "why": "The imperative 'Послушайте' is formal and breaks the app's informal register (using 'Слушай'), creating inconsistency for the Russian reader."
+ },
+ "69": {
+  "id": 69,
+  "verdict": "refuted",
+  "why": "Castellano is a Spanish word and Spanish is a taught language, so per house rules it should remain untranslated as teaching material."
+ },
+ "72": {
+  "id": 72,
+  "verdict": "refuted",
+  "why": "The English gloss uses the imperative 'Listen to', so the Russian imperative 'Слушайте' is a direct and correct translation matching the register."
+ },
+ "77": {
+  "id": 77,
+  "verdict": "refuted",
+  "why": "The English source text includes 'FlashBoss Home', so the Russian translation 'FlashBoss Главная' faithfully preserves the brand token and translates 'Home' as required."
+ },
+ "88": {
+  "id": 88,
+  "verdict": "refuted",
+  "why": "The Russian translation correctly provides the translated text for the aria-label value; the attribute itself is an HTML structural element not part of the translation text."
+ },
+ "89": {
+  "id": 89,
+  "verdict": "upheld",
+  "why": "The house convention requires that 'Toki Pona' be kept exactly as-is, but the Russian translation uses 'токи-пона', which is a translation of the language name."
+ },
+ "92": {
+  "id": 92,
+  "verdict": "refuted",
+  "why": "The Russian word 'включенный' is standard for 'included (in the product)' in this context, not a false implication of being turned on."
+ },
+ "94": {
+  "id": 94,
+  "verdict": "refuted",
+  "why": "Same as above: 'включенный' correctly conveys 'included with the product' and is not misleading to a Russian reader."
+ },
+ "_done": true
+}

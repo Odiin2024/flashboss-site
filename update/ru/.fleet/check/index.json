@@ -1,0 +1,9 @@
+{
+ "13": {
+  "id": 13,
+  "severity": "high",
+  "issue": "The English source says 'BossFight' (one word, no space/hyphen), but the Russian translation uses the house term 'босс-файт'. However, since 'BossFight' here appears to be a proper name or a menu item that should follow house conventions, this is actually correct. Wait — reviewing again: the house convention explicitly states to render 'boss fight' as 'босс-файт'. But the source is 'BossFight' (camelCase, likely a UI label). According to FlashBoss house rules, 'boss fight -> босс-файт' is binding. So this is correct. No error.",
+  "fix": null
+ },
+ "_done": true
+}

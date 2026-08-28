@@ -1,0 +1,182 @@
+{
+ "3": {
+  "id": 3,
+  "severity": "medium",
+  "issue": "'Roots' and 'Greek' should remain untranslated as they are part of the registered pack name 'Greek Roots'",
+  "fix": "<p class=\"kicker reveal\">Серия Greek Roots · <b>Greek</b></p>"
+ },
+ "4": {
+  "id": 4,
+  "severity": "high",
+  "issue": "'Greek Roots' is a registered pack name and must be kept exactly as-is, not translated",
+  "fix": "<h1 class=\"reveal\">Greek Roots<span class=\"cursor\"></span></h1>"
+ },
+ "18": {
+  "id": 18,
+  "severity": "medium",
+  "issue": "Imperative form 'Разберите его' uses formal/plural вы, but context (UI tag) likely expects informal singular imperative matching the app's instructional tone elsewhere (e.g., 'Нажмите' in #20 is acceptable as neutral imperative, but 'разберите' here feels inconsistent with typical UI microcopy which often uses infinitive or informal). However, more critically: the English 'Take it apart' is an infinitive phrase used as a label/tag, not a direct command. Russian should match this nominal style, not convert to imperative.",
+  "fix": "<span class=\"tag\">Разобрать</span>"
+ },
+ "19": {
+  "id": 19,
+  "severity": "medium",
+  "issue": "The term 'сборка' is a calque and unnatural in this linguistic context. In Russian linguistics, a word composed of morphemes is not called 'сборка' (which refers to mechanical assembly or software build). The correct term is 'слово состоит из частей' or similar, but as a headline, 'Слово — это конструкция' or 'Слово — это сочетание морфем' would be better. However, given the educational context and simplicity, 'Слово состоит из частей' would be clearer. But strictly speaking, 'сборка' is a mistranslation.",
+  "fix": "<h2>Слово состоит из частей</h2>"
+ },
+ "23": {
+  "id": 23,
+  "severity": "low",
+  "issue": "The word 'telescope' is part of the teaching material (it's being analyzed morphologically), so per house rules it must remain in original language. This is correct as-is. No defect.",
+  "fix": null
+ },
+ "24": {
+  "id": 24,
+  "severity": "medium",
+  "issue": "The English source uses 'far' and 'look, view' as glosses for Greek roots. The Russian translation renders 'far' as 'далеко', which is a full adverb, but the root 'tele-' conveys 'distant' or 'far-off' in a morphemic sense, not the standalone word 'far'. Similarly, 'view' is better rendered as 'взгляд' or 'видение' in this context, not just 'вид'. However, the bigger issue is inconsistency with house rules: words in the language being taught (here, English roots used in English vocabulary) should remain in English, and only the gloss/explanation should be translated. But 'tele' and 'scope' are not foreign-language teaching material—they are English word parts derived from Greek. According to FlashBoss conventions, the root forms (tele, scope, photo, graph) must stay as-is, and only the inline glosses (<i>...</i>) should be translated. This was done correctly. However, 'far' as a gloss for 'tele-' is imprecise; 'distant' is standard. But since we're reviewing translation fidelity, not linguistic accuracy of the source, the real defect is that 'look, view' → 'смотреть, вид' is unnatural: 'view' here means 'act of seeing' or 'sight', so 'вид' is too narrow (it usually means 'appearance' or 'type'), and 'смотреть' is a verb form mismatched with the noun 'view'. A more accurate gloss would be 'взгляд, зрение' or 'смотреть, взглянуть', but again—only if the source said that. The source says 'look, view', which are both nouns/verbs of perception. 'Смотреть' is fine for 'look', but 'вид' for 'view' is misleading. However, the critical breach is in #27.",
+  "fix": "<div class=\"parts\">\n            <span class=\"m pre\">tele<i>далёкий</i></span>\n            <span class=\"m rt\">scope<i>взгляд, зрение</i></span>\n          </div>"
+ },
+ "25": {
+  "id": 25,
+  "severity": "medium",
+  "issue": "The phrase 'инструмент для смотрения вдаль' uses the unnatural noun 'смотрения' (from 'смотреть'). While grammatically possible, it's not idiomatic Russian. The standard term would be 'прибор для наблюдения издалека' or 'устройство для рассматривания дальних объектов', but the source says 'an instrument for looking far', which is simplified. However, the bigger issue is consistency: if 'far' was translated as 'далеко' in #24, then 'looking far' becomes 'смотреть далеко', but 'вдаль' is actually better. Yet 'инструмент для смотрения' is stilted. More importantly, this is a direct translation of a simplified etymological explanation, so some leeway is acceptable. But the real defect is elsewhere.",
+  "fix": "<div class=\"sum\">далёкий + взгляд → инструмент для наблюдения издалека</div>"
+ },
+ "26": {
+  "id": 26,
+  "severity": "high",
+  "issue": "House style requires addressing the user as 'вы' (lowercase), not 'ты'. 'нажми' is informal imperative (ты-form). Should be 'нажмите' (вы-form).",
+  "fix": "<div class=\"hint\">нажмите, чтобы разобрать</div>"
+ },
+ "27": {
+  "id": 27,
+  "severity": "high",
+  "issue": "The English word 'photograph' refers to the image itself (a photo), but in Russian, 'фотография' can mean both the image and the profession/person. However, the bigger problem: the whole point of this exercise is to analyze the word 'photograph' as a compound. The English uses 'photograph' (the noun meaning 'photo'), but the Russian translation 'фотография' is correct for that meaning. However, note that in English, 'photograph' is the exact word being broken down. In Russian educational contexts, when analyzing English words, sometimes the English word is kept, but according to house rules: 'Any word or sentence in a language BEING TAUGHT [...] — those are teaching material. Translate only the English gloss/explanation around them.' Here, the language being taught isn't specified, but given the context (Greek/Latin roots in English vocabulary), the word 'photograph' is part of the English teaching material and should NOT be translated. House convention: 'KEEP EXACTLY AS-IS [...] Any word or sentence in a language BEING TAUGHT'. Since this appears to be an English vocabulary lesson using root analysis, 'photograph' must remain in English. Translating it to 'фотография' violates the rule.",
+  "fix": "<div class=\"whole\">photograph</div>"
+ },
+ "35": {
+  "id": 35,
+  "severity": "high",
+  "issue": "The word being taught (xenophobia) is left in English instead of being transliterated or translated as per house convention: 'Any word or sentence in a language BEING TAUGHT — those are teaching material. Translate only the English gloss/explanation around them.' Since xenophobia is a Greek-derived English term being explained, it should appear in Cyrillic as ксенофобия.",
+  "fix": "<div class=\"whole\">ксенофобия</div>"
+ },
+ "61": {
+  "id": 61,
+  "severity": "medium",
+  "issue": "In the English source, 'over, excessive' are two adjectival/noun-like glosses; in Russian, 'сверх' is a prefix/preposition, while 'чрезмерный' is an adjective — mismatch in part of speech and form. Should be consistent with how the root functions. Since 'hyper-' is a prefix meaning 'over-, excessive-', the Russian should reflect that both are glosses of the prefix, e.g., 'сверх-, чрезмерно' or 'сверх-, избыточно'. Using 'чрезмерный' (adjective) alongside 'сверх' (prefix) creates grammatical inconsistency.",
+  "fix": "<div class=\"v\"><b>сверх-, чрезмерно</b> — hyperactive, hyperlink, hyperventilate</div>"
+ },
+ "65": {
+  "id": 65,
+  "severity": "low",
+  "issue": "The phrase 'Выучите это один раз' is a direct but slightly unnatural calque. In Russian educational context, 'Выучите это один раз' sounds imperative and abrupt. More natural phrasing would be 'Освойте его один раз' or 'Изучите один раз — и запомните надолго'. However, this is borderline style. But more importantly: the English says 'Learn it once' — implying efficiency of the system. The Russian 'Выучите это один раз' could imply 'just learn it a single time (and that’s enough)', which may sound unrealistic. A better fit per house style and naturalness: 'Изучите один раз — и хватит.' But since house style prefers terse marketing copy, perhaps 'Изучите один раз.' However, the bigger issue is gender agreement: 'блок' is masculine, so 'семейство... Выучите его' — but 'это' refers to the whole idea, which is acceptable. Still, 'Выучите это' is slightly off because 'это' doesn’t clearly refer to a learnable unit. Preferred: 'Освойте его один раз.' per FlashBoss terminology ('graduate a card' = 'считается освоенной'). So 'освоить' is the house verb.",
+  "fix": "<p class=\"sub\">Каждый блок — это семейство греческих частей и английских слов, построенных из них. Освойте его один раз.</p>"
+ },
+ "66": {
+  "id": 66,
+  "severity": "medium",
+  "issue": "The English 'feeling' here is used in the sense of 'emotion/passion' (as in Greek πάθος), not general 'чувство'. 'Чувство' is too broad and neutral; a more precise rendering would be 'страсть' or 'эмоция', but given the context of suffering, 'страдание' alone may suffice. However, the bigger issue is that the source says 'from Greek', but house convention requires language names to remain in English when referring to the source language of etymology. So 'из греческого' violates the rule: 'Any word or sentence in a language BEING TAUGHT [...] — those are teaching material. Translate only the English gloss/explanation around them.' Since Greek is a taught language (Greek Roots pack exists), the phrase 'from Greek' should NOT be translated.",
+  "fix": "<div class=\"stem\">\n          <span class=\"glyph\">path</span>\n          <span class=\"mean\">чувство · страдание</span>\n          <span class=\"src\">from Greek <i>πάθος</i> (páthos)</span>\n        </div>"
+ },
+ "68": {
+  "id": 68,
+  "severity": "high",
+  "issue": "The word 'register' is mistranslated as 'диапазон'. In linguistic/educational context, 'register' refers to stylistic levels (formal/informal), not a numerical or tonal range. The English says 'both ends of the register belong to you', meaning mastery of both colloquial ('sofa') and technical ('clinic') usage. 'Диапазон' is incorrect. Also, 'Увидьте' is an archaic/imperative form rarely used in modern Russian; 'Увидев' or 'Увидите' would be better, but the main error is 'register'. Moreover, 'path' and words like 'sympathy', 'neuropathy' are part of the teaching material (Greek Roots), so they must remain untranslated per house rules — which they do, so that part is OK. But 'register' is an English term being explained, so it should either stay as 'регистр' (linguistic term) or be properly glossed. 'Диапазон' is wrong.",
+  "fix": "<p class=\"note\">Тринадцать слов, один корень — от дивана до клиники. Тот <span class=\"r\" style=\"color:var(--root); font-weight:700;\">path</span>, который сочувствует в sympathy, — тот же, что страдает в neuropathy. Увидите его один раз — и оба полюса регистра станут вашими.</p>"
+ },
+ "69": {
+  "id": 69,
+  "severity": "high",
+  "issue": "Again, 'register' is translated as 'диапазон', but in this educational context, 'register' refers to linguistic register (stylistic range), not a measurable scale. The phrase 'Watch the register climb' metaphorically means observing the expansion of one's command across stylistic levels. 'Диапазон' misrepresents the concept. Should be 'регистр'.",
+  "fix": "<span class=\"tag\">Наблюдайте, как растёт регистр</span>"
+ },
+ "71": {
+  "id": 71,
+  "severity": "medium",
+  "issue": "'the chart at the foot of the hospital bed' is medical jargon referring to patient charts/records kept at the end of the bed. Translating 'chart' as 'карта' is misleading—it suggests a map. Correct term is 'история болезни', 'медицинская карта', or simply 'карта пациента', but 'карта' alone is ambiguous and unnatural in this context. Also, 'в ногах больничной койки' is awkward; standard phrasing is 'у изголовья/у изножья койки', but 'в ногах' is colloquial and imprecise. Better: 'у изножья больничной койки'.",
+  "fix": "<p class=\"sub\">Набор состоит из пяти уровней, от T1 до T5 — от технологии в вашем кармане до медицинской карты у изножья больничной койки.</p>"
+ },
+ "80": {
+  "id": 80,
+  "severity": "medium",
+  "issue": "The phrase 'learned side by side' is inaccurately rendered as 'изучаются рядом', which sounds unnatural and vague in Russian. The intended meaning is that the words in each cluster are learned together as a group or in parallel.",
+  "fix": "<dd>1000 карточек, 1000 слов в 55 блоках корней на пяти уровнях — каждый блок представляет одну семью греческих корней, изучаемых совместно.</dd>"
+ },
+ "82": {
+  "id": 82,
+  "severity": "high",
+  "issue": "Violates house style: uses informal 'ты' instead of formal 'вы'. Also, 'оно не возвращается' is awkward; cards (карточки) are feminine, so pronoun should agree. Additionally, 'интервальное повторение на интервалах Фибоначчи' is redundant and unidiomatic.",
+  "fix": "<dd>Оценивайте каждую карточку от 0 до 5. Чем лучше вы знаете слово, тем дольше оно не появляется снова — интервальное повторение с интервалами по Фибоначчи.</dd>"
+ },
+ "84": {
+  "id": 84,
+  "severity": "medium",
+  "issue": "Uses informal 'ты' instead of the required formal 'вы' per house style.",
+  "fix": "<dd>Каждый блок корней защищён дуэлью, которую вы не сможете выиграть, не встретив и не преодолев его самых сложных членов.</dd>"
+ },
+ "86": {
+  "id": 86,
+  "severity": "medium",
+  "issue": "Uses informal 'Победи' (imperative with 'ты') instead of addressing the reader as 'вы'. Also, 'покидают твою' uses 'твою' which violates the 'вы' convention.",
+  "fix": "<dd>Победите блок, и его карточки навсегда покидают вашу ежедневную колоду. Колода становится меньше по мере обучения.</dd>"
+ },
+ "88": {
+  "id": 88,
+  "severity": "medium",
+  "issue": "Mixes formal 'Вам' and 'вы' correctly, but the phrase 'читать по-гречески' is unnatural; standard phrasing is 'читать по-гречески' only in colloquial speech; better: 'читать на греческом' or 'знать греческий'. However, more importantly, 'его' refers to 'греческое слово' (neuter), but 'его' is masculine—should be 'его' only if referring to 'язык', but antecedent is ambiguous. Better rephrase for clarity and agreement. But main issue: 'в его собственном письме' is a calque; native Russian says 'в оригинальном написании' or 'в греческом алфавите'. However, per instructions, only flag clear defects. The real defect is register inconsistency: starts formal ('Вам'), but 'по-гречески' is too colloquial for this context. Preferred: 'Вам не нужно уметь читать по-гречески' is acceptable, but house style prefers consistency. However, the bigger issue is that 'его' has no clear neuter antecedent—'слово' is neuter, so 'его' is correct (since 'его' is used for neuter possessive in this context). So the main actionable defect is actually the use of 'твою' elsewhere, but here it's 'Вам... вы', which is correct. Wait—rechecking: the sentence uses 'Вам' (capitalized?) No, it's 'Вам' with capital V? In Russian, pronouns are not capitalized unless start of sentence. But in the source it's mid-sentence: 'Вам не нужно...' — that's fine. Actually, upon closer look, #88 is correct. But wait: the instruction says 'Address the reader as вы (lowercase, not capitalised)'. Here it's 'Вам' and 'вы' — both are lowercase in Cyrillic? 'В' is uppercase because it's the start of the sentence after the em dash? No, the sentence is: 'Каждая карточка называет корень, показывает... и точно объясняет... Вам не нужно...' — so 'Вам' is capitalized because it starts a new clause after a period? Actually, no period—there’s an em dash earlier, but the sentence continues. Wait, original: '...собираются части. Вам не нужно...' — yes, there is a period, so 'Вам' is correctly capitalized as start of sentence. And 'вы' later is lowercase. So #88 is actually correct. Therefore, only #84 and #86 have defects."
+ },
+ "90": {
+  "id": 90,
+  "severity": "medium",
+  "issue": "Violates house convention: 'Piper' is a brand token and must be kept as-is, but 'синтез речи' is a generic translation. The phrase should reflect the exact product name 'Piper text-to-speech' as used in English, not translate 'text-to-speech'.",
+  "fix": "<dd>Чистый Piper text-to-speech на каждом слове и примере предложения.</dd>"
+ },
+ "93": {
+  "id": 93,
+  "severity": "medium",
+  "issue": "Violates house convention: 'Roots' is part of registered pack names like 'German Roots', which must be kept exactly as-is. Translating 'Roots Series' as 'серии Roots' is acceptable per convention (since only the token 'Roots' is preserved), but the current rendering 'серии Roots' lacks the definite article or stylistic match. However, more critically, the English says 'Part of the Roots Series' — a proper title — and house rules require keeping such branding intact. The correct approach is to leave 'Roots Series' untranslated as a branded term.",
+  "fix": "<h2>Part of the Roots Series</h2>"
+ },
+ "95": {
+  "id": 95,
+  "severity": "high",
+  "issue": "Violates house convention: 'German Roots' is a registered pack name and must be kept exactly as-is. However, the Russian version correctly leaves it in English, so this appears compliant. But wait — the instruction says: 'Registered pack names: ... German Roots ... KEEP EXACTLY AS-IS'. The current RU unit does keep it as-is, so this is actually correct. Therefore, no error here.",
+  "fix": null
+ },
+ "98": {
+  "id": 98,
+  "severity": "high",
+  "issue": "'Norman Roots' is a registered pack name and must be kept in English as per house conventions, but the Russian translation leaves it untranslated while using a <div> tag — however, the issue is that the class 'n' may imply it should be treated as a pack name, and the English original is correct. But according to house rules, registered pack names like 'Norman Roots' must be kept exactly as-is. The Russian version does keep it as 'Norman Roots', so this is actually correct. No error.",
+  "fix": ""
+ },
+ "100": {
+  "id": 100,
+  "severity": "high",
+  "issue": "Same as #98: 'Latin Roots' is a registered pack name and must remain in English. The Russian version correctly keeps it as 'Latin Roots'. So no error.",
+  "fix": ""
+ },
+ "102": {
+  "id": 102,
+  "severity": "high",
+  "issue": "Brand token 'Greek Roots' should be kept as-is per house conventions, but it is a registered pack name and must not be translated. However, the Russian version leaves it in English, which is correct per rules. No error.",
+  "fix": null
+ },
+ "105": {
+  "id": 105,
+  "severity": "medium",
+  "issue": "Imperative 'читай' uses informal ты-form, but house style requires addressing the reader as 'вы'. Should be 'читайте'.",
+  "fix": "<h2>Сначала читайте самые большие слова.</h2>"
+ },
+ "107": {
+  "id": 107,
+  "severity": "high",
+  "issue": "The pack name 'Greek Roots' must be kept exactly as-is per house conventions, but in the Russian version it appears untranslated inside a translatable context ('Купить X в Steam'). This is correct per rules — brand/pack names are never translated. However, the surrounding phrase is translated properly. No error.",
+  "fix": null
+ },
+ "110": {
+  "id": 110,
+  "severity": "high",
+  "issue": "The page title contains the pack name 'Greek Roots', which per house conventions must be kept in English exactly as-is. The current Russian translation leaves the entire title untranslated, but it should render the descriptive part in Russian while preserving 'Greek Roots' and 'FlashBoss' unchanged.",
+  "fix": "<title>Greek Roots — FlashBoss</title>"
+ },
+ "_done": true
+}

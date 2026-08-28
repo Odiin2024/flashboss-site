@@ -1,0 +1,165 @@
+{
+ "18": {
+  "id": 18,
+  "severity": "medium",
+  "issue": "Toki Pona is a language name and should not be declined in Russian; 'который' incorrectly treats it as masculine singular noun. Also, 'на курсах эсперанто' misrepresents the original: English says 'the Esperanto courses' (i.e., specific courses), but Russian phrasing implies general attendance of Esperanto courses.",
+  "fix": "<div class=\"where\">Говорит на <b>Toki Pona</b>, который бесплатен в базовой игре, и на <b>курсах Esperanto</b>. Обучен для FlashBoss, потому что не существовало хорошего голоса для эсперанто.</div>"
+ },
+ "21": {
+  "id": 21,
+  "severity": "medium",
+  "issue": "The phrase 'обучен на Mozilla Common Voice' is unnatural Russian. The standard phrasing for ML training data is 'обучен на данных Mozilla Common Voice' or similar. However, per house rules, 'Mozilla Common Voice' must remain untranslated, but the preposition structure is awkward without 'данных'. Still, given marketing brevity norms and lack of explicit requirement to add 'данных', this may be acceptable. But more critically: 'FlashBoss' is part of the credit and must remain exactly as-is — which it does — so main issue is style. However, another defect: 'CC0 1.0' should remain exactly as in English per house convention (it is a license token), which it does. On closer review, the real issue is that 'trained on Mozilla Common Voice' refers to the voice model, not FlashBoss itself. The English says the voice was trained, but Russian says 'FlashBoss ... обучен', which misattributes the training to the software rather than the voice. This changes meaning.",
+  "fix": "<div class=\"credit\">FlashBoss · CC0 1.0 · голос обучен на Mozilla Common Voice</div>"
+ },
+ "27": {
+  "id": 27,
+  "severity": "medium",
+  "issue": "The English says the voice 'comes with' the packs, implying the voice is included in those packs. The Russian says the voice 'входит в' (is part of) the packs, which reverses the relationship: it suggests the voice is a component inside the packs, rather than the packs including the voice. This subtly misrepresents the product structure.",
+  "fix": "<div class=\"where\">Идёт в комплекте с <b>German Core</b> и обоими курсами <b>German Pareto</b>.</div>"
+ },
+ "33": {
+  "id": 33,
+  "severity": "medium",
+  "issue": "Brand tokens 'Spanish Core' and 'Spanish Pareto' should remain untranslated per house conventions, but the surrounding phrasing is unnatural in Russian: 'входит в состав ... и обоих курсов' incorrectly implies the voice is part of the packs. The English says the voice *comes with* those packs — i.e., purchasing those packs includes this voice. The current translation reverses the relationship.",
+  "fix": "<div class=\"where\">Доступен в наборах <b>Spanish Core</b> и обоих курсах <b>Spanish Pareto</b>.</div>"
+ },
+ "36": {
+  "id": 36,
+  "severity": "medium",
+  "issue": "The term 'Piper voices' should be translated as 'голоса Piper' per house conventions, which require translating descriptive terms while keeping brand tokens like 'Piper' unchanged.",
+  "fix": "<div class=\"credit\">es_MX-claude · голоса Piper</div>"
+ },
+ "39": {
+  "id": 39,
+  "severity": "medium",
+  "issue": "The phrase 'French Pareto' is not a registered pack name; the correct registered names are 'Pareto 1' and 'Pareto 2'. The English source incorrectly uses 'French Pareto courses', but the Russian translation must still reflect the intended meaning accurately. However, per house rules, if the English says 'French Pareto courses', and that’s not a registered name, it's a source error—but since we must not add or drop info, and 'French Pareto' isn't a valid token, the safer interpretation is that it refers to the two Pareto levels for French. Still, the bigger issue is that 'French Core' is a registered pack name and must stay as-is (which it does), but 'both French Pareto courses' should map to 'обоих наборов Pareto' or similar. However, the main defect is that 'courses' is translated as 'курсов', but in FlashBoss conventions, structured learning units like these are called 'наборы' (packs), not 'курсы'. The English uses 'courses' loosely, but the Russian should align with house terminology: 'наборы', not 'курсы'.",
+  "fix": "<div class=\"where\">Входит в состав <b>French Core</b> и обоих наборов <b>Pareto</b>.</div>"
+ },
+ "42": {
+  "id": 42,
+  "severity": "medium",
+  "issue": "House convention breach: 'voices' must be translated as 'голоса', but the brand token 'Piper' should remain unchanged. However, the phrase 'Piper voices' is a proper noun phrase referring to a product feature and should follow house style. According to conventions, 'voices' as a standalone term is translated, but in this credit context it's part of a branded label. The English uses 'Piper voices' as a fixed phrase; house rules say brand tokens stay, but common nouns like 'voices' are translated. This is acceptable per conventions.",
+  "fix": "<div class=\"credit\">SIWIS · Piper голоса</div>"
+ },
+ "43": {
+  "id": 43,
+  "severity": "high",
+  "issue": "Italiano is the name of the language being taught (Italian), so per house rules it must NOT be translated. However, the Russian page should display the native name only if it's part of the teaching material. But according to the instruction: 'Any word or sentence in a language BEING TAUGHT [...] — those are teaching material.' Here, 'Italiano' is used as a label for the voice/language option, not as teaching content. House convention does not explicitly protect language names used as UI labels. However, standard practice in FlashBoss is to keep language names in their native form in such contexts (e.g., 'Español', 'Deutsch'), and the English source uses 'Italiano', not 'Italian'. Therefore, leaving it as 'Italiano' is correct per implied convention. No error.",
+  "fix": "<div class=\"name\">Italiano</div>"
+ },
+ "45": {
+  "id": 45,
+  "severity": "high",
+  "issue": "House convention breach: 'Italian Core' and 'Italian Pareto' are registered pack names and must be kept exactly as-is. However, the Russian translation inserts 'курсов' (courses) which is not in the English. The English says 'both Italian Pareto courses' — but 'Italian Pareto' is not a registered pack name; the registered names are 'Pareto 1' and 'Pareto 2'. The phrase 'Italian Pareto courses' is descriptive, not a pack name. But the bigger issue: the English says 'both Italian Pareto courses', implying two courses. The Russian says 'обоих курсов Italian Pareto', which is acceptable. However, the registered pack names are 'Italian Core', 'Pareto 1', 'Pareto 2' — so 'Italian Pareto' is not a pack name and can be translated descriptively. BUT: the English uses bold on 'Italian Pareto', suggesting it's treated as a proper name. However, per house list, only 'Pareto 1' and 'Pareto 2' are registered. So 'Italian Pareto' is not protected. Still, the translation adds 'курсов' which changes structure. The English: 'Comes with Italian Core and both Italian Pareto courses.' The Russian: 'Входит в состав Italian Core и обоих курсов Italian Pareto.' This is accurate. However, note that 'Italian Core' is a registered pack name and is correctly kept. No actual error.",
+  "fix": "<div class=\"where\">Входит в состав <b>Italian Core</b> и обоих курсов <b>Italian Pareto</b>.</div>"
+ },
+ "48": {
+  "id": 48,
+  "severity": "medium",
+  "issue": "House convention requires 'voices' to be rendered as 'голоса', but brand token 'Piper' must remain untranslated. However, the English original uses 'Piper voices' as a compound noun phrase where 'Piper' modifies 'voices'. The Russian translation 'голоса Piper' is grammatically awkward and violates standard Russian word order for such constructions; it should be 'голоса от Piper' or, per house style preference for minimal change, keep 'Piper voices' as-is if it's a proper name of a voice pack. But according to house rules, only brand tokens are kept — 'voices' must be translated. Yet 'Piper voices' likely refers to a specific product feature named as such, so the entire phrase may be a proper noun. However, the instructions say: 'Brand tokens: FlashBoss, Pareto, Master Odiin, Steam, Piper, Windows, Mac, Linux, DLC.' — only 'Piper' is protected. 'voices' is not a brand token and must be translated. Still, 'Piper voices' as a collocation should follow Russian grammar: 'голоса Piper' is acceptable in tech contexts (like 'движок Unity'), so this may be okay. But wait — house terminology explicitly says: 'voice -> голос', 'voices -> голоса'. So 'Piper voices' → 'голоса Piper' is correct per conventions. No error.",
+  "fix": null
+ },
+ "49": {
+  "id": 49,
+  "severity": "none",
+  "issue": "toki pona is a language being taught; per house rules, it must remain untranslated. Correct.",
+  "fix": null
+ },
+ "50": {
+  "id": 50,
+  "severity": "none",
+  "issue": "'free' → 'бесплатно', 'base game' → 'базовая игра' — both correct per conventions ('free -> бесплатно').",
+  "fix": null
+ },
+ "51": {
+  "id": 51,
+  "severity": "high",
+  "issue": "The phrase 'голосом Esperanto' incorrectly translates 'Esperanto voice'. Per house rules, 'voice' → 'голос', and 'Esperanto' is a language being taught, so it must remain in original form. However, in Russian, when referring to a voice labeled 'Esperanto', it should be 'голос Esperanto' (nominative), not instrumental 'голосом'. The verb 'озвучено' requires instrumental case, so 'голосом Esperanto' is grammatically correct. BUT: house terminology specifies that 'voice' as a UI/product term maps to 'голос', and brand/language names stay. So 'Esperanto voice' → 'голос Esperanto' is the term, but in the sentence 'Озвучено [кем? чем?] → требуется творительный падеж: голосом Esperanto'. This is actually correct. However, note that 'Esperanto' here is a language code/name and must not be translated — which it isn't. So no error?",
+  "fix": null
+ },
+ "52": {
+  "id": 52,
+  "severity": "none",
+  "issue": "Toki Pona sentence — must remain as-is. Correct.",
+  "fix": null
+ },
+ "53": {
+  "id": 53,
+  "severity": "medium",
+  "issue": "'выучить' implies perfective mastery, but English 'learn' here is general. More natural Russian would be 'изучить' or 'выучить' is acceptable in informal contexts. However, bigger issue: 'Toki Pona' is the name of the language and must remain untranslated — which it does. But house rules say: 'Any word or sentence in a language BEING TAUGHT [...] — those are teaching material.' Toki Pona is being taught, so its name stays. However, in the gloss, it's part of the English explanation. Should 'Toki Pona' be transliterated or kept as Latin script? House rules say: KEEP AS-IS. So 'Toki Pona' must remain in Latin letters. It does. But the verb: 'выучить' is fine. However, note that in Russian, language names are often declined or adapted, but for constructed languages like Toki Pona, it's standard to leave as-is. So no error.",
+  "fix": null
+ },
+ "55": {
+  "id": 55,
+  "severity": "medium",
+  "issue": "The English uses 'Latina' which appears to be a proper name or voice title, but in Russian it should likely be 'Латина' to match Cyrillic orthography conventions for such labels, unless 'Latina' is a fixed brand token. However, per house rules, only specified brand tokens are kept as-is; 'Latina' is not listed, and given the context (voice name), it should be transliterated.",
+  "fix": "<div class=\"name\">Латина <span class=\"soon\">скоро</span></div>"
+ },
+ "57": {
+  "id": 57,
+  "severity": "high",
+  "issue": "The English says 'Will come with Latin Core and Latin Pareto 1', but the Russian translates this as 'Будет включён в...', implying the voice is included *in* those packs. However, the original phrasing 'come with' could mean the packs will include this voice — which the Russian correctly reflects. BUT: the pack names 'Latin Core' and 'Latin Pareto 1' are not on the list of registered pack names to keep as-is. Per house rules, only specific pack names like 'English Core', 'Pareto 1', 'Latin Roots' etc. are exempt. 'Latin Core' and 'Latin Pareto 1' are not listed, so they should be translated or adapted. However, note that 'Core' and 'Pareto 1' are registered when prefixed with language (e.g., 'French Core'), so by analogy 'Latin Core' and 'Latin Pareto 1' are valid registered pack names and should remain in English. Thus this is actually correct. Wait — rechecking house list: 'Latin Roots' is listed, but not 'Latin Core'. The registered ones are: 'English Core, English Advance, English Adept, Core, Pareto 1, Pareto 2, German Roots, Norman Roots, Latin Roots, Greek Roots, French Core, Spanish Core, Italian Core...'. So 'French Core' is allowed, thus by pattern 'Latin Core' is acceptable as a pack name and should stay. Same for 'Latin Pareto 1' (since 'Pareto 1' is registered, and language-prefixed versions like 'French Core' exist, it's reasonable to treat 'Latin Pareto 1' as a valid pack name). So this is OK. However, there's another issue: the phrase 'Обучен для FlashBoss' is unnatural. Voices aren't 'trained for FlashBoss'; rather, they are trained *using* or *for use in* FlashBoss. But the English says 'Trained for FlashBoss', which is marketing shorthand meaning 'prepared specifically for use in FlashBoss'. The Russian 'Обучен для FlashBoss' is a calque and sounds odd — better would be 'Подготовлен для FlashBoss' or 'Создан для FlashBoss'. 'Обучен' typically applies to people or AI models, not voices as assets. Since this is a voice asset, 'обучен' is a medium-severity calque.",
+  "fix": "<div class=\"where\">Будет включён в <b>Latin Core</b> и <b>Latin Pareto 1</b>, выходящих в ближайшее время. Создан для FlashBoss с восстановленным классическим произношением.</div>"
+ },
+ "63": {
+  "id": 63,
+  "severity": "medium",
+  "issue": "The English original uses '(F)' to denote female voice, which is a standard abbreviation in voice/actor credits. The Russian translation renders it as '(Ж)', which is not conventional in this context and breaks consistency with industry norms; the letter should remain 'F' as per house convention for key names and tokens.",
+  "fix": "<div class=\"name\">Британский английский (F)</div>"
+ },
+ "66": {
+  "id": 66,
+  "severity": "medium",
+  "issue": "The English imperative 'Listen to...' is instructional within the app's 'Listen · Read · Repeat · Rate · Fight' flow, which uses the informal imperative 'Слушай'. However, the objects 'bottle, glass, water' are teaching material (English words being taught), so they must NOT be translated per house rules.",
+  "fix": "<div class=\"gloss\">Слушай bottle, glass, water.</div>"
+ },
+ "67": {
+  "id": 67,
+  "severity": "medium",
+  "issue": "The verb 'Послушайте' is formal/plural, but the house style mandates addressing the user as 'вы' in lowercase and using informal register consistent with the app's flow ('Слушай'). Also, 'voice' is a house term rendered as 'голос', which is correct, but the register mismatch remains.",
+  "fix": "<span>Слушай то же предложение в прилагаемом американском голосе</span>"
+ },
+ "69": {
+  "id": 69,
+  "severity": "high",
+  "issue": "Castellano is Spanish for 'Spanish (of Spain)' and is part of the language being taught or referenced as a proper name. However, per house rules, only words/sentences IN THE LANGUAGE BEING TAUGHT should remain untranslated. Here, 'Castellano' is a label for a voice/resource, not a teaching item in a lesson. Since it's a UI label describing the variety of Spanish, it should be translated to Russian as 'Кастильский' or kept as 'испанский (Испания)', but the current practice in FlashBoss for such labels (e.g., #70 uses 'Испания') suggests it should be localized. However, note that 'Castellano' is often left as-is in language selectors. But given #70 translates metadata ('Spain · male' → 'Испания · мужской'), consistency demands localization. Yet—crucially—the house conventions do NOT list 'Castellano' as a brand token or protected term. Therefore, it should be translated.",
+  "fix": "<div class=\"name\">Кастильский</div>"
+ },
+ "72": {
+  "id": 72,
+  "severity": "medium",
+  "issue": "Imperative 'Слушайте' is too formal/instructional; the English 'Listen to...' is a neutral gloss, not a command. Should use infinitive or third-person form per house style for glosses.",
+  "fix": "<div class=\"gloss\">Слушать gracias и perseverancia.</div>"
+ },
+ "77": {
+  "id": 77,
+  "severity": "high",
+  "issue": "'FlashBoss Главная' violates house convention: 'home' must be translated as 'главная' but kept separate from brand name. Correct rendering is 'Главная' alone, without prepending 'FlashBoss'.",
+  "fix": "<div class=\"doors\"> <a class=\"btn\" href=\"home.html\">Главная</a> <a class=\"btn ghost\" href=\"https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-voices\" target=\"_blank\" rel=\"noopener\">FlashBoss в Steam</a> </div>"
+ },
+ "88": {
+  "id": 88,
+  "severity": "high",
+  "issue": "Missing aria-label attribute in Russian translation",
+  "fix": "aria-label=\"Воспроизвести образец итальянского\""
+ },
+ "89": {
+  "id": 89,
+  "severity": "medium",
+  "issue": "Language name 'Toki Pona' should not be translated per house conventions",
+  "fix": "aria-label=\"Воспроизвести образец Toki Pona\""
+ },
+ "92": {
+  "id": 92,
+  "severity": "medium",
+  "issue": "Misleading translation: 'включенный' implies the voice is turned on, but English means 'included (with the product)'.",
+  "fix": "Воспроизвести включённый в комплект американский голос, произносящий ту же фразу"
+ },
+ "94": {
+  "id": 94,
+  "severity": "medium",
+  "issue": "Misleading translation: 'включенный' implies the voice is turned on, but English means 'included (with the product)'.",
+  "fix": "Воспроизвести включённый в комплект латиноамериканский голос, произносящий ту же фразу"
+ },
+ "_done": true
+}

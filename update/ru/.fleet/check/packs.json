@@ -1,0 +1,39 @@
+{
+ "6": {
+  "id": 6,
+  "severity": "medium",
+  "issue": "The English source says 'Build on the English you have', which implies leveraging existing knowledge. The Russian 'Развивайте свой английский' is more generic ('Develop your English') and loses the nuance of building upon what you already know.",
+  "fix": "<div class=\"subhead\">Развивайте английский, который у вас уже есть</div>"
+ },
+ "11": {
+  "id": 11,
+  "severity": "high",
+  "issue": "The English words being taught (stubborn, obstinate, agreement, consensus) must remain untranslated per house rules, but the Russian translation leaves them in English without indicating they are teaching material. However, the bigger issue is that the phrase 'чтобы отточить ваше письмо и мышление' is unnatural: 'письмо' means a letter/email, not 'writing' as a skill. Should be 'умение писать' or 'письменную речь'. Also, the original says 'how you write and think' — the Russian should reflect that more accurately.",
+  "fix": "<p>Точный английский — разница между stubborn и obstinate, agreement и consensus. 1000 слов, чтобы отточить то, как вы пишете и думаете.</p>"
+ },
+ "14": {
+  "id": 14,
+  "severity": "high",
+  "issue": "The word 'English' should not be translated per house conventions, but here it is left in English while the rest is translated. However, the bigger issue is that 'English' here is part of the product name and should remain as-is, which it does — BUT the surrounding context implies this is a title for a pack or offering, and according to house rules, brand/product presentation like 'English Core', 'English Adept' are kept in English. However, in this specific case, the HTML shows: <div class=\"name\">English<span class=\"native\">as a foreign language</span><span class=\"dlc-inline\">DLC</span></div>. The word 'English' is not a brand token by itself here—it's descriptive. But house conventions say: 'KEEP EXACTLY AS-IS... Brand tokens: FlashBoss, Pareto, Master Odiin, Steam, Piper, Windows, Mac, Linux, DLC.' 'English' is NOT a brand token. However, in the context of pack names like 'English Core', those full phrases are kept. Here, it's just 'English' as a language name in a descriptive heading. Language names in such descriptive contexts SHOULD be translated. Therefore, 'English' should be 'Английский'. Leaving it as 'English' violates the rule that only specified tokens stay untranslated. Teaching material stays in original language, but this is not teaching material—it's UI describing the product.",
+  "fix": "<div class=\"name\">Английский<span class=\"native\">как иностранный язык</span><span class=\"dlc-inline\">DLC</span></div>"
+ },
+ "17": {
+  "id": 17,
+  "severity": "medium",
+  "issue": "The series name 'The Roots Series' includes 'Roots', which is part of registered pack names like 'German Roots', 'Latin Roots', etc. According to house conventions, these are kept in English. Therefore, 'Roots' must remain untranslated. However, the translation renders it as 'Серия Roots', which is correct—but the English source says 'The Roots Series', and the Russian drops 'The' (which is fine), but more importantly, the phrase 'Roots' is correctly kept. Wait—actually, the translation says 'Серия Roots', which is acceptable per convention. However, the English says 'The Roots Series — where English came from'. The Russian says 'Серия Roots — откуда произошёл английский'. This is mostly fine, but 'произошёл' is masculine, agreeing with 'английский' (язык), which is correct. So why flag? Re-examining: the issue is subtle. The English says 'where English came from' — implying the origin of the English language. The Russian says 'откуда произошёл английский', which is natural and correct. No error. But wait: house conventions say 'registered pack names: ... German Roots, Norman Roots, Latin Roots, Greek Roots' — so 'Roots' is part of a proper name and must stay. The translation does keep 'Roots', so that’s correct. However, the English uses 'The Roots Series' as a title. In Russian, it's common to translate 'Series' as 'серия', which is done. So actually, #17 is correct. Then why consider flagging? It seems okay. But let's check #13: 'Learn English from your language' → 'Изучайте английский с вашего языка'. The preposition 'с' is incorrect; it should be 'на' or 'исходя из', but standard phrasing is 'изучать X на основе Y' or 'изучать X с помощью Y', but 'с вашего языка' is unnatural. The correct phrasing is 'Изучайте английский на вашем языке' or 'Изучайте английский с опорой на ваш язык', but the intended meaning is 'learn English using your native language as support'. The standard marketing phrase in Russian for apps like Duolingo is 'Изучайте английский на русском' (if Russian is your language). So 'с вашего языка' is a calque from English 'from your language' and is unidiomatic. It should be 'на вашем языке'. So #13 has a medium-severity naturalness/register issue.",
+  "fix": "<div class=\"subhead\">Изучайте английский на вашем языке</div>"
+ },
+ "45": {
+  "id": 45,
+  "severity": "high",
+  "issue": "The phrase 'Core free' should follow house conventions: 'Core' is a registered pack name and must remain untranslated; 'free' should be rendered as 'бесплатно', but the correct phrasing per convention is 'Core бесплатно' only if that's the official rendering. However, the English says 'Core free', which in FlashBoss context means the Core pack is free. The Russian correctly translates 'free' as 'бесплатно', but the placement and form are acceptable. However, deeper issue: 'Esperanto' as the language name in the main text should be translated to 'Эсперанто' per standard Russian practice, because it is not a brand token or teaching material—it's the name of the language being offered, just like 'Spanish' was translated to 'Испанский' in #42. Leaving 'Esperanto' untranslated here violates consistency with #42 and general Russian localization norms for language names.",
+  "fix": "<div class=\"name\">Эсперанто<span class=\"native\">Esperanto</span><span class=\"free-inline\">Core бесплатно</span></div>"
+ },
+ "54": {
+  "id": 54,
+  "severity": "medium",
+  "issue": "The phrase 'текст-в-речь' is a calque and not the standard Russian term for 'text-to-speech'. The correct term is 'синтез речи'.",
+  "fix": "Полный каталог FlashBoss. Английские наборы, которые оттачивают язык, которым вы уже владеете — English Advance, English Adept и серия Roots (German, Norman, Latin, Greek) — плюс языковые курсы немецкого, итальянского, испанского, эсперанто и французского, а также Toki Pona бесплатно в базовой игре. Интервальное повторение, босс-файты и синтез речи."
+ },
+ "_done": true
+}

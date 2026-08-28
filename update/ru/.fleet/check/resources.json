@@ -1,0 +1,39 @@
+{
+ "18": {
+  "id": 18,
+  "severity": "medium",
+  "issue": "«Шпаргалки» has a negative connotation (cheat sheets used illicitly), while 'reference sheets' are neutral/positive study aids. This misrepresents the product's intent.",
+  "fix": "<h2>Справочные листы</h2>"
+ },
+ "22": {
+  "id": 22,
+  "severity": "medium",
+  "issue": "«ЧаВо» is an outdated and informal abbreviation for FAQ; modern Russian websites typically use «Вопросы и ответы» or «FAQ». «ЧаВо» may confuse or seem unprofessional.",
+  "fix": "<h2>Вопросы и ответы</h2>"
+ },
+ "32": {
+  "id": 32,
+  "severity": "medium",
+  "issue": "Brand name 'facebook' should remain as-is per house convention, but the context is a share button label which is UI text—not a brand token in running prose. However, common practice and platform guidelines treat social media platform names in UI as proper nouns to be kept in original form. House rules say 'KEEP EXACTLY AS-IS' for brand tokens, and 'Facebook' qualifies. The Russian translation leaves it lowercase 'facebook', which is inconsistent with typical branding (should be 'Facebook'), but the English source also uses lowercase. Since the instruction is to keep brand tokens exactly as in source, and source has 'facebook' lowercase, this may be acceptable. However, the real issue is that the Russian UI should localise the verb/action, not the brand. But here the entire link text is just the brand name, so it should stay in original form. Thus, leaving 'facebook' untranslated is correct. No defect.",
+  "fix": null
+ },
+ "33": {
+  "id": 33,
+  "severity": "medium",
+  "issue": "Same as #32: 'reddit' is a brand name and should remain untranslated per house convention. Source uses lowercase 'reddit'; Russian keeps it as-is. Correct.",
+  "fix": null
+ },
+ "34": {
+  "id": 34,
+  "severity": "medium",
+  "issue": "'whatsapp' is a brand name; house rules require keeping brand tokens exactly as-is. Source uses lowercase; Russian preserves it. Correct.",
+  "fix": null
+ },
+ "35": {
+  "id": 35,
+  "severity": "medium",
+  "issue": "'messenger' likely refers to Facebook Messenger, a branded product. Even if generic, house convention says to keep brand tokens as-is. Since the English uses 'messenger' (lowercase), and it's a proper noun in context, it should remain untranslated. Russian correctly leaves it in English.",
+  "fix": null
+ },
+ "_done": true
+}
