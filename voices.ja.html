@@ -134,6 +134,8 @@ section:first-of-type{padding-top:40px;}
 .compare button[data-state="playing"]{background:var(--accent); border-color:var(--accent); color:#100d08;}
 .compare span{font-size:11.5px; color:var(--faint); line-height:1.35;}
 
+.shot{margin:22px 0 4px;}
+.shot img{display:block; width:100%; max-width:471px; height:auto; image-rendering:-webkit-optimize-contrast; border:1px solid var(--line);}
 .tip{border-left:2px solid var(--accent); padding:12px 0 12px 16px; margin:22px 0; color:var(--dim); font-size:13.5px; max-width:66ch;}
 .tip b{color:var(--ink);}
 .kbd{border:1px solid var(--line); padding:1px 6px; font-size:12px; color:var(--ink); background:var(--bg);}
@@ -174,7 +176,7 @@ footer .made{margin-top:12px; opacity:.8;}
 <header class="hero">
   <div class="wrap"> <div class="crumb">音声</div>
     <h1>こんな声です</h1>
-    <p class="lede">ゲーム内で <b>Ctrl + P</b> を押すと開く内蔵のPiperTTSウィンドウが、入力した文でも貼り付けた文でも、学習中の言語で読み上げます。下に各音声のサンプルがあります。</p>
+    <p class="lede">FlashBossはすべてのカードを読み上げます。さらに、ゲーム内で <b>Ctrl + P</b> を押すと開く内蔵のPiperTTSウィンドウが、入力した文でも貼り付けた文でも、学習中の言語で読み上げます。下に各音声のサンプルがあります。</p>
     <div class="doors"> <a class="btn" href="manual/index.html">攻略ガイド</a> <a class="btn ghost" href="about.ja.html">技術マニュアル</a> </div>
   </div>
 </header>
@@ -304,9 +306,9 @@ footer .made{margin-top:12px; opacity:.8;}
   </section>
 
   <section class="reveal">
-    <div class="sec-head"><h2>渡したものは何でも読み上げます</h2></div>
+    <div class="sec-head"><h2>PiperTTSウィンドウ — 何でも読み上げる</h2></div>
     <div class="tip"> <b>ゲーム中いつでも <span class="kbd">Ctrl</span> + <span class="kbd">P</span> を押す</b>と、発音ウィンドウが開きます。単語でも、一文でも、いま読んでいる文章の一段落でも、貼り付ければ学習中の音声がそのまま読み上げ、必要ならファイルに保存できます。カード表示中でも、メニューでも、ボス戦の最中でも使えます。 </div>
-    <p class="sec-intro">カードの音声は最初の再生時にキャッシュされます。一度やったセッションはすぐ声が出て、接続が一切なくても動きます。</p>
+    <figure class="shot"><img src="pipertts.png" width="471" height="205" alt="PiperTTSウィンドウ：英語に設定された音声セレクター、1.0倍の速度調整、Clearボタンの付いた空のテキスト欄、そして「Paste text in the field above.」の上に並ぶSpeak・Restart・Saveのボタン。" loading="lazy"></figure>
     <div class="doors"> <a class="btn" href="manual/index.html">攻略ガイド</a> <a class="btn ghost" href="packs.ja.html">パックを見る</a> </div>
   </section>
 

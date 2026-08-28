@@ -134,6 +134,8 @@ section:first-of-type{padding-top:40px;}
 .compare button[data-state="playing"]{background:var(--accent); border-color:var(--accent); color:#100d08;}
 .compare span{font-size:11.5px; color:var(--faint); line-height:1.35;}
 
+.shot{margin:22px 0 4px;}
+.shot img{display:block; width:100%; max-width:471px; height:auto; image-rendering:-webkit-optimize-contrast; border:1px solid var(--line);}
 .tip{border-left:2px solid var(--accent); padding:12px 0 12px 16px; margin:22px 0; color:var(--dim); font-size:13.5px; max-width:66ch;}
 .tip b{color:var(--ink);}
 .kbd{border:1px solid var(--line); padding:1px 6px; font-size:12px; color:var(--ink); background:var(--bg);}
@@ -166,7 +168,7 @@ footer .made{margin-top:12px; opacity:.8;}
 <header class="hero">
   <div class="wrap"> <div class="crumb">Voices</div>
     <h1>What it sounds like</h1>
-    <p class="lede">The built-in PiperTTS window (open with <b>Ctrl + P</b> in-game) allows you to type or paste any text for pronunciation in your target language. Scroll down to see examples for each voice.</p>
+    <p class="lede">FlashBoss pronounces every card, and the built-in PiperTTS window (open with <b>Ctrl + P</b> in-game) allows you to type or paste any text for pronunciation in your target language. Scroll down to see examples for each voice.</p>
     <div class="doors"> <a class="btn" href="manual/index.html">Playthrough Manual</a> <a class="btn ghost" href="about.html">Technical Manual</a> </div>
   </div>
 </header>
@@ -296,9 +298,9 @@ footer .made{margin-top:12px; opacity:.8;}
   </section>
 
   <section class="reveal">
-    <div class="sec-head"><h2>It will read anything you give it</h2></div>
+    <div class="sec-head"><h2>The PiperTTS window — read anything</h2></div>
     <div class="tip"> <b>Press <span class="kbd">Ctrl</span> + <span class="kbd">P</span> anywhere in the game</b> and a pronunciation window opens. Paste in a word, a sentence, a paragraph of something you are reading — it speaks it in the voice you are learning with, and saves it to a file if you want to keep it. It works while a card is on screen, in the menus, in the middle of a boss fight. </div>
-    <p class="sec-intro">Card audio is cached the first time it plays, so a session you have run before speaks instantly and works with no connection at all.</p>
+    <figure class="shot"><img src="pipertts.png" width="471" height="205" alt="The PiperTTS window: a voice picker set to English, a speed control at 1.0x, an empty text field with a Clear button, and Speak, Restart and Save buttons above the line &quot;Paste text in the field above.&quot;" loading="lazy"></figure>
     <div class="doors"> <a class="btn" href="manual/index.html">Playthrough Manual</a> <a class="btn ghost" href="packs.html">See the packs</a> </div>
   </section>
 

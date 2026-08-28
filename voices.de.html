@@ -134,6 +134,8 @@ section:first-of-type{padding-top:40px;}
 .compare button[data-state="playing"]{background:var(--accent); border-color:var(--accent); color:#100d08;}
 .compare span{font-size:11.5px; color:var(--faint); line-height:1.35;}
 
+.shot{margin:22px 0 4px;}
+.shot img{display:block; width:100%; max-width:471px; height:auto; image-rendering:-webkit-optimize-contrast; border:1px solid var(--line);}
 .tip{border-left:2px solid var(--accent); padding:12px 0 12px 16px; margin:22px 0; color:var(--dim); font-size:13.5px; max-width:66ch;}
 .tip b{color:var(--ink);}
 .kbd{border:1px solid var(--line); padding:1px 6px; font-size:12px; color:var(--ink); background:var(--bg);}
@@ -174,7 +176,7 @@ footer .made{margin-top:12px; opacity:.8;}
 <header class="hero">
   <div class="wrap"> <div class="crumb">Stimmen</div>
     <h1>So klingt es</h1>
-    <p class="lede">Das eingebaute PiperTTS-Fenster (im Spiel mit <b>Strg + P</b> öffnen) liest jeden Text vor, den du eintippst oder einfügst — in deiner Zielsprache. Weiter unten gibt es Hörproben für jede Stimme.</p>
+    <p class="lede">FlashBoss spricht jede Karte, und das eingebaute PiperTTS-Fenster (im Spiel mit <b>Strg + P</b> öffnen) liest jeden Text vor, den du eintippst oder einfügst — in deiner Zielsprache. Weiter unten gibt es Hörproben für jede Stimme.</p>
     <div class="doors"> <a class="btn" href="manual/index.html">Spielanleitung</a> <a class="btn ghost" href="about.de.html">Technisches Handbuch</a> </div>
   </div>
 </header>
@@ -304,9 +306,9 @@ footer .made{margin-top:12px; opacity:.8;}
   </section>
 
   <section class="reveal">
-    <div class="sec-head"><h2>Es liest alles vor, was du ihm gibst</h2></div>
+    <div class="sec-head"><h2>Das PiperTTS-Fenster — alles vorlesen</h2></div>
     <div class="tip"> <b>Drücke im Spiel jederzeit <span class="kbd">Strg</span> + <span class="kbd">P</span></b>, und ein Aussprachefenster geht auf. Füge ein Wort ein, einen Satz, einen Absatz aus etwas, das du gerade liest — es spricht ihn in der Stimme, mit der du lernst, und speichert ihn auf Wunsch als Datei. Das geht mitten in einer Karte, in den Menüs und mitten im Bossfight. </div>
-    <p class="sec-intro">Karten-Audio wird beim ersten Abspielen zwischengespeichert: Eine Sitzung, die du schon einmal gemacht hast, spricht sofort — und ganz ohne Verbindung.</p>
+    <figure class="shot"><img src="pipertts.png" width="471" height="205" alt="Das PiperTTS-Fenster: eine Stimmenauswahl auf Englisch, ein Tempo-Regler auf 1.0x, ein leeres Textfeld mit Clear-Schaltfläche sowie die Schaltflächen Speak, Restart und Save über der Zeile „Paste text in the field above“." loading="lazy"></figure>
     <div class="doors"> <a class="btn" href="manual/index.html">Spielanleitung</a> <a class="btn ghost" href="packs.de.html">Zu den Packs</a> </div>
   </section>
 

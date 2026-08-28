@@ -46,11 +46,18 @@
       "zh": "语音 DLC 会替换该语言全部卡包里的内置语音 — 卡片、课程、头目战，全都换。随时可以切回内置语音，什么也不会丢。下面每张卡片还能播放<b>被它替换掉的那把声音</b>，念的是同一句话，让你在花钱之前就听清差别。"
     },
     {
-      "en": "The built-in PiperTTS window (open with <b>Ctrl + P</b> in-game) allows you to type or paste any text for pronunciation in your target language. Scroll down to see examples for each voice.",
-      "de": "Das eingebaute PiperTTS-Fenster (im Spiel mit <b>Strg + P</b> öffnen) liest jeden Text vor, den du eintippst oder einfügst — in deiner Zielsprache. Weiter unten gibt es Hörproben für jede Stimme.",
-      "es": "La ventana PiperTTS integrada (se abre con <b>Ctrl + P</b> dentro del juego) pronuncia cualquier texto que escribas o pegues, en el idioma que estás aprendiendo. Más abajo hay ejemplos de cada voz.",
-      "ja": "ゲーム内で <b>Ctrl + P</b> を押すと開く内蔵のPiperTTSウィンドウが、入力した文でも貼り付けた文でも、学習中の言語で読み上げます。下に各音声のサンプルがあります。",
-      "zh": "内置的 PiperTTS 窗口（游戏中按 <b>Ctrl + P</b> 打开）可以朗读你输入或粘贴的任何文字，用你正在学的语言发音。下面有每一把声音的示例。"
+      "en": "FlashBoss pronounces every card, and the built-in PiperTTS window (open with <b>Ctrl + P</b> in-game) allows you to type or paste any text for pronunciation in your target language. Scroll down to see examples for each voice.",
+      "de": "FlashBoss spricht jede Karte, und das eingebaute PiperTTS-Fenster (im Spiel mit <b>Strg + P</b> öffnen) liest jeden Text vor, den du eintippst oder einfügst — in deiner Zielsprache. Weiter unten gibt es Hörproben für jede Stimme.",
+      "es": "FlashBoss pronuncia todas las tarjetas, y la ventana PiperTTS integrada (se abre con <b>Ctrl + P</b> dentro del juego) pronuncia cualquier texto que escribas o pegues, en el idioma que estás aprendiendo. Más abajo hay ejemplos de cada voz.",
+      "ja": "FlashBossはすべてのカードを読み上げます。さらに、ゲーム内で <b>Ctrl + P</b> を押すと開く内蔵のPiperTTSウィンドウが、入力した文でも貼り付けた文でも、学習中の言語で読み上げます。下に各音声のサンプルがあります。",
+      "zh": "FlashBoss 会朗读每一张卡片；此外，内置的 PiperTTS 窗口（游戏中按 <b>Ctrl + P</b> 打开）可以朗读你输入或粘贴的任何文字，用你正在学的语言发音。下面有每一把声音的示例。"
+    },
+    {
+      "en": "The PiperTTS window: a voice picker set to English, a speed control at 1.0x, an empty text field with a Clear button, and Speak, Restart and Save buttons above the line &quot;Paste text in the field above.&quot;",
+      "de": "Das PiperTTS-Fenster: eine Stimmenauswahl auf Englisch, ein Tempo-Regler auf 1.0x, ein leeres Textfeld mit Clear-Schaltfläche sowie die Schaltflächen Speak, Restart und Save über der Zeile „Paste text in the field above“.",
+      "es": "La ventana PiperTTS: un selector de voz en inglés, un control de velocidad a 1.0x, un campo de texto vacío con un botón Clear y los botones Speak, Restart y Save sobre la línea «Paste text in the field above».",
+      "ja": "PiperTTSウィンドウ：英語に設定された音声セレクター、1.0倍の速度調整、Clearボタンの付いた空のテキスト欄、そして「Paste text in the field above.」の上に並ぶSpeak・Restart・Saveのボタン。",
+      "zh": "PiperTTS 窗口：语音选择器设为英语，速度调节为 1.0×，一个带 Clear 按钮的空文本框，以及位于「Paste text in the field above.」上方的 Speak、Restart 和 Save 按钮。"
     },
     {
       "en": "Speaks <b>Toki Pona</b>, which is free in the base game, and the <b>Esperanto</b> courses. Trained for FlashBoss, because no good Esperanto voice existed.",
@@ -65,13 +72,6 @@
       "es": "Vendrá con <b>Latin Core</b> y <b>Latin Pareto 1</b>, que se publican en breve. Entrenada para FlashBoss, con pronunciación clásica restituida.",
       "ja": "まもなく公開される<b>Latin Core</b>と<b>Latin Pareto 1</b>に付属します。復元された古典式発音で、FlashBossのために学習させました。",
       "zh": "将随即将发布的 <b>Latin Core</b> 与 <b>Latin Pareto 1</b> 附带。为 FlashBoss 训练，采用复原的古典发音。"
-    },
-    {
-      "en": "Card audio is cached the first time it plays, so a session you have run before speaks instantly and works with no connection at all.",
-      "de": "Karten-Audio wird beim ersten Abspielen zwischengespeichert: Eine Sitzung, die du schon einmal gemacht hast, spricht sofort — und ganz ohne Verbindung.",
-      "es": "El audio de cada tarjeta se guarda en caché la primera vez que suena, así que una sesión que ya hiciste habla al instante y funciona sin conexión alguna.",
-      "ja": "カードの音声は最初の再生時にキャッシュされます。一度やったセッションはすぐ声が出て、接続が一切なくても動きます。",
-      "zh": "卡片语音在第一次播放时会缓存下来，所以做过一次的学习立刻就能出声，而且完全不需要联网。"
     },
     {
       "en": "Speaks <b>every English pack</b> — Core, Pareto 1 and 2, Advance, Adept, and all four Roots courses.",
@@ -228,18 +228,18 @@
       "zh": "<span class=\"note\">免费 · 无需购买</span>"
     },
     {
+      "en": "<h2>The PiperTTS window — read anything</h2>",
+      "de": "<h2>Das PiperTTS-Fenster — alles vorlesen</h2>",
+      "es": "<h2>La ventana PiperTTS — lee lo que sea</h2>",
+      "ja": "<h2>PiperTTSウィンドウ — 何でも読み上げる</h2>",
+      "zh": "<h2>PiperTTS 窗口 — 什么都能念</h2>"
+    },
+    {
       "en": "<div class=\"name\">British English (F)</div>",
       "de": "<div class=\"name\">Britisches Englisch (W)</div>",
       "es": "<div class=\"name\">Inglés británico (F)</div>",
       "ja": "<div class=\"name\">イギリス英語（女性）</div>",
       "zh": "<div class=\"name\">英式英语（女声）</div>"
-    },
-    {
-      "en": "<h2>It will read anything you give it</h2>",
-      "de": "<h2>Es liest alles vor, was du ihm gibst</h2>",
-      "es": "<h2>Lee cualquier cosa que le des</h2>",
-      "ja": "<h2>渡したものは何でも読み上げます</h2>",
-      "zh": "<h2>你给什么，它就念什么</h2>"
     },
     {
       "en": "In the future, I want to learn Toki Pona.",
