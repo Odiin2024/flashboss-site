@@ -26,6 +26,7 @@
   var AVAIL = {
     'home':           ['de', 'es', 'ja', 'zh'],
     'packs':          ['de', 'es', 'ja', 'zh'],
+    'voices':         ['de', 'es', 'ja', 'zh'],
     'about':          ['de', 'es', 'ja', 'zh'],
     'resources':      ['de', 'es', 'ja', 'zh'],
     'wordlists':      ['de', 'es', 'ja', 'zh'],
