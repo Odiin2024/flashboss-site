@@ -27,7 +27,7 @@
 
    TUNE THESE FIRST:
    --masc / --fem   -> match the game's gender colours (le / la).
-   french-hero.png  -> hero banner image (sits at site root).
+   background.png   -> hero banner image (site default; no French flag art yet).
    ============================================================ */
 :root{
   --mono:'JetBrains Mono', ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
@@ -325,9 +325,10 @@ footer .footer-links .div{opacity:.4;}
 
   <!-- HERO -->
   <header class="hero">
-    <!-- Odiin supplies french-hero.png at the site root. Until it lands the
-         onerror hides the broken image and the hero falls back to flat ink. -->
-    <img class="hero-img" src="french-hero.png" alt="FlashBoss French Core — eine französische Lernkarte im Terminal-Kartenrahmen, der Artikel des Substantivs nach Genus farbcodiert" loading="eager" decoding="async" onerror="this.style.display='none'">
+    <!-- background.png is the default hero for a language with no flag art of its
+         own (German/Spanish/Italian/Esperanto each have one). The onerror keeps
+         the hero on flat ink if the image ever goes missing. -->
+    <img class="hero-img" src="background.png" alt="FlashBoss — die mondbeschienene Schule, die vor jedem FlashBoss-Kurs steht" loading="eager" decoding="async" onerror="this.style.display='none'">
     <div class="wrap">
       <p class="kicker reveal">Alle drei Pakete jetzt erhältlich · <b>3.000 Wörter</b> · 120 Cluster · 37 Lektionen</p>
       <h1 class="reveal">Français<span class="cursor"></span></h1>

@@ -27,7 +27,7 @@
 
    TUNE THESE FIRST:
    --masc / --fem   -> match the game's gender colours (le / la).
-   french-hero.png  -> hero banner image (sits at site root).
+   background.png   -> hero banner image (site default; no French flag art yet).
    ============================================================ */
 :root{
   --mono:'JetBrains Mono','Noto Sans SC', ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
@@ -313,9 +313,10 @@ footer .footer-links .div{opacity:.4;}
 
   <!-- HERO -->
   <header class="hero">
-    <!-- Odiin supplies french-hero.png at the site root. Until it lands the
-         onerror hides the broken image and the hero falls back to flat ink. -->
-    <img class="hero-img" src="french-hero.png" alt="FlashBoss French Core——终端风格卡片框中的一张法语闪卡，名词的冠词按词性着色" loading="eager" decoding="async" onerror="this.style.display='none'">
+    <!-- background.png is the default hero for a language with no flag art of its
+         own (German/Spanish/Italian/Esperanto each have one). The onerror keeps
+         the hero on flat ink if the image ever goes missing. -->
+    <img class="hero-img" src="background.png" alt="FlashBoss——月光下的学舍，每一门课程的门面" loading="eager" decoding="async" onerror="this.style.display='none'">
     <div class="wrap">
       <p class="kicker reveal">三个卡包全部发售 · <b>3,000 单词</b> · 120 集群 · 37 节课程 · 完整简体中文支持</p>
       <h1 class="reveal">Français<span class="cursor"></span></h1>
