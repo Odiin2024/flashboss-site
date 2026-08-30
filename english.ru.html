@@ -195,6 +195,8 @@ p.body a{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--m
 .pack .now{display:inline-block; font-size:10px; letter-spacing:.2em; text-transform:uppercase; margin-top:12px; padding:3px 8px;
   border:1px solid var(--t-accent); color:var(--t-accent);}
 .pack.locked{opacity:.66;}
+a.pack{text-decoration:none; color:inherit; display:block; transition:background .15s ease, border-color .15s ease;}
+a.pack:hover{background:rgba(224,169,63,.07); border-color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
 @media(max-width:640px){.pack{border-right:0; border-bottom:1px solid var(--line);} .pack:last-child{border-bottom:0;}}
 
 .method dl{display:grid; grid-template-columns:max-content 1fr; gap:14px 22px; margin:0;}
@@ -368,12 +370,12 @@ footer .footer-links .div{opacity:.4;}
       <h2>Путь к 3000</h2>
       <p class="sub">Три набора по 1000 слов, один за другим. Core уже вышел; страницы обоих продолжений в магазине уже открыты.</p>
       <div class="packs">
-        <div class="pack locked">
+        <a class="pack locked" href="https://store.steampowered.com/app/5086000/FlashBoss__English_Core/?utm_source=website-english&l=russian" target="_blank" rel="noopener">
           <div class="n">English Core</div>
           <div class="lvl">A1–A2 · 1000 слов · 38 уроков</div>
           <p>Тысяча самых частотных слов на пяти уровнях — фундамент, на котором держится всё остальное. Требуется базовая игра.</p>
           <span class="soon">без русского интерфейса</span>
-        </div>
+        </a>
         <div class="pack locked">
           <div class="n">English Pareto 1</div>
           <div class="lvl">1000 слов</div>
