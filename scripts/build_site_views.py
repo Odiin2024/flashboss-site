@@ -16,10 +16,11 @@ option". --spelling gb builds from the British twin instead.
   python3 scripts/build_site_views.py              # us (the default)
   python3 scripts/build_site_views.py --spelling gb
 
-ORDER MATTERS: this writes the lean views and does NOT carry the _gb twin
-fields. Always follow it with scripts/inject_english_gb.py, which re-adds them
-and canonicalizes the base to US. Running this alone silently drops the ~114
-British twin fields on the three EFL packs.
+SPELLING TWINS ARE NOT OPTIONAL. The English packs get their twin written
+inline by card(), and this script then runs inject_english_gb.py itself for the
+six standalone English packs it does not build. Running this script alone
+therefore leaves the whole English set complete — losing the twins is a silent
+failure (the page simply stops offering UK), and it happened once.
 """
 import argparse, glob, json, os, re
 
@@ -51,13 +52,25 @@ def walk(setdir):
     return out
 
 def card(raw, n, sp, mode):
-    w, t = raw["TargetWord"], raw["Translation"]
-    if mode == "eng" and sp == "gb":
-        w = raw.get("TargetWord_gb") or w
-        t = raw.get("Translation_gb") or t
+    """One lean card. English packs carry their spelling twin inline.
+
+    The twin is written here, not bolted on afterwards, so a build can never
+    ship English without it — that failure is silent (the page just stops
+    offering UK) and it has happened once already.
+    """
+    base_w, base_t = raw["TargetWord"], raw["Translation"]
+    gb_w = raw.get("TargetWord_gb") or base_w
+    gb_t = raw.get("Translation_gb") or base_t
+    w, t = (gb_w, gb_t) if (mode == "eng" and sp == "gb") else (base_w, base_t)
     o = {"n": n, "TargetWord": w, "TargetArticle": raw.get("TargetArticle", ""), "Translation": t}
     if raw.get("Elides"): o["Elides"] = True
     if raw.get("TriggerLesson"): o["TriggerLesson"] = raw["TriggerLesson"]
+    if mode == "eng":
+        # the OTHER spelling, recorded only where it actually differs
+        other_w, other_t = (base_w, base_t) if sp == "gb" else (gb_w, gb_t)
+        suf = "_us" if sp == "gb" else "_gb"
+        if other_w != w: o["TargetWord" + suf] = other_w
+        if other_t != t: o["Translation" + suf] = other_t
     return o
 
 def serialize(language, setlabel, total, offset, clusters, sp, mode):
@@ -92,5 +105,31 @@ if __name__ == "__main__":
         os.makedirs(os.path.dirname(out), exist_ok=True)
         open(out, "w", encoding="utf-8").write(txt)
         first = cls[0]
+        gb = sum(1 for c in cls for r in c["raw"]
+                 if r.get("TargetWord_gb") or r.get("Translation_gb"))
         print(f"  {out:<36} {lang} {label:<9} {total} cards, "
-              f"{len(cls)} clusters, first={first['cluster_id']} {first['slug']}")
+              f"{len(cls)} clusters, first={first['cluster_id']} {first['slug']}"
+              + (f", {gb} spelling twins" if mode == "eng" else ""))
+
+    # The six standalone English packs (Adept/Advance/Roots) are built upstream,
+    # not here, so their twins still come from the injector. Run it automatically:
+    # one command must leave the whole English set canonical, or the twins rot.
+    #
+    # Only for a US build. The injector's whole job is "base is American, twin is
+    # British", so running it after --spelling gb would immediately undo the gb
+    # base it had just written.
+    if a.spelling == "us":
+        print("  — canonicalizing the standalone English packs —")
+        import subprocess, sys as _sys
+        r = subprocess.run([_sys.executable, os.path.join(os.path.dirname(__file__), "inject_english_gb.py")],
+                           capture_output=True, text=True)
+        print("\n".join("  " + l for l in r.stdout.strip().split("\n") if l.strip()))
+        if r.returncode != 0:
+            print("  !! inject_english_gb.py failed — the English packs may be missing twins")
+            raise SystemExit(1)
+    else:
+        print("  — skipped inject_english_gb.py (it would flip the base back to US) —")
+        print("  !! --spelling gb is a NON-CANONICAL build: Odiin's ruling is a US base with")
+        print("     a British twin, and the site's UK/US toggle reads that twin at runtime.")
+        print("     The six standalone English packs are untouched and remain US, so the site")
+        print("     is now mixed. Re-run without --spelling to put it back.")
