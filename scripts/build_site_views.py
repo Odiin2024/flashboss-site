@@ -1,21 +1,25 @@
 #!/usr/bin/env python3
-"""Build the site's word-list views for the packs knight ships no view for.
+"""Build the site's word-list views straight from the real cluster cards.
 
-English Core, Pareto 1 and Pareto 2 are the English-as-a-foreign-language packs.
-knight deliberately ships no CORE_FINAL for English (build_set_views.py says so:
-the Steam depot recipe excludes those artifacts), and English Core has no view
-at all — so its cluster 1-1 does not exist anywhere the site can reach. This
-builds the views the website needs, straight from the real cluster cards,
-without touching the game repo.
+Covers the three English EFL packs (Core, Pareto 1, Pareto 2) and Latin
+(Core + Pareto 1). Latin still ships no view from the game repo; English did not
+either until 2026-08-30, when the three packs were registered in knight's
+build_set_views.py. The site keeps building its own regardless, because it needs
+a different shape: the British twin inline (see below) and a per-pack folder
+layout the word-list page fetches by code.
 
 SPELLING: the cards carry a full British twin layer (TargetWord_gb /
-Translation_gb). knight's shipped English Pareto views are built from it — 26 of
-27 differences against the base are exactly the _gb twin. Odiin's ruling 2026-08-28: the site default is US, matching english.html's
-"American English base with a full British spelling option". --spelling gb
-builds from the British twin instead.
+Translation_gb). Odiin's ruling 2026-08-28 is that the site default is US,
+matching english.html's "American English base with a full British spelling
+option". --spelling gb builds from the British twin instead.
 
-  python3 scripts/build_english_views.py            # us (the default)
-  python3 scripts/build_english_views.py --spelling gb
+  python3 scripts/build_site_views.py              # us (the default)
+  python3 scripts/build_site_views.py --spelling gb
+
+ORDER MATTERS: this writes the lean views and does NOT carry the _gb twin
+fields. Always follow it with scripts/inject_english_gb.py, which re-adds them
+and canonicalizes the base to US. Running this alone silently drops the ~114
+British twin fields on the three EFL packs.
 """
 import argparse, glob, json, os, re
 
