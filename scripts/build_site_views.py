@@ -21,6 +21,18 @@ inline by card(), and this script then runs inject_english_gb.py itself for the
 six standalone English packs it does not build. Running this script alone
 therefore leaves the whole English set complete — losing the twins is a silent
 failure (the page simply stops offering UK), and it happened once.
+
+NEITHER ARE THE LOCALE GLOSSES. card() emits no Translation_de/_es/_ja/_zh/_ru
+and no ExampleSentence, but five of the files it regenerates now carry ~23,000
+of the former and 3,000 of the latter, put there by inject_gloss_fields.py after
+English Core/P1/P2 and Latin were added to its mapping (2026-08-31). A bare run
+of this script wiped every one of them, silently — the localized word lists just
+fell back to English. So this script now runs that injector too, and the order is
+load-bearing: inject_english_gb.py first, because it settles the American base
+that inject_gloss_fields.py then reads Translation_ru from.
+
+The test that catches a regression here is destructive and worth keeping: run
+this script alone on a clean tree and confirm `git status -- data/` is empty.
 """
 import argparse, glob, json, os, re
 
@@ -127,6 +139,46 @@ if __name__ == "__main__":
         if r.returncode != 0:
             print("  !! inject_english_gb.py failed — the English packs may be missing twins")
             raise SystemExit(1)
+
+        # Put back what card() cannot emit. MUST follow inject_english_gb.py:
+        # that settles the American base, and inject_gloss_fields.py sources
+        # Translation_ru from the card's English Translation.
+        print("  — restoring the locale glosses and example sentences —")
+        g = subprocess.run([_sys.executable, os.path.join(os.path.dirname(__file__), "inject_gloss_fields.py")],
+                           capture_output=True, text=True)
+        print("\n".join("  " + l for l in g.stdout.strip().split("\n")[-6:] if l.strip()))
+        if g.returncode != 0:
+            print("  !! inject_gloss_fields.py failed — the localized word lists have fallen back to English")
+            raise SystemExit(1)
+
+        # Field-level assertion. The destructive git test only catches this if
+        # someone remembers to run it on a clean tree; this catches it always.
+        # Every layer card() cannot emit is checked back into place before the
+        # script is allowed to exit 0.
+        import json as _json
+        EXPECT = [("data/english/core/CORE_FINAL.json", ("de", "es", "ja", "zh"), True),
+                  ("data/english/p1/CORE_FINAL.json",   ("de", "es", "ja", "zh"), True),
+                  ("data/english/p2/CORE_FINAL.json",   ("de", "es", "ja", "zh"), True),
+                  ("data/latin/CORE_FINAL.json",        ("de", "es", "ja"),       False),
+                  ("data/latin/PARETO1_FINAL.json",     ("de", "es", "ja"),       False)]
+        holes = []
+        for rel, locs, wants_example in EXPECT:
+            cards = [c for cl in _json.load(open(rel, encoding="utf-8"))["clusters"]
+                     for c in cl["cards"]]
+            for loc in locs:
+                n = sum(1 for c in cards if (c.get("Translation_" + loc) or "").strip())
+                if n < len(cards):
+                    holes.append(f"{rel}: Translation_{loc} on {n}/{len(cards)}")
+            if wants_example:
+                n = sum(1 for c in cards if (c.get("ExampleSentence") or "").strip())
+                if n < len(cards):
+                    holes.append(f"{rel}: ExampleSentence on {n}/{len(cards)}")
+        if holes:
+            print("  !! a layer did not survive the build:")
+            for h in holes:
+                print("     " + h)
+            raise SystemExit(1)
+        print(f"  — verified: every locale gloss and example sentence back in place —")
     else:
         print("  — skipped inject_english_gb.py (it would flip the base back to US) —")
         print("  !! --spelling gb is a NON-CANONICAL build: Odiin's ruling is a US base with")
