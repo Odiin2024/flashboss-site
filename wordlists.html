@@ -396,6 +396,15 @@ function humanize(slug){
 function asList(v){ return Array.isArray(v)?v.join(', '):String(v==null?'':v); }
 function synOf(c){ if(c.syn!=null)return asList(c.syn); if(c.synonyms!=null)return asList(c.synonyms); const m=/syn[:\s]\s*([^|]+)/i.exec(c.Notes||''); return m?m[1].trim():''; }
 function antOf(c){ if(c.ant!=null)return asList(c.ant); if(c.antonyms!=null)return asList(c.antonyms); const m=/ant[:\s]\s*([^|]+)/i.exec(c.Notes||''); return m?m[1].trim():''; }
+/* SELF_LANG: the pack this page's own interface language teaches. Such a pack has
+   no translation to give on this page — English Core in English, German Core in
+   German — so it shows the example sentence instead of a circular gloss. ja/zh/ru
+   are null: they are interface languages with no pack that teaches them. */
+const SELF_LANG='English';
+function gloss(c){
+  if(c.definition!=null)return sv(c,'definition');                       // Adept/Advance/Roots: the definition IS the content
+  if(c.ExampleSentence&&packSel.value===SELF_LANG)return c.ExampleSentence;  // target == interface: nothing to translate into
+  return c.Translation!=null?sv(c,'Translation'):''; }
 function posOf(c){ if(c.pos!=null)return asList(c.pos); const m=/^([a-z]+(?:\/[a-z]+)*)/.exec((c.Notes||'').trim()); return m?m[1]:''; }  // part of speech (front-face fallback)
 /* UK/US spelling. The data ships American with the British twin inline on the
    ~500 cards that differ, so the toggle is a field swap, not a refetch. The
@@ -414,7 +423,7 @@ function paintSpell(){ const t=document.getElementById('spellTog'); if(!t) retur
 function normCards(cluster){
   // foreign: {TargetWord,Translation}; English: {TargetWord,definition[,syn,ant,pos]}
   return (cluster.cards||[]).map(c=>({ w:sv(c,'TargetWord'),
-    t: c.definition!=null?sv(c,'definition'):(c.Translation!=null?sv(c,'Translation'):''),
+    t: gloss(c),
     syn:synOf(c), ant:antOf(c), pos:posOf(c) }));
 }
 

@@ -415,8 +415,15 @@ try{ if(SPELL_UI && localStorage.getItem(SPELL_KEY)==='gb') spelling='gb'; }catc
 function sv(c,k){ return (spelling==='gb' && c[k+'_gb']) ? c[k+'_gb'] : c[k]; }
 function paintSpell(){ const t=document.getElementById('spellTog'); if(!t) return;
   t.querySelectorAll('.sp').forEach(b=>b.classList.toggle('on', b.dataset.sp===spelling)); }
-function gloss(c){ if(c.Translation_ru!=null&&c.Translation_ru!=='')return c.Translation_ru;   // page locale first; English packs carry no localized glosses (immersion ruling) and fall through
-  return c.definition!=null?sv(c,'definition'):(c.Translation!=null?sv(c,'Translation'):''); }
+/* SELF_LANG: the pack this page's own interface language teaches. Such a pack has
+   no translation to give on this page — English Core in English, German Core in
+   German — so it shows the example sentence instead of a circular gloss. ja/zh/ru
+   are null: they are interface languages with no pack that teaches them. */
+const SELF_LANG=null;
+function gloss(c){ if(c.Translation_ru!=null&&c.Translation_ru!=='')return c.Translation_ru;   // page locale first
+  if(c.definition!=null)return sv(c,'definition');                       // Adept/Advance/Roots: the definition IS the content
+  if(c.ExampleSentence&&packSel.value===SELF_LANG)return c.ExampleSentence;  // target == interface: nothing to translate into
+  return c.Translation!=null?sv(c,'Translation'):''; }
 function normCards(cluster){
   // foreign: {TargetWord,Translation[,Translation_ru]}; English: {TargetWord,definition[,syn,ant,pos]}
   return (cluster.cards||[]).map(c=>({ w:sv(c,'TargetWord'),

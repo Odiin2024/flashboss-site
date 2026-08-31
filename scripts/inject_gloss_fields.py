@@ -9,9 +9,17 @@ field are rewritten, with json.dumps default separators which reproduce the
 existing style. Idempotent: a re-run after the repo gains more localized
 layers picks up only the new fields.
 
-English packs are skipped: per the Roots/Adept immersion ruling they carry no
-localized Translation fields (verified — English_Advance included; only
-Translation_gb spelling twins exist, which are a spelling variant, not a gloss).
+English packs split in two. Adept, Advance and the four Roots packs teach
+English to people who already have it — no localized glosses exist and none
+should, which is the Roots/Adept immersion ruling. English Core, Pareto 1 and
+Pareto 2 are ordinary ESL language packs whose cards DO carry de/es/ja/zh, and
+they are injected like any other course (Odiin's ruling 2026-08-31, correcting
+a blanket skip that had covered all nine).
+
+A pack whose target language is also an interface language has nothing to show
+on its own page — German Core in German, English Core in English. Those sets
+also get ExampleSentence, so the word list can show the word working instead of
+a circular gloss. See SELF_LOCALE_SETS.
 
 Usage: python3 scripts/inject_gloss_fields.py [--repo /path/to/knight/flashcard_sets]
 """
@@ -32,6 +40,20 @@ LOCALES = ("de", "es", "ja", "zh", "ru")
 # definition field (the Roots/Adept immersion ruling).
 SOURCE_KEY = {"ru": "Translation"}
 
+# Sets whose target language is also one of the five interface languages. On
+# their own page there is no translation to give — a German word needs no German
+# gloss — so the word list shows the example sentence instead. Japanese and
+# Chinese are interface languages with no pack that teaches them, so they never
+# hit this case.
+SELF_LOCALE_SETS = {
+    "data/english/core/CORE_FINAL.json", "data/english/p1/CORE_FINAL.json",
+    "data/english/p2/CORE_FINAL.json",
+    "data/german/CORE_FINAL.json", "data/german/PARETO1_FINAL.json",
+    "data/german/PARETO2_FINAL.json",
+    "data/spanish/CORE_FINAL.json", "data/spanish/PARETO1_FINAL.json",
+    "data/spanish/PARETO2_FINAL.json",
+}
+
 # site data file (relative to site root) -> repo set dir (relative to flashcard_sets)
 MAPPING = [
     ("data/german/CORE_FINAL.json", "German/core"),
@@ -50,6 +72,11 @@ MAPPING = [
     ("data/french/PARETO1_FINAL.json", "French_Extensions/pareto1"),
     ("data/french/PARETO2_FINAL.json", "French_Extensions/pareto2"),
     ("data/toki_pona/CORE_FINAL.json", "Toki_Pona/core"),
+    ("data/latin/CORE_FINAL.json", "Latin/core"),
+    ("data/latin/PARETO1_FINAL.json", "Latin/pareto1"),
+    ("data/english/core/CORE_FINAL.json", "English/core"),
+    ("data/english/p1/CORE_FINAL.json", "English_Extensions/pareto1"),
+    ("data/english/p2/CORE_FINAL.json", "English_Extensions/pareto2"),
 ]
 
 
@@ -223,6 +250,14 @@ def process_file(site_path, repo_set_dir):
                     c[key] = val
                     patched[id(c)] = True
                     stats["updated"][loc] = stats["updated"].get(loc, 0) + 1
+
+            if rel in SELF_LOCALE_SETS:
+                ex = rc.get("ExampleSentence")
+                if isinstance(ex, str) and ex.strip() and c.get("ExampleSentence") != ex:
+                    key = "added" if "ExampleSentence" not in c else "updated"
+                    c["ExampleSentence"] = ex
+                    patched[id(c)] = True
+                    stats[key]["ex"] = stats[key].get("ex", 0) + 1
 
     if not patched:
         stats["status"] = "ok (no changes)"
