@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- The hub of the English immersion system: the ladder, the two pairs, the law.
+     Every sentence and number comes from knight/docs/immersion_system/ (SYSTEM.md,
+     LADDER.md, INFOGRAPHIC.html, COHERENCE_MAP.md), verified against the pack trees
+     2026-09-19 and confirmed by knight-e6. The load-bearing sentences S1-S6 from
+     COHERENCE_MAP are carried verbatim here and must stay identical to the store
+     pages and the series page; if one changes it changes on every surface at once.
+     BANNED here, per the map: any hours figure, any equivalence claim, any CEFR
+     code, calling Advance/Adept DLC, calling Latin/Greek required, any price or
+     discount, any word total for the series, any diagram that branches on the reader.
+     English only for now. When the locale siblings exist: hreflang rows, the switcher
+     <ul>, and lang-redirect.js AVAIL all gain them together.
+     BUNDLE-TBD below takes the Steam link for "FlashBoss Roots - The Complete Series"
+     once that bundle page exists. -->
+<title>The English Immersion System — FlashBoss</title>
+<meta name="description" content="One path, six steps: English Advance, German Roots, Norman Roots, English Adept, Latin Roots, Greek Roots. English taught in English, a boss fight at the end of every cluster.">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="canonical" href="https://odiin2024.github.io/flashboss-site/immersion.html">
+<link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/immersion.html">
+<link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/immersion.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   FlashBoss — the English immersion system (immersion.html).
+   The hub above the four Roots pages: the ladder, the two pairs,
+   what every step carries, the immersion law, the series.
+   Same phosphor-terminal chrome as home.html (warm palette).
+   ============================================================ */
+:root{
+  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
+  --accent:#83b6dd; --gold:#e0a93f; --green:#62d38a; --line:#3a3120; --rule:#2a2417;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--mono); background:linear-gradient(180deg, var(--bg) 0%, #171421 100%); background-color:var(--bg); color:var(--ink); line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden;}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.045) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.vignette{position:fixed; inset:0; pointer-events:none; z-index:9998;
+  background:radial-gradient(120% 90% at 50% 35%, transparent 58%, rgba(0,0,0,.5) 100%);}
+.wrap{max-width:900px; margin:0 auto; padding:0 24px;}
+a{color:var(--accent);}
+
+/* ---- nav ---- */
+nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line); position:relative; z-index:5; background:var(--bg);}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--dim); margin-right:auto;}
+nav .lang-switch{flex:none; margin-left:22px; position:relative;}
+nav .lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--ink); background:var(--bg); border:1px solid var(--dim); padding:5px 8px; line-height:1; cursor:pointer;}
+nav .lang-toggle:hover, nav .lang-toggle[aria-expanded="true"]{background:var(--ink); color:var(--bg);}
+nav .lang-caret{font-size:8px; line-height:1; transition:transform .15s ease;}
+nav .lang-toggle[aria-expanded="true"] .lang-caret{transform:rotate(180deg);}
+nav .lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--bg); border:1px solid var(--dim); min-width:120px; z-index:50;}
+nav .lang-menu[hidden]{display:none;}
+nav .lang-menu li{margin:0;}
+nav .lang-menu a{display:block; font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--ink); text-decoration:none; padding:7px 10px; white-space:nowrap;}
+nav .lang-menu a:hover{background:var(--ink); color:var(--bg);}
+nav .lang-menu a[aria-current="true"]{color:var(--accent);}
+nav .lang-menu a[aria-current="true"]:hover{color:var(--bg);}
+nav .brand a, nav .brand .sep{color:var(--dim); text-decoration:none;}
+nav .brand a:hover{color:var(--ink);}
+nav .brand .here{font-weight:800; color:var(--ink);}
+nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--ink);}
+nav .brand .logo:hover{color:var(--accent);}
+nav .brand .pipe{color:var(--dim); margin:0 11px;}
+.nav-mobile{display:none;}
+.nav-mobile a{color:inherit; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.08em; opacity:.85;}
+.nav-mobile a:hover{opacity:1; color:var(--accent);}
+@media(max-width:640px){ nav .links{display:none;} nav .brand .pipe, nav .brand .here{display:none;} .nav-mobile{display:flex; align-items:center; gap:18px;} }
+nav .links a{color:var(--ink); text-decoration:none; opacity:.7; margin-left:22px;}
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+nav .links a.steam{font-weight:800; opacity:1;}
+
+/* ---- reveal ---- */
+.reveal{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease;}
+.reveal.in{opacity:1; transform:none;}
+
+/* ---- HERO (home.png strip, darkened) ---- */
+.hero{position:relative; padding:84px 0 48px; overflow:hidden;}
+.hero::before{content:""; position:absolute; inset:0; z-index:0; background:#0c0a06 url('home.png') center 32% / cover no-repeat;}
+.hero::after{content:""; position:absolute; inset:0; z-index:1; background:linear-gradient(180deg, rgba(16,13,8,.55) 0%, rgba(16,13,8,.80) 58%, var(--bg) 100%);}
+.hero .wrap{position:relative; z-index:2;}
+.kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--dim); opacity:.9; margin-bottom:26px;}
+.kicker b{color:var(--gold); font-weight:700;}
+.hero h1{font-size:clamp(34px,7.4vw,72px); line-height:1.0; margin:0; font-weight:800; letter-spacing:-.015em; color:var(--ink); max-width:14ch;}
+.cursor{display:inline-block; width:.55em; height:.92em; vertical-align:-.06em; background:color-mix(in oklab, var(--accent), transparent 25%); margin-left:.1em; animation:blink 1.05s steps(1) infinite;}
+@keyframes blink{50%{opacity:0;}}
+.hero .sig{font-size:13px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent); margin:18px 0 0; opacity:.92;}
+.hero .lede{font-size:clamp(15px,2.2vw,18px); max-width:54ch; margin:18px 0 0; color:var(--dim);}
+.hero .lede b{color:var(--ink); font-weight:700;}
+.btn{display:inline-block; font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.08em; color:#100d08; background:color-mix(in oklab, var(--accent), transparent 22%); padding:14px 26px; text-decoration:none; border:0; box-shadow:6px 6px 0 color-mix(in oklab, var(--accent), #000 60%); transition:transform .12s ease, box-shadow .12s ease;}
+.btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--accent), #000 60%);}
+.btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--accent), #000 60%);}
+.hero .actions{display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:36px; max-width:520px;}
+.hero .actions .btn{width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
+.btn.warm{color:#14110a; background:var(--gold); box-shadow:6px 6px 0 color-mix(in oklab, var(--gold), #000 60%);}
+.btn.warm:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--gold), #000 60%);}
+
+/* ---- sections ---- */
+section{padding:56px 0;}
+.hero + section{padding-top:44px;}
+.frame{border:1px solid var(--line); position:relative; padding:34px 30px 30px;}
+.frame > .tag{position:absolute; top:-12px; left:22px; background:var(--bg); padding:4px 12px; line-height:1; font-size:11px; letter-spacing:.3em; text-transform:uppercase; color:var(--gold);}
+h2{font-size:clamp(24px,4.6vw,36px); margin:0 0 8px; font-weight:800; letter-spacing:-.01em;}
+.sub{color:var(--dim); font-size:14px; letter-spacing:.04em; margin:0 0 24px; max-width:64ch;}
+p.body{font-size:15.5px; max-width:64ch; margin:0 0 16px; color:var(--ink);}
+p.body b{color:var(--gold);}
+p.quiet{font-size:13px; color:var(--dim); max-width:66ch; margin:18px 0 0; border-top:1px solid var(--rule); padding-top:12px;}
+
+/* ---- the path line (S1) ---- */
+.path{font-size:clamp(11.5px,2vw,14.5px); letter-spacing:.02em; color:var(--ink); border:1px solid var(--line); padding:14px 18px; margin:0 0 28px; overflow-x:auto; white-space:nowrap; background:rgba(255,255,255,.015);}
+.path b{color:var(--gold); font-weight:800;}
+.path .arr{color:var(--dim); padding:0 4px;}
+
+/* ---- the ladder ---- */
+.band{font-size:11px; letter-spacing:.3em; text-transform:uppercase; color:var(--dim); margin:0 0 8px;}
+.rung{text-align:center; color:var(--faint); font-size:15px; line-height:1; padding:8px 0;}
+.step{display:grid; grid-template-columns:26px 1fr max-content; gap:0 16px; align-items:start; border:1px solid var(--line); border-left:3px solid var(--accent); padding:16px 18px 15px; background:rgba(255,255,255,.015);}
+.step.base{border-left-color:var(--green);}
+.step.beyond{border-left-style:dashed;}
+.step .num{font-size:13px; font-weight:800; color:var(--dim); padding-top:5px;}
+.step .name{font-size:19px; font-weight:800; line-height:1.25;}
+.step .name a{color:inherit; text-decoration:none;}
+.step .name a:hover{color:var(--accent);}
+.step .facts{font-size:12px; color:var(--dim); margin-top:4px; letter-spacing:.02em;}
+.step .gist{font-size:14px; margin-top:8px; color:var(--ink); opacity:.9; max-width:64ch;}
+.step .gist em{color:var(--gold); font-style:italic;}
+.step .badge{font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:var(--dim); border:1px solid var(--line); padding:4px 8px; white-space:nowrap; margin-top:4px;}
+.step.base .badge{color:var(--green); border-color:color-mix(in oklab, var(--green), transparent 55%);}
+@media(max-width:560px){ .step{grid-template-columns:22px 1fr;} .step .badge{grid-column:2; justify-self:start; margin-top:10px;} }
+.start{font-size:16px; text-align:center; max-width:60ch; margin:28px auto 0; color:var(--ink);}
+.start + .start{margin-top:8px;}
+.start b{color:var(--gold);}
+
+/* ---- the pairs ---- */
+.pairs{display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px solid var(--line); margin-top:22px;}
+@media(max-width:560px){.pairs{grid-template-columns:1fr;}}
+a.pack{display:block; padding:22px 20px; border-right:1px solid var(--line); text-decoration:none; color:inherit; transition:background .15s ease;}
+a.pack:last-child{border-right:0;}
+a.pack:hover{background:rgba(131,182,221,.06);}
+@media(max-width:560px){ a.pack{border-right:0;} a.pack:first-child{border-bottom:1px solid var(--line);} }
+.pack .n{font-size:17px; font-weight:800;}
+.pack .lvl{font-size:11px; letter-spacing:.04em; color:var(--dim); margin:4px 0 10px;}
+.pack p{font-size:13px; color:var(--dim); margin:0;}
+.pack .more{display:inline-block; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); border:1px solid var(--accent); padding:3px 8px; margin-top:12px;}
+
+/* ---- table ---- */
+.tbl{overflow-x:auto; border:1px solid var(--line);}
+table{border-collapse:collapse; width:100%; font-size:13.5px;}
+th,td{text-align:left; padding:10px 12px; border-bottom:1px solid var(--rule); vertical-align:top;}
+tr:last-child td{border-bottom:0;}
+th{font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--dim); font-weight:700; border-bottom:1px solid var(--line);}
+td.n, th.n{text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap;}
+td.k{font-weight:800; white-space:nowrap;}
+td.k a{color:inherit; text-decoration:none;}
+td.k a:hover{color:var(--accent);}
+td.s{color:var(--dim); white-space:nowrap;}
+td.s.base{color:var(--green);}
+
+/* ---- panels ---- */
+.grid2{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+@media(max-width:640px){.grid2{grid-template-columns:1fr;}}
+.panel{border:1px solid var(--line); padding:22px 20px 18px; background:rgba(255,255,255,.015);}
+.panel h3{font-size:11px; letter-spacing:.3em; text-transform:uppercase; color:var(--gold); margin:0 0 14px; font-weight:700;}
+.panel ul{margin:0; padding-left:18px; font-size:14px; color:var(--dim);}
+.panel li{margin-bottom:8px;}
+.panel li b{color:var(--ink); font-weight:700;}
+
+/* ---- the law ---- */
+.law{border:1px solid var(--line); border-left:3px solid var(--gold); padding:18px 20px; font-size:15.5px; margin:0 0 14px; background:rgba(224,169,63,.04);}
+.law b{color:var(--gold);}
+.law:last-child{margin-bottom:0;}
+
+/* ---- series / CTA ---- */
+.series .actions{display:flex; flex-wrap:wrap; gap:10px; margin-top:26px;}
+.series .actions .btn{font-size:12.5px; padding:12px 16px;}
+.final{text-align:center; padding:80px 0 96px;}
+.final h2{font-size:clamp(26px,5.6vw,48px);}
+.final p{color:var(--dim); max-width:52ch; margin:14px auto 30px; font-size:15px;}
+.epi{font-style:italic; opacity:.78; max-width:52ch; margin:28px auto 0; font-size:13px; color:var(--dim);}
+.epi-cite{font-style:normal; font-size:11px; letter-spacing:.12em; text-transform:uppercase; opacity:.75; display:block; margin-top:8px;}
+
+footer{border-top:1px solid var(--line); padding:28px 24px; font-size:12px; color:var(--dim); text-align:center; letter-spacing:.04em;}
+footer .footer-links{display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap;}
+footer .footer-links a{color:inherit; text-decoration:none; opacity:.75; letter-spacing:.04em;}
+footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+footer .footer-links .div{opacity:.4;}
+</style>
+<script src="lang-redirect.js"></script>
+</head>
+<body>
+<div class="overlay"></div>
+<div class="vignette"></div>
+
+<nav>
+  <span class="brand"><a class="logo" href="index.html">FLASHBOSS</a><span class="pipe">|</span><span class="here">immersion</span></span>
+  <span class="links">
+    <a href="packs.html">packs</a>
+    <a href="wordlists.html">word lists</a>
+    <a href="lessons.html">lessons</a>
+    <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-immersion" target="_blank" rel="noopener">steam</a>
+  </span>
+  <span class="nav-mobile">
+    <a href="packs.html">packs</a>
+    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-immersion" target="_blank" rel="noopener">steam</a>
+  </span>
+  <div class="lang-switch">
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Choose language">EN<span class="lang-caret">▾</span></button>
+    <ul class="lang-menu" hidden>
+      <li><a href="immersion.html" aria-current="true">English</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap">
+      <p class="kicker reveal">English &middot; <b>six steps</b> &middot; one path</p>
+      <h1 class="reveal">The English immersion system<span class="cursor"></span></h1>
+      <p class="sig reveal">one path, six steps</p>
+      <p class="lede reveal">Whether English is your first language or your second: <b>a six-step path through survival and out the other side of mastery.</b> Two steps ship free with the game. Four are the Roots packs. Every card is English, taught in English.</p>
+      <div class="actions reveal">
+        <a class="btn" href="packs.html">the packs</a>
+        <a class="btn" href="wordlists.html?lang=English">word lists</a>
+        <a class="btn warm" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-immersion" target="_blank" rel="noopener">steam</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- THE LADDER -->
+  <section class="wrap" id="path">
+    <div class="frame reveal">
+      <span class="tag">The ladder</span>
+      <h2>One path, six steps</h2>
+      <p class="sub">The base game holds the floor and the ceiling of a normal immersion course. Two Roots packs sit inside it, two sit beyond it. Read the ladder top to bottom.</p>
+
+      <div class="path"><b>English Advance</b><span class="arr">&rarr;</span><b>German Roots</b><span class="arr">&rarr;</span><b>Norman Roots</b><span class="arr">&rarr;</span><b>English Adept</b><span class="arr">&rarr;</span><b>Latin Roots</b><span class="arr">&rarr;</span><b>Greek Roots</b></div>
+
+      <div class="band">Floor &mdash; base game</div>
+      <div class="step base">
+        <span class="num">1</span>
+        <span>
+          <span class="name"><a href="packs.html">English Advance</a></span>
+          <span class="facts" style="display:block">500 cards &middot; 500 words &middot; 25 clusters &middot; 15 lessons &middot; ships with the game</span>
+          <span class="gist" style="display:block">The English of everyday tasks &mdash; forms, notices, instructions, offices. Read a form and fill it, follow written directions, hold the words that officialdom uses about you. The one optional door on the path.</span>
+        </span>
+        <span class="badge">Optional</span>
+      </div>
+
+      <div class="rung">&darr;</div>
+      <div class="band">Inside the course &mdash; DLC</div>
+      <div class="step">
+        <span class="num">2</span>
+        <span>
+          <span class="name"><a href="german-roots.html">German Roots</a></span>
+          <span class="facts" style="display:block">1,000 cards &middot; 47 clusters &middot; 48 lessons</span>
+          <span class="gist" style="display:block">The Germanic half of English: the plain words, the compounds whose seam has gone invisible, and the native prefixes &mdash; <em>be-, fore-, out-, over-, under-, mis-, un-, up-</em>.</span>
+        </span>
+        <span class="badge">Inside</span>
+      </div>
+
+      <div class="rung">&darr;</div>
+      <div class="step">
+        <span class="num">3</span>
+        <span>
+          <span class="name"><a href="norman-roots.html">Norman Roots</a></span>
+          <span class="facts" style="display:block">1,000 cards &middot; 48 clusters &middot; 49 lessons</span>
+          <span class="gist" style="display:block">The Old French layer that settled on top of the Germanic one. Every card names the twins: <em>catch</em> / Germanic <em>grab</em> / Latin <em>capture</em>, and the pack teaches the typical French spellings you learn to spot.</span>
+        </span>
+        <span class="badge">Inside</span>
+      </div>
+
+      <div class="rung">&darr;</div>
+      <div class="band">Ceiling &mdash; base game</div>
+      <div class="step base">
+        <span class="num">4</span>
+        <span>
+          <span class="name"><a href="packs.html">English Adept</a></span>
+          <span class="facts" style="display:block">1,000 cards &middot; 56 clusters &middot; 12 lessons &middot; synonyms on all 1,000 cards &middot; ships with the game</span>
+          <span class="gist" style="display:block">The articulate vocabulary of an adult reader, grouped by what it does. Read adult prose without stalling; have the word you actually meant, not the nearest one. Just to the end of Adept is a valuable resource for a high-schooler.</span>
+        </span>
+        <span class="badge">Ceiling</span>
+      </div>
+
+      <div class="rung">&darr;</div>
+      <div class="band">Beyond the course &mdash; DLC, elective</div>
+      <div class="step beyond">
+        <span class="num">5</span>
+        <span>
+          <span class="name"><a href="latin-roots.html">Latin Roots</a></span>
+          <span class="facts" style="display:block">500 cards = 1,000 words (a paired cousin on every card) &middot; 30 clusters &middot; 31 lessons</span>
+          <span class="gist" style="display:block">Famous Latin, everyday Latin, the prefixes, the great root families &mdash; <em>port/mit</em>, <em>dict/scrib</em>, <em>duc/tract</em> &mdash; and the suffixes. <em>aquarium</em> teaches <em>aquatic</em> in the same breath.</span>
+        </span>
+        <span class="badge">Beyond</span>
+      </div>
+
+      <div class="rung">&darr;</div>
+      <div class="step beyond">
+        <span class="num">6</span>
+        <span>
+          <span class="name"><a href="greek-roots.html">Greek Roots</a></span>
+          <span class="facts" style="display:block">1,000 cards &middot; 56 clusters &middot; 62 lessons &middot; the Greek script on all 1,000</span>
+          <span class="gist" style="display:block">&tau;&#8134;&lambda;&epsilon;, &beta;&#943;&omicron;&sigmaf;, &gamma;&rho;&#940;&phi;&epsilon;&iota;&nu;, &mu;&iota;&kappa;&rho;&#972;&sigmaf; &mdash; the roots, the number and size prefixes, the <em>-ology / -mania / -phone / -meter</em> suffixes, hybrids flagged as hybrids. An unfamiliar technical word stops being unfamiliar.</span>
+        </span>
+        <span class="badge">Beyond</span>
+      </div>
+
+      <p class="start"><b>Start at Advance if school let you down or English is new to you. Otherwise start at German Roots.</b></p>
+      <p class="start">If your first language is a Romance one, take Norman Roots before German Roots.</p>
+
+      <p class="quiet">The base game has the floor and the ceiling. German Roots and Norman Roots sit inside the course. Latin Roots and Greek Roots sit beyond it. English Advance is elective if you had a standard education. Latin Roots and Greek Roots are elective in full. There is no requirement to take the packs in order; the ladder is the recommendation.</p>
+    </div>
+  </section>
+
+  <!-- INSIDE THE COURSE -->
+  <section class="wrap" id="inside">
+    <div class="frame reveal">
+      <span class="tag">Inside the course</span>
+      <h2>The two layers English is made of</h2>
+      <p class="body"><b>German Roots and Norman Roots are the pair inside the course.</b> They are the two layers English is stitched from &mdash; the one it kept from before 1066, and the one that landed with the Conquest &mdash; and they sit between <b>English Advance</b> and <b>English Adept</b>.</p>
+      <p class="body">They are the reason English has <em>begin</em> and <em>commence</em>, <em>ask</em> and <em>demand</em>. At the end of German Roots you see the seam in a compound word and read the meaning off it. At the end of Norman Roots you read the second layer of English as a layer, not as a list of hard words.</p>
+      <div class="pairs">
+        <a class="pack" href="german-roots.html">
+          <div class="n">German Roots</div>
+          <div class="lvl">Step 2 &middot; 1,000 cards &middot; 47 clusters &middot; 48 lessons</div>
+          <p>The Germanic backbone of everyday English &mdash; the words you already half-know. Where a Germanic speaker begins, and the default for everyone else.</p>
+          <span class="more">Learn more &rarr;</span>
+        </a>
+        <a class="pack" href="norman-roots.html">
+          <div class="n">Norman Roots</div>
+          <div class="lvl">Step 3 &middot; 1,000 cards &middot; 48 clusters &middot; 49 lessons</div>
+          <p>The second English &mdash; 1066 and the French that came with it. Where a Romance speaker begins.</p>
+          <span class="more">Learn more &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEYOND THE COURSE -->
+  <section class="wrap" id="beyond">
+    <div class="frame reveal">
+      <span class="tag">Beyond the course</span>
+      <h2>Past the ceiling, for the curious</h2>
+      <p class="body"><b>Latin Roots and Greek Roots are the pair beyond the course.</b> They come after <b>English Adept</b>, for readers who want the scholarly layer and the vocabulary of the sciences. A hobby for the linguistically curious, and none the worse for it.</p>
+      <p class="body">Part of the course, and past the point where anyone needs them. At the end of the pair an unfamiliar technical or literary word is not unfamiliar: you take it apart on sight, and the boundaries between European languages have started to look like dialect boundaries.</p>
+      <div class="pairs">
+        <a class="pack" href="latin-roots.html">
+          <div class="n">Latin Roots</div>
+          <div class="lvl">Step 5 &middot; 500 cards = 1,000 words &middot; 30 clusters &middot; 31 lessons</div>
+          <p>English built from its parts &mdash; the classical and scientific layer, assembled. Every card teaches a paired cousin word beside the headword.</p>
+          <span class="more">Learn more &rarr;</span>
+        </a>
+        <a class="pack" href="greek-roots.html">
+          <div class="n">Greek Roots</div>
+          <div class="lvl">Step 6 &middot; 1,000 cards &middot; 56 clusters &middot; 62 lessons</div>
+          <p>The vocabulary of science, medicine, and abstraction &mdash; the layer above Latin, with the Greek script on the card.</p>
+          <span class="more">Learn more &rarr;</span>
+        </a>
+      </div>
+      <p class="quiet">Latin Roots and Greek Roots come after Adept, in whichever order you like.</p>
+    </div>
+  </section>
+
+  <!-- WHAT YOU GET -->
+  <section class="wrap" id="steps">
+    <div class="frame reveal">
+      <span class="tag">Step by step</span>
+      <h2>What you get</h2>
+      <p class="sub">Counted from the pack trees, not from copy. Five tiers in every pack. A boss fight at the end of every cluster.</p>
+      <div class="tbl">
+        <table>
+          <thead>
+            <tr><th>Step</th><th class="n">Cards</th><th class="n">Words</th><th class="n">Clusters</th><th class="n">Lessons</th><th>Ships as</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="k"><a href="packs.html">English Advance</a></td><td class="n">500</td><td class="n">500</td><td class="n">25</td><td class="n">15</td><td class="s base">base game</td></tr>
+            <tr><td class="k"><a href="german-roots.html">German Roots</a></td><td class="n">1,000</td><td class="n">1,000</td><td class="n">47</td><td class="n">48</td><td class="s">DLC</td></tr>
+            <tr><td class="k"><a href="norman-roots.html">Norman Roots</a></td><td class="n">1,000</td><td class="n">1,000</td><td class="n">48</td><td class="n">49</td><td class="s">DLC</td></tr>
+            <tr><td class="k"><a href="packs.html">English Adept</a></td><td class="n">1,000</td><td class="n">1,000</td><td class="n">56</td><td class="n">12</td><td class="s base">base game</td></tr>
+            <tr><td class="k"><a href="latin-roots.html">Latin Roots</a></td><td class="n">500</td><td class="n">1,000</td><td class="n">30</td><td class="n">31</td><td class="s">DLC</td></tr>
+            <tr><td class="k"><a href="greek-roots.html">Greek Roots</a></td><td class="n">1,000</td><td class="n">1,000</td><td class="n">56</td><td class="n">62</td><td class="s">DLC</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="quiet">Latin Roots is 500 cards because every one of the 500 teaches a paired cousin word beside the headword: 1,000 words. Where a step shows fewer lessons than clusters (Advance, Adept), its lessons are chapter openings rather than a door on every cluster; the four Roots packs have a lesson at every cluster door, and lessons there are mandatory.</p>
+    </div>
+  </section>
+
+  <!-- ON EVERY CARD -->
+  <section class="wrap" id="cards">
+    <div class="reveal">
+      <h2>On every card, in every step</h2>
+      <p class="sub">The same card anatomy from the floor to the last Greek root.</p>
+      <div class="grid2">
+        <div class="panel">
+          <h3>The card</h3>
+          <ul>
+            <li>the <b>headword</b>, in English</li>
+            <li>a <b>definition</b>, in English &mdash; never a translation</li>
+            <li>an <b>example sentence</b></li>
+            <li>a <b>second example</b> &mdash; the same word again, or a related word, the cousin or twin that the notes go on to explain</li>
+            <li>a <b>Notes</b> line: part of speech, the parts the word is built from, the etymon</li>
+            <li><b>synonyms</b> on every card of Adept, German Roots, Norman Roots and Greek Roots; antonyms where a true one exists</li>
+            <li>the <b>British/American spelling split</b>, as a layer &mdash; see below</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>The play</h3>
+          <ul>
+            <li>a <b>boss fight</b> at the end of every cluster &mdash; eight headwords on the grid, answered on the numberpad</li>
+            <li><b>Fibonacci spaced repetition</b> between the fights</li>
+            <li>a <b>lesson at every cluster door</b> in all four Roots packs</li>
+            <li>three <b>revision drills</b> per pack: the roots rack, antonyms and cloze in German, Latin and Greek Roots; dictation in place of the rack for Norman Roots (its cards are single Old French words, not sums) and for Adept</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE IMMERSION LAW -->
+  <section class="wrap" id="law">
+    <div class="frame reveal">
+      <span class="tag">The immersion law</span>
+      <h2>English, whatever the menus say</h2>
+      <p class="law"><b>Card text is English whatever the interface language.</b> The interface, the cluster names and the Advance lessons are translated into German, Spanish, Japanese, Russian and Chinese. The cards never are &mdash; not one card in any of the six packs carries a foreign-language field. That is what the word <em>immersion</em> is doing here.</p>
+      <p class="law">Every pack carries the British/American spelling split as a layer: a British twin of the headword, both example sentences, the definition and the notes, wherever the British text differs from the American, chosen by your spelling preference or your English voice.</p>
+    </div>
+  </section>
+
+  <!-- THE SERIES -->
+  <section class="wrap series" id="series">
+    <div class="frame reveal">
+      <span class="tag">The full immersion series</span>
+      <h2>Six steps, one series</h2>
+      <p class="body">The six steps are one series: the four Roots DLCs &mdash; German and Norman inside the course, Latin and Greek beyond it &mdash; together with the base game that carries English Advance and English Adept. Taken as the series, the floor, the two layers of English, the ceiling and the two Roots past it arrive as a single course rather than six separate packs. Available on Steam.</p>
+      <!-- BUNDLE-TBD: "FlashBoss Roots — The Complete Series" (base game + the four Roots packs).
+           Add its Steam bundle link as the first button once the bundle page exists. No price here. -->
+      <div class="actions">
+        <a class="btn warm" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-immersion" target="_blank" rel="noopener">FlashBoss &middot; base game</a>
+        <a class="btn" href="https://store.steampowered.com/app/4475060/FlashBoss__German_Roots/?utm_source=website-immersion" target="_blank" rel="noopener">German Roots</a>
+        <a class="btn" href="https://store.steampowered.com/app/4587720/FlashBoss__Norman_Roots/?utm_source=website-immersion" target="_blank" rel="noopener">Norman Roots</a>
+        <a class="btn" href="https://store.steampowered.com/app/4475070/FlashBoss__Latin_Roots/?utm_source=website-immersion" target="_blank" rel="noopener">Latin Roots</a>
+        <a class="btn" href="https://store.steampowered.com/app/4992480/?utm_source=website-immersion" target="_blank" rel="noopener">Greek Roots</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final wrap reveal">
+    <h2>Start where the ladder says.</h2>
+    <p>The floor and the ceiling ship free with the game. The four Roots packs are on Steam.</p>
+    <a class="btn warm" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-immersion" target="_blank" rel="noopener">Get FlashBoss on Steam &rarr;</a>
+    <p class="epi">Scientia est Potentia.<span class="epi-cite">Knowledge is power</span></p>
+  </section>
+
+</main>
+
+<footer>
+  <span class="footer-links">
+    <a href="home.html">home</a><span class="div">·</span>
+    <a href="packs.html">packs</a><span class="div">·</span>
+    <a href="voices.html">voices</a><span class="div">·</span>
+    <a href="resources.html">resources</a><span class="div">·</span>
+    <a href="about.html">how it works</a>
+  </span>
+</footer>
+
+<script>
+// language dropdown: button toggles the menu; click-away / Esc closes it
+(function(){
+  var sw=document.querySelector('.lang-switch'); if(!sw) return;
+  var btn=sw.querySelector('.lang-toggle'), menu=sw.querySelector('.lang-menu');
+  function close(){ menu.hidden=true; btn.setAttribute('aria-expanded','false'); }
+  btn.addEventListener('click', function(e){ e.stopPropagation(); var willOpen=menu.hidden; menu.hidden=!willOpen; btn.setAttribute('aria-expanded', String(willOpen)); });
+  document.addEventListener('click', function(e){ if(!sw.contains(e.target)) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+</body>
+</html>

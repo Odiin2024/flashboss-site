@@ -45,6 +45,7 @@
     'english':        ['de', 'es', 'ja', 'zh', 'ru'],
     'affiliate':      ['de', 'es', 'ja', 'zh', 'ru'],
     'in-development':  ['de', 'es', 'ja', 'zh', 'ru']
+    // 'immersion' is English-only today; add it here the day its siblings ship.
   };
   try {
     var file = location.pathname.split('/').pop();
