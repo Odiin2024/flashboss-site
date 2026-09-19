@@ -1,0 +1,511 @@
+[
+  {
+    "lesson_id": "001",
+    "trigger_word": "bonjour",
+    "trigger_card_number": 1,
+    "header_color": "green",
+    "title": "УРОК 1: ФРАНЦУЗСКОЕ ПРОИЗНОШЕНИЕ",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 4,
+        "pronunciation": "Leçon un",
+        "pronunciation_mappings": {
+          "1": "La. Ça. Table.",
+          "2": "Café. Été. Désolé.",
+          "3": "Mère. Père. Être.",
+          "4": "Ici. Midi. Merci.",
+          "5": "Mot. Vélo. Hôtel."
+        },
+        "content": [
+          "Добро пожаловать! Французское написание",
+          "кажется сложным, но звуки очень",
+          "последовательны.",
+          "a = «а» как в «мама»                 Нажми 1",
+          "   la, ça, table",
+          "",
+          "é = «э» как в «день» (закрытый,      Нажми 2",
+          "резкий)",
+          "   café, été, désolé",
+          "è/ê = «э» как в «мел» (открытый,     Нажми 3",
+          "мягче)",
+          "   mère, père, être",
+          "i = «и» как в «мир»                  Нажми 4",
+          "   ici, midi, merci",
+          "",
+          "o/ô = «о» как в «нота»               Нажми 5",
+          "   mot, vélo, hôtel"
+        ]
+      },
+      {
+        "page": 2,
+        "total_pages": 4,
+        "pronunciation_mappings": {
+          "1": "France. Enfant. Dans.",
+          "2": "Vin. Pain. Main.",
+          "3": "Bon. Maison. Non.",
+          "4": "Un. Lundi. Parfum."
+        },
+        "content": [
+          "НАЗАЛЬНЫЕ ГЛАСНЫЕ — воздух идёт",
+          "через нос: произноси гласный, но не",
+          "договаривай n/m:",
+          "an/en = носовое «а»                  Нажми 1",
+          "   France, enfant, dans",
+          "",
+          "in/ain/ein = носовое «э»             Нажми 2",
+          "   vin, pain, main",
+          "",
+          "on = носовое «о»                     Нажми 3",
+          "   bon, maison, non",
+          "",
+          "un = носовое «у» (часто сливается    Нажми 4",
+          "с «in»)",
+          "   un, lundi, parfum",
+          "ПРАВИЛО: после гласного n/m обычно",
+          "не читается — только делает гласный",
+          "назальным."
+        ]
+      },
+      {
+        "page": 3,
+        "total_pages": 4,
+        "pronunciation_mappings": {
+          "1": "Habiter. Homme. Heure.",
+          "2": "Ici. Cinéma. Merci.",
+          "3": "Café. Comme. Cousin.",
+          "4": "Ça. Français. Garçon.",
+          "5": "Âge. Manger. Gilet.",
+          "6": "Gauche. Gomme. Légume.",
+          "7": "Montagne. Gagner. Ligne."
+        },
+        "content": [
+          "СОГЛАСНЫЕ, отличающиеся от английских:",
+          "",
+          "h = ВСЕГДА НЕ ЧИТАЕТСЯ               Нажми 1",
+          "   habiter, homme, heure",
+          "",
+          "c перед e/i/y = мягкий «с»           Нажми 2",
+          "   ici, cinéma, merci",
+          "c перед a/o/u = твёрдый «к»          Нажми 3",
+          "   café, comme, cousin",
+          "ç = всегда мягкий «с»                Нажми 4",
+          "   ça, français, garçon",
+          "",
+          "g перед e/i/y = мягкий (как «ж»)     Нажми 5",
+          "   âge, manger, gilet",
+          "g перед a/o/u = твёрдый «г»          Нажми 6",
+          "   gauche, gomme, légume",
+          "gn = как «нь»                        Нажми 7",
+          "   montagne, gagner, ligne"
+        ]
+      },
+      {
+        "page": 4,
+        "total_pages": 4,
+        "pronunciation_mappings": {
+          "1": "Trop. Beaucoup. Nez. Gros.",
+          "2": "Avec. Professeur. Chef. Animal."
+        },
+        "content": [
+          "НЕЧИТАЕМЫЕ КОНЕЧНЫЕ СОГЛАСНЫЕ —",
+          "большинство согласных в конце слова",
+          "НЕ произносятся:",
+          "trop, beaucoup, nez, gros             Нажми 1",
+          "(конечные p, p, z, s — не читаются)",
+          "",
+          "ИСКЛЮЧЕНИЕ — буквы «осторожно»        Нажми 2",
+          "произносятся в конце слова:",
+          "c, r, f, l → avec, professeur, chef,",
+          "animal",
+          "",
+          "УДАРЕНИЕ: всегда падает на ПОСЛЕДНИЙ",
+          "слог слова или фразы — гораздо проще,",
+          "чем в испанском или английском.",
+          "",
+          "Два важных явления разберём позже:",
+          "ÉLISION (l'ami) и LIAISON (les amis) —",
+          "на карточках, где они нужны."
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": "002",
+    "trigger_word": "âge",
+    "trigger_card_number": 8,
+    "header_color": "green",
+    "title": "УРОК 2: КАК ЧИТАТЬ КАРТОЧКУ",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "pronunciation": "Leçon deux",
+        "pronunciation_mappings": {
+          "1": "le nom, le pays, le métier",
+          "2": "la nationalité, la famille"
+        },
+        "content": [
+          "На каждой французской карточке указан",
+          "артикль, цвет которого показывает род —",
+          "взгляни и не гадай:",
+          "",
+          "le = мужской (СИНИЙ)                 Нажми 1",
+          "   le nom, le pays, le métier",
+          "",
+          "la = женский (МАДЖЕНТА)              Нажми 2",
+          "   la nationalité, la famille",
+          "",
+          "СТРАТЕГИЯ: никогда не учи существительное",
+          "отдельно — всегда учи его ВМЕСТЕ с",
+          "цветным артиклем. Цвет — самый быстрый",
+          "способ отличить le от la на глаз."
+        ]
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "pronunciation_mappings": {
+          "1": "l'âge, l'adresse"
+        },
+        "content": [
+          "ÉLISION — перед гласным звуком le/la",
+          "теряют свою гласную и становятся l':",
+          "",
+          "le âge  →  l'âge                     Нажми 1",
+          "la adresse → l'adresse",
+          "",
+          "Апостроф сохраняет родовой цвет",
+          "под ним — l'âge остаётся СИНИМ,",
+          "l'adresse — МАДЖЕНТА, так что ты всё",
+          "ещё видишь род на глаз.",
+          "",
+          "Карточки помечают это как Элизия: да.",
+          "Элизия: нет значит, что артикль",
+          "остаётся целым: le héros, la honte",
+          "(об этом позже — некоторые слова на h",
+          "блокируют élision)."
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": "003",
+    "trigger_word": "madame",
+    "trigger_card_number": 18,
+    "header_color": "green",
+    "title": "УРОК 3: TU VS VOUS",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "pronunciation": "Leçon trois",
+        "pronunciation_mappings": {
+          "1": "tu es prêt",
+          "2": "vous êtes prêt, s'il vous plaît"
+        },
+        "content": [
+          "Во французском ДВА слова для «вы»:",
+          "",
+          "TU = неформальное — друзья, семья,   Нажми 1",
+          "дети, ровесники",
+          "   Tu es prêt ? (Ты готов?)",
+          "",
+          "VOUS = формальное И множественное —  Нажми 2",
+          "незнакомцы, старшие, работа или",
+          "больше одного человека",
+          "   Vous êtes prêt ? (Вы готовы?)",
+          "",
+          "Ты уже использовал vous в «s'il vous",
+          "plaît» — это вежливое «пожалуйста»,",
+          "буквально «если вам (форм.) угодно».",
+          "",
+          "VOUS использует ту же форму глагола,",
+          "что и для ГРУППЫ — учить новую",
+          "спрягать не надо, просто новый смысл."
+        ]
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "pronunciation_mappings": {
+          "1": "on peut se tutoyer",
+          "2": "bonjour madame, bonjour monsieur"
+        },
+        "content": [
+          "СОМНЕВАЕШЬСЯ — БЕРИ VOUS:",
+          "",
+          "Начинать с vous всегда безопасно.    Нажми 1",
+          "Собеседник может предложить перейти:",
+          "'On peut se tutoyer' (Можно перейти на ты)",
+          "",
+          "Обращайся к незнакомцам по титулу:   Нажми 2",
+          "Bonjour, madame. / Bonjour, monsieur.",
+          "",
+          "Переход с tu на vous в разговоре",
+          "звучит холодно; наоборот — норма,",
+          "обычно предлагается, а не берётся",
+          "самостоятельно."
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": "004",
+    "trigger_word": "être",
+    "trigger_card_number": 76,
+    "header_color": "green",
+    "title": "УРОК 4: НАСТОЯЩЕЕ ВРЕМЯ",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "pronunciation": "Leçon quatre",
+        "pronunciation_mappings": {
+          "1": "je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent"
+        },
+        "content": [
+          "Глаголы во французском делятся на 3 группы:",
+          "-ER (parler)  -IR (finir)  -RE (vendre)",
+          "",
+          "-ER — самая большая группа. Большинство",
+          "новых глаголов — -ER. Убери -er и добавь:",
+          "",
+          "je parle            = я говорю       Нажми 1",
+          "tu parles           = ты говоришь",
+          "il/elle parle       = он/она говорит",
+          "nous parlons        = мы говорим",
+          "vous parlez         = вы говорите (вежл./мн.)",
+          "ils/elles parlent   = они говорят",
+          "",
+          "parle/parles/parle/parlent звучат",
+          "одинаково — только nous и vous меняют",
+          "звук. Слушай окончания."
+        ]
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "pronunciation_mappings": {
+          "1": "je finis, tu finis, il finit, nous finissons, vous finissez, ils finissent",
+          "2": "je vends, tu vends, il vend, nous vendons, ils vendent"
+        },
+        "content": [
+          "-IR глаголы (finir = заканчивать):   Нажми 1",
+          "",
+          "je finis            = я заканчиваю",
+          "tu finis            = ты заканчиваешь",
+          "il/elle finit       = он/она заканчивает",
+          "nous finissons      = мы заканчиваем",
+          "vous finissez       = вы заканчиваете",
+          "ils/elles finissent = они заканчивают",
+          "",
+          "-RE глаголы (vendre = продавать):    Нажми 2",
+          "",
+          "je vends            = я продаю",
+          "tu vends            = ты продаёшь",
+          "il/elle vend        = он/она продаёт",
+          "nous vendons        = мы продаём",
+          "ils/elles vendent   = они продают"
+        ]
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "pronunciation_mappings": {
+          "1": "suis, es, est, sommes, êtes, sont",
+          "2": "ai, as, a, avons, avez, ont",
+          "3": "vais, vas, va, allons, allez, vont",
+          "4": "fais, fais, fait, faisons, faites, font"
+        },
+        "content": [
+          "БОЛЬШАЯ ЧЕТВЁРКА — неправильные, но",
+          "употребляются постоянно. Выучи наизусть:",
+          "",
+          "ÊTRE (быть):                         Нажми 1",
+          "suis, es, est, sommes, êtes, sont",
+          "",
+          "AVOIR (иметь):                       Нажми 2",
+          "ai, as, a, avons, avez, ont",
+          "",
+          "ALLER (идти):                        Нажми 3",
+          "vais, vas, va, allons, allez, vont",
+          "",
+          "FAIRE (делать):                      Нажми 4",
+          "fais, fais, fait, faisons, faites, font",
+          "",
+          "Эти четыре глагола нужны для других",
+          "времён (futur proche, passé composé)",
+          "— выучи их сейчас хорошо."
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": "005",
+    "trigger_word": "essayer",
+    "trigger_card_number": 99,
+    "header_color": "green",
+    "title": "УРОК 5: ОТРИЦАНИЕ",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "pronunciation": "Leçon cinq",
+        "pronunciation_mappings": {
+          "1": "je ne parle pas",
+          "2": "je ne suis pas prêt",
+          "3": "je préfère ne pas essayer"
+        },
+        "content": [
+          "NE...PAS охватывает глагол —",
+          "это «бутерброд», а не одно слово:",
+          "",
+          "Je ne parle pas.                      Нажми 1",
+          "(Я не говорю / Я не разговариваю.)",
+          "",
+          "Je ne suis pas prêt.                  Нажми 2",
+          "(Я не готов.)",
+          "",
+          "В разговорной речи 'ne' часто",
+          "опускают: 'Je parle pas' — но",
+          "всегда пиши обе части в Core.",
+          "",
+          "С инфинитивом обе части стоят",
+          "вместе прямо перед ним:               Нажми 3",
+          "Je préfère ne pas essayer.",
+          "(Я предпочитаю не пробовать.)"
+        ]
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "pronunciation_mappings": {
+          "1": "je n'ai plus faim",
+          "2": "je ne mange jamais de viande",
+          "3": "je ne vois rien",
+          "4": "je ne connais personne ici"
+        },
+        "content": [
+          "ДРУГИЕ ОТРИЦАНИЯ строятся так же —",
+          "ne...___, но с другим словом:",
+          "",
+          "ne...plus = больше не / уже не       Нажми 1",
+          "   Je n'ai plus faim.",
+          "",
+          "ne...jamais = никогда                Нажми 2",
+          "   Je ne mange jamais de viande.",
+          "",
+          "ne...rien = ничего                   Нажми 3",
+          "   Je ne vois rien.",
+          "",
+          "ne...personne = никто                Нажми 4",
+          "   Je ne connais personne ici.",
+          "",
+          "Заметь: ne сливается в n' перед",
+          "гласным звуком — n'ai, n'aime, n'est."
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": "006",
+    "trigger_word": "heure",
+    "trigger_card_number": 151,
+    "header_color": "green",
+    "title": "УРОК 6: IL Y A И УКАЗАНИЕ ВРЕМЕНИ",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "pronunciation": "Leçon six",
+        "pronunciation_mappings": {
+          "1": "il y a un problème",
+          "2": "il y a des livres",
+          "3": "il y a un problème ?",
+          "4": "il n'y a pas de problème"
+        },
+        "content": [
+          "IL Y A = there is / there are —",
+          "одна и та же форма, не меняется",
+          "для единственного и множественного:",
+          "",
+          "Il y a un problème.                  Нажми 1",
+          "(Есть проблема.)",
+          "Il y a des livres.                   Нажми 2",
+          "(Есть книги.)",
+          "",
+          "ВОПРОС — просто подними интонацию",
+          "или добавь est-ce que:",
+          "Il y a un problème ?                 Нажми 3",
+          "(Есть проблема?)",
+          "",
+          "ОТРИЦАНИЕ — обычное ne...pas",
+          "окружает глагол 'a':",
+          "Il n'y a pas de problème.            Нажми 4",
+          "(Проблем нет.)"
+        ]
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "pronunciation_mappings": {
+          "1": "il est une heure",
+          "2": "il est deux heures",
+          "3": "il est midi, il est minuit",
+          "4": "il est deux heures dix",
+          "5": "il est trois heures moins dix"
+        },
+        "content": [
+          "ВРЕМЯ указывается как il est + heure(s):",
+          "",
+          "Il est une heure.                    Нажми 1",
+          "(Час.)",
+          "Il est deux heures.                  Нажми 2",
+          "(Два часа.)",
+          "",
+          "'Une heure' — в единственном числе,",
+          "поэтому без -s. С deux heures и далее",
+          "heure берёт окончание -s.",
+          "Il est midi. / Il est minuit.        Нажми 3",
+          "(Полдень. / Полночь.)",
+          "",
+          "Il est deux heures dix.              Нажми 4",
+          "(Десять минут третьего.)",
+          "Il est trois heures moins dix.       Нажми 5",
+          "(Без десяти три.)"
+        ]
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "pronunciation_mappings": {
+          "1": "deux heures",
+          "2": "trois heures",
+          "3": "six heures",
+          "4": "dix heures",
+          "5": "un an",
+          "6": "les amis",
+          "7": "très utile"
+        },
+        "content": [
+          "ЛИАЗОН — глухая конечная согласная",
+          "оживает перед следующей гласной:",
+          "",
+          "deux heures → deux_heures [z]        Нажми 1",
+          "trois heures → trois_heures [z]      Нажми 2",
+          "six heures → six_heures [z]          Нажми 3",
+          "dix heures → dix_heures [z]          Нажми 4",
+          "",
+          "То же самое вне числительных:",
+          "",
+          "un an → un_an [n]                    Нажми 5",
+          "les amis → les_amis [z]              Нажми 6",
+          "très utile → très_utile [z]          Нажми 7",
+          "",
+          "Урок 8 подробно вернётся к лиазону."
+        ]
+      }
+    ]
+  }
+]

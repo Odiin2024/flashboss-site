@@ -11,7 +11,10 @@ localized lesson pages fall back to the English file.
 import glob, os, re, shutil, sys
 
 REPO = "/home/odiin/Documents/Bootcamp/knight/flashcard_sets"
-LOCALES = ("", "_de", "_es", "_ja", "_zh", "_gb")   # _gb is the British lesson twin, used by the UK/US toggle
+LOCALES = ("", "_de", "_es", "_ja", "_zh", "_ru", "_gb")   # _gb is the British lesson twin, used by the UK/US toggle
+# _ru added 2026-09-19: every foreign pack has carried Russian lesson twins upstream
+# for a while, and none of them were being copied, so lessons.ru.html showed the
+# English lessons to a Russian reader. It asks for the twin now.
 
 # knight set dir -> site data dir
 MAP = [("English/core",               "data/english/core"),
@@ -19,6 +22,30 @@ MAP = [("English/core",               "data/english/core"),
        ("English_Extensions/pareto2", "data/english/p2"),
        ("Latin/core",                 "data/latin"),
        ("Latin/pareto1",              "data/latin"),
+       # Swahili Core (released 2026-09-16). Its 20 lessons carry de/es/ja/ru/zh
+       # twins upstream and they are copied with the English ones.
+       ("Swahili/core",               "data/swahili"),
+       # The six foreign courses. Their lesson files were dropped into data/ by hand
+       # in an earlier pass and were never in this map, so nothing refreshed them and
+       # none of them ever gained the Russian twin that has existed upstream for a
+       # while — lessons.ru.html showed a Russian reader the English lessons. Same
+       # naming on both sides (tier<N>_lessons[_loc].json), so they simply join.
+       ("German/core",                "data/german"),
+       ("German_Extensions/pareto1",  "data/german"),
+       ("German_Extensions/pareto2",  "data/german"),
+       ("Spanish/core",               "data/spanish"),
+       ("Spanish_Extensions/pareto1", "data/spanish"),
+       ("Spanish_Extensions/pareto2", "data/spanish"),
+       ("Italian/core",               "data/italian"),
+       ("Italian_Extensions/pareto1", "data/italian"),
+       ("Italian_Extensions/pareto2", "data/italian"),
+       ("French/core",                "data/french"),
+       ("French_Extensions/pareto1",  "data/french"),
+       ("French_Extensions/pareto2",  "data/french"),
+       ("Esperanto/core",             "data/esperanto"),
+       ("Esperanto_Extensions/pareto1","data/esperanto"),
+       ("Esperanto_Extensions/pareto2","data/esperanto"),
+       ("Toki_Pona/core",             "data/toki_pona"),
        # The four Roots packs (added 2026-09-19 with the rebuild: new lessons, lesson
        # 000 GETTING STARTED, lessons_mandatory). They ship the English lesson and its
        # _gb twin only — no _de/_es/_ja/_zh, by the Roots immersion ruling, and the

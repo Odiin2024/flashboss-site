@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>無料・印刷できる単語リスト — イタリア語・ドイツ語・スペイン語・フランス語・エスペラント語・トキポナ | FlashBoss</title>
-<meta name="description" content="イタリア語・ドイツ語・スペイン語・フランス語・エスペラント語・トキポナの無料・印刷可能な単語リスト。各言語で最も役立つ単語を頻度順に、ティアとテーマ別に整理。各語に英訳つき。訳を隠して自己テストも、印刷して自作の単語カードにも。">
+<title>無料・印刷できる単語リスト — 英語・ラテン語・イタリア語・ドイツ語・スペイン語・フランス語・スワヒリ語・エスペラント語・トキポナ | FlashBoss</title>
+<meta name="description" content="英語・ラテン語・イタリア語・ドイツ語・スペイン語・フランス語・スワヒリ語・エスペラント語・トキポナの無料・印刷可能な単語リスト。各言語で最も役立つ単語を頻度順に、ティアとテーマ別に整理。各語に英訳つき。訳を隠して自己テストも、印刷して自作の単語カードにも。">
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/wordlists.ja.html">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/wordlists.html">
@@ -262,7 +262,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
   <div class="wrap">
     <h1>単語リスト</h1>
     <!-- Static, crawlable SEO copy: names the languages and what's offered. -->
-    <p>FlashBossの全言語 — <b><a href="packs.ja.html">英語</a>・<a href="italian.ja.html">イタリア語</a>・<a href="german.ja.html">ドイツ語</a>・<a href="spanish.ja.html">スペイン語</a>・<a href="french.ja.html">フランス語</a>・<a href="esperanto.ja.html">エスペラント語</a>・<a href="toki-pona.ja.html">トキポナ</a></b> — の無料・印刷可能な単語リスト。各言語で最も役立つ単語を頻度順に、5ティアのテーマ別クラスターに整理。各語に英訳つき。訳を隠して自己テストするもよし、クラスターごと印刷して自作の単語カードにするもよし。使い方は自由です。<a href="#" class="howlink" id="howBtn">使い方 &rarr;</a></p>
+    <p>FlashBossの全言語 — <b><a href="packs.ja.html">英語</a>・<a href="italian.ja.html">イタリア語</a>・<a href="german.ja.html">ドイツ語</a>・<a href="spanish.ja.html">スペイン語</a>・<a href="french.ja.html">フランス語</a>・<a href="latin.html">ラテン語</a>・<a href="swahili.html">スワヒリ語</a>・<a href="esperanto.ja.html">エスペラント語</a>・<a href="toki-pona.ja.html">トキポナ</a></b> — の無料・印刷可能な単語リスト。各言語で最も役立つ単語を頻度順に、5ティアのテーマ別クラスターに整理。各語に英訳つき。訳を隠して自己テストするもよし、クラスターごと印刷して自作の単語カードにするもよし。使い方は自由です。<a href="#" class="howlink" id="howBtn">使い方 &rarr;</a></p>
   </div>
 </header>
 
@@ -328,10 +328,10 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
    Uses the FINAL.json (relative-numbered) per-set files. Numbering
    is never displayed, so GLOBAL.json would also work unchanged.
    ============================================================ */
-const LANGS = ["Italian","German","Spanish","French","Latin","Esperanto","Toki Pona","English"];
-const LANG_JA={Italian:'イタリア語',German:'ドイツ語',Spanish:'スペイン語',French:'フランス語',Esperanto:'エスペラント語',"Toki Pona":'トキポナ',English:'英語'};
+const LANGS = ["Italian","German","Spanish","French","Latin","Esperanto","Toki Pona","Swahili","English"];
+const LANG_JA={Italian:'イタリア語',German:'ドイツ語',Spanish:'スペイン語',French:'フランス語',Esperanto:'エスペラント語',"Toki Pona":'トキポナ',English:'英語',Latin:'ラテン語',Swahili:'スワヒリ語'};
 const SETS  = ["Core","Pareto 1","Pareto 2"];
-const SETS_BY_LANG = {"Toki Pona":["Core"], "Latin":["Core","Pareto 1"]};   // published sets per language; everything else has all three
+const SETS_BY_LANG = {"Toki Pona":["Core"], "Latin":["Core","Pareto 1"], "Swahili":["Core"]};   // published sets per language; everything else has all three
 /* English ships as named packs, each in its own folder, with a single CORE_FINAL.json */
 const ENGLISH_PACKS = [["Core","core"],["Pareto 1","p1"],["Pareto 2","p2"],["Adept","ad"],["Advance","adv"],["German Roots","gr"],["Greek Roots","gkr"],["Norman Roots","nr"],["Latin Roots","lr"]];
 function setsFor(lang){ return lang==='English' ? ENGLISH_PACKS.map(p=>p[0]) : (SETS_BY_LANG[lang] || SETS); }

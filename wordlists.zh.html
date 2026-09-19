@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>免费可打印单词列表 — 意大利语、德语、西班牙语、法语、世界语、道本语 | FlashBoss</title>
+<title>免费可打印单词列表 — 英语、拉丁语、意大利语、德语、西班牙语、法语、斯瓦希里语、世界语、道本语 | FlashBoss</title>
 <meta name="description" content="意大利语、德语、西班牙语、法语、世界语与道本语的免费可打印单词列表。每门语言最有用的单词按词频排序，并按层级与主题分组，各配英文翻译。可遮住翻译自测，也可打印集群、裁成自己的闪卡。">
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/wordlists.zh.html">
@@ -262,7 +262,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
   <div class="wrap">
     <h1>单词列表</h1>
     <!-- Static, crawlable SEO copy: names the languages and what's offered. -->
-    <p>FlashBoss 全部语言——<b><a href="packs.zh.html">英语</a>、<a href="italian.zh.html">意大利语</a>、<a href="german.zh.html">德语</a>、<a href="spanish.zh.html">西班牙语</a>、<a href="french.zh.html">法语</a>、<a href="esperanto.zh.html">世界语</a>、<a href="toki-pona.zh.html">道本语</a></b>——的免费可打印单词列表。每门语言最有用的单词按词频排序，整理为 5 个层级的主题集群，各配英文翻译。可以遮住翻译自测，也可以按集群打印、裁成自己的闪卡。怎么用都随你。<a href="#" class="howlink" id="howBtn">使用说明 &rarr;</a></p>
+    <p>FlashBoss 全部语言——<b><a href="packs.zh.html">英语</a>、<a href="italian.zh.html">意大利语</a>、<a href="german.zh.html">德语</a>、<a href="spanish.zh.html">西班牙语</a>、<a href="french.zh.html">法语</a>、<a href="latin.html">拉丁语</a>、<a href="swahili.html">斯瓦希里语</a>、<a href="esperanto.zh.html">世界语</a>、<a href="toki-pona.zh.html">道本语</a></b>——的免费可打印单词列表。每门语言最有用的单词按词频排序，整理为 5 个层级的主题集群，各配英文翻译。可以遮住翻译自测，也可以按集群打印、裁成自己的闪卡。怎么用都随你。<a href="#" class="howlink" id="howBtn">使用说明 &rarr;</a></p>
   </div>
 </header>
 
@@ -328,10 +328,10 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
    Uses the FINAL.json (relative-numbered) per-set files. Numbering
    is never displayed, so GLOBAL.json would also work unchanged.
    ============================================================ */
-const LANGS = ["Italian","German","Spanish","French","Latin","Esperanto","Toki Pona","English"];
-const LANG_ZH={Italian:'意大利语',German:'德语',Spanish:'西班牙语',French:'法语',Esperanto:'世界语',"Toki Pona":'道本语',English:'英语'};
+const LANGS = ["Italian","German","Spanish","French","Latin","Esperanto","Toki Pona","Swahili","English"];
+const LANG_ZH={Italian:'意大利语',German:'德语',Spanish:'西班牙语',French:'法语',Esperanto:'世界语',"Toki Pona":'道本语',English:'英语',Latin:'拉丁语',Swahili:'斯瓦希里语'};
 const SETS  = ["Core","Pareto 1","Pareto 2"];
-const SETS_BY_LANG = {"Toki Pona":["Core"], "Latin":["Core","Pareto 1"]};   // published sets per language; everything else has all three
+const SETS_BY_LANG = {"Toki Pona":["Core"], "Latin":["Core","Pareto 1"], "Swahili":["Core"]};   // published sets per language; everything else has all three
 /* English ships as named packs, each in its own folder, with a single CORE_FINAL.json */
 const ENGLISH_PACKS = [["Core","core"],["Pareto 1","p1"],["Pareto 2","p2"],["Adept","ad"],["Advance","adv"],["German Roots","gr"],["Greek Roots","gkr"],["Norman Roots","nr"],["Latin Roots","lr"]];
 function setsFor(lang){ return lang==='English' ? ENGLISH_PACKS.map(p=>p[0]) : (SETS_BY_LANG[lang] || SETS); }

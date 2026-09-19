@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Бесплатные списки слов для печати — итальянский, немецкий, испанский, французский, эсперанто и токи пона | FlashBoss</title>
-<meta name="description" content="Бесплатные списки слов для печати: итальянский, немецкий, испанский, французский, эсперанто и токи пона. Самые полезные слова каждого языка, отсортированные по частотности и сгруппированные по уровням и темам, каждое с переводом. Спрячьте переводы, чтобы проверить себя, или распечатайте блок и нарежьте собственные карточки.">
+<title>Бесплатные списки слов для печати — английский, латинский, итальянский, немецкий, испанский, французский, суахили, эсперанто и токи пона | FlashBoss</title>
+<meta name="description" content="Бесплатные списки слов для печати: английский, латинский, итальянский, немецкий, испанский, французский, суахили, эсперанто и токи пона. Самые полезные слова каждого языка, отсортированные по частотности и сгруппированные по уровням и темам, каждое с переводом. Спрячьте переводы, чтобы проверить себя, или распечатайте блок и нарежьте собственные карточки.">
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/wordlists.ru.html">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/wordlists.html">
@@ -264,7 +264,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
   <div class="wrap">
     <h1>Списки слов</h1>
     <!-- Static, crawlable SEO copy: names the languages and what's offered. -->
-    <p>Бесплатные списки слов для печати по каждому языку FlashBoss — <b><a href="packs.ru.html">английский</a>, <a href="italian.ru.html">итальянский</a>, <a href="german.ru.html">немецкий</a>, <a href="spanish.ru.html">испанский</a>, <a href="french.ru.html">французский</a>, <a href="esperanto.ru.html">эсперанто</a> и <a href="toki-pona.ru.html">токи пона</a></b>. Самые полезные слова каждого языка, отсортированные по частотности и сгруппированные в тематические блоки по пяти уровням. Спрячьте переводы, чтобы проверить себя, или распечатайте блок и нарежьте собственные карточки. Пользуйтесь как угодно и бесплатно. <a href="#" class="howlink" id="howBtn">Как это работает &rarr;</a></p>
+    <p>Бесплатные списки слов для печати по каждому языку FlashBoss — <b><a href="packs.ru.html">английский</a>, <a href="italian.ru.html">итальянский</a>, <a href="german.ru.html">немецкий</a>, <a href="spanish.ru.html">испанский</a>, <a href="french.ru.html">французский</a>, <a href="latin.html">латинский</a>, <a href="swahili.html">суахили</a>, <a href="esperanto.ru.html">эсперанто</a> и <a href="toki-pona.ru.html">токи пона</a></b>. Самые полезные слова каждого языка, отсортированные по частотности и сгруппированные в тематические блоки по пяти уровням. Спрячьте переводы, чтобы проверить себя, или распечатайте блок и нарежьте собственные карточки. Пользуйтесь как угодно и бесплатно. <a href="#" class="howlink" id="howBtn">Как это работает &rarr;</a></p>
     <p class="ru-gloss-note" style="margin-top:10px; font-size:13px; opacity:.75;">Переводы слов пока показаны по-английски: русские глоссарии ещё готовятся.</p>
   </div>
 </header>
@@ -331,9 +331,9 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
    Uses the FINAL.json (relative-numbered) per-set files. Numbering
    is never displayed, so GLOBAL.json would also work unchanged.
    ============================================================ */
-const LANGS = ["Italian","German","Spanish","French","Latin","Esperanto","Toki Pona","English"];
+const LANGS = ["Italian","German","Spanish","French","Latin","Esperanto","Toki Pona","Swahili","English"];
 const SETS  = ["Core","Pareto 1","Pareto 2"];
-const SETS_BY_LANG = {"Toki Pona":["Core"], "Latin":["Core","Pareto 1"]};   // published sets per language; everything else has all three
+const SETS_BY_LANG = {"Toki Pona":["Core"], "Latin":["Core","Pareto 1"], "Swahili":["Core"]};   // published sets per language; everything else has all three
 /* English ships as named packs, each in its own folder, with a single CORE_FINAL.json */
 const ENGLISH_PACKS = [["Core","core"],["Pareto 1","p1"],["Pareto 2","p2"],["Adept","ad"],["Advance","adv"],["German Roots","gr"],["Greek Roots","gkr"],["Norman Roots","nr"],["Latin Roots","lr"]];
 function setsFor(lang){ return lang==='English' ? ENGLISH_PACKS.map(p=>p[0]) : (SETS_BY_LANG[lang] || SETS); }
@@ -449,7 +449,7 @@ async function loadSet(lang,set){
    keys — dataUrl() builds data/<lang>/<SET>_FINAL.json from them. */
 const RU_NAME = {
   "Italian":"Итальянский","German":"Немецкий","Spanish":"Испанский","French":"Французский","Latin":"Латинский",
-  "Esperanto":"Эсперанто","Toki Pona":"Токи пона","English":"Английский",
+  "Esperanto":"Эсперанто","Toki Pona":"Токи пона","Swahili":"Суахили","English":"Английский",
   "Core":"Core","Pareto 1":"Pareto 1","Pareto 2":"Pareto 2",
   "Adept":"Adept","Advance":"Advance","German Roots":"German Roots","Greek Roots":"Greek Roots",
   "Norman Roots":"Norman Roots","Latin Roots":"Latin Roots"

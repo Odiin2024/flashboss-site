@@ -46,6 +46,10 @@ SETS = [("English", "Core",     "English/core",               "data/english/core
         # Latin ships no CORE_FINAL either (same depot ruling). Core + Pareto 1 only.
         ("Latin",   "Core",     "Latin/core",                 "data/latin/CORE_FINAL.json",          0,    "lang"),
         ("Latin",   "Pareto 1", "Latin/pareto1",              "data/latin/PARETO1_FINAL.json",       1000, "lang"),
+        # Swahili Core shipped 2026-09-16 and its own store page promises the word
+        # list is on the website; it was not. Pareto 1 and 2 are authored but not
+        # released, so they are deliberately not built here.
+        ("Swahili", "Core",     "Swahili/core",               "data/swahili/CORE_FINAL.json",        0,    "lang"),
         # The four Roots packs. Rebuilt upstream 2026-09-19 (new clusters, renumbered
         # folders, new lessons, a new Notes line carrying the twin/Related labels), and
         # the site's copies were 2026-08-28 artifacts. mode "roots": the pair is

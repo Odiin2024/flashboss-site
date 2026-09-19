@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Free Printable Word Lists — Italian, German, Spanish, French, Esperanto &amp; Toki Pona Vocabulary | FlashBoss</title>
-<meta name="description" content="Free, printable vocabulary word lists for Italian, German, Spanish, French, Esperanto and Toki Pona. The most useful words in each language, frequency-ranked and grouped by tier and theme, each with its English translation. Hide the translations to self-test, or print a cluster and cut your own flashcards.">
+<title>Free Printable Word Lists — English, Latin, Italian, German, Spanish, French, Swahili, Esperanto &amp; Toki Pona Vocabulary | FlashBoss</title>
+<meta name="description" content="Free, printable vocabulary word lists for English, Latin, Italian, German, Spanish, French, Swahili, Esperanto and Toki Pona — including every English Roots pack. The most useful words in each language, frequency-ranked and grouped by tier and theme, each with its English translation. Hide the translations to self-test, or print a cluster and cut your own flashcards.">
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/wordlists.html">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/wordlists.html">
@@ -261,7 +261,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
   <div class="wrap">
     <h1>Word Lists</h1>
     <!-- Static, crawlable SEO copy: names the languages and what's offered. -->
-    <p>Free, printable vocabulary lists for every FlashBoss language — <b><a href="packs.html">English</a>, <a href="italian.html">Italian</a>, <a href="german.html">German</a>, <a href="spanish.html">Spanish</a>, <a href="french.html">French</a>, <a href="esperanto.html">Esperanto</a>, and <a href="toki-pona.html">Toki Pona</a></b>. The most useful words in each language, frequency-ranked and grouped into thematic clusters across five tiers, each paired with its English translation. Hide the translations to test yourself, or print a cluster and cut your own flashcards. Free to use however you like. <a href="#" class="howlink" id="howBtn">How it works &rarr;</a></p>
+    <p>Free, printable vocabulary lists for every FlashBoss language — <b><a href="packs.html">English</a>, <a href="italian.html">Italian</a>, <a href="german.html">German</a>, <a href="spanish.html">Spanish</a>, <a href="french.html">French</a>, <a href="latin.html">Latin</a>, <a href="swahili.html">Swahili</a>, <a href="esperanto.html">Esperanto</a>, and <a href="toki-pona.html">Toki Pona</a></b>. The most useful words in each language, frequency-ranked and grouped into thematic clusters across five tiers, each paired with its English translation. Hide the translations to test yourself, or print a cluster and cut your own flashcards. Free to use however you like. <a href="#" class="howlink" id="howBtn">How it works &rarr;</a></p>
   </div>
 </header>
 
@@ -327,9 +327,9 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
    Uses the FINAL.json (relative-numbered) per-set files. Numbering
    is never displayed, so GLOBAL.json would also work unchanged.
    ============================================================ */
-const LANGS = ["Italian","German","Spanish","French","Latin","Esperanto","Toki Pona","English"];
+const LANGS = ["Italian","German","Spanish","French","Latin","Esperanto","Toki Pona","Swahili","English"];
 const SETS  = ["Core","Pareto 1","Pareto 2"];
-const SETS_BY_LANG = {"Toki Pona":["Core"], "Latin":["Core","Pareto 1"]};   // published sets per language; everything else has all three
+const SETS_BY_LANG = {"Toki Pona":["Core"], "Latin":["Core","Pareto 1"], "Swahili":["Core"]};   // published sets per language; everything else has all three
 /* English ships as named packs, each in its own folder, with a single CORE_FINAL.json */
 const ENGLISH_PACKS = [["Core","core"],["Pareto 1","p1"],["Pareto 2","p2"],["Adept","ad"],["Advance","adv"],["German Roots","gr"],["Greek Roots","gkr"],["Norman Roots","nr"],["Latin Roots","lr"]];
 function setsFor(lang){ return lang==='English' ? ENGLISH_PACKS.map(p=>p[0]) : (SETS_BY_LANG[lang] || SETS); }

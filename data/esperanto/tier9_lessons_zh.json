@@ -25,19 +25,19 @@
           "  Trovu Esperantistojn proksime de vi"
         ],
         "english": [
-          "USEFUL WEBSITES",
+          "实用网站",
           "",
           "LERNU.NET",
-          "  Free course with exercises and forum",
+          "  带练习和论坛的免费课程",
           "",
-          "ESPERANTO WIKIPEDIA",
-          "  eo.wikipedia.org - Over 300,000 articles!",
+          "世界语维基百科",
+          "  eo.wikipedia.org - 超过30万篇文章！",
           "",
           "DUOLINGO",
-          "  Esperanto course for English speakers",
+          "  面向英语使用者的世界语课程",
           "",
-          "AMIKUMU (app)",
-          "  Find Esperanto speakers near you"
+          "AMIKUMU（应用）",
+          "  查找你附近的世界语者"
         ]
       },
       {
@@ -59,19 +59,19 @@
           "  Multaj grupoj por babili"
         ],
         "english": [
-          "MORE RESOURCES",
+          "更多资源",
           "",
           "PASPORTA SERVO",
-          "  Free accommodation with Esperantists",
+          "  在世界语者家中免费住宿",
           "",
           "LIBERA FOLIO",
-          "  News in Esperanto",
+          "  世界语新闻",
           "",
           "MUZAIKO",
-          "  24-hour Esperanto radio",
+          "  24小时世界语广播",
           "",
           "TELEGRAM/DISCORD",
-          "  Many groups for chatting"
+          "  许多聊天群组"
         ]
       }
     ]
@@ -185,18 +185,18 @@
           "   Por demandi pri gramatiko"
         ],
         "english": [
-          "You can practice Esperanto with AI!",
+          "你可以用 AI 练习世界语！",
           "",
-          "Modern language models (ChatGPT, Claude)",
-          "can speak Esperanto surprisingly well.",
+          "现代语言模型（ChatGPT、Claude）",
+          "能出人意料地流利说世界语。",
           "",
-          "Two ways to use them:",
+          "两种使用方式：",
           "",
-          "1. CONVERSATION PARTNER",
-          "   For practicing speaking",
+          "1. 对话伙伴",
+          "   用于练习口语",
           "",
-          "2. PRIVATE TUTOR",
-          "   For asking about grammar"
+          "2. 私人导师",
+          "   用于询问语法"
         ]
       },
       {
@@ -220,22 +220,133 @@
           "Demandu pri io ajn! 'Kial estas -n ĉi tie?'"
         ],
         "english": [
-          "CONVERSATION PARTNER - Tell the AI:",
+          "对话伙伴 — 告诉 AI：",
           "",
-          "\"Roleplay as a school classmate on a",
-          "trip. Speak Esperanto fluently. Lead",
-          "with easy questions. Use simple",
-          "Esperanto. Correct gently.\"",
+          "「扮演一名在旅行中的同学。",
+          "流利地说世界语。用简单的问题",
+          "引导对话。使用简单的世界语。",
+          "温和地纠正错误。」",
           "",
-          "Then just start: 'Saluton!'",
+          "然后直接开始：「Saluton!」",
           "",
-          "PRIVATE TUTOR - Tell the AI:",
+          "私人导师 — 告诉 AI：",
           "",
-          "\"Be my Esperanto tutor. Answer",
-          "questions. Explain grammar.\"",
+          "「做我的世界语导师。回答问题，",
+          "解释语法。」",
           "",
-          "Ask about anything! 'Why is -n here?'"
+          "随便问任何问题！「这里为什么有 -n？」"
         ]
+      }
+    ]
+  },
+  {
+    "lesson_id": "060",
+    "trigger_word": "pasporto",
+    "trigger_card_number": 643,
+    "title": "第60课：世界语中的世界",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "世界语的国名：-io 是国家，-o 是国民。",
+          "一键对应两个：",
+          "德国            Germanio,  germano       按 1",
+          "法国            Francio,   franco",
+          "意大利          Italio,    italo         按 2",
+          "西班牙          Hispanio,  hispano",
+          "波兰            Pollando,  polo          按 3",
+          "俄罗斯          Rusio,     ruso",
+          "匈牙利          Hungario,  hungaro       按 4",
+          "捷克            Ĉeĥio,     ĉeĥo",
+          "立陶宛          Litovio,   litovo        按 5",
+          "芬兰            Finnlando, finno",
+          "中国            Ĉinio,     ĉino          按 6",
+          "日本            Japanio,   japano",
+          "美国            Usono,     usonano       按 7",
+          "加拿大          Kanado,    kanadano",
+          "巴西            Brazilo,   brazilano     按 8",
+          "肯尼亚          Kenjo,     kenjano"
+        ],
+        "pronunciation_mappings": {
+          "1": "Germanio,  germano. Francio,   franco.",
+          "2": "Italio,    italo. Hispanio,  hispano.",
+          "3": "Pollando,  polo. Rusio,     ruso.",
+          "4": "Hungario,  hungaro. Ĉeĥio,     ĉeĥo.",
+          "5": "Litovio,   litovo. Finnlando, finno.",
+          "6": "Ĉinio,     ĉino. Japanio,   japano.",
+          "7": "Usono,     usonano. Kanado,    kanadano.",
+          "8": "Brazilo,   brazilano. Kenjo,     kenjano."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "国家及其首都，用世界语。一键对应两行：",
+          "",
+          "德国         Germanio    Berlino         按 1",
+          "法国         Francio     Parizo",
+          "意大利       Italio      Romo            按 2",
+          "西班牙       Hispanio    Madrido",
+          "英国         Britio      Londono         按 3",
+          "葡萄牙       Portugalio  Lisbono",
+          "荷兰         Nederlando  Amsterdamo      按 4",
+          "瑞士         Svislando   Berno",
+          "奥地利       Aŭstrio     Vieno           按 5",
+          "波兰         Pollando    Varsovio",
+          "瑞典         Svedio      Stokholmo       按 6",
+          "俄罗斯       Rusio       Moskvo",
+          "乌克兰       Ukrainio    Kievo           按 7",
+          "土耳其       Turkio      Ankaro",
+          "捷克         Ĉeĥio       Prago           按 8",
+          "匈牙利       Hungario    Budapeŝto"
+        ],
+        "pronunciation_mappings": {
+          "1": "Germanio. Berlino. Francio. Parizo.",
+          "2": "Italio. Romo. Hispanio. Madrido.",
+          "3": "Britio. Londono. Portugalio. Lisbono.",
+          "4": "Nederlando. Amsterdamo. Svislando. Berno.",
+          "5": "Aŭstrio. Vieno. Pollando. Varsovio.",
+          "6": "Svedio. Stokholmo. Rusio. Moskvo.",
+          "7": "Ukrainio. Kievo. Turkio. Ankaro.",
+          "8": "Ĉeĥio. Prago. Hungario. Budapeŝto."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "国家、国民、形容词：Germanio、germano、",
+          "germana。再来十六个：",
+          "立陶宛       Litovio     Vilno           按 1",
+          "芬兰         Finnlando   Helsinko",
+          "美国         Usono       Vaŝingtono      按 2",
+          "加拿大       Kanado      Otavo",
+          "墨西哥       Meksiko     Meksikurbo      按 3",
+          "巴西         Brazilo     Braziljo",
+          "中国         Ĉinio       Pekino          按 4",
+          "日本         Japanio     Tokio",
+          "韩国         Sud-Koreio  Seulo           按 5",
+          "印度         Hindio      Nov-Delhio",
+          "印度尼西亚   Indonezio   Ĝakarto         按 6",
+          "澳大利亚     Aŭstralio   Kanbero",
+          "埃及         Egiptio     Kairo           按 7",
+          "肯尼亚       Kenjo       Najrobo",
+          "尼日利亚     Niĝerio     Abuĝo           按 8",
+          "南非         Sud-Afriko  Pretorio"
+        ],
+        "pronunciation_mappings": {
+          "1": "Litovio. Vilno. Finnlando. Helsinko.",
+          "2": "Usono. Vaŝingtono. Kanado. Otavo.",
+          "3": "Meksiko. Meksikurbo. Brazilo. Braziljo.",
+          "4": "Ĉinio. Pekino. Japanio. Tokio.",
+          "5": "Sud-Koreio. Seulo. Hindio. Nov-Delhio.",
+          "6": "Indonezio. Ĝakarto. Aŭstralio. Kanbero.",
+          "7": "Egiptio. Kairo. Kenjo. Najrobo.",
+          "8": "Niĝerio. Abuĝo. Sud-Afriko. Pretorio."
+        }
       }
     ]
   }

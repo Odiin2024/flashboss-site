@@ -197,8 +197,8 @@
           "Ich warte auf den Bus. Ich warte darauf.",
           "(バスを待っています。それを待っています)",
           "",
-          "Ich denke an die Prüfung. Ich denke daran.",
-          "(試験のことを考えています。それを考えています)"
+          "Ich denke an die Prüfung. Ich denke daran。（",
+          "試験を考えてます。それについて）"
         ]
       },
       {
@@ -247,11 +247,11 @@
           "Ich hatte gegessen. (食べ終えていた)",
           "Er war gegangen. (行ってしまっていた)",
           "",
-          "'nachdem' (〜した後で) とともに:",
-          "Nachdem ich gegessen hatte, ging ich spazieren.",
-          "(食べた後で、散歩に行きました)",
-          "Nachdem sie gegangen war, rief er an.",
-          "(彼女が帰った後で、彼は電話しました)",
+          "'nachdem' (〜した後で) とともに: Nachdem ich",
+          "gegessen hatte, ging ich spazieren. (食べた後",
+          "で、散歩に行きました) Nachdem sie gegangen",
+          "war, rief er an. (彼女が帰った後で、彼は電話",
+          "しました)",
           "",
           "'nachdem' + 過去完了 → 主文は過去形"
         ],
@@ -287,7 +287,7 @@
           "",
           "話法助動詞や lassen には ZU を付けません!",
           "",
-          "'sobald' (〜するとすぐに)は時の副文を導きます。"
+          "'sobald'（〜するとすぐ）は時の副文を導く。"
         ],
         "pronunciation": "Lektion 50"
       }
@@ -324,6 +324,117 @@
           "日常のドイツ語よりずっと硬い文体です!"
         ],
         "pronunciation": "Lektion 41"
+      }
+    ]
+  },
+  {
+    "lesson_id": "055",
+    "trigger_word": "Staat",
+    "trigger_card_number": 906,
+    "title": "第55課:地図で見るドイツ",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "ドイツとその都市や名所を、ドイツ人の",
+          "言い方で。1キーで2つ：",
+          "ドイツ          Deutschland           1を押す",
+          "ベルリン        Berlin",
+          "ハンブルク      Hamburg               2を押す",
+          "ミュンヘン      München",
+          "ケルン          Köln                  3を押す",
+          "フランクフルト  Frankfurt",
+          "Stuttgart       Stuttgart             4を押す",
+          "ライプツィヒ    Leipzig",
+          "バイエルン      Bayern                5を押す",
+          "ライン川        der Rhein",
+          "アルプス        die Alpen             6を押す",
+          "北海            die Nordsee",
+          "Brandenburg Gate Brandenburger Tor    7を押す",
+          "黒い森          der Schwarzwald",
+          "ボーデン湖      der Bodensee          8を押す",
+          "バルト海        die Ostsee"
+        ],
+        "pronunciation_mappings": {
+          "1": "Deutschland. Berlin.",
+          "2": "Hamburg. München.",
+          "3": "Köln. Frankfurt.",
+          "4": "Stuttgart. Leipzig.",
+          "5": "Bayern. Der Rhein.",
+          "6": "Die Alpen. Die Nordsee.",
+          "7": "Brandenburger Tor. Der Schwarzwald.",
+          "8": "Der Bodensee. Die Ostsee."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "国とその首都をドイツ語で。1キーで2行表示：",
+          "",
+          "ドイツ       Deutschland Berlin       1を押す",
+          "フランス     Frankreich  Paris",
+          "イタリア     Italien     Rom          2を押す",
+          "スペイン     Spanien     Madrid",
+          "英国         Britannien  London       3を押す",
+          "ポルトガル   Portugal    Lissabon",
+          "オランダ     Niederlande Amsterdam    4を押す",
+          "スイス       Schweiz     Bern",
+          "Austria      Österreich  Wien         5を押す",
+          "ポーランド   Polen       Warschau",
+          "Sweden       Schweden    Stockholm    6を押す",
+          "ロシア       Russland    Moskau",
+          "ウクライナ   Ukraine     Kiew         7を押す",
+          "トルコ       Türkei      Ankara",
+          "チェコ       Tschechien  Prag         8を押す",
+          "南アフリカ   Südafrika   Pretoria"
+        ],
+        "pronunciation_mappings": {
+          "1": "Deutschland. Berlin. Frankreich. Paris.",
+          "2": "Italien. Rom. Spanien. Madrid.",
+          "3": "Britannien. London. Portugal. Lissabon.",
+          "4": "Niederlande. Amsterdam. Schweiz. Bern.",
+          "5": "Österreich. Wien. Polen. Warschau.",
+          "6": "Schweden. Stockholm. Russland. Moskau.",
+          "7": "Ukraine. Kiew. Türkei. Ankara.",
+          "8": "Tschechien. Prag. Südafrika. Pretoria."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "国名・国民・形容詞：Deutschland、",
+          "Deutscher、deutsch。さらに16か国：",
+          "デンマーク   Dänemark    Kopenhagen   1を押す",
+          "ベルギー     Belgien     Brüssel",
+          "アメリカ     die USA     Washington   2を押す",
+          "カナダ       Kanada      Ottawa",
+          "メキシコ     Mexiko      Mexiko City  3を押す",
+          "ブラジル     Brasilien   Brasília",
+          "中国         China       Peking       4を押す",
+          "日本         Japan       Tokio",
+          "韓国         Südkorea    Seoul        5を押す",
+          "インド       Indien      Neu-Delhi",
+          "インドネシア Indonesien  Jakarta      6を押す",
+          "Australia    Australien  Canberra",
+          "エジプト     Ägypten     Kairo        7を押す",
+          "ケニア       Kenia       Nairobi",
+          "ナイジェリア Nigeria     Abuja        8を押す",
+          "Luxembourg   Luxemburg   Luxemburg"
+        ],
+        "pronunciation_mappings": {
+          "1": "Dänemark. Kopenhagen. Belgien. Brüssel.",
+          "2": "Die USA. Washington. Kanada. Ottawa.",
+          "3": "Mexiko. Mexiko City. Brasilien. Brasília.",
+          "4": "China. Peking. Japan. Tokio.",
+          "5": "Südkorea. Seoul. Indien. Neu-Delhi.",
+          "6": "Indonesien. Jakarta. Australien. Canberra.",
+          "7": "Ägypten. Kairo. Kenia. Nairobi.",
+          "8": "Nigeria. Abuja. Luxemburg. Luxemburg."
+        }
       }
     ]
   }
