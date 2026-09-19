@@ -1,0 +1,14 @@
+# FlashBoss — https://odiin2024.github.io/flashboss-site/
+User-agent: *
+Allow: /
+
+# Account and admin pages: no reason for these to be in a search result.
+Disallow: /activate-key.html
+Disallow: /beta-key.html
+Disallow: /beta-key-creator.html
+Disallow: /affiliate-apply.html
+Disallow: /affiliate-metrics.html
+Disallow: /report.html
+Disallow: /phone-layout-test.html
+
+Sitemap: https://odiin2024.github.io/flashboss-site/sitemap.xml
