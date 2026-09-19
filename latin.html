@@ -4,19 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Latin — FlashBoss</title>
-<meta name="description" content="FlashBoss Latin: a 2,000-word reading course in ten tiers and eighty clusters, with 39 reference lessons, macronned headwords, and example sentences that end in unadapted Caesar, Cicero, Sallust, Nepos and Livy. Latin Core 3 September, Latin Pareto 1 10 September.">
+<meta name="description" content="FlashBoss Latin: a 2,000-word reading course in ten tiers and eighty clusters, with 44 reference lessons, macronned headwords, and example sentences that end in unadapted Caesar, Cicero, Sallust, Nepos and Livy. Latin Core and Latin Pareto, out now on Steam.">
+<link rel="canonical" href="https://odiin2024.github.io/flashboss-site/latin.html">
 <link rel="icon" type="image/png" href="icon.png">
-<!-- STAGED PAGE — not promoted. Lives in /update until the Steam pages exist.
-     Paths are already root-relative, so promotion is `git mv update/latin.html
-     latin.html` with no rewrites. Before promoting, do the hand-wiring the
-     localizer does not do (see LOCALIZATION_CANON.md / the pipeline note):
-       1. hreflang block below gains de/es/ja/zh/ru rows once siblings exist;
-       2. the switcher <ul> gains those siblings, and every sibling's switcher
-          gains Latin;
-       3. lang-redirect.js AVAIL gains  'latin': ['de','es','ja','zh','ru'];
-       4. packs.html (all six locales) gains a Latin card wired to "Learn more";
-       5. the Steam hrefs marked STEAM-TBD below take the real app IDs.
-     Nothing on this page links to a Steam store page that does not exist yet. -->
+<!-- The Latin course page. Promoted 2026-09-19: Latin Core (Steam 5063240) and
+     Latin Pareto (5063250) are both on sale, so by site rule the page carries no
+     release date at all — dates are for things not yet out.
+     Counted from knight/flashcard_sets/Latin on 2026-09-19, not from copy:
+     Core 1,000 cards / 40 clusters / 26 lessons, Pareto 1,000 / 40 / 18 —
+     80 clusters, 2,000 cards, 44 reference lessons, ten tiers.
+     Card text carries de/es/ja/ru/zh (five, verified by reading the cluster
+     JSON keys: Translation_*, ExampleTranslation_*, Notes_*) plus the _gb
+     British layer. An earlier draft of this page said three; it was wrong.
+     STORE NAME: Steam sells the second pack as "Latin Pareto", with no 1 —
+     there is no Latin Pareto 2, the course forks instead. The page follows the
+     store so a reader can find it.
+     English only for now: when the siblings ship, the hreflang block, the
+     switcher <ul> and lang-redirect.js AVAIL gain them together. -->
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/latin.html">
 <link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/latin.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -325,7 +329,7 @@ footer .footer-links .div{opacity:.4;}
          the hero on flat ink if the image ever goes missing. -->
     <img class="hero-img" src="background.png" alt="FlashBoss — the moonlit school that fronts every FlashBoss course" loading="eager" decoding="async" onerror="this.style.display='none'">
     <div class="wrap">
-      <p class="kicker reveal">Core <b>3 September</b> · Pareto 1 <b>10 September</b> · 2,000 words · 39 lessons</p>
+      <p class="kicker reveal">Two packs · <b>2,000 words</b> · ten tiers · 44 lessons · out now on Steam</p>
       <h1 class="reveal">Latīna<span class="cursor"></span></h1>
       <p class="tagline reveal">Read real Latin. Not books about it.</p>
       <p class="sig reveal">Listen · Read · Repeat · Rate · Fight</p>
@@ -356,7 +360,7 @@ footer .footer-links .div{opacity:.4;}
         <div class="step"><div class="t">Tier 5</div><p>The perfect and its family, principal parts, relative clauses. Caesar is now on 86 of the 200 cards, and unadapted on 26 of them.</p></div>
       </div>
 
-      <p class="runlabel">Latin Pareto 1 — tiers 6 to 10</p>
+      <p class="runlabel">Latin Pareto — tiers 6 to 10</p>
       <div class="run par reveal">
         <div class="step"><div class="t">Tier 6</div><p>Participles, all three of them, and the passive. Caesar continues, and Nepos comes into his own.</p></div>
         <div class="step"><div class="t">Tier 7</div><p>The ablative absolute, the passive complete, deponents. Cicero's letters open the informal register.</p></div>
@@ -441,7 +445,7 @@ footer .footer-links .div{opacity:.4;}
           <div class="tct">8 clusters · 200 cards</div>
         </div>
       </div>
-      <p class="tierfoot"><span>Core: 5 tiers · 40 clusters · <b>1,000 cards</b></span><span>22 reference lessons</span><span>the reading foundation</span></p>
+      <p class="tierfoot"><span>Core: 5 tiers · 40 clusters · <b>1,000 cards</b></span><span>26 reference lessons</span><span>the reading foundation</span></p>
       <div class="tiers">
         <div class="tierrow">
           <div class="tno">Tier 6</div>
@@ -469,7 +473,7 @@ footer .footer-links .div{opacity:.4;}
           <div class="tct">8 clusters · 200 cards</div>
         </div>
       </div>
-      <p class="tierfoot"><span>Pareto 1: 5 tiers · 40 clusters · <b>1,000 cards</b></span><span>17 reference lessons</span><span>the trunk complete</span></p>
+      <p class="tierfoot"><span>Pareto: 5 tiers · 40 clusters · <b>1,000 cards</b></span><span>18 reference lessons</span><span>the trunk complete</span></p>
     </div>
   </section>
 
@@ -530,7 +534,7 @@ mālum, with a long ā, is an apple.</span></div>
     <div class="frame reveal">
       <span class="tag">Not just a word list</span>
       <h2>Thirty-nine lessons, fired in sequence</h2>
-      <p class="sub">A reference lesson unlocks at the exact card where you first need it, and stays available afterwards. Core's twenty-two and Pareto 1's seventeen are all free to read on the <a href="lessons.html?lang=Latin">lessons page</a>.</p>
+      <p class="sub">A reference lesson unlocks at the exact card where you first need it, and stays available afterwards. Core's twenty-six and Pareto's eighteen are all free to read on the <a href="lessons.html?lang=Latin">lessons page</a>.</p>
       <ul class="lessons">
         <li><span class="no">01</span>Welcome to Latin<span class="d">The four letters an English reader gets wrong — c, g, v, qu — in the restored sounds, and what a macron is for.</span></li>
         <li><span class="no">10</span>The accusative<span class="d">The first case that changes what a sentence means, met on the card that first needs it.</span></li>
@@ -549,19 +553,19 @@ mālum, with a long ā, is an apple.</span></div>
   <section class="wrap">
     <div class="reveal">
       <h2>Two packs to literacy</h2>
-      <p class="sub">Latin is a trunk, not a staircase of three. Core and Pareto 1 together are the whole 2,000-word reading course, grammar-complete at the end of it.</p>
+      <p class="sub">Latin is a trunk, not a staircase of three. Core and Pareto together are the whole 2,000-word reading course, grammar-complete at the end of it.</p>
       <div class="packs">
-        <a class="pack" href="wordlists.html?lang=Latin&amp;set=Core">
+        <a class="pack" href="https://store.steampowered.com/app/5063240/?utm_source=website-latin" target="_blank" rel="noopener">
           <div class="n">Latin Core</div>
-          <div class="lvl">Tiers 1–5 · 1,000 words · 22 lessons</div>
+          <div class="lvl">Tiers 1–5 · 1,000 words · 26 lessons</div>
           <p>The reading foundation. Sentences built to the tier at first, real Caesar by the end. Requires the base game.</p>
-          <span class="soon">Thursday 3 September</span>
+          <span class="here">On Steam</span>
         </a>
-        <a class="pack" href="wordlists.html?lang=Latin&amp;set=Pareto%201">
-          <div class="n">Latin Pareto 1</div>
-          <div class="lvl">Tiers 6–10 · 1,000 words · 17 lessons</div>
+        <a class="pack" href="https://store.steampowered.com/app/5063250/?utm_source=website-latin" target="_blank" rel="noopener">
+          <div class="n">Latin Pareto</div>
+          <div class="lvl">Tiers 6–10 · 1,000 words · 18 lessons</div>
           <p>The second thousand, and the end of the scaffolding: Nepos, Cicero's letters, Sallust, Livy, Cicero's speeches. Requires Core.</p>
-          <span class="soon">Thursday 10 September</span>
+          <span class="here">On Steam</span>
         </a>
       </div>
 
@@ -581,7 +585,7 @@ mālum, with a long ā, is an apple.</span></div>
           <span class="tbd">planned · not yet built</span>
         </div>
       </div>
-      <p class="sub" style="margin:18px 0 0;">Both branches take Core and Pareto 1 as their entry requirement. Neither has a date; both are inventoried and reserved rather than promised. <!-- STEAM-TBD: when the Core and Pareto 1 store pages go live, add the "On Steam:" line here, matching french.html. --></p>
+      <p class="sub" style="margin:18px 0 0;">Both branches take Core and Pareto as their entry requirement. Neither has a date; both are inventoried and reserved rather than promised.</p>
     </div>
   </section>
 
@@ -595,7 +599,7 @@ mālum, with a long ā, is an apple.</span></div>
         <dt>Boss fights</dt><dd>Each of the 80 clusters is gated by a duel you can't win without confronting and overcoming your most difficult words.</dd>
         <dt>Graduation</dt><dd>Beat a cluster and its cards leave your daily deck for good. The deck gets smaller as you learn.</dd>
         <dt>Audio</dt><dd>A Latin neural voice on every headword and every example sentence — <i>la_LA-flashboss_m</i>, fine-tuned for FlashBoss and released CC0, reading Classical (restored) pronunciation and honouring the macrons as real vowel length. It is synthesis, not a recording of a speaker.</dd>
-        <dt>Your language</dt><dd>All 2,000 cards carry their translation, their example translation <i>and</i> their notes in German, Spanish and Japanese as well as English — 24,000 fields, with no gaps. All 39 reference lessons add Simplified Chinese, and the game's interface speaks all five. Latin is fully playable without a word of English.</dd>
+        <dt>Your language</dt><dd>All 2,000 cards carry their translation, their example translation <i>and</i> their notes in <b>German, Spanish, Japanese, Russian and Simplified Chinese</b> as well as English — 30,000 fields, with no gaps. All 44 reference lessons carry the same five, and so does the game's interface. Latin is fully playable without a word of English.</dd>
         <dt>Macrons</dt><dd>Long vowels marked on 1,320 of the 2,000 headwords, left off the sentences — dictionary convention where it teaches, print convention where you read.</dd>
         <dt>Real sources</dt><dd>1,052 example sentences cite the book, chapter and section they came from; 813 are unaltered. Everything is drawn from public-domain editions.</dd>
         <dt>Lessons</dt><dd>Thirty-nine reference lessons across the two packs fire at the point in the sequence where they unlock what you are about to read.</dd>
@@ -610,8 +614,8 @@ mālum, with a long ā, is an apple.</span></div>
       <p class="sub">The things people ask before they buy.</p>
 
       <details>
-        <summary>When can I buy it?</summary>
-        <p class="a">Latin Core arrives on <b>Thursday 3 September 2026</b> and Latin Pareto 1 on <b>Thursday 10 September 2026</b>. Both word lists and all thirty-nine lessons are already readable here, free, if you want to judge the course before either one is on sale.</p>
+        <summary>Where do I buy it?</summary>
+        <p class="a">Both packs are on Steam now: <a href="https://store.steampowered.com/app/5063240/?utm_source=website-latin-faq" target="_blank" rel="noopener">Latin Core</a> and <a href="https://store.steampowered.com/app/5063250/?utm_source=website-latin-faq" target="_blank" rel="noopener">Latin Pareto</a>. Both word lists and all forty-four lessons are readable here, free, if you want to judge the course before you buy either one.</p>
       </details>
 
       <details>
@@ -621,7 +625,7 @@ mālum, with a long ā, is an apple.</span></div>
 
       <details>
         <summary>Do I need anything else to play it?</summary>
-        <p class="a">Yes. Latin Core is a DLC for the FlashBoss base game, so you need the base game as well. Pareto 1 requires Core — the packs build on each other in order. Everything else — the lessons, the audio, the boss fights — is inside the pack. On Windows 10 you also need <a href="https://apps.microsoft.com/detail/9n0dx20hk701" target="_blank" rel="noopener">Windows Terminal</a> — a free, secure download from the Microsoft Store.</p>
+        <p class="a">Yes. Latin Core is a DLC for the FlashBoss base game, so you need the base game as well. Latin Pareto requires Core — the packs build on each other in order. Everything else — the lessons, the audio, the boss fights — is inside the pack. On Windows 10 you also need <a href="https://apps.microsoft.com/detail/9n0dx20hk701" target="_blank" rel="noopener">Windows Terminal</a> — a free, secure download from the Microsoft Store.</p>
       </details>
 
       <details>
@@ -630,8 +634,8 @@ mālum, with a long ā, is an apple.</span></div>
       </details>
 
       <details>
-        <summary>Can I play it in German, Spanish or Japanese?</summary>
-        <p class="a">Fully. Every one of the 2,000 cards carries its translation, its example translation and its study notes in German, Spanish and Japanese as well as English, with no gaps anywhere. All thirty-nine reference lessons exist in those four and in Simplified Chinese, and the game's own interface is available in English, German, Spanish, Japanese and Simplified Chinese.</p>
+        <summary>Can I play it in my own language?</summary>
+        <p class="a">Fully. Every one of the 2,000 cards carries its translation, its example translation and its study notes in <b>German, Spanish, Japanese, Russian and Simplified Chinese</b> as well as English, with no gaps anywhere. All forty-four reference lessons carry the same five, and the game's own interface speaks all six.</p>
       </details>
 
       <details>
@@ -641,12 +645,12 @@ mālum, with a long ā, is an apple.</span></div>
 
       <details>
         <summary>Why is there no Pareto 2?</summary>
-        <p class="a">Because Latin forks instead. Core plus Pareto 1 is a complete 2,000-word trunk, grammar-complete at Tier 10. The third thousand depends on where you are going — classical poetry or ecclesiastical Latin — so it is planned as two branches rather than one more staircase. Neither is built yet.</p>
+        <p class="a">Because Latin forks instead. Core plus Pareto is a complete 2,000-word trunk, grammar-complete at Tier 10. The third thousand depends on where you are going — classical poetry or ecclesiastical Latin — so it is planned as two branches rather than one more staircase. Neither is built yet.</p>
       </details>
 
       <details>
         <summary>Can I see the words before I buy?</summary>
-        <p class="a">All of them. The complete word lists for Core and Pareto 1 are on the <a href="wordlists.html?lang=Latin&amp;set=Core">word lists page</a>, and all thirty-nine reference lessons are on the <a href="lessons.html?lang=Latin">lessons page</a> — free, printable, no account.</p>
+        <p class="a">All of them. The complete word lists for Core and Pareto are on the <a href="wordlists.html?lang=Latin&amp;set=Core">word lists page</a>, and all forty-four reference lessons are on the <a href="lessons.html?lang=Latin">lessons page</a> — free, printable, no account.</p>
       </details>
 
       <details>
@@ -660,8 +664,8 @@ mālum, with a long ā, is an apple.</span></div>
   <section class="final wrap reveal">
     <h2>Start with <i>Roma est.</i></h2>
     <p>Two words on the first card of the first cluster. Two thousand words later, Cicero.</p>
-    <p class="dates">Core · Thursday 3 September<br>Pareto 1 · Thursday 10 September</p>
-    <p class="also">Until then, read the <a href="wordlists.html?lang=Latin&amp;set=Core">word list</a> and the <a href="lessons.html?lang=Latin">lessons</a> — they're free, and they're the whole course.</p>
+    <p class="dates"><a href="https://store.steampowered.com/app/5063240/?utm_source=website-latin" target="_blank" rel="noopener">Latin Core</a> · <a href="https://store.steampowered.com/app/5063250/?utm_source=website-latin" target="_blank" rel="noopener">Latin Pareto</a> — both on Steam</p>
+    <p class="also">Or read the <a href="wordlists.html?lang=Latin&amp;set=Core">word list</a> and the <a href="lessons.html?lang=Latin">lessons</a> first — they're free, and they're the whole course.</p>
   </section>
 
 </main>
