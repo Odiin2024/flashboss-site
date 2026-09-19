@@ -8,7 +8,7 @@
       "cluster_id": "T1-C1", "tier": 1, "slug": "cluster1_1_survival_expressions",
       "cards": [
         {"n": 1, "TargetWord": "saluton", "TargetArticle": "", "Translation": "hello, hi", "TriggerLesson": "001", "Translation_de": "hallo", "Translation_es": "hola", "Translation_ja": "こんにちは、やあ", "Translation_zh": "你好", "Translation_ru": "hello, hi"},
-        {"n": 2, "TargetWord": "jes", "TargetArticle": "", "Translation": "yes", "Translation_de": "ja", "Translation_es": "sí", "Translation_ja": "はい", "Translation_zh": "是", "Translation_ru": "yes"},
+        {"n": 2, "TargetWord": "jes", "TargetArticle": "", "Translation": "yes", "Translation_de": "ja", "Translation_es": "sí", "Translation_ja": "はい", "Translation_zh": "是（表示肯定）", "Translation_ru": "yes"},
         {"n": 3, "TargetWord": "ne", "TargetArticle": "", "Translation": "no, not", "Translation_de": "nein, nicht", "Translation_es": "no", "Translation_ja": "いいえ;〜ない", "Translation_zh": "不；不是", "Translation_ru": "no, not"},
         {"n": 4, "TargetWord": "pardonon", "TargetArticle": "", "Translation": "sorry, excuse me", "Translation_de": "Entschuldigung, Verzeihung", "Translation_es": "perdón, disculpa", "Translation_ja": "ごめんなさい、すみません", "Translation_zh": "对不起，请原谅", "Translation_ru": "sorry, excuse me"},
         {"n": 5, "TargetWord": "mi", "TargetArticle": "", "Translation": "I", "Translation_de": "ich", "Translation_es": "yo", "Translation_ja": "わたし", "Translation_zh": "我", "Translation_ru": "I"},
@@ -17,7 +17,7 @@
         {"n": 8, "TargetWord": "ŝi", "TargetArticle": "", "Translation": "she", "Translation_de": "sie (Einzahl)", "Translation_es": "ella", "Translation_ja": "彼女", "Translation_zh": "她", "Translation_ru": "she"},
         {"n": 9, "TargetWord": "ni", "TargetArticle": "", "Translation": "we", "Translation_de": "wir", "Translation_es": "nosotros", "Translation_ja": "わたしたち", "Translation_zh": "我们", "Translation_ru": "we"},
         {"n": 10, "TargetWord": "ili", "TargetArticle": "", "Translation": "they", "Translation_de": "sie (Mehrzahl)", "Translation_es": "ellos, ellas", "Translation_ja": "彼ら", "Translation_zh": "他们／她们／它们", "Translation_ru": "they"},
-        {"n": 11, "TargetWord": "estas", "TargetArticle": "", "Translation": "is, am, are", "TriggerLesson": "002", "Translation_de": "ist, bin, sind", "Translation_es": "es, está, soy, son", "Translation_ja": "〜です・〜である", "Translation_zh": "是", "Translation_ru": "is, am, are"},
+        {"n": 11, "TargetWord": "estas", "TargetArticle": "", "Translation": "is, am, are", "TriggerLesson": "002", "Translation_de": "ist, bin, sind", "Translation_es": "es, está, soy, son", "Translation_ja": "〜です・〜である", "Translation_zh": "是（存在/状态）", "Translation_ru": "is, am, are"},
         {"n": 12, "TargetWord": "kaj", "TargetArticle": "", "Translation": "and", "Translation_de": "und", "Translation_es": "y", "Translation_ja": "そして、〜と", "Translation_zh": "和，与", "Translation_ru": "and"},
         {"n": 13, "TargetWord": "sed", "TargetArticle": "", "Translation": "but", "Translation_de": "aber", "Translation_es": "pero", "Translation_ja": "しかし、でも", "Translation_zh": "但是", "Translation_ru": "but"},
         {"n": 14, "TargetWord": "aŭ", "TargetArticle": "", "Translation": "or", "Translation_de": "oder", "Translation_es": "o", "Translation_ja": "または、あるいは", "Translation_zh": "或者", "Translation_ru": "or"},
@@ -457,8 +457,8 @@
         {"n": 373, "TargetWord": "sukceson", "TargetArticle": "", "Translation": "success (as wish)", "Translation_de": "viel Erfolg (als Wunsch)", "Translation_es": "éxito (como deseo)", "Translation_ja": "成功（を祈る言葉）", "Translation_zh": "祝成功", "Translation_ru": "success (as wish)"},
         {"n": 374, "TargetWord": "bonan ŝancon", "TargetArticle": "", "Translation": "good luck", "Translation_de": "viel Glück", "Translation_es": "buena suerte", "Translation_ja": "幸運を（祈る言葉）", "Translation_zh": "祝好运", "Translation_ru": "good luck"},
         {"n": 375, "TargetWord": "ĝuu", "TargetArticle": "", "Translation": "enjoy!", "Translation_de": "genieße!", "Translation_es": "¡disfruta!", "Translation_ja": "楽しんで（命令形）", "Translation_zh": "好好享受！", "Translation_ru": "enjoy!"},
-        {"n": 376, "TargetWord": "zorgu pri vi", "TargetArticle": "", "Translation": "take care of yourself", "Translation_de": "pass auf dich auf", "Translation_es": "cuídate", "Translation_ja": "体に気をつけて、お大事に", "Translation_zh": "保重", "Translation_ru": "take care of yourself"},
-        {"n": 377, "TargetWord": "fartu bone", "TargetArticle": "", "Translation": "be well", "Translation_de": "lass es dir gut gehen", "Translation_es": "que estés bien", "Translation_ja": "お元気で", "Translation_zh": "保重", "Translation_ru": "be well"},
+        {"n": 376, "TargetWord": "zorgu pri vi", "TargetArticle": "", "Translation": "take care of yourself", "Translation_de": "pass auf dich auf", "Translation_es": "cuídate", "Translation_ja": "体に気をつけて、お大事に", "Translation_zh": "保重（照顾好自己）", "Translation_ru": "take care of yourself"},
+        {"n": 377, "TargetWord": "fartu bone", "TargetArticle": "", "Translation": "be well", "Translation_de": "lass es dir gut gehen", "Translation_es": "que estés bien", "Translation_ja": "お元気で", "Translation_zh": "保重（祝你安康）", "Translation_ru": "be well"},
         {"n": 378, "TargetWord": "ĝis baldaŭ", "TargetArticle": "", "Translation": "see you soon", "Translation_de": "bis bald", "Translation_es": "hasta pronto", "Translation_ja": "また近いうちに、またね", "Translation_zh": "回头见", "Translation_ru": "see you soon"},
         {"n": 379, "TargetWord": "mi esperas ke ĉio estas bone", "TargetArticle": "", "Translation": "I hope all is well", "Translation_de": "ich hoffe, alles ist gut", "Translation_es": "espero que todo esté bien", "Translation_ja": "すべて順調であることを願う", "Translation_zh": "希望一切安好", "Translation_ru": "I hope all is well"}
       ]
@@ -944,7 +944,7 @@
       "cluster_id": "T4-C9", "tier": 4, "slug": "cluster4_9_email_specifics",
       "cards": [
         {"n": 772, "TargetWord": "retpoŝto", "TargetArticle": "la", "Translation": "email", "Translation_de": "E-Mail", "Translation_es": "correo electrónico", "Translation_ja": "メール、電子メール", "Translation_zh": "电子邮件", "Translation_ru": "email"},
-        {"n": 773, "TargetWord": "retletero", "TargetArticle": "la", "Translation": "email letter", "Translation_de": "E-Mail-Brief", "Translation_es": "carta electrónica", "Translation_ja": "メールの手紙、電子書簡", "Translation_zh": "电子邮件", "Translation_ru": "email letter"},
+        {"n": 773, "TargetWord": "retletero", "TargetArticle": "la", "Translation": "email letter", "Translation_de": "E-Mail-Brief", "Translation_es": "carta electrónica", "Translation_ja": "メールの手紙、電子書簡", "Translation_zh": "电邮信件", "Translation_ru": "email letter"},
         {"n": 774, "TargetWord": "adreso", "TargetArticle": "la", "Translation": "address", "Translation_de": "Adresse", "Translation_es": "dirección", "Translation_ja": "住所、アドレス", "Translation_zh": "地址", "Translation_ru": "address"},
         {"n": 775, "TargetWord": "retadreso", "TargetArticle": "la", "Translation": "email address", "Translation_de": "E-Mail-Adresse", "Translation_es": "dirección de correo", "Translation_ja": "メールアドレス", "Translation_zh": "电子邮箱地址", "Translation_ru": "email address"},
         {"n": 776, "TargetWord": "sendinto", "TargetArticle": "la", "Translation": "sender", "Translation_de": "Absender", "Translation_es": "remitente", "Translation_ja": "送信者、差出人", "Translation_zh": "发件人", "Translation_ru": "sender"},

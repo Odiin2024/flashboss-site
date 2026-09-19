@@ -8,7 +8,7 @@
     "pages": [
       {
         "page": 1,
-        "total_pages": 7,
+        "total_pages": 9,
         "content": [
           "Welcome to Latin.",
           "",
@@ -27,12 +27,60 @@
           "says what an English reader expects.",
           "Four do not. This pack reads them as",
           "Caesar's Rome did — the restored sounds",
-          "— and the next two pages are the list."
+          "— and pages 4 and 5 are the list."
         ]
       },
       {
         "page": 2,
-        "total_pages": 7,
+        "total_pages": 9,
+        "content": [
+          "Latin cards keep a grey cue where a German",
+          "course prints der or die. It is not an",
+          "article but the dictionary entry, shortened:",
+          "",
+          "   m., -is  rēx  =  rēx, rēgis, masculine",
+          "",
+          "Nouns cue gender and the genitive ending",
+          "(f., -ae = puella, puellae). Verbs cue the",
+          "infinitive that names the conjugation:",
+          "-āre, -ēre, -ere, -īre. Adjectives cue",
+          "three endings, -us, -a, -um. irreg. means",
+          "more than one stem. A bare infinitive like",
+          "sequī means a verb with no active forms.",
+          "",
+          "What you memorize is the headword with its",
+          "macrons AND the cue: together they are the",
+          "dictionary form. The Notes spell the",
+          "genitive out. The voice says the word alone."
+        ]
+      },
+      {
+        "page": 3,
+        "total_pages": 9,
+        "content": [
+          "The noun cue gives two things: gender,",
+          "and the genitive ending. That ending",
+          "sorts every noun into one of five",
+          "families, the declensions:",
+          "",
+          "  f., -ae   puella, puellae     1st",
+          "  m., -ī    lēgātus, lēgātī     2nd",
+          "  n., -ī    sīgnum, sīgnī       2nd",
+          "  m., -is   cōnsul, cōnsulis    3rd",
+          "  m., -ūs   senātus, senātūs    4th",
+          "  f., -eī   rēs, reī            5th",
+          "",
+          "Any gender rides in front: f., -is urbs,",
+          "n., -is tempus, m./f., -eī diēs. The",
+          "fifth also writes -ēī: aciēs, aciēī.",
+          "",
+          "senātus and lēgātus both end in -us; only",
+          "the genitive tells the 4th from the 2nd."
+        ]
+      },
+      {
+        "page": 4,
+        "total_pages": 9,
         "content": [
           "Before e or i, English softens c and g.",
           "Latin never does — they stay hard",
@@ -60,8 +108,8 @@
         }
       },
       {
-        "page": 3,
-        "total_pages": 7,
+        "page": 5,
+        "total_pages": 9,
         "content": [
           "The other two never vary at all:",
           "",
@@ -88,8 +136,8 @@
         }
       },
       {
-        "page": 4,
-        "total_pages": 7,
+        "page": 6,
+        "total_pages": 9,
         "content": [
           "A line over a vowel — ā ē ī ō ū — is a",
           "macron. It marks one thing: hold that",
@@ -115,8 +163,8 @@
         }
       },
       {
-        "page": 5,
-        "total_pages": 7,
+        "page": 7,
+        "total_pages": 9,
         "content": [
           "English marks a word's job by where it",
           "stands. 'The dog bites the man' is not",
@@ -138,8 +186,8 @@
         ]
       },
       {
-        "page": 6,
-        "total_pages": 7,
+        "page": 8,
+        "total_pages": 9,
         "content": [
           "Each job has a name. One of them carries",
           "everything here: the NOMINATIVE, the",
@@ -162,8 +210,8 @@
         ]
       },
       {
-        "page": 7,
-        "total_pages": 7,
+        "page": 9,
+        "total_pages": 9,
         "content": [
           "sum is the verb 'to be', and the most",
           "common word on a Latin page. It ties a",
@@ -299,6 +347,63 @@
     ]
   },
   {
+    "lesson_id": "004",
+    "trigger_word": "vir",
+    "trigger_card_number": 113,
+    "title": "LESSON 4: NOUNS OUT OF LINE",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "Most nouns wear their family plainly.",
+          "A few do not, and the cue is where the",
+          "warning sits.",
+          "",
+          "vir is cued m., -rī. Nothing on it ends",
+          "-us, but the genitive virī puts it in",
+          "the second declension all the same. ager",
+          "and puer go with it, and in ager the e",
+          "drops out: ager, agrī.",
+          "",
+          "Gender can surprise. collēga and poēta",
+          "end in -a and take -ae like puella, yet",
+          "they are men: the cue reads m., -ae.",
+          "humus goes the other way, cued f., -ī —",
+          "second declension, feminine.",
+          "",
+          "A noun in -ium doubles its i: convīvium",
+          "is cued n., -iī."
+        ]
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "Some nouns have no singular at all. The",
+          "cue then gives the genitive PLURAL, and",
+          "the word is read as a plural always:",
+          "",
+          "  n., -um     castra, castrōrum",
+          "  n., -um     arma, armōrum",
+          "  m., -um     līberī, līberōrum",
+          "  f., -ārum   īnsidiae, īnsidiārum",
+          "  f., -um     dīvitiae, dīvitiārum",
+          "",
+          "castra is one camp, not many; arma is",
+          "the gear a man fights in; līberī is the",
+          "children of a single house. Latin counts",
+          "each as a set, so the form stays plural",
+          "where English says one thing.",
+          "",
+          "Read -um and -ārum here as genitive",
+          "plurals, never as a singular ending."
+        ]
+      }
+    ]
+  },
+  {
     "lesson_id": "007",
     "trigger_word": "et",
     "trigger_card_number": 26,
@@ -415,7 +520,7 @@
     "pages": [
       {
         "page": 1,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
           "Five verbs turn up on nearly every page",
           "of Latin, and not one of them is",
@@ -439,7 +544,7 @@
       },
       {
         "page": 2,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
           "Nothing in fert announces ferō, and it",
           "is a short word to catch. Take each of",
@@ -457,6 +562,30 @@
           "",
           "Recognition only: knowing an odd shape",
           "belongs to a verb already in hand."
+        ]
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "Two verbs here are cued oddly, and both",
+          "shapes come back later.",
+          "",
+          "faciō is cued -iō, -ere. The infinitive",
+          "is third-conjugation facere, but the I",
+          "form ends -iō, and that i runs on",
+          "through the verb: facit, faciunt. capiō",
+          "and accipiō are built the same way.",
+          "",
+          "dō is cued dare, a whole infinitive. It",
+          "looks first-conjugation and nearly is,",
+          "but the a of dare is short, so the cue",
+          "prints the word instead of -āre. What is",
+          "built on it — circumdare — follows suit.",
+          "",
+          "A bare infinitive in a cue is not always",
+          "a deponent, then. The deponents all end",
+          "in -ī: sequī, hortārī, potīrī."
         ]
       }
     ]

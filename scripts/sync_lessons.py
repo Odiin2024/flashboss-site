@@ -18,7 +18,16 @@ MAP = [("English/core",               "data/english/core"),
        ("English_Extensions/pareto1", "data/english/p1"),
        ("English_Extensions/pareto2", "data/english/p2"),
        ("Latin/core",                 "data/latin"),
-       ("Latin/pareto1",              "data/latin")]
+       ("Latin/pareto1",              "data/latin"),
+       # The four Roots packs (added 2026-09-19 with the rebuild: new lessons, lesson
+       # 000 GETTING STARTED, lessons_mandatory). They ship the English lesson and its
+       # _gb twin only — no _de/_es/_ja/_zh, by the Roots immersion ruling, and the
+       # localized lesson pages know not to ask for one (lessons.<loc>.html passes
+       # LESSON_LOC for foreign packs only).
+       ("German_Roots/core",           "data/english/gr"),
+       ("Greek_Roots/core",            "data/english/gkr"),
+       ("Norman_Roots/core",           "data/english/nr"),
+       ("Latin_Roots/core",            "data/english/lr")]
 
 def main():
     total = 0

@@ -1,5 +1,143 @@
 [
   {
+    "lesson_id": "005",
+    "trigger_word": "commūnis",
+    "trigger_card_number": 34,
+    "title": "第5課:-us で終わらない形容詞",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "第1課の形容詞は三つの語尾 -us, -a, -um",
+          "を告げます。性ごとに一つです。第二の族",
+          "は二つしか告げません:",
+          "",
+          "  -is, -e     commūnis, commūne",
+          "",
+          "-is の形が男性と女性を兼ね、-e が中性",
+          "です:",
+          "",
+          "  commūnis mūrus,  commūnis causa,",
+          "  commūne bellum",
+          "",
+          "これらは第三変化の形容詞で、cōnsul や",
+          "urbs と同じ族です。omnis, fortis,",
+          "gravis も同じ仲間です。",
+          "",
+          "手がかりの語尾が二つならこの族、",
+          "三つなら第1課の族です。"
+        ]
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "三つ目の形は、三つの性すべてに主格が",
+          "一つしかありません。そこには語幹が",
+          "現れないので、手がかりは語をまるごと",
+          "印刷し、属格を添えます:",
+          "",
+          "  vetus, -eris    vetus, veteris",
+          "  audāx, -ācis    audāx, audācis",
+          "  memor, -is      memor, memoris",
+          "  dīves, -itis    dīves, dīvitis",
+          "",
+          "pār, paris、atrōx, -ōcis、expers, -tis、",
+          "fēlīx, -īcis も同じ書き方です。",
+          "",
+          "一つの形が三つの性すべてを覆います:",
+          "vetus mīles, vetus urbs, vetus bellum。",
+          "語幹が現れるのは属格です — veter-,",
+          "audāc-, memor-, dīvit- — ほかの語尾は",
+          "すべてその上に築かれます。"
+        ]
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "語尾だけで足りるときは、手がかりは語を",
+          "省き、代わりに二つの語尾を",
+          "印刷します:",
+          "",
+          "  -ēns, -entis    ingēns, ingentis",
+          "  -ōx, -ōcis      ferōx, ferōcis",
+          "  -ēs, -ētis      locuplēs, locuplētis",
+          "  -ex, -icis      duplex, duplicis",
+          "  -eps,-ipitis    anceps, ancipitis",
+          "  -er, -eris      pauper, pauperis",
+          "",
+          "これは2ページ目と同じ一語尾の族で、",
+          "印刷が短いだけです。",
+          "",
+          "また二つの語尾ですが、-is, -e ではあり",
+          "ません。どの性にも同じ一つの形として",
+          "読み、語幹は隣に印刷された属格から",
+          "取ってください。"
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": "006",
+    "trigger_word": "singulī",
+    "trigger_card_number": 121,
+    "title": "第6課:形容詞の手がかり続き",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "第1課の族の形容詞のうち、-us をまったく",
+          "持たないものがあります。-er で終わり、",
+          "手がかりもその -er を残します:",
+          "",
+          "  -er, -a, -um    līber, lībera, līberum",
+          "                  miser, misera, miserum",
+          "                  pulcher, pulchra",
+          "",
+          "多くは語尾が続くと e が落ちます —",
+          "pulchera ではなく pulchra です。手がかり",
+          "が示す必要のあるときは語幹を印刷します。",
+          "-gra, -grum は integer, integra,",
+          "integrum です。",
+          "",
+          "-er の形容詞のうち数語は第三変化に属し、",
+          "そこでは三つの語尾を告げます。",
+          "-er, -is, -e は ācer, ācris, ācre で、",
+          "celer と volucer も同じです。"
+        ]
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "最後に三つの形。どれも稀で、名がつけば",
+          "どれもやさしいものです。",
+          "",
+          "単数のない形容詞は複数の語尾を告げます。",
+          "-ī, -ae, -a は singulī, -ae, -a",
+          "「めいめい一つずつ」、-ēs, -a は",
+          "complūrēs, complūra「いくつもの」。",
+          "",
+          "indecl. は語がまったく変化しない印です。",
+          "necesse はどの位置でも necesse のまま。",
+          "",
+          "比較級は二つの語尾を告げます。男性・女性",
+          "に一つ、中性に一つ。多くは -ior, -ius で、",
+          "propior, propius「より近い」。",
+          "少数は -or だけで終わり、prior, prius の",
+          "手がかりは -or, -us です。",
+          "",
+          "どちらも第三変化で、属格は priōris。"
+        ]
+      }
+    ]
+  },
+  {
     "lesson_id": "010",
     "trigger_word": "sequor",
     "trigger_card_number": 26,
@@ -180,6 +318,7 @@
         "content": [
           "第1課から第4課までの音を、ここに一度",
           "集めます。最後に一つだけ新顔があります。",
+          "",
           "",
           "c と g は、どの母音の前でも硬いまま",
           "です:",

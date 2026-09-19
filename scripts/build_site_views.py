@@ -45,7 +45,35 @@ SETS = [("English", "Core",     "English/core",               "data/english/core
         ("English", "Pareto 2", "English_Extensions/pareto2", "data/english/p2/CORE_FINAL.json",     2000, "eng"),
         # Latin ships no CORE_FINAL either (same depot ruling). Core + Pareto 1 only.
         ("Latin",   "Core",     "Latin/core",                 "data/latin/CORE_FINAL.json",          0,    "lang"),
-        ("Latin",   "Pareto 1", "Latin/pareto1",              "data/latin/PARETO1_FINAL.json",       1000, "lang")]
+        ("Latin",   "Pareto 1", "Latin/pareto1",              "data/latin/PARETO1_FINAL.json",       1000, "lang"),
+        # The four Roots packs. Rebuilt upstream 2026-09-19 (new clusters, renumbered
+        # folders, new lessons, a new Notes line carrying the twin/Related labels), and
+        # the site's copies were 2026-08-28 artifacts. mode "roots": the pair is
+        # TargetWord <-> definition (knight's ExampleTranslation), and pos/syn/ant are
+        # lifted out of Notes here rather than re-parsed in the browser — the word-list
+        # page prints them on the printed card's front face and its own Notes fallback
+        # cannot see a Notes field the lean view does not carry.
+        ("English", "German Roots", "German_Roots/core",        "data/english/gr/CORE_FINAL.json",     0,    "roots"),
+        ("English", "Greek Roots",  "Greek_Roots/core",         "data/english/gkr/CORE_FINAL.json",    0,    "roots"),
+        ("English", "Norman Roots", "Norman_Roots/core",        "data/english/nr/CORE_FINAL.json",     0,    "roots"),
+        ("English", "Latin Roots",  "Latin_Roots/core",         "data/english/lr/CORE_FINAL.json",     0,    "roots")]
+
+# Notes shape on a Roots card, one line:
+#   "noun | Old English freodom (...). Norman twin: liberty, ... syn: independence | ant: captivity | Related: free"
+# The part of speech is everything before the first pipe. "Norman twin:", "Germanic
+# twin:", "Latin twin:" and "Related:" are the 2026-09 additions; none is mistaken for a
+# pos (anchored at the start) or for syn/ant (anchored to their own label).
+#
+# "phrasal verb" is two words (188 German Roots cards), so one space is allowed inside.
+POS_RE = re.compile(r'^\s*([a-z][a-z/]*(?: [a-z]+)?)\s*\|')
+
+# "syn:" is NOT pipe-anchored — it ends the etymology sentence ("... = sight carried
+# from a distance. syn: TV"), while "ant:" and "Related:" do open their own pipe run.
+# So match the label wherever it stands and stop at the next pipe. Anchoring syn to a
+# pipe cost every synonym in the first run of this builder.
+def _labelled(notes, label):
+    m = re.search(r'\b' + label + r':\s*([^|]+)', notes)
+    return m.group(1).strip().rstrip('.') if m else ""
 
 def ck(p):
     m = re.search(r'cluster(\d+)_(\d+)', os.path.basename(p))
@@ -62,6 +90,20 @@ def walk(setdir):
                 out.append({"cluster_id": f"T{t}-C{c}", "tier": t, "slug": s,
                             "raw": json.load(open(f, encoding="utf-8"))})
     return out
+
+def roots_card(raw, n):
+    """One Roots card: the definition IS the gloss (the immersion ruling), with the
+    part of speech and the synonym/antonym runs pulled out of Notes."""
+    o = {"n": n, "TargetWord": raw["TargetWord"],
+         "definition": raw.get("ExampleTranslation", "")}
+    notes = raw.get("Notes", "") or ""
+    m = POS_RE.match(notes)
+    if m: o["pos"] = m.group(1)
+    for k in ("syn", "ant"):
+        v = _labelled(notes, k)
+        if v: o[k] = v
+    if raw.get("TriggerLesson"): o["TriggerLesson"] = raw["TriggerLesson"]
+    return o
 
 def card(raw, n, sp, mode):
     """One lean card. English packs carry their spelling twin inline.
@@ -96,7 +138,9 @@ def serialize(language, setlabel, total, offset, clusters, sp, mode):
         out.append('      "cards": [')
         lines = []
         for r in cl["raw"]:
-            n += 1; lines.append(json.dumps(card(r, n, sp, mode), ensure_ascii=False))
+            n += 1
+            obj = roots_card(r, n) if mode == "roots" else card(r, n, sp, mode)
+            lines.append(json.dumps(obj, ensure_ascii=False))
         for li, ln in enumerate(lines):
             out.append(f"        {ln}" + ("," if li < len(lines) - 1 else ""))
         out.append("      ]")

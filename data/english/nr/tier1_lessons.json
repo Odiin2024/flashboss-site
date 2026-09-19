@@ -1,36 +1,378 @@
 [
   {
-    "lesson_id": "001",
+    "lesson_id": "000",
     "trigger_word": "catch",
     "trigger_card_number": 1,
-    "title": "LESSON 1: THAT'S FRENCH?",
-    "header_color": "cyan",
+    "title": "GETTING STARTED",
+    "header_color": "magenta",
+    "announce": false,
+    "pages": [
+      {
+        "once": true,
+        "title": "WELCOME TO NORMAN ROOTS",
+        "content": [
+          "Catch. Carry. Change. Uncle. Cousin. Flower.",
+          "River. City. Peace. These feel like the most",
+          "English words in English. They are French:",
+          "every one arrived with the Normans in 1066",
+          "and quietly refused to leave.",
+          "",
+          "For three hundred years the court spoke",
+          "French and the farm spoke English. When the",
+          "two fused, English kept both: begin and",
+          "commence, ask and demand, cow and beef,",
+          "house and mansion. One word from each layer,",
+          "side by side, never quite the same.",
+          "",
+          "This pack teaches the French layer, a",
+          "thousand words, and on every card the two",
+          "words that stand beside it. You need no",
+          "French. You need to notice."
+        ],
+        "pronunciation": "Welcome to Norman Roots."
+      },
+      {
+        "once": true,
+        "title": "HOW A CARD WORKS",
+        "content": [
+          "The front shows a word. Press a key and the",
+          "card opens in stages: a sentence that uses",
+          "it, its DEFINITION, a second example built",
+          "on a TWIN of the word, and, on 8, the notes.",
+          "",
+          "The notes name where the word came from and",
+          "its two neighbours: the GERMANIC twin, the",
+          "plain English word that means the same",
+          "(catch beside grab), and the LATIN twin,",
+          "the same Latin root taken straight from",
+          "Latin (catch beside capture). The Norman",
+          "word is the bridge between the two.",
+          "",
+          "Rate the card 0 to 5 when it is open. The",
+          "boss fight asks the definition and offers",
+          "eight words; the synonyms and antonyms in",
+          "the notes are the clues you take with you."
+        ]
+      },
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "TIER 1 is the everyday French: the verbs,",
+          "the things, the people, the wide world and",
+          "the plain adjectives that nobody thinks of",
+          "as French at all.",
+          "",
+          "TIER 2 is the Norman domains: law, the",
+          "court, war, the kitchen, the church, the",
+          "house. TIER 3 is the register shift, where",
+          "commence outranks begin. TIER 4 is the",
+          "machinery: the suffixes and the sound splits",
+          "(ward and guard). TIER 5 is the French that",
+          "hides in plain sight, and the French that",
+          "never hid at all.",
+          "",
+          "Every cluster opens with a short lesson",
+          "naming its words.",
+          "",
+          "THE NEXT 23 CARDS: catch, carry, change."
+        ],
+        "pronunciation": "Lesson zero."
+      }
+    ]
+  },
+  {
+    "lesson_id": "001",
+    "trigger_word": "arrive",
+    "trigger_card_number": 24,
+    "title": "LESSON 1: EVERYDAY VERBS",
+    "header_color": "magenta",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "Catch. Carry. Change. Uncle. Cousin.",
-          "Flower. River. City. Honour. Peace.",
+          "The second set of everyday verbs. Not one",
+          "of them looks French, and every one is.",
+          "Each came in on top of a plain English",
+          "word that was already doing the work.",
           "",
-          "These feel like the most English words",
-          "in English. They aren't. Every one of",
-          "them arrived with the Normans in 1066",
-          "and quietly refused to leave.",
+          "  arrive    beside the older come",
+          "  finish    beside the older end",
+          "  demand    beside the plain ask",
+          "  repair    beside stitch",
           "",
-          "If French, Spanish, Italian or",
-          "Portuguese is your first language,",
-          "half of Tier 1 already belongs to you.",
-          "The words will feel like coming home.",
+          "The French word is usually the longer",
+          "one, and the longer one is the one that",
+          "sounds careful. Ask and demand are the",
+          "same act with different manners.",
           "",
-          "But the real lesson lives in the Notes.",
-          "That's where the Germanic half of",
-          "English waits — the older, plainer",
-          "words that native speakers reach for",
-          "without thinking."
+          "THE NEXT 22 CARDS: verbs of every day."
         ],
-        "pronunciation": "Lesson 1",
-        "pronunciation_mappings": {}
+        "pronunciation": "Lesson 1"
+      }
+    ]
+  },
+  {
+    "lesson_id": "002",
+    "trigger_word": "age",
+    "trigger_card_number": 46,
+    "title": "LESSON 2: THE NAMES OF THINGS",
+    "header_color": "magenta",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "Nouns so ordinary that nothing marks them",
+          "out: the air, a chair, a page, a plate.",
+          "Every one is French, and every one has an",
+          "English word still standing beside it.",
+          "",
+          "  art      beside the older craft",
+          "  chair    beside the plain seat",
+          "  page     beside the older leaf",
+          "  plate    beside the older dish",
+          "",
+          "Craft kept the skill in it and art took",
+          "the beauty. A leaf belongs to a tree and",
+          "to a book alike; page took the book and",
+          "left the tree alone.",
+          "",
+          "THE NEXT 22 CARDS: the names of things."
+        ],
+        "pronunciation": "Lesson 2"
+      }
+    ]
+  },
+  {
+    "lesson_id": "003",
+    "trigger_word": "point",
+    "trigger_card_number": 68,
+    "title": "LESSON 3: TRADE AND RECORD",
+    "header_color": "magenta",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "Weights, prices, letters, maps. These are",
+          "the words of trade and of paperwork, and",
+          "all of them came in from French.",
+          "",
+          "  price     beside the older worth",
+          "  table     beside the older board",
+          "  letter    beside the older writ",
+          "  route     beside the plain way",
+          "",
+          "A board is still the plank a table is",
+          "made of, and a man still boards with the",
+          "family whose table he eats at. The older",
+          "word survives in the corners of the new.",
+          "",
+          "THE NEXT 24 CARDS: trade and record."
+        ],
+        "pronunciation": "Lesson 3"
+      }
+    ]
+  },
+  {
+    "lesson_id": "004",
+    "trigger_word": "aunt",
+    "trigger_card_number": 92,
+    "title": "LESSON 4: NAMES FOR PEOPLE",
+    "header_color": "magenta",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "Mother, father, brother and sister are",
+          "English to the bone. Aunt, uncle and",
+          "cousin came in with the Normans. The",
+          "house inside stayed English; the family",
+          "beyond it took French names, and so did",
+          "most of the people met outside the door.",
+          "",
+          "  aunt   beside the plain kinswoman",
+          "  uncle  beside the plain kinsman",
+          "  enemy  beside the older foe",
+          "  people beside the older folk",
+          "",
+          "Foe has gone stiff and poetic and enemy",
+          "does the plain daily work, which is the",
+          "reverse of the usual arrangement.",
+          "",
+          "THE NEXT 23 CARDS: names for people."
+        ],
+        "pronunciation": "Lesson 4"
+      }
+    ]
+  },
+  {
+    "lesson_id": "005",
+    "trigger_word": "marriage",
+    "trigger_card_number": 115,
+    "title": "LESSON 5: THE WORLD OUTSIDE",
+    "header_color": "magenta",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "Rivers, flowers, cities, forests. The",
+          "land was English and half the words for",
+          "it are French: the Normans named the",
+          "wide world over the top of the old",
+          "names, and both sets are still in use.",
+          "",
+          "  river     beside the older stream",
+          "  city      beside the older town",
+          "  flower    beside the older bloom",
+          "  forest    beside the older wood",
+          "",
+          "A forest was not simply trees. It was",
+          "land kept for the king's hunting under",
+          "its own French law, while a wood was",
+          "only a wood.",
+          "",
+          "THE NEXT 22 CARDS: the world outside."
+        ],
+        "pronunciation": "Lesson 5"
+      }
+    ]
+  },
+  {
+    "lesson_id": "006",
+    "trigger_word": "able",
+    "trigger_card_number": 137,
+    "title": "LESSON 6: PLAIN ADJECTIVES",
+    "header_color": "magenta",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "Adjectives that feel as English as any:",
+          "large, clear, safe, plain. All French,",
+          "each with an older word beside it.",
+          "",
+          "  large     beside the blunt big",
+          "  brief     beside the plain short",
+          "  safe      beside the older sound",
+          "  tender    beside the plain soft",
+          "",
+          "Safe and sound is the pair caught in one",
+          "phrase, the French word and the English",
+          "word saying it twice over.",
+          "",
+          "Very is French as well. It once meant",
+          "true, and it has crowded out the old",
+          "full, which survives in full well.",
+          "",
+          "THE NEXT 22 CARDS: plain adjectives."
+        ],
+        "pronunciation": "Lesson 6"
+      }
+    ]
+  },
+  {
+    "lesson_id": "007",
+    "trigger_word": "real",
+    "trigger_card_number": 159,
+    "title": "LESSON 7: THE WORD FOR SECOND",
+    "header_color": "magenta",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "More of the plain adjectives, and one of",
+          "them pushed a native word out of its job.",
+          "",
+          "  real    beside the older true",
+          "  fine    beside the plain good",
+          "  just    beside the older fair",
+          "  vast    beside the older wide",
+          "",
+          "Old English counted first, other, third.",
+          "Second is French, and it took the place",
+          "of other so completely that other now",
+          "means only the one that is left.",
+          "",
+          "Good and fine are not one offer: a fine",
+          "meal is a good meal with a price on it.",
+          "That is the French word's usual work.",
+          "",
+          "THE NEXT 22 CARDS: more adjectives."
+        ],
+        "pronunciation": "Lesson 7"
+      }
+    ]
+  },
+  {
+    "lesson_id": "008",
+    "trigger_word": "action",
+    "trigger_card_number": 181,
+    "title": "LESSON 8: THINGS YOU CANNOT SEE",
+    "header_color": "magenta",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "Here the French layer took the field",
+          "almost whole. Beauty, danger, justice,",
+          "mercy, honor: the words for what cannot",
+          "be touched are nearly all French.",
+          "",
+          "  joy      beside the older bliss",
+          "  peace    beside the older rest",
+          "  mercy    beside the older ruth",
+          "  force    beside the older might",
+          "",
+          "The English words did not all survive.",
+          "Ruth, the native word for mercy, is all",
+          "but gone. It still does its work inside",
+          "ruthless, where nobody notices it.",
+          "",
+          "THE NEXT 20 CARDS: things you cannot see."
+        ],
+        "pronunciation": "Lesson 8"
+      }
+    ]
+  },
+  {
+    "lesson_id": "009",
+    "trigger_word": "pleasure",
+    "trigger_card_number": 201,
+    "title": "LESSON 9: PLEASURE AND DEBT",
+    "header_color": "magenta",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "The second run of abstracts: what is",
+          "felt, what is owed and what is risked.",
+          "",
+          "  rage    beside the older wrath",
+          "  pain    beside the older ache",
+          "  wage    beside the older hire",
+          "  debt    beside the older score",
+          "",
+          "Debt arrived from French as dette. The",
+          "b was put in later by scribes who knew",
+          "the Latin debitum and wanted it seen.",
+          "Nobody has ever pronounced it.",
+          "",
+          "Law came in from Old Norse and rule from",
+          "French. Each set of newcomers left",
+          "English a word for what is laid down.",
+          "",
+          "THE NEXT 23 CARDS: pleasure and debt."
+        ],
+        "pronunciation": "Lesson 9"
       }
     ]
   }
