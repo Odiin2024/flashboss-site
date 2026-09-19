@@ -451,7 +451,10 @@ function fillSets(){
   setSel.innerHTML = setsFor(packSel.value).map(s=>`<option value="${s}">${s}</option>`).join('');
 }
 
-function clusterLabel(c){ return humanize(c.slug) || c.cluster_id || 'Cluster'; }
+// The authored cluster name first (build_site_views emits it from the pack's
+  // own cluster_names*.json), then the English name, then the humanised folder
+  // slug exactly as before — so the label can never be worse than it was.
+  function clusterLabel(c){ return c.name_ja || c.name || humanize(c.slug) || c.cluster_id || 'Cluster'; }
 function tcPrefix(c){ const m=/^T(\d+)-C(\d+)$/.exec(c.cluster_id||''); return m?`${m[1]}-${m[2]}`:(c.cluster_id||''); }
 function clusterTitle(c){ const p=tcPrefix(c); return (p?p+' ':'')+clusterLabel(c); }
 

@@ -5,7 +5,7 @@
   "offset": 0,
   "clusters": [
     {
-      "cluster_id": "T1-C1", "tier": 1, "slug": "cluster1_1_famous_latin_twenty",
+      "cluster_id": "T1-C1", "tier": 1, "slug": "cluster1_1_famous_latin_twenty", "name": "The famous twenty", "name_de": "Die berühmten Zwanzig", "name_es": "Los veinte famosos", "name_ja": "有名な二十語", "name_zh": "著名二十词", "name_ru": "Знаменитые двадцать",
       "cards": [
         {"n": 1, "TargetWord": "aquarium", "definition": "a glass tank in which fish and other water creatures are kept", "pos": "noun", "syn": "fish tank", "TriggerLesson": "000"},
         {"n": 2, "TargetWord": "submarine", "definition": "a vessel that can travel underwater, especially a naval one", "pos": "noun", "syn": "sub, U-boat"},
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C2", "tier": 1, "slug": "cluster1_2_everyday_latin_words",
+      "cluster_id": "T1-C2", "tier": 1, "slug": "cluster1_2_everyday_latin_words", "name": "Everyday Latin words", "name_de": "Lateinische Alltagswörter", "name_es": "Latín de cada día", "name_ja": "日常のラテン語", "name_zh": "日常拉丁词", "name_ru": "Латынь на каждый день",
       "cards": [
         {"n": 21, "TargetWord": "computer", "definition": "an electronic machine that stores and processes information", "pos": "noun", "syn": "PC, machine", "TriggerLesson": "001"},
         {"n": 22, "TargetWord": "video", "definition": "a recording of moving images, or the technology for it", "pos": "noun", "syn": "film, footage, clip"},
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C3", "tier": 1, "slug": "cluster1_3_prefixes",
+      "cluster_id": "T1-C3", "tier": 1, "slug": "cluster1_3_prefixes", "name": "Prefixes", "name_de": "Präfixe", "name_es": "Prefijos", "name_ja": "接頭辞", "name_zh": "前缀", "name_ru": "Префиксы",
       "cards": [
         {"n": 41, "TargetWord": "ex-", "definition": "'out of' or 'away from,' indicating movement outward or removal", "pos": "prefix", "TriggerLesson": "002"},
         {"n": 42, "TargetWord": "in-", "definition": "'into' or 'not,' indicating either inward movement or negation", "pos": "prefix"},
@@ -80,7 +80,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C4", "tier": 1, "slug": "cluster1_4_root_port_mit_carry_send",
+      "cluster_id": "T1-C4", "tier": 1, "slug": "cluster1_4_root_port_mit_carry_send", "name": "Port, mit — carry, send", "name_de": "Port, mit — tragen, senden", "name_es": "Port, mit — llevar, enviar", "name_ja": "Port, mit — 運ぶ・送る", "name_zh": "Port, mit — 携带、发送", "name_ru": "Port, mit — нести, слать",
       "cards": [
         {"n": 61, "TargetWord": "transport", "definition": "to carry something from one place to another", "pos": "verb", "syn": "convey, transfer, ship", "ant": "receive, keep", "TriggerLesson": "003"},
         {"n": 62, "TargetWord": "export", "definition": "to send goods or services to another country for sale", "pos": "verb", "syn": "ship, sell abroad", "ant": "import"},
@@ -104,7 +104,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C5", "tier": 1, "slug": "cluster1_5_root_dict_scrib_say_write",
+      "cluster_id": "T1-C5", "tier": 1, "slug": "cluster1_5_root_dict_scrib_say_write", "name": "Dict, scrib — say, write", "name_de": "Dict, scrib — sagen, schreiben", "name_es": "Dict, scrib — decir, escribir", "name_ja": "Dict, scrib — 言う・書く", "name_zh": "Dict, scrib — 说、写", "name_ru": "Dict, scrib — говорить, писать",
       "cards": [
         {"n": 80, "TargetWord": "predict", "definition": "to say in advance what will happen", "pos": "verb", "syn": "forecast, foresee, anticipate", "ant": "recall, recollect", "TriggerLesson": "004"},
         {"n": 81, "TargetWord": "dictate", "definition": "to say aloud for someone else to write down, or to give authoritative orders", "pos": "verb", "syn": "command, decree, prescribe", "ant": "obey, follow"},
@@ -127,7 +127,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C6", "tier": 1, "slug": "cluster1_6_root_duc_tract_lead_pull",
+      "cluster_id": "T1-C6", "tier": 1, "slug": "cluster1_6_root_duc_tract_lead_pull", "name": "Duc, tract — lead, pull", "name_de": "Duc, tract — führen, ziehen", "name_es": "Duc, tract — conducir, tirar", "name_ja": "Duc, tract — 導く・引く", "name_zh": "Duc, tract — 引导、拉", "name_ru": "Duc, tract — вести, тянуть",
       "cards": [
         {"n": 98, "TargetWord": "produce", "definition": "to make, create, or bring into existence", "pos": "verb", "syn": "create, generate, manufacture", "ant": "consume, destroy", "TriggerLesson": "005"},
         {"n": 99, "TargetWord": "reduce", "definition": "to make something smaller in size, amount, or degree", "pos": "verb", "syn": "diminish, decrease, lessen", "ant": "increase, expand"},
@@ -150,7 +150,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C7", "tier": 1, "slug": "cluster1_7_suffixes",
+      "cluster_id": "T1-C7", "tier": 1, "slug": "cluster1_7_suffixes", "name": "Suffixes", "name_de": "Suffixe", "name_es": "Sufijos", "name_ja": "接尾辞", "name_zh": "后缀", "name_ru": "Суффиксы",
       "cards": [
         {"n": 116, "TargetWord": "-ion", "definition": "Turns verbs into nouns, indicating the act, process, or result of an action", "pos": "suffix", "TriggerLesson": "006"},
         {"n": 117, "TargetWord": "-ment", "definition": "Turns verbs into nouns, indicating the result, means, or state of an action", "pos": "suffix"},
@@ -174,7 +174,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C1", "tier": 2, "slug": "cluster2_1_root_spec_vide_see",
+      "cluster_id": "T2-C1", "tier": 2, "slug": "cluster2_1_root_spec_vide_see", "name": "Spec, vide — see", "name_de": "Spec, vide — sehen", "name_es": "Spec, vide — ver", "name_ja": "Spec, vide — 見る", "name_zh": "Spec, vide — 看", "name_ru": "Spec, vide — видеть",
       "cards": [
         {"n": 135, "TargetWord": "inspect", "definition": "to look at something closely and carefully, especially to assess its condition", "pos": "verb", "syn": "examine, scrutinize, survey", "ant": "ignore, overlook", "TriggerLesson": "007"},
         {"n": 136, "TargetWord": "respect", "definition": "a feeling of admiration for someone based on their qualities or achievements", "pos": "noun", "syn": "esteem, regard, admiration", "ant": "contempt, disrespect"},
@@ -197,7 +197,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C2", "tier": 2, "slug": "cluster2_2_root_fract_rupt_break",
+      "cluster_id": "T2-C2", "tier": 2, "slug": "cluster2_2_root_fract_rupt_break", "name": "Fract, rupt — break", "name_de": "Fract, rupt — brechen", "name_es": "Fract, rupt — romper", "name_ja": "Fract, rupt — 壊す", "name_zh": "Fract, rupt — 打破", "name_ru": "Fract, rupt — ломать",
       "cards": [
         {"n": 153, "TargetWord": "fracture", "definition": "a crack or break, especially in a bone or hard material", "pos": "noun", "syn": "break, crack, split", "ant": "repair, mend", "TriggerLesson": "008"},
         {"n": 154, "TargetWord": "fragment", "definition": "a small piece broken off from something larger", "pos": "noun", "syn": "piece, shard, remnant", "ant": "whole, entirety"},
@@ -218,7 +218,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C3", "tier": 2, "slug": "cluster2_3_root_grad_cede_step_go",
+      "cluster_id": "T2-C3", "tier": 2, "slug": "cluster2_3_root_grad_cede_step_go", "name": "Grad, cede — step, go", "name_de": "Grad, cede — Schritt, gehen", "name_es": "Grad, cede — paso, ir", "name_ja": "Grad, cede — 歩む・行く", "name_zh": "Grad, cede — 步、行", "name_ru": "Grad, cede — шаг, идти",
       "cards": [
         {"n": 169, "TargetWord": "progress", "definition": "forward or onward movement toward a destination or goal", "pos": "noun", "syn": "advance, headway, development", "ant": "regression, stagnation", "TriggerLesson": "009"},
         {"n": 170, "TargetWord": "regress", "definition": "to return to a less developed or earlier state", "pos": "verb", "syn": "revert, deteriorate, decline", "ant": "progress, advance"},
@@ -240,7 +240,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C4", "tier": 2, "slug": "cluster2_4_root_pon_pend_place_hang",
+      "cluster_id": "T2-C4", "tier": 2, "slug": "cluster2_4_root_pon_pend_place_hang", "name": "Pon, pend — place, hang", "name_de": "Pon, pend — setzen, hängen", "name_es": "Pon, pend — poner, colgar", "name_ja": "Pon, pend — 置く・掛ける", "name_zh": "Pon, pend — 放置、悬挂", "name_ru": "Pon, pend — класть, висеть",
       "cards": [
         {"n": 186, "TargetWord": "compose", "definition": "to create a work of music, writing, or art by arranging elements together", "pos": "verb", "syn": "create, write, construct", "ant": "dismantle, destroy", "TriggerLesson": "010"},
         {"n": 187, "TargetWord": "depose", "definition": "to remove someone from power, especially a ruler or official", "pos": "verb", "syn": "overthrow, unseat, topple", "ant": "install, enthrone"},
@@ -264,7 +264,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C5", "tier": 2, "slug": "cluster2_5_root_vert_flect_turn_bend",
+      "cluster_id": "T2-C5", "tier": 2, "slug": "cluster2_5_root_vert_flect_turn_bend", "name": "Vert, flect — turn, bend", "name_de": "Vert, flect — drehen, biegen", "name_es": "Vert, flect — girar, doblar", "name_ja": "Vert, flect — 回す・曲げる", "name_zh": "Vert, flect — 转、弯", "name_ru": "Vert, flect — вертеть, гнуть",
       "cards": [
         {"n": 205, "TargetWord": "convert", "definition": "to change something from one form, purpose, or system to another", "pos": "verb", "syn": "transform, adapt, alter", "ant": "maintain, preserve", "TriggerLesson": "011"},
         {"n": 206, "TargetWord": "revert", "definition": "to return to a previous state, condition, or practice", "pos": "verb", "syn": "return, regress, relapse", "ant": "advance, progress"},
@@ -287,7 +287,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C1", "tier": 3, "slug": "cluster3_1_root_loqu_voc_speak_voice",
+      "cluster_id": "T3-C1", "tier": 3, "slug": "cluster3_1_root_loqu_voc_speak_voice", "name": "Loqu, voc — speak, voice", "name_de": "Loqu, voc — sprechen, Stimme", "name_es": "Loqu, voc — hablar, voz", "name_ja": "Loqu, voc — 話す・声", "name_zh": "Loqu, voc — 说话、声音", "name_ru": "Loqu, voc — говорить, голос",
       "cards": [
         {"n": 223, "TargetWord": "eloquent", "definition": "fluent, persuasive, and moving in speech or writing", "pos": "adj", "syn": "articulate, expressive, persuasive", "ant": "inarticulate, halting", "TriggerLesson": "012"},
         {"n": 224, "TargetWord": "loquacious", "definition": "tending to talk a great deal; extremely talkative", "pos": "adj", "syn": "talkative, garrulous, chatty", "ant": "taciturn, reticent"},
@@ -309,7 +309,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C2", "tier": 3, "slug": "cluster3_2_root_corp_capit_body_head",
+      "cluster_id": "T3-C2", "tier": 3, "slug": "cluster3_2_root_corp_capit_body_head", "name": "Corp, capit — body, head", "name_de": "Corp, capit — Körper, Kopf", "name_es": "Corp, capit — cuerpo, cabeza", "name_ja": "Corp, capit — 体・頭", "name_zh": "Corp, capit — 身体、头", "name_ru": "Corp, capit — тело, голова",
       "cards": [
         {"n": 240, "TargetWord": "corpse", "definition": "the dead body of a human being", "pos": "noun", "syn": "body, remains, cadaver", "TriggerLesson": "013"},
         {"n": 241, "TargetWord": "corporation", "definition": "a large company or group recognized in law as a single entity", "pos": "noun", "syn": "company, firm, enterprise", "definition_gb": "a large company or group recognised in law as a single entity"},
@@ -329,7 +329,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C3", "tier": 3, "slug": "cluster3_3_root_tend_solv_stretch_loosen",
+      "cluster_id": "T3-C3", "tier": 3, "slug": "cluster3_3_root_tend_solv_stretch_loosen", "name": "Tend, solv — stretch, loosen", "name_de": "Tend, solv — spannen, lösen", "name_es": "Tend, solv — tender, soltar", "name_ja": "Tend, solv — 張る・解く", "name_zh": "Tend, solv — 伸展、松开", "name_ru": "Tend, solv — тянуть, ослаблять",
       "cards": [
         {"n": 255, "TargetWord": "extend", "definition": "to make something larger in area, scope, or duration", "pos": "verb", "syn": "expand, prolong, widen", "ant": "shorten, reduce", "TriggerLesson": "014"},
         {"n": 256, "TargetWord": "intend", "definition": "to have a plan or purpose in mind when doing something", "pos": "verb", "syn": "plan, aim, mean", "ant": "neglect, ignore"},
@@ -352,7 +352,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C4", "tier": 3, "slug": "cluster3_4_root_temp_sequ_time_follow",
+      "cluster_id": "T3-C4", "tier": 3, "slug": "cluster3_4_root_temp_sequ_time_follow", "name": "Temp, sequ — time, follow", "name_de": "Temp, sequ — Zeit, folgen", "name_es": "Temp, sequ — tiempo, seguir", "name_ja": "Temp, sequ — 時・従う", "name_zh": "Temp, sequ — 时间、跟随", "name_ru": "Temp, sequ — время, следовать",
       "cards": [
         {"n": 273, "TargetWord": "temporary", "definition": "lasting for a limited period of time; not permanent", "pos": "adj", "syn": "short-lived, transient, provisional", "ant": "permanent, enduring", "TriggerLesson": "015"},
         {"n": 274, "TargetWord": "contemporary", "definition": "living or occurring at the same time, or belonging to the present period", "pos": "adj", "syn": "modern, current, coexisting", "ant": "ancient, outdated"},
@@ -372,7 +372,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C5", "tier": 3, "slug": "cluster3_5_root_fid_cred_faith_belief",
+      "cluster_id": "T3-C5", "tier": 3, "slug": "cluster3_5_root_fid_cred_faith_belief", "name": "Fid, cred — faith, belief", "name_de": "Fid, cred — Treue, Glaube", "name_es": "Fid, cred — fe, creer", "name_ja": "Fid, cred — 信頼・信じる", "name_zh": "Fid, cred — 信任、相信", "name_ru": "Fid, cred — вера, верить",
       "cards": [
         {"n": 288, "TargetWord": "confident", "definition": "feeling certain about one's own abilities or the truth of something", "pos": "adj", "syn": "assured, certain, self-possessed", "ant": "doubtful, insecure", "TriggerLesson": "016"},
         {"n": 289, "TargetWord": "fidelity", "definition": "faithfulness to a person, cause, or belief; accuracy in reproduction", "pos": "noun", "syn": "loyalty, devotion, accuracy", "ant": "betrayal"},
@@ -392,7 +392,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C1", "tier": 4, "slug": "cluster4_1_root_vit_mort_life_death",
+      "cluster_id": "T4-C1", "tier": 4, "slug": "cluster4_1_root_vit_mort_life_death", "name": "Vit, mort — life, death", "name_de": "Vit, mort — Leben, Tod", "name_es": "Vit, mort — vida, muerte", "name_ja": "Vit, mort — 生・死", "name_zh": "Vit, mort — 生、死", "name_ru": "Vit, mort — жизнь, смерть",
       "cards": [
         {"n": 303, "TargetWord": "vital", "definition": "absolutely necessary or essential; relating to life", "pos": "adj", "syn": "essential, crucial, indispensable", "ant": "unnecessary, trivial", "TriggerLesson": "017"},
         {"n": 304, "TargetWord": "vitality", "definition": "the state of being strong, active, and full of energy; the power to live and grow", "pos": "noun", "syn": "energy, vigor, liveliness", "ant": "lethargy, weakness"},
@@ -413,7 +413,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C2", "tier": 4, "slug": "cluster4_2_root_sent_tang_feel_touch",
+      "cluster_id": "T4-C2", "tier": 4, "slug": "cluster4_2_root_sent_tang_feel_touch", "name": "Sent, tang — feel, touch", "name_de": "Sent, tang — fühlen, berühren", "name_es": "Sent, tang — sentir, tocar", "name_ja": "Sent, tang — 感じる・触れる", "name_zh": "Sent, tang — 感觉、触摸", "name_ru": "Sent, tang — чувство, касание",
       "cards": [
         {"n": 319, "TargetWord": "sense", "definition": "a faculty by which the body perceives the external world, or a feeling that something is the case", "pos": "noun", "syn": "feeling, awareness, perception", "ant": "insensibility, obliviousness", "TriggerLesson": "018"},
         {"n": 320, "TargetWord": "sentiment", "definition": "a view or attitude based on feeling rather than reason, or a refined sensitivity", "pos": "noun", "syn": "feeling, opinion, attitude", "ant": "reason, logic"},
@@ -434,7 +434,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C3", "tier": 4, "slug": "cluster4_3_root_greg_junct_flock_join",
+      "cluster_id": "T4-C3", "tier": 4, "slug": "cluster4_3_root_greg_junct_flock_join", "name": "Greg, junct — flock, join", "name_de": "Greg, junct — Herde, fügen", "name_es": "Greg, junct — grey, unir", "name_ja": "Greg, junct — 群れ・結ぶ", "name_zh": "Greg, junct — 群、连接", "name_ru": "Greg, junct — стадо, соединять",
       "cards": [
         {"n": 335, "TargetWord": "congregate", "definition": "to gather together in a crowd or group", "pos": "verb", "syn": "assemble, gather, convene", "ant": "disperse, scatter", "TriggerLesson": "019"},
         {"n": 336, "TargetWord": "segregate", "definition": "to set apart from the rest; to separate people or things by group or category", "pos": "verb", "syn": "separate, isolate, divide", "ant": "integrate, unite"},
@@ -454,7 +454,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C4", "tier": 4, "slug": "cluster4_4_root_terr_hab_land_dwell",
+      "cluster_id": "T4-C4", "tier": 4, "slug": "cluster4_4_root_terr_hab_land_dwell", "name": "Terr, hab — land, dwell", "name_de": "Terr, hab — Land, wohnen", "name_es": "Terr, hab — tierra, habitar", "name_ja": "Terr, hab — 土地・住む", "name_zh": "Terr, hab — 土地、居住", "name_ru": "Terr, hab — земля, жить",
       "cards": [
         {"n": 350, "TargetWord": "territory", "definition": "an area of land under the jurisdiction of a ruler, state, or defined entity", "pos": "noun", "syn": "domain, region, land", "ant": "no man's land", "TriggerLesson": "020"},
         {"n": 351, "TargetWord": "terrain", "definition": "a stretch of land with regard to its physical features", "pos": "noun", "syn": "landscape, ground, topography"},
@@ -478,7 +478,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C5", "tier": 4, "slug": "cluster4_5_root_leg_nomen_read_name",
+      "cluster_id": "T4-C5", "tier": 4, "slug": "cluster4_5_root_leg_nomen_read_name", "name": "Leg, nomen — read, name", "name_de": "Leg, nomen — lesen, Name", "name_es": "Leg, nomen — leer, nombre", "name_ja": "Leg, nomen — 読む・名", "name_zh": "Leg, nomen — 读、名", "name_ru": "Leg, nomen — читать, имя",
       "cards": [
         {"n": 369, "TargetWord": "legal", "definition": "relating to the law, or permitted by law", "pos": "adj", "syn": "lawful, legitimate, judicial", "ant": "illegal, unlawful", "TriggerLesson": "021"},
         {"n": 370, "TargetWord": "legislate", "definition": "to make or enact laws", "pos": "verb", "syn": "enact, decree, pass"},
@@ -501,7 +501,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C6", "tier": 4, "slug": "cluster4_6_root_plic_fold",
+      "cluster_id": "T4-C6", "tier": 4, "slug": "cluster4_6_root_plic_fold", "name": "Plic — fold", "name_de": "Plic — falten", "name_es": "Plic — doblar", "name_ja": "Plic — 折る", "name_zh": "Plic — 折叠", "name_ru": "Plic — складывать",
       "cards": [
         {"n": 387, "TargetWord": "explicit", "definition": "stated clearly and in detail, leaving nothing to implication or guesswork", "pos": "adj", "syn": "clear, direct, unambiguous", "ant": "implicit, vague", "TriggerLesson": "022"},
         {"n": 388, "TargetWord": "implicit", "definition": "suggested but not directly expressed; understood without being stated", "pos": "adj", "syn": "implied, unspoken, tacit", "ant": "explicit, stated"},
@@ -527,7 +527,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C1", "tier": 5, "slug": "cluster5_1_root_string_bind",
+      "cluster_id": "T5-C1", "tier": 5, "slug": "cluster5_1_root_string_bind", "name": "String — bind", "name_de": "String — binden", "name_es": "String — atar", "name_ja": "String — 縛る", "name_zh": "String — 捆绑", "name_ru": "String — вязать",
       "cards": [
         {"n": 408, "TargetWord": "strict", "definition": "demanding that rules be obeyed; precise and exact", "pos": "adj", "syn": "rigorous, exacting, severe", "ant": "lenient, lax", "TriggerLesson": "023"},
         {"n": 409, "TargetWord": "restrict", "definition": "to put a limit on; to keep under control", "pos": "verb", "syn": "limit, constrain, confine", "ant": "expand, liberate"},
@@ -545,7 +545,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C2", "tier": 5, "slug": "cluster5_2_root_vent_come",
+      "cluster_id": "T5-C2", "tier": 5, "slug": "cluster5_2_root_vent_come", "name": "Vent — come", "name_de": "Vent — kommen", "name_es": "Vent — venir", "name_ja": "Vent — 来る", "name_zh": "Vent — 来", "name_ru": "Vent — приходить",
       "cards": [
         {"n": 421, "TargetWord": "convention", "definition": "a large formal assembly, or an accepted way of behaving or doing things", "pos": "noun", "syn": "assembly, custom, norm", "ant": "deviation, innovation", "TriggerLesson": "024"},
         {"n": 422, "TargetWord": "intervention", "definition": "the act of becoming involved in a situation to alter its course or outcome", "pos": "noun", "syn": "involvement, interference, mediation", "ant": "abstention"},
@@ -563,7 +563,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C3", "tier": 5, "slug": "cluster5_3_root_cap_take",
+      "cluster_id": "T5-C3", "tier": 5, "slug": "cluster5_3_root_cap_take", "name": "Cap — take", "name_de": "Cap — nehmen", "name_es": "Cap — tomar", "name_ja": "Cap — 取る", "name_zh": "Cap — 拿取", "name_ru": "Cap — брать",
       "cards": [
         {"n": 434, "TargetWord": "receive", "definition": "to be given, presented with, or paid something", "pos": "verb", "syn": "accept, obtain, acquire", "ant": "give, refuse", "TriggerLesson": "025"},
         {"n": 435, "TargetWord": "conceive", "definition": "to form an idea or plan in the mind, or to become pregnant", "pos": "verb", "syn": "imagine, devise, envision", "ant": "dismiss, ignore"},
@@ -581,7 +581,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C4", "tier": 5, "slug": "cluster5_4_root_cad_fall",
+      "cluster_id": "T5-C4", "tier": 5, "slug": "cluster5_4_root_cad_fall", "name": "Cad — fall", "name_de": "Cad — fallen", "name_es": "Cad — caer", "name_ja": "Cad — 落ちる", "name_zh": "Cad — 落下", "name_ru": "Cad — падать",
       "cards": [
         {"n": 447, "TargetWord": "accident", "definition": "an unfortunate event that happens unexpectedly and without deliberate cause", "pos": "noun", "syn": "mishap, chance, misfortune", "ant": "intention, design", "TriggerLesson": "026"},
         {"n": 448, "TargetWord": "coincidence", "definition": "a remarkable concurrence of events without apparent causal connection", "pos": "noun", "syn": "fluke, concurrence", "ant": "design, plan"},
@@ -599,7 +599,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C5", "tier": 5, "slug": "cluster5_5_root_pel_drive",
+      "cluster_id": "T5-C5", "tier": 5, "slug": "cluster5_5_root_pel_drive", "name": "Pel — drive", "name_de": "Pel — treiben", "name_es": "Pel — empujar", "name_ja": "Pel — 駆る", "name_zh": "Pel — 驱动", "name_ru": "Pel — гнать",
       "cards": [
         {"n": 460, "TargetWord": "compel", "definition": "to force or oblige someone to do something", "pos": "verb", "syn": "force, oblige, coerce", "ant": "discourage, deter", "TriggerLesson": "027"},
         {"n": 461, "TargetWord": "expel", "definition": "to force someone to leave a place, organization, or country", "pos": "verb", "syn": "eject, banish, oust", "ant": "admit, welcome", "definition_gb": "to force someone to leave a place, organisation, or country"},
@@ -617,7 +617,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C6", "tier": 5, "slug": "cluster5_6_root_gen_beget",
+      "cluster_id": "T5-C6", "tier": 5, "slug": "cluster5_6_root_gen_beget", "name": "Gen — beget", "name_de": "Gen — zeugen", "name_es": "Gen — engendrar", "name_ja": "Gen — 生む", "name_zh": "Gen — 生育", "name_ru": "Gen — рождать",
       "cards": [
         {"n": 473, "TargetWord": "generate", "definition": "to produce or create something, especially energy, ideas, or revenue", "pos": "verb", "syn": "produce, create, yield", "ant": "consume, destroy", "TriggerLesson": "028"},
         {"n": 474, "TargetWord": "regenerate", "definition": "to grow or be grown anew; to restore to a better condition", "pos": "verb", "syn": "revive, renew, restore", "ant": "destroy, neglect"},
@@ -636,7 +636,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C7", "tier": 5, "slug": "cluster5_7_root_par_prepare",
+      "cluster_id": "T5-C7", "tier": 5, "slug": "cluster5_7_root_par_prepare", "name": "Par — prepare", "name_de": "Par — bereiten", "name_es": "Par — preparar", "name_ja": "Par — 備える", "name_zh": "Par — 准备", "name_ru": "Par — готовить",
       "cards": [
         {"n": 487, "TargetWord": "prepare", "definition": "to make ready for use or consideration; to put things in order before an event", "pos": "verb", "syn": "arrange, equip, ready", "ant": "neglect, improvise", "TriggerLesson": "029"},
         {"n": 488, "TargetWord": "repair", "definition": "to restore something damaged or broken to good condition", "pos": "verb", "syn": "fix, restore, mend", "ant": "damage, destroy"},

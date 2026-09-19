@@ -5,7 +5,7 @@
   "offset": 0,
   "clusters": [
     {
-      "cluster_id": "T1-C1", "tier": 1, "slug": "cluster1_1_everyday_verbs_1",
+      "cluster_id": "T1-C1", "tier": 1, "slug": "cluster1_1_everyday_verbs_1", "name": "Catch, carry, change", "name_de": "Verben: fangen, tragen", "name_es": "Verbos: coger, llevar", "name_ja": "動詞：つかむ・運ぶ", "name_zh": "动词：抓住、携带", "name_ru": "Глаголы: ловить, нести",
       "cards": [
         {"n": 1, "TargetWord": "catch", "definition": "to grab or capture something in motion", "pos": "verb", "syn": "seize, snatch", "ant": "release", "TriggerLesson": "000"},
         {"n": 2, "TargetWord": "carry", "definition": "to hold something and move it somewhere", "pos": "verb", "syn": "transport, bear"},
@@ -33,7 +33,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C2", "tier": 1, "slug": "cluster1_2_everyday_verbs_2",
+      "cluster_id": "T1-C2", "tier": 1, "slug": "cluster1_2_everyday_verbs_2", "name": "Arrive, allow, finish", "name_de": "Verben: ankommen, erlauben", "name_es": "Verbos: llegar, permitir", "name_ja": "動詞：着く・許す", "name_zh": "动词：到达、允许", "name_ru": "Глаголы: прибыть, позволить",
       "cards": [
         {"n": 24, "TargetWord": "arrive", "definition": "to reach a place after traveling", "pos": "verb", "syn": "reach, land", "ant": "depart", "TriggerLesson": "001", "definition_gb": "to reach a place after travelling"},
         {"n": 25, "TargetWord": "allow", "definition": "to give permission for something to happen", "pos": "verb", "syn": "permit, grant"},
@@ -60,7 +60,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C3", "tier": 1, "slug": "cluster1_3_everyday_nouns_things_1",
+      "cluster_id": "T1-C3", "tier": 1, "slug": "cluster1_3_everyday_nouns_things_1", "name": "Air, art, chair, page", "name_de": "Dinge: Luft, Kunst, Stuhl", "name_es": "Cosas: aire, arte, silla", "name_ja": "物：空気・芸術・椅子", "name_zh": "物品：空气、艺术、椅子", "name_ru": "Вещи: воздух, стул, страница",
       "cards": [
         {"n": 46, "TargetWord": "age", "definition": "the length of time someone has lived", "pos": "noun", "syn": "era, lifetime", "TriggerLesson": "002"},
         {"n": 47, "TargetWord": "air", "definition": "the invisible mixture of gases that surrounds us", "pos": "noun", "syn": "breeze, atmosphere"},
@@ -87,7 +87,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C4", "tier": 1, "slug": "cluster1_4_everyday_nouns_things_2",
+      "cluster_id": "T1-C4", "tier": 1, "slug": "cluster1_4_everyday_nouns_things_2", "name": "Price, table, letter, map", "name_de": "Dinge: Preis, Tisch, Brief", "name_es": "Cosas: precio, mesa, carta", "name_ja": "物：値段・机・手紙", "name_zh": "物品：价格、桌子、信", "name_ru": "Вещи: цена, стол, письмо",
       "cards": [
         {"n": 68, "TargetWord": "point", "definition": "the sharp end of something; a particular moment or idea", "pos": "noun", "syn": "dot, mark", "TriggerLesson": "003"},
         {"n": 69, "TargetWord": "price", "definition": "the amount of money something costs", "pos": "noun", "syn": "cost, charge"},
@@ -116,7 +116,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C5", "tier": 1, "slug": "cluster1_5_everyday_nouns_people",
+      "cluster_id": "T1-C5", "tier": 1, "slug": "cluster1_5_everyday_nouns_people", "name": "Aunt, uncle, cousin, nurse", "name_de": "Leute: Tante, Onkel, Cousin", "name_es": "Gente: tía, tío, primo", "name_ja": "人：叔母・叔父・いとこ", "name_zh": "人物：姑妈、叔叔、表亲", "name_ru": "Люди: тётя, дядя, кузен",
       "cards": [
         {"n": 92, "TargetWord": "aunt", "definition": "the sister of your mother or father", "pos": "noun", "syn": "auntie, relative", "TriggerLesson": "004"},
         {"n": 93, "TargetWord": "cousin", "definition": "a child of your aunt or uncle", "pos": "noun", "syn": "relative, kinsman"},
@@ -144,7 +144,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C6", "tier": 1, "slug": "cluster1_6_everyday_nouns_world",
+      "cluster_id": "T1-C6", "tier": 1, "slug": "cluster1_6_everyday_nouns_world", "name": "River, flower, city, journey", "name_de": "Welt: Fluss, Blume, Stadt", "name_es": "Mundo: río, flor, ciudad", "name_ja": "世界：川・花・都市", "name_zh": "世界：河流、花、城市", "name_ru": "Мир: река, цветок, город",
       "cards": [
         {"n": 115, "TargetWord": "marriage", "definition": "the legal or formal union of two people as partners", "pos": "noun", "syn": "union, wedlock", "TriggerLesson": "005"},
         {"n": 116, "TargetWord": "manner", "definition": "the way something is done or happens", "pos": "noun", "syn": "style, fashion"},
@@ -171,7 +171,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C7", "tier": 1, "slug": "cluster1_7_everyday_adjectives_1",
+      "cluster_id": "T1-C7", "tier": 1, "slug": "cluster1_7_everyday_adjectives_1", "name": "Able, calm, clear, large", "name_de": "Adjektive: fähig, ruhig, klar", "name_es": "Adjetivos: capaz, calmo, claro", "name_ja": "形容詞：できる・静か", "name_zh": "形容词：能干、平静", "name_ru": "Прилагательные: ясный, крупный",
       "cards": [
         {"n": 137, "TargetWord": "able", "definition": "having the skill or power to do something", "pos": "adj", "syn": "capable, fit", "ant": "unable", "TriggerLesson": "006"},
         {"n": 138, "TargetWord": "brief", "definition": "lasting only a short time", "pos": "adj", "syn": "quick, fleeting", "ant": "lengthy"},
@@ -198,7 +198,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C8", "tier": 1, "slug": "cluster1_8_everyday_adjectives_2",
+      "cluster_id": "T1-C8", "tier": 1, "slug": "cluster1_8_everyday_adjectives_2", "name": "Real, fine, honest, quiet", "name_de": "Adjektive: echt, ehrlich", "name_es": "Adjetivos: real, honesto", "name_ja": "形容詞：本当・正直", "name_zh": "形容词：真实、诚实", "name_ru": "Прилагательные: честный",
       "cards": [
         {"n": 159, "TargetWord": "real", "definition": "actually existing; not imagined or pretended", "pos": "adj", "syn": "actual, genuine", "ant": "fake", "TriggerLesson": "007"},
         {"n": 160, "TargetWord": "round", "definition": "shaped like a circle or ball", "pos": "adj", "syn": "circular, curved", "ant": "square"},
@@ -225,7 +225,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C9", "tier": 1, "slug": "cluster1_9_everyday_abstracts_1",
+      "cluster_id": "T1-C9", "tier": 1, "slug": "cluster1_9_everyday_abstracts_1", "name": "Beauty, danger, joy, peace", "name_de": "Begriffe: Schönheit, Gefahr", "name_es": "Ideas: belleza, peligro, paz", "name_ja": "概念：美・危険・平和", "name_zh": "概念：美、危险、和平", "name_ru": "Понятия: красота, опасность",
       "cards": [
         {"n": 181, "TargetWord": "action", "definition": "the process of doing something; a thing that is done", "pos": "noun", "syn": "step, move", "ant": "inaction", "TriggerLesson": "008"},
         {"n": 182, "TargetWord": "beauty", "definition": "the quality of being pleasing to look at", "pos": "noun", "syn": "loveliness, grace", "ant": "ugliness"},
@@ -250,7 +250,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C10", "tier": 1, "slug": "cluster1_10_everyday_abstracts_2",
+      "cluster_id": "T1-C10", "tier": 1, "slug": "cluster1_10_everyday_abstracts_2", "name": "Pleasure, courage, faith, wage", "name_de": "Begriffe: Freude, Mut, Lohn", "name_es": "Ideas: placer, valor, salario", "name_ja": "概念：喜び・勇気・賃金", "name_zh": "概念：快乐、勇气、工资", "name_ru": "Понятия: радость, отвага",
       "cards": [
         {"n": 201, "TargetWord": "pleasure", "definition": "a feeling of happiness or enjoyment", "pos": "noun", "syn": "delight, enjoyment", "ant": "pain", "TriggerLesson": "009"},
         {"n": 202, "TargetWord": "treasure", "definition": "a store of valuable things; something greatly valued", "pos": "noun", "syn": "riches, wealth"},
@@ -278,7 +278,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C1", "tier": 2, "slug": "cluster2_1_law_justice_1",
+      "cluster_id": "T2-C1", "tier": 2, "slug": "cluster2_1_law_justice_1", "name": "Law & Justice I", "name_de": "Recht & Justiz I", "name_es": "Ley y justicia I", "name_ja": "法と正義 I", "name_zh": "法律与正义 I", "name_ru": "Закон и правосудие I",
       "cards": [
         {"n": 224, "TargetWord": "accuse", "definition": "to say someone has done something wrong or illegal", "pos": "verb", "syn": "charge, blame", "ant": "defend", "TriggerLesson": "010"},
         {"n": 225, "TargetWord": "arrest", "definition": "to seize someone by legal authority", "pos": "verb", "syn": "detain, seize", "ant": "release"},
@@ -303,7 +303,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C2", "tier": 2, "slug": "cluster2_2_law_justice_2",
+      "cluster_id": "T2-C2", "tier": 2, "slug": "cluster2_2_law_justice_2", "name": "Law & Justice II", "name_de": "Recht & Justiz II", "name_es": "Ley y justicia II", "name_ja": "法と正義 II", "name_zh": "法律与正义 II", "name_ru": "Закон и правосудие II",
       "cards": [
         {"n": 244, "TargetWord": "acquit", "definition": "to declare someone not guilty of a crime", "pos": "verb", "syn": "clear, exonerate", "ant": "convict", "TriggerLesson": "011"},
         {"n": 245, "TargetWord": "summon", "definition": "to officially order someone to appear in court", "pos": "verb", "syn": "send for, cite"},
@@ -328,7 +328,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C3", "tier": 2, "slug": "cluster2_3_government_1",
+      "cluster_id": "T2-C3", "tier": 2, "slug": "cluster2_3_government_1", "name": "Government I", "name_de": "Regierung I", "name_es": "Gobierno I", "name_ja": "統治 I", "name_zh": "政府 I", "name_ru": "Правительство I",
       "cards": [
         {"n": 264, "TargetWord": "authority", "definition": "the power or right to give orders and make decisions", "pos": "noun", "syn": "power, command", "ant": "weakness", "TriggerLesson": "012"},
         {"n": 265, "TargetWord": "chancellor", "definition": "a senior government or university official", "pos": "noun", "syn": "minister"},
@@ -353,7 +353,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C4", "tier": 2, "slug": "cluster2_4_government_2",
+      "cluster_id": "T2-C4", "tier": 2, "slug": "cluster2_4_government_2", "name": "Government II", "name_de": "Regierung II", "name_es": "Gobierno II", "name_ja": "統治 II", "name_zh": "政府 II", "name_ru": "Правительство II",
       "cards": [
         {"n": 284, "TargetWord": "duke", "definition": "a nobleman of the highest rank below the king", "pos": "noun", "syn": "nobleman, peer", "TriggerLesson": "013"},
         {"n": 285, "TargetWord": "baron", "definition": "a nobleman ranking below a duke", "pos": "noun", "syn": "peer, noble", "ant": "commoner"},
@@ -379,7 +379,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C5", "tier": 2, "slug": "cluster2_5_war_conflict_1",
+      "cluster_id": "T2-C5", "tier": 2, "slug": "cluster2_5_war_conflict_1", "name": "War & Conflict I", "name_de": "Krieg & Konflikt I", "name_es": "Guerra y conflicto I", "name_ja": "戦と争い I", "name_zh": "战争与冲突 I", "name_ru": "Война и конфликт I",
       "cards": [
         {"n": 305, "TargetWord": "archer", "definition": "a person who shoots with a bow and arrow", "pos": "noun", "syn": "marksman, shooter", "TriggerLesson": "014"},
         {"n": 306, "TargetWord": "army", "definition": "a large organized group of soldiers", "pos": "noun", "syn": "force, troops", "definition_gb": "a large organised group of soldiers"},
@@ -405,7 +405,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C6", "tier": 2, "slug": "cluster2_6_war_conflict_2",
+      "cluster_id": "T2-C6", "tier": 2, "slug": "cluster2_6_war_conflict_2", "name": "War & Conflict II", "name_de": "Krieg & Konflikt II", "name_es": "Guerra y conflicto II", "name_ja": "戦と争い II", "name_zh": "战争与冲突 II", "name_ru": "Война и конфликт II",
       "cards": [
         {"n": 326, "TargetWord": "banner", "definition": "a flag or cloth bearing a symbol or message", "pos": "noun", "syn": "standard, colors", "TriggerLesson": "015"},
         {"n": 327, "TargetWord": "cannon", "definition": "a large heavy gun, usually mounted on wheels", "pos": "noun", "syn": "field gun, artillery piece"},
@@ -432,7 +432,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C7", "tier": 2, "slug": "cluster2_7_food_kitchen_1",
+      "cluster_id": "T2-C7", "tier": 2, "slug": "cluster2_7_food_kitchen_1", "name": "Food & Kitchen I", "name_de": "Essen & Küche I", "name_es": "Comida y cocina I", "name_ja": "食と台所 I", "name_zh": "食物与厨房 I", "name_ru": "Еда и кухня I",
       "cards": [
         {"n": 348, "TargetWord": "beef", "definition": "meat from a cow", "pos": "noun", "syn": "steak, red meat", "TriggerLesson": "016"},
         {"n": 349, "TargetWord": "biscuit", "definition": "a small, flat baked food", "pos": "noun", "syn": "cracker, wafer"},
@@ -456,7 +456,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C8", "tier": 2, "slug": "cluster2_8_food_kitchen_2",
+      "cluster_id": "T2-C8", "tier": 2, "slug": "cluster2_8_food_kitchen_2", "name": "Food & Kitchen II", "name_de": "Essen & Küche II", "name_es": "Comida y cocina II", "name_ja": "食と台所 II", "name_zh": "食物与厨房 II", "name_ru": "Еда и кухня II",
       "cards": [
         {"n": 367, "TargetWord": "salad", "definition": "a cold dish of mixed raw vegetables", "pos": "noun", "syn": "leaves, side dish", "TriggerLesson": "017"},
         {"n": 368, "TargetWord": "sauce", "definition": "a liquid served with food to add flavor", "pos": "noun", "syn": "dressing, gravy", "definition_gb": "a liquid served with food to add flavour"},
@@ -480,7 +480,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C9", "tier": 2, "slug": "cluster2_9_fashion_1",
+      "cluster_id": "T2-C9", "tier": 2, "slug": "cluster2_9_fashion_1", "name": "Fashion I", "name_de": "Mode I", "name_es": "Moda I", "name_ja": "装い I", "name_zh": "服饰 I", "name_ru": "Мода I",
       "cards": [
         {"n": 386, "TargetWord": "attire", "definition": "clothes, especially fine or formal ones", "pos": "noun", "syn": "dress, clothing", "TriggerLesson": "018"},
         {"n": 387, "TargetWord": "button", "definition": "a small fastener on clothing", "pos": "noun", "syn": "fastener, clasp"},
@@ -505,7 +505,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C10", "tier": 2, "slug": "cluster2_10_fashion_2",
+      "cluster_id": "T2-C10", "tier": 2, "slug": "cluster2_10_fashion_2", "name": "Fashion II", "name_de": "Mode II", "name_es": "Moda II", "name_ja": "装い II", "name_zh": "服饰 II", "name_ru": "Мода II",
       "cards": [
         {"n": 406, "TargetWord": "ribbon", "definition": "a long narrow strip of fabric used for tying or for decoration", "pos": "noun", "syn": "sash, tape", "TriggerLesson": "019"},
         {"n": 407, "TargetWord": "tailor", "definition": "a person who makes or alters clothes", "pos": "noun", "syn": "dressmaker, clothier"},
@@ -526,7 +526,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C11", "tier": 2, "slug": "cluster2_11_religion_1",
+      "cluster_id": "T2-C11", "tier": 2, "slug": "cluster2_11_religion_1", "name": "Religion I", "name_de": "Religion I", "name_es": "Religión I", "name_ja": "宗教 I", "name_zh": "宗教 I", "name_ru": "Религия I",
       "cards": [
         {"n": 422, "TargetWord": "abbey", "definition": "a building where monks or nuns live and worship", "pos": "noun", "syn": "monastery, priory", "TriggerLesson": "020"},
         {"n": 423, "TargetWord": "altar", "definition": "a table or platform used in religious ceremonies", "pos": "noun", "syn": "shrine, holy table"},
@@ -550,7 +550,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C12", "tier": 2, "slug": "cluster2_12_religion_2",
+      "cluster_id": "T2-C12", "tier": 2, "slug": "cluster2_12_religion_2", "name": "Religion II", "name_de": "Religion II", "name_es": "Religión II", "name_ja": "宗教 II", "name_zh": "宗教 II", "name_ru": "Религия II",
       "cards": [
         {"n": 441, "TargetWord": "saint", "definition": "a person recognized as holy by the Church", "pos": "noun", "syn": "blessed one, patron", "TriggerLesson": "021", "definition_gb": "a person recognised as holy by the Church"},
         {"n": 442, "TargetWord": "sermon", "definition": "a talk on a moral or religious subject", "pos": "noun", "syn": "address, homily"},
@@ -572,7 +572,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C13", "tier": 2, "slug": "cluster2_13_home_property_1",
+      "cluster_id": "T2-C13", "tier": 2, "slug": "cluster2_13_home_property_1", "name": "Home & Property I", "name_de": "Haus & Besitz I", "name_es": "Casa y propiedad I", "name_ja": "家と財 I", "name_zh": "家居与地产 I", "name_ru": "Дом и имущество I",
       "cards": [
         {"n": 458, "TargetWord": "cellar", "definition": "an underground room used for storage", "pos": "noun", "syn": "basement", "TriggerLesson": "022"},
         {"n": 459, "TargetWord": "ceiling", "definition": "the upper surface of a room", "pos": "noun", "syn": "overhead, upper surface"},
@@ -593,7 +593,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C14", "tier": 2, "slug": "cluster2_14_home_property_2",
+      "cluster_id": "T2-C14", "tier": 2, "slug": "cluster2_14_home_property_2", "name": "Home & Property II", "name_de": "Haus & Besitz II", "name_es": "Casa y propiedad II", "name_ja": "家と財 II", "name_zh": "家居与地产 II", "name_ru": "Дом и имущество II",
       "cards": [
         {"n": 474, "TargetWord": "wardrobe", "definition": "a large cupboard for storing clothes", "pos": "noun", "syn": "closet, clothes cupboard", "TriggerLesson": "023"},
         {"n": 475, "TargetWord": "pantry", "definition": "a small room for storing food", "pos": "noun", "syn": "larder, food store"},
@@ -613,7 +613,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C1", "tier": 3, "slug": "cluster3_1_action_1",
+      "cluster_id": "T3-C1", "tier": 3, "slug": "cluster3_1_action_1", "name": "Action I", "name_de": "Handlung I", "name_es": "Acción I", "name_ja": "行い I", "name_zh": "行为 I", "name_ru": "Действие I",
       "cards": [
         {"n": 489, "TargetWord": "commence", "definition": "to begin or start something", "pos": "verb", "syn": "start, open", "ant": "end", "TriggerLesson": "024"},
         {"n": 490, "TargetWord": "purchase", "definition": "to buy something", "pos": "verb", "syn": "acquire, procure", "ant": "sell"},
@@ -638,7 +638,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C2", "tier": 3, "slug": "cluster3_2_action_2",
+      "cluster_id": "T3-C2", "tier": 3, "slug": "cluster3_2_action_2", "name": "Action II", "name_de": "Handlung II", "name_es": "Acción II", "name_ja": "行い II", "name_zh": "行为 II", "name_ru": "Действие II",
       "cards": [
         {"n": 509, "TargetWord": "reply", "definition": "to say or write something in response", "pos": "verb", "syn": "respond, retort", "ant": "ask", "TriggerLesson": "025"},
         {"n": 510, "TargetWord": "nourish", "definition": "to provide food and care for growth", "pos": "verb", "syn": "sustain, nurture", "ant": "starve"},
@@ -663,7 +663,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C3", "tier": 3, "slug": "cluster3_3_quality",
+      "cluster_id": "T3-C3", "tier": 3, "slug": "cluster3_3_quality", "name": "Quality", "name_de": "Eigenschaft", "name_es": "Cualidad", "name_ja": "性質", "name_zh": "特质", "name_ru": "Качество",
       "cards": [
         {"n": 529, "TargetWord": "courageous", "definition": "brave enough to face danger or difficulty", "pos": "adj", "syn": "brave, valiant", "ant": "cowardly", "TriggerLesson": "026"},
         {"n": 530, "TargetWord": "profound", "definition": "very deep or intense; showing great understanding", "pos": "adj", "syn": "intense, weighty", "ant": "shallow"},
@@ -693,7 +693,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C4", "tier": 3, "slug": "cluster3_4_people",
+      "cluster_id": "T3-C4", "tier": 3, "slug": "cluster3_4_people", "name": "People", "name_de": "Menschen", "name_es": "Personas", "name_ja": "人", "name_zh": "人物", "name_ru": "Люди",
       "cards": [
         {"n": 554, "TargetWord": "companion", "definition": "a person who travels or spends time with another", "pos": "noun", "syn": "comrade, fellow", "ant": "stranger", "TriggerLesson": "027"},
         {"n": 555, "TargetWord": "infant", "definition": "a very young child", "pos": "noun", "syn": "child, newborn"},
@@ -718,7 +718,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C5", "tier": 3, "slug": "cluster3_5_abstract_1",
+      "cluster_id": "T3-C5", "tier": 3, "slug": "cluster3_5_abstract_1", "name": "Abstract I", "name_de": "Abstraktes I", "name_es": "Abstracto I", "name_ja": "抽象 I", "name_zh": "抽象概念 I", "name_ru": "Абстрактное I",
       "cards": [
         {"n": 574, "TargetWord": "liberty", "definition": "the state of being free", "pos": "noun", "syn": "independence, leave", "TriggerLesson": "028"},
         {"n": 575, "TargetWord": "amity", "definition": "friendly relations between people or countries", "pos": "noun", "syn": "goodwill, concord"},
@@ -743,7 +743,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C6", "tier": 3, "slug": "cluster3_6_abstract_2",
+      "cluster_id": "T3-C6", "tier": 3, "slug": "cluster3_6_abstract_2", "name": "Abstract II", "name_de": "Abstraktes II", "name_es": "Abstracto II", "name_ja": "抽象 II", "name_zh": "抽象概念 II", "name_ru": "Абстрактное II",
       "cards": [
         {"n": 594, "TargetWord": "enmity", "definition": "deep-seated hostility between people or groups", "pos": "noun", "syn": "hostility, feud", "TriggerLesson": "029"},
         {"n": 595, "TargetWord": "renown", "definition": "the state of being widely known for achievement", "pos": "noun", "syn": "fame, glory"},
@@ -768,7 +768,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C7", "tier": 3, "slug": "cluster3_7_body_world",
+      "cluster_id": "T3-C7", "tier": 3, "slug": "cluster3_7_body_world", "name": "Body & World", "name_de": "Körper & Welt", "name_es": "Cuerpo y mundo", "name_ja": "体と世界", "name_zh": "身体与世界", "name_ru": "Тело и мир",
       "cards": [
         {"n": 614, "TargetWord": "stomach", "definition": "the organ that digests food; the front of the body below the chest", "pos": "noun", "syn": "gut, middle", "TriggerLesson": "030"},
         {"n": 615, "TargetWord": "complexion", "definition": "the natural color and appearance of the skin on the face", "pos": "noun", "syn": "hue, look", "definition_gb": "the natural colour and appearance of the skin on the face"},
@@ -796,7 +796,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C8", "tier": 3, "slug": "cluster3_8_farm_to_table",
+      "cluster_id": "T3-C8", "tier": 3, "slug": "cluster3_8_farm_to_table", "name": "Farm to Table", "name_de": "Vom Hof auf den Tisch", "name_es": "Del campo a la mesa", "name_ja": "畑から食卓へ", "name_zh": "农场与餐桌", "name_ru": "От поля до стола",
       "cards": [
         {"n": 637, "TargetWord": "bacon", "definition": "cured meat from the back or sides of a pig", "pos": "noun", "syn": "pork, rasher", "TriggerLesson": "031"},
         {"n": 638, "TargetWord": "brawn", "definition": "physical strength; a cold meat dish made from pork", "pos": "noun", "syn": "muscle, might"},
@@ -821,7 +821,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C1", "tier": 4, "slug": "cluster4_1_suffix_tion_sion",
+      "cluster_id": "T4-C1", "tier": 4, "slug": "cluster4_1_suffix_tion_sion", "name": "Suffix: -tion, -sion", "name_de": "Nachsilbe: -tion, -sion", "name_es": "Sufijo: -tion, -sion", "name_ja": "接尾辞: -tion, -sion", "name_zh": "后缀：-tion，-sion", "name_ru": "Суффиксы: -tion, -sion",
       "cards": [
         {"n": 657, "TargetWord": "motion", "definition": "the act or process of moving", "pos": "noun", "syn": "movement, shift", "TriggerLesson": "032"},
         {"n": 658, "TargetWord": "station", "definition": "a place where trains stop; a position or rank", "pos": "noun", "syn": "post, depot"},
@@ -850,7 +850,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C2", "tier": 4, "slug": "cluster4_2_suffix_age",
+      "cluster_id": "T4-C2", "tier": 4, "slug": "cluster4_2_suffix_age", "name": "Suffix: -age", "name_de": "Nachsilbe: -age", "name_es": "Sufijo: -age", "name_ja": "接尾辞: -age", "name_zh": "后缀：-age", "name_ru": "Суффикс: -age",
       "cards": [
         {"n": 681, "TargetWord": "damage", "definition": "physical harm to something; loss or injury", "pos": "noun", "syn": "injury, ruin", "ant": "repair", "TriggerLesson": "033"},
         {"n": 682, "TargetWord": "luggage", "definition": "bags and suitcases used when traveling", "pos": "noun", "syn": "baggage, gear", "definition_gb": "bags and suitcases used when travelling"},
@@ -879,7 +879,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C3", "tier": 4, "slug": "cluster4_3_suffix_ment",
+      "cluster_id": "T4-C3", "tier": 4, "slug": "cluster4_3_suffix_ment", "name": "Suffix: -ment", "name_de": "Nachsilbe: -ment", "name_es": "Sufijo: -ment", "name_ja": "接尾辞: -ment", "name_zh": "后缀：-ment", "name_ru": "Суффикс: -ment",
       "cards": [
         {"n": 705, "TargetWord": "achievement", "definition": "something accomplished through effort", "pos": "noun", "syn": "feat, success", "TriggerLesson": "034"},
         {"n": 706, "TargetWord": "agreement", "definition": "an arrangement accepted by all sides", "pos": "noun", "syn": "pact, accord", "ant": "dispute"},
@@ -908,7 +908,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C4", "tier": 4, "slug": "cluster4_4_paris_against_rouen_gu_w_ca_ch",
+      "cluster_id": "T4-C4", "tier": 4, "slug": "cluster4_4_paris_against_rouen_gu_w_ca_ch", "name": "Paris against Rouen", "name_de": "Paris gegen Rouen", "name_es": "París contra Ruan", "name_ja": "パリ対ルーアン", "name_zh": "巴黎对鲁昂", "name_ru": "Париж против Руана",
       "cards": [
         {"n": 729, "TargetWord": "guide", "definition": "to show someone the way; a person who leads", "pos": "verb", "syn": "steer, direct", "TriggerLesson": "035"},
         {"n": 730, "TargetWord": "regard", "definition": "to think of in a certain way; attention or respect", "pos": "verb", "syn": "consider, view"},
@@ -932,7 +932,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C5", "tier": 4, "slug": "cluster4_5_ca_ch_split",
+      "cluster_id": "T4-C5", "tier": 4, "slug": "cluster4_5_ca_ch_split", "name": "ca- / ch- Split", "name_de": "ca- / ch-Spaltung", "name_es": "División ca- / ch-", "name_ja": "ca- と ch- の分岐", "name_zh": "ca- / ch- 分支", "name_ru": "Разделение ca- и ch-",
       "cards": [
         {"n": 748, "TargetWord": "castle", "definition": "a large fortified building from the medieval period", "pos": "noun", "syn": "fortress, keep", "TriggerLesson": "036"},
         {"n": 749, "TargetWord": "cattle", "definition": "cows, bulls, and oxen kept on a farm", "pos": "noun", "syn": "livestock, herd"},
@@ -950,7 +950,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C6", "tier": 4, "slug": "cluster4_6_suffix_ous_ive_al",
+      "cluster_id": "T4-C6", "tier": 4, "slug": "cluster4_6_suffix_ous_ive_al", "name": "Suffix: -ous, -ive, -al", "name_de": "Nachsilbe: -ous, -ive", "name_es": "Sufijo: -ous, -ive", "name_ja": "接尾辞: -ous, -ive", "name_zh": "后缀：-ous，-ive，-al", "name_ru": "Суффиксы: -ous, -ive, -al",
       "cards": [
         {"n": 761, "TargetWord": "precious", "definition": "of great value; greatly loved", "pos": "adj", "syn": "valuable, prized", "ant": "worthless", "TriggerLesson": "037"},
         {"n": 762, "TargetWord": "curious", "definition": "eager to know or learn; strange or unusual", "pos": "adj", "syn": "inquisitive, odd"},
@@ -980,7 +980,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C7", "tier": 4, "slug": "cluster4_7_suffix_ance_ence_1",
+      "cluster_id": "T4-C7", "tier": 4, "slug": "cluster4_7_suffix_ance_ence_1", "name": "Suffix: -ance, -ence I", "name_de": "Nachsilbe: -ance, -ence I", "name_es": "Sufijo: -ance, -ence I", "name_ja": "接尾辞: -ance, -ence I", "name_zh": "后缀：-ance，-ence I", "name_ru": "Суффиксы: -ance, -ence I",
       "cards": [
         {"n": 786, "TargetWord": "abundance", "definition": "a very large quantity of something", "pos": "noun", "syn": "plenty, glut", "ant": "scarcity", "TriggerLesson": "038"},
         {"n": 787, "TargetWord": "attendance", "definition": "the act of being present at an event", "pos": "noun", "syn": "presence, showing"},
@@ -1007,7 +1007,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C8", "tier": 4, "slug": "cluster4_8_suffix_ance_ence_2",
+      "cluster_id": "T4-C8", "tier": 4, "slug": "cluster4_8_suffix_ance_ence_2", "name": "Suffix: -ance, -ence II", "name_de": "Nachsilbe: -ance, -ence II", "name_es": "Sufijo: -ance, -ence II", "name_ja": "接尾辞: -ance, -ence II", "name_zh": "后缀：-ance，-ence II", "name_ru": "Суффиксы: -ance, -ence II",
       "cards": [
         {"n": 808, "TargetWord": "existence", "definition": "the fact or state of being alive or real", "pos": "noun", "syn": "life, presence", "ant": "nothingness", "TriggerLesson": "039"},
         {"n": 809, "TargetWord": "influence", "definition": "the power to affect how others think or act", "pos": "noun", "syn": "power, weight"},
@@ -1032,7 +1032,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C1", "tier": 5, "slug": "cluster5_1_hidden_french_1",
+      "cluster_id": "T5-C1", "tier": 5, "slug": "cluster5_1_hidden_french_1", "name": "Hidden French I", "name_de": "Verborgenes Französisch I", "name_es": "Francés oculto I", "name_ja": "隠れたフランス語 I", "name_zh": "隐秘法语 I", "name_ru": "Скрытый французский I",
       "cards": [
         {"n": 828, "TargetWord": "curfew", "definition": "a rule requiring people to stay indoors after a set time", "pos": "noun", "syn": "ban, blackout", "TriggerLesson": "040"},
         {"n": 829, "TargetWord": "pedigree", "definition": "the recorded ancestry of a person or animal", "pos": "noun", "syn": "lineage, ancestry"},
@@ -1058,7 +1058,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C2", "tier": 5, "slug": "cluster5_2_hidden_french_2",
+      "cluster_id": "T5-C2", "tier": 5, "slug": "cluster5_2_hidden_french_2", "name": "Hidden French II", "name_de": "Verborgenes Französisch II", "name_es": "Francés oculto II", "name_ja": "隠れたフランス語 II", "name_zh": "隐性法语 II", "name_ru": "Скрытый французский II",
       "cards": [
         {"n": 849, "TargetWord": "quarantine", "definition": "a period of isolation to prevent the spread of disease", "pos": "noun", "syn": "isolation, lockdown", "TriggerLesson": "041"},
         {"n": 850, "TargetWord": "kennel", "definition": "a shelter for a dog; a place where dogs are bred or kept", "pos": "noun", "syn": "shelter, pen"},
@@ -1086,7 +1086,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C3", "tier": 5, "slug": "cluster5_3_legal_french",
+      "cluster_id": "T5-C3", "tier": 5, "slug": "cluster5_3_legal_french", "name": "Legal French", "name_de": "Juristisches Französisch", "name_es": "Francés jurídico", "name_ja": "法のフランス語", "name_zh": "法律法语", "name_ru": "Юридический французский",
       "cards": [
         {"n": 872, "TargetWord": "bailiff", "definition": "an officer who carries out court orders and enforces judgments", "pos": "noun", "syn": "officer, marshal", "TriggerLesson": "042"},
         {"n": 873, "TargetWord": "easement", "definition": "the legal right to use another person's land for a specific purpose", "pos": "noun", "syn": "access, privilege"},
@@ -1115,7 +1115,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C4", "tier": 5, "slug": "cluster5_4_kitchen_french",
+      "cluster_id": "T5-C4", "tier": 5, "slug": "cluster5_4_kitchen_french", "name": "Kitchen French", "name_de": "Küchenfranzösisch", "name_es": "Francés de cocina", "name_ja": "台所のフランス語", "name_zh": "厨房法语", "name_ru": "Кухонный французский",
       "cards": [
         {"n": 896, "TargetWord": "braise", "definition": "to cook slowly in a small amount of liquid in a closed pot", "pos": "verb", "syn": "stew, pot-roast", "TriggerLesson": "043"},
         {"n": 897, "TargetWord": "fillet", "definition": "a boneless piece of meat or fish", "pos": "noun", "syn": "cut, boneless slice"},
@@ -1145,7 +1145,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C5", "tier": 5, "slug": "cluster5_5_art_refinement_1",
+      "cluster_id": "T5-C5", "tier": 5, "slug": "cluster5_5_art_refinement_1", "name": "Art & Refinement I", "name_de": "Kunst & Verfeinerung I", "name_es": "Arte y refinamiento I", "name_ja": "芸術と洗練 I", "name_zh": "艺术与雅致 I", "name_ru": "Искусство и утончённость I",
       "cards": [
         {"n": 921, "TargetWord": "ballet", "definition": "a form of dance performed to music with precise steps and gestures", "pos": "noun", "syn": "dance, stage dance", "TriggerLesson": "044"},
         {"n": 922, "TargetWord": "bouquet", "definition": "an arrangement of flowers; the aroma of wine", "pos": "noun", "syn": "bunch, posy"},
@@ -1170,7 +1170,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C6", "tier": 5, "slug": "cluster5_6_art_refinement_2",
+      "cluster_id": "T5-C6", "tier": 5, "slug": "cluster5_6_art_refinement_2", "name": "Art & Refinement II", "name_de": "Kunst & Verfeinerung II", "name_es": "Arte y refinamiento II", "name_ja": "芸術と洗練 II", "name_zh": "艺术与雅致 II", "name_ru": "Искусство и утончённость II",
       "cards": [
         {"n": 941, "TargetWord": "boudoir", "definition": "a woman's private sitting room or bedroom", "pos": "noun", "syn": "chamber, dressing room", "TriggerLesson": "045"},
         {"n": 942, "TargetWord": "cachet", "definition": "prestige or distinction; an official seal", "pos": "noun", "syn": "prestige, distinction"},
@@ -1195,7 +1195,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C7", "tier": 5, "slug": "cluster5_7_pure_french_1",
+      "cluster_id": "T5-C7", "tier": 5, "slug": "cluster5_7_pure_french_1", "name": "Pure French I", "name_de": "Reines Französisch I", "name_es": "Francés puro I", "name_ja": "純フランス語 I", "name_zh": "纯粹法语 I", "name_ru": "Чистый французский I",
       "cards": [
         {"n": 961, "TargetWord": "à la carte", "definition": "ordering individual dishes from a menu rather than a set meal", "pos": "phrase", "syn": "separately, one by one", "TriggerLesson": "046"},
         {"n": 962, "TargetWord": "au pair", "definition": "a young person from abroad who lives with a family and helps with childcare", "pos": "phrase", "syn": "helper, nanny"},
@@ -1220,7 +1220,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C8", "tier": 5, "slug": "cluster5_8_pure_french_2",
+      "cluster_id": "T5-C8", "tier": 5, "slug": "cluster5_8_pure_french_2", "name": "Pure French II", "name_de": "Reines Französisch II", "name_es": "Francés puro II", "name_ja": "純フランス語 II", "name_zh": "纯粹法语 II", "name_ru": "Чистый французский II",
       "cards": [
         {"n": 981, "TargetWord": "bête noire", "definition": "a person or thing that someone particularly dislikes", "pos": "phrase", "syn": "pet peeve, bugbear", "TriggerLesson": "047"},
         {"n": 982, "TargetWord": "cause célèbre", "definition": "a controversial issue that attracts great public attention", "pos": "phrase", "syn": "scandal, uproar"},

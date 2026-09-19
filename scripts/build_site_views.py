@@ -84,8 +84,34 @@ def ck(p):
     m = re.search(r'cluster(\d+)_(\d+)', os.path.basename(p))
     return (int(m.group(1)), int(m.group(2)))
 
+NAME_LOCALES = ("", "_de", "_es", "_ja", "_zh", "_ru")
+
+def cluster_names(setdir):
+    """The authored cluster labels, keyed by folder slug, per locale.
+
+    Every pack in flashcard_sets carries cluster_names.json and a file per
+    locale beside it; they are written, translated and checked upstream, and
+    until now the site threw them away and humanised the folder slug instead.
+    Returns {"": {slug: name}, "_de": {...}, ...} with missing files simply
+    absent, so a pack that has only English names still gets them. The
+    "_comment" key every one of these files carries is dropped."""
+    root = os.path.join(REPO, setdir)
+    names = {}
+    for loc in NAME_LOCALES:
+        f = os.path.join(root, f"cluster_names{loc}.json")
+        if not os.path.isfile(f):
+            continue
+        try:
+            d = json.load(open(f, encoding="utf-8"))
+        except (ValueError, OSError):
+            continue
+        names[loc] = {k: v for k, v in d.items()
+                      if k != "_comment" and isinstance(v, str) and v.strip()}
+    return names
+
 def walk(setdir):
     root = os.path.join(REPO, setdir); out = []
+    names = cluster_names(setdir)
     for td in sorted(glob.glob(root + "/tier_*"),
                      key=lambda x: int(re.search(r'tier_(\d+)', x).group(1))):
         for cd in sorted([c for c in glob.glob(td + "/*") if os.path.isdir(c)], key=ck):
@@ -93,6 +119,7 @@ def walk(setdir):
             if os.path.isfile(f):
                 t, c = ck(cd)
                 out.append({"cluster_id": f"T{t}-C{c}", "tier": t, "slug": s,
+                            "names": {loc: m[s] for loc, m in names.items() if s in m},
                             "raw": json.load(open(f, encoding="utf-8"))})
     return out
 
@@ -138,8 +165,15 @@ def serialize(language, setlabel, total, offset, clusters, sp, mode):
     n = 0
     for ci, cl in enumerate(clusters):
         out.append("    {")
+        nm = cl.get("names") or {}
+        # "name" is the authored English label; "name_de" … the locale twins.
+        # A locale the pack does not carry is simply absent and the page falls
+        # back to the English name, then to the humanised slug, exactly as before.
+        namebits = "".join(
+            f' "name{loc}": {json.dumps(nm[loc], ensure_ascii=False)},'
+            for loc in NAME_LOCALES if loc in nm)
         out.append(f'      "cluster_id": {json.dumps(cl["cluster_id"])}, "tier": {cl["tier"]}, '
-                   f'"slug": {json.dumps(cl["slug"])},')
+                   f'"slug": {json.dumps(cl["slug"])},{namebits}')
         out.append('      "cards": [')
         lines = []
         for r in cl["raw"]:
@@ -170,7 +204,8 @@ if __name__ == "__main__":
                  if r.get("TargetWord_gb") or r.get("Translation_gb"))
         print(f"  {out:<36} {lang} {label:<9} {total} cards, "
               f"{len(cls)} clusters, first={first['cluster_id']} {first['slug']}"
-              + (f", {gb} spelling twins" if mode == "eng" else ""))
+              + (f", {gb} spelling twins" if mode == "eng" else "")
+              + (f", {sum(1 for c in cls if c.get('names'))}/{len(cls)} named" ))
 
     # The six standalone English packs (Adept/Advance/Roots) are built upstream,
     # not here, so their twins still come from the injector. Run it automatically:

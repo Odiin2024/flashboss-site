@@ -5,7 +5,7 @@
   "offset": 0,
   "clusters": [
     {
-      "cluster_id": "T1-C1", "tier": 1, "slug": "cluster1_1_forms_identity",
+      "cluster_id": "T1-C1", "tier": 1, "slug": "cluster1_1_forms_identity", "name": "Forms: Identity", "name_de": "Formulare: Identität", "name_es": "Formularios: identidad", "name_ja": "書式: 身元", "name_zh": "身份表单", "name_ru": "Формы: Идентичность",
       "cards": [
         {"n": 1, "TargetWord": "surname", "definition": "the family name shared by members of a family, written after the first name", "pos": "noun", "TriggerLesson": "001"},
         {"n": 2, "TargetWord": "given name", "definition": "your first name, the personal name chosen for you at birth", "pos": "noun", "TriggerLesson": "002"},
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C2", "tier": 1, "slug": "cluster1_2_forms_address",
+      "cluster_id": "T1-C2", "tier": 1, "slug": "cluster1_2_forms_address", "name": "Forms: Address", "name_de": "Formulare: Anschrift", "name_es": "Formularios: dirección", "name_ja": "書式: 住所", "name_zh": "地址表单", "name_ru": "Формы: Адрес",
       "cards": [
         {"n": 21, "TargetWord": "permanent address", "definition": "the fixed address where you normally live, not a temporary one", "pos": "noun", "TriggerLesson": "003"},
         {"n": 22, "TargetWord": "temporary address", "definition": "an address where you are staying for a short time only", "pos": "noun"},
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C3", "tier": 1, "slug": "cluster1_3_forms_documents",
+      "cluster_id": "T1-C3", "tier": 1, "slug": "cluster1_3_forms_documents", "name": "Forms: Documents", "name_de": "Formulare: Dokumente", "name_es": "Formularios: documentos", "name_ja": "書式: 書類", "name_zh": "文件表单", "name_ru": "Формы: Документы",
       "cards": [
         {"n": 41, "TargetWord": "issued", "definition": "officially given or sent out by an authority, such as a government or company", "pos": "adj"},
         {"n": 42, "TargetWord": "expiration date", "definition": "the date after which a document or product is no longer accepted or safe to use", "pos": "noun", "TargetWord_gb": "expiry date"},
@@ -80,7 +80,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C4", "tier": 1, "slug": "cluster1_4_forms_instructions",
+      "cluster_id": "T1-C4", "tier": 1, "slug": "cluster1_4_forms_instructions", "name": "Forms: Instructions", "name_de": "Formulare: Anweisungen", "name_es": "Formularios: instrucciones", "name_ja": "書式: 指示", "name_zh": "说明表单", "name_ru": "Формы: Указания",
       "cards": [
         {"n": 61, "TargetWord": "please print", "definition": "write in clear separate letters, not in joined-up handwriting", "pos": "phrase", "TriggerLesson": "004"},
         {"n": 62, "TargetWord": "block letters", "definition": "large separate letters written without joining, like A B C", "pos": "noun", "TargetWord_gb": "block capitals"},
@@ -105,7 +105,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C5", "tier": 1, "slug": "cluster1_5_forms_status",
+      "cluster_id": "T1-C5", "tier": 1, "slug": "cluster1_5_forms_status", "name": "Forms: Status", "name_de": "Formulare: Status", "name_es": "Formularios: estado", "name_ja": "書式: 状態", "name_zh": "状态表单", "name_ru": "Формы: Статус",
       "cards": [
         {"n": 81, "TargetWord": "employed", "definition": "having a paid job, working for an employer", "pos": "adj"},
         {"n": 82, "TargetWord": "unemployed", "definition": "not currently working in a paid job but looking for one", "pos": "adj"},
@@ -130,7 +130,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C1", "tier": 2, "slug": "cluster2_1_social_greetings",
+      "cluster_id": "T2-C1", "tier": 2, "slug": "cluster2_1_social_greetings", "name": "Social: Greetings", "name_de": "Sozial: Grüße", "name_es": "Social: saludos", "name_ja": "社交: 挨拶", "name_zh": "问候语", "name_ru": "Социальное: Приветствия",
       "cards": [
         {"n": 101, "TargetWord": "Dear", "definition": "a word used at the start of a letter or email before the person's name", "pos": "adj", "TriggerLesson": "005"},
         {"n": 102, "TargetWord": "Sincerely", "definition": "the standard formal way to end a business letter or email", "pos": "phrase", "TargetWord_gb": "yours sincerely", "definition_gb": "a formal way to end a letter when you know the person's name"},
@@ -151,7 +151,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C2", "tier": 2, "slug": "cluster2_2_social_invitations",
+      "cluster_id": "T2-C2", "tier": 2, "slug": "cluster2_2_social_invitations", "name": "Social: Invitations", "name_de": "Sozial: Einladungen", "name_es": "Social: invitaciones", "name_ja": "社交: 招き", "name_zh": "邀请函", "name_ru": "Социальное: Приглашения",
       "cards": [
         {"n": 117, "TargetWord": "RSVP", "definition": "a request to reply and say whether you will attend an event", "pos": "abbr"},
         {"n": 118, "TargetWord": "accept", "definition": "to say yes to an invitation, offer, or request", "pos": "verb"},
@@ -174,7 +174,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C3", "tier": 2, "slug": "cluster2_3_social_polite",
+      "cluster_id": "T2-C3", "tier": 2, "slug": "cluster2_3_social_polite", "name": "Social: Politeness", "name_de": "Sozial: Höflichkeit", "name_es": "Social: cortesía", "name_ja": "社交: 礼", "name_zh": "礼貌用语", "name_ru": "Социальное: Вежливость",
       "cards": [
         {"n": 135, "TargetWord": "kindly", "definition": "a polite way of making a request, softer than 'please'", "pos": "adv"},
         {"n": 136, "TargetWord": "prompt", "definition": "done quickly and without delay", "pos": "adj"},
@@ -201,7 +201,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C4", "tier": 2, "slug": "cluster2_4_social_email",
+      "cluster_id": "T2-C4", "tier": 2, "slug": "cluster2_4_social_email", "name": "Social: Email", "name_de": "Sozial: E-Mail", "name_es": "Social: correo", "name_ja": "社交: メール", "name_zh": "电子邮件", "name_ru": "Социальное: Электронная почта",
       "cards": [
         {"n": 157, "TargetWord": "subject line", "definition": "the short title at the top of an email that tells the reader what it is about", "pos": "noun", "TriggerLesson": "007"},
         {"n": 158, "TargetWord": "CC", "definition": "a copy of an email sent to someone who is not the main reader", "pos": "abbr"},
@@ -224,7 +224,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C5", "tier": 2, "slug": "cluster2_5_social_notices",
+      "cluster_id": "T2-C5", "tier": 2, "slug": "cluster2_5_social_notices", "name": "Social: Notices", "name_de": "Sozial: Aushänge", "name_es": "Social: avisos", "name_ja": "社交: 掲示", "name_zh": "告示", "name_ru": "Социальное: Уведомления",
       "cards": [
         {"n": 175, "TargetWord": "caution", "definition": "a warning to be careful because there may be danger nearby", "pos": "noun"},
         {"n": 176, "TargetWord": "prohibited", "definition": "not allowed, banned by the rules or by law", "pos": "adj"},
@@ -251,7 +251,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C1", "tier": 3, "slug": "cluster3_1_confusables_a",
+      "cluster_id": "T3-C1", "tier": 3, "slug": "cluster3_1_confusables_a", "name": "Confusables I", "name_de": "Verwechselbare I", "name_es": "Confundibles I", "name_ja": "紛らわしい語 I", "name_zh": "易混淆词 I", "name_ru": "Смешиваемые слова I",
       "cards": [
         {"n": 197, "TargetWord": "stationary", "definition": "not moving, staying in one place", "pos": "adj", "TriggerLesson": "008"},
         {"n": 198, "TargetWord": "discrete", "definition": "separate and distinct, not connected to each other", "pos": "adj"},
@@ -276,7 +276,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C2", "tier": 3, "slug": "cluster3_2_confusables_b",
+      "cluster_id": "T3-C2", "tier": 3, "slug": "cluster3_2_confusables_b", "name": "Confusables II", "name_de": "Verwechselbare II", "name_es": "Confundibles II", "name_ja": "紛らわしい語 II", "name_zh": "易混淆词 II", "name_ru": "Смешиваемые слова II",
       "cards": [
         {"n": 217, "TargetWord": "whether", "definition": "used to introduce two possibilities or alternatives", "pos": "conj"},
         {"n": 218, "TargetWord": "whose", "definition": "belonging to which person, used to ask about ownership", "pos": "pron"},
@@ -299,7 +299,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C3", "tier": 3, "slug": "cluster3_3_commonly_misused",
+      "cluster_id": "T3-C3", "tier": 3, "slug": "cluster3_3_commonly_misused", "name": "Commonly Misused", "name_de": "Häufig falsch benutzt", "name_es": "De uso erróneo", "name_ja": "誤用されがちな語", "name_zh": "常见误用词", "name_ru": "Частые ошибки",
       "cards": [
         {"n": 235, "TargetWord": "literally", "definition": "in the exact and true sense of the word, not exaggerated", "pos": "adv", "TriggerLesson": "009"},
         {"n": 236, "TargetWord": "ironic", "definition": "happening in the opposite way to what you would expect", "pos": "adj"},
@@ -324,7 +324,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C4", "tier": 3, "slug": "cluster3_4_false_friends",
+      "cluster_id": "T3-C4", "tier": 3, "slug": "cluster3_4_false_friends", "name": "False Friends", "name_de": "Falsche Freunde", "name_es": "Falsos amigos", "name_ja": "偽りの友", "name_zh": "形似异义词", "name_ru": "Ложные друзья",
       "cards": [
         {"n": 255, "TargetWord": "actually", "definition": "in fact, in reality, used to correct a misunderstanding or add a surprising truth", "pos": "adv"},
         {"n": 256, "TargetWord": "eventually", "definition": "in the end, after a long time or after a lot of effort", "pos": "adv"},
@@ -348,7 +348,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C5", "tier": 3, "slug": "cluster3_5_spelling_conventions",
+      "cluster_id": "T3-C5", "tier": 3, "slug": "cluster3_5_spelling_conventions", "name": "Spelling Conventions", "name_de": "Rechtschreibregeln", "name_es": "Convenciones ortográficas", "name_ja": "綴りの約束", "name_zh": "拼写规则", "name_ru": "Правила написания",
       "cards": [
         {"n": 274, "TargetWord": "receive", "definition": "to get something that has been given or sent to you", "pos": "verb", "TriggerLesson": "010"},
         {"n": 275, "TargetWord": "necessary", "definition": "needed, required in order for something to happen or be done", "pos": "adj"},
@@ -373,7 +373,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C1", "tier": 4, "slug": "cluster4_1_connectors_adding",
+      "cluster_id": "T4-C1", "tier": 4, "slug": "cluster4_1_connectors_adding", "name": "Connectors: Adding", "name_de": "Konnektoren: Hinzufügen", "name_es": "Conectores: añadir", "name_ja": "接続: 添加", "name_zh": "连接词：添加", "name_ru": "Союзы: добавление",
       "cards": [
         {"n": 294, "TargetWord": "furthermore", "definition": "in addition to what has already been said, used to add a stronger point", "pos": "adv", "TriggerLesson": "011"},
         {"n": 295, "TargetWord": "moreover", "definition": "in addition, used to introduce an extra point that strengthens the argument", "pos": "adv"},
@@ -398,7 +398,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C2", "tier": 4, "slug": "cluster4_2_connectors_contrasting",
+      "cluster_id": "T4-C2", "tier": 4, "slug": "cluster4_2_connectors_contrasting", "name": "Connectors: Contrast", "name_de": "Konnektoren: Gegensatz", "name_es": "Conectores: contraste", "name_ja": "接続: 対比", "name_zh": "连接词：对比", "name_ru": "Союзы: противопоставление",
       "cards": [
         {"n": 314, "TargetWord": "however", "definition": "despite that, used to introduce a point that contrasts with what came before", "pos": "adv"},
         {"n": 315, "TargetWord": "although", "definition": "despite the fact that, used to introduce a contrasting point within the same sentence", "pos": "conj"},
@@ -423,7 +423,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C3", "tier": 4, "slug": "cluster4_3_connectors_cause",
+      "cluster_id": "T4-C3", "tier": 4, "slug": "cluster4_3_connectors_cause", "name": "Connectors: Cause", "name_de": "Konnektoren: Ursache", "name_es": "Conectores: causa", "name_ja": "接続: 原因", "name_zh": "连接词：因果", "name_ru": "Союзы: причина",
       "cards": [
         {"n": 334, "TargetWord": "therefore", "definition": "for that reason, as a result of what has just been said", "pos": "adv"},
         {"n": 335, "TargetWord": "consequently", "definition": "as a result, because of what happened before", "pos": "adv"},
@@ -450,7 +450,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C4", "tier": 4, "slug": "cluster4_4_connectors_time",
+      "cluster_id": "T4-C4", "tier": 4, "slug": "cluster4_4_connectors_time", "name": "Connectors: Time", "name_de": "Konnektoren: Zeit", "name_es": "Conectores: tiempo", "name_ja": "接続: 時", "name_zh": "连接词：时间", "name_ru": "Союзы: время",
       "cards": [
         {"n": 356, "TargetWord": "meanwhile", "definition": "at the same time as something else is happening", "pos": "adv"},
         {"n": 357, "TargetWord": "subsequently", "definition": "after that, later, as the next thing that happened", "pos": "adv"},
@@ -475,7 +475,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C5", "tier": 4, "slug": "cluster4_5_connectors_condition",
+      "cluster_id": "T4-C5", "tier": 4, "slug": "cluster4_5_connectors_condition", "name": "Connectors: Condition", "name_de": "Konnektoren: Bedingung", "name_es": "Conectores: condición", "name_ja": "接続: 条件", "name_zh": "连接词：条件", "name_ru": "Союзы: условие",
       "cards": [
         {"n": 376, "TargetWord": "provided", "definition": "on the condition that, only if something else is true", "pos": "conj"},
         {"n": 377, "TargetWord": "unless", "definition": "except if, only if something does not happen", "pos": "conj"},
@@ -500,7 +500,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C1", "tier": 5, "slug": "cluster5_1_institutional_obligation",
+      "cluster_id": "T5-C1", "tier": 5, "slug": "cluster5_1_institutional_obligation", "name": "Institutional: Obligation", "name_de": "Behörden: Pflicht", "name_es": "Institucional: obligación", "name_ja": "公: 義務", "name_zh": "制度：责任", "name_ru": "Обязательства по уставу",
       "cards": [
         {"n": 396, "TargetWord": "compulsory", "definition": "required by law or by the rules, you have no choice", "pos": "adj", "TriggerLesson": "013"},
         {"n": 397, "TargetWord": "obligatory", "definition": "required by a rule, law, or duty, not optional", "pos": "adj"},
@@ -527,7 +527,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C2", "tier": 5, "slug": "cluster5_2_institutional_process",
+      "cluster_id": "T5-C2", "tier": 5, "slug": "cluster5_2_institutional_process", "name": "Institutional: Process", "name_de": "Behörden: Verfahren", "name_es": "Institucional: proceso", "name_ja": "公: 手続き", "name_zh": "制度：程序", "name_ru": "Институциональные процедуры",
       "cards": [
         {"n": 418, "TargetWord": "amend", "definition": "to make small changes to a document or agreement to correct or improve it", "pos": "verb"},
         {"n": 419, "TargetWord": "stipulate", "definition": "to state exactly what must be done as part of an agreement or rule", "pos": "verb"},
@@ -552,7 +552,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C3", "tier": 5, "slug": "cluster5_3_institutional_rights",
+      "cluster_id": "T5-C3", "tier": 5, "slug": "cluster5_3_institutional_rights", "name": "Institutional: Rights", "name_de": "Behörden: Rechte", "name_es": "Institucional: derechos", "name_ja": "公: 権利", "name_zh": "制度：权益", "name_ru": "Институциональные правомочия",
       "cards": [
         {"n": 438, "TargetWord": "revoke", "definition": "to officially cancel or withdraw a right, permission, or agreement", "pos": "verb"},
         {"n": 439, "TargetWord": "breach", "definition": "a failure to follow a rule, agreement, or duty", "pos": "noun/verb"},
@@ -577,7 +577,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C4", "tier": 5, "slug": "cluster5_4_institutional_status",
+      "cluster_id": "T5-C4", "tier": 5, "slug": "cluster5_4_institutional_status", "name": "Institutional: Status", "name_de": "Behörden: Status", "name_es": "Institucional: estado", "name_ja": "公: 身分", "name_zh": "制度：身份状态", "name_ru": "Институциональный статус",
       "cards": [
         {"n": 458, "TargetWord": "applicable", "definition": "relevant to a particular situation, applying to the case in question", "pos": "adj"},
         {"n": 459, "TargetWord": "subsequent", "definition": "coming after something else in time or order", "pos": "adj"},
@@ -602,7 +602,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C5", "tier": 5, "slug": "cluster5_5_institutional_money",
+      "cluster_id": "T5-C5", "tier": 5, "slug": "cluster5_5_institutional_money", "name": "Institutional: Money", "name_de": "Behörden: Geld", "name_es": "Institucional: dinero", "name_ja": "公: 金銭", "name_zh": "制度：资金", "name_ru": "Институциональные платежи",
       "cards": [
         {"n": 478, "TargetWord": "invoice", "definition": "a document listing goods or services provided and the amount you must pay", "pos": "noun"},
         {"n": 479, "TargetWord": "installment", "definition": "one of several regular payments made over time to pay off a larger amount", "pos": "noun", "TargetWord_gb": "instalment"},

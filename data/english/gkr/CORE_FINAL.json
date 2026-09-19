@@ -5,7 +5,7 @@
   "offset": 0,
   "clusters": [
     {
-      "cluster_id": "T1-C1", "tier": 1, "slug": "cluster1_1_famous_twenty",
+      "cluster_id": "T1-C1", "tier": 1, "slug": "cluster1_1_famous_twenty", "name": "It's all Greek to me", "name_de": "Das kommt mir griechisch vor", "name_es": "Me suena a griego", "name_ja": "ギリシャ語はちんぷんかんぷん", "name_zh": "简直是希腊天书", "name_ru": "Греческая грамота",
       "cards": [
         {"n": 1, "TargetWord": "television", "definition": "a system for broadcasting and receiving moving images with sound", "pos": "noun", "syn": "TV", "TriggerLesson": "000"},
         {"n": 2, "TargetWord": "telephone", "definition": "a device for transmitting speech over a distance, typically by wire or radio", "pos": "noun", "syn": "phone, handset"},
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C2", "tier": 1, "slug": "cluster1_2_greek_whole_everyday",
+      "cluster_id": "T1-C2", "tier": 1, "slug": "cluster1_2_greek_whole_everyday", "name": "Everyday Greek words", "name_de": "Griechische Alltagswörter", "name_es": "Griego cotidiano", "name_ja": "日常のギリシャ語", "name_zh": "日常希腊词", "name_ru": "Греческие слова быта",
       "cards": [
         {"n": 21, "TargetWord": "school", "definition": "a place where children are taught by teachers", "pos": "noun", "syn": "academy, institute", "TriggerLesson": "001"},
         {"n": 22, "TargetWord": "church", "definition": "a building where Christians gather to worship", "pos": "noun", "syn": "chapel"},
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C3", "tier": 1, "slug": "cluster1_3_root_tele_auto_cycl_dynam_far_self_wheel_power",
+      "cluster_id": "T1-C3", "tier": 1, "slug": "cluster1_3_root_tele_auto_cycl_dynam_far_self_wheel_power", "name": "tele-, auto-, cycl-, dynam-", "name_de": "Fern, selbst, Rad, Kraft", "name_es": "Lejos, sí, rueda, fuerza", "name_ja": "遠く・自己・輪・力", "name_zh": "远、自、轮、力", "name_ru": "Далеко, сам, колесо, сила",
       "cards": [
         {"n": 41, "TargetWord": "telepathy", "definition": "supposed communication of thoughts directly between minds, without speech", "pos": "noun", "syn": "mind-reading, ESP", "TriggerLesson": "002"},
         {"n": 42, "TargetWord": "teleport", "definition": "to transport someone or something instantly across distance, as if by magic", "pos": "verb", "syn": "transport, beam (informal)"},
@@ -88,7 +88,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C4", "tier": 1, "slug": "cluster1_4_root_bio_graph_life_write",
+      "cluster_id": "T1-C4", "tier": 1, "slug": "cluster1_4_root_bio_graph_life_write", "name": "Life and writing: bio-, graph", "name_de": "Leben und Schrift: bio-, graph", "name_es": "Vida y escritura: bio-, graph", "name_ja": "生命と書く: bio-・graph", "name_zh": "生命与书写：bio-、graph", "name_ru": "Жизнь и письмо: bio-, graph",
       "cards": [
         {"n": 69, "TargetWord": "graphics", "definition": "visual images or designs, especially produced by computer", "pos": "noun", "syn": "images, visuals, artwork", "TriggerLesson": "004"},
         {"n": 70, "TargetWord": "paragraph", "definition": "a distinct section of a piece of writing dealing with a single point", "pos": "noun", "syn": "section, passage"},
@@ -107,7 +107,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C5", "tier": 1, "slug": "cluster1_5_root_micro_scope_photo_geo_small_view_light_earth",
+      "cluster_id": "T1-C5", "tier": 1, "slug": "cluster1_5_root_micro_scope_photo_geo_small_view_light_earth", "name": "micro-, -scope, photo-, geo-", "name_de": "Klein, sehen, Licht, Erde", "name_es": "Pequeño, ver, luz, tierra", "name_ja": "小さい・見る・光・地", "name_zh": "小、看、光、地", "name_ru": "Малое, зрение, свет, земля",
       "cards": [
         {"n": 83, "TargetWord": "microwave", "definition": "an oven that heats or cooks food rapidly using short electromagnetic waves", "pos": "noun", "syn": "nuke (informal)", "TriggerLesson": "005"},
         {"n": 84, "TargetWord": "microchip", "definition": "a small piece of semiconductor material etched with an electronic circuit", "pos": "noun", "syn": "chip, integrated circuit"},
@@ -135,7 +135,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C6", "tier": 1, "slug": "cluster1_6_prefixes_numbers_low_greek",
+      "cluster_id": "T1-C6", "tier": 1, "slug": "cluster1_6_prefixes_numbers_low_greek", "name": "Counting: mono- to tetra-", "name_de": "Zählen: mono- bis tetra-", "name_es": "Contar: de mono- a tetra-", "name_ja": "数える: mono-〜tetra-", "name_zh": "计数：mono-到tetra-", "name_ru": "Счёт: от mono- до tetra-",
       "cards": [
         {"n": 106, "TargetWord": "monopoly", "definition": "exclusive control of a market or resource, without competition", "pos": "noun", "syn": "cartel, exclusivity", "ant": "competition", "TriggerLesson": "007"},
         {"n": 107, "TargetWord": "monotone", "definition": "an unvarying tone of voice, without rise or fall in pitch", "pos": "noun", "syn": "drone, dullness", "ant": "variety"},
@@ -159,7 +159,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C7", "tier": 1, "slug": "cluster1_7_prefixes_numbers_high_greek",
+      "cluster_id": "T1-C7", "tier": 1, "slug": "cluster1_7_prefixes_numbers_high_greek", "name": "Counting on: hexa- to deca-", "name_de": "Weiterzählen: hexa- bis deca-", "name_es": "Seguir contando: hexa- a deca-", "name_ja": "さらに数える: hexa-〜deca-", "name_zh": "继续计数：hexa-到deca-", "name_ru": "Счёт дальше: hexa- – deca-",
       "cards": [
         {"n": 125, "TargetWord": "pentagon", "definition": "a plane figure with five straight sides and five angles", "pos": "noun", "syn": "five-sided figure", "TriggerLesson": "008"},
         {"n": 126, "TargetWord": "pentathlon", "definition": "an athletic contest consisting of five different events", "pos": "noun", "syn": "five-event contest"},
@@ -179,7 +179,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C8", "tier": 1, "slug": "cluster1_8_prefixes_size_metric_greek",
+      "cluster_id": "T1-C8", "tier": 1, "slug": "cluster1_8_prefixes_size_metric_greek", "name": "Scale: mega-, kilo-, macro-", "name_de": "Maßstab: mega-, kilo-, macro-", "name_es": "Escala: mega-, kilo-, macro-", "name_ja": "規模: mega-・kilo-・macro-", "name_zh": "尺度：mega-、kilo-、macro-", "name_ru": "Масштаб: mega-, kilo-, macro-",
       "cards": [
         {"n": 140, "TargetWord": "mega", "definition": "extremely large, excellent, or impressive", "pos": "adj", "syn": "huge, massive, enormous", "TriggerLesson": "009"},
         {"n": 141, "TargetWord": "megaphone", "definition": "a cone-shaped device that amplifies the voice", "pos": "noun", "syn": "bullhorn, loudhailer"},
@@ -202,7 +202,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C9", "tier": 1, "slug": "cluster1_9_suffixes_phone_meter_sound_measure",
+      "cluster_id": "T1-C9", "tier": 1, "slug": "cluster1_9_suffixes_phone_meter_sound_measure", "name": "Sound, measure: -phone, -meter", "name_de": "Klang, Maß: -phone, -meter", "name_es": "Sonido, medida: -phone, -meter", "name_ja": "音と計測: -phone・-meter", "name_zh": "声与量：-phone、-meter", "name_ru": "Звук, мера: -phone, -meter",
       "cards": [
         {"n": 158, "TargetWord": "symphony", "definition": "an extended composition for full orchestra, typically in four movements", "pos": "noun", "syn": "orchestral work", "ant": "cacophony", "TriggerLesson": "010"},
         {"n": 159, "TargetWord": "saxophone", "definition": "a single-reed woodwind instrument, usually made of brass, common in jazz", "pos": "noun", "syn": "sax"},
@@ -224,7 +224,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C10", "tier": 1, "slug": "cluster1_10_suffixes_ology_mania_study_obsession",
+      "cluster_id": "T1-C10", "tier": 1, "slug": "cluster1_10_suffixes_ology_mania_study_obsession", "name": "Study, craze: -ology, -mania", "name_de": "Lehre, Wahn: -ology, -mania", "name_es": "Estudio, manía: -ology, -mania", "name_ja": "学と狂: -ology・-mania", "name_zh": "学与狂：-ology、-mania", "name_ru": "Наука, мания: -ology, -mania",
       "cards": [
         {"n": 175, "TargetWord": "technology", "definition": "the application of scientific knowledge for practical purposes, especially in industry", "pos": "noun", "syn": "engineering, machinery", "TriggerLesson": "011"},
         {"n": 176, "TargetWord": "psychology", "definition": "the scientific study of the human mind and behavior", "pos": "noun", "syn": "behavioral science", "definition_gb": "the scientific study of the human mind and behaviour"},
@@ -246,7 +246,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C11", "tier": 1, "slug": "cluster1_11_prefixes_anti_hyper_pseudo_common",
+      "cluster_id": "T1-C11", "tier": 1, "slug": "cluster1_11_prefixes_anti_hyper_pseudo_common", "name": "Against, over, false: anti-…", "name_de": "Gegen, über, falsch: anti-…", "name_es": "Contra, sobre, falso: anti-…", "name_ja": "反・超・偽: anti-…", "name_zh": "反、超、伪：anti-…", "name_ru": "Против, сверх, псевдо: anti-",
       "cards": [
         {"n": 192, "TargetWord": "antibiotic", "definition": "a medicine that destroys or inhibits the growth of bacteria", "pos": "noun", "syn": "antimicrobial, antibacterial", "ant": "probiotic", "TriggerLesson": "012"},
         {"n": 193, "TargetWord": "antidote", "definition": "a substance that counteracts a particular poison", "pos": "noun", "syn": "antitoxin, remedy", "ant": "poison"},
@@ -271,7 +271,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C1", "tier": 2, "slug": "cluster2_1_greek_whole_stage_state",
+      "cluster_id": "T2-C1", "tier": 2, "slug": "cluster2_1_greek_whole_stage_state", "name": "Everyday Greek words II", "name_de": "Griechische Alltagswörter II", "name_es": "Griego cotidiano II", "name_ja": "日常のギリシャ語 II", "name_zh": "日常希腊词 II", "name_ru": "Греческие слова быта II",
       "cards": [
         {"n": 212, "TargetWord": "orchestra", "definition": "a large group of musicians playing together under a conductor", "pos": "noun", "syn": "ensemble, philharmonic", "TriggerLesson": "013"},
         {"n": 213, "TargetWord": "chorus", "definition": "a group singing together, or the repeated part of a song", "pos": "noun", "syn": "refrain"},
@@ -296,7 +296,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C2", "tier": 2, "slug": "cluster2_2_prefixes_position_peri_dia_epi",
+      "cluster_id": "T2-C2", "tier": 2, "slug": "cluster2_2_prefixes_position_peri_dia_epi", "name": "Peri-, Dia-, Epi-", "name_de": "Präfixe: Peri-/Dia-/Epi-", "name_es": "Prefijos: Peri-/Dia-/Epi-", "name_ja": "接頭辞: Peri-/Dia-/Epi-", "name_zh": "前缀：Peri-、Dia-、Epi-", "name_ru": "Префиксы: Peri-/Dia-/Epi-",
       "cards": [
         {"n": 232, "TargetWord": "period", "definition": "a length of time, especially one considered distinct or characteristic", "pos": "noun", "syn": "interval, era, span", "TriggerLesson": "014"},
         {"n": 233, "TargetWord": "pericardium", "definition": "the double-walled membranous sac that encloses the heart", "pos": "noun", "syn": "cardiac sac"},
@@ -317,7 +317,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C3", "tier": 2, "slug": "cluster2_3_prefixes_together_syn_ana_cata_apo",
+      "cluster_id": "T2-C3", "tier": 2, "slug": "cluster2_3_prefixes_together_syn_ana_cata_apo", "name": "Syn-, Ana-, Cata-, Apo-", "name_de": "Präfixe: Syn-/Ana-/Cata-/Apo-", "name_es": "Prefijos: Syn-/Ana-/Cata-/Apo-", "name_ja": "接頭辞: Syn-/Ana-/Cata-/Apo-", "name_zh": "前缀：Syn-、Ana-、Cata-、Apo-", "name_ru": "Префиксы: Syn-/Ana-/Cata-/Apo-",
       "cards": [
         {"n": 248, "TargetWord": "system", "definition": "a set of interconnected parts working together as a whole", "pos": "noun", "syn": "network, structure", "ant": "chaos, disorder", "TriggerLesson": "015"},
         {"n": 249, "TargetWord": "synthesis", "definition": "the combination of separate elements to form a new whole", "pos": "noun", "syn": "combination, fusion", "ant": "analysis, breakdown"},
@@ -343,7 +343,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C4", "tier": 2, "slug": "cluster2_4_prefixes_inside_outside_endo_exo_ecto_meta",
+      "cluster_id": "T2-C4", "tier": 2, "slug": "cluster2_4_prefixes_inside_outside_endo_exo_ecto_meta", "name": "Endo-, Exo-, Ecto-, Meta-", "name_de": "Präfixe: Endo-/Exo-/Ecto-", "name_es": "Prefijos: Endo-/Exo-/Ecto-", "name_ja": "接頭辞: Endo-/Exo-/Ecto-/Meta-", "name_zh": "前缀：Endo-/Exo-/Ecto-/Meta-", "name_ru": "Префиксы: Endo-/Exo-/Ecto-",
       "cards": [
         {"n": 269, "TargetWord": "endoscope", "definition": "a thin, flexible instrument with a light and camera, used to see inside the body", "pos": "noun", "syn": "borescope, viewing probe", "TriggerLesson": "016"},
         {"n": 270, "TargetWord": "endocrine", "definition": "relating to glands that secrete hormones directly into the bloodstream", "pos": "adj", "syn": "hormonal, glandular", "ant": "exocrine"},
@@ -367,7 +367,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C5", "tier": 2, "slug": "cluster2_5_root_log_nomy_dem_polit_word_law_people_city",
+      "cluster_id": "T2-C5", "tier": 2, "slug": "cluster2_5_root_log_nomy_dem_polit_word_law_people_city", "name": "Log, -nomy, Dem & Polit", "name_de": "Wurzeln: Log, Nomy, Dem, Polit", "name_es": "Raíces: Log, Nomy, Dem y Polit", "name_ja": "語根: Log・-nomy・Dem・Polit", "name_zh": "词根：Log、-nomy、Dem与Polit", "name_ru": "Корни: Log, -nomy, Dem и Polit",
       "cards": [
         {"n": 288, "TargetWord": "logic", "definition": "a system of reasoning used to reach valid conclusions", "pos": "noun", "syn": "reasoning, rationale", "ant": "illogic", "TriggerLesson": "017"},
         {"n": 289, "TargetWord": "analogy", "definition": "a comparison between two different things that highlights a shared feature", "pos": "noun", "syn": "comparison, parallel", "ant": "contrast"},
@@ -395,7 +395,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C6", "tier": 2, "slug": "cluster2_6_root_arch_chron_archae_rule_time",
+      "cluster_id": "T2-C6", "tier": 2, "slug": "cluster2_6_root_arch_chron_archae_rule_time", "name": "Arch & Chron", "name_de": "Wurzeln: Arch & Chron", "name_es": "Raíces: Arch y Chron", "name_ja": "語根: Arch・Chron", "name_zh": "词根：Arch与Chron", "name_ru": "Корни: Arch и Chron",
       "cards": [
         {"n": 311, "TargetWord": "monarch", "definition": "a sovereign head of state, especially a king or queen", "pos": "noun", "syn": "sovereign, ruler", "ant": "subject", "TriggerLesson": "019"},
         {"n": 312, "TargetWord": "architect", "definition": "a person who designs buildings and oversees their construction", "pos": "noun", "syn": "designer, planner"},
@@ -415,7 +415,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C7", "tier": 2, "slug": "cluster2_7_root_techn_mech_cosm_craft_order",
+      "cluster_id": "T2-C7", "tier": 2, "slug": "cluster2_7_root_techn_mech_cosm_craft_order", "name": "Techn & Mech", "name_de": "Wurzeln: Techn & Mech", "name_es": "Raíces: Techn y Mech", "name_ja": "語根: Techn・Mech", "name_zh": "词根：Techn与Mech", "name_ru": "Корни: Techn и Mech",
       "cards": [
         {"n": 326, "TargetWord": "pyrotechnic", "definition": "relating to fireworks, or spectacularly dramatic in style", "pos": "adj", "syn": "explosive, spectacular", "TriggerLesson": "020"},
         {"n": 327, "TargetWord": "technique", "definition": "a particular way of carrying out a task, especially one requiring skill", "pos": "noun", "syn": "method, approach, skill"},
@@ -436,7 +436,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C8", "tier": 2, "slug": "cluster2_8_suffixes_ism_ist_ise_practice",
+      "cluster_id": "T2-C8", "tier": 2, "slug": "cluster2_8_suffixes_ism_ist_ise_practice", "name": "-ism, -ist, -ize", "name_de": "Suffixe: -ism/-ist/-ize", "name_es": "Sufijos: -ism/-ist/-ize", "name_ja": "接尾辞: -ism/-ist/-ize", "name_zh": "后缀：-ism、-ist、-ize", "name_ru": "Суффиксы: -ism/-ist/-ize",
       "cards": [
         {"n": 342, "TargetWord": "criticism", "definition": "the expression of disapproval based on perceived faults or mistakes", "pos": "noun", "syn": "censure, disapproval", "ant": "praise, approval", "TriggerLesson": "021"},
         {"n": 343, "TargetWord": "mechanism", "definition": "a system of parts working together within a machine or process", "pos": "noun", "syn": "system, apparatus, device"},
@@ -460,7 +460,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C9", "tier": 2, "slug": "cluster2_9_suffixes_power_rule_cracy_crat_archy",
+      "cluster_id": "T2-C9", "tier": 2, "slug": "cluster2_9_suffixes_power_rule_cracy_crat_archy", "name": "-cracy & -archy", "name_de": "Suffixe: -cracy & -archy", "name_es": "Sufijos: -cracy y -archy", "name_ja": "接尾辞: -cracy・-archy", "name_zh": "后缀：-cracy与-archy", "name_ru": "Суффиксы: -cracy и -archy",
       "cards": [
         {"n": 361, "TargetWord": "aristocracy", "definition": "a ruling class of people holding hereditary titles or high social rank", "pos": "noun", "syn": "nobility, gentry, elite", "ant": "democracy", "TriggerLesson": "022"},
         {"n": 362, "TargetWord": "theocracy", "definition": "a system of government in which religious leaders rule in the name of a god", "pos": "noun", "syn": "religious state", "ant": "secular state"},
@@ -483,7 +483,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C10", "tier": 2, "slug": "cluster2_10_root_path_phil_soph_feeling_love_wisdom",
+      "cluster_id": "T2-C10", "tier": 2, "slug": "cluster2_10_root_path_phil_soph_feeling_love_wisdom", "name": "Path, Phil & Soph", "name_de": "Wurzeln: Path, Phil & Soph", "name_es": "Raíces: Path, Phil y Soph", "name_ja": "語根: Path・Phil・Soph", "name_zh": "词根：Path、Phil与Soph", "name_ru": "Корни: Path, Phil и Soph",
       "cards": [
         {"n": 379, "TargetWord": "pathetic", "definition": "arousing pity or contempt through weakness or inadequacy", "pos": "adj", "syn": "pitiful, feeble", "ant": "impressive, admirable", "TriggerLesson": "023"},
         {"n": 380, "TargetWord": "sympathy", "definition": "a feeling of pity or sorrow for someone else's misfortune", "pos": "noun", "syn": "compassion, pity", "ant": "indifference"},
@@ -504,7 +504,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C11", "tier": 2, "slug": "cluster2_11_prefixes_quality_negation_a_dys_eu_amphi",
+      "cluster_id": "T2-C11", "tier": 2, "slug": "cluster2_11_prefixes_quality_negation_a_dys_eu_amphi", "name": "A-, Dys-, Eu-, Amphi-", "name_de": "Präfixe: A-/Dys-/Eu-/Amphi-", "name_es": "Prefijos: A-/Dys-/Eu-/Amphi-", "name_ja": "接頭辞: A-/Dys-/Eu-/Amphi-", "name_zh": "前缀：A-、Dys-、Eu-、Amphi-", "name_ru": "Префиксы: A-/Dys-/Eu-/Amphi-",
       "cards": [
         {"n": 395, "TargetWord": "atheist", "definition": "a person who does not believe in God or gods", "pos": "noun", "syn": "nonbeliever, skeptic", "ant": "theist, believer", "TriggerLesson": "024"},
         {"n": 396, "TargetWord": "anomaly", "definition": "something that deviates from what is standard, normal, or expected", "pos": "noun", "syn": "aberration, oddity, deviation", "ant": "norm, regularity"},
@@ -531,7 +531,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C1", "tier": 3, "slug": "cluster3_1_greek_whole_space_sea_stone",
+      "cluster_id": "T3-C1", "tier": 3, "slug": "cluster3_1_greek_whole_space_sea_stone", "name": "Everyday Greek words III", "name_de": "Griechische Alltagswörter III", "name_es": "Griego cotidiano III", "name_ja": "日常のギリシャ語 III", "name_zh": "日常希腊词 III", "name_ru": "Греческие слова быта III",
       "cards": [
         {"n": 417, "TargetWord": "ocean", "definition": "the vast body of salt water that covers most of the planet's surface", "pos": "noun", "syn": "sea, deep", "TriggerLesson": "025"},
         {"n": 418, "TargetWord": "zone", "definition": "an area marked off from its surroundings for a particular use or rule", "pos": "noun", "syn": "belt, band"},
@@ -556,7 +556,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C2", "tier": 3, "slug": "cluster3_2_root_theo_myth_anthrop_onto_dox_god_human_being",
+      "cluster_id": "T3-C2", "tier": 3, "slug": "cluster3_2_root_theo_myth_anthrop_onto_dox_god_human_being", "name": "Theo, Anthrop, Onto & Dox", "name_de": "Wurzeln: Theo, Anthrop & Onto", "name_es": "Raíces: Theo, Anthrop y Onto", "name_ja": "語根: Theo・Anthrop・Onto", "name_zh": "词根：Theo、Anthrop与Onto", "name_ru": "Корни: Theo, Anthrop и Onto",
       "cards": [
         {"n": 437, "TargetWord": "theism", "definition": "belief in the existence of one or more gods, especially a personal creator god", "pos": "noun", "syn": "faith, deism", "ant": "atheism", "TriggerLesson": "026"},
         {"n": 438, "TargetWord": "atheism", "definition": "disbelief in, or denial of the existence of, god or gods", "pos": "noun", "syn": "nonbelief, skepticism", "ant": "theism, faith"},
@@ -584,7 +584,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C3", "tier": 3, "slug": "cluster3_3_root_gno_phan_phem_know_show_speak",
+      "cluster_id": "T3-C3", "tier": 3, "slug": "cluster3_3_root_gno_phan_phem_know_show_speak", "name": "Gno, Phan & Phem", "name_de": "Wurzeln: Gno, Phan & Phem", "name_es": "Raíces: Gno, Phan y Phem", "name_ja": "語根: Gno・Phan・Phem", "name_zh": "词根：Gno、Phan与Phem", "name_ru": "Корни: Gno, Phan и Phem",
       "cards": [
         {"n": 460, "TargetWord": "gnosis", "definition": "esoteric or intuitive spiritual knowledge, especially of divine mysteries", "pos": "noun", "syn": "insight, illumination", "ant": "ignorance", "TriggerLesson": "028"},
         {"n": 461, "TargetWord": "diagnostic", "definition": "relating to or used in identifying a disease or problem", "pos": "adj", "syn": "analytical, indicative"},
@@ -604,7 +604,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C4", "tier": 3, "slug": "cluster3_4_root_thes_top_tom_place_cut",
+      "cluster_id": "T3-C4", "tier": 3, "slug": "cluster3_4_root_thes_top_tom_place_cut", "name": "Thes, Top & Tom", "name_de": "Wurzeln: Thes, Top & Tom", "name_es": "Raíces: Thes, Top y Tom", "name_ja": "語根: Thes・Top・Tom", "name_zh": "词根：Thes、Top与Tom", "name_ru": "Корни: Thes, Top и Tom",
       "cards": [
         {"n": 475, "TargetWord": "thesis", "definition": "a statement or theory put forward to be maintained or proved by argument", "pos": "noun", "syn": "proposition, dissertation, argument", "TriggerLesson": "029"},
         {"n": 476, "TargetWord": "prosthetic", "definition": "relating to or serving as an artificial replacement for a missing body part", "pos": "adj", "syn": "artificial, bionic", "ant": "natural"},
@@ -626,7 +626,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C5", "tier": 3, "slug": "cluster3_5_root_aesthe_etho_mnem_perception_character",
+      "cluster_id": "T3-C5", "tier": 3, "slug": "cluster3_5_root_aesthe_etho_mnem_perception_character", "name": "Aesthe, Etho & Mnem", "name_de": "Wurzeln: Aesthe, Etho & Mnem", "name_es": "Raíces: Aesthe, Etho y Mnem", "name_ja": "語根: Aesthe・Etho・Mnem", "name_zh": "词根：Aesthe、Etho与Mnem", "name_ru": "Корни: Aesthe, Etho и Mnem",
       "cards": [
         {"n": 492, "TargetWord": "aesthetic", "definition": "relating to beauty and the appreciation of what is pleasing to the senses", "pos": "adj", "syn": "artistic, tasteful", "ant": "inartistic", "TriggerLesson": "030"},
         {"n": 493, "TargetWord": "aesthetics", "definition": "the branch of philosophy dealing with beauty, art, and taste", "pos": "noun", "syn": "taste, artistic sensibility"},
@@ -644,7 +644,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C6", "tier": 3, "slug": "cluster3_6_root_morph_taxis_ortho_form_order",
+      "cluster_id": "T3-C6", "tier": 3, "slug": "cluster3_6_root_morph_taxis_ortho_form_order", "name": "Morph, Taxis & Ortho", "name_de": "Wurzeln: Morph, Taxis & Ortho", "name_es": "Raíces: Morph, Taxis y Ortho", "name_ja": "語根: Morph・Taxis・Ortho", "name_zh": "词根：Morph、Taxis与Ortho", "name_ru": "Корни: Morph, Taxis и Ortho",
       "cards": [
         {"n": 505, "TargetWord": "polymorphic", "definition": "occurring or existing in several different forms", "pos": "adj", "syn": "multiform, variable", "ant": "uniform, fixed", "TriggerLesson": "031"},
         {"n": 506, "TargetWord": "morph", "definition": "to change smoothly from one image, shape, or form into another", "pos": "verb", "syn": "transform, shift, mutate"},
@@ -662,7 +662,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C7", "tier": 3, "slug": "cluster3_7_prefixes_same_other_equal",
+      "cluster_id": "T3-C7", "tier": 3, "slug": "cluster3_7_prefixes_same_other_equal", "name": "Homo-, Hetero-, Iso-", "name_de": "Präfixe: Homo-/Hetero-/Iso-", "name_es": "Prefijos: Homo-/Hetero-/Iso-", "name_ja": "接頭辞: Homo-/Hetero-/Iso-", "name_zh": "前缀：Homo-、Hetero-、Iso-", "name_ru": "Префиксы: Homo-/Hetero-/Iso-",
       "cards": [
         {"n": 518, "TargetWord": "homosexual", "definition": "sexually or romantically attracted to people of the same sex", "pos": "adj", "syn": "gay", "ant": "heterosexual", "TriggerLesson": "032"},
         {"n": 519, "TargetWord": "homogeneous", "definition": "made up of parts or people that are all similar to one another", "pos": "adj", "syn": "uniform, consistent", "ant": "heterogeneous"},
@@ -682,7 +682,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C8", "tier": 3, "slug": "cluster3_8_prefixes_time_order_neo_proto_pro",
+      "cluster_id": "T3-C8", "tier": 3, "slug": "cluster3_8_prefixes_time_order_neo_proto_pro", "name": "Neo-, Proto-, Pro-", "name_de": "Präfixe: Neo-/Proto-/Pro-", "name_es": "Prefijos: Neo-/Proto-/Pro-", "name_ja": "接頭辞: Neo-/Proto-/Pro-", "name_zh": "前缀：Neo-、Proto-、Pro-", "name_ru": "Префиксы: Neo-/Proto-/Pro-",
       "cards": [
         {"n": 533, "TargetWord": "neon", "definition": "an inert gaseous chemical element that glows orange-red in illuminated signs and lights", "pos": "noun", "syn": "neon gas, noble gas", "TriggerLesson": "033"},
         {"n": 534, "TargetWord": "neologism", "definition": "a newly coined word or expression", "pos": "noun", "syn": "coinage, nonce word", "ant": "archaism"},
@@ -706,7 +706,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C9", "tier": 3, "slug": "cluster3_9_root_xen_crypt_bibli_strange_hidden_book",
+      "cluster_id": "T3-C9", "tier": 3, "slug": "cluster3_9_root_xen_crypt_bibli_strange_hidden_book", "name": "Xen, Crypt & Bibli", "name_de": "Wurzeln: Xen, Crypt & Bibli", "name_es": "Raíces: Xen, Crypt y Bibli", "name_ja": "語根: Xen・Crypt・Bibli", "name_zh": "词根：Xen、Crypt与Bibli", "name_ru": "Корни: Xen, Crypt и Bibli",
       "cards": [
         {"n": 552, "TargetWord": "xenophobia", "definition": "intense dislike, distrust, or fear of people from other countries", "pos": "noun", "syn": "nativism, chauvinism", "ant": "hospitality, tolerance", "TriggerLesson": "034"},
         {"n": 553, "TargetWord": "xenophobic", "definition": "showing fear, dislike, or prejudice toward people from other countries", "pos": "adj", "syn": "nativist, insular", "ant": "welcoming, cosmopolitan"},
@@ -726,7 +726,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C10", "tier": 3, "slug": "cluster3_10_root_trop_kine_erg_turn_motion_work",
+      "cluster_id": "T3-C10", "tier": 3, "slug": "cluster3_10_root_trop_kine_erg_turn_motion_work", "name": "Trop, Kine & Erg", "name_de": "Wurzeln: Trop, Kine & Erg", "name_es": "Raíces: Trop, Kine y Erg", "name_ja": "語根: Trop・Kine・Erg", "name_zh": "词根：Trop、Kine与Erg", "name_ru": "Корни: Trop, Kine и Erg",
       "cards": [
         {"n": 567, "TargetWord": "tropical", "definition": "relating to the hot, humid regions near the equator", "pos": "adj", "syn": "equatorial, torrid", "ant": "temperate, polar", "TriggerLesson": "035"},
         {"n": 568, "TargetWord": "entropy", "definition": "a measure of disorder or randomness within a system", "pos": "noun", "syn": "disorder, chaos", "ant": "order"},
@@ -746,7 +746,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C11", "tier": 3, "slug": "cluster3_11_suffixes_onym_gram_graphy_name_writing",
+      "cluster_id": "T3-C11", "tier": 3, "slug": "cluster3_11_suffixes_onym_gram_graphy_name_writing", "name": "-onym & -gram", "name_de": "Suffixe: -onym & -gram", "name_es": "Sufijos: -onym y -gram", "name_ja": "接尾辞: -onym・-gram", "name_zh": "后缀：-onym与-gram", "name_ru": "Суффиксы: -onym и -gram",
       "cards": [
         {"n": 582, "TargetWord": "oceanography", "definition": "the scientific study of the physical and biological features of the ocean", "pos": "noun", "syn": "marine science, oceanology", "TriggerLesson": "036"},
         {"n": 583, "TargetWord": "acronym", "definition": "a word formed from the initial letters of a longer name or phrase", "pos": "noun", "syn": "initialism", "ant": "full name"},
@@ -768,7 +768,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C1", "tier": 4, "slug": "cluster4_1_greek_whole_medicine",
+      "cluster_id": "T4-C1", "tier": 4, "slug": "cluster4_1_greek_whole_medicine", "name": "Everyday Greek words IV", "name_de": "Griechische Alltagswörter IV", "name_es": "Griego cotidiano IV", "name_ja": "日常のギリシャ語 IV", "name_zh": "日常希腊词 IV", "name_ru": "Греческие слова быта IV",
       "cards": [
         {"n": 599, "TargetWord": "therapy", "definition": "treatment given over time to heal a condition or ease distress", "pos": "noun", "syn": "treatment, care", "TriggerLesson": "037"},
         {"n": 600, "TargetWord": "clinic", "definition": "a place where outpatients are seen and advised by doctors", "pos": "noun", "syn": "practice, dispensary"},
@@ -793,7 +793,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C2", "tier": 4, "slug": "cluster4_2_root_electro_therm_amber_heat",
+      "cluster_id": "T4-C2", "tier": 4, "slug": "cluster4_2_root_electro_therm_amber_heat", "name": "Electro & Therm", "name_de": "Wurzeln: Electro & Therm", "name_es": "Raíces: Electro y Therm", "name_ja": "語根: Electro・Therm", "name_zh": "词根：Electro与Therm", "name_ru": "Корни: Electro и Therm",
       "cards": [
         {"n": 619, "TargetWord": "electricity", "definition": "a form of energy carried by moving charged particles, used to power lighting, heating and machinery", "pos": "noun", "syn": "power, current", "TriggerLesson": "038"},
         {"n": 620, "TargetWord": "electric", "definition": "worked by, powered by, or producing electricity", "pos": "adj", "syn": "powered, live", "ant": "manual"},
@@ -813,7 +813,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C3", "tier": 4, "slug": "cluster4_3_root_hydro_pyr_aero_water_fire_air",
+      "cluster_id": "T4-C3", "tier": 4, "slug": "cluster4_3_root_hydro_pyr_aero_water_fire_air", "name": "Hydro, Pyr & Aero", "name_de": "Wurzeln: Hydro, Pyr & Aero", "name_es": "Raíces: Hydro, Pyr y Aero", "name_ja": "語根: Hydro・Pyr・Aero", "name_zh": "词根：Hydro、Pyr与Aero", "name_ru": "Корни: Hydro, Pyr и Aero",
       "cards": [
         {"n": 634, "TargetWord": "hydrogen", "definition": "the lightest and most abundant chemical element, a colorless gas that forms water when burned", "pos": "noun", "syn": "H, dihydrogen", "TriggerLesson": "039", "definition_gb": "the lightest and most abundant chemical element, a colourless gas that forms water when burned"},
         {"n": 635, "TargetWord": "hydraulic", "definition": "operated by, or relating to, the movement and pressure of liquid through pipes or cylinders", "pos": "adj", "syn": "fluid-powered", "ant": "pneumatic"},
@@ -835,7 +835,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C4", "tier": 4, "slug": "cluster4_4_root_chrom_oxy_lith_colour_acid_stone",
+      "cluster_id": "T4-C4", "tier": 4, "slug": "cluster4_4_root_chrom_oxy_lith_colour_acid_stone", "name": "Chrom, Oxy & Lith", "name_de": "Wurzeln: Chrom, Oxy & Lith", "name_es": "Raíces: Chrom, Oxy y Lith", "name_ja": "語根: Chrom・Oxy・Lith", "name_zh": "词根：Chrom、Oxy与Lith", "name_ru": "Корни: Chrom, Oxy и Lith",
       "cards": [
         {"n": 651, "TargetWord": "chromosome", "definition": "a threadlike structure in a cell's nucleus that carries genetic information", "pos": "noun", "syn": "gene carrier", "TriggerLesson": "040"},
         {"n": 652, "TargetWord": "monochrome", "definition": "produced or displayed using only one color, or varying shades of a single color", "pos": "adj", "syn": "black-and-white, grayscale", "ant": "multicolored, colorful", "definition_gb": "produced or displayed using only one colour, or varying shades of a single colour"},
@@ -856,7 +856,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C5", "tier": 4, "slug": "cluster4_5_root_astr_sphere_star_sky",
+      "cluster_id": "T4-C5", "tier": 4, "slug": "cluster4_5_root_astr_sphere_star_sky", "name": "Astr & Sphere", "name_de": "Wurzeln: Astr & Sphere", "name_es": "Raíces: Astr y Sphere", "name_ja": "語根: Astr・Sphere", "name_zh": "词根：Astr与Sphere", "name_ru": "Корни: Astr и Sphere",
       "cards": [
         {"n": 667, "TargetWord": "disaster", "definition": "a sudden event causing great damage, loss, or suffering", "pos": "noun", "syn": "catastrophe, calamity", "ant": "triumph", "TriggerLesson": "041"},
         {"n": 668, "TargetWord": "asterism", "definition": "a small, easily recognizable pattern of stars, smaller than a constellation", "pos": "noun", "syn": "star cluster, star pattern", "definition_gb": "a small, easily recognisable pattern of stars, smaller than a constellation"},
@@ -874,7 +874,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C6", "tier": 4, "slug": "cluster4_6_root_physio_zo_phyt_nature_life",
+      "cluster_id": "T4-C6", "tier": 4, "slug": "cluster4_6_root_physio_zo_phyt_nature_life", "name": "Physio, Zo & Phyt", "name_de": "Wurzeln: Physio, Zo & Phyt", "name_es": "Raíces: Physio, Zo y Phyt", "name_ja": "語根: Physio・Zo・Phyt", "name_zh": "词根：Physio、Zo与Phyt", "name_ru": "Корни: Physio, Zo и Phyt",
       "cards": [
         {"n": 680, "TargetWord": "physics", "definition": "the branch of science that studies matter, energy, and the fundamental forces of nature", "pos": "noun", "syn": "natural science, mechanics", "TriggerLesson": "042"},
         {"n": 681, "TargetWord": "physical", "definition": "relating to the body, or to the material world as opposed to the mind or spirit", "pos": "adj", "syn": "bodily, corporeal", "ant": "mental, spiritual"},
@@ -895,7 +895,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C7", "tier": 4, "slug": "cluster4_7_root_geno_gyn_andr_birth_sex",
+      "cluster_id": "T4-C7", "tier": 4, "slug": "cluster4_7_root_geno_gyn_andr_birth_sex", "name": "Geno, Gyn & Andr", "name_de": "Wurzeln: Geno, Gyn & Andr", "name_es": "Raíces: Geno, Gyn y Andr", "name_ja": "語根: Geno・Gyn・Andr", "name_zh": "词根：Geno、Gyn与Andr", "name_ru": "Корни: Geno, Gyn и Andr",
       "cards": [
         {"n": 696, "TargetWord": "nitrogen", "definition": "a colorless, odorless gas that forms most of the Earth's atmosphere", "pos": "noun", "syn": "N, dinitrogen", "TriggerLesson": "043", "definition_gb": "a colourless, odourless gas that forms most of the Earth's atmosphere"},
         {"n": 697, "TargetWord": "genetics", "definition": "the branch of biology concerned with heredity and variation among organisms", "pos": "noun", "syn": "heredity science, genomics"},
@@ -916,7 +916,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C8", "tier": 4, "slug": "cluster4_8_root_cyto_mito_karyo_cell",
+      "cluster_id": "T4-C8", "tier": 4, "slug": "cluster4_8_root_cyto_mito_karyo_cell", "name": "Cyto, Mito & Karyo", "name_de": "Wurzeln: Cyto, Mito & Karyo", "name_es": "Raíces: Cyto, Mito y Karyo", "name_ja": "語根: Cyto・Mito・Karyo", "name_zh": "词根：Cyto、Mito与Karyo", "name_ru": "Корни: Cyto, Mito и Karyo",
       "cards": [
         {"n": 712, "TargetWord": "cytology", "definition": "the branch of biology concerned with the structure and function of cells", "pos": "noun", "syn": "cell biology, histology", "TriggerLesson": "044"},
         {"n": 713, "TargetWord": "cytoplasm", "definition": "the jelly-like material within a cell membrane that surrounds the nucleus and organelles", "pos": "noun", "syn": "cell fluid, protoplasm"},
@@ -934,7 +934,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C9", "tier": 4, "slug": "cluster4_9_prefixes_many_all_beside_poly_pan_para",
+      "cluster_id": "T4-C9", "tier": 4, "slug": "cluster4_9_prefixes_many_all_beside_poly_pan_para", "name": "Poly-, Pan-, Para-", "name_de": "Präfixe: Poly-/Pan-/Para-", "name_es": "Prefijos: Poly-/Pan-/Para-", "name_ja": "接頭辞: Poly-/Pan-/Para-", "name_zh": "前缀：Poly-、Pan-、Para-", "name_ru": "Префиксы: Poly-/Pan-/Para-",
       "cards": [
         {"n": 725, "TargetWord": "polyester", "definition": "a synthetic fabric or resin made from a chain of linked ester compounds", "pos": "noun", "syn": "Terylene, synthetic fiber", "ant": "natural fiber", "TriggerLesson": "045"},
         {"n": 726, "TargetWord": "polyglot", "definition": "a person who speaks or writes several languages fluently", "pos": "noun", "syn": "linguist", "ant": "monoglot"},
@@ -957,7 +957,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C10", "tier": 4, "slug": "cluster4_10_suffixes_oid_osis_lysis_forms_states",
+      "cluster_id": "T4-C10", "tier": 4, "slug": "cluster4_10_suffixes_oid_osis_lysis_forms_states", "name": "-oid, -osis, -lysis", "name_de": "Suffixe: -oid/-osis/-lysis", "name_es": "Sufijos: -oid/-osis/-lysis", "name_ja": "接尾辞: -oid/-osis/-lysis", "name_zh": "后缀：-oid、-osis、-lysis", "name_ru": "Суффиксы: -oid/-osis/-lysis",
       "cards": [
         {"n": 743, "TargetWord": "humanoid", "definition": "having a human form or appearance, especially as a robot or fictional being", "pos": "adj", "syn": "android, anthropoid", "TriggerLesson": "046"},
         {"n": 744, "TargetWord": "thyroid", "definition": "the butterfly-shaped gland in the neck that regulates metabolism", "pos": "noun", "syn": "thyroid gland"},
@@ -981,7 +981,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C11", "tier": 4, "slug": "cluster4_11_suffixes_metry_gamy_drome_measure_course",
+      "cluster_id": "T4-C11", "tier": 4, "slug": "cluster4_11_suffixes_metry_gamy_drome_measure_course", "name": "-metry, -gamy, -drome", "name_de": "Suffixe: -metry/-gamy/-drome", "name_es": "Sufijos: -metry/-gamy/-drome", "name_ja": "接尾辞: -metry/-gamy/-drome", "name_zh": "后缀：-metry、-gamy、-drome", "name_ru": "Суффиксы: -metry/-gamy/-drome",
       "cards": [
         {"n": 762, "TargetWord": "isometry", "definition": "a transformation that preserves distances between points", "pos": "noun", "syn": "congruence transformation", "ant": "distortion", "TriggerLesson": "047"},
         {"n": 763, "TargetWord": "photometry", "definition": "the science of measuring the intensity of light", "pos": "noun", "syn": "light measurement, radiometry"},
@@ -1003,7 +1003,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C1", "tier": 5, "slug": "cluster5_1_root_cardio_haem_angio_heart_blood",
+      "cluster_id": "T5-C1", "tier": 5, "slug": "cluster5_1_root_cardio_haem_angio_heart_blood", "name": "Cardio, Hem & Angio", "name_de": "Wurzeln: Cardio, Hem & Angio", "name_es": "Raíces: Cardio, Hem y Angio", "name_ja": "語根: Cardio・Hem・Angio", "name_zh": "词根：Cardio、Hem与Angio", "name_ru": "Корни: Cardio, Hem и Angio",
       "cards": [
         {"n": 779, "TargetWord": "cardiology", "definition": "the branch of medicine that studies and treats diseases of the heart", "pos": "noun", "syn": "heart medicine", "TriggerLesson": "048"},
         {"n": 780, "TargetWord": "cardiac", "definition": "relating to or affecting the heart", "pos": "adj", "syn": "coronary"},
@@ -1026,7 +1026,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C2", "tier": 5, "slug": "cluster5_2_root_derm_osteo_arthro_pod_skin_bone",
+      "cluster_id": "T5-C2", "tier": 5, "slug": "cluster5_2_root_derm_osteo_arthro_pod_skin_bone", "name": "Derm, Osteo & Arthro", "name_de": "Wurzeln: Derm, Osteo & Arthro", "name_es": "Raíces: Derm, Osteo y Arthro", "name_ja": "語根: Derm・Osteo・Arthro", "name_zh": "词根：Derm、Osteo与Arthro", "name_ru": "Корни: Derm, Osteo и Arthro",
       "cards": [
         {"n": 797, "TargetWord": "dermatology", "definition": "the branch of medicine concerned with the skin and its diseases", "pos": "noun", "syn": "skin medicine, cutaneous science", "TriggerLesson": "049"},
         {"n": 798, "TargetWord": "dermatitis", "definition": "inflammation of the skin, often causing redness, itching, or a rash", "pos": "noun", "syn": "skin inflammation, eczema"},
@@ -1047,7 +1047,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C3", "tier": 5, "slug": "cluster5_3_root_neur_encephalo_psych_hypn_nerve_mind",
+      "cluster_id": "T5-C3", "tier": 5, "slug": "cluster5_3_root_neur_encephalo_psych_hypn_nerve_mind", "name": "Neur, Psych & Hypn", "name_de": "Wurzeln: Neur, Psych & Hypn", "name_es": "Raíces: Neur, Psych y Hypn", "name_ja": "語根: Neur・Psych・Hypn", "name_zh": "词根：Neur、Psych与Hypn", "name_ru": "Корни: Neur, Psych и Hypn",
       "cards": [
         {"n": 813, "TargetWord": "neural", "definition": "relating to nerves or the nervous system", "pos": "adj", "syn": "nervous, neurological", "TriggerLesson": "050"},
         {"n": 814, "TargetWord": "neurotic", "definition": "excessively anxious, obsessive, or emotionally unstable", "pos": "adj", "syn": "anxious, obsessive", "ant": "calm, composed"},
@@ -1071,7 +1071,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C4", "tier": 5, "slug": "cluster5_4_root_gastr_hepat_entero_nephro_organs",
+      "cluster_id": "T5-C4", "tier": 5, "slug": "cluster5_4_root_gastr_hepat_entero_nephro_organs", "name": "Gastr, Hepat & Nephro", "name_de": "Wurzeln: Gastr, Hepat & Nephro", "name_es": "Raíces: Gastr, Hepat y Nephro", "name_ja": "語根: Gastr・Hepat・Nephro", "name_zh": "词根：Gastr、Hepat与Nephro", "name_ru": "Корни: Gastr, Hepat и Nephro",
       "cards": [
         {"n": 832, "TargetWord": "gastric", "definition": "relating to the stomach", "pos": "adj", "syn": "stomachal", "TriggerLesson": "051"},
         {"n": 833, "TargetWord": "gastritis", "definition": "inflammation of the lining of the stomach", "pos": "noun", "syn": "stomach inflammation"},
@@ -1095,7 +1095,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C5", "tier": 5, "slug": "cluster5_5_root_pneum_broncho_myo_soma_body",
+      "cluster_id": "T5-C5", "tier": 5, "slug": "cluster5_5_root_pneum_broncho_myo_soma_body", "name": "Pneum, Myo & Soma", "name_de": "Wurzeln: Pneum, Myo & Soma", "name_es": "Raíces: Pneum, Myo y Soma", "name_ja": "語根: Pneum・Myo・Soma", "name_zh": "词根：Pneum、Myo与Soma", "name_ru": "Корни: Pneum, Myo и Soma",
       "cards": [
         {"n": 851, "TargetWord": "pneumonia", "definition": "infection that inflames the lungs and fills the air sacs with fluid", "pos": "noun", "syn": "lung infection, pneumonitis", "TriggerLesson": "052"},
         {"n": 852, "TargetWord": "pneumatic", "definition": "operated by or filled with compressed air", "pos": "adj", "syn": "air-powered, air-filled", "ant": "hydraulic, manual"},
@@ -1119,7 +1119,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C6", "tier": 5, "slug": "cluster5_6_root_ophthalm_oto_opt_iatr_eye_ear_healer",
+      "cluster_id": "T5-C6", "tier": 5, "slug": "cluster5_6_root_ophthalm_oto_opt_iatr_eye_ear_healer", "name": "Ophthalm, Oto, Opt & Iatr", "name_de": "Wurzeln: Ophthalm, Oto & Iatr", "name_es": "Raíces: Ophthalm, Oto y Iatr", "name_ja": "語根: Ophthalm・Oto・Iatr", "name_zh": "词根：Ophthalm、Oto与Iatr", "name_ru": "Корни: Ophthalm, Oto и Iatr",
       "cards": [
         {"n": 870, "TargetWord": "ophthalmology", "definition": "the branch of medicine concerned with the diagnosis and treatment of eye disorders", "pos": "noun", "syn": "eye medicine, ocular medicine", "TriggerLesson": "053"},
         {"n": 871, "TargetWord": "ophthalmic", "definition": "relating to the eye and its diseases", "pos": "adj", "syn": "ocular, optical"},
@@ -1147,7 +1147,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C7", "tier": 5, "slug": "cluster5_7_suffixes_disease_itis_oma_algia_onco",
+      "cluster_id": "T5-C7", "tier": 5, "slug": "cluster5_7_suffixes_disease_itis_oma_algia_onco", "name": "-itis, -oma, -algia", "name_de": "Suffixe: -itis/-oma/-algia", "name_es": "Sufijos: -itis/-oma/-algia", "name_ja": "接尾辞: -itis/-oma/-algia", "name_zh": "后缀：-itis、-oma、-algia", "name_ru": "Суффиксы: -itis/-oma/-algia",
       "cards": [
         {"n": 893, "TargetWord": "appendicitis", "definition": "a painful inflammation of the small tube joined to the large intestine", "pos": "noun", "syn": "appendix inflammation", "TriggerLesson": "055"},
         {"n": 894, "TargetWord": "meningitis", "definition": "inflammation of the protective membranes around the brain and spinal cord", "pos": "noun", "syn": "meningeal inflammation"},
@@ -1170,7 +1170,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C8", "tier": 5, "slug": "cluster5_8_suffixes_surgery_ectomy_otomy_ostomy_plasty_scopy",
+      "cluster_id": "T5-C8", "tier": 5, "slug": "cluster5_8_suffixes_surgery_ectomy_otomy_ostomy_plasty_scopy", "name": "-ectomy & -scopy", "name_de": "Suffixe: -ectomy & -scopy", "name_es": "Sufijos: -ectomy y -scopy", "name_ja": "接尾辞: -ectomy・-scopy", "name_zh": "后缀：-ectomy与-scopy", "name_ru": "Суффиксы: -ectomy и -scopy",
       "cards": [
         {"n": 911, "TargetWord": "vasectomy", "definition": "surgical cutting and sealing of the vas deferens to prevent conception", "pos": "noun", "syn": "male sterilization", "ant": "reversal", "TriggerLesson": "056"},
         {"n": 912, "TargetWord": "appendectomy", "definition": "the operation that cuts out the inflamed tube in the lower right abdomen", "pos": "noun", "syn": "appendix removal"},
@@ -1192,7 +1192,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C9", "tier": 5, "slug": "cluster5_9_suffixes_pathy_trophy_rrhoea_stasis",
+      "cluster_id": "T5-C9", "tier": 5, "slug": "cluster5_9_suffixes_pathy_trophy_rrhoea_stasis", "name": "-pathy & -stasis", "name_de": "Suffixe: -pathy & -stasis", "name_es": "Sufijos: -pathy y -stasis", "name_ja": "接尾辞: -pathy・-stasis", "name_zh": "后缀：-pathy与-stasis", "name_ru": "Суффиксы: -pathy и -stasis",
       "cards": [
         {"n": 928, "TargetWord": "myopathy", "definition": "a disease or disorder of the muscles", "pos": "noun", "syn": "muscular disorder", "TriggerLesson": "057"},
         {"n": 929, "TargetWord": "neuropathy", "definition": "damage or disease affecting the peripheral nerves, often causing numbness or weakness", "pos": "noun", "syn": "nerve damage, neuritis"},
@@ -1214,7 +1214,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C10", "tier": 5, "slug": "cluster5_10_root_necr_tox_glyc_phag_death_poison",
+      "cluster_id": "T5-C10", "tier": 5, "slug": "cluster5_10_root_necr_tox_glyc_phag_death_poison", "name": "Necr, Tox & Phag", "name_de": "Wurzeln: Necr, Tox & Phag", "name_es": "Raíces: Necr, Tox y Phag", "name_ja": "語根: Necr・Tox・Phag", "name_zh": "词根：Necr、Tox与Phag", "name_ru": "Корни: Necr, Tox и Phag",
       "cards": [
         {"n": 945, "TargetWord": "necropsy", "definition": "an examination of a body after death to establish the cause, especially in animals", "pos": "noun", "syn": "autopsy, postmortem", "TriggerLesson": "058"},
         {"n": 946, "TargetWord": "necromancy", "definition": "the practice of supposedly communicating with the dead to predict or influence the future", "pos": "noun", "syn": "sorcery, divination"},
@@ -1236,7 +1236,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C11", "tier": 5, "slug": "cluster5_11_suffixes_phile_philia_phobia_affinity_fear",
+      "cluster_id": "T5-C11", "tier": 5, "slug": "cluster5_11_suffixes_phile_philia_phobia_affinity_fear", "name": "-phile & -phobia", "name_de": "Suffixe: -phile & -phobia", "name_es": "Sufijos: -phile y -phobia", "name_ja": "接尾辞: -phile・-phobia", "name_zh": "后缀：-phile与-phobia", "name_ru": "Суффиксы: -phile и -phobia",
       "cards": [
         {"n": 962, "TargetWord": "audiophile", "definition": "a person with a great interest in high-fidelity sound reproduction", "pos": "noun", "syn": "hi-fi enthusiast, sound enthusiast", "TriggerLesson": "059"},
         {"n": 963, "TargetWord": "cinephile", "definition": "a person with a passionate enthusiasm for cinema and film", "pos": "noun", "syn": "film buff, movie lover"},
@@ -1260,7 +1260,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C12", "tier": 5, "slug": "cluster5_12_greek_whole_tongue_twisters",
+      "cluster_id": "T5-C12", "tier": 5, "slug": "cluster5_12_greek_whole_tongue_twisters", "name": "The tongue-twisters", "name_de": "Die Zungenbrecher", "name_es": "Los trabalenguas", "name_ja": "早口言葉のような語", "name_zh": "绕口令般的词", "name_ru": "Слова-скороговорки",
       "cards": [
         {"n": 981, "TargetWord": "onomatopoeia", "definition": "the making of a word in imitation of the sound that the thing itself makes", "pos": "noun", "syn": "echoism, imitation", "TriggerLesson": "060"},
         {"n": 982, "TargetWord": "pterodactyl", "definition": "an extinct flying reptile whose wing was carried on one hugely lengthened digit", "pos": "noun", "syn": "pterosaur"},

@@ -5,7 +5,7 @@
   "offset": 0,
   "clusters": [
     {
-      "cluster_id": "T1-C1", "tier": 1, "slug": "cluster1_1_body_nature",
+      "cluster_id": "T1-C1", "tier": 1, "slug": "cluster1_1_body_nature", "name": "Body & Nature", "name_de": "Körper & Natur", "name_es": "Cuerpo y naturaleza", "name_ja": "体と自然", "name_zh": "人体与自然", "name_ru": "Тело и природа",
       "cards": [
         {"n": 1, "TargetWord": "breakfast", "definition": "the first meal of the day, eaten in the morning", "pos": "noun", "syn": "morning meal, first meal", "TriggerLesson": "000"},
         {"n": 2, "TargetWord": "sunlight", "definition": "the bright rays that reach us straight from our star", "pos": "noun", "syn": "daylight, sunshine", "ant": "darkness"},
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C2", "tier": 1, "slug": "cluster1_2_prefixes_be",
+      "cluster_id": "T1-C2", "tier": 1, "slug": "cluster1_2_prefixes_be", "name": "Prefix: be-", "name_de": "Vorsilbe: be-", "name_es": "Prefijo: be-", "name_ja": "接頭辞: be-", "name_zh": "前缀：be-", "name_ru": "Приставка: be-",
       "cards": [
         {"n": 21, "TargetWord": "bemoan", "definition": "to express sorrow or dissatisfaction about something", "pos": "verb", "syn": "bewail", "ant": "celebrate", "TriggerLesson": "001"},
         {"n": 22, "TargetWord": "befriend", "definition": "to become close to someone and treat them as a companion", "pos": "verb", "syn": "ally with, take up with", "ant": "shun"},
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C3", "tier": 1, "slug": "cluster1_3_home_work",
+      "cluster_id": "T1-C3", "tier": 1, "slug": "cluster1_3_home_work", "name": "Home & Work", "name_de": "Haus & Arbeit", "name_es": "Casa y trabajo", "name_ja": "家と仕事", "name_zh": "家庭与工作", "name_ru": "Дом и работа",
       "cards": [
         {"n": 41, "TargetWord": "handbook", "definition": "a concise reference book giving useful information on a subject", "pos": "noun", "syn": "guide, primer", "TriggerLesson": "002"},
         {"n": 42, "TargetWord": "farmland", "definition": "land used for farming", "pos": "noun", "syn": "fields, acreage, tillage"},
@@ -80,7 +80,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C4", "tier": 1, "slug": "cluster1_4_prefixes_fore",
+      "cluster_id": "T1-C4", "tier": 1, "slug": "cluster1_4_prefixes_fore", "name": "Prefix: fore-", "name_de": "Vorsilbe: fore-", "name_es": "Prefijo: fore-", "name_ja": "接頭辞: fore-", "name_zh": "前缀：fore-", "name_ru": "Приставка: fore-",
       "cards": [
         {"n": 61, "TargetWord": "forecast", "definition": "to predict what will happen, especially regarding weather or trends", "pos": "verb/noun", "syn": "outlook, projection", "TriggerLesson": "003"},
         {"n": 62, "TargetWord": "foresee", "definition": "to know or predict that something will happen in the future", "pos": "verb", "syn": "foretell", "ant": "overlook"},
@@ -104,7 +104,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C5", "tier": 1, "slug": "cluster1_5_time_place",
+      "cluster_id": "T1-C5", "tier": 1, "slug": "cluster1_5_time_place", "name": "Time & Place", "name_de": "Zeit & Ort", "name_es": "Tiempo y lugar", "name_ja": "時と場所", "name_zh": "时间与地点", "name_ru": "Время и место",
       "cards": [
         {"n": 80, "TargetWord": "daytime", "definition": "the time of day between sunrise and sunset", "pos": "noun", "syn": "day, daylight hours", "ant": "nighttime", "TriggerLesson": "004"},
         {"n": 81, "TargetWord": "nightfall", "definition": "the time in the evening when it becomes dark", "pos": "noun", "syn": "sundown", "ant": "daybreak"},
@@ -129,7 +129,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C6", "tier": 1, "slug": "cluster1_6_prefixes_out",
+      "cluster_id": "T1-C6", "tier": 1, "slug": "cluster1_6_prefixes_out", "name": "Prefix: out-", "name_de": "Vorsilbe: out-", "name_es": "Prefijo: out-", "name_ja": "接頭辞: out-", "name_zh": "前缀：out-", "name_ru": "Приставка: out-",
       "cards": [
         {"n": 100, "TargetWord": "outdo", "definition": "to do better than someone else", "pos": "verb", "syn": "exceed, better", "ant": "fall short", "TriggerLesson": "005"},
         {"n": 101, "TargetWord": "outlast", "definition": "to last longer than something else", "pos": "verb", "syn": "survive", "ant": "succumb"},
@@ -159,7 +159,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C7", "tier": 1, "slug": "cluster1_7_people_roles",
+      "cluster_id": "T1-C7", "tier": 1, "slug": "cluster1_7_people_roles", "name": "People & Roles", "name_de": "Menschen & Rollen", "name_es": "Personas y roles", "name_ja": "人と役割", "name_zh": "人物与角色", "name_ru": "Люди и роли",
       "cards": [
         {"n": 125, "TargetWord": "kinsman", "definition": "a male relative; a person related by blood", "pos": "noun", "syn": "kin, blood relation", "TriggerLesson": "006"},
         {"n": 126, "TargetWord": "spokesman", "definition": "a person who speaks on behalf of a group", "pos": "noun", "syn": "voice, mouthpiece"},
@@ -184,7 +184,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C8", "tier": 1, "slug": "cluster1_8_prefixes_over",
+      "cluster_id": "T1-C8", "tier": 1, "slug": "cluster1_8_prefixes_over", "name": "Prefix: over-", "name_de": "Vorsilbe: over-", "name_es": "Prefijo: over-", "name_ja": "接頭辞: over-", "name_zh": "前缀：over-", "name_ru": "Приставка: over-",
       "cards": [
         {"n": 145, "TargetWord": "overflow", "definition": "to flow over the edge of a container; an excess amount", "pos": "verb", "syn": "flood", "ant": "drain", "TriggerLesson": "007"},
         {"n": 146, "TargetWord": "overlook", "definition": "to fail to notice; also, to have a view over something from above", "pos": "verb", "syn": "miss", "ant": "notice"},
@@ -209,7 +209,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C9", "tier": 1, "slug": "cluster1_9_prefixes_under",
+      "cluster_id": "T1-C9", "tier": 1, "slug": "cluster1_9_prefixes_under", "name": "Prefix: under-", "name_de": "Vorsilbe: under-", "name_es": "Prefijo: under-", "name_ja": "接頭辞: under-", "name_zh": "前缀：under-", "name_ru": "Приставка: under-",
       "cards": [
         {"n": 165, "TargetWord": "understand", "definition": "to grasp the meaning or nature of something", "pos": "verb", "syn": "grasp", "ant": "misunderstand", "TriggerLesson": "008"},
         {"n": 166, "TargetWord": "undertake", "definition": "to commit oneself to begin and carry out a task", "pos": "verb", "syn": "take on", "ant": "abandon"},
@@ -234,7 +234,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C10", "tier": 1, "slug": "cluster1_10_prefixes_mis",
+      "cluster_id": "T1-C10", "tier": 1, "slug": "cluster1_10_prefixes_mis", "name": "Prefix: mis-", "name_de": "Vorsilbe: mis-", "name_es": "Prefijo: mis-", "name_ja": "接頭辞: mis-", "name_zh": "前缀：mis-", "name_ru": "Приставка: mis-",
       "cards": [
         {"n": 185, "TargetWord": "mistake", "definition": "something done incorrectly; an error in action or judgment", "pos": "noun/verb", "syn": "blunder, slip", "TriggerLesson": "009", "definition_gb": "something done incorrectly; an error in action or judgement"},
         {"n": 186, "TargetWord": "misjudge", "definition": "to form a wrong opinion about someone or something", "pos": "verb", "syn": "misread"},
@@ -259,7 +259,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C1", "tier": 2, "slug": "cluster2_1_compounds_opaque_meaning",
+      "cluster_id": "T2-C1", "tier": 2, "slug": "cluster2_1_compounds_opaque_meaning", "name": "Opaque Compounds", "name_de": "Undurchsichtige Komposita", "name_es": "Compuestos opacos", "name_ja": "不透明な複合語", "name_zh": "隐性复合词", "name_ru": "Непрозрачные композиты",
       "cards": [
         {"n": 205, "TargetWord": "onset", "definition": "the beginning of something, especially something unpleasant", "pos": "noun", "syn": "start, outbreak", "ant": "end", "TriggerLesson": "010"},
         {"n": 206, "TargetWord": "upset", "definition": "to make someone unhappy or worried; an unexpected result", "pos": "verb/noun", "syn": "distress, overturn", "ant": "calm"},
@@ -289,7 +289,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C2", "tier": 2, "slug": "cluster2_2_prefixes_un_with_reversal",
+      "cluster_id": "T2-C2", "tier": 2, "slug": "cluster2_2_prefixes_un_with_reversal", "name": "Prefixes: un- and with-", "name_de": "Präfixe: un- und with-", "name_es": "Prefijos: un- y with-", "name_ja": "接頭辞：un- と with-", "name_zh": "前缀：un- 与 with-", "name_ru": "Префиксы: un- и with-",
       "cards": [
         {"n": 230, "TargetWord": "undo", "definition": "to reverse the effects of something; to unfasten", "pos": "verb", "syn": "annul, unfasten", "ant": "do", "TriggerLesson": "011"},
         {"n": 231, "TargetWord": "uncover", "definition": "to remove a covering from; to discover something hidden", "pos": "verb", "syn": "expose, unearth", "ant": "conceal"},
@@ -327,7 +327,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C3", "tier": 2, "slug": "cluster2_3_compounds_opaque_body",
+      "cluster_id": "T2-C3", "tier": 2, "slug": "cluster2_3_compounds_opaque_body", "name": "Compounds: Body", "name_de": "Komposita: Körper", "name_es": "Compuestos: cuerpo", "name_ja": "複合語: 体", "name_zh": "身体复合词", "name_ru": "Композиты: тело",
       "cards": [
         {"n": 263, "TargetWord": "headstrong", "definition": "determined to do things one's own way; stubbornly willful", "pos": "adj", "syn": "willful, stubborn", "ant": "compliant", "TriggerLesson": "012", "definition_gb": "determined to do things one's own way; stubbornly wilful"},
         {"n": 264, "TargetWord": "heartfelt", "definition": "deeply and sincerely felt", "pos": "adj", "syn": "genuine, deep", "ant": "hollow"},
@@ -353,7 +353,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C4", "tier": 2, "slug": "cluster2_4_compounds_opaque_nature",
+      "cluster_id": "T2-C4", "tier": 2, "slug": "cluster2_4_compounds_opaque_nature", "name": "Compounds: Nature", "name_de": "Komposita: Natur", "name_es": "Compuestos: naturaleza", "name_ja": "複合語: 自然", "name_zh": "自然复合词", "name_ru": "Композиты: природа",
       "cards": [
         {"n": 284, "TargetWord": "windfall", "definition": "an unexpected gain or piece of good luck, especially money", "pos": "noun", "syn": "bonanza, godsend", "TriggerLesson": "013"},
         {"n": 285, "TargetWord": "landslide", "definition": "a collapse of earth down a slope; also, an overwhelming victory", "pos": "noun", "syn": "mudslide, avalanche"},
@@ -380,7 +380,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C5", "tier": 2, "slug": "cluster2_5_compounds_opaque_mind",
+      "cluster_id": "T2-C5", "tier": 2, "slug": "cluster2_5_compounds_opaque_mind", "name": "Compounds: Mind", "name_de": "Komposita: Geist", "name_es": "Compuestos: mente", "name_ja": "複合語: 心", "name_zh": "隐性复合词：心理", "name_ru": "Сложные слова: Мышление",
       "cards": [
         {"n": 306, "TargetWord": "aftermath", "definition": "the consequences that follow a major event", "pos": "noun", "syn": "fallout, wake", "TriggerLesson": "014"},
         {"n": 307, "TargetWord": "drawback", "definition": "a disadvantage or problem", "pos": "noun", "syn": "snag, flaw", "ant": "advantage"},
@@ -409,7 +409,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C6", "tier": 2, "slug": "cluster2_6_prefixes_up",
+      "cluster_id": "T2-C6", "tier": 2, "slug": "cluster2_6_prefixes_up", "name": "Prefix: up-", "name_de": "Vorsilbe: up-", "name_es": "Prefijo: up-", "name_ja": "接頭辞: up-", "name_zh": "前缀：up-", "name_ru": "Приставка: up-",
       "cards": [
         {"n": 330, "TargetWord": "uphold", "definition": "to maintain or support a principle, law, or decision", "pos": "verb", "syn": "maintain, affirm", "ant": "overturn", "TriggerLesson": "015"},
         {"n": 331, "TargetWord": "update", "definition": "to make something more modern or current; the latest information", "pos": "verb/noun", "syn": "refresh, modernize"},
@@ -437,7 +437,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C7", "tier": 2, "slug": "cluster2_7_compounds_opaque_action",
+      "cluster_id": "T2-C7", "tier": 2, "slug": "cluster2_7_compounds_opaque_action", "name": "Compounds: Action", "name_de": "Komposita: Handlung", "name_es": "Compuestos: acción", "name_ja": "複合語: 行い", "name_zh": "隐性复合词：行为", "name_ru": "Сложные слова: Действие",
       "cards": [
         {"n": 353, "TargetWord": "onslaught", "definition": "a fierce or destructive attack", "pos": "noun", "syn": "barrage, onrush", "ant": "retreat", "TriggerLesson": "016"},
         {"n": 354, "TargetWord": "handshake", "definition": "the act of shaking someone's hand as a greeting or agreement", "pos": "noun", "syn": "greeting, agreement"},
@@ -462,7 +462,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C1", "tier": 3, "slug": "cluster3_1_doublets_action",
+      "cluster_id": "T3-C1", "tier": 3, "slug": "cluster3_1_doublets_action", "name": "Doublets: Action", "name_de": "Dubletten: Handlung", "name_es": "Dobletes: acción", "name_ja": "二重語: 行い", "name_zh": "同义双生：行动", "name_ru": "Дублеты: Действие",
       "cards": [
         {"n": 373, "TargetWord": "begin", "definition": "to start or set in motion", "pos": "verb", "syn": "start, launch", "ant": "finish", "TriggerLesson": "017"},
         {"n": 374, "TargetWord": "buy", "definition": "to obtain something by paying money for it", "pos": "verb", "syn": "acquire, procure", "ant": "sell"},
@@ -487,7 +487,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C2", "tier": 3, "slug": "cluster3_2_doublets_quality",
+      "cluster_id": "T3-C2", "tier": 3, "slug": "cluster3_2_doublets_quality", "name": "Doublets: Quality", "name_de": "Dubletten: Eigenschaft", "name_es": "Dobletes: cualidad", "name_ja": "二重語: 性質", "name_zh": "同义双生：品质", "name_ru": "Дублеты: Качество",
       "cards": [
         {"n": 393, "TargetWord": "bold", "definition": "showing courage and confidence; daring", "pos": "adj", "syn": "brave, daring", "ant": "timid", "TriggerLesson": "018"},
         {"n": 394, "TargetWord": "deep", "definition": "extending far down or inward; intense or thorough", "pos": "adj", "syn": "intense, bottomless", "ant": "shallow"},
@@ -512,7 +512,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C3", "tier": 3, "slug": "cluster3_3_doublets_people",
+      "cluster_id": "T3-C3", "tier": 3, "slug": "cluster3_3_doublets_people", "name": "Doublets: People", "name_de": "Dubletten: Menschen", "name_es": "Dobletes: personas", "name_ja": "二重語: 人", "name_zh": "同义双生：人物", "name_ru": "Дублеты: Люди",
       "cards": [
         {"n": 413, "TargetWord": "foe", "definition": "an enemy or opponent", "pos": "noun", "syn": "adversary, opponent", "ant": "friend", "TriggerLesson": "019"},
         {"n": 414, "TargetWord": "folk", "definition": "people in general; the members of a community or culture", "pos": "noun", "syn": "community, nation", "ant": "individual"},
@@ -537,7 +537,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C4", "tier": 3, "slug": "cluster3_4_doublets_abstract",
+      "cluster_id": "T3-C4", "tier": 3, "slug": "cluster3_4_doublets_abstract", "name": "Doublets: Abstract", "name_de": "Dubletten: Abstraktes", "name_es": "Dobletes: abstracto", "name_ja": "二重語: 抽象", "name_zh": "同义双生：抽象", "name_ru": "Дублеты: Абстракции",
       "cards": [
         {"n": 433, "TargetWord": "freedom", "definition": "the state of being free; the power to act without restraint", "pos": "noun", "syn": "independence, latitude", "ant": "captivity", "TriggerLesson": "020"},
         {"n": 434, "TargetWord": "friendship", "definition": "a warm bond of affection and trust between two people", "pos": "noun", "syn": "closeness, bond", "ant": "enmity"},
@@ -562,7 +562,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C5", "tier": 3, "slug": "cluster3_5_doublets_body_world",
+      "cluster_id": "T3-C5", "tier": 3, "slug": "cluster3_5_doublets_body_world", "name": "Doublets: Body & World", "name_de": "Dubletten: Körper & Welt", "name_es": "Dobletes: cuerpo y mundo", "name_ja": "二重語: 体と世界", "name_zh": "同义双生：身体与世界", "name_ru": "Дублеты: Тело и мир",
       "cards": [
         {"n": 453, "TargetWord": "belly", "definition": "the front part of the body below the chest; the stomach", "pos": "noun", "syn": "stomach, paunch", "TriggerLesson": "021"},
         {"n": 454, "TargetWord": "bone", "definition": "the hard material forming the skeleton; the essential structure of something", "pos": "noun", "syn": "skeleton, frame"},
@@ -587,7 +587,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C6", "tier": 3, "slug": "cluster3_6_doublets_feeling",
+      "cluster_id": "T3-C6", "tier": 3, "slug": "cluster3_6_doublets_feeling", "name": "Doublets: Feeling", "name_de": "Dubletten: Gefühl", "name_es": "Dobletes: sentimiento", "name_ja": "二重語: 感情", "name_zh": "同义双生：情感", "name_ru": "Дублеты: Чувства",
       "cards": [
         {"n": 473, "TargetWord": "glad", "definition": "feeling pleasure and happiness", "pos": "adj", "syn": "pleased, cheerful", "ant": "sad", "TriggerLesson": "022"},
         {"n": 474, "TargetWord": "mad", "definition": "mentally ill; extremely angry; wildly enthusiastic", "pos": "adj", "syn": "crazy, frantic", "ant": "sane"},
@@ -612,7 +612,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C7", "tier": 3, "slug": "cluster3_7_doublets_daily_life",
+      "cluster_id": "T3-C7", "tier": 3, "slug": "cluster3_7_doublets_daily_life", "name": "Doublets: Daily Life", "name_de": "Dubletten: Alltag", "name_es": "Dobletes: vida diaria", "name_ja": "二重語: 日常", "name_zh": "同义双生：日常生活", "name_ru": "Дублеты: Быт",
       "cards": [
         {"n": 493, "TargetWord": "meal", "definition": "an occasion when food is eaten; the food served at such a time", "pos": "noun", "syn": "feast, spread", "ant": "fast", "TriggerLesson": "023"},
         {"n": 494, "TargetWord": "stool", "definition": "a seat without a back or arms", "pos": "noun", "syn": "seat, perch"},
@@ -637,7 +637,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C8", "tier": 3, "slug": "cluster3_8_doublets_thought_speech",
+      "cluster_id": "T3-C8", "tier": 3, "slug": "cluster3_8_doublets_thought_speech", "name": "Doublets: Thought & Speech", "name_de": "Dubletten: Denken & Reden", "name_es": "Dobletes: pensar y hablar", "name_ja": "二重語: 思考と発話", "name_zh": "同义双生：思想与言语", "name_ru": "Дублеты: Мысль и слово",
       "cards": [
         {"n": 513, "TargetWord": "oath", "definition": "a solemn promise or sworn declaration; a swear word", "pos": "noun", "syn": "pledge, promise", "ant": "betrayal", "TriggerLesson": "024"},
         {"n": 514, "TargetWord": "tale", "definition": "a story, especially one that may be imaginative or exaggerated", "pos": "noun", "syn": "story, yarn", "ant": "fact"},
@@ -662,7 +662,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C9", "tier": 3, "slug": "cluster3_9_doublets_war_law",
+      "cluster_id": "T3-C9", "tier": 3, "slug": "cluster3_9_doublets_war_law", "name": "Doublets: War & Law", "name_de": "Dubletten: Krieg & Recht", "name_es": "Dobletes: guerra y ley", "name_ja": "二重語: 戦と法", "name_zh": "同义双生：战争与法律", "name_ru": "Дублеты: Война и закон",
       "cards": [
         {"n": 533, "TargetWord": "sword", "definition": "a weapon with a long metal blade and a handle", "pos": "noun", "syn": "blade, broadsword", "TriggerLesson": "025"},
         {"n": 534, "TargetWord": "shield", "definition": "a broad piece of armor carried for protection; to protect", "pos": "noun/verb", "syn": "guard, cover", "ant": "expose", "definition_gb": "a broad piece of armour carried for protection; to protect"},
@@ -687,7 +687,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C10", "tier": 3, "slug": "cluster3_10_doublets_time_change",
+      "cluster_id": "T3-C10", "tier": 3, "slug": "cluster3_10_doublets_time_change", "name": "Doublets: Time & Change", "name_de": "Dubletten: Zeit & Wandel", "name_es": "Dobletes: tiempo y cambio", "name_ja": "二重語: 時と変化", "name_zh": "同义双生：时间与变化", "name_ru": "Дублеты: Время и изменения",
       "cards": [
         {"n": 553, "TargetWord": "dawn", "definition": "the first light of day; the beginning of something", "pos": "noun/verb", "syn": "daybreak, sunrise", "ant": "dusk", "TriggerLesson": "026"},
         {"n": 554, "TargetWord": "dusk", "definition": "the darker stage of twilight in the evening", "pos": "noun", "syn": "twilight, nightfall", "ant": "dawn"},
@@ -712,7 +712,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C1", "tier": 4, "slug": "cluster4_1_phrasal_up",
+      "cluster_id": "T4-C1", "tier": 4, "slug": "cluster4_1_phrasal_up", "name": "Phrasal: up", "name_de": "Partikelverben: up", "name_es": "Frasales: up", "name_ja": "句動詞: up", "name_zh": "短语动词：up", "name_ru": "Фразовые глаголы: up",
       "cards": [
         {"n": 573, "TargetWord": "give up", "definition": "to stop trying; to surrender or relinquish something", "pos": "phrasal verb", "syn": "quit, yield", "ant": "persist", "TriggerLesson": "027"},
         {"n": 574, "TargetWord": "make up", "definition": "to invent a story; to reconcile after a quarrel; to constitute", "pos": "phrasal verb", "syn": "invent, reconcile"},
@@ -742,7 +742,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C2", "tier": 4, "slug": "cluster4_2_phrasal_down",
+      "cluster_id": "T4-C2", "tier": 4, "slug": "cluster4_2_phrasal_down", "name": "Phrasal: down", "name_de": "Partikelverben: down", "name_es": "Frasales: down", "name_ja": "句動詞: down", "name_zh": "短语动词：down", "name_ru": "Фразовые глаголы: down",
       "cards": [
         {"n": 598, "TargetWord": "break down", "definition": "to stop functioning; to lose emotional control; to separate into parts", "pos": "phrasal verb", "syn": "decompose", "ant": "repair", "TriggerLesson": "028"},
         {"n": 599, "TargetWord": "calm down", "definition": "to become less agitated or upset", "pos": "phrasal verb", "syn": "settle", "ant": "agitate"},
@@ -769,7 +769,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C3", "tier": 4, "slug": "cluster4_3_phrasal_out",
+      "cluster_id": "T4-C3", "tier": 4, "slug": "cluster4_3_phrasal_out", "name": "Phrasal: out", "name_de": "Partikelverben: out", "name_es": "Frasales: out", "name_ja": "句動詞: out", "name_zh": "短语动词：out", "name_ru": "Фразовые глаголы: out",
       "cards": [
         {"n": 620, "TargetWord": "find out", "definition": "to discover information or learn the truth", "pos": "phrasal verb", "syn": "learn, ascertain", "ant": "conceal", "TriggerLesson": "029"},
         {"n": 621, "TargetWord": "turn out", "definition": "to result in a particular way; to prove to be", "pos": "phrasal verb", "syn": "transpire"},
@@ -797,7 +797,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C4", "tier": 4, "slug": "cluster4_4_phrasal_off",
+      "cluster_id": "T4-C4", "tier": 4, "slug": "cluster4_4_phrasal_off", "name": "Phrasal: off", "name_de": "Partikelverben: off", "name_es": "Frasales: off", "name_ja": "句動詞: off", "name_zh": "短语动词：off", "name_ru": "Фразовые глаголы: off",
       "cards": [
         {"n": 643, "TargetWord": "put off", "definition": "to postpone; to cause someone to lose interest", "pos": "phrasal verb", "syn": "delay", "ant": "bring forward", "TriggerLesson": "030"},
         {"n": 644, "TargetWord": "call off", "definition": "to cancel a planned event", "pos": "phrasal verb", "syn": "abandon", "ant": "proceed"},
@@ -827,7 +827,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C5", "tier": 4, "slug": "cluster4_5_phrasal_in_into",
+      "cluster_id": "T4-C5", "tier": 4, "slug": "cluster4_5_phrasal_in_into", "name": "Phrasal: in, into", "name_de": "Partikelverben: in, into", "name_es": "Frasales: in, into", "name_ja": "句動詞: in, into", "name_zh": "短语动词：in, into", "name_ru": "Фразовые глаголы: in, into",
       "cards": [
         {"n": 668, "TargetWord": "give in", "definition": "to stop resisting; to surrender to pressure", "pos": "phrasal verb", "syn": "concede, yield", "ant": "resist", "TriggerLesson": "031"},
         {"n": 669, "TargetWord": "break in", "definition": "to enter by force; to accustom to use; to interrupt", "pos": "phrasal verb", "syn": "interrupt, burgle"},
@@ -856,7 +856,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C6", "tier": 4, "slug": "cluster4_6_phrasal_on",
+      "cluster_id": "T4-C6", "tier": 4, "slug": "cluster4_6_phrasal_on", "name": "Phrasal: on", "name_de": "Partikelverben: on", "name_es": "Frasales: on", "name_ja": "句動詞: on", "name_zh": "短语动词：on", "name_ru": "Фразовые глаголы: on",
       "cards": [
         {"n": 692, "TargetWord": "hold on", "definition": "to wait; to grip tightly; to persist", "pos": "phrasal verb", "syn": "wait, grip", "ant": "let go", "TriggerLesson": "032"},
         {"n": 693, "TargetWord": "carry on", "definition": "to continue doing something", "pos": "phrasal verb", "syn": "proceed", "ant": "stop"},
@@ -884,7 +884,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C7", "tier": 4, "slug": "cluster4_7_phrasal_over",
+      "cluster_id": "T4-C7", "tier": 4, "slug": "cluster4_7_phrasal_over", "name": "Phrasal: over", "name_de": "Partikelverben: over", "name_es": "Frasales: over", "name_ja": "句動詞: over", "name_zh": "短语动词：over", "name_ru": "Фразовые глаголы: over",
       "cards": [
         {"n": 715, "TargetWord": "get over", "definition": "to recover from illness, loss, or disappointment", "pos": "phrasal verb", "syn": "surmount", "ant": "succumb to", "TriggerLesson": "033"},
         {"n": 716, "TargetWord": "hand over", "definition": "to give something to someone else, especially under pressure", "pos": "phrasal verb", "syn": "transfer, cede"},
@@ -912,7 +912,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C8", "tier": 4, "slug": "cluster4_8_phrasal_back",
+      "cluster_id": "T4-C8", "tier": 4, "slug": "cluster4_8_phrasal_back", "name": "Phrasal: back", "name_de": "Partikelverben: back", "name_es": "Frasales: back", "name_ja": "句動詞: back", "name_zh": "短语动词：back", "name_ru": "Фразовые глаголы: back",
       "cards": [
         {"n": 738, "TargetWord": "hold back", "definition": "to restrain someone or something; to hesitate", "pos": "phrasal verb", "syn": "suppress, curb", "ant": "release", "TriggerLesson": "034"},
         {"n": 739, "TargetWord": "fight back", "definition": "to resist or retaliate against an attack", "pos": "phrasal verb", "syn": "resist", "ant": "surrender"},
@@ -940,7 +940,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C1", "tier": 5, "slug": "cluster5_1_loanwords_german",
+      "cluster_id": "T5-C1", "tier": 5, "slug": "cluster5_1_loanwords_german", "name": "German Loanwords", "name_de": "Deutsche Lehnwörter", "name_es": "Préstamos del alemán", "name_ja": "ドイツ語からの借用", "name_zh": "德语借词", "name_ru": "Заимствования из немецкого",
       "cards": [
         {"n": 761, "TargetWord": "kindergarten", "definition": "a school for young children before they start formal education", "pos": "noun", "syn": "preschool, nursery", "TriggerLesson": "035"},
         {"n": 762, "TargetWord": "wanderlust", "definition": "a strong desire to travel and explore the world", "pos": "noun", "syn": "itchy feet, travel hunger"},
@@ -965,7 +965,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C2", "tier": 5, "slug": "cluster5_2_calques_loan_translations",
+      "cluster_id": "T5-C2", "tier": 5, "slug": "cluster5_2_calques_loan_translations", "name": "Calques and loans", "name_de": "Lehnübersetzungen, Lehnwörter", "name_es": "Calcos y préstamos", "name_ja": "翻訳借用と借用語", "name_zh": "仿译与借词", "name_ru": "Кальки и заимствования",
       "cards": [
         {"n": 781, "TargetWord": "loanword", "definition": "a word adopted from another language with little or no modification", "pos": "noun", "syn": "borrowing, adoption", "TriggerLesson": "036"},
         {"n": 782, "TargetWord": "superman", "definition": "a person of extraordinary ability or achievement", "pos": "noun", "syn": "demigod, paragon"},
@@ -986,7 +986,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C3", "tier": 5, "slug": "cluster5_3_anglo_saxon_survivals_and_fossils",
+      "cluster_id": "T5-C3", "tier": 5, "slug": "cluster5_3_anglo_saxon_survivals_and_fossils", "name": "Survivals and fossils", "name_de": "Überlebende und Fossilien", "name_es": "Supervivientes y fósiles", "name_ja": "生き残りと化石", "name_zh": "幸存词与化石词", "name_ru": "Реликты и окаменелости",
       "cards": [
         {"n": 797, "TargetWord": "weird", "definition": "strange, uncanny, or difficult to explain", "pos": "adj", "syn": "eerie, strange", "ant": "normal", "TriggerLesson": "037"},
         {"n": 798, "TargetWord": "dread", "definition": "great fear or apprehension; to fear greatly", "pos": "noun/verb", "syn": "fear, alarm", "ant": "hope"},
@@ -1021,7 +1021,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C4", "tier": 5, "slug": "cluster5_4_suffixes_ful_less",
+      "cluster_id": "T5-C4", "tier": 5, "slug": "cluster5_4_suffixes_ful_less", "name": "Suffixes: -ful, -less", "name_de": "Nachsilben: -ful, -less", "name_es": "Sufijos: -ful, -less", "name_ja": "接尾辞: -ful, -less", "name_zh": "后缀：-ful, -less", "name_ru": "Суффиксы: -ful, -less",
       "cards": [
         {"n": 827, "TargetWord": "friendly", "definition": "kind and pleasant; easy to use", "pos": "adj", "syn": "warm, kindly", "ant": "hostile", "TriggerLesson": "038"},
         {"n": 828, "TargetWord": "hopeful", "definition": "feeling or inspiring hope", "pos": "adj", "syn": "expectant, buoyant", "ant": "despairing"},
@@ -1045,7 +1045,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C5", "tier": 5, "slug": "cluster5_5_suffixes_ling",
+      "cluster_id": "T5-C5", "tier": 5, "slug": "cluster5_5_suffixes_ling", "name": "Suffix: -ling", "name_de": "Nachsilbe: -ling", "name_es": "Sufijo: -ling", "name_ja": "接尾辞: -ling", "name_zh": "后缀：-ling", "name_ru": "Суффикс: -ling",
       "cards": [
         {"n": 846, "TargetWord": "weakling", "definition": "a person who is physically or morally weak", "pos": "noun", "syn": "coward, milksop", "ant": "strongman", "TriggerLesson": "039"},
         {"n": 847, "TargetWord": "darling", "definition": "a person who is very dear to someone; a term of affection", "pos": "noun/adj", "syn": "sweetheart, pet"},
@@ -1069,7 +1069,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C6", "tier": 5, "slug": "cluster5_6_craft_suffixes",
+      "cluster_id": "T5-C6", "tier": 5, "slug": "cluster5_6_craft_suffixes", "name": "Craft Suffixes", "name_de": "Handwerks-Nachsilben", "name_es": "Sufijos de oficio", "name_ja": "職の接尾辞", "name_zh": "技艺后缀", "name_ru": "Суффиксы ремёсел",
       "cards": [
         {"n": 865, "TargetWord": "homeward", "definition": "towards home", "pos": "adv/adj", "syn": "homebound, back", "ant": "outward", "TriggerLesson": "040"},
         {"n": 866, "TargetWord": "skyward", "definition": "towards the sky", "pos": "adv/adj", "syn": "upward, aloft", "ant": "earthward"},
@@ -1098,7 +1098,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C7", "tier": 5, "slug": "cluster5_7_suffixes_dom_hood_ship",
+      "cluster_id": "T5-C7", "tier": 5, "slug": "cluster5_7_suffixes_dom_hood_ship", "name": "Suffixes: -dom, -hood", "name_de": "Nachsilben: -dom, -hood", "name_es": "Sufijos: -dom, -hood", "name_ja": "接尾辞: -dom, -hood", "name_zh": "后缀：-dom, -hood", "name_ru": "Суффиксы: -dom, -hood",
       "cards": [
         {"n": 889, "TargetWord": "boredom", "definition": "the state of feeling uninterested or without anything to do", "pos": "noun", "syn": "dullness, ennui", "ant": "interest", "TriggerLesson": "041"},
         {"n": 890, "TargetWord": "wisdom", "definition": "the quality of having experience, knowledge, and good judgment", "pos": "noun", "syn": "insight, prudence", "ant": "folly", "definition_gb": "the quality of having experience, knowledge, and good judgement"},
@@ -1119,7 +1119,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C8", "tier": 5, "slug": "cluster5_8_kennings_poetic",
+      "cluster_id": "T5-C8", "tier": 5, "slug": "cluster5_8_kennings_poetic", "name": "Kennings & Poetry", "name_de": "Kenningar & Dichtung", "name_es": "Kenningar y poesía", "name_ja": "ケニングと詩", "name_zh": "诗体隐喻", "name_ru": "Кеннинги и поэтика",
       "cards": [
         {"n": 905, "TargetWord": "whale-road", "definition": "a poetic compound for the sea (Old English kenning)", "pos": "noun", "syn": "sea, ocean", "TriggerLesson": "042"},
         {"n": 906, "TargetWord": "bone-house", "definition": "a poetic compound for the human body (Old English kenning)", "pos": "noun", "syn": "body, frame"},
@@ -1142,7 +1142,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C9", "tier": 5, "slug": "cluster5_9_hidden_etymologies",
+      "cluster_id": "T5-C9", "tier": 5, "slug": "cluster5_9_hidden_etymologies", "name": "Hidden Etymologies", "name_de": "Verborgene Herkunft", "name_es": "Etimologías ocultas", "name_ja": "隠れた語源", "name_zh": "隐藏词源", "name_ru": "Скрытые этимологии",
       "cards": [
         {"n": 923, "TargetWord": "daisy", "definition": "a common white flower with a yellow center", "pos": "noun", "syn": "oxeye, marguerite", "TriggerLesson": "043", "definition_gb": "a common white flower with a yellow centre"},
         {"n": 924, "TargetWord": "nostril", "definition": "either of two openings in the nose", "pos": "noun", "syn": "nose hole, naris"},
@@ -1167,7 +1167,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C10", "tier": 5, "slug": "cluster5_10_grimm_law_cognates",
+      "cluster_id": "T5-C10", "tier": 5, "slug": "cluster5_10_grimm_law_cognates", "name": "Grimm's Law Cognates", "name_de": "Verwandte nach Grimm", "name_es": "Cognados de la ley de Grimm", "name_ja": "グリムの法則の同源語", "name_zh": "格林定律同源词", "name_ru": "Когнаты закона Гримма",
       "cards": [
         {"n": 943, "TargetWord": "father", "definition": "a male parent", "pos": "noun", "syn": "dad, sire", "TriggerLesson": "044"},
         {"n": 944, "TargetWord": "mother", "definition": "a female parent", "pos": "noun", "syn": "parent, dam"},
@@ -1192,7 +1192,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C11", "tier": 5, "slug": "cluster5_11_cognates_false_friends",
+      "cluster_id": "T5-C11", "tier": 5, "slug": "cluster5_11_cognates_false_friends", "name": "False Friends", "name_de": "Falsche Freunde", "name_es": "Falsos amigos", "name_ja": "偽りの友", "name_zh": "形似异义词", "name_ru": "Ложные когнаты",
       "cards": [
         {"n": 963, "TargetWord": "gift", "definition": "something given freely; a natural talent", "pos": "noun", "syn": "donation, talent", "TriggerLesson": "045"},
         {"n": 964, "TargetWord": "brave", "definition": "showing courage; ready to face danger", "pos": "adj", "syn": "bold, gallant", "ant": "craven"},
@@ -1216,7 +1216,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C12", "tier": 5, "slug": "cluster5_12_metaphor_compounds",
+      "cluster_id": "T5-C12", "tier": 5, "slug": "cluster5_12_metaphor_compounds", "name": "Metaphor Compounds", "name_de": "Metaphorische Komposita", "name_es": "Compuestos metafóricos", "name_ja": "比喩の複合語", "name_zh": "隐喻复合词", "name_ru": "Метафорические сложные слова",
       "cards": [
         {"n": 982, "TargetWord": "brainstorm", "definition": "a spontaneous group discussion to produce ideas; a sudden clever idea", "pos": "noun/verb", "syn": "idea, huddle", "TriggerLesson": "046"},
         {"n": 983, "TargetWord": "nightmare", "definition": "a frightening dream; a terrifying or very unpleasant experience", "pos": "noun", "syn": "bad dream, terror"},
