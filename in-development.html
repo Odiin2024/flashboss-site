@@ -2,8 +2,18 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- In Development. Rewritten 2026-09-19 from a placeholder card into the real list.
+     EVERY pack named here was counted from knight/flashcard_sets on 2026-09-19 —
+     nothing is listed that does not exist as cards in the tree, and nothing carries
+     a date, because none of it has one. When a pack ships it moves to packs.html and
+     leaves this page; that is the only maintenance this page needs.
+     Polish and Portuguese are named without counts on purpose: their word lists are
+     locked but no cards are authored yet, so the folders are empty.
+     The locale siblings (.de .es .ja .zh .ru) still hold the old placeholder card
+     and need this content translated. -->
 <title>In Development — FlashBoss</title>
+<meta name="description" content="What FlashBoss is building next: Swahili Pareto 1 and 2, Russian, Indonesian, Ancient and Modern Greek, The Guide Part II, and the two Latin branches. Counted from the packs, with no release dates.">
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/in-development.html">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/in-development.html">
@@ -15,41 +25,98 @@
 <link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/in-development.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
 <style>
-:root{ --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --accent:#e0a93f; --blue:#7ec8ff; --line:#3a3120; --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+:root{
+  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
+  --accent:#e0a93f; --blue:#7ec8ff; --green:#62d38a; --line:#3a3120; --rule:#2a2417;
+}
 *{box-sizing:border-box; margin:0; padding:0;}
-body{ font-family:var(--mono); background:var(--bg); color:var(--ink); min-height:100vh; min-height:100dvh; display:flex; align-items:center; justify-content:center; padding:24px; line-height:1.6; -webkit-font-smoothing:antialiased; }
-.card{ width:100%; max-width:520px; border:1px solid var(--line); background:var(--panel); padding:36px 30px 30px; position:relative; box-shadow:0 0 40px rgba(0,0,0,.5); }
-.tag{ position:absolute; top:-10px; left:20px; background:var(--bg); padding:0 8px; font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--dim); }
-h1{ font-size:clamp(26px,7vw,40px); font-weight:800; letter-spacing:.04em; color:var(--accent); margin:2px 0 22px; }
-.cursor{ display:inline-block; width:.5em; height:.92em; background:var(--accent); vertical-align:-.06em; margin-left:.1em; animation:blink 1.05s steps(1) infinite; }
-@keyframes blink{ 50%{opacity:0;} }
-.rows{ font-size:13px; margin:0 0 16px; }
-.rows>div{ display:flex; gap:12px; padding:5px 0; border-bottom:1px dotted var(--line); }
-.rows .k{ color:var(--dim); min-width:92px; text-transform:lowercase; }
-.rows .v{ color:var(--ink); }
-.bar{ height:12px; border:1px solid var(--line); background:#0c0a06; margin:4px 0 22px; }
-.bar i{ display:block; height:100%; width:11%; background:var(--accent); opacity:.65; }
-.joke{ font-size:13.5px; color:var(--ink); opacity:.92; margin:0 0 26px; }
-.back{ font-size:13px; color:var(--blue); text-decoration:none; }
-.back:hover{ text-decoration:underline; }
-.lang-switch{ position:fixed; top:14px; right:16px; z-index:20; }
-.lang-toggle{ display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--ink); background:var(--panel); border:1px solid var(--line); padding:5px 8px; line-height:1; cursor:pointer; }
-.lang-toggle:hover, .lang-toggle[aria-expanded="true"]{ background:var(--ink); color:var(--bg); }
-.lang-caret{ font-size:8px; line-height:1; transition:transform .15s ease; }
-.lang-toggle[aria-expanded="true"] .lang-caret{ transform:rotate(180deg); }
-.lang-menu{ position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--panel); border:1px solid var(--line); min-width:120px; }
-.lang-menu[hidden]{ display:none; }
-.lang-menu li{ margin:0; }
-.lang-menu a{ display:block; font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--ink); text-decoration:none; padding:7px 10px; white-space:nowrap; }
-.lang-menu a:hover{ background:var(--ink); color:var(--bg); }
-.lang-menu a[aria-current="true"]{ color:var(--accent); }
-.lang-menu a[aria-current="true"]:hover{ color:var(--bg); }
+html{scroll-behavior:smooth;}
+body{font-family:var(--mono); background:linear-gradient(180deg, var(--bg) 0%, #171421 100%); background-color:var(--bg); color:var(--ink); line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden;}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.045) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.wrap{max-width:900px; margin:0 auto; padding:0 24px;}
+a{color:var(--blue);}
+
+nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line); background:var(--bg); position:relative; z-index:5;}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--dim); margin-right:auto;}
+nav .brand a{color:var(--dim); text-decoration:none;}
+nav .brand a:hover{color:var(--ink);}
+nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--ink);}
+nav .brand .here{font-weight:800; color:var(--ink);}
+nav .brand .pipe{color:var(--dim); margin:0 11px;}
+nav .links a{color:var(--ink); text-decoration:none; opacity:.7; margin-left:22px;}
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+@media(max-width:640px){ nav .links a:not(.keep){display:none;} nav .brand .pipe, nav .brand .here{display:none;} }
+.lang-switch{flex:none; margin-left:22px; position:relative;}
+.lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--ink); background:var(--bg); border:1px solid var(--dim); padding:5px 8px; line-height:1; cursor:pointer;}
+.lang-toggle:hover, .lang-toggle[aria-expanded="true"]{background:var(--ink); color:var(--bg);}
+.lang-caret{font-size:8px; line-height:1; transition:transform .15s ease;}
+.lang-toggle[aria-expanded="true"] .lang-caret{transform:rotate(180deg);}
+.lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--bg); border:1px solid var(--dim); min-width:120px; z-index:50;}
+.lang-menu[hidden]{display:none;}
+.lang-menu a{display:block; font-size:12px; color:var(--ink); text-decoration:none; padding:7px 10px; white-space:nowrap;}
+.lang-menu a[aria-current="true"]{color:var(--accent);}
+
+.reveal{opacity:0; transform:translateY(12px); transition:opacity .6s ease, transform .6s ease;}
+.reveal.in{opacity:1; transform:none;}
+
+header.top{padding:64px 0 10px;}
+header.top .kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--dim); margin-bottom:20px;}
+header.top h1{font-size:clamp(34px,8vw,64px); font-weight:800; letter-spacing:-.015em; line-height:1;}
+.cursor{display:inline-block; width:.5em; height:.9em; background:color-mix(in oklab, var(--accent), transparent 25%); vertical-align:-.06em; margin-left:.1em; animation:blink 1.05s steps(1) infinite;}
+@keyframes blink{50%{opacity:0;}}
+header.top .lede{font-size:clamp(15px,2.2vw,17px); color:var(--dim); max-width:62ch; margin-top:20px;}
+header.top .lede b{color:var(--ink); font-weight:700;}
+
+section{padding:40px 0 10px;}
+h2{font-size:12px; letter-spacing:.3em; text-transform:uppercase; color:var(--accent); font-weight:700; margin:0 0 6px;}
+.secnote{font-size:13px; color:var(--dim); margin:0 0 20px; max-width:66ch;}
+
+.item{border:1px solid var(--line); border-left:3px solid var(--line); padding:18px 20px 16px; margin-bottom:12px; background:rgba(255,255,255,.012);}
+.item.built{border-left-color:var(--green);}
+.item.writing{border-left-color:var(--accent);}  /* unused today: the state for a pack being written now */
+.item.planned{border-left-color:var(--faint); border-left-style:dashed;}
+.item .h{display:flex; align-items:baseline; gap:12px; flex-wrap:wrap;}
+.item .n{font-size:17px; font-weight:800;}
+.item .state{font-size:10px; letter-spacing:.18em; text-transform:uppercase; border:1px solid currentColor; padding:3px 8px; white-space:nowrap;}
+.item.built .state{color:var(--green);}
+.item.writing .state{color:var(--accent);}
+.item.planned .state{color:var(--faint);}
+.item .facts{font-size:12px; color:var(--dim); margin-top:6px; letter-spacing:.02em;}
+.item p{font-size:14px; color:var(--dim); margin-top:10px; max-width:70ch;}
+.item p b{color:var(--ink); font-weight:700;}
+
+.legend{border:1px solid var(--line); padding:16px 18px; margin:0 0 26px; font-size:13px; color:var(--dim); background:rgba(255,255,255,.012);}
+.legend div{padding:4px 0;}
+.legend b{color:var(--ink);}
+.legend .g{color:var(--green); font-weight:800;}
+.legend .a{color:var(--accent); font-weight:800;}
+.legend .f{color:var(--faint); font-weight:800;}
+
+.note{font-size:13px; color:var(--dim); border-top:1px solid var(--rule); padding-top:14px; margin-top:26px; max-width:70ch;}
+.note b{color:var(--ink);}
+.joke{font-size:13.5px; color:var(--dim); font-style:italic; margin-top:10px;}
+
+footer{border-top:1px solid var(--line); padding:28px 24px; margin-top:50px; font-size:12px; color:var(--dim); text-align:center; letter-spacing:.04em;}
+footer a{color:inherit; text-decoration:none; opacity:.75;}
+footer a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+footer .div{opacity:.4; margin:0 8px;}
 </style>
 <script src="lang-redirect.js"></script>
 </head>
 <body>
+<div class="overlay"></div>
+
+<nav>
+  <span class="brand"><a class="logo" href="index.html">FLASHBOSS</a><span class="pipe">|</span><a href="packs.html">packs</a><span class="pipe">·</span><span class="here">in development</span></span>
+  <span class="links">
+    <a class="keep" href="packs.html">out now</a>
+    <a href="immersion.html">english path</a>
+    <a href="voices.html">voices</a>
+  </span>
   <div class="lang-switch">
     <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Choose language">EN<span class="lang-caret">&#9662;</span></button>
     <ul class="lang-menu" hidden>
@@ -58,21 +125,115 @@ h1{ font-size:clamp(26px,7vw,40px); font-weight:800; letter-spacing:.04em; color
       <li><a href="in-development.es.html">Español</a></li>
       <li><a href="in-development.ja.html">日本語</a></li>
       <li><a href="in-development.zh.html">简体中文</a></li>
-            <li><a href="in-development.ru.html">Русский</a></li>
-        </ul>
+      <li><a href="in-development.ru.html">Русский</a></li>
+    </ul>
   </div>
-  <main class="card">
-    <span class="tag">FlashBoss · admin</span>
-    <h1>In Development<span class="cursor"></span></h1>
-    <div class="rows">
-      <div><span class="k">page</span><span class="v">in-development.html</span></div>
-      <div><span class="k">status</span><span class="v">in development</span></div>
-      <div><span class="k">eta</span><span class="v">soon™</span></div>
+</nav>
+
+<main>
+  <header class="top wrap">
+    <p class="kicker reveal">Not out yet</p>
+    <h1 class="reveal">In Development<span class="cursor"></span></h1>
+    <p class="lede reveal">What is being built, and how far along it is. <b>Nothing on this page has a release date</b>, because none of it has one — a date goes up when a pack is ready, not before. Everything listed here exists as real cards today; the counts were taken from the packs themselves, not from a plan.</p>
+  </header>
+
+  <section class="wrap">
+    <div class="legend reveal">
+      <div><span class="g">▍</span> <b>Cards written</b> — the pack is authored and counted. What remains is checking, audio and a store page.</div>
+      <div><span class="f">▍</span> <b>Planned</b> — decided and inventoried, not started. No cards exist yet.</div>
     </div>
-    <div class="bar"><i></i></div>
-    <p class="joke">Yes — the page that lists what's in development is, itself, in development.</p>
-    <a class="back" href="packs.html">← back to packs</a>
-  </main>
+  </section>
+
+  <section class="wrap">
+    <h2>Finishing a course already on sale</h2>
+    <p class="secnote">These continue packs you can buy today, and take the pack before them as read.</p>
+
+    <div class="item built reveal">
+      <div class="h"><span class="n">Swahili Pareto 1</span><span class="state">Cards written</span></div>
+      <div class="facts">1,000 words · 40 clusters · tiers 6–10</div>
+      <p>The working vocabulary: money and the bank, the company and the contract, the ministry, elections, the court, the police, the press, the hospital. Continues <a href="swahili.html">Swahili Core</a>, which is out now.</p>
+    </div>
+
+    <div class="item built reveal">
+      <div class="h"><span class="n">Swahili Pareto 2</span><span class="state">Cards written</span></div>
+      <div class="facts">1,000 words · 40 clusters · tiers 11–15</div>
+      <p>The last thousand of the 3,000-word course, and where Swahili's derivation opens up — one root becoming six verbs through the passive, the stative, the reciprocal, the reflexive, the causative and the applicative.</p>
+    </div>
+
+    <div class="item built reveal">
+      <div class="h"><span class="n">The Guide Part II</span><span class="state">Cards written</span></div>
+      <div class="facts">925 cards · 50 clusters · three tiers · English and German</div>
+      <p>The other half of a game master's memory. Where <a href="the-guide.html">The Guide</a> holds the rules you adjudicate with, Part II holds what you populate a world with: the spell list, the creature roster and the treasure table. Requires The Guide.</p>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2>New languages</h2>
+    <p class="secnote">Each is a full course in the usual shape — Core first, then Pareto 1, five tiers apiece.</p>
+
+    <div class="item built reveal">
+      <div class="h"><span class="n">Russian</span><span class="state">Cards written</span></div>
+      <div class="facts">Core and Pareto 1 · 1,000 words each · 40 clusters each</div>
+      <p>Русский. Two thousand words authored and counted.</p>
+    </div>
+
+    <div class="item built reveal">
+      <div class="h"><span class="n">Indonesian</span><span class="state">Cards written</span></div>
+      <div class="facts">Core and Pareto 1 · 1,000 words each · 40 clusters each</div>
+      <p>Bahasa Indonesia — a language with no tenses, no genders and no plurals to memorise, and a word order you already have.</p>
+    </div>
+
+    <div class="item built reveal">
+      <div class="h"><span class="n">Modern Greek</span><span class="state">Cards written</span></div>
+      <div class="facts">Core and Pareto 1 · 1,000 words each · 40 clusters each</div>
+      <p>Ελληνικά, the living language, with an alphabet ladder in the opening lessons. Not to be confused with Ancient Greek below, or with <a href="greek-roots.html">Greek Roots</a>, which teaches the Greek already inside English.</p>
+    </div>
+
+    <div class="item built reveal">
+      <div class="h"><span class="n">Ancient Greek</span><span class="state">Cards written</span></div>
+      <div class="facts">Core and Pareto 1 · 1,000 words each · 40 clusters each</div>
+      <p>A reading course, in the shape <a href="latin.html">Latin</a> took: the sentences start built for the tier and end as the authors wrote them.</p>
+    </div>
+
+    <div class="item planned reveal">
+      <div class="h"><span class="n">Polish and Portuguese</span><span class="state">Planned</span></div>
+      <div class="facts">Word lists locked · no cards authored yet</div>
+      <p>The frequency backbones are chosen and fixed, which is the half of the work that decides what a course teaches. The cards themselves are not written.</p>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2>Beyond the Latin trunk</h2>
+    <p class="secnote">Latin Core and Latin Pareto are the whole 2,000-word reading course, grammar-complete at tier 10. There is deliberately no third staircase.</p>
+
+    <div class="item planned reveal">
+      <div class="h"><span class="n">Latin — the two branches</span><span class="state">Planned</span></div>
+      <div class="facts">Classical poetry · or ecclesiastical Latin</div>
+      <p>Past 2,000 words Latin genuinely divides, and which thousand comes next depends on what you want to read: <b>classical poetry</b> — Vergil, Ovid, Catullus, Horace — or <b>ecclesiastical Latin</b>, the Vulgate, the hymns and the liturgy. Both are inventoried and reserved. Neither is built, and neither takes the other as a prerequisite.</p>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2>Voices</h2>
+    <div class="item built reveal">
+      <div class="h"><span class="n">Castellano — Spain, male</span><span class="state">Cards written</span></div>
+      <div class="facts">Replaces the included Latin American voice across every Spanish pack</div>
+      <p>A voice pack rather than a course: it swaps the voice in cards, lessons and boss fights, and switches back whenever you like. Hear it against the voice it replaces on the <a href="voices.html">voices page</a>.</p>
+    </div>
+
+    <p class="note">Everything above was counted from the packs on <b>19 September 2026</b>. A pack leaves this page the day it goes on sale and appears on <a href="packs.html">the pack list</a> instead — so if something has vanished from here, look for it there.</p>
+    <p class="joke">And yes — the page that lists what's in development used to be, itself, in development.</p>
+  </section>
+</main>
+
+<footer>
+  <a href="home.html">home</a><span class="div">·</span>
+  <a href="packs.html">packs</a><span class="div">·</span>
+  <a href="immersion.html">the english path</a><span class="div">·</span>
+  <a href="voices.html">voices</a><span class="div">·</span>
+  <a href="resources.html">resources</a>
+</footer>
+
 <script>
 (function(){
   var sw=document.querySelector('.lang-switch'); if(!sw) return;
@@ -81,6 +242,12 @@ h1{ font-size:clamp(26px,7vw,40px); font-weight:800; letter-spacing:.04em; color
   btn.addEventListener('click', function(e){ e.stopPropagation(); var o=menu.hidden; menu.hidden=!o; btn.setAttribute('aria-expanded', String(o)); });
   document.addEventListener('click', function(e){ if(!sw.contains(e.target)) close(); });
   document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e);});
 })();
 </script>
 </body>
