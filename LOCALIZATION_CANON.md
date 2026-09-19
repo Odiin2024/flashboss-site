@@ -3,15 +3,19 @@
      Amendments are proposed and ratified in the game repo; see
      knight/docs/CANON_SYNC.md. This file is written by
      tools/canon_sync.py --adopt --only localization
-     Synced 2026-08-28 · body sha256:41619fdad969 -->
+     Synced 2026-08-31 · body sha256:d931bebd7bd8 -->
 
 # TERMINOLOGY_CANON — localized store-asset name table
 
 Finalized by the asset project 2026-08-10, per
 `CAPSULE_NAME_LOCALIZATION_RULING_2026-08-10.md`. These words are now canon: the
-in-game pack shelf must use the same renderings when it localizes. **This file
-must be synced to the game repo at `docs/store_pages/drafts/TERMINOLOGY_CANON.md`**
-(the game repo is not checked out on this machine).
+in-game pack shelf must use the same renderings when it localizes. The
+AUTHORITY for this canon lives in the game repo
+(`knight/docs/store_pages/drafts/LOCALIZATION_CANON.md`); downstream copies in
+flashboss-admin and flashboss-site are written by `tools/canon_sync.py
+--adopt` and never edited in place. (An earlier header claimed the game repo
+was not checked out on the asset machine — stale since the 08-28 authority
+ruling, corrected 2026-08-31.)
 
 Brand tokens stay Latin in every locale: **FlashBoss**, **Pareto**, **Master Odiin**.
 
@@ -63,3 +67,19 @@ renders as パレート (established Japanese via パレートの法則/パレ�
 the 80/20 resonance and the library-name link). FlashBoss stays Latin
 everywhere. Applies to capsule art now; ja store copy adopts パレート on
 its next touch.
+
+## Amendment 2026-08-31 — Russian capsule words (Fable, under delegation)
+- **Core → Основа** — tracks the ja 基礎 / zh 基础 semantic choice
+  (foundation of a course); Ядро reads as kernel/nucleus and is wrong for a
+  course level.
+- **Pareto → Парето** — extends the パレート exception to the second
+  non-Latin script where the term is established (принцип Парето). Digits
+  stay universal (Парето 1).
+- FlashBoss stays Latin, as everywhere.
+
+## Amendment 2026-08-31 — "Bundle" vocabulary (Odiin's ruling)
+Steam's own bundle word per locale: de **Paket**, es-419 **Paquete**,
+ja **バンドル**, zh-CN **捆绑包**, ru **Комплект**. The de/es collision with
+Paket/paquete = pack is ACCEPTED knowingly (Odiin: "the price should explain
+things, and if not, to my benefit"). Locales not listed use Steam's own
+storefront term for bundles rather than inventing one.
