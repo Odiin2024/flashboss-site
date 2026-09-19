@@ -314,8 +314,8 @@ function niceTitle(t){ return String(t||'').toLowerCase().replace(/(^|[^a-z'])([
 /* "Lesson N: Title" for every lesson — N from the (sequential) lesson_id, so milestone/
    resource pages that carry no number in their title get one too. */
 function bareTitle(L){ return niceTitle(String((L&&L.title)||'').replace(/^\s*lesson\s+\d+\s*[:.–—-]\s*/i,'').trim()); }
-function lessonLabel(L){ const n=parseInt(L&&L.lesson_id,10); return (isNaN(n)?'':'Урок '+n+': ')+bareTitle(L); }  // window header
-function optLabel(L){ const n=parseInt(L&&L.lesson_id,10); return (isNaN(n)?'':n+': ')+bareTitle(L); }              // dropdown (category is already "Lesson")
+function lessonLabel(L){ const n=parseInt(L&&L.lesson_id,10); return (isNaN(n)||n===0?'':'Урок '+n+': ')+bareTitle(L); }  // window header — lesson_id 000 (GETTING STARTED, WELCOME TO TOKI PONA) is a preface, not lesson 0: it shows its bare title
+function optLabel(L){ const n=parseInt(L&&L.lesson_id,10); return (isNaN(n)||n===0?'':n+': ')+bareTitle(L); }              // dropdown (category is already "Lesson")
 function foreignKeyOf(page){ return Object.keys(page).find(k=>k!=='english' && Array.isArray(page[k])); }
 function isBilingual(page){ return !!page && Array.isArray(page.english) && !!foreignKeyOf(page); }
 function activeLines(page){

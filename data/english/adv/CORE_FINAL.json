@@ -1,6 +1,6 @@
 {
-  "language": "English Advance",
-  "set": "Core",
+  "language": "English",
+  "set": "Advance",
   "total": 500,
   "offset": 0,
   "clusters": [
@@ -140,7 +140,7 @@
         {"n": 106, "TargetWord": "best wishes", "definition": "a friendly way to end a letter or email, less formal than regards", "pos": "phrase"},
         {"n": 107, "TargetWord": "to whom it may concern", "definition": "a very formal greeting used when you do not know who will read the letter", "pos": "phrase"},
         {"n": 108, "TargetWord": "Dear Sir or Madam", "definition": "a formal greeting used in letters when you do not know the reader's name", "pos": "phrase"},
-        {"n": 109, "TargetWord": "with compliments", "definition": "a polite phrase used when sending something officially, often on a slip of paper", "pos": "phrase"},
+        {"n": 109, "TargetWord": "with our compliments", "definition": "a polite phrase meaning something is given free as a courtesy", "pos": "phrase"},
         {"n": 110, "TargetWord": "warmest regards", "definition": "a very warm and friendly way to end a letter or email", "pos": "phrase"},
         {"n": 111, "TargetWord": "respectfully", "definition": "a formal and polite way to end a letter, showing high regard for the reader", "pos": "adv"},
         {"n": 112, "TargetWord": "many thanks", "definition": "a friendly way to end an email when you are thanking someone for their help", "pos": "phrase"},
@@ -243,7 +243,7 @@
         {"n": 189, "TargetWord": "watch your step", "definition": "a warning to watch out for a step or change in floor level", "pos": "phrase", "TargetWord_gb": "mind the step"},
         {"n": 190, "TargetWord": "do not disturb", "definition": "a sign asking people not to knock, enter, or interrupt", "pos": "phrase"},
         {"n": 191, "TargetWord": "employees only", "definition": "this area is for staff and not open to the public", "pos": "phrase", "TargetWord_gb": "staff only", "definition_gb": "this area is for employees and not open to the public"},
-        {"n": 192, "TargetWord": "video surveillance", "definition": "security cameras are recording in this area", "pos": "phrase", "TargetWord_gb": "CCTV in operation"},
+        {"n": 192, "TargetWord": "video surveillance", "definition": "security cameras are recording in this area", "pos": "noun", "TargetWord_gb": "CCTV in operation"},
         {"n": 193, "TargetWord": "wait in line here", "definition": "stand and wait at this spot until it is your turn", "pos": "phrase", "TargetWord_gb": "queue here", "definition_gb": "wait in line at this spot until it is your turn"},
         {"n": 194, "TargetWord": "no smoking", "definition": "smoking is not allowed in this area", "pos": "phrase"},
         {"n": 195, "TargetWord": "by appointment only", "definition": "you must book a time before you come, you cannot just walk in", "pos": "phrase"},
@@ -548,7 +548,7 @@
         {"n": 434, "TargetWord": "reinstate", "definition": "to put something or someone back into the position they were in before", "pos": "verb"},
         {"n": 435, "TargetWord": "nullify", "definition": "to make something legally void or without effect", "pos": "verb"},
         {"n": 436, "TargetWord": "adjudicate", "definition": "to make a formal judgment or decision about a dispute", "pos": "verb"},
-        {"n": 437, "TargetWord": "gazette", "definition": "to publish an official notice in a government journal, making it legally formal", "pos": "verb/noun"}
+        {"n": 437, "TargetWord": "file", "definition": "to formally submit a complaint, appeal, or application to an official body", "pos": "verb", "TargetWord_gb": "lodge"}
       ]
     },
     {

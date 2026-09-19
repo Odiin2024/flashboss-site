@@ -56,7 +56,12 @@ SETS = [("English", "Core",     "English/core",               "data/english/core
         ("English", "German Roots", "German_Roots/core",        "data/english/gr/CORE_FINAL.json",     0,    "roots"),
         ("English", "Greek Roots",  "Greek_Roots/core",         "data/english/gkr/CORE_FINAL.json",    0,    "roots"),
         ("English", "Norman Roots", "Norman_Roots/core",        "data/english/nr/CORE_FINAL.json",     0,    "roots"),
-        ("English", "Latin Roots",  "Latin_Roots/core",         "data/english/lr/CORE_FINAL.json",     0,    "roots")]
+        ("English", "Latin Roots",  "Latin_Roots/core",         "data/english/lr/CORE_FINAL.json",     0,    "roots"),
+        # Adept and Advance are the same shape — TargetWord <-> definition, pos/syn/ant
+        # in Notes — so they build in "roots" mode too. Registered 2026-09-21; until then
+        # their views were 2026-08-28 hand drops with nothing keeping them in step.
+        ("English", "Adept",        "English_Adept/core",       "data/english/ad/CORE_FINAL.json",     0,    "roots"),
+        ("English", "Advance",      "English_Advance/core",     "data/english/adv/CORE_FINAL.json",    0,    "roots")]
 
 # Notes shape on a Roots card, one line:
 #   "noun | Old English freodom (...). Norman twin: liberty, ... syn: independence | ant: captivity | Related: free"

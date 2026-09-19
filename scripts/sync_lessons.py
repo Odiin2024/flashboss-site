@@ -27,7 +27,14 @@ MAP = [("English/core",               "data/english/core"),
        ("German_Roots/core",           "data/english/gr"),
        ("Greek_Roots/core",            "data/english/gkr"),
        ("Norman_Roots/core",           "data/english/nr"),
-       ("Latin_Roots/core",            "data/english/lr")]
+       ("Latin_Roots/core",            "data/english/lr"),
+       # Adept and Advance, the other two standalone English packs (added 2026-09-21 so
+       # they cannot drift the way the Roots lessons did). Adept ships English + _gb;
+       # Advance also carries _de/_es/_ja/_zh lesson twins upstream (the A1/A2
+       # bureaucracy guide) and they are copied, though the lessons page does not yet
+       # ask for them: it passes LESSON_LOC for foreign packs only.
+       ("English_Adept/core",          "data/english/ad"),
+       ("English_Advance/core",        "data/english/adv")]
 
 def main():
     total = 0
