@@ -83,8 +83,12 @@ esperanto (×3), french (×3), italian (×3), latin, latin_p1, swahili (×3),
 spanish (×3), german_p1, german_p2, the_guide_p2. Kits with no
 `CHEATSHEET_6LANG.md` are fine: the bench reads the answers straight from the deck.
 
-**Blocked — no `*_SWAP.json` at all**, so the kit cannot seat: `german_roots_screenshot_kit`,
-`norman_roots_screenshot_kit`. Both have a cheat sheet and no deck.
+~~**Blocked — no `*_SWAP.json` at all**: `german_roots_screenshot_kit`,
+`norman_roots_screenshot_kit`.~~ **WRONG, corrected by flashboss-admin-75.** Both have
+their swaps one level down, in `sets/`, because each pack needs two —
+`GRR_A_cluster1_1_…` and `GRR_D_…`, likewise `NRR_`. Latin and Greek keep theirs at the
+kit root because they only have one. Use the `sets/` paths. **Their screenshots are
+marked DO_NOT_UPLOAD** pending the depots going live; ask Odiin before filming either.
 
 **Blocked — two swap files in one kit**, and `deck.swap_path()` refuses to choose:
 `the_guide_screenshot_kit` (cluster1_1 and cluster1_6), `english_screenshot_kit`.
@@ -114,3 +118,31 @@ So a fight film for a pack with no modern route — Spanish Core, English Core �
 either a hand-walk (`shoot.py record`, a human at the keyboard once) or iteration
 against the EXPECT gates. The gates fail loudly rather than banking a wrong frame, so
 iterating is safe, just slow.
+
+**In the event none of that was needed.** `roots_fight_film.keys` walked Spanish Core and
+English Core first time — the Know Your Enemy path is the same for any Core pack. Only
+The Guide needed its own film route, and only because its store route differs.
+
+## The two flags that cost the most time
+
+**`--card-pack` is not optional.** The card-text preference is keyed on the pack
+DIRECTORY (`card_lang:English`, `card_lang:The_Guide`) while `--wake-pack` is the kit
+token the forge writes (`english`, `the_guide`). Miss it and the run silently keeps
+**the previous run's** card language — a Spanish interface asking "Traduce: ¡haben!"
+three runs after a German one. Watch the log line `Core prefs pinned: {...}`.
+
+**The kit folder must be named `<pack>_screenshot_kit`.** The forge derives the pack from
+the folder name; anything else and it reports "the forge left Core waking in None".
+
+**`FLASHBOSS_KITS` is the only override that reaches the shoot path** — `--kits` works for
+`check` and is ignored by `shoot`.
+
+**`interface_language.json` arming is one-shot.** The forge deletes it, the game writes it
+back the moment a chooser is answered, so any launch between the two disarms the next run
+and leaves its own language behind. Check `~/knight-shoot-wt/local_db/interface_language.json`
+is absent before a run that depends on the chooser.
+
+## The boss-intro splash cannot be filmed
+
+`SHOT` at the "Engaging Boss" hold captures one frame and costs the rest of the run.
+The title plates in `stitch_three.sh` are drawn instead, in the real window chrome.
