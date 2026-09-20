@@ -18,6 +18,7 @@ would send them to a 404.
 Nothing here touches prose.
 """
 import re, sys, pathlib
+from collections import OrderedDict
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 from localize_new_pages import BASE, LOCALES, NATIVE, page_name
@@ -63,23 +64,31 @@ def wire_page(base):
 
 
 def wire_redirect(pages):
-    """Add each page to AVAIL, listing only the locales that really exist."""
+    """Rewrite AVAIL so it lists exactly the locales that exist on disk.
+
+    The whole object is re-emitted rather than patched line by line. An earlier
+    version inserted each row before the closing brace and stripped the trailing
+    comma as it went, which produced three consecutive rows with no comma between
+    them -- a syntax error that would have taken the redirect script out
+    entirely, silently, for every page on the site.
+    """
     p = ROOT / "lang-redirect.js"
     s = p.read_text(encoding="utf-8")
+    m = re.search(r"(var AVAIL = \{\n)(.*?)(\n\s*\};)", s, re.S)
+    if not m:
+        raise SystemExit("lang-redirect.js: no AVAIL object found")
+
+    rows = OrderedDict(re.findall(r"'([A-Za-z0-9_-]+)':\s*\[([^\]]*)\]", m.group(2)))
     for base, locs in pages.items():
-        if not locs:
-            continue
-        row = "    '%s':%s[%s]," % (base, " " * max(1, 17 - len(base)),
-                                   ", ".join(f"'{l}'" for l in locs))
-        if re.search(rf"^\s*'{re.escape(base)}':", s, re.M):
-            s = re.sub(rf"^\s*'{re.escape(base)}':.*$", row, s, count=1, flags=re.M)
-        else:
-            # insert before the closing brace of the AVAIL object
-            s = re.sub(r"(\n)(\s*\};\n\s*try \{)", r"\n" + row.rstrip(",") + r"\1\2", s, count=1)
-    # a trailing comma before the closing brace is legal in modern browsers but
-    # the file predates that assumption; normalise it away
-    s = re.sub(r",(\s*//[^\n]*)?(\s*\};)", r"\1\2", s, count=1)
+        if locs:
+            rows[base] = ", ".join(f"'{l}'" for l in locs)
+
+    width = max(len(b) for b in rows) + 3
+    body = ",\n".join(f"    {('%r:' % b).replace(chr(34), chr(39)):<{width}} [{v.strip()}]"
+                       for b, v in rows.items())
+    s = s[:m.start(2)] + body + s[m.end(2):]
     p.write_text(s, encoding="utf-8")
+    return list(rows)
 
 
 def main():
@@ -88,8 +97,8 @@ def main():
         raise SystemExit(__doc__)
     print("wiring the English originals:")
     pages = {b: wire_page(b) for b in bases}
-    wire_redirect(pages)
-    print("lang-redirect.js AVAIL updated")
+    listed = wire_redirect(pages)
+    print(f"lang-redirect.js AVAIL rewritten: {len(listed)} pages")
 
 
 if __name__ == "__main__":

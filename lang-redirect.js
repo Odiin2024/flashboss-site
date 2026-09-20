@@ -44,8 +44,10 @@
     'greek-roots':    ['de', 'es', 'ja', 'zh', 'ru'],
     'english':        ['de', 'es', 'ja', 'zh', 'ru'],
     'affiliate':      ['de', 'es', 'ja', 'zh', 'ru'],
-    'in-development':  ['de', 'es', 'ja', 'zh', 'ru']
-    // 'immersion' and 'latin' are English-only today; add them here the day their siblings ship.
+    'in-development': ['de', 'es', 'ja', 'zh', 'ru'],
+    'immersion':      ['de', 'es', 'ja', 'zh', 'ru'],
+    'swahili':        ['de', 'es', 'ja', 'zh', 'ru'],
+    'the-guide':      ['de', 'es', 'ja', 'zh', 'ru']
   };
   try {
     var file = location.pathname.split('/').pop();
