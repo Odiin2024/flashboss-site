@@ -62,6 +62,11 @@ def main():
     ap.add_argument("--cdp",  type=int, default=9333)
     ap.add_argument("--dir",  default=os.path.dirname(os.path.abspath(__file__)))
     ap.add_argument("--scale", type=float, default=1.0)
+    ap.add_argument("--game-accurate", action="store_true",
+                    help="Resolve the immersion question and hint from the ENGLISH catalogue, "
+                         "the way knight/boss_fight.py does with t_en() for English-side packs "
+                         "(Odiin's ruling 2026-08-07). The demo uses the interface language for "
+                         "these two keys, which is the one place it diverges from the game.")
     a = ap.parse_args()
     outdir = os.path.join(a.dir, "frames", a.out)
     os.makedirs(outdir, exist_ok=True)
@@ -91,6 +96,14 @@ def main():
         if not wait_for(c, "typeof S==='object' && S && S.screen==='arena'", 30):
             raise RuntimeError(f"arena never appeared at {url} (screen="
                                f"{c.js('typeof S===\"object\"&&S?S.screen:\"no S\"')})")
+        if a.game_accurate:
+            # t_en(), reproduced: these keys come from the English catalogue whatever
+            # the interface. Everything else — chrome, status lines, footer — stays
+            # localised, exactly as the game renders it.
+            c.js("(()=>{const K=['boss.question_which_word','boss.example.type_only',"
+                 "'boss.example.type_syns','boss.example.syns_only'];"
+                 "K.forEach(k=>{if(_i18nEn[k]!=null)_i18nCat[k]=_i18nEn[k];});"
+                 "if(typeof render==='function')render();return 1;})()")
         time.sleep(1.0)   # let the webfont land so the plate is not measured mid-swap
 
         box = c.js("(()=>{const e=document.getElementById('terminal');"
