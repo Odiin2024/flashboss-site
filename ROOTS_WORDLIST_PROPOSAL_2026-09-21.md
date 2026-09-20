@@ -1,5 +1,25 @@
 # Roots word lists: locale cluster names, and the twin line — PROPOSAL
 
+> **RULED, 2026-09-20.**
+> **(a) authored cluster names — TAKEN.** Built and shipped: the generator emits
+> `name`/`name_de`/… on every cluster and each `wordlists*.html` reads its own locale
+> first. Every pack the site builds is named.
+>
+> **(b) the etymology / twin line — DECLINED by Odiin**, and not on file-size grounds.
+> *"don't put that on the word lists. they are supposed to be able to fold in half. that
+> is a big part of the appeal. two equal halves, sometimes with different font sizes, but
+> you can print it, cut them out and glue them and fold them into free cards, that are not
+> meant to be that good, but can get you out of the dirt if you are tenacious."*
+>
+> The word list is a **printable fold-card artifact**, not a reference page: `@media print`
+> lays each entry out as two equal halves with a dashed fold line down the centre and a
+> solid cut line around it, a different font on each face. An etymology line unbalances the
+> halves. Hiding it in print would not save the idea — it would make the screen and the
+> paper disagree, and the paper is the point.
+>
+> Do not re-propose (b) in any form, including the on-demand toggle, without Odiin
+> reopening it himself.
+
 2026-09-21. Nothing in here is built. Two changes are proposed to the word-list
 pages for the four Roots packs (and, where noted, for Adept and Advance):
 
