@@ -125,11 +125,27 @@ The Guide needed its own film route, and only because its store route differs.
 
 ## The two flags that cost the most time
 
-**`--card-pack` is not optional.** The card-text preference is keyed on the pack
-DIRECTORY (`card_lang:English`, `card_lang:The_Guide`) while `--wake-pack` is the kit
-token the forge writes (`english`, `the_guide`). Miss it and the run silently keeps
-**the previous run's** card language — a Spanish interface asking "Traduce: ¡haben!"
-three runs after a German one. Watch the log line `Core prefs pinned: {...}`.
+**`--card-pack` is not optional**, and this is the dangerous one. The card-text
+preference is keyed on the pack DIRECTORY (`card_lang:English`, `card_lang:The_Guide`)
+while `--wake-pack` is the kit token the forge writes (`english`, `the_guide`).
+
+Verified in `~/knight-shoot-wt/tools/shoot/shoot.py` by flashboss-admin-75 and again
+here: the key is built at :412 as `'card_lang:%s' % card_pack`, and :755 passes
+`getattr(a, 'card_pack', None) or a.wake_pack`. So with `--card-pack` omitted the pin
+writes `card_lang:the_guide` where the game reads `card_lang:The_Guide` — a dead key.
+The pin then **reports success**, and `local_db/user_prefs.json` survives the forge
+(the comment at :410 says so outright), so the run keeps whatever card language the
+PREVIOUS run left behind. After a `--lang all` pass that is whatever it ended on.
+
+The symptom is a Spanish interface asking "Traduce: ¡haben!" three runs after a German
+one. **Nothing in the bench catches it**: a frame full of German nouns under a Spanish
+interface passes `capture.signature`, `--require-framing` and every other gate, because
+none of them read the words. Watch the log line `Core prefs pinned: {...}` and check the
+key has a capital.
+
+> **The bench's own help text is stale on this.** `shoot.py:864` says "Pin the wrong one
+> and the run is silently English". It is not English — it is the last run's language.
+> flashboss-admin-75 has flagged the one-line fix to Odiin; neither of us edited knight.
 
 **The kit folder must be named `<pack>_screenshot_kit`.** The forge derives the pack from
 the folder name; anything else and it reports "the forge left Core waking in None".

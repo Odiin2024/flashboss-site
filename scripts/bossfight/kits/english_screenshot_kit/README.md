@@ -37,3 +37,15 @@ DIRECTORY (`card_lang:English`) while the wake pack is the kit token (`english`)
 it the pin misses and the run silently keeps whatever card language the *previous* run
 left behind — a Spanish run asking "Traduce: ¡haben!" is what that looks like.
 The kit folder must also be named `<pack>_screenshot_kit` or the forge wakes in `None`.
+
+## These eight are a mechanical pick, not a curated one
+
+flashboss-admin-75's position, and it is right: **which eight cards represent English
+Core is a product decision**, not a tooling one — the same kit feeds store screenshots.
+Their recommendation is that a hand-curated eight should pass through the filter above
+as a **gate**, rather than have the filter choose. The constraint is sound either way;
+the pick should be human.
+
+It has gone to Odiin. If he wants a curated kit it will be built properly in
+flashboss-admin and this one should be deleted; until then this works and the fights
+made from it are real English Core tier-1 words.
