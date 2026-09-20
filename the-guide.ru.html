@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- FlashBoss — The Guide. Written 2026-09-19 from the approved Steam copy
+     (flashboss-admin/store_page_descriptions/1143255_the_guide.json) and checked
+     against knight/flashcard_sets/The_Guide/core: 1,205 cards in 62 clusters,
+     five tiers, 62 reference lessons. Cards carry TargetWord, Translation,
+     ExampleSentence, Notes and their _de/_es/_ja/_ru/_zh twins; the sample card
+     on this page (Dim Light) is a real card from cluster 1.10, quoted verbatim.
+     LIVE on Steam as 4564340.
+     PART II IS NOT LIVE. It is written (927 cards, three tiers) and has a store
+     draft at item 1318030, but it is not released and is deliberately NOT listed
+     here. Add it at PARTII-TBD when knight-e6 says the depot is live.
+     IP CARE: the licence framing is the store page's own and must not drift —
+     "5E compatible", "System Reference Document 5.2", "the 2024 revision".
+     The trademarked game name appears nowhere, and must not.
+     English only for now: the hreflang block, the switcher <ul> and
+     lang-redirect.js AVAIL gain the siblings together when they ship. -->
+<!-- SELF-TRANSLATED, ru. The prose on this page was written by Claude
+     (Opus), not by the translation fleet, on Odiin's word of 2026-09-20:
+     good enough for now, and flagged for a translation/adversarial pass
+     another day. The page carries the beta-translation notice so a reader
+     knows and so that pass can find it.
+     Canon held here: the six pack names stay English, FlashBoss stays
+     Latin, and every number is the English page's number in this locale's
+     separator — nothing was recounted. -->
+<title>The Guide — FlashBoss</title>
+<meta name="description" content="FlashBoss The Guide: правила, которые мастер должен держать в голове, в виде карточек. 1205 карточек в 62 кластерах, 62 справочных урока, бой с боссом у каждых ворот. Полное немецкое издание; японский, китайский, русский и испанский играются на вашем языке, а отвечаете вы по-английски. Совместимо с 5E, собрано по SRD 5.2.">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="canonical" href="https://odiin2024.github.io/flashboss-site/the-guide.ru.html">
+<link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/the-guide.html">
+<link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/the-guide.de.html">
+<link rel="alternate" hreflang="es" href="https://odiin2024.github.io/flashboss-site/the-guide.es.html">
+<link rel="alternate" hreflang="ja" href="https://odiin2024.github.io/flashboss-site/the-guide.ja.html">
+<link rel="alternate" hreflang="zh" href="https://odiin2024.github.io/flashboss-site/the-guide.zh.html">
+<link rel="alternate" hreflang="ru" href="https://odiin2024.github.io/flashboss-site/the-guide.ru.html">
+<link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/the-guide.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   FlashBoss — The Guide. Phosphor terminal, lamplit-table palette.
+   The argument: a game master's job is adjudication at speed, and
+   the thing that slows it down is page-flipping. The card shows the
+   rule happening at a table, then the numbers underneath.
+   ============================================================ */
+:root{
+  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --bg:#100d08; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
+  --accent:#e0a93f; --gold:#e0a93f; --cool:#83b6dd; --line:#3a3120; --rule:#2a2417;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--mono); background:linear-gradient(180deg, var(--bg) 0%, #171421 100%); background-color:var(--bg); color:var(--ink); line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden;}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.045) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.vignette{position:fixed; inset:0; pointer-events:none; z-index:9998;
+  background:radial-gradient(120% 90% at 50% 35%, transparent 58%, rgba(0,0,0,.52) 100%);}
+.wrap{max-width:900px; margin:0 auto; padding:0 24px;}
+a{color:var(--accent);}
+
+nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line); position:relative; z-index:5; background:var(--bg);}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--dim); margin-right:auto;}
+nav .brand a{color:var(--dim); text-decoration:none;}
+nav .brand a:hover{color:var(--ink);}
+nav .brand .here{font-weight:800; color:var(--ink);}
+nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--ink);}
+nav .brand .pipe{color:var(--dim); margin:0 11px;}
+nav .links a{color:var(--ink); text-decoration:none; opacity:.7; margin-left:22px;}
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+nav .links a.steam{font-weight:800; opacity:1;}
+.nav-mobile{display:none;}
+.nav-mobile a{color:inherit; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.08em; opacity:.85;}
+@media(max-width:640px){ nav .links{display:none;} nav .brand .pipe, nav .brand .here{display:none;} nav .brand a:not(.logo){display:none;} .nav-mobile{display:flex; align-items:center; gap:18px;} }
+nav .lang-switch{flex:none; margin-left:22px; position:relative;}
+nav .lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--ink); background:var(--bg); border:1px solid var(--dim); padding:5px 8px; line-height:1; cursor:pointer;}
+nav .lang-toggle:hover, nav .lang-toggle[aria-expanded="true"]{background:var(--ink); color:var(--bg);}
+nav .lang-caret{font-size:8px; line-height:1;}
+nav .lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--bg); border:1px solid var(--dim); min-width:120px; z-index:50;}
+nav .lang-menu[hidden]{display:none;}
+nav .lang-menu a{display:block; font-size:12px; color:var(--ink); text-decoration:none; padding:7px 10px; white-space:nowrap;}
+nav .lang-menu a[aria-current="true"]{color:var(--accent);}
+
+.reveal{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease;}
+.reveal.in{opacity:1; transform:none;}
+
+.hero{position:relative; padding:84px 0 44px; overflow:hidden;}
+.hero::before{content:""; position:absolute; inset:0; z-index:0; background:#100d08 url('background.png') center 30% / cover no-repeat;}
+.hero::after{content:""; position:absolute; inset:0; z-index:1; background:linear-gradient(180deg, rgba(18,13,9,.58) 0%, rgba(18,13,9,.84) 56%, var(--bg) 100%);}
+.hero .wrap{position:relative; z-index:2;}
+.kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--dim); margin-bottom:24px;}
+.kicker b{color:var(--accent); font-weight:700;}
+.hero h1{font-size:clamp(40px,10vw,90px); line-height:.95; margin:0; font-weight:800; letter-spacing:-.015em;}
+.hero h1 .small{display:block; font-size:.24em; letter-spacing:.34em; font-weight:500; opacity:.62; margin-top:18px;}
+.cursor{display:inline-block; width:.55em; height:.92em; vertical-align:-.06em; background:color-mix(in oklab, var(--accent), transparent 28%); margin-left:.1em; animation:blink 1.05s steps(1) infinite;}
+@keyframes blink{50%{opacity:0;}}
+.hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:46ch; margin:28px 0 0; font-weight:500;}
+.hero .sig{font-size:13px; letter-spacing:.24em; text-transform:uppercase; color:var(--accent); margin:14px 0 0; opacity:.9;}
+.hero .lede{font-size:clamp(15px,2.2vw,18px); max-width:56ch; margin:22px 0 0; color:var(--dim);}
+.hero .lede b{color:var(--ink); font-weight:700;}
+.btn{display:inline-block; font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.08em; color:#100d08; background:color-mix(in oklab, var(--accent), transparent 18%); padding:14px 26px; text-decoration:none; box-shadow:6px 6px 0 color-mix(in oklab, var(--accent), #000 62%); transition:transform .12s ease, box-shadow .12s ease;}
+.btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--accent), #000 62%);}
+.btn.warm{color:#171421; background:var(--gold); box-shadow:6px 6px 0 color-mix(in oklab, var(--gold), #000 62%);}
+.btn.warm:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--gold), #000 62%);}
+.hero .actions{display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:38px; max-width:520px;}
+.hero .actions .btn{width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
+
+section{padding:60px 0;}
+.hero + section{padding-top:44px;}
+.frame{border:1px solid var(--line); position:relative; padding:34px 30px 30px;}
+.frame > .tag{position:absolute; top:-12px; left:22px; background:var(--bg); padding:4px 12px; line-height:1; font-size:11px; letter-spacing:.3em; text-transform:uppercase; color:var(--accent);}
+h2{font-size:clamp(25px,4.8vw,38px); margin:0 0 8px; font-weight:800; letter-spacing:-.01em;}
+.sub{color:var(--dim); font-size:14px; letter-spacing:.03em; margin:0 0 24px; max-width:66ch;}
+p.body{font-size:15.5px; max-width:64ch; margin:0 0 16px;}
+p.body b{color:var(--accent);}
+p.body i{color:var(--gold); font-style:italic;}
+p.quiet{font-size:13px; color:var(--dim); max-width:66ch; margin:18px 0 0; border-top:1px solid var(--rule); padding-top:12px;}
+
+/* the card, taken apart */
+.cardshow{display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px solid var(--line);}
+@media(max-width:700px){.cardshow{grid-template-columns:1fr;}}
+.cardface{padding:24px 22px; border-right:1px solid var(--line); background:rgba(0,0,0,.25);}
+.cardface:last-child{border-right:0; background:transparent;}
+@media(max-width:700px){.cardface{border-right:0; border-bottom:1px solid var(--line);} .cardface:last-child{border-bottom:0;}}
+.cardface .lab{font-size:10.5px; letter-spacing:.24em; text-transform:uppercase; color:var(--faint); margin-bottom:14px;}
+.cardface .hw{font-size:26px; font-weight:800; color:var(--accent); line-height:1.15;}
+.cardface .scene{font-style:italic; color:var(--dim); font-size:13.5px; margin-top:14px;}
+.cardface .def{margin-top:14px; font-size:14.5px;}
+.cardface .rule{margin-top:14px; font-size:13.5px; color:var(--gold);}
+.cardface .nums{margin-top:14px; font-size:12.5px; color:var(--dim); border-top:1px solid var(--rule); padding-top:12px;}
+.anat{list-style:none; margin:0; padding:0; font-size:14px;}
+.anat li{padding:10px 0; border-bottom:1px dashed var(--rule);}
+.anat li:last-child{border-bottom:0;}
+.anat b{color:var(--ink); font-weight:800;}
+.anat span{color:var(--dim); display:block; font-size:13px; margin-top:3px;}
+
+/* editions */
+.eds{display:flex; flex-direction:column; gap:0; border:1px solid var(--line);}
+.ed{padding:20px 20px; border-bottom:1px solid var(--line);}
+.ed:last-child{border-bottom:0;}
+.ed .h{font-size:16px; font-weight:800;}
+.ed .h .badge{font-size:10px; letter-spacing:.16em; text-transform:uppercase; border:1px solid currentColor; padding:3px 8px; margin-left:12px; vertical-align:middle;}
+.ed.full .h{color:var(--accent);}
+.ed.mixed .h{color:var(--gold);}
+.ed.bonus .h{color:var(--cool);}
+.ed p{font-size:13.5px; color:var(--dim); margin-top:8px; max-width:70ch;}
+.ed p b{color:var(--ink); font-weight:700;}
+
+/* tiers */
+.tiers{list-style:none; margin:0; padding:0; counter-reset:t;}
+.tiers li{counter-increment:t; border-left:2px solid var(--line); padding:14px 0 14px 26px; margin-left:8px; position:relative;}
+.tiers li::before{content:"T" counter(t); position:absolute; left:-15px; top:14px; background:var(--bg); font-size:11px; font-weight:700; padding:2px 0; color:var(--accent);}
+.tiers .w{font-weight:700; font-size:15px;}
+.tiers .d{display:block; color:var(--dim); font-size:13px; margin-top:4px;}
+
+.method dl{display:grid; grid-template-columns:max-content 1fr; gap:14px 22px; margin:0;}
+.method dt{font-weight:700; color:var(--gold); white-space:nowrap;}
+.method dd{margin:0; font-size:14.5px; color:var(--dim);}
+.method dd b{color:var(--ink); font-weight:700;}
+@media(max-width:560px){.method dl{grid-template-columns:1fr; gap:4px 0;} .method dd{margin-bottom:14px;}}
+
+details{border-top:1px solid var(--rule); padding:14px 0;}
+details summary{cursor:pointer; font-weight:700; font-size:15px; list-style:none;}
+details summary::-webkit-details-marker{display:none;}
+details summary::before{content:"+ "; color:var(--accent); font-weight:800;}
+details[open] summary::before{content:"− ";}
+details .a{font-size:14px; color:var(--dim); margin-top:10px; max-width:66ch;}
+details .a b{color:var(--ink);}
+
+.final{text-align:center; padding:80px 0 96px;}
+.final h2{font-size:clamp(26px,5.6vw,48px);}
+.final p{color:var(--dim); max-width:54ch; margin:14px auto 30px; font-size:15px;}
+footer{border-top:1px solid var(--line); padding:28px 24px; font-size:12px; color:var(--dim); text-align:center; letter-spacing:.04em;}
+footer .legal{font-size:11px; color:var(--faint); max-width:64ch; margin:0 auto 14px; line-height:1.6;}
+footer .footer-links{display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap;}
+footer .footer-links a{color:inherit; text-decoration:none; opacity:.75;}
+footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+footer .footer-links .div{opacity:.4;}
+.beta-note{background:#1b1508; border-bottom:1px solid #6b5a2a; color:#e8d9b0; font:500 12.5px/1.55 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; text-align:center; padding:9px 16px; margin:0;}
+.beta-note b{color:#e0a93f; font-weight:700; letter-spacing:.09em;}
+.beta-note a{color:#e0a93f; text-decoration:underline; text-underline-offset:2px;}
+</style>
+<script src="lang-redirect.js"></script>
+</head>
+<body>
+<div class="beta-note" role="status"><b>БЕТА-ПЕРЕВОД</b> — русская версия этой страницы черновая и ещё не прошла редактуру. Нашли ошибку в тексте? <a href="report.html">Сообщите нам</a> · <a href="the-guide.html">Read in English</a></div>
+<div class="overlay"></div>
+<div class="vignette"></div>
+
+<nav>
+  <span class="brand"><a class="logo" href="index.ru.html">FLASHBOSS</a><span class="pipe">|</span><a href="packs.ru.html">наборы</a><span class="pipe">·</span><span class="here">The Guide</span></span>
+  <span class="links">
+    <a href="wordlists.ru.html?lang=English">списки карточек</a>
+    <a href="lessons.ru.html">уроки</a>
+    <a href="voices.ru.html">голоса</a>
+    <a class="steam" href="https://store.steampowered.com/app/4564340/?utm_source=website-guide" target="_blank" rel="noopener">steam</a>
+  </span>
+  <span class="nav-mobile">
+    <a href="packs.ru.html">наборы</a>
+    <a href="https://store.steampowered.com/app/4564340/?utm_source=website-guide" target="_blank" rel="noopener">steam</a>
+  </span>
+  <div class="lang-switch">
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Выбрать язык">RU<span class="lang-caret">▾</span></button>
+    <ul class="lang-menu" hidden>
+      <li><a href="the-guide.html">English</a></li>
+      <li><a href="the-guide.de.html">Deutsch</a></li>
+      <li><a href="the-guide.es.html">Español</a></li>
+      <li><a href="the-guide.ja.html">日本語</a></li>
+      <li><a href="the-guide.zh.html">简体中文</a></li>
+      <li><a href="the-guide.ru.html" aria-current="true">Русский</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <header class="hero">
+    <div class="wrap">
+      <p class="kicker reveal">Для того, кто водит игру · <b>уже вышло</b></p>
+      <h1 class="reveal">The Guide<span class="cursor"></span><span class="small">1205 карточек · 62 кластера</span></h1>
+      <p class="tagline reveal">Правила, которые мастер держит в голове, — а не на странице, которую он сейчас листает.</p>
+      <p class="sig reveal">Слушайте · читайте · повторяйте · оценивайте · сражайтесь</p>
+      <p class="lede reveal">Каждая карточка — это одна вещь, которую стоит знать наизусть, а не искать на ходу: что делает состояние, какой кубик требует проверка, что означает Сл 15, о чём говорит блок характеристик, что на самом деле может отряд на 5 уровне. <b>Совместимо с 5E, собрано по System Reference Document 5.2.</b></p>
+      <div class="actions reveal">
+        <a class="btn" href="#card">что на карточке</a>
+        <a class="btn" href="#editions">языки</a>
+        <a class="btn warm" href="https://store.steampowered.com/app/4564340/?utm_source=website-guide" target="_blank" rel="noopener">steam</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- THE ARGUMENT -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Зачем вообще зубрить правила</span>
+      <h2>Игру за столом ломает именно поиск по книге</h2>
+      <p class="body">Настоящее умение мастера — решать быстро. Все за столом чувствуют разницу между решением, которое приходит через две секунды, и тем, которое приходит через девяносто секунд листания книги, — и второе стоит вам сцены, а не только времени.</p>
+      <p class="body">Лечится это не лучшим указателем. Лечит <b>знание</b>: пятнадцать состояний, тринадцать типов урона, таблицы характеристик и бонуса мастерства, показатель опасности и опыт, который он стоит. Те самые числа, ради которых вы сейчас листаете книгу.</p>
+      <p class="body">Так что это курс лексики, чья лексика оказалась сводом правил. Та же машина, что и в любом другом наборе FlashBoss, — интервальное повторение, бой с боссом в конце каждого кластера, — наведённая на то, что вы должны держать в голове, когда кто-то спрашивает, можно ли столкнуть огра с моста.</p>
+    </div>
+  </section>
+
+  <!-- A CARD -->
+  <section class="wrap" id="card">
+    <div class="reveal">
+      <h2>Что стоит на карточке</h2>
+      <p class="sub">Настоящая карточка со ступени 1, приведённая так, как она выходит. Сцена — это и есть суть: правило приходит как то, что можно рассказать, а не как статья в указателе.</p>
+      <div class="cardshow">
+        <div class="cardface">
+          <div class="lab">карточка</div>
+          <div class="hw">Dim Light</div>
+          <div class="scene">«За кругом факела коридор становится серым, а не чёрным, и следопыт щурится туда, не понимая, что увидела.»</div>
+          <div class="def">Сумерки и тень: Восприятие через зрение страдает, а тёмное зрение так видит темноту.</div>
+          <div class="rule">Полутень: создаёт слабо заслонённую местность</div>
+          <div class="nums">термин | граница между светом и тьмой<br>обычно внешняя полоса источника света · SRD p. 11</div>
+        </div>
+        <div class="cardface">
+          <div class="lab">зачем нужна каждая часть</div>
+          <ul class="anat">
+            <li><b>Термин</b><span>То, что за столом действительно произносят вслух. Это и есть ответ, на который вас натаскивают.</span></li>
+            <li><b>Сцена</b><span>Это правило, как оно происходит за столом. Вы запоминаете картинку, а картинка несёт правило с собой.</span></li>
+            <li><b>Определение</b><span>Значение, на котором вас проверяют, — достаточно короткое, чтобы удержать, и достаточно полное, чтобы по нему решать.</span></li>
+            <li><b>Строка правила</b><span>Правило так, как вы сказали бы его игроку, на одном дыхании.</span></li>
+            <li><b>Числа</b><span>Категория, цифры под ней и страница справочного документа, откуда правило взято.</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="quiet">Одна клавиша превращает эту строку заметок в карту всех 24 категорий карточек, другая пересчитывает каждое расстояние и вес на карточках. Обе есть внутри игры — как и справочные документы на английском и немецком.</p>
+    </div>
+  </section>
+
+  <!-- THE EDITIONS -->
+  <section class="wrap" id="editions">
+    <div class="frame reveal">
+      <span class="tag">Языки</span>
+      <h2>Какое издание вам достанется</h2>
+      <p class="sub">Этот набор честнее многих в том, что говорит о своих языках, потому что они и правда не одно и то же. Три вида:</p>
+      <div class="eds">
+        <div class="ed full">
+          <div class="h">Немецкий<span class="badge">Полное издание</span></div>
+          <p><b>Полное немецкое издание.</b> Всё по-немецки — заглавное слово, определение, строка правила, сцена и заметки на всех 1205 карточках и все 62 справочных урока. Оно опирается на устоявшуюся немецкую терминологию правил, <i>Rüstungsklasse</i>, <i>Trefferpunkte</i>, <i>Rettungswurf</i>, а не на выдуманные кальки, и ссылается на немецкое издание правил постранично, так что карточка отправляет вас на нужную страницу той книги, которая у вас есть.</p>
+        </div>
+        <div class="ed mixed">
+          <div class="h">Японский · Упрощённый китайский · Русский · Испанский<span class="badge">Игра на вашем языке, ответ по-английски</span></div>
+          <p>Вопрос и сцена — на вашем языке; заглавное слово, которым вы отвечаете, и слово, которое вы слышите, — <b>английские</b>. Переключатель на карточке покажет перевод, когда он вам понадобится, и 62 справочных урока тоже написаны на вашем языке.</p>
+          <p><b>Так сделано нарочно, а не чтобы срезать угол.</b> С каждым правилом вы встречаетесь в словах, которыми и так думаете, а уходите, держа термин, которым за столом действительно пользуются. Это та ступень, которая нужна вам перед тем, как сесть за англоязычную игру.</p>
+        </div>
+        <div class="ed bonus">
+          <div class="h">Бонус целиком на вашем языке<span class="badge">Бета</span></div>
+          <p>Если вам хочется, чтобы вся карточка была на японском, упрощённом китайском, русском или испанском, такое издание тоже есть. Оно идёт с компромиссами, и о них сказано прямо: <b>произносимое слово остаётся английским</b>, другого звука нет, и <b>упражнений на повторение</b> в нём нет. Это бонус, а не самостоятельный курс — своим языком вы и так владеете.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE TIERS -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Подъём</span>
+      <h2>Пять ступеней, и каждая кончается тем, что вы умеете</h2>
+      <ul class="tiers">
+        <li><span class="w">Разрешить проверку</span><span class="d">Кубик, Сл, что эта цифра должна значить, и состояния, которые её меняют.</span></li>
+        <li><span class="w">Провести бой</span><span class="d">Ход, действия в нём, типы урона и то, что состояние делает с тем, кто его носит.</span></li>
+        <li><span class="w">Вести заклинателя и читать статблок</span><span class="d">Ячейки, концентрация, дистанции — и блок цифр, на который вы смотрите и знаете, что он сделает.</span></li>
+        <li><span class="w">Знать, что дают варианты</span><span class="d">Двенадцать классов, девять видов и то, что черты на самом деле дают персонажу.</span></li>
+        <li><span class="w">Строить столкновения, опасности и сокровища</span><span class="d">Показатель опасности против опыта, что отряд переживёт и что раздать после.</span></li>
+      </ul>
+      <p class="quiet">62 справочных урока, 82 страницы, по одному в начале каждого кластера — на каждом языке, на котором выходит набор.</p>
+    </div>
+  </section>
+
+  <!-- METHOD -->
+  <section class="wrap method">
+    <div class="frame reveal">
+      <span class="tag">Почему это запоминается</span>
+      <h2>Карточки как единая система</h2>
+      <dl>
+        <dt>Карточки</dt><dd><b>1205 карточек в 62 тематических кластерах</b> на пяти ступенях, и каждая несёт свой термин, свою сцену, своё определение, свою строку правила и свои числа.</dd>
+        <dt>Бои с боссами</dt><dd>Три вида, а не один: <b>назвать существо, заклинание или термин</b> по определению; <b>вынести решение</b> по сцене; <b>считать число</b> из таблицы. Кластер не пройден, пока его определения не освоены.</dd>
+        <dt>Уроки</dt><dd><b>62 справочных урока, 82 страницы</b> — по одному в начале каждого кластера, на каждом языке, на котором выходит набор.</dd>
+        <dt>SRS по Фибоначчи</dt><dd>Оценивайте каждую карточку от 0 до 5. Чем лучше вы знаете правило, тем дольше оно не вернётся.</dd>
+        <dt>Звук</dt><dd>The Guide читает вслух собственным голосом из комплекта. Примеры — на <a href="voices.ru.html">странице голосов</a>.</dd>
+        <dt>Свод правил</dt><dd><b>Редакция 2024 года</b> в том виде, в каком она есть сейчас, — термины, числа и процедуры, которых ждут сегодня. Если вашему знанию правил десять лет, вы переучиваете изменившееся, тренируя то, что действует, а не читая список отличий.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Вопросы</span>
+      <h2>Перед покупкой</h2>
+      <details>
+        <summary>Какая это редакция правил?</summary>
+        <p class="a"><b>Редакция 2024 года</b>, собранная по System Reference Document 5.2. Состояния, заклинания, виды и статблоки между правилами 2014 года и нынешними переработали, так что если за вашим столом играют по старой редакции, часть этих карточек будет гонять вас по числам, которыми вы не пользуетесь. Перед покупкой проверьте, по какой редакции играет ваш стол.</p>
+      </details>
+      <details>
+        <summary>Нужна ли базовая игра?</summary>
+        <p class="a">Да. The Guide — это DLC для FlashBoss, так что базовая игра тоже нужна. На Windows 10 вам ещё понадобится <a href="https://apps.microsoft.com/detail/9n0dx20hk701" target="_blank" rel="noopener">Windows Terminal</a>, бесплатная загрузка из Microsoft Store.</p>
+      </details>
+      <details>
+        <summary>Я игрок, а не мастер. Это для меня?</summary>
+        <p class="a">Он сделан для того, кто водит игру, и больше всего окупается именно там. Игрок, который хочет перестать спрашивать, что делает состояние, или который вот-вот проведёт свою первую игру, получает те же карточки — просто ступени в таком порядке значат меньше.</p>
+      </details>
+      <details>
+        <summary>Мой язык — полное издание или смешанное?</summary>
+        <p class="a">Полное издание — немецкое. <b>Японский, упрощённый китайский, русский и испанский</b> играются на вашем языке, а отвечаете вы по-английски: на карточке есть переключатель на перевод, а уроки написаны на вашем языке — и у каждого есть ещё бонусное издание целиком на вашем языке, в бете, с английским звуком и без упражнений. <a href="#editions">Раздел о языках</a> выше говорит точно, что даёт каждое.</p>
+      </details>
+      <details>
+        <summary>Можно посмотреть карточки до покупки?</summary>
+        <p class="a">Списки карточек и справочные уроки наборов FlashBoss есть на этом сайте, бесплатно и для печати, а ещё есть <a href="https://flashboss-demo.pages.dev/">играбельный бой с боссом</a>, если вы хотите сначала увидеть саму механику.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- PARTII-TBD: The Guide Part II — 927 cards, three tiers (Grimoire, Bestiary,
+       Treasury), bilingual English and German, item 1318030. Written but NOT
+       released; add a card here and a line in the FAQ the day its depot is live. -->
+
+  <section class="final wrap reveal">
+    <h2>Знать, а не искать.</h2>
+    <p>1205 карточек, 62 кластера и бой с боссом у каждого из них.</p>
+    <a class="btn warm" href="https://store.steampowered.com/app/4564340/?utm_source=website-guide" target="_blank" rel="noopener">The Guide в Steam &rarr;</a>
+  </section>
+
+</main>
+
+<footer>
+  <p class="legal">Совместимо с 5E. Собрано по System Reference Document 5.2. FlashBoss не связан ни с одним издателем правил, не одобрен и не спонсируется ни одним из них.</p>
+  <span class="footer-links">
+    <a href="home.ru.html">главная</a><span class="div">·</span>
+    <a href="packs.ru.html">наборы</a><span class="div">·</span>
+    <a href="lessons.ru.html">уроки</a><span class="div">·</span>
+    <a href="voices.ru.html">голоса</a>
+  </span>
+</footer>
+
+<script>
+(function(){
+  var sw=document.querySelector('.lang-switch'); if(!sw) return;
+  var btn=sw.querySelector('.lang-toggle'), menu=sw.querySelector('.lang-menu');
+  function close(){ menu.hidden=true; btn.setAttribute('aria-expanded','false'); }
+  btn.addEventListener('click', function(e){ e.stopPropagation(); var o=menu.hidden; menu.hidden=!o; btn.setAttribute('aria-expanded', String(o)); });
+  document.addEventListener('click', function(e){ if(!sw.contains(e.target)) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+</body>
+</html>

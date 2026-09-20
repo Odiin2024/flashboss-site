@@ -67,7 +67,7 @@ STRINGS = {
    "写给带团的人 · <b>现已推出</b>",
  "1,205 cards · 62 clusters": "1,205 张卡片 · 62 个集群",
  "The rules a game master needs in their head — not on the page they are turning to.":
-   "游戏主持人必须记在脑子里的规则——而不是他正翻开的那一页上的。",
+   "游戏主持人必须记在脑子里的规则——而不是正翻开的那一页上的规则。",
  "Listen · read · repeat · rate · fight": "听 · 读 · 重复 · 评分 · 战斗",
  # the five clauses are the ratified store line, word for word
  "Every card is one thing you should know cold rather than stop to look up: what a condition does, which die a check calls for, what a DC of 15 is meant to mean, what a stat block is telling you, what a party can actually do at level 5. <b>5E compatible, built from the System Reference Document 5.2.</b>":

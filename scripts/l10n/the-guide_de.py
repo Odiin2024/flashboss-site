@@ -19,11 +19,10 @@
 #      SG. The sample card (Dim Light, cluster1_10) is quoted from its OWN German
 #      twin — TargetWord_de, Translation_de, ExampleSentence_de,
 #      ExampleTranslation_de, Notes_de — so the page shows the card as the German
-#      edition really ships it. ONE DEPARTURE from that twin: the citation stays
-#      the English page's "SRD p. 11" as "SRD S. 12", because numbers on the page
-#      are never changed. The German card itself cites S. 12, the German SRD's
-#      own page; a later pass may prefer that, since the editions section says
-#      German cites the German book page by page.
+#      edition really ships it. That INCLUDES the citation: the card reads
+#      "SRD S. 12" where the English page reads "SRD p. 11", because the German
+#      edition cites the German rules book, which the editions section of this
+#      very page promises it does. See NUMBERS_CHANGED at the foot of this file.
 #
 # Pack names stay English: The Guide. FlashBoss stays Latin. Numbers are the
 # English page's, in German separators; nothing was recounted.

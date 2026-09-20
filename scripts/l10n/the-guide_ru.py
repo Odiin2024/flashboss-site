@@ -73,7 +73,7 @@ STRINGS = {
  "Listen · read · repeat · rate · fight": "Слушайте · читайте · повторяйте · оценивайте · сражайтесь",
  # the five clauses are the ratified Russian store line, word for word
  "Every card is one thing you should know cold rather than stop to look up: what a condition does, which die a check calls for, what a DC of 15 is meant to mean, what a stat block is telling you, what a party can actually do at level 5. <b>5E compatible, built from the System Reference Document 5.2.</b>":
-   "Каждая карточка — это одна вещь, которую стоит знать назубок, а не идти смотреть: что делает состояние, какой кубик требует проверка, что означает Сл 15, о чём говорит блок характеристик, что на самом деле может отряд на 5 уровне. <b>Совместимо с 5E, собрано по System Reference Document 5.2.</b>",
+   "Каждая карточка — это одна вещь, которую стоит знать наизусть, а не искать на ходу: что делает состояние, какой кубик требует проверка, что означает Сл 15, о чём говорит блок характеристик, что на самом деле может отряд на 5 уровне. <b>Совместимо с 5E, собрано по System Reference Document 5.2.</b>",
  ">what a card holds</a>": ">что на карточке</a>",
  ">languages</a>": ">языки</a>",
 
@@ -84,14 +84,14 @@ STRINGS = {
  "A game master's real skill is adjudicating at speed. Everyone at the table can feel the difference between a ruling that arrives in two seconds and one that arrives after ninety seconds of page-turning — and the second one costs you the scene, not just the time.":
    "Настоящее умение мастера — решать быстро. Все за столом чувствуют разницу между решением, которое приходит через две секунды, и тем, которое приходит через девяносто секунд листания книги, — и второе стоит вам сцены, а не только времени.",
  "The fix is not a better index. It is <b>knowing the thing</b>: the fifteen conditions, the thirteen damage types, the ability and proficiency tables, challenge rating and the experience it is worth. The numbers you currently flip pages for.":
-   "Лечится это не лучшим указателем. Лечится это <b>знанием</b>: пятнадцать состояний, тринадцать типов урона, таблицы характеристик и бонуса мастерства, показатель опасности и опыт, который он стоит. Те самые числа, ради которых вы сейчас листаете книгу.",
+   "Лечится это не лучшим указателем. Лечит <b>знание</b>: пятнадцать состояний, тринадцать типов урона, таблицы характеристик и бонуса мастерства, показатель опасности и опыт, который он стоит. Те самые числа, ради которых вы сейчас листаете книгу.",
  "So this is a vocabulary course whose vocabulary happens to be a rules set. Same machine as every other FlashBoss pack — spaced repetition, a boss fight at the end of every cluster — pointed at the things you are expected to have in your head when someone asks whether they can shove the ogre off the bridge.":
    "Так что это курс лексики, чья лексика оказалась сводом правил. Та же машина, что и в любом другом наборе FlashBoss, — интервальное повторение, бой с боссом в конце каждого кластера, — наведённая на то, что вы должны держать в голове, когда кто-то спрашивает, можно ли столкнуть огра с моста.",
 
  # ---- the card ----
  "<h2>What a card holds</h2>": "<h2>Что стоит на карточке</h2>",
  "A real card from tier 1, quoted as it ships. The scene is the point: the rule arrives as something you could narrate, not as an index entry.":
-   "Настоящая карточка с первой ступени, приведённая так, как она выходит. Сцена — это и есть суть: правило приходит как то, что можно рассказать, а не как статья в указателе.",
+   "Настоящая карточка со ступени 1, приведённая так, как она выходит. Сцена — это и есть суть: правило приходит как то, что можно рассказать, а не как статья в указателе.",
  ">the card<": ">карточка<",
  ">what each part is for<": ">зачем нужна каждая часть<",
 
@@ -121,7 +121,7 @@ STRINGS = {
  "<li><b>The numbers</b><span>The category, the figures underneath, and the page of the reference document it comes from.</span></li>":
    "<li><b>Числа</b><span>Категория, цифры под ней и страница справочного документа, откуда правило взято.</span></li>",
  "A key turns that notes line into a map of all 24 card categories, and a second converts every distance and weight on the cards. Both ship inside the game, as do the English and German reference documents.":
-   "Одна клавиша превращает эту строку заметок в карту всех 24 категорий карточек, другая пересчитывает каждое расстояние и вес на карточках. Обе есть внутри игры — как и английский и немецкий справочные документы.",
+   "Одна клавиша превращает эту строку заметок в карту всех 24 категорий карточек, другая пересчитывает каждое расстояние и вес на карточках. Обе есть внутри игры — как и справочные документы на английском и немецком.",
 
  # ---- the editions ----
  '<span class="tag">Languages</span>': '<span class="tag">Языки</span>',
@@ -137,7 +137,7 @@ STRINGS = {
  "The question and the scene are in your language; the headword you answer with, and the word you hear, are <b>English</b>. A toggle on the card shows the translation whenever you want it, and the 62 reference lessons are written in your language too.":
    "Вопрос и сцена — на вашем языке; заглавное слово, которым вы отвечаете, и слово, которое вы слышите, — <b>английские</b>. Переключатель на карточке покажет перевод, когда он вам понадобится, и 62 справочных урока тоже написаны на вашем языке.",
  "<b>That is deliberate, not a shortcut.</b> You meet each rule in words you already think in, and you leave holding the term the table will actually use. It is the step you need before you sit down at an English-speaking game.":
-   "<b>Так сделано нарочно, а не ради экономии.</b> С каждым правилом вы встречаетесь в словах, которыми и так думаете, а уходите, держа термин, которым за столом действительно пользуются. Это та ступень, которая нужна вам перед тем, как сесть за англоязычную игру.",
+   "<b>Так сделано нарочно, а не чтобы срезать угол.</b> С каждым правилом вы встречаетесь в словах, которыми и так думаете, а уходите, держа термин, которым за столом действительно пользуются. Это та ступень, которая нужна вам перед тем, как сесть за англоязычную игру.",
  '<div class="h">The all-in-your-language bonus<span class="badge">Beta</span></div>':
    '<div class="h">Бонус целиком на вашем языке<span class="badge">Бета</span></div>',
  "If you would rather have the whole card in Japanese, Simplified Chinese, Russian or Spanish, that edition is there as well. It comes with compromises, stated plainly: <b>the spoken word stays English</b>, there is no audio beyond it, and it carries <b>no revision drills</b>. A bonus, not a course in its own right — you already speak your own language.":
@@ -161,7 +161,7 @@ STRINGS = {
    "62 справочных урока, 82 страницы, по одному в начале каждого кластера — на каждом языке, на котором выходит набор.",
 
  # ---- the method: whole <dt>+<dd> each ----
- ">How it sticks<": ">Почему это остаётся<",
+ ">How it sticks<": ">Почему это запоминается<",
  "<h2>Flashcards as an integrated system</h2>": "<h2>Карточки как единая система</h2>",
  "<dt>Cards</dt><dd><b>1,205 cards in 62 themed clusters</b> across five tiers, every one carrying its term, its scene, its definition, its rule line and its numbers.</dd>":
    "<dt>Карточки</dt><dd><b>1,205 карточек в 62 тематических кластерах</b> на пяти ступенях, и каждая несёт свой термин, свою сцену, своё определение, свою строку правила и свои числа.</dd>",
@@ -207,5 +207,5 @@ STRINGS = {
 
  # ---- the legal line: translated in full, all three prongs, nothing softened ----
  "5E compatible. Built from the System Reference Document 5.2. FlashBoss is not affiliated with, endorsed by, or sponsored by any rules publisher.":
-   "Совместимо с 5E. Собрано по System Reference Document 5.2. FlashBoss не связан ни с одним издателем правил, не одобрен им и не спонсируется им.",
+   "Совместимо с 5E. Собрано по System Reference Document 5.2. FlashBoss не связан ни с одним издателем правил, не одобрен и не спонсируется ни одним из них.",
 }
