@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- FlashBoss — Swahili. Written 2026-09-19 from the approved Steam copy
+     (flashboss-admin/store_page_descriptions/1317189_swahili_core.json and the two
+     Pareto drafts) and checked against knight/flashcard_sets/Swahili/core: 1,000
+     cards in 40 clusters, five tiers, 20 reference lessons; every card carries
+     Translation, ExampleTranslation and Notes in de/es/ja/ru/zh as well as English
+     (six languages), and every noun carries its class in TargetArticle — the ten
+     classes named on the page are the ten the pack actually uses.
+     SWAHILI CORE IS LIVE (Steam 5228890). Pareto 1 and Pareto 2 are written and
+     have store drafts but are NOT released, so they carry no date and no store
+     link — only the shape of what is coming. Add their app IDs at PARETO-TBD.
+     The three Swahili sentences quoted on this page are example sentences from the
+     pack itself, not invented; their slot analyses are standard.
+     English only for now: the hreflang block, the switcher <ul> and
+     lang-redirect.js AVAIL gain the siblings together when they ship. -->
+<!-- SELF-TRANSLATED, ja. The prose on this page was written by Claude
+     (Opus), not by the translation fleet, on Odiin's word of 2026-09-20:
+     good enough for now, and flagged for a translation/adversarial pass
+     another day. The page carries the beta-translation notice so a reader
+     knows and so that pass can find it.
+     Canon held here: the six pack names stay English, FlashBoss stays
+     Latin, and every number is the English page's number in this locale's
+     separator — nothing was recounted. -->
+<title>スワヒリ語 — FlashBoss</title>
+<meta name="description" content="FlashBossのスワヒリ語：40クラスターの1,000語と20の参照レッスン、どの名詞にも名詞クラスを明記、標準スワヒリ語のニューラル音声、そしてどの関門にもボス戦。訳語と学習ノートは6言語。Swahili CoreはSteamで発売中。">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="canonical" href="https://odiin2024.github.io/flashboss-site/swahili.ja.html">
+<link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/swahili.html">
+<link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/swahili.de.html">
+<link rel="alternate" hreflang="es" href="https://odiin2024.github.io/flashboss-site/swahili.es.html">
+<link rel="alternate" hreflang="ja" href="https://odiin2024.github.io/flashboss-site/swahili.ja.html">
+<link rel="alternate" hreflang="zh" href="https://odiin2024.github.io/flashboss-site/swahili.zh.html">
+<link rel="alternate" hreflang="ru" href="https://odiin2024.github.io/flashboss-site/swahili.ru.html">
+<link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/swahili.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   FlashBoss — Swahili. Phosphor terminal, coastal palette.
+   The page's argument: Swahili is regular. The noun class is the
+   engine, the verb is built in slots, and both are visible from
+   the first tier. Structure follows the other course pages.
+   ============================================================ */
+:root{
+  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --bg:#100d08; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
+  --accent:#83b6dd; --gold:#e0a93f; --warm:#e0a93f; --line:#3a3120; --rule:#2a2417;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--mono); background:linear-gradient(180deg, var(--bg) 0%, #171421 100%); background-color:var(--bg); color:var(--ink); line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden;}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.045) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.vignette{position:fixed; inset:0; pointer-events:none; z-index:9998;
+  background:radial-gradient(120% 90% at 50% 35%, transparent 58%, rgba(0,0,0,.5) 100%);}
+.wrap{max-width:900px; margin:0 auto; padding:0 24px;}
+a{color:var(--accent);}
+
+nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line); position:relative; z-index:5; background:var(--bg);}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--dim); margin-right:auto;}
+nav .brand a{color:var(--dim); text-decoration:none;}
+nav .brand a:hover{color:var(--ink);}
+nav .brand .here{font-weight:800; color:var(--ink);}
+nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--ink);}
+nav .brand .pipe{color:var(--dim); margin:0 11px;}
+nav .links a{color:var(--ink); text-decoration:none; opacity:.7; margin-left:22px;}
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+nav .links a.steam{font-weight:800; opacity:1;}
+.nav-mobile{display:none;}
+.nav-mobile a{color:inherit; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.08em; opacity:.85;}
+@media(max-width:640px){ nav .links{display:none;} nav .brand .pipe, nav .brand .here{display:none;} .nav-mobile{display:flex; align-items:center; gap:18px;} }
+nav .lang-switch{flex:none; margin-left:22px; position:relative;}
+nav .lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--ink); background:var(--bg); border:1px solid var(--dim); padding:5px 8px; line-height:1; cursor:pointer;}
+nav .lang-toggle:hover, nav .lang-toggle[aria-expanded="true"]{background:var(--ink); color:var(--bg);}
+nav .lang-caret{font-size:8px; line-height:1;}
+nav .lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--bg); border:1px solid var(--dim); min-width:120px; z-index:50;}
+nav .lang-menu[hidden]{display:none;}
+nav .lang-menu a{display:block; font-size:12px; color:var(--ink); text-decoration:none; padding:7px 10px; white-space:nowrap;}
+nav .lang-menu a[aria-current="true"]{color:var(--accent);}
+
+.reveal{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease;}
+.reveal.in{opacity:1; transform:none;}
+
+.hero{position:relative; padding:84px 0 44px; overflow:hidden;}
+.hero::before{content:""; position:absolute; inset:0; z-index:0; background:#100d08 url('background.png') center 34% / cover no-repeat;}
+.hero::after{content:""; position:absolute; inset:0; z-index:1; background:linear-gradient(180deg, rgba(8,18,15,.60) 0%, rgba(8,18,15,.84) 56%, var(--bg) 100%);}
+.hero .wrap{position:relative; z-index:2;}
+.kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--dim); margin-bottom:24px;}
+.kicker b{color:var(--accent); font-weight:700;}
+.hero h1{font-size:clamp(42px,11vw,96px); line-height:.95; margin:0; font-weight:800; letter-spacing:-.015em;}
+.hero h1 .small{display:block; font-size:.26em; letter-spacing:.42em; font-weight:500; opacity:.62; margin-top:18px;}
+.cursor{display:inline-block; width:.55em; height:.92em; vertical-align:-.06em; background:color-mix(in oklab, var(--accent), transparent 28%); margin-left:.1em; animation:blink 1.05s steps(1) infinite;}
+@keyframes blink{50%{opacity:0;}}
+.hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:28px 0 0; font-weight:500;}
+.hero .sig{font-size:13px; letter-spacing:.24em; text-transform:uppercase; color:var(--accent); margin:14px 0 0; opacity:.9;}
+.hero .lede{font-size:clamp(15px,2.2vw,18px); max-width:54ch; margin:22px 0 0; color:var(--dim);}
+.hero .lede b{color:var(--ink); font-weight:700;}
+.btn{display:inline-block; font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.08em; color:#100d08; background:color-mix(in oklab, var(--accent), transparent 20%); padding:14px 26px; text-decoration:none; box-shadow:6px 6px 0 color-mix(in oklab, var(--accent), #000 62%); transition:transform .12s ease, box-shadow .12s ease;}
+.btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--accent), #000 62%);}
+.btn.warm{color:#171421; background:var(--gold); box-shadow:6px 6px 0 color-mix(in oklab, var(--gold), #000 62%);}
+.btn.warm:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--gold), #000 62%);}
+.hero .actions{display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:38px; max-width:520px;}
+.hero .actions .btn{width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
+
+section{padding:60px 0;}
+.hero + section{padding-top:44px;}
+.frame{border:1px solid var(--line); position:relative; padding:34px 30px 30px;}
+.frame > .tag{position:absolute; top:-12px; left:22px; background:var(--bg); padding:4px 12px; line-height:1; font-size:11px; letter-spacing:.3em; text-transform:uppercase; color:var(--accent);}
+h2{font-size:clamp(25px,4.8vw,38px); margin:0 0 8px; font-weight:800; letter-spacing:-.01em;}
+.sub{color:var(--dim); font-size:14px; letter-spacing:.03em; margin:0 0 24px; max-width:66ch;}
+p.body{font-size:15.5px; max-width:64ch; margin:0 0 16px;}
+p.body b{color:var(--accent);}
+p.body i{color:var(--gold); font-style:italic;}
+p.quiet{font-size:13px; color:var(--dim); max-width:66ch; margin:18px 0 0; border-top:1px solid var(--rule); padding-top:12px;}
+
+/* the verb, built in slots */
+.slots{display:flex; flex-direction:column; gap:20px;}
+.slotrow{border:1px solid var(--line); padding:20px 20px 16px; background:rgba(131,182,221,.035);}
+.slotrow .whole{font-size:clamp(24px,5vw,34px); font-weight:800; letter-spacing:.01em; margin-bottom:4px;}
+.slotrow .say{font-size:13px; color:var(--dim); font-style:italic; margin-bottom:16px;}
+.parts{display:flex; flex-wrap:wrap; gap:8px;}
+.m{display:inline-flex; flex-direction:column; align-items:flex-start; border:1px solid currentColor; padding:7px 10px; line-height:1.2; font-weight:800; font-size:16px;}
+.m i{font-style:normal; font-weight:500; font-size:10.5px; letter-spacing:.04em; opacity:.85; margin-top:4px;}
+.m.s{color:var(--accent);} .m.t{color:var(--gold);} .m.o{color:var(--warm);} .m.r{color:var(--ink);}
+.slotrow .sum{font-size:13.5px; color:var(--dim); margin-top:14px;}
+.slotrow .sum b{color:var(--ink); font-weight:700;}
+.legend{display:flex; gap:18px; flex-wrap:wrap; font-size:12px; margin:0 0 22px; color:var(--dim);}
+.legend span{display:inline-flex; align-items:center; gap:7px;}
+.legend i{width:11px; height:11px; display:inline-block;}
+.legend .ls{background:var(--accent);} .legend .lt{background:var(--gold);} .legend .lo{background:var(--warm);} .legend .lr{background:var(--ink);}
+
+/* noun classes */
+.classes{display:grid; grid-template-columns:repeat(5,1fr); gap:0; border:1px solid var(--line);}
+@media(max-width:720px){.classes{grid-template-columns:repeat(3,1fr);}}
+@media(max-width:460px){.classes{grid-template-columns:repeat(2,1fr);}}
+.cl{padding:16px 14px; border-right:1px solid var(--line); border-bottom:1px solid var(--line);}
+.cl .k{font-size:17px; font-weight:800; color:var(--accent);}
+.cl .v{font-size:12px; color:var(--dim); margin-top:5px;}
+
+/* method */
+.method dl{display:grid; grid-template-columns:max-content 1fr; gap:14px 22px; margin:0;}
+.method dt{font-weight:700; color:var(--gold); white-space:nowrap;}
+.method dd{margin:0; font-size:14.5px; color:var(--dim);}
+.method dd b{color:var(--ink); font-weight:700;}
+.method dd i{color:var(--accent); font-style:italic;}
+@media(max-width:560px){.method dl{grid-template-columns:1fr; gap:4px 0;} .method dd{margin-bottom:14px;}}
+
+/* the three packs */
+.packs{display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid var(--line);}
+@media(max-width:720px){.packs{grid-template-columns:1fr;}}
+.pack{padding:22px 18px; border-right:1px solid var(--line); text-decoration:none; color:inherit; display:block;}
+.pack:last-child{border-right:0;}
+a.pack:hover{background:rgba(131,182,221,.07);}
+@media(max-width:720px){.pack{border-right:0; border-bottom:1px solid var(--line);} .pack:last-child{border-bottom:0;}}
+.pack .n{font-size:16px; font-weight:800;}
+.pack .lvl{font-size:11px; letter-spacing:.04em; color:var(--dim); margin:4px 0 10px;}
+.pack p{font-size:12.5px; color:var(--dim); margin:0;}
+.pack .here{display:inline-block; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); border:1px solid var(--accent); padding:3px 8px; margin-top:12px;}
+.pack .soon{display:inline-block; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--faint); border:1px solid var(--faint); padding:3px 8px; margin-top:12px;}
+
+/* card sample */
+.sample{border:1px solid var(--line); background:rgba(0,0,0,.25); padding:22px 20px; font-size:14px;}
+.sample .hw{font-size:24px; font-weight:800; color:var(--accent);}
+.sample .ng{font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--gold); margin-left:10px;}
+.sample .tr{color:var(--ink); margin-top:8px;}
+.sample .ex{color:var(--dim); margin-top:14px; font-style:italic;}
+.sample .exx{color:var(--faint); margin-top:4px;}
+.sample .nt{color:var(--dim); margin-top:14px; font-size:13px; border-top:1px solid var(--rule); padding-top:12px;}
+
+details{border-top:1px solid var(--rule); padding:14px 0;}
+details summary{cursor:pointer; font-weight:700; font-size:15px; list-style:none;}
+details summary::-webkit-details-marker{display:none;}
+details summary::before{content:"+ "; color:var(--accent); font-weight:800;}
+details[open] summary::before{content:"− ";}
+details .a{font-size:14px; color:var(--dim); margin-top:10px; max-width:66ch;}
+details .a b{color:var(--ink);}
+
+.final{text-align:center; padding:80px 0 96px;}
+.final h2{font-size:clamp(26px,5.6vw,48px);}
+.final p{color:var(--dim); max-width:52ch; margin:14px auto 30px; font-size:15px;}
+footer{border-top:1px solid var(--line); padding:28px 24px; font-size:12px; color:var(--dim); text-align:center; letter-spacing:.04em;}
+footer .footer-links{display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap;}
+footer .footer-links a{color:inherit; text-decoration:none; opacity:.75;}
+footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+footer .footer-links .div{opacity:.4;}
+.beta-note{background:#1b1508; border-bottom:1px solid #6b5a2a; color:#e8d9b0; font:500 12.5px/1.55 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; text-align:center; padding:9px 16px; margin:0;}
+.beta-note b{color:#e0a93f; font-weight:700; letter-spacing:.09em;}
+.beta-note a{color:#e0a93f; text-decoration:underline; text-underline-offset:2px;}
+</style>
+<script src="lang-redirect.js"></script>
+</head>
+<body>
+<div class="beta-note" role="status"><b>ベータ翻訳</b> — このページの日本語版は下書きで、まだ校正を経ていません。文章の誤りを見つけたら <a href="report.html">お知らせください</a> · <a href="swahili.html">Read in English</a></div>
+<div class="overlay"></div>
+<div class="vignette"></div>
+
+<nav>
+  <span class="brand"><a class="logo" href="index.ja.html">FLASHBOSS</a><span class="pipe">|</span><a href="packs.ja.html">パック</a><span class="pipe">·</span><span class="here">Swahili</span></span>
+  <span class="links">
+    <a href="wordlists.ja.html?lang=Swahili&amp;set=Core">単語リスト</a>
+    <a href="lessons.ja.html?lang=Swahili">レッスン</a>
+    <a href="voices.ja.html">音声</a>
+    <a class="steam" href="https://store.steampowered.com/app/5228890/?utm_source=website-swahili" target="_blank" rel="noopener">steam</a>
+  </span>
+  <span class="nav-mobile">
+    <a href="packs.ja.html">パック</a>
+    <a href="https://store.steampowered.com/app/5228890/?utm_source=website-swahili" target="_blank" rel="noopener">steam</a>
+  </span>
+  <div class="lang-switch">
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="言語を選択">JA<span class="lang-caret">▾</span></button>
+    <ul class="lang-menu" hidden>
+      <li><a href="swahili.html">English</a></li>
+      <li><a href="swahili.de.html">Deutsch</a></li>
+      <li><a href="swahili.es.html">Español</a></li>
+      <li><a href="swahili.ja.html" aria-current="true">日本語</a></li>
+      <li><a href="swahili.zh.html">简体中文</a></li>
+      <li><a href="swahili.ru.html">Русский</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <header class="hero">
+    <div class="wrap">
+      <p class="kicker reveal">最新のコース · <b>1,000語、発売中</b></p>
+      <h1 class="reveal">Swahili<span class="cursor"></span><span class="small">Kiswahili</span></h1>
+      <p class="tagline reveal">苦労して学ぶ言語のなかで、これがいちばん規則的です。</p>
+      <p class="sig reveal">聞く・読む・繰り返す・評価する・戦う</p>
+      <p class="lede reveal">スワヒリ語は活用するというより<b>組み立てます</b>。動詞は決まった順番のスロットから組み立てられ、名詞はいずれかのクラスに属して、文の残りがそのクラスに一致します。この二つの仕組みを覚えれば、語彙は単なるリストではなくなります。<b>1,000語、40クラスター、20の参照レッスン</b> — クラスはどの名詞にも書かれています。</p>
+      <div class="actions reveal">
+        <a class="btn" href="wordlists.ja.html?lang=Swahili&amp;set=Core">単語リスト</a>
+        <a class="btn" href="lessons.ja.html?lang=Swahili">レッスン</a>
+        <a class="btn warm" href="https://store.steampowered.com/app/5228890/?utm_source=website-swahili" target="_blank" rel="noopener">steam</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- THE ARGUMENT -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">スワヒリ語が学べる理由</span>
+      <h2>不規則動詞がほとんどない言語</h2>
+      <p class="body">スワヒリ語は東アフリカの共通語です — タンザニア、ケニア、ウガンダ、ルワンダ、ブルンジ、そしてコンゴ東部 — 生まれつき話す人より、学んで話す人のほうがはるかに多い言語です。そのぶん角が取れました。綴りは音のとおり、アクセントはつねに後ろから2番目の音節、声調も文法上の性もありません。</p>
+      <p class="body">かわりにあるのは<b>目に見える構造</b>です。動詞はスロットの連なった列車です。名詞はクラスを帯び、そのクラスが文の全体を走り抜けます。どちらも隠れていませんし、どちらにも中級で待ち構える例外の一覧はありません。</p>
+      <p class="body">このコースが教えるのは、ふつうのスワヒリ語です — 市場と学校とニュースのことば。土台にした頻度データは、字幕のためではなく、そのために作られたものです。</p>
+    </div>
+  </section>
+
+  <!-- THE VERB TRAIN -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">動詞は組み立て品</span>
+      <h2>決まった順番のスロット</h2>
+      <p class="sub">パック自身のカードから取った3つの文を、分解しました。順番は決して変わりません：誰が、いつ、誰を、何を。</p>
+      <div class="legend">
+        <span><i class="ls"></i> 誰が — 主語</span>
+        <span><i class="lt"></i> いつ — 時制</span>
+        <span><i class="lo"></i> 誰を — 目的語</span>
+        <span><i class="lr"></i> 何を — 語根</span>
+      </div>
+      <div class="slots">
+        <div class="slotrow">
+          <div class="whole">anaendesha</div>
+          <div class="say">Baba yangu <b>anaendesha</b> basi la shule kila asubuhi, na mama anaendesha gari. — 父は毎朝スクールバスを運転し、母は車を運転します。</div>
+          <div class="parts">
+            <span class="m s">a-<i>彼 / 彼女</i></span>
+            <span class="m t">na-<i>現在</i></span>
+            <span class="m r">endesha<i>運転する、行かせる</i></span>
+          </div>
+          <div class="sum">3つの部品を、左から右へ読みます：<b>彼 · いま · 運転する</b>。語根そのものが組み立てです — <i>endesha</i>は<i>kwenda</i>（行く）の使役形なので、何かを行かせるという意味になります。</div>
+        </div>
+        <div class="slotrow">
+          <div class="whole">tulisafiri</div>
+          <div class="say"><b>Tulisafiri</b> kwa treni kutoka jijini hadi kijijini kwetu wakati wa likizo. — 休みのあいだ、私たちは町から自分たちの村まで列車で旅をしました。</div>
+          <div class="parts">
+            <span class="m s">tu-<i>私たち</i></span>
+            <span class="m t">li-<i>過去</i></span>
+            <span class="m r">safiri<i>旅をする</i></span>
+          </div>
+          <div class="sum">真ん中のスロットの文字を1つ変えれば、時制が変わります。<b>tuna</b>safiriは旅をしているところ、<b>tuta</b>safiriはこれから旅をする、です。語のほかの部分は何も動きません。</div>
+        </div>
+        <div class="slotrow">
+          <div class="whole">walipanda</div>
+          <div class="say">Watu wengi <b>walipanda</b> basi hilo kubwa mapema asubuhi ya leo. — 今朝早く、大勢の人があの大きなバスに乗りました。</div>
+          <div class="parts">
+            <span class="m s">wa-<i>彼ら、m/waクラス</i></span>
+            <span class="m t">li-<i>過去</i></span>
+            <span class="m r">panda<i>登る、乗る、植える</i></span>
+          </div>
+          <div class="sum">主語のスロットは、ただの代名詞ではありません：名詞の<b>クラス</b>に一致します。<i>Watu</i>はm/waクラスなので、動詞はwa-で始まります。これが二つめの仕組みです。</div>
+        </div>
+      </div>
+      <p class="quiet">パックはこれをそのままドリルにしています。スワヒリ語の3つの復習ドリルのひとつが動詞の列車で、スロットを一つずつ組み立てていきます — 形をまるごと思い出すのではなく、組み立てるのです。</p>
+    </div>
+  </section>
+
+  <!-- NOUN CLASSES -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">エンジン</span>
+      <h2>どの名詞もクラスを帯びています</h2>
+      <p class="sub">スワヒリ語に性はありません。あるのはクラスです — そして名詞のクラスが、複数形、形容詞、動詞、所有形のかたちを決めます。クラスさえつかめば、一致はおまけで付いてきます。</p>
+      <div class="classes">
+        <div class="cl"><div class="k">m/wa</div><div class="v">人 — <i>mtu / watu</i></div></div>
+        <div class="cl"><div class="k">m/mi</div><div class="v">木、生きもの、体の部分</div></div>
+        <div class="cl"><div class="k">ji/ma</div><div class="v">大きなもの、対になるもの、集まり</div></div>
+        <div class="cl"><div class="k">ki/vi</div><div class="v">物、道具、言語</div></div>
+        <div class="cl"><div class="k">n/n</div><div class="v">借用語、動物、多くの抽象語</div></div>
+        <div class="cl"><div class="k">u/n</div><div class="v">抽象名詞、不可算名詞</div></div>
+        <div class="cl"><div class="k">u/ma</div><div class="v">細長いもの</div></div>
+        <div class="cl"><div class="k">u/u</div><div class="v">小さめの一群、複数形で形が変わりません</div></div>
+        <div class="cl"><div class="k">ku</div><div class="v">名詞として使う不定詞</div></div>
+        <div class="cl"><div class="k">pa</div><div class="v">場所</div></div>
+      </div>
+      <p class="quiet">これが、このパックで実際に使われている10のクラスです。文法書からではなく、パックのカードから取りました。クラスはデッキのすべての名詞に印字されています。ほかのコースなら、読み手に推測させるところです。</p>
+    </div>
+  </section>
+
+  <!-- A CARD -->
+  <section class="wrap">
+    <div class="reveal">
+      <h2>カードに載っているもの</h2>
+      <p class="sub">ティア2の実物です。クラスは見出し語の隣に置かれ、ノートは辞書が言わないことを言います。</p>
+      <div class="sample">
+        <div><span class="hw">gari</span><span class="ng">ji / ma</span></div>
+        <div class="tr">車、あるいは路上を走る乗り物全般</div>
+        <div class="ex">Gari letu halina mafuta, kwa hiyo tumesimama karibu na daraja.</div>
+        <div class="exx">私たちの車は燃料が切れたので、橋の近くで止まっています。</div>
+        <div class="nt">同じカードが、訳語、例文の訳、<b>そして</b>ノートを、英語だけでなくドイツ語・日本語・ロシア語・簡体字中国語・スペイン語でも載せています — どのカードも全言語そろっていて、抜けはありません。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHOD -->
+  <section class="wrap method">
+    <div class="frame reveal">
+      <span class="tag">なぜ定着するのか</span>
+      <h2>単語カードを、ひとつの仕組みに</h2>
+      <dl>
+        <dt>カード</dt><dd><b>40クラスターにわたる1,000語</b>と5つのティア — あいさつと家族、町、仕事と健康、役所、ニュース、そして文と文をつなぐ小さな語。どのカードにも例文が付きます。</dd>
+        <dt>名詞クラス</dt><dd><b>どの名詞にも</b>、カードそのものに書かれています：<i>ji/ma</i>、<i>ki/vi</i>、<i>m/wa</i>。言語全体を動かしているエンジンを、暗黙のままにはしません。</dd>
+        <dt>あなたの言語</dt><dd><b>英語・ドイツ語・日本語・ロシア語・簡体字中国語・スペイン語</b>の訳語と学習ノート — どのカードにも全言語そろっています。自分が母語と呼ぶ言語で、スワヒリ語を学べます。</dd>
+        <dt>レッスン</dt><dd><b>20の参照レッスン</b> — 音の体系、名詞クラスの一族、動詞のスロット装置、スワヒリの時刻、そしてティアごとの一致。6言語すべてで読めて、<a href="lessons.ja.html?lang=Swahili">ここで無料で読めます</a>。</dd>
+        <dt>ドリル</dt><dd>3つ。よそから借りたものではなく、スワヒリ語に合わせて作りました：スロットを一つずつ組み立てる<b>動詞の列車</b>、<b>名詞クラス別の複数形</b>、そして<b>ディクテーション</b>。</dd>
+        <dt>音声</dt><dd>すべての語とすべての例文に、標準スワヒリ語のニューラル音声によるテキスト読み上げ。合成音声であり、話者の録音ではありません。</dd>
+        <dt>フィボナッチ間隔反復</dt><dd>カードごとに0〜5で自己評価します。よく覚えている語ほど、次に出るまでの間隔が延びます。</dd>
+        <dt>ボス戦</dt><dd>いちばん手強い語に答えないかぎり、クラスターは攻略できません。倒せば、そのカードは毎日のデッキから永久に外れます。</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- THE COURSE -->
+  <section class="wrap">
+    <div class="reveal">
+      <h2>3つのパック、3,000語</h2>
+      <p class="sub">Coreは発売中です。続く2つは書き上がっていますが、まだ販売していません。売り出すまでは、どちらにも日付を出しません。</p>
+      <div class="packs">
+        <a class="pack" href="https://store.steampowered.com/app/5228890/?utm_source=website-swahili" target="_blank" rel="noopener">
+          <div class="n">Swahili Core</div>
+          <div class="lvl">ティア1〜5 · 1,000語 · レッスン20本</div>
+          <p>土台：あいさつと家族から、町、仕事と健康を経て、役所とニュースまで。</p>
+          <span class="here">Steamで発売中</span>
+        </a>
+        <!-- PARETO-TBD: app id + store link when Swahili Pareto 1 (item 1317190) is released. -->
+        <div class="pack">
+          <div class="n">Swahili Pareto 1</div>
+          <div class="lvl">ティア6〜10 · 1,000語 · レッスン14本</div>
+          <p>実務の語彙：お金と銀行、契約、省庁、選挙、裁判所、報道、病院。</p>
+          <span class="soon">執筆済み、未発売</span>
+        </div>
+        <!-- PARETO-TBD: app id + store link when Swahili Pareto 2 (item 1317191) is released. -->
+        <div class="pack">
+          <div class="n">Swahili Pareto 2</div>
+          <div class="lvl">ティア11〜15 · 1,000語 · レッスン14本</div>
+          <p>派生が開けるところ — ひとつの語根が6つの動詞になります — そして語彙はそれを追って、公共の場と文体の層へ入っていきます。</p>
+          <span class="soon">執筆済み、未発売</span>
+        </div>
+      </div>
+      <p class="quiet">どのパックも1,000語と5つのティアで、前のパックを済ませたものとして進みます。Pareto 1の終わりが峠です。まだ終わりではありませんが、そこでスワヒリ語は壁ではなくなります。</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">質問</span>
+      <h2>買う前に</h2>
+      <details>
+        <summary>基本ゲームは必要ですか？</summary>
+        <p class="a">はい。Swahili CoreはFlashBossのDLCなので、基本ゲームも必要です。それ以外 — レッスン、音声、ドリル、ボス戦 — はすべてパックの中に入っています。Windows 10では<a href="https://apps.microsoft.com/detail/9n0dx20hk701" target="_blank" rel="noopener">Windows Terminal</a>も必要です。Microsoft Storeから無料でダウンロードできます。</p>
+      </details>
+      <details>
+        <summary>自分の言語で学べますか？</summary>
+        <p class="a">完全に学べます。どのカードも、訳語、例文の訳、学習ノートを、英語だけでなく<b>ドイツ語・日本語・ロシア語・簡体字中国語・スペイン語</b>で持っていて、抜けはありません。20の参照レッスンも同じ6言語です。ゲームのインターフェースもこの6言語を話します。</p>
+      </details>
+      <details>
+        <summary>これはどのスワヒリ語ですか？</summary>
+        <p class="a">標準スワヒリ語です — 東アフリカ全域で学校が教え、報道が使うもので、ザンジバル方言がもとになっています。音声は標準スワヒリ語のニューラル音声です。</p>
+      </details>
+      <details>
+        <summary>買う前に単語を見られますか？</summary>
+        <p class="a">すべて見られます。完全な<a href="wordlists.ja.html?lang=Swahili&amp;set=Core">単語リスト</a>と20本の<a href="lessons.ja.html?lang=Swahili">参照レッスン</a>が、このサイトにあります — 無料、印刷可、アカウント不要。<a href="https://flashboss-demo.pages.dev/">遊べるボス戦</a>もあります。</p>
+      </details>
+      <details>
+        <summary>英国綴りと米国綴りの切り替えはありますか？</summary>
+        <p class="a">その層は英語のパックのためのものです。スワヒリ語のパックでは、英語はカードの訳語の側にあり、パックが出すのはその1種類だけです。</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="final wrap reveal">
+    <h2><i>Habari?</i>から始めましょう</h2>
+    <p>二つの仕組みと1,000語。スワヒリ語の残りは、それに一致します。</p>
+    <a class="btn warm" href="https://store.steampowered.com/app/5228890/?utm_source=website-swahili" target="_blank" rel="noopener">Swahili CoreをSteamで &rarr;</a>
+  </section>
+
+</main>
+
+<footer>
+  <span class="footer-links">
+    <a href="home.ja.html">ホーム</a><span class="div">·</span>
+    <a href="packs.ja.html">パック</a><span class="div">·</span>
+    <a href="wordlists.ja.html?lang=Swahili&amp;set=Core">単語リスト</a><span class="div">·</span>
+    <a href="lessons.ja.html?lang=Swahili">レッスン</a><span class="div">·</span>
+    <a href="voices.ja.html">音声</a>
+  </span>
+</footer>
+
+<script>
+(function(){
+  var sw=document.querySelector('.lang-switch'); if(!sw) return;
+  var btn=sw.querySelector('.lang-toggle'), menu=sw.querySelector('.lang-menu');
+  function close(){ menu.hidden=true; btn.setAttribute('aria-expanded','false'); }
+  btn.addEventListener('click', function(e){ e.stopPropagation(); var o=menu.hidden; menu.hidden=!o; btn.setAttribute('aria-expanded', String(o)); });
+  document.addEventListener('click', function(e){ if(!sw.contains(e.target)) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+</body>
+</html>
