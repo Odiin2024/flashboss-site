@@ -8,9 +8,12 @@
 # window chrome and all, because that is what the STORE wants. A site GIF wants
 # the window, so each frame is cropped to it first.
 #
-# WINDOW GEOMETRY: the bench prints it, e.g. "terminal 92274699 (586x658)
-# placed at 2030,9 on the capture monitor". HDMI-0 starts at x=1680, so inside
-# the capture the window sits at x=350. Override with FB_CROP if that changes.
+# WINDOW GEOMETRY: the crop is the WHOLE WINDOW — title bar, border and all —
+# measured off a real frame by walking out from the centre until the wallpaper
+# starts: x 349..936, y 0..695, so 588x696+349+0. Odiin, 2026-09-20: "the whole
+# terminal is kind of charming, and true to reality". The bench's own line
+# ("terminal … (586x658) placed at 2030,9") is the CLIENT area and excludes the
+# decoration, so do not crop to it. Override with FB_CROP.
 #
 # DISPOSAL MATTERS. Without -dispose Background an optimized GIF paints each
 # frame over the last and the victory screen arrives with the option grid still
@@ -19,7 +22,7 @@
 #     convert out.gif -coalesce frame_%02d.png
 set -euo pipefail
 DIR="$1"; STEM="$2"; LANG_="$3"; W="${4:-540}"
-CROP="${FB_CROP:-586x672+350+0}"
+CROP="${FB_CROP:-588x696+349+0}"
 work="$(mktemp -d)"; trap 'rm -rf "$work"' EXIT
 n=0
 for f in "$DIR"/${STEM}_${LANG_}_frame*.png; do
