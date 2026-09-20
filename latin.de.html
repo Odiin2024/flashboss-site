@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- SELF-TRANSLATED, de. The prose on this page was written by Claude
+     (Opus), not by the translation fleet, on Odiin's word of 2026-09-20:
+     good enough for now, and flagged for a translation/adversarial pass
+     another day. The page carries the beta-translation notice so a reader
+     knows and so that pass can find it.
+     Canon held here: the six pack names stay English, FlashBoss stays
+     Latin, and every number is the English page's number in this locale's
+     separator — nothing was recounted. -->
+<title>Latein — FlashBoss</title>
+<meta name="description" content="FlashBoss Latein: ein Lesekurs über 2.000 Wörter in zehn Stufen und achtzig Clustern, mit 44 Referenzlektionen, Stichwörtern mit Makron und Beispielsätzen, die in unbearbeitetem Caesar, Cicero, Sallust, Nepos und Livius enden. Latin Core und Latin Pareto, jetzt auf Steam.">
+<link rel="canonical" href="https://odiin2024.github.io/flashboss-site/latin.de.html">
+<link rel="icon" type="image/png" href="icon.png">
+<!-- The Latin course page. Promoted 2026-09-19: Latin Core (Steam 5063240) and
+     Latin Pareto (5063250) are both on sale, so by site rule the page carries no
+     release date at all — dates are for things not yet out.
+     Counted from knight/flashcard_sets/Latin on 2026-09-19, not from copy:
+     Core 1,000 cards / 40 clusters / 26 lessons, Pareto 1,000 / 40 / 18 —
+     80 clusters, 2,000 cards, 44 reference lessons, ten tiers.
+     Card text carries de/es/ja/ru/zh (five, verified by reading the cluster
+     JSON keys: Translation_*, ExampleTranslation_*, Notes_*) plus the _gb
+     British layer. An earlier draft of this page said three; it was wrong.
+     STORE NAME: Steam sells the second pack as "Latin Pareto", with no 1 —
+     there is no Latin Pareto 2, the course forks instead. The page follows the
+     store so a reader can find it.
+     English only for now: when the siblings ship, the hreflang block, the
+     switcher <ul> and lang-redirect.js AVAIL gain them together. -->
+<link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/latin.html">
+<link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/latin.de.html">
+<link rel="alternate" hreflang="es" href="https://odiin2024.github.io/flashboss-site/latin.es.html">
+<link rel="alternate" hreflang="ja" href="https://odiin2024.github.io/flashboss-site/latin.ja.html">
+<link rel="alternate" hreflang="zh" href="https://odiin2024.github.io/flashboss-site/latin.zh.html">
+<link rel="alternate" hreflang="ru" href="https://odiin2024.github.io/flashboss-site/latin.ru.html">
+<link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/latin.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   FlashBoss — Latin page
+   Aesthetic: phosphor terminal. The through-line is the pack's own
+   arc, LAPIS -> LVCERNA: stone to lamplight. The page opens cold and
+   lapidary — the alphabet, the drill, sentences built for you — and
+   warms as you scroll until it is a lamp over a real page of Cicero.
+   ONE smooth ramp, no hard turn. Same mechanism as french.html.
+
+   TUNE THESE FIRST:
+   background.png   -> hero banner image (site default; no Latin art yet).
+   ============================================================ */
+:root{
+  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
+
+  /* STONE palette (top — cold, cut, inscriptional) */
+  --s-bg:#100d08;
+  --s-ink:#ecdcb6;
+  --s-dim:#b3a075;
+  --s-accent:#83b6dd;   /* marble silver — the chisel, not the pen */
+
+  /* LAMP palette (bottom — warm, close, the flame over the roll) */
+  --l-bg:#171421;
+  --l-ink:#ecdcb6;
+  --l-dim:#b3a075;
+  --l-accent:#e0a93f;   /* lamp amber — Latin gone readable */
+
+  /* mood: 0 = stone, 1 = lamp. Driven by scroll. ONE smooth ramp. */
+  --mood:0;
+
+  --line:color-mix(in oklab, #3a3120, #3a3120 calc(var(--mood) * 100%));
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0; font-family:var(--mono);
+  background:#100d08;
+  background:color-mix(in oklab, var(--s-bg), var(--l-bg) calc(var(--mood)*100%));
+  color:color-mix(in oklab, var(--s-ink), var(--l-ink) calc(var(--mood)*100%));
+  line-height:1.6; -webkit-font-smoothing:antialiased;
+  transition:background 120ms linear, color 120ms linear; overflow-x:hidden;
+}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.045) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.vignette{position:fixed; inset:0; pointer-events:none; z-index:9998;
+  background:radial-gradient(120% 90% at 50% 35%, transparent 55%, rgba(0,0,0,.5) 100%);}
+.wrap{max-width:880px; margin:0 auto; padding:0 24px;}
+
+nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line);}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--s-dim); margin-right:auto;}
+nav .brand a, nav .brand .sep{color:var(--s-dim); text-decoration:none;}
+nav .brand a:hover{color:var(--s-ink);}
+nav .brand .here{font-weight:800; color:var(--s-ink);}
+nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--s-ink);}
+nav .brand .logo:hover{color:var(--s-accent);}
+nav .brand .pipe{color:var(--s-dim); margin:0 11px;}
+.nav-mobile{display:none;}
+.nav-mobile a{color:inherit; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.08em; opacity:.85;}
+.nav-mobile a:hover{opacity:1; color:var(--s-accent);}
+@media(max-width:640px){ nav .brand, nav .links{display:none;} .nav-mobile{display:flex; flex:1; justify-content:space-between; align-items:center;} .nav-mobile .r{display:flex; gap:18px;} }
+nav .links a{color:inherit; text-decoration:none; opacity:.7; margin-left:22px;}
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+nav .links a.steam{font-weight:800; opacity:1; color:var(--s-ink);}
+nav .lang-switch{position:relative; margin-left:22px;}
+nav .lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--s-ink); background:var(--s-bg); border:1px solid var(--s-dim); padding:5px 8px; line-height:1; cursor:pointer;}
+nav .lang-toggle:hover, nav .lang-toggle[aria-expanded="true"]{background:var(--s-ink); color:var(--s-bg);}
+nav .lang-caret{font-size:8px; line-height:1; transition:transform .15s ease;}
+nav .lang-toggle[aria-expanded="true"] .lang-caret{transform:rotate(180deg);}
+nav .lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--s-bg); border:1px solid var(--s-dim); min-width:120px; z-index:50;}
+nav .lang-menu[hidden]{display:none;}
+nav .lang-menu li{margin:0; padding-left:0; position:static;}
+nav .lang-menu li::before{content:none;}
+nav .lang-menu a{display:block; font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--s-ink); text-decoration:none; padding:7px 10px; white-space:nowrap; opacity:1; margin:0;}
+nav .lang-menu a:hover{background:var(--s-ink); color:var(--s-bg); text-decoration:none;}
+nav .lang-menu a[aria-current="true"]{color:var(--s-accent);}
+nav .lang-menu a[aria-current="true"]:hover{color:var(--s-bg);}
+
+.reveal{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease;}
+.reveal.in{opacity:1; transform:none;}
+
+/* HERO — image band. The <img> carries the alt text; the gradient
+   sits over it so the type stays legible whatever the art is. */
+.hero{position:relative; padding:84px 0 36px; overflow:hidden; background:#100d08;}
+.hero .hero-img{position:absolute; inset:0; z-index:0; width:100%; height:100%; object-fit:cover; object-position:center 30%;}
+.hero::after{content:""; position:absolute; inset:0; z-index:1;
+  background:linear-gradient(180deg, rgba(13,17,22,.60) 0%, rgba(13,17,22,.84) 55%, #100d08 100%);}
+.hero .wrap{position:relative; z-index:2;}
+.kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--s-dim); opacity:.9; margin-bottom:26px;}
+.kicker b{color:var(--s-accent); font-weight:700;}
+.hero h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
+.cursor{display:inline-block; width:.6em; height:1em; vertical-align:-.08em; background:color-mix(in oklab, var(--s-accent), transparent 30%); margin-left:.12em; animation:blink 1.05s steps(1) infinite;}
+@keyframes blink{50%{opacity:0;}}
+.hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:30px 0 0; color:var(--s-ink); font-weight:500;}
+.hero .sig{font-size:13px; letter-spacing:.24em; text-transform:uppercase; color:var(--s-accent); margin:14px 0 0; opacity:.9;}
+.hero .lede{font-size:clamp(15px,2.2vw,18px); max-width:50ch; margin:24px 0 0; color:var(--s-dim);}
+.hero .lede b{color:var(--s-ink); font-weight:700;}
+.btn{display:inline-block; font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.08em; color:#100d08; background:color-mix(in oklab, var(--s-accent), transparent 22%);
+  padding:14px 26px; text-decoration:none; border:0; box-shadow:6px 6px 0 color-mix(in oklab, var(--s-accent), #000 62%); transition:transform .12s ease, box-shadow .12s ease;}
+.btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--s-accent), #000 62%);}
+.btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--s-accent), #000 62%);}
+.btn.hot{color:#171421; background:var(--l-accent); box-shadow:6px 6px 0 color-mix(in oklab, var(--l-accent), #000 60%);}
+.btn.hot:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--l-accent), #000 60%);}
+.hero .actions{display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:40px; max-width:520px;}
+.hero .actions .btn{margin-top:0; width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
+
+section{padding:64px 0;}
+.hero + section{padding-top:48px;}
+.frame{border:1px solid var(--line); position:relative; padding:34px 30px 32px;}
+.frame > .tag{position:absolute; top:-12px; left:22px;
+  background:color-mix(in oklab, var(--s-bg), var(--l-bg) calc(var(--mood)*100%));
+  padding:4px 12px; line-height:1; font-size:11px; letter-spacing:.3em; text-transform:uppercase;
+  color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+h2{font-size:clamp(26px,5vw,40px); margin:0 0 8px; font-weight:800; letter-spacing:-.01em;}
+.sub{color:var(--s-dim); font-size:14px; letter-spacing:.04em; margin:0 0 26px;}
+.sub.la{font-style:italic; font-size:16px; opacity:.92;}
+.sub a{color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%)); text-decoration:none; border-bottom:1px solid currentColor;}
+p.body{font-size:16px; max-width:62ch; margin:0 0 18px; color:color-mix(in oklab, var(--s-ink), var(--l-ink) calc(var(--mood)*100%));}
+p.body b{color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.la{font-style:italic; opacity:.96;}
+
+/* the two five-tier runs — Core cold, Pareto warming */
+.run{border:1px solid var(--line); display:grid; grid-template-columns:repeat(5,1fr); overflow:hidden; margin-bottom:18px;}
+.run .step{padding:22px 16px; border-right:1px solid var(--line); position:relative;}
+.run .step:last-child{border-right:0;}
+.run.core .step:nth-child(1){background:color-mix(in oklab, transparent, var(--s-accent) 5%);}
+.run.core .step:nth-child(2){background:color-mix(in oklab, transparent, var(--s-accent) 7%);}
+.run.core .step:nth-child(3){background:color-mix(in oklab, transparent, var(--s-accent) 9%);}
+.run.core .step:nth-child(4){background:color-mix(in oklab, transparent, var(--s-accent) 11%);}
+.run.core .step:nth-child(5){background:color-mix(in oklab, transparent, var(--s-accent) 13%);}
+.run.par .step:nth-child(1){background:color-mix(in oklab, transparent, var(--l-accent) 7%);}
+.run.par .step:nth-child(2){background:color-mix(in oklab, transparent, var(--l-accent) 10%);}
+.run.par .step:nth-child(3){background:color-mix(in oklab, transparent, var(--l-accent) 13%);}
+.run.par .step:nth-child(4){background:color-mix(in oklab, transparent, var(--l-accent) 16%);}
+.run.par .step:nth-child(5){background:color-mix(in oklab, transparent, var(--l-accent) 19%);}
+.run .t{font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%)); margin-bottom:10px; font-weight:700;}
+.run .step p{font-size:12.5px; margin:0; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%));}
+.runlabel{font-size:11px; letter-spacing:.24em; text-transform:uppercase; margin:0 0 10px; color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+@media(max-width:640px){.run{grid-template-columns:1fr;} .run .step{border-right:0; border-bottom:1px solid var(--line);} .run .step:last-child{border-bottom:0;}}
+
+/* tier & cluster ledger — straight off the pack manifest */
+.tiers{border:1px solid var(--line); margin-bottom:20px;}
+.tierrow{display:grid; grid-template-columns:max-content 1fr max-content; gap:0 22px; align-items:baseline; padding:18px 20px; border-bottom:1px solid var(--line);}
+.tierrow:last-child{border-bottom:0;}
+.tierrow .tno{font-size:12px; font-weight:800; letter-spacing:.16em; text-transform:uppercase; white-space:nowrap;
+  color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.tierrow .tcl{font-size:13px; color:color-mix(in oklab, var(--s-ink), var(--l-ink) calc(var(--mood)*100%));}
+.tierrow .tct{font-size:11.5px; letter-spacing:.04em; white-space:nowrap; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%));}
+.tierfoot{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; font-size:12px; letter-spacing:.06em; text-transform:uppercase; margin:0 0 26px; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%));}
+.tierfoot b{color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+@media(max-width:640px){.tierrow{grid-template-columns:1fr; gap:8px 0;}}
+
+/* sentence ladder — ten rungs, T1 to T10 */
+.ladder{list-style:none; margin:0; padding:0; counter-reset:tier;}
+.ladder li{counter-increment:tier; border-left:2px solid var(--line); padding:16px 0 16px 30px; margin-left:10px; position:relative;}
+.ladder li::before{content:"T" counter(tier); position:absolute; left:-17px; top:17px;
+  background:color-mix(in oklab, var(--s-bg), var(--l-bg) calc(var(--mood)*100%)); font-size:11px; font-weight:700; letter-spacing:.05em; padding:2px 0;
+  color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.ladder .tgt{font-weight:500; display:block;}
+.ladder li:nth-child(1) .tgt{font-size:15px;} .ladder li:nth-child(2) .tgt{font-size:15.4px;}
+.ladder li:nth-child(3) .tgt{font-size:15.8px;} .ladder li:nth-child(4) .tgt{font-size:16.2px;}
+.ladder li:nth-child(5) .tgt{font-size:16.6px;} .ladder li:nth-child(6) .tgt{font-size:17px;}
+.ladder li:nth-child(7) .tgt{font-size:17.4px;} .ladder li:nth-child(8) .tgt{font-size:17.8px;}
+.ladder li:nth-child(9) .tgt{font-size:18.2px;} .ladder li:nth-child(10) .tgt{font-size:18.6px; font-weight:700;}
+.ladder .en{display:block; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%)); font-size:13px; margin-top:6px;}
+.ladder .cite{display:inline-block; font-style:normal; font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; margin-top:8px; padding:2px 7px; border:1px solid var(--line);
+  color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.ladder .cite.made{opacity:.55; border-style:dashed;}
+
+/* source arc */
+.arc{border:1px solid var(--line);}
+.arcrow{display:grid; grid-template-columns:max-content 1fr max-content; gap:0 22px; align-items:baseline; padding:15px 20px; border-bottom:1px solid var(--line);}
+.arcrow:last-child{border-bottom:0;}
+.arcrow .an{font-size:12px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; white-space:nowrap;
+  color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.arcrow .aw{font-size:13px; color:color-mix(in oklab, var(--s-ink), var(--l-ink) calc(var(--mood)*100%));}
+.arcrow .ac{font-size:11.5px; white-space:nowrap; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%));}
+@media(max-width:640px){.arcrow{grid-template-columns:1fr; gap:6px 0;}}
+
+/* cards */
+.cards{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
+@media(max-width:640px){.cards{grid-template-columns:1fr;}}
+.card{border:1px solid var(--line); padding:20px 18px; cursor:pointer; background:rgba(255,255,255,.015); transition:border-color .15s ease; min-height:160px;}
+.card:hover{border-color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.card .art{font-size:12px; letter-spacing:.14em; font-weight:700; color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.card .word{font-size:24px; font-weight:800; margin:2px 0 12px;}
+.card .ex{font-size:13px; color:var(--s-dim); font-style:italic;}
+.card .trans{font-size:12.5px; color:var(--s-dim); margin-top:10px; max-height:0; overflow:hidden; opacity:0; transition:max-height .3s ease, opacity .3s ease;}
+.card.flipped .trans{max-height:340px; opacity:1;}
+.card .trans .nb{display:block; margin-top:8px; white-space:pre-line; font-size:12px; opacity:.9;}
+.card .hint{font-size:10px; letter-spacing:.2em; text-transform:uppercase; opacity:.45; margin-top:12px;}
+
+/* macron minimal pairs */
+.pairs{display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-top:24px;}
+@media(max-width:560px){.pairs{grid-template-columns:1fr;}}
+.pr{border:1px dashed var(--line); padding:18px; text-align:center;}
+.pr .big{font-size:26px; font-weight:800; letter-spacing:.01em;}
+.pr .big .mk{color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.pr .from{font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; opacity:.6; margin-bottom:8px;}
+.pr .gloss{font-size:12.5px; margin-top:8px; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%));}
+.pair-note{font-size:13px; margin:16px 0 0; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%)); max-width:62ch;}
+
+/* lessons list */
+.lessons{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(2,1fr); gap:0 26px;}
+@media(max-width:640px){.lessons{grid-template-columns:1fr;}}
+.lessons li{border-top:1px solid var(--line); padding:13px 0; font-size:13.5px;}
+.lessons li .no{font-size:11px; font-weight:700; letter-spacing:.12em; margin-right:10px;
+  color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.lessons li span.d{display:block; font-size:12.5px; margin-top:3px; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%));}
+
+/* packs */
+.packs{display:grid; grid-template-columns:repeat(2,1fr); gap:0; border:1px solid var(--line);}
+@media(max-width:640px){.packs{grid-template-columns:1fr;}}
+.pack{padding:24px 20px; border-right:1px solid var(--line);}
+.pack:last-child{border-right:0;}
+.pack .n{font-size:18px; font-weight:800;}
+.pack .lvl{font-size:12px; letter-spacing:.06em; color:var(--s-dim); margin:4px 0 12px;}
+.pack p{font-size:13px; color:var(--s-dim); margin:0;}
+.pack .soon{display:inline-block; font-size:10px; letter-spacing:.2em; text-transform:uppercase; margin-top:12px; padding:3px 8px; border:1px solid var(--line);
+  color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+a.pack{text-decoration:none; color:inherit; display:block; transition:background .15s ease, border-color .15s ease;}
+a.pack:hover{background:rgba(224,169,63,.07); border-color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+@media(max-width:640px){.pack{border-right:0; border-bottom:1px solid var(--line);} .pack:last-child{border-bottom:0;}}
+
+/* the fork — the third thousand */
+.fork{display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-top:22px;}
+@media(max-width:640px){.fork{grid-template-columns:1fr;}}
+.path{border:1px solid var(--line); padding:22px 20px; opacity:.8;}
+.path .pn{font-size:17px; font-weight:800;}
+.path .pl{font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; margin:5px 0 12px; color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.path p{font-size:13px; margin:0; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%));}
+.path .tbd{display:inline-block; font-size:10px; letter-spacing:.2em; text-transform:uppercase; margin-top:14px; padding:3px 8px; border:1px dashed var(--line); opacity:.75;}
+
+.method dl{display:grid; grid-template-columns:max-content 1fr; gap:14px 22px; margin:0;}
+.method dt{font-weight:700; color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%)); white-space:nowrap;}
+.method .frame > .tag{color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.method dd{margin:0; font-size:14.5px; color:var(--s-dim);}
+@media(max-width:560px){.method dl{grid-template-columns:1fr; gap:4px 0;} .method dd{margin-bottom:14px;}}
+
+/* FAQ */
+.faq details{border-top:1px solid var(--line);}
+.faq details:last-of-type{border-bottom:1px solid var(--line);}
+.faq summary{list-style:none; cursor:pointer; padding:16px 30px 16px 0; font-size:15px; font-weight:700; position:relative;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"+"; position:absolute; right:4px; top:14px; font-size:18px; font-weight:400;
+  color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.faq details[open] summary::after{content:"\2212";}
+.faq summary:hover{color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.faq .a{font-size:14px; margin:0 0 20px; max-width:64ch; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%));}
+.faq .a a{color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%)); text-decoration:none; border-bottom:1px solid currentColor;}
+
+.final{text-align:center; padding:90px 0 100px;}
+.final h2{font-size:clamp(28px,6vw,52px);}
+.final p{color:var(--l-dim); max-width:48ch; margin:14px auto 0; font-size:15px;}
+.final .dates{margin-top:26px; font-size:13px; line-height:2; letter-spacing:.1em; text-transform:uppercase; color:var(--l-accent);}
+.final .also{margin-top:22px; font-size:13px;}
+.final .also a{color:var(--l-dim); text-decoration:none; border-bottom:1px solid currentColor;}
+.final .also a:hover{color:var(--l-ink);}
+
+footer{border-top:1px solid var(--line); padding:28px 24px; font-size:12px; color:var(--l-dim); text-align:center; letter-spacing:.04em;}
+footer .epi{font-style:italic; opacity:.78; max-width:54ch; margin:0 auto 12px; line-height:1.7;}
+footer .epi .tr{font-style:normal; opacity:.85; display:block; margin-top:8px; font-size:11.5px;}
+footer .epi-cite{font-style:normal; font-size:11px; letter-spacing:.12em; text-transform:uppercase; opacity:.75; display:inline-block; margin-top:8px;}
+footer .footer-links{display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap; margin-top:14px;}
+footer .footer-links a{color:inherit; text-decoration:none; opacity:.75; letter-spacing:.04em;}
+footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+footer .footer-links .div{opacity:.4;}
+
+/* bundle line in the closing call to action — one Steam bundle per course */
+.bundleline{font-size:14.5px; max-width:56ch; margin:0 auto 22px; opacity:.95;}
+.bundleline b{font-weight:800;}
+.beta-note{background:#1b1508; border-bottom:1px solid #6b5a2a; color:#e8d9b0; font:500 12.5px/1.55 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; text-align:center; padding:9px 16px; margin:0;}
+.beta-note b{color:#e0a93f; font-weight:700; letter-spacing:.09em;}
+.beta-note a{color:#e0a93f; text-decoration:underline; text-underline-offset:2px;}
+</style>
+<script src="lang-redirect.js"></script>
+</head>
+<body>
+<div class="beta-note" role="status"><b>BETA-ÜBERSETZUNG</b> — die deutsche Fassung dieser Seite ist ein Entwurf und noch nicht lektoriert. Einen Fehler im Text gefunden? <a href="report.html">Sag uns Bescheid</a> · <a href="latin.html">Read in English</a></div>
+<div class="overlay"></div>
+<div class="vignette"></div>
+
+<nav>
+  <span class="brand"><a class="logo" href="index.de.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.de.html">Start</a><span class="sep"> · </span><a href="packs.de.html">Packs</a><span class="sep"> · </span><span class="here">Latein</span></span>
+  <span class="links">
+    <a href="manual/index.html">Anleitung (Beta)</a>
+    <a href="resources.de.html">Ressourcen</a>
+    <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-latin" target="_blank" rel="noopener">steam</a>
+  </span>
+  <span class="nav-mobile">
+    <a href="home.de.html">Start</a>
+    <span class="r"><a href="resources.de.html">Ressourcen</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-latin" target="_blank" rel="noopener">steam</a></span>
+  </span>
+  <div class="lang-switch">
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Sprache wählen">DE<span class="lang-caret">▾</span></button>
+    <ul class="lang-menu" hidden>
+      <li><a href="latin.html">English</a></li>
+      <li><a href="latin.de.html" aria-current="true">Deutsch</a></li>
+      <li><a href="latin.es.html">Español</a></li>
+      <li><a href="latin.ja.html">日本語</a></li>
+      <li><a href="latin.zh.html">简体中文</a></li>
+      <li><a href="latin.ru.html">Русский</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <header class="hero">
+    <!-- background.png is the default hero for a language with no art of its
+         own (German/Spanish/Italian/Esperanto each have one). The onerror keeps
+         the hero on flat ink if the image ever goes missing. -->
+    <img class="hero-img" src="background.png" alt="FlashBoss — die mondbeschienene Schule, die vor jedem FlashBoss-Kurs steht" loading="eager" decoding="async" onerror="this.style.display='none'">
+    <div class="wrap">
+      <p class="kicker reveal">Zwei Packs · <b>2.000 Wörter</b> · zehn Stufen · 44 Lektionen · jetzt auf Steam</p>
+      <h1 class="reveal">Latīna<span class="cursor"></span></h1>
+      <p class="tagline reveal">Lies echtes Latein. Keine Bücher darüber.</p>
+      <p class="sig reveal">Hören · Lesen · Wiederholen · Bewerten · Kämpfen</p>
+      <p class="lede reveal">Zweitausend Wörter, zehn Stufen, eine Fähigkeit. Die Sätze beginnen für dich gebaut und enden so, <b>wie Caesar, Cicero, Sallust, Nepos und Livius sie wirklich geschrieben haben</b> — gekürzt wurde nur die Länge, erfunden nichts.</p>
+      <div class="actions reveal">
+        <a class="btn" href="wordlists.de.html?lang=Latin&amp;set=Core">Wortlisten</a>
+        <a class="btn" href="lessons.de.html?lang=Latin">Lektionen</a>
+        <a class="btn" href="https://flashboss-demo.pages.dev/">Demo testen</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- THE ARGUMENT -->
+  <section class="wrap">
+    <div class="frame">
+      <span class="tag">Aufbau des Lateinkurses</span>
+      <h2>Eine Fähigkeit: Lesen</h2>
+      <p class="sub la">Legendō discitur — durch Lesen lernt man es.</p>
+      <p class="body">Nichts hier verlangt von dir, selbst Latein zu verfassen. Der ganze Kurs ist darauf gebaut, dass du eine gedruckte Zeile ansehen und wissen kannst, was sie sagt — und er bringt dich dorthin, indem er dir von der allerersten Stufe an Sätze vorlegt, statt dich warten zu lassen, bis die Grammatik fertig ist.</p>
+      <p class="body">Die Reihenfolge ist das Argument. Zweitausend Lemmata liegen in zehn Stufen, jede Stufe acht Cluster zu fünfundzwanzig Karten, und die Grammatik kommt Lektion für Lektion genau an der Karte, die sie zuerst braucht. Kein Beispielsatz benutzt je Grammatik, die du noch nicht gelernt hast. Auf Stufe 10 hat die Leiter nichts mehr zu lehren, und du liest Cicero unbearbeitet — unterwegs <b>17.007 Wörter Latein im Kontext gelesen</b>.</p>
+
+      <p class="runlabel">Latin Core — Stufen 1 bis 5</p>
+      <div class="run core reveal">
+        <div class="step"><div class="t">Stufe 1</div><p>Das Alphabet, wie Rom es sprach, die Zeigewörter, die Verbindungswörter, die ersten Beweger, die ersten Substantive von Senat und Schwert.</p></div>
+        <div class="step"><div class="t">Stufe 2</div><p>Der Akkusativ, das Präsens, der Imperativ. Der Alltag, das Forum, der Körper, Zählen und Wert.</p></div>
+        <div class="step"><div class="t">Stufe 3</div><p>Genitiv und Dativ, der volle Plural, zwei weitere Konjugationen, das Imperfekt. Die Straße, der Haushalt, das kreisende Jahr.</p></div>
+        <div class="step"><div class="t">Stufe 4</div><p>Der Ablativ, die dritte Deklination, Präpositionen und Kasus — und der erste echte Caesar, leicht bearbeitet.</p></div>
+        <div class="step"><div class="t">Stufe 5</div><p>Das Perfekt und seine Familie, die Stammformen, Relativsätze. Caesar steht jetzt auf 86 der 200 Karten, auf 26 davon unbearbeitet.</p></div>
+      </div>
+
+      <p class="runlabel">Latin Pareto — Stufen 6 bis 10</p>
+      <div class="run par reveal">
+        <div class="step"><div class="t">Stufe 6</div><p>Die Partizipien, alle drei, und das Passiv. Caesar geht weiter, und Nepos kommt zur Geltung.</p></div>
+        <div class="step"><div class="t">Stufe 7</div><p>Der Ablativus absolutus, das Passiv vollständig, die Deponentien. Ciceros Briefe öffnen das lockere Register.</p></div>
+        <div class="step"><div class="t">Stufe 8</div><p>Die Infinitivfamilie und die indirekte Rede. Sallust kommt dazu; 192 von 200 Karten sind jetzt unbearbeitet.</p></div>
+        <div class="step"><div class="t">Stufe 9</div><p>Der Konjunktiv, die cum-Sätze, Absicht und Folge, indirekte Fragen. Livius tritt in die Reihe.</p></div>
+        <div class="step"><div class="t">Stufe 10</div><p>Gerundium und Gerundivum, und wie man eine Stellenangabe liest. Ciceros Reden und seine Philosophie schließen den Stamm.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SENTENCE LADDER -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Sieh, wie es erwachsen wird</span>
+      <h2>Von „für dich gebaut“ zu „von Cicero geschrieben“</h2>
+      <p class="sub">Der Beispielsatz je einer Karte aus jeder der zehn Stufen, der Reihe nach. Nichts davon ist eine Paraphrase: Ab Stufe 4 sind die Belege echt, und die unmarkierten sind der eigene Wortlaut des Autors.</p>
+      <ol class="ladder">
+        <li class="reveal"><span class="tgt la">Ut vides, Caesar noster est.</span><span class="en">Wie du siehst, ist Caesar einer der Unseren.</span><span class="cite made">für die Stufe gebaut</span></li>
+        <li class="reveal"><span class="tgt la">Dum Caesar in Gallia est, senatus legem probat.</span><span class="en">Während Caesar in Gallien ist, billigt der Senat das Gesetz.</span><span class="cite made">für die Stufe gebaut</span></li>
+        <li class="reveal"><span class="tgt la">Copiae nostrae iam discedebant et castra relinquebant.</span><span class="en">Unsere Truppen brachen schon auf und verließen das Lager.</span><span class="cite made">für die Stufe gebaut</span></li>
+        <li class="reveal"><span class="tgt la">Tempestates et nostros in castris continebant et hostem a pugna prohibebant.</span><span class="en">Die Unwetter hielten unsere Leute im Lager und den Feind zugleich von der Schlacht fern.</span><span class="cite">bearbeitet nach Caes. BG 4.34.4</span></li>
+        <li class="reveal"><span class="tgt la">Ibi ad ultimum iugum pervenit aciemque eo loco constituit.</span><span class="en">Dort erreichte er den äußersten Bergrücken und stellte an dieser Stelle seine Schlachtreihe auf.</span><span class="cite">Caes. BG 8.14.5</span></li>
+        <li class="reveal"><span class="tgt la">Ne Vorenus quidem tum sese vallo continet, sed omnium veritus existimationem subsequitur.</span><span class="en">Nicht einmal Vorenus hält sich da hinter dem Wall; aus Furcht vor dem Urteil aller folgt er nach.</span><span class="cite">Caes. BG 5.44.5</span></li>
+        <li class="reveal"><span class="tgt la">Omnia mihi cum eo intercedunt iura summae necessitudinis.</span><span class="en">Zwischen ihm und mir bestehen alle Bande engster Verbundenheit.</span><span class="cite">Cic. Fam. 13.14</span></li>
+        <li class="reveal"><span class="tgt la">Nobis est domi inopia, foris aes alienum, mala res, spes multo asperior.</span><span class="en">Daheim haben wir Mangel, auswärts Schulden, eine schlechte Lage und eine noch weit härtere Aussicht.</span><span class="cite">Sall. Cat. 20.13</span></li>
+        <li class="reveal"><span class="tgt la">Catilina postquam fusas copias seque cum paucis relictum videt, memor generis atque pristinae suae dignitatis in confertissumos hostis incurrit ibique pugnans confoditur.</span><span class="en">Als Catilina sieht, dass seine Truppen zersprengt sind und er selbst nur mit wenigen zurückblieb, stürzt er sich, eingedenk seiner Herkunft und seines früheren Ansehens, in die dichtesten Reihen der Feinde und wird dort im Kampf durchbohrt.</span><span class="cite">Sall. Cat. 60.7</span></li>
+        <li class="reveal"><span class="tgt la">Videtis illum subcrispo capillo, nigrum, qui eo vultu nos intuetur ut sibi ipse peracutus esse videatur.</span><span class="en">Ihr seht den da mit dem leicht gekräuselten Haar, den Dunklen, der uns mit einer Miene betrachtet, die ihn sich selbst überaus scharfsinnig erscheinen lässt.</span><span class="cite">Cic. Verr. 2.2.108</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- WHO YOU READ -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Wessen Latein</span>
+      <h2>Die Autoren treten der Reihe nach auf</h2>
+      <p class="sub">Die Stufen 1 bis 3 haben überhaupt keine Belege und sagen das auch: Diese Sätze sind auf eine Grammatikgrenze gebaut, denn echtes Latein kennt kein so einfaches Register. Caesar tritt auf Stufe 4 ein, und bis Stufe 8 ist das Gerüst verschwunden.</p>
+      <div class="arc">
+        <div class="arcrow"><div class="an">Stufen 1–3</div><div class="aw">Sätze, auf die Grammatik der Stufe gebaut — kein Autor behauptet, keiner angedeutet</div><div class="ac">0 von 600 belegt</div></div>
+        <div class="arcrow"><div class="an">Stufe 4</div><div class="aw">Caesar, <i>Gallischer Krieg</i> — meist um Nebensätze gekürzt</div><div class="ac">62 belegt · 13 unbearbeitet</div></div>
+        <div class="arcrow"><div class="an">Stufe 5</div><div class="aw">Durchgehend Caesar, Nepos beginnt</div><div class="ac">86 belegt · 26 unbearbeitet</div></div>
+        <div class="arcrow"><div class="an">Stufe 6</div><div class="aw">Caesar und Nepos, <i>Viten</i></div><div class="ac">145 belegt · 84 unbearbeitet</div></div>
+        <div class="arcrow"><div class="an">Stufe 7</div><div class="aw">Ciceros Briefe — <i>ad Atticum</i>, <i>ad Familiares</i> — neben Caesar und Nepos</div><div class="ac">170 belegt · 109 unbearbeitet</div></div>
+        <div class="arcrow"><div class="an">Stufe 8</div><div class="aw">Sallust kommt dazu; das Bearbeiten hört praktisch auf</div><div class="ac">196 belegt · 192 unbearbeitet</div></div>
+        <div class="arcrow"><div class="an">Stufe 9</div><div class="aw">Livius, Buch 1, tritt zu Sallust, Cicero und Caesar</div><div class="ac">197 belegt · 195 unbearbeitet</div></div>
+        <div class="arcrow"><div class="an">Stufe 10</div><div class="aw">Ciceros Reden und seine Philosophie — das schwerste Band, das der Stamm erreicht</div><div class="ac">196 belegt · 194 unbearbeitet</div></div>
+      </div>
+      <p class="sub" style="margin:20px 0 0;">Über die beiden Packs hinweg tragen <b>1.052 der 2.000 Beispielsätze einen Beleg</b>, und 813 davon sind der unveränderte Wortlaut des Autors. Jeder Beleg auf jeder Karte nennt Buch, Kapitel und Abschnitt, und Lektion 41 bringt dir bei, wie man ihn liest.</p>
+    </div>
+  </section>
+
+  <!-- TIER & CLUSTER LEDGER -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Die ganze Karte</span>
+      <h2>Zehn Stufen, achtzig Cluster</h2>
+      <p class="sub">Jedes Cluster umfasst 25 Karten und endet in einem Bosskampf. Nichts ist versteckt — die vollständige Liste steht auf der <a href="wordlists.de.html?lang=Latin&amp;set=Core">Wortlisten-Seite</a>, frei lesbar vor dem Kauf.</p>
+      <div class="tiers">
+        <div class="tierrow">
+          <div class="tno">Stufe 1</div>
+          <div class="tcl">Die Zeigewörter · Die Gelenke · Die Verbindungen · Die ersten Beweger · Senat &amp; Schwert · Viele &amp; Mächtige · Die Lage der Dinge · Die Aufstellung</div>
+          <div class="tct">8 Cluster · 200 Karten</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">Stufe 2</div>
+          <div class="tcl">Der Alltag · Waffen &amp; der Mann · Das Forum · Fleisch &amp; Atem · Zählen &amp; Messen · Wert &amp; Ehre · Zeit &amp; Gezeiten · Die Sammlung</div>
+          <div class="tct">8 Cluster · 200 Karten</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">Stufe 3</div>
+          <div class="tcl">Hin &amp; Her · Der lange Weg · Fleisch &amp; Gestalt · Die Väter · Haus &amp; Herd · Hoffen &amp; Fürchten · Das kreisende Jahr · Die Raststation</div>
+          <div class="tct">8 Cluster · 200 Karten</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">Stufe 4</div>
+          <div class="tcl">Stimmungen &amp; Augenblicke · Die wendende Hand · Der lebende Leib · Die Kurie · Zu Land &amp; zur See · Mehr &amp; am meisten · Das Winterlager · Die Musterrolle</div>
+          <div class="tct">8 Cluster · 200 Karten</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">Stufe 5</div>
+          <div class="tcl">Was getan wurde · Die Perfektstämme · Die Feldschlacht · Das Werk in Arbeit · Leib &amp; Leben · Lob &amp; Tadel · Die bestimmte Stunde · Die volle Rechnung</div>
+          <div class="tct">8 Cluster · 200 Karten</div>
+        </div>
+      </div>
+      <p class="tierfoot"><span>Core: 5 Stufen · 40 Cluster · <b>1.000 Karten</b></span><span>26 Referenzlektionen</span><span>das Lesefundament</span></p>
+      <div class="tiers">
+        <div class="tierrow">
+          <div class="tno">Stufe 6</div>
+          <div class="tcl">Das Leben des Geistes · Stunden &amp; Tage · Ein Soldatenleben · Die volle Zählung · Das Familiengut · Der sterbliche Leib · Verträge &amp; Mächte · Die losen Enden</div>
+          <div class="tct">8 Cluster · 200 Karten</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">Stufe 7</div>
+          <div class="tcl">Kommen &amp; Scheiden · Die bereite Hand · Die Kopfzahl · Wunden &amp; Mühsal · Sippe &amp; Nachbar · Rang &amp; Amt · Der Seeweg · Der mittlere Weg</div>
+          <div class="tct">8 Cluster · 200 Karten</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">Stufe 8</div>
+          <div class="tcl">Wahr &amp; Falsch · Das Geheiß · Gesund &amp; Krank · Gewicht &amp; Wert · Die gegenwärtige Stunde · Das Kriegsglück · Der Hausvorrat · Der letzte Graben</div>
+          <div class="tct">8 Cluster · 200 Karten</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">Stufe 9</div>
+          <div class="tcl">Hoffnungen &amp; Gelübde · Nach Zahlen · Recht &amp; Unrecht · Die gebrochene Linie · Staub &amp; Asche · Die heiligen Riten · List &amp; Gewalt · Was bleibt</div>
+          <div class="tct">8 Cluster · 200 Karten</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">Stufe 10</div>
+          <div class="tcl">Das offene Buch · Die letzte Schlacht · Blut &amp; Knochen · Ehre &amp; Schande · Gesandte &amp; Verträge · Herd &amp; Erbe · Das letzte Maß · Die schließende Seite</div>
+          <div class="tct">8 Cluster · 200 Karten</div>
+        </div>
+      </div>
+      <p class="tierfoot"><span>Pareto: 5 Stufen · 40 Cluster · <b>1.000 Karten</b></span><span>18 Referenzlektionen</span><span>der Stamm vollständig</span></p>
+    </div>
+  </section>
+
+  <!-- THE CARD -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Auf einen Blick</span>
+      <h2>Das Makron ist Information, keine Verzierung</h2>
+      <p class="sub">Jedes Stichwort steht so, wie ein Wörterbuch es druckt — lange Vokale markiert, beim Substantiv Genus und Genitivstamm, beim Verb die Konjugation. 1.320 der 2.000 Stichwörter tragen ein Makron. Tippe auf eine Karte, um sie umzudrehen.</p>
+      <div class="cards">
+        <div class="card reveal">
+          <div class="art">f., -is</div>
+          <div class="word">virtūs</div>
+          <div class="ex la">Virtus Romana magna est.</div>
+          <div class="trans">Mut, Mannhaftigkeit; Tugend — &ldquo;Römischer Mut ist groß.&rdquo;<span class="nb">Substantiv | Gen. Sg. virtūtis — der Stamm ist virtūt-
+langes ū: vir-tūs
+Von vir &lsquo;Mann&rsquo;: die Eigenschaft eines Mannes.</span></div>
+          <div class="hint">zum Umdrehen tippen</div>
+        </div>
+        <div class="card reveal">
+          <div class="art">-iō, -ere</div>
+          <div class="word">faciō</div>
+          <div class="ex la">Nos idem facimus.</div>
+          <div class="trans">machen, tun — &ldquo;Wir tun dasselbe.&rdquo;<span class="nb">Verb | 1. Pl. facimus = &lsquo;wir machen, wir tun&rsquo;
+langes ō: fa-ci-ō; a und i bleiben kurz
+idem = &lsquo;dasselbe&rsquo; (Objektrolle)</span></div>
+          <div class="hint">zum Umdrehen tippen</div>
+        </div>
+        <div class="card reveal">
+          <div class="art">n., -ī</div>
+          <div class="word">malum</div>
+          <div class="ex la">Civitas commune malum videt.</div>
+          <div class="trans">Übel, Unglück — &ldquo;Der Staat sieht das gemeinsame Unglück.&rdquo;<span class="nb">Substantiv | Akk. Sg. malum = der Form nach Nom. Sg.
+kein Makron: ma-lum, beide Vokale kurz
+mālum, mit langem ā, ist ein Apfel.</span></div>
+          <div class="hint">zum Umdrehen tippen</div>
+        </div>
+      </div>
+
+      <div class="pairs reveal">
+        <div class="pr">
+          <div class="from">Stufe 1 · Stufe 3</div>
+          <div class="big">hic &nbsp;·&nbsp; h<span class="mk">ī</span>c</div>
+          <div class="gloss"><b>dieser hier</b> gegen <b>hier</b>. Im Druck ein Strich Unterschied, und die Linie über dem Vokal ist das Einzige, was die beiden trennt.</div>
+        </div>
+        <div class="pr">
+          <div class="from">Stufe 10 · Stufe 4</div>
+          <div class="big">os &nbsp;·&nbsp; <span class="mk">ō</span>s</div>
+          <div class="gloss"><b>Knochen</b> gegen <b>Mund</b>. Dieselben drei Buchstaben, dieselbe neutrale dritte Deklination, sechs Stufen auseinander — und die Karte, die das zweite lehrt, sagt es dazu.</div>
+        </div>
+      </div>
+      <p class="pair-note">Die Makra enden beim Stichwort. Beispielsätze stehen unmarkiert da, so wie jeder echte lateinische Text gedruckt ist, den du je aufschlagen wirst — was du zu lesen übst, ist also die Sache selbst und kein Lernbehelf. Die Karte nennt dir die Vokallänge; der Satz lässt dich sie mittragen.</p>
+    </div>
+  </section>
+
+  <!-- REFERENCE LESSONS -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">Mehr als eine Wortliste</span>
+      <h2>Vierundvierzig Lektionen, der Reihe nach gezündet</h2>
+      <p class="sub">Eine Referenzlektion schaltet genau an der Karte frei, an der du sie zuerst brauchst, und bleibt danach verfügbar. Cores sechsundzwanzig und Paretos achtzehn sind alle auf der <a href="lessons.de.html?lang=Latin">Lektionen-Seite</a> frei lesbar.</p>
+      <ul class="lessons">
+        <li><span class="no">01</span>Willkommen bei Latein<span class="d">Die vier Buchstaben, die ein englischsprachiger Leser falsch macht — c, g, v, qu — in der restituierten Aussprache, und wozu ein Makron da ist.</span></li>
+        <li><span class="no">10</span>Der Akkusativ<span class="d">Der erste Fall, der ändert, was ein Satz bedeutet, getroffen auf der Karte, die ihn zuerst braucht.</span></li>
+        <li><span class="no">14</span>Genitiv und Dativ<span class="d">Wessen und wem, und warum der Genitiv Singular auf jeder Substantivkarte steht.</span></li>
+        <li><span class="no">18</span>Der Ablativ<span class="d">Der Fall, für den das Englische keinen Namen hat, und die sechs Aufgaben, die er erfüllt.</span></li>
+        <li><span class="no">23</span>Die Stammformen<span class="d">Warum ein lateinisches Verb in vier Formen angegeben wird, und wie man von jeder zu den übrigen kommt.</span></li>
+        <li><span class="no">30</span>Der Ablativus absolutus<span class="d">Die Konstruktion, die Caesar im Tempo lesbar macht.</span></li>
+        <li><span class="no">34</span>Die indirekte Rede<span class="d">Akkusativ mit Infinitiv: wie ein Römer &lsquo;er sagte, dass&hellip;&rsquo; schreibt.</span></li>
+        <li><span class="no">41</span>Die Stellenangabe lesen<span class="d">Was <i>Caes. BG 5.44.5</i> bedeutet, und wie du hingehst und den Rest der Seite findest.</span></li>
+      </ul>
+      <p class="sub" style="margin:22px 0 0;">Außerdem enthalten: i als Konsonant, ch und ae/oe, die Verbindungswörter, die ersten Beweger, das Präsens, der Imperativ, das Lautsystem, der volle Plural, zwei weitere Konjugationen, das Imperfekt, die dritte Deklination, Präpositionen und Kasus, das Perfekt und seine Familie, Relativsätze, Verbindungswörter im Tempo, alle drei Partizipien und ihre zwei Aufgaben, das Passiv zweimal, die Deponentien, die Infinitivfamilie, der Konjunktiv, die cum-Sätze, Absicht und Folge, indirekte Fragen, das Gerundium, das Gerundivum — und eine Abschlusslektion darüber, wie es weitergeht.</p>
+    </div>
+  </section>
+
+  <!-- PACKS -->
+  <section class="wrap">
+    <div class="reveal">
+      <h2>Zwei Packs bis zur Lesefähigkeit</h2>
+      <p class="sub">Latein ist ein Stamm, keine Treppe aus dreien. Core und Pareto sind zusammen der ganze Lesekurs über 2.000 Wörter, am Ende grammatisch vollständig.</p>
+      <div class="packs">
+        <a class="pack" href="https://store.steampowered.com/app/5063240/?utm_source=website-latin" target="_blank" rel="noopener">
+          <div class="n">Latin Core</div>
+          <div class="lvl">Stufen 1–5 · 1.000 Wörter · 26 Lektionen</div>
+          <p>Das Lesefundament. Anfangs Sätze, die für die Stufe gebaut sind, am Ende echter Caesar. Setzt das Grundspiel voraus.</p>
+          <span class="here">Auf Steam</span>
+        </a>
+        <a class="pack" href="https://store.steampowered.com/app/5063250/?utm_source=website-latin" target="_blank" rel="noopener">
+          <div class="n">Latin Pareto</div>
+          <div class="lvl">Stufen 6–10 · 1.000 Wörter · 18 Lektionen</div>
+          <p>Das zweite Tausend und das Ende des Gerüsts: Nepos, Ciceros Briefe, Sallust, Livius, Ciceros Reden. Setzt Core voraus.</p>
+          <span class="here">Auf Steam</span>
+        </a>
+      </div>
+
+      <h2 style="margin-top:54px;">Dann wähle dein drittes Tausend</h2>
+      <p class="sub">Die Grundlesefähigkeit ist die Gabelung, nicht das Ziel. Der Stamm endet mit Absicht bei 2.000 Wörtern: danach teilt sich das Latein wirklich, und welche 1.000 Wörter als Nächstes kommen, hängt davon ab, was du lesen willst. Keiner der beiden Zweige ist bisher gebaut.</p>
+      <div class="fork">
+        <div class="path">
+          <div class="pn">Klassische Dichtung</div>
+          <div class="pl">Vergil · Ovid · Catull · Horaz</div>
+          <p>Die Wortstellung des Verses, das Metrum und der Wortschatz, der nur bei Dichtern auftaucht. Die Prosaleiter des Stamms ist die Voraussetzung, kein Ersatz.</p>
+          <span class="tbd">geplant · noch nicht gebaut</span>
+        </div>
+        <div class="path">
+          <div class="pn">Kirchenlatein</div>
+          <div class="pl">die Vulgata · die Hymnen · die Liturgie</div>
+          <p>Das Kirchenlatein ist ein eigenes Register — andere Syntax, anderer Wortschatz und eine eigene Aussprache; darum ist es ein Zweig und kein Kapitel des Stamms.</p>
+          <span class="tbd">geplant · noch nicht gebaut</span>
+        </div>
+      </div>
+      <p class="sub" style="margin:18px 0 0;">Beide Zweige setzen Core und Pareto voraus. Keiner hat ein Datum; beide sind erfasst und vorgemerkt, nicht versprochen.</p>
+    </div>
+  </section>
+
+  <!-- METHOD -->
+  <section class="wrap method">
+    <div class="frame reveal">
+      <span class="tag">So bleibt es hängen</span>
+      <h2>Karteikarten als integriertes System</h2>
+      <dl>
+        <dt>Fibonacci-SRS</dt><dd>Bewerte jede Karte mit 0–5. Je besser du ein Wort kennst, desto länger dauert es, bis es wiederkommt — Spaced Repetition auf Fibonacci-Intervallen.</dd>
+        <dt>Bosskämpfe</dt><dd>Jedes der 80 Cluster ist durch ein Duell gesperrt, das du nur gewinnst, wenn du dich deinen schwierigsten Wörtern stellst und sie überwindest.</dd>
+        <dt>Abschluss</dt><dd>Besiege ein Cluster, und seine Karten verlassen dein tägliches Deck für immer. Das Deck wird kleiner, während du lernst.</dd>
+        <dt>Sprachausgabe</dt><dd>Eine lateinische neuronale Stimme auf jedem Stichwort und jedem Beispielsatz — <i>la_LA-flashboss_m</i>, für FlashBoss nachtrainiert und unter CC0 veröffentlicht, liest die klassische (restituierte) Aussprache und nimmt die Makra als echte Vokallänge ernst. Es ist Synthese, keine Aufnahme einer sprechenden Person.</dd>
+        <dt>Deine Sprache</dt><dd>Alle 2.000 Karten tragen ihre Übersetzung, ihre Beispielübersetzung <i>und</i> ihre Anmerkungen auf <b>Deutsch, Spanisch, Japanisch, Russisch und vereinfachtem Chinesisch</b> ebenso wie auf Englisch — 30.000 Felder, ohne Lücken. Alle 44 Referenzlektionen tragen dieselben fünf, und die Oberfläche des Spiels ebenso. Latein ist ohne ein Wort Englisch vollständig spielbar.</dd>
+        <dt>Makra</dt><dd>Lange Vokale sind auf 1.320 der 2.000 Stichwörter markiert und in den Sätzen weggelassen — Wörterbuchkonvention dort, wo sie lehrt, Druckkonvention dort, wo du liest.</dd>
+        <dt>Echte Quellen</dt><dd>1.052 Beispielsätze nennen Buch, Kapitel und Abschnitt, aus denen sie stammen; 813 sind unverändert. Alles stammt aus gemeinfreien Ausgaben.</dd>
+        <dt>Lektionen</dt><dd>Vierundvierzig Referenzlektionen aus den beiden Packs erscheinen genau an der Stelle der Abfolge, an der sie freischalten, was du als Nächstes liest.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="wrap faq">
+    <div class="reveal">
+      <h2>Fragen</h2>
+      <p class="sub">Was Leute vor dem Kauf wissen wollen.</p>
+
+      <details>
+        <summary>Wo kaufe ich es?</summary>
+        <p class="a">Beide Packs sind jetzt auf Steam: <a href="https://store.steampowered.com/app/5063240/?utm_source=website-latin-faq" target="_blank" rel="noopener">Latin Core</a> und <a href="https://store.steampowered.com/app/5063250/?utm_source=website-latin-faq" target="_blank" rel="noopener">Latin Pareto</a>. Beide Wortlisten und alle vierundvierzig Lektionen sind hier kostenlos lesbar, falls du den Kurs beurteilen willst, bevor du eines von beiden kaufst.</p>
+      </details>
+
+      <details>
+        <summary>Welche Aussprache ist das?</summary>
+        <p class="a">Die klassische — die restituierte Aussprache von Caesars Rom, in den Lektionen wie in der Stimme: c und g immer hart, v wie englisches w, <i>Caesar</i> gesprochen wie das deutsche <i>Kaiser</i>. Eine kirchliche Stimme ist gesondert geplant, und das eigentliche Kirchenlatein ist ein eigener Zweig statt einer Option in diesem Kurs.</p>
+      </details>
+
+      <details>
+        <summary>Brauche ich noch etwas, um es zu spielen?</summary>
+        <p class="a">Ja. Latin Core ist ein DLC für das FlashBoss-Grundspiel, du brauchst also auch das Grundspiel. Latin Pareto setzt Core voraus — die Packs bauen der Reihe nach aufeinander auf. Alles andere — die Lektionen, die Sprachausgabe, die Bosskämpfe — steckt im Pack. Unter Windows 10 brauchst du außerdem <a href="https://apps.microsoft.com/detail/9n0dx20hk701" target="_blank" rel="noopener">Windows Terminal</a> — ein kostenloser, sicherer Download aus dem Microsoft Store.</p>
+      </details>
+
+      <details>
+        <summary>Ist das Latein echt oder für den Kurs geschrieben?</summary>
+        <p class="a">Beides, in angegebener Reihenfolge. Die Stufen 1 bis 3 sind auf die Grammatik gebaut, die du gelernt hast — kein echter Autor schreibt auf dieser Höhe, und die Karten behaupten auch keinen. Caesar tritt auf Stufe 4 ein, leicht gekürzt. Ab Stufe 8 ist fast jeder Satz der unveränderte Wortlaut eines Autors. Über die beiden Packs hinweg tragen 1.052 von 2.000 Sätzen einen Beleg, und 813 davon sind unbearbeitet.</p>
+      </details>
+
+      <details>
+        <summary>Kann ich es in meiner eigenen Sprache spielen?</summary>
+        <p class="a">Vollständig. Jede einzelne der 2.000 Karten trägt ihre Übersetzung, ihre Beispielübersetzung und ihre Lernhinweise auf <b>Deutsch, Spanisch, Japanisch, Russisch und vereinfachtem Chinesisch</b> ebenso wie auf Englisch, ohne Lücken. Alle vierundvierzig Referenzlektionen tragen dieselben fünf, und die Oberfläche des Spiels spricht alle sechs.</p>
+      </details>
+
+      <details>
+        <summary>Wohin bringt mich der Kurs?</summary>
+        <p class="a">Dahin, unbearbeitete klassische Prosa mit einem Wörterbuch daneben zu lesen. Zweitausend der häufigsten Lemmata, die ganze Grammatik von Indikativ und Konjunktiv, die Partizipien, die Infinitivkonstruktionen, Gerundium und Gerundivum — und unterwegs 17.007 Wörter Latein im Kontext gelesen. Nicht dahin, Latein zu sprechen, und nicht dahin, es zu schreiben: Der Kurs sagt ehrlich, dass er eine Fähigkeit lehrt.</p>
+      </details>
+
+      <details>
+        <summary>Warum gibt es kein Pareto 2?</summary>
+        <p class="a">Weil Latein sich stattdessen gabelt. Core plus Pareto ist ein vollständiger Stamm über 2.000 Wörter, auf Stufe 10 grammatisch abgeschlossen. Das dritte Tausend hängt davon ab, wohin du willst — klassische Dichtung oder Kirchenlatein —, deshalb ist es als zwei Zweige geplant und nicht als eine weitere Treppe. Keiner von beiden ist bisher gebaut.</p>
+      </details>
+
+      <details>
+        <summary>Kann ich die Wörter vor dem Kauf sehen?</summary>
+        <p class="a">Alle. Die kompletten Wortlisten zu Core und Pareto stehen auf der <a href="wordlists.de.html?lang=Latin&amp;set=Core">Wortlisten-Seite</a>, und alle vierundvierzig Referenzlektionen auf der <a href="lessons.de.html?lang=Latin">Lektionen-Seite</a> — kostenlos, druckbar, ohne Konto.</p>
+      </details>
+
+      <details>
+        <summary>Gibt es eine Demo?</summary>
+        <p class="a">Es gibt einen spielbaren Bosskampf im Browser, falls du wissen willst, wie sich der Kampf anfühlt, bevor du dich festlegst: <a href="https://flashboss-demo.pages.dev/">Demo testen</a>.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final wrap reveal">
+    <h2>Fang an mit <i>Roma est.</i></h2>
+    <p>Zwei Wörter auf der ersten Karte des ersten Clusters. Zweitausend Wörter später: Cicero.</p>
+    <p class="dates"><a href="https://store.steampowered.com/app/5063240/?utm_source=website-latin" target="_blank" rel="noopener">Latin Core</a> · <a href="https://store.steampowered.com/app/5063250/?utm_source=website-latin" target="_blank" rel="noopener">Latin Pareto</a> — beide auf Steam</p>
+    <p class="also">Oder lies zuerst die <a href="wordlists.de.html?lang=Latin&amp;set=Core">Wortliste</a> und die <a href="lessons.de.html?lang=Latin">Lektionen</a> — sie sind kostenlos, und sie sind der ganze Kurs.</p>
+    <p class="bundleline">Alles hier in einem Kauf: <a href="https://store.steampowered.com/bundle/87746/?utm_source=website-bundle" target="_blank" rel="noopener"><b>FlashBoss Latein — Der komplette Kurs</b></a>. Du besitzt schon einen Teil davon? Steam berechnet dir nur den Rest.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p class="epi">&ldquo;Multum cum in omnibus rebus tum in re militari potest fortuna.&rdquo;<span class="tr">Der Zufall vermag viel in allen Dingen, am meisten aber im Krieg.</span><span class="epi-cite">Latin Core · Stufe 4 · Caes. BG 6.30.2</span></p>
+  <span class="footer-links">
+    <a href="home.de.html">Start</a>
+    <span class="div">·</span>
+    <a href="packs.de.html">Packs</a>
+    <span class="div">·</span>
+    <a href="manual/">Anleitung (Beta)</a>
+    <span class="div">·</span>
+    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-latin" target="_blank" rel="noopener">steam</a>
+  </span>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+document.querySelectorAll('.card').forEach(function(c){c.addEventListener('click',function(){c.classList.toggle('flipped');});});
+(function(){
+  var root=document.documentElement,ticking=false;
+  function update(){var max=document.body.scrollHeight-window.innerHeight;var p=max>0?Math.min(1,Math.max(0,window.scrollY/max)):0;root.style.setProperty('--mood',(p*p*(3-2*p)).toFixed(3));ticking=false;}
+  window.addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(update);ticking=true;}},{passive:true});update();
+})();
+</script>
+<script>
+// language dropdown: button toggles the menu; click-away / Esc closes it
+(function(){
+  var sw=document.querySelector('.lang-switch'); if(!sw) return;
+  var btn=sw.querySelector('.lang-toggle'), menu=sw.querySelector('.lang-menu');
+  function close(){ menu.hidden=true; btn.setAttribute('aria-expanded','false'); }
+  btn.addEventListener('click', function(e){ e.stopPropagation(); var willOpen=menu.hidden; menu.hidden=!willOpen; btn.setAttribute('aria-expanded', String(willOpen)); });
+  document.addEventListener('click', function(e){ if(!sw.contains(e.target)) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
+</script>
+</body>
+</html>

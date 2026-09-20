@@ -223,4 +223,8 @@ STRINGS = {
  # ---- the fight GIF's alt: the German capture, so it says what is on screen ----
  "A Latin Roots boss fight in the real game: the boss asks which word means a glass tank for fish, the answer aquarium lands, and the cluster is conquered \u2014 its eight words leaving rotation.":
    "Ein Latin-Roots-Bosskampf im echten Spiel: Die Oberfl\u00e4che ist deutsch, die Karte englisch. Der Boss fragt, welches Wort ein Glasbecken f\u00fcr Fische bezeichnet, die Antwort aquarium sitzt, und das Cluster ist bezwungen \u2014 seine acht W\u00f6rter verlassen den Umlauf.",
+
+ # the two <li>s whose leading article no key covered: dropping it matches the
+ # other bullets, which carry no article in any locale.
+ "<li>a <b>": "<li><b>",
 }

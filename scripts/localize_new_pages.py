@@ -54,6 +54,11 @@ THOUSANDS = {"en": ",", "de": ".", "es": ".", "ja": ",", "zh": ",", "ru": ""}
 
 # The language button's accessible name, lifted from the home page of each
 # locale so the new pages say what the established ones already say.
+# The <html lang> attribute is not always the locale code. The site writes
+# zh-Hans, the script subtag, on 18 pages against 4 stragglers that write plain
+# zh; the FILE NAME and the hreflang stay "zh" either way.
+HTML_LANG = {"en": "en", "de": "de", "es": "es", "ja": "ja", "zh": "zh-Hans", "ru": "ru"}
+
 SWITCH_LABEL = {"en": "Choose language", "de": "Sprache wählen", "es": "Elegir idioma",
                 "ja": "言語を選択", "zh": "选择语言", "ru": "Выбрать язык"}
 
@@ -98,6 +103,26 @@ def numerals(s, loc):
     return "".join(out)
 
 
+def links(s, loc):
+    """Point internal links at the locale's own sibling where one exists.
+
+    Caught by the Swahili translator, 2026-09-20: swahili.de.html was sending a
+    German reader to lessons.html and wordlists.html in English, because an href
+    is an attribute and the prose pass never touches attributes. The
+    fleet-translated pages have always pointed at their own locale, so this is
+    the new pages being out of step, not a new policy.
+
+    Query strings and fragments are carried through untouched — the word-list
+    and lesson pages are driven by ?lang= and ?set=. A page with no sibling on
+    disk is left alone, so this is safe to run before every sibling exists.
+    """
+    def swap(m):
+        base, rest = m.group(1), m.group(2)
+        cand = f"{base}.{loc}.html"
+        return f'href="{cand}{rest}"' if pathlib.Path(cand).exists() else m.group(0)
+    return re.sub(r'href="([A-Za-z0-9_-]+)\.html([^"]*)"', swap, s)
+
+
 BETA_CSS = (".beta-note{background:#1b1508; border-bottom:1px solid #6b5a2a; color:#e8d9b0; "
             "font:500 12.5px/1.55 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; "
             "text-align:center; padding:9px 16px; margin:0;}\n"
@@ -127,11 +152,14 @@ def build(base, loc, strings, title, description):
     # ---- assets: the locale's own gif/poster where one has been shot ----
     s = assets(s, loc)
 
+    # ---- internal links: this locale's sibling where one exists ----
+    s = links(s, loc)
+
     # ---- numerals: the page's own numbers, this locale's separator ----
     s = numerals(s, loc)
 
     # ---- head: lang, title, description, canonical, hreflang ----
-    s = s.replace('<html lang="en">', f'<html lang="{loc}">', 1)
+    s = s.replace('<html lang="en">', f'<html lang="{HTML_LANG[loc]}">', 1)
     s = re.sub(r"<title>.*?</title>", f"<title>{title}</title>", s, count=1, flags=re.S)
     s = re.sub(r'(<meta name="description" content=")[^"]*(">)',
                lambda m: m.group(1) + description + m.group(2), s, count=1)
