@@ -153,25 +153,25 @@ STRINGS = {
  ">Tier 9<": ">Stufe 9<",
  ">Tier 10<": ">Stufe 10<",
  "The Pointing Words · The Joints · The Links · The Prime Movers · Senate &amp; Sword · Many &amp; Mighty · The Lay of Things · The Marshalling":
-   "Die Zeigewörter · Die Gelenke · Die Verbindungen · Die ersten Beweger · Senat &amp; Schwert · Viele &amp; Mächtige · Die Lage der Dinge · Die Aufstellung",
+   "Die Zeigewörter · Die Gelenke · Die Bindeglieder · Die Triebkräfte · Senat &amp; Schwert · Viele &amp; Mächtige · Die Lage der Dinge · Die Aufstellung",
  "The Daily Round · Arms &amp; the Man · The Forum · Flesh &amp; Breath · Tally &amp; Measure · Worth &amp; Honor · Time &amp; Tide · The Rally":
-   "Der Alltag · Waffen &amp; der Mann · Das Forum · Fleisch &amp; Atem · Zählen &amp; Messen · Wert &amp; Ehre · Zeit &amp; Gezeiten · Die Sammlung",
+   "Der Tageslauf · Waffen &amp; Mann · Das Forum · Fleisch &amp; Atem · Zählung &amp; Maß · Wert &amp; Ehre · Zeit &amp; Gezeiten · Die Sammlung",
  "To &amp; Fro · The Long Road · Flesh &amp; Frame · The Fathers · House &amp; Hearth · Hopes &amp; Fears · The Turning Year · The Waystation":
-   "Hin &amp; Her · Der lange Weg · Fleisch &amp; Gestalt · Die Väter · Haus &amp; Herd · Hoffen &amp; Fürchten · Das kreisende Jahr · Die Raststation",
+   "Hin &amp; Her · Die lange Straße · Fleisch &amp; Gestalt · Die Väter · Haus &amp; Herd · Hoffnungen &amp; Ängste · Das kreisende Jahr · Die Raststation",
  "Moods &amp; Moments · The Turning Hand · The Living Frame · The Curia · By Land &amp; Sea · More &amp; Most · The Winter Camp · The Muster Roll":
-   "Stimmungen &amp; Augenblicke · Die wendende Hand · Der lebende Leib · Die Kurie · Zu Land &amp; zur See · Mehr &amp; am meisten · Das Winterlager · Die Musterrolle",
+   "Stimmungen &amp; Momente · Die wendende Hand · Der lebende Leib · Die Kurie · Zu Land &amp; zur See · Mehr &amp; Am meisten · Das Winterlager · Die Stammrolle",
  "What Was Done · The Perfect Stems · The Pitched Battle · The Work in Hand · Life &amp; Limb · Praise &amp; Blame · The Appointed Hour · The Full Account":
-   "Was getan wurde · Die Perfektstämme · Die Feldschlacht · Das Werk in Arbeit · Leib &amp; Leben · Lob &amp; Tadel · Die bestimmte Stunde · Die volle Rechnung",
+   "Was getan ward · Die Perfektstämme · Die Feldschlacht · Das Werk zur Hand · Leib &amp; Leben · Lob &amp; Tadel · Die bestimmte Stunde · Die volle Rechnung",
  "The Life of the Mind · Hours &amp; Days · A Soldier&#x27;s Life · The Full Tally · The Family Estate · The Mortal Frame · Treaties &amp; Powers · The Loose Ends":
-   "Das Leben des Geistes · Stunden &amp; Tage · Ein Soldatenleben · Die volle Zählung · Das Familiengut · Der sterbliche Leib · Verträge &amp; Mächte · Die losen Enden",
+   "Das Leben des Geistes · Stunden &amp; Tage · Ein Soldatenleben · Die ganze Zählung · Das Familiengut · Der sterbliche Leib · Verträge &amp; Mächte · Die losen Enden",
  "Comings &amp; Partings · The Ready Hand · The Head Count · Wounds &amp; Toil · Kin &amp; Neighbor · Rank &amp; Office · The Sea Road · The Middle Way":
-   "Kommen &amp; Scheiden · Die bereite Hand · Die Kopfzahl · Wunden &amp; Mühsal · Sippe &amp; Nachbar · Rang &amp; Amt · Der Seeweg · Der mittlere Weg",
+   "Kommen &amp; Scheiden · Die bereite Hand · Die Kopfzahl · Wunden &amp; Mühsal · Sippe &amp; Nachbar · Rang &amp; Amt · Der Seeweg · Der Mittelweg",
  "True &amp; False · The Bidding · Sound &amp; Sick · Weight &amp; Worth · The Present Hour · The Tide of Battle · The Household Store · The Last Ditch":
-   "Wahr &amp; Falsch · Das Geheiß · Gesund &amp; Krank · Gewicht &amp; Wert · Die gegenwärtige Stunde · Das Kriegsglück · Der Hausvorrat · Der letzte Graben",
+   "Wahr &amp; Falsch · Das Gebot · Gesund &amp; Krank · Gewicht &amp; Wert · Die gegenwärtige Stunde · Die Wende der Schlacht · Das Hausvermögen · Der letzte Graben",
  "Hopes &amp; Vows · By the Numbers · Right &amp; Wrong · The Broken Line · Dust &amp; Ashes · The Sacred Rites · Fraud &amp; Force · What Remains":
-   "Hoffnungen &amp; Gelübde · Nach Zahlen · Recht &amp; Unrecht · Die gebrochene Linie · Staub &amp; Asche · Die heiligen Riten · List &amp; Gewalt · Was bleibt",
+   "Hoffnungen &amp; Gelübde · Nach den Zahlen · Recht &amp; Unrecht · Die gebrochene Linie · Staub &amp; Asche · Die heiligen Riten · Trug &amp; Gewalt · Was bleibt",
  "The Open Book · The Final Battle · Blood &amp; Bone · Honor &amp; Shame · Envoys &amp; Treaties · Hearth &amp; Heir · The Last Measure · The Closing Page":
-   "Das offene Buch · Die letzte Schlacht · Blut &amp; Knochen · Ehre &amp; Schande · Gesandte &amp; Verträge · Herd &amp; Erbe · Das letzte Maß · Die schließende Seite",
+   "Das offene Buch · Die letzte Schlacht · Blut &amp; Gebein · Ehre &amp; Schande · Gesandte &amp; Verträge · Herd &amp; Erbe · Das letzte Maß · Die letzte Seite",
  ">8 clusters · 200 cards<": ">8 Cluster · 200 Karten<",
  "<span>Core: 5 tiers · 40 clusters · <b>1,000 cards</b></span><span>26 reference lessons</span><span>the reading foundation</span>":
    "<span>Core: 5 Stufen · 40 Cluster · <b>1.000 Karten</b></span><span>26 Referenzlektionen</span><span>das Lesefundament</span>",
