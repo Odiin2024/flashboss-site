@@ -2,8 +2,26 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- In Development. Rewritten 2026-09-19 from a placeholder card into the real list.
+     EVERY pack named here was counted from knight/flashcard_sets on 2026-09-19 —
+     nothing is listed that does not exist as cards in the tree, and nothing carries
+     a date, because none of it has one. When a pack ships it moves to packs.html and
+     leaves this page; that is the only maintenance this page needs.
+     Polish and Portuguese are named without counts on purpose: their word lists are
+     locked but no cards are authored yet, so the folders are empty.
+     The locale siblings (.de .es .ja .zh .ru) still hold the old placeholder card
+     and need this content translated. -->
+<!-- SELF-TRANSLATED, ru. The prose on this page was written by Claude
+     (Opus), not by the translation fleet, on Odiin's word of 2026-09-20:
+     good enough for now, and flagged for a translation/adversarial pass
+     another day. The page carries the beta-translation notice so a reader
+     knows and so that pass can find it.
+     Canon held here: the six pack names stay English, FlashBoss stays
+     Latin, and every number is the English page's number in this locale's
+     separator — nothing was recounted. -->
 <title>В разработке — FlashBoss</title>
+<meta name="description" content="Что FlashBoss строит дальше: Swahili Pareto 1 и 2, русский, индонезийский, древнегреческий и новогреческий, The Guide Part II и две ветви латыни. Посчитано по самим наборам, без дат выхода.">
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/in-development.ru.html">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/in-development.html">
@@ -15,44 +33,102 @@
 <link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/in-development.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
 <style>
-:root{ --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --accent:#e0a93f; --blue:#7ec8ff; --line:#3a3120; --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+:root{
+  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
+  --accent:#e0a93f; --blue:#7ec8ff; --green:#62d38a; --line:#3a3120; --rule:#2a2417;
+}
 *{box-sizing:border-box; margin:0; padding:0;}
-body{ font-family:var(--mono); background:var(--bg); color:var(--ink); min-height:100vh; min-height:100dvh; display:flex; align-items:center; justify-content:center; padding:24px; line-height:1.6; -webkit-font-smoothing:antialiased; }
-.card{ width:100%; max-width:520px; border:1px solid var(--line); background:var(--panel); padding:36px 30px 30px; position:relative; box-shadow:0 0 40px rgba(0,0,0,.5); }
-.tag{ position:absolute; top:-10px; left:20px; background:var(--bg); padding:0 8px; font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--dim); }
-h1{ font-size:clamp(26px,7vw,40px); font-weight:800; letter-spacing:.04em; color:var(--accent); margin:2px 0 22px; }
-.cursor{ display:inline-block; width:.5em; height:.92em; background:var(--accent); vertical-align:-.06em; margin-left:.1em; animation:blink 1.05s steps(1) infinite; }
-@keyframes blink{ 50%{opacity:0;} }
-.rows{ font-size:13px; margin:0 0 16px; }
-.rows>div{ display:flex; gap:12px; padding:5px 0; border-bottom:1px dotted var(--line); }
-.rows .k{ color:var(--dim); min-width:92px; text-transform:lowercase; }
-.rows .v{ color:var(--ink); }
-.bar{ height:12px; border:1px solid var(--line); background:#0c0a06; margin:4px 0 22px; }
-.bar i{ display:block; height:100%; width:11%; background:var(--accent); opacity:.65; }
-.joke{ font-size:13.5px; color:var(--ink); opacity:.92; margin:0 0 26px; }
-.back{ font-size:13px; color:var(--blue); text-decoration:none; }
-.back:hover{ text-decoration:underline; }
-.lang-switch{ position:fixed; top:14px; right:16px; z-index:20; }
-.lang-toggle{ display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--ink); background:var(--panel); border:1px solid var(--line); padding:5px 8px; line-height:1; cursor:pointer; }
-.lang-toggle:hover, .lang-toggle[aria-expanded="true"]{ background:var(--ink); color:var(--bg); }
-.lang-caret{ font-size:8px; line-height:1; transition:transform .15s ease; }
-.lang-toggle[aria-expanded="true"] .lang-caret{ transform:rotate(180deg); }
-.lang-menu{ position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--panel); border:1px solid var(--line); min-width:120px; }
-.lang-menu[hidden]{ display:none; }
-.lang-menu li{ margin:0; }
-.lang-menu a{ display:block; font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--ink); text-decoration:none; padding:7px 10px; white-space:nowrap; }
-.lang-menu a:hover{ background:var(--ink); color:var(--bg); }
-.lang-menu a[aria-current="true"]{ color:var(--accent); }
-.lang-menu a[aria-current="true"]:hover{ color:var(--bg); }
+html{scroll-behavior:smooth;}
+body{font-family:var(--mono); background:linear-gradient(180deg, var(--bg) 0%, #171421 100%); background-color:var(--bg); color:var(--ink); line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden;}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.045) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.wrap{max-width:900px; margin:0 auto; padding:0 24px;}
+a{color:var(--blue);}
+
+nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line); background:var(--bg); position:relative; z-index:5;}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--dim); margin-right:auto;}
+nav .brand a{color:var(--dim); text-decoration:none;}
+nav .brand a:hover{color:var(--ink);}
+nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--ink);}
+nav .brand .here{font-weight:800; color:var(--ink);}
+nav .brand .pipe{color:var(--dim); margin:0 11px;}
+nav .links a{color:var(--ink); text-decoration:none; opacity:.7; margin-left:22px;}
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+@media(max-width:640px){ nav .links a:not(.keep){display:none;} nav .brand .pipe, nav .brand .here{display:none;} }
+.lang-switch{flex:none; margin-left:22px; position:relative;}
+.lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--ink); background:var(--bg); border:1px solid var(--dim); padding:5px 8px; line-height:1; cursor:pointer;}
+.lang-toggle:hover, .lang-toggle[aria-expanded="true"]{background:var(--ink); color:var(--bg);}
+.lang-caret{font-size:8px; line-height:1; transition:transform .15s ease;}
+.lang-toggle[aria-expanded="true"] .lang-caret{transform:rotate(180deg);}
+.lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--bg); border:1px solid var(--dim); min-width:120px; z-index:50;}
+.lang-menu[hidden]{display:none;}
+.lang-menu a{display:block; font-size:12px; color:var(--ink); text-decoration:none; padding:7px 10px; white-space:nowrap;}
+.lang-menu a[aria-current="true"]{color:var(--accent);}
+
+.reveal{opacity:0; transform:translateY(12px); transition:opacity .6s ease, transform .6s ease;}
+.reveal.in{opacity:1; transform:none;}
+
+header.top{padding:64px 0 10px;}
+header.top .kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--dim); margin-bottom:20px;}
+header.top h1{font-size:clamp(34px,8vw,64px); font-weight:800; letter-spacing:-.015em; line-height:1;}
+.cursor{display:inline-block; width:.5em; height:.9em; background:color-mix(in oklab, var(--accent), transparent 25%); vertical-align:-.06em; margin-left:.1em; animation:blink 1.05s steps(1) infinite;}
+@keyframes blink{50%{opacity:0;}}
+header.top .lede{font-size:clamp(15px,2.2vw,17px); color:var(--dim); max-width:62ch; margin-top:20px;}
+header.top .lede b{color:var(--ink); font-weight:700;}
+
+section{padding:40px 0 10px;}
+h2{font-size:12px; letter-spacing:.3em; text-transform:uppercase; color:var(--accent); font-weight:700; margin:0 0 6px;}
+.secnote{font-size:13px; color:var(--dim); margin:0 0 20px; max-width:66ch;}
+
+.item{border:1px solid var(--line); border-left:3px solid var(--line); padding:18px 20px 16px; margin-bottom:12px; background:rgba(255,255,255,.012);}
+.item.built{border-left-color:var(--green);}
+.item.writing{border-left-color:var(--accent);}  /* unused today: the state for a pack being written now */
+.item.planned{border-left-color:var(--faint); border-left-style:dashed;}
+.item .h{display:flex; align-items:baseline; gap:12px; flex-wrap:wrap;}
+.item .n{font-size:17px; font-weight:800;}
+.item .state{font-size:10px; letter-spacing:.18em; text-transform:uppercase; border:1px solid currentColor; padding:3px 8px; white-space:nowrap;}
+.item.built .state{color:var(--green);}
+.item.writing .state{color:var(--accent);}
+.item.planned .state{color:var(--faint);}
+.item .facts{font-size:12px; color:var(--dim); margin-top:6px; letter-spacing:.02em;}
+.item p{font-size:14px; color:var(--dim); margin-top:10px; max-width:70ch;}
+.item p b{color:var(--ink); font-weight:700;}
+
+.legend{border:1px solid var(--line); padding:16px 18px; margin:0 0 26px; font-size:13px; color:var(--dim); background:rgba(255,255,255,.012);}
+.legend div{padding:4px 0;}
+.legend b{color:var(--ink);}
+.legend .g{color:var(--green); font-weight:800;}
+.legend .a{color:var(--accent); font-weight:800;}
+.legend .f{color:var(--faint); font-weight:800;}
+
+.note{font-size:13px; color:var(--dim); border-top:1px solid var(--rule); padding-top:14px; margin-top:26px; max-width:70ch;}
+.note b{color:var(--ink);}
+.joke{font-size:13.5px; color:var(--dim); font-style:italic; margin-top:10px;}
+
+footer{border-top:1px solid var(--line); padding:28px 24px; margin-top:50px; font-size:12px; color:var(--dim); text-align:center; letter-spacing:.04em;}
+footer a{color:inherit; text-decoration:none; opacity:.75;}
+footer a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+footer .div{opacity:.4; margin:0 8px;}
 .beta-note{background:#1b1508; border-bottom:1px solid #6b5a2a; color:#e8d9b0; font:500 12.5px/1.55 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; text-align:center; padding:9px 16px; margin:0;}
 .beta-note b{color:#e0a93f; font-weight:700; letter-spacing:.09em;}
 .beta-note a{color:#e0a93f; text-decoration:underline; text-underline-offset:2px;}
 </style>
+<script src="lang-redirect.js"></script>
 </head>
 <body>
-<div class="beta-note" role="status"><b>БЕТА-ПЕРЕВОД</b> — русская версия сайта черновая и ещё не прошла редактуру. Нашли ошибку в тексте? <a href="report.html">Сообщите нам</a> · <a href="in-development.html">Read in English</a></div>
+<div class="beta-note" role="status"><b>БЕТА-ПЕРЕВОД</b> — русская версия этой страницы черновая и ещё не прошла редактуру. Нашли ошибку в тексте? <a href="report.html">Сообщите нам</a> · <a href="in-development.html">Read in English</a></div>
+<div class="overlay"></div>
+
+<nav>
+  <span class="brand"><a class="logo" href="index.ru.html">FLASHBOSS</a><span class="pipe">|</span><a href="packs.ru.html">наборы</a><span class="pipe">·</span><span class="here">в разработке</span></span>
+  <span class="links">
+    <a class="keep" href="packs.ru.html">уже вышло</a>
+    <a href="immersion.ru.html">английский путь</a>
+    <a href="voices.ru.html">голоса</a>
+  </span>
   <div class="lang-switch">
     <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Выбрать язык">RU<span class="lang-caret">&#9662;</span></button>
     <ul class="lang-menu" hidden>
@@ -61,21 +137,115 @@ h1{ font-size:clamp(26px,7vw,40px); font-weight:800; letter-spacing:.04em; color
       <li><a href="in-development.es.html">Español</a></li>
       <li><a href="in-development.ja.html">日本語</a></li>
       <li><a href="in-development.zh.html">简体中文</a></li>
-            <li><a href="in-development.ru.html" aria-current="true">Русский</a></li>
-        </ul>
+      <li><a href="in-development.ru.html" aria-current="true">Русский</a></li>
+    </ul>
   </div>
-  <main class="card">
-    <span class="tag">FlashBoss · admin</span>
-    <h1>В разработке<span class="cursor"></span></h1>
-    <div class="rows">
-      <div><span class="k">страница</span><span class="v">in-development.html</span></div>
-      <div><span class="k">статус</span><span class="v">в разработке</span></div>
-      <div><span class="k">ETA</span><span class="v">скоро™</span></div>
+</nav>
+
+<main>
+  <header class="top wrap">
+    <p class="kicker reveal">Ещё не вышло</p>
+    <h1 class="reveal">В разработке<span class="cursor"></span></h1>
+    <p class="lede reveal">Что строится сейчас и насколько далеко продвинулось. <b>Ни у чего на этой странице нет даты выхода</b>, потому что ни у чего из этого её и нет — дата появляется, когда набор готов, и не раньше. Всё перечисленное здесь существует сегодня как настоящие карточки; числа взяты из самих наборов, а не из плана.</p>
+  </header>
+
+  <section class="wrap">
+    <div class="legend reveal">
+      <div><span class="g">▍</span> <b>Карточки написаны</b> — набор создан и посчитан. Остаются проверка, озвучка и страница в магазине.</div>
+      <div><span class="f">▍</span> <b>Запланировано</b> — решено и расписано, но не начато. Карточек пока нет.</div>
     </div>
-    <div class="bar"><i></i></div>
-    <p class="joke">Да — страница, которая перечисляет, что в разработке, сама находится в разработке.</p>
-    <a class="back" href="packs.ru.html">← назад к наборам</a>
-  </main>
+  </section>
+
+  <section class="wrap">
+    <h2>Завершение курса, который уже в продаже</h2>
+    <p class="secnote">Они продолжают наборы, которые можно купить уже сегодня, и считают предыдущий набор пройденным.</p>
+
+    <div class="item built reveal">
+      <div class="h"><span class="n">Swahili Pareto 1</span><span class="state">Карточки написаны</span></div>
+      <div class="facts">1000 слов · 40 кластеров · уровни 6–10</div>
+      <p>Рабочая лексика: деньги и банк, фирма и договор, министерство, выборы, суд, полиция, пресса, больница. Продолжает <a href="swahili.ru.html">Swahili Core</a>, который уже вышел.</p>
+    </div>
+
+    <div class="item built reveal">
+      <div class="h"><span class="n">Swahili Pareto 2</span><span class="state">Карточки написаны</span></div>
+      <div class="facts">1000 слов · 40 кластеров · уровни 11–15</div>
+      <p>Последняя тысяча курса на 3000 слов и то место, где раскрывается словообразование суахили — один корень становится шестью глаголами через пассив, статив, взаимную, возвратную, каузативную и аппликативную формы.</p>
+    </div>
+
+    <div class="item built reveal">
+      <div class="h"><span class="n">The Guide Part II</span><span class="state">Карточки написаны</span></div>
+      <div class="facts">925 карточек · 50 кластеров · три уровня · английский и немецкий</div>
+      <p>Вторая половина памяти мастера игры. Если <a href="the-guide.html">The Guide</a> держит правила, по которым вы судите, то Part II держит то, чем вы населяете мир: список заклинаний, перечень существ и таблицу сокровищ. Требуется The Guide.</p>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2>Новые языки</h2>
+    <p class="secnote">Каждый из них — полный курс привычной формы: сначала Core, потом Pareto 1, по пять уровней в каждом.</p>
+
+    <div class="item built reveal">
+      <div class="h"><span class="n">Русский</span><span class="state">Карточки написаны</span></div>
+      <div class="facts">Core и Pareto 1 · по 1000 слов · по 40 кластеров</div>
+      <p>Две тысячи слов написаны и посчитаны.</p>
+    </div>
+
+    <div class="item built reveal">
+      <div class="h"><span class="n">Индонезийский</span><span class="state">Карточки написаны</span></div>
+      <div class="facts">Core и Pareto 1 · по 1000 слов · по 40 кластеров</div>
+      <p>Bahasa Indonesia — язык без времён, без родов и без форм множественного числа, которые надо заучивать, и с порядком слов, который у вас уже есть.</p>
+    </div>
+
+    <div class="item built reveal">
+      <div class="h"><span class="n">Новогреческий</span><span class="state">Карточки написаны</span></div>
+      <div class="facts">Core и Pareto 1 · по 1000 слов · по 40 кластеров</div>
+      <p>Ελληνικά, живой язык, с лестницей алфавита в первых уроках. Не путать с древнегреческим ниже и с <a href="greek-roots.ru.html">Greek Roots</a>, который учит тому греческому, что уже сидит внутри английского.</p>
+    </div>
+
+    <div class="item built reveal">
+      <div class="h"><span class="n">Древнегреческий</span><span class="state">Карточки написаны</span></div>
+      <div class="facts">Core и Pareto 1 · по 1000 слов · по 40 кластеров</div>
+      <p>Курс чтения, устроенный так же, как <a href="latin.html">латынь</a>: предложения сначала собраны под уровень, а в конце идут такими, какими их написали авторы.</p>
+    </div>
+
+    <div class="item planned reveal">
+      <div class="h"><span class="n">Польский и португальский</span><span class="state">Запланировано</span></div>
+      <div class="facts">Списки слов закреплены · карточки ещё не написаны</div>
+      <p>Частотная основа выбрана и закреплена, а это та половина работы, которая решает, чему учит курс. Сами карточки не написаны.</p>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2>Дальше латинского ствола</h2>
+    <p class="secnote">Latin Core и Latin Pareto — это весь курс чтения на 2000 слов, грамматически полный к уровню 10. Третьей лестницы намеренно нет.</p>
+
+    <div class="item planned reveal">
+      <div class="h"><span class="n">Латынь — две ветви</span><span class="state">Запланировано</span></div>
+      <div class="facts">Классическая поэзия · или церковная латынь</div>
+      <p>За 2000 слов латынь действительно расходится, и какая тысяча будет следующей, зависит от того, что вы хотите читать: <b>классическая поэзия</b> — Вергилий, Овидий, Катулл, Гораций — или <b>церковная латынь</b>, Вульгата, гимны и литургия. Обе ветви расписаны и зарезервированы. Ни одна не построена, и ни одна не требует другой.</p>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2>Голоса</h2>
+    <div class="item built reveal">
+      <div class="h"><span class="n">Castellano — Испания, мужской</span><span class="state">Карточки написаны</span></div>
+      <div class="facts">Заменяет прилагаемый латиноамериканский голос в каждом наборе испанского</div>
+      <p>Голосовой набор, а не курс: он заменяет голос в карточках, уроках и боях с боссами и переключается обратно когда угодно. Послушайте его рядом с голосом, который он заменяет, на <a href="voices.ru.html">странице голосов</a>.</p>
+    </div>
+
+    <p class="note">Всё перечисленное выше посчитано по самим наборам <b>19 сентября 2026 года</b>. Набор покидает эту страницу в тот день, когда поступает в продажу, и вместо этого появляется в <a href="packs.ru.html">списке наборов</a> — так что если что-то отсюда пропало, ищите его там.</p>
+    <p class="joke">И да — страница, которая перечисляет то, что в разработке, сама когда-то была в разработке.</p>
+  </section>
+</main>
+
+<footer>
+  <a href="home.ru.html">главная</a><span class="div">·</span>
+  <a href="packs.ru.html">наборы</a><span class="div">·</span>
+  <a href="immersion.ru.html">английский путь</a><span class="div">·</span>
+  <a href="voices.ru.html">голоса</a><span class="div">·</span>
+  <a href="resources.ru.html">материалы</a>
+</footer>
+
 <script>
 (function(){
   var sw=document.querySelector('.lang-switch'); if(!sw) return;
@@ -84,6 +254,12 @@ h1{ font-size:clamp(26px,7vw,40px); font-weight:800; letter-spacing:.04em; color
   btn.addEventListener('click', function(e){ e.stopPropagation(); var o=menu.hidden; menu.hidden=!o; btn.setAttribute('aria-expanded', String(o)); });
   document.addEventListener('click', function(e){ if(!sw.contains(e.target)) close(); });
   document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e);});
 })();
 </script>
 </body>

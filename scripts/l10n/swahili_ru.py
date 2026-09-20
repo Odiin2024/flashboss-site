@@ -50,7 +50,7 @@ STRINGS = {
  "Listen · read · repeat · rate · fight":
    "слушать · читать · повторять · оценивать · сражаться",
  "Swahili does not conjugate so much as <b>assemble</b>. A verb is built from slots in a fixed order, and every noun belongs to a class that the rest of the sentence agrees with. Learn those two machines and the vocabulary stops being a list. <b>1,000 words, 40 clusters, 20 reference lessons</b> — with the class named on every noun.":
-   "Суахили не столько спрягает, сколько <b>собирает</b>. Глагол строится из ячеек в неизменном порядке, а каждое существительное принадлежит к классу, с которым согласуется весь остальной состав предложения. Выучите эти две машины — и лексика перестанет быть списком. <b>1000 слов, 40 кластеров, 20 справочных уроков</b> — и класс назван на каждом существительном.",
+   "Суахили не столько спрягает, сколько <b>собирает</b>. Глагол строится из ячеек в неизменном порядке, а каждое существительное принадлежит к классу, с которым согласуется всё остальное в предложении. Выучите эти две машины — и лексика перестанет быть списком. <b>1000 слов, 40 кластеров, 20 справочных уроков</b> — и класс назван на каждом существительном.",
 
  # ---- the argument ----
  "Why Swahili is learnable": "Почему суахили поддаётся изучению",
@@ -81,7 +81,7 @@ STRINGS = {
  '<span class="m r">endesha<i>drive, make go</i></span>':
    '<span class="m r">endesha<i>вести, заставлять ехать</i></span>',
  "Three pieces, read left to right: <b>he · now · drives</b>. The root itself is built — <i>endesha</i> is the causative of <i>kwenda</i>, to go, so it means to make something go.":
-   "Три части, читаются слева направо: <b>он · сейчас · ведёт</b>. Сам корень тоже собран — <i>endesha</i> это каузатив от <i>kwenda</i>, «идти», а значит, он означает «заставить что-то идти».",
+   "Три части, читаются слева направо: <b>он · сейчас · ведёт</b>. Сам корень тоже собран — <i>endesha</i> это каузатив от <i>kwenda</i>, «идти», то есть «заставить что-то идти».",
 
  "<b>Tulisafiri</b> kwa treni kutoka jijini hadi kijijini kwetu wakati wa likizo. — We travelled by train from the city to our village during the holiday.":
    "<b>Tulisafiri</b> kwa treni kutoka jijini hadi kijijini kwetu wakati wa likizo. — В каникулы мы ехали на поезде из города в нашу деревню.",
@@ -117,9 +117,9 @@ STRINGS = {
  '<div class="k">ki/vi</div><div class="v">objects, tools, languages</div>':
    '<div class="k">ki/vi</div><div class="v">предметы, орудия, языки</div>',
  '<div class="k">n/n</div><div class="v">loans, animals, many abstracts</div>':
-   '<div class="k">n/n</div><div class="v">заимствования, животные, многое отвлечённое</div>',
+   '<div class="k">n/n</div><div class="v">заимствования, животные, многие абстракции</div>',
  '<div class="k">u/n</div><div class="v">abstract nouns, mass nouns</div>':
-   '<div class="k">u/n</div><div class="v">отвлечённые и вещественные имена</div>',
+   '<div class="k">u/n</div><div class="v">абстрактные и вещественные имена</div>',
  '<div class="k">u/ma</div><div class="v">long thin things</div>':
    '<div class="k">u/ma</div><div class="v">длинные тонкие предметы</div>',
  '<div class="k">u/u</div><div class="v">a smaller set, no plural shift</div>':
@@ -132,7 +132,7 @@ STRINGS = {
    "Это те десять классов, которые набор действительно использует, взятые с его карточек, а не из грамматики. Класс напечатан на каждом без исключения существительном колоды — там, где другой курс оставил бы вас догадываться.",
 
  # ---- the card. gari and its Swahili example sentence stay. ----
- "What a card holds": "Что держит карточка",
+ "What a card holds": "Что несёт карточка",
  "A real one, from tier 2. The class sits beside the headword; the notes say the thing a dictionary would not.":
    "Настоящая, с уровня 2. Класс стоит рядом с заглавным словом, а заметки говорят то, чего не скажет словарь.",
  '<div class="tr">a car, or any road vehicle</div>':
@@ -146,7 +146,7 @@ STRINGS = {
  "How it sticks": "Как это запоминается",
  "Flashcards as an integrated system": "Карточки как единая система",
  "<dt>Cards</dt><dd><b>1,000 words across 40 clusters</b> and five tiers — greetings and family, the town, work and health, government, the news, and the small words that join sentences together. An example sentence on every card.</dd>":
-   "<dt>Карточки</dt><dd><b>1000 слов в 40 кластерах</b> и пять уровней — приветствия и семья, город, работа и здоровье, государство, новости и те маленькие слова, что сшивают предложение. На каждой карточке пример предложения.</dd>",
+   "<dt>Карточки</dt><dd><b>1000 слов в 40 кластерах</b> и пять уровней — приветствия и семья, город, работа и здоровье, государство, новости и те маленькие слова, что связывают предложения. На каждой карточке пример предложения.</dd>",
  "<dt>Noun class</dt><dd>Named on <b>every noun</b>, on the card itself: <i>ji/ma</i>, <i>ki/vi</i>, <i>m/wa</i>. The engine the whole language runs on, never left implicit.</dd>":
    "<dt>Именной класс</dt><dd>Назван у <b>каждого существительного</b>, прямо на карточке: <i>ji/ma</i>, <i>ki/vi</i>, <i>m/wa</i>. Мотор, на котором работает весь язык, и его никогда не оставляют додумывать.</dd>",
  "<dt>Your language</dt><dd>Translations and study notes in <b>English, German, Japanese, Russian, Simplified Chinese and Spanish</b> — full coverage on every card. Study Swahili through whichever you call home.</dd>":
@@ -169,7 +169,7 @@ STRINGS = {
  '<div class="lvl">Tiers 1–5 · 1,000 words · 20 lessons</div>':
    '<div class="lvl">Уровни 1–5 · 1000 слов · 20 уроков</div>',
  "<p>The foundation: greetings and the family through the town, work and health to government and the news.</p>":
-   "<p>Основание: от приветствий и семьи через город, работу и здоровье к государству и новостям.</p>",
+   "<p>Основа: от приветствий и семьи через город, работу и здоровье к государству и новостям.</p>",
  '<span class="here">On Steam</span>': '<span class="here">В Steam</span>',
  '<div class="lvl">Tiers 6–10 · 1,000 words · 14 lessons</div>':
    '<div class="lvl">Уровни 6–10 · 1000 слов · 14 уроков</div>',
@@ -200,7 +200,7 @@ STRINGS = {
  "<summary>Can I see the words before I buy?</summary>":
    "<summary>Можно ли посмотреть слова до покупки?</summary>",
  'All of them. The complete <a href="wordlists.html?lang=Swahili&amp;set=Core">word list</a> and all twenty <a href="lessons.html?lang=Swahili">reference lessons</a> are on this site — free, printable, no account. There is also a <a href="https://flashboss-demo.pages.dev/">playable boss fight</a>.':
-   'Все до одного. Полный <a href="wordlists.html?lang=Swahili&amp;set=Core">список слов</a> и все двадцать <a href="lessons.html?lang=Swahili">справочных уроков</a> лежат на этом сайте — бесплатно, с печатью, без учётной записи. Есть и <a href="https://flashboss-demo.pages.dev/">играбельный бой с боссом</a>.',
+   'Все до одного. Полный <a href="wordlists.html?lang=Swahili&amp;set=Core">список слов</a> и все двадцать <a href="lessons.html?lang=Swahili">справочных уроков</a> лежат на этом сайте — бесплатно, можно распечатать, без учётной записи. Есть и <a href="https://flashboss-demo.pages.dev/">играбельный бой с боссом</a>.',
  "<summary>Is there a British or American spelling layer?</summary>":
    "<summary>Есть ли слой британского и американского написания?</summary>",
  "That layer covers the English packs. Swahili's English is the translation side of the card, and the pack ships one edition of it.":

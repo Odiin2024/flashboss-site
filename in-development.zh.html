@@ -2,8 +2,26 @@
 <html lang="zh-Hans">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- In Development. Rewritten 2026-09-19 from a placeholder card into the real list.
+     EVERY pack named here was counted from knight/flashcard_sets on 2026-09-19 —
+     nothing is listed that does not exist as cards in the tree, and nothing carries
+     a date, because none of it has one. When a pack ships it moves to packs.html and
+     leaves this page; that is the only maintenance this page needs.
+     Polish and Portuguese are named without counts on purpose: their word lists are
+     locked but no cards are authored yet, so the folders are empty.
+     The locale siblings (.de .es .ja .zh .ru) still hold the old placeholder card
+     and need this content translated. -->
+<!-- SELF-TRANSLATED, zh. The prose on this page was written by Claude
+     (Opus), not by the translation fleet, on Odiin's word of 2026-09-20:
+     good enough for now, and flagged for a translation/adversarial pass
+     another day. The page carries the beta-translation notice so a reader
+     knows and so that pass can find it.
+     Canon held here: the six pack names stay English, FlashBoss stays
+     Latin, and every number is the English page's number in this locale's
+     separator — nothing was recounted. -->
 <title>开发中 — FlashBoss</title>
+<meta name="description" content="FlashBoss 接下来在做的东西：Swahili Pareto 1 与 2、俄语、印尼语、古希腊语与现代希腊语、The Guide Part II，以及拉丁语的两个分支。数字从卡包本身数出，没有发售日期。">
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/in-development.zh.html">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/in-development.html">
@@ -15,42 +33,102 @@
 <link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/in-development.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
 <style>
-:root{ --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --accent:#e0a93f; --blue:#7ec8ff; --line:#3a3120; --mono:'JetBrains Mono','Noto Sans SC', ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+:root{
+  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
+  --accent:#e0a93f; --blue:#7ec8ff; --green:#62d38a; --line:#3a3120; --rule:#2a2417;
+}
 *{box-sizing:border-box; margin:0; padding:0;}
-body{ font-family:var(--mono); background:var(--bg); color:var(--ink); min-height:100vh; min-height:100dvh; display:flex; align-items:center; justify-content:center; padding:24px; line-height:1.6; -webkit-font-smoothing:antialiased; }
-.card{ width:100%; max-width:520px; border:1px solid var(--line); background:var(--panel); padding:36px 30px 30px; position:relative; box-shadow:0 0 40px rgba(0,0,0,.5); }
-.tag{ position:absolute; top:-10px; left:20px; background:var(--bg); padding:0 8px; font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--dim); }
-h1{ font-size:clamp(26px,7vw,40px); font-weight:800; letter-spacing:.04em; color:var(--accent); margin:2px 0 22px; }
-.cursor{ display:inline-block; width:.5em; height:.92em; background:var(--accent); vertical-align:-.06em; margin-left:.1em; animation:blink 1.05s steps(1) infinite; }
-@keyframes blink{ 50%{opacity:0;} }
-.rows{ font-size:13px; margin:0 0 16px; }
-.rows>div{ display:flex; gap:12px; padding:5px 0; border-bottom:1px dotted var(--line); }
-.rows .k{ color:var(--dim); min-width:92px; text-transform:lowercase; }
-.rows .v{ color:var(--ink); }
-.bar{ height:12px; border:1px solid var(--line); background:#0c0a06; margin:4px 0 22px; }
-.bar i{ display:block; height:100%; width:11%; background:var(--accent); opacity:.65; }
-.joke{ font-size:13.5px; color:var(--ink); opacity:.92; margin:0 0 26px; }
-.back{ font-size:13px; color:var(--blue); text-decoration:none; }
-.back:hover{ text-decoration:underline; }
-.lang-switch{ position:fixed; top:14px; right:16px; z-index:20; }
-.lang-toggle{ display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--ink); background:var(--panel); border:1px solid var(--line); padding:5px 8px; line-height:1; cursor:pointer; }
-.lang-toggle:hover, .lang-toggle[aria-expanded="true"]{ background:var(--ink); color:var(--bg); }
-.lang-caret{ font-size:8px; line-height:1; transition:transform .15s ease; }
-.lang-toggle[aria-expanded="true"] .lang-caret{ transform:rotate(180deg); }
-.lang-menu{ position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--panel); border:1px solid var(--line); min-width:120px; }
-.lang-menu[hidden]{ display:none; }
-.lang-menu li{ margin:0; }
-.lang-menu a{ display:block; font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--ink); text-decoration:none; padding:7px 10px; white-space:nowrap; }
-.lang-menu a:hover{ background:var(--ink); color:var(--bg); }
-.lang-menu a[aria-current="true"]{ color:var(--accent); }
-.lang-menu a[aria-current="true"]:hover{ color:var(--bg); }
+html{scroll-behavior:smooth;}
+body{font-family:var(--mono); background:linear-gradient(180deg, var(--bg) 0%, #171421 100%); background-color:var(--bg); color:var(--ink); line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden;}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.045) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.wrap{max-width:900px; margin:0 auto; padding:0 24px;}
+a{color:var(--blue);}
+
+nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line); background:var(--bg); position:relative; z-index:5;}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--dim); margin-right:auto;}
+nav .brand a{color:var(--dim); text-decoration:none;}
+nav .brand a:hover{color:var(--ink);}
+nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--ink);}
+nav .brand .here{font-weight:800; color:var(--ink);}
+nav .brand .pipe{color:var(--dim); margin:0 11px;}
+nav .links a{color:var(--ink); text-decoration:none; opacity:.7; margin-left:22px;}
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+@media(max-width:640px){ nav .links a:not(.keep){display:none;} nav .brand .pipe, nav .brand .here{display:none;} }
+.lang-switch{flex:none; margin-left:22px; position:relative;}
+.lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--ink); background:var(--bg); border:1px solid var(--dim); padding:5px 8px; line-height:1; cursor:pointer;}
+.lang-toggle:hover, .lang-toggle[aria-expanded="true"]{background:var(--ink); color:var(--bg);}
+.lang-caret{font-size:8px; line-height:1; transition:transform .15s ease;}
+.lang-toggle[aria-expanded="true"] .lang-caret{transform:rotate(180deg);}
+.lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--bg); border:1px solid var(--dim); min-width:120px; z-index:50;}
+.lang-menu[hidden]{display:none;}
+.lang-menu a{display:block; font-size:12px; color:var(--ink); text-decoration:none; padding:7px 10px; white-space:nowrap;}
+.lang-menu a[aria-current="true"]{color:var(--accent);}
+
+.reveal{opacity:0; transform:translateY(12px); transition:opacity .6s ease, transform .6s ease;}
+.reveal.in{opacity:1; transform:none;}
+
+header.top{padding:64px 0 10px;}
+header.top .kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--dim); margin-bottom:20px;}
+header.top h1{font-size:clamp(34px,8vw,64px); font-weight:800; letter-spacing:-.015em; line-height:1;}
+.cursor{display:inline-block; width:.5em; height:.9em; background:color-mix(in oklab, var(--accent), transparent 25%); vertical-align:-.06em; margin-left:.1em; animation:blink 1.05s steps(1) infinite;}
+@keyframes blink{50%{opacity:0;}}
+header.top .lede{font-size:clamp(15px,2.2vw,17px); color:var(--dim); max-width:62ch; margin-top:20px;}
+header.top .lede b{color:var(--ink); font-weight:700;}
+
+section{padding:40px 0 10px;}
+h2{font-size:12px; letter-spacing:.3em; text-transform:uppercase; color:var(--accent); font-weight:700; margin:0 0 6px;}
+.secnote{font-size:13px; color:var(--dim); margin:0 0 20px; max-width:66ch;}
+
+.item{border:1px solid var(--line); border-left:3px solid var(--line); padding:18px 20px 16px; margin-bottom:12px; background:rgba(255,255,255,.012);}
+.item.built{border-left-color:var(--green);}
+.item.writing{border-left-color:var(--accent);}  /* unused today: the state for a pack being written now */
+.item.planned{border-left-color:var(--faint); border-left-style:dashed;}
+.item .h{display:flex; align-items:baseline; gap:12px; flex-wrap:wrap;}
+.item .n{font-size:17px; font-weight:800;}
+.item .state{font-size:10px; letter-spacing:.18em; text-transform:uppercase; border:1px solid currentColor; padding:3px 8px; white-space:nowrap;}
+.item.built .state{color:var(--green);}
+.item.writing .state{color:var(--accent);}
+.item.planned .state{color:var(--faint);}
+.item .facts{font-size:12px; color:var(--dim); margin-top:6px; letter-spacing:.02em;}
+.item p{font-size:14px; color:var(--dim); margin-top:10px; max-width:70ch;}
+.item p b{color:var(--ink); font-weight:700;}
+
+.legend{border:1px solid var(--line); padding:16px 18px; margin:0 0 26px; font-size:13px; color:var(--dim); background:rgba(255,255,255,.012);}
+.legend div{padding:4px 0;}
+.legend b{color:var(--ink);}
+.legend .g{color:var(--green); font-weight:800;}
+.legend .a{color:var(--accent); font-weight:800;}
+.legend .f{color:var(--faint); font-weight:800;}
+
+.note{font-size:13px; color:var(--dim); border-top:1px solid var(--rule); padding-top:14px; margin-top:26px; max-width:70ch;}
+.note b{color:var(--ink);}
+.joke{font-size:13.5px; color:var(--dim); font-style:italic; margin-top:10px;}
+
+footer{border-top:1px solid var(--line); padding:28px 24px; margin-top:50px; font-size:12px; color:var(--dim); text-align:center; letter-spacing:.04em;}
+footer a{color:inherit; text-decoration:none; opacity:.75;}
+footer a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+footer .div{opacity:.4; margin:0 8px;}
+.beta-note{background:#1b1508; border-bottom:1px solid #6b5a2a; color:#e8d9b0; font:500 12.5px/1.55 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; text-align:center; padding:9px 16px; margin:0;}
+.beta-note b{color:#e0a93f; font-weight:700; letter-spacing:.09em;}
+.beta-note a{color:#e0a93f; text-decoration:underline; text-underline-offset:2px;}
 </style>
-<style>body{line-height:1.75;}</style>
+<script src="lang-redirect.js"></script>
 </head>
 <body>
+<div class="beta-note" role="status"><b>测试版翻译</b> — 本页的简体中文版仍是草稿，尚未经过校对。发现文字错误？ <a href="report.html">告诉我们</a> · <a href="in-development.html">Read in English</a></div>
+<div class="overlay"></div>
+
+<nav>
+  <span class="brand"><a class="logo" href="index.zh.html">FLASHBOSS</a><span class="pipe">|</span><a href="packs.zh.html">卡包</a><span class="pipe">·</span><span class="here">开发中</span></span>
+  <span class="links">
+    <a class="keep" href="packs.zh.html">现已推出</a>
+    <a href="immersion.zh.html">英语之路</a>
+    <a href="voices.zh.html">语音</a>
+  </span>
   <div class="lang-switch">
     <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="选择语言">ZH<span class="lang-caret">&#9662;</span></button>
     <ul class="lang-menu" hidden>
@@ -59,21 +137,115 @@ h1{ font-size:clamp(26px,7vw,40px); font-weight:800; letter-spacing:.04em; color
       <li><a href="in-development.es.html">Español</a></li>
       <li><a href="in-development.ja.html">日本語</a></li>
       <li><a href="in-development.zh.html" aria-current="true">简体中文</a></li>
-            <li><a href="in-development.ru.html">Русский</a></li>
-        </ul>
+      <li><a href="in-development.ru.html">Русский</a></li>
+    </ul>
   </div>
-  <main class="card">
-    <span class="tag">FlashBoss · admin</span>
-    <h1>开发中<span class="cursor"></span></h1>
-    <div class="rows">
-      <div><span class="k">页面</span><span class="v">in-development.zh.html</span></div>
-      <div><span class="k">状态</span><span class="v">开发中</span></div>
-      <div><span class="k">eta</span><span class="v">即将上线™</span></div>
+</nav>
+
+<main>
+  <header class="top wrap">
+    <p class="kicker reveal">尚未发售</p>
+    <h1 class="reveal">开发中<span class="cursor"></span></h1>
+    <p class="lede reveal">正在做的东西，以及各自到了哪一步。<b>本页上的一切都没有发售日期</b>，因为它们本来就没有——日期要等一个卡包做好了才挂出来，不会提前。这里列出的每一样今天都已经是真实的卡片；数字是从卡包本身数出来的，不是从计划里来的。</p>
+  </header>
+
+  <section class="wrap">
+    <div class="legend reveal">
+      <div><span class="g">▍</span> <b>卡片已写成</b>——这个卡包已经写完并清点过。剩下的是校对、音频和一个商店页面。</div>
+      <div><span class="f">▍</span> <b>已规划</b>——已经定下来并列入清单，但还没有动工。目前一张卡片也没有。</div>
     </div>
-    <div class="bar"><i></i></div>
-    <p class="joke">是的——罗列开发中内容的这个页面，本身也还在开发中。</p>
-    <a class="back" href="packs.zh.html">← 返回卡包</a>
-  </main>
+  </section>
+
+  <section class="wrap">
+    <h2>把已经在售的课程补完</h2>
+    <p class="secnote">它们续接你今天就能买到的卡包，并默认前一个卡包你已经学过。</p>
+
+    <div class="item built reveal">
+      <div class="h"><span class="n">Swahili Pareto 1</span><span class="state">卡片已写成</span></div>
+      <div class="facts">1,000 个单词 · 40 个词族 · 第 6–10 层级</div>
+      <p>办事用的词汇：钱与银行、公司与合同、部委、选举、法院、警察、新闻界、医院。它续接 <a href="swahili.zh.html">Swahili Core</a>，后者现已发售。</p>
+    </div>
+
+    <div class="item built reveal">
+      <div class="h"><span class="n">Swahili Pareto 2</span><span class="state">卡片已写成</span></div>
+      <div class="facts">1,000 个单词 · 40 个词族 · 第 11–15 层级</div>
+      <p>这门 3,000 词课程的最后一千词，也是斯瓦希里语的派生开始展开的地方——一个词根经由被动、状态、相互、反身、使役与施用，变成六个动词。</p>
+    </div>
+
+    <div class="item built reveal">
+      <div class="h"><span class="n">The Guide Part II</span><span class="state">卡片已写成</span></div>
+      <div class="facts">925 张卡片 · 50 个词族 · 三个层级 · 英语与德语</div>
+      <p>游戏主持人记忆的另一半。<a href="the-guide.html">The Guide</a> 装的是你用来裁定的规则，Part II 装的则是你用来填满一个世界的东西：法术表、怪物名录与宝物表。需要 The Guide。</p>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2>新语言</h2>
+    <p class="secnote">每一门都是通常形态的完整课程——先 Core，再 Pareto 1，各五个层级。</p>
+
+    <div class="item built reveal">
+      <div class="h"><span class="n">俄语</span><span class="state">卡片已写成</span></div>
+      <div class="facts">Core 与 Pareto 1 · 各 1,000 个单词 · 各 40 个词族</div>
+      <p>Русский。两千个单词已经写成并清点。</p>
+    </div>
+
+    <div class="item built reveal">
+      <div class="h"><span class="n">印尼语</span><span class="state">卡片已写成</span></div>
+      <div class="facts">Core 与 Pareto 1 · 各 1,000 个单词 · 各 40 个词族</div>
+      <p>Bahasa Indonesia——一门没有时态、没有性、也没有复数形式要背的语言，语序则是你早就有的那种。</p>
+    </div>
+
+    <div class="item built reveal">
+      <div class="h"><span class="n">现代希腊语</span><span class="state">卡片已写成</span></div>
+      <div class="facts">Core 与 Pareto 1 · 各 1,000 个单词 · 各 40 个词族</div>
+      <p>Ελληνικά，活着的那一门，开头几节课里有一道字母阶梯。不要和下面的古希腊语混淆，也不要和 <a href="greek-roots.zh.html">Greek Roots</a> 混淆，后者教的是已经在英语里面的希腊语。</p>
+    </div>
+
+    <div class="item built reveal">
+      <div class="h"><span class="n">古希腊语</span><span class="state">卡片已写成</span></div>
+      <div class="facts">Core 与 Pareto 1 · 各 1,000 个单词 · 各 40 个词族</div>
+      <p>一门阅读课程，形态和 <a href="latin.html">拉丁语</a> 那门一样：句子起初是为所在层级搭起来的，到最后就是作者原样写下的句子。</p>
+    </div>
+
+    <div class="item planned reveal">
+      <div class="h"><span class="n">波兰语与葡萄牙语</span><span class="state">已规划</span></div>
+      <div class="facts">单词列表已定 · 尚未撰写卡片</div>
+      <p>两门语言的词频主干都已选定并固定下来，而这正是决定一门课程教什么的那一半工作。卡片本身还没有写。</p>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2>拉丁语主干之外</h2>
+    <p class="secnote">Latin Core 与 Latin Pareto 合起来就是整门 2,000 词的阅读课程，到第 10 层级语法已经完整。这里有意不设第三段楼梯。</p>
+
+    <div class="item planned reveal">
+      <div class="h"><span class="n">拉丁语——两个分支</span><span class="state">已规划</span></div>
+      <div class="facts">古典诗歌 · 或教会拉丁语</div>
+      <p>过了 2,000 词，拉丁语是真的会分岔，下一个一千词是哪一千，取决于你想读什么：<b>古典诗歌</b>——维吉尔、奥维德、卡图卢斯、贺拉斯——或者<b>教会拉丁语</b>，武加大译本、圣歌与礼仪。两边都已列入清单并预留下来。两边都还没有做，也都不以另一边为前提。</p>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2>语音</h2>
+    <div class="item built reveal">
+      <div class="h"><span class="n">Castellano——西班牙，男声</span><span class="state">卡片已写成</span></div>
+      <div class="facts">在所有西班牙语卡包中替换随附的拉美语音</div>
+      <p>这是语音包，不是课程：它会替换卡片、课程和 Boss 战里的语音，你随时可以切回去。在<a href="voices.zh.html">语音页面</a>，可以把它和被它替换掉的那把声音对比着听。</p>
+    </div>
+
+    <p class="note">以上内容都是 <b>2026 年 9 月 19 日</b> 从卡包中数出来的。一个卡包在开售当天就会离开本页，转而出现在<a href="packs.zh.html">卡包列表</a>上——所以如果这里少了什么，就去那边找。</p>
+    <p class="joke">是的——这个列出开发中内容的页面，自己也曾经在开发中。</p>
+  </section>
+</main>
+
+<footer>
+  <a href="home.zh.html">主页</a><span class="div">·</span>
+  <a href="packs.zh.html">卡包</a><span class="div">·</span>
+  <a href="immersion.zh.html">英语之路</a><span class="div">·</span>
+  <a href="voices.zh.html">语音</a><span class="div">·</span>
+  <a href="resources.zh.html">资源</a>
+</footer>
+
 <script>
 (function(){
   var sw=document.querySelector('.lang-switch'); if(!sw) return;
@@ -82,6 +254,12 @@ h1{ font-size:clamp(26px,7vw,40px); font-weight:800; letter-spacing:.04em; color
   btn.addEventListener('click', function(e){ e.stopPropagation(); var o=menu.hidden; menu.hidden=!o; btn.setAttribute('aria-expanded', String(o)); });
   document.addEventListener('click', function(e){ if(!sw.contains(e.target)) close(); });
   document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e);});
 })();
 </script>
 </body>

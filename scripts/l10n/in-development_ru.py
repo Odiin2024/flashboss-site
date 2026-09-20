@@ -36,7 +36,7 @@ STRINGS = {
  ">Not out yet<": ">Ещё не вышло<",
  '<h1 class="reveal">In Development<': '<h1 class="reveal">В разработке<',
  "What is being built, and how far along it is. <b>Nothing on this page has a release date</b>, because none of it has one — a date goes up when a pack is ready, not before. Everything listed here exists as real cards today; the counts were taken from the packs themselves, not from a plan.":
-   "Что строится сейчас и насколько далеко продвинулось. <b>Ни у чего на этой странице нет даты выхода</b>, потому что её ни у чего и нет — дата появляется, когда набор готов, и не раньше. Всё перечисленное здесь существует сегодня настоящими карточками; числа взяты из самих наборов, а не из плана.",
+   "Что строится сейчас и насколько далеко продвинулось. <b>Ни у чего на этой странице нет даты выхода</b>, потому что ни у чего из этого её и нет — дата появляется, когда набор готов, и не раньше. Всё перечисленное здесь существует сегодня как настоящие карточки; числа взяты из самих наборов, а не из плана.",
 
  # ---- the legend: whole line each, so the <b> keeps its Russian sentence ----
  "<b>Cards written</b> — the pack is authored and counted. What remains is checking, audio and a store page.":
@@ -120,7 +120,7 @@ STRINGS = {
 
  # ---- the closing note: the date here is the COUNTING date, not a release ----
  "Everything above was counted from the packs on <b>19 September 2026</b>. A pack leaves this page the day it goes on sale and appears on <a href=\"packs.html\">the pack list</a> instead — so if something has vanished from here, look for it there.":
-   "Всё перечисленное выше посчитано по самим наборам <b>19 сентября 2026 года</b>. Набор покидает эту страницу в тот день, когда поступает в продажу, и появляется вместо неё в <a href=\"packs.html\">списке наборов</a> — так что если что-то отсюда пропало, ищите его там.",
+   "Всё перечисленное выше посчитано по самим наборам <b>19 сентября 2026 года</b>. Набор покидает эту страницу в тот день, когда поступает в продажу, и вместо этого появляется в <a href=\"packs.html\">списке наборов</a> — так что если что-то отсюда пропало, ищите его там.",
  "And yes — the page that lists what's in development used to be, itself, in development.":
    "И да — страница, которая перечисляет то, что в разработке, сама когда-то была в разработке.",
 }
