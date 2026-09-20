@@ -45,28 +45,28 @@
   /* two-layer colour-coding — the page's teaching legend.
      The plain layer reads warm (the ground); the formal layer
      reads cool (the court). RETUNE to the game's palette. */
-  --saxon:#e0954a;    /* warm amber  — the plain Anglo-Saxon word */
-  --norman:#9db4ff;   /* cool royal  — the formal Norman word     */
+  --saxon:#e0a93f;    /* warm amber  — the plain Anglo-Saxon word */
+  --norman:#83b6dd;   /* cool royal  — the formal Norman word     */
 
   /* GROUND palette (top of page) — warm, plain, the hearth & field */
-  --gr-bg:#17110b;
-  --gr-ink:#eddcbf;
-  --gr-dim:#a48d68;
-  --gr-accent:#e0954a;   /* hearth amber — the common tongue */
+  --gr-bg:#100d08;
+  --gr-ink:#ecdcb6;
+  --gr-dim:#b3a075;
+  --gr-accent:#e0a93f;   /* hearth amber — the common tongue */
 
   /* COURT palette (bottom of page) — cool, gilded, the Norman hall */
-  --ct-bg:#0b0f1c;
-  --ct-ink:#dde3f5;
-  --ct-dim:#828fb4;
-  --ct-accent:#9db4ff;   /* royal periwinkle — the conquerors' register */
+  --ct-bg:#171421;
+  --ct-ink:#ecdcb6;
+  --ct-dim:#b3a075;
+  --ct-accent:#83b6dd;   /* royal periwinkle — the conquerors' register */
 
   /* FlashBoss blue — the manual's link/button accent */
-  --fb-blue:#7ec8ff;
+  --fb-blue:#83b6dd;
 
   /* mood: 0 = ground, 1 = court. Driven by scroll. */
   --mood:0;
 
-  --line: color-mix(in oklab, #4a3a25, #2c3450 calc(var(--mood) * 100%));
+  --line: color-mix(in oklab, #3a3120, #3a3120 calc(var(--mood) * 100%));
 }
 
 *{box-sizing:border-box;}
@@ -74,7 +74,7 @@ html{scroll-behavior:smooth;}
 body{
   margin:0;
   font-family:var(--mono);
-  background:#17110b; /* fallback */
+  background:#100d08; /* fallback */
   background:color-mix(in oklab, var(--gr-bg), var(--ct-bg) calc(var(--mood) * 100%));
   color:
     color-mix(in oklab, var(--gr-ink), var(--ct-ink) calc(var(--mood) * 100%));
@@ -145,9 +145,9 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--gr-bg);}
 /* ---- HERO ---- */
 .hero{position:relative; padding:84px 0 36px; overflow:hidden;}
 .hero::before{content:""; position:absolute; inset:0; z-index:0;
-  background:#0f0b07 url('english.png') center 30% / cover no-repeat;}
+  background:#100d08 url('english.png') center 30% / cover no-repeat;}
 .hero::after{content:""; position:absolute; inset:0; z-index:1;
-  background:linear-gradient(180deg, rgba(23,17,11,.58) 0%, rgba(23,17,11,.82) 55%, #17110b 100%);}
+  background:linear-gradient(180deg, rgba(23,17,11,.58) 0%, rgba(23,17,11,.82) 55%, #100d08 100%);}
 .hero .wrap{position:relative; z-index:2;}
 .kicker{
   font-size:12px; letter-spacing:.32em; text-transform:uppercase;
@@ -184,7 +184,7 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--gr-bg);}
 .btn{
   display:inline-block; margin-top:40px;
   font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.08em;
-  color:#17110b; background:color-mix(in oklab, var(--gr-accent), transparent 25%);
+  color:#100d08; background:color-mix(in oklab, var(--gr-accent), transparent 25%);
   padding:14px 26px; text-decoration:none; border:0;
   box-shadow:6px 6px 0 color-mix(in oklab, var(--gr-accent), #000 60%);
   transition:transform .12s ease, box-shadow .12s ease;
@@ -193,7 +193,7 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--gr-bg);}
 .btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--gr-accent), #000 60%);}
 .hero .actions{display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:40px; max-width:520px;}
 .hero .actions .btn{margin-top:0; width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
-.btn.warm{color:#0b0f1c; background:var(--ct-accent);
+.btn.warm{color:#171421; background:var(--ct-accent);
   box-shadow:6px 6px 0 color-mix(in oklab, var(--ct-accent), #000 60%);}
 .btn.warm:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--ct-accent), #000 60%);}
 
@@ -226,8 +226,8 @@ p.body .nor{color:var(--norman); font-weight:700;}
 /* ---- the two movements: ground floor / upper floor ---- */
 .movements{display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px solid var(--line);}
 .mv{padding:30px 26px;}
-.mv:first-child{border-right:1px solid var(--line); background:rgba(224,149,74,.05);}
-.mv:last-child{background:rgba(157,180,255,.05);}
+.mv:first-child{border-right:1px solid var(--line); background:rgba(224,169,63,.05);}
+.mv:last-child{background:rgba(131,182,221,.05);}
 .mv .h{font-size:12px; letter-spacing:.3em; text-transform:uppercase; margin-bottom:14px;}
 .mv.ground .h{color:var(--saxon);}
 .mv.upper .h{color:var(--norman);}
@@ -279,7 +279,7 @@ p.body .nor{color:var(--norman); font-weight:700;}
 /* ---- the doublet console (table: plain -> formal) ---- */
 .console{
   border:1px solid var(--line); font-size:13.5px;
-  background:rgba(157,180,255,.03);
+  background:rgba(131,182,221,.03);
 }
 .console .head{
   display:flex; justify-content:space-between; padding:12px 18px;
@@ -298,7 +298,7 @@ p.body .nor{color:var(--norman); font-weight:700;}
 }
 
 /* ---- sound-seams: one Latin word, two roads into English ---- */
-.family{border:1px solid var(--line); background:rgba(157,180,255,.03); padding:26px 24px;}
+.family{border:1px solid var(--line); background:rgba(131,182,221,.03); padding:26px 24px;}
 .family + .family{margin-top:16px;}
 .family .stem{display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; margin-bottom:6px;}
 .family .stem .glyph{font-size:30px; font-weight:800; letter-spacing:.02em;
@@ -352,7 +352,7 @@ p.body .nor{color:var(--norman); font-weight:700;}
 .pack .soon{display:inline-block; font-size:10px; letter-spacing:.16em; text-transform:uppercase;
   color:var(--gr-dim); border:1px solid var(--gr-dim); padding:3px 8px; margin-top:10px;}
 a.pack{text-decoration:none; color:inherit; display:block; transition:background .15s ease, border-color .15s ease;}
-a.pack:hover{background:rgba(157,180,255,.06); border-color:var(--ct-accent);}
+a.pack:hover{background:rgba(131,182,221,.06); border-color:var(--ct-accent);}
 @media(max-width:720px){.pack{border-bottom:1px solid var(--line);} }
 
 /* ---- method ---- */
