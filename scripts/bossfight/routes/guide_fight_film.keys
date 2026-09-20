@@ -1,0 +1,52 @@
+# The Guide — STORE set, route D: the boss fight (slot 3) and its victory (slot 4)
+# for cluster 1.1, in the locale's PURE edition. Same kit as route A.
+# LAUNCH WITH FLASHBOSS_KIT_FIGHT_READY=1 in the environment: the forge then stamps
+# the kit's cluster mastered-but-unfought (showcase_mode.stamp_fight_ready), which is
+# what makes Know Your Enemy offer the fight; the cards are not due, so this route
+# never enters the review.
+LOG The Guide — store set, route D (the fight)
+
+{LANG_KEYS}
+KEY ENTER
+EXPECT Core
+KEY 1
+# the session menu ("BEGINNING SESSION FOR CORE": 5 sanctum · 6 review mode · 7 path ·
+# 8 tier-skip challenge) → 5 the sanctum → 4 KNOW YOUR ENEMY → 1 the cluster (a digit
+# picks it on the tier page) → 5 fight on the confirm screen. The REGULAR fight:
+# position 1 on battle_order[0], the order sorted by interval — which the forge's
+# fight-ready stamp fixed (kit card 1 at 34 opens, kit card 8 at 13 closes). NEVER
+# 8 on the session menu: that is the BossRun, a sandbox fight with a shuffled order
+# (it asked Mimic in the danger zone on 2026-09-16).
+KEY 5
+KEY 4
+KEY 1
+KEY 5
+# NO key at the "Engaging Boss" splash: a timed hold that reads nothing.
+
+# ── slot 3: the FIRST battle frame — hero on rung 1, boss on rung 2, the opening line
+
+# ── FILM: every beat of The Guide's fight, for the site GIF ───────────────
+# Same walk as the store route; the three stills become a frame per beat. The
+# Guide is a PARALLEL pack, so its boss asks a category question in the
+# interface language rather than the immersion English of the Roots packs —
+# which is the point of filming it separately (boss_fight._english_question).
+EXPECT [1-8]\.
+EXPECT ₃    ₄
+REFUTE ₁    ₂
+EXPECT {CARD1}
+EXPECT ▓+\s*\Z
+SHOT frame01
+ANSWER
+SHOT frame02
+ANSWER
+SHOT frame03
+ANSWER
+SHOT frame04
+ANSWER
+SHOT frame05
+KEY ENTER
+EXPECT {CARD1}
+EXPECT 🎆\s*\Z
+SHOT frame06
+LOG film route taken
+END

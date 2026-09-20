@@ -142,8 +142,10 @@ def main():
             if c.js("!!S.reveal"):
                 killing = c.js("S.lastAction==='victory'")
                 shot("kill" if killing else "reveal")
+                if killing:
+                    press(0, 0.8)
+                    break
                 press(0, 0.5)
-                if killing: break
                 continue
             shot("card")
             correct = c.js("S.options.indexOf(S.card.TargetWord)")
@@ -156,6 +158,25 @@ def main():
             else:
                 pick = correct
             press(pick + 1, 0.55)
+
+        # Bosses two and three are played but NOT photographed — the run has to reach
+        # its end screens honestly, and three full fights make a GIF nobody watches.
+        guard = 0
+        while guard < 140 and c.js("S.screen") not in ("victory", "aftermath", "defeat"):
+            guard += 1
+            scr = c.js("S.screen")
+            if scr == "battle" and not c.js("!!S.reveal"):
+                correct = c.js("S.options.indexOf(S.card.TargetWord)")
+                if correct is None or correct < 0: break
+                press(correct + 1, 0.28)
+            else:
+                press(0, 0.26)
+        # The two end plates: the fireworks victory, then the aftermath.
+        if c.js("S.screen") == "victory":
+            shot("victory"); time.sleep(0.7); shot("victory_hold")
+            press(0, 0.9)
+        if c.js("S.screen") == "aftermath":
+            shot("aftermath"); time.sleep(0.6); shot("aftermath_hold")
         print(f"{a.out}: {len(frames)} frames -> {outdir}")
         print("   " + " ".join(os.path.basename(f) for f in frames))
     finally:

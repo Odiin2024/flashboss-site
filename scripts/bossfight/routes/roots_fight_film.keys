@@ -1,0 +1,91 @@
+# Roots — store slots 4, 5, 6: the boss fight, the killing blow, the victory.
+#
+# THE REGULAR FIGHT, NEVER THE BOSSRUN. The old *_seven_slots.keys reached the
+# boss with KEY 8 from the session menu — the Tier Skip Challenge, which runs
+# sandbox_mode: its battle order is card_difficulty.split_cluster, two buckets
+# shuffled, NOT the interval sort. Every boss frame shot that way was a gauntlet
+# fight (found on The Guide, 2026-09-16). The path below is Know Your Enemy:
+#   5  session menu -> Enter the Sanctum      (the menu takes 5-8 only; 4 is
+#                                              ignored here and does nothing)
+#   4  sanctum -> KNOW YOUR ENEMY
+#   1  the cluster
+#   5  the confirm screen -> fight
+# Readiness comes from the forge: run with FLASHBOSS_KIT_FIGHT_READY=1, which
+# stamps kit card 1 at interval 34 and card 8 at 13, so battle_order[0] is card 1
+# and the fight opens on it. Without the stamp the cluster reads 0/8 and the
+# confirm screen offers no fight at all.
+#
+# INVERTED BOSS: the definition is the question, the eight options are the cards'
+# own TargetWords. ANSWER reads the live grid and presses the word the definition
+# describes; the map is {TargetWord: [definition]} from the kit.
+LOG Roots — store route D
+
+{LANG_KEYS}
+KEY ENTER
+EXPECT Core
+KEY 1
+
+# past lesson 000 and GETTING STARTED, then out of the review
+KEY 5
+KEY 5
+KEY 5
+KEY ENTER
+KEY ENTER
+KEY ENTER
+KEY 9
+KEY 9
+EXPECT Core
+KEY 1
+
+# ── Know Your Enemy -> the cluster -> fight ──────────────────────────────
+KEY 5
+KEY 4
+KEY 1
+KEY 5
+# NO key at the "Engaging Boss" splash: a timed hold that reads nothing.
+
+# ── slot 4: the opening frame, hero on rung 1 ────────────────────────────
+# Position 1 prints the danger-zone line (boss_fight: the initial status at
+# position 1), which is the true first frame of a fresh fight.
+
+# ── FILM: every beat of the fight, for the site GIF ──────────────────────
+# The store route takes three stills. A GIF wants the beats between them, and in
+# particular it wants the ANSWER FREEZE and the REPOSITION as two frames, because
+# they are two moments: the freeze reveals the answer, and only then do the hero
+# and the boss move and the status line under the platform change with them.
+# (Odiin, 2026-09-20, on the web demo getting this wrong: "the text changes on the
+# answer, not on the hero/boss reposition like it should.")
+EXPECT [1-8]\.
+EXPECT ₃    ₄
+REFUTE ₁    ₂
+EXPECT ╚═+╝\s*\Z
+SHOT frame01
+ANSWER
+SHOT frame02
+KEY ENTER
+SHOT frame03
+ANSWER
+SHOT frame04
+KEY ENTER
+EXPECT [1-8]\.
+EXPECT ₁    ₂
+REFUTE ₃    ₄
+SHOT frame05
+ANSWER
+SHOT frame06
+KEY ENTER
+SHOT frame07
+ANSWER
+SHOT frame08
+KEY ENTER
+# ── the cluster victory: the real game's graduation screen ───────────────
+EXPECT {CARD1}
+EXPECT 🎆\s*\Z
+SHOT frame09
+# '8' toggles the word list between the pack language and English, in place
+KEY 8
+SHOT frame10
+KEY 8
+SHOT frame11
+LOG film route taken
+END

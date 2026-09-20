@@ -14,7 +14,11 @@ for f in "$D"/*.png; do
     *intro*)   d=160 ;;
     *card*)    d=150 ;;
     *reveal*)  d=95  ;;
-    *kill*)    d=320 ;;
+    *kill*)    d=300 ;;
+    *victory_hold*)  d=360 ;;
+    *victory*)       d=300 ;;
+    *aftermath_hold*) d=420 ;;
+    *aftermath*)      d=300 ;;
     *)         d=120 ;;
   esac
   args+=( -delay "$d" "$f" )
