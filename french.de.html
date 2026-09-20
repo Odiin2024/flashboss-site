@@ -35,31 +35,31 @@
   --mono-cjk:'JetBrains Mono', 'Hiragino Sans', 'Noto Sans JP', 'Yu Gothic', 'Meiryo', ui-monospace, monospace;
 
   /* gender colour-coding — RETUNE to the game's exact palette */
-  --masc:#6cb6ff;   /* le */
+  --masc:#83b6dd;   /* le */
   --fem:#ff8fa3;    /* la */
 
   /* VOUS palette (top — cool, formal, Paris zinc under morning cloud) */
-  --v-bg:#0e131b;
-  --v-ink:#e6ecf4;
-  --v-dim:#93a3b6;
-  --v-accent:#b8c8dc;   /* zinc silver — the polite distance */
+  --v-bg:#100d08;
+  --v-ink:#ecdcb6;
+  --v-dim:#b3a075;
+  --v-accent:#83b6dd;   /* zinc silver — the polite distance */
 
   /* TU palette (bottom — warm, close, the lamp over the table) */
-  --t-bg:#1a0e0c;
-  --t-ink:#f7e7df;
-  --t-dim:#c39a8c;
-  --t-accent:#e2694a;   /* copper ember — the language gone familiar */
+  --t-bg:#171421;
+  --t-ink:#ecdcb6;
+  --t-dim:#b3a075;
+  --t-accent:#e0a93f;   /* copper ember — the language gone familiar */
 
   /* mood: 0 = vous, 1 = tu. Driven by scroll. ONE smooth ramp. */
   --mood:0;
 
-  --line:color-mix(in oklab, #3d4a5c, #4e2c22 calc(var(--mood) * 100%));
+  --line:color-mix(in oklab, #3a3120, #3a3120 calc(var(--mood) * 100%));
 }
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{
   margin:0; font-family:var(--mono);
-  background:#0b0f16;
+  background:#100d08;
   background:color-mix(in oklab, var(--v-bg), var(--t-bg) calc(var(--mood)*100%));
   color:color-mix(in oklab, var(--v-ink), var(--t-ink) calc(var(--mood)*100%));
   line-height:1.6; -webkit-font-smoothing:antialiased;
@@ -105,10 +105,10 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--v-bg);}
 
 /* HERO — image band. The <img> carries the alt text; the gradient
    sits over it so the type stays legible whatever the art is. */
-.hero{position:relative; padding:84px 0 36px; overflow:hidden; background:#0b0f16;}
+.hero{position:relative; padding:84px 0 36px; overflow:hidden; background:#100d08;}
 .hero .hero-img{position:absolute; inset:0; z-index:0; width:100%; height:100%; object-fit:cover; object-position:center 30%;}
 .hero::after{content:""; position:absolute; inset:0; z-index:1;
-  background:linear-gradient(180deg, rgba(14,19,27,.60) 0%, rgba(14,19,27,.84) 55%, #0e131b 100%);}
+  background:linear-gradient(180deg, rgba(16,13,8,.60) 0%, rgba(16,13,8,.84) 55%, #100d08 100%);}
 .hero .wrap{position:relative; z-index:2;}
 .kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--v-dim); opacity:.9; margin-bottom:26px;}
 .kicker b{color:var(--v-accent); font-weight:700;}
@@ -119,11 +119,11 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--v-bg);}
 .hero .sig{font-size:13px; letter-spacing:.24em; text-transform:uppercase; color:var(--v-accent); margin:14px 0 0; opacity:.9;}
 .hero .lede{font-size:clamp(15px,2.2vw,18px); max-width:50ch; margin:24px 0 0; color:var(--v-dim);}
 .hero .lede b{color:var(--v-ink); font-weight:700;}
-.btn{display:inline-block; font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.08em; color:#0e131b; background:color-mix(in oklab, var(--v-accent), transparent 22%);
+.btn{display:inline-block; font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.08em; color:#100d08; background:color-mix(in oklab, var(--v-accent), transparent 22%);
   padding:14px 26px; text-decoration:none; border:0; box-shadow:6px 6px 0 color-mix(in oklab, var(--v-accent), #000 62%); transition:transform .12s ease, box-shadow .12s ease;}
 .btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--v-accent), #000 62%);}
 .btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--v-accent), #000 62%);}
-.btn.hot{color:#1a0e0c; background:var(--t-accent); box-shadow:6px 6px 0 color-mix(in oklab, var(--t-accent), #000 60%);}
+.btn.hot{color:#171421; background:var(--t-accent); box-shadow:6px 6px 0 color-mix(in oklab, var(--t-accent), #000 60%);}
 .btn.hot:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--t-accent), #000 60%);}
 .hero .actions{display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:40px; max-width:520px;}
 .hero .actions .btn{margin-top:0; width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
@@ -228,7 +228,7 @@ p.body b{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--m
 .pack .soon{display:inline-block; font-size:10px; letter-spacing:.2em; text-transform:uppercase; margin-top:12px; padding:3px 8px; border:1px solid var(--line);
   color:color-mix(in oklab, var(--v-dim), var(--t-dim) calc(var(--mood)*100%));}
 a.pack{text-decoration:none; color:inherit; display:block; transition:background .15s ease, border-color .15s ease;}
-a.pack:hover{background:rgba(226,105,74,.07); border-color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
+a.pack:hover{background:rgba(224,169,63,.07); border-color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
 .pack.locked{opacity:.66;}
 @media(max-width:640px){.pack{border-right:0; border-bottom:1px solid var(--line);} .pack:last-child{border-bottom:0;}}
 
@@ -288,8 +288,8 @@ footer .footer-links a{color:inherit; text-decoration:none; opacity:.75; letter-
 footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
 footer .footer-links .div{opacity:.4;}
 
-.bridge-banner{font-family:var(--mono); font-size:12.5px; line-height:1.55; text-align:center; padding:11px 24px; color:#f0e6d3; background:rgba(126,200,255,.12); border-top:1px solid rgba(126,200,255,.28); border-bottom:1px solid rgba(126,200,255,.28);}
-.bridge-banner b{color:#7ec8ff; font-weight:700;}
+.bridge-banner{font-family:var(--mono); font-size:12.5px; line-height:1.55; text-align:center; padding:11px 24px; color:#ecdcb6; background:rgba(131,182,221,.12); border-top:1px solid rgba(131,182,221,.28); border-bottom:1px solid rgba(131,182,221,.28);}
+.bridge-banner b{color:#83b6dd; font-weight:700;}
 </style>
 </head>
 <body>

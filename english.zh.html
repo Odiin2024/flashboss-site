@@ -40,27 +40,27 @@
   --mono:'JetBrains Mono', 'Noto Sans SC', ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
 
   /* SIGNAL palette (top — the cold English of forms and airports) */
-  --v-bg:#0d1117;
-  --v-ink:#dbe6ee;
-  --v-dim:#8ba2b4;
-  --v-accent:#7ec8ff;   /* phosphor blue — the FlashBoss signal */
+  --v-bg:#100d08;
+  --v-ink:#ecdcb6;
+  --v-dim:#b3a075;
+  --v-accent:#83b6dd;   /* phosphor blue — the FlashBoss signal */
 
   /* SPOKEN palette (bottom — the same language, warmed to yours) */
-  --t-bg:#14110b;
-  --t-ink:#efe2c2;
-  --t-dim:#b5a67e;
+  --t-bg:#171421;
+  --t-ink:#ecdcb6;
+  --t-dim:#b3a075;
   --t-accent:#e0a93f;   /* amber — the lamp over the table */
 
   /* mood: 0 = signal, 1 = spoken. Driven by scroll. */
   --mood:0;
 
-  --line:color-mix(in oklab, #33414f, #4a3f22 calc(var(--mood) * 100%));
+  --line:color-mix(in oklab, #3a3120, #3a3120 calc(var(--mood) * 100%));
 }
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{
   margin:0; font-family:var(--mono);
-  background:#0d1117;
+  background:#100d08;
   background:color-mix(in oklab, var(--v-bg), var(--t-bg) calc(var(--mood)*100%));
   color:color-mix(in oklab, var(--v-ink), var(--t-ink) calc(var(--mood)*100%));
   line-height:1.6; -webkit-font-smoothing:antialiased;
@@ -106,10 +106,10 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--v-bg);}
 
 /* HERO — image band. The <img> carries the alt text; the gradient
    sits over it so the type stays legible whatever the art is. */
-.hero{position:relative; padding:84px 0 36px; overflow:hidden; background:#0d1117;}
+.hero{position:relative; padding:84px 0 36px; overflow:hidden; background:#100d08;}
 .hero .hero-img{position:absolute; inset:0; z-index:0; width:100%; height:100%; object-fit:cover; object-position:center 30%;}
 .hero::after{content:""; position:absolute; inset:0; z-index:1;
-  background:linear-gradient(180deg, rgba(13,17,23,.62) 0%, rgba(13,17,23,.84) 55%, #0d1117 100%);}
+  background:linear-gradient(180deg, rgba(13,17,23,.62) 0%, rgba(13,17,23,.84) 55%, #100d08 100%);}
 .hero .wrap{position:relative; z-index:2;}
 .kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--v-dim); opacity:.9; margin-bottom:26px;}
 .kicker b{color:var(--v-accent); font-weight:700;}
@@ -120,11 +120,11 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--v-bg);}
 .hero .sig{font-size:13px; letter-spacing:.24em; text-transform:uppercase; color:var(--v-accent); margin:14px 0 0; opacity:.9;}
 .hero .lede{font-size:clamp(15px,2.2vw,18px); max-width:52ch; margin:24px 0 0; color:var(--v-dim);}
 .hero .lede b{color:var(--v-ink); font-weight:700;}
-.btn{display:inline-block; font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.08em; color:#0d1117; background:color-mix(in oklab, var(--v-accent), transparent 22%);
+.btn{display:inline-block; font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.08em; color:#100d08; background:color-mix(in oklab, var(--v-accent), transparent 22%);
   padding:14px 26px; text-decoration:none; border:0; box-shadow:6px 6px 0 color-mix(in oklab, var(--v-accent), #000 62%); transition:transform .12s ease, box-shadow .12s ease;}
 .btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--v-accent), #000 62%);}
 .btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--v-accent), #000 62%);}
-.btn.hot{color:#15100a; background:var(--t-accent); box-shadow:6px 6px 0 color-mix(in oklab, var(--t-accent), #000 60%);}
+.btn.hot{color:#171421; background:var(--t-accent); box-shadow:6px 6px 0 color-mix(in oklab, var(--t-accent), #000 60%);}
 .btn.hot:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--t-accent), #000 60%);}
 .hero .actions{display:grid; grid-template-columns:repeat(auto-fit,minmax(0,1fr)); gap:9px; margin-top:40px; max-width:520px;}
 .hero .actions .btn{margin-top:0; width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
@@ -146,7 +146,7 @@ p.body a{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--m
 /* the two movements — learner vs native */
 .movements{display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px solid var(--line);}
 .mv{padding:30px 26px;}
-.mv:first-child{border-right:1px solid var(--line); background:rgba(126,200,255,.045);}
+.mv:first-child{border-right:1px solid var(--line); background:rgba(131,182,221,.045);}
 .mv:last-child{background:rgba(224,169,63,.045);}
 .mv .h{font-size:12px; letter-spacing:.3em; text-transform:uppercase; margin-bottom:14px;}
 .mv.learner .h{color:var(--v-accent);}

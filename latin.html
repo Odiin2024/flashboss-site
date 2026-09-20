@@ -42,27 +42,27 @@
   --mono:'JetBrains Mono', ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
 
   /* STONE palette (top — cold, cut, inscriptional) */
-  --s-bg:#0d1116;
-  --s-ink:#e9edf1;
-  --s-dim:#95a1ad;
-  --s-accent:#aebecb;   /* marble silver — the chisel, not the pen */
+  --s-bg:#100d08;
+  --s-ink:#ecdcb6;
+  --s-dim:#b3a075;
+  --s-accent:#83b6dd;   /* marble silver — the chisel, not the pen */
 
   /* LAMP palette (bottom — warm, close, the flame over the roll) */
-  --l-bg:#17100a;
-  --l-ink:#f6e8ce;
-  --l-dim:#c3a377;
-  --l-accent:#e0a94a;   /* lamp amber — Latin gone readable */
+  --l-bg:#171421;
+  --l-ink:#ecdcb6;
+  --l-dim:#b3a075;
+  --l-accent:#e0a93f;   /* lamp amber — Latin gone readable */
 
   /* mood: 0 = stone, 1 = lamp. Driven by scroll. ONE smooth ramp. */
   --mood:0;
 
-  --line:color-mix(in oklab, #3b4653, #4a3520 calc(var(--mood) * 100%));
+  --line:color-mix(in oklab, #3a3120, #3a3120 calc(var(--mood) * 100%));
 }
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{
   margin:0; font-family:var(--mono);
-  background:#0d1116;
+  background:#100d08;
   background:color-mix(in oklab, var(--s-bg), var(--l-bg) calc(var(--mood)*100%));
   color:color-mix(in oklab, var(--s-ink), var(--l-ink) calc(var(--mood)*100%));
   line-height:1.6; -webkit-font-smoothing:antialiased;
@@ -108,10 +108,10 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--s-bg);}
 
 /* HERO — image band. The <img> carries the alt text; the gradient
    sits over it so the type stays legible whatever the art is. */
-.hero{position:relative; padding:84px 0 36px; overflow:hidden; background:#0d1116;}
+.hero{position:relative; padding:84px 0 36px; overflow:hidden; background:#100d08;}
 .hero .hero-img{position:absolute; inset:0; z-index:0; width:100%; height:100%; object-fit:cover; object-position:center 30%;}
 .hero::after{content:""; position:absolute; inset:0; z-index:1;
-  background:linear-gradient(180deg, rgba(13,17,22,.60) 0%, rgba(13,17,22,.84) 55%, #0d1116 100%);}
+  background:linear-gradient(180deg, rgba(13,17,22,.60) 0%, rgba(13,17,22,.84) 55%, #100d08 100%);}
 .hero .wrap{position:relative; z-index:2;}
 .kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--s-dim); opacity:.9; margin-bottom:26px;}
 .kicker b{color:var(--s-accent); font-weight:700;}
@@ -122,11 +122,11 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--s-bg);}
 .hero .sig{font-size:13px; letter-spacing:.24em; text-transform:uppercase; color:var(--s-accent); margin:14px 0 0; opacity:.9;}
 .hero .lede{font-size:clamp(15px,2.2vw,18px); max-width:50ch; margin:24px 0 0; color:var(--s-dim);}
 .hero .lede b{color:var(--s-ink); font-weight:700;}
-.btn{display:inline-block; font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.08em; color:#0d1116; background:color-mix(in oklab, var(--s-accent), transparent 22%);
+.btn{display:inline-block; font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.08em; color:#100d08; background:color-mix(in oklab, var(--s-accent), transparent 22%);
   padding:14px 26px; text-decoration:none; border:0; box-shadow:6px 6px 0 color-mix(in oklab, var(--s-accent), #000 62%); transition:transform .12s ease, box-shadow .12s ease;}
 .btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--s-accent), #000 62%);}
 .btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--s-accent), #000 62%);}
-.btn.hot{color:#17100a; background:var(--l-accent); box-shadow:6px 6px 0 color-mix(in oklab, var(--l-accent), #000 60%);}
+.btn.hot{color:#171421; background:var(--l-accent); box-shadow:6px 6px 0 color-mix(in oklab, var(--l-accent), #000 60%);}
 .btn.hot:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--l-accent), #000 60%);}
 .hero .actions{display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:40px; max-width:520px;}
 .hero .actions .btn{margin-top:0; width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
@@ -246,7 +246,7 @@ p.body b{color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--m
 .pack .soon{display:inline-block; font-size:10px; letter-spacing:.2em; text-transform:uppercase; margin-top:12px; padding:3px 8px; border:1px solid var(--line);
   color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
 a.pack{text-decoration:none; color:inherit; display:block; transition:background .15s ease, border-color .15s ease;}
-a.pack:hover{background:rgba(224,169,74,.07); border-color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+a.pack:hover{background:rgba(224,169,63,.07); border-color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
 @media(max-width:640px){.pack{border-right:0; border-bottom:1px solid var(--line);} .pack:last-child{border-bottom:0;}}
 
 /* the fork — the third thousand */
