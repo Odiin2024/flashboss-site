@@ -30,6 +30,11 @@ here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 OUT="$1"; shift
 F=/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf
 [ -f "$F" ] || F=/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf
+# The pack NAME is always Latin (pack names stay English in every locale), but a
+# strapline may be Japanese or Chinese, and DejaVu has no CJK glyphs at all — it
+# would draw a row of boxes. FB_FONT2 takes a font that does.
+F2="${FB_FONT2:-$F}"
+[ -f "$F2" ] || F2="$F"
 CROP="${FB_CROP:-572x644+357+39}"
 W="${FB_W:-500}"                 # width of the terminal image itself
 LINE="${FB_LINE:-#3a3120}"       # the site's own rule colour
@@ -56,7 +61,7 @@ for spec in "$@"; do
           xc:'#0b0a10' \
     -font "$F" -fill '#d9a6e0' -pointsize 30 -gravity north -annotate +0+232 'BOSS FIGHT' \
     -fill '#ecdcb6' -pointsize 38 -gravity north -annotate +0+292 "$name" \
-    -fill '#8a7a5c' -pointsize 18 -gravity north -annotate +0+368 "$strap" "$work/plate.png"
+    -font "$F2" -fill '#8a7a5c' -pointsize 18 -gravity north -annotate +0+368 "$strap" "$work/plate.png"
   finish "$work/plate.png" "$p"
   delays+=( -delay 175 "$p" )
 

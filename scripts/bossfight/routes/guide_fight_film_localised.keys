@@ -1,3 +1,15 @@
+# The Guide — THE LOCALISED VARIANT of guide_fight_film.keys. Identical
+# except for the last beat, which presses 8 at the cluster victory to
+# toggle the word list into English.
+#
+# WHY THERE ARE TWO. The ENGLISH edition's victory footer reads "press any
+# key to continue" — there is nothing to toggle to, so 8 would simply leave
+# the screen. Every localised edition, pure German or mixed alike, offers
+# the toggle and therefore has a second victory screen. Odiin, 2026-09-20:
+# "the last scene is the second victory screen if there is one, or the first
+# one if that's the only one". Verified on the German pure edition before
+# this file existed: 8 turned Feuerball into Fireball rather than exiting.
+#
 # The Guide — STORE set, route D: the boss fight (slot 3) and its victory (slot 4)
 # for cluster 1.1, in the locale's PURE edition. Same kit as route A.
 # LAUNCH WITH FLASHBOSS_KIT_FIGHT_READY=1 in the environment: the forge then stamps
@@ -53,9 +65,9 @@ SHOT frame08
 KEY ENTER
 EXPECT {CARD1}
 EXPECT 🎆\s*\Z
-# NO 8 HERE. The English edition's victory has no word list to toggle, so 8
-# is just "any key" and leaves. A localised edition does have one — use
-# guide_fight_film_localised.keys for those.
 SHOT frame09
+# the word list, toggled into English
+KEY 8
+SHOT frame10
 LOG film route taken
 END
