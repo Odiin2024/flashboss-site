@@ -71,3 +71,46 @@ showing the other language · the victory held.
 The seven demo-sourced GIFs are committed but **not pushed**. A push ships them, with the
 status-beat difference and without the cluster victory screen. They are a stopgap, not the
 finished thing.
+
+---
+
+## Kit inventory, 2026-09-20 — what can actually be shot today
+
+Surveyed every kit in `flashboss-admin/Screenshot_Kits/`. Three states:
+
+**Shootable now** — one swap file, answers resolve: greek_roots*, latin_roots*,
+esperanto (×3), french (×3), italian (×3), latin, latin_p1, swahili (×3),
+spanish (×3), german_p1, german_p2, the_guide_p2. Kits with no
+`CHEATSHEET_6LANG.md` are fine: the bench reads the answers straight from the deck.
+
+**Blocked — no `*_SWAP.json` at all**, so the kit cannot seat: `german_roots_screenshot_kit`,
+`norman_roots_screenshot_kit`. Both have a cheat sheet and no deck.
+
+**Blocked — two swap files in one kit**, and `deck.swap_path()` refuses to choose:
+`the_guide_screenshot_kit` (cluster1_1 and cluster1_6), `english_screenshot_kit`.
+Work around it by copying the kit to a scratch directory with only the wanted swap
+and pointing `FLASHBOSS_KITS` there. Note `--kits` does **not** reach the shoot path;
+only the environment variable does.
+
+**Stale sheets that will stop the next store reshoot.** `latin_roots_screenshot_kit`
+and `greek_roots_screenshot_kit` were re-cut when the packs were rebuilt and their
+`CHEATSHEET_6LANG.md` was not. Latin's still describes the cred- cluster while the deck
+holds the famous-twenty opener; Greek's still lists hydrogen, hydraulic, hydrant.
+Every ANSWER lookup misses and the bench refuses — correctly. Regeneration is mechanical:
+each row is `ExampleTranslation → TargetWord` read from the swap file. Reported to
+flashboss-admin-75; **their copies are untouched and still stale**.
+
+## Routes: do not guess one
+
+The bench says it and it is right — a guessed menu route takes confident screenshots of
+the wrong screen. Worse, the older `*_eight_slots.keys` routes reach the boss with
+`KEY 8`, which is the **Tier Skip / BossRun sandbox**, not a cluster fight: its battle
+order is a shuffled difficulty split and there is no cluster victory at the end.
+`roots_store_d.keys` documents this and uses Know Your Enemy instead
+(`5` sanctum → `4` know your enemy → `1` the cluster → `5` fight, with
+`FLASHBOSS_KIT_FIGHT_READY=1`).
+
+So a fight film for a pack with no modern route — Spanish Core, English Core — needs
+either a hand-walk (`shoot.py record`, a human at the keyboard once) or iteration
+against the EXPECT gates. The gates fail loudly rather than banking a wrong frame, so
+iterating is safe, just slow.
