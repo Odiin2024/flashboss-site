@@ -1,3 +1,9 @@
+# Latin Roots / Greek Roots / German Roots / Norman Roots — THE IMMERSION
+# VARIANT of roots_fight_film.keys. Identical in every respect except the
+# last beat: it does not press 8 at the cluster victory, because an
+# immersion pack has no word list to toggle. Use roots_fight_film.keys for
+# an ESL pack (English Core, Spanish Core), which does.
+#
 # Roots — store slots 4, 5, 6: the boss fight, the killing blow, the victory.
 #
 # THE REGULAR FIGHT, NEVER THE BOSSRUN. The old *_seven_slots.keys reached the
@@ -100,10 +106,12 @@ KEY ENTER
 EXPECT {CARD1}
 EXPECT 🎆\s*\Z
 SHOT frame09
-# '8' toggles the word list between the pack language and English, in place.
-# ONLY AN ESL PACK HAS THAT TOGGLE. For German/Norman/Latin/Greek Roots use
-# immersion_fight_film.keys instead, or this line walks into the Sanctum.
-KEY 8
-SHOT frame10
+# NO KEY HERE. An ESL pack offers 8 to toggle the cluster-victory word list
+# between the pack language and English. AN IMMERSION PACK DOES NOT: its cards
+# carry no foreign-language field, the footer reads "press any key to continue",
+# and 8 is simply any key -- it LEAVES the screen and lands in the Sanctum. That
+# is how a menu got onto the end of every shipped immersion GIF once already,
+# and how it got onto the end of the Latin Roots reshoot before this file
+# existed. The fight is over when its cluster victory is on screen.
 LOG film route taken
 END

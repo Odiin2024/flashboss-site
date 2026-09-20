@@ -1,0 +1,40 @@
+--- /tmp/claude-1000/-home-odiin-Documents-Bootcamp-flashboss-site/5209bfaf-a198-4dcf-8c45-67b6cbba6bce/scratchpad/reshoot/key_script.py.orig	2026-09-20 22:01:40.243382688 +0200
++++ /home/odiin/knight-shoot-wt/key_script.py	2026-09-20 22:01:40.266382761 +0200
+@@ -410,7 +410,7 @@
+ 
+ # ── the script ────────────────────────────────────────────────────────────
+ 
+-VERBS = ('KEY', 'TYPE', 'ANSWER', 'SHOT', 'EXPECT', 'REFUTE', 'WAIT', 'LOG', 'END')
++VERBS = ('KEY', 'TYPE', 'ANSWER', 'MISS', 'SHOT', 'EXPECT', 'REFUTE', 'WAIT', 'LOG', 'END')
+ 
+ 
+ def parse_script(source):
+@@ -918,6 +918,28 @@
+                 raise
+             _write_log('line %d: ANSWER -> %s' % (lineno, digit))
+             return digit
++        if verb == 'MISS':
++            # Deliberately wrong. A film of a flawless run does not show what
++            # the game actually promises -- one step forward, TWO steps back --
++            # so a route needs to be able to lose the killstroke on purpose and
++            # fight back. (Odiin, 2026-09-20: "you are supposed to encounter
++            # adversity at least once in the bossfight. get to the killstroke,
++            # miss it. fight back, win".)
++            #
++            # The RIGHT digit is resolved first, exactly as ANSWER does, so a
++            # MISS is only ever taken on a screen the bench fully understands:
++            # if the grid is unreadable or the answer ambiguous this raises and
++            # stops the run, rather than pressing something arbitrary. Only then
++            # is a different digit chosen.
++            _text = screen_text()
++            right = resolve_answer(_text, _answers)
++            wrong = [d for d, _o in screen_options(_text) if d != right]
++            if not wrong:
++                raise ScriptError('line %d: MISS: the grid offers nothing but '
++                                  'the right answer' % lineno)
++            pick = wrong[len(wrong) // 2]
++            _write_log('line %d: MISS -> %s (the answer was %s)' % (lineno, pick, right))
++            return pick
+         if verb == 'SHOT':
+             _capture(arg or 'shot')
+             continue

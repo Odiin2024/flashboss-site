@@ -22,7 +22,7 @@
 })();
 </script>
 <title>FlashBoss — Flashcards with Boss Fights</title>
-<meta name="description" content="FlashBoss: spaced-repetition flashcards with boss fights. Build a real vocabulary: English, German, Spanish, Italian, French, Esperanto, or Toki Pona. Five packs free, the rest on Steam. Listen, read, repeat, rate, fight.">
+<meta name="description" content="FlashBoss: spaced-repetition flashcards with boss fights. Build a real vocabulary: English, Latin, French, Swahili, German, Italian, Spanish, Esperanto, or Toki Pona. Five packs free, the rest on Steam. Listen, read, repeat, rate, fight.">
 <link rel="icon" type="image/png" href="icon.png">
 <!-- TODO: hreflang URLs should be absolute (production domain) -->
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/home.html">
@@ -181,9 +181,10 @@ p.body b{color:var(--accent);}
 }
 
 /* ---- what you get ---- */
-.gives{display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid var(--line); border-top:0; position:relative; overflow:hidden;}
+.gives{display:grid; grid-template-columns:repeat(4,1fr); gap:0; border:1px solid var(--line); border-top:0; position:relative; overflow:hidden;}
 .gives::after{content:""; position:absolute; left:0; right:0; top:0; height:3px;
   background:linear-gradient(90deg, var(--gold), var(--green) 52%, var(--blue));}
+@media(max-width:980px){.gives{grid-template-columns:repeat(2,1fr);} .give:nth-child(2n){border-right:0;}}
 @media(max-width:680px){.gives{grid-template-columns:1fr;}}
 .give{padding:30px 22px 26px; border-right:1px solid var(--line); display:flex; flex-direction:column;}
 .give:nth-child(1){background:linear-gradient(180deg, rgba(224,169,63,.08), transparent 58%);}
@@ -271,7 +272,7 @@ footer .footer-links .div{opacity:.4;}
     <div class="wrap">
       <h1 class="reveal">FlashBoss<span class="cursor"></span></h1>
       <p class="sig reveal">spaced-repetition with boss fights</p>
-      <p class="lede reveal">Build a real vocabulary: <b><a href="packs.html">English</a>, <a href="german.html">German</a>, <a href="spanish.html">Spanish</a>, <a href="italian.html">Italian</a>, <a href="french.html">French</a>, <a href="esperanto.html">Esperanto</a>, or <a href="toki-pona.html">Toki Pona</a></b> — then prove it in a duel.</p>
+      <p class="lede reveal">Build a real vocabulary: <b><a href="packs.html">English</a>, <a href="latin.html">Latin</a>, <a href="french.html">French</a>, <a href="swahili.html">Swahili</a>, <a href="german.html">German</a>, <a href="italian.html">Italian</a>, <a href="spanish.html">Spanish</a>, <a href="esperanto.html">Esperanto</a>, or <a href="toki-pona.html">Toki Pona</a></b> — then prove it in a duel.</p>
       <div class="actions reveal">
         <a class="btn" href="wordlists.html">word lists</a>
         <a class="btn" href="lessons.html">lessons</a>
@@ -325,7 +326,7 @@ footer .footer-links .div{opacity:.4;}
           <p><a href="https://flashboss-demo.pages.dev/">Try the live demo &rarr;</a></p>
         </div>
         <a class="bf-box" href="https://flashboss-demo.pages.dev/">
-          <img src="bossfight-poster.png" data-gif="bossfight.gif" alt="Three FlashBoss boss fights in a row, each announced by a title card: Spanish Core asks for the Spanish word for heart, Latin Roots asks which word means a glass tank for fish, and The Guide asks you to name the spell from its rules text.">
+          <img src="bossfight-poster.png" data-gif="bossfight.gif" alt="Three FlashBoss boss fights in a row, each announced by its own title card. LatAm Spanish asks for the Spanish word for heart, Latin Roots asks which word means a glass tank for fish, and The Guide asks you to name the spell from its rules text. Each fight reaches the killstroke position, loses it to a wrong answer and is pushed two steps back, then climbs again and wins.">
           <span class="bf-hint">try the demo</span>
         </a>
       </div>
@@ -348,7 +349,11 @@ footer .footer-links .div{opacity:.4;}
         </div>
         <div class="give">
           <div class="g-h">Full language courses</div>
-          <p>Learn <a href="german.html">German</a>, <a href="italian.html">Italian</a>, <a href="spanish.html">Spanish</a>, <a href="french.html">French</a>, or <a href="esperanto.html">Esperanto</a> with FlashBoss. 3,000 words each — French completes with Pareto 1 and 2, out now.</p>
+          <p>Learn <a href="latin.html">Latin</a>, <a href="french.html">French</a>, <a href="swahili.html">Swahili</a>, <a href="german.html">German</a>, <a href="italian.html">Italian</a>, <a href="spanish.html">Spanish</a> or <a href="esperanto.html">Esperanto</a> with FlashBoss. Most run 3,000 words across Core, Pareto 1 and Pareto 2 — Latin is a 2,000-word reading course, and Swahili's Core is out with its Pareto packs to come.</p>
+        </div>
+        <div class="give">
+          <div class="g-h">Not a language at all</div>
+          <p><a href="the-guide.html">The Guide</a> — the rules a game master needs in their head, as flashcards. 1,205 cards in 62 clusters, 5E compatible.</p>
         </div>
       </div>
     </div>
