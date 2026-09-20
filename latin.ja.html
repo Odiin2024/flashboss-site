@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- SELF-TRANSLATED, ja. The prose on this page was written by Claude
+     (Opus), not by the translation fleet, on Odiin's word of 2026-09-20:
+     good enough for now, and flagged for a translation/adversarial pass
+     another day. The page carries the beta-translation notice so a reader
+     knows and so that pass can find it.
+     Canon held here: the six pack names stay English, FlashBoss stays
+     Latin, and every number is the English page's number in this locale's
+     separator — nothing was recounted. -->
+<title>ラテン語 — FlashBoss</title>
+<meta name="description" content="FlashBossのラテン語：10ティア・80クラスターで2,000語を読む読解コース。参照レッスン44本、マクロン付きの見出し語、そして最後は手を加えていないカエサル、キケロ、サッルスティウス、ネポス、リウィウスで終わる例文。Latin CoreとLatin Pareto、Steamで発売中。">
+<link rel="canonical" href="https://odiin2024.github.io/flashboss-site/latin.ja.html">
+<link rel="icon" type="image/png" href="icon.png">
+<!-- The Latin course page. Promoted 2026-09-19: Latin Core (Steam 5063240) and
+     Latin Pareto (5063250) are both on sale, so by site rule the page carries no
+     release date at all — dates are for things not yet out.
+     Counted from knight/flashcard_sets/Latin on 2026-09-19, not from copy:
+     Core 1,000 cards / 40 clusters / 26 lessons, Pareto 1,000 / 40 / 18 —
+     80 clusters, 2,000 cards, 44 reference lessons, ten tiers.
+     Card text carries de/es/ja/ru/zh (five, verified by reading the cluster
+     JSON keys: Translation_*, ExampleTranslation_*, Notes_*) plus the _gb
+     British layer. An earlier draft of this page said three; it was wrong.
+     STORE NAME: Steam sells the second pack as "Latin Pareto", with no 1 —
+     there is no Latin Pareto 2, the course forks instead. The page follows the
+     store so a reader can find it.
+     English only for now: when the siblings ship, the hreflang block, the
+     switcher <ul> and lang-redirect.js AVAIL gain them together. -->
+<link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/latin.html">
+<link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/latin.de.html">
+<link rel="alternate" hreflang="es" href="https://odiin2024.github.io/flashboss-site/latin.es.html">
+<link rel="alternate" hreflang="ja" href="https://odiin2024.github.io/flashboss-site/latin.ja.html">
+<link rel="alternate" hreflang="zh" href="https://odiin2024.github.io/flashboss-site/latin.zh.html">
+<link rel="alternate" hreflang="ru" href="https://odiin2024.github.io/flashboss-site/latin.ru.html">
+<link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/latin.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   FlashBoss — Latin page
+   Aesthetic: phosphor terminal. The through-line is the pack's own
+   arc, LAPIS -> LVCERNA: stone to lamplight. The page opens cold and
+   lapidary — the alphabet, the drill, sentences built for you — and
+   warms as you scroll until it is a lamp over a real page of Cicero.
+   ONE smooth ramp, no hard turn. Same mechanism as french.html.
+
+   TUNE THESE FIRST:
+   background.png   -> hero banner image (site default; no Latin art yet).
+   ============================================================ */
+:root{
+  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
+
+  /* STONE palette (top — cold, cut, inscriptional) */
+  --s-bg:#100d08;
+  --s-ink:#ecdcb6;
+  --s-dim:#b3a075;
+  --s-accent:#83b6dd;   /* marble silver — the chisel, not the pen */
+
+  /* LAMP palette (bottom — warm, close, the flame over the roll) */
+  --l-bg:#171421;
+  --l-ink:#ecdcb6;
+  --l-dim:#b3a075;
+  --l-accent:#e0a93f;   /* lamp amber — Latin gone readable */
+
+  /* mood: 0 = stone, 1 = lamp. Driven by scroll. ONE smooth ramp. */
+  --mood:0;
+
+  --line:color-mix(in oklab, #3a3120, #3a3120 calc(var(--mood) * 100%));
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0; font-family:var(--mono);
+  background:#100d08;
+  background:color-mix(in oklab, var(--s-bg), var(--l-bg) calc(var(--mood)*100%));
+  color:color-mix(in oklab, var(--s-ink), var(--l-ink) calc(var(--mood)*100%));
+  line-height:1.6; -webkit-font-smoothing:antialiased;
+  transition:background 120ms linear, color 120ms linear; overflow-x:hidden;
+}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.045) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.vignette{position:fixed; inset:0; pointer-events:none; z-index:9998;
+  background:radial-gradient(120% 90% at 50% 35%, transparent 55%, rgba(0,0,0,.5) 100%);}
+.wrap{max-width:880px; margin:0 auto; padding:0 24px;}
+
+nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line);}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--s-dim); margin-right:auto;}
+nav .brand a, nav .brand .sep{color:var(--s-dim); text-decoration:none;}
+nav .brand a:hover{color:var(--s-ink);}
+nav .brand .here{font-weight:800; color:var(--s-ink);}
+nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--s-ink);}
+nav .brand .logo:hover{color:var(--s-accent);}
+nav .brand .pipe{color:var(--s-dim); margin:0 11px;}
+.nav-mobile{display:none;}
+.nav-mobile a{color:inherit; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.08em; opacity:.85;}
+.nav-mobile a:hover{opacity:1; color:var(--s-accent);}
+@media(max-width:640px){ nav .brand, nav .links{display:none;} .nav-mobile{display:flex; flex:1; justify-content:space-between; align-items:center;} .nav-mobile .r{display:flex; gap:18px;} }
+nav .links a{color:inherit; text-decoration:none; opacity:.7; margin-left:22px;}
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+nav .links a.steam{font-weight:800; opacity:1; color:var(--s-ink);}
+nav .lang-switch{position:relative; margin-left:22px;}
+nav .lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--s-ink); background:var(--s-bg); border:1px solid var(--s-dim); padding:5px 8px; line-height:1; cursor:pointer;}
+nav .lang-toggle:hover, nav .lang-toggle[aria-expanded="true"]{background:var(--s-ink); color:var(--s-bg);}
+nav .lang-caret{font-size:8px; line-height:1; transition:transform .15s ease;}
+nav .lang-toggle[aria-expanded="true"] .lang-caret{transform:rotate(180deg);}
+nav .lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--s-bg); border:1px solid var(--s-dim); min-width:120px; z-index:50;}
+nav .lang-menu[hidden]{display:none;}
+nav .lang-menu li{margin:0; padding-left:0; position:static;}
+nav .lang-menu li::before{content:none;}
+nav .lang-menu a{display:block; font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--s-ink); text-decoration:none; padding:7px 10px; white-space:nowrap; opacity:1; margin:0;}
+nav .lang-menu a:hover{background:var(--s-ink); color:var(--s-bg); text-decoration:none;}
+nav .lang-menu a[aria-current="true"]{color:var(--s-accent);}
+nav .lang-menu a[aria-current="true"]:hover{color:var(--s-bg);}
+
+.reveal{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease;}
+.reveal.in{opacity:1; transform:none;}
+
+/* HERO — image band. The <img> carries the alt text; the gradient
+   sits over it so the type stays legible whatever the art is. */
+.hero{position:relative; padding:84px 0 36px; overflow:hidden; background:#100d08;}
+.hero .hero-img{position:absolute; inset:0; z-index:0; width:100%; height:100%; object-fit:cover; object-position:center 30%;}
+.hero::after{content:""; position:absolute; inset:0; z-index:1;
+  background:linear-gradient(180deg, rgba(13,17,22,.60) 0%, rgba(13,17,22,.84) 55%, #100d08 100%);}
+.hero .wrap{position:relative; z-index:2;}
+.kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--s-dim); opacity:.9; margin-bottom:26px;}
+.kicker b{color:var(--s-accent); font-weight:700;}
+.hero h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
+.cursor{display:inline-block; width:.6em; height:1em; vertical-align:-.08em; background:color-mix(in oklab, var(--s-accent), transparent 30%); margin-left:.12em; animation:blink 1.05s steps(1) infinite;}
+@keyframes blink{50%{opacity:0;}}
+.hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:30px 0 0; color:var(--s-ink); font-weight:500;}
+.hero .sig{font-size:13px; letter-spacing:.24em; text-transform:uppercase; color:var(--s-accent); margin:14px 0 0; opacity:.9;}
+.hero .lede{font-size:clamp(15px,2.2vw,18px); max-width:50ch; margin:24px 0 0; color:var(--s-dim);}
+.hero .lede b{color:var(--s-ink); font-weight:700;}
+.btn{display:inline-block; font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.08em; color:#100d08; background:color-mix(in oklab, var(--s-accent), transparent 22%);
+  padding:14px 26px; text-decoration:none; border:0; box-shadow:6px 6px 0 color-mix(in oklab, var(--s-accent), #000 62%); transition:transform .12s ease, box-shadow .12s ease;}
+.btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--s-accent), #000 62%);}
+.btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--s-accent), #000 62%);}
+.btn.hot{color:#171421; background:var(--l-accent); box-shadow:6px 6px 0 color-mix(in oklab, var(--l-accent), #000 60%);}
+.btn.hot:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--l-accent), #000 60%);}
+.hero .actions{display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:40px; max-width:520px;}
+.hero .actions .btn{margin-top:0; width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
+
+section{padding:64px 0;}
+.hero + section{padding-top:48px;}
+.frame{border:1px solid var(--line); position:relative; padding:34px 30px 32px;}
+.frame > .tag{position:absolute; top:-12px; left:22px;
+  background:color-mix(in oklab, var(--s-bg), var(--l-bg) calc(var(--mood)*100%));
+  padding:4px 12px; line-height:1; font-size:11px; letter-spacing:.3em; text-transform:uppercase;
+  color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+h2{font-size:clamp(26px,5vw,40px); margin:0 0 8px; font-weight:800; letter-spacing:-.01em;}
+.sub{color:var(--s-dim); font-size:14px; letter-spacing:.04em; margin:0 0 26px;}
+.sub.la{font-style:italic; font-size:16px; opacity:.92;}
+.sub a{color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%)); text-decoration:none; border-bottom:1px solid currentColor;}
+p.body{font-size:16px; max-width:62ch; margin:0 0 18px; color:color-mix(in oklab, var(--s-ink), var(--l-ink) calc(var(--mood)*100%));}
+p.body b{color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.la{font-style:italic; opacity:.96;}
+
+/* the two five-tier runs — Core cold, Pareto warming */
+.run{border:1px solid var(--line); display:grid; grid-template-columns:repeat(5,1fr); overflow:hidden; margin-bottom:18px;}
+.run .step{padding:22px 16px; border-right:1px solid var(--line); position:relative;}
+.run .step:last-child{border-right:0;}
+.run.core .step:nth-child(1){background:color-mix(in oklab, transparent, var(--s-accent) 5%);}
+.run.core .step:nth-child(2){background:color-mix(in oklab, transparent, var(--s-accent) 7%);}
+.run.core .step:nth-child(3){background:color-mix(in oklab, transparent, var(--s-accent) 9%);}
+.run.core .step:nth-child(4){background:color-mix(in oklab, transparent, var(--s-accent) 11%);}
+.run.core .step:nth-child(5){background:color-mix(in oklab, transparent, var(--s-accent) 13%);}
+.run.par .step:nth-child(1){background:color-mix(in oklab, transparent, var(--l-accent) 7%);}
+.run.par .step:nth-child(2){background:color-mix(in oklab, transparent, var(--l-accent) 10%);}
+.run.par .step:nth-child(3){background:color-mix(in oklab, transparent, var(--l-accent) 13%);}
+.run.par .step:nth-child(4){background:color-mix(in oklab, transparent, var(--l-accent) 16%);}
+.run.par .step:nth-child(5){background:color-mix(in oklab, transparent, var(--l-accent) 19%);}
+.run .t{font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%)); margin-bottom:10px; font-weight:700;}
+.run .step p{font-size:12.5px; margin:0; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%));}
+.runlabel{font-size:11px; letter-spacing:.24em; text-transform:uppercase; margin:0 0 10px; color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+@media(max-width:640px){.run{grid-template-columns:1fr;} .run .step{border-right:0; border-bottom:1px solid var(--line);} .run .step:last-child{border-bottom:0;}}
+
+/* tier & cluster ledger — straight off the pack manifest */
+.tiers{border:1px solid var(--line); margin-bottom:20px;}
+.tierrow{display:grid; grid-template-columns:max-content 1fr max-content; gap:0 22px; align-items:baseline; padding:18px 20px; border-bottom:1px solid var(--line);}
+.tierrow:last-child{border-bottom:0;}
+.tierrow .tno{font-size:12px; font-weight:800; letter-spacing:.16em; text-transform:uppercase; white-space:nowrap;
+  color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.tierrow .tcl{font-size:13px; color:color-mix(in oklab, var(--s-ink), var(--l-ink) calc(var(--mood)*100%));}
+.tierrow .tct{font-size:11.5px; letter-spacing:.04em; white-space:nowrap; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%));}
+.tierfoot{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; font-size:12px; letter-spacing:.06em; text-transform:uppercase; margin:0 0 26px; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%));}
+.tierfoot b{color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+@media(max-width:640px){.tierrow{grid-template-columns:1fr; gap:8px 0;}}
+
+/* sentence ladder — ten rungs, T1 to T10 */
+.ladder{list-style:none; margin:0; padding:0; counter-reset:tier;}
+.ladder li{counter-increment:tier; border-left:2px solid var(--line); padding:16px 0 16px 30px; margin-left:10px; position:relative;}
+.ladder li::before{content:"T" counter(tier); position:absolute; left:-17px; top:17px;
+  background:color-mix(in oklab, var(--s-bg), var(--l-bg) calc(var(--mood)*100%)); font-size:11px; font-weight:700; letter-spacing:.05em; padding:2px 0;
+  color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.ladder .tgt{font-weight:500; display:block;}
+.ladder li:nth-child(1) .tgt{font-size:15px;} .ladder li:nth-child(2) .tgt{font-size:15.4px;}
+.ladder li:nth-child(3) .tgt{font-size:15.8px;} .ladder li:nth-child(4) .tgt{font-size:16.2px;}
+.ladder li:nth-child(5) .tgt{font-size:16.6px;} .ladder li:nth-child(6) .tgt{font-size:17px;}
+.ladder li:nth-child(7) .tgt{font-size:17.4px;} .ladder li:nth-child(8) .tgt{font-size:17.8px;}
+.ladder li:nth-child(9) .tgt{font-size:18.2px;} .ladder li:nth-child(10) .tgt{font-size:18.6px; font-weight:700;}
+.ladder .en{display:block; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%)); font-size:13px; margin-top:6px;}
+.ladder .cite{display:inline-block; font-style:normal; font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; margin-top:8px; padding:2px 7px; border:1px solid var(--line);
+  color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.ladder .cite.made{opacity:.55; border-style:dashed;}
+
+/* source arc */
+.arc{border:1px solid var(--line);}
+.arcrow{display:grid; grid-template-columns:max-content 1fr max-content; gap:0 22px; align-items:baseline; padding:15px 20px; border-bottom:1px solid var(--line);}
+.arcrow:last-child{border-bottom:0;}
+.arcrow .an{font-size:12px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; white-space:nowrap;
+  color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.arcrow .aw{font-size:13px; color:color-mix(in oklab, var(--s-ink), var(--l-ink) calc(var(--mood)*100%));}
+.arcrow .ac{font-size:11.5px; white-space:nowrap; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%));}
+@media(max-width:640px){.arcrow{grid-template-columns:1fr; gap:6px 0;}}
+
+/* cards */
+.cards{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
+@media(max-width:640px){.cards{grid-template-columns:1fr;}}
+.card{border:1px solid var(--line); padding:20px 18px; cursor:pointer; background:rgba(255,255,255,.015); transition:border-color .15s ease; min-height:160px;}
+.card:hover{border-color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.card .art{font-size:12px; letter-spacing:.14em; font-weight:700; color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.card .word{font-size:24px; font-weight:800; margin:2px 0 12px;}
+.card .ex{font-size:13px; color:var(--s-dim); font-style:italic;}
+.card .trans{font-size:12.5px; color:var(--s-dim); margin-top:10px; max-height:0; overflow:hidden; opacity:0; transition:max-height .3s ease, opacity .3s ease;}
+.card.flipped .trans{max-height:340px; opacity:1;}
+.card .trans .nb{display:block; margin-top:8px; white-space:pre-line; font-size:12px; opacity:.9;}
+.card .hint{font-size:10px; letter-spacing:.2em; text-transform:uppercase; opacity:.45; margin-top:12px;}
+
+/* macron minimal pairs */
+.pairs{display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-top:24px;}
+@media(max-width:560px){.pairs{grid-template-columns:1fr;}}
+.pr{border:1px dashed var(--line); padding:18px; text-align:center;}
+.pr .big{font-size:26px; font-weight:800; letter-spacing:.01em;}
+.pr .big .mk{color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.pr .from{font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; opacity:.6; margin-bottom:8px;}
+.pr .gloss{font-size:12.5px; margin-top:8px; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%));}
+.pair-note{font-size:13px; margin:16px 0 0; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%)); max-width:62ch;}
+
+/* lessons list */
+.lessons{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(2,1fr); gap:0 26px;}
+@media(max-width:640px){.lessons{grid-template-columns:1fr;}}
+.lessons li{border-top:1px solid var(--line); padding:13px 0; font-size:13.5px;}
+.lessons li .no{font-size:11px; font-weight:700; letter-spacing:.12em; margin-right:10px;
+  color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.lessons li span.d{display:block; font-size:12.5px; margin-top:3px; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%));}
+
+/* packs */
+.packs{display:grid; grid-template-columns:repeat(2,1fr); gap:0; border:1px solid var(--line);}
+@media(max-width:640px){.packs{grid-template-columns:1fr;}}
+.pack{padding:24px 20px; border-right:1px solid var(--line);}
+.pack:last-child{border-right:0;}
+.pack .n{font-size:18px; font-weight:800;}
+.pack .lvl{font-size:12px; letter-spacing:.06em; color:var(--s-dim); margin:4px 0 12px;}
+.pack p{font-size:13px; color:var(--s-dim); margin:0;}
+.pack .soon{display:inline-block; font-size:10px; letter-spacing:.2em; text-transform:uppercase; margin-top:12px; padding:3px 8px; border:1px solid var(--line);
+  color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+a.pack{text-decoration:none; color:inherit; display:block; transition:background .15s ease, border-color .15s ease;}
+a.pack:hover{background:rgba(224,169,63,.07); border-color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+@media(max-width:640px){.pack{border-right:0; border-bottom:1px solid var(--line);} .pack:last-child{border-bottom:0;}}
+
+/* the fork — the third thousand */
+.fork{display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-top:22px;}
+@media(max-width:640px){.fork{grid-template-columns:1fr;}}
+.path{border:1px solid var(--line); padding:22px 20px; opacity:.8;}
+.path .pn{font-size:17px; font-weight:800;}
+.path .pl{font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; margin:5px 0 12px; color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.path p{font-size:13px; margin:0; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%));}
+.path .tbd{display:inline-block; font-size:10px; letter-spacing:.2em; text-transform:uppercase; margin-top:14px; padding:3px 8px; border:1px dashed var(--line); opacity:.75;}
+
+.method dl{display:grid; grid-template-columns:max-content 1fr; gap:14px 22px; margin:0;}
+.method dt{font-weight:700; color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%)); white-space:nowrap;}
+.method .frame > .tag{color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.method dd{margin:0; font-size:14.5px; color:var(--s-dim);}
+@media(max-width:560px){.method dl{grid-template-columns:1fr; gap:4px 0;} .method dd{margin-bottom:14px;}}
+
+/* FAQ */
+.faq details{border-top:1px solid var(--line);}
+.faq details:last-of-type{border-bottom:1px solid var(--line);}
+.faq summary{list-style:none; cursor:pointer; padding:16px 30px 16px 0; font-size:15px; font-weight:700; position:relative;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"+"; position:absolute; right:4px; top:14px; font-size:18px; font-weight:400;
+  color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.faq details[open] summary::after{content:"\2212";}
+.faq summary:hover{color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.faq .a{font-size:14px; margin:0 0 20px; max-width:64ch; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%));}
+.faq .a a{color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%)); text-decoration:none; border-bottom:1px solid currentColor;}
+
+.final{text-align:center; padding:90px 0 100px;}
+.final h2{font-size:clamp(28px,6vw,52px);}
+.final p{color:var(--l-dim); max-width:48ch; margin:14px auto 0; font-size:15px;}
+.final .dates{margin-top:26px; font-size:13px; line-height:2; letter-spacing:.1em; text-transform:uppercase; color:var(--l-accent);}
+.final .also{margin-top:22px; font-size:13px;}
+.final .also a{color:var(--l-dim); text-decoration:none; border-bottom:1px solid currentColor;}
+.final .also a:hover{color:var(--l-ink);}
+
+footer{border-top:1px solid var(--line); padding:28px 24px; font-size:12px; color:var(--l-dim); text-align:center; letter-spacing:.04em;}
+footer .epi{font-style:italic; opacity:.78; max-width:54ch; margin:0 auto 12px; line-height:1.7;}
+footer .epi .tr{font-style:normal; opacity:.85; display:block; margin-top:8px; font-size:11.5px;}
+footer .epi-cite{font-style:normal; font-size:11px; letter-spacing:.12em; text-transform:uppercase; opacity:.75; display:inline-block; margin-top:8px;}
+footer .footer-links{display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap; margin-top:14px;}
+footer .footer-links a{color:inherit; text-decoration:none; opacity:.75; letter-spacing:.04em;}
+footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+footer .footer-links .div{opacity:.4;}
+
+/* bundle line in the closing call to action — one Steam bundle per course */
+.bundleline{font-size:14.5px; max-width:56ch; margin:0 auto 22px; opacity:.95;}
+.bundleline b{font-weight:800;}
+.beta-note{background:#1b1508; border-bottom:1px solid #6b5a2a; color:#e8d9b0; font:500 12.5px/1.55 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; text-align:center; padding:9px 16px; margin:0;}
+.beta-note b{color:#e0a93f; font-weight:700; letter-spacing:.09em;}
+.beta-note a{color:#e0a93f; text-decoration:underline; text-underline-offset:2px;}
+</style>
+<script src="lang-redirect.js"></script>
+</head>
+<body>
+<div class="beta-note" role="status"><b>ベータ翻訳</b> — このページの日本語版は下書きで、まだ校正を経ていません。文章の誤りを見つけたら <a href="report.html">お知らせください</a> · <a href="latin.html">Read in English</a></div>
+<div class="overlay"></div>
+<div class="vignette"></div>
+
+<nav>
+  <span class="brand"><a class="logo" href="index.ja.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.ja.html">ホーム</a><span class="sep"> · </span><a href="packs.ja.html">パック</a><span class="sep"> · </span><span class="here">ラテン語</span></span>
+  <span class="links">
+    <a href="manual/index.html">攻略ガイド（β）</a>
+    <a href="resources.ja.html">リソース</a>
+    <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-latin" target="_blank" rel="noopener">steam</a>
+  </span>
+  <span class="nav-mobile">
+    <a href="home.ja.html">ホーム</a>
+    <span class="r"><a href="resources.ja.html">リソース</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-latin" target="_blank" rel="noopener">steam</a></span>
+  </span>
+  <div class="lang-switch">
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="言語を選択">JA<span class="lang-caret">▾</span></button>
+    <ul class="lang-menu" hidden>
+      <li><a href="latin.html">English</a></li>
+      <li><a href="latin.de.html">Deutsch</a></li>
+      <li><a href="latin.es.html">Español</a></li>
+      <li><a href="latin.ja.html" aria-current="true">日本語</a></li>
+      <li><a href="latin.zh.html">简体中文</a></li>
+      <li><a href="latin.ru.html">Русский</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <header class="hero">
+    <!-- background.png is the default hero for a language with no art of its
+         own (German/Spanish/Italian/Esperanto each have one). The onerror keeps
+         the hero on flat ink if the image ever goes missing. -->
+    <img class="hero-img" src="background.png" alt="FlashBoss — すべてのコースの顔である月夜の学び舎" loading="eager" decoding="async" onerror="this.style.display='none'">
+    <div class="wrap">
+      <p class="kicker reveal">2パック · <b>2,000語</b> · 10ティア · レッスン44本 · Steamで発売中</p>
+      <h1 class="reveal">Latīna<span class="cursor"></span></h1>
+      <p class="tagline reveal">本物のラテン語を読む。ラテン語について書かれた本ではなく。</p>
+      <p class="sig reveal">聞く・読む・繰り返す・評価する・戦う</p>
+      <p class="lede reveal">2,000語、10ティア、ひとつの技能。例文はあなたのために組まれた文から始まり、最後は<b>カエサル、キケロ、サッルスティウス、ネポス、リウィウスが実際に書いたとおりの文</b>になります — 削ったのは長さだけ、作り足したものはありません。</p>
+      <div class="actions reveal">
+        <a class="btn" href="wordlists.ja.html?lang=Latin&amp;set=Core">単語リスト</a>
+        <a class="btn" href="lessons.ja.html?lang=Latin">レッスン</a>
+        <a class="btn" href="https://flashboss-demo.pages.dev/">デモを試す</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- THE ARGUMENT -->
+  <section class="wrap">
+    <div class="frame">
+      <span class="tag">ラテン語コースの設計</span>
+      <h2>ひとつの技能：読むこと</h2>
+      <p class="sub la">Legendō discitur — 読むことによって学ばれる。</p>
+      <p class="body">ここでは、自分でラテン語を作文することは求められません。このコースはすべて、印刷された一行を見て、それが何を言っているか分かるようになるために組まれています — しかもそこへは、文法が終わるまで待たせるのではなく、最初のティアから例文の前に立たせることで連れていきます。</p>
+      <p class="body">順序こそが論拠です。2,000の見出し語が10のティアに置かれ、どのティアも25枚ずつのクラスターが8つ。文法は、それを最初に必要とするカードのところへ、レッスン1本ずつ届きます。まだ習っていない文法を使う例文は、ひとつもありません。ティア10でははしごに教えることが残っておらず、あなたはキケロを原文のまま読んでいます — その道中で、<b>文脈の中の17,007語のラテン語</b>を読むことになります。</p>
+
+      <p class="runlabel">Latin Core — ティア1〜5</p>
+      <div class="run core reveal">
+        <div class="step"><div class="t">ティア1</div><p>ローマが発音したとおりのアルファベット、指し示す語、つなぎの語、第一の動者、元老院と剣の最初の名詞。</p></div>
+        <div class="step"><div class="t">ティア2</div><p>対格、現在時制、命令法。日々の巡り、フォルム、体、数えることと値打ち。</p></div>
+        <div class="step"><div class="t">ティア3</div><p>属格と与格、複数形のすべて、さらに2つの活用、未完了過去。道、家、巡る年。</p></div>
+        <div class="step"><div class="t">ティア4</div><p>奪格、第三変化、前置詞と格 — そして最初の本物のカエサル、わずかに手を加えたもの。</p></div>
+        <div class="step"><div class="t">ティア5</div><p>完了とその一族、主要形、関係節。カエサルは200枚のうち86枚に載り、うち26枚は原文のままです。</p></div>
+      </div>
+
+      <p class="runlabel">Latin Pareto — ティア6〜10</p>
+      <div class="run par reveal">
+        <div class="step"><div class="t">ティア6</div><p>分詞、3つすべて、そして受動態。カエサルは続き、ネポスが本領を現します。</p></div>
+        <div class="step"><div class="t">ティア7</div><p>絶対奪格、受動態の完成、異態動詞。キケロの書簡が、くだけた語法の扉を開きます。</p></div>
+        <div class="step"><div class="t">ティア8</div><p>不定法の一族と間接話法。サッルスティウスが加わり、200枚のうち192枚が原文のままになります。</p></div>
+        <div class="step"><div class="t">ティア9</div><p>接続法、cum節、目的と結果、間接疑問。リウィウスが名簿に加わります。</p></div>
+        <div class="step"><div class="t">ティア10</div><p>動名詞と動形容詞、そして出典の読み方。キケロの弁論と哲学が幹を締めくくります。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SENTENCE LADDER -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">育っていく例文</span>
+      <h2>「あなたのために作った文」から「キケロが書いた文」へ</h2>
+      <p class="sub">10のティアそれぞれから、カード1枚分の例文を順に並べました。以下に言い換えはひとつもありません。ティア4からは出典が実在し、印のないものは著者自身のことばです。</p>
+      <ol class="ladder">
+        <li class="reveal"><span class="tgt la">Ut vides, Caesar noster est.</span><span class="en">ご覧のとおり、カエサルは我々の側の人です。</span><span class="cite made">ティアのために作った文</span></li>
+        <li class="reveal"><span class="tgt la">Dum Caesar in Gallia est, senatus legem probat.</span><span class="en">カエサルがガリアにいるあいだに、元老院は法を承認します。</span><span class="cite made">ティアのために作った文</span></li>
+        <li class="reveal"><span class="tgt la">Copiae nostrae iam discedebant et castra relinquebant.</span><span class="en">我らの軍はすでに出発し、陣営を後にしつつありました。</span><span class="cite made">ティアのために作った文</span></li>
+        <li class="reveal"><span class="tgt la">Tempestates et nostros in castris continebant et hostem a pugna prohibebant.</span><span class="en">嵐は我らの兵を陣中にとどめ、同時に敵を戦いから遠ざけていました。</span><span class="cite">Caes. BG 4.34.4より改変</span></li>
+        <li class="reveal"><span class="tgt la">Ibi ad ultimum iugum pervenit aciemque eo loco constituit.</span><span class="en">そこで彼は最も奥の尾根に達し、その場所に戦列を敷きました。</span><span class="cite">Caes. BG 8.14.5</span></li>
+        <li class="reveal"><span class="tgt la">Ne Vorenus quidem tum sese vallo continet, sed omnium veritus existimationem subsequitur.</span><span class="en">そのときウォレヌスでさえ、塁の内にとどまってはいません。皆がどう思うかを恐れて、あとに続きます。</span><span class="cite">Caes. BG 5.44.5</span></li>
+        <li class="reveal"><span class="tgt la">Omnia mihi cum eo intercedunt iura summae necessitudinis.</span><span class="en">この上なく親しい間柄の絆が、すべて彼と私のあいだにあります。</span><span class="cite">Cic. Fam. 13.14</span></li>
+        <li class="reveal"><span class="tgt la">Nobis est domi inopia, foris aes alienum, mala res, spes multo asperior.</span><span class="en">内には欠乏、外には負債、事情は悪く、見通しはさらに厳しいものです。</span><span class="cite">Sall. Cat. 20.13</span></li>
+        <li class="reveal"><span class="tgt la">Catilina postquam fusas copias seque cum paucis relictum videt, memor generis atque pristinae suae dignitatis in confertissumos hostis incurrit ibique pugnans confoditur.</span><span class="en">自軍が潰走し、自分がわずかな者と取り残されたのを見て、カティリナは家柄とかつての威信を思い、敵のもっとも密集したところへ突き入り、そこで戦いながら刺し貫かれます。</span><span class="cite">Sall. Cat. 60.7</span></li>
+        <li class="reveal"><span class="tgt la">Videtis illum subcrispo capillo, nigrum, qui eo vultu nos intuetur ut sibi ipse peracutus esse videatur.</span><span class="en">あの少し縮れ毛の、浅黒い男が見えるでしょう。自分をひどく切れ者だと思っているような顔つきで、こちらを見ている男です。</span><span class="cite">Cic. Verr. 2.2.108</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- WHO YOU READ -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">誰のラテン語か</span>
+      <h2>著者は順に登場します</h2>
+      <p class="sub">ティア1から3には出典がまったくなく、そのことを明記しています。これらの文は文法の上限に合わせて組まれたものです。本物のラテン語には、それほど単純な語法の層が存在しないからです。カエサルはティア4で登場し、ティア8までに足場は取り払われます。</p>
+      <div class="arc">
+        <div class="arcrow"><div class="an">ティア1〜3</div><div class="aw">そのティアの文法に合わせて組んだ文 — 著者を名乗らず、におわせもしません</div><div class="ac">600枚中、出典0</div></div>
+        <div class="arcrow"><div class="an">ティア4</div><div class="aw">カエサル、<i>ガリア戦記</i> — 多くは長さのために節を刈り込んでいます</div><div class="ac">出典62 · 原文のまま13</div></div>
+        <div class="arcrow"><div class="an">ティア5</div><div class="aw">全体にカエサル、ネポスが始まります</div><div class="ac">出典86 · 原文のまま26</div></div>
+        <div class="arcrow"><div class="an">ティア6</div><div class="aw">カエサルとネポス、<i>英雄伝</i></div><div class="ac">出典145 · 原文のまま84</div></div>
+        <div class="arcrow"><div class="an">ティア7</div><div class="aw">キケロの書簡 — <i>ad Atticum</i>、<i>ad Familiares</i> — がカエサルとネポスに並びます</div><div class="ac">出典170 · 原文のまま109</div></div>
+        <div class="arcrow"><div class="an">ティア8</div><div class="aw">サッルスティウスが加わり、改変は事実上なくなります</div><div class="ac">出典196 · 原文のまま192</div></div>
+        <div class="arcrow"><div class="an">ティア9</div><div class="aw">リウィウス第1巻が、サッルスティウス、キケロ、カエサルに加わります</div><div class="ac">出典197 · 原文のまま195</div></div>
+        <div class="arcrow"><div class="an">ティア10</div><div class="aw">キケロの弁論と哲学 — 幹が届くうちで最も難しい帯域</div><div class="ac">出典196 · 原文のまま194</div></div>
+      </div>
+      <p class="sub" style="margin:20px 0 0;">2つのパック全体で、<b>2,000の例文のうち1,052に出典が付いています</b>。そのうち813は、著者自身の手を加えていないことばです。どのカードの出典も、巻・章・節を示します。その読み方はレッスン41が教えます。</p>
+    </div>
+  </section>
+
+  <!-- TIER & CLUSTER LEDGER -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">全体図</span>
+      <h2>10ティア、80クラスター</h2>
+      <p class="sub">どのクラスターも25枚、最後はボス戦です。隠しごとはありません — 全リストは<a href="wordlists.ja.html?lang=Latin&amp;set=Core">単語リストのページ</a>にあり、購入前に無料で読めます。</p>
+      <div class="tiers">
+        <div class="tierrow">
+          <div class="tno">ティア1</div>
+          <div class="tcl">指し示す語 · 継ぎ目 · つなぎ · 第一の動者 · 元老院と剣 · 多くと強き · 物のありよう · 布陣</div>
+          <div class="tct">8クラスター · 200枚</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">ティア2</div>
+          <div class="tcl">日々の巡り · 武器と人 · フォルム · 肉と息 · 数と量 · 値と誉れ · 時と潮 · 再集結</div>
+          <div class="tct">8クラスター · 200枚</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">ティア3</div>
+          <div class="tcl">行きつ戻りつ · 長き道 · 肉と骨組み · 父祖 · 家と炉 · 望みと恐れ · 巡る年 · 宿駅</div>
+          <div class="tct">8クラスター · 200枚</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">ティア4</div>
+          <div class="tcl">気分と瞬間 · 転じる手 · 生ける体 · クリア · 陸と海より · より多くと最も · 冬営 · 名簿</div>
+          <div class="tct">8クラスター · 200枚</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">ティア5</div>
+          <div class="tcl">成されしこと · 完了の語幹 · 会戦 · 手中の業 · 命と体 · 誉と咎 · 定めの刻 · 全き記述</div>
+          <div class="tct">8クラスター · 200枚</div>
+        </div>
+      </div>
+      <p class="tierfoot"><span>Core：5ティア · 40クラスター · <b>1,000枚</b></span><span>参照レッスン26本</span><span>読みの土台</span></p>
+      <div class="tiers">
+        <div class="tierrow">
+          <div class="tno">ティア6</div>
+          <div class="tcl">精神の営み · 時と日 · 兵士の暮らし · 全き数え · 家の財産 · 死すべき身 · 条約と権力 · ほつれた端</div>
+          <div class="tct">8クラスター · 200枚</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">ティア7</div>
+          <div class="tcl">出会いと別れ · 疾き手 · 頭数 · 傷と労苦 · 親族と隣人 · 位と官職 · 海の道 · 中道</div>
+          <div class="tct">8クラスター · 200枚</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">ティア8</div>
+          <div class="tcl">真と偽 · 下す命 · 健と病 · 重さと価 · 今の刻 · 戦の潮目 · 家の蓄え · 最後の防塁</div>
+          <div class="tct">8クラスター · 200枚</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">ティア9</div>
+          <div class="tcl">望みと誓い · 数に照らして · 是と非 · 崩れた陣列 · 塵と灰 · 聖なる祭儀 · 偽りと暴力 · 残りしもの</div>
+          <div class="tct">8クラスター · 200枚</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">ティア10</div>
+          <div class="tcl">開かれた書 · 最後の戦い · 血と骨 · 誉れと恥 · 使節と条約 · 炉と世継ぎ · 最後の計り · 結びの頁</div>
+          <div class="tct">8クラスター · 200枚</div>
+        </div>
+      </div>
+      <p class="tierfoot"><span>Pareto：5ティア · 40クラスター · <b>1,000枚</b></span><span>参照レッスン18本</span><span>幹の完成</span></p>
+    </div>
+  </section>
+
+  <!-- THE CARD -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">見ただけで分かる</span>
+      <h2>マクロンは飾りではなく、情報です</h2>
+      <p class="sub">見出し語はすべて、辞書が印刷するとおりに出ます — 長母音には印、名詞には性と属格の語幹、動詞には活用。2,000の見出し語のうち1,320にマクロンが付きます。カードをタップするとめくれます。</p>
+      <div class="cards">
+        <div class="card reveal">
+          <div class="art">f., -is</div>
+          <div class="word">virtūs</div>
+          <div class="ex la">Virtus Romana magna est.</div>
+          <div class="trans">勇気、雄々しさ、徳 — &ldquo;ローマの勇気は大きい。&rdquo;<span class="nb">名詞｜属格単数virtūtis — 語幹はvirtūt-
+長いū：vir-tūs
+vir&lsquo;男&rsquo;から。男に備わる性質のこと。</span></div>
+          <div class="hint">タップでめくる</div>
+        </div>
+        <div class="card reveal">
+          <div class="art">-iō, -ere</div>
+          <div class="word">faciō</div>
+          <div class="ex la">Nos idem facimus.</div>
+          <div class="trans">作る、行う — &ldquo;私たちは同じことをしています。&rdquo;<span class="nb">動詞｜1人称複数facimus = &lsquo;私たちは作る、行う&rsquo;
+長いō：fa-ci-ō。aとiは短いまま
+idem = &lsquo;同じもの&rsquo;（目的語の役割）</span></div>
+          <div class="hint">タップでめくる</div>
+        </div>
+        <div class="card reveal">
+          <div class="art">n., -ī</div>
+          <div class="word">malum</div>
+          <div class="ex la">Civitas commune malum videt.</div>
+          <div class="trans">悪、災い — &ldquo;国家は共通の災いを見ています。&rdquo;<span class="nb">名詞｜対格単数malum = 形は主格単数と同じ
+マクロンなし：ma-lum、母音はどちらも短い
+mālumは長いāで、りんごのこと。</span></div>
+          <div class="hint">タップでめくる</div>
+        </div>
+      </div>
+
+      <div class="pairs reveal">
+        <div class="pr">
+          <div class="from">ティア1 · ティア3</div>
+          <div class="big">hic &nbsp;·&nbsp; h<span class="mk">ī</span>c</div>
+          <div class="gloss"><b>これ</b>と<b>ここ</b>。印刷では一文字の違いで、母音の上の線だけが二つを分けています。</div>
+        </div>
+        <div class="pr">
+          <div class="from">ティア10 · ティア4</div>
+          <div class="big">os &nbsp;·&nbsp; <span class="mk">ō</span>s</div>
+          <div class="gloss"><b>骨</b>と<b>口</b>。同じ三文字、同じ中性第三変化で、ティアは六つ離れています — そして二つめを教えるカードが、そのことを書いています。</div>
+        </div>
+      </div>
+      <p class="pair-note">マクロンは見出し語で止まります。例文は印を付けずに組まれています。これから開く本物のラテン語の本が、すべてそう印刷されているからです — だから読む練習の相手は、教材ではなく実物そのものです。母音の長さはカードが教え、それを担わせるのは文の役目です。</p>
+    </div>
+  </section>
+
+  <!-- REFERENCE LESSONS -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">単語リストでは終わらない</span>
+      <h2>44のレッスンが、順に発火する</h2>
+      <p class="sub">参照レッスンは、それが必要になるちょうどそのカードで解錠され、以後はいつでも読み返せます。Coreの26本とParetoの18本は、すべて<a href="lessons.ja.html?lang=Latin">レッスンのページ</a>で無料で読めます。</p>
+      <ul class="lessons">
+        <li><span class="no">01</span>ラテン語へようこそ<span class="d">英語の読み手が読み違える四つの文字 — c、g、v、qu — を復元音で。そしてマクロンは何のためにあるのか。</span></li>
+        <li><span class="no">10</span>対格<span class="d">文の意味を変える最初の格を、それを最初に必要とするカードの上で。</span></li>
+        <li><span class="no">14</span>属格と与格<span class="d">「〜の」と「〜に」、そしてなぜ属格単数がすべての名詞カードに印刷されているのか。</span></li>
+        <li><span class="no">18</span>奪格<span class="d">英語に名前のない格と、それが担う六つの仕事。</span></li>
+        <li><span class="no">23</span>主要形<span class="d">ラテン語の動詞がなぜ四つの形で示されるのか、そしてどの形からでも残りへ辿り着く方法。</span></li>
+        <li><span class="no">30</span>絶対奪格<span class="d">カエサルを速さのまま読めるようにする構文。</span></li>
+        <li><span class="no">34</span>間接話法<span class="d">対格と不定法：ローマ人は&lsquo;彼は〜と言った&hellip;&rsquo;をどう書くのか。</span></li>
+        <li><span class="no">41</span>出典の読み方<span class="d"><i>Caes. BG 5.44.5</i>が何を指すのか、そしてその頁の続きをどう探しに行くのか。</span></li>
+      </ul>
+      <p class="sub" style="margin:22px 0 0;">ほかに収録：yとして働くi、chとae/oe、つなぎの語、第一の動者、現在時制、命令法、音の体系、複数形のすべて、さらに2つの活用、未完了過去、第三変化、前置詞と格、完了とその一族、関係節、速さの中でのつなぎの語、3つの分詞すべてとその2つの働き、受動態を二度、異態動詞、不定法の一族、接続法、cum節、目的と結果、間接疑問、動名詞、動形容詞 — そして次に向かう先を示す最終レッスン。</p>
+    </div>
+  </section>
+
+  <!-- PACKS -->
+  <section class="wrap">
+    <div class="reveal">
+      <h2>読めるようになるまで、2パック</h2>
+      <p class="sub">ラテン語は幹であって、3段の階段ではありません。CoreとParetoを合わせたものが2,000語の読解コースのすべてで、終わりまでに文法は完結します。</p>
+      <div class="packs">
+        <a class="pack" href="https://store.steampowered.com/app/5063240/?utm_source=website-latin" target="_blank" rel="noopener">
+          <div class="n">Latin Core</div>
+          <div class="lvl">ティア1〜5 · 1,000語 · レッスン26本</div>
+          <p>読みの土台。はじめはティアに合わせて組んだ文、終わりには本物のカエサル。基本ゲームが必要です。</p>
+          <span class="here">Steamで発売中</span>
+        </a>
+        <a class="pack" href="https://store.steampowered.com/app/5063250/?utm_source=website-latin" target="_blank" rel="noopener">
+          <div class="n">Latin Pareto</div>
+          <div class="lvl">ティア6〜10 · 1,000語 · レッスン18本</div>
+          <p>第二の1,000語、そして足場の終わり：ネポス、キケロの書簡、サッルスティウス、リウィウス、キケロの弁論。Coreが必要です。</p>
+          <span class="here">Steamで発売中</span>
+        </a>
+      </div>
+
+      <h2 style="margin-top:54px;">そのあと、第三の1,000語を選ぶ</h2>
+      <p class="sub">基本の読解力は分岐点であって、終点ではありません。幹が2,000語で止まるのは意図的です。その先でラテン語は本当に分かれ、次の1,000語が何になるかは、何を読みたいかで決まります。どちらの枝も、まだ作られていません。</p>
+      <div class="fork">
+        <div class="path">
+          <div class="pn">古典詩</div>
+          <div class="pl">ウェルギリウス · オウィディウス · カトゥルス · ホラティウス</div>
+          <p>韻文の語順、韻律、そして詩人のところにしか現れない語彙。幹の散文のはしごは前提であって、代わりにはなりません。</p>
+          <span class="tbd">計画中 · 未制作</span>
+        </div>
+        <div class="path">
+          <div class="pn">教会ラテン語</div>
+          <div class="pl">ウルガータ · 賛歌 · 典礼</div>
+          <p>教会ラテン語は、それ自体がひとつの語法の層です — 構文も語彙も異なり、発音も独自のもの。だからこれは幹の一章ではなく、一本の枝なのです。</p>
+          <span class="tbd">計画中 · 未制作</span>
+        </div>
+      </div>
+      <p class="sub" style="margin:18px 0 0;">どちらの枝も、CoreとParetoを入口の条件とします。日付はどちらにもありません。約束ではなく、棚に載せて確保してあるだけです。</p>
+    </div>
+  </section>
+
+  <!-- METHOD -->
+  <section class="wrap method">
+    <div class="frame reveal">
+      <span class="tag">なぜ定着するのか</span>
+      <h2>単語カードを、ひとつの仕組みに</h2>
+      <dl>
+        <dt>フィボナッチ間隔反復</dt><dd>カードごとに0〜5で自己評価。よく覚えているほど、次に出るまでの間隔が延びます — フィボナッチ数列にもとづく間隔反復です。</dd>
+        <dt>ボス戦</dt><dd>80クラスターそれぞれの関門は決闘。いちばん苦手な単語と向き合い、打ち倒さない限り勝てません。</dd>
+        <dt>卒業</dt><dd>クラスターを攻略すると、そのカードは日々の山から永久に抜けます。学ぶほど、山は小さくなります。</dd>
+        <dt>音声</dt><dd>見出し語にも例文にも、ラテン語のニューラル音声 — <i>la_LA-flashboss_m</i>。FlashBoss向けに追加学習し、CC0で公開しています。古典式（復元）発音で読み、マクロンを実際の母音の長さとして扱います。合成音声であり、話者の録音ではありません。</dd>
+        <dt>あなたの言語</dt><dd>2,000枚すべてが、訳・例文訳<i>と</i>解説を、英語に加えて<b>ドイツ語・スペイン語・日本語・ロシア語・簡体字中国語</b>で持っています — 30,000のフィールドに、欠けはひとつもありません。参照レッスン44本すべてが同じ5言語を備え、ゲームのインターフェースも同じです。ラテン語は英語を一語も使わずに遊べます。</dd>
+        <dt>マクロン</dt><dd>長母音の印は2,000の見出し語のうち1,320に付き、例文には付きません — 教えるところは辞書の流儀、読むところは印刷の流儀です。</dd>
+        <dt>本物の出典</dt><dd>1,052の例文が、出どころの巻・章・節を示します。うち813は手を加えていません。すべてパブリックドメインの版から採っています。</dd>
+        <dt>レッスン</dt><dd>2つのパックを合わせた参照レッスン44本が、これから読むものを解錠する地点で発火します。</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="wrap faq">
+    <div class="reveal">
+      <h2>よくある質問</h2>
+      <p class="sub">買う前に、みなさんが尋ねること。</p>
+
+      <details>
+        <summary>どこで買えますか?</summary>
+        <p class="a">2つのパックはどちらもSteamで発売中です：<a href="https://store.steampowered.com/app/5063240/?utm_source=website-latin-faq" target="_blank" rel="noopener">Latin Core</a>と<a href="https://store.steampowered.com/app/5063250/?utm_source=website-latin-faq" target="_blank" rel="noopener">Latin Pareto</a>。単語リストは両方とも、レッスンも44本すべて、このサイトで無料で読めます。どちらかを買う前にコースを見極めたい方は、どうぞ。</p>
+      </details>
+
+      <details>
+        <summary>これはどの発音ですか?</summary>
+        <p class="a">古典式 — カエサルのローマの復元発音です。レッスンでも音声でも同じで、cとgはつねに硬音、vは英語のwのように、<i>Caesar</i>はドイツ語の<i>Kaiser</i>のように読みます。教会式の音声は別に計画していますし、教会ラテン語そのものは、このコース内の選択肢ではなく独立した枝です。</p>
+      </details>
+
+      <details>
+        <summary>遊ぶのに他に必要なものはありますか?</summary>
+        <p class="a">はい。Latin CoreはFlashBoss基本ゲームのDLCなので、基本ゲームも必要です。Latin ParetoはCoreを前提とします — パックは順に積み上がります。それ以外 — レッスン、音声、ボス戦 — はすべてパックの中に入っています。Windows 10では<a href="https://apps.microsoft.com/detail/9n0dx20hk701" target="_blank" rel="noopener">Windows Terminal</a>も必要です — Microsoft Storeから無料・安全にダウンロードできます。</p>
+      </details>
+
+      <details>
+        <summary>ラテン語は本物ですか、それともコースのために書かれたものですか?</summary>
+        <p class="a">両方です。しかも順序を明記しています。ティア1から3は、あなたが習った文法に合わせて組んだ文です — 本物の著者はその上限では書かないので、カードも著者を名乗りません。カエサルはティア4で登場し、わずかに刈り込んであります。ティア8からは、ほとんどの文が著者自身の、手を加えていないことばです。2つのパック全体で、2,000の文のうち1,052に出典が付き、そのうち813は原文のままです。</p>
+      </details>
+
+      <details>
+        <summary>自分の言語で遊べますか?</summary>
+        <p class="a">完全に遊べます。2,000枚のカードはすべて、訳・例文訳・学習ノートを、英語に加えて<b>ドイツ語・スペイン語・日本語・ロシア語・簡体字中国語</b>で持っており、どこにも欠けはありません。参照レッスン44本すべてが同じ5言語を備え、ゲーム本体のインターフェースは6言語すべてに対応しています。</p>
+      </details>
+
+      <details>
+        <summary>このコースでどこまで行けますか?</summary>
+        <p class="a">辞書を傍らに置いて、手を加えていない古典散文を読めるところまでです。最頻出の見出し語2,000、直説法と接続法の文法のすべて、分詞、不定法の構文、動名詞と動形容詞 — そしてその道中で、文脈の中の17,007語のラテン語を読むことになります。ラテン語を話すところまでではなく、書くところまででもありません。このコースは、ひとつの技能を教えるのだと正直に言います。</p>
+      </details>
+
+      <details>
+        <summary>Pareto 2はないのですか?</summary>
+        <p class="a">ラテン語は、代わりに分岐するからです。CoreとParetoで2,000語の幹は完結し、ティア10で文法も完結します。第三の1,000語は、どこへ向かうかによって変わります — 古典詩か、教会ラテン語か — なので、もう一段の階段ではなく2本の枝として計画しています。どちらもまだ作られていません。</p>
+      </details>
+
+      <details>
+        <summary>買う前に単語を見られますか?</summary>
+        <p class="a">全部見られます。CoreとParetoの完全な単語リストは<a href="wordlists.ja.html?lang=Latin&amp;set=Core">単語リストのページ</a>に、参照レッスン44本は<a href="lessons.ja.html?lang=Latin">レッスンのページ</a>にあります — 無料、印刷可、アカウント不要です。</p>
+      </details>
+
+      <details>
+        <summary>デモはありますか?</summary>
+        <p class="a">ブラウザで遊べるボス戦があります。決める前に戦いの手ざわりを知りたい方はこちらへ：<a href="https://flashboss-demo.pages.dev/">デモを試す</a>。</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final wrap reveal">
+    <h2><i>Roma est.</i>から始めよう。</h2>
+    <p>最初のクラスターの最初のカードに、たった二語。2,000語の先に、キケロがいます。</p>
+    <p class="dates"><a href="https://store.steampowered.com/app/5063240/?utm_source=website-latin" target="_blank" rel="noopener">Latin Core</a> · <a href="https://store.steampowered.com/app/5063250/?utm_source=website-latin" target="_blank" rel="noopener">Latin Pareto</a> — どちらもSteamで発売中</p>
+    <p class="also">あるいは、まず<a href="wordlists.ja.html?lang=Latin&amp;set=Core">単語リスト</a>と<a href="lessons.ja.html?lang=Latin">レッスン</a>を — どちらも無料で、そしてこれがコースのすべてです。</p>
+    <p class="bundleline">ここにあるすべてを、ひとつの購入で：<a href="https://store.steampowered.com/bundle/87746/?utm_source=website-bundle" target="_blank" rel="noopener"><b>FlashBoss ラテン語 — コンプリートコース</b></a>。一部をすでにお持ちですか？Steamは残りの分だけを請求します。</p>
+  </section>
+
+</main>
+
+<footer>
+  <p class="epi">&ldquo;Multum cum in omnibus rebus tum in re militari potest fortuna.&rdquo;<span class="tr">運はあらゆることにおいて大きな力を持ち、とりわけ戦においてそうです。</span><span class="epi-cite">Latin Core · ティア4 · Caes. BG 6.30.2</span></p>
+  <span class="footer-links">
+    <a href="home.ja.html">ホーム</a>
+    <span class="div">·</span>
+    <a href="packs.ja.html">パック</a>
+    <span class="div">·</span>
+    <a href="manual/">攻略ガイド（β）</a>
+    <span class="div">·</span>
+    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-latin" target="_blank" rel="noopener">steam</a>
+  </span>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+document.querySelectorAll('.card').forEach(function(c){c.addEventListener('click',function(){c.classList.toggle('flipped');});});
+(function(){
+  var root=document.documentElement,ticking=false;
+  function update(){var max=document.body.scrollHeight-window.innerHeight;var p=max>0?Math.min(1,Math.max(0,window.scrollY/max)):0;root.style.setProperty('--mood',(p*p*(3-2*p)).toFixed(3));ticking=false;}
+  window.addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(update);ticking=true;}},{passive:true});update();
+})();
+</script>
+<script>
+// language dropdown: button toggles the menu; click-away / Esc closes it
+(function(){
+  var sw=document.querySelector('.lang-switch'); if(!sw) return;
+  var btn=sw.querySelector('.lang-toggle'), menu=sw.querySelector('.lang-menu');
+  function close(){ menu.hidden=true; btn.setAttribute('aria-expanded','false'); }
+  btn.addEventListener('click', function(e){ e.stopPropagation(); var willOpen=menu.hidden; menu.hidden=!willOpen; btn.setAttribute('aria-expanded', String(willOpen)); });
+  document.addEventListener('click', function(e){ if(!sw.contains(e.target)) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
+</script>
+</body>
+</html>

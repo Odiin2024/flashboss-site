@@ -47,7 +47,8 @@
     'in-development': ['de', 'es', 'ja', 'zh', 'ru'],
     'immersion':      ['de', 'es', 'ja', 'zh', 'ru'],
     'swahili':        ['de', 'es', 'ja', 'zh', 'ru'],
-    'the-guide':      ['de', 'es', 'ja', 'zh', 'ru']
+    'the-guide':      ['de', 'es', 'ja', 'zh', 'ru'],
+    'latin':          ['de', 'es', 'ja', 'zh', 'ru']
   };
   try {
     var file = location.pathname.split('/').pop();

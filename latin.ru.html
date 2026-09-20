@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- SELF-TRANSLATED, ru. The prose on this page was written by Claude
+     (Opus), not by the translation fleet, on Odiin's word of 2026-09-20:
+     good enough for now, and flagged for a translation/adversarial pass
+     another day. The page carries the beta-translation notice so a reader
+     knows and so that pass can find it.
+     Canon held here: the six pack names stay English, FlashBoss stays
+     Latin, and every number is the English page's number in this locale's
+     separator — nothing was recounted. -->
+<title>Латинский — FlashBoss</title>
+<meta name="description" content="FlashBoss Латинский: курс чтения на 2000 слов в десяти уровнях и восьмидесяти кластерах, 44 справочных урока, заглавные слова с макронами и примеры предложений, которые заканчиваются неадаптированными Цезарем, Цицероном, Саллюстием, Непотом и Ливием. Latin Core и Latin Pareto уже в Steam.">
+<link rel="canonical" href="https://odiin2024.github.io/flashboss-site/latin.ru.html">
+<link rel="icon" type="image/png" href="icon.png">
+<!-- The Latin course page. Promoted 2026-09-19: Latin Core (Steam 5063240) and
+     Latin Pareto (5063250) are both on sale, so by site rule the page carries no
+     release date at all — dates are for things not yet out.
+     Counted from knight/flashcard_sets/Latin on 2026-09-19, not from copy:
+     Core 1,000 cards / 40 clusters / 26 lessons, Pareto 1,000 / 40 / 18 —
+     80 clusters, 2,000 cards, 44 reference lessons, ten tiers.
+     Card text carries de/es/ja/ru/zh (five, verified by reading the cluster
+     JSON keys: Translation_*, ExampleTranslation_*, Notes_*) plus the _gb
+     British layer. An earlier draft of this page said three; it was wrong.
+     STORE NAME: Steam sells the second pack as "Latin Pareto", with no 1 —
+     there is no Latin Pareto 2, the course forks instead. The page follows the
+     store so a reader can find it.
+     English only for now: when the siblings ship, the hreflang block, the
+     switcher <ul> and lang-redirect.js AVAIL gain them together. -->
+<link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/latin.html">
+<link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/latin.de.html">
+<link rel="alternate" hreflang="es" href="https://odiin2024.github.io/flashboss-site/latin.es.html">
+<link rel="alternate" hreflang="ja" href="https://odiin2024.github.io/flashboss-site/latin.ja.html">
+<link rel="alternate" hreflang="zh" href="https://odiin2024.github.io/flashboss-site/latin.zh.html">
+<link rel="alternate" hreflang="ru" href="https://odiin2024.github.io/flashboss-site/latin.ru.html">
+<link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/latin.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   FlashBoss — Latin page
+   Aesthetic: phosphor terminal. The through-line is the pack's own
+   arc, LAPIS -> LVCERNA: stone to lamplight. The page opens cold and
+   lapidary — the alphabet, the drill, sentences built for you — and
+   warms as you scroll until it is a lamp over a real page of Cicero.
+   ONE smooth ramp, no hard turn. Same mechanism as french.html.
+
+   TUNE THESE FIRST:
+   background.png   -> hero banner image (site default; no Latin art yet).
+   ============================================================ */
+:root{
+  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
+
+  /* STONE palette (top — cold, cut, inscriptional) */
+  --s-bg:#100d08;
+  --s-ink:#ecdcb6;
+  --s-dim:#b3a075;
+  --s-accent:#83b6dd;   /* marble silver — the chisel, not the pen */
+
+  /* LAMP palette (bottom — warm, close, the flame over the roll) */
+  --l-bg:#171421;
+  --l-ink:#ecdcb6;
+  --l-dim:#b3a075;
+  --l-accent:#e0a93f;   /* lamp amber — Latin gone readable */
+
+  /* mood: 0 = stone, 1 = lamp. Driven by scroll. ONE smooth ramp. */
+  --mood:0;
+
+  --line:color-mix(in oklab, #3a3120, #3a3120 calc(var(--mood) * 100%));
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0; font-family:var(--mono);
+  background:#100d08;
+  background:color-mix(in oklab, var(--s-bg), var(--l-bg) calc(var(--mood)*100%));
+  color:color-mix(in oklab, var(--s-ink), var(--l-ink) calc(var(--mood)*100%));
+  line-height:1.6; -webkit-font-smoothing:antialiased;
+  transition:background 120ms linear, color 120ms linear; overflow-x:hidden;
+}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.045) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.vignette{position:fixed; inset:0; pointer-events:none; z-index:9998;
+  background:radial-gradient(120% 90% at 50% 35%, transparent 55%, rgba(0,0,0,.5) 100%);}
+.wrap{max-width:880px; margin:0 auto; padding:0 24px;}
+
+nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line);}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--s-dim); margin-right:auto;}
+nav .brand a, nav .brand .sep{color:var(--s-dim); text-decoration:none;}
+nav .brand a:hover{color:var(--s-ink);}
+nav .brand .here{font-weight:800; color:var(--s-ink);}
+nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--s-ink);}
+nav .brand .logo:hover{color:var(--s-accent);}
+nav .brand .pipe{color:var(--s-dim); margin:0 11px;}
+.nav-mobile{display:none;}
+.nav-mobile a{color:inherit; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.08em; opacity:.85;}
+.nav-mobile a:hover{opacity:1; color:var(--s-accent);}
+@media(max-width:640px){ nav .brand, nav .links{display:none;} .nav-mobile{display:flex; flex:1; justify-content:space-between; align-items:center;} .nav-mobile .r{display:flex; gap:18px;} }
+nav .links a{color:inherit; text-decoration:none; opacity:.7; margin-left:22px;}
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+nav .links a.steam{font-weight:800; opacity:1; color:var(--s-ink);}
+nav .lang-switch{position:relative; margin-left:22px;}
+nav .lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--s-ink); background:var(--s-bg); border:1px solid var(--s-dim); padding:5px 8px; line-height:1; cursor:pointer;}
+nav .lang-toggle:hover, nav .lang-toggle[aria-expanded="true"]{background:var(--s-ink); color:var(--s-bg);}
+nav .lang-caret{font-size:8px; line-height:1; transition:transform .15s ease;}
+nav .lang-toggle[aria-expanded="true"] .lang-caret{transform:rotate(180deg);}
+nav .lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--s-bg); border:1px solid var(--s-dim); min-width:120px; z-index:50;}
+nav .lang-menu[hidden]{display:none;}
+nav .lang-menu li{margin:0; padding-left:0; position:static;}
+nav .lang-menu li::before{content:none;}
+nav .lang-menu a{display:block; font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--s-ink); text-decoration:none; padding:7px 10px; white-space:nowrap; opacity:1; margin:0;}
+nav .lang-menu a:hover{background:var(--s-ink); color:var(--s-bg); text-decoration:none;}
+nav .lang-menu a[aria-current="true"]{color:var(--s-accent);}
+nav .lang-menu a[aria-current="true"]:hover{color:var(--s-bg);}
+
+.reveal{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease;}
+.reveal.in{opacity:1; transform:none;}
+
+/* HERO — image band. The <img> carries the alt text; the gradient
+   sits over it so the type stays legible whatever the art is. */
+.hero{position:relative; padding:84px 0 36px; overflow:hidden; background:#100d08;}
+.hero .hero-img{position:absolute; inset:0; z-index:0; width:100%; height:100%; object-fit:cover; object-position:center 30%;}
+.hero::after{content:""; position:absolute; inset:0; z-index:1;
+  background:linear-gradient(180deg, rgba(13,17,22,.60) 0%, rgba(13,17,22,.84) 55%, #100d08 100%);}
+.hero .wrap{position:relative; z-index:2;}
+.kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--s-dim); opacity:.9; margin-bottom:26px;}
+.kicker b{color:var(--s-accent); font-weight:700;}
+.hero h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
+.cursor{display:inline-block; width:.6em; height:1em; vertical-align:-.08em; background:color-mix(in oklab, var(--s-accent), transparent 30%); margin-left:.12em; animation:blink 1.05s steps(1) infinite;}
+@keyframes blink{50%{opacity:0;}}
+.hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:30px 0 0; color:var(--s-ink); font-weight:500;}
+.hero .sig{font-size:13px; letter-spacing:.24em; text-transform:uppercase; color:var(--s-accent); margin:14px 0 0; opacity:.9;}
+.hero .lede{font-size:clamp(15px,2.2vw,18px); max-width:50ch; margin:24px 0 0; color:var(--s-dim);}
+.hero .lede b{color:var(--s-ink); font-weight:700;}
+.btn{display:inline-block; font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.08em; color:#100d08; background:color-mix(in oklab, var(--s-accent), transparent 22%);
+  padding:14px 26px; text-decoration:none; border:0; box-shadow:6px 6px 0 color-mix(in oklab, var(--s-accent), #000 62%); transition:transform .12s ease, box-shadow .12s ease;}
+.btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--s-accent), #000 62%);}
+.btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--s-accent), #000 62%);}
+.btn.hot{color:#171421; background:var(--l-accent); box-shadow:6px 6px 0 color-mix(in oklab, var(--l-accent), #000 60%);}
+.btn.hot:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--l-accent), #000 60%);}
+.hero .actions{display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:40px; max-width:520px;}
+.hero .actions .btn{margin-top:0; width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
+
+section{padding:64px 0;}
+.hero + section{padding-top:48px;}
+.frame{border:1px solid var(--line); position:relative; padding:34px 30px 32px;}
+.frame > .tag{position:absolute; top:-12px; left:22px;
+  background:color-mix(in oklab, var(--s-bg), var(--l-bg) calc(var(--mood)*100%));
+  padding:4px 12px; line-height:1; font-size:11px; letter-spacing:.3em; text-transform:uppercase;
+  color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+h2{font-size:clamp(26px,5vw,40px); margin:0 0 8px; font-weight:800; letter-spacing:-.01em;}
+.sub{color:var(--s-dim); font-size:14px; letter-spacing:.04em; margin:0 0 26px;}
+.sub.la{font-style:italic; font-size:16px; opacity:.92;}
+.sub a{color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%)); text-decoration:none; border-bottom:1px solid currentColor;}
+p.body{font-size:16px; max-width:62ch; margin:0 0 18px; color:color-mix(in oklab, var(--s-ink), var(--l-ink) calc(var(--mood)*100%));}
+p.body b{color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.la{font-style:italic; opacity:.96;}
+
+/* the two five-tier runs — Core cold, Pareto warming */
+.run{border:1px solid var(--line); display:grid; grid-template-columns:repeat(5,1fr); overflow:hidden; margin-bottom:18px;}
+.run .step{padding:22px 16px; border-right:1px solid var(--line); position:relative;}
+.run .step:last-child{border-right:0;}
+.run.core .step:nth-child(1){background:color-mix(in oklab, transparent, var(--s-accent) 5%);}
+.run.core .step:nth-child(2){background:color-mix(in oklab, transparent, var(--s-accent) 7%);}
+.run.core .step:nth-child(3){background:color-mix(in oklab, transparent, var(--s-accent) 9%);}
+.run.core .step:nth-child(4){background:color-mix(in oklab, transparent, var(--s-accent) 11%);}
+.run.core .step:nth-child(5){background:color-mix(in oklab, transparent, var(--s-accent) 13%);}
+.run.par .step:nth-child(1){background:color-mix(in oklab, transparent, var(--l-accent) 7%);}
+.run.par .step:nth-child(2){background:color-mix(in oklab, transparent, var(--l-accent) 10%);}
+.run.par .step:nth-child(3){background:color-mix(in oklab, transparent, var(--l-accent) 13%);}
+.run.par .step:nth-child(4){background:color-mix(in oklab, transparent, var(--l-accent) 16%);}
+.run.par .step:nth-child(5){background:color-mix(in oklab, transparent, var(--l-accent) 19%);}
+.run .t{font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%)); margin-bottom:10px; font-weight:700;}
+.run .step p{font-size:12.5px; margin:0; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%));}
+.runlabel{font-size:11px; letter-spacing:.24em; text-transform:uppercase; margin:0 0 10px; color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+@media(max-width:640px){.run{grid-template-columns:1fr;} .run .step{border-right:0; border-bottom:1px solid var(--line);} .run .step:last-child{border-bottom:0;}}
+
+/* tier & cluster ledger — straight off the pack manifest */
+.tiers{border:1px solid var(--line); margin-bottom:20px;}
+.tierrow{display:grid; grid-template-columns:max-content 1fr max-content; gap:0 22px; align-items:baseline; padding:18px 20px; border-bottom:1px solid var(--line);}
+.tierrow:last-child{border-bottom:0;}
+.tierrow .tno{font-size:12px; font-weight:800; letter-spacing:.16em; text-transform:uppercase; white-space:nowrap;
+  color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.tierrow .tcl{font-size:13px; color:color-mix(in oklab, var(--s-ink), var(--l-ink) calc(var(--mood)*100%));}
+.tierrow .tct{font-size:11.5px; letter-spacing:.04em; white-space:nowrap; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%));}
+.tierfoot{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; font-size:12px; letter-spacing:.06em; text-transform:uppercase; margin:0 0 26px; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%));}
+.tierfoot b{color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+@media(max-width:640px){.tierrow{grid-template-columns:1fr; gap:8px 0;}}
+
+/* sentence ladder — ten rungs, T1 to T10 */
+.ladder{list-style:none; margin:0; padding:0; counter-reset:tier;}
+.ladder li{counter-increment:tier; border-left:2px solid var(--line); padding:16px 0 16px 30px; margin-left:10px; position:relative;}
+.ladder li::before{content:"T" counter(tier); position:absolute; left:-17px; top:17px;
+  background:color-mix(in oklab, var(--s-bg), var(--l-bg) calc(var(--mood)*100%)); font-size:11px; font-weight:700; letter-spacing:.05em; padding:2px 0;
+  color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.ladder .tgt{font-weight:500; display:block;}
+.ladder li:nth-child(1) .tgt{font-size:15px;} .ladder li:nth-child(2) .tgt{font-size:15.4px;}
+.ladder li:nth-child(3) .tgt{font-size:15.8px;} .ladder li:nth-child(4) .tgt{font-size:16.2px;}
+.ladder li:nth-child(5) .tgt{font-size:16.6px;} .ladder li:nth-child(6) .tgt{font-size:17px;}
+.ladder li:nth-child(7) .tgt{font-size:17.4px;} .ladder li:nth-child(8) .tgt{font-size:17.8px;}
+.ladder li:nth-child(9) .tgt{font-size:18.2px;} .ladder li:nth-child(10) .tgt{font-size:18.6px; font-weight:700;}
+.ladder .en{display:block; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%)); font-size:13px; margin-top:6px;}
+.ladder .cite{display:inline-block; font-style:normal; font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; margin-top:8px; padding:2px 7px; border:1px solid var(--line);
+  color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.ladder .cite.made{opacity:.55; border-style:dashed;}
+
+/* source arc */
+.arc{border:1px solid var(--line);}
+.arcrow{display:grid; grid-template-columns:max-content 1fr max-content; gap:0 22px; align-items:baseline; padding:15px 20px; border-bottom:1px solid var(--line);}
+.arcrow:last-child{border-bottom:0;}
+.arcrow .an{font-size:12px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; white-space:nowrap;
+  color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.arcrow .aw{font-size:13px; color:color-mix(in oklab, var(--s-ink), var(--l-ink) calc(var(--mood)*100%));}
+.arcrow .ac{font-size:11.5px; white-space:nowrap; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%));}
+@media(max-width:640px){.arcrow{grid-template-columns:1fr; gap:6px 0;}}
+
+/* cards */
+.cards{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
+@media(max-width:640px){.cards{grid-template-columns:1fr;}}
+.card{border:1px solid var(--line); padding:20px 18px; cursor:pointer; background:rgba(255,255,255,.015); transition:border-color .15s ease; min-height:160px;}
+.card:hover{border-color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.card .art{font-size:12px; letter-spacing:.14em; font-weight:700; color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.card .word{font-size:24px; font-weight:800; margin:2px 0 12px;}
+.card .ex{font-size:13px; color:var(--s-dim); font-style:italic;}
+.card .trans{font-size:12.5px; color:var(--s-dim); margin-top:10px; max-height:0; overflow:hidden; opacity:0; transition:max-height .3s ease, opacity .3s ease;}
+.card.flipped .trans{max-height:340px; opacity:1;}
+.card .trans .nb{display:block; margin-top:8px; white-space:pre-line; font-size:12px; opacity:.9;}
+.card .hint{font-size:10px; letter-spacing:.2em; text-transform:uppercase; opacity:.45; margin-top:12px;}
+
+/* macron minimal pairs */
+.pairs{display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-top:24px;}
+@media(max-width:560px){.pairs{grid-template-columns:1fr;}}
+.pr{border:1px dashed var(--line); padding:18px; text-align:center;}
+.pr .big{font-size:26px; font-weight:800; letter-spacing:.01em;}
+.pr .big .mk{color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.pr .from{font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; opacity:.6; margin-bottom:8px;}
+.pr .gloss{font-size:12.5px; margin-top:8px; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%));}
+.pair-note{font-size:13px; margin:16px 0 0; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%)); max-width:62ch;}
+
+/* lessons list */
+.lessons{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(2,1fr); gap:0 26px;}
+@media(max-width:640px){.lessons{grid-template-columns:1fr;}}
+.lessons li{border-top:1px solid var(--line); padding:13px 0; font-size:13.5px;}
+.lessons li .no{font-size:11px; font-weight:700; letter-spacing:.12em; margin-right:10px;
+  color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.lessons li span.d{display:block; font-size:12.5px; margin-top:3px; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%));}
+
+/* packs */
+.packs{display:grid; grid-template-columns:repeat(2,1fr); gap:0; border:1px solid var(--line);}
+@media(max-width:640px){.packs{grid-template-columns:1fr;}}
+.pack{padding:24px 20px; border-right:1px solid var(--line);}
+.pack:last-child{border-right:0;}
+.pack .n{font-size:18px; font-weight:800;}
+.pack .lvl{font-size:12px; letter-spacing:.06em; color:var(--s-dim); margin:4px 0 12px;}
+.pack p{font-size:13px; color:var(--s-dim); margin:0;}
+.pack .soon{display:inline-block; font-size:10px; letter-spacing:.2em; text-transform:uppercase; margin-top:12px; padding:3px 8px; border:1px solid var(--line);
+  color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+a.pack{text-decoration:none; color:inherit; display:block; transition:background .15s ease, border-color .15s ease;}
+a.pack:hover{background:rgba(224,169,63,.07); border-color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+@media(max-width:640px){.pack{border-right:0; border-bottom:1px solid var(--line);} .pack:last-child{border-bottom:0;}}
+
+/* the fork — the third thousand */
+.fork{display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-top:22px;}
+@media(max-width:640px){.fork{grid-template-columns:1fr;}}
+.path{border:1px solid var(--line); padding:22px 20px; opacity:.8;}
+.path .pn{font-size:17px; font-weight:800;}
+.path .pl{font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; margin:5px 0 12px; color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.path p{font-size:13px; margin:0; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%));}
+.path .tbd{display:inline-block; font-size:10px; letter-spacing:.2em; text-transform:uppercase; margin-top:14px; padding:3px 8px; border:1px dashed var(--line); opacity:.75;}
+
+.method dl{display:grid; grid-template-columns:max-content 1fr; gap:14px 22px; margin:0;}
+.method dt{font-weight:700; color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%)); white-space:nowrap;}
+.method .frame > .tag{color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.method dd{margin:0; font-size:14.5px; color:var(--s-dim);}
+@media(max-width:560px){.method dl{grid-template-columns:1fr; gap:4px 0;} .method dd{margin-bottom:14px;}}
+
+/* FAQ */
+.faq details{border-top:1px solid var(--line);}
+.faq details:last-of-type{border-bottom:1px solid var(--line);}
+.faq summary{list-style:none; cursor:pointer; padding:16px 30px 16px 0; font-size:15px; font-weight:700; position:relative;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"+"; position:absolute; right:4px; top:14px; font-size:18px; font-weight:400;
+  color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.faq details[open] summary::after{content:"\2212";}
+.faq summary:hover{color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%));}
+.faq .a{font-size:14px; margin:0 0 20px; max-width:64ch; color:color-mix(in oklab, var(--s-dim), var(--l-dim) calc(var(--mood)*100%));}
+.faq .a a{color:color-mix(in oklab, var(--s-accent), var(--l-accent) calc(var(--mood)*100%)); text-decoration:none; border-bottom:1px solid currentColor;}
+
+.final{text-align:center; padding:90px 0 100px;}
+.final h2{font-size:clamp(28px,6vw,52px);}
+.final p{color:var(--l-dim); max-width:48ch; margin:14px auto 0; font-size:15px;}
+.final .dates{margin-top:26px; font-size:13px; line-height:2; letter-spacing:.1em; text-transform:uppercase; color:var(--l-accent);}
+.final .also{margin-top:22px; font-size:13px;}
+.final .also a{color:var(--l-dim); text-decoration:none; border-bottom:1px solid currentColor;}
+.final .also a:hover{color:var(--l-ink);}
+
+footer{border-top:1px solid var(--line); padding:28px 24px; font-size:12px; color:var(--l-dim); text-align:center; letter-spacing:.04em;}
+footer .epi{font-style:italic; opacity:.78; max-width:54ch; margin:0 auto 12px; line-height:1.7;}
+footer .epi .tr{font-style:normal; opacity:.85; display:block; margin-top:8px; font-size:11.5px;}
+footer .epi-cite{font-style:normal; font-size:11px; letter-spacing:.12em; text-transform:uppercase; opacity:.75; display:inline-block; margin-top:8px;}
+footer .footer-links{display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap; margin-top:14px;}
+footer .footer-links a{color:inherit; text-decoration:none; opacity:.75; letter-spacing:.04em;}
+footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+footer .footer-links .div{opacity:.4;}
+
+/* bundle line in the closing call to action — one Steam bundle per course */
+.bundleline{font-size:14.5px; max-width:56ch; margin:0 auto 22px; opacity:.95;}
+.bundleline b{font-weight:800;}
+.beta-note{background:#1b1508; border-bottom:1px solid #6b5a2a; color:#e8d9b0; font:500 12.5px/1.55 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; text-align:center; padding:9px 16px; margin:0;}
+.beta-note b{color:#e0a93f; font-weight:700; letter-spacing:.09em;}
+.beta-note a{color:#e0a93f; text-decoration:underline; text-underline-offset:2px;}
+</style>
+<script src="lang-redirect.js"></script>
+</head>
+<body>
+<div class="beta-note" role="status"><b>БЕТА-ПЕРЕВОД</b> — русская версия этой страницы черновая и ещё не прошла редактуру. Нашли ошибку в тексте? <a href="report.html">Сообщите нам</a> · <a href="latin.html">Read in English</a></div>
+<div class="overlay"></div>
+<div class="vignette"></div>
+
+<nav>
+  <span class="brand"><a class="logo" href="index.ru.html">FLASHBOSS</a><span class="pipe">|</span><a href="home.ru.html">главная</a><span class="sep"> · </span><a href="packs.ru.html">наборы</a><span class="sep"> · </span><span class="here">Латинский</span></span>
+  <span class="links">
+    <a href="manual/index.html">руководство (бета)</a>
+    <a href="resources.ru.html">материалы</a>
+    <a class="steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-latin" target="_blank" rel="noopener">steam</a>
+  </span>
+  <span class="nav-mobile">
+    <a href="home.ru.html">главная</a>
+    <span class="r"><a href="resources.ru.html">материалы</a><a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-latin" target="_blank" rel="noopener">steam</a></span>
+  </span>
+  <div class="lang-switch">
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Выбрать язык">RU<span class="lang-caret">▾</span></button>
+    <ul class="lang-menu" hidden>
+      <li><a href="latin.html">English</a></li>
+      <li><a href="latin.de.html">Deutsch</a></li>
+      <li><a href="latin.es.html">Español</a></li>
+      <li><a href="latin.ja.html">日本語</a></li>
+      <li><a href="latin.zh.html">简体中文</a></li>
+      <li><a href="latin.ru.html" aria-current="true">Русский</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <header class="hero">
+    <!-- background.png is the default hero for a language with no art of its
+         own (German/Spanish/Italian/Esperanto each have one). The onerror keeps
+         the hero on flat ink if the image ever goes missing. -->
+    <img class="hero-img" src="background.png" alt="FlashBoss — залитая лунным светом школа, с которой начинается каждый курс" loading="eager" decoding="async" onerror="this.style.display='none'">
+    <div class="wrap">
+      <p class="kicker reveal">Два набора · <b>2000 слов</b> · десять уровней · 44 урока · уже в Steam</p>
+      <h1 class="reveal">Latīna<span class="cursor"></span></h1>
+      <p class="tagline reveal">Читайте настоящую латынь. Не книги о ней.</p>
+      <p class="sig reveal">Слушать · Читать · Повторять · Оценивать · Сражаться</p>
+      <p class="lede reveal">Две тысячи слов, десять уровней, один навык. Предложения начинаются построенными под вас и заканчиваются так, <b>как их на самом деле написали Цезарь, Цицерон, Саллюстий, Непот и Ливий</b> — урезана только длина, не выдумано ничего.</p>
+      <div class="actions reveal">
+        <a class="btn" href="wordlists.ru.html?lang=Latin&amp;set=Core">Списки слов</a>
+        <a class="btn" href="lessons.ru.html?lang=Latin">Уроки</a>
+        <a class="btn" href="https://flashboss-demo.pages.dev/">Попробовать демо</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- THE ARGUMENT -->
+  <section class="wrap">
+    <div class="frame">
+      <span class="tag">устройство латинского курса</span>
+      <h2>Один навык: чтение</h2>
+      <p class="sub la">Legendō discitur — этому учатся, читая.</p>
+      <p class="body">Здесь никто не просит вас сочинять латынь самостоятельно. Весь курс построен так, чтобы вы могли взглянуть на печатную строку и понять, что в ней сказано, — и ведёт он к этому, ставя перед вами предложения с самого первого уровня, а не заставляя ждать, пока закончится грамматика.</p>
+      <p class="body">Порядок и есть довод. Две тысячи лемм уложены в десять уровней, в каждом уровне восемь кластеров по двадцать пять карточек, а грамматика приходит по одному уроку за раз — ровно на той карточке, которой она впервые нужна. Ни один пример предложения не пользуется грамматикой, которой вас ещё не учили. К уровню 10 лестнице больше нечему учить, и вы читаете Цицерона без адаптации — <b>17007 слов латыни, прочитанных в контексте</b> по дороге.</p>
+
+      <p class="runlabel">Latin Core — уровни с 1 по 5</p>
+      <div class="run core reveal">
+        <div class="step"><div class="t">Уровень 1</div><p>Алфавит так, как его произносил Рим, указательные слова, соединительные слова, движущие силы, первые существительные сената и меча.</p></div>
+        <div class="step"><div class="t">Уровень 2</div><p>Винительный падеж, настоящее время, повелительное наклонение. Ежедневный круг, форум, тело, счёт и достоинство.</p></div>
+        <div class="step"><div class="t">Уровень 3</div><p>Родительный и дательный падежи, полное множественное число, ещё два спряжения, имперфект. Путь, дом, год перемен.</p></div>
+        <div class="step"><div class="t">Уровень 4</div><p>Аблатив, третье склонение, предлоги и падеж — и первый настоящий Цезарь, слегка адаптированный.</p></div>
+        <div class="step"><div class="t">Уровень 5</div><p>Перфект и его семья, основные формы глагола, относительные придаточные. Цезарь теперь на 86 из 200 карточек, и на 26 из них — без адаптации.</p></div>
+      </div>
+
+      <p class="runlabel">Latin Pareto — уровни с 6 по 10</p>
+      <div class="run par reveal">
+        <div class="step"><div class="t">Уровень 6</div><p>Причастия, все три, и пассив. Цезарь продолжается, а Непот входит в силу.</p></div>
+        <div class="step"><div class="t">Уровень 7</div><p>Ablativus absolutus, пассив целиком, отложительные глаголы. Письма Цицерона открывают неофициальный регистр.</p></div>
+        <div class="step"><div class="t">Уровень 8</div><p>Семья инфинитивов и косвенная речь. Приходит Саллюстий; 192 из 200 карточек теперь без адаптации.</p></div>
+        <div class="step"><div class="t">Уровень 9</div><p>Конъюнктив, придаточные с cum, цель и следствие, косвенные вопросы. В строй встаёт Ливий.</p></div>
+        <div class="step"><div class="t">Уровень 10</div><p>Герундий и герундив, и как читать ссылку на источник. Речи и философия Цицерона замыкают ствол.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SENTENCE LADDER -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">смотрите, как оно взрослеет</span>
+      <h2>От «построено для вас» до «написано Цицероном»</h2>
+      <p class="sub">Пример предложения с одной карточки каждого из десяти уровней, по порядку. Ниже нет ни одного пересказа: с уровня 4 ссылки настоящие, а неотмеченные — собственные слова автора.</p>
+      <ol class="ladder">
+        <li class="reveal"><span class="tgt la">Ut vides, Caesar noster est.</span><span class="en">Как видишь, Цезарь — из наших.</span><span class="cite made">построено под уровень</span></li>
+        <li class="reveal"><span class="tgt la">Dum Caesar in Gallia est, senatus legem probat.</span><span class="en">Пока Цезарь в Галлии, сенат одобряет закон.</span><span class="cite made">построено под уровень</span></li>
+        <li class="reveal"><span class="tgt la">Copiae nostrae iam discedebant et castra relinquebant.</span><span class="en">Наши войска уже уходили и оставляли лагерь.</span><span class="cite made">построено под уровень</span></li>
+        <li class="reveal"><span class="tgt la">Tempestates et nostros in castris continebant et hostem a pugna prohibebant.</span><span class="en">Бури и наших удерживали в лагере, и врага не пускали в бой.</span><span class="cite">адаптировано из Caes. BG 4.34.4</span></li>
+        <li class="reveal"><span class="tgt la">Ibi ad ultimum iugum pervenit aciemque eo loco constituit.</span><span class="en">Там он вышел к самому дальнему хребту и на этом месте построил боевую линию.</span><span class="cite">Caes. BG 8.14.5</span></li>
+        <li class="reveal"><span class="tgt la">Ne Vorenus quidem tum sese vallo continet, sed omnium veritus existimationem subsequitur.</span><span class="en">Даже Ворен не остаётся тогда за валом: боясь того, что подумают все, он идёт следом.</span><span class="cite">Caes. BG 5.44.5</span></li>
+        <li class="reveal"><span class="tgt la">Omnia mihi cum eo intercedunt iura summae necessitudinis.</span><span class="en">Между ним и мной существуют все узы теснейшей близости.</span><span class="cite">Cic. Fam. 13.14</span></li>
+        <li class="reveal"><span class="tgt la">Nobis est domi inopia, foris aes alienum, mala res, spes multo asperior.</span><span class="en">Дома у нас нужда, за порогом долги, положение скверное, а виды на будущее куда суровее.</span><span class="cite">Sall. Cat. 20.13</span></li>
+        <li class="reveal"><span class="tgt la">Catilina postquam fusas copias seque cum paucis relictum videt, memor generis atque pristinae suae dignitatis in confertissumos hostis incurrit ibique pugnans confoditur.</span><span class="en">Видя, что войска его разбиты, а сам он остался с немногими, Катилина, помня о своём роде и прежнем достоинстве, бросается в самую гущу врагов и там, сражаясь, гибнет пронзённый.</span><span class="cite">Sall. Cat. 60.7</span></li>
+        <li class="reveal"><span class="tgt la">Videtis illum subcrispo capillo, nigrum, qui eo vultu nos intuetur ut sibi ipse peracutus esse videatur.</span><span class="en">Видите вон того, с чуть вьющимися волосами, смуглого, который смотрит на нас с таким видом, будто сам себе кажется чрезвычайно проницательным.</span><span class="cite">Cic. Verr. 2.2.108</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- WHO YOU READ -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">чья латынь</span>
+      <h2>Авторы появляются по порядку</h2>
+      <p class="sub">У уровней с 1 по 3 ссылок нет вовсе, и об этом сказано прямо: эти предложения построены под потолок грамматики, потому что у настоящей латыни нет такого простого регистра. Цезарь входит на уровне 4, а к уровню 8 строительные леса убраны.</p>
+      <div class="arc">
+        <div class="arcrow"><div class="an">Уровни 1–3</div><div class="aw">Предложения, построенные под грамматику уровня, — автор не назван и не подразумевается</div><div class="ac">0 из 600 со ссылкой</div></div>
+        <div class="arcrow"><div class="an">Уровень 4</div><div class="aw">Цезарь, <i>Записки о Галльской войне</i> — в основном урезаны придаточные ради длины</div><div class="ac">62 со ссылкой · 13 без адаптации</div></div>
+        <div class="arcrow"><div class="an">Уровень 5</div><div class="aw">Цезарь повсюду, Непот начинается</div><div class="ac">86 со ссылкой · 26 без адаптации</div></div>
+        <div class="arcrow"><div class="an">Уровень 6</div><div class="aw">Цезарь и Непот, <i>Жизнеописания</i></div><div class="ac">145 со ссылкой · 84 без адаптации</div></div>
+        <div class="arcrow"><div class="an">Уровень 7</div><div class="aw">Письма Цицерона — <i>ad Atticum</i>, <i>ad Familiares</i> — рядом с Цезарем и Непотом</div><div class="ac">170 со ссылкой · 109 без адаптации</div></div>
+        <div class="arcrow"><div class="an">Уровень 8</div><div class="aw">Присоединяется Саллюстий; адаптация фактически прекращается</div><div class="ac">196 со ссылкой · 192 без адаптации</div></div>
+        <div class="arcrow"><div class="an">Уровень 9</div><div class="aw">Ливий, книга 1, присоединяется к Саллюстию, Цицерону и Цезарю</div><div class="ac">197 со ссылкой · 195 без адаптации</div></div>
+        <div class="arcrow"><div class="an">Уровень 10</div><div class="aw">Речи и философия Цицерона — самая трудная полоса, до которой доходит ствол</div><div class="ac">196 со ссылкой · 194 без адаптации</div></div>
+      </div>
+      <p class="sub" style="margin:20px 0 0;">На два набора <b>1052 из 2000 примеров предложений несут ссылку</b>, и 813 из них — неизменённые слова самого автора. Каждая ссылка на каждой карточке называет книгу, главу и раздел, а урок 41 учит её читать.</p>
+    </div>
+  </section>
+
+  <!-- TIER & CLUSTER LEDGER -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">вся карта</span>
+      <h2>Десять уровней, восемьдесят кластеров</h2>
+      <p class="sub">В каждом кластере 25 карточек, и кончается он боем с боссом. Ничего не спрятано — полный список лежит на <a href="wordlists.ru.html?lang=Latin&amp;set=Core">странице списков слов</a>, и его можно бесплатно прочесть до покупки.</p>
+      <div class="tiers">
+        <div class="tierrow">
+          <div class="tno">Уровень 1</div>
+          <div class="tcl">Указательные слова · Соединительные слова · Связующие элементы · Движущие силы · Сенат и меч · Множество и мощь · Порядок вещей · Упорядочение</div>
+          <div class="tct">8 кластеров · 200 карточек</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">Уровень 2</div>
+          <div class="tcl">Ежедневный круг · Оружие и воин · Форум · Тело и дух · Счёт и мера · Достоинство и честь · Время и течение времени · Сбор</div>
+          <div class="tct">8 кластеров · 200 карточек</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">Уровень 3</div>
+          <div class="tcl">Туда и сюда · Долгий путь · Тело и основа · Отцы · Дом и очаг · Надежды и страхи · Год перемен · Остановка в пути</div>
+          <div class="tct">8 кластеров · 200 карточек</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">Уровень 4</div>
+          <div class="tcl">Настроения и мгновения · Поворот руки · Живая основа · Курия · По суше и морю · Больше и наибольшее · Зимний лагерь · Список призыва</div>
+          <div class="tct">8 кластеров · 200 карточек</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">Уровень 5</div>
+          <div class="tcl">Совершённое · Перфектные основы · Генеральное сражение · Текущее дело · Жизнь и конечности · Хвала и порицание · Назначенный час · Полный отчёт</div>
+          <div class="tct">8 кластеров · 200 карточек</div>
+        </div>
+      </div>
+      <p class="tierfoot"><span>Core: 5 уровней · 40 кластеров · <b>1000 карточек</b></span><span>26 справочных уроков</span><span>основа чтения</span></p>
+      <div class="tiers">
+        <div class="tierrow">
+          <div class="tno">Уровень 6</div>
+          <div class="tcl">Жизнь разума · Часы и дни · Солдатская жизнь · Полный учёт · Родовое поместье · Бренная плоть · Договоры и полномочия · Незаконченные дела</div>
+          <div class="tct">8 кластеров · 200 карточек</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">Уровень 7</div>
+          <div class="tcl">Приход и уход · Умелая рука · Перепись · Раны и тяготы · Родня и соседи · Чин и должность · Морская дорога · Срединный путь</div>
+          <div class="tct">8 кластеров · 200 карточек</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">Уровень 8</div>
+          <div class="tcl">Истинное и ложное · Приказ · Здоровый и больной · Вес и достоинство · Настоящий час · Перелом битвы · Домашний склад · Последний рубеж</div>
+          <div class="tct">8 кластеров · 200 карточек</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">Уровень 9</div>
+          <div class="tcl">Надежды и обеты · По порядку · Правильное и неправильное · Прерванная линия · Прах и пепел · Священные обряды · Обман и сила · Остатки</div>
+          <div class="tct">8 кластеров · 200 карточек</div>
+        </div>
+        <div class="tierrow">
+          <div class="tno">Уровень 10</div>
+          <div class="tcl">Открытая книга · Последняя битва · Кровь и кости · Честь и стыд · Посланники и договоры · Очаг и наследник · Последняя мера · Последняя страница</div>
+          <div class="tct">8 кластеров · 200 карточек</div>
+        </div>
+      </div>
+      <p class="tierfoot"><span>Pareto: 5 уровней · 40 кластеров · <b>1000 карточек</b></span><span>18 справочных уроков</span><span>ствол целиком</span></p>
+    </div>
+  </section>
+
+  <!-- THE CARD -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">видно с первого взгляда</span>
+      <h2>Макрон — это данные, а не украшение</h2>
+      <p class="sub">Каждое заглавное слово напечатано так, как его печатает словарь: долгие гласные отмечены, у существительного — род и основа родительного падежа, у глагола — спряжение. Макрон стоит на 1320 из 2000 заглавных слов. Нажмите на карточку, чтобы перевернуть её.</p>
+      <div class="cards">
+        <div class="card reveal">
+          <div class="art">f., -is</div>
+          <div class="word">virtūs</div>
+          <div class="ex la">Virtus Romana magna est.</div>
+          <div class="trans">мужество, мужественность; доблесть — &ldquo;Римское мужество велико.&rdquo;<span class="nb">существительное | род. ед. virtūtis — основа virtūt-
+долгое ū: vir-tūs
+От vir &lsquo;мужчина&rsquo;: качество мужчины.</span></div>
+          <div class="hint">нажмите, чтобы перевернуть</div>
+        </div>
+        <div class="card reveal">
+          <div class="art">-iō, -ere</div>
+          <div class="word">faciō</div>
+          <div class="ex la">Nos idem facimus.</div>
+          <div class="trans">делать, совершать — &ldquo;Мы делаем то же самое.&rdquo;<span class="nb">глагол | 1-е л. мн. facimus = &lsquo;мы делаем&rsquo;
+долгое ō: fa-ci-ō; a и i остаются краткими
+idem = &lsquo;то же самое&rsquo; (роль дополнения)</span></div>
+          <div class="hint">нажмите, чтобы перевернуть</div>
+        </div>
+        <div class="card reveal">
+          <div class="art">n., -ī</div>
+          <div class="word">malum</div>
+          <div class="ex la">Civitas commune malum videt.</div>
+          <div class="trans">зло, беда — &ldquo;Государство видит общую беду.&rdquo;<span class="nb">существительное | вин. ед. malum = по форме им. ед.
+макрона нет: ma-lum, оба гласных кратки
+mālum, с долгим ā, — это яблоко.</span></div>
+          <div class="hint">нажмите, чтобы перевернуть</div>
+        </div>
+      </div>
+
+      <div class="pairs reveal">
+        <div class="pr">
+          <div class="from">Уровень 1 · Уровень 3</div>
+          <div class="big">hic &nbsp;·&nbsp; h<span class="mk">ī</span>c</div>
+          <div class="gloss"><b>этот</b> против <b>здесь</b>. В печати разница в один знак, и только черта над гласной их и разделяет.</div>
+        </div>
+        <div class="pr">
+          <div class="from">Уровень 10 · Уровень 4</div>
+          <div class="big">os &nbsp;·&nbsp; <span class="mk">ō</span>s</div>
+          <div class="gloss"><b>кость</b> против <b>рот</b>. Те же три буквы, то же третье склонение среднего рода, шесть уровней врозь — и карточка, которая учит второму, об этом говорит.</div>
+        </div>
+      </div>
+      <p class="pair-note">Макроны кончаются на заглавном слове. Примеры предложений печатаются без пометок — так, как напечатан любой настоящий латинский текст, который вы когда-либо откроете, — и читать вы упражняетесь на самой вещи, а не на учебном пособии. Карточка называет вам долготу гласного; предложение заставляет нести её в голове.</p>
+    </div>
+  </section>
+
+  <!-- REFERENCE LESSONS -->
+  <section class="wrap">
+    <div class="frame reveal">
+      <span class="tag">не просто список слов</span>
+      <h2>Сорок четыре урока, срабатывающих по порядку</h2>
+      <p class="sub">Справочный урок открывается ровно на той карточке, где он вам впервые нужен, и остаётся доступным потом. Двадцать шесть уроков Core и восемнадцать уроков Pareto можно бесплатно прочесть на <a href="lessons.ru.html?lang=Latin">странице уроков</a>.</p>
+      <ul class="lessons">
+        <li><span class="no">01</span>Добро пожаловать в латынь<span class="d">Четыре буквы, в которых ошибается англоязычный читатель — c, g, v, qu — в восстановленном звучании, и зачем нужен макрон.</span></li>
+        <li><span class="no">10</span>Винительный падеж<span class="d">Первый падеж, который меняет смысл предложения; встречается на той карточке, которой он впервые нужен.</span></li>
+        <li><span class="no">14</span>Родительный и дательный<span class="d">«Кого» и «кому», и почему родительный падеж единственного числа напечатан на каждой карточке существительного.</span></li>
+        <li><span class="no">18</span>Аблатив<span class="d">Падеж, для которого у английского нет названия, и шесть работ, которые он выполняет.</span></li>
+        <li><span class="no">23</span>Основные формы глагола<span class="d">Почему латинский глагол приводится в четырёх формах и как от любой из них добраться до остальных.</span></li>
+        <li><span class="no">30</span>Ablativus absolutus<span class="d">Конструкция, которая делает Цезаря читаемым на скорости.</span></li>
+        <li><span class="no">34</span>Косвенная речь<span class="d">Винительный с инфинитивом: как римлянин пишет &lsquo;он сказал, что&hellip;&rsquo;.</span></li>
+        <li><span class="no">41</span>Как читать ссылку<span class="d">Что означает <i>Caes. BG 5.44.5</i> и как пойти и найти остальную страницу.</span></li>
+      </ul>
+      <p class="sub" style="margin:22px 0 0;">Внутри ещё: i в роли согласного, ch и ae/oe, соединительные слова, движущие силы, настоящее время, повелительное наклонение, звуковой строй, полное множественное число, ещё два спряжения, имперфект, третье склонение, предлоги и падеж, перфект и его семья, относительные придаточные, соединительные слова на скорости, все три причастия и две их работы, пассив дважды, отложительные глаголы, семья инфинитивов, сослагательное наклонение, придаточные с cum, цель и следствие, косвенные вопросы, герундий, герундив — и заключительный урок о том, куда идти дальше.</p>
+    </div>
+  </section>
+
+  <!-- PACKS -->
+  <section class="wrap">
+    <div class="reveal">
+      <h2>Два набора до грамотности</h2>
+      <p class="sub">Латынь — это ствол, а не лестница из трёх ступеней. Core и Pareto вместе — весь курс чтения на 2000 слов, и к его концу грамматика пройдена целиком.</p>
+      <div class="packs">
+        <a class="pack" href="https://store.steampowered.com/app/5063240/?utm_source=website-latin" target="_blank" rel="noopener">
+          <div class="n">Latin Core</div>
+          <div class="lvl">Уровни 1–5 · 1000 слов · 26 уроков</div>
+          <p>Основа чтения. Сначала предложения, построенные под уровень, к концу — настоящий Цезарь. Требуется базовая игра.</p>
+          <span class="here">В Steam</span>
+        </a>
+        <a class="pack" href="https://store.steampowered.com/app/5063250/?utm_source=website-latin" target="_blank" rel="noopener">
+          <div class="n">Latin Pareto</div>
+          <div class="lvl">Уровни 6–10 · 1000 слов · 18 уроков</div>
+          <p>Вторая тысяча и конец строительных лесов: Непот, письма Цицерона, Саллюстий, Ливий, речи Цицерона. Требуется Core.</p>
+          <span class="here">В Steam</span>
+        </a>
+      </div>
+
+      <h2 style="margin-top:54px;">Потом выберите свою третью тысячу</h2>
+      <p class="sub">Базовая грамотность — это развилка, а не финиш. Ствол останавливается на 2000 слов намеренно: дальше латынь действительно расходится, и то, какие 1000 слов придут следующими, зависит от того, что вы хотите читать. Ни одна ветвь ещё не построена.</p>
+      <div class="fork">
+        <div class="path">
+          <div class="pn">Классическая поэзия</div>
+          <div class="pl">Вергилий · Овидий · Катулл · Гораций</div>
+          <p>Стихотворный порядок слов, метрика и та лексика, которая встречается только у поэтов. Прозаическая лестница ствола — это условие входа, а не то, чем её можно заменить.</p>
+          <span class="tbd">запланировано · ещё не построено</span>
+        </div>
+        <div class="path">
+          <div class="pn">Церковная латынь</div>
+          <div class="pl">Вульгата · гимны · литургия</div>
+          <p>Церковная латынь — это собственный регистр: другой синтаксис, другая лексика и своё произношение; поэтому она ветвь, а не глава ствола.</p>
+          <span class="tbd">запланировано · ещё не построено</span>
+        </div>
+      </div>
+      <p class="sub" style="margin:18px 0 0;">Обе ветви требуют на входе Core и Pareto. Ни у одной нет даты; обе учтены и зарезервированы, а не обещаны.</p>
+    </div>
+  </section>
+
+  <!-- METHOD -->
+  <section class="wrap method">
+    <div class="frame reveal">
+      <span class="tag">как это запоминается</span>
+      <h2>Карточки как единая система</h2>
+      <dl>
+        <dt>Интервалы по Фибоначчи</dt><dd>Оценивайте каждую карточку 0–5. Чем лучше вы знаете слово, тем дольше оно не вернётся — интервальное повторение по Фибоначчи.</dd>
+        <dt>Бои с боссами</dt><dd>Каждый из 80 кластеров закрыт поединком, который не выиграть, не встретившись лицом к лицу со своими самыми трудными словами и не одолев их.</dd>
+        <dt>Выпуск</dt><dd>Победите кластер — и его карточки навсегда покинут вашу ежедневную колоду. Колода становится меньше по мере учёбы.</dd>
+        <dt>Озвучка</dt><dd>Латинский нейронный голос на каждом заглавном слове и каждом примере предложения — <i>la_LA-flashboss_m</i>, дообученный для FlashBoss и выпущенный под CC0; он читает классическое (восстановленное) произношение и соблюдает макроны как настоящую долготу гласных. Это синтез, а не запись живого диктора.</dd>
+        <dt>Ваш язык</dt><dd>Все 2000 карточек несут свой перевод, перевод примера <i>и</i> свои заметки на <b>немецком, испанском, японском, русском и упрощённом китайском</b>, а не только на английском — 30000 полей, без пропусков. Все 44 справочных урока идут на тех же пяти языках, и интерфейс игры тоже. В латынь можно играть полностью, не зная ни слова по-английски.</dd>
+        <dt>Макроны</dt><dd>Долгие гласные отмечены на 1320 из 2000 заглавных слов и не отмечены в предложениях — словарное соглашение там, где оно учит, печатное — там, где вы читаете.</dd>
+        <dt>Настоящие источники</dt><dd>1052 примера предложений называют книгу, главу и раздел, откуда они взяты; 813 из них не изменены. Всё взято из изданий в общественном достоянии.</dd>
+        <dt>Уроки</dt><dd>Сорок четыре справочных урока на два набора срабатывают ровно в той точке последовательности, где открывают то, что вы вот-вот прочтёте.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="wrap faq">
+    <div class="reveal">
+      <h2>Вопросы</h2>
+      <p class="sub">То, о чём спрашивают перед покупкой.</p>
+
+      <details>
+        <summary>Где это купить?</summary>
+        <p class="a">Оба набора уже в Steam: <a href="https://store.steampowered.com/app/5063240/?utm_source=website-latin-faq" target="_blank" rel="noopener">Latin Core</a> и <a href="https://store.steampowered.com/app/5063250/?utm_source=website-latin-faq" target="_blank" rel="noopener">Latin Pareto</a>. Оба списка слов и все сорок четыре урока читаются здесь бесплатно, если вы хотите оценить курс до того, как купите хоть один из них.</p>
+      </details>
+
+      <details>
+        <summary>Какое это произношение?</summary>
+        <p class="a">Классическое — восстановленное произношение Рима времён Цезаря, и в уроках, и в голосе: c и g всегда твёрдые, v как английское w, <i>Caesar</i> звучит как немецкое <i>Kaiser</i>. Церковный голос запланирован отдельно, а собственно церковная латынь — это отдельная ветвь, а не опция внутри этого курса.</p>
+      </details>
+
+      <details>
+        <summary>Нужно ли что-то ещё, чтобы играть?</summary>
+        <p class="a">Да. Latin Core — это DLC к базовой игре FlashBoss, поэтому нужна и она. Latin Pareto требует Core: наборы надстраиваются друг над другом по порядку. Всё остальное — уроки, озвучка, бои с боссами — уже внутри набора. На Windows 10 также нужен <a href="https://apps.microsoft.com/detail/9n0dx20hk701" target="_blank" rel="noopener">Windows Terminal</a> — бесплатная и безопасная загрузка из Microsoft Store.</p>
+      </details>
+
+      <details>
+        <summary>Латынь настоящая или написана для курса?</summary>
+        <p class="a">И то и другое, в заявленном порядке. Уровни с 1 по 3 построены под ту грамматику, которой вас уже научили: ни один настоящий автор не пишет на таком потолке, и карточки никого не называют. Цезарь входит на уровне 4, слегка урезанный. С уровня 8 почти каждое предложение — неизменённые слова автора. На два набора 1052 из 2000 предложений несут ссылку, и 813 из них — без адаптации.</p>
+      </details>
+
+      <details>
+        <summary>Можно ли играть на своём языке?</summary>
+        <p class="a">Полностью. Каждая из 2000 карточек несёт свой перевод, перевод примера и учебные заметки на <b>немецком, испанском, японском, русском и упрощённом китайском</b>, а не только на английском, и нигде нет пропусков. Все сорок четыре справочных урока идут на тех же пяти языках, а интерфейс самой игры говорит на всех шести.</p>
+      </details>
+
+      <details>
+        <summary>К чему приводит курс?</summary>
+        <p class="a">К чтению неадаптированной классической прозы со словарём под рукой. Две тысячи самых частотных лемм, вся грамматика изъявительного и сослагательного наклонений, причастия, инфинитивные обороты, герундий и герундив — и 17007 слов латыни, прочитанных в контексте по дороге. Не к тому, чтобы говорить на латыни, и не к тому, чтобы на ней писать: курс честно говорит, что учит одному навыку.</p>
+      </details>
+
+      <details>
+        <summary>Почему нет Pareto 2?</summary>
+        <p class="a">Потому что латынь вместо этого расходится. Core плюс Pareto — это полный ствол на 2000 слов, грамматически завершённый на уровне 10. Третья тысяча зависит от того, куда вы идёте — классическая поэзия или церковная латынь, — поэтому она запланирована как две ветви, а не как ещё одна лестница. Ни одна пока не построена.</p>
+      </details>
+
+      <details>
+        <summary>Можно ли посмотреть слова до покупки?</summary>
+        <p class="a">Все до одного. Полные списки слов для Core и Pareto лежат на <a href="wordlists.ru.html?lang=Latin&amp;set=Core">странице списков слов</a>, а все сорок четыре справочных урока — на <a href="lessons.ru.html?lang=Latin">странице уроков</a>: бесплатно, можно распечатать, без учётной записи.</p>
+      </details>
+
+      <details>
+        <summary>Есть ли демоверсия?</summary>
+        <p class="a">В браузере доступен играбельный бой с боссом — если хотите почувствовать бой до того, как решитесь: <a href="https://flashboss-demo.pages.dev/">попробовать демо</a>.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final wrap reveal">
+    <h2>Начните с <i>Roma est.</i></h2>
+    <p>Два слова на первой карточке первого кластера. Две тысячи слов спустя — Цицерон.</p>
+    <p class="dates"><a href="https://store.steampowered.com/app/5063240/?utm_source=website-latin" target="_blank" rel="noopener">Latin Core</a> · <a href="https://store.steampowered.com/app/5063250/?utm_source=website-latin" target="_blank" rel="noopener">Latin Pareto</a> — оба в Steam</p>
+    <p class="also">Или сначала прочтите <a href="wordlists.ru.html?lang=Latin&amp;set=Core">список слов</a> и <a href="lessons.ru.html?lang=Latin">уроки</a> — они бесплатны, и это весь курс.</p>
+    <p class="bundleline">Всё это одной покупкой: <a href="https://store.steampowered.com/bundle/87746/?utm_source=website-bundle" target="_blank" rel="noopener"><b>FlashBoss Латинский — Полный курс</b></a>. Уже владеете частью? Steam возьмёт плату только за остальное.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p class="epi">&ldquo;Multum cum in omnibus rebus tum in re militari potest fortuna.&rdquo;<span class="tr">Случай многое значит во всех делах, а больше всего — на войне.</span><span class="epi-cite">Latin Core · Уровень 4 · Caes. BG 6.30.2</span></p>
+  <span class="footer-links">
+    <a href="home.ru.html">главная</a>
+    <span class="div">·</span>
+    <a href="packs.ru.html">наборы</a>
+    <span class="div">·</span>
+    <a href="manual/">руководство (бета)</a>
+    <span class="div">·</span>
+    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-latin" target="_blank" rel="noopener">steam</a>
+  </span>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+document.querySelectorAll('.card').forEach(function(c){c.addEventListener('click',function(){c.classList.toggle('flipped');});});
+(function(){
+  var root=document.documentElement,ticking=false;
+  function update(){var max=document.body.scrollHeight-window.innerHeight;var p=max>0?Math.min(1,Math.max(0,window.scrollY/max)):0;root.style.setProperty('--mood',(p*p*(3-2*p)).toFixed(3));ticking=false;}
+  window.addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(update);ticking=true;}},{passive:true});update();
+})();
+</script>
+<script>
+// language dropdown: button toggles the menu; click-away / Esc closes it
+(function(){
+  var sw=document.querySelector('.lang-switch'); if(!sw) return;
+  var btn=sw.querySelector('.lang-toggle'), menu=sw.querySelector('.lang-menu');
+  function close(){ menu.hidden=true; btn.setAttribute('aria-expanded','false'); }
+  btn.addEventListener('click', function(e){ e.stopPropagation(); var willOpen=menu.hidden; menu.hidden=!willOpen; btn.setAttribute('aria-expanded', String(willOpen)); });
+  document.addEventListener('click', function(e){ if(!sw.contains(e.target)) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
+</script>
+</body>
+</html>
