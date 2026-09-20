@@ -50,11 +50,22 @@ KEY 5
 
 # ── FILM: every beat of the fight, for the site GIF ──────────────────────
 # The store route takes three stills. A GIF wants the beats between them, and in
-# particular it wants the ANSWER FREEZE and the REPOSITION as two frames, because
-# they are two moments: the freeze reveals the answer, and only then do the hero
-# and the boss move and the status line under the platform change with them.
-# (Odiin, 2026-09-20, on the web demo getting this wrong: "the text changes on the
-# answer, not on the hero/boss reposition like it should.")
+# particular it wants the ANSWER FREEZE and the REPOSITION as one frame, because
+# the game moves them together: answering redraws the question AND repositions
+# the hero and the boss AND changes the status line under the platform, all on
+# the same beat. (Odiin, 2026-09-20, on the web demo getting this wrong: "the
+# text changes on the answer, not on the hero/boss reposition like it should.")
+#
+# DO NOT PUT A KEY BETWEEN TWO ANSWERS. This route used to send KEY ENTER after
+# each answer freeze, on the assumption that the fight waits to be advanced. It
+# does not — ANSWER moves it on by itself. ENTER is outside the 1-8/9 the prompt
+# accepts, so the game printed "Invalid input. Choose 1-8 or 9 to retreat:" and
+# THAT LINE SCROLLED THE TERMINAL: the header box lost its top edge and the whole
+# screen sat two lines high for the shot that followed. Three such frames reached
+# the shipped GIFs before Odiin caught them on 2026-09-20 — "your invalid input
+# shots are in the gif … every other shot is not needed. it breaks the frame."
+# The only key this fight accepts between answers is a digit, and it does not
+# need one.
 EXPECT [1-8]\.
 EXPECT ₃    ₄
 REFUTE ₁    ₂
@@ -62,30 +73,25 @@ EXPECT ╚═+╝\s*\Z
 SHOT frame01
 ANSWER
 SHOT frame02
-KEY ENTER
-SHOT frame03
 ANSWER
-SHOT frame04
-KEY ENTER
 EXPECT [1-8]\.
 EXPECT ₁    ₂
 REFUTE ₃    ₄
+SHOT frame03
+ANSWER
+SHOT frame04
+ANSWER
 SHOT frame05
-ANSWER
-SHOT frame06
-KEY ENTER
-SHOT frame07
-ANSWER
-SHOT frame08
+# ENTER *is* valid here and only here: the victory screen says "Enter to continue".
 KEY ENTER
 # ── the cluster victory: the real game's graduation screen ───────────────
 EXPECT {CARD1}
 EXPECT 🎆\s*\Z
-SHOT frame09
-# '8' toggles the word list between the pack language and English, in place
+SHOT frame06
+# '8' toggles the word list between the pack language and English, in place.
+# ONE toggle only: a second 8 returns to the first list and the shot is a
+# pixel-identical duplicate, which clean_frames.sh would drop anyway.
 KEY 8
-SHOT frame10
-KEY 8
-SHOT frame11
+SHOT frame07
 LOG film route taken
 END

@@ -162,3 +162,76 @@ is absent before a run that depends on the chooser.
 
 `SHOT` at the "Engaging Boss" hold captures one frame and costs the rest of the run.
 The title plates in `stitch_three.sh` are drawn instead, in the real window chrome.
+
+---
+
+## The broken frames, 2026-09-20 — found by Odiin in the shipped GIFs
+
+> *"dude, your invalid imput shots are in the gif. it looks like they can be skipped.
+> every other shot is not needed. it breaks the frame."*
+
+He was right, and it was my route, not the bench.
+
+**The cause.** `roots_fight_film.keys` sent `KEY ENTER` after each answer freeze, on
+the assumption that the fight waits to be advanced. **It does not.** `ANSWER` moves it
+on by itself: the next question, the hero/boss reposition and the status line all land
+on the same beat. ENTER is outside the `1-8`/`9` the prompt accepts, so the game printed
+
+```
+Invalid input. Choose 1-8 or 9 to retreat:
+```
+
+and **that line scrolled the terminal**. The shot taken straight after was therefore
+both a repeat of the previous beat and misregistered — the header box lost its top edge
+and the whole screen sat two lines high. Three such frames, `frame03/05/07`, in every
+set shot with that route: all five English Core locales, all six Latin Roots locales,
+and Spanish Core. `the_guide_film.keys` never had the fault; its loop is
+`SHOT / ANSWER / SHOT / ANSWER`, which is the correct shape and is now the shape of
+both routes.
+
+**Two more faults surfaced while fixing it, neither of which Odiin had seen:**
+
+1. **The immersion GIFs ended on a menu.** The route pressed `8` at the cluster victory
+   to toggle the word list between the pack language and English. An ESL pack (English
+   Core, Spanish Core) has that toggle. An **immersion pack has no toggle at all**,
+   because its cards carry no foreign-language field — the footer reads *"press any key
+   to continue"*, so `8` **left the screen**, and the next two shots were the Sanctum.
+   Every shipped `bossfight-immersion*.gif` ended on `THE SANCTUM ~ CORE`. This is the
+   immersion law showing up as a capture bug, and it is worth knowing: **the presence of
+   the word-list toggle is a reliable test of whether a pack is immersion or ESL.**
+2. **The Russian English Core run echoed a stray `^[[A`** onto the cluster victory,
+   scrolling it the same way. One frame, `ec_ru_frame09`.
+
+**The fix, in three parts.**
+
+| part | what |
+|---|---|
+| `routes/roots_fight_film.keys` | no key between two answers; one `8` at the victory, not two; 7 shots, not 11 |
+| `clean_frames.py` | filters a capture set before it reaches a GIF |
+| `build_all.sh` | rebuilds all twelve GIFs and their posters from the captures |
+
+`clean_frames.py` uses **no magic number about any particular screen**, which matters
+because The Guide draws a dimmer box than the Roots packs. Both of its tests calibrate
+against the set they are filtering:
+
+- **blue** — how much blue sits in the top band. The cluster victory is framed in blue
+  block emoji and a fight screen is not, so this sorts frames into *fight* and *victory*
+  without knowing either palette.
+- **lastrow** — the bottom-most inked row of the client area. The game clears and
+  repaints the whole screen, so every frame of a given screen type ends on the same row.
+  A frame that disagrees with the majority of its own kind has scrolled. That one test
+  catches the invalid-input frames and the stray-escape one alike.
+
+Then: anything after the last victory frame is dropped (a fight is over when its cluster
+victory is on screen — this is what kills the Sanctum frames), and any frame
+pixel-identical to one already kept is dropped (the ESL toggle returns to where it
+started on the second press).
+
+**Frame counts after the fix.** English Core and Spanish Core 7 — four questions,
+VICTORY, then the word list in the pack language and again in English. Latin Roots 6 —
+the same without the toggle. The Guide 6, untouched. The stitched English GIF 22.
+
+**The captures are not in this repo** and are not meant to be — Odiin, 2026-09-20:
+*"those photos shouldn't be staged in those trees. they are a temporary means to an end
+to get our gifs."* The routes are the durable artifact. `FB_FILMS` points `build_all.sh`
+at wherever a shoot left them.
