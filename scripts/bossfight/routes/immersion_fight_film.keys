@@ -73,14 +73,15 @@ KEY 5
 # The only key this fight accepts between answers is a digit, and it does not
 # need one.
 #
-# THE FIGHT HAS TO GO WRONG ONCE. Odiin, 2026-09-20: "you are supposed to
-# encounter adversity at least once in the bossfight. get to the killstroke,
-# miss it. fight back, win". A flawless run films none of what the copy
+# THE FIGHT HAS TO GO WRONG ONCE. A flawless run films none of what the copy
 # promises -- one step forward with a correct answer, TWO steps back with each
-# mistake -- so this route walks the hero to position 4, loses it with MISS,
-# and climbs back. MISS resolves the RIGHT digit exactly as ANSWER does and
-# then presses a different one, so it only ever fires on a screen the bench
-# fully understands.
+# mistake -- so this route walks the hero to position 4, loses it there with
+# MISS, and climbs back.
+#
+# MISS is a bench verb (key_script.py, resolve_miss; landed on shoot-automation
+# at 39a2a3d2 with tests). Its comment there carries the reason in Odiin's own
+# words, so this route does not repeat it: read the verb, not this file, for why
+# and how it refuses a grid it cannot read.
 EXPECT [1-8]\.
 EXPECT ₃    ₄
 REFUTE ₁    ₂

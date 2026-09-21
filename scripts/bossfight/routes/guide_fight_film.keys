@@ -42,6 +42,9 @@ ANSWER
 SHOT frame03
 ANSWER
 SHOT frame04
+# The setback. MISS is a bench verb (key_script.py, resolve_miss; landed on
+# shoot-automation at 39a2a3d2 with tests). Its comment there carries the
+# reason in Odiin's own words, so this file does not repeat it.
 MISS
 SHOT frame05
 ANSWER
