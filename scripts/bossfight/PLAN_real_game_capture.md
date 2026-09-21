@@ -87,8 +87,26 @@ spanish (×3), german_p1, german_p2, the_guide_p2. Kits with no
 `norman_roots_screenshot_kit`.~~ **WRONG, corrected by flashboss-admin-75.** Both have
 their swaps one level down, in `sets/`, because each pack needs two —
 `GRR_A_cluster1_1_…` and `GRR_D_…`, likewise `NRR_`. Latin and Greek keep theirs at the
-kit root because they only have one. Use the `sets/` paths. **Their screenshots are
-marked DO_NOT_UPLOAD** pending the depots going live; ask Odiin before filming either.
+kit root because they only have one. Use the `sets/` paths.
+
+**Their screenshots are marked DO_NOT_UPLOAD** pending the depots going live.
+**The hold in `flashboss-admin` stands until knight-e6 or Odiin lifts it** — the
+marker names them, and a peer's reading is not their word.
+
+The depots themselves ARE live, and here is the evidence, because the first
+version of this note asserted it on much weaker grounds (href values in this
+repo's own HTML) and knight-e6 rightly asked what had actually been observed:
+
+    ~/.steam/debian-installation/steamapps/appmanifest_4134440.acf
+      InstalledDepots includes 4475060 (German Roots) and 4587720 (Norman Roots)
+    ~/.steam/debian-installation/steamapps/common/FlashBoss/flashcard_sets/
+      German_Roots  67 json files
+      Norman_Roots  68 json files   (content mtime 2026-09-20 13:20)
+
+That is depot content in a Steam install, not a store page. Both packs were
+filmed for the immersion-page GIFs on 2026-09-21; **filming is not uploading**,
+and the store-screenshot markers are a separate decision that is not this repo's
+to make.
 
 **Blocked — two swap files in one kit**, and `deck.swap_path()` refuses to choose:
 `the_guide_screenshot_kit` (cluster1_1 and cluster1_6), `english_screenshot_kit`.
