@@ -89,9 +89,14 @@ their swaps one level down, in `sets/`, because each pack needs two —
 `GRR_A_cluster1_1_…` and `GRR_D_…`, likewise `NRR_`. Latin and Greek keep theirs at the
 kit root because they only have one. Use the `sets/` paths.
 
-**Their screenshots are marked DO_NOT_UPLOAD** pending the depots going live.
-**The hold in `flashboss-admin` stands until knight-e6 or Odiin lifts it** — the
-marker names them, and a peer's reading is not their word.
+~~**Their screenshots are marked DO_NOT_UPLOAD** pending the depots going live.~~
+**LIFTED 2026-09-21 by knight-e6**, with flashboss-admin-75, after e6 verified the
+Steam install themselves: German_Roots 47 clusters / 1,000 cards with `churl`
+present, so the final content, and Norman_Roots 48 / 1,000. Both fights cleared to
+ship on the immersion GIFs.
+
+The route to that ruling is worth keeping, because the first version of this note
+got it wrong in a way that is easy to repeat.
 
 The depots themselves ARE live, and here is the evidence, because the first
 version of this note asserted it on much weaker grounds (href values in this
@@ -103,10 +108,15 @@ repo's own HTML) and knight-e6 rightly asked what had actually been observed:
       German_Roots  67 json files
       Norman_Roots  68 json files   (content mtime 2026-09-20 13:20)
 
-That is depot content in a Steam install, not a store page. Both packs were
-filmed for the immersion-page GIFs on 2026-09-21; **filming is not uploading**,
-and the store-screenshot markers are a separate decision that is not this repo's
-to make.
+That is depot content in a Steam install, not a store page. It was handed to e6
+rather than used to clear the marker here: **the marker named them, and a peer's
+reading is not their word.** They then checked it themselves and lifted it.
+
+Two rules came out of that exchange and both are worth keeping:
+  * **filming is not uploading** — a fight on the marketing site and a store
+    screenshot on a depot are different acts with different gates;
+  * a hold is cleared by whoever set the condition, not by whoever first
+    believes it is satisfied.
 
 **Blocked — two swap files in one kit**, and `deck.swap_path()` refuses to choose:
 `the_guide_screenshot_kit` (cluster1_1 and cluster1_6), `english_screenshot_kit`.
