@@ -12,3 +12,6 @@ Disallow: /report.html
 Disallow: /phone-layout-test.html
 
 Sitemap: https://odiin2024.github.io/flashboss-site/sitemap.xml
+
+# Reviewer pages: private links, account-style, not for search
+Disallow: /review/
