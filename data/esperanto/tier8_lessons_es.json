@@ -1,74 +1,168 @@
 [
   {
-    "lesson_id": "047",
-    "trigger_word": "arbaro",
-    "title": "LECCIÓN 47: TIEMPOS COMPUESTOS",
+    "lesson_id": "052",
+    "trigger_word": "mi revenos",
+    "title": "LECCIÓN 53: EL PREFIJO RE-",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "Combina ESTI con participios para crear",
-          "tiempos compuestos matizados.",
+          "El prefijo RE- significa DE NUEVO o DE",
+          "VUELTA: la acción se repite, o vuelve",
+          "al lugar de donde vino.",
           "",
-          "PROGRESIVO (acción en curso):",
-          "Mi estas leganta. = Estoy leyendo.",
-          "Mi estis leganta. = Estaba leyendo.",
-          "Mi estos leganta. = Estaré leyendo.",
+          "DE NUEVO:                          Presiona 1",
+          "legi     → relegi     = leer → releer",
+          "fari     → refari     = hacer → rehacer",
+          "kontakti → rekontakti = volver a contactar",
           "",
-          "PERFECTO (acción completada):",
-          "Mi estas leginta. = He leído.",
-          "Mi estis leginta. = Había leído.",
-          "Mi estos leginta. = Habré leído.",
+          "DE VUELTA:                         Presiona 2",
+          "veni     → reveni     = venir → volver",
+          "doni     → redoni     = dar → devolver",
+          "sendi    → resendi    = enviar → reenviar",
           "",
-          "COMPUESTO PASIVO:",
-          "La libro estas legita. = El libro está leído.",
-          "La libro estis legata. = Estaba siendo leído.",
-          "",
-          "¡Estos crean distinciones temporales precisas!"
+          "EN USO:                            Presiona 3",
+          "Mi revenos al la temo morgaŭ.",
+          "= Mañana volveré al tema.",
+          "Ĝis revido! = ¡Adiós! (¡Hasta volver a vernos!)"
         ],
-        "pronunciation": "Leciono kvardek sep"
+        "pronunciation_mappings": {
+          "1": "Legi. Relegi. Fari. Refari. Kontakti. Rekontakti.",
+          "2": "Veni. Reveni. Doni. Redoni. Sendi. Resendi.",
+          "3": "Mi revenos al la temo morgaŭ. Ĝis revido!"
+        },
+        "pronunciation": "Leciono kvindek du"
       }
     ]
   },
   {
     "lesson_id": "048",
-    "trigger_word": "pikniko",
-    "title": "LECCIÓN 48: DERIVAR PALABRAS",
+    "trigger_word": "diskutrondo",
+    "title": "LECCIÓN 54: FORMAR PALABRAS",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "Cualquier raíz cambia de categoría con",
-          "solo cambiar la terminación.",
+          "Cualquier raíz puede llevar cualquier",
+          "terminación, si el sentido lo permite:",
           "",
-          "DE UNA SOLA RAÍZ:",
-          "bel- (raíz de \"belleza\")",
-          "bela  = hermoso (adjetivo -a)",
-          "bele  = hermosamente (adverbio -e)",
-          "belo  = belleza (sustantivo -o)",
-          "beli  = ser hermoso (verbo -i)",
+          "SUKCES- (éxito):                   Presiona 1",
+          "sukceso = éxito        sukcesi = tener éxito",
+          "sukcesa = exitoso      sukcese = con éxito",
           "",
-          "vera → vere → vero (cierto → verdad)",
-          "varma → varme → varmo (cálido → calor)",
+          "FIN- (fin):                        Presiona 2",
+          "fino = fin             fini = terminar",
+          "fina = final           fine = finalmente",
           "",
-          "AÑADE TAMBIÉN AFIJOS:",
-          "belega = bellísimo (-eg- aumentativo)",
-          "beligi = embellecer (-ig- causativo)",
-          "beleco = belleza abstracta (-ec-)",
-          "¡Una raíz, posibilidades infinitas!"
+          "RAÍZ DE NOMBRE → VERBO:            Presiona 3",
+          "telefono → telefoni = teléfono → telefonear",
+          "martelo  → marteli  = martillo → martillar",
+          "krono    → kroni    = corona → coronar"
         ],
+        "pronunciation_mappings": {
+          "1": "Sukceso. Sukcesi. Sukcesa. Sukcese.",
+          "2": "Fino. Fini. Fina. Fine.",
+          "3": "Telefono. Telefoni. Martelo. Marteli. Krono. Kroni."
+        },
         "pronunciation": "Leciono kvardek ok"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "Los COMPUESTOS unen raíces. La ÚLTIMA",
+          "raíz es la principal: dice qué ES la",
+          "cosa. La primera la precisa.",
+          "",
+          "LA ÚLTIMA RAÍZ DECIDE:             Presiona 1",
+          "diskut + rondo  = círculo de debate",
+          "kontakt + listo = lista de contactos",
+          "foto + albumo   = álbum de fotos",
+          "",
+          "UNA -O- PUEDE UNIRLAS (SONIDO):    Presiona 2",
+          "lern + o + libro = lernolibro = libro de texto",
+          "",
+          "LAS PREPOSICIONES TAMBIÉN:         Presiona 3",
+          "antaŭ + kondiĉo = antaŭkondiĉo = requisito",
+          "post + parolo   = postparolo = epílogo",
+          "ĉe + esti       = ĉeesti = estar presente"
+        ],
+        "pronunciation_mappings": {
+          "1": "Diskutrondo. Kontaktlisto. Fotoalbumo.",
+          "2": "Lernolibro.",
+          "3": "Antaŭkondiĉo. Postparolo. Ĉeesti."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "047",
+    "trigger_word": "materialo",
+    "title": "LECCIÓN 55: TIEMPOS COMPUESTOS",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "ESTI + un participio activo forma tiempos",
+          "compuestos. RARA VEZ los necesitas: el",
+          "verbo simple ya lo dice todo.",
+          "",
+          "LA FORMA NORMAL:                   Presiona 1",
+          "Mi legas. = Leo. / Estoy leyendo.",
+          "Mi legis. = Leí. / Leía. / Estaba leyendo. /",
+          "            He leído.",
+          "Mi legos. = Leeré. / Estaré leyendo.",
+          "",
+          "COMPUESTO = SOLO PARA ENFATIZAR:   Presiona 2",
+          "Mi estas leganta.",
+          "= Estoy leyendo (justo en plena lectura).",
+          "Mi jam estis manĝinta, kiam vi venis.",
+          "= Ya había comido cuando llegaste.",
+          "No uses 'estas leganta' para cada",
+          "'está leyendo' del español: suena raro."
+        ],
+        "pronunciation_mappings": {
+          "1": "Mi legas. Mi legis. Mi legos.",
+          "2": "Mi estas leganta. Mi jam estis manĝinta, kiam vi venis."
+        },
+        "pronunciation": "Leciono kvardek sep"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "LA PASIVA ES DISTINTA: ESTI + -ITA",
+          "(o -ATA) es la pasiva de cada día.",
+          "",
+          "UN PARTICIPIO, TODOS LOS TIEMPOS:  Presiona 1",
+          "La salono estas rezervita. = está reservada",
+          "La salono estis rezervita. = estaba reservada",
+          "La salono estos rezervita. = estará reservada",
+          "La salono estus rezervita. = estaría reservada",
+          "",
+          "EN USO:                            Presiona 2",
+          "Ĉiuj materialoj estos provizitaj.",
+          "= Se proporcionarán todos los materiales.",
+          "La kunveno estis nuligita.",
+          "= La reunión fue cancelada."
+        ],
+        "pronunciation_mappings": {
+          "1": "La salono estas rezervita. La salono estis rezervita. La salono estos rezervita. La salono estus rezervita.",
+          "2": "Ĉiuj materialoj estos provizitaj. La kunveno estis nuligita."
+        }
       }
     ]
   },
   {
     "lesson_id": "049",
     "trigger_word": "respondeco",
-    "title": "LECCIÓN 49: EL SUFIJO '-END-'",
+    "title": "LECCIÓN 56: EL SUFIJO -END-",
     "header_color": "green",
     "pages": [
       {
@@ -100,100 +194,38 @@
   },
   {
     "lesson_id": "050",
-    "trigger_word": "butono",
-    "title": "LECCIÓN 50: EL SUFIJO '-UM-'",
+    "trigger_word": "parkumado",
+    "title": "LECCIÓN 57: EL SUFIJO -UM-",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "¡El sufijo -UM- NO tiene sentido fijo! Es",
-          "el comodín para palabras que no encajan",
-          "en otros patrones. Se aprende por uso.",
+          "El sufijo -UM- NO tiene significado fijo.",
+          "Une una raíz con una idea relacionada, y",
+          "cada palabra se aprende por separado.",
           "",
-          "PALABRAS CON -UM- FRECUENTES:",
-          "plena  → plenumi  = lleno → cumplir",
-          "kolo   → kolumi   = cuello → cuello (prenda)",
-          "butono → butonumi = botón → abotonar",
-          "aero   → aerumi   = aire → ventilar",
-          "brako  → brakumi  = brazo → abrazar",
-          "okulo  → okulumi  = ojo → ojear, coquetear",
-          "komuna → komunumo = común → comunidad",
+          "PALABRAS COMUNES CON -UM-:         Presiona 1",
+          "parko   → parkumi    = parque → estacionar",
+          "plena   → plenumi    = lleno → cumplir",
+          "kolo    → kolumo     = cuello → cuello de camisa",
+          "butono  → butonumi   = botón → abotonar",
+          "brako   → brakumi    = brazo → abrazar",
+          "aero    → aerumi     = aire → ventilar",
+          "komuna  → komunumo   = común → comunidad",
           "",
-          "EN USO:",
+          "EN USO:                            Presiona 2",
+          "Kie mi povas parkumi?",
+          "= ¿Dónde puedo estacionar?",
           "Mi plenumis mian promeson.",
-          "(Cumplí mi promesa.)",
-          "",
-          "¡-UM- significa \"hacer algo relacionado\"!"
+          "= Cumplí mi promesa."
         ],
+        "pronunciation_mappings": {
+          "1": "Parko. Parkumi. Plena. Plenumi. Kolo. Kolumo. Butono. Butonumi. Brako. Brakumi. Aero. Aerumi. Komuna. Komunumo.",
+          "2": "Kie mi povas parkumi? Mi plenumis mian promeson."
+        },
         "pronunciation": "Leciono kvindek"
-      }
-    ]
-  },
-  {
-    "lesson_id": "051",
-    "trigger_word": "plibonigi",
-    "title": "LECCIÓN 51: EL PREFIJO 'EKS-'",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "El prefijo EKS- significa \"ex-\", \"antiguo\".",
-          "Indica algo que ya no está vigente.",
-          "",
-          "RELACIONES PASADAS:",
-          "edzo → eksedzo = esposo → exesposo",
-          "edzino → eksedzino = esposa → exesposa",
-          "amiko → eksamiko = amigo → examigo",
-          "",
-          "CARGOS Y ESTATUS PASADOS:",
-          "prezidento → eksprezidento = expresidente",
-          "membro → eksmembro = miembro → exmiembro",
-          "soldato → ekssoldato = soldado → exsoldado",
-          "studento → eksstudento = alumno → exalumno",
-          "",
-          "EN USO:",
-          "Mia eksedzo loĝas en Parizo.",
-          "(Mi exesposo vive en París.)",
-          "¡EKS- sirve con cualquier rol o estatus!"
-        ],
-        "pronunciation": "Leciono kvindek unu"
-      }
-    ]
-  },
-  {
-    "lesson_id": "052",
-    "trigger_word": "paŭzejo",
-    "title": "LECCIÓN 52: EL SUFIJO '-EG-'",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "¡El sufijo -EG- amplifica las cosas!",
-          "",
-          "HACER COSAS GRANDES:",
-          "domo    → domego     = casa → mansión",
-          "vento   → ventego    = viento → tormenta",
-          "bona    → bonega     = bueno → excelente",
-          "",
-          "INTENSIFICAR:",
-          "malsata → malsatega  = hambriento → famélico",
-          "venki   → venkegi    = ganar → aplastar",
-          "ami     → amegi      = amar → adorar",
-          "",
-          "-EG- es lo opuesto a -ET-:",
-          "dometo (cabaña) <-> domego (mansión)",
-          "",
-          "Hay muchos sufijos en esperanto. Para",
-          "ayudarte a recordar este en particular,",
-          "piensa en 'EXAGERAR'."
-        ],
-        "pronunciation": "Leciono kvindek du"
       }
     ]
   }

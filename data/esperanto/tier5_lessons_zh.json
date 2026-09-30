@@ -1,41 +1,130 @@
 [
   {
-    "lesson_id": "030",
-    "trigger_word": "bonvolu legi",
-    "title": "第30课：命令式",
+    "lesson_id": "076",
+    "trigger_word": "lernado",
+    "title": "第35课：-AD-、-EC- 和 -UJ-",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "命令式（-u）用于发出命令、",
-          "请求或表达愿望。它对所有主语",
-          "形式都相同——无需变位！",
+          "-AD- 把一个动作变成「活动」：",
+          "一件持续进行、或者一再",
+          "反复发生的事情。",
           "",
-          "构成命令式：",
-          "将不定式（-i）改为命令式（-u）：",
-          "veni → Venu！       = 来！",
-          "manĝi → Manĝu！     = 吃！",
-          "rigardi → Rigardu！ = 看！",
-          "helpi → Helpu min！ = 帮我！",
+          "动词 → 活动：                             按 1",
+          "lerni   → lernado    = 学 → 学习",
+          "kuri    → kurado     = 跑 → 跑步",
+          "paroli  → parolado   = 说话 → 演讲",
+          "Regula lernado donas bonajn rezultojn.",
+          "= 有规律的学习会带来好结果。",
           "",
-          "礼貌请求：",
-          "Bonvolu sidiĝi。   = 请坐下。",
-          "Atentu！           = 注意！",
-          "",
-          "适用于所有主语：",
-          "Ni iru！   = 我们走吧！（我们）",
-          "Li venu。  = 让他来吧。（他）"
+          "-EC- 表示一种「性质」：                   按 2",
+          "amiko   → amikeco    = 朋友 → 友谊",
+          "afabla  → afableco   = 友善的 → 友善",
+          "libera  → libereco   = 自由的 → 自由",
+          "sana    → saneco     = 健康的 → 健康",
+          "（belaĵo 是美丽的「东西」；beleco",
+          "是美本身。）"
         ],
-        "pronunciation": "Leciono tridek"
+        "pronunciation_mappings": {
+          "1": "Lerni. Lernado. Kuri. Kurado. Paroli. Parolado. Regula lernado donas bonajn rezultojn.",
+          "2": "Amiko. Amikeco. Afabla. Afableco. Libera. Libereco. Sana. Saneco."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "-UJ- 表示「容器」：                       按 1",
+          "mono    → monujo     = 钱 → 钱包",
+          "sukero  → sukerujo   = 糖 → 糖罐",
+          "salo    → salujo     = 盐 → 盐瓶",
+          "retpoŝto → retpoŝtujo = 电子邮件 → 收件箱",
+          "",
+          "-UJ- 也可以表示国度：                     按 2",
+          "Esperantujo = 世界语世界",
+          "旧式国名曾用它：Francujo。",
+          "现代国名更常用 -IO：Francio、",
+          "Germanio、Italio。",
+          "",
+          "实际用法：                                按 3",
+          "Mia monujo estas en la sako.",
+          "= 我的钱包在包里。",
+          "Bonvenon al Esperantujo!",
+          "= 欢迎来到世界语世界！"
+        ],
+        "pronunciation_mappings": {
+          "1": "Mono. Monujo. Sukero. Sukerujo. Salo. Salujo. Retpoŝto. Retpoŝtujo.",
+          "2": "Esperantujo. Francujo. Francio. Germanio. Italio.",
+          "3": "Mia monujo estas en la sako. Bonvenon al Esperantujo!"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "024",
+    "trigger_word": "samideano",
+    "title": "第36课：后缀「-AN-」",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "后缀 -AN- 表示群体的「成员」、",
+          "来自某地的「人」，或某个人物、",
+          "某种思想的「追随者」。",
+          "",
+          "成员：                                    按 1",
+          "klubo   → klubano    = 俱乐部 → 俱乐部成员",
+          "familio → familiano  = 家庭 → 家庭成员",
+          "",
+          "来自某地的人：                            按 2",
+          "urbo    → urbano     = 城市 → 城市居民",
+          "Usono   → usonano    = 美国 → 美国人",
+          "Eŭropo  → eŭropano   = 欧洲 → 欧洲人",
+          "（表示人的词要小写。）",
+          "",
+          "追随者：                                  按 3",
+          "Kristo  → kristano   = 基督 → 基督徒",
+          "Budho   → budhano    = 佛陀 → 佛教徒"
+        ],
+        "pronunciation_mappings": {
+          "1": "Klubo. Klubano. Familio. Familiano.",
+          "2": "Urbo. Urbano. Usono. Usonano. Eŭropo. Eŭropano.",
+          "3": "Kristo. Kristano. Budho. Budhano."
+        },
+        "pronunciation": "Leciono dudek kvar"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "世界语特有的词：                          按 1",
+          "samideano = 世界语同道",
+          "sam-ide-an-o：同一理念（ideo）的成员",
+          "",
+          "Karaj samideanoj!",
+          "= 亲爱的同道们！",
+          "",
+          "ANO 本身也是一个词：                      按 2",
+          "ano = 成员",
+          "Ŝi estas ano de nia klubo.",
+          "= 她是我们俱乐部的成员。"
+        ],
+        "pronunciation_mappings": {
+          "1": "Samideano. Karaj samideanoj!",
+          "2": "Ano. Ŝi estas ano de nia klubo."
+        }
       }
     ]
   },
   {
     "lesson_id": "031",
-    "trigger_word": "amuza",
-    "title": "核心卡包完成！",
+    "trigger_word": "decembro",
+    "title": "第37课：核心卡包完成！",
     "header_color": "gold",
     "repeat": false,
     "pages": [
@@ -43,24 +132,24 @@
         "page": 1,
         "total_pages": 1,
         "content": [
-          "恭喜你！你已完成世界语核心卡包！",
+          "Gratulojn! 你已完成世界语核心卡包！",
           "",
           "你的成就：",
-          "✓ 掌握了1000个最常用的世界语单词",
-          "✓ 精通基础语法与构词法",
-          "✓ 能在日常情境中自如表达",
+          "✓ 1000 个基本单词和短语",
+          "✓ 基础语法和构词法",
+          "✓ 能谈论自己的日常生活",
           "",
-          "下一步：",
-          "「帕累托扩展」将新增2000个单词，",
-          "并涵盖高级语法：词缀与分词。",
+          "下一步：Pareto 1",
+          "再学 1000 个单词和短语，用于论坛、",
+          "讨论、聚会和旅行，并学完构词法",
+          "工具箱的其余部分。",
           "",
           "你现在可以：",
-          "- 与世界语者进行真实对话",
-          "- 阅读简易书籍与文章",
-          "- 参加世界语活动（大会！）",
+          "- 在网上和世界语者聊天",
+          "- 阅读简单的文章",
           "",
-          "Bona laboro! Vi estas sur la vojo!",
-          "（干得漂亮！你已踏上征途！）"
+          "Bonega laboro! Vi estas sur la ĝusta vojo!",
+          "（干得好！你走在正确的道路上！）"
         ],
         "pronunciation": "Gratulojn"
       }

@@ -1,290 +1,352 @@
 [
-  {
-    "lesson_id": "011",
-    "trigger_word": "estis",
-    "title": "第11課:過去形",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "過去の話は、動詞の語尾を -as から -is に",
-          "変えるだけ。それだけです!",
-          "",
-          "現在形       →  過去形:",
-          "mi estas     →  mi estis  (です → でした)",
-          "vi parolas   →  vi parolis (話す → 話した)",
-          "li manĝas    →  li manĝis (食べる → 食べた)",
-          "",
-          "語尾 -is はどの主語にも共通:",
-          "mi estis     =  わたしは〜でした",
-          "vi estis     =  あなたは〜でした",
-          "li estis     =  彼は〜でした",
-          "ni estis     =  わたしたちは〜でした",
-          "ili estis    =  彼らは〜でした",
-          "",
-          "日本語の「〜た」と同じ働きが、たった",
-          "1つの規則で。不規則動詞はゼロ。",
-          "-as を -is に置き換えれば完成です。"
-        ],
-        "pronunciation": "Leciono dek unu"
-      }
-    ]
-  },
-  {
-    "lesson_id": "012",
-    "trigger_word": "estos",
-    "title": "第12課:未来形",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "未来形は語尾を -os に変えます。",
-          "それだけ!",
-          "",
-          "現在形       →  未来形:",
-          "mi estas     →  mi estos  (〜になります)",
-          "vi parolas   →  vi parolos (話すでしょう)",
-          "li manĝas    →  li manĝos (食べるでしょう)",
-          "",
-          "3つの時制を並べると:",
-          "mi parolis   =  話した    (過去 -is)",
-          "mi parolas   =  話す      (現在 -as)",
-          "mi parolos   =  話すだろう(未来 -os)",
-          "",
-          "日本語は未来専用の形を持たず「明日行く」",
-          "と現在形で言いますね。エスペラントは",
-          "未来をいつも -os とはっきり示します --",
-          "ここだけ日本語より1つ多い区別ですが、",
-          "語尾1つで済みます。"
-        ],
-        "pronunciation": "Leciono dek du"
-      }
-    ]
-  },
-  {
-    "lesson_id": "013",
-    "trigger_word": "pomo",
-    "title": "第13課:対格 -N(目的語)",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "対格の -n は直接目的語(動作を受ける側)の印。",
-          "",
-          "日本語の「を」そのものです:la libron = 本を。",
-          "",
-          "La kato vidas la hundon.",
-          "(猫が犬を見ています。)",
-          "",
-          "kato   = 主語(見る側)",
-          "hundon = 目的語(見られる側)+ -n",
-          "",
-          "ほかの例:",
-          "Mi manĝas pomon.  = リンゴを食べます。",
-          "Mi legas libron.  = 本を読みます。",
-          "Ŝi amas muzikon.  = 音楽を愛しています。",
-          "",
-          "-n が「を」の働きをするから、日本語の",
-          "「は・が・を」が語順を自由にするのと",
-          "同じく、エスペラントも語順が自由です。"
-        ],
-        "pronunciation": "Leciono dek tri"
-      }
-    ]
-  },
-  {
-    "lesson_id": "014",
-    "trigger_word": "glaso",
-    "title": "第14課:方向の -N",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "語尾 -n のもう1つの仕事は場所への「方向」。",
-          "",
-          "日本語の「〜にいる」と「〜へ行く」の区別です:",
-          "",
-          "Mi estas en la domo.  = 家にいます。",
-          "Mi iras en la domon.  = 家の中へ入ります。",
-          "",
-          "La akvo estas en la glaso.",
-          "(水はグラスに入っています。)",
-          "Mi verŝas akvon en la glason.",
-          "(グラスへ水を注ぎます。)",
-          "",
-          "ほかの例:",
-          "Mi iras hejmen.      = 家へ帰ります。",
-          "Ni iras Londonon.    = ロンドンへ行きます。",
-          "",
-          "-n は「〜へ」の動き。-n がなければ、",
-          "もうそこにいるという意味です!"
-        ],
-        "pronunciation": "Leciono dek kvar"
-      }
-    ]
-  },
-  {
-    "lesson_id": "015",
-    "trigger_word": "voli",
-    "title": "第15課:助動詞",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "助動詞は能力・願望・義務を表します。",
-          "本動詞は不定形(-i)のまま置きます。",
-          "",
-          "三大助動詞:",
-          "povi  = 〜できる",
-          "voli  = 〜したい",
-          "devi  = 〜しなければならない",
-          "",
-          "例文:",
-          "Mi povas paroli.     = 話せます。",
-          "Mi volas manĝi.      = 食べたいです。",
-          "Ni devas lerni.      = 学ばねばなりません。",
-          "",
-          "組み立て:助動詞 + 不定形",
-          "Li povas veni morgaŭ. (彼は明日来られます。)",
-          "日本語は「〜できる」と動詞の形が変わります",
-          "が、 エスペラントは2語並べるだけ。不定形は不",
-          "変!"
-        ],
-        "pronunciation": "Leciono dek kvin"
-      }
-    ]
-  },
-  {
-    "lesson_id": "016",
-    "trigger_word": "mia",
-    "title": "第16課:所有代名詞",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "所有代名詞は持ち主を示し、人称代名詞に -a を",
-          "付けるだけ。日本語の「の」と同じ発想です。",
-          "",
-          "一覧:",
-          "  mi  → mia    = わたしの",
-          "  vi  → via    = あなたの",
-          "  li  → lia    = 彼の",
-          "  ŝi  → ŝia    = 彼女の",
-          "  ĝi  → ĝia    = それの",
-          "  ni  → nia    = わたしたちの",
-          "  ili → ilia   = 彼らの",
-          "",
-          "例文:",
-          "Mia domo estas granda. = わたしの家は大きい。",
-          "Kie estas via libro?   = あなたの本はどこ?",
-          "Ŝia amiko venis.       = 彼女の友だちが来た。",
-          "",
-          "形容詞と同じく、複数名詞には -j:miaj libroj"
-        ],
-        "pronunciation": "Leciono dek ses"
-      }
-    ]
-  },
-  {
-    "lesson_id": "017",
-    "trigger_word": "mem",
-    "title": "第17課:再帰代名詞",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "再帰代名詞は主語自身を指し返す語。三人称には",
-          "SI を使います。日本語の「自分」に重なる語で",
-          "す。",
-          "",
-          "SI、SIN、SIA:",
-          "si   = 自分(彼・彼女・それ・彼ら自身)",
-          "sin  = 自分を(対格)",
-          "sia  = 自分の",
-          "",
-          "例文:",
-          "Li lavas sin.     = 彼は体を洗います。",
-          "Ŝi vidas sin.     = 彼女は自分が見えます。",
-          "Ili helpas sin. = 彼らは自分を助けます。",
-          "SIA と LIA/ŜIA:",
-          "Li amas sian hundon.",
-          "→ 彼は自分の犬を愛している。",
-          "Li amas lian hundon.",
-          "→ 彼は(他の)彼の犬を愛している。"
-        ],
-        "pronunciation": "Leciono dek sep"
-      }
-    ]
-  },
-  {
-    "lesson_id": "018",
-    "trigger_word": "kun",
-    "title": "第18課:前置詞",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
-        "content": [
-          "前置詞は語と語の関係を示し、形は変わりませ",
-          "ん! 働きは日本語の助詞と同じ、でも位置が鏡写",
-          "し: 助詞は後ろ(家の中に)、前置詞は前(en la",
-          "domo)。",
-          "",
-          "場所と方向:",
-          "en   = 〜の中に        sur  = 〜の上に",
-          "sub  = 〜の下に        super = 〜の上方に",
-          "apud = 〜のそばに      inter = 〜の間に",
-          "ĉe   = 〜のところに    ĉirkaŭ = 〜の周りに",
-          "",
-          "例文:",
-          "La kato estas sub la tablo.",
-          "(猫はテーブルの下にいます。)",
-          "",
-          "Mi sidas apud vi.",
-          "(あなたのそばに座っています。)",
-          "動きを示すときだけ後ろの名詞に -n。"
-        ],
-        "pronunciation": "Leciono dek ok"
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "content": [
-          "まだある必須の前置詞:",
-          "",
-          "al   = 〜へ            de   = 〜の、〜から",
-          "kun  = 〜と一緒に      sen  = 〜なしで",
-          "por  = 〜のために      pri  = 〜について",
-          "per  = 〜を使って      tra  = 〜を通って",
-          "ĝis  = 〜まで          krom = 〜を除いて",
-          "",
-          "例文:",
-          "Mi iras al la parko. = 公園へ行きます。",
-          "Libro de mia amiko.  = 友だちの本。",
-          "Ni parolas pri vi. = あなたの話をしています。",
-          "Ŝi venis kun frato.  = 兄弟と来ました。",
-          "",
-          "ヒント:al=へ、de=の、kun=と…と助詞に",
-          "対応させると覚えやすい。関係があいまいな",
-          "ときの万能選手は JE です!",
-          "Je la tria horo. = 3時に。"
+    {
+        "lesson_id": "019",
+        "trigger_word": "nomiĝi",
+        "title": "第21課:接尾辞 -IĜ-",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "接尾辞 -IĜ- は「〜になる」。",
+                    "自然に起こる変化を表します。",
+                    "",
+                    "形容詞 → 動詞:                        1を押す",
+                    "varma   → varmiĝi    = 暖かい → 暖まる",
+                    "riĉa    → riĉiĝi     = 豊かな → 豊かになる",
+                    "malpura → malpuriĝi  = 汚い → 汚れる",
+                    "",
+                    "名詞 → 動詞:                          2を押す",
+                    "edzo    → edziĝi     = 夫 → (男性が)結婚する",
+                    "glacio  → glaciiĝi   = 氷 → 凍る",
+                    "",
+                    "要点:-IĜ- 動詞は目的語を取りません。",
+                    "誰かが何かに「する」のではなく「なる」。"
+                ],
+                "pronunciation": "Leciono dek naŭ",
+                "pronunciation_mappings": {
+                    "1": "Varma. Varmiĝi. Riĉa. Riĉiĝi. Malpura. Malpuriĝi.",
+                    "2": "Edzo. Edziĝi. Glacio. Glaciiĝi."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "動詞に付くと、-IĜ- は目的語を消す:    1を押す",
+                    "Mi komencas la lecionon.",
+                    "= レッスンを始めます。",
+                    "La leciono komenciĝas.",
+                    "= レッスンが始まります。",
+                    "",
+                    "Li fermas la pordon.                  2を押す",
+                    "= 彼はドアを閉めます。",
+                    "La pordo fermiĝas.",
+                    "= ドアが閉まります。",
+                    "",
+                    "「〜になる」= FARIĜI:                 3を押す",
+                    "Li fariĝis riĉa.     = 彼はお金持ちになった。",
+                    "",
+                    "名前の言い方は2通り、どちらも OK:     4を押す",
+                    "Mi nomiĝas Marko.     (マルコといいます。)",
+                    "Mia nomo estas Marko. (名前はマルコです。)"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Mi komencas la lecionon. La leciono komenciĝas.",
+                    "2": "Li fermas la pordon. La pordo fermiĝas.",
+                    "3": "Li fariĝis riĉa.",
+                    "4": "Mi nomiĝas Marko. Mia nomo estas Marko."
+                }
+            }
         ]
-      }
-    ]
-  }
+    },
+    {
+        "lesson_id": "072",
+        "trigger_word": "instruisto",
+        "title": "第22課:-IST-・-ANT-・-UL-",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "3つの接尾辞で、語が「人」になります:",
+                    "",
+                    "-IST- = 職業や主義の人:               1を押す",
+                    "   instruisto   = 先生(instrui = 教える)",
+                    "   programisto  = プログラマー",
+                    "   esperantisto = エスペラント話者",
+                    "",
+                    "-ANT- = 今それをしている人:           2を押す",
+                    "   lernanto     = 学習者(lerni = 学ぶ)",
+                    "   parolanto    = 話し手(paroli = 話す)",
+                    "   komencanto   = 初心者",
+                    "",
+                    "-UL- = そういう性質の人:              3を押す",
+                    "   junulo       = 若者(juna)",
+                    "   maljunulo    = お年寄り(maljuna)",
+                    "",
+                    "Mi estas komencanto.                  4を押す",
+                    "= わたしは初心者です。"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Instruisto. Programisto. Esperantisto.",
+                    "2": "Lernanto. Parolanto. Komencanto.",
+                    "3": "Junulo. Maljunulo.",
+                    "4": "Mi estas komencanto."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "008",
+        "trigger_word": "patrino",
+        "title": "第23課:女性形の -IN-",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "言葉をはっきり女性にするには、語根の",
+                    "後ろ、語尾の前に -IN- を入れます。",
+                    "",
+                    "家族:                                 1を押す",
+                    "patro → patrino    = 父 → 母",
+                    "frato → fratino    = 兄弟 → 姉妹",
+                    "filo  → filino     = 息子 → 娘",
+                    "edzo  → edzino     = 夫 → 妻",
+                    "",
+                    "組み立て:",
+                    "patr-in-o  = 母(名詞 -o)",
+                    "patr-in-a  = 母らしい(形容詞 -a)",
+                    "",
+                    "ほかの語にも使えます:                 2を押す",
+                    "knabo → knabino    = 少年 → 少女",
+                    "hundo → hundino    = 犬 → 雌犬",
+                    "amiko → amikino    = 友だち → 女性の友だち",
+                    "(恋人の「彼女」は koramikino。)"
+                ],
+                "pronunciation": "Leciono ok",
+                "pronunciation_mappings": {
+                    "1": "Patro. Patrino. Frato. Fratino. Filo. Filino. Edzo. Edzino.",
+                    "2": "Knabo. Knabino. Hundo. Hundino. Amiko. Amikino. Koramikino."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "028",
+        "trigger_word": "gepatroj",
+        "title": "第24課:接頭辞 GE-",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "接頭辞 GE- は「男女両方まとめて」。",
+                    "GE- の語は複数形で使い、男女が",
+                    "まじったグループを表します。",
+                    "",
+                    "家族の言葉:                           1を押す",
+                    "patro + patrino → gepatroj = 両親",
+                    "frato + fratino → gefratoj = きょうだい",
+                    "edzo + edzino   → geedzoj  = 夫婦",
+                    "",
+                    "ほかの例:                             2を押す",
+                    "geamikoj    = 友人たち(男女とも)",
+                    "gesinjoroj  = 紳士淑女の皆さん",
+                    "gelernantoj = 生徒たち(男女とも)",
+                    "",
+                    "親1人なら patro か patrino。",
+                    "",
+                    "手紙では:                             3を押す",
+                    "Karaj geamikoj! = 親愛なる友人たち!"
+                ],
+                "pronunciation": "Leciono dudek ok",
+                "pronunciation_mappings": {
+                    "1": "Gepatroj. Gefratoj. Geedzoj.",
+                    "2": "Geamikoj. Gesinjoroj. Gelernantoj.",
+                    "3": "Karaj geamikoj!"
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "027",
+        "trigger_word": "klarigi",
+        "title": "第25課:接尾辞 -IG-",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "接尾辞 -IG- は「〜にする・〜させる」。",
+                    "何かに働きかける動詞を作り、",
+                    "-n の付いた目的語を取ります。",
+                    "",
+                    "形容詞 → 動詞:                        1を押す",
+                    "pura   → purigi    = きれいな → きれいにする",
+                    "granda → grandigi  = 大きい → 大きくする",
+                    "klara  → klarigi   = 明らかな → 説明する",
+                    "bela   → beligi    = 美しい → 美しくする",
+                    "",
+                    "Ĉu vi povas klarigi tion?             2を押す",
+                    "= それを説明してもらえますか?"
+                ],
+                "pronunciation": "Leciono dudek sep",
+                "pronunciation_mappings": {
+                    "1": "Pura. Purigi. Granda. Grandigi. Klara. Klarigi. Bela. Beligi.",
+                    "2": "Ĉu vi povas klarigi tion?"
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "動詞にも付きます:                     1を押す",
+                    "La akvo bolas.        = お湯が沸きます。",
+                    "Mi boligas la akvon.  = お湯を沸かします。",
+                    "",
+                    "-IĜ- と -IG- を比べると:              2を押す",
+                    "varmiĝi = 暖まる(目的語なし)",
+                    "varmigi = 〜を暖める(目的語あり)",
+                    "",
+                    "La ĉambro varmiĝas.                   3を押す",
+                    "= 部屋が暖まってきました。",
+                    "La suno varmigas la ĉambron.",
+                    "= 太陽が部屋を暖めます。"
+                ],
+                "pronunciation_mappings": {
+                    "1": "La akvo bolas. Mi boligas la akvon.",
+                    "2": "Varmiĝi. Varmigi.",
+                    "3": "La ĉambro varmiĝas. La suno varmigas la ĉambron."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "073",
+        "trigger_word": "opinii",
+        "title": "第26課:KE の節とコンマ",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "KE は文をまるごと動詞につなぐ語。",
+                    "日本語の「〜と思う」の「と」です。",
+                    "",
+                    "Mi pensas, ke vi pravas.              1を押す",
+                    "= あなたが正しいと思います。",
+                    "Mi esperas, ke vi fartas bone.        2を押す",
+                    "= お元気だといいのですが。",
+                    "Mi scias, ke ĝi estas facila.         3を押す",
+                    "= それが簡単だと知っています。",
+                    "",
+                    "KE の前には必ずコンマ。",
+                    "英語は that を省けますが、エスペラントは",
+                    "KE を決して省きません:",
+                    "Mi opinias, ke ni devas atendi.       4を押す",
+                    "= 待たなければならないと思います。"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Mi pensas, ke vi pravas.",
+                    "2": "Mi esperas, ke vi fartas bone.",
+                    "3": "Mi scias, ke ĝi estas facila.",
+                    "4": "Mi opinias, ke ni devas atendi."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "願いやお願いには KE + -U:             1を押す",
+                    "Mi petas, ke vi venu.",
+                    "= 来てくださるようお願いします。",
+                    "Mi volas, ke vi restu.",
+                    "= あなたにいてほしいです。",
+                    "",
+                    "「そのこと」を指す「それ」は TIO:     2を押す",
+                    "Mi scias tion.  = それを知っています。",
+                    "Tio estas vera. = それは本当です。",
+                    "",
+                    "時制は、そう考えたときのまま:",
+                    "Li diris, ke li venos.                3を押す",
+                    "= 彼は来ると言いました。",
+                    "(li venos = 彼は来るだろう)"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Mi petas, ke vi venu. Mi volas, ke vi restu.",
+                    "2": "Mi scias tion. Tio estas vera.",
+                    "3": "Li diris, ke li venos."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "074",
+        "trigger_word": "iomete",
+        "title": "第27課:-ET-/-EG-/-EM-/-IND-",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "2つの接尾辞で、語の「大きさ」や「強さ」を",
+                    "上げ下げできます:",
+                    "",
+                    "-ET- = 小さい・弱い・少し:            1を押す",
+                    "   domo → dometo   = 家 → 小さな家",
+                    "   ridi → rideti   = 笑う → ほほえむ",
+                    "   iom  → iomete   = いくらか → ほんの少し",
+                    "",
+                    "-EG- = 大きい・強い・とても:          2を押す",
+                    "   domo → domego   = 家 → 大邸宅",
+                    "   bona → bonega   = 良い → すばらしい",
+                    "   ridi → ridegi   = 笑う → 大笑いする",
+                    "",
+                    "実際に使うと:                         3を押す",
+                    "   Atendu iomete!  = ちょっと待って!",
+                    "   Bonege!         = すばらしい!最高!"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Domo. Dometo. Ridi. Rideti. Iom. Iomete.",
+                    "2": "Domo. Domego. Bona. Bonega. Ridi. Ridegi.",
+                    "3": "Atendu iomete! Bonege!"
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "あと2つの接尾辞は「傾向」や",
+                    "「価値」を表します:",
+                    "",
+                    "-EM- = 〜しがち、〜するのが好き:      1を押す",
+                    "   helpi  → helpema   = 助ける → 親切な",
+                    "   paroli → parolema  = 話す → おしゃべりな",
+                    "   Ŝi estas tre helpema. = 彼女はとても親切。",
+                    "   (人について。役に立つ本は utila。)",
+                    "",
+                    "-IND- = 〜する価値がある:             2を押す",
+                    "   vidi → vidinda   = 見る → 見る価値がある",
+                    "   legi → leginda   = 読む → 読む価値がある",
+                    "   ridi → ridinda   = 笑う → ばかげた!",
+                    "",
+                    "注意:ridinda は「ばかげた」で、「おもしろい」",
+                    "ではありません。おもしろい = amuza。"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Helpi. Helpema. Paroli. Parolema. Ŝi estas tre helpema.",
+                    "2": "Vidi. Vidinda. Legi. Leginda. Ridi. Ridinda."
+                }
+            }
+        ]
+    }
 ]

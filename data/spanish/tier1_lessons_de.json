@@ -168,13 +168,13 @@
         "page": 2,
         "total_pages": 2,
         "content": [
-          "UNBESTIMMTE ARTIKEL (ein, eine):",
+          "UNBESTIMMTE ARTIKEL (ein, eine, einige):",
           "",
           "un = männlich      una = weiblich",
           "un libro (ein Buch) una casa (ein Haus)",
+          "Plural: unos libros, unas casas (einige)",
           "",
           "PLURAL — hänge -s oder -es an:",
-          "",
           "el libro  → los libros",
           "la casa   → las casas",
           "el color  → los colores",
@@ -193,9 +193,47 @@
   },
   {
     "lesson_id": "003",
+    "trigger_word": "español",
+    "trigger_card_number": 29,
+    "title": "LEKTION 3: FRAGEWÖRTER",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "Spanische Fragewörter tragen einen Akzent:",
+          "",
+          "¿qué? = was?        ¿quién? = wer?  Drücke 1",
+          "¿dónde? = wo?       ¿cuándo? = wann?",
+          "¿por qué? = warum?  ¿cómo? = wie?",
+          "¿cuál? = welcher? (vor es: was?/wie?)",
+          "¿cuánto/cuántos? = wie viel?/wie viele?",
+          "",
+          "BEISPIELE:                          Drücke 2",
+          "¿Qué quieres? (Was willst du?)",
+          "¿Dónde está el baño? (Wo ist die Toilette?)",
+          "¿Cuánto cuesta? (Was kostet das?)",
+          "¿Por qué no? (Warum nicht?)",
+          "",
+          "Achtung: porque (ohne Akzent) = weil",
+          "         por qué (mit Akzent) = warum?",
+          "Der Akzent bleibt auch in indirekten Fragen:",
+          "No sé dónde está. (Ich weiß nicht, wo es ist.)"
+        ],
+        "pronunciation": "Lección tres",
+        "pronunciation_mappings": {
+          "1": "qué, quién, dónde, cuándo, por qué, cómo, cuál, cuánto, cuántos",
+          "2": "qué quieres, dónde está el baño, cuánto cuesta, por qué no"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "004",
     "trigger_word": "salir",
-    "trigger_card_number": 46,
-    "title": "LEKTION 3: PRÄSENS",
+    "trigger_card_number": 50,
+    "title": "LEKTION 4: PRÄSENS",
     "header_color": "green",
     "pages": [
       {
@@ -204,26 +242,26 @@
         "content": [
           "Spanische Verben gibt es in 3 Familien:",
           "-AR (hablar)  -ER (comer)  -IR (vivir)",
-          "",
-          "Jede Familie hat dieselben Endungen.",
           "Hier -AR, die häufigste:            Drücke 1",
           "",
           "yo hablo             = ich spreche",
           "tú hablas            = du sprichst",
+          "usted habla          = Sie sprechen (höflich)",
           "él/ella habla        = er/sie spricht",
           "nosotros hablamos    = wir sprechen",
-          "ellos hablan         = sie sprechen",
+          "ustedes hablan       = ihr sprecht / Sie (Pl.)",
+          "ellos/ellas hablan   = sie sprechen",
           "",
-          "Das Muster: -ar streichen, dann anhängen:",
-          "-o, -as, -a, -amos, -an",
-          "",
-          "Das Pronomen darf meist wegfallen, weil",
-          "die Endung schon zeigt, wer spricht.",
-          "Hablo = ich spreche. Hablan = sie sprechen."
+          "-ar weg, dann: -o -as -a -amos -an",
+          "usted (Ud.) nimmt die él/ella-Endung,",
+          "ustedes (Uds.) die ellos-Endung. In",
+          "Lateinamerika ist ustedes jedes 'ihr'.",
+          "Spanien sagt dafür auch vosotros habláis.",
+          "Pronomen optional: Hablo = ich spreche."
         ],
-        "pronunciation": "Lección tres",
+        "pronunciation": "Lección cuatro",
         "pronunciation_mappings": {
-          "1": "yo hablo, tú hablas, él habla, nosotros hablamos, ellos hablan"
+          "1": "yo hablo, tú hablas, usted habla, él habla, nosotros hablamos, ustedes hablan, ellos hablan"
         }
       },
       {
@@ -231,36 +269,71 @@
         "total_pages": 2,
         "content": [
           "-ER-Verben (comer = essen):        Drücke 1",
-          "",
           "yo como             = ich esse",
           "tú comes            = du isst",
-          "él/ella come        = er/sie isst",
+          "él/ella/usted come  = er/sie isst, Sie essen",
           "nosotros comemos    = wir essen",
-          "ellos comen         = sie essen",
+          "ellos/ustedes comen = sie essen, ihr esst",
           "",
           "-IR-Verben (vivir = leben):        Drücke 2",
-          "",
           "yo vivo             = ich lebe",
           "tú vives            = du lebst",
-          "él/ella vive        = er/sie lebt",
+          "él/ella/usted vive  = er/sie lebt, Sie leben",
           "nosotros vivimos    = wir leben",
-          "ellos viven         = sie leben",
+          "ellos/ustedes viven = sie leben, ihr lebt",
           "",
           "Achtung: -ER und -IR sind fast",
           "identisch! Nur nosotros weicht ab."
         ],
         "pronunciation_mappings": {
-          "1": "yo como, tú comes, él come, nosotros comemos, ellos comen",
-          "2": "yo vivo, tú vives, él vive, nosotros vivimos, ellos viven"
+          "1": "yo como, tú comes, él come, usted come, nosotros comemos, ellos comen, ustedes comen",
+          "2": "yo vivo, tú vives, él vive, usted vive, nosotros vivimos, ellos viven, ustedes viven"
         }
       }
     ]
   },
   {
-    "lesson_id": "004",
+    "lesson_id": "005",
+    "trigger_word": "mediodía",
+    "trigger_card_number": 58,
+    "title": "LEKTION 5: STAMMÄNDERNDE VERBEN",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "VERBEN MIT STAMMWECHSEL:",
+          "Manche Verben ändern ihren Stammvokal in",
+          "allen Formen außer nosotros. Die Endungen",
+          "bleiben regelmäßig.",
+          "",
+          "e → ie   querer = wollen            Drücke 1",
+          "quiero, quieres, quiere, queremos, quieren",
+          "",
+          "o → ue   poder = können             Drücke 2",
+          "puedo, puedes, puede, podemos, pueden",
+          "",
+          "e → i    repetir = wiederholen      Drücke 3",
+          "repito, repites, repite, repetimos, repiten",
+          "",
+          "Ebenso: entender, pensar, cerrar (e→ie);",
+          "dormir, volver, costar (o→ue); seguir (e→i)"
+        ],
+        "pronunciation": "Lección cinco",
+        "pronunciation_mappings": {
+          "1": "quiero, quieres, quiere, queremos, quieren",
+          "2": "puedo, puedes, puede, podemos, pueden",
+          "3": "repito, repites, repite, repetimos, repiten"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "006",
     "trigger_word": "vez",
-    "trigger_card_number": 68,
-    "title": "LEKTION 4: HAY & GRUNDSTRUKTUREN",
+    "trigger_card_number": 76,
+    "title": "LEKTION 6: HAY & GRUNDSTRUKTUREN",
     "header_color": "green",
     "pages": [
       {
@@ -278,15 +351,15 @@
           "Subjekt + Verb + Objekt (wie im Deutschen)",
           "Yo como pan. (Ich esse Brot.)",
           "",
-          "FRAGEN — zwei einfache Wege:",
-          "¿Tú hablas español? (Stimme heben)",
-          "¿Hablas español? (Pronomen weglassen)",
+          "FRAGEN — Satz bleibt, Stimme steigt:",
+          "¿Hablas español? (Sprichst du Spanisch?)",
+          "Das Pronomen ist optional: ¿Tú hablas...?",
           "",
           "VERNEINUNG — setz NO vor das Verb:",
           "No hablo inglés. (Ich spreche kein Englisch.)",
           "No hay problema. (Es gibt kein Problem.)"
         ],
-        "pronunciation": "Lección cuatro",
+        "pronunciation": "Lección seis",
         "pronunciation_mappings": {
           "1": "hay un problema, hay libros, hay agua, no hay tiempo"
         }
@@ -294,10 +367,10 @@
     ]
   },
   {
-    "lesson_id": "005",
+    "lesson_id": "007",
     "trigger_word": "joven",
-    "trigger_card_number": 97,
-    "title": "LEKTION 5: SER UND ESTAR",
+    "trigger_card_number": 105,
+    "title": "LEKTION 7: SER UND ESTAR",
     "header_color": "green",
     "pages": [
       {
@@ -323,7 +396,7 @@
           "Nächste Seite: wann ser, wann estar —",
           "die Frage, die jeder Lernende stellt."
         ],
-        "pronunciation": "Lección cinco",
+        "pronunciation": "Lección siete",
         "pronunciation_mappings": {
           "1": "soy, eres, es, somos, son",
           "2": "estoy, estás, está, estamos, están",
@@ -335,27 +408,27 @@
         "page": 2,
         "total_pages": 3,
         "content": [
-          "Spanisch hat ZWEI Verben für 'sein'.",
-          "Ungewohnt, aber die Logik ist klar:",
+          "Spanisch hat ZWEI Verben für 'sein':",
+          "SER = WAS etwas IST",
+          "ESTAR = WIE oder WO etwas ist",
           "",
-          "SER = was etwas IST (dauerhaft)",
-          "ESTAR = wie etwas IST (vorübergehend)",
-          "",
-          "SER — Identität, Herkunft, Wesen:   Drücke 1",
+          "SER — wer/was, Herkunft, Uhrzeit:     Drücke 1",
           "Soy estudiante. (Ich bin Student.)",
           "Ella es inteligente. (Sie ist klug.)",
           "Somos de México. (Wir sind aus Mexiko.)",
+          "Son las cuatro. (Es ist vier Uhr.)",
           "",
-          "ESTAR — Zustand, Laune, Ort:        Drücke 2",
+          "ESTAR — Zustand, Laune, Ort:          Drücke 2",
           "Estoy cansado. (Ich bin müde.)",
           "Ella está feliz. (Sie ist glücklich.)",
           "Estamos en casa. (Wir sind zu Hause.)",
           "",
-          "TRICK: Kann es sich ÄNDERN, nimm estar.",
-          "Ist es, WER DU BIST, nimm ser."
+          "TRICK: Für WO etwas ist, nimm estar,",
+          "auch wenn es sich nie bewegt:",
+          "Guadalajara está en México."
         ],
         "pronunciation_mappings": {
-          "1": "soy estudiante, ella es inteligente, somos de México",
+          "1": "soy estudiante, ella es inteligente, somos de México, son las cuatro",
           "2": "estoy cansado, ella está feliz, estamos en casa"
         }
       },
@@ -392,10 +465,10 @@
     ]
   },
   {
-    "lesson_id": "006",
+    "lesson_id": "008",
     "trigger_word": "café",
-    "trigger_card_number": 117,
-    "title": "LEKTION 6: GUSTAR & CO.",
+    "trigger_card_number": 125,
+    "title": "LEKTION 8: GUSTAR & CO.",
     "header_color": "green",
     "pages": [
       {
@@ -421,7 +494,7 @@
           "Me importa = das ist mir wichtig",
           "Me falta = mir fehlt"
         ],
-        "pronunciation": "Lección seis",
+        "pronunciation": "Lección ocho",
         "pronunciation_mappings": {
           "1": "me gusta el café, te gusta bailar, le gusta la música, nos gusta viajar",
           "2": "me gustan los gatos, me gustan las películas"
@@ -430,53 +503,15 @@
     ]
   },
   {
-    "lesson_id": "007",
-    "trigger_word": "lugar",
-    "trigger_card_number": 147,
-    "title": "LEKTION 7: FRAGEWÖRTER",
+    "lesson_id": "009",
+    "trigger_word": "levantarse",
+    "trigger_card_number": 163,
+    "title": "LEKTION 9: BEFEHLE & NAHE ZUKUNFT",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
-        "content": [
-          "Spanische Fragewörter tragen einen Akzent:",
-          "",
-          "¿qué? = was?        ¿quién? = wer?  Drücke 1",
-          "¿dónde? = wo?       ¿cuándo? = wann?",
-          "¿por qué? = warum?  ¿cómo? = wie?",
-          "¿cuál? = welcher?   ¿cuánto? = wie viel?",
-          "",
-          "BEISPIELE:                          Drücke 2",
-          "",
-          "¿Qué quieres? (Was willst du?)",
-          "¿Dónde está el baño? (Wo ist die Toilette?)",
-          "¿Cuánto cuesta? (Was kostet das?)",
-          "¿Por qué no? (Warum nicht?)",
-          "",
-          "Achtung: porque (ohne Akzent) = weil",
-          "         por qué (mit Akzent) = warum?",
-          "",
-          "Der Akzent ist das Fragezeichen."
-        ],
-        "pronunciation": "Lección siete",
-        "pronunciation_mappings": {
-          "1": "qué, quién, dónde, cuándo, por qué, cómo, cuál, cuánto",
-          "2": "qué quieres, dónde está el baño, cuánto cuesta, por qué no"
-        }
-      }
-    ]
-  },
-  {
-    "lesson_id": "008",
-    "trigger_word": "dormir",
-    "trigger_card_number": 165,
-    "title": "LEKTION 8: BEFEHLE & NAHE ZUKUNFT",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
           "IMPERATIV — vertraute Form (tú)",
           "",
@@ -494,19 +529,19 @@
           "ir           → ¡Ve! (Geh!)",
           "poner        → ¡Pon! (Stell!)",
           "salir        → ¡Sal! (Geh raus!)",
-          "tener        → ¡Ten! (Nimm!)",
+          "tener        → ¡Ten cuidado! (Pass auf!)",
           "venir        → ¡Ven! (Komm!)"
         ],
-        "pronunciation": "Lección ocho",
+        "pronunciation": "Lección nueve",
         "pronunciation_mappings": {
           "1": "hablar, habla, mirar, mira",
           "2": "comer, come, escribir, escribe",
-          "3": "decir, di, hacer, haz, ir, ve, poner, pon, salir, sal, tener, ten, venir, ven"
+          "3": "decir, di, hacer, haz, ir, ve, poner, pon, salir, sal, tener, ten cuidado, venir, ven"
         }
       },
       {
         "page": 2,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
           "NAHE ZUKUNFT — ir + a + Infinitiv",
           "",
@@ -530,6 +565,30 @@
           "1": "voy a comer, vas a estudiar, vamos a salir",
           "2": "voy, vas, va, vamos, van",
           "3": "estoy hablando, está comiendo"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "REFLEXIVE VERBEN: Die Handlung wirkt auf",
+          "dich zurück. Das -se wandert als",
+          "me, te, se, nos, se nach vorn:",
+          "levantarse = aufstehen",
+          "",
+          "me levanto      = ich stehe auf     Drücke 1",
+          "te levantas     = du stehst auf",
+          "se levanta      = er/sie steht auf (usted: Sie)",
+          "nos levantamos  = wir stehen auf",
+          "se levantan     = sie stehen auf (ustedes: ihr)",
+          "",
+          "Eins kennst du schon:",
+          "¿Cómo te llamas? Me llamo Ana.",
+          "(Wie heißt du? Ich heiße Ana.)",
+          "Ebenso: ducharse, vestirse, acostarse."
+        ],
+        "pronunciation_mappings": {
+          "1": "me levanto, te levantas, se levanta, nos levantamos, se levantan"
         }
       }
     ]

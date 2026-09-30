@@ -2,7 +2,7 @@
   {
     "lesson_id": "053",
     "trigger_word": "novulo",
-    "title": "ESPERANTO-RIMEDOJ",
+    "title": "LESSON 58: ESPERANTO RESOURCES",
     "header_color": "blue",
     "toggle_mode": true,
     "pages": [
@@ -16,13 +16,13 @@
           "  Senpaga kurso kun ekzercoj kaj forumo",
           "",
           "VIKIPEDIO EN ESPERANTO",
-          "  eo.wikipedia.org - Pli ol 300,000 artikoloj!",
+          "  eo.wikipedia.org - Pli ol 300 000 artikoloj!",
           "",
           "DUOLINGO",
           "  Esperanto-kurso por anglalingvanoj",
           "",
           "AMIKUMU (apliko)",
-          "  Trovu Esperantistojn proksime de vi"
+          "  Trovu esperantistojn proksime de vi"
         ],
         "english": [
           "USEFUL WEBSITES",
@@ -47,13 +47,13 @@
           "PLI DA RIMEDOJ",
           "",
           "PASPORTA SERVO",
-          "  Senpaga loĝado ĉe Esperantistoj",
+          "  Senpaga loĝado ĉe esperantistoj",
           "",
           "LIBERA FOLIO",
           "  Novaĵoj en Esperanto",
           "",
           "MUZAIKO",
-          "  24-hora Esperanto-radio",
+          "  Reta radio en Esperanto",
           "",
           "TELEGRAM/DISCORD",
           "  Multaj grupoj por babili"
@@ -68,7 +68,7 @@
           "  News in Esperanto",
           "",
           "MUZAIKO",
-          "  24-hour Esperanto radio",
+          "  Internet radio in Esperanto",
           "",
           "TELEGRAM/DISCORD",
           "  Many groups for chatting"
@@ -77,9 +77,112 @@
     ]
   },
   {
+    "lesson_id": "060",
+    "trigger_word": "pasporto",
+    "title": "LESSON 59: THE WORLD IN ESPERANTO",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "ROOT = THE PEOPLE: -io (or -lando)",
+          "names their land. One key, two lines:",
+          "Germany      Germanio    germano      Press 1",
+          "France       Francio     franco",
+          "Italy        Italio      italo        Press 2",
+          "Spain        Hispanio    hispano",
+          "Russia       Rusio       ruso         Press 3",
+          "Poland       Pollando    polo",
+          "China        Ĉinio       ĉino         Press 4",
+          "Japan        Japanio     japano",
+          "",
+          "ROOT = THE LAND: -ano names the person:",
+          "the USA      Usono       usonano      Press 5",
+          "Canada       Kanado      kanadano",
+          "Brazil       Brazilo     brazilano    Press 6",
+          "Mexico       Meksiko     meksikano",
+          "Kenya        Kenjo       kenjano      Press 7",
+          "Argentina    Argentino   argentinano"
+        ],
+        "pronunciation_mappings": {
+          "1": "Germanio. Germano. Francio. Franco.",
+          "2": "Italio. Italo. Hispanio. Hispano.",
+          "3": "Rusio. Ruso. Pollando. Polo.",
+          "4": "Ĉinio. Ĉino. Japanio. Japano.",
+          "5": "Usono. Usonano. Kanado. Kanadano.",
+          "6": "Brazilo. Brazilano. Meksiko. Meksikano.",
+          "7": "Kenjo. Kenjano. Argentino. Argentinano."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "Country, then its capital, in Esperanto.",
+          "One key speaks two lines:",
+          "Germany      Germanio    Berlino      Press 1",
+          "France       Francio     Parizo",
+          "Italy        Italio      Romo         Press 2",
+          "Spain        Hispanio    Madrido",
+          "Britain      Britio      Londono      Press 3",
+          "Portugal     Portugalio  Lisbono",
+          "Netherlands  Nederlando  Amsterdamo   Press 4",
+          "Switzerland  Svislando   Berno",
+          "Austria      Aŭstrio     Vieno        Press 5",
+          "Poland       Pollando    Varsovio",
+          "Sweden       Svedio      Stokholmo    Press 6",
+          "Russia       Rusio       Moskvo",
+          "Ukraine      Ukrainio    Kievo        Press 7",
+          "Turkey       Turkio      Ankaro"
+        ],
+        "pronunciation_mappings": {
+          "1": "Germanio. Berlino. Francio. Parizo.",
+          "2": "Italio. Romo. Hispanio. Madrido.",
+          "3": "Britio. Londono. Portugalio. Lisbono.",
+          "4": "Nederlando. Amsterdamo. Svislando. Berno.",
+          "5": "Aŭstrio. Vieno. Pollando. Varsovio.",
+          "6": "Svedio. Stokholmo. Rusio. Moskvo.",
+          "7": "Ukrainio. Kievo. Turkio. Ankaro."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "Fourteen more countries and capitals,",
+          "around the world:",
+          "the USA      Usono       Vaŝingtono   Press 1",
+          "Canada       Kanado      Otavo",
+          "Mexico       Meksiko     Meksikurbo   Press 2",
+          "Brazil       Brazilo     Braziljo",
+          "China        Ĉinio       Pekino       Press 3",
+          "Japan        Japanio     Tokio",
+          "South Korea  Sud-Koreio  Seulo        Press 4",
+          "India        Hindio      Nov-Delhio",
+          "Indonesia    Indonezio   Ĝakarto      Press 5",
+          "Australia    Aŭstralio   Kanbero",
+          "Egypt        Egiptio     Kairo        Press 6",
+          "Kenya        Kenjo       Najrobo",
+          "Nigeria      Niĝerio     Abuĝo        Press 7",
+          "South Africa Sud-Afriko  Pretorio"
+        ],
+        "pronunciation_mappings": {
+          "1": "Usono. Vaŝingtono. Kanado. Otavo.",
+          "2": "Meksiko. Meksikurbo. Brazilo. Braziljo.",
+          "3": "Ĉinio. Pekino. Japanio. Tokio.",
+          "4": "Sud-Koreio. Seulo. Hindio. Nov-Delhio.",
+          "5": "Indonezio. Ĝakarto. Aŭstralio. Kanbero.",
+          "6": "Egiptio. Kairo. Kenjo. Najrobo.",
+          "7": "Niĝerio. Abuĝo. Sud-Afriko. Pretorio."
+        }
+      }
+    ]
+  },
+  {
     "lesson_id": "054",
     "trigger_word": "muzeo",
-    "title": "ESPERANTO-MUZIKO",
+    "title": "LESSON 60: ESPERANTO MUSIC",
     "header_color": "blue",
     "toggle_mode": true,
     "pages": [
@@ -114,7 +217,7 @@
           "ARTISTS TO EXPLORE:",
           "* Jonny M - Reggae/Rap (Germany)",
           "* Kajto - Pop-folk (Netherlands)",
-          "* Dolchamar - Rock/Hip-hop (Finland)",
+          "* Dolchamar - Rock/Rap (Finland)",
           "* Martin Wiese - Rock (Sweden)",
           "",
           "WHY IT WORKS:",
@@ -130,7 +233,7 @@
   {
     "lesson_id": "055",
     "trigger_word": "antaŭjuĝo",
-    "title": "LESSON 55: THE 'FI-' PREFIX",
+    "title": "LESSON 61: THE 'FI-' PREFIX",
     "header_color": "green",
     "pages": [
       {
@@ -163,7 +266,7 @@
   {
     "lesson_id": "056",
     "trigger_word": "konversacio",
-    "title": "PRAKTIKU KUN AI",
+    "title": "LESSON 62: PRACTICE WITH AI",
     "header_color": "blue",
     "toggle_mode": true,
     "pages": [
@@ -208,7 +311,7 @@
           "\"Rolu kiel lerneja kunlernanto dum",
           "ekskurso. Parolu Esperanton flue.",
           "Gvidu per facile respondeblaj demandoj.",
-          "Uzu simplan Esperanton. Korektu gentile.\"",
+          "Uzu simplan Esperanton. Korektu min ĝentile.\"",
           "",
           "Poste simple komencu: 'Saluton!'",
           "",
@@ -225,7 +328,7 @@
           "\"Roleplay as a school classmate on a",
           "trip. Speak Esperanto fluently. Lead",
           "with easy questions. Use simple",
-          "Esperanto. Correct gently.\"",
+          "Esperanto. Correct me gently.\"",
           "",
           "Then just start: 'Saluton!'",
           "",
@@ -236,117 +339,6 @@
           "",
           "Ask about anything! 'Why is -n here?'"
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "060",
-    "trigger_word": "pasporto",
-    "trigger_card_number": 643,
-    "title": "LESSON 60: THE WORLD IN ESPERANTO",
-    "header_color": "cyan",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 3,
-        "content": [
-          "Esperanto's countries: -io names the land,",
-          "-o the person. One key speaks two:",
-          "Germany         Germanio,  germano    Press 1",
-          "France          Francio,   franco",
-          "Italy           Italio,    italo      Press 2",
-          "Spain           Hispanio,  hispano",
-          "Poland          Pollando,  polo       Press 3",
-          "Russia          Rusio,     ruso",
-          "Hungary         Hungario,  hungaro    Press 4",
-          "Czechia         Ĉeĥio,     ĉeĥo",
-          "Lithuania       Litovio,   litovo     Press 5",
-          "Finland         Finnlando, finno",
-          "China           Ĉinio,     ĉino       Press 6",
-          "Japan           Japanio,   japano",
-          "the USA         Usono,     usonano    Press 7",
-          "Canada          Kanado,    kanadano",
-          "Brazil          Brazilo,   brazilano  Press 8",
-          "Kenya           Kenjo,     kenjano"
-        ],
-        "pronunciation_mappings": {
-          "1": "Germanio,  germano. Francio,   franco.",
-          "2": "Italio,    italo. Hispanio,  hispano.",
-          "3": "Pollando,  polo. Rusio,     ruso.",
-          "4": "Hungario,  hungaro. Ĉeĥio,     ĉeĥo.",
-          "5": "Litovio,   litovo. Finnlando, finno.",
-          "6": "Ĉinio,     ĉino. Japanio,   japano.",
-          "7": "Usono,     usonano. Kanado,    kanadano.",
-          "8": "Brazilo,   brazilano. Kenjo,     kenjano."
-        }
-      },
-      {
-        "page": 2,
-        "total_pages": 3,
-        "content": [
-          "Country, then its capital, in Esperanto.",
-          "One key speaks two lines:",
-          "Germany      Germanio    Berlino      Press 1",
-          "France       Francio     Parizo",
-          "Italy        Italio      Romo         Press 2",
-          "Spain        Hispanio    Madrido",
-          "Britain      Britio      Londono      Press 3",
-          "Portugal     Portugalio  Lisbono",
-          "Netherlands  Nederlando  Amsterdamo   Press 4",
-          "Switzerland  Svislando   Berno",
-          "Austria      Aŭstrio     Vieno        Press 5",
-          "Poland       Pollando    Varsovio",
-          "Sweden       Svedio      Stokholmo    Press 6",
-          "Russia       Rusio       Moskvo",
-          "Ukraine      Ukrainio    Kievo        Press 7",
-          "Turkey       Turkio      Ankaro",
-          "Czechia      Ĉeĥio       Prago        Press 8",
-          "Hungary      Hungario    Budapeŝto"
-        ],
-        "pronunciation_mappings": {
-          "1": "Germanio. Berlino. Francio. Parizo.",
-          "2": "Italio. Romo. Hispanio. Madrido.",
-          "3": "Britio. Londono. Portugalio. Lisbono.",
-          "4": "Nederlando. Amsterdamo. Svislando. Berno.",
-          "5": "Aŭstrio. Vieno. Pollando. Varsovio.",
-          "6": "Svedio. Stokholmo. Rusio. Moskvo.",
-          "7": "Ukrainio. Kievo. Turkio. Ankaro.",
-          "8": "Ĉeĥio. Prago. Hungario. Budapeŝto."
-        }
-      },
-      {
-        "page": 3,
-        "total_pages": 3,
-        "content": [
-          "Nation, citizen, adjective: Germanio,",
-          "germano, germana. Sixteen more:",
-          "Lithuania    Litovio     Vilno        Press 1",
-          "Finland      Finnlando   Helsinko",
-          "the USA      Usono       Vaŝingtono   Press 2",
-          "Canada       Kanado      Otavo",
-          "Mexico       Meksiko     Meksikurbo   Press 3",
-          "Brazil       Brazilo     Braziljo",
-          "China        Ĉinio       Pekino       Press 4",
-          "Japan        Japanio     Tokio",
-          "South Korea  Sud-Koreio  Seulo        Press 5",
-          "India        Hindio      Nov-Delhio",
-          "Indonesia    Indonezio   Ĝakarto      Press 6",
-          "Australia    Aŭstralio   Kanbero",
-          "Egypt        Egiptio     Kairo        Press 7",
-          "Kenya        Kenjo       Najrobo",
-          "Nigeria      Niĝerio     Abuĝo        Press 8",
-          "South Africa Sud-Afriko  Pretorio"
-        ],
-        "pronunciation_mappings": {
-          "1": "Litovio. Vilno. Finnlando. Helsinko.",
-          "2": "Usono. Vaŝingtono. Kanado. Otavo.",
-          "3": "Meksiko. Meksikurbo. Brazilo. Braziljo.",
-          "4": "Ĉinio. Pekino. Japanio. Tokio.",
-          "5": "Sud-Koreio. Seulo. Hindio. Nov-Delhio.",
-          "6": "Indonezio. Ĝakarto. Aŭstralio. Kanbero.",
-          "7": "Egiptio. Kairo. Kenjo. Najrobo.",
-          "8": "Niĝerio. Abuĝo. Sud-Afriko. Pretorio."
-        }
       }
     ]
   }

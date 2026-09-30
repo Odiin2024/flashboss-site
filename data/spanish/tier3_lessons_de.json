@@ -1,9 +1,9 @@
 [
   {
-    "lesson_id": "013",
-    "trigger_word": "abuelo",
-    "trigger_card_number": 450,
-    "title": "LEKTION 13: OBJEKTPRONOMEN",
+    "lesson_id": "015",
+    "trigger_word": "explicar",
+    "trigger_card_number": 429,
+    "title": "LEKTION 15: OBJEKTPRONOMEN",
     "header_color": "green",
     "pages": [
       {
@@ -15,21 +15,21 @@
           "",
           "DIREKTES OBJEKT (was/wen):",
           "me = mich            nos = uns",
-          "te = dich            los/las = sie",
-          "lo = ihn/es          la = sie/es",
+          "te = dich            los/las = sie/euch/Sie",
+          "lo = ihn/es/Sie      la = sie/es/Sie",
           "",
           "¿Ves el libro? Sí, lo veo.",
           "(Siehst du das Buch? Ja, ich sehe es.)",
           "",
           "INDIREKTES OBJEKT (wem):",
           "me = mir             nos = uns",
-          "te = dir             les = ihnen",
-          "le = ihm/ihr",
+          "te = dir             les = ihnen/euch/Ihnen",
+          "le = ihm/ihr/Ihnen",
           "",
           "Le doy el libro. (Ich gebe ihm das Buch.)",
-          "Das Objektpronomen steht VOR dem Verb"
+          "Das Objektpronomen steht VOR dem Verb."
         ],
-        "pronunciation": "Lección trece",
+        "pronunciation": "Lección quince",
         "pronunciation_mappings": {}
       },
       {
@@ -51,29 +51,29 @@
           "Beide Stellungen sind richtig:      Drücke 4",
           "Lo quiero comprar = Quiero comprarlo",
           "",
-          "Zerbrich dir nicht den Kopf über die",
-          "Stellung. Durch die Beispielsätze auf",
-          "den Karten bekommst du ein Gefühl dafür."
+          "An bejahte Befehle angehängt:       Drücke 5",
+          "¡Discúlpame! ¡Dime! (Entschuldige! Sag's mir!)"
         ],
         "pronunciation_mappings": {
           "1": "lo quiero, me gusta",
           "2": "voy a decirte algo, quiero comprarlo",
           "3": "estoy haciéndolo",
-          "4": "lo quiero comprar, quiero comprarlo"
+          "4": "lo quiero comprar, quiero comprarlo",
+          "5": "discúlpame, dime"
         }
       }
     ]
   },
   {
-    "lesson_id": "014",
+    "lesson_id": "016",
     "trigger_word": "seguridad",
-    "trigger_card_number": 520,
-    "title": "LEKTION 14: INDEFINIDO/IMPERFECTO",
+    "trigger_card_number": 550,
+    "title": "LEKTION 16: INDEFINIDO/IMPERFECTO",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
           "Das IMPERFECTO ist die andere",
           "Vergangenheit. Das Indefinido nennt",
@@ -94,7 +94,7 @@
           "nosotros comíamos = wir aßen",
           "ellos comían   = sie aßen"
         ],
-        "pronunciation": "Lección catorce",
+        "pronunciation": "Lección dieciséis",
         "pronunciation_mappings": {
           "1": "yo hablaba, tú hablabas, él hablaba, nosotros hablábamos, ellos hablaban",
           "2": "yo comía, tú comías, él comía, nosotros comíamos, ellos comían"
@@ -102,7 +102,7 @@
       },
       {
         "page": 2,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
           "INDEFINIDO (Foto):                  Drücke 1",
           "Ayer comí pizza. (Gestern aß ich",
@@ -128,14 +128,38 @@
           "2": "de niño comía pizza todos los viernes",
           "3": "llovía cuando salí de casa"
         }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "Nur DREI Verben sind unregelmäßig:  Drücke 1",
+          "ser → era, eras, era, éramos, eran",
+          "ir  → iba, ibas, iba, íbamos, iban",
+          "ver → veía, veías, veía, veíamos, veían",
+          "",
+          "BEISPIELE:                          Drücke 2",
+          "De niño era tímido.",
+          "(Als Kind war ich schüchtern.)",
+          "Siempre iba a la playa.",
+          "(Ich ging immer an den Strand.)",
+          "",
+          "Alle anderen Verben sind im Imperfecto",
+          "regelmäßig, auch querer und poder:",
+          "quería, podía. Kein Stammwechsel!"
+        ],
+        "pronunciation_mappings": {
+          "1": "era, eras, era, éramos, eran, iba, ibas, iba, íbamos, iban, veía, veías, veía, veíamos, veían",
+          "2": "de niño era tímido, siempre iba a la playa"
+        }
       }
     ]
   },
   {
-    "lesson_id": "015",
+    "lesson_id": "017",
     "trigger_word": "gobierno",
-    "trigger_card_number": 580,
-    "title": "LEKTION 15: POR VS PARA",
+    "trigger_card_number": 612,
+    "title": "LEKTION 17: POR VS PARA",
     "header_color": "green",
     "pages": [
       {
@@ -161,7 +185,7 @@
           "Caminé por dos horas. (Lief zwei Stunden.)",
           "Por eso no fui. (Darum ging ich nicht.)"
         ],
-        "pronunciation": "Lección quince",
+        "pronunciation": "Lección diecisiete",
         "pronunciation_mappings": {
           "1": "estudio para aprender, es para ti, salgo para Madrid, es para el lunes",
           "2": "lo cambié por otro, gracias por todo, caminé por dos horas, por eso no fui"

@@ -1,68 +1,157 @@
 [
   {
-    "lesson_id": "030",
-    "trigger_word": "bonvolu legi",
+    "lesson_id": "076",
+    "trigger_word": "lernado",
+    "title": "УРОК 35: -AD-, -EC- И -UJ-",
     "header_color": "green",
-    "title": "УРОК 30: ПОВЕЛИТЕЛЬНОЕ НАКЛОНЕНИЕ",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono tridek",
+        "total_pages": 2,
         "content": [
-          "Повелительное наклонение (-u) — для",
-          "приказов, просьб и пожеланий. Форма",
-          "одна для всех — спряжения не нужно!",
+          "-AD- превращает действие в ЗАНЯТИЕ:",
+          "в то, что длится или повторяется",
+          "снова и снова.",
           "",
-          "СТРОЙ:",
-          "Замени -i (инфинитив) на -u:",
-          "veni → Venu!       = Приди!",
-          "manĝi → Manĝu!     = Ешь!",
-          "rigardi → Rigardu! = Смотри!",
-          "helpi → Helpu min! = Помоги мне!",
+          "ГЛАГОЛ → ЗАНЯТИЕ:                      Нажми 1",
+          "lerni   → lernado    = учить → учёба",
+          "kuri    → kurado     = бежать → бег",
+          "paroli  → parolado   = говорить → речь",
+          "Regula lernado donas bonajn rezultojn.",
+          "= Регулярная учёба даёт хорошие плоды.",
           "",
-          "ВЕЖЛИВЫЕ ПРОСЬБЫ:",
-          "Bonvolu sidiĝi.   = Пожалуйста, садись.",
-          "Atentu!           = Внимание!",
+          "-EC- НАЗЫВАЕТ КАЧЕСТВО:                Нажми 2",
+          "amiko   → amikeco    = друг → дружба",
+          "afabla  → afableco   = добрый → доброта",
+          "libera  → libereco   = свободный → свобода",
+          "sana    → saneco     = здоровый → здоровье",
+          "(belaĵo — красивая ВЕЩЬ, а beleco —",
+          "сама красота.)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Lerni. Lernado. Kuri. Kurado. Paroli. Parolado. Regula lernado donas bonajn rezultojn.",
+          "2": "Amiko. Amikeco. Afabla. Afableco. Libera. Libereco. Sana. Saneco."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "-UJ- НАЗЫВАЕТ ВМЕСТИЛИЩЕ:              Нажми 1",
+          "mono    → monujo     = деньги → кошелёк",
+          "sukero  → sukerujo   = сахар → сахарница",
+          "salo    → salujo     = соль → солонка",
+          "retpoŝto → retpoŝtujo = почта → входящие",
           "",
-          "ДЛЯ ВСЕХ ПОДЛЕЖАЩИХ:",
-          "Ni iru!   = Пойдём! (мы)",
-          "Li venu.  = Пусть придёт. (он)"
-        ]
+          "-UJ- МОЖЕТ НАЗЫВАТЬ И СТРАНУ:          Нажми 2",
+          "Esperantujo = мир эсперанто",
+          "В старых названиях стран: Francujo.",
+          "Новые предпочитают -IO: Francio,",
+          "Germanio, Italio.",
+          "",
+          "В РЕЧИ:                                Нажми 3",
+          "Mia monujo estas en la sako.",
+          "= Мой кошелёк в сумке.",
+          "Bonvenon al Esperantujo!",
+          "= Добро пожаловать в мир эсперанто!"
+        ],
+        "pronunciation_mappings": {
+          "1": "Mono. Monujo. Sukero. Sukerujo. Salo. Salujo. Retpoŝto. Retpoŝtujo.",
+          "2": "Esperantujo. Francujo. Francio. Germanio. Italio.",
+          "3": "Mia monujo estas en la sako. Bonvenon al Esperantujo!"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "024",
+    "trigger_word": "samideano",
+    "title": "УРОК 36: СУФФИКС «-AN-»",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "Суффикс -AN- называет ЧЛЕНА группы,",
+          "ЖИТЕЛЯ какого-то места или",
+          "ПОСЛЕДОВАТЕЛЯ человека или идеи.",
+          "",
+          "ЧЛЕНЫ:                                 Нажми 1",
+          "klubo   → klubano    = клуб → член клуба",
+          "familio → familiano  = семья → член семьи",
+          "",
+          "ЖИТЕЛИ МЕСТА:                          Нажми 2",
+          "urbo    → urbano     = город → горожанин",
+          "Usono   → usonano    = США → американец",
+          "Eŭropo  → eŭropano   = Европа → европеец",
+          "(Жителя пишут со строчной буквы.)",
+          "",
+          "ПОСЛЕДОВАТЕЛИ:                         Нажми 3",
+          "Kristo  → kristano   = Христос → христианин",
+          "Budho   → budhano    = Будда → буддист"
+        ],
+        "pronunciation_mappings": {
+          "1": "Klubo. Klubano. Familio. Familiano.",
+          "2": "Urbo. Urbano. Usono. Usonano. Eŭropo. Eŭropano.",
+          "3": "Kristo. Kristano. Budho. Budhano."
+        },
+        "pronunciation": "Leciono dudek kvar"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "СОБСТВЕННОЕ СЛОВО ЭСПЕРАНТО:           Нажми 1",
+          "samideano = единомышленник, эсперантист",
+          "sam-ide-an-o: член той же идеи",
+          "",
+          "Karaj samideanoj!",
+          "= Дорогие единомышленники!",
+          "",
+          "ANO — ТОЖЕ ОТДЕЛЬНОЕ СЛОВО:            Нажми 2",
+          "ano = член (группы)",
+          "Ŝi estas ano de nia klubo.",
+          "= Она член нашего клуба."
+        ],
+        "pronunciation_mappings": {
+          "1": "Samideano. Karaj samideanoj!",
+          "2": "Ano. Ŝi estas ano de nia klubo."
+        }
       }
     ]
   },
   {
     "lesson_id": "031",
-    "trigger_word": "amuza",
+    "trigger_word": "decembro",
+    "title": "УРОК 37: БАЗОВЫЙ КУРС ЗАВЕРШЁН!",
     "header_color": "gold",
     "repeat": false,
-    "title": "БАЗОВЫЙ КУРС ЗАВЕРШЁН!",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
-        "pronunciation": "Gratulojn",
         "content": [
-          "Gratulojn! Ты завершил базовый курс",
-          "эсперанто!",
+          "Gratulojn! Ты прошёл Esperanto Core!",
           "",
           "ЧТО ТЫ УЖЕ СМОГ:",
-          "✓ Выучил 1000 самых частых слов эсперанто",
-          "✓ Освоил основную грамматику и",
-          "словообразование",
-          "✓ Можешь выражаться в повседневных ситуациях",
+          "✓ 1000 важнейших слов и выражений",
+          "✓ Основы грамматики и словообразования",
+          "✓ Ты можешь говорить о своих буднях",
           "",
-          "ЧТО ДАЛЬШЕ: Расширения по Парето добавят ещё",
-          "2000 слов и продвинутую грамматику: аффиксы и",
-          "причастия.",
+          "ЧТО ДАЛЬШЕ: PARETO 1",
+          "Ещё 1000 слов и выражений для форумов,",
+          "дискуссий, встреч и поездок, а также",
+          "остальные детали словообразования.",
+          "",
           "ТЕПЕРЬ ТЫ МОЖЕШЬ:",
-          "- Вести настоящие беседы с эсперантистами",
-          "- Читать простые книги и статьи",
-          "- Участвовать в мероприятиях (kongresoj!)",
-          "Bonega laboro! Vi estas sur la vojo!",
+          "- Общаться с эсперантистами онлайн",
+          "- Читать простые тексты",
+          "",
+          "Bonega laboro! Vi estas sur la ĝusta vojo!",
           "(Отличная работа! Ты на верном пути!)"
-        ]
+        ],
+        "pronunciation": "Gratulojn"
       }
     ]
   }

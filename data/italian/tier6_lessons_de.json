@@ -3,7 +3,7 @@
     "lesson_id": "021",
     "trigger_word": "cappuccino",
     "trigger_card_number": 1001,
-    "title": "LEKTION 21: MAHLZEITEN IN ITALIEN",
+    "title": "LEKTION 27: MAHLZEITEN IN ITALIEN",
     "header_color": "magenta",
     "pages": [
       {
@@ -17,7 +17,7 @@
           "COLAZIONE (Frühstück, 7–9 Uhr):",
           "   cappuccino + cornetto an der Bar",
           "   stehend am banco (Tresen)",
-          "   nie Eier, Speck oder Müsli",
+          "   nie Eier oder Speck",
           "",
           "PRANZO (Mittagessen, 12:30–14 Uhr):",
           "   traditionell die Hauptmahlzeit",
@@ -26,7 +26,7 @@
           "",
           "CENA (Abendessen, 20–21 Uhr):",
           "   leichter als pranzo – oder gleichwertig",
-          "   in Städten oft die größere Mahlzeit"
+          "   in Städten heute oft die größere Mahlzeit"
         ]
       },
       {
@@ -37,9 +37,9 @@
           "",
           "   ANTIPASTO = Vorspeise",
           "      salumi, bruschette, olive",
-          "   PRIMO = erste Hauptkomponente",
+          "   PRIMO = erster Gang",
           "      Pasta, Risotto, Suppe",
-          "   SECONDO = zweite Hauptkomponente",
+          "   SECONDO = Hauptgang",
           "      Fleisch oder Fisch (keine Pasta!)",
           "   CONTORNO = Beilage",
           "      Gemüse, Salat (extra serviert!)",
@@ -59,9 +59,9 @@
         "content": [
           "WO ITALIENER ESSEN – die Hierarchie:",
           "",
-          "   BAR = Kaffee, Cornetti, Aperitivo",
+          "   BAR = Kaffee, cornetti, aperitivo",
           "      keine Kneipe! Es ist ein Café.",
-          "   OSTERIA = einfach, Wein + Essen",
+          "   OSTERIA = die einfachste, Wein + Essen",
           "      oft keine schriftliche Speisekarte",
           "   TRATTORIA = familiengeführt, Hausmannskost",
           "      das Herz italienischer Küche",
@@ -69,14 +69,82 @@
           "      Tischdecken, Weinkarte, Gänge",
           "",
           "DIE KAFFEE-REGELN:",
-          "   cappuccino = nur morgens, NIEMALS",
-          "     nach einer Mahlzeit (Einheimische",
-          "     merken es)",
-          "   caffè = Espresso, jederzeit",
+          "   cappuccino = nur morgens, NIEMALS nach",
+          "     dem Essen (Einheimische merken das)",
+          "   caffè = Espresso, zu jeder Tageszeit",
           "   macchiato = Espresso + Milchtröpfchen",
-          "   caffè corretto = Espresso + Grappa"
+          "   caffè corretto = Espresso + Grappa",
+          "BESTELLEN: un caffè, per favore.         Taste 1"
         ],
-        "pronunciation": "Un caffè, per favore."
+        "pronunciation_mappings": {
+          "1": "Un caffè, per favore."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "047",
+    "trigger_word": "espresso",
+    "trigger_card_number": 1002,
+    "title": "LEKTION 28: SI IMPERSONALE",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "SI + Verb = was die LEUTE allgemein tun.",
+          "Das Verb steht in der 3. Person",
+          "Singular (die Form von lui/lei).",
+          "",
+          "   Al banco si beve in fretta.           Taste 1",
+          "      = Am Tresen trinkt man schnell.",
+          "   In Italia si mangia tardi.            Taste 2",
+          "      = In Italien isst man spät.",
+          "   Come si dice in italiano?             Taste 3",
+          "      = Wie sagt man das auf Italienisch?",
+          "   Si dice così.                         Taste 4",
+          "      = So sagt man das.",
+          "",
+          "Deutsch hat dafür genau ein Wort: „man“.",
+          "si mangia = man isst, si dice = man sagt."
+        ],
+        "pronunciation": "Si vive bene qui.",
+        "pronunciation_mappings": {
+          "1": "Al banco si beve in fretta.",
+          "2": "In Italia si mangia tardi.",
+          "3": "Come si dice in italiano?",
+          "4": "Si dice così."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "Nomen im PLURAL → auch das Verb im Plural:",
+          "   Qui si vende il pane.                 Taste 1",
+          "      = Hier wird Brot verkauft.",
+          "   Qui si vendono i giornali.",
+          "      = Hier werden Zeitungen verkauft.",
+          "",
+          "REFLEXIVE Verben: ci si, nie si si       Taste 2",
+          "   In Italia ci si saluta con due baci.",
+          "      = In Italien begrüßt man sich",
+          "        mit zwei Küsschen.",
+          "",
+          "AUF SCHILDERN UND LADENTÜREN:            Taste 3",
+          "   Si affitta.  = Zu vermieten.",
+          "   Si vende.    = Zu verkaufen.",
+          "   Si prega di non fumare.",
+          "      = Bitte nicht rauchen.",
+          "   Ältere Formen, noch zu sehen: affittasi,",
+          "   vendesi."
+        ],
+        "pronunciation_mappings": {
+          "1": "Qui si vende il pane. Qui si vendono i giornali.",
+          "2": "In Italia ci si saluta con due baci.",
+          "3": "Si affitta. Si vende. Si prega di non fumare."
+        }
       }
     ]
   }

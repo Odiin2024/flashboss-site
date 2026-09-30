@@ -1,9 +1,9 @@
 [
   {
-    "lesson_id": "009",
+    "lesson_id": "010",
     "trigger_word": "esperanza",
-    "trigger_card_number": 225,
-    "title": "LEKTION 9: REFLEXIVE VERBEN",
+    "trigger_card_number": 237,
+    "title": "LEKTION 10: REFLEXIVE VERBEN",
     "header_color": "green",
     "pages": [
       {
@@ -23,34 +23,35 @@
           "",
           "HÄUFIGE REFLEXIVE VERBEN:           Drücke 2",
           "levantarse   = aufstehen",
-          "sentirse     = sich fühlen",
           "acostarse    = ins Bett gehen",
-          "ducharse     = duschen",
-          "vestirse     = sich anziehen"
+          "despertarse  = aufwachen",
+          "sentarse     = sich setzen",
+          "preocuparse  = sich Sorgen machen",
+          "Befehle hängen es an: ¡Siéntate! ¡Lávate!"
         ],
-        "pronunciation": "Lección nueve",
+        "pronunciation": "Lección diez",
         "pronunciation_mappings": {
           "1": "me llamo, te llamas, se llama, nos llamamos, se llaman",
-          "2": "levantarse, sentirse, acostarse, ducharse, vestirse"
+          "2": "levantarse, acostarse, despertarse, sentarse, preocuparse, ¡siéntate!, ¡lávate!"
         }
       }
     ]
   },
   {
-    "lesson_id": "010",
+    "lesson_id": "011",
     "trigger_word": "cerrado",
-    "trigger_card_number": 275,
-    "title": "LEKTION 10: VERNEINUNG",
+    "trigger_card_number": 290,
+    "title": "LEKTION 11: VERNEINUNG",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
           "NO vor dem Verb verneint:           Drücke 1",
           "",
-          "No es difícil. (Es ist nicht schwer.) No",
-          "hablo francés. (Ich kann kein Französisch.)",
+          "No es difícil. (Es ist nicht schwer.)",
+          "No hablo francés. (Ich kann kein Französisch.)",
           "",
           "VERNEINENDE WÖRTER:                 Drücke 2",
           "nada = nichts     nadie = niemand",
@@ -62,24 +63,139 @@
           "No tengo nada. (Ich habe nichts.)",
           "No viene nadie. (Es kommt niemand.)",
           "",
-          "Du kannst sie auch voranstellen:",
-          "Nada tengo. Nadie viene. Nunca voy.",
-          "Die doppelte Verneinung ist häufiger."
+          "Verneinungswort VOR dem Verb → kein 'no':",
+          "Nadie viene. Nunca voy.",
+          "Beide Stellungen sind normales Spanisch."
         ],
-        "pronunciation": "Lección diez",
+        "pronunciation": "Lección once",
         "pronunciation_mappings": {
           "1": "no es difícil, no hablo francés",
           "2": "nada, nadie, nunca, ninguno, tampoco",
-          "3": "no voy nunca, no tengo nada, no viene nadie"
+          "3": "no voy nunca, no tengo nada, no viene nadie, nadie viene, nunca voy"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "VERNEINTER IMPERATIV (tú): no + neue Endung",
+          "",
+          "-AR-Verben bekommen -ES:            Drücke 1",
+          "hablar   → ¡No hables! (Sprich nicht!)",
+          "gritar   → ¡No grites! (Schrei nicht!)",
+          "olvidar  → ¡No olvides! (Vergiss nicht!)",
+          "",
+          "-ER/-IR-Verben bekommen -AS:        Drücke 2",
+          "comer    → ¡No comas! (Iss nicht!)",
+          "escribir → ¡No escribas! (Schreib nicht!)",
+          "",
+          "Das Pronomen rückt VOR das Verb:    Drücke 3",
+          "¡Siéntate! → ¡No te sientes!",
+          "¡No te preocupes! (Mach dir keine Sorgen!)"
+        ],
+        "pronunciation_mappings": {
+          "1": "no hables, no grites, no olvides",
+          "2": "no comas, no escribas",
+          "3": "siéntate, no te sientes, no te preocupes"
         }
       }
     ]
   },
   {
-    "lesson_id": "011",
+    "lesson_id": "012",
+    "trigger_word": "traer",
+    "trigger_card_number": 329,
+    "title": "LEKTION 12: FEINE UNTERSCHIEDE",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "Das richtige Wort für den Zweck finden.",
+          "Über diese Paare stolpern auch Profis:",
+          "",
+          "SABER vs CONOCER:                   Drücke 1",
+          "saber = wissen, etwas können",
+          "conocer = kennen, mit etwas vertraut sein",
+          "Sé nadar. (Ich kann schwimmen.)",
+          "Conozco Madrid. (Ich kenne Madrid.)",
+          "",
+          "PEDIR vs PREGUNTAR:                 Drücke 2",
+          "pedir = um etwas bitten",
+          "preguntar = eine Frage stellen",
+          "Pido la cuenta. (Ich bitte um die Rechnung.)",
+          "Pregunto el precio. (Ich frage nach dem Preis.)",
+          "",
+          "Deutsch trennt genauso: bitten/fragen.",
+          "Verwechseln klingt im Spanischen falsch."
+        ],
+        "pronunciation": "Lección doce",
+        "pronunciation_mappings": {
+          "1": "Sé nadar. Conozco Madrid.",
+          "2": "Pido la cuenta. Pregunto el precio."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "LLEVAR vs TRAER:                    Drücke 1",
+          "llevar = mitnehmen (weg von hier)",
+          "traer = mitbringen (hierher)",
+          "Lleva esto a tu mamá.",
+          "(Nimm das mit zu deiner Mama.)",
+          "Trae tu libro a clase.",
+          "(Bring dein Buch zum Unterricht mit.)",
+          "",
+          "SINO vs PERO:                       Drücke 2",
+          "pero = aber (allgemeiner Gegensatz)",
+          "sino = sondern (nach einer Verneinung;",
+          "stellt richtig, was gerade verneint wurde)",
+          "No es caro, sino barato.",
+          "(Es ist nicht teuer, sondern billig.)",
+          "Quiero ir, pero no puedo.",
+          "(Ich will hin, aber ich kann nicht.)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Lleva esto a tu mamá. Trae tu libro a clase.",
+          "2": "No es caro, sino barato. Quiero ir, pero no puedo."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "POR QUÉ vs PORQUE vs PORQUÉ:        Drücke 1",
+          "por qué = warum? (Frage)",
+          "porque = weil (Antwort)",
+          "porqué = der Grund (Substantiv)",
+          "¿Por qué? Porque sí. El porqué no",
+          "importa. (Warum? Darum. Der Grund",
+          "ist egal.)",
+          "",
+          "TODAVÍA vs AÚN vs YA:               Drücke 2",
+          "todavía/aún = noch (immer)",
+          "ya = schon / jetzt",
+          "Todavía no está aquí.",
+          "(Er ist noch nicht da.)",
+          "Ya lo sé. (Ich weiß es schon.)",
+          "",
+          "Diese Feinheiten unterscheiden gutes",
+          "Spanisch von großartigem Spanisch."
+        ],
+        "pronunciation_mappings": {
+          "1": "¿Por qué? Porque sí. El porqué no importa.",
+          "2": "Todavía no está aquí. Ya lo sé."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "013",
     "trigger_word": "palabra",
-    "trigger_card_number": 325,
-    "title": "LEKTION 11: ADJEKTIVANGLEICHUNG",
+    "trigger_card_number": 347,
+    "title": "LEKTION 13: ADJEKTIVANGLEICHUNG",
     "header_color": "green",
     "pages": [
       {
@@ -92,33 +208,33 @@
           "el gato blanco  → la gata blanca",
           "los gatos blancos → las gatas blancas",
           "",
-          "-E-Adjektive ändern das Genus nie:  Drücke 2",
-          "el chico grande  → la chica grande",
-          "Plural nur mit -s: grandes",
+          "-E / meist Konsonant: unverändert   Drücke 2",
+          "el chico grande → la chica grande",
+          "el cielo azul → la falda azul (Pl. azules)",
           "",
-          "KONSONANT-Endung — fem. mit -a:     Drücke 3",
-          "el chico español → la chica española",
-          "",
+          "ABER Herkunft und -or bekommen -a:  Drücke 3",
+          "español → española, trabajador → trabajadora",
+          "(mejor, mayor, menor: m./f. gleich)",
           "STELLUNG — meist NACH dem Substantiv:",
           "la casa blanca (das weiße Haus)",
-          "un libro interesante (ein interessantes Buch)",
-          "MERKE: Davor stehen bueno, malo, grande",
-          "un buen amigo (ein guter Freund)"
+          "Einige stehen DAVOR und verkürzen sich:",
+          "un buen amigo, un mal día (mask. Sg.)",
+          "una gran ciudad (gran = großartig)"
         ],
-        "pronunciation": "Lección once",
+        "pronunciation": "Lección trece",
         "pronunciation_mappings": {
           "1": "el gato blanco, la gata blanca, los gatos blancos, las gatas blancas",
-          "2": "el chico grande, la chica grande",
-          "3": "el chico español, la chica española"
+          "2": "el chico grande, la chica grande, el cielo azul, la falda azul, azules",
+          "3": "español, española, trabajador, trabajadora"
         }
       }
     ]
   },
   {
-    "lesson_id": "012",
+    "lesson_id": "014",
     "trigger_word": "guapo",
-    "trigger_card_number": 375,
-    "title": "LEKTION 12: INDEFINIDO",
+    "trigger_card_number": 397,
+    "title": "LEKTION 14: INDEFINIDO",
     "header_color": "green",
     "pages": [
       {
@@ -144,7 +260,7 @@
           "Merke: nosotros lautet bei -AR-Verben",
           "im Präsens und im Indefinido gleich!"
         ],
-        "pronunciation": "Lección doce",
+        "pronunciation": "Lección catorce",
         "pronunciation_mappings": {
           "1": "yo hablé, tú hablaste, él habló, nosotros hablamos, ellos hablaron",
           "2": "yo comí, tú comiste, él comió, nosotros comimos, ellos comieron"
@@ -167,7 +283,8 @@
           "tuve, tuviste, tuvo, tuvimos, tuvieron",
           "",
           "ESTAR (sein):                       Drücke 4",
-          "estuve, estuviste, estuvo, estuvimos",
+          "estuve, estuviste, estuvo, estuvimos,",
+          "estuvieron",
           "",
           "DECIR (sagen):                      Drücke 5",
           "dije, dijiste, dijo, dijimos, dijeron"
@@ -176,7 +293,7 @@
           "1": "fui, fuiste, fue, fuimos, fueron",
           "2": "hice, hiciste, hizo, hicimos, hicieron",
           "3": "tuve, tuviste, tuvo, tuvimos, tuvieron",
-          "4": "estuve, estuviste, estuvo, estuvimos",
+          "4": "estuve, estuviste, estuvo, estuvimos, estuvieron",
           "5": "dije, dijiste, dijo, dijimos, dijeron"
         }
       }

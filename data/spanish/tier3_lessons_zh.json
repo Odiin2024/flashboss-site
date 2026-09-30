@@ -1,9 +1,9 @@
 [
   {
-    "lesson_id": "013",
-    "trigger_word": "abuelo",
-    "trigger_card_number": 450,
-    "title": "第13课：宾语代词",
+    "lesson_id": "015",
+    "trigger_word": "explicar",
+    "trigger_card_number": 429,
+    "title": "第15课：宾语代词",
     "header_color": "green",
     "pages": [
       {
@@ -15,21 +15,21 @@
           "",
           "直接宾语（什么／谁）：",
           "me = 我              nos = 我们",
-          "te = 你              los/las = 他们／她们",
-          "lo = 他／它           la = 她／它",
+          "te = 你              los/las = 他们／你们",
+          "lo = 他／它／您       la = 她／它／您",
           "",
           "¿Ves el libro? Sí, lo veo.",
           "（你看到那本书了吗？看到了，我看见它了。）",
           "",
           "间接宾语（给谁／为谁）：",
           "me = 给我            nos = 给我们",
-          "te = 给你            les = 给他们",
-          "le = 给他／她",
+          "te = 给你            les = 给他们／你们",
+          "le = 给他／她／您",
           "",
           "Le doy el libro.（我把书给他。）",
           "宾语代词通常放在动词前面。"
         ],
-        "pronunciation": "Lección trece",
+        "pronunciation": "Lección quince",
         "pronunciation_mappings": {}
       },
       {
@@ -51,29 +51,29 @@
           "两种位置都正确：                        按 4",
           "Lo quiero comprar = Quiero comprarlo",
           "",
-          "别过度纠结位置。通过卡片上的",
-          "例句，你会逐渐培养出语感。",
-          ""
+          "附在肯定命令式后：                      按 5",
+          "¡Discúlpame! ¡Dime!（抱歉！告诉我！）"
         ],
         "pronunciation_mappings": {
           "1": "lo quiero, me gusta",
           "2": "voy a decirte algo, quiero comprarlo",
           "3": "estoy haciéndolo",
-          "4": "lo quiero comprar, quiero comprarlo"
+          "4": "lo quiero comprar, quiero comprarlo",
+          "5": "discúlpame, dime"
         }
       }
     ]
   },
   {
-    "lesson_id": "014",
+    "lesson_id": "016",
     "trigger_word": "seguridad",
-    "trigger_card_number": 520,
-    "title": "第14课：简单过去时与未完成时",
+    "trigger_card_number": 550,
+    "title": "第16课：简单过去时与未完成时",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
           "未完成过去时（IMPERFECT）是另一种过去时态。",
           "简单过去时（preterite）表示已完成的动作，",
@@ -94,7 +94,7 @@
           "nosotros comíamos = 我们那时在吃",
           "ellos comían   = 他们那时在吃"
         ],
-        "pronunciation": "Lección catorce",
+        "pronunciation": "Lección dieciséis",
         "pronunciation_mappings": {
           "1": "yo hablaba, tú hablabas, él hablaba, nosotros hablábamos, ellos hablaban",
           "2": "yo comía, tú comías, él comía, nosotros comíamos, ellos comían"
@@ -102,7 +102,7 @@
       },
       {
         "page": 2,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
           "简单过去时（快照）：                    按 1",
           "Ayer comí pizza.（我昨天吃了披萨。）",
@@ -128,14 +128,38 @@
           "2": "de niño comía pizza todos los viernes",
           "3": "llovía cuando salí de casa"
         }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "未完成过去时只有三个不规则动词：        按 1",
+          "ser → era, eras, era, éramos, eran",
+          "ir  → iba, ibas, iba, íbamos, iban",
+          "ver → veía, veías, veía, veíamos, veían",
+          "",
+          "例句：                                  按 2",
+          "De niño era tímido.",
+          "（我小时候很害羞。）",
+          "Siempre iba a la playa.",
+          "（我以前总是去海边。）",
+          "",
+          "其他动词的未完成过去时都是规则的，",
+          "连 querer 和 poder 也一样：",
+          "quería、podía。词干不变！"
+        ],
+        "pronunciation_mappings": {
+          "1": "era, eras, era, éramos, eran, iba, ibas, iba, íbamos, iban, veía, veías, veía, veíamos, veían",
+          "2": "de niño era tímido, siempre iba a la playa"
+        }
       }
     ]
   },
   {
-    "lesson_id": "015",
+    "lesson_id": "017",
     "trigger_word": "gobierno",
-    "trigger_card_number": 580,
-    "title": "第15课：POR VS PARA",
+    "trigger_card_number": 612,
+    "title": "第17课：POR VS PARA",
     "header_color": "green",
     "pages": [
       {
@@ -161,7 +185,7 @@
           "Caminé por dos horas.（我走了两个小时。）",
           "Por eso no fui.（所以我没去。）"
         ],
-        "pronunciation": "Lección quince",
+        "pronunciation": "Lección diecisiete",
         "pronunciation_mappings": {
           "1": "estudio para aprender, es para ti, salgo para Madrid, es para el lunes",
           "2": "lo cambié por otro, gracias por todo, caminé por dos horas, por eso no fui"

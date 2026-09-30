@@ -2,7 +2,7 @@
   {
     "lesson_id": "008",
     "trigger_word": "Frühstück",
-    "trigger_card_number": 208,
+    "trigger_card_number": 214,
     "title": "LESSON 8: WORD ORDER (V2 RULE)",
     "header_color": "cyan",
     "pages": [
@@ -10,23 +10,24 @@
         "page": 1,
         "total_pages": 1,
         "content": [
-          "German has ONE CRITICAL RULE:",
+          "In a statement, the conjugated VERB is",
+          "always the SECOND ELEMENT.",
           "",
-          "The VERB is ALWAYS in position 2.",
+          "[Ich] [gehe] [heute] [nach Hause].",
+          "  1     2      3        4",
+          "(I'm going home today)",
           "",
-          "Ich gehe heute nach Hause.",
-          " 1   2     3      4     5",
-          "(I go home today)",
+          "[Heute] [gehe] [ich] [nach Hause].",
+          "   1      2     3        4",
+          "When 'heute' comes first, the verb stays",
+          "second, and 'ich' moves behind it.",
           "",
-          "Heute gehe ich nach Hause.",
-          "  1     2   3    4     5",
-          "(Today I go home)",
+          "An element can be several words:",
+          "[Im Sommer] [fahren] [wir] [ans Meer].",
           "",
-          "Notice: When \"heute\" moves to position 1,",
-          "the verb STAYS in position 2, so \"ich\"",
-          "moves to position 3!",
-          "",
-          "This \"inversion\" happens constantly in German."
+          "Yes/no questions: verb first (Kommst du mit?)",
+          "Exception: after dass, weil, wenn, obwohl",
+          "the verb goes to the END (see NEBENSÄTZE)."
         ],
         "pronunciation": "Lektion acht"
       }
@@ -35,7 +36,7 @@
   {
     "lesson_id": "009",
     "trigger_word": "bezahlen",
-    "trigger_card_number": 243,
+    "trigger_card_number": 249,
     "title": "LESSON 9: PERSONAL PRONOUNS",
     "header_color": "cyan",
     "pages": [
@@ -68,7 +69,7 @@
   {
     "lesson_id": "010",
     "trigger_word": "auf|räumen",
-    "trigger_card_number": 268,
+    "trigger_card_number": 274,
     "title": "LESSON 10: CASES (NOM & AKK)",
     "header_color": "cyan",
     "pages": [
@@ -100,10 +101,10 @@
     ]
   },
   {
-    "lesson_id": "012",
-    "trigger_word": "an|ziehen",
-    "trigger_card_number": 315,
-    "title": "LESSON 12: SEPARABLE VERBS",
+    "lesson_id": "011",
+    "trigger_word": "auf|stehen",
+    "trigger_card_number": 275,
+    "title": "LESSON 11: SEPARABLE VERBS",
     "header_color": "cyan",
     "pages": [
       {
@@ -128,48 +129,69 @@
           "NOTE: Flashcards show separable verbs with",
           "a pipe: an|kommen, auf|stehen"
         ],
-        "pronunciation": "Lektion zwölf"
+        "pronunciation": "Lektion elf"
       }
     ]
   },
   {
-    "lesson_id": "011",
-    "trigger_word": "Schuhe",
-    "trigger_card_number": 313,
-    "title": "LESSON 11: PLURAL FORMATION",
+    "lesson_id": "012",
+    "trigger_word": "Arm",
+    "trigger_card_number": 305,
+    "title": "LESSON 12: POSSESSIVE PRONOUNS",
     "header_color": "cyan",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "German nouns form plurals in FIVE main ways:",
+          "Possessive pronouns show ownership:",
           "",
-          "1. Add -e:  der Tisch → die Tische",
-          "2. Add -en/-n:  die Frau → die Frauen",
-          "3. Add -er:  das Kind → die Kinder",
-          "4. Add -s:  das Auto → die Autos",
-          "5. Umlaut only:  der Apfel → die Äpfel",
+          "mein  = my        unser = our",
+          "dein  = your      euer  = your (plural)",
+          "sein  = his/its   ihr   = their",
+          "ihr   = her       Ihr   = your (formal)",
           "",
-          "ARTICLE CHANGES:",
-          "ALL plurals use \"die\" (regardless of gender)",
+          "THEY WORK LIKE 'EIN' (take same endings):",
+          "          Masc    Fem     Neut    Plural",
+          "NOM:      mein    meine   mein    meine",
+          "AKK:      meinen  meine   mein    meine",
           "",
-          "HINTS (not rules!):",
-          "• Feminine often → -en (die Frau → die Frauen)",
-          "• Neuter often → -er (das Kind → die Kinder)",
-          "• Words ending in -e → -n (Minute → Minuten)",
-          "",
-          "Many irregulars! Always learn: die Nudeln",
-          "(the noodles - already plural form)"
+          "EXAMPLES:",
+          "Das ist mein Hund. (my dog - masc nom)",
+          "Ich sehe deinen Hund. (your dog - masc akk)",
+          "Das ist meine Katze. (my cat - fem)"
         ],
-        "pronunciation": "Lektion elf"
+        "pronunciation": "Lektion zwölf"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "MORE POSSESSIVE EXAMPLES:",
+          "",
+          "MASCULINE:",
+          "Wo ist dein Bruder? (Where is your brother?)",
+          "Ich kenne seinen Vater. (I know his father)",
+          "",
+          "FEMININE:",
+          "Das ist meine Schwester. (This is my sister)",
+          "Er liebt seine Mutter. (He loves his mother)",
+          "",
+          "NEUTER:",
+          "Wo ist mein Buch? (Where is my book?)",
+          "Sie liest ihr Buch. (She reads her book)",
+          "",
+          "PLURAL:",
+          "Das sind unsere Kinder. (our children)",
+          "Ich mag eure Ideen. (I like your ideas)"
+        ]
       }
     ]
   },
   {
     "lesson_id": "013",
     "trigger_word": "Hand",
-    "trigger_card_number": 323,
+    "trigger_card_number": 310,
     "title": "LESSON 13: IMPERATIV (COMMANDS)",
     "header_color": "cyan",
     "pages": [
@@ -177,19 +199,19 @@
         "page": 1,
         "total_pages": 2,
         "content": [
-          "Commands in German depend on who you're",
-          "addressing:",
+          "Commands depend on who you're addressing:",
           "",
           "DU-FORM (informal singular):",
-          "Drop 'st' from du-form, drop 'du':",
+          "Drop 'du' and the -st ending:",
           "du kommst → Komm! (Come!)",
-          "du gehst → Geh! (Go!)",
           "du wartest → Warte! (Wait!)",
+          "a→ä verbs lose the umlaut:",
+          "du fährst → Fahr!  du schläfst → Schlaf!",
+          "s-stems drop only -t: du liest → Lies!",
           "",
           "IHR-FORM (informal plural):",
           "Use ihr-form, drop 'ihr':",
           "ihr kommt → Kommt! (Come!)",
-          "ihr geht → Geht! (Go!)",
           "",
           "SIE-FORM (formal, singular & plural):",
           "Use Sie-form, keep 'Sie' after verb:",
@@ -226,56 +248,35 @@
   },
   {
     "lesson_id": "014",
-    "trigger_word": "Büro",
-    "trigger_card_number": 372,
-    "title": "LESSON 14: POSSESSIVE PRONOUNS",
+    "trigger_word": "Schuhe",
+    "trigger_card_number": 319,
+    "title": "LESSON 14: PLURAL FORMATION",
     "header_color": "cyan",
     "pages": [
       {
         "page": 1,
-        "total_pages": 2,
+        "total_pages": 1,
         "content": [
-          "Possessive pronouns show ownership:",
+          "German nouns form plurals in FIVE main ways:",
           "",
-          "mein  = my        unser = our",
-          "dein  = your      euer  = your (plural)",
-          "sein  = his/its   ihr   = their",
-          "ihr   = her       Ihr   = your (formal)",
+          "1. Add -e:  der Tisch → die Tische",
+          "2. Add -en/-n:  die Frau → die Frauen",
+          "3. Add -er:  das Kind → die Kinder",
+          "4. Add -s:  das Auto → die Autos",
+          "5. No ending (sometimes + umlaut):",
+          "   der Lehrer → die Lehrer",
+          "   der Apfel → die Äpfel",
           "",
-          "THEY WORK LIKE 'EIN' (take same endings):",
-          "          Masc    Fem     Neut    Plural",
-          "NOM:      mein    meine   mein    meine",
-          "AKK:      meinen  meine   mein    meine",
+          "ALL plurals use \"die\" (regardless of gender)",
           "",
-          "EXAMPLES:",
-          "Das ist mein Hund. (my dog - masc nom)",
-          "Ich sehe deinen Hund. (your dog - masc akk)",
-          "Das ist meine Katze. (my cat - fem)"
+          "HINTS (not rules!):",
+          "• Masc./neuter in -er, -el, -en → no ending",
+          "• Feminine often → -en (die Frau → die Frauen)",
+          "• Neuter: -e or -er (das Jahr → die Jahre)",
+          "• Nouns in -e → -n (die Minute → die Minuten)",
+          "Always learn a noun WITH its plural."
         ],
         "pronunciation": "Lektion vierzehn"
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "content": [
-          "MORE POSSESSIVE EXAMPLES:",
-          "",
-          "MASCULINE:",
-          "Wo ist dein Bruder? (Where is your brother?)",
-          "Ich kenne seinen Vater. (I know his father)",
-          "",
-          "FEMININE:",
-          "Das ist meine Schwester. (This is my sister)",
-          "Er liebt seine Mutter. (He loves his mother)",
-          "",
-          "NEUTER:",
-          "Wo ist mein Buch? (Where is my book?)",
-          "Sie liest ihr Buch. (She reads her book)",
-          "",
-          "PLURAL:",
-          "Das sind unsere Kinder. (our children)",
-          "Ich mag eure Ideen. (I like your ideas)"
-        ]
       }
     ]
   }

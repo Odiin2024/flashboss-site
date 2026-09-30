@@ -2,7 +2,7 @@
   {
     "lesson_id": "053",
     "trigger_word": "novulo",
-    "title": "第53课：世界语资源",
+    "title": "第58课：世界语资源",
     "header_color": "blue",
     "toggle_mode": true,
     "pages": [
@@ -16,13 +16,13 @@
           "  Senpaga kurso kun ekzercoj kaj forumo",
           "",
           "VIKIPEDIO EN ESPERANTO",
-          "  eo.wikipedia.org - Pli ol 300,000 artikoloj!",
+          "  eo.wikipedia.org - Pli ol 300 000 artikoloj!",
           "",
           "DUOLINGO",
           "  Esperanto-kurso por anglalingvanoj",
           "",
           "AMIKUMU (apliko)",
-          "  Trovu Esperantistojn proksime de vi"
+          "  Trovu esperantistojn proksime de vi"
         ],
         "english": [
           "实用网站",
@@ -31,7 +31,7 @@
           "  带练习和论坛的免费课程",
           "",
           "世界语维基百科",
-          "  eo.wikipedia.org - 超过30万篇文章！",
+          "  eo.wikipedia.org - 超过 30 万篇文章！",
           "",
           "DUOLINGO",
           "  面向英语使用者的世界语课程",
@@ -47,13 +47,13 @@
           "PLI DA RIMEDOJ",
           "",
           "PASPORTA SERVO",
-          "  Senpaga loĝado ĉe Esperantistoj",
+          "  Senpaga loĝado ĉe esperantistoj",
           "",
           "LIBERA FOLIO",
           "  Novaĵoj en Esperanto",
           "",
           "MUZAIKO",
-          "  24-hora Esperanto-radio",
+          "  Reta radio en Esperanto",
           "",
           "TELEGRAM/DISCORD",
           "  Multaj grupoj por babili"
@@ -68,7 +68,7 @@
           "  世界语新闻",
           "",
           "MUZAIKO",
-          "  24小时世界语广播",
+          "  世界语网络电台",
           "",
           "TELEGRAM/DISCORD",
           "  许多聊天群组"
@@ -77,9 +77,112 @@
     ]
   },
   {
+    "lesson_id": "060",
+    "trigger_word": "pasporto",
+    "title": "第59课：世界语里的世界",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "词根 = 国民时：加 -io（或 -lando）",
+          "表示其国家。一键读两行：",
+          "德国         Germanio    germano          按 1",
+          "法国         Francio     franco",
+          "意大利       Italio      italo            按 2",
+          "西班牙       Hispanio    hispano",
+          "俄罗斯       Rusio       ruso             按 3",
+          "波兰         Pollando    polo",
+          "中国         Ĉinio       ĉino             按 4",
+          "日本         Japanio     japano",
+          "",
+          "词根 = 国家时：加 -ano 表示国民：",
+          "美国         Usono       usonano          按 5",
+          "加拿大       Kanado      kanadano",
+          "巴西         Brazilo     brazilano        按 6",
+          "墨西哥       Meksiko     meksikano",
+          "肯尼亚       Kenjo       kenjano          按 7",
+          "阿根廷       Argentino   argentinano"
+        ],
+        "pronunciation_mappings": {
+          "1": "Germanio. Germano. Francio. Franco.",
+          "2": "Italio. Italo. Hispanio. Hispano.",
+          "3": "Rusio. Ruso. Pollando. Polo.",
+          "4": "Ĉinio. Ĉino. Japanio. Japano.",
+          "5": "Usono. Usonano. Kanado. Kanadano.",
+          "6": "Brazilo. Brazilano. Meksiko. Meksikano.",
+          "7": "Kenjo. Kenjano. Argentino. Argentinano."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "国家及其首都，用世界语说。",
+          "一键读两行：",
+          "德国         Germanio    Berlino          按 1",
+          "法国         Francio     Parizo",
+          "意大利       Italio      Romo             按 2",
+          "西班牙       Hispanio    Madrido",
+          "英国         Britio      Londono          按 3",
+          "葡萄牙       Portugalio  Lisbono",
+          "荷兰         Nederlando  Amsterdamo       按 4",
+          "瑞士         Svislando   Berno",
+          "奥地利       Aŭstrio     Vieno            按 5",
+          "波兰         Pollando    Varsovio",
+          "瑞典         Svedio      Stokholmo        按 6",
+          "俄罗斯       Rusio       Moskvo",
+          "乌克兰       Ukrainio    Kievo            按 7",
+          "土耳其       Turkio      Ankaro"
+        ],
+        "pronunciation_mappings": {
+          "1": "Germanio. Berlino. Francio. Parizo.",
+          "2": "Italio. Romo. Hispanio. Madrido.",
+          "3": "Britio. Londono. Portugalio. Lisbono.",
+          "4": "Nederlando. Amsterdamo. Svislando. Berno.",
+          "5": "Aŭstrio. Vieno. Pollando. Varsovio.",
+          "6": "Svedio. Stokholmo. Rusio. Moskvo.",
+          "7": "Ukrainio. Kievo. Turkio. Ankaro."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "再来十四个国家和首都，",
+          "遍布世界各地：",
+          "美国         Usono       Vaŝingtono       按 1",
+          "加拿大       Kanado      Otavo",
+          "墨西哥       Meksiko     Meksikurbo       按 2",
+          "巴西         Brazilo     Braziljo",
+          "中国         Ĉinio       Pekino           按 3",
+          "日本         Japanio     Tokio",
+          "韩国         Sud-Koreio  Seulo            按 4",
+          "印度         Hindio      Nov-Delhio",
+          "印度尼西亚   Indonezio   Ĝakarto          按 5",
+          "澳大利亚     Aŭstralio   Kanbero",
+          "埃及         Egiptio     Kairo            按 6",
+          "肯尼亚       Kenjo       Najrobo",
+          "尼日利亚     Niĝerio     Abuĝo            按 7",
+          "南非         Sud-Afriko  Pretorio"
+        ],
+        "pronunciation_mappings": {
+          "1": "Usono. Vaŝingtono. Kanado. Otavo.",
+          "2": "Meksiko. Meksikurbo. Brazilo. Braziljo.",
+          "3": "Ĉinio. Pekino. Japanio. Tokio.",
+          "4": "Sud-Koreio. Seulo. Hindio. Nov-Delhio.",
+          "5": "Indonezio. Ĝakarto. Aŭstralio. Kanbero.",
+          "6": "Egiptio. Kairo. Kenjo. Najrobo.",
+          "7": "Niĝerio. Abuĝo. Sud-Afriko. Pretorio."
+        }
+      }
+    ]
+  },
+  {
     "lesson_id": "054",
     "trigger_word": "muzeo",
-    "title": "世界语音乐",
+    "title": "第60课：世界语音乐",
     "header_color": "blue",
     "toggle_mode": true,
     "pages": [
@@ -108,21 +211,21 @@
         "english": [
           "世界语音乐",
           "",
-          "没错，世界语音乐真实存在！",
-          "涵盖所有流派：摇滚、说唱、雷鬼、流行……",
+          "没错，世界语音乐真的存在！",
+          "各种流派都有：摇滚、说唱、雷鬼、流行……",
           "",
-          "推荐艺人：",
+          "值得一听的艺人：",
           "* Jonny M - 雷鬼／说唱（德国）",
           "* Kajto - 流行民谣（荷兰）",
           "* Dolchamar - 摇滚／说唱（芬兰）",
           "* Martin Wiese - 摇滚（瑞典）",
           "",
-          "为何如此动听：",
+          "为什么行得通：",
           "* 节奏规整",
-          "* 押韵简单（-o、-as、-is、-a、-e）",
+          "* 押韵容易（-o、-as、-is、-a、-e）",
           "* 语序灵活",
           "",
-          "在 YouTube 搜索「Esperanto music」！"
+          "在 YouTube 搜索 'Esperanto music'！"
         ]
       }
     ]
@@ -130,7 +233,7 @@
   {
     "lesson_id": "055",
     "trigger_word": "antaŭjuĝo",
-    "title": "第55课：前缀「FI-」",
+    "title": "第61课：前缀「FI-」",
     "header_color": "green",
     "pages": [
       {
@@ -163,7 +266,7 @@
   {
     "lesson_id": "056",
     "trigger_word": "konversacio",
-    "title": "第56课：与AI练习",
+    "title": "第62课：用 AI 练习",
     "header_color": "blue",
     "toggle_mode": true,
     "pages": [
@@ -188,15 +291,15 @@
           "你可以用 AI 练习世界语！",
           "",
           "现代语言模型（ChatGPT、Claude）",
-          "能出人意料地流利说世界语。",
+          "说世界语说得出人意料地好。",
           "",
           "两种使用方式：",
           "",
           "1. 对话伙伴",
-          "   用于练习口语",
+          "   用来练习口语",
           "",
           "2. 私人导师",
-          "   用于询问语法"
+          "   用来询问语法问题"
         ]
       },
       {
@@ -208,7 +311,7 @@
           "\"Rolu kiel lerneja kunlernanto dum",
           "ekskurso. Parolu Esperanton flue.",
           "Gvidu per facile respondeblaj demandoj.",
-          "Uzu simplan Esperanton. Korektu gentile.\"",
+          "Uzu simplan Esperanton. Korektu min ĝentile.\"",
           "",
           "Poste simple komencu: 'Saluton!'",
           "",
@@ -220,133 +323,22 @@
           "Demandu pri io ajn! 'Kial estas -n ĉi tie?'"
         ],
         "english": [
-          "对话伙伴 — 告诉 AI：",
+          "对话伙伴 - 对 AI 说：",
           "",
-          "「扮演一名在旅行中的同学。",
-          "流利地说世界语。用简单的问题",
-          "引导对话。使用简单的世界语。",
-          "温和地纠正错误。」",
+          "「请扮演一名一起出游的同学。",
+          "流利地说世界语。用容易回答的",
+          "问题引导对话。使用简单的",
+          "世界语。温和地纠正我。」",
           "",
-          "然后直接开始：「Saluton!」",
+          "然后直接开始：'Saluton!'",
           "",
-          "私人导师 — 告诉 AI：",
+          "私人导师 - 对 AI 说：",
           "",
-          "「做我的世界语导师。回答问题，",
-          "解释语法。」",
+          "「请做我的世界语老师。回答",
+          "问题。讲解语法。」",
           "",
-          "随便问任何问题！「这里为什么有 -n？」"
+          "什么都可以问！'这里为什么有 -n？'"
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "060",
-    "trigger_word": "pasporto",
-    "trigger_card_number": 643,
-    "title": "第60课：世界语中的世界",
-    "header_color": "cyan",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 3,
-        "content": [
-          "世界语的国名：-io 是国家，-o 是国民。",
-          "一键对应两个：",
-          "德国            Germanio,  germano       按 1",
-          "法国            Francio,   franco",
-          "意大利          Italio,    italo         按 2",
-          "西班牙          Hispanio,  hispano",
-          "波兰            Pollando,  polo          按 3",
-          "俄罗斯          Rusio,     ruso",
-          "匈牙利          Hungario,  hungaro       按 4",
-          "捷克            Ĉeĥio,     ĉeĥo",
-          "立陶宛          Litovio,   litovo        按 5",
-          "芬兰            Finnlando, finno",
-          "中国            Ĉinio,     ĉino          按 6",
-          "日本            Japanio,   japano",
-          "美国            Usono,     usonano       按 7",
-          "加拿大          Kanado,    kanadano",
-          "巴西            Brazilo,   brazilano     按 8",
-          "肯尼亚          Kenjo,     kenjano"
-        ],
-        "pronunciation_mappings": {
-          "1": "Germanio,  germano. Francio,   franco.",
-          "2": "Italio,    italo. Hispanio,  hispano.",
-          "3": "Pollando,  polo. Rusio,     ruso.",
-          "4": "Hungario,  hungaro. Ĉeĥio,     ĉeĥo.",
-          "5": "Litovio,   litovo. Finnlando, finno.",
-          "6": "Ĉinio,     ĉino. Japanio,   japano.",
-          "7": "Usono,     usonano. Kanado,    kanadano.",
-          "8": "Brazilo,   brazilano. Kenjo,     kenjano."
-        }
-      },
-      {
-        "page": 2,
-        "total_pages": 3,
-        "content": [
-          "国家及其首都，用世界语。一键对应两行：",
-          "",
-          "德国         Germanio    Berlino         按 1",
-          "法国         Francio     Parizo",
-          "意大利       Italio      Romo            按 2",
-          "西班牙       Hispanio    Madrido",
-          "英国         Britio      Londono         按 3",
-          "葡萄牙       Portugalio  Lisbono",
-          "荷兰         Nederlando  Amsterdamo      按 4",
-          "瑞士         Svislando   Berno",
-          "奥地利       Aŭstrio     Vieno           按 5",
-          "波兰         Pollando    Varsovio",
-          "瑞典         Svedio      Stokholmo       按 6",
-          "俄罗斯       Rusio       Moskvo",
-          "乌克兰       Ukrainio    Kievo           按 7",
-          "土耳其       Turkio      Ankaro",
-          "捷克         Ĉeĥio       Prago           按 8",
-          "匈牙利       Hungario    Budapeŝto"
-        ],
-        "pronunciation_mappings": {
-          "1": "Germanio. Berlino. Francio. Parizo.",
-          "2": "Italio. Romo. Hispanio. Madrido.",
-          "3": "Britio. Londono. Portugalio. Lisbono.",
-          "4": "Nederlando. Amsterdamo. Svislando. Berno.",
-          "5": "Aŭstrio. Vieno. Pollando. Varsovio.",
-          "6": "Svedio. Stokholmo. Rusio. Moskvo.",
-          "7": "Ukrainio. Kievo. Turkio. Ankaro.",
-          "8": "Ĉeĥio. Prago. Hungario. Budapeŝto."
-        }
-      },
-      {
-        "page": 3,
-        "total_pages": 3,
-        "content": [
-          "国家、国民、形容词：Germanio、germano、",
-          "germana。再来十六个：",
-          "立陶宛       Litovio     Vilno           按 1",
-          "芬兰         Finnlando   Helsinko",
-          "美国         Usono       Vaŝingtono      按 2",
-          "加拿大       Kanado      Otavo",
-          "墨西哥       Meksiko     Meksikurbo      按 3",
-          "巴西         Brazilo     Braziljo",
-          "中国         Ĉinio       Pekino          按 4",
-          "日本         Japanio     Tokio",
-          "韩国         Sud-Koreio  Seulo           按 5",
-          "印度         Hindio      Nov-Delhio",
-          "印度尼西亚   Indonezio   Ĝakarto         按 6",
-          "澳大利亚     Aŭstralio   Kanbero",
-          "埃及         Egiptio     Kairo           按 7",
-          "肯尼亚       Kenjo       Najrobo",
-          "尼日利亚     Niĝerio     Abuĝo           按 8",
-          "南非         Sud-Afriko  Pretorio"
-        ],
-        "pronunciation_mappings": {
-          "1": "Litovio. Vilno. Finnlando. Helsinko.",
-          "2": "Usono. Vaŝingtono. Kanado. Otavo.",
-          "3": "Meksiko. Meksikurbo. Brazilo. Braziljo.",
-          "4": "Ĉinio. Pekino. Japanio. Tokio.",
-          "5": "Sud-Koreio. Seulo. Hindio. Nov-Delhio.",
-          "6": "Indonezio. Ĝakarto. Aŭstralio. Kanbero.",
-          "7": "Egiptio. Kairo. Kenjo. Najrobo.",
-          "8": "Niĝerio. Abuĝo. Sud-Afriko. Pretorio."
-        }
       }
     ]
   }

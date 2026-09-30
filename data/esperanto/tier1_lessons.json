@@ -7,67 +7,96 @@
     "pages": [
       {
         "page": 1,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
-          "The pronunciation of Esperanto is regular.",
-          "That means each letter consistently makes",
-          "the same sounds. Here are the vowels:",
+          "The pronunciation of Esperanto is regular:",
+          "each letter always makes the same sound.",
+          "Here are the five vowels:",
           "",
-          "'A' as in father:             Press 1",
+          "'A' as in father:                     Press 1",
           "   amiko, tablo, kato",
           "",
-          "'E' as in bed:                Press 2",
+          "'E' as in bed:                        Press 2",
           "   espero, bela, tre",
           "",
-          "'I' as in machine:            Press 3",
+          "'I' as in machine:                    Press 3",
           "   iri, amiko, mi",
           "",
-          "'O' as in more:               Press 4",
+          "'O' as in more:                       Press 4",
           "   oro, nova, horo",
           "",
-          "'U' as in rule:               Press 5",
-          "   urbo, kultur, nu"
+          "'U' as in rule:                       Press 5",
+          "   urbo, kulturo, nu"
         ],
         "pronunciation": "Leciono unu",
-        "pronunciation_speed": 1.4,
         "pronunciation_mappings": {
-          "1": "amiko, tablo, kato",
-          "2": "espero, bela, tre",
-          "3": "iri, amiko, mi",
-          "4": "oro, nova, horo",
-          "5": "urbo, kultur, nu"
+          "1": "Amiko. Tablo. Kato.",
+          "2": "Espero. Bela. Tre.",
+          "3": "Iri. Amiko. Mi.",
+          "4": "Oro. Nova. Horo.",
+          "5": "Urbo. Kulturo. Nu."
         }
       },
       {
         "page": 2,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
           "Some consonants have accent marks.",
           "It looks imposing, but once you learn it,",
           "it simplifies things!",
           "",
-          "Ĉ = 'ch' as in church:        Press 1",
+          "Ĉ = 'ch' as in church:                Press 1",
           "   ĉambro, ĉokolado, ĉefo",
           "",
-          "Ĝ = 'j' as in jump:           Press 2",
+          "Ĝ = 'j' as in jump:                   Press 2",
           "   ĝardeno, oranĝo, ĝojo",
           "",
-          "Ĵ = 'zh' as in pleasure:      Press 3",
+          "Ĵ = 'zh' as in pleasure:              Press 3",
           "   ĵurnalo, ĵaŭdo, ĵazo",
           "",
-          "Ŝ = 'sh' as in shop:          Press 4",
+          "Ŝ = 'sh' as in shop:                  Press 4",
           "   ŝipo, fiŝo, ŝranko",
           "",
-          "Ŭ = 'w' as in dew:            Press 5",
+          "Ŭ = 'w' as in how (aŭ):               Press 5",
           "   aŭ → aŭto   eŭ → Eŭropo"
         ],
-        "pronunciation_speed": 1.4,
         "pronunciation_mappings": {
-          "1": "ĉambro, ĉokolado, ĉefo",
-          "2": "ĝardeno, oranĝo, ĝojo",
-          "3": "ĵurnalo, ĵaŭdo, ĵazo",
-          "4": "ŝipo, fiŝo, ŝranko",
-          "5": "aŭ, aŭto, eŭ, Eŭropo"
+          "1": "Ĉambro. Ĉokolado. Ĉefo.",
+          "2": "Ĝardeno. Oranĝo. Ĝojo.",
+          "3": "Ĵurnalo. Ĵaŭdo. Ĵazo.",
+          "4": "Ŝipo. Fiŝo. Ŝranko.",
+          "5": "Aŭ. Aŭto. Eŭropo."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "A FEW MORE LETTERS TO WATCH:",
+          "",
+          "C = 'ts' as in cats:                  Press 1",
+          "   cent, certa, facila",
+          "",
+          "J = 'y' as in yes:                    Press 2",
+          "   jes, jam, jaro",
+          "",
+          "G = always hard, as in go:            Press 3",
+          "   granda, legi, grava",
+          "",
+          "Ĥ = 'ch' as in loch (rare):           Press 4",
+          "   ĥoro, eĥo",
+          "",
+          "STRESS: always the second-to-last",
+          "syllable. Every vowel counts:         Press 5",
+          "   a-MI-ko, fa-CI-la, es-pe-RAN-to",
+          "   fa-mi-LI-o"
+        ],
+        "pronunciation_mappings": {
+          "1": "Cent. Certa. Facila.",
+          "2": "Jes. Jam. Jaro.",
+          "3": "Granda. Legi. Grava.",
+          "4": "Ĥoro. Eĥo.",
+          "5": "Amiko. Facila. Esperanto. Familio."
         }
       }
     ]
@@ -85,151 +114,153 @@
           "In Esperanto, present tense is simple:",
           "ALL verbs end in -as, whoever does the action.",
           "",
-          "EXAMPLES WITH 'ESTI' (to be):",
+          "EXAMPLES WITH 'ESTI' (to be):         Press 1",
           "",
           "mi estas      = I am",
-          "vi estas      = you are",
+          "vi estas      = you are (one or many)",
           "li estas      = he is",
           "ŝi estas      = she is",
           "ni estas      = we are",
           "ili estas     = they are",
           "",
-          "EXAMPLES WITH 'PAROLI' (to speak):",
+          "EXAMPLES WITH 'PAROLI' (to speak):    Press 2",
           "mi parolas    = I speak",
           "vi parolas    = you speak",
           "li parolas    = he speaks",
           "",
           "The verb NEVER changes! One form for all."
         ],
-        "pronunciation": "Leciono du"
-      }
-    ]
-  },
-  {
-    "lesson_id": "003",
-    "trigger_word": "alia",
-    "title": "LESSON 3: ADJECTIVES & PLURALS",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
-        "content": [
-          "Every adjective in Esperanto ends in -a.",
-          "This makes them easy to spot!",
-          "",
-          "COMMON ADJECTIVES:",
-          "",
-          "bona   = good        malbona   = bad",
-          "granda = big         malgranda = small",
-          "bela   = beautiful   nova      = new",
-          "",
-          "WORD ORDER - Both ways work:",
-          "",
-          "bona libro  = a good book",
-          "libro bona  = a good book (also OK!)",
-          "",
-          "TIP: If it describes a noun and ends in",
-          "-a, it's an adjective. Simple!"
-        ],
-        "pronunciation": "Leciono tri"
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "content": [
-          "PLURALS: Add -j to nouns AND adjectives.",
-          "",
-          "NOUNS (-o becomes -oj):",
-          "",
-          "amiko   → amikoj    = friend → friends",
-          "libro   → libroj    = book → books",
-          "hundo   → hundoj    = dog → dogs",
-          "",
-          "ADJECTIVES MUST MATCH:",
-          "bona amiko    → bonaj amikoj",
-          "granda libro  → grandaj libroj",
-          "",
-          "PRONUNCIATION:",
-          "The -j sounds like 'y' in 'boy'.",
-          "amikoj = ah-MEE-koy",
-          "",
-          "Both noun AND adjective get -j!",
-          "La grandaj hundoj kuras. = The big dogs run."
-        ]
+        "pronunciation": "Leciono du",
+        "pronunciation_mappings": {
+          "1": "Mi estas. Vi estas. Li estas. Ŝi estas. Ni estas. Ili estas.",
+          "2": "Mi parolas. Vi parolas. Li parolas."
+        }
       }
     ]
   },
   {
     "lesson_id": "004",
     "trigger_word": "bone",
-    "title": "LESSON 4: ADVERBS END IN -E",
+    "title": "LESSON 3: ADVERBS WITH -E",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
           "Adverbs describe HOW something happens.",
-          "In Esperanto, they always end in -e.",
+          "Adverbs made from other words end in -e,",
+          "just as adjectives end in -a.",
           "",
-          "FROM ADJECTIVE TO ADVERB:",
-          "bona → bone       = good → well",
-          "rapida → rapide   = quick → quickly",
-          "facila → facile   = easy → easily",
-          "lenta → lente     = slow → slowly",
+          "FROM ADJECTIVE TO ADVERB:             Press 1",
+          "bona → bone           = good → well",
+          "rapida → rapide       = quick → quickly",
+          "facila → facile       = easy → easily",
+          "malrapida → malrapide = slow → slowly",
           "",
-          "THE DIFFERENCE:",
-          "",
+          "THE DIFFERENCE:                       Press 2",
           "Li estas bona.",
           "(He is good. ← describes HIM)",
           "",
           "Li kantas bone.",
-          "(He sings well. ← describes HOW)",
-          "",
-          "Remember: -a for nouns, -e for actions!"
+          "(He sings well. ← describes HOW)"
         ],
-        "pronunciation": "Leciono kvar"
+        "pronunciation": "Leciono kvar",
+        "pronunciation_mappings": {
+          "1": "Bona. Bone. Rapida. Rapide. Facila. Facile. Malrapida. Malrapide.",
+          "2": "Li estas bona. Li kantas bone."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "SOME ADVERBS HAVE NO -E AT ALL:       Press 1",
+          "   nun = now          tre    = very",
+          "   jam = already      hodiaŭ = today",
+          "They are adverbs already. Nothing to add!",
+          "",
+          "ONE ROOT, THREE JOBS:                 Press 2",
+          "   rapido = speed     -o names a thing",
+          "   rapida = quick     -a describes it",
+          "   rapide = quickly   -e says how",
+          "",
+          "ALL TOGETHER:                         Press 3",
+          "   Mi fartas tre bone.",
+          "   = I'm doing very well.",
+          "   Nun mi parolas malrapide.",
+          "   = Now I'm speaking slowly."
+        ],
+        "pronunciation_mappings": {
+          "1": "Nun. Tre. Jam. Hodiaŭ.",
+          "2": "Rapido. Rapida. Rapide.",
+          "3": "Mi fartas tre bone. Nun mi parolas malrapide."
+        }
       }
     ]
   },
   {
-    "lesson_id": "005",
-    "trigger_word": "kio",
-    "title": "LESSON 5: QUESTION WORDS (KI-)",
+    "lesson_id": "030",
+    "trigger_word": "bonvolu",
+    "title": "LESSON 4: COMMANDS AND REQUESTS",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "All question words in Esperanto start",
-          "with KI-. This is part of a beautiful",
-          "system you'll learn more about later!",
+          "The ending -U turns a verb into a request",
+          "or a command. One form for everyone!",
           "",
-          "THE QUESTION WORDS:",
-          "kio   = what (thing)",
-          "kiu   = who / which one",
-          "kie   = where (place)",
-          "kiam  = when (time)",
-          "kial  = why (reason)",
-          "kiel  = how (manner)",
-          "kiom  = how much / how many",
+          "A verb's dictionary form ends in -I.",
+          "Swap the -I for -U:                   Press 1",
+          "   veni    → Venu!     = Come!",
+          "   atendi  → Atendu!   = Wait!",
+          "   helpi   → Helpu!    = Help!",
+          "   pardoni → Pardonu!  = Sorry! Excuse me!",
           "",
-          "EXAMPLES:",
-          "Kio estas tio?     = What is that?",
-          "Kiu vi estas?      = Who are you?",
-          "Kie vi loĝas?      = Where do you live?",
-          "Kiam vi venas?     = When are you coming?"
+          "PLEASE = BONVOLU + the -I form:       Press 2",
+          "   Bonvolu ripeti!     = Please repeat!",
+          "   Bonvolu atendi!     = Please wait!",
+          "   (bonvolu = 'be so kind as to')"
         ],
-        "pronunciation": "Leciono kvin"
+        "pronunciation": "Leciono tridek",
+        "pronunciation_mappings": {
+          "1": "Venu! Atendu! Helpu! Pardonu!",
+          "2": "Bonvolu ripeti! Bonvolu atendi!"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "LET'S ... = NI + -U:                  Press 1",
+          "   Ni iru!             = Let's go!",
+          "   Ni komencu!         = Let's start!",
+          "",
+          "DON'T ... = NE + -U:                  Press 2",
+          "   Ne forgesu!         = Don't forget!",
+          "   Ne timu!            = Don't be afraid!",
+          "",
+          "IT WORKS FOR HE AND SHE TOO:          Press 3",
+          "   Li venu!            = Let him come!",
+          "",
+          "SOFTER: add MI PETAS (I ask):         Press 4",
+          "   Atendu, mi petas!   = Wait, please!"
+        ],
+        "pronunciation_mappings": {
+          "1": "Ni iru! Ni komencu!",
+          "2": "Ne forgesu! Ne timu!",
+          "3": "Li venu!",
+          "4": "Atendu, mi petas!"
+        }
       }
     ]
   },
   {
     "lesson_id": "006",
     "trigger_word": "helpo",
-    "title": "LESSON 6: THE ARTICLE \"LA\"",
+    "title": "LESSON 5: THE ARTICLE \"LA\"",
     "header_color": "green",
     "pages": [
       {
@@ -238,24 +269,92 @@
         "content": [
           "Esperanto has ONE article: LA (the).",
           "",
-          "WITH LA = specific, known thing:",
-          "Mi vidas la hundon. = I see the dog.",
-          "La libro relevanta estas sur la tablo.",
-          "= The relevant book is on the table.",
+          "WITH LA = a specific, known thing:    Press 1",
+          "   La kafo estas bona.  = The coffee is good.",
+          "   La libro estas sur la tablo.",
+          "   = The book is on the table.",
           "",
-          "WITHOUT ARTICLE = general concept:",
-          "Mi amas muzikon. = I love music.",
-          "Akvo estas necesa. = Water is necessary.",
-          "Ŝi volas kafon. = She wants coffee.",
+          "WITHOUT LA = any, or in general:      Press 2",
+          "   Muziko estas bela.   = Music is beautiful.",
+          "   Akvo estas necesa.   = Water is necessary.",
           "",
-          "COMPARE:",
-          "Mi legas libron. = I'm reading a book.",
-          "Mi legas la libron. = I'm reading the book.",
+          "THERE IS NO A / AN:                   Press 3",
+          "   Tio estas libro.     = That's a book.",
+          "   Tio estas la libro.  = That's the book.",
           "",
-          "No a/an in Esperanto - context tells you!",
-          "LA never changes: la viro, la viroj, la domo."
+          "Names usually take no LA: Marko, Eŭropo.",
+          "LA itself never changes form."
         ],
-        "pronunciation": "Leciono ses"
+        "pronunciation": "Leciono ses",
+        "pronunciation_mappings": {
+          "1": "La kafo estas bona. La libro estas sur la tablo.",
+          "2": "Muziko estas bela. Akvo estas necesa.",
+          "3": "Tio estas libro. Tio estas la libro."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "005",
+    "trigger_word": "kio",
+    "title": "LESSON 6: QUESTION WORDS (KI-)",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "Most question words in Esperanto start",
+          "with KI-. They belong to a neat system",
+          "(see the next page).",
+          "",
+          "THE QUESTION WORDS:                   Press 1",
+          "kio   = what (thing)",
+          "kiu   = who / which one",
+          "kie   = where (place)",
+          "kiam  = when (time)",
+          "kial  = why (reason)",
+          "kiel  = how (manner)",
+          "kiom  = how much / how many",
+          "",
+          "EXAMPLES:                             Press 2",
+          "Kio estas tio?     = What is that?",
+          "Kiu vi estas?      = Who are you?",
+          "Kie vi loĝas?      = Where do you live?",
+          "Kiam vi venas?     = When are you coming?"
+        ],
+        "pronunciation": "Leciono kvin",
+        "pronunciation_mappings": {
+          "1": "Kio. Kiu. Kie. Kiam. Kial. Kiel. Kiom.",
+          "2": "Kio estas tio? Kiu vi estas? Kie vi loĝas? Kiam vi venas?"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "Swap KI- for another start and you get",
+          "the answers:                          Press 1",
+          "",
+          "            thing  one    place  time",
+          "KI-  what?  kio    kiu    kie    kiam",
+          "TI-  that   tio    tiu    tie    tiam",
+          "ĈI-  every  ĉio    ĉiu    ĉie    ĉiam",
+          "NENI- no    nenio  neniu  nenie  neniam",
+          "I-   some   io     iu     ie     iam",
+          "",
+          "EXAMPLES:                             Press 2",
+          "Kie? Tie!          = Where? There!",
+          "Ĉio estas bona.    = Everything is good.",
+          "Neniu scias.       = Nobody knows.",
+          "Iu venas.          = Someone is coming.",
+          "",
+          "Add ĈI for 'this': tio = that, ĉi tio = this."
+        ],
+        "pronunciation_mappings": {
+          "1": "Kio. Tio. Ĉio. Nenio. Io. Kiam. Tiam. Ĉiam. Neniam. Iam.",
+          "2": "Kie? Tie! Ĉio estas bona. Neniu scias. Iu venas."
+        }
       }
     ]
   },
@@ -273,91 +372,603 @@
           "question, just add ĈU at the beginning.",
           "The word order stays exactly the same!",
           "",
-          "STATEMENT → QUESTION:",
-          "Vi parolas Esperanton.",
-          "(You speak Esperanto.)",
-          "  ↓",
-          "Ĉu vi parolas Esperanton?",
-          "(Do you speak Esperanto?)",
+          "STATEMENT → QUESTION:                 Press 1",
+          "Vi parolas Esperante.",
+          "= You speak Esperanto.",
+          "Ĉu vi parolas Esperante?",
+          "= Do you speak Esperanto?",
           "",
-          "MORE EXAMPLES:",
+          "MORE EXAMPLES:                        Press 2",
           "Ĉu estas problemo?  = Is there a problem?",
           "Ĉu li venas?        = Is he coming?",
           "Ĉu vi komprenas?    = Do you understand?",
           "",
-          "ANSWERS: Jes = Yes  /  Ne = No"
+          "ANSWER WITH JES OR NE:                Press 3",
+          "Jes, mi komprenas.   = Yes, I understand.",
+          "Ne, mi ne komprenas. = No, I don't."
         ],
-        "pronunciation": "Leciono sep"
+        "pronunciation": "Leciono sep",
+        "pronunciation_mappings": {
+          "1": "Vi parolas Esperante. Ĉu vi parolas Esperante?",
+          "2": "Ĉu estas problemo? Ĉu li venas? Ĉu vi komprenas?",
+          "3": "Jes, mi komprenas. Ne, mi ne komprenas."
+        }
       }
     ]
   },
   {
-    "lesson_id": "008",
-    "trigger_word": "patrino",
-    "title": "LESSON 8: FEMININE SUFFIX -IN-",
+    "lesson_id": "013",
+    "trigger_word": "kompreni",
+    "title": "LESSON 8: ACCUSATIVE -N (OBJECT)",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "The ending -N marks the DIRECT OBJECT:",
+          "the thing or person the action lands on.",
+          "",
+          "La kato vidas la hundon.              Press 1",
+          "= The cat sees the dog.",
+          "La hundo vidas la katon.",
+          "= The dog sees the cat.",
+          "",
+          "The -n shows who is seen, so the word",
+          "order can even change:",
+          "La hundon vidas la kato.              Press 2",
+          "= The cat sees the dog. (Still!)",
+          "",
+          "NO -N AFTER ESTAS (is):               Press 3",
+          "Tio estas bona ideo.",
+          "= That's a good idea."
+        ],
+        "pronunciation": "Leciono dek tri",
+        "pronunciation_mappings": {
+          "1": "La kato vidas la hundon. La hundo vidas la katon.",
+          "2": "La hundon vidas la kato.",
+          "3": "Tio estas bona ideo."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "PRONOUNS TAKE -N TOO:                 Press 1",
+          "   mi → min    vi → vin    li → lin",
+          "   ŝi → ŝin    ĝi → ĝin    ni → nin",
+          "   ili → ilin",
+          "   Mi komprenas vin. = I understand you.",
+          "",
+          "SO DO KIO, TIO AND ĈIO:               Press 2",
+          "   kio → kion    tio → tion    ĉio → ĉion",
+          "   Kion vi faras?     = What are you doing?",
+          "   Mi komprenas ĉion. = I understand everything.",
+          "",
+          "ADJECTIVES TAKE IT TOO:               Press 3",
+          "   Mi havas bonan amikon.",
+          "   = I have a good friend.",
+          "",
+          "MORE THAN ONE: -J, then -N:           Press 4",
+          "   Mi havas bonajn amikojn.",
+          "   = I have good friends."
+        ],
+        "pronunciation_mappings": {
+          "1": "Min. Vin. Lin. Ŝin. Ĝin. Nin. Ilin. Mi komprenas vin.",
+          "2": "Kion vi faras? Mi komprenas ĉion.",
+          "3": "Mi havas bonan amikon.",
+          "4": "Mi havas bonajn amikojn."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "071",
+    "trigger_word": "kiom",
+    "title": "LESSON 9: AMOUNTS WITH DA",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "DA links an amount to what it measures.",
+          "After DA comes the bare noun: no LA,",
+          "and never an -N.",
+          "",
+          "HOW MUCH? HOW MANY? = KIOM DA:        Press 1",
+          "   Kiom da tempo vi havas?",
+          "   = How much time do you have?",
+          "   Kiom da amikoj vi havas?",
+          "   = How many friends do you have?",
+          "",
+          "AMOUNT + DA + THING:                  Press 2",
+          "   taso da kafo     = a cup of coffee",
+          "   glaso da akvo    = a glass of water",
+          "   multe da tempo   = a lot of time",
+          "   iom da pano      = some bread",
+          "   pli da teo       = more tea"
+        ],
+        "pronunciation_mappings": {
+          "1": "Kiom da tempo vi havas? Kiom da amikoj vi havas?",
+          "2": "Taso da kafo. Glaso da akvo. Multe da tempo. Iom da pano. Pli da teo."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "THE -N GOES ON THE AMOUNT,",
+          "NEVER ON THE WORD AFTER DA:           Press 1",
+          "   Mi trinkas tason da kafo.",
+          "   = I drink a cup of coffee.",
+          "   Mi havas multe da amikoj.",
+          "   = I have a lot of friends. (multe: no -n)",
+          "",
+          "NO LA AFTER DA:                       Press 2",
+          "   iom da kafo      = some coffee",
+          "   iom de la kafo   = some of the coffee",
+          "   (A specific thing? Use DE + LA.)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Mi trinkas tason da kafo. Mi havas multe da amikoj.",
+          "2": "Iom da kafo. Iom de la kafo."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "016",
+    "trigger_word": "mia",
+    "title": "LESSON 10: POSSESSIVE PRONOUNS",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "To make a word specifically female, add",
-          "-IN- after the root, before the ending.",
+          "Add -A to a personal pronoun to show",
+          "whose it is: mi (I) → mia (my).",
           "",
-          "FAMILY MEMBERS:",
-          "patro → patrino    = father → mother",
-          "frato → fratino    = brother → sister",
-          "filo → filino      = son → daughter",
+          "THE POSSESSIVES:                      Press 1",
+          "  mia = my          nia  = our",
+          "  via = your        ilia = their",
+          "  lia = his",
+          "  ŝia = her",
+          "  ĝia = its",
           "",
-          "STRUCTURE:",
-          "patr-in-o  = mother (noun -o)",
-          "patr-in-a  = motherly (adjective -a)",
+          "EXAMPLES:                             Press 2",
+          "Mia domo estas granda. = My house is big.",
+          "Kie estas via libro?   = Where is your book?",
+          "Ŝia amiko venas.       = Her friend is coming.",
           "",
-          "WORKS WITH ANYTHING:",
-          "knabo → knabino    = boy → girl",
-          "hundo → hundino    = dog → female dog",
-          "amiko → amikino    = friend → girlfriend"
+          "LIKE ADJECTIVES, + -J AND + -N:       Press 3",
+          "miaj libroj          = my books",
+          "Mi amas mian urbon.  = I love my city."
         ],
-        "pronunciation": "Leciono ok"
+        "pronunciation": "Leciono dek ses",
+        "pronunciation_mappings": {
+          "1": "Mia. Via. Lia. Ŝia. Ĝia. Nia. Ilia.",
+          "2": "Mia domo estas granda. Kie estas via libro? Ŝia amiko venas.",
+          "3": "Miaj libroj. Mi amas mian urbon."
+        }
       }
     ]
   },
   {
-    "lesson_id": "009",
-    "trigger_word": "malbona",
-    "title": "LESSON 9: OPPOSITE PREFIX MAL-",
+    "lesson_id": "017",
+    "trigger_word": "mem",
+    "title": "LESSON 11: REFLEXIVES AND MEM",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "Reflexive words point back to the subject.",
+          "For he, she, it and they, Esperanto",
+          "uses SI (SIN as the object) and SIA:",
+          "",
+          "sin  = himself, herself, itself, themselves",
+          "sia  = his, her, its, their OWN",
+          "",
+          "EXAMPLES:                             Press 1",
+          "Li lavas sin.      = He washes himself.",
+          "Ŝi vidas sin.      = She sees herself.",
+          "Li parolas pri si. = He talks about himself.",
+          "",
+          "SIA OR LIA?                           Press 2",
+          "Li amas sian hundon.",
+          "→ He loves his dog. (his own)",
+          "Li amas lian hundon.",
+          "→ He loves his dog. (someone else's)"
+        ],
+        "pronunciation": "Leciono dek sep",
+        "pronunciation_mappings": {
+          "1": "Li lavas sin. Ŝi vidas sin. Li parolas pri si.",
+          "2": "Li amas sian hundon. Li amas lian hundon."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "I, YOU AND WE USE THEIR OWN WORDS:    Press 1",
+          "Mi lavas min.      = I wash myself.",
+          "Vi lavas vin.      = You wash yourself.",
+          "Ni vidas nin.      = We see ourselves.",
+          "Mi amas mian hundon. = I love my (own) dog.",
+          "(Never 'Mi lavas sin'!)",
+          "",
+          "MEM = -SELF, JUST FOR EMPHASIS:       Press 2",
+          "Mi mem faras tion. = I'm doing it myself.",
+          "Vi mem diras tion! = You say so yourself!",
+          "la urbo mem        = the city itself",
+          "",
+          "MEM is not reflexive, and it never",
+          "changes: no -n, no -j."
+        ],
+        "pronunciation_mappings": {
+          "1": "Mi lavas min. Vi lavas vin. Ni vidas nin. Mi amas mian hundon.",
+          "2": "Mi mem faras tion. Vi mem diras tion! La urbo mem."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "003",
+    "trigger_word": "alia",
+    "title": "LESSON 12: ADJECTIVES & PLURALS",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "Every adjective in Esperanto ends in -a.",
+          "This makes them easy to spot!",
+          "",
+          "COMMON ADJECTIVES:                    Press 1",
+          "",
+          "bona   = good        malbona   = bad",
+          "granda = big         malgranda = small",
+          "bela   = beautiful   nova      = new",
+          "alia   = other       sama      = same",
+          "",
+          "WORD ORDER - both ways work:          Press 2",
+          "",
+          "bona libro  = a good book (usual)",
+          "libro bona  = a good book (also OK!)",
+          "",
+          "TIP: If it describes a noun and ends in",
+          "-a, it's an adjective. Simple!"
+        ],
+        "pronunciation": "Leciono tri",
+        "pronunciation_mappings": {
+          "1": "Bona. Malbona. Granda. Malgranda. Bela. Nova. Alia. Sama.",
+          "2": "Bona libro. Libro bona."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "PLURALS: add -J to nouns AND adjectives.",
+          "",
+          "NOUNS (-o becomes -oj):               Press 1",
+          "amiko   → amikoj    = friend → friends",
+          "libro   → libroj    = book → books",
+          "hundo   → hundoj    = dog → dogs",
+          "(-oj sounds like 'boy', -aj like 'eye')",
+          "",
+          "ADJECTIVES MUST MATCH:                Press 2",
+          "bona amiko    → bonaj amikoj",
+          "granda libro  → grandaj libroj",
+          "La grandaj hundoj kuras. = The big dogs run.",
+          "",
+          "AS OBJECTS: -J first, then -N:        Press 3",
+          "Mi legas novajn librojn.",
+          "= I'm reading new books."
+        ],
+        "pronunciation_mappings": {
+          "1": "Amiko. Amikoj. Libro. Libroj. Hundo. Hundoj.",
+          "2": "Bonaj amikoj. Grandaj libroj. La grandaj hundoj kuras.",
+          "3": "Mi legas novajn librojn."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "014",
+    "trigger_word": "en",
+    "title": "LESSON 13: -N FOR DIRECTION",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "The -N ending has a second job: it shows",
+          "DIRECTION, movement toward a place.",
+          "",
+          "WHERE IT IS vs WHERE IT GOES:         Press 1",
+          "Mi estas en la domo.  = I'm in the house.",
+          "Mi iras en la domon.  = I go into the house.",
+          "",
+          "La akvo estas en la glaso.            Press 2",
+          "= The water is in the glass.",
+          "Mi verŝas akvon en la glason.",
+          "= I pour water into the glass.",
+          "",
+          "After en, sur, sub, apud..., the -n",
+          "shows motion INTO the place:          Press 3",
+          "sur la tablo  = on the table (it's there)",
+          "sur la tablon = onto the table (it moves)"
+        ],
+        "pronunciation": "Leciono dek kvar",
+        "pronunciation_mappings": {
+          "1": "Mi estas en la domo. Mi iras en la domon.",
+          "2": "La akvo estas en la glaso. Mi verŝas akvon en la glason.",
+          "3": "Sur la tablo. Sur la tablon."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "NO PREPOSITION? -N ALONE DOES IT:     Press 1",
+          "Mi iras hejmen.     = I'm going home.",
+          "Ni iras Londonon.   = We're going to London.",
+          "(= Ni iras al Londono. AL takes no -n.)",
+          "",
+          "WHERE TO? = KIEN?                     Press 2",
+          "Kien vi iras?       = Where are you going?",
+          "Mi iras tien.       = I'm going there.",
+          "",
+          "AL, ĜIS, EL and DE never take -n:",
+          "they show direction already.          Press 3",
+          "Mi iras al la urbo. = I'm going to town.",
+          "",
+          "No -n after en/sur? You're already there!"
+        ],
+        "pronunciation_mappings": {
+          "1": "Mi iras hejmen. Ni iras Londonon. Ni iras al Londono.",
+          "2": "Kien vi iras? Mi iras tien.",
+          "3": "Mi iras al la urbo."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "018",
+    "trigger_word": "kun",
+    "title": "LESSON 14: PREPOSITIONS",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "Prepositions show how words relate.",
+          "They NEVER change form in Esperanto!",
+          "",
+          "LOCATION & DIRECTION:",
+          "en   = in             sur    = on",
+          "sub  = under          super  = above",
+          "apud = next to        inter  = between",
+          "ĉe   = at             ĉirkaŭ = around",
+          "",
+          "EXAMPLES:                             Press 1",
+          "La kato estas sub la tablo.",
+          "= The cat is under the table.",
+          "Mi sidas apud vi.",
+          "= I'm sitting next to you.",
+          "",
+          "After en/sur/sub/apud, -n shows motion",
+          "INTO the place. al, ĝis, el, de: never -n."
+        ],
+        "pronunciation": "Leciono dek ok",
+        "pronunciation_mappings": {
+          "1": "La kato estas sub la tablo. Mi sidas apud vi."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "MORE ESSENTIAL PREPOSITIONS:",
+          "",
+          "al   = to, toward      de   = from, of",
+          "kun  = with            sen  = without",
+          "por  = for (purpose)   pri  = about",
+          "per  = by means of     tra  = through",
+          "ĝis  = until, up to    krom = except",
+          "",
+          "EXAMPLES:                             Press 1",
+          "Mi iras al la parko.   = I go to the park.",
+          "La libro de mia amiko. = My friend's book.",
+          "Ni parolas pri vi.     = We talk about you.",
+          "Ŝi venas kun sia frato.",
+          "= She comes with her brother."
+        ],
+        "pronunciation_mappings": {
+          "1": "Mi iras al la parko. La libro de mia amiko. Ni parolas pri vi. Ŝi venas kun sia frato."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "KUN OR PER? Both can be 'with':       Press 1",
+          "Mi venas kun amiko.",
+          "= I'm coming with a friend. (together)",
+          "Mi skribas per komputilo.",
+          "= I write with a computer. (using it)",
+          "",
+          "JE is a wildcard, for when no other",
+          "preposition fits:                     Press 2",
+          "Je la tria horo.  = At three o'clock.",
+          "",
+          "EL = OUT OF:                          Press 3",
+          "Ŝi venas el la domo.",
+          "= She comes out of the house."
+        ],
+        "pronunciation_mappings": {
+          "1": "Mi venas kun amiko. Mi skribas per komputilo.",
+          "2": "Je la tria horo.",
+          "3": "Ŝi venas el la domo."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "015",
+    "trigger_word": "voli",
+    "title": "LESSON 15: MODAL VERBS",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "MAL- is one of Esperanto's most powerful",
-          "tools. Put it in front of any word to",
-          "create the opposite meaning instantly!",
+          "Modal verbs express ability, desire, or",
+          "obligation. The main verb stays in the",
+          "infinitive form (ending in -i).",
           "",
-          "ADJECTIVES:",
-          "bona → malbona      = good → bad",
-          "granda → malgranda  = big → small",
-          "nova → malnova      = new → old",
-          "alta → malalta      = high → low",
-          "juna → maljuna      = young → old",
+          "THE THREE KEY MODALS:",
+          "povi  = can, to be able to",
+          "voli  = to want to",
+          "devi  = must, to have to",
           "",
-          "VERBS TOO:",
-          "fermi → malfermi    = close → open",
-          "ami → malami        = love → hate",
+          "EXAMPLES:                             Press 1",
+          "Mi povas paroli.     = I can speak.",
+          "Mi volas manĝi.      = I want to eat.",
+          "Ni devas lerni.      = We must learn.",
           "",
-          "This cuts vocabulary learning in HALF!",
-          "Learn 'bona', get 'malbona' free!"
+          "STRUCTURE: modal + infinitive         Press 2",
+          "Li povas veni morgaŭ. = He can come tomorrow.",
+          "",
+          "The infinitive never changes!"
         ],
-        "pronunciation": "Leciono naŭ"
+        "pronunciation": "Leciono dek kvin",
+        "pronunciation_mappings": {
+          "1": "Mi povas paroli. Mi volas manĝi. Ni devas lerni.",
+          "2": "Li povas veni morgaŭ."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "011",
+    "trigger_word": "estis",
+    "title": "LESSON 16: PAST TENSE",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "To talk about the past in Esperanto, change",
+          "the verb ending from -as to -is. That's it!",
+          "",
+          "PRESENT      →  PAST:                 Press 1",
+          "mi estas     →  mi estis   (I am → I was)",
+          "vi parolas   →  vi parolis (you speak → spoke)",
+          "li manĝas    →  li manĝis  (he eats → he ate)",
+          "",
+          "The ending -is works for ALL subjects:",
+          "mi estis     =  I was",
+          "vi estis     =  you were",
+          "li estis     =  he was",
+          "ni estis     =  we were",
+          "ili estis    =  they were",
+          "",
+          "One form for everyone. No irregular verbs!",
+          "Just replace -as with -is and you're done."
+        ],
+        "pronunciation": "Leciono dek unu",
+        "pronunciation_mappings": {
+          "1": "Mi estas. Mi estis. Vi parolas. Vi parolis. Li manĝas. Li manĝis."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "012",
+    "trigger_word": "estos",
+    "title": "LESSON 17: FUTURE TENSE",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "For future tense, change the verb ending",
+          "to -os. Simple as that!",
+          "",
+          "PRESENT      →  FUTURE:               Press 1",
+          "mi estas     →  mi estos   (I am → will be)",
+          "vi parolas   →  vi parolos (speak → will speak)",
+          "li manĝas    →  li manĝos  (he eats → will eat)",
+          "",
+          "ALL THREE TENSES TOGETHER:            Press 2",
+          "mi parolis   =  I spoke     (past -is)",
+          "mi parolas   =  I speak     (present -as)",
+          "mi parolos   =  I will speak (future -os)",
+          "",
+          "Three tenses, three endings. Always the",
+          "same for all subjects. Esperanto makes",
+          "verb conjugation beautifully simple!"
+        ],
+        "pronunciation": "Leciono dek du",
+        "pronunciation_mappings": {
+          "1": "Mi estas. Mi estos. Vi parolas. Vi parolos. Li manĝas. Li manĝos.",
+          "2": "Mi parolis. Mi parolas. Mi parolos."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "029",
+    "trigger_word": "estus",
+    "title": "LESSON 18: CONDITIONAL MOOD",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "The conditional mood (-us) expresses \"would\"",
+          "or hypothetical situations. It's used for",
+          "polite requests and imaginary scenarios.",
+          "",
+          "FORMING THE CONDITIONAL:              Press 1",
+          "Replace the tense ending with -us:",
+          "estas → estus     (is → would be)",
+          "havas → havus     (has → would have)",
+          "iras  → irus      (goes → would go)",
+          "",
+          "POLITE REQUESTS:                      Press 2",
+          "Mi volus kafon.    = I would like coffee.",
+          "Ĉu vi povus helpi? = Could you help?",
+          "",
+          "HYPOTHETICAL:                         Press 3",
+          "Se mi estus riĉa, mi vojaĝus.",
+          "(If I were rich, I would travel.)"
+        ],
+        "pronunciation": "Leciono dudek naŭ",
+        "pronunciation_mappings": {
+          "1": "Estas. Estus. Havas. Havus. Iras. Irus.",
+          "2": "Mi volus kafon. Ĉu vi povus helpi?",
+          "3": "Se mi estus riĉa, mi vojaĝus."
+        }
       }
     ]
   },
   {
     "lesson_id": "010",
     "trigger_word": "unu",
-    "title": "LESSON 10: NUMBER SYSTEM",
+    "title": "LESSON 19: NUMBER SYSTEM",
     "header_color": "green",
     "pages": [
       {
@@ -367,7 +978,7 @@
           "Esperanto numbers are completely regular.",
           "Learn the basics, then combine them!",
           "",
-          "BASIC NUMBERS:",
+          "BASIC NUMBERS:                        Press 1",
           "",
           "0 = nul    5 = kvin    10 = dek",
           "1 = unu    6 = ses     11 = dek unu",
@@ -375,20 +986,24 @@
           "3 = tri    8 = ok      13 = dek tri",
           "4 = kvar   9 = naŭ     14 = dek kvar",
           "",
-          "BUILD LARGER NUMBERS:",
+          "BUILD LARGER NUMBERS:                 Press 2",
           "20 = dudek (du + dek = two tens)",
           "30 = tridek, 40 = kvardek, etc.",
           "100 = cent, 1000 = mil",
           "",
           "COMBINE: 23 = dudek tri. No exceptions!"
         ],
-        "pronunciation": "Leciono dek"
+        "pronunciation": "Leciono dek",
+        "pronunciation_mappings": {
+          "1": "Nul. Unu. Du. Tri. Kvar. Kvin. Ses. Sep. Ok. Naŭ. Dek.",
+          "2": "Dudek. Tridek. Kvardek. Cent. Mil. Dudek tri."
+        }
       },
       {
         "page": 2,
         "total_pages": 2,
         "content": [
-          "ORDINAL NUMBERS (first, second, third...)",
+          "ORDINALS (first, second, third...):   Press 1",
           "Add -a to any number. They're adjectives!",
           "",
           "unua    = first       kvara   = fourth",
@@ -399,14 +1014,54 @@
           "dudek-unua = twenty-first",
           "centa = hundredth",
           "",
-          "IN SENTENCES:",
-          "Ĉi tiu estas mia unua leciono.",
+          "IN SENTENCES:                         Press 2",
+          "Ĉi tio estas mia unua leciono.",
           "(This is my first lesson.)",
-          "Li loĝas sur la tria etaĝo.",
-          "(He lives on the third floor.)",
+          "Hodiaŭ estas mia tria tago ĉi tie.",
+          "(Today is my third day here.)",
           "",
           "Like adjectives: unuaj paŝoj = first steps"
-        ]
+        ],
+        "pronunciation_mappings": {
+          "1": "Unua. Dua. Tria. Kvara. Kvina. Deka.",
+          "2": "Ĉi tio estas mia unua leciono. Hodiaŭ estas mia tria tago ĉi tie."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "009",
+    "trigger_word": "malbona",
+    "title": "LESSON 20: OPPOSITE PREFIX MAL-",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "MAL- is one of Esperanto's most powerful",
+          "tools. Put it in front of a word to get",
+          "its exact opposite!",
+          "",
+          "ADJECTIVES:                           Press 1",
+          "bona → malbona      = good → bad",
+          "granda → malgranda  = big → small",
+          "nova → malnova      = new → old (things)",
+          "juna → maljuna      = young → old (people)",
+          "alta → malalta      = high → low",
+          "",
+          "VERBS TOO:                            Press 2",
+          "fermi → malfermi    = close → open",
+          "ami → malami        = love → hate",
+          "",
+          "This cuts vocabulary learning in HALF!",
+          "Learn 'bona', get 'malbona' free!"
+        ],
+        "pronunciation": "Leciono naŭ",
+        "pronunciation_mappings": {
+          "1": "Bona. Malbona. Granda. Malgranda. Nova. Malnova. Juna. Maljuna. Alta. Malalta.",
+          "2": "Fermi. Malfermi. Ami. Malami."
+        }
       }
     ]
   }

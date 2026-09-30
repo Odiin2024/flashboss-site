@@ -2,73 +2,44 @@
   {
     "lesson_id": "032",
     "trigger_word": "nepo",
-    "title": "LESSON 32: THE '-ID-' SUFFIX",
+    "title": "LESSON 38: THE '-ID-' SUFFIX",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "The suffix -ID- means \"offspring\" or \"young",
-          "of.\" It creates words for children of",
-          "animals, people, or descendants.",
+          "The suffix -ID- names the YOUNG, the",
+          "offspring or descendant of a creature.",
           "",
-          "ANIMAL OFFSPRING:",
-          "hundo   → hundido     = dog → puppy",
-          "kato    → katido      = cat → kitten",
-          "bovo    → bovido      = cow → calf",
-          "ĉevalo  → ĉevalido    = horse → foal",
-          "birdo   → birdido     = bird → chick",
+          "ANIMAL YOUNG:                         Press 1",
+          "hundo   → hundido    = dog → puppy",
+          "kato    → katido     = cat → kitten",
+          "bovo    → bovido     = ox, cattle → calf",
+          "ĉevalo  → ĉevalido   = horse → foal",
+          "birdo   → birdido    = bird → chick",
           "",
-          "HUMAN DESCENDANTS:",
-          "reĝo    → reĝido      = king → prince",
+          "PEOPLE: A DESCENDANT:                 Press 2",
+          "reĝo    → reĝido     = king → king's child",
+          "(A grandchild has its own root: nepo.)",
           "",
-          "IN USE:",
+          "IN USE:                               Press 3",
           "La hundido ludas kun sia patrino.",
-          "(The puppy plays with its mother.)",
-          "-ID- turns any creature into its baby!"
+          "= The puppy plays with its mother."
         ],
+        "pronunciation_mappings": {
+          "1": "Hundo. Hundido. Kato. Katido. Bovo. Bovido. Ĉevalo. Ĉevalido. Birdo. Birdido.",
+          "2": "Reĝo. Reĝido. Nepo.",
+          "3": "La hundido ludas kun sia patrino."
+        },
         "pronunciation": "Leciono tridek du"
-      }
-    ]
-  },
-  {
-    "lesson_id": "033",
-    "trigger_word": "nombro",
-    "title": "LESSON 33: THE '-OBL-' SUFFIX",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "The suffix -OBL- creates multiples from",
-          "numbers. It means \"times\" or \"fold.\"",
-          "",
-          "MULTIPLES:",
-          "du      → duobla    = two → double/twofold",
-          "tri     → triobla   = three → triple/threefold",
-          "kvar    → kvarobla  = four → quadruple",
-          "kvin    → kvinobla  = five → fivefold",
-          "dek     → dekobla   = ten → tenfold",
-          "",
-          "AS VERBS:",
-          "duobligi = to double",
-          "triobligi = to triple",
-          "",
-          "IN USE:",
-          "La prezo estas duobla nun.",
-          "(The price is double now.)",
-          "-OBL- multiplies by the number!"
-        ],
-        "pronunciation": "Leciono tridek tri"
       }
     ]
   },
   {
     "lesson_id": "034",
     "trigger_word": "sugesti",
-    "title": "LESSON 34: THE 'BO-' PREFIX",
+    "title": "LESSON 39: THE 'BO-' PREFIX",
     "header_color": "green",
     "pages": [
       {
@@ -101,32 +72,37 @@
   {
     "lesson_id": "035",
     "trigger_word": "ekzemplo",
-    "title": "LESSON 35: THE '-ER-' SUFFIX",
+    "title": "LESSON 40: THE '-ER-' SUFFIX",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "The suffix -ER- means \"unit\" or \"particle.\"",
-          "It creates words for single elements of",
-          "something that comes in quantities.",
+          "The suffix -ER- names ONE PIECE of",
+          "something that comes as a mass.",
           "",
-          "PARTICLES/DROPS:",
-          "akvo    → akvero    = water → a drop of water",
-          "sablo   → sablero   = sand → a grain of sand",
-          "neĝo    → neĝero    = snow → a snowflake",
-          "fajro   → fajrero   = fire → a spark",
+          "THE SMALLEST PIECE:                   Press 1",
+          "neĝo    → neĝero     = snow → snowflake",
+          "sablo   → sablero    = sand → grain of sand",
+          "polvo   → polvero    = dust → speck of dust",
+          "fajro   → fajrero    = fire → spark",
+          "(A drop of water is a guto.)",
           "",
-          "SINGLE UNITS:",
-          "mono    → monero    = money → a coin",
-          "pano    → panero    = bread → a crumb",
+          "ONE UNIT OF MANY:                     Press 2",
+          "mono    → monero     = money → coin",
+          "pano    → panero     = bread → crumb",
+          "ero     = a piece, an item",
           "",
-          "IN USE:",
-          "Akvero falis sur mian nazon.",
-          "(A drop of water fell on my nose.)",
-          "-ER- picks out one tiny piece from a mass!"
+          "IN USE:                               Press 3",
+          "Neĝero falis sur mian nazon.",
+          "= A snowflake fell on my nose."
         ],
+        "pronunciation_mappings": {
+          "1": "Neĝo. Neĝero. Sablo. Sablero. Polvo. Polvero. Fajro. Fajrero. Guto.",
+          "2": "Mono. Monero. Pano. Panero. Ero.",
+          "3": "Neĝero falis sur mian nazon."
+        },
         "pronunciation": "Leciono tridek kvin"
       }
     ]
@@ -134,65 +110,97 @@
   {
     "lesson_id": "036",
     "trigger_word": "distro",
-    "title": "LESSON 36: THE 'DIS-' PREFIX",
+    "title": "LESSON 41: THE 'DIS-' PREFIX",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "The prefix DIS- means \"apart,\" \"in different",
-          "directions,\" or \"scattered.\" It indicates",
-          "separation or dispersal.",
+          "The prefix DIS- means APART: in all",
+          "directions, or into pieces.",
           "",
-          "SCATTERING/SEPARATION:",
-          "doni    → disdoni   = give → distribute",
-          "ĵeti    → disĵeti   = throw → scatter",
-          "iri     → disiri    = go → part ways",
-          "fali    → disfali   = fall → fall apart",
+          "SPREADING OUT:                        Press 1",
+          "doni    → disdoni    = give → hand out",
+          "sendi   → dissendi   = send → send out",
+          "vastigi → disvastigi = widen → spread",
+          "ĵeti    → disĵeti    = throw → scatter",
           "",
-          "BREAKING APART:",
-          "rompi   → disrompi  = break → shatter",
-          "ŝiri    → disŝiri   = tear → to shreds",
+          "COMING APART:                         Press 2",
+          "iri     → disiri     = go → go separate ways",
+          "fali    → disfali    = fall → fall apart",
           "",
-          "IN USE:",
-          "Ili diskutis la problemon.",
-          "(They discussed the problem.)",
-          "DIS- spreads things in all directions!"
+          "IN USE:                               Press 3",
+          "Ni disdonis flugfoliojn en la urbo.",
+          "= We handed out flyers in town.",
+          "Ni disvastigu la novaĵon!",
+          "= Let's spread the news!"
         ],
+        "pronunciation_mappings": {
+          "1": "Doni. Disdoni. Sendi. Dissendi. Vastigi. Disvastigi. Ĵeti. Disĵeti.",
+          "2": "Iri. Disiri. Fali. Disfali.",
+          "3": "Ni disdonis flugfoliojn en la urbo. Ni disvastigu la novaĵon!"
+        },
         "pronunciation": "Leciono tridek ses"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "LOOK-ALIKES: not every word that starts",
+          "with dis- has the prefix DIS-.",
+          "",
+          "THESE ARE ROOTS OF THEIR OWN:         Press 1",
+          "diskuti  = to discuss",
+          "distri   = to distract, to entertain",
+          "distro   = distraction, entertainment",
+          "disponi  = to have available",
+          "distanco = distance",
+          "",
+          "THE TEST: take DIS- away. If what is",
+          "left is a word with the SAME idea, done",
+          "apart (dis-doni: doni = give), it is",
+          "the prefix. If not, it is one root."
+        ],
+        "pronunciation_mappings": {
+          "1": "Diskuti. Distri. Distro. Disponi. Distanco."
+        }
       }
     ]
   },
   {
     "lesson_id": "037",
     "trigger_word": "duono",
-    "title": "LESSON 37: THE '-ON-' SUFFIX",
+    "title": "LESSON 42: THE '-ON-' SUFFIX",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "The suffix -ON- creates fractions from",
-          "numbers. It divides by the number.",
+          "The suffix -ON- makes FRACTIONS: it",
+          "divides by the number.",
           "",
-          "FRACTIONS:",
-          "du      → duono       = two → half (1/2)",
-          "tri     → triono      = three → third (1/3)",
-          "kvar    → kvarono     = four → quarter (1/4)",
-          "kvin    → kvinono     = five → fifth (1/5)",
-          "dek     → dekono      = ten → tenth (1/10)",
+          "NUMBER → FRACTION:                    Press 1",
+          "du      → duono      = half (1/2)",
+          "tri     → triono     = a third (1/3)",
+          "kvar    → kvarono    = a quarter (1/4)",
+          "dek     → dekono     = a tenth (1/10)",
+          "tri kvaronoj         = three quarters",
           "",
-          "IN USE:",
-          "Mi manĝis duonon de la kuko.",
-          "(I ate half of the cake.)",
+          "OTHER ENDINGS WORK TOO:               Press 2",
+          "duona horo  = half an hour",
+          "duone preta = half ready",
           "",
-          "COMPARE -OBL- AND -ON-:",
-          "duobla = double (×2)",
-          "duono  = half (÷2)",
-          "Opposites that work together!"
+          "IN USE:                               Press 3",
+          "Pli ol la duono de la membroj konsentas.",
+          "= More than half of the members agree."
         ],
+        "pronunciation_mappings": {
+          "1": "Duono. Triono. Kvarono. Dekono. Tri kvaronoj.",
+          "2": "Duona horo. Duone preta.",
+          "3": "Pli ol la duono de la membroj konsentas."
+        },
         "pronunciation": "Leciono tridek sep"
       }
     ]
@@ -200,65 +208,193 @@
   {
     "lesson_id": "038",
     "trigger_word": "ke",
-    "title": "LESSON 38: 'KE' CLAUSES",
+    "title": "LESSON 43: KE, ĈU OR KIEL?",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 3,
         "content": [
-          "KE translates to 'that' in English, at the",
-          "start of a new clause. Like in German, the new",
-          "clause in Esperanto is preceded by a comma.",
+          "After verbs of saying, knowing and",
+          "asking, the clause word shows WHAT the",
+          "clause reports:",
           "",
-          "BASIC PATTERN:",
-          "Mi kredas, ke li venos.",
-          "(I believe that he will come.)",
+          "A FACT OR A CLAIM → KE:               Press 1",
+          "Mi scias, ke li venos.",
+          "= I know (that) he'll come.",
           "",
-          "Mi scias, ke vi pravas.",
-          "(I know that you are right.)",
+          "A YES/NO QUESTION → ĈU:               Press 2",
+          "Mi ne scias, ĉu li venos.",
+          "= I don't know if (whether) he'll come.",
+          "English 'if' here is ĈU, never SE.",
           "",
-          "COMMON VERBS WITH KE:",
-          "pensi ke   = to think that",
-          "diri ke    = to say that",
-          "esperi ke  = to hope that",
-          "",
-          "The comma before 'ke' is standard in",
-          "Esperanto writing."
+          "HOW, WHERE, WHY... → A KI- WORD:      Press 3",
+          "Diru al mi, kiel vi faris tion.",
+          "= Tell me how you did that.",
+          "Mi demandis, kie ŝi loĝas.",
+          "= I asked where she lived."
         ],
+        "pronunciation_mappings": {
+          "1": "Mi scias, ke li venos.",
+          "2": "Mi ne scias, ĉu li venos.",
+          "3": "Diru al mi, kiel vi faris tion. Mi demandis, kie ŝi loĝas."
+        },
         "pronunciation": "Leciono tridek ok"
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "IT IS + -E: when the subject is a whole",
+          "ke-clause or a verb in -I, use -E:",
+          "",
+          "ESTAS + -E, KE / + -I:                Press 1",
+          "Estas vere, ke ni bezonas tempon.",
+          "= It's true that we need time.",
+          "Estas grave, ke vi estu tie.",
+          "= It's important that you be there.",
+          "Estas facile lerni Esperanton.",
+          "= It's easy to learn Esperanto.",
+          "",
+          "A REAL NOUN SUBJECT KEEPS -A:         Press 2",
+          "Tio estas vera.         = That's true.",
+          "La lingvo estas facila. = The language is easy.",
+          "",
+          "Never 'Estas vera, ke...': vere!"
+        ],
+        "pronunciation_mappings": {
+          "1": "Estas vere, ke ni bezonas tempon. Estas grave, ke vi estu tie. Estas facile lerni Esperanton.",
+          "2": "Tio estas vera. La lingvo estas facila."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "THE COMMA goes before KE. With POR KE",
+          "(so that) and KONDIĈE KE (provided), it",
+          "goes before the pair, never inside it.",
+          "",
+          "Mi opinias, ke ni devus atendi.       Press 1",
+          "= I think we should wait.",
+          "Mi venos, por ke vi ne estu sola.     Press 2",
+          "= I'll come so that you're not alone.",
+          "Mi venos, kondiĉe ke mi havos tempon.",
+          "= I'll come, provided I have time.",
+          "",
+          "A WISH OR A PURPOSE TAKES -U:         Press 3",
+          "Mi petas, ke vi respondu baldaŭ.",
+          "= Please answer soon. (I ask that...)",
+          "A plain fact keeps -as, -is, -os:",
+          "Mi scias, ke vi respondos baldaŭ.",
+          "= I know you'll answer soon."
+        ],
+        "pronunciation_mappings": {
+          "1": "Mi opinias, ke ni devus atendi.",
+          "2": "Mi venos, por ke vi ne estu sola. Mi venos, kondiĉe ke mi havos tempon.",
+          "3": "Mi petas, ke vi respondu baldaŭ. Mi scias, ke vi respondos baldaŭ."
+        }
       }
     ]
   },
   {
     "lesson_id": "039",
-    "trigger_word": "rideto",
-    "title": "LESSON 39: THE '-ET-' SUFFIX",
+    "trigger_word": "estro",
+    "title": "LESSON 44: THE '-ESTR-' SUFFIX",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "The suffix -ESTR- names the person IN",
+          "CHARGE: the head of something.",
+          "",
+          "THE HEAD OF...:                       Press 1",
+          "urbo    → urbestro    = town → mayor",
+          "lernejo → lernejestro = school → principal",
+          "ŝipo    → ŝipestro    = ship → captain",
+          "ŝtato   → ŝtatestro   = state → head of state",
+          "",
+          "ALONE, AND WITH -AR- AND -AN-:        Press 2",
+          "estro     = leader, head",
+          "estri     = to lead, to be in charge",
+          "estraro   = board (of an association)",
+          "estrarano = board member",
+          "",
+          "IN USE:                               Press 3",
+          "La estraro elektis novan prezidanton.",
+          "= The board elected a new president."
+        ],
+        "pronunciation_mappings": {
+          "1": "Urbo. Urbestro. Lernejo. Lernejestro. Ŝipo. Ŝipestro. Ŝtato. Ŝtatestro.",
+          "2": "Estro. Estri. Estraro. Estrarano.",
+          "3": "La estraro elektis novan prezidanton."
+        },
+        "pronunciation": "Leciono tridek naŭ"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "ĈEF- IN FRONT MEANS MAIN:             Press 1",
+          "urbo    → ĉefurbo    = town → capital",
+          "afiŝo   → ĉefafiŝo   = post → main post",
+          "punkto  → ĉefpunkto  = point → main point",
+          "ĉefa = main         ĉefe = mainly",
+          "",
+          "ĈEFO OR -ESTRO?                       Press 2",
+          "ĉefo   = the boss (at work)",
+          "-estro = the head OF a place or group",
+          "Mia ĉefo estas afabla.",
+          "= My boss is nice.",
+          "",
+          "IN USE:                               Press 3",
+          "Berlino estas la ĉefurbo de Germanio.",
+          "= Berlin is the capital of Germany."
+        ],
+        "pronunciation_mappings": {
+          "1": "Urbo. Ĉefurbo. Afiŝo. Ĉefafiŝo. Punkto. Ĉefpunkto. Ĉefa. Ĉefe.",
+          "2": "Ĉefo. Urbestro. Mia ĉefo estas afabla.",
+          "3": "Berlino estas la ĉefurbo de Germanio."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "033",
+    "trigger_word": "duobla senco",
+    "title": "LESSON 45: THE '-OBL-' SUFFIX",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "The suffix -ET- is the diminutive suffix in",
-          "Esperanto. It makes things smaller, softer,",
-          "or gentler. Add -ET- to any root to create",
-          "a miniature or mild version of the original.",
+          "The suffix -OBL- MULTIPLIES: it makes a",
+          "number twofold, threefold, tenfold.",
           "",
-          "MAKING THINGS SMALL:",
-          "domo    → dometo     = house → cottage",
-          "ridi    → rideti     = laugh → smile",
-          "birdo   → birdeto    = bird → little bird",
+          "NUMBER → -FOLD:                       Press 1",
+          "du      → duobla     = double, twofold",
+          "tri     → triobla    = triple, threefold",
+          "dek     → dekobla    = tenfold",
           "",
-          "SOFTENING MEANINGS:",
-          "varma   → varmeta    = warm → lukewarm",
-          "dormi   → dormeti    = sleep → nap",
+          "OTHER ENDINGS WORK TOO:               Press 2",
+          "duoble pli granda = twice as big",
+          "duobligi          = to double (something)",
+          "Ĝi havas duoblan sencon.",
+          "= It has a double meaning.",
           "",
-          "rideto = a smile (small laugh)",
-          "",
-          "-ET- adds a gentle, diminutive quality!"
+          "COMPARE -ON- (FRACTIONS):             Press 3",
+          "duobla = double (×2)",
+          "duono  = half (÷2)"
         ],
-        "pronunciation": "Leciono tridek naŭ"
+        "pronunciation_mappings": {
+          "1": "Duobla. Triobla. Dekobla.",
+          "2": "Duoble pli granda. Duobligi. Ĝi havas duoblan sencon.",
+          "3": "Duobla. Duono."
+        },
+        "pronunciation": "Leciono tridek tri"
       }
     ]
   }

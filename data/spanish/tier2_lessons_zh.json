@@ -1,9 +1,9 @@
 [
   {
-    "lesson_id": "009",
+    "lesson_id": "010",
     "trigger_word": "esperanza",
-    "trigger_card_number": 225,
-    "title": "第9课：反身动词",
+    "trigger_card_number": 237,
+    "title": "第10课：反身动词",
     "header_color": "green",
     "pages": [
       {
@@ -23,29 +23,30 @@
           "",
           "常用反身动词：                          按 2",
           "levantarse   = 起床",
-          "sentirse     = 感觉",
           "acostarse    = 上床睡觉",
-          "ducharse     = 洗澡",
-          "vestirse     = 穿衣服"
+          "despertarse  = 醒来",
+          "sentarse     = 坐下",
+          "preocuparse  = 担心",
+          "命令式把它接在后面：¡Siéntate! ¡Lávate!"
         ],
-        "pronunciation": "Lección nueve",
+        "pronunciation": "Lección diez",
         "pronunciation_mappings": {
           "1": "me llamo, te llamas, se llama, nos llamamos, se llaman",
-          "2": "levantarse, sentirse, acostarse, ducharse, vestirse"
+          "2": "levantarse, acostarse, despertarse, sentarse, preocuparse, ¡siéntate!, ¡lávate!"
         }
       }
     ]
   },
   {
-    "lesson_id": "010",
+    "lesson_id": "011",
     "trigger_word": "cerrado",
-    "trigger_card_number": 275,
-    "title": "第10课：否定",
+    "trigger_card_number": 290,
+    "title": "第11课：否定",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
           "动词前加 NO 表示否定：                  按 1",
           "",
@@ -62,24 +63,139 @@
           "No tengo nada.（我什么都没有。）",
           "No viene nadie.（没人来。）",
           "",
-          "也可以把否定词提前：",
-          "Nada tengo. Nadie viene. Nunca voy.",
-          "但双重否定更常用。"
+          "否定词在动词前时，就不再加 no：",
+          "Nadie viene. Nunca voy.",
+          "两种语序都是地道的西班牙语。"
         ],
-        "pronunciation": "Lección diez",
+        "pronunciation": "Lección once",
         "pronunciation_mappings": {
           "1": "no es difícil, no hablo francés",
           "2": "nada, nadie, nunca, ninguno, tampoco",
-          "3": "no voy nunca, no tengo nada, no viene nadie"
+          "3": "no voy nunca, no tengo nada, no viene nadie, nadie viene, nunca voy"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "否定命令式（tú）：no + 新词尾",
+          "",
+          "-AR 动词改用 -ES 词尾：                 按 1",
+          "hablar   → ¡No hables!（别说！）",
+          "gritar   → ¡No grites!（别喊！）",
+          "olvidar  → ¡No olvides!（别忘了！）",
+          "",
+          "-ER/-IR 动词改用 -AS 词尾：             按 2",
+          "comer    → ¡No comas!（别吃！）",
+          "escribir → ¡No escribas!（别写！）",
+          "",
+          "代词移到动词前面：                      按 3",
+          "¡Siéntate! → ¡No te sientes!",
+          "¡No te preocupes!（别担心！）"
+        ],
+        "pronunciation_mappings": {
+          "1": "no hables, no grites, no olvides",
+          "2": "no comas, no escribas",
+          "3": "siéntate, no te sientes, no te preocupes"
         }
       }
     ]
   },
   {
-    "lesson_id": "011",
+    "lesson_id": "012",
+    "trigger_word": "traer",
+    "trigger_card_number": 329,
+    "title": "第12课：细微差别",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "选对词，才能精准表达。",
+          "这些词对连高级学习者也常混淆：",
+          "",
+          "SABER 与 CONOCER：                      按 1",
+          "saber = 知道事实或会做某事",
+          "conocer = 认识或熟悉（人/地）",
+          "Sé nadar.（我会游泳。）",
+          "Conozco Madrid.（我认识马德里。）",
+          "",
+          "PEDIR 与 PREGUNTAR：                    按 2",
+          "pedir = 请求某物",
+          "preguntar = 提出问题",
+          "Pido la cuenta.（我要结账。）",
+          "Pregunto el precio.（我问价格。）",
+          "",
+          "英语中「ask」可涵盖两者，",
+          "但西班牙语混用会显得错误。"
+        ],
+        "pronunciation": "Lección doce",
+        "pronunciation_mappings": {
+          "1": "Sé nadar. Conozco Madrid.",
+          "2": "Pido la cuenta. Pregunto el precio."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "LLEVAR 与 TRAER：                       按 1",
+          "llevar = 带走（离开此处）",
+          "traer = 带来（朝向此处）",
+          "Lleva esto a tu mamá.",
+          "（把这个带给你妈妈。）",
+          "Trae tu libro a clase.",
+          "（上课时带上你的书。）",
+          "",
+          "SINO 与 PERO：                          按 2",
+          "pero = 但是（一般转折）",
+          "sino = 而是（用于否定句后，",
+          "纠正刚被否定的内容）",
+          "No es caro, sino barato.",
+          "（它不贵，而是便宜。）",
+          "Quiero ir, pero no puedo.",
+          "（我想去，但我不能。）"
+        ],
+        "pronunciation_mappings": {
+          "1": "Lleva esto a tu mamá. Trae tu libro a clase.",
+          "2": "No es caro, sino barato. Quiero ir, pero no puedo."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "POR QUÉ、PORQUE 与 PORQUÉ：             按 1",
+          "por qué = 为什么？（疑问）",
+          "porque = 因为（回答）",
+          "porqué = 原因（名词）",
+          "¿Por qué? Porque sí. El porqué no",
+          "importa.（为什么？因为就是。原因",
+          "不重要。）",
+          "",
+          "TODAVÍA、AÚN 与 YA：                    按 2",
+          "todavía/aún = 还，尚未",
+          "ya = 已经，现在",
+          "Todavía no está aquí.",
+          "（他还不在这儿。）",
+          "Ya lo sé.（我已经知道了。）",
+          "",
+          "掌握这些细微差别，",
+          "才能让西班牙语从优秀迈向卓越。"
+        ],
+        "pronunciation_mappings": {
+          "1": "¿Por qué? Porque sí. El porqué no importa.",
+          "2": "Todavía no está aquí. Ya lo sé."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "013",
     "trigger_word": "palabra",
-    "trigger_card_number": 325,
-    "title": "第11课：形容词性数配合",
+    "trigger_card_number": 347,
+    "title": "第13课：形容词性数配合",
     "header_color": "green",
     "pages": [
       {
@@ -92,33 +208,33 @@
           "el gato blanco  → la gata blanca",
           "los gatos blancos → las gatas blancas",
           "",
-          "-E 形形容词性别不变：                   按 2",
-          "el chico grande  → la chica grande",
-          "复数时仅加 -s：grandes",
+          "-E 结尾和多数辅音结尾：不变             按 2",
+          "el chico grande → la chica grande",
+          "el cielo azul → la falda azul（复数 azules）",
           "",
-          "辅音结尾——阴性加 -a：                   按 3",
-          "el chico español → la chica española",
-          "",
+          "但国籍形容词和 -or 结尾加 -a：          按 3",
+          "español → española, trabajador → trabajadora",
+          "（mejor、mayor、menor 阴阳性同形）",
           "位置——通常置于名词之后：",
           "la casa blanca（白色的房子）",
-          "un libro interesante（一本有趣的书）",
-          "注意：少数放名词前，如 bueno、malo、grande",
-          "un buen amigo（一位好朋友）"
+          "少数放在名词前，并会缩短：",
+          "un buen amigo, un mal día（阳性单数）",
+          "una gran ciudad（gran = 伟大的）"
         ],
-        "pronunciation": "Lección once",
+        "pronunciation": "Lección trece",
         "pronunciation_mappings": {
           "1": "el gato blanco, la gata blanca, los gatos blancos, las gatas blancas",
-          "2": "el chico grande, la chica grande",
-          "3": "el chico español, la chica española"
+          "2": "el chico grande, la chica grande, el cielo azul, la falda azul, azules",
+          "3": "español, española, trabajador, trabajadora"
         }
       }
     ]
   },
   {
-    "lesson_id": "012",
+    "lesson_id": "014",
     "trigger_word": "guapo",
-    "trigger_card_number": 375,
-    "title": "第12课：简单过去时",
+    "trigger_card_number": 397,
+    "title": "第14课：简单过去时",
     "header_color": "green",
     "pages": [
       {
@@ -144,7 +260,7 @@
           "注意：-AR 动词的 nosotros 形式",
           "在现在时和过去时中相同！"
         ],
-        "pronunciation": "Lección doce",
+        "pronunciation": "Lección catorce",
         "pronunciation_mappings": {
           "1": "yo hablé, tú hablaste, él habló, nosotros hablamos, ellos hablaron",
           "2": "yo comí, tú comiste, él comió, nosotros comimos, ellos comieron"
@@ -167,7 +283,8 @@
           "tuve, tuviste, tuvo, tuvimos, tuvieron",
           "",
           "ESTAR（在／处于）：                     按 4",
-          "estuve, estuviste, estuvo, estuvimos",
+          "estuve, estuviste, estuvo, estuvimos,",
+          "estuvieron",
           "",
           "DECIR（说）：                           按 5",
           "dije, dijiste, dijo, dijimos, dijeron"
@@ -176,7 +293,7 @@
           "1": "fui, fuiste, fue, fuimos, fueron",
           "2": "hice, hiciste, hizo, hicimos, hicieron",
           "3": "tuve, tuviste, tuvo, tuvimos, tuvieron",
-          "4": "estuve, estuviste, estuvo, estuvimos",
+          "4": "estuve, estuviste, estuvo, estuvimos, estuvieron",
           "5": "dije, dijiste, dijo, dijimos, dijeron"
         }
       }

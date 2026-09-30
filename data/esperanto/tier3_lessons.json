@@ -1,196 +1,347 @@
 [
   {
-    "lesson_id": "019",
-    "trigger_word": "nomiĝi",
-    "title": "LESSON 19: THE '-IĜ-' SUFFIX",
+    "lesson_id": "022",
+    "trigger_word": "komputilo",
+    "title": "LESSON 28: THE '-IL-' SUFFIX",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "The suffix -IĜ- means \"to become\" or \"to",
-          "change into a different state of being.\"",
+          "The suffix -IL- names a TOOL: the thing",
+          "you use to do the action.",
           "",
-          "ADJECTIVE → VERB (to become):",
-          "varma   → varmiĝi    = warm → to become warm",
-          "riĉa    → riĉiĝi     = rich → to get rich",
-          "malpura → malpuriĝi  = dirty → to get dirty",
+          "VERB → TOOL:                          Press 1",
+          "tranĉi  → tranĉilo   = cut → knife",
+          "ŝlosi   → ŝlosilo    = lock → key",
+          "kombi   → kombilo    = comb → a comb",
+          "ŝargi   → ŝargilo    = charge → charger",
+          "komputi → komputilo  = compute → computer",
           "",
-          "NOUN → VERB (to turn into):",
-          "glacio  → glaciiĝi   = ice → to freeze",
-          "patro   → patriĝi    = father → become father",
-          "",
-          "COMMON USES:",
-          "nomiĝi     = to be named (Mi nomiĝas...)",
-          "fariĝi     = to become",
-          "",
-          "KEY: -IĜ- verbs are intransitive - the",
-          "subject changes, without needing an object!"
+          "A TOOL FOR MEASURING:                 Press 2",
+          "mezurilo = gauge, measuring device",
+          "(from mezuri = to measure)"
         ],
-        "pronunciation": "Leciono dek naŭ"
+        "pronunciation": "Leciono dudek du",
+        "pronunciation_mappings": {
+          "1": "Tranĉi. Tranĉilo. Ŝlosi. Ŝlosilo. Kombi. Kombilo. Ŝargi. Ŝargilo. Komputi. Komputilo.",
+          "2": "Mezuri. Mezurilo."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "IN YOUR DEVICES:                      Press 1",
+          "aŭdi    → aŭdilo     = hear → headphones",
+          "serĉi   → serĉilo    = search → search engine",
+          "ŝalti   → ŝaltilo    = switch on → switch",
+          "",
+          "ILO ALONE IS A WORD:                  Press 2",
+          "ilo = a tool        iloj = tools",
+          "",
+          "IN USE:                               Press 3",
+          "Mi forgesis mian ŝargilon.",
+          "= I forgot my charger.",
+          "Kie estas mia ŝlosilo?",
+          "= Where's my key?"
+        ],
+        "pronunciation_mappings": {
+          "1": "Aŭdi. Aŭdilo. Serĉi. Serĉilo. Ŝalti. Ŝaltilo.",
+          "2": "Ilo. Iloj.",
+          "3": "Mi forgesis mian ŝargilon. Kie estas mia ŝlosilo?"
+        }
       }
     ]
   },
   {
     "lesson_id": "020",
     "trigger_word": "klavaro",
-    "title": "LESSON 20: THE '-AR-' SUFFIX",
+    "title": "LESSON 29: THE '-AR-' SUFFIX",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "The suffix -AR- means \"a collection\" or",
-          "\"group of.\" It creates collective nouns from",
-          "individual items.",
+          "The suffix -AR- makes a GROUP: a whole",
+          "collection of one kind of thing.",
           "",
-          "CREATING GROUPS:",
-          "arbo    → arbaro     = tree → forest",
-          "homo    → homaro     = person → humanity",
-          "vorto   → vortaro    = word → dictionary",
-          "ilo     → ilaro      = tool → toolkit",
-          "besto   → bestaro    = animal → fauna",
+          "ONE THING → THE WHOLE SET:            Press 1",
+          "klavo  → klavaro    = key → keyboard",
+          "vorto  → vortaro    = word → dictionary",
+          "arbo   → arbaro     = tree → forest",
+          "ŝtupo  → ŝtuparo    = step → staircase",
+          "homo   → homaro     = person → humanity",
           "",
-          "THE PATTERN:",
-          "Take any individual thing, add -ar-, get",
-          "a collection or group of those things!",
-          "",
-          "Mi havas grandan vortaron.",
-          "(I have a large dictionary.)"
+          "A GROUP, NOT JUST A PLURAL:           Press 2",
+          "arboj   = trees (a few, or many)",
+          "arbaro  = a forest (one whole)",
+          "arbaroj = forests"
         ],
-        "pronunciation": "Leciono dudek"
+        "pronunciation": "Leciono dudek",
+        "pronunciation_mappings": {
+          "1": "Klavo. Klavaro. Vorto. Vortaro. Arbo. Arbaro. Ŝtupo. Ŝtuparo. Homo. Homaro.",
+          "2": "Arboj. Arbaro. Arbaroj."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "TOOLS AND SOFTWARE:                   Press 1",
+          "ilo      → ilaro      = tool → toolkit",
+          "programo → programaro = program → software",
+          "",
+          "ARO ALONE = A GROUP:                  Press 2",
+          "aro da homoj = a group of people, a crowd",
+          "",
+          "IN USE:                               Press 3",
+          "La homaro bezonas pacon.",
+          "= Humanity needs peace.",
+          "Mi bezonas novan klavaron.",
+          "= I need a new keyboard."
+        ],
+        "pronunciation_mappings": {
+          "1": "Ilo. Ilaro. Programo. Programaro.",
+          "2": "Aro da homoj.",
+          "3": "La homaro bezonas pacon. Mi bezonas novan klavaron."
+        }
       }
     ]
   },
   {
     "lesson_id": "021",
-    "trigger_word": "citaĵo",
-    "title": "LESSON 21: THE '-AĴ-' SUFFIX",
+    "trigger_word": "aplikaĵo",
+    "title": "LESSON 30: THE '-AĴ-' SUFFIX",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "The suffix -AĴ- creates concrete things from",
-          "verbs and adjectives. If -i is the action,",
-          "-aĵ- is the physical thing.",
+          "The suffix -AĴ- names a concrete THING:",
+          "the thing an action makes or is done to,",
+          "or a thing that has a quality.",
           "",
-          "FROM VERBS TO THINGS:",
-          "manĝi   → manĝaĵo    = to eat → food",
-          "trinki  → trinkaĵo   = to drink → beverage",
-          "vesti   → vestaĵo    = to dress → clothing",
-          "konstrui→ konstruaĵo = to build → building",
-          "skribi  → skribaĵo   = to write → writing",
+          "FROM VERBS:                           Press 1",
+          "apliki → aplikaĵo  = apply → app",
+          "manĝi  → manĝaĵo   = eat → food",
+          "trinki → trinkaĵo  = drink → a drink",
+          "citi   → citaĵo    = quote → a quotation",
           "",
-          "FROM ADJECTIVES:",
-          "bela    → belaĵo     = beautiful → beauty",
-          "dolĉa   → dolĉaĵo    = sweet → candy",
-          "",
-          "Think: -AĴ- makes abstract actions concrete!",
-          "The thing that results from the action."
+          "FROM ADJECTIVES:                      Press 2",
+          "bela   → belaĵo    = a beautiful thing",
+          "nova   → novaĵo    = news, a new thing",
+          "dolĉa  → dolĉaĵo   = a sweet, candy"
         ],
-        "pronunciation": "Leciono dudek unu"
+        "pronunciation": "Leciono dudek unu",
+        "pronunciation_mappings": {
+          "1": "Apliki. Aplikaĵo. Manĝi. Manĝaĵo. Trinki. Trinkaĵo. Citi. Citaĵo.",
+          "2": "Bela. Belaĵo. Nova. Novaĵo. Dolĉa. Dolĉaĵo."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "-O ALONE NAMES THE ACT:               Press 1",
+          "trinko   = drinking (the act)",
+          "trinkaĵo = a drink (what you drink)",
+          "manĝo    = a meal (the eating)",
+          "manĝaĵo  = food (what you eat)",
+          "",
+          "IN USE:                               Press 2",
+          "Ĉu vi volas trinkaĵon?",
+          "= Do you want a drink?",
+          "Mi havas bonan novaĵon!",
+          "= I have good news!",
+          "Mi uzas novan aplikaĵon.",
+          "= I'm using a new app."
+        ],
+        "pronunciation_mappings": {
+          "1": "Trinko. Trinkaĵo. Manĝo. Manĝaĵo.",
+          "2": "Ĉu vi volas trinkaĵon? Mi havas bonan novaĵon! Mi uzas novan aplikaĵon."
+        }
       }
     ]
   },
   {
-    "lesson_id": "022",
-    "trigger_word": "komputilo",
-    "title": "LESSON 22: THE '-IL-' SUFFIX",
+    "lesson_id": "025",
+    "trigger_word": "foto",
+    "title": "LESSON 31: RELATIVE CLAUSES",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "The suffix -IL- creates tools or instruments",
-          "from verbs. If -i is the action, -il- is the",
-          "tool that performs that action.",
+          "KIU can join two sentences. It points",
+          "back to a noun, a person or a thing,",
+          "like WHO, WHICH or THAT in English.",
           "",
-          "FROM VERBS TO TOOLS:",
-          "tranĉi  → tranĉilo   = to cut → knife",
-          "skribi  → skribilo   = to write → pen",
-          "komputi → komputilo  = to compute → computer",
-          "ludi    → ludilo     = to play → toy",
-          "mezuri  → mezurilo   = to measure → ruler",
+          "Jen la foto, kiun mi faris.           Press 1",
+          "= Here's the photo (that) I took.",
           "",
-          "ANY ACTION → ITS TOOL:",
-          "malfermi → malfermilo = to open → opener",
-          "trinki   → trinkilo   = to drink → cup",
+          "A COMMA ALWAYS COMES BEFORE KIU, and",
+          "after its part if the sentence goes on.",
           "",
-          "Remember: -IL- is the thing you use to do",
-          "the action. Simple and systematic!"
+          "EACH WORD TAKES ITS OWN CASE:         Press 2",
+          "La viro, kiu venis, estas mia frato.",
+          "= The man who came is my brother.",
+          "La viro, kiun mi vidis, estas mia frato.",
+          "= The man (whom) I saw is my brother.",
+          "KIUN is the object of VIDIS: it takes -n.",
+          "LA VIRO is the subject of ESTAS: no -n."
         ],
-        "pronunciation": "Leciono dudek du"
+        "pronunciation": "Leciono dudek kvin",
+        "pronunciation_mappings": {
+          "1": "Jen la foto, kiun mi faris.",
+          "2": "La viro, kiu venis, estas mia frato. La viro, kiun mi vidis, estas mia frato."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "MORE THAN ONE: KIUJ, KIUJN            Press 1",
+          "Mi dankas la amikojn, kiuj helpis min.",
+          "= I thank the friends who helped me.",
+          "Jen la mesaĝoj, kiujn vi sendis.",
+          "= Here are the messages (that) you sent.",
+          "",
+          "AFTER TIO AND ĈIO, USE KIO:           Press 2",
+          "Mi vidis tion, kio okazis.",
+          "= I saw what happened.",
+          "(TION for vidis, KIO for okazis.)",
+          "Tio, kion vi diris, estas vera.",
+          "= What you said is true.",
+          "Dankon pro ĉio, kion vi faris!",
+          "= Thanks for everything you did!",
+          "",
+          "English may drop 'that' or 'whom'.",
+          "Esperanto never drops KIU or KIO."
+        ],
+        "pronunciation_mappings": {
+          "1": "Mi dankas la amikojn, kiuj helpis min. Jen la mesaĝoj, kiujn vi sendis.",
+          "2": "Mi vidis tion, kio okazis. Tio, kion vi diris, estas vera. Dankon pro ĉio, kion vi faris!"
+        }
       }
     ]
   },
   {
     "lesson_id": "023",
     "trigger_word": "retejo",
-    "title": "LESSON 23: THE '-EJ-' SUFFIX",
+    "title": "LESSON 32: THE '-EJ-' SUFFIX",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "The suffix -EJ- means \"place for\" or",
-          "\"location where something happens.\"",
+          "The suffix -EJ- names a PLACE: where an",
+          "action happens, or where things are.",
           "",
-          "FROM VERBS TO PLACES:",
-          "lerni   → lernejo    = to learn → school",
-          "loĝi    → loĝejo     = to live → dwelling",
-          "labori  → laborejo   = to work → workplace",
-          "kuiri   → kuirejo    = to cook → kitchen",
+          "FROM VERBS:                           Press 1",
+          "lerni   → lernejo    = learn → school",
+          "labori  → laborejo   = work → workplace",
+          "manĝi   → manĝejo    = eat → dining room",
+          "kuiri   → kuirejo    = cook → kitchen",
           "",
-          "FROM NOUNS TO PLACES:",
+          "FROM NOUNS:                           Press 2",
+          "reto    → retejo     = net → website",
           "kafo    → kafejo     = coffee → café",
-          "libro   → librejo    = book → library",
-          "pano    → panejo     = bread → bakery",
-          "hundo   → hundejo    = dog → kennel",
+          "libro   → librejo    = book → bookshop",
           "",
-          "THE PATTERN:",
-          "Whatever happens or is found there,",
-          "add -ej- to make it a location!"
+          "CAREFUL: LIBREJO IS A BOOKSHOP!       Press 3",
+          "A library is a biblioteko."
         ],
-        "pronunciation": "Leciono dudek tri"
+        "pronunciation": "Leciono dudek tri",
+        "pronunciation_mappings": {
+          "1": "Lerni. Lernejo. Labori. Laborejo. Manĝi. Manĝejo. Kuiri. Kuirejo.",
+          "2": "Reto. Retejo. Kafo. Kafejo. Libro. Librejo.",
+          "3": "Librejo. Biblioteko."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "ONLINE, TOO:                          Press 1",
+          "babili  → babilejo   = chat → chat room",
+          "A website is a place on the net: retejo.",
+          "",
+          "IN USE:                               Press 2",
+          "Vizitu nian retejon!",
+          "= Visit our website!",
+          "Ni renkontiĝas en la kafejo.",
+          "= We're meeting at the café.",
+          "Mi laboras en librejo.",
+          "= I work in a bookshop."
+        ],
+        "pronunciation_mappings": {
+          "1": "Babili. Babilejo. Retejo.",
+          "2": "Vizitu nian retejon! Ni renkontiĝas en la kafejo. Mi laboras en librejo."
+        }
       }
     ]
   },
   {
-    "lesson_id": "024",
-    "trigger_word": "samideano",
-    "title": "LESSON 24: THE '-AN-' SUFFIX",
+    "lesson_id": "026",
+    "trigger_word": "aŭdebla",
+    "title": "LESSON 33: THE '-EBL-' SUFFIX",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "The suffix -AN- = member, inhabitant, follower.",
+          "The suffix -EBL- means 'can be done'.",
+          "It turns a verb into an adjective:",
+          "aŭdebla = can BE heard (not 'can hear').",
           "",
-          "MEMBERS OF GROUPS:",
-          "klubo   → klubano    = club → club member",
-          "familio → familiano  = family → family member",
+          "VERB → CAN BE DONE:                   Press 1",
+          "aŭdi     → aŭdebla     = audible",
+          "vidi     → videbla     = visible",
+          "legi     → legebla     = readable",
+          "kompreni → komprenebla = understandable",
+          "manĝi    → manĝebla    = edible",
           "",
-          "INHABITANTS:",
-          "Usono   → Usonano    = USA → American",
-          "Eŭropo  → Eŭropano   = Europe → European",
-          "urbo    → urbano     = city → city dweller",
-          "",
-          "FOLLOWERS:",
-          "Kristo  → kristano   = Christ → Christian",
-          "Budho   → budhano    = Buddha → Buddhist",
-          "",
-          "ESPERANTO SPECIAL:",
-          "samideano = fellow Esperantist",
-          "(sam + ideo + ano = same-idea-member)"
+          "NE- IN FRONT: IT CAN'T BE DONE:       Press 2",
+          "nevidebla   = invisible",
+          "nemanĝebla  = inedible"
         ],
-        "pronunciation": "Leciono dudek kvar"
+        "pronunciation": "Leciono dudek ses",
+        "pronunciation_mappings": {
+          "1": "Aŭdi. Aŭdebla. Vidi. Videbla. Legi. Legebla. Kompreni. Komprenebla. Manĝi. Manĝebla.",
+          "2": "Nevidebla. Nemanĝebla."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "IN USE:                               Press 1",
+          "Ĉu mi estas aŭdebla?",
+          "= Can you hear me? (Am I audible?)",
+          "La teksto estas facile legebla.",
+          "= The text is easy to read.",
+          "",
+          "COMPARE -IND- (LESSON 27):            Press 2",
+          "videbla = can be seen",
+          "vidinda = worth seeing",
+          "",
+          "THE ROOT ALONE:                       Press 3",
+          "ebla        = possible",
+          "eble        = maybe, perhaps",
+          "kompreneble = of course"
+        ],
+        "pronunciation_mappings": {
+          "1": "Ĉu mi estas aŭdebla? La teksto estas facile legebla.",
+          "2": "Videbla. Vidinda.",
+          "3": "Ebla. Eble. Kompreneble."
+        }
       }
     ]
   }

@@ -1,14 +1,34 @@
 [
   {
     "lesson_id": "001",
-    "trigger_word": "cosa",
+    "trigger_word": "ciao",
     "trigger_card_number": 1,
-    "header_color": "green",
     "title": "УРОК 1: ИТАЛЬЯНСКОЕ ПРОИЗНОШЕНИЕ",
+    "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 5,
+        "total_pages": 6,
+        "content": [
+          "Добро пожаловать! Итальянский в основном",
+          "фонетичен — буква почти всегда звучит",
+          "одинаково. Главное — пять гласных:",
+          "",
+          "a = «а» как в «мама»                   Нажми 1",
+          "   casa, mamma, gatto",
+          "",
+          "e = «э» как в «это» (два оттенка)      Нажми 2",
+          "   bene, sera, leggere",
+          "",
+          "i = «и» как в «мир»                    Нажми 3",
+          "   sì, vita, libro",
+          "",
+          "o = «о» как в «дом» (два оттенка)      Нажми 4",
+          "   sole, modo, otto",
+          "",
+          "u = «у» как в «суп»                    Нажми 5",
+          "   tu, uno, frutto"
+        ],
         "pronunciation": "Lezione uno",
         "pronunciation_mappings": {
           "1": "Casa. Mamma. Gatto.",
@@ -16,374 +36,974 @@
           "3": "Sì. Vita. Libro.",
           "4": "Sole. Modo. Otto.",
           "5": "Tu. Uno. Frutto."
-        },
-        "content": [
-          "Добро пожаловать! Итальянский в основном",
-          "фонетический — буквы почти всегда дают",
-          "один и тот же звук. Ключевые пять гласных:",
-          "",
-          "a = «а» как в «мама»                Нажми 1",
-          "   casa, mamma, gatto",
-          "",
-          "e = «э» как в «день»                Нажми 2",
-          "   bene, sera, leggere",
-          "",
-          "i = «и» как в «мир»                 Нажми 3",
-          "   sì, vita, libro",
-          "",
-          "o = «о» как в «нота»                Нажми 4",
-          "   sole, modo, otto",
-          "",
-          "u = «у» как в «лунный»              Нажми 5",
-          "   tu, uno, frutto"
-        ]
+        }
       },
       {
         "page": 2,
-        "total_pages": 5,
+        "total_pages": 6,
+        "content": [
+          "У E и O — по два оттенка:",
+          "открытый (рот шире) и закрытый.",
+          "",
+          "   è  открытый, как «э» в «это»        Нажми 1",
+          "      è («есть»), bene, sette, caffè",
+          "   é  закрытый, как «е» в «петь»       Нажми 2",
+          "      e («и»), sera, tre, perché",
+          "",
+          "   ò  открытый, шире русского «о»      Нажми 3",
+          "      ho («я имею»), otto, cosa, però",
+          "   ó  закрытый, «о» с уклоном в «у»    Нажми 4",
+          "      o («или»), sole, nome, ora",
+          "",
+          "На письме оттенок виден только на конечной",
+          "гласной: caffè, perché. В остальных случаях",
+          "запоминай на слух. Регионы тоже говорят",
+          "по-разному — тебя поймут в любом случае."
+        ],
+        "pronunciation_mappings": {
+          "1": "È. Bene. Sette. Caffè.",
+          "2": "E. Sera. Tre. Perché.",
+          "3": "Ho. Otto. Cosa. Però.",
+          "4": "O. Sole. Nome. Ora."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 6,
+        "content": [
+          "СОГЛАСНЫЕ, которые читаются по-особому:",
+          "",
+          "   h = ВСЕГДА немая                    Нажми 1",
+          "      hai, ho, hanno",
+          "",
+          "   c перед a/o/u = «к»                 Нажми 2",
+          "      casa, come, cucina",
+          "",
+          "   c перед e/i = «ч»                   Нажми 3",
+          "      cena, città, dolce",
+          "",
+          "   g перед a/o/u = «г»                 Нажми 4",
+          "      gatto, gusto, lago",
+          "",
+          "   g перед e/i = «дж»                  Нажми 5",
+          "      gente, gelato, magia",
+          "",
+          "r всегда раскатистое, как русское «р»."
+        ],
         "pronunciation_mappings": {
           "1": "Hai. Ho. Hanno.",
           "2": "Casa. Come. Cucina.",
           "3": "Cena. Città. Dolce.",
           "4": "Gatto. Gusto. Lago.",
           "5": "Gente. Gelato. Magia."
-        },
-        "content": [
-          "СОГЛАСНЫЕ, отличающиеся от английских:",
-          "",
-          "   h = ВСЕГДА беззвучна            Нажми 1",
-          "      hai, ho, hanno",
-          "",
-          "   c перед a/o/u = ТВЁРДОЕ «к»     Нажми 2",
-          "      casa, come, cucina",
-          "",
-          "   c перед e/i = МЯГКОЕ «ч»        Нажми 3",
-          "      cena, città, dolce",
-          "",
-          "   g перед a/o/u = ТВЁРДОЕ «г»     Нажми 4",
-          "      gatto, gusto, lago",
-          "",
-          "   g перед e/i = МЯГКОЕ «дж»       Нажми 5",
-          "      gente, gelato, magia",
-          "",
-          "r всегда картавят или лёгко постукивают."
-        ]
+        }
       },
       {
-        "page": 3,
-        "total_pages": 5,
+        "page": 4,
+        "total_pages": 6,
+        "content": [
+          "ДИГРАФЫ — две буквы дают один звук:",
+          "",
+          "   ch = «к» перед e/i                  Нажми 1",
+          "      chiave, perché, anche",
+          "",
+          "   gh = «г» перед e/i                  Нажми 2",
+          "      spaghetti, ghiaccio, lunghi",
+          "",
+          "   gli = мягкое «ль», как в «Илья»     Нажми 3",
+          "      famiglia, figlio, gli",
+          "",
+          "   gn = как «нь» в «каньон»            Нажми 4",
+          "      gnocchi, lasagna, ogni",
+          "",
+          "   sc + e/i = «ш», но мягче            Нажми 5",
+          "      sciare, pesce, scena",
+          "",
+          "Иначе sc = «ск» (scuola, scopo)."
+        ],
         "pronunciation_mappings": {
           "1": "Chiave. Perché. Anche.",
           "2": "Spaghetti. Ghiaccio. Lunghi.",
           "3": "Famiglia. Figlio. Gli.",
           "4": "Gnocchi. Lasagna. Ogni.",
           "5": "Sciare. Pesce. Scena."
-        },
-        "content": [
-          "ДИГРАФЫ — две буквы дают один звук:",
-          "",
-          "   ch = ТВЁРДОЕ «к» перед e/i       Нажми 1",
-          "      chiave, perché, anche",
-          "",
-          "   gh = ТВЁРДОЕ «г» перед e/i       Нажми 2",
-          "      spaghetti, ghiaccio, lunghi",
-          "",
-          "   gli = как «льи» в «миллион»      Нажми 3",
-          "      famiglia, figlio, gli",
-          "",
-          "   gn = как «нь» в «каньон»         Нажми 4",
-          "      gnocchi, lasagna, ogni",
-          "",
-          "   sc + e/i = «ш»                   Нажми 5",
-          "      sciare, pesce, scena",
-          "",
-          "Иначе sc = «ск» (scuola, scopo)."
-        ]
+        }
       },
       {
-        "page": 4,
-        "total_pages": 5,
+        "page": 5,
+        "total_pages": 6,
+        "content": [
+          "ГЕМИНАТЫ — удвоенные согласные:",
+          "",
+          "Тяни звук дольше. В итальянском длина",
+          "меняет смысл слова:                    Нажми 1",
+          "",
+          "   nono / nonno        (девятый / дедушка)",
+          "   capello / cappello      (волос / шляпа)",
+          "   casa / cassa              (дом / касса)",
+          "",
+          "УДАРЕНИЕ:",
+          "Обычно ударение падает на предпоследний",
+          "слог: CA-sa, MAM-ma, LI-bro.           Нажми 2",
+          "",
+          "Конечное ударение отмечают знаком:",
+          "città, perché, papà, lunedì.           Нажми 3",
+          "",
+          "И ещё кое-что перед началом..."
+        ],
         "pronunciation_mappings": {
           "1": "Nono. Nonno. Capello. Cappello. Casa. Cassa.",
           "2": "Casa. Mamma. Libro.",
           "3": "Città. Perché. Papà. Lunedì."
-        },
-        "content": [
-          "УДВОЕННЫЕ СОГЛАСНЫЕ:",
-          "",
-          "Удлиняй звук. Итальянский различает",
-          "значения по длине:                    Нажми 1",
-          "",
-          "   nono / nonno       (девятый / дед)",
-          "   capello / cappello      (волос / шляпа)",
-          "   casa / cassa      (дом / касса)",
-          "",
-          "УДАРЕНИЕ:",
-          "В большинстве слов — на предпоследнем",
-          "слоге: CA-sa, MAM-ma, LI-bro.         Нажми 2",
-          "",
-          "Ударение на последнем слоге — знак:",
-          "città, perché, papà, lunedì.          Нажми 3",
-          "",
-          "Ещё кое-что перед началом..."
-        ]
+        }
       },
       {
-        "page": 5,
-        "total_pages": 5,
-        "pronunciation_mappings": {
-          "1": "Caffè caldo. Parola nuova.",
-          "2": "Non capisco. Non ho."
-        },
+        "page": 6,
+        "total_pages": 6,
         "content": [
           "КАК ВЫГЛЯДЯТ ИТАЛЬЯНСКИЕ ФРАЗЫ:",
           "",
-          "Три особенности сразу бросаются в глаза:",
+          "Три вещи ты заметишь сразу:",
           "",
-          "1. НЕТ «Я» — местоимение опускается.",
-          "   Окончание глагола говорит само:",
-          "   ho = у меня есть, hai = у тебя есть.",
-          "   Так: «Ho una cosa» = У меня есть вещь.",
+          "1. НЕТ «Я» — местоимение опускают.",
+          "   Кто действует — видно по окончанию:",
+          "   ho = я имею, hai = ты имеешь.       Нажми 1",
+          "   Так: «Ho una cosa» = у меня есть вещь.",
           "",
-          "2. ПРИЛАГАТЕЛЬНЫЕ ПОСЛЕ существительного:",
-          "   caffè caldo = горячий кофе          Нажми 1",
+          "2. ПРИЛАГАТЕЛЬНЫЕ — ПОСЛЕ существительного:",
+          "   vino rosso = красное вино           Нажми 2",
           "   parola nuova = новое слово",
-          "   (часто — до; об этом позже)",
+          "   (некоторые частые — перед; о них позже)",
           "",
           "3. «NON» СТОИТ ПЕРЕД глаголом:",
-          "   non capisco = я не понимаю          Нажми 2",
+          "   non capisco = я не понимаю          Нажми 3",
           "   non ho = у меня нет"
-        ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "002",
-    "trigger_word": "casa",
-    "trigger_card_number": 65,
-    "header_color": "green",
-    "title": "УРОК 2: АРТИКЛИ И ЭЛИЗИЯ",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
-        "pronunciation": "Lezione due",
+        ],
         "pronunciation_mappings": {
-          "1": "Il libro. Il padre. Il cane. Lo stato. Lo zio. Lo gnocco.",
-          "2": "La casa. La madre. La zia.",
-          "3": "I libri. Gli stati. Le case."
-        },
-        "content": [
-          "Итальянские артикли меняются по звуку,",
-          "а не только по роду. Это фонологично:",
-          "",
-          "МУЖСКОЙ РОД, ЕД. ЧИСЛО:              Нажми 1",
-          "   il = перед большинством согласных",
-          "      il libro, il padre, il cane",
-          "   lo = перед z, gn, ps, s+согласный",
-          "      lo zio, lo gnocco, lo stato",
-          "",
-          "ЖЕНСКИЙ РОД, ЕД. ЧИСЛО:              Нажми 2",
-          "   la = перед любым согласным",
-          "      la casa, la madre, la zia",
-          "",
-          "МНОЖЕСТВЕННОЕ ЧИСЛО:                 Нажми 3",
-          "   i, gli (мн. ч. м. р.); le (ж. р., всегда)",
-          "      i libri, gli stati, le case"
-        ]
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "pronunciation_mappings": {
-          "1": "L'amico. L'aria. L'ora. L'uomo. L'occhio.",
-          "2": "Gli amici. Le ore.",
-          "3": "L'uomo. Un uomo. Gli uomini. L'aria. Un'aria. Le arie."
-        },
-        "content": [
-          "ЭЛИЗИЯ — правило апострофа:",
-          "",
-          "Перед гласной единственное число",
-          "артикля теряет последнюю букву и ':   Нажми 1",
-          "",
-          "   il / la / lo + гласная → l'",
-          "      l'amico (м), l'aria (ж)",
-          "      l'ora, l'uomo, l'occhio",
-          "",
-          "МНОЖЕСТВЕННОЕ ЧИСЛО НЕ ЭЛИДИРУЕТСЯ:   Нажми 2",
-          "   gli amici (НЕ gl'amici)",
-          "   le ore (НЕ l'ore)",
-          "",
-          "РОД ВСЁ ЕЩЁ ВАЖЕН:                    Нажми 3",
-          "   l'uomo (м) → un uomo, gli uomini",
-          "   l'aria (ж) → un'aria, le arie",
-          "",
-          "На карточках будет Elides: true."
-        ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "003",
-    "trigger_word": "acqua",
-    "trigger_card_number": 85,
-    "header_color": "green",
-    "title": "УРОК 3: ESSERE, AVERE И C'È",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 3,
-        "pronunciation": "Lezione tre",
-        "pronunciation_mappings": {
-          "1": "Io sono. Tu sei. Lui è. Lei è. Noi siamo. Voi siete. Loro sono.",
-          "2": "Sono Marco. È a casa. È bello. Sono italiano."
-        },
-        "content": [
-          "ESSERE = 'быть'",
-          "",
-          "Самый частый неправильный глагол.",
-          "Выучи все шесть форм:                Нажми 1",
-          "",
-          "   io       sono     я есть",
-          "   tu       sei      ты есть",
-          "   lui/lei  è        он/она есть",
-          "   noi      siamo    мы есть",
-          "   voi      siete    вы есть",
-          "   loro     sono     они есть",
-          "",
-          "УПОТРЕБЛЕНИЕ:                        Нажми 2",
-          "   личность:    sono Marco",
-          "   место:       è a casa",
-          "   описание:    è bello",
-          "   национальность: sono italiano"
-        ]
-      },
-      {
-        "page": 2,
-        "total_pages": 3,
-        "pronunciation_mappings": {
-          "1": "Io ho.",
-          "2": "Tu hai.",
-          "3": "Lui ha. Lei ha.",
-          "4": "Noi abbiamo.",
-          "5": "Voi avete."
-        },
-        "content": [
-          "AVERE = 'иметь' (немая h!):",
-          "",
-          "io       ho       я имею           Нажми 1",
-          "tu       hai      ты имеешь        Нажми 2",
-          "lui/lei  ha       он/она имеет     Нажми 3",
-          "noi      abbiamo  мы имеем         Нажми 4",
-          "voi      avete    вы имеете        Нажми 5",
-          "loro     hanno    они имеют",
-          "",
-          "Буква h ВСЕГДА немая. Поэтому:",
-          "   ho = 'о'     hai = 'ай'",
-          "   ha = 'а'     hanno = 'АН-но'",
-          "",
-          "Возраст по-итальянски — через AVERE:",
-          "   ho 30 anni = мне 30 лет",
-          "   (букв. «я имею 30 лет»)"
-        ]
-      },
-      {
-        "page": 3,
-        "total_pages": 3,
-        "pronunciation_mappings": {
-          "1": "C'è un libro sul tavolo. C'è qualcuno alla porta.",
-          "2": "Ci sono molti libri. Ci sono due persone.",
-          "3": "Non c'è tempo. Non ci sono problemi."
-        },
-        "content": [
-          "C'È / CI SONO = есть (сущ.)",
-          "",
-          "Итальянская конструкция существования.",
-          "Думай как «там имеет»:               Нажми 1",
-          "",
-          "   c'è  (ед. ч.) = есть",
-          "      c'è un libro sul tavolo",
-          "      c'è qualcuno alla porta",
-          "",
-          "   ci sono (мн. ч.) = есть           Нажми 2",
-          "      ci sono molti libri",
-          "      ci sono due persone",
-          "",
-          "ОТРИЦАНИЕ:                           Нажми 3",
-          "   non c'è / non ci sono",
-          "      non c'è tempo",
-          "      non ci sono problemi"
-        ]
+          "1": "Ho. Hai. Ho una cosa.",
+          "2": "Vino rosso. Parola nuova.",
+          "3": "Non capisco. Non ho."
+        }
       }
     ]
   },
   {
     "lesson_id": "004",
-    "trigger_word": "fare",
-    "trigger_card_number": 186,
+    "trigger_word": "grazie",
+    "trigger_card_number": 5,
+    "title": "УРОК 2: ПРИВЕТСТВИЯ И ВОПРОСЫ",
     "header_color": "green",
-    "title": "УРОК 4: КОМАНДЫ В КЛАССЕ",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "ПРИВЕТСТВИЯ:",
+          "",
+          "   ciao        = привет/пока (на ты)   Нажми 1",
+          "   salve       = здравствуйте (нейтр.)",
+          "   buongiorno  = доброе утро, добрый день",
+          "   buonasera   = добрый вечер",
+          "   buonanotte  = спокойной ночи",
+          "   arrivederci = до свидания",
+          "",
+          "В магазине говори buongiorno или",
+          "buonasera — и входя, И уходя.",
+          "",
+          "КАК ДЕЛА?                              Нажми 2",
+          "   come stai?  = другу (на ты)",
+          "   come sta?   = вежливо (Lei, на Вы)",
+          "   sto bene, grazie. E tu?",
+          "      = хорошо, спасибо. А ты?"
+        ],
+        "pronunciation": "Lezione due",
+        "pronunciation_mappings": {
+          "1": "Ciao. Salve. Buongiorno. Buonasera. Buonanotte. Arrivederci.",
+          "2": "Come stai? Come sta? Sto bene, grazie. E tu?"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "ЗНАКОМСТВО:                            Нажми 1",
+          "   come ti chiami? = как тебя зовут?",
+          "   mi chiamo Anna  = меня зовут Анна",
+          "      (букв.: «я называю себя Анной»)",
+          "   piacere!        = очень приятно!",
+          "",
+          "ВЕЖЛИВОСТЬ:                            Нажми 2",
+          "   per favore = пожалуйста",
+          "   grazie     = спасибо",
+          "   prego      = не за что; прошу!",
+          "   scusa      = извини, прости",
+          "",
+          "НА УРОКЕ:                              Нажми 3",
+          "   non capisco      = я не понимаю",
+          "   puoi ripetere?   = можешь повторить?",
+          "   più lentamente   = помедленнее",
+          "   come si dice...? = как сказать...?"
+        ],
+        "pronunciation_mappings": {
+          "1": "Come ti chiami? Mi chiamo Anna. Piacere!",
+          "2": "Per favore. Grazie. Prego. Scusa.",
+          "3": "Non capisco. Puoi ripetere? Più lentamente. Come si dice?"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "ВОПРОСИТЕЛЬНЫЕ СЛОВА — одно ты уже знаешь:",
+          "come? = как? (come stai?)",
+          "",
+          "   chi?    = кто?                      Нажми 1",
+          "      chi è? = кто это?",
+          "   cosa?   = что?                      Нажми 2",
+          "      cos'è? = что это?",
+          "   dove?   = где?                      Нажми 3",
+          "      dov'è? = где это?",
+          "   quando? = когда?                    Нажми 4",
+          "      quando arrivi? = когда ты приедешь?",
+          "   perché? = почему? — и «потому что»  Нажми 5",
+          "      perché no? = почему бы и нет?",
+          "   quanto? = сколько?                  Нажми 6",
+          "      quanto costa? = сколько стоит?"
+        ],
+        "pronunciation_mappings": {
+          "1": "Chi? Chi è?",
+          "2": "Cosa? Cos'è?",
+          "3": "Dove? Dov'è?",
+          "4": "Quando? Quando arrivi?",
+          "5": "Perché? Perché no?",
+          "6": "Quanto? Quanto costa?"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "002",
+    "trigger_word": "favore",
+    "trigger_card_number": 10,
+    "title": "УРОК 3: АРТИКЛИ И ЭЛИЗИЯ",
+    "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 2,
-        "pronunciation": "Lezione quattro",
-        "pronunciation_mappings": {
-          "1": "Chi è? Chi sei?",
-          "2": "Cosa fai? Cos'è?",
-          "3": "Dove sei? Dov'è?",
-          "4": "Quando arrivi?",
-          "5": "Come stai? Come ti chiami?",
-          "6": "Perché piangi? Perché no?",
-          "7": "Quanto costa? Quanti anni hai?"
-        },
         "content": [
-          "ОСНОВНЫЕ ВОПРОСИТЕЛЬНЫЕ СЛОВА:",
+          "Определённый артикль зависит от ЗВУКА,",
+          "идущего следом, а не только от рода:",
           "",
-          "   chi?    = кто?                    Нажми 1",
-          "      chi è? chi sei?",
-          "   cosa?   = что?                    Нажми 2",
-          "      cosa fai? cos'è? (слитно)",
-          "   dove?   = где?                    Нажми 3",
-          "      dove sei? dov'è? (слитно)",
-          "   quando? = когда?                  Нажми 4",
-          "      quando arrivi?",
-          "   come?   = как?                    Нажми 5",
-          "      come stai? come ti chiami?",
-          "   perché? = почему?                 Нажми 6",
-          "      perché piangi? perché no?",
-          "   quanto? = сколько?                Нажми 7",
-          "      quanto costa? quanti anni hai?"
-        ]
+          "МУЖСКОЙ РОД, ЕД. ЧИСЛО:                Нажми 1",
+          "   il = перед большинством согласных",
+          "      il libro, il padre, il caffè",
+          "   lo = перед z, gn, ps, s+согласный",
+          "      lo zio, lo studente, lo gnocco",
+          "ЖЕНСКИЙ РОД, ЕД. ЧИСЛО:                Нажми 2",
+          "   la = перед любым согласным",
+          "      la casa, la madre, la zia",
+          "МНОЖЕСТВЕННОЕ ЧИСЛО:                   Нажми 3",
+          "   il → i     lo → gli     la → le",
+          "      i libri, gli zii, le case",
+          "НЕОПРЕДЕЛЁННЫЙ АРТИКЛЬ:                Нажми 4",
+          "   un (м), uno (там, где lo), una (ж)",
+          "      un libro, uno zio, una casa"
+        ],
+        "pronunciation": "Lezione tre",
+        "pronunciation_mappings": {
+          "1": "Il libro. Il padre. Il caffè. Lo zio. Lo studente. Lo gnocco.",
+          "2": "La casa. La madre. La zia.",
+          "3": "I libri. Gli zii. Le case.",
+          "4": "Un libro. Uno zio. Una casa."
+        }
       },
       {
         "page": 2,
         "total_pages": 2,
-        "pronunciation_mappings": {
-          "1": "Per favore. Grazie. Prego. Scusa.",
-          "2": "Non capisco. Puoi ripetere? Più lentamente. Come si dice?",
-          "3": "Ciao. Salve. Buongiorno. Buonasera."
-        },
         "content": [
-          "ВЕЖЛИВЫЕ ПРОСЬБЫ И В КЛАССЕ:         Нажми 1",
+          "ЭЛИЗИЯ — правило апострофа:",
           "",
-          "   per favore  = пожалуйста",
-          "   grazie      = спасибо",
-          "   prego       = пожалуйста / не за что",
-          "   scusa       = извини / простите",
+          "Перед гласной lo и la теряют гласную",
+          "и получают апостроф:                   Нажми 1",
           "",
-          "В КЛАССЕ:                            Нажми 2",
-          "   non capisco      = я не понимаю",
-          "   puoi ripetere?   = повтори, пожалуйста",
-          "   più lentamente   = медленнее",
-          "   come si dice?    = как это сказать?",
+          "   lo / la + гласная → l'",
+          "      l'amico (м), l'amica (ж)",
+          "      l'uomo, l'ora, l'acqua",
           "",
-          "ПРИВЕТСТВИЯ:                         Нажми 3",
-          "   ciao   = привет/пока (неформ.)",
-          "   salve  = здравствуйте (нейтр.)",
-          "   buongiorno = добрый день",
-          "   buonasera  = добрый вечер"
-        ]
+          "ВО МНОЖ. ЧИСЛЕ ЭЛИЗИИ НЕТ:             Нажми 2",
+          "   gli amici, le amiche, le ore",
+          "",
+          "UN / UNA перед гласной:                Нажми 3",
+          "   un amico  (м: без апострофа)",
+          "   un'amica  (ж: una → un')",
+          "",
+          "На карточках все артикли, даже l', выделены",
+          "цветом: СИНИЙ = мужской, МАДЖЕНТА = женский."
+        ],
+        "pronunciation_mappings": {
+          "1": "L'amico. L'amica. L'uomo. L'ora. L'acqua.",
+          "2": "Gli amici. Le amiche. Le ore.",
+          "3": "Un amico. Un'amica."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "003",
+    "trigger_word": "come",
+    "trigger_card_number": 13,
+    "title": "УРОК 4: БЫТЬ, ИМЕТЬ И C'È",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 4,
+        "content": [
+          "ESSERE = быть                          Нажми 1",
+          "",
+          "   io        sono     я есть",
+          "   tu        sei      ты есть",
+          "   lui, lei  è        он, она есть",
+          "   Lei       è        Вы есть (вежливо)",
+          "   noi       siamo    мы есть",
+          "   voi       siete    вы (все) есть",
+          "   loro      sono     они есть",
+          "",
+          "io, tu, lui... — ЛИЧНЫЕ МЕСТОИМЕНИЯ.",
+          "Обычно их опускают: глагол и так",
+          "показывает, кто действует.",
+          "   sono Marco = я Марко                Нажми 2",
+          "Их ставят для выделения или контраста:",
+          "   io sono americano, e tu?            Нажми 3"
+        ],
+        "pronunciation": "Lezione quattro",
+        "pronunciation_mappings": {
+          "1": "Io sono. Tu sei. Lui è. Lei è. Noi siamo. Voi siete. Loro sono.",
+          "2": "Sono Marco.",
+          "3": "Io sono americano, e tu?"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 4,
+        "content": [
+          "ESSERE — кто, что, где, какой:         Нажми 1",
+          "   è a casa    = он дома",
+          "   è bello     = это красиво",
+          "   è italiano  = он итальянец",
+          "",
+          "STARE = быть, оставаться: о самочувствии",
+          "и о том, чтобы остаться на месте:      Нажми 2",
+          "   io   sto         noi   stiamo",
+          "   tu   stai        voi   state",
+          "   lui  sta         loro  stanno",
+          "",
+          "   sto bene   = у меня всё хорошо      Нажми 3",
+          "   come stai? = как дела?",
+          "   sto a casa = я остаюсь дома         Нажми 4"
+        ],
+        "pronunciation_mappings": {
+          "1": "È a casa. È bello. È italiano.",
+          "2": "Io sto. Tu stai. Lui sta. Noi stiamo. Voi state. Loro stanno.",
+          "3": "Sto bene. Come stai?",
+          "4": "Sto a casa."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 4,
+        "content": [
+          "AVERE = иметь                          Нажми 1",
+          "",
+          "   io        ho        я имею",
+          "   tu        hai       ты имеешь",
+          "   lui, lei  ha        он, она имеет",
+          "   noi       abbiamo   мы имеем",
+          "   voi       avete     вы (все) имеете",
+          "   loro      hanno     они имеют",
+          "",
+          "h НЕ ЧИТАЕТСЯ — никогда:               Нажми 2",
+          "   ho, hai, ha, hanno",
+          "   (hanno звучит точно как anno, «год»)",
+          "",
+          "AVERE там, где по-русски иначе:        Нажми 3",
+          "   ho fame    = я голоден («имею голод»)",
+          "   ho freddo  = мне холодно («имею холод»)",
+          "   ho 30 anni = мне 30 лет",
+          "      (букв.: «имею 30 лет»)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Io ho. Tu hai. Lui ha. Lei ha. Noi abbiamo. Voi avete. Loro hanno.",
+          "2": "Ho. Hai. Ha. Hanno. Anno.",
+          "3": "Ho fame. Ho freddo. Ho trent'anni."
+        }
+      },
+      {
+        "page": 4,
+        "total_pages": 4,
+        "content": [
+          "C'È = есть (ед.)    CI SONO = есть (мн.)",
+          "",
+          "Это снова ESSERE: ci («там») + è",
+          "(«есть») → c'è. Мн. ч.: ci + sono.",
+          "",
+          "   c'è un bar qui?                     Нажми 1",
+          "      = здесь есть бар?",
+          "   ci sono due bar                     Нажми 2",
+          "      = здесь два бара",
+          "",
+          "ОТРИЦАНИЕ — non идёт первым:           Нажми 3",
+          "   non c'è tempo = нет времени",
+          "   non ci sono problemi",
+          "      = нет проблем",
+          "",
+          "Спросить, на месте ли кто-то:          Нажми 4",
+          "   c'è Marco? = Марко на месте?"
+        ],
+        "pronunciation_mappings": {
+          "1": "C'è un bar qui?",
+          "2": "Ci sono due bar.",
+          "3": "Non c'è tempo. Non ci sono problemi.",
+          "4": "C'è Marco?"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "009",
+    "trigger_word": "uno",
+    "trigger_card_number": 23,
+    "title": "УРОК 5: ЧИСЛА, ДАТЫ И ВРЕМЯ",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 4,
+        "content": [
+          "ЧИСЛА 0–10:                            Нажми 1",
+          "   0 zero      4 quattro    8 otto",
+          "   1 uno       5 cinque     9 nove",
+          "   2 due       6 sei       10 dieci",
+          "   3 tre       7 sette",
+          "",
+          "ЧИСЛА 11–20:                           Нажми 2",
+          "   11 undici       16 sedici",
+          "   12 dodici       17 diciassette",
+          "   13 tredici      18 diciotto",
+          "   14 quattordici  19 diciannove",
+          "   15 quindici     20 venti",
+          "",
+          "11–16: на конце -dici; 17–19: в начале dici-.",
+          "",
+          "Перед существительным uno → un / una:  Нажми 3",
+          "   un caffè, una pizza",
+          "   due caffè, tre pizze"
+        ],
+        "pronunciation": "Lezione cinque",
+        "pronunciation_mappings": {
+          "1": "Zero. Uno. Due. Tre. Quattro. Cinque. Sei. Sette. Otto. Nove. Dieci.",
+          "2": "Undici. Dodici. Tredici. Quattordici. Quindici. Sedici. Diciassette. Diciotto. Diciannove. Venti.",
+          "3": "Un caffè. Una pizza. Due caffè. Tre pizze."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 4,
+        "content": [
+          "ДЕСЯТКИ:                               Нажми 1",
+          "   20 venti       60 sessanta",
+          "   30 trenta      70 settanta",
+          "   40 quaranta    80 ottanta",
+          "   50 cinquanta   90 novanta",
+          "   100 cento      1000 mille",
+          "",
+          "ПИШИ СЛИТНО, одним словом:             Нажми 2",
+          "   21 ventuno, 28 ventotto",
+          "      (гласная выпадает перед uno, otto)",
+          "   23 ventitré (знак ударения обязателен)",
+          "   200 duecento, 2000 duemila",
+          "      (mille → mila во множественном)",
+          "",
+          "С ПЕРВОГО ПО ДЕСЯТЫЙ:                  Нажми 3",
+          "   primo, secondo, terzo, quarto, quinto,",
+          "   sesto, settimo, ottavo, nono, decimo"
+        ],
+        "pronunciation_mappings": {
+          "1": "Venti. Trenta. Quaranta. Cinquanta. Sessanta. Settanta. Ottanta. Novanta. Cento. Mille.",
+          "2": "Ventuno. Ventotto. Ventitré. Duecento. Duemila.",
+          "3": "Primo. Secondo. Terzo. Quarto. Quinto. Sesto. Settimo. Ottavo. Nono. Decimo."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 4,
+        "content": [
+          "ДНИ НЕДЕЛИ — со строчной:              Нажми 1",
+          "   lunedì, martedì, mercoledì, giovedì,",
+          "   venerdì, sabato, domenica",
+          "   (-dì значит «день»: пиши знак ударения)",
+          "",
+          "   lunedì    = в этот понедельник      Нажми 2",
+          "   il lunedì = по понедельникам",
+          "",
+          "МЕСЯЦЫ — тоже со строчной:             Нажми 3",
+          "   gennaio, febbraio, marzo, aprile,",
+          "   maggio, giugno, luglio, agosto,",
+          "   settembre, ottobre, novembre, dicembre",
+          "",
+          "ДАТЫ — il + число + месяц:             Нажми 4",
+          "   il 15 agosto = 15 августа",
+          "   il primo maggio = 1 мая («первое»)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Lunedì. Martedì. Mercoledì. Giovedì. Venerdì. Sabato. Domenica.",
+          "2": "Lunedì. Il lunedì.",
+          "3": "Gennaio. Febbraio. Marzo. Aprile. Maggio. Giugno. Luglio. Agosto. Settembre. Ottobre. Novembre. Dicembre.",
+          "4": "Il quindici agosto. Il primo maggio."
+        }
+      },
+      {
+        "page": 4,
+        "total_pages": 4,
+        "content": [
+          "КОТОРЫЙ ЧАС? — che ora è?              Нажми 1",
+          "   è l'una      = сейчас час",
+          "   sono le due  = два часа",
+          "   sono le otto = восемь часов",
+          "   (una — с è; остальные — с sono)",
+          "",
+          "МИНУТЫ — e («и»), meno («без»):        Нажми 2",
+          "   sono le due e dieci = 2:10",
+          "   sono le due e un quarto = 2:15",
+          "   sono le due e mezzo = 2:30",
+          "   sono le tre meno un quarto = 2:45",
+          "",
+          "ВО СКОЛЬКО? — a che ora?               Нажми 3",
+          "   all'una = в час",
+          "   alle otto = в восемь",
+          "   alle otto di sera = в 8 вечера",
+          "   (a + le = alle: об этом скоро)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Che ora è? È l'una. Sono le due. Sono le otto.",
+          "2": "Sono le due e dieci. Sono le due e un quarto. Sono le due e mezzo. Sono le tre meno un quarto.",
+          "3": "A che ora? All'una. Alle otto. Alle otto di sera."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "006",
+    "trigger_word": "di",
+    "trigger_card_number": 46,
+    "title": "УРОК 6: СЛИЯНИЕ ПРЕДЛОГОВ",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "di, a, da, in и su СЛИВАЮТСЯ со следующим",
+          "за ними артиклем в одно слово:",
+          "",
+          "СЛИТНЫЕ ФОРМЫ:                         Нажми 1",
+          "       il    lo     la     i    gli    le",
+          "di:    del   dello  della  dei  degli  delle",
+          "a:     al    allo   alla   ai   agli   alle",
+          "da:    dal   dallo  dalla  dai  dagli  dalle",
+          "in:    nel   nello  nella  nei  negli  nelle",
+          "su:    sul   sullo  sulla  sui  sugli  sulle",
+          "",
+          "ПЕРЕД ГЛАСНОЙ — формы на l':           Нажми 2",
+          "   dell'  all'  dall'  nell'  sull'",
+          "   dell'acqua, all'una, nell'aria",
+          "",
+          "con и per не сливаются:                Нажми 3",
+          "   con il pane, per la mamma"
+        ],
+        "pronunciation": "Lezione sei",
+        "pronunciation_mappings": {
+          "1": "Del. Dello. Della. Dei. Degli. Delle. Al. Allo. Alla. Ai. Agli. Alle. Dal. Dallo. Dalla. Dai. Dagli. Dalle. Nel. Nello. Nella. Nei. Negli. Nelle. Sul. Sullo. Sulla. Sui. Sugli. Sulle.",
+          "2": "Dell'acqua. All'una. Nell'aria.",
+          "3": "Con il pane. Per la mamma."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "С ОПРЕДЕЛЁННЫМ АРТИКЛЕМ — сливаются:   Нажми 1",
+          "   vado alla stazione  (a + la)",
+          "   il libro del padre  (di + il)",
+          "   vengo dal bar       (da + il)",
+          "   è sul tavolo        (su + il)",
+          "   (vado = я иду, vengo = я прихожу)",
+          "",
+          "НО БЕЗ АРТИКЛЯ в таких выражениях:     Нажми 2",
+          "   a casa, a scuola, a letto,",
+          "   in chiesa, in centro, in Italia",
+          "",
+          "С un / una — НЕ сливаются:             Нажми 3",
+          "   vado a una festa",
+          "   il libro di un amico",
+          "",
+          "НЕМНОГО, НЕСКОЛЬКО — di + артикль:     Нажми 4",
+          "   del pane  = немного хлеба",
+          "   dei libri = несколько книг"
+        ],
+        "pronunciation_mappings": {
+          "1": "Vado alla stazione. Il libro del padre. Vengo dal bar. È sul tavolo.",
+          "2": "A casa. A scuola. A letto. In chiesa. In centro. In Italia.",
+          "3": "Vado a una festa. Il libro di un amico.",
+          "4": "Del pane. Dei libri."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "050",
+    "trigger_word": "mio",
+    "trigger_card_number": 63,
+    "title": "УРОК 7: ПРИТЯЖАТЕЛЬНЫЕ И СЕМЬЯ",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "МОЙ, ТВОЙ, ЕГО... согласуются с ПРЕДМЕТОМ,",
+          "а не с владельцем:                     Нажми 1",
+          "",
+          "            м        ж        м мн     ж мн",
+          "   мой      mio      mia      miei     mie",
+          "   твой     tuo      tua      tuoi     tue",
+          "   его/её   suo      sua      suoi     sue",
+          "   наш      nostro   nostra   nostri   nostre",
+          "   ваш      vostro   vostra   vostri   vostre",
+          "   их       loro     loro     loro     loro",
+          "",
+          "Они идут ВМЕСТЕ с артиклем:            Нажми 2",
+          "   il mio libro, la mia casa,",
+          "   i miei amici, le mie amiche",
+          "",
+          "suo согласуется с ПРЕДМЕТОМ:           Нажми 3",
+          "   il suo libro = его книга, её книга",
+          "   la sua casa  = его дом, её дом"
+        ],
+        "pronunciation": "Lezione sette",
+        "pronunciation_mappings": {
+          "1": "Mio. Mia. Miei. Mie. Tuo. Tua. Tuoi. Tue. Suo. Sua. Suoi. Sue. Nostro. Nostra. Nostri. Nostre. Vostro. Vostra. Vostri. Vostre. Loro.",
+          "2": "Il mio libro. La mia casa. I miei amici. Le mie amiche.",
+          "3": "Il suo libro. La sua casa."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "СЕМЕЙНОЕ ПРАВИЛО:",
+          "",
+          "ОДИН родственник: БЕЗ артикля          Нажми 1",
+          "   mio padre, mia madre, tuo fratello,",
+          "   sua sorella, mio marito, mia moglie",
+          "",
+          "Артикль ВОЗВРАЩАЕТСЯ:",
+          "   во мн. ч.:    i miei fratelli       Нажми 2",
+          "   с прилаг.:    il mio caro padre",
+          "   с loro:       il loro figlio",
+          "   mamma, papà:  обычно la mia mamma,",
+          "                 il mio papà",
+          "",
+          "Не родственник? Артикль как обычно:    Нажми 3",
+          "   la mia famiglia, il mio amico,",
+          "   la mia casa",
+          "   (famiglia — это группа, а не человек)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Mio padre. Mia madre. Tuo fratello. Sua sorella. Mio marito. Mia moglie.",
+          "2": "I miei fratelli. Il mio caro padre. Il loro figlio. La mia mamma. Il mio papà.",
+          "3": "La mia famiglia. Il mio amico. La mia casa."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "QUESTO = этот — четыре формы:          Нажми 1",
+          "   questo libro, questa casa,",
+          "   questi libri, queste case",
+          "   quest'anno = этот год (перед гласной)",
+          "",
+          "QUELLO = тот — меняется, как артикль",
+          "у следующего слова:                    Нажми 2",
+          "   quel libro     (il libro)",
+          "   quello zio     (lo zio)",
+          "   quella casa    (la casa)",
+          "   quell'amico    (l'amico)",
+          "   quei libri     (i libri)",
+          "   quegli amici   (gli amici)",
+          "   quelle case    (le case)",
+          "",
+          "Отдельно — quello: quello è mio!       Нажми 3",
+          "   = вон то — моё!"
+        ],
+        "pronunciation_mappings": {
+          "1": "Questo libro. Questa casa. Questi libri. Queste case. Quest'anno.",
+          "2": "Quel libro. Quello zio. Quella casa. Quell'amico. Quei libri. Quegli amici. Quelle case.",
+          "3": "Quello è mio!"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "005",
+    "trigger_word": "fare",
+    "trigger_card_number": 69,
+    "title": "УРОК 8: ГЛАГОЛЫ И СОГЛАСОВАНИЕ",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "НАСТОЯЩЕЕ ВРЕМЯ: отбрось -are, -ere или -ire",
+          "и добавь окончание нужного лица:",
+          "",
+          "-ARE  parlare (говорить)               Нажми 1",
+          "   io       parlo      noi      parliamo",
+          "   tu       parli      voi      parlate",
+          "   lui/lei  parla      loro     parlano",
+          "",
+          "-ERE  vedere (видеть)                  Нажми 2",
+          "   io       vedo       noi      vediamo",
+          "   tu       vedi       voi      vedete",
+          "   lui/lei  vede       loro     vedono",
+          "",
+          "-IRE  partire (уезжать)                Нажми 3",
+          "   io       parto      noi      partiamo",
+          "   tu       parti      voi      partite",
+          "   lui/lei  parte      loro     partono"
+        ],
+        "pronunciation": "Lezione otto",
+        "pronunciation_mappings": {
+          "1": "Io parlo. Tu parli. Lui parla. Noi parliamo. Voi parlate. Loro parlano.",
+          "2": "Io vedo. Tu vedi. Lui vede. Noi vediamo. Voi vedete. Loro vedono.",
+          "3": "Io parto. Tu parti. Lui parte. Noi partiamo. Voi partite. Loro partono."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "Многие глаголы на -IRE берут -ISC-:    Нажми 1",
+          "   capire (понимать), finire (заканчивать)",
+          "   io       capisco    noi      capiamo",
+          "   tu       capisci    voi      capite",
+          "   lui/lei  capisce    loro     capiscono",
+          "   (у noi и voi нет -isc-)",
+          "",
+          "FARE (делать) — неправильный:          Нажми 2",
+          "   io       faccio     noi      facciamo",
+          "   tu       fai        voi      fate",
+          "   lui/lei  fa         loro     fanno",
+          "   fa caldo = жарко (о погоде)",
+          "",
+          "LORO — ударение там же, где у IO:      Нажми 3",
+          "   PARlo → PARlano",
+          "   caPIsco → caPIscono"
+        ],
+        "pronunciation_mappings": {
+          "1": "Io capisco. Tu capisci. Lui capisce. Noi capiamo. Voi capite. Loro capiscono.",
+          "2": "Io faccio. Tu fai. Lui fa. Noi facciamo. Voi fate. Loro fanno. Fa caldo.",
+          "3": "Parlo. Parlano. Capisco. Capiscono."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "Прилагательное СОГЛАСУЕТСЯ с существительным:",
+          "",
+          "ПРИЛАГАТЕЛЬНЫЕ НА -O — четыре формы:   Нажми 1",
+          "   il libro nuovo    la casa nuova",
+          "   i libri nuovi     le case nuove",
+          "",
+          "ПРИЛАГАТЕЛЬНЫЕ НА -E — две формы:      Нажми 2",
+          "   il libro grande   la casa grande",
+          "   i libri grandi    le case grandi",
+          "",
+          "ПОЗИЦИЯ: обычно ПОСЛЕ существительного.",
+          "Несколько коротких частых — ПЕРЕД: bello,",
+          "buono, grande, piccolo, vecchio.",
+          "",
+          "Перед сущ. некоторые СОКРАЩАЮТСЯ:      Нажми 3",
+          "   un buon caffè   (buono → buon, как un)",
+          "   un bel ricordo  (bello → bel, как quel)",
+          "   buon + giorno = buongiorno!"
+        ],
+        "pronunciation_mappings": {
+          "1": "Il libro nuovo. La casa nuova. I libri nuovi. Le case nuove.",
+          "2": "Il libro grande. La casa grande. I libri grandi. Le case grandi.",
+          "3": "Un buon caffè. Un bel ricordo. Buongiorno!"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "051",
+    "trigger_word": "potere",
+    "trigger_card_number": 70,
+    "title": "УРОК 9: VOLERE, POTERE, DOVERE",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "Три глагола, за которыми идёт другой:",
+          "",
+          "VOLERE = хотеть                        Нажми 1",
+          "   io       voglio     noi      vogliamo",
+          "   tu       vuoi       voi      volete",
+          "   lui/lei  vuole      loro     vogliono",
+          "",
+          "POTERE = мочь, быть в состоянии        Нажми 2",
+          "   io       posso      noi      possiamo",
+          "   tu       puoi       voi      potete",
+          "   lui/lei  può        loro     possono",
+          "",
+          "DOVERE = должен, быть обязанным        Нажми 3",
+          "   io       devo       noi      dobbiamo",
+          "   tu       devi       voi      dovete",
+          "   lui/lei  deve       loro     devono"
+        ],
+        "pronunciation": "Lezione nove",
+        "pronunciation_mappings": {
+          "1": "Io voglio. Tu vuoi. Lui vuole. Noi vogliamo. Voi volete. Loro vogliono.",
+          "2": "Io posso. Tu puoi. Lui può. Noi possiamo. Voi potete. Loro possono.",
+          "3": "Io devo. Tu devi. Lui deve. Noi dobbiamo. Voi dovete. Loro devono."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "Затем ИНФИНИТИВ (форма на -re):        Нажми 1",
+          "   voglio mangiare  = хочу есть",
+          "   posso entrare?   = можно войти?",
+          "   devo lavorare    = мне надо работать",
+          "   non posso venire = я не могу прийти",
+          "",
+          "VORREI = я бы хотел. Вежливо: говори   Нажми 2",
+          "его в баре и магазине вместо voglio:",
+          "   vorrei un caffè, per favore",
+          "   vorrei pagare = я бы хотел заплатить",
+          "",
+          "SAPERE + инфинитив = уметь:            Нажми 3",
+          "   so, sai, sa, sappiamo, sapete, sanno",
+          "   so nuotare = я умею плавать",
+          "   НО posso nuotare? = можно поплавать?"
+        ],
+        "pronunciation_mappings": {
+          "1": "Voglio mangiare. Posso entrare? Devo lavorare. Non posso venire.",
+          "2": "Vorrei un caffè, per favore. Vorrei pagare.",
+          "3": "So. Sai. Sa. Sappiamo. Sapete. Sanno. So nuotare. Posso nuotare?"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "007",
+    "trigger_word": "signore",
+    "trigger_card_number": 126,
+    "title": "УРОК 10: РОД И МНОЖ. ЧИСЛО",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "Существительные — мужского или женского",
+          "рода. Обычно род подскажет окончание:",
+          "",
+          "ПРАВИЛЬНЫЕ ОКОНЧАНИЯ:                  Нажми 1",
+          "   -o → мужской     il libro → i libri",
+          "   -a → женский     la casa  → le case",
+          "   -e → любой       il padre → i padri",
+          "                    la madre → le madri",
+          "",
+          "НА -E: подскажут некоторые окончания   Нажми 2",
+          "   -ore  → мужской: il signore,",
+          "           il dottore, il colore",
+          "   -ione → женский: la lezione,",
+          "           la stazione",
+          "",
+          "Иначе — учи слово вместе с артиклем."
+        ],
+        "pronunciation": "Lezione dieci",
+        "pronunciation_mappings": {
+          "1": "Il libro. I libri. La casa. Le case. Il padre. I padri. La madre. Le madri.",
+          "2": "Il signore. Il dottore. Il colore. La lezione. La stazione."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "НАПИСАНИЕ во множественном числе:",
+          "",
+          "-ca, -ga, -go сохраняют звук «к»/«г»:  Нажми 1",
+          "   amica → amiche, riga → righe,",
+          "   lago → laghi",
+          "",
+          "-co: слушай УДАРЕНИЕ:                  Нажми 2",
+          "   на предпоследнем слоге → -chi",
+          "      parco → parchi, tedesco → tedeschi",
+          "   дальше от конца → -ci",
+          "      medico → medici, unico → unici",
+          "   НО amico → amici: запомни!",
+          "",
+          "-io → -i (без двойного i):             Нажми 3",
+          "   figlio → figli, negozio → negozi,",
+          "   bacio → baci, occhio → occhi",
+          "   (zio → zii: там i ударное)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Amica. Amiche. Riga. Righe. Lago. Laghi.",
+          "2": "Parco. Parchi. Tedesco. Tedeschi. Medico. Medici. Unico. Unici. Amico. Amici.",
+          "3": "Figlio. Figli. Negozio. Negozi. Bacio. Baci. Occhio. Occhi. Zio. Zii."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "МУЖСКИЕ, хотя на -a (из греческого):   Нажми 1",
+          "   il problema, il sistema, il tema,",
+          "   il programma, il pianeta",
+          "ЖЕНСКИЕ, хотя на -o:                   Нажми 2",
+          "   la mano; la foto, la moto — сокращения",
+          "   от la fotografia, la motocicletta",
+          "",
+          "БЕЗ ИЗМЕНЕНИЙ во множественном:        Нажми 3",
+          "   la città → le città   (ударение на -tà)",
+          "   il caffè → i caffè    (ударение на -è)",
+          "   la foto → le foto     (сокращение)",
+          "   il bar → i bar        (иностранное)",
+          "   il film → i film      (иностранное)",
+          "",
+          "НЕПРАВИЛЬНОЕ МНОЖЕСТВЕННОЕ:            Нажми 4",
+          "   l'uomo → gli uomini",
+          "   la mano → le mani",
+          "   il braccio → le braccia (женский!)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Il problema. Il sistema. Il tema. Il programma. Il pianeta.",
+          "2": "La mano. La foto. La moto. La fotografia. La motocicletta.",
+          "3": "La città. Le città. Il caffè. I caffè. La foto. Le foto. Il bar. I bar. Il film. I film.",
+          "4": "L'uomo. Gli uomini. La mano. Le mani. Il braccio. Le braccia."
+        }
       }
     ]
   }

@@ -2,7 +2,7 @@
   {
     "lesson_id": "015",
     "trigger_word": "Beziehung",
-    "trigger_card_number": 436,
+    "trigger_card_number": 448,
     "title": "LESSON 15: DATIVE CASE",
     "header_color": "cyan",
     "pages": [
@@ -16,18 +16,18 @@
           "Masculine:                der  →  dem",
           "Feminine:                 die  →  der",
           "Neuter:                   das  →  dem",
-          "Plural:                   die  →  den",
+          "Plural:                   die  →  den + -n",
           "",
           "DATIVE PREPOSITIONS (trigger dative case):",
           "aus, bei, mit, nach, seit, von, zu",
           "",
-          "Ich gehe mit dem Mann. (I go with the man)",
+          "Ich spiele mit den Kindern. (with the kids)",
           "",
           "DATIVE VERBS (that make object dative):",
           "helfen, danken, gefallen, gehören, schmecken",
           "",
           "Ich helfe dem Mann. (I help the man)",
-          "Ich zahle der Frau. (I pay the woman)"
+          "Ich gebe der Frau das Buch. (to the woman)"
         ],
         "pronunciation": "Lektion fünfzehn"
       }
@@ -35,9 +35,67 @@
   },
   {
     "lesson_id": "016",
+    "trigger_word": "Hoffnung",
+    "trigger_card_number": 472,
+    "title": "LESSON 16: NEBENSÄTZE",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "Nebensätze (subordinate clauses)* are",
+          "triggered by SUBORDINATING CONJUNCTIONS.",
+          "The verb in a Nebensatz goes to the END.",
+          "",
+          "COMMON SUBORDINATING CONJUNCTIONS:",
+          "dass (that)  weil (because)  obwohl (although)",
+          "wenn (when/if)  als (when-past)  ob (whether)",
+          "",
+          "NEBENSATZ IN SECOND HALF:",
+          "Ich erkläre, dass ich Deutsch lerne.",
+          "(I explain that I'm learning German)",
+          "",
+          "NEBENSATZ IN FIRST HALF:",
+          "Wenn ich Zeit habe, lerne ich Deutsch.",
+          "(When I have time, I learn German)",
+          "",
+          "*neben = 'next to': a Nebensatz is a side",
+          "clause next to the main one (der Hauptsatz)."
+        ],
+        "pronunciation": "Lektion sechzehn"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "TROTZDEM vs OBWOHL",
+          "",
+          "Both translate to 'although / nevertheless',",
+          "but only OBWOHL triggers a Nebensatz.",
+          "",
+          "OBWOHL = subordinating conjunction",
+          "→ verb goes to the END.",
+          "Ich lerne, obwohl ich müde BIN.",
+          "(I study, although I am tired)",
+          "",
+          "TROTZDEM = adverb (means 'nevertheless')",
+          "→ verb stays in POSITION 2.",
+          "Ich bin müde. Trotzdem LERNE ich.",
+          "(I am tired. Nevertheless, I study.)",
+          "",
+          "Same meaning, different grammar:",
+          "obwohl pushes the verb to the end,",
+          "trotzdem keeps the verb in position 2."
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": "017",
     "trigger_word": "hoffen",
-    "trigger_card_number": 469,
-    "title": "LESSON 16: PERFECT TENSE",
+    "trigger_card_number": 481,
+    "title": "LESSON 17: PERFECT TENSE",
     "header_color": "cyan",
     "pages": [
       {
@@ -51,7 +109,7 @@
           "machen → Ich habe gemacht.",
           "kaufen → Ich habe gekauft.",
           "",
-          "IRREGULAR VERBS: ge- + stem + -en",
+          "IRREGULAR: ge- + stem (often changed) + -en",
           "gehen → Ich bin gegangen.",
           "fahren → Ich bin gefahren.",
           "",
@@ -63,48 +121,14 @@
           "Der Zug ist abgefahren. (The train departed)",
           "Ich habe Deutsch gelernt. (I learned German)"
         ],
-        "pronunciation": "Lektion sechzehn"
-      }
-    ]
-  },
-  {
-    "lesson_id": "017",
-    "trigger_word": "sich freuen",
-    "trigger_card_number": 473,
-    "title": "LESSON 17: SEPARABLE VERBS II",
-    "header_color": "cyan",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "Some German verbs split in two!",
-          "The preposition (first part) goes to the end:",
-          "Ich stehe um 7 Uhr auf.",
-          "",
-          "In complex sentences, they stay together:",
-          "Ich weiß, dass ich um 7 Uhr aufstehe.",
-          "(The verb moves to the end and reconnects)",
-          "",
-          "In past tense, ge- goes IN THE MIDDLE:",
-          "aufstehen → Ich bin aufgestanden.",
-          "ankommen → Der Zug ist angekommen.",
-          "anrufen → Ich habe angerufen.",
-          "",
-          "COMMON SEPARABLE PREFIXES:",
-          "auf-, an-, aus-, ein-, mit-, ab-, zurück-",
-          "",
-          "Most common prefixes are separable.",
-          "These, not: be-, er-, ver-, ent-, ge-"
-        ],
         "pronunciation": "Lektion siebzehn"
       }
     ]
   },
   {
     "lesson_id": "018",
-    "trigger_word": "sich ärgern",
-    "trigger_card_number": 474,
+    "trigger_word": "sich freuen",
+    "trigger_card_number": 485,
     "title": "LESSON 18: REFLEXIVE PRONOUNS",
     "header_color": "cyan",
     "pages": [
@@ -120,9 +144,9 @@
           "du → dich      ihr → euch",
           "er/sie/es → sich    sie/Sie → sich",
           "",
-          "TRUE REFLEXIVE VERBS (always reflexive):",
-          "sich freuen (be glad), sich erinnern (recall)",
-          "Ich freue mich! (I'm happy)",
+          "REFLEXIVE VERBS (with sich):",
+          "sich freuen (be glad), sich erholen (recover)",
+          "Ich freue mich! (I'm glad)",
           "",
           "OPTIONAL REFLEXIVE (changes meaning):",
           "anziehen = to put on (something)",
@@ -137,33 +161,33 @@
   },
   {
     "lesson_id": "019",
-    "trigger_word": "morgens",
-    "trigger_card_number": 598,
-    "title": "LESSON 19: TIME EXPRESSIONS",
+    "trigger_word": "ein|laden",
+    "trigger_card_number": 496,
+    "title": "LESSON 19: SEPARABLE VERBS II",
     "header_color": "cyan",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "DAYS OF WEEK (use \"am\"):",
-          "am Montag, am Dienstag, am Mittwoch",
-          "am Donnerstag, am Freitag, am Samstag",
-          "am Sonntag, am Wochenende",
+          "Some German verbs split in two!",
+          "The prefix (first part) goes to the end:",
+          "Ich stehe um 7 Uhr auf.",
           "",
-          "MONTHS (use \"im\"):",
-          "im Januar, im Februar, im März, im April",
-          "im Mai, im Juni, im Juli, im August",
-          "im September, im Oktober, im November",
-          "im Dezember",
+          "In complex sentences, they stay together:",
+          "Ich weiß, dass ich um 7 Uhr aufstehe.",
+          "(The verb moves to the end and reconnects)",
           "",
-          "SEASONS (use \"im\"):",
-          "im Frühling, im Sommer, im Herbst, im Winter",
+          "In past tense, ge- goes IN THE MIDDLE:",
+          "aufstehen → Ich bin aufgestanden.",
+          "ankommen → Der Zug ist angekommen.",
+          "anrufen → Ich habe angerufen.",
           "",
-          "TIME OF DAY (use \"am\" or \"in der\"):",
-          "am Morgen, am Mittag, am Abend, in der Nacht",
+          "COMMON SEPARABLE PREFIXES:",
+          "auf-, an-, aus-, ein-, mit-, ab-, zurück-",
           "",
-          "Ich fahre am Montag nach Berlin."
+          "Most common prefixes are separable.",
+          "Not these: be-, er-, ver-, ent-, ge-, miss-"
         ],
         "pronunciation": "Lektion neunzehn"
       }
@@ -171,9 +195,66 @@
   },
   {
     "lesson_id": "020",
+    "trigger_word": "Bar",
+    "trigger_card_number": 512,
+    "title": "LESSON 20: TWO-WAY PREPOSITIONS",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "Nine prepositions can be ACCUSATIVE or DATIVE:",
+          "",
+          "an auf hinter in neben über unter vor zwischen",
+          "",
+          "One place to another = Accusative:",
+          "Ich gehe in den Park. (into the park)",
+          "Ich lege das Buch auf den Tisch.",
+          "(I put the book onto the table)",
+          "",
+          "A distinct location (on, at, in) = Dative:",
+          "Ich bin im Park. (I am in the park)",
+          "Das Buch liegt auf dem Tisch.",
+          "(The book is on the table)",
+          "",
+          "Remember:",
+          "WOHIN? (to a new place) → accusative",
+          "WO? (where it is or happens) → dative",
+          "Ich laufe im Park. (moving, but inside → DAT)"
+        ],
+        "pronunciation": "Lektion zwanzig"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "COMMON TWO-WAY PREPOSITIONS IN USE:",
+          "",
+          "'an' (at, on - vertical surface):",
+          "AKK: Ich hänge das Bild an die Wand.",
+          "DAT: Das Bild hängt an der Wand.",
+          "",
+          "'in' (in, into):",
+          "AKK: Ich gehe ins Kino.",
+          "DAT: Ich bin im Kino.",
+          "",
+          "'auf' (on - horizontal surface):",
+          "AKK: Ich stelle die Tasse auf den Tisch.",
+          "DAT: Die Tasse steht auf dem Tisch.",
+          "",
+          "'zwischen' (between):",
+          "AKK: Ich setze mich zwischen die Freunde.",
+          "DAT: Ich sitze zwischen den Freunden."
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": "021",
     "trigger_word": "altmodisch",
-    "trigger_card_number": 614,
-    "title": "LESSON 20: DEMONSTRATIVE PRONOUNS",
+    "trigger_card_number": 557,
+    "title": "LESSON 21: DEMONSTRATIVE PRONOUNS",
     "header_color": "cyan",
     "pages": [
       {
@@ -182,7 +263,7 @@
         "content": [
           "Demonstratives point to specific things:",
           "dieser = this     jener = that (formal)",
-          "solcher = such    welcher = which",
+          "solcher = such",
           "",
           "DECLENSION (like 'der' articles!):",
           "          Masc    Fem     Neut    Plural",
@@ -199,15 +280,15 @@
           "In speech, use 'der/die/das da' instead:",
           "Der Mann da. (That man there)"
         ],
-        "pronunciation": "Lektion zwanzig"
+        "pronunciation": "Lektion einundzwanzig"
       }
     ]
   },
   {
-    "lesson_id": "021",
+    "lesson_id": "022",
     "trigger_word": "Kunst",
-    "trigger_card_number": 629,
-    "title": "LESSON 21: QUESTION ADJECTIVES",
+    "trigger_card_number": 571,
+    "title": "LESSON 22: QUESTION ADJECTIVES",
     "header_color": "cyan",
     "pages": [
       {
@@ -233,7 +314,109 @@
           "Was für ein Auto hast du?",
           "(What kind of car do you have?)"
         ],
-        "pronunciation": "Lektion einundzwanzig"
+        "pronunciation": "Lektion zweiundzwanzig"
+      }
+    ]
+  },
+  {
+    "lesson_id": "023",
+    "trigger_word": "erzählen",
+    "trigger_card_number": 590,
+    "title": "LESSON 23: DIMINUTIVE -CHEN/-LEIN",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "Diminutives make things smaller or cuter.",
+          "Add -chen or -lein to most nouns:",
+          "",
+          "KEY RULE: ALL diminutives become NEUTER!",
+          "(This is why 'das Mädchen' = girl is neuter)",
+          "",
+          "-CHEN (more common):",
+          "der Hund → das Hündchen (little dog)",
+          "die Katze → das Kätzchen (kitten)",
+          "das Brot → das Brötchen (bread roll)",
+          "der Bruder → das Brüderchen (little brother)",
+          "",
+          "-LEIN (more literary/poetic):",
+          "das Buch → das Büchlein (little book)",
+          "der Vogel → das Vöglein (little bird)",
+          "",
+          "UMLAUT OFTEN ADDED: a → ä, o → ö, u → ü",
+          "Haus → Häuschen, Hund → Hündchen"
+        ],
+        "pronunciation": "Lektion dreiundzwanzig"
+      }
+    ]
+  },
+  {
+    "lesson_id": "024",
+    "trigger_word": "morgens",
+    "trigger_card_number": 606,
+    "title": "LESSON 24: TIME EXPRESSIONS",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "DAYS OF WEEK (use \"am\"):",
+          "am Montag, am Dienstag, am Mittwoch",
+          "am Donnerstag, am Freitag, am Samstag",
+          "am Sonntag, am Wochenende",
+          "",
+          "MONTHS (use \"im\"):",
+          "im Januar, im Februar, im März, im April",
+          "im Mai, im Juni, im Juli, im August",
+          "im September, im Oktober, im November",
+          "im Dezember",
+          "",
+          "SEASONS (use \"im\"):",
+          "im Frühling, im Sommer, im Herbst, im Winter",
+          "",
+          "TIME OF DAY (use \"am\" or \"in der\"):",
+          "am Morgen, am Mittag, am Abend, in der Nacht",
+          "",
+          "Every morning = morgens (lowercase, -s)"
+        ],
+        "pronunciation": "Lektion vierundzwanzig"
+      }
+    ]
+  },
+  {
+    "lesson_id": "025",
+    "trigger_word": "kennen",
+    "trigger_card_number": 712,
+    "title": "LESSON 25: KENNEN VS WISSEN",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "Three different ways to say \"know\" in German:",
+          "",
+          "KENNEN = know (people, places, things)",
+          "Ich kenne Berlin. (I know Berlin)",
+          "Ich kenne sie. (I know her)",
+          "Regular conjugation: kenne, kennst, kennt",
+          "",
+          "WISSEN = know (facts, information)",
+          "Ich weiß das. (I know that)",
+          "Ich weiß, dass... (I know that...)",
+          "Irregular: ich weiß, du weißt, er weiß",
+          "",
+          "KÖNNEN = know how to (skill)",
+          "Ich kann Deutsch. (I know/can speak German)",
+          "Ich kann schwimmen. (I know how to swim)",
+          "",
+          "\"kennen\" is to be familiar with",
+          "\"wissen\" is to know a fact"
+        ],
+        "pronunciation": "Lektion fünfundzwanzig"
       }
     ]
   }

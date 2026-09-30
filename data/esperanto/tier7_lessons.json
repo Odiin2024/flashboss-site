@@ -2,7 +2,7 @@
   {
     "lesson_id": "040",
     "trigger_word": "unue",
-    "title": "LESSON 40: THE '-OP-' SUFFIX",
+    "title": "LESSON 46: THE '-OP-' SUFFIX",
     "header_color": "green",
     "pages": [
       {
@@ -35,73 +35,134 @@
   {
     "lesson_id": "041",
     "trigger_word": "tio dependas",
-    "title": "LESSON 41: CORRELATIVE TABLE",
+    "title": "LESSON 47: THE CORRELATIVE TABLE",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "Esperanto builds 45 words from a simple",
-          "grid: 5 prefixes × 9 endings. Learn the",
-          "system and you unlock all 45 at once.",
+          "Core taught four columns of the table:",
+          "-O, -U, -E and -AM (kio, kiu, kie, kiam).",
+          "Here are the other five:",
           "",
-          "KI-  = question    TI-  = that/the",
-          "I-   = some        ĈI-  = every",
-          "NENI-= no/none",
+          "THE FIVE NEW COLUMNS:                 Press 1",
+          "      kind    reason  way     whose   amount",
+          "KI-   kia     kial    kiel    kies    kiom",
+          "TI-   tia     tial    tiel    ties    tiom",
+          "ĈI-   ĉia     ĉial    ĉiel    ĉies    ĉiom",
+          "NENI- nenia   nenial  neniel  nenies  neniom",
+          "I-    ia      ial     iel     ies     iom",
           "",
-          "-O thing  -U person   -A kind",
-          "-E place  -AM time    -AL reason",
-          "-EL how   -ES whose   -OM amount",
-          "",
-          "kio = what?  tio = that   io = something",
-          "kie = where? tie = there  ie = somewhere",
-          "kiam = when? ĉiam = always  nenie = nowhere",
-          "",
-          "Printable reference table at:",
-          "odiin2024.github.io/flashboss-site/source.html"
+          "The -A words take -J and -N, like",
+          "adjectives:",
+          "Kian libron vi volas?                 Press 2",
+          "= What kind of book do you want?"
         ],
+        "pronunciation_mappings": {
+          "1": "Kia? Tia. Kial? Tial. Kiel? Tiel. Kies? Ties. Kiom? Tiom.",
+          "2": "Kian libron vi volas?"
+        },
         "pronunciation": "Leciono kvardek unu"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "QUESTIONS:                            Press 1",
+          "Kia estas via urbo?",
+          "= What is your town like?",
+          "Kial vi lernas Esperanton?",
+          "= Why are you learning Esperanto?",
+          "Kies telefono estas tiu?",
+          "= Whose phone is that?",
+          "",
+          "ANSWERS AND MORE:                     Press 2",
+          "Tiel estas.      = That's how it is.",
+          "Neniel!          = No way! Not at all!",
+          "Mi provis ĉiel.  = I tried every way.",
+          "tiom da homoj    = so many people",
+          "",
+          "Printable table (PDF) on our website:",
+          "odiin2024.github.io/flashboss-site/",
+          "correlative_table.pdf"
+        ],
+        "pronunciation_mappings": {
+          "1": "Kia estas via urbo? Kial vi lernas Esperanton? Kies telefono estas tiu?",
+          "2": "Tiel estas. Neniel! Mi provis ĉiel. Tiom da homoj."
+        }
       }
     ]
   },
   {
     "lesson_id": "042",
-    "trigger_word": "provi",
-    "title": "LESSON 42: ACTIVE PARTICIPLES",
+    "trigger_word": "marŝi",
+    "title": "LESSON 48: ACTIVE PARTICIPLES",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "Active participles describe the DOER of an",
-          "action in different times. Three forms:",
+          "Core taught -ANTA, -INTA, -ONTA. Their",
+          "time is RELATIVE to the main verb:",
+          "A = same time, I = before, O = after.",
           "",
-          "-ANT- = doing now (present)",
-          "legi → leganta = reading (now)",
-          "parolanta = speaking (now)",
+          "AS ADJECTIVES (-A):                   Press 1",
+          "marŝanta orkestro  = a marching band",
+          "la pasinta jaro    = last year",
+          "la venonta kunveno = the next meeting",
           "",
-          "-INT- = having done (past)",
-          "legi → leginta = having read",
-          "parolinta = having spoken",
+          "AS PEOPLE (-O):                       Press 2",
+          "la parolanto = the one speaking",
+          "la gajninto  = the winner (who has won)",
+          "la parolonto = the next speaker",
           "",
-          "-ONT- = about to do (future)",
-          "legi → legonta = about to read",
-          "parolonta = about to speak",
-          "",
-          "La leganta viro... = The reading man...",
-          "La leginta viro... = The man who read...",
-          "La legonta viro... = The man about to read..."
+          "TIME IS RELATIVE:                     Press 3",
+          "Mi vidis marŝantan orkestron.",
+          "= I saw a band that was marching."
         ],
+        "pronunciation_mappings": {
+          "1": "Marŝanta orkestro. La pasinta jaro. La venonta kunveno.",
+          "2": "La parolanto. La gajninto. La parolonto.",
+          "3": "Mi vidis marŝantan orkestron."
+        },
         "pronunciation": "Leciono kvardek du"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "WITH -E, a participle tells what the",
+          "SUBJECT of the sentence does at the same",
+          "time (-ante), before (-inte) or after (-onte):",
+          "",
+          "-ANTE = WHILE / BY DOING:             Press 1",
+          "Parolante, li ridetis.",
+          "= While speaking, he smiled.",
+          "Lernante ĉiutage, ŝi progresis.",
+          "= By learning every day, she progressed.",
+          "",
+          "-INTE = AFTER DOING:                  Press 2",
+          "Leginte la leteron, mi respondis.",
+          "= Having read the letter, I replied.",
+          "",
+          "-ONTE = ABOUT TO DO:                  Press 3",
+          "Forironte, li dankis ĉiujn.",
+          "= About to leave, he thanked everyone."
+        ],
+        "pronunciation_mappings": {
+          "1": "Parolante, li ridetis. Lernante ĉiutage, ŝi progresis.",
+          "2": "Leginte la leteron, mi respondis.",
+          "3": "Forironte, li dankis ĉiujn."
+        }
       }
     ]
   },
   {
     "lesson_id": "043",
-    "trigger_word": "okazi",
-    "title": "LESSON 43: THE 'EK-' PREFIX",
+    "trigger_word": "movi",
+    "title": "LESSON 49: THE 'EK-' PREFIX",
     "header_color": "green",
     "pages": [
       {
@@ -134,32 +195,37 @@
   {
     "lesson_id": "044",
     "trigger_word": "historia fono",
-    "title": "LESSON 44: THE 'PRA-' PREFIX",
+    "title": "LESSON 50: THE 'PRA-' PREFIX",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "The prefix PRA- means \"ancient\" or \"great-\"",
-          "(for generations). It reaches back in time.",
+          "The prefix PRA- reaches far back in",
+          "time: GREAT- in families, and ANCIENT,",
+          "PRIMEVAL for everything else.",
           "",
-          "ANCESTRAL (stack PRA- for more generations):",
+          "GENERATIONS BACK:                     Press 1",
           "avo     → praavo     = grandpa → great-grandpa",
           "avino   → praavino   = grandma → great-grandma",
           "patro   → prapatro   = father → forefather",
           "prapraavo = great-great-grandfather",
           "",
-          "ANCIENT:",
-          "homo    → prahomo    = human → protohuman",
-          "arbaro  → praarbaro  = forest → old-growth",
+          "FAR BACK IN TIME:                     Press 2",
+          "historio → prahistorio = prehistory",
+          "homo    → prahomo    = early human",
+          "arbaro  → praarbaro  = primeval forest",
           "",
-          "IN USE:",
+          "IN USE:                               Press 3",
           "Mia praavo venis el Francio.",
-          "(My great-grandfather came from France.)",
-          "",
-          "PRA- reaches back through time!"
+          "= My great-grandfather came from France."
         ],
+        "pronunciation_mappings": {
+          "1": "Avo. Praavo. Avino. Praavino. Patro. Prapatro. Prapraavo.",
+          "2": "Historio. Prahistorio. Homo. Prahomo. Arbaro. Praarbaro.",
+          "3": "Mia praavo venis el Francio."
+        },
         "pronunciation": "Leciono kvardek kvar"
       }
     ]
@@ -167,64 +233,99 @@
   {
     "lesson_id": "045",
     "trigger_word": "hipoteze",
-    "title": "LESSON 45: PASSIVE PARTICIPLES",
+    "title": "LESSON 51: PASSIVE PARTICIPLES",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "Passive participles describe the RECEIVER",
-          "of an action in different times:",
+          "Core taught -ATA, -ITA, -OTA. With ESTI",
+          "they make the PASSIVE: the subject",
+          "receives the action.",
           "",
-          "-AT- = being done (present)",
-          "legi → legata = being read",
-          "la legata libro = the book being read",
+          "WHO DID IT? SAY IT WITH DE:           Press 1",
+          "La letero estis skribita de Ana.",
+          "= The letter was written by Ana.",
           "",
-          "-IT- = done/completed (past)",
-          "legi → legita = read/having been read",
-          "la legita libro = the read book",
+          "-ATA = GOING ON, -ITA = DONE:         Press 2",
+          "La ponto estas konstruata.",
+          "= The bridge is being built.",
+          "La ponto estas konstruita.",
+          "= The bridge is built (finished).",
           "",
-          "-OT- = about to be done (future)",
-          "legi → legota = about to be read",
-          "la legota libro = the book to be read",
-          "",
-          "ACTIVE VS PASSIVE:",
-          "leganta viro = a reading man (he reads)",
-          "legita libro = a read book (it was read)"
+          "ANY FORM OF ESTI WORKS:               Press 3",
+          "La problemo estus solvita.",
+          "= The problem would be solved."
         ],
+        "pronunciation_mappings": {
+          "1": "La letero estis skribita de Ana.",
+          "2": "La ponto estas konstruata. La ponto estas konstruita.",
+          "3": "La problemo estus solvita."
+        },
         "pronunciation": "Leciono kvardek kvin"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "AS PEOPLE (-O):                       Press 1",
+          "la invitito = the person invited",
+          "la elektito = the one elected",
+          "la akuzito  = the accused",
+          "",
+          "WITH -E: 'HAVING BEEN ...':           Press 2",
+          "kiel dirite   = as (was) said",
+          "kiel anoncite = as announced",
+          "Invitite de amikoj, mi iris al la festo.",
+          "= Invited by friends, I went to the party.",
+          "",
+          "ACTIVE OR PASSIVE?                    Press 3",
+          "leganta viro = a man who is reading",
+          "legata libro = a book being read",
+          "leginta viro = a man who has read",
+          "legita libro = a book that has been read"
+        ],
+        "pronunciation_mappings": {
+          "1": "La invitito. La elektito. La akuzito.",
+          "2": "Kiel dirite. Kiel anoncite. Invitite de amikoj, mi iris al la festo.",
+          "3": "Leganta viro. Legata libro. Leginta viro. Legita libro."
+        }
       }
     ]
   },
   {
     "lesson_id": "046",
     "trigger_word": "mi misinformis",
-    "title": "LESSON 46: THE 'MIS-' PREFIX",
+    "title": "LESSON 52: THE 'MIS-' PREFIX",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "MIS- works exactly like English: wrongly,",
-          "incorrectly, or in error.",
+          "The prefix MIS- means WRONGLY, by",
+          "mistake, just like English mis-.",
           "",
-          "kompreni → miskompreni (misunderstand)",
-          "uzi      → misuzi      (misuse)",
-          "diri     → misdiri     (misspeak)",
+          "DOING IT WRONG:                       Press 1",
+          "kompreni → miskompreni = misunderstand",
+          "informi  → misinformi  = misinform",
+          "uzi      → misuzi      = misuse",
+          "kalkuli  → miskalkuli  = miscalculate",
           "",
-          "It applies to any verb. Just add mis-.",
-          "Think of all the English words you know:",
+          "IN USE:                               Press 2",
+          "Mi misinformis vin, pardonu!",
+          "= I misinformed you, sorry!",
+          "Tio estis miskompreno.",
+          "= That was a misunderstanding.",
           "",
-          "misplace, misjudge, mislead, misread,",
-          "miscount, misquote, misfire, mislabel,",
-          "misinform, mismanage, mistrust, mishear",
-          "",
-          "Same prefix, same logic, same instinct.",
-          "When you see mis- in Esperanto, you",
-          "already know what it means."
+          "Careful: not every English mis- is MIS-:",
+          "mistrust = malfido, a mistake = eraro."
         ],
+        "pronunciation_mappings": {
+          "1": "Kompreni. Miskompreni. Informi. Misinformi. Uzi. Misuzi. Kalkuli. Miskalkuli.",
+          "2": "Mi misinformis vin, pardonu! Tio estis miskompreno."
+        },
         "pronunciation": "Leciono kvardek ses"
       }
     ]

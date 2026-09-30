@@ -1,32 +1,32 @@
 [
   {
     "lesson_id": "001",
-    "trigger_word": "cosa",
+    "trigger_word": "ciao",
     "trigger_card_number": 1,
     "title": "LECCIÓN 1: PRONUNCIACIÓN ITALIANA",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 5,
+        "total_pages": 6,
         "content": [
           "¡Bienvenido! El italiano es muy fonético:",
-          "las letras casi siempre suenan igual.",
-          "Las cinco vocales son clave:",
+          "cada letra suena casi siempre igual,",
+          "como en español. Las cinco vocales son clave:",
           "",
-          "a = 'ah' como en padre           Presiona 1",
+          "a = como en español: 'casa'           Presiona 1",
           "   casa, mamma, gatto",
           "",
-          "e = 'eh' como en bet             Presiona 2",
+          "e = la e española, con dos matices    Presiona 2",
           "   bene, sera, leggere",
           "",
-          "i = 'ee' como en máquina         Presiona 3",
+          "i = como en 'vida'                    Presiona 3",
           "   sì, vita, libro",
           "",
-          "o = 'oh' como en no              Presiona 4",
+          "o = la o española, con dos matices    Presiona 4",
           "   sole, modo, otto",
           "",
-          "u = 'oo' como en luna            Presiona 5",
+          "u = como en 'luna'                    Presiona 5",
           "   tu, uno, frutto"
         ],
         "pronunciation": "Lezione uno",
@@ -40,26 +40,55 @@
       },
       {
         "page": 2,
-        "total_pages": 5,
+        "total_pages": 6,
         "content": [
-          "CONSONANTES distintas del inglés:",
+          "La E y la O tienen dos matices cada una:",
+          "abierta (se abre más la boca) y cerrada.",
           "",
-          "   h = siempre MUDA             Presiona 1",
+          "   è  abierta, como en 'perro'        Presiona 1",
+          "      è (= es), bene, sette, caffè",
+          "   é  cerrada, como en 'mesa'         Presiona 2",
+          "      e (= y), sera, tre, perché",
+          "",
+          "   ò  abierta, como en 'gorra'        Presiona 3",
+          "      ho (= tengo), otto, cosa, però",
+          "   ó  cerrada, como en 'todo'         Presiona 4",
+          "      o (= o), sole, nome, ora",
+          "",
+          "La ortografía marca el matiz solo en la",
+          "vocal final: caffè, perché. En lo demás,",
+          "apréndelo de oído. Varía también por región,",
+          "y te entenderán de todos modos."
+        ],
+        "pronunciation_mappings": {
+          "1": "È. Bene. Sette. Caffè.",
+          "2": "E. Sera. Tre. Perché.",
+          "3": "Ho. Otto. Cosa. Però.",
+          "4": "O. Sole. Nome. Ora."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 6,
+        "content": [
+          "CONSONANTES frente al español:",
+          "",
+          "   h = siempre MUDA, como en español  Presiona 1",
           "      hai, ho, hanno",
           "",
-          "   c antes de a/o/u = 'k' dura  Presiona 2",
+          "   c + a/o/u = 'k', como en 'casa'    Presiona 2",
           "      casa, come, cucina",
           "",
-          "   c antes de e/i = 'ch' suave  Presiona 3",
-          "      cena, città, dolce",
+          "   c + e/i = 'ch', como en 'chico'    Presiona 3",
+          "      cena ('chena'), città, dolce",
           "",
-          "   g antes de a/o/u = 'g' dura  Presiona 4",
+          "   g + a/o/u = 'g', como en 'gato'    Presiona 4",
           "      gatto, gusto, lago",
           "",
-          "   g antes de e/i = 'j' suave   Presiona 5",
+          "   g + e/i = 'dy' (¡nunca jota!)      Presiona 5",
           "      gente, gelato, magia",
           "",
-          "r siempre se trilla o se golpea."
+          "La r vibra como en español: 'pero', 'perro'."
         ],
         "pronunciation_mappings": {
           "1": "Hai. Ho. Hanno.",
@@ -70,27 +99,27 @@
         }
       },
       {
-        "page": 3,
-        "total_pages": 5,
+        "page": 4,
+        "total_pages": 6,
         "content": [
-          "DÍGRAFOS — dos letras, un sonido:",
+          "DÍGRAFOS — dos letras, un solo sonido:",
           "",
-          "   ch = 'k' dura antes de e/i    Presiona 1",
+          "   ch = 'k' ante e/i (¡no 'ch'!)      Presiona 1",
           "      chiave, perché, anche",
           "",
-          "   gh = 'g' dura antes de e/i    Presiona 2",
+          "   gh = 'g' ante e/i ('guerra')       Presiona 2",
           "      spaghetti, ghiaccio, lunghi",
           "",
-          "   gli = como 'lli' en million   Presiona 3",
+          "   gli ≈ la 'li' de 'familia'         Presiona 3",
           "      famiglia, figlio, gli",
           "",
-          "   gn = como 'ny' en canyon      Presiona 4",
+          "   gn = ñ, como en 'año'              Presiona 4",
           "      gnocchi, lasagna, ogni",
           "",
-          "   sc + e/i = 'shh'              Presiona 5",
+          "   sc + e/i = 'sh', como en 'show'    Presiona 5",
           "      sciare, pesce, scena",
           "",
-          "sc = 'sk' en otros casos (scuola)."
+          "Si no, sc = 'sk' (scuola, scopo)."
         ],
         "pronunciation_mappings": {
           "1": "Chiave. Perché. Anche.",
@@ -101,23 +130,23 @@
         }
       },
       {
-        "page": 4,
-        "total_pages": 5,
+        "page": 5,
+        "total_pages": 6,
         "content": [
           "GEMINADAS — consonantes dobles:",
           "",
-          "Alarga el sonido. El italiano",
-          "distingue significado por longitud:   Presiona 1",
+          "Alarga el sonido. En italiano, la",
+          "duración cambia el significado:       Presiona 1",
           "",
-          "   nono / nonno       (noveno / abuelo)",
-          "   capello / cappello (pelo / sombrero)",
-          "   casa / cassa       (casa / caja)",
+          "   nono / nonno         (noveno / abuelo)",
+          "   capello / cappello  (cabello / sombrero)",
+          "   casa / cassa             (casa / caja)",
           "",
-          "ACENTO:",
-          "La mayoría lleva acento en la",
-          "penúltima: CA-sa, MAM-ma, LI-bro.     Presiona 2",
+          "ACENTO TÓNICO:",
+          "La mayoría de las palabras lleva el acento en",
+          "la penúltima: CA-sa, MAM-ma, LI-bro.  Presiona 2",
           "",
-          "Acento final se marca con tilde:",
+          "El acento final se escribe con tilde:",
           "città, perché, papà, lunedì.          Presiona 3",
           "",
           "Una cosa más antes de empezar..."
@@ -129,260 +158,851 @@
         }
       },
       {
-        "page": 5,
-        "total_pages": 5,
+        "page": 6,
+        "total_pages": 6,
         "content": [
-          "CÓMO SE VEN LAS FRASES ITALIANAS:",
+          "CÓMO SON LAS FRASES EN ITALIANO:",
           "",
-          "Tres cosas que notarás al instante:",
+          "Tres cosas que te resultarán familiares:",
           "",
-          "1. SIN 'YO' — se omite el pronombre.",
-          "   La terminación verbal indica quién:",
-          "   ho = tengo, hai = tienes.",
-          "   Así: 'Ho una cosa' = Tengo algo.",
+          "1. SIN 'YO' — como en español, se omite",
+          "   el pronombre; el verbo dice quién:",
+          "   ho = tengo, hai = tienes.          Presiona 1",
+          "   Así: 'Ho una cosa' = Tengo una cosa.",
           "",
-          "2. ADJETIVOS VAN DESPUÉS del sustantivo:",
-          "   caffè caldo = café caliente      Presiona 1",
+          "2. EL ADJETIVO VA DESPUÉS del sustantivo:",
+          "   vino rosso = vino tinto            Presiona 2",
           "   parola nuova = palabra nueva",
-          "   (algunos van antes — después)",
+          "   (algunos comunes van antes: ya lo verás)",
           "",
-          "3. 'NON' VA ANTES del verbo:",
-          "   non capisco = no entiendo        Presiona 2",
+          "3. 'NON' VA ANTES del verbo, como 'no':",
+          "   non capisco = no entiendo          Presiona 3",
           "   non ho = no tengo"
         ],
         "pronunciation_mappings": {
-          "1": "Caffè caldo. Parola nuova.",
-          "2": "Non capisco. Non ho."
-        }
-      }
-    ]
-  },
-  {
-    "lesson_id": "002",
-    "trigger_word": "casa",
-    "trigger_card_number": 65,
-    "title": "LECCIÓN 2: ARTÍCULOS Y ELISIÓN",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
-        "content": [
-          "Los artículos en italiano cambian",
-          "según el sonido, no solo el género.",
-          "",
-          "MASCULINO SINGULAR:               Presiona 1",
-          "   il = antes de consonantes",
-          "      il libro, il padre, il cane",
-          "   lo = antes de z, gn, ps, s+cons.",
-          "      lo zio, lo gnocco, lo stato",
-          "",
-          "FEMENINO SINGULAR:                Presiona 2",
-          "   la = antes de consonante",
-          "      la casa, la madre, la zia",
-          "",
-          "PLURALES:                         Presiona 3",
-          "   i, gli (masc.); le (fem.)",
-          "      i libri, gli stati, le case"
-        ],
-        "pronunciation": "Lezione due",
-        "pronunciation_mappings": {
-          "1": "Il libro. Il padre. Il cane. Lo stato. Lo zio. Lo gnocco.",
-          "2": "La casa. La madre. La zia.",
-          "3": "I libri. Gli stati. Le case."
-        }
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "content": [
-          "ELISIÓN — regla del apóstrofo:",
-          "",
-          "Antes de vocal, los artículos",
-          "singulares pierden su letra final:    Presiona 1",
-          "",
-          "   il / la / lo + vocal → l'",
-          "      l'amico (m), l'aria (f)",
-          "      l'ora, l'uomo, l'occhio",
-          "",
-          "LOS PLURALES NO ELIDEN:               Presiona 2",
-          "   gli amici (NO gl'amici)",
-          "   le ore (NO l'ore)",
-          "",
-          "EL GÉNERO SIGUE IMPORTANDO:           Presiona 3",
-          "   l'uomo (m) → un uomo, gli uomini",
-          "   l'aria (f) → un'aria, le arie",
-          "",
-          "Las tarjetas muestran Elide: true."
-        ],
-        "pronunciation_mappings": {
-          "1": "L'amico. L'aria. L'ora. L'uomo. L'occhio.",
-          "2": "Gli amici. Le ore.",
-          "3": "L'uomo. Un uomo. Gli uomini. L'aria. Un'aria. Le arie."
-        }
-      }
-    ]
-  },
-  {
-    "lesson_id": "003",
-    "trigger_word": "acqua",
-    "trigger_card_number": 85,
-    "title": "LECCIÓN 3: ESSERE, AVERE & C'È",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 3,
-        "content": [
-          "ESSERE = 'to be'",
-          "",
-          "El verbo irregular más común.",
-          "Memoriza las seis formas:         Presiona 1",
-          "",
-          "   io       sono     I am",
-          "   tu       sei      you are",
-          "   lui/lei  è        he/she is",
-          "   noi      siamo    we are",
-          "   voi      siete    you all are",
-          "   loro     sono     they are",
-          "",
-          "USOS:                             Presiona 2",
-          "   identidad:   sono Marco",
-          "   ubicación:   è a casa",
-          "   descripción: è bello",
-          "   nacionalidad: sono italiano"
-        ],
-        "pronunciation": "Lezione tre",
-        "pronunciation_mappings": {
-          "1": "Io sono. Tu sei. Lui è. Lei è. Noi siamo. Voi siete. Loro sono.",
-          "2": "Sono Marco. È a casa. È bello. Sono italiano."
-        }
-      },
-      {
-        "page": 2,
-        "total_pages": 3,
-        "content": [
-          "AVERE = 'to have' (¡h muda!):",
-          "",
-          "io       ho       I have        Presiona 1",
-          "tu       hai      you have      Presiona 2",
-          "lui/lei  ha       he/she has    Presiona 3",
-          "noi      abbiamo  we have       Presiona 4",
-          "voi      avete    you all have  Presiona 5",
-          "loro     hanno    they have",
-          "",
-          "La h SIEMPRE es muda. Así:",
-          "   ho = 'oh'    hai = 'eye'",
-          "   ha = 'ah'    hanno = 'AHN-no'",
-          "",
-          "AVERE expresa EDAD en italiano:",
-          "   ho 30 anni = Tengo 30 años",
-          "   (literalmente 'tengo 30 años')"
-        ],
-        "pronunciation_mappings": {
-          "1": "Io ho.",
-          "2": "Tu hai.",
-          "3": "Lui ha. Lei ha.",
-          "4": "Noi abbiamo.",
-          "5": "Voi avete."
-        }
-      },
-      {
-        "page": 3,
-        "total_pages": 3,
-        "content": [
-          "C'È / CI SONO = there is / there are",
-          "",
-          "La frase existencial en italiano.",
-          "Piénsalo como 'hay':              Presiona 1",
-          "",
-          "   c'è  (singular) = there is",
-          "      c'è un libro sul tavolo",
-          "      c'è qualcuno alla porta",
-          "",
-          "   ci sono (plural) = there are   Presiona 2",
-          "      ci sono molti libri",
-          "      ci sono due persone",
-          "",
-          "NEGACIÓN:                         Presiona 3",
-          "   non c'è / non ci sono",
-          "      non c'è tempo",
-          "      non ci sono problemi"
-        ],
-        "pronunciation_mappings": {
-          "1": "C'è un libro sul tavolo. C'è qualcuno alla porta.",
-          "2": "Ci sono molti libri. Ci sono due persone.",
-          "3": "Non c'è tempo. Non ci sono problemi."
+          "1": "Ho. Hai. Ho una cosa.",
+          "2": "Vino rosso. Parola nuova.",
+          "3": "Non capisco. Non ho."
         }
       }
     ]
   },
   {
     "lesson_id": "004",
-    "trigger_word": "fare",
-    "trigger_card_number": 186,
-    "title": "LECCIÓN 4: ÓRDENES EN CLASE",
+    "trigger_word": "grazie",
+    "trigger_card_number": 5,
+    "title": "LECCIÓN 2: SALUDOS Y PREGUNTAS",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "SALUDOS:",
+          "",
+          "   ciao        = hola / chao (de tú)  Presiona 1",
+          "   salve       = hola (neutro)",
+          "   buongiorno  = buenos días, hola",
+          "   buonasera   = buenas tardes / noches",
+          "   buonanotte  = buenas noches (al despedirse)",
+          "   arrivederci = adiós, hasta luego",
+          "",
+          "En una tienda, di buongiorno o",
+          "buonasera al ENTRAR y también al SALIR.",
+          "",
+          "¿CÓMO ESTÁS?                          Presiona 2",
+          "   come stai?  = de tú, a un amigo",
+          "   come sta?   = de usted (Lei)",
+          "   sto bene, grazie. E tu?",
+          "      = Estoy bien, gracias. ¿Y tú?"
+        ],
+        "pronunciation": "Lezione due",
+        "pronunciation_mappings": {
+          "1": "Ciao. Salve. Buongiorno. Buonasera. Buonanotte. Arrivederci.",
+          "2": "Come stai? Come sta? Sto bene, grazie. E tu?"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "TU NOMBRE:                            Presiona 1",
+          "   come ti chiami? = ¿cómo te llamas?",
+          "   mi chiamo Anna  = me llamo Anna",
+          "      (palabra por palabra, como en español)",
+          "   piacere!        = ¡mucho gusto!",
+          "",
+          "CORTESÍA:                             Presiona 2",
+          "   per favore = por favor",
+          "   grazie     = gracias",
+          "   prego      = de nada; adelante, pase",
+          "   scusa      = perdón, disculpa",
+          "",
+          "EN CLASE:                             Presiona 3",
+          "   non capisco      = no entiendo",
+          "   puoi ripetere?   = ¿puedes repetir?",
+          "   più lentamente   = más despacio",
+          "   come si dice...? = ¿cómo se dice...?"
+        ],
+        "pronunciation_mappings": {
+          "1": "Come ti chiami? Mi chiamo Anna. Piacere!",
+          "2": "Per favore. Grazie. Prego. Scusa.",
+          "3": "Non capisco. Puoi ripetere? Più lentamente. Come si dice?"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "PALABRAS INTERROGATIVAS — ya sabes una:",
+          "come? = ¿cómo? (come stai?)",
+          "",
+          "   chi?    = ¿quién?                  Presiona 1",
+          "      chi è? = ¿quién es?",
+          "   cosa?   = ¿qué?                    Presiona 2",
+          "      cos'è? = ¿qué es?",
+          "   dove?   = ¿dónde?                  Presiona 3",
+          "      dov'è? = ¿dónde está?",
+          "   quando? = ¿cuándo?                 Presiona 4",
+          "      quando arrivi? = ¿cuándo llegas?",
+          "   perché? = ¿por qué? y 'porque'     Presiona 5",
+          "      perché no? = ¿por qué no?",
+          "   quanto? = ¿cuánto?                 Presiona 6",
+          "      quanto costa? = ¿cuánto cuesta?"
+        ],
+        "pronunciation_mappings": {
+          "1": "Chi? Chi è?",
+          "2": "Cosa? Cos'è?",
+          "3": "Dove? Dov'è?",
+          "4": "Quando? Quando arrivi?",
+          "5": "Perché? Perché no?",
+          "6": "Quanto? Quanto costa?"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "002",
+    "trigger_word": "favore",
+    "trigger_card_number": 10,
+    "title": "LECCIÓN 3: ARTÍCULOS Y ELISIÓN",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 2,
         "content": [
-          "PALABRAS INTERROGATIVAS BÁSICAS:",
+          "El artículo cambia según el SONIDO que",
+          "le sigue, no solo según el género:",
           "",
-          "   chi?    = ¿quién?              Presiona 1",
-          "      chi è? chi sei?",
-          "   cosa?   = ¿qué?                Presiona 2",
-          "      cosa fai? cos'è? (elidido)",
-          "   dove?   = ¿dónde?              Presiona 3",
-          "      dove sei? dov'è? (elidido)",
-          "   quando? = ¿cuándo?             Presiona 4",
-          "      quando arrivi?",
-          "   come?   = ¿cómo?               Presiona 5",
-          "      come stai? come ti chiami?",
-          "   perché? = ¿por qué?            Presiona 6",
-          "      perché piangi? perché no?",
-          "   quanto? = ¿cuánto/a/os/as?     Presiona 7",
-          "      quanto costa? quanti anni hai?"
+          "MASCULINO SINGULAR:                   Presiona 1",
+          "   il = ante la mayoría de consonantes",
+          "      il libro, il padre, il caffè",
+          "   lo = ante z, gn, ps, s+consonante",
+          "      lo zio, lo studente, lo gnocco",
+          "FEMENINO SINGULAR:                    Presiona 2",
+          "   la = ante cualquier consonante",
+          "      la casa, la madre, la zia",
+          "PLURAL:                               Presiona 3",
+          "   il → i     lo → gli     la → le",
+          "      i libri, gli zii, le case",
+          "UN / UNA:                             Presiona 4",
+          "   un (m), uno (donde va lo), una (f)",
+          "      un libro, uno zio, una casa"
         ],
-        "pronunciation": "Lezione quattro",
+        "pronunciation": "Lezione tre",
         "pronunciation_mappings": {
-          "1": "Chi è? Chi sei?",
-          "2": "Cosa fai? Cos'è?",
-          "3": "Dove sei? Dov'è?",
-          "4": "Quando arrivi?",
-          "5": "Come stai? Come ti chiami?",
-          "6": "Perché piangi? Perché no?",
-          "7": "Quanto costa? Quanti anni hai?"
+          "1": "Il libro. Il padre. Il caffè. Lo zio. Lo studente. Lo gnocco.",
+          "2": "La casa. La madre. La zia.",
+          "3": "I libri. Gli zii. Le case.",
+          "4": "Un libro. Uno zio. Una casa."
         }
       },
       {
         "page": 2,
         "total_pages": 2,
         "content": [
-          "PETICIONES CORTÉS Y EN CLASE:     Presiona 1",
+          "ELISIÓN — la regla del apóstrofo:",
           "",
-          "   per favore  = por favor",
-          "   grazie      = gracias",
-          "   prego       = de nada",
-          "   scusa       = perdón / disculpa",
+          "Ante vocal, lo y la pierden su vocal",
+          "y llevan apóstrofo:                   Presiona 1",
           "",
-          "EN CLASE:                         Presiona 2",
-          "   non capisco      = no entiendo",
-          "   puoi ripetere?   = ¿puedes repetir?",
-          "   più lentamente   = más despacio",
-          "   come si dice?    = ¿cómo se dice?",
+          "   lo / la + vocal → l'",
+          "      l'amico (m), l'amica (f)",
+          "      l'uomo, l'ora, l'acqua",
           "",
-          "SALUDOS:                          Presiona 3",
-          "   ciao   = hola/adiós (informal)",
-          "   salve  = hola (neutral)",
-          "   buongiorno = buenos días",
-          "   buonasera  = buenas tardes/noches"
+          "LOS PLURALES NO SE ELIDEN:            Presiona 2",
+          "   gli amici, le amiche, le ore",
+          "",
+          "UN / UNA ante vocal:                  Presiona 3",
+          "   un amico  (m: sin apóstrofo)",
+          "   un'amica  (f: una → un')",
+          "",
+          "Las tarjetas colorean cada artículo, l'",
+          "incluido: AZUL = masculino, MAGENTA = femenino."
         ],
         "pronunciation_mappings": {
-          "1": "Per favore. Grazie. Prego. Scusa.",
-          "2": "Non capisco. Puoi ripetere? Più lentamente. Come si dice?",
-          "3": "Ciao. Salve. Buongiorno. Buonasera."
+          "1": "L'amico. L'amica. L'uomo. L'ora. L'acqua.",
+          "2": "Gli amici. Le amiche. Le ore.",
+          "3": "Un amico. Un'amica."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "003",
+    "trigger_word": "come",
+    "trigger_card_number": 13,
+    "title": "LECCIÓN 4: SER/ESTAR, TENER Y C'È",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 4,
+        "content": [
+          "ESSERE = ser (y a veces estar)        Presiona 1",
+          "",
+          "   io        sono     yo soy",
+          "   tu        sei      tú eres",
+          "   lui, lei  è        él, ella es",
+          "   Lei       è        usted es",
+          "   noi       siamo    nosotros somos",
+          "   voi       siete    ustedes son",
+          "   loro      sono     ellos son",
+          "",
+          "io, tu, lui... son PRONOMBRES SUJETO.",
+          "Como en español, se suelen omitir: el",
+          "verbo ya dice quién.",
+          "   sono Marco = soy Marco             Presiona 2",
+          "Úsalos para enfatizar o contrastar:",
+          "   io sono americano, e tu?           Presiona 3"
+        ],
+        "pronunciation": "Lezione quattro",
+        "pronunciation_mappings": {
+          "1": "Io sono. Tu sei. Lui è. Lei è. Noi siamo. Voi siete. Loro sono.",
+          "2": "Sono Marco.",
+          "3": "Io sono americano, e tu?"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 4,
+        "content": [
+          "ESSERE: qué ES algo, y dónde está:    Presiona 1",
+          "   è a casa    = está en casa",
+          "   è bello     = es bonito",
+          "   è italiano  = es italiano",
+          "",
+          "STARE = estar, quedarse: para cómo estás",
+          "y para quedarse en un sitio:          Presiona 2",
+          "   io   sto         noi   stiamo",
+          "   tu   stai        voi   state",
+          "   lui  sta         loro  stanno",
+          "",
+          "   sto bene   = estoy bien            Presiona 3",
+          "   come stai? = ¿cómo estás?",
+          "   sto a casa = me quedo en casa      Presiona 4"
+        ],
+        "pronunciation_mappings": {
+          "1": "È a casa. È bello. È italiano.",
+          "2": "Io sto. Tu stai. Lui sta. Noi stiamo. Voi state. Loro stanno.",
+          "3": "Sto bene. Come stai?",
+          "4": "Sto a casa."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 4,
+        "content": [
+          "AVERE = tener (y haber)               Presiona 1",
+          "",
+          "   io        ho        yo tengo",
+          "   tu        hai       tú tienes",
+          "   lui, lei  ha        él, ella tiene",
+          "   noi       abbiamo   nosotros tenemos",
+          "   voi       avete     ustedes tienen",
+          "   loro      hanno     ellos tienen",
+          "",
+          "La h es MUDA, como en español:        Presiona 2",
+          "   ho, hai, ha, hanno",
+          "   (hanno suena igual que anno, año)",
+          "",
+          "AVERE, igual que 'tener':             Presiona 3",
+          "   ho fame    = tengo hambre",
+          "   ho freddo  = tengo frío",
+          "   ho 30 anni = tengo 30 años",
+          "      (¡exactamente como en español!)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Io ho. Tu hai. Lui ha. Lei ha. Noi abbiamo. Voi avete. Loro hanno.",
+          "2": "Ho. Hai. Ha. Hanno. Anno.",
+          "3": "Ho fame. Ho freddo. Ho trent'anni."
+        }
+      },
+      {
+        "page": 4,
+        "total_pages": 4,
+        "content": [
+          "C'È = hay (sing.)    CI SONO = hay (pl.)",
+          "",
+          "Es ESSERE otra vez: ci (ahí) + è",
+          "(está) → c'è. En plural: ci + sono.",
+          "",
+          "   c'è un bar qui?                    Presiona 1",
+          "      = ¿hay un bar aquí?",
+          "   ci sono due bar                    Presiona 2",
+          "      = hay dos bares",
+          "",
+          "NEGACIÓN — non va primero:            Presiona 3",
+          "   non c'è tempo = no hay tiempo",
+          "   non ci sono problemi",
+          "      = no hay problemas",
+          "",
+          "Y para preguntar si alguien está:     Presiona 4",
+          "   c'è Marco? = ¿está Marco?"
+        ],
+        "pronunciation_mappings": {
+          "1": "C'è un bar qui?",
+          "2": "Ci sono due bar.",
+          "3": "Non c'è tempo. Non ci sono problemi.",
+          "4": "C'è Marco?"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "009",
+    "trigger_word": "uno",
+    "trigger_card_number": 23,
+    "title": "LECCIÓN 5: NÚMEROS, FECHAS Y HORA",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 4,
+        "content": [
+          "NÚMEROS 0-10:                         Presiona 1",
+          "   0 zero      4 quattro    8 otto",
+          "   1 uno       5 cinque     9 nove",
+          "   2 due       6 sei       10 dieci",
+          "   3 tre       7 sette",
+          "",
+          "NÚMEROS 11-20:                        Presiona 2",
+          "   11 undici       16 sedici",
+          "   12 dodici       17 diciassette",
+          "   13 tredici      18 diciotto",
+          "   14 quattordici  19 diciannove",
+          "   15 quindici     20 venti",
+          "",
+          "11-16 acaban en -dici; 17-19 empiezan por dici-.",
+          "",
+          "Ante sustantivo, uno → un / una:      Presiona 3",
+          "   un caffè, una pizza",
+          "   due caffè, tre pizze"
+        ],
+        "pronunciation": "Lezione cinque",
+        "pronunciation_mappings": {
+          "1": "Zero. Uno. Due. Tre. Quattro. Cinque. Sei. Sette. Otto. Nove. Dieci.",
+          "2": "Undici. Dodici. Tredici. Quattordici. Quindici. Sedici. Diciassette. Diciotto. Diciannove. Venti.",
+          "3": "Un caffè. Una pizza. Due caffè. Tre pizze."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 4,
+        "content": [
+          "DECENAS:                              Presiona 1",
+          "   20 venti       60 sessanta",
+          "   30 trenta      70 settanta",
+          "   40 quaranta    80 ottanta",
+          "   50 cinquanta   90 novanta",
+          "   100 cento      1000 mille",
+          "",
+          "SE UNEN en una sola palabra:          Presiona 2",
+          "   21 ventuno, 28 ventotto",
+          "      (cae la vocal ante uno, otto)",
+          "   23 ventitré (el acento se escribe)",
+          "   200 duecento, 2000 duemila",
+          "      (mille → mila en plural)",
+          "",
+          "DEL PRIMERO AL DÉCIMO:                Presiona 3",
+          "   primo, secondo, terzo, quarto, quinto,",
+          "   sesto, settimo, ottavo, nono, decimo"
+        ],
+        "pronunciation_mappings": {
+          "1": "Venti. Trenta. Quaranta. Cinquanta. Sessanta. Settanta. Ottanta. Novanta. Cento. Mille.",
+          "2": "Ventuno. Ventotto. Ventitré. Duecento. Duemila.",
+          "3": "Primo. Secondo. Terzo. Quarto. Quinto. Sesto. Settimo. Ottavo. Nono. Decimo."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 4,
+        "content": [
+          "DÍAS — en minúscula:                  Presiona 1",
+          "   lunedì, martedì, mercoledì, giovedì,",
+          "   venerdì, sabato, domenica",
+          "   (-dì significa día: lleva tilde)",
+          "",
+          "   lunedì    = el lunes (este)        Presiona 2",
+          "   il lunedì = los lunes (cada semana)",
+          "",
+          "MESES — también en minúscula:         Presiona 3",
+          "   gennaio, febbraio, marzo, aprile,",
+          "   maggio, giugno, luglio, agosto,",
+          "   settembre, ottobre, novembre, dicembre",
+          "",
+          "FECHAS — il + número + mes:           Presiona 4",
+          "   il 15 agosto = 15 de agosto",
+          "   il primo maggio = 1 de mayo ('el primero')"
+        ],
+        "pronunciation_mappings": {
+          "1": "Lunedì. Martedì. Mercoledì. Giovedì. Venerdì. Sabato. Domenica.",
+          "2": "Lunedì. Il lunedì.",
+          "3": "Gennaio. Febbraio. Marzo. Aprile. Maggio. Giugno. Luglio. Agosto. Settembre. Ottobre. Novembre. Dicembre.",
+          "4": "Il quindici agosto. Il primo maggio."
+        }
+      },
+      {
+        "page": 4,
+        "total_pages": 4,
+        "content": [
+          "¿QUÉ HORA ES? — che ora è?            Presiona 1",
+          "   è l'una      = es la una",
+          "   sono le due  = son las dos",
+          "   sono le otto = son las ocho",
+          "   (l'una lleva è; las demás, sono)",
+          "",
+          "MINUTOS — e (y), meno (menos):        Presiona 2",
+          "   sono le due e dieci = 2:10",
+          "   sono le due e un quarto = 2:15",
+          "   sono le due e mezzo = 2:30",
+          "   sono le tre meno un quarto = 2:45",
+          "",
+          "¿A QUÉ HORA? — a che ora?             Presiona 3",
+          "   all'una = a la una",
+          "   alle otto = a las ocho",
+          "   alle otto di sera = a las 8 de la noche",
+          "   (a + le = alle: lo verás pronto)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Che ora è? È l'una. Sono le due. Sono le otto.",
+          "2": "Sono le due e dieci. Sono le due e un quarto. Sono le due e mezzo. Sono le tre meno un quarto.",
+          "3": "A che ora? All'una. Alle otto. Alle otto di sera."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "006",
+    "trigger_word": "di",
+    "trigger_card_number": 46,
+    "title": "LECCIÓN 6: PREPOSICIÓN + ARTÍCULO",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "di, a, da, in y su se FUNDEN con el",
+          "artículo en una sola palabra (como del, al):",
+          "",
+          "LAS FORMAS FUNDIDAS:                  Presiona 1",
+          "       il    lo     la     i    gli    le",
+          "di:    del   dello  della  dei  degli  delle",
+          "a:     al    allo   alla   ai   agli   alle",
+          "da:    dal   dallo  dalla  dai  dagli  dalle",
+          "in:    nel   nello  nella  nei  negli  nelle",
+          "su:    sul   sullo  sulla  sui  sugli  sulle",
+          "",
+          "ANTE VOCAL, las formas con l':        Presiona 2",
+          "   dell'  all'  dall'  nell'  sull'",
+          "   dell'acqua, all'una, nell'aria",
+          "",
+          "con y per van aparte:                 Presiona 3",
+          "   con il pane, per la mamma"
+        ],
+        "pronunciation": "Lezione sei",
+        "pronunciation_mappings": {
+          "1": "Del. Dello. Della. Dei. Degli. Delle. Al. Allo. Alla. Ai. Agli. Alle. Dal. Dallo. Dalla. Dai. Dagli. Dalle. Nel. Nello. Nella. Nei. Negli. Nelle. Sul. Sullo. Sulla. Sui. Sugli. Sulle.",
+          "2": "Dell'acqua. All'una. Nell'aria.",
+          "3": "Con il pane. Per la mamma."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "CON ARTÍCULO — se funden:             Presiona 1",
+          "   vado alla stazione  (a + la)",
+          "   il libro del padre  (di + il)",
+          "   vengo dal bar       (da + il)",
+          "   è sul tavolo        (su + il)",
+          "   (vado = voy, vengo = vengo)",
+          "",
+          "PERO SIN ARTÍCULO en estos:           Presiona 2",
+          "   a casa, a scuola, a letto,",
+          "   in chiesa, in centro, in Italia",
+          "",
+          "CON un / una — no se funden:          Presiona 3",
+          "   vado a una festa",
+          "   il libro di un amico",
+          "",
+          "ALGO DE, UNOS — di + artículo:        Presiona 4",
+          "   del pane  = (algo de) pan",
+          "   dei libri = unos libros"
+        ],
+        "pronunciation_mappings": {
+          "1": "Vado alla stazione. Il libro del padre. Vengo dal bar. È sul tavolo.",
+          "2": "A casa. A scuola. A letto. In chiesa. In centro. In Italia.",
+          "3": "Vado a una festa. Il libro di un amico.",
+          "4": "Del pane. Dei libri."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "050",
+    "trigger_word": "mio",
+    "trigger_card_number": 63,
+    "title": "LECCIÓN 7: POSESIVOS Y FAMILIA",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "MI, TU, SU... concuerdan con la COSA",
+          "poseída, no con el poseedor:          Presiona 1",
+          "",
+          "                m       f       m pl    f pl",
+          "   mi           mio     mia     miei    mie",
+          "   tu           tuo     tua     tuoi    tue",
+          "   su (él/ella) suo     sua     suoi    sue",
+          "   nuestro      nostro  nostra  nostri  nostre",
+          "   de ustedes   vostro  vostra  vostri  vostre",
+          "   su (ellos)   loro    loro    loro    loro",
+          "",
+          "Llevan ARTÍCULO, no como en español:  Presiona 2",
+          "   il mio libro, la mia casa,",
+          "   i miei amici, le mie amiche",
+          "",
+          "suo concuerda con la COSA:            Presiona 3",
+          "   il suo libro = su libro (de él o ella)",
+          "   la sua casa  = su casa (de él o ella)"
+        ],
+        "pronunciation": "Lezione sette",
+        "pronunciation_mappings": {
+          "1": "Mio. Mia. Miei. Mie. Tuo. Tua. Tuoi. Tue. Suo. Sua. Suoi. Sue. Nostro. Nostra. Nostri. Nostre. Vostro. Vostra. Vostri. Vostre. Loro.",
+          "2": "Il mio libro. La mia casa. I miei amici. Le mie amiche.",
+          "3": "Il suo libro. La sua casa."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "LA REGLA DE LA FAMILIA:",
+          "",
+          "UN solo pariente: SIN artículo        Presiona 1",
+          "   mio padre, mia madre, tuo fratello,",
+          "   sua sorella, mio marito, mia moglie",
+          "",
+          "El artículo VUELVE con:",
+          "   un plural:    i miei fratelli      Presiona 2",
+          "   un adjetivo:  il mio caro padre",
+          "   loro:         il loro figlio",
+          "   mamma, papà:  normalmente la mia mamma,",
+          "                 il mio papà",
+          "",
+          "¿No es pariente? Artículo normal:     Presiona 3",
+          "   la mia famiglia, il mio amico,",
+          "   la mia casa",
+          "   (famiglia es el grupo, no una persona)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Mio padre. Mia madre. Tuo fratello. Sua sorella. Mio marito. Mia moglie.",
+          "2": "I miei fratelli. Il mio caro padre. Il loro figlio. La mia mamma. Il mio papà.",
+          "3": "La mia famiglia. Il mio amico. La mia casa."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "QUESTO = este — cuatro formas:        Presiona 1",
+          "   questo libro, questa casa,",
+          "   questi libri, queste case",
+          "   quest'anno = este año (ante vocal)",
+          "",
+          "QUELLO = ese, aquel — cambia como el",
+          "artículo que le sigue:                Presiona 2",
+          "   quel libro     (il libro)",
+          "   quello zio     (lo zio)",
+          "   quella casa    (la casa)",
+          "   quell'amico    (l'amico)",
+          "   quei libri     (i libri)",
+          "   quegli amici   (gli amici)",
+          "   quelle case    (le case)",
+          "",
+          "Solo, sin sustantivo: quello è mio!   Presiona 3",
+          "   = ¡ese es mío!"
+        ],
+        "pronunciation_mappings": {
+          "1": "Questo libro. Questa casa. Questi libri. Queste case. Quest'anno.",
+          "2": "Quel libro. Quello zio. Quella casa. Quell'amico. Quei libri. Quegli amici. Quelle case.",
+          "3": "Quello è mio!"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "005",
+    "trigger_word": "fare",
+    "trigger_card_number": 69,
+    "title": "LECCIÓN 8: VERBOS Y CONCORDANCIA",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "PRESENTE: quita -are, -ere o -ire y",
+          "añade la terminación de cada persona:",
+          "",
+          "-ARE  parlare (hablar)                Presiona 1",
+          "   io       parlo      noi      parliamo",
+          "   tu       parli      voi      parlate",
+          "   lui/lei  parla      loro     parlano",
+          "",
+          "-ERE  vedere (ver)                    Presiona 2",
+          "   io       vedo       noi      vediamo",
+          "   tu       vedi       voi      vedete",
+          "   lui/lei  vede       loro     vedono",
+          "",
+          "-IRE  partire (partir, salir)         Presiona 3",
+          "   io       parto      noi      partiamo",
+          "   tu       parti      voi      partite",
+          "   lui/lei  parte      loro     partono"
+        ],
+        "pronunciation": "Lezione otto",
+        "pronunciation_mappings": {
+          "1": "Io parlo. Tu parli. Lui parla. Noi parliamo. Voi parlate. Loro parlano.",
+          "2": "Io vedo. Tu vedi. Lui vede. Noi vediamo. Voi vedete. Loro vedono.",
+          "3": "Io parto. Tu parti. Lui parte. Noi partiamo. Voi partite. Loro partono."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "Muchos verbos en -IRE añaden -ISC-:   Presiona 1",
+          "   capire (entender), finire (terminar)",
+          "   io       capisco    noi      capiamo",
+          "   tu       capisci    voi      capite",
+          "   lui/lei  capisce    loro     capiscono",
+          "   (noi y voi no llevan -isc-)",
+          "",
+          "FARE (hacer) es irregular:            Presiona 2",
+          "   io       faccio     noi      facciamo",
+          "   tu       fai        voi      fate",
+          "   lui/lei  fa         loro     fanno",
+          "   fa caldo = hace calor",
+          "",
+          "LORO conserva el acento de IO:        Presiona 3",
+          "   PARlo → PARlano",
+          "   caPIsco → caPIscono"
+        ],
+        "pronunciation_mappings": {
+          "1": "Io capisco. Tu capisci. Lui capisce. Noi capiamo. Voi capite. Loro capiscono.",
+          "2": "Io faccio. Tu fai. Lui fa. Noi facciamo. Voi fate. Loro fanno. Fa caldo.",
+          "3": "Parlo. Parlano. Capisco. Capiscono."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "Los adjetivos CONCUERDAN con el sustantivo:",
+          "",
+          "ADJETIVOS EN -O — cuatro formas:      Presiona 1",
+          "   il libro nuovo    la casa nuova",
+          "   i libri nuovi     le case nuove",
+          "",
+          "ADJETIVOS EN -E — dos formas:         Presiona 2",
+          "   il libro grande   la casa grande",
+          "   i libri grandi    le case grandi",
+          "",
+          "POSICIÓN: casi siempre DESPUÉS. Unos",
+          "cuantos, cortos y comunes, van ANTES:",
+          "bello, buono, grande, piccolo, vecchio.",
+          "",
+          "Delante, algunos SE ACORTAN:          Presiona 3",
+          "   un buon caffè   (buono → buon, como buen)",
+          "   un bel ricordo  (bello → bel, como quel)",
+          "   buon + giorno = buongiorno!"
+        ],
+        "pronunciation_mappings": {
+          "1": "Il libro nuovo. La casa nuova. I libri nuovi. Le case nuove.",
+          "2": "Il libro grande. La casa grande. I libri grandi. Le case grandi.",
+          "3": "Un buon caffè. Un bel ricordo. Buongiorno!"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "051",
+    "trigger_word": "potere",
+    "trigger_card_number": 70,
+    "title": "LECCIÓN 9: VOLERE, POTERE, DOVERE",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "Tres verbos que llevan otro verbo detrás:",
+          "",
+          "VOLERE = querer                       Presiona 1",
+          "   io       voglio     noi      vogliamo",
+          "   tu       vuoi       voi      volete",
+          "   lui/lei  vuole      loro     vogliono",
+          "",
+          "POTERE = poder                        Presiona 2",
+          "   io       posso      noi      possiamo",
+          "   tu       puoi       voi      potete",
+          "   lui/lei  può        loro     possono",
+          "",
+          "DOVERE = deber, tener que             Presiona 3",
+          "   io       devo       noi      dobbiamo",
+          "   tu       devi       voi      dovete",
+          "   lui/lei  deve       loro     devono"
+        ],
+        "pronunciation": "Lezione nove",
+        "pronunciation_mappings": {
+          "1": "Io voglio. Tu vuoi. Lui vuole. Noi vogliamo. Voi volete. Loro vogliono.",
+          "2": "Io posso. Tu puoi. Lui può. Noi possiamo. Voi potete. Loro possono.",
+          "3": "Io devo. Tu devi. Lui deve. Noi dobbiamo. Voi dovete. Loro devono."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "Luego el INFINITIVO (en -re):         Presiona 1",
+          "   voglio mangiare  = quiero comer",
+          "   posso entrare?   = ¿puedo pasar?",
+          "   devo lavorare    = tengo que trabajar",
+          "   non posso venire = no puedo venir",
+          "",
+          "VORREI = quisiera. Cortés: úsalo      Presiona 2",
+          "en bares y tiendas en vez de voglio:",
+          "   vorrei un caffè, per favore",
+          "   vorrei pagare = quisiera pagar",
+          "",
+          "SAPERE + infinitivo = saber hacer:    Presiona 3",
+          "   so, sai, sa, sappiamo, sapete, sanno",
+          "   so nuotare = sé nadar (¡igual!)",
+          "   PERO posso nuotare? = ¿puedo nadar?"
+        ],
+        "pronunciation_mappings": {
+          "1": "Voglio mangiare. Posso entrare? Devo lavorare. Non posso venire.",
+          "2": "Vorrei un caffè, per favore. Vorrei pagare.",
+          "3": "So. Sai. Sa. Sappiamo. Sapete. Sanno. So nuotare. Posso nuotare?"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "007",
+    "trigger_word": "signore",
+    "trigger_card_number": 126,
+    "title": "LECCIÓN 10: GÉNERO Y PLURAL",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "Los sustantivos son masculinos o femeninos.",
+          "La terminación suele decirte cuál:",
+          "",
+          "PATRONES REGULARES:                   Presiona 1",
+          "   -o → masculino   il libro → i libri",
+          "   -a → femenino    la casa  → le case",
+          "   -e → cualquiera  il padre → i padri",
+          "                    la madre → le madri",
+          "",
+          "EN -E, algunas terminaciones ayudan:  Presiona 2",
+          "   -ore  → masculino: il signore,",
+          "           il dottore, il colore",
+          "   -ione → femenino: la lezione,",
+          "           la stazione  (¡como en español!)",
+          "",
+          "Si no, apréndelo con su artículo."
+        ],
+        "pronunciation": "Lezione dieci",
+        "pronunciation_mappings": {
+          "1": "Il libro. I libri. La casa. Le case. Il padre. I padri. La madre. Le madri.",
+          "2": "Il signore. Il dottore. Il colore. La lezione. La stazione."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "ORTOGRAFÍA del plural:",
+          "",
+          "-ca, -ga, -go mantienen la k/g dura:  Presiona 1",
+          "   amica → amiche, riga → righe,",
+          "   lago → laghi",
+          "",
+          "-co: fíjate en el ACENTO:             Presiona 2",
+          "   en la penúltima sílaba → -chi",
+          "      parco → parchi, tedesco → tedeschi",
+          "   más atrás en la palabra → -ci",
+          "      medico → medici, unico → unici",
+          "   PERO amico → amici: ¡apréndelo!",
+          "",
+          "-io → -i (sin doble i):               Presiona 3",
+          "   figlio → figli, negozio → negozi,",
+          "   bacio → baci, occhio → occhi",
+          "   (zio → zii: ahí la i es tónica)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Amica. Amiche. Riga. Righe. Lago. Laghi.",
+          "2": "Parco. Parchi. Tedesco. Tedeschi. Medico. Medici. Unico. Unici. Amico. Amici.",
+          "3": "Figlio. Figli. Negozio. Negozi. Bacio. Baci. Occhio. Occhi. Zio. Zii."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "MASCULINOS en -a (raíz griega):       Presiona 1",
+          "   il problema, il sistema, il tema,",
+          "   il programma, il pianeta",
+          "FEMENINOS en -o, como en español:     Presiona 2",
+          "   la mano; la foto, la moto — formas cortas",
+          "   de la fotografia, la motocicletta",
+          "",
+          "SIN CAMBIO en plural:                 Presiona 3",
+          "   la città → le città   (acento en -tà)",
+          "   il caffè → i caffè    (acento en -è)",
+          "   la foto → le foto     (forma corta)",
+          "   il bar → i bar        (extranjerismo)",
+          "   il film → i film      (extranjerismo)",
+          "",
+          "PLURALES IRREGULARES:                 Presiona 4",
+          "   l'uomo → gli uomini",
+          "   la mano → le mani",
+          "   il braccio → le braccia (¡femenino!)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Il problema. Il sistema. Il tema. Il programma. Il pianeta.",
+          "2": "La mano. La foto. La moto. La fotografia. La motocicletta.",
+          "3": "La città. Le città. Il caffè. I caffè. La foto. Le foto. Il bar. I bar. Il film. I film.",
+          "4": "L'uomo. Gli uomini. La mano. Le mani. Il braccio. Le braccia."
         }
       }
     ]

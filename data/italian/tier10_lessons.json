@@ -2,8 +2,8 @@
   {
     "lesson_id": "031",
     "trigger_word": "supporre",
-    "trigger_card_number": 1809,
-    "title": "LESSON 31: HYPOTHETICALS WITH SE",
+    "trigger_card_number": 1808,
+    "title": "LESSON 39: HYPOTHETICALS WITH SE",
     "header_color": "magenta",
     "pages": [
       {
@@ -38,8 +38,8 @@
           "THE THREE HYPOTHETICAL TYPES:",
           "",
           "TYPE 1 — real/possible (Core):",
-          "   se + present, future",
-          "   Se piove, resto a casa.",
+          "   se + present, present/future",
+          "   Se piove, resto (resterò) a casa.",
           "   (If it rains, I'll stay home.)",
           "",
           "TYPE 2 — unreal present (THIS):",
@@ -60,8 +60,8 @@
   {
     "lesson_id": "032",
     "trigger_word": "farcela",
-    "trigger_card_number": 1837,
-    "title": "LESSON 32: PRONOMINAL VERBS",
+    "trigger_card_number": 1836,
+    "title": "LESSON 40: PRONOMINAL VERBS",
     "header_color": "magenta",
     "pages": [
       {
@@ -94,14 +94,14 @@
         "content": [
           "HOW THEY WORK:",
           "",
-          "The pronouns (ci, la, ne, se) are",
+          "The pronouns (ci, la, ne, si) are",
           "FUSED to the verb. They don't mean",
           "what they normally mean alone.",
           "",
           "   farcela = fare + ci + la",
           "      (NOT 'to do it there')",
-          "   andarsene = andare + se + ne",
-          "      (NOT 'to go of oneself from')",
+          "   andarsene = andare + si + ne",
+          "      (si → se before ne: se ne va)",
           "",
           "PASSATO PROSSIMO:",
           "   farcela → ce l'ho fatta (avere)",
@@ -117,13 +117,13 @@
   {
     "lesson_id": "033",
     "trigger_word": "riferire",
-    "trigger_card_number": 1857,
-    "title": "LESSON 33: INDIRECT SPEECH",
+    "trigger_card_number": 1856,
+    "title": "LESSON 41: INDIRECT SPEECH",
     "header_color": "magenta",
     "pages": [
       {
         "page": 1,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
           "INDIRECT SPEECH = reporting what",
           "someone said, without quoting.",
@@ -135,20 +135,20 @@
           "INDIRECT:",
           "   Ha detto che sarebbe venuto",
           "   il giorno dopo.",
-          "   He said he would come next day.",
+          "   He said he would come the next day.",
           "",
           "WHAT CHANGES:",
-          "   present   → imperfetto",
+          "   present    → imperfetto",
           "   passato p. → trapassato prossimo",
-          "   future    → conditional",
-          "   domani    → il giorno dopo",
-          "   ieri      → il giorno prima"
+          "   future     → PAST conditional",
+          "   domani     → il giorno dopo",
+          "   ieri       → il giorno prima"
         ],
         "pronunciation": "Ha detto che sarebbe venuto."
       },
       {
         "page": 2,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
           "THE TENSE SHIFTS in practice:",
           "",
@@ -159,16 +159,43 @@
           "   'Ho visto Marco.'",
           "   → Ha detto che aveva visto Marco.",
           "",
-          "   'Verrò alle tre.'",
-          "   → Ha detto che sarebbe venuto",
-          "     alle tre.",
-          "",
           "IF THE STATEMENT IS STILL TRUE:",
           "   tense shift is optional.",
           "   'Roma è bella.'",
           "   → Ha detto che Roma è/era bella.",
-          "   Both work."
+          "",
+          "NO SHIFT after a PRESENT verb:",
+          "   Dice che viene domani.",
+          "   = He says he's coming tomorrow."
         ]
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "The FUTURE becomes the PAST conditional:",
+          "",
+          "   'Verrò alle tre.'                  Press 1",
+          "   → Ha detto che sarebbe venuto",
+          "     alle tre.",
+          "   = He said he would come at three.",
+          "",
+          "NOT 'che verrebbe'. English says 'would",
+          "come'; Italian says 'would HAVE come'.",
+          "",
+          "PAST CONDITIONAL = avrei or sarei",
+          "+ past participle:                    Press 2",
+          "   avrei finito    = I'd have finished",
+          "   sarei venuto/a  = I'd have come",
+          "",
+          "Same rule for promises and plans:",
+          "   Ha detto che mi avrebbe chiamato.",
+          "   = He said he would call me."
+        ],
+        "pronunciation_mappings": {
+          "1": "Verrò alle tre. Ha detto che sarebbe venuto alle tre.",
+          "2": "Avrei finito. Sarei venuto."
+        }
       }
     ]
   },
@@ -176,56 +203,65 @@
     "lesson_id": "034",
     "trigger_word": "straordinario",
     "trigger_card_number": 1956,
-    "title": "LESSON 34: RELATIVE CLAUSES",
+    "title": "LESSON 42: IL QUALE & IL CUI",
     "header_color": "magenta",
     "pages": [
       {
         "page": 1,
         "total_pages": 2,
         "content": [
-          "RELATIVE CLAUSES connect ideas about",
-          "a noun. Italian has three tools:",
+          "Lesson 17 gave you CHE and CUI. Formal",
+          "Italian adds IL QUALE, which agrees",
+          "with the noun it stands for:",
+          "   il quale, la quale, i quali, le quali",
           "",
-          "CHE = who/that/which (most common):",
-          "   La donna che parla è mia madre.",
-          "   = The woman who is speaking...",
-          "   Il libro che ho letto era bello.",
-          "   = The book that I read...",
+          "After a preposition, like cui:        Press 1",
+          "   l'amico con il quale parlo",
+          "   = l'amico con cui parlo",
+          "   (it contracts: al quale, della quale)",
           "",
-          "CHE works for subject and direct",
-          "object. Simple, no preposition.",
+          "It shows WHO is meant:                Press 2",
+          "   la sorella di Marco, la quale vive",
+          "   a Roma = Marco's sister, who lives...",
+          "   (with che, it could be Marco)",
           "",
-          "CUI = whom/which (with preposition):",
-          "   La persona di cui parlo...",
-          "   = The person I'm talking about...",
-          "   Il motivo per cui sono qui...",
-          "   = The reason I'm here..."
+          "Speech prefers che and cui. Il quale",
+          "is for writing, news and offices."
         ],
-        "pronunciation": "La persona di cui parlo."
+        "pronunciation": "L'amico con il quale parlo.",
+        "pronunciation_mappings": {
+          "1": "L'amico con il quale parlo. L'amico con cui parlo.",
+          "2": "La sorella di Marco, la quale vive a Roma."
+        }
       },
       {
         "page": 2,
         "total_pages": 2,
         "content": [
-          "CUI WITH PREPOSITIONS:",
+          "IL CUI = WHOSE. The article agrees with",
+          "the thing owned, not with the owner:",
           "",
-          "   di cui = about/of whom/which",
-          "   a cui = to whom/which",
-          "   con cui = with whom/which",
-          "   per cui = for which / that's why",
-          "   in cui = in which",
-          "   su cui = on which",
+          "   l'autore il cui libro ho letto     Press 1",
+          "      = the author whose book I read",
+          "   la donna i cui figli conosco       Press 2",
+          "      = the woman whose children I know",
+          "   Marco, la cui moglie è di Napoli   Press 3",
+          "      = Marco, whose wife is from Naples",
           "",
-          "IL QUALE / LA QUALE (formal):",
-          "   agrees in gender and number!",
-          "   il quale, la quale,",
-          "   i quali, le quali",
-          "   L'uomo con il quale parlo...",
-          "   = same as 'con cui' but formal",
+          "Cui itself never changes: only the",
+          "article moves with the noun after it.",
           "",
-          "RULE OF THUMB: use che and cui.",
-          "Reserve il quale for formal writing."
-        ]
+          "Three more prepositions with cui:     Press 4",
+          "   su cui  = on which",
+          "   tra cui = among which, including",
+          "   da cui  = from which, from whom"
+        ],
+        "pronunciation_mappings": {
+          "1": "L'autore il cui libro ho letto.",
+          "2": "La donna i cui figli conosco.",
+          "3": "Marco, la cui moglie è di Napoli.",
+          "4": "Su cui. Tra cui. Da cui."
+        }
       }
     ]
   }

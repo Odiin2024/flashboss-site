@@ -17,13 +17,13 @@
           "   Mann, Tag, alt",
           "",
           "e → 如英语 bet 中的 e                    按 2",
-          "   essen, Bett, zehn",
+          "   essen, Bett, echt",
           "",
           "i → 如英语 machine 中的 i                按 3",
-          "   vier, Kino, Kind",
+          "   vier, Kino, wir",
           "",
           "o → 如英语 over 中的 o                   按 4",
-          "   Sohn, rot, Ort",
+          "   Sohn, rot, Boot",
           "",
           "u → 如英语 moon 中的 u                   按 5",
           "   Uhr, Mut, Buch"
@@ -31,9 +31,9 @@
         "pronunciation": "Lektion eins",
         "pronunciation_mappings": {
           "1": "Mann, Tag, alt",
-          "2": "essen, Bett, zehn",
-          "3": "vier, Kino, Kind",
-          "4": "Sohn, rot, Ort",
+          "2": "essen, Bett, echt",
+          "3": "vier, Kino, wir",
+          "4": "Sohn, rot, Boot",
           "5": "Uhr, Mut, Buch"
         }
       },
@@ -46,10 +46,10 @@
           "ä → 类似 bed 中的 e                      按 1",
           "   Käse, Mädchen, Männer",
           "",
-          "ö → 嘴唇呈「吹哨」状                     按 2",
+          "ö → 发 ay（hay）的音，双唇收圆           按 2",
           "   schön, hören, können",
           "",
-          "ü → 嘴唇撮圆：如 boo 中的 oo             按 3",
+          "ü → 发 ee（see）的音，双唇收圆           按 3",
           "   über, Tür, Übung",
           "",
           "提示：无法输入变音？可用 ae、oe、ue 代替",
@@ -135,9 +135,9 @@
           "   sprechen → 'sprech'n'",
           "   haben → 'hab'n'",
           "",
-          "-e 词尾 → 如 soft th'e 中的 e            按 2",
-          "   Katze → 'Katz'e'",
-          "   bitte → 'bitt'e'",
+          "-e 词尾 → 如英语 sofa 中的 a             按 2",
+          "   Katze → 'KAT-suh'",
+          "   bitte → 'BIT-uh'",
           "",
           "-er 词尾 → r 音弱化：                    按 3",
           "   Vater → 'Vata'",
@@ -163,24 +163,24 @@
           "最明显的例子是 'sh' 和 'th'：",
           "",
           "s + h = ..s + h..（非 'sh' 音！）        按 1",
-          "   Bisher → bis-her（非 'bi-sher'）",
+          "   bisher → bis-her（非 'bi-sher'）",
           "   Gasheizung → gas-heizung",
           "",
           "t + h = ..t + h..（非 'th' 音！）        按 2",
           "   Rathaus → Rat-haus（非 'Ra-thaus'）",
-          "   Mathilde → Mat-hilde",
+          "   Guthaben → Gut-haben",
           "",
           "辅音丛（两个音都要发出！）：",
           "",
           "pf： Pferd, Apfel, Kopf                  按 3",
-          "",
           "kn： Knie, Knabe, Knopf                  按 4",
           "",
-          "ng： singen, lang, Finger                按 5"
+          "ng = 一个音，如英语 singer               按 5",
+          "   singen, lang, Finger（Finger 不发 g！）"
         ],
         "pronunciation_mappings": {
           "1": "Bisher, Gasheizung",
-          "2": "Rathaus, Mathilde",
+          "2": "Rathaus, Guthaben",
           "3": "Pferd, Apfel, Kopf",
           "4": "Knie, Knabe, Knopf",
           "5": "singen, lang, Finger"
@@ -219,8 +219,8 @@
   },
   {
     "lesson_id": "002",
-    "trigger_word": "müssen",
-    "trigger_card_number": 12,
+    "trigger_word": "dürfen",
+    "trigger_card_number": 4,
     "title": "第2课：情态动词",
     "header_color": "cyan",
     "pages": [
@@ -234,6 +234,7 @@
           "können  = 能        müssen  = 必须",
           "dürfen  = 可以      wollen  = 想要",
           "sollen  = 应该      möchten = 想要（礼貌）",
+          "mögen   = 喜欢",
           "",
           "结构：情态动词 + 动词原形放句末",
           "",
@@ -252,8 +253,8 @@
   },
   {
     "lesson_id": "003",
-    "trigger_word": "warum",
-    "trigger_card_number": 19,
+    "trigger_word": "wann",
+    "trigger_card_number": 18,
     "title": "第3课：疑问词",
     "header_color": "cyan",
     "pages": [
@@ -283,14 +284,14 @@
   },
   {
     "lesson_id": "004",
-    "trigger_word": "Minute",
-    "trigger_card_number": 30,
+    "trigger_word": "Frage",
+    "trigger_card_number": 25,
     "title": "第4课：性别与冠词",
     "header_color": "cyan",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
           "每个德语名词都有一个「性别」：",
           "",
@@ -304,20 +305,44 @@
           "“女孩”（das Mädchen）这个词居然是中性！",
           "",
           "策略：一定要连同「冠词」一起记忆名词。",
-          "不要只记“Minute”，而要记",
-          "“die Minute”。每次都要一起说！",
+          "不要只记“Frage”，而要记",
+          "“die Frage”。每次都要一起说！",
           "",
           "你会逐渐发现规律，但现在请记住：",
           "把每个冠词当作单词的一部分来背。"
         ],
         "pronunciation": "Lektion vier"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "卡片的写法：",
+          "",
+          "der/die Lehrer/in = der Lehrer、die Lehrerin",
+          "（男老师和女老师）。词形变化更大的，",
+          "两种形式都完整写出：der/die Kollege/Kollegin",
+          "笔记（按 8 键）一次给出两种复数：",
+          "die Lehrer(innen)  = Lehrer 和 Lehrerinnen",
+          "die Student(inn)en = Studenten 和 Studentinnen",
+          "",
+          "an|kommen（到达）是可分动词：",
+          "竖线 | 前面的部分要放到句末：",
+          "Ich komme um 8 Uhr an.（我八点到。）",
+          "",
+          "sich freuen（高兴）是反身动词：sich 相当于",
+          "英语的 -self（自己），随人称变化：",
+          "ich freue mich     mich = 我自己",
+          "du freust dich     dich = 你自己",
+          "er/sie freut sich  sich = 他/她自己"
+        ]
       }
     ]
   },
   {
     "lesson_id": "005",
-    "trigger_word": "zwanzig",
-    "trigger_card_number": 51,
+    "trigger_word": "eins",
+    "trigger_card_number": 33,
     "title": "第5课：德语数字",
     "header_color": "cyan",
     "pages": [
@@ -335,9 +360,9 @@
           "8 = acht      11 = elf",
           "9 = neun      12 = zwölf",
           "",
-          "DREIZEHN 与 DREIZIG：                   按 3",
+          "DREIZEHN 与 DREISSIG：                  按 3",
           "",
-          "drei + zehn = 13   drei + zig = 30",
+          "drei + zehn = 13   但 30 = dreißig（ß！）",
           "14 = vierzehn  →  40 = vierzig",
           "17 = siebzehn  →  70 = siebzig",
           "",
@@ -348,7 +373,7 @@
         "pronunciation_mappings": {
           "1": "eins, zwei, drei, vier, fünf, sechs",
           "2": "sieben, acht, neun, zehn, elf, zwölf",
-          "3": "drei plus zehn ist dreizehn, drei plus zick ist dreißig, vierzehn, vierzig, siebzehn, siebzig, und nicht sieben zehn und sieben zick"
+          "3": "drei plus zehn ist dreizehn, dreißig, vierzehn, vierzig, siebzehn, siebzig, und nicht siebenzehn und siebenzig"
         }
       },
       {
@@ -359,7 +384,7 @@
           "",
           "zwei 与 drei：很难区分！                按 1",
           "电话中为清晰起见，请说「zwo」：",
-          "   Mein PIN ist 2284",
+          "   Meine PIN ist 2284",
           "",
           "报时表达：                              按 2",
           "Es ist drei Uhr.（现在三点整）",
@@ -375,7 +400,7 @@
           "用逗号表示小数（3,50€）！"
         ],
         "pronunciation_mappings": {
-          "1": "Mein PIN ist zwo zwo acht vier",
+          "1": "Meine PIN ist zwo zwo acht vier",
           "2": "Es ist drei Uhr. Es ist halb vier.",
           "3": "zwanzig, vierzig, hundert, sechstausend, zweitausendsechshundertachtundzwanzig"
         }
@@ -386,7 +411,7 @@
         "content": [
           "序数词（第一、第二、第三……）：",
           "",
-          "1-19：在数字后加 -te：                   按 1",
+          "1-19：加-te（但 erste、dritte、siebte）  按 1",
           "erste（第1）    vierte（第4）   siebte（第7）",
           "zweite（第2）   fünfte（第5）   achte（第8）",
           "dritte（第3）   sechste（第6）  neunte（第9）",
@@ -415,7 +440,7 @@
   {
     "lesson_id": "006",
     "trigger_word": "antworten",
-    "trigger_card_number": 62,
+    "trigger_card_number": 68,
     "title": "第6课：现在时动词",
     "header_color": "cyan",
     "pages": [
@@ -426,18 +451,18 @@
           "德语动词根据动作的执行者",
           "而变化：",
           "",
-          "示例：antworten（回答）",
+          "示例：lernen（学习）",
           "",
-          "ich antworte       = 我回答",
-          "du antwortest      = 你回答（非正式）",
-          "er antwortet       = 他回答",
-          "sie antwortet      = 她回答",
-          "es antwortet       = 它回答",
-          "wir antworten      = 我们回答",
-          "ihr antwortet      = 你们回答",
-          "sie/Sie antworten  = 他们/您回答",
+          "ich lerne          = 我学习",
+          "du lernst          = 你学习（非正式）",
+          "er/sie/es lernt    = 他/她/它学习",
+          "wir lernen         = 我们学习",
+          "ihr lernt          = 你们学习",
+          "sie/Sie lernen     = 他们/您学习",
           "",
           "规律：-e，-st，-t，-en，-t，-en",
+          "词干以 -t/-d 结尾？加 -e-：",
+          "du antwortest, er antwortet",
           "",
           "大多数规则动词都遵循此规律！",
           "注意：不规则动词（如 sein、haben）形式不同。"
@@ -449,7 +474,7 @@
   {
     "lesson_id": "007",
     "trigger_word": "Geld",
-    "trigger_card_number": 184,
+    "trigger_card_number": 190,
     "title": "第7课：否定",
     "header_color": "cyan",
     "pages": [
@@ -466,14 +491,15 @@
           "Ich verstehe nicht.（我不明白）",
           "Das ist nicht gut.（那不好）",
           "",
-          "KEIN — 替换冠词：",
+          "KEIN — 替换 ein（或无冠词）：",
           "",
           "Ich habe einen Hund.",
           "→ Ich habe keinen Hund.",
           "（我有一只狗 → 我没有狗）",
           "",
-          "规则：名词用 kein，",
-          "　　　其他一律用 nicht！"
+          "规则：kein 替换 ein／无冠词；",
+          "　　　nicht 否定其余一切",
+          "　　　（Ich sehe den Bus nicht.）"
         ],
         "pronunciation": "Lektion sieben"
       }

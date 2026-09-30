@@ -1,74 +1,168 @@
 [
   {
-    "lesson_id": "047",
-    "trigger_word": "arbaro",
-    "title": "LEKTION 47: PERFEKTZEITEN",
+    "lesson_id": "052",
+    "trigger_word": "mi revenos",
+    "title": "LEKTION 53: DAS PRÄFIX 'RE-'",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "Verbinde ESTI mit Partizipien zu fein",
-          "abgestuften zusammengesetzten Zeiten.",
+          "Das Präfix RE- bedeutet WIEDER oder",
+          "ZURÜCK: Die Handlung geschieht noch einmal",
+          "oder geht dorthin zurück, woher sie kam.",
           "",
-          "VERLAUFSFORM (laufende Handlung):",
-          "Mi estas leganta. = Ich lese gerade.",
-          "Mi estis leganta. = Ich las gerade.",
-          "Mi estos leganta. = Ich werde lesen.",
+          "WIEDER:                              Drücke 1",
+          "legi     → relegi     = lesen → wieder lesen",
+          "fari     → refari     = machen → neu machen",
+          "kontakti → rekontakti = erneut kontaktieren",
           "",
-          "PERFEKT (abgeschlossene Handlung):",
-          "Mi estas leginta. = Ich habe gelesen.",
-          "Mi estis leginta. = Ich hatte gelesen.",
-          "Mi estos leginta. = Ich werde gelesen haben.",
+          "ZURÜCK:                              Drücke 2",
+          "veni     → reveni     = kommen → zurückkommen",
+          "doni     → redoni     = geben → zurückgeben",
+          "sendi    → resendi    = senden → zurücksenden",
           "",
-          "PASSIV ZUSAMMENGESETZT:",
-          "La libro estas legita. = ist gelesen.",
-          "La libro estis legata. = wurde gelesen.",
-          "",
-          "So entstehen genaue Zeitunterschiede!"
+          "IM GEBRAUCH:                         Drücke 3",
+          "Mi revenos al la temo morgaŭ.",
+          "= Ich komme morgen auf das Thema zurück.",
+          "Ĝis revido! = Auf Wiedersehen!"
         ],
-        "pronunciation": "Leciono kvardek sep"
+        "pronunciation_mappings": {
+          "1": "Legi. Relegi. Fari. Refari. Kontakti. Rekontakti.",
+          "2": "Veni. Reveni. Doni. Redoni. Sendi. Resendi.",
+          "3": "Mi revenos al la temo morgaŭ. Ĝis revido!"
+        },
+        "pronunciation": "Leciono kvindek du"
       }
     ]
   },
   {
     "lesson_id": "048",
-    "trigger_word": "pikniko",
-    "title": "LEKTION 48: WORTABLEITUNG",
+    "trigger_word": "diskutrondo",
+    "title": "LEKTION 54: WÖRTER BAUEN",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "Jedes Esperanto-Wort wechselt die Wortart",
-          "allein durch die Endung!",
+          "Jede Wurzel kann jede Endung annehmen,",
+          "solange die Bedeutung Sinn ergibt:",
           "",
-          "AUS EINER WURZEL:",
-          "bel- (Wurzel für „Schönheit“)",
-          "bela    = schön (Adjektiv -a)",
-          "bele    = auf schöne Art (Adverb -e)",
-          "belo    = Schönheit (Substantiv -o)",
-          "beli    = schön sein (Verb -i)",
+          "SUKCES- (Erfolg):                    Drücke 1",
+          "sukceso = Erfolg       sukcesi = Erfolg haben",
+          "sukcesa = erfolgreich  sukcese = mit Erfolg",
           "",
-          "vera → vere → vero  (wahr/wirklich/Wahrheit)",
-          "varma → varme → varmo  (warm/warm/Wärme)",
+          "FIN- (Ende):                         Drücke 2",
+          "fino = Ende            fini = beenden",
+          "fina = End-, letzte    fine = schließlich",
           "",
-          "AUCH AFFIXE ANHÄNGEN:",
-          "belega   = wunderschön (-eg- Verstärkung)",
-          "beligi   = verschönern (-ig- bewirkend)",
-          "beleco   = Schönheit als Eigenschaft (-ec-)",
-          "Eine Wurzel, unendliche Möglichkeiten!"
+          "EINE NOMEN-WURZEL WIRD ZUM VERB:     Drücke 3",
+          "telefono → telefoni = Telefon → telefonieren",
+          "martelo  → marteli  = Hammer → hämmern",
+          "krono    → kroni    = Krone → krönen"
         ],
+        "pronunciation_mappings": {
+          "1": "Sukceso. Sukcesi. Sukcesa. Sukcese.",
+          "2": "Fino. Fini. Fina. Fine.",
+          "3": "Telefono. Telefoni. Martelo. Marteli. Krono. Kroni."
+        },
         "pronunciation": "Leciono kvardek ok"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "KOMPOSITA kleben Wurzeln zusammen. Die",
+          "LETZTE Wurzel ist die Hauptsache: Sie sagt,",
+          "was das Ding IST. Die erste grenzt es ein.",
+          "",
+          "DIE LETZTE WURZEL ENTSCHEIDET:       Drücke 1",
+          "diskut + rondo  = Diskussionsrunde",
+          "kontakt + listo = Kontaktliste",
+          "foto + albumo   = Fotoalbum",
+          "",
+          "EIN -O- KANN SIE VERBINDEN (KLANG):  Drücke 2",
+          "lern + o + libro = lernolibro = Lehrbuch",
+          "",
+          "AUCH PRÄPOSITIONEN MACHEN MIT:       Drücke 3",
+          "antaŭ + kondiĉo = antaŭkondiĉo = Voraussetzung",
+          "post + parolo   = postparolo = Nachwort",
+          "ĉe + esti       = ĉeesti = anwesend sein"
+        ],
+        "pronunciation_mappings": {
+          "1": "Diskutrondo. Kontaktlisto. Fotoalbumo.",
+          "2": "Lernolibro.",
+          "3": "Antaŭkondiĉo. Postparolo. Ĉeesti."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "047",
+    "trigger_word": "materialo",
+    "title": "LEKTION 55: ZEITEN MIT ESTI",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "ESTI + aktives Partizip bildet zusammen-",
+          "gesetzte Zeiten. Du brauchst sie SELTEN:",
+          "Das einfache Verb sagt schon alles.",
+          "",
+          "DER NORMALE WEG:                     Drücke 1",
+          "Mi legas. = Ich lese. / Ich lese gerade.",
+          "Mi legis. = Ich las. / Ich habe gelesen.",
+          "Mi legos. = Ich werde lesen.",
+          "(Wie im Deutschen: eine Form für alles.)",
+          "",
+          "ZUSAMMENGESETZT = NUR ZUR BETONUNG:  Drücke 2",
+          "Mi estas leganta.",
+          "= Ich bin (gerade mitten) am Lesen.",
+          "Mi jam estis manĝinta, kiam vi venis.",
+          "= Ich hatte schon gegessen, als du kamst.",
+          "Sag nicht bei jedem Satz 'estas leganta':",
+          "Das klingt seltsam."
+        ],
+        "pronunciation_mappings": {
+          "1": "Mi legas. Mi legis. Mi legos.",
+          "2": "Mi estas leganta. Mi jam estis manĝinta, kiam vi venis."
+        },
+        "pronunciation": "Leciono kvardek sep"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "DAS PASSIV IST ANDERS: ESTI + -ITA",
+          "(oder -ATA) ist das Alltagspassiv.",
+          "",
+          "EIN PARTIZIP, JEDE ZEIT:             Drücke 1",
+          "La salono estas rezervita. = ist gebucht",
+          "La salono estis rezervita. = war gebucht",
+          "La salono estos rezervita. = wird gebucht sein",
+          "La salono estus rezervita. = wäre gebucht",
+          "",
+          "IM GEBRAUCH:                         Drücke 2",
+          "Ĉiuj materialoj estos provizitaj.",
+          "= Alle Materialien werden gestellt.",
+          "La kunveno estis nuligita.",
+          "= Das Treffen wurde abgesagt."
+        ],
+        "pronunciation_mappings": {
+          "1": "La salono estas rezervita. La salono estis rezervita. La salono estos rezervita. La salono estus rezervita.",
+          "2": "Ĉiuj materialoj estos provizitaj. La kunveno estis nuligita."
+        }
       }
     ]
   },
   {
     "lesson_id": "049",
     "trigger_word": "respondeco",
-    "title": "LEKTION 49: DIE ENDUNG „-END-“",
+    "title": "LEKTION 56: DAS SUFFIX '-END-'",
     "header_color": "green",
     "pages": [
       {
@@ -100,100 +194,38 @@
   },
   {
     "lesson_id": "050",
-    "trigger_word": "butono",
-    "title": "LEKTION 50: DIE ENDUNG „-UM-“",
+    "trigger_word": "parkumado",
+    "title": "LEKTION 57: DAS SUFFIX '-UM-'",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "Die Endung -UM- hat KEINE feste Bedeutung!",
-          "Sie ist die „Platzhalter“-Endung für Wörter,",
-          "die in kein anderes Muster passen.",
-          "Lernen Sie sie anhand der Verwendung.",
+          "Das Suffix -UM- hat KEINE feste Bedeutung.",
+          "Es verbindet eine Wurzel mit einer",
+          "verwandten Idee; jedes Wort lernst du einzeln.",
           "",
-          "HÄUFIGE -UM--WÖRTER:",
-          "plena   → plenumi   = voll → erfüllen",
-          "kolo    → kolumi    = Hals → Kragen",
-          "butono  → butonumi  = Knopf → zuknöpfen",
-          "aero    → aerumi    = Luft → lüften",
-          "brako   → brakumi   = Arm → umarmen",
-          "okulo   → okulumi   = Auge → anstarren",
-          "komuna  → komunumo  = gemeinsam → Gemeinschaft",
+          "HÄUFIGE -UM-WÖRTER:                  Drücke 1",
+          "parko   → parkumi    = Park → parken (Auto)",
+          "plena   → plenumi    = voll → erfüllen",
+          "kolo    → kolumo     = Hals → Kragen",
+          "butono  → butonumi   = Knopf → zuknöpfen",
+          "brako   → brakumi    = Arm → umarmen",
+          "aero    → aerumi     = Luft → lüften",
+          "komuna  → komunumo   = gemeinsam → Gemeinde",
           "",
-          "IM GEBRAUCH:",
+          "IM GEBRAUCH:                         Drücke 2",
+          "Kie mi povas parkumi?",
+          "= Wo kann ich parken?",
           "Mi plenumis mian promeson.",
-          "(Ich habe mein Versprechen erfüllt.)",
-          "-UM- bedeutet „etwas damit tun“!"
+          "= Ich habe mein Versprechen gehalten."
         ],
+        "pronunciation_mappings": {
+          "1": "Parko. Parkumi. Plena. Plenumi. Kolo. Kolumo. Butono. Butonumi. Brako. Brakumi. Aero. Aerumi. Komuna. Komunumo.",
+          "2": "Kie mi povas parkumi? Mi plenumis mian promeson."
+        },
         "pronunciation": "Leciono kvindek"
-      }
-    ]
-  },
-  {
-    "lesson_id": "051",
-    "trigger_word": "plibonigi",
-    "title": "LEKTION 51: DAS PRÄFIX „EKS-“",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "Das Präfix EKS- bedeutet „ehemalig“",
-          "Es zeigt an, dass etwas nicht mehr gilt.",
-          "",
-          "EHEMALIGE BEZIEHUNGEN:",
-          "edzo → eksedzo = Mann → Ex-Mann",
-          "edzino → eksedzino = Frau → Ex-Frau",
-          "amiko → eksamiko = Freund → Ex-Freund",
-          "",
-          "EHEMALIGE ÄMTER/STAND:",
-          "prezidento → eksprezidento = Ex-Präsident",
-          "membro → eksmembro = Mitglied → ehem. Mitgl.",
-          "soldato → ekssoldato = Soldat → Ex-Soldat",
-          "studento → eksstudento = Student → Ex-Student",
-          "",
-          "IN VERWENDUNG:",
-          "Mia eksedzo loĝas en Parizo.",
-          "(Mein Ex-Mann lebt in Paris.)",
-          "EKS- funktioniert mit jedem Substantiv!"
-        ],
-        "pronunciation": "Leciono kvindek unu"
-      }
-    ]
-  },
-  {
-    "lesson_id": "052",
-    "trigger_word": "paŭzejo",
-    "title": "LEKTION 52: DIE ENDUNG „-EG-“",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "Die Endung -EG- verstärkt Dinge!",
-          "",
-          "DINGE GROSS MACHEN:",
-          "domo    → domego    = Haus → Villa",
-          "vento   → ventego   = Wind → Sturm",
-          "bona    → bonega    = gut → hervorragend",
-          "",
-          "VERSTÄRKEN:",
-          "malsata → malsatega = hungrig → ausgehungert",
-          "venki   → venkegi   = siegen → vernichten",
-          "ami     → amegi     = lieben → vergöttern",
-          "",
-          "-EG- ist das Gegenteil von -ET-:",
-          "dometo (Häuschen) <-> domego (Villa)",
-          "",
-          "Esperanto hat viele Endungen. Für diese",
-          "hilft eine Eselsbrücke: denk an",
-          "„EGZAGERATE“ — übertreiben!"
-        ],
-        "pronunciation": "Leciono kvindek du"
       }
     ]
   }

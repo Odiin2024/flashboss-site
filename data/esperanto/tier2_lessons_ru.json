@@ -1,289 +1,352 @@
 [
-  {
-    "lesson_id": "011",
-    "trigger_word": "estis",
-    "header_color": "green",
-    "title": "УРОК 11: ПРОШЕДШЕЕ ВРЕМЯ",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono dek unu",
-        "content": [
-          "Чтобы говорить о прошлом на эсперанто,",
-          "измени окончание глагола с -as на -is.",
-          "Вот и всё!",
-          "",
-          "НАСТОЯЩЕЕ   →  ПРОШЕДШЕЕ:",
-          "mi estas    →  mi estis   (я есть → я был)",
-          "vi parolas → vi parolis (говоришь → говорил)",
-          "li manĝas   →  li manĝis  (он ест → он ел)",
-          "",
-          "Окончание -is подходит ВСЕМ подлежащим:",
-          "mi estis    =  я был",
-          "vi estis    =  ты был(а)",
-          "li estis    =  он был",
-          "ni estis    =  мы были",
-          "ili estis   =  они были",
-          "",
-          "Одна форма для всех. Нет неправильных",
-          "глаголов! Просто замени -as на -is."
+    {
+        "lesson_id": "019",
+        "trigger_word": "nomiĝi",
+        "title": "УРОК 21: СУФФИКС «-IĜ-»",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "Суффикс -IĜ- = «становиться», «делаться»:",
+                    "изменение, которое просто происходит.",
+                    "",
+                    "ПРИЛАГАТЕЛЬНОЕ → ГЛАГОЛ:               Нажми 1",
+                    "varma   → varmiĝi    = тёплый → согреться",
+                    "riĉa    → riĉiĝi     = богатый → разбогатеть",
+                    "malpura → malpuriĝi  = грязный → испачкаться",
+                    "",
+                    "СУЩЕСТВИТЕЛЬНОЕ → ГЛАГОЛ:              Нажми 2",
+                    "edzo    → edziĝi     = муж → жениться",
+                    "glacio  → glaciiĝi   = лёд → замёрзнуть",
+                    "",
+                    "ВАЖНО: у глаголов на -IĜ- нет дополнения.",
+                    "Это не действие НАД чем-то, а событие."
+                ],
+                "pronunciation": "Leciono dek naŭ",
+                "pronunciation_mappings": {
+                    "1": "Varma. Varmiĝi. Riĉa. Riĉiĝi. Malpura. Malpuriĝi.",
+                    "2": "Edzo. Edziĝi. Glacio. Glaciiĝi."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "В ГЛАГОЛЕ -IĜ- УБИРАЕТ ДОПОЛНЕНИЕ:     Нажми 1",
+                    "Mi komencas la lecionon.",
+                    "= Я начинаю урок.",
+                    "La leciono komenciĝas.",
+                    "= Урок начинается.",
+                    "",
+                    "Li fermas la pordon.                   Нажми 2",
+                    "= Он закрывает дверь.",
+                    "La pordo fermiĝas.",
+                    "= Дверь закрывается.",
+                    "",
+                    "СТАНОВИТЬСЯ = FARIĜI:                  Нажми 3",
+                    "Li fariĝis riĉa.     = Он стал богатым.",
+                    "",
+                    "ИМЯ — ДВУМЯ СПОСОБАМИ, ОБА ВЕРНЫ:      Нажми 4",
+                    "Mi nomiĝas Marko.     (Меня зовут Марко.)",
+                    "Mia nomo estas Marko. (Моё имя — Марко.)"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Mi komencas la lecionon. La leciono komenciĝas.",
+                    "2": "Li fermas la pordon. La pordo fermiĝas.",
+                    "3": "Li fariĝis riĉa.",
+                    "4": "Mi nomiĝas Marko. Mia nomo estas Marko."
+                }
+            }
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "012",
-    "trigger_word": "estos",
-    "header_color": "green",
-    "title": "УРОК 12: БУДУЩЕЕ ВРЕМЯ",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono dek du",
-        "content": [
-          "Чтобы образовать будущее время, замени",
-          "окончание глагола на -os. Всё так просто!",
-          "",
-          "НАСТОЯЩЕЕ   →  БУДУЩЕЕ:",
-          "mi estas     →  mi estos   (я есть → буду)",
-          "vi parolas   →  vi parolos (ты говоришь →",
-          "будешь говорить)",
-          "li manĝas    →  li manĝos  (он ест → будет",
-          "есть)",
-          "",
-          "ВСЕ ТРИ ВРЕМЕНИ ВМЕСТЕ:",
-          "mi parolis   =  я говорил   (прошедшее -is)",
-          "mi parolas   =  я говорю    (настоящее -as)",
-          "mi parolos   =  я буду говорить (будущее -os)",
-          "",
-          "Три времени — три окончания. Для всех",
-          "подлежащих одинаково. Эсперанто делает",
-          "спряжение глаголов удивительно простым!"
+    },
+    {
+        "lesson_id": "072",
+        "trigger_word": "instruisto",
+        "title": "УРОК 22: -IST-, -ANT- И -UL-",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "Три суффикса превращают слова в ЛЮДЕЙ:",
+                    "",
+                    "-IST- = профессия или убеждения:       Нажми 1",
+                    "  instruisto   = учитель (instrui = учить)",
+                    "  programisto  = программист",
+                    "  esperantisto = эсперантист",
+                    "",
+                    "-ANT- = тот, кто делает сейчас:        Нажми 2",
+                    "  lernanto     = учащийся (lerni = учиться)",
+                    "  parolanto    = говорящий (paroli = говорить)",
+                    "  komencanto   = начинающий",
+                    "",
+                    "-UL- = человек с таким качеством:      Нажми 3",
+                    "  junulo       = молодой человек (juna)",
+                    "  maljunulo    = старик (maljuna)",
+                    "",
+                    "Mi estas komencanto.                   Нажми 4",
+                    "= Я начинающий."
+                ],
+                "pronunciation_mappings": {
+                    "1": "Instruisto. Programisto. Esperantisto.",
+                    "2": "Lernanto. Parolanto. Komencanto.",
+                    "3": "Junulo. Maljunulo.",
+                    "4": "Mi estas komencanto."
+                }
+            }
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "013",
-    "trigger_word": "pomo",
-    "header_color": "green",
-    "title": "УРОК 13: ВИНИТЕЛЬНЫЙ -N (ОБЪЕКТ)",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono dek tri",
-        "content": [
-          "Окончание -n указывает на ПРЯМОЙ ОБЪЕКТ —",
-          "то, на кого или что направлено действие.",
-          "",
-          "ПРЯМОЙ ОБЪЕКТ = получает действие:",
-          "",
-          "La kato vidas la hundon.",
-          "(Кот видит собаку.)",
-          "",
-          "kato   = подлежащее (кто видит)",
-          "hundon = объект (кого видят) + -n",
-          "",
-          "ЕЩЁ ПРИМЕРЫ:",
-          "Mi manĝas pomon.  = Я ем яблоко.",
-          "Mi legas libron.  = Я читаю книгу.",
-          "Ŝi amas muzikon.  = Она любит музыку.",
-          "",
-          "Окончание -n показывает, кто или что",
-          "получает действие. Без -n — это подлежащее!"
+    },
+    {
+        "lesson_id": "008",
+        "trigger_word": "patrino",
+        "title": "УРОК 23: ЖЕНСКИЙ СУФФИКС -IN-",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "Чтобы слово обозначало женщину, добавь",
+                    "-IN- после корня, перед окончанием.",
+                    "",
+                    "ЧЛЕНЫ СЕМЬИ:                           Нажми 1",
+                    "patro → patrino    = отец → мать",
+                    "frato → fratino    = брат → сестра",
+                    "filo  → filino     = сын → дочь",
+                    "edzo  → edzino     = муж → жена",
+                    "",
+                    "СТРОЙ:",
+                    "patr-in-o  = мать (сущ. -o)",
+                    "patr-in-a  = материнский (прил. -a)",
+                    "",
+                    "РАБОТАЕТ И С ДРУГИМИ СЛОВАМИ:          Нажми 2",
+                    "knabo → knabino    = мальчик → девочка",
+                    "hundo → hundino    = собака → самка собаки",
+                    "amiko → amikino    = друг → подруга",
+                    "(А «моя девушка» — koramikino.)"
+                ],
+                "pronunciation": "Leciono ok",
+                "pronunciation_mappings": {
+                    "1": "Patro. Patrino. Frato. Fratino. Filo. Filino. Edzo. Edzino.",
+                    "2": "Knabo. Knabino. Hundo. Hundino. Amiko. Amikino. Koramikino."
+                }
+            }
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "014",
-    "trigger_word": "glaso",
-    "header_color": "green",
-    "title": "УРОК 14: -N ДЛЯ НАПРАВЛЕНИЯ",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono dek kvar",
-        "content": [
-          "Окончание -n также указывает НАПРАВЛЕНИЕ",
-          "к месту. Это его второе главное употребление!",
-          "",
-          "МЕСТОПОЛОЖЕНИЕ vs НАПРАВЛЕНИЕ:",
-          "Mi estas en la domo.  = Я в доме.",
-          "Mi iras en la domon.  = Я иду в дом.",
-          "",
-          "La akvo estas en la glaso.",
-          "(Вода в стакане.)",
-          "Mi verŝas akvon en la glason.",
-          "(Я наливаю воду в стакан.)",
-          "",
-          "ЕЩЁ ПРИМЕРЫ:",
-          "Mi iras hejmen.      = Я иду домой.",
-          "Ni iras Londonon.    = Мы едем в Лондон.",
-          "",
-          "Окончание -n показывает движение К чему-то.",
-          "Нет -n? Ты уже там!"
+    },
+    {
+        "lesson_id": "028",
+        "trigger_word": "gepatroj",
+        "title": "УРОК 24: ПРИСТАВКА «GE-»",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "Приставка GE- значит «оба пола вместе».",
+                    "Слова с GE- стоят во множественном числе:",
+                    "они называют смешанную группу.",
+                    "",
+                    "СЕМЬЯ:                                 Нажми 1",
+                    "patro + patrino → gepatroj = родители",
+                    "frato + fratino → gefratoj = братья и сёстры",
+                    "edzo + edzino   → geedzoj  = супруги",
+                    "",
+                    "ЕЩЁ ПРИМЕРЫ:                           Нажми 2",
+                    "geamikoj    = друзья (мужчины и женщины)",
+                    "gesinjoroj  = дамы и господа",
+                    "gelernantoj = ученики (мальчики и девочки)",
+                    "",
+                    "Один родитель? Скажи patro или patrino.",
+                    "",
+                    "В ПИСЬМЕ:                              Нажми 3",
+                    "Karaj geamikoj! = Дорогие друзья!"
+                ],
+                "pronunciation": "Leciono dudek ok",
+                "pronunciation_mappings": {
+                    "1": "Gepatroj. Gefratoj. Geedzoj.",
+                    "2": "Geamikoj. Gesinjoroj. Gelernantoj.",
+                    "3": "Karaj geamikoj!"
+                }
+            }
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "015",
-    "trigger_word": "voli",
-    "header_color": "green",
-    "title": "УРОК 15: МОДАЛЬНЫЕ ГЛАГОЛЫ",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono dek kvin",
-        "content": [
-          "Модальные глаголы выражают возможность,",
-          "желание или обязанность. Основной глагол",
-          "остаётся в инфинитиве (окончание -i).",
-          "",
-          "ТРИ КЛЮЧЕВЫХ МОДАЛЬНЫХ:",
-          "povi  = мочь, быть способным",
-          "voli  = хотеть",
-          "devi  = должен, обязан",
-          "",
-          "ПРИМЕРЫ:",
-          "Mi povas paroli.     = Я могу говорить.",
-          "Mi volas manĝi.      = Я хочу есть.",
-          "Ni devas lerni.      = Мы должны учиться.",
-          "",
-          "СТРОЙ: модальный + инфинитив",
-          "Li povas veni morgaŭ. = Он может прийти",
-          "завтра.",
-          "Инфинитив никогда не меняется!"
+    },
+    {
+        "lesson_id": "027",
+        "trigger_word": "klarigi",
+        "title": "УРОК 25: СУФФИКС «-IG-»",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "Суффикс -IG- значит «делать» или",
+                    "«заставлять стать». Его глаголы действуют",
+                    "НА что-то: у них есть дополнение с -n.",
+                    "",
+                    "ПРИЛАГАТЕЛЬНОЕ → ГЛАГОЛ:               Нажми 1",
+                    "pura   → purigi    = чистый → чистить",
+                    "granda → grandigi  = большой → увеличивать",
+                    "klara  → klarigi   = ясный → объяснять",
+                    "bela   → beligi    = красивый → украшать",
+                    "",
+                    "Ĉu vi povas klarigi tion?              Нажми 2",
+                    "= Ты можешь это объяснить?"
+                ],
+                "pronunciation": "Leciono dudek sep",
+                "pronunciation_mappings": {
+                    "1": "Pura. Purigi. Granda. Grandigi. Klara. Klarigi. Bela. Beligi.",
+                    "2": "Ĉu vi povas klarigi tion?"
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "И ГЛАГОЛЫ ТОЖЕ:                        Нажми 1",
+                    "La akvo bolas.        = Вода кипит.",
+                    "Mi boligas la akvon.  = Я кипячу воду.",
+                    "",
+                    "СРАВНИ -IĜ- И -IG-:                    Нажми 2",
+                    "varmiĝi = согреваться (без дополнения)",
+                    "varmigi = согревать что-то (с дополнением)",
+                    "",
+                    "La ĉambro varmiĝas.                    Нажми 3",
+                    "= Комната нагревается.",
+                    "La suno varmigas la ĉambron.",
+                    "= Солнце греет комнату."
+                ],
+                "pronunciation_mappings": {
+                    "1": "La akvo bolas. Mi boligas la akvon.",
+                    "2": "Varmiĝi. Varmigi.",
+                    "3": "La ĉambro varmiĝas. La suno varmigas la ĉambron."
+                }
+            }
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "016",
-    "trigger_word": "mia",
-    "header_color": "green",
-    "title": "УРОК 16: ПРИТЯЖАТЕЛЬНЫЕ СЛОВА",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono dek ses",
-        "content": [
-          "Добавь -a к личному местоимению, чтобы",
-          "показать принадлежность.",
-          "",
-          "ПРИТЯЖАТЕЛЬНЫЕ:",
-          "  mi  → mia    = я → мой",
-          "  vi  → via    = ты → твой",
-          "  li  → lia    = он → его",
-          "  ŝi  → ŝia    = она → её",
-          "  ĝi  → ĝia    = оно → его",
-          "  ni  → nia    = мы → наш",
-          "  ili → ilia   = они → их",
-          "ПРИМЕРЫ:",
-          "Mia domo estas granda. = Мой дом большой.",
-          "Kie estas via libro?   = Где твоя книга?",
-          "Ŝia amiko venis.       = Её друг пришёл.",
-          "Как и прилагательные, добавляй -j для",
-          "множественного числа:",
-          "miaj libroj = мои книги"
+    },
+    {
+        "lesson_id": "073",
+        "trigger_word": "opinii",
+        "title": "УРОК 26: СОЮЗ KE И ЗАПЯТАЯ",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "KE значит «что», когда присоединяет к",
+                    "глаголу целое предложение: думаю, ЧТО...",
+                    "",
+                    "Mi pensas, ke vi pravas.               Нажми 1",
+                    "= Я думаю, что ты прав.",
+                    "Mi esperas, ke vi fartas bone.         Нажми 2",
+                    "= Надеюсь, что у тебя всё хорошо.",
+                    "Mi scias, ke ĝi estas facila.          Нажми 3",
+                    "= Я знаю, что это легко.",
+                    "",
+                    "ПЕРЕД KE ВСЕГДА ЗАПЯТАЯ.",
+                    "По-русски «что» иногда опускают.",
+                    "В эсперанто KE не опускают никогда:",
+                    "Mi opinias, ke ni devas atendi.        Нажми 4",
+                    "= Думаю, нам надо подождать."
+                ],
+                "pronunciation_mappings": {
+                    "1": "Mi pensas, ke vi pravas.",
+                    "2": "Mi esperas, ke vi fartas bone.",
+                    "3": "Mi scias, ke ĝi estas facila.",
+                    "4": "Mi opinias, ke ni devas atendi."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "ЖЕЛАНИЯ И ПРОСЬБЫ: KE + -U             Нажми 1",
+                    "Mi petas, ke vi venu.",
+                    "= Прошу, чтобы ты пришёл.",
+                    "Mi volas, ke vi restu.",
+                    "= Хочу, чтобы ты остался.",
+                    "",
+                    "МЕСТОИМЕНИЕ «ЭТО, ТО» = TIO:           Нажми 2",
+                    "Mi scias tion.  = Я это знаю.",
+                    "Tio estas vera. = Это правда.",
+                    "",
+                    "ВРЕМЯ — КАК В ИСХОДНОЙ ФРАЗЕ:",
+                    "Li diris, ke li venos.                 Нажми 3",
+                    "= Он сказал, что придёт.",
+                    "(li venos = он придёт — как в русском!)"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Mi petas, ke vi venu. Mi volas, ke vi restu.",
+                    "2": "Mi scias tion. Tio estas vera.",
+                    "3": "Li diris, ke li venos."
+                }
+            }
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "017",
-    "trigger_word": "mem",
-    "header_color": "green",
-    "title": "УРОК 17: ВОЗВРАТНЫЕ МЕСТОИМЕНИЯ",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono dek sep",
-        "content": [
-          "Возвратные местоимения относятся к",
-          "подлежащему.",
-          "В эсперанто для 3-го лица используется SI.",
-          "",
-          "SI, SIN, SIA:",
-          "si   = себя (самого/саму/само/самих)",
-          "sin  = (вин. падеж) себя",
-          "sia  = свой (собственный)",
-          "",
-          "ПРИМЕРЫ:",
-          "Li lavas sin.     = Он моется.",
-          "Ŝi vidas sin.     = Она видит себя.",
-          "Ili helpas sin.   = Они помогают себе.",
-          "SIA против LIA/ŜIA:",
-          "Li amas sian hundon.",
-          "→ Он любит свою собаку. (свою собственную)",
-          "Li amas lian hundon.",
-          "→ Он любит его собаку. (чужую)"
+    },
+    {
+        "lesson_id": "074",
+        "trigger_word": "iomete",
+        "title": "УРОК 27: -ET-/-EG-/-EM-/-IND-",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "Два суффикса делают РАЗМЕР или СИЛУ",
+                    "слова больше или меньше:",
+                    "",
+                    "-ET- = маленький, слабый, немного:     Нажми 1",
+                    "   domo → dometo   = дом → домик",
+                    "   ridi → rideti   = смеяться → улыбаться",
+                    "   iom  → iomete   = немного → чуть-чуть",
+                    "",
+                    "-EG- = большой, сильный, очень:        Нажми 2",
+                    "   domo → domego   = дом → домище, особняк",
+                    "   bona → bonega   = хороший → отличный",
+                    "   ridi → ridegi   = смеяться → хохотать",
+                    "",
+                    "В РЕЧИ:                                Нажми 3",
+                    "   Atendu iomete!  = Подожди чуть-чуть!",
+                    "   Bonege!         = Отлично! Здорово!"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Domo. Dometo. Ridi. Rideti. Iom. Iomete.",
+                    "2": "Domo. Domego. Bona. Bonega. Ridi. Ridegi.",
+                    "3": "Atendu iomete! Bonege!"
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "Ещё два суффикса описывают склонность",
+                    "или ценность:",
+                    "",
+                    "-EM- = склонный, любящий что-то:       Нажми 1",
+                    "   helpi  → helpema   = помогать → отзывчивый",
+                    "   paroli → parolema  = говорить → болтливый",
+                    "   Ŝi estas tre helpema.",
+                    "   = Она очень отзывчива.",
+                    "   (О людях. Полезная книга — utila.)",
+                    "-IND- = достойный, стоящий:            Нажми 2",
+                    "   vidi → vidinda   = видеть → стоит увидеть",
+                    "   legi → leginda   = читать → стоит прочесть",
+                    "   ridi → ridinda   = смеяться → смехотворный!",
+                    "",
+                    "Осторожно: ridinda — это СМЕХОТВОРНЫЙ, а не",
+                    "смешной. Смешной = amuza."
+                ],
+                "pronunciation_mappings": {
+                    "1": "Helpi. Helpema. Paroli. Parolema. Ŝi estas tre helpema.",
+                    "2": "Vidi. Vidinda. Legi. Leginda. Ridi. Ridinda."
+                }
+            }
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "018",
-    "trigger_word": "kun",
-    "header_color": "green",
-    "title": "УРОК 18: ПРЕДЛОГИ",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
-        "pronunciation": "Leciono dek ok",
-        "content": [
-          "Предлоги показывают связи между словами.",
-          "В эсперанто они НИКОГДА не изменяются!",
-          "",
-          "МЕСТОПОЛОЖЕНИЕ И НАПРАВЛЕНИЕ:",
-          "en   = в, внутри       sur  = на, поверх",
-          "sub  = под             super = над",
-          "apud = рядом с         inter = между",
-          "ĉe   = у, около        ĉirkaŭ = вокруг",
-          "",
-          "ПРИМЕРЫ:",
-          "La kato estas sub la tablo.",
-          "(Кот под столом.)",
-          "",
-          "Mi sidas apud vi.",
-          "(Я сижу рядом с тобой.)",
-          "",
-          "ЗАПОМНИ: добавляй -n к существительному",
-          "после предлога ТОЛЬКО при движении."
-        ]
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "content": [
-          "ЕЩЁ ВАЖНЫЕ ПРЕДЛОГИ:",
-          "",
-          "al   = к, в направлении de   = от, из",
-          "kun  = с               sen  = без",
-          "por  = для (цели)      pri  = о, об",
-          "per  = посредством     tra  = через",
-          "ĝis  = до              krom = кроме",
-          "",
-          "ПРИМЕРЫ:",
-          "Mi iras al la parko.   = Я иду в парк.",
-          "Libro de mia amiko.    = Книга моего друга.",
-          "Ni parolas pri vi.     = Мы говорим о тебе.",
-          "Ŝi venis kun frato.    = Она пришла с братом.",
-          "",
-          "СОВЕТ: большинство предлогов как в",
-          "английском, но JE — универсальный для неясных",
-          "связей! Je la tria horo. = В три часа."
-        ]
-      }
-    ]
-  }
+    }
 ]

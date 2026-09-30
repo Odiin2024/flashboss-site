@@ -50,6 +50,21 @@ SETS = [("English", "Core",     "English/core",               "data/english/core
         # list is on the website; it was not. Pareto 1 and 2 are authored but not
         # released, so they are deliberately not built here.
         ("Swahili", "Core",     "Swahili/core",               "data/swahili/CORE_FINAL.json",        0,    "lang"),
+        # The five three-set courses. Until 2026-09-30 their views were copies of
+        # knight's master lists dropped in by hand, and nothing kept them in step:
+        # the deck rebuild that day (Italian tier 1 re-cut to 13 clusters, German
+        # renames and the separable bar, Esperanto's 150 renames and 93 moves) left
+        # every one of them stale. Built from the cluster cards like the rest now, so
+        # they carry the authored cluster names too. German keeps the separable-verb
+        # bar (aus|füllen) because the game shows it.
+        *[(lang, label, f"{kdir}{sub}", f"data/{lang.lower()}/{fname}", off, "lang")
+          for lang, kdir in (("German", "German"), ("French", "French"), ("Italian", "Italian"),
+                             ("Spanish", "Spanish"), ("Esperanto", "Esperanto"))
+          # set label and offset 0 as the hand-dropped files had them (FINAL = 1-1000
+          # within the set); the page reads neither, but the diff stays about cards.
+          for label, sub, fname, off in (("Core",    "/core",               "CORE_FINAL.json",    0),
+                                         ("Pareto1", "_Extensions/pareto1", "PARETO1_FINAL.json", 0),
+                                         ("Pareto2", "_Extensions/pareto2", "PARETO2_FINAL.json", 0))],
         # The four Roots packs. Rebuilt upstream 2026-09-19 (new clusters, renumbered
         # folders, new lessons, a new Notes line carrying the twin/Related labels), and
         # the site's copies were 2026-08-28 artifacts. mode "roots": the pair is

@@ -172,9 +172,9 @@
           "",
           "un = 阳性      una = 阴性",
           "un libro（一本书）   una casa（一所房子）",
+          "复数：unos libros、unas casas（一些）",
           "",
           "复数形式 — 加 -s 或 -es：",
-          "",
           "el libro  → los libros",
           "la casa   → las casas",
           "el color  → los colores",
@@ -185,7 +185,7 @@
           "务必连同冠词一起记忆：",
           "",
           "不要只记「persona」，而要记「la persona」。",
-          "冠词已用颜色标出，助你记忆"
+          "冠词已用颜色标出，助你记忆。"
         ],
         "pronunciation_mappings": {}
       }
@@ -193,9 +193,47 @@
   },
   {
     "lesson_id": "003",
+    "trigger_word": "español",
+    "trigger_card_number": 29,
+    "title": "第3课：疑问词",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "西班牙语的疑问词都带重音符号：",
+          "",
+          "¿qué？＝什么？     ¿quién？＝谁？       按 1",
+          "¿dónde？＝哪里？  ¿cuándo？＝何时？",
+          "¿por qué？＝为什么？  ¿cómo？＝怎样？",
+          "¿cuál？＝哪一个？（es 前＝什么？）",
+          "¿cuánto/cuántos？＝多少？／几个？",
+          "",
+          "例句：                                  按 2",
+          "¿Qué quieres？（你想要什么？）",
+          "¿Dónde está el baño？（洗手间在哪儿？）",
+          "¿Cuánto cuesta？（这个多少钱？）",
+          "¿Por qué no？（为什么不？）",
+          "",
+          "注意：porque（无重音）＝因为",
+          "      por qué（带重音）＝为什么？",
+          "间接疑问句中也保留重音符号：",
+          "No sé dónde está.（我不知道它在哪儿。）"
+        ],
+        "pronunciation": "Lección tres",
+        "pronunciation_mappings": {
+          "1": "qué, quién, dónde, cuándo, por qué, cómo, cuál, cuánto, cuántos",
+          "2": "qué quieres, dónde está el baño, cuánto cuesta, por qué no"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "004",
     "trigger_word": "salir",
-    "trigger_card_number": 46,
-    "title": "第3课：现在时",
+    "trigger_card_number": 50,
+    "title": "第4课：现在时",
     "header_color": "green",
     "pages": [
       {
@@ -204,26 +242,26 @@
         "content": [
           "西班牙语动词分为三大类：",
           "-AR（hablar）  -ER（comer）  -IR（vivir）",
-          "",
-          "每类动词使用相同的词尾。",
           "这是最常见的 -AR 动词变位：             按 1",
           "",
           "yo hablo             = 我说",
-          "tú hablas            = 你说",
+          "tú hablas            = 你说（熟人）",
+          "usted habla          = 您说（礼貌）",
           "él/ella habla        = 他／她说",
           "nosotros hablamos    = 我们说",
-          "ellos hablan         = 他们说",
+          "ustedes hablan       = 你们说",
+          "ellos/ellas hablan   = 他们／她们说",
           "",
-          "规则：去掉 -ar，加上",
-          "-o、-as、-a、-amos、-an",
-          "",
-          "通常可以省略主语代词，因为",
-          "词尾已表明说话人是谁。",
-          "Hablo = 我说。Hablan = 他们说。"
+          "规则：去掉 -ar，加 -o -as -a -amos -an",
+          "usted（Ud.）用 él/ella 的词尾，",
+          "ustedes（Uds.）用 ellos 的词尾。",
+          "在拉丁美洲，所有复数的“你们”都是 ustedes",
+          "（西班牙还用 vosotros：vosotros habláis）。",
+          "代词可以省略：Hablo = 我说。"
         ],
-        "pronunciation": "Lección tres",
+        "pronunciation": "Lección cuatro",
         "pronunciation_mappings": {
-          "1": "yo hablo, tú hablas, él habla, nosotros hablamos, ellos hablan"
+          "1": "yo hablo, tú hablas, usted habla, él habla, nosotros hablamos, ustedes hablan, ellos hablan"
         }
       },
       {
@@ -231,36 +269,71 @@
         "total_pages": 2,
         "content": [
           "-ER 动词（comer = 吃）：               按 1",
-          "",
           "yo como             = 我吃",
           "tú comes            = 你吃",
-          "él/ella come        = 他／她吃",
+          "él/ella/usted come  = 他／她吃，您吃",
           "nosotros comemos    = 我们吃",
-          "ellos comen         = 他们吃",
+          "ellos/ustedes comen = 他们吃，你们吃",
           "",
           "-IR 动词（vivir = 居住）：             按 2",
-          "",
           "yo vivo             = 我住",
           "tú vives            = 你住",
-          "él/ella vive        = 他／她住",
+          "él/ella/usted vive  = 他／她住，您住",
           "nosotros vivimos    = 我们住",
-          "ellos viven         = 他们住",
+          "ellos/ustedes viven = 他们住，你们住",
           "",
           "注意：-ER 和 -IR 几乎完全相同！",
           "只有 nosotros 形式不同。"
         ],
         "pronunciation_mappings": {
-          "1": "yo como, tú comes, él come, nosotros comemos, ellos comen",
-          "2": "yo vivo, tú vives, él vive, nosotros vivimos, ellos viven"
+          "1": "yo como, tú comes, él come, usted come, nosotros comemos, ellos comen, ustedes comen",
+          "2": "yo vivo, tú vives, él vive, usted vive, nosotros vivimos, ellos viven, ustedes viven"
         }
       }
     ]
   },
   {
-    "lesson_id": "004",
+    "lesson_id": "005",
+    "trigger_word": "mediodía",
+    "trigger_card_number": 58,
+    "title": "第5课：词干变化动词",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "词干变化动词：",
+          "有些动词除 nosotros 形式外，",
+          "其余各形式的词干元音都会变化。",
+          "词尾仍按规则变化。",
+          "",
+          "e → ie   querer = 想要                  按 1",
+          "quiero, quieres, quiere, queremos, quieren",
+          "",
+          "o → ue   poder = 能，可以               按 2",
+          "puedo, puedes, puede, podemos, pueden",
+          "",
+          "e → i    repetir = 重复                 按 3",
+          "repito, repites, repite, repetimos, repiten",
+          "",
+          "另外：entender、pensar、cerrar（e→ie）；",
+          "dormir、volver、costar（o→ue）；seguir（e→i）"
+        ],
+        "pronunciation": "Lección cinco",
+        "pronunciation_mappings": {
+          "1": "quiero, quieres, quiere, queremos, quieren",
+          "2": "puedo, puedes, puede, podemos, pueden",
+          "3": "repito, repites, repite, repetimos, repiten"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "006",
     "trigger_word": "vez",
-    "trigger_card_number": 68,
-    "title": "第4课：HAY 与基础句型",
+    "trigger_card_number": 76,
+    "title": "第6课：HAY 与基础句型",
     "header_color": "green",
     "pages": [
       {
@@ -278,15 +351,15 @@
           "主语＋动词＋宾语（和英语一样）",
           "Yo como pan.（我吃面包。）",
           "",
-          "疑问句——两种简单方法：",
-          "¿Tú hablas español?（升调）",
-          "¿Hablas español?（省略代词）",
+          "疑问句——语序不变，句末升调：",
+          "¿Hablas español?（你会说西班牙语吗？）",
+          "代词可以省略：也可说 ¿Tú hablas...?",
           "",
           "否定——只需在动词前加 NO：",
           "No hablo inglés.（我不说英语。）",
           "No hay problema.（没问题。）"
         ],
-        "pronunciation": "Lección cuatro",
+        "pronunciation": "Lección seis",
         "pronunciation_mappings": {
           "1": "hay un problema, hay libros, hay agua, no hay tiempo"
         }
@@ -294,10 +367,10 @@
     ]
   },
   {
-    "lesson_id": "005",
+    "lesson_id": "007",
     "trigger_word": "joven",
-    "trigger_card_number": 97,
-    "title": "第5课：SER VS ESTAR",
+    "trigger_card_number": 105,
+    "title": "第7课：SER VS ESTAR",
     "header_color": "green",
     "pages": [
       {
@@ -323,7 +396,7 @@
           "下一页：何时用 SER 还是 ESTAR，",
           "这是每位学习者都会问的问题。"
         ],
-        "pronunciation": "Lección cinco",
+        "pronunciation": "Lección siete",
         "pronunciation_mappings": {
           "1": "soy, eres, es, somos, son",
           "2": "estoy, estás, está, estamos, están",
@@ -335,27 +408,27 @@
         "page": 2,
         "total_pages": 3,
         "content": [
-          "西班牙语有两个“是”的动词。",
-          "这看似棘手，但逻辑清晰：",
+          "西班牙语有两个表示“是”的动词：",
+          "SER = 事物“是什么”",
+          "ESTAR = 事物“怎么样”或“在哪里”",
           "",
-          "SER = 事物的本质（永久）",
-          "ESTAR = 事物的状态（临时）",
-          "",
-          "SER — 身份、来源、特质：                按 1",
+          "SER — 身份、特质、来源、时间：            按 1",
           "Soy estudiante.（我是学生。）",
           "Ella es inteligente.（她很聪明。）",
           "Somos de México.（我们来自墨西哥。）",
+          "Son las cuatro.（现在四点。）",
           "",
-          "ESTAR — 状态、情绪、位置：              按 2",
+          "ESTAR — 状态、情绪、位置：                按 2",
           "Estoy cansado.（我累了。）",
           "Ella está feliz.（她很开心。）",
           "Estamos en casa.（我们在家。）",
           "",
-          "诀窍：若能改变，就用 estar。",
-          "若是你的本质，就用 ser。"
+          "诀窍：表示“在哪里”要用 estar，",
+          "即使那个东西永远不会移动：",
+          "Guadalajara está en México."
         ],
         "pronunciation_mappings": {
-          "1": "soy estudiante, ella es inteligente, somos de México",
+          "1": "soy estudiante, ella es inteligente, somos de México, son las cuatro",
           "2": "estoy cansado, ella está feliz, estamos en casa"
         }
       },
@@ -392,10 +465,10 @@
     ]
   },
   {
-    "lesson_id": "006",
+    "lesson_id": "008",
     "trigger_word": "café",
-    "trigger_card_number": 117,
-    "title": "第6课：GUSTAR 及类似动词",
+    "trigger_card_number": 125,
+    "title": "第8课：GUSTAR 及类似动词",
     "header_color": "green",
     "pages": [
       {
@@ -421,7 +494,7 @@
           "Me importa ＝ 我在乎……（这很重要）",
           "Me falta ＝ 我缺少……／我需要……"
         ],
-        "pronunciation": "Lección seis",
+        "pronunciation": "Lección ocho",
         "pronunciation_mappings": {
           "1": "me gusta el café, te gusta bailar, le gusta la música, nos gusta viajar",
           "2": "me gustan los gatos, me gustan las películas"
@@ -430,53 +503,15 @@
     ]
   },
   {
-    "lesson_id": "007",
-    "trigger_word": "lugar",
-    "trigger_card_number": 147,
-    "title": "第7课：疑问词",
+    "lesson_id": "009",
+    "trigger_word": "levantarse",
+    "trigger_card_number": 163,
+    "title": "第9课：命令式与近将来时",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
-        "content": [
-          "西班牙语的疑问词都带重音符号：",
-          "",
-          "¿qué？＝什么？     ¿quién？＝谁？       按 1",
-          "¿dónde？＝哪里？  ¿cuándo？＝何时？",
-          "¿por qué？＝为什么？  ¿cómo？＝怎样？",
-          "¿cuál？＝哪一个？  ¿cuánto？＝多少？",
-          "",
-          "例句：                                  按 2",
-          "",
-          "¿Qué quieres？（你想要什么？）",
-          "¿Dónde está el baño？（洗手间在哪儿？）",
-          "¿Cuánto cuesta？（这个多少钱？）",
-          "¿Por qué no？（为什么不？）",
-          "",
-          "注意：porque（无重音）＝因为",
-          "      por qué（带重音）＝为什么？",
-          "",
-          "重音符号就是问号。"
-        ],
-        "pronunciation": "Lección siete",
-        "pronunciation_mappings": {
-          "1": "qué, quién, dónde, cuándo, por qué, cómo, cuál, cuánto",
-          "2": "qué quieres, dónde está el baño, cuánto cuesta, por qué no"
-        }
-      }
-    ]
-  },
-  {
-    "lesson_id": "008",
-    "trigger_word": "dormir",
-    "trigger_card_number": 165,
-    "title": "第8课：命令式与近将来时",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
           "非正式命令式（tú）",
           "",
@@ -494,19 +529,19 @@
           "ir           → ¡Ve!（走！）",
           "poner        → ¡Pon!（放！）",
           "salir        → ¡Sal!（离开！）",
-          "tener        → ¡Ten!（有！）",
+          "tener        → ¡Ten cuidado!（小心！）",
           "venir        → ¡Ven!（来！）"
         ],
-        "pronunciation": "Lección ocho",
+        "pronunciation": "Lección nueve",
         "pronunciation_mappings": {
           "1": "hablar, habla, mirar, mira",
           "2": "comer, come, escribir, escribe",
-          "3": "decir, di, hacer, haz, ir, ve, poner, pon, salir, sal, tener, ten, venir, ven"
+          "3": "decir, di, hacer, haz, ir, ve, poner, pon, salir, sal, tener, ten cuidado, venir, ven"
         }
       },
       {
         "page": 2,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
           "近将来时 —— ir + a + 动词原形",
           "",
@@ -530,6 +565,30 @@
           "1": "voy a comer, vas a estudiar, vamos a salir",
           "2": "voy, vas, va, vamos, van",
           "3": "estoy hablando, está comiendo"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "反身动词：动作回到自己身上。",
+          "-se 以 me、te、se、nos、se 的形式",
+          "移到动词前面：",
+          "levantarse = 起床",
+          "",
+          "me levanto      = 我起床                按 1",
+          "te levantas     = 你起床",
+          "se levanta      = 他／她起床，您起床",
+          "nos levantamos  = 我们起床",
+          "se levantan     = 他们起床，你们起床",
+          "",
+          "你已经认识一个了：",
+          "¿Cómo te llamas? Me llamo Ana.",
+          "（你叫什么名字？我叫安娜。）",
+          "另外：ducharse、vestirse、acostarse。"
+        ],
+        "pronunciation_mappings": {
+          "1": "me levanto, te levantas, se levanta, nos levantamos, se levantan"
         }
       }
     ]

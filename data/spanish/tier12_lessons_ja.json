@@ -1,18 +1,16 @@
 [
   {
-    "lesson_id": "042",
+    "lesson_id": "045",
     "trigger_word": "soldado",
-    "trigger_card_number": 231,
-    "title": "第42課: 動名詞と不定詞",
+    "trigger_card_number": 216,
+    "title": "第45課: 動名詞と不定詞",
     "header_color": "red",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "英語では -ing をどこでも使うが、",
-          "スペイン語は動名詞（-ando/-iendo）と",
-          "不定詞の使い分けが厳しい：",
+          "英語の -ing ＝ スペイン語の不定詞か動名詞：",
           "",
           "不定詞（ほとんどの場合）：           1を押す",
           "Me gusta bailar.（踊るのが好き。）",
@@ -20,29 +18,31 @@
           "ことは重要だ。）",
           "Antes de salir...（出かける前に…）",
           "",
-          "動名詞（進行中の動作のみ）：         2を押す",
+          "動名詞（進行中の動作・様態）：       2を押す",
           "Estoy estudiando.（勉強している。）",
           "Salió corriendo.（走って出て行った。）",
           "Sigue lloviendo.（雨が降り続いている。）",
+          "Llevo dos años estudiando.",
+          "（2年間、勉強を続けている。）",
           "",
           "前置詞の後には絶対に使わない：       3を押す",
           "sin hablar（話さずに）",
           "× sin hablando"
         ],
-        "pronunciation": "Lección cuarenta y dos",
+        "pronunciation": "Lección cuarenta y cinco",
         "pronunciation_mappings": {
-          "1": "me gusta bailar, estudiar es importante, antes de salir",
-          "2": "estoy estudiando, salió corriendo, sigue lloviendo",
-          "3": "sin hablar"
+          "1": "Me gusta bailar. Estudiar es importante. Antes de salir.",
+          "2": "Estoy estudiando. Salió corriendo. Sigue lloviendo. Llevo dos años estudiando.",
+          "3": "Sin hablar."
         }
       }
     ]
   },
   {
-    "lesson_id": "043",
+    "lesson_id": "046",
     "trigger_word": "vehículo",
-    "trigger_card_number": 281,
-    "title": "第43課：上級前置詞",
+    "trigger_card_number": 266,
+    "title": "第46課：上級前置詞",
     "header_color": "red",
     "pages": [
       {
@@ -68,103 +68,78 @@
           "TRAS（～の後／後ろに）：             5を押す",
           "tras la reunión（会議の後）"
         ],
-        "pronunciation": "Lección cuarenta y tres",
+        "pronunciation": "Lección cuarenta y seis",
         "pronunciation_mappings": {
-          "1": "ante esta situación, ante todo",
-          "2": "mediante un acuerdo",
-          "3": "según el informe",
-          "4": "hacia el futuro",
-          "5": "tras la reunión"
+          "1": "Ante esta situación. Ante todo.",
+          "2": "Mediante un acuerdo.",
+          "3": "Según el informe.",
+          "4": "Hacia el futuro.",
+          "5": "Tras la reunión."
         }
       }
     ]
   },
   {
-    "lesson_id": "044",
+    "lesson_id": "047",
     "trigger_word": "concierto",
-    "trigger_card_number": 341,
+    "trigger_card_number": 330,
+    "title": "第47課：微妙な対比",
     "header_color": "red",
-    "title": "第44課: より正確な使い分け",
     "pages": [
       {
         "page": 1,
-        "total_pages": 3,
+        "total_pages": 2,
         "content": [
-          "適切な言葉を選びましょう。",
-          "次のペアは上級者でも間違えがちです：",
+          "形は似ていても、意味が違うペア：",
           "",
-          "SABER vs CONOCER：                   1を押す",
-          "saber = 事実や方法を知っている",
-          "conocer = （人・場所などを）知っている",
-          "Sé nadar.（泳ぎ方を知っています。）",
-          "Conozco Madrid.（マドリードを知っています。）",
+          "SINO vs SI NO：                      1を押す",
+          "No lo hizo él, sino ella.",
+          "（彼ではなく、彼女がやった。）",
+          "Si no vienes, me enojo.",
+          "（来なかったら、怒るよ。）",
           "",
-          "PEDIR vs PREGUNTAR：                 2を押す",
-          "pedir = 頼む、要求する",
-          "preguntar = 質問する",
-          "Pedí la cuenta.（会計をお願いしました。）",
-          "Pregunté la hora.（時刻を尋ねました。）",
+          "AUN（さえ）vs AÚN（まだ）：          2を押す",
+          "Aun así, lo intentó.（それでも挑戦した。）",
+          "Aún no ha llegado.（まだ着いていない。）",
           "",
-          "英語では「ask」で両方を表しますが、",
-          "スペイン語では混ぜると不自然です。"
+          "POR QUE（por + que）vs PORQUE：      3を押す",
+          "Es la razón por (la) que vine.",
+          "（それが私の来た理由です。）",
+          "Vine porque me invitaron.",
+          "（招待されたから来ました。）"
         ],
-        "pronunciation": "Lección cuarenta y cuatro",
         "pronunciation_mappings": {
-          "1": "sé nadar, conozco Madrid",
-          "2": "pedí la cuenta, pregunté la hora"
+          "1": "No lo hizo él, sino ella. Si no vienes, me enojo.",
+          "2": "Aun así, lo intentó. Aún no ha llegado.",
+          "3": "Es la razón por la que vine. Vine porque me invitaron."
         }
       },
       {
         "page": 2,
-        "total_pages": 3,
+        "total_pages": 2,
         "content": [
-          "LLEVAR vs TRAER：                    1を押す",
-          "llevar = （ここから）持っていく",
-          "traer = （ここへ）持ってくる",
-          "Lleva esto a tu madre.",
-          "（これをママに持っていって。）",
-          "Trae el libro cuando vengas.",
-          "（来るときに本を持ってきて。）",
+          "「〜になる」を表す動詞は一つではありません：",
           "",
-          "SINO vs PERO：                       2を押す",
-          "pero = しかし（一般的な対比）",
-          "sino = ～ではなく（否定後に訂正）",
-          "No es caro, sino barato.",
-          "（高いのではなく、安いのです。）",
-          "Quiero ir, pero no puedo.",
-          "（行きたいけど、行けません。）",
-          ""
+          "PONERSE：一時的な状態の変化          1を押す",
+          "Se puso rojo.（彼は赤くなった。）",
+          "Me pongo nervioso.（緊張してしまう。）",
+          "",
+          "VOLVERSE：深く長く続く変化           2を押す",
+          "Se volvió muy serio.",
+          "（彼はとても真面目になった。）",
+          "",
+          "HACERSE：努力や選択でなる            3を押す",
+          "Se hizo médico.（彼は医者になった。）",
+          "",
+          "QUEDARSE：出来事の結果               4を押す",
+          "Se quedó ciego.（彼は失明した。）",
+          "Me quedé sin palabras.（言葉を失った。）"
         ],
         "pronunciation_mappings": {
-          "1": "lleva esto a tu madre, trae el libro cuando vengas",
-          "2": "no es caro sino barato, quiero ir pero no puedo"
-        }
-      },
-      {
-        "page": 3,
-        "total_pages": 3,
-        "content": [
-          "POR QUÉ vs PORQUE vs PORQUÉ：       1を押す",
-          "por qué = なぜ？（疑問）",
-          "porque = ～だから（答え）",
-          "porqué = 理由（名詞）",
-          "¿Por qué? Porque sí. El porqué no",
-          "importa.（なぜ？だってそうだから。理由は",
-          "どうでもいい。）",
-          "",
-          "TODAVÍA vs AÚN vs YA：              2を押す",
-          "todavía/aún = まだ／いまだ",
-          "ya = もう／すでに",
-          "Todavía no ha llegado.",
-          "（まだ着いていません。）",
-          "Ya lo sé.（もう知っています。）",
-          "",
-          "こうした使い分けこそが、 良いスペイン語と素晴",
-          "らしいスペイン語の 違いを生みます。"
-        ],
-        "pronunciation_mappings": {
-          "1": "por qué, porque sí, el porqué no importa",
-          "2": "todavía no ha llegado, ya lo sé"
+          "1": "Se puso rojo. Me pongo nervioso.",
+          "2": "Se volvió muy serio.",
+          "3": "Se hizo médico.",
+          "4": "Se quedó ciego. Me quedé sin palabras."
         }
       }
     ]

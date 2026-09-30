@@ -1,41 +1,130 @@
 [
   {
-    "lesson_id": "030",
-    "trigger_word": "bonvolu legi",
-    "title": "LEKTION 30: IMPERATIV (-U)",
+    "lesson_id": "076",
+    "trigger_word": "lernado",
+    "title": "LEKTION 35: -AD-, -EC- UND -UJ-",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "Der Imperativ (-u) steht für Befehle,",
-          "Bitten und Wünsche. Er ist für alle",
-          "Subjekte gleich - keine Konjugation!",
+          "-AD- macht aus einer Handlung eine TÄTIGKEIT:",
+          "etwas, das andauert oder immer wieder",
+          "geschieht.",
           "",
-          "BEFEHLE BILDEN:",
-          "Mach aus -i (Infinitiv) ein -u:",
-          "veni → Venu!       = Komm!",
-          "manĝi → Manĝu!     = Iss!",
-          "rigardi → Rigardu! = Schau!",
-          "helpi → Helpu min! = Hilf mir!",
+          "VERB → TÄTIGKEIT:                    Drücke 1",
+          "lerni   → lernado    = lernen → das Lernen",
+          "kuri    → kurado     = laufen → das Laufen",
+          "paroli  → parolado   = sprechen → eine Rede",
+          "Regula lernado donas bonajn rezultojn.",
+          "= Regelmäßiges Lernen bringt gute Ergebnisse.",
           "",
-          "HÖFLICHE BITTEN:",
-          "Bonvolu sidiĝi.   = Bitte setz dich.",
-          "Atentu!           = Pass auf!",
-          "",
-          "FÜR ALLE SUBJEKTE:",
-          "Ni iru!   = Gehen wir! (wir)",
-          "Li venu.  = Er soll kommen. (er)"
+          "-EC- BENENNT EINE EIGENSCHAFT:       Drücke 2",
+          "amiko   → amikeco    = Freund → Freundschaft",
+          "afabla  → afableco   = gütig → Güte",
+          "libera  → libereco   = frei → Freiheit",
+          "sana    → saneco     = gesund → Gesundheit",
+          "(Ein belaĵo ist ein schönes DING; beleco",
+          "ist die Schönheit selbst.)"
         ],
-        "pronunciation": "Leciono tridek"
+        "pronunciation_mappings": {
+          "1": "Lerni. Lernado. Kuri. Kurado. Paroli. Parolado. Regula lernado donas bonajn rezultojn.",
+          "2": "Amiko. Amikeco. Afabla. Afableco. Libera. Libereco. Sana. Saneco."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "-UJ- BENENNT EINEN BEHÄLTER:         Drücke 1",
+          "mono    → monujo     = Geld → Geldbörse",
+          "sukero  → sukerujo   = Zucker → Zuckerdose",
+          "salo    → salujo     = Salz → Salzstreuer",
+          "retpoŝto → retpoŝtujo = E-Mail → Posteingang",
+          "",
+          "-UJ- KANN AUCH EIN LAND BENENNEN:    Drücke 2",
+          "Esperantujo = die Esperanto-Welt",
+          "Ältere Ländernamen nutzten es: Francujo.",
+          "Moderne Namen bevorzugen -IO: Francio,",
+          "Germanio, Italio.",
+          "",
+          "IM GEBRAUCH:                         Drücke 3",
+          "Mia monujo estas en la sako.",
+          "= Meine Geldbörse ist in der Tasche.",
+          "Bonvenon al Esperantujo!",
+          "= Willkommen in der Esperanto-Welt!"
+        ],
+        "pronunciation_mappings": {
+          "1": "Mono. Monujo. Sukero. Sukerujo. Salo. Salujo. Retpoŝto. Retpoŝtujo.",
+          "2": "Esperantujo. Francujo. Francio. Germanio. Italio.",
+          "3": "Mia monujo estas en la sako. Bonvenon al Esperantujo!"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "024",
+    "trigger_word": "samideano",
+    "title": "LEKTION 36: DAS SUFFIX '-AN-'",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "Das Suffix -AN- benennt ein MITGLIED einer",
+          "Gruppe, einen MENSCHEN AUS einem Ort oder",
+          "einen ANHÄNGER einer Person oder Idee.",
+          "",
+          "MITGLIEDER:                          Drücke 1",
+          "klubo   → klubano    = Klub → Klubmitglied",
+          "familio → familiano  = Familie → Angehöriger",
+          "",
+          "MENSCHEN AUS EINEM ORT:              Drücke 2",
+          "urbo    → urbano     = Stadt → Städter",
+          "Usono   → usonano    = USA → Amerikaner",
+          "Eŭropo  → eŭropano   = Europa → Europäer",
+          "(Die Person schreibt man klein.)",
+          "",
+          "ANHÄNGER:                            Drücke 3",
+          "Kristo  → kristano   = Christus → Christ",
+          "Budho   → budhano    = Buddha → Buddhist"
+        ],
+        "pronunciation_mappings": {
+          "1": "Klubo. Klubano. Familio. Familiano.",
+          "2": "Urbo. Urbano. Usono. Usonano. Eŭropo. Eŭropano.",
+          "3": "Kristo. Kristano. Budho. Budhano."
+        },
+        "pronunciation": "Leciono dudek kvar"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "ESPERANTOS EIGENES WORT:             Drücke 1",
+          "samideano = Gesinnungsgenosse (Esperantist)",
+          "sam-ide-an-o: Mitglied derselben Idee",
+          "",
+          "Karaj samideanoj!",
+          "= Liebe Gesinnungsgenossen!",
+          "",
+          "ANO ALLEIN IST AUCH EIN WORT:        Drücke 2",
+          "ano = ein Mitglied",
+          "Ŝi estas ano de nia klubo.",
+          "= Sie ist Mitglied in unserem Klub."
+        ],
+        "pronunciation_mappings": {
+          "1": "Samideano. Karaj samideanoj!",
+          "2": "Ano. Ŝi estas ano de nia klubo."
+        }
       }
     ]
   },
   {
     "lesson_id": "031",
-    "trigger_word": "amuza",
-    "title": "CORE KOMPLETT!",
+    "trigger_word": "decembro",
+    "title": "LEKTION 37: CORE KOMPLETT!",
     "header_color": "gold",
     "repeat": false,
     "pages": [
@@ -43,23 +132,24 @@
         "page": 1,
         "total_pages": 1,
         "content": [
-          "Gratulojn! Esperanto Core ist geschafft!",
+          "Gratulojn! Du hast Esperanto Core geschafft!",
           "",
-          "WAS DU GESCHAFFT HAST:",
-          "✓ 1000 häufigste Esperanto-Wörter gelernt",
-          "✓ Die Kerngrammatik gemeistert",
-          "✓ Esperantos Wortbau-System verstanden",
-          "✓ Du kannst dich im Alltag ausdrücken",
+          "WAS DU ERREICHT HAST:",
+          "✓ 1000 wichtige Wörter und Wendungen",
+          "✓ Die Grundgrammatik und den Wortbau",
+          "✓ Du kannst über deinen Alltag sprechen",
           "",
-          "WIE ES WEITERGEHT:",
-          "Die Pareto-Erweiterungen bringen 2000",
-          "weitere Wörter plus Grammatiklektionen",
-          "zu allen restlichen Affixen und Partizipien.",
+          "WIE ES WEITERGEHT: PARETO 1",
+          "1000 weitere Wörter und Wendungen für",
+          "Foren, Diskussionen, Treffen und Reisen,",
+          "dazu den Rest des Wortbaukastens.",
           "",
           "DU KANNST JETZT:",
-          "- echte Gespräche mit Esperantisten führen",
-          "- einfache Bücher und Artikel lesen",
-          "- Esperanto-Treffen besuchen (kongresoj!)"
+          "- online mit Esperantisten chatten",
+          "- einfache Texte lesen",
+          "",
+          "Bonega laboro! Vi estas sur la ĝusta vojo!",
+          "(Toll gemacht! Du bist auf dem richtigen Weg!)"
         ],
         "pronunciation": "Gratulojn"
       }

@@ -1,175 +1,270 @@
 [
   {
-    "lesson_id": "018",
+    "lesson_id": "019",
     "trigger_word": "comunque",
     "trigger_card_number": 1,
+    "title": "УРОК 23: FUTURO SEMPLICE",
     "header_color": "green",
-    "title": "УРОК 18: ЧАСТИЦЫ NE И CI",
     "pages": [
       {
         "page": 1,
         "total_pages": 2,
-        "pronunciation": "Lezione diciotto",
         "content": [
-          "NE заменяет «из/о/об этом/них»:",
+          "FUTURO SEMPLICE = будущее время. Основа —",
+          "инфинитив без конечного -e;",
+          "у глаголов на -are ещё и a меняется на e:",
           "",
-          "   КОЛИЧЕСТВО (частичное):",
-          "      hai libri? — sì, ne ho tre.",
-          "         (да, у меня три из них)",
-          "      vuoi del pane? — ne voglio un po'.",
-          "",
-          "   О чём-то:",
-          "      parli del progetto? — sì, ne parlo.",
-          "      che ne pensi? = что думаешь?",
-          "",
-          "   ИЗ места:",
-          "      torni da Roma? — sì, ne torno domani.",
-          "         (да, возвращаюсь оттуда завтра)",
-          "ПОЗИЦИЯ: перед глаголом, к инфинитиву",
-          "присоединяется.",
-          "СОГЛАСОВАНИЕ в прош.вр. с количеством:",
-          "   ne ho mangiati tre (мн.ч. м.р.), -e (ж.р.)"
-        ]
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "content": [
-          "CI заменяет «в/на/о нём» или место:",
-          "",
-          "   В/НА месте:",
-          "      vai a Roma? — sì, ci vado.",
-          "      sei in Italia? — sì, ci sono.",
-          "",
-          "   О/В чём-то абстрактном:",
-          "      credi ai fantasmi? — non ci credo.",
-          "      pensi al futuro? — sì, ci penso.",
-          "",
-          "   УСТОЙЧИВОЕ ESSERCI:",
-          "      c'è / ci sono = есть",
-          "      c'era / c'erano = было / были",
-          "",
-          "ДВОЙНЫЕ МЕСТОИМЕНИЯ — «i» → «e»:",
-          "   me lo, te la, ce ne, glielo,",
-          "   косвенное ДО прямого.",
-          "   ce lo dice = он говорит нам это"
-        ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "019",
-    "trigger_word": "anima",
-    "trigger_card_number": 25,
-    "header_color": "green",
-    "title": "УРОК 19: FUTURO SEMPLICE",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
-        "pronunciation": "Lezione diciannove",
-        "content": [
-          "FUTURO SEMPLICE = будущее время.",
-          "Для предсказаний, планов, обещаний.",
-          "",
-          "ОКОНЧАНИЯ — одинаковые для всех трёх",
-          "спряжений:",
-          "",
-          "   parlare → parler-",
-          "      parlerò, parlerai, parlerà,",
-          "      parleremo, parlerete, parleranno",
-          "",
+          "   parlare  → parler-                  Нажми 1",
           "   scrivere → scriver-",
-          "      scriverò, scriverai, scriverà,",
-          "      scriveremo, scriverete, scriveranno",
+          "   dormire  → dormir-",
           "",
-          "   finire → finir-",
-          "      finirò, finirai, finirà,",
-          "      finiremo, finirete, finiranno",
-          "ЗАМЕЧАНИЕ: у -are основа -er- (не -ar-)."
-        ]
+          "ОКОНЧАНИЯ — одни для всех глаголов:    Нажми 2",
+          "   io       parlerò     noi   parleremo",
+          "   tu       parlerai    voi   parlerete",
+          "   lui/lei  parlerà     loro  parleranno",
+          "Знак ударения в -ò и -à обязателен.",
+          "",
+          "НАПИСАНИЕ меняется, звук — нет:        Нажми 3",
+          "   cercare → cercherò, pagare → pagherò",
+          "   mangiare → mangerò (i не нужна)"
+        ],
+        "pronunciation": "Lezione ventitré",
+        "pronunciation_mappings": {
+          "1": "Parlare, parlerò. Scrivere, scriverò. Dormire, dormirò.",
+          "2": "Io parlerò. Tu parlerai. Lui parlerà. Noi parleremo. Voi parlerete. Loro parleranno.",
+          "3": "Cercare, cercherò. Pagare, pagherò. Mangiare, mangerò."
+        }
       },
       {
         "page": 2,
         "total_pages": 2,
         "content": [
-          "НЕПРАВИЛЬНЫЕ ОСНОВЫ БУДУЩЕГО — окончания те",
-          "же:",
-          "   essere → sar-      sarò, sarà...",
-          "   avere  → avr-      avrò, avrà...",
-          "   andare → andr-     andrò...",
-          "   venire → verr-     verrò...",
-          "   fare   → far-      farò...",
-          "   dire   → dir-      dirò...",
-          "   volere → vorr-     vorrò...",
-          "   potere → potr-     potrò...",
-          "   dovere → dovr-     dovrò...",
-          "   sapere → sapr-     saprò...",
-          "   vedere → vedr-     vedrò...",
-          "УПОТРЕБЛЕНИЕ:",
-          "   - простое будущее: domani partirò",
-          "   - предсказание: pioverà",
-          "   - предположение: sarà a casa? (должно",
-          "   быть?)"
-        ]
+          "КОРОТКИЕ ОСНОВЫ, окончания те же:      Нажми 1",
+          "   essere → sarò      avere  → avrò",
+          "   andare → andrò     venire → verrò",
+          "   potere → potrò     dovere → dovrò",
+          "   volere → vorrò     sapere → saprò",
+          "   vedere → vedrò     bere   → berrò",
+          "   fare, stare, dare сохраняют свою a:",
+          "      farò, starò, darò",
+          "",
+          "ПЛАНЫ:                                 Нажми 2",
+          "   domani partirò = завтра я уеду",
+          "   (годится и настоящее: domani parto)",
+          "ПРОГНОЗЫ:                              Нажми 3",
+          "   domani pioverà = завтра будет дождь",
+          "ДОГАДКИ о настоящем:                   Нажми 4",
+          "   dov'è Marco? — sarà a casa.",
+          "      = наверное, он дома"
+        ],
+        "pronunciation_mappings": {
+          "1": "Sarò. Avrò. Andrò. Verrò. Potrò. Dovrò. Vorrò. Saprò. Vedrò. Berrò. Farò. Starò. Darò.",
+          "2": "Domani partirò. Domani parto.",
+          "3": "Domani pioverà.",
+          "4": "Dov'è Marco? Sarà a casa."
+        }
       }
     ]
   },
   {
     "lesson_id": "020",
-    "trigger_word": "accesso",
-    "trigger_card_number": 80,
+    "trigger_word": "piuttosto",
+    "trigger_card_number": 7,
+    "title": "УРОК 24: CONDIZIONALE PRESENTE",
     "header_color": "green",
-    "title": "УРОК 20: CONDIZIONALE PRESENTE",
     "pages": [
       {
         "page": 1,
         "total_pages": 2,
-        "pronunciation": "Lezione venti",
         "content": [
-          "CONDIZIONALE PRESENTE = «стал бы/мог бы».",
-          "Вежливость, гипотезы, советы.",
+          "CONDIZIONALE = «бы». ОСНОВА ТА ЖЕ,",
+          "что и у будущего, окончания новые:",
           "",
-          "ОКОНЧАНИЯ — одинаковы для всех трёх",
-          "спряжений:",
+          "PARLARE → parler-:                     Нажми 1",
+          "   io       parlerei    noi   parleremmo",
+          "   tu       parleresti  voi   parlereste",
+          "   lui/lei  parlerebbe  loro  parlerebbero",
           "",
-          "   parlare → parler-",
-          "      parlerei, parleresti, parlerebbe,",
-          "      parleremmo, parlereste, parlerebbero",
+          "«БЫ» — две m, будущее — одна:          Нажми 2",
+          "   parleremmo = мы бы говорили",
+          "   parleremo  = мы будем говорить",
           "",
-          "   credere → creder-",
-          "      crederei, crederesti, crederebbe,",
-          "      crederemmo, credereste, crederebbero",
-          "",
-          "   finire → finir-",
-          "      finirei, finiresti, finirebbe,",
-          "      finiremmo, finireste, finirebbero",
-          "Те же основы, что и у будущего времени."
-        ]
+          "Короткие основы будущего — те же:      Нажми 3",
+          "   sarei, avrei, andrei, verrei,",
+          "   potrei, dovrei, vorrei, farei"
+        ],
+        "pronunciation": "Lezione ventiquattro",
+        "pronunciation_mappings": {
+          "1": "Io parlerei. Tu parleresti. Lui parlerebbe. Noi parleremmo. Voi parlereste. Loro parlerebbero.",
+          "2": "Parleremmo. Parleremo.",
+          "3": "Sarei. Avrei. Andrei. Verrei. Potrei. Dovrei. Vorrei. Farei."
+        }
       },
       {
         "page": 2,
         "total_pages": 2,
         "content": [
-          "НЕПРАВИЛЬНЫЕ ОСНОВЫ — как у будущего:",
+          "ВЕЖЛИВОСТЬ: vorrei ты уже знаешь:      Нажми 1",
+          "   vorrei un caffè = я бы хотел(а) кофе",
+          "   mi piacerebbe vedere Roma",
+          "      = мне хотелось бы увидеть Рим",
           "",
-          "   essere → sar-      sarei, sarebbe...",
-          "   avere  → avr-      avrei, avrebbe...",
-          "   andare → andr-     andrei...",
-          "   venire → verr-     verrei...",
-          "   fare   → far-      farei...",
-          "   volere → vorr-     vorrei (хотел бы)",
-          "   potere → potr-     potrei (мог бы)",
-          "   dovere → dovr-     dovrei (следовало бы)",
-          "   sapere → sapr-     saprei...",
-          "   vedere → vedr-     vedrei...",
+          "ПРОСЬБЫ мягче, чем può? / puoi?:       Нажми 2",
+          "   mi potrebbe aiutare? (Lei)",
+          "   potresti chiudere la finestra? (tu)",
           "",
-          "УПОТРЕБЛЕНИЕ:",
-          "   - вежливость: vorrei un caffè",
-          "   - гипотеза: sarebbe bello",
-          "   - совет: dovresti studiare di più",
-          "   - смягчение: potresti aiutarmi?"
-        ]
+          "СОВЕТ: dovresti = тебе стоило бы       Нажми 3",
+          "   dovresti dormire di più",
+          "",
+          "МЕЧТЫ И ПРЕДПОЛОЖЕНИЯ:                 Нажми 4",
+          "   sarebbe bello! = вот было бы здорово!",
+          "",
+          "СКОРЕЕ, ЛУЧШЕ: piuttosto               Нажми 5",
+          "   un caffè? — vorrei piuttosto un tè",
+          "      = кофе? — я бы лучше выпил(а) чаю"
+        ],
+        "pronunciation_mappings": {
+          "1": "Vorrei un caffè. Mi piacerebbe vedere Roma.",
+          "2": "Mi potrebbe aiutare? Potresti chiudere la finestra?",
+          "3": "Dovresti dormire di più.",
+          "4": "Sarebbe bello!",
+          "5": "Un caffè? Vorrei piuttosto un tè."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "018",
+    "trigger_word": "anima",
+    "trigger_card_number": 25,
+    "title": "УРОК 25: ЧАСТИЦЫ NE И CI",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "NE = «этого», «из них». Заменяет",
+          "КОЛИЧЕСТВО чего-либо:",
+          "",
+          "С ЧИСЛОМ ИЛИ КОЛИЧЕСТВОМ:              Нажми 1",
+          "   quanti fratelli hai? — ne ho due.",
+          "      = у меня их двое",
+          "   vuoi del pane? — sì, ne voglio un po'.",
+          "   hai tempo? — no, non ne ho.",
+          "Без ne нельзя — не скажешь просто «ho due».",
+          "",
+          "ОБ ЭТОМ (di + это):                    Нажми 2",
+          "   che ne pensi? = что ты об этом думаешь?",
+          "   ne parliamo domani",
+          "      = поговорим об этом завтра",
+          "",
+          "ИЗ МЕСТА — или из переделки:           Нажми 3",
+          "   me ne vado = я ухожу (отсюда)",
+          "   come ne esco? = как из этого выпутаться?"
+        ],
+        "pronunciation": "Lezione venticinque",
+        "pronunciation_mappings": {
+          "1": "Quanti fratelli hai? Ne ho due. Vuoi del pane? Sì, ne voglio un po'. Hai tempo? No, non ne ho.",
+          "2": "Che ne pensi? Ne parliamo domani.",
+          "3": "Me ne vado. Come ne esco?"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "CI = там, туда — о месте:              Нажми 1",
+          "   vai a Roma? — sì, ci vado domani.",
+          "   sei mai stato a Napoli?",
+          "      — sì, ci sono stato.",
+          "CI с глаголами, которые берут a:       Нажми 2",
+          "   pensi al lavoro? — non ci penso!",
+          "   credi ai fantasmi? — non ci credo.",
+          "Это ты уже знаешь:                     Нажми 3",
+          "   c'è, ci sono = есть (ед. / мн. ч.)",
+          "   c'era, c'erano = было / были",
+          "CI VUOLE = нужно (время, вещи):        Нажми 4",
+          "   ci vuole un'ora; ci vogliono due ore",
+          "",
+          "Перед ne mi ti ci vi si становятся",
+          "me te ce ve se:                        Нажми 5",
+          "   me ne vado, te ne vai, se ne va",
+          "   ce n'è uno = есть один (из них)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Vai a Roma? Sì, ci vado domani. Sei mai stato a Napoli? Sì, ci sono stato.",
+          "2": "Pensi al lavoro? Non ci penso! Credi ai fantasmi? Non ci credo.",
+          "3": "C'è. Ci sono. C'era. C'erano.",
+          "4": "Ci vuole un'ora. Ci vogliono due ore.",
+          "5": "Me ne vado. Te ne vai. Se ne va. Ce n'è uno."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "054",
+    "trigger_word": "sia",
+    "trigger_card_number": 62,
+    "title": "УРОК 26: SIA И ABBIA ПОСЛЕ CHE",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "ПЕРВЫЙ ВЗГЛЯД на CONGIUNTIVO (конъюнктив):",
+          "форма для того, что ты ДУМАЕШЬ, на что",
+          "НАДЕЕШЬСЯ или чего ХОЧЕШЬ, а не фактов.",
+          "Ставится после che за такими глаголами:",
+          "",
+          "   penso che, credo che = я думаю      Нажми 1",
+          "   spero che = я надеюсь",
+          "   mi sembra che = мне кажется",
+          "   è importante che = важно, чтобы",
+          "",
+          "ФАКТ, а потом мнение:                  Нажми 2",
+          "   Marco è a casa",
+          "   penso che Marco sia a casa",
+          "      = думаю, Марко дома",
+          "   Anna ha ragione",
+          "   spero che Anna abbia ragione",
+          "      = надеюсь, Анна права"
+        ],
+        "pronunciation": "Lezione ventisei",
+        "pronunciation_mappings": {
+          "1": "Penso che. Credo che. Spero che. Mi sembra che. È importante che.",
+          "2": "Marco è a casa. Penso che Marco sia a casa. Anna ha ragione. Spero che Anna abbia ragione."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "ФОРМЫ essere и avere:                  Нажми 1",
+          "   che io, tu, lui/lei   sia     abbia",
+          "   che noi               siamo   abbiamo",
+          "   che voi               siate   abbiate",
+          "   che loro              siano   abbiano",
+          "",
+          "Для io, tu и lui форма одна, поэтому",
+          "ставь подлежащее, если неясно, кто:    Нажми 2",
+          "   spero che tu abbia tempo",
+          "      = надеюсь, у тебя есть время",
+          "",
+          "Ты уже встречал(а) sia:                Нажми 3",
+          "   sia gentile! = будьте добры! (Lei)",
+          "   sia Marco sia Anna",
+          "      = и Марко, и Анна",
+          "",
+          "Пока — только эти два глагола. Полный",
+          "congiuntivo будет позже."
+        ],
+        "pronunciation_mappings": {
+          "1": "Che io sia. Che tu sia. Che lui sia. Che noi siamo. Che voi siate. Che loro siano. Che io abbia. Che tu abbia. Che lui abbia. Che noi abbiamo. Che voi abbiate. Che loro abbiano.",
+          "2": "Spero che tu abbia tempo.",
+          "3": "Sia gentile! Sia Marco sia Anna."
+        }
       }
     ]
   }

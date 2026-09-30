@@ -172,9 +172,9 @@
           "",
           "un = муж. род      una = жен. род",
           "un libro (книга)   una casa (дом)",
+          "Мн. ч.: unos libros, unas casas (несколько)",
           "",
           "МНОЖЕСТВЕННОЕ ЧИСЛО — добавь -s или -es:",
-          "",
           "el libro  → los libros",
           "la casa   → las casas",
           "el color  → los colores",
@@ -185,7 +185,7 @@
           "Всегда учить ВМЕСТЕ с артиклем:",
           "",
           "Не «persona», а «la persona».",
-          "Артикли выделены цветом для помощи"
+          "Артикли выделены цветом — это помогает."
         ],
         "pronunciation_mappings": {}
       }
@@ -193,9 +193,47 @@
   },
   {
     "lesson_id": "003",
+    "trigger_word": "español",
+    "trigger_card_number": 29,
+    "title": "УРОК 3: ВОПРОСИТЕЛЬНЫЕ СЛОВА",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "Все испанские вопросит. слова — с ударением:",
+          "",
+          "¿qué? = что?      ¿quién? = кто?     Нажми 1",
+          "¿dónde? = где?    ¿cuándo? = когда?",
+          "¿por qué? = почему?  ¿cómo? = как?",
+          "¿cuál? = который? (перед es: какой?)",
+          "¿cuánto/cuántos? = сколько?",
+          "",
+          "ПРИМЕРЫ:                             Нажми 2",
+          "¿Qué quieres? (Что хочешь?)",
+          "¿Dónde está el baño? (Где туалет?)",
+          "¿Cuánto cuesta? (Сколько стоит?)",
+          "¿Por qué no? (Почему нет?)",
+          "",
+          "Замечание: porque (без ударения) = потому что",
+          "           por qué (с ударением) = почему?",
+          "Ударение сохраняется и в косвенных вопросах:",
+          "No sé dónde está. (Не знаю, где это.)"
+        ],
+        "pronunciation": "Lección tres",
+        "pronunciation_mappings": {
+          "1": "qué, quién, dónde, cuándo, por qué, cómo, cuál, cuánto, cuántos",
+          "2": "qué quieres, dónde está el baño, cuánto cuesta, por qué no"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "004",
     "trigger_word": "salir",
-    "trigger_card_number": 46,
-    "title": "УРОК 3: НАСТОЯЩЕЕ ВРЕМЯ",
+    "trigger_card_number": 50,
+    "title": "УРОК 4: НАСТОЯЩЕЕ ВРЕМЯ",
     "header_color": "green",
     "pages": [
       {
@@ -204,26 +242,26 @@
         "content": [
           "Испанские глаголы делятся на 3 группы:",
           "-AR (hablar)  -ER (comer)  -IR (vivir)",
-          "",
-          "В каждой группе одинаковые окончания.",
           "Вот -AR — самая частая группа:       Нажми 1",
           "",
           "yo hablo             = я говорю",
           "tú hablas            = ты говоришь",
+          "usted habla          = вы говорите (вежл.)",
           "él/ella habla        = он/она говорит",
           "nosotros hablamos    = мы говорим",
-          "ellos hablan         = они говорят",
+          "ustedes hablan       = вы говорите (мн.)",
+          "ellos/ellas hablan   = они говорят",
           "",
-          "Схема: убери -ar, добавь",
-          "-o, -as, -a, -amos, -an",
-          "",
-          "Местоимение часто можно опустить —",
-          "окончание и так покажет, кто говорит.",
-          "Hablo = я говорю. Hablan = они говорят."
+          "Убери -ar, добавь: -o -as -a -amos -an",
+          "usted (Ud.) берёт окончание él/ella,",
+          "ustedes (Uds.) — окончание ellos.",
+          "В Латинской Америке ustedes — любое «вы»",
+          "во мн. ч. (в Испании ещё vosotros habláis).",
+          "Местоимение можно опустить: Hablo = я говорю."
         ],
-        "pronunciation": "Lección tres",
+        "pronunciation": "Lección cuatro",
         "pronunciation_mappings": {
-          "1": "yo hablo, tú hablas, él habla, nosotros hablamos, ellos hablan"
+          "1": "yo hablo, tú hablas, usted habla, él habla, nosotros hablamos, ustedes hablan, ellos hablan"
         }
       },
       {
@@ -231,43 +269,78 @@
         "total_pages": 2,
         "content": [
           "-ER глаголы (comer = есть):         Нажми 1",
-          "",
           "yo como             = я ем",
           "tú comes            = ты ешь",
-          "él/ella come        = он/она ест",
+          "él/ella/usted come  = он/она ест, вы едите",
           "nosotros comemos    = мы едим",
-          "ellos comen         = они едят",
+          "ellos/ustedes comen = они едят, вы едите",
           "",
           "-IR глаголы (vivir = жить):         Нажми 2",
-          "",
           "yo vivo             = я живу",
           "tú vives            = ты живёшь",
-          "él/ella vive        = он/она живёт",
+          "él/ella/usted vive  = он/она живёт, вы живёте",
           "nosotros vivimos    = мы живём",
-          "ellos viven         = они живут",
+          "ellos/ustedes viven = они живут, вы живёте",
           "",
           "Заметь: -ER и -IR почти одинаковы!",
           "Только nosotros отличается."
         ],
         "pronunciation_mappings": {
-          "1": "yo como, tú comes, él come, nosotros comemos, ellos comen",
-          "2": "yo vivo, tú vives, él vive, nosotros vivimos, ellos viven"
+          "1": "yo como, tú comes, él come, usted come, nosotros comemos, ellos comen, ustedes comen",
+          "2": "yo vivo, tú vives, él vive, usted vive, nosotros vivimos, ellos viven, ustedes viven"
         }
       }
     ]
   },
   {
-    "lesson_id": "004",
-    "trigger_word": "vez",
-    "trigger_card_number": 68,
-    "title": "УРОК 4: HAY И ОСНОВНЫЕ СТРОЙЫ",
+    "lesson_id": "005",
+    "trigger_word": "mediodía",
+    "trigger_card_number": 58,
+    "title": "УРОК 5: ГЛАГОЛЫ С ЧЕРЕДОВАНИЕМ",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "HAY = there is / there are           Нажми 1",
+          "ГЛАГОЛЫ С ЧЕРЕДОВАНИЕМ В ОСНОВЕ:",
+          "У некоторых глаголов гласная основы",
+          "меняется во всех формах, кроме nosotros.",
+          "Окончания остаются правильными.",
+          "",
+          "e → ie   querer = хотеть             Нажми 1",
+          "quiero, quieres, quiere, queremos, quieren",
+          "",
+          "o → ue   poder = мочь                Нажми 2",
+          "puedo, puedes, puede, podemos, pueden",
+          "",
+          "e → i    repetir = повторять         Нажми 3",
+          "repito, repites, repite, repetimos, repiten",
+          "",
+          "Также: entender, pensar, cerrar (e→ie);",
+          "dormir, volver, costar (o→ue); seguir (e→i)"
+        ],
+        "pronunciation": "Lección cinco",
+        "pronunciation_mappings": {
+          "1": "quiero, quieres, quiere, queremos, quieren",
+          "2": "puedo, puedes, puede, podemos, pueden",
+          "3": "repito, repites, repite, repetimos, repiten"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "006",
+    "trigger_word": "vez",
+    "trigger_card_number": 76,
+    "title": "УРОК 6: HAY И БАЗОВЫЕ СТРУКТУРЫ",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "HAY = есть, имеется                  Нажми 1",
           "",
           "Hay un problema. (Есть проблема.)",
           "Hay libros. (Есть книги.)",
@@ -278,15 +351,15 @@
           "Подлежащее + Глагол + Дополнение",
           "Yo como pan. (Я ем хлеб.)",
           "",
-          "ВОПРОСЫ — два простых способа:",
-          "¿Tú hablas español? (Повысь тон)",
-          "¿Hablas español? (Опусти местоимение)",
+          "ВОПРОСЫ — те же слова, тон повышается:",
+          "¿Hablas español? (Ты говоришь по-испански?)",
+          "Местоимение не обязательно: ¿Tú hablas...?",
           "",
           "ОТРИЦАНИЕ — просто поставь NO перед глаголом:",
           "No hablo inglés. (Я не говорю по-английски.)",
           "No hay problema. (Проблемы нет.)"
         ],
-        "pronunciation": "Lección cuatro",
+        "pronunciation": "Lección seis",
         "pronunciation_mappings": {
           "1": "hay un problema, hay libros, hay agua, no hay tiempo"
         }
@@ -294,10 +367,10 @@
     ]
   },
   {
-    "lesson_id": "005",
+    "lesson_id": "007",
     "trigger_word": "joven",
-    "trigger_card_number": 97,
-    "title": "УРОК 5: SER VS ESTAR",
+    "trigger_card_number": 105,
+    "title": "УРОК 7: SER VS ESTAR",
     "header_color": "green",
     "pages": [
       {
@@ -323,7 +396,7 @@
           "Следующая страница: когда использовать",
           "SER или ESTAR — главный вопрос новичков."
         ],
-        "pronunciation": "Lección cinco",
+        "pronunciation": "Lección siete",
         "pronunciation_mappings": {
           "1": "soy, eres, es, somos, son",
           "2": "estoy, estás, está, estamos, están",
@@ -335,27 +408,27 @@
         "page": 2,
         "total_pages": 3,
         "content": [
-          "В испанском ДВА глагола «быть».",
-          "Это ловушка, но логика проста:",
+          "В испанском ДВА глагола «быть»:",
+          "SER = ЧТО есть что-то",
+          "ESTAR = КАК или ГДЕ что-то есть",
           "",
-          "SER = ЧТО есть что-то (постоянно)",
-          "ESTAR = КАК есть что-то (временно)",
-          "",
-          "SER — личность, происх., черты:      Нажми 1",
+          "SER — кто/что, происхождение, время:   Нажми 1",
           "Soy estudiante. (Я студент.)",
           "Ella es inteligente. (Она умная.)",
           "Somos de México. (Мы из Мексики.)",
+          "Son las cuatro. (Сейчас четыре часа.)",
           "",
-          "ESTAR — состояние, настр-е, место:   Нажми 2",
+          "ESTAR — состояние, настроение, место:  Нажми 2",
           "Estoy cansado. (Я устал.)",
           "Ella está feliz. (Она счастлива.)",
           "Estamos en casa. (Мы дома.)",
           "",
-          "ПРАВИЛО: если можно ИЗМЕНИТЬ — estar.",
-          "Если это ТВОЯ СУЩНОСТЬ — ser."
+          "ПРАВИЛО: ГДЕ что-то находится — estar,",
+          "даже если оно никогда не сдвинется:",
+          "Guadalajara está en México."
         ],
         "pronunciation_mappings": {
-          "1": "soy estudiante, ella es inteligente, somos de México",
+          "1": "soy estudiante, ella es inteligente, somos de México, son las cuatro",
           "2": "estoy cansado, ella está feliz, estamos en casa"
         }
       },
@@ -392,10 +465,10 @@
     ]
   },
   {
-    "lesson_id": "006",
+    "lesson_id": "008",
     "trigger_word": "café",
-    "trigger_card_number": 117,
-    "title": "УРОК 6: GUSTAR И ПОХОЖИЕ ГЛАГОЛЫ",
+    "trigger_card_number": 125,
+    "title": "УРОК 8: GUSTAR И ПОХОЖИЕ ГЛАГОЛЫ",
     "header_color": "green",
     "pages": [
       {
@@ -421,7 +494,7 @@
           "Me importa = мне важно / значимо",
           "Me falta = мне не хватает / нужно"
         ],
-        "pronunciation": "Lección seis",
+        "pronunciation": "Lección ocho",
         "pronunciation_mappings": {
           "1": "me gusta el café, te gusta bailar, le gusta la música, nos gusta viajar",
           "2": "me gustan los gatos, me gustan las películas"
@@ -430,53 +503,15 @@
     ]
   },
   {
-    "lesson_id": "007",
-    "trigger_word": "lugar",
-    "trigger_card_number": 147,
-    "title": "УРОК 7: ВОПРОСИТЕЛЬНЫЕ СЛОВА",
+    "lesson_id": "009",
+    "trigger_word": "levantarse",
+    "trigger_card_number": 163,
+    "title": "УРОК 9: ИМПЕРАТИВ И БУДУЩЕЕ С IR",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
-        "content": [
-          "Все испанские вопросит. слова — с ударением:",
-          "",
-          "¿qué? = what?     ¿quién? = who?     Нажми 1",
-          "¿dónde? = where?  ¿cuándo? = when?",
-          "¿por qué? = why?  ¿cómo? = how?",
-          "¿cuál? = which?   ¿cuánto? = how much?",
-          "",
-          "ПРИМЕРЫ:                             Нажми 2",
-          "",
-          "¿Qué quieres? (Что хочешь?)",
-          "¿Dónde está el baño? (Где туалет?)",
-          "¿Cuánto cuesta? (Сколько стоит?)",
-          "¿Por qué no? (Почему нет?)",
-          "",
-          "Замечание: porque (без ударения) = because",
-          "           por qué (с ударением) = why?",
-          "",
-          "Ударение — это вопросительный знак."
-        ],
-        "pronunciation": "Lección siete",
-        "pronunciation_mappings": {
-          "1": "qué, quién, dónde, cuándo, por qué, cómo, cuál, cuánto",
-          "2": "qué quieres, dónde está el baño, cuánto cuesta, por qué no"
-        }
-      }
-    ]
-  },
-  {
-    "lesson_id": "008",
-    "trigger_word": "dormir",
-    "trigger_card_number": 165,
-    "title": "УРОК 8: ИМПЕРАТИВ И БУДУЩЕЕ С IR",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
           "ПОВЕЛИТЕЛЬНОЕ НАКЛОНЕНИЕ (tú)",
           "",
@@ -494,19 +529,19 @@
           "ir           → ¡Ve! (Иди!)",
           "poner        → ¡Pon! (Поставь!)",
           "salir        → ¡Sal! (Уходи!)",
-          "tener        → ¡Ten! (Возьми!)",
+          "tener        → ¡Ten cuidado! (Осторожно!)",
           "venir        → ¡Ven! (Приходи!)"
         ],
-        "pronunciation": "Lección ocho",
+        "pronunciation": "Lección nueve",
         "pronunciation_mappings": {
           "1": "hablar, habla, mirar, mira",
           "2": "comer, come, escribir, escribe",
-          "3": "decir, di, hacer, haz, ir, ve, poner, pon, salir, sal, tener, ten, venir, ven"
+          "3": "decir, di, hacer, haz, ir, ve, poner, pon, salir, sal, tener, ten cuidado, venir, ven"
         }
       },
       {
         "page": 2,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
           "БЛИЖАЙШЕЕ БУДУЩЕЕ — ir + a + инфинитив",
           "",
@@ -530,6 +565,30 @@
           "1": "voy a comer, vas a estudiar, vamos a salir",
           "2": "voy, vas, va, vamos, van",
           "3": "estoy hablando, está comiendo"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "ВОЗВРАТНЫЕ ГЛАГОЛЫ: действие обращено",
+          "на себя. -se уходит вперёд как",
+          "me, te, se, nos, se:",
+          "levantarse = вставать",
+          "",
+          "me levanto      = я встаю            Нажми 1",
+          "te levantas     = ты встаёшь",
+          "se levanta      = он/она встаёт, вы встаёте",
+          "nos levantamos  = мы встаём",
+          "se levantan     = они встают, вы встаёте",
+          "",
+          "Один ты уже знаешь:",
+          "¿Cómo te llamas? Me llamo Ana.",
+          "(Как тебя зовут? Меня зовут Ана.)",
+          "Также: ducharse, vestirse, acostarse."
+        ],
+        "pronunciation_mappings": {
+          "1": "me levanto, te levantas, se levanta, nos levantamos, se levantan"
         }
       }
     ]

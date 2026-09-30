@@ -1,9 +1,9 @@
 [
   {
     "lesson_id": "025",
-    "trigger_word": "italiano",
-    "trigger_card_number": 1480,
-    "title": "第25课：意大利大区",
+    "trigger_word": "dialetto",
+    "trigger_card_number": 1476,
+    "title": "第33课：意大利大区",
     "header_color": "magenta",
     "pages": [
       {
@@ -18,15 +18,15 @@
           "      工业化程度高，更富裕",
           "   meridione / sud = 南部",
           "      农业为主，气候温暖，较贫困",
-          "   centro = 中部（托斯卡纳、",
-          "      拉齐奥、翁布里亚、马尔凯）",
+          "   centro = 中部（Toscana、",
+          "      Lazio、Umbria、Marche）",
           "",
-          "钟楼主义（Campanilismo）：",
+          "CAMPANILISMO（钟楼主义）：",
           "一种以家乡钟楼（campanile）为",
           "中心的强烈地方自豪感。",
-          "意大利人首先认同自己是佛罗伦萨人、",
-          "那不勒斯人、米兰人——",
-          "其次才是意大利人。"
+          "意大利人首先认同自己是 fiorentino、",
+          "napoletano、milanese——",
+          "其次才是 italiano。"
         ]
       },
       {
@@ -40,7 +40,7 @@
           "直到1960年代，大多数意大利人",
           "只会说本地方言。",
           "",
-          "电视节目统一了语言。如今：",
+          "电视统一了语言。如今：",
           "   所有人都会说标准意大利语",
           "   许多人在家仍说方言",
           "   口音暴露你的地域出身",
@@ -56,10 +56,121 @@
     ]
   },
   {
+    "lesson_id": "055",
+    "trigger_word": "confine",
+    "trigger_card_number": 1479,
+    "title": "第34课：地图上的意大利",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "意大利及其城市和名胜，意大利人这样说。",
+          "一个键读两个：",
+          "意大利          Italia                    按 1",
+          "罗马            Roma",
+          "米兰            Milano                    按 2",
+          "那不勒斯        Napoli",
+          "都灵            Torino                    按 3",
+          "佛罗伦萨        Firenze",
+          "威尼斯          Venezia                   按 4",
+          "博洛尼亚        Bologna",
+          "西西里岛        Sicilia                   按 5",
+          "撒丁岛          Sardegna",
+          "阿尔卑斯山      le Alpi                   按 6",
+          "多洛米蒂山      le Dolomiti",
+          "维苏威火山      il Vesuvio                按 7",
+          "斗兽场          il Colosseo",
+          "波河            il Po                     按 8",
+          "台伯河          il Tevere"
+        ],
+        "pronunciation_mappings": {
+          "1": "Italia. Roma.",
+          "2": "Milano. Napoli.",
+          "3": "Torino. Firenze.",
+          "4": "Venezia. Bologna.",
+          "5": "Sicilia. Sardegna.",
+          "6": "Le Alpi. Le Dolomiti.",
+          "7": "Il Vesuvio. Il Colosseo.",
+          "8": "Il Po. Il Tevere."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "先说国家，再说首都，都用意大利语。",
+          "一个键读两行：",
+          "意大利       Italia      Roma             按 1",
+          "法国         Francia     Parigi",
+          "德国         Germania    Berlino          按 2",
+          "西班牙       Spagna      Madrid",
+          "英国         Regno Unito Londra           按 3",
+          "葡萄牙       Portogallo  Lisbona",
+          "荷兰         Paesi Bassi Amsterdam        按 4",
+          "瑞士         Svizzera    Berna",
+          "奥地利       Austria     Vienna           按 5",
+          "斯洛文尼亚   Slovenia    Lubiana",
+          "克罗地亚     Croazia     Zagabria         按 6",
+          "希腊         Grecia      Atene",
+          "马耳他       Malta       La Valletta      按 7",
+          "波兰         Polonia     Varsavia",
+          "瑞典         Svezia      Stoccolma        按 8",
+          "俄罗斯       Russia      Mosca"
+        ],
+        "pronunciation_mappings": {
+          "1": "Italia. Roma. Francia. Parigi.",
+          "2": "Germania. Berlino. Spagna. Madrid.",
+          "3": "Regno Unito. Londra. Portogallo. Lisbona.",
+          "4": "Paesi Bassi. Amsterdam. Svizzera. Berna.",
+          "5": "Austria. Vienna. Slovenia. Lubiana.",
+          "6": "Croazia. Zagabria. Grecia. Atene.",
+          "7": "Malta. La Valletta. Polonia. Varsavia.",
+          "8": "Svezia. Stoccolma. Russia. Mosca."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "再来十六个国家和它们的首都，",
+          "意大利人这样说：",
+          "乌克兰       Ucraina       Kiev           按 1",
+          "土耳其       Turchia       Ankara",
+          "加拿大       Canada        Ottawa         按 2",
+          "美国         gli USA       Washington",
+          "巴西         Brasile       Brasilia       按 3",
+          "墨西哥       Messico       Città del Messico",
+          "中国         Cina          Pechino        按 4",
+          "日本         Giappone      Tokyo",
+          "韩国         Corea del Sud Seul           按 5",
+          "印度         India         Nuova Delhi",
+          "印度尼西亚   Indonesia     Giacarta       按 6",
+          "澳大利亚     Australia     Canberra",
+          "埃及         Egitto        Il Cairo       按 7",
+          "肯尼亚       Kenya         Nairobi",
+          "尼日利亚     Nigeria       Abuja          按 8",
+          "南非         Sudafrica     Pretoria"
+        ],
+        "pronunciation_mappings": {
+          "1": "Ucraina. Kiev. Turchia. Ankara.",
+          "2": "Canada. Ottawa. Gli USA. Washington.",
+          "3": "Brasile. Brasilia. Messico. Città del Messico.",
+          "4": "Cina. Pechino. Giappone. Tokyo.",
+          "5": "Corea del Sud. Seul. India. Nuova Delhi.",
+          "6": "Indonesia. Giacarta. Australia. Canberra.",
+          "7": "Egitto. Il Cairo. Kenya. Nairobi.",
+          "8": "Nigeria. Abuja. Sudafrica. Pretoria."
+        }
+      }
+    ]
+  },
+  {
     "lesson_id": "026",
     "trigger_word": "parrocchia",
-    "trigger_card_number": 1505,
-    "title": "第26课：天主教传统",
+    "trigger_card_number": 1498,
+    "title": "第35课：天主教传统",
     "header_color": "magenta",
     "pages": [
       {
@@ -70,12 +181,13 @@
           "即使对不信教者也是如此——历法、",
           "词汇、社会节奏皆受其影响。",
           "",
-          "第22课的圣事同时也是教会历法，",
-          "每一项都伴随社交义务：",
+          "第29课讲过的圣事，标记着",
+          "家庭生活的节点。每一项都伴随着",
+          "社交义务：",
           "",
           "   bomboniera = 答谢小礼（必备！）",
           "      每场圣事庆典都要送",
-          "   lista = 礼品清单（婚礼用）",
+          "   lista nozze = 婚礼礼品清单",
           "   busta = 现金信封（常见贺礼）",
           "",
           "堂区：",
@@ -94,19 +206,18 @@
           "   Carnevale = 狂欢节（四旬期前，2-3月）",
           "      面具、变装、甜食",
           "   Pasqua = 复活节",
-          "      colomba（鸽形蛋糕）, uova（彩蛋）",
+          "      colomba（鸽形蛋糕）、uova（彩蛋）",
           "   Ferragosto = 8月15日",
           "      城市倾空，海滩爆满",
           "   Natale = 圣诞节",
-          "      panettone, presepe, pranzo",
-          "      （圣诞面包、马槽圣景、圣诞家宴）",
+          "      panettone、presepe 马槽、pranzo 家宴",
           "   Capodanno = 新年",
           "      吃 lenticchie（小扁豆）求好运",
           "",
           "每个城镇都有自己的 santo patrono",
-          "（主保圣人），每年为其举办节庆：",
-          "   processione, sagra, fuochi——",
-          "   游行、乡村美食节、烟火，还放假一天。"
+          "（主保圣人），每年都有一场 festa：",
+          "   processione 游行、sagra 美食节、",
+          "   fuochi 烟火，还放假一天。"
         ]
       }
     ]
@@ -114,8 +225,8 @@
   {
     "lesson_id": "027",
     "trigger_word": "orgoglio",
-    "trigger_card_number": 1577,
-    "title": "第27课：BELLA FIGURA",
+    "trigger_card_number": 1572,
+    "title": "第36课：BELLA FIGURA",
     "header_color": "magenta",
     "pages": [
       {
@@ -132,13 +243,13 @@
           "",
           "它涵盖一切：",
           "   穿着方式（即使出门办事）",
-          "   言谈方式（语域很重要）",
+          "   言谈方式（语体很重要）",
           "   进餐礼仪（从不匆忙用餐）",
           "   待客之道（慷慨是关键）",
           "   居家环境（客人可能随时",
           "     到访，务必整洁）",
           "",
-          "FARE BRUTTA FIGURA = 相反情况。",
+          "FARE BRUTTA FIGURA = 正好相反。",
           "社交性死亡。务必不惜代价避免。"
         ]
       },
@@ -164,117 +275,6 @@
           "文化操作系统。理解它们，",
           "你就理解了意大利。"
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "035",
-    "trigger_word": "confine",
-    "trigger_card_number": 1484,
-    "title": "第35课：地图上的意大利",
-    "header_color": "cyan",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 3,
-        "content": [
-          "意大利及其城市和名胜，按意大利人的说法。",
-          "一键对应两个：",
-          "意大利          Italia                   按 1",
-          "罗马            Roma",
-          "米兰            Milano                   按 2",
-          "那不勒斯        Napoli",
-          "都灵            Torino                   按 3",
-          "佛罗伦萨        Firenze",
-          "威尼斯          Venezia                  按 4",
-          "博洛尼亚        Bologna",
-          "西西里          Sicilia                  按 5",
-          "撒丁岛          Sardegna",
-          "阿尔卑斯山      le Alpi                  按 6",
-          "多洛米蒂山      le Dolomiti",
-          "维苏威火山      il Vesuvio               按 7",
-          "斗兽场          il Colosseo",
-          "波河            il Po                    按 8",
-          "台伯河          il Tevere"
-        ],
-        "pronunciation_mappings": {
-          "1": "Italia. Roma.",
-          "2": "Milano. Napoli.",
-          "3": "Torino. Firenze.",
-          "4": "Venezia. Bologna.",
-          "5": "Sicilia. Sardegna.",
-          "6": "Le Alpi. Le Dolomiti.",
-          "7": "Il Vesuvio. Il Colosseo.",
-          "8": "Il Po. Il Tevere."
-        }
-      },
-      {
-        "page": 2,
-        "total_pages": 3,
-        "content": [
-          "国家及其首都，用意大利语。一键对应两行：",
-          "",
-          "意大利       Italia      Roma            按 1",
-          "法国         Francia     Parigi",
-          "德国         Germania    Berlino         按 2",
-          "西班牙       Spagna      Madrid",
-          "英国         Regno Unito Londra          按 3",
-          "葡萄牙       Portogallo  Lisbona",
-          "荷兰         Paesi Bassi Amsterdam       按 4",
-          "瑞士         Svizzera    Berna",
-          "奥地利       Austria     Vienna          按 5",
-          "斯洛文尼亚   Slovenia    Lubiana",
-          "克罗地亚     Croazia     Zagabria        按 6",
-          "希腊         Grecia      Atene",
-          "马耳他       Malta       La Valletta     按 7",
-          "波兰         Polonia     Varsavia",
-          "瑞典         Svezia      Stoccolma       按 8",
-          "俄罗斯       Russia      Mosca"
-        ],
-        "pronunciation_mappings": {
-          "1": "Italia. Roma. Francia. Parigi.",
-          "2": "Germania. Berlino. Spagna. Madrid.",
-          "3": "Regno Unito. Londra. Portogallo. Lisbona.",
-          "4": "Paesi Bassi. Amsterdam. Svizzera. Berna.",
-          "5": "Austria. Vienna. Slovenia. Lubiana.",
-          "6": "Croazia. Zagabria. Grecia. Atene.",
-          "7": "Malta. La Valletta. Polonia. Varsavia.",
-          "8": "Svezia. Stoccolma. Russia. Mosca."
-        }
-      },
-      {
-        "page": 3,
-        "total_pages": 3,
-        "content": [
-          "国家、国民、形容词：Italia、",
-          "italiano、italiano。再来十六个：",
-          "乌克兰       Ucraina     Kiev            按 1",
-          "土耳其       Turchia     Ankara",
-          "美国         gli USA     Washington      按 2",
-          "加拿大       Canada      Ottawa",
-          "墨西哥       Messico     CDMX            按 3",
-          "巴西         Brasile     Brasilia",
-          "中国         Cina        Pechino         按 4",
-          "日本         Giappone    Tokyo",
-          "韩国         Corea (Sud) Seul            按 5",
-          "印度         India       Nuova Delhi",
-          "印度尼西亚   Indonesia   Giacarta        按 6",
-          "澳大利亚     Australia   Canberra",
-          "埃及         Egitto      Il Cairo        按 7",
-          "肯尼亚       Kenya       Nairobi",
-          "尼日利亚     Nigeria     Abuja           按 8",
-          "南非         Sudafrica   Pretoria"
-        ],
-        "pronunciation_mappings": {
-          "1": "Ucraina. Kiev. Turchia. Ankara.",
-          "2": "Gli USA. Washington. Canada. Ottawa.",
-          "3": "Messico. CDMX. Brasile. Brasilia.",
-          "4": "Cina. Pechino. Giappone. Tokyo.",
-          "5": "Corea (Sud). Seul. India. Nuova Delhi.",
-          "6": "Indonesia. Giacarta. Australia. Canberra.",
-          "7": "Egitto. Il Cairo. Kenya. Nairobi.",
-          "8": "Nigeria. Abuja. Sudafrica. Pretoria."
-        }
       }
     ]
   }

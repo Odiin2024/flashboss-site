@@ -2,9 +2,9 @@
   {
     "lesson_id": "053",
     "trigger_word": "novulo",
+    "title": "УРОК 58: РЕСУРСЫ ПО ЭСПЕРАНТО",
     "header_color": "blue",
     "toggle_mode": true,
-    "title": "УРОК 53: РЕСУРСЫ ПО ЭСПЕРАНТО",
     "pages": [
       {
         "page": 1,
@@ -16,13 +16,13 @@
           "  Senpaga kurso kun ekzercoj kaj forumo",
           "",
           "VIKIPEDIO EN ESPERANTO",
-          "  eo.wikipedia.org - Pli ol 300,000 artikoloj!",
+          "  eo.wikipedia.org - Pli ol 300 000 artikoloj!",
           "",
           "DUOLINGO",
           "  Esperanto-kurso por anglalingvanoj",
           "",
           "AMIKUMU (apliko)",
-          "  Trovu Esperantistojn proksime de vi"
+          "  Trovu esperantistojn proksime de vi"
         ],
         "english": [
           "ПОЛЕЗНЫЕ САЙТЫ",
@@ -37,7 +37,7 @@
           "  Курс эсперанто для англоговорящих",
           "",
           "AMIKUMU (приложение)",
-          "  Найди эсперантистов рядом с тобой"
+          "  Найди эсперантистов рядом с собой"
         ]
       },
       {
@@ -47,13 +47,13 @@
           "PLI DA RIMEDOJ",
           "",
           "PASPORTA SERVO",
-          "  Senpaga loĝado ĉe Esperantistoj",
+          "  Senpaga loĝado ĉe esperantistoj",
           "",
           "LIBERA FOLIO",
           "  Novaĵoj en Esperanto",
           "",
           "MUZAIKO",
-          "  24-hora Esperanto-radio",
+          "  Reta radio en Esperanto",
           "",
           "TELEGRAM/DISCORD",
           "  Multaj grupoj por babili"
@@ -62,26 +62,129 @@
           "ЕЩЁ РЕСУРСЫ",
           "",
           "PASPORTA SERVO",
-          "  Бесплатное размещение у эсперантистов",
+          "  Бесплатный ночлег у эсперантистов",
           "",
           "LIBERA FOLIO",
           "  Новости на эсперанто",
           "",
           "MUZAIKO",
-          "  Круглосуточное радио на эсперанто",
+          "  Интернет-радио на эсперанто",
           "",
           "TELEGRAM/DISCORD",
-          "  Много чатов для общения"
+          "  Много групп для общения"
         ]
+      }
+    ]
+  },
+  {
+    "lesson_id": "060",
+    "trigger_word": "pasporto",
+    "title": "УРОК 59: МИР НА ЭСПЕРАНТО",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "КОРЕНЬ = НАРОД: -io (или -lando) даёт",
+          "название страны. Одна клавиша — две строки:",
+          "Германия     Germanio    germano       Нажми 1",
+          "Франция      Francio     franco",
+          "Италия       Italio      italo         Нажми 2",
+          "Испания      Hispanio    hispano",
+          "Россия       Rusio       ruso          Нажми 3",
+          "Польша       Pollando    polo",
+          "Китай        Ĉinio       ĉino          Нажми 4",
+          "Япония       Japanio     japano",
+          "",
+          "КОРЕНЬ = СТРАНА: -ano называет жителя:",
+          "США          Usono       usonano       Нажми 5",
+          "Канада       Kanado      kanadano",
+          "Бразилия     Brazilo     brazilano     Нажми 6",
+          "Мексика      Meksiko     meksikano",
+          "Кения        Kenjo       kenjano       Нажми 7",
+          "Аргентина    Argentino   argentinano"
+        ],
+        "pronunciation_mappings": {
+          "1": "Germanio. Germano. Francio. Franco.",
+          "2": "Italio. Italo. Hispanio. Hispano.",
+          "3": "Rusio. Ruso. Pollando. Polo.",
+          "4": "Ĉinio. Ĉino. Japanio. Japano.",
+          "5": "Usono. Usonano. Kanado. Kanadano.",
+          "6": "Brazilo. Brazilano. Meksiko. Meksikano.",
+          "7": "Kenjo. Kenjano. Argentino. Argentinano."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "Страна, затем её столица, на эсперанто.",
+          "Одна клавиша озвучивает две строки:",
+          "Германия     Germanio    Berlino       Нажми 1",
+          "Франция      Francio     Parizo",
+          "Италия       Italio      Romo          Нажми 2",
+          "Испания      Hispanio    Madrido",
+          "Британия     Britio      Londono       Нажми 3",
+          "Португалия   Portugalio  Lisbono",
+          "Нидерланды   Nederlando  Amsterdamo    Нажми 4",
+          "Швейцария    Svislando   Berno",
+          "Австрия      Aŭstrio     Vieno         Нажми 5",
+          "Польша       Pollando    Varsovio",
+          "Швеция       Svedio      Stokholmo     Нажми 6",
+          "Россия       Rusio       Moskvo",
+          "Украина      Ukrainio    Kievo         Нажми 7",
+          "Турция       Turkio      Ankaro"
+        ],
+        "pronunciation_mappings": {
+          "1": "Germanio. Berlino. Francio. Parizo.",
+          "2": "Italio. Romo. Hispanio. Madrido.",
+          "3": "Britio. Londono. Portugalio. Lisbono.",
+          "4": "Nederlando. Amsterdamo. Svislando. Berno.",
+          "5": "Aŭstrio. Vieno. Pollando. Varsovio.",
+          "6": "Svedio. Stokholmo. Rusio. Moskvo.",
+          "7": "Ukrainio. Kievo. Turkio. Ankaro."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "Ещё четырнадцать стран и столиц",
+          "со всего мира:",
+          "США          Usono       Vaŝingtono    Нажми 1",
+          "Канада       Kanado      Otavo",
+          "Мексика      Meksiko     Meksikurbo    Нажми 2",
+          "Бразилия     Brazilo     Braziljo",
+          "Китай        Ĉinio       Pekino        Нажми 3",
+          "Япония       Japanio     Tokio",
+          "Южная Корея  Sud-Koreio  Seulo         Нажми 4",
+          "Индия        Hindio      Nov-Delhio",
+          "Индонезия    Indonezio   Ĝakarto       Нажми 5",
+          "Австралия    Aŭstralio   Kanbero",
+          "Египет       Egiptio     Kairo         Нажми 6",
+          "Кения        Kenjo       Najrobo",
+          "Нигерия      Niĝerio     Abuĝo         Нажми 7",
+          "ЮАР          Sud-Afriko  Pretorio"
+        ],
+        "pronunciation_mappings": {
+          "1": "Usono. Vaŝingtono. Kanado. Otavo.",
+          "2": "Meksiko. Meksikurbo. Brazilo. Braziljo.",
+          "3": "Ĉinio. Pekino. Japanio. Tokio.",
+          "4": "Sud-Koreio. Seulo. Hindio. Nov-Delhio.",
+          "5": "Indonezio. Ĝakarto. Aŭstralio. Kanbero.",
+          "6": "Egiptio. Kairo. Kenjo. Najrobo.",
+          "7": "Niĝerio. Abuĝo. Sud-Afriko. Pretorio."
+        }
       }
     ]
   },
   {
     "lesson_id": "054",
     "trigger_word": "muzeo",
+    "title": "УРОК 60: МУЗЫКА НА ЭСПЕРАНТО",
     "header_color": "blue",
     "toggle_mode": true,
-    "title": "УРОК 54: МУЗЫКА НА ЭСПЕРАНТО",
     "pages": [
       {
         "page": 1,
@@ -109,20 +212,20 @@
           "МУЗЫКА НА ЭСПЕРАНТО",
           "",
           "Да, музыка на эсперанто существует!",
-          "Все жанры: рок, рэп, регги, поп…",
+          "Все жанры: рок, рэп, регги, поп...",
           "",
-          "ИСПОЛНИТЕЛИ ДЛЯ ЗНАКОМСТВА:",
-          "* Jonny M – Регги/Рэп (Германия)",
-          "* Kajto – Поп-фолк (Нидерланды)",
-          "* Dolchamar – Рок/Хип-хоп (Финляндия)",
-          "* Martin Wiese – Рок (Швеция)",
+          "ИСПОЛНИТЕЛИ, КОТОРЫХ СТОИТ ПОСЛУШАТЬ:",
+          "* Jonny M - регги/рэп (Германия)",
+          "* Kajto - поп-фолк (Нидерланды)",
+          "* Dolchamar - рок/рэп (Финляндия)",
+          "* Martin Wiese - рок (Швеция)",
           "",
           "ПОЧЕМУ ЭТО РАБОТАЕТ:",
-          "* Ровный ритм",
+          "* Равномерный ритм",
           "* Лёгкая рифма (-o, -as, -is, -a, -e)",
-          "* Гибкий порядок слов",
+          "* Свободный порядок слов",
           "",
-          "Ищи «Esperanto music» на YouTube!"
+          "Ищи 'Esperanto music' на YouTube!"
         ]
       }
     ]
@@ -130,13 +233,12 @@
   {
     "lesson_id": "055",
     "trigger_word": "antaŭjuĝo",
+    "title": "УРОК 61: ПРИСТАВКА «FI-»",
     "header_color": "green",
-    "title": "УРОК 55: ПРИСТАВКА «FI-»",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
-        "pronunciation": "Leciono kvindek kvin",
         "content": [
           "Приставка FI- значит «позорный»,",
           "«морально дурной» или «отвратительный».",
@@ -156,16 +258,17 @@
           "fi-  = морально дурной (fia = позорный)",
           "Ne uzu fivortojn!",
           "(Не употребляй ругань!)"
-        ]
+        ],
+        "pronunciation": "Leciono kvindek kvin"
       }
     ]
   },
   {
     "lesson_id": "056",
     "trigger_word": "konversacio",
+    "title": "УРОК 62: ПРАКТИКА С ИИ",
     "header_color": "blue",
     "toggle_mode": true,
-    "title": "УРОК 56: ПРАКТИКА С ИИ",
     "pages": [
       {
         "page": 1,
@@ -185,15 +288,15 @@
           "   Por demandi pri gramatiko"
         ],
         "english": [
-          "Ты можешь практиковаться в эсперанто с ИИ!",
+          "Эсперанто можно практиковать с ИИ!",
           "",
-          "Современные языковые модели (ChatGPT, Claude)",
-          "говорят на эсперанто удивительно хорошо.",
+          "Языковые модели (ChatGPT, Claude)",
+          "удивительно хорошо говорят на эсперанто.",
           "",
           "Два способа их использовать:",
           "",
-          "1. СОБЕСЕДНИК ДЛЯ РАЗГОВОРА",
-          "   Чтобы потренировать разговорную речь",
+          "1. СОБЕСЕДНИК",
+          "   Чтобы практиковать речь",
           "",
           "2. ЛИЧНЫЙ РЕПЕТИТОР",
           "   Чтобы спрашивать о грамматике"
@@ -208,7 +311,7 @@
           "\"Rolu kiel lerneja kunlernanto dum",
           "ekskurso. Parolu Esperanton flue.",
           "Gvidu per facile respondeblaj demandoj.",
-          "Uzu simplan Esperanton. Korektu gentile.\"",
+          "Uzu simplan Esperanton. Korektu min ĝentile.\"",
           "",
           "Poste simple komencu: 'Saluton!'",
           "",
@@ -220,133 +323,22 @@
           "Demandu pri io ajn! 'Kial estas -n ĉi tie?'"
         ],
         "english": [
-          "СОБЕСЕДНИК ДЛЯ РАЗГОВОРА — скажи ИИ:",
+          "СОБЕСЕДНИК - Скажи ИИ:",
           "",
-          "«Представь, что ты одноклассник во время",
-          "экскурсии. Говори по-эсперанто свободно.",
-          "Задавай лёгкие вопросы. Используй простой",
-          "эсперанто. Исправляй мягко.»",
+          "\"Играй роль одноклассника на",
+          "экскурсии. Говори на эсперанто бегло.",
+          "Веди беседу лёгкими вопросами. Говори",
+          "на простом эсперанто. Мягко поправляй меня.\"",
           "",
-          "Потом просто начни: «Saluton!»",
+          "Потом просто начни: 'Saluton!'",
           "",
-          "ЛИЧНЫЙ РЕПЕТИТОР — скажи ИИ:",
+          "ЛИЧНЫЙ РЕПЕТИТОР - Скажи ИИ:",
           "",
-          "«Будь моим учителем эсперанто. Отвечай",
-          "на вопросы. Объясняй грамматику.»",
+          "\"Будь моим репетитором эсперанто.",
+          "Отвечай на вопросы. Объясняй грамматику.\"",
           "",
-          "Спрашивай обо всём! «Kial estas -n ĉi tie?»"
+          "Спрашивай о чём угодно! 'Почему здесь -n?'"
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "060",
-    "trigger_word": "pasporto",
-    "trigger_card_number": 643,
-    "title": "УРОК 60: МИР НА ЭСПЕРАНТО",
-    "header_color": "cyan",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 3,
-        "content": [
-          "Страны на эсперанто: -io — страна, -o —",
-          "человек. Одна клавиша — два:",
-          "Германия        Germanio,  germano    Нажми 1",
-          "Франция         Francio,   franco",
-          "Италия          Italio,    italo      Нажми 2",
-          "Испания         Hispanio,  hispano",
-          "Польша          Pollando,  polo       Нажми 3",
-          "Россия          Rusio,     ruso",
-          "Венгрия         Hungario,  hungaro    Нажми 4",
-          "Чехия           Ĉeĥio,     ĉeĥo",
-          "Литва           Litovio,   litovo     Нажми 5",
-          "Финляндия       Finnlando, finno",
-          "Китай           Ĉinio,     ĉino       Нажми 6",
-          "Япония          Japanio,   japano",
-          "США             Usono,     usonano    Нажми 7",
-          "Канада          Kanado,    kanadano",
-          "Бразилия        Brazilo,   brazilano  Нажми 8",
-          "Кения           Kenjo,     kenjano"
-        ],
-        "pronunciation_mappings": {
-          "1": "Germanio,  germano. Francio,   franco.",
-          "2": "Italio,    italo. Hispanio,  hispano.",
-          "3": "Pollando,  polo. Rusio,     ruso.",
-          "4": "Hungario,  hungaro. Ĉeĥio,     ĉeĥo.",
-          "5": "Litovio,   litovo. Finnlando, finno.",
-          "6": "Ĉinio,     ĉino. Japanio,   japano.",
-          "7": "Usono,     usonano. Kanado,    kanadano.",
-          "8": "Brazilo,   brazilano. Kenjo,     kenjano."
-        }
-      },
-      {
-        "page": 2,
-        "total_pages": 3,
-        "content": [
-          "Страна и её столица на эсперанто. Одна",
-          "клавиша — две строки:",
-          "Германия     Germanio    Berlino      Нажми 1",
-          "Франция      Francio     Parizo",
-          "Италия       Italio      Romo         Нажми 2",
-          "Испания      Hispanio    Madrido",
-          "Британия     Britio      Londono      Нажми 3",
-          "Португалия   Portugalio  Lisbono",
-          "Нидерланды   Nederlando  Amsterdamo   Нажми 4",
-          "Швейцария    Svislando   Berno",
-          "Австрия      Aŭstrio     Vieno        Нажми 5",
-          "Польша       Pollando    Varsovio",
-          "Швеция       Svedio      Stokholmo    Нажми 6",
-          "Россия       Rusio       Moskvo",
-          "Украина      Ukrainio    Kievo        Нажми 7",
-          "Турция       Turkio      Ankaro",
-          "Чехия        Ĉeĥio       Prago        Нажми 8",
-          "Венгрия      Hungario    Budapeŝto"
-        ],
-        "pronunciation_mappings": {
-          "1": "Germanio. Berlino. Francio. Parizo.",
-          "2": "Italio. Romo. Hispanio. Madrido.",
-          "3": "Britio. Londono. Portugalio. Lisbono.",
-          "4": "Nederlando. Amsterdamo. Svislando. Berno.",
-          "5": "Aŭstrio. Vieno. Pollando. Varsovio.",
-          "6": "Svedio. Stokholmo. Rusio. Moskvo.",
-          "7": "Ukrainio. Kievo. Turkio. Ankaro.",
-          "8": "Ĉeĥio. Prago. Hungario. Budapeŝto."
-        }
-      },
-      {
-        "page": 3,
-        "total_pages": 3,
-        "content": [
-          "Страна, житель, прилагательное: Germanio,",
-          "germano, germana. Ещё шестнадцать:",
-          "Литва        Litovio     Vilno        Нажми 1",
-          "Финляндия    Finnlando   Helsinko",
-          "США          Usono       Vaŝingtono   Нажми 2",
-          "Канада       Kanado      Otavo",
-          "Мексика      Meksiko     Meksikurbo   Нажми 3",
-          "Бразилия     Brazilo     Braziljo",
-          "Китай        Ĉinio       Pekino       Нажми 4",
-          "Япония       Japanio     Tokio",
-          "Южная Корея  Sud-Koreio  Seulo        Нажми 5",
-          "Индия        Hindio      Nov-Delhio",
-          "Индонезия    Indonezio   Ĝakarto      Нажми 6",
-          "Австралия    Aŭstralio   Kanbero",
-          "Египет       Egiptio     Kairo        Нажми 7",
-          "Кения        Kenjo       Najrobo",
-          "Нигерия      Niĝerio     Abuĝo        Нажми 8",
-          "ЮАР          Sud-Afriko  Pretorio"
-        ],
-        "pronunciation_mappings": {
-          "1": "Litovio. Vilno. Finnlando. Helsinko.",
-          "2": "Usono. Vaŝingtono. Kanado. Otavo.",
-          "3": "Meksiko. Meksikurbo. Brazilo. Braziljo.",
-          "4": "Ĉinio. Pekino. Japanio. Tokio.",
-          "5": "Sud-Koreio. Seulo. Hindio. Nov-Delhio.",
-          "6": "Indonezio. Ĝakarto. Aŭstralio. Kanbero.",
-          "7": "Egiptio. Kairo. Kenjo. Najrobo.",
-          "8": "Niĝerio. Abuĝo. Sud-Afriko. Pretorio."
-        }
       }
     ]
   }

@@ -1,198 +1,348 @@
 [
-  {
-    "lesson_id": "019",
-    "trigger_word": "nomiĝi",
-    "header_color": "green",
-    "title": "УРОК 19: СУФФИКС «-IĜ-»",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono dek naŭ",
-        "content": [
-          "Суффикс -IĜ- означает «становиться» или",
-          "«переходить в другое состояние».",
-          "",
-          "ПРИЛАГАТЕЛЬНОЕ → ГЛАГОЛ (стать):",
-          "varma   → varmiĝi    = тёплый → согреться",
-          "riĉa    → riĉiĝi     = богатый → разбогатеть",
-          "malpura → malpuriĝi  = грязный → испачкаться",
-          "",
-          "СУЩЕСТВИТЕЛЬНОЕ → ГЛАГОЛ (превратиться):",
-          "glacio  → glaciiĝi   = лёд → замёрзнуть",
-          "patro   → patriĝi    = отец → стать отцом",
-          "",
-          "ЧАСТО ВСТРЕЧАЕТСЯ:",
-          "nomiĝi     = называться (Mi nomiĝas...)",
-          "fariĝi     = становиться",
-          "",
-          "ВАЖНО: глаголы с -IĜ- непереходные —",
-          "подлежащее само меняется, без объекта!"
+    {
+        "lesson_id": "022",
+        "trigger_word": "komputilo",
+        "title": "УРОК 28: СУФФИКС «-IL-»",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "Суффикс -IL- обозначает ИНСТРУМЕНТ: то,",
+                    "чем выполняют действие.",
+                    "",
+                    "ГЛАГОЛ → ИНСТРУМЕНТ:                   Нажми 1",
+                    "tranĉi  → tranĉilo   = резать → нож",
+                    "ŝlosi   → ŝlosilo    = запирать → ключ",
+                    "kombi   → kombilo    = причёсывать → расчёска",
+                    "ŝargi   → ŝargilo    = заряжать → зарядка",
+                    "komputi → komputilo  = вычислять → компьютер",
+                    "",
+                    "ИНСТРУМЕНТ ДЛЯ ИЗМЕРЕНИЯ:              Нажми 2",
+                    "mezurilo = измеритель, измерительный прибор",
+                    "(от mezuri = измерять)"
+                ],
+                "pronunciation": "Leciono dudek du",
+                "pronunciation_mappings": {
+                    "1": "Tranĉi. Tranĉilo. Ŝlosi. Ŝlosilo. Kombi. Kombilo. Ŝargi. Ŝargilo. Komputi. Komputilo.",
+                    "2": "Mezuri. Mezurilo."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "В ТВОИХ УСТРОЙСТВАХ:                   Нажми 1",
+                    "aŭdi    → aŭdilo     = слышать → наушники",
+                    "serĉi   → serĉilo    = искать → поисковик",
+                    "ŝalti   → ŝaltilo    = включать → выключатель",
+                    "",
+                    "ILO — САМОСТОЯТЕЛЬНОЕ СЛОВО:           Нажми 2",
+                    "ilo = инструмент    iloj = инструменты",
+                    "",
+                    "В РЕЧИ:                                Нажми 3",
+                    "Mi forgesis mian ŝargilon.",
+                    "= Я забыл свою зарядку.",
+                    "Kie estas mia ŝlosilo?",
+                    "= Где мой ключ?"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Aŭdi. Aŭdilo. Serĉi. Serĉilo. Ŝalti. Ŝaltilo.",
+                    "2": "Ilo. Iloj.",
+                    "3": "Mi forgesis mian ŝargilon. Kie estas mia ŝlosilo?"
+                }
+            }
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "020",
-    "trigger_word": "klavaro",
-    "header_color": "green",
-    "title": "УРОК 20: СУФФИКС «-AR-»",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono dudek",
-        "content": [
-          "Суффикс -AR- означает «собрание» или",
-          "«группа». Он создаёт собирательные",
-          "существительные из отдельных предметов.",
-          "",
-          "СТРОЙ:",
-          "arbo    → arbaro     = дерево → лес",
-          "homo    → homaro     = человек → человечество",
-          "vorto   → vortaro    = слово → словарь",
-          "ilo     → ilaro      = инструмент → набор",
-          "besto   → bestaro    = животное → фауна",
-          "",
-          "СХЕМА:",
-          "Возьми любой предмет, добавь -ar- —",
-          "получишь группу таких предметов!",
-          "",
-          "Mi havas grandan vortaron.",
-          "(У меня большой словарь.)"
+    },
+    {
+        "lesson_id": "020",
+        "trigger_word": "klavaro",
+        "title": "УРОК 29: СУФФИКС «-AR-»",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "Суффикс -AR- образует ГРУППУ: целое",
+                    "собрание однородных предметов.",
+                    "",
+                    "ОДИН ПРЕДМЕТ → ВСЁ СОБРАНИЕ:           Нажми 1",
+                    "klavo  → klavaro    = клавиша → клавиатура",
+                    "vorto  → vortaro    = слово → словарь",
+                    "arbo   → arbaro     = дерево → лес",
+                    "ŝtupo  → ŝtuparo    = ступенька → лестница",
+                    "homo   → homaro     = человек → человечество",
+                    "",
+                    "НЕ ПРОСТО МНОЖЕСТВЕННОЕ ЧИСЛО:         Нажми 2",
+                    "arboj   = деревья (несколько или много)",
+                    "arbaro  = лес (одно целое)",
+                    "arbaroj = леса"
+                ],
+                "pronunciation": "Leciono dudek",
+                "pronunciation_mappings": {
+                    "1": "Klavo. Klavaro. Vorto. Vortaro. Arbo. Arbaro. Ŝtupo. Ŝtuparo. Homo. Homaro.",
+                    "2": "Arboj. Arbaro. Arbaroj."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "ИНСТРУМЕНТЫ И ПРОГРАММЫ:               Нажми 1",
+                    "ilo      → ilaro      = инструмент → набор",
+                    "programo → programaro = программа → софт",
+                    "",
+                    "ARO САМО ПО СЕБЕ = ГРУППА:             Нажми 2",
+                    "aro da homoj = группа людей, толпа",
+                    "",
+                    "В РЕЧИ:                                Нажми 3",
+                    "La homaro bezonas pacon.",
+                    "= Человечеству нужен мир.",
+                    "Mi bezonas novan klavaron.",
+                    "= Мне нужна новая клавиатура."
+                ],
+                "pronunciation_mappings": {
+                    "1": "Ilo. Ilaro. Programo. Programaro.",
+                    "2": "Aro da homoj.",
+                    "3": "La homaro bezonas pacon. Mi bezonas novan klavaron."
+                }
+            }
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "021",
-    "trigger_word": "citaĵo",
-    "header_color": "green",
-    "title": "УРОК 21: СУФФИКС «-AĴ-»",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono dudek unu",
-        "content": [
-          "Суффикс -AĴ- образует конкретные предметы",
-          "от глаголов и прилагательных. Если -i —",
-          "действие, то -aĵ- — физический предмет.",
-          "",
-          "ОТ ГЛАГОЛОВ К ПРЕДМЕТАМ:",
-          "manĝi   → manĝaĵo    = есть → еда",
-          "trinki  → trinkaĵo   = пить → напиток",
-          "vesti   → vestaĵo    = одевать → одежда",
-          "konstrui→ konstruaĵo = строить → здание",
-          "skribi  → skribaĵo   = писать → текст",
-          "",
-          "ОТ ПРИЛАГАТЕЛЬНЫХ:",
-          "bela    → belaĵo     = красивый → красота",
-          "dolĉa   → dolĉaĵo    = сладкий → конфета",
-          "",
-          "Запомни: -AĴ- превращает абстрактное",
-          "действие в конкретный предмет!",
-          "Это результат самого действия."
+    },
+    {
+        "lesson_id": "021",
+        "trigger_word": "aplikaĵo",
+        "title": "УРОК 30: СУФФИКС «-AĴ-»",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "Суффикс -AĴ- обозначает конкретную ВЕЩЬ:",
+                    "то, что создаёт действие или на что оно",
+                    "направлено, или вещь с каким-то качеством.",
+                    "",
+                    "ОТ ГЛАГОЛОВ:                           Нажми 1",
+                    "apliki → aplikaĵo  = применять → приложение",
+                    "manĝi  → manĝaĵo   = есть → еда",
+                    "trinki → trinkaĵo  = пить → напиток",
+                    "citi   → citaĵo    = цитировать → цитата",
+                    "",
+                    "ОТ ПРИЛАГАТЕЛЬНЫХ:                     Нажми 2",
+                    "bela   → belaĵo    = красивая вещь",
+                    "nova   → novaĵo    = новость, новинка",
+                    "dolĉa  → dolĉaĵo   = сладость, конфета"
+                ],
+                "pronunciation": "Leciono dudek unu",
+                "pronunciation_mappings": {
+                    "1": "Apliki. Aplikaĵo. Manĝi. Manĝaĵo. Trinki. Trinkaĵo. Citi. Citaĵo.",
+                    "2": "Bela. Belaĵo. Nova. Novaĵo. Dolĉa. Dolĉaĵo."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "ПРОСТО -O НАЗЫВАЕТ САМО ДЕЙСТВИЕ:      Нажми 1",
+                    "trinko   = питьё (само действие)",
+                    "trinkaĵo = напиток (то, что пьют)",
+                    "manĝo    = трапеза (приём пищи)",
+                    "manĝaĵo  = еда (то, что едят)",
+                    "",
+                    "В РЕЧИ:                                Нажми 2",
+                    "Ĉu vi volas trinkaĵon?",
+                    "= Хочешь что-нибудь выпить?",
+                    "Mi havas bonan novaĵon!",
+                    "= У меня хорошая новость!",
+                    "Mi uzas novan aplikaĵon.",
+                    "= Я пользуюсь новым приложением."
+                ],
+                "pronunciation_mappings": {
+                    "1": "Trinko. Trinkaĵo. Manĝo. Manĝaĵo.",
+                    "2": "Ĉu vi volas trinkaĵon? Mi havas bonan novaĵon! Mi uzas novan aplikaĵon."
+                }
+            }
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "022",
-    "trigger_word": "komputilo",
-    "header_color": "green",
-    "title": "УРОК 22: СУФФИКС «-IL-»",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono dudek du",
-        "content": [
-          "Суффикс -IL- создаёт инструменты из глаголов.",
-          "Если -i — действие, то -il- — предмет,",
-          "которым его выполняют.",
-          "",
-          "ОТ ГЛАГОЛОВ К ИНСТРУМЕНТАМ:",
-          "tranĉi  → tranĉilo   = резать → нож",
-          "skribi  → skribilo   = писать → ручка",
-          "komputi → komputilo  = вычислять → компьютер",
-          "ludi    → ludilo     = играть → игрушка",
-          "mezuri  → mezurilo   = измерять → линейка",
-          "",
-          "ЛЮБОЕ ДЕЙСТВИЕ → ЕГО ИНСТРУМЕНТ:",
-          "malfermi → malfermilo = открывать → открывашка",
-          "trinki   → trinkilo   = пить → чашка",
-          "",
-          "Помни: -IL- — это то, чем ты делаешь",
-          "действие. Просто и систематично!"
+    },
+    {
+        "lesson_id": "025",
+        "trigger_word": "foto",
+        "title": "УРОК 31: ПРИДАТОЧНЫЕ С KIU И KIO",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "KIU связывает два предложения и указывает",
+                    "назад на существительное — человека или",
+                    "предмет, как русские КОТОРЫЙ и КТО.",
+                    "",
+                    "Jen la foto, kiun mi faris.            Нажми 1",
+                    "= Вот фото, которое я сделал.",
+                    "",
+                    "ПЕРЕД KIU ВСЕГДА ЗАПЯТАЯ, и после",
+                    "придаточного, если предложение продолжается.",
+                    "",
+                    "У КАЖДОГО СЛОВА СВОЙ ПАДЕЖ:            Нажми 2",
+                    "La viro, kiu venis, estas mia frato.",
+                    "= Мужчина, который пришёл, — мой брат.",
+                    "La viro, kiun mi vidis, estas mia frato.",
+                    "= Мужчина, которого я видел, — мой брат.",
+                    "KIUN — дополнение глагола VIDIS: с -n.",
+                    "LA VIRO — подлежащее глагола ESTAS: без -n."
+                ],
+                "pronunciation": "Leciono dudek kvin",
+                "pronunciation_mappings": {
+                    "1": "Jen la foto, kiun mi faris.",
+                    "2": "La viro, kiu venis, estas mia frato. La viro, kiun mi vidis, estas mia frato."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "МНОЖЕСТВЕННОЕ ЧИСЛО: KIUJ, KIUJN       Нажми 1",
+                    "Mi dankas la amikojn, kiuj helpis min.",
+                    "= Благодарю друзей, которые мне помогли.",
+                    "Jen la mesaĝoj, kiujn vi sendis.",
+                    "= Вот сообщения, которые ты отправил.",
+                    "",
+                    "ПОСЛЕ TIO И ĈIO НУЖНО KIO:             Нажми 2",
+                    "Mi vidis tion, kio okazis.",
+                    "= Я видел то, что случилось.",
+                    "(TION — для vidis, KIO — для okazis.)",
+                    "Tio, kion vi diris, estas vera.",
+                    "= То, что ты сказал, — правда.",
+                    "Dankon pro ĉio, kion vi faris!",
+                    "= Спасибо за всё, что ты сделал!",
+                    "",
+                    "Как и русское «который», KIU и KIO",
+                    "в эсперанто никогда не опускают."
+                ],
+                "pronunciation_mappings": {
+                    "1": "Mi dankas la amikojn, kiuj helpis min. Jen la mesaĝoj, kiujn vi sendis.",
+                    "2": "Mi vidis tion, kio okazis. Tio, kion vi diris, estas vera. Dankon pro ĉio, kion vi faris!"
+                }
+            }
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "023",
-    "trigger_word": "retejo",
-    "header_color": "green",
-    "title": "УРОК 23: СУФФИКС «-EJ-»",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono dudek tri",
-        "content": [
-          "Суффикс -EJ- означает «место для» или",
-          "«место, где что-то происходит».",
-          "",
-          "ОТ ГЛАГОЛОВ К МЕСТАМ:",
-          "lerni   → lernejo    = учиться → школа",
-          "loĝi    → loĝejo     = жить → жильё",
-          "labori  → laborejo   = работать → работа",
-          "kuiri   → kuirejo    = готовить → кухня",
-          "",
-          "ОТ СУЩЕСТВИТЕЛЬНЫХ К МЕСТАМ:",
-          "kafo    → kafejo     = кофе → кафе",
-          "libro   → librejo    = книга → библиотека",
-          "pano    → panejo     = хлеб → пекарня",
-          "hundo   → hundejo    = собака → конура",
-          "",
-          "СХЕМА:",
-          "Что там происходит или есть —",
-          "добавь -ej-, и будет место!"
+    },
+    {
+        "lesson_id": "023",
+        "trigger_word": "retejo",
+        "title": "УРОК 32: СУФФИКС «-EJ-»",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "Суффикс -EJ- обозначает МЕСТО: где идёт",
+                    "действие или где что-то находится.",
+                    "",
+                    "ОТ ГЛАГОЛОВ:                           Нажми 1",
+                    "lerni  → lernejo   = учиться → школа",
+                    "labori → laborejo  = работать → рабочее место",
+                    "manĝi  → manĝejo   = есть → столовая",
+                    "kuiri  → kuirejo   = готовить → кухня",
+                    "",
+                    "ОТ СУЩЕСТВИТЕЛЬНЫХ:                    Нажми 2",
+                    "reto   → retejo    = сеть → веб-сайт",
+                    "kafo   → kafejo    = кофе → кафе",
+                    "libro  → librejo   = книга → книжный магазин",
+                    "",
+                    "ОСТОРОЖНО: LIBREJO — КНИЖНЫЙ МАГАЗИН!  Нажми 3",
+                    "А библиотека — это biblioteko."
+                ],
+                "pronunciation": "Leciono dudek tri",
+                "pronunciation_mappings": {
+                    "1": "Lerni. Lernejo. Labori. Laborejo. Manĝi. Manĝejo. Kuiri. Kuirejo.",
+                    "2": "Reto. Retejo. Kafo. Kafejo. Libro. Librejo.",
+                    "3": "Librejo. Biblioteko."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "И В ИНТЕРНЕТЕ:                         Нажми 1",
+                    "babili → babilejo  = болтать → чат-комната",
+                    "Сайт — это место в сети: retejo.",
+                    "",
+                    "В РЕЧИ:                                Нажми 2",
+                    "Vizitu nian retejon!",
+                    "= Посетите наш сайт!",
+                    "Ni renkontiĝas en la kafejo.",
+                    "= Мы встречаемся в кафе.",
+                    "Mi laboras en librejo.",
+                    "= Я работаю в книжном магазине."
+                ],
+                "pronunciation_mappings": {
+                    "1": "Babili. Babilejo. Retejo.",
+                    "2": "Vizitu nian retejon! Ni renkontiĝas en la kafejo. Mi laboras en librejo."
+                }
+            }
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "024",
-    "trigger_word": "samideano",
-    "header_color": "green",
-    "title": "УРОК 24: СУФФИКС «-AN-»",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono dudek kvar",
-        "content": [
-          "Суффикс -AN- = член, житель, последователь.",
-          "",
-          "ЧЛЕНЫ ГРУПП:",
-          "klubo   → klubano    = club → член клуба",
-          "familio → familiano  = family → член семьи",
-          "",
-          "ЖИТЕЛИ:",
-          "Usono   → Usonano    = USA → американец",
-          "Eŭropo  → Eŭropano   = Europe → европеец",
-          "urbo    → urbano     = city → горожанин",
-          "",
-          "ПОСЛЕДОВАТЕЛИ:",
-          "Kristo  → kristano   = Christ → христианин",
-          "Budho   → budhano    = Buddha → буддист",
-          "",
-          "ОСОБЕННОСТЬ ЭСПЕРАНТО:",
-          "samideano = эсперантист-товарищ",
-          "(sam + ideo + ano = одинаково-мыслящий)"
+    },
+    {
+        "lesson_id": "026",
+        "trigger_word": "aŭdebla",
+        "title": "УРОК 33: СУФФИКС «-EBL-»",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "Суффикс -EBL- значит «можно сделать».",
+                    "Он превращает глагол в прилагательное:",
+                    "aŭdebla = слышимый (не «способный слышать»).",
+                    "",
+                    "ГЛАГОЛ → «МОЖНО СДЕЛАТЬ»:              Нажми 1",
+                    "aŭdi     → aŭdebla     = слышимый",
+                    "vidi     → videbla     = видимый",
+                    "legi     → legebla     = читаемый",
+                    "kompreni → komprenebla = понятный",
+                    "manĝi    → manĝebla    = съедобный",
+                    "",
+                    "С NE- ВПЕРЕДИ: НЕЛЬЗЯ СДЕЛАТЬ:         Нажми 2",
+                    "nevidebla   = невидимый",
+                    "nemanĝebla  = несъедобный"
+                ],
+                "pronunciation": "Leciono dudek ses",
+                "pronunciation_mappings": {
+                    "1": "Aŭdi. Aŭdebla. Vidi. Videbla. Legi. Legebla. Kompreni. Komprenebla. Manĝi. Manĝebla.",
+                    "2": "Nevidebla. Nemanĝebla."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "В РЕЧИ:                                Нажми 1",
+                    "Ĉu mi estas aŭdebla?",
+                    "= Меня слышно? (букв. Я слышим?)",
+                    "La teksto estas facile legebla.",
+                    "= Текст легко читается.",
+                    "",
+                    "СРАВНИ С -IND- (УРОК 27):              Нажми 2",
+                    "videbla = можно увидеть",
+                    "vidinda = стоит увидеть",
+                    "",
+                    "САМ КОРЕНЬ:                            Нажми 3",
+                    "ebla        = возможный",
+                    "eble        = может быть, возможно",
+                    "kompreneble = конечно"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Ĉu mi estas aŭdebla? La teksto estas facile legebla.",
+                    "2": "Videbla. Vidinda.",
+                    "3": "Ebla. Eble. Kompreneble."
+                }
+            }
         ]
-      }
-    ]
-  }
+    }
 ]

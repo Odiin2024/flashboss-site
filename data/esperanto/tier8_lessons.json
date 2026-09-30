@@ -1,74 +1,168 @@
 [
   {
-    "lesson_id": "047",
-    "trigger_word": "arbaro",
-    "title": "LESSON 47: COMPOUND TENSES",
+    "lesson_id": "052",
+    "trigger_word": "mi revenos",
+    "title": "LESSON 53: THE 'RE-' PREFIX",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "Combine ESTI with participles to create",
-          "nuanced compound tenses.",
+          "The prefix RE- means AGAIN or BACK:",
+          "the action happens once more, or goes",
+          "back to where it came from.",
           "",
-          "PROGRESSIVE (ongoing action):",
-          "Mi estas leganta. = I am reading.",
-          "Mi estis leganta. = I was reading.",
-          "Mi estos leganta. = I will be reading.",
+          "AGAIN:                                Press 1",
+          "legi     → relegi     = read → reread",
+          "fari     → refari     = do → redo",
+          "kontakti → rekontakti = contact again",
           "",
-          "PERFECT (completed action):",
-          "Mi estas leginta. = I have read.",
-          "Mi estis leginta. = I had read.",
-          "Mi estos leginta. = I will have read.",
+          "BACK:                                 Press 2",
+          "veni     → reveni     = come → come back",
+          "doni     → redoni     = give → give back",
+          "sendi    → resendi    = send → send back",
           "",
-          "PASSIVE COMPOUND:",
-          "La libro estas legita. = The book is read.",
-          "La libro estis legata. = It was being read.",
-          "",
-          "These create precise time distinctions!"
+          "IN USE:                               Press 3",
+          "Mi revenos al la temo morgaŭ.",
+          "= I'll come back to the topic tomorrow.",
+          "Ĝis revido! = Goodbye! (Till we meet again!)"
         ],
-        "pronunciation": "Leciono kvardek sep"
+        "pronunciation_mappings": {
+          "1": "Legi. Relegi. Fari. Refari. Kontakti. Rekontakti.",
+          "2": "Veni. Reveni. Doni. Redoni. Sendi. Resendi.",
+          "3": "Mi revenos al la temo morgaŭ. Ĝis revido!"
+        },
+        "pronunciation": "Leciono kvindek du"
       }
     ]
   },
   {
     "lesson_id": "048",
-    "trigger_word": "pikniko",
-    "title": "LESSON 48: WORD DERIVATION",
+    "trigger_word": "diskutrondo",
+    "title": "LESSON 54: BUILDING WORDS",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "Every Esperanto word can change its part of",
-          "speech just by changing the ending!",
+          "Any root can take any ending, as long",
+          "as the meaning makes sense:",
           "",
-          "FROM ONE ROOT:",
-          "bel- (root meaning \"beauty\")",
-          "bela    = beautiful (adjective -a)",
-          "bele    = beautifully (adverb -e)",
-          "belo    = beauty (noun -o)",
-          "beli    = to be beautiful (verb -i)",
+          "SUKCES- (success):                    Press 1",
+          "sukceso = success      sukcesi = to succeed",
+          "sukcesa = successful   sukcese = successfully",
           "",
-          "vera (true) → vere (truly) → vero (truth)",
-          "varma (warm) → varme (warmly) → varmo (warmth)",
+          "FIN- (end):                           Press 2",
+          "fino = end             fini = to finish",
+          "fina = final           fine = finally",
           "",
-          "ADD AFFIXES TOO:",
-          "belega   = gorgeous (-eg- augmentative)",
-          "beligi   = to beautify (-ig- causative)",
-          "beleco   = beauty (abstract quality -ec-)",
-          "One root, infinite possibilities!"
+          "A NOUN ROOT BECOMES A VERB:           Press 3",
+          "telefono → telefoni = phone → to phone",
+          "martelo  → marteli  = hammer → to hammer",
+          "krono    → kroni    = crown → to crown"
         ],
+        "pronunciation_mappings": {
+          "1": "Sukceso. Sukcesi. Sukcesa. Sukcese.",
+          "2": "Fino. Fini. Fina. Fine.",
+          "3": "Telefono. Telefoni. Martelo. Marteli. Krono. Kroni."
+        },
         "pronunciation": "Leciono kvardek ok"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "COMPOUNDS glue roots together. The LAST",
+          "root is the main one: it says what the",
+          "thing IS. The first one narrows it down.",
+          "",
+          "THE LAST ROOT DECIDES:                Press 1",
+          "diskut + rondo  = discussion circle",
+          "kontakt + listo = contact list",
+          "foto + albumo   = photo album",
+          "",
+          "AN -O- MAY JOIN THEM, FOR SOUND:      Press 2",
+          "lern + o + libro = lernolibro = textbook",
+          "",
+          "PREPOSITIONS JOIN IN TOO:             Press 3",
+          "antaŭ + kondiĉo = antaŭkondiĉo = prerequisite",
+          "post + parolo   = postparolo = afterword",
+          "ĉe + esti       = ĉeesti = to be present"
+        ],
+        "pronunciation_mappings": {
+          "1": "Diskutrondo. Kontaktlisto. Fotoalbumo.",
+          "2": "Lernolibro.",
+          "3": "Antaŭkondiĉo. Postparolo. Ĉeesti."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "047",
+    "trigger_word": "materialo",
+    "title": "LESSON 55: COMPOUND TENSES",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "ESTI + an active participle builds",
+          "compound tenses. You RARELY need them:",
+          "the simple verb already says it all.",
+          "",
+          "THE NORMAL WAY:                       Press 1",
+          "Mi legas. = I read. / I'm reading.",
+          "Mi legis. = I read. / I was reading. /",
+          "            I have read.",
+          "Mi legos. = I'll read. / I'll be reading.",
+          "",
+          "COMPOUND = FOR EMPHASIS ONLY:         Press 2",
+          "Mi estas leganta.",
+          "= I'm (right in the middle of) reading.",
+          "Mi jam estis manĝinta, kiam vi venis.",
+          "= I had already eaten when you came.",
+          "Don't use 'estas leganta' for every",
+          "English 'is reading': it sounds odd."
+        ],
+        "pronunciation_mappings": {
+          "1": "Mi legas. Mi legis. Mi legos.",
+          "2": "Mi estas leganta. Mi jam estis manĝinta, kiam vi venis."
+        },
+        "pronunciation": "Leciono kvardek sep"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "THE PASSIVE IS DIFFERENT: ESTI + -ITA",
+          "(or -ATA) is the everyday passive.",
+          "",
+          "ONE PARTICIPLE, EVERY TENSE:          Press 1",
+          "La salono estas rezervita. = is booked",
+          "La salono estis rezervita. = was booked",
+          "La salono estos rezervita. = will be booked",
+          "La salono estus rezervita. = would be booked",
+          "",
+          "IN USE:                               Press 2",
+          "Ĉiuj materialoj estos provizitaj.",
+          "= All materials will be provided.",
+          "La kunveno estis nuligita.",
+          "= The meeting was canceled."
+        ],
+        "pronunciation_mappings": {
+          "1": "La salono estas rezervita. La salono estis rezervita. La salono estos rezervita. La salono estus rezervita.",
+          "2": "Ĉiuj materialoj estos provizitaj. La kunveno estis nuligita."
+        }
       }
     ]
   },
   {
     "lesson_id": "049",
     "trigger_word": "respondeco",
-    "title": "LESSON 49: THE '-END-' SUFFIX",
+    "title": "LESSON 56: THE '-END-' SUFFIX",
     "header_color": "green",
     "pages": [
       {
@@ -100,100 +194,38 @@
   },
   {
     "lesson_id": "050",
-    "trigger_word": "butono",
-    "title": "LESSON 50: THE '-UM-' SUFFIX",
+    "trigger_word": "parkumado",
+    "title": "LESSON 57: THE '-UM-' SUFFIX",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "The suffix -UM- has NO fixed meaning! It's",
-          "the \"wildcard\" suffix for words that don't",
-          "fit other patterns. Learn by usage.",
+          "The suffix -UM- has NO fixed meaning.",
+          "It links a root to a related idea, and",
+          "each word is learned on its own.",
           "",
-          "COMMON -UM- WORDS:",
-          "plena   → plenumi    = full → to fulfill",
-          "kolo    → kolumi     = neck → collar",
-          "butono  → butonumi   = button → to button up",
+          "COMMON -UM- WORDS:                    Press 1",
+          "parko   → parkumi    = park → to park (a car)",
+          "plena   → plenumi    = full → to carry out",
+          "kolo    → kolumo     = neck → collar",
+          "butono  → butonumi   = button → to button",
+          "brako   → brakumi    = arm → to hug",
           "aero    → aerumi     = air → to air out",
-          "brako   → brakumi    = arm → to embrace/hug",
-          "okulo   → okulumi    = eye → to ogle/flirt",
           "komuna  → komunumo   = common → community",
           "",
-          "IN USE:",
+          "IN USE:                               Press 2",
+          "Kie mi povas parkumi?",
+          "= Where can I park?",
           "Mi plenumis mian promeson.",
-          "(I fulfilled my promise.)",
-          "",
-          "-UM- means \"do something related to\"!"
+          "= I kept my promise."
         ],
+        "pronunciation_mappings": {
+          "1": "Parko. Parkumi. Plena. Plenumi. Kolo. Kolumo. Butono. Butonumi. Brako. Brakumi. Aero. Aerumi. Komuna. Komunumo.",
+          "2": "Kie mi povas parkumi? Mi plenumis mian promeson."
+        },
         "pronunciation": "Leciono kvindek"
-      }
-    ]
-  },
-  {
-    "lesson_id": "051",
-    "trigger_word": "plibonigi",
-    "title": "LESSON 51: THE 'EKS-' PREFIX",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "The prefix EKS- means \"former\" or \"ex-\"",
-          "It indicates something no longer current.",
-          "",
-          "FORMER RELATIONSHIPS:",
-          "edzo → eksedzo = husband → ex-husband",
-          "edzino → eksedzino = wife → ex-wife",
-          "amiko → eksamiko = friend → ex-friend",
-          "",
-          "FORMER POSITIONS/STATUS:",
-          "prezidento → eksprezidento = ex-president",
-          "membro → eksmembro = member → former member",
-          "soldato → ekssoldato = soldier → ex-soldier",
-          "studento → eksstudento = student → ex-student",
-          "",
-          "IN USE:",
-          "Mia eksedzo loĝas en Parizo.",
-          "(My ex-husband lives in Paris.)",
-          "EKS- works with any noun for roles/status!"
-        ],
-        "pronunciation": "Leciono kvindek unu"
-      }
-    ]
-  },
-  {
-    "lesson_id": "052",
-    "trigger_word": "paŭzejo",
-    "title": "LESSON 52: THE '-EG-' SUFFIX",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "The suffix -EG- amplifies things!",
-          "",
-          "MAKING THINGS BIG:",
-          "domo    → domego     = house → mansion",
-          "vento   → ventego    = wind → storm",
-          "bona    → bonega     = good → excellent",
-          "",
-          "INTENSIFYING:",
-          "malsata → malsatega  = hungry → starving",
-          "venki   → venkegi    = win → trounce",
-          "ami     → amegi      = love → adore",
-          "",
-          "-EG- is the opposite of -ET-:",
-          "dometo (cottage) <-> domego (mansion)",
-          "",
-          "There are a lot of suffixes in Esperanto. To",
-          "help remember this one particularly, try",
-          "thinking 'EGZAGERATE'."
-        ],
-        "pronunciation": "Leciono kvindek du"
       }
     ]
   }

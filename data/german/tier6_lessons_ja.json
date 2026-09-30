@@ -18,10 +18,10 @@
           "中性:                 das  →  des",
           "複数:                 die  →  der",
           "",
-          "男性・中性名詞は-(e)s: des Mann(es)",
-          "",
+          "男性・中性名詞は-(e)s: des Mann(e)s",
+          "一部の男性名詞は-(e)n: des Hasen",
           "das Auto des Mannes (その男性の車)",
-          "das Buch des Kindes (その子どもの本)",
+          "die Ohren des Hasen (ノウサギの耳)",
           "",
           "属格をとる前置詞:",
           "wegen (〜のせいで), trotz (〜にもかかわらず)",
@@ -34,10 +34,142 @@
     ]
   },
   {
+    "lesson_id": "034",
+    "trigger_word": "Huhn",
+    "trigger_card_number": 32,
+    "title": "第34課:関係文",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "関係文は名詞に説明を付け加えます:",
+          "",
+          "日本語:   私を手伝ってくれる友人...",
+          "ドイツ語:  Der Freund, der mir hilft...",
+          "",
+          "der/die/das が関係代名詞になります:",
+          "der - 男性 (Der Freund, der...)",
+          "die - 女性 (Die Freundin, die...)",
+          "das - 中性 (Das Kind, das...)",
+          "die - 複数 (Die Freunde, die...)",
+          "",
+          "目的語（4格）なら、男性は 'den':",
+          "",
+          "Der Mann, den ich sehe, ist mein Lehrer.",
+          "（私が見ている男性は私の先生です）",
+          "",
+          "関係文はコンマの後ろから始まります。",
+          "動詞は文末に置かれます。"
+        ],
+        "pronunciation": "Lektion 34"
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "前置詞 + 関係代名詞:",
+          "",
+          "前置詞が先頭に来ます。関係代名詞の性・数は",
+          "先行詞に、格は前置詞に従います:",
+          "",
+          "DAT: dem (男), der (女), dem (中), DENEN (複)",
+          "AKK: den (男), die (女), das (中), die (複)",
+          "",
+          "die Milch, aus der man Butter macht",
+          "（そこからバターを作る牛乳）",
+          "die Finger, mit denen wir Dinge greifen",
+          "（それを使って物をつかむ指）",
+          "der Freund, für den ich koche",
+          "（私が料理を作ってあげる友人）",
+          "",
+          "前置詞は必ず関係代名詞の前に置きます。",
+          "英語のように文末に残すことはできません。"
+        ]
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "「〜の」を表す関係代名詞:",
+          "dessen (男性・中性)、deren (女性・複数)",
+          "",
+          "Der Mann, dessen Auto hier steht...",
+          "(車がここに止まっている男性...)",
+          "Die Frau, deren Sohn ich kenne...",
+          "(私が息子さんを知っている女性...)",
+          "Die Leute, deren Haus wir mieten...",
+          "(私たちが家を借りている人たち...)",
+          "",
+          "dessen/deren は持ち主 (der Mann, die Frau) に",
+          "合わせます。持ち物 (der Sohn) ではありません。",
+          "後ろの名詞には冠詞を付けません。"
+        ]
+      }
+    ]
+  },
+  {
     "lesson_id": "035",
+    "trigger_word": "Maus",
+    "trigger_card_number": 38,
+    "title": "第35課：zu 不定詞",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "ドイツ語は不定詞によく ZU を付けます:",
+          "",
+          "基本の形: 動詞 + ZU + 不定詞",
+          "Ich versuche zu schlafen. (寝ようとする)",
+          "Es macht Spaß zu tanzen. (踊るのは楽しい)",
+          "Ich habe keine Zeit zu kochen.",
+          "(料理する時間がありません)",
+          "",
+          "分離動詞: ZU は接頭辞と動詞の間に入ります:",
+          "aufzustehen (起きる)",
+          "anzukommen (到着する)",
+          "",
+          "Ich habe vergessen, das Licht auszumachen.",
+          "(電気を消し忘れました)",
+          "",
+          "話法助動詞や lassen には ZU を付けません!"
+        ],
+        "pronunciation": "Lektion 35"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "UM ... ZU = 〜するために (目的):",
+          "",
+          "'um' で始まり、'zu' + 不定詞で終わります。",
+          "主語は両方で同じでなければなりません。",
+          "",
+          "Die Maus kommt heraus, um Essen zu suchen.",
+          "(ネズミはえさを探すために出てくる)",
+          "Ich stelle den Wecker, um früh aufzustehen.",
+          "(早起きするために目覚ましをかける)",
+          "",
+          "OHNE ... ZU = 〜せずに:",
+          "Er geht, ohne etwas zu sagen.",
+          "(彼は何も言わずに去る)",
+          "STATT ... ZU = 〜する代わりに:",
+          "Sie spielt, statt zu lernen.",
+          "(彼女は勉強する代わりに遊ぶ)",
+          "",
+          "um/ohne/statt ... zu にはコンマが必須です。"
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": "036",
     "trigger_word": "schicken",
     "trigger_card_number": 130,
-    "title": "第35課：受動態",
+    "title": "第36課：受動態",
     "header_color": "cyan",
     "pages": [
       {
@@ -61,7 +193,7 @@
           "この二つが最もよく使う受動態の形です。",
           "改まった場面やビジネス文書で頻出します。"
         ],
-        "pronunciation": "Lektion 35"
+        "pronunciation": "Lektion 36"
       },
       {
         "page": 2,
@@ -88,10 +220,10 @@
     ]
   },
   {
-    "lesson_id": "040",
+    "lesson_id": "037",
     "trigger_word": "herauf",
     "trigger_card_number": 169,
-    "title": "第40課：hin と her の方向副詞",
+    "title": "第37課：hin と her の方向副詞",
     "header_color": "cyan",
     "pages": [
       {
@@ -106,18 +238,18 @@
           "Komm her! (こっちへ来て!)",
           "",
           "副詞と組み合わせる:",
-          "hierhin = ここへ     hierher = ここへ",
-          "dorthin = あそこへ   dorther = あそこから",
-          "wohin = どこへ       woher = どこから",
+          "hierhin = この場所へ  hierher = 私の方へ",
+          "dorthin = あそこへ    dorther = あそこから",
+          "wohin = どこへ        woher = どこから",
           "",
           "前置詞と組み合わせる:",
           "hinaus/heraus = 外へ  hinein/herein = 中へ",
           "hinauf/herauf = 上  hinunter/herunter = 下",
-          "",
+          "口語: rein, raus, rauf, runter (hin/her 両方)",
           "Komm herein! (入って! ← 話し手の方へ)",
           "Geh hinaus! (出て行って! ← 話し手から離れて)"
         ],
-        "pronunciation": "Lektion 40"
+        "pronunciation": "Lektion 37"
       }
     ]
   }

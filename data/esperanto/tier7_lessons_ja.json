@@ -2,7 +2,7 @@
   {
     "lesson_id": "040",
     "trigger_word": "unue",
-    "title": "第40課：接尾辞「-OP-」",
+    "title": "第46課：接尾辞「-OP-」",
     "header_color": "green",
     "pages": [
       {
@@ -35,73 +35,134 @@
   {
     "lesson_id": "041",
     "trigger_word": "tio dependas",
-    "title": "第41課: 相関詞表",
+    "title": "第47課:相関詞表",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "エスペラントは 45 語を表から作ります。",
-          "接頭辞 5 種 × 語尾 9 種の組み合わせです。",
-          "仕組みを覚えれば一度に 45 語が使えます。",
+          "コアでは相関詞表の4つの列を学びました:",
+          "-O・-U・-E・-AM (kio, kiu, kie, kiam)。",
+          "残りの5つはこちら:",
           "",
-          "KI-  = 疑問     TI-  = その",
-          "I-   = ある     ĈI-  = すべて",
-          "NENI-= 無",
+          "新しい5つの列:                         1を押す",
+          "      種類    理由    方法    誰の    数量",
+          "KI-   kia     kial    kiel    kies    kiom",
+          "TI-   tia     tial    tiel    ties    tiom",
+          "ĈI-   ĉia     ĉial    ĉiel    ĉies    ĉiom",
+          "NENI- nenia   nenial  neniel  nenies  neniom",
+          "I-    ia      ial     iel     ies     iom",
           "",
-          "-O もの  -U 人    -A 種類",
-          "-E 場所  -AM 時   -AL 理由",
-          "-EL 方法 -ES 誰の -OM 量",
-          "",
-          "kio = 何   tio = それ  io = 何か",
-          "kie = どこ tie = そこ  ie = どこか",
-          "kiam = いつ ĉiam = いつも nenie = どこにも",
-          "",
-          "印刷用の一覧表はこちら:",
-          "odiin2024.github.io/flashboss-site/source.html"
+          "-A の語は形容詞と同じく -J と -N が",
+          "付きます:",
+          "Kian libron vi volas?                  2を押す",
+          "= どんな本が欲しいですか?"
         ],
+        "pronunciation_mappings": {
+          "1": "Kia? Tia. Kial? Tial. Kiel? Tiel. Kies? Ties. Kiom? Tiom.",
+          "2": "Kian libron vi volas?"
+        },
         "pronunciation": "Leciono kvardek unu"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "疑問文:                                1を押す",
+          "Kia estas via urbo?",
+          "= あなたの町はどんな所ですか?",
+          "Kial vi lernas Esperanton?",
+          "= なぜエスペラントを学んでいるのですか?",
+          "Kies telefono estas tiu?",
+          "= それは誰の電話ですか?",
+          "",
+          "答え方とその他:                        2を押す",
+          "Tiel estas.      = そういうものです。",
+          "Neniel!          = とんでもない!決して!",
+          "Mi provis ĉiel.  = あらゆる方法を試しました。",
+          "tiom da homoj    = こんなに大勢の人",
+          "",
+          "印刷用の表(PDF)は公式サイトに:",
+          "odiin2024.github.io/flashboss-site/",
+          "correlative_table.pdf"
+        ],
+        "pronunciation_mappings": {
+          "1": "Kia estas via urbo? Kial vi lernas Esperanton? Kies telefono estas tiu?",
+          "2": "Tiel estas. Neniel! Mi provis ĉiel. Tiom da homoj."
+        }
       }
     ]
   },
   {
     "lesson_id": "042",
-    "trigger_word": "provi",
-    "title": "第42課: 能動分詞",
+    "trigger_word": "marŝi",
+    "title": "第48課:能動分詞",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "能動分詞は、さまざまな時制における",
-          "動作の「する人」を表します。形は3つ：",
+          "コアで -ANTA・-INTA・-ONTA を学びました。",
+          "その時は主動詞を基準にした相対的なものです:",
+          "A = 同時、I = それより前、O = それより後。",
           "",
-          "-ANT- = 今まさに～している（現在）",
-          "legi → leganta = 読んでいる（今）",
-          "parolanta = 話している（今）",
+          "形容詞として(-A):                      1を押す",
+          "marŝanta orkestro  = 行進している楽団",
+          "la pasinta jaro    = 去年",
+          "la venonta kunveno = 次の会合",
           "",
-          "-INT- = すでに～した（過去）",
-          "legi → leginta = 読み終えた",
-          "parolinta = 話し終えた",
+          "人として(-O):                          2を押す",
+          "la parolanto = 話している人",
+          "la gajninto  = 勝者(勝った人)",
+          "la parolonto = 次に話す人",
           "",
-          "-ONT- = これから～する（未来）",
-          "legi → legonta = 読もうとしている",
-          "parolonta = 話そうとしている",
-          "",
-          "La leganta viro... = 本を読んでいる男…",
-          "La leginta viro... = 本を読んだ男…",
-          "La legonta viro... = 本を読もうとしている男…"
+          "時は相対的:                            3を押す",
+          "Mi vidis marŝantan orkestron.",
+          "= 行進している楽団を見ました。"
         ],
+        "pronunciation_mappings": {
+          "1": "Marŝanta orkestro. La pasinta jaro. La venonta kunveno.",
+          "2": "La parolanto. La gajninto. La parolonto.",
+          "3": "Mi vidis marŝantan orkestron."
+        },
         "pronunciation": "Leciono kvardek du"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "-E を付けると、文の主語が同時に(-ante)、",
+          "その前に(-inte)、その後に(-onte)",
+          "何をするかを表します:",
+          "",
+          "-ANTE = 〜しながら/〜することで:       1を押す",
+          "Parolante, li ridetis.",
+          "= 話しながら、彼はほほえみました。",
+          "Lernante ĉiutage, ŝi progresis.",
+          "= 毎日学ぶことで、彼女は上達しました。",
+          "",
+          "-INTE = 〜してから:                    2を押す",
+          "Leginte la leteron, mi respondis.",
+          "= 手紙を読んでから、返事をしました。",
+          "",
+          "-ONTE = 〜しようとして:                3を押す",
+          "Forironte, li dankis ĉiujn.",
+          "= 立ち去る間際に、彼は皆に礼を言いました。"
+        ],
+        "pronunciation_mappings": {
+          "1": "Parolante, li ridetis. Lernante ĉiutage, ŝi progresis.",
+          "2": "Leginte la leteron, mi respondis.",
+          "3": "Forironte, li dankis ĉiujn."
+        }
       }
     ]
   },
   {
     "lesson_id": "043",
-    "trigger_word": "okazi",
-    "title": "第43課：接頭辞「EK-」",
+    "trigger_word": "movi",
+    "title": "第49課：接頭辞「EK-」",
     "header_color": "green",
     "pages": [
       {
@@ -134,32 +195,37 @@
   {
     "lesson_id": "044",
     "trigger_word": "historia fono",
-    "title": "第44課：接頭辞「PRA-」",
+    "title": "第50課:接頭辞 PRA-",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "接頭辞 PRA- は「古代の」または「曾-」",
-          "（何世代も前）を表し、時をさかのぼります。",
+          "接頭辞 PRA- ははるか昔にさかのぼります:",
+          "家族なら「曽(ひい)〜」、それ以外では",
+          "「太古の、原始の」です。",
           "",
-          "祖先 (PRA- を重ねてさらに昔へ):",
-          "avo     → praavo     = おじいさん → 曾祖父",
-          "avino   → praavino   = おばあさん → 曾祖母",
-          "patro   → prapatro   = 父親 → 先祖",
-          "prapraavo = 高祖父",
+          "世代をさかのぼる:                      1を押す",
+          "avo     → praavo     = 祖父 → 曽祖父",
+          "avino   → praavino   = 祖母 → 曽祖母",
+          "patro   → prapatro   = 父 → 祖先",
+          "prapraavo = 高祖父(ひいひいおじいさん)",
           "",
-          "古代:",
-          "homo    → prahomo    = 人間 → 原始人",
-          "arbaro  → praarbaro  = 森 → 原生林",
+          "はるか昔:                              2を押す",
+          "historio → prahistorio = 先史時代",
+          "homo    → prahomo    = 原始人",
+          "arbaro  → praarbaro  = 原生林",
           "",
-          "使用例:",
+          "実際に使うと:                          3を押す",
           "Mia praavo venis el Francio.",
-          "（私の曾祖父はフランスから来ました。）",
-          "",
-          "PRA- は遠い過去へと手を伸ばします！"
+          "= 私の曽祖父はフランスから来ました。"
         ],
+        "pronunciation_mappings": {
+          "1": "Avo. Praavo. Avino. Praavino. Patro. Prapatro. Prapraavo.",
+          "2": "Historio. Prahistorio. Homo. Prahomo. Arbaro. Praarbaro.",
+          "3": "Mia praavo venis el Francio."
+        },
         "pronunciation": "Leciono kvardek kvar"
       }
     ]
@@ -167,65 +233,99 @@
   {
     "lesson_id": "045",
     "trigger_word": "hipoteze",
-    "title": "第45課：受動分詞",
+    "title": "第51課:受動分詞",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "受動分詞は、動作を受ける側を",
-          "さまざまな時制で表します：",
+          "コアで -ATA・-ITA・-OTA を学びました。",
+          "ESTI と組み合わせると受動態になり、",
+          "主語が動作を受けます。",
           "",
-          "-AT- = されている（現在）",
-          "legi → legata = 読まれている",
-          "la legata libro = 読まれている本",
+          "誰がしたか? DE で言います:             1を押す",
+          "La letero estis skribita de Ana.",
+          "= その手紙はアナによって書かれました。",
           "",
-          "-IT- = された／完了した（過去）",
-          "legi → legita = 読まれた／読まれていた",
-          "la legita libro = 読まれた本",
+          "-ATA = 進行中、-ITA = 完了:            2を押す",
+          "La ponto estas konstruata.",
+          "= 橋は建設中です。",
+          "La ponto estas konstruita.",
+          "= 橋は完成しています。(建て終わった)",
           "",
-          "-OT- = される予定の（未来）",
-          "legi → legota = 読まれる予定の",
-          "la legota libro = 読まれる予定の本",
-          "",
-          "能動態と受動態：",
-          "leganta viro = 本を読んでいる男（彼が読む）",
-          "legita libro = 読まれた本（それは読まれた）"
+          "ESTI はどの形でも使えます:             3を押す",
+          "La problemo estus solvita.",
+          "= 問題は解決されるだろうに。"
         ],
+        "pronunciation_mappings": {
+          "1": "La letero estis skribita de Ana.",
+          "2": "La ponto estas konstruata. La ponto estas konstruita.",
+          "3": "La problemo estus solvita."
+        },
         "pronunciation": "Leciono kvardek kvin"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "人として(-O):                          1を押す",
+          "la invitito = 招待された人",
+          "la elektito = 選ばれた人",
+          "la akuzito  = 被告人",
+          "",
+          "-E を付けて「〜されて」:               2を押す",
+          "kiel dirite   = 前述のとおり",
+          "kiel anoncite = 告知のとおり",
+          "Invitite de amikoj, mi iris al la festo.",
+          "= 友人に招かれて、パーティーに行きました。",
+          "",
+          "能動か受動か?                          3を押す",
+          "leganta viro = 読んでいる男性",
+          "legata libro = 読まれている本",
+          "leginta viro = 読み終えた男性",
+          "legita libro = 読まれた本"
+        ],
+        "pronunciation_mappings": {
+          "1": "La invitito. La elektito. La akuzito.",
+          "2": "Kiel dirite. Kiel anoncite. Invitite de amikoj, mi iris al la festo.",
+          "3": "Leganta viro. Legata libro. Leginta viro. Legita libro."
+        }
       }
     ]
   },
   {
     "lesson_id": "046",
     "trigger_word": "mi misinformis",
-    "title": "第46課：接頭辞「MIS-」",
+    "title": "第52課:接頭辞 MIS-",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "MIS- は英語とまったく同じ意味です：",
-          "誤って、正しくなく、または間違いで。",
+          "接頭辞 MIS- は「誤って、間違って」を",
+          "表します。英語の mis- と同じです。",
           "",
-          "kompreni → miskompreni（誤解する）",
-          "uzi      → misuzi     （乱用する）",
-          "diri     → misdiri    （言い間違える）",
+          "間違ってする:                          1を押す",
+          "kompreni → miskompreni = 誤解する",
+          "informi  → misinformi  = 誤った情報を伝える",
+          "uzi      → misuzi      = 誤用する",
+          "kalkuli  → miskalkuli  = 計算を間違える",
           "",
-          "これはどんな動詞にも使えます。",
-          "単に mis- を付け加えるだけです。",
-          "あなたが知っている英語の言葉を",
-          "思い出してみてください：",
+          "実際に使うと:                          2を押す",
+          "Mi misinformis vin, pardonu!",
+          "= 誤った情報を伝えました。ごめんなさい!",
+          "Tio estis miskompreno.",
+          "= それは誤解でした。",
           "",
-          "misplace（置き忘れる）、",
-          "misjudge（誤審する）、",
-          "mislead（誤らせる）、",
-          "misread（読み間違える）、",
-          "miscount（数え間違える）、",
-          "misquote（引用を間違える）"
+          "注意: 英語の mis- が全部 MIS- ではない:",
+          "不信 = malfido、間違い = eraro。"
         ],
+        "pronunciation_mappings": {
+          "1": "Kompreni. Miskompreni. Informi. Misinformi. Uzi. Misuzi. Kalkuli. Miskalkuli.",
+          "2": "Mi misinformis vin, pardonu! Tio estis miskompreno."
+        },
         "pronunciation": "Leciono kvardek ses"
       }
     ]

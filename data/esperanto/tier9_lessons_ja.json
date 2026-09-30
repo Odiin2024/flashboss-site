@@ -2,7 +2,7 @@
   {
     "lesson_id": "053",
     "trigger_word": "novulo",
-    "title": "エスペラント学習リソース",
+    "title": "第58課:エスペラント学習リソース",
     "header_color": "blue",
     "toggle_mode": true,
     "pages": [
@@ -16,28 +16,28 @@
           "  Senpaga kurso kun ekzercoj kaj forumo",
           "",
           "VIKIPEDIO EN ESPERANTO",
-          "  eo.wikipedia.org - Pli ol 300,000 artikoloj!",
+          "  eo.wikipedia.org - Pli ol 300 000 artikoloj!",
           "",
           "DUOLINGO",
           "  Esperanto-kurso por anglalingvanoj",
           "",
           "AMIKUMU (apliko)",
-          "  Trovu Esperantistojn proksime de vi"
+          "  Trovu esperantistojn proksime de vi"
         ],
         "english": [
           "便利なウェブサイト",
           "",
           "LERNU.NET",
-          "  演習とフォーラム付きの無料講座",
+          "  練習問題とフォーラム付きの無料講座",
           "",
           "エスペラント版ウィキペディア",
-          "  eo.wikipedia.org - 30万件以上の記事！",
+          "  eo.wikipedia.org - 30万以上の記事!",
           "",
           "DUOLINGO",
-          "  英語話者のためのエスペラント講座",
+          "  英語話者向けのエスペラント講座",
           "",
-          "AMIKUMU（アプリ）",
-          "  近くのエスペランティストを見つけましょう"
+          "AMIKUMU (アプリ)",
+          "  近くのエスペランティストを探せます"
         ]
       },
       {
@@ -47,13 +47,13 @@
           "PLI DA RIMEDOJ",
           "",
           "PASPORTA SERVO",
-          "  Senpaga loĝado ĉe Esperantistoj",
+          "  Senpaga loĝado ĉe esperantistoj",
           "",
           "LIBERA FOLIO",
           "  Novaĵoj en Esperanto",
           "",
           "MUZAIKO",
-          "  24-hora Esperanto-radio",
+          "  Reta radio en Esperanto",
           "",
           "TELEGRAM/DISCORD",
           "  Multaj grupoj por babili"
@@ -62,24 +62,127 @@
           "その他のリソース",
           "",
           "PASPORTA SERVO",
-          "  エスペランティスト宅での無料宿泊",
+          "  エスペランティスト宅に無料で泊まれる",
           "",
           "LIBERA FOLIO",
-          "  エスペラントで読むニュース",
+          "  エスペラントのニュース",
           "",
           "MUZAIKO",
-          "  24時間放送のエスペラントラジオ",
+          "  エスペラントのネットラジオ",
           "",
           "TELEGRAM/DISCORD",
-          "  おしゃべりできるグループが多数"
+          "  おしゃべり用のグループが多数"
         ]
+      }
+    ]
+  },
+  {
+    "lesson_id": "060",
+    "trigger_word": "pasporto",
+    "title": "第59課:エスペラントの世界",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "語根 = 国民の場合: -io(または -lando)",
+          "で国名になります。1キーで2行:",
+          "ドイツ       Germanio    germano       1を押す",
+          "フランス     Francio     franco",
+          "イタリア     Italio      italo         2を押す",
+          "スペイン     Hispanio    hispano",
+          "ロシア       Rusio       ruso          3を押す",
+          "ポーランド   Pollando    polo",
+          "中国         Ĉinio       ĉino          4を押す",
+          "日本         Japanio     japano",
+          "",
+          "語根 = 国の場合: -ano で国民を表します:",
+          "アメリカ     Usono       usonano       5を押す",
+          "カナダ       Kanado      kanadano",
+          "ブラジル     Brazilo     brazilano     6を押す",
+          "メキシコ     Meksiko     meksikano",
+          "ケニア       Kenjo       kenjano       7を押す",
+          "アルゼンチン Argentino   argentinano"
+        ],
+        "pronunciation_mappings": {
+          "1": "Germanio. Germano. Francio. Franco.",
+          "2": "Italio. Italo. Hispanio. Hispano.",
+          "3": "Rusio. Ruso. Pollando. Polo.",
+          "4": "Ĉinio. Ĉino. Japanio. Japano.",
+          "5": "Usono. Usonano. Kanado. Kanadano.",
+          "6": "Brazilo. Brazilano. Meksiko. Meksikano.",
+          "7": "Kenjo. Kenjano. Argentino. Argentinano."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "国とその首都をエスペラントで。",
+          "1つのキーで2行を読み上げます:",
+          "ドイツ       Germanio    Berlino       1を押す",
+          "フランス     Francio     Parizo",
+          "イタリア     Italio      Romo          2を押す",
+          "スペイン     Hispanio    Madrido",
+          "イギリス     Britio      Londono       3を押す",
+          "ポルトガル   Portugalio  Lisbono",
+          "オランダ     Nederlando  Amsterdamo    4を押す",
+          "スイス       Svislando   Berno",
+          "オーストリア Aŭstrio     Vieno         5を押す",
+          "ポーランド   Pollando    Varsovio",
+          "スウェーデン Svedio      Stokholmo     6を押す",
+          "ロシア       Rusio       Moskvo",
+          "ウクライナ   Ukrainio    Kievo         7を押す",
+          "トルコ       Turkio      Ankaro"
+        ],
+        "pronunciation_mappings": {
+          "1": "Germanio. Berlino. Francio. Parizo.",
+          "2": "Italio. Romo. Hispanio. Madrido.",
+          "3": "Britio. Londono. Portugalio. Lisbono.",
+          "4": "Nederlando. Amsterdamo. Svislando. Berno.",
+          "5": "Aŭstrio. Vieno. Pollando. Varsovio.",
+          "6": "Svedio. Stokholmo. Rusio. Moskvo.",
+          "7": "Ukrainio. Kievo. Turkio. Ankaro."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "さらに14の国と首都を、",
+          "世界じゅうから:",
+          "アメリカ     Usono       Vaŝingtono    1を押す",
+          "カナダ       Kanado      Otavo",
+          "メキシコ     Meksiko     Meksikurbo    2を押す",
+          "ブラジル     Brazilo     Braziljo",
+          "中国         Ĉinio       Pekino        3を押す",
+          "日本         Japanio     Tokio",
+          "韓国         Sud-Koreio  Seulo         4を押す",
+          "インド       Hindio      Nov-Delhio",
+          "インドネシア Indonezio   Ĝakarto       5を押す",
+          "豪州         Aŭstralio   Kanbero",
+          "エジプト     Egiptio     Kairo         6を押す",
+          "ケニア       Kenjo       Najrobo",
+          "ナイジェリア Niĝerio     Abuĝo         7を押す",
+          "南アフリカ   Sud-Afriko  Pretorio"
+        ],
+        "pronunciation_mappings": {
+          "1": "Usono. Vaŝingtono. Kanado. Otavo.",
+          "2": "Meksiko. Meksikurbo. Brazilo. Braziljo.",
+          "3": "Ĉinio. Pekino. Japanio. Tokio.",
+          "4": "Sud-Koreio. Seulo. Hindio. Nov-Delhio.",
+          "5": "Indonezio. Ĝakarto. Aŭstralio. Kanbero.",
+          "6": "Egiptio. Kairo. Kenjo. Najrobo.",
+          "7": "Niĝerio. Abuĝo. Sud-Afriko. Pretorio."
+        }
       }
     ]
   },
   {
     "lesson_id": "054",
     "trigger_word": "muzeo",
-    "title": "エスペラント音楽",
+    "title": "第60課:エスペラントの音楽",
     "header_color": "blue",
     "toggle_mode": true,
     "pages": [
@@ -108,22 +211,21 @@
         "english": [
           "エスペラントの音楽",
           "",
-          "はい、エスペラント音楽は存在します！",
-          "あらゆるジャンル: ロック、ラップ、レゲエなど",
+          "そう、エスペラントの音楽はあります!",
+          "全ジャンル: ロック、ラップ、レゲエ、ポップ…",
           "",
-          "チェックすべきアーティスト：",
-          "* Jonny M – レゲエ／ラップ（ドイツ）",
-          "* Kajto – ポップフォーク（オランダ）",
-          "* Dolchamar – ロック／ヒップホップ",
-          "    （フィンランド）",
-          "* Martin Wiese – ロック（スウェーデン）",
+          "聴いてみたいアーティスト:",
+          "* Jonny M - レゲエ/ラップ (ドイツ)",
+          "* Kajto - ポップフォーク (オランダ)",
+          "* Dolchamar - ロック/ラップ (フィンランド)",
+          "* Martin Wiese - ロック (スウェーデン)",
           "",
-          "なぜうまくいくのか：",
-          "* 規則正しいリズム",
-          "* 簡単な韻（-o, -as, -is, -a, -e）",
+          "うまくいく理由:",
+          "* 規則的なリズム",
+          "* 韻が踏みやすい (-o, -as, -is, -a, -e)",
           "* 柔軟な語順",
           "",
-          "YouTubeで「エスペラント音楽」と検索！"
+          "YouTube で 'Esperanto music' を検索!"
         ]
       }
     ]
@@ -131,7 +233,7 @@
   {
     "lesson_id": "055",
     "trigger_word": "antaŭjuĝo",
-    "title": "第55課：接頭辞「FI-」",
+    "title": "第61課：接頭辞「FI-」",
     "header_color": "green",
     "pages": [
       {
@@ -164,7 +266,7 @@
   {
     "lesson_id": "056",
     "trigger_word": "konversacio",
-    "title": "第56課：AIと練習しよう",
+    "title": "第62課:AIと練習しよう",
     "header_color": "blue",
     "toggle_mode": true,
     "pages": [
@@ -186,18 +288,18 @@
           "   Por demandi pri gramatiko"
         ],
         "english": [
-          "AIとエスペラントを練習できます！",
+          "AIとエスペラントを練習できます!",
           "",
-          "最新の言語モデル（ChatGPT、Claude）は",
-          "意外に上手にエスペラントを話せます。",
+          "最新の言語モデル(ChatGPT、Claude)は",
+          "驚くほど上手にエスペラントを話せます。",
           "",
-          "使い方は2通りあります：",
+          "使い方は2通りあります:",
           "",
           "1. 会話パートナー",
-          "   会話を練習するため",
+          "   話す練習のために",
           "",
           "2. 個人チューター",
-          "   文法について質問するため"
+          "   文法について質問するために"
         ]
       },
       {
@@ -209,7 +311,7 @@
           "\"Rolu kiel lerneja kunlernanto dum",
           "ekskurso. Parolu Esperanton flue.",
           "Gvidu per facile respondeblaj demandoj.",
-          "Uzu simplan Esperanton. Korektu gentile.\"",
+          "Uzu simplan Esperanton. Korektu min ĝentile.\"",
           "",
           "Poste simple komencu: 'Saluton!'",
           "",
@@ -221,133 +323,22 @@
           "Demandu pri io ajn! 'Kial estas -n ĉi tie?'"
         ],
         "english": [
-          "会話パートナー ― AIにこう言ってください：",
+          "会話パートナー - AIにこう伝えます:",
           "",
           "「修学旅行中のクラスメートを演じて。",
-          "流暢にエスペラントを話してください。",
-          "簡単に答えられる質問で会話を進めて。",
-          "簡単なエスペラントを使って。優しく訂正して。」",
+          "エスペラントを流暢に話して。答えやすい",
+          "質問で会話をリードして。やさしい",
+          "エスペラントを使って。優しく訂正して。」",
           "",
-          "その後、単に「Saluton!」と始めてください。",
+          "あとは 'Saluton!' と始めるだけ。",
           "",
-          "個人チューター ― AIにこう言ってください：",
+          "個人チューター - AIにこう伝えます:",
           "",
-          "「私のエスペラントの先生になってください。",
+          "「私のエスペラントの先生になって。",
           "質問に答えて。文法を説明して。」",
           "",
-          "何でも聞いてみましょう! なぜここに-nがつくの?"
+          "何でも聞いて! 'なぜここに -n が?'"
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "060",
-    "trigger_word": "pasporto",
-    "trigger_card_number": 643,
-    "title": "第60課:エスペラントの世界",
-    "header_color": "cyan",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 3,
-        "content": [
-          "エスペラントの国名は-io、国民は-o。",
-          "1キーで2つ：",
-          "ドイツ          Germanio,  germano    1を押す",
-          "フランス        Francio,   franco",
-          "イタリア        Italio,    italo      2を押す",
-          "スペイン        Hispanio,  hispano",
-          "ポーランド      Pollando,  polo       3を押す",
-          "ロシア          Rusio,     ruso",
-          "ハンガリー      Hungario,  hungaro    4を押す",
-          "チェコ          Ĉeĥio,     ĉeĥo",
-          "リトアニア      Litovio,   litovo     5を押す",
-          "フィンランド    Finnlando, finno",
-          "中国            Ĉinio,     ĉino       6を押す",
-          "日本            Japanio,   japano",
-          "アメリカ        Usono,     usonano    7を押す",
-          "カナダ          Kanado,    kanadano",
-          "ブラジル        Brazilo,   brazilano  8を押す",
-          "ケニア          Kenjo,     kenjano"
-        ],
-        "pronunciation_mappings": {
-          "1": "Germanio,  germano. Francio,   franco.",
-          "2": "Italio,    italo. Hispanio,  hispano.",
-          "3": "Pollando,  polo. Rusio,     ruso.",
-          "4": "Hungario,  hungaro. Ĉeĥio,     ĉeĥo.",
-          "5": "Litovio,   litovo. Finnlando, finno.",
-          "6": "Ĉinio,     ĉino. Japanio,   japano.",
-          "7": "Usono,     usonano. Kanado,    kanadano.",
-          "8": "Brazilo,   brazilano. Kenjo,     kenjano."
-        }
-      },
-      {
-        "page": 2,
-        "total_pages": 3,
-        "content": [
-          "国とその首都をエスペラントで。",
-          "1キーで2行表示：",
-          "ドイツ       Germanio    Berlino      1を押す",
-          "フランス     Francio     Parizo",
-          "イタリア     Italio      Romo         2を押す",
-          "スペイン     Hispanio    Madrido",
-          "英国         Britio      Londono      3を押す",
-          "ポルトガル   Portugalio  Lisbono",
-          "オランダ     Nederlando  Amsterdamo   4を押す",
-          "スイス       Svislando   Berno",
-          "オーストリア Aŭstrio     Vieno        5を押す",
-          "ポーランド   Pollando    Varsovio",
-          "スウェーデン Svedio      Stokholmo    6を押す",
-          "ロシア       Rusio       Moskvo",
-          "ウクライナ   Ukrainio    Kievo        7を押す",
-          "トルコ       Turkio      Ankaro",
-          "チェコ       Ĉeĥio       Prago        8を押す",
-          "ハンガリー   Hungario    Budapeŝto"
-        ],
-        "pronunciation_mappings": {
-          "1": "Germanio. Berlino. Francio. Parizo.",
-          "2": "Italio. Romo. Hispanio. Madrido.",
-          "3": "Britio. Londono. Portugalio. Lisbono.",
-          "4": "Nederlando. Amsterdamo. Svislando. Berno.",
-          "5": "Aŭstrio. Vieno. Pollando. Varsovio.",
-          "6": "Svedio. Stokholmo. Rusio. Moskvo.",
-          "7": "Ukrainio. Kievo. Turkio. Ankaro.",
-          "8": "Ĉeĥio. Prago. Hungario. Budapeŝto."
-        }
-      },
-      {
-        "page": 3,
-        "total_pages": 3,
-        "content": [
-          "国名・国民・形容詞：Germanio、germano、",
-          "germana。さらに16か国：",
-          "リトアニア   Litovio     Vilno        1を押す",
-          "フィンランド Finnlando   Helsinko",
-          "アメリカ     Usono       Vaŝingtono   2を押す",
-          "カナダ       Kanado      Otavo",
-          "メキシコ     Meksiko     Meksikurbo   3を押す",
-          "ブラジル     Brazilo     Braziljo",
-          "中国         Ĉinio       Pekino       4を押す",
-          "日本         Japanio     Tokio",
-          "韓国         Sud-Koreio  Seulo        5を押す",
-          "インド       Hindio      Nov-Delhio",
-          "インドネシア Indonezio   Ĝakarto      6を押す",
-          "豪州         Aŭstralio   Kanbero",
-          "エジプト     Egiptio     Kairo        7を押す",
-          "ケニア       Kenjo       Najrobo",
-          "ナイジェリア Niĝerio     Abuĝo        8を押す",
-          "南アフリカ   Sud-Afriko  Pretorio"
-        ],
-        "pronunciation_mappings": {
-          "1": "Litovio. Vilno. Finnlando. Helsinko.",
-          "2": "Usono. Vaŝingtono. Kanado. Otavo.",
-          "3": "Meksiko. Meksikurbo. Brazilo. Braziljo.",
-          "4": "Ĉinio. Pekino. Japanio. Tokio.",
-          "5": "Sud-Koreio. Seulo. Hindio. Nov-Delhio.",
-          "6": "Indonezio. Ĝakarto. Aŭstralio. Kanbero.",
-          "7": "Egiptio. Kairo. Kenjo. Najrobo.",
-          "8": "Niĝerio. Abuĝo. Sud-Afriko. Pretorio."
-        }
       }
     ]
   }

@@ -3,7 +3,7 @@
     "lesson_id": "021",
     "trigger_word": "cappuccino",
     "trigger_card_number": 1001,
-    "title": "LECCIÓN 21: COMIDAS ITALIANAS",
+    "title": "LECCIÓN 27: COMIDAS ITALIANAS",
     "header_color": "magenta",
     "pages": [
       {
@@ -17,7 +17,7 @@
           "COLAZIONE (desayuno, 7-9 a.m.):",
           "   cappuccino + cornetto en el bar",
           "   de pie en el banco (mostrador)",
-          "   nunca huevos, tocino ni cereal",
+          "   nunca huevos ni tocino",
           "",
           "PRANZO (almuerzo, 12:30-2 p.m.):",
           "   tradicionalmente la comida principal",
@@ -73,9 +73,78 @@
           "     tras una comida (lo notarán)",
           "   caffè = espresso, en cualquier momento",
           "   macchiato = espresso + gota de leche",
-          "   caffè corretto = espresso + grappa"
+          "   caffè corretto = espresso + grappa",
+          "PIDE: un caffè, per favore.           Presiona 1"
         ],
-        "pronunciation": "Un caffè, per favore."
+        "pronunciation_mappings": {
+          "1": "Un caffè, per favore."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "047",
+    "trigger_word": "espresso",
+    "trigger_card_number": 1002,
+    "title": "LECCIÓN 28: SI IMPERSONALE",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "SI + verbo = lo que hace la GENTE en general.",
+          "El verbo queda en tercera persona",
+          "singular (la forma de lui/lei).",
+          "",
+          "   Al banco si beve in fretta.        Presiona 1",
+          "      = En la barra se bebe rápido.",
+          "   In Italia si mangia tardi.         Presiona 2",
+          "      = En Italia se come tarde.",
+          "   Come si dice in italiano?          Presiona 3",
+          "      = ¿Cómo se dice en italiano?",
+          "   Si dice così.                      Presiona 4",
+          "      = Así se dice.",
+          "",
+          "Es el mismo SE impersonal del español:",
+          "se come, se dice, se vive bien aquí."
+        ],
+        "pronunciation": "Si vive bene qui.",
+        "pronunciation_mappings": {
+          "1": "Al banco si beve in fretta.",
+          "2": "In Italia si mangia tardi.",
+          "3": "Come si dice in italiano?",
+          "4": "Si dice così."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "Un sustantivo PLURAL pone el verbo en plural:",
+          "   Qui si vende il pane.              Presiona 1",
+          "      = Aquí se vende pan.",
+          "   Qui si vendono i giornali.",
+          "      = Aquí se venden periódicos.",
+          "",
+          "REFLEXIVOS: ci si, nunca si si        Presiona 2",
+          "   In Italia ci si saluta con due baci.",
+          "      = En Italia la gente se saluda",
+          "        con dos besos.",
+          "",
+          "EN CARTELES Y PUERTAS DE TIENDAS:     Presiona 3",
+          "   Si affitta.  = Se renta, se alquila.",
+          "   Si vende.    = Se vende.",
+          "   Si prega di non fumare.",
+          "      = Se ruega no fumar.",
+          "   Formas antiguas que aún se ven:",
+          "   affittasi, vendesi (como 'véndese')."
+        ],
+        "pronunciation_mappings": {
+          "1": "Qui si vende il pane. Qui si vendono i giornali.",
+          "2": "In Italia ci si saluta con due baci.",
+          "3": "Si affitta. Si vende. Si prega di non fumare."
+        }
       }
     ]
   }

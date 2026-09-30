@@ -1,420 +1,1068 @@
 [
-  {
-    "lesson_id": "001",
-    "trigger_word": "saluton",
-    "title": "第1課:エスペラントの音",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
-        "content": [
-          "エスペラントの発音は規則的です。どの文字も",
-          "いつも同じ音を表します。母音は5つだけ --",
-          "日本語のア・イ・ウ・エ・オとほぼ同じです。",
-          "",
-          "'A' = 「ア」の音:             1を押す",
-          "   amiko, tablo, kato",
-          "",
-          "'E' = 「エ」の音:             2を押す",
-          "   espero, bela, tre",
-          "",
-          "'I' = 「イ」の音:             3を押す",
-          "   iri, amiko, mi",
-          "",
-          "'O' = 「オ」の音:             4を押す",
-          "   oro, nova, horo",
-          "",
-          "'U' = 「ウ」の音:             5を押す",
-          "   urbo, kultur, nu"
-        ],
-        "pronunciation": "Leciono unu",
-        "pronunciation_speed": 1.4,
-        "pronunciation_mappings": {
-          "1": "amiko, tablo, kato",
-          "2": "espero, bela, tre",
-          "3": "iri, amiko, mi",
-          "4": "oro, nova, horo",
-          "5": "urbo, kultur, nu"
-        }
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "content": [
-          "一部の子音には帽子が付きます。",
-          "見た目は手ごわそうですが、音はどれも",
-          "日本語でおなじみ。新しいのはĜとĴの違いだけ。",
-          "",
-          "Ĉ = 「チャ行」の子音:         1を押す",
-          "   ĉambro, ĉokolado, ĉefo",
-          "",
-          "Ĝ = 「ジャ行」の子音:         2を押す",
-          "   ĝardeno, oranĝo, ĝojo",
-          "",
-          "Ĵ = ジュに近い摩擦音:         3を押す",
-          "   ĵurnalo, ĵaŭdo, ĵazo",
-          "",
-          "Ŝ = 「シャ行」の子音:         4を押す",
-          "   ŝipo, fiŝo, ŝranko",
-          "",
-          "Ŭ = 「ワ」の半母音。aŭ=アウ:  5を押す",
-          "   aŭ → aŭto   eŭ → Eŭropo"
-        ],
-        "pronunciation_speed": 1.4,
-        "pronunciation_mappings": {
-          "1": "ĉambro, ĉokolado, ĉefo",
-          "2": "ĝardeno, oranĝo, ĝojo",
-          "3": "ĵurnalo, ĵaŭdo, ĵazo",
-          "4": "ŝipo, fiŝo, ŝranko",
-          "5": "aŭ, aŭto, eŭ, Eŭropo"
-        }
-      }
-    ]
-  },
-  {
-    "lesson_id": "002",
-    "trigger_word": "estas",
-    "title": "第2課:現在形",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "エスペラントの現在形は簡単:主語が",
-          "誰でも、動詞はすべて -as で終わります。",
-          "",
-          "「ESTI(である)」の例:",
-          "mi estas      = わたしは〜です",
-          "vi estas      = あなたは〜です",
-          "li estas      = 彼は〜です",
-          "ŝi estas      = 彼女は〜です",
-          "ni estas      = わたしたちは〜です",
-          "ili estas     = 彼らは〜です",
-          "",
-          "「PAROLI(話す)」の例:",
-          "mi parolas    = わたしは話します",
-          "vi parolas    = あなたは話します",
-          "li parolas    = 彼は話します",
-          "",
-          "人称で変わらないのは日本語と同じ。しかも 「話",
-          "す/話します」のような区別もなく -as だけ。"
-        ],
-        "pronunciation": "Leciono du"
-      }
-    ]
-  },
-  {
-    "lesson_id": "003",
-    "trigger_word": "alia",
-    "title": "第3課:形容詞と複数形",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
-        "content": [
-          "エスペラントの形容詞はすべて -a で",
-          "終わります。ひと目で見分けられます!",
-          "",
-          "よく使う形容詞:",
-          "",
-          "bona   = 良い        malbona   = 悪い",
-          "granda = 大きい      malgranda = 小さい",
-          "bela   = 美しい      nova      = 新しい",
-          "",
-          "語順 -- どちらでも OK:",
-          "",
-          "bona libro  = 良い本",
-          "libro bona  = 良い本(これも正しい!)",
-          "",
-          "日本語では「良い本」の一択ですが、",
-          "エスペラントは前でも後ろでも自由です。",
-          "",
-          "コツ:名詞を説明して -a で終われば形容詞。"
-        ],
-        "pronunciation": "Leciono tri"
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "content": [
-          "複数形:名詞にも形容詞にも -j を付けます。",
-          "",
-          "名詞(-o が -oj に):",
-          "amiko   → amikoj    = 友だち(複数)",
-          "libro   → libroj    = 本(複数)",
-          "hundo   → hundoj    = 犬(複数)",
-          "",
-          "形容詞も一致させます:",
-          "bona amiko    → bonaj amikoj",
-          "granda libro  → grandaj libroj",
-          "",
-          "発音:-j は「ボーイ」のイの音。",
-          "amikoj = ア・ミー・コイ",
-          "",
-          "日本語は複数を普段は示しません(本は 1冊でも2",
-          "冊でも「本」)。エスペラントは 毎回 -j で必ず",
-          "示します。ここが新しい! La grandaj hundoj",
-          "kuras. = 大きな犬たちが走る。"
+    {
+        "lesson_id": "001",
+        "trigger_word": "saluton",
+        "title": "第1課:エスペラントの音",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 3,
+                "content": [
+                    "エスペラントの発音は規則的です。どの文字も",
+                    "いつも同じ音を表します。母音は5つだけ --",
+                    "日本語のア・イ・ウ・エ・オとほぼ同じです。",
+                    "",
+                    "'A' = 「ア」の音:                     1を押す",
+                    "   amiko, tablo, kato",
+                    "",
+                    "'E' = 「エ」の音:                     2を押す",
+                    "   espero, bela, tre",
+                    "",
+                    "'I' = 「イ」の音:                     3を押す",
+                    "   iri, amiko, mi",
+                    "",
+                    "'O' = 「オ」の音:                     4を押す",
+                    "   oro, nova, horo",
+                    "",
+                    "'U' = 「ウ」の音:                     5を押す",
+                    "   urbo, kulturo, nu"
+                ],
+                "pronunciation": "Leciono unu",
+                "pronunciation_mappings": {
+                    "1": "Amiko. Tablo. Kato.",
+                    "2": "Espero. Bela. Tre.",
+                    "3": "Iri. Amiko. Mi.",
+                    "4": "Oro. Nova. Horo.",
+                    "5": "Urbo. Kulturo. Nu."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 3,
+                "content": [
+                    "一部の子音には帽子が付きます。",
+                    "見た目は手ごわそうですが、音はどれも",
+                    "日本語でおなじみ。新しいのはĜとĴの違いだけ。",
+                    "",
+                    "Ĉ = 「チャ行」の子音:                 1を押す",
+                    "   ĉambro, ĉokolado, ĉefo",
+                    "",
+                    "Ĝ = 「ジャ行」の子音:                 2を押す",
+                    "   ĝardeno, oranĝo, ĝojo",
+                    "",
+                    "Ĵ = ジュに近い摩擦音:                 3を押す",
+                    "   ĵurnalo, ĵaŭdo, ĵazo",
+                    "",
+                    "Ŝ = 「シャ行」の子音:                 4を押す",
+                    "   ŝipo, fiŝo, ŝranko",
+                    "",
+                    "Ŭ = 「ワ」の半母音。aŭ=アウ:          5を押す",
+                    "   aŭ → aŭto   eŭ → Eŭropo"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Ĉambro. Ĉokolado. Ĉefo.",
+                    "2": "Ĝardeno. Oranĝo. Ĝojo.",
+                    "3": "Ĵurnalo. Ĵaŭdo. Ĵazo.",
+                    "4": "Ŝipo. Fiŝo. Ŝranko.",
+                    "5": "Aŭ. Aŭto. Eŭropo."
+                }
+            },
+            {
+                "page": 3,
+                "total_pages": 3,
+                "content": [
+                    "ほかに注意したい文字:",
+                    "",
+                    "C = 「ツ」の子音(cats の ts):         1を押す",
+                    "   cent, certa, facila",
+                    "",
+                    "J = 「ヤ行」の子音(yes の y):         2を押す",
+                    "   jes, jam, jaro",
+                    "",
+                    "G = いつも「ガ行」(ジにならない):     3を押す",
+                    "   granda, legi, grava",
+                    "",
+                    "Ĥ = のどの奥でこする「ハ」(まれ):     4を押す",
+                    "   ĥoro, eĥo",
+                    "",
+                    "強勢:いつも後ろから2番目の音節。",
+                    "母音はどれも1音節に数えます:          5を押す",
+                    "   a-MI-ko, fa-CI-la, es-pe-RAN-to",
+                    "   fa-mi-LI-o"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Cent. Certa. Facila.",
+                    "2": "Jes. Jam. Jaro.",
+                    "3": "Granda. Legi. Grava.",
+                    "4": "Ĥoro. Eĥo.",
+                    "5": "Amiko. Facila. Esperanto. Familio."
+                }
+            }
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "004",
-    "trigger_word": "bone",
-    "title": "第4課:副詞は -e で終わる",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "副詞は「どのように」を表します。",
-          "エスペラントでは必ず -e で終わります。",
-          "",
-          "形容詞から副詞へ:",
-          "bona → bone       = 良い → 良く",
-          "rapida → rapide   = 速い → 速く",
-          "facila → facile   = 簡単な → 簡単に",
-          "lenta → lente     = 遅い → 遅く",
-          "",
-          "日本語の「速い→速く」と同じ発想です。-a を",
-          "-e に変えるだけ(な形容詞なら「〜に」)。",
-          "",
-          "違いを見てみましょう:",
-          "Li estas bona.",
-          "(彼は良い人です ← 彼を説明)",
-          "",
-          "Li kantas bone.",
-          "(彼は上手に歌います ← 歌い方を説明)"
-        ],
-        "pronunciation": "Leciono kvar"
-      }
-    ]
-  },
-  {
-    "lesson_id": "005",
-    "trigger_word": "kio",
-    "title": "第5課:疑問詞(KI-)",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "エスペラントの疑問詞はすべて KI- で",
-          "始まります。日本語の「こそあど」の",
-          "ような、美しい体系の一部です。詳しくは後で!",
-          "",
-          "疑問詞:",
-          "kio   = 何(もの)",
-          "kiu   = 誰/どれ",
-          "kie   = どこ(場所)",
-          "kiam  = いつ(時)",
-          "kial  = なぜ(理由)",
-          "kiel  = どのように(方法)",
-          "kiom  = いくつ/どれだけ",
-          "",
-          "例文:",
-          "Kio estas tio?     = あれは何ですか?",
-          "Kiu vi estas?      = あなたは誰ですか?",
-          "Kie vi loĝas?      = どこに住んでいますか?",
-          "Kiam vi venas?     = いつ来ますか?"
-        ],
-        "pronunciation": "Leciono kvin"
-      }
-    ]
-  },
-  {
-    "lesson_id": "006",
-    "trigger_word": "helpo",
-    "title": "第6課:冠詞 LA",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "冠詞はただ1つ:LA。「その・例の」と指します。",
-          "",
-          "LA あり = 特定の、既知のもの:",
-          "Mi vidas la hundon. = その犬が見えます。",
-          "La libro relevanta estas sur la tablo.",
-          "= 例の本はテーブルの上にあります。",
-          "",
-          "冠詞なし = 一般的な概念:",
-          "Mi amas muzikon. = 音楽が好きです。",
-          "Akvo estas necesa. = 水は必要です。",
-          "Ŝi volas kafon. = 彼女はコーヒーが欲しい。",
-          "",
-          "Mi legas libron. = (ある)本を読んでいます。",
-          "Mi legas la libron. = その本を読んでいます。",
-          "",
-          "a/an にあたる語はなく、文脈で伝わる --",
-          "日本語と同じ流儀。新しいのは LA だけで、",
-          "形は不変:la viro、la viroj、la domo。"
-        ],
-        "pronunciation": "Leciono ses"
-      }
-    ]
-  },
-  {
-    "lesson_id": "007",
-    "trigger_word": "ĉu",
-    "title": "第7課:はい/いいえ疑問文",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "どんな平叙文も、文頭に ĈU を置くだけで",
-          "はい/いいえ疑問文に。語順は変わりません!",
-          "",
-          "日本語の文末の「か」と同じ仕組みが文頭に",
-          "来るだけ。語順をいじらない点も同じです。",
-          "",
-          "平叙文 → 疑問文:",
-          "Vi parolas Esperanton.",
-          "(あなたはエスペラントを話します。)",
-          "  ↓",
-          "Ĉu vi parolas Esperanton?",
-          "(あなたはエスペラントを話しますか?)",
-          "",
-          "Ĉu estas problemo?  = 問題はありますか?",
-          "Ĉu li venas?        = 彼は来ますか?",
-          "Ĉu vi komprenas?    = わかりますか?",
-          "",
-          "答え方:Jes = はい  /  Ne = いいえ"
-        ],
-        "pronunciation": "Leciono sep"
-      }
-    ]
-  },
-  {
-    "lesson_id": "008",
-    "trigger_word": "patrino",
-    "title": "第8課:女性形の -IN-",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "言葉をはっきり女性形にするには、語根の",
-          "後ろ、語尾の前に -IN- を入れます。",
-          "",
-          "家族:",
-          "patro → patrino    = 父 → 母",
-          "frato → fratino    = 兄弟 → 姉妹",
-          "filo → filino      = 息子 → 娘",
-          "",
-          "組み立て:",
-          "patr-in-o  = 母(名詞 -o)",
-          "patr-in-a  = 母らしい(形容詞 -a)",
-          "",
-          "日本語の「俳優/女優」と違い、語はいつも",
-          "同じ -IN- ひとつで済みます:",
-          "",
-          "knabo → knabino    = 少年 → 少女",
-          "hundo → hundino    = 犬 → 雌犬",
-          "amiko → amikino    = 友だち → 女友だち"
-        ],
-        "pronunciation": "Leciono ok"
-      }
-    ]
-  },
-  {
-    "lesson_id": "009",
-    "trigger_word": "malbona",
-    "title": "第9課:反対の接頭辞 MAL-",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "MAL- はエスペラント屈指の強力な道具。",
-          "どんな語の前に付けても、瞬時に反対の意味に!",
-          "",
-          "形容詞:",
-          "bona → malbona      = 良い → 悪い",
-          "granda → malgranda  = 大きい → 小さい",
-          "nova → malnova      = 新しい → 古い",
-          "alta → malalta      = 高い → 低い",
-          "juna → maljuna      = 若い → 老いた",
-          "",
-          "動詞にも:",
-          "fermi → malfermi    = 閉める → 開ける",
-          "ami → malami        = 愛する → 憎む",
-          "",
-          "「不・無」より徹底していて、単なる否定",
-          "ではなく真逆を作ります。覚える語彙が",
-          "半分になる仕掛けです。bona を覚えれば",
-          "malbona はタダ!"
-        ],
-        "pronunciation": "Leciono naŭ"
-      }
-    ]
-  },
-  {
-    "lesson_id": "010",
-    "trigger_word": "unu",
-    "title": "第10課:数の体系",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
-        "content": [
-          "エスペラントの数は完全に規則的。しかも",
-          "組み立て方は日本語とまったく同じです。",
-          "",
-          "基本の数:",
-          "0 = nul    5 = kvin    10 = dek",
-          "1 = unu    6 = ses     11 = dek unu",
-          "2 = du     7 = sep     12 = dek du",
-          "3 = tri    8 = ok      13 = dek tri",
-          "4 = kvar   9 = naŭ     14 = dek kvar",
-          "",
-          "大きな数を組み立てる:",
-          "20 = dudek(du + dek = 二十)",
-          "30 = tridek、40 = kvardek …",
-          "100 = cent、1000 = mil",
-          "",
-          "23 = dudek tri。「二・十・三」の発想",
-          "そのまま -- 日本語の数え方がそのまま",
-          "通用します。例外なし!"
-        ],
-        "pronunciation": "Leciono dek"
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "content": [
-          "順序数(第1、第2、第3 …):",
-          "数に -a を付けるだけ。形容詞になります!",
-          "",
-          "unua    = 第1の      kvara   = 第4の",
-          "dua     = 第2の      kvina   = 第5の",
-          "tria    = 第3の      deka    = 第10の",
-          "",
-          "大きな順序数:",
-          "dudek-unua = 第21の    centa = 第100の",
-          "",
-          "文の中で:",
-          "Ĉi tiu estas mia unua leciono.",
-          "(これはわたしの最初のレッスンです。)",
-          "",
-          "Li loĝas sur la tria etaĝo.",
-          "(彼は3階に住んでいます。)",
-          "",
-          "形容詞と同じく複数も:unuaj paŝoj = 最初の一歩"
+    },
+    {
+        "lesson_id": "002",
+        "trigger_word": "estas",
+        "title": "第2課:現在形",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "エスペラントの現在形は簡単:主語が",
+                    "誰でも、動詞はすべて -as で終わります。",
+                    "",
+                    "「ESTI」(である)の例:                 1を押す",
+                    "",
+                    "mi estas      = わたしは〜です",
+                    "vi estas      = あなた(たち)は〜です",
+                    "li estas      = 彼は〜です",
+                    "ŝi estas      = 彼女は〜です",
+                    "ni estas      = わたしたちは〜です",
+                    "ili estas     = 彼らは〜です",
+                    "",
+                    "「PAROLI」(話す)の例:                 2を押す",
+                    "mi parolas    = わたしは話します",
+                    "vi parolas    = あなたは話します",
+                    "li parolas    = 彼は話します",
+                    "",
+                    "動詞は人称で変わりません!形は1つだけ。"
+                ],
+                "pronunciation": "Leciono du",
+                "pronunciation_mappings": {
+                    "1": "Mi estas. Vi estas. Li estas. Ŝi estas. Ni estas. Ili estas.",
+                    "2": "Mi parolas. Vi parolas. Li parolas."
+                }
+            }
         ]
-      }
-    ]
-  }
+    },
+    {
+        "lesson_id": "004",
+        "trigger_word": "bone",
+        "title": "第3課:語尾 -E の副詞",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "副詞は「どのように」起こるかを表します。",
+                    "ほかの語から作った副詞は -e で終わります。",
+                    "形容詞が -a で終わるのと同じです。",
+                    "",
+                    "形容詞から副詞へ:                     1を押す",
+                    "bona → bone           = 良い → 良く",
+                    "rapida → rapide       = 速い → 速く",
+                    "facila → facile       = 簡単な → 簡単に",
+                    "malrapida → malrapide = 遅い → 遅く",
+                    "",
+                    "違いを見てみましょう:                 2を押す",
+                    "Li estas bona.",
+                    "(彼は良い人です ← 彼を説明)",
+                    "",
+                    "Li kantas bone.",
+                    "(彼は上手に歌います ← 歌い方を説明)"
+                ],
+                "pronunciation": "Leciono kvar",
+                "pronunciation_mappings": {
+                    "1": "Bona. Bone. Rapida. Rapide. Facila. Facile. Malrapida. Malrapide.",
+                    "2": "Li estas bona. Li kantas bone."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "-e の付かない副詞もあります:          1を押す",
+                    "   nun = 今           tre    = とても",
+                    "   jam = もう         hodiaŭ = 今日",
+                    "もともと副詞なので、何も足しません!",
+                    "",
+                    "1つの語根に3つの役目:                 2を押す",
+                    "   rapido = 速さ      -o = ものの名前",
+                    "   rapida = 速い      -a = 性質の説明",
+                    "   rapide = 速く      -e = どのように",
+                    "",
+                    "まとめると:                           3を押す",
+                    "   Mi fartas tre bone.",
+                    "   = とても元気です。",
+                    "   Nun mi parolas malrapide.",
+                    "   = 今はゆっくり話しています。"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Nun. Tre. Jam. Hodiaŭ.",
+                    "2": "Rapido. Rapida. Rapide.",
+                    "3": "Mi fartas tre bone. Nun mi parolas malrapide."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "030",
+        "trigger_word": "bonvolu",
+        "title": "第4課:命令とお願い",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "語尾 -U で、動詞がお願いや命令になります。",
+                    "形はだれに対しても同じ1つだけ!",
+                    "",
+                    "辞書に載る形(不定形)は -I で終わります。",
+                    "-I を -U に替えるだけ:                1を押す",
+                    "   veni    → Venu!     = 来て!",
+                    "   atendi  → Atendu!   = 待って!",
+                    "   helpi   → Helpu!    = 助けて!",
+                    "   pardoni → Pardonu!  = すみません!",
+                    "",
+                    "お願い = BONVOLU + -I の形:           2を押す",
+                    "   Bonvolu ripeti!     = くり返してください!",
+                    "   Bonvolu atendi!     = 待ってください!",
+                    "   (bonvolu = 直訳「快く〜してください」)"
+                ],
+                "pronunciation": "Leciono tridek",
+                "pronunciation_mappings": {
+                    "1": "Venu! Atendu! Helpu! Pardonu!",
+                    "2": "Bonvolu ripeti! Bonvolu atendi!"
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "「〜しましょう」= NI + -U:            1を押す",
+                    "   Ni iru!             = 行きましょう!",
+                    "   Ni komencu!         = 始めましょう!",
+                    "",
+                    "「〜しないで」= NE + -U:              2を押す",
+                    "   Ne forgesu!         = 忘れないで!",
+                    "   Ne timu!            = 怖がらないで!",
+                    "",
+                    "彼・彼女にも使えます:                 3を押す",
+                    "   Li venu!            = 彼に来てもらおう!",
+                    "",
+                    "MI PETAS(お願い)で柔らかく:           4を押す",
+                    "   Atendu, mi petas!   = 待って、お願い!"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Ni iru! Ni komencu!",
+                    "2": "Ne forgesu! Ne timu!",
+                    "3": "Li venu!",
+                    "4": "Atendu, mi petas!"
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "006",
+        "trigger_word": "helpo",
+        "title": "第5課:冠詞 LA",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "冠詞はただ1つ:LA。「その・例の」と指します。",
+                    "",
+                    "LA あり = 特定の、わかっているもの:   1を押す",
+                    "   La kafo estas bona.  = そのコーヒーは良い。",
+                    "   La libro estas sur la tablo.",
+                    "   = その本はテーブルの上にあります。",
+                    "",
+                    "LA なし = どれでも、または一般に:     2を押す",
+                    "   Muziko estas bela.   = 音楽は美しい。",
+                    "   Akvo estas necesa.   = 水は必要です。",
+                    "",
+                    "a/an にあたる語はありません:          3を押す",
+                    "   Tio estas libro.     = それは本です。",
+                    "   Tio estas la libro.  = それが例の本です。",
+                    "",
+                    "名前にはふつう LA なし:Marko、Eŭropo。",
+                    "LA 自体の形は決して変わりません。"
+                ],
+                "pronunciation": "Leciono ses",
+                "pronunciation_mappings": {
+                    "1": "La kafo estas bona. La libro estas sur la tablo.",
+                    "2": "Muziko estas bela. Akvo estas necesa.",
+                    "3": "Tio estas libro. Tio estas la libro."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "005",
+        "trigger_word": "kio",
+        "title": "第6課:疑問詞(KI-)",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "エスペラントの疑問詞のほとんどは KI- で",
+                    "始まります。日本語の「こそあど」のような",
+                    "きれいな体系の一部です(次のページ)。",
+                    "",
+                    "疑問詞:                               1を押す",
+                    "kio   = 何(もの)",
+                    "kiu   = 誰/どれ",
+                    "kie   = どこ(場所)",
+                    "kiam  = いつ(時)",
+                    "kial  = なぜ(理由)",
+                    "kiel  = どのように(方法)",
+                    "kiom  = いくつ/どれだけ",
+                    "",
+                    "例文:                                 2を押す",
+                    "Kio estas tio?     = それは何ですか?",
+                    "Kiu vi estas?      = あなたは誰ですか?",
+                    "Kie vi loĝas?      = どこに住んでいますか?",
+                    "Kiam vi venas?     = いつ来ますか?"
+                ],
+                "pronunciation": "Leciono kvin",
+                "pronunciation_mappings": {
+                    "1": "Kio. Kiu. Kie. Kiam. Kial. Kiel. Kiom.",
+                    "2": "Kio estas tio? Kiu vi estas? Kie vi loĝas? Kiam vi venas?"
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "KI- をほかの頭に替えると、答えの語に",
+                    "なります(こそあどと同じ発想):         1を押す",
+                    "",
+                    "            もの   人・物 場所   時",
+                    "KI-  どの?  kio    kiu    kie    kiam",
+                    "TI-  その   tio    tiu    tie    tiam",
+                    "ĈI-  全部   ĉio    ĉiu    ĉie    ĉiam",
+                    "NENI- 無い  nenio  neniu  nenie  neniam",
+                    "I-   ある   io     iu     ie     iam",
+                    "",
+                    "例文:                                 2を押す",
+                    "Kie? Tie!          = どこ? そこ!",
+                    "Ĉio estas bona.    = すべて順調です。",
+                    "Neniu scias.       = 誰も知りません。",
+                    "Iu venas.          = 誰かが来ます。",
+                    "",
+                    "ĈI で「これ」に:tio = それ、ĉi tio = これ。"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Kio. Tio. Ĉio. Nenio. Io. Kiam. Tiam. Ĉiam. Neniam. Iam.",
+                    "2": "Kie? Tie! Ĉio estas bona. Neniu scias. Iu venas."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "007",
+        "trigger_word": "ĉu",
+        "title": "第7課:はい/いいえ疑問文",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "どんな平叙文も、文頭に ĈU を置くだけで",
+                    "はい/いいえ疑問文に。日本語の「か」が",
+                    "文頭に来る感じです。語順はまったく同じ!",
+                    "",
+                    "平叙文 → 疑問文:                      1を押す",
+                    "Vi parolas Esperante.",
+                    "= あなたはエスペラントを話します。",
+                    "Ĉu vi parolas Esperante?",
+                    "= あなたはエスペラントを話しますか?",
+                    "",
+                    "ほかの例:                             2を押す",
+                    "Ĉu estas problemo?  = 問題はありますか?",
+                    "Ĉu li venas?        = 彼は来ますか?",
+                    "Ĉu vi komprenas?    = わかりますか?",
+                    "",
+                    "JES か NE で答えます:                 3を押す",
+                    "Jes, mi komprenas.   = はい、わかります。",
+                    "Ne, mi ne komprenas. = いいえ、わかりません。"
+                ],
+                "pronunciation": "Leciono sep",
+                "pronunciation_mappings": {
+                    "1": "Vi parolas Esperante. Ĉu vi parolas Esperante?",
+                    "2": "Ĉu estas problemo? Ĉu li venas? Ĉu vi komprenas?",
+                    "3": "Jes, mi komprenas. Ne, mi ne komprenas."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "013",
+        "trigger_word": "kompreni",
+        "title": "第8課:対格 -N(目的語)",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "語尾 -N は直接目的語(動作を受ける人や",
+                    "もの)の印。日本語の「を」にあたります。",
+                    "",
+                    "La kato vidas la hundon.              1を押す",
+                    "= 猫が犬を見ています。",
+                    "La hundo vidas la katon.",
+                    "= 犬が猫を見ています。",
+                    "",
+                    "-n が「見られる側」を示すので、語順を",
+                    "入れ替えることもできます:",
+                    "La hundon vidas la kato.              2を押す",
+                    "= 猫が犬を見ています。(やはり!)",
+                    "",
+                    "ESTAS(〜である)の後に -N は不要:      3を押す",
+                    "Tio estas bona ideo.",
+                    "= それはいい考えです。"
+                ],
+                "pronunciation": "Leciono dek tri",
+                "pronunciation_mappings": {
+                    "1": "La kato vidas la hundon. La hundo vidas la katon.",
+                    "2": "La hundon vidas la kato.",
+                    "3": "Tio estas bona ideo."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "代名詞にも -N が付きます:             1を押す",
+                    "   mi → min    vi → vin    li → lin",
+                    "   ŝi → ŝin    ĝi → ĝin    ni → nin",
+                    "   ili → ilin",
+                    "   Mi komprenas vin. = あなたを理解します。",
+                    "",
+                    "KIO・TIO・ĈIO も同じ:                 2を押す",
+                    "   kio → kion    tio → tion    ĉio → ĉion",
+                    "   Kion vi faras?     = 何をしていますか?",
+                    "   Mi komprenas ĉion. = 全部わかります。",
+                    "",
+                    "形容詞にも付きます:                   3を押す",
+                    "   Mi havas bonan amikon.",
+                    "   = いい友だちがいます。",
+                    "",
+                    "複数なら -J、その後に -N:             4を押す",
+                    "   Mi havas bonajn amikojn.",
+                    "   = いい友だちが何人かいます。"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Min. Vin. Lin. Ŝin. Ĝin. Nin. Ilin. Mi komprenas vin.",
+                    "2": "Kion vi faras? Mi komprenas ĉion.",
+                    "3": "Mi havas bonan amikon.",
+                    "4": "Mi havas bonajn amikojn."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "071",
+        "trigger_word": "kiom",
+        "title": "第9課:分量を表す DA",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "DA は分量と、その中身をつなぎます。",
+                    "DA の後は名詞そのまま:LA は付けず、",
+                    "-N も決して付けません。",
+                    "",
+                    "どれだけ?いくつ? = KIOM DA:           1を押す",
+                    "   Kiom da tempo vi havas?",
+                    "   = 時間はどれくらいありますか?",
+                    "   Kiom da amikoj vi havas?",
+                    "   = 友だちは何人いますか?",
+                    "",
+                    "分量 + DA + もの:                     2を押す",
+                    "   taso da kafo     = カップ1杯のコーヒー",
+                    "   glaso da akvo    = コップ1杯の水",
+                    "   multe da tempo   = たくさんの時間",
+                    "   iom da pano      = 少しのパン",
+                    "   pli da teo       = もっと多くのお茶"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Kiom da tempo vi havas? Kiom da amikoj vi havas?",
+                    "2": "Taso da kafo. Glaso da akvo. Multe da tempo. Iom da pano. Pli da teo."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "-N は分量の語に付け、",
+                    "DA の後の語には決して付けません:      1を押す",
+                    "   Mi trinkas tason da kafo.",
+                    "   = コーヒーを1杯飲みます。",
+                    "   Mi havas multe da amikoj.",
+                    "   = 友だちが大勢います。(multe: -n なし)",
+                    "",
+                    "DA の後に LA は付けません:            2を押す",
+                    "   iom da kafo      = 少しのコーヒー",
+                    "   iom de la kafo   = そのコーヒーを少し",
+                    "   (特定のものなら DE + LA を使います。)"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Mi trinkas tason da kafo. Mi havas multe da amikoj.",
+                    "2": "Iom da kafo. Iom de la kafo."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "016",
+        "trigger_word": "mia",
+        "title": "第10課:所有代名詞",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "人称代名詞に -A を付けると持ち主を表します:",
+                    "mi(わたし) → mia(わたしの)。日本語の「の」!",
+                    "",
+                    "所有代名詞:                           1を押す",
+                    "  mia = わたしの    nia  = わたしたちの",
+                    "  via = あなたの    ilia = 彼らの",
+                    "  lia = 彼の",
+                    "  ŝia = 彼女の",
+                    "  ĝia = それの",
+                    "",
+                    "例文:                                 2を押す",
+                    "Mia domo estas granda. = わたしの家は大きい。",
+                    "Kie estas via libro?   = あなたの本はどこ?",
+                    "Ŝia amiko venas.       = 彼女の友だちが来る。",
+                    "",
+                    "形容詞と同じく -J も -N も付きます:   3を押す",
+                    "miaj libroj          = わたしの本(複数)",
+                    "Mi amas mian urbon.  = わたしの町が大好き。"
+                ],
+                "pronunciation": "Leciono dek ses",
+                "pronunciation_mappings": {
+                    "1": "Mia. Via. Lia. Ŝia. Ĝia. Nia. Ilia.",
+                    "2": "Mia domo estas granda. Kie estas via libro? Ŝia amiko venas.",
+                    "3": "Miaj libroj. Mi amas mian urbon."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "017",
+        "trigger_word": "mem",
+        "title": "第11課:再帰代名詞と MEM",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "再帰代名詞は主語自身を指し返す語です。",
+                    "彼・彼女・それ・彼らには、エスペラントでは",
+                    "SI(目的語なら SIN)と SIA を使います:",
+                    "",
+                    "sin  = 自分を(彼・彼女・それ・彼ら自身を)",
+                    "sia  = 自分の(彼・彼女・それ・彼ら自身の)",
+                    "",
+                    "例文:                                 1を押す",
+                    "Li lavas sin.      = 彼は体を洗います。",
+                    "Ŝi vidas sin.      = 彼女は自分の姿を見ます。",
+                    "Li parolas pri si. = 彼は自分の話をします。",
+                    "",
+                    "SIA か LIA か?                        2を押す",
+                    "Li amas sian hundon.",
+                    "→ 彼は自分の犬を愛している。",
+                    "Li amas lian hundon.",
+                    "→ 彼は(別の男性の)犬を愛している。"
+                ],
+                "pronunciation": "Leciono dek sep",
+                "pronunciation_mappings": {
+                    "1": "Li lavas sin. Ŝi vidas sin. Li parolas pri si.",
+                    "2": "Li amas sian hundon. Li amas lian hundon."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "mi・vi・ni はそれぞれ自分の形で:      1を押す",
+                    "Mi lavas min.      = わたしは体を洗います。",
+                    "Vi lavas vin.      = あなたは体を洗います。",
+                    "Ni vidas nin.      = 自分たちの姿を見ます。",
+                    "Mi amas mian hundon. = わたしの犬が大好き。",
+                    "('Mi lavas sin' とは決して言いません!)",
+                    "",
+                    "MEM = 「自身」、強調のためだけ:       2を押す",
+                    "Mi mem faras tion. = 自分でやっています。",
+                    "Vi mem diras tion! = 自分でそう言ってるよ!",
+                    "la urbo mem        = 町そのもの",
+                    "",
+                    "MEM は再帰ではなく、形も決して変わり",
+                    "ません:-n も -j も付きません。"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Mi lavas min. Vi lavas vin. Ni vidas nin. Mi amas mian hundon.",
+                    "2": "Mi mem faras tion. Vi mem diras tion! La urbo mem."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "003",
+        "trigger_word": "alia",
+        "title": "第12課:形容詞と複数形",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "エスペラントの形容詞はすべて -a で",
+                    "終わります。ひと目で見分けられます!",
+                    "",
+                    "よく使う形容詞:                       1を押す",
+                    "",
+                    "bona   = 良い        malbona   = 悪い",
+                    "granda = 大きい      malgranda = 小さい",
+                    "bela   = 美しい      nova      = 新しい",
+                    "alia   = ほかの      sama      = 同じ",
+                    "",
+                    "語順 -- どちらでも OK:                2を押す",
+                    "",
+                    "bona libro  = 良い本(ふつう)",
+                    "libro bona  = 良い本(これも正しい!)",
+                    "",
+                    "コツ:名詞を説明して -a で終われば",
+                    "形容詞。簡単です!"
+                ],
+                "pronunciation": "Leciono tri",
+                "pronunciation_mappings": {
+                    "1": "Bona. Malbona. Granda. Malgranda. Bela. Nova. Alia. Sama.",
+                    "2": "Bona libro. Libro bona."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "複数形:名詞にも形容詞にも -J を付けます。",
+                    "",
+                    "名詞(-o が -oj に):                   1を押す",
+                    "amiko   → amikoj    = 友だち(複数)",
+                    "libro   → libroj    = 本(複数)",
+                    "hundo   → hundoj    = 犬(複数)",
+                    "(-oj は「オイ」、-aj は「アイ」と発音)",
+                    "",
+                    "形容詞も一致させます:                 2を押す",
+                    "bona amiko    → bonaj amikoj",
+                    "granda libro  → grandaj libroj",
+                    "La grandaj hundoj kuras. = 大きな犬たちが走る",
+                    "",
+                    "目的語なら -J が先、次に -N:          3を押す",
+                    "Mi legas novajn librojn.",
+                    "= 新しい本を(何冊も)読んでいます。"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Amiko. Amikoj. Libro. Libroj. Hundo. Hundoj.",
+                    "2": "Bonaj amikoj. Grandaj libroj. La grandaj hundoj kuras.",
+                    "3": "Mi legas novajn librojn."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "014",
+        "trigger_word": "en",
+        "title": "第13課:方向の -N",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "語尾 -N にはもう1つ仕事があります:",
+                    "「方向」、つまりある場所へ向かう動きです。",
+                    "",
+                    "「〜にいる」と「〜へ行く」:           1を押す",
+                    "Mi estas en la domo.  = 家の中にいます。",
+                    "Mi iras en la domon.  = 家の中へ入ります。",
+                    "",
+                    "La akvo estas en la glaso.            2を押す",
+                    "= 水はコップに入っています。",
+                    "Mi verŝas akvon en la glason.",
+                    "= コップへ水を注ぎます。",
+                    "",
+                    "en、sur、sub、apud などの後の -n は、",
+                    "その場所「へ」入る動きを示します:     3を押す",
+                    "sur la tablo  = テーブルの上に(ある)",
+                    "sur la tablon = テーブルの上へ(動く)"
+                ],
+                "pronunciation": "Leciono dek kvar",
+                "pronunciation_mappings": {
+                    "1": "Mi estas en la domo. Mi iras en la domon.",
+                    "2": "La akvo estas en la glaso. Mi verŝas akvon en la glason.",
+                    "3": "Sur la tablo. Sur la tablon."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "前置詞なし?-N だけで方向を表せます:   1を押す",
+                    "Mi iras hejmen.     = 家へ帰ります。",
+                    "Ni iras Londonon.   = ロンドンへ行きます。",
+                    "(= Ni iras al Londono. AL の後は -n なし。)",
+                    "",
+                    "どこへ? = KIEN?                       2を押す",
+                    "Kien vi iras?       = どこへ行くのですか?",
+                    "Mi iras tien.       = そこへ行きます。",
+                    "",
+                    "AL、ĜIS、EL、DE には -n を付けません:",
+                    "もともと方向を表す語だからです。      3を押す",
+                    "Mi iras al la urbo. = 町へ行きます。",
+                    "",
+                    "en/sur の後に -n なし?もうそこにいます!"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Mi iras hejmen. Ni iras Londonon. Ni iras al Londono.",
+                    "2": "Kien vi iras? Mi iras tien.",
+                    "3": "Mi iras al la urbo."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "018",
+        "trigger_word": "kun",
+        "title": "第14課:前置詞",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 3,
+                "content": [
+                    "前置詞は語と語の関係を示します。",
+                    "エスペラントでは形が決して変わりません!",
+                    "",
+                    "場所と方向:",
+                    "en   = 〜の中に       sur    = 〜の上に",
+                    "sub  = 〜の下に       super  = 〜の上方に",
+                    "apud = 〜のそばに     inter  = 〜の間に",
+                    "ĉe   = 〜のところに   ĉirkaŭ = 〜の周りに",
+                    "",
+                    "例文:                                 1を押す",
+                    "La kato estas sub la tablo.",
+                    "= 猫はテーブルの下にいます。",
+                    "Mi sidas apud vi.",
+                    "= あなたのそばに座っています。",
+                    "",
+                    "en/sur/sub/apud の後の -n は場所「へ」の",
+                    "動き。al、ĝis、el、de には -n なし。"
+                ],
+                "pronunciation": "Leciono dek ok",
+                "pronunciation_mappings": {
+                    "1": "La kato estas sub la tablo. Mi sidas apud vi."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 3,
+                "content": [
+                    "ほかの大事な前置詞:",
+                    "",
+                    "al   = 〜へ            de   = 〜から、〜の",
+                    "kun  = 〜と一緒に      sen  = 〜なしで",
+                    "por  = 〜のために      pri  = 〜について",
+                    "per  = 〜を使って      tra  = 〜を通って",
+                    "ĝis  = 〜まで          krom = 〜を除いて",
+                    "",
+                    "例文:                                 1を押す",
+                    "Mi iras al la parko.   = 公園へ行きます。",
+                    "La libro de mia amiko. = 友だちの本。",
+                    "Ni parolas pri vi.     = あなたの話をします。",
+                    "Ŝi venas kun sia frato.",
+                    "= 彼女は自分の兄弟と一緒に来ます。"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Mi iras al la parko. La libro de mia amiko. Ni parolas pri vi. Ŝi venas kun sia frato."
+                }
+            },
+            {
+                "page": 3,
+                "total_pages": 3,
+                "content": [
+                    "KUN(〜と)と PER(〜で)の違い:          1を押す",
+                    "Mi venas kun amiko.",
+                    "= 友だちと来ます。(一緒に)",
+                    "Mi skribas per komputilo.",
+                    "= パソコンで書きます。(道具として)",
+                    "",
+                    "JE は万能選手。ほかの前置詞が合わない",
+                    "ときに使います:                       2を押す",
+                    "Je la tria horo.  = 3時に。",
+                    "",
+                    "EL = 〜の中から外へ:                  3を押す",
+                    "Ŝi venas el la domo.",
+                    "= 彼女は家から出てきます。"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Mi venas kun amiko. Mi skribas per komputilo.",
+                    "2": "Je la tria horo.",
+                    "3": "Ŝi venas el la domo."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "015",
+        "trigger_word": "voli",
+        "title": "第15課:助動詞",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "助動詞は能力・願望・義務を表します。",
+                    "本動詞は不定形(-i で終わる形)の",
+                    "まま置きます。",
+                    "",
+                    "三大助動詞:",
+                    "povi  = 〜できる",
+                    "voli  = 〜したい",
+                    "devi  = 〜しなければならない",
+                    "",
+                    "例文:                                 1を押す",
+                    "Mi povas paroli.     = 話せます。",
+                    "Mi volas manĝi.      = 食べたいです。",
+                    "Ni devas lerni.      = 学ばねばなりません。",
+                    "",
+                    "組み立て:助動詞 + 不定形              2を押す",
+                    "Li povas veni morgaŭ. = 彼は明日来られます。",
+                    "",
+                    "不定形は決して変わりません!"
+                ],
+                "pronunciation": "Leciono dek kvin",
+                "pronunciation_mappings": {
+                    "1": "Mi povas paroli. Mi volas manĝi. Ni devas lerni.",
+                    "2": "Li povas veni morgaŭ."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "011",
+        "trigger_word": "estis",
+        "title": "第16課:過去形",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "過去の話は、動詞の語尾を -as から -is に",
+                    "変えるだけ。それだけです!",
+                    "",
+                    "現在形       →  過去形:               1を押す",
+                    "mi estas     →  mi estis   (です → でした)",
+                    "vi parolas   →  vi parolis (話す → 話した)",
+                    "li manĝas    →  li manĝis  (食べる → 食べた)",
+                    "",
+                    "語尾 -is はどの主語にも共通:",
+                    "mi estis     =  わたしは〜でした",
+                    "vi estis     =  あなたは〜でした",
+                    "li estis     =  彼は〜でした",
+                    "ni estis     =  わたしたちは〜でした",
+                    "ili estis    =  彼らは〜でした",
+                    "",
+                    "形は全員に1つ。不規則動詞はゼロ!",
+                    "-as を -is に置き換えれば完成です。"
+                ],
+                "pronunciation": "Leciono dek unu",
+                "pronunciation_mappings": {
+                    "1": "Mi estas. Mi estis. Vi parolas. Vi parolis. Li manĝas. Li manĝis."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "012",
+        "trigger_word": "estos",
+        "title": "第17課:未来形",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "未来形は、動詞の語尾を -os に変えます。",
+                    "それだけ!",
+                    "",
+                    "現在形       →  未来形:               1を押す",
+                    "mi estas     →  mi estos   (〜だろう)",
+                    "vi parolas   →  vi parolos (話すだろう)",
+                    "li manĝas    →  li manĝos  (食べるだろう)",
+                    "",
+                    "3つの時制を並べると:                  2を押す",
+                    "mi parolis   =  話した      (過去 -is)",
+                    "mi parolas   =  話す        (現在 -as)",
+                    "mi parolos   =  話すだろう  (未来 -os)",
+                    "",
+                    "3つの時制に3つの語尾。主語が何でも",
+                    "いつも同じ。エスペラントの動詞の活用は",
+                    "驚くほどシンプルです!"
+                ],
+                "pronunciation": "Leciono dek du",
+                "pronunciation_mappings": {
+                    "1": "Mi estas. Mi estos. Vi parolas. Vi parolos. Li manĝas. Li manĝos.",
+                    "2": "Mi parolis. Mi parolas. Mi parolos."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "029",
+        "trigger_word": "estus",
+        "title": "第18課:仮定形 -US",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "仮定形(-us)は「〜だろうに」や、",
+                    "仮の話を表します。丁寧なお願いや",
+                    "想像上の場面に使います。",
+                    "",
+                    "作り方:                               1を押す",
+                    "時制の語尾を -us に置き換えるだけ:",
+                    "estas → estus     (である → であろう)",
+                    "havas → havus     (持つ → 持つだろうに)",
+                    "iras  → irus      (行く → 行くだろうに)",
+                    "",
+                    "丁寧なお願い:                         2を押す",
+                    "Mi volus kafon.    = コーヒーをいただけたら。",
+                    "Ĉu vi povus helpi? = 手伝っていただけますか?",
+                    "",
+                    "仮定の話:                             3を押す",
+                    "Se mi estus riĉa, mi vojaĝus.",
+                    "(もしお金持ちだったら、旅をするのに。)"
+                ],
+                "pronunciation": "Leciono dudek naŭ",
+                "pronunciation_mappings": {
+                    "1": "Estas. Estus. Havas. Havus. Iras. Irus.",
+                    "2": "Mi volus kafon. Ĉu vi povus helpi?",
+                    "3": "Se mi estus riĉa, mi vojaĝus."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "010",
+        "trigger_word": "unu",
+        "title": "第19課:数の体系",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "エスペラントの数は完全に規則的。しかも",
+                    "組み立て方は日本語とまったく同じです!",
+                    "",
+                    "基本の数:                             1を押す",
+                    "",
+                    "0 = nul    5 = kvin    10 = dek",
+                    "1 = unu    6 = ses     11 = dek unu",
+                    "2 = du     7 = sep     12 = dek du",
+                    "3 = tri    8 = ok      13 = dek tri",
+                    "4 = kvar   9 = naŭ     14 = dek kvar",
+                    "",
+                    "大きな数を組み立てる:                 2を押す",
+                    "20 = dudek(du + dek = 二・十)",
+                    "30 = tridek、40 = kvardek …",
+                    "100 = cent、1000 = mil",
+                    "",
+                    "23 = dudek tri(二十三)。例外なし!"
+                ],
+                "pronunciation": "Leciono dek",
+                "pronunciation_mappings": {
+                    "1": "Nul. Unu. Du. Tri. Kvar. Kvin. Ses. Sep. Ok. Naŭ. Dek.",
+                    "2": "Dudek. Tridek. Kvardek. Cent. Mil. Dudek tri."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "順序数(第1、第2、第3 …):              1を押す",
+                    "数に -a を付けるだけ。形容詞になります!",
+                    "",
+                    "unua    = 第1の       kvara   = 第4の",
+                    "dua     = 第2の       kvina   = 第5の",
+                    "tria    = 第3の       deka    = 第10の",
+                    "",
+                    "大きな順序数:",
+                    "dudek-unua = 第21の",
+                    "centa = 第100の",
+                    "",
+                    "文の中で:                             2を押す",
+                    "Ĉi tio estas mia unua leciono.",
+                    "(これはわたしの最初のレッスンです。)",
+                    "Hodiaŭ estas mia tria tago ĉi tie.",
+                    "(今日はここでの3日目です。)",
+                    "",
+                    "形容詞と同じく複数も:unuaj paŝoj = 最初の一歩"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Unua. Dua. Tria. Kvara. Kvina. Deka.",
+                    "2": "Ĉi tio estas mia unua leciono. Hodiaŭ estas mia tria tago ĉi tie."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "009",
+        "trigger_word": "malbona",
+        "title": "第20課:反対の接頭辞 MAL-",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "MAL- はエスペラント屈指の強力な道具。",
+                    "語の前に付けるだけで、その正反対の",
+                    "意味になります!",
+                    "",
+                    "形容詞:                               1を押す",
+                    "bona → malbona      = 良い → 悪い",
+                    "granda → malgranda  = 大きい → 小さい",
+                    "nova → malnova      = 新しい → 古い(もの)",
+                    "juna → maljuna      = 若い → 年老いた(人)",
+                    "alta → malalta      = 高い → 低い",
+                    "",
+                    "動詞にも:                             2を押す",
+                    "fermi → malfermi    = 閉める → 開ける",
+                    "ami → malami        = 愛する → 憎む",
+                    "",
+                    "覚える語彙が半分になります!",
+                    "bona を覚えれば malbona はタダ!"
+                ],
+                "pronunciation": "Leciono naŭ",
+                "pronunciation_mappings": {
+                    "1": "Bona. Malbona. Granda. Malgranda. Nova. Malnova. Juna. Maljuna. Alta. Malalta.",
+                    "2": "Fermi. Malfermi. Ami. Malami."
+                }
+            }
+        ]
+    }
 ]

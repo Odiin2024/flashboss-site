@@ -1,139 +1,76 @@
 [
   {
-    "lesson_id": "022",
-    "trigger_word": "tortuga",
-    "trigger_card_number": 30,
-    "title": "第22课：虚拟式深度解析",
+    "lesson_id": "023",
+    "trigger_word": "nacionalidad",
+    "trigger_card_number": 19,
+    "title": "第23课：虚拟式未完成过去时",
     "header_color": "yellow",
     "pages": [
       {
         "page": 1,
-        "total_pages": 3,
+        "total_pages": 2,
         "content": [
-          "Core 已介绍虚拟式。现在，",
-          "让我们掌握触发条件。结构如下：",
-          "主句 + QUE + 虚拟式从句",
+          "虚拟式未完成过去时用于表达",
+          "过去的愿望、怀疑和假设。",
           "",
-          "愿望／请求：                            按 1",
-          "Quiero que vengas.",
-          "（我想让你来。）",
-          "Te pido que me ayudes.",
-          "（我请你帮我。）",
+          "构成方法——取第三人称复数简单过去时：    按 1",
+          "hablaron → habla-RA 或 habla-SE",
           "",
-          "情感表达：                              按 2",
-          "Me alegra que estés aquí.",
-          "（我很高兴你在这里。）",
-          "Es triste que no pueda venir.",
-          "（他／她不能来，真遗憾。）",
+          "-AR 动词：hablara, hablaras, hablara,",
+          "          habláramos, hablaran",
           "",
-          "关键：两个不同主语。",
-          "Quiero comer = 我想吃（无虚拟式）"
+          "-ER 动词：comiera, comieras, comiera,   按 2",
+          "          comiéramos, comieran",
+          "",
+          "-IR 动词：viviera, vivieras, viviera,",
+          "          viviéramos, vivieran",
+          "",
+          "RA 和 SE 两种形式都存在。",
+          "RA 形式在各地都是日常用法；",
+          "SE 形式（hablase）偏正式、书面。"
         ],
-        "pronunciation": "Lección veintidós",
+        "pronunciation": "Lección veintitrés",
         "pronunciation_mappings": {
-          "1": "quiero que vengas, te pido que me ayudes",
-          "2": "me alegra que estés aquí, es triste que no pueda venir"
+          "1": "Hablara. Hablaras. Hablara. Habláramos. Hablaran.",
+          "2": "Comiera. Comieras. Comiera. Comiéramos. Comieran."
         }
       },
       {
         "page": 2,
-        "total_pages": 3,
+        "total_pages": 2,
         "content": [
-          "怀疑／否定：                            按 1",
+          "表达过去愿望：                          按 1",
+          "Quería que vinieras.",
+          "（我希望你当时能来。）",
           "",
-          "No creo que sea verdad.",
-          "（我不认为那是真的。）",
-          "Dudo que lo sepa.",
-          "（我怀疑他／她知道。）",
+          "表达过去情感：                          按 2",
+          "Me sorprendió que dijera eso.",
+          "（他那样说让我很惊讶。）",
           "",
-          "虚拟式触发短语：",
+          "假设条件句（si 从句）：                 按 3",
+          "Si pudiera, lo haría.",
+          "（如果我能，我就做了。）",
           "",
-          "es importante que...（重要的是）",
-          "es necesario que...（有必要）",
-          "es posible que...（有可能）",
-          "es mejor que...（最好）",
-          "no es que...（并不是说）",
+          "COMO SI（好像）：                       按 4",
+          "Habla como si fuera experto.",
+          "（他说话的样子好像自己是专家。）",
           "",
-          "这些短语总会触发",
-          "下一句使用虚拟式。"
+          "OJALÁ + 虚拟式未完成过去时：",
+          "Ojalá pudiera volar.（但愿我能飞。）"
         ],
         "pronunciation_mappings": {
-          "1": "no creo que sea verdad, dudo que lo sepa"
-        }
-      },
-      {
-        "page": 3,
-        "total_pages": 3,
-        "content": [
-          "特定连词之后：                          按 1",
-          "",
-          "antes de que（在……之前）",
-          "para que（以便）",
-          "a menos que（除非）",
-          "sin que（没有……就）",
-          "",
-          "Llámame antes de que salgas.            按 2",
-          "（你离开前给我打电话。）",
-          "",
-          "Estudio para que mis padres estén orgullosos.",
-          "（我学习是为了让父母感到骄傲。）",
-          "",
-          "这些连词表达目的、",
-          "条件或某事发生前的",
-          "时间——皆含不确定性，",
-          "因此使用虚拟式。"
-        ],
-        "pronunciation_mappings": {
-          "1": "antes de que, para que, a menos que, sin que",
-          "2": "llámame antes de que salgas, estudio para que mis padres estén orgullosos"
-        }
-      }
-    ]
-  },
-  {
-    "lesson_id": "023",
-    "trigger_word": "sabor",
-    "trigger_card_number": 78,
-    "title": "第23课：关系从句",
-    "header_color": "yellow",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "关系从句用于连接句子。西班牙语",
-          "使用以下关系代词：",
-          "",
-          "QUE — 通用连接词：                      按 1",
-          "La persona que vi.（我见到的那个人。）",
-          "El libro que compré.（我买的那本书。）",
-          "",
-          "QUIEN — 用于指人：                      按 2",
-          "La mujer con quien hablé.",
-          "（和我说话的那位女士。）",
-          "",
-          "DONDE — 用于指地点：                    按 3",
-          "La ciudad donde nací.",
-          "（我出生的那座城市。）",
-          "",
-          "LO QUE — 用于指概念或想法：             按 4",
-          "Lo que dices es verdad.",
-          "（你说的是真的。）"
-        ],
-        "pronunciation": "Lección veintitrés",
-        "pronunciation_mappings": {
-          "1": "la persona que vi, el libro que compré",
-          "2": "la mujer con quien hablé",
-          "3": "la ciudad donde nací",
-          "4": "lo que dices es verdad"
+          "1": "Quería que vinieras.",
+          "2": "Me sorprendió que dijera eso.",
+          "3": "Si pudiera, lo haría.",
+          "4": "Habla como si fuera experto. Ojalá pudiera volar."
         }
       }
     ]
   },
   {
     "lesson_id": "024",
-    "trigger_word": "descuento",
-    "trigger_card_number": 134,
+    "trigger_word": "patata",
+    "trigger_card_number": 30,
     "title": "第24课：比较级及其他",
     "header_color": "yellow",
     "pages": [
@@ -162,10 +99,10 @@
         ],
         "pronunciation": "Lección veinticuatro",
         "pronunciation_mappings": {
-          "1": "ella es más alta que yo",
-          "2": "este libro es menos interesante que el otro",
-          "3": "soy tan alto como tú",
-          "4": "trabajo tanto como ella"
+          "1": "Ella es más alta que yo.",
+          "2": "Este libro es menos interesante que el otro.",
+          "3": "Soy tan alto como tú.",
+          "4": "Trabajo tanto como ella."
         }
       },
       {
@@ -186,23 +123,84 @@
           "不规则比较级：                          按 2",
           "bueno → mejor（更好／最好）",
           "malo → peor（更糟／最糟）",
-          "grande → mayor（年长／更大）",
-          "pequeño → menor（年幼／更小）",
+          "grande → mayor（年长；尺寸用 más grande）",
+          "pequeño → menor（年幼；尺寸用 más pequeño）",
           "",
           "Ella es mayor que yo.（她比我年长。）"
         ],
         "pronunciation_mappings": {
-          "1": "es la ciudad más bonita del mundo, es el día menos ocupado",
-          "2": "mejor, peor, mayor, menor, ella es mayor que yo, es el mejor restaurante de la ciudad"
+          "1": "Es la ciudad más bonita del mundo. Es el día menos ocupado.",
+          "2": "Mejor. Peor. Mayor. Menor. Ella es mayor que yo."
         }
       }
     ]
   },
   {
     "lesson_id": "025",
+    "trigger_word": "sabor",
+    "trigger_card_number": 47,
+    "title": "第25课：关系从句",
+    "header_color": "yellow",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "关系从句用于连接句子。西班牙语",
+          "使用以下关系代词：",
+          "QUE — 通用连接词：                      按 1",
+          "La persona que vi.（我见到的那个人。）",
+          "El libro que compré.（我买的那本书。）",
+          "",
+          "QUIEN — 指人，用在介词后：              按 2",
+          "La mujer con quien hablé.",
+          "（和我说话的那位女士。）",
+          "错误：la persona quien vi → que vi",
+          "",
+          "DONDE — 用于指地点：                    按 3",
+          "La ciudad donde nací.",
+          "（我出生的那座城市。）",
+          "",
+          "LO QUE — 用于指概念或想法：             按 4",
+          "Lo que dices es verdad.",
+          "（你说的是真的。）"
+        ],
+        "pronunciation": "Lección veinticinco",
+        "pronunciation_mappings": {
+          "1": "La persona que vi. El libro que compré.",
+          "2": "La mujer con quien hablé.",
+          "3": "La ciudad donde nací.",
+          "4": "Lo que dices es verdad."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "介词 + EL/LA/LOS/LAS QUE：              按 1",
+          "El concierto al que fui.",
+          "（我去过的那场音乐会。）",
+          "La casa en la que vivo.",
+          "（我住的那栋房子。）",
+          "",
+          "介词总是放在关系代词前面，",
+          "不会像英语那样留在句末。",
+          "",
+          "a + el que 缩合为 al que。",
+          "指人时两种都可以：",
+          "la mujer con quien / con la que hablé"
+        ],
+        "pronunciation_mappings": {
+          "1": "El concierto al que fui. La casa en la que vivo."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "026",
     "trigger_word": "hoja",
-    "trigger_card_number": 195,
-    "title": "第25课：高级 SER 与 ESTAR 用法",
+    "trigger_card_number": 164,
+    "title": "第26课：高级 SER 与 ESTAR 用法",
     "header_color": "yellow",
     "pages": [
       {
@@ -220,19 +218,110 @@
           "La puerta está cerrada.",
           "（门关着。）",
           "",
-          "La ventana fue rota por el niño.        按 3",
-          "（窗户被那孩子打破了。）",
-          "La ventana está rota.",
-          "（窗户是破的。）",
-          "",
-          "Ser = 打破这个动作发生了（事件）",
-          "Estar = 现在处于破损状态（现状）"
+          "同一动词，事件还是状态：                按 3",
+          "La carta fue escrita por mi abuela.",
+          "（这封信是我祖母写的。）",
+          "→ ser：写信这件事发生了（事件）",
+          "La carta está escrita a mano.",
+          "（这封信是手写的。）",
+          "→ estar：信现在的样子（状态）"
         ],
-        "pronunciation": "Lección veinticinco",
+        "pronunciation": "Lección veintiséis",
         "pronunciation_mappings": {
-          "1": "la casa fue construida en mil novecientos noventa",
-          "2": "la puerta está cerrada",
-          "3": "la ventana fue rota por el niño, la ventana está rota"
+          "1": "La casa fue construida en mil novecientos noventa.",
+          "2": "La puerta está cerrada.",
+          "3": "La carta fue escrita por mi abuela. La carta está escrita a mano."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "027",
+    "trigger_word": "mosca",
+    "trigger_card_number": 236,
+    "title": "第27课：虚拟式深度解析",
+    "header_color": "yellow",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "Core 已介绍虚拟式。现在，",
+          "让我们掌握触发条件。结构如下：",
+          "主句 + QUE + 虚拟式从句",
+          "",
+          "愿望／请求：                            按 1",
+          "Quiero que vengas.",
+          "（我想让你来。）",
+          "Te pido que me ayudes.",
+          "（我请你帮我。）",
+          "",
+          "情感表达：                              按 2",
+          "Me alegra que estés aquí.",
+          "（我很高兴你在这里。）",
+          "Es triste que no pueda venir.",
+          "（他／她不能来，真遗憾。）",
+          "",
+          "关键：两个不同主语。",
+          "Quiero comer = 我想吃（无虚拟式）"
+        ],
+        "pronunciation": "Lección veintisiete",
+        "pronunciation_mappings": {
+          "1": "Quiero que vengas. Te pido que me ayudes.",
+          "2": "Me alegra que estés aquí. Es triste que no pueda venir."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "怀疑／否定：                            按 1",
+          "",
+          "No creo que sea verdad.",
+          "（我不认为那是真的。）",
+          "Dudo que lo sepa.",
+          "（我怀疑他／她知道。）",
+          "",
+          "虚拟式触发短语：",
+          "",
+          "es importante que...（重要的是）",
+          "es necesario que...（有必要）",
+          "es posible que...（有可能）",
+          "es mejor que...（最好）",
+          "no es que...（并不是说）",
+          "",
+          "这些短语总会触发",
+          "下一句使用虚拟式。"
+        ],
+        "pronunciation_mappings": {
+          "1": "No creo que sea verdad. Dudo que lo sepa."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "特定连词之后：                          按 1",
+          "",
+          "antes de que（在……之前）",
+          "para que（以便）",
+          "a menos que（除非）",
+          "sin que（没有……就）",
+          "",
+          "Llámame antes de que salgas.            按 2",
+          "（你离开前给我打电话。）",
+          "",
+          "Estudio para que mis padres estén orgullosos.",
+          "（我学习是为了让父母感到骄傲。）",
+          "",
+          "这些连词表达目的、",
+          "条件或某事发生前的",
+          "时间——皆含不确定性，",
+          "因此使用虚拟式。"
+        ],
+        "pronunciation_mappings": {
+          "1": "Antes de que. Para que. A menos que. Sin que.",
+          "2": "Llámame antes de que salgas. Estudio para que mis padres estén orgullosos."
         }
       }
     ]

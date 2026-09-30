@@ -1,74 +1,176 @@
 [
   {
-    "lesson_id": "057",
-    "trigger_word": "dankema se",
-    "title": "第57课：后缀「-AD-」",
+    "lesson_id": "051",
+    "trigger_word": "rekomendo",
+    "title": "第63课：前缀「EKS-」",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "后缀 -AD- 表示“持续动作”或",
-          "“重复动作”。它强调的是持续时间或",
-          "进行中的过程，而非单一行为。",
+          "前缀 EKS- 表示「前任的、原先的」：",
+          "指不再担任那个角色的人。",
           "",
-          "从动词到持续动作：",
-          "paroli  → parolado    = 说话 → 讲话（持续）",
-          "kanti   → kantado     = 唱歌 → 歌唱（持续）",
-          "labori  → laborado    = 工作 → 劳作（持续）",
-          "lerni   → lernado     = 学习 → 学习（持续）",
+          "前任角色：                                按 1",
+          "edzo       → eksedzo       = 前夫",
+          "prezidanto → eksprezidanto = 前总统",
+          "membro     → eksmembro     = 前成员",
+          "studento   → eksstudento   = 以前的学生",
           "",
-          "区别在于：",
-          "parolo   = 一次演讲（单次事件）",
-          "parolado = 讲话（持续的行为）",
+          "EKS- 也可以单独成词：                     按 2",
+          "eksa   = 以前的、前任的",
+          "eksiĝi = 辞职（离开职位）",
           "",
-          "实际用例：",
-          "La lernado daŭris du horojn.",
-          "（学习持续了两个小时。）",
-          "-AD- 把瞬间变为过程！"
+          "实际用法：                                按 3",
+          "Mia eksa instruisto skribis al mi rekomendon.",
+          "= 我以前的老师给我写了推荐信。"
         ],
-        "pronunciation": "Leciono kvindek sep"
+        "pronunciation_mappings": {
+          "1": "Edzo. Eksedzo. Prezidanto. Eksprezidanto. Membro. Eksmembro. Studento. Eksstudento.",
+          "2": "Eksa. Eksiĝi.",
+          "3": "Mia eksa instruisto skribis al mi rekomendon."
+        },
+        "pronunciation": "Leciono kvindek unu"
       }
     ]
   },
   {
     "lesson_id": "058",
-    "trigger_word": "kun estimo",
-    "title": "第58课：后缀“-IST-”",
+    "trigger_word": "atentigi",
+    "title": "第64课：介词 + 从句",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "后缀 -IST- 用于构成表示从事某事",
-          "作为职业或习惯之人的单词。",
-          "可理解为“专家”之意。",
+          "介词不能直接放在从句前面。要在两者",
+          "之间加 TIO，再接引导从句的词：",
+          "ke、kio(n)、ĉu、kiel……",
           "",
-          "职称构词示例：",
-          "arto    → artisto     = 艺术 → 艺术家",
-          "muziko  → muzikisto   = 音乐 → 音乐家",
-          "instrui → instruisto  = 教 → 教师",
-          "dento   → dentisto    = 牙齿 → 牙医",
-          "Esperanto → Esperantisto = 世界语者",
+          "PRI TIO, KE = 关于……这件事：              按 1",
+          "Ni parolis pri tio, ke vi venos.",
+          "= 我们谈到了你要来的事。",
           "",
-          "对比 -ANT- 与 -IST-：",
-          "lernanto = 学习者（正在学习的人）",
-          "lernisto = 学者（专业学习者）",
-          "instruanto = 正在教学的人",
-          "instruisto = 教师（职业身份）",
+          "PRI TIO, KION = 关于……的内容：            按 2",
+          "Mi pensas pri tio, kion vi diris.",
+          "= 我在想你说的话。",
           "",
-          "-IST- 暗含专业性或投入精神！"
+          "DE TIO, ĈU / KIEL：                       按 3",
+          "Tio dependas de tio, ĉu vi venos.",
+          "= 那取决于你来不来。",
+          "Ĉio dependas de tio, kiel ni agos.",
+          "= 一切都取决于我们怎么做。"
         ],
+        "pronunciation_mappings": {
+          "1": "Ni parolis pri tio, ke vi venos.",
+          "2": "Mi pensas pri tio, kion vi diris.",
+          "3": "Tio dependas de tio, ĉu vi venos. Ĉio dependas de tio, kiel ni agos."
+        },
         "pronunciation": "Leciono kvindek ok"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "绝不说 'pri kion'、'de ĉu'、'en kiel'：",
+          "介词后面要先加 TIO。",
+          "",
+          "每个词各有自己的格：                      按 1",
+          "Mi dankas vin pro tio, kion vi faris.",
+          "= 谢谢你所做的一切。",
+          "（tio：在 pro 之后，不加 -n；kion：",
+          "是 faris 的宾语）",
+          "",
+          "没有介词？就不需要 TIO：                  按 2",
+          "Mi scias, kion vi diris.",
+          "= 我知道你说了什么。",
+          "",
+          "实用连接语：                              按 3",
+          "malgraŭ tio, ke  = 尽管、即使",
+          "krom tio, ke     = 除了……之外",
+          "danke al tio, ke = 多亏、由于"
+        ],
+        "pronunciation_mappings": {
+          "1": "Mi dankas vin pro tio, kion vi faris.",
+          "2": "Mi scias, kion vi diris.",
+          "3": "Malgraŭ tio, ke. Krom tio, ke. Danke al tio, ke."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "057",
+    "trigger_word": "resumi",
+    "title": "第65课：介词 + -I",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "只有少数几个词后面可以直接跟 -I 动词。",
+          "最有用的几个：",
+          "",
+          "POR + -I = 为了……：                       按 1",
+          "Por resumi: ni havas tri solvojn.",
+          "= 总结一下：我们有三个解决办法。",
+          "",
+          "SEN + -I = 没有做……：                     按 2",
+          "Li foriris sen diri ion.",
+          "= 他什么也没说就走了。",
+          "",
+          "ANSTATAŬ + -I = 代替做……：                按 3",
+          "Skribu anstataŭ telefoni.",
+          "= 写信吧，而不是打电话。",
+          "",
+          "ANTAŬ OL + -I = 在做……之前：              按 4",
+          "Pensu antaŭ ol respondi.",
+          "= 回答之前先想一想。"
+        ],
+        "pronunciation_mappings": {
+          "1": "Por resumi: ni havas tri solvojn.",
+          "2": "Li foriris sen diri ion.",
+          "3": "Skribu anstataŭ telefoni.",
+          "4": "Pensu antaŭ ol respondi."
+        },
+        "pronunciation": "Leciono kvindek sep"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "其他介词（al、per、pri、dum、post、",
+          "pro……）后面绝不接 -I。要改用名词",
+          "或以 -E 结尾的分词：",
+          "",
+          "通过做…… = -ANTE（绝不用 per + -i）：     按 1",
+          "Ni lernas parolante.",
+          "= 我们通过说来学习。",
+          "",
+          "做完……之后 = post + 名词，或 -inte：      按 2",
+          "Post la kunveno ni manĝis.",
+          "= 开完会后，我们吃了饭。",
+          "Fininte la laboron, ni manĝis.",
+          "= 完成工作后，我们吃了饭。",
+          "",
+          "因为做…… = pro + 名词：                   按 3",
+          "Dankon pro via helpo!",
+          "= 谢谢你的帮助！"
+        ],
+        "pronunciation_mappings": {
+          "1": "Ni lernas parolante.",
+          "2": "Post la kunveno ni manĝis. Fininte la laboron, ni manĝis.",
+          "3": "Dankon pro via helpo!"
+        }
       }
     ]
   },
   {
     "lesson_id": "059",
-    "trigger_word": "lasta",
-    "title": "PARETO 1 完成！",
+    "trigger_word": "dankinda",
+    "title": "第66课：Pareto 1 完成！",
     "header_color": "gold",
     "repeat": false,
     "pages": [
@@ -76,24 +178,24 @@
         "page": 1,
         "total_pages": 1,
         "content": [
-          "恭喜你！你已完成 Pareto 1！",
+          "Gratulojn! 你已完成 Pareto 1！",
           "",
-          "你已掌握：",
-          "✓ 2000 个世界语单词（Core + P1）",
-          "✓ 所有世界语词缀（23 个后缀！）",
-          "✓ 所有分词与复合时态",
-          "✓ 完整的关联词系统",
+          "你学到了：",
+          "✓ 2000 个单词和短语（Core + P1）",
+          "✓ 全部十个前缀和大部分后缀",
+          "✓ 全部六种分词，以及 -o 和 -e 用法",
+          "✓ 完整的 KI-/TI- 关联词表",
           "",
-          "你的水平：相当于 B1-B2！",
+          "你的水平：大约 B1。",
           "",
           "你现在可以：",
-          "- 理解大部分世界语内容",
-          "- 准确表达复杂想法",
-          "- 构造几乎任何所需词汇",
-          "- 参与世界语社群活动",
+          "- 参与论坛和讨论",
+          "- 策划并参加世界语聚会",
+          "- 旅行并住在世界语东道主家中",
+          "- 撰写正式的信件和电子邮件",
           "",
-          "干得漂亮！庆祝你的成功吧！",
-          "（Excellent work! Celebrate your success!）"
+          "Bonega laboro! Pareto 2 atendas vin.",
+          "（干得好！Pareto 2 在等着你。）"
         ],
         "pronunciation": "Gratulojn"
       }

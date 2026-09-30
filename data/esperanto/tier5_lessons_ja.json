@@ -1,41 +1,130 @@
 [
   {
-    "lesson_id": "030",
-    "trigger_word": "bonvolu legi",
-    "title": "第30課:命令形 -U",
+    "lesson_id": "076",
+    "trigger_word": "lernado",
+    "title": "第35課:-AD-・-EC-・-UJ-",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "命令形(-u)は命令・お願い・願望に使います。",
-          "主語が誰でも同じ形 -- 活用はここでも不要です!",
+          "-AD- は動作を「活動」に変えます。",
+          "ずっと続くこと、または何度も",
+          "くり返し起こることを表します。",
           "",
-          "命令の作り方:不定形の -i を -u に変えるだけ",
-          "veni → Venu!       = 来て!",
-          "manĝi → Manĝu!     = 食べて!",
-          "rigardi → Rigardu! = 見て!",
-          "helpi → Helpu min! = 手伝って!",
+          "動詞 → 活動:                           1を押す",
+          "lerni   → lernado    = 学ぶ → 学習",
+          "kuri    → kurado     = 走る → ランニング",
+          "paroli  → parolado   = 話す → 演説",
+          "Regula lernado donas bonajn rezultojn.",
+          "= 規則正しい学習は良い結果を生みます。",
           "",
-          "丁寧なお願い:",
-          "Bonvolu sidiĝi.   = どうぞお座りください。",
-          "Atentu!           = 気をつけて!",
-          "",
-          "どの主語にも:",
-          "Ni iru!   = 行きましょう!(わたしたち)",
-          "Li venu.  = 彼に来てもらおう。(彼)",
-          "",
-          "「〜ましょう」も「〜して」も、-u ひとつ!"
+          "-EC- は「性質」を表す名詞に:           2を押す",
+          "amiko   → amikeco    = 友達 → 友情",
+          "afabla  → afableco   = 親切な → 親切さ",
+          "libera  → libereco   = 自由な → 自由",
+          "sana    → saneco     = 健康な → 健康",
+          "(belaĵo は美しい「もの」。beleco は",
+          "美しさそのものです。)"
         ],
-        "pronunciation": "Leciono tridek"
+        "pronunciation_mappings": {
+          "1": "Lerni. Lernado. Kuri. Kurado. Paroli. Parolado. Regula lernado donas bonajn rezultojn.",
+          "2": "Amiko. Amikeco. Afabla. Afableco. Libera. Libereco. Sana. Saneco."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "-UJ- は「入れ物」を表します:           1を押す",
+          "mono    → monujo     = お金 → 財布",
+          "sukero  → sukerujo   = 砂糖 → 砂糖入れ",
+          "salo    → salujo     = 塩 → 塩入れ",
+          "retpoŝto → retpoŝtujo = メール → 受信箱",
+          "",
+          "-UJ- は「国・土地」も表せます:         2を押す",
+          "Esperantujo = エスペラントの世界",
+          "古い国名に使われました: Francujo。",
+          "今の国名は -IO が好まれます: Francio、",
+          "Germanio、Italio。",
+          "",
+          "実際に使うと:                          3を押す",
+          "Mia monujo estas en la sako.",
+          "= 私の財布はかばんの中にあります。",
+          "Bonvenon al Esperantujo!",
+          "= エスペラントの世界へようこそ!"
+        ],
+        "pronunciation_mappings": {
+          "1": "Mono. Monujo. Sukero. Sukerujo. Salo. Salujo. Retpoŝto. Retpoŝtujo.",
+          "2": "Esperantujo. Francujo. Francio. Germanio. Italio.",
+          "3": "Mia monujo estas en la sako. Bonvenon al Esperantujo!"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "024",
+    "trigger_word": "samideano",
+    "title": "第36課:接尾辞 -AN-",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "接尾辞 -AN- は、グループの「一員」、",
+          "ある土地の「人」、人物や思想の",
+          "「信奉者」を表します。",
+          "",
+          "グループの一員:                        1を押す",
+          "klubo   → klubano    = クラブ → 会員",
+          "familio → familiano  = 家族 → 家族の一員",
+          "",
+          "その土地の人:                          2を押す",
+          "urbo    → urbano     = 都市 → 都会人",
+          "Usono   → usonano    = アメリカ → アメリカ人",
+          "Eŭropo  → eŭropano   = ヨーロッパ → 欧州人",
+          "(人を表す語は小文字で書きます。)",
+          "",
+          "信奉者:                                3を押す",
+          "Kristo  → kristano   = キリスト → キリスト教徒",
+          "Budho   → budhano    = 仏陀 → 仏教徒"
+        ],
+        "pronunciation_mappings": {
+          "1": "Klubo. Klubano. Familio. Familiano.",
+          "2": "Urbo. Urbano. Usono. Usonano. Eŭropo. Eŭropano.",
+          "3": "Kristo. Kristano. Budho. Budhano."
+        },
+        "pronunciation": "Leciono dudek kvar"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "エスペラントならではの言葉:            1を押す",
+          "samideano = 同志のエスペランティスト",
+          "sam-ide-an-o: 同じ理想(ideo)の一員",
+          "",
+          "Karaj samideanoj!",
+          "= 親愛なる同志の皆さん!",
+          "",
+          "ANO だけでも1つの単語:                 2を押す",
+          "ano = 会員、一員",
+          "Ŝi estas ano de nia klubo.",
+          "= 彼女は私たちのクラブの会員です。"
+        ],
+        "pronunciation_mappings": {
+          "1": "Samideano. Karaj samideanoj!",
+          "2": "Ano. Ŝi estas ano de nia klubo."
+        }
       }
     ]
   },
   {
     "lesson_id": "031",
-    "trigger_word": "amuza",
-    "title": "コア修了!",
+    "trigger_word": "decembro",
+    "title": "第37課:コア修了!",
     "header_color": "gold",
     "repeat": false,
     "pages": [
@@ -43,24 +132,24 @@
         "page": 1,
         "total_pages": 1,
         "content": [
-          "Gratulojn! エスペラント・コア修了です!",
+          "Gratulojn! エスペラント・コアを修了しました!",
           "",
           "あなたが成し遂げたこと:",
-          "✓ 最頻出のエスペラント単語1000語を習得",
-          "✓ 中核文法をマスター",
-          "✓ 語を組み立てる仕組みを理解",
-          "✓ 日常の場面で自分を表現できる",
+          "✓ 基本の単語と表現 1000語",
+          "✓ 基礎文法と語の組み立て",
+          "✓ 自分の毎日の生活について話せる",
           "",
-          "この先には:パレート拡張パックがさらに2000語",
-          "と 残りの接辞・分詞と上級文法レッスンを届けま",
-          "す。",
+          "次は: パレート1",
+          "フォーラム、議論、集い、旅行に役立つ",
+          "さらに1000の単語と表現、そして語の",
+          "組み立てキットの残りの部分です。",
           "",
-          "いまのあなたは:",
-          "- エスペランティストと本物の会話ができる",
-          "- やさしい本や記事を読める",
-          "- エスペラントの集い(kongresoj!)に参加できる",
-          "Bonega laboro! Vi estas sur la vojo!",
-          "(すばらしい!あなたはもう道の上です!)"
+          "いまできること:",
+          "- オンラインでエスペランティストと話す",
+          "- やさしい文章を読む",
+          "",
+          "Bonega laboro! Vi estas sur la ĝusta vojo!",
+          "(すばらしい!正しい道を進んでいます!)"
         ],
         "pronunciation": "Gratulojn"
       }

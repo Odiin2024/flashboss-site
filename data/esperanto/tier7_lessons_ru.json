@@ -2,13 +2,12 @@
   {
     "lesson_id": "040",
     "trigger_word": "unue",
+    "title": "УРОК 46: СУФФИКС «-OP-»",
     "header_color": "green",
-    "title": "УРОК 40: СУФФИКС «-OP-»",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
-        "pronunciation": "Leciono kvardek",
         "content": [
           "Суффикс -OP- образует наречия группировки",
           "из числительных. Он означает «группой по X».",
@@ -28,86 +27,147 @@
           "-on-  = доля (duono = половина)",
           "-op-  = группа (duope = парами)",
           "-OP- говорит, сколько вместе!"
-        ]
+        ],
+        "pronunciation": "Leciono kvardek"
       }
     ]
   },
   {
     "lesson_id": "041",
     "trigger_word": "tio dependas",
+    "title": "УРОК 47: ТАБЛИЦА КОРРЕЛЯТИВОВ",
     "header_color": "green",
-    "title": "УРОК 41: ТАБЛИЦА КОРРЕЛЯТИВОВ",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono kvardek unu",
+        "total_pages": 2,
         "content": [
-          "Эсперанто строит 45 слов по простой",
-          "сетке: 5 приставок × 9 окончаний. Освой",
-          "систему — и все 45 станут твоими.",
+          "В Core были четыре столбца таблицы:",
+          "-O, -U, -E и -AM (kio, kiu, kie, kiam).",
+          "Вот остальные пять:",
           "",
-          "KI-  = вопрос    TI-  = то/тот",
-          "I-   = некий     ĈI-  = каждый",
-          "NENI-= ни/никто",
+          "ПЯТЬ НОВЫХ СТОЛБЦОВ:                   Нажми 1",
+          "      какой   почему  как     чей     сколько",
+          "KI-   kia     kial    kiel    kies    kiom",
+          "TI-   tia     tial    tiel    ties    tiom",
+          "ĈI-   ĉia     ĉial    ĉiel    ĉies    ĉiom",
+          "NENI- nenia   nenial  neniel  nenies  neniom",
+          "I-    ia      ial     iel     ies     iom",
           "",
-          "-O вещь  -U лицо    -A вид",
-          "-E место -AM время  -AL причина",
-          "-EL как  -ES чей    -OM количество",
+          "Слова на -A принимают -J и -N, как",
+          "прилагательные:",
+          "Kian libron vi volas?                  Нажми 2",
+          "= Какую книгу ты хочешь?"
+        ],
+        "pronunciation_mappings": {
+          "1": "Kia? Tia. Kial? Tial. Kiel? Tiel. Kies? Ties. Kiom? Tiom.",
+          "2": "Kian libron vi volas?"
+        },
+        "pronunciation": "Leciono kvardek unu"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "ВОПРОСЫ:                               Нажми 1",
+          "Kia estas via urbo?",
+          "= Какой у тебя город?",
+          "Kial vi lernas Esperanton?",
+          "= Почему ты учишь эсперанто?",
+          "Kies telefono estas tiu?",
+          "= Чей это телефон?",
           "",
-          "kio = что?  tio = то       io = что-то",
-          "kie = где?  tie = там      ie = где-то",
-          "kiam = когда? ĉiam = всегда nenie = нигде",
+          "ОТВЕТЫ И НЕ ТОЛЬКО:                    Нажми 2",
+          "Tiel estas.      = Так и есть.",
+          "Neniel!          = Никак! Ни в коем случае!",
+          "Mi provis ĉiel.  = Я пробовал всячески.",
+          "tiom da homoj    = столько людей",
           "",
-          "Печатная таблица:",
-          "odiin2024.github.io/flashboss-site/source.html"
-        ]
+          "Таблица для печати (PDF) на нашем сайте:",
+          "odiin2024.github.io/flashboss-site/",
+          "correlative_table.pdf"
+        ],
+        "pronunciation_mappings": {
+          "1": "Kia estas via urbo? Kial vi lernas Esperanton? Kies telefono estas tiu?",
+          "2": "Tiel estas. Neniel! Mi provis ĉiel. Tiom da homoj."
+        }
       }
     ]
   },
   {
     "lesson_id": "042",
-    "trigger_word": "provi",
+    "trigger_word": "marŝi",
+    "title": "УРОК 48: ДЕЙСТВИТЕЛЬНЫЕ ПРИЧАСТИЯ",
     "header_color": "green",
-    "title": "УРОК 42: АКТИВНЫЕ ПАРТИЦИПИИ",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono kvardek du",
+        "total_pages": 2,
         "content": [
-          "Активные партиципии описывают того, кто",
-          "совершает действие, в разные времена.",
+          "В Core были -ANTA, -INTA, -ONTA. Их время",
+          "ОТНОСИТЕЛЬНО главного глагола:",
+          "A = одновременно, I = раньше, O = позже.",
           "",
-          "-ANT- = делает сейчас (настоящее)",
-          "legi → leganta = читающий (сейчас)",
-          "parolanta = говорящий (сейчас)",
+          "КАК ПРИЛАГАТЕЛЬНЫЕ (-A):               Нажми 1",
+          "marŝanta orkestro  = марширующий оркестр",
+          "la pasinta jaro    = прошлый год",
+          "la venonta kunveno = следующее собрание",
           "",
-          "-INT- = уже сделал (прошлое)",
-          "legi → leginta = прочитавший",
-          "parolinta = говоривший",
+          "КАК ЛЮДИ (-O):                         Нажми 2",
+          "la parolanto = говорящий",
+          "la gajninto  = победитель (кто выиграл)",
+          "la parolonto = следующий докладчик",
           "",
-          "-ONT- = собирается сделать (будущее)",
-          "legi → legonta = собирающийся читать",
-          "parolonta = собирающийся говорить",
+          "ВРЕМЯ ОТНОСИТЕЛЬНО:                    Нажми 3",
+          "Mi vidis marŝantan orkestron.",
+          "= Я видел марширующий оркестр."
+        ],
+        "pronunciation_mappings": {
+          "1": "Marŝanta orkestro. La pasinta jaro. La venonta kunveno.",
+          "2": "La parolanto. La gajninto. La parolonto.",
+          "3": "Mi vidis marŝantan orkestron."
+        },
+        "pronunciation": "Leciono kvardek du"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "С -E причастие говорит, что ПОДЛЕЖАЩЕЕ",
+          "делает одновременно (-ante), раньше",
+          "(-inte) или позже (-onte):",
           "",
-          "La leganta viro... = Читающий мужчина...",
-          "La leginta viro... = Мужчина, который",
-          "прочитал..."
-        ]
+          "-ANTE = ДЕЛАЯ:                         Нажми 1",
+          "Parolante, li ridetis.",
+          "= Говоря, он улыбался.",
+          "Lernante ĉiutage, ŝi progresis.",
+          "= Занимаясь каждый день, она продвинулась.",
+          "",
+          "-INTE = СДЕЛАВ:                        Нажми 2",
+          "Leginte la leteron, mi respondis.",
+          "= Прочитав письмо, я ответил.",
+          "",
+          "-ONTE = СОБИРАЯСЬ СДЕЛАТЬ:             Нажми 3",
+          "Forironte, li dankis ĉiujn.",
+          "= Собираясь уйти, он поблагодарил всех."
+        ],
+        "pronunciation_mappings": {
+          "1": "Parolante, li ridetis. Lernante ĉiutage, ŝi progresis.",
+          "2": "Leginte la leteron, mi respondis.",
+          "3": "Forironte, li dankis ĉiujn."
+        }
       }
     ]
   },
   {
     "lesson_id": "043",
-    "trigger_word": "okazi",
+    "trigger_word": "movi",
+    "title": "УРОК 49: ПРИСТАВКА «EK-»",
     "header_color": "green",
-    "title": "УРОК 43: ПРИСТАВКА «EK-»",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
-        "pronunciation": "Leciono kvardek tri",
         "content": [
           "Приставка EK- передаёт тот самый миг,",
           "когда что-то начинается — резкий старт.",
@@ -120,113 +180,153 @@
           "ЕЩЁ ПРИМЕРЫ:",
           "ekplori  = разрыдаться",
           "ekvidi   = заметить (внезапно увидеть)",
-          "ekridi   → расхохотаться",
+          "ekridi   = расхохотаться",
           "",
           "СРАВНИ:",
           "Li kuris. = Он бежал.",
           "Li ekkuris. = Он бросился бежать.",
           "",
           "EK- = толчок, с которого всё начинается!"
-        ]
+        ],
+        "pronunciation": "Leciono kvardek tri"
       }
     ]
   },
   {
     "lesson_id": "044",
     "trigger_word": "historia fono",
+    "title": "УРОК 50: ПРИСТАВКА «PRA-»",
     "header_color": "green",
-    "title": "УРОК 44: ПРИСТАВКА «PRA-»",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
-        "pronunciation": "Leciono kvardek kvar",
         "content": [
-          "Приставка PRA- означает «древний» или «пра-»",
-          "(через поколения). Она уходит в прошлое.",
+          "Приставка PRA- уходит далеко в прошлое:",
+          "ПРА- в семье и ДРЕВНИЙ, ПЕРВОБЫТНЫЙ",
+          "во всём остальном.",
           "",
-          "ПРЕДКИ (добавляй PRA- для давних):",
-          "avo     → praavo     = дед → прадед",
-          "avino   → praavino   = баба → прабабка",
+          "ПОКОЛЕНИЯ НАЗАД:                       Нажми 1",
+          "avo     → praavo     = дедушка → прадедушка",
+          "avino   → praavino   = бабушка → прабабушка",
           "patro   → prapatro   = отец → праотец",
-          "prapraavo = прапрадед",
+          "prapraavo = прапрадедушка",
           "",
-          "ДРЕВНИЙ:",
-          "homo    → prahomo    = homo → prahomo",
-          "arbaro  → praarbaro  = arbaro → praarbaro",
+          "ДАЛЕКО В ПРОШЛОМ:                      Нажми 2",
+          "historio → prahistorio = доисторическая эпоха",
+          "homo    → prahomo    = первобытный человек",
+          "arbaro  → praarbaro  = первобытный лес",
           "",
-          "В УПОТРЕБЛЕНИИ:",
+          "В РЕЧИ:                                Нажми 3",
           "Mia praavo venis el Francio.",
-          "(Мой прадед из Франции.)",
-          "",
-          "PRA- уходит в прошлое!"
-        ]
+          "= Мой прадед приехал из Франции."
+        ],
+        "pronunciation_mappings": {
+          "1": "Avo. Praavo. Avino. Praavino. Patro. Prapatro. Prapraavo.",
+          "2": "Historio. Prahistorio. Homo. Prahomo. Arbaro. Praarbaro.",
+          "3": "Mia praavo venis el Francio."
+        },
+        "pronunciation": "Leciono kvardek kvar"
       }
     ]
   },
   {
     "lesson_id": "045",
     "trigger_word": "hipoteze",
+    "title": "УРОК 51: СТРАДАТЕЛЬНЫЕ ПРИЧАСТИЯ",
     "header_color": "green",
-    "title": "УРОК 45: СТРАДАТЕЛЬНЫЕ ПРИЧАСТИЯ",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono kvardek kvin",
+        "total_pages": 2,
         "content": [
-          "Страдательные причастия описывают ТОГО,",
-          "на кого направлено действие, в разные",
-          "времена:",
-          "-AT- = совершается сейчас (настоящее)",
-          "legi → legata = читаемый",
-          "la legata libro = читаемая книга",
-          "-IT- = уже сделано (прошедшее)",
-          "legi → legita = прочитанный",
-          "la legita libro = прочитанная книга",
-          "-OT- = вот-вот будет сделано (будущее)",
-          "legi → legota = который вот-вот прочтут",
-          "la legota libro = книга, которую вот-вот",
-          "прочтут",
-          "ДЕЙСТВИТЕЛЬНОЕ И СТРАДАТЕЛЬНОЕ:",
-          "leganta viro = читающий мужчина",
-          "(он читает)",
-          "legita libro = прочитанная книга",
-          "(её прочитали)"
-        ]
+          "В Core были -ATA, -ITA, -OTA. С ESTI",
+          "они дают СТРАДАТЕЛЬНЫЙ ЗАЛОГ:",
+          "подлежащее принимает действие.",
+          "",
+          "КТО СДЕЛАЛ? СКАЖИ ЧЕРЕЗ DE:            Нажми 1",
+          "La letero estis skribita de Ana.",
+          "= Письмо было написано Аной.",
+          "",
+          "-ATA = ИДЁТ, -ITA = ГОТОВО:            Нажми 2",
+          "La ponto estas konstruata.",
+          "= Мост строится.",
+          "La ponto estas konstruita.",
+          "= Мост построен (готов).",
+          "",
+          "ПОДХОДИТ ЛЮБАЯ ФОРМА ESTI:             Нажми 3",
+          "La problemo estus solvita.",
+          "= Проблема была бы решена."
+        ],
+        "pronunciation_mappings": {
+          "1": "La letero estis skribita de Ana.",
+          "2": "La ponto estas konstruata. La ponto estas konstruita.",
+          "3": "La problemo estus solvita."
+        },
+        "pronunciation": "Leciono kvardek kvin"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "КАК ЛЮДИ (-O):                         Нажми 1",
+          "la invitito = приглашённый",
+          "la elektito = избранный",
+          "la akuzito  = обвиняемый",
+          "",
+          "С -E: «БУДУЧИ ...»:                    Нажми 2",
+          "kiel dirite   = как было сказано",
+          "kiel anoncite = как было объявлено",
+          "Invitite de amikoj, mi iris al la festo.",
+          "= Приглашённый друзьями, я пошёл на праздник.",
+          "",
+          "АКТИВ ИЛИ ПАССИВ?                      Нажми 3",
+          "leganta viro = мужчина, который читает",
+          "legata libro = книга, которую читают",
+          "leginta viro = мужчина, который прочитал",
+          "legita libro = книга, которую прочитали"
+        ],
+        "pronunciation_mappings": {
+          "1": "La invitito. La elektito. La akuzito.",
+          "2": "Kiel dirite. Kiel anoncite. Invitite de amikoj, mi iris al la festo.",
+          "3": "Leganta viro. Legata libro. Leginta viro. Legita libro."
+        }
       }
     ]
   },
   {
     "lesson_id": "046",
     "trigger_word": "mi misinformis",
+    "title": "УРОК 52: ПРИСТАВКА «MIS-»",
     "header_color": "green",
-    "title": "УРОК 46: ПРИСТАВКА «MIS-»",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
-        "pronunciation": "Leciono kvardek ses",
         "content": [
-          "MIS- работает точно как в английском:",
-          "«неправильно», «ошибочно».",
+          "Приставка MIS- значит НЕВЕРНО, по",
+          "ошибке, как английское mis-.",
           "",
-          "kompreni → miskompreni (непонять)",
-          "uzi      → misuzi      (использовать",
-          "                         неправильно)",
-          "diri     → misdiri     (ошибиться в словах)",
+          "ДЕЛАТЬ НЕВЕРНО:                        Нажми 1",
+          "kompreni → miskompreni = неверно понять",
+          "informi  → misinformi  = дезинформировать",
+          "uzi      → misuzi      = неправильно применять",
+          "kalkuli  → miskalkuli  = просчитаться",
           "",
-          "Применяется к любому глаголу — просто",
-          "добавь mis-. Вспомни английские слова:",
+          "В РЕЧИ:                                Нажми 2",
+          "Mi misinformis vin, pardonu!",
+          "= Я дал тебе неверные сведения, извини!",
+          "Tio estis miskompreno.",
+          "= Это было недоразумение.",
           "",
-          "misplace, misjudge, mislead, misread,",
-          "miscount, misquote, misfire, mislabel,",
-          "misinform, mismanage, mistrust, mishear",
-          "",
-          "Та же приставка, та же логика, тот же",
-          "инстинкт. Увидев mis- в эсперанто, ты",
-          "уже знаешь, что это значит."
-        ]
+          "Осторожно: MIS- (неверно) — не MAL-",
+          "(противоположность): недоверие = malfido."
+        ],
+        "pronunciation_mappings": {
+          "1": "Kompreni. Miskompreni. Informi. Misinformi. Uzi. Misuzi. Kalkuli. Miskalkuli.",
+          "2": "Mi misinformis vin, pardonu! Tio estis miskompreno."
+        },
+        "pronunciation": "Leciono kvardek ses"
       }
     ]
   }

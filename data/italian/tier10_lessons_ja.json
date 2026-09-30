@@ -2,7 +2,8 @@
   {
     "lesson_id": "031",
     "trigger_word": "supporre",
-    "trigger_card_number": 1809,
+    "trigger_card_number": 1808,
+    "title": "第39課: SE を使った仮定",
     "header_color": "magenta",
     "pages": [
       {
@@ -23,7 +24,7 @@
           "",
           "   Se fossi ricco, comprerei una",
           "   villa al mare.",
-          "   = お金持ちなら、海辺の家を買うのに。",
+          "   = お金持ちなら、海辺の別荘を買うのに。",
           "",
           "   Se parlassi italiano, capiresti.",
           "   = イタリア語が話せれば、わかるのに。"
@@ -36,51 +37,49 @@
         "content": [
           "仮定の3つのタイプ：",
           "",
-          "タイプ1 — 現実的・可能（基本）：",
-          "   se + 現在形、未来形",
-          "   Se piove, resto a casa.",
+          "タイプ1 — 現実的・可能（Core）：",
+          "   se + 現在形、現在形／未来形",
+          "   Se piove, resto (resterò) a casa.",
           "   （雨が降ったら、家にいます。）",
           "",
           "タイプ2 — 現在の非現実（今回）：",
           "   se + 接続法半過去、条件法現在",
           "   Se piovesse, resterei a casa.",
-          "   （雨が降ったら、家にいるでしょう。）",
+          "   （雨が降れば、家にいるのに。）",
           "",
-          "タイプ3 — 過去の非現実（パレート2）：",
+          "タイプ3 — 過去の非現実（Pareto 2）：",
           "   se + 接続法大過去、条件法過去",
           "   Se avesse piovuto, sarei restato.",
-          "   （雨が降っていたら、家にいたでしょう。）",
+          "   （雨が降っていたら、家にいたのに。）",
           "",
-          "今日はタイプ2が必要です。タイプ3は後でです。"
+          "今必要なのはタイプ2。タイプ3はまた後で。"
         ]
       }
-    ],
-    "title": "第31課：SE を使った仮定"
+    ]
   },
   {
     "lesson_id": "032",
     "trigger_word": "farcela",
-    "trigger_card_number": 1837,
+    "trigger_card_number": 1836,
+    "title": "第40課: 代名動詞",
     "header_color": "magenta",
-    "title": "第32課: 代動詞",
     "pages": [
       {
         "page": 1,
         "total_pages": 2,
         "content": [
-          "イタリア語は代名詞を動詞に",
-          "くっつけるのが大好きです。",
-          "代動詞とは、意味を変える",
-          "付属代名詞入りの動詞です。",
+          "イタリア語は動詞に代名詞をくっつけるのが",
+          "大好きです。代名動詞は、代名詞が組み込まれて",
+          "意味が変わった動詞です。",
           "",
-          "主な代動詞:",
-          "   farcela = うまくやる／間に合う",
+          "主なもの：",
+          "   farcela = うまくやる／やり遂げる",
           "      ce la faccio, ce l'ho fatta",
-          "   andarsene = 去る",
+          "   andarsene = 立ち去る",
           "      me ne vado, se ne è andato",
-          "   cavarsela = 何とかする",
+          "   cavarsela = 何とか切り抜ける",
           "      me la cavo, se l'è cavata",
-          "   prendersela = 気にする",
+          "   prendersela = 腹を立てる、気を悪くする",
           "      non prendertela!",
           "   fregarsene = 気にしない（俗）",
           "      me ne frego, chi se ne frega",
@@ -93,24 +92,24 @@
         "page": 2,
         "total_pages": 2,
         "content": [
-          "仕組み:",
+          "仕組み：",
           "",
-          "代名詞（ci, la, ne, se）は",
-          "動詞と融合します。単体での",
-          "意味とは異なります。",
+          "代名詞（ci, la, ne, si）は動詞と",
+          "融合しています。単独のときの意味とは",
+          "別の意味になります。",
           "",
           "   farcela = fare + ci + la",
-          "      （「それをそこでやる」ではない）",
-          "   andarsene = andare + se + ne",
-          "      （「自分から去る」ではない）",
+          "      （「そこでそれをする」ではない）",
+          "   andarsene = andare + si + ne",
+          "      （ne の前では si → se：se ne va）",
           "",
-          "近過去形:",
+          "PASSATO PROSSIMO（近過去）：",
           "   farcela → ce l'ho fatta（avere）",
           "   andarsene → me ne sono andato/a",
           "   cavarsela → me la sono cavata",
           "",
-          "これらは日常的なイタリア語です。",
-          "「ce la fai?」は毎日10回も聞きます。"
+          "どれも日常のイタリア語です。",
+          "「ce la fai?」は1日に10回は耳にします。"
         ]
       }
     ]
@@ -118,20 +117,20 @@
   {
     "lesson_id": "033",
     "trigger_word": "riferire",
-    "trigger_card_number": 1857,
-    "title": "第33課：間接話法",
+    "trigger_card_number": 1856,
+    "title": "第41課: 間接話法",
     "header_color": "magenta",
     "pages": [
       {
         "page": 1,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
-          "間接話法＝他人の発言を",
+          "間接話法＝人の言ったことを、",
           "引用せずに伝えること。",
           "",
           "直接話法：",
           "   Ha detto: 'Vengo domani.'",
-          "   彼はこう言った：「明日行くよ。」",
+          "   彼は言った：「明日行くよ。」",
           "",
           "間接話法：",
           "   Ha detto che sarebbe venuto",
@@ -139,17 +138,17 @@
           "   彼は翌日来ると言った。",
           "",
           "何が変わるか：",
-          "   現在形   → 未完了過去形",
-          "   近過去形 → 過去完了形",
-          "   未来形   → 条件法",
-          "   domani   → il giorno dopo（翌日）",
-          "   ieri     → il giorno prima（前日）"
+          "   現在形     → imperfetto（半過去）",
+          "   passato p. → trapassato prossimo（大過去）",
+          "   未来形     → 条件法「過去」",
+          "   domani     → il giorno dopo（翌日）",
+          "   ieri       → il giorno prima（前日）"
         ],
         "pronunciation": "Ha detto che sarebbe venuto."
       },
       {
         "page": 2,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
           "実際の時制の変化：",
           "",
@@ -160,16 +159,43 @@
           "   'Ho visto Marco.'",
           "   → Ha detto che aveva visto Marco.",
           "",
-          "   'Verrò alle tre.'",
-          "   → Ha detto che sarebbe venuto",
-          "     alle tre.",
-          "",
-          "もし発言内容が今も真実なら：",
+          "発言内容が今も真実なら：",
           "   時制の変化は任意です。",
           "   'Roma è bella.'",
           "   → Ha detto che Roma è/era bella.",
-          "   どちらも正しい。"
+          "",
+          "伝える動詞が現在形なら、時制は変わらない：",
+          "   Dice che viene domani.",
+          "   = 彼は明日来ると言っている。"
         ]
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "未来形は条件法「過去」になります：",
+          "",
+          "   'Verrò alle tre.'                   1を押す",
+          "   → Ha detto che sarebbe venuto",
+          "     alle tre.",
+          "   = 彼は3時に来ると言った。",
+          "",
+          "'che verrebbe' とは言いません。日本語なら",
+          "「来る」ですが、イタリア語は「来ただろう」。",
+          "",
+          "条件法過去 = avrei または sarei",
+          "+ 過去分詞：                           2を押す",
+          "   avrei finito    = 終えていただろう",
+          "   sarei venuto/a  = 来ていただろう",
+          "",
+          "約束や予定も同じルールです：",
+          "   Ha detto che mi avrebbe chiamato.",
+          "   = 彼は私に電話すると言った。"
+        ],
+        "pronunciation_mappings": {
+          "1": "Verrò alle tre. Ha detto che sarebbe venuto alle tre.",
+          "2": "Avrei finito. Sarei venuto."
+        }
       }
     ]
   },
@@ -177,57 +203,65 @@
     "lesson_id": "034",
     "trigger_word": "straordinario",
     "trigger_card_number": 1956,
-    "title": "第34課：関係節",
+    "title": "第42課: IL QUALE と IL CUI",
     "header_color": "magenta",
     "pages": [
       {
         "page": 1,
         "total_pages": 2,
         "content": [
-          "関係節は名詞に関する複数の",
-          "情報をつなぎます。イタリア語には",
-          "3つの手段があります：",
+          "第17課で CHE と CUI を学びました。改まった",
+          "イタリア語には IL QUALE もあり、受ける名詞に",
+          "性・数が一致します：",
+          "   il quale, la quale, i quali, le quali",
           "",
-          "CHE = who/that/which（最も一般的）：",
-          "   La donna che parla è mia madre.",
-          "   ＝話している女性は…",
-          "   Il libro che ho letto era bello.",
-          "   ＝私が読んだ本は…",
+          "cui と同じく、前置詞の後に置けます：   1を押す",
+          "   l'amico con il quale parlo",
+          "   = l'amico con cui parlo（話している友人）",
+          "   （結合形：al quale, della quale）",
           "",
-          "CHE は主語・目的語の両方に使えます。",
-          "前置詞は不要で、簡単です。",
+          "誰のことかをはっきり示せます：         2を押す",
+          "   la sorella di Marco, la quale vive",
+          "   a Roma = ローマに住む、マルコの姉妹",
+          "   （che だと、マルコが住むとも読める）",
           "",
-          "CUI = whom/which（前置詞と併用）：",
-          "   La persona di cui parlo...",
-          "   ＝私が話している人物…",
-          "   Il motivo per cui sono qui...",
-          "   ＝私がここにいる理由…"
+          "話し言葉では che と cui が普通です。",
+          "Il quale は書き言葉・報道・お役所向きです。"
         ],
-        "pronunciation": "La persona di cui parlo."
+        "pronunciation": "L'amico con il quale parlo.",
+        "pronunciation_mappings": {
+          "1": "L'amico con il quale parlo. L'amico con cui parlo.",
+          "2": "La sorella di Marco, la quale vive a Roma."
+        }
       },
       {
         "page": 2,
         "total_pages": 2,
         "content": [
-          "CUI と前置詞の組み合わせ：",
+          "IL CUI = 英語の WHOSE。冠詞は持ち主ではなく、",
+          "持たれる物のほうに一致します：",
           "",
-          "   di cui ＝ …について／…の",
-          "   a cui ＝ …に（宛てて）",
-          "   con cui ＝ …と一緒に",
-          "   per cui ＝ …のために／だから",
-          "   in cui ＝ …の中に",
-          "   su cui ＝ …の上に",
+          "   l'autore il cui libro ho letto      1を押す",
+          "      = 私がその本を読んだ作家",
+          "   la donna i cui figli conosco        2を押す",
+          "      = 私がその子どもたちを知っている女性",
+          "   Marco, la cui moglie è di Napoli    3を押す",
+          "      = マルコ、その奥さんはナポリ出身",
           "",
-          "IL QUALE / LA QUALE（丁寧体）：",
-          "   性・数に一致します！",
-          "   il quale, la quale,",
-          "   i quali, le quali",
-          "   L'uomo con il quale parlo...",
-          "   ＝「con cui」と同じだが丁寧",
+          "cui 自体は変わりません。動くのは、",
+          "後ろの名詞に合わせる冠詞だけです。",
           "",
-          "目安：che と cui を使いましょう。",
-          "il quale は正式な文章にのみ。"
-        ]
+          "cui と使う前置詞をあと3つ：            4を押す",
+          "   su cui  = その上に",
+          "   tra cui = その中に、～を含めて",
+          "   da cui  = そこから、その人から"
+        ],
+        "pronunciation_mappings": {
+          "1": "L'autore il cui libro ho letto.",
+          "2": "La donna i cui figli conosco.",
+          "3": "Marco, la cui moglie è di Napoli.",
+          "4": "Su cui. Tra cui. Da cui."
+        }
       }
     ]
   }

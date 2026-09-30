@@ -1,9 +1,9 @@
 [
   {
-    "lesson_id": "013",
-    "trigger_word": "abuelo",
-    "trigger_card_number": 450,
-    "title": "УРОК 13: МЕСТОИМЕНИЯ-ДОПОЛНЕНИЯ",
+    "lesson_id": "015",
+    "trigger_word": "explicar",
+    "trigger_card_number": 429,
+    "title": "УРОК 15: МЕСТОИМЕНИЯ-ДОПОЛНЕНИЯ",
     "header_color": "green",
     "pages": [
       {
@@ -15,21 +15,21 @@
           "",
           "ПРЯМОЕ ДОПОЛНЕНИЕ (кого? что?):",
           "me = меня            nos = нас",
-          "te = тебя            los/las = их",
-          "lo = его/это         la = её/это",
+          "te = тебя            los/las = их/вас",
+          "lo = его/это/вас     la = её/это/вас",
           "",
           "¿Ves el libro? Sí, lo veo.",
           "(Ты видишь книгу? Да, я вижу её.)",
           "",
           "КОСВЕННОЕ ДОПОЛНЕНИЕ (кому? для кого?):",
           "me = мне             nos = нам",
-          "te = тебе            les = им",
-          "le = ему/ей",
+          "te = тебе            les = им/вам",
+          "le = ему/ей/вам",
           "",
           "Le doy el libro. (Я даю ему книгу.)",
-          "Местоимение-дополнение стоит ПЕРЕД глаголом"
+          "Местоимение-дополнение стоит ПЕРЕД глаголом."
         ],
-        "pronunciation": "Lección trece",
+        "pronunciation": "Lección quince",
         "pronunciation_mappings": {}
       },
       {
@@ -51,29 +51,29 @@
           "Оба варианта правильны:              Нажми 4",
           "Lo quiero comprar = Quiero comprarlo",
           "",
-          "Не зацикливайся на порядке слов.",
-          "Со временем ты почувствуешь его",
-          "благодаря примерам на карточках."
+          "К утвердительному императиву:        Нажми 5",
+          "¡Discúlpame! ¡Dime! (Извини! Скажи мне!)"
         ],
         "pronunciation_mappings": {
           "1": "lo quiero, me gusta",
           "2": "voy a decirte algo, quiero comprarlo",
           "3": "estoy haciéndolo",
-          "4": "lo quiero comprar, quiero comprarlo"
+          "4": "lo quiero comprar, quiero comprarlo",
+          "5": "discúlpame, dime"
         }
       }
     ]
   },
   {
-    "lesson_id": "014",
+    "lesson_id": "016",
     "trigger_word": "seguridad",
-    "trigger_card_number": 520,
-    "title": "УРОК 14: ПРЕТЕРИТ ИЛИ ИМПЕРФЕКТ",
+    "trigger_card_number": 550,
+    "title": "УРОК 16: ПРЕТЕРИТ ИЛИ ИМПЕРФЕКТ",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
           "ИМПЕРФЕКТ — это другое прошедшее время.",
           "Претерит = завершённые действия,",
@@ -94,7 +94,7 @@
           "nosotros comíamos = мы ели",
           "ellos comían   = они ели"
         ],
-        "pronunciation": "Lección catorce",
+        "pronunciation": "Lección dieciséis",
         "pronunciation_mappings": {
           "1": "yo hablaba, tú hablabas, él hablaba, nosotros hablábamos, ellos hablaban",
           "2": "yo comía, tú comías, él comía, nosotros comíamos, ellos comían"
@@ -102,7 +102,7 @@
       },
       {
         "page": 2,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
           "ПРЕТЕРИТ (мгновенный снимок):        Нажми 1",
           "Ayer comí pizza. (Вчера я съел(а)",
@@ -128,14 +128,38 @@
           "2": "de niño comía pizza todos los viernes",
           "3": "llovía cuando salí de casa"
         }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "Всего ТРИ неправильных имперфекта:   Нажми 1",
+          "ser → era, eras, era, éramos, eran",
+          "ir  → iba, ibas, iba, íbamos, iban",
+          "ver → veía, veías, veía, veíamos, veían",
+          "",
+          "ПРИМЕРЫ:                             Нажми 2",
+          "De niño era tímido.",
+          "(В детстве я был застенчивым.)",
+          "Siempre iba a la playa.",
+          "(Я всегда ходил на пляж.)",
+          "",
+          "Все остальные глаголы в имперфекте",
+          "правильные, даже querer и poder:",
+          "quería, podía. Без чередований!"
+        ],
+        "pronunciation_mappings": {
+          "1": "era, eras, era, éramos, eran, iba, ibas, iba, íbamos, iban, veía, veías, veía, veíamos, veían",
+          "2": "de niño era tímido, siempre iba a la playa"
+        }
       }
     ]
   },
   {
-    "lesson_id": "015",
+    "lesson_id": "017",
     "trigger_word": "gobierno",
-    "trigger_card_number": 580,
-    "title": "УРОК 15: POR VS PARA",
+    "trigger_card_number": 612,
+    "title": "УРОК 17: POR VS PARA",
     "header_color": "green",
     "pages": [
       {
@@ -161,7 +185,7 @@
           "Caminé por dos horas. (Шёл два часа.)",
           "Por eso no fui. (Поэтому я не пошёл.)"
         ],
-        "pronunciation": "Lección quince",
+        "pronunciation": "Lección diecisiete",
         "pronunciation_mappings": {
           "1": "estudio para aprender, es para ti, salgo para Madrid, es para el lunes",
           "2": "lo cambié por otro, gracias por todo, caminé por dos horas, por eso no fui"

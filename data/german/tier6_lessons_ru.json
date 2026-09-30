@@ -18,10 +18,10 @@
           "Сред. род:            das → des",
           "Мн. число:            die → der",
           "",
-          "Муж. и сред. род: + -(e)s → des Mann(es)",
-          "",
+          "Муж. и сред. род: + -(e)s → des Mann(e)s",
+          "Некоторые муж. сущ.: + -(e)n → des Hasen",
           "das Auto des Mannes (машина мужчины)",
-          "das Buch des Kindes (книга ребёнка)",
+          "die Ohren des Hasen (уши зайца)",
           "",
           "ПРЕДЛОГИ В РОД. ПАДЕЖЕ:",
           "wegen (из-за), trotz (несмотря на)",
@@ -34,10 +34,143 @@
     ]
   },
   {
+    "lesson_id": "034",
+    "trigger_word": "Huhn",
+    "trigger_card_number": 32,
+    "title": "УРОК 34: ПРИДАТОЧНЫЕ ОПРЕДЕЛЕНИЯ",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "Относительные предложения добавляют детали:",
+          "",
+          "Der Freund, der mir hilft...",
+          "(друг, который помогает мне)",
+          "",
+          "В роли «который» выступают der/die/das:",
+          "der — муж. род (Der Freund, der...)",
+          "die — жен. род (Die Freundin, die...)",
+          "das — ср. род (Das Kind, das...)",
+          "die — мн. число (Die Freunde, die...)",
+          "",
+          "В вин. падеже муж. род берёт 'den':",
+          "",
+          "Der Mann, den ich sehe, ist mein Lehrer.",
+          "(человек, которого я вижу, — мой учитель)",
+          "",
+          "После запятой начинается относительное",
+          "предложение. Глагол в нём — в конце."
+        ],
+        "pronunciation": "Lektion 34"
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "ПРЕДЛОГ + ОТНОСИТЕЛЬНОЕ МЕСТОИМЕНИЕ:",
+          "",
+          "Предлог стоит ПЕРВЫМ. Род и число",
+          "местоимение берёт от существительного,",
+          "а падеж — от предлога:",
+          "",
+          "DAT: dem (м), der (ж), dem (ср), DENEN (мн)",
+          "AKK: den (м), die (ж), das (ср), die (мн)",
+          "",
+          "die Milch, aus der man Butter macht",
+          "(молоко, из которого делают масло)",
+          "die Finger, mit denen wir Dinge greifen",
+          "(пальцы, которыми мы хватаем вещи)",
+          "der Freund, für den ich koche",
+          "(друг, для которого я готовлю)",
+          "",
+          "Как и в русском, предлог всегда стоит",
+          "перед местоимением, а не в конце."
+        ]
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "ЧЕЙ: dessen (м./ср. род), deren (ж. род/мн.)",
+          "",
+          "Der Mann, dessen Auto hier steht...",
+          "(Мужчина, чья машина стоит здесь...)",
+          "Die Frau, deren Sohn ich kenne...",
+          "(Женщина, чьего сына я знаю...)",
+          "Die Leute, deren Haus wir mieten...",
+          "(Люди, чей дом мы снимаем...)",
+          "",
+          "dessen/deren выбирают по ВЛАДЕЛЬЦУ (der Mann,",
+          "die Frau), а не по предмету (der Sohn).",
+          "Существительное после них — без артикля."
+        ]
+      }
+    ]
+  },
+  {
     "lesson_id": "035",
+    "trigger_word": "Maus",
+    "trigger_card_number": 38,
+    "title": "УРОК 35: ИНФИНИТИВ С ZU",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "В немецком ZU часто идёт с инфинитивом:",
+          "",
+          "ОСНОВНАЯ СХЕМА: глагол + ZU + инфинитив",
+          "Ich versuche zu schlafen. (Я пытаюсь уснуть)",
+          "Es macht Spaß zu tanzen. (Весело танцевать)",
+          "Ich habe keine Zeit zu kochen.",
+          "(У меня нет времени готовить)",
+          "",
+          "ГЛАГОЛЫ С ОТДЕЛЯЕМОЙ ПРИСТАВКОЙ:",
+          "ZU стоит МЕЖДУ приставкой и глаголом:",
+          "aufzustehen (вставать)",
+          "anzukommen (прибывать)",
+          "",
+          "Ich habe vergessen, das Licht auszumachen.",
+          "(Я забыл выключить свет)",
+          "",
+          "БЕЗ ZU с модальными глаголами и lassen!"
+        ],
+        "pronunciation": "Lektion 35"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "UM ... ZU = ЧТОБЫ (цель):",
+          "",
+          "'um' в начале оборота, 'zu' + инфинитив —",
+          "в конце. У обеих частей ОДНО подлежащее.",
+          "",
+          "Die Maus kommt heraus, um Essen zu suchen.",
+          "(Мышь выходит, чтобы искать еду)",
+          "Ich stelle den Wecker, um früh aufzustehen.",
+          "(Ставлю будильник, чтобы рано встать)",
+          "",
+          "OHNE ... ZU = не + деепричастие:",
+          "Er geht, ohne etwas zu sagen.",
+          "(Он уходит, ничего не сказав)",
+          "STATT ... ZU = вместо того чтобы:",
+          "Sie spielt, statt zu lernen.",
+          "(Она играет, вместо того чтобы учиться)",
+          "",
+          "um/ohne/statt ... zu — всегда с запятой."
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": "036",
     "trigger_word": "schicken",
     "trigger_card_number": 130,
-    "title": "УРОК 35: СТРАДАТЕЛЬНЫЙ ЗАЛОГ",
+    "title": "УРОК 36: СТРАДАТЕЛЬНЫЙ ЗАЛОГ",
     "header_color": "cyan",
     "pages": [
       {
@@ -62,7 +195,7 @@
           "Это самые частые формы страд. залога.",
           "Очень часто в официальном/деловом нем."
         ],
-        "pronunciation": "Lektion 35"
+        "pronunciation": "Lektion 36"
       },
       {
         "page": 2,
@@ -89,10 +222,10 @@
     ]
   },
   {
-    "lesson_id": "040",
+    "lesson_id": "037",
     "trigger_word": "herauf",
     "trigger_card_number": 169,
-    "title": "УРОК 40: НАРЕЧИЯ HIN И HER",
+    "title": "УРОК 37: НАРЕЧИЯ HIN И HER",
     "header_color": "cyan",
     "pages": [
       {
@@ -107,18 +240,18 @@
           "Komm her! (Иди сюда!)",
           "",
           "С НАРЕЧИЯМИ:",
-          "hierhin = сюда     hierher = сюда",
-          "dorthin = туда     dorther = оттуда",
-          "wohin = куда       woher = откуда",
+          "hierhin = на это место  hierher = ко мне",
+          "dorthin = туда          dorther = оттуда",
+          "wohin = куда            woher = откуда",
           "",
           "С ПРЕДЛОГАМИ:",
-          "hinaus/heraus = наружу",
-          "hinein/herein = внутрь",
-          "hinauf/herauf = вверх",
-          "hinunter/herunter = вниз",
-          "Komm herein! (Входи! — к тебе)"
+          "hinaus/heraus = наружу  hinein/herein = внутрь",
+          "hinauf/herauf = вверх hinunter/herunter = вниз",
+          "В речи: rein, raus, rauf, runter (hin и her)",
+          "Komm herein! (Входи! — к говорящему)",
+          "Geh hinaus! (Выйди! — от говорящего)"
         ],
-        "pronunciation": "Lektion 40"
+        "pronunciation": "Lektion 37"
       }
     ]
   }

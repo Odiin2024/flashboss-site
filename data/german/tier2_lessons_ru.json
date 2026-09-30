@@ -2,7 +2,7 @@
   {
     "lesson_id": "008",
     "trigger_word": "Frühstück",
-    "trigger_card_number": 208,
+    "trigger_card_number": 214,
     "title": "УРОК 8: ПОРЯДОК СЛОВ (ПРАВИЛО V2)",
     "header_color": "cyan",
     "pages": [
@@ -10,23 +10,24 @@
         "page": 1,
         "total_pages": 1,
         "content": [
-          "У немецкого есть ОДНО главное правило:",
+          "В повествовательном предложении спрягаемый",
+          "ГЛАГОЛ всегда стоит ВТОРЫМ ЭЛЕМЕНТОМ.",
           "",
-          "ГЛАГОЛ ВСЕГДА на втором месте.",
+          "[Ich] [gehe] [heute] [nach Hause].",
+          "  1     2      3        4",
+          "(Я сегодня иду домой)",
           "",
-          "Ich gehe heute nach Hause.",
-          " 1   2     3      4     5",
-          "(Я иду сегодня домой)",
+          "[Heute] [gehe] [ich] [nach Hause].",
+          "   1      2     3        4",
+          "Если первым стоит «heute», глагол остаётся",
+          "вторым, а «ich» уходит за него.",
           "",
-          "Heute gehe ich nach Hause.",
-          "  1     2   3    4     5",
-          "(Сегодня я иду домой)",
+          "Элемент может состоять из нескольких слов:",
+          "[Im Sommer] [fahren] [wir] [ans Meer].",
           "",
-          "Заметь: когда «heute» уходит на первое",
-          "место, глагол ОСТАЁТСЯ на втором, и «ich»",
-          "отъезжает на третье.",
-          "",
-          "В русском порядок свободен. Здесь он жёсткий."
+          "Вопрос да/нет: глагол первый (Kommst du mit?)",
+          "Исключение: после dass, weil, wenn, obwohl",
+          "глагол уходит в КОНЕЦ (см. урок NEBENSÄTZE)."
         ],
         "pronunciation": "Lektion acht"
       }
@@ -35,7 +36,7 @@
   {
     "lesson_id": "009",
     "trigger_word": "bezahlen",
-    "trigger_card_number": 243,
+    "trigger_card_number": 249,
     "title": "УРОК 9: ЛИЧНЫЕ МЕСТОИМЕНИЯ",
     "header_color": "cyan",
     "pages": [
@@ -68,7 +69,7 @@
   {
     "lesson_id": "010",
     "trigger_word": "auf|räumen",
-    "trigger_card_number": 268,
+    "trigger_card_number": 274,
     "title": "УРОК 10: ПАДЕЖИ (NOM И AKK)",
     "header_color": "cyan",
     "pages": [
@@ -100,10 +101,10 @@
     ]
   },
   {
-    "lesson_id": "012",
-    "trigger_word": "an|ziehen",
-    "trigger_card_number": 315,
-    "title": "УРОК 12: ОТДЕЛЯЕМЫЕ ГЛАГОЛЫ",
+    "lesson_id": "011",
+    "trigger_word": "auf|stehen",
+    "trigger_card_number": 275,
+    "title": "УРОК 11: ОТДЕЛЯЕМЫЕ ГЛАГОЛЫ",
     "header_color": "cyan",
     "pages": [
       {
@@ -128,48 +129,69 @@
           "У рус. приставки есть — при-йти, у-йти, — но",
           "НИКОГДА не отрываются. Карточки: an|kommen."
         ],
-        "pronunciation": "Lektion zwölf"
+        "pronunciation": "Lektion elf"
       }
     ]
   },
   {
-    "lesson_id": "011",
-    "trigger_word": "Schuhe",
-    "trigger_card_number": 313,
-    "title": "УРОК 11: МНОЖЕСТВЕННОЕ ЧИСЛО",
+    "lesson_id": "012",
+    "trigger_word": "Arm",
+    "trigger_card_number": 305,
+    "title": "УРОК 12: ПРИТЯЖАТЕЛЬНЫЕ",
     "header_color": "cyan",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "Немецкие существительные образуют",
-          "множественное ПЯТЬЮ основными способами:",
+          "Притяжательные местоимения:",
           "",
-          "1. +e:  der Tisch → die Tische",
-          "2. +en/-n:  die Frau → die Frauen",
-          "3. +er:  das Kind → die Kinder",
-          "4. +s:  das Auto → die Autos",
-          "5. только умлаут:  der Apfel → die Äpfel",
+          "mein  = мой       unser = наш",
+          "dein  = твой      euer  = ваш (мн.)",
+          "sein  = его/его   ihr   = их",
+          "ihr   = её        Ihr   = Ваш (вежл.)",
           "",
-          "АРТИКЛЬ: все множественные берут «die»,",
-          "какого бы рода слово ни было.",
+          "РАБОТАЮТ КАК «EIN» (те же окончания):",
+          "          м.     ж.     ср.    мн.",
+          "NOM:      mein   meine  mein   meine",
+          "AKK:      meinen meine  mein   meine",
           "",
-          "ПОДСКАЗКИ (не правила!):",
-          "• женский часто → -en (Frau → Frauen)",
-          "• средний часто → -er (Kind → Kinder)",
-          "• слова на -e → -n (Minute → Minuten)",
-          "",
-          "Исключений много — учи форму со словом."
+          "ПРИМЕРЫ:",
+          "Das ist mein Hund. (мой пёс — м., NOM)",
+          "Ich sehe deinen Hund. (твоего пса — м., AKK)",
+          "Das ist meine Katze. (моя кошка — ж.)"
         ],
-        "pronunciation": "Lektion elf"
+        "pronunciation": "Lektion zwölf"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "ЕЩЁ ПРИМЕРЫ:",
+          "",
+          "МУЖСКОЙ РОД:",
+          "Wo ist dein Bruder? (Где твой брат?)",
+          "Ich kenne seinen Vater. (Я знаю его отца)",
+          "",
+          "ЖЕНСКИЙ РОД:",
+          "Das ist meine Schwester. (Это моя сестра)",
+          "Er liebt seine Mutter. (Он любит свою мать)",
+          "",
+          "СРЕДНИЙ РОД:",
+          "Wo ist mein Buch? (Где моя книга?)",
+          "Sie liest ihr Buch. (Она читает свою книгу)",
+          "",
+          "МНОЖЕСТВЕННОЕ:",
+          "Das sind unsere Kinder. (это наши дети)",
+          "Ich mag eure Ideen. (мне нравятся ваши идеи)"
+        ]
       }
     ]
   },
   {
     "lesson_id": "013",
     "trigger_word": "Hand",
-    "trigger_card_number": 323,
+    "trigger_card_number": 310,
     "title": "УРОК 13: ПОВЕЛИТЕЛЬНОЕ НАКЛОНЕНИЕ",
     "header_color": "cyan",
     "pages": [
@@ -177,24 +199,24 @@
         "page": 1,
         "total_pages": 2,
         "content": [
-          "Команда зависит от того, к кому обращаешься",
-          "— ровно как русские «иди» и «идите»:",
+          "Команда зависит от того, к кому обращаешься:",
           "",
           "ФОРМА DU (на «ты»):",
-          "Убери «st» у формы du и само «du»:",
-          "du kommst → Komm! (Иди!)",
-          "du gehst → Geh! (Иди!)",
+          "Убери «du» и окончание -st:",
+          "du kommst → Komm! (Иди сюда!)",
           "du wartest → Warte! (Подожди!)",
+          "Глаголы с a→ä теряют умлаут:",
+          "du fährst → Fahr!  du schläfst → Schlaf!",
+          "Основа на -s: только -t: du liest → Lies!",
           "",
           "ФОРМА IHR (на «ты», многим):",
           "Возьми форму ihr, убери «ihr»:",
-          "ihr kommt → Kommt! (Идите!)",
-          "ihr geht → Geht!",
+          "ihr kommt → Kommt! (Идите сюда!)",
           "",
           "ФОРМА SIE (вежливая, одному и многим):",
           "Форма Sie, и «Sie» остаётся после глагола:",
-          "Kommen Sie! (Идите!)",
-          "Gehen Sie!"
+          "Kommen Sie! (Подойдите!)",
+          "Gehen Sie! (Идите!)"
         ],
         "pronunciation": "Lektion dreizehn"
       },
@@ -226,56 +248,35 @@
   },
   {
     "lesson_id": "014",
-    "trigger_word": "Büro",
-    "trigger_card_number": 372,
-    "title": "УРОК 14: ПРИТЯЖАТЕЛЬНЫЕ",
+    "trigger_word": "Schuhe",
+    "trigger_card_number": 319,
+    "title": "УРОК 14: МНОЖЕСТВЕННОЕ ЧИСЛО",
     "header_color": "cyan",
     "pages": [
       {
         "page": 1,
-        "total_pages": 2,
+        "total_pages": 1,
         "content": [
-          "Притяжательные местоимения:",
+          "Во множественном числе ПЯТЬ основных типов:",
           "",
-          "mein  = мой       unser = наш",
-          "dein  = твой      euer  = ваш (мн.)",
-          "sein  = его/его   ihr   = их",
-          "ihr   = её        Ihr   = Ваш (вежл.)",
+          "1. +e:  der Tisch → die Tische",
+          "2. +en/+n:  die Frau → die Frauen",
+          "3. +er:  das Kind → die Kinder",
+          "4. +s:  das Auto → die Autos",
+          "5. без окончания (иногда + умлаут):",
+          "   der Lehrer → die Lehrer",
+          "   der Apfel → die Äpfel",
           "",
-          "РАБОТАЮТ КАК «EIN» (те же окончания):",
-          "          м.     ж.     ср.    мн.",
-          "NOM:      mein   meine  mein   meine",
-          "AKK:      meinen meine  mein   meine",
+          "Во мн. числе ВСЕ берут «die» (род неважен)",
           "",
-          "ПРИМЕРЫ:",
-          "Das ist mein Hund. (мой пёс — м., NOM)",
-          "Ich sehe deinen Hund. (твоего пса — м., AKK)",
-          "Das ist meine Katze. (моя кошка — ж.)"
+          "ПОДСКАЗКИ (не правила!):",
+          "• м. и ср. р. на -er, -el, -en → без окончания",
+          "• женский часто → -en (die Frau → die Frauen)",
+          "• средний: -e или -er (das Jahr → die Jahre)",
+          "• на -e → -n (die Minute → die Minuten)",
+          "Учи каждое слово ВМЕСТЕ с мн. числом."
         ],
         "pronunciation": "Lektion vierzehn"
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "content": [
-          "ЕЩЁ ПРИМЕРЫ:",
-          "",
-          "МУЖСКОЙ РОД:",
-          "Wo ist dein Bruder? (Где твой брат?)",
-          "Ich kenne seinen Vater. (Я знаю его отца)",
-          "",
-          "ЖЕНСКИЙ РОД:",
-          "Das ist meine Schwester. (Это моя сестра)",
-          "Er liebt seine Mutter. (Он любит свою мать)",
-          "",
-          "СРЕДНИЙ РОД:",
-          "Wo ist mein Buch? (Где моя книга?)",
-          "Sie liest ihr Buch. (Она читает свою книгу)",
-          "",
-          "МНОЖЕСТВЕННОЕ:",
-          "Das sind unsere Kinder. (это наши дети)",
-          "Ich mag eure Ideen. (мне нравятся ваши идеи)"
-        ]
       }
     ]
   }

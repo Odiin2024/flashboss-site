@@ -2,31 +2,30 @@
   {
     "lesson_id": "022",
     "trigger_word": "coniuge",
-    "trigger_card_number": 1243,
+    "trigger_card_number": 1242,
+    "title": "УРОК 29: СЕМЬЯ И ВЕХИ ЖИЗНИ",
     "header_color": "magenta",
-    "title": "УРОК 22: СЕМЬЯ, ЖИЗНЬ И СОБЫТИЯ",
     "pages": [
       {
         "page": 1,
         "total_pages": 2,
         "content": [
           "Итальянская семейная лексика растёт",
-          "вместе с жизненными событиями.",
-          "Core дал основы; теперь — взрослая",
-          "часть:",
+          "с жизненными событиями. Core дал основы;",
+          "теперь — взрослый слой:",
           "",
           "ПАРТНЁРЫ И СТАТУС:",
           "   marito / moglie = муж / жена",
           "   compagno/a = партнёр(ша) (без брака)",
-          "   coniuge = супруг(а) (юридич./форм.)",
-          "   fidanzato/a = жених/невеста, парень/дев.",
+          "   coniuge = супруг(а) (юрид., офиц.)",
+          "   fidanzato/a = жених/невеста; парень/девушка",
           "   vedovo/a = вдовец / вдова",
-          "   single = холост/не замужем (англ. заим.)",
+          "   single = холост / не замужем (англ. слово)",
           "",
           "РАСШИРЕННАЯ СЕМЬЯ:",
           "   parente = родственник (НЕ родитель!)",
-          "   parentela = расширенная семья",
-          "   padrino / madrina = крёстный отец/мать",
+          "   parentela = родня, большая семья",
+          "   padrino / madrina = крёстный / крёстная",
           "   erede = наследник"
         ]
       },
@@ -34,24 +33,81 @@
         "page": 2,
         "total_pages": 2,
         "content": [
-          "ЖИЗНЕННЫЕ СОБЫТИЯ — итал. вехи:",
+          "ВЕХИ ЖИЗНИ — главные события по-итальянски:",
           "",
           "   nascita = рождение",
           "   battesimo = крещение (большой праздник!)",
-          "   comunione = первое причастие (9 лет)",
-          "   cresima = конфирмация (12–13 лет)",
+          "   comunione = первое причастие (в 9 лет)",
+          "   cresima = конфирмация (в 12–13 лет)",
           "   laurea = окончание университета",
-          "   nozze = свадьба (формальное слово)",
+          "   le nozze = свадьба (всегда мн. число)",
           "   parto = роды",
           "",
-          "Каждое событие — сбор семьи.",
-          "Праздник важен не меньше таинства —",
-          "еда, подарки, фото, вся parentela",
-          "вместе.",
+          "Каждое событие — сбор всей семьи.",
+          "Праздник важен не меньше таинства:",
+          "еда, подарки, фото — и вся parentela",
+          "в сборе.",
+          "",
           "КЛЮЧЕВАЯ ФРАЗА:",
           "   fare bella figura = произвести",
-          "   хорошее впечатление (на любом",
-          "   событии)"
+          "   хорошее впечатление (на любом торжестве)"
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": "030",
+    "trigger_word": "extra",
+    "trigger_card_number": 1311,
+    "title": "УРОК 30: TRAPASSATO PROSSIMO",
+    "header_color": "magenta",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "TRAPASSATO PROSSIMO — прошедшее в прошлом.",
+          "Что-то УЖЕ ПРОИЗОШЛО до другого события",
+          "в прошлом.",
+          "",
+          "ФОРМУЛА: imperfetto от avere/essere",
+          "         + причастие прошедшего времени",
+          "",
+          "С AVERE:",
+          "   avevo mangiato = я уже поел(а)",
+          "   avevi detto = ты уже сказал(а)",
+          "   aveva scritto = он/она уже написал(а)",
+          "   avevamo finito = мы уже закончили",
+          "",
+          "С ESSERE (те же глаголы, что в passato p.):",
+          "   ero andato/a = я уже ушёл/ушла",
+          "   era arrivato/a = он/она уже прибыл(а)",
+          "   eravamo partiti/e = мы уже уехали"
+        ],
+        "pronunciation": "Ero già partito."
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "ЗАЧЕМ ЭТО НУЖНО — согласование времён:",
+          "",
+          "   Quando sono arrivato, Maria",
+          "   era già partita.",
+          "   = Когда я пришёл, Мария уже",
+          "     уехала.",
+          "",
+          "   Il conto aveva tre voci extra che",
+          "   non avevamo ordinato.",
+          "   = В счёте было три лишних пункта,",
+          "     которые мы не заказывали.",
+          "",
+          "СХЕМА: одно прошлое событие произошло",
+          "РАНЬШЕ другого прошлого события.",
+          "   passato p. / imperfetto = более позднее",
+          "   trapassato = более раннее",
+          "",
+          "Это основа любого рассказа."
         ]
       }
     ]
@@ -59,14 +115,13 @@
   {
     "lesson_id": "023",
     "trigger_word": "ricovero",
-    "trigger_card_number": 1317,
+    "trigger_card_number": 1313,
+    "title": "УРОК 31: МЕДИЦИНСКИЙ ИТАЛЬЯНСКИЙ",
     "header_color": "magenta",
-    "title": "УРОК 23: МЕДИЦИНСКИЙ ИТАЛЬЯНСКИЙ",
     "pages": [
       {
         "page": 1,
         "total_pages": 2,
-        "pronunciation": "Ho bisogno di un medico.",
         "content": [
           "В Италии — всеобщее здравоохранение (SSN).",
           "Знать систему и слова важно, если ты там",
@@ -74,19 +129,20 @@
           "",
           "СИСТЕМА:",
           "   medico di base = твой терапевт (бесплатно)",
-          "   pronto soccorso = скорая помощь (экстр.)",
-          "   farmacia = аптека (первый шаг!)",
-          "   ricetta = рецепт (красный бланк)",
-          "   tessera sanitaria = медкарта",
+          "   pronto soccorso = приёмный покой больницы",
+          "   farmacia = аптека (первым делом!)",
+          "   ricetta = рецепт (теперь электронный)",
+          "   tessera sanitaria = карта медстраховки",
           "",
           "ЭКСТРЕННЫЕ НОМЕРА:",
           "   112 = общая экстренная служба (всё ЕС)",
-          "   118 = медицинская экстренная служба",
+          "   118 = скорая медицинская помощь",
           "",
           "КЛЮЧЕВАЯ ФРАЗА:",
           "   ho bisogno di un medico",
-          "   = Мне нужен врач"
-        ]
+          "   = мне нужен врач"
+        ],
+        "pronunciation": "Ho bisogno di un medico."
       },
       {
         "page": 2,
@@ -98,16 +154,16 @@
           "      mi fa male la testa",
           "      mi fa male lo stomaco",
           "   ho la febbre = у меня температура",
-          "   ho mal di gola = болит горло",
-          "   non mi sento bene = мне нехорошо",
-          "",
+          "   ho mal di gola = у меня болит горло",
+          "   non mi sento bene = я неважно себя",
+          "      чувствую",
           "",
           "МЕДИЦИНСКАЯ ЛЕКСИКА:",
           "   chirurgo = хирург",
           "   infarto = инфаркт",
           "   sintomo = симптом",
           "   diagnosi = диагноз",
-          "   terapia = терапия/лечение",
+          "   terapia = терапия, лечение",
           "   analisi del sangue = анализ крови",
           "   ambulanza = скорая помощь"
         ]
@@ -116,40 +172,40 @@
   },
   {
     "lesson_id": "024",
-    "trigger_word": "folle",
-    "trigger_card_number": 1368,
+    "trigger_word": "gioia",
+    "trigger_card_number": 1346,
+    "title": "УРОК 32: КОНЪЮНКТИВ",
     "header_color": "magenta",
-    "title": "УРОК 24: СОСЛАГАТЕЛЬНОЕ",
     "pages": [
       {
         "page": 1,
-        "total_pages": 5,
-        "pronunciation": "Penso che sia vero.",
+        "total_pages": 6,
         "content": [
-          "CONGIUNTIVO выражает сомнение,",
-          "желание, мнение или эмоцию —",
-          "всё, что не факт.",
+          "CONGIUNTIVO (конъюнктив) выражает",
+          "сомнение, желание, мнение или эмоцию —",
+          "всё, что не подаётся как факт.",
           "",
           "ИНДИКАТИВ (факт):",
           "   Marco parla italiano.",
           "   Марко говорит по-итальянски.",
           "",
-          "СОСЛАГАТЕЛЬНОЕ (мнение/сомнение):",
+          "КОНЪЮНКТИВ (мнение/сомнение):",
           "   Penso che Marco parli italiano.",
           "   Я думаю, Марко говорит по-итальянски.",
           "",
           "ГЛАГОЛЫ-ТРИГГЕРЫ — требуют «che» +",
-          "сослагательное во втором предложении:",
+          "конъюнктив во второй части фразы:",
           "   pensare, credere, sperare,",
           "   temere, dubitare, volere,",
           "   preferire, sembrare, parere..."
-        ]
+        ],
+        "pronunciation": "Penso che sia vero."
       },
       {
         "page": 2,
-        "total_pages": 5,
+        "total_pages": 6,
         "content": [
-          "НАСТОЯЩЕЕ СОСЛАГАТЕЛЬНОГО — essere и avere:",
+          "КОНЪЮНКТИВ НАСТОЯЩЕГО — essere и avere:",
           "",
           "ESSERE:",
           "   che io       sia",
@@ -170,9 +226,9 @@
       },
       {
         "page": 3,
-        "total_pages": 5,
+        "total_pages": 6,
         "content": [
-          "НАСТОЯЩЕЕ СОСЛАГАТЕЛЬНОГО — окончания:",
+          "КОНЪЮНКТИВ НАСТОЯЩЕГО — правильные глаголы:",
           "",
           "        -ARE      -ERE      -IRE",
           "io      -i        -a        -a",
@@ -193,16 +249,15 @@
       },
       {
         "page": 4,
-        "total_pages": 5,
+        "total_pages": 6,
         "content": [
-          "НЕСОВЕРШЕННОЕ СОСЛАГАТЕЛЬНОГО —",
-          "используется, если глагол в главном",
-          "предложении в прошлом.",
+          "Теперь IMPERFETTO конъюнктива: он нужен,",
+          "когда главный глагол стоит в прошлом.",
           "",
           "НАСТОЯЩЕЕ: penso che sia vero",
-          "НЕСОВЕРШЕННОЕ: pensavo che fosse vero",
+          "IMPERFETTO: pensavo che fosse vero",
           "",
-          "ESSERE — несоверш. сослагательное:",
+          "ESSERE — imperfetto конъюнктива:",
           "   che io       fossi",
           "   che tu       fossi",
           "   che lui/lei  fosse",
@@ -210,15 +265,15 @@
           "   che voi      foste",
           "   che loro     fossero",
           "",
-          "Когда главное предложение переходит",
-          "в прошлое, сослагательное следует за ним."
+          "Главное предложение ушло в прошлое —",
+          "конъюнктив следует за ним."
         ]
       },
       {
         "page": 5,
-        "total_pages": 5,
+        "total_pages": 6,
         "content": [
-          "AVERE — несоверш. сослагательное:",
+          "AVERE — imperfetto конъюнктива:",
           "   che io       avessi",
           "   che tu       avessi",
           "   che lui/lei  avesse",
@@ -226,7 +281,7 @@
           "   che voi      aveste",
           "   che loro     avessero",
           "",
-          "НЕСОВЕРШЕННЫЕ ОКОНЧАНИЯ:",
+          "ПРАВИЛЬНЫЕ ОКОНЧАНИЯ IMPERFETTO:",
           "        -ARE      -ERE      -IRE",
           "io      -assi     -essi     -issi",
           "tu      -assi     -essi     -issi",
@@ -235,6 +290,36 @@
           "voi     -aste     -este     -iste",
           "loro    -assero   -essero   -issero"
         ]
+      },
+      {
+        "page": 6,
+        "total_pages": 6,
+        "content": [
+          "НЕПРАВИЛЬНЫЙ конъюнктив настоящего —",
+          "одна форма для io, tu и lui/lei:       Нажми 1",
+          "   andare → vada      fare   → faccia",
+          "   potere → possa     sapere → sappia",
+          "   stare  → stia      dire   → dica",
+          "   venire → venga     volere → voglia",
+          "",
+          "И после ПРЕВОСХОДНОЙ степени:          Нажми 2",
+          "   la cosa più bella che si possa",
+          "   immaginare = прекраснее не придумаешь",
+          "",
+          "Глаголы с -ISC-, как и в настоящем:    Нажми 3",
+          "   che io finisca, che noi finiamo",
+          "",
+          "ПОДЛЕЖАЩЕЕ ТО ЖЕ? di + инфинитив:      Нажми 4",
+          "   Penso di avere ragione.",
+          "      = Думаю, что я прав(а).",
+          "   (НЕ: penso che io abbia ragione)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Che io vada. Che io faccia. Che io possa. Che io sappia. Che io stia. Che io dica. Che io venga. Che io voglia.",
+          "2": "La cosa più bella che si possa immaginare.",
+          "3": "Che io finisca. Che noi finiamo.",
+          "4": "Penso di avere ragione."
+        }
       }
     ]
   }

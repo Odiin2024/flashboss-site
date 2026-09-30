@@ -1,32 +1,32 @@
 [
   {
     "lesson_id": "001",
-    "trigger_word": "cosa",
+    "trigger_word": "ciao",
     "trigger_card_number": 1,
     "title": "第1課: イタリア語の発音",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 5,
+        "total_pages": 6,
         "content": [
-          "ようこそ! イタリア語はほぼ表音的で、",
-          "文字はいつも同じ音を表します。",
-          "母音 5 つがすべての鍵です:",
+          "ようこそ！イタリア語はほぼ表音的で、",
+          "文字はほとんどいつも同じ音を表します。",
+          "まず大切なのは5つの母音です：",
           "",
-          "a =「アー」father の a              1を押す",
+          "a =「ア」日本語のアとほぼ同じ          1を押す",
           "   casa, mamma, gatto",
           "",
-          "e =「エ」bet の e                   2を押す",
+          "e =「エ」広いエと狭いエがある          2を押す",
           "   bene, sera, leggere",
           "",
-          "i =「イー」machine の i             3を押す",
+          "i =「イ」日本語のイとほぼ同じ          3を押す",
           "   sì, vita, libro",
           "",
-          "o =「オー」no の o                  4を押す",
+          "o =「オ」広いオと狭いオがある          4を押す",
           "   sole, modo, otto",
           "",
-          "u =「ウー」moon の u                5を押す",
+          "u =「ウ」唇を丸めて前に突き出す        5を押す",
           "   tu, uno, frutto"
         ],
         "pronunciation": "Lezione uno",
@@ -40,26 +40,55 @@
       },
       {
         "page": 2,
-        "total_pages": 5,
+        "total_pages": 6,
         "content": [
-          "英語と違う子音:",
+          "E と O には2種類の音があります：",
+          "広い音（口を大きく）と狭い音です。",
           "",
-          "   h = 常に無音                    1を押す",
+          "   è  広いエ（口を大きく開ける）       1を押す",
+          "      è（～である）, bene, sette, caffè",
+          "   é  狭いエ（口の開きを小さく）       2を押す",
+          "      e（そして）, sera, tre, perché",
+          "",
+          "   ò  広いオ（口を縦に大きく）         3を押す",
+          "      ho（私は持つ）, otto, cosa, però",
+          "   ó  狭いオ（唇を丸くすぼめる）       4を押す",
+          "      o（または）, sole, nome, ora",
+          "",
+          "つづりで区別できるのは語末の母音だけ：",
+          "caffè, perché。それ以外は耳で覚えます。",
+          "地域による違いもあり、どちらの発音でも",
+          "ちゃんと通じます。"
+        ],
+        "pronunciation_mappings": {
+          "1": "È. Bene. Sette. Caffè.",
+          "2": "E. Sera. Tre. Perché.",
+          "3": "Ho. Otto. Cosa. Però.",
+          "4": "O. Sole. Nome. Ora."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 6,
+        "content": [
+          "ローマ字読みと違う子音に注意：",
+          "",
+          "   h = 発音しない（常に無音）          1を押す",
           "      hai, ho, hanno",
           "",
-          "   c + a/o/u = 硬い「ク」          2を押す",
+          "   c + a/o/u = 硬い音「カ・コ・ク」    2を押す",
           "      casa, come, cucina",
           "",
-          "   c + e/i = 柔らかい「チ」        3を押す",
+          "   c + e/i = 柔らかい音「チェ・チ」    3を押す",
           "      cena, città, dolce",
           "",
-          "   g + a/o/u = 硬い「グ」          4を押す",
+          "   g + a/o/u = 硬い音「ガ・ゴ・グ」    4を押す",
           "      gatto, gusto, lago",
           "",
-          "   g + e/i = 柔らかい「ジ」        5を押す",
+          "   g + e/i = 柔らかい音「ジェ・ジ」    5を押す",
           "      gente, gelato, magia",
           "",
-          "r は常に巻き舌または弾き音です。"
+          "r は常に巻き舌か、舌先で弾く音です。"
         ],
         "pronunciation_mappings": {
           "1": "Hai. Ho. Hanno.",
@@ -70,27 +99,27 @@
         }
       },
       {
-        "page": 3,
-        "total_pages": 5,
+        "page": 4,
+        "total_pages": 6,
         "content": [
-          "二重字 — 2 文字で 1 つの音:",
+          "二重字 — 2文字で1つの音：",
           "",
-          "   ch = e/i の前で硬い「ク」        1を押す",
+          "   ch + e/i = 硬い音「ケ・キ」         1を押す",
           "      chiave, perché, anche",
           "",
-          "   gh = e/i の前で硬い「グ」        2を押す",
+          "   gh + e/i = 硬い音「ゲ・ギ」         2を押す",
           "      spaghetti, ghiaccio, lunghi",
           "",
-          "   gli = million の lli の音        3を押す",
+          "   gli =「リャ・リョ」の「リ」         3を押す",
           "      famiglia, figlio, gli",
           "",
-          "   gn = canyon の ny の音           4を押す",
+          "   gn =「ニャ・ニョ」の「ニ」          4を押す",
           "      gnocchi, lasagna, ogni",
           "",
-          "   sc + e/i =「シュ」               5を押す",
+          "   sc + e/i =「シェ・シ」              5を押す",
           "      sciare, pesce, scena",
           "",
-          "それ以外の sc は「スク」: scuola, scopo。"
+          "それ以外の sc は「スク」：scuola, scopo。"
         ],
         "pronunciation_mappings": {
           "1": "Chiave. Perché. Anche.",
@@ -101,26 +130,26 @@
         }
       },
       {
-        "page": 4,
-        "total_pages": 5,
+        "page": 5,
+        "total_pages": 6,
         "content": [
-          "重子音 — 子音を重ねる:",
+          "重子音 — 同じ子音を2つ重ねる：",
           "",
-          "音を長く保ちます。イタリア語は",
-          "長さで意味を区別します:               1を押す",
+          "「っ」「ん」のように音を長く保ちます。",
+          "長さで意味が変わります：               1を押す",
           "",
-          "   nono / nonno（9 番目 / 祖父）",
-          "   capello / cappello（髪 / 帽子）",
-          "   casa / cassa（家 / レジ）",
-          "アクセントの位置:",
-          "たいていの語は最後から 2 番目の",
-          "音節を強めます:",
-          "   CA-sa, MAM-ma, LI-bro              2を押す",
+          "   nono / nonno         （9番目 / 祖父）",
+          "   capello / cappello   （髪 / 帽子）",
+          "   casa / cassa         （家 / レジ）",
           "",
-          "最後に強勢がある語は記号で示します:",
-          "città, perché, papà, lunedì。         3を押す",
+          "アクセントの位置：",
+          "たいていの語は後ろから2番目の音節を",
+          "強く読みます：CA-sa, MAM-ma, LI-bro    2を押す",
           "",
-          "始める前にもう一つ..."
+          "語末にアクセントがある語は記号で示します：",
+          "città, perché, papà, lunedì。          3を押す",
+          "",
+          "始める前に、もう一つだけ…"
         ],
         "pronunciation_mappings": {
           "1": "Nono. Nonno. Capello. Cappello. Casa. Cassa.",
@@ -129,260 +158,851 @@
         }
       },
       {
-        "page": 5,
-        "total_pages": 5,
+        "page": 6,
+        "total_pages": 6,
         "content": [
-          "イタリア語の文のかたち:",
+          "イタリア語の文のかたち：",
           "",
-          "すぐ気づくことが 3 つあります:",
+          "すぐに気づくことが3つあります：",
           "",
-          "1. 主語を省く — 代名詞は不要です。",
-          "   動詞の語尾が主語を示します:",
-          "   ho =「持つ」、hai =「きみは持つ」",
-          "   Ho una cosa =「物を持っている」",
+          "1.「私は」を言わない — 代名詞は省略。",
+          "   誰のことかは動詞の語尾で分かります：",
+          "   ho = 私は持つ、hai = 君は持つ       1を押す",
+          "   つまり「Ho una cosa」= 物を1つ持っている",
           "",
-          "2. 形容詞は名詞の後ろに置きます:",
-          "   caffè caldo = 熱いコーヒー          1を押す",
-          "   parola nuova = 新しい語",
-          "   （前に置く一般語は後の課で）",
+          "2. 形容詞は名詞の後ろに置きます：",
+          "   vino rosso = 赤ワイン               2を押す",
+          "   parola nuova = 新しい単語",
+          "   （よく使う一部は前に置く — 後の課で）",
           "",
-          "3. non は動詞の前に置きます:",
-          "   non capisco = 分かりません          2を押す",
+          "3. non は動詞の前に置きます：",
+          "   non capisco = 分かりません          3を押す",
           "   non ho = 持っていません"
         ],
         "pronunciation_mappings": {
-          "1": "Caffè caldo. Parola nuova.",
-          "2": "Non capisco. Non ho."
-        }
-      }
-    ]
-  },
-  {
-    "lesson_id": "002",
-    "trigger_word": "casa",
-    "trigger_card_number": 65,
-    "title": "第2課: 冠詞と省略",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
-        "content": [
-          "イタリア語の冠詞は性だけでなく、",
-          "音声にも基づいて変化します：",
-          "",
-          "男性単数：                           1を押す",
-          "   il = ほとんどの子音の前",
-          "      il libro, il padre, il cane",
-          "   lo = z, gn, ps, s+子音の前",
-          "      lo zio, lo gnocco, lo stato",
-          "",
-          "女性単数：                           2を押す",
-          "   la = あらゆる子音の前",
-          "      la casa, la madre, la zia",
-          "",
-          "複数形：                             3を押す",
-          "   i, gli（男複）; le（女複、常に）",
-          "      i libri, gli stati, le case"
-        ],
-        "pronunciation": "Lezione due",
-        "pronunciation_mappings": {
-          "1": "Il libro. Il padre. Il cane. Lo stato. Lo zio. Lo gnocco.",
-          "2": "La casa. La madre. La zia.",
-          "3": "I libri. Gli stati. Le case."
-        }
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "content": [
-          "省略（アポストロフィー規則）：",
-          "",
-          "母音の前では、単数冠詞が",
-          "語尾を落とし「'」を付けます：         1を押す",
-          "",
-          "   il / la / lo + 母音 → l'",
-          "      l'amico（男）, l'aria（女）",
-          "      l'ora, l'uomo, l'occhio",
-          "",
-          "複数形は省略しません：                2を押す",
-          "   gli amici（gl'amici ではない）",
-          "   le ore（l'ore ではない）",
-          "",
-          "性は依然として重要です：              3を押す",
-          "   l'uomo（男）→ un uomo, gli uomini",
-          "   l'aria（女）→ un'aria, le arie",
-          "",
-          "これらのカードにはElides: trueと"
-        ],
-        "pronunciation_mappings": {
-          "1": "L'amico. L'aria. L'ora. L'uomo. L'occhio.",
-          "2": "Gli amici. Le ore.",
-          "3": "L'uomo. Un uomo. Gli uomini. L'aria. Un'aria. Le arie."
-        }
-      }
-    ]
-  },
-  {
-    "lesson_id": "003",
-    "trigger_word": "acqua",
-    "trigger_card_number": 85,
-    "title": "第3課: ESSERE、AVERE、C'È",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 3,
-        "content": [
-          "ESSERE =「～である」",
-          "",
-          "最も多く使う不規則動詞です。",
-          "6 つの形を暗記しましょう:            1を押す",
-          "",
-          "   io       sono     わたしは",
-          "   tu       sei      きみは",
-          "   lui/lei  è        彼/彼女は",
-          "   noi      siamo    わたしたちは",
-          "   voi      siete    きみたちは",
-          "   loro     sono     彼らは",
-          "",
-          "用法:                                2を押す",
-          "   同一性:    sono Marco",
-          "   場所:      è a casa",
-          "   描写:      è bello",
-          "   国籍:      sono italiano"
-        ],
-        "pronunciation": "Lezione tre",
-        "pronunciation_mappings": {
-          "1": "Io sono. Tu sei. Lui è. Lei è. Noi siamo. Voi siete. Loro sono.",
-          "2": "Sono Marco. È a casa. È bello. Sono italiano."
-        }
-      },
-      {
-        "page": 2,
-        "total_pages": 3,
-        "content": [
-          "AVERE =「持つ」（h は無音!）",
-          "",
-          "io       ho       わたし           1を押す",
-          "tu       hai      きみ             2を押す",
-          "lui/lei  ha       彼/彼女          3を押す",
-          "noi      abbiamo  わたしたち       4を押す",
-          "voi      avete    きみたち         5を押す",
-          "loro     hanno    彼ら",
-          "",
-          "h は常に無音です。つまり:",
-          "   ho =「オ」    hai =「アイ」",
-          "   ha =「ア」    hanno =「アンノ」",
-          "",
-          "AVERE は年齢も表します:",
-          "   ho 30 anni = わたしは 30 歳",
-          "   （直訳「30 年を持つ」）"
-        ],
-        "pronunciation_mappings": {
-          "1": "Io ho.",
-          "2": "Tu hai.",
-          "3": "Lui ha. Lei ha.",
-          "4": "Noi abbiamo.",
-          "5": "Voi avete."
-        }
-      },
-      {
-        "page": 3,
-        "total_pages": 3,
-        "content": [
-          "c'è / ci sono =「～がある」",
-          "",
-          "イタリア語の存在表現です。",
-          "「そこにある」と考えます:            1を押す",
-          "",
-          "   c'è（単数）=「～がある」",
-          "      c'è un libro sul tavolo",
-          "      c'è qualcuno alla porta",
-          "",
-          "   ci sono（複数）=「～がある」      2を押す",
-          "      ci sono molti libri",
-          "      ci sono due persone",
-          "",
-          "否定:                                3を押す",
-          "   non c'è / non ci sono",
-          "      non c'è tempo",
-          "      non ci sono problemi"
-        ],
-        "pronunciation_mappings": {
-          "1": "C'è un libro sul tavolo. C'è qualcuno alla porta.",
-          "2": "Ci sono molti libri. Ci sono due persone.",
-          "3": "Non c'è tempo. Non ci sono problemi."
+          "1": "Ho. Hai. Ho una cosa.",
+          "2": "Vino rosso. Parola nuova.",
+          "3": "Non capisco. Non ho."
         }
       }
     ]
   },
   {
     "lesson_id": "004",
-    "trigger_word": "fare",
-    "trigger_card_number": 186,
+    "trigger_word": "grazie",
+    "trigger_card_number": 5,
+    "title": "第2課: あいさつと疑問詞",
     "header_color": "green",
-    "title": "第4課: 教室での指示",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "あいさつ：",
+          "",
+          "   ciao        = やあ／またね（気軽）  1を押す",
+          "   salve       = こんにちは（誰にでも）",
+          "   buongiorno  = おはよう／こんにちは",
+          "   buonasera   = こんばんは",
+          "   buonanotte  = おやすみなさい",
+          "   arrivederci = さようなら",
+          "",
+          "お店では入るときも出るときも、",
+          "buongiorno か buonasera と言います。",
+          "",
+          "お元気ですか？                         2を押す",
+          "   come stai?  = 友人に（tu）",
+          "   come sta?   = 丁寧な形（Lei）",
+          "   sto bene, grazie. E tu?",
+          "      = 元気です、ありがとう。君は？"
+        ],
+        "pronunciation": "Lezione due",
+        "pronunciation_mappings": {
+          "1": "Ciao. Salve. Buongiorno. Buonasera. Buonanotte. Arrivederci.",
+          "2": "Come stai? Come sta? Sto bene, grazie. E tu?"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "名前を聞く・言う：                     1を押す",
+          "   come ti chiami? = 名前は何ていうの？",
+          "   mi chiamo Anna  = 私の名前はアンナです",
+          "      （直訳：私は自分をアンナと呼ぶ）",
+          "   piacere!        = はじめまして！",
+          "",
+          "礼儀の言葉：                           2を押す",
+          "   per favore = お願いします",
+          "   grazie     = ありがとう",
+          "   prego      = どういたしまして／どうぞ",
+          "   scusa      = ごめん、すみません",
+          "",
+          "授業で：                               3を押す",
+          "   non capisco      = 分かりません",
+          "   puoi ripetere?   = もう一度言ってくれる？",
+          "   più lentamente   = もっとゆっくり",
+          "   come si dice...? = ...は何と言いますか？"
+        ],
+        "pronunciation_mappings": {
+          "1": "Come ti chiami? Mi chiamo Anna. Piacere!",
+          "2": "Per favore. Grazie. Prego. Scusa.",
+          "3": "Non capisco. Puoi ripetere? Più lentamente. Come si dice?"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "疑問詞 — 1つはもう知っていますね：",
+          "come? = どう？（come stai?）",
+          "",
+          "   chi?    = 誰？                      1を押す",
+          "      chi è? = 誰ですか？",
+          "   cosa?   = 何？                      2を押す",
+          "      cos'è? = それは何？",
+          "   dove?   = どこ？                    3を押す",
+          "      dov'è? = どこにある？",
+          "   quando? = いつ？                    4を押す",
+          "      quando arrivi? = いつ着くの？",
+          "   perché? = なぜ？（「なぜなら」も）  5を押す",
+          "      perché no? = なぜいけないの？",
+          "   quanto? = いくら？どれだけ？        6を押す",
+          "      quanto costa? = いくらですか？"
+        ],
+        "pronunciation_mappings": {
+          "1": "Chi? Chi è?",
+          "2": "Cosa? Cos'è?",
+          "3": "Dove? Dov'è?",
+          "4": "Quando? Quando arrivi?",
+          "5": "Perché? Perché no?",
+          "6": "Quanto? Quanto costa?"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "002",
+    "trigger_word": "favore",
+    "trigger_card_number": 10,
+    "title": "第3課: 冠詞と省略",
+    "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 2,
         "content": [
-          "基本的な疑問詞：",
+          "定冠詞は性だけでなく、後ろに続く",
+          "語の「音」によっても変わります：",
           "",
-          "   chi?    = 誰？                    1を押す",
-          "      chi è? chi sei?",
-          "   cosa?   = 何？                    2を押す",
-          "      cosa fai? cos'è? (省略形)",
-          "   dove?   = どこ？                  3を押す",
-          "      dove sei? dov'è? (省略形)",
-          "   quando? = いつ？                  4を押す",
-          "      quando arrivi?",
-          "   come?   = どう？                  5を押す",
-          "      come stai? come ti chiami?",
-          "   perché? = なぜ？                  6を押す",
-          "      perché piangi? perché no?",
-          "   quanto? = いくら／いくつ？        7を押す",
-          "      quanto costa? quanti anni hai?"
+          "男性単数：                             1を押す",
+          "   il = たいていの子音の前",
+          "      il libro, il padre, il caffè",
+          "   lo = z, gn, ps, s+子音 の前",
+          "      lo zio, lo studente, lo gnocco",
+          "女性単数：                             2を押す",
+          "   la = すべての子音の前",
+          "      la casa, la madre, la zia",
+          "複数：                                 3を押す",
+          "   il → i     lo → gli     la → le",
+          "      i libri, gli zii, le case",
+          "不定冠詞（「ひとつの」）：             4を押す",
+          "   un（男）、uno（lo と同じ条件）、una（女）",
+          "      un libro, uno zio, una casa"
         ],
-        "pronunciation": "Lezione quattro",
+        "pronunciation": "Lezione tre",
         "pronunciation_mappings": {
-          "1": "Chi è? Chi sei?",
-          "2": "Cosa fai? Cos'è?",
-          "3": "Dove sei? Dov'è?",
-          "4": "Quando arrivi?",
-          "5": "Come stai? Come ti chiami?",
-          "6": "Perché piangi? Perché no?",
-          "7": "Quanto costa? Quanti anni hai?"
+          "1": "Il libro. Il padre. Il caffè. Lo zio. Lo studente. Lo gnocco.",
+          "2": "La casa. La madre. La zia.",
+          "3": "I libri. Gli zii. Le case.",
+          "4": "Un libro. Uno zio. Una casa."
         }
       },
       {
         "page": 2,
         "total_pages": 2,
         "content": [
-          "丁寧な依頼と教室表現：               1を押す",
+          "省略 — アポストロフィの規則：",
           "",
-          "   per favore  = お願いします",
-          "   grazie      = ありがとう",
-          "   prego       = どういたしまして",
-          "   scusa       = ごめん／すみません",
+          "母音の前では lo と la が母音を落とし、",
+          "アポストロフィを付けます：             1を押す",
           "",
-          "授業中：                             2を押す",
-          "   non capisco      = わかりません",
-          "   puoi ripetere?   = 繰り返してくれますか？",
-          "   più lentamente   = もっとゆっくり",
-          "   come si dice?    = なんて言いますか？",
+          "   lo / la + 母音 → l'",
+          "      l'amico（男）, l'amica（女）",
+          "      l'uomo, l'ora, l'acqua",
           "",
-          "挨拶：                               3を押す",
-          "   ciao   = こんにちは／さようなら",
-          "   salve  = こんにちは（丁寧）",
-          "   buongiorno = こんにちは（昼）",
-          "   buonasera  = こんばんは"
+          "複数形は省略しません：                 2を押す",
+          "   gli amici, le amiche, le ore",
+          "",
+          "母音の前の不定冠詞：                   3を押す",
+          "   un amico  （男：アポストロフィなし）",
+          "   un'amica  （女：una → un'）",
+          "",
+          "カードでは l' も含めて冠詞を色分け：",
+          "青 = 男性、マゼンタ = 女性。"
         ],
         "pronunciation_mappings": {
-          "1": "Per favore. Grazie. Prego. Scusa.",
-          "2": "Non capisco. Puoi ripetere? Più lentamente. Come si dice?",
-          "3": "Ciao. Salve. Buongiorno. Buonasera."
+          "1": "L'amico. L'amica. L'uomo. L'ora. L'acqua.",
+          "2": "Gli amici. Le amiche. Le ore.",
+          "3": "Un amico. Un'amica."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "003",
+    "trigger_word": "come",
+    "trigger_card_number": 13,
+    "title": "第4課: ESSERE、AVERE、C'È",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 4,
+        "content": [
+          "ESSERE =「～である」                   1を押す",
+          "",
+          "   io        sono     私は～です",
+          "   tu        sei      君は～です",
+          "   lui, lei  è        彼は／彼女は～です",
+          "   Lei       è        あなたは～です（丁寧）",
+          "   noi       siamo    私たちは～です",
+          "   voi       siete    君たちは～です",
+          "   loro      sono     彼らは～です",
+          "",
+          "io, tu, lui... は主語代名詞です。",
+          "ふつうは省略します — 動詞を見れば",
+          "誰のことか分かるからです。",
+          "   sono Marco = 私はマルコです         2を押す",
+          "強調や対比のときに使います：",
+          "   io sono americano, e tu?            3を押す"
+        ],
+        "pronunciation": "Lezione quattro",
+        "pronunciation_mappings": {
+          "1": "Io sono. Tu sei. Lui è. Lei è. Noi siamo. Voi siete. Loro sono.",
+          "2": "Sono Marco.",
+          "3": "Io sono americano, e tu?"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 4,
+        "content": [
+          "ESSERE は「何であるか」を言います：    1を押す",
+          "   è a casa    = 彼は家にいます",
+          "   è bello     = それは美しい",
+          "   è italiano  = 彼はイタリア人です",
+          "",
+          "STARE =「いる・とどまる」— 調子や、",
+          "じっとその場にいることに使います：     2を押す",
+          "   io   sto         noi   stiamo",
+          "   tu   stai        voi   state",
+          "   lui  sta         loro  stanno",
+          "",
+          "   sto bene   = 元気です               3を押す",
+          "   come stai? = 元気？",
+          "   sto a casa = 家にいます             4を押す"
+        ],
+        "pronunciation_mappings": {
+          "1": "È a casa. È bello. È italiano.",
+          "2": "Io sto. Tu stai. Lui sta. Noi stiamo. Voi state. Loro stanno.",
+          "3": "Sto bene. Come stai?",
+          "4": "Sto a casa."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 4,
+        "content": [
+          "AVERE =「持つ」                        1を押す",
+          "",
+          "   io        ho        私は持つ",
+          "   tu        hai       君は持つ",
+          "   lui, lei  ha        彼／彼女は持つ",
+          "   noi       abbiamo   私たちは持つ",
+          "   voi       avete     君たちは持つ",
+          "   loro      hanno     彼らは持つ",
+          "",
+          "h は無音 — 決して発音しません：        2を押す",
+          "   ho, hai, ha, hanno",
+          "   （hanno は anno「年」と同じ音）",
+          "",
+          "空腹・寒さ・年齢は AVERE で言います：  3を押す",
+          "   ho fame    = お腹がすいた",
+          "   ho freddo  = 寒い",
+          "   ho 30 anni = 30歳です",
+          "      （直訳：30年を持っている）"
+        ],
+        "pronunciation_mappings": {
+          "1": "Io ho. Tu hai. Lui ha. Lei ha. Noi abbiamo. Voi avete. Loro hanno.",
+          "2": "Ho. Hai. Ha. Hanno. Anno.",
+          "3": "Ho fame. Ho freddo. Ho trent'anni."
+        }
+      },
+      {
+        "page": 4,
+        "total_pages": 4,
+        "content": [
+          "C'È = ～がある    CI SONO = ～がある（複数）",
+          "",
+          "これも ESSERE です：ci（そこに）+ è",
+          "（ある）→ c'è。複数は ci + sono。",
+          "",
+          "   c'è un bar qui?                     1を押す",
+          "      = ここにバールはありますか？",
+          "   ci sono due bar                     2を押す",
+          "      = バールが2軒あります",
+          "",
+          "否定 — non を先頭に：                  3を押す",
+          "   non c'è tempo = 時間がない",
+          "   non ci sono problemi",
+          "      = 問題ありません",
+          "",
+          "人が「いるか」を聞くときにも：         4を押す",
+          "   c'è Marco? = マルコはいますか？"
+        ],
+        "pronunciation_mappings": {
+          "1": "C'è un bar qui?",
+          "2": "Ci sono due bar.",
+          "3": "Non c'è tempo. Non ci sono problemi.",
+          "4": "C'è Marco?"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "009",
+    "trigger_word": "uno",
+    "trigger_card_number": 23,
+    "title": "第5課: 数字、日付と時刻",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 4,
+        "content": [
+          "数字 0～10：                           1を押す",
+          "   0 zero      4 quattro    8 otto",
+          "   1 uno       5 cinque     9 nove",
+          "   2 due       6 sei       10 dieci",
+          "   3 tre       7 sette",
+          "",
+          "数字 11～20：                          2を押す",
+          "   11 undici       16 sedici",
+          "   12 dodici       17 diciassette",
+          "   13 tredici      18 diciotto",
+          "   14 quattordici  19 diciannove",
+          "   15 quindici     20 venti",
+          "",
+          "11～16 は末尾が -dici、17～19 は頭が dici-。",
+          "",
+          "名詞の前では uno → un / una：          3を押す",
+          "   un caffè, una pizza",
+          "   due caffè, tre pizze"
+        ],
+        "pronunciation": "Lezione cinque",
+        "pronunciation_mappings": {
+          "1": "Zero. Uno. Due. Tre. Quattro. Cinque. Sei. Sette. Otto. Nove. Dieci.",
+          "2": "Undici. Dodici. Tredici. Quattordici. Quindici. Sedici. Diciassette. Diciotto. Diciannove. Venti.",
+          "3": "Un caffè. Una pizza. Due caffè. Tre pizze."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 4,
+        "content": [
+          "10の位：                               1を押す",
+          "   20 venti       60 sessanta",
+          "   30 trenta      70 settanta",
+          "   40 quaranta    80 ottanta",
+          "   50 cinquanta   90 novanta",
+          "   100 cento      1000 mille",
+          "",
+          "組み合わせて1語にします：              2を押す",
+          "   21 ventuno, 28 ventotto",
+          "      （uno・otto の前で語末の母音が落ちる）",
+          "   23 ventitré（アクセント記号も必ず書く）",
+          "   200 duecento, 2000 duemila",
+          "      （mille は複数で mila に）",
+          "",
+          "1番目から10番目まで：                  3を押す",
+          "   primo, secondo, terzo, quarto, quinto,",
+          "   sesto, settimo, ottavo, nono, decimo"
+        ],
+        "pronunciation_mappings": {
+          "1": "Venti. Trenta. Quaranta. Cinquanta. Sessanta. Settanta. Ottanta. Novanta. Cento. Mille.",
+          "2": "Ventuno. Ventotto. Ventitré. Duecento. Duemila.",
+          "3": "Primo. Secondo. Terzo. Quarto. Quinto. Sesto. Settimo. Ottavo. Nono. Decimo."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 4,
+        "content": [
+          "曜日 — 小文字で書きます：              1を押す",
+          "   lunedì, martedì, mercoledì, giovedì,",
+          "   venerdì, sabato, domenica",
+          "   （-dì は「日」の意：アクセント記号を書く）",
+          "",
+          "   lunedì    = 月曜日に（今度の）      2を押す",
+          "   il lunedì = 毎週月曜日に",
+          "",
+          "月 — これも小文字：                    3を押す",
+          "   gennaio, febbraio, marzo, aprile,",
+          "   maggio, giugno, luglio, agosto,",
+          "   settembre, ottobre, novembre, dicembre",
+          "",
+          "日付 — il + 数字 + 月：                4を押す",
+          "   il 15 agosto = 8月15日",
+          "   il primo maggio = 5月1日（primo = 1番目）"
+        ],
+        "pronunciation_mappings": {
+          "1": "Lunedì. Martedì. Mercoledì. Giovedì. Venerdì. Sabato. Domenica.",
+          "2": "Lunedì. Il lunedì.",
+          "3": "Gennaio. Febbraio. Marzo. Aprile. Maggio. Giugno. Luglio. Agosto. Settembre. Ottobre. Novembre. Dicembre.",
+          "4": "Il quindici agosto. Il primo maggio."
+        }
+      },
+      {
+        "page": 4,
+        "total_pages": 4,
+        "content": [
+          "何時ですか？ — che ora è?              1を押す",
+          "   è l'una      = 1時です",
+          "   sono le due  = 2時です",
+          "   sono le otto = 8時です",
+          "   （una には è、ほかは sono）",
+          "",
+          "分 — e（と）、meno（引く）：           2を押す",
+          "   sono le due e dieci = 2:10",
+          "   sono le due e un quarto = 2:15",
+          "   sono le due e mezzo = 2:30",
+          "   sono le tre meno un quarto = 2:45",
+          "",
+          "何時に？ — a che ora?                  3を押す",
+          "   all'una = 1時に",
+          "   alle otto = 8時に",
+          "   alle otto di sera = 夜8時に",
+          "   （a + le = alle：次の課で詳しく）"
+        ],
+        "pronunciation_mappings": {
+          "1": "Che ora è? È l'una. Sono le due. Sono le otto.",
+          "2": "Sono le due e dieci. Sono le due e un quarto. Sono le due e mezzo. Sono le tre meno un quarto.",
+          "3": "A che ora? All'una. Alle otto. Alle otto di sera."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "006",
+    "trigger_word": "di",
+    "trigger_card_number": 46,
+    "title": "第6課: 前置詞と冠詞の結合",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "di, a, da, in, su は後ろの定冠詞と",
+          "くっついて1語になります：",
+          "",
+          "結合した形：                           1を押す",
+          "       il    lo     la     i    gli    le",
+          "di:    del   dello  della  dei  degli  delle",
+          "a:     al    allo   alla   ai   agli   alle",
+          "da:    dal   dallo  dalla  dai  dagli  dalle",
+          "in:    nel   nello  nella  nei  negli  nelle",
+          "su:    sul   sullo  sulla  sui  sugli  sulle",
+          "",
+          "母音の前では l' の形：                 2を押す",
+          "   dell'  all'  dall'  nell'  sull'",
+          "   dell'acqua, all'una, nell'aria",
+          "",
+          "con と per は結合しません：            3を押す",
+          "   con il pane, per la mamma"
+        ],
+        "pronunciation": "Lezione sei",
+        "pronunciation_mappings": {
+          "1": "Del. Dello. Della. Dei. Degli. Delle. Al. Allo. Alla. Ai. Agli. Alle. Dal. Dallo. Dalla. Dai. Dagli. Dalle. Nel. Nello. Nella. Nei. Negli. Nelle. Sul. Sullo. Sulla. Sui. Sugli. Sulle.",
+          "2": "Dell'acqua. All'una. Nell'aria.",
+          "3": "Con il pane. Per la mamma."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "定冠詞と一緒なら結合：                 1を押す",
+          "   vado alla stazione  (a + la)",
+          "   il libro del padre  (di + il)",
+          "   vengo dal bar       (da + il)",
+          "   è sul tavolo        (su + il)",
+          "   （vado = 私は行く、vengo = 私は来る）",
+          "",
+          "ただし、次の表現は冠詞なし：           2を押す",
+          "   a casa, a scuola, a letto,",
+          "   in chiesa, in centro, in Italia",
+          "",
+          "un / una とは結合しません：            3を押す",
+          "   vado a una festa",
+          "   il libro di un amico",
+          "",
+          "「いくらかの」— di + 定冠詞：          4を押す",
+          "   del pane  = いくらかのパン",
+          "   dei libri = 何冊かの本"
+        ],
+        "pronunciation_mappings": {
+          "1": "Vado alla stazione. Il libro del padre. Vengo dal bar. È sul tavolo.",
+          "2": "A casa. A scuola. A letto. In chiesa. In centro. In Italia.",
+          "3": "Vado a una festa. Il libro di un amico.",
+          "4": "Del pane. Dei libri."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "050",
+    "trigger_word": "mio",
+    "trigger_card_number": 63,
+    "title": "第7課: 所有形容詞と家族",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "「私の」「君の」などは持ち主ではなく、",
+          "持たれる「物」に一致します：           1を押す",
+          "",
+          "            男単     女単     男複     女複",
+          "   私の     mio      mia      miei     mie",
+          "   君の     tuo      tua      tuoi     tue",
+          "   彼(女)の suo      sua      suoi     sue",
+          "   私たちの nostro   nostra   nostri   nostre",
+          "   君たちの vostro   vostra   vostri   vostre",
+          "   彼らの   loro     loro     loro     loro",
+          "",
+          "定冠詞と一緒に使います：               2を押す",
+          "   il mio libro, la mia casa,",
+          "   i miei amici, le mie amiche",
+          "",
+          "suo は「物」に合わせます：             3を押す",
+          "   il suo libro = 彼の本、彼女の本",
+          "   la sua casa  = 彼の家、彼女の家"
+        ],
+        "pronunciation": "Lezione sette",
+        "pronunciation_mappings": {
+          "1": "Mio. Mia. Miei. Mie. Tuo. Tua. Tuoi. Tue. Suo. Sua. Suoi. Sue. Nostro. Nostra. Nostri. Nostre. Vostro. Vostra. Vostri. Vostre. Loro.",
+          "2": "Il mio libro. La mia casa. I miei amici. Le mie amiche.",
+          "3": "Il suo libro. La sua casa."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "家族のルール：",
+          "",
+          "家族1人（単数）なら冠詞なし：          1を押す",
+          "   mio padre, mia madre, tuo fratello,",
+          "   sua sorella, mio marito, mia moglie",
+          "",
+          "次の場合は冠詞が戻ります：",
+          "   複数：        i miei fratelli       2を押す",
+          "   形容詞つき：  il mio caro padre",
+          "   loro：        il loro figlio",
+          "   mamma, papà： ふつうは la mia mamma,",
+          "                 il mio papà",
+          "",
+          "家族でなければ、ふつうどおり冠詞：     3を押す",
+          "   la mia famiglia, il mio amico,",
+          "   la mia casa",
+          "   （famiglia は集団で、1人の家族ではない）"
+        ],
+        "pronunciation_mappings": {
+          "1": "Mio padre. Mia madre. Tuo fratello. Sua sorella. Mio marito. Mia moglie.",
+          "2": "I miei fratelli. Il mio caro padre. Il loro figlio. La mia mamma. Il mio papà.",
+          "3": "La mia famiglia. Il mio amico. La mia casa."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "QUESTO =「この」— 4つの形：            1を押す",
+          "   questo libro, questa casa,",
+          "   questi libri, queste case",
+          "   quest'anno = 今年（母音の前）",
+          "",
+          "QUELLO =「あの」— 名詞につく定冠詞に",
+          "合わせて形が変わります：               2を押す",
+          "   quel libro     (il libro)",
+          "   quello zio     (lo zio)",
+          "   quella casa    (la casa)",
+          "   quell'amico    (l'amico)",
+          "   quei libri     (i libri)",
+          "   quegli amici   (gli amici)",
+          "   quelle case    (le case)",
+          "",
+          "単独では quello：quello è mio!         3を押す",
+          "   = あれは私のだ！"
+        ],
+        "pronunciation_mappings": {
+          "1": "Questo libro. Questa casa. Questi libri. Queste case. Quest'anno.",
+          "2": "Quel libro. Quello zio. Quella casa. Quell'amico. Quei libri. Quegli amici. Quelle case.",
+          "3": "Quello è mio!"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "005",
+    "trigger_word": "fare",
+    "trigger_card_number": 69,
+    "title": "第8課: 動詞と一致",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "現在形：語尾 -are, -ere, -ire を外し、",
+          "人称ごとの語尾を付けます：",
+          "",
+          "-ARE  parlare（話す）                  1を押す",
+          "   io       parlo      noi      parliamo",
+          "   tu       parli      voi      parlate",
+          "   lui/lei  parla      loro     parlano",
+          "",
+          "-ERE  vedere（見る）                   2を押す",
+          "   io       vedo       noi      vediamo",
+          "   tu       vedi       voi      vedete",
+          "   lui/lei  vede       loro     vedono",
+          "",
+          "-IRE  partire（出発する）              3を押す",
+          "   io       parto      noi      partiamo",
+          "   tu       parti      voi      partite",
+          "   lui/lei  parte      loro     partono"
+        ],
+        "pronunciation": "Lezione otto",
+        "pronunciation_mappings": {
+          "1": "Io parlo. Tu parli. Lui parla. Noi parliamo. Voi parlate. Loro parlano.",
+          "2": "Io vedo. Tu vedi. Lui vede. Noi vediamo. Voi vedete. Loro vedono.",
+          "3": "Io parto. Tu parti. Lui parte. Noi partiamo. Voi partite. Loro partono."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "-IRE 動詞の多くは -ISC- が入ります：   1を押す",
+          "   capire（分かる）、finire（終える）",
+          "   io       capisco    noi      capiamo",
+          "   tu       capisci    voi      capite",
+          "   lui/lei  capisce    loro     capiscono",
+          "   （noi と voi には -isc- なし）",
+          "",
+          "FARE（する、作る）は不規則：           2を押す",
+          "   io       faccio     noi      facciamo",
+          "   tu       fai        voi      fate",
+          "   lui/lei  fa         loro     fanno",
+          "   fa caldo = 暑い（天気）",
+          "",
+          "LORO は IO と同じ位置を強く読む：      3を押す",
+          "   PARlo → PARlano",
+          "   caPIsco → caPIscono"
+        ],
+        "pronunciation_mappings": {
+          "1": "Io capisco. Tu capisci. Lui capisce. Noi capiamo. Voi capite. Loro capiscono.",
+          "2": "Io faccio. Tu fai. Lui fa. Noi facciamo. Voi fate. Loro fanno. Fa caldo.",
+          "3": "Parlo. Parlano. Capisco. Capiscono."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "形容詞は名詞に一致します：",
+          "",
+          "-O 形容詞 — 4つの形：                  1を押す",
+          "   il libro nuovo    la casa nuova",
+          "   i libri nuovi     le case nuove",
+          "",
+          "-E 形容詞 — 2つの形：                  2を押す",
+          "   il libro grande   la casa grande",
+          "   i libri grandi    le case grandi",
+          "",
+          "位置：ふつうは名詞の後ろ。ただし短くて",
+          "よく使う一部の語は前に：bello, buono,",
+          "grande, piccolo, vecchio。",
+          "",
+          "名詞の前で短くなるものも：             3を押す",
+          "   un buon caffè  （buono → buon：un と同じ）",
+          "   un bel ricordo （bello → bel：quel と同じ）",
+          "   buon + giorno = buongiorno!"
+        ],
+        "pronunciation_mappings": {
+          "1": "Il libro nuovo. La casa nuova. I libri nuovi. Le case nuove.",
+          "2": "Il libro grande. La casa grande. I libri grandi. Le case grandi.",
+          "3": "Un buon caffè. Un bel ricordo. Buongiorno!"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "051",
+    "trigger_word": "potere",
+    "trigger_card_number": 70,
+    "title": "第9課: VOLERE、POTERE、DOVERE",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "ほかの動詞を後ろに従える3つの動詞：",
+          "",
+          "VOLERE =「欲しい・～したい」           1を押す",
+          "   io       voglio     noi      vogliamo",
+          "   tu       vuoi       voi      volete",
+          "   lui/lei  vuole      loro     vogliono",
+          "",
+          "POTERE =「～できる」                   2を押す",
+          "   io       posso      noi      possiamo",
+          "   tu       puoi       voi      potete",
+          "   lui/lei  può        loro     possono",
+          "",
+          "DOVERE =「～しなければならない」       3を押す",
+          "   io       devo       noi      dobbiamo",
+          "   tu       devi       voi      dovete",
+          "   lui/lei  deve       loro     devono"
+        ],
+        "pronunciation": "Lezione nove",
+        "pronunciation_mappings": {
+          "1": "Io voglio. Tu vuoi. Lui vuole. Noi vogliamo. Voi volete. Loro vogliono.",
+          "2": "Io posso. Tu puoi. Lui può. Noi possiamo. Voi potete. Loro possono.",
+          "3": "Io devo. Tu devi. Lui deve. Noi dobbiamo. Voi dovete. Loro devono."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "後ろには不定詞（-re の形）：           1を押す",
+          "   voglio mangiare  = 食べたい",
+          "   posso entrare?   = 入ってもいい？",
+          "   devo lavorare    = 働かなければならない",
+          "   non posso venire = 行けない",
+          "",
+          "VORREI = 丁寧な「欲しい・～したい」    2を押す",
+          "バールや店では voglio の代わりに使います：",
+          "   vorrei un caffè, per favore",
+          "   vorrei pagare = お会計お願いします",
+          "",
+          "SAPERE + 不定詞 = 技能の「できる」：   3を押す",
+          "   so, sai, sa, sappiamo, sapete, sanno",
+          "   so nuotare = 泳げる（泳ぎ方を知っている）",
+          "   ただし posso nuotare? = 泳いでもいい？"
+        ],
+        "pronunciation_mappings": {
+          "1": "Voglio mangiare. Posso entrare? Devo lavorare. Non posso venire.",
+          "2": "Vorrei un caffè, per favore. Vorrei pagare.",
+          "3": "So. Sai. Sa. Sappiamo. Sapete. Sanno. So nuotare. Posso nuotare?"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "007",
+    "trigger_word": "signore",
+    "trigger_card_number": 126,
+    "title": "第10課: 名詞の性と複数形",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "名詞は男性か女性のどちらかです。",
+          "たいていは語尾で分かります：",
+          "",
+          "規則的なパターン：                     1を押す",
+          "   -o → 男性        il libro → i libri",
+          "   -a → 女性        la casa  → le case",
+          "   -e → どちらも    il padre → i padri",
+          "                    la madre → le madri",
+          "",
+          "-E の名詞：語尾がヒントになることも    2を押す",
+          "   -ore  → 男性：il signore,",
+          "           il dottore, il colore",
+          "   -ione → 女性：la lezione,",
+          "           la stazione",
+          "",
+          "それ以外は冠詞と一緒に覚えましょう。"
+        ],
+        "pronunciation": "Lezione dieci",
+        "pronunciation_mappings": {
+          "1": "Il libro. I libri. La casa. Le case. Il padre. I padri. La madre. Le madri.",
+          "2": "Il signore. Il dottore. Il colore. La lezione. La stazione."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "複数形のつづり：",
+          "",
+          "-ca, -ga, -go は硬い音を保つ：         1を押す",
+          "   amica → amiche, riga → righe,",
+          "   lago → laghi",
+          "",
+          "-co：アクセントの位置に注目：          2を押す",
+          "   後ろから2番目の音節にアクセント → -chi",
+          "      parco → parchi, tedesco → tedeschi",
+          "   それより前にアクセント → -ci",
+          "      medico → medici, unico → unici",
+          "   ただし amico → amici：覚えましょう！",
+          "",
+          "-io → -i（i を重ねない）：             3を押す",
+          "   figlio → figli, negozio → negozi,",
+          "   bacio → baci, occhio → occhi",
+          "   （zio → zii：この i にアクセントがある）"
+        ],
+        "pronunciation_mappings": {
+          "1": "Amica. Amiche. Riga. Righe. Lago. Laghi.",
+          "2": "Parco. Parchi. Tedesco. Tedeschi. Medico. Medici. Unico. Unici. Amico. Amici.",
+          "3": "Figlio. Figli. Negozio. Negozi. Bacio. Baci. Occhio. Occhi. Zio. Zii."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "-a なのに男性（ギリシャ語起源）：      1を押す",
+          "   il problema, il sistema, il tema,",
+          "   il programma, il pianeta",
+          "-o なのに女性：                        2を押す",
+          "   la mano。la foto, la moto は",
+          "   la fotografia, la motocicletta の略",
+          "",
+          "複数でも形が変わらない：               3を押す",
+          "   la città → le città   （-tà にアクセント）",
+          "   il caffè → i caffè    （-è にアクセント）",
+          "   la foto → le foto     （短縮形）",
+          "   il bar → i bar        （外来語）",
+          "   il film → i film      （外来語）",
+          "",
+          "不規則な複数形：                       4を押す",
+          "   l'uomo → gli uomini",
+          "   la mano → le mani",
+          "   il braccio → le braccia（女性に！）"
+        ],
+        "pronunciation_mappings": {
+          "1": "Il problema. Il sistema. Il tema. Il programma. Il pianeta.",
+          "2": "La mano. La foto. La moto. La fotografia. La motocicletta.",
+          "3": "La città. Le città. Il caffè. I caffè. La foto. Le foto. Il bar. I bar. Il film. I film.",
+          "4": "L'uomo. Gli uomini. La mano. Le mani. Il braccio. Le braccia."
         }
       }
     ]

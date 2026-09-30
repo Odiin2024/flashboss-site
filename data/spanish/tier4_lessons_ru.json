@@ -1,19 +1,20 @@
 [
   {
-    "lesson_id": "016",
+    "lesson_id": "018",
     "trigger_word": "pensamiento",
-    "trigger_card_number": 650,
-    "title": "УРОК 16: УСЛОВНОЕ НАКЛОНЕНИЕ",
+    "trigger_card_number": 683,
+    "title": "УРОК 18: УСЛОВНОЕ НАКЛОНЕНИЕ",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "Условное наклонение = would. Окончания",
+          "Условное наклонение = «бы». Окончания",
           "одинаковые для ВСЕХ глаголов (-AR, -ER, -IR):",
           "",
           "yo hablaría     = я бы говорил       Нажми 1",
+          "tú hablarías    = ты бы говорил",
           "él hablaría     = он бы говорил",
           "nosotros hablaríamos = мы бы говорили",
           "ellos hablarían = они бы говорили",
@@ -21,73 +22,52 @@
           "Добавь окончания -ía к ИНФИНИТИВУ.",
           "Просто: hablar + ía = hablaría",
           "",
-          "ПРИМЕНЕНИЕ:                          Нажми 2",
+          "НЕПРАВИЛЬНЫЕ ОСНОВЫ:                 Нажми 2",
+          "hacer → haría     poder → podría",
+          "tener → tendría   decir → diría",
+          "salir → saldría   venir → vendría"
+        ],
+        "pronunciation": "Lección dieciocho",
+        "pronunciation_mappings": {
+          "1": "yo hablaría, tú hablarías, él hablaría, nosotros hablaríamos, ellos hablarían",
+          "2": "hacer, haría, poder, podría, tener, tendría, decir, diría, salir, saldría, venir, vendría"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "ПРИМЕНЕНИЕ:                          Нажми 1",
+          "",
           "Me gustaría un café.",
           "(Я бы хотел кофе.)",
           "Вежливые просьбы",
+          "",
           "¿Podrías ayudarme? (Ты не мог бы помочь?)",
           "Вежливые вопросы",
-          "Yo no haría eso. (Я бы этого не делал.)"
+          "",
+          "Yo no haría eso. (Я бы этого не делал.)",
+          "Советы и воображаемые ситуации"
         ],
-        "pronunciation": "Lección dieciséis",
         "pronunciation_mappings": {
-          "1": "yo hablaría, él hablaría, nosotros hablaríamos, ellos hablarían",
-          "2": "me gustaría un café, podrías ayudarme, yo no haría eso"
+          "1": "me gustaría un café, podrías ayudarme, yo no haría eso"
         }
       }
     ]
   },
   {
-    "lesson_id": "017",
-    "trigger_word": "crecimiento",
-    "trigger_card_number": 720,
-    "title": "УРОК 17: ГЛАГОЛЫ С ЧЕРЕДОВАНИЕМ",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "Некоторые глаголы меняют гласную в корне при",
-          "спряжении. Окончания остаются прежними.",
-          "",
-          "e → ie:                              Нажми 1",
-          "querer: quiero, quieres, quiere,",
-          "queremos, quieren",
-          "Также: pensar, entender, preferir",
-          "",
-          "o → ue:                              Нажми 2",
-          "poder: puedo, puedes, puede,",
-          "podemos, pueden",
-          "Также: dormir, volver, costar",
-          "",
-          "e → i:                               Нажми 3",
-          "pedir: pido, pides, pide,",
-          "pedimos, piden",
-          "Также: seguir, repetir, conseguir"
-        ],
-        "pronunciation": "Lección diecisiete",
-        "pronunciation_mappings": {
-          "1": "quiero, quieres, quiere, queremos, quieren",
-          "2": "puedo, puedes, puede, podemos, pueden",
-          "3": "pido, pides, pide, pedimos, piden"
-        }
-      }
-    ]
-  },
-  {
-    "lesson_id": "018",
+    "lesson_id": "019",
     "trigger_word": "enorme",
-    "trigger_card_number": 790,
-    "title": "УРОК 18: БУДУЩЕЕ ВРЕМЯ",
+    "trigger_card_number": 813,
+    "title": "УРОК 19: БУДУЩЕЕ ВРЕМЯ",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "Формальное будущее просто: окончания",
-          "к инфинитиву. Одно для всех трёх типов.",
+          "Простое будущее: окончания добавляются",
+          "к инфинитиву. Одни для всех трёх типов.",
           "",
           "yo hablaré     = я буду говорить     Нажми 1",
           "tú hablarás    = ты будешь говорить",
@@ -95,17 +75,17 @@
           "nosotros hablaremos = мы будем говорить",
           "ellos hablarán = они будут говорить",
           "",
-          "НЕПР. ОСН. — основа меняется, оконч. нет:",
-          "",
+          "НЕПРАВИЛЬНЫЕ ОСНОВЫ (как в условном):",
           "tener → tendré   poder → podré       Нажми 2",
           "hacer → haré     decir → diré",
           "salir → saldré   venir → vendré",
           "",
-          "Запомни: ir + a + инфинитив (ближайшее",
-          "будущее) в речи чаще. Формальное — книжно.",
-          ""
+          "Запомни: для планов в речи чаще",
+          "ir + a + инфинитив (ближайшее будущее).",
+          "Простое будущее: прогнозы, обещания,",
+          "догадки (¿Dónde estará? = Где же он?)"
         ],
-        "pronunciation": "Lección dieciocho",
+        "pronunciation": "Lección diecinueve",
         "pronunciation_mappings": {
           "1": "yo hablaré, tú hablarás, él hablará, nosotros hablaremos, ellos hablarán",
           "2": "tener, tendré, poder, podré, hacer, haré, decir, diré, salir, saldré, venir, vendré"

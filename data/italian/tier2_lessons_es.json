@@ -1,322 +1,257 @@
 [
   {
-    "lesson_id": "005",
-    "trigger_word": "bianco",
-    "trigger_card_number": 1,
-    "title": "LECCIÓN 5: VERBOS Y CONCORDANCIA",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
-        "content": [
-          "Hay 3 familias de verbos regulares:",
-          "",
-          "-ARE  parlare (hablar)",
-          "   io       parlo      noi      parliamo",
-          "   tu       parli      voi      parlate",
-          "   lui/lei  parla      loro     parlano",
-          "",
-          "-ERE  vedere (ver)",
-          "   io       vedo       noi      vediamo",
-          "   tu       vedi       voi      vedete",
-          "   lui/lei  vede       loro     vedono",
-          "",
-          "-IRE  partire (partir)",
-          "   io       parto      noi      partiamo",
-          "   tu       parti      voi      partite",
-          "   lui/lei  parte      loro     partono"
-        ],
-        "pronunciation": "Lezione cinque"
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "content": [
-          "Los adjetivos CONCUERDAN con el sustantivo",
-          "en género y número:",
-          "",
-          "GRUPO A — adjetivo en -o (4 formas):",
-          "   il libro nuovo    (m sing)",
-          "   la casa nuova     (f sing)",
-          "   i libri nuovi     (m pl)",
-          "   le case nuove     (f pl)",
-          "",
-          "GRUPO B — adjetivo en -e (2 formas):",
-          "   il libro grande   (m sing)",
-          "   la casa grande    (f sing)",
-          "   i libri grandi    (m pl)",
-          "   le case grandi    (f pl)",
-          "",
-          "POSICIÓN: normalmente TRAS el sustantivo.",
-          "Excepciones frecuentes delante: bello,",
-          "buono, grande, piccolo, vecchio, giovane."
-        ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "006",
-    "trigger_word": "cambiare",
-    "trigger_card_number": 25,
-    "title": "LECCIÓN 6: PREPOSICIÓN + ARTÍCULO",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
-        "content": [
-          "Las preposiciones en italiano SE FUSIONAN",
-          "con el artículo definido. El resultado es",
-          "una sola palabra:",
-          "",
-          "       il    lo     la     i    gli    le",
-          "di:    del   dello  della  dei  degli  delle",
-          "a:     al    allo   alla   ai   agli   alle",
-          "da:    dal   dallo  dalla  dai  dagli  dalle",
-          "in:    nel   nello  nella  nei  negli  nelle",
-          "su:    sul   sullo  sulla  sui  sugli  sulle",
-          "",
-          "EJEMPLOS:",
-          "   di + il libro → del libro",
-          "   a + la casa → alla casa",
-          "   da + il bar → dal bar",
-          "   in + i giorni → nei giorni",
-          "   su + lo specchio → sullo specchio"
-        ],
-        "pronunciation": "Lezione sei"
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "content": [
-          "CUÁNDO contraer:",
-          "",
-          "SÍ — preposición + artículo definido:",
-          "   parlo del padre (di + il)",
-          "   vado alla scuola (a + la)",
-          "   vengo dal bar (da + il)",
-          "",
-          "NO — preposición + artículo indefinido:",
-          "   parlo di un padre (sin contraer)",
-          "   vado a una scuola (sin contraer)",
-          "",
-          "PARTITIVO — 'algo/algunos':",
-          "   del pane = algo de pan",
-          "   della pasta = algo de pasta",
-          "   dei libri = algunos libros",
-          "   delle case = algunas casas",
-          "",
-          "di + artículo = 'algo' (masa o plural)."
-        ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "007",
-    "trigger_word": "idea",
-    "trigger_card_number": 50,
-    "title": "LECCIÓN 7: GÉNERO Y PLURAL",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
-        "content": [
-          "Los sustantivos italianos tienen dos géneros.",
-          "La terminación suele indicar cuál:",
-          "",
-          "PATRONES REGULARES:",
-          "   -o → masculino    libro → libri",
-          "   -a → femenino     casa  → case",
-          "   -e → ambos        padre → padri",
-          "                     madre → madri",
-          "",
-          "Memoriza los de -e uno por uno.",
-          "",
-          "AJUSTES ORTOGRÁFICOS en plurales:",
-          "   -co/-ca → -chi/-che",
-          "      (se mantiene sonido fuerte)",
-          "      banca → banche, parco → parchi",
-          "   -go/-ga → -ghi/-ghe",
-          "      (se mantiene sonido fuerte)",
-          "      lago → laghi, riga → righe"
-        ],
-        "pronunciation": "Lezione sette"
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "content": [
-          "GÉNERO IRREGULAR (pese a la terminación):",
-          "   il problema, il sistema, il programma,",
-          "   il tema, il pianeta, il fantasma",
-          "      → -a pero MASCULINO (raíces griegas)",
-          "   la mano, la radio, la foto, la moto",
-          "      → -o pero FEMENINO (abreviados)",
-          "",
-          "SUSTANTIVOS INVARIABLES — plural = singular:",
-          "   la città → le città   (acento en -tà)",
-          "   l'università → le università",
-          "   il caffè → i caffè    (acento en -è)",
-          "   il bar → i bar        (extranjero)",
-          "   il film → i film      (extranjero)",
-          "",
-          "PLURALES IRREGULARES:",
-          "   l'uomo → gli uomini",
-          "   la mano → le mani (¡femenino pese a -o!)"
-        ]
-      }
-    ]
-  },
-  {
     "lesson_id": "008",
-    "trigger_word": "braccio",
-    "trigger_card_number": 141,
-    "title": "LECCIÓN 8: PIACERE Y AFINES",
+    "trigger_word": "bastare",
+    "trigger_card_number": 26,
+    "title": "LECCIÓN 11: VERBOS COMO PIACERE",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 2,
         "content": [
-          "PIACERE = 'ser agradable'",
+          "PIACERE = gustar. Ya conoces",
+          "piacere! = ¡mucho gusto! Ahora:",
           "",
-          "El italiano invierte la construcción.",
-          "‘Me gusta X’ = ‘X me es agradable’:",
+          "   mi piace il caffè                  Presiona 1",
+          "      = me gusta el café (¡como en español!)",
+          "   non mi piace = no me gusta",
           "",
-          "   mi piace il libro = Me gusta el libro",
+          "Concuerda con la COSA que gusta:      Presiona 2",
+          "   mi piace il libro     (una cosa)",
+          "   mi piacciono i libri  (varias)",
+          "   mi piace leggere      (una acción)",
           "",
-          "El verbo concuerda con LO QUE GUSTA:",
-          "   mi piace il libro     (sing)",
-          "   mi piacciono i libri  (plural)",
-          "",
-          "PRONOMBRES INDIRECTOS (quien gusta):",
-          "   mi  a mí       ci  a nosotros",
-          "   ti  a ti       vi  a ustedes",
-          "   gli a él       gli a ellos",
-          "   le  a ella",
-          "",
-          "El pronombre va ANTES de piacere."
+          "¿A QUIÉN? Lo dice el pronombre:       Presiona 3",
+          "   mi   me          ci   nos",
+          "   ti   te          vi   les (a ustedes)",
+          "   gli  le (a él)   gli  les (a ellos)",
+          "   le   le (a ella) ¡OJO! a Marco, sin gli:",
+          "   a Marco piace la pizza             Presiona 4"
         ],
-        "pronunciation": "Lezione otto"
+        "pronunciation": "Lezione undici",
+        "pronunciation_mappings": {
+          "1": "Mi piace il caffè. Non mi piace.",
+          "2": "Mi piace il libro. Mi piacciono i libri. Mi piace leggere.",
+          "3": "Mi piace. Ti piace. Gli piace. Le piace. Ci piace. Vi piace.",
+          "4": "A Marco piace la pizza."
+        }
       },
       {
         "page": 2,
         "total_pages": 2,
         "content": [
-          "TIEMPO PASADO — usar ESSERE:",
+          "MISMO PATRÓN: la cosa es el sujeto;",
+          "la persona lleva mi, ti...",
           "",
-          "   mi è piaciuto il libro    (m sing)",
-          "   mi è piaciuta la musica   (f sing)",
-          "   mi sono piaciuti i libri  (m pl)",
-          "   mi sono piaciute le case  (f pl)",
+          "BASTARE = bastar, alcanzar            Presiona 1",
+          "   mi basta un caffè",
+          "      = me basta un café",
+          "   basta! = ¡basta! ¡ya!",
+          "MANCARE = faltar                      Presiona 2",
+          "   mi manchi = te extraño",
+          "      (literalmente: me faltas)",
+          "SERVIRE = servir, hacer falta         Presiona 3",
+          "   mi serve aiuto = me hace falta ayuda",
+          "   a cosa serve? = ¿para qué sirve?",
+          "SEMBRARE = parecer                    Presiona 4",
+          "   mi sembra strano = me parece raro",
           "",
-          "El participio concuerda con el sujeto",
-          "(la cosa que gusta), no con quien gusta.",
-          "",
-          "OTROS VERBOS que funcionan como piacere:",
-          "",
-          "   mancare    faltar / extrañar",
-          "      mi manchi = Te extraño",
-          "   servire    ser necesario / necesitar",
-          "      mi serve aiuto = Necesito ayuda",
-          "   sembrare   parecer",
-          "      mi sembra strano = Me parece raro"
-        ]
+          "Y una para el día a día:              Presiona 5",
+          "   mi dispiace = lo siento"
+        ],
+        "pronunciation_mappings": {
+          "1": "Mi basta un caffè. Basta!",
+          "2": "Mi manchi.",
+          "3": "Mi serve aiuto. A cosa serve?",
+          "4": "Mi sembra strano.",
+          "5": "Mi dispiace."
+        }
       }
     ]
   },
   {
-    "lesson_id": "009",
-    "trigger_word": "estate",
-    "trigger_card_number": 196,
-    "title": "LECCIÓN 9: NÚMEROS, FECHAS Y HORA",
+    "lesson_id": "052",
+    "trigger_word": "zitto",
+    "trigger_card_number": 72,
+    "title": "LECCIÓN 12: EL IMPERATIVO",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 3,
         "content": [
-          "NÚMEROS 0-10:                     Presiona 1",
-          "   0 zero      4 quattro   8 otto",
-          "   1 uno       5 cinque    9 nove",
-          "   2 due       6 sei      10 dieci",
-          "   3 tre       7 sette",
+          "El IMPERATIVO sirve para órdenes,",
+          "peticiones y consejos. Tiene cuatro formas:",
           "",
-          "NÚMEROS 11-20:                    Presiona 2",
-          "   11 undici       16 sedici",
-          "   12 dodici       17 diciassette",
-          "   13 tredici      18 diciotto",
-          "   14 quattordici  19 diciannove",
-          "   15 quindici     20 venti",
+          "          parlare    prendere   sentire",
+          "   tu     parla      prendi     senti",
+          "   noi    parliamo   prendiamo  sentiamo",
+          "   voi    parlate    prendete   sentite",
+          "   Lei    parli      prenda     senta",
           "",
-          "DECENAS:                          Presiona 3",
-          "   venti, trenta, quaranta,",
-          "   cinquanta, sessanta, settanta,",
-          "   ottanta, novanta, cento, mille."
+          "tu: -are → -a; -ere, -ire → -i        Presiona 1",
+          "   guarda! aspetta! senti!",
+          "noi = 'hablemos' (igual al presente)  Presiona 2",
+          "   andiamo! = ¡vamos!",
+          "voi: casi siempre como el presente    Presiona 3",
+          "   entrate! = ¡pasen!",
+          "Lei (usted): -are → -i; si no, -a     Presiona 4",
+          "   scusi! = ¡disculpe!  senta! = ¡oiga!"
         ],
-        "pronunciation": "Lezione nove",
+        "pronunciation": "Lezione dodici",
         "pronunciation_mappings": {
-          "1": "Zero. Uno. Due. Tre. Quattro. Cinque. Sei. Sette. Otto. Nove. Dieci.",
-          "2": "Undici. Dodici. Tredici. Quattordici. Quindici. Sedici. Diciassette. Diciotto. Diciannove. Venti.",
-          "3": "Venti. Trenta. Quaranta. Cinquanta. Sessanta. Settanta. Ottanta. Novanta. Cento. Mille."
+          "1": "Parla! Prendi! Senti! Guarda! Aspetta!",
+          "2": "Parliamo! Prendiamo! Sentiamo! Andiamo!",
+          "3": "Parlate! Prendete! Sentite! Entrate!",
+          "4": "Parli! Prenda! Senta! Scusi!"
         }
       },
       {
         "page": 2,
         "total_pages": 3,
         "content": [
-          "COMBINACIÓN:                      Presiona 1",
-          "   21 = ventuno (omite vocal final)",
-          "   22 = ventidue, 23 = ventitré",
-          "   100 cento, 200 duecento",
-          "   1000 mille, 2000 duemila",
+          "FORMAS CORTAS de tu — muy comunes:    Presiona 1",
+          "              tu            Lei",
+          "   andare     va' / vai     vada",
+          "   dare       da' / dai     dia",
+          "   fare       fa' / fai     faccia",
+          "   stare      sta' / stai   stia",
+          "   dire       di'           dica",
           "",
-          "NÚMEROS ORDINALES:                Presiona 2",
-          "   1° primo, 2° secondo, 3° terzo,",
-          "   4° quarto, 5° quinto, 6° sesto,",
-          "   7° settimo, 8° ottavo, 9° nono,",
-          "   10° decimo. Después: undicesimo...",
+          "   stai zitto! = ¡cállate!            Presiona 2",
+          "   (a una chica: zitta; a varios: state zitti)",
           "",
-          "FECHAS:                           Presiona 3",
-          "   il + día + mes",
-          "   il 15 maggio = 15 de mayo",
-          "   il primo gennaio = 1 de enero",
-          "   (solo 'primo' es ordinal en fechas)"
+          "ESSERE y AVERE:                       Presiona 3",
+          "   tu sii,   voi siate,   Lei sia",
+          "   tu abbi,  voi abbiate, Lei abbia",
+          "   sii gentile!   = ¡sé amable!",
+          "   abbi pazienza! = ¡ten paciencia!"
         ],
         "pronunciation_mappings": {
-          "1": "Ventuno. Ventidue. Ventitré. Cento. Duecento. Mille. Duemila.",
-          "2": "Primo. Secondo. Terzo. Quarto. Quinto. Sesto. Settimo. Ottavo. Nono. Decimo. Undicesimo.",
-          "3": "Il quindici maggio. Il primo gennaio."
+          "1": "Va'! Vai! Vada! Da'! Dai! Dia! Fa'! Fai! Faccia! Sta'! Stai! Stia! Di'! Dica!",
+          "2": "Stai zitto! Stai zitta! State zitti!",
+          "3": "Sii! Siate! Sia! Abbi! Abbiate! Abbia! Sii gentile! Abbi pazienza!"
         }
       },
       {
         "page": 3,
         "total_pages": 3,
         "content": [
-          "DECIR LA HORA — 'che ora è?'      Presiona 1",
+          "NEGATIVO — tu: non + INFINITIVO       Presiona 1",
+          "   non parlare! = ¡no hables!",
+          "   non correre! = ¡no corras!",
+          "noi, voi, Lei: non + la misma forma   Presiona 2",
+          "   non dimenticate! = ¡no olviden!",
+          "   non aspetti! = ¡no espere! (Lei)",
           "",
-          "ESSERE + la hora:",
-          "   è l'una        = es la 1:00",
-          "   sono le due    = son las 2:00",
-          "   sono le tre    = son las 3:00",
+          "tu, noi, voi: pronombre AL FINAL      Presiona 3",
+          "   scusami! = ¡discúlpame! (tu)",
+          "   aspettami! = ¡espérame!",
+          "   dimmi! = ¡dime! (di' + mi: mm)",
+          "   fammi vedere! = ¡déjame ver!",
           "",
-          "'una' lleva è. Las demás: 'sono'.",
-          "",
-          "MINUTOS:                          Presiona 2",
-          "   sono le due e dieci    = 2:10",
-          "   sono le due e mezzo    = 2:30",
-          "   sono le tre meno dieci = 2:50",
-          "",
-          "PARTES DEL DÍA:                   Presiona 3",
-          "   di mattina, di pomeriggio,",
-          "   di sera, di notte."
+          "Con Lei, el pronombre va DELANTE:     Presiona 4",
+          "   mi scusi! = ¡discúlpeme! (Lei)",
+          "   mi dica! = ¡dígame! ¿en qué le ayudo?"
         ],
         "pronunciation_mappings": {
-          "1": "Che ora è? È l'una. Sono le due. Sono le tre.",
-          "2": "Sono le due e dieci. Sono le due e mezzo. Sono le tre meno dieci.",
-          "3": "Di mattina. Di pomeriggio. Di sera. Di notte."
+          "1": "Non parlare! Non correre!",
+          "2": "Non dimenticate! Non aspetti!",
+          "3": "Scusami! Aspettami! Dimmi! Fammi vedere!",
+          "4": "Mi scusi! Mi dica!"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "057",
+    "trigger_word": "braccio",
+    "trigger_card_number": 147,
+    "title": "LECCIÓN 13: PLURALES EN -A",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "Algunos sustantivos MASCULINOS en -o",
+          "tienen un plural FEMENINO en -a, y el",
+          "artículo cambia también: il → le, l' → le.",
+          "",
+          "EL CUERPO — casi todos:               Presiona 1",
+          "   il braccio   → le braccia (brazos)",
+          "   il dito      → le dita (dedos)",
+          "   il ginocchio → le ginocchia (rodillas)",
+          "   il labbro    → le labbra (labios)",
+          "   l'osso       → le ossa (huesos)",
+          "   il ciglio    → le ciglia (pestañas)",
+          "",
+          "Y ALGUNOS MÁS:                        Presiona 2",
+          "   l'uovo       → le uova (huevos)",
+          "   il paio      → le paia (pares)",
+          "   il lenzuolo  → le lenzuola (sábanas)",
+          "   il centinaio → le centinaia (cientos)",
+          "   il migliaio  → le migliaia (miles)"
+        ],
+        "pronunciation": "Lezione tredici",
+        "pronunciation_mappings": {
+          "1": "Il braccio. Le braccia. Il dito. Le dita. Il ginocchio. Le ginocchia. Il labbro. Le labbra. L'osso. Le ossa. Il ciglio. Le ciglia.",
+          "2": "L'uovo. Le uova. Il paio. Le paia. Il lenzuolo. Le lenzuola. Il centinaio. Le centinaia. Il migliaio. Le migliaia."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "El plural es FEMENINO, así que todo lo",
+          "que concuerda con él también lo es:",
+          "",
+          "   il dito rotto → le dita rotte      Presiona 1",
+          "   un uovo fresco → due uova fresche",
+          "   le mie braccia, queste lenzuola",
+          "",
+          "El verbo va en plural, como siempre:  Presiona 2",
+          "   Mi fanno male le ginocchia.",
+          "   = Me duelen las rodillas.",
+          "   Per la torta servono tre uova.",
+          "   = Para la tarta hacen falta tres huevos.",
+          "",
+          "un paio di scarpe → due paia          Presiona 3",
+          "   un paio di giorni = un par de días",
+          "",
+          "Ojo: l'orecchio → le orecchie         Presiona 4",
+          "   (también femenino, pero en -e)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Il dito rotto. Le dita rotte. Un uovo fresco. Due uova fresche. Le mie braccia. Queste lenzuola.",
+          "2": "Mi fanno male le ginocchia. Per la torta servono tre uova.",
+          "3": "Un paio di scarpe. Due paia di scarpe. Un paio di giorni.",
+          "4": "L'orecchio. Le orecchie."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "DOS PLURALES, DOS SIGNIFICADOS: algunos",
+          "guardan -a para el cuerpo o un conjunto",
+          "y toman -i para los demás sentidos:",
+          "",
+          "   le braccia = brazos (humanos)      Presiona 1",
+          "   i bracci   = brazos (de lámpara, de grúa)",
+          "   le mura    = murallas (de ciudad)",
+          "   i muri     = muros (de un edificio)",
+          "   le ossa    = huesos (del cuerpo)",
+          "   gli ossi   = huesos (para el perro)",
+          "   le membra  = extremidades (literario)",
+          "   i membri   = miembros (de un grupo)",
+          "",
+          "Para el cuerpo oirás el plural en -a:",
+          "apréndelo junto con el sustantivo."
+        ],
+        "pronunciation_mappings": {
+          "1": "Le braccia. I bracci. Le mura. I muri. Le ossa. Gli ossi. Le membra. I membri."
         }
       }
     ]

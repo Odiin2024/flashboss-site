@@ -2,7 +2,7 @@
   {
     "lesson_id": "040",
     "trigger_word": "unue",
-    "title": "第40课：「-OP-」后缀",
+    "title": "第46课：「-OP-」后缀",
     "header_color": "green",
     "pages": [
       {
@@ -35,73 +35,134 @@
   {
     "lesson_id": "041",
     "trigger_word": "tio dependas",
-    "title": "第41课：关联词表",
+    "title": "第47课：关联词表",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "世界语用一个简单表格构建出45个词：",
-          "5个前缀 × 9个后缀。掌握这套系统，",
-          "你就能一次性解锁全部45个词。",
+          "核心卡包教过关联词表中的四列：",
+          "-O、-U、-E 和 -AM（kio、kiu、kie、kiam）。",
+          "下面是另外五列：",
           "",
-          "KI-  = 疑问     TI-  = 那/这",
-          "I-   = 某些     ĈI-  = 每个",
-          "NENI-= 无/没有",
+          "新增的五列：                              按 1",
+          "      种类    原因    方式    谁的    数量",
+          "KI-   kia     kial    kiel    kies    kiom",
+          "TI-   tia     tial    tiel    ties    tiom",
+          "ĈI-   ĉia     ĉial    ĉiel    ĉies    ĉiom",
+          "NENI- nenia   nenial  neniel  nenies  neniom",
+          "I-    ia      ial     iel     ies     iom",
           "",
-          "-O 物       -U 人        -A 类",
-          "-E 处所    -AM 时间     -AL 原因",
-          "-EL 方式   -ES 所属     -OM 数量",
-          "",
-          "kio = 什么？  tio = 那个   io = 某物",
-          "kie = 哪里？  tie = 那里   ie = 某处",
-          "kiam = 何时？ ĉiam = 总是  nenie = 无处",
-          "",
-          "可打印参考表见：",
-          "odiin2024.github.io/flashboss-site/source.html"
+          "-A 结尾的词像形容词一样，",
+          "可以加 -J 和 -N：",
+          "Kian libron vi volas?                     按 2",
+          "= 你想要什么样的书？"
         ],
+        "pronunciation_mappings": {
+          "1": "Kia? Tia. Kial? Tial. Kiel? Tiel. Kies? Ties. Kiom? Tiom.",
+          "2": "Kian libron vi volas?"
+        },
         "pronunciation": "Leciono kvardek unu"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "提问：                                    按 1",
+          "Kia estas via urbo?",
+          "= 你的城市是什么样的？",
+          "Kial vi lernas Esperanton?",
+          "= 你为什么学世界语？",
+          "Kies telefono estas tiu?",
+          "= 那是谁的手机？",
+          "",
+          "回答及其他：                              按 2",
+          "Tiel estas.      = 就是这样。",
+          "Neniel!          = 绝不！根本不！",
+          "Mi provis ĉiel.  = 我试过各种办法。",
+          "tiom da homoj    = 这么多人",
+          "",
+          "可打印的表格（PDF）见我们的网站：",
+          "odiin2024.github.io/flashboss-site/",
+          "correlative_table.pdf"
+        ],
+        "pronunciation_mappings": {
+          "1": "Kia estas via urbo? Kial vi lernas Esperanton? Kies telefono estas tiu?",
+          "2": "Tiel estas. Neniel! Mi provis ĉiel. Tiom da homoj."
+        }
       }
     ]
   },
   {
     "lesson_id": "042",
-    "trigger_word": "provi",
-    "title": "第42课：主动分词",
+    "trigger_word": "marŝi",
+    "title": "第48课：主动分词",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "主动分词描述动作的执行者，",
-          "体现不同时态。三种形式：",
+          "核心卡包教过 -ANTA、-INTA、-ONTA。",
+          "它们的时间是相对于主动词而言的：",
+          "A = 同时，I = 之前，O = 之后。",
           "",
-          "-ANT- = 正在做（现在）",
-          "legi → leganta = 正在读",
-          "parolanta = 正在说",
+          "作形容词（-A）：                          按 1",
+          "marŝanta orkestro  = 行进中的乐队",
+          "la pasinta jaro    = 去年",
+          "la venonta kunveno = 下一次会议",
           "",
-          "-INT- = 已经做过（过去）",
-          "legi → leginta = 已经读过",
-          "parolinta = 已经说过",
+          "作名词指人（-O）：                        按 2",
+          "la parolanto = 正在说话的人",
+          "la gajninto  = 获胜者（已经赢了的人）",
+          "la parolonto = 下一位发言人",
           "",
-          "-ONT- = 即将要做（将来）",
-          "legi → legonta = 即将要读",
-          "parolonta = 即将要说",
-          "",
-          "La leganta viro... = 「正在读书的男人……」",
-          "La leginta viro... = 「读过书的男人……」",
-          "La legonta viro... = 「即将读书的男人……」"
+          "时间是相对的：                            按 3",
+          "Mi vidis marŝantan orkestron.",
+          "= 我看到一支乐队正在行进。"
         ],
+        "pronunciation_mappings": {
+          "1": "Marŝanta orkestro. La pasinta jaro. La venonta kunveno.",
+          "2": "La parolanto. La gajninto. La parolonto.",
+          "3": "Mi vidis marŝantan orkestron."
+        },
         "pronunciation": "Leciono kvardek du"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "加 -E 时，分词表示句子的主语在同时",
+          "（-ante）、之前（-inte）或之后",
+          "（-onte）做什么：",
+          "",
+          "-ANTE = 一边……／通过……：                  按 1",
+          "Parolante, li ridetis.",
+          "= 他一边说话，一边微笑。",
+          "Lernante ĉiutage, ŝi progresis.",
+          "= 通过每天学习，她进步了。",
+          "",
+          "-INTE = 做完……之后：                      按 2",
+          "Leginte la leteron, mi respondis.",
+          "= 读完信后，我回了信。",
+          "",
+          "-ONTE = 即将……时：                        按 3",
+          "Forironte, li dankis ĉiujn.",
+          "= 临走前，他向大家道谢。"
+        ],
+        "pronunciation_mappings": {
+          "1": "Parolante, li ridetis. Lernante ĉiutage, ŝi progresis.",
+          "2": "Leginte la leteron, mi respondis.",
+          "3": "Forironte, li dankis ĉiujn."
+        }
       }
     ]
   },
   {
     "lesson_id": "043",
-    "trigger_word": "okazi",
-    "title": "第43课：前缀「EK-」",
+    "trigger_word": "movi",
+    "title": "第49课：前缀「EK-」",
     "header_color": "green",
     "pages": [
       {
@@ -134,32 +195,37 @@
   {
     "lesson_id": "044",
     "trigger_word": "historia fono",
-    "title": "第44课：前缀「PRA-」",
+    "title": "第50课：前缀「PRA-」",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "前缀 PRA- 表示「古代的」或「曾-」",
-          "（跨越多代）。它指向遥远的过去。",
+          "前缀 PRA- 表示久远的过去：用于家族",
+          "时指「曾……」，用于其他事物时指",
+          "「远古的、原始的」。",
           "",
-          "祖先辈分（叠加 PRA- 表示更远的世代）：",
-          "avo     → praavo     = 爷爷 → 曾祖父",
-          "avino   → praavino   = 奶奶 → 曾祖母",
-          "patro   → prapatro   = 父亲 → 先祖",
+          "往上数几代：                              按 1",
+          "avo     → praavo     = 祖父 → 曾祖父",
+          "avino   → praavino   = 祖母 → 曾祖母",
+          "patro   → prapatro   = 父亲 → 祖先",
           "prapraavo = 高祖父",
           "",
-          "古代：",
-          "homo    → prahomo    = 人类 → 原始人",
-          "arbaro  → praarbaro  = 森林 → 原始森林",
+          "遥远的过去：                              按 2",
+          "historio → prahistorio = 史前时代",
+          "homo    → prahomo    = 原始人",
+          "arbaro  → praarbaro  = 原始森林",
           "",
-          "实际用例：",
+          "实际用法：                                按 3",
           "Mia praavo venis el Francio.",
-          "（我的曾祖父来自法国。）",
-          "",
-          "PRA- 带你穿越时光！"
+          "= 我的曾祖父来自法国。"
         ],
+        "pronunciation_mappings": {
+          "1": "Avo. Praavo. Avino. Praavino. Patro. Prapatro. Prapraavo.",
+          "2": "Historio. Prahistorio. Homo. Prahomo. Arbaro. Praarbaro.",
+          "3": "Mia praavo venis el Francio."
+        },
         "pronunciation": "Leciono kvardek kvar"
       }
     ]
@@ -167,64 +233,99 @@
   {
     "lesson_id": "045",
     "trigger_word": "hipoteze",
-    "title": "第45课：被动分词",
+    "title": "第51课：被动分词",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "被动分词描述动作的「接受者」",
-          "在不同时态下的状态：",
+          "核心卡包教过 -ATA、-ITA、-OTA。",
+          "它们和 ESTI 连用构成被动语态：",
+          "主语承受动作。",
           "",
-          "-AT- = 正在被做（现在）",
-          "legi → legata = 正在被读",
-          "la legata libro = 正在被读的书",
+          "谁做的？用 DE 来说：                      按 1",
+          "La letero estis skribita de Ana.",
+          "= 这封信是安娜写的。",
           "",
-          "-IT- = 已被做完（过去）",
-          "legi → legita = 已被读过",
-          "la legita libro = 已被读过的书",
+          "-ATA = 进行中，-ITA = 已完成：            按 2",
+          "La ponto estas konstruata.",
+          "= 桥正在建造中。",
+          "La ponto estas konstruita.",
+          "= 桥已经建好了（完工）。",
           "",
-          "-OT- = 将要被做（将来）",
-          "legi → legota = 将被读",
-          "la legota libro = 将被读的书",
-          "",
-          "主动 vs 被动：",
-          "leganta viro = 正在读书的男人（他在读）",
-          "legita libro = 已被读过的书（它被读过）"
+          "ESTI 的任何形式都可以：                   按 3",
+          "La problemo estus solvita.",
+          "= 问题就会得到解决。"
         ],
+        "pronunciation_mappings": {
+          "1": "La letero estis skribita de Ana.",
+          "2": "La ponto estas konstruata. La ponto estas konstruita.",
+          "3": "La problemo estus solvita."
+        },
         "pronunciation": "Leciono kvardek kvin"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "作名词指人（-O）：                        按 1",
+          "la invitito = 被邀请的人",
+          "la elektito = 当选者",
+          "la akuzito  = 被告",
+          "",
+          "加 -E：「被……之后」：                     按 2",
+          "kiel dirite   = 如前所述",
+          "kiel anoncite = 如所公告",
+          "Invitite de amikoj, mi iris al la festo.",
+          "= 受朋友邀请，我去参加了聚会。",
+          "",
+          "主动还是被动？                            按 3",
+          "leganta viro = 正在读书的男人",
+          "legata libro = 正在被读的书",
+          "leginta viro = 读过书的男人",
+          "legita libro = 已被读过的书"
+        ],
+        "pronunciation_mappings": {
+          "1": "La invitito. La elektito. La akuzito.",
+          "2": "Kiel dirite. Kiel anoncite. Invitite de amikoj, mi iris al la festo.",
+          "3": "Leganta viro. Legata libro. Leginta viro. Legita libro."
+        }
       }
     ]
   },
   {
     "lesson_id": "046",
     "trigger_word": "mi misinformis",
-    "title": "第46课：前缀「mis-」",
+    "title": "第52课：前缀「MIS-」",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "mis- 的用法和英语完全一样：表示",
-          "错误地、不正确地或出错。",
+          "前缀 MIS- 表示「错误地、弄错」，",
+          "和英语的 mis- 一样。",
           "",
-          "kompreni → miskompreni（误解）",
-          "uzi      → misuzi     （滥用）",
-          "diri     → misdiri    （说错）",
+          "做错：                                    按 1",
+          "kompreni → miskompreni = 误解",
+          "informi  → misinformi  = 误传信息",
+          "uzi      → misuzi      = 误用、滥用",
+          "kalkuli  → miskalkuli  = 算错",
           "",
-          "它可用于任何动词，只需加上 mis-。",
-          "想想你熟悉的那些英语单词：",
+          "实际用法：                                按 2",
+          "Mi misinformis vin, pardonu!",
+          "= 我给了你错误的信息，抱歉！",
+          "Tio estis miskompreno.",
+          "= 那是一个误会。",
           "",
-          "misplace, misjudge, mislead, misread,",
-          "miscount, misquote, misfire, mislabel,",
-          "misinform, mismanage, mistrust, mishear",
-          "",
-          "同样的前缀，同样的逻辑，同样的直觉。",
-          "当你在世界语中看到 mis- 时，",
-          "你就已经知道它的意思了。"
+          "注意：英语的 mis- 并不都是 MIS-：",
+          "不信任 = malfido，错误 = eraro。"
         ],
+        "pronunciation_mappings": {
+          "1": "Kompreni. Miskompreni. Informi. Misinformi. Uzi. Misuzi. Kalkuli. Miskalkuli.",
+          "2": "Mi misinformis vin, pardonu! Tio estis miskompreno."
+        },
         "pronunciation": "Leciono kvardek ses"
       }
     ]

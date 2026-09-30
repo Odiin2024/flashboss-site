@@ -3,286 +3,458 @@
     "lesson_id": "010",
     "trigger_word": "accordo",
     "trigger_card_number": 1,
-    "title": "第10課: PASSATO PROSSIMO I",
+    "title": "第14課: PASSATO PROSSIMO I",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 2,
         "content": [
-          "PASSATO PROSSIMOは完了した行動に",
-          "使う過去時制（「～した」「～したことがあ",
-          "る」）です。",
+          "PASSATO PROSSIMO（近過去）= ふだん使う過去形。",
+          "2つの部分でできています：AVERE + 過去分詞。",
           "",
-          "構成:",
-          "   avereの現在形＋過去分詞",
-          "",
-          "   ho parlato     = 私は話しました",
-          "   hai mangiato   = あなたは食べました",
-          "   ha visto       = 彼／彼女は見ました",
-          "   abbiamo letto  = 私たちは読みました",
-          "   avete fatto    = あなたがたはしました",
-          "   hanno detto    = 彼らは言いました",
-          "",
-          "規則的な過去分詞:",
+          "規則的な過去分詞：                     1を押す",
           "   -are → -ato    parlare → parlato",
-          "   -ere → -uto    vedere → veduto（まれ！）",
-          "   -ire → -ito    finire → finito"
+          "   -ere → -uto    credere → creduto",
+          "   -ire → -ito    dormire → dormito",
+          "",
+          "人称で変わるのは avere だけ：          2を押す",
+          "   io       ho parlato        私は話した",
+          "   tu       hai parlato       君は話した",
+          "   lui/lei  ha parlato        彼／彼女は話した",
+          "   noi      abbiamo parlato   私たちは話した",
+          "   voi      avete parlato     君たちは話した",
+          "   loro     hanno parlato     彼らは話した",
+          "",
+          "1つの形で英語の過去形と現在完了：      3を押す",
+          "   ho mangiato = 食べた／もう食べた"
         ],
-        "pronunciation": "Lezione dieci"
+        "pronunciation": "Lezione quattordici",
+        "pronunciation_mappings": {
+          "1": "Parlare, parlato. Credere, creduto. Dormire, dormito.",
+          "2": "Io ho parlato. Tu hai parlato. Lui ha parlato. Noi abbiamo parlato. Voi avete parlato. Loro hanno parlato.",
+          "3": "Ho mangiato."
+        }
       },
       {
         "page": 2,
         "total_pages": 2,
         "content": [
-          "よく使う不規則な過去分詞:",
+          "不規則な過去分詞はグループに分かれます：",
           "",
-          "   fare       → fatto       （した／作った）",
-          "   dire       → detto       （言った）",
-          "   vedere     → visto       （見た）",
-          "   leggere    → letto       （読んだ）",
-          "   scrivere   → scritto     （書いた）",
-          "   prendere   → preso       （取った）",
-          "   mettere    → messo       （置いた）",
-          "   aprire     → aperto      （開けた）",
-          "   chiudere   → chiuso      （閉じた）",
-          "   bere       → bevuto      （飲んだ）",
-          "   chiedere   → chiesto     （尋ねた）",
-          "   rispondere → risposto    （答えた）",
-          "   vincere    → vinto       （勝った）",
-          "   perdere    → perso       （失った）",
-          "   conoscere  → conosciuto  （知っていた）"
-        ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "011",
-    "trigger_word": "cui",
-    "trigger_card_number": 55,
-    "title": "第11課: 再帰動詞",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
-        "content": [
-          "再帰動詞 — 動作が主語に返ります。",
-          "再帰代名詞を使います:",
+          "-TTO：                                 1を押す",
+          "   fare → fatto       dire → detto",
+          "   leggere → letto    scrivere → scritto",
+          "-SO：                                  2を押す",
+          "   prendere → preso   mettere → messo",
+          "   chiudere → chiuso  decidere → deciso",
+          "   perdere → perso",
+          "-STO と -TO：                          3を押す",
+          "   vedere → visto     chiedere → chiesto",
+          "   rispondere → risposto",
+          "   aprire → aperto    scoprire → scoperto",
+          "   vincere → vinto",
+          "仲間はずれ：bere → bevuto              4を押す",
           "",
-          "   io       mi       自分を",
-          "   tu       ti       きみ自身を",
-          "   lui/lei  si       彼/彼女自身を",
-          "   noi      ci       わたしたち自身を",
-          "   voi      vi       きみたち自身を",
-          "   loro     si       彼ら自身を",
-          "",
-          "活用: chiamarsi（～という名前だ）",
-          "   mi chiamo    ci chiamiamo",
-          "   ti chiami    vi chiamate",
-          "   si chiama    si chiamano",
-          "",
-          "   come ti chiami? — お名前は?",
-          "   mi chiamo Marco — わたしは Marco です"
+          "実際に使うと：                         5を押す",
+          "   ho fatto un errore = 間違いをした"
         ],
-        "pronunciation": "Lezione undici"
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "content": [
-          "よく使う再帰動詞:",
-          "   alzarsi    起きる",
-          "   lavarsi    体を洗う",
-          "   vestirsi   服を着る",
-          "   svegliarsi 目を覚ます",
-          "   divertirsi 楽しむ",
-          "   sposarsi   結婚する",
-          "",
-          "過去は ESSERE を使い、主語に一致:",
-          "   mi sono alzato/a（起きた）",
-          "   si è svegliata（彼女は目覚めた）",
-          "   ci siamo divertiti（楽しんだ）",
-          "",
-          "相互「お互いに」:",
-          "   ci vediamo（会いましょう）",
-          "   ci amiamo（愛し合っている）",
-          "",
-          "位置: 動詞の前、不定詞には後接。"
-        ]
+        "pronunciation_mappings": {
+          "1": "Fare, fatto. Dire, detto. Leggere, letto. Scrivere, scritto.",
+          "2": "Prendere, preso. Mettere, messo. Chiudere, chiuso. Decidere, deciso. Perdere, perso.",
+          "3": "Vedere, visto. Chiedere, chiesto. Rispondere, risposto. Aprire, aperto. Scoprire, scoperto. Vincere, vinto.",
+          "4": "Bere, bevuto.",
+          "5": "Ho fatto un errore."
+        }
       }
     ]
   },
   {
     "lesson_id": "012",
-    "trigger_word": "dolore",
-    "trigger_card_number": 75,
-    "title": "第12課: 近過去 II",
+    "trigger_word": "addio",
+    "trigger_card_number": 2,
+    "title": "第15課: PASSATO PROSSIMO II",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "avere ではなく ESSERE を使う動詞が",
+          "あります。そのとき過去分詞は形容詞と",
+          "同じように、主語に一致します：",
+          "",
+          "   Marco è partito                     1を押す",
+          "   Anna è partita",
+          "   Marco e Luca sono partiti",
+          "   Anna e Sara sono partite",
+          "   Marco e Anna sono partiti（男女混合：-i）",
+          "",
+          "ESSERE + 過去分詞（男／女）：          2を押す",
+          "   io       sono andato / andata",
+          "   tu       sei venuto / venuta",
+          "   lui/lei  è arrivato / arrivata",
+          "   noi      siamo usciti / uscite",
+          "   voi      siete tornati / tornate",
+          "   loro     sono nati / nate"
+        ],
+        "pronunciation": "Lezione quindici",
+        "pronunciation_mappings": {
+          "1": "Marco è partito. Anna è partita. Marco e Luca sono partiti. Anna e Sara sono partite. Marco e Anna sono partiti.",
+          "2": "Io sono andato. Io sono andata. Tu sei venuto. Tu sei venuta. Lui è arrivato. Lei è arrivata. Noi siamo usciti. Noi siamo uscite. Voi siete tornati. Voi siete tornate. Loro sono nati. Loro sono nate."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "どの動詞が ESSERE を取るのか？",
+          "",
+          "A地点からB地点への移動：               1を押す",
+          "   andare, venire, arrivare, partire,",
+          "   entrare, uscire, tornare,",
+          "   salire, scendere (sceso), cadere",
+          "とどまる：                             2を押す",
+          "   stare, restare, rimanere (rimasto)",
+          "なる・生まれる・死ぬ：                 3を押す",
+          "   diventare, nascere (nato),",
+          "   morire (morto)",
+          "ESSERE 自身も。過去分詞は stare と",
+          "同じ stato です：                      4を押す",
+          "   sono stato a Roma = ローマに行ってきた",
+          "",
+          "移動でも A→B でなければ AVERE：        5を押す",
+          "   ho camminato, ho nuotato, ho viaggiato"
+        ],
+        "pronunciation_mappings": {
+          "1": "Andare. Venire. Arrivare. Partire. Entrare. Uscire. Tornare. Salire. Scendere, sceso. Cadere.",
+          "2": "Stare. Restare. Rimanere, rimasto.",
+          "3": "Diventare. Nascere, nato. Morire, morto.",
+          "4": "Sono stato a Roma.",
+          "5": "Ho camminato. Ho nuotato. Ho viaggiato."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "PIACERE も ESSERE を取ります。過去分詞は",
+          "好かれる「物」（＝主語）に一致し、",
+          "mi や ti には一致しません：",
+          "",
+          "   mi è piaciuto il film               1を押す",
+          "   mi è piaciuta la pizza",
+          "   mi sono piaciuti i libri",
+          "   mi sono piaciute le case",
+          "   ti è piaciuta Roma? = ローマは気に入った？",
+          "",
+          "bastare, mancare, sembrare も同じ：    2を押す",
+          "   mi è bastato un caffè",
+          "   mi è sembrato strano",
+          "   mi sei mancato! = 会いたかった！",
+          "      （相手が女性なら：mi sei mancata!）",
+          "",
+          "天候の動詞 — どちらでも正解：          3を押す",
+          "   è piovuto / ha piovuto = 雨が降った"
+        ],
+        "pronunciation_mappings": {
+          "1": "Mi è piaciuto il film. Mi è piaciuta la pizza. Mi sono piaciuti i libri. Mi sono piaciute le case. Ti è piaciuta Roma?",
+          "2": "Mi è bastato un caffè. Mi è sembrato strano. Mi sei mancato! Mi sei mancata!",
+          "3": "È piovuto. Ha piovuto."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "014",
+    "trigger_word": "calma",
+    "trigger_card_number": 26,
+    "title": "第16課: 直接目的語代名詞",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "直接目的語代名詞は、動詞の働きを受ける",
+          "人や物（「～を」にあたる語）を表します：",
+          "",
+          "   mi 私               ci 私たち       1を押す",
+          "   ti 君               vi 君たち",
+          "   lo 彼／それ（男）   li 彼ら／それら（男）",
+          "   la 彼女／それ（女） le 彼女ら／それら（女）",
+          "   La あなた（Lei）",
+          "",
+          "動詞の前に置きます：                   2を押す",
+          "   vedi Marco? — sì, lo vedo.",
+          "   compri la pizza? — sì, la compro.",
+          "   leggi i libri? — sì, li leggo.",
+          "   chiami le ragazze? — sì, le chiamo.",
+          "",
+          "NON は代名詞の前に置きます：           3を押す",
+          "   non lo so = 知りません",
+          "   non ti sento = 君の声が聞こえない"
+        ],
+        "pronunciation": "Lezione sedici",
+        "pronunciation_mappings": {
+          "1": "Mi. Ti. Lo. La. Ci. Vi. Li. Le.",
+          "2": "Vedi Marco? Sì, lo vedo. Compri la pizza? Sì, la compro. Leggi i libri? Sì, li leggo. Chiami le ragazze? Sì, le chiamo.",
+          "3": "Non lo so. Non ti sento."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "PASSATO では、過去分詞が必ず",
+          "lo, la, li, le に一致します：          1を押す",
+          "   ho visto Marco → l'ho visto",
+          "   ho visto Maria → l'ho vista",
+          "   ho comprato i libri → li ho comprati",
+          "   ho letto le lettere → le ho lette",
+          "",
+          "lo と la は ho, hai, ha, hanno の前で",
+          "母音が落ちて l'ho になります。li と le は",
+          "落ちません：li ho visti。",
+          "",
+          "mi, ti, ci, vi では一致は任意で、",
+          "どちらも正解です：                     2を押す",
+          "   Anna, ti ho visto! / ti ho vista!",
+          "      = アンナ、君を見かけたよ！"
+        ],
+        "pronunciation_mappings": {
+          "1": "Ho visto Marco. L'ho visto. Ho visto Maria. L'ho vista. Ho comprato i libri. Li ho comprati. Ho letto le lettere. Le ho lette.",
+          "2": "Anna, ti ho visto! Anna, ti ho vista!"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "不定詞と使うときは、代名詞が語末に",
+          "くっつきます（語末の -e は落ちる）：   1を押す",
+          "   voglio vederlo = 彼に会いたい",
+          "   devo comprarla = それを買わなきゃ",
+          "   vado a prenderli = それらを取りに行く",
+          "",
+          "または voglio, devo などの前に置いても",
+          "同じ意味で、同じくらいよく使います：   2を押す",
+          "   lo voglio vedere",
+          "   la devo comprare",
+          "",
+          "ECCO + 代名詞で1語になります：         3を押す",
+          "   eccomi! = ここにいるよ！",
+          "   eccolo! = ほら、彼だ！／ほら、あった！",
+          "   eccola! eccoli! eccole!"
+        ],
+        "pronunciation_mappings": {
+          "1": "Voglio vederlo. Devo comprarla. Vado a prenderli.",
+          "2": "Lo voglio vedere. La devo comprare.",
+          "3": "Eccomi! Eccolo! Eccola! Eccoli! Eccole!"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "053",
+    "trigger_word": "cui",
+    "trigger_card_number": 55,
+    "title": "第17課: 関係代名詞 CHE と CUI",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 2,
         "content": [
-          "avere ではなく ESSERE を使う動詞が",
-          "あります。過去分詞は主語に一致します:",
+          "CHE = 英語の who, that, which にあたり、",
+          "名詞（人でも物でも）を詳しく説明します。",
+          "形は決して変わりません。",
           "",
-          "   sono andato/a    = 行った（男/女）",
-          "   sei venuto/a     = 来た",
-          "   è arrivato/a     = 着いた",
-          "   siamo partiti/e  = 出発した（複数）",
-          "   siete usciti/e   = 外出した",
-          "   sono nati/e      = 生まれた",
+          "主語としての CHE：                     1を押す",
+          "   la ragazza che parla",
+          "      = 話している女の子",
+          "   il treno che parte alle otto",
+          "      = 8時に出る電車",
+          "目的語としての CHE：                   2を押す",
+          "   il libro che leggo",
+          "      = 私が読んでいる本",
+          "   l'uomo che ho visto ieri",
+          "      = 私が昨日見かけた男の人",
           "",
-          "どの動詞が ESSERE を取るのか?",
-          "",
-          "多くは移動と変化の動詞です:",
-          "   andare, venire, arrivare, partire,",
-          "   uscire, entrare, salire, scendere,",
-          "   tornare, stare, restare,",
-          "   nascere, morire, diventare,",
-          "   essere 自身も: sono stato（だった）"
+          "英語では that を省けますが、",
+          "イタリア語では che を決して省きません。"
         ],
-        "pronunciation": "Lezione dodici"
+        "pronunciation": "Lezione diciassette",
+        "pronunciation_mappings": {
+          "1": "La ragazza che parla. Il treno che parte alle otto.",
+          "2": "Il libro che leggo. L'uomo che ho visto ieri."
+        }
       },
       {
         "page": 2,
         "total_pages": 2,
         "content": [
-          "再帰動詞は必ず ESSERE です:",
-          "   mi sono lavato/a（体を洗った）",
-          "   ci siamo visti/e（会った）",
+          "前置詞の後では、che は CUI になります：",
           "",
-          "piacere 型の動詞も ESSERE:",
-          "   mi è piaciuto il libro",
-          "   ci sono piaciute le case",
+          "   di cui     ～の、～について         1を押す",
+          "   a cui      ～に",
+          "   con cui    ～と一緒に、～で",
+          "   in cui     ～の中で、～する所",
+          "   per cui    ～のために；だから",
           "",
-          "天候の動詞 — どちらも可:",
-          "   è piovuto / ha piovuto",
+          "実際に使うと：                         2を押す",
+          "   il bar in cui prendo il caffè",
+          "      = 私がいつもコーヒーを飲むバール",
+          "   l'amica con cui studio",
+          "      = 一緒に勉強している友だち",
+          "   la persona di cui parlo",
+          "      = 私が話題にしている人",
           "",
-          "意味が変わる動詞もあります:",
-          "   ho corso（運動で走った）",
-          "   sono corso（急いで駆けつけた）",
-          "   ho cambiato（何かを変えた）",
-          "   sono cambiato（自分が変わった）",
-          "",
-          "覚え方:「どこへ行ったか」→ ESSERE。"
-        ]
+          "場所なら dove も使えます：             3を押す",
+          "   il bar dove prendo il caffè"
+        ],
+        "pronunciation_mappings": {
+          "1": "Di cui. A cui. Con cui. In cui. Per cui.",
+          "2": "Il bar in cui prendo il caffè. L'amica con cui studio. La persona di cui parlo.",
+          "3": "Il bar dove prendo il caffè."
+        }
       }
     ]
   },
   {
     "lesson_id": "013",
     "trigger_word": "arte",
-    "trigger_card_number": 99,
-    "title": "第13課: 助動詞",
+    "trigger_card_number": 91,
+    "title": "第18課: 補助動詞の過去",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 2,
         "content": [
-          "助動詞 — あとに原形動詞が続きます。",
+          "過去形では、補助動詞 dovere, potere, volere は",
+          "後ろに続く動詞の助動詞（avere か essere）",
+          "を借ります：",
           "",
-          "VOLERE（～したい）：",
-          "   voglio  vuoi  vuole  vogliamo",
-          "   volete  vogliono",
-          "   voglio mangiare = 私は食べたいです",
+          "AVERE を取る動詞 → avere：             1を押す",
+          "   ho dovuto lavorare = 働く必要があった",
+          "   non ho potuto dormire",
+          "      = 眠れなかった",
+          "ESSERE を取る動詞 → essere（一致）：   2を押す",
+          "   sono dovuto partire = 出発する必要があった",
+          "   è voluta venire = 彼女は来たがった",
           "",
-          "POTERE（～できる／可能）：",
-          "   posso  puoi  può  possiamo",
-          "   potete  possono",
-          "   posso uscire? = 外へ行ってもいいですか？",
+          "日常会話では、essere を取る動詞でも",
+          "avere がよく使われます：               3を押す",
+          "   ho dovuto partire",
           "",
-          "DOVERE（～しなければならない）：",
-          "   devo  devi  deve  dobbiamo",
-          "   dovete  devono",
-          "   devo studiare = 勉強しなければならない",
-          "",
-          "三つとも：［助動詞］＋［原形動詞］です。"
+          "単独で使うときは常に avere：           4を押す",
+          "   non ho potuto = できなかった"
         ],
-        "pronunciation": "Lezione tredici"
+        "pronunciation": "Lezione diciotto",
+        "pronunciation_mappings": {
+          "1": "Ho dovuto lavorare. Non ho potuto dormire.",
+          "2": "Sono dovuto partire. È voluta venire.",
+          "3": "Ho dovuto partire.",
+          "4": "Non ho potuto."
+        }
       },
       {
         "page": 2,
         "total_pages": 2,
         "content": [
-          "SAPERE（～できる／知っている）：",
+          "SAPERE と CONOSCERE：2つの「知る」。",
           "",
-          "   so      sappiamo",
-          "   sai     sapete",
-          "   sa      sanno",
+          "SAPERE = 事実・やり方を知っている      1を押す",
+          "   so la risposta = 答えを知っている",
+          "   sai dov'è? = どこにあるか知ってる？",
+          "   so nuotare = 泳げる",
           "",
-          "   so nuotare = 泳げる（助動詞）",
-          "   so la risposta = 答えを知っています",
+          "CONOSCERE = 人や場所を知っている       2を押す",
+          "   conosco, conosci, conosce,",
+          "   conosciamo, conoscete, conoscono",
+          "   conosci Marco? = マルコを知ってる？",
           "",
-          "SAPERE と CONOSCERE の違い：",
-          "   sapere ＝ 事実・情報・方法を知る",
-          "   conoscere ＝ 人や場所を知っている",
-          "   conosco Roma; so dov'è.",
-          "",
-          "助動詞の PASSATO PROSSIMO：",
-          "   ho voluto, ho potuto, ho dovuto, ho saputo.",
-          "   ほとんどはすべて avere を使います。",
-          "否定形：助動詞の前に「non」を置きます。"
-        ]
+          "PASSATO では意味が変わります：         3を押す",
+          "   ho saputo = 知った（情報を得た）",
+          "   ho conosciuto = 知り合った（初対面）",
+          "   l'ho conosciuta a Roma",
+          "      = 彼女とはローマで知り合った"
+        ],
+        "pronunciation_mappings": {
+          "1": "So la risposta. Sai dov'è? So nuotare.",
+          "2": "Conosco. Conosci. Conosce. Conosciamo. Conoscete. Conoscono. Conosci Marco?",
+          "3": "Ho saputo. Ho conosciuto. L'ho conosciuta a Roma."
+        }
       }
     ]
   },
   {
-    "lesson_id": "014",
-    "trigger_word": "arma",
-    "trigger_card_number": 176,
-    "title": "第14課: 直接目的語代名詞",
+    "lesson_id": "011",
+    "trigger_word": "svegliarsi",
+    "trigger_card_number": 142,
+    "title": "第19課: 再帰動詞",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 2,
         "content": [
-          "直接目的語代名詞は、 直接目的語（「何を」「誰",
-          "を」）を置き換えます。",
+          "再帰動詞：動作が自分自身に返ってきます。",
+          "不定詞は -SI で終わり、活用するときは",
+          "動詞の前に代名詞を置きます：",
           "",
-          "   私を       mi    彼を／それを（男） lo",
-          "   君を       ti    彼女を／それを（女）la",
-          "                   あなたを（丁寧） La",
-          "   私たちを   ci    彼らを（男）     li",
-          "   あなたたちをvi    彼女らを（女）   le",
+          "SVEGLIARSI =「目を覚ます、起きる」     1を押す",
+          "   io       mi sveglio   noi   ci svegliamo",
+          "   tu       ti svegli    voi   vi svegliate",
+          "   lui/lei  si sveglia   loro  si svegliano",
           "",
-          "位置：活用動詞の前:",
-          "   vedi Marco? — sì, lo vedo.",
-          "   compri il libro? — sì, lo compro.",
-          "   leggi le riviste? — sì, le leggo.",
+          "   mi sveglio alle sette               2を押す",
+          "      = 7時に起きる",
+          "   a che ora ti svegli?",
+          "      = 何時に起きるの？",
           "",
-          "母音またはhで始まる動詞の前の省略形:",
-          "   l'ho visto = 彼（それ）を見ました",
-          "   l'amo = 彼女（彼）を愛しています"
+          "1つはもう知っていますね：              3を押す",
+          "   mi chiamo Anna = 私の名前はアンナです",
+          "      （直訳：私は自分をアンナと呼ぶ）",
+          "   come ti chiami? come si chiama?"
         ],
-        "pronunciation": "Lezione quattordici"
+        "pronunciation": "Lezione diciannove",
+        "pronunciation_mappings": {
+          "1": "Io mi sveglio. Tu ti svegli. Lui si sveglia. Noi ci svegliamo. Voi vi svegliate. Loro si svegliano.",
+          "2": "Mi sveglio alle sette. A che ora ti svegli?",
+          "3": "Mi chiamo Anna. Come ti chiami? Come si chiama?"
+        }
       },
       {
         "page": 2,
         "total_pages": 2,
         "content": [
-          "直接目的語代名詞と複合過去時制",
-          "（passato prossimo）での過去分詞の性数一致:",
+          "ほかによく使う再帰動詞：               1を押す",
+          "   alzarsi = 起き上がる、立ち上がる",
+          "   vestirsi = 服を着る",
+          "   lavarsi = 体（顔・手）を洗う",
+          "   divertirsi = 楽しむ",
+          "   sentirsi = 気分が～だ：mi sento bene",
           "",
-          "   ho visto Maria → l'ho vista",
-          "   ho comprato i libri → li ho comprati",
-          "   ho letto le riviste → le ho lette",
+          "過去は常に ESSERE。主語に一致します：  2を押す",
+          "   mi sono svegliato / svegliata",
+          "   ci siamo divertiti = 楽しかった",
           "",
-          "過去分詞は代名詞（lo/la/li/le）に一致します",
-          "— mi/ti/ci/viとは一致しません。",
+          "不定詞と使うときは、代名詞が語末に",
+          "くっつき、主語に合わせて変わります：   3を押す",
+          "   devo svegliarmi presto",
+          "   devi svegliarti presto",
           "",
-          "不定詞と使う時 — 代名詞はくっつく:",
-          "   voglio vederlo（彼を見たい）",
-          "   devo leggerla（それを読まなければ）",
-          "   vado a comprarli（それらを買いに行く）",
-          "",
-          "否定形 — 「non」は代名詞の前に置きます:",
-          "   non lo vedo = 彼を見ません",
-          "   non l'ho letto = それを読んでいません"
-        ]
+          "複数形では「お互いに」の意味にも：     4を押す",
+          "   ci vediamo domani! = また明日！"
+        ],
+        "pronunciation_mappings": {
+          "1": "Alzarsi. Vestirsi. Lavarsi. Divertirsi. Sentirsi. Mi sento bene.",
+          "2": "Mi sono svegliato. Mi sono svegliata. Ci siamo divertiti.",
+          "3": "Devo svegliarmi presto. Devi svegliarti presto.",
+          "4": "Ci vediamo domani!"
+        }
       }
     ]
   }

@@ -1,77 +1,9 @@
 [
   {
-    "lesson_id": "032",
-    "trigger_word": "dictadura",
-    "trigger_card_number": 685,
-    "title": "第32課: 不定過去接続法",
-    "header_color": "yellow",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
-        "content": [
-          "不定過去接続法は、過去の願望、",
-          "疑念、仮定を表すのに使います。",
-          "",
-          "活用法 — 過去形 ellos から：         1を押す",
-          "hablaron → habla-RA または habla-SE",
-          "",
-          "-AR: hablara, hablaras, hablara,",
-          "     habláramos, hablaran",
-          "",
-          "-ER: comiera, comieras, comiera,     2を押す",
-          "     comiéramos, comieran",
-          "",
-          "-IR: viviera, vivieras, viviera,",
-          "     viviéramos, vivieran",
-          "",
-          "－RA 形と －SE 形の両方が存在します。",
-          "ラテンアメリカでは －RA がより一般的です。",
-          "読解では両方とも見かけます。"
-        ],
-        "pronunciation": "Lección treinta y dos",
-        "pronunciation_mappings": {
-          "1": "hablara, hablaras, hablara, habláramos, hablaran",
-          "2": "comiera, comieras, comiera, comiéramos, comieran"
-        }
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "content": [
-          "過去の願望：                         1を押す",
-          "Quería que vinieras.",
-          "（君に来てほしかった。）",
-          "",
-          "過去の感情：                         2を押す",
-          "Me sorprendió que dijera eso.",
-          "（彼があれを言ったことに驚いた。）",
-          "",
-          "仮定法（si 節）：                    3を押す",
-          "Si pudiera, lo haría.",
-          "（もしできたら、やるのに。）",
-          "",
-          "COMO SI（まるで～のように）：        4を押す",
-          "Habla como si fuera experto.",
-          "（専門家みたいに話す。）",
-          "",
-          "OJALÁ ＋ 不定過去接続法：",
-          "Ojalá pudiera volar.（飛べたらいいのに。）"
-        ],
-        "pronunciation_mappings": {
-          "1": "quería que vinieras",
-          "2": "me sorprendió que dijera eso",
-          "3": "si pudiera, lo haría",
-          "4": "habla como si fuera experto, ojalá pudiera volar"
-        }
-      }
-    ]
-  },
-  {
-    "lesson_id": "033",
+    "lesson_id": "035",
     "trigger_word": "déficit",
-    "trigger_card_number": 719,
-    "title": "第33課: 上級接続詞",
+    "trigger_card_number": 729,
+    "title": "第35課: 上級接続詞",
     "header_color": "yellow",
     "pages": [
       {
@@ -82,30 +14,31 @@
           "スペイン語を区別します：",
           "",
           "譲歩：                               1を押す",
-          "",
-          "aunque（たとえ～でも）",
+          "aunque ＋ 直説法 ＝ ～だけれども（事実）",
+          "aunque ＋ 接続法 ＝ たとえ～でも",
           "a pesar de que（～にもかかわらず）",
+          "Aunque llueve, voy a salir.",
+          "（雨が降っているけれど、出かけます。）",
           "Aunque llueva, voy a salir.",
           "（たとえ雨が降っても、出かけます。）",
           "",
-          "目的：                               2を押す",
-          "",
+          "目的（常に接続法）：                 2を押す",
           "para que + 接続法（～するために）",
           "a fin de que（～するため）",
           "Te lo explico para que entiendas.",
           "（理解できるように説明します。）"
         ],
-        "pronunciation": "Lección treinta y tres",
+        "pronunciation": "Lección treinta y cinco",
         "pronunciation_mappings": {
-          "1": "aunque llueva, voy a salir",
-          "2": "te lo explico para que entiendas"
+          "1": "Aunque llueve, voy a salir. Aunque llueva, voy a salir.",
+          "2": "Te lo explico para que entiendas."
         }
       },
       {
         "page": 2,
         "total_pages": 2,
         "content": [
-          "条件：                               1を押す",
+          "条件（常に接続法）：                 1を押す",
           "",
           "con tal de que（～さえすれば）",
           "siempre y cuando（～である限り）",
@@ -120,22 +53,22 @@
           "En cuanto llegues, llámame.",
           "（着いたらすぐ電話して。）",
           "",
-          "注：これらすべての接続詞は、",
-          "未来または不確実な事柄を",
-          "表すとき接続法を伴います。"
+          "時の接続詞：未来のことなら接続法、",
+          "事実や習慣なら直説法：",
+          "En cuanto llegó, me llamó.（事実）"
         ],
         "pronunciation_mappings": {
-          "1": "te ayudo con tal de que me escuches",
-          "2": "en cuanto llegues, llámame"
+          "1": "Te ayudo con tal de que me escuches.",
+          "2": "En cuanto llegues, llámame. En cuanto llegó, me llamó."
         }
       }
     ]
   },
   {
-    "lesson_id": "034",
+    "lesson_id": "036",
     "trigger_word": "robo",
-    "trigger_card_number": 757,
-    "title": "第34課：名詞化",
+    "trigger_card_number": 767,
+    "title": "第36課：名詞化",
     "header_color": "yellow",
     "pages": [
       {
@@ -161,20 +94,20 @@
           "-dad: posible → posibilidad",
           "-eza: bello → belleza"
         ],
-        "pronunciation": "Lección treinta y cuatro",
+        "pronunciation": "Lección treinta y seis",
         "pronunciation_mappings": {
-          "1": "lo importante es estudiar, lo bueno y lo malo",
-          "2": "el saber no ocupa lugar, el comer bien es fundamental",
-          "3": "conocimiento, educación, posibilidad, belleza"
+          "1": "Lo importante es estudiar. Lo bueno y lo malo.",
+          "2": "El saber no ocupa lugar. El comer bien es fundamental.",
+          "3": "Conocimiento. Educación. Posibilidad. Belleza."
         }
       }
     ]
   },
   {
-    "lesson_id": "035",
+    "lesson_id": "037",
     "trigger_word": "implementar",
-    "trigger_card_number": 800,
-    "title": "第35課: 直説法 vs 接続法",
+    "trigger_card_number": 808,
+    "title": "第37課: 直説法 vs 接続法",
     "header_color": "yellow",
     "pages": [
       {
@@ -192,20 +125,20 @@
           "No creo que sea verdad.（それは",
           "本当だとは思いません。）— 私は疑っている",
           "",
-          "Busco a alguien que habla inglés.    3を押す",
-          "（英語を話す人を探しています。）",
-          "— その人は存在すると分かっている",
+          "Busco al guía que habla inglés.      3を押す",
+          "（英語を話すあのガイドを探している。）",
+          "— 知っている特定のガイド",
           "",
-          "Busco a alguien que hable inglés.    4を押す",
-          "（英語を話す人を探しています。）",
-          "— この文脈で存在するかどうか不明"
+          "Busco un guía que hable inglés.      4を押す",
+          "（英語を話すガイドを探している。）",
+          "— 誰でもいい。いるかどうかは不明"
         ],
-        "pronunciation": "Lección treinta y cinco",
+        "pronunciation": "Lección treinta y siete",
         "pronunciation_mappings": {
-          "1": "creo que es verdad",
-          "2": "no creo que sea verdad",
-          "3": "busco a alguien que habla inglés",
-          "4": "busco a alguien que hable inglés"
+          "1": "Creo que es verdad.",
+          "2": "No creo que sea verdad.",
+          "3": "Busco al guía que habla inglés.",
+          "4": "Busco un guía que hable inglés."
         }
       }
     ]

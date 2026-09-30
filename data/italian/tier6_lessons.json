@@ -3,7 +3,7 @@
     "lesson_id": "021",
     "trigger_word": "cappuccino",
     "trigger_card_number": 1001,
-    "title": "LESSON 21: ITALIAN MEALS",
+    "title": "LESSON 27: ITALIAN MEALS",
     "header_color": "magenta",
     "pages": [
       {
@@ -17,7 +17,7 @@
           "COLAZIONE (breakfast, 7-9 AM):",
           "   cappuccino + cornetto at the bar",
           "   standing at the banco (counter)",
-          "   never eggs, bacon, or cereal",
+          "   never eggs or bacon",
           "",
           "PRANZO (lunch, 12:30-2 PM):",
           "   traditionally the main meal",
@@ -73,9 +73,78 @@
           "     after a meal (locals will notice)",
           "   caffè = espresso, any time of day",
           "   macchiato = espresso + drop of milk",
-          "   caffè corretto = espresso + grappa"
+          "   caffè corretto = espresso + grappa",
+          "ORDER: un caffè, per favore.          Press 1"
         ],
-        "pronunciation": "Un caffè, per favore."
+        "pronunciation_mappings": {
+          "1": "Un caffè, per favore."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "047",
+    "trigger_word": "espresso",
+    "trigger_card_number": 1002,
+    "title": "LESSON 28: SI IMPERSONALE",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "SI + a verb = what PEOPLE do in general.",
+          "The verb stays in the 3rd person",
+          "singular (the lui/lei form).",
+          "",
+          "   Al banco si beve in fretta.        Press 1",
+          "      = At the counter you drink fast.",
+          "   In Italia si mangia tardi.         Press 2",
+          "      = In Italy people eat late.",
+          "   Come si dice in italiano?          Press 3",
+          "      = How do you say it in Italian?",
+          "   Si dice così.                      Press 4",
+          "      = That's how you say it.",
+          "",
+          "English has no one word for it: use",
+          "'you', 'one', 'they' or the passive."
+        ],
+        "pronunciation": "Si vive bene qui.",
+        "pronunciation_mappings": {
+          "1": "Al banco si beve in fretta.",
+          "2": "In Italia si mangia tardi.",
+          "3": "Come si dice in italiano?",
+          "4": "Si dice così."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "A PLURAL noun makes the verb plural:",
+          "   Qui si vende il pane.              Press 1",
+          "      = Bread is sold here.",
+          "   Qui si vendono i giornali.",
+          "      = Newspapers are sold here.",
+          "",
+          "REFLEXIVE verbs: ci si, never si si   Press 2",
+          "   In Italia ci si saluta con due baci.",
+          "      = In Italy people greet with two",
+          "        kisses.",
+          "",
+          "ON SIGNS AND SHOP DOORS:              Press 3",
+          "   Si affitta.  = For rent.",
+          "   Si vende.    = For sale.",
+          "   Si prega di non fumare.",
+          "      = Please do not smoke.",
+          "   Older forms, still seen: affittasi,",
+          "   vendesi."
+        ],
+        "pronunciation_mappings": {
+          "1": "Qui si vende il pane. Qui si vendono i giornali.",
+          "2": "In Italia ci si saluta con due baci.",
+          "3": "Si affitta. Si vende. Si prega di non fumare."
+        }
       }
     ]
   }

@@ -1,9 +1,9 @@
 [
   {
-    "lesson_id": "038",
+    "lesson_id": "049",
     "trigger_word": "Vergangenheit",
     "trigger_card_number": 820,
-    "title": "第38課：分詞による修飾",
+    "title": "第49課：分詞による修飾",
     "header_color": "cyan",
     "pages": [
       {
@@ -29,14 +29,14 @@
           "die neu eröffnete Bar",
           "(新しく開店したバー)"
         ],
-        "pronunciation": "Lektion 38"
+        "pronunciation": "Lektion 49"
       },
       {
         "page": 2,
         "total_pages": 2,
         "content": [
           "現在分詞 (進行中の動作):",
-          "作り方: 語幹 + 'd' + 形容詞語尾",
+          "作り方: 不定詞 + 'd' + 形容詞語尾",
           "",
           "der laufende Mann (走っている男)",
           "die kommende Woche (次の週、来週)",
@@ -45,7 +45,7 @@
           "der schnell laufende Mann",
           "(速く走っている男)",
           "",
-          "die nächste Woche kommende Prüfung",
+          "die nächste Woche stattfindende Prüfung",
           "(来週行われる試験)",
           "",
           "複雑な例:",
@@ -58,10 +58,10 @@
     ]
   },
   {
-    "lesson_id": "049",
+    "lesson_id": "050",
     "trigger_word": "damals",
     "trigger_card_number": 823,
-    "title": "第49課：過去形 (Präteritum)",
+    "title": "第50課：過去形 (Präteritum)",
     "header_color": "cyan",
     "pages": [
       {
@@ -75,19 +75,19 @@
           "",
           "過去形 / Präteritum (書き言葉・改まった場):",
           "Ich aß. (食べました)",
-          "Damals war alles anders. (当時は違っていた)",
+          "Damals war alles anders.",
+          "(当時はすべてが違っていた)",
           "",
           "Präteritum を使う場面:",
           "物語、報告、硬い文章、長い叙述",
-          "sein、haben、話法助動詞は常に Präteritum",
+          "sein、haben、話法助動詞は話し言葉でも普通",
           "",
-          "規則動詞:",
-          "語幹に -TE を付けます",
+          "規則動詞: 語幹に -TE を付けます",
           "machen → ich machte (作った)",
           "sagen → ich sagte (言った)",
           "arbeiten → ich arbeitete (働いた)"
         ],
-        "pronunciation": "Lektion 49"
+        "pronunciation": "Lektion 50"
       },
       {
         "page": 2,
@@ -116,17 +116,17 @@
     ]
   },
   {
-    "lesson_id": "043",
+    "lesson_id": "051",
     "trigger_word": "ehemalig",
     "trigger_card_number": 826,
-    "title": "第43課：状態受動と動作受動",
+    "title": "第51課：状態受動と動作受動",
     "header_color": "cyan",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "動作受動は第35課で学びました。",
+          "動作受動は第36課で学びました。",
           "二つ目の状態受動は「状態」を表します:",
           "",
           "動作: Das Fenster wird geöffnet.",
@@ -142,17 +142,17 @@
           "ist verlobt (婚約している)",
           "ist vorbereitet (準備ができている)",
           "",
-          "ehemalig (元〜) は過去の状態を表します:",
-          "ein ehemaliger Mitarbeiter (元従業員)"
+          "Mein ehemaliger Kollege ist verheiratet.",
+          "(元同僚は結婚している ← 状態)"
         ],
-        "pronunciation": "Lektion 43"
+        "pronunciation": "Lektion 51"
       }
     ]
   },
   {
     "lesson_id": "052",
     "trigger_word": "damit",
-    "trigger_card_number": 857,
+    "trigger_card_number": 856,
     "title": "第52課：da- と wo- の複合語",
     "header_color": "cyan",
     "pages": [
@@ -166,11 +166,11 @@
           "",
           "日本語:",
           "ボールがある。ときどきそれで遊ぶ。",
-          "何で遊ぶの? ぼくのボール。",
+          "何で遊ぶの? ぼくのボールで。",
           "",
           "ドイツ語:",
           "Ich habe einen BALL. Ich spiele DAMIT.",
-          "WOMIT spielst du? Meinen BALL.",
+          "WOMIT spielst du? Mit meinem BALL.",
           "",
           "damit = da + mit (それで)",
           "womit = wo + mit (何で)",
@@ -197,8 +197,11 @@
           "Ich warte auf den Bus. Ich warte darauf.",
           "(バスを待っています。それを待っています)",
           "",
-          "Ich denke an die Prüfung. Ich denke daran。（",
-          "試験を考えてます。それについて）"
+          "Ich denke an die Prüfung. Ich denke daran.",
+          "(試験のことを考えています。それを考えています)",
+          "",
+          "注意: 接続詞の damit (〜するように) は",
+          "別の語で、動詞は文末に置かれます。"
         ]
       },
       {
@@ -228,7 +231,7 @@
   {
     "lesson_id": "053",
     "trigger_word": "nachdem",
-    "trigger_card_number": 865,
+    "trigger_card_number": 864,
     "title": "第53課：過去完了",
     "header_color": "cyan",
     "pages": [
@@ -247,11 +250,11 @@
           "Ich hatte gegessen. (食べ終えていた)",
           "Er war gegangen. (行ってしまっていた)",
           "",
-          "'nachdem' (〜した後で) とともに: Nachdem ich",
-          "gegessen hatte, ging ich spazieren. (食べた後",
-          "で、散歩に行きました) Nachdem sie gegangen",
-          "war, rief er an. (彼女が帰った後で、彼は電話",
-          "しました)",
+          "'nachdem' (〜した後で) とともに:",
+          "Nachdem ich gegessen hatte,",
+          "ging ich spazieren. (食べた後、散歩に行った)",
+          "Nachdem sie gegangen war, rief er an.",
+          "(彼女が帰った後、彼は電話した)",
           "",
           "'nachdem' + 過去完了 → 主文は過去形"
         ],
@@ -260,78 +263,10 @@
     ]
   },
   {
-    "lesson_id": "050",
-    "trigger_word": "sobald",
-    "trigger_card_number": 869,
-    "title": "第50課：zu 不定詞",
-    "header_color": "cyan",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "ドイツ語は不定詞によく ZU を付けます:",
-          "",
-          "基本の形: 動詞 + ZU + 不定詞",
-          "Ich versuche zu schlafen. (寝ようとする)",
-          "Es macht Spaß zu tanzen. (踊るのは楽しい)",
-          "Ich habe keine Zeit zu kochen.",
-          "(料理する時間がありません)",
-          "",
-          "分離動詞: ZU は接頭辞と動詞の間に入ります:",
-          "aufzustehen (起きる)",
-          "anzukommen (到着する)",
-          "",
-          "Ich vergesse oft aufzustehen.",
-          "(よく起きるのを忘れます)",
-          "",
-          "話法助動詞や lassen には ZU を付けません!",
-          "",
-          "'sobald'（〜するとすぐ）は時の副文を導く。"
-        ],
-        "pronunciation": "Lektion 50"
-      }
-    ]
-  },
-  {
-    "lesson_id": "041",
-    "trigger_word": "Verwaltung",
-    "trigger_card_number": 907,
-    "title": "第41課：官庁ドイツ語",
-    "header_color": "cyan",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "Behördendeutsch (官庁のドイツ語) には",
-          "はっきりした特徴があります:",
-          "",
-          "名詞化が多い (第37課):",
-          "die Verwaltung (行政、管理部門)",
-          "das Ausfüllen (記入すること)",
-          "die Bearbeitung (処理)",
-          "",
-          "受動態が好まれる:",
-          "Der Antrag wird bearbeitet. (処理中です)",
-          "Die Unterlagen müssen eingereicht werden.",
-          "",
-          "決まった言い回し:",
-          "hiermit beantrage ich... (ここに申請します)",
-          "mit freundlichen Grüßen (敬具)",
-          "in Bezug auf (〜に関して)",
-          "",
-          "日常のドイツ語よりずっと硬い文体です!"
-        ],
-        "pronunciation": "Lektion 41"
-      }
-    ]
-  },
-  {
-    "lesson_id": "055",
+    "lesson_id": "054",
     "trigger_word": "Staat",
-    "trigger_card_number": 906,
-    "title": "第55課:地図で見るドイツ",
+    "trigger_card_number": 905,
+    "title": "第54課:地図で見るドイツ",
     "header_color": "cyan",
     "pages": [
       {
@@ -340,22 +275,22 @@
         "content": [
           "ドイツとその都市や名所を、ドイツ人の",
           "言い方で。1キーで2つ：",
-          "ドイツ          Deutschland           1を押す",
-          "ベルリン        Berlin",
-          "ハンブルク      Hamburg               2を押す",
-          "ミュンヘン      München",
-          "ケルン          Köln                  3を押す",
-          "フランクフルト  Frankfurt",
-          "Stuttgart       Stuttgart             4を押す",
-          "ライプツィヒ    Leipzig",
-          "バイエルン      Bayern                5を押す",
-          "ライン川        der Rhein",
-          "アルプス        die Alpen             6を押す",
-          "北海            die Nordsee",
-          "Brandenburg Gate Brandenburger Tor    7を押す",
-          "黒い森          der Schwarzwald",
-          "ボーデン湖      der Bodensee          8を押す",
-          "バルト海        die Ostsee"
+          "ドイツ           Deutschland          1を押す",
+          "ベルリン         Berlin",
+          "ハンブルク       Hamburg              2を押す",
+          "ミュンヘン       München",
+          "ケルン           Köln                 3を押す",
+          "フランクフルト   Frankfurt",
+          "Stuttgart        Stuttgart            4を押す",
+          "ライプツィヒ     Leipzig",
+          "バイエルン       Bayern               5を押す",
+          "ライン川         der Rhein",
+          "アルプス         die Alpen            6を押す",
+          "北海             die Nordsee",
+          "黒い森           der Schwarzwald      7を押す",
+          "Brandenburg Gate das Brandenburger Tor",
+          "ボーデン湖       der Bodensee         8を押す",
+          "バルト海         die Ostsee"
         ],
         "pronunciation_mappings": {
           "1": "Deutschland. Berlin.",
@@ -364,7 +299,7 @@
           "4": "Stuttgart. Leipzig.",
           "5": "Bayern. Der Rhein.",
           "6": "Die Alpen. Die Nordsee.",
-          "7": "Brandenburger Tor. Der Schwarzwald.",
+          "7": "Der Schwarzwald. Das Brandenburger Tor.",
           "8": "Der Bodensee. Die Ostsee."
         }
       },
@@ -374,31 +309,31 @@
         "content": [
           "国とその首都をドイツ語で。1キーで2行表示：",
           "",
-          "ドイツ       Deutschland Berlin       1を押す",
-          "フランス     Frankreich  Paris",
-          "イタリア     Italien     Rom          2を押す",
-          "スペイン     Spanien     Madrid",
-          "英国         Britannien  London       3を押す",
-          "ポルトガル   Portugal    Lissabon",
-          "オランダ     Niederlande Amsterdam    4を押す",
-          "スイス       Schweiz     Bern",
-          "Austria      Österreich  Wien         5を押す",
-          "ポーランド   Polen       Warschau",
-          "Sweden       Schweden    Stockholm    6を押す",
-          "ロシア       Russland    Moskau",
-          "ウクライナ   Ukraine     Kiew         7を押す",
-          "トルコ       Türkei      Ankara",
-          "チェコ       Tschechien  Prag         8を押す",
-          "南アフリカ   Südafrika   Pretoria"
+          "ドイツ       Deutschland     Berlin   1を押す",
+          "フランス     Frankreich      Paris",
+          "イタリア     Italien         Rom      2を押す",
+          "スペイン     Spanien         Madrid",
+          "英国         Großbritannien  London   3を押す",
+          "ポルトガル   Portugal        Lissabon",
+          "スイス       die Schweiz     Bern     4を押す",
+          "オランダ     die Niederlande Amsterdam",
+          "オーストリア Österreich      Wien     5を押す",
+          "ポーランド   Polen           Warschau",
+          "ロシア       Russland        Moskau   6を押す",
+          "スウェーデン Schweden        Stockholm",
+          "ウクライナ   die Ukraine     Kiew     7を押す",
+          "トルコ       die Türkei      Ankara",
+          "チェコ       Tschechien      Prag     8を押す",
+          "南アフリカ   Südafrika       Pretoria"
         ],
         "pronunciation_mappings": {
           "1": "Deutschland. Berlin. Frankreich. Paris.",
           "2": "Italien. Rom. Spanien. Madrid.",
-          "3": "Britannien. London. Portugal. Lissabon.",
-          "4": "Niederlande. Amsterdam. Schweiz. Bern.",
+          "3": "Großbritannien. London. Portugal. Lissabon.",
+          "4": "Die Schweiz. Bern. Die Niederlande. Amsterdam.",
           "5": "Österreich. Wien. Polen. Warschau.",
-          "6": "Schweden. Stockholm. Russland. Moskau.",
-          "7": "Ukraine. Kiew. Türkei. Ankara.",
+          "6": "Russland. Moskau. Schweden. Stockholm.",
+          "7": "Die Ukraine. Kiew. Die Türkei. Ankara.",
           "8": "Tschechien. Prag. Südafrika. Pretoria."
         }
       },
@@ -406,13 +341,13 @@
         "page": 3,
         "total_pages": 3,
         "content": [
-          "国名・国民・形容詞：Deutschland、",
-          "Deutscher、deutsch。さらに16か国：",
+          "Deutschland: ein Deutscher, deutsch.",
+          "さらに16か国とその首都：",
           "デンマーク   Dänemark    Kopenhagen   1を押す",
           "ベルギー     Belgien     Brüssel",
           "アメリカ     die USA     Washington   2を押す",
           "カナダ       Kanada      Ottawa",
-          "メキシコ     Mexiko      Mexiko City  3を押す",
+          "メキシコ     Mexiko      Mexiko-City  3を押す",
           "ブラジル     Brasilien   Brasília",
           "中国         China       Peking       4を押す",
           "日本         Japan       Tokio",
@@ -428,13 +363,47 @@
         "pronunciation_mappings": {
           "1": "Dänemark. Kopenhagen. Belgien. Brüssel.",
           "2": "Die USA. Washington. Kanada. Ottawa.",
-          "3": "Mexiko. Mexiko City. Brasilien. Brasília.",
+          "3": "Mexiko. Mexiko-City. Brasilien. Brasília.",
           "4": "China. Peking. Japan. Tokio.",
           "5": "Südkorea. Seoul. Indien. Neu-Delhi.",
           "6": "Indonesien. Jakarta. Australien. Canberra.",
           "7": "Ägypten. Kairo. Kenia. Nairobi.",
           "8": "Nigeria. Abuja. Luxemburg. Luxemburg."
         }
+      }
+    ]
+  },
+  {
+    "lesson_id": "055",
+    "trigger_word": "Verwaltung",
+    "trigger_card_number": 906,
+    "title": "第55課：官庁ドイツ語",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "Behördendeutsch (官庁のドイツ語) には",
+          "はっきりした特徴があります:",
+          "",
+          "名詞化が多い (第42課):",
+          "die Verwaltung (行政、管理部門)",
+          "das Ausfüllen (記入すること)",
+          "die Bearbeitung (処理)",
+          "",
+          "受動態が好まれる:",
+          "Der Antrag wird bearbeitet. (処理中です)",
+          "Die Unterlagen müssen eingereicht werden.",
+          "",
+          "決まった言い回し:",
+          "hiermit beantrage ich... (ここに申請します)",
+          "mit freundlichen Grüßen (敬具)",
+          "in Bezug auf (〜に関して)",
+          "",
+          "日常のドイツ語よりずっと硬い文体です!"
+        ],
+        "pronunciation": "Lektion 55"
       }
     ]
   }

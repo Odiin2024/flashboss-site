@@ -1,74 +1,168 @@
 [
   {
-    "lesson_id": "047",
-    "trigger_word": "arbaro",
-    "title": "第47课：复合时态",
+    "lesson_id": "052",
+    "trigger_word": "mi revenos",
+    "title": "第53课：前缀「RE-」",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "将 ESTI 与分词结合，",
-          "即可构成细腻的复合时态。",
+          "前缀 RE- 表示「再次」或「返回」：",
+          "动作再发生一次，或者回到它",
+          "原来的地方。",
           "",
-          "进行体（动作正在进行）：",
-          "Mi estas leganta. = 我正在读。",
-          "Mi estis leganta. = 我当时正在读。",
-          "Mi estos leganta. = 我将会在读。",
+          "再次：                                    按 1",
+          "legi     → relegi     = 读 → 重读",
+          "fari     → refari     = 做 → 重做",
+          "kontakti → rekontakti = 再次联系",
           "",
-          "完成体（动作已完成）：",
-          "Mi estas leginta. = 我已经读过。",
-          "Mi estis leginta. = 我那时已经读过。",
-          "Mi estos leginta. = 我到时将已读过。",
+          "返回：                                    按 2",
+          "veni     → reveni     = 来 → 回来",
+          "doni     → redoni     = 给 → 归还",
+          "sendi    → resendi    = 寄 → 寄回",
           "",
-          "被动复合时态：",
-          "La libro estas legita. = 这本书已被读过。",
-          "La libro estis legata. = 它当时正被读着。",
-          "",
-          "这些结构能精准区分时间！"
+          "实际用法：                                按 3",
+          "Mi revenos al la temo morgaŭ.",
+          "= 我明天再回到这个话题。",
+          "Ĝis revido! = 再见！（后会有期！）"
         ],
-        "pronunciation": "Leciono kvardek sep"
+        "pronunciation_mappings": {
+          "1": "Legi. Relegi. Fari. Refari. Kontakti. Rekontakti.",
+          "2": "Veni. Reveni. Doni. Redoni. Sendi. Resendi.",
+          "3": "Mi revenos al la temo morgaŭ. Ĝis revido!"
+        },
+        "pronunciation": "Leciono kvindek du"
       }
     ]
   },
   {
     "lesson_id": "048",
-    "trigger_word": "pikniko",
-    "title": "第48课：词性派生",
+    "trigger_word": "diskutrondo",
+    "title": "第54课：构词",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "世界语的每个单词只需更换词尾",
-          "就能改变词性！",
+          "任何词根都可以加任何词尾，只要",
+          "意思说得通：",
           "",
-          "同一词根：",
-          "bel-（词根，义为「美」）",
-          "bela    = 美的（形容词 -a）",
-          "bele    = 美地（副词 -e）",
-          "belo    = 美（名词 -o）",
-          "beli    = 显得美（动词 -i）",
+          "SUKCES-（成功）：                         按 1",
+          "sukceso = 成功         sukcesi = 获得成功",
+          "sukcesa = 成功的       sukcese = 成功地",
           "",
-          "vera（真的）→vere（真地）→vero（真理）",
-          "varma（暖的）→varme（暖地）→varmo（暖意）",
+          "FIN-（结束）：                            按 2",
+          "fino = 结尾            fini = 结束",
+          "fina = 最后的          fine = 终于",
           "",
-          "再加上词缀：",
-          "belega   = 极美（-eg- 增强）",
-          "beligi   = 使变美（-ig- 使动）",
-          "beleco   = 美（抽象性质 -ec-）",
-          "一个词根，无限可能！"
+          "名词词根变成动词：                        按 3",
+          "telefono → telefoni = 电话 → 打电话",
+          "martelo  → marteli  = 锤子 → 用锤子敲",
+          "krono    → kroni    = 王冠 → 加冕"
         ],
+        "pronunciation_mappings": {
+          "1": "Sukceso. Sukcesi. Sukcesa. Sukcese.",
+          "2": "Fino. Fini. Fina. Fine.",
+          "3": "Telefono. Telefoni. Martelo. Marteli. Krono. Kroni."
+        },
         "pronunciation": "Leciono kvardek ok"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "复合词把词根连在一起。最后一个词根",
+          "是主体：它说明这个东西「是什么」；",
+          "前面的词根把范围缩小。",
+          "",
+          "最后一个词根说了算：                      按 1",
+          "diskut + rondo  = 讨论会",
+          "kontakt + listo = 联系人列表",
+          "foto + albumo   = 相册",
+          "",
+          "为了发音，可以加 -O- 连接：               按 2",
+          "lern + o + libro = lernolibro = 课本",
+          "",
+          "介词也可以参与：                          按 3",
+          "antaŭ + kondiĉo = antaŭkondiĉo = 先决条件",
+          "post + parolo   = postparolo = 后记",
+          "ĉe + esti       = ĉeesti = 出席"
+        ],
+        "pronunciation_mappings": {
+          "1": "Diskutrondo. Kontaktlisto. Fotoalbumo.",
+          "2": "Lernolibro.",
+          "3": "Antaŭkondiĉo. Postparolo. Ĉeesti."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "047",
+    "trigger_word": "materialo",
+    "title": "第55课：复合时态",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "ESTI + 主动分词构成复合时态。你很少",
+          "需要它们：简单的动词已经把意思",
+          "说全了。",
+          "",
+          "通常的说法：                              按 1",
+          "Mi legas. = 我读。/ 我在读。",
+          "Mi legis. = 我读了。/ 我当时在读。/",
+          "            我读过。",
+          "Mi legos. = 我会读。/ 我将会在读。",
+          "",
+          "复合时态 = 仅用于强调：                   按 2",
+          "Mi estas leganta.",
+          "= 我（此刻）正在读着呢。",
+          "Mi jam estis manĝinta, kiam vi venis.",
+          "= 你来的时候，我已经吃过了。",
+          "别把每个「正在读」都说成",
+          "'estas leganta'：听起来很别扭。"
+        ],
+        "pronunciation_mappings": {
+          "1": "Mi legas. Mi legis. Mi legos.",
+          "2": "Mi estas leganta. Mi jam estis manĝinta, kiam vi venis."
+        },
+        "pronunciation": "Leciono kvardek sep"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "被动语态不同：ESTI + -ITA",
+          "（或 -ATA）是日常的被动语态。",
+          "",
+          "一个分词，适用所有时态：                  按 1",
+          "La salono estas rezervita. = 已被预订",
+          "La salono estis rezervita. = 当时已被预订",
+          "La salono estos rezervita. = 将被预订",
+          "La salono estus rezervita. = 本会被预订",
+          "",
+          "实际用法：                                按 2",
+          "Ĉiuj materialoj estos provizitaj.",
+          "= 所有材料都将提供。",
+          "La kunveno estis nuligita.",
+          "= 会议被取消了。"
+        ],
+        "pronunciation_mappings": {
+          "1": "La salono estas rezervita. La salono estis rezervita. La salono estos rezervita. La salono estus rezervita.",
+          "2": "Ĉiuj materialoj estos provizitaj. La kunveno estis nuligita."
+        }
       }
     ]
   },
   {
     "lesson_id": "049",
     "trigger_word": "respondeco",
-    "title": "第49课：后缀「-END-」",
+    "title": "第56课：后缀「-END-」",
     "header_color": "green",
     "pages": [
       {
@@ -100,100 +194,38 @@
   },
   {
     "lesson_id": "050",
-    "trigger_word": "butono",
-    "title": "第50课：「-UM-」后缀",
+    "trigger_word": "parkumado",
+    "title": "第57课：后缀「-UM-」",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "后缀 -UM- 没有固定含义！",
-          "它是给那些不符合其他模式的单词",
-          "准备的“万能”后缀。靠用法来掌握。",
+          "后缀 -UM- 没有固定的意思。",
+          "它把词根和某个相关的概念联系起来，",
+          "每个词都要单独记。",
           "",
-          "常见带 -UM- 的单词：",
-          "plena   → plenumi    = 满的 → 实现",
-          "kolo    → kolumi     = 脖子 → 衣领",
-          "butono  → butonumi   = 纽扣 → 扣上",
-          "aero    → aerumi     = 空气 → 通风",
+          "常见的 -UM- 词：                          按 1",
+          "parko   → parkumi    = 公园 → 停车",
+          "plena   → plenumi    = 满的 → 履行、完成",
+          "kolo    → kolumo     = 脖子 → 衣领",
+          "butono  → butonumi   = 纽扣 → 扣扣子",
           "brako   → brakumi    = 手臂 → 拥抱",
-          "okulo   → okulumi    = 眼睛 → 眉目传情",
+          "aero    → aerumi     = 空气 → 通风、晾",
           "komuna  → komunumo   = 共同的 → 社区",
           "",
-          "实际用例：",
+          "实际用法：                                按 2",
+          "Kie mi povas parkumi?",
+          "= 我在哪里可以停车？",
           "Mi plenumis mian promeson.",
-          "（我实现了我的承诺。）",
-          "",
-          "-UM- 表示“做与……相关的事”！"
+          "= 我履行了我的承诺。"
         ],
+        "pronunciation_mappings": {
+          "1": "Parko. Parkumi. Plena. Plenumi. Kolo. Kolumo. Butono. Butonumi. Brako. Brakumi. Aero. Aerumi. Komuna. Komunumo.",
+          "2": "Kie mi povas parkumi? Mi plenumis mian promeson."
+        },
         "pronunciation": "Leciono kvindek"
-      }
-    ]
-  },
-  {
-    "lesson_id": "051",
-    "trigger_word": "plibonigi",
-    "title": "第51课：前缀「EKS-」",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "前缀 EKS- 表示“前任”或“前……”",
-          "它指代不再当前的事物。",
-          "",
-          "前任关系：",
-          "edzo → eksedzo = 丈夫 → 前夫",
-          "edzino → eksedzino = 妻子 → 前妻",
-          "amiko → eksamiko = 朋友 → 前朋友",
-          "",
-          "前任职位／身份：",
-          "prezidento → eksprezidento = 总统 → 前总统",
-          "membro → eksmembro = 成员 → 前成员",
-          "soldato → ekssoldato = 士兵 → 退伍军人",
-          "studento → eksstudento = 学生 → 校友",
-          "",
-          "实际用例：",
-          "Mia eksedzo loĝas en Parizo.",
-          "（我的前夫住在巴黎。）",
-          "EKS- 可与任何表示角色或身份的名词搭配使用！"
-        ],
-        "pronunciation": "Leciono kvindek unu"
-      }
-    ]
-  },
-  {
-    "lesson_id": "052",
-    "trigger_word": "paŭzejo",
-    "title": "第52课：后缀「-EG-」",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "后缀 -EG- 能放大事物！",
-          "",
-          "让东西变大：",
-          "domo    → domego     = 房子 → 宅邸",
-          "vento   → ventego    = 风 → 风暴",
-          "bona    → bonega     = 好 → 极好",
-          "",
-          "加强程度：",
-          "malsata → malsatega  = 饿 → 饿极了",
-          "venki   → venkegi    = 赢 → 彻底击败",
-          "ami     → amegi      = 爱 → 深爱",
-          "",
-          "-EG- 是 -ET- 的反义：",
-          "dometo（小屋） <-> domego（宅邸）",
-          "",
-          "世界语中有许多后缀。要特别记住这个，",
-          "可以联想英文单词「EGZAGERATE」",
-          "（夸张）来帮助记忆。"
-        ],
-        "pronunciation": "Leciono kvindek du"
       }
     ]
   }

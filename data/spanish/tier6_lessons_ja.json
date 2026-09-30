@@ -1,139 +1,76 @@
 [
   {
-    "lesson_id": "022",
-    "trigger_word": "tortuga",
-    "trigger_card_number": 30,
-    "title": "第22課: 接続法の深掘り",
+    "lesson_id": "023",
+    "trigger_word": "nacionalidad",
+    "trigger_card_number": 19,
+    "title": "第23課: 不定過去接続法",
     "header_color": "yellow",
     "pages": [
       {
         "page": 1,
-        "total_pages": 3,
+        "total_pages": 2,
         "content": [
-          "コアで接続法を紹介しました。",
-          "次は、そのトリガーをマスターしましょう。",
-          "パターン：主節 ＋ QUE ＋ 接続法節",
+          "不定過去接続法は、過去の願望、",
+          "疑念、仮定を表すのに使います。",
           "",
-          "願望／依頼：                         1を押す",
-          "Quiero que vengas.",
-          "（君に来てほしい。）",
-          "Te pido que me ayudes.",
-          "（手伝ってほしいと頼む。）",
+          "活用法 — 過去形 ellos から：         1を押す",
+          "hablaron → habla-RA または habla-SE",
           "",
-          "感情：                               2を押す",
-          "Me alegra que estés aquí.",
-          "（君がここにいてうれしい。）",
-          "Es triste que no pueda venir.",
-          "（来られないのが悲しい。）",
+          "-AR: hablara, hablaras, hablara,",
+          "     habláramos, hablaran",
           "",
-          "ポイント：主語が異なること。",
-          "Quiero comer = 食べたい（接続法なし）"
+          "-ER: comiera, comieras, comiera,     2を押す",
+          "     comiéramos, comieran",
+          "",
+          "-IR: viviera, vivieras, viviera,",
+          "     viviéramos, vivieran",
+          "",
+          "－RA 形と －SE 形の両方が存在します。",
+          "－RA 形はどこでも日常的な形です。",
+          "－SE 形（hablase）は改まった書き言葉向き。"
         ],
-        "pronunciation": "Lección veintidós",
+        "pronunciation": "Lección veintitrés",
         "pronunciation_mappings": {
-          "1": "quiero que vengas, te pido que me ayudes",
-          "2": "me alegra que estés aquí, es triste que no pueda venir"
+          "1": "Hablara. Hablaras. Hablara. Habláramos. Hablaran.",
+          "2": "Comiera. Comieras. Comiera. Comiéramos. Comieran."
         }
       },
       {
         "page": 2,
-        "total_pages": 3,
+        "total_pages": 2,
         "content": [
-          "疑念／否定：                         1を押す",
+          "過去の願望：                         1を押す",
+          "Quería que vinieras.",
+          "（君に来てほしかった。）",
           "",
-          "No creo que sea verdad.",
-          "（本当だと思わない。）",
-          "Dudo que lo sepa.",
-          "（知っているとは思えない。）",
+          "過去の感情：                         2を押す",
+          "Me sorprendió que dijera eso.",
+          "（彼があれを言ったことに驚いた。）",
           "",
-          "接続法を引き起こす表現：",
+          "仮定法（si 節）：                    3を押す",
+          "Si pudiera, lo haría.",
+          "（もしできたら、やるのに。）",
           "",
-          "es importante que...（重要だ）",
-          "es necesario que...（必要だ）",
-          "es posible que...（可能性がある）",
-          "es mejor que...（～したほうがいい）",
-          "no es que...（～というわけではない）",
+          "COMO SI（まるで～のように）：        4を押す",
+          "Habla como si fuera experto.",
+          "（専門家みたいに話す。）",
           "",
-          "これらの表現は常に次の節で",
-          "接続法を使います。"
+          "OJALÁ ＋ 不定過去接続法：",
+          "Ojalá pudiera volar.（飛べたらいいのに。）"
         ],
         "pronunciation_mappings": {
-          "1": "no creo que sea verdad, dudo que lo sepa"
-        }
-      },
-      {
-        "page": 3,
-        "total_pages": 3,
-        "content": [
-          "特定の接続詞の後：                   1を押す",
-          "",
-          "antes de que（～する前に）",
-          "para que（～するために）",
-          "a menos que（～でなければ）",
-          "sin que（～なしに）",
-          "",
-          "Llámame antes de que salgas.         2を押す",
-          "（出かける前に電話して。）",
-          "",
-          "Estudio para que mis padres estén",
-          "orgullosos. （親が誇れるように勉強する。）",
-          "",
-          "これらの接続詞は目的、条件、",
-          "または先行する時間を表し、",
-          "不確実なため接続法になります。",
-          ""
-        ],
-        "pronunciation_mappings": {
-          "1": "antes de que, para que, a menos que, sin que",
-          "2": "llámame antes de que salgas, estudio para que mis padres estén orgullosos"
-        }
-      }
-    ]
-  },
-  {
-    "lesson_id": "023",
-    "trigger_word": "sabor",
-    "trigger_card_number": 78,
-    "title": "第23課: 関係節",
-    "header_color": "yellow",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "関係節は複数の内容をつなぎます。スペイン語で",
-          "は 次の関係代名詞を使います：",
-          "",
-          "QUE — 万能の接続詞：                 1を押す",
-          "La persona que vi.（私が見た人。）",
-          "El libro que compré.（私が買った本。）",
-          "",
-          "QUIEN — 人を指す場合：               2を押す",
-          "La mujer con quien hablé.",
-          "（私が話した女性。）",
-          "",
-          "DONDE — 場所を指す場合：             3を押す",
-          "La ciudad donde nací.",
-          "（私が生まれた街。）",
-          "",
-          "LO QUE — 概念や考えを指す場合：      4を押す",
-          "Lo que dices es verdad.",
-          "（君が言うことは真実だ。）"
-        ],
-        "pronunciation": "Lección veintitrés",
-        "pronunciation_mappings": {
-          "1": "la persona que vi, el libro que compré",
-          "2": "la mujer con quien hablé",
-          "3": "la ciudad donde nací",
-          "4": "lo que dices es verdad"
+          "1": "Quería que vinieras.",
+          "2": "Me sorprendió que dijera eso.",
+          "3": "Si pudiera, lo haría.",
+          "4": "Habla como si fuera experto. Ojalá pudiera volar."
         }
       }
     ]
   },
   {
     "lesson_id": "024",
-    "trigger_word": "descuento",
-    "trigger_card_number": 134,
+    "trigger_word": "patata",
+    "trigger_card_number": 30,
     "title": "第24課: 比較級とその他",
     "header_color": "yellow",
     "pages": [
@@ -162,10 +99,10 @@
         ],
         "pronunciation": "Lección veinticuatro",
         "pronunciation_mappings": {
-          "1": "ella es más alta que yo",
-          "2": "este libro es menos interesante que el otro",
-          "3": "soy tan alto como tú",
-          "4": "trabajo tanto como ella"
+          "1": "Ella es más alta que yo.",
+          "2": "Este libro es menos interesante que el otro.",
+          "3": "Soy tan alto como tú.",
+          "4": "Trabajo tanto como ella."
         }
       },
       {
@@ -186,23 +123,84 @@
           "不規則比較級:                        2を押す",
           "bueno → mejor（より良い／最高）",
           "malo → peor（より悪い／最悪）",
-          "grande → mayor（より年上／大きい）",
-          "pequeño → menor（より年下／小さい）",
+          "grande → mayor（年上。サイズは más grande）",
+          "pequeño → menor（年下。サイズは más pequeño）",
           "",
           "Ella es mayor que yo.（彼女は私より年上だ。）"
         ],
         "pronunciation_mappings": {
-          "1": "es la ciudad más bonita del mundo, es el día menos ocupado",
-          "2": "mejor, peor, mayor, menor, ella es mayor que yo, es el mejor restaurante de la ciudad"
+          "1": "Es la ciudad más bonita del mundo. Es el día menos ocupado.",
+          "2": "Mejor. Peor. Mayor. Menor. Ella es mayor que yo."
         }
       }
     ]
   },
   {
     "lesson_id": "025",
+    "trigger_word": "sabor",
+    "trigger_card_number": 47,
+    "title": "第25課: 関係節",
+    "header_color": "yellow",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "関係節は内容をつなぎます。スペイン語では",
+          "次の関係代名詞を使います：",
+          "QUE — 万能の接続詞：                 1を押す",
+          "La persona que vi.（私が見た人。）",
+          "El libro que compré.（私が買った本。）",
+          "",
+          "QUIEN — 人（前置詞の後で）：         2を押す",
+          "La mujer con quien hablé.",
+          "（私が話した女性。）",
+          "誤り：la persona quien vi → que vi",
+          "",
+          "DONDE — 場所を指す場合：             3を押す",
+          "La ciudad donde nací.",
+          "（私が生まれた街。）",
+          "",
+          "LO QUE — 概念や考えを指す場合：      4を押す",
+          "Lo que dices es verdad.",
+          "（君が言うことは真実だ。）"
+        ],
+        "pronunciation": "Lección veinticinco",
+        "pronunciation_mappings": {
+          "1": "La persona que vi. El libro que compré.",
+          "2": "La mujer con quien hablé.",
+          "3": "La ciudad donde nací.",
+          "4": "Lo que dices es verdad."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "前置詞 + EL/LA/LOS/LAS QUE：         1を押す",
+          "El concierto al que fui.",
+          "（私が行ったコンサート。）",
+          "La casa en la que vivo.",
+          "（私が住んでいる家。）",
+          "",
+          "前置詞は必ず関係代名詞の前に置きます。",
+          "英語のように文末には残りません。",
+          "",
+          "a + el que は al que になります。",
+          "人の場合はどちらも使えます：",
+          "la mujer con quien / con la que hablé"
+        ],
+        "pronunciation_mappings": {
+          "1": "El concierto al que fui. La casa en la que vivo."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "026",
     "trigger_word": "hoja",
-    "trigger_card_number": 195,
-    "title": "第25課：SER と ESTAR の応用",
+    "trigger_card_number": 164,
+    "title": "第26課：SER と ESTAR の応用",
     "header_color": "yellow",
     "pages": [
       {
@@ -220,19 +218,110 @@
           "La puerta está cerrada.",
           "（ドアは閉まっています。）",
           "",
-          "La ventana la rompió el niño.        3を押す",
-          "（窓はその子に壊されました。）",
-          "La ventana está rota.",
-          "（窓は壊れています。）",
-          "",
-          "Ser ＝ 壊すという出来事が起きた",
-          "Estar ＝ 今、壊れた状態にある"
+          "同じ動詞で、出来事か状態か：         3を押す",
+          "La carta fue escrita por mi abuela.",
+          "（その手紙は祖母によって書かれた。）",
+          "→ ser：書くという出来事が起きた",
+          "La carta está escrita a mano.",
+          "（その手紙は手書きだ。）",
+          "→ estar：今の手紙の状態"
         ],
-        "pronunciation": "Lección veinticinco",
+        "pronunciation": "Lección veintiséis",
         "pronunciation_mappings": {
-          "1": "la casa fue construida en mil novecientos noventa",
-          "2": "la puerta está cerrada",
-          "3": "la ventana fue rota por el niño, la ventana está rota"
+          "1": "La casa fue construida en mil novecientos noventa.",
+          "2": "La puerta está cerrada.",
+          "3": "La carta fue escrita por mi abuela. La carta está escrita a mano."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "027",
+    "trigger_word": "mosca",
+    "trigger_card_number": 236,
+    "title": "第27課: 接続法の深掘り",
+    "header_color": "yellow",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "コアで接続法を紹介しました。",
+          "次は、そのトリガーをマスターしましょう。",
+          "パターン：主節 ＋ QUE ＋ 接続法節",
+          "",
+          "願望／依頼：                         1を押す",
+          "Quiero que vengas.",
+          "（君に来てほしい。）",
+          "Te pido que me ayudes.",
+          "（手伝ってほしいと頼む。）",
+          "",
+          "感情：                               2を押す",
+          "Me alegra que estés aquí.",
+          "（君がここにいてうれしい。）",
+          "Es triste que no pueda venir.",
+          "（来られないのが悲しい。）",
+          "",
+          "ポイント：主語が異なること。",
+          "Quiero comer = 食べたい（接続法なし）"
+        ],
+        "pronunciation": "Lección veintisiete",
+        "pronunciation_mappings": {
+          "1": "Quiero que vengas. Te pido que me ayudes.",
+          "2": "Me alegra que estés aquí. Es triste que no pueda venir."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "疑念／否定：                         1を押す",
+          "",
+          "No creo que sea verdad.",
+          "（本当だと思わない。）",
+          "Dudo que lo sepa.",
+          "（知っているとは思えない。）",
+          "",
+          "接続法を引き起こす表現：",
+          "",
+          "es importante que...（重要だ）",
+          "es necesario que...（必要だ）",
+          "es posible que...（可能性がある）",
+          "es mejor que...（～したほうがいい）",
+          "no es que...（～というわけではない）",
+          "",
+          "これらの表現は常に次の節で",
+          "接続法を使います。"
+        ],
+        "pronunciation_mappings": {
+          "1": "No creo que sea verdad. Dudo que lo sepa."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "特定の接続詞の後：                   1を押す",
+          "",
+          "antes de que（～する前に）",
+          "para que（～するために）",
+          "a menos que（～でなければ）",
+          "sin que（～なしに）",
+          "",
+          "Llámame antes de que salgas.         2を押す",
+          "（出かける前に電話して。）",
+          "",
+          "Estudio para que mis padres estén",
+          "orgullosos. （親が誇れるように勉強する。）",
+          "",
+          "これらの接続詞は目的、条件、",
+          "または先行する時間を表し、",
+          "不確実なため接続法になります。",
+          ""
+        ],
+        "pronunciation_mappings": {
+          "1": "Antes de que. Para que. A menos que. Sin que.",
+          "2": "Llámame antes de que salgas. Estudio para que mis padres estén orgullosos."
         }
       }
     ]

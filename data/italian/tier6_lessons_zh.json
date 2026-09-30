@@ -3,7 +3,7 @@
     "lesson_id": "021",
     "trigger_word": "cappuccino",
     "trigger_card_number": 1001,
-    "title": "第21课：意大利餐食",
+    "title": "第27课：意大利餐食",
     "header_color": "magenta",
     "pages": [
       {
@@ -15,9 +15,9 @@
           "不同的场合与期待。",
           "",
           "COLAZIONE（早餐，7-9点）：",
-          "   在酒吧喝卡布奇诺 + 吃牛角包",
-          "   站在吧台（banco）前享用",
-          "   绝不吃鸡蛋、培根或麦片",
+          "   在 bar 点 cappuccino + cornetto（牛角包）",
+          "   站在 banco（吧台）前享用",
+          "   绝不吃鸡蛋或培根",
           "",
           "PRANZO（午餐，12:30-14点）：",
           "   传统上是一天的主餐",
@@ -25,7 +25,7 @@
           "   在小城镇仍如此",
           "",
           "CENA（晚餐，20-21点）：",
-          "   比午餐清淡，或分量相当",
+          "   比 pranzo 清淡，或分量相当",
           "   在城市里，如今常是更丰盛的一餐"
         ]
       },
@@ -35,21 +35,21 @@
         "content": [
           "完整的意大利正餐——结构如下：",
           "",
-          "   ANTIPASTO＝开胃菜",
+          "   ANTIPASTO = 开胃菜",
           "      冷切肉、烤面包片、橄榄",
-          "   PRIMO＝第一道菜",
+          "   PRIMO = 第一道菜",
           "      意面、烩饭、汤",
-          "   SECONDO＝主菜",
+          "   SECONDO = 主菜",
           "      肉类或鱼类（不含意面！）",
-          "   CONTORNO＝配菜",
+          "   CONTORNO = 配菜",
           "      蔬菜、沙拉（单独上！）",
-          "   DOLCE＝甜点",
-          "      提拉米苏、意式奶冻、水果",
-          "   CAFFÈ＝餐后浓缩咖啡",
-          "   DIGESTIVO＝餐后利口酒",
+          "   DOLCE = 甜点",
+          "      tiramisù、panna cotta、水果",
+          "   CAFFÈ = 餐后浓缩咖啡",
+          "   DIGESTIVO = 餐后利口酒",
           "",
           "你不必点齐所有菜品。",
-          "点一道primo + secondo，或只点primo，",
+          "点 primo + secondo，或只点一道 primo，",
           "都是完全正常的。"
         ]
       },
@@ -59,23 +59,92 @@
         "content": [
           "意大利人用餐的地方——等级划分：",
           "",
-          "   BAR＝喝咖啡、吃牛角包、用开胃酒",
+          "   BAR = 咖啡、cornetti、aperitivo（开胃酒）",
           "      不是喝酒的酒吧！而是咖啡馆。",
-          "   OSTERIA＝最简单，供应酒和食物",
+          "   OSTERIA = 最简单，供应酒和食物",
           "      常无书面菜单",
-          "   TRATTORIA＝家庭经营，家常菜",
+          "   TRATTORIA = 家庭经营，家常菜",
           "      意大利餐饮的灵魂所在",
-          "   RISTORANTE＝正式餐厅，全套服务",
+          "   RISTORANTE = 正式餐厅，全套服务",
           "      铺桌布、有酒单、多道菜",
           "",
           "咖啡规则：",
-          "   cappuccino＝仅限早晨，绝不在",
+          "   cappuccino = 仅限早晨，绝不在",
           "     餐后饮用（当地人会注意到）",
-          "   caffè＝浓缩咖啡，全天可饮",
-          "   macchiato＝浓缩咖啡＋少量牛奶",
-          "   caffè corretto＝浓缩咖啡＋格拉巴酒"
+          "   caffè = 浓缩咖啡，全天可饮",
+          "   macchiato = 浓缩咖啡 + 少量牛奶",
+          "   caffè corretto = 浓缩咖啡 + 格拉巴酒",
+          "点单：un caffè, per favore.               按 1"
         ],
-        "pronunciation": "Un caffè, per favore."
+        "pronunciation_mappings": {
+          "1": "Un caffè, per favore."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "047",
+    "trigger_word": "espresso",
+    "trigger_card_number": 1002,
+    "title": "第28课：无人称 SI",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "SI + 动词 = 泛指「人们」一般会做的事。",
+          "动词一律用第三人称单数，",
+          "也就是 lui/lei 的形式。",
+          "",
+          "   Al banco si beve in fretta.            按 1",
+          "      = 在吧台边，大家都喝得很快。",
+          "   In Italia si mangia tardi.             按 2",
+          "      = 在意大利，人们吃饭很晚。",
+          "   Come si dice in italiano?              按 3",
+          "      = 这个用意大利语怎么说？",
+          "   Si dice così.                          按 4",
+          "      = 就是这么说的。",
+          "",
+          "中文没有一个固定的对应说法：可译作",
+          "「人们」「大家」「你」，或译成被动句。"
+        ],
+        "pronunciation": "Si vive bene qui.",
+        "pronunciation_mappings": {
+          "1": "Al banco si beve in fretta.",
+          "2": "In Italia si mangia tardi.",
+          "3": "Come si dice in italiano?",
+          "4": "Si dice così."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "名词是「复数」时，动词也用复数：",
+          "   Qui si vende il pane.                  按 1",
+          "      = 面包在这里出售。",
+          "   Qui si vendono i giornali.",
+          "      = 报纸在这里出售。",
+          "",
+          "反身动词：用 ci si，绝不用 si si          按 2",
+          "   In Italia ci si saluta con due baci.",
+          "      = 在意大利，人们打招呼时",
+          "        会贴面亲两下。",
+          "",
+          "标牌和店门上：                            按 3",
+          "   Si affitta.  = 出租。",
+          "   Si vende.    = 出售。",
+          "   Si prega di non fumare.",
+          "      = 请勿吸烟。",
+          "   旧式写法至今仍能见到：affittasi、",
+          "   vendesi。"
+        ],
+        "pronunciation_mappings": {
+          "1": "Qui si vende il pane. Qui si vendono i giornali.",
+          "2": "In Italia ci si saluta con due baci.",
+          "3": "Si affitta. Si vende. Si prega di non fumare."
+        }
       }
     ]
   }

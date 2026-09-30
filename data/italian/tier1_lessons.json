@@ -1,32 +1,32 @@
 [
   {
     "lesson_id": "001",
-    "trigger_word": "cosa",
+    "trigger_word": "ciao",
     "trigger_card_number": 1,
     "title": "LESSON 1: ITALIAN PRONUNCIATION",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 5,
+        "total_pages": 6,
         "content": [
           "Welcome! Italian is largely phonetic",
           "— letters almost always make the same",
           "sound. The five vowels are key:",
           "",
-          "a = 'ah' as in father               Press 1",
+          "a = 'ah' as in father                 Press 1",
           "   casa, mamma, gatto",
           "",
-          "e = 'eh' as in bet                  Press 2",
+          "e = 'eh' as in bet, or 'ay'           Press 2",
           "   bene, sera, leggere",
           "",
-          "i = 'ee' as in machine              Press 3",
+          "i = 'ee' as in machine                Press 3",
           "   sì, vita, libro",
           "",
-          "o = 'oh' as in no                   Press 4",
+          "o = 'oh' as in no, or 'aw'            Press 4",
           "   sole, modo, otto",
           "",
-          "u = 'oo' as in moon                 Press 5",
+          "u = 'oo' as in moon                   Press 5",
           "   tu, uno, frutto"
         ],
         "pronunciation": "Lezione uno",
@@ -40,23 +40,52 @@
       },
       {
         "page": 2,
-        "total_pages": 5,
+        "total_pages": 6,
+        "content": [
+          "E AND O come in two shades each:",
+          "open (mouth wider) and closed.",
+          "",
+          "   è  open, 'eh' as in bet            Press 1",
+          "      è (is), bene, sette, caffè",
+          "   é  closed, near 'ay' in day        Press 2",
+          "      e (and), sera, tre, perché",
+          "",
+          "   ò  open, 'aw' as in law            Press 3",
+          "      ho (I have), otto, cosa, però",
+          "   ó  closed, 'oh' as in no           Press 4",
+          "      o (or), sole, nome, ora",
+          "",
+          "Spelling shows the shade only on a",
+          "final vowel: caffè, perché. Elsewhere,",
+          "learn it by ear. Regions differ too,",
+          "and you'll be understood either way."
+        ],
+        "pronunciation_mappings": {
+          "1": "È. Bene. Sette. Caffè.",
+          "2": "E. Sera. Tre. Perché.",
+          "3": "Ho. Otto. Cosa. Però.",
+          "4": "O. Sole. Nome. Ora."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 6,
         "content": [
           "CONSONANTS that differ from English:",
           "",
-          "   h = always SILENT               Press 1",
+          "   h = always SILENT                  Press 1",
           "      hai, ho, hanno",
           "",
-          "   c before a/o/u = HARD 'k'       Press 2",
+          "   c before a/o/u = HARD 'k'          Press 2",
           "      casa, come, cucina",
           "",
-          "   c before e/i = SOFT 'ch'        Press 3",
+          "   c before e/i = SOFT 'ch'           Press 3",
           "      cena, città, dolce",
           "",
-          "   g before a/o/u = HARD 'g'       Press 4",
+          "   g before a/o/u = HARD 'g'          Press 4",
           "      gatto, gusto, lago",
           "",
-          "   g before e/i = SOFT 'j'         Press 5",
+          "   g before e/i = SOFT 'j'            Press 5",
           "      gente, gelato, magia",
           "",
           "r is always rolled or tapped."
@@ -70,24 +99,24 @@
         }
       },
       {
-        "page": 3,
-        "total_pages": 5,
+        "page": 4,
+        "total_pages": 6,
         "content": [
           "DIGRAPHS — two letters make one sound:",
           "",
-          "   ch = HARD 'k' before e/i         Press 1",
+          "   ch = HARD 'k' before e/i           Press 1",
           "      chiave, perché, anche",
           "",
-          "   gh = HARD 'g' before e/i         Press 2",
+          "   gh = HARD 'g' before e/i           Press 2",
           "      spaghetti, ghiaccio, lunghi",
           "",
-          "   gli = like 'lli' in million      Press 3",
+          "   gli = like 'lli' in million        Press 3",
           "      famiglia, figlio, gli",
           "",
-          "   gn = like 'ny' in canyon         Press 4",
+          "   gn = like 'ny' in canyon           Press 4",
           "      gnocchi, lasagna, ogni",
           "",
-          "   sc + e/i = SHH                   Press 5",
+          "   sc + e/i = SHH                     Press 5",
           "      sciare, pesce, scena",
           "",
           "Otherwise sc = 'sk' (scuola, scopo)."
@@ -101,8 +130,8 @@
         }
       },
       {
-        "page": 4,
-        "total_pages": 5,
+        "page": 5,
+        "total_pages": 6,
         "content": [
           "GEMINATES — double consonants:",
           "",
@@ -129,8 +158,8 @@
         }
       },
       {
-        "page": 5,
-        "total_pages": 5,
+        "page": 6,
+        "total_pages": 6,
         "content": [
           "HOW ITALIAN SENTENCES LOOK:",
           "",
@@ -138,58 +167,155 @@
           "",
           "1. NO 'I' — Italian drops the pronoun.",
           "   The verb ending tells you who:",
-          "   ho = I have, hai = you have.",
+          "   ho = I have, hai = you have.       Press 1",
           "   So: 'Ho una cosa' = I have a thing.",
           "",
           "2. ADJECTIVES GO AFTER the noun:",
-          "   caffè caldo = hot coffee            Press 1",
+          "   vino rosso = red wine              Press 2",
           "   parola nuova = new word",
           "   (some common ones go before — later)",
           "",
           "3. 'NON' GOES BEFORE the verb:",
-          "   non capisco = I don't understand    Press 2",
+          "   non capisco = I don't understand   Press 3",
           "   non ho = I don't have"
         ],
         "pronunciation_mappings": {
-          "1": "Caffè caldo. Parola nuova.",
-          "2": "Non capisco. Non ho."
+          "1": "Ho. Hai. Ho una cosa.",
+          "2": "Vino rosso. Parola nuova.",
+          "3": "Non capisco. Non ho."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "004",
+    "trigger_word": "grazie",
+    "trigger_card_number": 5,
+    "title": "LESSON 2: GREETINGS & QUESTIONS",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "GREETINGS:",
+          "",
+          "   ciao        = hi / bye (informal)  Press 1",
+          "   salve       = hello (neutral)",
+          "   buongiorno  = good morning, hello",
+          "   buonasera   = good evening",
+          "   buonanotte  = good night",
+          "   arrivederci = goodbye",
+          "",
+          "In a shop, say buongiorno or",
+          "buonasera both coming in AND leaving.",
+          "",
+          "HOW ARE YOU?                          Press 2",
+          "   come stai?  = to a friend (tu)",
+          "   come sta?   = polite form (Lei)",
+          "   sto bene, grazie. E tu?",
+          "      = I'm fine, thanks. And you?"
+        ],
+        "pronunciation": "Lezione due",
+        "pronunciation_mappings": {
+          "1": "Ciao. Salve. Buongiorno. Buonasera. Buonanotte. Arrivederci.",
+          "2": "Come stai? Come sta? Sto bene, grazie. E tu?"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "YOUR NAME:                            Press 1",
+          "   come ti chiami? = what's your name?",
+          "   mi chiamo Anna  = my name is Anna",
+          "      (literally: I call myself Anna)",
+          "   piacere!        = nice to meet you!",
+          "",
+          "COURTESY:                             Press 2",
+          "   per favore = please",
+          "   grazie     = thank you",
+          "   prego      = you're welcome; go ahead",
+          "   scusa      = sorry, excuse me",
+          "",
+          "IN CLASS:                             Press 3",
+          "   non capisco      = I don't understand",
+          "   puoi ripetere?   = can you repeat?",
+          "   più lentamente   = more slowly",
+          "   come si dice...? = how do you say...?"
+        ],
+        "pronunciation_mappings": {
+          "1": "Come ti chiami? Mi chiamo Anna. Piacere!",
+          "2": "Per favore. Grazie. Prego. Scusa.",
+          "3": "Non capisco. Puoi ripetere? Più lentamente. Come si dice?"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "QUESTION WORDS — you know one already:",
+          "come? = how? (come stai?)",
+          "",
+          "   chi?    = who?                     Press 1",
+          "      chi è? = who is it?",
+          "   cosa?   = what?                    Press 2",
+          "      cos'è? = what is it?",
+          "   dove?   = where?                   Press 3",
+          "      dov'è? = where is it?",
+          "   quando? = when?                    Press 4",
+          "      quando arrivi? = when do you arrive?",
+          "   perché? = why? — also 'because'    Press 5",
+          "      perché no? = why not?",
+          "   quanto? = how much?                Press 6",
+          "      quanto costa? = how much is it?"
+        ],
+        "pronunciation_mappings": {
+          "1": "Chi? Chi è?",
+          "2": "Cosa? Cos'è?",
+          "3": "Dove? Dov'è?",
+          "4": "Quando? Quando arrivi?",
+          "5": "Perché? Perché no?",
+          "6": "Quanto? Quanto costa?"
         }
       }
     ]
   },
   {
     "lesson_id": "002",
-    "trigger_word": "casa",
-    "trigger_card_number": 65,
-    "title": "LESSON 2: ARTICLES & ELISION",
+    "trigger_word": "favore",
+    "trigger_card_number": 10,
+    "title": "LESSON 3: ARTICLES & ELISION",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 2,
         "content": [
-          "Italian articles change with sound,",
-          "not just gender. It's phonological:",
+          "'The' changes with the SOUND that",
+          "follows, not only with gender:",
           "",
-          "MASCULINE SINGULAR:                  Press 1",
+          "MASCULINE SINGULAR:                   Press 1",
           "   il = before most consonants",
-          "      il libro, il padre, il cane",
+          "      il libro, il padre, il caffè",
           "   lo = before z, gn, ps, s+consonant",
-          "      lo zio, lo gnocco, lo stato",
-          "",
-          "FEMININE SINGULAR:                   Press 2",
+          "      lo zio, lo studente, lo gnocco",
+          "FEMININE SINGULAR:                    Press 2",
           "   la = before any consonant",
           "      la casa, la madre, la zia",
-          "",
-          "PLURALS:                             Press 3",
-          "   i, gli (m pl); le (f pl, always)",
-          "      i libri, gli stati, le case"
+          "PLURAL:                               Press 3",
+          "   il → i     lo → gli     la → le",
+          "      i libri, gli zii, le case",
+          "A / AN:                               Press 4",
+          "   un (m), uno (where lo goes), una (f)",
+          "      un libro, uno zio, una casa"
         ],
-        "pronunciation": "Lezione due",
+        "pronunciation": "Lezione tre",
         "pronunciation_mappings": {
-          "1": "Il libro. Il padre. Il cane. Lo stato. Lo zio. Lo gnocco.",
+          "1": "Il libro. Il padre. Il caffè. Lo zio. Lo studente. Lo gnocco.",
           "2": "La casa. La madre. La zia.",
-          "3": "I libri. Gli stati. Le case."
+          "3": "I libri. Gli zii. Le case.",
+          "4": "Un libro. Uno zio. Una casa."
         }
       },
       {
@@ -198,191 +324,685 @@
         "content": [
           "ELISION — the apostrophe rule:",
           "",
-          "Before a vowel, singular articles",
-          "drop their final letter and add ':    Press 1",
+          "Before a vowel, lo and la drop their",
+          "vowel and take an apostrophe:         Press 1",
           "",
-          "   il / la / lo + vowel → l'",
-          "      l'amico (m), l'aria (f)",
-          "      l'ora, l'uomo, l'occhio",
+          "   lo / la + vowel → l'",
+          "      l'amico (m), l'amica (f)",
+          "      l'uomo, l'ora, l'acqua",
           "",
           "PLURALS DO NOT ELIDE:                 Press 2",
-          "   gli amici (NOT gl'amici)",
-          "   le ore (NOT l'ore)",
+          "   gli amici, le amiche, le ore",
           "",
-          "GENDER STILL MATTERS:                 Press 3",
-          "   l'uomo (m) → un uomo, gli uomini",
-          "   l'aria (f) → un'aria, le arie",
+          "A / AN before a vowel:                Press 3",
+          "   un amico  (m: no apostrophe)",
+          "   un'amica  (f: una → un')",
           "",
-          "Cards show Elides: true on these."
+          "Cards color every article, l' too:",
+          "BLUE = masculine, MAGENTA = feminine."
         ],
         "pronunciation_mappings": {
-          "1": "L'amico. L'aria. L'ora. L'uomo. L'occhio.",
-          "2": "Gli amici. Le ore.",
-          "3": "L'uomo. Un uomo. Gli uomini. L'aria. Un'aria. Le arie."
+          "1": "L'amico. L'amica. L'uomo. L'ora. L'acqua.",
+          "2": "Gli amici. Le amiche. Le ore.",
+          "3": "Un amico. Un'amica."
         }
       }
     ]
   },
   {
     "lesson_id": "003",
-    "trigger_word": "acqua",
-    "trigger_card_number": 85,
-    "title": "LESSON 3: ESSERE, AVERE & C'È",
+    "trigger_word": "come",
+    "trigger_card_number": 13,
+    "title": "LESSON 4: TO BE, TO HAVE & C'È",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 4,
+        "content": [
+          "ESSERE = to be                        Press 1",
+          "",
+          "   io        sono     I am",
+          "   tu        sei      you are",
+          "   lui, lei  è        he, she is",
+          "   Lei       è        you are (polite)",
+          "   noi       siamo    we are",
+          "   voi       siete    you all are",
+          "   loro      sono     they are",
+          "",
+          "io, tu, lui... are SUBJECT PRONOUNS.",
+          "Italian usually drops them: the verb",
+          "already says who.",
+          "   sono Marco = I'm Marco             Press 2",
+          "Use them to stress or contrast:",
+          "   io sono americano, e tu?           Press 3"
+        ],
+        "pronunciation": "Lezione quattro",
+        "pronunciation_mappings": {
+          "1": "Io sono. Tu sei. Lui è. Lei è. Noi siamo. Voi siete. Loro sono.",
+          "2": "Sono Marco.",
+          "3": "Io sono americano, e tu?"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 4,
+        "content": [
+          "ESSERE says what something IS:        Press 1",
+          "   è a casa    = he's at home",
+          "   è bello     = it's beautiful",
+          "   è italiano  = he's Italian",
+          "",
+          "STARE = to be, to stay — for how you",
+          "are, and for staying put:             Press 2",
+          "   io   sto         noi   stiamo",
+          "   tu   stai        voi   state",
+          "   lui  sta         loro  stanno",
+          "",
+          "   sto bene   = I'm fine, I'm well    Press 3",
+          "   come stai? = how are you?",
+          "   sto a casa = I'm staying home      Press 4"
+        ],
+        "pronunciation_mappings": {
+          "1": "È a casa. È bello. È italiano.",
+          "2": "Io sto. Tu stai. Lui sta. Noi stiamo. Voi state. Loro stanno.",
+          "3": "Sto bene. Come stai?",
+          "4": "Sto a casa."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 4,
+        "content": [
+          "AVERE = to have                       Press 1",
+          "",
+          "   io        ho        I have",
+          "   tu        hai       you have",
+          "   lui, lei  ha        he, she has",
+          "   noi       abbiamo   we have",
+          "   voi       avete     you all have",
+          "   loro      hanno     they have",
+          "",
+          "The h is SILENT — never say it:       Press 2",
+          "   ho, hai, ha, hanno",
+          "   (hanno sounds just like anno, year)",
+          "",
+          "AVERE where English says 'to be':     Press 3",
+          "   ho fame    = I'm hungry",
+          "   ho freddo  = I'm cold",
+          "   ho 30 anni = I'm 30",
+          "      (literally: I have 30 years)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Io ho. Tu hai. Lui ha. Lei ha. Noi abbiamo. Voi avete. Loro hanno.",
+          "2": "Ho. Hai. Ha. Hanno. Anno.",
+          "3": "Ho fame. Ho freddo. Ho trent'anni."
+        }
+      },
+      {
+        "page": 4,
+        "total_pages": 4,
+        "content": [
+          "C'È = there is    CI SONO = there are",
+          "",
+          "It's ESSERE again: ci (there) + è",
+          "(is) → c'è. Plural: ci + sono.",
+          "",
+          "   c'è un bar qui?                    Press 1",
+          "      = is there a bar here?",
+          "   ci sono due bar                    Press 2",
+          "      = there are two bars",
+          "",
+          "NEGATIVE — non goes first:            Press 3",
+          "   non c'è tempo = there's no time",
+          "   non ci sono problemi",
+          "      = there are no problems",
+          "",
+          "And for 'is he in?':                  Press 4",
+          "   c'è Marco? = is Marco there?"
+        ],
+        "pronunciation_mappings": {
+          "1": "C'è un bar qui?",
+          "2": "Ci sono due bar.",
+          "3": "Non c'è tempo. Non ci sono problemi.",
+          "4": "C'è Marco?"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "009",
+    "trigger_word": "uno",
+    "trigger_card_number": 23,
+    "title": "LESSON 5: NUMBERS, DATES & TIME",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 4,
+        "content": [
+          "NUMBERS 0-10:                         Press 1",
+          "   0 zero      4 quattro    8 otto",
+          "   1 uno       5 cinque     9 nove",
+          "   2 due       6 sei       10 dieci",
+          "   3 tre       7 sette",
+          "",
+          "NUMBERS 11-20:                        Press 2",
+          "   11 undici       16 sedici",
+          "   12 dodici       17 diciassette",
+          "   13 tredici      18 diciotto",
+          "   14 quattordici  19 diciannove",
+          "   15 quindici     20 venti",
+          "",
+          "11-16 end in -dici; 17-19 start dici-.",
+          "",
+          "Before a noun, uno → un / una:        Press 3",
+          "   un caffè, una pizza",
+          "   due caffè, tre pizze"
+        ],
+        "pronunciation": "Lezione cinque",
+        "pronunciation_mappings": {
+          "1": "Zero. Uno. Due. Tre. Quattro. Cinque. Sei. Sette. Otto. Nove. Dieci.",
+          "2": "Undici. Dodici. Tredici. Quattordici. Quindici. Sedici. Diciassette. Diciotto. Diciannove. Venti.",
+          "3": "Un caffè. Una pizza. Due caffè. Tre pizze."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 4,
+        "content": [
+          "TENS:                                 Press 1",
+          "   20 venti       60 sessanta",
+          "   30 trenta      70 settanta",
+          "   40 quaranta    80 ottanta",
+          "   50 cinquanta   90 novanta",
+          "   100 cento      1000 mille",
+          "",
+          "JOIN THEM into one word:              Press 2",
+          "   21 ventuno, 28 ventotto",
+          "      (the vowel drops before uno, otto)",
+          "   23 ventitré (the accent is spelling)",
+          "   200 duecento, 2000 duemila",
+          "      (mille → mila in the plural)",
+          "",
+          "FIRST TO TENTH:                       Press 3",
+          "   primo, secondo, terzo, quarto, quinto,",
+          "   sesto, settimo, ottavo, nono, decimo"
+        ],
+        "pronunciation_mappings": {
+          "1": "Venti. Trenta. Quaranta. Cinquanta. Sessanta. Settanta. Ottanta. Novanta. Cento. Mille.",
+          "2": "Ventuno. Ventotto. Ventitré. Duecento. Duemila.",
+          "3": "Primo. Secondo. Terzo. Quarto. Quinto. Sesto. Settimo. Ottavo. Nono. Decimo."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 4,
+        "content": [
+          "DAYS — lowercase:                     Press 1",
+          "   lunedì, martedì, mercoledì, giovedì,",
+          "   venerdì, sabato, domenica",
+          "   (-dì means day: write the accent)",
+          "",
+          "   lunedì    = on Monday (this one)   Press 2",
+          "   il lunedì = on Mondays (every week)",
+          "",
+          "MONTHS — lowercase too:               Press 3",
+          "   gennaio, febbraio, marzo, aprile,",
+          "   maggio, giugno, luglio, agosto,",
+          "   settembre, ottobre, novembre, dicembre",
+          "",
+          "DATES — il + number + month:          Press 4",
+          "   il 15 agosto = August 15",
+          "   il primo maggio = May 1 ('the first')"
+        ],
+        "pronunciation_mappings": {
+          "1": "Lunedì. Martedì. Mercoledì. Giovedì. Venerdì. Sabato. Domenica.",
+          "2": "Lunedì. Il lunedì.",
+          "3": "Gennaio. Febbraio. Marzo. Aprile. Maggio. Giugno. Luglio. Agosto. Settembre. Ottobre. Novembre. Dicembre.",
+          "4": "Il quindici agosto. Il primo maggio."
+        }
+      },
+      {
+        "page": 4,
+        "total_pages": 4,
+        "content": [
+          "WHAT TIME IS IT? — che ora è?         Press 1",
+          "   è l'una      = it's one o'clock",
+          "   sono le due  = it's two o'clock",
+          "   sono le otto = it's eight o'clock",
+          "   (una takes è; the rest take sono)",
+          "",
+          "MINUTES — e (and), meno (less):       Press 2",
+          "   sono le due e dieci = 2:10",
+          "   sono le due e un quarto = 2:15",
+          "   sono le due e mezzo = 2:30",
+          "   sono le tre meno un quarto = 2:45",
+          "",
+          "AT WHAT TIME? — a che ora?            Press 3",
+          "   all'una = at one",
+          "   alle otto = at eight",
+          "   alle otto di sera = at 8 p.m.",
+          "   (a + le = alle: more on this soon)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Che ora è? È l'una. Sono le due. Sono le otto.",
+          "2": "Sono le due e dieci. Sono le due e un quarto. Sono le due e mezzo. Sono le tre meno un quarto.",
+          "3": "A che ora? All'una. Alle otto. Alle otto di sera."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "006",
+    "trigger_word": "di",
+    "trigger_card_number": 46,
+    "title": "LESSON 6: PREP. CONTRACTIONS",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "di, a, da, in and su FUSE with the",
+          "article after them into one word:",
+          "",
+          "THE FUSED FORMS:                      Press 1",
+          "       il    lo     la     i    gli    le",
+          "di:    del   dello  della  dei  degli  delle",
+          "a:     al    allo   alla   ai   agli   alle",
+          "da:    dal   dallo  dalla  dai  dagli  dalle",
+          "in:    nel   nello  nella  nei  negli  nelle",
+          "su:    sul   sullo  sulla  sui  sugli  sulle",
+          "",
+          "BEFORE A VOWEL, the l' forms:         Press 2",
+          "   dell'  all'  dall'  nell'  sull'",
+          "   dell'acqua, all'una, nell'aria",
+          "",
+          "con and per stay apart:               Press 3",
+          "   con il pane, per la mamma"
+        ],
+        "pronunciation": "Lezione sei",
+        "pronunciation_mappings": {
+          "1": "Del. Dello. Della. Dei. Degli. Delle. Al. Allo. Alla. Ai. Agli. Alle. Dal. Dallo. Dalla. Dai. Dagli. Dalle. Nel. Nello. Nella. Nei. Negli. Nelle. Sul. Sullo. Sulla. Sui. Sugli. Sulle.",
+          "2": "Dell'acqua. All'una. Nell'aria.",
+          "3": "Con il pane. Per la mamma."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "WITH 'THE' — they fuse:               Press 1",
+          "   vado alla stazione  (a + la)",
+          "   il libro del padre  (di + il)",
+          "   vengo dal bar       (da + il)",
+          "   è sul tavolo        (su + il)",
+          "   (vado = I go, vengo = I come)",
+          "",
+          "BUT NO ARTICLE in these:              Press 2",
+          "   a casa, a scuola, a letto,",
+          "   in chiesa, in centro, in Italia",
+          "",
+          "WITH un / una — no fusing:            Press 3",
+          "   vado a una festa",
+          "   il libro di un amico",
+          "",
+          "SOME — di + the:                      Press 4",
+          "   del pane  = some bread",
+          "   dei libri = some books"
+        ],
+        "pronunciation_mappings": {
+          "1": "Vado alla stazione. Il libro del padre. Vengo dal bar. È sul tavolo.",
+          "2": "A casa. A scuola. A letto. In chiesa. In centro. In Italia.",
+          "3": "Vado a una festa. Il libro di un amico.",
+          "4": "Del pane. Dei libri."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "050",
+    "trigger_word": "mio",
+    "trigger_card_number": 63,
+    "title": "LESSON 7: POSSESSIVES & FAMILY",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 3,
         "content": [
-          "ESSERE = 'to be'",
+          "MY, YOUR, HIS... agree with the THING",
+          "owned, not with the owner:            Press 1",
           "",
-          "The most common irregular verb.",
-          "Memorize all six forms:              Press 1",
+          "            m        f        m pl     f pl",
+          "   my       mio      mia      miei     mie",
+          "   your     tuo      tua      tuoi     tue",
+          "   his/her  suo      sua      suoi     sue",
+          "   our      nostro   nostra   nostri   nostre",
+          "   your pl  vostro   vostra   vostri   vostre",
+          "   their    loro     loro     loro     loro",
           "",
-          "   io       sono     I am",
-          "   tu       sei      you are",
-          "   lui/lei  è        he/she is",
-          "   noi      siamo    we are",
-          "   voi      siete    you all are",
-          "   loro     sono     they are",
+          "They come WITH the article:           Press 2",
+          "   il mio libro, la mia casa,",
+          "   i miei amici, le mie amiche",
           "",
-          "USES:                                Press 2",
-          "   identity:    sono Marco",
-          "   location:    è a casa",
-          "   description: è bello",
-          "   nationality: sono italiano"
+          "suo follows the THING:                Press 3",
+          "   il suo libro = his book, her book",
+          "   la sua casa  = his house, her house"
         ],
-        "pronunciation": "Lezione tre",
+        "pronunciation": "Lezione sette",
         "pronunciation_mappings": {
-          "1": "Io sono. Tu sei. Lui è. Lei è. Noi siamo. Voi siete. Loro sono.",
-          "2": "Sono Marco. È a casa. È bello. Sono italiano."
+          "1": "Mio. Mia. Miei. Mie. Tuo. Tua. Tuoi. Tue. Suo. Sua. Suoi. Sue. Nostro. Nostra. Nostri. Nostre. Vostro. Vostra. Vostri. Vostre. Loro.",
+          "2": "Il mio libro. La mia casa. I miei amici. Le mie amiche.",
+          "3": "Il suo libro. La sua casa."
         }
       },
       {
         "page": 2,
         "total_pages": 3,
         "content": [
-          "AVERE = 'to have' (silent h!):",
+          "THE FAMILY RULE:",
           "",
-          "io       ho       I have           Press 1",
-          "tu       hai      you have         Press 2",
-          "lui/lei  ha       he/she has       Press 3",
-          "noi      abbiamo  we have          Press 4",
-          "voi      avete    you all have     Press 5",
-          "loro     hanno    they have",
+          "ONE relative: NO article              Press 1",
+          "   mio padre, mia madre, tuo fratello,",
+          "   sua sorella, mio marito, mia moglie",
           "",
-          "The h is ALWAYS silent. So:",
-          "   ho = 'oh'    hai = 'eye'",
-          "   ha = 'ah'    hanno = 'AHN-no'",
+          "The article COMES BACK with:",
+          "   a plural:     i miei fratelli      Press 2",
+          "   an adjective: il mio caro padre",
+          "   loro:         il loro figlio",
+          "   mamma, papà:  usually la mia mamma,",
+          "                 il mio papà",
           "",
-          "AVERE expresses AGE in Italian:",
-          "   ho 30 anni = I am 30",
-          "   (literally 'I have 30 years')"
+          "Not a relative? Article as usual:     Press 3",
+          "   la mia famiglia, il mio amico,",
+          "   la mia casa",
+          "   (famiglia is the group, not a person)"
         ],
         "pronunciation_mappings": {
-          "1": "Io ho.",
-          "2": "Tu hai.",
-          "3": "Lui ha. Lei ha.",
-          "4": "Noi abbiamo.",
-          "5": "Voi avete."
+          "1": "Mio padre. Mia madre. Tuo fratello. Sua sorella. Mio marito. Mia moglie.",
+          "2": "I miei fratelli. Il mio caro padre. Il loro figlio. La mia mamma. Il mio papà.",
+          "3": "La mia famiglia. Il mio amico. La mia casa."
         }
       },
       {
         "page": 3,
         "total_pages": 3,
         "content": [
-          "C'È / CI SONO = there is / there are",
+          "QUESTO = this — four forms:           Press 1",
+          "   questo libro, questa casa,",
+          "   questi libri, queste case",
+          "   quest'anno = this year (before a vowel)",
           "",
-          "The Italian existential phrase.",
-          "Think of it as 'it has there':       Press 1",
+          "QUELLO = that — it changes like the",
+          "article after it:                     Press 2",
+          "   quel libro     (il libro)",
+          "   quello zio     (lo zio)",
+          "   quella casa    (la casa)",
+          "   quell'amico    (l'amico)",
+          "   quei libri     (i libri)",
+          "   quegli amici   (gli amici)",
+          "   quelle case    (le case)",
           "",
-          "   c'è  (singular) = there is",
-          "      c'è un libro sul tavolo",
-          "      c'è qualcuno alla porta",
-          "",
-          "   ci sono (plural) = there are      Press 2",
-          "      ci sono molti libri",
-          "      ci sono due persone",
-          "",
-          "NEGATIVE:                            Press 3",
-          "   non c'è / non ci sono",
-          "      non c'è tempo",
-          "      non ci sono problemi"
+          "Alone, it's quello: quello è mio!     Press 3",
+          "   = that one is mine!"
         ],
         "pronunciation_mappings": {
-          "1": "C'è un libro sul tavolo. C'è qualcuno alla porta.",
-          "2": "Ci sono molti libri. Ci sono due persone.",
-          "3": "Non c'è tempo. Non ci sono problemi."
+          "1": "Questo libro. Questa casa. Questi libri. Queste case. Quest'anno.",
+          "2": "Quel libro. Quello zio. Quella casa. Quell'amico. Quei libri. Quegli amici. Quelle case.",
+          "3": "Quello è mio!"
         }
       }
     ]
   },
   {
-    "lesson_id": "004",
+    "lesson_id": "005",
     "trigger_word": "fare",
-    "trigger_card_number": 186,
-    "title": "LESSON 4: CLASSROOM COMMANDS",
+    "trigger_card_number": 69,
+    "title": "LESSON 8: VERBS & AGREEMENT",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "PRESENT TENSE: drop -are, -ere or -ire",
+          "and add the ending for the person:",
+          "",
+          "-ARE  parlare (to speak)              Press 1",
+          "   io       parlo      noi      parliamo",
+          "   tu       parli      voi      parlate",
+          "   lui/lei  parla      loro     parlano",
+          "",
+          "-ERE  vedere (to see)                 Press 2",
+          "   io       vedo       noi      vediamo",
+          "   tu       vedi       voi      vedete",
+          "   lui/lei  vede       loro     vedono",
+          "",
+          "-IRE  partire (to leave)              Press 3",
+          "   io       parto      noi      partiamo",
+          "   tu       parti      voi      partite",
+          "   lui/lei  parte      loro     partono"
+        ],
+        "pronunciation": "Lezione otto",
+        "pronunciation_mappings": {
+          "1": "Io parlo. Tu parli. Lui parla. Noi parliamo. Voi parlate. Loro parlano.",
+          "2": "Io vedo. Tu vedi. Lui vede. Noi vediamo. Voi vedete. Loro vedono.",
+          "3": "Io parto. Tu parti. Lui parte. Noi partiamo. Voi partite. Loro partono."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "Many -IRE verbs add -ISC-:            Press 1",
+          "   capire (understand), finire (finish)",
+          "   io       capisco    noi      capiamo",
+          "   tu       capisci    voi      capite",
+          "   lui/lei  capisce    loro     capiscono",
+          "   (noi and voi have no -isc-)",
+          "",
+          "FARE (to do, to make) is irregular:   Press 2",
+          "   io       faccio     noi      facciamo",
+          "   tu       fai        voi      fate",
+          "   lui/lei  fa         loro     fanno",
+          "   fa caldo = it's hot (weather)",
+          "",
+          "LORO keeps the stress of IO:          Press 3",
+          "   PARlo → PARlano",
+          "   caPIsco → caPIscono"
+        ],
+        "pronunciation_mappings": {
+          "1": "Io capisco. Tu capisci. Lui capisce. Noi capiamo. Voi capite. Loro capiscono.",
+          "2": "Io faccio. Tu fai. Lui fa. Noi facciamo. Voi fate. Loro fanno. Fa caldo.",
+          "3": "Parlo. Parlano. Capisco. Capiscono."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "Adjectives AGREE with their noun:",
+          "",
+          "-O ADJECTIVES — four forms:           Press 1",
+          "   il libro nuovo    la casa nuova",
+          "   i libri nuovi     le case nuove",
+          "",
+          "-E ADJECTIVES — two forms:            Press 2",
+          "   il libro grande   la casa grande",
+          "   i libri grandi    le case grandi",
+          "",
+          "POSITION: usually AFTER the noun. A few",
+          "short, common ones go BEFORE: bello,",
+          "buono, grande, piccolo, vecchio.",
+          "",
+          "Before a noun, some SHORTEN:          Press 3",
+          "   un buon caffè   (buono → buon, like un)",
+          "   un bel ricordo  (bello → bel, like quel)",
+          "   buon + giorno = buongiorno!"
+        ],
+        "pronunciation_mappings": {
+          "1": "Il libro nuovo. La casa nuova. I libri nuovi. Le case nuove.",
+          "2": "Il libro grande. La casa grande. I libri grandi. Le case grandi.",
+          "3": "Un buon caffè. Un bel ricordo. Buongiorno!"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "051",
+    "trigger_word": "potere",
+    "trigger_card_number": 70,
+    "title": "LESSON 9: VOLERE, POTERE, DOVERE",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 2,
         "content": [
-          "BASIC QUESTION WORDS:",
+          "Three verbs that lead another verb:",
           "",
-          "   chi?    = who?                    Press 1",
-          "      chi è? chi sei?",
-          "   cosa?   = what?                   Press 2",
-          "      cosa fai? cos'è? (elided)",
-          "   dove?   = where?                  Press 3",
-          "      dove sei? dov'è? (elided)",
-          "   quando? = when?                   Press 4",
-          "      quando arrivi?",
-          "   come?   = how?                    Press 5",
-          "      come stai? come ti chiami?",
-          "   perché? = why?                    Press 6",
-          "      perché piangi? perché no?",
-          "   quanto? = how much/many?          Press 7",
-          "      quanto costa? quanti anni hai?"
+          "VOLERE = to want                      Press 1",
+          "   io       voglio     noi      vogliamo",
+          "   tu       vuoi       voi      volete",
+          "   lui/lei  vuole      loro     vogliono",
+          "",
+          "POTERE = can, to be able              Press 2",
+          "   io       posso      noi      possiamo",
+          "   tu       puoi       voi      potete",
+          "   lui/lei  può        loro     possono",
+          "",
+          "DOVERE = must, to have to             Press 3",
+          "   io       devo       noi      dobbiamo",
+          "   tu       devi       voi      dovete",
+          "   lui/lei  deve       loro     devono"
         ],
-        "pronunciation": "Lezione quattro",
+        "pronunciation": "Lezione nove",
         "pronunciation_mappings": {
-          "1": "Chi è? Chi sei?",
-          "2": "Cosa fai? Cos'è?",
-          "3": "Dove sei? Dov'è?",
-          "4": "Quando arrivi?",
-          "5": "Come stai? Come ti chiami?",
-          "6": "Perché piangi? Perché no?",
-          "7": "Quanto costa? Quanti anni hai?"
+          "1": "Io voglio. Tu vuoi. Lui vuole. Noi vogliamo. Voi volete. Loro vogliono.",
+          "2": "Io posso. Tu puoi. Lui può. Noi possiamo. Voi potete. Loro possono.",
+          "3": "Io devo. Tu devi. Lui deve. Noi dobbiamo. Voi dovete. Loro devono."
         }
       },
       {
         "page": 2,
         "total_pages": 2,
         "content": [
-          "POLITE REQUESTS & CLASSROOM:         Press 1",
+          "Then the INFINITIVE (the -re form):   Press 1",
+          "   voglio mangiare  = I want to eat",
+          "   posso entrare?   = may I come in?",
+          "   devo lavorare    = I have to work",
+          "   non posso venire = I can't come",
           "",
-          "   per favore  = please",
-          "   grazie      = thank you",
-          "   prego       = you're welcome",
-          "   scusa       = sorry / excuse me",
+          "VORREI = I'd like. Polite: use it     Press 2",
+          "in bars and shops instead of voglio:",
+          "   vorrei un caffè, per favore",
+          "   vorrei pagare = I'd like to pay",
           "",
-          "IN CLASS:                            Press 2",
-          "   non capisco      = I don't get it",
-          "   puoi ripetere?   = can you repeat?",
-          "   più lentamente   = more slowly",
-          "   come si dice?    = how do you say?",
-          "",
-          "GREETINGS:                           Press 3",
-          "   ciao   = hi/bye (informal)",
-          "   salve  = hello (neutral)",
-          "   buongiorno = good day",
-          "   buonasera  = good evening"
+          "SAPERE + infinitive = know how to:    Press 3",
+          "   so, sai, sa, sappiamo, sapete, sanno",
+          "   so nuotare = I can swim (I know how)",
+          "   BUT posso nuotare? = may I swim?"
         ],
         "pronunciation_mappings": {
-          "1": "Per favore. Grazie. Prego. Scusa.",
-          "2": "Non capisco. Puoi ripetere? Più lentamente. Come si dice?",
-          "3": "Ciao. Salve. Buongiorno. Buonasera."
+          "1": "Voglio mangiare. Posso entrare? Devo lavorare. Non posso venire.",
+          "2": "Vorrei un caffè, per favore. Vorrei pagare.",
+          "3": "So. Sai. Sa. Sappiamo. Sapete. Sanno. So nuotare. Posso nuotare?"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "007",
+    "trigger_word": "signore",
+    "trigger_card_number": 126,
+    "title": "LESSON 10: NOUN GENDER & PLURALS",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "Nouns are masculine or feminine. The",
+          "ending usually tells you which:",
+          "",
+          "REGULAR PATTERNS:                     Press 1",
+          "   -o → masculine   il libro → i libri",
+          "   -a → feminine    la casa  → le case",
+          "   -e → either      il padre → i padri",
+          "                    la madre → le madri",
+          "",
+          "-E NOUNS: some endings give a clue    Press 2",
+          "   -ore  → masculine: il signore,",
+          "           il dottore, il colore",
+          "   -ione → feminine: la lezione,",
+          "           la stazione",
+          "",
+          "Otherwise, learn the article with it."
+        ],
+        "pronunciation": "Lezione dieci",
+        "pronunciation_mappings": {
+          "1": "Il libro. I libri. La casa. Le case. Il padre. I padri. La madre. Le madri.",
+          "2": "Il signore. Il dottore. Il colore. La lezione. La stazione."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "SPELLING in the plural:",
+          "",
+          "-ca, -ga, -go keep the hard sound:    Press 1",
+          "   amica → amiche, riga → righe,",
+          "   lago → laghi",
+          "",
+          "-co: listen to the STRESS:            Press 2",
+          "   on the next-to-last syllable → -chi",
+          "      parco → parchi, tedesco → tedeschi",
+          "   earlier in the word → -ci",
+          "      medico → medici, unico → unici",
+          "   BUT amico → amici: learn it!",
+          "",
+          "-io → -i (no double i):               Press 3",
+          "   figlio → figli, negozio → negozi,",
+          "   bacio → baci, occhio → occhi",
+          "   (zio → zii: there the i is stressed)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Amica. Amiche. Riga. Righe. Lago. Laghi.",
+          "2": "Parco. Parchi. Tedesco. Tedeschi. Medico. Medici. Unico. Unici. Amico. Amici.",
+          "3": "Figlio. Figli. Negozio. Negozi. Bacio. Baci. Occhio. Occhi. Zio. Zii."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "MASCULINE despite -a (Greek roots):   Press 1",
+          "   il problema, il sistema, il tema,",
+          "   il programma, il pianeta",
+          "FEMININE despite -o:                  Press 2",
+          "   la mano; la foto, la moto — short",
+          "   for la fotografia, la motocicletta",
+          "",
+          "NO CHANGE in the plural:              Press 3",
+          "   la città → le città   (stress on -tà)",
+          "   il caffè → i caffè    (stress on -è)",
+          "   la foto → le foto     (short form)",
+          "   il bar → i bar        (foreign)",
+          "   il film → i film      (foreign)",
+          "",
+          "IRREGULAR PLURALS:                    Press 4",
+          "   l'uomo → gli uomini",
+          "   la mano → le mani",
+          "   il braccio → le braccia (feminine!)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Il problema. Il sistema. Il tema. Il programma. Il pianeta.",
+          "2": "La mano. La foto. La moto. La fotografia. La motocicletta.",
+          "3": "La città. Le città. Il caffè. I caffè. La foto. Le foto. Il bar. I bar. Il film. I film.",
+          "4": "L'uomo. Gli uomini. La mano. Le mani. Il braccio. Le braccia."
         }
       }
     ]

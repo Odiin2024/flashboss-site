@@ -1,74 +1,176 @@
 [
   {
-    "lesson_id": "057",
-    "trigger_word": "dankema se",
-    "title": "第57課：接尾辞「-AD-」",
+    "lesson_id": "051",
+    "trigger_word": "rekomendo",
+    "title": "第63課:接頭辞 EKS-",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "接尾辞 -AD- は「継続する動作」または",
-          "「繰り返される動作」を表し、一回きりの",
-          "行為ではなく持続や進行を強調します。",
+          "接頭辞 EKS- は「元〜、前〜」: もう",
+          "その役割にない人を表します。",
           "",
-          "動詞から継続的動作へ：",
-          "paroli  → parolado    = 話す → 話すこと",
-          "kanti   → kantado     = 歌う → 歌うこと",
-          "labori  → laborado    = 働く → 働くこと",
-          "lerni   → lernado     = 学ぶ → 学ぶこと",
+          "元の役割:                              1を押す",
+          "edzo       → eksedzo       = 元夫",
+          "prezidanto → eksprezidanto = 前大統領",
+          "membro     → eksmembro     = 元会員",
+          "studento   → eksstudento   = 元学生",
           "",
-          "違いについて：",
-          "parolo   = スピーチ（一つのもの）",
-          "parolado = 話すこと（行為そのもの、継続）",
+          "EKS- を単独の語として:                 2を押す",
+          "eksa   = 元の、前の",
+          "eksiĝi = 辞任する(職を離れる)",
           "",
-          "使用例：",
-          "La lernado daŭris du horojn.",
-          "（勉強は二時間続きました。）",
-          "-AD- は瞬間を過程に変えます！"
+          "実際に使うと:                          3を押す",
+          "Mia eksa instruisto skribis al mi rekomendon.",
+          "= 以前の先生が推薦状を書いてくれました。"
         ],
-        "pronunciation": "Leciono kvindek sep"
+        "pronunciation_mappings": {
+          "1": "Edzo. Eksedzo. Prezidanto. Eksprezidanto. Membro. Eksmembro. Studento. Eksstudento.",
+          "2": "Eksa. Eksiĝi.",
+          "3": "Mia eksa instruisto skribis al mi rekomendon."
+        },
+        "pronunciation": "Leciono kvindek unu"
       }
     ]
   },
   {
     "lesson_id": "058",
-    "trigger_word": "kun estimo",
-    "title": "第58課: 接尾辞「-IST-」",
+    "trigger_word": "atentigi",
+    "title": "第64課:前置詞 + 節",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "接尾辞 -IST- は、何かを職業的に",
-          "または習慣的に行う人の言葉を",
-          "作ります。「専門家」を思い出してください。",
+          "前置詞は節の直前に置けません。間に TIO",
+          "を入れ、その後に節を導く語を続けます:",
+          "ke、kio(n)、ĉu、kiel…",
           "",
-          "肩書きの作り方：",
-          "arto    → artisto     = 芸術 → 芸術家",
-          "muziko  → muzikisto   = 音楽 → 音楽家",
-          "instrui → instruisto  = 教える → 教師",
-          "dento   → dentisto    = 歯 → 歯医者",
-          "Esperanto → Esperantisto = エスペラント話者",
+          "PRI TIO, KE = 〜ということについて:    1を押す",
+          "Ni parolis pri tio, ke vi venos.",
+          "= あなたが来ることについて話しました。",
           "",
-          "-ANT- と -IST- の比較：",
-          "lernanto = 学習者（今学んでいる人）",
-          "lernisto = 学者（専門的な学習者）",
-          "instruanto = 教えている人（今まさに）",
-          "instruisto = 教師（職業として）",
+          "PRI TIO, KION = 〜のことについて:      2を押す",
+          "Mi pensas pri tio, kion vi diris.",
+          "= あなたが言ったことについて考えています。",
           "",
-          "-IST- には専門性や献身が込められています！"
+          "DE TIO, ĈU / KIEL:                     3を押す",
+          "Tio dependas de tio, ĉu vi venos.",
+          "= それはあなたが来るかどうか次第です。",
+          "Ĉio dependas de tio, kiel ni agos.",
+          "= すべては私たちがどう行動するか次第です。"
         ],
+        "pronunciation_mappings": {
+          "1": "Ni parolis pri tio, ke vi venos.",
+          "2": "Mi pensas pri tio, kion vi diris.",
+          "3": "Tio dependas de tio, ĉu vi venos. Ĉio dependas de tio, kiel ni agos."
+        },
         "pronunciation": "Leciono kvindek ok"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "'pri kion'、'de ĉu'、'en kiel' は不可:",
+          "前置詞の後にはまず TIO が必要です。",
+          "",
+          "格は語ごとに決まります:                1を押す",
+          "Mi dankas vin pro tio, kion vi faris.",
+          "= してくれたことに感謝します。",
+          "(tio: pro の後なので -n なし。kion:",
+          "faris の目的語)",
+          "",
+          "前置詞なし? なら TIO も不要:           2を押す",
+          "Mi scias, kion vi diris.",
+          "= あなたが言ったことを知っています。",
+          "",
+          "便利なつなぎ言葉:                      3を押す",
+          "malgraŭ tio, ke  = 〜にもかかわらず",
+          "krom tio, ke     = 〜ということに加えて",
+          "danke al tio, ke = 〜のおかげで"
+        ],
+        "pronunciation_mappings": {
+          "1": "Mi dankas vin pro tio, kion vi faris.",
+          "2": "Mi scias, kion vi diris.",
+          "3": "Malgraŭ tio, ke. Krom tio, ke. Danke al tio, ke."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "057",
+    "trigger_word": "resumi",
+    "title": "第65課:前置詞 + -I",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "直後に -I の動詞を置ける語はわずかです。",
+          "特に便利なのはこちら:",
+          "",
+          "POR + -I = 〜するために:               1を押す",
+          "Por resumi: ni havas tri solvojn.",
+          "= まとめると: 解決策は3つあります。",
+          "",
+          "SEN + -I = 〜せずに:                   2を押す",
+          "Li foriris sen diri ion.",
+          "= 彼は何も言わずに去りました。",
+          "",
+          "ANSTATAŬ + -I = 〜する代わりに:        3を押す",
+          "Skribu anstataŭ telefoni.",
+          "= 電話する代わりに書いてください。",
+          "",
+          "ANTAŬ OL + -I = 〜する前に:            4を押す",
+          "Pensu antaŭ ol respondi.",
+          "= 答える前に考えてください。"
+        ],
+        "pronunciation_mappings": {
+          "1": "Por resumi: ni havas tri solvojn.",
+          "2": "Li foriris sen diri ion.",
+          "3": "Skribu anstataŭ telefoni.",
+          "4": "Pensu antaŭ ol respondi."
+        },
+        "pronunciation": "Leciono kvindek sep"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "ほかの前置詞(al、per、pri、dum、post、",
+          "pro…)は -I を取りません。代わりに名詞か",
+          "-E の分詞を使います:",
+          "",
+          "〜することで = -ANTE(per+-i 不可):     1を押す",
+          "Ni lernas parolante.",
+          "= 私たちは話すことで学びます。",
+          "",
+          "〜した後で = post + 名詞、-inte:       2を押す",
+          "Post la kunveno ni manĝis.",
+          "= 会議の後、私たちは食事をしました。",
+          "Fininte la laboron, ni manĝis.",
+          "= 仕事を終えてから、食事をしました。",
+          "",
+          "〜のことで = pro + 名詞:               3を押す",
+          "Dankon pro via helpo!",
+          "= 助けてくれてありがとう!"
+        ],
+        "pronunciation_mappings": {
+          "1": "Ni lernas parolante.",
+          "2": "Post la kunveno ni manĝis. Fininte la laboron, ni manĝis.",
+          "3": "Dankon pro via helpo!"
+        }
       }
     ]
   },
   {
     "lesson_id": "059",
-    "trigger_word": "lasta",
-    "title": "パレート1 完了！",
+    "trigger_word": "dankinda",
+    "title": "第66課:パレート1 修了!",
     "header_color": "gold",
     "repeat": false,
     "pages": [
@@ -76,24 +178,24 @@
         "page": 1,
         "total_pages": 1,
         "content": [
-          "おめでとう！パレート1を完了しました！",
+          "Gratulojn! パレート1を修了しました!",
           "",
-          "あなたが習得した内容：",
-          "✓ エスペラント語2000語（基本＋P1）",
-          "✓ 全てのエスペラント語接辞（23の接尾辞！）",
-          "✓ 全ての分詞と複合時制",
-          "✓ 関係詞体系すべて",
+          "学んだこと:",
+          "✓ 単語と表現 2000語 (コア + P1)",
+          "✓ 10個すべての接頭辞と、ほとんどの接尾辞",
+          "✓ 6つの分詞すべて、-o と -e の用法も",
+          "✓ KI-/TI- の相関詞表のすべて",
           "",
-          "あなたのレベル：B1～B2相当！",
+          "あなたのレベル: B1 程度。",
           "",
-          "これでできるようになります：",
-          "- ほとんどのエスペラント語コンテンツを理解",
-          "- 複雑な考えを正確に表現",
-          "- 必要な単語をほぼ自由に作成",
-          "- エスペラント語コミュニティに参加",
+          "いまできること:",
+          "- フォーラムや議論に参加する",
+          "- エスペラントの集いを企画し、参加する",
+          "- 旅をして、エスペランティストの家に泊まる",
+          "- 改まった手紙やメールを書く",
           "",
-          "素晴らしい仕事です！成功を祝いましょう！",
-          "（Excellent work! Celebrate your success!）"
+          "Bonega laboro! Pareto 2 atendas vin.",
+          "(すばらしい!パレート2が待っています。)"
         ],
         "pronunciation": "Gratulojn"
       }

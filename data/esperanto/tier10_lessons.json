@@ -1,74 +1,176 @@
 [
   {
-    "lesson_id": "057",
-    "trigger_word": "dankema se",
-    "title": "LESSON 57: THE '-AD-' SUFFIX",
+    "lesson_id": "051",
+    "trigger_word": "rekomendo",
+    "title": "LESSON 63: THE 'EKS-' PREFIX",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "The suffix -AD- means \"continuous action\" or",
-          "\"repeated action.\" It emphasizes duration or",
-          "ongoing process rather than a single act.",
+          "The prefix EKS- means FORMER: someone",
+          "who no longer has that role.",
           "",
-          "FROM VERB TO CONTINUOUS ACTION:",
-          "paroli  → parolado    = speak → speaking",
-          "kanti   → kantado     = sing → singing",
-          "labori  → laborado    = work → working",
-          "lerni   → lernado     = learn → learning",
+          "FORMER ROLES:                         Press 1",
+          "edzo       → eksedzo       = ex-husband",
+          "prezidanto → eksprezidanto = ex-president",
+          "membro     → eksmembro     = former member",
+          "studento   → eksstudento   = former student",
           "",
-          "THE DIFFERENCE:",
-          "parolo   = a speech (single thing)",
-          "parolado = speaking (the act, ongoing)",
+          "EKS- AS A WORD OF ITS OWN:            Press 2",
+          "eksa   = former",
+          "eksiĝi = to resign (to leave a post)",
           "",
-          "IN USE:",
-          "La lernado daŭris du horojn.",
-          "(The studying lasted two hours.)",
-          "-AD- turns moments into processes!"
+          "IN USE:                               Press 3",
+          "Mia eksa instruisto skribis al mi rekomendon.",
+          "= My former teacher wrote me a recommendation."
         ],
-        "pronunciation": "Leciono kvindek sep"
+        "pronunciation_mappings": {
+          "1": "Edzo. Eksedzo. Prezidanto. Eksprezidanto. Membro. Eksmembro. Studento. Eksstudento.",
+          "2": "Eksa. Eksiĝi.",
+          "3": "Mia eksa instruisto skribis al mi rekomendon."
+        },
+        "pronunciation": "Leciono kvindek unu"
       }
     ]
   },
   {
     "lesson_id": "058",
-    "trigger_word": "kun estimo",
-    "title": "LESSON 58: THE '-IST-' SUFFIX",
+    "trigger_word": "atentigi",
+    "title": "LESSON 64: PREPOSITIONS + CLAUSES",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "The suffix -IST- creates words for people",
-          "who do something professionally or",
-          "habitually. Think \"specialist.\"",
+          "A preposition can't stand right before",
+          "a clause. Put TIO between them, then the",
+          "clause word: ke, kio(n), ĉu, kiel...",
           "",
-          "CONSTRUCTING TITLES:",
-          "arto    → artisto     = art → artist",
-          "muziko  → muzikisto   = music → musician",
-          "instrui → instruisto  = teach → teacher",
-          "dento   → dentisto    = tooth → dentist",
-          "Esperanto → Esperantisto = Esperantist",
+          "PRI TIO, KE = about (the fact) that:  Press 1",
+          "Ni parolis pri tio, ke vi venos.",
+          "= We talked about you coming.",
           "",
-          "COMPARE -ANT- AND -IST-:",
-          "lernanto = learner (anyone learning now)",
-          "lernisto = scholar (professional learner)",
-          "instruanto = one teaching (right now)",
-          "instruisto = teacher (profession)",
+          "PRI TIO, KION = about what:           Press 2",
+          "Mi pensas pri tio, kion vi diris.",
+          "= I'm thinking about what you said.",
           "",
-          "-IST- implies expertise or dedication!"
+          "DE TIO, ĈU / KIEL:                    Press 3",
+          "Tio dependas de tio, ĉu vi venos.",
+          "= That depends on whether you come.",
+          "Ĉio dependas de tio, kiel ni agos.",
+          "= Everything depends on how we act."
         ],
+        "pronunciation_mappings": {
+          "1": "Ni parolis pri tio, ke vi venos.",
+          "2": "Mi pensas pri tio, kion vi diris.",
+          "3": "Tio dependas de tio, ĉu vi venos. Ĉio dependas de tio, kiel ni agos."
+        },
         "pronunciation": "Leciono kvindek ok"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "Never 'pri kion', 'de ĉu', 'en kiel':",
+          "the preposition needs TIO first.",
+          "",
+          "EACH WORD HAS ITS OWN CASE:           Press 1",
+          "Mi dankas vin pro tio, kion vi faris.",
+          "= Thank you for what you did.",
+          "(tio: after pro, no -n; kion: the",
+          "object of faris)",
+          "",
+          "NO PREPOSITION? NO TIO NEEDED:        Press 2",
+          "Mi scias, kion vi diris.",
+          "= I know what you said.",
+          "",
+          "USEFUL LINKS:                         Press 3",
+          "malgraŭ tio, ke  = although, even though",
+          "krom tio, ke     = besides the fact that",
+          "danke al tio, ke = thanks to the fact that"
+        ],
+        "pronunciation_mappings": {
+          "1": "Mi dankas vin pro tio, kion vi faris.",
+          "2": "Mi scias, kion vi diris.",
+          "3": "Malgraŭ tio, ke. Krom tio, ke. Danke al tio, ke."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "057",
+    "trigger_word": "resumi",
+    "title": "LESSON 65: PREPOSITIONS + -I",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "Only a few words can take a verb in -I",
+          "right after them. The most useful:",
+          "",
+          "POR + -I = (in order) to:             Press 1",
+          "Por resumi: ni havas tri solvojn.",
+          "= To sum up: we have three solutions.",
+          "",
+          "SEN + -I = without ...-ing:           Press 2",
+          "Li foriris sen diri ion.",
+          "= He left without saying anything.",
+          "",
+          "ANSTATAŬ + -I = instead of ...-ing:   Press 3",
+          "Skribu anstataŭ telefoni.",
+          "= Write instead of phoning.",
+          "",
+          "ANTAŬ OL + -I = before ...-ing:       Press 4",
+          "Pensu antaŭ ol respondi.",
+          "= Think before answering."
+        ],
+        "pronunciation_mappings": {
+          "1": "Por resumi: ni havas tri solvojn.",
+          "2": "Li foriris sen diri ion.",
+          "3": "Skribu anstataŭ telefoni.",
+          "4": "Pensu antaŭ ol respondi."
+        },
+        "pronunciation": "Leciono kvindek sep"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "Other prepositions (al, per, pri, dum,",
+          "post, pro...) never take -I. Use a noun",
+          "or a participle in -E instead:",
+          "",
+          "BY DOING = -ANTE (never per + -i):    Press 1",
+          "Ni lernas parolante.",
+          "= We learn by speaking.",
+          "",
+          "AFTER DOING = post + noun, -inte:     Press 2",
+          "Post la kunveno ni manĝis.",
+          "= After the meeting we ate.",
+          "Fininte la laboron, ni manĝis.",
+          "= After finishing the work, we ate.",
+          "",
+          "FOR DOING = pro + a noun:             Press 3",
+          "Dankon pro via helpo!",
+          "= Thanks for helping!"
+        ],
+        "pronunciation_mappings": {
+          "1": "Ni lernas parolante.",
+          "2": "Post la kunveno ni manĝis. Fininte la laboron, ni manĝis.",
+          "3": "Dankon pro via helpo!"
+        }
       }
     ]
   },
   {
     "lesson_id": "059",
-    "trigger_word": "lasta",
-    "title": "PARETO 1 COMPLETE!",
+    "trigger_word": "dankinda",
+    "title": "LESSON 66: PARETO 1 COMPLETE!",
     "header_color": "gold",
     "repeat": false,
     "pages": [
@@ -78,22 +180,22 @@
         "content": [
           "Gratulojn! You've completed Pareto 1!",
           "",
-          "WHAT YOU'VE MASTERED:",
-          "✓ 2000 Esperanto words (Core + P1)",
-          "✓ ALL Esperanto affixes (23 suffixes!)",
-          "✓ ALL participles and compound tenses",
-          "✓ The complete correlative system",
+          "WHAT YOU'VE LEARNED:",
+          "✓ 2000 words and phrases (Core + P1)",
+          "✓ All ten prefixes and most suffixes",
+          "✓ All six participles, with -o and -e",
+          "✓ The whole KI-/TI- correlative table",
           "",
-          "YOUR LEVEL: B1-B2 equivalent!",
+          "YOUR LEVEL: around B1.",
           "",
           "YOU CAN NOW:",
-          "- Understand most Esperanto content",
-          "- Express complex ideas precisely",
-          "- Build virtually any word you need",
-          "- Participate in the Esperanto community",
+          "- Take part in forums and discussions",
+          "- Plan and join Esperanto meetups",
+          "- Travel and stay with Esperanto hosts",
+          "- Write formal letters and emails",
           "",
-          "Bonega laboro! Festu vian sukceson!",
-          "(Excellent work! Celebrate your success!)"
+          "Bonega laboro! Pareto 2 atendas vin.",
+          "(Excellent work! Pareto 2 awaits you.)"
         ],
         "pronunciation": "Gratulojn"
       }

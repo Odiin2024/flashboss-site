@@ -17,13 +17,13 @@
           "   Mann, Tag, alt",
           "",
           "e =「エ」の音。口は横に               2を押す",
-          "   essen, Bett, zehn",
+          "   essen, Bett, echt",
           "",
           "i =「イ」の音。日本語のイと同じ       3を押す",
-          "   vier, Kino, Kind",
+          "   vier, Kino, wir",
           "",
           "o =「オ」の音。唇を丸く               4を押す",
-          "   Sohn, rot, Ort",
+          "   Sohn, rot, Boot",
           "",
           "u =「ウ」の音。唇を突き出す           5を押す",
           "   Uhr, Mut, Buch"
@@ -31,9 +31,9 @@
         "pronunciation": "Lektion eins",
         "pronunciation_mappings": {
           "1": "Mann, Tag, alt",
-          "2": "essen, Bett, zehn",
-          "3": "vier, Kino, Kind",
-          "4": "Sohn, rot, Ort",
+          "2": "essen, Bett, echt",
+          "3": "vier, Kino, wir",
+          "4": "Sohn, rot, Boot",
           "5": "Uhr, Mut, Buch"
         }
       },
@@ -136,8 +136,8 @@
           "   haben → 'hab'n'",
           "",
           "-e は弱い「エ」                       2を押す",
-          "   Katze → 'Katz'e'",
-          "   bitte → 'bitt'e'",
+          "   Katze → 'カッツェ'",
+          "   bitte → 'ビッテ'",
           "",
           "-er は「ア」に近く弱まる              3を押す",
           "   Vater → 'Vata'",
@@ -163,24 +163,24 @@
           "とくに 'sh' と 'th' で差が出ます:",
           "",
           "s + h は s と h。sh ではない          1を押す",
-          "   Bisher → bis-her ('bi-sher' ではない)",
+          "   bisher → bis-her ('bi-sher' ではない)",
           "   Gasheizung → gas-heizung",
           "",
           "t + h は t と h。th ではない          2を押す",
           "   Rathaus → Rat-haus ('Ra-thaus' ではない)",
-          "   Mathilde → Mat-hilde",
+          "   Guthaben → Gut-haben",
           "",
           "子音連続(どちらも発音する!):",
           "",
           "pf: Pferd, Apfel, Kopf                3を押す",
-          "",
           "kn: Knie, Knabe, Knopf                4を押す",
           "",
-          "ng: singen, lang, Finger              5を押す"
+          "ng = 1つの音(英語 singer の ng)       5を押す",
+          "   singen, lang, Finger (Finger に g はない)"
         ],
         "pronunciation_mappings": {
           "1": "Bisher, Gasheizung",
-          "2": "Rathaus, Mathilde",
+          "2": "Rathaus, Guthaben",
           "3": "Pferd, Apfel, Kopf",
           "4": "Knie, Knabe, Knopf",
           "5": "singen, lang, Finger"
@@ -219,8 +219,8 @@
   },
   {
     "lesson_id": "002",
-    "trigger_word": "müssen",
-    "trigger_card_number": 12,
+    "trigger_word": "dürfen",
+    "trigger_card_number": 4,
     "title": "第2課：話法助動詞",
     "header_color": "cyan",
     "pages": [
@@ -234,6 +234,7 @@
           "können  = できる    müssen  = ねばならない",
           "dürfen  = してよい  wollen  = したい",
           "sollen  = すべきだ  möchten = したいのですが",
+          "mögen   = 好きだ",
           "",
           "語順:話法助動詞 + 不定詞は文末",
           "",
@@ -252,8 +253,8 @@
   },
   {
     "lesson_id": "003",
-    "trigger_word": "warum",
-    "trigger_card_number": 19,
+    "trigger_word": "wann",
+    "trigger_card_number": 18,
     "title": "第3課：疑問詞",
     "header_color": "cyan",
     "pages": [
@@ -284,14 +285,14 @@
   },
   {
     "lesson_id": "004",
-    "trigger_word": "Minute",
-    "trigger_card_number": 30,
+    "trigger_word": "Frage",
+    "trigger_card_number": 25,
     "title": "第4課：名詞の性と冠詞",
     "header_color": "cyan",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
           "ドイツ語の名詞にはすべて性があります:",
           "",
@@ -305,20 +306,44 @@
           "「少女」を表す das Mädchen は中性です!",
           "",
           "コツ:名詞は必ず冠詞といっしょに覚える。",
-          "「Minute」ではなく「die Minute」と、",
+          "「Frage」ではなく「die Frage」と、",
           "毎回セットで声に出しましょう!",
           "",
           "そのうち規則が見えてきますが、今は",
           "冠詞を単語の一部として覚えてください。"
         ],
         "pronunciation": "Lektion vier"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "カードの表記の読み方:",
+          "",
+          "der/die Lehrer/in = der Lehrer, die Lehrerin",
+          "(男の先生と女の先生)。形がもっと変わる組は",
+          "両方を書きます: der/die Kollege/Kollegin",
+          "メモ(8キー)は複数形を二つまとめて示します:",
+          "die Lehrer(innen)  = Lehrer と Lehrerinnen",
+          "die Student(inn)en = Studenten と Studentinnen",
+          "",
+          "an|kommen(到着する)は分離動詞です。",
+          "| の前の部分が文末へ移ります:",
+          "Ich komme um 8 Uhr an. (8時に着きます)",
+          "",
+          "sich freuen(喜ぶ)は再帰動詞です。sich は",
+          "英語の -self(自分自身)で、人称で変わります:",
+          "ich freue mich     mich = わたし自身",
+          "du freust dich     dich = あなた自身",
+          "er/sie freut sich  sich = 彼/彼女自身"
+        ]
       }
     ]
   },
   {
     "lesson_id": "005",
-    "trigger_word": "zwanzig",
-    "trigger_card_number": 51,
+    "trigger_word": "eins",
+    "trigger_card_number": 33,
     "title": "第5課：ドイツ語の数",
     "header_color": "cyan",
     "pages": [
@@ -338,7 +363,7 @@
           "",
           "13 と 30 の作り方:                   3を押す",
           "",
-          "drei + zehn = 13   drei + zig = 30",
+          "drei + zehn = 13   でも 30 = dreißig (ß!)",
           "14 = vierzehn  →  40 = vierzig",
           "17 = siebzehn  →  70 = siebzig",
           "",
@@ -349,7 +374,7 @@
         "pronunciation_mappings": {
           "1": "eins, zwei, drei, vier, fünf, sechs",
           "2": "sieben, acht, neun, zehn, elf, zwölf",
-          "3": "drei plus zehn ist dreizehn, drei plus zick ist dreißig, vierzehn, vierzig, siebzehn, siebzig, und nicht sieben zehn und sieben zick"
+          "3": "drei plus zehn ist dreizehn, dreißig, vierzehn, vierzig, siebzehn, siebzig, und nicht siebenzehn und siebenzig"
         }
       },
       {
@@ -360,7 +385,7 @@
           "",
           "zwei と drei は聞き分けにくい!       1を押す",
           "電話では zwo と言うと明確:",
-          "   Mein PIN ist 2284",
+          "   Meine PIN ist 2284",
           "",
           "時刻の言い方:                        2を押す",
           "Es ist drei Uhr. (3時です)",
@@ -376,7 +401,7 @@
           "小数点がコンマ(3,50€)!"
         ],
         "pronunciation_mappings": {
-          "1": "Mein PIN ist zwo zwo acht vier",
+          "1": "Meine PIN ist zwo zwo acht vier",
           "2": "Es ist drei Uhr. Es ist halb vier.",
           "3": "zwanzig, vierzig, hundert, sechstausend, zweitausendsechshundertachtundzwanzig"
         }
@@ -387,7 +412,7 @@
         "content": [
           "序数(第1、第2、第3 …):",
           "",
-          "1-19:数に -te を付ける                1を押す",
+          "1-19:数に -te(1, 3, 7 は例外)         1を押す",
           "erste (1)   vierte (4)   siebte (7)",
           "zweite (2)  fünfte (5)   achte (8)",
           "dritte (3)  sechste (6)  neunte (9)",
@@ -416,7 +441,7 @@
   {
     "lesson_id": "006",
     "trigger_word": "antworten",
-    "trigger_card_number": 62,
+    "trigger_card_number": 68,
     "title": "第6課：動詞の現在形",
     "header_color": "cyan",
     "pages": [
@@ -427,18 +452,18 @@
           "ドイツ語の動詞は、誰が動作するかで",
           "語尾が変わります:",
           "",
-          "例:antworten(答える)",
+          "例:lernen(学ぶ)",
           "",
-          "ich antworte       = わたしは答える",
-          "du antwortest      = 君は答える",
-          "er antwortet       = 彼は答える",
-          "sie antwortet      = 彼女は答える",
-          "es antwortet       = それは答える",
-          "wir antworten      = わたしたちは答える",
-          "ihr antwortet      = 君たちは答える",
-          "sie/Sie antworten  = 彼らは/あなたは答える",
+          "ich lerne          = わたしは学ぶ",
+          "du lernst          = 君は学ぶ",
+          "er/sie/es lernt    = 彼/彼女/それは学ぶ",
+          "wir lernen         = わたしたちは学ぶ",
+          "ihr lernt          = 君たちは学ぶ",
+          "sie/Sie lernen     = 彼らは/あなたは学ぶ",
           "",
           "型:-e, -st, -t, -en, -t, -en",
+          "語幹が -t/-d で終わる動詞は -e- を入れる:",
+          "du antwortest, er antwortet",
           "",
           "規則動詞はほぼこの型に従います!",
           "注意:不規則動詞(sein, haben)は別。"
@@ -450,7 +475,7 @@
   {
     "lesson_id": "007",
     "trigger_word": "Geld",
-    "trigger_card_number": 184,
+    "trigger_card_number": 190,
     "title": "第7課：否定",
     "header_color": "cyan",
     "pages": [
@@ -467,14 +492,15 @@
           "Ich verstehe nicht. (わかりません)",
           "Das ist nicht gut. (それは良くない)",
           "",
-          "KEIN - 冠詞と入れ替える:",
+          "KEIN - ein(または無冠詞)と入れ替える:",
           "",
           "Ich habe einen Hund.",
           "→ Ich habe keinen Hund.",
           "(犬を飼っている → 犬を飼っていない)",
           "",
-          "規則:名詞には kein、",
-          "      それ以外には nicht!"
+          "規則:ein・無冠詞の名詞には kein、",
+          "      それ以外はすべて nicht で否定",
+          "      (Ich sehe den Bus nicht.)"
         ],
         "pronunciation": "Lektion sieben"
       }

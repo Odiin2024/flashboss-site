@@ -1,9 +1,9 @@
 [
   {
-    "lesson_id": "009",
+    "lesson_id": "010",
     "trigger_word": "esperanza",
-    "trigger_card_number": 225,
-    "title": "LESSON 9: REFLEXIVE VERBS",
+    "trigger_card_number": 237,
+    "title": "LESSON 10: REFLEXIVE VERBS",
     "header_color": "green",
     "pages": [
       {
@@ -23,29 +23,30 @@
           "",
           "COMMON REFLEXIVES:                   Press 2",
           "levantarse   = to get up",
-          "sentirse     = to feel",
           "acostarse    = to go to bed",
-          "ducharse     = to shower",
-          "vestirse     = to get dressed"
+          "despertarse  = to wake up",
+          "sentarse     = to sit down",
+          "preocuparse  = to worry",
+          "Commands attach it: ¡Siéntate! ¡Lávate!"
         ],
-        "pronunciation": "Lección nueve",
+        "pronunciation": "Lección diez",
         "pronunciation_mappings": {
           "1": "me llamo, te llamas, se llama, nos llamamos, se llaman",
-          "2": "levantarse, sentirse, acostarse, ducharse, vestirse"
+          "2": "levantarse, acostarse, despertarse, sentarse, preocuparse, ¡siéntate!, ¡lávate!"
         }
       }
     ]
   },
   {
-    "lesson_id": "010",
+    "lesson_id": "011",
     "trigger_word": "cerrado",
-    "trigger_card_number": 275,
-    "title": "LESSON 10: NEGATION",
+    "trigger_card_number": 290,
+    "title": "LESSON 11: NEGATION",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
           "NO before the verb for negation:     Press 1",
           "",
@@ -59,27 +60,142 @@
           "",
           "DOUBLE NEGATIVES are normal!         Press 3",
           "No voy nunca. (I never go.)",
-          "No tengo nada. (I don't have nothing)",
+          "No tengo nada. (I don't have anything.)",
           "No viene nadie. (Nobody is coming.)",
           "",
-          "You can also front-load them:",
-          "Nada tengo. Nadie viene. Nunca voy.",
-          "But the double negative is more common."
+          "Negative word BEFORE the verb → no 'no':",
+          "Nadie viene. Nunca voy.",
+          "Both orders are normal Spanish."
         ],
-        "pronunciation": "Lección diez",
+        "pronunciation": "Lección once",
         "pronunciation_mappings": {
           "1": "no es difícil, no hablo francés",
           "2": "nada, nadie, nunca, ninguno, tampoco",
-          "3": "no voy nunca, no tengo nada, no viene nadie"
+          "3": "no voy nunca, no tengo nada, no viene nadie, nadie viene, nunca voy"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "NEGATIVE COMMANDS (tú): no + new ending",
+          "",
+          "-AR verbs take -ES:                  Press 1",
+          "hablar   → ¡No hables! (Don't speak!)",
+          "gritar   → ¡No grites! (Don't shout!)",
+          "olvidar  → ¡No olvides! (Don't forget!)",
+          "",
+          "-ER/-IR verbs take -AS:              Press 2",
+          "comer    → ¡No comas! (Don't eat!)",
+          "escribir → ¡No escribas! (Don't write!)",
+          "",
+          "The pronoun goes BEFORE the verb:    Press 3",
+          "¡Siéntate! → ¡No te sientes!",
+          "¡No te preocupes! (Don't worry!)"
+        ],
+        "pronunciation_mappings": {
+          "1": "no hables, no grites, no olvides",
+          "2": "no comas, no escribas",
+          "3": "siéntate, no te sientes, no te preocupes"
         }
       }
     ]
   },
   {
-    "lesson_id": "011",
+    "lesson_id": "012",
+    "trigger_word": "traer",
+    "trigger_card_number": 329,
+    "title": "LESSON 12: FINER DISTINCTIONS",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "Choosing the right word for the job.",
+          "These pairs trip up even advanced learners:",
+          "",
+          "SABER vs CONOCER:                    Press 1",
+          "saber = to know a fact or how to",
+          "conocer = to know or be familiar with",
+          "Sé nadar. (I know how to swim.)",
+          "Conozco Madrid. (I know Madrid.)",
+          "",
+          "PEDIR vs PREGUNTAR:                  Press 2",
+          "pedir = to request something",
+          "preguntar = to ask a question",
+          "Pido la cuenta. (I ask for the bill.)",
+          "Pregunto el precio. (I ask the price.)",
+          "",
+          "In English, 'ask' covers both.",
+          "In Spanish, mixing them sounds wrong."
+        ],
+        "pronunciation": "Lección doce",
+        "pronunciation_mappings": {
+          "1": "Sé nadar. Conozco Madrid.",
+          "2": "Pido la cuenta. Pregunto el precio."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "LLEVAR vs TRAER:                     Press 1",
+          "llevar = to take (away from here)",
+          "traer = to bring (towards here)",
+          "Lleva esto a tu mamá.",
+          "(Take this to your mother.)",
+          "Trae tu libro a clase.",
+          "(Bring your book to class.)",
+          "",
+          "SINO vs PERO:                        Press 2",
+          "pero = but (general contrast)",
+          "sino = but rather (after a negative,",
+          "correcting what was just denied)",
+          "No es caro, sino barato.",
+          "(It's not expensive, but rather cheap.)",
+          "Quiero ir, pero no puedo.",
+          "(I want to go, but I can't.)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Lleva esto a tu mamá. Trae tu libro a clase.",
+          "2": "No es caro, sino barato. Quiero ir, pero no puedo."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "POR QUÉ vs PORQUE vs PORQUÉ:         Press 1",
+          "por qué = why? (question)",
+          "porque = because (answer)",
+          "porqué = the reason (noun)",
+          "¿Por qué? Porque sí. El porqué no",
+          "importa. (Why? Because. The reason",
+          "doesn't matter.)",
+          "",
+          "TODAVÍA vs AÚN vs YA:                Press 2",
+          "todavía/aún = still/yet",
+          "ya = already/now",
+          "Todavía no está aquí.",
+          "(He isn't here yet.)",
+          "Ya lo sé. (I already know.)",
+          "",
+          "These distinctions are what separate",
+          "good Spanish from great Spanish."
+        ],
+        "pronunciation_mappings": {
+          "1": "¿Por qué? Porque sí. El porqué no importa.",
+          "2": "Todavía no está aquí. Ya lo sé."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "013",
     "trigger_word": "palabra",
-    "trigger_card_number": 325,
-    "title": "LESSON 11: ADJECTIVE AGREEMENT",
+    "trigger_card_number": 347,
+    "title": "LESSON 13: ADJECTIVE AGREEMENT",
     "header_color": "green",
     "pages": [
       {
@@ -92,33 +208,33 @@
           "el gato blanco  → la gata blanca",
           "los gatos blancos → las gatas blancas",
           "",
-          "-E adjectives DON'T change gender:   Press 2",
-          "el chico grande  → la chica grande",
-          "Only add -s for plural: grandes",
+          "-E and most CONSONANT: no change     Press 2",
+          "el chico grande → la chica grande",
+          "el cielo azul → la falda azul (pl. azules)",
           "",
-          "CONSONANT endings — add -a for fem:  Press 3",
-          "el chico español → la chica española",
-          "",
+          "BUT nationalities and -or add -a:    Press 3",
+          "español → española, trabajador → trabajadora",
+          "(mejor, mayor, menor: same for m/f)",
           "POSITION — usually AFTER the noun:",
           "la casa blanca (the white house)",
-          "un libro interesante (an interesting book)",
-          "NOTE: A few go BEFORE: bueno, malo, grande",
-          "un buen amigo (a good friend)"
+          "A few go BEFORE and shorten:",
+          "un buen amigo, un mal día (masc. sing.)",
+          "una gran ciudad (gran = great)"
         ],
-        "pronunciation": "Lección once",
+        "pronunciation": "Lección trece",
         "pronunciation_mappings": {
           "1": "el gato blanco, la gata blanca, los gatos blancos, las gatas blancas",
-          "2": "el chico grande, la chica grande",
-          "3": "el chico español, la chica española"
+          "2": "el chico grande, la chica grande, el cielo azul, la falda azul, azules",
+          "3": "español, española, trabajador, trabajadora"
         }
       }
     ]
   },
   {
-    "lesson_id": "012",
+    "lesson_id": "014",
     "trigger_word": "guapo",
-    "trigger_card_number": 375,
-    "title": "LESSON 12: PRETERITE TENSE",
+    "trigger_card_number": 397,
+    "title": "LESSON 14: PRETERITE TENSE",
     "header_color": "green",
     "pages": [
       {
@@ -144,7 +260,7 @@
           "Note: nosotros is the same in present",
           "and preterite for -AR verbs!"
         ],
-        "pronunciation": "Lección doce",
+        "pronunciation": "Lección catorce",
         "pronunciation_mappings": {
           "1": "yo hablé, tú hablaste, él habló, nosotros hablamos, ellos hablaron",
           "2": "yo comí, tú comiste, él comió, nosotros comimos, ellos comieron"
@@ -167,7 +283,8 @@
           "tuve, tuviste, tuvo, tuvimos, tuvieron",
           "",
           "ESTAR (to be):                       Press 4",
-          "estuve, estuviste, estuvo, estuvimos",
+          "estuve, estuviste, estuvo, estuvimos,",
+          "estuvieron",
           "",
           "DECIR (to say):                      Press 5",
           "dije, dijiste, dijo, dijimos, dijeron"
@@ -176,7 +293,7 @@
           "1": "fui, fuiste, fue, fuimos, fueron",
           "2": "hice, hiciste, hizo, hicimos, hicieron",
           "3": "tuve, tuviste, tuvo, tuvimos, tuvieron",
-          "4": "estuve, estuviste, estuvo, estuvimos",
+          "4": "estuve, estuviste, estuvo, estuvimos, estuvieron",
           "5": "dije, dijiste, dijo, dijimos, dijeron"
         }
       }

@@ -1,80 +1,173 @@
 [
   {
-    "lesson_id": "047",
-    "trigger_word": "arbaro",
+    "lesson_id": "052",
+    "trigger_word": "mi revenos",
+    "title": "УРОК 53: ПРИСТАВКА «RE-»",
     "header_color": "green",
-    "title": "УРОК 47: СЛОЖНЫЕ ВРЕМЕНА",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
-        "pronunciation": "Leciono kvardek sep",
         "content": [
-          "Соединяй ESTI с причастиями, чтобы",
-          "образовать точные сложные времена.",
+          "Приставка RE- значит СНОВА или НАЗАД:",
+          "действие повторяется или возвращается",
+          "туда, откуда пришло.",
           "",
-          "ПРОГРЕССИВ (действие в процессе):",
-          "Mi estas leganta. = Я читаю (сейчас).",
-          "Mi estis leganta. = Я читал (тогда).",
-          "Mi estos leganta. = Я буду читать.",
+          "СНОВА:                                 Нажми 1",
+          "legi     → relegi     = читать → перечитать",
+          "fari     → refari     = делать → переделать",
+          "kontakti → rekontakti = связаться снова",
           "",
-          "ПЕРФЕКТ (завершённое действие):",
-          "Mi estas leginta. = Я уже прочитал.",
-          "Mi estis leginta. = Я уже прочитал (до того).",
-          "Mi estos leginta. = Я уже прочитаю.",
+          "НАЗАД:                                 Нажми 2",
+          "veni     → reveni     = прийти → вернуться",
+          "doni     → redoni     = дать → вернуть",
+          "sendi    → resendi    = послать → отослать",
           "",
-          "СЛОЖНОЕ СТРАДАТЕЛЬНОЕ:",
-          "La libro estas legita. = Книгу прочитали.",
-          "La libro estis legata. = Её читали (тогда).",
-          "",
-          "Это даёт чёткие временные оттенки!"
-        ]
+          "В РЕЧИ:                                Нажми 3",
+          "Mi revenos al la temo morgaŭ.",
+          "= Я вернусь к этой теме завтра.",
+          "Ĝis revido! = До свидания! (До новой встречи!)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Legi. Relegi. Fari. Refari. Kontakti. Rekontakti.",
+          "2": "Veni. Reveni. Doni. Redoni. Sendi. Resendi.",
+          "3": "Mi revenos al la temo morgaŭ. Ĝis revido!"
+        },
+        "pronunciation": "Leciono kvindek du"
       }
     ]
   },
   {
     "lesson_id": "048",
-    "trigger_word": "pikniko",
+    "trigger_word": "diskutrondo",
+    "title": "УРОК 54: СЛОВООБРАЗОВАНИЕ",
     "header_color": "green",
-    "title": "УРОК 48: СЛОВООБРАЗОВАНИЕ",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono kvardek ok",
+        "total_pages": 2,
         "content": [
-          "Любое слово эсперанто может менять часть",
-          "речи просто заменой окончания!",
+          "Любой корень принимает любое окончание,",
+          "если смысл это позволяет:",
           "",
-          "ОТ ОДНОГО КОРНЯ:",
-          "bel- (корень «красота»)",
-          "bela    = красивый (прил. -a)",
-          "bele    = красиво (нареч. -e)",
-          "belo    = красота (сущ. -o)",
-          "beli    = быть красивым (глаг. -i)",
+          "SUKCES- (успех):                       Нажми 1",
+          "sukceso = успех        sukcesi = преуспеть",
+          "sukcesa = успешный     sukcese = успешно",
           "",
-          "vera → vere → vero",
-          "(истинный → поистине → истина)",
-          "varma → varme → varmo",
-          "(тёплый → тепло → теплота)",
-          "МОЖНО ДОБАВИТЬ И АФФИКСЫ:",
-          "belega   = великолепный (-eg- увел.)",
-          "beligi   = делать красивым (-ig- кауз.)",
-          "beleco   = красота (-ec- абстр. кач.)"
-        ]
+          "FIN- (конец):                          Нажми 2",
+          "fino = конец           fini = закончить",
+          "fina = конечный        fine = наконец",
+          "",
+          "ИЗ СУЩЕСТВИТЕЛЬНОГО — ГЛАГОЛ:          Нажми 3",
+          "telefono → telefoni = телефон → звонить",
+          "martelo  → marteli  = молоток → бить молотком",
+          "krono    → kroni    = корона → короновать"
+        ],
+        "pronunciation_mappings": {
+          "1": "Sukceso. Sukcesi. Sukcesa. Sukcese.",
+          "2": "Fino. Fini. Fina. Fine.",
+          "3": "Telefono. Telefoni. Martelo. Marteli. Krono. Kroni."
+        },
+        "pronunciation": "Leciono kvardek ok"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "СЛОЖНЫЕ СЛОВА склеивают корни. ПОСЛЕДНИЙ",
+          "корень — главный: он говорит, ЧТО это",
+          "такое. Первый уточняет.",
+          "",
+          "ПОСЛЕДНИЙ КОРЕНЬ РЕШАЕТ:               Нажми 1",
+          "diskut + rondo  = дискуссионный кружок",
+          "kontakt + listo = список контактов",
+          "foto + albumo   = фотоальбом",
+          "",
+          "-O- МОЖЕТ СОЕДИНЯТЬ ИХ (ЗВУК):         Нажми 2",
+          "lern + o + libro = lernolibro = учебник",
+          "",
+          "ПРЕДЛОГИ ТОЖЕ УЧАСТВУЮТ:               Нажми 3",
+          "antaŭ + kondiĉo = antaŭkondiĉo = предпосылка",
+          "post + parolo   = postparolo = послесловие",
+          "ĉe + esti       = ĉeesti = присутствовать"
+        ],
+        "pronunciation_mappings": {
+          "1": "Diskutrondo. Kontaktlisto. Fotoalbumo.",
+          "2": "Lernolibro.",
+          "3": "Antaŭkondiĉo. Postparolo. Ĉeesti."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "047",
+    "trigger_word": "materialo",
+    "title": "УРОК 55: СЛОЖНЫЕ ВРЕМЕНА",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "ESTI + действительное причастие образует",
+          "сложные времена. Они нужны РЕДКО:",
+          "простой глагол уже всё говорит.",
+          "",
+          "ОБЫЧНЫЙ СПОСОБ:                        Нажми 1",
+          "Mi legas. = Я читаю.",
+          "Mi legis. = Я читал. / Я прочитал.",
+          "Mi legos. = Я буду читать. / Я прочитаю.",
+          "(Одна форма на все случаи.)",
+          "",
+          "СЛОЖНОЕ = ТОЛЬКО ДЛЯ АКЦЕНТА:          Нажми 2",
+          "Mi estas leganta.",
+          "= Я (как раз сейчас) читаю.",
+          "Mi jam estis manĝinta, kiam vi venis.",
+          "= Я уже поел, когда ты пришёл.",
+          "Не переводи каждое «сейчас читаю»",
+          "как 'estas leganta': звучит странно."
+        ],
+        "pronunciation_mappings": {
+          "1": "Mi legas. Mi legis. Mi legos.",
+          "2": "Mi estas leganta. Mi jam estis manĝinta, kiam vi venis."
+        },
+        "pronunciation": "Leciono kvardek sep"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "ПАССИВ — ДРУГОЕ ДЕЛО: ESTI + -ITA",
+          "(или -ATA) — обычный страдательный залог.",
+          "",
+          "ОДНО ПРИЧАСТИЕ, ЛЮБОЕ ВРЕМЯ:           Нажми 1",
+          "La salono estas rezervita. = заказан",
+          "La salono estis rezervita. = был заказан",
+          "La salono estos rezervita. = будет заказан",
+          "La salono estus rezervita. = был бы заказан",
+          "",
+          "В РЕЧИ:                                Нажми 2",
+          "Ĉiuj materialoj estos provizitaj.",
+          "= Все материалы будут предоставлены.",
+          "La kunveno estis nuligita.",
+          "= Собрание было отменено."
+        ],
+        "pronunciation_mappings": {
+          "1": "La salono estas rezervita. La salono estis rezervita. La salono estos rezervita. La salono estus rezervita.",
+          "2": "Ĉiuj materialoj estos provizitaj. La kunveno estis nuligita."
+        }
       }
     ]
   },
   {
     "lesson_id": "049",
     "trigger_word": "respondeco",
+    "title": "УРОК 56: СУФФИКС «-END-»",
     "header_color": "green",
-    "title": "УРОК 49: СУФФИКС «-END-»",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
-        "pronunciation": "Leciono kvardek naŭ",
         "content": [
           "Суффикс -END- означает «должно быть сделано»",
           "или «надо сделать» (необходимость).",
@@ -94,106 +187,45 @@
           "ПРИМЕР:",
           "La raporto estas farenda ĝis vendredo.",
           "(Отчёт надо сделать до пятницы.)"
-        ]
+        ],
+        "pronunciation": "Leciono kvardek naŭ"
       }
     ]
   },
   {
     "lesson_id": "050",
-    "trigger_word": "butono",
+    "trigger_word": "parkumado",
+    "title": "УРОК 57: СУФФИКС «-UM-»",
     "header_color": "green",
-    "title": "УРОК 50: СУФФИКС «-UM-»",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
-        "pronunciation": "Leciono kvindek",
         "content": [
-          "Суффикс -UM- НЕ имеет чёткого значения!",
-          "Это «джокер» для слов, не вписывающихся",
-          "в другие схемы. Учи по употреблению.",
+          "Суффикс -UM- НЕ имеет точного значения.",
+          "Он связывает корень с близкой идеей, и",
+          "каждое слово учат отдельно.",
           "",
-          "ЧАСТЫЕ СЛОВА С -UM-:",
-          "plena   → plenumi    = full → выполнить",
-          "kolo    → kolumi     = neck → воротник",
-          "butono  → butonumi   = button → застегнуть",
-          "aero    → aerumi     = air → проветрить",
-          "brako   → brakumi    = arm → обнять",
-          "okulo   → okulumi    = eye → флиртовать",
-          "komuna  → komunumo   = common → община",
+          "ЧАСТЫЕ СЛОВА С -UM-:                   Нажми 1",
+          "parko   → parkumi    = парк → парковать",
+          "plena   → plenumi    = полный → выполнять",
+          "kolo    → kolumo     = шея → воротник",
+          "butono  → butonumi   = пуговица → застёгивать",
+          "brako   → brakumi    = рука → обнимать",
+          "aero    → aerumi     = воздух → проветривать",
+          "komuna  → komunumo   = общий → община",
           "",
-          "В ПРЕДЛОЖЕНИЯХ:",
+          "В РЕЧИ:                                Нажми 2",
+          "Kie mi povas parkumi?",
+          "= Где я могу припарковаться?",
           "Mi plenumis mian promeson.",
-          "(Я выполнил своё обещание.)",
-          "",
-          "-UM- означает «сделать что-то связанное»!"
-        ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "051",
-    "trigger_word": "plibonigi",
-    "header_color": "green",
-    "title": "УРОК 51: ПРИСТАВКА «EKS-»",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono kvindek unu",
-        "content": [
-          "Приставка EKS- означает «бывший»",
-          "или «экс-». Она указывает, что нечто",
-          "больше не актуально.",
-          "",
-          "БЫВШИЕ ОТНОШЕНИЯ:",
-          "edzo → eksedzo = husband → ex-husband",
-          "edzino → eksedzino = wife → ex-wife",
-          "amiko → eksamiko = friend → ex-friend",
-          "",
-          "БЫВШИЕ ДОЛЖНОСТИ/СТАТУС:",
-          "prezidento → eksprezidento = ex-president",
-          "membro → eksmembro = member → former member",
-          "soldato → ekssoldato = soldier → ex-soldier",
-          "studento → eksstudento = student → ex-student",
-          "",
-          "В УПОТРЕБЛЕНИИ:",
-          "Mia eksedzo loĝas en Parizo.",
-          "(Мой бывший муж живёт в Париже.)"
-        ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "052",
-    "trigger_word": "paŭzejo",
-    "header_color": "green",
-    "title": "УРОК 52: СУФФИКС «-EG-»",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono kvindek du",
-        "content": [
-          "Суффикс -EG- усиливает значение!",
-          "",
-          "ДЕЛАЕТ БОЛЬШИМ:",
-          "domo    → domego     = дом → особняк",
-          "vento   → ventego    = ветер → буря",
-          "bona    → bonega     = хороший → отличный",
-          "",
-          "УСИЛИВАЕТ:",
-          "malsata → malsatega  = голодный → голодный до",
-          "смерти",
-          "venki   → venkegi    = победить → разгромить",
-          "ami     → amegi      = любить → обожать",
-          "",
-          "-EG- противоположен -ET-:",
-          "dometo (домик) <-> domego (особняк)",
-          "",
-          "В эсперанто много суффиксов. Чтобы",
-          "запомнить этот, думай: «ЭКЗАГЕРИРОВАТЬ»."
-        ]
+          "= Я сдержал своё обещание."
+        ],
+        "pronunciation_mappings": {
+          "1": "Parko. Parkumi. Plena. Plenumi. Kolo. Kolumo. Butono. Butonumi. Brako. Brakumi. Aero. Aerumi. Komuna. Komunumo.",
+          "2": "Kie mi povas parkumi? Mi plenumis mian promeson."
+        },
+        "pronunciation": "Leciono kvindek"
       }
     ]
   }

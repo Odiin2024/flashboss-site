@@ -1,101 +1,204 @@
 [
   {
-    "lesson_id": "057",
-    "trigger_word": "dankema se",
+    "lesson_id": "051",
+    "trigger_word": "rekomendo",
+    "title": "УРОК 63: ПРИСТАВКА «EKS-»",
     "header_color": "green",
-    "title": "УРОК 57: СУФФИКС «-AD-»",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
-        "pronunciation": "Leciono kvindek sep",
         "content": [
-          "Суффикс -AD- означает «непрерывное действие»",
-          "или «повторяющееся действие». Он подчёркивает",
-          "длительность или процесс, а не единичный акт.",
+          "Приставка EKS- значит БЫВШИЙ: тот, кто",
+          "больше не занимает эту роль.",
           "",
-          "ОТ ГЛАГОЛА К НЕПРЕРЫВНОМУ ДЕЙСТВИЮ:",
-          "paroli  → parolado    = говорить → говорение",
-          "kanti   → kantado     = петь → пение",
-          "labori  → laborado    = работать → работа",
-          "lerni   → lernado     = учиться → учёба",
+          "БЫВШИЕ РОЛИ:                           Нажми 1",
+          "edzo       → eksedzo       = бывший муж",
+          "prezidanto → eksprezidanto = экс-президент",
+          "membro     → eksmembro     = бывший член",
+          "studento   → eksstudento   = бывший студент",
           "",
-          "РАЗНИЦА:",
-          "parolo   = речь (один объект)",
-          "parolado = говорение (процесс, длительный)",
+          "EKS- КАК ОТДЕЛЬНОЕ СЛОВО:              Нажми 2",
+          "eksa   = бывший",
+          "eksiĝi = уйти в отставку (оставить пост)",
           "",
-          "В УПОТРЕБЛЕНИИ:",
-          "La lernado daŭris du horojn.",
-          "(Учёба длилась два часа.)",
-          "-AD- превращает мгновения в процессы!"
-        ]
+          "В РЕЧИ:                                Нажми 3",
+          "Mia eksa instruisto skribis al mi rekomendon.",
+          "= Мой бывший учитель написал мне",
+          "  рекомендацию."
+        ],
+        "pronunciation_mappings": {
+          "1": "Edzo. Eksedzo. Prezidanto. Eksprezidanto. Membro. Eksmembro. Studento. Eksstudento.",
+          "2": "Eksa. Eksiĝi.",
+          "3": "Mia eksa instruisto skribis al mi rekomendon."
+        },
+        "pronunciation": "Leciono kvindek unu"
       }
     ]
   },
   {
     "lesson_id": "058",
-    "trigger_word": "kun estimo",
+    "trigger_word": "atentigi",
+    "title": "УРОК 64: ПРЕДЛОГИ + ПРИДАТОЧНЫЕ",
     "header_color": "green",
-    "title": "УРОК 58: СУФФИКС «-IST-»",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono kvindek ok",
+        "total_pages": 2,
         "content": [
-          "Суффикс -IST- образует слова для людей,",
-          "занимающихся чем-то профессионально",
-          "или постоянно. Думай «специалист».",
+          "Предлог не может стоять прямо перед",
+          "придаточным. Вставь TIO, а затем союзное",
+          "слово: ke, kio(n), ĉu, kiel...",
           "",
-          "ОБРАЗОВАНИЕ НАЗВАНИЙ:",
-          "arto    → artisto     = art → artist",
-          "muziko  → muzikisto   = music → musician",
-          "instrui → instruisto  = teach → teacher",
-          "dento   → dentisto    = tooth → dentist",
-          "Esperanto → Esperantisto = Esperantist",
+          "PRI TIO, KE = о том, что:              Нажми 1",
+          "Ni parolis pri tio, ke vi venos.",
+          "= Мы говорили о том, что ты придёшь.",
           "",
-          "СРАВНИ -ANT- И -IST-:",
-          "lernanto = ученик (тот, кто учится сейчас)",
-          "lernisto = учёный (профессионал в учёбе)",
-          "instruanto = тот, кто учит (прямо сейчас)",
-          "instruisto = учитель (по профессии)",
+          "PRI TIO, KION = о том, ЧТО:            Нажми 2",
+          "Mi pensas pri tio, kion vi diris.",
+          "= Я думаю о том, что ты сказал.",
           "",
-          "-IST- подразумевает опыт или преданность!"
-        ]
+          "DE TIO, ĈU / KIEL:                     Нажми 3",
+          "Tio dependas de tio, ĉu vi venos.",
+          "= Это зависит от того, придёшь ли ты.",
+          "Ĉio dependas de tio, kiel ni agos.",
+          "= Всё зависит от того, как мы поступим."
+        ],
+        "pronunciation_mappings": {
+          "1": "Ni parolis pri tio, ke vi venos.",
+          "2": "Mi pensas pri tio, kion vi diris.",
+          "3": "Tio dependas de tio, ĉu vi venos. Ĉio dependas de tio, kiel ni agos."
+        },
+        "pronunciation": "Leciono kvindek ok"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "Никогда не 'pri kion', 'de ĉu', 'en kiel':",
+          "предлогу сначала нужно TIO.",
+          "",
+          "У КАЖДОГО СЛОВА СВОЙ ПАДЕЖ:            Нажми 1",
+          "Mi dankas vin pro tio, kion vi faris.",
+          "= Спасибо за то, что ты сделал.",
+          "(tio: после pro, без -n; kion:",
+          "дополнение к faris)",
+          "",
+          "НЕТ ПРЕДЛОГА? TIO НЕ НУЖНО:            Нажми 2",
+          "Mi scias, kion vi diris.",
+          "= Я знаю, что ты сказал.",
+          "",
+          "ПОЛЕЗНЫЕ СВЯЗКИ:                       Нажми 3",
+          "malgraŭ tio, ke  = хотя, несмотря на то что",
+          "krom tio, ke     = кроме того, что",
+          "danke al tio, ke = благодаря тому, что"
+        ],
+        "pronunciation_mappings": {
+          "1": "Mi dankas vin pro tio, kion vi faris.",
+          "2": "Mi scias, kion vi diris.",
+          "3": "Malgraŭ tio, ke. Krom tio, ke. Danke al tio, ke."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "057",
+    "trigger_word": "resumi",
+    "title": "УРОК 65: ПРЕДЛОГИ + -I",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "Лишь немногие слова допускают сразу",
+          "после себя глагол на -I. Самые нужные:",
+          "",
+          "POR + -I = чтобы:                      Нажми 1",
+          "Por resumi: ni havas tri solvojn.",
+          "= Чтобы подытожить: у нас три решения.",
+          "",
+          "SEN + -I = без того, чтобы:            Нажми 2",
+          "Li foriris sen diri ion.",
+          "= Он ушёл, ничего не сказав.",
+          "",
+          "ANSTATAŬ + -I = вместо того, чтобы:    Нажми 3",
+          "Skribu anstataŭ telefoni.",
+          "= Напиши, вместо того чтобы звонить.",
+          "",
+          "ANTAŬ OL + -I = прежде чем:            Нажми 4",
+          "Pensu antaŭ ol respondi.",
+          "= Подумай, прежде чем отвечать."
+        ],
+        "pronunciation_mappings": {
+          "1": "Por resumi: ni havas tri solvojn.",
+          "2": "Li foriris sen diri ion.",
+          "3": "Skribu anstataŭ telefoni.",
+          "4": "Pensu antaŭ ol respondi."
+        },
+        "pronunciation": "Leciono kvindek sep"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "Другие предлоги (al, per, pri, dum,",
+          "post, pro...) никогда не берут -I. Бери",
+          "существительное или причастие на -E:",
+          "",
+          "ДЕЛАЯ = -ANTE (никогда per + -i):      Нажми 1",
+          "Ni lernas parolante.",
+          "= Мы учимся, разговаривая.",
+          "",
+          "СДЕЛАВ = post + сущ., -inte:           Нажми 2",
+          "Post la kunveno ni manĝis.",
+          "= После собрания мы поели.",
+          "Fininte la laboron, ni manĝis.",
+          "= Закончив работу, мы поели.",
+          "",
+          "ЗА ЧТО-ТО = pro + существительное:     Нажми 3",
+          "Dankon pro via helpo!",
+          "= Спасибо за помощь!"
+        ],
+        "pronunciation_mappings": {
+          "1": "Ni lernas parolante.",
+          "2": "Post la kunveno ni manĝis. Fininte la laboron, ni manĝis.",
+          "3": "Dankon pro via helpo!"
+        }
       }
     ]
   },
   {
     "lesson_id": "059",
-    "trigger_word": "lasta",
+    "trigger_word": "dankinda",
+    "title": "УРОК 66: PARETO 1 ПРОЙДЕН!",
     "header_color": "gold",
     "repeat": false,
-    "title": "PARETO 1 ЗАВЕРШЁН!",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
-        "pronunciation": "Gratulojn",
         "content": [
-          "Поздравляю! Ты завершил Pareto 1!",
+          "Gratulojn! Ты прошёл Pareto 1!",
           "",
-          "ЧТО ТЫ ОСВОИЛ:",
-          "✓ 2000 слов эсперанто (Core + P1)",
-          "✓ ВСЕ аффиксы эсперанто (23 суффикса!)",
-          "✓ ВСЕ причастия и сложные времена",
-          "✓ Полная система коррелятивов",
+          "ЧТО ТЫ ВЫУЧИЛ:",
+          "✓ 2000 слов и выражений (Core + P1)",
+          "✓ Все десять приставок и почти все суффиксы",
+          "✓ Все шесть причастий, с -o и -e",
+          "✓ Всю таблицу коррелятивов KI-/TI-",
           "",
-          "ТВОЙ УРОВЕНЬ: соответствует B1–B2!",
+          "ТВОЙ УРОВЕНЬ: примерно B1.",
           "",
           "ТЕПЕРЬ ТЫ МОЖЕШЬ:",
-          "- Понимать большую часть текстов на эсперанто",
-          "- Точно выражать сложные мысли",
-          "- Составлять почти любое нужное слово",
-          "- Участвовать в сообществе эсперантистов",
+          "- Участвовать в форумах и дискуссиях",
+          "- Планировать встречи и ходить на них",
+          "- Путешествовать и жить у эсперантистов",
+          "- Писать официальные письма и e-mail",
           "",
-          "Bonega laboro! Festu vian sukceson!",
-          "(Отличная работа! Отпразднуй свой успех!)"
-        ]
+          "Bonega laboro! Pareto 2 atendas vin.",
+          "(Отличная работа! Pareto 2 ждёт тебя.)"
+        ],
+        "pronunciation": "Gratulojn"
       }
     ]
   }

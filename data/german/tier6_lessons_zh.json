@@ -18,10 +18,10 @@
           "中性：            das  →  des",
           "复数：            die  →  der",
           "",
-          "阳性和中性名词还需加 -(e)s：des Mann(es)",
-          "",
+          "阳性和中性名词加 -(e)s：des Mann(e)s",
+          "部分阳性名词加 -(e)n：des Hasen",
           "das Auto des Mannes（那个男人的汽车）",
-          "das Buch des Kindes（那个孩子的书）",
+          "die Ohren des Hasen（野兔的耳朵）",
           "",
           "常用第二格介词：",
           "wegen（因为），trotz（尽管）",
@@ -34,10 +34,142 @@
     ]
   },
   {
+    "lesson_id": "034",
+    "trigger_word": "Huhn",
+    "trigger_card_number": 32,
+    "title": "第34课：关系从句",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "关系从句用于补充额外信息：",
+          "",
+          "英语：The friend WHO helps me...",
+          "德语：Der Freund, der mir hilft...",
+          "",
+          "使用 der/die/das 表示 'who/which/that'：",
+          "der — 阳性（Der Freund, der...）",
+          "die — 阴性（Die Freundin, die...）",
+          "das — 中性（Das Kind, das...）",
+          "die — 复数（Die Freunde, die...）",
+          "",
+          "若为宾语，阳性用 'den'：",
+          "",
+          "Der Mann, den ich sehe, ist mein Lehrer.",
+          "（我看到的那个人是我的老师。）",
+          "",
+          "关系从句在逗号后开始。",
+          "其动词位于句末。"
+        ],
+        "pronunciation": "Lektion 34"
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "介词 + 关系代词：",
+          "",
+          "介词放在最前面。关系代词的性和数",
+          "取决于先行词，格由介词决定：",
+          "",
+          "DAT: dem (阳), der (阴), dem (中), DENEN (复)",
+          "AKK: den (阳), die (阴), das (中), die (复)",
+          "",
+          "die Milch, aus der man Butter macht",
+          "（用来做黄油的牛奶）",
+          "die Finger, mit denen wir Dinge greifen",
+          "（我们用来抓东西的手指）",
+          "der Freund, für den ich koche",
+          "（我为他做饭的那位朋友）",
+          "",
+          "英语可以把介词留在句末，",
+          "如 the friend I cook for；德语绝不可以。"
+        ]
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "表示“……的”的关系代词（英语 whose）：",
+          "dessen（阳性/中性），deren（阴性/复数）",
+          "",
+          "Der Mann, dessen Auto hier steht...",
+          "（车停在这里的那个男人……）",
+          "Die Frau, deren Sohn ich kenne...",
+          "（我认识她儿子的那位女士……）",
+          "Die Leute, deren Haus wir mieten...",
+          "（我们租他们房子的那些人……）",
+          "",
+          "dessen/deren 取决于“所有者”（der Mann、",
+          "die Frau），而不是被拥有之物（der Sohn）。",
+          "其后的名词不加冠词。"
+        ]
+      }
+    ]
+  },
+  {
     "lesson_id": "035",
+    "trigger_word": "Maus",
+    "trigger_card_number": 38,
+    "title": "第35课：带 ZU 的不定式",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "德语中常在不定式前加 ZU：",
+          "",
+          "基本结构：动词 + ZU + 不定式",
+          "Ich versuche zu schlafen.（我试着入睡）",
+          "Es macht Spaß zu tanzen.（跳舞很有趣）",
+          "Ich habe keine Zeit zu kochen.",
+          "（我没时间做饭）",
+          "",
+          "可分动词：ZU 插在前缀和动词之间：",
+          "aufzustehen（起床）",
+          "anzukommen（到达）",
+          "",
+          "Ich habe vergessen, das Licht auszumachen.",
+          "（我忘了关灯）",
+          "",
+          "情态动词和 lassen 后面不用 ZU！"
+        ],
+        "pronunciation": "Lektion 35"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "UM ... ZU = 为了……（表目的）：",
+          "",
+          "um 开头，zu + 不定式放在末尾。",
+          "前后两部分的主语必须相同。",
+          "",
+          "Die Maus kommt heraus, um Essen zu suchen.",
+          "（老鼠为了找食物而出来）",
+          "Ich stelle den Wecker, um früh aufzustehen.",
+          "（为了早起，我定了闹钟）",
+          "",
+          "OHNE ... ZU = 不……就……：",
+          "Er geht, ohne etwas zu sagen.",
+          "（他什么也不说就走了）",
+          "STATT ... ZU = ……而不是……：",
+          "Sie spielt, statt zu lernen.",
+          "（她在玩，而不是在学习）",
+          "",
+          "um/ohne/statt ... zu 总要用逗号隔开。"
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": "036",
     "trigger_word": "schicken",
     "trigger_card_number": 130,
-    "title": "第35课：被动语态",
+    "title": "第36课：被动语态",
     "header_color": "cyan",
     "pages": [
       {
@@ -61,7 +193,7 @@
           "以上是最常用的被动语态形式。",
           "在正式/商务德语中极为常见。"
         ],
-        "pronunciation": "Lektion 35"
+        "pronunciation": "Lektion 36"
       },
       {
         "page": 2,
@@ -88,10 +220,10 @@
     ]
   },
   {
-    "lesson_id": "040",
+    "lesson_id": "037",
     "trigger_word": "herauf",
     "trigger_card_number": 169,
-    "title": "第40课：HIN 和 HER 副词",
+    "title": "第37课：HIN 和 HER 副词",
     "header_color": "cyan",
     "pages": [
       {
@@ -106,18 +238,18 @@
           "Komm her!（过来！）",
           "",
           "与副词结合：",
-          "hierhin = 到这里    hierher = 到这里",
-          "dorthin = 到那里    dorther = 从那里",
-          "wohin = 去哪儿       woher = 从哪儿来",
+          "hierhin = 到这个地方  hierher = 到我这边",
+          "dorthin = 到那里      dorther = 从那里",
+          "wohin = 去哪儿        woher = 从哪儿来",
           "",
           "与介词结合：",
           "hinaus/heraus=出去 hinein/herein=进来",
           "hinauf/herauf=上去 hinunter/herunter=下来",
-          "",
+          "口语：rein, raus, rauf, runter（hin/her 通用）",
           "Komm herein!（进来！—朝向说话者）",
           "Geh hinaus!（出去！—远离说话者）"
         ],
-        "pronunciation": "Lektion 40"
+        "pronunciation": "Lektion 37"
       }
     ]
   }

@@ -1,18 +1,16 @@
 [
   {
-    "lesson_id": "042",
+    "lesson_id": "045",
     "trigger_word": "soldado",
-    "trigger_card_number": 231,
-    "title": "LESSON 42: GERUND VS INFINITIVE",
+    "trigger_card_number": 216,
+    "title": "LESSON 45: GERUND VS INFINITIVE",
     "header_color": "red",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "English uses -ing everywhere. Spanish",
-          "is pickier about when to use the gerund",
-          "(-ando/-iendo) vs the infinitive:",
+          "English -ing = Spanish infinitive OR gerund:",
           "",
           "INFINITIVE (most cases):             Press 1",
           "Me gusta bailar. (I like dancing.)",
@@ -20,29 +18,31 @@
           "is important.)",
           "Antes de salir... (Before leaving...)",
           "",
-          "GERUND (ongoing action only):        Press 2",
+          "GERUND (ongoing action or manner):   Press 2",
           "Estoy estudiando. (I'm studying.)",
-          "Salió corriendo. (He left running.)",
+          "Salió corriendo. (He ran out.)",
           "Sigue lloviendo. (It keeps raining.)",
+          "Llevo dos años estudiando.",
+          "(I've been studying for two years.)",
           "",
           "NEVER after prepositions:            Press 3",
           "sin hablar (without speaking)",
           "NOT: sin hablando"
         ],
-        "pronunciation": "Lección cuarenta y dos",
+        "pronunciation": "Lección cuarenta y cinco",
         "pronunciation_mappings": {
-          "1": "me gusta bailar, estudiar es importante, antes de salir",
-          "2": "estoy estudiando, salió corriendo, sigue lloviendo",
-          "3": "sin hablar"
+          "1": "Me gusta bailar. Estudiar es importante. Antes de salir.",
+          "2": "Estoy estudiando. Salió corriendo. Sigue lloviendo. Llevo dos años estudiando.",
+          "3": "Sin hablar."
         }
       }
     ]
   },
   {
-    "lesson_id": "043",
+    "lesson_id": "046",
     "trigger_word": "vehículo",
-    "trigger_card_number": 281,
-    "title": "LESSON 43: ADVANCED PREPOSITIONS",
+    "trigger_card_number": 266,
+    "title": "LESSON 46: ADVANCED PREPOSITIONS",
     "header_color": "red",
     "pages": [
       {
@@ -68,103 +68,78 @@
           "TRAS (after/behind):                 Press 5",
           "tras la reunión (after the meeting)"
         ],
-        "pronunciation": "Lección cuarenta y tres",
+        "pronunciation": "Lección cuarenta y seis",
         "pronunciation_mappings": {
-          "1": "ante esta situación, ante todo",
-          "2": "mediante un acuerdo",
-          "3": "según el informe",
-          "4": "hacia el futuro",
-          "5": "tras la reunión"
+          "1": "Ante esta situación. Ante todo.",
+          "2": "Mediante un acuerdo.",
+          "3": "Según el informe.",
+          "4": "Hacia el futuro.",
+          "5": "Tras la reunión."
         }
       }
     ]
   },
   {
-    "lesson_id": "044",
+    "lesson_id": "047",
     "trigger_word": "concierto",
-    "trigger_card_number": 341,
-    "title": "LESSON 44: FINER DISTINCTIONS",
+    "trigger_card_number": 330,
+    "title": "LESSON 47: SUBTLE CONTRASTS",
     "header_color": "red",
     "pages": [
       {
         "page": 1,
-        "total_pages": 3,
+        "total_pages": 2,
         "content": [
-          "Choosing the right word for the job.",
-          "These pairs trip up even advanced learners:",
+          "Pairs that look alike but aren't:",
           "",
-          "SABER vs CONOCER:                    Press 1",
-          "saber = to know a fact or how to",
-          "conocer = to know or be familiar with",
-          "Sé nadar. (I know how to swim.)",
-          "Conozco Madrid. (I know Madrid.)",
+          "SINO vs SI NO:                       Press 1",
+          "No lo hizo él, sino ella.",
+          "(He didn't do it; she did.)",
+          "Si no vienes, me enojo.",
+          "(If you don't come, I'll get angry.)",
           "",
-          "PEDIR vs PREGUNTAR:                  Press 2",
-          "pedir = to request something",
-          "preguntar = to ask a question",
-          "Pedí la cuenta. (I asked for the bill.)",
-          "Pregunté la hora. (I asked the time.)",
+          "AUN (even) vs AÚN (still, yet):      Press 2",
+          "Aun así, lo intentó. (Even so, he tried.)",
+          "Aún no ha llegado. (He hasn't arrived yet.)",
           "",
-          "In English, 'ask' covers both.",
-          "In Spanish, mixing them sounds wrong."
+          "POR QUE (por + que) vs PORQUE:       Press 3",
+          "Es la razón por (la) que vine.",
+          "(That's the reason why I came.)",
+          "Vine porque me invitaron.",
+          "(I came because they invited me.)"
         ],
-        "pronunciation": "Lección cuarenta y cuatro",
         "pronunciation_mappings": {
-          "1": "sé nadar, conozco Madrid",
-          "2": "pedí la cuenta, pregunté la hora"
+          "1": "No lo hizo él, sino ella. Si no vienes, me enojo.",
+          "2": "Aun así, lo intentó. Aún no ha llegado.",
+          "3": "Es la razón por la que vine. Vine porque me invitaron."
         }
       },
       {
         "page": 2,
-        "total_pages": 3,
+        "total_pages": 2,
         "content": [
-          "LLEVAR vs TRAER:                     Press 1",
-          "llevar = to take (away from here)",
-          "traer = to bring (towards here)",
-          "Lleva esto a tu madre.",
-          "(Take this to your mother.)",
-          "Trae el libro cuando vengas.",
-          "(Bring the book when you come.)",
+          "Spanish has no single verb for 'become':",
           "",
-          "SINO vs PERO:                        Press 2",
-          "pero = but (general contrast)",
-          "sino = but rather (after a negative,",
-          "correcting what was just denied)",
-          "No es caro, sino barato.",
-          "(It's not expensive, but rather cheap.)",
-          "Quiero ir, pero no puedo.",
-          "(I want to go, but I can't.)"
+          "PONERSE: a quick change of state     Press 1",
+          "Se puso rojo. (He turned red.)",
+          "Me pongo nervioso. (I get nervous.)",
+          "",
+          "VOLVERSE: a deep, lasting change     Press 2",
+          "Se volvió muy serio.",
+          "(He became very serious.)",
+          "",
+          "HACERSE: by effort or choice         Press 3",
+          "Se hizo médico. (He became a doctor.)",
+          "",
+          "QUEDARSE: the result of an event     Press 4",
+          "Se quedó ciego. (He went blind.)",
+          "Me quedé sin palabras. (I was speechless.)"
         ],
         "pronunciation_mappings": {
-          "1": "lleva esto a tu madre, trae el libro cuando vengas",
-          "2": "no es caro sino barato, quiero ir pero no puedo"
-        }
-      },
-      {
-        "page": 3,
-        "total_pages": 3,
-        "content": [
-          "POR QUÉ vs PORQUE vs PORQUÉ:        Press 1",
-          "por qué = why? (question)",
-          "porque = because (answer)",
-          "porqué = the reason (noun)",
-          "¿Por qué? Porque sí. El porqué no",
-          "importa. (Why? Because. The reason",
-          "doesn't matter.)",
-          "",
-          "TODAVÍA vs AÚN vs YA:               Press 2",
-          "todavía/aún = still/yet",
-          "ya = already/now",
-          "Todavía no ha llegado.",
-          "(He still hasn't arrived.)",
-          "Ya lo sé. (I already know.)",
-          "",
-          "These distinctions are what separate",
-          "good Spanish from great Spanish."
-        ],
-        "pronunciation_mappings": {
-          "1": "por qué, porque sí, el porqué no importa",
-          "2": "todavía no ha llegado, ya lo sé"
+          "1": "Se puso rojo. Me pongo nervioso.",
+          "2": "Se volvió muy serio.",
+          "3": "Se hizo médico.",
+          "4": "Se quedó ciego. Me quedé sin palabras."
         }
       }
     ]

@@ -3,8 +3,8 @@
     "lesson_id": "021",
     "trigger_word": "cappuccino",
     "trigger_card_number": 1001,
+    "title": "УРОК 27: ИТАЛЬЯНСКИЕ ПРИЁМЫ ПИЩИ",
     "header_color": "magenta",
-    "title": "УРОК 21: ИТАЛЬЯНСКИЕ ПРИЁМЫ ПИЩИ",
     "pages": [
       {
         "page": 1,
@@ -12,21 +12,21 @@
         "content": [
           "Итальянцы едят по суточному ритму.",
           "Названия важны — каждое указывает",
-          "на особый стиль и ожидания.",
+          "на свой стиль и свои ожидания.",
           "",
-          "COLAZIONE (завтрак, 7–9 утра):",
+          "COLAZIONE (завтрак, 7:00–9:00):",
           "   cappuccino + cornetto в баре",
           "   стоя у banco (стойки)",
-          "   никогда яиц, бекона, хлопьев",
+          "   никаких яиц и бекона",
           "",
           "PRANZO (обед, 12:30–14:00):",
           "   традиционно главный приём пищи",
           "   primo → secondo → contorno → caffè",
           "   так до сих пор в малых городах",
           "",
-          "CENA (ужин, 20–21):",
-          "   легче pranzo или равен ему",
-          "   в городах часто стал главным"
+          "CENA (ужин, 20:00–21:00):",
+          "   легче, чем pranzo, или такой же",
+          "   в городах теперь часто главный"
         ]
       },
       {
@@ -48,7 +48,7 @@
           "   CAFFÈ = эспрессо в завершение",
           "   DIGESTIVO = ликёр после еды",
           "",
-          "Не заказывают всё сразу.",
+          "Заказывать всё это не обязательно.",
           "Primo + secondo или только primo —",
           "это совершенно нормально."
         ]
@@ -56,26 +56,95 @@
       {
         "page": 3,
         "total_pages": 3,
-        "pronunciation": "Un caffè, per favore.",
         "content": [
           "ГДЕ ЕДЯТ ИТАЛЬЯНЦЫ — иерархия:",
           "",
           "   BAR = кофе, cornetti, aperitivo",
           "      не бар для выпивки! Это кафе.",
-          "   OSTERIA = проще всего, вино + еда",
+          "   OSTERIA = самое простое: вино + еда",
           "      часто без письменного меню",
           "   TRATTORIA = семейная, домашняя кухня",
-          "      сердце итальянской трапезы",
-          "   RISTORANTE = официально, полный сервис",
-          "      скатерти, винная карта, подача",
+          "      сердце итальянского застолья",
+          "   RISTORANTE = солидно, полный сервис",
+          "      скатерти, винная карта, перемены блюд",
           "",
           "ПРАВИЛА КОФЕ:",
           "   cappuccino = только утром, НИКОГДА",
           "     после еды (местные заметят)",
           "   caffè = эспрессо, в любое время",
           "   macchiato = эспрессо + капля молока",
-          "   caffè corretto = эспрессо + grappa"
-        ]
+          "   caffè corretto = эспрессо + grappa",
+          "ЗАКАЖИ: un caffè, per favore.          Нажми 1"
+        ],
+        "pronunciation_mappings": {
+          "1": "Un caffè, per favore."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "047",
+    "trigger_word": "espresso",
+    "trigger_card_number": 1002,
+    "title": "УРОК 28: БЕЗЛИЧНОЕ SI",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "SI + глагол = что делают ЛЮДИ вообще.",
+          "Глагол стоит в 3-м лице ЕДИНСТВЕННОГО",
+          "числа (это форма lui/lei).",
+          "",
+          "   Al banco si beve in fretta.         Нажми 1",
+          "      = У стойки пьют быстро.",
+          "   In Italia si mangia tardi.          Нажми 2",
+          "      = В Италии едят поздно.",
+          "   Come si dice in italiano?           Нажми 3",
+          "      = Как сказать это по-итальянски?",
+          "   Si dice così.                       Нажми 4",
+          "      = Так говорят.",
+          "",
+          "По-русски — тоже глагол без подлежащего,",
+          "но во МН. числе: «пьют», «едят», «говорят»."
+        ],
+        "pronunciation": "Si vive bene qui.",
+        "pronunciation_mappings": {
+          "1": "Al banco si beve in fretta.",
+          "2": "In Italia si mangia tardi.",
+          "3": "Come si dice in italiano?",
+          "4": "Si dice così."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "Существительное во МН. ЧИСЛЕ — глагол тоже:",
+          "   Qui si vende il pane.               Нажми 1",
+          "      = Здесь продаётся хлеб.",
+          "   Qui si vendono i giornali.",
+          "      = Здесь продаются газеты.",
+          "",
+          "ВОЗВРАТНЫЕ глаголы: ci si, не si si    Нажми 2",
+          "   In Italia ci si saluta con due baci.",
+          "      = В Италии здороваются двумя",
+          "        поцелуями.",
+          "",
+          "НА ВЫВЕСКАХ И ДВЕРЯХ МАГАЗИНОВ:        Нажми 3",
+          "   Si affitta.  = Сдаётся.",
+          "   Si vende.    = Продаётся.",
+          "   Si prega di non fumare.",
+          "      = Просьба не курить.",
+          "   Ещё встречаются старые формы:",
+          "   affittasi, vendesi."
+        ],
+        "pronunciation_mappings": {
+          "1": "Qui si vende il pane. Qui si vendono i giornali.",
+          "2": "In Italia ci si saluta con due baci.",
+          "3": "Si affitta. Si vende. Si prega di non fumare."
+        }
       }
     ]
   }

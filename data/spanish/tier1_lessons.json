@@ -172,9 +172,9 @@
           "",
           "un = masculine      una = feminine",
           "un libro (a book)   una casa (a house)",
+          "Plural: unos libros, unas casas (some)",
           "",
           "PLURALS — add -s or -es:",
-          "",
           "el libro  → los libros",
           "la casa   → las casas",
           "el color  → los colores",
@@ -185,7 +185,7 @@
           "it WITH the article:",
           "",
           "Not 'persona' but 'la persona'.",
-          "The articles are colored to help"
+          "The articles are colored to help you."
         ],
         "pronunciation_mappings": {}
       }
@@ -193,9 +193,47 @@
   },
   {
     "lesson_id": "003",
+    "trigger_word": "español",
+    "trigger_card_number": 29,
+    "title": "LESSON 3: QUESTION WORDS",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "Spanish question words all have accents:",
+          "",
+          "¿qué? = what?     ¿quién? = who?     Press 1",
+          "¿dónde? = where?  ¿cuándo? = when?",
+          "¿por qué? = why?  ¿cómo? = how?",
+          "¿cuál? = which? (what? before es)",
+          "¿cuánto/cuántos? = how much?/how many?",
+          "",
+          "EXAMPLES:                            Press 2",
+          "¿Qué quieres? (What do you want?)",
+          "¿Dónde está el baño? (Where's the restroom?)",
+          "¿Cuánto cuesta? (How much does it cost?)",
+          "¿Por qué no? (Why not?)",
+          "",
+          "Note: porque (no accent) = because",
+          "      por qué (accent) = why?",
+          "The accent stays in hidden questions too:",
+          "No sé dónde está. (I don't know where it is.)"
+        ],
+        "pronunciation": "Lección tres",
+        "pronunciation_mappings": {
+          "1": "qué, quién, dónde, cuándo, por qué, cómo, cuál, cuánto, cuántos",
+          "2": "qué quieres, dónde está el baño, cuánto cuesta, por qué no"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "004",
     "trigger_word": "salir",
-    "trigger_card_number": 46,
-    "title": "LESSON 3: PRESENT TENSE",
+    "trigger_card_number": 50,
+    "title": "LESSON 4: PRESENT TENSE",
     "header_color": "green",
     "pages": [
       {
@@ -204,26 +242,26 @@
         "content": [
           "Spanish verbs come in 3 families:",
           "-AR (hablar)  -ER (comer)  -IR (vivir)",
-          "",
-          "Each family shares the same endings.",
           "Here's -AR, the most common:         Press 1",
           "",
           "yo hablo             = I speak",
-          "tú hablas            = you speak",
+          "tú hablas            = you speak (friend)",
+          "usted habla          = you speak (polite)",
           "él/ella habla        = he/she speaks",
           "nosotros hablamos    = we speak",
-          "ellos hablan         = they speak",
+          "ustedes hablan       = you all speak",
+          "ellos/ellas hablan   = they speak",
           "",
-          "The pattern: drop -ar, add",
-          "-o, -as, -a, -amos, -an",
-          "",
-          "You can often drop the pronoun because",
-          "the ending tells you who's speaking.",
-          "Hablo = I speak. Hablan = they speak."
+          "Drop -ar, add: -o -as -a -amos -an",
+          "usted (Ud.) takes the él/ella ending,",
+          "ustedes (Uds.) the ellos ending. In Latin",
+          "America, ustedes is every plural 'you'.",
+          "Spain also uses vosotros (vosotros habláis).",
+          "The pronoun is optional: Hablo = I speak."
         ],
-        "pronunciation": "Lección tres",
+        "pronunciation": "Lección cuatro",
         "pronunciation_mappings": {
-          "1": "yo hablo, tú hablas, él habla, nosotros hablamos, ellos hablan"
+          "1": "yo hablo, tú hablas, usted habla, él habla, nosotros hablamos, ustedes hablan, ellos hablan"
         }
       },
       {
@@ -231,36 +269,71 @@
         "total_pages": 2,
         "content": [
           "-ER verbs (comer = to eat):         Press 1",
-          "",
           "yo como             = I eat",
           "tú comes            = you eat",
-          "él/ella come        = he/she eats",
+          "él/ella/usted come  = he/she eats, you eat",
           "nosotros comemos    = we eat",
-          "ellos comen         = they eat",
+          "ellos/ustedes comen = they eat, you all eat",
           "",
           "-IR verbs (vivir = to live):        Press 2",
-          "",
           "yo vivo             = I live",
           "tú vives            = you live",
-          "él/ella vive        = he/she lives",
+          "él/ella/usted vive  = he/she lives, you live",
           "nosotros vivimos    = we live",
-          "ellos viven         = they live",
+          "ellos/ustedes viven = they live, you all live",
           "",
           "Notice: -ER and -IR are almost",
           "identical! Only nosotros differs."
         ],
         "pronunciation_mappings": {
-          "1": "yo como, tú comes, él come, nosotros comemos, ellos comen",
-          "2": "yo vivo, tú vives, él vive, nosotros vivimos, ellos viven"
+          "1": "yo como, tú comes, él come, usted come, nosotros comemos, ellos comen, ustedes comen",
+          "2": "yo vivo, tú vives, él vive, usted vive, nosotros vivimos, ellos viven, ustedes viven"
         }
       }
     ]
   },
   {
-    "lesson_id": "004",
+    "lesson_id": "005",
+    "trigger_word": "mediodía",
+    "trigger_card_number": 58,
+    "title": "LESSON 5: STEM-CHANGING VERBS",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "STEM-CHANGING VERBS:",
+          "Some verbs change their stem vowel in",
+          "every form except nosotros. The endings",
+          "stay regular.",
+          "",
+          "e → ie   querer = to want            Press 1",
+          "quiero, quieres, quiere, queremos, quieren",
+          "",
+          "o → ue   poder = can, to be able     Press 2",
+          "puedo, puedes, puede, podemos, pueden",
+          "",
+          "e → i    repetir = to repeat         Press 3",
+          "repito, repites, repite, repetimos, repiten",
+          "",
+          "Also: entender, pensar, cerrar (e→ie);",
+          "dormir, volver, costar (o→ue); seguir (e→i)"
+        ],
+        "pronunciation": "Lección cinco",
+        "pronunciation_mappings": {
+          "1": "quiero, quieres, quiere, queremos, quieren",
+          "2": "puedo, puedes, puede, podemos, pueden",
+          "3": "repito, repites, repite, repetimos, repiten"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "006",
     "trigger_word": "vez",
-    "trigger_card_number": 68,
-    "title": "LESSON 4: HAY & BASIC STRUCTURES",
+    "trigger_card_number": 76,
+    "title": "LESSON 6: HAY & BASIC STRUCTURES",
     "header_color": "green",
     "pages": [
       {
@@ -269,7 +342,7 @@
         "content": [
           "HAY = there is / there are           Press 1",
           "",
-          "Hay un problema. (There's a problem)",
+          "Hay un problema. (There's a problem.)",
           "Hay libros. (There are books.)",
           "¿Hay agua? (Is there water?)",
           "No hay tiempo. (There's no time.)",
@@ -278,15 +351,15 @@
           "Subject + Verb + Object (like English)",
           "Yo como pan. (I eat bread.)",
           "",
-          "QUESTIONS — two easy ways:",
-          "¿Tú hablas español? (Raise voice)",
-          "¿Hablas español? (Drop the pronoun)",
+          "QUESTIONS — same words, rising voice:",
+          "¿Hablas español? (Do you speak Spanish?)",
+          "The pronoun is optional: ¿Tú hablas...?",
           "",
           "NEGATION — just add NO before verb:",
-          "No hablo inglés. (I don't speak English)",
+          "No hablo inglés. (I don't speak English.)",
           "No hay problema. (There's no problem.)"
         ],
-        "pronunciation": "Lección cuatro",
+        "pronunciation": "Lección seis",
         "pronunciation_mappings": {
           "1": "hay un problema, hay libros, hay agua, no hay tiempo"
         }
@@ -294,10 +367,10 @@
     ]
   },
   {
-    "lesson_id": "005",
+    "lesson_id": "007",
     "trigger_word": "joven",
-    "trigger_card_number": 97,
-    "title": "LESSON 5: SER VS ESTAR",
+    "trigger_card_number": 105,
+    "title": "LESSON 7: SER VS ESTAR",
     "header_color": "green",
     "pages": [
       {
@@ -323,7 +396,7 @@
           "Next page: when to use SER vs ESTAR,",
           "the question every learner asks."
         ],
-        "pronunciation": "Lección cinco",
+        "pronunciation": "Lección siete",
         "pronunciation_mappings": {
           "1": "soy, eres, es, somos, son",
           "2": "estoy, estás, está, estamos, están",
@@ -335,27 +408,27 @@
         "page": 2,
         "total_pages": 3,
         "content": [
-          "Spanish has TWO verbs for 'to be'.",
-          "This is a curveball, but the logic is clear:",
+          "Spanish has TWO verbs for 'to be':",
+          "SER = what something IS",
+          "ESTAR = how or WHERE something is",
           "",
-          "SER = what something IS (permanent)",
-          "ESTAR = how something IS (temporary)",
-          "",
-          "SER — identity, origin, traits:      Press 1",
+          "SER — identity, traits, origin, time:  Press 1",
           "Soy estudiante. (I'm a student.)",
           "Ella es inteligente. (She's smart.)",
           "Somos de México. (We're from Mexico.)",
+          "Son las cuatro. (It's four o'clock.)",
           "",
-          "ESTAR — state, mood, location:       Press 2",
+          "ESTAR — states, moods, location:       Press 2",
           "Estoy cansado. (I'm tired.)",
           "Ella está feliz. (She's happy.)",
           "Estamos en casa. (We're at home.)",
           "",
-          "TRICK: If it can CHANGE, use estar.",
-          "If it's WHO YOU ARE, use ser."
+          "TRICK: for WHERE something is, use estar,",
+          "even if it never moves:",
+          "Guadalajara está en México."
         ],
         "pronunciation_mappings": {
-          "1": "soy estudiante, ella es inteligente, somos de México",
+          "1": "soy estudiante, ella es inteligente, somos de México, son las cuatro",
           "2": "estoy cansado, ella está feliz, estamos en casa"
         }
       },
@@ -392,10 +465,10 @@
     ]
   },
   {
-    "lesson_id": "006",
+    "lesson_id": "008",
     "trigger_word": "café",
-    "trigger_card_number": 117,
-    "title": "LESSON 6: GUSTAR & SIMILAR VERBS",
+    "trigger_card_number": 125,
+    "title": "LESSON 8: GUSTAR & SIMILAR VERBS",
     "header_color": "green",
     "pages": [
       {
@@ -414,14 +487,14 @@
           "",
           "PLURAL things = gustan:              Press 2",
           "Me gustan los gatos. (I like cats.)",
-          "Me gustan las películas. (I like films.)",
+          "Me gustan las películas. (I like movies.)",
           "",
           "SIMILAR BACKWARDS VERBS:",
           "Me interesa = I'm interested in",
           "Me importa = I care about (it matters)",
           "Me falta = I'm missing / I need"
         ],
-        "pronunciation": "Lección seis",
+        "pronunciation": "Lección ocho",
         "pronunciation_mappings": {
           "1": "me gusta el café, te gusta bailar, le gusta la música, nos gusta viajar",
           "2": "me gustan los gatos, me gustan las películas"
@@ -430,53 +503,15 @@
     ]
   },
   {
-    "lesson_id": "007",
-    "trigger_word": "lugar",
-    "trigger_card_number": 147,
-    "title": "LESSON 7: QUESTION WORDS",
+    "lesson_id": "009",
+    "trigger_word": "levantarse",
+    "trigger_card_number": 163,
+    "title": "LESSON 9: COMMANDS & NEAR FUTURE",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
-        "content": [
-          "Spanish question words all have accents:",
-          "",
-          "¿qué? = what?     ¿quién? = who?     Press 1",
-          "¿dónde? = where?  ¿cuándo? = when?",
-          "¿por qué? = why?  ¿cómo? = how?",
-          "¿cuál? = which?  ¿cuánto? = how much?",
-          "",
-          "EXAMPLES:                            Press 2",
-          "",
-          "¿Qué quieres? (What do you want?)",
-          "¿Dónde está el baño? (Where's the restroom?)",
-          "¿Cuánto cuesta? (How much does it cost?)",
-          "¿Por qué no? (Why not?)",
-          "",
-          "Note: porque (no accent) = because",
-          "      por qué (accent) = why?",
-          "",
-          "The accent is the question mark."
-        ],
-        "pronunciation": "Lección siete",
-        "pronunciation_mappings": {
-          "1": "qué, quién, dónde, cuándo, por qué, cómo, cuál, cuánto",
-          "2": "qué quieres, dónde está el baño, cuánto cuesta, por qué no"
-        }
-      }
-    ]
-  },
-  {
-    "lesson_id": "008",
-    "trigger_word": "dormir",
-    "trigger_card_number": 165,
-    "title": "LESSON 8: COMMANDS & NEAR FUTURE",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
           "INFORMAL COMMANDS (tú)",
           "",
@@ -494,19 +529,19 @@
           "ir           → ¡Ve! (Go!)",
           "poner        → ¡Pon! (Put!)",
           "salir        → ¡Sal! (Leave!)",
-          "tener        → ¡Ten! (Have!)",
+          "tener        → ¡Ten cuidado! (Be careful!)",
           "venir        → ¡Ven! (Come!)"
         ],
-        "pronunciation": "Lección ocho",
+        "pronunciation": "Lección nueve",
         "pronunciation_mappings": {
           "1": "hablar, habla, mirar, mira",
           "2": "comer, come, escribir, escribe",
-          "3": "decir, di, hacer, haz, ir, ve, poner, pon, salir, sal, tener, ten, venir, ven"
+          "3": "decir, di, hacer, haz, ir, ve, poner, pon, salir, sal, tener, ten cuidado, venir, ven"
         }
       },
       {
         "page": 2,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
           "NEAR FUTURE — ir + a + infinitive",
           "",
@@ -530,6 +565,30 @@
           "1": "voy a comer, vas a estudiar, vamos a salir",
           "2": "voy, vas, va, vamos, van",
           "3": "estoy hablando, está comiendo"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "REFLEXIVE VERBS: the action comes back",
+          "to you. The -se moves to the front as",
+          "me, te, se, nos, se:",
+          "levantarse = to get up",
+          "",
+          "me levanto      = I get up           Press 1",
+          "te levantas     = you get up",
+          "se levanta      = he/she gets up, you get up",
+          "nos levantamos  = we get up",
+          "se levantan     = they get up, you all get up",
+          "",
+          "You know one already:",
+          "¿Cómo te llamas? Me llamo Ana.",
+          "(What's your name? My name is Ana.)",
+          "Also: ducharse, vestirse, acostarse."
+        ],
+        "pronunciation_mappings": {
+          "1": "me levanto, te levantas, se levanta, nos levantamos, se levantan"
         }
       }
     ]

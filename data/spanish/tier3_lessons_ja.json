@@ -1,9 +1,9 @@
 [
   {
-    "lesson_id": "013",
-    "trigger_word": "abuelo",
-    "trigger_card_number": 450,
-    "title": "第13課：目的格代名詞",
+    "lesson_id": "015",
+    "trigger_word": "explicar",
+    "trigger_card_number": 429,
+    "title": "第15課：目的格代名詞",
     "header_color": "green",
     "pages": [
       {
@@ -15,21 +15,21 @@
           "",
           "直接目的語(何を・誰を):",
           "me = わたしを        nos = わたしたちを",
-          "te = 君を  los/las = 彼ら・それらを",
-          "lo = 彼を・それを    la = 彼女を・それを",
+          "te = 君を  los/las = 彼ら/あなたたちを",
+          "lo = 彼/それ/あなたを  la = 彼女/それ/あなたを",
           "",
           "¿Ves el libro? Sí, lo veo.",
           "(本が見えますか。はい、見えます)",
           "",
           "間接目的語(誰に・誰のために):",
           "me = わたしに        nos = わたしたちに",
-          "te = 君に            les = 彼らに",
-          "le = 彼に・彼女に",
+          "te = 君に            les = 彼らに/あなたたちに",
+          "le = 彼/彼女/あなたに",
           "",
           "Le doy el libro.(彼に本を渡します)",
           "目的格代名詞は動詞の前に置きます。"
         ],
-        "pronunciation": "Lección trece",
+        "pronunciation": "Lección quince",
         "pronunciation_mappings": {}
       },
       {
@@ -51,29 +51,29 @@
           "どちらの位置でも正しい:              4を押す",
           "Lo quiero comprar = Quiero comprarlo",
           "",
-          "位置で悩みすぎないでください。",
-          "カードの例文で自然と",
-          "感覚が身につきます。"
+          "肯定の命令形の後ろに付ける:          5を押す",
+          "¡Discúlpame! ¡Dime!(すみません! 言って!)"
         ],
         "pronunciation_mappings": {
           "1": "lo quiero, me gusta",
           "2": "voy a decirte algo, quiero comprarlo",
           "3": "estoy haciéndolo",
-          "4": "lo quiero comprar, quiero comprarlo"
+          "4": "lo quiero comprar, quiero comprarlo",
+          "5": "discúlpame, dime"
         }
       }
     ]
   },
   {
-    "lesson_id": "014",
+    "lesson_id": "016",
     "trigger_word": "seguridad",
-    "trigger_card_number": 520,
-    "title": "第14課：点過去と線過去",
+    "trigger_card_number": 550,
+    "title": "第16課：点過去と線過去",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
           "線過去は、点過去と並ぶもう一つの過去形です。",
           "点過去が「完了した出来事」を表すのに対し、",
@@ -94,7 +94,7 @@
           "nosotros comíamos = わたしたちは食べていた",
           "ellos comían   = 彼らは食べていた"
         ],
-        "pronunciation": "Lección catorce",
+        "pronunciation": "Lección dieciséis",
         "pronunciation_mappings": {
           "1": "yo hablaba, tú hablabas, él hablaba, nosotros hablábamos, ellos hablaban",
           "2": "yo comía, tú comías, él comía, nosotros comíamos, ellos comían"
@@ -102,7 +102,7 @@
       },
       {
         "page": 2,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
           "点過去(一枚の写真):                  1を押す",
           "Ayer comí pizza.(きのうピザを食べました)",
@@ -128,14 +128,38 @@
           "2": "de niño comía pizza todos los viernes",
           "3": "llovía cuando salí de casa"
         }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "不規則な線過去は3つだけ:             1を押す",
+          "ser → era, eras, era, éramos, eran",
+          "ir  → iba, ibas, iba, íbamos, iban",
+          "ver → veía, veías, veía, veíamos, veían",
+          "",
+          "例:                                  2を押す",
+          "De niño era tímido.",
+          "(子どものころ、わたしは内気でした)",
+          "Siempre iba a la playa.",
+          "(いつも海辺に行っていました)",
+          "",
+          "ほかの動詞は線過去ではすべて規則的です。",
+          "querer や poder も quería, podía。",
+          "語幹の母音は変わりません!"
+        ],
+        "pronunciation_mappings": {
+          "1": "era, eras, era, éramos, eran, iba, ibas, iba, íbamos, iban, veía, veías, veía, veíamos, veían",
+          "2": "de niño era tímido, siempre iba a la playa"
+        }
       }
     ]
   },
   {
-    "lesson_id": "015",
+    "lesson_id": "017",
     "trigger_word": "gobierno",
-    "trigger_card_number": 580,
-    "title": "第15課：POR と PARA",
+    "trigger_card_number": 612,
+    "title": "第17課：POR と PARA",
     "header_color": "green",
     "pages": [
       {
@@ -161,7 +185,7 @@
           "Caminé por dos horas.(2時間歩きました)",
           "Por eso no fui.(だから行きませんでした)"
         ],
-        "pronunciation": "Lección quince",
+        "pronunciation": "Lección diecisiete",
         "pronunciation_mappings": {
           "1": "estudio para aprender, es para ti, salgo para Madrid, es para el lunes",
           "2": "lo cambié por otro, gracias por todo, caminé por dos horas, por eso no fui"

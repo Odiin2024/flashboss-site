@@ -1,74 +1,168 @@
 [
   {
-    "lesson_id": "047",
-    "trigger_word": "arbaro",
-    "title": "第47課: 複合時制",
+    "lesson_id": "052",
+    "trigger_word": "mi revenos",
+    "title": "第53課:接頭辞 RE-",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "ESTI を分詞と組み合わせて、",
-          "繊細な複合時制を作ります。",
+          "接頭辞 RE- は「再び」または「戻って」:",
+          "動作がもう一度起こるか、元の場所へ",
+          "戻ることを表します。",
           "",
-          "進行形（継続中の動作）：",
-          "Mi estas leganta. = 読んでいます。",
-          "Mi estis leganta. = 読んでいました。",
-          "Mi estos leganta. = 読んでいるでしょう。",
+          "再び:                                  1を押す",
+          "legi     → relegi     = 読む → 読み直す",
+          "fari     → refari     = する → やり直す",
+          "kontakti → rekontakti = 再び連絡する",
           "",
-          "完了形（完了した動作）：",
-          "Mi estas leginta. = 読みました。",
-          "Mi estis leginta. = 読んでいました。",
-          "Mi estos leginta. = 読んでいるでしょう。",
+          "戻って:                                2を押す",
+          "veni     → reveni     = 来る → 帰ってくる",
+          "doni     → redoni     = 与える → 返す",
+          "sendi    → resendi    = 送る → 送り返す",
           "",
-          "受動態の複合形：",
-          "La libro estas legita. = その本は読まれます。",
-          "La libro estis legata. = 読まれていました。",
-          "",
-          "これらで正確な時間の区別ができます！"
+          "実際に使うと:                          3を押す",
+          "Mi revenos al la temo morgaŭ.",
+          "= その話題には明日また戻ります。",
+          "Ĝis revido! = さようなら!(また会う日まで!)"
         ],
-        "pronunciation": "Leciono kvardek sep"
+        "pronunciation_mappings": {
+          "1": "Legi. Relegi. Fari. Refari. Kontakti. Rekontakti.",
+          "2": "Veni. Reveni. Doni. Redoni. Sendi. Resendi.",
+          "3": "Mi revenos al la temo morgaŭ. Ĝis revido!"
+        },
+        "pronunciation": "Leciono kvindek du"
       }
     ]
   },
   {
     "lesson_id": "048",
-    "trigger_word": "pikniko",
-    "title": "第48課: 語の派生",
+    "trigger_word": "diskutrondo",
+    "title": "第54課:語の組み立て",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "エスペラントの語は語尾を変えるだけで",
-          "品詞が変わります。",
+          "どの語根にも、意味が通るかぎり、",
+          "どの語尾でも付けられます:",
           "",
-          "一つの語根から:",
-          "bel-（「美」を表す語根）",
-          "bela    = 美しい（形容詞 -a）",
-          "bele    = 美しく（副詞 -e）",
-          "belo    = 美しさ（名詞 -o）",
-          "beli    = 美しくある（動詞 -i）",
+          "SUKCES- (成功):                        1を押す",
+          "sukceso = 成功         sukcesi = 成功する",
+          "sukcesa = 成功した     sukcese = 首尾よく",
           "",
-          "vera（真の）→ vere（真に）→ vero（真実）",
-          "varma（暖かい）→ varme → varmo（暖かさ）",
+          "FIN- (終わり):                         2を押す",
+          "fino = 終わり          fini = 終える",
+          "fina = 最後の          fine = ついに",
           "",
-          "接辞も付けられます:",
-          "belega  = とても美しい（-eg- 増大）",
-          "beligi  = 美しくする（-ig- 使役）",
-          "beleco  = 美（抽象性質 -ec-）",
-          "語根一つで、可能性は無限です。"
+          "名詞の語根が動詞になる:                3を押す",
+          "telefono → telefoni = 電話 → 電話する",
+          "martelo  → marteli  = 金づち → 金づちで打つ",
+          "krono    → kroni    = 王冠 → 戴冠させる"
         ],
+        "pronunciation_mappings": {
+          "1": "Sukceso. Sukcesi. Sukcesa. Sukcese.",
+          "2": "Fino. Fini. Fina. Fine.",
+          "3": "Telefono. Telefoni. Martelo. Marteli. Krono. Kroni."
+        },
         "pronunciation": "Leciono kvardek ok"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "複合語は語根をつなげたもの。最後の語根が",
+          "中心で、それが「何であるか」を示します。",
+          "前の語根はそれを絞り込みます。",
+          "",
+          "最後の語根が決める:                    1を押す",
+          "diskut + rondo  = 討論の輪、討論会",
+          "kontakt + listo = 連絡先リスト",
+          "foto + albumo   = フォトアルバム",
+          "",
+          "音のために -O- を入れることも:         2を押す",
+          "lern + o + libro = lernolibro = 教科書",
+          "",
+          "前置詞も加わります:                    3を押す",
+          "antaŭ + kondiĉo = antaŭkondiĉo = 前提条件",
+          "post + parolo   = postparolo = あとがき",
+          "ĉe + esti       = ĉeesti = 出席する"
+        ],
+        "pronunciation_mappings": {
+          "1": "Diskutrondo. Kontaktlisto. Fotoalbumo.",
+          "2": "Lernolibro.",
+          "3": "Antaŭkondiĉo. Postparolo. Ĉeesti."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "047",
+    "trigger_word": "materialo",
+    "title": "第55課:複合時制",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "ESTI + 能動分詞で複合時制が作れます。",
+          "でも、必要になることはめったにありません:",
+          "単純な動詞だけで十分に言い表せます。",
+          "",
+          "ふつうの言い方:                        1を押す",
+          "Mi legas. = 読む。/ 読んでいる。",
+          "Mi legis. = 読んだ。/ 読んでいた。/",
+          "            読んだことがある。",
+          "Mi legos. = 読むだろう。/ 読んでいるだろう。",
+          "",
+          "複合形 = 強調のときだけ:               2を押す",
+          "Mi estas leganta.",
+          "= (まさに今)読んでいる最中です。",
+          "Mi jam estis manĝinta, kiam vi venis.",
+          "= あなたが来たとき、もう食べ終えていました。",
+          "「〜している」をいつも 'estas leganta'",
+          "と訳さないこと。不自然に聞こえます。"
+        ],
+        "pronunciation_mappings": {
+          "1": "Mi legas. Mi legis. Mi legos.",
+          "2": "Mi estas leganta. Mi jam estis manĝinta, kiam vi venis."
+        },
+        "pronunciation": "Leciono kvardek sep"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "受動態は別です: ESTI + -ITA",
+          "(または -ATA)が日常的な受動態です。",
+          "",
+          "1つの分詞で、すべての時制:             1を押す",
+          "La salono estas rezervita. = 予約済みだ",
+          "La salono estis rezervita. = 予約済みだった",
+          "La salono estos rezervita. = 予約済みになる",
+          "La salono estus rezervita. = 予約済みだろうに",
+          "",
+          "実際に使うと:                          2を押す",
+          "Ĉiuj materialoj estos provizitaj.",
+          "= 資料はすべて用意されます。",
+          "La kunveno estis nuligita.",
+          "= 会議は中止されました。"
+        ],
+        "pronunciation_mappings": {
+          "1": "La salono estas rezervita. La salono estis rezervita. La salono estos rezervita. La salono estus rezervita.",
+          "2": "Ĉiuj materialoj estos provizitaj. La kunveno estis nuligita."
+        }
       }
     ]
   },
   {
     "lesson_id": "049",
     "trigger_word": "respondeco",
-    "title": "第49課：接尾辞「-END-」",
+    "title": "第56課：接尾辞「-END-」",
     "header_color": "green",
     "pages": [
       {
@@ -100,100 +194,38 @@
   },
   {
     "lesson_id": "050",
-    "trigger_word": "butono",
-    "title": "第50課：接尾辞「-UM-」",
+    "trigger_word": "parkumado",
+    "title": "第57課:接尾辞 -UM-",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "接尾辞 -UM- に決まった意味はありません！",
-          "他のパターンに当てはまらない語のための",
-          "「何でも屋」の接尾辞です。用例で覚えます。",
+          "接尾辞 -UM- には決まった意味がありません。",
+          "語根を関連のある意味に結びつけるだけで、",
+          "1語ずつ個別に覚えます。",
           "",
-          "よく使う -UM- 語:",
-          "plena   → plenumi    = 満ちた → 履行する",
-          "kolo    → kolumi     = 首 → カラー（襟）",
-          "butono  → butonumi   = ボタン → ボタンをかける",
-          "aero    → aerumi     = 空気 → 換気する",
+          "よく使う -UM- の語:                    1を押す",
+          "parko   → parkumi    = 公園 → 駐車する",
+          "plena   → plenumi    = 満ちた → 果たす",
+          "kolo    → kolumo     = 首 → 襟",
+          "butono  → butonumi   = ボタン → ボタンを留める",
           "brako   → brakumi    = 腕 → 抱きしめる",
-          "okulo   → okulumi    = 目 → じろじろ見る",
+          "aero    → aerumi     = 空気 → 風を通す",
           "komuna  → komunumo   = 共通の → 共同体",
           "",
-          "実際の使い方:",
+          "実際に使うと:                          2を押す",
+          "Kie mi povas parkumi?",
+          "= どこに駐車できますか?",
           "Mi plenumis mian promeson.",
-          "（私は自分の約束を果たしました。）",
-          "",
-          "-UM- は「それに関わることをする」の意味！"
+          "= 約束を果たしました。"
         ],
+        "pronunciation_mappings": {
+          "1": "Parko. Parkumi. Plena. Plenumi. Kolo. Kolumo. Butono. Butonumi. Brako. Brakumi. Aero. Aerumi. Komuna. Komunumo.",
+          "2": "Kie mi povas parkumi? Mi plenumis mian promeson."
+        },
         "pronunciation": "Leciono kvindek"
-      }
-    ]
-  },
-  {
-    "lesson_id": "051",
-    "trigger_word": "plibonigi",
-    "title": "第51課：接頭辞「EKS-」",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "接頭辞 EKS- は「元の」「元～」を意味し、",
-          "今はもうそうではないことを表します。",
-          "",
-          "元の関係:",
-          "edzo → eksedzo = 夫 → 元夫",
-          "edzino → eksedzino = 妻 → 元妻",
-          "amiko → eksamiko = 友達 → 元友達",
-          "",
-          "元の地位・身分:",
-          "prezidento → eksprezidento = 元大統領",
-          "membro → eksmembro = 会員 → 元会員",
-          "soldato → ekssoldato = 兵士 → 元兵士",
-          "studento → eksstudento = 学生 → 元学生",
-          "",
-          "実際に使われている例:",
-          "Mia eksedzo loĝas en Parizo.",
-          "（私の元夫はパリに住んでいます。）",
-          "EKS- は役割や身分の名詞に広く使えます！"
-        ],
-        "pronunciation": "Leciono kvindek unu"
-      }
-    ]
-  },
-  {
-    "lesson_id": "052",
-    "trigger_word": "paŭzejo",
-    "title": "第52課: 接尾辞「-EG-」",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "接尾辞 -EG- は物事を強調します！",
-          "",
-          "大きくする:",
-          "domo    → domego     = 家 → 大邸宅",
-          "vento   → ventego    = 風 → 嵐",
-          "bona    → bonega     = 良い → 素晴らしい",
-          "",
-          "程度を強める:",
-          "malsata → malsatega  = 空腹 → 飢え死にしそう",
-          "venki   → venkegi    = 勝つ → 圧倒する",
-          "ami     → amegi      = 愛する → 崇拝する",
-          "",
-          "-EG- は -ET- の反対です:",
-          "dometo（小屋） <-> domego（大邸宅）",
-          "",
-          "エスペラントには非常に多くの接尾辞があります。",
-          "この -EG- を覚えるには、",
-          "「EGZAGERATE」と考えてみてください。"
-        ],
-        "pronunciation": "Leciono kvindek du"
       }
     ]
   }

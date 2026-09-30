@@ -172,9 +172,9 @@
           "",
           "un = 男性名詞      una = 女性名詞",
           "un libro(1冊の本)  una casa(1軒の家)",
+          "複数: unos libros, unas casas(いくつかの)",
           "",
           "複数形は -s か -es を付けます:",
-          "",
           "el libro  → los libros",
           "la casa   → las casas",
           "el color  → los colores",
@@ -193,9 +193,47 @@
   },
   {
     "lesson_id": "003",
+    "trigger_word": "español",
+    "trigger_card_number": 29,
+    "title": "第3課：疑問詞",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "疑問詞にはすべてアクセント記号が付きます:",
+          "",
+          "¿qué? = 何         ¿quién? = 誰      1を押す",
+          "¿dónde? = どこ     ¿cuándo? = いつ",
+          "¿por qué? = なぜ   ¿cómo? = どのように",
+          "¿cuál? = どれ(es の前では「何」)",
+          "¿cuánto/cuántos? = いくら/いくつ",
+          "",
+          "例:                                  2を押す",
+          "¿Qué quieres?(何がほしいですか?)",
+          "¿Dónde está el baño?(トイレはどこですか?)",
+          "¿Cuánto cuesta?(いくらですか?)",
+          "¿Por qué no?(なぜしないのですか?)",
+          "",
+          "注意:porque(無アクセント)=なぜなら〜だから",
+          "     por qué(アクセントあり) = なぜ?",
+          "間接疑問でもアクセント記号は残ります:",
+          "No sé dónde está.(どこにあるか知りません)"
+        ],
+        "pronunciation": "Lección tres",
+        "pronunciation_mappings": {
+          "1": "qué, quién, dónde, cuándo, por qué, cómo, cuál, cuánto, cuántos",
+          "2": "qué quieres, dónde está el baño, cuánto cuesta, por qué no"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "004",
     "trigger_word": "salir",
-    "trigger_card_number": 46,
-    "title": "第3課：現在形",
+    "trigger_card_number": 50,
+    "title": "第4課：現在形",
     "header_color": "green",
     "pages": [
       {
@@ -204,26 +242,26 @@
         "content": [
           "スペイン語の動詞は3つのグループ:",
           "-AR (hablar)  -ER (comer)  -IR (vivir)",
-          "",
-          "語尾の変化はグループごとに共通です。",
           "まずは最多の -AR から:               1を押す",
           "",
           "yo hablo             = わたしは話す",
-          "tú hablas            = 君は話す",
+          "tú hablas            = 君は話す(親しい相手)",
+          "usted habla          = あなたは話す(丁寧)",
           "él/ella habla        = 彼/彼女は話す",
           "nosotros hablamos    = わたしたちは話す",
-          "ellos hablan         = 彼らは話す",
+          "ustedes hablan       = あなたたちは話す",
+          "ellos/ellas hablan   = 彼らは話す",
           "",
-          "規則は、-ar を取ってこれを付けるだけ:",
-          "-o, -as, -a, -amos, -an",
-          "",
-          "語尾が主語の人称を示すので、代名詞は",
-          "よく省略されます。Hablo = わたしは話す。",
-          "Hablan = 彼らは話す。"
+          "規則: -ar を取り -o -as -a -amos -an",
+          "usted(Ud.)は él/ella と、",
+          "ustedes(Uds.)は ellos と同じ語尾です。",
+          "中南米では複数の「あなたたち」は ustedes。",
+          "(スペインでは vosotros habláis も使います)",
+          "代名詞は省略可: Hablo = わたしは話す。"
         ],
-        "pronunciation": "Lección tres",
+        "pronunciation": "Lección cuatro",
         "pronunciation_mappings": {
-          "1": "yo hablo, tú hablas, él habla, nosotros hablamos, ellos hablan"
+          "1": "yo hablo, tú hablas, usted habla, él habla, nosotros hablamos, ustedes hablan, ellos hablan"
         }
       },
       {
@@ -231,36 +269,71 @@
         "total_pages": 2,
         "content": [
           "-ER動詞(comer=食べる):              1を押す",
-          "",
           "yo como             = わたしは食べる",
           "tú comes            = 君は食べる",
-          "él/ella come        = 彼/彼女は食べる",
+          "él/ella/usted come  = 彼/彼女/あなたは食べる",
           "nosotros comemos    = わたしたちは食べる",
-          "ellos comen         = 彼らは食べる",
+          "ellos/ustedes comen = 彼ら/あなたたちは食べる",
           "",
           "-IR動詞(vivir=生きる・住む):        2を押す",
-          "",
           "yo vivo             = わたしは住む",
           "tú vives            = 君は住む",
-          "él/ella vive        = 彼/彼女は住む",
+          "él/ella/usted vive  = 彼/彼女/あなたは住む",
           "nosotros vivimos    = わたしたちは住む",
-          "ellos viven         = 彼らは住む",
+          "ellos/ustedes viven = 彼ら/あなたたちは住む",
           "",
           "注意:-ER と -IR はほとんど同じで、",
           "ちがうのは nosotros だけです。"
         ],
         "pronunciation_mappings": {
-          "1": "yo como, tú comes, él come, nosotros comemos, ellos comen",
-          "2": "yo vivo, tú vives, él vive, nosotros vivimos, ellos viven"
+          "1": "yo como, tú comes, él come, usted come, nosotros comemos, ellos comen, ustedes comen",
+          "2": "yo vivo, tú vives, él vive, usted vive, nosotros vivimos, ellos viven, ustedes viven"
         }
       }
     ]
   },
   {
-    "lesson_id": "004",
+    "lesson_id": "005",
+    "trigger_word": "mediodía",
+    "trigger_card_number": 58,
+    "title": "第5課：語幹の母音が変わる動詞",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "語幹の母音が変わる動詞:",
+          "一部の動詞は、nosotros 以外のすべての",
+          "形で語幹の母音が変わります。",
+          "語尾はふつうの規則どおりです。",
+          "",
+          "e → ie   querer = 欲しい・〜したい   1を押す",
+          "quiero, quieres, quiere, queremos, quieren",
+          "",
+          "o → ue   poder = できる              2を押す",
+          "puedo, puedes, puede, podemos, pueden",
+          "",
+          "e → i    repetir = くり返す          3を押す",
+          "repito, repites, repite, repetimos, repiten",
+          "",
+          "ほかに: entender, pensar, cerrar (e→ie)、",
+          "dormir, volver, costar (o→ue)、seguir (e→i)"
+        ],
+        "pronunciation": "Lección cinco",
+        "pronunciation_mappings": {
+          "1": "quiero, quieres, quiere, queremos, quieren",
+          "2": "puedo, puedes, puede, podemos, pueden",
+          "3": "repito, repites, repite, repetimos, repiten"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "006",
     "trigger_word": "vez",
-    "trigger_card_number": 68,
-    "title": "第4課：HAY と基本の文型",
+    "trigger_card_number": 76,
+    "title": "第6課：HAY と基本の文型",
     "header_color": "green",
     "pages": [
       {
@@ -278,15 +351,15 @@
           "主語 + 動詞 + 目的語(英語と同じ順序)",
           "Yo como pan.(わたしはパンを食べます)",
           "",
-          "疑問文はかんたんな2通り:",
-          "¿Tú hablas español?(語尾を上げる)",
-          "¿Hablas español?(主語を省略)",
+          "疑問文は語順そのまま、語尾を上げるだけ:",
+          "¿Hablas español?(スペイン語を話しますか?)",
+          "代名詞は省略できます(¿Tú hablas...? でも可)",
           "",
           "否定は動詞の前に NO を置くだけ:",
           "No hablo inglés.(英語は話しません)",
           "No hay problema.(問題はありません)"
         ],
-        "pronunciation": "Lección cuatro",
+        "pronunciation": "Lección seis",
         "pronunciation_mappings": {
           "1": "hay un problema, hay libros, hay agua, no hay tiempo"
         }
@@ -294,10 +367,10 @@
     ]
   },
   {
-    "lesson_id": "005",
+    "lesson_id": "007",
     "trigger_word": "joven",
-    "trigger_card_number": 97,
-    "title": "第5課：SER と ESTAR",
+    "trigger_card_number": 105,
+    "title": "第7課：SER と ESTAR",
     "header_color": "green",
     "pages": [
       {
@@ -323,7 +396,7 @@
           "次のページは、SER と ESTAR の使い分け。",
           "学習者が必ず疑問に思う点を扱います。"
         ],
-        "pronunciation": "Lección cinco",
+        "pronunciation": "Lección siete",
         "pronunciation_mappings": {
           "1": "soy, eres, es, somos, son",
           "2": "estoy, estás, está, estamos, están",
@@ -335,27 +408,27 @@
         "page": 2,
         "total_pages": 3,
         "content": [
-          "スペイン語には「である」にあたる動詞が",
-          "2つあります。とまどいますが、理屈は明快です:",
+          "スペイン語には「である」の動詞が2つ:",
+          "SER = それが何であるか",
+          "ESTAR = どんな状態か、どこにあるか",
           "",
-          "SER = それが何であるか(変わらない性質)",
-          "ESTAR = 今どんな状態か(一時的)",
-          "",
-          "SER は身分・出身・性質:              1を押す",
+          "SER は身分・性質・出身・時刻:          1を押す",
           "Soy estudiante.(わたしは学生です)",
           "Ella es inteligente.(彼女は賢いです)",
           "Somos de México.(メキシコ出身です)",
+          "Son las cuatro.(4時です)",
           "",
-          "ESTAR は状態・気分・場所:            2を押す",
+          "ESTAR は状態・気分・場所:              2を押す",
           "Estoy cansado.(疲れています)",
           "Ella está feliz.(彼女は幸せです)",
           "Estamos en casa.(家にいます)",
           "",
-          "コツ:変わりうるものなら estar を使います。",
-          "その人が何者かを言うなら ser を使います。"
+          "コツ:どこにあるかを言うときは、決して",
+          "動かないものでも estar を使います:",
+          "Guadalajara está en México."
         ],
         "pronunciation_mappings": {
-          "1": "soy estudiante, ella es inteligente, somos de México",
+          "1": "soy estudiante, ella es inteligente, somos de México, son las cuatro",
           "2": "estoy cansado, ella está feliz, estamos en casa"
         }
       },
@@ -392,10 +465,10 @@
     ]
   },
   {
-    "lesson_id": "006",
+    "lesson_id": "008",
     "trigger_word": "café",
-    "trigger_card_number": 117,
-    "title": "第6課：GUSTAR と同じ型の動詞",
+    "trigger_card_number": 125,
+    "title": "第8課：GUSTAR と同じ型の動詞",
     "header_color": "green",
     "pages": [
       {
@@ -421,7 +494,7 @@
           "Me importa = 大事です、気になります",
           "Me falta = 足りません、必要です"
         ],
-        "pronunciation": "Lección seis",
+        "pronunciation": "Lección ocho",
         "pronunciation_mappings": {
           "1": "me gusta el café, te gusta bailar, le gusta la música, nos gusta viajar",
           "2": "me gustan los gatos, me gustan las películas"
@@ -430,53 +503,15 @@
     ]
   },
   {
-    "lesson_id": "007",
-    "trigger_word": "lugar",
-    "trigger_card_number": 147,
-    "title": "第7課：疑問詞",
+    "lesson_id": "009",
+    "trigger_word": "levantarse",
+    "trigger_card_number": 163,
+    "title": "第9課：命令形と近い未来",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
-        "content": [
-          "疑問詞にはすべてアクセント記号が付きます:",
-          "",
-          "¿qué? = 何         ¿quién? = 誰      1を押す",
-          "¿dónde? = どこ     ¿cuándo? = いつ",
-          "¿por qué? = なぜ   ¿cómo? = どのように",
-          "¿cuál? = どれ      ¿cuánto? = いくら",
-          "",
-          "例:                                  2を押す",
-          "",
-          "¿Qué quieres?(何がほしいですか?)",
-          "¿Dónde está el baño?(トイレはどこですか?)",
-          "¿Cuánto cuesta?(いくらですか?)",
-          "¿Por qué no?(なぜしないのですか?)",
-          "",
-          "注意:porque(無アクセント)=なぜなら〜だから",
-          "     por qué(アクセントあり) = なぜ?",
-          "",
-          "アクセント記号そのものが疑問の印です。"
-        ],
-        "pronunciation": "Lección siete",
-        "pronunciation_mappings": {
-          "1": "qué, quién, dónde, cuándo, por qué, cómo, cuál, cuánto",
-          "2": "qué quieres, dónde está el baño, cuánto cuesta, por qué no"
-        }
-      }
-    ]
-  },
-  {
-    "lesson_id": "008",
-    "trigger_word": "dormir",
-    "trigger_card_number": 165,
-    "title": "第8課：命令形と近い未来",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
           "親しい相手への命令形(tú)",
           "",
@@ -494,19 +529,19 @@
           "ir           → ¡Ve!(行って)",
           "poner        → ¡Pon!(置いて)",
           "salir        → ¡Sal!(出て)",
-          "tener        → ¡Ten!(持って)",
+          "tener        → ¡Ten cuidado!(気をつけて)",
           "venir        → ¡Ven!(来て)"
         ],
-        "pronunciation": "Lección ocho",
+        "pronunciation": "Lección nueve",
         "pronunciation_mappings": {
           "1": "hablar, habla, mirar, mira",
           "2": "comer, come, escribir, escribe",
-          "3": "decir, di, hacer, haz, ir, ve, poner, pon, salir, sal, tener, ten, venir, ven"
+          "3": "decir, di, hacer, haz, ir, ve, poner, pon, salir, sal, tener, ten cuidado, venir, ven"
         }
       },
       {
         "page": 2,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
           "近い未来の言い方:ir + a + 不定詞",
           "",
@@ -530,6 +565,30 @@
           "1": "voy a comer, vas a estudiar, vamos a salir",
           "2": "voy, vas, va, vamos, van",
           "3": "estoy hablando, está comiendo"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "再帰動詞:動作が自分自身に返ってきます。",
+          "-se は me, te, se, nos, se の形で",
+          "動詞の前に出ます:",
+          "levantarse = 起きる",
+          "",
+          "me levanto      = わたしは起きる     1を押す",
+          "te levantas     = 君は起きる",
+          "se levanta      = 彼/彼女/あなたは起きる",
+          "nos levantamos  = わたしたちは起きる",
+          "se levantan     = 彼ら/あなたたちは起きる",
+          "",
+          "ひとつはもう知っています:",
+          "¿Cómo te llamas? Me llamo Ana.",
+          "(お名前は? アナです)",
+          "ほかに: ducharse, vestirse, acostarse"
+        ],
+        "pronunciation_mappings": {
+          "1": "me levanto, te levantas, se levanta, nos levantamos, se levantan"
         }
       }
     ]

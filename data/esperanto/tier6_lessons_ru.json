@@ -2,79 +2,49 @@
   {
     "lesson_id": "032",
     "trigger_word": "nepo",
+    "title": "УРОК 38: СУФФИКС «-ID-»",
     "header_color": "green",
-    "title": "УРОК 32: СУФФИКС «-ID-»",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
-        "pronunciation": "Leciono tridek du",
         "content": [
-          "Суффикс -ID- означает «потомок» или «малыш",
-          "от». Он образует слова для детёнышей",
-          "животных, людей или потомков.",
+          "Суффикс -ID- называет ДЕТЁНЫША, отпрыска",
+          "или потомка живого существа.",
           "",
-          "ДЕТЁНЫШИ ЖИВОТНЫХ:",
-          "hundo   → hundido     = dog → puppy",
-          "kato    → katido      = cat → kitten",
-          "bovo    → bovido      = cow → calf",
-          "ĉevalo  → ĉevalido    = horse → foal",
-          "birdo   → birdido     = bird → chick",
+          "ДЕТЁНЫШИ ЖИВОТНЫХ:                     Нажми 1",
+          "hundo   → hundido    = собака → щенок",
+          "kato    → katido     = кошка → котёнок",
+          "bovo    → bovido     = бык, скот → телёнок",
+          "ĉevalo  → ĉevalido   = лошадь → жеребёнок",
+          "birdo   → birdido    = птица → птенец",
           "",
-          "ПОТОМКИ ЛЮДЕЙ:",
-          "reĝo    → reĝido      = king → prince",
+          "ЛЮДИ: ПОТОМОК:                         Нажми 2",
+          "reĝo    → reĝido     = король → королевич",
+          "(У внука свой корень: nepo.)",
           "",
-          "В УПОТРЕБЛЕНИИ:",
+          "В РЕЧИ:                                Нажми 3",
           "La hundido ludas kun sia patrino.",
-          "(Щенок играет со своей мамой.)",
-          "-ID- превращает любое существо в малыша!"
-        ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "033",
-    "trigger_word": "nombro",
-    "header_color": "green",
-    "title": "УРОК 33: СУФФИКС «-OBL-»",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono tridek tri",
-        "content": [
-          "Суффикс -OBL- образует кратные от чисел.",
-          "Он означает «в ... раз» или «кратный».",
-          "",
-          "КРАТНЫЕ:",
-          "du      → duobla    = два → двойной",
-          "tri     → triobla   = три → тройной",
-          "kvar    → kvarobla  = четыре → четырёхкратный",
-          "kvin    → kvinobla  = пять → пятикратный",
-          "dek     → dekobla   = десять → десятикратный",
-          "",
-          "КАК ГЛАГОЛЫ:",
-          "duobligi = удваивать",
-          "triobligi = утраивать",
-          "",
-          "В УПОТРЕБЛЕНИИ:",
-          "La prezo estas duobla nun.",
-          "(Цена теперь вдвое выше.)",
-          "-OBL- умножает на число!"
-        ]
+          "= Щенок играет со своей мамой."
+        ],
+        "pronunciation_mappings": {
+          "1": "Hundo. Hundido. Kato. Katido. Bovo. Bovido. Ĉevalo. Ĉevalido. Birdo. Birdido.",
+          "2": "Reĝo. Reĝido. Nepo.",
+          "3": "La hundido ludas kun sia patrino."
+        },
+        "pronunciation": "Leciono tridek du"
       }
     ]
   },
   {
     "lesson_id": "034",
     "trigger_word": "sugesti",
+    "title": "УРОК 39: ПРИСТАВКА «BO-»",
     "header_color": "green",
-    "title": "УРОК 34: ПРИСТАВКА «BO-»",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
-        "pronunciation": "Leciono tridek kvar",
         "content": [
           "Приставка BO- обозначает родство",
           "через брак (свойство).",
@@ -94,172 +64,337 @@
           "В РЕЧИ:",
           "Mia bopatro estas tre afabla.",
           "(Мой тесть очень добр.)"
-        ]
+        ],
+        "pronunciation": "Leciono tridek kvar"
       }
     ]
   },
   {
     "lesson_id": "035",
     "trigger_word": "ekzemplo",
+    "title": "УРОК 40: СУФФИКС «-ER-»",
     "header_color": "green",
-    "title": "УРОК 35: СУФФИКС «-ER-»",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
-        "pronunciation": "Leciono tridek kvin",
         "content": [
-          "Суффикс -ER- означает «единица» или «частица».",
-          "Он образует слова для отдельных элементов",
-          "чего-то, что бывает в количестве.",
+          "Суффикс -ER- называет ОДНУ ЧАСТИЦУ",
+          "того, что бывает только массой.",
           "",
-          "ЧАСТИЦЫ/КАПЛИ:",
-          "akvo    → akvero    = вода → капля воды",
-          "sablo   → sablero   = песок → песчинка",
-          "neĝo    → neĝero    = снег → снежинка",
-          "fajro   → fajrero   = огонь → искра",
+          "САМАЯ МАЛАЯ ЧАСТИЦА:                   Нажми 1",
+          "neĝo    → neĝero     = снег → снежинка",
+          "sablo   → sablero    = песок → песчинка",
+          "polvo   → polvero    = пыль → пылинка",
+          "fajro   → fajrero    = огонь → искра",
+          "(Капля воды — это guto.)",
           "",
-          "ОТДЕЛЬНЫЕ ЕДИНИЦЫ:",
-          "mono    → monero    = деньги → монета",
-          "pano    → panero    = хлеб → крошка",
+          "ОДНА ЕДИНИЦА ИЗ МНОГИХ:                Нажми 2",
+          "mono    → monero     = деньги → монета",
+          "pano    → panero     = хлеб → крошка",
+          "ero     = частица, элемент",
           "",
-          "В УПОТРЕБЛЕНИИ:",
-          "Akvero falis sur mian nazon.",
-          "(Капля воды упала мне на нос.)",
-          "-ER- выделяет одну маленькую часть из массы!"
-        ]
+          "В РЕЧИ:                                Нажми 3",
+          "Neĝero falis sur mian nazon.",
+          "= Снежинка упала мне на нос."
+        ],
+        "pronunciation_mappings": {
+          "1": "Neĝo. Neĝero. Sablo. Sablero. Polvo. Polvero. Fajro. Fajrero. Guto.",
+          "2": "Mono. Monero. Pano. Panero. Ero.",
+          "3": "Neĝero falis sur mian nazon."
+        },
+        "pronunciation": "Leciono tridek kvin"
       }
     ]
   },
   {
     "lesson_id": "036",
     "trigger_word": "distro",
+    "title": "УРОК 41: ПРИСТАВКА «DIS-»",
     "header_color": "green",
-    "title": "УРОК 36: ПРИСТАВКА «DIS-»",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono tridek ses",
+        "total_pages": 2,
         "content": [
-          "Приставка DIS- означает «врозь»,",
-          "«в разные стороны» или «разбросанно».",
-          "Она указывает на разделение или рассеивание.",
+          "Приставка DIS- значит РАЗ-/РАС-: во все",
+          "стороны или на части.",
           "",
-          "РАССЕЯНИЕ/РАЗДЕЛЕНИЕ:",
-          "doni    → disdoni   = дать → раздать",
-          "ĵeti    → disĵeti   = бросить → разбросать",
-          "iri     → disiri    = идти → расстаться",
-          "fali    → disfali   = падать → развалиться",
+          "РАЗДАВАТЬ, РАССЫЛАТЬ:                  Нажми 1",
+          "doni    → disdoni    = давать → раздавать",
+          "sendi   → dissendi   = слать → рассылать",
+          "vastigi → disvastigi = ширить → распространять",
+          "ĵeti    → disĵeti    = бросать → разбрасывать",
           "",
-          "РАЗРУШЕНИЕ НА ЧАСТИ:",
-          "rompi   → disrompi  = ломать → разбить",
-          "ŝiri    → disŝiri   = рвать → на клочки",
+          "РАСПАД, РАСХОЖДЕНИЕ:                   Нажми 2",
+          "iri     → disiri     = идти → расходиться",
+          "fali    → disfali    = падать → распадаться",
           "",
-          "В УПОТРЕБЛЕНИИ:",
-          "Ili diskutis la problemon.",
-          "(Они обсудили проблему.)",
-          "DIS- разбрасывает всё во все стороны!"
-        ]
+          "В РЕЧИ:                                Нажми 3",
+          "Ni disdonis flugfoliojn en la urbo.",
+          "= Мы раздавали листовки в городе.",
+          "Ni disvastigu la novaĵon!",
+          "= Давайте распространим новость!"
+        ],
+        "pronunciation_mappings": {
+          "1": "Doni. Disdoni. Sendi. Dissendi. Vastigi. Disvastigi. Ĵeti. Disĵeti.",
+          "2": "Iri. Disiri. Fali. Disfali.",
+          "3": "Ni disdonis flugfoliojn en la urbo. Ni disvastigu la novaĵon!"
+        },
+        "pronunciation": "Leciono tridek ses"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "ДВОЙНИКИ: не каждое слово на dis- несёт",
+          "приставку DIS-.",
+          "",
+          "ЭТО САМОСТОЯТЕЛЬНЫЕ КОРНИ:             Нажми 1",
+          "diskuti  = обсуждать",
+          "distri   = отвлекать, развлекать",
+          "distro   = развлечение, отвлечение",
+          "disponi  = располагать (иметь)",
+          "distanco = расстояние, дистанция",
+          "",
+          "ПРОВЕРКА: убери DIS-. Если остаётся",
+          "слово с ТОЙ ЖЕ идеей, только врозь",
+          "(dis-doni: doni = давать), это",
+          "приставка. Если нет — это один корень."
+        ],
+        "pronunciation_mappings": {
+          "1": "Diskuti. Distri. Distro. Disponi. Distanco."
+        }
       }
     ]
   },
   {
     "lesson_id": "037",
     "trigger_word": "duono",
+    "title": "УРОК 42: СУФФИКС «-ON-»",
     "header_color": "green",
-    "title": "УРОК 37: СУФФИКС «-ON-»",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
-        "pronunciation": "Leciono tridek sep",
         "content": [
-          "Суффикс -ON- образует дроби из чисел.",
-          "Он делит на это число.",
+          "Суффикс -ON- образует ДРОБИ: делит",
+          "на это число.",
           "",
-          "ДРОБИ:",
-          "du      → duono       = два → половина (1/2)",
-          "tri     → triono      = три → треть (1/3)",
-          "kvar    → kvarono     = четыре → четверть",
-          "(1/4)",
-          "kvin    → kvinono     = пять → пятая (1/5)",
-          "dek     → dekono      = десять → десятая",
-          "(1/10)",
-          "В УПОТРЕБЛЕНИИ:",
-          "Mi manĝis duonon de la kuko.",
-          "(Я съел половину торта.)",
-          "СРАВНИ -OBL- И -ON-:",
-          "duobla = двойной (×2)",
-          "duono  = половина (÷2)",
-          "Противоположности, которые работают вместе!"
-        ]
+          "ЧИСЛО → ДРОБЬ:                         Нажми 1",
+          "du      → duono      = половина (1/2)",
+          "tri     → triono     = треть (1/3)",
+          "kvar    → kvarono    = четверть (1/4)",
+          "dek     → dekono     = десятая (1/10)",
+          "tri kvaronoj         = три четверти",
+          "",
+          "ДРУГИЕ ОКОНЧАНИЯ ТОЖЕ:                 Нажми 2",
+          "duona horo  = полчаса",
+          "duone preta = наполовину готов",
+          "",
+          "В РЕЧИ:                                Нажми 3",
+          "Pli ol la duono de la membroj konsentas.",
+          "= Больше половины членов согласны."
+        ],
+        "pronunciation_mappings": {
+          "1": "Duono. Triono. Kvarono. Dekono. Tri kvaronoj.",
+          "2": "Duona horo. Duone preta.",
+          "3": "Pli ol la duono de la membroj konsentas."
+        },
+        "pronunciation": "Leciono tridek sep"
       }
     ]
   },
   {
     "lesson_id": "038",
     "trigger_word": "ke",
+    "title": "УРОК 43: KE, ĈU ИЛИ KIEL?",
     "header_color": "green",
-    "title": "УРОК 38: ПРЕДЛОЖЕНИЯ С «KE»",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono tridek ok",
+        "total_pages": 3,
         "content": [
-          "KE переводится как «что» в начале нового",
-          "предложения. Как и в немецком, новое",
-          "предложение в эсперанто отделяется запятой.",
+          "После глаголов речи, знания и вопроса",
+          "союзное слово показывает, ЧТО именно",
+          "сообщает придаточное:",
           "",
-          "СХЕМА:",
-          "Mi kredas, ke li venos.",
-          "(Я верю, что он придёт.)",
+          "ФАКТ ИЛИ УТВЕРЖДЕНИЕ → KE:             Нажми 1",
+          "Mi scias, ke li venos.",
+          "= Я знаю, что он придёт.",
           "",
-          "Mi scias, ke vi pravas.",
-          "(Я знаю, что ты прав.)",
+          "ВОПРОС ДА/НЕТ → ĈU:                    Нажми 2",
+          "Mi ne scias, ĉu li venos.",
+          "= Я не знаю, придёт ли он.",
+          "«Ли» здесь — это ĈU, а не SE (= если).",
           "",
-          "ЧАСТЫЕ ГЛАГОЛЫ С KE:",
-          "pensi ke   = думать, что",
-          "diri ke    = сказать, что",
-          "esperi ke  = надеяться, что",
+          "КАК, ГДЕ, ПОЧЕМУ... → СЛОВО НА KI-:    Нажми 3",
+          "Diru al mi, kiel vi faris tion.",
+          "= Скажи мне, как ты это сделал.",
+          "Mi demandis, kie ŝi loĝas.",
+          "= Я спросил, где она живёт."
+        ],
+        "pronunciation_mappings": {
+          "1": "Mi scias, ke li venos.",
+          "2": "Mi ne scias, ĉu li venos.",
+          "3": "Diru al mi, kiel vi faris tion. Mi demandis, kie ŝi loĝas."
+        },
+        "pronunciation": "Leciono tridek ok"
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "ESTAS + -E: если подлежащее — целое",
+          "придаточное с ke или глагол на -I, бери -E:",
           "",
-          "Запятая перед «ke» — стандарт в письменном",
-          "эсперанто."
-        ]
+          "ESTAS + -E, KE / + -I:                 Нажми 1",
+          "Estas vere, ke ni bezonas tempon.",
+          "= Правда, что нам нужно время.",
+          "Estas grave, ke vi estu tie.",
+          "= Важно, чтобы ты был там.",
+          "Estas facile lerni Esperanton.",
+          "= Эсперанто учить легко.",
+          "",
+          "НАСТОЯЩЕЕ ПОДЛЕЖАЩЕЕ — С -A:           Нажми 2",
+          "Tio estas vera.         = Это правда.",
+          "La lingvo estas facila. = Язык лёгкий.",
+          "",
+          "Никогда не 'Estas vera, ke...': vere!"
+        ],
+        "pronunciation_mappings": {
+          "1": "Estas vere, ke ni bezonas tempon. Estas grave, ke vi estu tie. Estas facile lerni Esperanton.",
+          "2": "Tio estas vera. La lingvo estas facila."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "ЗАПЯТАЯ ставится перед KE. С POR KE",
+          "(чтобы) и KONDIĈE KE (при условии, что)",
+          "она стоит перед парой, а не внутри.",
+          "",
+          "Mi opinias, ke ni devus atendi.        Нажми 1",
+          "= Я думаю, нам стоит подождать.",
+          "Mi venos, por ke vi ne estu sola.      Нажми 2",
+          "= Я приду, чтобы ты не был один.",
+          "Mi venos, kondiĉe ke mi havos tempon.",
+          "= Приду при условии, что будет время.",
+          "",
+          "ЖЕЛАНИЕ ИЛИ ЦЕЛЬ — С -U:               Нажми 3",
+          "Mi petas, ke vi respondu baldaŭ.",
+          "= Ответь, пожалуйста, скорее. (Прошу...)",
+          "Простой факт сохраняет -as, -is, -os:",
+          "Mi scias, ke vi respondos baldaŭ.",
+          "= Я знаю, что ты скоро ответишь."
+        ],
+        "pronunciation_mappings": {
+          "1": "Mi opinias, ke ni devus atendi.",
+          "2": "Mi venos, por ke vi ne estu sola. Mi venos, kondiĉe ke mi havos tempon.",
+          "3": "Mi petas, ke vi respondu baldaŭ. Mi scias, ke vi respondos baldaŭ."
+        }
       }
     ]
   },
   {
     "lesson_id": "039",
-    "trigger_word": "rideto",
+    "trigger_word": "estro",
+    "title": "УРОК 44: СУФФИКС «-ESTR-»",
     "header_color": "green",
-    "title": "УРОК 39: СУФФИКС «-ET-»",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "Суффикс -ESTR- называет того, кто",
+          "ГЛАВНЫЙ: руководителя чего-либо.",
+          "",
+          "ГЛАВА ЧЕГО-ТО:                         Нажми 1",
+          "urbo    → urbestro    = город → мэр",
+          "lernejo → lernejestro = школа → директор",
+          "ŝipo    → ŝipestro    = корабль → капитан",
+          "ŝtato   → ŝtatestro   = государство → глава",
+          "",
+          "ОТДЕЛЬНО И С -AR- И -AN-:              Нажми 2",
+          "estro     = руководитель, глава",
+          "estri     = руководить, возглавлять",
+          "estraro   = правление (общества)",
+          "estrarano = член правления",
+          "",
+          "В РЕЧИ:                                Нажми 3",
+          "La estraro elektis novan prezidanton.",
+          "= Правление выбрало нового председателя."
+        ],
+        "pronunciation_mappings": {
+          "1": "Urbo. Urbestro. Lernejo. Lernejestro. Ŝipo. Ŝipestro. Ŝtato. Ŝtatestro.",
+          "2": "Estro. Estri. Estraro. Estrarano.",
+          "3": "La estraro elektis novan prezidanton."
+        },
+        "pronunciation": "Leciono tridek naŭ"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "ĈEF- ВПЕРЕДИ ЗНАЧИТ «ГЛАВНЫЙ»:         Нажми 1",
+          "urbo    → ĉefurbo    = город → столица",
+          "afiŝo   → ĉefafiŝo   = пост → главный пост",
+          "punkto  → ĉefpunkto  = пункт → главный пункт",
+          "ĉefa = главный      ĉefe = главным образом",
+          "",
+          "ĈEFO ИЛИ -ESTRO?                       Нажми 2",
+          "ĉefo   = начальник (на работе)",
+          "-estro = глава МЕСТА или группы",
+          "Mia ĉefo estas afabla.",
+          "= Мой начальник добрый.",
+          "",
+          "В РЕЧИ:                                Нажми 3",
+          "Berlino estas la ĉefurbo de Germanio.",
+          "= Берлин — столица Германии."
+        ],
+        "pronunciation_mappings": {
+          "1": "Urbo. Ĉefurbo. Afiŝo. Ĉefafiŝo. Punkto. Ĉefpunkto. Ĉefa. Ĉefe.",
+          "2": "Ĉefo. Urbestro. Mia ĉefo estas afabla.",
+          "3": "Berlino estas la ĉefurbo de Germanio."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "033",
+    "trigger_word": "duobla senco",
+    "title": "УРОК 45: СУФФИКС «-OBL-»",
+    "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
-        "pronunciation": "Leciono tridek naŭ",
         "content": [
-          "Суффикс -ET- — уменьшительный в ЭСПЕРАНТО.",
-          "Он делает предметы меньше, мягче или",
-          "нежнее. Добавь -ET- к любому корню —",
-          "получишь миниатюрную или смягчённую",
-          "версию исходного слова.",
+          "Суффикс -OBL- УМНОЖАЕТ: делает число",
+          "двойным, тройным, десятикратным.",
           "",
-          "ДЕЛАЕМ МЕНЬШЕ:",
-          "domo    → dometo     = дом → домик",
-          "ridi    → rideti     = смеяться → улыбаться",
-          "birdo   → birdeto    = птица → птичка",
+          "ЧИСЛО → КРАТНОЕ:                       Нажми 1",
+          "du      → duobla     = двойной",
+          "tri     → triobla    = тройной",
+          "dek     → dekobla    = десятикратный",
           "",
-          "СМЯГЧАЕМ ЗНАЧЕНИЕ:",
-          "varma   → varmeta    = тёплый → чуть тёплый",
-          "dormi   → dormeti    = спать → вздремнуть",
+          "ДРУГИЕ ОКОНЧАНИЯ ТОЖЕ:                 Нажми 2",
+          "duoble pli granda = вдвое больше",
+          "duobligi          = удвоить (что-то)",
+          "Ĝi havas duoblan sencon.",
+          "= У этого двойной смысл.",
           "",
-          "rideto = улыбка (маленький смех)",
-          "",
-          "-ET- придаёт нежность и уменьшение!"
-        ]
+          "СРАВНИ -ON- (ДРОБИ):                   Нажми 3",
+          "duobla = двойной (×2)",
+          "duono  = половина (÷2)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Duobla. Triobla. Dekobla.",
+          "2": "Duoble pli granda. Duobligi. Ĝi havas duoblan sencon.",
+          "3": "Duobla. Duono."
+        },
+        "pronunciation": "Leciono tridek tri"
       }
     ]
   }

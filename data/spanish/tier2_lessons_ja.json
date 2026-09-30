@@ -1,9 +1,9 @@
 [
   {
-    "lesson_id": "009",
+    "lesson_id": "010",
     "trigger_word": "esperanza",
-    "trigger_card_number": 225,
-    "title": "第9課：再帰動詞",
+    "trigger_card_number": 237,
+    "title": "第10課：再帰動詞",
     "header_color": "green",
     "pages": [
       {
@@ -23,29 +23,30 @@
           "",
           "よく使う再帰動詞:                    2を押す",
           "levantarse   = 起き上がる",
-          "sentirse     = 感じる",
           "acostarse    = 床につく",
-          "ducharse     = シャワーを浴びる",
-          "vestirse     = 服を着る"
+          "despertarse  = 目を覚ます",
+          "sentarse     = すわる",
+          "preocuparse  = 心配する",
+          "命令形では後ろに付く: ¡Siéntate! ¡Lávate!"
         ],
-        "pronunciation": "Lección nueve",
+        "pronunciation": "Lección diez",
         "pronunciation_mappings": {
           "1": "me llamo, te llamas, se llama, nos llamamos, se llaman",
-          "2": "levantarse, sentirse, acostarse, ducharse, vestirse"
+          "2": "levantarse, acostarse, despertarse, sentarse, preocuparse, ¡siéntate!, ¡lávate!"
         }
       }
     ]
   },
   {
-    "lesson_id": "010",
+    "lesson_id": "011",
     "trigger_word": "cerrado",
-    "trigger_card_number": 275,
-    "title": "第10課：否定",
+    "trigger_card_number": 290,
+    "title": "第11課：否定",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
           "否定は動詞の前に NO を置くだけです:  1を押す",
           "",
@@ -62,24 +63,139 @@
           "No tengo nada. (何も持っていません)",
           "No viene nadie. (誰も来ません)",
           "",
-          "否定語を文頭に出すこともできます:",
-          "Nada tengo. Nadie viene. Nunca voy.",
-          "ただし no と重ねる形のほうが一般的です。"
+          "否定語が動詞の前なら no は付けません:",
+          "Nadie viene. Nunca voy.",
+          "どちらの語順もふつうのスペイン語です。"
         ],
-        "pronunciation": "Lección diez",
+        "pronunciation": "Lección once",
         "pronunciation_mappings": {
           "1": "no es difícil, no hablo francés",
           "2": "nada, nadie, nunca, ninguno, tampoco",
-          "3": "no voy nunca, no tengo nada, no viene nadie"
+          "3": "no voy nunca, no tengo nada, no viene nadie, nadie viene, nunca voy"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "否定の命令(tú): no + 新しい語尾",
+          "",
+          "-AR 動詞は -ES 系の語尾:             1を押す",
+          "hablar   → ¡No hables!(話さないで)",
+          "gritar   → ¡No grites!(叫ばないで)",
+          "olvidar  → ¡No olvides!(忘れないで)",
+          "",
+          "-ER/-IR 動詞は -AS 系の語尾:         2を押す",
+          "comer    → ¡No comas!(食べないで)",
+          "escribir → ¡No escribas!(書かないで)",
+          "",
+          "代名詞は動詞の前に出ます:            3を押す",
+          "¡Siéntate! → ¡No te sientes!",
+          "¡No te preocupes!(心配しないで)"
+        ],
+        "pronunciation_mappings": {
+          "1": "no hables, no grites, no olvides",
+          "2": "no comas, no escribas",
+          "3": "siéntate, no te sientes, no te preocupes"
         }
       }
     ]
   },
   {
-    "lesson_id": "011",
+    "lesson_id": "012",
+    "trigger_word": "traer",
+    "trigger_card_number": 329,
+    "header_color": "green",
+    "title": "第12課：より正確な使い分け",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "適切な言葉を選びましょう。",
+          "次のペアは上級者でも間違えがちです：",
+          "",
+          "SABER vs CONOCER：                   1を押す",
+          "saber = 事実や方法を知っている",
+          "conocer = （人・場所などを）知っている",
+          "Sé nadar.（泳ぎ方を知っています。）",
+          "Conozco Madrid.（マドリードを知っています。）",
+          "",
+          "PEDIR vs PREGUNTAR：                 2を押す",
+          "pedir = 頼む、要求する",
+          "preguntar = 質問する",
+          "Pido la cuenta.（会計をお願いします。）",
+          "Pregunto el precio.（値段を尋ねます。）",
+          "",
+          "英語では「ask」で両方を表しますが、",
+          "スペイン語では混ぜると不自然です。"
+        ],
+        "pronunciation": "Lección doce",
+        "pronunciation_mappings": {
+          "1": "Sé nadar. Conozco Madrid.",
+          "2": "Pido la cuenta. Pregunto el precio."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "LLEVAR vs TRAER：                    1を押す",
+          "llevar = （ここから）持っていく",
+          "traer = （ここへ）持ってくる",
+          "Lleva esto a tu mamá.",
+          "（これをママに持っていって。）",
+          "Trae tu libro a clase.",
+          "（授業に自分の本を持ってきて。）",
+          "",
+          "SINO vs PERO：                       2を押す",
+          "pero = しかし（一般的な対比）",
+          "sino = ～ではなく（否定後に訂正）",
+          "No es caro, sino barato.",
+          "（高いのではなく、安いのです。）",
+          "Quiero ir, pero no puedo.",
+          "（行きたいけど、行けません。）",
+          ""
+        ],
+        "pronunciation_mappings": {
+          "1": "Lleva esto a tu mamá. Trae tu libro a clase.",
+          "2": "No es caro, sino barato. Quiero ir, pero no puedo."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "POR QUÉ vs PORQUE vs PORQUÉ：        1を押す",
+          "por qué = なぜ？（疑問）",
+          "porque = ～だから（答え）",
+          "porqué = 理由（名詞）",
+          "¿Por qué? Porque sí. El porqué no",
+          "importa.（なぜ？だってそうだから。理由は",
+          "どうでもいい。）",
+          "",
+          "TODAVÍA vs AÚN vs YA：               2を押す",
+          "todavía/aún = まだ／いまだ",
+          "ya = もう／すでに",
+          "Todavía no está aquí.",
+          "（まだここにいません。）",
+          "Ya lo sé.（もう知っています。）",
+          "",
+          "こうした使い分けこそが、良いスペイン語と",
+          "素晴らしいスペイン語の違いを生みます。"
+        ],
+        "pronunciation_mappings": {
+          "1": "¿Por qué? Porque sí. El porqué no importa.",
+          "2": "Todavía no está aquí. Ya lo sé."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "013",
     "trigger_word": "palabra",
-    "trigger_card_number": 325,
-    "title": "第11課：形容詞の一致",
+    "trigger_card_number": 347,
+    "title": "第13課：形容詞の一致",
     "header_color": "green",
     "pages": [
       {
@@ -92,33 +208,33 @@
           "el gato blanco  → la gata blanca",
           "los gatos blancos → las gatas blancas",
           "",
-          "-E 型は性で変わりません:             2を押す",
-          "el chico grande  → la chica grande",
-          "複数は -s を足すだけです: grandes",
+          "-E 型と多くの子音型は変わりません:   2を押す",
+          "el chico grande → la chica grande",
+          "el cielo azul → la falda azul (複 azules)",
           "",
-          "子音で終わる語は女性形に -a:         3を押す",
-          "el chico español → la chica española",
-          "",
+          "ただし国籍・-or の語は -a を足す:    3を押す",
+          "español → española, trabajador → trabajadora",
+          "(mejor, mayor, menor は男女同形)",
           "語順は、ふつう名詞の後ろです:",
           "la casa blanca (白い家)",
-          "un libro interesante (おもしろい本)",
-          "注意:bueno, malo, grande は前に出ます",
-          "un buen amigo (よい友だち)"
+          "いくつかは前に出て、短くなります:",
+          "un buen amigo, un mal día (男性単数)",
+          "una gran ciudad (gran = 偉大な)"
         ],
-        "pronunciation": "Lección once",
+        "pronunciation": "Lección trece",
         "pronunciation_mappings": {
           "1": "el gato blanco, la gata blanca, los gatos blancos, las gatas blancas",
-          "2": "el chico grande, la chica grande",
-          "3": "el chico español, la chica española"
+          "2": "el chico grande, la chica grande, el cielo azul, la falda azul, azules",
+          "3": "español, española, trabajador, trabajadora"
         }
       }
     ]
   },
   {
-    "lesson_id": "012",
+    "lesson_id": "014",
     "trigger_word": "guapo",
-    "trigger_card_number": 375,
-    "title": "第12課：点過去",
+    "trigger_card_number": 397,
+    "title": "第14課：点過去",
     "header_color": "green",
     "pages": [
       {
@@ -144,7 +260,7 @@
           "注意:-AR 動詞の nosotros は現在形と",
           "点過去で同じ形です!"
         ],
-        "pronunciation": "Lección doce",
+        "pronunciation": "Lección catorce",
         "pronunciation_mappings": {
           "1": "yo hablé, tú hablaste, él habló, nosotros hablamos, ellos hablaron",
           "2": "yo comí, tú comiste, él comió, nosotros comimos, ellos comieron"
@@ -167,7 +283,8 @@
           "tuve, tuviste, tuvo, tuvimos, tuvieron",
           "",
           "ESTAR(いる・ある):                   4を押す",
-          "estuve, estuviste, estuvo, estuvimos",
+          "estuve, estuviste, estuvo, estuvimos,",
+          "estuvieron",
           "",
           "DECIR(言う):                         5を押す",
           "dije, dijiste, dijo, dijimos, dijeron"
@@ -176,7 +293,7 @@
           "1": "fui, fuiste, fue, fuimos, fueron",
           "2": "hice, hiciste, hizo, hicimos, hicieron",
           "3": "tuve, tuviste, tuvo, tuvimos, tuvieron",
-          "4": "estuve, estuviste, estuvo, estuvimos",
+          "4": "estuve, estuviste, estuvo, estuvimos, estuvieron",
           "5": "dije, dijiste, dijo, dijimos, dijeron"
         }
       }

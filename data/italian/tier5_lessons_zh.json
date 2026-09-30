@@ -1,175 +1,270 @@
 [
   {
-    "lesson_id": "018",
+    "lesson_id": "019",
     "trigger_word": "comunque",
     "trigger_card_number": 1,
-    "title": "第18课：小品词 NE 与 CI",
+    "title": "第23课：简单将来时",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 2,
         "content": [
-          "NE——替代「其中／关于／来自它（们）」：",
+          "FUTURO SEMPLICE（简单将来时）=「将要、会」。",
+          "词干是不定式去掉词尾的 -e；",
+          "-are 动词还要把 a 变成 e：",
           "",
-          "   数量（部分代词）：",
-          "      hai libri? — sì, ne ho tre.",
-          "         （是的，我有其中三本）",
-          "      vuoi del pane? — ne voglio un po'.",
-          "",
-          "   谈论某事：",
-          "      parli del progetto? — sì, ne parlo.",
-          "      che ne pensi? = 你怎么看？",
-          "",
-          "   从某地：",
-          "      torni da Roma? — sì, ne torno domani.",
-          "         （是的，我明天从那里回来）",
-          "",
-          "位置：变位动词之前，或附在原形之后。",
-          "与数量连用时，过去分词性数一致：",
-          "   ne ho mangiati tre（阳复）, -e（阴复）"
-        ],
-        "pronunciation": "Lezione diciotto"
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "content": [
-          "CI——替代「到／在／关于它」或地点：",
-          "",
-          "   到／在某地：",
-          "      vai a Roma? — sì, ci vado.",
-          "      sei in Italia? — sì, ci sono.",
-          "",
-          "   关于／涉及抽象事物：",
-          "      credi ai fantasmi? — non ci credo.",
-          "      pensi al futuro? — sì, ci penso.",
-          "",
-          "   习惯用法 ESSERCI：",
-          "      c'è / ci sono = 有（单／复）",
-          "      c'era / c'erano = 过去有",
-          "",
-          "双代词连用——「i」变为「e」：",
-          "   me lo, te la, ce ne, glielo,",
-          "   间接代词位于直接代词之前。",
-          "   ce lo dice = 他把它告诉我们"
-        ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "019",
-    "trigger_word": "anima",
-    "trigger_card_number": 25,
-    "title": "第19课：简单将来时",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
-        "content": [
-          "简单将来时 = 将来时态。",
-          "用于预测、计划、承诺。",
-          "",
-          "词尾 — 所有三组动词相同：",
-          "",
-          "   parlare → parler-",
-          "      parlerò, parlerai, parlerà,",
-          "      parleremo, parlerete, parleranno",
-          "",
+          "   parlare  → parler-                     按 1",
           "   scrivere → scriver-",
-          "      scriverò, scriverai, scriverà,",
-          "      scriveremo, scriverete, scriveranno",
+          "   dormire  → dormir-",
           "",
-          "   finire → finir-",
-          "      finirò, finirai, finirà,",
-          "      finiremo, finirete, finiranno",
+          "所有动词共用同一套词尾：                  按 2",
+          "   io       parlerò     noi   parleremo",
+          "   tu       parlerai    voi   parlerete",
+          "   lui/lei  parlerà     loro  parleranno",
+          "-ò 和 -à 上的重音符号是拼写的一部分。",
           "",
-          "注意：-are 动词使用 -er- 词干（而非 -ar-）。"
+          "拼写要变，读音不变：                      按 3",
+          "   cercare → cercherò, pagare → pagherò",
+          "   mangiare → mangerò（不需要 i）"
         ],
-        "pronunciation": "Lezione diciannove"
+        "pronunciation": "Lezione ventitré",
+        "pronunciation_mappings": {
+          "1": "Parlare, parlerò. Scrivere, scriverò. Dormire, dormirò.",
+          "2": "Io parlerò. Tu parlerai. Lui parlerà. Noi parleremo. Voi parlerete. Loro parleranno.",
+          "3": "Cercare, cercherò. Pagare, pagherò. Mangiare, mangerò."
+        }
       },
       {
         "page": 2,
         "total_pages": 2,
         "content": [
-          "不规则将来时词干 — 词尾相同：",
+          "短词干，词尾照旧：                        按 1",
+          "   essere → sarò      avere  → avrò",
+          "   andare → andrò     venire → verrò",
+          "   potere → potrò     dovere → dovrò",
+          "   volere → vorrò     sapere → saprò",
+          "   vedere → vedrò     bere   → berrò",
+          "   fare、stare、dare 保留 a：",
+          "      farò, starò, darò",
           "",
-          "   essere → sar-      sarò, sarà...",
-          "   avere  → avr-      avrò, avrà...",
-          "   andare → andr-     andrò...",
-          "   venire → verr-     verrò...",
-          "   fare   → far-      farò...",
-          "   dire   → dir-      dirò...",
-          "   volere → vorr-     vorrò...",
-          "   potere → potr-     potrò...",
-          "   dovere → dovr-     dovrò...",
-          "   sapere → sapr-     saprò...",
-          "   vedere → vedr-     vedrò...",
-          "",
-          "用法：",
-          "   - 简单将来时：domani partirò",
-          "   - 预测：pioverà",
-          "   - 推测：sarà a casa?（可能在家吗？）"
-        ]
+          "计划：                                    按 2",
+          "   domani partirò = 我明天出发",
+          "   （用现在时也可以：domani parto）",
+          "预测：                                    按 3",
+          "   domani pioverà = 明天会下雨",
+          "对眼下情况的推测：                        按 4",
+          "   dov'è Marco? — sarà a casa.",
+          "      = 他大概在家吧"
+        ],
+        "pronunciation_mappings": {
+          "1": "Sarò. Avrò. Andrò. Verrò. Potrò. Dovrò. Vorrò. Saprò. Vedrò. Berrò. Farò. Starò. Darò.",
+          "2": "Domani partirò. Domani parto.",
+          "3": "Domani pioverà.",
+          "4": "Dov'è Marco? Sarà a casa."
+        }
       }
     ]
   },
   {
     "lesson_id": "020",
-    "trigger_word": "accesso",
-    "trigger_card_number": 80,
-    "title": "第20课：条件式现在时",
+    "trigger_word": "piuttosto",
+    "trigger_card_number": 7,
+    "title": "第24课：条件式现在时",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 2,
         "content": [
-          "条件式现在时 =「would/could」。",
-          "用于礼貌、假设、建议等场景。",
+          "CONDIZIONALE（条件式）= 假设中的「会」。",
+          "词干与将来时相同，只是词尾不同：",
           "",
-          "变位词尾 — 所有三组动词相同：",
+          "PARLARE → parler-：                       按 1",
+          "   io       parlerei    noi   parleremmo",
+          "   tu       parleresti  voi   parlereste",
+          "   lui/lei  parlerebbe  loro  parlerebbero",
           "",
-          "   parlare → parler-",
-          "      parlerei，parleresti，parlerebbe，",
-          "      parleremmo，parlereste，parlerebbero",
+          "条件式有两个 m，将来时只有一个：          按 2",
+          "   parleremmo = （要是……）我们会说",
+          "   parleremo  = 我们将会说",
           "",
-          "   credere → creder-",
-          "      crederei，crederesti，crederebbe，",
-          "      crederemmo，credereste，crederebbero",
-          "",
-          "   finire → finir-",
-          "      finirei，finiresti，finirebbe，",
-          "      finiremmo，finireste，finirebbero",
-          "",
-          "词干与将来时相同 — 词尾不同。"
+          "将来时的短词干照样使用：                  按 3",
+          "   sarei, avrei, andrei, verrei,",
+          "   potrei, dovrei, vorrei, farei"
         ],
-        "pronunciation": "Lezione venti"
+        "pronunciation": "Lezione ventiquattro",
+        "pronunciation_mappings": {
+          "1": "Io parlerei. Tu parleresti. Lui parlerebbe. Noi parleremmo. Voi parlereste. Loro parlerebbero.",
+          "2": "Parleremmo. Parleremo.",
+          "3": "Sarei. Avrei. Andrei. Verrei. Potrei. Dovrei. Vorrei. Farei."
+        }
       },
       {
         "page": 2,
         "total_pages": 2,
         "content": [
-          "不规则词干 — 与将来时相同：",
+          "表示礼貌（vorrei 你已经学过）：           按 1",
+          "   vorrei un caffè = 我想要一杯咖啡",
+          "   mi piacerebbe vedere Roma",
+          "      = 我很想去看看罗马",
           "",
-          "   essere → sar-      sarei，sarebbe…",
-          "   avere  → avr-      avrei，avrebbe…",
-          "   andare → andr-     andrei…",
-          "   venire → verr-     verrei…",
-          "   fare   → far-      farei…",
-          "   volere → vorr-     vorrei（想要）",
-          "   potere → potr-     potrei（能够）",
-          "   dovere → dovr-     dovrei（应该）",
-          "   sapere → sapr-     saprei…",
-          "   vedere → vedr-     vedrei…",
+          "比 può? / puoi? 更委婉的请求：            按 2",
+          "   mi potrebbe aiutare?（Lei）",
+          "   potresti chiudere la finestra?（tu）",
           "",
-          "用法：",
-          "   - 礼貌：vorrei un caffè",
-          "   - 假设：sarebbe bello",
-          "   - 建议：dovresti studiare di più",
-          "   - 委婉请求：potresti aiutarmi？"
-        ]
+          "建议：dovresti = 你应该                   按 3",
+          "   dovresti dormire di più",
+          "",
+          "愿望与假设：                              按 4",
+          "   sarebbe bello! = 那该多好啊！",
+          "",
+          "宁愿：piuttosto                           按 5",
+          "   un caffè? — vorrei piuttosto un tè",
+          "      = 来杯咖啡？——我倒更想喝茶"
+        ],
+        "pronunciation_mappings": {
+          "1": "Vorrei un caffè. Mi piacerebbe vedere Roma.",
+          "2": "Mi potrebbe aiutare? Potresti chiudere la finestra?",
+          "3": "Dovresti dormire di più.",
+          "4": "Sarebbe bello!",
+          "5": "Un caffè? Vorrei piuttosto un tè."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "018",
+    "trigger_word": "anima",
+    "trigger_card_number": 25,
+    "title": "第25课：小品词 NE 与 CI",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "NE = di + 它／它们，意为「其中的」。它代替",
+          "「一定数量」的某样东西：",
+          "",
+          "与数字或数量连用：                        按 1",
+          "   quanti fratelli hai? — ne ho due.",
+          "      = 我有两个（兄弟）",
+          "   vuoi del pane? — sì, ne voglio un po'.",
+          "   hai tempo? — no, non ne ho.",
+          "回答里必须有 ne：不能只说 ho due。",
+          "",
+          "「关于它」（di + 它）：                   按 2",
+          "   che ne pensi? = 你对此怎么看？",
+          "   ne parliamo domani",
+          "      = 这事我们明天再谈",
+          "",
+          "「从某地」，或「从困境中」：              按 3",
+          "   me ne vado = 我走了（离开这里）",
+          "   come ne esco? = 我该怎么脱身？"
+        ],
+        "pronunciation": "Lezione venticinque",
+        "pronunciation_mappings": {
+          "1": "Quanti fratelli hai? Ne ho due. Vuoi del pane? Sì, ne voglio un po'. Hai tempo? No, non ne ho.",
+          "2": "Che ne pensi? Ne parliamo domani.",
+          "3": "Me ne vado. Come ne esco?"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "CI =「那里」（去那里、在那里）：          按 1",
+          "   vai a Roma? — sì, ci vado domani.",
+          "   sei mai stato a Napoli?",
+          "      — sì, ci sono stato.",
+          "CI 与接 a 的动词连用：                    按 2",
+          "   pensi al lavoro? — non ci penso!",
+          "   credi ai fantasmi? — non ci credo.",
+          "你其实已经认识它了：                      按 3",
+          "   c'è, ci sono = 有（单／复数）",
+          "   c'era, c'erano = 当时有（单／复数）",
+          "CI VUOLE = 需要（时间、东西）：           按 4",
+          "   ci vuole un'ora; ci vogliono due ore",
+          "",
+          "在 ne 前面，mi ti ci vi si 要变成",
+          "me te ce ve se：                          按 5",
+          "   me ne vado, te ne vai, se ne va",
+          "   ce n'è uno = 有一个（这样的）"
+        ],
+        "pronunciation_mappings": {
+          "1": "Vai a Roma? Sì, ci vado domani. Sei mai stato a Napoli? Sì, ci sono stato.",
+          "2": "Pensi al lavoro? Non ci penso! Credi ai fantasmi? Non ci credo.",
+          "3": "C'è. Ci sono. C'era. C'erano.",
+          "4": "Ci vuole un'ora. Ci vogliono due ore.",
+          "5": "Me ne vado. Te ne vai. Se ne va. Ce n'è uno."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "054",
+    "trigger_word": "sia",
+    "trigger_card_number": 62,
+    "title": "第26课：CHE 后面的 SIA 与 ABBIA",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "初识 CONGIUNTIVO（虚拟式）：这种动词",
+          "形式用来表达你「认为、希望、想要」的事，",
+          "而不是陈述事实。",
+          "它出现在下面这类动词后面的 che 之后：",
+          "",
+          "   penso che, credo che = 我认为          按 1",
+          "   spero che = 我希望",
+          "   mi sembra che = 在我看来",
+          "   è importante che = 重要的是",
+          "",
+          "先是事实，再是看法：                      按 2",
+          "   Marco è a casa",
+          "   penso che Marco sia a casa",
+          "      = 我认为马可在家",
+          "   Anna ha ragione",
+          "   spero che Anna abbia ragione",
+          "      = 希望安娜是对的"
+        ],
+        "pronunciation": "Lezione ventisei",
+        "pronunciation_mappings": {
+          "1": "Penso che. Credo che. Spero che. Mi sembra che. È importante che.",
+          "2": "Marco è a casa. Penso che Marco sia a casa. Anna ha ragione. Spero che Anna abbia ragione."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "essere 和 avere 的形式：                  按 1",
+          "   che io, tu, lui/lei   sia     abbia",
+          "   che noi               siamo   abbiamo",
+          "   che voi               siate   abbiate",
+          "   che loro              siano   abbiano",
+          "",
+          "io、tu、lui 共用一个形式，所以意思",
+          "不清楚时要加上主语：                      按 2",
+          "   spero che tu abbia tempo",
+          "      = 希望你有时间",
+          "",
+          "你已经见过 sia 了：                       按 3",
+          "   sia gentile! = 请您友善一点！（Lei）",
+          "   sia Marco sia Anna",
+          "      = 马可和安娜都……",
+          "",
+          "目前只学这两个动词。完整的",
+          "congiuntivo 以后再学。"
+        ],
+        "pronunciation_mappings": {
+          "1": "Che io sia. Che tu sia. Che lui sia. Che noi siamo. Che voi siate. Che loro siano. Che io abbia. Che tu abbia. Che lui abbia. Che noi abbiamo. Che voi abbiate. Che loro abbiano.",
+          "2": "Spero che tu abbia tempo.",
+          "3": "Sia gentile! Sia Marco sia Anna."
+        }
       }
     ]
   }

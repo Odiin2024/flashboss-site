@@ -1,18 +1,16 @@
 [
   {
-    "lesson_id": "042",
+    "lesson_id": "045",
     "trigger_word": "soldado",
-    "trigger_card_number": 231,
-    "title": "LEKTION 42: GERUNDIO VS INFINITIV",
+    "trigger_card_number": 216,
+    "title": "LEKTION 45: GERUNDIO VS INFINITIV",
     "header_color": "red",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "Deutsch sagt 'Tanzen' oder 'beim Tanzen'.",
-          "Spanisch unterscheidet genauer zwischen",
-          "Gerundium (-ando/-iendo) und Infinitiv:",
+          "Spanisch trennt Infinitiv und Gerundium:",
           "",
           "INFINITIV (der Normalfall):         Drücke 1",
           "Me gusta bailar. (Ich tanze gern.)",
@@ -20,29 +18,31 @@
           "wichtig.)",
           "Antes de salir... (Vor dem Gehen...)",
           "",
-          "GERUNDIUM (nur Laufendes):          Drücke 2",
+          "GERUNDIUM (Verlauf oder Art):       Drücke 2",
           "Estoy estudiando. (Ich lerne gerade.)",
-          "Salió corriendo. (Er rannte davon.)",
+          "Salió corriendo. (Er rannte hinaus.)",
           "Sigue lloviendo. (Es regnet weiter.)",
+          "Llevo dos años estudiando.",
+          "(Ich lerne seit zwei Jahren.)",
           "",
           "NIE nach Präpositionen:             Drücke 3",
           "sin hablar (ohne zu sprechen)",
           "NICHT: sin hablando"
         ],
-        "pronunciation": "Lección cuarenta y dos",
+        "pronunciation": "Lección cuarenta y cinco",
         "pronunciation_mappings": {
-          "1": "me gusta bailar, estudiar es importante, antes de salir",
-          "2": "estoy estudiando, salió corriendo, sigue lloviendo",
-          "3": "sin hablar"
+          "1": "Me gusta bailar. Estudiar es importante. Antes de salir.",
+          "2": "Estoy estudiando. Salió corriendo. Sigue lloviendo. Llevo dos años estudiando.",
+          "3": "Sin hablar."
         }
       }
     ]
   },
   {
-    "lesson_id": "043",
+    "lesson_id": "046",
     "trigger_word": "vehículo",
-    "trigger_card_number": 281,
-    "title": "LEKTION 43: SCHWERE PRÄPOSITIONEN",
+    "trigger_card_number": 266,
+    "title": "LEKTION 46: SCHWERE PRÄPOSITIONEN",
     "header_color": "red",
     "pages": [
       {
@@ -68,103 +68,78 @@
           "TRAS (nach / hinter):               Drücke 5",
           "tras la reunión (nach der Sitzung)"
         ],
-        "pronunciation": "Lección cuarenta y tres",
+        "pronunciation": "Lección cuarenta y seis",
         "pronunciation_mappings": {
-          "1": "ante esta situación, ante todo",
-          "2": "mediante un acuerdo",
-          "3": "según el informe",
-          "4": "hacia el futuro",
-          "5": "tras la reunión"
+          "1": "Ante esta situación. Ante todo.",
+          "2": "Mediante un acuerdo.",
+          "3": "Según el informe.",
+          "4": "Hacia el futuro.",
+          "5": "Tras la reunión."
         }
       }
     ]
   },
   {
-    "lesson_id": "044",
+    "lesson_id": "047",
     "trigger_word": "concierto",
-    "trigger_card_number": 341,
-    "title": "LEKTION 44: FEINE UNTERSCHIEDE",
+    "trigger_card_number": 330,
+    "title": "LEKTION 47: FEINE KONTRASTE",
     "header_color": "red",
     "pages": [
       {
         "page": 1,
-        "total_pages": 3,
+        "total_pages": 2,
         "content": [
-          "Das richtige Wort für den Zweck finden.",
-          "Über diese Paare stolpern auch Profis:",
+          "Ähnlich geschrieben, aber verschieden:",
           "",
-          "SABER vs CONOCER:                   Drücke 1",
-          "saber = wissen, etwas können",
-          "conocer = kennen, mit etwas vertraut sein",
-          "Sé nadar. (Ich kann schwimmen.)",
-          "Conozco Madrid. (Ich kenne Madrid.)",
+          "SINO vs SI NO:                      Drücke 1",
+          "No lo hizo él, sino ella.",
+          "(Nicht er war es, sondern sie.)",
+          "Si no vienes, me enojo.",
+          "(Wenn du nicht kommst, werde ich sauer.)",
           "",
-          "PEDIR vs PREGUNTAR:                 Drücke 2",
-          "pedir = um etwas bitten",
-          "preguntar = eine Frage stellen",
-          "Pedí la cuenta. (Ich bat um die Rechnung.)",
-          "Pregunté la hora. (Ich fragte nach der Zeit.)",
+          "AUN (sogar) vs AÚN (noch):          Drücke 2",
+          "Aun así, lo intentó. (Dennoch versuchte er es.)",
+          "Aún no ha llegado. (Er ist noch nicht da.)",
           "",
-          "Deutsch trennt genauso: bitten/fragen.",
-          "Verwechseln klingt im Spanischen falsch."
+          "POR QUE (por + que) vs PORQUE:      Drücke 3",
+          "Es la razón por (la) que vine.",
+          "(Das ist der Grund, weshalb ich kam.)",
+          "Vine porque me invitaron.",
+          "(Ich kam, weil sie mich eingeladen hatten.)"
         ],
-        "pronunciation": "Lección cuarenta y cuatro",
         "pronunciation_mappings": {
-          "1": "sé nadar, conozco Madrid",
-          "2": "pedí la cuenta, pregunté la hora"
+          "1": "No lo hizo él, sino ella. Si no vienes, me enojo.",
+          "2": "Aun así, lo intentó. Aún no ha llegado.",
+          "3": "Es la razón por la que vine. Vine porque me invitaron."
         }
       },
       {
         "page": 2,
-        "total_pages": 3,
+        "total_pages": 2,
         "content": [
-          "LLEVAR vs TRAER:                    Drücke 1",
-          "llevar = mitnehmen (weg von hier)",
-          "traer = mitbringen (hierher)",
-          "Lleva esto a tu madre.",
-          "(Nimm das mit zu deiner Mutter.)",
-          "Trae el libro cuando vengas.",
-          "(Bring das Buch mit, wenn du kommst.)",
+          "Für „werden“ hat Spanisch mehrere Verben:",
           "",
-          "SINO vs PERO:                       Drücke 2",
-          "pero = aber (allgemeiner Gegensatz)",
-          "sino = sondern (nach einer Verneinung;",
-          "stellt richtig, was gerade verneint wurde)",
-          "No es caro, sino barato.",
-          "(Es ist nicht teuer, sondern billig.)",
-          "Quiero ir, pero no puedo.",
-          "(Ich will hin, aber ich kann nicht.)"
+          "PONERSE: schneller Zustandswechsel  Drücke 1",
+          "Se puso rojo. (Er wurde rot.)",
+          "Me pongo nervioso. (Ich werde nervös.)",
+          "",
+          "VOLVERSE: bleibender Wandel         Drücke 2",
+          "Se volvió muy serio.",
+          "(Er wurde sehr ernst.)",
+          "",
+          "HACERSE: durch Einsatz oder Wahl    Drücke 3",
+          "Se hizo médico. (Er wurde Arzt.)",
+          "",
+          "QUEDARSE: Folge eines Ereignisses   Drücke 4",
+          "Se quedó ciego. (Er wurde blind.)",
+          "Me quedé sin palabras. (Mir fehlten die Worte.)"
         ],
         "pronunciation_mappings": {
-          "1": "lleva esto a tu madre, trae el libro cuando vengas",
-          "2": "no es caro sino barato, quiero ir pero no puedo"
-        }
-      },
-      {
-        "page": 3,
-        "total_pages": 3,
-        "content": [
-          "POR QUÉ vs PORQUE vs PORQUÉ:       Drücke 1",
-          "por qué = warum? (Frage)",
-          "porque = weil (Antwort)",
-          "porqué = der Grund (Substantiv)",
-          "¿Por qué? Porque sí. El porqué no",
-          "importa. (Warum? Darum. Der Grund",
-          "ist egal.)",
-          "",
-          "TODAVÍA vs AÚN vs YA:              Drücke 2",
-          "todavía/aún = noch (immer)",
-          "ya = schon / jetzt",
-          "Todavía no ha llegado.",
-          "(Er ist noch nicht angekommen.)",
-          "Ya lo sé. (Ich weiß es schon.)",
-          "",
-          "Diese Feinheiten unterscheiden gutes",
-          "Spanisch von großartigem Spanisch."
-        ],
-        "pronunciation_mappings": {
-          "1": "por qué, porque sí, el porqué no importa",
-          "2": "todavía no ha llegado, ya lo sé"
+          "1": "Se puso rojo. Me pongo nervioso.",
+          "2": "Se volvió muy serio.",
+          "3": "Se hizo médico.",
+          "4": "Se quedó ciego. Me quedé sin palabras."
         }
       }
     ]

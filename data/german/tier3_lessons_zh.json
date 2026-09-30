@@ -2,7 +2,7 @@
   {
     "lesson_id": "015",
     "trigger_word": "Beziehung",
-    "trigger_card_number": 436,
+    "trigger_card_number": 448,
     "title": "第15课：与格",
     "header_color": "cyan",
     "pages": [
@@ -16,18 +16,18 @@
           "阳性：                    der  →  dem",
           "阴性：                    die  →  der",
           "中性：                    das  →  dem",
-          "复数：                    die  →  den",
+          "复数：                    die  →  den + -n",
           "",
           "与格介词（触发与格）：",
           "aus, bei, mit, nach, seit, von, zu",
           "",
-          "Ich gehe mit dem Mann.（我和那个男人一起走）",
+          "Ich spiele mit den Kindern.（和孩子们一起）",
           "",
           "与格动词（使宾语变为与格）：",
           "helfen, danken, gefallen, gehören, schmecken",
           "",
           "Ich helfe dem Mann.（我帮助那个男人）",
-          "Ich zahle der Frau.（我付钱给那位女士）"
+          "Ich gebe der Frau das Buch.（给那位女士）"
         ],
         "pronunciation": "Lektion fünfzehn"
       }
@@ -35,9 +35,66 @@
   },
   {
     "lesson_id": "016",
+    "trigger_word": "Hoffnung",
+    "trigger_card_number": 472,
+    "title": "第16课：从句（NEBENSÄTZE）",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "Nebensatz（从句）*由从属连词引导，",
+          "从句中的动词移到句子末尾。",
+          "",
+          "常见从属连词：",
+          "dass（那个/即） weil（因为）",
+          "obwohl（尽管） wenn（当/如果）",
+          "als（当……时·过去） ob（是否）",
+          "",
+          "从句在后半句：",
+          "Ich erkläre, dass ich Deutsch lerne.",
+          "（我说明：我在学德语）",
+          "",
+          "从句在前半句：",
+          "Wenn ich Zeit habe, lerne ich Deutsch.",
+          "（有时间的时候，我就学德语）",
+          "",
+          "*neben =「旁边」：Nebensatz 是位于",
+          "主句（der Hauptsatz）旁边的从句。"
+        ],
+        "pronunciation": "Lektion sechzehn"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "TROTZDEM 与 OBWOHL",
+          "",
+          "两个词都译作「尽管/然而」，",
+          "但只有 OBWOHL 引导从句。",
+          "",
+          "OBWOHL = 从属连词",
+          "→ 动词移到句末。",
+          "Ich lerne, obwohl ich müde BIN.",
+          "（尽管我累了，我还是在学习）",
+          "",
+          "TROTZDEM = 副词（意为「然而」）",
+          "→ 动词保持在第二位。",
+          "Ich bin müde. Trotzdem LERNE ich.",
+          "（我累了。然而我仍在学习。）",
+          "",
+          "意思相同，语法不同：obwohl 把动词",
+          "推到句末，trotzdem 留它在第二位。"
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": "017",
     "trigger_word": "hoffen",
-    "trigger_card_number": 469,
-    "title": "第16课：完成时",
+    "trigger_card_number": 481,
+    "title": "第17课：完成时",
     "header_color": "cyan",
     "pages": [
       {
@@ -51,7 +108,7 @@
           "machen → Ich habe gemacht.",
           "kaufen → Ich habe gekauft.",
           "",
-          "不规则动词：ge- + 词干 + -en",
+          "不规则动词：ge- + 词干（常有变化）+ -en",
           "gehen → Ich bin gegangen.",
           "fahren → Ich bin gefahren.",
           "",
@@ -63,48 +120,14 @@
           "Der Zug ist abgefahren.（火车已开走）",
           "Ich habe Deutsch gelernt.（我学过德语）"
         ],
-        "pronunciation": "Lektion sechzehn"
-      }
-    ]
-  },
-  {
-    "lesson_id": "017",
-    "trigger_word": "sich freuen",
-    "trigger_card_number": 473,
-    "title": "第17课：可分动词 II",
-    "header_color": "cyan",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "有些德语动词会一分为二！",
-          "介词部分（前缀）移到句末：",
-          "Ich stehe um 7 Uhr auf.",
-          "",
-          "在复合句中，它们保持完整：",
-          "Ich weiß, dass ich um 7 Uhr aufstehe.",
-          "（动词移至句末并重新连接）",
-          "",
-          "过去时中，ge- 插入中间：",
-          "aufstehen → Ich bin aufgestanden.",
-          "ankommen → Der Zug ist angekommen.",
-          "anrufen → Ich habe angerufen.",
-          "",
-          "常见可分前缀：",
-          "auf-, an-, aus-, ein-, mit-, ab-, zurück-",
-          "",
-          "大多数常用前缀都是可分的。",
-          "以下前缀不可分：be-, er-, ver-, ent-, ge-"
-        ],
         "pronunciation": "Lektion siebzehn"
       }
     ]
   },
   {
     "lesson_id": "018",
-    "trigger_word": "sich ärgern",
-    "trigger_card_number": 474,
+    "trigger_word": "sich freuen",
+    "trigger_card_number": 485,
     "title": "第18课：反身代词",
     "header_color": "cyan",
     "pages": [
@@ -120,9 +143,9 @@
           "du → dich      ihr → euch",
           "er/sie/es → sich    sie/Sie → sich",
           "",
-          "真反身动词（始终需用反身）： sich freuen（感",
-          "到高兴），sich erinnern（回忆） Ich freue",
-          "mich!（我很开心）",
+          "反身动词（与 sich 连用）：",
+          "sich freuen（高兴），sich erholen（休养恢复）",
+          "Ich freue mich!（我很高兴）",
           "",
           "可选反身（改变含义）：",
           "anziehen = 穿上（某物）",
@@ -137,33 +160,33 @@
   },
   {
     "lesson_id": "019",
-    "trigger_word": "morgens",
-    "trigger_card_number": 598,
-    "title": "第19课：时间表达",
+    "trigger_word": "ein|laden",
+    "trigger_card_number": 496,
+    "title": "第19课：可分动词 II",
     "header_color": "cyan",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "星期（使用「am」）：",
-          "am Montag，am Dienstag，am Mittwoch",
-          "am Donnerstag，am Freitag，am Samstag",
-          "am Sonntag，am Wochenende",
+          "有些德语动词会一分为二！",
+          "前缀（第一部分）移到句末：",
+          "Ich stehe um 7 Uhr auf.",
           "",
-          "月份（使用「im」）：",
-          "im Januar，im Februar，im März，im April",
-          "im Mai，im Juni，im Juli，im August",
-          "im September，im Oktober，im November",
-          "im Dezember",
+          "在复合句中，它们保持完整：",
+          "Ich weiß, dass ich um 7 Uhr aufstehe.",
+          "（动词移至句末并重新连接）",
           "",
-          "季节（使用「im」）：",
-          "im Frühling，im Sommer，im Herbst，im Winter",
+          "过去时中，ge- 插入中间：",
+          "aufstehen → Ich bin aufgestanden.",
+          "ankommen → Der Zug ist angekommen.",
+          "anrufen → Ich habe angerufen.",
           "",
-          "一天中的时段（使用「am」或「in der」）：",
-          "am Morgen，am Mittag，am Abend，in der Nacht",
+          "常见可分前缀：",
+          "auf-, an-, aus-, ein-, mit-, ab-, zurück-",
           "",
-          "Ich fahre am Montag nach Berlin."
+          "大多数常用前缀都是可分的。",
+          "不可分前缀：be-, er-, ver-, ent-, ge-, miss-"
         ],
         "pronunciation": "Lektion neunzehn"
       }
@@ -171,9 +194,66 @@
   },
   {
     "lesson_id": "020",
+    "trigger_word": "Bar",
+    "trigger_card_number": 512,
+    "title": "第20课：双向介词",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "有九个介词可接宾格或与格：",
+          "",
+          "an auf hinter in neben über unter vor zw.",
+          "",
+          "表示地点变化（从此到彼）→ 宾格：",
+          "Ich gehe in den Park.（进入公园）",
+          "Ich lege das Buch auf den Tisch.",
+          "（我把书放到桌上）",
+          "",
+          "表示静态位置（在……上/里/旁）→ 与格：",
+          "Ich bin im Park.（我在公园里）",
+          "Das Buch liegt auf dem Tisch.",
+          "（书在桌上）",
+          "",
+          "记住：",
+          "WOHIN?（去往新地点）→ 宾格",
+          "WO?（所在或发生的地点）→ 与格",
+          "Ich laufe im Park.（虽在移动，但在园内 → DAT）"
+        ],
+        "pronunciation": "Lektion zwanzig"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "常用双向介词用法示例：",
+          "",
+          "「an」（在……上/旁，多指垂直面）：",
+          "AKK：Ich hänge das Bild an die Wand.",
+          "DAT：Das Bild hängt an der Wand.",
+          "",
+          "「in」（在……里 / 进入……）：",
+          "AKK：Ich gehe ins Kino.",
+          "DAT：Ich bin im Kino.",
+          "",
+          "「auf」（在……上，多指水平面）：",
+          "AKK：Ich stelle die Tasse auf den Tisch.",
+          "DAT：Die Tasse steht auf dem Tisch.",
+          "",
+          "「zwischen」（在……之间）：",
+          "AKK：Ich setze mich zwischen die Freunde.",
+          "DAT：Ich sitze zwischen den Freunden."
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": "021",
     "trigger_word": "altmodisch",
-    "trigger_card_number": 614,
-    "title": "第20课：指示代词",
+    "trigger_card_number": 557,
+    "title": "第21课：指示代词",
     "header_color": "cyan",
     "pages": [
       {
@@ -182,7 +262,7 @@
         "content": [
           "指示代词用于指代特定事物：",
           "dieser = 这个     jener = 那个（正式）",
-          "solcher = 这样的    welcher = 哪个",
+          "solcher = 这样的",
           "",
           "变格规则（与定冠词「der」相同！）：",
           "          阳性    阴性     中性    复数",
@@ -199,15 +279,15 @@
           "口语中通常改用「der/die/das da」：",
           "Der Mann da.（那边那个男人）"
         ],
-        "pronunciation": "Lektion zwanzig"
+        "pronunciation": "Lektion einundzwanzig"
       }
     ]
   },
   {
-    "lesson_id": "021",
+    "lesson_id": "022",
     "trigger_word": "Kunst",
-    "trigger_card_number": 629,
-    "title": "第21课：疑问形容词",
+    "trigger_card_number": 571,
+    "title": "第22课：疑问形容词",
     "header_color": "cyan",
     "pages": [
       {
@@ -233,7 +313,109 @@
           "Was für ein Auto hast du？",
           "（你有什么样的车？）"
         ],
-        "pronunciation": "Lektion einundzwanzig"
+        "pronunciation": "Lektion zweiundzwanzig"
+      }
+    ]
+  },
+  {
+    "lesson_id": "023",
+    "trigger_word": "erzählen",
+    "trigger_card_number": 590,
+    "title": "第23课：指小词 -CHEN/-LEIN",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "指小词让事物显得更小或更可爱。",
+          "在大多数名词后加 -chen 或 -lein：",
+          "",
+          "核心规则：所有指小词都变为中性！",
+          "（这就是为什么「das Mädchen」（女孩）是中性）",
+          "",
+          "-CHEN（更常用）：",
+          "der Hund → das Hündchen（小狗）",
+          "die Katze → das Kätzchen（小猫）",
+          "das Brot → das Brötchen（小面包）",
+          "der Bruder → das Brüderchen（小兄弟）",
+          "",
+          "-LEIN（更具文学/诗意色彩）：",
+          "das Buch → das Büchlein（小书）",
+          "der Vogel → das Vöglein（小鸟）",
+          "",
+          "常添加变音符号：a → ä，o → ö，u → ü",
+          "Haus → Häuschen，Hund → Hündchen"
+        ],
+        "pronunciation": "Lektion dreiundzwanzig"
+      }
+    ]
+  },
+  {
+    "lesson_id": "024",
+    "trigger_word": "morgens",
+    "trigger_card_number": 606,
+    "title": "第24课：时间表达",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "星期（使用「am」）：",
+          "am Montag，am Dienstag，am Mittwoch",
+          "am Donnerstag，am Freitag，am Samstag",
+          "am Sonntag，am Wochenende",
+          "",
+          "月份（使用「im」）：",
+          "im Januar，im Februar，im März，im April",
+          "im Mai，im Juni，im Juli，im August",
+          "im September，im Oktober，im November",
+          "im Dezember",
+          "",
+          "季节（使用「im」）：",
+          "im Frühling，im Sommer，im Herbst，im Winter",
+          "",
+          "一天中的时段（使用「am」或「in der」）：",
+          "am Morgen，am Mittag，am Abend，in der Nacht",
+          "",
+          "每天早上 = morgens（小写，词尾 -s）"
+        ],
+        "pronunciation": "Lektion vierundzwanzig"
+      }
+    ]
+  },
+  {
+    "lesson_id": "025",
+    "trigger_word": "kennen",
+    "trigger_card_number": 712,
+    "title": "第25课：KENNEN 与 WISSEN",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 1,
+        "content": [
+          "德语中有三种不同的“知道”表达方式：",
+          "",
+          "KENNEN = 熟悉（人、地点、事物）",
+          "Ich kenne Berlin.（我熟悉柏林）",
+          "Ich kenne sie.（我认识她）",
+          "规则变位：kenne, kennst, kennt",
+          "",
+          "WISSEN = 知道（事实、信息）",
+          "Ich weiß das.（我知道那件事）",
+          "Ich weiß, dass...（我知道……）",
+          "不规则变位：ich weiß, du weißt, er weiß",
+          "",
+          "KÖNNEN = 会，懂得（技能）",
+          "Ich kann Deutsch.（我会说德语）",
+          "Ich kann schwimmen.（我会游泳）",
+          "",
+          "「kennen」表示熟悉某人或某物",
+          "「wissen」表示知晓某个事实"
+        ],
+        "pronunciation": "Lektion fünfundzwanzig"
       }
     ]
   }

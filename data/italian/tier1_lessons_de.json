@@ -1,32 +1,32 @@
 [
   {
     "lesson_id": "001",
-    "trigger_word": "cosa",
+    "trigger_word": "ciao",
     "trigger_card_number": 1,
     "title": "LEKTION 1: ITALIENISCHE LAUTE",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 5,
+        "total_pages": 6,
         "content": [
           "Willkommen! Italienisch ist weitgehend",
           "lautgetreu — Buchstaben klingen fast",
           "immer gleich. Die fünf Vokale zuerst:",
           "",
-          "a = „a“ wie in Vater                Taste 1",
+          "a = „a“ wie in Vater                  Taste 1",
           "   casa, mamma, gatto",
           "",
-          "e = „e“ wie in Bett                 Taste 2",
+          "e = „e“ wie in Bett oder in Weg       Taste 2",
           "   bene, sera, leggere",
           "",
-          "i = „i“ wie in Liebe                Taste 3",
+          "i = „i“ wie in Liebe                  Taste 3",
           "   sì, vita, libro",
           "",
-          "o = „o“ wie in Sohn                 Taste 4",
+          "o = „o“ wie in Sohn oder in Sonne     Taste 4",
           "   sole, modo, otto",
           "",
-          "u = „u“ wie in Buch                 Taste 5",
+          "u = „u“ wie in Buch                   Taste 5",
           "   tu, uno, frutto"
         ],
         "pronunciation": "Lezione uno",
@@ -40,26 +40,55 @@
       },
       {
         "page": 2,
-        "total_pages": 5,
+        "total_pages": 6,
+        "content": [
+          "E UND O gibt es in je zwei Färbungen:",
+          "offen (Mund weiter auf) und geschlossen.",
+          "",
+          "   è  offen, wie in Bett              Taste 1",
+          "      è (ist), bene, sette, caffè",
+          "   é  geschlossen, wie in Weg         Taste 2",
+          "      e (und), sera, tre, perché",
+          "",
+          "   ò  offen, wie in Sonne             Taste 3",
+          "      ho (ich habe), otto, cosa, però",
+          "   ó  geschlossen, wie in Sohn        Taste 4",
+          "      o (oder), sole, nome, ora",
+          "",
+          "Die Schrift zeigt die Färbung nur auf",
+          "einem Endvokal: caffè, perché. Sonst",
+          "lernst du sie nach Gehör. Sie schwankt",
+          "auch regional — verstanden wirst du immer."
+        ],
+        "pronunciation_mappings": {
+          "1": "È. Bene. Sette. Caffè.",
+          "2": "E. Sera. Tre. Perché.",
+          "3": "Ho. Otto. Cosa. Però.",
+          "4": "O. Sole. Nome. Ora."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 6,
         "content": [
           "KONSONANTEN, die anders klingen:",
           "",
-          "   h = immer STUMM                 Taste 1",
+          "   h = immer STUMM                    Taste 1",
           "      hai, ho, hanno",
           "",
-          "   c vor a/o/u = hartes „k“        Taste 2",
+          "   c vor a/o/u = hartes „k“           Taste 2",
           "      casa, come, cucina",
           "",
-          "   c vor e/i = weiches „tsch“      Taste 3",
+          "   c vor e/i = weiches „tsch“         Taste 3",
           "      cena, città, dolce",
           "",
-          "   g vor a/o/u = hartes „g“        Taste 4",
+          "   g vor a/o/u = hartes „g“           Taste 4",
           "      gatto, gusto, lago",
           "",
-          "   g vor e/i = weiches „dsch“      Taste 5",
+          "   g vor e/i = weiches „dsch“         Taste 5",
           "      gente, gelato, magia",
           "",
-          "r wird immer gerollt oder getippt."
+          "r wird immer gerollt oder kurz angetippt."
         ],
         "pronunciation_mappings": {
           "1": "Hai. Ho. Hanno.",
@@ -70,24 +99,24 @@
         }
       },
       {
-        "page": 3,
-        "total_pages": 5,
+        "page": 4,
+        "total_pages": 6,
         "content": [
           "DIGRAPHE — zwei Buchstaben, ein Laut:",
           "",
-          "   ch = hartes „k“ vor e/i          Taste 1",
+          "   ch = hartes „k“ vor e/i            Taste 1",
           "      chiave, perché, anche",
           "",
-          "   gh = hartes „g“ vor e/i          Taste 2",
+          "   gh = hartes „g“ vor e/i            Taste 2",
           "      spaghetti, ghiaccio, lunghi",
           "",
-          "   gli = „lj“ wie in Bataillon      Taste 3",
+          "   gli = „lj“ wie in Bataillon        Taste 3",
           "      famiglia, figlio, gli",
           "",
-          "   gn = „nj“ wie in Champignon      Taste 4",
+          "   gn = „nj“ wie in Champignon        Taste 4",
           "      gnocchi, lasagna, ogni",
           "",
-          "   sc + e/i = SCH                   Taste 5",
+          "   sc + e/i = SCH                     Taste 5",
           "      sciare, pesce, scena",
           "",
           "Sonst ist sc = „sk“ (scuola, scopo)."
@@ -101,17 +130,17 @@
         }
       },
       {
-        "page": 4,
-        "total_pages": 5,
+        "page": 5,
+        "total_pages": 6,
         "content": [
           "GEMINATEN — Doppelkonsonanten:",
           "",
           "Den Laut länger halten. Die Länge",
           "unterscheidet die Bedeutung:          Taste 1",
           "",
-          "   nono / nonno       (neunter / Opa)",
-          "   capello / cappello   (Haar / Hut)",
-          "   casa / cassa       (Haus / Kasse)",
+          "   nono / nonno        (neunter / Opa)",
+          "   capello / cappello     (Haar / Hut)",
+          "   casa / cassa         (Haus / Kasse)",
           "",
           "BETONUNG:",
           "Meist liegt sie auf der vorletzten",
@@ -129,8 +158,8 @@
         }
       },
       {
-        "page": 5,
-        "total_pages": 5,
+        "page": 6,
+        "total_pages": 6,
         "content": [
           "SO SEHEN ITALIENISCHE SÄTZE AUS:",
           "",
@@ -138,250 +167,842 @@
           "",
           "1. KEIN „ich“ — das Pronomen entfällt.",
           "   Die Verbendung sagt, wer handelt:",
-          "   ho = ich habe, hai = du hast.",
-          "   Also: „Ho una cosa“ = Ich habe was.",
+          "   ho = ich habe, hai = du hast.      Taste 1",
+          "   Also: „Ho una cosa“ = ich habe etwas.",
           "",
-          "2. ADJEKTIVE STEHEN NACH dem Substantiv:",
-          "   caffè caldo = heißer Kaffee         Taste 1",
+          "2. ADJEKTIVE STEHEN NACH dem Nomen:",
+          "   vino rosso = Rotwein               Taste 2",
           "   parola nuova = neues Wort",
-          "   (ein paar häufige stehen davor)",
+          "   (ein paar häufige stehen davor — später)",
           "",
           "3. „NON“ STEHT VOR dem Verb:",
-          "   non capisco = ich verstehe nicht    Taste 2",
+          "   non capisco = ich verstehe nicht   Taste 3",
           "   non ho = ich habe nicht"
         ],
         "pronunciation_mappings": {
-          "1": "Caffè caldo. Parola nuova.",
-          "2": "Non capisco. Non ho."
-        }
-      }
-    ]
-  },
-  {
-    "lesson_id": "002",
-    "trigger_word": "casa",
-    "trigger_card_number": 65,
-    "header_color": "green",
-    "title": "LEKTION 2: ARTIKEL & ELISION",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
-        "content": [
-          "Italienische Artikel ändern sich nach dem",
-          "Laut, nicht nur nach dem Geschlecht.",
-          "Es ist phonologisch:",
-          "MASKULIN SINGULAR:                   Taste 1",
-          "   il = vor den meisten Konsonanten",
-          "      il libro, il padre, il cane",
-          "   lo = vor z, gn, ps, s+Konsonant",
-          "      lo zio, lo gnocco, lo stato",
-          "",
-          "FEMININ SINGULAR:                    Taste 2",
-          "   la = vor jedem Konsonanten",
-          "      la casa, la madre, la zia",
-          "",
-          "PLURAL:                              Taste 3",
-          "   i, gli (m pl); le (f pl, immer)",
-          "      i libri, gli stati, le case"
-        ],
-        "pronunciation": "Lezione due",
-        "pronunciation_mappings": {
-          "1": "Il libro. Il padre. Il cane. Lo stato. Lo zio. Lo gnocco.",
-          "2": "La casa. La madre. La zia.",
-          "3": "I libri. Gli stati. Le case."
-        }
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "content": [
-          "ELISION – die Apostroph-Regel:",
-          "Vor einem Vokal lassen singuläre",
-          "Artikel ihren letzten Buchstaben weg",
-          "und fügen ein ' hinzu:                Taste 1",
-          "",
-          "   il / la / lo + Vokal → l'",
-          "      l'amico (m), l'aria (f)",
-          "      l'ora, l'uomo, l'occhio",
-          "",
-          "IM PLURAL KEINE ELISION:              Taste 2",
-          "   gli amici (NICHT gl'amici)",
-          "   le ore (NICHT l'ore)",
-          "",
-          "DAS GESCHLECHT BLEIBT WICHTIG:        Taste 3",
-          "   l'uomo (m) → un uomo, gli uomini",
-          "   l'aria (f) → un'aria, le arie",
-          "Karten zeigen Elides: true hier."
-        ],
-        "pronunciation_mappings": {
-          "1": "L'amico. L'aria. L'ora. L'uomo. L'occhio.",
-          "2": "Gli amici. Le ore.",
-          "3": "L'uomo. Un uomo. Gli uomini. L'aria. Un'aria. Le arie."
-        }
-      }
-    ]
-  },
-  {
-    "lesson_id": "003",
-    "trigger_word": "acqua",
-    "trigger_card_number": 85,
-    "title": "LEKTION 3: ESSERE, AVERE & C'È",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 3,
-        "content": [
-          "ESSERE = ‚to be‘",
-          "",
-          "Das häufigste unregelmäßige Verb.",
-          "Merken Sie sich alle sechs Formen:   Taste 1",
-          "",
-          "   io       sono     ich bin",
-          "   tu       sei      du bist",
-          "   lui/lei  è        er/sie ist",
-          "   noi      siamo    wir sind",
-          "   voi      siete    ihr seid",
-          "   loro     sono     sie sind",
-          "",
-          "VERWENDUNG:                          Taste 2",
-          "   Identität:   sono Marco",
-          "   Ort:         è a casa",
-          "   Beschreibung: è bello",
-          "   Nationalität: sono italiano"
-        ],
-        "pronunciation": "Lezione tre",
-        "pronunciation_mappings": {
-          "1": "Io sono. Tu sei. Lui è. Lei è. Noi siamo. Voi siete. Loro sono.",
-          "2": "Sono Marco. È a casa. È bello. Sono italiano."
-        }
-      },
-      {
-        "page": 2,
-        "total_pages": 3,
-        "content": [
-          "AVERE = ‚to have‘ (stummes h!):",
-          "",
-          "io       ho       ich habe         Taste 1",
-          "tu       hai      du hast          Taste 2",
-          "lui/lei  ha       er/sie hat       Taste 3",
-          "noi      abbiamo  wir haben        Taste 4",
-          "voi      avete    ihr habt         Taste 5",
-          "loro     hanno    sie haben",
-          "",
-          "Das h ist IMMER stumm. Also:",
-          "   ho = ‚oh‘    hai = ‚eye‘",
-          "   ha = ‚ah‘    hanno = ‚AHN-no‘",
-          "",
-          "Mit AVERE drückt man das ALTER aus:",
-          "   ho 30 anni = Ich bin 30",
-          "   (wörtlich: ‚Ich habe 30 Jahre‘)"
-        ],
-        "pronunciation_mappings": {
-          "1": "Io ho.",
-          "2": "Tu hai.",
-          "3": "Lui ha. Lei ha.",
-          "4": "Noi abbiamo.",
-          "5": "Voi avete."
-        }
-      },
-      {
-        "page": 3,
-        "total_pages": 3,
-        "content": [
-          "C'È / CI SONO = es gibt / es gibt",
-          "",
-          "Der italienische Existenzausdruck.",
-          "Denken Sie daran als ‚es hat dort‘:  Taste 1",
-          "",
-          "   c'è  (Einzahl) = es gibt",
-          "      c'è un libro sul tavolo",
-          "      c'è qualcuno alla porta",
-          "",
-          "   ci sono (Mehrzahl) = es gibt      Taste 2",
-          "      ci sono molti libri",
-          "      ci sono due persone",
-          "",
-          "VERNEINUNG:                          Taste 3",
-          "   non c'è / non ci sono",
-          "      non c'è tempo",
-          "      non ci sono problemi"
-        ],
-        "pronunciation_mappings": {
-          "1": "C'è un libro sul tavolo. C'è qualcuno alla porta.",
-          "2": "Ci sono molti libri. Ci sono due persone.",
-          "3": "Non c'è tempo. Non ci sono problemi."
+          "1": "Ho. Hai. Ho una cosa.",
+          "2": "Vino rosso. Parola nuova.",
+          "3": "Non capisco. Non ho."
         }
       }
     ]
   },
   {
     "lesson_id": "004",
-    "trigger_word": "fare",
-    "trigger_card_number": 186,
-    "title": "LEKTION 4: BEFEHLE IM UNTERRICHT",
+    "trigger_word": "grazie",
+    "trigger_card_number": 5,
+    "title": "LEKTION 2: GRÜSSE & FRAGEN",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "BEGRÜSSUNGEN:",
+          "",
+          "   ciao        = hallo/tschüs (locker)   Taste 1",
+          "   salve       = hallo (neutral)",
+          "   buongiorno  = guten Morgen, guten Tag",
+          "   buonasera   = guten Abend",
+          "   buonanotte  = gute Nacht",
+          "   arrivederci = auf Wiedersehen",
+          "",
+          "Im Laden sagst du buongiorno oder",
+          "buonasera beim Kommen UND beim Gehen.",
+          "",
+          "WIE GEHT'S?                              Taste 2",
+          "   come stai?  = unter Freunden (tu = du)",
+          "   come sta?   = höflich (Lei = Sie)",
+          "   sto bene, grazie. E tu?",
+          "      = mir geht's gut, danke. Und dir?"
+        ],
+        "pronunciation": "Lezione due",
+        "pronunciation_mappings": {
+          "1": "Ciao. Salve. Buongiorno. Buonasera. Buonanotte. Arrivederci.",
+          "2": "Come stai? Come sta? Sto bene, grazie. E tu?"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "DEIN NAME:                            Taste 1",
+          "   come ti chiami? = wie heißt du?",
+          "   mi chiamo Anna  = ich heiße Anna",
+          "      (wörtlich: ich nenne mich Anna)",
+          "   piacere!        = freut mich!",
+          "",
+          "HÖFLICHKEIT:                          Taste 2",
+          "   per favore = bitte",
+          "   grazie     = danke",
+          "   prego      = gern geschehen; bitte sehr",
+          "   scusa      = entschuldige, Verzeihung",
+          "",
+          "IM UNTERRICHT:                        Taste 3",
+          "   non capisco      = ich verstehe nicht",
+          "   puoi ripetere?   = kannst du das wiederholen?",
+          "   più lentamente   = langsamer",
+          "   come si dice...? = wie sagt man ...?"
+        ],
+        "pronunciation_mappings": {
+          "1": "Come ti chiami? Mi chiamo Anna. Piacere!",
+          "2": "Per favore. Grazie. Prego. Scusa.",
+          "3": "Non capisco. Puoi ripetere? Più lentamente. Come si dice?"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "FRAGEWÖRTER — eins kennst du schon:",
+          "come? = wie? (come stai?)",
+          "",
+          "   chi?    = wer?                     Taste 1",
+          "      chi è? = wer ist das?",
+          "   cosa?   = was?                     Taste 2",
+          "      cos'è? = was ist das?",
+          "   dove?   = wo?                      Taste 3",
+          "      dov'è? = wo ist es?",
+          "   quando? = wann?                    Taste 4",
+          "      quando arrivi? = wann kommst du an?",
+          "   perché? = warum? — auch „weil“     Taste 5",
+          "      perché no? = warum nicht?",
+          "   quanto? = wie viel?                Taste 6",
+          "      quanto costa? = was kostet das?"
+        ],
+        "pronunciation_mappings": {
+          "1": "Chi? Chi è?",
+          "2": "Cosa? Cos'è?",
+          "3": "Dove? Dov'è?",
+          "4": "Quando? Quando arrivi?",
+          "5": "Perché? Perché no?",
+          "6": "Quanto? Quanto costa?"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "002",
+    "trigger_word": "favore",
+    "trigger_card_number": 10,
+    "title": "LEKTION 3: ARTIKEL & ELISION",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 2,
         "content": [
-          "GRUNDLEGENDE FRAGEWÖRTER:",
+          "Der Artikel hängt vom folgenden LAUT ab,",
+          "nicht nur vom Geschlecht:",
           "",
-          "   chi?    = wer?                    Taste 1",
-          "      chi è? chi sei?",
-          "   cosa?   = was?                    Taste 2",
-          "      cosa fai? cos'è? (verkürzt)",
-          "   dove?   = wo?                     Taste 3",
-          "      dove sei? dov'è? (verkürzt)",
-          "   quando? = wann?                   Taste 4",
-          "      quando arrivi?",
-          "   come?   = wie?                    Taste 5",
-          "      come stai? come ti chiami?",
-          "   perché? = warum?                  Taste 6",
-          "      perché piangi? perché no?",
-          "   quanto? = wie viel/viele?         Taste 7",
-          "      quanto costa? quanti anni hai?"
+          "MASKULIN SINGULAR:                    Taste 1",
+          "   il = vor den meisten Konsonanten",
+          "      il libro, il padre, il caffè",
+          "   lo = vor z, gn, ps, s+Konsonant",
+          "      lo zio, lo studente, lo gnocco",
+          "FEMININ SINGULAR:                     Taste 2",
+          "   la = vor jedem Konsonanten",
+          "      la casa, la madre, la zia",
+          "PLURAL:                               Taste 3",
+          "   il → i     lo → gli     la → le",
+          "      i libri, gli zii, le case",
+          "EIN / EINE:                           Taste 4",
+          "   un (m), uno (wo lo steht), una (f)",
+          "      un libro, uno zio, una casa"
         ],
-        "pronunciation": "Lezione quattro",
+        "pronunciation": "Lezione tre",
         "pronunciation_mappings": {
-          "1": "Chi è? Chi sei?",
-          "2": "Cosa fai? Cos'è?",
-          "3": "Dove sei? Dov'è?",
-          "4": "Quando arrivi?",
-          "5": "Come stai? Come ti chiami?",
-          "6": "Perché piangi? Perché no?",
-          "7": "Quanto costa? Quanti anni hai?"
+          "1": "Il libro. Il padre. Il caffè. Lo zio. Lo studente. Lo gnocco.",
+          "2": "La casa. La madre. La zia.",
+          "3": "I libri. Gli zii. Le case.",
+          "4": "Un libro. Uno zio. Una casa."
         }
       },
       {
         "page": 2,
         "total_pages": 2,
         "content": [
-          "HÖFLICHE BITTEN & UNTERRICHT:        Taste 1",
+          "ELISION — die Apostroph-Regel:",
           "",
-          "   per favore  = bitte",
-          "   grazie      = danke",
-          "   prego       = gern geschehen",
-          "   scusa       = entschuldige",
+          "Vor einem Vokal verlieren lo und la ihren",
+          "Vokal und bekommen einen Apostroph:   Taste 1",
           "",
-          "IM UNTERRICHT:                       Taste 2",
-          "   non capisco      = ich verstehe nicht",
-          "   puoi ripetere?   = kannst du wiederholen?",
-          "   più lentamente   = langsamer",
-          "   come si dice?    = wie sagt man?",
+          "   lo / la + Vokal → l'",
+          "      l'amico (m), l'amica (f)",
+          "      l'uomo, l'ora, l'acqua",
           "",
-          "BEGRÜSSUNGEN:                        Taste 3",
-          "   ciao   = hallo/tschüs (locker)",
-          "   salve  = hallo (neutral)",
-          "   buongiorno = guten Tag",
-          "   buonasera  = guten Abend"
+          "IM PLURAL KEINE ELISION:              Taste 2",
+          "   gli amici, le amiche, le ore",
+          "",
+          "EIN / EINE vor Vokal:                 Taste 3",
+          "   un amico  (m: kein Apostroph)",
+          "   un'amica  (f: una → un')",
+          "",
+          "Die Karten färben jeden Artikel, auch l':",
+          "BLAU = maskulin, MAGENTA = feminin."
         ],
         "pronunciation_mappings": {
-          "1": "Per favore. Grazie. Prego. Scusa.",
-          "2": "Non capisco. Puoi ripetere? Più lentamente. Come si dice?",
-          "3": "Ciao. Salve. Buongiorno. Buonasera."
+          "1": "L'amico. L'amica. L'uomo. L'ora. L'acqua.",
+          "2": "Gli amici. Le amiche. Le ore.",
+          "3": "Un amico. Un'amica."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "003",
+    "trigger_word": "come",
+    "trigger_card_number": 13,
+    "title": "LEKTION 4: SEIN, HABEN & C'È",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 4,
+        "content": [
+          "ESSERE = sein                         Taste 1",
+          "",
+          "   io        sono     ich bin",
+          "   tu        sei      du bist",
+          "   lui, lei  è        er, sie ist",
+          "   Lei       è        Sie sind (höflich)",
+          "   noi       siamo    wir sind",
+          "   voi       siete    ihr seid",
+          "   loro      sono     sie sind",
+          "",
+          "io, tu, lui... sind SUBJEKTPRONOMEN.",
+          "Italienisch lässt sie meist weg: Das Verb",
+          "zeigt schon, wer gemeint ist.",
+          "   sono Marco = ich bin Marco         Taste 2",
+          "Zur Betonung oder im Gegensatz:",
+          "   io sono americano, e tu?           Taste 3"
+        ],
+        "pronunciation": "Lezione quattro",
+        "pronunciation_mappings": {
+          "1": "Io sono. Tu sei. Lui è. Lei è. Noi siamo. Voi siete. Loro sono.",
+          "2": "Sono Marco.",
+          "3": "Io sono americano, e tu?"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 4,
+        "content": [
+          "ESSERE sagt, was etwas IST:           Taste 1",
+          "   è a casa    = er ist zu Hause",
+          "   è bello     = es ist schön",
+          "   è italiano  = er ist Italiener",
+          "",
+          "STARE = sein, bleiben — fürs Befinden",
+          "und fürs Dableiben:                   Taste 2",
+          "   io   sto         noi   stiamo",
+          "   tu   stai        voi   state",
+          "   lui  sta         loro  stanno",
+          "",
+          "   sto bene   = mir geht's gut        Taste 3",
+          "   come stai? = wie geht's dir?",
+          "   sto a casa = ich bleibe zu Hause   Taste 4"
+        ],
+        "pronunciation_mappings": {
+          "1": "È a casa. È bello. È italiano.",
+          "2": "Io sto. Tu stai. Lui sta. Noi stiamo. Voi state. Loro stanno.",
+          "3": "Sto bene. Come stai?",
+          "4": "Sto a casa."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 4,
+        "content": [
+          "AVERE = haben                         Taste 1",
+          "",
+          "   io        ho        ich habe",
+          "   tu        hai       du hast",
+          "   lui, lei  ha        er, sie hat",
+          "   noi       abbiamo   wir haben",
+          "   voi       avete     ihr habt",
+          "   loro      hanno     sie haben",
+          "",
+          "Das h ist STUMM — sprich es nie:      Taste 2",
+          "   ho, hai, ha, hanno",
+          "   (hanno klingt genau wie anno, Jahr)",
+          "",
+          "AVERE, wo Deutsch oft „sein“ sagt:    Taste 3",
+          "   ho fame    = ich habe Hunger",
+          "   ho freddo  = mir ist kalt",
+          "   ho 30 anni = ich bin 30",
+          "      (wörtlich: ich habe 30 Jahre)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Io ho. Tu hai. Lui ha. Lei ha. Noi abbiamo. Voi avete. Loro hanno.",
+          "2": "Ho. Hai. Ha. Hanno. Anno.",
+          "3": "Ho fame. Ho freddo. Ho trent'anni."
+        }
+      },
+      {
+        "page": 4,
+        "total_pages": 4,
+        "content": [
+          "C'È / CI SONO = es gibt (da ist / sind)",
+          "",
+          "Wieder ESSERE: ci (da) + è (ist)",
+          "→ c'è. Plural: ci + sono.",
+          "",
+          "   c'è un bar qui?                    Taste 1",
+          "      = gibt es hier eine Bar?",
+          "   ci sono due bar                    Taste 2",
+          "      = es gibt zwei Bars",
+          "",
+          "VERNEINT — non kommt zuerst:          Taste 3",
+          "   non c'è tempo = es ist keine Zeit",
+          "   non ci sono problemi",
+          "      = es gibt keine Probleme",
+          "",
+          "Und für „ist er da?“:                 Taste 4",
+          "   c'è Marco? = ist Marco da?"
+        ],
+        "pronunciation_mappings": {
+          "1": "C'è un bar qui?",
+          "2": "Ci sono due bar.",
+          "3": "Non c'è tempo. Non ci sono problemi.",
+          "4": "C'è Marco?"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "009",
+    "trigger_word": "uno",
+    "trigger_card_number": 23,
+    "title": "LEKTION 5: ZAHLEN, DATUM, UHRZEIT",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 4,
+        "content": [
+          "ZAHLEN 0–10:                          Taste 1",
+          "   0 zero      4 quattro    8 otto",
+          "   1 uno       5 cinque     9 nove",
+          "   2 due       6 sei       10 dieci",
+          "   3 tre       7 sette",
+          "",
+          "ZAHLEN 11–20:                         Taste 2",
+          "   11 undici       16 sedici",
+          "   12 dodici       17 diciassette",
+          "   13 tredici      18 diciotto",
+          "   14 quattordici  19 diciannove",
+          "   15 quindici     20 venti",
+          "",
+          "11–16 enden auf -dici, 17–19 beginnen mit dici-.",
+          "",
+          "Vor dem Nomen wird uno zu un / una:   Taste 3",
+          "   un caffè, una pizza",
+          "   due caffè, tre pizze"
+        ],
+        "pronunciation": "Lezione cinque",
+        "pronunciation_mappings": {
+          "1": "Zero. Uno. Due. Tre. Quattro. Cinque. Sei. Sette. Otto. Nove. Dieci.",
+          "2": "Undici. Dodici. Tredici. Quattordici. Quindici. Sedici. Diciassette. Diciotto. Diciannove. Venti.",
+          "3": "Un caffè. Una pizza. Due caffè. Tre pizze."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 4,
+        "content": [
+          "ZEHNER:                               Taste 1",
+          "   20 venti       60 sessanta",
+          "   30 trenta      70 settanta",
+          "   40 quaranta    80 ottanta",
+          "   50 cinquanta   90 novanta",
+          "   100 cento      1000 mille",
+          "",
+          "IN EIN WORT, die Zehner zuerst:       Taste 2",
+          "   21 ventuno, 28 ventotto",
+          "      (der Vokal fällt vor uno, otto weg)",
+          "   23 ventitré (mit Akzent geschrieben)",
+          "   200 duecento, 2000 duemila",
+          "      (mille → mila im Plural)",
+          "",
+          "ERSTER BIS ZEHNTER:                   Taste 3",
+          "   primo, secondo, terzo, quarto, quinto,",
+          "   sesto, settimo, ottavo, nono, decimo"
+        ],
+        "pronunciation_mappings": {
+          "1": "Venti. Trenta. Quaranta. Cinquanta. Sessanta. Settanta. Ottanta. Novanta. Cento. Mille.",
+          "2": "Ventuno. Ventotto. Ventitré. Duecento. Duemila.",
+          "3": "Primo. Secondo. Terzo. Quarto. Quinto. Sesto. Settimo. Ottavo. Nono. Decimo."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 4,
+        "content": [
+          "WOCHENTAGE — klein geschrieben:       Taste 1",
+          "   lunedì, martedì, mercoledì, giovedì,",
+          "   venerdì, sabato, domenica",
+          "   (-dì heißt Tag: Akzent mitschreiben)",
+          "",
+          "   lunedì    = am Montag (diesen)     Taste 2",
+          "   il lunedì = montags (jede Woche)",
+          "",
+          "MONATE — auch klein:                  Taste 3",
+          "   gennaio, febbraio, marzo, aprile,",
+          "   maggio, giugno, luglio, agosto,",
+          "   settembre, ottobre, novembre, dicembre",
+          "",
+          "DATUM — il + Zahl + Monat:            Taste 4",
+          "   il 15 agosto = 15. August (Grundzahl)",
+          "   il primo maggio = 1. Mai (Ordnungszahl)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Lunedì. Martedì. Mercoledì. Giovedì. Venerdì. Sabato. Domenica.",
+          "2": "Lunedì. Il lunedì.",
+          "3": "Gennaio. Febbraio. Marzo. Aprile. Maggio. Giugno. Luglio. Agosto. Settembre. Ottobre. Novembre. Dicembre.",
+          "4": "Il quindici agosto. Il primo maggio."
+        }
+      },
+      {
+        "page": 4,
+        "total_pages": 4,
+        "content": [
+          "WIE SPÄT IST ES? — che ora è?         Taste 1",
+          "   è l'una      = es ist ein Uhr",
+          "   sono le due  = es ist zwei Uhr",
+          "   sono le otto = es ist acht Uhr",
+          "   (una nimmt è, alle anderen sono)",
+          "",
+          "MINUTEN — e (und), meno (weniger):    Taste 2",
+          "   sono le due e dieci = 2:10",
+          "   sono le due e un quarto = 2:15",
+          "   sono le due e mezzo = 2:30 (halb drei)",
+          "   sono le tre meno un quarto = 2:45",
+          "",
+          "UM WIE VIEL UHR? — a che ora?         Taste 3",
+          "   all'una = um eins",
+          "   alle otto = um acht",
+          "   alle otto di sera = um 8 Uhr abends",
+          "   (a + le = alle: gleich mehr dazu)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Che ora è? È l'una. Sono le due. Sono le otto.",
+          "2": "Sono le due e dieci. Sono le due e un quarto. Sono le due e mezzo. Sono le tre meno un quarto.",
+          "3": "A che ora? All'una. Alle otto. Alle otto di sera."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "006",
+    "trigger_word": "di",
+    "trigger_card_number": 46,
+    "title": "LEKTION 6: PRÄPOSITION + ARTIKEL",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "di, a, da, in und su VERSCHMELZEN mit dem",
+          "Artikel zu einem Wort, wie „in dem“ → „im“:",
+          "",
+          "DIE VERSCHMOLZENEN FORMEN:            Taste 1",
+          "       il    lo     la     i    gli    le",
+          "di:    del   dello  della  dei  degli  delle",
+          "a:     al    allo   alla   ai   agli   alle",
+          "da:    dal   dallo  dalla  dai  dagli  dalle",
+          "in:    nel   nello  nella  nei  negli  nelle",
+          "su:    sul   sullo  sulla  sui  sugli  sulle",
+          "",
+          "VOR VOKAL die l'-Formen:              Taste 2",
+          "   dell'  all'  dall'  nell'  sull'",
+          "   dell'acqua, all'una, nell'aria",
+          "",
+          "con und per bleiben getrennt:         Taste 3",
+          "   con il pane, per la mamma"
+        ],
+        "pronunciation": "Lezione sei",
+        "pronunciation_mappings": {
+          "1": "Del. Dello. Della. Dei. Degli. Delle. Al. Allo. Alla. Ai. Agli. Alle. Dal. Dallo. Dalla. Dai. Dagli. Dalle. Nel. Nello. Nella. Nei. Negli. Nelle. Sul. Sullo. Sulla. Sui. Sugli. Sulle.",
+          "2": "Dell'acqua. All'una. Nell'aria.",
+          "3": "Con il pane. Per la mamma."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "MIT DEM ARTIKEL — sie verschmelzen:   Taste 1",
+          "   vado alla stazione  (a + la)",
+          "   il libro del padre  (di + il)",
+          "   vengo dal bar       (da + il)",
+          "   è sul tavolo        (su + il)",
+          "   (vado = ich gehe, vengo = ich komme)",
+          "",
+          "ABER KEIN ARTIKEL in diesen Fällen:   Taste 2",
+          "   a casa, a scuola, a letto,",
+          "   in chiesa, in centro, in Italia",
+          "",
+          "MIT un / una — keine Verschmelzung:   Taste 3",
+          "   vado a una festa",
+          "   il libro di un amico",
+          "",
+          "ETWAS / EINIGE — di + Artikel:        Taste 4",
+          "   del pane  = etwas Brot",
+          "   dei libri = einige Bücher"
+        ],
+        "pronunciation_mappings": {
+          "1": "Vado alla stazione. Il libro del padre. Vengo dal bar. È sul tavolo.",
+          "2": "A casa. A scuola. A letto. In chiesa. In centro. In Italia.",
+          "3": "Vado a una festa. Il libro di un amico.",
+          "4": "Del pane. Dei libri."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "050",
+    "trigger_word": "mio",
+    "trigger_card_number": 63,
+    "title": "LEKTION 7: POSSESSIVA & FAMILIE",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "MEIN, DEIN, SEIN... richten sich nach",
+          "der SACHE, nicht nach dem Besitzer:   Taste 1",
+          "",
+          "            m        f        m pl     f pl",
+          "   mein     mio      mia      miei     mie",
+          "   dein     tuo      tua      tuoi     tue",
+          "   sein/ihr suo      sua      suoi     sue",
+          "   unser    nostro   nostra   nostri   nostre",
+          "   euer     vostro   vostra   vostri   vostre",
+          "   ihr pl   loro     loro     loro     loro",
+          "",
+          "Sie stehen MIT Artikel:               Taste 2",
+          "   il mio libro, la mia casa,",
+          "   i miei amici, le mie amiche",
+          "",
+          "suo richtet sich nach der SACHE:      Taste 3",
+          "   il suo libro = sein Buch, ihr Buch",
+          "   la sua casa  = sein Haus, ihr Haus"
+        ],
+        "pronunciation": "Lezione sette",
+        "pronunciation_mappings": {
+          "1": "Mio. Mia. Miei. Mie. Tuo. Tua. Tuoi. Tue. Suo. Sua. Suoi. Sue. Nostro. Nostra. Nostri. Nostre. Vostro. Vostra. Vostri. Vostre. Loro.",
+          "2": "Il mio libro. La mia casa. I miei amici. Le mie amiche.",
+          "3": "Il suo libro. La sua casa."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "DIE FAMILIENREGEL:",
+          "",
+          "Verwandte im Singular: KEIN Artikel   Taste 1",
+          "   mio padre, mia madre, tuo fratello,",
+          "   sua sorella, mio marito, mia moglie",
+          "",
+          "Der Artikel KOMMT ZURÜCK bei:",
+          "   Plural:       i miei fratelli      Taste 2",
+          "   Adjektiv:     il mio caro padre",
+          "   loro:         il loro figlio",
+          "   mamma, papà:  meist la mia mamma,",
+          "                 il mio papà",
+          "",
+          "Nicht verwandt? Artikel wie immer:    Taste 3",
+          "   la mia famiglia, il mio amico,",
+          "   la mia casa",
+          "   (famiglia ist die Gruppe, keine Person)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Mio padre. Mia madre. Tuo fratello. Sua sorella. Mio marito. Mia moglie.",
+          "2": "I miei fratelli. Il mio caro padre. Il loro figlio. La mia mamma. Il mio papà.",
+          "3": "La mia famiglia. Il mio amico. La mia casa."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "QUESTO = dieser — vier Formen:        Taste 1",
+          "   questo libro, questa casa,",
+          "   questi libri, queste case",
+          "   quest'anno = dieses Jahr (vor Vokal)",
+          "",
+          "QUELLO = jener, der da — es ändert sich",
+          "wie der Artikel des Nomens:           Taste 2",
+          "   quel libro     (il libro)",
+          "   quello zio     (lo zio)",
+          "   quella casa    (la casa)",
+          "   quell'amico    (l'amico)",
+          "   quei libri     (i libri)",
+          "   quegli amici   (gli amici)",
+          "   quelle case    (le case)",
+          "",
+          "Allein steht quello: quello è mio!    Taste 3",
+          "   = das da ist meins!"
+        ],
+        "pronunciation_mappings": {
+          "1": "Questo libro. Questa casa. Questi libri. Queste case. Quest'anno.",
+          "2": "Quel libro. Quello zio. Quella casa. Quell'amico. Quei libri. Quegli amici. Quelle case.",
+          "3": "Quello è mio!"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "005",
+    "trigger_word": "fare",
+    "trigger_card_number": 69,
+    "title": "LEKTION 8: VERBEN & KONGRUENZ",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "PRÄSENS: -are, -ere oder -ire streichen",
+          "und die Endung der Person anhängen:",
+          "",
+          "-ARE  parlare (sprechen)              Taste 1",
+          "   io       parlo      noi      parliamo",
+          "   tu       parli      voi      parlate",
+          "   lui/lei  parla      loro     parlano",
+          "",
+          "-ERE  vedere (sehen)                  Taste 2",
+          "   io       vedo       noi      vediamo",
+          "   tu       vedi       voi      vedete",
+          "   lui/lei  vede       loro     vedono",
+          "",
+          "-IRE  partire (abfahren)              Taste 3",
+          "   io       parto      noi      partiamo",
+          "   tu       parti      voi      partite",
+          "   lui/lei  parte      loro     partono"
+        ],
+        "pronunciation": "Lezione otto",
+        "pronunciation_mappings": {
+          "1": "Io parlo. Tu parli. Lui parla. Noi parliamo. Voi parlate. Loro parlano.",
+          "2": "Io vedo. Tu vedi. Lui vede. Noi vediamo. Voi vedete. Loro vedono.",
+          "3": "Io parto. Tu parti. Lui parte. Noi partiamo. Voi partite. Loro partono."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "Viele -IRE-Verben fügen -ISC- ein:    Taste 1",
+          "   capire (verstehen), finire (beenden)",
+          "   io       capisco    noi      capiamo",
+          "   tu       capisci    voi      capite",
+          "   lui/lei  capisce    loro     capiscono",
+          "   (noi und voi ohne -isc-)",
+          "",
+          "FARE (tun, machen) ist unregelmäßig:  Taste 2",
+          "   io       faccio     noi      facciamo",
+          "   tu       fai        voi      fate",
+          "   lui/lei  fa         loro     fanno",
+          "   fa caldo = es ist heiß (Wetter)",
+          "",
+          "LORO behält die Betonung von IO:      Taste 3",
+          "   PARlo → PARlano",
+          "   caPIsco → caPIscono"
+        ],
+        "pronunciation_mappings": {
+          "1": "Io capisco. Tu capisci. Lui capisce. Noi capiamo. Voi capite. Loro capiscono.",
+          "2": "Io faccio. Tu fai. Lui fa. Noi facciamo. Voi fate. Loro fanno. Fa caldo.",
+          "3": "Parlo. Parlano. Capisco. Capiscono."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "Adjektive PASSEN SICH ihrem Nomen AN:",
+          "",
+          "-O-ADJEKTIVE — vier Formen:           Taste 1",
+          "   il libro nuovo    la casa nuova",
+          "   i libri nuovi     le case nuove",
+          "",
+          "-E-ADJEKTIVE — zwei Formen:           Taste 2",
+          "   il libro grande   la casa grande",
+          "   i libri grandi    le case grandi",
+          "",
+          "STELLUNG: meist NACH dem Nomen. Ein paar",
+          "kurze, häufige stehen DAVOR: bello,",
+          "buono, grande, piccolo, vecchio.",
+          "",
+          "Vor dem Nomen KÜRZEN sich manche:     Taste 3",
+          "   un buon caffè   (buono → buon, wie un)",
+          "   un bel ricordo  (bello → bel, wie quel)",
+          "   buon + giorno = buongiorno!"
+        ],
+        "pronunciation_mappings": {
+          "1": "Il libro nuovo. La casa nuova. I libri nuovi. Le case nuove.",
+          "2": "Il libro grande. La casa grande. I libri grandi. Le case grandi.",
+          "3": "Un buon caffè. Un bel ricordo. Buongiorno!"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "051",
+    "trigger_word": "potere",
+    "trigger_card_number": 70,
+    "title": "LEKTION 9: VOLERE, POTERE, DOVERE",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "Drei Verben, die ein zweites Verb steuern:",
+          "",
+          "VOLERE = wollen                       Taste 1",
+          "   io       voglio     noi      vogliamo",
+          "   tu       vuoi       voi      volete",
+          "   lui/lei  vuole      loro     vogliono",
+          "",
+          "POTERE = können, dürfen               Taste 2",
+          "   io       posso      noi      possiamo",
+          "   tu       puoi       voi      potete",
+          "   lui/lei  può        loro     possono",
+          "",
+          "DOVERE = müssen                       Taste 3",
+          "   io       devo       noi      dobbiamo",
+          "   tu       devi       voi      dovete",
+          "   lui/lei  deve       loro     devono"
+        ],
+        "pronunciation": "Lezione nove",
+        "pronunciation_mappings": {
+          "1": "Io voglio. Tu vuoi. Lui vuole. Noi vogliamo. Voi volete. Loro vogliono.",
+          "2": "Io posso. Tu puoi. Lui può. Noi possiamo. Voi potete. Loro possono.",
+          "3": "Io devo. Tu devi. Lui deve. Noi dobbiamo. Voi dovete. Loro devono."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "Danach der INFINITIV (die -re-Form):  Taste 1",
+          "   voglio mangiare  = ich will essen",
+          "   posso entrare?   = darf ich reinkommen?",
+          "   devo lavorare    = ich muss arbeiten",
+          "   non posso venire = ich kann nicht kommen",
+          "",
+          "VORREI = ich möchte — die höfliche    Taste 2",
+          "Form in Bar und Laden, statt voglio:",
+          "   vorrei un caffè, per favore",
+          "   vorrei pagare = ich möchte zahlen",
+          "",
+          "SAPERE + Infinitiv = etwas können:    Taste 3",
+          "   so, sai, sa, sappiamo, sapete, sanno",
+          "   so nuotare = ich kann schwimmen (gelernt)",
+          "   ABER posso nuotare? = darf ich schwimmen?"
+        ],
+        "pronunciation_mappings": {
+          "1": "Voglio mangiare. Posso entrare? Devo lavorare. Non posso venire.",
+          "2": "Vorrei un caffè, per favore. Vorrei pagare.",
+          "3": "So. Sai. Sa. Sappiamo. Sapete. Sanno. So nuotare. Posso nuotare?"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "007",
+    "trigger_word": "signore",
+    "trigger_card_number": 126,
+    "title": "LEKTION 10: GENUS UND PLURAL",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "Nomen sind maskulin oder feminin. Die",
+          "Endung verrät meist, welches von beiden:",
+          "",
+          "REGELMÄSSIGE MUSTER:                  Taste 1",
+          "   -o → maskulin    il libro → i libri",
+          "   -a → feminin     la casa  → le case",
+          "   -e → beides      il padre → i padri",
+          "                    la madre → le madri",
+          "",
+          "-E-NOMEN: manche Endungen helfen      Taste 2",
+          "   -ore  → maskulin: il signore,",
+          "           il dottore, il colore",
+          "   -ione → feminin: la lezione,",
+          "           la stazione",
+          "",
+          "Sonst: lerne den Artikel gleich mit."
+        ],
+        "pronunciation": "Lezione dieci",
+        "pronunciation_mappings": {
+          "1": "Il libro. I libri. La casa. Le case. Il padre. I padri. La madre. Le madri.",
+          "2": "Il signore. Il dottore. Il colore. La lezione. La stazione."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "SCHREIBUNG im Plural:",
+          "",
+          "-ca, -ga, -go: der Laut bleibt hart:  Taste 1",
+          "   amica → amiche, riga → righe,",
+          "   lago → laghi",
+          "",
+          "-co: achte auf die BETONUNG:          Taste 2",
+          "   auf der vorletzten Silbe → -chi",
+          "      parco → parchi, tedesco → tedeschi",
+          "   weiter vorn im Wort → -ci",
+          "      medico → medici, unico → unici",
+          "   ABER amico → amici: merken!",
+          "",
+          "-io → -i (kein doppeltes i):          Taste 3",
+          "   figlio → figli, negozio → negozi,",
+          "   bacio → baci, occhio → occhi",
+          "   (zio → zii: dort ist das i betont)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Amica. Amiche. Riga. Righe. Lago. Laghi.",
+          "2": "Parco. Parchi. Tedesco. Tedeschi. Medico. Medici. Unico. Unici. Amico. Amici.",
+          "3": "Figlio. Figli. Negozio. Negozi. Bacio. Baci. Occhio. Occhi. Zio. Zii."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "MASKULIN trotz -a (griechisch):       Taste 1",
+          "   il problema, il sistema, il tema,",
+          "   il programma, il pianeta",
+          "FEMININ trotz -o:                     Taste 2",
+          "   la mano; la foto, la moto — kurz",
+          "   für la fotografia, la motocicletta",
+          "",
+          "KEIN WECHSEL im Plural:               Taste 3",
+          "   la città → le città   (Betonung auf -tà)",
+          "   il caffè → i caffè    (Betonung auf -è)",
+          "   la foto → le foto     (Kurzform)",
+          "   il bar → i bar        (Fremdwort)",
+          "   il film → i film      (Fremdwort)",
+          "",
+          "UNREGELMÄSSIGE PLURALE:               Taste 4",
+          "   l'uomo → gli uomini",
+          "   la mano → le mani",
+          "   il braccio → le braccia (feminin!)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Il problema. Il sistema. Il tema. Il programma. Il pianeta.",
+          "2": "La mano. La foto. La moto. La fotografia. La motocicletta.",
+          "3": "La città. Le città. Il caffè. I caffè. La foto. Le foto. Il bar. I bar. Il film. I film.",
+          "4": "L'uomo. Gli uomini. La mano. Le mani. Il braccio. Le braccia."
         }
       }
     ]

@@ -18,10 +18,10 @@
           "Neutro:                   das  →  des",
           "Plural:                   die  →  der",
           "",
-          "Masc./neutro añaden -(e)s: des Mann(es)",
-          "",
+          "Masc./neutro añaden -(e)s: des Mann(e)s",
+          "Algunos masc. añaden -(e)n: des Hasen",
           "das Auto des Mannes (el auto del hombre)",
-          "das Buch des Kindes (el libro del niño)",
+          "die Ohren des Hasen (las orejas de la liebre)",
           "",
           "PREPOSICIONES CON GENITIVO:",
           "wegen (por causa de), trotz (a pesar de)",
@@ -34,10 +34,142 @@
     ]
   },
   {
+    "lesson_id": "034",
+    "trigger_word": "Huhn",
+    "trigger_card_number": 32,
+    "title": "LECCIÓN 34: ORACIONES DE RELATIVO",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "Las oraciones relativas añaden info:",
+          "",
+          "ESPAÑOL: El amigo QUE me ayuda...",
+          "ALEMÁN:  Der Freund, der mir hilft...",
+          "",
+          "Usa der/die/das como 'que, quien, el cual':",
+          "der - masculino (Der Freund, der...)",
+          "die - femenino (Die Freundin, die...)",
+          "das - neutro (Das Kind, das...)",
+          "die - plural (Die Freunde, die...)",
+          "",
+          "Si es el OBJETO, el masculino usa 'den':",
+          "",
+          "Der Mann, den ich sehe, ist mein Lehrer.",
+          "(El hombre que veo es mi profesor)",
+          "",
+          "La oración de relativo empieza tras la coma.",
+          "Su verbo va en la posición FINAL."
+        ],
+        "pronunciation": "Lektion 34"
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "PREPOSICIÓN + PRONOMBRE RELATIVO:",
+          "",
+          "La preposición va PRIMERO. El pronombre",
+          "toma el género y el número del sustantivo,",
+          "y el caso de la preposición:",
+          "",
+          "DAT: dem (m), der (f), dem (n), DENEN (pl)",
+          "AKK: den (m), die (f), das (n), die (pl)",
+          "",
+          "die Milch, aus der man Butter macht",
+          "(la leche de la que se hace mantequilla)",
+          "die Finger, mit denen wir Dinge greifen",
+          "(los dedos con los que agarramos cosas)",
+          "der Freund, für den ich koche",
+          "(el amigo para el que cocino)",
+          "",
+          "Como en español, la preposición va siempre",
+          "delante del pronombre, nunca al final."
+        ]
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "CUYO: dessen (masc./neutro), deren (fem./pl.)",
+          "",
+          "Der Mann, dessen Auto hier steht...",
+          "(El hombre cuyo auto está aquí...)",
+          "Die Frau, deren Sohn ich kenne...",
+          "(La mujer cuyo hijo conozco...)",
+          "Die Leute, deren Haus wir mieten...",
+          "(La gente cuya casa rentamos...)",
+          "",
+          "dessen/deren concuerdan con el POSEEDOR (der",
+          "Mann, die Frau), no con lo poseído (der Sohn).",
+          "El sustantivo que sigue va sin artículo."
+        ]
+      }
+    ]
+  },
+  {
     "lesson_id": "035",
+    "trigger_word": "Maus",
+    "trigger_card_number": 38,
+    "title": "LECCIÓN 35: INFINITIVO CON ZU",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "El alemán usa mucho ZU con el infinitivo:",
+          "",
+          "ESTRUCTURA BÁSICA: verbo + ZU + infinitivo",
+          "Ich versuche zu schlafen. (Intento dormir)",
+          "Es macht Spaß zu tanzen. (Es divertido bailar)",
+          "Ich habe keine Zeit zu kochen.",
+          "(No tengo tiempo para cocinar)",
+          "",
+          "VERBOS SEPARABLES: ZU va ENTRE prefijo y verbo:",
+          "aufzustehen (levantarse)",
+          "anzukommen (llegar)",
+          "",
+          "Ich habe vergessen, das Licht auszumachen.",
+          "(Olvidé apagar la luz)",
+          "",
+          "¡NADA de ZU con verbos modales ni lassen!"
+        ],
+        "pronunciation": "Lektion 35"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "UM ... ZU = PARA (finalidad):",
+          "",
+          "'um' abre la frase y 'zu' + infinitivo la",
+          "cierra. Ambas partes tienen el MISMO sujeto.",
+          "",
+          "Die Maus kommt heraus, um Essen zu suchen.",
+          "(El ratón sale para buscar comida)",
+          "Ich stelle den Wecker, um früh aufzustehen.",
+          "(Pongo el despertador para madrugar)",
+          "",
+          "OHNE ... ZU = sin + infinitivo:",
+          "Er geht, ohne etwas zu sagen.",
+          "(Se va sin decir nada)",
+          "STATT ... ZU = en vez de + infinitivo:",
+          "Sie spielt, statt zu lernen.",
+          "(Ella juega en vez de estudiar)",
+          "",
+          "um/ohne/statt ... zu llevan siempre coma."
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": "036",
     "trigger_word": "schicken",
     "trigger_card_number": 130,
-    "title": "LECCIÓN 35: LA VOZ PASIVA",
+    "title": "LECCIÓN 36: LA VOZ PASIVA",
     "header_color": "cyan",
     "pages": [
       {
@@ -61,7 +193,7 @@
           "Estas son las formas pasivas más comunes.",
           "Muy usadas en alemán formal o de negocios."
         ],
-        "pronunciation": "Lektion 35"
+        "pronunciation": "Lektion 36"
       },
       {
         "page": 2,
@@ -88,10 +220,10 @@
     ]
   },
   {
-    "lesson_id": "040",
+    "lesson_id": "037",
     "trigger_word": "herauf",
     "trigger_card_number": 169,
-    "title": "LECCIÓN 40: ADVERBIOS HIN Y HER",
+    "title": "LECCIÓN 37: ADVERBIOS HIN Y HER",
     "header_color": "cyan",
     "pages": [
       {
@@ -106,18 +238,18 @@
           "Komm her! (¡Ven acá!)",
           "",
           "COMBINADOS CON ADVERBIOS:",
-          "hierhin = hacia acá   hierher = hacia acá",
-          "dorthin = hacia allá  dorther = desde allá",
-          "wohin = adónde        woher = de dónde",
+          "hierhin = a este sitio  hierher = hacia mí",
+          "dorthin = hacia allá    dorther = desde allá",
+          "wohin = adónde          woher = de dónde",
           "",
           "COMBINADOS CON PREPOSICIONES:",
           "hinaus/heraus = afuera hinein/herein = adentro",
           "hinauf/herauf = arriba hinunter/herunter = abajo",
-          "",
+          "Al hablar: rein, raus, rauf, runter (hin y her)",
           "Komm herein! (¡Entra! - hacia el hablante)",
           "Geh hinaus! (¡Sal! - lejos del hablante)"
         ],
-        "pronunciation": "Lektion 40"
+        "pronunciation": "Lektion 37"
       }
     ]
   }

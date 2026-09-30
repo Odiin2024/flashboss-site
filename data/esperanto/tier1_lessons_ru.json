@@ -1,413 +1,1069 @@
 [
-  {
-    "lesson_id": "001",
-    "trigger_word": "saluton",
-    "header_color": "green",
-    "title": "УРОК 1: ЗВУКИ ЭСПЕРАНТО",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
-        "pronunciation": "Leciono unu",
-        "pronunciation_speed": 1.4,
-        "pronunciation_mappings": {
-          "1": "amiko, tablo, kato",
-          "2": "espero, bela, tre",
-          "3": "iri, amiko, mi",
-          "4": "oro, nova, horo",
-          "5": "urbo, kultur, nu"
-        },
-        "content": [
-          "Произношение в эсперанто — регулярное.",
-          "Это значит, что каждая буква всегда",
-          "даёт один и тот же звук. Вот гласные:",
-          "",
-          "«A» как в «мама»:             Нажми 1",
-          "   amiko, tablo, kato",
-          "",
-          "«E» как в «эхо»:              Нажми 2",
-          "   espero, bela, tre",
-          "",
-          "«I» как в «мир»:              Нажми 3",
-          "   iri, amiko, mi",
-          "",
-          "«O» как в «море»:             Нажми 4",
-          "   oro, nova, horo",
-          "",
-          "«U» как в «руль»:             Нажми 5",
-          "   urbo, kultur, nu"
+    {
+        "lesson_id": "001",
+        "trigger_word": "saluton",
+        "title": "УРОК 1: ЗВУКИ ЭСПЕРАНТО",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 3,
+                "content": [
+                    "Произношение в эсперанто регулярное:",
+                    "каждая буква всегда звучит одинаково.",
+                    "Вот пять гласных:",
+                    "",
+                    "«A» как в «мама»:                      Нажми 1",
+                    "   amiko, tablo, kato",
+                    "",
+                    "«E» как в «эхо»:                       Нажми 2",
+                    "   espero, bela, tre",
+                    "",
+                    "«I» как в «мир»:                       Нажми 3",
+                    "   iri, amiko, mi",
+                    "",
+                    "«O» как в «море»:                      Нажми 4",
+                    "   oro, nova, horo",
+                    "",
+                    "«U» как в «руль»:                      Нажми 5",
+                    "   urbo, kulturo, nu"
+                ],
+                "pronunciation": "Leciono unu",
+                "pronunciation_mappings": {
+                    "1": "Amiko. Tablo. Kato.",
+                    "2": "Espero. Bela. Tre.",
+                    "3": "Iri. Amiko. Mi.",
+                    "4": "Oro. Nova. Horo.",
+                    "5": "Urbo. Kulturo. Nu."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 3,
+                "content": [
+                    "Некоторые согласные имеют диакритику.",
+                    "Выглядит сложно, но стоит выучить —",
+                    "и всё станет проще!",
+                    "",
+                    "Ĉ = «ч» как в «час»:                   Нажми 1",
+                    "   ĉambro, ĉokolado, ĉefo",
+                    "",
+                    "Ĝ = «дж» как в «джинсы»:               Нажми 2",
+                    "   ĝardeno, oranĝo, ĝojo",
+                    "",
+                    "Ĵ = «ж» как в «журнал»:                Нажми 3",
+                    "   ĵurnalo, ĵaŭdo, ĵazo",
+                    "",
+                    "Ŝ = «ш» как в «шапка»:                 Нажми 4",
+                    "   ŝipo, fiŝo, ŝranko",
+                    "",
+                    "Ŭ = краткое «у», как в «ау» (aŭ):      Нажми 5",
+                    "   aŭ → aŭto   eŭ → Eŭropo"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Ĉambro. Ĉokolado. Ĉefo.",
+                    "2": "Ĝardeno. Oranĝo. Ĝojo.",
+                    "3": "Ĵurnalo. Ĵaŭdo. Ĵazo.",
+                    "4": "Ŝipo. Fiŝo. Ŝranko.",
+                    "5": "Aŭ. Aŭto. Eŭropo."
+                }
+            },
+            {
+                "page": 3,
+                "total_pages": 3,
+                "content": [
+                    "ЕЩЁ НЕСКОЛЬКО ВАЖНЫХ БУКВ:",
+                    "",
+                    "C = «ц» как в «цирк»:                  Нажми 1",
+                    "   cent, certa, facila",
+                    "",
+                    "J = «й» как в «йод»:                   Нажми 2",
+                    "   jes, jam, jaro",
+                    "",
+                    "G = всегда «г», как в «гора»:          Нажми 3",
+                    "   granda, legi, grava",
+                    "",
+                    "Ĥ = «х» как в «хор» (редко):           Нажми 4",
+                    "   ĥoro, eĥo",
+                    "",
+                    "УДАРЕНИЕ: всегда на предпоследний",
+                    "слог. Считай каждую гласную:           Нажми 5",
+                    "   a-MI-ko, fa-CI-la, es-pe-RAN-to",
+                    "   fa-mi-LI-o"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Cent. Certa. Facila.",
+                    "2": "Jes. Jam. Jaro.",
+                    "3": "Granda. Legi. Grava.",
+                    "4": "Ĥoro. Eĥo.",
+                    "5": "Amiko. Facila. Esperanto. Familio."
+                }
+            }
         ]
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "pronunciation_speed": 1.4,
-        "pronunciation_mappings": {
-          "1": "ĉambro, ĉokolado, ĉefo",
-          "2": "ĝardeno, oranĝo, ĝojo",
-          "3": "ĵurnalo, ĵaŭdo, ĵazo",
-          "4": "ŝipo, fiŝo, ŝranko",
-          "5": "aŭ, aŭto, eŭ, Eŭropo"
-        },
-        "content": [
-          "Некоторые согласные имеют диакритику.",
-          "Выглядит сложно, но стоит выучить —",
-          "и всё станет проще!",
-          "",
-          "Ĉ = «ч» как в «час»:          Нажми 1",
-          "   ĉambro, ĉokolado, ĉefo",
-          "",
-          "Ĝ = «дж» как в «джинсы»:      Нажми 2",
-          "   ĝardeno, oranĝo, ĝojo",
-          "",
-          "Ĵ = «ж» как в «журнал»:       Нажми 3",
-          "   ĵurnalo, ĵaŭdo, ĵazo",
-          "",
-          "Ŝ = «ш» как в «шоп»:          Нажми 4",
-          "   ŝipo, fiŝo, ŝranko",
-          "",
-          "Ŭ = «ў» как в «дью»:          Нажми 5",
-          "   aŭ → aŭto   eŭ → Eŭropo"
+    },
+    {
+        "lesson_id": "002",
+        "trigger_word": "estas",
+        "title": "УРОК 2: НАСТОЯЩЕЕ ВРЕМЯ",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "В эсперанто настоящее время — простое:",
+                    "ВСЕ глаголы — на -as, кто бы ни действовал.",
+                    "",
+                    "ПРИМЕРЫ С 'ESTI' (быть):               Нажми 1",
+                    "",
+                    "mi estas      = я есть",
+                    "vi estas      = ты есть / вы есть",
+                    "li estas      = он есть",
+                    "ŝi estas      = она есть",
+                    "ni estas      = мы есть",
+                    "ili estas     = они есть",
+                    "",
+                    "ПРИМЕРЫ С 'PAROLI' (говорить):         Нажми 2",
+                    "mi parolas    = я говорю",
+                    "vi parolas    = ты говоришь",
+                    "li parolas    = он говорит",
+                    "",
+                    "Глагол НИКОГДА не меняется: одна форма!"
+                ],
+                "pronunciation": "Leciono du",
+                "pronunciation_mappings": {
+                    "1": "Mi estas. Vi estas. Li estas. Ŝi estas. Ni estas. Ili estas.",
+                    "2": "Mi parolas. Vi parolas. Li parolas."
+                }
+            }
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "002",
-    "trigger_word": "estas",
-    "header_color": "green",
-    "title": "УРОК 2: НАСТОЯЩЕЕ ВРЕМЯ",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono du",
-        "content": [
-          "В эсперанто настоящее время очень простое:",
-          "ВСЕ глаголы оканчиваются на -as, независимо",
-          "от того, кто совершает действие.",
-          "",
-          "ПРИМЕРЫ С ГЛАГОЛОМ 'ESTI' (быть):",
-          "",
-          "mi estas      = я есть",
-          "vi estas      = ты есть",
-          "li estas      = он есть",
-          "ŝi estas      = она есть",
-          "ni estas      = мы есть",
-          "ili estas     = они есть",
-          "ПРИМЕРЫ С ГЛАГОЛОМ 'PAROLI' (говорить):",
-          "mi parolas    = я говорю",
-          "vi parolas    = ты говоришь",
-          "li parolas    = он говорит",
-          "Форма глагола НИКОГДА не меняется! Одна",
-          "форма для всех."
+    },
+    {
+        "lesson_id": "004",
+        "trigger_word": "bone",
+        "title": "УРОК 3: НАРЕЧИЯ НА -E",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "Наречия описывают, КАК что-то происходит.",
+                    "Наречия, образованные от других слов,",
+                    "кончаются на -e, как прилагательные — на -a.",
+                    "",
+                    "ОТ ПРИЛАГАТЕЛЬНОГО К НАРЕЧИЮ:          Нажми 1",
+                    "bona → bone           = хороший → хорошо",
+                    "rapida → rapide       = быстрый → быстро",
+                    "facila → facile       = лёгкий → легко",
+                    "malrapida → malrapide = медленный → медленно",
+                    "",
+                    "РАЗНИЦА:                               Нажми 2",
+                    "Li estas bona.",
+                    "(Он хороший. ← описывает ЕГО)",
+                    "",
+                    "Li kantas bone.",
+                    "(Он поёт хорошо. ← описывает КАК)"
+                ],
+                "pronunciation": "Leciono kvar",
+                "pronunciation_mappings": {
+                    "1": "Bona. Bone. Rapida. Rapide. Facila. Facile. Malrapida. Malrapide.",
+                    "2": "Li estas bona. Li kantas bone."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "У НЕКОТОРЫХ НАРЕЧИЙ -E НЕТ ВОВСЕ:      Нажми 1",
+                    "   nun = сейчас       tre    = очень",
+                    "   jam = уже          hodiaŭ = сегодня",
+                    "Они уже наречия. Ничего добавлять не надо!",
+                    "",
+                    "ОДИН КОРЕНЬ — ТРИ РОЛИ:                Нажми 2",
+                    "   rapido = скорость  -o называет предмет",
+                    "   rapida = быстрый   -a описывает его",
+                    "   rapide = быстро    -e говорит, как",
+                    "",
+                    "ВСЁ ВМЕСТЕ:                            Нажми 3",
+                    "   Mi fartas tre bone.",
+                    "   = У меня всё очень хорошо.",
+                    "   Nun mi parolas malrapide.",
+                    "   = Сейчас я говорю медленно."
+                ],
+                "pronunciation_mappings": {
+                    "1": "Nun. Tre. Jam. Hodiaŭ.",
+                    "2": "Rapido. Rapida. Rapide.",
+                    "3": "Mi fartas tre bone. Nun mi parolas malrapide."
+                }
+            }
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "003",
-    "trigger_word": "alia",
-    "header_color": "green",
-    "title": "УРОК 3: ПРИЛАГАТЕЛЬНЫЕ -A И -J",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
-        "pronunciation": "Leciono tri",
-        "content": [
-          "Все прилагательные в эсперанто оканчиваются",
-          "на -a. Их легко распознать!",
-          "",
-          "ОБЫЧНЫЕ ПРИЛАГАТЕЛЬНЫЕ:",
-          "",
-          "bona   = хороший    malbona   = плохой",
-          "granda = большой    malgranda = маленький",
-          "bela   = красивый   nova      = новый",
-          "",
-          "ПОРЯДОК СЛОВ — оба варианта верны:",
-          "",
-          "bona libro  = хорошая книга",
-          "libro bona  = хорошая книга (тоже OK!)",
-          "",
-          "СОВЕТ: Если слово описывает существительное",
-          "и оканчивается на -a — это прилагательное."
+    },
+    {
+        "lesson_id": "030",
+        "trigger_word": "bonvolu",
+        "title": "УРОК 4: ПРИКАЗЫ И ПРОСЬБЫ",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "Окончание -U превращает глагол в просьбу",
+                    "или приказ. Одна форма для всех!",
+                    "",
+                    "Словарная форма глагола кончается на -I.",
+                    "Замени -I на -U:                       Нажми 1",
+                    "   veni    → Venu!     = Приходи!",
+                    "   atendi  → Atendu!   = Подожди!",
+                    "   helpi   → Helpu!    = Помоги!",
+                    "   pardoni → Pardonu!  = Прости! Извини!",
+                    "",
+                    "ПОЖАЛУЙСТА = BONVOLU + форма на -I:    Нажми 2",
+                    "   Bonvolu ripeti!     = Повтори, пожалуйста!",
+                    "   Bonvolu atendi!     = Подожди, пожалуйста!",
+                    "   (bonvolu = «будь так добр»)"
+                ],
+                "pronunciation": "Leciono tridek",
+                "pronunciation_mappings": {
+                    "1": "Venu! Atendu! Helpu! Pardonu!",
+                    "2": "Bonvolu ripeti! Bonvolu atendi!"
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "ДАВАЙ... = NI + -U:                    Нажми 1",
+                    "   Ni iru!             = Пойдём!",
+                    "   Ni komencu!         = Начнём!",
+                    "",
+                    "НЕ ДЕЛАЙ... = NE + -U:                 Нажми 2",
+                    "   Ne forgesu!         = Не забудь!",
+                    "   Ne timu!            = Не бойся!",
+                    "",
+                    "С «ОН» И «ОНА» ТОЖЕ РАБОТАЕТ:          Нажми 3",
+                    "   Li venu!            = Пусть он придёт!",
+                    "",
+                    "МЯГЧЕ: добавь MI PETAS (прошу):        Нажми 4",
+                    "   Atendu, mi petas!   = Подожди, прошу тебя!"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Ni iru! Ni komencu!",
+                    "2": "Ne forgesu! Ne timu!",
+                    "3": "Li venu!",
+                    "4": "Atendu, mi petas!"
+                }
+            }
         ]
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "content": [
-          "МНОЖЕСТВЕННОЕ ЧИСЛО: добавь -j к",
-          "существительным",
-          "и прилагательным.",
-          "",
-          "СУЩЕСТВИТЕЛЬНЫЕ (-o → -oj):",
-          "",
-          "amiko   → amikoj    = друг → друзья",
-          "libro   → libroj    = книга → книги",
-          "hundo   → hundoj    = собака → собаки",
-          "ПРИЛАГАТЕЛЬНЫЕ ДОЛЖНЫ СОГЛАСОВЫВАТЬСЯ:",
-          "bona amiko    → bonaj amikoj",
-          "granda libro  → grandaj libroj",
-          "ПРОИЗНОШЕНИЕ:",
-          "-j звучит как «й» в «бой».",
-          "amikoj = а-МИ-кой",
-          "И то, и другое получают -j!",
-          "La grandaj hundoj kuras. = Большие собаки",
-          "бегут."
+    },
+    {
+        "lesson_id": "006",
+        "trigger_word": "helpo",
+        "title": "УРОК 5: АРТИКЛЬ «LA»",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "В эсперанто ОДИН артикль: LA (англ. the).",
+                    "",
+                    "С LA — конкретная, известная вещь:     Нажми 1",
+                    "   La kafo estas bona.  = Кофе хороший.",
+                    "   La libro estas sur la tablo.",
+                    "   = Книга лежит на столе.",
+                    "",
+                    "БЕЗ LA — любая или вообще:             Нажми 2",
+                    "   Muziko estas bela.   = Музыка прекрасна.",
+                    "   Akvo estas necesa.   = Вода необходима.",
+                    "",
+                    "НЕОПРЕДЕЛЁННОГО АРТИКЛЯ НЕТ:           Нажми 3",
+                    "   Tio estas libro.     = Это книга.",
+                    "   Tio estas la libro.  = Это та самая книга.",
+                    "",
+                    "С именами LA обычно не нужен: Marko, Eŭropo.",
+                    "Сам LA никогда не меняет форму."
+                ],
+                "pronunciation": "Leciono ses",
+                "pronunciation_mappings": {
+                    "1": "La kafo estas bona. La libro estas sur la tablo.",
+                    "2": "Muziko estas bela. Akvo estas necesa.",
+                    "3": "Tio estas libro. Tio estas la libro."
+                }
+            }
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "004",
-    "trigger_word": "bone",
-    "header_color": "green",
-    "title": "УРОК 4: НАРЕЧИЯ КОНЧАЮТСЯ НА -E",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono kvar",
-        "content": [
-          "Наречия описывают, КАК что-то происходит.",
-          "В эсперанто они всегда оканчиваются на -e.",
-          "",
-          "ОТ ПРИЛАГАТЕЛЬНОГО К НАРЕЧИЮ:",
-          "bona → bone       = хороший → хорошо",
-          "rapida → rapide   = быстрый → быстро",
-          "facila → facile   = лёгкий → легко",
-          "lenta → lente     = медленный → медленно",
-          "",
-          "РАЗНИЦА:",
-          "",
-          "Li estas bona.",
-          "(Он хороший. ← описывает ЕГО)",
-          "",
-          "Li kantas bone.",
-          "(Он поёт хорошо. ← описывает КАК)",
-          "Помни: -a для прилагательных, -e для",
-          "действий!"
+    },
+    {
+        "lesson_id": "005",
+        "trigger_word": "kio",
+        "title": "УРОК 6: ВОПРОСИТЕЛЬНЫЕ СЛОВА KI-",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "Большинство вопросительных слов в эсперанто",
+                    "начинаются с KI-. Они — часть стройной",
+                    "системы (см. следующую страницу).",
+                    "",
+                    "ВОПРОСИТЕЛЬНЫЕ СЛОВА:                  Нажми 1",
+                    "kio   = что (предмет)",
+                    "kiu   = кто / который",
+                    "kie   = где (место)",
+                    "kiam  = когда (время)",
+                    "kial  = почему (причина)",
+                    "kiel  = как (способ)",
+                    "kiom  = сколько",
+                    "",
+                    "ПРИМЕРЫ:                               Нажми 2",
+                    "Kio estas tio?     = Что это?",
+                    "Kiu vi estas?      = Кто ты?",
+                    "Kie vi loĝas?      = Где ты живёшь?",
+                    "Kiam vi venas?     = Когда ты придёшь?"
+                ],
+                "pronunciation": "Leciono kvin",
+                "pronunciation_mappings": {
+                    "1": "Kio. Kiu. Kie. Kiam. Kial. Kiel. Kiom.",
+                    "2": "Kio estas tio? Kiu vi estas? Kie vi loĝas? Kiam vi venas?"
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "Замени KI- на другое начало — и получишь",
+                    "ответы:                                Нажми 1",
+                    "",
+                    "            вещь   лицо   место  время",
+                    "KI-  что?   kio    kiu    kie    kiam",
+                    "TI-  тот    tio    tiu    tie    tiam",
+                    "ĈI-  все    ĉio    ĉiu    ĉie    ĉiam",
+                    "NENI- ни-   nenio  neniu  nenie  neniam",
+                    "I-   -то    io     iu     ie     iam",
+                    "",
+                    "ПРИМЕРЫ:                               Нажми 2",
+                    "Kie? Tie!          = Где? Там!",
+                    "Ĉio estas bona.    = Всё хорошо.",
+                    "Neniu scias.       = Никто не знает.",
+                    "Iu venas.          = Кто-то идёт.",
+                    "",
+                    "ĈI даёт «этот»: tio = то, ĉi tio = это."
+                ],
+                "pronunciation_mappings": {
+                    "1": "Kio. Tio. Ĉio. Nenio. Io. Kiam. Tiam. Ĉiam. Neniam. Iam.",
+                    "2": "Kie? Tie! Ĉio estas bona. Neniu scias. Iu venas."
+                }
+            }
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "005",
-    "trigger_word": "kio",
-    "header_color": "green",
-    "title": "УРОК 5: ВОПРОСИТЕЛЬНЫЕ СЛОВА KI-",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono kvin",
-        "content": [
-          "Все вопросительные слова в эсперанто",
-          "начинаются с KI-. Это часть красивой",
-          "системы, которую ты узнаешь позже!",
-          "",
-          "ВОПРОСИТЕЛЬНЫЕ СЛОВА:",
-          "kio   = что (предмет)",
-          "kiu   = кто / какой",
-          "kie   = где (место)",
-          "kiam  = когда (время)",
-          "kial  = почему (причина)",
-          "kiel  = как (образ действия)",
-          "kiom  = сколько (количество)",
-          "",
-          "ПРИМЕРЫ:",
-          "Kio estas tio?     = Что это?",
-          "Kiu vi estas?      = Кто ты?",
-          "Kie vi loĝas?      = Где ты живёшь?",
-          "Kiam vi venas?     = Когда ты придёшь?"
+    },
+    {
+        "lesson_id": "007",
+        "trigger_word": "ĉu",
+        "title": "УРОК 7: ВОПРОСЫ ДА/НЕТ",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "Чтобы сделать из утверждения вопрос",
+                    "да/нет, просто поставь ĈU в начало.",
+                    "Порядок слов остаётся прежним!",
+                    "",
+                    "УТВЕРЖДЕНИЕ → ВОПРОС:                  Нажми 1",
+                    "Vi parolas Esperante.",
+                    "= Ты говоришь на эсперанто.",
+                    "Ĉu vi parolas Esperante?",
+                    "= Ты говоришь на эсперанто?",
+                    "",
+                    "ЕЩЁ ПРИМЕРЫ:                           Нажми 2",
+                    "Ĉu estas problemo?  = Есть проблема?",
+                    "Ĉu li venas?        = Он идёт?",
+                    "Ĉu vi komprenas?    = Ты понимаешь?",
+                    "",
+                    "ОТВЕЧАЙ: JES ИЛИ NE:                   Нажми 3",
+                    "Jes, mi komprenas.   = Да, понимаю.",
+                    "Ne, mi ne komprenas. = Нет, не понимаю."
+                ],
+                "pronunciation": "Leciono sep",
+                "pronunciation_mappings": {
+                    "1": "Vi parolas Esperante. Ĉu vi parolas Esperante?",
+                    "2": "Ĉu estas problemo? Ĉu li venas? Ĉu vi komprenas?",
+                    "3": "Jes, mi komprenas. Ne, mi ne komprenas."
+                }
+            }
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "006",
-    "trigger_word": "helpo",
-    "header_color": "green",
-    "title": "УРОК 6: АРТИКЛЬ «LA»",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono ses",
-        "content": [
-          "В эсперанто есть ОДИН артикль: LA (the).",
-          "",
-          "С LA = конкретная, известная вещь:",
-          "Mi vidas la hundon. = Я вижу собаку.",
-          "La libro relevanta estas sur la tablo.",
-          "= Нужная книга лежит на столе.",
-          "",
-          "БЕЗ артикля = общее понятие:",
-          "Mi amas muzikon. = Я люблю музыку.",
-          "Akvo estas necesa. = Вода необходима.",
-          "Ŝi volas kafon. = Она хочет кофе.",
-          "",
-          "СРАВНИ:",
-          "Mi legas libron. = Я читаю книгу.",
-          "Mi legas la libron. = Я читаю ту книгу.",
-          "",
-          "В эсперанто нет a/an — контекст подскажет!",
-          "LA не меняется: la viro, la viroj, la domo."
+    },
+    {
+        "lesson_id": "013",
+        "trigger_word": "kompreni",
+        "title": "УРОК 8: ВИНИТЕЛЬНЫЙ -N (ОБЪЕКТ)",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "Окончание -N отмечает ПРЯМОЕ ДОПОЛНЕНИЕ:",
+                    "на кого или что направлено действие.",
+                    "",
+                    "La kato vidas la hundon.               Нажми 1",
+                    "= Кот видит собаку.",
+                    "La hundo vidas la katon.",
+                    "= Собака видит кота.",
+                    "",
+                    "-N показывает, кого видят, поэтому",
+                    "порядок слов может даже меняться:",
+                    "La hundon vidas la kato.               Нажми 2",
+                    "= Кот видит собаку. (Всё равно!)",
+                    "",
+                    "ПОСЛЕ ESTAS (есть) -N НЕ СТАВИТСЯ:     Нажми 3",
+                    "Tio estas bona ideo.",
+                    "= Это хорошая идея."
+                ],
+                "pronunciation": "Leciono dek tri",
+                "pronunciation_mappings": {
+                    "1": "La kato vidas la hundon. La hundo vidas la katon.",
+                    "2": "La hundon vidas la kato.",
+                    "3": "Tio estas bona ideo."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "МЕСТОИМЕНИЯ ТОЖЕ ПОЛУЧАЮТ -N:          Нажми 1",
+                    "   mi → min    vi → vin    li → lin",
+                    "   ŝi → ŝin    ĝi → ĝin    ni → nin",
+                    "   ili → ilin",
+                    "   Mi komprenas vin. = Я тебя понимаю.",
+                    "",
+                    "И KIO, TIO, ĈIO ТОЖЕ:                  Нажми 2",
+                    "   kio → kion    tio → tion    ĉio → ĉion",
+                    "   Kion vi faras?     = Что ты делаешь?",
+                    "   Mi komprenas ĉion. = Я всё понимаю.",
+                    "",
+                    "И ПРИЛАГАТЕЛЬНЫЕ ТОЖЕ:                 Нажми 3",
+                    "   Mi havas bonan amikon.",
+                    "   = У меня есть хороший друг.",
+                    "",
+                    "НЕСКОЛЬКО: сначала -J, потом -N:       Нажми 4",
+                    "   Mi havas bonajn amikojn.",
+                    "   = У меня есть хорошие друзья."
+                ],
+                "pronunciation_mappings": {
+                    "1": "Min. Vin. Lin. Ŝin. Ĝin. Nin. Ilin. Mi komprenas vin.",
+                    "2": "Kion vi faras? Mi komprenas ĉion.",
+                    "3": "Mi havas bonan amikon.",
+                    "4": "Mi havas bonajn amikojn."
+                }
+            }
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "007",
-    "trigger_word": "ĉu",
-    "header_color": "green",
-    "title": "УРОК 7: ВОПРОСЫ ДА/НЕТ",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono sep",
-        "content": [
-          "Чтобы превратить любое утверждение",
-          "в вопрос да/нет, просто поставь ĈU",
-          "в начало. Порядок слов не меняется!",
-          "",
-          "УТВЕРЖДЕНИЕ → ВОПРОС:",
-          "Vi parolas Esperanton.",
-          "(Ты говоришь на эсперанто.)",
-          "  ↓",
-          "Ĉu vi parolas Esperanton?",
-          "(Ты говоришь на эсперанто?)",
-          "",
-          "ЕЩЁ ПРИМЕРЫ:",
-          "Ĉu estas problemo?  = Есть проблема?",
-          "Ĉu li venas?        = Он идёт?",
-          "Ĉu vi komprenas?    = Ты понимаешь?",
-          "",
-          "ОТВЕТЫ: Jes = Да  /  Ne = Нет"
+    },
+    {
+        "lesson_id": "071",
+        "trigger_word": "kiom",
+        "title": "УРОК 9: КОЛИЧЕСТВО С DA",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "DA связывает количество с тем, что измеряют.",
+                    "После DA идёт голое существительное:",
+                    "без LA и уж точно без -N.",
+                    "",
+                    "СКОЛЬКО? = KIOM DA:                    Нажми 1",
+                    "   Kiom da tempo vi havas?",
+                    "   = Сколько у тебя времени?",
+                    "   Kiom da amikoj vi havas?",
+                    "   = Сколько у тебя друзей?",
+                    "",
+                    "КОЛИЧЕСТВО + DA + ПРЕДМЕТ:             Нажми 2",
+                    "   taso da kafo     = чашка кофе",
+                    "   glaso da akvo    = стакан воды",
+                    "   multe da tempo   = много времени",
+                    "   iom da pano      = немного хлеба",
+                    "   pli da teo       = больше чая"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Kiom da tempo vi havas? Kiom da amikoj vi havas?",
+                    "2": "Taso da kafo. Glaso da akvo. Multe da tempo. Iom da pano. Pli da teo."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "-N СТАВИТСЯ НА КОЛИЧЕСТВО,",
+                    "НЕ НА СЛОВО ПОСЛЕ DA:                  Нажми 1",
+                    "   Mi trinkas tason da kafo.",
+                    "   = Я пью чашку кофе.",
+                    "   Mi havas multe da amikoj.",
+                    "   = У меня много друзей. (multe: без -n)",
+                    "",
+                    "ПОСЛЕ DA НЕТ LA:                       Нажми 2",
+                    "   iom da kafo      = немного кофе",
+                    "   iom de la kafo   = немного этого кофе",
+                    "   (Что-то конкретное? Тогда DE + LA.)"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Mi trinkas tason da kafo. Mi havas multe da amikoj.",
+                    "2": "Iom da kafo. Iom de la kafo."
+                }
+            }
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "008",
-    "trigger_word": "patrino",
-    "header_color": "green",
-    "title": "УРОК 8: ЖЕНСКИЙ СУФФИКС -IN-",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono ok",
-        "content": [
-          "Чтобы сделать слово женским, добавь",
-          "-IN- после корня, перед окончанием.",
-          "",
-          "ЧЛЕНЫ СЕМЬИ:",
-          "patro → patrino    = отец → мать",
-          "frato → fratino    = брат → сестра",
-          "filo → filino      = сын → дочь",
-          "",
-          "СТРОЙ:",
-          "patr-in-o  = мать (сущ. -o)",
-          "patr-in-a  = материнский (прил. -a)",
-          "",
-          "РАБОТАЕТ С ЛЮБЫМ СЛОВОМ:",
-          "knabo → knabino    = мальчик → девочка",
-          "hundo → hundino    = собака → сука",
-          "amiko → amikino    = друг → подруга"
+    },
+    {
+        "lesson_id": "016",
+        "trigger_word": "mia",
+        "title": "УРОК 10: ПРИТЯЖАТЕЛЬНЫЕ СЛОВА",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "Добавь -A к личному местоимению —",
+                    "получишь «чей»: mi (я) → mia (мой).",
+                    "",
+                    "ПРИТЯЖАТЕЛЬНЫЕ:                        Нажми 1",
+                    "  mia = мой         nia  = наш",
+                    "  via = твой, ваш   ilia = их",
+                    "  lia = его",
+                    "  ŝia = её",
+                    "  ĝia = его, её (не о человеке)",
+                    "",
+                    "ПРИМЕРЫ:                               Нажми 2",
+                    "Mia domo estas granda. = Мой дом большой.",
+                    "Kie estas via libro?   = Где твоя книга?",
+                    "Ŝia amiko venas.       = Её друг идёт.",
+                    "",
+                    "КАК ПРИЛАГАТЕЛЬНЫЕ: + -J И + -N:       Нажми 3",
+                    "miaj libroj          = мои книги",
+                    "Mi amas mian urbon.  = Я люблю мой город."
+                ],
+                "pronunciation": "Leciono dek ses",
+                "pronunciation_mappings": {
+                    "1": "Mia. Via. Lia. Ŝia. Ĝia. Nia. Ilia.",
+                    "2": "Mia domo estas granda. Kie estas via libro? Ŝia amiko venas.",
+                    "3": "Miaj libroj. Mi amas mian urbon."
+                }
+            }
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "009",
-    "trigger_word": "malbona",
-    "header_color": "green",
-    "title": "УРОК 9: MAL- — ПРИСТАВКА НАОБОРОТ",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "pronunciation": "Leciono naŭ",
-        "content": [
-          "MAL- — один из самых мощных инструментов",
-          "в эсперанто. Поставь её перед любым словом,",
-          "и мгновенно получишь противоположное!",
-          "",
-          "ПРИЛАГАТЕЛЬНЫЕ:",
-          "bona → malbona      = хороший → плохой",
-          "granda → malgranda  = большой → маленький",
-          "nova → malnova      = новый → старый",
-          "alta → malalta      = высокий → низкий",
-          "juna → maljuna      = молодой → старый",
-          "",
-          "И ГЛАГОЛЫ ТОЖЕ:",
-          "fermi → malfermi    = закрывать → открывать",
-          "ami → malami        = любить → ненавидеть",
-          "",
-          "Это сокращает запоминание словаря ВДВОЕ!",
-          "Выучил 'bona' — 'malbona' уже твоё!"
+    },
+    {
+        "lesson_id": "017",
+        "trigger_word": "mem",
+        "title": "УРОК 11: ВОЗВРАТНЫЕ СЛОВА И MEM",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "Возвратные слова указывают на подлежащее.",
+                    "Для «он», «она», «оно» и «они» эсперанто",
+                    "использует SI (SIN — дополнение) и SIA:",
+                    "",
+                    "sin  = себя",
+                    "sia  = свой (его, её, их СОБСТВЕННЫЙ)",
+                    "",
+                    "ПРИМЕРЫ:                               Нажми 1",
+                    "Li lavas sin.      = Он моется (моет себя).",
+                    "Ŝi vidas sin.      = Она видит себя.",
+                    "Li parolas pri si. = Он говорит о себе.",
+                    "",
+                    "SIA ИЛИ LIA?                           Нажми 2",
+                    "Li amas sian hundon.",
+                    "→ Он любит свою собаку. (собственную)",
+                    "Li amas lian hundon.",
+                    "→ Он любит его собаку. (чужую)"
+                ],
+                "pronunciation": "Leciono dek sep",
+                "pronunciation_mappings": {
+                    "1": "Li lavas sin. Ŝi vidas sin. Li parolas pri si.",
+                    "2": "Li amas sian hundon. Li amas lian hundon."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "ДЛЯ Я, ТЫ И МЫ — ИХ ЖЕ СЛОВА:          Нажми 1",
+                    "Mi lavas min.      = Я моюсь (мою себя).",
+                    "Vi lavas vin.      = Ты моешься.",
+                    "Ni vidas nin.      = Мы видим себя.",
+                    "Mi amas mian hundon. = Я люблю свою собаку.",
+                    "(Не «Mi lavas sin», хоть по-русски «себя»!)",
+                    "",
+                    "MEM = «сам», ТОЛЬКО ДЛЯ УСИЛЕНИЯ:      Нажми 2",
+                    "Mi mem faras tion. = Я делаю это сам.",
+                    "Vi mem diras tion! = Ты сам это говоришь!",
+                    "la urbo mem        = сам город",
+                    "",
+                    "MEM — не возвратное слово и никогда",
+                    "не меняется: ни -n, ни -j."
+                ],
+                "pronunciation_mappings": {
+                    "1": "Mi lavas min. Vi lavas vin. Ni vidas nin. Mi amas mian hundon.",
+                    "2": "Mi mem faras tion. Vi mem diras tion! La urbo mem."
+                }
+            }
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "010",
-    "trigger_word": "unu",
-    "header_color": "green",
-    "title": "УРОК 10: СИСТЕМА ЧИСЕЛ",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
-        "pronunciation": "Leciono dek",
-        "content": [
-          "Числа в эсперанто полностью правильные.",
-          "Выучи основу — дальше просто комбинируй!",
-          "",
-          "ОСНОВНЫЕ ЧИСЛА:",
-          "",
-          "0 = nul    5 = kvin    10 = dek",
-          "1 = unu    6 = ses     11 = dek unu",
-          "2 = du     7 = sep     12 = dek du",
-          "3 = tri    8 = ok      13 = dek tri",
-          "4 = kvar   9 = naŭ     14 = dek kvar",
-          "",
-          "БОЛЬШИЕ ЧИСЛА:",
-          "20 = dudek (du + dek = два десятка)",
-          "30 = tridek, 40 = kvardek и т.д.",
-          "100 = cent, 1000 = mil",
-          "",
-          "КОМБИНИРУЙ: 23 = dudek tri. Исключений нет!"
+    },
+    {
+        "lesson_id": "003",
+        "trigger_word": "alia",
+        "title": "УРОК 12: ПРИЛАГАТЕЛЬНЫЕ -A И -J",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "Все прилагательные в эсперанто кончаются",
+                    "на -a. Поэтому их легко узнать!",
+                    "",
+                    "ЧАСТЫЕ ПРИЛАГАТЕЛЬНЫЕ:                 Нажми 1",
+                    "",
+                    "bona   = хороший     malbona   = плохой",
+                    "granda = большой     malgranda = маленький",
+                    "bela   = красивый    nova      = новый",
+                    "alia   = другой      sama      = тот же",
+                    "",
+                    "ПОРЯДОК СЛОВ — можно и так, и так:     Нажми 2",
+                    "",
+                    "bona libro  = хорошая книга (обычно)",
+                    "libro bona  = хорошая книга (тоже можно!)",
+                    "",
+                    "СОВЕТ: если слово описывает существительное",
+                    "и кончается на -a — это прилагательное.",
+                    "Всё просто!"
+                ],
+                "pronunciation": "Leciono tri",
+                "pronunciation_mappings": {
+                    "1": "Bona. Malbona. Granda. Malgranda. Bela. Nova. Alia. Sama.",
+                    "2": "Bona libro. Libro bona."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "МНОЖЕСТВЕННОЕ ЧИСЛО: добавь -J",
+                    "к существительным И прилагательным.",
+                    "СУЩЕСТВИТЕЛЬНЫЕ (-o → -oj):            Нажми 1",
+                    "amiko   → amikoj    = друг → друзья",
+                    "libro   → libroj    = книга → книги",
+                    "hundo   → hundoj    = собака → собаки",
+                    "(-oj звучит как «ой», -aj — как «ай»)",
+                    "",
+                    "ПРИЛАГАТЕЛЬНЫЕ СОГЛАСУЮТСЯ:            Нажми 2",
+                    "bona amiko    → bonaj amikoj",
+                    "granda libro  → grandaj libroj",
+                    "La grandaj hundoj kuras. = Большие псы бегут.",
+                    "",
+                    "В ДОПОЛНЕНИИ: сначала -J, потом -N:    Нажми 3",
+                    "Mi legas novajn librojn.",
+                    "= Я читаю новые книги."
+                ],
+                "pronunciation_mappings": {
+                    "1": "Amiko. Amikoj. Libro. Libroj. Hundo. Hundoj.",
+                    "2": "Bonaj amikoj. Grandaj libroj. La grandaj hundoj kuras.",
+                    "3": "Mi legas novajn librojn."
+                }
+            }
         ]
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "content": [
-          "ПОРЯДКОВЫЕ ЧИСЛИТЕЛЬНЫЕ",
-          "(первый, второй, третий...)",
-          "Добавь -a к любому числу. Это прилагательные!",
-          "",
-          "unua    = первый      kvara   = четвёртый",
-          "dua     = второй      kvina   = пятый",
-          "tria    = третий      deka    = десятый",
-          "",
-          "БОЛЬШИЕ ПОРЯДКОВЫЕ:",
-          "dudek-unua = двадцать первый",
-          "centa = сотый",
-          "",
-          "В ПРЕДЛОЖЕНИЯХ:",
-          "Ĉi tiu estas mia unua leciono.",
-          "(Это мой первый урок.)",
-          "Li loĝas sur la tria etaĝo.",
-          "(Он живёт на третьем этаже.)",
-          "Как прилагательные: unuaj paŝoj = первые шаги"
+    },
+    {
+        "lesson_id": "014",
+        "trigger_word": "en",
+        "title": "УРОК 13: -N ДЛЯ НАПРАВЛЕНИЯ",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "У окончания -N есть вторая задача:",
+                    "НАПРАВЛЕНИЕ, движение к месту.",
+                    "",
+                    "ГДЕ НАХОДИТСЯ И КУДА ДВИЖЕТСЯ:         Нажми 1",
+                    "Mi estas en la domo.  = Я в доме.",
+                    "Mi iras en la domon.  = Я иду в дом.",
+                    "",
+                    "La akvo estas en la glaso.             Нажми 2",
+                    "= Вода в стакане.",
+                    "Mi verŝas akvon en la glason.",
+                    "= Я наливаю воду в стакан.",
+                    "",
+                    "После en, sur, sub, apud... окончание -n",
+                    "означает движение КУДА-ТО:             Нажми 3",
+                    "sur la tablo  = на столе (лежит там)",
+                    "sur la tablon = на стол (движется туда)"
+                ],
+                "pronunciation": "Leciono dek kvar",
+                "pronunciation_mappings": {
+                    "1": "Mi estas en la domo. Mi iras en la domon.",
+                    "2": "La akvo estas en la glaso. Mi verŝas akvon en la glason.",
+                    "3": "Sur la tablo. Sur la tablon."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "БЕЗ ПРЕДЛОГА? ХВАТИТ ОДНОГО -N:        Нажми 1",
+                    "Mi iras hejmen.     = Я иду домой.",
+                    "Ni iras Londonon.   = Мы едем в Лондон.",
+                    "(= Ni iras al Londono. После AL без -n.)",
+                    "",
+                    "КУДА? = KIEN?                          Нажми 2",
+                    "Kien vi iras?       = Куда ты идёшь?",
+                    "Mi iras tien.       = Я иду туда.",
+                    "",
+                    "AL, ĜIS, EL и DE никогда не берут -n:",
+                    "они уже показывают направление.        Нажми 3",
+                    "Mi iras al la urbo. = Я иду в город.",
+                    "",
+                    "Нет -n после en/sur? Ты уже там!"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Mi iras hejmen. Ni iras Londonon. Ni iras al Londono.",
+                    "2": "Kien vi iras? Mi iras tien.",
+                    "3": "Mi iras al la urbo."
+                }
+            }
         ]
-      }
-    ]
-  }
+    },
+    {
+        "lesson_id": "018",
+        "trigger_word": "kun",
+        "title": "УРОК 14: ПРЕДЛОГИ",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 3,
+                "content": [
+                    "Предлоги показывают связи между словами.",
+                    "В эсперанто они НИКОГДА не меняются!",
+                    "",
+                    "МЕСТО И НАПРАВЛЕНИЕ:",
+                    "en   = в              sur    = на",
+                    "sub  = под            super  = над",
+                    "apud = рядом с        inter  = между",
+                    "ĉe   = у, при         ĉirkaŭ = вокруг",
+                    "",
+                    "ПРИМЕРЫ:                               Нажми 1",
+                    "La kato estas sub la tablo.",
+                    "= Кот под столом.",
+                    "Mi sidas apud vi.",
+                    "= Я сижу рядом с тобой.",
+                    "",
+                    "После en/sur/sub/apud -n показывает",
+                    "движение КУДА-ТО. al, ĝis, el, de: без -n."
+                ],
+                "pronunciation": "Leciono dek ok",
+                "pronunciation_mappings": {
+                    "1": "La kato estas sub la tablo. Mi sidas apud vi."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 3,
+                "content": [
+                    "ЕЩЁ ВАЖНЫЕ ПРЕДЛОГИ:",
+                    "",
+                    "al   = к, в (куда)      de   = от; кого/чего",
+                    "kun  = с (вместе)       sen  = без",
+                    "por  = для (цели)       pri  = о, про",
+                    "per  = с помощью        tra  = через, сквозь",
+                    "ĝis  = до               krom = кроме",
+                    "",
+                    "ПРИМЕРЫ:                               Нажми 1",
+                    "Mi iras al la parko.   = Я иду в парк.",
+                    "La libro de mia amiko. = Книга моего друга.",
+                    "Ni parolas pri vi.     = Мы говорим о тебе.",
+                    "Ŝi venas kun sia frato.",
+                    "= Она приходит со своим братом."
+                ],
+                "pronunciation_mappings": {
+                    "1": "Mi iras al la parko. La libro de mia amiko. Ni parolas pri vi. Ŝi venas kun sia frato."
+                }
+            },
+            {
+                "page": 3,
+                "total_pages": 3,
+                "content": [
+                    "KUN ИЛИ PER? Оба могут значить «с»:    Нажми 1",
+                    "Mi venas kun amiko.",
+                    "= Я иду с другом. (вместе)",
+                    "Mi skribas per komputilo.",
+                    "= Я пишу на компьютере. (с его помощью)",
+                    "",
+                    "JE — универсальный предлог, когда другой",
+                    "не подходит:                           Нажми 2",
+                    "Je la tria horo.  = В три часа.",
+                    "",
+                    "EL = ИЗ (НАРУЖУ):                      Нажми 3",
+                    "Ŝi venas el la domo.",
+                    "= Она выходит из дома."
+                ],
+                "pronunciation_mappings": {
+                    "1": "Mi venas kun amiko. Mi skribas per komputilo.",
+                    "2": "Je la tria horo.",
+                    "3": "Ŝi venas el la domo."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "015",
+        "trigger_word": "voli",
+        "title": "УРОК 15: МОДАЛЬНЫЕ ГЛАГОЛЫ",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "Модальные глаголы выражают возможность,",
+                    "желание или долг. Основной глагол стоит",
+                    "в инфинитиве (окончание -i).",
+                    "",
+                    "ТРИ ГЛАВНЫХ МОДАЛЬНЫХ ГЛАГОЛА:",
+                    "povi  = мочь, быть в состоянии",
+                    "voli  = хотеть",
+                    "devi  = быть должным, надо",
+                    "",
+                    "ПРИМЕРЫ:                               Нажми 1",
+                    "Mi povas paroli.     = Я могу говорить.",
+                    "Mi volas manĝi.      = Я хочу есть.",
+                    "Ni devas lerni.      = Мы должны учиться.",
+                    "",
+                    "СТРОЙ: модальный + инфинитив           Нажми 2",
+                    "Li povas veni morgaŭ.",
+                    "= Он может прийти завтра.",
+                    "Инфинитив никогда не меняется!"
+                ],
+                "pronunciation": "Leciono dek kvin",
+                "pronunciation_mappings": {
+                    "1": "Mi povas paroli. Mi volas manĝi. Ni devas lerni.",
+                    "2": "Li povas veni morgaŭ."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "011",
+        "trigger_word": "estis",
+        "title": "УРОК 16: ПРОШЕДШЕЕ ВРЕМЯ",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "Чтобы говорить о прошлом, замени",
+                    "окончание глагола -as на -is. Вот и всё!",
+                    "",
+                    "НАСТОЯЩЕЕ   → ПРОШЕДШЕЕ:               Нажми 1",
+                    "mi estas    → mi estis   (я есть → я был)",
+                    "vi parolas  → vi parolis (говоришь → говорил)",
+                    "li manĝas   → li manĝis  (он ест → он ел)",
+                    "",
+                    "Окончание -is одно для ВСЕХ лиц:",
+                    "mi estis     =  я был(а)",
+                    "vi estis     =  ты был(а), вы были",
+                    "li estis     =  он был",
+                    "ni estis     =  мы были",
+                    "ili estis    =  они были",
+                    "",
+                    "Одна форма для всех. Неправильных глаголов",
+                    "нет! Замени -as на -is — и готово."
+                ],
+                "pronunciation": "Leciono dek unu",
+                "pronunciation_mappings": {
+                    "1": "Mi estas. Mi estis. Vi parolas. Vi parolis. Li manĝas. Li manĝis."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "012",
+        "trigger_word": "estos",
+        "title": "УРОК 17: БУДУЩЕЕ ВРЕМЯ",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "Для будущего времени замени окончание",
+                    "глагола на -os. Вот так просто!",
+                    "",
+                    "НАСТОЯЩЕЕ   → БУДУЩЕЕ:                 Нажми 1",
+                    "mi estas    → mi estos   (я есть → я буду)",
+                    "vi parolas  → vi parolos (ты будешь говорить)",
+                    "li manĝas   → li manĝos  (он будет есть)",
+                    "",
+                    "ВСЕ ТРИ ВРЕМЕНИ ВМЕСТЕ:                Нажми 2",
+                    "mi parolis  = я говорил       (прошедшее -is)",
+                    "mi parolas  = я говорю        (настоящее -as)",
+                    "mi parolos  = я буду говорить (будущее -os)",
+                    "",
+                    "Три времени — три окончания. Всегда",
+                    "одинаковые для всех лиц. Эсперанто делает",
+                    "спряжение глаголов восхитительно простым!"
+                ],
+                "pronunciation": "Leciono dek du",
+                "pronunciation_mappings": {
+                    "1": "Mi estas. Mi estos. Vi parolas. Vi parolos. Li manĝas. Li manĝos.",
+                    "2": "Mi parolis. Mi parolas. Mi parolos."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "029",
+        "trigger_word": "estus",
+        "title": "УРОК 18: УСЛОВНОЕ НАКЛОНЕНИЕ",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "Условное наклонение (-us) выражает «бы»",
+                    "и гипотетические ситуации. Оно нужно для",
+                    "вежливых просьб и воображаемых сцен.",
+                    "",
+                    "КАК ОБРАЗОВАТЬ:                        Нажми 1",
+                    "Замени окончание времени на -us:",
+                    "estas → estus     (есть → был бы)",
+                    "havas → havus     (имеет → имел бы)",
+                    "iras  → irus      (идёт → пошёл бы)",
+                    "",
+                    "ВЕЖЛИВЫЕ ПРОСЬБЫ:                      Нажми 2",
+                    "Mi volus kafon.    = Я бы хотел кофе.",
+                    "Ĉu vi povus helpi? = Ты не мог бы помочь?",
+                    "",
+                    "ВООБРАЖАЕМОЕ:                          Нажми 3",
+                    "Se mi estus riĉa, mi vojaĝus.",
+                    "(Если бы я был богат, я бы путешествовал.)"
+                ],
+                "pronunciation": "Leciono dudek naŭ",
+                "pronunciation_mappings": {
+                    "1": "Estas. Estus. Havas. Havus. Iras. Irus.",
+                    "2": "Mi volus kafon. Ĉu vi povus helpi?",
+                    "3": "Se mi estus riĉa, mi vojaĝus."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "010",
+        "trigger_word": "unu",
+        "title": "УРОК 19: СИСТЕМА ЧИСЕЛ",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "Числа в эсперанто полностью правильные.",
+                    "Выучи основу — дальше просто комбинируй!",
+                    "",
+                    "ОСНОВНЫЕ ЧИСЛА:                        Нажми 1",
+                    "",
+                    "0 = nul    5 = kvin    10 = dek",
+                    "1 = unu    6 = ses     11 = dek unu",
+                    "2 = du     7 = sep     12 = dek du",
+                    "3 = tri    8 = ok      13 = dek tri",
+                    "4 = kvar   9 = naŭ     14 = dek kvar",
+                    "",
+                    "СОСТАВЛЯЙ БОЛЬШИЕ ЧИСЛА:               Нажми 2",
+                    "20 = dudek (du + dek = два десятка)",
+                    "30 = tridek, 40 = kvardek и т. д.",
+                    "100 = cent, 1000 = mil",
+                    "",
+                    "КОМБИНИРУЙ: 23 = dudek tri. Исключений нет!"
+                ],
+                "pronunciation": "Leciono dek",
+                "pronunciation_mappings": {
+                    "1": "Nul. Unu. Du. Tri. Kvar. Kvin. Ses. Sep. Ok. Naŭ. Dek.",
+                    "2": "Dudek. Tridek. Kvardek. Cent. Mil. Dudek tri."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "ПОРЯДКОВЫЕ (первый, второй...):        Нажми 1",
+                    "Добавь -a к числу. Это прилагательные!",
+                    "",
+                    "unua    = первый      kvara   = четвёртый",
+                    "dua     = второй      kvina   = пятый",
+                    "tria    = третий      deka    = десятый",
+                    "",
+                    "БОЛЬШИЕ ПОРЯДКОВЫЕ:",
+                    "dudek-unua = двадцать первый",
+                    "centa = сотый",
+                    "",
+                    "В ПРЕДЛОЖЕНИЯХ:                        Нажми 2",
+                    "Ĉi tio estas mia unua leciono.",
+                    "(Это мой первый урок.)",
+                    "Hodiaŭ estas mia tria tago ĉi tie.",
+                    "(Сегодня мой третий день здесь.)",
+                    "",
+                    "Как прилагательные: unuaj paŝoj = первые шаги"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Unua. Dua. Tria. Kvara. Kvina. Deka.",
+                    "2": "Ĉi tio estas mia unua leciono. Hodiaŭ estas mia tria tago ĉi tie."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "009",
+        "trigger_word": "malbona",
+        "title": "УРОК 20: MAL- — ПРОТИВОПОЛОЖНОСТЬ",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "MAL- — один из самых мощных инструментов",
+                    "эсперанто. Поставь его перед словом —",
+                    "и получишь точную противоположность!",
+                    "",
+                    "ПРИЛАГАТЕЛЬНЫЕ:                        Нажми 1",
+                    "bona → malbona      = хороший → плохой",
+                    "granda → malgranda  = большой → маленький",
+                    "nova → malnova      = новый → старый (вещи)",
+                    "juna → maljuna      = молодой → старый (люди)",
+                    "alta → malalta      = высокий → низкий",
+                    "",
+                    "И ГЛАГОЛЫ ТОЖЕ:                        Нажми 2",
+                    "fermi → malfermi    = закрывать → открывать",
+                    "ami → malami        = любить → ненавидеть",
+                    "",
+                    "Это сокращает зубрёжку слов ВДВОЕ!",
+                    "Выучил «bona» — «malbona» в подарок!"
+                ],
+                "pronunciation": "Leciono naŭ",
+                "pronunciation_mappings": {
+                    "1": "Bona. Malbona. Granda. Malgranda. Nova. Malnova. Juna. Maljuna. Alta. Malalta.",
+                    "2": "Fermi. Malfermi. Ami. Malami."
+                }
+            }
+        ]
+    }
 ]

@@ -3,79 +3,148 @@
     "lesson_id": "021",
     "trigger_word": "cappuccino",
     "trigger_card_number": 1001,
-    "title": "第21課: イタリアの食事",
+    "title": "第27課: イタリアの食事",
     "header_color": "magenta",
     "pages": [
       {
         "page": 1,
         "total_pages": 3,
         "content": [
-          "イタリア人の食事は一日のリズムに従う。",
-          "それぞれの名前には意味があり、",
-          "異なる場面と期待を示す。",
+          "イタリアの食事は一日のリズムに従います。",
+          "名前が大切です。食事ごとに、",
+          "格式も、期待されることも違います。",
           "",
           "COLAZIONE（朝食、7〜9時）：",
-          "   バールでカプチーノ＋コルネット",
-          "   カウンター（banco）で立ち飲み",
-          "   卵やベーコン、シリアルはなし",
+          "   bar（バール）で cappuccino + cornetto",
+          "   banco（カウンター）で立ったまま",
+          "   卵やベーコンはなし",
           "",
           "PRANZO（昼食、12:30〜14時）：",
-          "   伝統的にメインの食事",
-          "   プリモ→セコンド→コントールノ→カフェ",
-          "   小さな町では今もその通り",
+          "   伝統的には一日のメインの食事",
+          "   primo → secondo → contorno → caffè",
+          "   小さな町では今もそのまま",
           "",
           "CENA（夕食、20〜21時）：",
-          "   プランツォより軽いか同等",
-          "   都市部では今やメインになることも"
+          "   pranzo より軽め、または同じくらい",
+          "   都市部では今やこちらがメインのことも"
         ]
       },
       {
         "page": 2,
         "total_pages": 3,
         "content": [
-          "本格的なイタリア料理の構成：",
+          "イタリアのフルコース — その構成：",
           "",
-          "   ANTIPASTO＝前菜",
-          "      サルーミ、ブルスケッタ、オリーブ",
-          "   PRIMO＝第一料理",
-          "      パスタ、リゾット、スープ",
-          "   SECONDO＝主菜",
-          "      肉または魚（パスタなし！）",
-          "   CONTORNO＝付け合わせ",
-          "      野菜やサラダ（別皿！）",
-          "   DOLCE＝デザート",
-          "      ティラミス、パンナコッタ、果物",
-          "   CAFFÈ＝食後のエスプレッソ",
-          "   DIGESTIVO＝食後酒",
+          "   ANTIPASTO = 前菜",
+          "      salumi（ハム類）、bruschette、olive",
+          "   PRIMO = 第一の皿",
+          "      pasta、risotto、スープ",
+          "   SECONDO = 主菜",
+          "      肉か魚（パスタは出ません！）",
+          "   CONTORNO = 付け合わせ",
+          "      野菜、サラダ（別の皿で！）",
+          "   DOLCE = デザート",
+          "      tiramisù、panna cotta、果物",
+          "   CAFFÈ = 締めのエスプレッソ",
+          "   DIGESTIVO = 食後酒",
           "",
-          "これらすべてを注文する必要はない。",
-          "プリモ＋セコンド、またはプリモだけでも",
-          "まったく普通だ。"
+          "全部を注文するわけではありません。",
+          "primo + secondo、または primo だけでも",
+          "まったく普通です。"
         ]
       },
       {
         "page": 3,
         "total_pages": 3,
         "content": [
-          "イタリア人が食事をする場所の階層：",
+          "イタリア人が食べる場所 — 格式の順：",
           "",
-          "   BAR＝コーヒー、コルネット、アペリティーヴォ",
-          "      飲み屋ではなくカフェだ。",
-          "   OSTERIA＝最もシンプル、ワイン＋食事",
-          "      メニューがないことも多い",
-          "   TRATTORIA＝家族経営、家庭料理",
-          "      イタリア料理の心臓部",
-          "   RISTORANTE＝フォーマル、フルサービス",
+          "   BAR = コーヒー、cornetti、aperitivo",
+          "      飲み屋ではなく、カフェです！",
+          "   OSTERIA = いちばん素朴、ワイン + 料理",
+          "      書かれたメニューがないことも多い",
+          "   TRATTORIA = 家族経営、家庭料理",
+          "      イタリアの外食の中心",
+          "   RISTORANTE = 格式あり、フルサービス",
           "      テーブルクロス、ワインリスト、コース",
           "",
           "コーヒーのルール：",
-          "   カプチーノ＝朝限定、絶対に",
-          "     食後に飲まない（現地人は気づく）",
-          "   カフェ＝エスプレッソ、いつでもOK",
-          "   マッキアート＝エスプレッソ＋少量の牛乳",
-          "   カフェ・コレット＝エスプレッソ＋グラッパ"
+          "   cappuccino = 朝だけ。食事の後には",
+          "     決して頼まない（地元の人は気づきます）",
+          "   caffè = エスプレッソ。一日中いつでも",
+          "   macchiato = エスプレッソ + 牛乳を少し",
+          "   caffè corretto = エスプレッソ + grappa",
+          "頼み方：un caffè, per favore.          1を押す"
         ],
-        "pronunciation": "Un caffè, per favore."
+        "pronunciation_mappings": {
+          "1": "Un caffè, per favore."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "047",
+    "trigger_word": "espresso",
+    "trigger_card_number": 1002,
+    "title": "第28課: SI IMPERSONALE",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "SI + 動詞 =「人が一般にすること」。",
+          "動詞はいつも三人称単数、",
+          "つまり lui/lei の形のままです。",
+          "",
+          "   Al banco si beve in fretta.         1を押す",
+          "      = カウンターではさっと飲むものです。",
+          "   In Italia si mangia tardi.          2を押す",
+          "      = イタリアでは食事の時間が遅いです。",
+          "   Come si dice in italiano?           3を押す",
+          "      = イタリア語で何と言いますか？",
+          "   Si dice così.                       4を押す",
+          "      = こう言います。",
+          "",
+          "英語なら you・one・they や受け身で訳す",
+          "ところですが、日本語は主語を省くだけです。"
+        ],
+        "pronunciation": "Si vive bene qui.",
+        "pronunciation_mappings": {
+          "1": "Al banco si beve in fretta.",
+          "2": "In Italia si mangia tardi.",
+          "3": "Come si dice in italiano?",
+          "4": "Si dice così."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "名詞が複数なら、動詞も複数形に：",
+          "   Qui si vende il pane.               1を押す",
+          "      = ここでパンを売っています。",
+          "   Qui si vendono i giornali.",
+          "      = ここで新聞を売っています。",
+          "",
+          "再帰動詞は ci si（si si は不可）       2を押す",
+          "   In Italia ci si saluta con due baci.",
+          "      = イタリアでは頬に2回キスをして",
+          "        あいさつします。",
+          "",
+          "看板や店のドアで：                     3を押す",
+          "   Si affitta.  = 貸します（賃貸物件）。",
+          "   Si vende.    = 売ります（売り物件）。",
+          "   Si prega di non fumare.",
+          "      = おタバコはご遠慮ください。",
+          "   古い形 affittasi、vendesi も",
+          "   今なお見かけます。"
+        ],
+        "pronunciation_mappings": {
+          "1": "Qui si vende il pane. Qui si vendono i giornali.",
+          "2": "In Italia ci si saluta con due baci.",
+          "3": "Si affitta. Si vende. Si prega di non fumare."
+        }
       }
     ]
   }

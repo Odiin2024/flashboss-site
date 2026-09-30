@@ -2,8 +2,8 @@
   {
     "lesson_id": "022",
     "trigger_word": "coniuge",
-    "trigger_card_number": 1243,
-    "title": "LECCIÓN 22: FAMILIA Y SUS ETAPAS",
+    "trigger_card_number": 1242,
+    "title": "LECCIÓN 29: FAMILIA Y SUS ETAPAS",
     "header_color": "magenta",
     "pages": [
       {
@@ -23,9 +23,9 @@
           "   single = soltero/a (préstamo del inglés)",
           "",
           "FAMILIA EXTENDIDA:",
-          "   parente = pariente (¡NO padre/madre!)",
+          "   parente = pariente (padres = genitori)",
           "   parentela = la familia extendida",
-          "   padrino / madrina = padrino/madrina",
+          "   padrino / madrina = padrino / madrina",
           "   erede = heredero/a"
         ]
       },
@@ -33,14 +33,14 @@
         "page": 2,
         "total_pages": 2,
         "content": [
-          "EVENTOS DE LA VIDA — hitos en italiano:",
+          "EVENTOS DE LA VIDA — los hitos italianos:",
           "",
           "   nascita = nacimiento",
-          "   battesimo = bautismo (¡gran fiesta!)",
+          "   battesimo = bautizo (¡gran fiesta!)",
           "   comunione = Primera Comunión (9 años)",
           "   cresima = Confirmación (12-13 años)",
           "   laurea = graduación universitaria",
-          "   nozze = boda (término formal)",
+          "   le nozze = la boda (siempre plural)",
           "   parto = parto, dar a luz",
           "",
           "Cada evento es una reunión familiar.",
@@ -56,10 +56,67 @@
     ]
   },
   {
+    "lesson_id": "030",
+    "trigger_word": "extra",
+    "trigger_card_number": 1311,
+    "title": "LECCIÓN 30: TRAPASSATO PROSSIMO",
+    "header_color": "magenta",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "El TRAPASSATO PROSSIMO = tu pluscuamperfecto",
+          "(había comido): algo que HABÍA SUCEDIDO",
+          "antes de otro evento pasado.",
+          "",
+          "FÓRMULA: imperfetto de avere/essere",
+          "         + participio pasado",
+          "",
+          "CON AVERE:",
+          "   avevo mangiato = había comido",
+          "   avevi detto = habías dicho",
+          "   aveva scritto = había escrito",
+          "   avevamo finito = habíamos terminado",
+          "",
+          "CON ESSERE (los verbos del passato p.):",
+          "   ero andato/a = había ido",
+          "   era arrivato/a = había llegado",
+          "   eravamo partiti/e = habíamos salido"
+        ],
+        "pronunciation": "Ero già partito."
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "POR QUÉ IMPORTA — la secuencia de tiempos:",
+          "",
+          "   Quando sono arrivato, Maria",
+          "   era già partita.",
+          "   = Cuando llegué, María ya",
+          "     se había ido.",
+          "",
+          "   Il conto aveva tre voci extra che",
+          "   non avevamo ordinato.",
+          "   = La cuenta tenía tres cargos extra",
+          "     que no habíamos pedido.",
+          "",
+          "PATRÓN: un evento pasado ocurrió",
+          "ANTES que otro evento pasado.",
+          "   passato p. / imperfetto = el posterior",
+          "   trapassato = el anterior",
+          "",
+          "Esta es la base de toda narración."
+        ]
+      }
+    ]
+  },
+  {
     "lesson_id": "023",
     "trigger_word": "ricovero",
-    "trigger_card_number": 1317,
-    "title": "LECCIÓN 23: ITALIANO MÉDICO",
+    "trigger_card_number": 1313,
+    "title": "LECCIÓN 31: ITALIANO MÉDICO",
     "header_color": "magenta",
     "pages": [
       {
@@ -71,10 +128,10 @@
           "importa si vives allí.",
           "",
           "EL SISTEMA:",
-          "   medico di base = de cabecera (gratis)",
+          "   medico di base = médico familiar (gratis)",
           "   pronto soccorso = urgencias",
           "   farmacia = farmacia (¡primera parada!)",
-          "   ricetta = receta (papel rojo)",
+          "   ricetta = receta (ahora digital)",
           "   tessera sanitaria = tarjeta de salud",
           "",
           "NÚMEROS DE EMERGENCIA:",
@@ -91,14 +148,15 @@
         "page": 2,
         "total_pages": 2,
         "content": [
-          "EN LA CONSULTA — frases útiles:",
+          "EN EL CONSULTORIO — frases útiles:",
           "",
           "   mi fa male... = me duele...",
           "      mi fa male la testa",
           "      mi fa male lo stomaco",
           "   ho la febbre = tengo fiebre",
           "   ho mal di gola = me duele la garganta",
-          "   non mi sento bene = no me siento bien",
+          "   non mi sento bene",
+          "      = no me siento bien",
           "",
           "VOCABULARIO MÉDICO:",
           "   chirurgo = cirujano",
@@ -114,18 +172,18 @@
   },
   {
     "lesson_id": "024",
-    "trigger_word": "folle",
-    "trigger_card_number": 1368,
+    "trigger_word": "gioia",
+    "trigger_card_number": 1346,
+    "title": "LECCIÓN 32: EL SUBJUNTIVO",
     "header_color": "magenta",
-    "title": "LECCIÓN 24: EL SUBJUNTIVO",
     "pages": [
       {
         "page": 1,
-        "total_pages": 5,
+        "total_pages": 6,
         "content": [
           "El CONGIUNTIVO (subjuntivo) expresa",
           "duda, deseo, opinión o emoción:",
-          "cualquier cosa que no sea un hecho.",
+          "todo lo que no se afirma como hecho.",
           "",
           "INDICATIVO (hecho):",
           "   Marco parla italiano.",
@@ -133,10 +191,10 @@
           "",
           "SUBJUNTIVO (opinión/duda):",
           "   Penso che Marco parli italiano.",
-          "   Pienso que Marco hable italiano.",
+          "   Creo que Marco habla italiano.",
           "",
-          "DISPARADORES: verbos que requieren 'che' +",
-          "subjuntivo en la segunda cláusula:",
+          "DISPARADORES: verbos que piden che +",
+          "subjuntivo, ¡aun donde el español no!",
           "   pensare, credere, sperare,",
           "   temere, dubitare, volere,",
           "   preferire, sembrare, parere..."
@@ -145,7 +203,7 @@
       },
       {
         "page": 2,
-        "total_pages": 5,
+        "total_pages": 6,
         "content": [
           "SUBJUNTIVO PRESENTE — essere y avere:",
           "",
@@ -168,7 +226,7 @@
       },
       {
         "page": 3,
-        "total_pages": 5,
+        "total_pages": 6,
         "content": [
           "SUBJUNTIVO PRESENTE — terminaciones regulares:",
           "",
@@ -182,7 +240,7 @@
           "",
           "EJEMPLOS:",
           "   Credo che parli bene.",
-          "   Creo que hable bien.",
+          "   Creo que habla bien.",
           "   Spero che scriva presto.",
           "   Espero que escriba pronto.",
           "   Voglio che partano domani.",
@@ -191,7 +249,7 @@
       },
       {
         "page": 4,
-        "total_pages": 5,
+        "total_pages": 6,
         "content": [
           "Ahora el SUBJUNTIVO IMPERFECTO: se usa",
           "cuando el verbo principal está en pasado.",
@@ -207,13 +265,13 @@
           "   che voi      foste",
           "   che loro     fossero",
           "",
-          "Cuando la cláusula principal va al pasado,",
-          "el subjuntivo sigue."
+          "Cuando la oración principal pasa al pasado,",
+          "el subjuntivo la sigue (fossi ≈ fuese)."
         ]
       },
       {
         "page": 5,
-        "total_pages": 5,
+        "total_pages": 6,
         "content": [
           "AVERE — subjuntivo imperfecto:",
           "   che io       avessi",
@@ -223,7 +281,7 @@
           "   che voi      aveste",
           "   che loro     avessero",
           "",
-          "TERMINACIONES REGULARES EN IMPERFECTO:",
+          "TERMINACIONES REGULARES (≈ -ase/-iese):",
           "        -ARE      -ERE      -IRE",
           "io      -assi     -essi     -issi",
           "tu      -assi     -essi     -issi",
@@ -232,6 +290,36 @@
           "voi     -aste     -este     -iste",
           "loro    -assero   -essero   -issero"
         ]
+      },
+      {
+        "page": 6,
+        "total_pages": 6,
+        "content": [
+          "Subjuntivo presente IRREGULAR — una sola",
+          "forma para io, tu y lui/lei:          Presiona 1",
+          "   andare → vada      fare   → faccia",
+          "   potere → possa     sapere → sappia",
+          "   stare  → stia      dire   → dica",
+          "   venire → venga     volere → voglia",
+          "",
+          "Tras SUPERLATIVOS, como en español:   Presiona 2",
+          "   la cosa più bella che si possa",
+          "   immaginare = lo más bello imaginable",
+          "",
+          "Verbos en -ISC-, como en presente:    Presiona 3",
+          "   che io finisca, che noi finiamo",
+          "",
+          "¿MISMO SUJETO? di + infinitivo:       Presiona 4",
+          "   Penso di avere ragione.",
+          "      = Creo que tengo razón.",
+          "   (NO: penso che io abbia ragione)"
+        ],
+        "pronunciation_mappings": {
+          "1": "Che io vada. Che io faccia. Che io possa. Che io sappia. Che io stia. Che io dica. Che io venga. Che io voglia.",
+          "2": "La cosa più bella che si possa immaginare.",
+          "3": "Che io finisca. Che noi finiamo.",
+          "4": "Penso di avere ragione."
+        }
       }
     ]
   }

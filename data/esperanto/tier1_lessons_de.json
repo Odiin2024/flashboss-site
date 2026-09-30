@@ -1,417 +1,1070 @@
 [
-  {
-    "lesson_id": "001",
-    "trigger_word": "saluton",
-    "title": "LEKTION 1: ESPERANTO-LAUTE",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
-        "content": [
-          "Die Aussprache des Esperanto ist",
-          "regelmäßig: Jeder Buchstabe steht immer",
-          "für denselben Laut. Hier die Vokale:",
-          "",
-          "'A' wie in Vater:            Drücke 1",
-          "   amiko, tablo, kato",
-          "",
-          "'E' wie in Bett:             Drücke 2",
-          "   espero, bela, tre",
-          "",
-          "'I' wie in Maschine:         Drücke 3",
-          "   iri, amiko, mi",
-          "",
-          "'O' wie in Oma:              Drücke 4",
-          "   oro, nova, horo",
-          "",
-          "'U' wie in gut:              Drücke 5",
-          "   urbo, kultur, nu"
-        ],
-        "pronunciation": "Leciono unu",
-        "pronunciation_speed": 1.4,
-        "pronunciation_mappings": {
-          "1": "amiko, tablo, kato",
-          "2": "espero, bela, tre",
-          "3": "iri, amiko, mi",
-          "4": "oro, nova, horo",
-          "5": "urbo, kultur, nu"
-        }
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "content": [
-          "Einige Konsonanten tragen ein Hütchen.",
-          "Sieht wild aus, macht die Sache aber",
-          "einfacher, sobald du es kennst!",
-          "",
-          "Ĉ = 'tsch' wie in Tschüs:               Drücke 1",
-          "   ĉambro, ĉokolado, ĉefo",
-          "",
-          "Ĝ = 'dsch' wie in Dschungel:            Drücke 2",
-          "   ĝardeno, oranĝo, ĝojo",
-          "",
-          "Ĵ = 'j' wie in Journal:                 Drücke 3",
-          "   ĵurnalo, ĵaŭdo, ĵazo",
-          "",
-          "Ŝ = 'sch' wie in Schiff:                Drücke 4",
-          "   ŝipo, fiŝo, ŝranko",
-          "",
-          "Ŭ = 'u' wie in Haus (au):               Drücke 5",
-          "   aŭ → aŭto   eŭ → Eŭropo"
-        ],
-        "pronunciation_speed": 1.4,
-        "pronunciation_mappings": {
-          "1": "ĉambro, ĉokolado, ĉefo",
-          "2": "ĝardeno, oranĝo, ĝojo",
-          "3": "ĵurnalo, ĵaŭdo, ĵazo",
-          "4": "ŝipo, fiŝo, ŝranko",
-          "5": "aŭ, aŭto, eŭ, Eŭropo"
-        }
-      }
-    ]
-  },
-  {
-    "lesson_id": "002",
-    "trigger_word": "estas",
-    "title": "LEKTION 2: PRÄSENS",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "Das Präsens ist einfach: ALLE Verben enden",
-          "auf -as, egal wer gerade handelt.",
-          "",
-          "BEISPIELE MIT 'ESTI' (sein):",
-          "mi estas      = ich bin",
-          "vi estas      = du bist",
-          "li estas      = er ist",
-          "ŝi estas      = sie ist",
-          "ni estas      = wir sind",
-          "ili estas     = sie sind",
-          "",
-          "BEISPIELE MIT 'PAROLI' (sprechen):",
-          "mi parolas    = ich spreche",
-          "vi parolas    = du sprichst",
-          "li parolas    = er spricht",
-          "",
-          "Das Verb ändert sich NIE! Eine Form für",
-          "alle - kein bin/bist/ist wie im Deutschen."
-        ],
-        "pronunciation": "Leciono du"
-      }
-    ]
-  },
-  {
-    "lesson_id": "003",
-    "trigger_word": "alia",
-    "title": "LEKTION 3: ADJEKTIVE & PLURAL",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
-        "content": [
-          "Jedes Adjektiv im Esperanto endet auf -a.",
-          "So erkennst du sie sofort!",
-          "",
-          "HÄUFIGE ADJEKTIVE:",
-          "",
-          "bona   = gut         malbona   = schlecht",
-          "granda = groß        malgranda = klein",
-          "bela   = schön       nova      = neu",
-          "",
-          "WORTSTELLUNG - beides geht:",
-          "",
-          "bona libro  = ein gutes Buch",
-          "libro bona  = ein gutes Buch (geht auch!)",
-          "",
-          "TIPP: Beschreibt es ein Substantiv und",
-          "endet auf -a, ist es ein Adjektiv. Einfach!"
-        ],
-        "pronunciation": "Leciono tri"
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "content": [
-          "PLURAL: -j an Substantiv UND Adjektiv.",
-          "",
-          "SUBSTANTIVE (-o wird -oj):",
-          "amiko   → amikoj    = Freund → Freunde",
-          "libro   → libroj    = Buch → Bücher",
-          "hundo   → hundoj    = Hund → Hunde",
-          "",
-          "ADJEKTIVE PASSEN SICH AN:",
-          "bona amiko    → bonaj amikoj",
-          "granda libro  → grandaj libroj",
-          "",
-          "AUSSPRACHE:",
-          "Das -j klingt wie ein kurzes 'i':",
-          "amikoj = a-MI-koi",
-          "",
-          "Substantiv UND Adjektiv bekommen -j!",
-          "La grandaj hundoj kuras.",
-          "(Die großen Hunde rennen.)"
+    {
+        "lesson_id": "001",
+        "trigger_word": "saluton",
+        "title": "LEKTION 1: ESPERANTO-LAUTE",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 3,
+                "content": [
+                    "Die Aussprache des Esperanto ist regelmäßig:",
+                    "Jeder Buchstabe klingt immer gleich.",
+                    "Hier sind die fünf Vokale:",
+                    "",
+                    "'A' wie in Vater:                    Drücke 1",
+                    "   amiko, tablo, kato",
+                    "",
+                    "'E' wie in Bett:                     Drücke 2",
+                    "   espero, bela, tre",
+                    "",
+                    "'I' wie in Maschine:                 Drücke 3",
+                    "   iri, amiko, mi",
+                    "",
+                    "'O' wie in Oma:                      Drücke 4",
+                    "   oro, nova, horo",
+                    "",
+                    "'U' wie in gut:                      Drücke 5",
+                    "   urbo, kulturo, nu"
+                ],
+                "pronunciation": "Leciono unu",
+                "pronunciation_mappings": {
+                    "1": "Amiko. Tablo. Kato.",
+                    "2": "Espero. Bela. Tre.",
+                    "3": "Iri. Amiko. Mi.",
+                    "4": "Oro. Nova. Horo.",
+                    "5": "Urbo. Kulturo. Nu."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 3,
+                "content": [
+                    "Einige Konsonanten tragen ein Hütchen.",
+                    "Sieht wild aus, macht die Sache aber",
+                    "einfacher, sobald du es kennst!",
+                    "",
+                    "Ĉ = 'tsch' wie in Tschüs:            Drücke 1",
+                    "   ĉambro, ĉokolado, ĉefo",
+                    "",
+                    "Ĝ = 'dsch' wie in Dschungel:         Drücke 2",
+                    "   ĝardeno, oranĝo, ĝojo",
+                    "",
+                    "Ĵ = 'j' wie in Journal:              Drücke 3",
+                    "   ĵurnalo, ĵaŭdo, ĵazo",
+                    "",
+                    "Ŝ = 'sch' wie in Schiff:             Drücke 4",
+                    "   ŝipo, fiŝo, ŝranko",
+                    "",
+                    "Ŭ = 'u' wie in Haus (au):            Drücke 5",
+                    "   aŭ → aŭto   eŭ → Eŭropo"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Ĉambro. Ĉokolado. Ĉefo.",
+                    "2": "Ĝardeno. Oranĝo. Ĝojo.",
+                    "3": "Ĵurnalo. Ĵaŭdo. Ĵazo.",
+                    "4": "Ŝipo. Fiŝo. Ŝranko.",
+                    "5": "Aŭ. Aŭto. Eŭropo."
+                }
+            },
+            {
+                "page": 3,
+                "total_pages": 3,
+                "content": [
+                    "NOCH EIN PAAR BUCHSTABEN ZUM MERKEN:",
+                    "",
+                    "C = 'z' wie in Zeit:                 Drücke 1",
+                    "   cent, certa, facila",
+                    "",
+                    "J = 'j' wie in ja:                   Drücke 2",
+                    "   jes, jam, jaro",
+                    "",
+                    "G = immer hart, wie in gut:          Drücke 3",
+                    "   granda, legi, grava",
+                    "",
+                    "Ĥ = 'ch' wie in Bach (selten):       Drücke 4",
+                    "   ĥoro, eĥo",
+                    "",
+                    "BETONUNG: immer die vorletzte Silbe.",
+                    "Jeder Vokal zählt mit:               Drücke 5",
+                    "   a-MI-ko, fa-CI-la, es-pe-RAN-to",
+                    "   fa-mi-LI-o"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Cent. Certa. Facila.",
+                    "2": "Jes. Jam. Jaro.",
+                    "3": "Granda. Legi. Grava.",
+                    "4": "Ĥoro. Eĥo.",
+                    "5": "Amiko. Facila. Esperanto. Familio."
+                }
+            }
         ]
-      }
-    ]
-  },
-  {
-    "lesson_id": "004",
-    "trigger_word": "bone",
-    "title": "LEKTION 4: ADVERBIEN AUF -E",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "Adverbien sagen, WIE etwas geschieht.",
-          "Im Esperanto enden sie immer auf -e.",
-          "Im Deutschen sehen Adjektiv und Adverb",
-          "gleich aus - Esperanto trennt sie klar:",
-          "",
-          "bona → bone       = gut",
-          "rapida → rapide   = schnell",
-          "facila → facile   = leicht",
-          "lenta → lente     = langsam",
-          "",
-          "DER UNTERSCHIED:",
-          "Li estas bona.",
-          "(Er ist gut. ← beschreibt IHN)",
-          "",
-          "Li kantas bone.",
-          "(Er singt gut. ← beschreibt das WIE)",
-          "",
-          "Merke: -a fürs Substantiv, -e fürs Tun!"
-        ],
-        "pronunciation": "Leciono kvar"
-      }
-    ]
-  },
-  {
-    "lesson_id": "005",
-    "trigger_word": "kio",
-    "title": "LEKTION 5: FRAGEWÖRTER (KI-)",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "Alle Fragewörter im Esperanto beginnen",
-          "mit KI-. Sie gehören zu einem schönen",
-          "System - mehr dazu später!",
-          "",
-          "DIE FRAGEWÖRTER:",
-          "kio   = was (Ding)",
-          "kiu   = wer / welcher",
-          "kie   = wo (Ort)",
-          "kiam  = wann (Zeit)",
-          "kial  = warum (Grund)",
-          "kiel  = wie (Art)",
-          "kiom  = wie viel / wie viele",
-          "",
-          "BEISPIELE:",
-          "Kio estas tio?     = Was ist das?",
-          "Kiu vi estas?      = Wer bist du?",
-          "Kie vi loĝas?      = Wo wohnst du?",
-          "Kiam vi venas?     = Wann kommst du?"
-        ],
-        "pronunciation": "Leciono kvin"
-      }
-    ]
-  },
-  {
-    "lesson_id": "006",
-    "trigger_word": "helpo",
-    "title": "LEKTION 6: DER ARTIKEL \"LA\"",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "Esperanto hat EINEN Artikel: LA",
-          "(der/die/das).",
-          "",
-          "MIT LA = etwas Bestimmtes, Bekanntes:",
-          "Mi vidas la hundon. = Ich sehe den Hund.",
-          "La libro relevanta estas sur la tablo.",
-          "= Das relevante Buch liegt auf dem Tisch.",
-          "",
-          "OHNE ARTIKEL = allgemeiner Begriff:",
-          "Mi amas muzikon. = Ich liebe Musik.",
-          "Akvo estas necesa. = Wasser ist nötig.",
-          "Ŝi volas kafon. = Sie will Kaffee.",
-          "",
-          "VERGLEICHE:",
-          "Mi legas libron. = Ich lese ein Buch.",
-          "Mi legas la libron. = Ich lese das Buch.",
-          "Kein 'ein/eine' - der Kontext sagt es dir! LA",
-          "ändert sich nie: la viro, la viroj, la domo."
-        ],
-        "pronunciation": "Leciono ses"
-      }
-    ]
-  },
-  {
-    "lesson_id": "007",
-    "trigger_word": "ĉu",
-    "title": "LEKTION 7: JA/NEIN-FRAGEN",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "Aus jeder Aussage wird eine Ja/Nein-Frage,",
-          "wenn du ĈU an den Anfang stellst.",
-          "Die Wortstellung bleibt gleich - anders als",
-          "im Deutschen muss das Verb nicht nach vorn!",
-          "",
-          "AUSSAGE → FRAGE:",
-          "Vi parolas Esperanton.",
-          "(Du sprichst Esperanto.)",
-          "  ↓",
-          "Ĉu vi parolas Esperanton?",
-          "(Sprichst du Esperanto?)",
-          "",
-          "WEITERE BEISPIELE:",
-          "Ĉu estas problemo?  = Gibt es ein Problem?",
-          "Ĉu li venas?        = Kommt er?",
-          "Ĉu vi komprenas?    = Verstehst du?",
-          "",
-          "ANTWORTEN: Jes = Ja  /  Ne = Nein"
-        ],
-        "pronunciation": "Leciono sep"
-      }
-    ]
-  },
-  {
-    "lesson_id": "008",
-    "trigger_word": "patrino",
-    "title": "LEKTION 8: WEIBLICH MIT -IN-",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "Um ein Wort ausdrücklich weiblich zu machen,",
-          "setz -IN- hinter die Wurzel, vor die Endung.",
-          "",
-          "Genau wie das deutsche -in: Lehrer →",
-          "Lehrerin!",
-          "",
-          "FAMILIE:",
-          "patro → patrino    = Vater → Mutter",
-          "frato → fratino    = Bruder → Schwester",
-          "filo → filino      = Sohn → Tochter",
-          "",
-          "AUFBAU:",
-          "patr-in-o  = Mutter (Substantiv -o)",
-          "patr-in-a  = mütterlich (Adjektiv -a)",
-          "GEHT MIT ALLEM:",
-          "knabo → knabino    = Junge → Mädchen",
-          "hundo → hundino    = Hund → Hündin",
-          "amiko → amikino    = Freund → Freundin"
-        ],
-        "pronunciation": "Leciono ok"
-      }
-    ]
-  },
-  {
-    "lesson_id": "009",
-    "trigger_word": "malbona",
-    "title": "LEKTION 9: GEGENTEIL MIT MAL-",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 1,
-        "content": [
-          "MAL- ist eines der mächtigsten Werkzeuge",
-          "des Esperanto. Stell es vor ein Wort und",
-          "du bekommst sofort das Gegenteil!",
-          "",
-          "ADJEKTIVE:",
-          "bona → malbona      = gut → schlecht",
-          "granda → malgranda  = groß → klein",
-          "nova → malnova      = neu → alt",
-          "alta → malalta      = hoch → niedrig",
-          "juna → maljuna      = jung → alt",
-          "",
-          "AUCH VERBEN:",
-          "fermi → malfermi    = schließen → öffnen",
-          "ami → malami        = lieben → hassen",
-          "",
-          "Das HALBIERT deinen Lernaufwand!",
-          "Lern 'bona', krieg 'malbona' gratis!"
-        ],
-        "pronunciation": "Leciono naŭ"
-      }
-    ]
-  },
-  {
-    "lesson_id": "010",
-    "trigger_word": "unu",
-    "title": "LEKTION 10: DAS ZAHLSYSTEM",
-    "header_color": "green",
-    "pages": [
-      {
-        "page": 1,
-        "total_pages": 2,
-        "content": [
-          "Esperanto-Zahlen sind völlig regelmäßig.",
-          "Lern die Grundzahlen, dann kombiniere!",
-          "",
-          "GRUNDZAHLEN:",
-          "",
-          "0 = nul    5 = kvin    10 = dek",
-          "1 = unu    6 = ses     11 = dek unu",
-          "2 = du     7 = sep     12 = dek du",
-          "3 = tri    8 = ok      13 = dek tri",
-          "4 = kvar   9 = naŭ     14 = dek kvar",
-          "",
-          "GRÖSSERE ZAHLEN BAUEN:",
-          "20 = dudek (du + dek = zwei Zehner)",
-          "30 = tridek, 40 = kvardek usw.",
-          "100 = cent, 1000 = mil",
-          "",
-          "KOMBINIERT: 23 = dudek tri - nichts wird",
-          "gedreht wie bei 'dreiundzwanzig'!"
-        ],
-        "pronunciation": "Leciono dek"
-      },
-      {
-        "page": 2,
-        "total_pages": 2,
-        "content": [
-          "ORDNUNGSZAHLEN (erster, zweiter ...):",
-          "Hänge -a an die Zahl. Sie sind Adjektive!",
-          "",
-          "unua    = erster      kvara   = vierter",
-          "dua     = zweiter     kvina   = fünfter",
-          "tria    = dritter     deka    = zehnter",
-          "",
-          "GRÖSSERE ORDNUNGSZAHLEN:",
-          "dudek-unua = einundzwanzigster",
-          "centa = hundertster",
-          "",
-          "IM SATZ:",
-          "Ĉi tiu estas mia unua leciono.",
-          "(Das ist meine erste Lektion.)",
-          "Li loĝas sur la tria etaĝo.",
-          "(Er wohnt im dritten Stock.)",
-          "",
-          "Wie Adjektive: unuaj paŝoj = erste Schritte"
+    },
+    {
+        "lesson_id": "002",
+        "trigger_word": "estas",
+        "title": "LEKTION 2: PRÄSENS",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "Das Präsens ist im Esperanto einfach:",
+                    "ALLE Verben enden auf -as, egal wer handelt.",
+                    "",
+                    "BEISPIELE MIT 'ESTI' (sein):         Drücke 1",
+                    "",
+                    "mi estas      = ich bin",
+                    "vi estas      = du bist / ihr seid / Sie sind",
+                    "li estas      = er ist",
+                    "ŝi estas      = sie ist",
+                    "ni estas      = wir sind",
+                    "ili estas     = sie sind",
+                    "",
+                    "BEISPIELE MIT 'PAROLI' (sprechen):   Drücke 2",
+                    "mi parolas    = ich spreche",
+                    "vi parolas    = du sprichst",
+                    "li parolas    = er spricht",
+                    "",
+                    "Das Verb ändert sich NIE! Eine Form für alle."
+                ],
+                "pronunciation": "Leciono du",
+                "pronunciation_mappings": {
+                    "1": "Mi estas. Vi estas. Li estas. Ŝi estas. Ni estas. Ili estas.",
+                    "2": "Mi parolas. Vi parolas. Li parolas."
+                }
+            }
         ]
-      }
-    ]
-  }
+    },
+    {
+        "lesson_id": "004",
+        "trigger_word": "bone",
+        "title": "LEKTION 3: ADVERBIEN AUF -E",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "Adverbien sagen, WIE etwas geschieht.",
+                    "Aus anderen Wörtern gebildete Adverbien",
+                    "enden auf -e, so wie Adjektive auf -a.",
+                    "",
+                    "VOM ADJEKTIV ZUM ADVERB:             Drücke 1",
+                    "bona → bone           = gut",
+                    "rapida → rapide       = schnell",
+                    "facila → facile       = leicht",
+                    "malrapida → malrapide = langsam",
+                    "",
+                    "DER UNTERSCHIED:                     Drücke 2",
+                    "Li estas bona.",
+                    "(Er ist gut. ← beschreibt IHN)",
+                    "",
+                    "Li kantas bone.",
+                    "(Er singt gut. ← beschreibt das WIE)"
+                ],
+                "pronunciation": "Leciono kvar",
+                "pronunciation_mappings": {
+                    "1": "Bona. Bone. Rapida. Rapide. Facila. Facile. Malrapida. Malrapide.",
+                    "2": "Li estas bona. Li kantas bone."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "MANCHE ADVERBIEN HABEN GAR KEIN -E:  Drücke 1",
+                    "   nun = jetzt        tre    = sehr",
+                    "   jam = schon        hodiaŭ = heute",
+                    "Sie sind schon Adverbien. Nichts anhängen!",
+                    "",
+                    "EINE WURZEL, DREI AUFGABEN:          Drücke 2",
+                    "   rapido = Tempo     -o benennt ein Ding",
+                    "   rapida = schnell   -a beschreibt es",
+                    "   rapide = schnell   -e sagt, wie",
+                    "",
+                    "ALLES ZUSAMMEN:                      Drücke 3",
+                    "   Mi fartas tre bone.",
+                    "   = Mir geht es sehr gut.",
+                    "   Nun mi parolas malrapide.",
+                    "   = Jetzt spreche ich langsam."
+                ],
+                "pronunciation_mappings": {
+                    "1": "Nun. Tre. Jam. Hodiaŭ.",
+                    "2": "Rapido. Rapida. Rapide.",
+                    "3": "Mi fartas tre bone. Nun mi parolas malrapide."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "030",
+        "trigger_word": "bonvolu",
+        "title": "LEKTION 4: BEFEHLE UND BITTEN",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "Die Endung -U macht aus einem Verb eine Bitte",
+                    "oder einen Befehl. Eine Form für alle!",
+                    "",
+                    "Im Wörterbuch endet ein Verb auf -I.",
+                    "Tausch das -I gegen -U:              Drücke 1",
+                    "   veni    → Venu!     = Komm!",
+                    "   atendi  → Atendu!   = Warte!",
+                    "   helpi   → Helpu!    = Hilf!",
+                    "   pardoni → Pardonu!  = Entschuldigung!",
+                    "",
+                    "BITTE = BONVOLU + die -I-Form:       Drücke 2",
+                    "   Bonvolu ripeti!     = Bitte wiederholen!",
+                    "   Bonvolu atendi!     = Bitte warten!",
+                    "   (bonvolu = 'sei so gut und ...')"
+                ],
+                "pronunciation": "Leciono tridek",
+                "pronunciation_mappings": {
+                    "1": "Venu! Atendu! Helpu! Pardonu!",
+                    "2": "Bonvolu ripeti! Bonvolu atendi!"
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "LASST UNS ... = NI + -U:             Drücke 1",
+                    "   Ni iru!             = Gehen wir!",
+                    "   Ni komencu!         = Fangen wir an!",
+                    "",
+                    "... NICHT! = NE + -U:                Drücke 2",
+                    "   Ne forgesu!         = Vergiss es nicht!",
+                    "   Ne timu!            = Hab keine Angst!",
+                    "",
+                    "KLAPPT AUCH MIT ER UND SIE:          Drücke 3",
+                    "   Li venu!            = Er soll kommen!",
+                    "",
+                    "HÖFLICHER: + MI PETAS (ich bitte):   Drücke 4",
+                    "   Atendu, mi petas!   = Warte bitte!"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Ni iru! Ni komencu!",
+                    "2": "Ne forgesu! Ne timu!",
+                    "3": "Li venu!",
+                    "4": "Atendu, mi petas!"
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "006",
+        "trigger_word": "helpo",
+        "title": "LEKTION 5: DER ARTIKEL \"LA\"",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "Esperanto hat EINEN Artikel: LA (der/die/das).",
+                    "",
+                    "MIT LA = bestimmt, bekannt:          Drücke 1",
+                    "   La kafo estas bona.  = Der Kaffee ist gut.",
+                    "   La libro estas sur la tablo.",
+                    "   = Das Buch liegt auf dem Tisch.",
+                    "",
+                    "OHNE LA = beliebig oder allgemein:   Drücke 2",
+                    "   Muziko estas bela.   = Musik ist schön.",
+                    "   Akvo estas necesa.   = Wasser ist nötig.",
+                    "",
+                    "ES GIBT KEIN EIN / EINE:             Drücke 3",
+                    "   Tio estas libro.     = Das ist ein Buch.",
+                    "   Tio estas la libro.  = Das ist das Buch.",
+                    "",
+                    "Namen haben meist kein LA: Marko, Eŭropo.",
+                    "LA selbst ändert nie seine Form."
+                ],
+                "pronunciation": "Leciono ses",
+                "pronunciation_mappings": {
+                    "1": "La kafo estas bona. La libro estas sur la tablo.",
+                    "2": "Muziko estas bela. Akvo estas necesa.",
+                    "3": "Tio estas libro. Tio estas la libro."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "005",
+        "trigger_word": "kio",
+        "title": "LEKTION 6: FRAGEWÖRTER (KI-)",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "Die meisten Fragewörter im Esperanto",
+                    "beginnen mit KI-. Sie gehören zu einem",
+                    "schönen System (siehe nächste Seite).",
+                    "",
+                    "DIE FRAGEWÖRTER:                     Drücke 1",
+                    "kio   = was (Ding)",
+                    "kiu   = wer / welcher",
+                    "kie   = wo (Ort)",
+                    "kiam  = wann (Zeit)",
+                    "kial  = warum (Grund)",
+                    "kiel  = wie (Art und Weise)",
+                    "kiom  = wie viel / wie viele",
+                    "",
+                    "BEISPIELE:                           Drücke 2",
+                    "Kio estas tio?     = Was ist das?",
+                    "Kiu vi estas?      = Wer bist du?",
+                    "Kie vi loĝas?      = Wo wohnst du?",
+                    "Kiam vi venas?     = Wann kommst du?"
+                ],
+                "pronunciation": "Leciono kvin",
+                "pronunciation_mappings": {
+                    "1": "Kio. Kiu. Kie. Kiam. Kial. Kiel. Kiom.",
+                    "2": "Kio estas tio? Kiu vi estas? Kie vi loĝas? Kiam vi venas?"
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "Tausch KI- gegen einen anderen Anfang,",
+                    "und du hast die Antworten:           Drücke 1",
+                    "",
+                    "            Ding   einer  Ort    Zeit",
+                    "KI-  was?   kio    kiu    kie    kiam",
+                    "TI-  das    tio    tiu    tie    tiam",
+                    "ĈI-  jede   ĉio    ĉiu    ĉie    ĉiam",
+                    "NENI- kein  nenio  neniu  nenie  neniam",
+                    "I-   irgend io     iu     ie     iam",
+                    "",
+                    "BEISPIELE:                           Drücke 2",
+                    "Kie? Tie!          = Wo? Dort!",
+                    "Ĉio estas bona.    = Alles ist gut.",
+                    "Neniu scias.       = Niemand weiß es.",
+                    "Iu venas.          = Jemand kommt.",
+                    "",
+                    "Mit ĈI wird tio (das) zu ĉi tio (dies)."
+                ],
+                "pronunciation_mappings": {
+                    "1": "Kio. Tio. Ĉio. Nenio. Io. Kiam. Tiam. Ĉiam. Neniam. Iam.",
+                    "2": "Kie? Tie! Ĉio estas bona. Neniu scias. Iu venas."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "007",
+        "trigger_word": "ĉu",
+        "title": "LEKTION 7: JA/NEIN-FRAGEN",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "Aus jeder Aussage wird eine Ja/Nein-Frage,",
+                    "wenn du einfach ĈU an den Anfang stellst.",
+                    "Die Wortstellung bleibt genau gleich!",
+                    "",
+                    "AUSSAGE → FRAGE:                     Drücke 1",
+                    "Vi parolas Esperante.",
+                    "= Du sprichst Esperanto.",
+                    "Ĉu vi parolas Esperante?",
+                    "= Sprichst du Esperanto?",
+                    "",
+                    "WEITERE BEISPIELE:                   Drücke 2",
+                    "Ĉu estas problemo?  = Gibt es ein Problem?",
+                    "Ĉu li venas?        = Kommt er?",
+                    "Ĉu vi komprenas?    = Verstehst du?",
+                    "",
+                    "ANTWORTE MIT JES ODER NE:            Drücke 3",
+                    "Jes, mi komprenas.   = Ja, ich verstehe.",
+                    "Ne, mi ne komprenas. = Nein, ich verstehe nicht."
+                ],
+                "pronunciation": "Leciono sep",
+                "pronunciation_mappings": {
+                    "1": "Vi parolas Esperante. Ĉu vi parolas Esperante?",
+                    "2": "Ĉu estas problemo? Ĉu li venas? Ĉu vi komprenas?",
+                    "3": "Jes, mi komprenas. Ne, mi ne komprenas."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "013",
+        "trigger_word": "kompreni",
+        "title": "LEKTION 8: AKKUSATIV -N (OBJEKT)",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "Die Endung -N markiert das DIREKTE OBJEKT:",
+                    "wen oder was die Handlung trifft.",
+                    "",
+                    "La kato vidas la hundon.             Drücke 1",
+                    "= Die Katze sieht den Hund.",
+                    "La hundo vidas la katon.",
+                    "= Der Hund sieht die Katze.",
+                    "",
+                    "Das -n zeigt, wer gesehen wird. Darum darf",
+                    "sich sogar die Wortstellung ändern:",
+                    "La hundon vidas la kato.             Drücke 2",
+                    "= Die Katze sieht den Hund. (Immer noch!)",
+                    "",
+                    "KEIN -N NACH ESTAS (ist):            Drücke 3",
+                    "Tio estas bona ideo.",
+                    "= Das ist eine gute Idee."
+                ],
+                "pronunciation": "Leciono dek tri",
+                "pronunciation_mappings": {
+                    "1": "La kato vidas la hundon. La hundo vidas la katon.",
+                    "2": "La hundon vidas la kato.",
+                    "3": "Tio estas bona ideo."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "AUCH PRONOMEN BEKOMMEN -N:           Drücke 1",
+                    "   mi → min    vi → vin    li → lin",
+                    "   ŝi → ŝin    ĝi → ĝin    ni → nin",
+                    "   ili → ilin",
+                    "   Mi komprenas vin. = Ich verstehe dich.",
+                    "",
+                    "EBENSO KIO, TIO UND ĈIO:             Drücke 2",
+                    "   kio → kion    tio → tion    ĉio → ĉion",
+                    "   Kion vi faras?     = Was machst du?",
+                    "   Mi komprenas ĉion. = Ich verstehe alles.",
+                    "",
+                    "ADJEKTIVE BEKOMMEN ES AUCH:          Drücke 3",
+                    "   Mi havas bonan amikon.",
+                    "   = Ich habe einen guten Freund.",
+                    "",
+                    "MEHRZAHL: ERST -J, DANN -N:          Drücke 4",
+                    "   Mi havas bonajn amikojn.",
+                    "   = Ich habe gute Freunde."
+                ],
+                "pronunciation_mappings": {
+                    "1": "Min. Vin. Lin. Ŝin. Ĝin. Nin. Ilin. Mi komprenas vin.",
+                    "2": "Kion vi faras? Mi komprenas ĉion.",
+                    "3": "Mi havas bonan amikon.",
+                    "4": "Mi havas bonajn amikojn."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "071",
+        "trigger_word": "kiom",
+        "title": "LEKTION 9: MENGEN MIT DA",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "DA verbindet eine Menge mit dem, was sie misst.",
+                    "Nach DA steht das bloße Substantiv: kein LA",
+                    "und niemals ein -N.",
+                    "",
+                    "WIE VIEL? WIE VIELE? = KIOM DA:      Drücke 1",
+                    "   Kiom da tempo vi havas?",
+                    "   = Wie viel Zeit hast du?",
+                    "   Kiom da amikoj vi havas?",
+                    "   = Wie viele Freunde hast du?",
+                    "",
+                    "MENGE + DA + SACHE:                  Drücke 2",
+                    "   taso da kafo     = eine Tasse Kaffee",
+                    "   glaso da akvo    = ein Glas Wasser",
+                    "   multe da tempo   = viel Zeit",
+                    "   iom da pano      = etwas Brot",
+                    "   pli da teo       = mehr Tee"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Kiom da tempo vi havas? Kiom da amikoj vi havas?",
+                    "2": "Taso da kafo. Glaso da akvo. Multe da tempo. Iom da pano. Pli da teo."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "DAS -N KOMMT AN DIE MENGE,",
+                    "NIE AN DAS WORT NACH DA:             Drücke 1",
+                    "   Mi trinkas tason da kafo.",
+                    "   = Ich trinke eine Tasse Kaffee.",
+                    "   Mi havas multe da amikoj.",
+                    "   = Ich habe viele Freunde. (multe: kein -n)",
+                    "",
+                    "KEIN LA NACH DA:                     Drücke 2",
+                    "   iom da kafo      = etwas Kaffee",
+                    "   iom de la kafo   = etwas von dem Kaffee",
+                    "   (Etwas Bestimmtes? Dann DE + LA.)"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Mi trinkas tason da kafo. Mi havas multe da amikoj.",
+                    "2": "Iom da kafo. Iom de la kafo."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "016",
+        "trigger_word": "mia",
+        "title": "LEKTION 10: POSSESSIVPRONOMEN",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "Häng -A an ein Personalpronomen, dann zeigt",
+                    "es, wem etwas gehört: mi (ich) → mia (mein).",
+                    "",
+                    "DIE POSSESSIVPRONOMEN:               Drücke 1",
+                    "  mia = mein            nia  = unser",
+                    "  via = dein/euer/Ihr   ilia = ihr",
+                    "  lia = sein",
+                    "  ŝia = ihr",
+                    "  ĝia = sein",
+                    "",
+                    "BEISPIELE:                           Drücke 2",
+                    "Mia domo estas granda. = Mein Haus ist groß.",
+                    "Kie estas via libro?   = Wo ist dein Buch?",
+                    "Ŝia amiko venas.       = Ihr Freund kommt.",
+                    "",
+                    "WIE ADJEKTIVE: + -J UND + -N:        Drücke 3",
+                    "miaj libroj          = meine Bücher",
+                    "Mi amas mian urbon.  = Ich liebe meine Stadt."
+                ],
+                "pronunciation": "Leciono dek ses",
+                "pronunciation_mappings": {
+                    "1": "Mia. Via. Lia. Ŝia. Ĝia. Nia. Ilia.",
+                    "2": "Mia domo estas granda. Kie estas via libro? Ŝia amiko venas.",
+                    "3": "Miaj libroj. Mi amas mian urbon."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "017",
+        "trigger_word": "mem",
+        "title": "LEKTION 11: REFLEXIVA UND MEM",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "Reflexive Wörter zeigen zurück aufs Subjekt.",
+                    "Für er, sie, es und sie (Plural) nimmt",
+                    "Esperanto SI (als Objekt SIN) und SIA:",
+                    "",
+                    "sin  = sich",
+                    "sia  = sein, ihr (der/die/das EIGENE)",
+                    "",
+                    "BEISPIELE:                           Drücke 1",
+                    "Li lavas sin.      = Er wäscht sich.",
+                    "Ŝi vidas sin.      = Sie sieht sich.",
+                    "Li parolas pri si. = Er spricht über sich.",
+                    "",
+                    "SIA ODER LIA?                        Drücke 2",
+                    "Li amas sian hundon.",
+                    "→ Er liebt seinen Hund. (seinen eigenen)",
+                    "Li amas lian hundon.",
+                    "→ Er liebt seinen Hund. (den eines anderen)"
+                ],
+                "pronunciation": "Leciono dek sep",
+                "pronunciation_mappings": {
+                    "1": "Li lavas sin. Ŝi vidas sin. Li parolas pri si.",
+                    "2": "Li amas sian hundon. Li amas lian hundon."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "ICH, DU UND WIR: EIGENE FORMEN:      Drücke 1",
+                    "Mi lavas min.      = Ich wasche mich.",
+                    "Vi lavas vin.      = Du wäschst dich.",
+                    "Ni vidas nin.      = Wir sehen uns.",
+                    "Mi amas mian hundon. = Ich liebe meinen Hund.",
+                    "(Nie 'Mi lavas sin'!)",
+                    "",
+                    "MEM = SELBST, NUR ZUR BETONUNG:      Drücke 2",
+                    "Mi mem faras tion. = Ich mache es selbst.",
+                    "Vi mem diras tion! = Du sagst es selbst!",
+                    "la urbo mem        = die Stadt selbst",
+                    "",
+                    "MEM ist nicht reflexiv und ändert sich",
+                    "nie: kein -n, kein -j."
+                ],
+                "pronunciation_mappings": {
+                    "1": "Mi lavas min. Vi lavas vin. Ni vidas nin. Mi amas mian hundon.",
+                    "2": "Mi mem faras tion. Vi mem diras tion! La urbo mem."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "003",
+        "trigger_word": "alia",
+        "title": "LEKTION 12: ADJEKTIVE & PLURAL",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "Jedes Adjektiv im Esperanto endet auf -a.",
+                    "So erkennst du sie sofort!",
+                    "",
+                    "HÄUFIGE ADJEKTIVE:                   Drücke 1",
+                    "",
+                    "bona   = gut         malbona   = schlecht",
+                    "granda = groß        malgranda = klein",
+                    "bela   = schön       nova      = neu",
+                    "alia   = anderer     sama      = gleich",
+                    "",
+                    "WORTSTELLUNG - beides geht:          Drücke 2",
+                    "",
+                    "bona libro  = ein gutes Buch (üblich)",
+                    "libro bona  = ein gutes Buch (geht auch!)",
+                    "",
+                    "TIPP: Beschreibt es ein Substantiv und",
+                    "endet auf -a, ist es ein Adjektiv. Einfach!"
+                ],
+                "pronunciation": "Leciono tri",
+                "pronunciation_mappings": {
+                    "1": "Bona. Malbona. Granda. Malgranda. Bela. Nova. Alia. Sama.",
+                    "2": "Bona libro. Libro bona."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "PLURAL: -J an Substantiv UND Adjektiv.",
+                    "",
+                    "SUBSTANTIVE (-o wird -oj):           Drücke 1",
+                    "amiko   → amikoj    = Freund → Freunde",
+                    "libro   → libroj    = Buch → Bücher",
+                    "hundo   → hundoj    = Hund → Hunde",
+                    "(-oj klingt wie in 'Boy', -aj wie 'ei')",
+                    "",
+                    "ADJEKTIVE PASSEN SICH AN:            Drücke 2",
+                    "bona amiko    → bonaj amikoj",
+                    "granda libro  → grandaj libroj",
+                    "La grandaj hundoj kuras.",
+                    "= Die großen Hunde rennen.",
+                    "ALS OBJEKT: erst -J, dann -N:        Drücke 3",
+                    "Mi legas novajn librojn.",
+                    "= Ich lese neue Bücher."
+                ],
+                "pronunciation_mappings": {
+                    "1": "Amiko. Amikoj. Libro. Libroj. Hundo. Hundoj.",
+                    "2": "Bonaj amikoj. Grandaj libroj. La grandaj hundoj kuras.",
+                    "3": "Mi legas novajn librojn."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "014",
+        "trigger_word": "en",
+        "title": "LEKTION 13: -N FÜR RICHTUNG",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "Die Endung -N hat einen zweiten Job: Sie zeigt",
+                    "die RICHTUNG, die Bewegung zu einem Ort hin.",
+                    "",
+                    "WO ES IST vs. WOHIN ES GEHT:         Drücke 1",
+                    "Mi estas en la domo.  = Ich bin im Haus.",
+                    "Mi iras en la domon.  = Ich gehe ins Haus.",
+                    "",
+                    "La akvo estas en la glaso.           Drücke 2",
+                    "= Das Wasser ist im Glas.",
+                    "Mi verŝas akvon en la glason.",
+                    "= Ich gieße Wasser ins Glas.",
+                    "",
+                    "Nach en, sur, sub, apud ... zeigt das -n",
+                    "die Bewegung DORTHIN (wohin?):       Drücke 3",
+                    "sur la tablo  = auf dem Tisch (liegt da)",
+                    "sur la tablon = auf den Tisch (bewegt sich)"
+                ],
+                "pronunciation": "Leciono dek kvar",
+                "pronunciation_mappings": {
+                    "1": "Mi estas en la domo. Mi iras en la domon.",
+                    "2": "La akvo estas en la glaso. Mi verŝas akvon en la glason.",
+                    "3": "Sur la tablo. Sur la tablon."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "OHNE PRÄPOSITION? -N ALLEIN REICHT:  Drücke 1",
+                    "Mi iras hejmen.     = Ich gehe nach Hause.",
+                    "Ni iras Londonon.   = Wir fahren nach London.",
+                    "(= Ni iras al Londono. AL nimmt kein -n.)",
+                    "",
+                    "WOHIN? = KIEN?                       Drücke 2",
+                    "Kien vi iras?       = Wohin gehst du?",
+                    "Mi iras tien.       = Ich gehe dorthin.",
+                    "",
+                    "AL, ĜIS, EL und DE nehmen nie ein -n:",
+                    "Sie zeigen schon eine Richtung.      Drücke 3",
+                    "Mi iras al la urbo. = Ich gehe in die Stadt.",
+                    "",
+                    "Kein -n nach en/sur? Du bist schon da!"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Mi iras hejmen. Ni iras Londonon. Ni iras al Londono.",
+                    "2": "Kien vi iras? Mi iras tien.",
+                    "3": "Mi iras al la urbo."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "018",
+        "trigger_word": "kun",
+        "title": "LEKTION 14: PRÄPOSITIONEN",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 3,
+                "content": [
+                    "Präpositionen zeigen Beziehungen zwischen",
+                    "Wörtern. Im Esperanto ändern sie sich NIE!",
+                    "",
+                    "ORT & RICHTUNG:",
+                    "en   = in              sur    = auf",
+                    "sub  = unter           super  = über",
+                    "apud = neben           inter  = zwischen",
+                    "ĉe   = bei, an         ĉirkaŭ = um ... herum",
+                    "",
+                    "BEISPIELE:                           Drücke 1",
+                    "La kato estas sub la tablo.",
+                    "= Die Katze ist unter dem Tisch.",
+                    "Mi sidas apud vi.",
+                    "= Ich sitze neben dir.",
+                    "",
+                    "Nach en/sur/sub/apud zeigt -n die Bewegung",
+                    "zum Ort HIN. al, ĝis, el, de: nie -n."
+                ],
+                "pronunciation": "Leciono dek ok",
+                "pronunciation_mappings": {
+                    "1": "La kato estas sub la tablo. Mi sidas apud vi."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 3,
+                "content": [
+                    "WEITERE WICHTIGE PRÄPOSITIONEN:",
+                    "",
+                    "al   = zu, nach        de   = von",
+                    "kun  = mit             sen  = ohne",
+                    "por  = für (Zweck)     pri  = über (Thema)",
+                    "per  = mittels         tra  = durch",
+                    "ĝis  = bis             krom = außer",
+                    "",
+                    "BEISPIELE:                           Drücke 1",
+                    "Mi iras al la parko.   = Ich gehe zum Park.",
+                    "La libro de mia amiko.",
+                    "= Das Buch meines Freundes.",
+                    "Ni parolas pri vi.     = Wir reden über dich.",
+                    "Ŝi venas kun sia frato.",
+                    "= Sie kommt mit ihrem Bruder."
+                ],
+                "pronunciation_mappings": {
+                    "1": "Mi iras al la parko. La libro de mia amiko. Ni parolas pri vi. Ŝi venas kun sia frato."
+                }
+            },
+            {
+                "page": 3,
+                "total_pages": 3,
+                "content": [
+                    "KUN ODER PER? Beides heißt 'mit':    Drücke 1",
+                    "Mi venas kun amiko.",
+                    "= Ich komme mit einem Freund. (zusammen)",
+                    "Mi skribas per komputilo.",
+                    "= Ich schreibe mit dem Computer. (Werkzeug)",
+                    "",
+                    "JE ist der Joker, wenn keine andere",
+                    "Präposition passt:                   Drücke 2",
+                    "Je la tria horo.  = Um drei Uhr.",
+                    "",
+                    "EL = AUS ... HERAUS:                 Drücke 3",
+                    "Ŝi venas el la domo.",
+                    "= Sie kommt aus dem Haus."
+                ],
+                "pronunciation_mappings": {
+                    "1": "Mi venas kun amiko. Mi skribas per komputilo.",
+                    "2": "Je la tria horo.",
+                    "3": "Ŝi venas el la domo."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "015",
+        "trigger_word": "voli",
+        "title": "LEKTION 15: MODALVERBEN",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "Modalverben drücken Können, Wollen oder",
+                    "Müssen aus. Das Hauptverb bleibt im",
+                    "Infinitiv (Endung -i).",
+                    "",
+                    "DIE DREI WICHTIGSTEN MODALVERBEN:",
+                    "povi  = können",
+                    "voli  = wollen",
+                    "devi  = müssen",
+                    "",
+                    "BEISPIELE:                           Drücke 1",
+                    "Mi povas paroli.     = Ich kann sprechen.",
+                    "Mi volas manĝi.      = Ich will essen.",
+                    "Ni devas lerni.      = Wir müssen lernen.",
+                    "",
+                    "AUFBAU: Modalverb + Infinitiv        Drücke 2",
+                    "Li povas veni morgaŭ. = Er kann morgen kommen.",
+                    "",
+                    "Der Infinitiv ändert sich nie!"
+                ],
+                "pronunciation": "Leciono dek kvin",
+                "pronunciation_mappings": {
+                    "1": "Mi povas paroli. Mi volas manĝi. Ni devas lerni.",
+                    "2": "Li povas veni morgaŭ."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "011",
+        "trigger_word": "estis",
+        "title": "LEKTION 16: VERGANGENHEIT",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "Für die Vergangenheit änderst du die",
+                    "Verbendung von -as zu -is. Das ist alles!",
+                    "",
+                    "PRÄSENS      →  VERGANGENHEIT:       Drücke 1",
+                    "mi estas     →  mi estis   (ich bin → war)",
+                    "vi parolas   →  vi parolis (sprichst → sprachst)",
+                    "li manĝas    →  li manĝis  (er isst → aß)",
+                    "",
+                    "Die Endung -is gilt für ALLE Subjekte:",
+                    "mi estis     =  ich war",
+                    "vi estis     =  du warst",
+                    "li estis     =  er war",
+                    "ni estis     =  wir waren",
+                    "ili estis    =  sie waren",
+                    "",
+                    "Eine Form für alle. Keine unregelmäßigen",
+                    "Verben! Ersetz -as durch -is, fertig."
+                ],
+                "pronunciation": "Leciono dek unu",
+                "pronunciation_mappings": {
+                    "1": "Mi estas. Mi estis. Vi parolas. Vi parolis. Li manĝas. Li manĝis."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "012",
+        "trigger_word": "estos",
+        "title": "LEKTION 17: FUTUR",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "Für die Zukunft änderst du die Verbendung",
+                    "zu -os. So einfach ist das!",
+                    "",
+                    "PRÄSENS      →  FUTUR:               Drücke 1",
+                    "mi estas     →  mi estos   (bin → werde sein)",
+                    "vi parolas   →  vi parolos (wirst sprechen)",
+                    "li manĝas    →  li manĝos  (wird essen)",
+                    "",
+                    "ALLE DREI ZEITEN ZUSAMMEN:           Drücke 2",
+                    "mi parolis   =  ich sprach         (Verg. -is)",
+                    "mi parolas   =  ich spreche        (Präs. -as)",
+                    "mi parolos   =  ich werde sprechen (Futur -os)",
+                    "",
+                    "Drei Zeiten, drei Endungen. Immer gleich",
+                    "für alle Subjekte. Esperanto macht die",
+                    "Konjugation wunderbar einfach!"
+                ],
+                "pronunciation": "Leciono dek du",
+                "pronunciation_mappings": {
+                    "1": "Mi estas. Mi estos. Vi parolas. Vi parolos. Li manĝas. Li manĝos.",
+                    "2": "Mi parolis. Mi parolas. Mi parolos."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "029",
+        "trigger_word": "estus",
+        "title": "LEKTION 18: KONDITIONAL",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "Der Konditional (-us) drückt 'würde' aus",
+                    "oder gedachte Situationen. Man nutzt ihn",
+                    "für höfliche Bitten und Gedankenspiele.",
+                    "",
+                    "DEN KONDITIONAL BILDEN:              Drücke 1",
+                    "Ersetz die Zeitendung durch -us:",
+                    "estas → estus     (ist → wäre)",
+                    "havas → havus     (hat → hätte)",
+                    "iras  → irus      (geht → würde gehen)",
+                    "",
+                    "HÖFLICHE BITTEN:                     Drücke 2",
+                    "Mi volus kafon.    = Ich hätte gern Kaffee.",
+                    "Ĉu vi povus helpi? = Könntest du helfen?",
+                    "",
+                    "HYPOTHETISCH:                        Drücke 3",
+                    "Se mi estus riĉa, mi vojaĝus.",
+                    "(Wenn ich reich wäre, würde ich reisen.)"
+                ],
+                "pronunciation": "Leciono dudek naŭ",
+                "pronunciation_mappings": {
+                    "1": "Estas. Estus. Havas. Havus. Iras. Irus.",
+                    "2": "Mi volus kafon. Ĉu vi povus helpi?",
+                    "3": "Se mi estus riĉa, mi vojaĝus."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "010",
+        "trigger_word": "unu",
+        "title": "LEKTION 19: DAS ZAHLSYSTEM",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 2,
+                "content": [
+                    "Esperanto-Zahlen sind völlig regelmäßig.",
+                    "Lern die Grundzahlen, dann kombiniere sie!",
+                    "",
+                    "GRUNDZAHLEN:                         Drücke 1",
+                    "",
+                    "0 = nul    5 = kvin    10 = dek",
+                    "1 = unu    6 = ses     11 = dek unu",
+                    "2 = du     7 = sep     12 = dek du",
+                    "3 = tri    8 = ok      13 = dek tri",
+                    "4 = kvar   9 = naŭ     14 = dek kvar",
+                    "",
+                    "GRÖSSERE ZAHLEN BAUEN:               Drücke 2",
+                    "20 = dudek (du + dek = zwei Zehner)",
+                    "30 = tridek, 40 = kvardek usw.",
+                    "100 = cent, 1000 = mil",
+                    "",
+                    "KOMBINIERT: 23 = dudek tri. Keine Ausnahmen,",
+                    "kein Verdrehen wie bei 'dreiundzwanzig'!"
+                ],
+                "pronunciation": "Leciono dek",
+                "pronunciation_mappings": {
+                    "1": "Nul. Unu. Du. Tri. Kvar. Kvin. Ses. Sep. Ok. Naŭ. Dek.",
+                    "2": "Dudek. Tridek. Kvardek. Cent. Mil. Dudek tri."
+                }
+            },
+            {
+                "page": 2,
+                "total_pages": 2,
+                "content": [
+                    "ORDNUNGSZAHLEN (erster, zweiter):    Drücke 1",
+                    "Häng -a an jede Zahl. Das sind Adjektive!",
+                    "",
+                    "unua    = erster      kvara   = vierter",
+                    "dua     = zweiter     kvina   = fünfter",
+                    "tria    = dritter     deka    = zehnter",
+                    "",
+                    "GRÖSSERE ORDNUNGSZAHLEN:",
+                    "dudek-unua = einundzwanzigster",
+                    "centa = hundertster",
+                    "",
+                    "IM SATZ:                             Drücke 2",
+                    "Ĉi tio estas mia unua leciono.",
+                    "(Das ist meine erste Lektion.)",
+                    "Hodiaŭ estas mia tria tago ĉi tie.",
+                    "(Heute ist mein dritter Tag hier.)",
+                    "",
+                    "Wie Adjektive: unuaj paŝoj = erste Schritte"
+                ],
+                "pronunciation_mappings": {
+                    "1": "Unua. Dua. Tria. Kvara. Kvina. Deka.",
+                    "2": "Ĉi tio estas mia unua leciono. Hodiaŭ estas mia tria tago ĉi tie."
+                }
+            }
+        ]
+    },
+    {
+        "lesson_id": "009",
+        "trigger_word": "malbona",
+        "title": "LEKTION 20: GEGENTEIL MIT MAL-",
+        "header_color": "green",
+        "pages": [
+            {
+                "page": 1,
+                "total_pages": 1,
+                "content": [
+                    "MAL- ist eines der mächtigsten Werkzeuge",
+                    "des Esperanto. Stell es vor ein Wort, und",
+                    "du bekommst sein genaues Gegenteil!",
+                    "",
+                    "ADJEKTIVE:                           Drücke 1",
+                    "bona → malbona      = gut → schlecht",
+                    "granda → malgranda  = groß → klein",
+                    "nova → malnova      = neu → alt (Dinge)",
+                    "juna → maljuna      = jung → alt (Menschen)",
+                    "alta → malalta      = hoch → niedrig",
+                    "",
+                    "AUCH VERBEN:                         Drücke 2",
+                    "fermi → malfermi    = schließen → öffnen",
+                    "ami → malami        = lieben → hassen",
+                    "",
+                    "Das HALBIERT deinen Lernaufwand!",
+                    "Lern 'bona', krieg 'malbona' gratis!"
+                ],
+                "pronunciation": "Leciono naŭ",
+                "pronunciation_mappings": {
+                    "1": "Bona. Malbona. Granda. Malgranda. Nova. Malnova. Juna. Maljuna. Alta. Malalta.",
+                    "2": "Fermi. Malfermi. Ami. Malami."
+                }
+            }
+        ]
+    }
 ]

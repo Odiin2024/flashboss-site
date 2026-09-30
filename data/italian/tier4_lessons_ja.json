@@ -1,173 +1,227 @@
 [
   {
     "lesson_id": "015",
-    "trigger_word": "assassino",
+    "trigger_word": "scusi",
     "trigger_card_number": 1,
-    "title": "第15課: TU vs LEI — 敬体",
+    "title": "第20課: TU vs LEI — 敬体",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 2,
         "content": [
-          "イタリア語には「あなた」が2種類あります:",
+          "「あなた」の言い方は2つあります：",
           "",
-          "   TU  = 親しい相手（友人・家族）",
-          "   LEI = 丁寧な相手（初対面・年上・",
-          "                 専門職）",
+          "   tu  = 家族、友人、子ども、",
+          "         クラスメート、同年代の人",
+          "   Lei = 知らない人、年上の人、",
+          "         お店、役所、お医者さん",
           "",
-          "LEIは三人称単数の動詞形を使います:",
-          "   (tu) parli italiano?  — 親しい",
-          "   (Lei) parla italiano? — 丁寧",
+          "LEI は lui/lei の動詞の形を使います：  1を押す",
+          "   (tu)  parli inglese?",
+          "   (Lei) parla inglese?",
+          "      = 英語を話しますか？",
+          "lei（彼女）と区別するため、大文字の",
+          "L を使って Lei と書きます。",
           "",
-          "注: 「Lei」（大文字）＝丁寧な「あなた」",
-          "     「lei」（小文字）＝「彼女」",
-          "",
-          "LEIを使う場面:",
-          "   - 医師・教授・紳士",
-          "   - ホテル・レストラン・店員",
-          "   - タクシー運転手・カスタマーサポート",
-          "   - 大人と初めて会うとき"
+          "もう知っているペア：                   2を押す",
+          "   scusa! → scusi!    senti! → senta!",
+          "   come stai? → come sta?",
+          "   ciao! → buongiorno! / buonasera!"
         ],
-        "pronunciation": "Lezione quindici"
+        "pronunciation": "Lezione venti",
+        "pronunciation_mappings": {
+          "1": "Parli inglese? Parla inglese?",
+          "2": "Scusa! Scusi! Senti! Senta! Come stai? Come sta? Ciao! Buongiorno! Buonasera!"
+        }
       },
       {
         "page": 2,
         "total_pages": 2,
         "content": [
-          "LEIの人称代名詞（大文字）:",
+          "LEI の代名詞も大文字で書きます：       1を押す",
+          "   La ringrazio = あなたに感謝します",
+          "   Le piace? = お好きですか？",
+          "   il Suo nome, per favore?",
+          "      = お名前をお願いできますか？",
           "",
-          "直接目的語:    La",
-          "   La invito a cena = あなたを招待します",
-          "間接目的語:    Le",
-          "   Le mando un messaggio = あなたに送ります",
-          "所有形容詞:    Suo / Sua / Suoi / Sue",
-          "   il Suo libro = あなたの本",
+          "può? を使った丁寧な依頼：              2を押す",
+          "   mi può aiutare? = 手伝っていただけますか？",
+          "   mi può dire dov'è la stazione?",
+          "      = 駅はどこか教えていただけますか？",
           "",
-          "丁寧な依頼は Lei + 動詞で:",
-          "   mi può dire... = おっしゃえますか",
-          "   mi scusi = すみません",
-          "   per favore = お願いします",
+          "複数形はどちらも VOI です：            3を押す",
+          "   ragazzi, venite? signori, entrate!",
           "",
-          "複数形: VOI（親しい・丁寧、ほぼ同じ）",
-          "",
-          "親しくなるには: 「ci diamo del tu?」"
-        ]
+          "TU に切り替えるとき：                  4を押す",
+          "   ci diamo del tu? = tu で話しませんか？"
+        ],
+        "pronunciation_mappings": {
+          "1": "La ringrazio. Le piace? Il Suo nome, per favore?",
+          "2": "Mi può aiutare? Mi può dire dov'è la stazione?",
+          "3": "Ragazzi, venite? Signori, entrate!",
+          "4": "Ci diamo del tu?"
+        }
       }
     ]
   },
   {
     "lesson_id": "016",
     "trigger_word": "avvocato",
-    "trigger_card_number": 20,
-    "title": "第16課: 間接目的語代名詞",
+    "trigger_card_number": 15,
+    "title": "第21課: 間接目的語代名詞",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 2,
         "content": [
-          "間接目的語代名詞＝「～に／～のために」。 与え",
-          "る、伝える、送るなどの動詞の後に使います。",
+          "間接目的語は「誰に？」に答えます。",
+          "piacere のところでもう見ましたね：mi piace,",
+          "gli piace, le piace。全部そろえると：",
           "",
-          "   私に       mi    私たちに   ci",
-          "   君に       ti    あなた方に vi",
-          "   彼に       gli   彼らに     gli",
-          "   彼女に     le",
-          "   あなたに（丁寧）Le",
+          "   mi   私に        ci   私たちに      1を押す",
+          "   ti   君に        vi   君たちに",
+          "   gli  彼に        gli  彼らに",
+          "   le   彼女に      Le   あなたに（Lei）",
           "",
-          "位置：活用した動詞の前です。",
+          "a + 人 の代わりになります：            2を押す",
+          "   scrivo a Marco → gli scrivo",
+          "   parlo a mia madre → le parlo",
+          "   telefono ai nonni → gli telefono",
           "",
-          "   ho dato il libro a Marco",
-          "      → gli ho dato il libro",
-          "   parlo a mia madre",
-          "      → le parlo",
-          "   scrivo ai miei amici",
-          "      → gli scrivo"
+          "PASSATO では過去分詞は一致しません：   3を押す",
+          "   le ho scritto（scritta ではない）",
+          "   gli ho telefonato"
         ],
-        "pronunciation": "Lezione sedici"
+        "pronunciation": "Lezione ventuno",
+        "pronunciation_mappings": {
+          "1": "Mi. Ti. Gli. Le. Ci. Vi.",
+          "2": "Scrivo a Marco. Gli scrivo. Parlo a mia madre. Le parlo. Telefono ai nonni. Gli telefono.",
+          "3": "Le ho scritto. Gli ho telefonato."
+        }
       },
       {
         "page": 2,
         "total_pages": 2,
         "content": [
-          "間接目的語をとるよく使う動詞:",
+          "a + 人 を取る動詞：                    1を押す",
+          "   dare       与える      gli do un libro",
+          "   dire       言う        le dico la verità",
+          "   chiedere   頼む・聞く  ti chiedo scusa",
+          "   mandare    送る        vi mando una foto",
+          "   rispondere 答える      non mi risponde",
+          "   telefonare 電話する    ci telefoni?",
           "",
-          "   dare         与える      gli do",
-          "   dire         言う／伝える le dico",
-          "   parlare      話す        ti parlo",
-          "   telefonare   電話する    ci telefoni?",
-          "   scrivere     書く        vi scrivo",
-          "   chiedere     聞く        gli chiedo",
-          "   rispondere   答える      le rispondo",
-          "   piacere      気に入る    mi piace",
+          "直接か間接か？ 見分け方は、人の前に",
+          "a があるかどうか：                     2を押す",
+          "   vedo Marco → lo vedo（直接）",
+          "   parlo a Marco → gli parlo（間接）",
           "",
-          "間接目的語代名詞では過去分詞は一致しない",
-          "（直接目的語とは異なります）:",
-          "   le ho parlato（× parlata ではない）",
-          "   gli ho scritto（× scritti ではない）",
-          "",
-          "直接 vs 間接 — 簡単なテスト:",
-          "   人前に「a」がある？ → 間接（gli, le）"
-        ]
+          "不定詞と使うときは語末に付けます：     3を押す",
+          "   devo dirgli una cosa",
+          "      = 彼に言わなきゃいけないことがある",
+          "   posso chiederti un favore?",
+          "      = 君にひとつお願いしてもいい？"
+        ],
+        "pronunciation_mappings": {
+          "1": "Gli do un libro. Le dico la verità. Ti chiedo scusa. Vi mando una foto. Non mi risponde. Ci telefoni?",
+          "2": "Vedo Marco. Lo vedo. Parlo a Marco. Gli parlo.",
+          "3": "Devo dirgli una cosa. Posso chiederti un favore?"
+        }
       }
     ]
   },
   {
     "lesson_id": "017",
     "trigger_word": "aspetto",
-    "trigger_card_number": 92,
-    "title": "第17課: IMPERFETTO vs PASSATO",
+    "trigger_card_number": 76,
+    "title": "第22課: IMPERFETTO vs PASSATO",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
-          "IMPERFETTO＝描写・習慣・",
-          "継続中の動作・背景に使う過去形。",
+          "IMPERFETTO（半過去）= 過去を「場面」として",
+          "描きます：進行中だったこと、よくあったこと。",
           "",
-          "活用語尾—3つの活用群すべて共通：",
+          "不定詞の母音を残して、-v- と語尾を",
+          "付けます：                             1を押す",
+          "            parlare    vedere    dormire",
+          "   io       parlavo    vedevo    dormivo",
+          "   tu       parlavi    vedevi    dormivi",
+          "   lui/lei  parlava    vedeva    dormiva",
+          "   noi      parlavamo  vedevamo  dormivamo",
+          "   voi      parlavate  vedevate  dormivate",
+          "   loro     parlavano  vedevano  dormivano",
           "",
-          "   parlare    vedere    finire",
-          "   parlavo    vedevo    finivo",
-          "   parlavi    vedevi    finivi",
-          "   parlava    vedeva    finiva",
-          "   parlavamo  vedevamo  finivamo",
-          "   parlavate  vedevate  finivate",
-          "   parlavano  vedevano  finivano",
-          "",
-          "不規則動詞—essereだけ特別：",
-          "   ero, eri, era, eravamo, eravate, erano",
-          "",
-          "   ero giovane＝若い頃でした",
-          "   abitavo a Roma＝ローマに住んでいました"
+          "LORO は IO と同じ位置を強く読む：      2を押す",
+          "   parLAvo → parLAvano",
+          "   veDEvo → veDEvano"
         ],
-        "pronunciation": "Lezione diciassette"
+        "pronunciation": "Lezione ventidue",
+        "pronunciation_mappings": {
+          "1": "Parlavo. Parlavi. Parlava. Parlavamo. Parlavate. Parlavano. Vedevo. Vedevi. Vedeva. Vedevamo. Vedevate. Vedevano. Dormivo. Dormivi. Dormiva. Dormivamo. Dormivate. Dormivano.",
+          "2": "Parlavo. Parlavano. Vedevo. Vedevano."
+        }
       },
       {
         "page": 2,
-        "total_pages": 2,
+        "total_pages": 3,
         "content": [
-          "IMPERFETTOを使う場面：",
+          "本当に不規則なのは ESSERE だけ：       1を押す",
+          "   io       ero       noi   eravamo",
+          "   tu       eri       voi   eravate",
+          "   lui/lei  era       loro  erano",
+          "   ero piccolo = 私は小さかった",
           "",
-          "   ・過去の習慣：andavo a scuola",
-          "   ・描写：era alto, aveva 30 anni",
-          "   ・継続中の動作：parlavo al telefono",
-          "   ・背景：pioveva, faceva freddo",
-          "   ・天気・年齢・時刻・感情（過去）",
+          "いくつかの動詞は、古くて長い語幹に",
+          "規則どおりの語尾を付けます：           2を押す",
+          "   fare     → facevo     (fac-)",
+          "   dire     → dicevo     (dic-)",
+          "   bere     → bevevo     (bev-)",
+          "   tradurre → traducevo  (traduc-)",
           "",
-          "PASSATO PROSSIMOを使う場面：",
+          "AVERE は規則的：avevo, avevi...        3を押す",
+          "   avevo fame = お腹がすいていた",
+          "C'ERA, C'ERANO = ～があった／いた：    4を押す",
+          "   c'era tanta gente",
+          "      = 人がたくさんいた"
+        ],
+        "pronunciation_mappings": {
+          "1": "Io ero. Tu eri. Lui era. Noi eravamo. Voi eravate. Loro erano. Ero piccolo.",
+          "2": "Fare, facevo. Dire, dicevo. Bere, bevevo. Tradurre, traducevo.",
+          "3": "Avevo. Avevi. Avevo fame.",
+          "4": "C'era tanta gente."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "IMPERFETTO：背景を描きます。           1を押す",
+          "   習慣：da bambino andavo al mare",
+          "      = 子どもの頃、よく海に行っていた",
+          "   描写：era alto, aveva trent'anni",
+          "   天気・時刻：pioveva, erano le tre",
+          "   進行中：dormivo = 寝ていた",
           "",
-          "   ・特定の完了した出来事",
-          "   ・順次起こる動作",
-          "   ・ho mangiato＝食べた（そして終わった）",
+          "PASSATO PROSSIMO：出来事を語ります。   2を押す",
+          "   ieri ho visto Marco",
+          "   sono arrivato alle otto",
           "",
-          "典型的な対比：",
+          "場面と出来事を組み合わせると：         3を押す",
+          "   dormivo quando hai chiamato",
+          "      = 君が電話してきたとき、私は寝ていた",
           "   mentre parlavo, è arrivato Marco",
-          "   ＝話している間に、マルコが来た",
-          "   （imperfetto＋passato prossimo）"
-        ]
+          "      = 私が話している間に、マルコが来た"
+        ],
+        "pronunciation_mappings": {
+          "1": "Da bambino andavo al mare. Era alto, aveva trent'anni. Pioveva, erano le tre. Dormivo.",
+          "2": "Ieri ho visto Marco. Sono arrivato alle otto.",
+          "3": "Dormivo quando hai chiamato. Mentre parlavo, è arrivato Marco."
+        }
       }
     ]
   }

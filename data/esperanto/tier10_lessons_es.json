@@ -1,74 +1,176 @@
 [
   {
-    "lesson_id": "057",
-    "trigger_word": "dankema se",
-    "title": "LECCIÓN 57: EL SUFIJO «-AD-»",
+    "lesson_id": "051",
+    "trigger_word": "rekomendo",
+    "title": "LECCIÓN 63: EL PREFIJO EKS-",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
         "total_pages": 1,
         "content": [
-          "El sufijo -AD- significa «acción continua» o",
-          "«acción repetida». Enfatiza la duración o el",
-          "proceso continuo, no un acto único.",
+          "El prefijo EKS- significa EX, ANTIGUO:",
+          "alguien que ya no tiene ese papel.",
           "",
-          "DE VERBO A ACCIÓN CONTINUA:",
-          "paroli → parolado = hablar → hablar (acto)",
-          "kanti  → kantado  = cantar → cantar (acto)",
-          "labori→ laborado = trabajar→ trabajar(acto)",
-          "lerni  → lernado  = aprender→ aprender(acto)",
+          "PAPELES ANTERIORES:                Presiona 1",
+          "edzo       → eksedzo       = exmarido",
+          "prezidanto → eksprezidanto = expresidente",
+          "membro     → eksmembro     = exmiembro",
+          "studento   → eksstudento   = exalumno",
           "",
-          "LA DIFERENCIA:",
-          "parolo  = un discurso (cosa única)",
-          "parolado= hablar (la acción, continua)",
+          "EKS- COMO PALABRA PROPIA:          Presiona 2",
+          "eksa   = antiguo, ex",
+          "eksiĝi = dimitir (dejar un cargo)",
           "",
-          "EN USO:",
-          "La lernado daŭris du horojn.",
-          "(El estudio duró dos horas.)",
-          "¡-AD- convierte momentos en procesos!"
+          "EN USO:                            Presiona 3",
+          "Mia eksa instruisto skribis al mi rekomendon.",
+          "= Mi exprofesor me escribió una recomendación."
         ],
-        "pronunciation": "Leciono kvindek sep"
+        "pronunciation_mappings": {
+          "1": "Edzo. Eksedzo. Prezidanto. Eksprezidanto. Membro. Eksmembro. Studento. Eksstudento.",
+          "2": "Eksa. Eksiĝi.",
+          "3": "Mia eksa instruisto skribis al mi rekomendon."
+        },
+        "pronunciation": "Leciono kvindek unu"
       }
     ]
   },
   {
     "lesson_id": "058",
-    "trigger_word": "kun estimo",
-    "title": "LECCIÓN 58: EL SUFIJO «-IST-»",
+    "trigger_word": "atentigi",
+    "title": "LECCIÓN 64: PREPOSICIÓN + TIO, KE",
     "header_color": "green",
     "pages": [
       {
         "page": 1,
-        "total_pages": 1,
+        "total_pages": 2,
         "content": [
-          "El sufijo -IST- forma palabras para personas",
-          "que hacen algo profesional o",
-          "habitualmente. Piensa en «especialista».",
+          "Una preposición no puede ir justo antes",
+          "de una oración. Pon TIO en medio y luego",
+          "la palabra de enlace: ke, kio(n), ĉu, kiel...",
           "",
-          "FORMACIÓN DE TÍTULOS:",
-          "arto    → artisto     = arte → artista",
-          "muziko  → muzikisto   = música → músico",
-          "instrui → instruisto  = enseñar → maestro",
-          "dento   → dentisto    = diente → dentista",
-          "Esperanto → Esperantisto = esperantista",
+          "PRI TIO, KE = de (el hecho de) que:   Presiona 1",
+          "Ni parolis pri tio, ke vi venos.",
+          "= Hablamos de que vendrás.",
           "",
-          "COMPARA -ANT- Y -IST-:",
-          "lernanto = alumno (alguien que aprende ahora)",
-          "lernisto = estudioso (alumno profesional)",
-          "instruanto = quien enseña (ahora mismo)",
-          "instruisto = maestro (profesión)",
+          "PRI TIO, KION = de lo que:            Presiona 2",
+          "Mi pensas pri tio, kion vi diris.",
+          "= Pienso en lo que dijiste.",
           "",
-          "¡-IST- implica experiencia o dedicación!"
+          "DE TIO, ĈU / KIEL:                    Presiona 3",
+          "Tio dependas de tio, ĉu vi venos.",
+          "= Eso depende de si vienes.",
+          "Ĉio dependas de tio, kiel ni agos.",
+          "= Todo depende de cómo actuemos."
         ],
+        "pronunciation_mappings": {
+          "1": "Ni parolis pri tio, ke vi venos.",
+          "2": "Mi pensas pri tio, kion vi diris.",
+          "3": "Tio dependas de tio, ĉu vi venos. Ĉio dependas de tio, kiel ni agos."
+        },
         "pronunciation": "Leciono kvindek ok"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "Nunca 'pri kion', 'de ĉu', 'en kiel':",
+          "la preposición necesita TIO primero.",
+          "",
+          "CADA PALABRA TIENE SU CASO:        Presiona 1",
+          "Mi dankas vin pro tio, kion vi faris.",
+          "= Gracias por lo que hiciste.",
+          "(tio: tras pro, sin -n; kion: el",
+          "objeto de faris)",
+          "",
+          "¿SIN PREPOSICIÓN? SIN TIO:         Presiona 2",
+          "Mi scias, kion vi diris.",
+          "= Sé lo que dijiste.",
+          "",
+          "ENLACES ÚTILES:                    Presiona 3",
+          "malgraŭ tio, ke  = aunque, a pesar de que",
+          "krom tio, ke     = además de que",
+          "danke al tio, ke = gracias a que"
+        ],
+        "pronunciation_mappings": {
+          "1": "Mi dankas vin pro tio, kion vi faris.",
+          "2": "Mi scias, kion vi diris.",
+          "3": "Malgraŭ tio, ke. Krom tio, ke. Danke al tio, ke."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "057",
+    "trigger_word": "resumi",
+    "title": "LECCIÓN 65: PREPOSICIONES + -I",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "Solo unas pocas palabras pueden llevar un",
+          "verbo en -I justo después. Las más útiles:",
+          "",
+          "POR + -I = para + infinitivo:      Presiona 1",
+          "Por resumi: ni havas tri solvojn.",
+          "= Para resumir: tenemos tres soluciones.",
+          "",
+          "SEN + -I = sin + infinitivo:       Presiona 2",
+          "Li foriris sen diri ion.",
+          "= Se fue sin decir nada.",
+          "",
+          "ANSTATAŬ + -I = en vez de + inf.:  Presiona 3",
+          "Skribu anstataŭ telefoni.",
+          "= Escribe en vez de llamar.",
+          "",
+          "ANTAŬ OL + -I = antes de + inf.:   Presiona 4",
+          "Pensu antaŭ ol respondi.",
+          "= Piensa antes de responder."
+        ],
+        "pronunciation_mappings": {
+          "1": "Por resumi: ni havas tri solvojn.",
+          "2": "Li foriris sen diri ion.",
+          "3": "Skribu anstataŭ telefoni.",
+          "4": "Pensu antaŭ ol respondi."
+        },
+        "pronunciation": "Leciono kvindek sep"
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "Otras preposiciones (al, per, pri, dum,",
+          "post, pro...) nunca llevan -I. Usa un",
+          "sustantivo o un participio en -E:",
+          "",
+          "HACIENDO = -ANTE (nunca per + -i):    Presiona 1",
+          "Ni lernas parolante.",
+          "= Aprendemos hablando.",
+          "",
+          "DESPUÉS DE = post + nombre, -inte:    Presiona 2",
+          "Post la kunveno ni manĝis.",
+          "= Después de la reunión comimos.",
+          "Fininte la laboron, ni manĝis.",
+          "= Tras terminar el trabajo, comimos.",
+          "",
+          "GRACIAS POR... = pro + nombre:        Presiona 3",
+          "Dankon pro via helpo!",
+          "= ¡Gracias por tu ayuda!"
+        ],
+        "pronunciation_mappings": {
+          "1": "Ni lernas parolante.",
+          "2": "Post la kunveno ni manĝis. Fininte la laboron, ni manĝis.",
+          "3": "Dankon pro via helpo!"
+        }
       }
     ]
   },
   {
     "lesson_id": "059",
-    "trigger_word": "lasta",
-    "title": "¡PARETO 1 COMPLETO!",
+    "trigger_word": "dankinda",
+    "title": "LECCIÓN 66: ¡PARETO 1 COMPLETO!",
     "header_color": "gold",
     "repeat": false,
     "pages": [
@@ -76,24 +178,24 @@
         "page": 1,
         "total_pages": 1,
         "content": [
-          "¡Gratulojn! ¡Completaste Pareto 1!",
+          "Gratulojn! ¡Completaste Pareto 1!",
           "",
-          "LO QUE DOMINAS:",
-          "✓ 2000 palabras (Núcleo + P1)",
-          "✓ TODOS los afijos (¡23 sufijos!)",
-          "✓ Participios y tiempos compuestos",
-          "✓ El sistema correlativo completo",
+          "LO QUE APRENDISTE:",
+          "✓ 2000 palabras y frases (Core + P1)",
+          "✓ Los diez prefijos y casi todos los sufijos",
+          "✓ Los seis participios, con -o y -e",
+          "✓ Toda la tabla de correlativos KI-/TI-",
           "",
-          "TU NIVEL: ¡equivalente a B1-B2!",
+          "TU NIVEL: más o menos B1.",
           "",
-          "AHORA PUEDES:",
-          "- Entender casi todo en esperanto",
-          "- Expresar ideas complejas con precisión",
-          "- Formar casi cualquier palabra",
-          "- Participar en la comunidad esperantista",
+          "YA PUEDES:",
+          "- Participar en foros y debates",
+          "- Planear e ir a encuentros de esperanto",
+          "- Viajar y hospedarte con esperantistas",
+          "- Escribir cartas y correos formales",
           "",
-          "¡Bonega laboro! ¡Festu vian sukceson!",
-          "(¡Excelente trabajo! ¡Celebra tu éxito!)"
+          "Bonega laboro! Pareto 2 atendas vin.",
+          "(¡Excelente trabajo! Pareto 2 te espera.)"
         ],
         "pronunciation": "Gratulojn"
       }
