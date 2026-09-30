@@ -171,6 +171,15 @@ def card(raw, n, sp, mode):
     if raw.get("Elides"): o["Elides"] = True
     if raw.get("TriggerLesson"): o["TriggerLesson"] = raw["TriggerLesson"]
     if mode == "eng":
+        # syn/ant/pos from Notes, the same lift as roots_card(): every English card has
+        # carried "syn: … | ant: …" since the 2026-09-30 rebuild, and the printed back
+        # is the definition over that line (Odiin's ruling that day).
+        notes = raw.get("Notes", "") or ""
+        m = POS_RE.match(notes)
+        if m: o["pos"] = m.group(1)
+        for k in ("syn", "ant"):
+            v = _labelled(notes, k)
+            if v: o[k] = v
         # the OTHER spelling, recorded only where it actually differs
         other_w, other_t = (base_w, base_t) if sp == "gb" else (gb_w, gb_t)
         suf = "_us" if sp == "gb" else "_gb"

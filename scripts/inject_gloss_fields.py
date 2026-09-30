@@ -33,12 +33,12 @@ DEFAULT_REPO = "/home/odiin/Documents/Bootcamp/knight/flashcard_sets"
 
 LOCALES = ("de", "es", "ja", "zh", "ru")
 
-# Russian has no gloss layer upstream yet. Per Odiin's ruling it DEFAULTS TO
-# ENGLISH: Translation_ru takes the card's English Translation verbatim, so the
-# Russian word lists read English until a real ru layer is authored. English
-# packs are untouched — they are English-to-English already, through the site's
-# definition field (the Roots/Adept immersion ruling).
-SOURCE_KEY = {"ru": "Translation"}
+# Russian comes from the card's own Translation_ru, like every other locale. Until
+# 2026-09-30 it was sourced from the English Translation (the stopgap from before a ru
+# layer existed upstream), so wordlists.ru.html showed English glosses although every
+# live course's cards carried real Russian by then. ru_self_fill() below still puts the
+# English in place for a card that cannot be matched, so the layer is never ragged.
+SOURCE_KEY = {}
 
 # Sets whose target language is also one of the five interface languages. On
 # their own page there is no translation to give — a German word needs no German
