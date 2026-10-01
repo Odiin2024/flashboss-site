@@ -268,8 +268,8 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
 
 <div class="controls printhide">
   <div class="wrap row">
+    <div class="field" id="spellField"><label for="spellTog">拼写</label><div class="spell" id="spellTog" role="group" aria-label="拼写"><button type="button" class="sp" data-sp="us">US</button><button type="button" class="sp" data-sp="gb">UK</button></div></div>
     <div class="field"><label for="packSel">卡包</label><select id="packSel"></select></div>
-    <div class="field" id="spellField" hidden><label for="spellTog">拼写</label><div class="spell" id="spellTog" role="group" aria-label="拼写"><button type="button" class="sp" data-sp="us">US</button><button type="button" class="sp" data-sp="gb">UK</button></div></div>
     <div class="field"><label id="setLbl" for="setSel">系列</label><select id="setSel"></select></div>
     <div class="field"><label for="clusterTrigger">集群</label>
       <div class="msel" id="clusterMsel">
@@ -413,11 +413,11 @@ function gloss(c){ if(c.Translation_zh!=null&&c.Translation_zh!=='')return c.Tra
    ~500 cards that differ, so the toggle is a field swap, not a refetch. The
    choice is shared with the lessons page through localStorage. */
 const SPELL_KEY='fb_spelling';
-/* UI PARKED 2026-08-28 at Odiin's request. The control is not rendered and the
-   choice is pinned to US, so no stored 'gb' can strand a reader in a spelling
-   they cannot change. Everything else is intact — the _gb twins are in the data
-   and sv()/fetchTier still read them. Flip SPELL_UI to true to bring it back. */
-const SPELL_UI=false;
+/* Parked 2026-08-28, back 2026-10-01 (Odiin) as a site-wide choice made before the
+   pack: the US/UK control sits first in the row and the choice is shared by the word
+   lists and lessons through localStorage. Every pack has a British layer — the word
+   itself on English packs, the English gloss on the others. */
+const SPELL_UI=true;   // un-parked 2026-10-01 (Odiin): a site-wide choice, made before the pack
 let spelling='us';
 try{ if(SPELL_UI && localStorage.getItem(SPELL_KEY)==='gb') spelling='gb'; }catch(e){}
 function sv(c,k){ return (spelling==='gb' && c[k+'_gb']) ? c[k+'_gb'] : c[k]; }
@@ -547,7 +547,7 @@ function updateSetLabel(){
   setLbl.textContent = eng?'卡包':'系列';
   setSel.setAttribute('aria-label', eng?'卡包':'系列');
   document.querySelector('.controls').classList.toggle('eng', eng);
-  const sf=document.getElementById('spellField'); if(sf) sf.hidden=!(SPELL_UI && eng);   // only English has a spelling twin   // English: 'Pack' already labels the language selector
+  const sf=document.getElementById('spellField'); if(sf) sf.hidden=!SPELL_UI;   // every pack has a British layer: English words, or English glosses
 }
 (function(){ const t=document.getElementById('spellTog'); if(!t) return;
   t.addEventListener('click', e=>{ const b=e.target.closest('.sp'); if(!b) return;

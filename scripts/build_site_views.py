@@ -170,6 +170,12 @@ def card(raw, n, sp, mode):
     o = {"n": n, "TargetWord": w, "TargetArticle": raw.get("TargetArticle", ""), "Translation": t}
     if raw.get("Elides"): o["Elides"] = True
     if raw.get("TriggerLesson"): o["TriggerLesson"] = raw["TriggerLesson"]
+    if mode == "lang" and sp == "us":
+        # Language packs carry a British twin of their English gloss (colour,
+        # programme). Recorded only where it differs; the page's UK/US switch,
+        # site-wide since 2026-10-01, reads it through sv().
+        gb_tr = raw.get("Translation_gb")
+        if gb_tr and gb_tr != base_t: o["Translation_gb"] = gb_tr
     if mode == "eng":
         # syn/ant/pos from Notes, the same lift as roots_card(): every English card has
         # carried "syn: … | ant: …" since the 2026-09-30 rebuild, and the printed back
