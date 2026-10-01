@@ -72,6 +72,9 @@ MAPPING = [
     ("data/french/PARETO1_FINAL.json", "French_Extensions/pareto1"),
     ("data/french/PARETO2_FINAL.json", "French_Extensions/pareto2"),
     ("data/toki_pona/CORE_FINAL.json", "Toki_Pona/core"),
+    # Swahili (2026-10-01 build): every card now carries a plain translation in all six
+    # languages; the old riddle definitions moved to Clue/Clue_<loc>, which the word lists do not show.
+    ("data/swahili/CORE_FINAL.json", "Swahili/core"),
     ("data/latin/CORE_FINAL.json", "Latin/core"),
     ("data/latin/PARETO1_FINAL.json", "Latin/pareto1"),
     ("data/english/core/CORE_FINAL.json", "English/core"),
