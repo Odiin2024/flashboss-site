@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Greek Roots — FlashBoss</title>
-<meta name="description" content="FlashBoss Greek Roots: the hardest words in English are the easiest to read. The Greek prefixes, roots, and suffixes behind science, medicine, and abstraction — 1,000 words, 1,000 cards, 56 root clusters, spaced repetition, boss fights, and text-to-speech.">
+<title>English Word Roots: Greek Prefixes and Roots | FlashBoss</title>
+<meta name="description" content="Learn the Greek prefixes, roots and suffixes behind the words of science, medicine and ideas: 1,000 flashcards in 56 root clusters, with boss fights.">
 
 <!-- House font. If self-hosting, swap this for your local JetBrains Mono. -->
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/greek-roots.html">
@@ -148,12 +148,10 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--op-bg);}
   font-size:12px; letter-spacing:.32em; text-transform:uppercase;
   color:var(--op-dim); opacity:.9; margin-bottom:26px;
 }
-.kicker b{color:var(--op-accent); font-weight:700;}
-.hero h1{
+.kicker b{color:var(--op-accent); font-weight:700;}.hero h1, .hero .h1{
   font-size:clamp(44px, 11vw, 104px);
   line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;
-}
-.hero h1 .small{display:block; font-size:.30em; letter-spacing:.42em; font-weight:500; opacity:.6; margin-top:18px;}
+}.hero h1 .small, .hero .h1 .small{display:block; font-size:.30em; letter-spacing:.42em; font-weight:500; opacity:.6; margin-top:18px;}
 .cursor{
   display:inline-block; width:.6em; height:1em; vertical-align:-.08em;
   background:color-mix(in oklab, var(--op-accent), transparent 30%); margin-left:.12em;
@@ -400,6 +398,12 @@ nav.fbnav .lang-switch{margin-left:0;}
 .hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
 </style>
 <!-- HEROSTEAM:end -->
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="overlay"></div>
@@ -435,7 +439,8 @@ nav.fbnav .lang-switch{margin-left:0;}
   <header class="hero">
     <div class="wrap">
       <p class="kicker reveal">The Roots Series · <b>Greek</b></p>
-      <h1 class="reveal">Greek Roots<span class="cursor"></span></h1>
+      <h1 class="learn reveal">Learn the Greek roots of English</h1>
+      <p class="h1 reveal" aria-hidden="true">Greek Roots<span class="cursor"></span></p>
       <p class="tagline reveal">The hardest words in English are the easiest to read.</p>
       <p class="sig reveal">Listen · Read · Repeat · Rate · Fight</p>
       <p class="lede reveal">Nobody memorises <b class="gk">cardiomyopathy</b>. They read it — <span class="rt">cardio</span>·<span class="rt">myo</span>·<span class="suf">pathy</span>, heart + muscle + suffering: a disease of the heart muscle, spelled out in Greek parts. The longer the word, the more it tells you.</p>

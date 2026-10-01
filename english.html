@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>English — FlashBoss</title>
-<meta name="description" content="FlashBoss English: learn English as a foreign language in a German, Spanish, Japanese, Simplified Chinese or Russian learning interface. English Core, Pareto 1 and Pareto 2 — 1,000 words each, every card translated and annotated in the learner's language, with spaced repetition, boss fights, and text-to-speech.">
+<title>Learn English Vocabulary with Boss Fights | FlashBoss</title>
+<meta name="description" content="Learn English vocabulary in your own language: German, Spanish, Japanese, Chinese or Russian. 3,000 essential words as flashcards, with boss fights.">
 <link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/english.html">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/english.html">
@@ -111,8 +111,7 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--v-bg);}
   background:linear-gradient(180deg, rgba(13,17,23,.62) 0%, rgba(13,17,23,.84) 55%, #100d08 100%);}
 .hero .wrap{position:relative; z-index:2;}
 .kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--v-dim); opacity:.9; margin-bottom:26px;}
-.kicker b{color:var(--v-accent); font-weight:700;}
-.hero h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
+.kicker b{color:var(--v-accent); font-weight:700;}.hero h1, .hero .h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
 .cursor{display:inline-block; width:.6em; height:1em; vertical-align:-.08em; background:color-mix(in oklab, var(--v-accent), transparent 30%); margin-left:.12em; animation:blink 1.05s steps(1) infinite;}
 @keyframes blink{50%{opacity:0;}}
 .hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:30px 0 0; color:var(--v-ink); font-weight:500;}
@@ -268,6 +267,12 @@ nav.fbnav .lang-switch{margin-left:0;}
 .hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
 </style>
 <!-- HEROSTEAM:end -->
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="overlay"></div>
@@ -304,7 +309,8 @@ nav.fbnav .lang-switch{margin-left:0;}
     <img class="hero-img" src="english.webp" alt="FlashBoss — the school under an English flag, where the English program is taught" loading="eager" decoding="async" onerror="this.style.display='none'">
     <div class="wrap">
       <p class="kicker reveal">English Core out now · <b>1,000 words</b> · 40 clusters · 38 lessons</p>
-      <h1 class="reveal">English<span class="cursor"></span></h1>
+      <h1 class="learn reveal">Learn English with FlashBoss</h1>
+      <p class="h1 reveal" aria-hidden="true">English<span class="cursor"></span></p>
       <p class="tagline reveal">The world's second language, taught as one.</p>
       <p class="sig reveal">Listen · Read · Repeat · Rate · Fight</p>
       <p class="lede reveal">You're reading this page in English — so the course is probably not for you. It teaches <b>English as a foreign language</b>, in a German, Spanish, Japanese, Simplified Chinese or Russian learning interface, and it never explains English in English.</p>

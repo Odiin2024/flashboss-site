@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Norman Roots — FlashBoss</title>
-<meta name="description" content="FlashBoss Norman Roots: the second English. In 1066 the Normans brought a whole new vocabulary — law, government, cuisine, and the formal register — and English kept both layers. 1,000 words, 48 clusters, spaced repetition, boss fights, and text-to-speech.">
+<title>English Etymology: Norman Roots Flashcards | FlashBoss</title>
+<meta name="description" content="Learn English etymology from 1066: 1,000 Norman French words of law, government, cuisine and formal English, as flashcards with boss fights.">
 <link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/norman-roots.html">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/norman-roots.html">
@@ -153,12 +153,10 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--gr-bg);}
   font-size:12px; letter-spacing:.32em; text-transform:uppercase;
   color:var(--gr-dim); opacity:.9; margin-bottom:26px;
 }
-.kicker b{color:var(--gr-accent); font-weight:700;}
-.hero h1{
+.kicker b{color:var(--gr-accent); font-weight:700;}.hero h1, .hero .h1{
   font-size:clamp(44px, 11vw, 104px);
   line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;
-}
-.hero h1 .small{display:block; font-size:.30em; letter-spacing:.42em; font-weight:500; opacity:.6; margin-top:18px;}
+}.hero h1 .small, .hero .h1 .small{display:block; font-size:.30em; letter-spacing:.42em; font-weight:500; opacity:.6; margin-top:18px;}
 .cursor{
   display:inline-block; width:.6em; height:1em; vertical-align:-.08em;
   background:color-mix(in oklab, var(--gr-accent), transparent 30%); margin-left:.12em;
@@ -412,6 +410,12 @@ nav.fbnav .lang-switch{margin-left:0;}
 .hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
 </style>
 <!-- HEROSTEAM:end -->
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="overlay"></div>
@@ -447,7 +451,8 @@ nav.fbnav .lang-switch{margin-left:0;}
   <header class="hero">
     <div class="wrap">
       <p class="kicker reveal">The Roots Series · <b>Norman</b></p>
-      <h1 class="reveal">Norman Roots<span class="cursor"></span></h1>
+      <h1 class="learn reveal">Learn the Norman French roots of English</h1>
+      <p class="h1 reveal" aria-hidden="true">Norman Roots<span class="cursor"></span></p>
       <p class="tagline reveal">Why English has two words for everything.</p>
       <p class="sig reveal">Listen · Read · Repeat · Rate · Fight</p>
       <p class="lede reveal">Nobody decided English should keep two words for everything. But in 1066 the Normans took England, and for three hundred years the people spoke English while the court spoke French. English came out the far side with a whole second vocabulary stacked on the first — so you raise a <span class="sax">cow</span> in the field but eat <span class="nor">beef</span> at the table; you <span class="sax">wish</span> among friends but <span class="nor">desire</span> in a poem. Same meaning, a different register, eight hundred years apart.</p>

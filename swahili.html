@@ -17,8 +17,8 @@
      pack itself, not invented; their slot analyses are standard.
      English only for now: the hreflang block, the switcher <ul> and
      lang-redirect.js AVAIL gain the siblings together when they ship. -->
-<title>Swahili — FlashBoss</title>
-<meta name="description" content="FlashBoss Swahili: 1,000 words in 40 clusters and 20 reference lessons, the noun class named on every noun, a neural Kiswahili voice, and a boss fight at every gate. Translations and study notes in six languages. Swahili Core out now on Steam.">
+<title>Learn Swahili Vocabulary with Boss Fights | FlashBoss</title>
+<meta name="description" content="Learn Swahili: 1,000 essential Kiswahili words as spaced-repetition flashcards, the noun class on every noun, a neural voice, and boss fights.">
 <link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/swahili.html">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/swahili.html">
@@ -83,9 +83,7 @@ nav .lang-menu a[aria-current="true"]{color:var(--accent);}
 .hero::after{content:""; position:absolute; inset:0; z-index:1; background:linear-gradient(180deg, rgba(8,18,15,.60) 0%, rgba(8,18,15,.84) 56%, var(--bg) 100%);}
 .hero .wrap{position:relative; z-index:2;}
 .kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--dim); margin-bottom:24px;}
-.kicker b{color:var(--accent); font-weight:700;}
-.hero h1{font-size:clamp(42px,11vw,96px); line-height:.95; margin:0; font-weight:800; letter-spacing:-.015em;}
-.hero h1 .small{display:block; font-size:.26em; letter-spacing:.42em; font-weight:500; opacity:.62; margin-top:18px;}
+.kicker b{color:var(--accent); font-weight:700;}.hero h1, .hero .h1{font-size:clamp(42px,11vw,96px); line-height:.95; margin:0; font-weight:800; letter-spacing:-.015em;}.hero h1 .small, .hero .h1 .small{display:block; font-size:.26em; letter-spacing:.42em; font-weight:500; opacity:.62; margin-top:18px;}
 .cursor{display:inline-block; width:.55em; height:.92em; vertical-align:-.06em; background:color-mix(in oklab, var(--accent), transparent 28%); margin-left:.1em; animation:blink 1.05s steps(1) infinite;}
 @keyframes blink{50%{opacity:0;}}
 .hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:28px 0 0; font-weight:500;}
@@ -211,6 +209,12 @@ nav.fbnav .lang-switch{margin-left:0;}
 .hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
 </style>
 <!-- HEROSTEAM:end -->
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="overlay"></div>
@@ -245,7 +249,8 @@ nav.fbnav .lang-switch{margin-left:0;}
   <header class="hero">
     <div class="wrap">
       <p class="kicker reveal">The newest course · <b>1,000 words out now</b></p>
-      <h1 class="reveal">Swahili<span class="cursor"></span><span class="small">Kiswahili</span></h1>
+      <h1 class="learn reveal">Learn Swahili with FlashBoss</h1>
+      <p class="h1 reveal" aria-hidden="true">Swahili<span class="cursor"></span><span class="small">Kiswahili</span></p>
       <p class="tagline reveal">The most regular language you will ever learn the hard way.</p>
       <p class="sig reveal">Listen · read · repeat · rate · fight</p>
       <p class="lede reveal">Swahili does not conjugate so much as <b>assemble</b>. A verb is built from slots in a fixed order, and every noun belongs to a class that the rest of the sentence agrees with. Learn those two machines and the vocabulary stops being a list. <b>1,000 words, 40 clusters, 20 reference lessons</b> — with the class named on every noun.</p>

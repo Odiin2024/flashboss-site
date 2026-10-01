@@ -21,8 +21,8 @@
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', wire); else wire();
 })();
 </script>
-<title>German — FlashBoss</title>
-<meta name="description" content="FlashBoss German: a thousand words that grow up as you do. From 'Ich bin Student' to the letter from the Finanzamt. Spaced repetition, boss fights, gender colour-coding, and text-to-speech.">
+<title>Learn German Vocabulary with Boss Fights | FlashBoss</title>
+<meta name="description" content="Learn German vocabulary: 3,000 of the most useful words as spaced-repetition flashcards, from &#x27;Ich bin Student&#x27; to the Finanzamt, with boss fights.">
 
 <!-- House font. If self-hosting, swap this for your local JetBrains Mono. -->
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/german.html">
@@ -161,12 +161,10 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--inn-bg);}
   font-size:12px; letter-spacing:.32em; text-transform:uppercase;
   color:var(--inn-dim); opacity:.9; margin-bottom:26px;
 }
-.kicker b{color:var(--inn-accent); font-weight:700;}
-.hero h1{
+.kicker b{color:var(--inn-accent); font-weight:700;}.hero h1, .hero .h1{
   font-size:clamp(44px, 11vw, 104px);
   line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;
-}
-.hero h1 .small{display:block; font-size:.34em; letter-spacing:.42em; font-weight:500; opacity:.6; margin-top:18px;}
+}.hero h1 .small, .hero .h1 .small{display:block; font-size:.34em; letter-spacing:.42em; font-weight:500; opacity:.6; margin-top:18px;}
 .cursor{
   display:inline-block; width:.6em; height:1em; vertical-align:-.08em;
   background:color-mix(in oklab, var(--inn-accent), transparent 30%); margin-left:.12em;
@@ -390,6 +388,12 @@ nav.fbnav .lang-switch{margin-left:0;}
 .hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
 </style>
 <!-- HEROSTEAM:end -->
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="overlay"></div>
@@ -424,7 +428,8 @@ nav.fbnav .lang-switch{margin-left:0;}
   <!-- HERO -->
   <header class="hero">
     <div class="wrap">
-      <h1 class="reveal">Deutsch<span class="cursor"></span></h1>
+      <h1 class="learn reveal">Learn German with FlashBoss</h1>
+      <p class="h1 reveal" aria-hidden="true">Deutsch<span class="cursor"></span></p>
       <p class="tagline reveal">Learn the language as you learn the culture.</p>
       <p class="sig reveal">Listen · Read · Repeat · Rate · Fight</p>
       <p class="lede reveal">You begin saying <b class="de">Ich bin Student.</b> By the end you are reading the letter from the <b>Finanzamt</b> — and you know exactly what it wants. German Core carries you from arrival to survival.</p>

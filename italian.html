@@ -21,8 +21,8 @@
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', wire); else wire();
 })();
 </script>
-<title>Italian — FlashBoss</title>
-<meta name="description" content="FlashBoss Italian: the language of coming home. From 'Sono uno studente' to the nine o'clock train to your nonna's. 3,000 words, twenty reference lessons, spaced repetition, boss fights, gender colour-coding with elision, and text-to-speech.">
+<title>Learn Italian Vocabulary with Boss Fights | FlashBoss</title>
+<meta name="description" content="Learn Italian vocabulary: 3,000 of the most useful Italian words as spaced-repetition flashcards, with gender colour-coding, lessons and boss fights.">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/italian.html">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/italian.html">
 <link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/italian.de.html">
@@ -98,8 +98,7 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--vis-bg);}
 .hero::after{content:""; position:absolute; inset:0; z-index:1;
   background:linear-gradient(180deg, rgba(23,20,33,.62) 0%, rgba(23,20,33,.82) 55%, #171421 100%);}
 .hero .wrap{position:relative; z-index:2;}
-.crumb{font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--vis-accent); opacity:.85;}
-.hero h1{font-size:clamp(46px,12vw,112px); line-height:.9; margin:14px 0 0; font-weight:800; letter-spacing:-.01em;}
+.crumb{font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--vis-accent); opacity:.85;}.hero h1, .hero .h1{font-size:clamp(46px,12vw,112px); line-height:.9; margin:14px 0 0; font-weight:800; letter-spacing:-.01em;}
 .cursor{display:inline-block; width:.58em; height:1em; vertical-align:-.08em; background:color-mix(in oklab, var(--vis-accent), transparent 30%); margin-left:.1em; animation:blink 1.05s steps(1) infinite;}
 @keyframes blink{50%{opacity:0;}}
 .hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:46ch; margin:28px 0 0; color:var(--vis-ink); font-weight:500;}
@@ -250,6 +249,12 @@ nav.fbnav .lang-switch{margin-left:0;}
 .hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
 </style>
 <!-- HEROSTEAM:end -->
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="overlay"></div>
@@ -284,7 +289,8 @@ nav.fbnav .lang-switch{margin-left:0;}
   <!-- HERO -->
   <header class="hero">
     <div class="wrap">
-      <h1 class="reveal">Italiano<span class="cursor"></span></h1>
+      <h1 class="learn reveal">Learn Italian with FlashBoss</h1>
+      <p class="h1 reveal" aria-hidden="true">Italiano<span class="cursor"></span></p>
       <p class="tagline reveal">Learn the language you need to feel at home.</p>
       <p class="sig reveal">Listen · Read · Repeat · Rate · Fight</p>
       <p class="lede reveal">You begin with <b class="it">Sono uno studente.</b> By the end you're on the nine o'clock train to your <b>nonna</b>'s.</p>
