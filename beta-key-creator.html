@@ -207,7 +207,8 @@
                 font-size: 2.5rem;
             }
         }
-    </style>
+    :where(a){color:inherit; text-decoration-color:currentColor;}  /* unstyled links inherit the text colour instead of browser blue (~2:1 on this background); zero specificity, so any page rule wins */
+</style>
 </head>
 <body>
     <div class="container">

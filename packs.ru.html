@@ -27,7 +27,7 @@
 :root{
   --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
   --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
-  --accent:#e0a93f; --green:#62d38a; --line:#3a3120; --rule:#2a2417;
+  --accent:#e0a93f; --green:#83b6dd;  /* was #62d38a: the palette law, never green; the token name is kept so every use follows */ --line:#3a3120; --rule:#2a2417;
 }
 *{box-sizing:border-box; margin:0; padding:0;}
 html{scroll-behavior:smooth;}
@@ -136,6 +136,7 @@ footer .made{margin-top:12px; opacity:.8;}
 .beta-note{background:#1b1508; border-bottom:1px solid #6b5a2a; color:#e8d9b0; font:500 12.5px/1.55 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; text-align:center; padding:9px 16px; margin:0;}
 .beta-note b{color:#e0a93f; font-weight:700; letter-spacing:.09em;}
 .beta-note a{color:#e0a93f; text-decoration:underline; text-underline-offset:2px;}
+:where(a){color:inherit; text-decoration-color:currentColor;}  /* unstyled links inherit the text colour instead of browser blue (~2:1 on this background); zero specificity, so any page rule wins */
 </style>
 </head>
 <body>

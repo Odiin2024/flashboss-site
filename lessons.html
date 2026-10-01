@@ -22,7 +22,7 @@
   --mono:'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace;
   --bg:#100d08; --panel:#15110a; --screen:#0c0a06; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
   --accent:#e0a93f; --line:#3a3120; --rule:#2a2417;
-  --green:#62d38a; --blue:#6cb6ff; --gold:#e0a93f; --rose:#ff8fa3; --purple:#b89cff; --cyan:#5fd7d7; --magenta:#ff7be3;
+  --green:#83b6dd;  /* was #62d38a: the palette law, never green; the token name is kept so every use follows */ --blue:#6cb6ff; --gold:#e0a93f; --rose:#ff8fa3; --purple:#b89cff; --cyan:#5fd7d7; --magenta:#ff7be3;
   --hc:var(--green);
 }
 *{box-sizing:border-box; margin:0; padding:0;}
@@ -149,6 +149,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
   .screen{border:1px solid #000; color:#000; break-inside:avoid;} .scr-head{color:#000; border-color:#000;}
   .scr-body{color:#000;} .press{border-bottom:0;}
 }
+:where(a){color:inherit; text-decoration-color:currentColor;}  /* unstyled links inherit the text colour instead of browser blue (~2:1 on this background); zero specificity, so any page rule wins */
 </style>
 <script src="lang-redirect.js"></script>
 </head>

@@ -27,7 +27,7 @@
 :root{
   --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
   --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
-  --accent:#e0a93f; --green:#62d38a; --line:#3a3120; --rule:#2a2417;
+  --accent:#e0a93f; --green:#83b6dd;  /* was #62d38a: the palette law, never green; the token name is kept so every use follows */ --line:#3a3120; --rule:#2a2417;
 }
 *{box-sizing:border-box; margin:0; padding:0;}
 html{scroll-behavior:smooth;}
@@ -133,6 +133,7 @@ footer .footer-links{display:flex; justify-content:center; align-items:center; g
 footer .footer-links a{color:var(--dim); text-decoration:none;} footer .footer-links a:hover{color:var(--ink);}
 footer .footer-links .div{opacity:.4;}
 footer .made{margin-top:12px; opacity:.8;}
+:where(a){color:inherit; text-decoration-color:currentColor;}  /* unstyled links inherit the text colour instead of browser blue (~2:1 on this background); zero specificity, so any page rule wins */
 </style>
 <script src="lang-redirect.js"></script>
 </head>

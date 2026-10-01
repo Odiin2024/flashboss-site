@@ -193,6 +193,7 @@
 .beta-note b{color:#e0a93f; font-weight:700; letter-spacing:.09em;}
 .beta-note a{color:#e0a93f; text-decoration:underline; text-underline-offset:2px;}
 .beta-note{position:fixed; inset:0 auto auto 0; width:100%; z-index:30;}
+:where(a){color:inherit; text-decoration-color:currentColor;}  /* unstyled links inherit the text colour instead of browser blue (~2:1 on this background); zero specificity, so any page rule wins */
 </style>
 </head>
 <body>

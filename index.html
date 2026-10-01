@@ -189,7 +189,8 @@
     .lang-menu a:hover{background:rgba(240,230,211,.95); color:var(--night);}
     .lang-menu a[aria-current="true"]{color:var(--sky);}
     .lang-menu a[aria-current="true"]:hover{color:var(--night);}
-    </style>
+    :where(a){color:inherit; text-decoration-color:currentColor;}  /* unstyled links inherit the text colour instead of browser blue (~2:1 on this background); zero specificity, so any page rule wins */
+</style>
 <script src="lang-redirect.js"></script>
 </head>
 <body>

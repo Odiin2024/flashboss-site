@@ -32,7 +32,7 @@
 :root{
   --mono:'JetBrains Mono','Noto Sans SC', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
   --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
-  --accent:#83b6dd; --steel:#6487aa; --gold:#e0a93f; --green:#62d38a; --blue:#7ec8ff; --line:#3a3120; --rule:#2a2417;
+  --accent:#83b6dd; --steel:#6487aa; --gold:#e0a93f; --green:#83b6dd;  /* was #62d38a: the palette law, never green; the token name is kept so every use follows */ --blue:#7ec8ff; --line:#3a3120; --rule:#2a2417;
 }
 *{box-sizing:border-box; margin:0; padding:0;}
 html{scroll-behavior:smooth;}
@@ -118,6 +118,7 @@ nav .links a.steam{font-weight:800; opacity:1;}
 
 /* ---- sections / frame ---- */
 section{padding:60px 0;}
+section.wrap{padding-top:60px; padding-bottom:60px;}  /* .wrap's padding:0 24px outranks section{}; without this every wrapped section lost its spacing and the frame tags sat on the text above */
 .hero + section{padding-top:84px;}  /* clearance so the boss-fight card isn't crowded under the splash */
 .gap-top{padding-top:104px;}  /* space below the FlashBoss-approach frame, before "Four packs" */
 .frame{border:1px solid var(--line); position:relative; padding:34px 30px 32px;}
@@ -213,6 +214,7 @@ footer .footer-links .div{opacity:.4;}
 .share-btns{display:flex; flex-wrap:wrap; justify-content:center; gap:8px;}
 .share-btn{font-family:var(--mono); font-size:12px; letter-spacing:.04em; color:var(--ink); text-decoration:none; background:transparent; border:1px solid var(--line); padding:9px 14px; cursor:pointer; transition:border-color .14s ease, color .14s ease;}
 .share-btn:hover{border-color:var(--accent); color:var(--accent);}
+:where(a){color:inherit; text-decoration-color:currentColor;}  /* unstyled links inherit the text colour instead of browser blue (~2:1 on this background); zero specificity, so any page rule wins */
 </style>
 </head>
 <body>

@@ -129,6 +129,7 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--v-bg);}
 .hero .actions .btn{margin-top:0; width:100%; padding:13px 6px; text-align:center; font-size:clamp(11px,3.2vw,14px); letter-spacing:.01em; white-space:nowrap;}
 
 section{padding:64px 0;}
+section.wrap{padding-top:64px; padding-bottom:64px;}  /* .wrap's padding:0 24px outranks section{}; without this every wrapped section lost its spacing and the frame tags sat on the text above */
 .hero + section{padding-top:48px;}
 .frame{border:1px solid var(--line); position:relative; padding:34px 30px 32px;}
 .frame > .tag{position:absolute; top:-12px; left:22px;
@@ -202,6 +203,7 @@ a.pack:hover{background:rgba(224,169,63,.07); border-color:color-mix(in oklab, v
 
 .method dl{display:grid; grid-template-columns:max-content 1fr; gap:14px 22px; margin:0;}
 .method dt{font-weight:700; color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%)); white-space:nowrap;}
+@media (max-width:560px){.method dt{white-space:normal;}}  /* a long term (Интервальное повторение по Фибоначчи) pushed the phone page sideways */
 .method .frame > .tag{color:color-mix(in oklab, var(--v-accent), var(--t-accent) calc(var(--mood)*100%));}
 .method dd{margin:0; font-size:14.5px; color:var(--v-dim);}
 @media(max-width:560px){.method dl{grid-template-columns:1fr; gap:4px 0;} .method dd{margin-bottom:14px;}}
@@ -237,6 +239,7 @@ footer .footer-links .div{opacity:.4;}
 /* bundle line in the closing call to action — one Steam bundle per course */
 .bundleline{font-size:14.5px; max-width:56ch; margin:0 auto 22px; opacity:.95;}
 .bundleline b{font-weight:800;}
+:where(a){color:inherit; text-decoration-color:currentColor;}  /* unstyled links inherit the text colour instead of browser blue (~2:1 on this background); zero specificity, so any page rule wins */
 </style>
 <script src="lang-redirect.js"></script>
 </head>

@@ -125,6 +125,7 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--d-bg);}
 .btn.hot:hover{box-shadow:8px 8px 0 color-mix(in oklab, var(--u-accent), #000 60%);}
 
 section{padding:64px 0;}
+section.wrap{padding-top:64px; padding-bottom:64px;}  /* .wrap's padding:0 24px outranks section{}; without this every wrapped section lost its spacing and the frame tags sat on the text above */
 .hero + section{padding-top:48px;}
 .frame{border:1px solid var(--line); position:relative; padding:34px 30px 32px;}
 .frame > .tag{position:absolute; top:-12px; left:22px;
@@ -198,6 +199,7 @@ a.pack:hover{background:rgba(255,143,163,.06); border-color:color-mix(in oklab, 
 
 .method dl{display:grid; grid-template-columns:max-content 1fr; gap:14px 22px; margin:0;}
 .method dt{font-weight:700; color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%)); white-space:nowrap;}
+@media (max-width:560px){.method dt{white-space:normal;}}  /* a long term (Интервальное повторение по Фибоначчи) pushed the phone page sideways */
 .method .frame > .tag{color:color-mix(in oklab, var(--d-accent), var(--u-accent) calc(var(--mood)*100%));}
 .method dd{margin:0; font-size:14.5px; color:var(--d-dim);}
 @media(max-width:560px){.method dl{grid-template-columns:1fr; gap:4px 0;} .method dd{margin-bottom:14px;}}
@@ -217,6 +219,7 @@ footer .footer-links .div{opacity:.4;}
 
 .bridge-banner{font-family:var(--mono); font-size:12.5px; line-height:1.55; text-align:center; padding:11px 24px; color:#ecdcb6; background:rgba(131,182,221,.12); border-top:1px solid rgba(131,182,221,.28); border-bottom:1px solid rgba(131,182,221,.28);}
 .bridge-banner b{color:#83b6dd; font-weight:700;}
+:where(a){color:inherit; text-decoration-color:currentColor;}  /* unstyled links inherit the text colour instead of browser blue (~2:1 on this background); zero specificity, so any page rule wins */
 </style>
 </head>
 <body>

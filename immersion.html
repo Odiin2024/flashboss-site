@@ -42,7 +42,7 @@
 :root{
   --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
   --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
-  --accent:#83b6dd; --gold:#e0a93f; --green:#62d38a; --line:#3a3120; --rule:#2a2417;
+  --accent:#83b6dd; --gold:#e0a93f; --green:#83b6dd;  /* was #62d38a: the palette law, never green; the token name is kept so every use follows */ --line:#3a3120; --rule:#2a2417;
 }
 *{box-sizing:border-box; margin:0; padding:0;}
 html{scroll-behavior:smooth;}
@@ -110,6 +110,7 @@ nav .links a.steam{font-weight:800; opacity:1;}
 
 /* ---- sections ---- */
 section{padding:56px 0;}
+section.wrap{padding-top:56px; padding-bottom:56px;}  /* .wrap's padding:0 24px outranks section{}; without this every wrapped section lost its spacing and the frame tags sat on the text above */
 .hero + section{padding-top:44px;}
 .frame{border:1px solid var(--line); position:relative; padding:34px 30px 30px;}
 .frame > .tag{position:absolute; top:-12px; left:22px; background:var(--bg); padding:4px 12px; line-height:1; font-size:11px; letter-spacing:.3em; text-transform:uppercase; color:var(--gold);}
@@ -215,6 +216,7 @@ footer .footer-links .div{opacity:.4;}
   opacity:0; transition:opacity .15s ease; pointer-events:none;}
 .bf-box:hover .bf-hint{opacity:1;}
 @media(max-width:640px){ .bf-row{flex-direction:column; align-items:stretch; gap:26px;} .bf-box{width:100%; max-width:420px; margin:0 auto;} }
+:where(a){color:inherit; text-decoration-color:currentColor;}  /* unstyled links inherit the text colour instead of browser blue (~2:1 on this background); zero specificity, so any page rule wins */
 </style>
 <script src="lang-redirect.js"></script>
 </head>

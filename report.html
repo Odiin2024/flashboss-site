@@ -214,7 +214,8 @@
                 margin-top: 0;
             }
         }
-    </style>
+    :where(a){color:inherit; text-decoration-color:currentColor;}  /* unstyled links inherit the text colour instead of browser blue (~2:1 on this background); zero specificity, so any page rule wins */
+</style>
 </head>
 <body>
     <div class="container">
@@ -233,7 +234,7 @@
 
             <div class="form-embed">
                 <iframe
-                    src="https://docs.google.com/forms/d/e/1FAIpQLScLEpmVOUQOBVsorwajQsWHuMbFR6VeDssrYvDSsR1aCDlNYQ/viewform?embedded=true"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScLEpmVOUQOBVsorwajQsWHuMbFR6VeDssrYvDSsR1aCDlNYQ/viewform?embedded=true&hl=en"
                     loading="lazy">
                     Loading form...
                 </iframe>

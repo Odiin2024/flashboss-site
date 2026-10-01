@@ -188,6 +188,7 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--inn-bg);}
 
 /* ---- section frame (box-drawing) ---- */
 section{padding:64px 0;}
+section.wrap{padding-top:64px; padding-bottom:64px;}  /* .wrap's padding:0 24px outranks section{}; without this every wrapped section lost its spacing and the frame tags sat on the text above */
 .hero + section{padding-top:48px;}  /* buffer so the first frame's border-tag clears the hero */
 .frame{
   border:1px solid var(--line);
@@ -319,6 +320,7 @@ a.pack:hover{background:rgba(224,169,63,.05); border-color:var(--inn-accent);}
 /* ---- method ---- */
 .method dl{display:grid; grid-template-columns:max-content 1fr; gap:14px 22px; margin:0;}
 .method dt{font-weight:700; color:var(--exp-accent); white-space:nowrap;}
+@media (max-width:560px){.method dt{white-space:normal;}}  /* a long term (Интервальное повторение по Фибоначчи) pushed the phone page sideways */
 .method .frame > .tag{color:var(--exp-accent);}
 .method dd{margin:0; font-size:14.5px; color:var(--inn-dim);}
 @media(max-width:560px){.method dl{grid-template-columns:1fr; gap:4px 0;} .method dd{margin-bottom:14px;}}
@@ -338,6 +340,7 @@ footer .footer-links{display:flex; justify-content:center; align-items:center; g
 footer .footer-links a{color:inherit; text-decoration:none; opacity:.75; letter-spacing:.04em;}
 footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
 footer .footer-links .div{opacity:.4;}
+:where(a){color:inherit; text-decoration-color:currentColor;}  /* unstyled links inherit the text colour instead of browser blue (~2:1 on this background); zero specificity, so any page rule wins */
 </style>
 <style>body{line-height:1.75;}</style>
 </head>

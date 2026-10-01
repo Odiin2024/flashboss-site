@@ -231,6 +231,7 @@ footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{c
 .spell .sp.on{color:var(--bg); background:var(--accent); font-weight:700;}
 .spell .sp:not(.on):hover{color:var(--ink);}
 #spellField[hidden]{display:none;}
+:where(a){color:inherit; text-decoration-color:currentColor;}  /* unstyled links inherit the text colour instead of browser blue (~2:1 on this background); zero specificity, so any page rule wins */
 </style>
 <script src="lang-redirect.js"></script>
 </head>
