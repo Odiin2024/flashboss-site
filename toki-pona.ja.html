@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>トキポナ — 無料同梱パック | FlashBoss</title>
-<meta name="description" content="FlashBossのトキポナ：およそ140語で完結するひとつの言語を、基本ゲームに無料同梱。カード500枚、22クラスター、5ティア、文法レッスン13本。全カードに日本語の訳と解説、全レッスンも日本語 — 英語なしで遊べます。間隔反復、ボス戦、TTS音声。">
+<title>トキポナをボス戦で学ぶ | FlashBoss</title>
+<meta name="description" content="トキポナを学ぶ。およそ140語で完結する言語を、文法レッスン付きの間隔反復フラッシュカード500枚で。各セットの最後はボス戦。">
 <link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/toki-pona.ja.html">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/toki-pona.html">
@@ -115,8 +115,7 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--d-bg);}
   background:linear-gradient(180deg, rgba(20,17,10,.60) 0%, rgba(17,20,20,.84) 55%, #100d08 100%);}
 .hero .wrap{position:relative; z-index:2;}
 .kicker{font-size:12px; letter-spacing:.32em; color:var(--d-dim); opacity:.9; margin:0 0 26px;}
-.kicker b{color:var(--d-accent); font-weight:700;}
-.hero h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
+.kicker b{color:var(--d-accent); font-weight:700;}.hero h1, .hero .h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
 .cursor{display:inline-block; width:.6em; height:1em; vertical-align:-.08em; background:color-mix(in oklab, var(--d-accent), transparent 30%); margin-left:.12em; animation:blink 1.05s steps(1) infinite;}
 @keyframes blink{50%{opacity:0;}}
 .hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:30px 0 0; color:var(--d-ink); font-weight:500;}
@@ -321,6 +320,12 @@ nav.fbnav .lang-switch{margin-left:0;}
 .hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
 </style>
 <!-- HEROSTEAM:end -->
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="overlay"></div>
@@ -357,7 +362,8 @@ nav.fbnav .lang-switch{margin-left:0;}
     <img class="hero-bg" src="toki-pona-hero.webp" alt="ターミナル画面に表示されたFlashBossのトキポナのカード — 目標語、例文とその訳、その下に解説">
     <div class="wrap">
       <p class="kicker reveal">基本ゲーム · <b>無料同梱</b> · 完全日本語対応</p>
-      <h1 class="reveal">toki pona<span class="cursor"></span></h1>
+      <h1 class="learn reveal">FlashBossでトキポナを学ぶ</h1>
+      <p class="h1 reveal" aria-hidden="true">toki pona<span class="cursor"></span></p>
       <p class="tagline reveal">ひとつの言語まるごと。およそ140語。</p>
       <p class="sig reveal">聞く・読む・繰り返す・評価する・戦う</p>
       <p class="lede reveal">始まりは <b class="tp" lang="tok">toki!</b> — こんにちは。カード500枚のあと、この言語にはもう、初めて出会う場所が残っていません。基本ゲームに<b>無料</b>で同梱されています。</p>

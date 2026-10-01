@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Latin Roots — 語源で増やす英単語 | FlashBoss</title>
-<meta name="description" content="FlashBoss Latin Roots：英単語を1語ずつ覚えるのは、もう終わり。何千もの単語を組み立てる接頭辞・接尾辞・語根 — 部品を学べば、初見の単語も分解して読めます。1,000語、カード500枚、間隔反復、ボス戦、TTS音声。">
+<title>英単語の語源：ラテン語の接頭辞と語根 | FlashBoss</title>
+<meta name="description" content="何千もの英単語を組み立てるラテン語の接頭辞・語根・接尾辞を学び、初見の単語も分解して読む。フラッシュカード500枚、ボス戦付き。">
 
 <!-- House font. If self-hosting, swap this for your local JetBrains Mono. -->
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/latin-roots.ja.html">
@@ -150,12 +150,10 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--op-bg);}
   font-size:12px; letter-spacing:.32em; text-transform:uppercase;
   color:var(--op-dim); opacity:.9; margin-bottom:26px;
 }
-.kicker b{color:var(--op-accent); font-weight:700;}
-.hero h1{
+.kicker b{color:var(--op-accent); font-weight:700;}.hero h1, .hero .h1{
   font-size:clamp(44px, 11vw, 104px);
   line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;
-}
-.hero h1 .small{display:block; font-size:.30em; letter-spacing:.42em; font-weight:500; opacity:.6; margin-top:18px;}
+}.hero h1 .small, .hero .h1 .small{display:block; font-size:.30em; letter-spacing:.42em; font-weight:500; opacity:.6; margin-top:18px;}
 .cursor{
   display:inline-block; width:.6em; height:1em; vertical-align:-.08em;
   background:color-mix(in oklab, var(--op-accent), transparent 30%); margin-left:.12em;
@@ -398,6 +396,12 @@ nav.fbnav .lang-switch{margin-left:0;}
 .hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
 </style>
 <!-- HEROSTEAM:end -->
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="overlay"></div>
@@ -433,7 +437,8 @@ nav.fbnav .lang-switch{margin-left:0;}
   <header class="hero">
     <div class="wrap">
       <p class="kicker reveal">Rootsシリーズ · <b>ラテン語</b></p>
-      <h1 class="reveal">Latin Roots<span class="cursor"></span></h1>
+      <h1 class="learn reveal">英語のラテン語の語根を学ぶ</h1>
+      <p class="h1 reveal" aria-hidden="true">Latin Roots<span class="cursor"></span></p>
       <p class="tagline reveal">英単語を1語ずつ覚えるのは、もう終わり。</p>
       <p class="sig reveal">聞く・読む・繰り返す・評価する・戦う</p>
       <p class="lede reveal">大きな語彙を持つ人は、1語ずつ覚えたのではありません。部品の読み方を身につけたのです。<b class="lat">irreparable</b>に出会っても、見た瞬間に分解できる — <span class="pre">ir</span>·<span class="pre">re</span>·<span class="rt">par</span>·<span class="suf">able</span>、「再び・整えることが・できない」— 意味は表面から読み取れます。</p>

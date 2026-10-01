@@ -25,8 +25,8 @@
      Canon held here: the six pack names stay English, FlashBoss stays
      Latin, and every number is the English page's number in this locale's
      separator — nothing was recounted. -->
-<title>斯瓦希里语 — FlashBoss</title>
-<meta name="description" content="FlashBoss 斯瓦希里语：1,000 个单词，分布在 40 个词族与 20 节参考课中，每个名词都标出它的名词类别，配标准斯瓦希里语的神经网络语音，每一道关口都有一场 Boss 战。译文与学习注释提供六种语言。Swahili Core 已在 Steam 发售。">
+<title>学斯瓦希里语：1,000 个核心单词 | FlashBoss</title>
+<meta name="description" content="学斯瓦希里语：1,000 个核心单词做成间隔重复闪卡，每个名词都标出名词类别，配神经网络语音与头目战。">
 <link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/swahili.zh.html">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/swahili.html">
@@ -91,9 +91,7 @@ nav .lang-menu a[aria-current="true"]{color:var(--accent);}
 .hero::after{content:""; position:absolute; inset:0; z-index:1; background:linear-gradient(180deg, rgba(8,18,15,.60) 0%, rgba(8,18,15,.84) 56%, var(--bg) 100%);}
 .hero .wrap{position:relative; z-index:2;}
 .kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--dim); margin-bottom:24px;}
-.kicker b{color:var(--accent); font-weight:700;}
-.hero h1{font-size:clamp(42px,11vw,96px); line-height:.95; margin:0; font-weight:800; letter-spacing:-.015em;}
-.hero h1 .small{display:block; font-size:.26em; letter-spacing:.42em; font-weight:500; opacity:.62; margin-top:18px;}
+.kicker b{color:var(--accent); font-weight:700;}.hero h1, .hero .h1{font-size:clamp(42px,11vw,96px); line-height:.95; margin:0; font-weight:800; letter-spacing:-.015em;}.hero h1 .small, .hero .h1 .small{display:block; font-size:.26em; letter-spacing:.42em; font-weight:500; opacity:.62; margin-top:18px;}
 .cursor{display:inline-block; width:.55em; height:.92em; vertical-align:-.06em; background:color-mix(in oklab, var(--accent), transparent 28%); margin-left:.1em; animation:blink 1.05s steps(1) infinite;}
 @keyframes blink{50%{opacity:0;}}
 .hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:28px 0 0; font-weight:500;}
@@ -221,6 +219,12 @@ nav.fbnav .lang-switch{margin-left:0;}
 .hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
 </style>
 <!-- HEROSTEAM:end -->
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="beta-note" role="status"><b>测试版翻译</b> — 本页的简体中文版仍是草稿，尚未经过校对。发现文字错误？ <a href="report.html">告诉我们</a> · <a href="swahili.html">Read in English</a></div>
@@ -256,7 +260,8 @@ nav.fbnav .lang-switch{margin-left:0;}
   <header class="hero">
     <div class="wrap">
       <p class="kicker reveal">最新的课程 · <b>1,000 个单词现已推出</b></p>
-      <h1 class="reveal">Swahili<span class="cursor"></span><span class="small">Kiswahili</span></h1>
+      <h1 class="learn reveal">用 FlashBoss 学斯瓦希里语</h1>
+      <p class="h1 reveal" aria-hidden="true">Swahili<span class="cursor"></span><span class="small">Kiswahili</span></p>
       <p class="tagline reveal">你会靠硬功夫学下来的语言里，最规则的一门。</p>
       <p class="sig reveal">听 · 读 · 重复 · 评分 · 战斗</p>
       <p class="lede reveal">斯瓦希里语与其说是在变位，不如说是在<b>组装</b>。动词由固定顺序的槽位拼成，每个名词都属于某一类别，句子的其余部分都要与它保持一致。学会这两台机器，词汇就不再是一张清单。<b>1,000 个单词、40 个词族、20 节参考课</b>——每个名词都标出它的类别。</p>

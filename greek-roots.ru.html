@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Greek Roots — FlashBoss</title>
-<meta name="description" content="FlashBoss Greek Roots: самые сложные слова английского языка — самые лёгкие для чтения. Греческие префиксы, корни и суффиксы, стоящие за наукой, медициной и абстракцией — 1000 слов, 1000 карточек, 56 блоков корней, интервальное повторение, босс-файты и синтез речи.">
+<title>Корни английских слов: греческие приставки | FlashBoss</title>
+<meta name="description" content="Греческие приставки, корни и суффиксы, стоящие за словами науки, медицины и идей: 1 000 карточек в 56 кластерах корней, с босс-файтами.">
 
 <!-- House font. If self-hosting, swap this for your local JetBrains Mono. -->
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/greek-roots.ru.html">
@@ -148,12 +148,10 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--op-bg);}
   font-size:12px; letter-spacing:.32em; text-transform:uppercase;
   color:var(--op-dim); opacity:.9; margin-bottom:26px;
 }
-.kicker b{color:var(--op-accent); font-weight:700;}
-.hero h1{
+.kicker b{color:var(--op-accent); font-weight:700;}.hero h1, .hero .h1{
   font-size:clamp(44px, 11vw, 104px);
   line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;
-}
-.hero h1 .small{display:block; font-size:.30em; letter-spacing:.42em; font-weight:500; opacity:.6; margin-top:18px;}
+}.hero h1 .small, .hero .h1 .small{display:block; font-size:.30em; letter-spacing:.42em; font-weight:500; opacity:.6; margin-top:18px;}
 .cursor{
   display:inline-block; width:.6em; height:1em; vertical-align:-.08em;
   background:color-mix(in oklab, var(--op-accent), transparent 30%); margin-left:.12em;
@@ -398,6 +396,12 @@ nav.fbnav .lang-switch{margin-left:0;}
 .hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
 </style>
 <!-- HEROSTEAM:end -->
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="beta-note" role="status"><b>БЕТА-ПЕРЕВОД</b> — русская версия сайта черновая и ещё не прошла редактуру. Нашли ошибку в тексте? <a href="report.html">Сообщите нам</a> · <a href="greek-roots.html">Read in English</a></div>
@@ -434,7 +438,8 @@ nav.fbnav .lang-switch{margin-left:0;}
   <header class="hero">
     <div class="wrap">
       <p class="kicker reveal">Серия Roots · <b>Greek</b></p>
-      <h1 class="reveal">Greek Roots<span class="cursor"></span></h1>
+      <h1 class="learn reveal">Греческие корни английского языка</h1>
+      <p class="h1 reveal" aria-hidden="true">Greek Roots<span class="cursor"></span></p>
       <p class="tagline reveal">Самые сложные слова в английском — самые лёгкие для чтения.</p>
       <p class="sig reveal">Слушай · Читай · Повторяй · Оценивай · Сражайся</p>
       <p class="lede reveal">Никто не запоминает <b class="gk">cardiomyopathy</b>. Они читают его — <span class="rt">cardio</span>·<span class="rt">myo</span>·<span class="suf">pathy</span>, сердце + мышца + страдание: болезнь сердечной мышцы, записанная греческими частями. Чем длиннее слово, тем больше оно вам говорит.</p>

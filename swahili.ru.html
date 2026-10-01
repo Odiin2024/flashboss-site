@@ -25,8 +25,8 @@
      Canon held here: the six pack names stay English, FlashBoss stays
      Latin, and every number is the English page's number in this locale's
      separator — nothing was recounted. -->
-<title>Суахили — FlashBoss</title>
-<meta name="description" content="FlashBoss Суахили: 1000 слов в 40 кластерах и 20 справочных уроков, именной класс назван на каждом существительном, нейронный голос кисуахили и бой с боссом у каждых ворот. Переводы и учебные заметки на шести языках. Swahili Core уже в Steam.">
+<title>Учить суахили: слова и карточки с босс-файтами | FlashBoss</title>
+<meta name="description" content="Учите суахили: 1 000 важнейших слов в виде карточек с интервальным повторением, именной класс у каждого существительного, нейронный голос и босс-файты.">
 <link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/swahili.ru.html">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/swahili.html">
@@ -91,9 +91,7 @@ nav .lang-menu a[aria-current="true"]{color:var(--accent);}
 .hero::after{content:""; position:absolute; inset:0; z-index:1; background:linear-gradient(180deg, rgba(8,18,15,.60) 0%, rgba(8,18,15,.84) 56%, var(--bg) 100%);}
 .hero .wrap{position:relative; z-index:2;}
 .kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--dim); margin-bottom:24px;}
-.kicker b{color:var(--accent); font-weight:700;}
-.hero h1{font-size:clamp(42px,11vw,96px); line-height:.95; margin:0; font-weight:800; letter-spacing:-.015em;}
-.hero h1 .small{display:block; font-size:.26em; letter-spacing:.42em; font-weight:500; opacity:.62; margin-top:18px;}
+.kicker b{color:var(--accent); font-weight:700;}.hero h1, .hero .h1{font-size:clamp(42px,11vw,96px); line-height:.95; margin:0; font-weight:800; letter-spacing:-.015em;}.hero h1 .small, .hero .h1 .small{display:block; font-size:.26em; letter-spacing:.42em; font-weight:500; opacity:.62; margin-top:18px;}
 .cursor{display:inline-block; width:.55em; height:.92em; vertical-align:-.06em; background:color-mix(in oklab, var(--accent), transparent 28%); margin-left:.1em; animation:blink 1.05s steps(1) infinite;}
 @keyframes blink{50%{opacity:0;}}
 .hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:28px 0 0; font-weight:500;}
@@ -221,6 +219,12 @@ nav.fbnav .lang-switch{margin-left:0;}
 .hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
 </style>
 <!-- HEROSTEAM:end -->
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="beta-note" role="status"><b>БЕТА-ПЕРЕВОД</b> — русская версия этой страницы черновая и ещё не прошла редактуру. Нашли ошибку в тексте? <a href="report.html">Сообщите нам</a> · <a href="swahili.html">Read in English</a></div>
@@ -256,7 +260,8 @@ nav.fbnav .lang-switch{margin-left:0;}
   <header class="hero">
     <div class="wrap">
       <p class="kicker reveal">Новейший курс · <b>1000 слов уже вышли</b></p>
-      <h1 class="reveal">Swahili<span class="cursor"></span><span class="small">Kiswahili</span></h1>
+      <h1 class="learn reveal">Учите суахили с FlashBoss</h1>
+      <p class="h1 reveal" aria-hidden="true">Swahili<span class="cursor"></span><span class="small">Kiswahili</span></p>
       <p class="tagline reveal">Самый регулярный язык из всех, что вы когда-либо выучите трудным путём.</p>
       <p class="sig reveal">слушать · читать · повторять · оценивать · сражаться</p>
       <p class="lede reveal">Суахили не столько спрягает, сколько <b>собирает</b>. Глагол строится из ячеек в неизменном порядке, а каждое существительное принадлежит к классу, с которым согласуется всё остальное в предложении. Выучите эти две машины — и лексика перестанет быть списком. <b>1000 слов, 40 кластеров, 20 справочных уроков</b> — и класс назван на каждом существительном.</p>

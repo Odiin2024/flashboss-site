@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Französisch — FlashBoss</title>
-<meta name="description" content="FlashBoss Französisch: alle drei Pakete jetzt erhältlich — 3.000 Wörter metropolitanes Französisch über fünfzehn Stufen und 120 Cluster, mit 37 Referenzlektionen, farbcodiertem Genus samt Elision und Sprachausgabe. Komplett auf Deutsch spielbar — jede Karte, jede Lektion. Core, Pareto 1 und Pareto 2 auf Steam.">
+<title>Französisch Vokabeln lernen mit Bossfights | FlashBoss</title>
+<meta name="description" content="Französisch lernen: die 3.000 nützlichsten Wörter des metropolitanen Französisch als Karteikarten mit Spaced Repetition, farbcodiertem Genus, Bossfights.">
 <link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/french.de.html">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/french.html">
@@ -111,8 +111,7 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--v-bg);}
   background:linear-gradient(180deg, rgba(16,13,8,.60) 0%, rgba(16,13,8,.84) 55%, #100d08 100%);}
 .hero .wrap{position:relative; z-index:2;}
 .kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--v-dim); opacity:.9; margin-bottom:26px;}
-.kicker b{color:var(--v-accent); font-weight:700;}
-.hero h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
+.kicker b{color:var(--v-accent); font-weight:700;}.hero h1, .hero .h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
 .cursor{display:inline-block; width:.6em; height:1em; vertical-align:-.08em; background:color-mix(in oklab, var(--v-accent), transparent 30%); margin-left:.12em; animation:blink 1.05s steps(1) infinite;}
 @keyframes blink{50%{opacity:0;}}
 .hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:30px 0 0; color:var(--v-ink); font-weight:500;}
@@ -320,6 +319,12 @@ nav.fbnav .lang-switch{margin-left:0;}
 .hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
 </style>
 <!-- HEROSTEAM:end -->
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="overlay"></div>
@@ -360,7 +365,8 @@ nav.fbnav .lang-switch{margin-left:0;}
     <img class="hero-img" src="background.webp" alt="FlashBoss — die mondbeschienene Schule, die vor jedem FlashBoss-Kurs steht" loading="eager" decoding="async" onerror="this.style.display='none'">
     <div class="wrap">
       <p class="kicker reveal">Alle drei Pakete jetzt erhältlich · <b>3.000 Wörter</b> · 120 Cluster · 37 Lektionen</p>
-      <h1 class="reveal">Français<span class="cursor"></span></h1>
+      <h1 class="learn reveal">Französisch lernen mit FlashBoss</h1>
+      <p class="h1 reveal" aria-hidden="true">Français<span class="cursor"></span></p>
       <p class="tagline reveal">Das Französisch, das dir wirklich begegnet — in der Reihenfolge, in der es dir begegnet.</p>
       <p class="sig reveal">Hören · Lesen · Wiederholen · Bewerten · Kämpfen</p>
       <p class="lede reveal">Du beginnst mit Begrüßungen und den Menschen vor dir. Tausend Wörter später liest du über Arbeit, Geld, Recht und die Nachrichten. <b>Metropolitanes Französisch</b>, ausgewählt danach, wie oft es dir wirklich begegnet.</p>

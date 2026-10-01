@@ -21,8 +21,8 @@
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', wire); else wire();
 })();
 </script>
-<title>Немецкий — FlashBoss</title>
-<meta name="description" content="FlashBoss Немецкий: тысяча слов, которые растут вместе с вами. От «Ich bin Student» до письма из Finanzamt. Интервальное повторение, босс-файты, цветовая маркировка рода и синтез речи.">
+<title>Учить немецкий: слова и карточки с босс-файтами | FlashBoss</title>
+<meta name="description" content="Немецкие слова: 3 000 самых полезных слов в виде карточек с интервальным повторением, от «Ich bin Student» до Finanzamt, с босс-файтами.">
 
 <!-- House font. If self-hosting, swap this for your local JetBrains Mono. -->
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/german.ru.html">
@@ -161,12 +161,10 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--inn-bg);}
   font-size:12px; letter-spacing:.32em; text-transform:uppercase;
   color:var(--inn-dim); opacity:.9; margin-bottom:26px;
 }
-.kicker b{color:var(--inn-accent); font-weight:700;}
-.hero h1{
+.kicker b{color:var(--inn-accent); font-weight:700;}.hero h1, .hero .h1{
   font-size:clamp(44px, 11vw, 104px);
   line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;
-}
-.hero h1 .small{display:block; font-size:.34em; letter-spacing:.42em; font-weight:500; opacity:.6; margin-top:18px;}
+}.hero h1 .small, .hero .h1 .small{display:block; font-size:.34em; letter-spacing:.42em; font-weight:500; opacity:.6; margin-top:18px;}
 .cursor{
   display:inline-block; width:.6em; height:1em; vertical-align:-.08em;
   background:color-mix(in oklab, var(--inn-accent), transparent 30%); margin-left:.12em;
@@ -388,6 +386,12 @@ nav.fbnav .lang-switch{margin-left:0;}
 .hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
 </style>
 <!-- HEROSTEAM:end -->
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="beta-note" role="status"><b>БЕТА-ПЕРЕВОД</b> — русская версия сайта черновая и ещё не прошла редактуру. Нашли ошибку в тексте? <a href="report.html">Сообщите нам</a> · <a href="german.html">Read in English</a></div>
@@ -423,7 +427,8 @@ nav.fbnav .lang-switch{margin-left:0;}
   <!-- HERO -->
   <header class="hero">
     <div class="wrap">
-      <h1 class="reveal">Немецкий<span class="cursor"></span></h1>
+      <h1 class="learn reveal">Учите немецкий с FlashBoss</h1>
+      <p class="h1 reveal" aria-hidden="true">Немецкий<span class="cursor"></span></p>
       <p class="tagline reveal">Учите язык, познавая культуру.</p>
       <p class="sig reveal">Слушай · Читай · Повторяй · Оценивай · Сражайся</p>
       <p class="lede reveal">Вы начинаете с фразы <b class="de">Ich bin Student.</b> В конце вы уже читаете письмо из <b>Finanzamt</b> — и точно знаете, что оно хочет. German Core ведёт вас от прибытия к выживанию.</p>

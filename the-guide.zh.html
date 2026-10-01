@@ -26,8 +26,8 @@
      Canon held here: the six pack names stay English, FlashBoss stays
      Latin, and every number is the English page's number in this locale's
      separator — nothing was recounted. -->
-<title>The Guide — FlashBoss</title>
-<meta name="description" content="FlashBoss The Guide：游戏主持人必须记在脑子里的规则，做成卡片。1,205 张卡片，分在 62 个集群里，62 节参考课程，每道关口都有一场 Boss 战。德语是完整版；日语、简体中文、俄语和西班牙语用你的语言游玩，用英语作答。兼容 5E，依据 System Reference Document 5.2 构建。">
+<title>5E 规则闪卡：游戏主持人（DM）必备 | FlashBoss</title>
+<meta name="description" content="学 5E 规则：游戏主持人必须记在脑子里的规则，做成 1,205 张闪卡，分 62 个集群，兼容 5E，依据 SRD 5.2 构建。">
 <link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/the-guide.zh.html">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/the-guide.html">
@@ -92,9 +92,7 @@ nav .lang-menu a[aria-current="true"]{color:var(--accent);}
 .hero::after{content:""; position:absolute; inset:0; z-index:1; background:linear-gradient(180deg, rgba(18,13,9,.58) 0%, rgba(18,13,9,.84) 56%, var(--bg) 100%);}
 .hero .wrap{position:relative; z-index:2;}
 .kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--dim); margin-bottom:24px;}
-.kicker b{color:var(--accent); font-weight:700;}
-.hero h1{font-size:clamp(40px,10vw,90px); line-height:.95; margin:0; font-weight:800; letter-spacing:-.015em;}
-.hero h1 .small{display:block; font-size:.24em; letter-spacing:.34em; font-weight:500; opacity:.62; margin-top:18px;}
+.kicker b{color:var(--accent); font-weight:700;}.hero h1, .hero .h1{font-size:clamp(40px,10vw,90px); line-height:.95; margin:0; font-weight:800; letter-spacing:-.015em;}.hero h1 .small, .hero .h1 .small{display:block; font-size:.24em; letter-spacing:.34em; font-weight:500; opacity:.62; margin-top:18px;}
 .cursor{display:inline-block; width:.55em; height:.92em; vertical-align:-.06em; background:color-mix(in oklab, var(--accent), transparent 28%); margin-left:.1em; animation:blink 1.05s steps(1) infinite;}
 @keyframes blink{50%{opacity:0;}}
 .hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:46ch; margin:28px 0 0; font-weight:500;}
@@ -212,6 +210,12 @@ nav.fbnav .lang-switch{margin-left:0;}
 .hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
 </style>
 <!-- HEROSTEAM:end -->
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="beta-note" role="status"><b>测试版翻译</b> — 本页的简体中文版仍是草稿，尚未经过校对。发现文字错误？ <a href="report.html">告诉我们</a> · <a href="the-guide.html">Read in English</a></div>
@@ -247,7 +251,8 @@ nav.fbnav .lang-switch{margin-left:0;}
   <header class="hero">
     <div class="wrap">
       <p class="kicker reveal">写给带团的人 · <b>现已推出</b></p>
-      <h1 class="reveal">The Guide<span class="cursor"></span><span class="small">1,205 张卡片 · 62 个集群</span></h1>
+      <h1 class="learn reveal">用 FlashBoss 学 5E 规则</h1>
+      <p class="h1 reveal" aria-hidden="true">The Guide<span class="cursor"></span><span class="small">1,205 张卡片 · 62 个集群</span></p>
       <p class="tagline reveal">游戏主持人必须记在脑子里的规则——而不是正翻开的那一页上的规则。</p>
       <p class="sig reveal">听 · 读 · 重复 · 评分 · 战斗</p>
       <p class="lede reveal">每张卡片都是一件你应当脱口而出、而非临时翻查的事：某个状态有什么效果、某项检定要掷哪个骰、DC 15 究竟意味着什么、一个属性块在告诉你什么、一支队伍在 5 级时究竟做得到什么。<b>兼容 5E，依据 System Reference Document 5.2 构建。</b></p>

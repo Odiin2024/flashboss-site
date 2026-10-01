@@ -11,8 +11,8 @@
      Canon held here: the six pack names stay English, FlashBoss stays
      Latin, and every number is the English page's number in this locale's
      separator — nothing was recounted. -->
-<title>拉丁语 — FlashBoss</title>
-<meta name="description" content="FlashBoss 拉丁语：一门 2,000 词的阅读课程，分十个层级、八十个词族，配 44 节参考课程、标注长音符的词目，以及最终走向未经改编的凯撒、西塞罗、萨卢斯特、奈波斯与李维的例句。Latin Core 与 Latin Pareto 已在 Steam 发售。">
+<title>学拉丁语：2,000 词阅读课程 | FlashBoss</title>
+<meta name="description" content="在阅读中学拉丁语：2,000 词的间隔重复闪卡课程，例句最终走向未经改编的凯撒、西塞罗与李维原文。">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/latin.zh.html">
 <link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <!-- The Latin course page. Promoted 2026-09-19: Latin Core (Steam 5063240) and
@@ -127,8 +127,7 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--s-bg);}
   background:linear-gradient(180deg, rgba(13,17,22,.60) 0%, rgba(13,17,22,.84) 55%, #100d08 100%);}
 .hero .wrap{position:relative; z-index:2;}
 .kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--s-dim); opacity:.9; margin-bottom:26px;}
-.kicker b{color:var(--s-accent); font-weight:700;}
-.hero h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
+.kicker b{color:var(--s-accent); font-weight:700;}.hero h1, .hero .h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
 .cursor{display:inline-block; width:.6em; height:1em; vertical-align:-.08em; background:color-mix(in oklab, var(--s-accent), transparent 30%); margin-left:.12em; animation:blink 1.05s steps(1) infinite;}
 @keyframes blink{50%{opacity:0;}}
 .hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:30px 0 0; color:var(--s-ink); font-weight:500;}
@@ -342,6 +341,12 @@ nav.fbnav .lang-switch{margin-left:0;}
 .hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
 </style>
 <!-- HEROSTEAM:end -->
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="beta-note" role="status"><b>测试版翻译</b> — 本页的简体中文版仍是草稿，尚未经过校对。发现文字错误？ <a href="report.html">告诉我们</a> · <a href="latin.html">Read in English</a></div>
@@ -382,7 +387,8 @@ nav.fbnav .lang-switch{margin-left:0;}
     <img class="hero-img" src="background.webp" alt="FlashBoss——月光下的学舍，每一门课程的门面" loading="eager" decoding="async" onerror="this.style.display='none'">
     <div class="wrap">
       <p class="kicker reveal">两个卡包 · <b>2,000 个单词</b> · 十个层级 · 44 节课程 · 已在 Steam 发售</p>
-      <h1 class="reveal">Latīna<span class="cursor"></span></h1>
+      <h1 class="learn reveal">用 FlashBoss 学拉丁语</h1>
+      <p class="h1 reveal" aria-hidden="true">Latīna<span class="cursor"></span></p>
       <p class="tagline reveal">读真正的拉丁语，不是关于拉丁语的书。</p>
       <p class="sig reveal">听 · 读 · 重复 · 评分 · 战斗</p>
       <p class="lede reveal">两千个单词，十个层级，一项技能。例句起初是为你而造的，到最后则是<b>凯撒、西塞罗、萨卢斯特、奈波斯与李维真正写下的样子</b>——删去的只有长度，没有一处是编出来的。</p>

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>English Core — 英语 1,000 词 | FlashBoss</title>
-<meta name="description" content="FlashBoss 英语：完全以简体中文学英语。English Core、Pareto 1 与 Pareto 2——每包 1,000 个单词，每张卡片配有中文释义、例句翻译与学习注释，含间隔重复、头目战与文本转语音。">
+<title>用中文背英语单词：3,000 核心词汇 | FlashBoss</title>
+<meta name="description" content="用中文背英语单词：3,000 个核心英语词汇做成闪卡，中文释义，配头目战。">
 <link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/english.zh.html">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/english.html">
@@ -112,8 +112,7 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--v-bg);}
   background:linear-gradient(180deg, rgba(13,17,23,.62) 0%, rgba(13,17,23,.84) 55%, #100d08 100%);}
 .hero .wrap{position:relative; z-index:2;}
 .kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--v-dim); opacity:.9; margin-bottom:26px;}
-.kicker b{color:var(--v-accent); font-weight:700;}
-.hero h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
+.kicker b{color:var(--v-accent); font-weight:700;}.hero h1, .hero .h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
 .cursor{display:inline-block; width:.6em; height:1em; vertical-align:-.08em; background:color-mix(in oklab, var(--v-accent), transparent 30%); margin-left:.12em; animation:blink 1.05s steps(1) infinite;}
 @keyframes blink{50%{opacity:0;}}
 .hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:30px 0 0; color:var(--v-ink); font-weight:500;}
@@ -264,6 +263,12 @@ nav.fbnav .lang-switch{margin-left:0;}
 .hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
 </style>
 <!-- HEROSTEAM:end -->
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="overlay"></div>
@@ -300,7 +305,8 @@ nav.fbnav .lang-switch{margin-left:0;}
     <img class="hero-img" src="english.webp" alt="FlashBoss——悬挂英语旗帜的学舍，英语课程在此教授" loading="eager" decoding="async" onerror="this.style.display='none'">
     <div class="wrap">
       <p class="kicker reveal">English Core 现已推出 · <b>1,000 个单词</b> · 40 个集群 · 38 节课程</p>
-      <h1 class="reveal">English<span class="cursor"></span></h1>
+      <h1 class="learn reveal">用 FlashBoss 学英语</h1>
+      <p class="h1 reveal" aria-hidden="true">English<span class="cursor"></span></p>
       <p class="tagline reveal">学英语，不需要先会英语。</p>
       <p class="sig reveal">听 · 读 · 重复 · 评分 · 战斗</p>
       <p class="lede reveal">每张卡片教一个英语单词——配有<b>中文释义</b>、<b>例句中文翻译</b>和<b>中文学习注释</b>。游戏界面本身也说中文。English Core 从最初的 1,000 个单词开始；Pareto 1 和 2 把这条路一直修到 3,000 词。</p>

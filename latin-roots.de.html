@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Latin Roots — FlashBoss</title>
-<meta name="description" content="FlashBoss Latin Roots: Hör auf, Englisch Wort für Wort zu lernen. Die Vorsilben, Nachsilben und Wurzeln, aus denen sich Tausende Wörter zusammensetzen — lerne die Teile und lies ein unbekanntes Wort auseinander. 1.000 Wörter, 500 Karten, Spaced Repetition, Bossfights und Sprachausgabe.">
+<title>Lateinische Vorsilben und Wurzeln im Englischen | FlashBoss</title>
+<meta name="description" content="Lateinische Vorsilben, Wurzeln und Nachsilben, die Tausende englische Wörter bilden – unbekannte Wörter zerlegen lernen: 500 Karteikarten mit Bossfights.">
 
 <!-- House font. If self-hosting, swap this for your local JetBrains Mono. -->
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/latin-roots.de.html">
@@ -149,12 +149,10 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--op-bg);}
   font-size:12px; letter-spacing:.32em; text-transform:uppercase;
   color:var(--op-dim); opacity:.9; margin-bottom:26px;
 }
-.kicker b{color:var(--op-accent); font-weight:700;}
-.hero h1{
+.kicker b{color:var(--op-accent); font-weight:700;}.hero h1, .hero .h1{
   font-size:clamp(44px, 11vw, 104px);
   line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;
-}
-.hero h1 .small{display:block; font-size:.30em; letter-spacing:.42em; font-weight:500; opacity:.6; margin-top:18px;}
+}.hero h1 .small, .hero .h1 .small{display:block; font-size:.30em; letter-spacing:.42em; font-weight:500; opacity:.6; margin-top:18px;}
 .cursor{
   display:inline-block; width:.6em; height:1em; vertical-align:-.08em;
   background:color-mix(in oklab, var(--op-accent), transparent 30%); margin-left:.12em;
@@ -396,6 +394,12 @@ nav.fbnav .lang-switch{margin-left:0;}
 .hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
 </style>
 <!-- HEROSTEAM:end -->
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="overlay"></div>
@@ -431,7 +435,8 @@ nav.fbnav .lang-switch{margin-left:0;}
   <header class="hero">
     <div class="wrap">
       <p class="kicker reveal">Die Roots Series · <b>Latein</b></p>
-      <h1 class="reveal">Latin Roots<span class="cursor"></span></h1>
+      <h1 class="learn reveal">Die lateinischen Wurzeln des Englischen lernen</h1>
+      <p class="h1 reveal" aria-hidden="true">Latin Roots<span class="cursor"></span></p>
       <p class="tagline reveal">Hör auf, Englisch Wort für Wort zu lernen.</p>
       <p class="sig reveal">Hören · Lesen · Wiederholen · Bewerten · Kämpfen</p>
       <p class="lede reveal">Niemand mit großem Wortschatz hat ihn Wort für Wort aufgebaut. Sie haben gelernt, die Teile zu lesen. Begegne <b class="lat">irreparable</b> und du kannst es auf den ersten Blick zerlegen — <span class="pre">ir</span>·<span class="pre">re</span>·<span class="rt">par</span>·<span class="suf">able</span>, „nicht wieder instand setzbar“ — und liest seine Bedeutung direkt von der Oberfläche ab.</p>

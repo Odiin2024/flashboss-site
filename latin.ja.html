@@ -11,8 +11,8 @@
      Canon held here: the six pack names stay English, FlashBoss stays
      Latin, and every number is the English page's number in this locale's
      separator — nothing was recounted. -->
-<title>ラテン語 — FlashBoss</title>
-<meta name="description" content="FlashBossのラテン語：10ティア・80クラスターで2,000語を読む読解コース。参照レッスン44本、マクロン付きの見出し語、そして最後は手を加えていないカエサル、キケロ、サッルスティウス、ネポス、リウィウスで終わる例文。Latin CoreとLatin Pareto、Steamで発売中。">
+<title>ラテン語の読解コース、ボス戦つき | FlashBoss</title>
+<meta name="description" content="ラテン語を読んで学ぶ。2,000語のコースを間隔反復のフラッシュカードで、例文の行き着く先は本物のカエサル、キケロ、リウィウス。">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/latin.ja.html">
 <link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <!-- The Latin course page. Promoted 2026-09-19: Latin Core (Steam 5063240) and
@@ -127,8 +127,7 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--s-bg);}
   background:linear-gradient(180deg, rgba(13,17,22,.60) 0%, rgba(13,17,22,.84) 55%, #100d08 100%);}
 .hero .wrap{position:relative; z-index:2;}
 .kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--s-dim); opacity:.9; margin-bottom:26px;}
-.kicker b{color:var(--s-accent); font-weight:700;}
-.hero h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
+.kicker b{color:var(--s-accent); font-weight:700;}.hero h1, .hero .h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
 .cursor{display:inline-block; width:.6em; height:1em; vertical-align:-.08em; background:color-mix(in oklab, var(--s-accent), transparent 30%); margin-left:.12em; animation:blink 1.05s steps(1) infinite;}
 @keyframes blink{50%{opacity:0;}}
 .hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:30px 0 0; color:var(--s-ink); font-weight:500;}
@@ -342,6 +341,12 @@ nav.fbnav .lang-switch{margin-left:0;}
 .hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
 </style>
 <!-- HEROSTEAM:end -->
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="beta-note" role="status"><b>ベータ翻訳</b> — このページの日本語版は下書きで、まだ校正を経ていません。文章の誤りを見つけたら <a href="report.html">お知らせください</a> · <a href="latin.html">Read in English</a></div>
@@ -382,7 +387,8 @@ nav.fbnav .lang-switch{margin-left:0;}
     <img class="hero-img" src="background.webp" alt="FlashBoss — すべてのコースの顔である月夜の学び舎" loading="eager" decoding="async" onerror="this.style.display='none'">
     <div class="wrap">
       <p class="kicker reveal">2パック · <b>2,000語</b> · 10ティア · レッスン44本 · Steamで発売中</p>
-      <h1 class="reveal">Latīna<span class="cursor"></span></h1>
+      <h1 class="learn reveal">FlashBossでラテン語を学ぶ</h1>
+      <p class="h1 reveal" aria-hidden="true">Latīna<span class="cursor"></span></p>
       <p class="tagline reveal">本物のラテン語を読む。ラテン語について書かれた本ではなく。</p>
       <p class="sig reveal">聞く・読む・繰り返す・評価する・戦う</p>
       <p class="lede reveal">2,000語、10ティア、ひとつの技能。例文はあなたのために組まれた文から始まり、最後は<b>カエサル、キケロ、サッルスティウス、ネポス、リウィウスが実際に書いたとおりの文</b>になります — 削ったのは長さだけ、作り足したものはありません。</p>

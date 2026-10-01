@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Esperanto — 学ぶために作られた言語 | FlashBoss</title>
-<meta name="description" content="FlashBoss Esperanto：学ばれるために作られた言語。完全に規則的 — 不規則動詞なし、名詞の性なし、例外なし — そして、参加する世界規模のコミュニティを軸に組まれています。『Saluton』から、国境を越えて書き、出会い、居場所を得るまで。間隔反復、ボス戦、TTS音声。">
+<title>エスペラント語をボス戦で学ぶ | FlashBoss</title>
+<meta name="description" content="エスペラント語を学ぶ。最も規則的な言語の3,000語を間隔反復のフラッシュカードで。不規則動詞も例外もなし、ボス戦付き。">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/esperanto.ja.html">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/esperanto.html">
 <link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/esperanto.de.html">
@@ -105,8 +105,7 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--d-bg);}
   background:linear-gradient(180deg, rgba(23,20,33,.62) 0%, rgba(23,20,33,.82) 55%, #171421 100%);}
 .hero .wrap{position:relative; z-index:2;}
 .kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--d-dim); opacity:.9; margin-bottom:26px;}
-.kicker b{color:var(--d-accent); font-weight:700;}
-.hero h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
+.kicker b{color:var(--d-accent); font-weight:700;}.hero h1, .hero .h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
 .cursor{display:inline-block; width:.6em; height:1em; vertical-align:-.08em; background:color-mix(in oklab, var(--d-accent), transparent 30%); margin-left:.12em; animation:blink 1.05s steps(1) infinite;}
 @keyframes blink{50%{opacity:0;}}
 .hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:30px 0 0; color:var(--d-ink); font-weight:500;}
@@ -254,6 +253,12 @@ nav.fbnav .lang-switch{margin-left:0;}
 .hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
 </style>
 <!-- HEROSTEAM:end -->
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="overlay"></div>
@@ -288,7 +293,8 @@ nav.fbnav .lang-switch{margin-left:0;}
   <!-- HERO -->
   <header class="hero">
     <div class="wrap">
-      <h1 class="reveal">Esperanto<span class="cursor"></span></h1>
+      <h1 class="learn reveal">FlashBossでエスペラント語を学ぶ</h1>
+      <p class="h1 reveal" aria-hidden="true">Esperanto<span class="cursor"></span></p>
       <p class="tagline reveal">学ばれるために作られた言語を、学ぶ。</p>
       <p class="sig reveal">聞く・読む・繰り返す・評価する・戦う</p>
       <p class="lede reveal">出発点は <b class="eo">Saluton.</b>（こんにちは）。数週間後にはもう読めています — 不規則なものも、隠されたものも、何ひとつないからです。</p>

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Toki Pona — FlashBoss</title>
-<meta name="description" content="FlashBoss Toki Pona: eine ganze Sprache aus rund 140 Wörtern — kostenlos im Grundspiel. 500 Karten über 22 Cluster und 5 Stufen, 13 Grammatiklektionen, Karten und Lektionen auf Deutsch, Englisch, Japanisch, Spanisch und vereinfachtem Chinesisch. Spaced Repetition, Bossfights und Sprachausgabe.">
+<title>Toki Pona lernen – Karteikarten mit Bossfights | FlashBoss</title>
+<meta name="description" content="Toki Pona lernen, die Sprache mit rund 140 Wörtern: 500 Karteikarten mit Spaced Repetition, Grammatiklektionen und einem Bossfight nach jedem Set.">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/toki-pona.de.html">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/toki-pona.html">
 <link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/toki-pona.de.html">
@@ -113,8 +113,7 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--d-bg);}
   background:linear-gradient(180deg, rgba(20,17,10,.60) 0%, rgba(17,20,20,.84) 55%, #100d08 100%);}
 .hero .wrap{position:relative; z-index:2;}
 .kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--d-dim); opacity:.9; margin:0 0 26px;}
-.kicker b{color:var(--d-accent); font-weight:700;}
-.hero h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
+.kicker b{color:var(--d-accent); font-weight:700;}.hero h1, .hero .h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
 .cursor{display:inline-block; width:.6em; height:1em; vertical-align:-.08em; background:color-mix(in oklab, var(--d-accent), transparent 30%); margin-left:.12em; animation:blink 1.05s steps(1) infinite;}
 @keyframes blink{50%{opacity:0;}}
 .hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:30px 0 0; color:var(--d-ink); font-weight:500;}
@@ -308,6 +307,12 @@ nav.fbnav .lang-switch{margin-left:0;}
 .hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
 </style>
 <!-- HEROSTEAM:end -->
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="overlay"></div>
@@ -345,7 +350,8 @@ nav.fbnav .lang-switch{margin-left:0;}
     <img class="hero-bg" src="toki-pona-hero.webp" alt="Eine FlashBoss-Lernkarte für Toki Pona auf dem Terminal-Bildschirm: das Zielwort, ein Beispielsatz mit Übersetzung und darunter die Anmerkungen.">
     <div class="wrap">
       <p class="kicker reveal">Grundspiel · <b>kostenlos enthalten</b></p>
-      <h1 class="reveal">toki pona<span class="cursor"></span></h1>
+      <h1 class="learn reveal">toki pona lernen mit FlashBoss</h1>
+      <p class="h1 reveal" aria-hidden="true">toki pona<span class="cursor"></span></p>
       <p class="tagline reveal">Eine ganze Sprache. Rund 140 Wörter.</p>
       <p class="sig reveal">Hören · Lesen · Wiederholen · Bewerten · Kämpfen</p>
       <p class="lede reveal">Du beginnst mit <b class="tp" lang="tok">toki!</b> — hallo. Fünfhundert Karten später gibt es an dieser Sprache nichts mehr kennenzulernen. <b>Kostenlos</b>, im Grundspiel.</p>

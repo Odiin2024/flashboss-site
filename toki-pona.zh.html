@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Toki Pona — 道本语课程 | FlashBoss</title>
-<meta name="description" content="FlashBoss 道本语（Toki Pona）：约 140 个单词的完整语言，免费包含在基本游戏中。500 张卡片、22 个集群、5 个层级、13 节语法课程，全部卡片与课程均有简体中文。间隔重复、头目战、TTS 语音。">
+<title>学道本语 Toki Pona | FlashBoss</title>
+<meta name="description" content="学道本语（Toki Pona）：一门只有约 140 个词的语言。500 张间隔重复闪卡，配语法课程，每个卡包以一场头目战收尾。">
 <link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/toki-pona.zh.html">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/toki-pona.html">
@@ -115,8 +115,7 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--d-bg);}
   background:linear-gradient(180deg, rgba(20,17,10,.60) 0%, rgba(17,20,20,.84) 55%, #100d08 100%);}
 .hero .wrap{position:relative; z-index:2;}
 .kicker{font-size:12px; letter-spacing:.32em; color:var(--d-dim); opacity:.9; margin:0 0 26px;}
-.kicker b{color:var(--d-accent); font-weight:700;}
-.hero h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
+.kicker b{color:var(--d-accent); font-weight:700;}.hero h1, .hero .h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
 .cursor{display:inline-block; width:.6em; height:1em; vertical-align:-.08em; background:color-mix(in oklab, var(--d-accent), transparent 30%); margin-left:.12em; animation:blink 1.05s steps(1) infinite;}
 @keyframes blink{50%{opacity:0;}}
 .hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:30px 0 0; color:var(--d-ink); font-weight:500;}
@@ -321,6 +320,12 @@ nav.fbnav .lang-switch{margin-left:0;}
 .hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
 </style>
 <!-- HEROSTEAM:end -->
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="overlay"></div>
@@ -357,7 +362,8 @@ nav.fbnav .lang-switch{margin-left:0;}
     <img class="hero-bg" src="toki-pona-hero.webp" alt="终端屏幕上的 FlashBoss Toki Pona 闪卡——目标单词、例句及其翻译，下方是注释">
     <div class="wrap">
       <p class="kicker reveal">基本游戏 · <b>免费附带</b> · 完整简体中文支持</p>
-      <h1 class="reveal">toki pona<span class="cursor"></span></h1>
+      <h1 class="learn reveal">用 FlashBoss 学道本语</h1>
+      <p class="h1 reveal" aria-hidden="true">toki pona<span class="cursor"></span></p>
       <p class="tagline reveal">一整门语言。约 140 个单词。</p>
       <p class="sig reveal">听 · 读 · 重复 · 评分 · 战斗</p>
       <p class="lede reveal">你从一句 <b class="tp" lang="tok">toki!</b>（你好）开始。500 张卡片之后，这门语言里再没有你未曾见过的角落。<b>免费</b>，就在基本游戏里。</p>

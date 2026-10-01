@@ -11,8 +11,8 @@
      Canon held here: the six pack names stay English, FlashBoss stays
      Latin, and every number is the English page's number in this locale's
      separator — nothing was recounted. -->
-<title>Латинский — FlashBoss</title>
-<meta name="description" content="FlashBoss Латинский: курс чтения на 2000 слов в десяти уровнях и восьмидесяти кластерах, 44 справочных урока, заглавные слова с макронами и примеры предложений, которые заканчиваются неадаптированными Цезарем, Цицероном, Саллюстием, Непотом и Ливием. Latin Core и Latin Pareto уже в Steam.">
+<title>Учить латынь: курс чтения с босс-файтами | FlashBoss</title>
+<meta name="description" content="Учите латынь, читая её: курс на 2 000 слов в виде карточек с интервальным повторением, где примеры под конец — неадаптированные Цезарь, Цицерон и Ливий.">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/latin.ru.html">
 <link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <!-- The Latin course page. Promoted 2026-09-19: Latin Core (Steam 5063240) and
@@ -127,8 +127,7 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--s-bg);}
   background:linear-gradient(180deg, rgba(13,17,22,.60) 0%, rgba(13,17,22,.84) 55%, #100d08 100%);}
 .hero .wrap{position:relative; z-index:2;}
 .kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--s-dim); opacity:.9; margin-bottom:26px;}
-.kicker b{color:var(--s-accent); font-weight:700;}
-.hero h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
+.kicker b{color:var(--s-accent); font-weight:700;}.hero h1, .hero .h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
 .cursor{display:inline-block; width:.6em; height:1em; vertical-align:-.08em; background:color-mix(in oklab, var(--s-accent), transparent 30%); margin-left:.12em; animation:blink 1.05s steps(1) infinite;}
 @keyframes blink{50%{opacity:0;}}
 .hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:30px 0 0; color:var(--s-ink); font-weight:500;}
@@ -342,6 +341,12 @@ nav.fbnav .lang-switch{margin-left:0;}
 .hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
 </style>
 <!-- HEROSTEAM:end -->
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="beta-note" role="status"><b>БЕТА-ПЕРЕВОД</b> — русская версия этой страницы черновая и ещё не прошла редактуру. Нашли ошибку в тексте? <a href="report.html">Сообщите нам</a> · <a href="latin.html">Read in English</a></div>
@@ -382,7 +387,8 @@ nav.fbnav .lang-switch{margin-left:0;}
     <img class="hero-img" src="background.webp" alt="FlashBoss — залитая лунным светом школа, с которой начинается каждый курс" loading="eager" decoding="async" onerror="this.style.display='none'">
     <div class="wrap">
       <p class="kicker reveal">Два набора · <b>2000 слов</b> · десять уровней · 44 урока · уже в Steam</p>
-      <h1 class="reveal">Latīna<span class="cursor"></span></h1>
+      <h1 class="learn reveal">Учите латынь с FlashBoss</h1>
+      <p class="h1 reveal" aria-hidden="true">Latīna<span class="cursor"></span></p>
       <p class="tagline reveal">Читайте настоящую латынь. Не книги о ней.</p>
       <p class="sig reveal">Слушать · Читать · Повторять · Оценивать · Сражаться</p>
       <p class="lede reveal">Две тысячи слов, десять уровней, один навык. Предложения начинаются построенными под вас и заканчиваются так, <b>как их на самом деле написали Цезарь, Цицерон, Саллюстий, Непот и Ливий</b> — урезана только длина, не выдумано ничего.</p>

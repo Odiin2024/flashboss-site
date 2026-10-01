@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>German — 德语课程 | FlashBoss</title>
-<meta name="description" content="FlashBoss German：1,000 个与你一同成长的德语单词。从「Ich bin Student」到 Finanzamt（税务局）的来信。间隔重复、头目战、名词词性颜色标记、TTS 语音。">
+<title>学德语：3,000 个常用德语单词 | FlashBoss</title>
+<meta name="description" content="学德语单词：3,000 个最实用的词做成间隔重复闪卡，从「Ich bin Student」到 Finanzamt（税务局），配头目战。">
 
 <!-- House font. If self-hosting, swap this for your local JetBrains Mono. -->
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/german.zh.html">
@@ -144,12 +144,10 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--inn-bg);}
   font-size:12px; letter-spacing:.32em; text-transform:uppercase;
   color:var(--inn-dim); opacity:.9; margin-bottom:26px;
 }
-.kicker b{color:var(--inn-accent); font-weight:700;}
-.hero h1{
+.kicker b{color:var(--inn-accent); font-weight:700;}.hero h1, .hero .h1{
   font-size:clamp(44px, 11vw, 104px);
   line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;
-}
-.hero h1 .small{display:block; font-size:.34em; letter-spacing:.42em; font-weight:500; opacity:.6; margin-top:18px;}
+}.hero h1 .small, .hero .h1 .small{display:block; font-size:.34em; letter-spacing:.42em; font-weight:500; opacity:.6; margin-top:18px;}
 .cursor{
   display:inline-block; width:.6em; height:1em; vertical-align:-.08em;
   background:color-mix(in oklab, var(--inn-accent), transparent 30%); margin-left:.12em;
@@ -369,6 +367,12 @@ nav.fbnav .lang-switch{margin-left:0;}
 .hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
 </style>
 <!-- HEROSTEAM:end -->
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="overlay"></div>
@@ -403,7 +407,8 @@ nav.fbnav .lang-switch{margin-left:0;}
   <!-- HERO -->
   <header class="hero">
     <div class="wrap">
-      <h1 class="reveal">Deutsch<span class="cursor"></span></h1>
+      <h1 class="learn reveal">用 FlashBoss 学德语</h1>
+      <p class="h1 reveal" aria-hidden="true">Deutsch<span class="cursor"></span></p>
       <p class="tagline reveal">了解文化，学会语言。</p>
       <p class="sig reveal">听 · 读 · 重复 · 评分 · 战斗</p>
       <p class="lede reveal">起点是一句 <b class="de">Ich bin Student.</b>（我是学生）。到最后，你已能读懂 <b>Finanzamt</b>（税务局）的来信——并且清楚地知道它要什么。German Core 带你从初来乍到走到站稳脚跟。</p>

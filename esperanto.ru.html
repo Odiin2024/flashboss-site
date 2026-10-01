@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Эсперанто — FlashBoss</title>
-<meta name="description" content="FlashBoss Эсперанто: язык, созданный для изучения. Идеально регулярный — нет неправильных глаголов, нет родов, нет исключений — и построен вокруг мирового сообщества, к которому вы присоединяетесь. От 'Saluton' до письма, встреч и чувства принадлежности через границы. Интервальное повторение, босс-файты и синтез речи.">
+<title>Учить эсперанто: слова и карточки с босс-файтами | FlashBoss</title>
+<meta name="description" content="Учите эсперанто: 3 000 слов самого регулярного языка в мире в карточках с интервальным повторением и босс-файтами. Без неправильных глаголов и исключений.">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/esperanto.ru.html">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/esperanto.html">
 <link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/esperanto.de.html">
@@ -104,8 +104,7 @@ nav .lang-menu a[aria-current="true"]:hover{color:var(--d-bg);}
   background:linear-gradient(180deg, rgba(23,20,33,.62) 0%, rgba(23,20,33,.82) 55%, #171421 100%);}
 .hero .wrap{position:relative; z-index:2;}
 .kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--d-dim); opacity:.9; margin-bottom:26px;}
-.kicker b{color:var(--d-accent); font-weight:700;}
-.hero h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
+.kicker b{color:var(--d-accent); font-weight:700;}.hero h1, .hero .h1{font-size:clamp(44px,11vw,104px); line-height:.92; margin:0; font-weight:800; letter-spacing:-.01em;}
 .cursor{display:inline-block; width:.6em; height:1em; vertical-align:-.08em; background:color-mix(in oklab, var(--d-accent), transparent 30%); margin-left:.12em; animation:blink 1.05s steps(1) infinite;}
 @keyframes blink{50%{opacity:0;}}
 .hero .tagline{font-size:clamp(17px,2.7vw,23px); max-width:44ch; margin:30px 0 0; color:var(--d-ink); font-weight:500;}
@@ -255,6 +254,12 @@ nav.fbnav .lang-switch{margin-left:0;}
 .hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
 </style>
 <!-- HEROSTEAM:end -->
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="beta-note" role="status"><b>БЕТА-ПЕРЕВОД</b> — русская версия сайта черновая и ещё не прошла редактуру. Нашли ошибку в тексте? <a href="report.html">Сообщите нам</a> · <a href="esperanto.html">Read in English</a></div>
@@ -290,7 +295,8 @@ nav.fbnav .lang-switch{margin-left:0;}
   <!-- HERO -->
   <header class="hero">
     <div class="wrap">
-      <h1 class="reveal">Esperanto<span class="cursor"></span></h1>
+      <h1 class="learn reveal">Учите эсперанто с FlashBoss</h1>
+      <p class="h1 reveal" aria-hidden="true">Esperanto<span class="cursor"></span></p>
       <p class="tagline reveal">Изучайте язык, созданный для изучения.</p>
       <p class="sig reveal">Слушай · Читай · Повторяй · Оценивай · Сражайся</p>
       <p class="lede reveal">Вы начинаете с <b class="eo">Saluton.</b> Через несколько недель вы уже читаете на нём, потому что в нём нет ничего неправильного и ничего не скрыто.</p>
