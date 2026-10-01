@@ -28,7 +28,7 @@
      separator — nothing was recounted. -->
 <title>Das englische Immersionssystem — FlashBoss</title>
 <meta name="description" content="Ein Weg, sechs Stufen: English Advance, German Roots, Norman Roots, English Adept, Latin Roots, Greek Roots. Englisch auf Englisch gelehrt, mit einem Bosskampf am Ende jedes Clusters.">
-<link rel="icon" type="image/png" href="icon.png">
+<link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/immersion.de.html">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/immersion.html">
 <link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/immersion.de.html">
@@ -97,7 +97,7 @@ nav .links a.steam{font-weight:800; opacity:1;}
 
 /* ---- HERO (home.png strip, darkened) ---- */
 .hero{position:relative; padding:84px 0 48px; overflow:hidden;}
-.hero::before{content:""; position:absolute; inset:0; z-index:0; background:#0c0a06 url('home.png') center 32% / cover no-repeat;}
+.hero::before{content:""; position:absolute; inset:0; z-index:0; background:#0c0a06 url('home.webp') center 32% / cover no-repeat;}
 .hero::after{content:""; position:absolute; inset:0; z-index:1; background:linear-gradient(180deg, rgba(16,13,8,.55) 0%, rgba(16,13,8,.80) 58%, var(--bg) 100%);}
 .hero .wrap{position:relative; z-index:2;}
 .kicker{font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--dim); opacity:.9; margin-bottom:26px;}
@@ -481,7 +481,7 @@ footer .footer-links .div{opacity:.4;}
           <p><a href="https://flashboss-demo.pages.dev/english/" target="_blank" rel="noopener">Kämpfe selbst einen &rarr;</a></p>
         </div>
         <a class="bf-box" href="https://flashboss-demo.pages.dev/english/" target="_blank" rel="noopener">
-          <img src="bossfight-immersion-poster.de.png" data-gif="bossfight-immersion.de.gif" alt="Drei Bosskämpfe aus der Roots-Reihe im echten Spiel, jeder hinter einer eigenen Titelkarte: German Roots, Norman Roots und Greek Roots. Die Oberfläche ist deutsch, die Karten sind auf jeder Stufe englisch. Jeder Kampf erreicht die Todesstoß-Position, verliert sie durch eine falsche Antwort und wird zwei Schritte zurückgeworfen, steigt wieder auf und gewinnt.">
+          <img src="bossfight-immersion-poster.de.png" width="534" height="597" data-gif="bossfight-immersion.de.gif" alt="Drei Bosskämpfe aus der Roots-Reihe im echten Spiel, jeder hinter einer eigenen Titelkarte: German Roots, Norman Roots und Greek Roots. Die Oberfläche ist deutsch, die Karten sind auf jeder Stufe englisch. Jeder Kampf erreicht die Todesstoß-Position, verliert sie durch eine falsche Antwort und wird zwei Schritte zurückgeworfen, steigt wieder auf und gewinnt.">
           <span class="bf-hint">Demo testen</span>
         </a>
       </div>
@@ -561,11 +561,14 @@ footer .footer-links .div{opacity:.4;}
   if(!img) return;
   var poster=img.getAttribute('src'), gifUrl=img.getAttribute('data-gif');
   var gifBlob=null, objUrl=null, playing=false;
-  fetch(gifUrl).then(function(r){return r.blob();}).then(function(b){ gifBlob=b; update(); }).catch(function(){});
+  var asked=false;   // fetch only when the reader nears the fight: ~0.55 MB nobody scrolling past should pay for
+  function fetchSoon(){ if(asked) return; var r=img.getBoundingClientRect(), vh=window.innerHeight||document.documentElement.clientHeight;
+    if(r.top<vh*2.5){ asked=true; fetch(gifUrl).then(function(r){return r.blob();}).then(function(b){ gifBlob=b; update(); }).catch(function(){}); } }
   function fullyInView(){
     var r=img.getBoundingClientRect();
     var vh=window.innerHeight||document.documentElement.clientHeight;
-    return r.height>0 && r.top>=0 && r.bottom<=vh;
+    var seen=Math.min(r.bottom,vh)-Math.max(r.top,0);   // most of it on screen: a short landscape phone never shows all of it
+    return r.height>0 && seen>=Math.min(r.height*0.7, vh*0.8);
   }
   function play(){
     if(objUrl) URL.revokeObjectURL(objUrl);
@@ -574,7 +577,7 @@ footer .footer-links .div{opacity:.4;}
   }
   function reset(){ if(objUrl){ URL.revokeObjectURL(objUrl); objUrl=null; } img.src=poster; }
   function update(){
-    var v=fullyInView();
+    fetchSoon(); var v=fullyInView();
     if(v && !playing){ playing=true; play(); }
     else if(!v && playing){ playing=false; reset(); }
   }
