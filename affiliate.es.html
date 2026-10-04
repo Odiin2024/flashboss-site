@@ -138,6 +138,12 @@ footer .footer-links .div{opacity:.4;}
 <style>
 nav.fbnav{display:flex; align-items:center; gap:10px 22px; flex-wrap:wrap;}
 nav.fbnav .fb-logo{color:inherit; text-decoration:none; font-weight:800; letter-spacing:.18em;}
+nav.fbnav .fb-crumbs{display:flex; align-items:baseline; flex-wrap:wrap; gap:0; font-size:13px; letter-spacing:.04em;}
+nav.fbnav .fb-crumbs a:not(.fb-logo){color:inherit; text-decoration:none; opacity:.72;}
+nav.fbnav .fb-crumbs a:not(.fb-logo):hover{opacity:1;}
+nav.fbnav .fb-pipe{opacity:.4; margin:0 10px;}
+nav.fbnav .fb-sep{opacity:.45; margin:0 .5em;}
+nav.fbnav .fb-here{opacity:1;}
 nav.fbnav .fb-links{display:flex; align-items:center; gap:8px 20px; flex-wrap:wrap; margin-left:auto;}
 nav.fbnav .fb-links a{color:inherit; text-decoration:none; opacity:.72; font-size:13px; letter-spacing:.04em; white-space:nowrap;}
 nav.fbnav .fb-links a:hover{opacity:1;}
@@ -149,6 +155,7 @@ nav.fbnav .lang-switch{margin-left:0;}
 @media (max-width:700px){
   nav.fbnav .fb-links{order:3; width:100%; margin-left:0; gap:6px 16px;}
   nav.fbnav .fb-links .fb-steam{display:none;}
+  nav.fbnav .fb-crumbs .fb-pipe, nav.fbnav .fb-crumbs a:not(.fb-logo), nav.fbnav .fb-crumbs .fb-sep, nav.fbnav .fb-crumbs .fb-here{display:none;}
   nav.fbnav .fb-steam-m{display:inline-block; margin-left:auto;}
 }
 </style>
@@ -159,13 +166,14 @@ nav.fbnav .lang-switch{margin-left:0;}
 <div class="vignette"></div>
 
 <nav class="fbnav">
-  <a class="fb-logo" href="index.es.html">FLASHBOSS</a>
+  <span class="fb-crumbs"><a class="fb-logo" href="index.es.html">FLASHBOSS</a><span class="fb-pipe">|</span><a href="home.es.html">inicio</a><span class="fb-sep"> · </span><span class="fb-here">promocionar</span></span>
   <span class="fb-links">
     <a href="home.es.html">inicio</a>
     <a href="packs.es.html">paquetes</a>
     <a href="wordlists.es.html">vocabulario</a>
     <a href="lessons.es.html">lecciones</a>
     <a href="manual/">manual</a>
+    <a class="fb-extra" href="resources.es.html">recursos</a>
     <a class="fb-steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-affiliate&l=spanish" target="_blank" rel="noopener">steam</a>
   </span>
   <a class="fb-steam fb-steam-m" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-affiliate&l=spanish" target="_blank" rel="noopener">steam</a>

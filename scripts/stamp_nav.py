@@ -40,12 +40,36 @@ SECTION = {"home": 0, "packs": 1, "wordlists": 2, "lessons": 3}
 UNDER_PACKS = {"english", "esperanto", "french", "german", "italian", "latin", "spanish",
                "swahili", "toki-pona", "the-guide", "german-roots", "greek-roots",
                "latin-roots", "norman-roots", "immersion", "in-development"}
-SKIP = {"tiers-and-clusters"}          # its <nav> is a table of contents, not the site menu
+SKIP = {"tiers-and-clusters"}
+
+# The top-left tree: FLASHBOSS | home · packs · German. Odiin 2026-10-04: every page
+# starts "FLASHBOSS | home"; the tree had fallen apart (Swahili, the Guide and
+# in-development skipped home, immersion had no parent). One parent map now draws it.
+PARENTS = {"home": []}
+for _b in ("packs", "voices", "resources", "about", "press", "affiliate"):
+    PARENTS[_b] = ["home"]
+for _b in UNDER_PACKS:
+    PARENTS[_b] = ["home", "packs"]
+for _b in ("wordlists", "lessons"):
+    PARENTS[_b] = ["home", "resources"]
+RESOURCES = {"": "resources", "de": "Ressourcen", "es": "recursos", "ja": "リソース",
+             "zh": "资源", "ru": "материалы"}
+
+# Each page's own label (fb-here) and its own extra menu links (fb-extra) live in the
+# page; on the first run they come from the nav as it was before the shared menu
+# (git 47505ea^), dumped to this file. Extras are Odiin's: never drop one unasked.
+HISTORY = os.path.join(SITE, "scripts", "nav_history.json")          # its <nav> is a table of contents, not the site menu
 
 CSS = """<!-- FBNAV:start (scripts/stamp_nav.py — edit there, not here) -->
 <style>
 nav.fbnav{display:flex; align-items:center; gap:10px 22px; flex-wrap:wrap;}
 nav.fbnav .fb-logo{color:inherit; text-decoration:none; font-weight:800; letter-spacing:.18em;}
+nav.fbnav .fb-crumbs{display:flex; align-items:baseline; flex-wrap:wrap; gap:0; font-size:13px; letter-spacing:.04em;}
+nav.fbnav .fb-crumbs a:not(.fb-logo){color:inherit; text-decoration:none; opacity:.72;}
+nav.fbnav .fb-crumbs a:not(.fb-logo):hover{opacity:1;}
+nav.fbnav .fb-pipe{opacity:.4; margin:0 10px;}
+nav.fbnav .fb-sep{opacity:.45; margin:0 .5em;}
+nav.fbnav .fb-here{opacity:1;}
 nav.fbnav .fb-links{display:flex; align-items:center; gap:8px 20px; flex-wrap:wrap; margin-left:auto;}
 nav.fbnav .fb-links a{color:inherit; text-decoration:none; opacity:.72; font-size:13px; letter-spacing:.04em; white-space:nowrap;}
 nav.fbnav .fb-links a:hover{opacity:1;}
@@ -57,6 +81,7 @@ nav.fbnav .lang-switch{margin-left:0;}
 @media (max-width:700px){
   nav.fbnav .fb-links{order:3; width:100%; margin-left:0; gap:6px 16px;}
   nav.fbnav .fb-links .fb-steam{display:none;}
+  nav.fbnav .fb-crumbs .fb-pipe, nav.fbnav .fb-crumbs a:not(.fb-logo), nav.fbnav .fb-crumbs .fb-sep, nav.fbnav .fb-crumbs .fb-here{display:none;}
   nav.fbnav .fb-steam-m{display:inline-block; margin-left:auto;}
 }
 </style>
@@ -90,6 +115,15 @@ def stamp(path):
         if loc:
             steam_url += f"&l={STEAM_L[loc]}"
     lab = LABELS[loc]
+    hist = {}
+    if os.path.isfile(HISTORY):
+        import json
+        hist = json.load(open(HISTORY, encoding="utf-8")).get(os.path.basename(path), {})
+    h = re.search(r'<span class="fb-here">(.*?)</span>', inner, re.S)
+    here = h.group(1) if h else (hist.get("here") or "")
+    ex = re.findall(r'<a class="fb-extra"[^>]*>.*?</a>', inner, re.S)
+    if not ex:
+        ex = [a.replace("<a ", '<a class="fb-extra" ', 1) for a in hist.get("extras", [])]
     targets = [f"home{sfx}.html", f"packs{sfx}.html", f"wordlists{sfx}.html", f"lessons{sfx}.html", "manual/"]
     cur = SECTION.get(base, 1 if base in UNDER_PACKS else None)
     # Odiin 2026-10-04: a page that already has the manual on a main button (voices)
@@ -101,9 +135,21 @@ def stamp(path):
         if t == "manual/" and manual_button:
             continue
         links.append(f'    <a href="{t}"' + (' aria-current="page"' if i == cur else "") + f">{l}</a>")
+    links += ["    " + a for a in ex]
     links.append(f'    <a class="fb-steam" href="{steam_url}" target="_blank" rel="noopener">{lab[5]}</a>')
-    new_inner = ("\n  <a class=\"fb-logo\" href=\"index%s.html\">FLASHBOSS</a>\n  <span class=\"fb-links\">\n%s\n  </span>\n"
-                 % (sfx, "\n".join(links)))
+    names = {"home": (f"home{sfx}.html", lab[0]), "packs": (f"packs{sfx}.html", lab[1]),
+             "resources": (f"resources{sfx}.html", RESOURCES[loc])}
+    crumbs = []
+    for par in PARENTS.get(base, ["home"]):
+        if par == base:
+            continue
+        crumbs.append(f'<a href="{names[par][0]}">{names[par][1]}</a>')
+    if here:
+        crumbs.append(f'<span class="fb-here">{here}</span>')
+    trail = '<span class="fb-sep"> · </span>'.join(crumbs)
+    new_inner = ("\n  <span class=\"fb-crumbs\"><a class=\"fb-logo\" href=\"index%s.html\">FLASHBOSS</a>"
+                 "<span class=\"fb-pipe\">|</span>%s</span>\n  <span class=\"fb-links\">\n%s\n  </span>\n"
+                 % (sfx, trail, "\n".join(links)))
     # phones: Steam sits up top beside the language switch, the five links wrap below
     new_inner += (f'  <a class="fb-steam fb-steam-m" href="{steam_url}" target="_blank" rel="noopener">{lab[5]}</a>\n')
     if langsw:
