@@ -342,6 +342,12 @@ footer .footer-links .div{opacity:.4;}
 .bridge-banner b{color:#83b6dd; font-weight:700;}
 :where(a){color:inherit; text-decoration-color:currentColor;}  /* unstyled links inherit the text colour instead of browser blue (~2:1 on this background); zero specificity, so any page rule wins */
 </style>
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 <!-- FBNAV:start (scripts/stamp_nav.py — edit there, not here) -->
 <style>
 nav.fbnav{display:flex; align-items:center; gap:10px 22px; flex-wrap:wrap;}
@@ -361,19 +367,6 @@ nav.fbnav .lang-switch{margin-left:0;}
 }
 </style>
 <!-- FBNAV:end -->
-<!-- HEROSTEAM:start (scripts/stamp_hero_steam.py) -->
-<style>
-.actions a.btn-steam{background:#e0a93f; color:#100d08; border-color:#e0a93f; font-weight:800;}
-.actions a.btn-steam:hover{background:#ecbd5c; border-color:#ecbd5c; color:#100d08;}
-.hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
-</style>
-<!-- HEROSTEAM:end -->
-<!-- LEARNH1:start -->
-<style>
-.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
-.hero h1.learn::before,.hero h1.learn::after{content:none;}
-</style>
-<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="overlay"></div>
@@ -415,7 +408,6 @@ nav.fbnav .lang-switch{margin-left:0;}
       <p class="sig reveal">Escuchar · Leer · Repetir · Calificar · Luchar</p>
       <p class="lede reveal">Empiezas diciendo <b class="de">Ich bin Student.</b> Al final lees la carta del <b>Finanzamt</b> — y sabes exactamente qué quiere. German Core te lleva desde la llegada hasta saber desenvolverte.</p>
       <div class="actions reveal">
-        <a class="btn btn-steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-german&l=spanish" target="_blank" rel="noopener">Consíguelo en Steam</a>
         <a class="btn" href="wordlists.es.html?lang=German">Vocabulario</a>
         <a class="btn" href="lessons.es.html?lang=German">Lecciones</a>
         <a class="btn" href="https://flashboss-demo.pages.dev/">Probar demo</a>

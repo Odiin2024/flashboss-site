@@ -92,8 +92,14 @@ def stamp(path):
     lab = LABELS[loc]
     targets = [f"home{sfx}.html", f"packs{sfx}.html", f"wordlists{sfx}.html", f"lessons{sfx}.html", "manual/"]
     cur = SECTION.get(base, 1 if base in UNDER_PACKS else None)
+    # Odiin 2026-10-04: a page that already has the manual on a main button (voices)
+    # does not repeat it in the menu.
+    body = s[:m.start()] + s[m.end():]
+    manual_button = re.search(r'<a [^>]*class="[^"]*\bbtn\b[^"]*"[^>]*href="manual/', body)
     links = []
     for i, (t, l) in enumerate(zip(targets, lab)):
+        if t == "manual/" and manual_button:
+            continue
         links.append(f'    <a href="{t}"' + (' aria-current="page"' if i == cur else "") + f">{l}</a>")
     links.append(f'    <a class="fb-steam" href="{steam_url}" target="_blank" rel="noopener">{lab[5]}</a>')
     new_inner = ("\n  <a class=\"fb-logo\" href=\"index%s.html\">FLASHBOSS</a>\n  <span class=\"fb-links\">\n%s\n  </span>\n"

@@ -174,6 +174,12 @@ footer .footer-links .div{opacity:.4;}
 :where(a){color:inherit; text-decoration-color:currentColor;}  /* unstyled links inherit the text colour instead of browser blue (~2:1 on this background); zero specificity, so any page rule wins */
 </style>
 <script src="lang-redirect.js"></script>
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 <!-- FBNAV:start (scripts/stamp_nav.py — edit there, not here) -->
 <style>
 nav.fbnav{display:flex; align-items:center; gap:10px 22px; flex-wrap:wrap;}
@@ -193,19 +199,6 @@ nav.fbnav .lang-switch{margin-left:0;}
 }
 </style>
 <!-- FBNAV:end -->
-<!-- HEROSTEAM:start (scripts/stamp_hero_steam.py) -->
-<style>
-.actions a.btn-steam{background:#e0a93f; color:#100d08; border-color:#e0a93f; font-weight:800;}
-.actions a.btn-steam:hover{background:#ecbd5c; border-color:#ecbd5c; color:#100d08;}
-.hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
-</style>
-<!-- HEROSTEAM:end -->
-<!-- LEARNH1:start -->
-<style>
-.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
-.hero h1.learn::before,.hero h1.learn::after{content:none;}
-</style>
-<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="overlay"></div>
@@ -246,9 +239,9 @@ nav.fbnav .lang-switch{margin-left:0;}
       <p class="sig reveal">Listen · read · repeat · rate · fight</p>
       <p class="lede reveal">Every card is one thing you should know cold rather than stop to look up: what a condition does, which die a check calls for, what a DC of 15 is meant to mean, what a stat block is telling you, what a party can actually do at level 5. <b>5E compatible, built from the System Reference Document 5.2.</b></p>
       <div class="actions reveal">
-        <a class="btn btn-steam" href="https://store.steampowered.com/app/4564340/?utm_source=website-guide" target="_blank" rel="noopener">Get it on Steam</a>
         <a class="btn" href="#card">what a card holds</a>
         <a class="btn" href="#editions">languages</a>
+        <a class="btn warm" href="https://store.steampowered.com/app/4564340/?utm_source=website-guide" target="_blank" rel="noopener">steam</a>
       </div>
     </div>
   </header>

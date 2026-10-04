@@ -184,6 +184,12 @@ footer .footer-links .div{opacity:.4;}
 .beta-note a{color:#e0a93f; text-decoration:underline; text-underline-offset:2px;}
 :where(a){color:inherit; text-decoration-color:currentColor;}  /* unstyled links inherit the text colour instead of browser blue (~2:1 on this background); zero specificity, so any page rule wins */
 </style>
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 <!-- FBNAV:start (scripts/stamp_nav.py — edit there, not here) -->
 <style>
 nav.fbnav{display:flex; align-items:center; gap:10px 22px; flex-wrap:wrap;}
@@ -203,19 +209,6 @@ nav.fbnav .lang-switch{margin-left:0;}
 }
 </style>
 <!-- FBNAV:end -->
-<!-- HEROSTEAM:start (scripts/stamp_hero_steam.py) -->
-<style>
-.actions a.btn-steam{background:#e0a93f; color:#100d08; border-color:#e0a93f; font-weight:800;}
-.actions a.btn-steam:hover{background:#ecbd5c; border-color:#ecbd5c; color:#100d08;}
-.hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
-</style>
-<!-- HEROSTEAM:end -->
-<!-- LEARNH1:start -->
-<style>
-.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
-.hero h1.learn::before,.hero h1.learn::after{content:none;}
-</style>
-<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="beta-note" role="status"><b>BETA-ÜBERSETZUNG</b> — die deutsche Fassung dieser Seite ist ein Entwurf und noch nicht lektoriert. Einen Fehler im Text gefunden? <a href="report.html">Sag uns Bescheid</a> · <a href="the-guide.html">Read in English</a></div>
@@ -257,9 +250,9 @@ nav.fbnav .lang-switch{margin-left:0;}
       <p class="sig reveal">Hören · lesen · wiederholen · bewerten · kämpfen</p>
       <p class="lede reveal">Jede Karte ist genau eine Sache, die du auswendig wissen solltest, statt sie nachzuschlagen: was ein Zustand bewirkt, welchen Würfel eine Probe verlangt, was ein SG von 15 bedeuten soll, was ein Statblock dir sagt, was eine Gruppe auf Stufe 5 tatsächlich tun kann. <b>5E-kompatibel, nach dem System Reference Document 5.2 gebaut.</b></p>
       <div class="actions reveal">
-        <a class="btn btn-steam" href="https://store.steampowered.com/app/4564340/?utm_source=website-guide&l=german" target="_blank" rel="noopener">Jetzt auf Steam</a>
         <a class="btn" href="#card">was auf einer Karte steht</a>
         <a class="btn" href="#editions">Sprachen</a>
+        <a class="btn warm" href="https://store.steampowered.com/app/4564340/?utm_source=website-guide&l=german" target="_blank" rel="noopener">steam</a>
       </div>
     </div>
   </header>

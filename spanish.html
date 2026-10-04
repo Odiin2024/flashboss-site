@@ -240,6 +240,12 @@ footer .footer-links .div{opacity:.4;}
 :where(a){color:inherit; text-decoration-color:currentColor;}  /* unstyled links inherit the text colour instead of browser blue (~2:1 on this background); zero specificity, so any page rule wins */
 </style>
 <script src="lang-redirect.js"></script>
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 <!-- FBNAV:start (scripts/stamp_nav.py — edit there, not here) -->
 <style>
 nav.fbnav{display:flex; align-items:center; gap:10px 22px; flex-wrap:wrap;}
@@ -259,19 +265,6 @@ nav.fbnav .lang-switch{margin-left:0;}
 }
 </style>
 <!-- FBNAV:end -->
-<!-- HEROSTEAM:start (scripts/stamp_hero_steam.py) -->
-<style>
-.actions a.btn-steam{background:#e0a93f; color:#100d08; border-color:#e0a93f; font-weight:800;}
-.actions a.btn-steam:hover{background:#ecbd5c; border-color:#ecbd5c; color:#100d08;}
-.hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
-</style>
-<!-- HEROSTEAM:end -->
-<!-- LEARNH1:start -->
-<style>
-.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
-.hero h1.learn::before,.hero h1.learn::after{content:none;}
-</style>
-<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="overlay"></div>
@@ -312,7 +305,6 @@ nav.fbnav .lang-switch{margin-left:0;}
       <p class="sig reveal">Listen · Read · Repeat · Rate · Fight</p>
       <p class="lede reveal">You begin with <b class="es">Hola, me llamo…</b> By the end the subtitles are off — the film, the song, the whole conversation, understood. <b>Latin American Spanish</b>, the way it's really spoken.</p>
       <div class="actions reveal">
-        <a class="btn btn-steam" href="https://store.steampowered.com/app/4134880/FlashBoss__Spanish_Core/?utm_source=website-spanish" target="_blank" rel="noopener">Get it on Steam</a>
         <a class="btn" href="wordlists.html?lang=Spanish">Word Lists</a>
         <a class="btn" href="lessons.html?lang=Spanish">Lessons</a>
         <a class="btn" href="https://flashboss-demo.pages.dev/">Try the demo</a>

@@ -184,6 +184,12 @@ footer .footer-links .div{opacity:.4;}
 .beta-note a{color:#e0a93f; text-decoration:underline; text-underline-offset:2px;}
 :where(a){color:inherit; text-decoration-color:currentColor;}  /* unstyled links inherit the text colour instead of browser blue (~2:1 on this background); zero specificity, so any page rule wins */
 </style>
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 <!-- FBNAV:start (scripts/stamp_nav.py — edit there, not here) -->
 <style>
 nav.fbnav{display:flex; align-items:center; gap:10px 22px; flex-wrap:wrap;}
@@ -203,19 +209,6 @@ nav.fbnav .lang-switch{margin-left:0;}
 }
 </style>
 <!-- FBNAV:end -->
-<!-- HEROSTEAM:start (scripts/stamp_hero_steam.py) -->
-<style>
-.actions a.btn-steam{background:#e0a93f; color:#100d08; border-color:#e0a93f; font-weight:800;}
-.actions a.btn-steam:hover{background:#ecbd5c; border-color:#ecbd5c; color:#100d08;}
-.hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
-</style>
-<!-- HEROSTEAM:end -->
-<!-- LEARNH1:start -->
-<style>
-.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
-.hero h1.learn::before,.hero h1.learn::after{content:none;}
-</style>
-<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="beta-note" role="status"><b>БЕТА-ПЕРЕВОД</b> — русская версия этой страницы черновая и ещё не прошла редактуру. Нашли ошибку в тексте? <a href="report.html">Сообщите нам</a> · <a href="the-guide.html">Read in English</a></div>
@@ -257,9 +250,9 @@ nav.fbnav .lang-switch{margin-left:0;}
       <p class="sig reveal">Слушайте · читайте · повторяйте · оценивайте · сражайтесь</p>
       <p class="lede reveal">Каждая карточка — это одна вещь, которую стоит знать наизусть, а не искать на ходу: что делает состояние, какой кубик требует проверка, что означает Сл 15, о чём говорит блок характеристик, что на самом деле может отряд на 5 уровне. <b>Совместимо с 5E, собрано по System Reference Document 5.2.</b></p>
       <div class="actions reveal">
-        <a class="btn btn-steam" href="https://store.steampowered.com/app/4564340/?utm_source=website-guide&l=russian" target="_blank" rel="noopener">Получить в Steam</a>
         <a class="btn" href="#card">что на карточке</a>
         <a class="btn" href="#editions">языки</a>
+        <a class="btn warm" href="https://store.steampowered.com/app/4564340/?utm_source=website-guide&l=russian" target="_blank" rel="noopener">steam</a>
       </div>
     </div>
   </header>

@@ -367,6 +367,12 @@ footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underlin
 footer .footer-links .div{opacity:.4;}
 :where(a){color:inherit; text-decoration-color:currentColor;}  /* unstyled links inherit the text colour instead of browser blue (~2:1 on this background); zero specificity, so any page rule wins */
 </style>
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 <!-- FBNAV:start (scripts/stamp_nav.py — edit there, not here) -->
 <style>
 nav.fbnav{display:flex; align-items:center; gap:10px 22px; flex-wrap:wrap;}
@@ -386,19 +392,6 @@ nav.fbnav .lang-switch{margin-left:0;}
 }
 </style>
 <!-- FBNAV:end -->
-<!-- HEROSTEAM:start (scripts/stamp_hero_steam.py) -->
-<style>
-.actions a.btn-steam{background:#e0a93f; color:#100d08; border-color:#e0a93f; font-weight:800;}
-.actions a.btn-steam:hover{background:#ecbd5c; border-color:#ecbd5c; color:#100d08;}
-.hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
-</style>
-<!-- HEROSTEAM:end -->
-<!-- LEARNH1:start -->
-<style>
-.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
-.hero h1.learn::before,.hero h1.learn::after{content:none;}
-</style>
-<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="overlay"></div>
@@ -440,7 +433,6 @@ nav.fbnav .lang-switch{margin-left:0;}
       <p class="sig reveal">Hören · Lesen · Wiederholen · Bewerten · Kämpfen</p>
       <p class="lede reveal">Niemand lernt <b class="gk">cardiomyopathy</b> auswendig. Man liest es — <span class="rt">cardio</span>·<span class="rt">myo</span>·<span class="suf">pathy</span>, Herz + Muskel + Leiden: eine Erkrankung des Herzmuskels, in griechischen Teilen ausbuchstabiert. Je länger das Wort, desto mehr verrät es dir.</p>
       <div class="actions reveal">
-        <a class="btn btn-steam" href="https://store.steampowered.com/app/4992480?utm_source=website-greek-roots&l=german" target="_blank" rel="noopener">Jetzt auf Steam</a>
         <a class="btn" href="wordlists.de.html?lang=English&amp;set=Greek%20Roots">Wortliste</a>
         <a class="btn" href="lessons.de.html?lang=English&amp;set=Greek%20Roots">Lektionen</a>
         <a class="btn" href="https://flashboss-demo.pages.dev/">Demo testen</a>

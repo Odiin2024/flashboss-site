@@ -377,6 +377,12 @@ footer .footer-links a:hover{opacity:1; text-decoration:underline; text-underlin
 footer .footer-links .div{opacity:.4;}
 :where(a){color:inherit; text-decoration-color:currentColor;}  /* unstyled links inherit the text colour instead of browser blue (~2:1 on this background); zero specificity, so any page rule wins */
 </style>
+<!-- LEARNH1:start -->
+<style>
+.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
+.hero h1.learn::before,.hero h1.learn::after{content:none;}
+</style>
+<!-- LEARNH1:end -->
 <!-- FBNAV:start (scripts/stamp_nav.py — edit there, not here) -->
 <style>
 nav.fbnav{display:flex; align-items:center; gap:10px 22px; flex-wrap:wrap;}
@@ -396,19 +402,6 @@ nav.fbnav .lang-switch{margin-left:0;}
 }
 </style>
 <!-- FBNAV:end -->
-<!-- HEROSTEAM:start (scripts/stamp_hero_steam.py) -->
-<style>
-.actions a.btn-steam{background:#e0a93f; color:#100d08; border-color:#e0a93f; font-weight:800;}
-.actions a.btn-steam:hover{background:#ecbd5c; border-color:#ecbd5c; color:#100d08;}
-.hero .actions a.btn-steam{grid-column:1/-1;}  /* grid heroes (home): the whole first row, so the label is never clipped */
-</style>
-<!-- HEROSTEAM:end -->
-<!-- LEARNH1:start -->
-<style>
-.hero h1.learn{font-size:13px; line-height:1.45; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin:0 0 14px; opacity:.85;}
-.hero h1.learn::before,.hero h1.learn::after{content:none;}
-</style>
-<!-- LEARNH1:end -->
 </head>
 <body>
 <div class="overlay"></div>
@@ -450,7 +443,6 @@ nav.fbnav .lang-switch{margin-left:0;}
       <p class="sig reveal">Escuchar · Leer · Repetir · Evaluar · Combatir</p>
       <p class="lede reveal">Las palabras más antiguas del inglés — <b>house, drink, fight, begin</b> — son las más cortas, las más físicas, y las que tu español no te regala: el latín te dio las largas (nación, posibilidad), pero estas no. Y encima se combinan, algo que el español casi no hace: junta dos para <span class="rt">house</span><span class="af">hold</span> y <span class="af">fore</span><span class="rt">cast</span>, añade una terminación para <span class="rt">king</span><span class="af">dom</span> y <span class="rt">fear</span><span class="af">less</span>. Aprende cómo encajan las piezas, y el núcleo cotidiano del inglés se abre como una bisagra.</p>
       <div class="actions reveal">
-        <a class="btn btn-steam" href="https://store.steampowered.com/app/4475060/FlashBoss__German_Roots/?utm_source=website-german-roots&l=spanish" target="_blank" rel="noopener">Consíguelo en Steam</a>
         <a class="btn" href="wordlists.es.html?lang=English&amp;set=German%20Roots">Lista de palabras</a>
         <a class="btn" href="lessons.es.html?lang=English&amp;set=German%20Roots">Lecciones</a>
         <a class="btn" href="https://flashboss-demo.pages.dev/">Probar demo</a>
