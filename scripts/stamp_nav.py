@@ -46,8 +46,10 @@ SKIP = {"tiers-and-clusters"}
 # starts "FLASHBOSS | home"; the tree had fallen apart (Swahili, the Guide and
 # in-development skipped home, immersion had no parent). One parent map now draws it.
 PARENTS = {"home": []}
-for _b in ("packs", "voices", "resources", "about", "press", "affiliate"):
+for _b in ("packs", "resources", "about", "press", "affiliate"):
     PARENTS[_b] = ["home"]
+# voices returns to packs (Odiin 2026-10-04: linkable from where it returns to; packs links it)
+PARENTS["voices"] = ["home", "packs"]
 for _b in UNDER_PACKS:
     PARENTS[_b] = ["home", "packs"]
 for _b in ("wordlists", "lessons"):
