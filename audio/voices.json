@@ -149,6 +149,36 @@
       "status": "held — pack unreleased"
     },
     {
+      "id": "russian",
+      "name": "Русский (F)",
+      "language": "Russian",
+      "region": "Russia",
+      "gender": "F",
+      "pair": "russian",
+      "role": "base",
+      "role_note": "Ships with the Russian packs. Played on the page only as the voice Vitali replaces (the compare button), until the Russian courses are out.",
+      "model": "flashcard_sets/Russian/core/tts_models/ru_RU-flashboss_f-medium.onnx",
+      "length_scale": 1.1,
+      "credit": "FlashBoss (CC0 1.0, trained on Mozilla Common Voice)",
+      "text": "Вечером сестра показывает нам фотографии из отпуска.",
+      "gloss": "In the evening my sister shows us photos from her vacation. (Russian Core, tier 5)"
+    },
+    {
+      "id": "russian_male",
+      "name": "Vitali",
+      "language": "Russian",
+      "region": "Russia",
+      "gender": "M",
+      "pair": "russian",
+      "role": "dlc",
+      "role_note": "Voice DLC (Voices: Russian (M), Steam item 1320017). Replaces the female voice in every Russian pack; reversible in Preferences > Audio and voice.",
+      "model": "flashcard_sets/_Voice_Russian_Male/core/tts_models/ru_RU-flashboss_m-medium.onnx",
+      "length_scale": 1.1,
+      "credit": "FlashBoss (CC0 1.0, trained on Mozilla Common Voice)",
+      "text": "Вечером сестра показывает нам фотографии из отпуска.",
+      "gloss": "The same sentence, so you can hear the difference."
+    },
+    {
       "id": "toki_pona",
       "name": "toki pona",
       "language": "Toki Pona",

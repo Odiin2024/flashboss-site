@@ -13,6 +13,7 @@
 <link rel="alternate" hreflang="ja" href="https://odiin2024.github.io/flashboss-site/voices.ja.html">
 <link rel="alternate" hreflang="zh" href="https://odiin2024.github.io/flashboss-site/voices.zh.html">
 <link rel="alternate" hreflang="ru" href="https://odiin2024.github.io/flashboss-site/voices.ru.html">
+<link rel="alternate" hreflang="ar" href="https://odiin2024.github.io/flashboss-site/voices.ar.html">
 <link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/voices.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -200,8 +201,9 @@ nav.fbnav .lang-switch{margin-left:0;}
       <li><a href="voices.es.html">Español</a></li>
       <li><a href="voices.ja.html">日本語</a></li>
       <li><a href="voices.zh.html" aria-current="true">简体中文</a></li>
-            <li><a href="voices.ru.html">Русский</a></li>
-        </ul>
+      <li><a href="voices.ru.html">Русский</a></li>
+      <li><a href="voices.ar.html" lang="ar" dir="rtl">العربية</a></li>
+    </ul>
   </div>
 </nav>
 
@@ -215,7 +217,7 @@ nav.fbnav .lang-switch{margin-left:0;}
 
 <div class="wrap"> <section class="reveal"> <div class="sec-head"><h2>本体自带</h2><span class="note">免费 · 无需购买</span></div>
     <p class="sec-intro">这两把声音随游戏本体附带。装好 FlashBoss，它们就已经在那里了。</p>
-    <div class="grid"> <article class="vcard" data-clip="english_us"> <div class="top"> <button class="play" type="button" aria-label="Play the American English sample">▶</button> <div> <div class="name">美式英语</div>
+    <div class="grid"> <article class="vcard" id="voice-english_us" data-clip="english_us"> <div class="top"> <button class="play" type="button" aria-label="Play the American English sample">▶</button> <div> <div class="name">美式英语</div>
             <div class="meta">美国 · 女声</div>
           </div>
         </div>
@@ -226,7 +228,7 @@ nav.fbnav .lang-switch{margin-left:0;}
         <div class="credit">LibriTTS · CC BY 4.0</div>
       </article>
 
-      <article class="vcard" data-clip="esperanto">
+      <article class="vcard" id="voice-esperanto" data-clip="esperanto">
         <div class="top"> <button class="play" type="button" aria-label="Play the Esperanto sample">▶</button> <div> <div class="name">世界语（女声）</div>
             <div class="meta">没有国家 · 女声</div>
           </div>
@@ -244,7 +246,7 @@ nav.fbnav .lang-switch{margin-left:0;}
   <section class="reveal">
     <div class="sec-head"><h2>随对应卡包附带</h2><span class="note">买下课程，语音一并到手</span></div>
     <p class="sec-intro">无需额外购买，也无需设置。装上卡包，它就开口。</p>
-    <div class="grid"> <article class="vcard" data-clip="german"> <div class="top"> <button class="play" type="button" aria-label="Play the German sample">▶</button> <div><div class="name">Deutsch</div><div class="meta">德国 · 男声</div></div>
+    <div class="grid"> <article class="vcard" id="voice-german" data-clip="german"> <div class="top"> <button class="play" type="button" aria-label="Play the German sample">▶</button> <div><div class="name">Deutsch</div><div class="meta">德国 · 男声</div></div>
         </div>
         <div class="where">随 <b>German Core</b> 和两门 <b>German Pareto</b> 课程附带。</div>
         <div class="say">“Ihre Gesundheit ist das Wichtigste im Leben, passen Sie bitte immer gut auf sich auf!”</div>
@@ -253,7 +255,7 @@ nav.fbnav .lang-switch{margin-left:0;}
         <div class="credit">Thorsten Müller · CC0 1.0</div>
       </article>
 
-      <article class="vcard" data-clip="spanish_mx">
+      <article class="vcard" id="voice-spanish_mx" data-clip="spanish_mx">
         <div class="top"> <button class="play" type="button" aria-label="Play the Latin American Spanish sample">▶</button> <div><div class="name">Español</div><div class="meta">拉丁美洲 · 女声</div></div>
         </div>
         <div class="where">随 <b>Spanish Core</b> 和两门 <b>Spanish Pareto</b> 课程附带。</div>
@@ -263,7 +265,7 @@ nav.fbnav .lang-switch{margin-left:0;}
         <div class="credit">es_MX-claude · Piper voices</div>
       </article>
 
-      <article class="vcard" data-clip="french">
+      <article class="vcard" id="voice-french" data-clip="french">
         <div class="top"> <button class="play" type="button" aria-label="Play the French sample">▶</button> <div><div class="name">Français</div><div class="meta">法国 · 女声</div></div>
         </div>
         <div class="where">随 <b>French Core</b> 和两门 <b>French Pareto</b> 课程附带。</div>
@@ -273,7 +275,7 @@ nav.fbnav .lang-switch{margin-left:0;}
         <div class="credit">SIWIS · Piper voices</div>
       </article>
 
-      <article class="vcard" data-clip="italian">
+      <article class="vcard" id="voice-italian" data-clip="italian">
         <div class="top"> <button class="play" type="button" aria-label="Play the Italian sample">▶</button> <div><div class="name">Italiano</div><div class="meta">意大利 · 女声</div></div>
         </div>
         <div class="where">随 <b>Italian Core</b> 和两门 <b>Italian Pareto</b> 课程附带。</div>
@@ -283,7 +285,7 @@ nav.fbnav .lang-switch{margin-left:0;}
         <div class="credit">paola · Piper voices</div>
       </article>
 
-      <article class="vcard" data-clip="toki_pona">
+      <article class="vcard" id="voice-toki_pona" data-clip="toki_pona">
         <div class="top"> <button class="play" type="button" aria-label="Play the Toki Pona sample">▶</button> <div><div class="name">toki pona</div><div class="meta">本体内免费</div></div>
         </div>
         <div class="where">由<b>世界语语音</b>朗读 — 道本语用到的每一个音，世界语里都有。</div>
@@ -293,7 +295,7 @@ nav.fbnav .lang-switch{margin-left:0;}
         <div class="credit">FlashBoss · CC0 1.0</div>
       </article>
 
-      <article class="vcard" data-clip="latin">
+      <article class="vcard" id="voice-latin" data-clip="latin">
         <div class="top"> <button class="play" type="button" aria-label="Play the Latin sample">▶</button> <div><div class="name">Latina</div><div class="meta">古典发音 · 男声</div></div>
         </div>
         <div class="where">随已发售的 <b>Latin Core</b> 与 <b>Latin Pareto</b> 附带。为 FlashBoss 训练，采用复原的古典发音。</div>
@@ -309,7 +311,7 @@ nav.fbnav .lang-switch{margin-left:0;}
   <section class="reveal">
     <div class="sec-head"><h2>单独出售的语音 DLC</h2><span class="note">换一种口音，处处生效</span></div>
     <p class="sec-intro">语音 DLC 会替换该语言全部卡包里的内置语音 — 卡片、课程、头目战，全都换。随时可以切回内置语音，什么也不会丢。下面每张卡片还能播放<b>被它替换掉的那把声音</b>，念的是同一句话，让你在花钱之前就听清差别。</p>
-    <div class="grid"> <article class="vcard" data-clip="english_gb" data-compare="english_us"> <div class="top"> <button class="play" type="button" aria-label="Play the British English sample">▶</button> <div> <div class="name">英式英语（女声）</div>
+    <div class="grid"> <article class="vcard" id="voice-english_gb" data-clip="english_gb" data-compare="english_us"> <div class="top"> <button class="play" type="button" aria-label="Play the British English sample">▶</button> <div> <div class="name">英式英语（女声）</div>
             <div class="meta">英格兰南部 · 女声</div>
           </div>
         </div>
@@ -321,7 +323,7 @@ nav.fbnav .lang-switch{margin-left:0;}
         <div class="credit">British English Female · CC0 1.0</div>
       </article>
 
-      <article class="vcard" data-clip="spanish_es" data-compare="spanish_mx">
+      <article class="vcard" id="voice-spanish_es" data-clip="spanish_es" data-compare="spanish_mx">
         <div class="top"> <button class="play" type="button" aria-label="Play the Castilian Spanish sample">▶</button> <div> <div class="name">Castellano <span class="soon">尚未发售</span></div>
             <div class="meta">西班牙 · 男声</div>
           </div>
@@ -332,6 +334,20 @@ nav.fbnav .lang-switch{margin-left:0;}
         <div class="bar"><i></i></div>
         <div class="compare"> <button type="button" aria-label="Play the included Latin American voice saying the same sentence">▶</button> <span>用内置的拉美语音听同一句话</span> </div>
         <div class="credit">davefx · CC0</div>
+      </article>
+
+      <article class="vcard" id="voice-russian_male" data-clip="russian_male" data-compare="russian">
+        <div class="top"> <button class="play" type="button" aria-label="Play the Russian male voice sample">▶</button> <div> <div class="name">Русский · Vitali <span class="soon">尚未发售</span></div>
+            <div class="meta">俄罗斯 · 男声</div>
+          </div>
+        </div>
+        <div class="where">在<b>所有俄语卡包</b>（Russian Core、Pareto 1 和 Pareto 2）中替换女声。</div>
+        <div class="where" style="margin-top:8px;">安装后即成为俄语朗读语音。随时可在“偏好设置 → 音频与语音”中换回女声。</div>
+        <div class="say">“Вечером сестра показывает нам фотографии из отпуска.”</div>
+        <div class="gloss">晚上姐姐给我们看她度假的照片。</div>
+        <div class="bar"><i></i></div>
+        <div class="compare"> <button type="button" aria-label="Play the included female Russian voice saying the same sentence">▶</button> <span>用内置的女声听同一句话</span> </div>
+        <div class="credit">Vitali · FlashBoss · CC0 1.0 · trained on Mozilla Common Voice</div>
       </article>
 
     </div>

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- SELF-TRANSLATED, ar. The prose on this page was written by Claude
+     (Opus), not by the translation fleet, on Odiin's word of 2026-11-01
+     (Arabic is a fully supported site language):
+     good enough for now, and flagged for a translation/adversarial pass
+     another day. The page carries the beta-translation notice so a reader
+     knows and so that pass can find it.
+     Canon held here: the six pack names stay English, FlashBoss stays
+     Latin, and every number is the English page's number in this locale's
+     separator — nothing was recounted. -->
+<title>الأصوات — الاستماع إلى كل لغات FlashBoss | FlashBoss</title>
+<meta name="description" content="الاستماع إلى الأصوات التي تنطق FlashBoss قبل شراء أي شيء. جمل حقيقية من البطاقات بالأصوات العصبية نفسها التي تأتي مع اللعبة — الإنجليزية (الأمريكية والبريطانية) والألمانية والإسبانية (الأمريكية اللاتينية والقشتالية) والفرنسية والإيطالية والإسبرانتو واللاتينية وToki Pona. يعمل تحويل النص إلى كلام دون اتصال، على الجهاز نفسه.">
+<link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://odiin2024.github.io/flashboss-site/voices.ar.html">
+<link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/voices.html">
+<link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/voices.de.html">
+<link rel="alternate" hreflang="es" href="https://odiin2024.github.io/flashboss-site/voices.es.html">
+<link rel="alternate" hreflang="ja" href="https://odiin2024.github.io/flashboss-site/voices.ja.html">
+<link rel="alternate" hreflang="zh" href="https://odiin2024.github.io/flashboss-site/voices.zh.html">
+<link rel="alternate" hreflang="ru" href="https://odiin2024.github.io/flashboss-site/voices.ru.html">
+<link rel="alternate" hreflang="ar" href="https://odiin2024.github.io/flashboss-site/voices.ar.html">
+<link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/voices.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   FlashBoss — Voices (voices.html). Doubles as the Steam "manual"
+   landing page, so the hero carries the two onward doors (manual,
+   about) before anything else happens.
+
+   Voices are grouped the way a buyer needs them: free with the
+   game / included with a pack (named) / sold on its own. A DLC
+   card carries a second button that plays the voice it REPLACES,
+   so the comparison lives inside the category instead of needing
+   its own section.
+
+   Clips: audio/voices/<id>.{ogg,m4a}, built by
+   audio/build_voice_palette.py from audio/voices.json.
+   ============================================================ */
+:root{
+  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
+  --accent:#e0a93f; --green:#83b6dd;  /* was #62d38a: the palette law, never green; the token name is kept so every use follows */ --line:#3a3120; --rule:#2a2417;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--mono); background:var(--bg); color:var(--ink); line-height:1.6; -webkit-font-smoothing:antialiased;}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.04) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.wrap{max-width:900px; margin:0 auto; padding:0 24px;}
+a{color:var(--accent);}
+
+nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line); position:relative; z-index:3; background:var(--bg);}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--dim); margin-right:auto;}
+nav .brand a, nav .brand .sep{color:var(--dim); text-decoration:none;}
+nav .brand a:hover{color:var(--ink);}
+nav .brand .here{font-weight:800; color:var(--ink);}
+nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--ink);}
+nav .brand .logo:hover{color:var(--accent);}
+nav .brand .pipe{color:var(--dim); margin:0 11px;}
+.nav-mobile{display:none;}
+.nav-mobile a{color:inherit; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.08em; opacity:.85;}
+.nav-mobile a:hover{opacity:1; color:var(--accent);}
+@media(max-width:640px){ nav .brand, nav .links{display:none;} .nav-mobile{display:flex; flex:1; justify-content:space-between; align-items:center;} .nav-mobile .r{display:flex; gap:18px;} }
+nav .links a{color:var(--ink); text-decoration:none; opacity:.7; margin-left:22px;}
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+nav .links a.steam{font-weight:800; opacity:1;}
+nav .lang-switch{position:relative; margin-left:22px;}
+nav .lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--ink); background:var(--bg); border:1px solid var(--dim); padding:5px 8px; line-height:1; cursor:pointer;}
+nav .lang-toggle:hover, nav .lang-toggle[aria-expanded="true"]{background:var(--ink); color:var(--bg);}
+nav .lang-caret{font-size:8px; line-height:1; transition:transform .15s ease;}
+nav .lang-toggle[aria-expanded="true"] .lang-caret{transform:rotate(180deg);}
+nav .lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--bg); border:1px solid var(--dim); min-width:120px; z-index:50;}
+nav .lang-menu[hidden]{display:none;}
+nav .lang-menu li{margin:0; padding-left:0; position:static;}
+nav .lang-menu a{display:block; padding:6px 10px; color:var(--ink); text-decoration:none; font-size:12px; opacity:.8;}
+nav .lang-menu a:hover{background:var(--panel); opacity:1;}
+
+.reveal{opacity:0; transform:translateY(12px); transition:opacity .6s ease, transform .6s ease;}
+.reveal.in{opacity:1; transform:none;}
+
+/* ---- hero: the front door ------------------------------- */
+.hero{position:relative; padding:74px 0 66px; overflow:hidden;}
+.hero::before{content:""; position:absolute; inset:0; z-index:0; background:#0c0a06 url('home.webp') center 30% / cover no-repeat;}
+.hero::after{content:""; position:absolute; inset:0; z-index:1; background:linear-gradient(180deg, rgba(16,13,8,.5) 0%, rgba(16,13,8,.72) 55%, var(--bg) 100%);}
+.hero .wrap{position:relative; z-index:2;}
+.hero .crumb{font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--accent);}
+.hero h1{font-size:clamp(38px,8vw,74px); margin:14px 0 0; font-weight:800; letter-spacing:-.01em;}
+.hero .lede{font-size:clamp(15px,2.2vw,18px); max-width:58ch; margin:20px 0 0; color:var(--dim);}
+.hero .lede b{color:var(--ink); font-weight:700;}
+
+/* buttons in home.html's format: solid accent, hard offset shadow */
+.doors{display:flex; gap:14px; flex-wrap:wrap; margin-top:32px;}
+.btn{display:inline-block; font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.06em;
+  color:#15120c; background:var(--accent); padding:14px 24px; text-decoration:none; border:0;
+  box-shadow:6px 6px 0 color-mix(in oklab, var(--accent), #000 62%);
+  transition:transform .12s ease, box-shadow .12s ease;}
+.btn:hover{transform:translate(-2px,-2px); box-shadow:8px 8px 0 color-mix(in oklab, var(--accent), #000 62%);}
+.btn:active{transform:translate(3px,3px); box-shadow:2px 2px 0 color-mix(in oklab, var(--accent), #000 62%);}
+.btn.ghost{color:var(--accent); background:transparent; border:1px solid var(--accent); box-shadow:none; padding:13px 23px;}
+.btn.ghost:hover{transform:translate(-2px,-2px); color:var(--ink); border-color:var(--ink); box-shadow:none;}
+
+/* ---- sections ------------------------------------------- */
+section{padding:22px 0;}
+section:first-of-type{padding-top:40px;}
+.sec-head{display:flex; align-items:baseline; gap:14px; margin:26px 0 8px; flex-wrap:wrap;}
+.sec-head h2{font-size:clamp(20px,4vw,28px); font-weight:800; letter-spacing:-.01em;}
+.sec-head .note{font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--faint);}
+.sec-intro{color:var(--dim); max-width:66ch; margin-bottom:18px; font-size:14px;}
+
+/* ---- voice cards ---------------------------------------- */
+.grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(272px,1fr)); gap:14px;}
+
+.vcard{background:var(--panel); border:1px solid var(--line); padding:16px 16px 14px; position:relative;}
+.vcard.playing{border-color:var(--accent);}
+.vcard .top{display:flex; align-items:flex-start; gap:12px;}
+.vcard .name{font-weight:800; font-size:16px; letter-spacing:.01em; line-height:1.3;}
+.soon{display:inline-block; font-size:9.5px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); border:1px solid var(--accent); padding:1px 5px; vertical-align:middle; margin-left:6px;}
+.vcard .meta{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--faint); margin-top:3px;}
+.vcard .where{font-size:12.5px; color:var(--dim); margin-top:10px;}
+.vcard .where b{color:var(--ink); font-weight:700;}
+.vcard .say{margin-top:12px; padding-top:11px; border-top:1px solid var(--rule); font-size:13.5px; color:var(--ink);}
+.vcard .gloss{font-size:12px; color:var(--faint); margin-top:6px; font-style:italic;}
+.vcard .credit{font-size:10.5px; color:var(--faint); margin-top:11px; letter-spacing:.03em;}
+
+.play{flex:0 0 auto; width:44px; height:44px; border-radius:50%; border:1px solid var(--dim); background:transparent;
+  color:var(--ink); font-family:var(--mono); font-size:14px; line-height:1; cursor:pointer; display:grid; place-items:center;
+  transition:background .18s ease, color .18s ease, border-color .18s ease;}
+.play:hover{background:var(--ink); color:var(--bg); border-color:var(--ink);}
+.play[data-state="playing"]{background:var(--accent); border-color:var(--accent); color:#100d08;}
+.play:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+.bar{height:2px; background:var(--rule); margin-top:11px; overflow:hidden;}
+.bar i{display:block; height:100%; width:0; background:var(--accent); transition:width .12s linear;}
+
+/* the A/B row on a DLC card: play the voice this one replaces */
+.compare{display:flex; align-items:center; gap:10px; margin-top:12px; padding-top:11px; border-top:1px dashed var(--rule);}
+.compare button{flex:0 0 auto; width:30px; height:30px; border-radius:50%; border:1px solid var(--faint); background:transparent;
+  color:var(--dim); font-family:var(--mono); font-size:10px; cursor:pointer; display:grid; place-items:center;
+  transition:background .18s ease, color .18s ease, border-color .18s ease;}
+.compare button:hover{background:var(--dim); color:var(--bg); border-color:var(--dim);}
+.compare button[data-state="playing"]{background:var(--accent); border-color:var(--accent); color:#100d08;}
+.compare span{font-size:11.5px; color:var(--faint); line-height:1.35;}
+
+.shot{margin:22px 0 4px;}
+.shot img{display:block; width:100%; max-width:471px; height:auto; image-rendering:-webkit-optimize-contrast;}
+.tip{border-left:2px solid var(--accent); padding:12px 0 12px 16px; margin:22px 0; color:var(--dim); font-size:13.5px; max-width:66ch;}
+.tip b{color:var(--ink);}
+.blurb{margin:18px 0 4px; color:var(--dim); font-size:13.5px; max-width:66ch;}
+.blurb b{color:var(--ink);}
+.kbd{border:1px solid var(--line); padding:1px 6px; font-size:12px; color:var(--ink); background:var(--bg);}
+
+footer{border-top:1px solid var(--line); padding:28px 24px; margin-top:48px; text-align:center; font-size:12px; color:var(--faint); letter-spacing:.04em;}
+footer .footer-links{display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap;}
+footer .footer-links a{color:var(--dim); text-decoration:none;} footer .footer-links a:hover{color:var(--ink);}
+footer .footer-links .div{opacity:.4;}
+footer .made{margin-top:12px; opacity:.8;}
+:where(a){color:inherit; text-decoration-color:currentColor;}  /* unstyled links inherit the text colour instead of browser blue (~2:1 on this background); zero specificity, so any page rule wins */
+.beta-note{background:#1b1508; border-bottom:1px solid #6b5a2a; color:#e8d9b0; font:500 12.5px/1.55 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; text-align:center; padding:9px 16px; margin:0;}
+.beta-note b{color:#e0a93f; font-weight:700; letter-spacing:.09em;}
+.beta-note a{color:#e0a93f; text-decoration:underline; text-underline-offset:2px;}
+</style>
+<style id="fb-rtl">
+html[dir="rtl"]{--mono:'JetBrains Mono','Noto Kufi Arabic',ui-monospace,'SF Mono',Menlo,Consolas,monospace; --sans:'Inter','Noto Kufi Arabic',-apple-system,BlinkMacSystemFont,sans-serif;}
+/* Arabic is cursive: tracking pulls the joined letters apart; and there is no true Arabic italic */
+html[dir="rtl"] body *:not(.fb-logo){letter-spacing:0 !important;}
+html[dir="rtl"] :is(em,i,cite,figcaption,.gloss){font-style:normal;}
+html[dir="rtl"] .beta-note{font-family:'Noto Kufi Arabic',system-ui,sans-serif;}
+/* the shared menu (scripts/stamp_nav.py): links push to the far (left) side, dropdown opens inward */
+html[dir="rtl"] nav.fbnav .fb-links{margin-left:0; margin-right:auto;}
+html[dir="rtl"] nav .lang-switch{margin-left:0;}
+html[dir="rtl"] .lang-menu{right:auto; left:0;}
+@media (max-width:700px){
+  html[dir="rtl"] nav.fbnav .fb-links{margin-right:0;}
+  html[dir="rtl"] nav.fbnav .fb-steam-m{margin-left:0; margin-right:auto;}
+}
+html[dir="rtl"] .soon{margin-left:0; margin-right:6px;}
+html[dir="rtl"] .tip{border-left:0; border-right:2px solid var(--accent); padding:12px 16px 12px 0;}
+html[dir="rtl"] .vcard .say{unicode-bidi:plaintext; text-align:right;}
+html[dir="rtl"] .btn{box-shadow:-6px 6px 0 color-mix(in oklab, var(--accent), #000 62%);}
+html[dir="rtl"] .btn:hover{transform:translate(2px,-2px); box-shadow:-8px 8px 0 color-mix(in oklab, var(--accent), #000 62%);}
+html[dir="rtl"] .btn:active{transform:translate(-3px,3px); box-shadow:-2px 2px 0 color-mix(in oklab, var(--accent), #000 62%);}
+html[dir="rtl"] .btn.ghost, html[dir="rtl"] .btn.ghost:hover{box-shadow:none;}
+</style>
+<!-- FBNAV:start (scripts/stamp_nav.py — edit there, not here) -->
+<style>
+nav.fbnav{display:flex; align-items:center; gap:10px 22px; flex-wrap:wrap;}
+nav.fbnav .fb-logo{color:inherit; text-decoration:none; font-weight:800; letter-spacing:.18em;}
+nav.fbnav .fb-crumbs{display:flex; align-items:baseline; flex-wrap:wrap; gap:0; font-size:13px; letter-spacing:.04em;}
+nav.fbnav .fb-crumbs a:not(.fb-logo){color:inherit; text-decoration:none; opacity:.72;}
+nav.fbnav .fb-crumbs a:not(.fb-logo):hover{opacity:1;}
+nav.fbnav .fb-pipe{opacity:.4; margin:0 10px;}
+nav.fbnav .fb-sep{opacity:.45; margin:0 .5em;}
+nav.fbnav .fb-here{opacity:1;}
+nav.fbnav .fb-links{display:flex; align-items:center; gap:8px 20px; flex-wrap:wrap; margin-left:auto;}
+nav.fbnav .fb-links a{color:inherit; text-decoration:none; opacity:.72; font-size:13px; letter-spacing:.04em; white-space:nowrap;}
+nav.fbnav .fb-links a:hover{opacity:1;}
+nav.fbnav .fb-links a[aria-current]{opacity:1; text-decoration:underline; text-underline-offset:5px;}
+nav.fbnav a.fb-steam{opacity:1; text-decoration:none; font-size:13px; letter-spacing:.04em; color:#100d08; background:#e0a93f; padding:4px 11px; border-radius:3px; font-weight:700;}
+nav.fbnav a.fb-steam:hover{background:#ecbd5c;}
+nav.fbnav .fb-steam-m{display:none;}
+nav.fbnav .lang-switch{margin-left:0;}
+@media (max-width:700px){
+  nav.fbnav .fb-links{order:3; width:100%; margin-left:0; gap:6px 16px;}
+  nav.fbnav .fb-links .fb-steam{display:none;}
+  nav.fbnav .fb-crumbs .fb-pipe, nav.fbnav .fb-crumbs a:not(.fb-logo), nav.fbnav .fb-crumbs .fb-sep, nav.fbnav .fb-crumbs .fb-here{display:none;}
+  nav.fbnav .fb-steam-m{display:inline-block; margin-left:auto;}
+}
+</style>
+<!-- FBNAV:end -->
+</head>
+<body>
+<div class="beta-note" role="status"><b>ترجمة تجريبية</b> — النسخة العربية من هذه الصفحة مسودة لم تخضع للمراجعة بعد. وجود خطأ في النص؟ <a href="report.html">يسعدنا الإبلاغ عنه</a> · <a href="voices.html">Read in English</a><br>الواجهة العربية تعمل في نافذة FlashBoss الجديدة فقط، لا في إصدار الطرفية.</div>
+<div class="overlay"></div>
+
+<nav class="fbnav">
+  <span class="fb-crumbs"><a class="fb-logo" href="index.ar.html">FLASHBOSS</a><span class="fb-pipe">|</span><a href="home.ar.html">الرئيسية</a><span class="fb-sep"> · </span><a href="packs.html">الحزم</a><span class="fb-sep"> · </span><span class="fb-here">الأصوات</span></span>
+  <span class="fb-links">
+    <a href="home.ar.html">الرئيسية</a>
+    <a href="packs.html">الحزم</a>
+    <a href="wordlists.ar.html">قوائم الكلمات</a>
+    <a href="lessons.ar.html">الدروس</a>
+    <a class="fb-extra" href="about.ar.html">كيف تعمل اللعبة</a>
+    <a class="fb-steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-voices&l=arabic" target="_blank" rel="noopener">Steam</a>
+  </span>
+  <a class="fb-steam fb-steam-m" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-voices&l=arabic" target="_blank" rel="noopener">Steam</a>
+  <div class="lang-switch"> <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="اختيار اللغة">AR<span class="lang-caret">▾</span></button> <ul class="lang-menu" hidden>
+      <li><a href="voices.html">English</a></li>
+      <li><a href="voices.de.html">Deutsch</a></li>
+      <li><a href="voices.es.html">Español</a></li>
+      <li><a href="voices.ja.html">日本語</a></li>
+      <li><a href="voices.zh.html">简体中文</a></li>
+      <li><a href="voices.ru.html">Русский</a></li>
+      <li><a href="voices.ar.html" aria-current="true" lang="ar" dir="rtl">العربية</a></li>
+    </ul> </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap"> <div class="crumb">الأصوات</div>
+    <h1>كيف تبدو الأصوات</h1>
+    <p class="lede">ينطق FlashBoss كل بطاقة، وتتيح نافذة PiperTTS المدمجة (تفتح بالضغط على <b>Ctrl + P</b> داخل اللعبة) كتابة أي نص أو لصقه لسماعه منطوقا باللغة المستهدفة. وفي الأسفل أمثلة لكل صوت.</p>
+    <div class="doors"> <a class="btn" href="manual/index.html">دليل اللعب</a> <a class="btn ghost" href="about.ar.html">الدليل التقني</a> </div>
+  </div>
+</header>
+
+<div class="wrap"> <section class="reveal"> <div class="sec-head"><h2>مضمنة في FlashBoss</h2><span class="note">مجانا · دون شراء</span></div>
+    <p class="sec-intro">هذان الصوتان يأتيان مع اللعبة نفسها، ويكونان موجودين بمجرد تثبيت FlashBoss.</p>
+    <div class="grid"> <article class="vcard" id="voice-english_us" data-clip="english_us"> <div class="top"> <button class="play" type="button" aria-label="تشغيل عينة الإنجليزية الأمريكية">▶</button> <div> <div class="name">الإنجليزية الأمريكية</div>
+            <div class="meta">الولايات المتحدة · صوت نسائي</div>
+          </div>
+        </div>
+        <div class="where">ينطق <b>كل حزم الإنجليزية</b> — Core وPareto 1 و2 وAdvance وAdept ودورات Roots الأربع كلها.</div>
+        <div class="say">“She has filled the glass bottle with fresh cold water. If you eat a good breakfast, you will feel better all morning.”</div>
+        <div class="gloss">بطاقتان من English Core.</div>
+        <div class="bar"><i></i></div>
+        <div class="credit">LibriTTS · CC BY 4.0</div>
+      </article>
+
+      <article class="vcard" id="voice-esperanto" data-clip="esperanto">
+        <div class="top"> <button class="play" type="button" aria-label="تشغيل عينة الإسبرانتو">▶</button> <div> <div class="name">الإسبرانتو (صوت نسائي)</div>
+            <div class="meta">بلا بلد · صوت نسائي</div>
+          </div>
+        </div>
+        <div class="where">ينطق <b>Toki Pona</b>، المجانية في اللعبة الأساسية، ودورات <b>الإسبرانتو</b>. تم تدريبه خصيصا لـ FlashBoss، إذ لم يكن هناك صوت جيد للإسبرانتو.</div>
+        <div class="say">“La prezo de tiu libro estas tre malalta, do mi aĉetos ĝin.”</div>
+        <div class="gloss">سعر ذلك الكتاب منخفض جدا، لذا سأشتريه.</div>
+        <div class="bar"><i></i></div>
+        <div class="credit">FlashBoss · CC0 1.0 · مدرب على Mozilla Common Voice</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="sec-head"><h2>مضمنة في حزمة</h2><span class="note">شراء الدورة يشمل الصوت</span></div>
+    <p class="sec-intro">لا شيء إضافي للشراء ولا شيء للضبط. بمجرد تثبيت الحزمة تبدأ بالكلام.</p>
+    <div class="grid"> <article class="vcard" id="voice-german" data-clip="german"> <div class="top"> <button class="play" type="button" aria-label="تشغيل عينة الألمانية">▶</button> <div><div class="name">Deutsch</div><div class="meta">ألمانيا · صوت رجالي</div></div>
+        </div>
+        <div class="where">يأتي مع <b>German Core</b> ودورتي <b>German Pareto</b> كلتيهما.</div>
+        <div class="say">“Ihre Gesundheit ist das Wichtigste im Leben, passen Sie bitte immer gut auf sich auf!”</div>
+        <div class="gloss">صحتكم أهم شيء في الحياة — يرجى الاعتناء بأنفسكم جيدا دائما.</div>
+        <div class="bar"><i></i></div>
+        <div class="credit">Thorsten Müller · CC0 1.0</div>
+      </article>
+
+      <article class="vcard" id="voice-spanish_mx" data-clip="spanish_mx">
+        <div class="top"> <button class="play" type="button" aria-label="تشغيل عينة الإسبانية الأمريكية اللاتينية">▶</button> <div><div class="name">Español</div><div class="meta">أمريكا اللاتينية · صوت نسائي</div></div>
+        </div>
+        <div class="where">يأتي مع <b>Spanish Core</b> ودورتي <b>Spanish Pareto</b> كلتيهما.</div>
+        <div class="say">“Logró superar todos los obstáculos gracias a su perseverancia y esfuerzo.”</div>
+        <div class="gloss">تمكنت من تجاوز كل العقبات بفضل مثابرتها وجهدها.</div>
+        <div class="bar"><i></i></div>
+        <div class="credit">es_MX-claude · Piper voices</div>
+      </article>
+
+      <article class="vcard" id="voice-french" data-clip="french">
+        <div class="top"> <button class="play" type="button" aria-label="تشغيل عينة الفرنسية">▶</button> <div><div class="name">Français</div><div class="meta">فرنسا · صوت نسائي</div></div>
+        </div>
+        <div class="where">يأتي مع <b>French Core</b> ودورتي <b>French Pareto</b> كلتيهما.</div>
+        <div class="say">“Il y a des marchés partout dans le pays, et le sel et le poivre sont sur la table.”</div>
+        <div class="gloss">في البلد أسواق في كل مكان، والملح والفلفل على الطاولة.</div>
+        <div class="bar"><i></i></div>
+        <div class="credit">SIWIS · Piper voices</div>
+      </article>
+
+      <article class="vcard" id="voice-italian" data-clip="italian">
+        <div class="top"> <button class="play" type="button" aria-label="تشغيل عينة الإيطالية">▶</button> <div><div class="name">Italiano</div><div class="meta">إيطاليا · صوت نسائي</div></div>
+        </div>
+        <div class="where">يأتي مع <b>Italian Core</b> ودورتي <b>Italian Pareto</b> كلتيهما.</div>
+        <div class="say">“Ogni mattina faccio colazione con mia madre in cucina.”</div>
+        <div class="gloss">كل صباح أتناول الفطور مع أمي في المطبخ.</div>
+        <div class="bar"><i></i></div>
+        <div class="credit">paola · Piper voices</div>
+      </article>
+
+      <article class="vcard" id="voice-toki_pona" data-clip="toki_pona">
+        <div class="top"> <button class="play" type="button" aria-label="تشغيل عينة Toki Pona">▶</button> <div><div class="name">toki pona</div><div class="meta">مجانية في اللعبة الأساسية</div></div>
+        </div>
+        <div class="where">ينطقها <b>صوت الإسبرانتو</b> — فكل صوت تستخدمه Toki Pona موجود أصلا في الإسبرانتو.</div>
+        <div class="say">“tenpo kama la, mi wile kama sona e toki pona.”</div>
+        <div class="gloss">في المستقبل أريد أن أتعلم Toki Pona.</div>
+        <div class="bar"><i></i></div>
+        <div class="credit">FlashBoss · CC0 1.0</div>
+      </article>
+
+      <!-- SWAHILI-TBD: Swahili Core ships a neural standard Kiswahili voice and it belongs
+           in this section, but there is no audio/voices/swahili.ogg|m4a yet and every clip on
+           this page is real shipping output. Render one sample and drop the pair in, then copy
+           a card from above. -->
+      <article class="vcard" id="voice-latin" data-clip="latin">
+        <div class="top"> <button class="play" type="button" aria-label="تشغيل عينة اللاتينية">▶</button> <div><div class="name">Latina</div><div class="meta">كلاسيكية · صوت رجالي</div></div>
+        </div>
+        <div class="where">يأتي مع <a href="latin.html"><b>Latin Core</b></a> و<b>Latin Pareto</b>، وكلتاهما متاحة الآن. تم تدريبه خصيصا لـ FlashBoss بالنطق الكلاسيكي المستعاد، ويراعي علامات المد (macrons) طولا حقيقيا للحركات.</div>
+        <div class="say">“Prima luce hostium equitatus ad castra accedit.”</div>
+        <div class="gloss">عند أول ضوء يقترب فرسان العدو من المعسكر. (عن Caesar)</div>
+        <div class="bar"><i></i></div>
+        <div class="credit">FlashBoss · CC0 1.0</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="sec-head"><h2>أصوات DLC تباع منفردة</h2><span class="note">لكنة مختلفة في كل مكان</span></div>
+    <p class="sec-intro">يحل صوت DLC محل الصوت المضمن في كل حزم تلك اللغة — البطاقات والدروس ومعارك الزعماء، كل شيء. ويمكن العودة إلى الصوت المدمج في أي وقت دون أن يضيع شيء. وكل بطاقة أدناه تشغل أيضا <b>الصوت الذي تحل محله</b> وهو يقول الجملة نفسها، لسماع ما يتغير بالضبط قبل إنفاق أي شيء.</p>
+    <div class="grid"> <article class="vcard" id="voice-english_gb" data-clip="english_gb" data-compare="english_us"> <div class="top"> <button class="play" type="button" aria-label="تشغيل عينة الإنجليزية البريطانية">▶</button> <div> <div class="name">الإنجليزية البريطانية (صوت نسائي)</div>
+            <div class="meta">جنوب إنجلترا · صوت نسائي</div>
+          </div>
+        </div>
+        <div class="where">يحل محل الصوت الأمريكي في <b>كل حزم الإنجليزية</b>.</div>
+        <div class="where" style="margin-top:8px;">لمن يبدأ مع FlashBoss ويريد الإنجليزية البريطانية: <a href="https://store.steampowered.com/bundle/88146/?utm_source=website-voices&l=arabic" target="_blank" rel="noopener"><b>FlashBoss: British English Edition</b></a> تجمع اللعبة وهذا الصوت معا — وهي الخيار الأنسب للشراء أولا.</div>
+        <div class="say">“She has filled the glass bottle with fresh cold water. If you eat a good breakfast, you will feel better all morning.”</div>
+        <div class="gloss">الاستماع إلى bottle وglass وwater.</div>
+        <div class="bar"><i></i></div>
+        <div class="compare"> <button type="button" aria-label="تشغيل الصوت الأمريكي المضمن وهو يقول الجملة نفسها">▶</button> <span>الجملة نفسها بالصوت الأمريكي المضمن</span> </div>
+        <div class="credit">British English Female · CC0 1.0</div>
+      </article>
+
+      <article class="vcard" id="voice-spanish_es" data-clip="spanish_es" data-compare="spanish_mx">
+        <div class="top"> <button class="play" type="button" aria-label="تشغيل عينة الإسبانية القشتالية">▶</button> <div> <div class="name">Castellano <span class="soon">لم يصدر بعد</span></div>
+            <div class="meta">إسبانيا · صوت رجالي</div>
+          </div>
+        </div>
+        <div class="where">يحل محل صوت أمريكا اللاتينية في <b>كل حزم الإسبانية</b>.</div>
+        <div class="say">“Logró superar todos los obstáculos gracias a su perseverancia y esfuerzo.”</div>
+        <div class="gloss">الاستماع إلى gracias وperseverancia.</div>
+        <div class="bar"><i></i></div>
+        <div class="compare"> <button type="button" aria-label="تشغيل صوت أمريكا اللاتينية المضمن وهو يقول الجملة نفسها">▶</button> <span>الجملة نفسها بصوت أمريكا اللاتينية المضمن</span> </div>
+        <div class="credit">davefx · CC0</div>
+      </article>
+
+      <article class="vcard" id="voice-russian_male" data-clip="russian_male" data-compare="russian">
+        <div class="top"> <button class="play" type="button" aria-label="تشغيل عينة الصوت الروسي الرجالي">▶</button> <div> <div class="name">Русский · Vitali <span class="soon">لم يصدر بعد</span></div>
+            <div class="meta">روسيا · صوت رجالي</div>
+          </div>
+        </div>
+        <div class="where">يحل محل الصوت النسائي في <b>كل حزم الروسية</b> — Russian Core وPareto 1 وPareto 2.</div>
+        <div class="where" style="margin-top:8px;">بعد تثبيته يصبح صوت القراءة للروسية. ويمكن العودة إلى الصوت النسائي في أي وقت: التفضيلات ← الصوت وأصوات النطق.</div>
+        <div class="say">“Вечером сестра показывает нам фотографии из отпуска.”</div>
+        <div class="gloss">في المساء تعرض علينا أختي صور إجازتها.</div>
+        <div class="bar"><i></i></div>
+        <div class="compare"> <button type="button" aria-label="تشغيل الصوت الروسي النسائي المضمن وهو يقول الجملة نفسها">▶</button> <span>الجملة نفسها بالصوت النسائي المضمن</span> </div>
+        <div class="credit">Vitali · FlashBoss · CC0 1.0 · مدرب على Mozilla Common Voice</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="sec-head"><h2>نافذة PiperTTS — قراءة أي شيء</h2></div>
+    <figure class="shot"><img src="pipertts.png" width="471" height="205" alt="نافذة PiperTTS: منتقي صوت مضبوط على الإنجليزية، وأداة سرعة عند 1.0x، وحقل نص فارغ مع زر Clear، وأزرار Speak وRestart وSave فوق السطر &quot;Paste text in the field above.&quot;" loading="lazy"></figure>
+    <div class="blurb"> <b>بالضغط على <span class="kbd">Ctrl</span> + <span class="kbd">P</span> في أي مكان من اللعبة</b> تفتح نافذة النطق. يمكن لصق كلمة أو جملة أو فقرة من أي نص قيد القراءة — فتنطقه بالصوت المستخدم في التعلم، وتحفظه في ملف عند الرغبة في الاحتفاظ به. وتعمل والبطاقة على الشاشة، وفي القوائم، وفي منتصف معركة زعيم. </div>
+    <div class="doors"> <a class="btn" href="home.ar.html">صفحة FlashBoss الرئيسية</a> <a class="btn ghost" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-voices&l=arabic" target="_blank" rel="noopener">FlashBoss على Steam</a> </div>
+  </section>
+
+</div>
+
+<footer>
+  <span class="footer-links">
+    <a href="home.ar.html">الرئيسية</a><span class="div">·</span>
+    <a href="manual/">الدليل (تجريبي)</a><span class="div">·</span>
+    <a href="about.ar.html">كيف تعمل اللعبة</a><span class="div">·</span>
+    <a href="packs.html">الحزم</a><span class="div">·</span>
+    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-voices&l=arabic">Steam</a>
+  </span>
+  <div class="made">تعمل الأصوات محليا بمحرك Piper. وكل مقطع هنا مخرجات غير معدلة من النماذج التي تأتي مع اللعبة.</div>
+</footer>
+
+<script>
+// language dropdown: button toggles the menu; click-away / Esc closes it
+(function(){
+  var sw=document.querySelector('.lang-switch'); if(!sw) return;
+  var btn=sw.querySelector('.lang-toggle'), menu=sw.querySelector('.lang-menu');
+  function close(){ menu.hidden=true; btn.setAttribute('aria-expanded','false'); }
+  btn.addEventListener('click', function(e){ e.stopPropagation(); var willOpen=menu.hidden; menu.hidden=!willOpen; btn.setAttribute('aria-expanded', String(willOpen)); });
+  document.addEventListener('click', function(e){ if(!sw.contains(e.target)) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
+
+// One player, many buttons: starting a clip stops whatever else is going.
+(function(){
+  var current = null;
+  // Ogg Opus only reached Safari in 17.4 — fall back to AAC rather than
+  // hand anyone a page of dead play buttons.
+  var probe = document.createElement('audio');
+  var EXT = probe.canPlayType && probe.canPlayType('audio/ogg; codecs=opus') ? '.ogg' : '.m4a';
+
+  function wire(card, btn, clipId, fill){
+    var audio = new Audio('audio/voices/' + clipId + EXT);
+    audio.preload = 'none';
+    function reset(){
+      card.classList.remove('playing');
+      btn.textContent = '▶'; btn.dataset.state = '';
+      if(fill) fill.style.width = '0';
+    }
+    if(fill) audio.addEventListener('timeupdate', function(){
+      if(audio.duration) fill.style.width = (audio.currentTime / audio.duration * 100) + '%';
+    });
+    audio.addEventListener('ended', reset);
+    audio.addEventListener('error', function(){
+      btn.textContent = '—'; btn.disabled = true;
+      btn.setAttribute('aria-label', 'تعذر تحميل هذا المقطع');
+    });
+    btn.addEventListener('click', function(){
+      if(current && current.audio !== audio){ current.audio.pause(); current.reset(); }
+      if(audio.paused){
+        audio.currentTime = 0;
+        audio.play().then(function(){
+          card.classList.add('playing');
+          btn.textContent = '■'; btn.dataset.state = 'playing';
+          current = {audio: audio, reset: reset};
+        }).catch(function(){ /* autoplay policy or missing file: leave the button alone */ });
+      } else {
+        audio.pause(); reset(); current = null;
+      }
+    });
+  }
+
+  document.querySelectorAll('.vcard[data-clip]').forEach(function(card){
+    wire(card, card.querySelector('.play'), card.dataset.clip, card.querySelector('.bar i'));
+    if(card.dataset.compare){
+      wire(card, card.querySelector('.compare button'), card.dataset.compare, null);
+    }
+  });
+})();
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+</body>
+</html>

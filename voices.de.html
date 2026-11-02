@@ -13,6 +13,7 @@
 <link rel="alternate" hreflang="ja" href="https://odiin2024.github.io/flashboss-site/voices.ja.html">
 <link rel="alternate" hreflang="zh" href="https://odiin2024.github.io/flashboss-site/voices.zh.html">
 <link rel="alternate" hreflang="ru" href="https://odiin2024.github.io/flashboss-site/voices.ru.html">
+<link rel="alternate" hreflang="ar" href="https://odiin2024.github.io/flashboss-site/voices.ar.html">
 <link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/voices.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -200,8 +201,9 @@ nav.fbnav .lang-switch{margin-left:0;}
       <li><a href="voices.es.html">Español</a></li>
       <li><a href="voices.ja.html">日本語</a></li>
       <li><a href="voices.zh.html">简体中文</a></li>
-            <li><a href="voices.ru.html">Русский</a></li>
-        </ul>
+      <li><a href="voices.ru.html">Русский</a></li>
+      <li><a href="voices.ar.html" lang="ar" dir="rtl">العربية</a></li>
+    </ul>
   </div>
 </nav>
 
@@ -215,7 +217,7 @@ nav.fbnav .lang-switch{margin-left:0;}
 
 <div class="wrap"> <section class="reveal"> <div class="sec-head"><h2>In FlashBoss enthalten</h2><span class="note">kostenlos · kein Kauf nötig</span></div>
     <p class="sec-intro">Diese beiden gehören zum Spiel selbst. FlashBoss installieren — und sie sind schon da.</p>
-    <div class="grid"> <article class="vcard" data-clip="english_us"> <div class="top"> <button class="play" type="button" aria-label="Play the American English sample">▶</button> <div> <div class="name">Amerikanisches Englisch</div>
+    <div class="grid"> <article class="vcard" id="voice-english_us" data-clip="english_us"> <div class="top"> <button class="play" type="button" aria-label="Play the American English sample">▶</button> <div> <div class="name">Amerikanisches Englisch</div>
             <div class="meta">USA · weiblich</div>
           </div>
         </div>
@@ -226,7 +228,7 @@ nav.fbnav .lang-switch{margin-left:0;}
         <div class="credit">LibriTTS · CC BY 4.0</div>
       </article>
 
-      <article class="vcard" data-clip="esperanto">
+      <article class="vcard" id="voice-esperanto" data-clip="esperanto">
         <div class="top"> <button class="play" type="button" aria-label="Play the Esperanto sample">▶</button> <div> <div class="name">Esperanto (W)</div>
             <div class="meta">ohne Land · weiblich</div>
           </div>
@@ -244,7 +246,7 @@ nav.fbnav .lang-switch{margin-left:0;}
   <section class="reveal">
     <div class="sec-head"><h2>Im jeweiligen Pack enthalten</h2><span class="note">Kurs kaufen, Stimme inklusive</span></div>
     <p class="sec-intro">Nichts dazukaufen, nichts einstellen. Pack installieren — und es spricht.</p>
-    <div class="grid"> <article class="vcard" data-clip="german"> <div class="top"> <button class="play" type="button" aria-label="Play the German sample">▶</button> <div><div class="name">Deutsch</div><div class="meta">Deutschland · männlich</div></div>
+    <div class="grid"> <article class="vcard" id="voice-german" data-clip="german"> <div class="top"> <button class="play" type="button" aria-label="Play the German sample">▶</button> <div><div class="name">Deutsch</div><div class="meta">Deutschland · männlich</div></div>
         </div>
         <div class="where">Gehört zu <b>German Core</b> und beiden <b>German-Pareto</b>-Kursen.</div>
         <div class="say">“Ihre Gesundheit ist das Wichtigste im Leben, passen Sie bitte immer gut auf sich auf!”</div>
@@ -253,7 +255,7 @@ nav.fbnav .lang-switch{margin-left:0;}
         <div class="credit">Thorsten Müller · CC0 1.0</div>
       </article>
 
-      <article class="vcard" data-clip="spanish_mx">
+      <article class="vcard" id="voice-spanish_mx" data-clip="spanish_mx">
         <div class="top"> <button class="play" type="button" aria-label="Play the Latin American Spanish sample">▶</button> <div><div class="name">Español</div><div class="meta">Lateinamerika · weiblich</div></div>
         </div>
         <div class="where">Gehört zu <b>Spanish Core</b> und beiden <b>Spanish-Pareto</b>-Kursen.</div>
@@ -263,7 +265,7 @@ nav.fbnav .lang-switch{margin-left:0;}
         <div class="credit">es_MX-claude · Piper voices</div>
       </article>
 
-      <article class="vcard" data-clip="french">
+      <article class="vcard" id="voice-french" data-clip="french">
         <div class="top"> <button class="play" type="button" aria-label="Play the French sample">▶</button> <div><div class="name">Français</div><div class="meta">Frankreich · weiblich</div></div>
         </div>
         <div class="where">Gehört zu <b>French Core</b> und beiden <b>French-Pareto</b>-Kursen.</div>
@@ -273,7 +275,7 @@ nav.fbnav .lang-switch{margin-left:0;}
         <div class="credit">SIWIS · Piper voices</div>
       </article>
 
-      <article class="vcard" data-clip="italian">
+      <article class="vcard" id="voice-italian" data-clip="italian">
         <div class="top"> <button class="play" type="button" aria-label="Play the Italian sample">▶</button> <div><div class="name">Italiano</div><div class="meta">Italien · weiblich</div></div>
         </div>
         <div class="where">Gehört zu <b>Italian Core</b> und beiden <b>Italian-Pareto</b>-Kursen.</div>
@@ -283,7 +285,7 @@ nav.fbnav .lang-switch{margin-left:0;}
         <div class="credit">paola · Piper voices</div>
       </article>
 
-      <article class="vcard" data-clip="toki_pona">
+      <article class="vcard" id="voice-toki_pona" data-clip="toki_pona">
         <div class="top"> <button class="play" type="button" aria-label="Play the Toki Pona sample">▶</button> <div><div class="name">toki pona</div><div class="meta">kostenlos im Grundspiel</div></div>
         </div>
         <div class="where">Wird von der <b>Esperanto-Stimme</b> gesprochen — jeder Laut von Toki Pona kommt auch im Esperanto vor.</div>
@@ -293,7 +295,7 @@ nav.fbnav .lang-switch{margin-left:0;}
         <div class="credit">FlashBoss · CC0 1.0</div>
       </article>
 
-      <article class="vcard" data-clip="latin">
+      <article class="vcard" id="voice-latin" data-clip="latin">
         <div class="top"> <button class="play" type="button" aria-label="Play the Latin sample">▶</button> <div><div class="name">Latina</div><div class="meta">klassisch · männlich</div></div>
         </div>
         <div class="where">Gehört zu <b>Latin Core</b> und <b>Latin Pareto</b>, beide jetzt erhältlich. Für FlashBoss trainiert, mit rekonstruierter klassischer Aussprache.</div>
@@ -309,7 +311,7 @@ nav.fbnav .lang-switch{margin-left:0;}
   <section class="reveal">
     <div class="sec-head"><h2>Stimmen-DLC, einzeln erhältlich</h2><span class="note">ein anderer Akzent, überall</span></div>
     <p class="sec-intro">Ein Stimmen-DLC ersetzt die mitgelieferte Stimme in allen Packs dieser Sprache — Karten, Lektionen, Bossfights, alles. Du kannst jederzeit zur eingebauten Stimme zurückschalten, ohne etwas zu verlieren. Jede Karte unten spielt auch <b>die Stimme ab, die sie ersetzt</b>, mit demselben Satz: So hörst du genau, was sich ändert, bevor du Geld ausgibst.</p>
-    <div class="grid"> <article class="vcard" data-clip="english_gb" data-compare="english_us"> <div class="top"> <button class="play" type="button" aria-label="Play the British English sample">▶</button> <div> <div class="name">Britisches Englisch (W)</div>
+    <div class="grid"> <article class="vcard" id="voice-english_gb" data-clip="english_gb" data-compare="english_us"> <div class="top"> <button class="play" type="button" aria-label="Play the British English sample">▶</button> <div> <div class="name">Britisches Englisch (W)</div>
             <div class="meta">Südengland · weiblich</div>
           </div>
         </div>
@@ -321,7 +323,7 @@ nav.fbnav .lang-switch{margin-left:0;}
         <div class="credit">British English Female · CC0 1.0</div>
       </article>
 
-      <article class="vcard" data-clip="spanish_es" data-compare="spanish_mx">
+      <article class="vcard" id="voice-spanish_es" data-clip="spanish_es" data-compare="spanish_mx">
         <div class="top"> <button class="play" type="button" aria-label="Play the Castilian Spanish sample">▶</button> <div> <div class="name">Castellano <span class="soon">noch nicht erschienen</span></div>
             <div class="meta">Spanien · männlich</div>
           </div>
@@ -332,6 +334,20 @@ nav.fbnav .lang-switch{margin-left:0;}
         <div class="bar"><i></i></div>
         <div class="compare"> <button type="button" aria-label="Play the included Latin American voice saying the same sentence">▶</button> <span>Denselben Satz in der mitgelieferten lateinamerikanischen Stimme hören</span> </div>
         <div class="credit">davefx · CC0</div>
+      </article>
+
+      <article class="vcard" id="voice-russian_male" data-clip="russian_male" data-compare="russian">
+        <div class="top"> <button class="play" type="button" aria-label="Play the Russian male voice sample">▶</button> <div> <div class="name">Русский · Vitali <span class="soon">noch nicht erschienen</span></div>
+            <div class="meta">Russland · männlich</div>
+          </div>
+        </div>
+        <div class="where">Ersetzt die Frauenstimme in <b>allen russischen Packs</b> – Russian Core, Pareto 1 und Pareto 2.</div>
+        <div class="where" style="margin-top:8px;">Installiert wird er zur Vorlesestimme für Russisch. Zurück zur Frauenstimme geht es jederzeit unter Einstellungen → Audio und Stimmen.</div>
+        <div class="say">“Вечером сестра показывает нам фотографии из отпуска.”</div>
+        <div class="gloss">Abends zeigt uns meine Schwester Fotos aus dem Urlaub.</div>
+        <div class="bar"><i></i></div>
+        <div class="compare"> <button type="button" aria-label="Play the included female Russian voice saying the same sentence">▶</button> <span>Denselben Satz in der mitgelieferten Frauenstimme hören</span> </div>
+        <div class="credit">Vitali · FlashBoss · CC0 1.0 · trained on Mozilla Common Voice</div>
       </article>
 
     </div>

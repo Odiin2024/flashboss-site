@@ -24,10 +24,10 @@
    ============================================================ */
 (function () {
   var AVAIL = {
-    'home':           ['de', 'es', 'ja', 'zh', 'ru'],
+    'home':           ['de', 'es', 'ja', 'zh', 'ru', 'ar'],
     'packs':          ['de', 'es', 'ja', 'zh', 'ru'],
-    'voices':         ['de', 'es', 'ja', 'zh', 'ru'],
-    'about':          ['de', 'es', 'ja', 'zh', 'ru'],
+    'voices':         ['de', 'es', 'ja', 'zh', 'ru', 'ar'],
+    'about':          ['de', 'es', 'ja', 'zh', 'ru', 'ar'],
     'resources':      ['de', 'es', 'ja', 'zh', 'ru'],
     'wordlists':      ['de', 'es', 'ja', 'zh', 'ru', 'ar'],
     'lessons':        ['de', 'es', 'ja', 'zh', 'ru', 'ar'],
@@ -40,7 +40,7 @@
     'spanish':        ['de', 'es', 'ja', 'zh', 'ru'],
     'italian':        ['de', 'es', 'ja', 'zh', 'ru'],
     'esperanto':      ['de', 'es', 'ja', 'zh', 'ru'],
-    'index':          ['de', 'es', 'ja', 'zh', 'ru'],
+    'index':          ['de', 'es', 'ja', 'zh', 'ru', 'ar'],
     'greek-roots':    ['de', 'es', 'ja', 'zh', 'ru'],
     'english':        ['de', 'es', 'ja', 'zh', 'ru'],
     'affiliate':      ['de', 'es', 'ja', 'zh', 'ru'],
