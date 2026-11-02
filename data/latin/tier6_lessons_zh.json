@@ -124,8 +124,10 @@
           "一个分词，两种用法。词尾无法区分；",
           "要看它所在的句子。",
           "",
+          "",
           "定语用法最直接：分词修饰名词，",
           "紧挨着它，就像普通形容词一样。",
+          "",
           "   Captam urbem mīlitēs dīripiunt.",
           "   ＝士兵们洗劫了被攻占的城市。",
           "",
@@ -143,6 +145,7 @@
         "content": [
           "状语用法更具动态。分词交代主句",
           "动词发生的时间、原因或方式。",
+          "",
           "   Multī mīlitēs aegritūdine cōnfectī",
           "   in castrīs manēbant.",
           "   ＝许多士兵因病疲惫，留在营地。",
@@ -179,7 +182,7 @@
           "   spoliant        spoliantur",
           "   他们剥去       他们被剥去",
           "",
-          "标志是词尾带 -r：",
+          "标志是词尾带 r（-minī 除外）：",
           "   -or, -ris, -tur, -mur, -minī, -ntur",
           "",
           "-tur 和 -ntur 在真实文本中",
@@ -241,9 +244,9 @@
           "拉文纳          Ravenna",
           "布林迪西        Brundisium               按 6",
           "卡普亚          Capua",
-          "阿尔卑斯山      Alpēs                    按 7",
+          "阿尔卑斯山      Alpēs                    按 8",
           "亚平宁山脉      Appennīnus",
-          "波河            Padus                    按 8",
+          "波河            Padus                    按 x",
           "地中海          Mare Nostrum"
         ],
         "pronunciation_mappings": {
@@ -253,8 +256,8 @@
           "4": "Neāpolis. Pompeiī.",
           "5": "Mediōlānum. Ravenna.",
           "6": "Brundisium. Capua.",
-          "7": "Alpēs. Appennīnus.",
-          "8": "Padus. Mare Nostrum."
+          "8": "Alpēs. Appennīnus.",
+          "x": "Padus. Mare Nostrum."
         }
       },
       {
@@ -275,9 +278,9 @@
           "叙利亚       Syria       Antiochīa",
           "犹太         Iūdaea      Hierosolyma     按 6",
           "马其顿       Macedonia   Thessalonīca",
-          "色雷斯       Thrācia     Bȳzantium       按 7",
+          "色雷斯       Thrācia     Bȳzantium       按 8",
           "达契亚       Dācia       Sarmizegetusa",
-          "潘诺尼亚     Pannonia    Carnuntum       按 8",
+          "潘诺尼亚     Pannonia    Carnuntum       按 x",
           "伊利里亚     Illyricum   Salōna"
         ],
         "pronunciation_mappings": {
@@ -287,8 +290,8 @@
           "4": "Aegyptus. Alexandrīa. Āfrica. Carthāgō.",
           "5": "Asia. Ephesus. Syria. Antiochīa.",
           "6": "Iūdaea. Hierosolyma. Macedonia. Thessalonīca.",
-          "7": "Thrācia. Bȳzantium. Dācia. Sarmizegetusa.",
-          "8": "Pannonia. Carnuntum. Illyricum. Salōna."
+          "8": "Thrācia. Bȳzantium. Dācia. Sarmizegetusa.",
+          "x": "Pannonia. Carnuntum. Illyricum. Salōna."
         }
       },
       {
@@ -309,9 +312,9 @@
           "波斯         Persia      Persepolis",
           "帕提亚       Parthia     Ecbatana        按 6",
           "亚美尼亚     Armenia     Artaxata",
-          "比提尼亚     Bīthȳnia    Nīcomēdīa       按 7",
+          "比提尼亚     Bīthȳnia    Nīcomēdīa       按 8",
           "卡帕多西亚   Cappadocia  Caesarēa",
-          "卢西塔尼亚   Lūsītānia   Emerita         按 8",
+          "卢西塔尼亚   Lūsītānia   Emerita         按 x",
           "阿基坦       Aquītānia   Burdigala"
         ],
         "pronunciation_mappings": {
@@ -321,8 +324,8 @@
           "4": "Cȳrēnaica. Cȳrēnē. Arabia. Petra.",
           "5": "Mesopotamia. Ctēsiphōn. Persia. Persepolis.",
           "6": "Parthia. Ecbatana. Armenia. Artaxata.",
-          "7": "Bīthȳnia. Nīcomēdīa. Cappadocia. Caesarēa.",
-          "8": "Lūsītānia. Emerita. Aquītānia. Burdigala."
+          "8": "Bīthȳnia. Nīcomēdīa. Cappadocia. Caesarēa.",
+          "x": "Lūsītānia. Emerita. Aquītānia. Burdigala."
         }
       }
     ]

@@ -21,7 +21,10 @@ Idempotent.
 """
 import glob, json, os, re, sys
 
-REPO = "/home/odiin/Documents/Bootcamp/knight/flashcard_sets"
+# FLASHBOSS_CARDS overrides the source tree: knight's working tree is often on a
+# branch with local edits, so a site refresh reads an export of the release branch
+# (git archive origin/tauri-release flashcard_sets | tar -x -C <dir>) and points this at it.
+REPO = os.environ.get("FLASHBOSS_CARDS", "/home/odiin/Documents/Bootcamp/knight/flashcard_sets")
 MAP = [("data/english/core/CORE_FINAL.json", "English/core"),
        ("data/english/p1/CORE_FINAL.json",   "English_Extensions/pareto1"),
        ("data/english/p2/CORE_FINAL.json",   "English_Extensions/pareto2"),

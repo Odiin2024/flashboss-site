@@ -40,20 +40,20 @@
         "page": 2,
         "total_pages": 3,
         "pronunciation_mappings": {
-          "1": "je suis content que la société soit plus diverse",
-          "2": "j'ai peur qu'il n'y ait pas assez d'égalité",
+          "1": "je suis content que la maison soit plus calme",
+          "2": "j'ai peur qu'il n'y ait pas assez de temps",
           "3": "bien que ce soit difficile, il faut agir"
         },
         "content": [
           "ЭМОЦИИ тоже вызывают субжонктив:",
           "",
-          "Je suis content que la société        Нажми 1",
-          "soit plus diverse.",
-          "(Я рад, что общество стало разнообразнее.)",
+          "Je suis content que la maison         Нажми 1",
+          "soit plus calme.",
+          "(Я рад, что в доме стало тише.)",
           "",
           "J'ai peur qu'il n'y ait pas assez     Нажми 2",
-          "d'égalité.",
-          "(Я боюсь, что равенства недостаточно.)",
+          "de temps.",
+          "(Боюсь, что времени не хватит.)",
           "",
           "",
           "BIEN QUE / QUOIQUE = хотя,            Нажми 3",
@@ -67,7 +67,7 @@
         "page": 3,
         "total_pages": 3,
         "pronunciation_mappings": {
-          "1": "pour que chacun ait sa place, la loi doit changer",
+          "1": "pour que chacun ait sa place, on ajoute des chaises",
           "2": "avant qu'il soit trop tard, agissons",
           "3": "on se bat jusqu'à ce que ce soit réglé"
         },
@@ -76,9 +76,9 @@
           "",
           "POUR QUE / AFIN QUE = чтобы:           Нажми 1",
           "Pour que chacun ait sa place,",
-          "la loi doit changer.",
-          "(Чтобы у каждого было место, закон",
-          "должен измениться.)",
+          "on ajoute des chaises.",
+          "(Чтобы у каждого было место, мы",
+          "добавляем стулья.)",
           "",
           "ВРЕМЕННЫЕ ГРАНИЦЫ тоже его требуют:",
           "AVANT QUE из Core — всё ещё важно:     Нажми 2",
@@ -186,9 +186,9 @@
           "Бретань         la Bretagne",
           "Нормандия       la Normandie          Нажми 6",
           "Корсика         la Corse",
-          "Эйфелева башня  la tour Eiffel        Нажми 7",
+          "Эйфелева башня  la tour Eiffel        Нажми 8",
           "Лувр            le Louvre",
-          "Монблан         le mont Blanc         Нажми 8",
+          "Монблан         le mont Blanc         Нажми x",
           "Луара           la Loire"
         ],
         "pronunciation_mappings": {
@@ -198,8 +198,8 @@
           "4": "Bordeaux. Strasbourg.",
           "5": "La Provence. La Bretagne.",
           "6": "La Normandie. La Corse.",
-          "7": "La tour Eiffel. Le Louvre.",
-          "8": "Le mont Blanc. La Loire."
+          "8": "La tour Eiffel. Le Louvre.",
+          "x": "Le mont Blanc. La Loire."
         }
       },
       {
@@ -220,9 +220,9 @@
           "Польша       Pologne     Varsovie",
           "Швеция       Suède       Stockholm    Нажми 6",
           "Россия       Russie      Moscou",
-          "Украина      Ukraine     Kiev         Нажми 7",
+          "Украина      Ukraine     Kiev (Kyiv)  Нажми 8",
           "Турция       Turquie     Ankara",
-          "Бельгия      Belgique    Bruxelles    Нажми 8",
+          "Бельгия      Belgique    Bruxelles    Нажми x",
           "Люксембург   Luxembourg  Luxembourg"
         ],
         "pronunciation_mappings": {
@@ -232,8 +232,8 @@
           "4": "Pays-Bas. Amsterdam. Suisse. Berne.",
           "5": "Autriche. Vienne. Pologne. Varsovie.",
           "6": "Suède. Stockholm. Russie. Moscou.",
-          "7": "Ukraine. Kiev. Turquie. Ankara.",
-          "8": "Belgique. Bruxelles. Luxembourg. Luxembourg."
+          "8": "Ukraine. Kiev. Turquie. Ankara.",
+          "x": "Belgique. Bruxelles. Luxembourg. Luxembourg."
         }
       },
       {
@@ -250,13 +250,13 @@
           "Бразилия     Brésil      Brasilia",
           "Китай        Chine       Pékin        Нажми 4",
           "Япония       Japon       Tokyo",
-          "Южная Корея  Corée (Sud) Séoul        Нажми 5",
+          "Южная Корея  Corée du Sud Séoul       Нажми 5",
           "Индия        Inde        New Delhi",
           "Индонезия    Indonésie   Jakarta      Нажми 6",
           "Австралия    Australie   Canberra",
-          "Египет       Égypte      Le Caire     Нажми 7",
+          "Египет       Égypte      Le Caire     Нажми 8",
           "Кения        Kenya       Nairobi",
-          "Нигерия      Nigeria     Abuja        Нажми 8",
+          "Нигерия      Nigeria     Abuja        Нажми x",
           "ЮАР          Afrique du Sud Pretoria"
         ],
         "pronunciation_mappings": {
@@ -264,10 +264,10 @@
           "2": "États-Unis. Washington. Canada. Ottawa.",
           "3": "Mexique. Mexico. Brésil. Brasilia.",
           "4": "Chine. Pékin. Japon. Tokyo.",
-          "5": "Corée (Sud). Séoul. Inde. New Delhi.",
+          "5": "Corée du Sud. Séoul. Inde. New Delhi.",
           "6": "Indonésie. Jakarta. Australie. Canberra.",
-          "7": "Égypte. Le Caire. Kenya. Nairobi.",
-          "8": "Nigeria. Abuja. Afrique du Sud. Pretoria."
+          "8": "Égypte. Le Caire. Kenya. Nairobi.",
+          "x": "Nigeria. Abuja. Afrique du Sud. Pretoria."
         }
       }
     ]

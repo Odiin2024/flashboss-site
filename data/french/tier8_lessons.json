@@ -42,14 +42,14 @@
         "content": [
           "EMOTION triggers subjonctif too:",
           "",
-          "Je suis content que la société        Press 1",
-          "soit plus diverse.",
-          "(I'm glad society is more diverse.)",
+          "Je suis content que la maison         Press 1",
+          "soit plus calme.",
+          "(I'm glad the house is quieter.)",
           "",
           "J'ai peur qu'il n'y ait pas assez     Press 2",
-          "d'égalité.",
+          "de temps.",
           "(I'm afraid there isn't enough",
-          "equality.)",
+          "time.)",
           "",
           "BIEN QUE / QUOIQUE = although,        Press 3",
           "always take subjonctif:",
@@ -59,8 +59,8 @@
           "act.)"
         ],
         "pronunciation_mappings": {
-          "1": "je suis content que la société soit plus diverse",
-          "2": "j'ai peur qu'il n'y ait pas assez d'égalité",
+          "1": "je suis content que la maison soit plus calme",
+          "2": "j'ai peur qu'il n'y ait pas assez de temps",
           "3": "bien que ce soit difficile, il faut agir"
         }
       },
@@ -72,8 +72,8 @@
           "",
           "POUR QUE / AFIN QUE = so that:        Press 1",
           "Pour que chacun ait sa place,",
-          "la loi doit changer.",
-          "(So the law changes and everyone has a place.)",
+          "on ajoute des chaises.",
+          "(We're adding chairs so everyone has a seat.)",
           "",
           "TIME LIMITS trigger it too:",
           "",
@@ -88,7 +88,7 @@
           "settled.)"
         ],
         "pronunciation_mappings": {
-          "1": "pour que chacun ait sa place, la loi doit changer",
+          "1": "pour que chacun ait sa place, on ajoute des chaises",
           "2": "avant qu'il soit trop tard, agissons",
           "3": "on se bat jusqu'à ce que ce soit réglé"
         }
@@ -187,9 +187,9 @@
           "Brittany        la Bretagne",
           "Normandy        la Normandie          Press 6",
           "Corsica         la Corse",
-          "the Eiffel Tower la tour Eiffel       Press 7",
+          "the Eiffel Tower la tour Eiffel       Press 8",
           "the Louvre      le Louvre",
-          "Mont Blanc      le mont Blanc         Press 8",
+          "Mont Blanc      le mont Blanc         Press x",
           "the Loire       la Loire"
         ],
         "pronunciation_mappings": {
@@ -199,8 +199,8 @@
           "4": "Bordeaux. Strasbourg.",
           "5": "La Provence. La Bretagne.",
           "6": "La Normandie. La Corse.",
-          "7": "La tour Eiffel. Le Louvre.",
-          "8": "Le mont Blanc. La Loire."
+          "8": "La tour Eiffel. Le Louvre.",
+          "x": "Le mont Blanc. La Loire."
         }
       },
       {
@@ -221,9 +221,9 @@
           "Poland       Pologne     Varsovie",
           "Sweden       Suède       Stockholm    Press 6",
           "Russia       Russie      Moscou",
-          "Ukraine      Ukraine     Kiev         Press 7",
+          "Ukraine      Ukraine     Kiev (Kyiv)  Press 8",
           "Turkey       Turquie     Ankara",
-          "Belgium      Belgique    Bruxelles    Press 8",
+          "Belgium      Belgique    Bruxelles    Press x",
           "Luxembourg   Luxembourg  Luxembourg"
         ],
         "pronunciation_mappings": {
@@ -233,8 +233,8 @@
           "4": "Pays-Bas. Amsterdam. Suisse. Berne.",
           "5": "Autriche. Vienne. Pologne. Varsovie.",
           "6": "Suède. Stockholm. Russie. Moscou.",
-          "7": "Ukraine. Kiev. Turquie. Ankara.",
-          "8": "Belgique. Bruxelles. Luxembourg. Luxembourg."
+          "8": "Ukraine. Kiev. Turquie. Ankara.",
+          "x": "Belgique. Bruxelles. Luxembourg. Luxembourg."
         }
       },
       {
@@ -251,13 +251,13 @@
           "Brazil       Brésil      Brasilia",
           "China        Chine       Pékin        Press 4",
           "Japan        Japon       Tokyo",
-          "South Korea  Corée (Sud) Séoul        Press 5",
+          "South Korea  Corée du Sud Séoul       Press 5",
           "India        Inde        New Delhi",
           "Indonesia    Indonésie   Jakarta      Press 6",
           "Australia    Australie   Canberra",
-          "Egypt        Égypte      Le Caire     Press 7",
+          "Egypt        Égypte      Le Caire     Press 8",
           "Kenya        Kenya       Nairobi",
-          "Nigeria      Nigeria     Abuja        Press 8",
+          "Nigeria      Nigeria     Abuja        Press x",
           "South Africa Afrique du Sud Pretoria"
         ],
         "pronunciation_mappings": {
@@ -265,10 +265,10 @@
           "2": "États-Unis. Washington. Canada. Ottawa.",
           "3": "Mexique. Mexico. Brésil. Brasilia.",
           "4": "Chine. Pékin. Japon. Tokyo.",
-          "5": "Corée (Sud). Séoul. Inde. New Delhi.",
+          "5": "Corée du Sud. Séoul. Inde. New Delhi.",
           "6": "Indonésie. Jakarta. Australie. Canberra.",
-          "7": "Égypte. Le Caire. Kenya. Nairobi.",
-          "8": "Nigeria. Abuja. Afrique du Sud. Pretoria."
+          "8": "Égypte. Le Caire. Kenya. Nairobi.",
+          "x": "Nigeria. Abuja. Afrique du Sud. Pretoria."
         }
       }
     ]

@@ -51,7 +51,10 @@
           "",
           "過去分詞は形容詞のように主語と性・数を",
           "一致させます。女性なら -e(levée, habillée)、",
-          "複数なら -s、女性複数なら -es を付けます。"
+          "複数なら -s、女性複数なら -es を付けます。",
+          "ただし、動詞の後に直接目的語が来ると",
+          "一致しません: elle s'est lavé les mains",
+          "(彼女は手を洗いました)。"
         ],
         "pronunciation_mappings": {
           "1": "je me suis levé",
@@ -83,8 +86,8 @@
           "l'heure, l'homme, l'hôtel, l'hiver",
           "",
           "見た目では区別できず、語ごとに覚えるしか",
-          "ありません。カードでは h aspiré の語に",
-          "Elides: false と表示されます。"
+          "ありません。カードの注記に",
+          "H-ASPIRÉ: エリジオンなし と表示されます。"
         ],
         "pronunciation": "Leçon douze",
         "pronunciation_mappings": {
@@ -132,15 +135,15 @@
         "total_pages": 2,
         "content": [
           "少数の動詞は être を使います。多くは移動や",
-          "状態変化を表す動詞です。DR & MRS",
+          "状態変化を表す動詞です。覚え方は",
+          "DR & MRS VANDERTRAMP:",
           "",
-          "",
-          "VANDERTRAMP で覚えましょう:         1を押す",
-          "Devenir, Revenir, Monter, Rester,",
+          "Devenir, Revenir, Monter, Rester,   1を押す",
           "Sortir, Venir, Aller, Naître,",
           "Descendre, Entrer, Rentrer, Tomber,",
           "Retourner, Arriver, Mourir, Partir,",
           "Passer",
+          "",
           "je suis arrivé(e)(着きました)       2を押す",
           "elle est partie(彼女は出発しました)",
           "",
@@ -171,7 +174,7 @@
           "",
           "il est(動詞「être」)= [ɛ]           1を押す",
           "語末の -st は発音しません",
-          "   Il est ici.(彼はここにいます)",
+          "   Il est là.(彼はここにいます)",
           "",
           "l'est(名詞「東」)= [ɛst]            2を押す",
           "語末の -st を発音します",
@@ -183,7 +186,7 @@
         ],
         "pronunciation": "Leçon quatorze",
         "pronunciation_mappings": {
-          "1": "il est ici",
+          "1": "il est là",
           "2": "il habite à l'est"
         }
       }

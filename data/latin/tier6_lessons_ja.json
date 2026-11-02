@@ -127,6 +127,7 @@
           "一つの分詞に、二つの仕事。語尾はどちらとも",
           "言いません。決めるのはまわりの文です。",
           "",
+          "",
           "連体用法は素直な方です。分詞が名詞を説明し、",
           "形容詞と同じようにすぐ隣に立ちます。",
           "",
@@ -181,18 +182,18 @@
           "ここまでの動詞の語尾は、すべて動作をする側を",
           "名指してきました。もう一そろいが、受ける側を",
           "名指します。",
-          "",
           "   能動            受動",
           "   spoliat         spoliātur",
           "   彼は剥ぎ取る    彼は剥ぎ取られる",
           "   spoliant        spoliantur",
           "   彼らは剥ぎ取る  彼らは剥ぎ取られる",
           "",
-          "見分ける印は、語を閉じる -r です:",
+          "見分ける印は語尾の r です(-minī は例外):",
           "   -or, -ris, -tur, -mur, -minī, -ntur",
           "",
           "実際の散文では -tur と -ntur が仕事の大半を",
           "担います。この二つを捉えれば、残りは楽です。",
+          "",
           "",
           "   Omnium animī ad laetitiam excitantur.",
           "   = すべての心が喜びへと呼び起こされる。"
@@ -248,9 +249,9 @@
           "ラヴェンナ      Ravenna",
           "ブリンディジ    Brundisium            6を押す",
           "カプア          Capua",
-          "アルプス        Alpēs                 7を押す",
+          "アルプス        Alpēs                 8を押す",
           "アペニン山脈    Appennīnus",
-          "ポー川          Padus                 8を押す",
+          "ポー川          Padus                 xを押す",
           "地中海          Mare Nostrum"
         ],
         "pronunciation_mappings": {
@@ -260,8 +261,8 @@
           "4": "Neāpolis. Pompeiī.",
           "5": "Mediōlānum. Ravenna.",
           "6": "Brundisium. Capua.",
-          "7": "Alpēs. Appennīnus.",
-          "8": "Padus. Mare Nostrum."
+          "8": "Alpēs. Appennīnus.",
+          "x": "Padus. Mare Nostrum."
         }
       },
       {
@@ -282,9 +283,9 @@
           "シリア       Syria       Antiochīa",
           "ユダヤ       Iūdaea      Hierosolyma  6を押す",
           "マケドニア   Macedonia   Thessalonīca",
-          "トラキア     Thrācia     Bȳzantium    7を押す",
+          "トラキア     Thrācia     Bȳzantium    8を押す",
           "ダキア       Dācia       Sarmizegetusa",
-          "パンノニア   Pannonia    Carnuntum    8を押す",
+          "パンノニア   Pannonia    Carnuntum    xを押す",
           "イリュリア   Illyricum   Salōna"
         ],
         "pronunciation_mappings": {
@@ -294,8 +295,8 @@
           "4": "Aegyptus. Alexandrīa. Āfrica. Carthāgō.",
           "5": "Asia. Ephesus. Syria. Antiochīa.",
           "6": "Iūdaea. Hierosolyma. Macedonia. Thessalonīca.",
-          "7": "Thrācia. Bȳzantium. Dācia. Sarmizegetusa.",
-          "8": "Pannonia. Carnuntum. Illyricum. Salōna."
+          "8": "Thrācia. Bȳzantium. Dācia. Sarmizegetusa.",
+          "x": "Pannonia. Carnuntum. Illyricum. Salōna."
         }
       },
       {
@@ -316,9 +317,9 @@
           "ペルシア     Persia      Persepolis",
           "パルティア   Parthia     Ecbatana     6を押す",
           "アルメニア   Armenia     Artaxata",
-          "ビテュニア   Bīthȳnia    Nīcomēdīa    7を押す",
+          "ビテュニア   Bīthȳnia    Nīcomēdīa    8を押す",
           "カッパドキア Cappadocia  Caesarēa",
-          "ルシタニア   Lūsītānia   Emerita      8を押す",
+          "ルシタニア   Lūsītānia   Emerita      xを押す",
           "アクィタニア Aquītānia   Burdigala"
         ],
         "pronunciation_mappings": {
@@ -328,8 +329,8 @@
           "4": "Cȳrēnaica. Cȳrēnē. Arabia. Petra.",
           "5": "Mesopotamia. Ctēsiphōn. Persia. Persepolis.",
           "6": "Parthia. Ecbatana. Armenia. Artaxata.",
-          "7": "Bīthȳnia. Nīcomēdīa. Cappadocia. Caesarēa.",
-          "8": "Lūsītānia. Emerita. Aquītānia. Burdigala."
+          "8": "Bīthȳnia. Nīcomēdīa. Cappadocia. Caesarēa.",
+          "x": "Lūsītānia. Emerita. Aquītānia. Burdigala."
         }
       }
     ]

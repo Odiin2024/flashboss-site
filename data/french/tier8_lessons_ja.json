@@ -42,13 +42,13 @@
         "content": [
           "感情も接続法をとります:",
           "",
-          "Je suis content que la société        1を押す",
-          "soit plus diverse.",
-          "(社会がより多様になってうれしいです)",
+          "Je suis content que la maison         1を押す",
+          "soit plus calme.",
+          "(家の中が静かになってうれしいです)",
           "",
           "J'ai peur qu'il n'y ait pas assez     2を押す",
-          "d'égalité.",
-          "(平等が足りないのではないかと",
+          "de temps.",
+          "(時間が足りないのではないかと",
           "心配です)",
           "",
           "BIEN QUE / QUOIQUE(〜だけれども)      3を押す",
@@ -59,8 +59,8 @@
           "なりません)"
         ],
         "pronunciation_mappings": {
-          "1": "je suis content que la société soit plus diverse",
-          "2": "j'ai peur qu'il n'y ait pas assez d'égalité",
+          "1": "je suis content que la maison soit plus calme",
+          "2": "j'ai peur qu'il n'y ait pas assez de temps",
           "3": "bien que ce soit difficile, il faut agir"
         }
       },
@@ -72,8 +72,8 @@
           "",
           "POUR QUE / AFIN QUE(〜するため):      1を押す",
           "Pour que chacun ait sa place,",
-          "la loi doit changer.",
-          "(だれもが居場所を得るには法の改正が必要です)",
+          "on ajoute des chaises.",
+          "(全員が座れるように、いすを足します)",
           "",
           "期限を表す表現も引き金になります:",
           "",
@@ -88,7 +88,7 @@
           "戦い続けます)"
         ],
         "pronunciation_mappings": {
-          "1": "pour que chacun ait sa place, la loi doit changer",
+          "1": "pour que chacun ait sa place, on ajoute des chaises",
           "2": "avant qu'il soit trop tard, agissons",
           "3": "on se bat jusqu'à ce que ce soit réglé"
         }
@@ -187,9 +187,9 @@
           "ブルターニュ    la Bretagne",
           "ノルマンディー  la Normandie          6を押す",
           "コルシカ島      la Corse",
-          "エッフェル塔    la tour Eiffel        7を押す",
+          "エッフェル塔    la tour Eiffel        8を押す",
           "ルーヴル美術館  le Louvre",
-          "モンブラン      le mont Blanc         8を押す",
+          "モンブラン      le mont Blanc         xを押す",
           "ロワール川      la Loire"
         ],
         "pronunciation_mappings": {
@@ -199,8 +199,8 @@
           "4": "Bordeaux. Strasbourg.",
           "5": "La Provence. La Bretagne.",
           "6": "La Normandie. La Corse.",
-          "7": "La tour Eiffel. Le Louvre.",
-          "8": "Le mont Blanc. La Loire."
+          "8": "La tour Eiffel. Le Louvre.",
+          "x": "Le mont Blanc. La Loire."
         }
       },
       {
@@ -221,9 +221,9 @@
           "ポーランド   Pologne     Varsovie",
           "スウェーデン Suède       Stockholm    6を押す",
           "ロシア       Russie      Moscou",
-          "ウクライナ   Ukraine     Kiev         7を押す",
+          "ウクライナ   Ukraine     Kiev (Kyiv)  8を押す",
           "トルコ       Turquie     Ankara",
-          "ベルギー     Belgique    Bruxelles    8を押す",
+          "ベルギー     Belgique    Bruxelles    xを押す",
           "Luxembourg   Luxembourg  Luxembourg"
         ],
         "pronunciation_mappings": {
@@ -233,8 +233,8 @@
           "4": "Pays-Bas. Amsterdam. Suisse. Berne.",
           "5": "Autriche. Vienne. Pologne. Varsovie.",
           "6": "Suède. Stockholm. Russie. Moscou.",
-          "7": "Ukraine. Kiev. Turquie. Ankara.",
-          "8": "Belgique. Bruxelles. Luxembourg. Luxembourg."
+          "8": "Ukraine. Kiev. Turquie. Ankara.",
+          "x": "Belgique. Bruxelles. Luxembourg. Luxembourg."
         }
       },
       {
@@ -251,13 +251,13 @@
           "ブラジル     Brésil      Brasilia",
           "中国         Chine       Pékin        4を押す",
           "日本         Japon       Tokyo",
-          "韓国         Corée (Sud) Séoul        5を押す",
+          "韓国         Corée du Sud Séoul       5を押す",
           "インド       Inde        New Delhi",
           "インドネシア Indonésie   Jakarta      6を押す",
           "Australia    Australie   Canberra",
-          "エジプト     Égypte      Le Caire     7を押す",
+          "エジプト     Égypte      Le Caire     8を押す",
           "ケニア       Kenya       Nairobi",
-          "ナイジェリア Nigeria     Abuja        8を押す",
+          "ナイジェリア Nigeria     Abuja        xを押す",
           "南アフリカ   Afrique du Sud Pretoria"
         ],
         "pronunciation_mappings": {
@@ -265,10 +265,10 @@
           "2": "États-Unis. Washington. Canada. Ottawa.",
           "3": "Mexique. Mexico. Brésil. Brasilia.",
           "4": "Chine. Pékin. Japon. Tokyo.",
-          "5": "Corée (Sud). Séoul. Inde. New Delhi.",
+          "5": "Corée du Sud. Séoul. Inde. New Delhi.",
           "6": "Indonésie. Jakarta. Australie. Canberra.",
-          "7": "Égypte. Le Caire. Kenya. Nairobi.",
-          "8": "Nigeria. Abuja. Afrique du Sud. Pretoria."
+          "8": "Égypte. Le Caire. Kenya. Nairobi.",
+          "x": "Nigeria. Abuja. Afrique du Sud. Pretoria."
         }
       }
     ]

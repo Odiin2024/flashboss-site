@@ -80,7 +80,6 @@
           "Directo: \"Where do you live?\"",
           "Indirecto: She asked me where I lived.",
           "= Me preguntó dónde vivía.",
-          "",
           "El orden se aplana a una afirmación",
           "(where I LIVED, no where DID I live),",
           "y el tiempo retrocede un paso.",
@@ -101,7 +100,6 @@
           "Directo: \"Turn it off.\"",
           "Indirecto: She told me to turn it off.",
           "= Me dijo que lo apagara.",
-          "",
           "Directo: \"Please wait.\"",
           "Indirecto: He asked me to wait.",
           "",
@@ -142,9 +140,9 @@
           "Nueva York      a New Yorker",
           "Los Ángeles     on the Pacific     Presiona 6",
           "Chicago         on Lake Michigan",
-          "Texas           a Texan            Presiona 7",
+          "Texas           a Texan            Presiona 8",
           "California      Californian",
-          "las Rocosas     the mountains      Presiona 8",
+          "las Rocosas     the mountains      Presiona x",
           "el Misisipi     the great river"
         ],
         "pronunciation_mappings": {
@@ -154,8 +152,8 @@
           "4": "London's river. England's lakes.",
           "5": "The US capital. A New Yorker.",
           "6": "On the Pacific. On Lake Michigan.",
-          "7": "A Texan. Californian.",
-          "8": "The mountains. The great river."
+          "8": "A Texan. Californian.",
+          "x": "The mountains. The great river."
         }
       },
       {
@@ -176,9 +174,9 @@
           "Austria      Austrian    Vienna",
           "Polonia      Polish      Warsaw    Presiona 6",
           "Suecia       Swedish     Stockholm",
-          "Noruega      Norwegian   Oslo      Presiona 7",
+          "Noruega      Norwegian   Oslo      Presiona 8",
           "Rusia        Russian     Moscow",
-          "Ucrania      Ukrainian   Kyiv      Presiona 8",
+          "Ucrania      Ukrainian   Kyiv      Presiona x",
           "Turquía      Turkish     Ankara"
         ],
         "pronunciation_mappings": {
@@ -188,8 +186,8 @@
           "4": "Portuguese. Lisbon. Dutch. Amsterdam.",
           "5": "Swiss. Bern. Austrian. Vienna.",
           "6": "Polish. Warsaw. Swedish. Stockholm.",
-          "7": "Norwegian. Oslo. Russian. Moscow.",
-          "8": "Ukrainian. Kyiv. Turkish. Ankara."
+          "8": "Norwegian. Oslo. Russian. Moscow.",
+          "x": "Ukrainian. Kyiv. Turkish. Ankara."
         }
       },
       {
@@ -210,9 +208,9 @@
           "Indonesia    Indonesian  Jakarta",
           "Australia    Australian  Canberra     Presiona 6",
           "N. Zelanda   New Zealander Wellington",
-          "Egipto       Egyptian    Cairo        Presiona 7",
+          "Egipto       Egyptian    Cairo        Presiona 8",
           "Sudáfrica    South African Pretoria",
-          "Kenia        Kenyan      Nairobi      Presiona 8",
+          "Kenia        Kenyan      Nairobi      Presiona x",
           "Nigeria      Nigerian    Abuja"
         ],
         "pronunciation_mappings": {
@@ -222,8 +220,8 @@
           "4": "Japanese. Tokyo. South Korean. Seoul.",
           "5": "Indian. New Delhi. Indonesian. Jakarta.",
           "6": "Australian. Canberra. New Zealander. Wellington.",
-          "7": "Egyptian. Cairo. South African. Pretoria.",
-          "8": "Kenyan. Nairobi. Nigerian. Abuja."
+          "8": "Egyptian. Cairo. South African. Pretoria.",
+          "x": "Kenyan. Nairobi. Nigerian. Abuja."
         }
       }
     ]

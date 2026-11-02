@@ -29,9 +29,14 @@ import os
 import sys
 
 SITE_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DEFAULT_REPO = "/home/odiin/Documents/Bootcamp/knight/flashcard_sets"
+# FLASHBOSS_CARDS overrides the source tree: knight's working tree is often on a
+# branch with local edits, so a site refresh reads an export of the release branch
+# (git archive origin/tauri-release flashcard_sets | tar -x -C <dir>) and points this at it.
+DEFAULT_REPO = os.environ.get("FLASHBOSS_CARDS", "/home/odiin/Documents/Bootcamp/knight/flashcard_sets")
 
-LOCALES = ("de", "es", "ja", "zh", "ru")
+# "ar" since 2026-11-02, for wordlists.ar.html: every foreign course's cards carry
+# Translation_ar upstream (the Arabic interface shipped in the new window).
+LOCALES = ("de", "es", "ja", "zh", "ru", "ar")
 
 # Russian comes from the card's own Translation_ru, like every other locale. Until
 # 2026-09-30 it was sourced from the English Translation (the stopgap from before a ru
@@ -52,6 +57,10 @@ SELF_LOCALE_SETS = {
     "data/german/PARETO2_FINAL.json",
     "data/spanish/CORE_FINAL.json", "data/spanish/PARETO1_FINAL.json",
     "data/spanish/PARETO2_FINAL.json",
+    # Russian joined 2026-11-02: wordlists.ru.html shows a Russian card its example
+    # sentence, exactly as the German page does for German.
+    "data/russian/CORE_FINAL.json", "data/russian/PARETO1_FINAL.json",
+    "data/russian/PARETO2_FINAL.json",
 }
 
 # site data file (relative to site root) -> repo set dir (relative to flashcard_sets)
@@ -80,6 +89,13 @@ MAPPING = [
     ("data/english/core/CORE_FINAL.json", "English/core"),
     ("data/english/p1/CORE_FINAL.json", "English_Extensions/pareto1"),
     ("data/english/p2/CORE_FINAL.json", "English_Extensions/pareto2"),
+    # Indonesian and Russian (2026-11-02; DLC releases weekly from 2026-11-05).
+    ("data/indonesian/CORE_FINAL.json", "Indonesian/core"),
+    ("data/indonesian/PARETO1_FINAL.json", "Indonesian_Extensions/pareto1"),
+    ("data/indonesian/PARETO2_FINAL.json", "Indonesian_Extensions/pareto2"),
+    ("data/russian/CORE_FINAL.json", "Russian/core"),
+    ("data/russian/PARETO1_FINAL.json", "Russian_Extensions/pareto1"),
+    ("data/russian/PARETO2_FINAL.json", "Russian_Extensions/pareto2"),
 ]
 
 

@@ -1,0 +1,518 @@
+[
+  {
+    "lesson_id": "001",
+    "trigger_word": "bonjour",
+    "trigger_card_number": 1,
+    "title": "الدرس 1: النطق الفرنسي",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 4,
+        "content": [
+          "أهلا بك! تبدو الكتابة الفرنسية صعبة، لكن",
+          "أصواتها ثابتة. وللعربية ثلاث حركات فقط،",
+          "أما الفرنسية فحروف العلة فيها أكثر:",
+          "\u200ea = [a] فتحة صافية، كما في «باب»\u200f\u200e  للاستماع 1",
+          "\u200e   la, ça, table",
+          "",
+          "\u200eé = [e] كسرة مفتوحة قليلا، حادة\u200f\u200e   للاستماع 2",
+          "\u200e   café, été, désolé",
+          "",
+          "\u200eè/ê = [ɛ] بين الفتحة والكسرة\u200f\u200e      للاستماع 3",
+          "\u200e   mère, père, être",
+          "",
+          "\u200ei = [i] كسرة صافية، كما في «فيل»\u200f\u200e  للاستماع 4",
+          "\u200e   ici, midi, merci",
+          "",
+          "\u200eo/ô = [o] ضمة مفتوحة قليلا\u200f\u200e        للاستماع 5",
+          "\u200e   mot, vélo, hôtel",
+          "وحرف u [y] لا مقابل له: كسرة بشفتين مضمومتين."
+        ],
+        "pronunciation": "Leçon un",
+        "pronunciation_mappings": {
+          "1": "La. Ça. Table.",
+          "2": "Café. Été. Désolé.",
+          "3": "Mère. Père. Être.",
+          "4": "Ici. Midi. Merci.",
+          "5": "Mot. Vélo. Hôtel."
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 4,
+        "content": [
+          "حروف العلة الأنفية: يخرج الهواء من الأنف،",
+          "ويلفظ حرف العلة دون إتمام n أو m،",
+          "وأقرب ما في العربية إليها الغنة:",
+          "\u200ean/en = [ɑ̃] فتحة أنفية\u200f\u200e            للاستماع 1",
+          "\u200e   France, enfant, dans",
+          "",
+          "\u200ein/ain/ein = [ɛ̃] è أنفية\u200f\u200e          للاستماع 2",
+          "\u200e   fin, pain, main",
+          "",
+          "\u200eon = [ɔ̃] o أنفية\u200f\u200e                  للاستماع 3",
+          "\u200e   bon, maison, non",
+          "",
+          "\u200eun = [œ̃] أنفية أيضا\u200f\u200e               للاستماع 4",
+          "ويلفظها كثيرون مثل in تماما.",
+          "\u200e   un, lundi, parfum",
+          "",
+          "القاعدة: n/m بعد حرف العلة لا تلفظ عادة،",
+          "بل تجعل حرف العلة قبلها أنفيا فقط."
+        ],
+        "pronunciation_mappings": {
+          "1": "France. Enfant. Dans.",
+          "2": "Fin. Pain. Main.",
+          "3": "Bon. Maison. Non.",
+          "4": "Un. Lundi. Parfum."
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 4,
+        "content": [
+          "حروف صامتة تستحق الانتباه:",
+          "\u200fr [ʁ] قريبة من الغين، وp غير b، وv غير f.",
+          "\u200eh = لا تلفظ أبدا\u200f\u200e                  للاستماع 1",
+          "\u200e   habiter, homme, heure",
+          "",
+          "\u200ec قبل e/i/y = سين\u200f\u200e                 للاستماع 2",
+          "\u200e   ici, cinéma, merci",
+          "\u200ec قبل a/o/u = كاف\u200f\u200e                 للاستماع 3",
+          "\u200e   café, comme, cousin",
+          "\u200eç = سين دائما، قبل أي حرف علة\u200f\u200e     للاستماع 4",
+          "\u200e   ça, français, garçon",
+          "",
+          "\u200eg قبل e/i/y = [ʒ] جيم شامية\u200f\u200e       للاستماع 5",
+          "\u200e   âge, manger, gilet",
+          "\u200eg قبل a/o/u = [g] جيم مصرية\u200f\u200e       للاستماع 6",
+          "\u200e   gauche, gomme, légume",
+          "\u200egn = [ɲ] نون ممزوجة بياء\u200f\u200e          للاستماع 8",
+          "\u200e   montagne, gagner, ligne"
+        ],
+        "pronunciation_mappings": {
+          "1": "Habiter. Homme. Heure.",
+          "2": "Ici. Cinéma. Merci.",
+          "3": "Café. Comme. Cousin.",
+          "4": "Ça. Français. Garçon.",
+          "5": "Âge. Manger. Gilet.",
+          "6": "Gauche. Gomme. Légume.",
+          "8": "Montagne. Gagner. Ligne."
+        }
+      },
+      {
+        "page": 4,
+        "total_pages": 4,
+        "content": [
+          "الحروف الصامتة في آخر الكلمة لا تلفظ",
+          "في أغلب الأحيان:",
+          "",
+          "\u200etrop, beaucoup, nez, gros          للاستماع 1",
+          "(الحروف الأخيرة p و z و s هنا لا تلفظ)",
+          "",
+          "\u200ec, r, f, l: تلفظ في آخر الكلمة\u200f\u200e     للاستماع 2",
+          "\u200e   avec, professeur, chef, animal",
+          "إلا r في -er آخر الفعل، فلا تلفظ: parler.",
+          "",
+          "النبر: على المقطع الأخير دائما، من الكلمة",
+          "أو من العبارة، وهو نبر خفيف تتقارب فيه",
+          "المقاطع طولا.",
+          "",
+          "ولظاهرتين أخريين درسان لاحقان، على",
+          "البطاقات التي تحتاجهما: الحذف (élision)",
+          "مثل l'ami، والوصل (liaison) مثل les amis."
+        ],
+        "pronunciation_mappings": {
+          "1": "Trop. Beaucoup. Nez. Gros.",
+          "2": "Avec. Professeur. Chef. Animal."
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "002",
+    "trigger_word": "âge",
+    "trigger_card_number": 8,
+    "title": "الدرس 2: قراءة البطاقة",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "في كل بطاقة فرنسية تظهر أداة التعريف",
+          "ملونة بحسب الجنس، فيعرف الجنس بنظرة،",
+          "بلا تخمين:",
+          "",
+          "\u200ele = مذكر (باللون الأزرق)\u200f\u200e         للاستماع 1",
+          "\u200e   le nom, le pays, le métier",
+          "",
+          "\u200ela = مؤنث (باللون الوردي)\u200f\u200e         للاستماع 2",
+          "\u200e   la nationalité, la famille",
+          "",
+          "الخطة: لا يحفظ الاسم وحده أبدا، بل مع",
+          "أداته الملونة، فاللون أسرع طريق إلى",
+          "معرفة le أو la بنظرة.",
+          "",
+          "وللفرنسية جنسان كالعربية، لكن جنس الكلمة قد",
+          "يخالف جنسها في العربية: le soleil مذكر والشمس",
+          "مؤنثة، وla lune مؤنثة والقمر مذكر."
+        ],
+        "pronunciation": "Leçon deux",
+        "pronunciation_mappings": {
+          "1": "le nom, le pays, le métier",
+          "2": "la nationalité, la famille"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "الحذف (élision): تحذف le/la حرف علتها قبل",
+          "حرف العلة أو h الصامتة فيقال: l'،",
+          "فتلتصق بالكلمة كما تلتصق «ال»:",
+          "\u200el'âge, l'adresse                  للاستماع 1",
+          "بدلا من le âge و la adresse.",
+          "",
+          "ويبقى لون الجنس مع الأداة بعد الحذف:",
+          "\u200fl'âge بالأزرق، وl'adresse بالوردي،",
+          "فيعرف الجنس بنظرة.",
+          "",
+          "وحين لا يحذف حرف العلة تبقى الأداة كاملة،",
+          "كما في le héros و la honte: فبعض الكلمات",
+          "التي تبدأ بـ h تمنع الحذف، وسيأتي بيان",
+          "ذلك لاحقا."
+        ],
+        "pronunciation_mappings": {
+          "1": "l'âge, l'adresse"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "003",
+    "trigger_word": "madame",
+    "trigger_card_number": 18,
+    "title": "الدرس 3: TU و VOUS",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "للفرنسية كلمتان بمعنى «أنت»:",
+          "",
+          "\u200eTU = بلا كلفة، مثل «أنت»\u200f\u200e          للاستماع 1",
+          "للأصدقاء والأهل والأطفال والأقران",
+          "\u200e   Tu es prêt ?\u200e = هل أنت مستعد؟",
+          "",
+          "\u200eVOUS = للتأدب وللجمع معا\u200f\u200e          للاستماع 2",
+          "للغرباء والأكبر سنا وفي العمل، ولأكثر من",
+          "شخص: فهي «أنتم» للجماعة، وللواحد احتراما.",
+          "\u200e   Vous êtes prêt ?\u200e = هل أنتم مستعدون؟",
+          "",
+          "وقد مرت vous في 's'il vous plaît'، أي",
+          "«من فضلك» المهذبة، وحرفيا: «إن كان ذلك",
+          "يرضيكم».",
+          "",
+          "وفعل VOUS هو فعل الجماعة نفسه، كما يبقى فعل",
+          "«أنتم» جمعا ولو خوطب بها واحد، فلا تصريف",
+          "جديدا يحفظ، بل استعمال جديد له."
+        ],
+        "pronunciation": "Leçon trois",
+        "pronunciation_mappings": {
+          "1": "tu es prêt",
+          "2": "vous êtes prêt, s'il vous plaît"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "عند الشك فالأسلم VOUS:",
+          "",
+          "\u200evous في البداية آمنة دائما\u200f\u200e        للاستماع 1",
+          "وقد يدعو المحاور إلى الانتقال إلى tu:",
+          "\u200e   On peut se tutoyer = لنرفع الكلفة",
+          "",
+          "\u200emadame, monsieur: للغرباء\u200f\u200e         للاستماع 2",
+          "\u200eBonjour, madame. / Bonjour, monsieur.",
+          "",
+          "الانتقال من tu إلى vous أثناء الحديث قد",
+          "يبدو جفاء، أما من vous إلى tu فهو الاتجاه",
+          "المعتاد، ويأتي عادة بدعوة من المحاور، لا",
+          "من تلقاء النفس."
+        ],
+        "pronunciation_mappings": {
+          "1": "on peut se tutoyer",
+          "2": "bonjour madame, bonjour monsieur"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "004",
+    "trigger_word": "être",
+    "trigger_card_number": 76,
+    "title": "الدرس 4: زمن المضارع",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "للأفعال الفرنسية 3 مجموعات:",
+          "\u200e-ER (parler)  -IR (finir)  -RE (vendre)",
+          "",
+          "مجموعة -ER أكبرها، ومنها أغلب الأفعال",
+          "الجديدة. تحذف -er وتضاف النهايات:",
+          "",
+          "\u200eje parle            = أنا أتكلم\u200f\u200e   للاستماع 1",
+          "\u200etu parles           = أنت تتكلم",
+          "\u200eil/elle parle       = هو يتكلم، هي تتكلم",
+          "\u200enous parlons        = نحن نتكلم",
+          "\u200evous parlez         = أنتم تتكلمون",
+          "\u200eils/elles parlent   = هم يتكلمون، هن يتكلمن",
+          "",
+          "والصيغ parle و parles و parlent تلفظ كلها",
+          "بصوت واحد، ولا يتغير الصوت إلا مع nous",
+          "و vous. وفي العربية يدل الفعل نفسه على فاعله",
+          "(أتكلم، نتكلم)، أما في الفرنسية فالضمير هو",
+          "الذي يبين الفاعل، ولذلك لا يستغنى عنه."
+        ],
+        "pronunciation": "Leçon quatre",
+        "pronunciation_mappings": {
+          "1": "je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "\u200e-IR: finir = ينهي\u200f\u200e                 للاستماع 1",
+          "",
+          "\u200eje finis            = أنا أنهي",
+          "\u200etu finis            = أنت تنهي",
+          "\u200eil/elle finit       = هو ينهي، هي تنهي",
+          "\u200enous finissons      = نحن ننهي",
+          "\u200evous finissez       = أنتم تنهون",
+          "\u200eils/elles finissent = هم ينهون، هن ينهين",
+          "",
+          "\u200e-RE: vendre = يبيع\u200f\u200e                للاستماع 2",
+          "",
+          "\u200eje vends            = أنا أبيع",
+          "\u200etu vends            = أنت تبيع",
+          "\u200eil/elle vend        = هو يبيع، هي تبيع",
+          "\u200enous vendons        = نحن نبيع",
+          "\u200eils/elles vendent   = هم يبيعون، هن يبعن"
+        ],
+        "pronunciation_mappings": {
+          "1": "je finis, tu finis, il finit, nous finissons, vous finissez, ils finissent",
+          "2": "je vends, tu vends, il vend, nous vendons, ils vendent"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "الأفعال الأربعة الكبرى: غير قياسية، وتستعمل",
+          "في كل جملة تقريبا، فحفظها جيدا ضروري:",
+          "",
+          "\u200eÊTRE = يكون\u200f\u200e                       للاستماع 1",
+          "\u200esuis, es, est, sommes, êtes, sont",
+          "ولا يحذف أبدا: je suis prêt = أنا مستعد",
+          "\u200eAVOIR = يملك، عنده\u200f\u200e                للاستماع 2",
+          "\u200eai, as, a, avons, avez, ont",
+          "",
+          "\u200eALLER = يذهب\u200f\u200e                      للاستماع 3",
+          "\u200evais, vas, va, allons, allez, vont",
+          "",
+          "\u200eFAIRE = يفعل، يصنع\u200f\u200e                للاستماع 4",
+          "\u200efais, fais, fait, faisons, faites, font",
+          "",
+          "وبها تبنى أزمنة أخرى لاحقا: المستقبل",
+          "القريب (futur proche) والماضي المركب",
+          "(passé composé)، فحفظها الآن يفيد كثيرا."
+        ],
+        "pronunciation_mappings": {
+          "1": "suis, es, est, sommes, êtes, sont",
+          "2": "ai, as, a, avons, avez, ont",
+          "3": "vais, vas, va, allons, allez, vont",
+          "4": "fais, fais, fait, faisons, faites, font"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "005",
+    "trigger_word": "essayer",
+    "trigger_card_number": 99,
+    "title": "الدرس 5: النفي",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
+        "content": [
+          "النفي NE...PAS يحيط بالفعل من جانبيه،",
+          "فهو شطيرة، لا كلمة واحدة مثل «لا»:",
+          "",
+          "\u200eJe ne parle pas.                   للاستماع 1",
+          "(لا أتكلم.)",
+          "",
+          "\u200eJe ne suis pas prêt.               للاستماع 2",
+          "(لست مستعدا.)",
+          "",
+          "وفي الكلام اليومي تحذف ne كثيرا، فيقال:",
+          "'Je parle pas'، لكن الجزأين يكتبان معا",
+          "دائما في مجموعة Core.",
+          "",
+          "ومع المصدر يتقدم الجزآن معا،",
+          "\u200e\u200fفيأتيان قبله مباشرة:\u200f\u200e               للاستماع 3",
+          "\u200eJe préfère ne pas essayer.",
+          "(أفضل ألا أحاول.)"
+        ],
+        "pronunciation": "Leçon cinq",
+        "pronunciation_mappings": {
+          "1": "je ne parle pas",
+          "2": "je ne suis pas prêt",
+          "3": "je préfère ne pas essayer"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 2,
+        "content": [
+          "وللنفي صيغ أخرى بالشطيرة نفسها، لكن",
+          "بكلمة ثانية مختلفة في موضع pas:",
+          "",
+          "\u200ene...plus = لم يعد، لا بعد الآن\u200f\u200e   للاستماع 1",
+          "\u200e   Je n'ai plus faim = لم أعد جائعا",
+          "",
+          "\u200ene...jamais = لا ... أبدا\u200f\u200e         للاستماع 2",
+          "\u200e   Je ne mange jamais de viande",
+          "(لا آكل اللحم أبدا)",
+          "\u200ene...rien = لا شيء\u200f\u200e                للاستماع 3",
+          "\u200e   Je ne vois rien = لا أرى شيئا",
+          "",
+          "\u200ene...personne = لا أحد\u200f\u200e            للاستماع 4",
+          "\u200e   Je ne connais personne ici",
+          "(لا أعرف أحدا هنا)",
+          "",
+          "مع ملاحظة أن ne تحذف حرف علتها قبل حرف",
+          "العلة أو h الصامتة فيقال: n'ai, n'aime, n'est."
+        ],
+        "pronunciation_mappings": {
+          "1": "je n'ai plus faim",
+          "2": "je ne mange jamais de viande",
+          "3": "je ne vois rien",
+          "4": "je ne connais personne ici"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "006",
+    "trigger_word": "heure",
+    "trigger_card_number": 151,
+    "title": "الدرس 6: IL Y A وقول الساعة",
+    "header_color": "green",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 3,
+        "content": [
+          "عبارة IL Y A معناها «هناك» أو «يوجد»،",
+          "وهي ثابتة لا تتغير للمفرد أو الجمع،",
+          "مثل «هناك» في العربية:",
+          "",
+          "\u200eIl y a un problème.               للاستماع 1",
+          "(هناك مشكلة.)",
+          "\u200eIl y a des livres.                للاستماع 2",
+          "(هناك كتب.)",
+          "",
+          "السؤال: يكفي رفع نغمة الصوت في آخرها،",
+          "أو إضافة est-ce que في أولها:",
+          "\u200eIl y a un problème ?\u200e              للاستماع 3",
+          "(هل هناك مشكلة؟)",
+          "",
+          "النفي: الشطيرة المعتادة ne...pas تحيط",
+          "بالفعل 'a':",
+          "\u200eIl n'y a pas de problème.         للاستماع 4",
+          "(ليست هناك مشكلة.)"
+        ],
+        "pronunciation": "Leçon six",
+        "pronunciation_mappings": {
+          "1": "il y a un problème",
+          "2": "il y a des livres",
+          "3": "il y a un problème ?",
+          "4": "il n'y a pas de problème"
+        }
+      },
+      {
+        "page": 2,
+        "total_pages": 3,
+        "content": [
+          "لقول الساعة: il est + heure(s)",
+          "",
+          "\u200eIl est une heure.                 للاستماع 1",
+          "(الساعة الواحدة.)",
+          "\u200eIl est deux heures.               للاستماع 2",
+          "(الساعة الثانية.)",
+          "",
+          "كلمة 'une heure' مفردة فلا تأخذ s، ومن",
+          "\u200fdeux heures فصاعدا تأخذ heure حرف s.",
+          "",
+          "\u200eIl est midi. / Il est minuit.     للاستماع 3",
+          "(الساعة 12 ظهرا. / منتصف الليل.)",
+          "",
+          "\u200eIl est deux heures dix.           للاستماع 4",
+          "(الثانية وعشر دقائق، 2:10)",
+          "\u200eIl est trois heures moins dix.    للاستماع 5",
+          "(الثالثة إلا عشر دقائق، 2:50)",
+          "فكلمة moins هنا مثل «إلا» تماما."
+        ],
+        "pronunciation_mappings": {
+          "1": "il est une heure",
+          "2": "il est deux heures",
+          "3": "il est midi, il est minuit",
+          "4": "il est deux heures dix",
+          "5": "il est trois heures moins dix"
+        }
+      },
+      {
+        "page": 3,
+        "total_pages": 3,
+        "content": [
+          "الوصل (liaison): حرف صامت أخير لا يلفظ،",
+          "لكنه يستيقظ أمام حرف علة في الكلمة التالية:",
+          "",
+          "\u200edeux_heures      [døzœʁ]          للاستماع 1",
+          "\u200etrois_heures     [tʁwazœʁ]        للاستماع 2",
+          "\u200esix_heures       [sizœʁ]          للاستماع 3",
+          "\u200edix_heures       [dizœʁ]          للاستماع 4",
+          "",
+          "وكذلك خارج الأعداد:",
+          "",
+          "\u200eun_an            [œ̃nɑ̃]            للاستماع 5",
+          "\u200eles_amis         [lezami]         للاستماع 6",
+          "\u200etrès_utile       [tʁɛzytil]       للاستماع 8",
+          "",
+          "وفي العربية شيء قريب: حركة آخر الكلمة",
+          "تلفظ عند الوصل وتسقط عند الوقف.",
+          "ويعود الدرس 8 إلى الوصل بالتفصيل."
+        ],
+        "pronunciation_mappings": {
+          "1": "deux heures",
+          "2": "trois heures",
+          "3": "six heures",
+          "4": "dix heures",
+          "5": "un an",
+          "6": "les amis",
+          "8": "très utile"
+        }
+      }
+    ]
+  }
+]

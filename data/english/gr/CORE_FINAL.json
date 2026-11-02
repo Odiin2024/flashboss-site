@@ -5,7 +5,7 @@
   "offset": 0,
   "clusters": [
     {
-      "cluster_id": "T1-C1", "tier": 1, "slug": "cluster1_1_body_nature", "name": "Body & Nature", "name_de": "Körper & Natur", "name_es": "Cuerpo y naturaleza", "name_ja": "体と自然", "name_zh": "人体与自然", "name_ru": "Тело и природа",
+      "cluster_id": "T1-C1", "tier": 1, "slug": "cluster1_1_body_nature", "name": "Body & nature", "name_de": "Körper & Natur", "name_es": "Cuerpo y naturaleza", "name_ja": "体と自然", "name_zh": "人体与自然", "name_ru": "Тело и природа",
       "cards": [
         {"n": 1, "TargetWord": "breakfast", "definition": "the first meal of the day, eaten in the morning", "pos": "noun", "syn": "morning meal, first meal", "TriggerLesson": "000"},
         {"n": 2, "TargetWord": "sunlight", "definition": "the bright rays that reach us straight from our star", "pos": "noun", "syn": "daylight, sunshine", "ant": "darkness"},
@@ -55,21 +55,21 @@
       ]
     },
     {
-      "cluster_id": "T1-C3", "tier": 1, "slug": "cluster1_3_home_work", "name": "Home & Work", "name_de": "Haus & Arbeit", "name_es": "Casa y trabajo", "name_ja": "家と仕事", "name_zh": "家庭与工作", "name_ru": "Дом и работа",
+      "cluster_id": "T1-C3", "tier": 1, "slug": "cluster1_3_home_work", "name": "Home & work", "name_de": "Haus & Arbeit", "name_es": "Casa y trabajo", "name_ja": "家と仕事", "name_zh": "家庭与工作", "name_ru": "Дом и работа",
       "cards": [
         {"n": 41, "TargetWord": "handbook", "definition": "a concise reference book giving useful information on a subject", "pos": "noun", "syn": "guide, primer", "TriggerLesson": "002"},
         {"n": 42, "TargetWord": "farmland", "definition": "land used for farming", "pos": "noun", "syn": "fields, acreage, tillage"},
         {"n": 43, "TargetWord": "workshop", "definition": "a room or building where things are made or repaired; also, a training session", "pos": "noun", "syn": "studio, atelier"},
         {"n": 44, "TargetWord": "household", "definition": "all the people living together under one roof, or matters of the home", "pos": "noun", "syn": "family, hearth"},
         {"n": 45, "TargetWord": "doorstep", "definition": "the step or area directly outside a door", "pos": "noun", "syn": "entrance"},
-        {"n": 46, "TargetWord": "fireside", "definition": "the area around a fireplace, especially as a place of comfort", "pos": "noun", "syn": "hearth, chimney corner"},
+        {"n": 46, "TargetWord": "fireside", "definition": "the area around a fireplace, especially as a place of comfort", "pos": "noun", "syn": "hearth, chimney corner, hearthstone"},
         {"n": 47, "TargetWord": "bookshelf", "definition": "a flat board fixed to a wall for holding volumes to read", "pos": "noun", "syn": "bookcase, shelving"},
         {"n": 48, "TargetWord": "clockwork", "definition": "a mechanism of springs and gears, or perfect regularity", "pos": "noun", "syn": "gears, movement"},
         {"n": 49, "TargetWord": "homework", "definition": "school work assigned to be done at home", "pos": "noun", "syn": "schoolwork"},
         {"n": 50, "TargetWord": "hearthstone", "definition": "the flat slab forming the floor of a fireplace, or home and family life", "pos": "noun", "syn": "fireside, hearth slab"},
         {"n": 51, "TargetWord": "doorknob", "definition": "the rounded handle used to open a door", "pos": "noun", "syn": "handle, latch"},
         {"n": 52, "TargetWord": "doorbell", "definition": "a bell or buzzer at the entrance of a building", "pos": "noun", "syn": "buzzer, chime"},
-        {"n": 53, "TargetWord": "rooftop", "definition": "the outer surface of the roof of a building", "pos": "noun", "syn": "roof terrace, housetop"},
+        {"n": 53, "TargetWord": "rooftop", "definition": "the outer surface of the roof of a building", "pos": "noun", "syn": "housetop"},
         {"n": 54, "TargetWord": "floorboard", "definition": "one of the long wooden planks that make up the surface you walk on", "pos": "noun", "syn": "plank, deck board"},
         {"n": 55, "TargetWord": "staircase", "definition": "a flight of steps with the structure that surrounds it", "pos": "noun", "syn": "stairway, flight"},
         {"n": 56, "TargetWord": "hallway", "definition": "a corridor or passage inside a building", "pos": "noun", "syn": "passage"},
@@ -82,33 +82,33 @@
     {
       "cluster_id": "T1-C4", "tier": 1, "slug": "cluster1_4_prefixes_fore", "name": "Prefix: fore-", "name_de": "Vorsilbe: fore-", "name_es": "Prefijo: fore-", "name_ja": "接頭辞: fore-", "name_zh": "前缀：fore-", "name_ru": "Приставка: fore-",
       "cards": [
-        {"n": 61, "TargetWord": "forecast", "definition": "to predict what will happen, especially regarding weather or trends", "pos": "verb/noun", "syn": "outlook, projection", "TriggerLesson": "003"},
-        {"n": 62, "TargetWord": "foresee", "definition": "to know or predict that something will happen in the future", "pos": "verb", "syn": "foretell", "ant": "overlook"},
+        {"n": 61, "TargetWord": "forecast", "definition": "a prediction of what will happen, especially of the weather; to make such a prediction", "pos": "verb/noun", "syn": "outlook, projection, foresee", "TriggerLesson": "003"},
+        {"n": 62, "TargetWord": "foresee", "definition": "to know or predict that something will happen in the future", "pos": "verb", "syn": "foretell, forecast", "ant": "overlook"},
         {"n": 63, "TargetWord": "forewarn", "definition": "to warn someone about something before it happens", "pos": "verb", "syn": "alert"},
-        {"n": 64, "TargetWord": "forebode", "definition": "to act as a warning that something bad will happen", "pos": "verb", "syn": "presage, augur", "ant": "reassure"},
+        {"n": 64, "TargetWord": "forebode", "definition": "to act as a warning that something bad will happen", "pos": "verb", "syn": "presage, augur, foreshadow", "ant": "reassure"},
         {"n": 65, "TargetWord": "forefather", "definition": "a member of the past generations of one's family or people", "pos": "noun", "syn": "forebear", "ant": "descendant"},
         {"n": 66, "TargetWord": "forefront", "definition": "the leading or most important position", "pos": "noun", "syn": "lead, cutting edge", "ant": "rear"},
         {"n": 67, "TargetWord": "foreground", "definition": "the part of a scene nearest to the viewer", "pos": "noun", "syn": "front, near field", "ant": "background"},
-        {"n": 68, "TargetWord": "foresight", "definition": "the ability to predict and plan for future events", "pos": "noun", "syn": "prudence", "ant": "hindsight"},
+        {"n": 68, "TargetWord": "foresight", "definition": "the ability to predict and plan for future events", "pos": "noun", "syn": "prudence, forethought", "ant": "hindsight"},
         {"n": 69, "TargetWord": "forerunner", "definition": "a person or thing that comes before and indicates what will follow", "pos": "noun", "syn": "herald", "ant": "successor"},
-        {"n": 70, "TargetWord": "foretell", "definition": "to tell of something before it happens; to prophesy", "pos": "verb", "syn": "prophesy"},
+        {"n": 70, "TargetWord": "foretell", "definition": "to tell of something before it happens; to prophesy", "pos": "verb", "syn": "prophesy, foresee, forecast"},
         {"n": 71, "TargetWord": "forearm", "definition": "the part of the arm between the elbow and the wrist", "pos": "noun", "syn": "lower arm"},
         {"n": 72, "TargetWord": "forename", "definition": "a person's first name, as distinct from their surname", "pos": "noun", "syn": "first name, given name", "ant": "surname"},
-        {"n": 73, "TargetWord": "foreshadow", "definition": "to be a warning or sign of something that will happen later", "pos": "verb", "syn": "prefigure, hint at"},
+        {"n": 73, "TargetWord": "foreshadow", "definition": "to be a warning or sign of something that will happen later", "pos": "verb", "syn": "prefigure, hint at, forebode"},
         {"n": 74, "TargetWord": "forestall", "definition": "to prevent something from happening by acting first", "pos": "verb", "syn": "head off", "ant": "allow"},
         {"n": 75, "TargetWord": "forego", "definition": "to go without something; to give something up willingly", "pos": "verb", "syn": "do without, waive", "ant": "indulge"},
         {"n": 76, "TargetWord": "foregone", "definition": "already decided or certain before it happens", "pos": "adj", "syn": "inevitable, settled"},
         {"n": 77, "TargetWord": "foremost", "definition": "most important or prominent; first in position", "pos": "adj", "syn": "leading", "ant": "hindmost"},
-        {"n": 78, "TargetWord": "forethought", "definition": "careful consideration of what will be needed in the future", "pos": "noun", "syn": "prudence", "ant": "impulse"},
+        {"n": 78, "TargetWord": "forethought", "definition": "careful consideration of what will be needed in the future", "pos": "noun", "syn": "prudence, foresight", "ant": "impulse"},
         {"n": 79, "TargetWord": "foreword", "definition": "an introduction to a book, typically by someone other than the author", "pos": "noun", "syn": "introduction", "ant": "afterword"}
       ]
     },
     {
-      "cluster_id": "T1-C5", "tier": 1, "slug": "cluster1_5_time_place", "name": "Time & Place", "name_de": "Zeit & Ort", "name_es": "Tiempo y lugar", "name_ja": "時と場所", "name_zh": "时间与地点", "name_ru": "Время и место",
+      "cluster_id": "T1-C5", "tier": 1, "slug": "cluster1_5_time_place", "name": "Time & place", "name_de": "Zeit & Ort", "name_es": "Tiempo y lugar", "name_ja": "時と場所", "name_zh": "时间与地点", "name_ru": "Время и место",
       "cards": [
         {"n": 80, "TargetWord": "daytime", "definition": "the time of day between sunrise and sunset", "pos": "noun", "syn": "day, daylight hours", "ant": "nighttime", "TriggerLesson": "004"},
-        {"n": 81, "TargetWord": "nightfall", "definition": "the time in the evening when it becomes dark", "pos": "noun", "syn": "sundown", "ant": "daybreak"},
-        {"n": 82, "TargetWord": "meanwhile", "definition": "during the time between two events", "pos": "adv", "syn": "in the interim, all the while"},
+        {"n": 81, "TargetWord": "nightfall", "definition": "the time in the evening when it becomes dark", "pos": "noun", "syn": "sundown, sunset", "ant": "daybreak"},
+        {"n": 82, "TargetWord": "meanwhile", "definition": "at the same time; also, in the time between two events", "pos": "adv", "syn": "in the interim, all the while"},
         {"n": 83, "TargetWord": "somewhere", "definition": "in or to a place that is not known or not specified", "pos": "adv", "syn": "someplace", "ant": "nowhere"},
         {"n": 84, "TargetWord": "everywhere", "definition": "in or to all places", "pos": "adv", "syn": "all over", "ant": "nowhere"},
         {"n": 85, "TargetWord": "nowhere", "definition": "not in or to any place", "pos": "adv", "syn": "no place", "ant": "everywhere"},
@@ -120,7 +120,7 @@
         {"n": 91, "TargetWord": "sunrise", "definition": "the time when the sun appears above the horizon in the morning", "pos": "noun", "syn": "daybreak", "ant": "sunset"},
         {"n": 92, "TargetWord": "midday", "definition": "the middle of the day; twelve o'clock", "pos": "noun", "syn": "twelve o'clock", "ant": "midnight"},
         {"n": 93, "TargetWord": "midnight", "definition": "twelve o'clock, the center of the dark hours", "pos": "noun", "syn": "dead of night", "ant": "midday", "definition_gb": "twelve o'clock, the centre of the dark hours"},
-        {"n": 94, "TargetWord": "sunset", "definition": "the time when the sun disappears below the horizon in the evening", "pos": "noun", "syn": "sundown, evening", "ant": "sunrise"},
+        {"n": 94, "TargetWord": "sunset", "definition": "the time when the sun disappears below the horizon in the evening", "pos": "noun", "syn": "sundown, evening, nightfall", "ant": "sunrise"},
         {"n": 95, "TargetWord": "weekday", "definition": "any day of the week except Saturday and Sunday", "pos": "noun", "syn": "workday", "ant": "weekend"},
         {"n": 96, "TargetWord": "hilltop", "definition": "the flat area at the top of a hill", "pos": "noun", "syn": "crest, brow"},
         {"n": 97, "TargetWord": "lakeside", "definition": "the land along the edge of a lake", "pos": "noun", "syn": "shore, waterfront"},
@@ -131,21 +131,21 @@
     {
       "cluster_id": "T1-C6", "tier": 1, "slug": "cluster1_6_prefixes_out", "name": "Prefix: out-", "name_de": "Vorsilbe: out-", "name_es": "Prefijo: out-", "name_ja": "接頭辞: out-", "name_zh": "前缀：out-", "name_ru": "Приставка: out-",
       "cards": [
-        {"n": 100, "TargetWord": "outdo", "definition": "to do better than someone else", "pos": "verb", "syn": "exceed, better", "ant": "fall short", "TriggerLesson": "005"},
-        {"n": 101, "TargetWord": "outlast", "definition": "to last longer than something else", "pos": "verb", "syn": "survive", "ant": "succumb"},
+        {"n": 100, "TargetWord": "outdo", "definition": "to do better than someone else", "pos": "verb", "syn": "exceed, better, outstrip", "ant": "fall short", "TriggerLesson": "005"},
+        {"n": 101, "TargetWord": "outlast", "definition": "to last longer than something else", "pos": "verb", "syn": "survive, outlive", "ant": "succumb"},
         {"n": 102, "TargetWord": "outweigh", "definition": "to be greater in importance or significance", "pos": "verb", "syn": "exceed, prevail over", "ant": "count for less"},
         {"n": 103, "TargetWord": "outstanding", "definition": "exceptionally good; also, not yet paid or resolved", "pos": "adj", "syn": "excellent, remarkable"},
         {"n": 104, "TargetWord": "outcast", "definition": "a person who has been rejected by their society or group", "pos": "noun", "syn": "pariah", "ant": "insider"},
         {"n": 105, "TargetWord": "outright", "definition": "complete and total; also, openly and directly", "pos": "adj/adv", "syn": "total, flat", "ant": "partial"},
         {"n": 106, "TargetWord": "outskirts", "definition": "the outer parts of a town or city", "pos": "noun", "syn": "edge, fringes"},
         {"n": 107, "TargetWord": "outgrow", "definition": "to grow too large for something; to leave behind through maturing", "pos": "verb", "syn": "grow out of", "ant": "cling to"},
-        {"n": 108, "TargetWord": "outwit", "definition": "to defeat someone by being cleverer than them", "pos": "verb", "syn": "outsmart, dupe"},
+        {"n": 108, "TargetWord": "outwit", "definition": "to defeat someone by being cleverer than them", "pos": "verb", "syn": "outsmart, dupe, outfox"},
         {"n": 109, "TargetWord": "outbid", "definition": "to offer more money than someone else at an auction", "pos": "verb", "syn": "top a bid", "ant": "underbid"},
-        {"n": 110, "TargetWord": "outshine", "definition": "to be much better or more impressive than someone or something", "pos": "verb", "syn": "put in the shade"},
-        {"n": 111, "TargetWord": "outstrip", "definition": "to move faster or achieve more than someone or something", "pos": "verb", "syn": "exceed, leave behind"},
-        {"n": 112, "TargetWord": "outpace", "definition": "to go faster than; to develop more quickly than", "pos": "verb", "syn": "overtake, leave behind"},
+        {"n": 110, "TargetWord": "outshine", "definition": "to be much better or more impressive than someone or something", "pos": "verb", "syn": "put in the shade, outdo, outstrip"},
+        {"n": 111, "TargetWord": "outstrip", "definition": "to move faster or achieve more than someone or something", "pos": "verb", "syn": "exceed, leave behind, outdo, outpace, outrun"},
+        {"n": 112, "TargetWord": "outpace", "definition": "to go faster than; to develop more quickly than", "pos": "verb", "syn": "overtake, leave behind, outrun, outstrip"},
         {"n": 113, "TargetWord": "outlive", "definition": "to live longer than another person or thing", "pos": "verb", "syn": "outlast", "ant": "predecease"},
-        {"n": 114, "TargetWord": "outrun", "definition": "to run faster or farther than someone", "pos": "verb", "syn": "outpace, leave behind, outdistance"},
+        {"n": 114, "TargetWord": "outrun", "definition": "to run faster or farther than someone", "pos": "verb", "syn": "outpace, leave behind, outdistance, outstrip"},
         {"n": 115, "TargetWord": "outfox", "definition": "to defeat someone by being more cunning", "pos": "verb", "syn": "outwit, outsmart"},
         {"n": 116, "TargetWord": "outplay", "definition": "to play better than an opponent", "pos": "verb", "syn": "outperform", "ant": "lose to"},
         {"n": 117, "TargetWord": "outrank", "definition": "to hold a higher rank or position than someone", "pos": "verb", "syn": "take precedence over", "ant": "serve under"},
@@ -159,7 +159,7 @@
       ]
     },
     {
-      "cluster_id": "T1-C7", "tier": 1, "slug": "cluster1_7_people_roles", "name": "People & Roles", "name_de": "Menschen & Rollen", "name_es": "Personas y roles", "name_ja": "人と役割", "name_zh": "人物与角色", "name_ru": "Люди и роли",
+      "cluster_id": "T1-C7", "tier": 1, "slug": "cluster1_7_people_roles", "name": "People & roles", "name_de": "Menschen & Rollen", "name_es": "Personas y roles", "name_ja": "人と役割", "name_zh": "人物与角色", "name_ru": "Люди и роли",
       "cards": [
         {"n": 125, "TargetWord": "kinsman", "definition": "a male relative; a person related by blood", "pos": "noun", "syn": "kin, blood relation", "TriggerLesson": "006"},
         {"n": 126, "TargetWord": "spokesman", "definition": "a person who speaks on behalf of a group", "pos": "noun", "syn": "voice, mouthpiece"},
@@ -205,7 +205,7 @@
         {"n": 161, "TargetWord": "overtime", "definition": "time worked beyond normal hours; extra time in sport", "pos": "noun", "syn": "extra hours"},
         {"n": 162, "TargetWord": "overview", "definition": "a general summary or review of a subject", "pos": "noun", "syn": "survey, outline"},
         {"n": 163, "TargetWord": "overwork", "definition": "to work too hard or too long", "pos": "verb", "syn": "exhaust", "ant": "rest"},
-        {"n": 164, "TargetWord": "overrule", "definition": "to reject a decision or argument using greater authority", "pos": "verb", "syn": "quash", "ant": "uphold"}
+        {"n": 164, "TargetWord": "overrule", "definition": "to reject a decision or argument using greater authority", "pos": "verb", "syn": "quash, override", "ant": "uphold"}
       ]
     },
     {
@@ -226,8 +226,8 @@
         {"n": 177, "TargetWord": "underfed", "definition": "not given enough food; insufficiently nourished", "pos": "adj", "syn": "starved", "ant": "overfed"},
         {"n": 178, "TargetWord": "underbelly", "definition": "the soft lower side of an animal, or a hidden vulnerable part", "pos": "noun", "syn": "soft spot, weak point"},
         {"n": 179, "TargetWord": "undergird", "definition": "to strengthen or support from below", "pos": "verb", "syn": "reinforce, prop up"},
-        {"n": 180, "TargetWord": "underline", "definition": "to draw a line beneath a word; to emphasize something", "pos": "verb", "syn": "stress", "ant": "downplay", "definition_gb": "to draw a line beneath a word; to emphasise something"},
-        {"n": 181, "TargetWord": "underscore", "definition": "to emphasize or highlight something, or to draw a line beneath it", "pos": "verb", "syn": "highlight", "definition_gb": "to emphasise or highlight something, or to draw a line beneath it"},
+        {"n": 180, "TargetWord": "underline", "definition": "to draw a line beneath a word; to emphasize something", "pos": "verb", "syn": "stress, underscore", "ant": "downplay", "definition_gb": "to draw a line beneath a word; to emphasise something"},
+        {"n": 181, "TargetWord": "underscore", "definition": "to emphasize or highlight something, or to draw a line beneath it", "pos": "verb", "syn": "highlight, underline", "definition_gb": "to emphasise or highlight something, or to draw a line beneath it"},
         {"n": 182, "TargetWord": "underside", "definition": "the bottom or lower surface of something", "pos": "noun", "syn": "bottom, base", "ant": "top"},
         {"n": 183, "TargetWord": "understudy", "definition": "an actor who learns a role to be able to replace the main performer", "pos": "noun", "syn": "stand-in"},
         {"n": 184, "TargetWord": "undertow", "definition": "a strong current below the surface of the water, pulling away from shore", "pos": "noun", "syn": "riptide"}
@@ -236,8 +236,8 @@
     {
       "cluster_id": "T1-C10", "tier": 1, "slug": "cluster1_10_prefixes_mis", "name": "Prefix: mis-", "name_de": "Vorsilbe: mis-", "name_es": "Prefijo: mis-", "name_ja": "接頭辞: mis-", "name_zh": "前缀：mis-", "name_ru": "Приставка: mis-",
       "cards": [
-        {"n": 185, "TargetWord": "mistake", "definition": "something done incorrectly; an error in action or judgment", "pos": "noun/verb", "syn": "blunder, slip", "TriggerLesson": "009", "definition_gb": "something done incorrectly; an error in action or judgement"},
-        {"n": 186, "TargetWord": "misjudge", "definition": "to form a wrong opinion about someone or something", "pos": "verb", "syn": "misread"},
+        {"n": 185, "TargetWord": "mistake", "definition": "something done incorrectly; an error in action or judgment", "pos": "noun/verb", "syn": "blunder, slip, misstep", "TriggerLesson": "009", "definition_gb": "something done incorrectly; an error in action or judgement"},
+        {"n": 186, "TargetWord": "misjudge", "definition": "to estimate wrongly; to form a wrong opinion of someone or something", "pos": "verb", "syn": "misread"},
         {"n": 187, "TargetWord": "misgiving", "definition": "a feeling of doubt or worry about a future event", "pos": "noun", "syn": "doubt, qualm", "ant": "confidence"},
         {"n": 188, "TargetWord": "misbehave", "definition": "to act badly or in a way that breaks the rules", "pos": "verb", "syn": "act up, play up", "ant": "behave"},
         {"n": 189, "TargetWord": "misunderstand", "definition": "to take the wrong sense from what someone says or does", "pos": "verb", "syn": "misread", "ant": "grasp"},
@@ -249,9 +249,9 @@
         {"n": 195, "TargetWord": "mishap", "definition": "an unlucky accident or piece of bad luck", "pos": "noun", "syn": "mischance"},
         {"n": 196, "TargetWord": "misguide", "definition": "to lead someone in the wrong direction or give them wrong advice", "pos": "verb", "syn": "mislead", "ant": "direct"},
         {"n": 197, "TargetWord": "misplace", "definition": "to put an item where it does not belong and lose track of it", "pos": "verb", "syn": "mislay, lose", "ant": "find"},
-        {"n": 198, "TargetWord": "misread", "definition": "to read or interpret something incorrectly", "pos": "verb", "syn": "misconstrue"},
+        {"n": 198, "TargetWord": "misread", "definition": "to read or interpret something incorrectly", "pos": "verb", "syn": "misconstrue, misjudge, misunderstand"},
         {"n": 199, "TargetWord": "misrule", "definition": "unfair or incompetent government or management", "pos": "noun", "syn": "mismanagement"},
-        {"n": 200, "TargetWord": "misstep", "definition": "a wrong or clumsy step; also, a mistake in judgment", "pos": "noun", "syn": "stumble, blunder", "definition_gb": "a wrong or clumsy step; also, a mistake in judgement"},
+        {"n": 200, "TargetWord": "misstep", "definition": "a wrong or clumsy step; also, a mistake in judgment", "pos": "noun", "syn": "stumble, blunder, mistake", "definition_gb": "a wrong or clumsy step; also, a mistake in judgement"},
         {"n": 201, "TargetWord": "miscount", "definition": "to reckon the total of things wrongly", "pos": "verb", "syn": "count wrong"},
         {"n": 202, "TargetWord": "mishear", "definition": "to hear something incorrectly", "pos": "verb", "syn": "catch wrong", "ant": "hear right"},
         {"n": 203, "TargetWord": "misname", "definition": "to give something the wrong name", "pos": "verb", "syn": "mislabel"},
@@ -259,7 +259,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C1", "tier": 2, "slug": "cluster2_1_compounds_opaque_meaning", "name": "Opaque Compounds", "name_de": "Undurchsichtige Komposita", "name_es": "Compuestos opacos", "name_ja": "不透明な複合語", "name_zh": "隐性复合词", "name_ru": "Непрозрачные композиты",
+      "cluster_id": "T2-C1", "tier": 2, "slug": "cluster2_1_compounds_opaque_meaning", "name": "Opaque compounds", "name_de": "Undurchsichtige Komposita", "name_es": "Compuestos opacos", "name_ja": "不透明な複合語", "name_zh": "隐性复合词", "name_ru": "Непрозрачные композиты",
       "cards": [
         {"n": 205, "TargetWord": "onset", "definition": "the beginning of something, especially something unpleasant", "pos": "noun", "syn": "start, outbreak", "ant": "end", "TriggerLesson": "010"},
         {"n": 206, "TargetWord": "upset", "definition": "to make someone unhappy or worried; an unexpected result", "pos": "verb/noun", "syn": "distress, overturn", "ant": "calm"},
@@ -284,7 +284,7 @@
         {"n": 225, "TargetWord": "patchwork", "definition": "something made of many different pieces joined together", "pos": "noun", "syn": "medley, jumble"},
         {"n": 226, "TargetWord": "landmark", "definition": "a recognizable feature of a landscape; also, an important event", "pos": "noun", "syn": "monument, milestone", "definition_gb": "a recognisable feature of a landscape; also, an important event"},
         {"n": 227, "TargetWord": "earmark", "definition": "to set aside money or resources for a particular purpose", "pos": "verb/noun", "syn": "reserve, allot"},
-        {"n": 228, "TargetWord": "trademark", "definition": "a symbol or name legally registered to represent a product or company", "pos": "noun", "syn": "brand, insignia"},
+        {"n": 228, "TargetWord": "trademark", "definition": "a name or symbol legally registered to a company; also, a feature a person is known for", "pos": "noun", "syn": "brand, insignia"},
         {"n": 229, "TargetWord": "footstep", "definition": "the sound or mark made by a foot when walking", "pos": "noun", "syn": "pace, stride"}
       ]
     },
@@ -293,27 +293,27 @@
       "cards": [
         {"n": 230, "TargetWord": "undo", "definition": "to reverse the effects of something; to unfasten", "pos": "verb", "syn": "annul, unfasten", "ant": "do", "TriggerLesson": "011"},
         {"n": 231, "TargetWord": "uncover", "definition": "to remove a covering from; to discover something hidden", "pos": "verb", "syn": "expose, unearth", "ant": "conceal"},
-        {"n": 232, "TargetWord": "unfold", "definition": "to open out from a folded state; to develop or become known", "pos": "verb", "syn": "open out, emerge", "ant": "fold"},
+        {"n": 232, "TargetWord": "unfold", "definition": "to open out from a folded state; to develop or become known", "pos": "verb", "syn": "open out, emerge, unfurl", "ant": "fold"},
         {"n": 233, "TargetWord": "unravel", "definition": "to untangle threads; to investigate and solve something complex", "pos": "verb", "syn": "unpick, decode", "ant": "tangle"},
-        {"n": 234, "TargetWord": "unearth", "definition": "to dig something up from the ground; to discover something hidden", "pos": "verb", "syn": "excavate, dig up"},
+        {"n": 234, "TargetWord": "unearth", "definition": "to dig something up from the ground; to discover something hidden", "pos": "verb", "syn": "excavate, dig up, uncover"},
         {"n": 235, "TargetWord": "unleash", "definition": "to release from a restraint; to let something powerful loose", "pos": "verb", "syn": "loose, set free", "ant": "restrain"},
         {"n": 236, "TargetWord": "unwind", "definition": "to undo something wound or twisted; to relax after stress", "pos": "verb", "syn": "unroll, slacken", "ant": "tense up"},
         {"n": 237, "TargetWord": "untold", "definition": "too much or too many to be counted; not yet told", "pos": "adj", "syn": "countless, vast"},
         {"n": 238, "TargetWord": "unrest", "definition": "a state of disturbance or dissatisfaction, often leading to protest", "pos": "noun", "syn": "agitation, ferment", "ant": "peace"},
         {"n": 239, "TargetWord": "unsightly", "definition": "unpleasant to look at; ugly", "pos": "adj", "syn": "ugly, hideous", "ant": "attractive"},
-        {"n": 240, "TargetWord": "unruly", "definition": "difficult to control or discipline", "pos": "adj", "syn": "wild, disobedient", "ant": "docile"},
+        {"n": 240, "TargetWord": "unruly", "definition": "difficult to control or discipline", "pos": "adj", "syn": "wild, disobedient, unbridled", "ant": "docile"},
         {"n": 241, "TargetWord": "unwieldy", "definition": "difficult to move or manage because of its size or weight", "pos": "adj", "syn": "bulky, awkward"},
         {"n": 242, "TargetWord": "unkempt", "definition": "not properly looked after; untidy in appearance", "pos": "adj", "syn": "disheveled, scruffy", "ant": "neat"},
         {"n": 243, "TargetWord": "uncanny", "definition": "strange or mysterious in an unsettling way", "pos": "adj", "syn": "strange, eerie"},
         {"n": 244, "TargetWord": "uncouth", "definition": "lacking good manners or refinement", "pos": "adj", "syn": "crude, boorish", "ant": "refined"},
-        {"n": 245, "TargetWord": "unfurl", "definition": "to spread out from a rolled or folded state", "pos": "verb", "syn": "spread, open out", "ant": "furl"},
+        {"n": 245, "TargetWord": "unfurl", "definition": "to spread out from a rolled or folded state", "pos": "verb", "syn": "spread, open out, unfold", "ant": "furl"},
         {"n": 246, "TargetWord": "unhinge", "definition": "to make someone mentally unbalanced; to remove from hinges", "pos": "verb", "syn": "unsettle, derange", "ant": "steady"},
         {"n": 247, "TargetWord": "unsung", "definition": "not celebrated or praised despite deserving it", "pos": "adj", "syn": "overlooked, unrecognized", "ant": "celebrated"},
         {"n": 248, "TargetWord": "unwitting", "definition": "not done on purpose; not aware of the full facts", "pos": "adj", "syn": "accidental, unaware", "ant": "deliberate"},
         {"n": 249, "TargetWord": "undone", "definition": "not finished; ruined or destroyed", "pos": "adj", "syn": "unfinished, wrecked", "ant": "completed"},
         {"n": 250, "TargetWord": "untoward", "definition": "unexpected and inappropriate or inconvenient", "pos": "adj", "syn": "unfortunate, improper"},
         {"n": 251, "TargetWord": "unscathed", "definition": "without suffering any injury or damage", "pos": "adj", "syn": "unhurt, whole", "ant": "damaged"},
-        {"n": 252, "TargetWord": "unbridled", "definition": "not controlled or restrained", "pos": "adj", "syn": "rampant, wild", "ant": "controlled"},
+        {"n": 252, "TargetWord": "unbridled", "definition": "not controlled or restrained", "pos": "adj", "syn": "rampant, wild, unruly", "ant": "controlled"},
         {"n": 253, "TargetWord": "unfeigned", "definition": "genuine and sincere; not pretended", "pos": "adj", "syn": "sincere, heartfelt", "ant": "pretended"},
         {"n": 254, "TargetWord": "withstand", "definition": "to remain undamaged or unaffected by something; to resist", "pos": "verb", "syn": "endure, bear", "ant": "succumb"},
         {"n": 255, "TargetWord": "withdraw", "definition": "to remove or take back; to leave or pull away", "pos": "verb", "syn": "retract, remove", "ant": "advance"},
@@ -327,7 +327,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C3", "tier": 2, "slug": "cluster2_3_compounds_opaque_body", "name": "Compounds: Body", "name_de": "Komposita: Körper", "name_es": "Compuestos: cuerpo", "name_ja": "複合語: 体", "name_zh": "身体复合词", "name_ru": "Композиты: тело",
+      "cluster_id": "T2-C3", "tier": 2, "slug": "cluster2_3_compounds_opaque_body", "name": "Compounds: body", "name_de": "Komposita: Körper", "name_es": "Compuestos: cuerpo", "name_ja": "複合語: 体", "name_zh": "身体复合词", "name_ru": "Композиты: тело",
       "cards": [
         {"n": 263, "TargetWord": "headstrong", "definition": "determined to do things one's own way; stubbornly willful", "pos": "adj", "syn": "willful, stubborn", "ant": "compliant", "TriggerLesson": "012", "definition_gb": "determined to do things one's own way; stubbornly wilful"},
         {"n": 264, "TargetWord": "heartfelt", "definition": "deeply and sincerely felt", "pos": "adj", "syn": "genuine, deep", "ant": "hollow"},
@@ -353,7 +353,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C4", "tier": 2, "slug": "cluster2_4_compounds_opaque_nature", "name": "Compounds: Nature", "name_de": "Komposita: Natur", "name_es": "Compuestos: naturaleza", "name_ja": "複合語: 自然", "name_zh": "自然复合词", "name_ru": "Композиты: природа",
+      "cluster_id": "T2-C4", "tier": 2, "slug": "cluster2_4_compounds_opaque_nature", "name": "Compounds: nature", "name_de": "Komposita: Natur", "name_es": "Compuestos: naturaleza", "name_ja": "複合語: 自然", "name_zh": "自然复合词", "name_ru": "Композиты: природа",
       "cards": [
         {"n": 284, "TargetWord": "windfall", "definition": "an unexpected gain or piece of good luck, especially money", "pos": "noun", "syn": "bonanza, godsend", "TriggerLesson": "013"},
         {"n": 285, "TargetWord": "landslide", "definition": "a collapse of earth down a slope; also, an overwhelming victory", "pos": "noun", "syn": "mudslide, avalanche"},
@@ -372,21 +372,21 @@
         {"n": 298, "TargetWord": "brushfire", "definition": "a fire in scrub or bushes; also, a minor conflict that spreads quickly", "pos": "noun", "syn": "scrub fire, blaze"},
         {"n": 299, "TargetWord": "wildfire", "definition": "a large fire that spreads rapidly through vegetation", "pos": "noun", "syn": "blaze, inferno"},
         {"n": 300, "TargetWord": "backwater", "definition": "an isolated place left behind by progress, or a stagnant pool", "pos": "noun", "syn": "backwoods, stagnant pool"},
-        {"n": 301, "TargetWord": "mudslide", "definition": "a mass of mud flowing down a slope, often after heavy rain", "pos": "noun", "syn": "landslip, mudflow"},
+        {"n": 301, "TargetWord": "mudslide", "definition": "a mass of mud flowing down a slope, often after heavy rain", "pos": "noun", "syn": "landslip, mudflow, landslide"},
         {"n": 302, "TargetWord": "snowdrift", "definition": "a deep bank of snow heaped up by the wind", "pos": "noun", "syn": "bank, mound"},
         {"n": 303, "TargetWord": "hailstorm", "definition": "a squall that pelts the ground with hard pellets of ice", "pos": "noun", "syn": "hailfall, squall"},
-        {"n": 304, "TargetWord": "wetland", "definition": "an area of marshy ground, important for wildlife", "pos": "noun", "syn": "marsh, swamp, bog"},
-        {"n": 305, "TargetWord": "marshland", "definition": "an area of low-lying, waterlogged ground", "pos": "noun", "syn": "swamp, fen, bog"}
+        {"n": 304, "TargetWord": "wetland", "definition": "an area of marshy ground, important for wildlife", "pos": "noun", "syn": "marsh, swamp, bog, marshland"},
+        {"n": 305, "TargetWord": "marshland", "definition": "an area of low-lying, waterlogged ground", "pos": "noun", "syn": "swamp, fen, bog, wetland"}
       ]
     },
     {
-      "cluster_id": "T2-C5", "tier": 2, "slug": "cluster2_5_compounds_opaque_mind", "name": "Compounds: Mind", "name_de": "Komposita: Geist", "name_es": "Compuestos: mente", "name_ja": "複合語: 心", "name_zh": "隐性复合词：心理", "name_ru": "Сложные слова: Мышление",
+      "cluster_id": "T2-C5", "tier": 2, "slug": "cluster2_5_compounds_opaque_mind", "name": "Compounds: mind", "name_de": "Komposita: Geist", "name_es": "Compuestos: mente", "name_ja": "複合語: 心", "name_zh": "隐性复合词：心理", "name_ru": "Сложные слова: Мышление",
       "cards": [
         {"n": 306, "TargetWord": "aftermath", "definition": "the consequences that follow a major event", "pos": "noun", "syn": "fallout, wake", "TriggerLesson": "014"},
         {"n": 307, "TargetWord": "drawback", "definition": "a disadvantage or problem", "pos": "noun", "syn": "snag, flaw", "ant": "advantage"},
-        {"n": 308, "TargetWord": "outlook", "definition": "a person's point of view; the likely future situation", "pos": "noun", "syn": "forecast, viewpoint"},
+        {"n": 308, "TargetWord": "outlook", "definition": "a person's point of view; the likely future situation", "pos": "noun", "syn": "forecast, viewpoint, mindset, standpoint"},
         {"n": 309, "TargetWord": "setback", "definition": "a reversal or check to progress", "pos": "noun", "syn": "reverse, check", "ant": "breakthrough"},
-        {"n": 310, "TargetWord": "standpoint", "definition": "an attitude or angle from which a matter is judged", "pos": "noun", "syn": "viewpoint, angle"},
+        {"n": 310, "TargetWord": "standpoint", "definition": "an attitude or angle from which a matter is judged", "pos": "noun", "syn": "viewpoint, angle, outlook"},
         {"n": 311, "TargetWord": "breakthrough", "definition": "an important discovery or development that removes a barrier", "pos": "noun", "syn": "advance, leap", "ant": "setback"},
         {"n": 312, "TargetWord": "undertone", "definition": "a subdued quality in color or sound; a hidden feeling", "pos": "noun", "syn": "nuance, hint", "definition_gb": "a subdued quality in colour or sound; a hidden feeling"},
         {"n": 313, "TargetWord": "hindsight", "definition": "understanding of a situation only after it has happened", "pos": "noun", "syn": "afterthought, second thoughts", "ant": "foresight"},
@@ -401,7 +401,7 @@
         {"n": 322, "TargetWord": "showdown", "definition": "a decisive confrontation or contest", "pos": "noun", "syn": "face-off, reckoning"},
         {"n": 323, "TargetWord": "standoff", "definition": "a deadlock between two equally matched opponents", "pos": "noun", "syn": "deadlock, stalemate"},
         {"n": 324, "TargetWord": "fallout", "definition": "the adverse results of a situation; radioactive debris after an explosion", "pos": "noun", "syn": "repercussion, aftermath"},
-        {"n": 325, "TargetWord": "blowback", "definition": "an unintended adverse consequence, especially of a political action", "pos": "noun", "syn": "recoil, backlash"},
+        {"n": 325, "TargetWord": "blowback", "definition": "an unintended adverse consequence, especially of a political action", "pos": "noun", "syn": "recoil, backlash, fallout, aftermath"},
         {"n": 326, "TargetWord": "kickback", "definition": "an illicit payment in return for a favor; a strong recoil", "pos": "noun", "syn": "bribe, rebate", "definition_gb": "an illicit payment in return for a favour; a strong recoil"},
         {"n": 327, "TargetWord": "knockout", "definition": "a blow that renders someone unconscious; something extremely impressive", "pos": "noun", "syn": "decisive blow, stunner", "ant": "draw"},
         {"n": 328, "TargetWord": "rundown", "definition": "a brief summary or analysis; also, in poor condition", "pos": "noun/adj", "syn": "synopsis, briefing"},
@@ -413,31 +413,31 @@
       "cards": [
         {"n": 330, "TargetWord": "uphold", "definition": "to maintain or support a principle, law, or decision", "pos": "verb", "syn": "maintain, affirm", "ant": "overturn", "TriggerLesson": "015"},
         {"n": 331, "TargetWord": "update", "definition": "to make something more modern or current; the latest information", "pos": "verb/noun", "syn": "refresh, modernize"},
-        {"n": 332, "TargetWord": "upgrade", "definition": "to raise to a higher standard or level", "pos": "verb/noun", "syn": "enhance, raise", "ant": "downgrade"},
+        {"n": 332, "TargetWord": "upgrade", "definition": "to raise to a higher standard or level", "pos": "verb/noun", "syn": "enhance, raise, uplift", "ant": "downgrade"},
         {"n": 333, "TargetWord": "upheaval", "definition": "a violent or sudden change or disruption", "pos": "noun", "syn": "turmoil, convulsion", "ant": "stability"},
         {"n": 334, "TargetWord": "upbringing", "definition": "the way a child is raised and educated", "pos": "noun", "syn": "rearing, nurture"},
         {"n": 335, "TargetWord": "uprising", "definition": "a revolt or rebellion against an authority", "pos": "noun", "syn": "revolt, rebellion", "ant": "submission"},
         {"n": 336, "TargetWord": "uproar", "definition": "a state of loud and confused noise; a public outcry", "pos": "noun", "syn": "commotion, tumult"},
         {"n": 337, "TargetWord": "upstream", "definition": "in the direction opposite to the flow of a river", "pos": "adv/adj", "syn": "upriver, against the current", "ant": "downstream"},
-        {"n": 338, "TargetWord": "upturn", "definition": "an improvement or increase, especially in economic conditions", "pos": "noun", "syn": "improvement, rally", "ant": "downturn"},
+        {"n": 338, "TargetWord": "upturn", "definition": "an improvement or increase, especially in economic conditions", "pos": "noun", "syn": "improvement, rally, upswing", "ant": "downturn"},
         {"n": 339, "TargetWord": "upkeep", "definition": "the process or cost of keeping something in good condition", "pos": "noun", "syn": "care, servicing"},
         {"n": 340, "TargetWord": "upbeat", "definition": "cheerful and positive", "pos": "adj", "syn": "cheerful, buoyant", "ant": "downbeat"},
         {"n": 341, "TargetWord": "upend", "definition": "to turn something upside down; to disrupt or overturn", "pos": "verb", "syn": "overturn, capsize", "ant": "right"},
         {"n": 342, "TargetWord": "upland", "definition": "an area of high or hilly ground", "pos": "noun/adj", "syn": "highland, fell", "ant": "lowland"},
-        {"n": 343, "TargetWord": "uplift", "definition": "to raise to a higher level; a feeling of moral or emotional improvement", "pos": "verb/noun", "syn": "inspire, hearten", "ant": "depress"},
+        {"n": 343, "TargetWord": "uplift", "definition": "to raise to a higher level; a feeling of moral or emotional improvement", "pos": "verb/noun", "syn": "inspire, hearten, upgrade", "ant": "depress"},
         {"n": 344, "TargetWord": "uproot", "definition": "to pull a plant up by the roots; to move someone from their home", "pos": "verb", "syn": "displace, dislodge", "ant": "settle"},
         {"n": 345, "TargetWord": "upside", "definition": "the positive aspect of a situation", "pos": "noun", "syn": "benefit, plus", "ant": "downside"},
         {"n": 346, "TargetWord": "upstage", "definition": "to divert attention from someone to yourself", "pos": "verb", "syn": "eclipse, outshine", "ant": "defer to"},
         {"n": 347, "TargetWord": "upstart", "definition": "a person who has suddenly risen to a position of importance and behaves arrogantly", "pos": "noun", "syn": "newcomer, social climber"},
-        {"n": 348, "TargetWord": "upswing", "definition": "an increase or improvement", "pos": "noun", "syn": "rise, boom", "ant": "downturn"},
+        {"n": 348, "TargetWord": "upswing", "definition": "an increase or improvement", "pos": "noun", "syn": "rise, boom, upturn", "ant": "downturn"},
         {"n": 349, "TargetWord": "uptight", "definition": "anxious or tense; unable to relax", "pos": "adj", "syn": "anxious, edgy", "ant": "relaxed"},
         {"n": 350, "TargetWord": "upwind", "definition": "in the direction from which the wind is blowing", "pos": "adv/adj", "syn": "windward, against the wind", "ant": "downwind"},
         {"n": 351, "TargetWord": "upcoming", "definition": "about to happen; forthcoming", "pos": "adj", "syn": "approaching, forthcoming", "ant": "past"},
-        {"n": 352, "TargetWord": "upsurge", "definition": "a sudden large increase", "pos": "noun", "syn": "spike, groundswell", "ant": "decline"}
+        {"n": 352, "TargetWord": "upsurge", "definition": "a sudden large increase", "pos": "noun", "syn": "spike, groundswell, upturn, upswing", "ant": "decline"}
       ]
     },
     {
-      "cluster_id": "T2-C7", "tier": 2, "slug": "cluster2_7_compounds_opaque_action", "name": "Compounds: Action", "name_de": "Komposita: Handlung", "name_es": "Compuestos: acción", "name_ja": "複合語: 行い", "name_zh": "隐性复合词：行为", "name_ru": "Сложные слова: Действие",
+      "cluster_id": "T2-C7", "tier": 2, "slug": "cluster2_7_compounds_opaque_action", "name": "Compounds: action", "name_de": "Komposita: Handlung", "name_es": "Compuestos: acción", "name_ja": "複合語: 行い", "name_zh": "隐性复合词：行为", "name_ru": "Сложные слова: Действие",
       "cards": [
         {"n": 353, "TargetWord": "onslaught", "definition": "a fierce or destructive attack", "pos": "noun", "syn": "barrage, onrush", "ant": "retreat", "TriggerLesson": "016"},
         {"n": 354, "TargetWord": "handshake", "definition": "the act of shaking someone's hand as a greeting or agreement", "pos": "noun", "syn": "greeting, agreement"},
@@ -462,7 +462,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C1", "tier": 3, "slug": "cluster3_1_doublets_action", "name": "Doublets: Action", "name_de": "Dubletten: Handlung", "name_es": "Dobletes: acción", "name_ja": "二重語: 行い", "name_zh": "同义双生：行动", "name_ru": "Дублеты: Действие",
+      "cluster_id": "T3-C1", "tier": 3, "slug": "cluster3_1_doublets_action", "name": "Doublets: action", "name_de": "Dubletten: Handlung", "name_es": "Dobletes: acción", "name_ja": "二重語: 行い", "name_zh": "同义双生：行动", "name_ru": "Дублеты: Действие",
       "cards": [
         {"n": 373, "TargetWord": "begin", "definition": "to start or set in motion", "pos": "verb", "syn": "start, launch", "ant": "finish", "TriggerLesson": "017"},
         {"n": 374, "TargetWord": "buy", "definition": "to obtain something by paying money for it", "pos": "verb", "syn": "acquire, procure", "ant": "sell"},
@@ -470,12 +470,12 @@
         {"n": 376, "TargetWord": "ask", "definition": "to request information or an answer from someone", "pos": "verb", "syn": "request, question", "ant": "answer"},
         {"n": 377, "TargetWord": "hide", "definition": "to put or keep out of sight; to conceal oneself", "pos": "verb", "syn": "cover, screen", "ant": "reveal"},
         {"n": 378, "TargetWord": "shun", "definition": "to deliberately avoid or keep away from someone or something", "pos": "verb", "syn": "evade, spurn", "ant": "seek"},
-        {"n": 379, "TargetWord": "wed", "definition": "to marry; to join in marriage", "pos": "verb", "syn": "unite, betroth", "ant": "divorce"},
+        {"n": 379, "TargetWord": "wed", "definition": "to marry; to join in marriage", "pos": "verb", "syn": "unite, tie the knot", "ant": "divorce"},
         {"n": 380, "TargetWord": "shut", "definition": "to close something; to move into a closed position", "pos": "verb", "syn": "seal, bar", "ant": "open"},
         {"n": 381, "TargetWord": "swear", "definition": "to make a solemn promise or oath; to use offensive language", "pos": "verb", "syn": "pledge, affirm", "ant": "deny"},
         {"n": 382, "TargetWord": "delve", "definition": "to dig deeply into a subject; to research thoroughly", "pos": "verb", "syn": "dig, excavate", "ant": "skim"},
         {"n": 383, "TargetWord": "forbid", "definition": "to order someone not to do something; to make impossible", "pos": "verb", "syn": "ban, bar", "ant": "allow"},
-        {"n": 384, "TargetWord": "forgive", "definition": "to stop feeling angry or resentful towards someone for an offense", "pos": "verb", "syn": "excuse, absolve", "ant": "resent", "definition_gb": "to stop feeling angry or resentful towards someone for an offence"},
+        {"n": 384, "TargetWord": "forgive", "definition": "to stop feeling angry or resentful towards someone for an offense; to cancel a debt", "pos": "verb", "syn": "excuse, absolve", "ant": "resent", "definition_gb": "to stop feeling angry or resentful towards someone for an offence; to cancel a debt"},
         {"n": 385, "TargetWord": "forsake", "definition": "to abandon or give up something valued", "pos": "verb", "syn": "desert, quit", "ant": "keep"},
         {"n": 386, "TargetWord": "kindle", "definition": "to set fire to; to arouse or inspire a feeling", "pos": "verb", "syn": "light, spark", "ant": "extinguish"},
         {"n": 387, "TargetWord": "dwell", "definition": "to live in a place; to think or talk about something at length", "pos": "verb", "syn": "live, lodge", "ant": "leave"},
@@ -487,7 +487,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C2", "tier": 3, "slug": "cluster3_2_doublets_quality", "name": "Doublets: Quality", "name_de": "Dubletten: Eigenschaft", "name_es": "Dobletes: cualidad", "name_ja": "二重語: 性質", "name_zh": "同义双生：品质", "name_ru": "Дублеты: Качество",
+      "cluster_id": "T3-C2", "tier": 3, "slug": "cluster3_2_doublets_quality", "name": "Doublets: quality", "name_de": "Dubletten: Eigenschaft", "name_es": "Dobletes: cualidad", "name_ja": "二重語: 性質", "name_zh": "同义双生：品质", "name_ru": "Дублеты: Качество",
       "cards": [
         {"n": 393, "TargetWord": "bold", "definition": "showing courage and confidence; daring", "pos": "adj", "syn": "brave, daring", "ant": "timid", "TriggerLesson": "018"},
         {"n": 394, "TargetWord": "deep", "definition": "extending far down or inward; intense or thorough", "pos": "adj", "syn": "intense, bottomless", "ant": "shallow"},
@@ -496,7 +496,7 @@
         {"n": 397, "TargetWord": "mighty", "definition": "possessing great power, strength, or force", "pos": "adj", "syn": "strong, forceful", "ant": "feeble"},
         {"n": 398, "TargetWord": "worthy", "definition": "having merit or value; deserving respect or attention", "pos": "adj", "syn": "deserving, noble", "ant": "unworthy"},
         {"n": 399, "TargetWord": "sharp", "definition": "having a thin cutting edge; quick to notice or understand", "pos": "adj", "syn": "keen, edged", "ant": "dull"},
-        {"n": 400, "TargetWord": "strong", "definition": "having great physical power; able to withstand force or pressure", "pos": "adj", "syn": "sturdy, hardy", "ant": "weak"},
+        {"n": 400, "TargetWord": "strong", "definition": "having great physical power; able to withstand force or pressure", "pos": "adj", "syn": "sturdy, hardy, mighty", "ant": "weak"},
         {"n": 401, "TargetWord": "true", "definition": "in accordance with fact; loyal and faithful", "pos": "adj", "syn": "real, faithful", "ant": "false"},
         {"n": 402, "TargetWord": "keen", "definition": "eager and enthusiastic; sharp or penetrating", "pos": "adj", "syn": "eager, sharp", "ant": "indifferent"},
         {"n": 403, "TargetWord": "swift", "definition": "happening quickly or promptly; moving at high speed", "pos": "adj", "syn": "fast, quick", "ant": "slow"},
@@ -512,7 +512,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C3", "tier": 3, "slug": "cluster3_3_doublets_people", "name": "Doublets: People", "name_de": "Dubletten: Menschen", "name_es": "Dobletes: personas", "name_ja": "二重語: 人", "name_zh": "同义双生：人物", "name_ru": "Дублеты: Люди",
+      "cluster_id": "T3-C3", "tier": 3, "slug": "cluster3_3_doublets_people", "name": "Doublets: people", "name_de": "Dubletten: Menschen", "name_es": "Dobletes: personas", "name_ja": "二重語: 人", "name_zh": "同义双生：人物", "name_ru": "Дублеты: Люди",
       "cards": [
         {"n": 413, "TargetWord": "foe", "definition": "an enemy or opponent", "pos": "noun", "syn": "adversary, opponent", "ant": "friend", "TriggerLesson": "019"},
         {"n": 414, "TargetWord": "folk", "definition": "people in general; the members of a community or culture", "pos": "noun", "syn": "community, nation", "ant": "individual"},
@@ -531,19 +531,19 @@
         {"n": 427, "TargetWord": "forebear", "definition": "an ancestor; a person from whom one is descended", "pos": "noun", "syn": "forefather, progenitor"},
         {"n": 428, "TargetWord": "clansman", "definition": "a male member of a clan", "pos": "noun", "syn": "tribesman, kinsman"},
         {"n": 429, "TargetWord": "townsman", "definition": "a man who lives in a particular town", "pos": "noun", "syn": "resident, burgher"},
-        {"n": 430, "TargetWord": "kinfolk", "definition": "one's relatives; members of the same family", "pos": "noun", "syn": "family, kin"},
+        {"n": 430, "TargetWord": "kinfolk", "definition": "one's relatives; members of the same family", "pos": "noun", "syn": "family, kin", "TargetWord_gb": "kinsfolk"},
         {"n": 431, "TargetWord": "churl", "definition": "a peasant of the lowest rank; a rude or mean-spirited person", "pos": "noun", "syn": "boor, peasant", "ant": "noble"},
         {"n": 432, "TargetWord": "handmaid", "definition": "a female personal servant or attendant", "pos": "noun", "syn": "servant, maidservant"}
       ]
     },
     {
-      "cluster_id": "T3-C4", "tier": 3, "slug": "cluster3_4_doublets_abstract", "name": "Doublets: Abstract", "name_de": "Dubletten: Abstraktes", "name_es": "Dobletes: abstracto", "name_ja": "二重語: 抽象", "name_zh": "同义双生：抽象", "name_ru": "Дублеты: Абстракции",
+      "cluster_id": "T3-C4", "tier": 3, "slug": "cluster3_4_doublets_abstract", "name": "Doublets: abstract", "name_de": "Dubletten: Abstraktes", "name_es": "Dobletes: abstracto", "name_ja": "二重語: 抽象", "name_zh": "同义双生：抽象", "name_ru": "Дублеты: Абстракции",
       "cards": [
         {"n": 433, "TargetWord": "freedom", "definition": "the state of being free; the power to act without restraint", "pos": "noun", "syn": "independence, latitude", "ant": "captivity", "TriggerLesson": "020"},
         {"n": 434, "TargetWord": "friendship", "definition": "a warm bond of affection and trust between two people", "pos": "noun", "syn": "closeness, bond", "ant": "enmity"},
         {"n": 435, "TargetWord": "happiness", "definition": "the state of feeling pleasure, contentment, or joy", "pos": "noun", "syn": "joy, contentment", "ant": "misery"},
         {"n": 436, "TargetWord": "kingdom", "definition": "a country ruled by a king or queen; a realm of influence", "pos": "noun", "syn": "domain, dominion"},
-        {"n": 437, "TargetWord": "brotherhood", "definition": "a bond of kinship and shared purpose among male siblings or allies", "pos": "noun", "syn": "solidarity, fellowship"},
+        {"n": 437, "TargetWord": "brotherhood", "definition": "a bond among male siblings or comrades; also, an association of men in one trade or cause", "pos": "noun", "syn": "solidarity, fellowship"},
         {"n": 438, "TargetWord": "forgiveness", "definition": "the act of letting go of anger toward one who has wronged you", "pos": "noun", "syn": "mercy, absolution", "ant": "revenge"},
         {"n": 439, "TargetWord": "weakness", "definition": "the state of lacking strength or a particular fault in character", "pos": "noun", "syn": "flaw, infirmity", "ant": "strength"},
         {"n": 440, "TargetWord": "wellness", "definition": "the state of being in good health, especially as a pursued goal", "pos": "noun", "syn": "wellbeing, vigor"},
@@ -553,7 +553,7 @@
         {"n": 444, "TargetWord": "blindness", "definition": "the condition of being unable to see; failure to notice or understand", "pos": "noun", "syn": "sightlessness, dimness"},
         {"n": 445, "TargetWord": "hardship", "definition": "severe suffering or difficulty", "pos": "noun", "syn": "privation, trial", "ant": "comfort"},
         {"n": 446, "TargetWord": "kinship", "definition": "a feeling of being close to someone; blood relationship", "pos": "noun", "syn": "bond, closeness", "ant": "estrangement"},
-        {"n": 447, "TargetWord": "fellowship", "definition": "friendly association with others who share interests; a grant for study", "pos": "noun", "syn": "companionship, comradeship"},
+        {"n": 447, "TargetWord": "fellowship", "definition": "friendly association with others who share interests; a grant for study", "pos": "noun", "syn": "companionship, comradeship, brotherhood"},
         {"n": 448, "TargetWord": "motherhood", "definition": "the state of being a female parent and the qualities it brings", "pos": "noun", "syn": "parenthood, nurture"},
         {"n": 449, "TargetWord": "fatherhood", "definition": "the state of being a male parent and the duties that come with it", "pos": "noun", "syn": "parenthood, fathering"},
         {"n": 450, "TargetWord": "likelihood", "definition": "the probability of something happening", "pos": "noun", "syn": "chance, odds"},
@@ -562,9 +562,9 @@
       ]
     },
     {
-      "cluster_id": "T3-C5", "tier": 3, "slug": "cluster3_5_doublets_body_world", "name": "Doublets: Body & World", "name_de": "Dubletten: Körper & Welt", "name_es": "Dobletes: cuerpo y mundo", "name_ja": "二重語: 体と世界", "name_zh": "同义双生：身体与世界", "name_ru": "Дублеты: Тело и мир",
+      "cluster_id": "T3-C5", "tier": 3, "slug": "cluster3_5_doublets_body_world", "name": "Doublets: body & world", "name_de": "Dubletten: Körper & Welt", "name_es": "Dobletes: cuerpo y mundo", "name_ja": "二重語: 体と世界", "name_zh": "同义双生：身体与世界", "name_ru": "Дублеты: Тело и мир",
       "cards": [
-        {"n": 453, "TargetWord": "belly", "definition": "the front part of the body below the chest; the stomach", "pos": "noun", "syn": "stomach, paunch", "TriggerLesson": "021"},
+        {"n": 453, "TargetWord": "belly", "definition": "the front part of the body below the chest; the stomach", "pos": "noun", "syn": "stomach, paunch, womb", "TriggerLesson": "021"},
         {"n": 454, "TargetWord": "bone", "definition": "the hard material forming the skeleton; the essential structure of something", "pos": "noun", "syn": "skeleton, frame"},
         {"n": 455, "TargetWord": "gut", "definition": "the stomach or intestines; instinct or courage", "pos": "noun", "syn": "bowels, instinct"},
         {"n": 456, "TargetWord": "womb", "definition": "the organ in which a baby develops before birth", "pos": "noun", "syn": "matrix, belly"},
@@ -579,7 +579,7 @@
         {"n": 465, "TargetWord": "rib", "definition": "one of the curved bones forming the chest cage", "pos": "noun", "syn": "costal bone, side bone"},
         {"n": 466, "TargetWord": "shin", "definition": "the front of the leg below the knee", "pos": "noun", "syn": "shank, leg"},
         {"n": 467, "TargetWord": "thumb", "definition": "the short thick first digit of the hand", "pos": "noun", "syn": "digit, pollex"},
-        {"n": 468, "TargetWord": "dale", "definition": "a valley, especially a broad one in northern England", "pos": "noun", "syn": "vale, hollow"},
+        {"n": 468, "TargetWord": "dale", "definition": "a valley, especially a broad one in northern England", "pos": "noun", "syn": "vale, hollow, glen"},
         {"n": 469, "TargetWord": "fen", "definition": "a low-lying area of marshy ground", "pos": "noun", "syn": "bog, swamp"},
         {"n": 470, "TargetWord": "heath", "definition": "an area of open wild land covered with rough grass and low shrubs", "pos": "noun", "syn": "moor, wasteland"},
         {"n": 471, "TargetWord": "moor", "definition": "an open area of high uncultivated ground, typically covered with heather", "pos": "noun", "syn": "heath, upland"},
@@ -587,24 +587,24 @@
       ]
     },
     {
-      "cluster_id": "T3-C6", "tier": 3, "slug": "cluster3_6_doublets_feeling", "name": "Doublets: Feeling", "name_de": "Dubletten: Gefühl", "name_es": "Dobletes: sentimiento", "name_ja": "二重語: 感情", "name_zh": "同义双生：情感", "name_ru": "Дублеты: Чувства",
+      "cluster_id": "T3-C6", "tier": 3, "slug": "cluster3_6_doublets_feeling", "name": "Doublets: feeling", "name_de": "Dubletten: Gefühl", "name_es": "Dobletes: sentimiento", "name_ja": "二重語: 感情", "name_zh": "同义双生：情感", "name_ru": "Дублеты: Чувства",
       "cards": [
         {"n": 473, "TargetWord": "glad", "definition": "feeling pleasure and happiness", "pos": "adj", "syn": "pleased, cheerful", "ant": "sad", "TriggerLesson": "022"},
         {"n": 474, "TargetWord": "mad", "definition": "mentally ill; extremely angry; wildly enthusiastic", "pos": "adj", "syn": "crazy, frantic", "ant": "sane"},
         {"n": 475, "TargetWord": "grim", "definition": "very serious or gloomy; depressing or worrying", "pos": "adj", "syn": "bleak, harsh", "ant": "cheerful"},
         {"n": 476, "TargetWord": "gleeful", "definition": "feeling or expressing great delight", "pos": "adj", "syn": "merry, exultant"},
-        {"n": 477, "TargetWord": "mournful", "definition": "feeling or showing sorrow or grief", "pos": "adj", "syn": "sad, grieving", "ant": "joyful"},
-        {"n": 478, "TargetWord": "woeful", "definition": "full of woe; very bad or miserable", "pos": "adj", "syn": "wretched, pitiful"},
+        {"n": 477, "TargetWord": "mournful", "definition": "feeling or showing sorrow or grief", "pos": "adj", "syn": "sad, grieving, doleful, woeful, woebegone", "ant": "joyful"},
+        {"n": 478, "TargetWord": "woeful", "definition": "full of woe; very bad or miserable", "pos": "adj", "syn": "wretched, pitiful, heartsick, sorrowful, woebegone"},
         {"n": 479, "TargetWord": "dreadful", "definition": "causing fear or suffering; extremely bad", "pos": "adj", "syn": "awful, frightful", "ant": "wonderful"},
-        {"n": 480, "TargetWord": "hateful", "definition": "arousing or deserving hatred; very unpleasant", "pos": "adj", "syn": "detestable, vile"},
-        {"n": 481, "TargetWord": "sorrowful", "definition": "feeling or showing deep sadness", "pos": "adj", "syn": "grieving, heavy", "ant": "happy"},
-        {"n": 482, "TargetWord": "loathsome", "definition": "causing feelings of disgust and hatred", "pos": "adj", "syn": "revolting, vile"},
+        {"n": 480, "TargetWord": "hateful", "definition": "arousing or deserving hatred; very unpleasant", "pos": "adj", "syn": "detestable, vile, loathsome"},
+        {"n": 481, "TargetWord": "sorrowful", "definition": "feeling or showing deep sadness", "pos": "adj", "syn": "grieving, heavy, mournful, doleful, woebegone", "ant": "happy"},
+        {"n": 482, "TargetWord": "loathsome", "definition": "causing feelings of disgust and hatred", "pos": "adj", "syn": "revolting, vile, hateful"},
         {"n": 483, "TargetWord": "awesome", "definition": "extremely impressive; inspiring wonder (now also: very good)", "pos": "adj", "syn": "breathtaking, stunning"},
         {"n": 484, "TargetWord": "blissful", "definition": "extremely happy; full of joy", "pos": "adj", "syn": "joyful, rapturous"},
-        {"n": 485, "TargetWord": "doleful", "definition": "expressing sorrow; mournful", "pos": "adj", "syn": "sad, mournful"},
+        {"n": 485, "TargetWord": "doleful", "definition": "expressing sorrow; mournful", "pos": "adj", "syn": "sad, mournful, woeful, woebegone"},
         {"n": 486, "TargetWord": "dreary", "definition": "dull, bleak, and depressing", "pos": "adj", "syn": "gloomy, dull"},
         {"n": 487, "TargetWord": "downcast", "definition": "feeling sad and without hope; directed downward", "pos": "adj", "syn": "low, glum"},
-        {"n": 488, "TargetWord": "heartsick", "definition": "deeply unhappy or distressed", "pos": "adj", "syn": "grief-stricken, wretched"},
+        {"n": 488, "TargetWord": "heartsick", "definition": "deeply unhappy or distressed", "pos": "adj", "syn": "grief-stricken, wretched, woeful"},
         {"n": 489, "TargetWord": "crestfallen", "definition": "sad and disappointed, especially after feeling hopeful", "pos": "adj", "syn": "disappointed, downhearted"},
         {"n": 490, "TargetWord": "careworn", "definition": "tired and unhappy because of prolonged worry", "pos": "adj", "syn": "haggard, weary", "ant": "carefree"},
         {"n": 491, "TargetWord": "woebegone", "definition": "looking sad or miserable", "pos": "adj", "syn": "miserable, forlorn"},
@@ -612,7 +612,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C7", "tier": 3, "slug": "cluster3_7_doublets_daily_life", "name": "Doublets: Daily Life", "name_de": "Dubletten: Alltag", "name_es": "Dobletes: vida diaria", "name_ja": "二重語: 日常", "name_zh": "同义双生：日常生活", "name_ru": "Дублеты: Быт",
+      "cluster_id": "T3-C7", "tier": 3, "slug": "cluster3_7_doublets_daily_life", "name": "Doublets: daily life", "name_de": "Dubletten: Alltag", "name_es": "Dobletes: vida diaria", "name_ja": "二重語: 日常", "name_zh": "同义双生：日常生活", "name_ru": "Дублеты: Быт",
       "cards": [
         {"n": 493, "TargetWord": "meal", "definition": "an occasion when food is eaten; the food served at such a time", "pos": "noun", "syn": "feast, spread", "ant": "fast", "TriggerLesson": "023"},
         {"n": 494, "TargetWord": "stool", "definition": "a seat without a back or arms", "pos": "noun", "syn": "seat, perch"},
@@ -629,7 +629,7 @@
         {"n": 505, "TargetWord": "flail", "definition": "a tool for threshing grain; to wave arms wildly", "pos": "noun/verb", "syn": "thresher, cudgel"},
         {"n": 506, "TargetWord": "anvil", "definition": "a heavy iron block on which metal is hammered and shaped", "pos": "noun", "syn": "smithy block, stithy"},
         {"n": 507, "TargetWord": "ditch", "definition": "a narrow channel dug at the side of a road or field", "pos": "noun", "syn": "channel, drain"},
-        {"n": 508, "TargetWord": "furrow", "definition": "a long narrow groove cut in the ground by a plow; a wrinkle", "pos": "noun", "syn": "channel, rut", "definition_gb": "a long narrow groove cut in the ground by a plough; a wrinkle"},
+        {"n": 508, "TargetWord": "furrow", "definition": "a long narrow groove cut in the ground by a plow; a wrinkle", "pos": "noun", "syn": "channel, rut, plow", "definition_gb": "a long narrow groove cut in the ground by a plough; a wrinkle"},
         {"n": 509, "TargetWord": "thatch", "definition": "a roof covering of straw or reeds", "pos": "noun", "syn": "straw roofing, reed roofing"},
         {"n": 510, "TargetWord": "beam", "definition": "a long thick piece of timber or metal; a ray of light", "pos": "noun", "syn": "timber, plank"},
         {"n": 511, "TargetWord": "rake", "definition": "a garden tool with prongs; a fashionable but immoral man", "pos": "noun", "syn": "harrow, scraper"},
@@ -637,7 +637,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C8", "tier": 3, "slug": "cluster3_8_doublets_thought_speech", "name": "Doublets: Thought & Speech", "name_de": "Dubletten: Denken & Reden", "name_es": "Dobletes: pensar y hablar", "name_ja": "二重語: 思考と発話", "name_zh": "同义双生：思想与言语", "name_ru": "Дублеты: Мысль и слово",
+      "cluster_id": "T3-C8", "tier": 3, "slug": "cluster3_8_doublets_thought_speech", "name": "Doublets: thought & speech", "name_de": "Dubletten: Denken & Reden", "name_es": "Dobletes: pensar y hablar", "name_ja": "二重語: 思考と発話", "name_zh": "同义双生：思想与言语", "name_ru": "Дублеты: Мысль и слово",
       "cards": [
         {"n": 513, "TargetWord": "oath", "definition": "a solemn promise or sworn declaration; a swear word", "pos": "noun", "syn": "pledge, promise", "ant": "betrayal", "TriggerLesson": "024"},
         {"n": 514, "TargetWord": "tale", "definition": "a story, especially one that may be imaginative or exaggerated", "pos": "noun", "syn": "story, yarn", "ant": "fact"},
@@ -662,14 +662,14 @@
       ]
     },
     {
-      "cluster_id": "T3-C9", "tier": 3, "slug": "cluster3_9_doublets_war_law", "name": "Doublets: War & Law", "name_de": "Dubletten: Krieg & Recht", "name_es": "Dobletes: guerra y ley", "name_ja": "二重語: 戦と法", "name_zh": "同义双生：战争与法律", "name_ru": "Дублеты: Война и закон",
+      "cluster_id": "T3-C9", "tier": 3, "slug": "cluster3_9_doublets_war_law", "name": "Doublets: war & law", "name_de": "Dubletten: Krieg & Recht", "name_es": "Dobletes: guerra y ley", "name_ja": "二重語: 戦と法", "name_zh": "同义双生：战争与法律", "name_ru": "Дублеты: Война и закон",
       "cards": [
         {"n": 533, "TargetWord": "sword", "definition": "a weapon with a long metal blade and a handle", "pos": "noun", "syn": "blade, broadsword", "TriggerLesson": "025"},
         {"n": 534, "TargetWord": "shield", "definition": "a broad piece of armor carried for protection; to protect", "pos": "noun/verb", "syn": "guard, cover", "ant": "expose", "definition_gb": "a broad piece of armour carried for protection; to protect"},
         {"n": 535, "TargetWord": "bow", "definition": "a weapon for shooting arrows; a knot with two loops; to bend forward", "pos": "noun", "syn": "bend, arc"},
         {"n": 536, "TargetWord": "helm", "definition": "a helmet; the wheel or tiller of a ship; a position of control", "pos": "noun", "syn": "tiller, wheel"},
         {"n": 537, "TargetWord": "spear", "definition": "a weapon with a pointed tip on a long shaft", "pos": "noun", "syn": "javelin, pike"},
-        {"n": 538, "TargetWord": "blade", "definition": "the flat cutting part of a knife, sword, or tool", "pos": "noun", "syn": "edge, cutting edge"},
+        {"n": 538, "TargetWord": "blade", "definition": "the flat cutting part of a knife, sword, or tool", "pos": "noun", "syn": "edge, cutting edge, sword"},
         {"n": 539, "TargetWord": "axe", "definition": "a tool with a heavy blade for chopping wood; to dismiss or cancel", "pos": "noun/verb", "syn": "hatchet, chopper"},
         {"n": 540, "TargetWord": "strife", "definition": "angry or bitter disagreement; conflict", "pos": "noun", "syn": "discord, quarrel", "ant": "harmony"},
         {"n": 541, "TargetWord": "slaughter", "definition": "the killing of animals for food; the killing of many people violently", "pos": "noun/verb", "syn": "butchery, killing"},
@@ -687,7 +687,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C10", "tier": 3, "slug": "cluster3_10_doublets_time_change", "name": "Doublets: Time & Change", "name_de": "Dubletten: Zeit & Wandel", "name_es": "Dobletes: tiempo y cambio", "name_ja": "二重語: 時と変化", "name_zh": "同义双生：时间与变化", "name_ru": "Дублеты: Время и изменения",
+      "cluster_id": "T3-C10", "tier": 3, "slug": "cluster3_10_doublets_time_change", "name": "Doublets: time & change", "name_de": "Dubletten: Zeit & Wandel", "name_es": "Dobletes: tiempo y cambio", "name_ja": "二重語: 時と変化", "name_zh": "同义双生：时间与变化", "name_ru": "Дублеты: Время и изменения",
       "cards": [
         {"n": 553, "TargetWord": "dawn", "definition": "the first light of day; the beginning of something", "pos": "noun/verb", "syn": "daybreak, sunrise", "ant": "dusk", "TriggerLesson": "026"},
         {"n": 554, "TargetWord": "dusk", "definition": "the darker stage of twilight in the evening", "pos": "noun", "syn": "twilight, nightfall", "ant": "dawn"},
@@ -699,14 +699,14 @@
         {"n": 560, "TargetWord": "wilt", "definition": "to become limp from heat or lack of water; to lose energy", "pos": "verb", "syn": "droop, sag"},
         {"n": 561, "TargetWord": "wane", "definition": "to decrease gradually in strength, power, or importance", "pos": "verb", "syn": "fade, ebb", "ant": "wax"},
         {"n": 562, "TargetWord": "wax", "definition": "to increase gradually; a sticky substance; to become", "pos": "verb", "syn": "grow, swell", "ant": "wane"},
-        {"n": 563, "TargetWord": "ebb", "definition": "the movement of the tide out to sea; to gradually decrease", "pos": "verb/noun", "syn": "retreat, fall", "ant": "flow"},
+        {"n": 563, "TargetWord": "ebb", "definition": "the movement of the tide out to sea; to gradually decrease", "pos": "verb/noun", "syn": "retreat, fall, wane", "ant": "flow"},
         {"n": 564, "TargetWord": "flood", "definition": "an overflow of water; a large quantity of something", "pos": "noun/verb", "syn": "torrent, inundation", "ant": "drought"},
         {"n": 565, "TargetWord": "drought", "definition": "a prolonged period of abnormally low rainfall", "pos": "noun", "syn": "dry spell, dearth", "ant": "flood"},
         {"n": 566, "TargetWord": "tide", "definition": "the regular rise and fall of the sea; a powerful flow or trend", "pos": "noun", "syn": "flow, stream"},
         {"n": 567, "TargetWord": "span", "definition": "the full extent of something from end to end; a period of time", "pos": "noun/verb", "syn": "extent, stretch"},
         {"n": 568, "TargetWord": "haste", "definition": "excessive speed or urgency of action", "pos": "noun", "syn": "rush, hurry", "ant": "patience"},
         {"n": 569, "TargetWord": "linger", "definition": "to stay in a place longer than necessary; to be slow to disappear", "pos": "verb", "syn": "stay, dawdle", "ant": "leave"},
-        {"n": 570, "TargetWord": "dwindle", "definition": "to become gradually smaller, fewer, or less", "pos": "verb", "syn": "shrink, taper", "ant": "grow"},
+        {"n": 570, "TargetWord": "dwindle", "definition": "to become gradually smaller, fewer, or less", "pos": "verb", "syn": "shrink, taper, wane, ebb", "ant": "grow"},
         {"n": 571, "TargetWord": "midsummer", "definition": "the central point of the warmest season, or the June solstice", "pos": "noun", "syn": "high summer, longest day"},
         {"n": 572, "TargetWord": "twilight", "definition": "the soft glow in the sky after sunset, or a period of decline", "pos": "noun", "syn": "dusk, gloaming"}
       ]
@@ -718,12 +718,12 @@
         {"n": 574, "TargetWord": "make up", "definition": "to invent a story; to reconcile after a quarrel; to constitute", "pos": "phrasal verb", "syn": "invent, reconcile"},
         {"n": 575, "TargetWord": "pick up", "definition": "to lift something; to collect someone; to learn informally", "pos": "phrasal verb", "syn": "collect, learn", "ant": "put down"},
         {"n": 576, "TargetWord": "set up", "definition": "to arrange or establish something", "pos": "phrasal verb", "syn": "arrange", "ant": "dismantle"},
-        {"n": 577, "TargetWord": "show up", "definition": "to arrive; to be clearly visible; to embarrass someone", "pos": "phrasal verb", "syn": "arrive", "ant": "disappear"},
+        {"n": 577, "TargetWord": "show up", "definition": "to arrive; to be clearly visible; to embarrass someone", "pos": "phrasal verb", "syn": "arrive, turn up", "ant": "disappear"},
         {"n": 578, "TargetWord": "come up", "definition": "to arise or occur; to approach", "pos": "phrasal verb", "syn": "emerge, crop up", "ant": "subside"},
         {"n": 579, "TargetWord": "take up", "definition": "to begin a hobby or activity; to occupy space or time", "pos": "phrasal verb", "syn": "begin", "ant": "give up"},
         {"n": 580, "TargetWord": "bring up", "definition": "to raise a child; to mention a topic in conversation", "pos": "phrasal verb", "syn": "raise, rear"},
         {"n": 581, "TargetWord": "end up", "definition": "to eventually reach a particular place or situation", "pos": "phrasal verb", "syn": "finish, land", "ant": "set out"},
-        {"n": 582, "TargetWord": "turn up", "definition": "to arrive unexpectedly; to be found; to increase the volume", "pos": "phrasal verb", "syn": "arrive, surface", "ant": "vanish"},
+        {"n": 582, "TargetWord": "turn up", "definition": "to arrive unexpectedly; to be found; to increase the volume", "pos": "phrasal verb", "syn": "arrive, surface, show up", "ant": "vanish"},
         {"n": 583, "TargetWord": "line up", "definition": "to arrange in a row; to organize something for the future", "pos": "phrasal verb", "syn": "arrange, queue", "definition_gb": "to arrange in a row; to organise something for the future"},
         {"n": 584, "TargetWord": "open up", "definition": "to become available; to reveal one's feelings; to unlock", "pos": "phrasal verb", "syn": "unlock", "ant": "close off"},
         {"n": 585, "TargetWord": "back up", "definition": "to support someone; to make a copy; to move backwards", "pos": "phrasal verb", "syn": "reverse, copy"},
@@ -733,9 +733,9 @@
         {"n": 589, "TargetWord": "hang up", "definition": "to end a phone call; to suspend on a hook", "pos": "phrasal verb", "syn": "ring off, cut off", "ant": "pick up"},
         {"n": 590, "TargetWord": "lock up", "definition": "to secure a building by locking the doors; to imprison", "pos": "phrasal verb", "syn": "secure, bolt", "ant": "release"},
         {"n": 591, "TargetWord": "mix up", "definition": "to confuse one thing with another; to combine things together", "pos": "phrasal verb", "syn": "muddle", "ant": "sort out"},
-        {"n": 592, "TargetWord": "pile up", "definition": "to accumulate in a heap; to increase to an unmanageable level", "pos": "phrasal verb", "syn": "mount", "ant": "clear"},
+        {"n": 592, "TargetWord": "pile up", "definition": "to accumulate in a heap; to increase to an unmanageable level", "pos": "phrasal verb", "syn": "mount, build up", "ant": "clear"},
         {"n": 593, "TargetWord": "speak up", "definition": "to raise your voice, or to state your opinion openly", "pos": "phrasal verb", "syn": "voice", "ant": "stay silent"},
-        {"n": 594, "TargetWord": "stand up", "definition": "to rise to one's feet; to defend or support", "pos": "phrasal verb", "syn": "rise, defend", "ant": "sit down"},
+        {"n": 594, "TargetWord": "stand up", "definition": "to rise to one's feet; to defend or support; to hold up under testing", "pos": "phrasal verb", "syn": "rise, defend", "ant": "sit down"},
         {"n": 595, "TargetWord": "stir up", "definition": "to provoke trouble or strong emotions; to mix by stirring", "pos": "phrasal verb", "syn": "incite", "ant": "calm down"},
         {"n": 596, "TargetWord": "sum up", "definition": "to give a brief summary; to describe the essential nature of something", "pos": "phrasal verb", "syn": "conclude, recap"},
         {"n": 597, "TargetWord": "wind up", "definition": "to bring to a conclusion; to make someone annoyed; to tighten a spring", "pos": "phrasal verb", "syn": "tighten", "ant": "start"}
@@ -773,12 +773,12 @@
       "cards": [
         {"n": 620, "TargetWord": "find out", "definition": "to discover information or learn the truth", "pos": "phrasal verb", "syn": "learn, ascertain", "ant": "conceal", "TriggerLesson": "029"},
         {"n": 621, "TargetWord": "turn out", "definition": "to result in a particular way; to prove to be", "pos": "phrasal verb", "syn": "transpire"},
-        {"n": 622, "TargetWord": "work out", "definition": "to solve a problem; to exercise; to develop in a particular way", "pos": "phrasal verb", "syn": "solve, exercise"},
+        {"n": 622, "TargetWord": "work out", "definition": "to solve a problem; to exercise; to develop in a particular way", "pos": "phrasal verb", "syn": "solve, exercise, iron out"},
         {"n": 623, "TargetWord": "carry out", "definition": "to perform or complete a task or plan", "pos": "phrasal verb", "syn": "accomplish, perform"},
         {"n": 624, "TargetWord": "point out", "definition": "to draw attention to something; to show or indicate", "pos": "phrasal verb", "syn": "highlight, note"},
         {"n": 625, "TargetWord": "run out", "definition": "to use up or exhaust a supply of something", "pos": "phrasal verb", "syn": "exhaust, dry up", "ant": "stock up"},
         {"n": 626, "TargetWord": "stand out", "definition": "to be noticeably better or more prominent than others", "pos": "phrasal verb", "syn": "excel, dominate", "ant": "blend in"},
-        {"n": 627, "TargetWord": "sort out", "definition": "to resolve a problem; to organize things", "pos": "phrasal verb", "syn": "organize", "ant": "muddle", "definition_gb": "to resolve a problem; to organise things"},
+        {"n": 627, "TargetWord": "sort out", "definition": "to resolve a problem; to organize things", "pos": "phrasal verb", "syn": "organize, work out, iron out", "ant": "muddle", "definition_gb": "to resolve a problem; to organise things"},
         {"n": 628, "TargetWord": "hand out", "definition": "to distribute something to a group of people", "pos": "phrasal verb", "syn": "dole out, deal"},
         {"n": 629, "TargetWord": "burn out", "definition": "to become exhausted through overwork; to stop burning", "pos": "phrasal verb", "syn": "tire, flag", "ant": "recharge"},
         {"n": 630, "TargetWord": "lay out", "definition": "to arrange or spread things out; to explain clearly", "pos": "phrasal verb", "syn": "present, set out"},
@@ -790,7 +790,7 @@
         {"n": 636, "TargetWord": "flesh out", "definition": "to add more detail or substance to something", "pos": "phrasal verb", "syn": "develop, expand", "ant": "strip down"},
         {"n": 637, "TargetWord": "iron out", "definition": "to resolve difficulties or problems", "pos": "phrasal verb", "syn": "smooth over, settle"},
         {"n": 638, "TargetWord": "map out", "definition": "to plan something in detail", "pos": "phrasal verb", "syn": "plan, chart"},
-        {"n": 639, "TargetWord": "miss out", "definition": "to fail to benefit from or experience something", "pos": "phrasal verb", "syn": "forgo, skip", "ant": "enjoy"},
+        {"n": 639, "TargetWord": "miss out", "definition": "to fail to benefit from or experience something; (chiefly British) to leave something out", "pos": "phrasal verb", "syn": "forgo, skip", "ant": "enjoy", "definition_gb": "to fail to benefit from or experience something; to leave something out"},
         {"n": 640, "TargetWord": "branch out", "definition": "to start doing something new or different", "pos": "phrasal verb", "syn": "expand", "ant": "specialize"},
         {"n": 641, "TargetWord": "knock out", "definition": "to render unconscious; to produce quickly; to eliminate from a competition", "pos": "phrasal verb", "syn": "stun, floor"},
         {"n": 642, "TargetWord": "bail out", "definition": "to rescue from difficulty; to abandon a sinking ship or aircraft", "pos": "phrasal verb", "syn": "relieve, ditch"}
@@ -807,7 +807,7 @@
         {"n": 648, "TargetWord": "drop off", "definition": "to deliver something; to fall asleep; to decrease", "pos": "phrasal verb", "syn": "decline, doze"},
         {"n": 649, "TargetWord": "pay off", "definition": "to yield good results; to finish paying a debt", "pos": "phrasal verb", "syn": "succeed, clear"},
         {"n": 650, "TargetWord": "show off", "definition": "to display something proudly; to try to impress others", "pos": "phrasal verb", "syn": "parade, boast", "ant": "conceal"},
-        {"n": 651, "TargetWord": "ward off", "definition": "to prevent something harmful from approaching or affecting you", "pos": "phrasal verb", "syn": "deflect", "ant": "invite"},
+        {"n": 651, "TargetWord": "ward off", "definition": "to prevent something harmful from approaching or affecting you", "pos": "phrasal verb", "syn": "deflect, fend off", "ant": "invite"},
         {"n": 652, "TargetWord": "write off", "definition": "to cancel a debt; to dismiss as a failure", "pos": "phrasal verb", "syn": "discount", "ant": "value"},
         {"n": 653, "TargetWord": "brush off", "definition": "to dismiss someone or something in a casual or rude way", "pos": "phrasal verb", "syn": "ignore, snub", "ant": "engage"},
         {"n": 654, "TargetWord": "cool off", "definition": "to become less hot; to become calm after being angry", "pos": "phrasal verb", "syn": "calm down, chill", "ant": "heat up"},
@@ -818,18 +818,18 @@
         {"n": 659, "TargetWord": "seal off", "definition": "to close off an area to prevent access", "pos": "phrasal verb", "syn": "block, cordon", "ant": "open"},
         {"n": 660, "TargetWord": "shake off", "definition": "to get rid of something unwanted", "pos": "phrasal verb", "syn": "discard", "ant": "hold on to"},
         {"n": 661, "TargetWord": "spin off", "definition": "to create a new product or company from an existing one", "pos": "phrasal verb", "syn": "separate, hive off"},
-        {"n": 662, "TargetWord": "tick off", "definition": "to mark an item on a list; to annoy someone", "pos": "phrasal verb", "syn": "check, mark"},
+        {"n": 662, "TargetWord": "tick off", "definition": "to mark an item on a list; to annoy someone", "pos": "phrasal verb", "syn": "check, mark", "definition_gb": "to mark an item on a list; to tell someone off"},
         {"n": 663, "TargetWord": "tip off", "definition": "to give someone secret or inside information", "pos": "phrasal verb", "syn": "alert, warn"},
-        {"n": 664, "TargetWord": "trail off", "definition": "to become gradually quieter or less intense", "pos": "phrasal verb", "syn": "fade", "ant": "crescendo"},
-        {"n": 665, "TargetWord": "wear off", "definition": "to gradually lose effect or intensity", "pos": "phrasal verb", "syn": "fade, ebb", "ant": "intensify"},
-        {"n": 666, "TargetWord": "fend off", "definition": "to defend oneself from an attack or unwanted attention", "pos": "phrasal verb", "syn": "deflect, parry"},
-        {"n": 667, "TargetWord": "stave off", "definition": "to prevent or delay something bad from happening", "pos": "phrasal verb", "syn": "forestall", "ant": "hasten"}
+        {"n": 664, "TargetWord": "trail off", "definition": "to become gradually quieter or less intense", "pos": "phrasal verb", "syn": "fade, wear off", "ant": "crescendo"},
+        {"n": 665, "TargetWord": "wear off", "definition": "to gradually lose effect or intensity", "pos": "phrasal verb", "syn": "fade, ebb, trail off", "ant": "intensify"},
+        {"n": 666, "TargetWord": "fend off", "definition": "to defend oneself from an attack or unwanted attention", "pos": "phrasal verb", "syn": "deflect, parry, ward off, stave off"},
+        {"n": 667, "TargetWord": "stave off", "definition": "to prevent or delay something bad from happening", "pos": "phrasal verb", "syn": "forestall, ward off", "ant": "hasten"}
       ]
     },
     {
       "cluster_id": "T4-C5", "tier": 4, "slug": "cluster4_5_phrasal_in_into", "name": "Phrasal: in, into", "name_de": "Partikelverben: in, into", "name_es": "Frasales: in, into", "name_ja": "句動詞: in, into", "name_zh": "短语动词：in, into", "name_ru": "Фразовые глаголы: in, into",
       "cards": [
-        {"n": 668, "TargetWord": "give in", "definition": "to stop resisting; to surrender to pressure", "pos": "phrasal verb", "syn": "concede, yield", "ant": "resist", "TriggerLesson": "031"},
+        {"n": 668, "TargetWord": "give in", "definition": "to stop resisting; to surrender to pressure", "pos": "phrasal verb", "syn": "concede, yield, cave in", "ant": "resist", "TriggerLesson": "031"},
         {"n": 669, "TargetWord": "break in", "definition": "to enter by force; to accustom to use; to interrupt", "pos": "phrasal verb", "syn": "interrupt, burgle"},
         {"n": 670, "TargetWord": "fill in", "definition": "to complete a form; to inform someone; to substitute for someone", "pos": "phrasal verb", "syn": "complete, brief"},
         {"n": 671, "TargetWord": "hand in", "definition": "to give something to a person in authority", "pos": "phrasal verb", "syn": "present, turn in"},
@@ -837,12 +837,12 @@
         {"n": 673, "TargetWord": "step in", "definition": "to become involved in a situation in order to help", "pos": "phrasal verb", "syn": "assist, mediate", "ant": "step back"},
         {"n": 674, "TargetWord": "settle in", "definition": "to become comfortable in a new place or situation", "pos": "phrasal verb", "syn": "adjust, adapt", "ant": "uproot"},
         {"n": 675, "TargetWord": "take in", "definition": "to understand; to deceive; to make clothing smaller; to offer shelter", "pos": "phrasal verb", "syn": "deceive, grasp"},
-        {"n": 676, "TargetWord": "draw in", "definition": "to attract; to become shorter (of days); to involve", "pos": "phrasal verb", "syn": "involve, lure"},
-        {"n": 677, "TargetWord": "cave in", "definition": "to collapse inward; to give way to pressure", "pos": "phrasal verb", "syn": "collapse, yield", "ant": "hold firm"},
-        {"n": 678, "TargetWord": "chip in", "definition": "to contribute money or effort to a group activity", "pos": "phrasal verb", "syn": "pitch in, donate"},
+        {"n": 676, "TargetWord": "draw in", "definition": "to attract; to become shorter (of days); to involve", "pos": "phrasal verb", "syn": "involve, lure, pull in"},
+        {"n": 677, "TargetWord": "cave in", "definition": "to collapse inward; to give way to pressure", "pos": "phrasal verb", "syn": "collapse, yield, give in", "ant": "hold firm"},
+        {"n": 678, "TargetWord": "chip in", "definition": "to contribute money or effort to a group activity", "pos": "phrasal verb", "syn": "pitch in, donate, kick in"},
         {"n": 679, "TargetWord": "cut in", "definition": "to interrupt someone who is speaking; to move in front suddenly", "pos": "phrasal verb", "syn": "interject, barge in", "ant": "wait"},
         {"n": 680, "TargetWord": "dig in", "definition": "to begin eating eagerly; to establish a firm position", "pos": "phrasal verb", "syn": "tuck in, hold fast"},
-        {"n": 681, "TargetWord": "kick in", "definition": "to start to take effect; to contribute money", "pos": "phrasal verb", "syn": "contribute, take effect"},
+        {"n": 681, "TargetWord": "kick in", "definition": "to start to take effect; to contribute money", "pos": "phrasal verb", "syn": "contribute, take effect, chip in"},
         {"n": 682, "TargetWord": "lock in", "definition": "to commit to an arrangement; to secure inside", "pos": "phrasal verb", "syn": "commit, fix", "ant": "release"},
         {"n": 683, "TargetWord": "plug in", "definition": "to connect an electrical device to a power source", "pos": "phrasal verb", "syn": "couple", "ant": "unplug"},
         {"n": 684, "TargetWord": "pull in", "definition": "to attract; to arrive at a station; to earn money", "pos": "phrasal verb", "syn": "arrive, draw"},
@@ -858,29 +858,29 @@
     {
       "cluster_id": "T4-C6", "tier": 4, "slug": "cluster4_6_phrasal_on", "name": "Phrasal: on", "name_de": "Partikelverben: on", "name_es": "Frasales: on", "name_ja": "句動詞: on", "name_zh": "短语动词：on", "name_ru": "Фразовые глаголы: on",
       "cards": [
-        {"n": 692, "TargetWord": "hold on", "definition": "to wait; to grip tightly; to persist", "pos": "phrasal verb", "syn": "wait, grip", "ant": "let go", "TriggerLesson": "032"},
-        {"n": 693, "TargetWord": "carry on", "definition": "to continue doing something", "pos": "phrasal verb", "syn": "proceed", "ant": "stop"},
-        {"n": 694, "TargetWord": "keep on", "definition": "to continue doing something persistently", "pos": "phrasal verb", "syn": "persevere, plug away", "ant": "quit"},
+        {"n": 692, "TargetWord": "hold on", "definition": "to wait; to grip tightly; to persist", "pos": "phrasal verb", "syn": "wait, grip, hang on", "ant": "let go", "TriggerLesson": "032"},
+        {"n": 693, "TargetWord": "carry on", "definition": "to continue doing something", "pos": "phrasal verb", "syn": "proceed, keep on, go on", "ant": "stop"},
+        {"n": 694, "TargetWord": "keep on", "definition": "to continue doing something persistently", "pos": "phrasal verb", "syn": "persevere, plug away, carry on, go on, press on", "ant": "quit"},
         {"n": 695, "TargetWord": "move on", "definition": "to progress to something new; to stop dwelling on the past", "pos": "phrasal verb", "syn": "progress", "ant": "dwell"},
         {"n": 696, "TargetWord": "take on", "definition": "to accept a task or challenge; to hire; to compete against", "pos": "phrasal verb", "syn": "engage, hire", "ant": "decline"},
         {"n": 697, "TargetWord": "pass on", "definition": "to hand something to the next person; to decline; to die", "pos": "phrasal verb", "syn": "decline, relay"},
         {"n": 698, "TargetWord": "put on", "definition": "to place clothing on oneself; to stage a performance; to pretend", "pos": "phrasal verb", "syn": "wear, pretend"},
         {"n": 699, "TargetWord": "bring on", "definition": "to cause something to happen", "pos": "phrasal verb", "syn": "trigger, provoke", "ant": "prevent"},
-        {"n": 700, "TargetWord": "hang on", "definition": "to hold tightly; to wait; to depend on", "pos": "phrasal verb", "syn": "wait, cling", "ant": "let go"},
-        {"n": 701, "TargetWord": "count on", "definition": "to rely on someone or something", "pos": "phrasal verb", "syn": "trust, reckon on", "ant": "doubt"},
+        {"n": 700, "TargetWord": "hang on", "definition": "to hold tightly; to wait; to depend on", "pos": "phrasal verb", "syn": "wait, cling, hold on", "ant": "let go"},
+        {"n": 701, "TargetWord": "count on", "definition": "to rely on someone or something", "pos": "phrasal verb", "syn": "trust, reckon on, bank on", "ant": "doubt"},
         {"n": 702, "TargetWord": "catch on", "definition": "to understand or become aware; to become popular", "pos": "phrasal verb", "syn": "understand, take hold"},
         {"n": 703, "TargetWord": "come on", "definition": "to make progress; an exclamation of encouragement or disbelief", "pos": "phrasal verb", "syn": "hurry, progress"},
         {"n": 704, "TargetWord": "drag on", "definition": "to continue for longer than expected or wanted", "pos": "phrasal verb", "syn": "linger", "ant": "fly by"},
         {"n": 705, "TargetWord": "egg on", "definition": "to urge or encourage someone to do something, often unwise", "pos": "phrasal verb", "syn": "goad, spur"},
-        {"n": 706, "TargetWord": "go on", "definition": "to continue; to happen; to talk at length", "pos": "phrasal verb", "syn": "proceed", "ant": "stop"},
-        {"n": 707, "TargetWord": "lean on", "definition": "to depend on someone for support; to put pressure on", "pos": "phrasal verb", "syn": "pressure, rely"},
-        {"n": 708, "TargetWord": "latch on", "definition": "to understand; to attach oneself to someone or something", "pos": "phrasal verb", "syn": "grasp, cotton on", "ant": "miss"},
+        {"n": 706, "TargetWord": "go on", "definition": "to continue; to happen; to talk at length", "pos": "phrasal verb", "syn": "proceed, carry on", "ant": "stop"},
+        {"n": 707, "TargetWord": "lean on", "definition": "to depend on someone for support; to put pressure on", "pos": "phrasal verb", "syn": "pressure, rely, count on, bank on"},
+        {"n": 708, "TargetWord": "latch on", "definition": "to understand; to attach oneself to someone or something", "pos": "phrasal verb", "syn": "grasp, cotton on, catch on", "ant": "miss"},
         {"n": 709, "TargetWord": "live on", "definition": "to continue to exist; to survive on a particular income or diet", "pos": "phrasal verb", "syn": "endure, persist", "ant": "perish"},
         {"n": 710, "TargetWord": "look on", "definition": "to watch something without taking part", "pos": "phrasal verb", "syn": "watch", "ant": "participate"},
         {"n": 711, "TargetWord": "pick on", "definition": "to bully or single someone out for unfair treatment", "pos": "phrasal verb", "syn": "bully, needle"},
         {"n": 712, "TargetWord": "play on", "definition": "to exploit a weakness or feeling; to continue playing", "pos": "phrasal verb", "syn": "manipulate, trade on", "ant": "ignore"},
-        {"n": 713, "TargetWord": "press on", "definition": "to continue moving forward despite difficulties", "pos": "phrasal verb", "syn": "continue, soldier on", "ant": "give up"},
-        {"n": 714, "TargetWord": "bank on", "definition": "to rely confidently on something happening", "pos": "phrasal verb", "syn": "trust, gamble on", "ant": "doubt"}
+        {"n": 713, "TargetWord": "press on", "definition": "to continue moving forward despite difficulties", "pos": "phrasal verb", "syn": "continue, soldier on, carry on, go on", "ant": "give up"},
+        {"n": 714, "TargetWord": "bank on", "definition": "to rely confidently on something happening", "pos": "phrasal verb", "syn": "trust, gamble on, count on", "ant": "doubt"}
       ]
     },
     {
@@ -891,8 +891,8 @@
         {"n": 717, "TargetWord": "take over", "definition": "to assume control or responsibility from someone else", "pos": "phrasal verb", "syn": "commandeer", "ant": "hand over"},
         {"n": 718, "TargetWord": "think over", "definition": "to consider something carefully before making a decision", "pos": "phrasal verb", "syn": "deliberate, weigh"},
         {"n": 719, "TargetWord": "look over", "definition": "to examine or inspect something quickly", "pos": "phrasal verb", "syn": "review, scan"},
-        {"n": 720, "TargetWord": "turn over", "definition": "to flip; to transfer; to generate revenue", "pos": "phrasal verb", "syn": "flip, invert"},
-        {"n": 721, "TargetWord": "roll over", "definition": "to turn onto the other side; to extend a financial arrangement", "pos": "phrasal verb", "syn": "rotate, extend"},
+        {"n": 720, "TargetWord": "turn over", "definition": "to flip; to transfer; to generate revenue", "pos": "phrasal verb", "syn": "flip, invert, roll over, carry over"},
+        {"n": 721, "TargetWord": "roll over", "definition": "to turn onto the other side; to extend a financial arrangement", "pos": "phrasal verb", "syn": "rotate, extend, carry over"},
         {"n": 722, "TargetWord": "start over", "definition": "to begin again from the beginning", "pos": "phrasal verb", "syn": "restart", "ant": "continue"},
         {"n": 723, "TargetWord": "go over", "definition": "to review or examine something in detail", "pos": "phrasal verb", "syn": "examine", "ant": "skip"},
         {"n": 724, "TargetWord": "win over", "definition": "to gain someone's support or approval", "pos": "phrasal verb", "syn": "convince, charm"},
@@ -904,7 +904,7 @@
         {"n": 730, "TargetWord": "cross over", "definition": "to move from one side to the other; to transition between categories", "pos": "phrasal verb", "syn": "transition, switch"},
         {"n": 731, "TargetWord": "gloss over", "definition": "to treat something briefly to avoid dealing with it properly", "pos": "phrasal verb", "syn": "skim, whitewash", "ant": "confront"},
         {"n": 732, "TargetWord": "keel over", "definition": "to fall over suddenly; to faint or die", "pos": "phrasal verb", "syn": "topple, faint", "ant": "stand firm"},
-        {"n": 733, "TargetWord": "mull over", "definition": "to think about something carefully and at length", "pos": "phrasal verb", "syn": "chew over", "ant": "decide quickly"},
+        {"n": 733, "TargetWord": "mull over", "definition": "to think about something carefully and at length", "pos": "phrasal verb", "syn": "chew over, think over", "ant": "decide quickly"},
         {"n": 734, "TargetWord": "run over", "definition": "to exceed a time limit; to knock down with a vehicle; to review quickly", "pos": "phrasal verb", "syn": "overrun, review"},
         {"n": 735, "TargetWord": "spill over", "definition": "to overflow; to spread beyond an intended area", "pos": "phrasal verb", "syn": "spread", "ant": "contain"},
         {"n": 736, "TargetWord": "talk over", "definition": "to discuss something thoroughly", "pos": "phrasal verb", "syn": "deliberate"},
@@ -915,32 +915,32 @@
       "cluster_id": "T4-C8", "tier": 4, "slug": "cluster4_8_phrasal_back", "name": "Phrasal: back", "name_de": "Partikelverben: back", "name_es": "Frasales: back", "name_ja": "句動詞: back", "name_zh": "短语动词：back", "name_ru": "Фразовые глаголы: back",
       "cards": [
         {"n": 738, "TargetWord": "hold back", "definition": "to restrain someone or something; to hesitate", "pos": "phrasal verb", "syn": "suppress, curb", "ant": "release", "TriggerLesson": "034"},
-        {"n": 739, "TargetWord": "fight back", "definition": "to resist or retaliate against an attack", "pos": "phrasal verb", "syn": "resist", "ant": "surrender"},
+        {"n": 739, "TargetWord": "fight back", "definition": "to resist or retaliate against an attack", "pos": "phrasal verb", "syn": "resist, strike back, bite back", "ant": "surrender"},
         {"n": 740, "TargetWord": "give back", "definition": "to return something to its owner or origin", "pos": "phrasal verb", "syn": "return, refund", "ant": "take"},
-        {"n": 741, "TargetWord": "fall back", "definition": "to retreat; to rely on something as a reserve", "pos": "phrasal verb", "syn": "withdraw, rely on", "ant": "advance"},
+        {"n": 741, "TargetWord": "fall back", "definition": "to retreat; to rely on something as a reserve", "pos": "phrasal verb", "syn": "withdraw, rely on, pull back", "ant": "advance"},
         {"n": 742, "TargetWord": "pay back", "definition": "to return money owed; to take revenge", "pos": "phrasal verb", "syn": "repay, avenge", "ant": "borrow"},
-        {"n": 743, "TargetWord": "pull back", "definition": "to withdraw from a position or situation", "pos": "phrasal verb", "syn": "withdraw", "ant": "advance"},
+        {"n": 743, "TargetWord": "pull back", "definition": "to withdraw from a position or situation", "pos": "phrasal verb", "syn": "withdraw, fall back", "ant": "advance"},
         {"n": 744, "TargetWord": "set back", "definition": "to delay progress; a reversal or problem", "pos": "phrasal verb", "syn": "hinder, check", "ant": "advance"},
-        {"n": 745, "TargetWord": "step back", "definition": "to move backwards; to withdraw to reconsider", "pos": "phrasal verb", "syn": "reconsider, pause", "ant": "plunge in"},
-        {"n": 746, "TargetWord": "draw back", "definition": "to move away from something; to recoil", "pos": "phrasal verb", "syn": "retreat, flinch", "ant": "reach out"},
-        {"n": 747, "TargetWord": "cut back", "definition": "to reduce expenditure or consumption", "pos": "phrasal verb", "syn": "curtail, trim", "ant": "expand"},
+        {"n": 745, "TargetWord": "step back", "definition": "to move backwards; to withdraw to reconsider", "pos": "phrasal verb", "syn": "reconsider, pause, pull back, fall back", "ant": "plunge in"},
+        {"n": 746, "TargetWord": "draw back", "definition": "to move away from something; to recoil", "pos": "phrasal verb", "syn": "retreat, flinch, pull back, fall back, step back", "ant": "reach out"},
+        {"n": 747, "TargetWord": "cut back", "definition": "to reduce expenditure or consumption", "pos": "phrasal verb", "syn": "curtail, trim, scale back", "ant": "expand"},
         {"n": 748, "TargetWord": "bite back", "definition": "to restrain oneself from saying something; to retaliate", "pos": "phrasal verb", "syn": "suppress, stifle", "ant": "blurt out"},
-        {"n": 749, "TargetWord": "bounce back", "definition": "to recover quickly from a setback", "pos": "phrasal verb", "syn": "rebound, rally", "ant": "crumble"},
-        {"n": 750, "TargetWord": "get back", "definition": "to return to a place or state; to recover something", "pos": "phrasal verb", "syn": "return, retrieve", "ant": "leave"},
+        {"n": 749, "TargetWord": "bounce back", "definition": "to recover quickly from a setback", "pos": "phrasal verb", "syn": "rebound, rally, snap back", "ant": "crumble"},
+        {"n": 750, "TargetWord": "get back", "definition": "to return to a place or state; to recover something", "pos": "phrasal verb", "syn": "return, retrieve, claw back", "ant": "leave"},
         {"n": 751, "TargetWord": "kick back", "definition": "to relax; an illegal payment for a favor", "pos": "phrasal verb", "syn": "unwind, lounge", "ant": "hustle", "definition_gb": "to relax; an illegal payment for a favour"},
         {"n": 752, "TargetWord": "peel back", "definition": "to remove a layer to reveal what is underneath", "pos": "phrasal verb", "syn": "expose, lift", "ant": "cover up"},
         {"n": 753, "TargetWord": "push back", "definition": "to resist or object to something; to delay", "pos": "phrasal verb", "syn": "object, delay", "ant": "accept"},
         {"n": 754, "TargetWord": "roll back", "definition": "to reverse or reduce something, especially a price or policy", "pos": "phrasal verb", "syn": "reduce, undo", "ant": "implement"},
-        {"n": 755, "TargetWord": "scale back", "definition": "to reduce the size, extent, or ambition of something", "pos": "phrasal verb", "syn": "downsize, trim", "ant": "expand"},
-        {"n": 756, "TargetWord": "snap back", "definition": "to return quickly to a previous state; to reply sharply", "pos": "phrasal verb", "syn": "rebound, spring back", "ant": "collapse"},
-        {"n": 757, "TargetWord": "strike back", "definition": "to attack in return after being attacked", "pos": "phrasal verb", "syn": "counterattack", "ant": "submit"},
-        {"n": 758, "TargetWord": "win back", "definition": "to regain something that was lost", "pos": "phrasal verb", "syn": "regain, reclaim", "ant": "lose"},
+        {"n": 755, "TargetWord": "scale back", "definition": "to reduce the size, extent, or ambition of something", "pos": "phrasal verb", "syn": "downsize, trim, cut back", "ant": "expand"},
+        {"n": 756, "TargetWord": "snap back", "definition": "to return quickly to a previous state; to reply sharply", "pos": "phrasal verb", "syn": "rebound, spring back, bounce back", "ant": "collapse"},
+        {"n": 757, "TargetWord": "strike back", "definition": "to attack in return after being attacked", "pos": "phrasal verb", "syn": "counterattack, bite back", "ant": "submit"},
+        {"n": 758, "TargetWord": "win back", "definition": "to regain something that was lost", "pos": "phrasal verb", "syn": "regain, reclaim, get back, claw back", "ant": "lose"},
         {"n": 759, "TargetWord": "claw back", "definition": "to recover money or an advantage with difficulty", "pos": "phrasal verb", "syn": "recover, retrieve", "ant": "forfeit"},
         {"n": 760, "TargetWord": "trace back", "definition": "to find the origin of something by following evidence", "pos": "phrasal verb", "syn": "track, follow", "ant": "project forward"}
       ]
     },
     {
-      "cluster_id": "T5-C1", "tier": 5, "slug": "cluster5_1_loanwords_german", "name": "German Loanwords", "name_de": "Deutsche Lehnwörter", "name_es": "Préstamos del alemán", "name_ja": "ドイツ語からの借用", "name_zh": "德语借词", "name_ru": "Заимствования из немецкого",
+      "cluster_id": "T5-C1", "tier": 5, "slug": "cluster5_1_loanwords_german", "name": "German loanwords", "name_de": "Deutsche Lehnwörter", "name_es": "Préstamos del alemán", "name_ja": "ドイツ語からの借用", "name_zh": "德语借词", "name_ru": "Заимствования из немецкого",
       "cards": [
         {"n": 761, "TargetWord": "kindergarten", "definition": "a school for young children before they start formal education", "pos": "noun", "syn": "preschool, nursery", "TriggerLesson": "035"},
         {"n": 762, "TargetWord": "wanderlust", "definition": "a strong desire to travel and explore the world", "pos": "noun", "syn": "itchy feet, travel hunger"},
@@ -969,10 +969,10 @@
       "cards": [
         {"n": 781, "TargetWord": "loanword", "definition": "a word adopted from another language with little or no modification", "pos": "noun", "syn": "borrowing, adoption", "TriggerLesson": "036"},
         {"n": 782, "TargetWord": "superman", "definition": "a person of extraordinary ability or achievement", "pos": "noun", "syn": "demigod, paragon"},
-        {"n": 783, "TargetWord": "masterpiece", "definition": "a work of outstanding artistry or skill", "pos": "noun", "syn": "classic, triumph"},
+        {"n": 783, "TargetWord": "masterpiece", "definition": "a work of outstanding artistry or skill; originally, the work a journeyman made to qualify in his guild", "pos": "noun", "syn": "classic, triumph"},
         {"n": 784, "TargetWord": "wonderland", "definition": "an imaginary place full of marvels that delight the eye", "pos": "noun", "syn": "fairyland, utopia"},
         {"n": 785, "TargetWord": "worldview", "definition": "a person's overall perspective on life and reality", "pos": "noun", "syn": "outlook, mindset"},
-        {"n": 786, "TargetWord": "homesick", "definition": "feeling sad or longing for home while away from it", "pos": "noun", "syn": "longing, pining"},
+        {"n": 786, "TargetWord": "homesick", "definition": "feeling sad or longing for home while away from it", "pos": "adj", "syn": "longing, pining"},
         {"n": 787, "TargetWord": "brainwash", "definition": "to make someone adopt beliefs by sustained pressure", "pos": "verb", "syn": "condition, sway"},
         {"n": 788, "TargetWord": "earworm", "definition": "a catchy tune that gets stuck in your head", "pos": "noun", "syn": "catchy tune, refrain"},
         {"n": 789, "TargetWord": "cobalt", "definition": "a hard silvery-blue metallic element used in alloys and dyes", "pos": "noun", "syn": "blue pigment, metal"},
@@ -1015,7 +1015,7 @@
         {"n": 821, "TargetWord": "shorn", "definition": "past participle of shear; with the wool or hair cut off", "pos": "verb/adj", "syn": "clipped, stripped"},
         {"n": 822, "TargetWord": "fraught", "definition": "filled with something undesirable; causing anxiety", "pos": "adj", "syn": "tense, laden"},
         {"n": 823, "TargetWord": "wrought", "definition": "past tense of work (archaic); shaped by hammering; caused", "pos": "verb/adj", "syn": "shaped, forged"},
-        {"n": 824, "TargetWord": "dreamt", "definition": "British past tense of having visions during sleep", "pos": "verb", "syn": "imagined, mused"},
+        {"n": 824, "TargetWord": "dreamt", "definition": "had visions in one's sleep (past tense); the form more common in British English", "pos": "verb", "syn": "imagined, mused"},
         {"n": 825, "TargetWord": "leapt", "definition": "past tense of leap; jumped suddenly or quickly", "pos": "verb", "syn": "sprang, vaulted"},
         {"n": 826, "TargetWord": "spilt", "definition": "past tense of spill; accidentally caused to flow over", "pos": "verb", "syn": "shed, slopped"}
       ]
@@ -1030,7 +1030,7 @@
         {"n": 831, "TargetWord": "meaningful", "definition": "having real significance or importance", "pos": "adj", "syn": "weighty, telling", "ant": "empty"},
         {"n": 832, "TargetWord": "mindless", "definition": "done without thought or purpose; requiring no intelligence", "pos": "adj", "syn": "thoughtless, unthinking", "ant": "deliberate"},
         {"n": 833, "TargetWord": "fearless", "definition": "showing no fear; very brave", "pos": "adj", "syn": "bold, dauntless", "ant": "fearful"},
-        {"n": 834, "TargetWord": "bountiful", "definition": "large in quantity; giving generously", "pos": "adj", "syn": "lavish, giving", "ant": "scant"},
+        {"n": 834, "TargetWord": "bountiful", "definition": "large in quantity; giving generously", "pos": "adj", "syn": "lavish, giving, plentiful", "ant": "scant"},
         {"n": 835, "TargetWord": "plentiful", "definition": "existing in great quantities; more than enough", "pos": "adj", "syn": "ample, copious", "ant": "scant"},
         {"n": 836, "TargetWord": "fretful", "definition": "anxious or worried and unable to relax", "pos": "adj", "syn": "restive, edgy", "ant": "serene"},
         {"n": 837, "TargetWord": "heedless", "definition": "showing a lack of care or attention", "pos": "adj", "syn": "careless, reckless", "ant": "attentive"},
@@ -1064,12 +1064,12 @@
         {"n": 860, "TargetWord": "seedling", "definition": "a very young plant grown from a seed", "pos": "noun", "syn": "sprout, shoot"},
         {"n": 861, "TargetWord": "nursling", "definition": "a baby that is being breastfed; anything newly cared for", "pos": "noun", "syn": "infant, suckling"},
         {"n": 862, "TargetWord": "worldling", "definition": "a person devoted to earthly pleasures and material success", "pos": "noun", "syn": "materialist, pleasure seeker", "ant": "ascetic"},
-        {"n": 863, "TargetWord": "youngling", "definition": "a very small person, animal, or plant, not yet grown", "pos": "noun", "syn": "offspring, juvenile", "ant": "elder"},
+        {"n": 863, "TargetWord": "youngling", "definition": "a person or animal early in life, not yet grown", "pos": "noun", "syn": "offspring, juvenile", "ant": "elder"},
         {"n": 864, "TargetWord": "nestling", "definition": "a bird too young to leave the nest; a very young child", "pos": "noun", "syn": "chick, hatchling"}
       ]
     },
     {
-      "cluster_id": "T5-C6", "tier": 5, "slug": "cluster5_6_craft_suffixes", "name": "Craft Suffixes", "name_de": "Handwerks-Nachsilben", "name_es": "Sufijos de oficio", "name_ja": "職の接尾辞", "name_zh": "技艺后缀", "name_ru": "Суффиксы ремёсел",
+      "cluster_id": "T5-C6", "tier": 5, "slug": "cluster5_6_craft_suffixes", "name": "Craft suffixes", "name_de": "Handwerks-Nachsilben", "name_es": "Sufijos de oficio", "name_ja": "職の接尾辞", "name_zh": "技艺后缀", "name_ru": "Суффиксы ремёсел",
       "cards": [
         {"n": 865, "TargetWord": "homeward", "definition": "towards home", "pos": "adv/adj", "syn": "homebound, back", "ant": "outward", "TriggerLesson": "040"},
         {"n": 866, "TargetWord": "skyward", "definition": "towards the sky", "pos": "adv/adj", "syn": "upward, aloft", "ant": "earthward"},
@@ -1119,20 +1119,20 @@
       ]
     },
     {
-      "cluster_id": "T5-C8", "tier": 5, "slug": "cluster5_8_kennings_poetic", "name": "Kennings & Poetry", "name_de": "Kenningar & Dichtung", "name_es": "Kenningar y poesía", "name_ja": "ケニングと詩", "name_zh": "诗体隐喻", "name_ru": "Кеннинги и поэтика",
+      "cluster_id": "T5-C8", "tier": 5, "slug": "cluster5_8_kennings_poetic", "name": "Kennings & poetry", "name_de": "Kenningar & Dichtung", "name_es": "Kenningar y poesía", "name_ja": "ケニングと詩", "name_zh": "诗体隐喻", "name_ru": "Кеннинги и поэтика",
       "cards": [
         {"n": 905, "TargetWord": "whale-road", "definition": "a poetic compound for the sea (Old English kenning)", "pos": "noun", "syn": "sea, ocean", "TriggerLesson": "042"},
         {"n": 906, "TargetWord": "bone-house", "definition": "a poetic compound for the human body (Old English kenning)", "pos": "noun", "syn": "body, frame"},
         {"n": 907, "TargetWord": "word-hoard", "definition": "a poetic compound for vocabulary or speech (Old English kenning)", "pos": "noun", "syn": "vocabulary, lexicon"},
-        {"n": 908, "TargetWord": "ring-giver", "definition": "a poetic compound for a generous king or lord (Old English kenning)", "pos": "noun", "syn": "chieftain, patron"},
+        {"n": 908, "TargetWord": "ring-giver", "definition": "a poetic compound for a generous king or lord (Old English kenning)", "pos": "noun", "syn": "chieftain, patron, gold-friend"},
         {"n": 909, "TargetWord": "shield-wall", "definition": "a battle formation of warriors standing shoulder to shoulder behind locked guards", "pos": "noun", "syn": "battle line, phalanx"},
         {"n": 910, "TargetWord": "battle-sweat", "definition": "a poetic compound for blood shed in combat (Old English kenning)", "pos": "noun", "syn": "blood, gore"},
         {"n": 911, "TargetWord": "swan-song", "definition": "a person's final performance or creative act before death or retirement", "pos": "noun", "syn": "farewell, last act"},
         {"n": 912, "TargetWord": "bookworm", "definition": "a person who reads a great deal", "pos": "noun", "syn": "reader, scholar"},
-        {"n": 913, "TargetWord": "barnstorm", "definition": "to tour rural areas giving performances; to campaign energetically", "pos": "noun/verb", "syn": "tour, campaign"},
+        {"n": 913, "TargetWord": "barnstorm", "definition": "to tour rural areas giving performances; to campaign energetically", "pos": "verb", "syn": "tour, campaign"},
         {"n": 914, "TargetWord": "mind's eye", "definition": "the faculty of imagination; the ability to visualize", "pos": "noun", "syn": "fancy, inner sight", "definition_gb": "the faculty of imagination; the ability to visualise"},
         {"n": 915, "TargetWord": "war-hawk", "definition": "a person who advocates for aggressive military action", "pos": "noun", "syn": "hardliner, militarist", "ant": "dove"},
-        {"n": 916, "TargetWord": "gold-friend", "definition": "a poetic compound for a generous lord (Old English kenning)", "pos": "noun", "syn": "patron, benefactor"},
+        {"n": 916, "TargetWord": "gold-friend", "definition": "a poetic compound for a generous lord (Old English kenning)", "pos": "noun", "syn": "patron, benefactor, ring-giver"},
         {"n": 917, "TargetWord": "wave-steed", "definition": "a poetic compound for a ship (Old English kenning)", "pos": "noun", "syn": "ship, vessel"},
         {"n": 918, "TargetWord": "sky-candle", "definition": "a poetic compound for the sun (Old English kenning)", "pos": "noun", "syn": "sun, daystar"},
         {"n": 919, "TargetWord": "death-knell", "definition": "the tolling of a bell to mark a passing, or a sign that something is ending", "pos": "noun", "syn": "doom signal, last toll"},
@@ -1142,7 +1142,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C9", "tier": 5, "slug": "cluster5_9_hidden_etymologies", "name": "Hidden Etymologies", "name_de": "Verborgene Herkunft", "name_es": "Etimologías ocultas", "name_ja": "隠れた語源", "name_zh": "隐藏词源", "name_ru": "Скрытые этимологии",
+      "cluster_id": "T5-C9", "tier": 5, "slug": "cluster5_9_hidden_etymologies", "name": "Hidden etymologies", "name_de": "Verborgene Herkunft", "name_es": "Etimologías ocultas", "name_ja": "隠れた語源", "name_zh": "隐藏词源", "name_ru": "Скрытые этимологии",
       "cards": [
         {"n": 923, "TargetWord": "daisy", "definition": "a common white flower with a yellow center", "pos": "noun", "syn": "oxeye, marguerite", "TriggerLesson": "043", "definition_gb": "a common white flower with a yellow centre"},
         {"n": 924, "TargetWord": "nostril", "definition": "either of two openings in the nose", "pos": "noun", "syn": "nose hole, naris"},
@@ -1152,7 +1152,7 @@
         {"n": 928, "TargetWord": "lady", "definition": "a woman of high social standing; a polite term for any woman", "pos": "noun", "syn": "gentlewoman, mistress"},
         {"n": 929, "TargetWord": "woman", "definition": "an adult female human being", "pos": "noun", "syn": "female, lass"},
         {"n": 930, "TargetWord": "husband", "definition": "a married man in relation to his wife", "pos": "noun", "syn": "partner, mate"},
-        {"n": 931, "TargetWord": "hussy", "definition": "an impudent or immoral woman (now offensive)", "pos": "noun", "syn": "wench, minx"},
+        {"n": 931, "TargetWord": "gossip", "definition": "idle talk about other people's affairs; a tattler", "pos": "noun", "syn": "chatter, hearsay"},
         {"n": 932, "TargetWord": "sheriff", "definition": "the chief law enforcement officer of a county", "pos": "noun", "syn": "lawman, marshal"},
         {"n": 933, "TargetWord": "gospel", "definition": "the teachings of Jesus Christ; something accepted as absolutely true", "pos": "noun", "syn": "doctrine, creed"},
         {"n": 934, "TargetWord": "steward", "definition": "a person who manages property or affairs on behalf of another", "pos": "noun", "syn": "custodian, manager"},
@@ -1167,7 +1167,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C10", "tier": 5, "slug": "cluster5_10_grimm_law_cognates", "name": "Grimm's Law Cognates", "name_de": "Verwandte nach Grimm", "name_es": "Cognados de la ley de Grimm", "name_ja": "グリムの法則の同源語", "name_zh": "格林定律同源词", "name_ru": "Когнаты закона Гримма",
+      "cluster_id": "T5-C10", "tier": 5, "slug": "cluster5_10_grimm_law_cognates", "name": "Grimm's law cognates", "name_de": "Verwandte nach Grimm", "name_es": "Cognados de la ley de Grimm", "name_ja": "グリムの法則の同源語", "name_zh": "格林定律同源词", "name_ru": "Когнаты закона Гримма",
       "cards": [
         {"n": 943, "TargetWord": "father", "definition": "a male parent", "pos": "noun", "syn": "dad, sire", "TriggerLesson": "044"},
         {"n": 944, "TargetWord": "mother", "definition": "a female parent", "pos": "noun", "syn": "parent, dam"},
@@ -1192,7 +1192,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C11", "tier": 5, "slug": "cluster5_11_cognates_false_friends", "name": "False Friends", "name_de": "Falsche Freunde", "name_es": "Falsos amigos", "name_ja": "偽りの友", "name_zh": "形似异义词", "name_ru": "Ложные когнаты",
+      "cluster_id": "T5-C11", "tier": 5, "slug": "cluster5_11_cognates_false_friends", "name": "False friends", "name_de": "Falsche Freunde", "name_es": "Falsos amigos", "name_ja": "偽りの友", "name_zh": "形似异义词", "name_ru": "Ложные когнаты",
       "cards": [
         {"n": 963, "TargetWord": "gift", "definition": "something given freely; a natural talent", "pos": "noun", "syn": "donation, talent", "TriggerLesson": "045"},
         {"n": 964, "TargetWord": "brave", "definition": "showing courage; ready to face danger", "pos": "adj", "syn": "bold, gallant", "ant": "craven"},
@@ -1202,27 +1202,27 @@
         {"n": 968, "TargetWord": "stink", "definition": "a strong unpleasant smell; to smell very bad", "pos": "verb/noun", "syn": "reek, stench"},
         {"n": 969, "TargetWord": "bitter", "definition": "having a sharp unpleasant taste; feeling angry or resentful", "pos": "adj", "syn": "harsh, acrid", "ant": "sweet"},
         {"n": 970, "TargetWord": "wander", "definition": "to walk slowly without a fixed route or purpose", "pos": "verb", "syn": "roam, ramble"},
-        {"n": 971, "TargetWord": "lust", "definition": "a very strong desire, especially sexual; an intense craving", "pos": "noun", "syn": "craving, appetite"},
+        {"n": 971, "TargetWord": "lust", "definition": "a very strong desire or craving, as for power or gold", "pos": "noun", "syn": "craving, appetite"},
         {"n": 972, "TargetWord": "bald", "definition": "having no hair on the head; plain and blunt", "pos": "adj", "syn": "hairless, bare", "ant": "hairy"},
         {"n": 973, "TargetWord": "toll", "definition": "a charge for using a road or bridge; the cost in damage or suffering", "pos": "noun", "syn": "charge, levy"},
         {"n": 974, "TargetWord": "wand", "definition": "a thin stick used in magic or conducting", "pos": "noun", "syn": "rod, baton"},
         {"n": 975, "TargetWord": "mist", "definition": "a thin cloud of tiny water droplets near the ground", "pos": "noun", "syn": "haze, fog", "ant": "clarity"},
         {"n": 976, "TargetWord": "brand", "definition": "a type of product; a mark burned onto something; fire", "pos": "noun", "syn": "mark, make"},
         {"n": 977, "TargetWord": "still", "definition": "not moving; up to this time; a device for distilling", "pos": "adj/adv", "syn": "calm, hushed", "ant": "moving"},
-        {"n": 978, "TargetWord": "stall", "definition": "a compartment for an animal; a booth at a market; to delay", "pos": "noun/verb", "syn": "booth, stand"},
+        {"n": 978, "TargetWord": "stall", "definition": "a compartment for an animal; a booth at a market; (of an engine) to stop running; to delay", "pos": "noun/verb", "syn": "booth, stand"},
         {"n": 979, "TargetWord": "handy", "definition": "useful and convenient; close at hand", "pos": "adj", "syn": "useful, deft", "ant": "awkward"},
         {"n": 980, "TargetWord": "fall", "definition": "to drop downwards; the season of autumn (North American)", "pos": "verb/noun", "syn": "drop, tumble", "ant": "rise"},
-        {"n": 981, "TargetWord": "boot", "definition": "a sturdy type of footwear; the luggage compartment of a car", "pos": "noun", "syn": "shoe, galosh"}
+        {"n": 981, "TargetWord": "boot", "definition": "a sturdy type of footwear; (British) the luggage compartment of a car", "pos": "noun", "syn": "shoe, galosh", "definition_gb": "a sturdy type of footwear; the luggage compartment of a car"}
       ]
     },
     {
-      "cluster_id": "T5-C12", "tier": 5, "slug": "cluster5_12_metaphor_compounds", "name": "Metaphor Compounds", "name_de": "Metaphorische Komposita", "name_es": "Compuestos metafóricos", "name_ja": "比喩の複合語", "name_zh": "隐喻复合词", "name_ru": "Метафорические сложные слова",
+      "cluster_id": "T5-C12", "tier": 5, "slug": "cluster5_12_metaphor_compounds", "name": "Metaphor compounds", "name_de": "Metaphorische Komposita", "name_es": "Compuestos metafóricos", "name_ja": "比喩の複合語", "name_zh": "隐喻复合词", "name_ru": "Метафорические сложные слова",
       "cards": [
         {"n": 982, "TargetWord": "brainstorm", "definition": "a spontaneous group discussion to produce ideas; a sudden clever idea", "pos": "noun/verb", "syn": "idea, huddle", "TriggerLesson": "046"},
         {"n": 983, "TargetWord": "nightmare", "definition": "a frightening dream; a terrifying or very unpleasant experience", "pos": "noun", "syn": "bad dream, terror"},
         {"n": 984, "TargetWord": "strawberry", "definition": "a small red fruit with seeds on its surface", "pos": "noun", "syn": "berry, fruit"},
-        {"n": 985, "TargetWord": "butterfly", "definition": "an insect with large colorful wings", "pos": "noun", "syn": "moth, flutterer", "definition_gb": "an insect with large colourful wings"},
-        {"n": 986, "TargetWord": "ladybug", "definition": "a small round beetle, usually red with black spots", "pos": "noun", "syn": "ladybird, beetle"},
+        {"n": 985, "TargetWord": "butterfly", "definition": "an insect with large colorful wings", "pos": "noun", "syn": "flutterer", "definition_gb": "an insect with large colourful wings"},
+        {"n": 986, "TargetWord": "ladybug", "definition": "a small round beetle, usually red with black spots", "pos": "noun", "syn": "ladybird, beetle", "TargetWord_gb": "ladybird"},
         {"n": 987, "TargetWord": "blackbird", "definition": "a common thrush, the male of which is all dark with an orange beak", "pos": "noun", "syn": "thrush, merle"},
         {"n": 988, "TargetWord": "bluebell", "definition": "a wild spring flower with blue bell-shaped blooms", "pos": "noun", "syn": "harebell, wildflower"},
         {"n": 989, "TargetWord": "foxglove", "definition": "a tall plant with tubular flowers, the source of the heart drug digitalis", "pos": "noun", "syn": "digitalis, bellflower"},

@@ -26,8 +26,8 @@
           "pugnāns и victus — что он делает",
           "или что с ним сделано.",
           "",
-          "Каждое причастие относится к одному",
-          "существительному. Найди его — и фраза"
+          "Причастие всегда при существительном.",
+          "Найди его — и фраза раскроется."
         ]
       },
       {
@@ -41,7 +41,6 @@
           "         → missus     (бывший) посланный",
           "   pugnō → pugnāns    сражающийся",
           "         → pugnātus   (бывший) сражённый",
-          "",
           "Окончания обычные: слова на -ns склоняются",
           "как ingēns, на -us — как magnus.",
           "   Equitēs ā Caesare missī omnia loca",
@@ -127,6 +126,7 @@
           "Одно причастие — две роли. По окончанию",
           "их не отличить; это видно из контекста.",
           "",
+          "",
           "ОПРЕДЕЛИТЕЛЬНАЯ роль — простая:",
           "причастие описывает существительное и",
           "стоит рядом с ним, как обычное прилаг.",
@@ -147,21 +147,21 @@
         "total_pages": 2,
         "content": [
           "ОБСТОЯТЕЛЬСТВЕННАЯ роль — активная.",
-          "Причастие задаёт обстоятельства",
-          "основного глагола: когда, почему или",
-          "как произошло действие.",
+          "Причастие задаёт обстоятельства сказуемого:",
+          "когда, почему или как произошло действие.",
           "   Multī mīlitēs aegritūdine cōnfectī",
           "   in castrīs manēbant.",
           "   = Многие солдаты, измученные болезнью,",
           "     оставались в лагере.",
           "Эта фраза — шаг в повествовании, а не",
-          "ярлык при существительном. По-русски",
-          "тут нужен придаточный: «так как они",
-          "были измучены».",
+          "ярлык при существительном. По смыслу это",
+          "придаточное: «так как они были измучены».",
+          "",
           "Два признака на странице: смысл требует",
           "«когда» или «почему», и фраза часто",
           "обособляется — многие редакторы ставят",
           "вокруг неё запятые.",
+          "",
           "Какую роль играет причастие — решай",
           "по смыслу, а не по окончанию."
         ]
@@ -182,19 +182,19 @@
           "Все глагольные окончания до сих пор",
           "называли действующее лицо. Другой набор",
           "называет получателя действия.",
-          "",
           "   ACTIVE          PASSIVE",
           "   spoliat         spoliātur",
           "   он грабит       его грабят",
           "   spoliant        spoliantur",
           "   они грабят      их грабят",
           "",
-          "Признак — -r в конце слова:",
+          "Признак — r в окончании (кроме -minī):",
           "   -or, -ris, -tur, -mur, -minī, -ntur",
           "",
           "-tur и -ntur чаще всего встречаются",
           "в прозе. Запомни эти два — остальные",
           "дадутся легко.",
+          "",
           "   Omnium animī ad laetitiam excitantur.",
           "   = Каждое сердце возбуждается к радости."
         ]
@@ -208,7 +208,6 @@
           "   spoliābātur    его грабили",
           "   spoliābantur   их грабили",
           "   spoliābitur    его ограбят",
-          "",
           "Кто совершил действие? ā или ab с",
           "творительным падежом указывают на",
           "лицо, а творительный без предлога —",
@@ -250,9 +249,9 @@
           "Равенна         Ravenna",
           "Бриндизи        Brundisium            Нажми 6",
           "Капуя           Capua",
-          "Альпы           Alpēs                 Нажми 7",
+          "Альпы           Alpēs                 Нажми 8",
           "Апеннины        Appennīnus",
-          "По              Padus                 Нажми 8",
+          "По              Padus                 Нажми x",
           "Средиземное море Mare Nostrum"
         ],
         "pronunciation_mappings": {
@@ -262,8 +261,8 @@
           "4": "Neāpolis. Pompeiī.",
           "5": "Mediōlānum. Ravenna.",
           "6": "Brundisium. Capua.",
-          "7": "Alpēs. Appennīnus.",
-          "8": "Padus. Mare Nostrum."
+          "8": "Alpēs. Appennīnus.",
+          "x": "Padus. Mare Nostrum."
         }
       },
       {
@@ -284,9 +283,9 @@
           "Сирия        Syria       Antiochīa",
           "Иудея        Iūdaea      Hierosolyma  Нажми 6",
           "Македония    Macedonia   Thessalonīca",
-          "Фракия       Thrācia     Bȳzantium    Нажми 7",
+          "Фракия       Thrācia     Bȳzantium    Нажми 8",
           "Дакия        Dācia       Sarmizegetusa",
-          "Паннония     Pannonia    Carnuntum    Нажми 8",
+          "Паннония     Pannonia    Carnuntum    Нажми x",
           "Иллирия      Illyricum   Salōna"
         ],
         "pronunciation_mappings": {
@@ -296,8 +295,8 @@
           "4": "Aegyptus. Alexandrīa. Āfrica. Carthāgō.",
           "5": "Asia. Ephesus. Syria. Antiochīa.",
           "6": "Iūdaea. Hierosolyma. Macedonia. Thessalonīca.",
-          "7": "Thrācia. Bȳzantium. Dācia. Sarmizegetusa.",
-          "8": "Pannonia. Carnuntum. Illyricum. Salōna."
+          "8": "Thrācia. Bȳzantium. Dācia. Sarmizegetusa.",
+          "x": "Pannonia. Carnuntum. Illyricum. Salōna."
         }
       },
       {
@@ -318,9 +317,9 @@
           "Персия       Persia      Persepolis",
           "Парфия       Parthia     Ecbatana     Нажми 6",
           "Армения      Armenia     Artaxata",
-          "Вифиния      Bīthȳnia    Nīcomēdīa    Нажми 7",
+          "Вифиния      Bīthȳnia    Nīcomēdīa    Нажми 8",
           "Каппадокия   Cappadocia  Caesarēa",
-          "Лузитания    Lūsītānia   Emerita      Нажми 8",
+          "Лузитания    Lūsītānia   Emerita      Нажми x",
           "Аквитания    Aquītānia   Burdigala"
         ],
         "pronunciation_mappings": {
@@ -330,8 +329,8 @@
           "4": "Cȳrēnaica. Cȳrēnē. Arabia. Petra.",
           "5": "Mesopotamia. Ctēsiphōn. Persia. Persepolis.",
           "6": "Parthia. Ecbatana. Armenia. Artaxata.",
-          "7": "Bīthȳnia. Nīcomēdīa. Cappadocia. Caesarēa.",
-          "8": "Lūsītānia. Emerita. Aquītānia. Burdigala."
+          "8": "Bīthȳnia. Nīcomēdīa. Cappadocia. Caesarēa.",
+          "x": "Lūsītānia. Emerita. Aquītānia. Burdigala."
         }
       }
     ]

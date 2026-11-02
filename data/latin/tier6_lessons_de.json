@@ -190,7 +190,7 @@
           "   spoliant        spoliantur",
           "   sie plündern    sie werden geplündert",
           "",
-          "Das Kennzeichen ist ein -r am Wortende:",
+          "Kennzeichen: ein r in der Endung (außer -minī)",
           "   -or, -ris, -tur, -mur, -minī, -ntur",
           "",
           "-tur und -ntur leisten in echter Prosa",
@@ -252,9 +252,9 @@
           "Ravenna         Ravenna",
           "Brindisi        Brundisium           Drücke 6",
           "Capua           Capua",
-          "die Alpen       Alpēs                Drücke 7",
+          "die Alpen       Alpēs                Drücke 8",
           "der Apennin     Appennīnus",
-          "der Po          Padus                Drücke 8",
+          "der Po          Padus                Drücke x",
           "das Mittelmeer  Mare Nostrum"
         ],
         "pronunciation_mappings": {
@@ -264,8 +264,8 @@
           "4": "Neāpolis. Pompeiī.",
           "5": "Mediōlānum. Ravenna.",
           "6": "Brundisium. Capua.",
-          "7": "Alpēs. Appennīnus.",
-          "8": "Padus. Mare Nostrum."
+          "8": "Alpēs. Appennīnus.",
+          "x": "Padus. Mare Nostrum."
         }
       },
       {
@@ -286,9 +286,9 @@
           "Syrien       Syria       Antiochīa",
           "Judäa        Iūdaea      Hierosolyma    Drücke 6",
           "Makedonien   Macedonia   Thessalonīca",
-          "Thrakien     Thrācia     Bȳzantium      Drücke 7",
+          "Thrakien     Thrācia     Bȳzantium      Drücke 8",
           "Dakien       Dācia       Sarmizegetusa",
-          "Pannonien    Pannonia    Carnuntum      Drücke 8",
+          "Pannonien    Pannonia    Carnuntum      Drücke x",
           "Illyrien     Illyricum   Salōna"
         ],
         "pronunciation_mappings": {
@@ -298,8 +298,8 @@
           "4": "Aegyptus. Alexandrīa. Āfrica. Carthāgō.",
           "5": "Asia. Ephesus. Syria. Antiochīa.",
           "6": "Iūdaea. Hierosolyma. Macedonia. Thessalonīca.",
-          "7": "Thrācia. Bȳzantium. Dācia. Sarmizegetusa.",
-          "8": "Pannonia. Carnuntum. Illyricum. Salōna."
+          "8": "Thrācia. Bȳzantium. Dācia. Sarmizegetusa.",
+          "x": "Pannonia. Carnuntum. Illyricum. Salōna."
         }
       },
       {
@@ -320,9 +320,9 @@
           "Persien      Persia      Persepolis",
           "Parthien     Parthia     Ecbatana    Drücke 6",
           "Armenien     Armenia     Artaxata",
-          "Bithynien    Bīthȳnia    Nīcomēdīa   Drücke 7",
+          "Bithynien    Bīthȳnia    Nīcomēdīa   Drücke 8",
           "Kappadokien  Cappadocia  Caesarēa",
-          "Lusitanien   Lūsītānia   Emerita     Drücke 8",
+          "Lusitanien   Lūsītānia   Emerita     Drücke x",
           "Aquitanien   Aquītānia   Burdigala"
         ],
         "pronunciation_mappings": {
@@ -332,8 +332,8 @@
           "4": "Cȳrēnaica. Cȳrēnē. Arabia. Petra.",
           "5": "Mesopotamia. Ctēsiphōn. Persia. Persepolis.",
           "6": "Parthia. Ecbatana. Armenia. Artaxata.",
-          "7": "Bīthȳnia. Nīcomēdīa. Cappadocia. Caesarēa.",
-          "8": "Lūsītānia. Emerita. Aquītānia. Burdigala."
+          "8": "Bīthȳnia. Nīcomēdīa. Cappadocia. Caesarēa.",
+          "x": "Lūsītānia. Emerita. Aquītānia. Burdigala."
         }
       }
     ]

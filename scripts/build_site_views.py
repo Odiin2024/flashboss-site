@@ -36,7 +36,10 @@ this script alone on a clean tree and confirm `git status -- data/` is empty.
 """
 import argparse, glob, json, os, re
 
-REPO = "/home/odiin/Documents/Bootcamp/knight/flashcard_sets"
+# FLASHBOSS_CARDS overrides the source tree: knight's working tree is often on a
+# branch with local edits, so a site refresh reads an export of the release branch
+# (git archive origin/tauri-release flashcard_sets | tar -x -C <dir>) and points this at it.
+REPO = os.environ.get("FLASHBOSS_CARDS", "/home/odiin/Documents/Bootcamp/knight/flashcard_sets")
 # (language, set label, knight dir, site path, offset, mode)
 #  mode "eng"  -> English EFL: TargetWord + Translation, honours the gb/us twin
 #  mode "lang" -> language pack: TargetWord + TargetArticle + Translation
@@ -80,7 +83,21 @@ SETS = [("English", "Core",     "English/core",               "data/english/core
         # in Notes — so they build in "roots" mode too. Registered 2026-09-21; until then
         # their views were 2026-08-28 hand drops with nothing keeping them in step.
         ("English", "Adept",        "English_Adept/core",       "data/english/ad/CORE_FINAL.json",     0,    "roots"),
-        ("English", "Advance",      "English_Advance/core",     "data/english/adv/CORE_FINAL.json",    0,    "roots")]
+        ("English", "Advance",      "English_Advance/core",     "data/english/adv/CORE_FINAL.json",    0,    "roots"),
+        # Toki Pona (free in the base game). Its view was a hand drop that only the gloss
+        # injector touched, so the 2026-10 deck edits (cluster names, card order) never
+        # reached it. Built from the cluster cards like the rest since 2026-11-02.
+        ("Toki Pona", "Core",       "Toki_Pona/core",           "data/toki_pona/CORE_FINAL.json",      0,    "lang"),
+        # Indonesian and Russian (added 2026-11-02): six weekly DLC releases from
+        # Thursday 2026-11-05, and every store page promises the full word list on the
+        # website. Same three-set shape as the five courses above. Russian's
+        # HELPER_WORDS_*.txt are authoring files (function words taught in lessons,
+        # never cards) and are not read: walk() only takes cluster folders.
+        *[(lang, label, f"{lang}{sub}", f"data/{lang.lower()}/{fname}", 0, "lang")
+          for lang in ("Indonesian", "Russian")
+          for label, sub, fname in (("Core",    "/core",               "CORE_FINAL.json"),
+                                    ("Pareto1", "_Extensions/pareto1", "PARETO1_FINAL.json"),
+                                    ("Pareto2", "_Extensions/pareto2", "PARETO2_FINAL.json"))]]
 
 # Notes shape on a Roots card, one line:
 #   "noun | Old English freodom (...). Norman twin: liberty, ... syn: independence | ant: captivity | Related: free"
@@ -103,7 +120,7 @@ def ck(p):
     m = re.search(r'cluster(\d+)_(\d+)', os.path.basename(p))
     return (int(m.group(1)), int(m.group(2)))
 
-NAME_LOCALES = ("", "_de", "_es", "_ja", "_zh", "_ru")
+NAME_LOCALES = ("", "_de", "_es", "_ja", "_zh", "_ru", "_ar")   # _ar: wordlists.ar.html, 2026-11-02
 
 def cluster_names(setdir):
     """The authored cluster labels, keyed by folder slug, per locale.
@@ -278,7 +295,19 @@ if __name__ == "__main__":
                   ("data/english/p1/CORE_FINAL.json",   ("de", "es", "ja", "zh"), True),
                   ("data/english/p2/CORE_FINAL.json",   ("de", "es", "ja", "zh"), True),
                   ("data/latin/CORE_FINAL.json",        ("de", "es", "ja"),       False),
-                  ("data/latin/PARETO1_FINAL.json",     ("de", "es", "ja"),       False)]
+                  ("data/latin/PARETO1_FINAL.json",     ("de", "es", "ja"),       False),
+                  # Arabic and the two new courses (2026-11-02). Every foreign card carries
+                  # Translation_ar upstream; the Russian cards carry no Translation_ru (it is
+                  # their own language), which is why ru is not asked of them.
+                  ("data/latin/CORE_FINAL.json",        ("ar",),                  False),
+                  ("data/swahili/CORE_FINAL.json",      ("ar",),                  False),
+                  ("data/german/CORE_FINAL.json",       ("ar",),                  False),
+                  ("data/indonesian/CORE_FINAL.json",     ("de", "es", "ja", "zh", "ru", "ar"), False),
+                  ("data/indonesian/PARETO1_FINAL.json",  ("de", "es", "ja", "zh", "ru", "ar"), False),
+                  ("data/indonesian/PARETO2_FINAL.json",  ("de", "es", "ja", "zh", "ru", "ar"), False),
+                  ("data/russian/CORE_FINAL.json",        ("de", "es", "ja", "zh", "ar"),       True),
+                  ("data/russian/PARETO1_FINAL.json",     ("de", "es", "ja", "zh", "ar"),       True),
+                  ("data/russian/PARETO2_FINAL.json",     ("de", "es", "ja", "zh", "ar"),       True)]
         holes = []
         for rel, locs, wants_example in EXPECT:
             cards = [c for cl in _json.load(open(rel, encoding="utf-8"))["clusters"]

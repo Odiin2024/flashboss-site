@@ -46,7 +46,7 @@
         {"n": 32, "TargetWord": "comet", "definition": "an icy body that grows a bright tail near the sun", "pos": "noun", "syn": "blazing star"},
         {"n": 33, "TargetWord": "galaxy", "definition": "a vast spinning system of stars bound by gravity", "pos": "noun", "syn": "star system"},
         {"n": 34, "TargetWord": "atlas", "definition": "a bound book of maps, often with charts and tables", "pos": "noun", "syn": "map book"},
-        {"n": 35, "TargetWord": "marathon", "definition": "a foot race of just over twenty six miles", "pos": "noun", "syn": "endurance race"},
+        {"n": 35, "TargetWord": "marathon", "definition": "a foot race of just over twenty-six miles", "pos": "noun", "syn": "endurance race"},
         {"n": 36, "TargetWord": "alphabet", "definition": "the full set of signs used to write a language, in fixed order", "pos": "noun", "syn": "letters"},
         {"n": 37, "TargetWord": "drama", "definition": "a work written to be performed by actors rather than read", "pos": "noun", "syn": "play, spectacle"},
         {"n": 38, "TargetWord": "comedy", "definition": "a play or film meant to amuse, ending happily", "pos": "noun", "syn": "farce, humor"},
@@ -64,11 +64,11 @@
         {"n": 45, "TargetWord": "teleconference", "definition": "a conference held between people in different places using telecommunications links", "pos": "noun", "syn": "video call, virtual meeting"},
         {"n": 46, "TargetWord": "telecommunications", "definition": "the transmission of signals, images, and sound over distances by cable or broadcast", "pos": "noun", "syn": "telecoms"},
         {"n": 47, "TargetWord": "automatic", "definition": "operating independently of direct human control", "pos": "adj", "syn": "mechanical, self-operating", "ant": "manual"},
-        {"n": 48, "TargetWord": "automobile", "definition": "a road vehicle powered by an engine; a car", "pos": "noun", "syn": "car, vehicle"},
+        {"n": 48, "TargetWord": "automobile", "definition": "a road vehicle powered by an engine; a car", "pos": "noun", "syn": "car, vehicle, auto"},
         {"n": 49, "TargetWord": "autopilot", "definition": "a device that automatically keeps a vehicle or aircraft on a set course", "pos": "noun", "syn": "self-steering system", "ant": "manual control"},
         {"n": 50, "TargetWord": "autobiography", "definition": "an account of a person's life written by that person", "pos": "noun", "syn": "memoir", "ant": "biography"},
         {"n": 51, "TargetWord": "automation", "definition": "the use of automatic equipment to replace manual labor in a process", "pos": "noun", "syn": "mechanization", "ant": "manual labor", "definition_gb": "the use of automatic equipment to replace manual labour in a process"},
-        {"n": 52, "TargetWord": "auto", "definition": "a motor car (chiefly North American, informal)", "pos": "noun", "syn": "car, motor"},
+        {"n": 52, "TargetWord": "auto", "definition": "a motor car (chiefly North American, informal)", "pos": "noun", "syn": "car, motor, automobile"},
         {"n": 53, "TargetWord": "automated", "definition": "made to operate automatically, with minimal human involvement", "pos": "adj", "syn": "mechanized, computerized", "ant": "manual"},
         {"n": 54, "TargetWord": "autism", "definition": "a lifelong developmental condition affecting social interaction and communication", "pos": "noun", "syn": "autism spectrum disorder"},
         {"n": 55, "TargetWord": "automaton", "definition": "a machine built to move or act on its own, often shaped like a person", "pos": "noun", "syn": "robot, android"},
@@ -111,7 +111,7 @@
       "cards": [
         {"n": 83, "TargetWord": "microwave", "definition": "an oven that heats or cooks food rapidly using short electromagnetic waves", "pos": "noun", "syn": "nuke (informal)", "TriggerLesson": "005"},
         {"n": 84, "TargetWord": "microchip", "definition": "a small piece of semiconductor material etched with an electronic circuit", "pos": "noun", "syn": "chip, integrated circuit"},
-        {"n": 85, "TargetWord": "microbe", "definition": "a microscopic organism, especially a bacterium", "pos": "noun", "syn": "germ, bacterium"},
+        {"n": 85, "TargetWord": "microbe", "definition": "a microscopic organism, especially a bacterium", "pos": "noun", "syn": "germ, bacterium, microorganism"},
         {"n": 86, "TargetWord": "microorganism", "definition": "an organism too small to be seen without magnification, such as a bacterium or virus", "pos": "noun", "syn": "microbe, germ"},
         {"n": 87, "TargetWord": "microbiology", "definition": "the scientific study of microorganisms", "pos": "noun", "syn": "germ science"},
         {"n": 88, "TargetWord": "microscope", "definition": "an instrument that magnifies objects too small to see with the naked eye", "pos": "noun", "syn": "magnifier"},
@@ -251,12 +251,12 @@
         {"n": 192, "TargetWord": "antibiotic", "definition": "a medicine that destroys or inhibits the growth of bacteria", "pos": "noun", "syn": "antimicrobial, antibacterial", "ant": "probiotic", "TriggerLesson": "012"},
         {"n": 193, "TargetWord": "antidote", "definition": "a substance that counteracts a particular poison", "pos": "noun", "syn": "antitoxin, remedy", "ant": "poison"},
         {"n": 194, "TargetWord": "antiseptic", "definition": "a substance that prevents infection by destroying or inhibiting germs", "pos": "noun", "syn": "disinfectant, germicide", "ant": "septic"},
-        {"n": 195, "TargetWord": "antisocial", "definition": "hostile to or disruptive of normal social interaction", "pos": "adj", "syn": "unsociable, withdrawn", "ant": "sociable, gregarious"},
+        {"n": 195, "TargetWord": "antisocial", "definition": "unwilling to mix with other people; also, harmful or hostile to society", "pos": "adj", "syn": "unsociable, withdrawn", "ant": "sociable, gregarious"},
         {"n": 196, "TargetWord": "antagonist", "definition": "a person who actively opposes or competes with another", "pos": "noun", "syn": "adversary, rival, opponent", "ant": "protagonist, ally"},
         {"n": 197, "TargetWord": "antibody", "definition": "a blood protein produced to counteract a specific antigen", "pos": "noun", "syn": "immunoglobulin", "ant": "antigen"},
         {"n": 198, "TargetWord": "antidepressant", "definition": "a drug used to prevent or treat depression", "pos": "noun", "syn": "mood lifter", "ant": "depressant"},
         {"n": 199, "TargetWord": "hyper", "definition": "overly excited, energetic, or agitated", "pos": "adj", "syn": "overexcited, wired", "ant": "calm, lethargic"},
-        {"n": 200, "TargetWord": "hyperspace", "definition": "an imagined realm beyond three dimensions used in fiction for very fast travel", "pos": "noun", "syn": "subspace, warp drive"},
+        {"n": 200, "TargetWord": "hyperspace", "definition": "an imagined realm beyond three dimensions used in fiction for very fast travel", "pos": "noun", "syn": "subspace"},
         {"n": 201, "TargetWord": "hyperventilate", "definition": "to breathe abnormally fast and deeply, often from anxiety", "pos": "verb", "syn": "pant, gasp"},
         {"n": 202, "TargetWord": "hypertension", "definition": "abnormally high blood pressure", "pos": "noun", "syn": "high blood pressure", "ant": "hypotension"},
         {"n": 203, "TargetWord": "hyperactive", "definition": "abnormally energetic and unable to keep still or concentrate", "pos": "adj", "syn": "overactive, restless", "ant": "lethargic, sluggish"},
@@ -265,9 +265,9 @@
         {"n": 206, "TargetWord": "pseudonym", "definition": "a fictitious name adopted especially by an author", "pos": "noun", "syn": "pen name, alias", "ant": "real name"},
         {"n": 207, "TargetWord": "pseudoscience", "definition": "a set of beliefs or practices mistakenly regarded as scientific", "pos": "noun", "syn": "quackery"},
         {"n": 208, "TargetWord": "pseudointellectual", "definition": "a person who claims greater intellectual understanding than they possess", "pos": "noun", "syn": "poseur, know-it-all"},
-        {"n": 209, "TargetWord": "pseudo", "definition": "false or pretend; not genuine", "pos": "adj", "syn": "fake, sham, phoney", "ant": "genuine, authentic"},
+        {"n": 209, "TargetWord": "pseudo", "definition": "false or pretend; not genuine", "pos": "adj", "syn": "fake, sham, phony", "ant": "genuine, authentic"},
         {"n": 210, "TargetWord": "antarctic", "definition": "of or relating to the frozen continent and ocean around the South Pole", "pos": "adj", "syn": "polar, southern"},
-        {"n": 211, "TargetWord": "hypermarket", "definition": "a very large store selling groceries and household goods under one roof", "pos": "noun", "syn": "superstore, big box"}
+        {"n": 211, "TargetWord": "hypermarket", "definition": "a very large store selling groceries and household goods under one roof", "pos": "noun", "syn": "superstore, big box", "definition_gb": "a very large shop selling groceries and household goods under one roof"}
       ]
     },
     {
@@ -296,7 +296,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C2", "tier": 2, "slug": "cluster2_2_prefixes_position_peri_dia_epi", "name": "Peri-, Dia-, Epi-", "name_de": "Präfixe: Peri-/Dia-/Epi-", "name_es": "Prefijos: Peri-/Dia-/Epi-", "name_ja": "接頭辞: Peri-/Dia-/Epi-", "name_zh": "前缀：Peri-、Dia-、Epi-", "name_ru": "Префиксы: Peri-/Dia-/Epi-",
+      "cluster_id": "T2-C2", "tier": 2, "slug": "cluster2_2_prefixes_position_peri_dia_epi", "name": "Peri-, dia-, epi-", "name_de": "Präfixe: Peri-/Dia-/Epi-", "name_es": "Prefijos: Peri-/Dia-/Epi-", "name_ja": "接頭辞: Peri-/Dia-/Epi-", "name_zh": "前缀：Peri-、Dia-、Epi-", "name_ru": "Префиксы: Peri-/Dia-/Epi-",
       "cards": [
         {"n": 232, "TargetWord": "period", "definition": "a length of time, especially one considered distinct or characteristic", "pos": "noun", "syn": "interval, era, span", "TriggerLesson": "014"},
         {"n": 233, "TargetWord": "pericardium", "definition": "the double-walled membranous sac that encloses the heart", "pos": "noun", "syn": "cardiac sac"},
@@ -317,21 +317,21 @@
       ]
     },
     {
-      "cluster_id": "T2-C3", "tier": 2, "slug": "cluster2_3_prefixes_together_syn_ana_cata_apo", "name": "Syn-, Ana-, Cata-, Apo-", "name_de": "Präfixe: Syn-/Ana-/Cata-/Apo-", "name_es": "Prefijos: Syn-/Ana-/Cata-/Apo-", "name_ja": "接頭辞: Syn-/Ana-/Cata-/Apo-", "name_zh": "前缀：Syn-、Ana-、Cata-、Apo-", "name_ru": "Префиксы: Syn-/Ana-/Cata-/Apo-",
+      "cluster_id": "T2-C3", "tier": 2, "slug": "cluster2_3_prefixes_together_syn_ana_cata_apo", "name": "Syn-, ana-, cata-, apo-", "name_de": "Präfixe: Syn-/Ana-/Cata-/Apo-", "name_es": "Prefijos: Syn-/Ana-/Cata-/Apo-", "name_ja": "接頭辞: Syn-/Ana-/Cata-/Apo-", "name_zh": "前缀：Syn-、Ana-、Cata-、Apo-", "name_ru": "Префиксы: Syn-/Ana-/Cata-/Apo-",
       "cards": [
         {"n": 248, "TargetWord": "system", "definition": "a set of interconnected parts working together as a whole", "pos": "noun", "syn": "network, structure", "ant": "chaos, disorder", "TriggerLesson": "015"},
         {"n": 249, "TargetWord": "synthesis", "definition": "the combination of separate elements to form a new whole", "pos": "noun", "syn": "combination, fusion", "ant": "analysis, breakdown"},
         {"n": 250, "TargetWord": "symmetry", "definition": "balanced proportion between the parts of something", "pos": "noun", "syn": "balance, proportion", "ant": "asymmetry, imbalance"},
         {"n": 251, "TargetWord": "syndrome", "definition": "a group of symptoms that consistently occur together, characterizing a particular condition", "pos": "noun", "syn": "condition, disorder", "definition_gb": "a group of symptoms that consistently occur together, characterising a particular condition"},
         {"n": 252, "TargetWord": "analysis", "definition": "a detailed examination of something's elements or structure", "pos": "noun", "syn": "examination, breakdown", "ant": "synthesis"},
-        {"n": 253, "TargetWord": "anatomy", "definition": "the bodily structure of an organism, or the study of it", "pos": "noun", "syn": "physiology, structure"},
+        {"n": 253, "TargetWord": "anatomy", "definition": "the bodily structure of an organism, or the study of it", "pos": "noun", "syn": "structure, body plan"},
         {"n": 254, "TargetWord": "analyst", "definition": "a person who examines something in detail to understand it", "pos": "noun", "syn": "examiner, evaluator"},
         {"n": 255, "TargetWord": "anagram", "definition": "a word or phrase formed by rearranging the letters of another", "pos": "noun", "syn": "wordplay, rearrangement"},
-        {"n": 256, "TargetWord": "catastrophe", "definition": "a sudden event causing great damage or suffering", "pos": "noun", "syn": "disaster, calamity", "ant": "triumph"},
+        {"n": 256, "TargetWord": "catastrophe", "definition": "a sudden event causing great damage or suffering", "pos": "noun", "syn": "disaster, calamity, apocalypse, cataclysm", "ant": "triumph"},
         {"n": 257, "TargetWord": "category", "definition": "a class or division into which things are grouped", "pos": "noun", "syn": "class, division"},
         {"n": 258, "TargetWord": "catalog", "definition": "a complete list of items, typically with descriptive details", "pos": "noun", "syn": "index, inventory", "TargetWord_gb": "catalogue"},
         {"n": 259, "TargetWord": "catalyst", "definition": "a substance or event that triggers a significant change", "pos": "noun", "syn": "trigger, spark"},
-        {"n": 260, "TargetWord": "cataclysm", "definition": "a large-scale, violent event causing great change or destruction", "pos": "noun", "syn": "upheaval, disaster"},
+        {"n": 260, "TargetWord": "cataclysm", "definition": "a large-scale, violent event causing great change or destruction", "pos": "noun", "syn": "upheaval, disaster, catastrophe, apocalypse"},
         {"n": 261, "TargetWord": "apology", "definition": "a statement expressing regret for having done something wrong", "pos": "noun", "syn": "regret, contrition"},
         {"n": 262, "TargetWord": "apocalypse", "definition": "an event causing total devastation or the end of the world", "pos": "noun", "syn": "catastrophe, doomsday"},
         {"n": 263, "TargetWord": "apostle", "definition": "a person sent out to spread a message or teaching, especially one of Christ's original followers", "pos": "noun", "syn": "messenger, missionary"},
@@ -343,12 +343,12 @@
       ]
     },
     {
-      "cluster_id": "T2-C4", "tier": 2, "slug": "cluster2_4_prefixes_inside_outside_endo_exo_ecto_meta", "name": "Endo-, Exo-, Ecto-, Meta-", "name_de": "Präfixe: Endo-/Exo-/Ecto-", "name_es": "Prefijos: Endo-/Exo-/Ecto-", "name_ja": "接頭辞: Endo-/Exo-/Ecto-/Meta-", "name_zh": "前缀：Endo-/Exo-/Ecto-/Meta-", "name_ru": "Префиксы: Endo-/Exo-/Ecto-",
+      "cluster_id": "T2-C4", "tier": 2, "slug": "cluster2_4_prefixes_inside_outside_endo_exo_ecto_meta", "name": "Endo-, exo-, ecto-, meta-", "name_de": "Präfixe: Endo-/Exo-/Ecto-", "name_es": "Prefijos: Endo-/Exo-/Ecto-", "name_ja": "接頭辞: Endo-/Exo-/Ecto-/Meta-", "name_zh": "前缀：Endo-/Exo-/Ecto-/Meta-", "name_ru": "Префиксы: Endo-/Exo-/Ecto-",
       "cards": [
         {"n": 269, "TargetWord": "endoscope", "definition": "a thin, flexible instrument with a light and camera, used to see inside the body", "pos": "noun", "syn": "borescope, viewing probe", "TriggerLesson": "016"},
         {"n": 270, "TargetWord": "endocrine", "definition": "relating to glands that secrete hormones directly into the bloodstream", "pos": "adj", "syn": "hormonal, glandular", "ant": "exocrine"},
         {"n": 271, "TargetWord": "endogenous", "definition": "originating from within an organism, cell, or system rather than from outside", "pos": "adj", "syn": "internal, innate", "ant": "exogenous"},
-        {"n": 272, "TargetWord": "endorphin", "definition": "a hormone produced by the brain that reduces pain and induces feelings of wellbeing", "pos": "noun", "syn": "natural opiate, neurochemical"},
+        {"n": 272, "TargetWord": "endorphin", "definition": "a hormone produced by the brain that reduces pain and induces feelings of well-being", "pos": "noun", "syn": "natural opiate, neurochemical", "definition_gb": "a hormone produced by the brain that reduces pain and induces feelings of wellbeing"},
         {"n": 273, "TargetWord": "exotic", "definition": "originating from a distant foreign country; strikingly unusual or colorful", "pos": "adj", "syn": "foreign, exceptional", "ant": "native, familiar", "definition_gb": "originating from a distant foreign country; strikingly unusual or colourful"},
         {"n": 274, "TargetWord": "exodus", "definition": "a mass departure of people from a place", "pos": "noun", "syn": "departure, migration", "ant": "influx"},
         {"n": 275, "TargetWord": "exoskeleton", "definition": "a rigid external covering that supports and protects an animal's body", "pos": "noun", "syn": "carapace, shell", "ant": "endoskeleton"},
@@ -356,7 +356,7 @@
         {"n": 277, "TargetWord": "ectoplasm", "definition": "a supernatural substance said to be released by a medium in a trance", "pos": "noun", "syn": "emanation, spirit matter"},
         {"n": 278, "TargetWord": "ectomorph", "definition": "a person with a naturally lean, slender body build", "pos": "noun", "syn": "lean build", "ant": "endomorph"},
         {"n": 279, "TargetWord": "metaphor", "definition": "a figure of speech describing something by referring to another thing it resembles", "pos": "noun", "syn": "figure of speech, analogy"},
-        {"n": 280, "TargetWord": "metabolism", "definition": "the chemical processes by which a body converts food into energy", "pos": "noun", "syn": "bodily processes, digestion"},
+        {"n": 280, "TargetWord": "metabolism", "definition": "the chemical processes by which a body converts food into energy", "pos": "noun", "syn": "bodily processes, body chemistry"},
         {"n": 281, "TargetWord": "metamorphosis", "definition": "a complete change of form or nature during development", "pos": "noun", "syn": "transformation, transfiguration"},
         {"n": 282, "TargetWord": "metaphysics", "definition": "the branch of philosophy concerned with the fundamental nature of reality and existence", "pos": "noun", "syn": "ontology"},
         {"n": 283, "TargetWord": "hypothesis", "definition": "a proposed explanation made as a starting point for further investigation", "pos": "noun", "syn": "theory, conjecture", "ant": "proof"},
@@ -367,7 +367,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C5", "tier": 2, "slug": "cluster2_5_root_log_nomy_dem_polit_word_law_people_city", "name": "Log, -nomy, Dem & Polit", "name_de": "Wurzeln: Log, Nomy, Dem, Polit", "name_es": "Raíces: Log, Nomy, Dem y Polit", "name_ja": "語根: Log・-nomy・Dem・Polit", "name_zh": "词根：Log、-nomy、Dem与Polit", "name_ru": "Корни: Log, -nomy, Dem и Polit",
+      "cluster_id": "T2-C5", "tier": 2, "slug": "cluster2_5_root_log_nomy_dem_polit_word_law_people_city", "name": "Log, -nomy, dem & polit", "name_de": "Wurzeln: Log, Nomy, Dem, Polit", "name_es": "Raíces: Log, Nomy, Dem y Polit", "name_ja": "語根: Log・-nomy・Dem・Polit", "name_zh": "词根：Log、-nomy、Dem与Polit", "name_ru": "Корни: Log, -nomy, Dem и Polit",
       "cards": [
         {"n": 288, "TargetWord": "logic", "definition": "a system of reasoning used to reach valid conclusions", "pos": "noun", "syn": "reasoning, rationale", "ant": "illogic", "TriggerLesson": "017"},
         {"n": 289, "TargetWord": "analogy", "definition": "a comparison between two different things that highlights a shared feature", "pos": "noun", "syn": "comparison, parallel", "ant": "contrast"},
@@ -395,7 +395,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C6", "tier": 2, "slug": "cluster2_6_root_arch_chron_archae_rule_time", "name": "Arch & Chron", "name_de": "Wurzeln: Arch & Chron", "name_es": "Raíces: Arch y Chron", "name_ja": "語根: Arch・Chron", "name_zh": "词根：Arch与Chron", "name_ru": "Корни: Arch и Chron",
+      "cluster_id": "T2-C6", "tier": 2, "slug": "cluster2_6_root_arch_chron_archae_rule_time", "name": "Arch & chron", "name_de": "Wurzeln: Arch & Chron", "name_es": "Raíces: Arch y Chron", "name_ja": "語根: Arch・Chron", "name_zh": "词根：Arch与Chron", "name_ru": "Корни: Arch и Chron",
       "cards": [
         {"n": 311, "TargetWord": "monarch", "definition": "a sovereign head of state, especially a king or queen", "pos": "noun", "syn": "sovereign, ruler", "ant": "subject", "TriggerLesson": "019"},
         {"n": 312, "TargetWord": "architect", "definition": "a person who designs buildings and oversees their construction", "pos": "noun", "syn": "designer, planner"},
@@ -415,12 +415,12 @@
       ]
     },
     {
-      "cluster_id": "T2-C7", "tier": 2, "slug": "cluster2_7_root_techn_mech_cosm_craft_order", "name": "Techn & Mech", "name_de": "Wurzeln: Techn & Mech", "name_es": "Raíces: Techn y Mech", "name_ja": "語根: Techn・Mech", "name_zh": "词根：Techn与Mech", "name_ru": "Корни: Techn и Mech",
+      "cluster_id": "T2-C7", "tier": 2, "slug": "cluster2_7_root_techn_mech_cosm_craft_order", "name": "Techn & mech", "name_de": "Wurzeln: Techn & Mech", "name_es": "Raíces: Techn y Mech", "name_ja": "語根: Techn・Mech", "name_zh": "词根：Techn与Mech", "name_ru": "Корни: Techn и Mech",
       "cards": [
         {"n": 326, "TargetWord": "pyrotechnic", "definition": "relating to fireworks, or spectacularly dramatic in style", "pos": "adj", "syn": "explosive, spectacular", "TriggerLesson": "020"},
         {"n": 327, "TargetWord": "technique", "definition": "a particular way of carrying out a task, especially one requiring skill", "pos": "noun", "syn": "method, approach, skill"},
         {"n": 328, "TargetWord": "technical", "definition": "relating to the practical skills or knowledge used in a specialized field", "pos": "adj", "syn": "specialized, mechanical", "ant": "general, non-specialist", "definition_gb": "relating to the practical skills or knowledge used in a specialised field"},
-        {"n": 329, "TargetWord": "technician", "definition": "a person skilled in the practical application of a science or in operating specialized equipment", "pos": "noun", "syn": "specialist, engineer", "ant": "amateur", "definition_gb": "a person skilled in the practical application of a science or in operating specialised equipment"},
+        {"n": 329, "TargetWord": "technician", "definition": "a person skilled in the practical application of a science or in operating specialized equipment", "pos": "noun", "syn": "specialist, engineer, mechanic", "ant": "amateur", "definition_gb": "a person skilled in the practical application of a science or in operating specialised equipment"},
         {"n": 330, "TargetWord": "polytechnic", "definition": "a college or institute teaching many practical and applied subjects", "pos": "noun", "syn": "institute, college"},
         {"n": 331, "TargetWord": "mechanic", "definition": "a skilled worker who repairs and maintains machinery, especially vehicle engines", "pos": "noun", "syn": "technician, engineer"},
         {"n": 332, "TargetWord": "machine", "definition": "an apparatus using mechanical power, with several parts each performing a definite function", "pos": "noun", "syn": "apparatus, device, engine"},
@@ -429,7 +429,7 @@
         {"n": 335, "TargetWord": "cosmos", "definition": "the universe seen as a well-ordered whole", "pos": "noun", "syn": "universe, creation", "ant": "chaos"},
         {"n": 336, "TargetWord": "cosmopolitan", "definition": "including people from many different countries; at ease across many cultures", "pos": "adj", "syn": "worldly, international", "ant": "parochial, insular"},
         {"n": 337, "TargetWord": "cosmetic", "definition": "relating to treatments that improve appearance, or improving only the outward appearance of something", "pos": "adj", "syn": "superficial, outward", "ant": "substantive, structural"},
-        {"n": 338, "TargetWord": "cosmetics", "definition": "substances applied to the face or body to enhance or alter appearance", "pos": "noun", "syn": "make-up, maquillage"},
+        {"n": 338, "TargetWord": "cosmetics", "definition": "substances applied to the face or body to enhance or alter appearance", "pos": "noun", "syn": "makeup, maquillage"},
         {"n": 339, "TargetWord": "cosmology", "definition": "the scientific study of the origin, structure, and development of the universe", "pos": "noun", "syn": "astrophysics, astronomy"},
         {"n": 340, "TargetWord": "microcosm", "definition": "something seen as encapsulating in miniature the qualities of something much larger", "pos": "noun", "syn": "miniature, epitome", "ant": "macrocosm"},
         {"n": 341, "TargetWord": "cosmonaut", "definition": "a crew member of a Russian or Soviet spacecraft", "pos": "noun", "syn": "astronaut, spaceman"}
@@ -468,7 +468,7 @@
         {"n": 364, "TargetWord": "bureaucracy", "definition": "a system of government or organization run by officials following fixed procedures", "pos": "noun", "syn": "administration, red tape, officialdom", "definition_gb": "a system of government or organisation run by officials following fixed procedures"},
         {"n": 365, "TargetWord": "meritocracy", "definition": "a system in which advancement is based on ability rather than wealth or birth", "pos": "noun", "syn": "achievement-based system", "ant": "nepotism"},
         {"n": 366, "TargetWord": "plutocracy", "definition": "a system of government in which the wealthy hold power", "pos": "noun", "syn": "government by the wealthy", "ant": "meritocracy"},
-        {"n": 367, "TargetWord": "democrat", "definition": "a person who believes in or supports rule by the people", "pos": "noun", "syn": "republican, egalitarian", "ant": "autocrat"},
+        {"n": 367, "TargetWord": "democrat", "definition": "a person who believes in or supports rule by the people", "pos": "noun", "syn": "egalitarian", "ant": "autocrat"},
         {"n": 368, "TargetWord": "aristocrat", "definition": "a member of the nobility or a ruling upper class", "pos": "noun", "syn": "noble, peer", "ant": "commoner"},
         {"n": 369, "TargetWord": "autocrat", "definition": "a ruler who holds absolute, unchecked power", "pos": "noun", "syn": "dictator, despot", "ant": "democrat"},
         {"n": 370, "TargetWord": "technocrat", "definition": "an official or expert who governs or advises based on specialized technical knowledge", "pos": "noun", "syn": "specialist official", "definition_gb": "an official or expert who governs or advises based on specialised technical knowledge"},
@@ -483,20 +483,20 @@
       ]
     },
     {
-      "cluster_id": "T2-C10", "tier": 2, "slug": "cluster2_10_root_path_phil_soph_feeling_love_wisdom", "name": "Path, Phil & Soph", "name_de": "Wurzeln: Path, Phil & Soph", "name_es": "Raíces: Path, Phil y Soph", "name_ja": "語根: Path・Phil・Soph", "name_zh": "词根：Path、Phil与Soph", "name_ru": "Корни: Path, Phil и Soph",
+      "cluster_id": "T2-C10", "tier": 2, "slug": "cluster2_10_root_path_phil_soph_feeling_love_wisdom", "name": "Path, phil & soph", "name_de": "Wurzeln: Path, Phil & Soph", "name_es": "Raíces: Path, Phil y Soph", "name_ja": "語根: Path・Phil・Soph", "name_zh": "词根：Path、Phil与Soph", "name_ru": "Корни: Path, Phil и Soph",
       "cards": [
         {"n": 379, "TargetWord": "pathetic", "definition": "arousing pity or contempt through weakness or inadequacy", "pos": "adj", "syn": "pitiful, feeble", "ant": "impressive, admirable", "TriggerLesson": "023"},
         {"n": 380, "TargetWord": "sympathy", "definition": "a feeling of pity or sorrow for someone else's misfortune", "pos": "noun", "syn": "compassion, pity", "ant": "indifference"},
         {"n": 381, "TargetWord": "empathy", "definition": "the ability to understand and share the feelings of another person", "pos": "noun", "syn": "compassion, understanding", "ant": "indifference"},
         {"n": 382, "TargetWord": "sympathetic", "definition": "showing understanding, compassion, or approval towards someone or something", "pos": "adj", "syn": "understanding, compassionate", "ant": "indifferent, hostile"},
-        {"n": 383, "TargetWord": "psychopath", "definition": "a person with a chronic mental disorder marked by antisocial behavior and a lack of empathy or remorse", "pos": "noun", "syn": "sociopath (informal)", "definition_gb": "a person with a chronic mental disorder marked by antisocial behaviour and a lack of empathy or remorse"},
+        {"n": 383, "TargetWord": "psychopath", "definition": "a person with a chronic mental disorder marked by antisocial behavior and a lack of empathy or remorse", "pos": "noun", "syn": "sociopath", "definition_gb": "a person with a chronic mental disorder marked by antisocial behaviour and a lack of empathy or remorse"},
         {"n": 384, "TargetWord": "apathy", "definition": "a lack of interest, enthusiasm, or motivation", "pos": "noun", "syn": "indifference, unconcern", "ant": "enthusiasm, passion"},
         {"n": 385, "TargetWord": "antipathy", "definition": "a deep-seated feeling of dislike or aversion", "pos": "noun", "syn": "hostility, aversion", "ant": "affinity, fondness"},
         {"n": 386, "TargetWord": "philharmonic", "definition": "devoted to music; used in the name of an orchestra or musical society", "pos": "adj", "syn": "musical"},
         {"n": 387, "TargetWord": "philanthropy", "definition": "the practice of donating money or time to promote the welfare of others", "pos": "noun", "syn": "charity, generosity", "ant": "greed, selfishness"},
         {"n": 388, "TargetWord": "sophisticated", "definition": "having a refined knowledge of the world; also, highly developed or complex", "pos": "adj", "syn": "refined, advanced", "ant": "naive, crude"},
         {"n": 389, "TargetWord": "sophistication", "definition": "the quality of being cultured, refined, or intellectually complex", "pos": "noun", "syn": "refinement, polish", "ant": "naivety, crudeness"},
-        {"n": 390, "TargetWord": "sophomore", "definition": "a student in the second year of university or (in the US) high school", "pos": "noun", "syn": "second-year student"},
+        {"n": 390, "TargetWord": "sophomore", "definition": "a student in the second year of an American high school or college", "pos": "noun", "syn": "second-year student"},
         {"n": 391, "TargetWord": "sophistry", "definition": "the use of clever but false or misleading arguments, especially to deceive", "pos": "noun", "syn": "casuistry, quibbling"},
         {"n": 392, "TargetWord": "sophist", "definition": "a person who reasons with clever but specious or fallacious arguments", "pos": "noun", "syn": "casuist"},
         {"n": 393, "TargetWord": "sociopath", "definition": "a person without conscience, who uses others and feels no guilt", "pos": "noun", "syn": "psychopath"},
@@ -504,7 +504,7 @@
       ]
     },
     {
-      "cluster_id": "T2-C11", "tier": 2, "slug": "cluster2_11_prefixes_quality_negation_a_dys_eu_amphi", "name": "A-, Dys-, Eu-, Amphi-", "name_de": "Präfixe: A-/Dys-/Eu-/Amphi-", "name_es": "Prefijos: A-/Dys-/Eu-/Amphi-", "name_ja": "接頭辞: A-/Dys-/Eu-/Amphi-", "name_zh": "前缀：A-、Dys-、Eu-、Amphi-", "name_ru": "Префиксы: A-/Dys-/Eu-/Amphi-",
+      "cluster_id": "T2-C11", "tier": 2, "slug": "cluster2_11_prefixes_quality_negation_a_dys_eu_amphi", "name": "A-, dys-, eu-, amphi-", "name_de": "Präfixe: A-/Dys-/Eu-/Amphi-", "name_es": "Prefijos: A-/Dys-/Eu-/Amphi-", "name_ja": "接頭辞: A-/Dys-/Eu-/Amphi-", "name_zh": "前缀：A-、Dys-、Eu-、Amphi-", "name_ru": "Префиксы: A-/Dys-/Eu-/Amphi-",
       "cards": [
         {"n": 395, "TargetWord": "atheist", "definition": "a person who does not believe in God or gods", "pos": "noun", "syn": "nonbeliever, skeptic", "ant": "theist, believer", "TriggerLesson": "024"},
         {"n": 396, "TargetWord": "anomaly", "definition": "something that deviates from what is standard, normal, or expected", "pos": "noun", "syn": "aberration, oddity, deviation", "ant": "norm, regularity"},
@@ -516,7 +516,7 @@
         {"n": 402, "TargetWord": "dysentery", "definition": "a severe intestinal infection causing diarrhea, often with blood", "pos": "noun", "syn": "bloody flux", "definition_gb": "a severe intestinal infection causing diarrhoea, often with blood"},
         {"n": 403, "TargetWord": "dyslexia", "definition": "a learning difficulty that primarily affects reading and spelling accuracy", "pos": "noun", "syn": "reading disorder"},
         {"n": 404, "TargetWord": "dystopia", "definition": "an imagined society or state characterized by suffering, oppression, or injustice", "pos": "noun", "syn": "nightmare state", "ant": "utopia", "definition_gb": "an imagined society or state characterised by suffering, oppression, or injustice"},
-        {"n": 405, "TargetWord": "euphoria", "definition": "an intense feeling of happiness, excitement, or wellbeing", "pos": "noun", "syn": "elation, exhilaration", "ant": "despair, misery"},
+        {"n": 405, "TargetWord": "euphoria", "definition": "an intense feeling of happiness, excitement, or well-being", "pos": "noun", "syn": "elation, exhilaration", "ant": "despair, misery", "definition_gb": "an intense feeling of happiness, excitement, or wellbeing"},
         {"n": 406, "TargetWord": "eulogy", "definition": "a speech or piece of writing that praises someone, typically a person who has recently died", "pos": "noun", "syn": "tribute, commendation", "ant": "diatribe"},
         {"n": 407, "TargetWord": "euphemism", "definition": "a mild or indirect word substituted for one considered harsh or blunt", "pos": "noun", "syn": "understatement, softening", "ant": "dysphemism"},
         {"n": 408, "TargetWord": "euthanasia", "definition": "the practice of deliberately ending a life to relieve suffering", "pos": "noun", "syn": "mercy killing, assisted dying"},
@@ -526,7 +526,7 @@
         {"n": 412, "TargetWord": "amphitheater", "definition": "a large, typically oval, open-air venue with tiered seating on all sides, used for spectacles", "pos": "noun", "syn": "arena, coliseum", "TargetWord_gb": "amphitheatre"},
         {"n": 413, "TargetWord": "amphora", "definition": "a tall ancient Greek or Roman jar with two handles and a narrow neck, used to store wine or oil", "pos": "noun", "syn": "jar, urn"},
         {"n": 414, "TargetWord": "anonymous", "definition": "written or given by someone whose name is not known", "pos": "adj", "syn": "nameless, unsigned", "ant": "signed"},
-        {"n": 415, "TargetWord": "eureka", "definition": "a shout that greets a sudden discovery after long puzzling", "pos": "noun", "syn": "breakthrough"},
+        {"n": 415, "TargetWord": "eureka", "definition": "a shout that greets a sudden discovery after long puzzling", "pos": "interjection", "syn": "breakthrough"},
         {"n": 416, "TargetWord": "evangelist", "definition": "a roving preacher who works to win converts to a faith", "pos": "noun", "syn": "preacher, missionary"}
       ]
     },
@@ -537,7 +537,7 @@
         {"n": 418, "TargetWord": "zone", "definition": "an area marked off from its surroundings for a particular use or rule", "pos": "noun", "syn": "belt, band"},
         {"n": 419, "TargetWord": "pole", "definition": "either of the two ends of the axis about which a planet rotates", "pos": "noun", "syn": "axis, end"},
         {"n": 420, "TargetWord": "arctic", "definition": "belonging to the far northern region around the top of the world", "pos": "adj", "syn": "polar, northern", "ant": "antarctic"},
-        {"n": 421, "TargetWord": "climate", "definition": "the average weather of a place measured over many years", "pos": "noun", "syn": "weather"},
+        {"n": 421, "TargetWord": "climate", "definition": "the average weather of a place measured over many years", "pos": "noun", "syn": "prevailing weather"},
         {"n": 422, "TargetWord": "meteor", "definition": "a streak of light made by space debris burning in the air", "pos": "noun", "syn": "fireball"},
         {"n": 423, "TargetWord": "eclipse", "definition": "the blocking of the light of one heavenly body by another", "pos": "noun", "syn": "occultation"},
         {"n": 424, "TargetWord": "plankton", "definition": "the drifting organisms that float near the surface of open water", "pos": "noun", "syn": "drift"},
@@ -546,7 +546,7 @@
         {"n": 427, "TargetWord": "dolphin", "definition": "a small toothed sea mammal known for its speed and its calls", "pos": "noun", "syn": "cetacean"},
         {"n": 428, "TargetWord": "crocodile", "definition": "a large scaly reptile of tropical rivers and swamps", "pos": "noun", "syn": "croc"},
         {"n": 429, "TargetWord": "crystal", "definition": "a solid whose atoms sit in a regular repeating lattice", "pos": "noun", "syn": "gem"},
-        {"n": 430, "TargetWord": "magnet", "definition": "a piece of iron or ore that pulls other metal toward itself", "pos": "noun", "syn": "lodestone"},
+        {"n": 430, "TargetWord": "magnet", "definition": "a piece of iron or ore that draws iron and steel toward itself", "pos": "noun", "syn": "lodestone"},
         {"n": 431, "TargetWord": "plastic", "definition": "a synthetic material that can be shaped when soft and set hard", "pos": "noun", "syn": "polymer"},
         {"n": 432, "TargetWord": "elastic", "definition": "able to stretch and then return to its former shape", "pos": "adj", "syn": "springy", "ant": "rigid"},
         {"n": 433, "TargetWord": "chrome", "definition": "a bright hard metallic plating used to finish fittings and trim", "pos": "noun", "syn": "chromium"},
@@ -556,7 +556,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C2", "tier": 3, "slug": "cluster3_2_root_theo_myth_anthrop_onto_dox_god_human_being", "name": "Theo, Anthrop, Onto & Dox", "name_de": "Wurzeln: Theo, Anthrop & Onto", "name_es": "Raíces: Theo, Anthrop y Onto", "name_ja": "語根: Theo・Anthrop・Onto", "name_zh": "词根：Theo、Anthrop与Onto", "name_ru": "Корни: Theo, Anthrop и Onto",
+      "cluster_id": "T3-C2", "tier": 3, "slug": "cluster3_2_root_theo_myth_anthrop_onto_dox_god_human_being", "name": "Theo, anthrop, onto & dox", "name_de": "Wurzeln: Theo, Anthrop & Onto", "name_es": "Raíces: Theo, Anthrop y Onto", "name_ja": "語根: Theo・Anthrop・Onto", "name_zh": "词根：Theo、Anthrop与Onto", "name_ru": "Корни: Theo, Anthrop и Onto",
       "cards": [
         {"n": 437, "TargetWord": "theism", "definition": "belief in the existence of one or more gods, especially a personal creator god", "pos": "noun", "syn": "faith, deism", "ant": "atheism", "TriggerLesson": "026"},
         {"n": 438, "TargetWord": "atheism", "definition": "disbelief in, or denial of the existence of, god or gods", "pos": "noun", "syn": "nonbelief, skepticism", "ant": "theism, faith"},
@@ -568,7 +568,7 @@
         {"n": 444, "TargetWord": "icon", "definition": "a religious image, or a person or thing regarded as a representative symbol", "pos": "noun", "syn": "symbol, emblem, figurehead"},
         {"n": 445, "TargetWord": "iconoclast", "definition": "a person who attacks or criticizes cherished beliefs, traditions, or institutions", "pos": "noun", "syn": "dissenter, rebel, maverick", "ant": "conformist, traditionalist", "definition_gb": "a person who attacks or criticises cherished beliefs, traditions, or institutions"},
         {"n": 446, "TargetWord": "iconography", "definition": "the images and symbols traditionally used to represent a subject in art", "pos": "noun", "syn": "imagery, symbolism"},
-        {"n": 447, "TargetWord": "Anthropocene", "definition": "the current geological age, in which human activity dominates climate and environment", "pos": "noun", "syn": "age of humans"},
+        {"n": 447, "TargetWord": "Anthropocene", "definition": "the proposed name for the present age, in which human activity dominates climate and environment", "pos": "noun", "syn": "age of humans"},
         {"n": 448, "TargetWord": "misanthrope", "definition": "a person who dislikes or distrusts other people", "pos": "noun", "syn": "recluse, cynic", "ant": "philanthropist, humanitarian"},
         {"n": 449, "TargetWord": "ontology", "definition": "the branch of philosophy concerned with the nature of being and existence", "pos": "noun", "syn": "metaphysics", "TriggerLesson": "027"},
         {"n": 450, "TargetWord": "ontic", "definition": "relating to real existence itself, rather than to theories or categories of being", "pos": "adj", "syn": "existential"},
@@ -584,12 +584,12 @@
       ]
     },
     {
-      "cluster_id": "T3-C3", "tier": 3, "slug": "cluster3_3_root_gno_phan_phem_know_show_speak", "name": "Gno, Phan & Phem", "name_de": "Wurzeln: Gno, Phan & Phem", "name_es": "Raíces: Gno, Phan y Phem", "name_ja": "語根: Gno・Phan・Phem", "name_zh": "词根：Gno、Phan与Phem", "name_ru": "Корни: Gno, Phan и Phem",
+      "cluster_id": "T3-C3", "tier": 3, "slug": "cluster3_3_root_gno_phan_phem_know_show_speak", "name": "Gno, phan & phem", "name_de": "Wurzeln: Gno, Phan & Phem", "name_es": "Raíces: Gno, Phan y Phem", "name_ja": "語根: Gno・Phan・Phem", "name_zh": "词根：Gno、Phan与Phem", "name_ru": "Корни: Gno, Phan и Phem",
       "cards": [
         {"n": 460, "TargetWord": "gnosis", "definition": "esoteric or intuitive spiritual knowledge, especially of divine mysteries", "pos": "noun", "syn": "insight, illumination", "ant": "ignorance", "TriggerLesson": "028"},
         {"n": 461, "TargetWord": "diagnostic", "definition": "relating to or used in identifying a disease or problem", "pos": "adj", "syn": "analytical, indicative"},
         {"n": 462, "TargetWord": "diagnose", "definition": "to identify the nature of an illness or problem through examination", "pos": "verb", "syn": "identify, detect", "ant": "misdiagnose"},
-        {"n": 463, "TargetWord": "agnostic", "definition": "a person who believes it is impossible to know whether god exists", "pos": "noun", "syn": "skeptic, doubter", "ant": "believer, gnostic"},
+        {"n": 463, "TargetWord": "agnostic", "definition": "a person who believes it is impossible to know whether God exists", "pos": "noun", "syn": "skeptic, doubter", "ant": "believer, gnostic"},
         {"n": 464, "TargetWord": "gnostic", "definition": "relating to knowledge, especially esoteric or mystical spiritual knowledge", "pos": "adj", "syn": "esoteric, mystical", "ant": "agnostic"},
         {"n": 465, "TargetWord": "phenomenon", "definition": "a fact, occurrence, or circumstance observed to exist or happen", "pos": "noun", "syn": "occurrence, event, marvel"},
         {"n": 466, "TargetWord": "phenomenal", "definition": "extraordinary, or belonging to what the senses can perceive", "pos": "adj", "syn": "remarkable, extraordinary", "ant": "ordinary, unremarkable"},
@@ -599,12 +599,12 @@
         {"n": 470, "TargetWord": "fantasy", "definition": "a fictional world or imaginative scenario far removed from reality", "pos": "noun", "syn": "imagination, daydream", "ant": "reality"},
         {"n": 471, "TargetWord": "fantastic", "definition": "extremely good, or difficult to believe; fanciful and strange", "pos": "adj", "syn": "excellent, wonderful", "ant": "dreadful, ordinary"},
         {"n": 472, "TargetWord": "phantom", "definition": "a ghost, or something that has no real physical existence", "pos": "noun", "syn": "ghost, specter, apparition", "ant": "substance, reality"},
-        {"n": 473, "TargetWord": "blasphemy", "definition": "irreverent speech or action concerning god or sacred things", "pos": "noun", "syn": "sacrilege, profanity", "ant": "reverence, piety"},
+        {"n": 473, "TargetWord": "blasphemy", "definition": "irreverent speech or action concerning God or sacred things", "pos": "noun", "syn": "sacrilege, profanity", "ant": "reverence, piety"},
         {"n": 474, "TargetWord": "emphasis", "definition": "special importance or prominence given to something", "pos": "noun", "syn": "stress, prominence", "ant": "understatement"}
       ]
     },
     {
-      "cluster_id": "T3-C4", "tier": 3, "slug": "cluster3_4_root_thes_top_tom_place_cut", "name": "Thes, Top & Tom", "name_de": "Wurzeln: Thes, Top & Tom", "name_es": "Raíces: Thes, Top y Tom", "name_ja": "語根: Thes・Top・Tom", "name_zh": "词根：Thes、Top与Tom", "name_ru": "Корни: Thes, Top и Tom",
+      "cluster_id": "T3-C4", "tier": 3, "slug": "cluster3_4_root_thes_top_tom_place_cut", "name": "Thes, top & tom", "name_de": "Wurzeln: Thes, Top & Tom", "name_es": "Raíces: Thes, Top y Tom", "name_ja": "語根: Thes・Top・Tom", "name_zh": "词根：Thes、Top与Tom", "name_ru": "Корни: Thes, Top и Tom",
       "cards": [
         {"n": 475, "TargetWord": "thesis", "definition": "a statement or theory put forward to be maintained or proved by argument", "pos": "noun", "syn": "proposition, dissertation, argument", "TriggerLesson": "029"},
         {"n": 476, "TargetWord": "prosthetic", "definition": "relating to or serving as an artificial replacement for a missing body part", "pos": "adj", "syn": "artificial, bionic", "ant": "natural"},
@@ -626,7 +626,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C5", "tier": 3, "slug": "cluster3_5_root_aesthe_etho_mnem_perception_character", "name": "Aesthe, Etho & Mnem", "name_de": "Wurzeln: Aesthe, Etho & Mnem", "name_es": "Raíces: Aesthe, Etho y Mnem", "name_ja": "語根: Aesthe・Etho・Mnem", "name_zh": "词根：Aesthe、Etho与Mnem", "name_ru": "Корни: Aesthe, Etho и Mnem",
+      "cluster_id": "T3-C5", "tier": 3, "slug": "cluster3_5_root_aesthe_etho_mnem_perception_character", "name": "Aesthe, etho & mnem", "name_de": "Wurzeln: Aesthe, Etho & Mnem", "name_es": "Raíces: Aesthe, Etho y Mnem", "name_ja": "語根: Aesthe・Etho・Mnem", "name_zh": "词根：Aesthe、Etho与Mnem", "name_ru": "Корни: Aesthe, Etho и Mnem",
       "cards": [
         {"n": 492, "TargetWord": "aesthetic", "definition": "relating to beauty and the appreciation of what is pleasing to the senses", "pos": "adj", "syn": "artistic, tasteful", "ant": "inartistic", "TriggerLesson": "030"},
         {"n": 493, "TargetWord": "aesthetics", "definition": "the branch of philosophy dealing with beauty, art, and taste", "pos": "noun", "syn": "taste, artistic sensibility"},
@@ -644,7 +644,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C6", "tier": 3, "slug": "cluster3_6_root_morph_taxis_ortho_form_order", "name": "Morph, Taxis & Ortho", "name_de": "Wurzeln: Morph, Taxis & Ortho", "name_es": "Raíces: Morph, Taxis y Ortho", "name_ja": "語根: Morph・Taxis・Ortho", "name_zh": "词根：Morph、Taxis与Ortho", "name_ru": "Корни: Morph, Taxis и Ortho",
+      "cluster_id": "T3-C6", "tier": 3, "slug": "cluster3_6_root_morph_taxis_ortho_form_order", "name": "Morph, taxis & ortho", "name_de": "Wurzeln: Morph, Taxis & Ortho", "name_es": "Raíces: Morph, Taxis y Ortho", "name_ja": "語根: Morph・Taxis・Ortho", "name_zh": "词根：Morph、Taxis与Ortho", "name_ru": "Корни: Morph, Taxis и Ortho",
       "cards": [
         {"n": 505, "TargetWord": "polymorphic", "definition": "occurring or existing in several different forms", "pos": "adj", "syn": "multiform, variable", "ant": "uniform, fixed", "TriggerLesson": "031"},
         {"n": 506, "TargetWord": "morph", "definition": "to change smoothly from one image, shape, or form into another", "pos": "verb", "syn": "transform, shift, mutate"},
@@ -662,16 +662,16 @@
       ]
     },
     {
-      "cluster_id": "T3-C7", "tier": 3, "slug": "cluster3_7_prefixes_same_other_equal", "name": "Homo-, Hetero-, Iso-", "name_de": "Präfixe: Homo-/Hetero-/Iso-", "name_es": "Prefijos: Homo-/Hetero-/Iso-", "name_ja": "接頭辞: Homo-/Hetero-/Iso-", "name_zh": "前缀：Homo-、Hetero-、Iso-", "name_ru": "Префиксы: Homo-/Hetero-/Iso-",
+      "cluster_id": "T3-C7", "tier": 3, "slug": "cluster3_7_prefixes_same_other_equal", "name": "Homo-, hetero-, iso-", "name_de": "Präfixe: Homo-/Hetero-/Iso-", "name_es": "Prefijos: Homo-/Hetero-/Iso-", "name_ja": "接頭辞: Homo-/Hetero-/Iso-", "name_zh": "前缀：Homo-、Hetero-、Iso-", "name_ru": "Префиксы: Homo-/Hetero-/Iso-",
       "cards": [
-        {"n": 518, "TargetWord": "homosexual", "definition": "sexually or romantically attracted to people of the same sex", "pos": "adj", "syn": "gay", "ant": "heterosexual", "TriggerLesson": "032"},
+        {"n": 518, "TargetWord": "homeothermic", "definition": "able to keep a steady body temperature whatever the surroundings; warm-blooded", "pos": "adj", "syn": "warm-blooded, endothermic", "ant": "cold-blooded, poikilothermic", "TriggerLesson": "032", "TargetWord_gb": "homoeothermic"},
         {"n": 519, "TargetWord": "homogeneous", "definition": "made up of parts or people that are all similar to one another", "pos": "adj", "syn": "uniform, consistent", "ant": "heterogeneous"},
         {"n": 520, "TargetWord": "homogeneity", "definition": "the quality of being uniform or all of the same kind", "pos": "noun", "syn": "uniformity, sameness", "ant": "heterogeneity"},
         {"n": 521, "TargetWord": "homonym", "definition": "a word that is spelled and pronounced the same as another but has a different meaning", "pos": "noun", "syn": "same-form word"},
-        {"n": 522, "TargetWord": "homograph", "definition": "a word spelled the same as another but differing in meaning and often pronunciation", "pos": "noun", "syn": "same-spelling word"},
+        {"n": 522, "TargetWord": "homograph", "definition": "a word spelled the same as another but differing in meaning and often pronunciation", "pos": "noun", "syn": "same-spelling word, homonym"},
         {"n": 523, "TargetWord": "homeopathy", "definition": "a system of alternative medicine based on treating like with like, using heavily diluted substances", "pos": "noun", "syn": "alternative medicine", "ant": "allopathy", "TargetWord_gb": "homoeopathy"},
         {"n": 524, "TargetWord": "homogenize", "definition": "to make something uniform throughout by removing or blending differences", "pos": "verb", "syn": "standardize, blend", "ant": "diversify", "TargetWord_gb": "homogenise"},
-        {"n": 525, "TargetWord": "heterosexual", "definition": "sexually or romantically attracted to people of the opposite sex", "pos": "adj", "syn": "straight", "ant": "homosexual"},
+        {"n": 525, "TargetWord": "heterotrophic", "definition": "getting food by eating other living things rather than making it from sunlight", "pos": "adj", "syn": "consuming (in ecology)", "ant": "autotrophic"},
         {"n": 526, "TargetWord": "heterogeneous", "definition": "made up of parts or people that are very different from one another", "pos": "adj", "syn": "diverse, varied", "ant": "homogeneous"},
         {"n": 527, "TargetWord": "heterogeneity", "definition": "the quality of consisting of many different or varied elements", "pos": "noun", "syn": "diversity, variety", "ant": "homogeneity"},
         {"n": 528, "TargetWord": "heteronym", "definition": "a word spelled the same as another but pronounced differently and with a different meaning", "pos": "noun", "syn": "homograph"},
@@ -682,7 +682,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C8", "tier": 3, "slug": "cluster3_8_prefixes_time_order_neo_proto_pro", "name": "Neo-, Proto-, Pro-", "name_de": "Präfixe: Neo-/Proto-/Pro-", "name_es": "Prefijos: Neo-/Proto-/Pro-", "name_ja": "接頭辞: Neo-/Proto-/Pro-", "name_zh": "前缀：Neo-、Proto-、Pro-", "name_ru": "Префиксы: Neo-/Proto-/Pro-",
+      "cluster_id": "T3-C8", "tier": 3, "slug": "cluster3_8_prefixes_time_order_neo_proto_pro", "name": "Neo-, proto-, pro-", "name_de": "Präfixe: Neo-/Proto-/Pro-", "name_es": "Prefijos: Neo-/Proto-/Pro-", "name_ja": "接頭辞: Neo-/Proto-/Pro-", "name_zh": "前缀：Neo-、Proto-、Pro-", "name_ru": "Префиксы: Neo-/Proto-/Pro-",
       "cards": [
         {"n": 533, "TargetWord": "neon", "definition": "an inert gaseous chemical element that glows orange-red in illuminated signs and lights", "pos": "noun", "syn": "neon gas, noble gas", "TriggerLesson": "033"},
         {"n": 534, "TargetWord": "neologism", "definition": "a newly coined word or expression", "pos": "noun", "syn": "coinage, nonce word", "ant": "archaism"},
@@ -706,7 +706,7 @@
       ]
     },
     {
-      "cluster_id": "T3-C9", "tier": 3, "slug": "cluster3_9_root_xen_crypt_bibli_strange_hidden_book", "name": "Xen, Crypt & Bibli", "name_de": "Wurzeln: Xen, Crypt & Bibli", "name_es": "Raíces: Xen, Crypt y Bibli", "name_ja": "語根: Xen・Crypt・Bibli", "name_zh": "词根：Xen、Crypt与Bibli", "name_ru": "Корни: Xen, Crypt и Bibli",
+      "cluster_id": "T3-C9", "tier": 3, "slug": "cluster3_9_root_xen_crypt_bibli_strange_hidden_book", "name": "Xen, crypt & bibli", "name_de": "Wurzeln: Xen, Crypt & Bibli", "name_es": "Raíces: Xen, Crypt y Bibli", "name_ja": "語根: Xen・Crypt・Bibli", "name_zh": "词根：Xen、Crypt与Bibli", "name_ru": "Корни: Xen, Crypt и Bibli",
       "cards": [
         {"n": 552, "TargetWord": "xenophobia", "definition": "intense dislike, distrust, or fear of people from other countries", "pos": "noun", "syn": "nativism, chauvinism", "ant": "hospitality, tolerance", "TriggerLesson": "034"},
         {"n": 553, "TargetWord": "xenophobic", "definition": "showing fear, dislike, or prejudice toward people from other countries", "pos": "adj", "syn": "nativist, insular", "ant": "welcoming, cosmopolitan"},
@@ -719,14 +719,14 @@
         {"n": 560, "TargetWord": "apocrypha", "definition": "religious writings of uncertain or doubtful authorship, excluded from a recognized canon", "pos": "noun", "syn": "pseudepigrapha", "ant": "canon", "definition_gb": "religious writings of uncertain or doubtful authorship, excluded from a recognised canon"},
         {"n": 561, "TargetWord": "cryptocurrency", "definition": "a digital money secured by codes and usually run without a central bank", "pos": "noun", "syn": "digital currency", "ant": "fiat currency"},
         {"n": 562, "TargetWord": "bibliography", "definition": "a list of the books or sources referred to in a piece of writing", "pos": "noun", "syn": "reference list, works cited"},
-        {"n": 563, "TargetWord": "bibliophile", "definition": "a person who loves or collects books", "pos": "noun", "syn": "book-lover, bibliomane", "ant": "bibliophobe"},
+        {"n": 563, "TargetWord": "bibliophile", "definition": "a person who loves or collects books", "pos": "noun", "syn": "book-lover, bibliomane, bibliomaniac", "ant": "bibliophobe"},
         {"n": 564, "TargetWord": "bibliomania", "definition": "an extreme or obsessive enthusiasm for collecting and owning books", "pos": "noun", "syn": "book-collecting fervor"},
         {"n": 565, "TargetWord": "bibliomaniac", "definition": "a person with an extreme or obsessive passion for collecting books", "pos": "noun", "syn": "book-collector, bibliophile"},
         {"n": 566, "TargetWord": "Bible", "definition": "the sacred scriptures of Judaism and Christianity, collected into a single volume", "pos": "noun", "syn": "scripture, the Good Book"}
       ]
     },
     {
-      "cluster_id": "T3-C10", "tier": 3, "slug": "cluster3_10_root_trop_kine_erg_turn_motion_work", "name": "Trop, Kine & Erg", "name_de": "Wurzeln: Trop, Kine & Erg", "name_es": "Raíces: Trop, Kine y Erg", "name_ja": "語根: Trop・Kine・Erg", "name_zh": "词根：Trop、Kine与Erg", "name_ru": "Корни: Trop, Kine и Erg",
+      "cluster_id": "T3-C10", "tier": 3, "slug": "cluster3_10_root_trop_kine_erg_turn_motion_work", "name": "Trop, kine & erg", "name_de": "Wurzeln: Trop, Kine & Erg", "name_es": "Raíces: Trop, Kine y Erg", "name_ja": "語根: Trop・Kine・Erg", "name_zh": "词根：Trop、Kine与Erg", "name_ru": "Корни: Trop, Kine и Erg",
       "cards": [
         {"n": 567, "TargetWord": "tropical", "definition": "relating to the hot, humid regions near the equator", "pos": "adj", "syn": "equatorial, torrid", "ant": "temperate, polar", "TriggerLesson": "035"},
         {"n": 568, "TargetWord": "entropy", "definition": "a measure of disorder or randomness within a system", "pos": "noun", "syn": "disorder, chaos", "ant": "order"},
@@ -739,7 +739,7 @@
         {"n": 575, "TargetWord": "synergy", "definition": "the combined effect of things working together that exceeds their separate effects", "pos": "noun", "syn": "cooperation, synthesis", "ant": "antagonism"},
         {"n": 576, "TargetWord": "allergy", "definition": "an abnormal immune reaction to a substance that is normally harmless", "pos": "noun", "syn": "sensitivity, intolerance", "ant": "immunity"},
         {"n": 577, "TargetWord": "ergonomics", "definition": "the study of designing equipment and workspaces to fit the people who use them", "pos": "noun", "syn": "human-factors design"},
-        {"n": 578, "TargetWord": "metallurgy", "definition": "the science of extracting and working iron, copper, and other ores", "pos": "noun", "syn": "metalworking, smelting"},
+        {"n": 578, "TargetWord": "metallurgy", "definition": "the science of extracting metals such as iron and copper from their ores, and of working them", "pos": "noun", "syn": "metalworking, smelting"},
         {"n": 579, "TargetWord": "liturgy", "definition": "a prescribed form of public worship, especially in a religious service", "pos": "noun", "syn": "rite, service, ritual"},
         {"n": 580, "TargetWord": "dramaturgy", "definition": "the craft of composing and structuring a play for the stage", "pos": "noun", "syn": "playwriting, stagecraft"},
         {"n": 581, "TargetWord": "surgery", "definition": "medical treatment that involves cutting into the body to repair or remove something", "pos": "noun", "syn": "operation, procedure"}
@@ -751,7 +751,7 @@
         {"n": 582, "TargetWord": "oceanography", "definition": "the scientific study of the physical and biological features of the ocean", "pos": "noun", "syn": "marine science, oceanology", "TriggerLesson": "036"},
         {"n": 583, "TargetWord": "acronym", "definition": "a word formed from the initial letters of a longer name or phrase", "pos": "noun", "syn": "initialism", "ant": "full name"},
         {"n": 584, "TargetWord": "antonym", "definition": "a word opposite in meaning to another", "pos": "noun", "syn": "opposite", "ant": "synonym"},
-        {"n": 585, "TargetWord": "eponymous", "definition": "giving one's own name to something, such as a book, film, or album", "pos": "adj", "syn": "self-titled, namesake"},
+        {"n": 585, "TargetWord": "eponymous", "definition": "named after its creator or subject, such as a self-titled album", "pos": "adj", "syn": "self-titled, namesake"},
         {"n": 586, "TargetWord": "telegram", "definition": "a message transmitted by telegraph and then printed and delivered", "pos": "noun", "syn": "wire, cable"},
         {"n": 587, "TargetWord": "diagram", "definition": "a simplified drawing that shows the parts or workings of something", "pos": "noun", "syn": "chart, plan, schematic"},
         {"n": 588, "TargetWord": "hologram", "definition": "a three-dimensional image formed by the interference of light beams", "pos": "noun", "syn": "3D projection"},
@@ -773,13 +773,13 @@
         {"n": 599, "TargetWord": "therapy", "definition": "treatment given over time to heal a condition or ease distress", "pos": "noun", "syn": "treatment, care", "TriggerLesson": "037"},
         {"n": 600, "TargetWord": "clinic", "definition": "a place where outpatients are seen and advised by doctors", "pos": "noun", "syn": "practice, dispensary"},
         {"n": 601, "TargetWord": "surgeon", "definition": "a doctor trained to treat illness by cutting into the body", "pos": "noun", "syn": "medic, sawbones"},
-        {"n": 602, "TargetWord": "pharmacy", "definition": "a shop or hospital department where medicines are made up and sold", "pos": "noun", "syn": "chemist, dispensary"},
-        {"n": 603, "TargetWord": "bacteria", "definition": "single celled organisms too small to see without a microscope", "pos": "noun", "syn": "germs, microbes"},
+        {"n": 602, "TargetWord": "pharmacy", "definition": "a store or hospital department where medicines are prepared and dispensed", "pos": "noun", "syn": "drugstore, dispensary", "definition_gb": "a shop or hospital department where medicines are made up and sold"},
+        {"n": 603, "TargetWord": "bacteria", "definition": "single-celled organisms too small to see without a microscope", "pos": "noun", "syn": "germs, microbes"},
         {"n": 604, "TargetWord": "hygiene", "definition": "the practices that keep a person or place clean and free of disease", "pos": "noun", "syn": "cleanliness, sanitation"},
         {"n": 605, "TargetWord": "dose", "definition": "the measured amount of a medicine taken at one time", "pos": "noun", "syn": "measure, portion"},
         {"n": 606, "TargetWord": "diet", "definition": "the range of food a person or animal habitually eats", "pos": "noun", "syn": "fare, regimen"},
         {"n": 607, "TargetWord": "trauma", "definition": "a severe bodily injury, or a shock the mind cannot settle", "pos": "noun", "syn": "injury, shock"},
-        {"n": 608, "TargetWord": "asthma", "definition": "a long term illness that narrows the airways and makes breathing hard", "pos": "noun", "syn": "wheeze"},
+        {"n": 608, "TargetWord": "asthma", "definition": "a long-term illness that narrows the airways and makes breathing hard", "pos": "noun", "syn": "wheeze"},
         {"n": 609, "TargetWord": "nausea", "definition": "the sick feeling in the stomach that comes before vomiting", "pos": "noun", "syn": "queasiness, sickness"},
         {"n": 610, "TargetWord": "spasm", "definition": "a sudden involuntary tightening of a muscle", "pos": "noun", "syn": "cramp, twitch"},
         {"n": 611, "TargetWord": "plasma", "definition": "the clear fluid part of blood that carries the cells along", "pos": "noun", "syn": "serum, fluid"},
@@ -793,7 +793,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C2", "tier": 4, "slug": "cluster4_2_root_electro_therm_amber_heat", "name": "Electro & Therm", "name_de": "Wurzeln: Electro & Therm", "name_es": "Raíces: Electro y Therm", "name_ja": "語根: Electro・Therm", "name_zh": "词根：Electro与Therm", "name_ru": "Корни: Electro и Therm",
+      "cluster_id": "T4-C2", "tier": 4, "slug": "cluster4_2_root_electro_therm_amber_heat", "name": "Electro & therm", "name_de": "Wurzeln: Electro & Therm", "name_es": "Raíces: Electro y Therm", "name_ja": "語根: Electro・Therm", "name_zh": "词根：Electro与Therm", "name_ru": "Корни: Electro и Therm",
       "cards": [
         {"n": 619, "TargetWord": "electricity", "definition": "a form of energy carried by moving charged particles, used to power lighting, heating and machinery", "pos": "noun", "syn": "power, current", "TriggerLesson": "038"},
         {"n": 620, "TargetWord": "electric", "definition": "worked by, powered by, or producing electricity", "pos": "adj", "syn": "powered, live", "ant": "manual"},
@@ -813,7 +813,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C3", "tier": 4, "slug": "cluster4_3_root_hydro_pyr_aero_water_fire_air", "name": "Hydro, Pyr & Aero", "name_de": "Wurzeln: Hydro, Pyr & Aero", "name_es": "Raíces: Hydro, Pyr y Aero", "name_ja": "語根: Hydro・Pyr・Aero", "name_zh": "词根：Hydro、Pyr与Aero", "name_ru": "Корни: Hydro, Pyr и Aero",
+      "cluster_id": "T4-C3", "tier": 4, "slug": "cluster4_3_root_hydro_pyr_aero_water_fire_air", "name": "Hydro, pyr & aero", "name_de": "Wurzeln: Hydro, Pyr & Aero", "name_es": "Raíces: Hydro, Pyr y Aero", "name_ja": "語根: Hydro・Pyr・Aero", "name_zh": "词根：Hydro、Pyr与Aero", "name_ru": "Корни: Hydro, Pyr и Aero",
       "cards": [
         {"n": 634, "TargetWord": "hydrogen", "definition": "the lightest and most abundant chemical element, a colorless gas that forms water when burned", "pos": "noun", "syn": "H, dihydrogen", "TriggerLesson": "039", "definition_gb": "the lightest and most abundant chemical element, a colourless gas that forms water when burned"},
         {"n": 635, "TargetWord": "hydraulic", "definition": "operated by, or relating to, the movement and pressure of liquid through pipes or cylinders", "pos": "adj", "syn": "fluid-powered", "ant": "pneumatic"},
@@ -835,7 +835,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C4", "tier": 4, "slug": "cluster4_4_root_chrom_oxy_lith_colour_acid_stone", "name": "Chrom, Oxy & Lith", "name_de": "Wurzeln: Chrom, Oxy & Lith", "name_es": "Raíces: Chrom, Oxy y Lith", "name_ja": "語根: Chrom・Oxy・Lith", "name_zh": "词根：Chrom、Oxy与Lith", "name_ru": "Корни: Chrom, Oxy и Lith",
+      "cluster_id": "T4-C4", "tier": 4, "slug": "cluster4_4_root_chrom_oxy_lith_colour_acid_stone", "name": "Chrom, oxy & lith", "name_de": "Wurzeln: Chrom, Oxy & Lith", "name_es": "Raíces: Chrom, Oxy y Lith", "name_ja": "語根: Chrom・Oxy・Lith", "name_zh": "词根：Chrom、Oxy与Lith", "name_ru": "Корни: Chrom, Oxy и Lith",
       "cards": [
         {"n": 651, "TargetWord": "chromosome", "definition": "a threadlike structure in a cell's nucleus that carries genetic information", "pos": "noun", "syn": "gene carrier", "TriggerLesson": "040"},
         {"n": 652, "TargetWord": "monochrome", "definition": "produced or displayed using only one color, or varying shades of a single color", "pos": "adj", "syn": "black-and-white, grayscale", "ant": "multicolored, colorful", "definition_gb": "produced or displayed using only one colour, or varying shades of a single colour"},
@@ -848,18 +848,18 @@
         {"n": 659, "TargetWord": "paroxysm", "definition": "a sudden attack or outburst of a particular emotion or activity", "pos": "noun", "syn": "fit, spasm, outburst"},
         {"n": 660, "TargetWord": "oxytocin", "definition": "a hormone that stimulates uterine contractions during labor and promotes bonding and lactation", "pos": "noun", "syn": "bonding hormone", "definition_gb": "a hormone that stimulates uterine contractions during labour and promotes bonding and lactation"},
         {"n": 661, "TargetWord": "lithium", "definition": "a soft, light, silvery-white alkali metal used especially in rechargeable batteries", "pos": "noun", "syn": "Li"},
-        {"n": 662, "TargetWord": "monolith", "definition": "a single large upright block of stone; more broadly, something perceived as one huge, unified whole", "pos": "noun", "syn": "pillar, obelisk"},
+        {"n": 662, "TargetWord": "monolith", "definition": "a single large upright block of stone; more broadly, something perceived as one huge, unified whole", "pos": "noun", "syn": "pillar, obelisk, megalith"},
         {"n": 663, "TargetWord": "Mesolithic", "definition": "relating to the middle part of the Stone Age, between the Paleolithic and Neolithic periods", "pos": "adj", "syn": "middle stone age", "definition_gb": "relating to the middle part of the Stone Age, between the Palaeolithic and Neolithic periods"},
-        {"n": 664, "TargetWord": "megalith", "definition": "a large stone, especially one forming part of a prehistoric monument", "pos": "noun", "syn": "standing stone"},
+        {"n": 664, "TargetWord": "megalith", "definition": "a large stone, especially one forming part of a prehistoric monument", "pos": "noun", "syn": "standing stone, monolith"},
         {"n": 665, "TargetWord": "lithograph", "definition": "a print made from an image drawn onto a flat stone or metal plate", "pos": "noun", "syn": "print"},
         {"n": 666, "TargetWord": "lithosphere", "definition": "the rigid outer layer of the Earth, comprising the crust and uppermost mantle", "pos": "noun", "syn": "Earth's crust"}
       ]
     },
     {
-      "cluster_id": "T4-C5", "tier": 4, "slug": "cluster4_5_root_astr_sphere_star_sky", "name": "Astr & Sphere", "name_de": "Wurzeln: Astr & Sphere", "name_es": "Raíces: Astr y Sphere", "name_ja": "語根: Astr・Sphere", "name_zh": "词根：Astr与Sphere", "name_ru": "Корни: Astr и Sphere",
+      "cluster_id": "T4-C5", "tier": 4, "slug": "cluster4_5_root_astr_sphere_star_sky", "name": "Astr & sphere", "name_de": "Wurzeln: Astr & Sphere", "name_es": "Raíces: Astr y Sphere", "name_ja": "語根: Astr・Sphere", "name_zh": "词根：Astr与Sphere", "name_ru": "Корни: Astr и Sphere",
       "cards": [
         {"n": 667, "TargetWord": "disaster", "definition": "a sudden event causing great damage, loss, or suffering", "pos": "noun", "syn": "catastrophe, calamity", "ant": "triumph", "TriggerLesson": "041"},
-        {"n": 668, "TargetWord": "asterism", "definition": "a small, easily recognizable pattern of stars, smaller than a constellation", "pos": "noun", "syn": "star cluster, star pattern", "definition_gb": "a small, easily recognisable pattern of stars, smaller than a constellation"},
+        {"n": 668, "TargetWord": "asterism", "definition": "a small, easily recognizable pattern of stars, smaller than a constellation", "pos": "noun", "syn": "star pattern", "definition_gb": "a small, easily recognisable pattern of stars, smaller than a constellation"},
         {"n": 669, "TargetWord": "astrophysicist", "definition": "a scientist who studies the physical nature of stars and other celestial bodies", "pos": "noun", "syn": "cosmologist"},
         {"n": 670, "TargetWord": "astrolabe", "definition": "a historical instrument used to measure the position of stars and planets", "pos": "noun", "syn": "navigational instrument"},
         {"n": 671, "TargetWord": "astrology", "definition": "the study of star and planet positions believed to influence human affairs", "pos": "noun", "syn": "horoscopy, stargazing"},
@@ -874,7 +874,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C6", "tier": 4, "slug": "cluster4_6_root_physio_zo_phyt_nature_life", "name": "Physio, Zo & Phyt", "name_de": "Wurzeln: Physio, Zo & Phyt", "name_es": "Raíces: Physio, Zo y Phyt", "name_ja": "語根: Physio・Zo・Phyt", "name_zh": "词根：Physio、Zo与Phyt", "name_ru": "Корни: Physio, Zo и Phyt",
+      "cluster_id": "T4-C6", "tier": 4, "slug": "cluster4_6_root_physio_zo_phyt_nature_life", "name": "Physio, zo & phyt", "name_de": "Wurzeln: Physio, Zo & Phyt", "name_es": "Raíces: Physio, Zo y Phyt", "name_ja": "語根: Physio・Zo・Phyt", "name_zh": "词根：Physio、Zo与Phyt", "name_ru": "Корни: Physio, Zo и Phyt",
       "cards": [
         {"n": 680, "TargetWord": "physics", "definition": "the branch of science that studies matter, energy, and the fundamental forces of nature", "pos": "noun", "syn": "natural science, mechanics", "TriggerLesson": "042"},
         {"n": 681, "TargetWord": "physical", "definition": "relating to the body, or to the material world as opposed to the mind or spirit", "pos": "adj", "syn": "bodily, corporeal", "ant": "mental, spiritual"},
@@ -884,7 +884,7 @@
         {"n": 685, "TargetWord": "metaphysical", "definition": "concerned with abstract, transcendent questions of existence, reality, and being beyond the physical world", "pos": "adj", "syn": "abstract, transcendental", "ant": "physical, concrete"},
         {"n": 686, "TargetWord": "physiotherapy", "definition": "treatment of injury or disability through physical methods such as exercise and massage rather than drugs or surgery", "pos": "noun", "syn": "physical therapy, rehabilitation"},
         {"n": 687, "TargetWord": "zoo", "definition": "a park where wild animals are kept, bred, and exhibited to the public", "pos": "noun", "syn": "menagerie, animal park"},
-        {"n": 688, "TargetWord": "zodiac", "definition": "a belt of constellations, divided into twelve signs, used in astrology to track the sun's yearly path", "pos": "noun", "syn": "star sign, horoscope belt"},
+        {"n": 688, "TargetWord": "zodiac", "definition": "a belt of constellations, divided into twelve signs, used in astrology to track the sun's yearly path", "pos": "noun", "syn": "the twelve signs, band of the ecliptic"},
         {"n": 689, "TargetWord": "zooplankton", "definition": "tiny drifting animals that form part of the plankton in seas, lakes, and rivers", "pos": "noun", "syn": "animal plankton", "ant": "phytoplankton"},
         {"n": 690, "TargetWord": "protozoa", "definition": "single-celled organisms, often classified as simple animals, found in water and soil", "pos": "noun", "syn": "protists, single-celled organisms"},
         {"n": 691, "TargetWord": "zoonotic", "definition": "of a disease that can be transmitted from animals to people", "pos": "adj", "syn": "animal-borne"},
@@ -895,15 +895,15 @@
       ]
     },
     {
-      "cluster_id": "T4-C7", "tier": 4, "slug": "cluster4_7_root_geno_gyn_andr_birth_sex", "name": "Geno, Gyn & Andr", "name_de": "Wurzeln: Geno, Gyn & Andr", "name_es": "Raíces: Geno, Gyn y Andr", "name_ja": "語根: Geno・Gyn・Andr", "name_zh": "词根：Geno、Gyn与Andr", "name_ru": "Корни: Geno, Gyn и Andr",
+      "cluster_id": "T4-C7", "tier": 4, "slug": "cluster4_7_root_geno_gyn_andr_birth_sex", "name": "Geno, gyn & andr", "name_de": "Wurzeln: Geno, Gyn & Andr", "name_es": "Raíces: Geno, Gyn y Andr", "name_ja": "語根: Geno・Gyn・Andr", "name_zh": "词根：Geno、Gyn与Andr", "name_ru": "Корни: Geno, Gyn и Andr",
       "cards": [
         {"n": 696, "TargetWord": "nitrogen", "definition": "a colorless, odorless gas that forms most of the Earth's atmosphere", "pos": "noun", "syn": "N, dinitrogen", "TriggerLesson": "043", "definition_gb": "a colourless, odourless gas that forms most of the Earth's atmosphere"},
         {"n": 697, "TargetWord": "genetics", "definition": "the branch of biology concerned with heredity and variation among organisms", "pos": "noun", "syn": "heredity science, genomics"},
         {"n": 698, "TargetWord": "genotype", "definition": "the genetic makeup of an organism, distinct from its observable traits", "pos": "noun", "syn": "genetic code, genome", "ant": "phenotype"},
-        {"n": 699, "TargetWord": "gene", "definition": "a unit of heredity, made of DNA, that determines a specific trait", "pos": "noun", "syn": "allele, genetic unit"},
+        {"n": 699, "TargetWord": "gene", "definition": "a unit of heredity, made of DNA, that determines a specific trait", "pos": "noun", "syn": "genetic unit, hereditary factor"},
         {"n": 700, "TargetWord": "genocide", "definition": "the deliberate, systematic killing of a large group of people because of their nationality or ethnicity", "pos": "noun", "syn": "ethnic cleansing"},
         {"n": 701, "TargetWord": "genealogy", "definition": "the study of family history and the line of descent from ancestors", "pos": "noun", "syn": "family history, lineage"},
-        {"n": 702, "TargetWord": "genome", "definition": "the complete set of genetic material present in an organism", "pos": "noun", "syn": "genetic blueprint, DNA sequence"},
+        {"n": 702, "TargetWord": "genome", "definition": "the complete set of genetic material present in an organism", "pos": "noun", "syn": "genetic blueprint, DNA sequence, genotype"},
         {"n": 703, "TargetWord": "gynecology", "definition": "the branch of medicine dealing with the female reproductive system", "pos": "noun", "syn": "women's health medicine", "ant": "andrology", "TargetWord_gb": "gynaecology"},
         {"n": 704, "TargetWord": "misogyny", "definition": "dislike of, contempt for, or ingrained prejudice against women", "pos": "noun", "syn": "sexism, woman-hating", "ant": "misandry"},
         {"n": 705, "TargetWord": "androgynous", "definition": "having both male and female characteristics; not clearly identifiable as one sex", "pos": "adj", "syn": "unisex, gender-ambiguous"},
@@ -916,14 +916,14 @@
       ]
     },
     {
-      "cluster_id": "T4-C8", "tier": 4, "slug": "cluster4_8_root_cyto_mito_karyo_cell", "name": "Cyto, Mito & Karyo", "name_de": "Wurzeln: Cyto, Mito & Karyo", "name_es": "Raíces: Cyto, Mito y Karyo", "name_ja": "語根: Cyto・Mito・Karyo", "name_zh": "词根：Cyto、Mito与Karyo", "name_ru": "Корни: Cyto, Mito и Karyo",
+      "cluster_id": "T4-C8", "tier": 4, "slug": "cluster4_8_root_cyto_mito_karyo_cell", "name": "Cyto, mito & karyo", "name_de": "Wurzeln: Cyto, Mito & Karyo", "name_es": "Raíces: Cyto, Mito y Karyo", "name_ja": "語根: Cyto・Mito・Karyo", "name_zh": "词根：Cyto、Mito与Karyo", "name_ru": "Корни: Cyto, Mito и Karyo",
       "cards": [
-        {"n": 712, "TargetWord": "cytology", "definition": "the branch of biology concerned with the structure and function of cells", "pos": "noun", "syn": "cell biology, histology", "TriggerLesson": "044"},
+        {"n": 712, "TargetWord": "cytology", "definition": "the branch of biology concerned with the structure and function of cells", "pos": "noun", "syn": "cell biology", "TriggerLesson": "044"},
         {"n": 713, "TargetWord": "cytoplasm", "definition": "the jelly-like material within a cell membrane that surrounds the nucleus and organelles", "pos": "noun", "syn": "cell fluid, protoplasm"},
         {"n": 714, "TargetWord": "leukocyte", "definition": "a white blood cell that helps the body fight infection and disease", "pos": "noun", "syn": "white blood cell"},
         {"n": 715, "TargetWord": "cytotoxic", "definition": "capable of damaging or killing living cells", "pos": "adj", "syn": "cell-damaging, cytolytic", "ant": "cytoprotective"},
         {"n": 716, "TargetWord": "cytokine", "definition": "a small protein released by cells that regulates immune and inflammatory responses", "pos": "noun", "syn": "signaling protein, interleukin"},
-        {"n": 717, "TargetWord": "lymphocyte", "definition": "a white blood cell, including T cells and B cells, central to the immune response", "pos": "noun", "syn": "white cell, leucocyte"},
+        {"n": 717, "TargetWord": "lymphocyte", "definition": "a small white blood cell of the lymph system, such as a T cell or B cell, vital to immunity", "pos": "noun", "syn": "white cell, leukocyte"},
         {"n": 718, "TargetWord": "mitosis", "definition": "the process by which a cell divides to produce two genetically identical daughter cells", "pos": "noun", "syn": "cell division", "ant": "meiosis"},
         {"n": 719, "TargetWord": "mitochondria", "definition": "rod-shaped structures within cells that generate the chemical energy needed for cellular activity", "pos": "noun", "syn": "organelles, cell powerhouses"},
         {"n": 720, "TargetWord": "mitotic", "definition": "relating to or characterized by mitosis, the process of cell division", "pos": "adj", "syn": "proliferative", "ant": "quiescent", "definition_gb": "relating to or characterised by mitosis, the process of cell division"},
@@ -934,7 +934,7 @@
       ]
     },
     {
-      "cluster_id": "T4-C9", "tier": 4, "slug": "cluster4_9_prefixes_many_all_beside_poly_pan_para", "name": "Poly-, Pan-, Para-", "name_de": "Präfixe: Poly-/Pan-/Para-", "name_es": "Prefijos: Poly-/Pan-/Para-", "name_ja": "接頭辞: Poly-/Pan-/Para-", "name_zh": "前缀：Poly-、Pan-、Para-", "name_ru": "Префиксы: Poly-/Pan-/Para-",
+      "cluster_id": "T4-C9", "tier": 4, "slug": "cluster4_9_prefixes_many_all_beside_poly_pan_para", "name": "Poly-, pan-, para-", "name_de": "Präfixe: Poly-/Pan-/Para-", "name_es": "Prefijos: Poly-/Pan-/Para-", "name_ja": "接頭辞: Poly-/Pan-/Para-", "name_zh": "前缀：Poly-、Pan-、Para-", "name_ru": "Префиксы: Poly-/Pan-/Para-",
       "cards": [
         {"n": 725, "TargetWord": "polyester", "definition": "a synthetic fabric or resin made from a chain of linked ester compounds", "pos": "noun", "syn": "Terylene, synthetic fiber", "ant": "natural fiber", "TriggerLesson": "045"},
         {"n": 726, "TargetWord": "polyglot", "definition": "a person who speaks or writes several languages fluently", "pos": "noun", "syn": "linguist", "ant": "monoglot"},
@@ -950,7 +950,7 @@
         {"n": 736, "TargetWord": "parallel", "definition": "extending in the same direction and always remaining the same distance apart", "pos": "adj", "syn": "side-by-side, equidistant", "ant": "convergent, perpendicular"},
         {"n": 737, "TargetWord": "parasite", "definition": "an organism that lives on or in another and feeds at its expense", "pos": "noun", "syn": "freeloader, scrounger", "ant": "host, benefactor"},
         {"n": 738, "TargetWord": "paradigm", "definition": "a typical example or pattern of something; a model or framework of thought", "pos": "noun", "syn": "model, framework, template"},
-        {"n": 739, "TargetWord": "paramedic", "definition": "a person trained to give emergency medical treatment, often before a patient reaches hospital", "pos": "noun", "syn": "EMT, first responder"},
+        {"n": 739, "TargetWord": "paramedic", "definition": "a person trained to give emergency medical treatment, often before a patient reaches the hospital", "pos": "noun", "syn": "EMT, first responder", "definition_gb": "a person trained to give emergency medical treatment, often before a patient reaches hospital"},
         {"n": 740, "TargetWord": "paranormal", "definition": "relating to events or experiences beyond normal scientific explanation", "pos": "adj", "syn": "supernatural, uncanny", "ant": "ordinary"},
         {"n": 741, "TargetWord": "paraphrase", "definition": "to express the meaning of something using different, usually simpler, words", "pos": "verb", "syn": "reword, restate, summarize", "ant": "quote verbatim"},
         {"n": 742, "TargetWord": "paranoid", "definition": "unreasonably or obsessively suspicious, anxious, or distrustful of others", "pos": "adj", "syn": "suspicious, distrustful", "ant": "trusting, secure"}
@@ -1003,7 +1003,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C1", "tier": 5, "slug": "cluster5_1_root_cardio_haem_angio_heart_blood", "name": "Cardio, Hem & Angio", "name_de": "Wurzeln: Cardio, Hem & Angio", "name_es": "Raíces: Cardio, Hem y Angio", "name_ja": "語根: Cardio・Hem・Angio", "name_zh": "词根：Cardio、Hem与Angio", "name_ru": "Корни: Cardio, Hem и Angio",
+      "cluster_id": "T5-C1", "tier": 5, "slug": "cluster5_1_root_cardio_haem_angio_heart_blood", "name": "Cardio, hem & angio", "name_de": "Wurzeln: Cardio, Hem & Angio", "name_es": "Raíces: Cardio, Hem y Angio", "name_ja": "語根: Cardio・Hem・Angio", "name_zh": "词根：Cardio、Hem与Angio", "name_ru": "Корни: Cardio, Hem и Angio",
       "cards": [
         {"n": 779, "TargetWord": "cardiology", "definition": "the branch of medicine that studies and treats diseases of the heart", "pos": "noun", "syn": "heart medicine", "TriggerLesson": "048"},
         {"n": 780, "TargetWord": "cardiac", "definition": "relating to or affecting the heart", "pos": "adj", "syn": "coronary"},
@@ -1026,7 +1026,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C2", "tier": 5, "slug": "cluster5_2_root_derm_osteo_arthro_pod_skin_bone", "name": "Derm, Osteo & Arthro", "name_de": "Wurzeln: Derm, Osteo & Arthro", "name_es": "Raíces: Derm, Osteo y Arthro", "name_ja": "語根: Derm・Osteo・Arthro", "name_zh": "词根：Derm、Osteo与Arthro", "name_ru": "Корни: Derm, Osteo и Arthro",
+      "cluster_id": "T5-C2", "tier": 5, "slug": "cluster5_2_root_derm_osteo_arthro_pod_skin_bone", "name": "Derm, osteo & arthro", "name_de": "Wurzeln: Derm, Osteo & Arthro", "name_es": "Raíces: Derm, Osteo y Arthro", "name_ja": "語根: Derm・Osteo・Arthro", "name_zh": "词根：Derm、Osteo与Arthro", "name_ru": "Корни: Derm, Osteo и Arthro",
       "cards": [
         {"n": 797, "TargetWord": "dermatology", "definition": "the branch of medicine concerned with the skin and its diseases", "pos": "noun", "syn": "skin medicine, cutaneous science", "TriggerLesson": "049"},
         {"n": 798, "TargetWord": "dermatitis", "definition": "inflammation of the skin, often causing redness, itching, or a rash", "pos": "noun", "syn": "skin inflammation, eczema"},
@@ -1047,7 +1047,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C3", "tier": 5, "slug": "cluster5_3_root_neur_encephalo_psych_hypn_nerve_mind", "name": "Neur, Psych & Hypn", "name_de": "Wurzeln: Neur, Psych & Hypn", "name_es": "Raíces: Neur, Psych y Hypn", "name_ja": "語根: Neur・Psych・Hypn", "name_zh": "词根：Neur、Psych与Hypn", "name_ru": "Корни: Neur, Psych и Hypn",
+      "cluster_id": "T5-C3", "tier": 5, "slug": "cluster5_3_root_neur_encephalo_psych_hypn_nerve_mind", "name": "Neur, psych & hypn", "name_de": "Wurzeln: Neur, Psych & Hypn", "name_es": "Raíces: Neur, Psych y Hypn", "name_ja": "語根: Neur・Psych・Hypn", "name_zh": "词根：Neur、Psych与Hypn", "name_ru": "Корни: Neur, Psych и Hypn",
       "cards": [
         {"n": 813, "TargetWord": "neural", "definition": "relating to nerves or the nervous system", "pos": "adj", "syn": "nervous, neurological", "TriggerLesson": "050"},
         {"n": 814, "TargetWord": "neurotic", "definition": "excessively anxious, obsessive, or emotionally unstable", "pos": "adj", "syn": "anxious, obsessive", "ant": "calm, composed"},
@@ -1071,11 +1071,11 @@
       ]
     },
     {
-      "cluster_id": "T5-C4", "tier": 5, "slug": "cluster5_4_root_gastr_hepat_entero_nephro_organs", "name": "Gastr, Hepat & Nephro", "name_de": "Wurzeln: Gastr, Hepat & Nephro", "name_es": "Raíces: Gastr, Hepat y Nephro", "name_ja": "語根: Gastr・Hepat・Nephro", "name_zh": "词根：Gastr、Hepat与Nephro", "name_ru": "Корни: Gastr, Hepat и Nephro",
+      "cluster_id": "T5-C4", "tier": 5, "slug": "cluster5_4_root_gastr_hepat_entero_nephro_organs", "name": "Gastr, hepat & nephro", "name_de": "Wurzeln: Gastr, Hepat & Nephro", "name_es": "Raíces: Gastr, Hepat y Nephro", "name_ja": "語根: Gastr・Hepat・Nephro", "name_zh": "词根：Gastr、Hepat与Nephro", "name_ru": "Корни: Gastr, Hepat и Nephro",
       "cards": [
         {"n": 832, "TargetWord": "gastric", "definition": "relating to the stomach", "pos": "adj", "syn": "stomachal", "TriggerLesson": "051"},
         {"n": 833, "TargetWord": "gastritis", "definition": "inflammation of the lining of the stomach", "pos": "noun", "syn": "stomach inflammation"},
-        {"n": 834, "TargetWord": "gastropod", "definition": "a mollusc, such as a snail or slug, that moves on a broad muscular foot", "pos": "noun", "syn": "mollusc (loosely)"},
+        {"n": 834, "TargetWord": "gastropod", "definition": "a mollusk, such as a snail or slug, that moves on a broad muscular foot", "pos": "noun", "syn": "mollusk (loosely)", "definition_gb": "a mollusc, such as a snail or slug, that moves on a broad muscular foot"},
         {"n": 835, "TargetWord": "gastroenteritis", "definition": "inflammation of the stomach and intestines, usually causing vomiting and diarrhea", "pos": "noun", "syn": "stomach flu, gastric flu", "definition_gb": "inflammation of the stomach and intestines, usually causing vomiting and diarrhoea"},
         {"n": 836, "TargetWord": "hepatitis", "definition": "inflammation of the liver, often caused by viral infection", "pos": "noun", "syn": "liver inflammation"},
         {"n": 837, "TargetWord": "hepatic", "definition": "relating to the liver", "pos": "adj", "syn": "liver-related"},
@@ -1095,7 +1095,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C5", "tier": 5, "slug": "cluster5_5_root_pneum_broncho_myo_soma_body", "name": "Pneum, Myo & Soma", "name_de": "Wurzeln: Pneum, Myo & Soma", "name_es": "Raíces: Pneum, Myo y Soma", "name_ja": "語根: Pneum・Myo・Soma", "name_zh": "词根：Pneum、Myo与Soma", "name_ru": "Корни: Pneum, Myo и Soma",
+      "cluster_id": "T5-C5", "tier": 5, "slug": "cluster5_5_root_pneum_broncho_myo_soma_body", "name": "Pneum, myo & soma", "name_de": "Wurzeln: Pneum, Myo & Soma", "name_es": "Raíces: Pneum, Myo y Soma", "name_ja": "語根: Pneum・Myo・Soma", "name_zh": "词根：Pneum、Myo与Soma", "name_ru": "Корни: Pneum, Myo и Soma",
       "cards": [
         {"n": 851, "TargetWord": "pneumonia", "definition": "infection that inflames the lungs and fills the air sacs with fluid", "pos": "noun", "syn": "lung infection, pneumonitis", "TriggerLesson": "052"},
         {"n": 852, "TargetWord": "pneumatic", "definition": "operated by or filled with compressed air", "pos": "adj", "syn": "air-powered, air-filled", "ant": "hydraulic, manual"},
@@ -1119,7 +1119,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C6", "tier": 5, "slug": "cluster5_6_root_ophthalm_oto_opt_iatr_eye_ear_healer", "name": "Ophthalm, Oto, Opt & Iatr", "name_de": "Wurzeln: Ophthalm, Oto & Iatr", "name_es": "Raíces: Ophthalm, Oto y Iatr", "name_ja": "語根: Ophthalm・Oto・Iatr", "name_zh": "词根：Ophthalm、Oto与Iatr", "name_ru": "Корни: Ophthalm, Oto и Iatr",
+      "cluster_id": "T5-C6", "tier": 5, "slug": "cluster5_6_root_ophthalm_oto_opt_iatr_eye_ear_healer", "name": "Ophthalm, oto, opt & iatr", "name_de": "Wurzeln: Ophthalm, Oto & Iatr", "name_es": "Raíces: Ophthalm, Oto y Iatr", "name_ja": "語根: Ophthalm・Oto・Iatr", "name_zh": "词根：Ophthalm、Oto与Iatr", "name_ru": "Корни: Ophthalm, Oto и Iatr",
       "cards": [
         {"n": 870, "TargetWord": "ophthalmology", "definition": "the branch of medicine concerned with the diagnosis and treatment of eye disorders", "pos": "noun", "syn": "eye medicine, ocular medicine", "TriggerLesson": "053"},
         {"n": 871, "TargetWord": "ophthalmic", "definition": "relating to the eye and its diseases", "pos": "adj", "syn": "ocular, optical"},
@@ -1129,10 +1129,10 @@
         {"n": 875, "TargetWord": "otitis", "definition": "inflammation of the ear", "pos": "noun", "syn": "ear infection"},
         {"n": 876, "TargetWord": "otoscope", "definition": "an instrument for examining the interior of the ear, especially the eardrum", "pos": "noun", "syn": "auriscope"},
         {"n": 877, "TargetWord": "otorhinolaryngology", "definition": "the branch of medicine dealing with disorders of the ear, nose and throat", "pos": "noun", "syn": "ENT medicine"},
-        {"n": 878, "TargetWord": "optic", "definition": "relating to the eye or vision", "pos": "adj", "syn": "visual, ocular"},
+        {"n": 878, "TargetWord": "optic", "definition": "relating to the eye or vision", "pos": "adj", "syn": "visual, ocular, ophthalmic"},
         {"n": 879, "TargetWord": "optics", "definition": "the branch of physics concerned with the properties and behavior of light", "pos": "noun", "syn": "the science of light", "definition_gb": "the branch of physics concerned with the properties and behaviour of light"},
-        {"n": 880, "TargetWord": "myopia", "definition": "short-sightedness; inability to see distant objects clearly", "pos": "noun", "syn": "short-sightedness", "ant": "hyperopia"},
-        {"n": 881, "TargetWord": "hyperopia", "definition": "long-sightedness; inability to see near objects clearly", "pos": "noun", "syn": "long-sightedness", "ant": "myopia"},
+        {"n": 880, "TargetWord": "myopia", "definition": "nearsightedness; inability to see distant objects clearly", "pos": "noun", "syn": "nearsightedness", "ant": "hyperopia", "definition_gb": "short-sightedness; inability to see distant objects clearly"},
+        {"n": 881, "TargetWord": "hyperopia", "definition": "farsightedness; inability to see near objects clearly", "pos": "noun", "syn": "farsightedness", "ant": "myopia", "definition_gb": "long-sightedness; inability to see near objects clearly"},
         {"n": 882, "TargetWord": "autopsy", "definition": "a post-mortem examination to determine the cause of death", "pos": "noun", "syn": "post-mortem, necropsy"},
         {"n": 883, "TargetWord": "synopsis", "definition": "a brief summary or general survey of something", "pos": "noun", "syn": "summary, abstract, precis"},
         {"n": 884, "TargetWord": "diopter", "definition": "a unit of measurement of the optical power of a lens, equal to the reciprocal of its focal length in meters", "pos": "noun", "syn": "lens power unit", "TargetWord_gb": "dioptre", "definition_gb": "a unit of measurement of the optical power of a lens, equal to the reciprocal of its focal length in metres"},
@@ -1198,7 +1198,7 @@
         {"n": 929, "TargetWord": "neuropathy", "definition": "damage or disease affecting the peripheral nerves, often causing numbness or weakness", "pos": "noun", "syn": "nerve damage, neuritis"},
         {"n": 930, "TargetWord": "atrophy", "definition": "the wasting away of a body part or tissue, especially through disuse", "pos": "noun", "syn": "wasting, degeneration", "ant": "growth, hypertrophy"},
         {"n": 931, "TargetWord": "hypertrophy", "definition": "the enlargement of an organ or tissue from excessive growth of its cells", "pos": "noun", "syn": "enlargement, overgrowth", "ant": "atrophy"},
-        {"n": 932, "TargetWord": "dystrophy", "definition": "a disorder marked by progressive weakening and wasting of the muscles", "pos": "noun", "syn": "degeneration, wasting"},
+        {"n": 932, "TargetWord": "dystrophy", "definition": "an inherited disorder in which the muscles progressively weaken and waste away", "pos": "noun", "syn": "degeneration, wasting, atrophy"},
         {"n": 933, "TargetWord": "eutrophication", "definition": "excessive richness of nutrients in a body of water, causing dense plant growth and oxygen loss", "pos": "noun", "syn": "nutrient enrichment, algal overgrowth"},
         {"n": 934, "TargetWord": "trophic", "definition": "relating to nutrition or the feeding relationships within a food chain", "pos": "adj", "syn": "nutritional, alimentary"},
         {"n": 935, "TargetWord": "diarrhea", "definition": "abnormally frequent and loose bowel movements", "pos": "noun", "syn": "looseness of the bowels", "ant": "constipation", "TargetWord_gb": "diarrhoea"},
@@ -1214,7 +1214,7 @@
       ]
     },
     {
-      "cluster_id": "T5-C10", "tier": 5, "slug": "cluster5_10_root_necr_tox_glyc_phag_death_poison", "name": "Necr, Tox & Phag", "name_de": "Wurzeln: Necr, Tox & Phag", "name_es": "Raíces: Necr, Tox y Phag", "name_ja": "語根: Necr・Tox・Phag", "name_zh": "词根：Necr、Tox与Phag", "name_ru": "Корни: Necr, Tox и Phag",
+      "cluster_id": "T5-C10", "tier": 5, "slug": "cluster5_10_root_necr_tox_glyc_phag_death_poison", "name": "Necr, tox & phag", "name_de": "Wurzeln: Necr, Tox & Phag", "name_es": "Raíces: Necr, Tox y Phag", "name_ja": "語根: Necr・Tox・Phag", "name_zh": "词根：Necr、Tox与Phag", "name_ru": "Корни: Necr, Tox и Phag",
       "cards": [
         {"n": 945, "TargetWord": "necropsy", "definition": "an examination of a body after death to establish the cause, especially in animals", "pos": "noun", "syn": "autopsy, postmortem", "TriggerLesson": "058"},
         {"n": 946, "TargetWord": "necromancy", "definition": "the practice of supposedly communicating with the dead to predict or influence the future", "pos": "noun", "syn": "sorcery, divination"},
@@ -1250,7 +1250,7 @@
         {"n": 971, "TargetWord": "technophilia", "definition": "an enthusiastic fondness for new technology", "pos": "noun", "syn": "love of technology", "ant": "technophobia"},
         {"n": 972, "TargetWord": "phobia", "definition": "an extreme or irrational fear of a specific thing or situation", "pos": "noun", "syn": "dread, aversion", "ant": "love, fondness"},
         {"n": 973, "TargetWord": "claustrophobic", "definition": "having an extreme or irrational fear of confined or enclosed spaces", "pos": "adj", "syn": "hemmed in, shut in", "ant": "unfazed by confinement"},
-        {"n": 974, "TargetWord": "homophobic", "definition": "showing fear, dislike, or prejudice towards homosexuality or homosexual people", "pos": "adj", "syn": "prejudiced", "ant": "accepting, tolerant"},
+        {"n": 974, "TargetWord": "hydrophilic", "definition": "attracting water or readily absorbing it", "pos": "adj", "syn": "absorbent, water-attracting", "ant": "hydrophobic"},
         {"n": 975, "TargetWord": "claustrophobia", "definition": "an extreme or irrational fear of confined or enclosed spaces", "pos": "noun", "syn": "fear of confinement", "ant": "comfort in tight, enclosed spaces"},
         {"n": 976, "TargetWord": "hydrophobia", "definition": "an extreme or irrational fear of water", "pos": "noun", "syn": "aquaphobia"},
         {"n": 977, "TargetWord": "agoraphobia", "definition": "an extreme fear of open or crowded public spaces", "pos": "noun", "syn": "fear of open spaces", "ant": "love of crowds"},

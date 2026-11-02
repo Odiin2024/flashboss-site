@@ -263,11 +263,15 @@
           "  I was carrying the box when I fell.   Drücke 1",
           "  Szene: was carrying / Ereignis: fell",
           "",
+          "WHILE gehört zur langen Szene, WHEN zum",
+          "kurzen Ereignis:",
+          "  While she was cooking, the phone rang.",
+          "  = Während sie kochte, klingelte das Telefon.",
+          "",
           "Deutsch hat KEINE Verlaufsform. Beides",
           "steht in der normalen Vergangenheit;",
           "gerade zeigt die laufende Szene; als",
-          "(when) und während (while) verbinden sie:",
-          "  Als sie kochte, klingelte das Telefon."
+          "(when) und während (while) verbinden sie."
         ],
         "pronunciation_mappings": {
           "1": "I was carrying the box when I fell."

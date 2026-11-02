@@ -42,13 +42,13 @@
         "content": [
           "情感也会触发虚拟式：",
           "",
-          "Je suis content que la société           按 1",
-          "soit plus diverse.",
-          "（我很高兴社会更加多元。）",
+          "Je suis content que la maison            按 1",
+          "soit plus calme.",
+          "（我很高兴家里更安静了。）",
           "",
           "J'ai peur qu'il n'y ait pas assez        按 2",
-          "d'égalité.",
-          "（我担心平等还不够。）",
+          "de temps.",
+          "（我担心时间不够。）",
           "",
           "",
           "BIEN QUE / QUOIQUE = 尽管，              按 3",
@@ -58,8 +58,8 @@
           "（尽管困难，我们仍须行动。）"
         ],
         "pronunciation_mappings": {
-          "1": "je suis content que la société soit plus diverse",
-          "2": "j'ai peur qu'il n'y ait pas assez d'égalité",
+          "1": "je suis content que la maison soit plus calme",
+          "2": "j'ai peur qu'il n'y ait pas assez de temps",
           "3": "bien que ce soit difficile, il faut agir"
         }
       },
@@ -71,8 +71,8 @@
           "",
           "POUR QUE / AFIN QUE = 以便：             按 1",
           "Pour que chacun ait sa place,",
-          "la loi doit changer.",
-          "（为了让每个人都有立足之地，法律必须改变。）",
+          "on ajoute des chaises.",
+          "（为了让每个人都有座位，我们加几把椅子。）",
           "",
           "时间限制同样触发虚拟式：",
           "",
@@ -87,7 +87,7 @@
           "解决。）"
         ],
         "pronunciation_mappings": {
-          "1": "pour que chacun ait sa place, la loi doit changer",
+          "1": "pour que chacun ait sa place, on ajoute des chaises",
           "2": "avant qu'il soit trop tard, agissons",
           "3": "on se bat jusqu'à ce que ce soit réglé"
         }
@@ -186,9 +186,9 @@
           "布列塔尼        la Bretagne",
           "诺曼底          la Normandie             按 6",
           "科西嘉岛        la Corse",
-          "埃菲尔铁塔      la tour Eiffel           按 7",
+          "埃菲尔铁塔      la tour Eiffel           按 8",
           "卢浮宫          le Louvre",
-          "勃朗峰          le mont Blanc            按 8",
+          "勃朗峰          le mont Blanc            按 x",
           "卢瓦尔河        la Loire"
         ],
         "pronunciation_mappings": {
@@ -198,8 +198,8 @@
           "4": "Bordeaux. Strasbourg.",
           "5": "La Provence. La Bretagne.",
           "6": "La Normandie. La Corse.",
-          "7": "La tour Eiffel. Le Louvre.",
-          "8": "Le mont Blanc. La Loire."
+          "8": "La tour Eiffel. Le Louvre.",
+          "x": "Le mont Blanc. La Loire."
         }
       },
       {
@@ -220,9 +220,9 @@
           "波兰         Pologne     Varsovie",
           "瑞典         Suède       Stockholm       按 6",
           "俄罗斯       Russie      Moscou",
-          "乌克兰       Ukraine     Kiev            按 7",
+          "乌克兰       Ukraine     Kiev (Kyiv)     按 8",
           "土耳其       Turquie     Ankara",
-          "比利时       Belgique    Bruxelles       按 8",
+          "比利时       Belgique    Bruxelles       按 x",
           "卢森堡       Luxembourg  Luxembourg"
         ],
         "pronunciation_mappings": {
@@ -232,8 +232,8 @@
           "4": "Pays-Bas. Amsterdam. Suisse. Berne.",
           "5": "Autriche. Vienne. Pologne. Varsovie.",
           "6": "Suède. Stockholm. Russie. Moscou.",
-          "7": "Ukraine. Kiev. Turquie. Ankara.",
-          "8": "Belgique. Bruxelles. Luxembourg. Luxembourg."
+          "8": "Ukraine. Kiev. Turquie. Ankara.",
+          "x": "Belgique. Bruxelles. Luxembourg. Luxembourg."
         }
       },
       {
@@ -250,13 +250,13 @@
           "巴西         Brésil      Brasilia",
           "中国         Chine       Pékin           按 4",
           "日本         Japon       Tokyo",
-          "韩国         Corée (Sud) Séoul           按 5",
+          "韩国         Corée du Sud Séoul          按 5",
           "印度         Inde        New Delhi",
           "印度尼西亚   Indonésie   Jakarta         按 6",
           "澳大利亚     Australie   Canberra",
-          "埃及         Égypte      Le Caire        按 7",
+          "埃及         Égypte      Le Caire        按 8",
           "肯尼亚       Kenya       Nairobi",
-          "尼日利亚     Nigeria     Abuja           按 8",
+          "尼日利亚     Nigeria     Abuja           按 x",
           "南非         Afrique du Sud Pretoria"
         ],
         "pronunciation_mappings": {
@@ -264,10 +264,10 @@
           "2": "États-Unis. Washington. Canada. Ottawa.",
           "3": "Mexique. Mexico. Brésil. Brasilia.",
           "4": "Chine. Pékin. Japon. Tokyo.",
-          "5": "Corée (Sud). Séoul. Inde. New Delhi.",
+          "5": "Corée du Sud. Séoul. Inde. New Delhi.",
           "6": "Indonésie. Jakarta. Australie. Canberra.",
-          "7": "Égypte. Le Caire. Kenya. Nairobi.",
-          "8": "Nigeria. Abuja. Afrique du Sud. Pretoria."
+          "8": "Égypte. Le Caire. Kenya. Nairobi.",
+          "x": "Nigeria. Abuja. Afrique du Sud. Pretoria."
         }
       }
     ]

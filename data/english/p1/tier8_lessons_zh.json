@@ -76,11 +76,13 @@
         "content": [
           "转述疑问句时，不能保留原问句语序。",
           "",
+          "",
           "  \"Where do you live?\"",
           "  She asked me where I lived.",
           "",
           "语序变为陈述句形式（where I LIVED，",
           "而非 where DID I live），且时态后退一步。",
+          "",
           "",
           "是非问句用 whether 或 if 引导：",
           "  \"Is the internet down?\"",
@@ -137,9 +139,9 @@
           "纽约            a New Yorker",
           "洛杉矶          on the Pacific           按 6",
           "芝加哥          on Lake Michigan",
-          "得克萨斯        a Texan                  按 7",
+          "得克萨斯        a Texan                  按 8",
           "加利福尼亚      Californian",
-          "落基山脉        the mountains            按 8",
+          "落基山脉        the mountains            按 x",
           "密西西比河      the great river"
         ],
         "pronunciation_mappings": {
@@ -149,8 +151,8 @@
           "4": "London's river. England's lakes.",
           "5": "The US capital. A New Yorker.",
           "6": "On the Pacific. On Lake Michigan.",
-          "7": "A Texan. Californian.",
-          "8": "The mountains. The great river."
+          "8": "A Texan. Californian.",
+          "x": "The mountains. The great river."
         }
       },
       {
@@ -171,9 +173,9 @@
           "奥地利       Austrian    Vienna",
           "波兰         Polish      Warsaw          按 6",
           "瑞典         Swedish     Stockholm",
-          "挪威         Norwegian   Oslo            按 7",
+          "挪威         Norwegian   Oslo            按 8",
           "俄罗斯       Russian     Moscow",
-          "乌克兰       Ukrainian   Kyiv            按 8",
+          "乌克兰       Ukrainian   Kyiv            按 x",
           "土耳其       Turkish     Ankara"
         ],
         "pronunciation_mappings": {
@@ -183,8 +185,8 @@
           "4": "Portuguese. Lisbon. Dutch. Amsterdam.",
           "5": "Swiss. Bern. Austrian. Vienna.",
           "6": "Polish. Warsaw. Swedish. Stockholm.",
-          "7": "Norwegian. Oslo. Russian. Moscow.",
-          "8": "Ukrainian. Kyiv. Turkish. Ankara."
+          "8": "Norwegian. Oslo. Russian. Moscow.",
+          "x": "Ukrainian. Kyiv. Turkish. Ankara."
         }
       },
       {
@@ -205,9 +207,9 @@
           "印度尼西亚   Indonesian  Jakarta",
           "澳大利亚     Australian  Canberra        按 6",
           "新西兰       New Zealander Wellington",
-          "埃及         Egyptian    Cairo           按 7",
+          "埃及         Egyptian    Cairo           按 8",
           "南非         South African Pretoria",
-          "肯尼亚       Kenyan      Nairobi         按 8",
+          "肯尼亚       Kenyan      Nairobi         按 x",
           "尼日利亚     Nigerian    Abuja"
         ],
         "pronunciation_mappings": {
@@ -217,8 +219,8 @@
           "4": "Japanese. Tokyo. South Korean. Seoul.",
           "5": "Indian. New Delhi. Indonesian. Jakarta.",
           "6": "Australian. Canberra. New Zealander. Wellington.",
-          "7": "Egyptian. Cairo. South African. Pretoria.",
-          "8": "Kenyan. Nairobi. Nigerian. Abuja."
+          "8": "Egyptian. Cairo. South African. Pretoria.",
+          "x": "Kenyan. Nairobi. Nigerian. Abuja."
         }
       }
     ]

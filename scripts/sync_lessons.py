@@ -10,8 +10,11 @@ localized lesson pages fall back to the English file.
 """
 import glob, os, re, shutil, sys
 
-REPO = "/home/odiin/Documents/Bootcamp/knight/flashcard_sets"
-LOCALES = ("", "_de", "_es", "_ja", "_zh", "_ru", "_gb")   # _gb is the British lesson twin, used by the UK/US toggle
+# FLASHBOSS_CARDS overrides the source tree: knight's working tree is often on a
+# branch with local edits, so a site refresh reads an export of the release branch
+# (git archive origin/tauri-release flashcard_sets | tar -x -C <dir>) and points this at it.
+REPO = os.environ.get("FLASHBOSS_CARDS", "/home/odiin/Documents/Bootcamp/knight/flashcard_sets")
+LOCALES = ("", "_de", "_es", "_ja", "_zh", "_ru", "_ar", "_gb")   # _ar added 2026-11-02 for lessons.ar.html   # _gb is the British lesson twin, used by the UK/US toggle
 # _ru added 2026-09-19: every foreign pack has carried Russian lesson twins upstream
 # for a while, and none of them were being copied, so lessons.ru.html showed the
 # English lessons to a Russian reader. It asks for the twin now.
@@ -61,7 +64,15 @@ MAP = [("English/core",               "data/english/core"),
        # bureaucracy guide) and they are copied, though the lessons page does not yet
        # ask for them: it passes LESSON_LOC for foreign packs only.
        ("English_Adept/core",          "data/english/ad"),
-       ("English_Advance/core",        "data/english/adv")]
+       ("English_Advance/core",        "data/english/adv"),
+       # Indonesian and Russian (2026-11-02). Russian carries no _ru twin:
+       # Russian is the pack's own language, and lessons.ru.html falls back to English.
+       ("Indonesian/core",             "data/indonesian"),
+       ("Indonesian_Extensions/pareto1","data/indonesian"),
+       ("Indonesian_Extensions/pareto2","data/indonesian"),
+       ("Russian/core",                "data/russian"),
+       ("Russian_Extensions/pareto1",  "data/russian"),
+       ("Russian_Extensions/pareto2",  "data/russian")]
 
 def main():
     total = 0
