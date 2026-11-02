@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>قوائم كلمات مجانية للطباعة: الإنجليزية واللاتينية والإيطالية والألمانية والإسبانية والفرنسية والسواحيلية والإندونيسية والروسية والإسبرانتو وتوكي بونا | FlashBoss</title>
+<meta name="description" content="قوائم مفردات مجانية قابلة للطباعة لكل لغات FlashBoss: الإنجليزية واللاتينية والإيطالية والألمانية والإسبانية والفرنسية والسواحيلية والإندونيسية والروسية والإسبرانتو وتوكي بونا، ومعها كل حزم English Roots. أكثر الكلمات فائدة في كل لغة، مرتبة حسب الشيوع ومجمعة حسب المرحلة والموضوع، ولكل كلمة ترجمتها. إخفاء الترجمات يتيح الاختبار الذاتي، وطباعة العنقود تتيح قص بطاقات خاصة.">
+<link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://odiin2024.github.io/flashboss-site/wordlists.ar.html">
+<link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/wordlists.html">
+<link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/wordlists.de.html">
+<link rel="alternate" hreflang="es" href="https://odiin2024.github.io/flashboss-site/wordlists.es.html">
+<link rel="alternate" hreflang="ja" href="https://odiin2024.github.io/flashboss-site/wordlists.ja.html">
+<link rel="alternate" hreflang="zh" href="https://odiin2024.github.io/flashboss-site/wordlists.zh.html">
+<link rel="alternate" hreflang="ru" href="https://odiin2024.github.io/flashboss-site/wordlists.ru.html">
+<link rel="alternate" hreflang="ar" href="https://odiin2024.github.io/flashboss-site/wordlists.ar.html">
+<link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/wordlists.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Noto+Sans+Arabic:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
+  --accent:#e0a93f; --line:#3a3120; --rule:#2a2417;
+}
+/* Fantasque Sans Mono — self-hosted, used ONLY for the printed flashcards.
+   Drop the woff2 files in fonts/ (see fonts/README.md); falls back to
+   JetBrains Mono until they're present. */
+@font-face{font-family:'Fantasque Sans Mono'; src:url('fonts/FantasqueSansMono-Regular.woff2') format('woff2'); font-weight:400; font-style:normal; font-display:swap;}
+@font-face{font-family:'Fantasque Sans Mono'; src:url('fonts/FantasqueSansMono-Bold.woff2') format('woff2'); font-weight:700; font-style:normal; font-display:swap;}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--mono); background:var(--bg); color:var(--ink); line-height:1.55; -webkit-font-smoothing:antialiased;}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.04) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.wrap{max-width:920px; margin:0 auto; padding:0 22px;}
+a{color:var(--accent);}
+
+nav{display:flex; align-items:center; padding:16px 22px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line);}
+nav .brand{font-weight:500; letter-spacing:.1em;}
+nav .brand a, nav .brand .sep{color:var(--dim); text-decoration:none;}
+nav .brand a:hover{color:var(--ink);}
+nav .brand .here{font-weight:800; color:var(--ink);}
+nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--ink);}
+nav .brand .logo:hover{color:var(--accent);}
+nav .brand .pipe{color:var(--faint); margin:0 11px;}
+nav .links{margin-left:auto;}
+nav .links a{color:var(--ink); text-decoration:none; opacity:.7; margin-left:20px;}
+nav .links a:hover{opacity:1; color:var(--accent);}
+nav .links a.steam{font-weight:800; opacity:1; color:var(--accent);}
+nav .lang-switch{position:relative; margin-left:22px;}
+nav .lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--ink); background:var(--bg); border:1px solid var(--dim); padding:5px 8px; line-height:1; cursor:pointer;}
+nav .lang-toggle:hover, nav .lang-toggle[aria-expanded="true"]{background:var(--ink); color:var(--bg);}
+nav .lang-caret{font-size:8px; line-height:1; transition:transform .15s ease;}
+nav .lang-toggle[aria-expanded="true"] .lang-caret{transform:rotate(180deg);}
+nav .lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--bg); border:1px solid var(--dim); min-width:120px; z-index:50;}
+nav .lang-menu[hidden]{display:none;}
+nav .lang-menu li{margin:0; padding-left:0; position:static;}
+nav .lang-menu li::before{content:none;}
+nav .lang-menu a{display:block; font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--ink); text-decoration:none; padding:7px 10px; white-space:nowrap; opacity:1; margin:0;}
+nav .lang-menu a:hover{background:var(--ink); color:var(--bg); text-decoration:none;}
+nav .lang-menu a[aria-current="true"]{color:var(--accent);}
+nav .lang-menu a[aria-current="true"]:hover{color:var(--bg);}
+/* collapsed left: breadcrumb -> simple "home" on narrow widths or short (landscape) viewports;
+   the right side (sister link + steam) is only two fields and stays put */
+.nav-home{display:none; color:var(--ink); text-decoration:none; font-weight:700; letter-spacing:.08em; opacity:.85;}
+.nav-home:hover{opacity:1; color:var(--accent);}
+@media(max-width:640px), (max-height:480px){ nav .brand{display:none;} .nav-home{display:inline;} }
+
+header.page{position:relative; padding:90px 0 40px; overflow:hidden;}
+header.page::before{content:""; position:absolute; inset:0; z-index:0;
+  background:#0c0a06 url('home.webp') center 30% / cover no-repeat;}
+header.page::after{content:""; position:absolute; inset:0; z-index:1;
+  background:linear-gradient(180deg, rgba(16,13,8,.5) 0%, rgba(16,13,8,.7) 55%, var(--bg) 100%);}
+header.page .wrap{position:relative; z-index:2;}
+.crumb{font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); opacity:.85;}
+header.page h1{font-size:clamp(34px,7vw,58px); margin:13px 0 12px; font-weight:800; letter-spacing:-.01em; color:var(--ink);}
+header.page p{max-width:66ch; color:var(--dim); font-size:15px; margin:0;}
+header.page p b{color:var(--ink);}
+header.page p b a, .howlink{color:var(--ink); text-decoration:none; font-weight:700;}
+header.page p b a:hover, .howlink:hover{color:#fff; text-decoration:none;}
+
+.controls{position:sticky; top:0; z-index:50; background:color-mix(in oklab, var(--bg), transparent 5%); backdrop-filter:blur(4px);
+  border-bottom:1px solid var(--line); padding:14px 0; margin-top:28px;}
+.controls .row{display:flex; gap:14px; flex-wrap:wrap; align-items:center;}
+.field{display:flex; align-items:center; gap:8px;}
+.field label{font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--faint);}
+select, .btn{font-family:var(--mono); font-size:14px; color:var(--ink); background:var(--panel); border:1px solid var(--line); padding:8px 12px; cursor:pointer;}
+/* closable multi-select dropdown */
+.msel{position:relative;}
+.msel-trigger{font-family:var(--mono); font-size:14px; color:var(--ink); background:var(--panel); border:1px solid var(--line); padding:8px 12px; cursor:pointer; min-width:160px; text-align:left; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.msel-trigger::after{content:" \25BE"; color:var(--faint);}
+.msel-trigger:hover, .msel-trigger:focus{border-color:var(--accent); outline:none;}
+.msel-pop{position:absolute; top:calc(100% + 5px); left:0; z-index:60; background:var(--panel); border:1px solid var(--line); padding:7px; display:flex; flex-direction:column; gap:7px; box-shadow:0 10px 28px rgba(0,0,0,.55);}
+.msel-pop[hidden]{display:none;}
+.msel-pop select[multiple]{height:248px; min-width:250px; padding:4px; border-color:var(--rule); overflow-y:auto;}
+.msel-pop select[multiple] option{padding:3px 8px;}
+.msel-pop select[multiple] optgroup{color:var(--faint); font-style:normal;}
+.msel-foot{display:flex; align-items:center; justify-content:space-between; gap:14px;}
+.msel-hint{font-size:11px; color:var(--faint);}
+
+/* how-to modal */
+.modal{position:fixed; inset:0; z-index:200; background:rgba(8,6,3,.72); display:flex; align-items:center; justify-content:center; padding:24px;}
+.modal[hidden]{display:none;}
+.modal-card{background:var(--panel); border:1px solid var(--line); max-width:560px; padding:26px 28px; box-shadow:0 14px 44px rgba(0,0,0,.6);}
+.modal-card h3{font-size:18px; color:var(--accent); margin:0 0 14px; font-weight:800;}
+.modal-card ul{margin:0 0 18px; padding-left:18px; display:flex; flex-direction:column; gap:10px;}
+.modal-card li{font-size:14px; color:var(--dim); line-height:1.5;}
+.modal-card li b{color:var(--ink);}
+.modal-note{font-size:12.5px; color:var(--faint); font-style:italic; margin:0 0 18px;}
+.howlink{white-space:nowrap;}
+select:focus, .btn:focus{outline:1px solid var(--accent);}
+.spacer{flex:1;}
+.toggle{display:inline-flex; align-items:center; gap:9px; cursor:pointer; user-select:none; font-size:13px; color:var(--dim);}
+.switch{width:42px; height:22px; border:1px solid var(--line); background:var(--panel); position:relative; transition:.15s;}
+.switch::after{content:""; position:absolute; top:2px; left:2px; width:16px; height:16px; background:var(--faint); transition:.15s;}
+.toggle.on .switch{border-color:var(--accent);} .toggle.on .switch::after{left:22px; background:var(--accent);}
+.toggle .tcap::after{content:"Translations";}
+/* English: drop the duplicate "Pack" set-label and widen the set dropdown into the freed space */
+.controls.eng #setLbl{display:none;}
+.controls.eng #setSel{min-width:8em;}
+.btn:hover{border-color:var(--accent); color:var(--accent);}
+/* portrait: reorder so Print rides the top line with Pack & Set, and Clusters +
+   Translations wrap to a tidy second row (Pack·Set·Print / Clusters·Translations) */
+@media(max-width:560px){
+  .controls .spacer{display:none;}
+  .controls #printBtn{order:3;}
+  .controls .row > .field:nth-child(3){order:4; min-width:0;}  /* Clusters field -> row 2; can shrink so its "Clusters" label fits */
+  .msel-trigger{min-width:0;}                                  /* trim the Clusters box so label + toggle fit beside it */
+  .controls #transToggle{order:5;}                             /* keep the toggle horizontal (switch + Translations) */
+}
+
+.setmeta{display:flex; gap:18px; flex-wrap:wrap; align-items:baseline; padding:26px 0 6px; color:var(--dim); font-size:13px;}
+.setmeta .big{font-size:22px; font-weight:800; color:var(--ink); letter-spacing:-.01em;}
+.setmeta .sel{margin-left:auto;}
+
+.state{padding:60px 0; text-align:center; color:var(--faint); font-size:14px;}
+.state .ic{font-size:26px; opacity:.5; display:block; margin-bottom:12px;}
+
+.tier{border:1px solid var(--line); margin:16px 0; background:var(--panel);}
+.tier > .head{display:flex; align-items:center; gap:14px; padding:14px 18px; cursor:pointer; user-select:none;}
+.tier > .head:hover{background:rgba(224,169,63,.05);}
+.tier .tnum{font-size:11px; font-weight:700; letter-spacing:.1em; color:var(--accent); border:1px solid var(--accent); padding:3px 8px;}
+.tier .tlabel{font-weight:700; font-size:16px;}
+.tier .tmeta{margin-left:auto; font-size:12px; color:var(--faint); letter-spacing:.04em;}
+.tier .chev{transition:transform .2s; color:var(--faint);}
+.tier.collapsed .chev{transform:rotate(-90deg);}
+.tier-body{padding:4px 18px 18px;}
+.tier.collapsed .tier-body{display:none;}
+
+.cluster{border-top:1px solid var(--rule); padding:16px 0 6px;}
+.cluster:first-child{border-top:0;}
+.cluster .chead{display:flex; align-items:baseline; gap:12px; margin-bottom:10px;}
+.cluster .cid{font-size:11px; color:var(--faint); letter-spacing:.06em;}
+.cluster .cname{font-weight:700; color:var(--ink);}
+.cluster .ccount{margin-left:auto; font-size:11px; color:var(--faint);}
+.cluster.solo{border:1px solid var(--line); background:var(--panel); padding:18px 20px; margin-top:18px;}
+.cluster.solo .chead{align-items:baseline; gap:12px; border-bottom:1px solid var(--rule); padding-bottom:10px; margin-bottom:14px;}
+.cluster.solo .tnum{font-size:11px; font-weight:700; letter-spacing:.1em; color:var(--accent); border:1px solid var(--accent); padding:3px 8px;}
+.cluster.solo .cname{font-weight:700; font-size:17px;}
+
+.words{display:grid; grid-template-columns:1fr 1fr; gap:0 28px;}
+@media(max-width:620px){.words{grid-template-columns:1fr;}}
+.word{display:flex; justify-content:space-between; gap:14px; padding:6px 0; border-bottom:1px dotted var(--rule);}
+.word .w{font-weight:500;}
+.word .t{color:var(--dim); text-align:right;}
+.words.hide-trans .word{cursor:pointer;}
+.words.hide-trans .word .t{visibility:hidden;}
+.words.hide-trans .word.revealed .t{visibility:visible; color:var(--accent);}
+
+/* English definition packs: word + a wrapping definition, single column (not a flashcard grid) */
+.defs{display:flex; flex-direction:column;}
+.def{display:grid; grid-template-columns:minmax(96px,max-content) 1fr; gap:4px 18px; align-items:baseline; padding:8px 0; border-bottom:1px dotted var(--rule);}
+.def:last-child{border-bottom:0;}
+.def .dw{font-weight:700; color:var(--ink);}
+.def .dd .sa{display:block; font-style:italic; opacity:.85;}   /* syn | ant: second line of the back face, screen and paper alike */
+.def .dd{color:var(--dim); font-size:10px; line-height:1.55;}
+.defs.hide-trans .def{cursor:pointer;}
+.defs.hide-trans .def .dd{visibility:hidden;}
+.defs.hide-trans .def.revealed .dd{visibility:visible; color:var(--accent);}
+@media(max-width:620px){.def{grid-template-columns:1fr; gap:2px;}}
+
+footer{border-top:1px solid var(--line); padding:26px 22px; font-size:12px; color:var(--faint); text-align:center; letter-spacing:.04em; margin-top:40px;}
+footer a{color:var(--dim); text-decoration:none; margin:0 8px;} footer a:hover{color:var(--ink);}
+.share-toggle{font:inherit; letter-spacing:inherit; color:var(--dim); background:none; border:0; margin:0 8px; padding:0; cursor:pointer;}
+.share-toggle:hover{color:var(--ink);}
+.share-modal{position:fixed; inset:0; z-index:200; display:flex; align-items:center; justify-content:center; padding:24px; background:rgba(0,0,0,.55); opacity:0; transition:opacity .18s ease;}
+.share-modal.open{opacity:1;}
+.share-modal[hidden]{display:none;}
+.share-card{position:relative; width:100%; max-width:380px; background:var(--panel); border:1px solid var(--line); padding:28px 24px 24px; text-align:center; box-shadow:0 24px 70px rgba(0,0,0,.6); transform:scale(.88); transition:transform .18s ease;}
+.share-modal.open .share-card{transform:scale(1);}
+.share-card-title{font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); margin-bottom:18px;}
+.share-close{position:absolute; top:8px; right:12px; background:none; border:0; color:var(--dim); font-size:24px; line-height:1; cursor:pointer; padding:4px;}
+.share-close:hover{color:var(--ink);}
+.share-btns{display:flex; flex-wrap:wrap; justify-content:center; gap:8px;}
+.share-btn{font-family:var(--mono); font-size:12px; letter-spacing:.04em; color:var(--ink); text-decoration:none; background:transparent; border:1px solid var(--line); padding:9px 14px; cursor:pointer; transition:border-color .14s ease, color .14s ease;}
+.share-btn:hover{border-color:var(--accent); color:var(--accent);}
+
+@media print{
+  nav,.controls,header.page p,.overlay,footer .nav,.printhide{display:none !important;}
+  body{background:#fff; color:#000; font-size:11pt;}
+  .wrap{max-width:none; padding:0;}
+  header.page{padding:0 0 6px; overflow:visible;} header.page::before,header.page::after{display:none !important;} header.page h1{font-size:18pt; margin:0; color:#000;} header.page h1::before{content:"FlashBoss ";}
+  .setmeta{color:#000; padding:6px 0 4px;} .setmeta .big{color:#000;}
+  .cluster.solo{border:0; background:#fff; padding:0; margin:0;}
+  .cluster.solo .chead{border-bottom:1px solid #000; margin-bottom:8px;} .cluster.solo .tnum{color:#000; border-color:#000;} .cluster.solo .cname{color:#000;} .cluster.solo .ccount, .cluster.solo .cid{color:#000;}
+  /* foldable flashcards: word | translation side by side, solid border per card, dashed centre = fold line.
+     Cut along the solid lines, fold along the dashed centre — both faces point up. */
+  .words, .words.hide-trans{display:grid !important; grid-template-columns:repeat(2,1fr); gap:0;
+    border-top:1px solid #000; border-left:1px solid #000;}
+  .word{font-family:'Fantasque Sans Mono', var(--mono); border-right:1px solid #000; border-bottom:1px solid #000;
+    min-height:0.72in; display:flex; align-items:stretch; padding:0; break-inside:avoid;}
+  .word .w, .word .t{flex:1; display:flex; align-items:center; justify-content:center; text-align:center; padding:8px 8px; color:#000;}
+  .word .w{border-right:1px dashed #000; font-weight:700; font-size:12pt;}
+  .word .t{font-size:10.5pt;}
+  .words.hide-trans .word .t{visibility:hidden;}  /* Translations off -> blank fold face, word-only test cards */
+  /* English packs print as fold cards: FRONT = big word + small (syn : ant); BACK = small 2-line definition.
+     A different font on each face; ~15 cards/page. Cut the rows out, fold along the dashed centre. */
+  .defs{display:block; border-top:1px solid #000; border-left:1px solid #000; border-right:1px solid #000;}
+  .def{display:grid; grid-template-columns:1fr 1fr; gap:0; min-height:0.62in; padding:0; border-bottom:1px solid #000; break-inside:avoid; color:#000;}
+  .def .dw{font-family:Georgia,'Times New Roman',serif; font-size:17pt; font-weight:700; color:#000; border-right:1px dashed #000;
+    padding:6px 8px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:3px;}
+  .def .dd .sa{display:block; font-size:7.5pt; font-style:italic; color:#333; margin-top:2px;}
+  .def .dd{font-family:'Helvetica Neue',Arial,sans-serif; font-size:8.5pt; line-height:1.25; color:#000;
+    display:flex; flex-direction:column; justify-content:center; padding:6px 10px;}
+  .defs.hide-trans .def .dd{visibility:hidden;}
+}
+.spell{display:inline-flex; border:1px solid var(--line); user-select:none; align-self:stretch;}
+.spell .sp{font-family:var(--mono); font-size:11px; letter-spacing:.08em; color:var(--dim); background:var(--panel); border:0; padding:0 9px; cursor:pointer;}
+.spell .sp + .sp{border-left:1px solid var(--line);}
+.spell .sp.on{color:var(--bg); background:var(--accent); font-weight:700;}
+.spell .sp:not(.on):hover{color:var(--ink);}
+#spellField[hidden]{display:none;}
+:where(a){color:inherit; text-decoration-color:currentColor;}  /* unstyled links inherit the text colour instead of browser blue (~2:1 on this background); zero specificity, so any page rule wins */
+
+/* ---- Arabic (RTL) ---- */
+:root{ --mono:'JetBrains Mono', 'Noto Sans Arabic', ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+html[lang="ar"] body *{letter-spacing:normal !important;}          /* tracking breaks the Arabic joins */
+html[lang="ar"] nav.fbnav .fb-logo{letter-spacing:.18em !important;} /* the Latin wordmark keeps its tracking */
+html[dir="rtl"] nav .lang-menu{right:auto; left:0;}
+html[dir="rtl"] nav.fbnav .fb-links{margin-left:0; margin-right:auto;}
+html[dir="rtl"] .share-close{right:auto; left:12px;}
+html[dir="rtl"] .modal-card ul{padding-left:0; padding-right:18px;}
+.beta-note{background:#1b1508; border-bottom:1px solid #6b5a2a; color:#e8d9b0; font:500 13px/1.6 'Noto Sans Arabic',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; text-align:center; padding:9px 16px; margin:0;}
+.beta-note b{color:#e0a93f; font-weight:700;}
+.beta-note a{color:#e0a93f; text-decoration:underline; text-underline-offset:2px;}
+@media (max-width:700px){ html[dir="rtl"] nav.fbnav .fb-links{margin-right:0;} html[dir="rtl"] nav.fbnav .fb-steam-m{margin-left:0; margin-right:auto;} }
+
+html[dir="rtl"] .msel-trigger{text-align:right;}
+html[dir="rtl"] .msel-pop{left:auto; right:0;}
+html[dir="rtl"] .setmeta .sel{margin-left:0; margin-right:auto;}
+html[dir="rtl"] .cluster .ccount{margin-left:0; margin-right:auto;}
+html[dir="rtl"] .word .t{text-align:left;}
+html[dir="rtl"] .spell .sp + .sp{border-left:0; border-right:1px solid var(--line);}
+.toggle .tcap::after{content:"الترجمات";}
+@media print{
+  html[dir="rtl"] .words, html[dir="rtl"] .words.hide-trans{border-left:0; border-right:1px solid #000;}
+  html[dir="rtl"] .word{border-right:0; border-left:1px solid #000;}
+  html[dir="rtl"] .word .w{border-right:0; border-left:1px dashed #000;}
+  html[dir="rtl"] .def .dw{border-right:0; border-left:1px dashed #000;}
+  html[dir="rtl"] header.page h1::before{content:"FlashBoss ";}
+}
+</style>
+<!-- FBNAV:start (scripts/stamp_nav.py — edit there, not here) -->
+<style>
+nav.fbnav{display:flex; align-items:center; gap:10px 22px; flex-wrap:wrap;}
+nav.fbnav .fb-logo{color:inherit; text-decoration:none; font-weight:800; letter-spacing:.18em;}
+nav.fbnav .fb-crumbs{display:flex; align-items:baseline; flex-wrap:wrap; gap:0; font-size:13px; letter-spacing:.04em;}
+nav.fbnav .fb-crumbs a:not(.fb-logo){color:inherit; text-decoration:none; opacity:.72;}
+nav.fbnav .fb-crumbs a:not(.fb-logo):hover{opacity:1;}
+nav.fbnav .fb-pipe{opacity:.4; margin:0 10px;}
+nav.fbnav .fb-sep{opacity:.45; margin:0 .5em;}
+nav.fbnav .fb-here{opacity:1;}
+nav.fbnav .fb-links{display:flex; align-items:center; gap:8px 20px; flex-wrap:wrap; margin-left:auto;}
+nav.fbnav .fb-links a{color:inherit; text-decoration:none; opacity:.72; font-size:13px; letter-spacing:.04em; white-space:nowrap;}
+nav.fbnav .fb-links a:hover{opacity:1;}
+nav.fbnav .fb-links a[aria-current]{opacity:1; text-decoration:underline; text-underline-offset:5px;}
+nav.fbnav a.fb-steam{opacity:1; text-decoration:none; font-size:13px; letter-spacing:.04em; color:#100d08; background:#e0a93f; padding:4px 11px; border-radius:3px; font-weight:700;}
+nav.fbnav a.fb-steam:hover{background:#ecbd5c;}
+nav.fbnav .fb-steam-m{display:none;}
+nav.fbnav .lang-switch{margin-left:0;}
+@media (max-width:700px){
+  nav.fbnav .fb-links{order:3; width:100%; margin-left:0; gap:6px 16px;}
+  nav.fbnav .fb-links .fb-steam{display:none;}
+  nav.fbnav .fb-crumbs .fb-pipe, nav.fbnav .fb-crumbs a:not(.fb-logo), nav.fbnav .fb-crumbs .fb-sep, nav.fbnav .fb-crumbs .fb-here{display:none;}
+  nav.fbnav .fb-steam-m{display:inline-block; margin-left:auto;}
+}
+</style>
+<!-- FBNAV:end -->
+</head>
+<body>
+<div class="overlay"></div>
+<div class="beta-note" role="status"><b>ترجمة تجريبية</b>: النسخة العربية من هذه الصفحة مسودة لم تخضع للمراجعة بعد. للإبلاغ عن خطأ في النص: <a href="report.html">الإبلاغ</a> · <a href="wordlists.html" lang="en" dir="ltr">Read in English</a></div>
+
+<nav class="fbnav">
+  <span class="fb-crumbs"><a class="fb-logo" href="index.ar.html" dir="ltr">FLASHBOSS</a><span class="fb-pipe">|</span><a href="home.ar.html">الرئيسية</a><span class="fb-sep"> · </span><a href="resources.html">الموارد</a><span class="fb-sep"> · </span><span class="fb-here">قوائم الكلمات</span></span>
+  <span class="fb-links">
+    <a href="home.ar.html">الرئيسية</a>
+    <a href="packs.html">الحزم</a>
+    <a href="wordlists.ar.html" aria-current="page">قوائم الكلمات</a>
+    <a href="lessons.ar.html">الدروس</a>
+    <a href="manual/">الدليل</a>
+    <a class="fb-steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-wordlists&l=arabic" target="_blank" rel="noopener">Steam</a>
+  </span>
+  <a class="fb-steam fb-steam-m" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-wordlists&l=arabic" target="_blank" rel="noopener">Steam</a>
+  <div class="lang-switch">
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="اختيار اللغة">AR<span class="lang-caret">▾</span></button>
+    <ul class="lang-menu" hidden>
+      <li><a href="wordlists.html">English</a></li>
+      <li><a href="wordlists.de.html">Deutsch</a></li>
+      <li><a href="wordlists.es.html">Español</a></li>
+      <li><a href="wordlists.ja.html">日本語</a></li>
+      <li><a href="wordlists.zh.html">简体中文</a></li>
+            <li><a href="wordlists.ru.html">Русский</a></li>
+      <li><a href="wordlists.ar.html" lang="ar" dir="rtl" aria-current="true">العربية</a></li>
+        </ul>
+  </div>
+</nav>
+
+<header class="page">
+  <div class="wrap">
+    <h1>قوائم الكلمات</h1>
+    <!-- Static, crawlable SEO copy: names the languages and what's offered. -->
+    <p>قوائم مفردات مجانية قابلة للطباعة لكل لغات FlashBoss: <b><a href="packs.html">الإنجليزية</a>، <a href="italian.html">الإيطالية</a>، <a href="german.html">الألمانية</a>، <a href="spanish.html">الإسبانية</a>، <a href="french.html">الفرنسية</a>، <a href="latin.html">اللاتينية</a>، <a href="swahili.html">السواحيلية</a>، الإندونيسية، الروسية، <a href="esperanto.html">الإسبرانتو</a>، و<a href="toki-pona.html">توكي بونا</a></b>. أكثر الكلمات فائدة في كل لغة، مرتبة حسب الشيوع ومجمعة في عناقيد موضوعية عبر خمس مراحل، ولكل كلمة ترجمتها. إخفاء الترجمات يتيح اختبار الذات، وطباعة العنقود تتيح قص بطاقات خاصة. والاستخدام مجاني بلا قيود. <a href="#" class="howlink" id="howBtn">طريقة الاستخدام &larr;</a></p>
+  </div>
+</header>
+
+<div class="controls printhide">
+  <div class="wrap row">
+    <div class="field" id="spellField"><label for="spellTog">التهجئة</label><div class="spell" id="spellTog" role="group" aria-label="التهجئة"><button type="button" class="sp" data-sp="us">US</button><button type="button" class="sp" data-sp="gb">UK</button></div></div>
+    <div class="field"><label for="packSel">اللغة</label><select id="packSel"></select></div>
+    <div class="field"><label id="setLbl" for="setSel">المجموعة</label><select id="setSel"></select></div>
+    <div class="field"><label for="clusterTrigger">العناقيد</label>
+      <div class="msel" id="clusterMsel">
+        <button type="button" class="msel-trigger" id="clusterTrigger" aria-haspopup="true" aria-expanded="false">اختيار العناقيد</button>
+        <div class="msel-pop" id="clusterPop" hidden>
+          <select id="clusterSel" multiple size="9"></select>
+          <div class="msel-foot"><span class="msel-hint">Shift مع النقر لتحديد نطاق متصل</span><button type="button" class="btn" id="clusterOk">موافق</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <button class="btn" id="printBtn">طباعة</button>
+    <div class="toggle on" id="transToggle" role="switch" aria-checked="true" aria-label="الترجمات" tabindex="0"><span class="switch"></span><span class="tcap"></span></div>
+  </div>
+</div>
+
+<div class="modal printhide" id="howModal" hidden>
+  <div class="modal-card">
+    <h3>استخدام قوائم الكلمات</h3>
+    <ul>
+      <li><b>اختيار اللغة والمجموعة</b> من القائمتين في الأعلى.</li>
+      <li><b>اختيار العناقيد:</b> فتح قائمة <i>العناقيد</i> والنقر على أحدها، ثم <b>Shift مع النقر</b> على آخر لتحديد نطاق متصل (Ctrl أو &#8984; مع النقر لإضافة عنقود منفرد). وللإغلاق: <b>موافق</b> أو المفتاح <b>Enter</b> أو النقر خارج القائمة.</li>
+      <li>مفتاح <b>الترجمات</b>: عند تشغيله تظهر الكلمة مع ترجمتها، وعند إيقافه تختفي الترجمات للاختبار الذاتي وتطبع البطاقات بالكلمات وحدها.</li>
+      <li><b>الطباعة:</b> تطبع العناقيد المحددة بطاقات قابلة للقص والطي، الكلمة والترجمة جنبا إلى جنب وبينهما خط الطي في الوسط. وتطبع عدة عناقيد معا توفيرا للورق.</li>
+    </ul>
+    <p class="modal-note">قد لا تظهر حدود البطاقات في معاينة الطباعة في المتصفح، لكنها موجودة في النسخة المطبوعة.</p>
+    <button type="button" class="btn" id="howClose">حسنا</button>
+  </div>
+</div>
+
+<main class="wrap" id="view"></main>
+
+<footer>
+  <span class="nav"><a href="home.ar.html">الرئيسية</a> · <a href="lessons.ar.html">الدروس</a> · <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-wordlists&l=arabic">Steam</a> · <button class="share-toggle" type="button" aria-expanded="false">مشاركة</button></span>
+</footer>
+<div class="share-modal" id="shareModal" hidden>
+  <div class="share-card" role="dialog" aria-label="مشاركة">
+    <button class="share-close" type="button" aria-label="إغلاق">&times;</button>
+    <div class="share-card-title">مشاركة</div>
+    <div class="share-btns">
+      <button class="share-btn" data-share="copy" type="button">نسخ الرابط</button>
+      <a class="share-btn" data-share="x" target="_blank" rel="noopener">النشر على X</a>
+      <a class="share-btn" data-share="facebook" target="_blank" rel="noopener">facebook</a>
+      <a class="share-btn" data-share="reddit" target="_blank" rel="noopener">reddit</a>
+      <a class="share-btn" data-share="whatsapp" target="_blank" rel="noopener">whatsapp</a>
+      <a class="share-btn" data-share="messenger" target="_blank" rel="noopener">messenger</a>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   WHERE THE DATA LIVES — edit to match where Code places files.
+   Default convention: data/<language>/<SET>_FINAL.json
+     e.g. data/italian/CORE_FINAL.json, data/german/PARETO1_FINAL.json
+   Uses the FINAL.json (relative-numbered) per-set files. Numbering
+   is never displayed, so GLOBAL.json would also work unchanged.
+   ============================================================ */
+const LANGS = ["Italian","German","Spanish","French","Latin","Esperanto","Toki Pona","Swahili","Indonesian","Russian","English"];
+const SETS  = ["Core","Pareto 1","Pareto 2"];
+const SETS_BY_LANG = {"Toki Pona":["Core"], "Latin":["Core","Pareto 1"], "Swahili":["Core"]};   // published sets per language; everything else has all three
+/* English ships as named packs, each in its own folder, with a single CORE_FINAL.json */
+const ENGLISH_PACKS = [["Core","core"],["Pareto 1","p1"],["Pareto 2","p2"],["Adept","ad"],["Advance","adv"],["German Roots","gr"],["Greek Roots","gkr"],["Norman Roots","nr"],["Latin Roots","lr"]];
+function setsFor(lang){ return lang==='English' ? ENGLISH_PACKS.map(p=>p[0]) : (SETS_BY_LANG[lang] || SETS); }
+function dataUrl(lang, set){
+  if(lang==='English'){
+    const code=(ENGLISH_PACKS.find(p=>p[0]===set)||[])[1] || set.toLowerCase();
+    return `data/english/${code}/CORE_FINAL.json`;
+  }
+  const L = lang.toLowerCase().replace(/\s+/g,'_');    // "Toki Pona" -> data/toki_pona/
+  const S = set.toUpperCase().replace(/\s+/g,'');     // "Pareto 1" -> "PARETO1"
+  return `data/${L}/${S}_FINAL.json`;
+}
+
+/* Preview-only fallback (used when fetch fails, e.g. in the artifact preview).
+   Safe to delete once the real JSON is hosted. Real German Core + Italian greetings. */
+const SAMPLE = {
+  "German|Core": { language:"German", set:"Core", level:"A1–A2", total:1000, clusters:[
+    { cluster_id:"T4-C2", tier:4, slug:"cluster4_2_education_learning", cards:[
+      ["Bachelor","bachelor's degree"],["Master","master's degree"],["Bibliothek","library"],["durch|fallen","to fail (an exam)"],
+      ["Professor/in","professor"],["bestehen","to pass (an exam)"],["Fakultät","faculty"],["Forschung","research"],
+      ["Hausarbeit","term paper"],["Klausur","written exam"],["Semester","semester"],["Seminar","seminar"],
+      ["Studiengang","degree program"],["Vorlesung","lecture"],["Theorie","theory"],["Praxis","practice"],
+      ["analysieren","to analyze"],["präsentieren","to present"],["recherchieren","to research"],["teil|nehmen","to participate"]
+    ].map(([w,t])=>({TargetWord:w,Translation:t})) },
+    { cluster_id:"T4-C4", tier:4, slug:"cluster4_4_legal_administrative", cards:[
+      ["Amt","office; authority"],["Behörde","authority; gov. office"],["Antrag","application; request"],["Formular","form"],
+      ["Dokument","document"],["Urkunde","certificate; deed"],["Ausweis","ID card"],["Bescheinigung","certificate"],
+      ["Geburtsurkunde","birth certificate"],["Staatsbürgerschaft","citizenship"],["Wohnsitz","residence"],["Bürgerbüro","citizens' office"],
+      ["Rathaus","city hall"],["Termin","appointment"],["Gültigkeit","validity"],["Stempel","stamp; seal"],["Kopie","copy"],
+      ["beantragen","to apply for"],["genehmigen","to approve"],["ablehnen","to reject"],["bestätigen","to confirm"],["nachweisen","to prove"]
+    ].map(([w,t])=>({TargetWord:w,Translation:t})) },
+    { cluster_id:"T5-C1", tier:5, slug:"cluster5_1_bureaucracy_paperwork", cards:[
+      ["aus|füllen","to fill out"],["Bürgeramt","civic office"],["Finanzamt","tax office"],["Beamte","civil servant"],
+      ["Personalausweis","identity card"],["Anmeldung","registration"],["Genehmigung","permit; approval"],["Krankenversicherung","health insurance"],
+      ["Meldebestätigung","registration confirmation"],["Sozialversicherung","social insurance"],["Steuererklärung","tax return"],["Unterlagen","documents"],
+      ["Vorschrift","regulation; rule"],["ein|reichen","to submit"],["sich an|melden","to register oneself"],["Bezirk","district"],
+      ["Gemeinde","municipality"],["Landkreis","county"],["Liste","list"],["Notiz","note"],["Titel","title"],["Text","text"],
+      ["Zettel","slip of paper"],["Zeichen","sign; symbol"]
+    ].map(([w,t])=>({TargetWord:w,Translation:t})) }
+  ]},
+  "Italian|Core": { language:"Italian", set:"Core", level:"A1–A2", total:1000, clusters:[
+    { cluster_id:"T1-C1", tier:1, slug:"cluster1_1_greetings_classroom", cards:[
+      ["ciao","hi; bye"],["buongiorno","good morning; hello"],["buonasera","good evening"],["grazie","thank you"],
+      ["prego","you're welcome; please"],["scusa","sorry; excuse me"],["per favore","please"],["cosa","what; thing"]
+    ].map(([w,t])=>({TargetWord:w,Translation:t})) }
+  ]}
+};
+
+/* ---------------- state + elements ---------------- */
+const packSel=document.getElementById('packSel'), setSel=document.getElementById('setSel'), setLbl=document.getElementById('setLbl'),
+      clusterSel=document.getElementById('clusterSel'),
+      clusterTrigger=document.getElementById('clusterTrigger'), clusterPop=document.getElementById('clusterPop'),
+      clusterOk=document.getElementById('clusterOk'), clusterMsel=document.getElementById('clusterMsel'),
+      howBtn=document.getElementById('howBtn'), howModal=document.getElementById('howModal'), howClose=document.getElementById('howClose'),
+      view=document.getElementById('view'), transToggle=document.getElementById('transToggle'),
+      printBtn=document.getElementById('printBtn');
+let showTrans=true, autoDefault=false;
+const cache={};
+
+function esc(s){return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+function humanize(slug){
+  if(!slug) return '';
+  return slug.replace(/^cluster\d+_\d+_?/,'').replace(/_/g,' ').replace(/\b\w/g,c=>c.toUpperCase()).trim() || slug;
+}
+function asList(v){ return Array.isArray(v)?v.join(', '):String(v==null?'':v); }
+function synOf(c){ if(c.syn!=null)return asList(c.syn); if(c.synonyms!=null)return asList(c.synonyms); const m=/syn[:\s]\s*([^|]+)/i.exec(c.Notes||''); return m?m[1].trim():''; }
+function antOf(c){ if(c.ant!=null)return asList(c.ant); if(c.antonyms!=null)return asList(c.antonyms); const m=/ant[:\s]\s*([^|]+)/i.exec(c.Notes||''); return m?m[1].trim():''; }
+/* SELF_LANG: the pack this page's own interface language teaches. Such a pack has
+   no translation to give on this page — English Core in English, German Core in
+   German — so it shows the example sentence instead of a circular gloss. ja/zh/ru
+   are null: they are interface languages with no pack that teaches them.
+   English is null too since 2026-09-30: an English card's Translation is already an
+   English definition ("to return here; to come again"), not a circular gloss, and the
+   printed back is that one-line definition over its syn | ant line (Odiin's ruling). */
+const SELF_LANG=null;
+function gloss(c){ if(c.Translation_ar!=null&&c.Translation_ar!=='')return c.Translation_ar;   // page locale first (English where a pack has no Arabic)
+  if(c.definition!=null)return sv(c,'definition');                       // Adept/Advance/Roots: the definition IS the content
+  if(c.ExampleSentence&&packSel.value===SELF_LANG)return c.ExampleSentence;  // target == interface: nothing to translate into
+  return c.Translation!=null?sv(c,'Translation'):''; }
+function posOf(c){ if(c.pos!=null)return asList(c.pos); const m=/^([a-z]+(?:\/[a-z]+)*)/.exec((c.Notes||'').trim()); return m?m[1]:''; }  // part of speech (front-face fallback)
+/* UK/US spelling. The data ships American with the British twin inline on the
+   ~500 cards that differ, so the toggle is a field swap, not a refetch. The
+   choice is shared with the lessons page through localStorage. */
+const SPELL_KEY='fb_spelling';
+/* Parked 2026-08-28, back 2026-10-01 (Odiin) as a site-wide choice made before the
+   pack: the US/UK control sits first in the row and the choice is shared by the word
+   lists and lessons through localStorage. Every pack has a British layer — the word
+   itself on English packs, the English gloss on the others. */
+const SPELL_UI=true;   // un-parked 2026-10-01 (Odiin): a site-wide choice, made before the pack
+let spelling='us';
+try{ if(SPELL_UI && localStorage.getItem(SPELL_KEY)==='gb') spelling='gb'; }catch(e){}
+function sv(c,k){ return (spelling==='gb' && c[k+'_gb']) ? c[k+'_gb'] : c[k]; }
+function paintSpell(){ const t=document.getElementById('spellTog'); if(!t) return;
+  t.querySelectorAll('.sp').forEach(b=>b.classList.toggle('on', b.dataset.sp===spelling)); }
+function normCards(cluster){
+  // foreign: {TargetWord,Translation}; English: {TargetWord,definition[,syn,ant,pos]}
+  return (cluster.cards||[]).map(c=>({ w:sv(c,'TargetWord'),
+    t: gloss(c),
+    syn:synOf(c), ant:antOf(c), pos:posOf(c) }));
+}
+
+async function loadSet(lang,set){
+  const key=lang+'|'+set;
+  if(cache[key]!==undefined) return cache[key];
+  let data=null;
+  try{
+    const r=await fetch(dataUrl(lang,set), {cache:'no-store'});
+    if(r.ok) data=await r.json();
+  }catch(e){ /* fall through to sample */ }
+  if(!data) data = SAMPLE[key] || null;
+  cache[key]=data;
+  return data;
+}
+
+/* Display-only Arabic labels. The VALUES stay English: LANGS/SETS are data keys
+   (data/<lang>/...). Set and pack names stay Latin (Core, Pareto 1, German Roots),
+   as on the Arabic store pages. */
+const AR_NAME = {
+  "Italian":"الإيطالية","German":"الألمانية","Spanish":"الإسبانية","French":"الفرنسية","Latin":"اللاتينية",
+  "Esperanto":"الإسبرانتو","Toki Pona":"توكي بونا","Swahili":"السواحيلية","Indonesian":"الإندونيسية",
+  "Russian":"الروسية","English":"الإنجليزية"
+};
+function arName(x){ return AR_NAME[x] || x; }
+function fillPacks(){
+  packSel.innerHTML = LANGS.map(l=>`<option value="${l}">${arName(l)}</option>`).join('');
+  fillSets();
+}
+function fillSets(){
+  setSel.innerHTML = setsFor(packSel.value).map(s=>`<option value="${s}">${s}</option>`).join('');
+}
+
+// The authored cluster name first (build_site_views emits it from the pack's
+  // own cluster_names*.json), then the English name, then the humanised folder
+  // slug exactly as before — so the label can never be worse than it was.
+  function clusterLabel(c){ return c.name_ar || c.name || humanize(c.slug) || c.cluster_id || 'عنقود'; }
+function tcPrefix(c){ const m=/^T(\d+)-C(\d+)$/.exec(c.cluster_id||''); return m?`${m[1]}-${m[2]}`:(c.cluster_id||''); }
+function clusterTitle(c){ const p=tcPrefix(c); return (p?p+' ':'')+clusterLabel(c); }
+
+function buildClusterOptions(data){
+  const tiers={}, order=[];
+  data.clusters.forEach((c,i)=>{ if(!tiers[c.tier]){tiers[c.tier]=[]; order.push(c.tier);} tiers[c.tier].push({c,i}); });
+  return order.map(tn=>{
+    const opts=tiers[tn].map(({c,i})=>`<option value="${i}" dir="auto">${esc(clusterTitle(c))}</option>`).join('');
+    return `<optgroup label="المرحلة ${tn}">${opts}</optgroup>`;
+  }).join('');
+}
+
+function selectedIdxs(){
+  return Array.from(clusterSel.selectedOptions).map(o=>parseInt(o.value,10)).filter(n=>!isNaN(n)).sort((a,b)=>a-b);
+}
+function clusterSummary(){
+  const data=cache[packSel.value+'|'+setSel.value], idxs=selectedIdxs();
+  if(!data||!idxs.length) return 'اختيار العناقيد';
+  const tc=i=>{const c=data.clusters[i]; return c?tcPrefix(c):'';};
+  if(idxs.length===1) return tc(idxs[0]);
+  const contiguous=(idxs[idxs.length-1]-idxs[0])===idxs.length-1;
+  return contiguous ? `${tc(idxs[0])} – ${tc(idxs[idxs.length-1])}` : `${tc(idxs[0])} وغيرها`;
+}
+function updateTrigger(){ clusterTrigger.textContent=clusterSummary(); }
+function setURL(){
+  const data=cache[packSel.value+'|'+setSel.value];
+  const ids=selectedIdxs().map(i=>(data&&data.clusters&&data.clusters[i])?data.clusters[i].cluster_id:'').filter(Boolean);
+  const p=new URLSearchParams(); p.set('lang',packSel.value); p.set('set',setSel.value);
+  if(ids.length) p.set('cluster',ids.join(','));
+  history.replaceState(null,'', '?'+p.toString());
+}
+
+async function loadAndRender(opts){
+  opts=opts||{};
+  const lang=packSel.value, set=setSel.value;
+  view.innerHTML=`<div class="state"><span class="ic">◴</span>جار تحميل ${esc(arName(lang))} <bdi>${esc(set)}</bdi>…</div>`;
+  const data=await loadSet(lang,set);
+  if(packSel.value!==lang||setSel.value!==set) return; // selection changed mid-load
+  if(!data||!data.clusters||!data.clusters.length){
+    clusterSel.innerHTML='';
+    view.innerHTML=`<div class="state"><span class="ic">◈</span>${esc(arName(lang))} <bdi>${esc(set)}</bdi>: لم تنشر بعد، والمزيد قادم مع صدور الحزم.</div>`;
+    return;
+  }
+  clusterSel.innerHTML=buildClusterOptions(data);
+  const wanted=(opts.clusterId||'').split(',').filter(Boolean);
+  let any=false;
+  Array.from(clusterSel.options).forEach(o=>{ const c=data.clusters[parseInt(o.value,10)]; o.selected=!!(c && wanted.includes(c.cluster_id)); if(o.selected) any=true; });
+  if(!any && clusterSel.options.length){ clusterSel.options[0].selected=true; autoDefault=true; } else { autoDefault=false; }  // default: first cluster (e.g. Italian Core 1-1)
+  renderSelected();
+}
+
+function renderSelected(){
+  const lang=packSel.value, set=setSel.value, data=cache[lang+'|'+set];
+  if(!data||!data.clusters||!data.clusters.length) return;
+  const idxs=selectedIdxs();
+  setURL(); updateTrigger();
+  if(!idxs.length){ view.innerHTML=`<div class="state"><span class="ic">◧</span>لعرض العناقيد وطباعتها: اختيار عنقود أو أكثر من الأعلى.</div>`; return; }
+  const defMode = lang==='English';   // every English pack: one card per row, BACK = gloss + syn | ant
+  const totalCards=idxs.reduce((n,i)=>n+(data.clusters[i]?normCards(data.clusters[i]).length:0),0);
+  const bigLabel = (lang==='English') ? arName(data.language||set) : (arName(lang)+' '+set);
+  let html=`<div class="setmeta"><span class="big">${esc(bigLabel)}</span>`+
+    (data.level?`<span>${esc(data.level)}</span>`:'')+(data.total?`<span>الكلمات: ${esc(data.total)}</span>`:'')+
+    `<span>العناقيد: ${data.clusters.length}</span>`+
+    `<span class="sel">العناقيد المحددة: ${idxs.length} · البطاقات: ${totalCards}</span></div>`;
+  idxs.forEach(i=>{
+    const c=data.clusters[i]; if(!c) return;
+    const words=normCards(c);
+    const rows = defMode
+      ? words.map(({w,t,syn,ant,pos})=>{
+          // BACK: line 1 the gloss, line 2 "syn: … | ant: …" (labelled, so one half alone never
+          // reads as the other); no syn/ant -> the part of speech. FRONT is the word alone.
+          const sa = [syn&&`syn: ${esc(syn)}`, ant&&`ant: ${esc(ant)}`].filter(Boolean).join(' | ')
+                   || (pos ? esc(pos) : '');
+          return `<div class="def"><span class="dw" dir="auto">${esc(w)}</span><span class="dd"><span class="dt" dir="auto">${esc(t)}</span>${sa?`<span class="sa" dir="ltr">${sa}</span>`:''}</span></div>`;
+        }).join('')
+      : words.map(({w,t})=>`<div class="word"><span class="w" dir="auto">${esc(w)}</span><span class="t" dir="auto">${esc(t)}</span></div>`).join('');
+    html+=`<div class="cluster solo"><div class="chead">
+      <span class="tnum">المرحلة ${esc(c.tier)}</span>
+      <span class="cname" dir="auto">${esc(clusterTitle(c))}</span>
+      <span class="ccount">الكلمات: ${words.length}</span></div>
+      <div class="${defMode?'defs':'words'}${showTrans?'':' hide-trans'}">`+rows+`</div></div>`;
+  });
+  view.innerHTML=html;
+  view.querySelectorAll('.hide-trans .word, .hide-trans .def').forEach(row=>row.addEventListener('click',()=>row.classList.toggle('revealed')));
+}
+
+/* controls */
+function updateSetLabel(){
+  const eng=packSel.value==='English';
+  setLbl.textContent = eng?'الحزمة':'المجموعة';
+  setSel.setAttribute('aria-label', eng?'الحزمة':'المجموعة');
+  document.querySelector('.controls').classList.toggle('eng', eng);
+  const sf=document.getElementById('spellField'); if(sf) sf.hidden=!SPELL_UI;   // every pack has a British layer: English words, or English glosses
+}
+(function(){ const t=document.getElementById('spellTog'); if(!t) return;
+  t.addEventListener('click', e=>{ const b=e.target.closest('.sp'); if(!b) return;
+    spelling=b.dataset.sp; try{ localStorage.setItem(SPELL_KEY, spelling); }catch(e){}
+    paintSpell(); loadAndRender(); });
+  paintSpell(); })();
+packSel.addEventListener('change',()=>{ updateSetLabel(); fillSets(); loadAndRender(); });
+setSel.addEventListener('change',()=>loadAndRender());
+clusterSel.addEventListener('change',()=>{
+  // First-touch exception: while the auto-default (e.g. 1-1) is active, the first pick replaces it
+  // (on mobile a tap otherwise just adds to it). Subsequent taps multi-select normally.
+  if(autoDefault){
+    autoDefault=false;
+    if(clusterSel.selectedOptions.length>1 && clusterSel.options[0].selected) clusterSel.options[0].selected=false;
+  }
+  renderSelected();
+});
+transToggle.addEventListener('click',()=>{ showTrans=!showTrans; transToggle.classList.toggle('on',showTrans); transToggle.setAttribute('aria-checked',showTrans); renderSelected(); });
+transToggle.addEventListener('keydown',e=>{ if(e.key===' '||e.key==='Enter'){e.preventDefault(); transToggle.click();}});
+printBtn.addEventListener('click',()=>window.print());
+
+/* cluster dropdown open / close */
+function setPop(open){ clusterPop.hidden=!open; clusterTrigger.setAttribute('aria-expanded', open?'true':'false'); }
+clusterTrigger.addEventListener('click',e=>{ e.stopPropagation(); setPop(clusterPop.hidden); });
+clusterOk.addEventListener('click',()=>{ setPop(false); clusterTrigger.focus(); });
+clusterSel.addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); setPop(false); clusterTrigger.focus(); } });
+document.addEventListener('click',e=>{ if(!clusterMsel.contains(e.target)) setPop(false); });
+document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ setPop(false); howModal.hidden=true; } });
+
+/* how-to modal */
+howBtn.addEventListener('click',e=>{ e.preventDefault(); howModal.hidden=false; });
+howClose.addEventListener('click',()=>{ howModal.hidden=true; });
+howModal.addEventListener('click',e=>{ if(e.target===howModal) howModal.hidden=true; });
+
+/* init — honour ?lang=&set=&cluster= from the resources jump-links */
+fillPacks();
+const q=new URLSearchParams(location.search);
+const qL=q.get('lang'), qS=q.get('set'), qC=q.get('cluster');
+packSel.value = (qL && LANGS.includes(qL)) ? qL : 'English';   // no ?lang -> default landing is English Adept
+fillSets(); updateSetLabel();
+if(qS && setsFor(packSel.value).includes(qS)) setSel.value=qS;
+loadAndRender({clusterId:qC});
+// share widget: footer "share" opens a centered modal that shares THIS page
+(function(){
+  var toggle=document.querySelector('.share-toggle');
+  var modal=document.getElementById('shareModal');
+  if(!toggle||!modal) return;
+  var url=location.href.split('#')[0];
+  var text='FlashBoss: بطاقات تعليمية بالتكرار المتباعد ومعارك الزعماء.';
+  var U=encodeURIComponent(url), T=encodeURIComponent(text);
+  var links={ x:'https://twitter.com/intent/tweet?url='+U+'&text='+T,
+    facebook:'https://www.facebook.com/sharer/sharer.php?u='+U,
+    reddit:'https://www.reddit.com/submit?url='+U+'&title='+T,
+    whatsapp:'https://wa.me/?text='+encodeURIComponent(text+' '+url),
+    messenger:'fb-messenger://share/?link='+U };
+  modal.querySelectorAll('a[data-share]').forEach(function(a){ var k=a.getAttribute('data-share'); if(links[k]) a.href=links[k]; });
+  function open(){ modal.hidden=false; requestAnimationFrame(function(){ modal.classList.add('open'); }); toggle.setAttribute('aria-expanded','true'); }
+  function close(){ modal.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); setTimeout(function(){ modal.hidden=true; },200); }
+  toggle.addEventListener('click', function(e){ e.stopPropagation(); if(modal.hidden) open(); else close(); });
+  modal.addEventListener('click', function(e){ if(e.target===modal) close(); });
+  var closeBtn=modal.querySelector('.share-close'); if(closeBtn) closeBtn.addEventListener('click', close);
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape' && !modal.hidden) close(); });
+  var copyBtn=modal.querySelector('[data-share="copy"]');
+  if(copyBtn) copyBtn.addEventListener('click', function(){
+    function done(){ copyBtn.textContent='تم النسخ!'; setTimeout(function(){ copyBtn.textContent='نسخ الرابط'; },1400); }
+    function fb(){ var t=document.createElement('textarea'); t.value=url; t.style.position='fixed'; t.style.opacity='0'; document.body.appendChild(t); t.select(); try{document.execCommand('copy');}catch(e){} document.body.removeChild(t); done(); }
+    if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done,fb); else fb();
+  });
+})();
+</script>
+<script>
+// language dropdown: button toggles the menu; click-away / Esc closes it
+(function(){
+  var sw=document.querySelector('.lang-switch'); if(!sw) return;
+  var btn=sw.querySelector('.lang-toggle'), menu=sw.querySelector('.lang-menu');
+  if(location.search){ menu.querySelectorAll('a').forEach(function(a){ a.href=a.getAttribute('href')+location.search; }); }
+  function close(){ menu.hidden=true; btn.setAttribute('aria-expanded','false'); }
+  btn.addEventListener('click', function(e){ e.stopPropagation(); var willOpen=menu.hidden; menu.hidden=!willOpen; btn.setAttribute('aria-expanded', String(willOpen)); });
+  document.addEventListener('click', function(e){ if(!sw.contains(e.target)) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
+</script>
+</body>
+</html>

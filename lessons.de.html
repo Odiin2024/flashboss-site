@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kostenlose Sprachlektionen — Grammatik &amp; Aussprache für Englisch, Latein, Italienisch, Deutsch, Spanisch, Französisch, Swahili, Esperanto &amp; Toki Pona | FlashBoss</title>
-<meta name="description" content="Kostenlose Referenzlektionen für Englisch, Latein, Italienisch, Deutsch, Spanisch, Französisch, Swahili, Esperanto und Toki Pona: Aussprache, Artikel, Verbzeiten, Register und Gebrauch — die spielinternen FlashBoss-Lektionen, zum Online-Lesen aufbereitet. Tippe auf eine beliebige Zeile, um sie zu hören. Frei zum Lesen und Lernen.">
+<title>Kostenlose Sprachlektionen — Grammatik &amp; Aussprache für Englisch, Latein, Italienisch, Deutsch, Spanisch, Französisch, Swahili, Indonesisch, Russisch, Esperanto &amp; Toki Pona | FlashBoss</title>
+<meta name="description" content="Kostenlose Referenzlektionen für Englisch, Latein, Italienisch, Deutsch, Spanisch, Französisch, Swahili, Indonesisch, Russisch, Esperanto und Toki Pona: Aussprache, Artikel, Verbzeiten, Register und Gebrauch — die spielinternen FlashBoss-Lektionen, zum Online-Lesen aufbereitet. Tippe auf eine beliebige Zeile, um sie zu hören. Frei zum Lesen und Lernen.">
 <link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="canonical" href="https://odiin2024.github.io/flashboss-site/lessons.de.html">
 <link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/lessons.html">
@@ -13,6 +13,7 @@
 <link rel="alternate" hreflang="ja" href="https://odiin2024.github.io/flashboss-site/lessons.ja.html">
 <link rel="alternate" hreflang="zh" href="https://odiin2024.github.io/flashboss-site/lessons.zh.html">
 <link rel="alternate" hreflang="ru" href="https://odiin2024.github.io/flashboss-site/lessons.ru.html">
+<link rel="alternate" hreflang="ar" href="https://odiin2024.github.io/flashboss-site/lessons.ar.html">
 <link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/lessons.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -75,8 +76,8 @@ header.page p{max-width:66ch; color:var(--dim); font-size:15px; margin:0;} heade
 .field{display:flex; align-items:center; gap:8px; min-width:0;}
 /* the Lesson select absorbs the slack and shrinks (truncating long titles) instead of growing,
    so the toggle stays pinned on one line at any landscape width regardless of language/title length */
-.bar > .field:nth-child(3){flex:1 1 0; min-width:0;}
-.bar > .field:nth-child(3) select{width:100%; min-width:0; max-width:none; text-overflow:ellipsis;}
+.bar > .field:nth-child(4){flex:1 1 0; min-width:12em;}   /* the Lesson field (4th since the spelling control joined the bar); 12em keeps a title readable, and the toggle wraps when the row is full */
+.bar > .field:nth-child(4) select{width:100%; min-width:0; max-width:none; text-overflow:ellipsis;}
 .field label{font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--faint);}
 select{font-family:var(--mono); font-size:14px; color:var(--ink); background:var(--panel); border:1px solid var(--line); padding:8px 12px; cursor:pointer; max-width:62vw;}
 select:focus{outline:1px solid var(--accent);}
@@ -98,9 +99,9 @@ select:focus{outline:1px solid var(--accent);}
   .bar .field label{display:none;}                       /* hide Language/Set labels */
   .bar > .field{flex:1 1 0; min-width:0;}
   .bar > .field select{width:100%; max-width:none;}
-  .bar > .field:nth-child(3){flex-basis:100%; order:9;}  /* Lesson -> its own full-width row */
-  .bar > .field:nth-child(3) label{display:inline;}      /* keep the "Lesson" title on that row */
-  .bar > .field:nth-child(3) select{flex:1 1 auto; width:auto; min-width:0;}  /* dropdown fills the rest */
+  .bar > .field:nth-child(4){flex-basis:100%; order:9;}  /* Lesson -> its own full-width row */
+  .bar > .field:nth-child(4) label{display:inline;}      /* keep the "Lesson" title on that row */
+  .bar > .field:nth-child(4) select{flex:1 1 auto; width:auto; min-width:0;}  /* dropdown fills the rest */
 }
 
 .state{padding:60px 0; text-align:center; color:var(--faint); font-size:14px;}
@@ -200,6 +201,7 @@ nav.fbnav .lang-switch{margin-left:0;}
       <li><a href="lessons.ja.html">日本語</a></li>
       <li><a href="lessons.zh.html">简体中文</a></li>
             <li><a href="lessons.ru.html">Русский</a></li>
+      <li><a href="lessons.ar.html" lang="ar" dir="rtl">العربية</a></li>
         </ul>
   </div>
 </nav>
@@ -208,7 +210,7 @@ nav.fbnav .lang-switch{margin-left:0;}
   <div class="wrap">
     <h1>Lektionen</h1>
     <!-- Static, crawlable SEO copy -->
-    <p>Kostenlose Referenzlektionen für jede FlashBoss-Sprache — <b>Englisch, Latein, Italienisch, Deutsch, Spanisch, Französisch, Swahili, Esperanto und Toki Pona</b>. Aussprache, Artikel, Verbzeiten, Register und Gebrauch, exakt so dargestellt, wie sie im Spiel erscheinen, und nach Stufe geordnet. Lies sie kostenlos und tippe auf eine beliebige <b>HÖREN</b>-Markierung für die Aussprache per Piper-Sprachausgabe.</p>
+    <p>Kostenlose Referenzlektionen für jede FlashBoss-Sprache — <b>Englisch, Latein, Italienisch, Deutsch, Spanisch, Französisch, Swahili, Indonesisch, Russisch, Esperanto und Toki Pona</b>. Aussprache, Artikel, Verbzeiten, Register und Gebrauch, exakt so dargestellt, wie sie im Spiel erscheinen, und nach Stufe geordnet. Lies sie kostenlos und tippe auf eine beliebige <b>HÖREN</b>-Markierung für die Aussprache per Piper-Sprachausgabe.</p>
   </div>
 </header>
 
@@ -263,8 +265,8 @@ nav.fbnav .lang-switch{margin-left:0;}
    so only the embedded SAMPLE (Italian) appears. Over GitHub Pages — or any
    http server, e.g. `python3 -m http.server` — every language loads for real.
    ============================================================ */
-const LANGS=["Italian","German","Spanish","French","Latin","Esperanto","Toki Pona","Swahili","English"];
-const LANG_LABELS={Italian:"Italienisch", German:"Deutsch", Spanish:"Spanisch", French:"Französisch", Esperanto:"Esperanto", "Toki Pona":"Toki Pona", English:"Englisch", "Swahili":"Swahili", "Latin":"Latein"};
+const LANGS=["Italian","German","Spanish","French","Latin","Esperanto","Toki Pona","Swahili","Indonesian","Russian","English"];
+const LANG_LABELS={Italian:"Italienisch", German:"Deutsch", Spanish:"Spanisch", French:"Französisch", Esperanto:"Esperanto", "Toki Pona":"Toki Pona", English:"Englisch", "Swahili":"Swahili", "Latin":"Latein", Indonesian:"Indonesisch", Russian:"Russisch"};
 const TIERS=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
 const SETS=["Core","Pareto 1","Pareto 2"];          // foreign languages: tier 1-5 / 6-10 / 11-15
 function tierSet(t){ return t<=5?"Core":t<=10?"Pareto 1":"Pareto 2"; }
@@ -288,8 +290,8 @@ function lessonUrl(lang, set, tier, loc){
     : `data/${lang.toLowerCase().replace(/\s+/g,'_')}/tier${tier}_lessons${suf}.json`;   // "Toki Pona" -> data/toki_pona/
 }
 /* Toki Pona has no system voice; in-game it speaks through the Esperanto voice, so "eo" here too */
-const SPEECH_LANG={Italian:"it-IT",German:"de-DE",Spanish:"es-ES",French:"fr-FR",Esperanto:"eo","Toki Pona":"eo",English:"en-US",Latin:"it-IT",Swahili:"sw-KE"};   // no browser voice speaks Latin; Italian vowels are the closest fallback
-const FOREIGN_CODE={Italian:"IT",German:"DE",Spanish:"ES",French:"FR",Esperanto:"EO","Toki Pona":"TP",Latin:"LA",Swahili:"SW"};
+const SPEECH_LANG={Italian:"it-IT",German:"de-DE",Spanish:"es-ES",French:"fr-FR",Esperanto:"eo","Toki Pona":"eo",English:"en-US",Latin:"it-IT",Swahili:"sw-KE",Indonesian:"id-ID",Russian:"ru-RU"};   // no browser voice speaks Latin; Italian vowels are the closest fallback
+const FOREIGN_CODE={Italian:"IT",German:"DE",Spanish:"ES",French:"FR",Esperanto:"EO","Toki Pona":"TP",Latin:"LA",Swahili:"SW",Indonesian:"ID",Russian:"RU"};
 const COLORS={green:'--green',blue:'--blue',gold:'--gold',amber:'--gold',rose:'--rose',purple:'--purple',cyan:'--cyan',magenta:'--magenta'};
 
 /* Preview-only fallback (used when fetch fails, e.g. file:// preview). Delete once data is hosted. */
@@ -420,11 +422,11 @@ function updateSetLabel(){ setLbl.textContent=(langSel.value==='English')?'Pack'
 function lineToHTML(line, allowPress){
   if(line.trim()==='') return '<div class="ln"> </div>';
   if(!allowPress) return `<div class="ln">${esc(line)}</div>`;
-  const m=line.match(/Press (\d)/);
+  const m=line.match(/(?:Press|Drücke|Taste|Presiona|Pulsa|Нажми|按|للاستماع) ?(\d)|(\d)を押す/);   // the lesson twins write their own cue (Taste 1, Presiona 1, 按 1, 1を押す, للاستماع 1)
   if(!m) return `<div class="ln">${esc(line)}</div>`;
   const idx=line.indexOf(m[0]);
   // it's a click/tap, not a keypress — show a LISTEN cue instead of "Press N" (the digit stays the audio key)
-  return `<div class="ln"><span>${esc(line.slice(0,idx))}</span><span class="press" data-key="${m[1]}" role="button" title="hören">HÖREN</span><span>${esc(line.slice(idx+m[0].length))}</span></div>`;
+  return `<div class="ln"><span>${esc(line.slice(0,idx))}</span><span class="press" data-key="${m[1]||m[2]}" role="button" title="hören">HÖREN</span><span>${esc(line.slice(idx+m[0].length))}</span></div>`;
 }
 
 function renderScreen(){
