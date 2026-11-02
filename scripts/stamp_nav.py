@@ -24,8 +24,9 @@ Idempotent: a second run changes nothing. Re-run after adding a page.
 import glob, os, re, sys
 
 SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-LOCS = ("de", "es", "ja", "zh", "ru")
-STEAM_L = {"de": "german", "es": "spanish", "ja": "japanese", "zh": "schinese", "ru": "russian"}
+LOCS = ("de", "es", "ja", "zh", "ru", "ar")
+STEAM_L = {"de": "german", "es": "spanish", "ja": "japanese", "zh": "schinese", "ru": "russian",
+           "ar": "arabic"}
 
 # label per locale, copied from what each locale's pages already called these
 LABELS = {
@@ -35,6 +36,8 @@ LABELS = {
     "ja": ["ホーム", "パック", "単語リスト", "レッスン", "マニュアル", "Steam"],
     "zh": ["主页", "卡包", "单词列表", "课程", "手册", "Steam"],
     "ru": ["главная", "наборы", "списки слов", "уроки", "руководство", "steam"],
+    # ar: Arabic site pages 2026-11-02; terms from the game's lang/ar.json + the Arabic Steam copy
+    "ar": ["الرئيسية", "الحزم", "قوائم الكلمات", "الدروس", "الدليل", "Steam"],
 }
 SECTION = {"home": 0, "packs": 1, "wordlists": 2, "lessons": 3}
 UNDER_PACKS = {"english", "esperanto", "french", "german", "italian", "latin", "spanish",
@@ -55,7 +58,7 @@ for _b in UNDER_PACKS:
 for _b in ("wordlists", "lessons"):
     PARENTS[_b] = ["home", "resources"]
 RESOURCES = {"": "resources", "de": "Ressourcen", "es": "recursos", "ja": "リソース",
-             "zh": "资源", "ru": "материалы"}
+             "zh": "资源", "ru": "материалы", "ar": "الموارد"}
 
 # Each page's own label (fb-here) and its own extra menu links (fb-extra) live in the
 # page; on the first run they come from the nav as it was before the shared menu
@@ -126,7 +129,11 @@ def stamp(path):
     ex = re.findall(r'<a class="fb-extra"[^>]*>.*?</a>', inner, re.S)
     if not ex:
         ex = [a.replace("<a ", '<a class="fb-extra" ', 1) for a in hist.get("extras", [])]
-    targets = [f"home{sfx}.html", f"packs{sfx}.html", f"wordlists{sfx}.html", f"lessons{sfx}.html", "manual/"]
+    def loc_page(b):
+        # a locale that does not have this page yet (Arabic, 2026-11) links the English one
+        f = f"{b}{sfx}.html"
+        return f if os.path.isfile(os.path.join(SITE, f)) else f"{b}.html"
+    targets = [loc_page("home"), loc_page("packs"), loc_page("wordlists"), loc_page("lessons"), "manual/"]
     cur = SECTION.get(base, 1 if base in UNDER_PACKS else None)
     # Odiin 2026-10-04: a page that already has the manual on a main button (voices)
     # does not repeat it in the menu.
@@ -139,8 +146,8 @@ def stamp(path):
         links.append(f'    <a href="{t}"' + (' aria-current="page"' if i == cur else "") + f">{l}</a>")
     links += ["    " + a for a in ex]
     links.append(f'    <a class="fb-steam" href="{steam_url}" target="_blank" rel="noopener">{lab[5]}</a>')
-    names = {"home": (f"home{sfx}.html", lab[0]), "packs": (f"packs{sfx}.html", lab[1]),
-             "resources": (f"resources{sfx}.html", RESOURCES[loc])}
+    names = {"home": (loc_page("home"), lab[0]), "packs": (loc_page("packs"), lab[1]),
+             "resources": (loc_page("resources"), RESOURCES[loc])}
     crumbs = []
     for par in PARENTS.get(base, ["home"]):
         if par == base:

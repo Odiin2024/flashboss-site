@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- SELF-TRANSLATED, ar. The prose on this page was written by Claude
+     (Opus), not by the translation fleet, on Odiin's word of 2026-11-01
+     (Arabic is a fully supported site language):
+     good enough for now, and flagged for a translation/adversarial pass
+     another day. The page carries the beta-translation notice so a reader
+     knows and so that pass can find it.
+     Canon held here: the six pack names stay English, FlashBoss stays
+     Latin, and every number is the English page's number in this locale's
+     separator — nothing was recounted. -->
+<title>كيف يعلم FlashBoss — مرجع تقني | FlashBoss</title>
+<meta name="description" content="مرجع تقني عن FlashBoss — بنية المحتوى، وآليات الجلسات، ونظام التخرج عبر معارك الزعماء، وعناصر التصميم الفاعلة فيه.">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="كيف يعلم FlashBoss — مرجع تقني">
+<meta property="og:description" content="بنية المحتوى، وآليات الجلسات، ونظام التخرج عبر معارك الزعماء، وعناصر التصميم الفاعلة فيه.">
+<meta property="og:image" content="https://odiin2024.github.io/flashboss-site/website_image.png">
+<meta property="og:url" content="https://odiin2024.github.io/flashboss-site/about.ar.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="كيف يعلم FlashBoss — مرجع تقني">
+<meta name="twitter:description" content="المنهج التربوي والآليات وراء FlashBoss — المدخلات المفهومة، وممارسة الاسترجاع، والتكرار المتباعد، ونظام التخرج عبر معارك الزعماء.">
+<meta name="twitter:image" content="https://odiin2024.github.io/flashboss-site/website_image.png">
+
+<link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://odiin2024.github.io/flashboss-site/about.ar.html">
+<link rel="alternate" hreflang="en" href="https://odiin2024.github.io/flashboss-site/about.html">
+<link rel="alternate" hreflang="de" href="https://odiin2024.github.io/flashboss-site/about.de.html">
+<link rel="alternate" hreflang="es" href="https://odiin2024.github.io/flashboss-site/about.es.html">
+<link rel="alternate" hreflang="ja" href="https://odiin2024.github.io/flashboss-site/about.ja.html">
+<link rel="alternate" hreflang="zh" href="https://odiin2024.github.io/flashboss-site/about.zh.html">
+<link rel="alternate" hreflang="ru" href="https://odiin2024.github.io/flashboss-site/about.ru.html">
+<link rel="alternate" hreflang="ar" href="https://odiin2024.github.io/flashboss-site/about.ar.html">
+<link rel="alternate" hreflang="x-default" href="https://odiin2024.github.io/flashboss-site/about.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   FlashBoss — How it teaches (about.html).
+   House terminal standard: home.png hero strip, neutral amber
+   terminal body. A long technical reference — TOC, spec tables,
+   ASCII diagrams, citations — in the same skin as the rest of
+   the site.
+   ============================================================ */
+:root{
+  --mono:'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --bg:#100d08; --panel:#16120b; --ink:#ecdcb6; --dim:#b3a075; --faint:#7a6c4d;
+  --accent:#e0a93f; --green:#83b6dd;  /* was #62d38a: the palette law, never green; the token name is kept so every use follows */ --blue:#7ec8ff; --rose:#ff8fb0;
+  --line:#3a3120; --rule:#2a2417;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--mono); background:var(--bg); color:var(--ink); line-height:1.7; -webkit-font-smoothing:antialiased;}
+.overlay{position:fixed; inset:0; pointer-events:none; z-index:9999;
+  background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.04) 3px,rgba(0,0,0,0) 4px); mix-blend-mode:multiply;}
+.wrap{max-width:840px; margin:0 auto; padding:0 24px;}
+a{color:var(--accent);}
+
+nav{display:flex; align-items:center; padding:18px 24px; font-size:13px; letter-spacing:.04em; border-bottom:1px solid var(--line); position:relative; z-index:3; background:var(--bg);}
+nav .brand{font-weight:500; letter-spacing:.1em; color:var(--dim); margin-right:auto;}
+nav .brand a, nav .brand .sep{color:var(--dim); text-decoration:none;}
+nav .brand a:hover{color:var(--ink);}
+nav .brand .here{font-weight:800; color:var(--ink);}
+nav .brand .logo{font-weight:800; letter-spacing:.18em; color:var(--ink);}
+nav .brand .logo:hover{color:var(--accent);}
+nav .brand .pipe{color:var(--dim); margin:0 11px;}
+.nav-mobile{display:none;}
+.nav-mobile a{color:inherit; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.08em; opacity:.85;}
+.nav-mobile a:hover{opacity:1; color:var(--accent);}
+@media(max-width:640px){ nav .brand, nav .links{display:none;} .nav-mobile{display:flex; flex:1; justify-content:space-between; align-items:center;} .nav-mobile .r{display:flex; gap:18px;} }
+nav .links a{color:var(--ink); text-decoration:none; opacity:.7; margin-left:22px;}
+nav .links a:hover{opacity:1; text-decoration:underline; text-underline-offset:4px;}
+nav .links a.steam{font-weight:800; opacity:1;}
+nav .lang-switch{position:relative; margin-left:22px;}
+nav .lang-toggle{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.1em; color:var(--ink); background:var(--bg); border:1px solid var(--dim); padding:5px 8px; line-height:1; cursor:pointer;}
+nav .lang-toggle:hover, nav .lang-toggle[aria-expanded="true"]{background:var(--ink); color:var(--bg);}
+nav .lang-caret{font-size:8px; line-height:1; transition:transform .15s ease;}
+nav .lang-toggle[aria-expanded="true"] .lang-caret{transform:rotate(180deg);}
+nav .lang-menu{position:absolute; top:calc(100% + 5px); right:0; margin:0; padding:4px; list-style:none; background:var(--bg); border:1px solid var(--dim); min-width:120px; z-index:50;}
+nav .lang-menu[hidden]{display:none;}
+nav .lang-menu li{margin:0; padding-left:0; position:static;}
+nav .lang-menu li::before{content:none;}
+nav .lang-menu a{display:block; font-family:var(--mono); font-size:12px; letter-spacing:.06em; color:var(--ink); text-decoration:none; padding:7px 10px; white-space:nowrap; opacity:1; margin:0;}
+nav .lang-menu a:hover{background:var(--ink); color:var(--bg); text-decoration:none;}
+nav .lang-menu a[aria-current="true"]{color:var(--accent);}
+nav .lang-menu a[aria-current="true"]:hover{color:var(--bg);}
+
+/* HERO — home.png strip (matches resources / packs) */
+.hero{position:relative; padding:78px 0 60px; overflow:hidden;}
+.hero::before{content:""; position:absolute; inset:0; z-index:0; background:#0c0a06 url('home.webp') center 30% / cover no-repeat;}
+.hero::after{content:""; position:absolute; inset:0; z-index:1; background:linear-gradient(180deg, rgba(16,13,8,.52) 0%, rgba(16,13,8,.74) 55%, var(--bg) 100%);}
+.hero .wrap{position:relative; z-index:2;}
+.hero .crumb{font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--accent);}
+.hero h1{font-size:clamp(34px,7vw,60px); margin:13px 0 12px; font-weight:800; letter-spacing:-.01em;}
+.hero .subtitle{max-width:62ch; color:var(--dim); font-size:15px;}
+
+/* TOC */
+.toc{position:relative; border:1px solid var(--line); border-left:2px solid var(--accent); background:var(--panel); padding:20px 24px 18px; margin:42px 0 12px;}
+.toc-title{position:absolute; top:0; left:16px; transform:translateY(-50%); background:var(--bg); padding:0 9px;
+  font-size:11px; letter-spacing:.2em; text-transform:uppercase; font-weight:700; color:var(--faint);}
+.toc ol{list-style:none; counter-reset:toc; columns:2; column-gap:60px;}
+@media(max-width:560px){.toc ol{columns:1;}}
+.toc li{counter-increment:toc; padding:3px 0; font-size:13.5px;}
+.toc li::before{content:counter(toc) ".  "; color:var(--faint);}
+.toc a{color:var(--dim); text-decoration:none;}
+.toc a:hover{color:var(--accent);}
+
+main{padding:18px 0 0; counter-reset:sec;}
+section{padding:30px 0; border-top:1px solid var(--rule);}
+section:first-child{border-top:0;}
+h2{counter-increment:sec; font-size:clamp(22px,4.5vw,30px); font-weight:800; letter-spacing:-.01em; color:var(--ink); margin-bottom:14px;}
+h2::before{content:counter(sec) ".  "; color:var(--accent); font-weight:800;}
+h3{font-size:15px; font-weight:700; color:var(--accent); margin:22px 0 6px; letter-spacing:.02em;}
+p{margin-bottom:14px; color:color-mix(in oklab, var(--ink), var(--dim) 30%); font-size:15px;}
+p:last-child{margin-bottom:0;}
+em{color:var(--ink); font-style:italic;}
+strong{color:var(--ink); font-weight:700;}
+code{font-family:var(--mono); font-size:.88em; color:var(--blue); background:rgba(126,200,255,.08); padding:1px 6px; border-radius:2px;}
+ul{margin:0 0 14px 0; padding-left:0; list-style:none;}
+ul li{position:relative; padding-left:20px; margin-bottom:6px; color:color-mix(in oklab, var(--ink), var(--dim) 30%); font-size:15px;}
+ul li::before{content:"·"; position:absolute; left:4px; color:var(--accent); font-weight:700;}
+
+/* spec tables */
+.spec-wrap{overflow-x:auto; margin:14px 0;}
+.spec-table{width:100%; border-collapse:collapse; font-size:13.5px; min-width:460px;}
+.spec-table th{text-align:left; font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--faint); font-weight:700; padding:9px 14px; border-bottom:1px solid var(--line);}
+.spec-table td{padding:10px 14px; border-bottom:1px solid var(--rule); color:var(--dim); vertical-align:top;}
+.spec-table td:first-child{white-space:nowrap;}
+.spec-table tr:last-child td{border-bottom:0;}
+
+/* ASCII diagrams */
+.tech-block{font-family:var(--mono); font-size:12.5px; line-height:1.5; color:var(--green); background:#0b0a06; border:1px solid var(--line); padding:16px 18px; margin:16px 0; overflow-x:auto; white-space:pre;}
+/* session-loop diagram: two cropped panels in one block; capped (~30% smaller) on desktop, full-width on mobile */
+.flowshots{max-width:560px; margin:16px 0;}
+.flowshots img{display:block; width:100%; height:auto; border:1px solid var(--line); background:#000;}
+.flowshots img + img{margin-top:14px;}
+
+/* figures */
+figure{margin:18px 0; border:1px solid var(--line); background:var(--panel); padding:0;}
+figure img{display:block; width:100%; height:auto;}
+figcaption{font-size:12.5px; color:var(--faint); font-style:italic; padding:12px 16px; border-top:1px solid var(--rule);}
+figure.shot{padding:18px; text-align:center;}
+figure.shot img{display:inline-block; width:100%; max-width:560px; height:auto; border:1px solid var(--rule);}
+figure.shot figcaption{border-top:1px solid var(--rule); margin-top:16px; padding:12px 0 0; text-align:left;}
+/* arena image + description, all inside one clickable bossfight button */
+.bossfight{display:block; position:relative; margin:24px 0; padding:18px; border:1px solid var(--line); background:var(--panel); text-decoration:none; transition:border-color .14s ease;}
+.bossfight:hover{border-color:var(--accent);}
+.bossfight .bf-img{display:block; width:100%; max-width:560px; margin:0 auto; height:auto; border:1px solid var(--rule); transition:opacity .15s ease;}
+.bossfight .bf-text{margin:14px 0 0; font-size:13px; font-style:italic; line-height:1.65; color:var(--faint); transition:opacity .15s ease;}
+.bossfight:hover .bf-img, .bossfight:hover .bf-text{opacity:.3;}
+.bf-hint{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); font-size:15px; font-weight:800; letter-spacing:.16em; text-transform:uppercase; white-space:nowrap; color:var(--accent); background:rgba(11,10,6,.72); border:1px solid var(--accent); padding:13px 26px; opacity:0; transition:opacity .15s ease; pointer-events:none;}
+.bossfight:hover .bf-hint{opacity:1;}
+
+/* CTA buttons */
+.cta-row{display:flex; gap:14px; flex-wrap:wrap; margin:30px 0 6px;}
+.btn{display:inline-block; font-size:14px; font-weight:700; letter-spacing:.06em; text-decoration:none; padding:13px 24px; transition:transform .12s ease, box-shadow .12s ease;}
+.btn.manual{color:var(--ink); background:transparent; border:1px solid var(--line);}
+.btn.manual:hover{border-color:var(--accent); color:var(--accent);}
+.btn.steam{color:#14110a; background:var(--accent); border:1px solid var(--accent); box-shadow:5px 5px 0 color-mix(in oklab, var(--accent), #000 60%);}
+.btn.steam:hover{transform:translate(-2px,-2px); box-shadow:7px 7px 0 color-mix(in oklab, var(--accent), #000 60%);}
+
+/* references */
+.references{margin-top:30px; padding-top:22px; border-top:1px solid var(--line); font-size:13px; color:var(--dim);}
+.references h3{color:var(--faint); margin-top:0;}
+.references ol{list-style:none; counter-reset:ref; padding:0;}
+.references li{counter-increment:ref; padding-left:30px; position:relative; margin-bottom:7px;}
+.references li::before{content:"[" counter(ref) "]"; position:absolute; left:0; color:var(--accent);}
+
+footer{border-top:1px solid var(--line); padding:28px 24px; margin-top:40px; text-align:center; font-size:12px; color:var(--faint); letter-spacing:.04em;}
+footer .footer-links{display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap;}
+footer .footer-links a{color:var(--dim); text-decoration:none;} footer .footer-links a:hover{color:var(--ink);}
+footer .footer-links .div{opacity:.4;}
+footer .made{margin-top:12px; opacity:.8;}
+:where(a){color:inherit; text-decoration-color:currentColor;}  /* unstyled links inherit the text colour instead of browser blue (~2:1 on this background); zero specificity, so any page rule wins */
+.beta-note{background:#1b1508; border-bottom:1px solid #6b5a2a; color:#e8d9b0; font:500 12.5px/1.55 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; text-align:center; padding:9px 16px; margin:0;}
+.beta-note b{color:#e0a93f; font-weight:700; letter-spacing:.09em;}
+.beta-note a{color:#e0a93f; text-decoration:underline; text-underline-offset:2px;}
+</style>
+<style id="fb-rtl">
+html[dir="rtl"]{--mono:'JetBrains Mono','Noto Kufi Arabic',ui-monospace,'SF Mono',Menlo,Consolas,monospace; --sans:'Inter','Noto Kufi Arabic',-apple-system,BlinkMacSystemFont,sans-serif;}
+/* Arabic is cursive: tracking pulls the joined letters apart; and there is no true Arabic italic */
+html[dir="rtl"] body *:not(.fb-logo){letter-spacing:0 !important;}
+html[dir="rtl"] :is(em,i,cite,figcaption,.gloss){font-style:normal;}
+html[dir="rtl"] .beta-note{font-family:'Noto Kufi Arabic',system-ui,sans-serif;}
+/* the shared menu (scripts/stamp_nav.py): links push to the far (left) side, dropdown opens inward */
+html[dir="rtl"] nav.fbnav .fb-links{margin-left:0; margin-right:auto;}
+html[dir="rtl"] nav .lang-switch{margin-left:0;}
+html[dir="rtl"] .lang-menu{right:auto; left:0;}
+@media (max-width:700px){
+  html[dir="rtl"] nav.fbnav .fb-links{margin-right:0;}
+  html[dir="rtl"] nav.fbnav .fb-steam-m{margin-left:0; margin-right:auto;}
+}
+html[dir="rtl"] .toc{border-left:1px solid var(--line); border-right:2px solid var(--accent);}
+html[dir="rtl"] .toc-title{left:auto; right:16px;}
+html[dir="rtl"] ul li{padding-left:0; padding-right:20px;}
+html[dir="rtl"] ul li::before{left:auto; right:4px;}
+html[dir="rtl"] .spec-table th{text-align:right;}
+html[dir="rtl"] figure.shot figcaption{text-align:right;}
+html[dir="rtl"] .tech-block{direction:ltr; text-align:left;}
+html[dir="rtl"] .btn.steam{box-shadow:-5px 5px 0 color-mix(in oklab, var(--accent), #000 60%);}
+html[dir="rtl"] .btn.steam:hover{transform:translate(2px,-2px); box-shadow:-7px 7px 0 color-mix(in oklab, var(--accent), #000 60%);}
+/* the citations are English bibliographic data: they keep their own direction */
+html[dir="rtl"] .references ol{direction:ltr; text-align:left;}
+</style>
+<!-- FBNAV:start (scripts/stamp_nav.py — edit there, not here) -->
+<style>
+nav.fbnav{display:flex; align-items:center; gap:10px 22px; flex-wrap:wrap;}
+nav.fbnav .fb-logo{color:inherit; text-decoration:none; font-weight:800; letter-spacing:.18em;}
+nav.fbnav .fb-crumbs{display:flex; align-items:baseline; flex-wrap:wrap; gap:0; font-size:13px; letter-spacing:.04em;}
+nav.fbnav .fb-crumbs a:not(.fb-logo){color:inherit; text-decoration:none; opacity:.72;}
+nav.fbnav .fb-crumbs a:not(.fb-logo):hover{opacity:1;}
+nav.fbnav .fb-pipe{opacity:.4; margin:0 10px;}
+nav.fbnav .fb-sep{opacity:.45; margin:0 .5em;}
+nav.fbnav .fb-here{opacity:1;}
+nav.fbnav .fb-links{display:flex; align-items:center; gap:8px 20px; flex-wrap:wrap; margin-left:auto;}
+nav.fbnav .fb-links a{color:inherit; text-decoration:none; opacity:.72; font-size:13px; letter-spacing:.04em; white-space:nowrap;}
+nav.fbnav .fb-links a:hover{opacity:1;}
+nav.fbnav .fb-links a[aria-current]{opacity:1; text-decoration:underline; text-underline-offset:5px;}
+nav.fbnav a.fb-steam{opacity:1; text-decoration:none; font-size:13px; letter-spacing:.04em; color:#100d08; background:#e0a93f; padding:4px 11px; border-radius:3px; font-weight:700;}
+nav.fbnav a.fb-steam:hover{background:#ecbd5c;}
+nav.fbnav .fb-steam-m{display:none;}
+nav.fbnav .lang-switch{margin-left:0;}
+@media (max-width:700px){
+  nav.fbnav .fb-links{order:3; width:100%; margin-left:0; gap:6px 16px;}
+  nav.fbnav .fb-links .fb-steam{display:none;}
+  nav.fbnav .fb-crumbs .fb-pipe, nav.fbnav .fb-crumbs a:not(.fb-logo), nav.fbnav .fb-crumbs .fb-sep, nav.fbnav .fb-crumbs .fb-here{display:none;}
+  nav.fbnav .fb-steam-m{display:inline-block; margin-left:auto;}
+}
+</style>
+<!-- FBNAV:end -->
+</head>
+<body>
+<div class="beta-note" role="status"><b>ترجمة تجريبية</b> — النسخة العربية من هذه الصفحة مسودة لم تخضع للمراجعة بعد. وجود خطأ في النص؟ <a href="report.html">يسعدنا الإبلاغ عنه</a> · <a href="about.html">Read in English</a><br>الواجهة العربية تعمل في نافذة FlashBoss الجديدة فقط، لا في إصدار الطرفية.</div>
+<div class="overlay"></div>
+
+<nav class="fbnav">
+  <span class="fb-crumbs"><a class="fb-logo" href="index.ar.html">FLASHBOSS</a><span class="fb-pipe">|</span><a href="home.ar.html">الرئيسية</a><span class="fb-sep"> · </span><span class="fb-here">نبذة</span></span>
+  <span class="fb-links">
+    <a href="home.ar.html">الرئيسية</a>
+    <a href="packs.html">الحزم</a>
+    <a href="wordlists.ar.html">قوائم الكلمات</a>
+    <a href="lessons.ar.html">الدروس</a>
+    <a href="manual/">الدليل</a>
+    <a class="fb-extra" href="resources.html">الموارد</a>
+    <a class="fb-steam" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-about&l=arabic" target="_blank" rel="noopener">Steam</a>
+  </span>
+  <a class="fb-steam fb-steam-m" href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-about&l=arabic" target="_blank" rel="noopener">Steam</a>
+  <div class="lang-switch">
+    <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="اختيار اللغة">AR<span class="lang-caret">▾</span></button>
+    <ul class="lang-menu" hidden>
+      <li><a href="about.html">English</a></li>
+      <li><a href="about.de.html">Deutsch</a></li>
+      <li><a href="about.es.html">Español</a></li>
+      <li><a href="about.ja.html">日本語</a></li>
+      <li><a href="about.zh.html">简体中文</a></li>
+      <li><a href="about.ru.html">Русский</a></li>
+      <li><a href="about.ar.html" aria-current="true" lang="ar" dir="rtl">العربية</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="crumb">مرجع تقني</div>
+    <h1>كيف يعلم FlashBoss</h1>
+    <p class="subtitle">بنية المحتوى، وآليات الجلسات، ونظام التخرج عبر معارك الزعماء، وعناصر التصميم الفاعلة فيه.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <nav class="toc" aria-label="جدول المحتويات">
+    <div class="toc-title">المحتويات</div>
+    <ol>
+      <li><a href="#overview">نظرة عامة</a></li>
+      <li><a href="#architecture">بنية المحتوى</a></li>
+      <li><a href="#masters">المعلمون</a></li>
+      <li><a href="#packs">بنية الحزم</a></li>
+      <li><a href="#session">بنية الجلسة والجدولة</a></li>
+      <li><a href="#fight">معركة الزعيم</a></li>
+      <li><a href="#pedagogy">التصميم التربوي</a></li>
+      <li><a href="#scope">النطاق</a></li>
+      <li><a href="#effective">استخدام FlashBoss بفعالية</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <section id="overview">
+      <h2>نظرة عامة</h2>
+      <p>إن FlashBoss تطبيق طرفية لسطح المكتب لاكتساب المفردات. يجمع بين مجدول للتكرار المتباعد، وجمل أمثلة مصوغة مع تحويل النص إلى كلام، وعناقيد محتوى موضوعية، وآلية تخرج عبر معارك الزعماء. والنظام مصمم لتنمية المهارات الاستقبالية — القراءة والاستماع والفهم — في اللغة المستهدفة.</p>
+      <p>تحتوي حزمة Core واحدة على 1,000 بطاقة، وتقدم أكثر من 5,000 كلمة من مدخلات اللغة المستهدفة في سياقها. وتضيف كل حزمة توسعة من حزم Pareto أكثر من 10,000 كلمة، مبنية حول أعلى المفردات تواترا مما لم يغط بعد. واللغات المدعومة هي الإنجليزية والألمانية والإسبانية والإيطالية والفرنسية واللاتينية والسواحيلية والإسبرانتو وToki Pona.</p>
+    </section>
+
+    <section id="architecture">
+      <h2>بنية المحتوى</h2>
+      <p>يصف هذا القسم البنية الداخلية المشتركة بين حزم FlashBoss. أما التنظيم على مستوى الحزم — كيف تتكامل الحزم، وكيف تختلف حزم اللغات الأجنبية عن حزم الإنجليزية — فموثق في القسم 4.</p>
+
+      <h3>البطاقة</h3>
+      <p>تحمل كل بطاقة ما يصل إلى خمسة حقول نصية ومقطعين صوتيين. ولا ينطق إلا حقلا اللغة المستهدفة:</p>
+      <div class="spec-wrap">
+      <table class="spec-table">
+        <thead><tr><th>الحقل</th><th>المحتوى</th><th>TTS</th></tr></thead>
+        <tbody>
+          <tr><td><code>TargetWord</code></td><td>المفردة قيد التدريب. وفي اللغات التي تميز الجنس النحوي تحمل أداة تعريفها، ملونة بحسب الجنس.</td><td>نعم</td></tr>
+          <tr><td><code>Translation</code></td><td>معنى الكلمة المستهدفة بلغة المتعلم الأم.</td><td>لا</td></tr>
+          <tr><td><code>ExampleSentence</code></td><td>جملة مصوغة تضع الكلمة المستهدفة في سياقها، ولا تستخدم إلا مفردات سبق أن قدمها المجدول.</td><td>نعم</td></tr>
+          <tr><td><code>ExampleTranslation</code></td><td>صياغة اصطلاحية لجملة المثال بلغة المتعلم الأم.</td><td>لا</td></tr>
+          <tr><td><code>Notes</code></td><td>أصل الكلمة، أو ملاحظة نحوية، أو مثال ثان مشروح، أو مجموعة مرادفات. اختيارية.</td><td>لا</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>لا يطبق تحويل النص إلى كلام إلا على حقول اللغة المستهدفة. وهذا التفاوت مقصود: الغاية إغراق المتعلم في أصوات اللغة المستهدفة، مع إبقاء سقالات اللغة الأم صامتة لا تزاحم.</p>
+
+      <h3>العنقود</h3>
+      <p>العنقود مجموعة بطاقات ذات موضوع واحد — وهو وحدة التقدم في FlashBoss. تقدم بطاقات العنقود معا، وتدرب معا، وتتخرج معا عبر معركة زعيم واحدة. وموضوعات العناقيد ملموسة وضيقة: <em>الأعداد والوقت</em>، و<em>السفر والإقامة</em>، و<em>المطبخ المحلي</em>، و<em>الأدوار الاجتماعية والناس</em>.</p>
+
+      <h3>المرحلة</h3>
+      <p>تقع العناقيد داخل المراحل. تضم حزمة Core خمس مراحل، في كل منها عادة نحو ثمانية عناقيد. وفي حزم اللغات الأجنبية تكون المرحلة بوابة صعوبة: فهي تحدد التراكيب النحوية المسموح بظهورها في جمل أمثلة العنقود. تقتصر جمل أمثلة المرحلة 3 على المضارع والأمر والماضي البسيط؛ وتضيف المرحلة 4 الماضي الاستمراري والشرط؛ وتفتح المرحلة 5 القواعد كاملة بما فيها صيغة الالتزام (subjunctive). أما في حزم الإنجليزية فيستخدم نظام المراحل موضوعيا لا نحويا — إذ تعكس المرحلة مجالا موضوعيا (مثل <em>الاستمارات والوثائق</em>، و<em>التواصل الاجتماعي والبريد الإلكتروني</em>، و<em>الكلمات الملتبسة</em>) لا درجة التعقيد النحوي.</p>
+
+      <h3>الدرس</h3>
+      <p>الدروس صفحات مرجعية مثبتة على بطاقات بعينها — مادة نقاط مراجعة ترافق البطاقة طوال تدريبها. فحين تظهر بطاقة مرفق بها درس أول مرة، يظهر الدرس معها. وكلما عادت البطاقة وفق جدول التكرار المتباعد، عاد الدرس معها. فالدروس إذن مرجع دائم، لا عرض لمرة واحدة. ومن استوعب محتوى درس ما يمكنه تعطيله وحده: فتواصل البطاقة تدريبها، ويتوقف الدرس عن الظهور.</p>
+    </section>
+
+    <section id="masters">
+      <h2>المعلمون</h2>
+      <p>قبل بدء التدريب يختار المتعلم معلما — المرشد الذي يحدد الإيقاع اليومي. ويثبت المعلم <em>نصاب السلسلة</em>: عدد البطاقات المستحقة كل يوم لإبقاء السلسلة حية، من 8 إلى 34 بطاقة، أي نحو 5 إلى 30 دقيقة من الدراسة.</p>
+      <div class="spec-wrap">
+      <table class="spec-table">
+        <thead><tr><th>المعلم</th><th>الطبع</th><th>بطاقات / يوم</th></tr></thead>
+        <tbody>
+          <tr><td>🐺 Luna — لطف وتشجيع</td><td>حازم</td><td>8</td></tr>
+          <tr><td>⚫ Claude — تحليل ودقة</td><td>استشاري</td><td>13</td></tr>
+          <tr><td>🐉 Shen — صرامة ومباشرة</td><td>حازم</td><td>13</td></tr>
+          <tr><td>🦉 Odiin — تشجيع وطيبة</td><td>استشاري</td><td>21</td></tr>
+          <tr><td>🦊 Kitsune — مكر ومرح</td><td>استشاري</td><td>34</td></tr>
+          <tr><td>🦅 Aquila — نبل وانضباط</td><td>حازم</td><td>34</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>مدى صرامة المعلم يرجع إلى ذلك العدد اليومي. وOdiin، بإحدى وعشرين بطاقة، هو أكثر المعلمين صرامة مما يوصى به للمتعلم الجديد — الطريق الأعلى. ويقع وراءه المعلمان صاحبا الأربع والثلاثين بطاقة، Kitsune وAquila: إيقاع لجولات الاستذكار ولمن يريد الحد الأقصى.</p>
+      <p>أما <em>طبع</em> المعلم فأمر منفصل، ويتحكم في شيء واحد — كتاب التعاويذ. فالمعلم <strong>الحازم</strong> يحد من جلسات كتاب التعاويذ، احترازا من التقدم أبعد مما ينبغي ثم الإنهاك. والمعلم <strong>الاستشاري</strong> ينبه إلى أن جلسة أخرى ليست حكيمة، ثم يتنحى ويتركها تحدث. وفيما عدا ذلك فالطبعان متطابقان.</p>
+      <p>والتوزيع غير متساو. فإيقاعا الثلاث عشرة والأربع والثلاثين بطاقة متاحان بالطبعين كليهما — Claude (استشاري) أو Shen (حازم) عند ثلاث عشرة، وKitsune (استشاري) أو Aquila (حازم) عند أربع وثلاثين — فهناك يختار الإيقاع والأسلوب كل على حدة. أما إيقاع الثماني بطاقات فلLuna وحدها (حازم)، وإيقاع الإحدى والعشرين لOdiin وحده (استشاري).</p>
+
+      <h3>كم يستغرق الأمر</h3>
+      <p>الإيقاع هو كل شيء. تمتد المجموعة ذات الـ 1,000 بطاقة على خمس مراحل، فمتوسط المرحلة 200 بطاقة — وتزيد المراحل أو تنقص عن ذلك — والدورة الكاملة ثلاث مجموعات. مع أداء النصاب اليومي لا أكثر:</p>
+      <div class="spec-wrap">
+      <table class="spec-table">
+        <thead><tr><th>الإيقاع</th><th>المعلمون</th><th>مرحلة</th><th>مجموعة من 1,000 كلمة</th><th>دورة من 3,000 كلمة</th></tr></thead>
+        <tbody>
+          <tr><td>8 / يوم</td><td>Luna</td><td>~10 أسابيع</td><td>~1 سنة</td><td>~3 سنوات</td></tr>
+          <tr><td>13 / يوم</td><td>Claude · Shen</td><td>~6 أسابيع</td><td>~8 أشهر</td><td>~2 سنة</td></tr>
+          <tr><td>21 / يوم</td><td>Odiin</td><td>~4 أسابيع</td><td>~5–6 أشهر</td><td>~1½ سنة</td></tr>
+          <tr><td>34 / يوم</td><td>Kitsune · Aquila</td><td>~2–3 أسابيع</td><td>~3 أشهر</td><td>~1 سنة</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>تقديرات مقربة، وهي حد أدنى لا توقع: فنصاب السلسلة هو أقل ما يستحق كل يوم لا سقفه، وكتاب التعاويذ موجود لمن يريد الإسراع. ولا تمتد كل الدورات إلى ثلاث مجموعات — فجذع اللاتينية مجموعتان، وToki Pona حزمة واحدة من 500 بطاقة.</p>
+    </section>
+
+    <section id="packs">
+      <h2>بنية الحزم</h2>
+      <p>الحزمة هي وحدة التوزيع في FlashBoss: مجموعة مفردات قائمة بذاتها — عادة 1,000 بطاقة — لها بنية عناقيدها وبنية مراحلها ومكتبة دروسها. وتصدر الحزم وفق نموذجين مختلفين بحسب اللغة.</p>
+
+      <h3>حزم اللغات الأجنبية: تدرج تراكمي من ثلاث حزم</h3>
+      <p>تصدر كل من الإنجليزية والألمانية والفرنسية والإسبانية والإيطالية والإسبرانتو سلسلة من ثلاث حزم: <strong>Core</strong> و<strong>Pareto 1</strong> و<strong>Pareto 2</strong>. والتدرج تراكمي — فكل حزمة تفترض المفردات التي قدمتها الحزم السابقة وتبني فوقها جمل أمثلة جديدة. تستمد جمل أمثلة Pareto 1 من مفردات Core إضافة إلى الكلمات المستهدفة الجديدة في Pareto 1؛ وتفترض Pareto 2 الحزمتين السابقتين معا. ومن يتم الثلاث يبلغ حصيلة استقبالية من 3,000 بطاقة في اللغة المستهدفة.</p>
+      <p>ترقيم المراحل متصل عبر السلسلة. تغطي Core المراحل 1–5. وتمد Pareto 1 وPareto 2 معا السلسلة بعشر مراحل أخرى: المرحلة 6 أولى مراحل Pareto، والمرحلة 15 آخرها.</p>
+      <p>أهداف CEFR لكل حزمة:</p>
+      <div class="spec-wrap">
+      <table class="spec-table">
+        <thead><tr><th>الحزمة</th><th>البطاقات</th><th>الهدف</th></tr></thead>
+        <tbody>
+          <tr><td><code>Core</code></td><td>1,000</td><td>التعرض لقواعد A1–A2؛ يهيئ المتعلم لدروس الانغماس في المستوى A2.</td></tr>
+          <tr><td><code>Pareto 1</code></td><td>1,000</td><td>مفردات B1–B2 عالية التواتر؛ تمتد إلى سجلات لغوية غائبة عن Core (السفر، والمعاملات الرسمية، والحياة الاجتماعية).</td></tr>
+          <tr><td><code>Pareto 2</code></td><td>1,000</td><td>مفردات B2–C1؛ أدوات الربط الرسمية، والسجلات المجردة، والمحتوى الثقافي.</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h3>حزم الإنجليزية: حزم مستقلة قائمة بذاتها</h3>
+      <p>تصدر الإنجليزية بطريقة مختلفة. فكل حزمة إنجليزية مجموعة مفردات مكتفية بذاتها من 1,000 كلمة، ويختار المتعلمون الحزم بحسب المستوى والاهتمام لا بإتمامها بالترتيب. ولا يوجد تدرج تراكمي — فإتمام حزمة إنجليزية لا يفترض حزمة أخرى. وتنقسم حزم الإنجليزية إلى عائلتين بنيويتين:</p>
+      <ul>
+        <li><strong>حزم المستويات</strong> — مفردات ترفع القارئ مستوى وتثبته فيه. <em>English Adept</em>، الحزمة المجانية المحورية، تمتد على أطول صعود: تبدأ من دون مستوى القراءة في الصف الثامن وتحمل المتعلم حتى الجاهزية الجامعية، فتنتهي عند نحو C1. أما <em>English Advance</em> فتستهدف الإنجليزية العملية اللازمة للعيش في المجتمع دون قيود: الاستمارات والرسائل والمعاملات الرسمية والوثائق اليومية التي تتطلبها حياة البالغين. والمبدأ الموجه: إنجاز الأمر مرة واحدة، كما ينبغي، ثم لا حاجة إلى التفكير فيه مرة أخرى.</li>
+        <li><strong>سلسلة Roots</strong> — حزم مدفوعة تدرب على مفردات الإنجليزية عبر طبقاتها الاشتقاقية الثلاث: <em>German Roots</em> (الأنجلوسكسونية)، و<em>Norman Roots</em> (الفرنسية النورماندية)، و<em>Latin Roots</em> (العلمية). وتكشف الإحالات المتبادلة بين الثلاث عن الأزواج التاريخية التي تمنح الإنجليزية نظام سجلاتها.</li>
+      </ul>
+    </section>
+
+    <section id="session">
+      <h2>بنية الجلسة والجدولة</h2>
+      <p>تمر جلسة التدريب بكل بطاقة عبر خمس مراحل فرعية. الأربع الأولى لكل بطاقة؛ والخامسة لكل عنقود.</p>
+      <div class="flowshots">
+        <img src="session_loop.png" alt="حلقة الجلسة: تمر كل بطاقة بالاستماع، فالقراءة، فالتكرار، ثم التقييم؛ ثم يختار المجدول البطاقة التالية وتتكرر الدورة.">
+        <img src="cluster_selection.png" alt="لكل عنقود: يستمر التدريب حتى يصبح العنقود مؤهلا لمعركة زعيم، تنتهي إما بالنجاح وإما بإعادة المحاولة.">
+      </div>
+
+      <h3>الاستماع</h3>
+      <p>يشغل صوت Piper لتحويل النص إلى كلام الكلمة المستهدفة لحظة ظهورها على الشاشة. وحين يستعد المتعلم، تعرض ضغطة مفتاح جملة المثال وتنطقها. هذا هو التعرض الأول.</p>
+
+      <h3>القراءة</h3>
+      <p>في كل خطوة، تثبت قراءة المادة المنطوقة بصوت عال الذاكرة، وتحسن نطق المتعلم وثقته في الكلام. ثم يتسع الوقت لتحليل الجملة، ومقابلتها بالترجمة، واستيعاب القواعد في سياقها.</p>
+
+      <h3>التكرار</h3>
+      <p>عند عرض الترجمة الإنجليزية تتاح أدوات الإعادة: <code>Enter</code> يعيد الكلمة المستهدفة، و<code>6</code> يعيد جملة المثال. ودورات التكرار غير محدودة في هذه المرحلة؛ ويتقدم المتعلم حين يستعد.</p>
+
+      <h3>التقييم</h3>
+      <p>يقيم المتعلم مدى تعرفه على مقياس من ست درجات (من 0 إلى 5). ويغير التقييم موضع البطاقة في متتالية فترات فيبوناتشي (1، 2، 3، 5، 8، 13، 21… يوما)، مع حد أدنى للفترة خاص بكل تقييم. والتقييم 0 حالة خاصة — عودة إلى 1 يوم أيا كان موضع البطاقة السابق.</p>
+      <div class="spec-wrap">
+      <table class="spec-table">
+        <thead><tr><th>التقييم</th><th>المعنى</th><th>تغير الفترة</th></tr></thead>
+        <tbody>
+          <tr><td><code>0</code></td><td>نسيان تام.</td><td>العودة إلى 1 يوم.</td></tr>
+          <tr><td><code>1</code></td><td>ضعيف جدا.</td><td>الموضع &lrm;−3 (الحد الأدنى 1 يوم).</td></tr>
+          <tr><td><code>2</code></td><td>ضعيف.</td><td>الموضع &lrm;−2 (الحد الأدنى 2 يوم).</td></tr>
+          <tr><td><code>3</code></td><td>مقبول.</td><td>الموضع &lrm;−1 (الحد الأدنى 3 أيام).</td></tr>
+          <tr><td><code>4</code></td><td>جيد.</td><td>دون تغيير (الحد الأدنى 5 أيام).</td></tr>
+          <tr><td><code>5</code></td><td>ممتاز.</td><td>الموضع &lrm;+1 (الحد الأدنى 8 أيام).</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>المقياس معاير بحيث يتطلب التقدم تقييما صارما. لا يقدم البطاقة إلا التقييم 5؛ والتقييم 4 يبقيها في موضعها؛ ومن 1 إلى 3 يرجعها خطوات في جدول فيبوناتشي؛ و0 يعيدها إلى 1 يوم. وتمنع الحدود الدنيا الخاصة بكل تقييم انهيار فترة البطاقة بسبب تقييم سيئ، وهي أساس قاعدة الإتقان.</p>
+
+      <h3>إتقان البطاقة</h3>
+      <p>تصبح البطاقة متقنة بتقييمين متتاليين بالدرجة 5. والآلية مباشرة: تقييم 5 واحد يرفع الحد الأدنى لفترة البطاقة إلى 8 أيام؛ وتقييم 5 ثان يقدمها إلى 13 يوما — عتبة الإتقان. فمن أي موضع بدأت، يحمل استرجاعان تامان متتاليان البطاقة إلى الإتقان.</p>
+
+      <h3>الجلسات اليومية</h3>
+      <p>تسحب البطاقات الجديدة إلى المجموعة واحدة تلو الأخرى بترتيب العناقيد؛ ولا تقيد حدود العناقيد إدخال البطاقات. ويتبع حجم البطاقات اليومي نسبة فيبوناتشي — ففي جلسة يوم ما تسحب بطاقات المراجعة والبطاقات الجديدة بنسبة أعداد فيبوناتشي متتالية، فيقترب المزيج من φ، النسبة الذهبية.</p>
+
+      <h3>جاهزية معركة الزعيم؟</h3>
+      <p>يصبح العنقود مؤهلا لمعركة زعيمه حين يتقن 80% من بطاقاته — أي حين يبلغ 80% منها فترة الـ 13 يوما. ولا يلزم إتقان كل بطاقة لخوض المعركة: لكن الفوز يتطلب هزيمة أصعب بطاقتين على التوالي. وتناقش آليات المعركة بالتفصيل في القسم التالي.</p>
+    </section>
+
+    <section id="fight">
+      <h2>معركة الزعيم</h2>
+      <p>معركة الزعيم هي آلية تخرج العنقود، والطريق الوحيد لخروجه من التدريب النشط. وعلى خلاف مرحلة التقييم — التي يقيم فيها المتعلم نفسه — فمعركة الزعيم مواجهة، واختيار من متعدد حصرا. يتقاسم المتعلم والزعيم ساحة خطية واحدة؛ يبدأ المتعلم من اليسار، ويقف الزعيم أبعد إلى اليمين. والمهمة دفع الزعيم عن الطرف البعيد. قواعد السومو: لا يبقى على المنصة إلا واحد.</p>
+      <p>يعرض كل دور إحدى بطاقات العنقود سؤالا، مع ثماني إجابات محتملة على مفاتيح الأرقام 1–8. الإجابة الصحيحة تقدم المتعلم موضعا واحدا على المسار، ويدفع الزعيم في الوقت نفسه موضعا أقرب إلى الحافة البعيدة. والإجابة الخاطئة تزلق المتعلم موضعين إلى الوراء نحو الحافة القريبة، أو خارجها. ومن يدفع عن الحافة القريبة يمنع من معركة ذلك العنقود حتى اليوم التالي. أما الزعيم فإذا دفع وراء الحافة البعيدة هزم، وقهر العنقود.</p>
+      <a class="bossfight" href="https://flashboss-demo.pages.dev/">
+        <img class="bf-img" src="boss-arena.png" alt="ساحة معركة الزعيم: مسار أفقي يتقاسمه المتعلم والزعيم، مع علامة عند الحافة البعيدة.">
+        <p class="bf-text">الساحة: مسار أفقي واحد يتقاسمه المتعلم (يسارا) والزعيم (يمينا)، مع علامة عند الحافة البعيدة — مخرج الزعيم. الإجابة الصحيحة تقدم المتعلم موضعا وتدفع الزعيم موضعا أقرب إلى تلك الحافة؛ والإجابة الخاطئة تزلق المتعلم موضعين إلى الوراء. يسحب الموضعان 1–2 أسهل بطاقات العنقود، والموضعان 3–4 أصعبها. السقوط عن الحافة القريبة يقفل العنقود حتى اليوم التالي؛ ودفع الزعيم وراء الحافة البعيدة يقهر العنقود.</p>
+        <span class="bf-hint">النقر للقتال</span>
+      </a>
+      <p>ترتيب البطاقات داخل المعركة مقصود. يسحب الموضعان 1 و2 من أسهل بطاقات العنقود — إحماء يتيح للمتعلم بناء تقدم في الموضع. ويسحب الموضعان 3 و4 من أصعبها: أضعف الكلمات في المجموعة، تأتي ما إن يبدأ المتعلم في كسب الأرض. والإجابة الخاطئة في الموضع 3 أو 4 تزلق المتعلم موضعين إلى الوراء — إلى الموضع 1 أو 2 — ويعاد تصنيف البطاقة الفائتة على أنها الأسهل لديه منذ تلك اللحظة. وللأسف يعني ذلك أنها بانتظاره: البطاقة نفسها، قابعة الآن في الخانات السهلة حيث هبط للتو. فلا يقهر عنقود قبل إتقان أضعف بطاقاته.</p>
+      <p>مبررات التصميم موثقة في القسم 7. وباختصار: تضخ معركة الزعيم ضغطا محدودا قليل العواقب، يولد ضغط استرجاع حقيقيا دون عواقب الإخفاق اللغوي في العالم الحقيقي. كما توفر حالة نجاح محددة — قهر العنقود — يفتقر إليها الإيقاع المفتوح للتكرار المتباعد.</p>
+    </section>
+
+    <section id="pedagogy">
+      <h2>التصميم التربوي</h2>
+      <p>تعكس بنية FlashBoss نتائج راسخة في اكتساب اللغة الثانية وعلم النفس المعرفي. وهذه الأسس ذات الصلة:</p>
+
+      <h3>المدخلات المفهومة</h3>
+      <p>تقول فرضية المدخلات لدى Krashen [1] إن المتعلمين يكتسبون اللغة على أفضل وجه حين تكون المدخلات فوق كفاءتهم الحالية بقليل — مفهومة بما يكفي لتحليلها، ومتطلبة بما يكفي لتوسيعها. وجمل الأمثلة في FlashBoss مصوغة بحيث تكون الكلمة المستهدفة عادة العنصر المجهول الوحيد؛ أما بقية الجملة فمن مفردات سبق أن قدمها المجدول. وهذا يضبط درجة الفهم عند نحو 80–95% للمتعلم المتدرب، فيضع كل جملة في منطقة <em dir="ltr">i+1</em>.</p>
+
+      <h3>ممارسة الاسترجاع</h3>
+      <p>ينتج الاستدعاء النشط احتفاظا أقوى على المدى الطويل من إعادة القراءة [2]. وتفرض مرحلة التقييم الاسترجاع <em>قبل</em> كشف الترجمة، فتطبق أثر الاختبار على كل عرض للبطاقة. فالبطاقات لا تعرض عرضا سلبيا؛ بل تستدعى استدعاء نشطا ويقيمها المتعلم بنفسه.</p>
+
+      <h3>التكرار المتباعد</h3>
+      <p>تتلاشى الذاكرة على منحنى يمكن توقعه [3]. ومراجعة البطاقة قبيل نسيانها تثبت أثر الذاكرة بكفاءة أعلى من التكرار المكثف. ومتتالية فترات فيبوناتشي واحدة من عدة جداول تقارب منحنى النسيان؛ وتستخدم هنا لبساطتها وثباتها وتدرجها البديهي للمتعلم.</p>
+
+      <h3>الصعوبة المرغوبة</h3>
+      <p>يستفيد الاحتفاظ من الجهد لحظة الترميز والاسترجاع [4]. ويجسد مقياس التقييم الصعوبة المرغوبة بجعل التراجع هو الأصل: فالتقييمات دون 5 إما تبقي البطاقة في موضعها وإما ترجعها في جدول فيبوناتشي. ولا يكسب التقدم إلا استدعاء لا لبس فيه، ويتطلب الإتقان استدعاءين كهذين متتاليين. وحتى يكتمل جزء كبير من العنقود تبقى بطاقاته كلها متداولة، لكن الكلمات المعروفة جيدا لا تنافس على الانتباه مادة أجدر به.</p>
+
+      <h3>الإطار الوجداني</h3>
+      <p>القلق الشديد يضعف الاكتساب [1]. ومعركة الزعيم مصممة لإدخال الضغط دون رفع المرشح الوجداني: فالعواقب محدودة (المعركة الخاسرة تكلف يوما، لا مكانة في محادثة)، والنظام خاص، ولا يوجد سجل دائم. والضغط مصمم ليكون حادا بما يكفي لتركيز الاسترجاع، وخفيفا بما يكفي للحفاظ على الظروف التي يتطلبها الاكتساب.</p>
+
+      <h3>المدخلات قبل المخرجات</h3>
+      <p>تنمو المهارات الاستقبالية أسرع من المهارات الإنتاجية حين تدرب وحدها. وإغراق المتعلم في مدخلات عالية الفهم قبل مطالبته بالإنتاج يحاكي طريقة اكتساب الأطفال للغتهم الأولى، ويتيح للمفردات والقواعد أن تصبح قابلة للتحليل قبل أن تصبح قابلة للاستخدام. وFlashBoss هو نصف المدخلات في مسار تعلم متكامل؛ أما الممارسة الإنتاجية — الكلام والكتابة والتفاعل — فمسؤولية أدوات لا يحاول FlashBoss أن يحل محلها.</p>
+    </section>
+
+    <section id="scope">
+      <h2>النطاق</h2>
+      <p>يدرب FlashBoss على:</p>
+      <ul>
+        <li>مفردات اللغة المستهدفة والتعرف عليها.</li>
+        <li>فهم المقروء على مستوى الجملة.</li>
+        <li>فهم المسموع عبر تحويل النص إلى كلام.</li>
+        <li>اكتساب القواعد عرضا عبر التعرض لها في سياقها.</li>
+        <li>طلاقة القراءة على مستوى العبارة.</li>
+      </ul>
+      <p>ولا يدرب FlashBoss على:</p>
+      <ul>
+        <li>إنتاج الكتابة.</li>
+        <li>طلاقة المحادثة.</li>
+        <li>استراتيجيات إصلاح التواصل.</li>
+      </ul>
+      <p>أقوى طريق لتعلم التحدث بلغة جديدة واستخدامها هو صف انغماس في المحادثة — صحبة أقران يسعون إلى الهدف نفسه، مع معلم متمكن يرشد الطريق. وحيث تجعل الجغرافيا ذلك بعيد المنال، تؤدي خدمات التدريس عبر الإنترنت وصفوف المحادثة العمل نفسه؛ وحيث تكون الكلفة هي العائق، يمكن حتى لروبوت محادثة أن يحل محلها — مكانا لممارسة الكلام، ولطرح الأسئلة التي تنشأ أثناء جلسة FlashBoss.</p>
+    </section>
+
+    <section id="effective">
+      <h2>استخدام FlashBoss بفعالية</h2>
+
+      <h3>التحكم في عبء الدراسة</h3>
+      <p>يمكن التحكم في عبء الدراسة اليومي بثلاث طرق رئيسية: اختيار المعلم؛ وتجاوز نصاب السلسلة لنيل جائزة <strong>اليوم الملحمي</strong> (EPIC) اليومية (موصى به)؛ وثالثا، عقد — فبعد نيل اليوم الملحمي يمكن اختيار دراسة يوم إضافي مقابل رمز <em>دافع</em>. لكن الحذر واجب عند العبث بالسحر.</p>
+      <p><strong>المعلم (السلسلة اليومية).</strong> يحدد المعلم المختار النصاب اليومي — من 8 إلى 34 بطاقة في اليوم (تفاصيل المعلمين في القسم 3). وأداء الحد الأدنى وحده يحفظ السلسلة دائما ويبقي التقدم مستمرا، مع إمكانية فعل المزيد.</p>
+      <p><strong>اليوم الملحمي.</strong> في اليوم الأول من المرحلة — يوم حجر الأساس — تقدم الجلسة الملحمية ما يصل إلى ثلاثة أضعاف النصاب اليومي من البطاقات الجديدة. وهذه هي البداية المثلى: فهي تدخل إلى الدوران مفردات تكفي ليؤدي التكرار المتباعد عمله. ويرتفع عدد البطاقات المتاحة وينخفض من يوم لآخر.</p>
+      <p><strong>كتاب التعاويذ (العقد).</strong> تجلب جلسة كتاب التعاويذ اليوم التالي إلى الحاضر — مراجعات الغد وحصة أخرى من البطاقات الجديدة، تنجز اليوم. إنها حرفيا عمل الغد منجزا الآن، وإتمامها يكسب رمز <em>دافع</em>: يوم راحة مدخر لوقت الحاجة.</p>
+
+      <h3>القراءة بصوت عال</h3>
+      <p>نطق كل سؤال بصوت عال أثناء تشغيله. فإنتاج الكلمات يفعل أكثر من تمرين النطق: تكوين الجملة في الفم يستنفر الذاكرة الحركية والسمعية إلى جانب البصرية، فترمز كل بطاقة عبر عدة قنوات في آن — أثر أغنى وأدوم مما تتركه القراءة الصامتة. وتوليد اللغة لا مجرد التعرف عليها هو في ذاته فعل استرجاع، وهذا ما يرسخ الذاكرة؛ أما الثقة في الكلام التي يبنيها فمكسب إضافي يتراكم.</p>
+
+      <h3>المعارك الخاسرة</h3>
+      <p>خسارة معركة زعيم انتكاسة صغيرة. تعرض شاشة الهزيمة الكلمات التي جاءت إجاباتها خاطئة، مع إمكانية الضغط على <code>8</code> للتبديل بين اللغة المستهدفة والإنجليزية. والبطاقة الفائتة في المواضع الصعبة (3–4) يعاد تصنيفها على أنها الأسهل منذ تلك اللحظة، فتعود في المواضع الأولى من المحاولة التالية. ولا يقهر العنقود قبل الإجابة عن تلك البطاقة إجابة صحيحة — فالكلمة التي كانت سبب الهزيمة تصبح بوابة لا بد من عبورها قبل أن تنتهي المعركة. وقد تتطلب العناقيد عدة محاولات، لكن الغد موجود دائما.</p>
+
+      <h3>المسار المتوقع</h3>
+      <p>المتعلم المواظب يتم Core في شهرين إلى ستة أشهر. ويصنع FlashBoss وهم معرفة أكثر مما هو حاصل، لأنه يبقي المتعلم في فقاعة من لغة يعرفها، تتسع بطريقة مضبوطة. ستبقى فجوات كبيرة في الفهم، لكن مع المواصلة تنغلق تلك الفجوات. وفي أثناء ذلك يزداد الفهم كل يوم. نتمنى لكم رحلة لغوية موفقة — المعلمان Odiin وClaude.</p>
+    </section>
+
+    <div class="references">
+      <h3>المراجع</h3>
+      <ol>
+        <li>Krashen, S. D. (1982). <em>Principles and Practice in Second Language Acquisition</em>. Pergamon. <bdi dir="rtl">(فرضية المدخلات؛ المرشح الوجداني.)</bdi></li>
+        <li>Roediger, H. L., &amp; Karpicke, J. D. (2006). Test-enhanced learning: taking memory tests improves long-term retention. <em>Psychological Science</em>, 17(3), 249–255.</li>
+        <li>Ebbinghaus, H. (1885). <em>Über das Gedächtnis</em>. Duncker &amp; Humblot. <bdi dir="rtl">(منحنى النسيان، سلف التكرار المتباعد؛ قارن Leitner، 1972.)</bdi></li>
+        <li>Bjork, R. A. (1994). Memory and metamemory considerations in the training of human beings. In <em>Metacognition: Knowing about Knowing</em>. MIT Press. <bdi dir="rtl">(الصعوبة المرغوبة.)</bdi></li>
+      </ol>
+    </div>
+
+  </main>
+</div>
+
+<footer>
+  <span class="footer-links">
+    <a href="home.ar.html">الرئيسية</a><span class="div">·</span>
+    <a href="packs.html">الحزم</a><span class="div">·</span>
+    <a href="resources.html">الموارد</a><span class="div">·</span>
+    <a href="manual/">الدليل (تجريبي)</a><span class="div">·</span>
+    <a href="press.html">الصحافة</a><span class="div">·</span>
+    <a href="https://store.steampowered.com/app/4134440/FlashBoss/?utm_source=website-about&l=arabic">Steam</a>
+  </span>
+</footer>
+
+<script>
+// language dropdown: button toggles the menu; click-away / Esc closes it
+(function(){
+  var sw=document.querySelector('.lang-switch'); if(!sw) return;
+  var btn=sw.querySelector('.lang-toggle'), menu=sw.querySelector('.lang-menu');
+  function close(){ menu.hidden=true; btn.setAttribute('aria-expanded','false'); }
+  btn.addEventListener('click', function(e){ e.stopPropagation(); var willOpen=menu.hidden; menu.hidden=!willOpen; btn.setAttribute('aria-expanded', String(willOpen)); });
+  document.addEventListener('click', function(e){ if(!sw.contains(e.target)) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
+</script>
+</body>
+</html>

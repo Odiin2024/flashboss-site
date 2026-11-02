@@ -15,13 +15,20 @@ so it can be run again after each batch lands. It also keeps
 a German visitor to the German page, and a page listed there without a real file
 would send them to a 404.
 
+With --siblings it also rewires every locale sibling already on disk the same
+way (each keeps aria-current on its own entry), which is how a NEW locale
+reaches the switchers of the pages that were translated before it (Arabic,
+2026-11-02):
+
+    python3 scripts/l10n/wire_english.py --siblings index home about voices
+
 Nothing here touches prose.
 """
 import re, sys, pathlib
 from collections import OrderedDict
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
-from localize_new_pages import BASE, LOCALES, NATIVE, page_name
+from localize_new_pages import BASE, LOCALES, NATIVE, page_name, page_url, switch_attrs
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 
@@ -31,8 +38,8 @@ def have(base):
     return [l for l in LOCALES if l != "en" and (ROOT / page_name(base, l)).exists()]
 
 
-def wire_page(base):
-    p = ROOT / f"{base}.html"
+def wire_page(base, cur="en"):
+    p = ROOT / page_name(base, cur)
     s = p.read_text(encoding="utf-8")
     locs = have(base)
     if not locs:
@@ -40,26 +47,26 @@ def wire_page(base):
         return []
 
     # ---- hreflang: en, then every sibling, then x-default ----
-    rows = [f'<link rel="alternate" hreflang="en" href="{BASE}{page_name(base,"en")}">']
-    rows += [f'<link rel="alternate" hreflang="{l}" href="{BASE}{page_name(base,l)}">'
-             for l in locs]
-    rows += [f'<link rel="alternate" hreflang="x-default" href="{BASE}{page_name(base,"en")}">']
+    rows = [f'<link rel="alternate" hreflang="{l}" href="{page_url(base,l)}">'
+            for l in ["en"] + locs]
+    rows += [f'<link rel="alternate" hreflang="x-default" href="{page_url(base,"en")}">']
     s, n = re.subn(r'<link rel="alternate" hreflang="en"[^>]*>\n(?:<link rel="alternate"[^>]*>\n)*',
                    "\n".join(rows) + "\n", s, count=1)
     if not n:
-        raise SystemExit(f"{base}.html: no hreflang block to replace")
+        raise SystemExit(f"{p.name}: no hreflang block to replace")
 
     # ---- the switcher: English current, then every sibling ----
-    items = [f'      <li><a href="{page_name(base,"en")}" aria-current="true">English</a></li>']
-    items += [f'      <li><a href="{page_name(base,l)}">{NATIVE[l]}</a></li>' for l in locs]
+    items = [f'      <li><a href="{page_name(base,l)}"'
+             + (' aria-current="true"' if l == cur else '') + switch_attrs(l) + f'>{NATIVE[l]}</a></li>'
+             for l in ["en"] + locs]
     s, n = re.subn(r'(<ul class="lang-menu" hidden>).*?(</ul>)',
                    lambda m: m.group(1) + "\n" + "\n".join(items) + "\n    " + m.group(2),
                    s, count=1, flags=re.S)
     if not n:
-        raise SystemExit(f"{base}.html: no language menu to replace")
+        raise SystemExit(f"{p.name}: no language menu to replace")
 
     p.write_text(s, encoding="utf-8")
-    print(f"  {base}: {len(locs)} siblings wired — {', '.join(locs)}")
+    print(f"  {p.name}: {len(locs)} siblings wired — {', '.join(locs)}")
     return locs
 
 
@@ -92,11 +99,17 @@ def wire_redirect(pages):
 
 
 def main():
-    bases = sys.argv[1:]
+    siblings = "--siblings" in sys.argv
+    bases = [a for a in sys.argv[1:] if not a.startswith("--")]
     if not bases:
         raise SystemExit(__doc__)
     print("wiring the English originals:")
     pages = {b: wire_page(b) for b in bases}
+    if siblings:
+        print("wiring the locale siblings:")
+        for b in bases:
+            for l in have(b):
+                wire_page(b, l)
     listed = wire_redirect(pages)
     print(f"lang-redirect.js AVAIL rewritten: {len(listed)} pages")
 

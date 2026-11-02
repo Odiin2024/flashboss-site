@@ -4,7 +4,7 @@
     python3 scripts/l10n/build.py immersion de
 
 Reads scripts/l10n/<page>_<loc>.py, which must define TITLE, DESCRIPTION and
-STRINGS, and writes <page>.<loc>.html next to the English original. Any key in
+STRINGS (and, for a right-to-left locale, may define RTL_CSS), and writes <page>.<loc>.html next to the English original. Any key in
 STRINGS that is not present in the English page is reported as a MISS: that
 means the English page moved and the string is stale, not that it is optional.
 """
@@ -28,7 +28,8 @@ def main():
     m = load(page, loc)
     import os
     os.chdir(root)
-    html = L.build(page, loc, m.STRINGS, m.TITLE, m.DESCRIPTION)
+    html = L.build(page, loc, m.STRINGS, m.TITLE, m.DESCRIPTION,
+                   getattr(m, "RTL_CSS", ""))   # page-specific mirroring for dir="rtl" locales
     out = root / L.page_name(page, loc)
     out.write_text(html, encoding="utf-8")
     print(f"  wrote {out.name}  ({len(html):,} bytes, {len(m.STRINGS)} strings)")

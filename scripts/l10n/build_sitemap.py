@@ -23,7 +23,7 @@ import re, sys, pathlib, datetime
 from collections import OrderedDict
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
-from localize_new_pages import BASE, LOCALES
+from localize_new_pages import BASE, LOCALES, page_url
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 SITEMAP = ROOT / "sitemap.xml"
@@ -73,9 +73,9 @@ def entry(base, loc, locs, priority, lastmod):
     out = [f"    <loc>{BASE}{page_file(base, loc)}</loc>"]
     for l in sorted(locs):
         out.append(f'    <xhtml:link rel="alternate" hreflang="{l}" '
-                   f'href="{BASE}{page_file(base, l)}"/>')
+                   f'href="{page_url(base, l)}"/>')   # English index = the bare directory URL
     out.append(f'    <xhtml:link rel="alternate" hreflang="x-default" '
-               f'href="{BASE}{page_file(base, "en")}"/>')
+               f'href="{page_url(base, "en")}"/>')
     out.append(f"    <lastmod>{lastmod}</lastmod>")
     out.append(f"    <priority>{priority}</priority>")
     return "  <url>\n" + "\n".join(out) + "\n  </url>\n"
