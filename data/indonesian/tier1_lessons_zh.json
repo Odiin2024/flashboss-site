@@ -8,7 +8,7 @@
     "pages": [
       {
         "page": 1,
-        "total_pages": 8,
+        "total_pages": 4,
         "content": [
           "欢迎学习印尼语。",
           "",
@@ -31,7 +31,7 @@
       },
       {
         "page": 2,
-        "total_pages": 8,
+        "total_pages": 4,
         "pronunciation_mappings": {
           "1": "Cari. Coba.",
           "2": "Jadi. Juga.",
@@ -61,7 +61,7 @@
       },
       {
         "page": 3,
-        "total_pages": 8,
+        "total_pages": 4,
         "pronunciation_mappings": {
           "1": "Besar. Sebentar.",
           "2": "Enak. Meja."
@@ -87,7 +87,42 @@
       },
       {
         "page": 4,
-        "total_pages": 8,
+        "total_pages": 4,
+        "pronunciation_mappings": {
+          "1": "Selamat datang!"
+        },
+        "content": [
+          "每张卡片提供一个单词、一句例句",
+          "和几行注释。注释包含词根和词族，",
+          "值得慢慢细读。",
+          "",
+          "",
+          "",
+          "像本课这样的讲解，会直接出现在",
+          "首次需要它的那张卡片上。",
+          "共有二十六课，贯穿五个等级，",
+          "覆盖整套语法。",
+          "",
+          "接下来几张卡片是问候、感谢和道歉。",
+          "此后学习节奏稳定，而非艰难。",
+          "",
+          "",
+          "   Selamat datang!                       按 1",
+          "   = 欢迎。"
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": "002",
+    "trigger_word": "kabar",
+    "trigger_card_number": 11,
+    "title": "第2课：中心词在前",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
         "content": [
           "印尼语把核心词放前面，",
           "再把描述“挂”在后面。",
@@ -108,8 +143,8 @@
         ]
       },
       {
-        "page": 5,
-        "total_pages": 8,
+        "page": 2,
+        "total_pages": 2,
         "content": [
           "印尼语没有“是”这个词。",
           "你只需把两部分并列在一起。",
@@ -129,10 +164,19 @@
           "",
           "   Ada dua orang.  = 有两个人。"
         ]
-      },
+      }
+    ]
+  },
+  {
+    "lesson_id": "003",
+    "trigger_word": "ayo",
+    "trigger_card_number": 20,
+    "title": "第3课：小词",
+    "header_color": "cyan",
+    "pages": [
       {
-        "page": 6,
-        "total_pages": 8,
+        "page": 1,
+        "total_pages": 2,
         "content": [
           "这些小词不在卡片上。",
           "代词、疑问词、“不”、“和”、“在”、“还”，",
@@ -153,8 +197,8 @@
         ]
       },
       {
-        "page": 7,
-        "total_pages": 8,
+        "page": 2,
+        "total_pages": 2,
         "content": [
           "还有几个你马上就会遇到：",
           "",
@@ -166,7 +210,7 @@
           "   lagi   再，又       memang  确实",
           "   segera 立刻",
           "",
-          "还有数字，第7课会把它们组合成百和千。",
+          "还有数字，第9课会把它们组合成百和千。",
           "现在先学一到十：",
           "",
           "",
@@ -174,41 +218,15 @@
           "   5 lima    6 enam    7 tujuh   8 delapan",
           "   9 sembilan          10 sepuluh"
         ]
-      },
-      {
-        "page": 8,
-        "total_pages": 8,
-        "pronunciation_mappings": {
-          "1": "Selamat datang!"
-        },
-        "content": [
-          "每张卡片提供一个单词、一句例句",
-          "和几行注释。注释包含词根和词族，",
-          "值得慢慢细读。",
-          "",
-          "",
-          "",
-          "像本课这样的讲解，会直接出现在",
-          "首次需要它的那张卡片上。",
-          "共有二十四课，贯穿五个等级，",
-          "覆盖整套语法。",
-          "",
-          "接下来几张卡片是问候、感谢和道歉。",
-          "此后学习节奏稳定，而非艰难。",
-          "",
-          "",
-          "   Selamat datang!                       按 1",
-          "   = 欢迎。"
-        ]
       }
     ]
   },
   {
-    "lesson_id": "002",
+    "lesson_id": "004",
     "trigger_word": "nama",
     "trigger_card_number": 26,
     "header_color": "cyan",
-    "title": "第2课：人称词语",
+    "title": "第4课：人称词语",
     "pages": [
       {
         "page": 1,
@@ -300,17 +318,17 @@
           "   seorang teman   = 一个朋友",
           "   dua orang anak  = 两个孩子",
           "",
-          "se- 表示“一”。第14课会讲其他量词。"
+          "se- 表示“一”。第16课会讲其他量词。"
         ]
       }
     ]
   },
   {
-    "lesson_id": "003",
+    "lesson_id": "005",
     "trigger_word": "asal",
     "trigger_card_number": 35,
     "header_color": "cyan",
-    "title": "第3课：如何提问",
+    "title": "第5课：如何提问",
     "pages": [
       {
         "page": 1,
@@ -383,17 +401,17 @@
           "   Saya ke dokter dengan ayah saya.",
           "   = 我和父亲一起去看了医生。",
           "",
-          "第10课会补充表示方位的词。"
+          "第12课会补充表示方位的词。"
         ]
       }
     ]
   },
   {
-    "lesson_id": "004",
+    "lesson_id": "006",
     "trigger_word": "manusia",
     "trigger_card_number": 46,
     "header_color": "cyan",
-    "title": "第4课：如何说“不”",
+    "title": "第6课：如何说“不”",
     "pages": [
       {
         "page": 1,
@@ -470,11 +488,11 @@
     ]
   },
   {
-    "lesson_id": "005",
+    "lesson_id": "007",
     "trigger_word": "menikah",
     "trigger_card_number": 72,
     "header_color": "cyan",
-    "title": "第5课：无时态的时间表达",
+    "title": "第7课：无时态的时间表达",
     "pages": [
       {
         "page": 1,
@@ -553,11 +571,11 @@
     ]
   },
   {
-    "lesson_id": "006",
+    "lesson_id": "008",
     "trigger_word": "lihat",
     "trigger_card_number": 85,
     "header_color": "cyan",
-    "title": "第6课：主动前缀",
+    "title": "第8课：主动前缀",
     "pages": [
       {
         "page": 1,
@@ -639,11 +657,11 @@
     ]
   },
   {
-    "lesson_id": "007",
+    "lesson_id": "009",
     "trigger_word": "jam",
     "trigger_card_number": 153,
     "header_color": "cyan",
-    "title": "第7课：数字与钟表",
+    "title": "第9课：数字与钟表",
     "pages": [
       {
         "page": 1,

@@ -8,7 +8,7 @@
     "pages": [
       {
         "page": 1,
-        "total_pages": 8,
+        "total_pages": 4,
         "content": [
           "Welcome to Indonesian.",
           "",
@@ -32,7 +32,7 @@
       },
       {
         "page": 2,
-        "total_pages": 8,
+        "total_pages": 4,
         "content": [
           "You already read the alphabet Indonesian",
           "is written in, and nearly every letter",
@@ -62,7 +62,7 @@
       },
       {
         "page": 3,
-        "total_pages": 8,
+        "total_pages": 4,
         "content": [
           "The vowel e does two jobs, and nothing on",
           "the page tells you which.",
@@ -88,7 +88,42 @@
       },
       {
         "page": 4,
-        "total_pages": 8,
+        "total_pages": 4,
+        "content": [
+          "Every card gives you one word, a sentence",
+          "that uses it, and a few lines of notes.",
+          "The notes carry the root and the word",
+          "family, and they are worth reading",
+          "slowly.",
+          "",
+          "Lessons like this one arrive on the card",
+          "that first needs them. Twenty-six of",
+          "them cover the whole grammar of the",
+          "language across the five tiers.",
+          "",
+          "Hello, thank you and sorry are the next",
+          "few cards. From there the work is steady",
+          "rather than hard.",
+          "",
+          "   Selamat datang!                    Press 1",
+          "   = Welcome."
+        ],
+        "pronunciation_mappings": {
+          "1": "Selamat datang!"
+        }
+      }
+    ]
+  },
+  {
+    "lesson_id": "002",
+    "trigger_word": "kabar",
+    "trigger_card_number": 11,
+    "title": "LESSON 2: THE MAIN THING FIRST",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
         "content": [
           "Indonesian puts the main thing first and",
           "hangs the description behind it. This is",
@@ -111,8 +146,8 @@
         ]
       },
       {
-        "page": 5,
-        "total_pages": 8,
+        "page": 2,
+        "total_pages": 2,
         "content": [
           "Indonesian needs no word for is or are.",
           "You put the two halves side by side.",
@@ -133,10 +168,19 @@
           "",
           "   Ada dua orang. = There are two people."
         ]
-      },
+      }
+    ]
+  },
+  {
+    "lesson_id": "003",
+    "trigger_word": "ayo",
+    "trigger_card_number": 20,
+    "title": "LESSON 3: THE LITTLE WORDS",
+    "header_color": "cyan",
+    "pages": [
       {
-        "page": 6,
-        "total_pages": 8,
+        "page": 1,
+        "total_pages": 2,
         "content": [
           "The little words are not on the cards.",
           "Pronouns, question words, not, and, in,",
@@ -159,8 +203,8 @@
         ]
       },
       {
-        "page": 7,
-        "total_pages": 8,
+        "page": 2,
+        "total_pages": 2,
         "content": [
           "A few more you will meet straight away:",
           "",
@@ -172,7 +216,7 @@
           "   lagi   again, more  memang  indeed",
           "   segera at once",
           "",
-          "And the numbers, which Lesson 7 builds",
+          "And the numbers, which Lesson 9 builds",
           "into hundreds and thousands. For now,",
           "one to ten:",
           "",
@@ -180,40 +224,14 @@
           "   5 lima    6 enam    7 tujuh   8 delapan",
           "   9 sembilan          10 sepuluh"
         ]
-      },
-      {
-        "page": 8,
-        "total_pages": 8,
-        "content": [
-          "Every card gives you one word, a sentence",
-          "that uses it, and a few lines of notes.",
-          "The notes carry the root and the word",
-          "family, and they are worth reading",
-          "slowly.",
-          "",
-          "Lessons like this one arrive on the card",
-          "that first needs them. Twenty-four of",
-          "them cover the whole grammar of the",
-          "language across the five tiers.",
-          "",
-          "Hello, thank you and sorry are the next",
-          "few cards. From there the work is steady",
-          "rather than hard.",
-          "",
-          "   Selamat datang!                    Press 1",
-          "   = Welcome."
-        ],
-        "pronunciation_mappings": {
-          "1": "Selamat datang!"
-        }
       }
     ]
   },
   {
-    "lesson_id": "002",
+    "lesson_id": "004",
     "trigger_word": "nama",
     "trigger_card_number": 26,
-    "title": "LESSON 2: THE PEOPLE WORDS",
+    "title": "LESSON 4: THE PEOPLE WORDS",
     "header_color": "cyan",
     "pages": [
       {
@@ -307,17 +325,17 @@
           "   seorang teman   = one friend",
           "   dua orang anak  = two children",
           "",
-          "se- means one. Lesson 14 brings the",
+          "se- means one. Lesson 16 brings the",
           "other counting words."
         ]
       }
     ]
   },
   {
-    "lesson_id": "003",
+    "lesson_id": "005",
     "trigger_word": "asal",
     "trigger_card_number": 35,
-    "title": "LESSON 3: ASKING QUESTIONS",
+    "title": "LESSON 5: ASKING QUESTIONS",
     "header_color": "cyan",
     "pages": [
       {
@@ -391,16 +409,16 @@
           "   Saya ke dokter dengan ayah saya.",
           "   = I went to the doctor with my father.",
           "",
-          "Lesson 10 adds the words for where."
+          "Lesson 12 adds the words for where."
         ]
       }
     ]
   },
   {
-    "lesson_id": "004",
+    "lesson_id": "006",
     "trigger_word": "manusia",
     "trigger_card_number": 46,
-    "title": "LESSON 4: SAYING NO",
+    "title": "LESSON 6: SAYING NO",
     "header_color": "cyan",
     "pages": [
       {
@@ -478,10 +496,10 @@
     ]
   },
   {
-    "lesson_id": "005",
+    "lesson_id": "007",
     "trigger_word": "menikah",
     "trigger_card_number": 72,
-    "title": "LESSON 5: TIME WITHOUT TENSE",
+    "title": "LESSON 7: TIME WITHOUT TENSE",
     "header_color": "cyan",
     "pages": [
       {
@@ -561,10 +579,10 @@
     ]
   },
   {
-    "lesson_id": "006",
+    "lesson_id": "008",
     "trigger_word": "lihat",
     "trigger_card_number": 85,
-    "title": "LESSON 6: THE ACTIVE PREFIX",
+    "title": "LESSON 8: THE ACTIVE PREFIX",
     "header_color": "cyan",
     "pages": [
       {
@@ -648,10 +666,10 @@
     ]
   },
   {
-    "lesson_id": "007",
+    "lesson_id": "009",
     "trigger_word": "jam",
     "trigger_card_number": 153,
-    "title": "LESSON 7: COUNTING AND THE CLOCK",
+    "title": "LESSON 9: COUNTING AND THE CLOCK",
     "header_color": "cyan",
     "pages": [
       {

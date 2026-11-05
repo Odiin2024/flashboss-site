@@ -4,11 +4,11 @@
     "trigger_word": "ya",
     "trigger_card_number": 1,
     "header_color": "cyan",
-    "title": "LEKTION 1: WILLKOMMEN INDONESISCH",
+    "title": "LEKTION 1: HALLO, INDONESISCH!",
     "pages": [
       {
         "page": 1,
-        "total_pages": 8,
+        "total_pages": 4,
         "content": [
           "Willkommen zum Indonesischen.",
           "",
@@ -32,7 +32,7 @@
       },
       {
         "page": 2,
-        "total_pages": 8,
+        "total_pages": 4,
         "pronunciation_mappings": {
           "1": "Cari. Coba.",
           "2": "Jadi. Juga.",
@@ -62,7 +62,7 @@
       },
       {
         "page": 3,
-        "total_pages": 8,
+        "total_pages": 4,
         "pronunciation_mappings": {
           "1": "Besar. Sebentar.",
           "2": "Enak. Meja."
@@ -88,7 +88,42 @@
       },
       {
         "page": 4,
-        "total_pages": 8,
+        "total_pages": 4,
+        "pronunciation_mappings": {
+          "1": "Selamat datang!"
+        },
+        "content": [
+          "Jede Karte bringt dir ein Wort, einen",
+          "Satz damit und ein paar Notizen.",
+          "Die Notizen enthalten den Stamm und die",
+          "Wortfamilie – lies sie langsam.",
+          "",
+          "",
+          "Solche Lektionen erscheinen auf der Karte,",
+          "die sie zuerst braucht. Sechsundzwanzig",
+          "davon decken die gesamte Grammatik der",
+          "Sprache über die fünf Tiers ab.",
+          "",
+          "Hallo, Danke und Entschuldigung kommen",
+          "als Nächstes. Danach geht es stetig",
+          "weiter – nicht schwer.",
+          "",
+          "   Selamat datang!                   Drücke 1",
+          "   = Willkommen."
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": "002",
+    "trigger_word": "kabar",
+    "trigger_card_number": 11,
+    "title": "LEKTION 2: DAS WICHTIGSTE ZUERST",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
         "content": [
           "Indonesisch stellt das Wichtigste zuerst",
           "und hängt die Beschreibung dahinter.",
@@ -111,8 +146,8 @@
         ]
       },
       {
-        "page": 5,
-        "total_pages": 8,
+        "page": 2,
+        "total_pages": 2,
         "content": [
           "Indonesisch braucht kein ‚ist‘ oder ‚sind‘:",
           "Du stellst beide Hälften nebeneinander.",
@@ -133,10 +168,19 @@
           "",
           "   Ada dua orang. = Es gibt zwei Personen."
         ]
-      },
+      }
+    ]
+  },
+  {
+    "lesson_id": "003",
+    "trigger_word": "ayo",
+    "trigger_card_number": 20,
+    "title": "LEKTION 3: DIE KLEINEN WÖRTER",
+    "header_color": "cyan",
+    "pages": [
       {
-        "page": 6,
-        "total_pages": 8,
+        "page": 1,
+        "total_pages": 2,
         "content": [
           "Die kleinen Wörter stehen nicht auf den",
           "Karten. Pronomen, Fragewörter, nicht, und,",
@@ -159,8 +203,8 @@
         ]
       },
       {
-        "page": 7,
-        "total_pages": 8,
+        "page": 2,
+        "total_pages": 2,
         "content": [
           "Ein paar weitere triffst du sofort:",
           "",
@@ -172,7 +216,7 @@
           "   lagi   wieder/mehr  memang  in der Tat",
           "   segera sofort",
           "",
-          "Und die Zahlen, die Lektion 7 zu Hundertern",
+          "Und die Zahlen, die Lektion 9 zu Hundertern",
           "und Tausendern ausbaut. Fürs Erste eins",
           "bis zehn:",
           "",
@@ -180,41 +224,15 @@
           "   5 lima    6 enam    7 tujuh   8 delapan",
           "   9 sembilan          10 sepuluh"
         ]
-      },
-      {
-        "page": 8,
-        "total_pages": 8,
-        "pronunciation_mappings": {
-          "1": "Selamat datang!"
-        },
-        "content": [
-          "Jede Karte bringt dir ein Wort, einen",
-          "Satz damit und ein paar Notizen.",
-          "Die Notizen enthalten den Stamm und die",
-          "Wortfamilie – lies sie langsam.",
-          "",
-          "",
-          "Solche Lektionen erscheinen auf der Karte,",
-          "die sie zuerst braucht. Vierundzwanzig",
-          "davon decken die gesamte Grammatik der",
-          "Sprache über die fünf Tiers ab.",
-          "",
-          "Hallo, Danke und Entschuldigung kommen",
-          "als Nächstes. Danach geht es stetig",
-          "weiter – nicht schwer.",
-          "",
-          "   Selamat datang!                   Drücke 1",
-          "   = Willkommen."
-        ]
       }
     ]
   },
   {
-    "lesson_id": "002",
+    "lesson_id": "004",
     "trigger_word": "nama",
     "trigger_card_number": 26,
     "header_color": "cyan",
-    "title": "LEKTION 2: DIE MENSCHENWÖRTER",
+    "title": "LEKTION 4: DIE MENSCHENWÖRTER",
     "pages": [
       {
         "page": 1,
@@ -308,18 +326,18 @@
           "   seorang teman   = ein Freund",
           "   dua orang anak  = zwei Kinder",
           "",
-          "se- heißt eins. Lektion 14 bringt die",
+          "se- heißt eins. Lektion 16 bringt die",
           "übrigen Zählwörter."
         ]
       }
     ]
   },
   {
-    "lesson_id": "003",
+    "lesson_id": "005",
     "trigger_word": "asal",
     "trigger_card_number": 35,
     "header_color": "cyan",
-    "title": "LEKTION 3: FRAGEN STELLEN",
+    "title": "LEKTION 5: FRAGEN STELLEN",
     "pages": [
       {
         "page": 1,
@@ -392,17 +410,17 @@
           "   Saya ke dokter dengan ayah saya.",
           "   = Ich ging mit meinem Vater zum Arzt.",
           "",
-          "Lektion 10 ergänzt die Wörter für das Wo."
+          "Lektion 12 ergänzt die Wörter für das Wo."
         ]
       }
     ]
   },
   {
-    "lesson_id": "004",
+    "lesson_id": "006",
     "trigger_word": "manusia",
     "trigger_card_number": 46,
     "header_color": "cyan",
-    "title": "LEKTION 4: NEIN SAGEN",
+    "title": "LEKTION 6: NEIN SAGEN",
     "pages": [
       {
         "page": 1,
@@ -478,11 +496,11 @@
     ]
   },
   {
-    "lesson_id": "005",
+    "lesson_id": "007",
     "trigger_word": "menikah",
     "trigger_card_number": 72,
     "header_color": "cyan",
-    "title": "LEKTION 5: ZEIT OHNE ZEITFORM",
+    "title": "LEKTION 7: ZEIT OHNE ZEITFORM",
     "pages": [
       {
         "page": 1,
@@ -561,11 +579,11 @@
     ]
   },
   {
-    "lesson_id": "006",
+    "lesson_id": "008",
     "trigger_word": "lihat",
     "trigger_card_number": 85,
     "header_color": "cyan",
-    "title": "LEKTION 6: DAS AKTIVE PRÄFIX",
+    "title": "LEKTION 8: DAS AKTIVE PRÄFIX",
     "pages": [
       {
         "page": 1,
@@ -648,11 +666,11 @@
     ]
   },
   {
-    "lesson_id": "007",
+    "lesson_id": "009",
     "trigger_word": "jam",
     "trigger_card_number": 153,
     "header_color": "cyan",
-    "title": "LEKTION 7: ZÄHLEN UND DIE UHRZEIT",
+    "title": "LEKTION 9: ZÄHLEN UND DIE UHRZEIT",
     "pages": [
       {
         "page": 1,

@@ -8,7 +8,7 @@
     "pages": [
       {
         "page": 1,
-        "total_pages": 8,
+        "total_pages": 4,
         "content": [
           "インドネシア語へようこそ。",
           "",
@@ -32,7 +32,7 @@
       },
       {
         "page": 2,
-        "total_pages": 8,
+        "total_pages": 4,
         "pronunciation_mappings": {
           "1": "Cari. Coba.",
           "2": "Jadi. Juga.",
@@ -62,7 +62,7 @@
       },
       {
         "page": 3,
-        "total_pages": 8,
+        "total_pages": 4,
         "pronunciation_mappings": {
           "1": "Besar. Sebentar.",
           "2": "Enak. Meja."
@@ -88,7 +88,42 @@
       },
       {
         "page": 4,
-        "total_pages": 8,
+        "total_pages": 4,
+        "pronunciation_mappings": {
+          "1": "Selamat datang!"
+        },
+        "content": [
+          "各カードには語一つと、それを使った文、",
+          "そして簡単な注釈が載っています。注釈には",
+          "語幹や関連語が含まれており、ゆっくり読む",
+          "価値があります。",
+          "",
+          "",
+          "このようなレッスンは、初めて必要になる",
+          "カードで現れます。全26課で五つの階層に",
+          "わたってこの言語の文法全体をカバーして",
+          "います。",
+          "",
+          "次は「こんにちは」「ありがとう」「ごめん",
+          "なさい」のカードです。そこからは難しく",
+          "なく、着実に進みます。",
+          "",
+          "   Selamat datang!                    1を押す",
+          "   ＝ようこそ。"
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_id": "002",
+    "trigger_word": "kabar",
+    "trigger_card_number": 11,
+    "title": "第2課：大事なものが先",
+    "header_color": "cyan",
+    "pages": [
+      {
+        "page": 1,
+        "total_pages": 2,
         "content": [
           "インドネシア語では、まず中心となる語を置き、",
           "その後ろに修飾語を続けます。これは英語と",
@@ -109,8 +144,8 @@
         ]
       },
       {
-        "page": 5,
-        "total_pages": 8,
+        "page": 2,
+        "total_pages": 2,
         "content": [
           "インドネシア語には be 動詞（is や are）が",
           "ありません。二つの要素を並べるだけです。",
@@ -131,10 +166,19 @@
           "「～がある」には固有の語 ada を使います。",
           "   Ada dua orang.  = 二人います。"
         ]
-      },
+      }
+    ]
+  },
+  {
+    "lesson_id": "003",
+    "trigger_word": "ayo",
+    "trigger_card_number": 20,
+    "title": "第3課：小さな言葉",
+    "header_color": "cyan",
+    "pages": [
       {
-        "page": 6,
-        "total_pages": 8,
+        "page": 1,
+        "total_pages": 2,
         "content": [
           "小さな語はカードには載っていません。",
           "代名詞、疑問詞、否定語、「と」「で」「まだ」、",
@@ -156,8 +200,8 @@
         ]
       },
       {
-        "page": 7,
-        "total_pages": 8,
+        "page": 2,
+        "total_pages": 2,
         "content": [
           "すぐに出会う語をさらにいくつか：",
           "",
@@ -169,7 +213,7 @@
           "   lagi   また、もっと memang  確かに",
           "   segera すぐに",
           "",
-          "そして数です。第7課で百や千へと",
+          "そして数です。第9課で百や千へと",
           "組み立てていきます。まずは一から十まで：",
           "",
           "",
@@ -177,41 +221,15 @@
           "   5 lima    6 enam    7 tujuh   8 delapan",
           "   9 sembilan          10 sepuluh"
         ]
-      },
-      {
-        "page": 8,
-        "total_pages": 8,
-        "pronunciation_mappings": {
-          "1": "Selamat datang!"
-        },
-        "content": [
-          "各カードには語一つと、それを使った文、",
-          "そして簡単な注釈が載っています。注釈には",
-          "語幹や関連語が含まれており、ゆっくり読む",
-          "価値があります。",
-          "",
-          "",
-          "このようなレッスンは、初めて必要になる",
-          "カードで現れます。全24課で五つの階層に",
-          "わたってこの言語の文法全体をカバーして",
-          "います。",
-          "",
-          "次は「こんにちは」「ありがとう」「ごめん",
-          "なさい」のカードです。そこからは難しく",
-          "なく、着実に進みます。",
-          "",
-          "   Selamat datang!                    1を押す",
-          "   ＝ようこそ。"
-        ]
       }
     ]
   },
   {
-    "lesson_id": "002",
+    "lesson_id": "004",
     "trigger_word": "nama",
     "trigger_card_number": 26,
     "header_color": "cyan",
-    "title": "第2課：人を表す言葉",
+    "title": "第4課：人を表す言葉",
     "pages": [
       {
         "page": 1,
@@ -305,17 +323,17 @@
           "   dua orang anak  = 子ども二人",
           "",
           "se- は「一」の意味です。他の数え方の語は",
-          "第14課で扱います。"
+          "第16課で扱います。"
         ]
       }
     ]
   },
   {
-    "lesson_id": "003",
+    "lesson_id": "005",
     "trigger_word": "asal",
     "trigger_card_number": 35,
     "header_color": "cyan",
-    "title": "第3課：質問のしかた",
+    "title": "第5課：質問のしかた",
     "pages": [
       {
         "page": 1,
@@ -388,17 +406,17 @@
           "   Saya ke dokter dengan ayah saya.",
           "   = 父と一緒に医者に行きました。",
           "",
-          "場所を表す語は第10課で加わります。"
+          "場所を表す語は第12課で加わります。"
         ]
       }
     ]
   },
   {
-    "lesson_id": "004",
+    "lesson_id": "006",
     "trigger_word": "manusia",
     "trigger_card_number": 46,
     "header_color": "cyan",
-    "title": "第4課：否定の言い方",
+    "title": "第6課：否定の言い方",
     "pages": [
       {
         "page": 1,
@@ -475,11 +493,11 @@
     ]
   },
   {
-    "lesson_id": "005",
+    "lesson_id": "007",
     "trigger_word": "menikah",
     "trigger_card_number": 72,
     "header_color": "cyan",
-    "title": "第5課：時制のない時間",
+    "title": "第7課：時制のない時間",
     "pages": [
       {
         "page": 1,
@@ -558,11 +576,11 @@
     ]
   },
   {
-    "lesson_id": "006",
+    "lesson_id": "008",
     "trigger_word": "lihat",
     "trigger_card_number": 85,
     "header_color": "cyan",
-    "title": "第6課：能動接頭辞 meN-",
+    "title": "第8課：能動接頭辞 meN-",
     "pages": [
       {
         "page": 1,
@@ -643,11 +661,11 @@
     ]
   },
   {
-    "lesson_id": "007",
+    "lesson_id": "009",
     "trigger_word": "jam",
     "trigger_card_number": 153,
     "header_color": "cyan",
-    "title": "第7課：数と時刻の言い方",
+    "title": "第9課：数と時刻の言い方",
     "pages": [
       {
         "page": 1,
