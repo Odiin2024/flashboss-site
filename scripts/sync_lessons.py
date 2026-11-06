@@ -28,6 +28,9 @@ MAP = [("English/core",               "data/english/core"),
        # Swahili Core (released 2026-09-16). Its 20 lessons carry de/es/ja/ru/zh
        # twins upstream and they are copied with the English ones.
        ("Swahili/core",               "data/swahili"),
+       # Swahili Pareto 1 and 2 (released, Odiin 2026-11-06): tiers 6-15, same naming.
+       ("Swahili_Extensions/pareto1", "data/swahili"),
+       ("Swahili_Extensions/pareto2", "data/swahili"),
        # The six foreign courses. Their lesson files were dropped into data/ by hand
        # in an earlier pass and were never in this map, so nothing refreshed them and
        # none of them ever gained the Russian twin that has existed upstream for a

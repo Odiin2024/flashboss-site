@@ -50,9 +50,8 @@ SETS = [("English", "Core",     "English/core",               "data/english/core
         ("Latin",   "Core",     "Latin/core",                 "data/latin/CORE_FINAL.json",          0,    "lang"),
         ("Latin",   "Pareto 1", "Latin/pareto1",              "data/latin/PARETO1_FINAL.json",       1000, "lang"),
         # Swahili Core shipped 2026-09-16 and its own store page promises the word
-        # list is on the website; it was not. Pareto 1 and 2 are authored but not
-        # released, so they are deliberately not built here.
-        ("Swahili", "Core",     "Swahili/core",               "data/swahili/CORE_FINAL.json",        0,    "lang"),
+        # list is on the website. Pareto 1 and 2 are released too (Odiin 2026-11-06), so
+        # Swahili builds with the three-set courses below.
         # The five three-set courses. Until 2026-09-30 their views were copies of
         # knight's master lists dropped in by hand, and nothing kept them in step:
         # the deck rebuild that day (Italian tier 1 re-cut to 13 clusters, German
@@ -62,7 +61,8 @@ SETS = [("English", "Core",     "English/core",               "data/english/core
         # bar (aus|füllen) because the game shows it.
         *[(lang, label, f"{kdir}{sub}", f"data/{lang.lower()}/{fname}", off, "lang")
           for lang, kdir in (("German", "German"), ("French", "French"), ("Italian", "Italian"),
-                             ("Spanish", "Spanish"), ("Esperanto", "Esperanto"))
+                             ("Spanish", "Spanish"), ("Esperanto", "Esperanto"),
+                             ("Swahili", "Swahili"))
           # set label and offset 0 as the hand-dropped files had them (FINAL = 1-1000
           # within the set); the page reads neither, but the diff stays about cards.
           for label, sub, fname, off in (("Core",    "/core",               "CORE_FINAL.json",    0),

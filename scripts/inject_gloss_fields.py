@@ -84,6 +84,9 @@ MAPPING = [
     # Swahili (2026-10-01 build): every card now carries a plain translation in all six
     # languages; the old riddle definitions moved to Clue/Clue_<loc>, which the word lists do not show.
     ("data/swahili/CORE_FINAL.json", "Swahili/core"),
+    # Swahili Pareto 1 and 2 (released; on the site from 2026-11-06), the same six-language plain translations.
+    ("data/swahili/PARETO1_FINAL.json", "Swahili_Extensions/pareto1"),
+    ("data/swahili/PARETO2_FINAL.json", "Swahili_Extensions/pareto2"),
     ("data/latin/CORE_FINAL.json", "Latin/core"),
     ("data/latin/PARETO1_FINAL.json", "Latin/pareto1"),
     ("data/english/core/CORE_FINAL.json", "English/core"),

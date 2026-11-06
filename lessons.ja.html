@@ -277,9 +277,9 @@ function tierSet(t){ return t<=5?"Core":t<=10?"Pareto 1":"Pareto 2"; }
 const ENGLISH_PACKS=[["Core","core"],["Pareto 1","p1"],["Pareto 2","p2"],["Adept","ad"],["Advance","adv"],["German Roots","gr"],["Greek Roots","gkr"],["Norman Roots","nr"],["Latin Roots","lr"]];
 function isEng(lang){ return (lang||langSel.value)==='English'; }
 function engCode(set){ return (ENGLISH_PACKS.find(p=>p[0]===set)||[])[1] || String(set).toLowerCase(); }
-const SETS_BY_LANG={"Latin":["Core","Pareto 1"], "Swahili":["Core"]};   // Swahili Pareto 1 and 2 are written but not released   // Latin has no Pareto 2
+const SETS_BY_LANG={"Latin":["Core","Pareto 1"]};   // Latin has no Pareto 2
 function setsFor(lang){ return lang==='English' ? ENGLISH_PACKS.map(p=>p[0]) : (SETS_BY_LANG[lang] || SETS); }
-const TIER_AVAIL={"Toki Pona":[1,2,3,4,5], Latin:[1,2,3,4,5,6,7,8,9,10], Swahili:[1,2,3,4,5]};   // published tiers per language — everything else has all 15; keeps us from fetching tiers that would 404
+const TIER_AVAIL={"Toki Pona":[1,2,3,4,5], Latin:[1,2,3,4,5,6,7,8,9,10]};   // published tiers per language — everything else has all 15; keeps us from fetching tiers that would 404
 /* English is per PACK, not per language: Core is tiers 1-5, Pareto 1 is 6-10,
    Pareto 2 is 11-15, and the standalone packs are all 1-5. */
 const ENG_TIERS={"Core":[1,2,3,4,5],"Pareto 1":[6,7,8,9,10],"Pareto 2":[11,12,13,14,15]};

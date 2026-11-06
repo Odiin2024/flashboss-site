@@ -364,7 +364,7 @@ nav.fbnav .lang-switch{margin-left:0;}
 const LANGS = ["Italian","German","Spanish","French","Latin","Esperanto","Toki Pona","Swahili","Indonesian","Russian","English"];
 const LANG_ZH={Italian:'意大利语',German:'德语',Spanish:'西班牙语',French:'法语',Esperanto:'世界语',"Toki Pona":'道本语',English:'英语',Latin:'拉丁语',Swahili:'斯瓦希里语', Indonesian:'印尼语', Russian:'俄语'};
 const SETS  = ["Core","Pareto 1","Pareto 2"];
-const SETS_BY_LANG = {"Toki Pona":["Core"], "Latin":["Core","Pareto 1"], "Swahili":["Core"]};   // published sets per language; everything else has all three
+const SETS_BY_LANG = {"Toki Pona":["Core"], "Latin":["Core","Pareto 1"]};   // published sets per language; everything else has all three
 /* English ships as named packs, each in its own folder, with a single CORE_FINAL.json */
 const ENGLISH_PACKS = [["Core","core"],["Pareto 1","p1"],["Pareto 2","p2"],["Adept","ad"],["Advance","adv"],["German Roots","gr"],["Greek Roots","gkr"],["Norman Roots","nr"],["Latin Roots","lr"]];
 function setsFor(lang){ return lang==='English' ? ENGLISH_PACKS.map(p=>p[0]) : (SETS_BY_LANG[lang] || SETS); }
